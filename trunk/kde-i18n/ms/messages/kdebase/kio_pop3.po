@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2004-07-14 01:19+0200\n"
+"POT-Creation-Date: 2004-12-29 14:52+0100\n"
 "PO-Revision-Date: 2004-08-10 22:03+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -12,19 +12,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: pop3.cc:220
+#: pop3.cc:250
 msgid "PASS <your password>"
 msgstr "PASS <kata laluan anda>"
 
-#: pop3.cc:223
+#: pop3.cc:253
 msgid "The server said: \"%1\""
 msgstr "Pelayan kata: \"%1\""
 
-#: pop3.cc:245
+#: pop3.cc:275
 msgid "The server terminated the connection."
 msgstr "Pelayan menamatkan sambungan."
 
-#: pop3.cc:247
+#: pop3.cc:277
 msgid ""
 "Invalid response from server:\n"
 "\"%1\""
@@ -32,73 +32,42 @@ msgstr ""
 "Tindak balas tidak sah daripada pelayan:\n"
 "\"%1\""
 
-#: pop3.cc:276
-msgid "Could not send to server.\n"
-msgstr "Tidak dapat kirim ke pelayan:\n"
-
-#: pop3.cc:347
-#: pop3.cc:543
+#: pop3.cc:306
 msgid ""
-"Could not login to %1.\n"
+"Could not send to server.\n"
+msgstr ""
+"Tidak dapat kirim ke pelayan:\n"
+
+#: pop3.cc:361 pop3.cc:420 pop3.cc:617
+msgid "No authentication details supplied."
+msgstr ""
+
+#: pop3.cc:398
+#, fuzzy
+msgid ""
+"Login via APOP failed. The server %1 may not support APOP, although it "
+"claims to support it, or the password may be wrong.\n"
 "\n"
+"%2"
 msgstr ""
-"Tidak dapat log masuk ke %1.\n"
-"\n"
-
-#: pop3.cc:350
-msgid "The server terminated the connection immediately."
-msgstr "Pelayan menamatkan sambungan dengan mendadak."
-
-#: pop3.cc:351
-msgid ""
-"Server does not respond properly:\n"
-"%1\n"
-msgstr ""
-"Pelayan tidak bertindak balas dengan sepatutnya:\n"
-"%1\n"
-
-#: pop3.cc:376
-msgid ""
-"Your POP3 server does not support APOP.\n"
-"Choose a different authentication method."
-msgstr ""
-"Pelayan POP3 anda tidak menyokong APOP.\n"
-"Gunakan kaedah pengesahan lain."
-
-#: pop3.cc:395
-msgid "Your POP3 server claims to support TLS but negotiation was unsuccessful. You can disable TLS in KDE using the crypto settings module."
-msgstr "Pelayan POP3 anda mengatakan menyokong TLS tetapi urusan gagal. Anda boleh matikan TLS dalam KDE menggunakan modul tetapan crypto."
-
-#: pop3.cc:405
-msgid "Your POP3 server does not support TLS. Disable TLS, if you want to connect without encryption."
-msgstr "Pelayan POP3 anda tidak menyokong TLS tetapi urusan gagal. Matikan TLS , anda boleh berhubung tanpa enkripsi."
-
-#: pop3.cc:416
-msgid "Username and password for your POP3 account:"
-msgstr "Namapengguna dan katalaluan akaun POP3 anda:"
-
-#: pop3.cc:462
-#, c-format
-msgid ""
-"Login via APOP failed. The server may not support APOP, although it claims to support it, or the password may be wrong.\n"
-"\n"
-"%1"
-msgstr ""
-"Log masuk menerusi APOP gagal. Pelayan mungkin tidak menyokong APOP, sekalipun mengaku menyokong, atau kata laluan salah.\n"
+"Log masuk menerusi APOP gagal. Pelayan mungkin tidak menyokong APOP, "
+"sekalipun mengaku menyokong, atau kata laluan salah.\n"
 "\n"
 "%1"
 
-#: pop3.cc:519
+#: pop3.cc:586
 msgid ""
-"Login via SASL (%1) failed. The server may not support %2, or the password may be wrong.\n"
+"Login via SASL (%1) failed. The server may not support %2, or the password "
+"may be wrong.\n"
 "\n"
 "%3"
 msgstr ""
-"Log masuk menerusi SASL (%1) gagal. Pelayan mungkin tidak menyokong  %2, atau kata laluan salah.\n"
+"Log masuk menerusi SASL (%1) gagal. Pelayan mungkin tidak menyokong  %2, "
+"atau kata laluan salah.\n"
 "\n"
 "%3"
 
-#: pop3.cc:534
+#: pop3.cc:595
 msgid ""
 "Your POP3 server does not support SASL.\n"
 "Choose a different authentication method."
@@ -106,7 +75,19 @@ msgstr ""
 "Pelayan POP3 anda tidak menyokong SASL.\n"
 "Gunakan kaedah pengesahan lain."
 
-#: pop3.cc:563
+#: pop3.cc:603
+msgid "SASL authentication is not compiled into kio_pop3."
+msgstr ""
+
+#: pop3.cc:635 pop3.cc:684
+msgid ""
+"Could not login to %1.\n"
+"\n"
+msgstr ""
+"Tidak dapat log masuk ke %1.\n"
+"\n"
+
+#: pop3.cc:649
 msgid ""
 "Could not login to %1. The password may be wrong.\n"
 "\n"
@@ -116,9 +97,46 @@ msgstr ""
 "\n"
 "%2"
 
-#: pop3.cc:746
-#: pop3.cc:755
-#: pop3.cc:894
+#: pop3.cc:687
+msgid "The server terminated the connection immediately."
+msgstr "Pelayan menamatkan sambungan dengan mendadak."
+
+#: pop3.cc:688
+msgid ""
+"Server does not respond properly:\n"
+"%1\n"
+msgstr ""
+"Pelayan tidak bertindak balas dengan sepatutnya:\n"
+"%1\n"
+
+#: pop3.cc:716
+msgid ""
+"Your POP3 server does not support APOP.\n"
+"Choose a different authentication method."
+msgstr ""
+"Pelayan POP3 anda tidak menyokong APOP.\n"
+"Gunakan kaedah pengesahan lain."
+
+#: pop3.cc:736
+msgid ""
+"Your POP3 server claims to support TLS but negotiation was unsuccessful. You "
+"can disable TLS in KDE using the crypto settings module."
+msgstr ""
+"Pelayan POP3 anda mengatakan menyokong TLS tetapi urusan gagal. Anda boleh "
+"matikan TLS dalam KDE menggunakan modul tetapan crypto."
+
+#: pop3.cc:747
+msgid ""
+"Your POP3 server does not support TLS. Disable TLS, if you want to connect "
+"without encryption."
+msgstr ""
+"Pelayan POP3 anda tidak menyokong TLS tetapi urusan gagal. Matikan TLS , "
+"anda boleh berhubung tanpa enkripsi."
+
+#: pop3.cc:756
+msgid "Username and password for your POP3 account:"
+msgstr "Namapengguna dan katalaluan akaun POP3 anda:"
+
+#: pop3.cc:956 pop3.cc:965 pop3.cc:1104
 msgid "Unexpected response from POP3 server."
 msgstr "Tindak balas luar jangkaan daripada pelayan POP3"
-
