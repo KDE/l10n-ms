@@ -3,7 +3,7 @@
 #
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2003-07-06 01:42+0200\n"
+"POT-Creation-Date: 2003-12-02 01:37+0100\n"
 "PO-Revision-Date: 07-09-2003 23:15+0000\n"
 "Last-Translator: Muhammad Najmi bin Ahmad Zabidi <md_najmi@yahoo.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -12,70 +12,117 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.9.6\n"
 
-#: lock/lockdlg.cc:95
-msgid "Enter the password for user %1 (%2)"
-msgstr "Masukkan kata laluan untuk pengguna %1 (%2)"
+#: lock/lockdlg.cc:75
+#, fuzzy
+msgid "<nobr><b>The screen is locked</b><br>"
+msgstr "<b>Skrin dikunci</b>"
 
-#: lock/lockdlg.cc:104
+#: lock/lockdlg.cc:76
+#, fuzzy
+msgid "<nobr><b>The screen is locked by %1</b><br>"
+msgstr "<b>Skrin dikunci</b>"
+
+#: lock/lockdlg.cc:86
+msgid "&Start New Session"
+msgstr "Mulakan &Sesi Baru"
+
+#: lock/lockdlg.cc:186
 msgid "<b>Unlocking failed</b>"
 msgstr "<b>Nyah-kunci gagal</b>"
 
-#: lock/lockdlg.cc:110
+#: lock/lockdlg.cc:192
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr "<b>Amaran: Caps Lock hidup</b>"
 
-#: lock/lockdlg.cc:215 lock/lockdlg.cc:258
+#: lock/lockdlg.cc:416
 msgid ""
-"Verification failed\n"
-"Kill kdesktop_lock"
+"Cannot unlock the screen, as the authentication system fails to work.\n"
+"You must kill kdesktop_lock (pid %1) manually."
 msgstr ""
-"Pengesahan gagal\n"
-"Bunuh kdesktop_lock"
 
-#: lock/lockdlg.cc:290
+#: lock/lockdlg.cc:489
 msgid ""
 "You have chosen to open another desktop session instead of resuming the "
-"current one.<br>The current session will be hidden and a new login screen "
-"will be displayed.<br>An F-key is assigned to each session; F%1 is usually "
-"assigned to the first session, F%2 to the second session and so on. You can "
-"switch between sessions by pressing CTRL, ALT and the appropriate F-key at "
-"the same time."
+"current one."
+"<br>The current session will be hidden and a new login screen will be "
+"displayed."
+"<br>An F-key is assigned to each session; F%1 is usually assigned to the "
+"first session, F%2 to the second session and so on. You can switch between "
+"sessions by pressing CTRL, ALT and the appropriate F-key at the same time."
 msgstr ""
 "Anda telah memilih untuk membuka sesi ruang kerja lain dan tidak menyambung "
-"sesi semasa.<br>Sesi semasa akan disembunyikan dan skrin log masuk baru akan dipaparkan . "
-"<br>Kekunci F ditugaskan untuk setiap sesi; F%1 biasanya "
-"untuk sesi pertama, F%2 untuk sesi kedua, dan seterusnya "
-"Anda boleh bertukas sesi dengan menekan serentak CTRL, ALT dan kekunci F yang dikehendaki."
+"sesi semasa."
+"<br>Sesi semasa akan disembunyikan dan skrin log masuk baru akan dipaparkan "
+". "
+"<br>"
+"Kekunci F ditugaskan untuk setiap sesi; F%1 biasanya untuk sesi pertama, F%2 "
+"untuk sesi kedua, dan seterusnya Anda boleh bertukas sesi dengan menekan "
+"serentak CTRL, ALT dan kekunci F yang dikehendaki."
 
-#: lock/main.cc:31
+#: lock/lockprocess.cc:651
+msgid ""
+"Will not lock the screen, as unlocking would be impossible:\n"
+msgstr ""
+
+#: lock/lockprocess.cc:655
+msgid "Cannot start <i>kcheckpass</i>."
+msgstr ""
+
+#: lock/lockprocess.cc:656
+msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not SetUID root."
+msgstr ""
+
+#: lock/lockprocess.cc:700
+msgid "No appropriate greeter plugin configured."
+msgstr ""
+
+#: lock/main.cc:51
 msgid "Force screen locking"
 msgstr "Paksa kunci skrin"
 
-#: lock/main.cc:32
+#: lock/main.cc:52
 msgid "Only start screensaver"
 msgstr "Hanya mulakan penyelamat skrin"
 
-#: lock/main.cc:33
+#: lock/main.cc:53
 msgid "Only use the blank screensaver"
 msgstr "Hanya gunakan penyelamat skrin kosong"
 
-#: lock/main.cc:111
+#: lock/main.cc:63
+#, fuzzy
+msgid "KDesktop Locker"
+msgstr "RuangKerja K"
+
+#: lock/main.cc:63
 msgid "Screen Locker for KDesktop"
 msgstr "Pengunci Skrin untuk KDesktop "
 
-#: desktop.cc:633
+#: desktop.cc:662
 msgid "Set as Primary Background Color"
 msgstr "Tetapkan sebagai Warna LatarBelakang Utama "
 
-#: desktop.cc:634
+#: desktop.cc:663
 msgid "Set as Secondary Background Color"
 msgstr "Tetapkan sebagai Warna LatarBelakang Sekunder"
 
-#: desktop.cc:650
+#: desktop.cc:679
+#, fuzzy
+msgid "&Save to Desktop..."
+msgstr "Ruang Kerja KDE"
+
+#: desktop.cc:681
 msgid "Set as &Wallpaper"
 msgstr "Tetapkan sebagai Kertas &Dinding"
 
-#: desktop.cc:685
+#: desktop.cc:689
+msgid "Enter a name for the image below:"
+msgstr ""
+
+#: desktop.cc:698
+msgid "image.png"
+msgstr ""
+
+#: desktop.cc:746
 msgid ""
 "Could not logout properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
@@ -83,131 +130,131 @@ msgid ""
 "not be saved with a forced shutdown."
 msgstr ""
 "Tidak dapat log keluar dengan betul\n"
-"Pengurus sesi tidak dapat dihubungi. Anda boleh paksa tutup semua dengan menekan "
-"Ctr+Alt+Backspace. Namun begitu, sesi semasa anda tidak dapat disimpan "
-"dengan tutup semua secara paksa."
+"Pengurus sesi tidak dapat dihubungi. Anda boleh paksa tutup semua dengan "
+"menekan Ctr+Alt+Backspace. Namun begitu, sesi semasa anda tidak dapat "
+"disimpan dengan tutup semua secara paksa."
 
-#: kdiconview.cc:304
+#: kdiconview.cc:314
 msgid "&Rename"
 msgstr "Nama&kan semula"
 
-#: kdiconview.cc:305
+#: kdiconview.cc:315
 msgid "&Move to Trash"
 msgstr "&Buang ke Tong Sampah"
 
-#: kdiconview.cc:308
+#: kdiconview.cc:318
 msgid "&Shred"
 msgstr "Ce&raikan"
 
-#: krootwm.cc:92 krootwm.cc:431
-msgid "Bookmarks"
-msgstr "Tanda Laman"
-
-#: krootwm.cc:128
+#: krootwm.cc:129
 msgid "Run Command..."
 msgstr "Laksanakan Arahan..."
 
-#: krootwm.cc:132
+#: krootwm.cc:133
 msgid "Configure Desktop..."
 msgstr "Selaraskan Ruang Kerja..."
 
-#: krootwm.cc:134 krootwm.cc:333
+#: krootwm.cc:135 krootwm.cc:332
 msgid "Disable Desktop Menu"
 msgstr "Matikan Menu Ruang Kerja"
 
-#: krootwm.cc:138
+#: krootwm.cc:139
 msgid "Unclutter Windows"
 msgstr "Tetingkap Tersusun"
 
-#: krootwm.cc:140
+#: krootwm.cc:141
 msgid "Cascade Windows"
 msgstr "Tetingkap Lata"
 
-#: krootwm.cc:146
+#: krootwm.cc:147
 msgid "By Name"
 msgstr "Mengikut Nama"
 
-#: krootwm.cc:148
+#: krootwm.cc:149
 msgid "By Size"
 msgstr "Mengikut Saiz"
 
-#: krootwm.cc:150
+#: krootwm.cc:151
 msgid "By Type"
 msgstr "Mengikut Jenis"
 
-#: krootwm.cc:153
+#: krootwm.cc:154
 msgid "Directories First"
 msgstr "Direktori Dahulu"
 
-#: krootwm.cc:156
+#: krootwm.cc:157
 msgid "Line Up Horizontally"
 msgstr "Bariskan Melintang"
 
-#: krootwm.cc:159
+#: krootwm.cc:160
 msgid "Line Up Vertically"
 msgstr "Bariskan Menegak"
 
-#: krootwm.cc:162
+#: krootwm.cc:163
 msgid "Align to Grid"
 msgstr "Jajar ikut Grid"
 
-#: krootwm.cc:168
+#: krootwm.cc:169
 msgid "Refresh Desktop"
 msgstr "Ulangmuat Ruang Kerja"
 
-#: kdesktopbindings.cpp:30 krootwm.cc:174
+#: kdesktopbindings.cpp:30 krootwm.cc:175
 msgid "Lock Screen"
 msgstr "Kunci Skrin"
 
-#: krootwm.cc:183
+#: krootwm.cc:180
 msgid "Logout \"%1\"..."
 msgstr "Log Keluar \"%1\"..."
 
-#: krootwm.cc:194
+#: krootwm.cc:191
 msgid "Start New Session"
 msgstr "Mulakan Sesi Baru"
 
-#: krootwm.cc:311 krootwm.cc:379
+#: krootwm.cc:310 krootwm.cc:388
 msgid "Sort Icons"
 msgstr "Susun Ikon"
 
-#: krootwm.cc:313
+#: krootwm.cc:312
 msgid "Line Up Icons"
 msgstr "Bariskan Ikon"
 
-#: krootwm.cc:340
+#: krootwm.cc:339
 msgid "Enable Desktop Menu"
 msgstr "Hidupkan Menu Ruang Kerja"
 
-#: krootwm.cc:386
+#: krootwm.cc:395
 msgid "Icons"
 msgstr "Ikon"
 
-#: krootwm.cc:392 krootwm.cc:434
+#: krootwm.cc:401 krootwm.cc:458
 msgid "Windows"
 msgstr "Tetingkap"
 
-#: krootwm.cc:427
+#: krootwm.cc:451
 msgid "New"
 msgstr "Baru"
 
-#: kdesktopbindings.cpp:14 krootwm.cc:433 krootwm.cc:594
+#: kdesktopbindings.cpp:14 krootwm.cc:457 krootwm.cc:628
 msgid "Desktop"
 msgstr "Ruang Kerja"
 
-#: krootwm.cc:659
+#: krootwm.cc:693
 msgid ""
-"<p>You have chosen to open another desktop session.<br>The current session "
-"will be hidden and a new login screen will be displayed.<br>An F-key is "
-"assigned to each session; F%1 is usually assigned to the first session, F%2 "
-"to the second session and so on. You can switch between sessions by pressing "
-"CTRL, ALT and the appropriate F-key at the same time.</p>"
+"<p>You have chosen to open another desktop session."
+"<br>The current session will be hidden and a new login screen will be "
+"displayed."
+"<br>An F-key is assigned to each session; F%1 is usually assigned to the "
+"first session, F%2 to the second session and so on. You can switch between "
+"sessions by pressing CTRL, ALT and the appropriate F-key at the same "
+"time.</p>"
 msgstr ""
-"<p>Anda telah memilih untuk membuka sesi ruang kerja lain.<br>Sesi sekarang "
-"akan disembunyikan dan skrin log masuk baru akan dipaparkan.<br>Kunci F"
-"ditugaskan kepada setiap sesi; F%1 biasanya ditugaskan untuk sesi satu, F%2 "
-"ditugaskan untuk sesi dua dan seterusnya. Anda boleh menukar sesi dengan menekan"
-"CTRL, ALT dan kekunci F-yang padan pada masa yang sama.</p>"
+"<p>Anda telah memilih untuk membuka sesi ruang kerja lain."
+"<br>Sesi sekarang akan disembunyikan dan skrin log masuk baru akan "
+"dipaparkan."
+"<br>"
+"Kunci Fditugaskan kepada setiap sesi; F%1 biasanya ditugaskan untuk sesi "
+"satu, F%2 ditugaskan untuk sesi dua dan seterusnya. Anda boleh menukar sesi "
+"dengan menekanCTRL, ALT dan kekunci F-yang padan pada masa yang sama.</p>"
 
 #: main.cc:40
 msgid "The KDE Desktop."
@@ -241,7 +288,7 @@ msgid ""
 "Your emails"
 msgstr "md_najmi@yahoo.com"
 
-#: kdesktopbindings.cpp:20 minicli.cpp:77
+#: kdesktopbindings.cpp:20 minicli.cpp:76
 msgid "Run Command"
 msgstr "Laksanakan Arahan"
 
@@ -262,126 +309,36 @@ msgid "Logout without Confirmation"
 msgstr "Logkeluar tanpa Pemastian"
 
 #: kdesktopbindings.cpp:38
-msgid "Halt Computer"
-msgstr "Padam Komputer"
-
-#: kdesktopbindings.cpp:39
 msgid "Halt without Confirmation"
 msgstr "Padam Komputer tanpa Pemastian"
 
-#: kdesktopbindings.cpp:40
-msgid "Reboot Computer"
-msgstr "Ulanghidup Komputer"
-
-#: kdesktopbindings.cpp:41
+#: kdesktopbindings.cpp:39
 msgid "Reboot without Confirmation"
 msgstr "Ulanghidup Komputer tanpa Pemastian"
 
-#: minicli.cpp:95
-msgid ""
-"Enter the command you wish to execute or the address of the resource you "
-"want to open. This can be a remote URL like \"www.kde.org\" or a local one "
-"like \"~/.kderc\""
-msgstr ""
-"Masukkan arahan yang anda ingin laksanakan atau alamat sumber yang anda ingin "
-"buka. URL jauh seperti \"www.kde.org\" atau yang setempat seperti \"~/.kderc\""
-
-#: minicli.cpp:102 minicli.cpp:655
+#: minicli.cpp:94 minicli.cpp:622
 msgid "&Options >>"
 msgstr "P&ilihan >>"
 
-#: minicli.cpp:105
+#: minicli.cpp:97
 msgid "&Run"
 msgstr "Lak&sana"
 
-#: minicli.cpp:116
-msgid ""
-"Check this option if the application you want to run is a text mode "
-"application. The application will then be run in a terminal emulator window."
-msgstr ""
-"Pilih pilihan ini jika anda maukan aplikasi dilaksanakan di dalam mod teks. Aplikasi "
-"akan dijalankan di dalam tetingkap emulator terminal."
-
-#: minicli.cpp:123
-msgid ""
-"Check this option if you want to run the application with a different user "
-"id. Every process has a user id associated with it. This id code determines "
-"file access and other permissions. The password of the user is required to "
-"do this."
-msgstr ""
-"Pilih pilhan ini jika anda ingin laksanakan aplikasi dengan id pengguna berlainan. "
-"Setiap proses mempunyai id pengguna yang dikaitkan. Kod id menentukan akses fail "
-"dan keizinan lain. Kata laluan pengguna diperlukan untuk perkara tersebut."
-
-#: minicli.cpp:131
-msgid "Enter the user here who you want to run the application as."
-msgstr "Masukkan nama pengguna yang anda ingin laksanakan aplikasi untuknya."
-
-#: minicli.cpp:134
-msgid ""
-"Check this option if you want to run the application with a different "
-"priority. A higher priority tells the operating system to give more "
-"processing time to your application."
-msgstr ""
-"Pilih pilihan ini jika anda ingin laksanakan aplikasi dengan keutamaan berlainan. "
-"Keutamaan yang lebih tinggi memberitahu sistem operasi untuk memberikan lebih masa "
-"pemprosesan untuk aplikasi anda."
-
-#: minicli.cpp:140
-msgid ""
-"The priority can be set here. From left to right, it goes from low to high. "
-"The center position is the default value. For priorities higher than the "
-"default, you will need root's password."
-msgstr ""
-"Keutaman boleh ditetapkan di sini. Bermula dari kiri ke kanan, dan dipadankan dengan "
-"dari rendah ke tinggi. Posisi tengah adalah untuk nilai default. Untuk keutaaman lebih tinggi "
-"daripada nilai default, anda memerlukan kata laluan root."
-
-#: minicli.cpp:147
-msgid ""
-"Select which scheduler to use for the application. The scheduler governs "
-"which process will run and which will have to wait. Two schedulers are "
-"available:<ul><li><em>Normal:</em> This is the standard, timesharing "
-"scheduler. It will divide fairly the available processing time between all "
-"processes.</li><li><em>Realtime:</em>This scheduler will run your "
-"application uninterrupted until it gives up the processor. This can be "
-"dangerous. An application that does not give up the processor might hang the "
-"system. You need root's password to use the scheduler.</li>"
-msgstr ""
-"Select which scheduler to use for the application. The scheduler governs "
-"which process will run and which will have to wait. Two schedulers are "
-"available:<ul><li><em>Normal:</em> This is the standard, timesharing "
-"scheduler. It will divide fairly the available processing time between all "
-"processes.</li><li><em>Realtime:</em>This scheduler will run your "
-"application uninterrupted until it gives up the processor. This can be "
-"dangerous. An application that does not give up the processor might hang the "
-"system. You need root's password to use the scheduler.</li>"
-
-#: minicli.cpp:162
-msgid "Enter the requested password here."
-msgstr "Masukkan kata laluan diminta di sini."
-
-#: minicli.cpp:238
-msgid "Normal"
-msgstr "Normal"
-
-#: minicli.cpp:239
-msgid "Realtime"
-msgstr "Masa Nyata"
-
-#: minicli.cpp:410
+#: minicli.cpp:390
 msgid "<qt>The user <b>%1</b> does not exist on this system.</qt>"
 msgstr "<qt>Pengguna <b>%1</b> tidak wujud di dalam sistem ini.</qt>"
 
-#: minicli.cpp:423
-msgid "You don't exist!\n"
-msgstr "Anda tidak wujud!\n"
+#: minicli.cpp:400
+msgid ""
+"You don't exist!\n"
+msgstr ""
+"Anda tidak wujud!\n"
 
-#: minicli.cpp:451
+#: minicli.cpp:425
 msgid "Incorrect password! Please try again."
 msgstr "Kata laluan salah! Cuba lagi."
 
-#: minicli.cpp:565
+#: minicli.cpp:536
 msgid ""
 "<center><b>%1</b></center>\n"
 "You do not have permission to execute this command!"
@@ -389,7 +346,7 @@ msgstr ""
 "<center><b>%1</b></center>\n"
 "Anda tiada keizinan untuk melaksanakan arahan ini!"
 
-#: minicli.cpp:593
+#: minicli.cpp:561
 msgid ""
 "<center><b>%1</b></center>\n"
 "Could not run the specified command!"
@@ -397,7 +354,7 @@ msgstr ""
 "<center><b>%1</b></center>\n"
 "Tidak boleh melaksanakan arahan ditentukan!"
 
-#: minicli.cpp:608
+#: minicli.cpp:573
 msgid ""
 "<center><b>%1</b></center>\n"
 "The specified command does not exist!"
@@ -405,98 +362,211 @@ msgstr ""
 "<center><b>%1</b></center>\n"
 "Arahan ditentukan tidak wujud!"
 
-#: minicli.cpp:643
+#: minicli.cpp:610
 msgid "&Options <<"
 msgstr "&Pilihan <<"
 
-#: minicli.cpp:751
-msgid "none"
-msgstr "tiada"
-
-#: minicli.cpp:756
-#, c-format
-msgid "Password required: %1"
-msgstr "Kata laluan diperlukan: %1"
-
-#: minicli.cpp:825
+#: minicli.cpp:817
 msgid ""
 "Running a realtime application can be very dangerous. If the application "
 "misbehaves, the system might hang unrecoverably.\n"
 "Are you sure you want to continue?"
 msgstr ""
-"Menjalankan aplikasi masa nyata boleh memudaratkan. Jika aplikasi  "
-"mengalami masalah, sistem akan tergantung tanpa dapat dipulihkan.\n"
+"Menjalankan aplikasi masa nyata boleh memudaratkan. Jika aplikasi  mengalami "
+"masalah, sistem akan tergantung tanpa dapat dipulihkan.\n"
 "Anda pasti untuk teruskan?"
 
-#: minicli.cpp:828
+#: minicli.cpp:820
 msgid "Warning - Run Command"
 msgstr "Amaran - Laksanakan Arahan"
 
-#: rc.cpp:1
-msgid "MinicliDlgUI"
-msgstr "MinicliDlgUI"
+#: rc.cpp:2
+msgid "Enter the name of the application you want to run or the URL you want to view"
+msgstr ""
+"Masukkan nama aplikasi yang anda ingin jalankan atau  URL yang anda ingin "
+"lihat"
 
 #: rc.cpp:3
-msgid "Enter the name of the application you want to run or the URL you want to view"
-msgstr "Masukkan nama aplikasi yang anda ingin jalankan atau  URL yang anda ingin lihat"
-
-#: rc.cpp:4
 msgid "Com&mand:"
 msgstr "Ara&han:"
 
-#: rc.cpp:5
-msgid "Advanced Settings"
-msgstr "Tetapan Lanjutan"
-
-#: rc.cpp:6
-msgid "Run in &terminal"
-msgstr "Laksana dalam &terminal"
-
-#: rc.cpp:7
-msgid "Run as a different &user"
-msgstr "Laksanakan sebagai pengg&una lain"
+#: rc.cpp:4 rc.cpp:29
+#, fuzzy
+msgid ""
+"Enter the command you wish to execute or the address of the resource you "
+"want to open. This can be a remote URL like \"www.kde.org\" or a local one "
+"like \"~/.kderc\"."
+msgstr ""
+"Masukkan arahan yang anda ingin laksanakan atau alamat sumber yang anda "
+"ingin buka. URL jauh seperti \"www.kde.org\" atau yang setempat seperti "
+"\"~/.kderc\""
 
 #: rc.cpp:8
+msgid "Run with realtime &scheduling"
+msgstr ""
+
+#: rc.cpp:9
+#, fuzzy
+msgid ""
+"<qt>Select whether realtime scheduling should be enabled for the "
+"application. The scheduler governs which process will run and which will "
+"have to wait. Two schedulers are available:\n"
+"<ul>\n"
+"<li><em>Normal:</em> This is the standard, timesharing scheduler. It will "
+"divide fairly the available processing time between all processes.</li>\n"
+"<li><em>Realtime:</em>"
+"This scheduler will run your application uninterrupted until it gives up the "
+"processor. This can be dangerous. An application that does not give up the "
+"processor might hang the system. You need root's password to use the "
+"scheduler.</li>\n"
+"</ul>\n"
+"</qt>"
+msgstr ""
+"Select which scheduler to use for the application. The scheduler governs "
+"which process will run and which will have to wait. Two schedulers are "
+"available:"
+"<ul>"
+"<li><em>Normal:</em> This is the standard, timesharing scheduler. It will "
+"divide fairly the available processing time between all "
+"processes.</li>"
+"<li><em>Realtime:</em>"
+"This scheduler will run your application uninterrupted until it gives up the "
+"processor. This can be dangerous. An application that does not give up the "
+"processor might hang the system. You need root's password to use the "
+"scheduler.</li>"
+
+#: rc.cpp:10
 msgid "User&name:"
 msgstr "&Nama Pengguna:"
 
-#: rc.cpp:9
-msgid "Run with a different &priority"
-msgstr "&Laksanakan dengan keutamaan berlainan"
+#: rc.cpp:11 rc.cpp:21
+#, fuzzy
+msgid "Enter the user you want to run the application as here."
+msgstr "Masukkan nama pengguna yang anda ingin laksanakan aplikasi untuknya."
 
-#: rc.cpp:10
-msgid "Low"
-msgstr "Rendah"
-
-#: rc.cpp:11
-msgid "High"
-msgstr "Tinggi"
-
-#: rc.cpp:12
-msgid "&Scheduler:"
-msgstr "Pen&jadual"
+#: rc.cpp:12 rc.cpp:14
+#, fuzzy
+msgid "Enter the password here for the user you specified above."
+msgstr "Masukkan kata laluan untuk pengguna %1 (%2)"
 
 #: rc.cpp:13
-msgid "Password required:"
-msgstr "Kata laluan diperlukan:"
-
-#: rc.cpp:14
 msgid "Pass&word:"
 msgstr "Kata &Laluan:"
 
-#: rc.cpp:18
-msgid "Form1"
-msgstr "Bentuk1"
+#: rc.cpp:15
+#, fuzzy
+msgid "Run in &terminal window"
+msgstr "Laksana dalam &terminal"
+
+#: rc.cpp:16
+msgid ""
+"Check this option if the application you want to run is a text mode "
+"application. The application will then be run in a terminal emulator window."
+msgstr ""
+"Pilih pilihan ini jika anda maukan aplikasi dilaksanakan di dalam mod teks. "
+"Aplikasi akan dijalankan di dalam tetingkap emulator terminal."
+
+#: rc.cpp:17
+msgid "&Priority:"
+msgstr ""
+
+#: rc.cpp:18 rc.cpp:23 rc.cpp:25 rc.cpp:26
+#, fuzzy
+msgid ""
+"The priority that the command will be run with can be set here. From left to "
+"right, it goes from low to high. The center position is the default value. "
+"For priorities higher than the default, you will need to provide the root "
+"password."
+msgstr ""
+"Keutaman boleh ditetapkan di sini. Bermula dari kiri ke kanan, dan "
+"dipadankan dengan dari rendah ke tinggi. Posisi tengah adalah untuk nilai "
+"default. Untuk keutaaman lebih tinggi daripada nilai default, anda "
+"memerlukan kata laluan root."
+
+#: rc.cpp:19
+#, fuzzy
+msgid "Run with a &different priority"
+msgstr "&Laksanakan dengan keutamaan berlainan"
 
 #: rc.cpp:20
-msgid "&Password:"
-msgstr "&Kata laluan:"
+msgid ""
+"Check this option if you want to run the application with a different "
+"priority. A higher priority tells the operating system to give more "
+"processing time to your application."
+msgstr ""
+"Pilih pilihan ini jika anda ingin laksanakan aplikasi dengan keutamaan "
+"berlainan. Keutamaan yang lebih tinggi memberitahu sistem operasi untuk "
+"memberikan lebih masa pemprosesan untuk aplikasi anda."
 
-#: rc.cpp:21
-msgid "<b>The screen is locked</b>"
-msgstr "<b>Skrin dikunci</b>"
+#: rc.cpp:22
+msgid "Low"
+msgstr "Rendah"
 
-#: rc.cpp:23
-msgid "&Start New Session"
-msgstr "Mulakan &Sesi Baru"
+#: rc.cpp:24
+msgid "High"
+msgstr "Tinggi"
 
+#: rc.cpp:27
+msgid "Run as a different &user"
+msgstr "Laksanakan sebagai pengg&una lain"
+
+#: rc.cpp:28
+msgid ""
+"Check this option if you want to run the application with a different user "
+"id. Every process has a user id associated with it. This id code determines "
+"file access and other permissions. The password of the user is required to "
+"do this."
+msgstr ""
+"Pilih pilhan ini jika anda ingin laksanakan aplikasi dengan id pengguna "
+"berlainan. Setiap proses mempunyai id pengguna yang dikaitkan. Kod id "
+"menentukan akses fail dan keizinan lain. Kata laluan pengguna diperlukan "
+"untuk perkara tersebut."
+
+#~ msgid ""
+#~ "Verification failed\n"
+#~ "Kill kdesktop_lock"
+#~ msgstr ""
+#~ "Pengesahan gagal\n"
+#~ "Bunuh kdesktop_lock"
+
+#~ msgid "Bookmarks"
+#~ msgstr "Tanda Laman"
+
+#~ msgid "Halt Computer"
+#~ msgstr "Padam Komputer"
+
+#~ msgid "Reboot Computer"
+#~ msgstr "Ulanghidup Komputer"
+
+#~ msgid "Enter the requested password here."
+#~ msgstr "Masukkan kata laluan diminta di sini."
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Realtime"
+#~ msgstr "Masa Nyata"
+
+#~ msgid "none"
+#~ msgstr "tiada"
+
+#~ msgid "Password required: %1"
+#~ msgstr "Kata laluan diperlukan: %1"
+
+#~ msgid "MinicliDlgUI"
+#~ msgstr "MinicliDlgUI"
+
+#~ msgid "Advanced Settings"
+#~ msgstr "Tetapan Lanjutan"
+
+#~ msgid "&Scheduler:"
+#~ msgstr "Pen&jadual"
+
+#~ msgid "Password required:"
+#~ msgstr "Kata laluan diperlukan:"
+
+#~ msgid "Form1"
+#~ msgstr "Bentuk1"
+
+#~ msgid "&Password:"
+#~ msgstr "&Kata laluan:"
