@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeprint\n"
-"POT-Creation-Date: 2003-08-26 01:26+0200\n"
+"POT-Creation-Date: 2003-11-07 01:31+0100\n"
 "PO-Revision-Date: 2003-08-29 08:38+0800\n"
 "Last-Translator: Muhammad Najmi bin Ahmad Zabidi <md_najmi@yahoo.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -194,8 +194,8 @@ msgstr "kepada<b></b>."
 #: lpd/kmlpdmanager.cpp:195
 #, fuzzy
 msgid ""
-"Unable to set correct permissions on spool directory %1 for printer <b>%2</"
-"b>."
+"Unable to set correct permissions on spool directory %1 for printer "
+"<b>%2</b>."
 msgstr "kepada tetap keizinan<b></b>."
 
 #: lpd/kmlpdmanager.cpp:239
@@ -263,8 +263,7 @@ msgid "Missing element: %1."
 msgstr "Elemen hilang %1."
 
 #: lpr/apshandler.cpp:258 lpr/apshandler.cpp:289 lpr/lprngtoolhandler.cpp:323
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Invalid printer backend specification: %1"
 msgstr "Tidak sah"
 
@@ -353,8 +352,7 @@ msgid ""
 msgstr "daripada kepada?"
 
 #: lpr/kmlprmanager.cpp:489
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Spooler type: %1"
 msgstr "jenis"
 
@@ -371,12 +369,12 @@ msgstr ""
 msgid "Spooler Settings"
 msgstr "Penyelarasan Spooler"
 
-#: cups/kmcupsuimanager.cpp:87 lpr/kmlpruimanager.cpp:58
+#: cups/kmcupsuimanager.cpp:117 lpr/kmlpruimanager.cpp:58
 #, fuzzy
 msgid "&Local printer (parallel, serial, USB)"
 msgstr "&lokal USB"
 
-#: cups/kmcupsuimanager.cpp:88 lpr/kmlpruimanager.cpp:59
+#: cups/kmcupsuimanager.cpp:119 lpr/kmlpruimanager.cpp:59
 msgid "&Remote LPD queue"
 msgstr ""
 
@@ -385,7 +383,7 @@ msgstr ""
 msgid "&Network printer (TCP)"
 msgstr "Ra&ngkaian"
 
-#: cups/kmcupsuimanager.cpp:89 lpr/kmlpruimanager.cpp:61
+#: cups/kmcupsuimanager.cpp:121 lpr/kmlpruimanager.cpp:61
 #, fuzzy
 msgid "&SMB shared printer (Windows)"
 msgstr "Tetingkap"
@@ -469,8 +467,7 @@ msgid ""
 msgstr "kepada adalah adalah dalam."
 
 #: lpr/matichandler.cpp:457
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to remove driver file %1."
 msgstr "kepada."
 
@@ -478,7 +475,7 @@ msgstr "kepada."
 msgid "Aliases:"
 msgstr "Alias:"
 
-#: lpr/editentrydialog.cpp:46 management/kxmlcommanddlg.cpp:105
+#: lpr/editentrydialog.cpp:46 management/kxmlcommanddlg.cpp:107
 msgid "String"
 msgstr "Rentetan"
 
@@ -486,7 +483,7 @@ msgstr "Rentetan"
 msgid "Number"
 msgstr "Nombor"
 
-#: lpr/editentrydialog.cpp:48 management/kxmlcommanddlg.cpp:109
+#: lpr/editentrydialog.cpp:48 management/kxmlcommanddlg.cpp:111
 msgid "Boolean"
 msgstr "Boolean"
 
@@ -495,193 +492,450 @@ msgstr "Boolean"
 msgid "Printcap Entry: %1"
 msgstr ""
 
-#: kprintdialog.cpp:95 management/kmmainview.cpp:301 management/kmwend.cpp:92
+#: kprintdialog.cpp:95
+msgid ""
+" <qt> The <em>Location</em> may describe where the selected printer is "
+"located. The Location description is created by the administrator of the "
+"print system (or may be left empty). </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:100
+msgid " <qt> The <em>Type</em> indicates your printer type. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:102
+msgid ""
+" <qt> The <em>State</em>"
+" indicates the state of the print queue on the print server (which could be "
+"your localhost). The state may be 'Idle', 'Processing', 'Stopped', 'Paused' "
+"or similar. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:106
+msgid ""
+" <qt> The <em>Comment</em> may describe the selected printer. This comment "
+"is created by the administrator of the print system (or may be left empty). "
+"</qt>"
+msgstr ""
+
+#: kprintdialog.cpp:110
+msgid ""
+" <qt>"
+"Use this combo box to select the printer to which you want to print. If you "
+"only find the <em>KDE special printers</em> -- which save jobs to disk (as "
+"PostScript- or PDF-files), or deliver jobs via email (as a PDF attachment) "
+"-- but are missing a real printer, you need to... "
+"<ul> "
+"<li>...either create a local printer with the help of the <em>KDE Add "
+"Printer Wizard</em> which is available for the CUPS and RLPR printing "
+"systems (click button to the left of the 'Properties' button),</li> "
+"<li>...or you can try to connect to a remote CUPS print server by clicking "
+"the <em>System Options...</em> button below. A new dialog opens: click on "
+"the <em>CUPS server</em> icon and fill in the information required to use "
+"the remote server.</li> </ul> </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:126
+msgid ""
+" <qt> This button takes you to where you can make decisions regarding all "
+"supported print job options. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:129
+msgid ""
+" <qt>"
+"<p> This button reduces the list of visible printers to a shorter, more "
+"convenient, pre-defined list.</p> "
+"<p>This is particularly useful in enterprise environments with lots of "
+"printers. The default is to show <b>all</b> printers.</p> "
+"<p>To create a personal filter list, click on the <em>\"System "
+"Options...</em>\" button at the bottom of this dialog. Then, in the new "
+"dialog, select <em>\"Filter\"</em> (left column in the <em>KDE Print "
+"Configuration</em> dialog).</p> </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:138
+msgid ""
+"<qt> This button starts the <em>KDE Add Printer Wizard</em>. (<b>NOT</b> if "
+"you use <em>\"Generic LPD</em>\" or <em>\"LPRng\"</em>, or <em>\"Print "
+"Through an External Program</em>\".) Use the Wizard (with <em>\"CUPS\"</em> "
+"or <em>\"RLPR\"</em>) to add locally defined printers to your system. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:144
+msgid ""
+" <qt> You can enter any command that would also print for you in a "
+"<em>konsole</em> window. "
+"<br> <b>Example:</b> "
+"<pre>a2ps -P &lt;printername&gt; --medium=A3</pre>. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:148
+msgid ""
+" <qt>This button expands or reduces the KDE printing dialog. KDEPrint will "
+"remember what you do here; next time, it will start this dialog 'expanded' "
+"or 'collapsed', depending on the mode you are using this time.... </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:154
+msgid ""
+" <qt> This button starts a new dialog where you can adjust various settings "
+"of your printing system. Amongst them: "
+"<ul>"
+"<li> Should KDE applications embed all fonts into the PostScript they "
+"generate for printing? "
+"<li> Should KDE use an external PostScript viewer like <em>gv</em>"
+" for print page previews? "
+"<li> Should KDEPrint use a local or a remote CUPS server?, </ul> and many "
+"more....  </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:165
+msgid " <qt> This button takes you to the complete <em>KDEPrint Manual</em>. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:169
+msgid " <qt> This button cancels your print job and quits the kprinter dialog. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:173
+msgid ""
+" <qt> This button sends the job to the printing process. If you are sending "
+"non-PostScript files, you may be asked if you want KDE to convert the files "
+"into PostScript, or if you want your print subsystem (like CUPS) to do this. "
+"</qt>"
+msgstr ""
+
+#: kprintdialog.cpp:179
+msgid ""
+" <qt>"
+"<p>"
+"If you enable this checkbox, the printing dialog stays open after you hit "
+"the <em>Print</em> button.</p> "
+"<p> This is especially useful, if you need to test various print settings "
+"(like color matching for an inkjet printer) or if you want to send your job "
+"to multiple printers (one after the other) to have it finished more "
+"quickly.</p> </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:188
+msgid ""
+" <qt> The \"Output file:\" shows you where your file will be saved if you "
+"decide to \"Print to File\" your job, using one of the KDE <em>Special "
+"Printers</em> named \"Print to File (PostScript)\" or \"Print to File "
+"(PDF)\". Choose a name and location that suits you by using the button "
+"and/or editing the line on the right. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:195
+msgid ""
+" <qt> Edit this line to create a path and filename that suits you. (Only "
+"available if you \"Print to File\") </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:199
+msgid ""
+" <qt> This button calls the \"File Open\" dialog to let you choose a "
+"directory and file name where your \"Print-to-File\" job should be saved. "
+"</qt>"
+msgstr ""
+
+#: kprintdialog.cpp:204
+msgid ""
+" <qt> This button calls the \"File Open\" dialog to allow you to select a "
+"file for printing. Note, that  "
+"<ul>"
+"<li>"
+"you can select ASCII or International Text, PDF, PostScript, JPEG, TIFF, "
+"PNG, GIF and many other graphical formats. "
+"<li>you can select various files from different paths and send them as one "
+"\"multi-file job\" to the printing system. </ul> </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:215
+msgid ""
+" <qt> This button removes the highlighted file from the list of files to be "
+"printed. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:219
+msgid ""
+" <qt> This button tries to open the highlighted file, so you can view or "
+"edit it before you send it to the printing system. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:224
+msgid ""
+" <qt> This button moves the highlighted file up in the list of files to be "
+"printed. (In effect, this changes the order of the files' printout.) </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:229
+msgid ""
+" <qt>"
+" This button moves the highlighted file down in the list of files to be "
+"printed. (In effect, this changes the order of the files' printout.) </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:234
+msgid ""
+" <qt> Enable this checkbox if you want to see a preview of your printout. A "
+"preview lets you check if, for instance, your intended \"poster\" or "
+"\"pamphlet\" layout looks like you intended, without wasting paper first. It "
+"also lets you cancel the job if something looks wrong.  </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:241
+msgid ""
+" <qt>"
+" This button sets the current printer as the user's default. (Button is only "
+"visible if the <em>System Options...</em> --> <em>General</em> --> "
+"<em>Miscellaneous</em>: <em>\"Defaults to the last printer used in the "
+"application\"</em> is disabled.) </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:254 management/kmmainview.cpp:301 management/kmwend.cpp:92
 #: management/smbview.cpp:36
 msgid "Printer"
 msgstr "Pencetak"
 
-#: kprintdialog.cpp:102 management/kmspecialprinterdlg.cpp:56
-#: management/kxmlcommanddlg.cpp:112
+#: kprintdialog.cpp:267 management/kmspecialprinterdlg.cpp:56
+#: management/kxmlcommanddlg.cpp:114
 msgid "&Name:"
 msgstr "&Nama:"
 
-#: kprintdialog.cpp:103 management/kminfopage.cpp:52
+#: kprintdialog.cpp:269 management/kminfopage.cpp:52
 #, fuzzy
 msgid ""
 "_: Status\n"
 "State:"
 msgstr "Status:"
 
-#: kprintdialog.cpp:104 management/kminfopage.cpp:50
+#: kprintdialog.cpp:271 management/kminfopage.cpp:50
 msgid "Type:"
 msgstr "Jenis:"
 
-#: kprintdialog.cpp:105 management/kmwname.cpp:42
+#: kprintdialog.cpp:273 management/kmwname.cpp:42
 msgid "Location:"
 msgstr "Lokasi:"
 
-#: kprintdialog.cpp:106 management/kxmlcommanddlg.cpp:173
+#: kprintdialog.cpp:275 management/kxmlcommanddlg.cpp:175
 msgid "Comment:"
 msgstr "Komen:"
 
-#: kprintdialog.cpp:108
+#: kprintdialog.cpp:278
 msgid "P&roperties..."
 msgstr "Ci&ri-ciri."
 
-#: kprintdialog.cpp:109
+#: kprintdialog.cpp:280
 #, fuzzy
 msgid "System Op&tions..."
 msgstr "Pilihan."
 
-#: kprintdialog.cpp:110
+#: kprintdialog.cpp:282
 #, fuzzy
 msgid "Set as &Default"
 msgstr "Tetapkan sebagai &Default"
 
-#: kprintdialog.cpp:116
+#: kprintdialog.cpp:289
 msgid "Toggle printer filtering"
 msgstr ""
 
-#: kprintdialog.cpp:120
+#: kprintdialog.cpp:294
 msgid "Add printer..."
 msgstr "Tambah pencetak..."
 
-#: cups/ippreportdlg.cpp:34 cups/ippreportdlg.cpp:41 kprintdialog.cpp:121
+#: cups/ippreportdlg.cpp:34 cups/ippreportdlg.cpp:41 kprintdialog.cpp:296
 msgid "&Print"
 msgstr "Cetak"
 
-#: kprintdialog.cpp:125
+#: kprintdialog.cpp:302
 msgid "Previe&w"
 msgstr ""
 
-#: kprintdialog.cpp:126
+#: kprintdialog.cpp:304
 msgid "O&utput file:"
 msgstr "Fail o&utput:"
 
-#: kprintdialog.cpp:130
+#: kprintdialog.cpp:310
 #, fuzzy
 msgid "Print co&mmand:"
 msgstr "Cetak:"
 
-#: kprintdialog.cpp:136
+#: kprintdialog.cpp:319
 #, fuzzy
 msgid "Show/hide advanced options"
 msgstr "Papar"
 
-#: kprintdialog.cpp:137
+#: kprintdialog.cpp:321
 #, fuzzy
 msgid "&Keep this dialog open after printing"
 msgstr "Simpan"
 
-#: kprintdialog.cpp:347 kprintdialog.cpp:730
+#: kprintdialog.cpp:533 kprintdialog.cpp:905
 #, fuzzy
 msgid "An error occurred while retrieving the printer list:"
 msgstr "ralat:"
 
-#: kprintdialog.cpp:521
+#: kprintdialog.cpp:696
 #, fuzzy
 msgid "The output filename is empty."
 msgstr "adalah."
 
-#: kprintdialog.cpp:554
+#: kprintdialog.cpp:729
 #, fuzzy
 msgid "You don't have write permissions to this file."
 msgstr "keizinan kepada."
 
-#: kprintdialog.cpp:560
+#: kprintdialog.cpp:735
 msgid "The output directory does not exist."
 msgstr ""
 
-#: kprintdialog.cpp:562
+#: kprintdialog.cpp:737
 #, fuzzy
 msgid "You don't have write permissions in that directory."
 msgstr "keizinan dalam."
 
-#: kprintdialog.cpp:669
+#: kprintdialog.cpp:844
 msgid "Collaps&e"
 msgstr ""
 
-#: kprintdialog.cpp:678
+#: kprintdialog.cpp:853
 #, fuzzy
 msgid "&Expand"
 msgstr "Meluas"
 
-#: kprintdialog.cpp:720
+#: kprintdialog.cpp:895
 msgid "Initializing printing system..."
 msgstr ""
 
-#: kprintdialog.cpp:756
+#: kprintdialog.cpp:931
 msgid "Print to File"
 msgstr "Cetak ke Fail"
 
-#: kmprinter.cpp:183 kprintdialog.cpp:774
+#: kmprinter.cpp:183 kprintdialog.cpp:949
 msgid "All Files"
 msgstr "Semua Fail"
 
-#: cups/kpschedulepage.cpp:38
-msgid "Advanced Options"
-msgstr "Pilihan Lanjutan"
-
-#: cups/kpschedulepage.cpp:49
-msgid "Immediately"
+#: cups/kpschedulepage.cpp:39
+msgid ""
+" <qt> "
+"<p>"
+"Insert a meaningful string here to associate the current print job with a "
+"certain account. This string will appear in the CUPS \"page_log\" to help "
+"with the print accounting in your organization. (Leave it empty if you don't "
+"need it.) "
+"<p> It is useful for people who print on behalf of different \"customers\", "
+"like print service bureaux, letter shops, press and prepress companies, or "
+"secretaries who serve different bosses, etc. </qt>"
 msgstr ""
 
 #: cups/kpschedulepage.cpp:50
+msgid ""
+" <qt> "
+"<p>Scheduled printing lets you control the time of the actual printout, "
+"while you can still send away your job <b>now</b> and have it out of your "
+"way. "
+"<p>"
+" Especially useful is the \"Never (hold indefinitely)\" option. It allows "
+"you to park your job until a time when you (or a printer administrator) "
+"decides to manually release it. "
+"<p> This is often required in enterprise environments, where you normally "
+"are not allowed to directly and immediately access the huge production "
+"printers in your <em>Central Repro Department</em>. However it is okay to "
+"send jobs to the queue which is under the control of the operators (who, "
+"after all, need to make sure that the 10,000 sheets of pink paper which is "
+"required by the Marketing Department for a particular job are available and "
+"loaded into the paper trays). </qt>"
+msgstr ""
+
+#: cups/kpschedulepage.cpp:68
+msgid ""
+" <qt> "
+"<p>Page Labels are printed by CUPS at the top and bottom of each page. They "
+"appear on the pages surrounded by a little frame box. "
+"<p>They contain any string you type into the line edit field. </qt>"
+msgstr ""
+
+#: cups/kpschedulepage.cpp:74
+msgid ""
+" <qt> "
+"<p>Usually CUPS prints all jobs per queue according to the \"FIFO\" "
+"priniciple: <em>First In, First Out</em>. "
+"<p> The job priority option allows you to re-order the queue according to "
+"your needs. "
+"<p> It works in both directions: you can increase as well as decrease "
+"priorities. (Usually you can only control your <b>own</b> jobs). "
+"<p> Since the default job priority is \"50\", any job sent with, for "
+"example, \"49\" will be printed only after all those others have finished. "
+"Conversely, a \"51\" or higher priority job will go right at the top of a "
+"populated queue (if no other, higher prioritized one is present). </qt>"
+msgstr ""
+
+#: cups/kpschedulepage.cpp:89
+msgid "Advanced Options"
+msgstr "Pilihan Lanjutan"
+
+#: cups/kpschedulepage.cpp:100
+msgid "Immediately"
+msgstr ""
+
+#: cups/kpschedulepage.cpp:101
 #, fuzzy
 msgid "Never (hold indefinitely)"
 msgstr "Tidak sekali"
 
-#: cups/kpschedulepage.cpp:51
+#: cups/kpschedulepage.cpp:102
 #, fuzzy
 msgid "Daytime (6 am - 6 pm)"
 msgstr "am pm"
 
-#: cups/kpschedulepage.cpp:52
+#: cups/kpschedulepage.cpp:103
 #, fuzzy
 msgid "Evening (6 pm - 6 am)"
 msgstr "pm am"
 
-#: cups/kpschedulepage.cpp:53
+#: cups/kpschedulepage.cpp:104
 #, fuzzy
 msgid "Night (6 pm - 6 am)"
 msgstr "pm am"
 
-#: cups/kpschedulepage.cpp:54
+#: cups/kpschedulepage.cpp:105
 msgid "Weekend"
 msgstr "Hujung Minggu"
 
-#: cups/kpschedulepage.cpp:55
+#: cups/kpschedulepage.cpp:106
 #, fuzzy
 msgid "Second Shift (4 pm - 12 am)"
 msgstr "pm am"
 
-#: cups/kpschedulepage.cpp:56
+#: cups/kpschedulepage.cpp:107
 #, fuzzy
 msgid "Third Shift (12 am - 8 am)"
 msgstr "am am"
 
-#: cups/kpschedulepage.cpp:57
+#: cups/kpschedulepage.cpp:108
 msgid "Specified Time"
 msgstr "Jadual Ditentukan"
 
-#: cups/kpschedulepage.cpp:67
+#: cups/kpschedulepage.cpp:123
 msgid "&Schedule printing:"
 msgstr "Jadual Cetakan"
 
-#: cups/kpschedulepage.cpp:69
+#: cups/kpschedulepage.cpp:126
 msgid "&Billing information:"
 msgstr "Maklumat &Bil"
 
-#: cups/kpschedulepage.cpp:71
+#: cups/kpschedulepage.cpp:129
 #, fuzzy
 msgid "T&op/Bottom page label:"
 msgstr "Atas Bawah:"
 
-#: cups/kpschedulepage.cpp:73
+#: cups/kpschedulepage.cpp:132
 msgid "&Job priority:"
 msgstr "iKeutamaan Ker&ja:"
 
-#: cups/kpschedulepage.cpp:103
+#: cups/kpschedulepage.cpp:163
 #, fuzzy
 msgid "The time specified is not valid."
 msgstr "Masa ditentukan adalah tidak sah."
@@ -764,32 +1018,36 @@ msgid ""
 "<p><b>Samba server</b></p>Adobe Windows PostScript driver files plus the "
 "CUPS printer PPD will be exported to the <tt>[print$]</tt> special share of "
 "the Samba server (to change the source CUPS server, use the "
-"<nobr><i>Configure Manager -> CUPS server</i></nobr> first). The <tt>[print$]"
-"</tt> share must exist on the Samba side prior to clicking the <b>Export</b> "
-"button below."
-msgstr "<p><b></b></p><tt></tt><nobr><i> Konfigurasikan</i></nobr><tt></tt><b> Eksport</b>."
+"<nobr><i>Configure Manager -> CUPS server</i></nobr> first). The "
+"<tt>[print$]</tt> share must exist on the Samba side prior to clicking the "
+"<b>Export</b> button below."
+msgstr ""
+"<p><b></b></p><tt></tt><nobr><i> Konfigurasikan</i></nobr><tt></tt><b> "
+"Eksport</b>."
 
 #: cups/cupsaddsmb2.cpp:87
 #, fuzzy
 msgid ""
-"<p><b>Samba username</b></p>User needs to have write access to the <tt>[print"
-"$]</tt> share on the Samba server. <tt>[print$]</tt> holds printer drivers "
-"prepared for download to Windows clients. This dialog does not work for "
-"Samba servers configured with <tt>security = share</tt> (but works fine with "
-"<tt>security = user</tt>)."
-msgstr "<p><b> Samba</b></p> Pengguna kepada akses kepada<tt></tt> Samba<tt></tt> kepada Tetingkap Samba dengan<tt></tt> dengan<tt></tt>."
+"<p><b>Samba username</b></p>User needs to have write access to the "
+"<tt>[print$]</tt> share on the Samba server. <tt>[print$]</tt>"
+" holds printer drivers prepared for download to Windows clients. This dialog "
+"does not work for Samba servers configured with <tt>security = share</tt> "
+"(but works fine with <tt>security = user</tt>)."
+msgstr ""
+"<p><b> Samba</b></p> Pengguna kepada akses kepada<tt></tt> Samba<tt></tt> "
+"kepada Tetingkap Samba dengan<tt></tt> dengan<tt></tt>."
 
 #: cups/cupsaddsmb2.cpp:95
 #, fuzzy
 msgid ""
-"<p><b>Samba password</b></p>The Samba setting <tt>encrypt passwords = yes</"
-"tt> (default) requires prior use of <tt>smbpasswd -a [username]</tt> "
+"<p><b>Samba password</b></p>The Samba setting <tt>encrypt passwords = "
+"yes</tt> (default) requires prior use of <tt>smbpasswd -a [username]</tt> "
 "command, to create an encrypted Samba password and have Samba recognize it."
 msgstr "<p><b></b></p><tt> ya</tt><tt></tt>."
 
 #: cups/cupsaddsmb2.cpp:266
 #, c-format
-msgid "Creating directory %1"
+msgid "Creating folder %1"
 msgstr ""
 
 #: cups/cupsaddsmb2.cpp:274
@@ -798,14 +1056,12 @@ msgid "Uploading %1"
 msgstr ""
 
 #: cups/cupsaddsmb2.cpp:282
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Installing driver for %1"
 msgstr "Memasang"
 
 #: cups/cupsaddsmb2.cpp:290
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Installing printer %1"
 msgstr "Memasang"
 
@@ -819,9 +1075,11 @@ msgid ""
 "Operation failed. Possible reasons are: permission denied or invalid Samba "
 "configuration (see <a href=\"man:/cupsaddsmb\">cupsaddsmb</a> manual page "
 "for detailed information, you need <a href=\"http://www.cups.org\">CUPS</a> "
-"version 1.1.11 or higher). You may want to try again with another login/"
-"password."
-msgstr "Operasi Samba<a href=\"man:/cupsaddsmb\"></a><a href=\"http://www.cups.org\"></a> kepada dengan."
+"version 1.1.11 or higher). You may want to try again with another "
+"login/password."
+msgstr ""
+"Operasi Samba<a href=\"man:/cupsaddsmb\"></a><a "
+"href=\"http://www.cups.org\"></a> kepada dengan."
 
 #: cups/cupsaddsmb2.cpp:351
 #, fuzzy
@@ -837,30 +1095,35 @@ msgstr "<h3> Operasi</h3><p></p>"
 #, fuzzy
 msgid ""
 "You are about to prepare the <b>%1</b> driver to be shared out to Windows "
-"clients through Samba. This operation requires the <a href=\"http://www."
-"adobe.com/products/printerdrivers/main.html\">Adobe PostScript Driver</a>, a "
-"recent version of Samba 2.2.x and a running SMB service on the target "
-"server. Click <b>Export</b> to start the operation. Read the <a href=\"man:/"
-"cupsaddsmb\">cupsaddsmb</a> manual page in Konqueror or type <tt>man "
-"cupsaddsmb</tt> in a console window to learn more about this functionality."
-msgstr "<b></b><a href=\"http://www.adobe.com/products/printerdrivers/main.html\"></a><b> Eksport</b><a href=\"man:/cupsaddsmb\"></a><tt></tt>."
+"clients through Samba. This operation requires the <a "
+"href=\"http://www.adobe.com/products/printerdrivers/main.html\">Adobe "
+"PostScript Driver</a>, a recent version of Samba 2.2.x and a running SMB "
+"service on the target server. Click <b>Export</b> to start the operation. "
+"Read the <a href=\"man:/cupsaddsmb\">cupsaddsmb</a>"
+" manual page in Konqueror or type <tt>man cupsaddsmb</tt> in a console "
+"window to learn more about this functionality."
+msgstr ""
+"<b></b><a "
+"href=\"http://www.adobe.com/products/printerdrivers/main.html\"></a><b> "
+"Eksport</b><a href=\"man:/cupsaddsmb\"></a><tt></tt>."
 
 #: cups/cupsaddsmb2.cpp:392
 #, fuzzy
 msgid ""
-"Some driver files are missing. You can get them on <a href=\"http://www."
-"adobe.com\">Adobe</a> web site. See <a href=\"man:/cupsaddsmb\">cupsaddsmb</"
-"a> manual page for more details (you need <a href=\"http://www.cups.org"
-"\">CUPS</a> version 1.1.11 or higher)."
-msgstr "hilang ambil<a href=\"http://www.adobe.com\"></a><a href=\"man:/cupsaddsmb\"></a><a href=\"http://www.cups.org\"></a>."
+"Some driver files are missing. You can get them on <a "
+"href=\"http://www.adobe.com\">Adobe</a> web site. See <a "
+"href=\"man:/cupsaddsmb\">cupsaddsmb</a> manual page for more details (you "
+"need <a href=\"http://www.cups.org\">CUPS</a> version 1.1.11 or higher)."
+msgstr ""
+"hilang ambil<a href=\"http://www.adobe.com\"></a><a "
+"href=\"man:/cupsaddsmb\"></a><a href=\"http://www.cups.org\"></a>."
 
 #: cups/cupsaddsmb2.cpp:403
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Preparing to upload driver to host %1"
 msgstr "kepada kepada"
 
-#: cups/cupsaddsmb2.cpp:408 management/networkscanner.cpp:146
+#: cups/cupsaddsmb2.cpp:408 management/networkscanner.cpp:148
 msgid "&Abort"
 msgstr ""
 
@@ -869,8 +1132,7 @@ msgid "The driver for printer <b>%1</b> could not be found."
 msgstr ""
 
 #: cups/cupsaddsmb2.cpp:454
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Preparing to install driver on host %1"
 msgstr "kepada"
 
@@ -883,33 +1145,54 @@ msgstr "Pencetak"
 msgid "You must select a printer!"
 msgstr ""
 
-#: cups/ipprequest.cpp:226
+#: cups/ipprequest.cpp:103
+msgid "You don't have access to the requested resource."
+msgstr ""
+
+#: cups/ipprequest.cpp:106
+msgid "You are not authorized to access the requested resource."
+msgstr ""
+
+#: cups/ipprequest.cpp:109
+#, fuzzy
+msgid "The requested operation cannot be completed."
+msgstr "adalah."
+
+#: cups/ipprequest.cpp:112
+msgid "The requested service is currently unavailable."
+msgstr ""
+
+#: cups/ipprequest.cpp:115
+msgid "The target printer is not accepting print jobs."
+msgstr ""
+
+#: cups/ipprequest.cpp:225
 #, fuzzy
 msgid ""
 "Connection to CUPS server failed. Check that the CUPS server is correctly "
 "installed and running."
 msgstr "Sambungan kepada adalah."
 
-#: cups/ipprequest.cpp:229
+#: cups/ipprequest.cpp:228
 #, fuzzy
 msgid "The IPP request failed for an unknown reason."
 msgstr "tidak diketahui."
 
-#: cups/ipprequest.cpp:330
+#: cups/ipprequest.cpp:329
 #, fuzzy
 msgid "Attribute"
 msgstr "Atribut"
 
-#: cups/ipprequest.cpp:331
+#: cups/ipprequest.cpp:330
 msgid "Values"
 msgstr ""
 
-#: cups/ipprequest.cpp:362
+#: cups/ipprequest.cpp:361
 #, fuzzy
 msgid "True"
 msgstr "Benar"
 
-#: cups/ipprequest.cpp:362
+#: cups/ipprequest.cpp:361
 #, fuzzy
 msgid "False"
 msgstr "Palsu"
@@ -1024,7 +1307,7 @@ msgstr ""
 msgid "Define here a group of allowed/denied users for this printer."
 msgstr "Kumpulan."
 
-#: cups/kmwusers.cpp:45 management/kxmlcommanddlg.cpp:115
+#: cups/kmwusers.cpp:45 management/kxmlcommanddlg.cpp:117
 #, fuzzy
 msgid "&Type:"
 msgstr "Jenis:"
@@ -1073,85 +1356,111 @@ msgstr ""
 
 #: cups/kmconfigcupsdir.cpp:34
 #, fuzzy
-msgid "Directory"
-msgstr "Direktori"
+msgid "Folder"
+msgstr "Tapis"
 
 #: cups/kmconfigcupsdir.cpp:35
 #, fuzzy
-msgid "CUPS Directory Settings"
-msgstr "Direktori"
+msgid "CUPS Folder Settings"
+msgstr "Pelayan"
 
 #: cups/kmconfigcupsdir.cpp:38
-msgid "Installation Directory"
-msgstr ""
+#, fuzzy
+msgid "Installation Folder"
+msgstr "Memasang"
 
 #: cups/kmconfigcupsdir.cpp:41
 #, fuzzy
 msgid "Standard installation (/)"
 msgstr "Piawaian"
 
-#: cups/kptagspage.cpp:32
+#: cups/kptagspage.cpp:35
+msgid ""
+" <qt>"
+"<p>You may send additional messages to the operator(s) of your production "
+"printers (e.g. in your <em>Central Repro Department</p>) Your messages can "
+"be read by the operator(s) (or yourself) by viewing the <em>\"Job IPP "
+"Report\"</em> for the respective job.</p> <b>Examples:</b>"
+"<br>"
+"<pre> <em>Call_after_completion</em> (Name) -- <em>"
+"Joe User, phone extension 1234</em> (Value)"
+"<br> <em>Mail_after_completion</em> (Name) -- <em>Jill User "
+"&lt;juser@somecompany.com&gt;</em> (Value)"
+"<br> <em>Deliver_after_completion</em> (Name) -- <em>to Marketing "
+"Department</em> (Value) </pre> "
+"<p><b>Note:</b> the \"Name\" field must not include spaces or tabs. </qt>"
+msgstr ""
+
+#: cups/kptagspage.cpp:46
 msgid "Additional Tags"
 msgstr ""
 
-#: cups/kptagspage.cpp:37 kfilelist.cpp:43 kpfilterpage.cpp:308
+#: cups/kptagspage.cpp:51 kfilelist.cpp:93 kpfilterpage.cpp:308
 #: management/kmjobviewer.cpp:237 management/kmwend.cpp:53
-#: management/kxmlcommanddlg.cpp:139 management/kxmlcommanddlg.cpp:542
+#: management/kxmlcommanddlg.cpp:141 management/kxmlcommanddlg.cpp:544
 #, fuzzy
 msgid "Name"
 msgstr "Nama"
 
-#: cups/kptagspage.cpp:38
+#: cups/kptagspage.cpp:52
 #, fuzzy
 msgid "Value"
 msgstr "Nilai"
 
-#: cups/kptagspage.cpp:46
+#: cups/kptagspage.cpp:61
 #, fuzzy
 msgid "Read-Only"
 msgstr "Ulangmuat"
 
-#: cups/kptagspage.cpp:69
+#: cups/kptagspage.cpp:84
 #, fuzzy
 msgid "The tag name must not contain any spaces: <b>%1</b>."
 msgstr "tag nama<b></b>."
 
-#: cups/kmcupsuimanager.cpp:90
+#: cups/kmcupsuimanager.cpp:85 cups/kmcupsuimanager.cpp:88
+#: cups/kmcupsuimanager.cpp:91 cups/kmcupsuimanager.cpp:94
+#: cups/kmcupsuimanager.cpp:97 cups/kmcupsuimanager.cpp:100
+#: cups/kmcupsuimanager.cpp:103 cups/kmcupsuimanager.cpp:106
+#: cups/kmcupsuimanager.cpp:109 cups/kmcupsuimanager.cpp:112
+msgid "<qt><p> </p>. </qt>"
+msgstr ""
+
+#: cups/kmcupsuimanager.cpp:123
 #, fuzzy
 msgid "Ne&twork printer (TCP)"
 msgstr "Rangkaian"
 
-#: cups/kmcupsuimanager.cpp:91
+#: cups/kmcupsuimanager.cpp:125
 #, fuzzy
 msgid "Re&mote CUPS server (IPP/HTTP)"
 msgstr "HTTP"
 
-#: cups/kmcupsuimanager.cpp:92
+#: cups/kmcupsuimanager.cpp:127
 #, fuzzy
 msgid "Network printer w/&IPP (IPP/HTTP)"
 msgstr "Rangka&ian"
 
-#: cups/kmcupsuimanager.cpp:93
+#: cups/kmcupsuimanager.cpp:129
 #, fuzzy
 msgid "S&erial Fax/Modem printer"
 msgstr "Faks Mod&em"
 
-#: cups/kmcupsuimanager.cpp:94
+#: cups/kmcupsuimanager.cpp:131
 #, fuzzy
 msgid "Other &printer type"
 msgstr "Lain-lain"
 
-#: cups/kmcupsuimanager.cpp:96
+#: cups/kmcupsuimanager.cpp:135
 #, fuzzy
 msgid "Cl&ass of printers"
 msgstr "Kel&as"
 
-#: cups/kmcupsuimanager.cpp:174
+#: cups/kmcupsuimanager.cpp:214
 #, fuzzy
 msgid "Priority"
 msgstr "Prioriti"
 
-#: cups/kmcupsuimanager.cpp:176
+#: cups/kmcupsuimanager.cpp:216
 #, fuzzy
 msgid "Billing Information"
 msgstr "Maklumat Bayaran"
@@ -1206,8 +1515,7 @@ msgid "Connected to %1:%2"
 msgstr "Tersambung kepada"
 
 #: cups/kmcupsmanager.cpp:927 cups/kmcupsmanager.cpp:954
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "Connection to CUPS server failed. Check that the CUPS server is correctly "
 "installed and running. Error: %1."
@@ -1332,8 +1640,7 @@ msgid "<b>State</b>: %1<br>"
 msgstr "<b> Keadaan</b><br>"
 
 #: cups/kmwippprinter.cpp:199
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to retrieve printer info. Printer answered:<br><br>%1"
 msgstr "kepada maklumat Pencetak<br><br>"
 
@@ -1355,9 +1662,11 @@ msgstr "URI"
 #: cups/kmwother.cpp:46
 #, fuzzy
 msgid ""
-"<p>Enter the URI corresponding to the printer to be installed. Examples:</"
-"p><ul><li>smb://[login[:passwd]@]server/printer</li><li>lpd://server/queue</"
-"li><li>parallel:/dev/lp0</li></ul>"
+"<p>Enter the URI corresponding to the printer to be installed. "
+"Examples:</p>"
+"<ul>"
+"<li>smb://[login[:passwd]@]server/printer</li>"
+"<li>lpd://server/queue</li><li>parallel:/dev/lp0</li></ul>"
 msgstr "<p> URI kepada kepada</p><ul><li></li><li></li><li></li></ul>"
 
 #: cups/kmwother.cpp:51 management/kminfopage.cpp:54
@@ -1387,7 +1696,7 @@ msgid "&Host:"
 msgstr "&Hos:"
 
 #: cups/kmcupsconfigwidget.cpp:70 management/kmwsocketutil.cpp:53
-#: management/networkscanner.cpp:336 rlpr/kmproxywidget.cpp:35
+#: management/networkscanner.cpp:338 rlpr/kmproxywidget.cpp:35
 #, fuzzy
 msgid "&Port:"
 msgstr "Liang:"
@@ -1448,8 +1757,8 @@ msgstr "Pencetak"
 #, fuzzy
 msgid ""
 "<p>Set here the quota for this printer. Using limits of <b>0</b> means that "
-"no quota will be used. This is equivalent to set quota period to <b><nobr>No "
-"quota</nobr></b> (-1). Quota limits are defined on a per-user base and "
+"no quota will be used. This is equivalent to set quota period to <b><nobr>"
+"No quota</nobr></b> (-1). Quota limits are defined on a per-user base and "
 "applied to all users.</p>"
 msgstr "<p><b></b><b><nobr> Tidak</nobr></b></p>"
 
@@ -1480,72 +1789,71 @@ msgstr "Dizinkan"
 msgid "All users allowed"
 msgstr "Semua"
 
-#: cups/kpimagepage.cpp:41
+#: cups/kpimagepage.cpp:42
 #, fuzzy
 msgid "Image"
 msgstr "Imej"
 
-#: cups/kpimagepage.cpp:43
+#: cups/kpimagepage.cpp:44
 #, fuzzy
 msgid "Color Settings"
 msgstr "Tetapan warna"
 
-#: cups/kpimagepage.cpp:44
+#: cups/kpimagepage.cpp:45
 #, fuzzy
 msgid "Image Size"
 msgstr "Imej"
 
-#: cups/kpimagepage.cpp:45
+#: cups/kpimagepage.cpp:46
 #, fuzzy
 msgid "Image Position"
 msgstr "Imej"
 
-#: cups/kpimagepage.cpp:48
+#: cups/kpimagepage.cpp:49
 msgid "&Brightness:"
 msgstr ""
 
-#: cups/kpimagepage.cpp:51
+#: cups/kpimagepage.cpp:52
 #, fuzzy
 msgid "&Hue (Color rotation):"
 msgstr "Warna:"
 
-#: cups/kpimagepage.cpp:54
+#: cups/kpimagepage.cpp:55
 #, fuzzy
 msgid "&Saturation:"
 msgstr "Ketepuan:"
 
-#: cups/kpimagepage.cpp:57
+#: cups/kpimagepage.cpp:58
 #, fuzzy
 msgid "&Gamma (Color correction):"
 msgstr "&Gamma Warna:"
 
-#: cups/kpimagepage.cpp:73
+#: cups/kpimagepage.cpp:74
 #, fuzzy
 msgid "&Default Settings"
 msgstr "&Default"
 
-#: cups/kpimagepage.cpp:78
+#: cups/kpimagepage.cpp:79
 #, fuzzy
 msgid "Natural Image Size"
 msgstr "Imej"
 
-#: cups/kpimagepage.cpp:79
+#: cups/kpimagepage.cpp:80
 #, fuzzy
 msgid "Resolution (ppi)"
 msgstr "Resolusi"
 
-#: cups/kpimagepage.cpp:81
+#: cups/kpimagepage.cpp:82
 #, no-c-format
 msgid "% of Page"
 msgstr ""
 
-#: cups/kpimagepage.cpp:83
-#, no-c-format
-#, fuzzy
+#: cups/kpimagepage.cpp:84
+#, fuzzy, no-c-format
 msgid "% of Natural Image Size"
 msgstr "Imej"
 
-#: cups/kpimagepage.cpp:90
+#: cups/kpimagepage.cpp:91
 #, fuzzy
 msgid "&Image size type:"
 msgstr "&Imej saiz jenis:"
@@ -1586,8 +1894,7 @@ msgid "Unable to change job priority: "
 msgstr "kepada "
 
 #: cups/kmcupsjobmanager.cpp:405
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to find printer %1."
 msgstr "kepada."
 
@@ -1743,8 +2050,7 @@ msgid "Internal error: no device set."
 msgstr "ralat tidak tetap."
 
 #: tools/escputil/escpwidget.cpp:161
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unsupported connection type: %1"
 msgstr "jenis"
 
@@ -1937,8 +2243,7 @@ msgid "An error occurred while retrieving the printer list."
 msgstr "ralat."
 
 #: management/kmmainview.cpp:496
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to modify the state of printer %1."
 msgstr "kepada Keadaan."
 
@@ -1948,32 +2253,27 @@ msgid "Do you really want to remove %1?"
 msgstr "kepada?"
 
 #: management/kmmainview.cpp:511
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to remove special printer %1."
 msgstr "kepada."
 
 #: management/kmmainview.cpp:514
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to remove printer %1."
 msgstr "kepada."
 
 #: management/kmmainview.cpp:544
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Configure %1"
 msgstr "Konfigurasikan"
 
 #: management/kmmainview.cpp:551
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to modify settings of printer %1."
 msgstr "kepada."
 
 #: management/kmmainview.cpp:555
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to load a valid driver for printer %1."
 msgstr "kepada muat."
 
@@ -1998,14 +2298,12 @@ msgid "Print Test Page"
 msgstr "Cetak"
 
 #: management/kminstancepage.cpp:272 management/kmmainview.cpp:617
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Test page successfully sent to printer %1."
 msgstr "Uji kepada."
 
 #: management/kmmainview.cpp:619
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to test printer %1."
 msgstr "kepada."
 
@@ -2068,11 +2366,11 @@ msgstr "Edit"
 #: management/kmconfigcommand.cpp:39
 #, fuzzy
 msgid ""
-"<p>Command objects perform a conversion from input to output.<br>They are "
-"used as the basis to build both print filters and special printers. They are "
-"described by a command string, a set of options, a set of requirements and "
-"associated mime types. Here you can create new command objects and edit "
-"existing ones. All changes will only be effective for you."
+"<p>Command objects perform a conversion from input to output."
+"<br>They are used as the basis to build both print filters and special "
+"printers. They are described by a command string, a set of options, a set of "
+"requirements and associated mime types. Here you can create new command "
+"objects and edit existing ones. All changes will only be effective for you."
 msgstr "<p><br> Semua."
 
 #: management/kmwizard.cpp:66 management/kmwizard.cpp:211
@@ -2309,28 +2607,27 @@ msgstr "Nama pencetak:"
 msgid "General Settings"
 msgstr "Tetapan Umum"
 
-#: management/kmwdrivertest.cpp:57 management/networkscanner.cpp:100
+#: management/kmwdrivertest.cpp:57 management/networkscanner.cpp:102
 #, fuzzy
 msgid "&Settings..."
 msgstr "Tetapan."
 
-#: management/networkscanner.cpp:101 management/networkscanner.cpp:181
+#: management/networkscanner.cpp:103 management/networkscanner.cpp:183
 msgid "Sc&an"
 msgstr ""
 
-#: management/networkscanner.cpp:108
+#: management/networkscanner.cpp:110
 #, fuzzy
 msgid "Network scan:"
 msgstr "Rangkaian:"
 
-#: management/networkscanner.cpp:109 management/networkscanner.cpp:296
-#: management/networkscanner.cpp:307
-#, c-format
-#, fuzzy
+#: management/networkscanner.cpp:111 management/networkscanner.cpp:298
+#: management/networkscanner.cpp:309
+#, fuzzy, c-format
 msgid "Subnet: %1"
 msgstr "Subnet"
 
-#: management/networkscanner.cpp:158
+#: management/networkscanner.cpp:160
 #, fuzzy
 msgid ""
 "You are about to scan a subnet (%1.*) that does not correspond to the "
@@ -2338,34 +2635,34 @@ msgid ""
 "subnet anyway?"
 msgstr "kepada kepada kepada?"
 
-#: management/networkscanner.cpp:161
+#: management/networkscanner.cpp:163
 msgid "&Scan"
 msgstr ""
 
-#: management/kmwsocketutil.cpp:52 management/networkscanner.cpp:335
+#: management/kmwsocketutil.cpp:52 management/networkscanner.cpp:337
 msgid "&Subnetwork:"
 msgstr ""
 
-#: management/kmwsocketutil.cpp:54 management/networkscanner.cpp:337
+#: management/kmwsocketutil.cpp:54 management/networkscanner.cpp:339
 #, fuzzy
 msgid "&Timeout (ms):"
 msgstr "ms:"
 
-#: management/kmwsocketutil.cpp:89 management/networkscanner.cpp:372
+#: management/kmwsocketutil.cpp:89 management/networkscanner.cpp:374
 #, fuzzy
 msgid "Scan Configuration"
 msgstr "Imbas"
 
 #: management/kmwsocketutil.cpp:101 management/kmwsocketutil.cpp:107
-#: management/networkscanner.cpp:384 management/networkscanner.cpp:390
+#: management/networkscanner.cpp:386 management/networkscanner.cpp:392
 msgid "Wrong subnetwork specification."
 msgstr ""
 
-#: management/kmwsocketutil.cpp:115 management/networkscanner.cpp:398
+#: management/kmwsocketutil.cpp:115 management/networkscanner.cpp:400
 msgid "Wrong timeout specification."
 msgstr ""
 
-#: management/kmwsocketutil.cpp:118 management/networkscanner.cpp:401
+#: management/kmwsocketutil.cpp:118 management/networkscanner.cpp:403
 #, fuzzy
 msgid "Wrong port specification."
 msgstr "liang."
@@ -2428,8 +2725,8 @@ msgstr "G&unakan"
 #: management/kmconfigpreview.cpp:44
 #, fuzzy
 msgid ""
-"You can use an external preview program (PS viewer) instead of the KDE built-"
-"in preview system. Note that if the KDE default PS viewer (KGhostView) "
+"You can use an external preview program (PS viewer) instead of the KDE "
+"built-in preview system. Note that if the KDE default PS viewer (KGhostView) "
 "cannot be found, KDE tries automatically to find another external PostScript "
 "viewer"
 msgstr "Nota"
@@ -2498,8 +2795,8 @@ msgstr "kepada."
 #: management/kmpropwidget.cpp:52
 #, fuzzy
 msgid ""
-"<qt>Unable to change printer properties. Error received from manager:<p>%1</"
-"p></qt>"
+"<qt>Unable to change printer properties. Error received from "
+"manager:<p>%1</p></qt>"
 msgstr "<qt> Ralat<p></p></qt>"
 
 #: management/kaddprinterwizard.cpp:9
@@ -2640,15 +2937,13 @@ msgid "All Printers"
 msgstr "Semua"
 
 #: management/kmjobviewer.cpp:153
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Print Jobs for %1"
 msgstr "Cetak Tugas"
 
 #: management/kmjobviewer.cpp:172 management/kmjobviewer.cpp:174
 #: management/kmjobviewer.cpp:335
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Max.: %1"
 msgstr "Max"
 
@@ -2758,8 +3053,7 @@ msgid "Restart"
 msgstr "Ulanghidup"
 
 #: management/kmjobviewer.cpp:512
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Move to %1"
 msgstr "Pindah"
 
@@ -2836,7 +3130,7 @@ msgstr "Komen"
 msgid "Confirmation"
 msgstr "Kepastian"
 
-#: kfilelist.cpp:44 management/kmwend.cpp:52 management/kmwend.cpp:108
+#: kfilelist.cpp:94 management/kmwend.cpp:52 management/kmwend.cpp:108
 #: management/kmwend.cpp:111
 #, fuzzy
 msgid "Type"
@@ -2848,7 +3142,7 @@ msgid "Location"
 msgstr "Lokasi"
 
 #: management/kmwend.cpp:55 management/kmwend.cpp:114
-#: management/kxmlcommanddlg.cpp:140 management/kxmlcommanddlg.cpp:542
+#: management/kxmlcommanddlg.cpp:142 management/kxmlcommanddlg.cpp:544
 #, fuzzy
 msgid "Description"
 msgstr "Huraian"
@@ -3000,138 +3294,138 @@ msgstr "nama."
 msgid "Class Members"
 msgstr "Kelas"
 
-#: management/kxmlcommanddlg.cpp:106
+#: management/kxmlcommanddlg.cpp:108
 #, fuzzy
 msgid "Integer"
 msgstr "Integer"
 
-#: management/kxmlcommanddlg.cpp:107
+#: management/kxmlcommanddlg.cpp:109
 msgid "Float"
 msgstr ""
 
-#: management/kxmlcommanddlg.cpp:108
+#: management/kxmlcommanddlg.cpp:110
 #, fuzzy
 msgid "List"
 msgstr "Senarai"
 
-#: management/kmspecialprinterdlg.cpp:57 management/kxmlcommanddlg.cpp:113
-#: management/kxmlcommanddlg.cpp:863
+#: management/kmspecialprinterdlg.cpp:57 management/kxmlcommanddlg.cpp:115
+#: management/kxmlcommanddlg.cpp:865
 #, fuzzy
 msgid "&Description:"
 msgstr "Huraian:"
 
-#: management/kmspecialprinterdlg.cpp:83 management/kxmlcommanddlg.cpp:114
+#: management/kmspecialprinterdlg.cpp:83 management/kxmlcommanddlg.cpp:116
 #, fuzzy
 msgid "&Format:"
 msgstr "&Format:"
 
-#: management/kxmlcommanddlg.cpp:116
+#: management/kxmlcommanddlg.cpp:118
 #, fuzzy
 msgid "Default &value:"
 msgstr "Default:"
 
-#: management/kxmlcommanddlg.cpp:117
+#: management/kxmlcommanddlg.cpp:119
 msgid "Co&mmand:"
 msgstr ""
 
-#: management/kxmlcommanddlg.cpp:124
+#: management/kxmlcommanddlg.cpp:126
 msgid "&Persistent option"
 msgstr ""
 
-#: management/kxmlcommanddlg.cpp:126
+#: management/kxmlcommanddlg.cpp:128
 msgid "Va&lues"
 msgstr ""
 
-#: management/kxmlcommanddlg.cpp:134
+#: management/kxmlcommanddlg.cpp:136
 msgid "Minimum v&alue:"
 msgstr ""
 
-#: management/kxmlcommanddlg.cpp:135
+#: management/kxmlcommanddlg.cpp:137
 msgid "Ma&ximum value:"
 msgstr ""
 
-#: management/kxmlcommanddlg.cpp:148
+#: management/kxmlcommanddlg.cpp:150
 #, fuzzy
 msgid "Add value"
 msgstr "Tambah"
 
-#: management/kxmlcommanddlg.cpp:149
+#: management/kxmlcommanddlg.cpp:151
 #, fuzzy
 msgid "Delete value"
 msgstr "Padam"
 
-#: management/kxmlcommanddlg.cpp:151
+#: management/kxmlcommanddlg.cpp:153
 #, fuzzy
 msgid "Apply changes"
 msgstr "Terap perubahan"
 
-#: management/kxmlcommanddlg.cpp:152
+#: management/kxmlcommanddlg.cpp:154
 #, fuzzy
 msgid "Add group"
 msgstr "Tambah"
 
-#: management/kxmlcommanddlg.cpp:153
+#: management/kxmlcommanddlg.cpp:155
 #, fuzzy
 msgid "Add option"
 msgstr "Tambah"
 
-#: management/kxmlcommanddlg.cpp:154
+#: management/kxmlcommanddlg.cpp:156
 #, fuzzy
 msgid "Delete item"
 msgstr "Padam item"
 
-#: kfilelist.cpp:73 management/kxmlcommanddlg.cpp:155
+#: kfilelist.cpp:127 management/kxmlcommanddlg.cpp:157
 #, fuzzy
 msgid "Move up"
 msgstr "Pindah"
 
-#: kfilelist.cpp:79 management/kxmlcommanddlg.cpp:156
+#: kfilelist.cpp:134 management/kxmlcommanddlg.cpp:158
 #, fuzzy
 msgid "Move down"
 msgstr "Pindah"
 
-#: management/kxmlcommanddlg.cpp:160
+#: management/kxmlcommanddlg.cpp:162
 #, fuzzy
 msgid "&Input From"
 msgstr "&Input"
 
-#: management/kxmlcommanddlg.cpp:161
+#: management/kxmlcommanddlg.cpp:163
 #, fuzzy
 msgid "O&utput To"
 msgstr "O&utput"
 
-#: management/kxmlcommanddlg.cpp:162 management/kxmlcommanddlg.cpp:164
+#: management/kxmlcommanddlg.cpp:164 management/kxmlcommanddlg.cpp:166
 #, fuzzy
 msgid "File:"
 msgstr "Fail:"
 
-#: management/kxmlcommanddlg.cpp:163 management/kxmlcommanddlg.cpp:165
+#: management/kxmlcommanddlg.cpp:165 management/kxmlcommanddlg.cpp:167
 #, fuzzy
 msgid "Pipe:"
 msgstr "Paip:"
 
-#: management/kxmlcommanddlg.cpp:282
+#: management/kxmlcommanddlg.cpp:284
 #, fuzzy
 msgid ""
 "An identification string. Use only alphanumeric characters except spaces. "
 "The string <b>__root__</b> is reserved for internal use."
 msgstr "Gunakan<b></b> adalah."
 
-#: management/kxmlcommanddlg.cpp:286
+#: management/kxmlcommanddlg.cpp:288
 #, fuzzy
 msgid ""
 "A description string. This string is shown in the interface, and should be "
 "explicit enough about the role of the corresponding option."
 msgstr "keterangan adalah dalam."
 
-#: management/kxmlcommanddlg.cpp:290
+#: management/kxmlcommanddlg.cpp:292
 #, fuzzy
 msgid ""
 "The type of the option. This determines how the option is presented "
 "graphically to the user."
 msgstr "jenis adalah kepada."
 
-#: management/kxmlcommanddlg.cpp:294
+#: management/kxmlcommanddlg.cpp:296
 #, fuzzy
 msgid ""
 "The format of the option. This determines how the option is formatted for "
@@ -3140,7 +3434,7 @@ msgid ""
 "string representation of the option value."
 msgstr "adalah dalam tag<b></b> kepada tag masa."
 
-#: management/kxmlcommanddlg.cpp:300
+#: management/kxmlcommanddlg.cpp:302
 #, fuzzy
 msgid ""
 "The default value of the option. For non persistent options, nothing is "
@@ -3149,7 +3443,7 @@ msgid ""
 "utility, make the option persistent to avoid unwanted effects."
 msgstr "tiada apa-apa adalah kepada Jika kepada kepada."
 
-#: management/kxmlcommanddlg.cpp:306
+#: management/kxmlcommanddlg.cpp:308
 #, fuzzy
 msgid ""
 "Make the option persistent. A persistent option is always written to the "
@@ -3157,49 +3451,55 @@ msgid ""
 "value does not match with the actual default value of the underlying utility."
 msgstr "adalah sentiasa kepada adalah dengan."
 
-#: management/kxmlcommanddlg.cpp:310
-#, c-format
-#, fuzzy
+#: management/kxmlcommanddlg.cpp:312
+#, fuzzy, c-format
 msgid ""
 "The full command line to execute the associated underlying utility. This "
 "command line is based on a mechanism of tags that are replaced at run-time. "
-"The supported tags are:<ul><li><b>%filterargs</b>: command options</"
-"li><li><b>%filterinput</b>: input specification</li><li><b>%filteroutput</"
-"b>: output specification</li><li><b>%psu</b>: the page size in upper case</"
-"li><li><b>%psl</b>: the page size in lower case</li></ul>"
-msgstr "kepada adalah masa<ul><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b> saiz dalam</li><li><b></b> saiz dalam</li></ul>"
+"The supported tags are:"
+"<ul>"
+"<li><b>%filterargs</b>: command options</li>"
+"<li><b>%filterinput</b>: input specification</li>"
+"<li><b>%filteroutput</b>: output specification</li>"
+"<li><b>%psu</b>: the page size in upper case</li>"
+"<li><b>%psl</b>: the page size in lower case</li></ul>"
+msgstr ""
+"kepada adalah "
+"masa"
+"<ul>"
+"<li><b></b></li>"
+"<li><b></b></li>"
+"<li><b></b></li><li><b></b> saiz dalam</li><li><b></b> saiz dalam</li></ul>"
 
-#: management/kxmlcommanddlg.cpp:320
-#, c-format
-#, fuzzy
+#: management/kxmlcommanddlg.cpp:322
+#, fuzzy, c-format
 msgid ""
 "Input specification when the underlying utility reads input data from a "
 "file. Use the tag <b>%in</b> to represent the input filename."
 msgstr "Input daripada Gunakan tag<b> dalam</b> kepada."
 
-#: management/kxmlcommanddlg.cpp:324
-#, c-format
-#, fuzzy
+#: management/kxmlcommanddlg.cpp:326
+#, fuzzy, c-format
 msgid ""
 "Output specification when the underlying utility writes output data to a "
 "file. Use the tag <b>%out</b> to represent the output filename."
 msgstr "Output kepada Gunakan tag<b></b> kepada."
 
-#: management/kxmlcommanddlg.cpp:328
+#: management/kxmlcommanddlg.cpp:330
 #, fuzzy
 msgid ""
 "Input specification when the underlying utility reads input data from its "
 "standard input."
 msgstr "Input daripada."
 
-#: management/kxmlcommanddlg.cpp:332
+#: management/kxmlcommanddlg.cpp:334
 #, fuzzy
 msgid ""
 "Output specification when the underlying utility writes output data to its "
 "standard output."
 msgstr "Output kepada."
 
-#: management/kxmlcommanddlg.cpp:336
+#: management/kxmlcommanddlg.cpp:338
 #, fuzzy
 msgid ""
 "A comment about the underlying utility, which can be viewed by the user from "
@@ -3207,58 +3507,57 @@ msgid ""
 "&lt;b&gt; or &lt;i&gt;."
 msgstr "daripada HTML&lt;&gt;&lt;&gt;&lt;&gt;."
 
-#: management/kxmlcommanddlg.cpp:565
+#: management/kxmlcommanddlg.cpp:567
 #, fuzzy
 msgid "Invalid identification name. Empty strings and \"__root__\" are not allowed."
 msgstr "Tidak sah nama."
 
-#: management/kxmlcommanddlg.cpp:646 management/kxmlcommanddlg.cpp:649
+#: management/kxmlcommanddlg.cpp:648 management/kxmlcommanddlg.cpp:651
 #, fuzzy
 msgid "New Group"
 msgstr "Baru"
 
-#: management/kxmlcommanddlg.cpp:665 management/kxmlcommanddlg.cpp:668
+#: management/kxmlcommanddlg.cpp:667 management/kxmlcommanddlg.cpp:670
 #, fuzzy
 msgid "New Option"
 msgstr "Baru"
 
-#: management/kxmlcommanddlg.cpp:792 management/kxmlcommanddlg.cpp:936
-#, c-format
-#, fuzzy
+#: management/kxmlcommanddlg.cpp:794 management/kxmlcommanddlg.cpp:938
+#, fuzzy, c-format
 msgid "Command Edit for %1"
 msgstr "Edit"
 
-#: management/kxmlcommanddlg.cpp:830
+#: management/kxmlcommanddlg.cpp:832
 #, fuzzy
 msgid "&Mime Type Settings"
 msgstr "Jenis"
 
-#: management/kxmlcommanddlg.cpp:836
+#: management/kxmlcommanddlg.cpp:838
 #, fuzzy
 msgid "Supported &Input Formats"
 msgstr "D&isokong Input"
 
-#: kpfilterpage.cpp:309 management/kxmlcommanddlg.cpp:837
+#: kpfilterpage.cpp:309 management/kxmlcommanddlg.cpp:839
 #, fuzzy
 msgid "Requirements"
 msgstr "Keperluan"
 
-#: management/kxmlcommanddlg.cpp:848
+#: management/kxmlcommanddlg.cpp:850
 #, fuzzy
 msgid "&Edit Command..."
 msgstr "&Edit."
 
-#: management/kxmlcommanddlg.cpp:865
+#: management/kxmlcommanddlg.cpp:867
 #, fuzzy
 msgid "Output &format:"
 msgstr "Output:"
 
-#: management/kxmlcommanddlg.cpp:867
+#: management/kxmlcommanddlg.cpp:869
 #, fuzzy
 msgid "ID name:"
 msgstr "ID nama:"
 
-#: management/kxmlcommanddlg.cpp:1030
+#: management/kxmlcommanddlg.cpp:1032
 #, fuzzy
 msgid "exec:/"
 msgstr "laksana:/"
@@ -3283,22 +3582,22 @@ msgstr "adalah hilang!"
 msgid "Can't find queue %1 on server %2! Do you want to continue anyway?"
 msgstr "kepada?"
 
-#: management/kmconfigfilter.cpp:39
+#: management/kmconfigfilter.cpp:40
 #, fuzzy
 msgid "Filter"
 msgstr "Tapis"
 
-#: management/kmconfigfilter.cpp:40
+#: management/kmconfigfilter.cpp:41
 #, fuzzy
 msgid "Printer Filtering Settings"
 msgstr "Pencetak Menapis"
 
-#: management/kmconfigfilter.cpp:43
+#: management/kmconfigfilter.cpp:44
 #, fuzzy
 msgid "Printer Filter"
 msgstr "Pencetak"
 
-#: management/kmconfigfilter.cpp:55
+#: management/kmconfigfilter.cpp:56
 #, fuzzy
 msgid ""
 "The printer filtering allows you to view only a specific set of printers "
@@ -3308,7 +3607,7 @@ msgid ""
 "Both are cumulative and ignored if empty."
 msgstr "<b></b> Kumpulan."
 
-#: management/kmconfigfilter.cpp:61
+#: management/kmconfigfilter.cpp:62
 #, fuzzy
 msgid "Location filter:"
 msgstr "Lokasi:"
@@ -3350,13 +3649,22 @@ msgstr ""
 #: management/kmwinfopage.cpp:39
 #, fuzzy
 msgid ""
-"<p>Welcome,</p><br><p>This wizard will help to install a new printer on your "
-"computer. It will guide you through the various steps of the process of "
-"installing and configuring a printer for your printing system. At each step, "
-"you can always go back using the <b>Back</b> button.</p><br><p>We hope "
-"you'll enjoy this tool!</p><br><p align=right><a href=\"http://printing.kde."
-"org\"><i>The KDE printing team</i></a>.</p>"
-msgstr "<p></p><br><p><b> Undur</b></p><br><p></p><br><p align=right><a href=\"http://printing.kde.org\"><i></i></a></p>"
+"<p>Welcome,</p>"
+"<br>"
+"<p>This wizard will help to install a new printer on your computer. It will "
+"guide you through the various steps of the process of installing and "
+"configuring a printer for your printing system. At each step, you can always "
+"go back using the <b>Back</b> button.</p>"
+"<br>"
+"<p>We hope you'll enjoy this tool!</p>"
+"<br><p align=right><a href=\"http://printing.kde.org\"><i>The KDE printing "
+"team</i></a>.</p>"
+msgstr ""
+"<p></p>"
+"<br>"
+"<p><b> Undur</b></p>"
+"<br>"
+"<p></p><br><p align=right><a href=\"http://printing.kde.org\"><i></i></a></p>"
 
 #: management/kmdriverdbwidget.cpp:53
 msgid "&PostScript printer"
@@ -3430,50 +3738,50 @@ msgstr "Baru"
 msgid "Edit command"
 msgstr "Edit"
 
-#: management/kxmlcommandselector.cpp:84
+#: management/kxmlcommandselector.cpp:85
 #, fuzzy
 msgid "&Browse..."
 msgstr "Lungsur."
 
-#: management/kxmlcommandselector.cpp:85
+#: management/kxmlcommandselector.cpp:86
 #, fuzzy
 msgid "Use co&mmand:"
 msgstr "Gunakan:"
 
-#: management/kxmlcommandselector.cpp:186
+#: management/kxmlcommandselector.cpp:187
 msgid "Command Name"
 msgstr ""
 
-#: management/kxmlcommandselector.cpp:186
+#: management/kxmlcommandselector.cpp:187
 #, fuzzy
 msgid "Enter an identification name for the new command:"
 msgstr "nama:"
 
-#: management/kxmlcommandselector.cpp:195
+#: management/kxmlcommandselector.cpp:196
 #, fuzzy
 msgid ""
 "A command named %1 already exists. Do you want to continue and edit the "
 "existing one?"
 msgstr "kepada?"
 
-#: management/kxmlcommandselector.cpp:232
+#: management/kxmlcommandselector.cpp:233
 #, fuzzy
 msgid "Internal Error. The XML driver for the command %1 could not be found."
 msgstr "Ralat."
 
-#: management/kxmlcommandselector.cpp:250
+#: management/kxmlcommandselector.cpp:251
 msgid "output"
 msgstr ""
 
-#: management/kxmlcommandselector.cpp:254
+#: management/kxmlcommandselector.cpp:255
 msgid "undefined"
 msgstr ""
 
-#: management/kxmlcommandselector.cpp:259
+#: management/kxmlcommandselector.cpp:260
 msgid "not allowed"
 msgstr ""
 
-#: management/kxmlcommandselector.cpp:265
+#: management/kxmlcommandselector.cpp:266
 msgid "(Unavailable: requirements not satisfied)"
 msgstr ""
 
@@ -3536,8 +3844,8 @@ msgstr "Maklumat Umum"
 #, fuzzy
 msgid ""
 "<p>Enter the information concerning your printer or class. <b>Name</b> is "
-"mandatory, <b>Location</b> and <b>Description</b> are not (they may even not "
-"be used on some systems).</p>"
+"mandatory, <b>Location</b> and <b>Description</b>"
+" are not (they may even not be used on some systems).</p>"
 msgstr "<p><b> Nama</b><b></b><b></b></p>"
 
 #: management/kmwname.cpp:41
@@ -3582,9 +3890,9 @@ msgid ""
 "Define/Edit here instances for the current selected printer. An instance is "
 "a combination of a real (physical) printer and a set of predefined options. "
 "For a single InkJet printer, you could define different print formats like "
-"<i>DraftQuality</i>, <i>PhotoQuality</i> or <i>TwoSided</i>. Those instances "
-"appear as normal printers in the print dialog and allow you to quickly "
-"select the print format you want."
+"<i>DraftQuality</i>, <i>PhotoQuality</i> or <i>TwoSided</i>"
+". Those instances appear as normal printers in the print dialog and allow "
+"you to quickly select the print format you want."
 msgstr "Edit<i></i><i></i><i></i>."
 
 #: management/kminstancepage.cpp:89
@@ -3649,14 +3957,12 @@ msgid ""
 msgstr "Teruskan?"
 
 #: management/kminstancepage.cpp:215
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to find instance %1."
 msgstr "kepada."
 
 #: management/kminstancepage.cpp:217
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to retrieve printer information. Message from printing system: %1."
 msgstr "kepada Mesej daripada."
 
@@ -3671,8 +3977,7 @@ msgid "Internal error: printer not found."
 msgstr "ralat."
 
 #: management/kminstancepage.cpp:270
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to send test page to %1."
 msgstr "kepada kepada."
 
@@ -3717,8 +4022,7 @@ msgid ""
 msgstr "<p> Jika mengandungi tag</p>"
 
 #: management/kmspecialprinterdlg.cpp:108
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "<p>The command to execute when printing on this special printer. Either "
 "enter the command to execute directly, or associate/create a command object "
@@ -3726,17 +4030,26 @@ msgid ""
 "it provides support for advanced settings like mime type checking, "
 "configurable options and requirement list (the plain command is only "
 "provided for backward compatibility). When using a plain command, the "
-"following tags are recognized:</p><ul><li><b>%in</b>: the input file "
-"(required).</li><li><b>%out</b>: the output file (required if using an "
-"output file).</li><li><b>%psl</b>: the paper size in lower case.</li><li><b>%"
-"psu</b>: the paper size with the first letter in upper case.</li></ul>"
-msgstr "<p> kepada kepada dengan adalah jenis adalah mengundur</p><ul><li><b> dalam</b></li><li><b></b></li><li><b></b> saiz dalam</li><li><b></b> saiz dengan dalam</li></ul>"
+"following tags are recognized:</p>"
+"<ul>"
+"<li><b>%in</b>: the input file (required).</li>"
+"<li><b>%out</b>: the output file (required if using an output "
+"file).</li>"
+"<li><b>%psl</b>: the paper size in lower case.</li>"
+"<li><b>%psu</b>: the paper size with the first letter in upper "
+"case.</li></ul>"
+msgstr ""
+"<p> kepada kepada dengan adalah jenis adalah mengundur</p>"
+"<ul>"
+"<li><b> dalam</b></li>"
+"<li><b></b></li>"
+"<li><b></b> saiz dalam</li><li><b></b> saiz dengan dalam</li></ul>"
 
 #: management/kmspecialprinterdlg.cpp:118
 #, fuzzy
 msgid ""
-"<p>The default mimetype for the output file (e.g. application/postscript).</"
-"p>"
+"<p>The default mimetype for the output file (e.g. "
+"application/postscript).</p>"
 msgstr "<p> e</p>"
 
 #: management/kmspecialprinterdlg.cpp:121
@@ -3750,8 +4063,7 @@ msgid "You must provide a non-empty name."
 msgstr "nama."
 
 #: management/kmspecialprinterdlg.cpp:178
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Invalid settings. %1."
 msgstr "Tidak sah."
 
@@ -3760,27 +4072,86 @@ msgstr "Tidak sah."
 msgid "Configuring %1"
 msgstr ""
 
-#: kfilelist.cpp:45
+#: kfilelist.cpp:41
+msgid ""
+" <qt> This button calls the \"File Open\" dialog to let you select a file "
+"for printing. Note, that  "
+"<ul>"
+"<li>"
+"you can select ASCII or International Text, PDF, PostScript, JPEG, TIFF, "
+"PNG, GIF and many other graphic formats. "
+"<li>you can select various files from different paths and send them as one "
+"\"multi-file job\" to the printing system. </ul> </qt>"
+msgstr ""
+
+#: kfilelist.cpp:52
+msgid ""
+" <qt> This button removes the highlighted file from the list of "
+"to-be-printed files. </qt>"
+msgstr ""
+
+#: kfilelist.cpp:56
+msgid ""
+" <qt> "
+"<p>This button moves the highlighted file up in the list of files to be "
+"printed.</p> "
+"<p>In effect, this changes the order of the files' printout.</p> </qt>"
+msgstr ""
+
+#: kfilelist.cpp:62
+msgid ""
+" <qt> "
+"<p>This button moves the highlighted file down in the list of files to be "
+"printed.</p> "
+"<p>In effect, this changes the order of the files' printout.</p> </qt>"
+msgstr ""
+
+#: kfilelist.cpp:68
+msgid ""
+" <qt> "
+"<p>This button tries to open the highlighted file, so you can view or edit "
+"it before you send it to the printing system.</p> "
+"<p>If you open files, KDEPrint will use the application matching the MIME "
+"type of the file.</p> </qt>"
+msgstr ""
+
+#: kfilelist.cpp:76
+msgid ""
+" <qt>"
+"<p>This list displays all the files you selected for printing. You can see "
+"the file name(s), file path(s) and the file (MIME) type(s) as determined by "
+"KDEPrint. The initial order of the list is the order of your initial "
+"selection.</p> "
+"<p>The list will be printed in the same order as displayed finally.</p> "
+"<p><b>Note:</b> You can select multiple files. The files may be in multiple "
+"locations. The files may be of multiple MIME types. The buttons on the right "
+"side let you add more files, remove already selected files from the list,  "
+"re-order the list (by moving files up or down), and open files. If you open "
+"files, KDEPrint will use the application matching the MIME type of the "
+"file.</p> </qt>"
+msgstr ""
+
+#: kfilelist.cpp:95
 #, fuzzy
 msgid "Path"
 msgstr "Path"
 
-#: kfilelist.cpp:56
+#: kfilelist.cpp:107
 #, fuzzy
 msgid "Add file"
 msgstr "Tambah"
 
-#: kfilelist.cpp:61
+#: kfilelist.cpp:113
 #, fuzzy
 msgid "Remove file"
 msgstr "Buang"
 
-#: kfilelist.cpp:67
+#: kfilelist.cpp:120
 #, fuzzy
 msgid "Open file"
 msgstr "Buka"
 
-#: kfilelist.cpp:85
+#: kfilelist.cpp:141
 #, fuzzy
 msgid ""
 "Drag file(s) here or use the button to open a file dialog. Leave empty for "
@@ -3792,30 +4163,45 @@ msgid "Adjustments"
 msgstr ""
 
 #: plugincombobox.cpp:33
+msgid ""
+" <qt> This combo box shows (and lets you select)  a print subsystem to be "
+"used by KDEPrint. (This print subsystem must, of course, be installed inside "
+"your Operating System.) KDEPrint usually auto-detects it. Most Linux "
+"distributions have \"CUPS\", the <em>Common Unix Printing System</em>. </qt>"
+msgstr ""
+
+#: plugincombobox.cpp:43
 #, fuzzy
 msgid "Print s&ystem currently used:"
 msgstr "Cetak:"
+
+#: plugincombobox.cpp:89
+msgid ""
+" <qt> This line shows to which CUPS server your PC currently is connected "
+"for printing and retrieving printer info. To switch to a different CUPS "
+"server, click \"System Options\", then select \"Cups server\" and fill in "
+"the required info. </qt>"
+msgstr ""
 
 #: kprinter.cpp:282
 #, fuzzy
 msgid "Initialization..."
 msgstr "Memulakan..."
 
-#: kprinter.cpp:285 kprinter.cpp:912
+#: kprinter.cpp:285 kprinter.cpp:904
 #, c-format
 msgid "Generating print data: page %1"
 msgstr ""
 
-#: kprinter.cpp:420
+#: kprinter.cpp:418
 msgid "Previewing..."
 msgstr ""
 
-#: kdeprintd.cpp:158 kprinter.cpp:694
-#, c-format
-#, fuzzy
+#: kdeprintd.cpp:158 kprinter.cpp:686
+#, fuzzy, c-format
 msgid ""
-"<p><nobr>A print error occurred. Error message received from system:</nobr></"
-"p><br>%1"
+"<p><nobr>A print error occurred. Error message received from "
+"system:</nobr></p><br>%1"
 msgstr "<p><nobr> Ralat</nobr></p><br>"
 
 #: foomatic/kfoomaticprinterimpl.cpp:51 lpdunix/klpdunixprinterimpl.cpp:74
@@ -3848,14 +4234,12 @@ msgid "Can't overwrite regular printer with special printer settings."
 msgstr "dengan."
 
 #: kmmanager.cpp:480
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Parallel Port #%1"
 msgstr "Selari"
 
 #: kmmanager.cpp:488 kmmanager.cpp:504 kxmlcommand.cpp:659
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Unable to load KDE print management library: %1"
 msgstr "kepada muat KDE"
 
@@ -3903,14 +4287,12 @@ msgid "Cannot save print file to %1. Check that you have write access to it."
 msgstr "kepada akses kepada."
 
 #: kprinterimpl.cpp:234
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Printing document: %1"
 msgstr "Cetakan"
 
 #: kprinterimpl.cpp:252
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Sending print data to printer: %1"
 msgstr "Mengirim kepada"
 
@@ -3942,9 +4324,10 @@ msgstr "Tidak."
 #: kprinterimpl.cpp:326
 #, fuzzy
 msgid ""
-"<p>Unable to perform the requested page selection. The filter <b>psselect</"
-"b> cannot be inserted in the current filter chain. See <b>Filter</b> tab in "
-"the printer properties dialog for further information.</p>"
+"<p>Unable to perform the requested page selection. The filter "
+"<b>psselect</b> cannot be inserted in the current filter chain. See "
+"<b>Filter</b> tab in the printer properties dialog for further "
+"information.</p>"
 msgstr "<p> kepada<b></b> dalam<b> Tapis</b> dalam</p>"
 
 #: kprinterimpl.cpp:367
@@ -3958,9 +4341,9 @@ msgstr "<p> Ralat<b></b></p>"
 #, fuzzy
 msgid ""
 "The MIME type %1 is not supported as input of the filter chain (this may "
-"happen with non-CUPS spoolers when performing page selection on a non-"
-"PostScript file). Do you want KDE to convert the file to a supported format?"
-"</p>"
+"happen with non-CUPS spoolers when performing page selection on a "
+"non-PostScript file). Do you want KDE to convert the file to a supported "
+"format?</p>"
 msgstr "jenis adalah dengan KDE kepada kepada</p>"
 
 #: kprinterimpl.cpp:385 kprinterimpl.cpp:487
@@ -3990,8 +4373,8 @@ msgstr "Tidak."
 #: kprinterimpl.cpp:419
 #, fuzzy
 msgid ""
-"<qt>Operation failed with message:<br>%1<br>Select another target format.</"
-"qt>"
+"<qt>Operation failed with message:"
+"<br>%1<br>Select another target format.</qt>"
 msgstr "<qt> Operasi dengan<br><br> Pilih</qt>"
 
 #: kprinterimpl.cpp:437
@@ -4176,9 +4559,8 @@ msgstr "Rentetan:"
 msgid "No Option Selected"
 msgstr "Tidak"
 
-#: kmuimanager.cpp:162
-#, c-format
-#, fuzzy
+#: kmuimanager.cpp:160
+#, fuzzy, c-format
 msgid "Configuration of %1"
 msgstr "Konfigurasi"
 
@@ -4218,8 +4600,7 @@ msgid "Provide root's password"
 msgstr ""
 
 #: kdeprintd.cpp:200 kdeprintd.cpp:202
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Printing Status - %1"
 msgstr "Cetakan Status"
 
@@ -4238,71 +4619,154 @@ msgstr "Authentikasi nama"
 msgid "&PageMarks"
 msgstr "&PenandaBuku"
 
+#: kpcopiespage.cpp:48
+msgid ""
+" <qt>Here you can determine to print a certain selection only out of all "
+"pages from the complete document.</qt>"
+msgstr ""
+
 #: kpcopiespage.cpp:50
+msgid ""
+" <qt>Select \"All\" to print the complete document. Since this is the "
+"default, it is pre-selected.</qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:52
+msgid ""
+" <qt>"
+"<p>Select <em>\"Current\"</em> if you want to print the page currently "
+"visible in your KDE application.</p> "
+"<p><b>Note:</b> this field is disabled if you print from non-KDE "
+"applications like Mozilla or OpenOffice.org, since here KDEPrint has no "
+"means to determine which document page you are currently viewing.</p></qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:57
+msgid ""
+" <qt>"
+"<p>"
+"Choose a \"Page Range\" to select a subset of the complete document pages to "
+"be printed. The format is <em>\"n,m,o-p,q,r,s-t, u\"</em>.</p> "
+"<p><b>Example:</b> <em>\"4,6,10-13,17,20,23-25\"</em> will print the pages "
+"4, 6, 10, 11, 12, 13, 17, 20, 23, 24, 25 of your document.</p></qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:61
+msgid ""
+" <qt>Choose <em>\"All Pages\"</em>, <em>\"Even Pages\"</em> or <em>\"Odd "
+"Pages\"</em> if you want to print a page selection matching one of these "
+"terms. The default is <em>\"All Pages\"</em>.</p> "
+"<p><b>Note:</b> If you combine a selection of a <em>\"Page Range\"</em>"
+" with a <em>\"Page Set\"</em> of <em>\"Odd\"</em> or <em>\"Even\"</em>, you "
+"will only get the odd or even pages from the originally selected page range. "
+"This is useful if you want to print a page range in duplex on a simplex-only "
+"printer. In this case you can feed the paper to the printer twice; in the "
+"first pass, select \"Odd\" or \"Even\" (depending on your printer model), in "
+"second pass select the other option. You may need to <em>\"Reverse\"</em> "
+"the output in one of the passes (depending on your printer model).</p>  </qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:73
+msgid ""
+" <qt>Here you can determine the number of copies, the output order and the "
+"collate mode of your printjob.</qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:75
+msgid ""
+" <qt>Determine the number of requested copies here. You can increase or "
+"decrease the number by clicking on the up and down arrows. You can also type "
+"the figure directly into the box.</qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:78
+msgid ""
+" <qt>"
+"<p>If the <em>\"Collate\"</em> checkbox is enabled (default), the output "
+"order of a multi-page document will be \"1-2-3-..., 1-2-3-..., "
+"1-2-3-...\".</p> "
+"<p>If the <em>\"Collate\"</em> checkbox is disabled, the output order of a "
+"multi-page document will be \"1-1-1-..., 2-2-2-..., 3-3-3-...\".</p></qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:82
+msgid ""
+" <qt>"
+"<p>If the <em>\"Reverse\"</em> checkbox is enabled, the output order of a "
+"multi-page document will be \"...-3-2-1, ...-3-2-1, ...-3-2-1\", if you also "
+"have <em>en</em>abled the <em>\"Collate\"</em> checkbox at the same time "
+"(the usual usecase).</p> "
+"<p>If the <em>\"Reverse\"</em> checkbox is enabled, the output order of a "
+"multi-page document will be \"...-3-3-3, ...-2-2-2, ...-1-1-1\", if you have "
+"<em>dis</em>abled the <em>\"Collate\"</em> checkbox at the same "
+"time.</p></qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:93
 msgid "C&opies"
 msgstr ""
 
-#: kpcopiespage.cpp:54
+#: kpcopiespage.cpp:97
 #, fuzzy
 msgid "Page Selection"
 msgstr "Halaman"
 
-#: kpcopiespage.cpp:55
+#: kpcopiespage.cpp:99
 msgid "&All"
 msgstr ""
 
-#: kpcopiespage.cpp:56
+#: kpcopiespage.cpp:101
 msgid "Cu&rrent"
 msgstr ""
 
-#: kpcopiespage.cpp:57
+#: kpcopiespage.cpp:103
 #, fuzzy
 msgid "Ran&ge"
 msgstr "Julat"
 
-#: kpcopiespage.cpp:60 kpcopiespage.cpp:61
+#: kpcopiespage.cpp:108
 #, fuzzy
 msgid "<p>Enter pages or group of pages to print separated by commas (1,2-5,8).</p>"
 msgstr "<p> laman Kumpulan laman kepada</p>"
 
-#: kpcopiespage.cpp:64
+#: kpcopiespage.cpp:112
 #, fuzzy
 msgid "Copies"
 msgstr "Salinan"
 
-#: kpcopiespage.cpp:65
+#: kpcopiespage.cpp:114
 msgid "Co&llate"
 msgstr ""
 
-#: kpcopiespage.cpp:66
+#: kpcopiespage.cpp:116
 msgid "Re&verse"
 msgstr ""
 
-#: kpcopiespage.cpp:70
+#: kpcopiespage.cpp:121
 #, fuzzy
 msgid "Cop&ies:"
 msgstr "Sal&inan:"
 
-#: kpcopiespage.cpp:75
+#: kpcopiespage.cpp:128
 #, fuzzy
 msgid "All Pages"
 msgstr "Semua"
 
-#: kpcopiespage.cpp:76
+#: kpcopiespage.cpp:129
 #, fuzzy
 msgid "Odd Pages"
 msgstr "Laman Ganjl"
 
-#: kpcopiespage.cpp:77
+#: kpcopiespage.cpp:130
 msgid "Even Pages"
 msgstr ""
 
-#: kpcopiespage.cpp:78
+#: kpcopiespage.cpp:132
 #, fuzzy
 msgid "Page &set:"
 msgstr "Halaman:"
 
-#: kpcopiespage.cpp:132
+#: kpcopiespage.cpp:187
 #, fuzzy
 msgid "Pages"
 msgstr "Halaman"
@@ -4333,16 +4797,14 @@ msgid ""
 msgstr "Prebiu KDE."
 
 #: kprintpreview.cpp:304
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
-"Preview failed: KDE could not find any application to preview files of type %"
-"1."
+"Preview failed: KDE could not find any application to preview files of type "
+"%1."
 msgstr "Prebiu KDE kepada jenis."
 
 #: kprintpreview.cpp:314
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "Preview failed: unable to start program %1."
 msgstr "Prebiu kepada program."
 
@@ -4464,8 +4926,7 @@ msgid "Pri&nt size:"
 msgstr "Cetak:"
 
 #: kpposterpage.cpp:57
-#, no-c-format
-#, fuzzy
+#, fuzzy, no-c-format
 msgid "C&ut margin (% of media):"
 msgstr "Potong:"
 
@@ -4490,8 +4951,7 @@ msgid "One of the command object's requirements is not met."
 msgstr "Satu adalah."
 
 #: kxmlcommand.cpp:788 kxmlcommand.cpp:793
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid "The command does not contain the required tag %1."
 msgstr "tag."
 
@@ -4538,8 +4998,8 @@ msgstr "ralat kepada muat."
 #, fuzzy
 msgid ""
 "<p>The filter chain is wrong. The output format of at least one filter is "
-"not supported by its follower. See <b>Filters</b> tab for more information.</"
-"p>"
+"not supported by its follower. See <b>Filters</b> tab for more "
+"information.</p>"
 msgstr "<p> adalah adalah<b></b></p>"
 
 #: kpfilterpage.cpp:310
@@ -4570,4 +5030,10 @@ msgstr ""
 msgid "Ot&her"
 msgstr ""
 
+#, fuzzy
+#~ msgid "Directory"
+#~ msgstr "Direktori"
 
+#, fuzzy
+#~ msgid "CUPS Directory Settings"
+#~ msgstr "Direktori"
