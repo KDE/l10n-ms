@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-06-24 09:08+0200\n"
+"POT-Creation-Date: 2003-12-09 01:30+0100\n"
 "PO-Revision-Date: 2003-08-24 10:41+0000\n"
 "Last-Translator: Muhammad Najmi Ahmad Zabidi <md_najmi@yahoo.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -26,42 +26,43 @@ msgid ""
 msgstr "md_najmi@yahoo.com"
 
 #: backtrace.cpp:85
-msgid ""
-"%1 not found. Check if it is installed -- you need it to generate the "
-"backtrace.\n"
-"If you have another debugger, contact kde-devel@kde.org for help on how to "
-"set it up."
+msgid "Could not generate a backtrace as the debugger '%1' was not found."
 msgstr ""
-"%1 tidak ditemui. Pastikan sekiranya ia dipasang     anda memerlukan ini untuk melaksanakan "
-"jejak rekod (backtrace).\n"
-"Jika anda mempunyai lain-lain penyah-ralat, sila hubungi kde-devel@kde.org untuk bantuan "
-"pemasangan dan penggunaan."
 
-#: debugger.cpp:66
+#: debugger.cpp:67
 msgid "C&opy"
 msgstr "Sal&in"
 
-#: debugger.cpp:83
+#: debugger.cpp:84
 msgid "Done."
 msgstr "Selesai."
 
-#: debugger.cpp:96
+#: debugger.cpp:103
+#, c-format
+msgid "Backtrace saved to %1"
+msgstr ""
+
+#: debugger.cpp:107
+msgid "Can't create a file to save backtrace to"
+msgstr ""
+
+#: debugger.cpp:112
 msgid "Select Filename"
 msgstr "Pilih Nama fail"
 
-#: debugger.cpp:109
+#: debugger.cpp:124
 msgid "Can't open file %1 for writing"
 msgstr "Tidak dapat buka fail %1 untuk tulis"
 
-#: debugger.cpp:116
+#: debugger.cpp:132
 msgid "Unable to create backtrace."
 msgstr "Gagal mencipta jejak rekod."
 
-#: debugger.cpp:121
+#: debugger.cpp:137
 msgid "Loading backtrace..."
 msgstr "Memuatkan jejak rekod..."
 
-#: debugger.cpp:139
+#: debugger.cpp:155
 msgid "Loading symbols..."
 msgstr "Memuatkan simbol..."
 
@@ -69,13 +70,15 @@ msgstr "Memuatkan simbol..."
 msgid "You have to edit the description before the report can be sent."
 msgstr "Anda hendaklah mengedit penejelasan sebelum laporan dihantar."
 
-#: krashconf.cpp:74
+#: krashconf.cpp:76
 msgid "unknown"
 msgstr "tidak diketahui"
 
 #: main.cpp:44
 msgid "KDE Crash Handler gives the user feedback if a program crashed."
-msgstr "Pengendali Masalah KDE memberikan pengguna program maklumbalas jika program rosak."
+msgstr ""
+"Pengendali Masalah KDE memberikan pengguna program maklumbalas jika program "
+"rosak."
 
 #: main.cpp:48
 msgid "The signal number that was caught"
@@ -113,66 +116,84 @@ msgstr "Permulaan ID dari program"
 msgid "The program was started by kdeinit"
 msgstr "Pogram telah dimulakan oleh kdeinit"
 
-#: main.cpp:70
+#: main.cpp:57
+msgid "Disable arbitrary disk access"
+msgstr ""
+
+#: main.cpp:71
 msgid "The KDE Crash Handler"
 msgstr "Pengendali Masalah KDE"
 
-#: toplevel.cpp:62
+#: toplevel.cpp:61
 msgid "&Bug report"
 msgstr "Laporan rala&t"
 
-#: toplevel.cpp:63
+#: toplevel.cpp:62
 msgid "&Debugger"
 msgstr "Penya&h-ralat"
 
-#: toplevel.cpp:67
+#: toplevel.cpp:66
 msgid "&General"
 msgstr "U&mum"
 
-#: toplevel.cpp:82
+#: toplevel.cpp:81
 msgid "&Backtrace"
 msgstr "Jejak Reko&d"
 
-#: toplevel.cpp:106
+#: toplevel.cpp:105
 msgid "<p><b>Short description</b></p><p>%1</p>"
 msgstr "<p><b> Keterangan Ringkas </b></p><p>%1</p>"
 
-#: toplevel.cpp:110
+#: toplevel.cpp:109
 msgid "<p><b>What is this?</b></p><p>%1</p>"
 msgstr "<p><b>Apakah ini?</b></p><p>%1</p>"
 
-#: toplevel.cpp:114
+#: toplevel.cpp:113
 msgid "<p><b>What can I do?</b></p><p>%1</p>"
 msgstr "<p><b>Apa yang saya boleh tolong?</b></p><p>%1</p>"
 
-#: toplevel.cpp:119
+#: toplevel.cpp:118
 msgid "<p><b>Application crashed</b></p><p>The program %appname crashed.</p>"
 msgstr "<p><b>Aplikasi rosak</b></p><p> Program %appname rosak.</p>"
 
-#: toplevel.cpp:138
+#: toplevel.cpp:137
 msgid ""
 "<p>Do you want to generate a backtrace? This will help the developers to "
 "figure out what went wrong.</p>\n"
-"<p>Unfortunately this will take some time on slow machines.</p><p><b>Note: A "
-"backtrace is not a substitute for a proper description of the bug and "
-"information on how to reproduce it. It is not possible to fix the bug "
-"without a proper description.</b></p>"
+"<p>Unfortunately this will take some time on slow machines.</p>"
+"<p><b>Note: A backtrace is not a substitute for a proper description of the "
+"bug and information on how to reproduce it. It is not possible to fix the "
+"bug without a proper description.</b></p>"
 msgstr ""
-"<p> Anda mahu janakan jejak-rekod? Ini akan membantu pemaju untuk mengetahui apa permasalahan "
-"yang berlaku.</p>\n"
-"<p>Namun begitu, ini akan mengambil masa sedikit untuk mesin yang perlahan.</p><p> "
-"<b> Nota: Jejak-rekod bukan pengganti kepada penjelasan rasmi yang sesuai untuk laporan pepijat dan maklumat bagaimana "
-"untuk menjana-semula penjelasan. Adalah mustahil untuk membuang pepijat tanpa penjelasan yang jelas.</b></p>"
+"<p>"
+" Anda mahu janakan jejak-rekod? Ini akan membantu pemaju untuk mengetahui "
+"apa permasalahan yang berlaku.</p>\n"
+"<p>Namun begitu, ini akan mengambil masa sedikit untuk mesin yang "
+"perlahan.</p>"
+"<p> <b> Nota: Jejak-rekod bukan pengganti kepada penjelasan rasmi yang "
+"sesuai untuk laporan pepijat dan maklumat bagaimana untuk menjana-semula "
+"penjelasan. Adalah mustahil untuk membuang pepijat tanpa penjelasan yang "
+"jelas.</b></p>"
 
-#: toplevel.cpp:150
+#: toplevel.cpp:149
 msgid "Include Backtrace"
 msgstr "Masukkan Jejak-rekod"
 
-#: toplevel.cpp:218
+#: toplevel.cpp:217
 msgid "It was not possible to generate a backtrace."
 msgstr "Tidak mungkin untuk menjanakan jejak-rekod."
 
-#: toplevel.cpp:219
+#: toplevel.cpp:218
 msgid "Backtrace Not Possible"
 msgstr "Jejak-rekod Tidak Mungkin Dilaksanakan"
 
+#~ msgid ""
+#~ "%1 not found. Check if it is installed -- you need it to generate the "
+#~ "backtrace.\n"
+#~ "If you have another debugger, contact kde-devel@kde.org for help on how "
+#~ "to set it up."
+#~ msgstr ""
+#~ "%1 tidak ditemui. Pastikan sekiranya ia dipasang     anda memerlukan ini "
+#~ "untuk melaksanakan jejak rekod (backtrace).\n"
+#~ "Jika anda mempunyai lain-lain penyah-ralat, sila hubungi kde-devel@kde."
+#~ "org untuk bantuan pemasangan dan penggunaan."
