@@ -3,7 +3,7 @@
 #
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2004-01-11 01:41+0100\n"
+"POT-Creation-Date: 2004-07-16 01:32+0200\n"
 "PO-Revision-Date: 2003-10-8 10:11+0000\n"
 "Last-Translator: Muhammad Najmi Ahmad Zabvidi <md_najmi@yahoo.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -22,12 +22,12 @@ msgid ""
 "the words; otherwise leave it untranslated as a reminder)"
 msgstr ""
 
-#: khangmanview.cpp:45
+#: khangmanview.cpp:49
 #, c-format
 msgid "KHangMan %1"
 msgstr "KHangMan %1"
 
-#: khangmanview.cpp:63
+#: khangmanview.cpp:67
 msgid ""
 "The backgrounds files are not found.\n"
 "Check your installation, please!"
@@ -35,25 +35,25 @@ msgstr ""
 "Fail latarbelakang tidak ditemui.\n"
 " Sila periksa pemasangan anda!"
 
-#: khangmanview.cpp:140
+#: khangmanview.cpp:181
 msgid "Congratulations! You won! Do you want to play again?"
 msgstr "Tahniah, anda menang! Anda mahu main lagi?"
 
-#: khangmanview.cpp:176
+#: khangmanview.cpp:218
 msgid "You are dead. Do you want to play again?"
 msgstr "Anda tewas. Anda mahu main lagi?"
 
-#: khangmanview.cpp:184
+#: khangmanview.cpp:226
 msgid "The letter has already been guessed."
 msgstr "Aksara sudah diteka."
 
-#: khangmanview.cpp:245
+#: khangmanview.cpp:308
 msgid ""
 "File $KDEDIR/share/apps/khangman/data/%1/%2 not found!\n"
 "Check your installation, please!"
 msgstr ""
 
-#: khangmanview.cpp:403
+#: khangmanview.cpp:478
 msgid "Hint"
 msgstr "Petunjuk"
 
@@ -70,11 +70,13 @@ msgid ""
 msgstr "md_najmi@yahoo.com"
 
 #: main.cpp:26
-msgid "The classical hangman game for KDE-Edu"
+#, fuzzy
+msgid "Classical hangman game for KDE"
 msgstr "Permainan klasik gantung orang untuk KDE-Edu"
 
 #: main.cpp:30
-msgid "Document to open."
+#, fuzzy
+msgid "Document to open"
 msgstr "Dokumen untuk dibuka."
 
 #: main.cpp:36
@@ -89,7 +91,8 @@ msgstr "Penyelenggara terdahulu"
 msgid "Actual maintainer, author"
 msgstr "Penyelenggara sebenar, pengarang"
 
-#: main.cpp:43
+#: main.cpp:43 rc.cpp:46
+#, no-c-format
 msgid "Graphics"
 msgstr "Grafik"
 
@@ -134,22 +137,111 @@ msgid "Dutch data files"
 msgstr "Fail data Belanda"
 
 #: main.cpp:65
+#, fuzzy
+msgid "Czech data files"
+msgstr "Fail data Belanda"
+
+#: main.cpp:67
+#, fuzzy
+msgid "Hungarian data files"
+msgstr "Fail data Itali"
+
+#: main.cpp:69
+msgid "Norwegian (Bokmål) data files"
+msgstr ""
+
+#: main.cpp:71
+#, fuzzy
+msgid "Tajik data files"
+msgstr "Fail data Denmark"
+
+#: main.cpp:73
+msgid "Serbian (Cyrillic and Latin) data files"
+msgstr ""
+
+#: main.cpp:75
+#, fuzzy
+msgid "Slovenian data files"
+msgstr "Fail data Itali"
+
+#: main.cpp:77
+#, fuzzy
+msgid "Portuguese data files"
+msgstr "Fail data Portugis Brazil"
+
+#: main.cpp:79
 msgid "Softer Hangman Pictures"
 msgstr "Gambar Gantung yang lebih lembut"
 
-#: main.cpp:67 main.cpp:69 main.cpp:71 main.cpp:73
+#: main.cpp:81 main.cpp:83 main.cpp:85 main.cpp:87
 msgid "Coding help"
 msgstr "Bantuan Pengkodan"
 
-#: rc.cpp:1
-msgid "MainW"
-msgstr "MainW"
+#: main.cpp:89
+msgid "svg icon"
+msgstr ""
 
-#: rc.cpp:2
+#: main.cpp:91
+msgid "Code for generating icons for the characters toolbar"
+msgstr ""
+
+#: khangman.cpp:541 rc.cpp:2
+#, no-c-format
+msgid "Advanced Settings"
+msgstr ""
+
+#: rc.cpp:4
+#, no-c-format
+msgid "Only one letter instance"
+msgstr ""
+
+#: rc.cpp:6
+#, no-c-format
+msgid "Check this if you do not want to display each instance of the same letter"
+msgstr ""
+
+#: rc.cpp:8
+#, no-c-format
+msgid ""
+"If you check this box, only the first letter will be written if the letter "
+"is found in several places in the word. Then when you rechoose this letter, "
+"it will replace the second instance in the word until there are no more "
+"instances of this letter.\n"
+"\n"
+"Default is that for one letter typed, all instances of that letter in the "
+"word are displayed."
+msgstr ""
+
+#: rc.cpp:12
+#, no-c-format
+msgid "Do not display the 'Congratulations! You won!' dialog"
+msgstr ""
+
+#: rc.cpp:14
+#, no-c-format
+msgid ""
+"If checked, the dialog 'Congratulations! You won!' is not displayed. After 3 "
+"seconds, a new game will start automatically."
+msgstr ""
+
+#: rc.cpp:16
+#, no-c-format
+msgid ""
+"If this option is not checked, when a game is won a dialog will appear "
+"saying 'Congratulations! You won!'.\n"
+"This is the default state.\n"
+"\n"
+"If this option is checked, this dialog will not appear and a new game will "
+"automatically start after three seconds."
+msgstr ""
+
+#: rc.cpp:21
+#, no-c-format
 msgid "Misses:"
 msgstr "Salah:"
 
-#: rc.cpp:3
+#: rc.cpp:23
+#, no-c-format
 msgid ""
 "_ _ _ _ _ \n"
 "_ _ _ _ _ "
@@ -157,167 +249,291 @@ msgstr ""
 "_ _ _ _ _ \n"
 "_ _ _ _ _ "
 
-#: rc.cpp:4
+#: rc.cpp:26
+#, no-c-format
 msgid "Letters that you wrongly guessed"
 msgstr "Huruf yang anda salah teka"
 
-#: rc.cpp:5
+#: rc.cpp:28
+#, no-c-format
 msgid "Here are the letters that you thought were in the word but are not"
 msgstr ""
 
-#: rc.cpp:6
+#: rc.cpp:30
+#, no-c-format
 msgid "The HangMan is drawn here"
 msgstr "HangMan dilukis di sini"
 
-#: rc.cpp:7
+#: rc.cpp:32
+#, no-c-format
 msgid "Word:"
 msgstr "Perkataan:"
 
-#: rc.cpp:8
+#: rc.cpp:34
+#, no-c-format
 msgid "Word goes here..."
 msgstr "Perkataan terletak di sini..."
 
-#: rc.cpp:9
+#: rc.cpp:36
+#, no-c-format
 msgid "This is the word to guess"
 msgstr "Ini ialah perkataan untuk diteka"
 
-#: rc.cpp:10
+#: rc.cpp:38
+#, no-c-format
 msgid "The letters that you guessed will appear here"
 msgstr "Huruf yang anda teka akan muncul di sini"
 
-#: rc.cpp:11
+#: rc.cpp:40
+#, no-c-format
 msgid "Letter:"
 msgstr "Huruf:"
 
-#: rc.cpp:12
+#: rc.cpp:42
+#, no-c-format
 msgid "Type a letter to guess the word"
 msgstr "Taip huruf untuk meneka perkataan"
 
-#: rc.cpp:13
+#: rc.cpp:44
+#, no-c-format
 msgid "You type a letter that you think is in the word to guess"
 msgstr ""
 
-#: khangman.cpp:98 rc.cpp:15
-msgid "&Languages"
+#: rc.cpp:48
+#, fuzzy, no-c-format
+msgid "Transparent pictures"
+msgstr "Gambar Gantung yang lebih lembut"
+
+#: rc.cpp:50
+#, no-c-format
+msgid "Check it if you want transparent hangman pictures"
 msgstr ""
 
-#: rc.cpp:17
-msgid "Main"
-msgstr "Utama"
-
-#: khangman.cpp:93
-msgid "&New"
+#: rc.cpp:52
+#, no-c-format
+msgid ""
+"When checked, the hangman pictures are transparent: they have no gray "
+"background. By default, this box is checked and thus transparent pictures "
+"are enabled by default."
 msgstr ""
 
-#: khangman.cpp:108
-msgid "&Full-Screen Mode"
+#: rc.cpp:54
+#, fuzzy, no-c-format
+msgid "Milder Hangman pictures"
+msgstr "Gambar Gantung yang lebih lembut"
+
+#: rc.cpp:56
+#, no-c-format
+msgid "When this box is checked, milder hangman pictures will be used."
 msgstr ""
 
-#: khangman.cpp:112
-msgid "&Transparent Pictures"
+#: rc.cpp:58
+#, no-c-format
+msgid ""
+"KHangMan comes with 2 sets of hangman pictures. The default set is the "
+"milder pictures: the man is not hung by the neck but by the hand. If you "
+"uncheck this option, you will get the usual hangman pictures: the man is "
+"hung by the neck.\n"
+"For younger children, it is preferable to leave this box checked and thus "
+"use the milder pictures. This is the default."
 msgstr ""
 
-#: khangman.cpp:113
-msgid "&Softer Hangman Pictures"
+#: rc.cpp:61
+#, no-c-format
+msgid "Language Settings"
 msgstr ""
 
-#: khangman.cpp:114
-msgid "Enable &Hint"
-msgstr "&Hidupkan Petunjuk"
-
-#: khangman.cpp:115
-msgid "Type A&ccented Letters"
-msgstr ""
-
-#: khangman.cpp:117
-msgid "Level"
-msgstr "Peringkat"
-
-#: khangman.cpp:118
-msgid "Choose the level"
-msgstr "Pilih peringkat"
-
-#: khangman.cpp:119
-msgid "Choose the level of difficulty"
-msgstr "Pilih peringkat kesukaran"
-
-#: khangman.cpp:122
-msgid "Look & Feel"
-msgstr "Lihat & Rasa"
-
-#: khangman.cpp:123
-msgid "No Background"
-msgstr "Tiada Latar Belakang"
-
-#: khangman.cpp:124
-msgid "Blue Theme"
-msgstr "Tema Biru"
-
-#: khangman.cpp:125
-msgid "Nature Theme"
-msgstr ""
-
-#: khangman.cpp:127
-msgid "Choose the look and feel"
-msgstr "Pilih 'lihat dan rasa'"
-
-#: khangman.cpp:128
-msgid "Check the look and feel"
-msgstr ""
-
-#: khangman.cpp:203
-msgid "Easy"
-msgstr ""
-
-#: khangman.cpp:204
-msgid "Medium"
-msgstr ""
-
-#: khangman.cpp:205
-msgid "Hard"
-msgstr ""
-
-#: khangman.cpp:206
-msgid "Animals"
-msgstr ""
-
-#: khangman.cpp:213 khangman.cpp:331
-msgid "Level: "
-msgstr "Peringkat:"
-
-#: khangman.cpp:281 khangman.cpp:774
+#: khangman.cpp:213 khangman.cpp:431 rc.cpp:63
+#, no-c-format
 msgid "Type accented letters"
 msgstr ""
 
-#: khangman.cpp:425
-msgid "Language: "
+#: rc.cpp:65
+#, no-c-format
+msgid ""
+"In some languages, if this is checked, you must type accented letters "
+"yourself (i.e. They are differentiated from the corresponding unaccented "
+"letter)."
 msgstr ""
 
-#: khangman.cpp:476
+#: rc.cpp:67
+#, no-c-format
+msgid ""
+"If this is <b>disabled</b>, then the selected language does not support it. "
+"If this is <b>enabled</b>"
+" and if you check it, then you should type accented letters on their own. If "
+"it is not checked, accented letters will be displayed with normal letters.\n"
+"Default is that accented letters will be shown when the corresponding "
+"unaccented letter is guessed."
+msgstr ""
+
+#: rc.cpp:70
+#, fuzzy, no-c-format
+msgid "Enable hints"
+msgstr "&Hidupkan Petunjuk"
+
+#: rc.cpp:72
+#, no-c-format
+msgid ""
+"In some languages, there are hints that can help you to guess the word. If "
+"this is enabled, then hints exist. If you check it, a hint will be displayed "
+"by right-clicking on the game window."
+msgstr ""
+
+#: rc.cpp:74
+#, no-c-format
+msgid ""
+"Some languages have hints to help you guess the word more easily. If this is "
+"<b>disabled</b>, there is no such option for your current language.\n"
+"If this is <b>enabled</b>, then hints are available and you can get them by "
+"checking this box. You will then see the hint for the word you are trying to "
+"guess by right-clicking somewhere on the KHangMan window."
+msgstr ""
+
+#: rc.cpp:77
+#, no-c-format
+msgid "Sounds"
+msgstr ""
+
+#: rc.cpp:79
+#, fuzzy, no-c-format
+msgid "Enable sounds"
+msgstr "&Hidupkan Petunjuk"
+
+#: rc.cpp:81
+#, no-c-format
+msgid "If checked, sounds will be played for New Game and Win Game"
+msgstr ""
+
+#: rc.cpp:83
+#, no-c-format
+msgid ""
+"If this box is checked, you will have some sounds played for each new game "
+"and when you win a game. If this is not checked, there will be no sound in "
+"KHangMan.\n"
+"Default is no sound."
+msgstr ""
+
+#: khangman.cpp:96 rc.cpp:88
+#, no-c-format
+msgid "&Languages"
+msgstr ""
+
+#: rc.cpp:92
+#, no-c-format
+msgid "Main"
+msgstr "Utama"
+
+#: khangman.cpp:91
+msgid "&New"
+msgstr ""
+
+#: khangman.cpp:93
+msgid "&Get Data in New Language..."
+msgstr ""
+
+#: khangman.cpp:102
+msgid "Level"
+msgstr "Peringkat"
+
+#: khangman.cpp:103
+msgid "Choose the level"
+msgstr "Pilih peringkat"
+
+#: khangman.cpp:104
+msgid "Choose the level of difficulty"
+msgstr "Pilih peringkat kesukaran"
+
+#: khangman.cpp:109
+#, fuzzy
+msgid "Look && Feel"
+msgstr "Lihat & Rasa"
+
+#: khangman.cpp:110
+msgid "No Background"
+msgstr "Tiada Latar Belakang"
+
+#: khangman.cpp:111
+msgid "Blue Theme"
+msgstr "Tema Biru"
+
+#: khangman.cpp:112
+msgid "Nature Theme"
+msgstr ""
+
+#: khangman.cpp:114
+msgid "Choose the look and feel"
+msgstr "Pilih 'lihat dan rasa'"
+
+#: khangman.cpp:115
+msgid "Check the look and feel"
+msgstr ""
+
+#: khangman.cpp:150
+msgid "Easy"
+msgstr ""
+
+#: khangman.cpp:151
+msgid "Medium"
+msgstr ""
+
+#: khangman.cpp:152
+msgid "Hard"
+msgstr ""
+
+#: khangman.cpp:153
+msgid "Animals"
+msgstr ""
+
+#: khangman.cpp:162 khangman.cpp:434
+msgid "First letter upper case"
+msgstr ""
+
+#: khangman.cpp:356
 msgid "Exit Full-Screen Mode"
 msgstr ""
 
-#: khangman.cpp:483
+#: khangman.cpp:361
 msgid "Full-Screen Mode"
 msgstr ""
 
-#: khangman.cpp:515 khangman.cpp:516 khangman.cpp:517 khangman.cpp:518
-#: khangman.cpp:519 khangman.cpp:520 khangman.cpp:521 khangman.cpp:522
-#: khangman.cpp:525 khangman.cpp:526 khangman.cpp:527 khangman.cpp:528
-#: khangman.cpp:529 khangman.cpp:530 khangman.cpp:531 khangman.cpp:534
-#: khangman.cpp:535 khangman.cpp:536 khangman.cpp:539 khangman.cpp:540
-#: khangman.cpp:543 khangman.cpp:544 khangman.cpp:545 khangman.cpp:548
-#: khangman.cpp:549 khangman.cpp:550 khangman.cpp:551 khangman.cpp:552
-#: khangman.cpp:553 khangman.cpp:554 khangman.cpp:555 khangman.cpp:556
-#: khangman.cpp:559 khangman.cpp:560 khangman.cpp:563 khangman.cpp:564
-#: khangman.cpp:565 khangman.cpp:566 khangman.cpp:569 khangman.cpp:570
-#: khangman.cpp:571 khangman.cpp:572 khangman.cpp:573 khangman.cpp:574
-#: khangman.cpp:575 khangman.cpp:576 khangman.cpp:577 khangman.cpp:578
-#: khangman.cpp:579 khangman.cpp:580 khangman.cpp:581 khangman.cpp:582
-#: khangman.cpp:583
-msgid "Try "
+#: khangman.cpp:383
+#, fuzzy
+msgid ""
+"File $KDEDIR/share/apps/khangman/%1.txt not found;\n"
+"check your installation."
+msgstr ""
+"Fail latarbelakang tidak ditemui.\n"
+" Sila periksa pemasangan anda!"
+
+#: khangman.cpp:399
+#, c-format
+msgid "Inserts the character %1"
 msgstr ""
 
-#: khangman.cpp:790 khangman.cpp:819
-msgid "Hint enabled on right-click"
+#: khangman.cpp:442 khangman.cpp:448
+msgid "Hints possible"
 msgstr ""
+
+#: khangman.cpp:446
+msgid "Hint on right-click"
+msgstr ""
+
+#: khangman.cpp:518
+msgid "Cyrillic"
+msgstr ""
+
+#: khangman.cpp:521
+#, fuzzy
+msgid "Latin"
+msgstr "Utama"
+
+#: khangman.cpp:537
+msgid "Normal Settings"
+msgstr ""
+
+#~ msgid "MainW"
+#~ msgstr "MainW"
+
+#~ msgid "Level: "
+#~ msgstr "Peringkat:"
