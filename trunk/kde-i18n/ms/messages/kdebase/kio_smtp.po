@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2004-07-14 01:19+0200\n"
+"POT-Creation-Date: 2004-11-06 01:32+0100\n"
 "PO-Revision-Date: 2004-08-20 17:13+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.0\n"
 
-#: command.cc:124
+#: command.cc:125
 #, fuzzy
 msgid ""
 "The server rejected both EHLO and HELO commands as unknown or "
@@ -19,77 +19,67 @@ msgid ""
 "Please contact the server's system administrator."
 msgstr "kedua-dua dan tidak diketahui atau s sistem."
 
-#: command.cc:138
+#: command.cc:139
 #, fuzzy
 msgid ""
 "Unexpected server response to %1 command.\n"
 "%2"
 msgstr "kepada"
 
-#: command.cc:158
+#: command.cc:159
 #, fuzzy
 msgid ""
 "Your SMTP server does not support TLS. Disable TLS, if you want to connect "
 "without encryption."
 msgstr "Dimatikan kepada."
 
-#: command.cc:172
+#: command.cc:173
 #, fuzzy
 msgid ""
 "Your SMTP server claims to support TLS, but negotiation was unsuccessful.\n"
 "You can disable TLS in KDE using the crypto settings module."
 msgstr "kepada dalam KDE."
 
-#: command.cc:177
+#: command.cc:178
 msgid "Connection Failed"
 msgstr "Sambungan Gagal"
 
-#: command.cc:197
-msgid "No compatible authentication methods found."
-msgstr "Tiada kaedah pengesahan bersesuaian dijumpai."
-
-#: command.cc:202
-#, fuzzy
-msgid ""
-"You have requested to authenticate to the server, but the server does not "
-"seem to support authentication.\n"
-"Try disabling authentication entirely."
-msgstr "kepada kepada kepada."
-
-#: command.cc:208
-msgid ""
-"Your SMTP server does not support %1.\n"
-"Choose a different authentication method."
+#: command.cc:229
+msgid "Authentication support is not compiled into kio_smtp."
 msgstr ""
 
-#: command.cc:262
+#: command.cc:258
+#, fuzzy
+msgid "No authentication details supplied."
+msgstr "Tiada kaedah pengesahan bersesuaian dijumpai."
+
+#: command.cc:361
 msgid ""
 "Your SMTP server does not support %1.\n"
 "Choose a different authentication method.\n"
 "%2"
 msgstr ""
 
-#: command.cc:267
-#, c-format
+#: command.cc:365
+#, fuzzy, c-format
 msgid ""
 "Your SMTP server does not support authentication.\n"
-"%2"
-msgstr ""
+"  %2"
+msgstr "Dimatikan kepada."
 
-#: command.cc:271
-#, c-format
-#, fuzzy
+#: command.cc:369
+#, fuzzy, c-format
 msgid ""
 "Authentication failed.\n"
 "Most likely the password is wrong.\n"
 "%1"
 msgstr "Pengesahan"
 
-#: command.cc:409
+#: command.cc:507
 msgid "Could not read data from application."
 msgstr "Tidak dapat membaca data daripada aplikasi."
 
-#: command.cc:426
+#: command.cc:524
 #, c-format
 msgid ""
 "The message content was not accepted.\n"
@@ -111,48 +101,42 @@ msgstr "Pelayan menjawab: \"%1\""
 msgid "This is a temporary failure. You may try again later."
 msgstr "Ini adalah kegagalan sementara. Anda boleh cuba lagi kemudian."
 
-#: smtp.cc:158
+#: smtp.cc:188
 msgid "The application sent an invalid request."
 msgstr "Aplikasi menghantar permintaan tidak sah."
 
-#: smtp.cc:220
+#: smtp.cc:250
 msgid "The sender address is missing."
 msgstr "Alamat penghantar hilang."
 
-#: smtp.cc:228
+#: smtp.cc:258
 msgid "SMTPProtocol::smtp_open failed (%1)"
 msgstr "SMTPProtocol::smtp_open gagal (%1)"
 
-#: smtp.cc:236
+#: smtp.cc:266
 #, fuzzy
 msgid ""
 "Your server does not support sending of 8-bit messages.\n"
 "Please use base64 or quoted-printable encoding."
 msgstr "atau."
 
-#: smtp.cc:315
+#: smtp.cc:345
 msgid "Invalid SMTP response (%1) received."
 msgstr "Jawapan SMTP tidak sah (%1) diterima."
 
-#: smtp.cc:497
-#, c-format
-#, fuzzy
+#: smtp.cc:529
+#, fuzzy, c-format
 msgid ""
 "The server did not accept the connection.\n"
 "%1"
 msgstr "terima"
 
-#: smtp.cc:554
+#: smtp.cc:604
 msgid "Username and password for your SMTP account:"
 msgstr "Namapengguna dan katalaluan untuk akaun SMTP anda:"
 
-#: smtp.cc:556
-msgid "When prompted, you ran away."
-msgstr ""
-
 #: transactionstate.cc:53
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "The server did not accept a blank sender address.\n"
 "%1"
@@ -166,8 +150,7 @@ msgid ""
 msgstr "terima"
 
 #: transactionstate.cc:97
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "Message sending failed since the following recipients were rejected by the "
 "server:\n"
@@ -175,8 +158,7 @@ msgid ""
 msgstr "Mesej oleh"
 
 #: transactionstate.cc:107
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "The attempt to start sending the message content failed.\n"
 "%1"
@@ -187,3 +169,8 @@ msgstr "kepada mula"
 msgid "Unhandled error condition. Please send a bug report."
 msgstr "ralat."
 
+#, fuzzy
+#~ msgid ""
+#~ "You have requested to authenticate to the server, but the server does not seem to support authentication.\n"
+#~ "Try disabling authentication entirely."
+#~ msgstr "kepada kepada kepada."
