@@ -3,7 +3,7 @@
 #
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2005-06-11 01:30+0200\n"
+"POT-Creation-Date: 2005-06-15 01:39+0200\n"
 "PO-Revision-Date: 2003-10-8 10:11+0000\n"
 "Last-Translator: Muhammad Najmi Ahmad Zabvidi <md_najmi@yahoo.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -23,41 +23,41 @@ msgid ""
 msgstr ""
 
 #. i18n: file mainw.ui line 716
-#: khangmanview.cpp:55 rc.cpp:106
+#: khangmanview.cpp:56 rc.cpp:80
 #, no-c-format
 msgid "G&uess"
 msgstr ""
 
-#: khangmanview.cpp:160
+#: khangmanview.cpp:155
 msgid "Hint"
 msgstr "Petunjuk"
 
-#: khangmanview.cpp:256
+#: khangmanview.cpp:251
 #, fuzzy
 msgid "Misses"
 msgstr "Salah:"
 
-#: khangmanview.cpp:362
+#: khangmanview.cpp:350
 msgid "Congratulations! You won! Do you want to play again?"
 msgstr "Tahniah, anda menang! Anda mahu main lagi?"
 
-#: khangmanview.cpp:388
+#: khangmanview.cpp:373
 #, fuzzy
 msgid "You lost. Do you want to play again?"
 msgstr "Anda tewas. Anda mahu main lagi?"
 
-#: khangmanview.cpp:402
+#: khangmanview.cpp:387
 #, fuzzy
 msgid "This letter has already been guessed."
 msgstr "Aksara sudah diteka."
 
-#: khangmanview.cpp:497
+#: khangmanview.cpp:477
 msgid ""
 "File $KDEDIR/share/apps/khangman/data/%1/%2 not found!\n"
 "Check your installation, please!"
 msgstr ""
 
-#: khangmanview.cpp:590
+#: khangmanview.cpp:569
 msgid "Hint available"
 msgstr ""
 
@@ -196,9 +196,13 @@ msgstr "Fail data Itali"
 msgid "Softer Hangman Pictures"
 msgstr "Gambar Gantung yang lebih lembut"
 
-#: main.cpp:95 main.cpp:97 main.cpp:99 main.cpp:101
+#: main.cpp:95 main.cpp:97 main.cpp:99
 msgid "Coding help"
 msgstr "Bantuan Pengkodan"
+
+#: main.cpp:101
+msgid "Coding help, fixed a lot of things"
+msgstr ""
 
 #: main.cpp:103
 msgid "SVG icon"
@@ -208,71 +212,216 @@ msgstr ""
 msgid "Code for generating icons for the characters toolbar"
 msgstr ""
 
-#. i18n: file advanced.ui line 35
+#. i18n: file advanced.ui line 32
 #: rc.cpp:3
 #, no-c-format
-msgid "Type accented &letters"
+msgid "When available"
 msgstr ""
 
-#. i18n: file advanced.ui line 38
+#. i18n: file advanced.ui line 46
 #: rc.cpp:6
-#, no-c-format
-msgid ""
-"In some languages, if this is checked, you must type accented letters yourself "
-"(i.e. They are differentiated from the corresponding unaccented letter)."
-msgstr ""
-
-#. i18n: file advanced.ui line 42
-#: rc.cpp:9
-#, no-c-format
-msgid ""
-"If this is <b>disabled</b>, then the selected language does not support it. If "
-"this is <b>enabled</b> and if you check it, then you should type accented "
-"letters on their own. If it is not checked, accented letters will be displayed "
-"with normal letters.\n"
-"Default is that accented letters will be shown when the corresponding "
-"unaccented letter is guessed."
-msgstr ""
-
-#. i18n: file advanced.ui line 53
-#: rc.cpp:13
 #, no-c-format
 msgid "&Show hints"
 msgstr ""
 
-#. i18n: file advanced.ui line 56
-#: rc.cpp:16
+#. i18n: file advanced.ui line 49
+#: rc.cpp:9
 #, no-c-format
 msgid ""
 "If you check it, a hint will be displayed by right-clicking on the game window."
 msgstr ""
 
-#. i18n: file advanced.ui line 60
-#: rc.cpp:19
+#. i18n: file advanced.ui line 53
+#: rc.cpp:12
 #, no-c-format
 msgid ""
 "Some languages have hints to help you guess the word more easily. If this is <b>"
-"disabled</b>, there is no such option for your current language.\n"
+"disabled</b>, there is no such option for your current language data file.\n"
 "If this is <b>enabled</b>, then hints are available and you can get them by "
 "checking this box. You will then see the hint for the word you are trying to "
-"guess by right-clicking somewhere on the KHangMan window."
+"guess by right-clicking somewhere on the KHangMan window, the hint will then be "
+"displayed for 4 seconds in a tooltip."
 msgstr ""
 
-#. i18n: file advanced.ui line 68
-#: rc.cpp:23
+#. i18n: file advanced.ui line 63
+#: rc.cpp:16
+#, fuzzy, no-c-format
+msgid "Spanish, Portuguese, Catalan"
+msgstr "Fail data Portugis Brazil"
+
+#. i18n: file advanced.ui line 77
+#: rc.cpp:19
+#, no-c-format
+msgid "Type accented &letters"
+msgstr ""
+
+#. i18n: file advanced.ui line 80
+#: rc.cpp:22
+#, no-c-format
+msgid ""
+"If this is checked, you must type accented letters yourself (i.e. they are "
+"differentiated from the corresponding unaccented letter)."
+msgstr ""
+
+#. i18n: file advanced.ui line 85
+#: rc.cpp:25
+#, no-c-format
+msgid ""
+"If this is <b>disabled</b>, then the selected language does not support it. If "
+"this is <b>enabled</b> and if you check it, then you should type accented "
+"letters on their own. If it is not checked, accented letters will be displayed "
+"with normal letters."
+"<br>\n"
+"Default is that accented letters will be shown when the corresponding "
+"unaccented letter is guessed."
+"<br>\n"
+"For example, in Catalan, if this is unchecked and you type \"o\", the o and ò "
+"will be displayed in the word <b>xenofòbia</b>. If this option is checked, when "
+"you type \"o\", only \"o\" will be displayed and you will then have to type "
+"\"ò\" for this letter to be displayed."
+msgstr ""
+
+#. i18n: file advanced.ui line 95
+#: rc.cpp:30
+#, no-c-format
+msgid "German"
+msgstr ""
+
+#. i18n: file advanced.ui line 109
+#: rc.cpp:33
+#, no-c-format
+msgid "Play in Upper Case Letters"
+msgstr ""
+
+#. i18n: file advanced.ui line 112
+#: rc.cpp:36
+#, no-c-format
+msgid "If checked, the word will be displayed all in upper case letters"
+msgstr ""
+
+#. i18n: file advanced.ui line 116
+#: rc.cpp:39
+#, no-c-format
+msgid ""
+"If this is checked, the word will be displayed in upper case letters, even if "
+"you enter lower case. If this is unchecked (default), the word will be lower "
+"case."
+"<br>\n"
+"This setting is currently only available for the German language."
+msgstr ""
+
+#. i18n: file mainw.ui line 96
+#: rc.cpp:43
+#, no-c-format
+msgid "Misses:"
+msgstr "Salah:"
+
+#. i18n: file mainw.ui line 115
+#: rc.cpp:46
+#, fuzzy, no-c-format
+msgid ""
+"_ _ _ _ _ \n"
+"_ _ _ _ _"
+msgstr ""
+"_ _ _ _ _ \n"
+"_ _ _ _ _ "
+
+#. i18n: file mainw.ui line 124
+#: rc.cpp:50
+#, no-c-format
+msgid "Letters that you wrongly guessed"
+msgstr "Huruf yang anda salah teka"
+
+#. i18n: file mainw.ui line 127
+#: rc.cpp:53
+#, no-c-format
+msgid "Here are the letters that you thought were in the word but are not"
+msgstr ""
+
+#. i18n: file mainw.ui line 168
+#: rc.cpp:56
+#, no-c-format
+msgid "The HangMan is drawn here"
+msgstr "HangMan dilukis di sini"
+
+#. i18n: file mainw.ui line 186
+#: rc.cpp:59
+#, no-c-format
+msgid "Word:"
+msgstr "Perkataan:"
+
+#. i18n: file mainw.ui line 245
+#: rc.cpp:62
+#, no-c-format
+msgid "Word goes here..."
+msgstr "Perkataan terletak di sini..."
+
+#. i18n: file mainw.ui line 260
+#: rc.cpp:65
+#, no-c-format
+msgid "This is the word to guess"
+msgstr "Ini ialah perkataan untuk diteka"
+
+#. i18n: file mainw.ui line 263
+#: rc.cpp:68
+#, no-c-format
+msgid "The letters that you guessed will appear here"
+msgstr "Huruf yang anda teka akan muncul di sini"
+
+#. i18n: file mainw.ui line 349
+#: rc.cpp:71
+#, no-c-format
+msgid "Letter:"
+msgstr "Huruf:"
+
+#. i18n: file mainw.ui line 425
+#: rc.cpp:74
+#, no-c-format
+msgid "Type a letter to guess the word"
+msgstr "Taip huruf untuk meneka perkataan"
+
+#. i18n: file mainw.ui line 428
+#: rc.cpp:77
+#, no-c-format
+msgid ""
+"You type a letter that you think is in the word to guess. You can then either "
+"press the Enter key on your keyboard or press the Guess button to see if the "
+"letter will be present in the word."
+msgstr ""
+
+#. i18n: file mainw.ui line 722
+#: rc.cpp:83
+#, no-c-format
+msgid "Click on it to see if the letter you entered is in the word"
+msgstr ""
+
+#. i18n: file mainw.ui line 726
+#: rc.cpp:86
+#, no-c-format
+msgid ""
+"When you click on the Guess button, the letter you entered will either be in "
+"the word or in the misses. In that case. the hangman will be drawn further. If "
+"you already tried this letter, a passive popup will tell you so and you will "
+"not lose a try.\n"
+"The Guess button has the same function as to press the Enter key on your "
+"keyboard."
+msgstr ""
+
+#. i18n: file normal.ui line 32
+#: rc.cpp:90
 #, no-c-format
 msgid "Require more &guesses for duplicate letters"
 msgstr ""
 
-#. i18n: file advanced.ui line 71
-#: rc.cpp:26
+#. i18n: file normal.ui line 35
+#: rc.cpp:93
 #, no-c-format
 msgid ""
 "Check this if you do not want to display each instance of the same letter"
 msgstr ""
 
-#. i18n: file advanced.ui line 77
-#: rc.cpp:29
+#. i18n: file normal.ui line 41
+#: rc.cpp:96
 #, no-c-format
 msgid ""
 "If you check this box, only the first letter will be written if the letter is "
@@ -287,22 +436,22 @@ msgid ""
 "are displayed."
 msgstr ""
 
-#. i18n: file advanced.ui line 85
-#: rc.cpp:35
+#. i18n: file normal.ui line 49
+#: rc.cpp:102
 #, no-c-format
 msgid "Do not display the 'Congratulations! You &won!' dialog"
 msgstr ""
 
-#. i18n: file advanced.ui line 88
-#: rc.cpp:38
+#. i18n: file normal.ui line 52
+#: rc.cpp:105
 #, no-c-format
 msgid ""
 "If checked, the dialog 'Congratulations! You won!' is not displayed. After 3 "
 "seconds, a new game will start automatically."
 msgstr ""
 
-#. i18n: file advanced.ui line 94
-#: rc.cpp:41
+#. i18n: file normal.ui line 58
+#: rc.cpp:108
 #, no-c-format
 msgid ""
 "If this option is not checked, when a game is won a dialog will appear saying "
@@ -313,46 +462,26 @@ msgid ""
 "automatically start after three seconds."
 msgstr ""
 
-#. i18n: file advanced.ui line 102
-#: rc.cpp:47
-#, no-c-format
-msgid "Play in Upper Case Letters"
-msgstr ""
-
-#. i18n: file advanced.ui line 105
-#: rc.cpp:50
-#, no-c-format
-msgid "If checked, the word will be displayed all in upper case letters"
-msgstr ""
-
-#. i18n: file advanced.ui line 108
-#: rc.cpp:53
-#, no-c-format
-msgid ""
-"If this is checked, the word will be displayed in upper case letters, even if "
-"you enter lower case."
-msgstr ""
-
-#. i18n: file advanced.ui line 116
-#: rc.cpp:56 rc.cpp:158
+#. i18n: file normal.ui line 66
+#: rc.cpp:114
 #, no-c-format
 msgid "Sounds"
 msgstr ""
 
-#. i18n: file advanced.ui line 127
-#: rc.cpp:59 rc.cpp:161
+#. i18n: file normal.ui line 77
+#: rc.cpp:117
 #, fuzzy, no-c-format
 msgid "Enable &sounds"
 msgstr "&Hidupkan Petunjuk"
 
-#. i18n: file advanced.ui line 130
-#: rc.cpp:62 rc.cpp:164
+#. i18n: file normal.ui line 80
+#: rc.cpp:120
 #, no-c-format
 msgid "If checked, sounds will be played for New Game and Win Game"
 msgstr ""
 
-#. i18n: file advanced.ui line 134
-#: rc.cpp:65 rc.cpp:167
+#. i18n: file normal.ui line 84
+#: rc.cpp:123
 #, no-c-format
 msgid ""
 "If this box is checked, you will have some sounds played for each new game and "
@@ -361,275 +490,97 @@ msgid ""
 "Default is no sound."
 msgstr ""
 
-#. i18n: file mainw.ui line 96
-#: rc.cpp:69
-#, no-c-format
-msgid "Misses:"
-msgstr "Salah:"
-
-#. i18n: file mainw.ui line 115
-#: rc.cpp:72
-#, fuzzy, no-c-format
-msgid ""
-"_ _ _ _ _ \n"
-"_ _ _ _ _"
-msgstr ""
-"_ _ _ _ _ \n"
-"_ _ _ _ _ "
-
-#. i18n: file mainw.ui line 124
-#: rc.cpp:76
-#, no-c-format
-msgid "Letters that you wrongly guessed"
-msgstr "Huruf yang anda salah teka"
-
-#. i18n: file mainw.ui line 127
-#: rc.cpp:79
-#, no-c-format
-msgid "Here are the letters that you thought were in the word but are not"
-msgstr ""
-
-#. i18n: file mainw.ui line 168
-#: rc.cpp:82
-#, no-c-format
-msgid "The HangMan is drawn here"
-msgstr "HangMan dilukis di sini"
-
-#. i18n: file mainw.ui line 186
-#: rc.cpp:85
-#, no-c-format
-msgid "Word:"
-msgstr "Perkataan:"
-
-#. i18n: file mainw.ui line 245
-#: rc.cpp:88
-#, no-c-format
-msgid "Word goes here..."
-msgstr "Perkataan terletak di sini..."
-
-#. i18n: file mainw.ui line 260
-#: rc.cpp:91
-#, no-c-format
-msgid "This is the word to guess"
-msgstr "Ini ialah perkataan untuk diteka"
-
-#. i18n: file mainw.ui line 263
-#: rc.cpp:94
-#, no-c-format
-msgid "The letters that you guessed will appear here"
-msgstr "Huruf yang anda teka akan muncul di sini"
-
-#. i18n: file mainw.ui line 349
-#: rc.cpp:97
-#, no-c-format
-msgid "Letter:"
-msgstr "Huruf:"
-
-#. i18n: file mainw.ui line 425
-#: rc.cpp:100
-#, no-c-format
-msgid "Type a letter to guess the word"
-msgstr "Taip huruf untuk meneka perkataan"
-
-#. i18n: file mainw.ui line 428
-#: rc.cpp:103
-#, no-c-format
-msgid ""
-"You type a letter that you think is in the word to guess. You can then either "
-"press the Enter key on your keyboard or press the Guess button to see if the "
-"letter will be present in the word."
-msgstr ""
-
-#. i18n: file mainw.ui line 722
-#: rc.cpp:109
-#, no-c-format
-msgid "Click on it to see if the letter you entered is in the word"
-msgstr ""
-
-#. i18n: file mainw.ui line 726
-#: rc.cpp:112
-#, no-c-format
-msgid ""
-"When you click on the Guess button, the letter you entered will either be in "
-"the word or in the misses. In that case. the hangman will be drawn further. If "
-"you already tried this letter, a passive popup will tell you so and you will "
-"not lose a try.\n"
-"The Guess button has the same function as to press the Enter key on your "
-"keyboard."
-msgstr ""
-
-#. i18n: file normal.ui line 24
-#: rc.cpp:116
-#, fuzzy, no-c-format
-msgid "Hangman Pictures"
-msgstr "Gambar Gantung yang lebih lembut"
-
-#. i18n: file normal.ui line 32
-#: rc.cpp:119
-#, no-c-format
-msgid ""
-"<qt>These settings allow you to choose how you want your hangman pictures.\n"
-"<b>Mild</b> is default and the hangman holds the rope with his hand.\n"
-"<b>Normal</b> is when the man is hanged by the neck.</qt>"
-msgstr ""
-
-#. i18n: file normal.ui line 43
-#: rc.cpp:124
-#, no-c-format
-msgid "&Mild"
-msgstr ""
-
-#. i18n: file normal.ui line 52
-#: rc.cpp:127
-#, fuzzy, no-c-format
-msgid "The hangman holds the rope."
-msgstr "HangMan dilukis di sini"
-
-#. i18n: file normal.ui line 60
-#: rc.cpp:130
-#, no-c-format
-msgid "No&rmal"
-msgstr ""
-
-#. i18n: file normal.ui line 69
-#: rc.cpp:133
-#, fuzzy, no-c-format
-msgid "The hangman is hanged by the neck."
-msgstr "HangMan dilukis di sini"
-
-#. i18n: file normal.ui line 79
-#: rc.cpp:136
-#, fuzzy, no-c-format
-msgid "Background Picture"
-msgstr "Tiada Latar Belakang"
-
-#. i18n: file normal.ui line 83
-#: rc.cpp:139
-#, no-c-format
-msgid ""
-"You can choose here the background picture for the game. In No background mode "
-"(default), the background stays gray. Blue theme and nature theme are nice "
-"backgrounds pictures where everything is blended into the background.\n"
-"The chosen background will be restored at KHangMan next run."
-msgstr ""
-
-#. i18n: file normal.ui line 94
-#: rc.cpp:143
-#, fuzzy, no-c-format
-msgid "&Blue theme"
-msgstr "Tema Biru"
-
-#. i18n: file normal.ui line 100
-#: rc.cpp:146
-#, no-c-format
-msgid "Background is blue and green"
-msgstr ""
-
-#. i18n: file normal.ui line 108
-#: rc.cpp:149
-#, fuzzy, no-c-format
-msgid "&Nature theme"
-msgstr "Tema Biru"
-
-#. i18n: file normal.ui line 114
-#: rc.cpp:152
-#, no-c-format
-msgid "Background is a picture of nature"
-msgstr ""
-
-#. i18n: file normal.ui line 122
-#: rc.cpp:155
-#, fuzzy, no-c-format
-msgid "No back&ground"
-msgstr "Tiada Latar Belakang"
-
 #. i18n: file khangmanui.rc line 27
-#: rc.cpp:177
+#: rc.cpp:133
 #, no-c-format
 msgid "Main"
 msgstr "Utama"
 
-#: khangman.cpp:79
+#: khangman.cpp:81
 msgid "&New"
 msgstr ""
 
-#: khangman.cpp:80
+#: khangman.cpp:82
 msgid "Play with a new word"
 msgstr ""
 
-#: khangman.cpp:81
+#: khangman.cpp:83
 msgid "&Get Words in New Language..."
 msgstr ""
 
-#: khangman.cpp:84
+#: khangman.cpp:86
 #, fuzzy
 msgid "Le&vel"
 msgstr "Peringkat"
 
-#: khangman.cpp:85
+#: khangman.cpp:87
 msgid "Choose the level"
 msgstr "Pilih peringkat"
 
-#: khangman.cpp:86
+#: khangman.cpp:88
 msgid "Choose the level of difficulty"
 msgstr "Pilih peringkat kesukaran"
 
-#: khangman.cpp:88
+#: khangman.cpp:90
 msgid "&Language"
 msgstr ""
 
-#: khangman.cpp:96
+#: khangman.cpp:98
 msgid "L&ook"
 msgstr ""
 
-#: khangman.cpp:97
+#: khangman.cpp:99
 #, fuzzy
 msgid "&Sea Theme"
 msgstr "Tema Biru"
 
-#: khangman.cpp:98
+#: khangman.cpp:100
 #, fuzzy
 msgid "&Desert Theme"
 msgstr "Tema Biru"
 
-#: khangman.cpp:101
+#: khangman.cpp:103
 msgid "Choose the look and feel"
 msgstr "Pilih 'lihat dan rasa'"
 
-#: khangman.cpp:102
+#: khangman.cpp:104
 msgid "Check the look and feel"
 msgstr ""
 
-#: khangman.cpp:124
+#: khangman.cpp:126
 msgid "Animals"
 msgstr ""
 
-#: khangman.cpp:125
+#: khangman.cpp:127
 msgid "Easy"
 msgstr ""
 
-#: khangman.cpp:126
+#: khangman.cpp:128
 msgid "Hard"
 msgstr ""
 
-#: khangman.cpp:127
+#: khangman.cpp:129
 msgid "Medium"
 msgstr ""
 
-#: khangman.cpp:213
+#: khangman.cpp:216
 msgid "Cyrillic"
 msgstr ""
 
-#: khangman.cpp:216
+#: khangman.cpp:219
 #, fuzzy
 msgid "Latin"
 msgstr "Utama"
 
-#: khangman.cpp:312
-msgid "Advanced Settings"
+#: khangman.cpp:317
+msgid "General"
 msgstr ""
 
-#: khangman.cpp:354
+#: khangman.cpp:325
+msgid "Languages"
+msgstr ""
+
+#: khangman.cpp:370
 #, fuzzy
 msgid ""
 "File $KDEDIR/share/apps/khangman/%1.txt not found;\n"
@@ -638,10 +589,38 @@ msgstr ""
 "Fail latarbelakang tidak ditemui.\n"
 " Sila periksa pemasangan anda!"
 
-#: khangman.cpp:370
+#: khangman.cpp:389
 #, c-format
 msgid "Inserts the character %1"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Hangman Pictures"
+#~ msgstr "Gambar Gantung yang lebih lembut"
+
+#, fuzzy
+#~ msgid "The hangman holds the rope."
+#~ msgstr "HangMan dilukis di sini"
+
+#, fuzzy
+#~ msgid "The hangman is hanged by the neck."
+#~ msgstr "HangMan dilukis di sini"
+
+#, fuzzy
+#~ msgid "Background Picture"
+#~ msgstr "Tiada Latar Belakang"
+
+#, fuzzy
+#~ msgid "&Blue theme"
+#~ msgstr "Tema Biru"
+
+#, fuzzy
+#~ msgid "&Nature theme"
+#~ msgstr "Tema Biru"
+
+#, fuzzy
+#~ msgid "No back&ground"
+#~ msgstr "Tiada Latar Belakang"
 
 #~ msgid "KHangMan %1"
 #~ msgstr "KHangMan %1"
