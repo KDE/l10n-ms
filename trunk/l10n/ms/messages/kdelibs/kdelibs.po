@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs\n"
-"POT-Creation-Date: 2005-07-08 01:30+0200\n"
+"POT-Creation-Date: 2005-07-09 01:30+0200\n"
 "PO-Revision-Date: 2005-06-10 22:57+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -819,7 +819,7 @@ msgstr "Keluar"
 msgid "&Quit"
 msgstr "&Keluar"
 
-#: common_texts.cpp:88 kdecore/kstdaccel.cpp:84
+#: common_texts.cpp:88 kdecore/kstdaccel.cpp:84 kded/kbuildsycoca.cpp:781
 msgid "Reload"
 msgstr "Ulangmuat"
 
@@ -956,8 +956,10 @@ msgstr "sambungan tempatan"
 msgid "Browse..."
 msgstr "Lungsur..."
 
-#: common_texts.cpp:137 kdecore/kkeyserver_x11.cpp:127
-#: kdeui/kstdguiitem.cpp:257 khtml/ecma/kjs_debugwin.cpp:458
+#: common_texts.cpp:137 kdecore/kkeyserver_x11.cpp:127 kdeui/keditcl2.cpp:107
+#: kdeui/keditcl2.cpp:120 kdeui/keditcl2.cpp:377 kdeui/keditcl2.cpp:390
+#: kdeui/keditcl2.cpp:456 kdeui/keditcl2.cpp:469 kdeui/kstdguiitem.cpp:257
+#: khtml/ecma/kjs_debugwin.cpp:458 kutils/kreplace.cpp:319
 msgid "Stop"
 msgstr "Henti"
 
@@ -1078,8 +1080,9 @@ msgstr "Pindah ke skrin berikutnya"
 msgid "&Previous"
 msgstr "&Sebelum"
 
-#: common_texts.cpp:170 kdecore/kstdaccel.cpp:69 kdeui/keditcl2.cpp:456
-#: kdeui/keditcl2.cpp:469 kdeui/keditcl2.cpp:830 kutils/kreplace.cpp:45
+#: common_texts.cpp:170 kcert/kcertpart.cc:730 kcert/kcertpart.cc:746
+#: kdecore/kstdaccel.cpp:69 kdeui/keditcl2.cpp:456 kdeui/keditcl2.cpp:469
+#: kdeui/keditcl2.cpp:830 kutils/kreplace.cpp:45 kutils/kreplace.cpp:49
 msgid "Replace"
 msgstr "Ganti"
 
@@ -2484,6 +2487,11 @@ msgstr "Penyelarasan Sumber KDE"
 #, fuzzy
 msgid "Do you want to reload KDE configuration?"
 msgstr "Tetapan Xorg mana yang anda hendak?"
+
+#: kded/kbuildsycoca.cpp:781
+#, fuzzy
+msgid "Do Not Reload"
+msgstr "_Jangan Format"
 
 #: kded/kbuildsycoca.cpp:964
 #, fuzzy
@@ -4517,9 +4525,17 @@ msgstr "Sila masukkan nama kumpulan:"
 msgid "Old upload information found, fill out fields?"
 msgstr ""
 
+#: knewstuff/uploaddialog.cpp:173
+msgid "Fill Out"
+msgstr ""
+
+#: knewstuff/uploaddialog.cpp:173
+msgid "Do Not Fill Out"
+msgstr ""
+
 #: knewstuff/knewstuffgeneric.cpp:133
 #, fuzzy
-msgid "The file '%1' already exists. Do you want to override it?"
+msgid "The file '%1' already exists. Do you want to overwrite it?"
 msgstr "Fail \"%1\" wujud. Anda pasti untuk menindih kepadanya?"
 
 #: khtml/khtml_ext.cpp:798 knewstuff/knewstuffgeneric.cpp:135
@@ -5007,6 +5023,11 @@ msgid ""
 msgstr ""
 "Kombinasi 'kekunci %1' telah ada pada \"%2\".\n"
 "Sila pilih kombinasi unik lain."
+
+#: kdeui/kkeydialog.cpp:975
+#, fuzzy
+msgid "Reassign"
+msgstr "Russia"
 
 #: kdeui/kkeydialog.cpp:1089 kdeui/kkeydialog.cpp:1101
 msgid "Configure Shortcuts"
@@ -6271,7 +6292,7 @@ msgid ""
 "program.\n"
 msgstr "in English Kirim program"
 
-#: kdeui/kbugreport.cpp:253
+#: kdeui/kbugreport.cpp:252
 #, fuzzy
 msgid ""
 "To submit a bug report, click on the button below.\n"
@@ -6284,25 +6305,25 @@ msgstr ""
 "borang untuk diisi.Maklumat yang dipaparkan di atas akan dipindahkan ke pelayan "
 "itu."
 
-#: kdeui/kbugreport.cpp:261
+#: kdeui/kbugreport.cpp:260
 #, fuzzy
 msgid "&Launch Bug Report Wizard"
 msgstr "Lapor pepijat pada GNOME"
 
-#: kdeui/kbugreport.cpp:299
+#: kdeui/kbugreport.cpp:298
 msgid ""
 "_: unknown program name\n"
 "unknown"
 msgstr "tidak diketahui"
 
-#: kdeui/kbugreport.cpp:377
+#: kdeui/kbugreport.cpp:376
 msgid ""
 "You must specify both a subject and a description before the report can be "
 "sent."
 msgstr ""
 "Anda mestilah memfokuskan subjek dan keterangan sebelum laporan dihantar."
 
-#: kdeui/kbugreport.cpp:387
+#: kdeui/kbugreport.cpp:386
 msgid ""
 "<p>You chose the severity <b>Critical</b>. Please note that this severity is "
 "intended only for bugs that</p>"
@@ -6325,7 +6346,7 @@ msgstr ""
 "<p>Adakah pepijat yang anda laporkan menyebabkan kerosakan di atas? Jika tidak "
 "sila pilih keadaan yang lebih rendah. Terima kasih!</p>"
 
-#: kdeui/kbugreport.cpp:398
+#: kdeui/kbugreport.cpp:397
 msgid ""
 "<p>You chose the severity <b>Grave</b>. Please note that this severity is "
 "intended only for bugs that</p>"
@@ -6347,7 +6368,7 @@ msgstr ""
 "<p>Adakah pepijat yang anda laporkan menyebabkan kerosakan di atas? Jika tidak "
 "sila pilih keadaan yang lebih rendah. Terima kasih!</p>"
 
-#: kdeui/kbugreport.cpp:410
+#: kdeui/kbugreport.cpp:409
 msgid ""
 "Unable to send the bug report.\n"
 "Please submit a bug report manually...\n"
@@ -6357,11 +6378,11 @@ msgstr ""
 "Sila hantar laporan pepijat secara manual...\n"
 "Sila rujuk http://bugs.kde.org/ untuk panduan."
 
-#: kdeui/kbugreport.cpp:419
+#: kdeui/kbugreport.cpp:417
 msgid "Bug report sent, thank you for your input."
 msgstr "Laporan pepijat telah dihantar,terima kasih di atas input anda."
 
-#: kdeui/kbugreport.cpp:428
+#: kdeui/kbugreport.cpp:426
 msgid ""
 "Close and discard\n"
 "edited message?"
@@ -6369,7 +6390,7 @@ msgstr ""
 "Tutup dan abai\n"
 "mesej yang telah diedit?"
 
-#: kdeui/kbugreport.cpp:429
+#: kdeui/kbugreport.cpp:427
 msgid "Close Message"
 msgstr "Tutup Mesej"
 
@@ -7297,7 +7318,7 @@ msgstr ""
 "<qt>Borang akan dihantar ke <BR><B>%1</B><BR>pada sistem fail lokal anda.<BR>"
 "Anda mahu hantar borang ini?"
 
-#: khtml/html/html_formimpl.cpp:1470 khtml/khtml_part.cpp:4777
+#: khtml/html/html_formimpl.cpp:1469 khtml/khtml_part.cpp:4777
 #: khtml/khtmlview.cpp:2408 khtml/khtmlview.cpp:2450
 #: khtml/rendering/render_form.cpp:296
 msgid "Submit"
@@ -7545,6 +7566,16 @@ msgstr ""
 "<p>%1</p> pada tetingkap pelayar baru menerusi JavaScript."
 "<br/>Anda mahu benarkan?</qt>"
 
+#: khtml/ecma/kjs_html.cpp:2166 khtml/ecma/kjs_window.cpp:1330
+#, fuzzy
+msgid "Allow"
+msgstr "Semua"
+
+#: khtml/ecma/kjs_html.cpp:2166 khtml/ecma/kjs_window.cpp:1330
+#, fuzzy
+msgid "Do Not Allow"
+msgstr "Dengar semua alamat"
+
 #: khtml/ecma/kjs_window.cpp:1563
 msgid "Close window?"
 msgstr "Tutup Tetingkap?"
@@ -7552,6 +7583,11 @@ msgstr "Tutup Tetingkap?"
 #: khtml/ecma/kjs_window.cpp:1563
 msgid "Confirmation Required"
 msgstr "Kepastian Diperlukan"
+
+#: khtml/ecma/kjs_window.cpp:1563
+#, fuzzy
+msgid "Do Not Close"
+msgstr "_Jangan Format"
 
 #: khtml/ecma/kjs_window.cpp:2326
 msgid ""
@@ -7661,8 +7697,18 @@ msgstr "Membaca maklumat pakej..."
 
 #: khtml/html/html_formimpl.cpp:610
 #, fuzzy
+msgid "Store"
+msgstr "Jalan"
+
+#: khtml/html/html_formimpl.cpp:610
+#, fuzzy
 msgid "Ne&ver for This Site"
 msgstr "Tidak sekali"
+
+#: khtml/html/html_formimpl.cpp:610
+#, fuzzy
+msgid "Do Not Store"
+msgstr "_Jangan Format"
 
 #: khtml/html/html_formimpl.cpp:614
 #, fuzzy
@@ -7841,6 +7887,16 @@ msgstr ""
 #: khtml/rendering/render_frames.cpp:824
 msgid "Missing Plugin"
 msgstr "PlugMasuk Hilang"
+
+#: khtml/rendering/render_frames.cpp:824
+#, fuzzy
+msgid "Download"
+msgstr "kebanyakan lokasi"
+
+#: khtml/rendering/render_frames.cpp:824
+#, fuzzy
+msgid "Do Not Download"
+msgstr "kebanyakan lokasi"
 
 #: kinit/kinit.cpp:440
 msgid ""
@@ -8398,6 +8454,11 @@ msgstr "Apakah anda ingin memulakan carian dari awal?"
 msgid "Do you want to restart search at the beginning?"
 msgstr "Adakah anda mahu memulakan carian dari awal?"
 
+#: kutils/kreplace.cpp:319
+#, fuzzy
+msgid "Restart"
+msgstr "Pilih"
+
 #: kutils/kpluginselector.cpp:111
 #, fuzzy
 msgid ""
@@ -8824,6 +8885,11 @@ msgstr "Fail  \"%1\" tidak dijumpai. Cipta baru?"
 msgid "No Such File"
 msgstr "Tiada fail sedemikian."
 
+#: kab/addressbook.cc:625
+#, fuzzy
+msgid "Create"
+msgstr "Tengah"
+
 #: kab/addressbook.cc:629
 msgid "New file."
 msgstr "Fail Baru."
@@ -9156,6 +9222,10 @@ msgstr "Sijil Kata Laluan"
 msgid "The certificate file could not be loaded. Try a different password?"
 msgstr ""
 "Fail sijil kelihatan tidak boleh dibuka.Cuba dengan kata laluan berbeza?"
+
+#: kcert/kcertpart.cc:496
+msgid "Try Different"
+msgstr ""
 
 #: kcert/kcertpart.cc:532 kcert/kcertpart.cc:566
 msgid "This file cannot be opened."
