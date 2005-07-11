@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
-"POT-Creation-Date: 2005-07-10 01:35+0200\n"
+"POT-Creation-Date: 2005-07-11 01:35+0200\n"
 "PO-Revision-Date: 2004-07-29 19:36+0800\n"
 "Last-Translator: Muhammad Najmi bin Ahmad Zabidi <md_najmi@yahoo.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -213,7 +213,7 @@ msgid "Fatal"
 msgstr ""
 
 #. i18n: file ./protocols/yahoo/ui/yahoostealthsetting.ui line 49
-#: libkopete/kopetemetacontact.cpp:486 libkopete/kopeteonlinestatus.cpp:110
+#: libkopete/kopetemetacontact.cpp:492 libkopete/kopeteonlinestatus.cpp:110
 #: plugins/statistics/statisticscontact.cpp:262
 #: protocols/gadu/gaduprotocol.cpp:71 protocols/gadu/gaduprotocol.cpp:73
 #: protocols/irc/ircprotocol.cpp:110 protocols/irc/ircprotocol.cpp:113
@@ -229,7 +229,7 @@ msgstr ""
 msgid "Online"
 msgstr "DalamTalian"
 
-#: libkopete/kopetemetacontact.cpp:488 libkopete/kopeteonlinestatus.cpp:113
+#: libkopete/kopetemetacontact.cpp:494 libkopete/kopeteonlinestatus.cpp:113
 #: plugins/statistics/statisticscontact.cpp:263
 #: protocols/groupwise/gwprotocol.cpp:54 protocols/irc/ircprotocol.cpp:117
 #: protocols/irc/ircprotocol.cpp:119 protocols/irc/ircprotocol.cpp:121
@@ -257,7 +257,7 @@ msgstr ""
 msgid "Invisible"
 msgstr "Ghaib"
 
-#: libkopete/kopetemetacontact.cpp:490 libkopete/kopeteonlinestatus.cpp:122
+#: libkopete/kopetemetacontact.cpp:496 libkopete/kopeteonlinestatus.cpp:122
 #: plugins/statistics/statisticscontact.cpp:264
 #: protocols/gadu/gaduprotocol.cpp:59 protocols/gadu/gaduprotocol.cpp:61
 #: protocols/groupwise/gwprotocol.cpp:48 protocols/irc/ircprotocol.cpp:111
@@ -396,28 +396,81 @@ msgstr ""
 msgid "Leave Offline Mode?"
 msgstr "LuarTalian"
 
-#: libkopete/kopeteaccount.cpp:122
+#: libkopete/kopeteutils.cpp:38
+#, fuzzy
+msgid "You have been disconnected."
+msgstr "Anda."
+
+#: libkopete/kopeteutils.cpp:39
+#, fuzzy
+msgid "Connection Lost."
+msgstr "Sambungan ditolak."
+
+#: libkopete/kopeteutils.cpp:40
+msgid ""
+"Kopete lost the channel used to talk to the instant messaging system.\n"
+"This can be either your internet access went down, , the service is "
+"experimenting problems, or the service disconnected you because you tried to "
+"connect with the same account from another location. Try connecting again "
+"later."
+msgstr ""
+
+#: libkopete/kopeteutils.cpp:42
+msgid "Can't connect with the instant messaging server or peers."
+msgstr ""
+
+#: libkopete/kopeteutils.cpp:43
+#, fuzzy
+msgid "Can't connect."
+msgstr "pengguna"
+
+#: libkopete/kopeteutils.cpp:44
+msgid ""
+"This means Kopete can't reach the instant messaging server or peers.\n"
+"This can be either your internet access is down or the server is experimenting "
+"problems. Try connecting again later."
+msgstr ""
+
+#: libkopete/kopeteutils.cpp:55
+#, fuzzy
+msgid "More Information..."
+msgstr "Maklumat"
+
+#: libkopete/kopeteaccount.cpp:121
+#, fuzzy
+msgid "You have been disconnected"
+msgstr "Anda."
+
+#: libkopete/kopeteaccount.cpp:121
 #, fuzzy
 msgid "You have connected from another client or computer to the account '%1'"
 msgstr "Anda."
 
-#: libkopete/kopeteaccount.cpp:236 libkopete/kopeteaccount.cpp:302
+#: libkopete/kopeteaccount.cpp:121
+msgid ""
+"Most proprietary Instant Messaging services does not allow you to connect from "
+"more than one location. Check that nobody is using you account without your "
+"permission. If you need a service that supports connection from various "
+"locations at the same time, use the Jabber protocol."
+msgstr ""
+
+#: libkopete/kopeteaccount.cpp:235 libkopete/kopeteaccount.cpp:301
 msgid ""
 "You are not allowed to add yourself to the contact list. The addition of \"%1\" "
 "to account \"%2\" will not take place."
 msgstr ""
 
-#: libkopete/kopeteaccount.cpp:236 libkopete/kopeteaccount.cpp:302
+#: libkopete/kopeteaccount.cpp:235 libkopete/kopeteaccount.cpp:301
 #, fuzzy
 msgid "Error Creating Contact"
 msgstr "Ralat"
 
-#: libkopete/kopeteaccount.cpp:346 protocols/oscar/aim/aimaccount.cpp:157
+#: libkopete/kopeteaccount.cpp:345 protocols/oscar/aim/aimaccount.cpp:157
 msgid "%2 <%1>"
 msgstr ""
 
 #: kopete/config/accounts/kopeteaccountconfig.cpp:194
-#: libkopete/kopeteaccount.cpp:468
+#: libkopete/kopeteaccount.cpp:467
 #, fuzzy
 msgid "Edit Account"
 msgstr "Edit"
@@ -539,8 +592,8 @@ msgstr "<qt> for</qt>"
 msgid "Could Not Add Contact"
 msgstr "Tambah"
 
-#: libkopete/kopetemetacontact.cpp:328 libkopete/kopetemetacontact.cpp:346
-#: libkopete/kopetemetacontact.cpp:422
+#: libkopete/kopetemetacontact.cpp:334 libkopete/kopetemetacontact.cpp:352
+#: libkopete/kopetemetacontact.cpp:428
 #, fuzzy
 msgid ""
 "This user is not reachable at the moment. Please make sure you are connected "
@@ -548,13 +601,13 @@ msgid ""
 "comes online."
 msgstr "pengguna dan atau pengguna."
 
-#: libkopete/kopetecontact.cpp:443 libkopete/kopetemetacontact.cpp:329
-#: libkopete/kopetemetacontact.cpp:347 libkopete/kopetemetacontact.cpp:423
+#: libkopete/kopetecontact.cpp:443 libkopete/kopetemetacontact.cpp:335
+#: libkopete/kopetemetacontact.cpp:353 libkopete/kopetemetacontact.cpp:429
 #, fuzzy
 msgid "User is Not Reachable"
 msgstr "Pengguna"
 
-#: libkopete/kopetemetacontact.cpp:493 protocols/irc/ircprotocol.cpp:127
+#: libkopete/kopetemetacontact.cpp:499 protocols/irc/ircprotocol.cpp:127
 #: protocols/msn/msnprotocol.cpp:58
 #, fuzzy
 msgid "Status not available"
@@ -10390,7 +10443,7 @@ msgstr "Keluar "
 msgid "Acknowledge size is greater then the expected file size"
 msgstr "saiz fail saiz"
 
-#: protocols/irc/libkirc/ksslsocket.cpp:371
+#: protocols/irc/libkirc/ksslsocket.cpp:376
 #, fuzzy
 msgid ""
 "The IP address of the host %1 does not match the one the certificate was issued "
@@ -10399,42 +10452,42 @@ msgstr ""
 "Alamat IP untuk hos %1tidak padan dengan yang ada pada sijil yang telah "
 "dikeluarkan."
 
-#: protocols/irc/libkirc/ksslsocket.cpp:376
-#: protocols/irc/libkirc/ksslsocket.cpp:386
-#: protocols/irc/libkirc/ksslsocket.cpp:407
+#: protocols/irc/libkirc/ksslsocket.cpp:381
+#: protocols/irc/libkirc/ksslsocket.cpp:391
+#: protocols/irc/libkirc/ksslsocket.cpp:412
 #, fuzzy
 msgid "Server Authentication"
 msgstr "Autentikasi Pelayan"
 
-#: protocols/irc/libkirc/ksslsocket.cpp:377
-#: protocols/irc/libkirc/ksslsocket.cpp:387
+#: protocols/irc/libkirc/ksslsocket.cpp:382
+#: protocols/irc/libkirc/ksslsocket.cpp:392
 #, fuzzy
 msgid "&Details"
 msgstr "&Terperinci"
 
-#: protocols/irc/libkirc/ksslsocket.cpp:378
-#: protocols/irc/libkirc/ksslsocket.cpp:388
+#: protocols/irc/libkirc/ksslsocket.cpp:383
+#: protocols/irc/libkirc/ksslsocket.cpp:393
 #, fuzzy
 msgid "Co&ntinue"
 msgstr "Sambu&ng"
 
-#: protocols/irc/libkirc/ksslsocket.cpp:382
+#: protocols/irc/libkirc/ksslsocket.cpp:387
 #, fuzzy
 msgid "The server certificate failed the authenticity test (%1)."
 msgstr "Sijil pelayan gagal ujian pengesahan (%1)."
 
-#: protocols/irc/libkirc/ksslsocket.cpp:404
+#: protocols/irc/libkirc/ksslsocket.cpp:409
 #, fuzzy
 msgid ""
 "Would you like to accept this certificate forever without being prompted?"
 msgstr ""
 "Adakah anda mahu menerima sijil ini seterusnya selepas ini tanpa diberitahu?"
 
-#: protocols/irc/libkirc/ksslsocket.cpp:408
+#: protocols/irc/libkirc/ksslsocket.cpp:413
 msgid "&Forever"
 msgstr ""
 
-#: protocols/irc/libkirc/ksslsocket.cpp:409
+#: protocols/irc/libkirc/ksslsocket.cpp:414
 #, fuzzy
 msgid "&Current Sessions Only"
 msgstr "Sesi Ini Saha&ja"
