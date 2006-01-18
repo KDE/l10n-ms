@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
-"POT-Creation-Date: 2005-05-08 01:26+0200\n"
+"POT-Creation-Date: 2005-12-29 03:17+0100\n"
 "PO-Revision-Date: 2005-10-10 15:21+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -32,7 +32,7 @@ msgstr "Peti mel:"
 msgid "Password:"
 msgstr "Kata laluan:"
 
-#: kio_proto.h:102
+#: imap_proto.cpp:59 kio_proto.h:102 nntp_proto.cpp:43 pop3_proto.cpp:56
 msgid "Save password"
 msgstr "Simpan kata laluan"
 
@@ -40,16 +40,15 @@ msgstr "Simpan kata laluan"
 msgid "Authentication:"
 msgstr "Pengesahan:"
 
-#: maildir_proto.h:47
-#: qmail_proto.h:53
+#: maildir_proto.h:47 qmail_proto.cpp:38 qmail_proto.h:50
 msgid "Path:"
 msgstr "Laluan:"
 
-#: mbox_proto.h:46
+#: mbox_proto.cpp:37 mbox_proto.h:44
 msgid "File:"
 msgstr "Fail:"
 
-#: process_proto.h:43
+#: process_proto.h:40
 msgid "Program: "
 msgstr "Program: "
 
@@ -57,78 +56,144 @@ msgstr "Program: "
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr ""
-"MIMOS"
+msgstr "MIMOS"
 
 #: _translatorinfo.cpp:3
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
-msgstr ""
-"opensource@mimos.my"
+msgstr "opensource@mimos.my"
 
-#: boxcontaineritem.cpp:203
+#: boxcontaineritem.cpp:204
 msgid "&Recheck"
 msgstr "&Semak semula"
 
-#: boxcontaineritem.cpp:204
+#: boxcontaineritem.cpp:205
 msgid "R&eset Counter"
 msgstr "&Set Semula Penghitung"
 
-#: boxcontaineritem.cpp:205
+#: boxcontaineritem.cpp:206
 msgid "&View Emails"
 msgstr "&Paparkan e-mel"
 
-#: boxcontaineritem.cpp:206
+#: boxcontaineritem.cpp:207
 msgid "R&un Command"
 msgstr "&Jalankan Arahan"
 
-#: kio.cpp:183
+#: boxcontaineritem.cpp:219
+msgid "KOrn - %1/%2 (total: %3)"
+msgstr ""
+
+#: boxcontaineritem.cpp:223 subjectsdlg.cpp:86
+msgid "From"
+msgstr "Daripada"
+
+#: boxcontaineritem.cpp:228 subjectsdlg.cpp:87
+msgid "Subject"
+msgstr "Subjek"
+
+#: boxcontaineritem.cpp:235 subjectsdlg.cpp:88
+msgid "Date"
+msgstr "Tarikh"
+
+#: dcop_proto.cpp:53
+msgid "DCOP name"
+msgstr ""
+
+#: dockeditem.cpp:84
+msgid "Korn - %1/%2"
+msgstr ""
+
+#: imap_proto.cpp:39 pop3_proto.cpp:39
+msgid "SSL"
+msgstr ""
+
+#: imap_proto.cpp:40 pop3_proto.cpp:40
+msgid "TLS if possible"
+msgstr ""
+
+#: imap_proto.cpp:41 pop3_proto.cpp:41
+msgid "Always TLS"
+msgstr ""
+
+#: imap_proto.cpp:42 pop3_proto.cpp:42
+msgid "Never TLS"
+msgstr ""
+
+#: imap_proto.cpp:46
+msgid "LOGIN"
+msgstr ""
+
+#: imap_proto.cpp:47
+msgid "Anonymous"
+msgstr ""
+
+#: imap_proto.cpp:48
+msgid "CRAM-MD5"
+msgstr ""
+
+#: imap_proto.cpp:50 nntp_proto.cpp:38 pop3_proto.cpp:48
+msgid "Server"
+msgstr "Pelayan"
+
+#: imap_proto.cpp:51 nntp_proto.cpp:39 pop3_proto.cpp:49
+#, fuzzy
+msgid "Port"
+msgstr "Port:"
+
+#: imap_proto.cpp:52 pop3_proto.cpp:50
+msgid "Encryption"
+msgstr ""
+
+#: imap_proto.cpp:56 nntp_proto.cpp:41 pop3_proto.cpp:54
+#, fuzzy
+msgid "Username"
+msgstr "Nama pengguna:"
+
+#: imap_proto.cpp:57
+#, fuzzy
+msgid "Mailbox"
+msgstr "Peti mel:"
+
+#: imap_proto.cpp:58 nntp_proto.cpp:42 pop3_proto.cpp:55
+#, fuzzy
+msgid "Password"
+msgstr "Kata laluan:"
+
+#: imap_proto.cpp:63 pop3_proto.cpp:60
+#, fuzzy
+msgid "Authentication"
+msgstr "Pengesahan:"
+
+#: kio.cpp:208
 msgid "url is not valid"
 msgstr "url tidak sah"
 
-#: kio.cpp:320
-msgid "No protocol specified"
-msgstr "Tiada protokol dinyatakan"
-
-#: kio.cpp:341
-msgid "No server specified"
-msgstr "Tiada pelayan dinyatakan"
-
-#: kio.cpp:355
-msgid "No username specified"
-msgstr "Tiada nama pengguna dinyatakan"
-
-#: kio.cpp:367
-msgid "No mailbox specified"
-msgstr "Tiada peti mel diknyatakan"
-
-#: kio_count.cpp:91
+#: kio_count.cpp:89 kio_count.cpp:90
 #, c-format
 msgid "Not able to open a kio slave for %1."
 msgstr "Tidak dapat membuka hamba kio untuk %1."
 
-#: kio_count.cpp:206
-#: kio_count.cpp:255
+#: kio_count.cpp:204 kio_count.cpp:254
 msgid "Got unknown job; something must be wrong..."
 msgstr "Ada tugas tidak diketahui; ada kesilapan..."
 
-#: kio_count.cpp:212
+#: kio_count.cpp:210 kio_count.cpp:211
 #, c-format
 msgid "The next KIO-error occurred by counting: %1"
 msgstr "Ralat KIO seterusnya berlaku dengan menghitung: %1"
 
 #: kio_delete.cpp:110
 msgid "Could not get a connected slave; I cannot delete this way..."
-msgstr "Tidak mendapat hamba yang disambung; Tidak dapat hapuskan dengan cara ini..."
+msgstr ""
+"Tidak mendapat hamba yang disambung; Tidak dapat hapuskan dengan cara ini..."
 
 #: kio_delete.cpp:185
 #, c-format
 msgid "An error occurred when deleting email: %1."
 msgstr "Ralat berlaku semasa menghapuskan e-mel: %1."
 
-#: kio_read.cpp:77
-#: kio_read.cpp:91
+#: kio_read.cpp:77 kio_read.cpp:91
 msgid "Unknown job returned; I will try if this one will do... "
 msgstr "Tugas tidak diketahui dikembalikan; Akan cuba lagi jika ini memadai..."
 
@@ -137,35 +202,59 @@ msgstr "Tugas tidak diketahui dikembalikan; Akan cuba lagi jika ini memadai..."
 msgid "An error occurred when fetching the requested email: %1."
 msgstr "Ralat berlaku semasa mengutip e-mel yang diminta: %1."
 
-#: kio_single_subject.cpp:125
-#: kio_single_subject.cpp:134
+#: kio_single_subject.cpp:128 kio_single_subject.cpp:137
 msgid "Got invalid job; something strange happened?"
 msgstr "Ada tugas tidak sah; perkara pelik berlaku?"
 
-#: kio_single_subject.cpp:138
+#: kio_single_subject.cpp:141
 msgid "Error when fetching %1: %2"
 msgstr "Ralat semasa mengambil %1: %2"
 
-#: kio_subjects.cpp:68
+#: kio_subjects.cpp:66
 msgid "Already a slave pending."
 msgstr "Satu hamba sedang menunggu."
 
-#: kio_subjects.cpp:106
+#: kio_subjects.cpp:104 kio_subjects.cpp:105
 #, c-format
 msgid "Not able to open a kio-slave for %1."
 msgstr "Tidak dapat membuka hamba kio untuk %1."
 
-#: kornboxcfgimpl.cpp:53
+#: kmail_proto.cpp:197
+msgid "KMail name"
+msgstr ""
+
+#: kornboxcfgimpl.cpp:52
+msgid ""
+"_: Left mousebutton\n"
+"Left"
+msgstr ""
+
+#: kornboxcfgimpl.cpp:55
+msgid ""
+"_: Right mousebutton\n"
+"Right"
+msgstr ""
+
+#: kornboxcfgimpl.cpp:62
 msgid "Accounts"
 msgstr "Akaun"
 
-#: korncfgimpl.cpp:46
+#: kornboxcfgimpl.cpp:244
+#, fuzzy
+msgid "Box Configuration"
+msgstr "Konfigurasi Korn"
+
+#: kornboxcfgimpl.cpp:294 kornboxcfgimpl.cpp:299
+#, fuzzy
+msgid "Normal animation"
+msgstr "Pengesahan"
+
+#: korncfgimpl.cpp:48
 msgid "Boxes"
 msgstr "Kotak"
 
 #. i18n: file korncfg.ui line 16
-#: kornshell.cpp:62
-#: rc.cpp:193
+#: kornshell.cpp:63 rc.cpp:166
 #, no-c-format
 msgid "Korn Configuration"
 msgstr "Konfigurasi Korn"
@@ -210,298 +299,265 @@ msgstr "Korn"
 msgid "(c) 1999-2004, The Korn Developers"
 msgstr "(c) 1999-2004, Pembangun Korn "
 
+#: pop3_proto.cpp:45
+msgid "Plain"
+msgstr ""
+
+#: pop3_proto.cpp:46
+msgid "APOP"
+msgstr ""
+
+#: process_proto.cpp:37
+#, fuzzy
+msgid "Program:"
+msgstr "Program: "
+
 #. i18n: file kornaccountcfg.ui line 28
 #: rc.cpp:3
 #, no-c-format
 msgid "&Server"
 msgstr "&Pelayan"
 
-#. i18n: file kornaccountcfg.ui line 39
+#. i18n: file kornaccountcfg.ui line 43
 #: rc.cpp:6
-#, no-c-format
-msgid "Server"
-msgstr "Pelayan"
-
-#. i18n: file kornaccountcfg.ui line 53
-#: rc.cpp:9
-#, no-c-format
-msgid "Por&t:"
-msgstr "Por&t:"
-
-#. i18n: file kornaccountcfg.ui line 64
-#: rc.cpp:12
-#, no-c-format
-msgid "Se&rver:"
-msgstr "&Pelayan:"
-
-#. i18n: file kornaccountcfg.ui line 75
-#: rc.cpp:15
 #, no-c-format
 msgid "&Protocol:"
 msgstr "&Protokol:"
 
-#. i18n: file kornaccountcfg.ui line 133
-#: rc.cpp:18
-#, no-c-format
-msgid "Identity"
-msgstr "Identiti"
-
-#. i18n: file kornaccountcfg.ui line 149
-#: rc.cpp:21
-#, no-c-format
-msgid "&Username:"
-msgstr "&Nama penguna:"
-
-#. i18n: file kornaccountcfg.ui line 160
-#: rc.cpp:24
-#, no-c-format
-msgid "&Mailbox:"
-msgstr "&Peti mel:"
-
-#. i18n: file kornaccountcfg.ui line 171
-#: rc.cpp:27
-#, no-c-format
-msgid "Aut&hentication:"
-msgstr "&Pengesahan:"
-
-#. i18n: file kornaccountcfg.ui line 182
-#: rc.cpp:30
-#, no-c-format
-msgid "Passwor&d:"
-msgstr "&Kata laluan:"
-
-#. i18n: file kornaccountcfg.ui line 204
-#: rc.cpp:33
-#, no-c-format
-msgid "Sa&ve password"
-msgstr "&Simpan kata laluan"
-
-#. i18n: file kornaccountcfg.ui line 256
-#: rc.cpp:36
+#. i18n: file kornaccountcfg.ui line 68
+#: rc.cpp:9
 #, no-c-format
 msgid "&Account"
 msgstr "&Akaun"
 
-#. i18n: file kornaccountcfg.ui line 275
-#: rc.cpp:39
+#. i18n: file kornaccountcfg.ui line 87
+#: rc.cpp:12
 #, no-c-format
 msgid "C&heck every (sec):"
 msgstr "&Semak setiap (saat):"
 
-#. i18n: file kornaccountcfg.ui line 295
-#: rc.cpp:42
-#: rc.cpp:115
+#. i18n: file kornaccountcfg.ui line 107
+#: rc.cpp:15 rc.cpp:88
 #, no-c-format
 msgid "&Events"
 msgstr "&Peristiwa"
 
-#. i18n: file kornaccountcfg.ui line 306
-#: rc.cpp:45
+#. i18n: file kornaccountcfg.ui line 118
+#: rc.cpp:18
 #, no-c-format
 msgid "&Use settings of box"
 msgstr "&Gunakan seting kotak"
 
-#. i18n: file kornaccountcfg.ui line 320
-#: rc.cpp:48
+#. i18n: file kornaccountcfg.ui line 132
+#: rc.cpp:21
 #, no-c-format
 msgid "On New Mail"
 msgstr "Dalam Mel Baru"
 
-#. i18n: file kornaccountcfg.ui line 344
-#: rc.cpp:51
+#. i18n: file kornaccountcfg.ui line 156
+#: rc.cpp:24
 #, no-c-format
 msgid "Run &command:"
 msgstr "Jalankan &arahan:"
 
-#. i18n: file kornaccountcfg.ui line 360
-#: rc.cpp:54
+#. i18n: file kornaccountcfg.ui line 172
+#: rc.cpp:27
 #, no-c-format
 msgid "Play sou&nd:"
 msgstr "Siarkan bu&nyi:"
 
-#. i18n: file kornaccountcfg.ui line 373
-#: rc.cpp:57
-#: rc.cpp:172
+#. i18n: file kornaccountcfg.ui line 185
+#: rc.cpp:30 rc.cpp:145
 #, no-c-format
 msgid "Show &passive popup"
 msgstr "Paparkan popup &pasif"
 
-#. i18n: file kornaccountcfg.ui line 384
-#: rc.cpp:60
+#. i18n: file kornaccountcfg.ui line 196
+#: rc.cpp:33
 #, no-c-format
 msgid "Add &date to passive popup"
 msgstr "Tambah &tarikh kepada popup pasif"
 
 #. i18n: file kornboxcfg.ui line 114
-#: rc.cpp:70
+#: rc.cpp:43
 #, no-c-format
 msgid "Icon:"
 msgstr "Ikon:"
 
 #. i18n: file kornboxcfg.ui line 122
-#: rc.cpp:73
+#: rc.cpp:46
 #, no-c-format
 msgid "Background:"
 msgstr "Latar belakang:"
 
 #. i18n: file kornboxcfg.ui line 162
-#: rc.cpp:78
+#: rc.cpp:51
 #, no-c-format
 msgid "Normal"
 msgstr "Normal"
 
 #. i18n: file kornboxcfg.ui line 202
-#: rc.cpp:83
+#: rc.cpp:56
 #, no-c-format
 msgid "New Mail"
 msgstr "Mel baru"
 
 #. i18n: file kornboxcfg.ui line 213
-#: rc.cpp:86
+#: rc.cpp:59
 #, no-c-format
 msgid "Text:"
 msgstr "Teks:"
 
 #. i18n: file kornboxcfg.ui line 361
-#: rc.cpp:101
+#: rc.cpp:74
 #, no-c-format
 msgid "Animation:"
 msgstr "Animasi:"
 
 #. i18n: file kornboxcfg.ui line 369
-#: rc.cpp:104
+#: rc.cpp:77
 #, no-c-format
 msgid "Font:"
 msgstr "Fon:"
 
 #. i18n: file kornboxcfg.ui line 738
-#: rc.cpp:129
+#: rc.cpp:102
 #, no-c-format
 msgid "Reset counter:"
 msgstr "Set semula penghitung:"
 
 #. i18n: file kornboxcfg.ui line 746
-#: rc.cpp:132
+#: rc.cpp:105
 #, no-c-format
 msgid "Mousebutton"
 msgstr "Butang tetikus"
 
 #. i18n: file kornboxcfg.ui line 861
-#: rc.cpp:137
+#: rc.cpp:110
 #, no-c-format
 msgid "Middle"
 msgstr "Tengah"
 
 #. i18n: file kornboxcfg.ui line 924
-#: rc.cpp:141
+#: rc.cpp:114
 #, no-c-format
 msgid "Popup:"
 msgstr "Popup:"
 
 #. i18n: file kornboxcfg.ui line 984
-#: rc.cpp:145
+#: rc.cpp:118
 #, no-c-format
 msgid "View emails:"
 msgstr "Paparkan e-mel:"
 
 #. i18n: file kornboxcfg.ui line 1044
-#: rc.cpp:149
+#: rc.cpp:122
 #, no-c-format
 msgid "Recheck:"
 msgstr "Semak semula:"
 
 #. i18n: file kornboxcfg.ui line 1260
-#: rc.cpp:156
+#: rc.cpp:129
 #, no-c-format
 msgid "Run command:"
 msgstr "Jalankan arahan:"
 
 #. i18n: file kornboxcfg.ui line 1330
-#: rc.cpp:160
+#: rc.cpp:133
 #, no-c-format
 msgid "Co&mmand:"
 msgstr "&Arahan"
 
 #. i18n: file kornboxcfg.ui line 1351
-#: rc.cpp:163
+#: rc.cpp:136
 #, no-c-format
 msgid "On &New Mail"
 msgstr "Dalam Mel &Baru"
 
 #. i18n: file kornboxcfg.ui line 1375
-#: rc.cpp:166
+#: rc.cpp:139
 #, no-c-format
 msgid "&Run command:"
 msgstr "&Jalankan arahan"
 
 #. i18n: file kornboxcfg.ui line 1391
-#: rc.cpp:169
+#: rc.cpp:142
 #, no-c-format
 msgid "Play &sound:"
 msgstr "Siarkan &bunyi"
 
 #. i18n: file kornboxcfg.ui line 1415
-#: rc.cpp:175
+#: rc.cpp:148
 #, no-c-format
 msgid "Add da&te to passive popup"
 msgstr "Tambah &tarikh kepada popup pasif"
 
 #. i18n: file kornboxcfg.ui line 1427
-#: rc.cpp:178
+#: rc.cpp:151
 #, no-c-format
 msgid "Acco&unts"
 msgstr "Aka&un"
 
 #. i18n: file kornboxcfg.ui line 1443
-#: rc.cpp:181
+#: rc.cpp:154
 #, no-c-format
 msgid "E&dit"
 msgstr "E&dit"
 
 #. i18n: file kornboxcfg.ui line 1453
-#: rc.cpp:184
+#: rc.cpp:157
 #, no-c-format
 msgid "&DCOP"
 msgstr "&DCOP"
 
 #. i18n: file kornboxcfg.ui line 1464
-#: rc.cpp:187
+#: rc.cpp:160
 #, no-c-format
 msgid "DCO&Objects"
 msgstr "&Objek DCO"
 
 #. i18n: file kornboxcfg.ui line 1467
-#: rc.cpp:190
+#: rc.cpp:163
 #, no-c-format
-msgid "The names of DCOP-objects by this box. DCOP-objects let other programs add 'virtual' emails to the box."
-msgstr "Nama objek DCOP oleh kotak ini. Objek DCOP membenarkan program lain menambah e-mel 'maya' ke kotak."
+msgid ""
+"The names of DCOP-objects by this box. DCOP-objects let other programs add "
+"'virtual' emails to the box."
+msgstr ""
+"Nama objek DCOP oleh kotak ini. Objek DCOP membenarkan program lain menambah "
+"e-mel 'maya' ke kotak."
 
 #. i18n: file korncfg.ui line 31
-#: rc.cpp:196
+#: rc.cpp:169
 #, no-c-format
 msgid "&Boxes"
 msgstr "&Kotak"
 
-#. i18n: file korncfg.ui line 82
-#: rc.cpp:206
+#. i18n: file korncfg.ui line 55
+#: rc.cpp:175
+#, no-c-format
+msgid "Use &KWallet if possible"
+msgstr ""
+
+#. i18n: file korncfg.ui line 93
+#: rc.cpp:182
 #, no-c-format
 msgid "&Horizontal"
 msgstr "&Mendatar"
 
-#. i18n: file korncfg.ui line 90
-#: rc.cpp:209
+#. i18n: file korncfg.ui line 101
+#: rc.cpp:185
 #, no-c-format
 msgid "&Vertical"
 msgstr "&Menegak"
 
-#. i18n: file korncfg.ui line 98
-#: rc.cpp:212
+#. i18n: file korncfg.ui line 109
+#: rc.cpp:188
 #, no-c-format
 msgid "&Docked"
 msgstr "&Didok"
 
 #. i18n: file progress_dialog.ui line 16
-#: rc.cpp:215
+#: rc.cpp:191
 #, no-c-format
 msgid "Progress"
 msgstr "Kemajuan"
@@ -517,18 +573,6 @@ msgstr "&Buang pilihan"
 #: subjectsdlg.cpp:70
 msgid "&Show"
 msgstr "&Paparkan"
-
-#: subjectsdlg.cpp:86
-msgid "From"
-msgstr "Daripada"
-
-#: subjectsdlg.cpp:87
-msgid "Subject"
-msgstr "Subjek"
-
-#: subjectsdlg.cpp:88
-msgid "Date"
-msgstr "Tarikh"
 
 #: subjectsdlg.cpp:89
 msgid "Size (Bytes)"
@@ -547,13 +591,12 @@ msgstr "Semakan semula kotak..."
 msgid "Fetching messages..."
 msgstr "Mengambil mesej..."
 
-#: subjectsdlg.cpp:322
+#: subjectsdlg.cpp:325
 msgid "Downloading subjects..."
 msgstr "Memuat turun subjek..."
 
-#: subjectsdlg.cpp:416
-#, c-format
-#, fuzzy
+#: subjectsdlg.cpp:419
+#, fuzzy, c-format
 msgid ""
 "_n: Do you really want to delete %n message?\n"
 "Do you really want to delete %n messages?"
@@ -561,11 +604,46 @@ msgstr ""
 "_n: Anda pasti ingin  menghapuskan mesej %n?\n"
 "Anda pasti ingin menghapuskan mesej %n?"
 
-#: subjectsdlg.cpp:418
+#: subjectsdlg.cpp:421
 msgid "Confirmation"
 msgstr "Pengesahan"
 
-#: subjectsdlg.cpp:424
+#: subjectsdlg.cpp:427
 msgid "Deleting mail; please wait...."
 msgstr "Menghapuskan mel; sila tunggu...."
 
+#~ msgid "No protocol specified"
+#~ msgstr "Tiada protokol dinyatakan"
+
+#~ msgid "No server specified"
+#~ msgstr "Tiada pelayan dinyatakan"
+
+#~ msgid "No username specified"
+#~ msgstr "Tiada nama pengguna dinyatakan"
+
+#~ msgid "No mailbox specified"
+#~ msgstr "Tiada peti mel diknyatakan"
+
+#~ msgid "Por&t:"
+#~ msgstr "Por&t:"
+
+#~ msgid "Se&rver:"
+#~ msgstr "&Pelayan:"
+
+#~ msgid "Identity"
+#~ msgstr "Identiti"
+
+#~ msgid "&Username:"
+#~ msgstr "&Nama penguna:"
+
+#~ msgid "&Mailbox:"
+#~ msgstr "&Peti mel:"
+
+#~ msgid "Aut&hentication:"
+#~ msgstr "&Pengesahan:"
+
+#~ msgid "Passwor&d:"
+#~ msgstr "&Kata laluan:"
+
+#~ msgid "Sa&ve password"
+#~ msgstr "&Simpan kata laluan"
