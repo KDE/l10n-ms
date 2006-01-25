@@ -43,6 +43,14 @@ msgstr " KB"
 msgid "%1 min."
 msgstr "%1 min."
 
+#: bgadvanced.cpp:298
+msgid ""
+"Unable to remove the program: the program is global and can only be removed by "
+"the system administrator."
+msgstr ""
+"Tidak dapat membuang program: program adalah global dan hanya boleh dibuang "
+"oleh pentadbir sistem."
+
 #: bgadvanced.cpp:300
 msgid "Cannot Remove Program"
 msgstr "Tidak dapat Buang Program"
@@ -95,13 +103,78 @@ msgstr "Arahan Baru"
 msgid "New Command <%1>"
 msgstr "Arahan Baru <%1>"
 
+#: bgadvanced.cpp:467
+msgid ""
+"You did not fill in the `Name' field.\n"
+"This is a required field."
+msgstr ""
+"Anda tidak mengisi medan `Nama'.\n"
+"Medan ini diperlukan."
+
+#: bgadvanced.cpp:475
+msgid ""
+"There is already a program with the name `%1'.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"Program dengan nama `%1' sudah wujud.\n"
+"Anda ingin menulisgantinya?"
+
 #: bgadvanced.cpp:476
 msgid "Overwrite"
 msgstr "Tindih"
 
+#: bgadvanced.cpp:482
+msgid ""
+"You did not fill in the `Executable' field.\n"
+"This is a required field."
+msgstr ""
+"Anda tidak mengisi medan `Boleh Laksana'.\n"
+"Medan ini diperlukan."
+
+#: bgadvanced.cpp:487
+msgid ""
+"You did not fill in the `Command' field.\n"
+"This is a required field."
+msgstr ""
+"Anda tidak mengisi medan `Arahan'.\n"
+"Medan ini diperlukan"
+
 #: bgdialog.cpp:131
 msgid "Open file dialog"
 msgstr "Dialog buka fail"
+
+#: bgdialog.cpp:410
+msgid ""
+"<h1>Background</h1> This module allows you to control the appearance of the "
+"virtual desktops. KDE offers a variety of options for customization, including "
+"the ability to specify different settings for each virtual desktop, or a common "
+"background for all of them."
+"<p> The appearance of the desktop results from the combination of its "
+"background colors and patterns, and optionally, wallpaper, which is based on "
+"the image from a graphic file."
+"<p> The background can be made up of a single color, or a pair of colors which "
+"can be blended in a variety of patterns. Wallpaper is also customizable, with "
+"options for tiling and stretching images. The wallpaper can be overlaid "
+"opaquely, or blended in different ways with the background colors and patterns."
+"<p> KDE allows you to have the wallpaper change automatically at specified "
+"intervals of time. You can also replace the background with a program that "
+"updates the desktop dynamically. For example, the \"kdeworld\" program shows a "
+"day/night map of the world which is updated periodically."
+msgstr ""
+"<h1>Latar Belakang</h1> Modul ini membolehkan anda mengawal rupa desktop maya. "
+"KDE menawarkan pelbagai opsyen untuk langganan, termasuk keupayaan untuk "
+"menyatakan seting berbeza bagi setiap desktop maya, atau latar belakang sepunya "
+"untuk semua seting."
+"<p> Rupa desktop terhasil daripada kombinasi warna dan corak latar belakangnya, "
+"dan secara opsyenal, 'wallpaper' yang berdasarkan imej dari fail grafik."
+"<p> Latar belakang boleh terdiri daripada satu warna, atau sepasang warna yang "
+"boleh diadun dalam pelbagai corak. 'wallpaper' boleh disuaikan, dengan opsyen "
+"imej penjubinan dan peregangan. Kertas Dinding juga dibentang menyerong, atau "
+"diadun dalam pelbagai cara dengan warna dan corak latar belakang."
+"<p> KDE membolehkan anda mengubah 'wallpaper' automatik pada jeda masa yang "
+"dinyatakan. Anda juga boleh menggantikan latar belakang dengan program yang "
+"mengemas kini desktop secara dinamik. Misalnya, program \"kdeworld\" memaparkan "
+"peta dunia siang/malam secara berkala."
 
 #: bgdialog.cpp:469
 #, c-format
@@ -160,6 +233,10 @@ msgstr "Dengan Skala"
 msgid "Centered Auto Fit"
 msgstr "Tengah Auto Muat"
 
+#: bgdialog.cpp:499
+msgid "Scale & Crop"
+msgstr "Skala & Pangkas"
+
 #: bgdialog.cpp:502
 msgid "No Blending"
 msgstr "Tidak Cincang"
@@ -172,6 +249,18 @@ msgstr "Rata"
 msgid "Pyramid"
 msgstr "Piramid"
 
+#: bgdialog.cpp:507
+msgid "Pipecross"
+msgstr "Silang Paip"
+
+#: bgdialog.cpp:508
+msgid "Elliptic"
+msgstr "Elips"
+
+#: bgdialog.cpp:509
+msgid "Intensity"
+msgstr "Keamatan"
+
 #: bgdialog.cpp:510
 msgid "Saturation"
 msgstr "Ketepuan"
@@ -180,188 +269,27 @@ msgstr "Ketepuan"
 msgid "Contrast"
 msgstr "Kontra"
 
-#: main.cpp:71
-msgid "kcmbackground"
-msgstr "kcmbackground"
-
-#: main.cpp:73
-msgid "(c) 1997-2002 Martin R. Jones"
-msgstr "(c) 1997-2002 Martin R. Jones"
-
-#. i18n: file bgadvanced_ui.ui line 44
-#: rc.cpp:6 rc.cpp:252 rc.cpp:267 rc.cpp:513
-#, no-c-format
-msgid "&Add..."
-msgstr "T&ambah..."
-
-#. i18n: file bgadvanced_ui.ui line 75
-#: rc.cpp:21 rc.cpp:282
-#, no-c-format
-msgid "&Modify..."
-msgstr "&Ubahsuai..."
-
-#. i18n: file bgadvanced_ui.ui line 104
-#: rc.cpp:30 rc.cpp:291
-#, no-c-format
-msgid "Program"
-msgstr "Program"
-
-#. i18n: file bgadvanced_ui.ui line 115
-#: rc.cpp:33 rc.cpp:294
-#, no-c-format
-msgid "Comment"
-msgstr "Komen"
-
-#. i18n: file bgadvanced_ui.ui line 126
-#: rc.cpp:36 rc.cpp:297
-#, no-c-format
-msgid "Refresh"
-msgstr "Segarkan"
-
-#. i18n: file bgadvanced_ui.ui line 305
-#: rc.cpp:96 rc.cpp:357
-#, no-c-format
-msgid "Auto"
-msgstr "Auto"
-
-#. i18n: file bgadvanced_ui.ui line 363
-#: rc.cpp:117 rc.cpp:378
-#, no-c-format
-msgid " k"
-msgstr " k"
-
-#. i18n: file bgdialog_ui.ui line 242
-#: rc.cpp:150 rc.cpp:411
-#, no-c-format
-msgid "Advanced Options"
-msgstr "Pilihan Lanjutan"
-
-#. i18n: file bgdialog_ui.ui line 361
-#: rc.cpp:165 rc.cpp:426
-#, no-c-format
-msgid "Posi&tion:"
-msgstr "&Posisi:"
-
-#. i18n: file bgdialog_ui.ui line 424
-#: rc.cpp:191 rc.cpp:452
-#, no-c-format
-msgid "Co&lors:"
-msgstr "Wa&rna:"
-
-#. i18n: file bgdialog_ui.ui line 454
-#: rc.cpp:197 rc.cpp:458
-#, no-c-format
-msgid "Balance:"
-msgstr "Imbangan:"
-
-#. i18n: file bgdialog_ui.ui line 573
-#: rc.cpp:224 rc.cpp:485
-#, no-c-format
-msgid "Background"
-msgstr "Latarbelakang"
-
-#. i18n: file bgdialog_ui.ui line 600
-#: rc.cpp:233 rc.cpp:494
-#, no-c-format
-msgid "&Picture:"
-msgstr "&Gambar:"
-
-#: bgadvanced.cpp:298
-msgid ""
-"Unable to remove the program: the program is global and can only be removed by "
-"the system administrator."
-msgstr ""
-"Tidak dapat membuang program: program adalah global dan hanya boleh dibuang "
-"oleh pentadbir sistem."
-
-#: bgadvanced.cpp:467
-msgid ""
-"You did not fill in the `Name' field.\n"
-"This is a required field."
-msgstr ""
-"Anda tidak mengisi medan `Nama'.\n"
-"Medan ini diperlukan."
-
-#: bgadvanced.cpp:475
-msgid ""
-"There is already a program with the name `%1'.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"Program dengan nama `%1' sudah wujud.\n"
-"Anda ingin menulisgantinya?"
-
-#: bgadvanced.cpp:482
-msgid ""
-"You did not fill in the `Executable' field.\n"
-"This is a required field."
-msgstr ""
-"Anda tidak mengisi medan `Boleh Laksana'.\n"
-"Medan ini diperlukan."
-
-#: bgadvanced.cpp:487
-msgid ""
-"You did not fill in the `Command' field.\n"
-"This is a required field."
-msgstr ""
-"Anda tidak mengisi medan `Arahan'.\n"
-"Medan ini diperlukan"
-
-#: bgdialog.cpp:291
-msgid ""
-"<h1>Background</h1> This module allows you to control the appearance of the "
-"virtual desktops. KDE offers a variety of options for customization, including "
-"the ability to specify different settings for each virtual desktop, or a common "
-"background for all of them."
-"<p> The appearance of the desktop results from the combination of its "
-"background colors and patterns, and optionally, wallpaper, which is based on "
-"the image from a graphic file."
-"<p> The background can be made up of a single color, or a pair of colors which "
-"can be blended in a variety of patterns. Wallpaper is also customizable, with "
-"options for tiling and stretching images. The wallpaper can be overlaid "
-"opaquely, or blended in different ways with the background colors and patterns."
-"<p> KDE allows you to have the wallpaper change automatically at specified "
-"intervals of time. You can also replace the background with a program that "
-"updates the desktop dynamically. For example, the \"kdeworld\" program shows a "
-"day/night map of the world which is updated periodically."
-msgstr ""
-"<h1>Latar Belakang</h1> Modul ini membolehkan anda mengawal rupa desktop maya. "
-"KDE menawarkan pelbagai opsyen untuk langganan, termasuk keupayaan untuk "
-"menyatakan seting berbeza bagi setiap desktop maya, atau latar belakang sepunya "
-"untuk semua seting."
-"<p> Rupa desktop terhasil daripada kombinasi warna dan corak latar belakangnya, "
-"dan secara opsyenal, 'wallpaper' yang berdasarkan imej dari fail grafik."
-"<p> Latar belakang boleh terdiri daripada satu warna, atau sepasang warna yang "
-"boleh diadun dalam pelbagai corak. 'wallpaper' boleh disuaikan, dengan opsyen "
-"imej penjubinan dan peregangan. Kertas Dinding juga dibentang menyerong, atau "
-"diadun dalam pelbagai cara dengan warna dan corak latar belakang."
-"<p> KDE membolehkan anda mengubah 'wallpaper' automatik pada jeda masa yang "
-"dinyatakan. Anda juga boleh menggantikan latar belakang dengan program yang "
-"mengemas kini desktop secara dinamik. Misalnya, program \"kdeworld\" memaparkan "
-"peta dunia siang/malam secara berkala."
-
-#: bgdialog.cpp:343
-msgid "Scale & Crop"
-msgstr "Skala & Pangkas"
-
-#: bgdialog.cpp:351
-msgid "Pipecross"
-msgstr "Silang Paip"
-
-#: bgdialog.cpp:352
-msgid "Elliptic"
-msgstr "Elips"
-
-#: bgdialog.cpp:353
-msgid "Intensity"
-msgstr "Keamatan"
-
-#: bgdialog.cpp:356
+#: bgdialog.cpp:512
 msgid "Hue Shift"
 msgstr "Anjakan Hiu"
 
-#: bgdialog.cpp:509
+#: bgdialog.cpp:665
 msgid "Select Wallpaper"
 msgstr "Pilih Kertas Dinding"
+
+#. i18n: file bgdialog_ui.ui line 300
+#: bgdialog.cpp:1258 rc.cpp:156 rc.cpp:417
+#, no-c-format
+msgid "Get New Wallpapers"
+msgstr "Dapatkan Kertas Dinding Baru"
+
+#: bgmonitor.cpp:165
+msgid ""
+"This picture of a monitor contains a preview of what the current settings will "
+"look like on your desktop."
+msgstr ""
+"Gambar monitor ini mengandungi prapapar bagaimana rupa seting semasa pada "
+"desktop anda."
 
 #: bgwallpaper.cpp:99
 msgid "Setup Slide Show"
@@ -372,17 +300,31 @@ msgid "Select Image"
 msgstr "Pilih Imej"
 
 #: main.cpp:71
+msgid "kcmbackground"
+msgstr "kcmbackground"
+
+#: main.cpp:71
 msgid "KDE Background Control Module"
 msgstr "Modul Kawalan Latar Belakang KDE"
 
+#: main.cpp:73
+msgid "(c) 1997-2002 Martin R. Jones"
+msgstr "(c) 1997-2002 Martin R. Jones"
+
 #. i18n: file bgadvanced_ui.ui line 27
-#: rc.cpp:3 rc.cpp:259
+#: rc.cpp:3 rc.cpp:264
 #, no-c-format
 msgid "Background Program"
 msgstr "Program Latar Belakang"
 
+#. i18n: file bgadvanced_ui.ui line 44
+#: rc.cpp:6 rc.cpp:252 rc.cpp:267 rc.cpp:513
+#, no-c-format
+msgid "&Add..."
+msgstr "T&ambah..."
+
 #. i18n: file bgadvanced_ui.ui line 50
-#: rc.cpp:9 rc.cpp:265
+#: rc.cpp:9 rc.cpp:270
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -406,7 +348,7 @@ msgstr ""
 "</qt>"
 
 #. i18n: file bgadvanced_ui.ui line 64
-#: rc.cpp:18 rc.cpp:274
+#: rc.cpp:18 rc.cpp:279
 #, no-c-format
 msgid ""
 "Click here to remove programs from this list. Please note that it does not "
@@ -417,8 +359,14 @@ msgstr ""
 "tidak membuang program dari sistem anda, ia hanya membuangkannya dari opsyen "
 "yang ada dalam senarai program lukis latar belakang."
 
+#. i18n: file bgadvanced_ui.ui line 75
+#: rc.cpp:21 rc.cpp:282
+#, no-c-format
+msgid "&Modify..."
+msgstr "&Ubahsuai..."
+
 #. i18n: file bgadvanced_ui.ui line 81
-#: rc.cpp:24 rc.cpp:280
+#: rc.cpp:24 rc.cpp:285
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -447,8 +395,26 @@ msgstr ""
 "\n"
 "</qt>"
 
+#. i18n: file bgadvanced_ui.ui line 104
+#: rc.cpp:30 rc.cpp:291
+#, no-c-format
+msgid "Program"
+msgstr "Program"
+
+#. i18n: file bgadvanced_ui.ui line 115
+#: rc.cpp:33 rc.cpp:294
+#, no-c-format
+msgid "Comment"
+msgstr "Komen"
+
+#. i18n: file bgadvanced_ui.ui line 126
+#: rc.cpp:36 rc.cpp:297
+#, no-c-format
+msgid "Refresh"
+msgstr "Segarkan"
+
 #. i18n: file bgadvanced_ui.ui line 156
-#: rc.cpp:39 rc.cpp:295
+#: rc.cpp:39 rc.cpp:300
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -495,13 +461,13 @@ msgstr ""
 "</qt>"
 
 #. i18n: file bgadvanced_ui.ui line 164
-#: rc.cpp:50 rc.cpp:306
+#: rc.cpp:50 rc.cpp:311
 #, no-c-format
 msgid "Use the following program for drawing the background:"
 msgstr "Guna program berikut untuk melukis latar belakang:"
 
 #. i18n: file bgadvanced_ui.ui line 167
-#: rc.cpp:53 rc.cpp:309
+#: rc.cpp:53 rc.cpp:314
 #, no-c-format
 msgid ""
 "Check here if you want to allow a program to draw your desktop background. "
@@ -516,25 +482,25 @@ msgstr ""
 "anda."
 
 #. i18n: file bgadvanced_ui.ui line 177
-#: rc.cpp:56 rc.cpp:312
+#: rc.cpp:56 rc.cpp:317
 #, no-c-format
 msgid "Background Icon Text"
 msgstr "Teks Ikon Latar Belakang"
 
 #. i18n: file bgadvanced_ui.ui line 199
-#: rc.cpp:60 rc.cpp:66 rc.cpp:316 rc.cpp:322
+#: rc.cpp:60 rc.cpp:66 rc.cpp:321 rc.cpp:327
 #, no-c-format
 msgid "Click here to change the color of the desktop font."
 msgstr "Klik di sini untuk mengubah warna fon desktop."
 
 #. i18n: file bgadvanced_ui.ui line 207
-#: rc.cpp:63 rc.cpp:319
+#: rc.cpp:63 rc.cpp:324
 #, no-c-format
 msgid "&Text color:"
 msgstr "Warna &teks:"
 
 #. i18n: file bgadvanced_ui.ui line 244
-#: rc.cpp:70 rc.cpp:326
+#: rc.cpp:70 rc.cpp:331
 #, no-c-format
 msgid ""
 "Click here to select the solid background color. Choose a different color from "
@@ -544,13 +510,13 @@ msgstr ""
 "warna teks latar belakang untuk memastikan kebolehbacaan."
 
 #. i18n: file bgadvanced_ui.ui line 252
-#: rc.cpp:73 rc.cpp:329
+#: rc.cpp:73 rc.cpp:334
 #, no-c-format
 msgid "&Use solid color behind text:"
 msgstr "&Guna warna padu di belakang teks:"
 
 #. i18n: file bgadvanced_ui.ui line 255
-#: rc.cpp:76 rc.cpp:332
+#: rc.cpp:76 rc.cpp:337
 #, no-c-format
 msgid ""
 "Check here if you want to use a solid background color. This is useful to "
@@ -564,13 +530,13 @@ msgstr ""
 "'wallpaper' tidak akan menjadikan teks desktop yang sama warna sukar dibaca."
 
 #. i18n: file bgadvanced_ui.ui line 263
-#: rc.cpp:79 rc.cpp:335
+#: rc.cpp:79 rc.cpp:340
 #, no-c-format
 msgid "&Enable shadow"
 msgstr "&Aktifkan bayang"
 
 #. i18n: file bgadvanced_ui.ui line 266
-#: rc.cpp:82 rc.cpp:338
+#: rc.cpp:82 rc.cpp:343
 #, no-c-format
 msgid ""
 "Check here to enable a shadow outline around the desktop font. This also "
@@ -582,13 +548,13 @@ msgstr ""
 "menggunakan warna yang sama."
 
 #. i18n: file bgadvanced_ui.ui line 274
-#: rc.cpp:85 rc.cpp:341
+#: rc.cpp:85 rc.cpp:346
 #, no-c-format
 msgid "&Lines for icon text:"
 msgstr "&Baris untuk teks ikon:"
 
 #. i18n: file bgadvanced_ui.ui line 280
-#: rc.cpp:88 rc.cpp:92 rc.cpp:344 rc.cpp:348
+#: rc.cpp:88 rc.cpp:92 rc.cpp:349 rc.cpp:353
 #, no-c-format
 msgid ""
 "Choose here the maximum number of text lines below an icon on the desktop. "
@@ -597,8 +563,14 @@ msgstr ""
 "Pilih bilangan maksimum baris teks di sini ,di bawah ikon pada desktop. Teks "
 "panjang akan dipangkas di hujung baris akhir."
 
+#. i18n: file bgadvanced_ui.ui line 305
+#: rc.cpp:96 rc.cpp:357
+#, no-c-format
+msgid "Auto"
+msgstr "Auto"
+
 #. i18n: file bgadvanced_ui.ui line 314
-#: rc.cpp:99 rc.cpp:105 rc.cpp:355 rc.cpp:361
+#: rc.cpp:99 rc.cpp:105 rc.cpp:360 rc.cpp:366
 #, no-c-format
 msgid ""
 "Choose here the maximum width of text lines (in pixel) below an icon on the "
@@ -609,25 +581,25 @@ msgstr ""
 "digunakan."
 
 #. i18n: file bgadvanced_ui.ui line 322
-#: rc.cpp:102 rc.cpp:358
+#: rc.cpp:102 rc.cpp:363
 #, no-c-format
 msgid "&Width for icon text:"
 msgstr "&Lebar untuk teks ikon:"
 
 #. i18n: file bgadvanced_ui.ui line 338
-#: rc.cpp:108 rc.cpp:364
+#: rc.cpp:108 rc.cpp:369
 #, no-c-format
 msgid "Memory Usage"
 msgstr "Penggunaan Ingatan"
 
 #. i18n: file bgadvanced_ui.ui line 352
-#: rc.cpp:111 rc.cpp:367
+#: rc.cpp:111 rc.cpp:372
 #, no-c-format
 msgid "Size of background cache:"
 msgstr "Saiz cache latar belakang:"
 
 #. i18n: file bgadvanced_ui.ui line 355
-#: rc.cpp:114 rc.cpp:120 rc.cpp:370 rc.cpp:376
+#: rc.cpp:114 rc.cpp:120 rc.cpp:375 rc.cpp:381
 #, no-c-format
 msgid ""
 "In this box you can enter how much memory KDE should use for caching the "
@@ -640,14 +612,20 @@ msgstr ""
 "lain, cache boleh buat pertukaran desktop lebih lancar dengan penggunaan "
 "ingatan lebih tinggi."
 
-#. i18n: file bgdialog_ui.ui line 35
-#: rc.cpp:123 rc.cpp:379
+#. i18n: file bgadvanced_ui.ui line 363
+#: rc.cpp:117 rc.cpp:378
+#, no-c-format
+msgid " k"
+msgstr " k"
+
+#. i18n: file bgdialog_ui.ui line 36
+#: rc.cpp:123 rc.cpp:384
 #, no-c-format
 msgid "Setting for &desktop:"
 msgstr "Seting untuk &desktop:"
 
-#. i18n: file bgdialog_ui.ui line 41
-#: rc.cpp:126 rc.cpp:132 rc.cpp:382 rc.cpp:388
+#. i18n: file bgdialog_ui.ui line 42
+#: rc.cpp:126 rc.cpp:132 rc.cpp:387 rc.cpp:393
 #, no-c-format
 msgid ""
 "Choose the desktop you wish to configure the background for from this list. If "
@@ -658,30 +636,51 @@ msgstr ""
 "anda ingin seting latar belakang yang sama dilaksanakan kepada semua desktop, "
 "pilih opsyen \"Semua Desktop\"."
 
-#. i18n: file bgdialog_ui.ui line 47
-#: rc.cpp:129 rc.cpp:385
+#. i18n: file bgdialog_ui.ui line 48
+#: rc.cpp:129 rc.cpp:390
 #, no-c-format
 msgid "All Desktops"
 msgstr "Semua Desktop"
 
-#. i18n: file bgdialog_ui.ui line 112
-#: rc.cpp:135 rc.cpp:391
+#. i18n: file bgdialog_ui.ui line 72
+#: rc.cpp:135 rc.cpp:396
 #, no-c-format
-msgid "Monitor"
-msgstr "Monitor"
+msgid "Across All Screens"
+msgstr ""
 
-#. i18n: file bgdialog_ui.ui line 118
-#: rc.cpp:138 rc.cpp:394
+#. i18n: file bgdialog_ui.ui line 77
+#: rc.cpp:138 rc.cpp:399
+#, no-c-format
+msgid "On Each Screen"
+msgstr ""
+
+#. i18n: file bgdialog_ui.ui line 95
+#: rc.cpp:141 rc.cpp:402
 #, no-c-format
 msgid ""
-"This picture of a monitor contains a preview of what the current settings will "
-"look like on your desktop."
+"Choose the screen you wish to configure the background for from this list."
 msgstr ""
-"Gambar monitor ini mengandungi prapapar bagaimana rupa seting semasa pada "
-"desktop anda."
 
-#. i18n: file bgdialog_ui.ui line 166
-#: rc.cpp:144 rc.cpp:400
+#. i18n: file bgdialog_ui.ui line 184
+#: rc.cpp:144 rc.cpp:405
+#, no-c-format
+msgid "Identify Screens"
+msgstr ""
+
+#. i18n: file bgdialog_ui.ui line 187
+#: rc.cpp:147 rc.cpp:408
+#, no-c-format
+msgid "Click this button to show the identifying number for each screen."
+msgstr ""
+
+#. i18n: file bgdialog_ui.ui line 242
+#: rc.cpp:150 rc.cpp:411
+#, no-c-format
+msgid "Advanced Options"
+msgstr "Pilihan Lanjutan"
+
+#. i18n: file bgdialog_ui.ui line 245
+#: rc.cpp:153 rc.cpp:414
 #, no-c-format
 msgid ""
 "Click this button to set the icon text colors and shadow, set up a program to "
@@ -690,14 +689,8 @@ msgstr ""
 "Klik butang ini untuk mengeset warna teks ikon dan bayang, setkan program untuk "
 "menjalankan gambar latar belakang atau kawal saiz latar belakang cache."
 
-#. i18n: file bgdialog_ui.ui line 221
-#: rc.cpp:147 rc.cpp:403
-#, no-c-format
-msgid "Get New Wallpapers"
-msgstr "Dapatkan Kertas Dinding Baru"
-
-#. i18n: file bgdialog_ui.ui line 224
-#: rc.cpp:150 rc.cpp:406
+#. i18n: file bgdialog_ui.ui line 303
+#: rc.cpp:159 rc.cpp:420
 #, no-c-format
 msgid ""
 "Click this button to give you a list of new wallpapers to download from the "
@@ -706,8 +699,14 @@ msgstr ""
 "Klik di sini untuk mendapatkan senarai 'wallpaper' untuk dimuat turun dari "
 "Internet."
 
-#. i18n: file bgdialog_ui.ui line 297
-#: rc.cpp:159 rc.cpp:204 rc.cpp:415 rc.cpp:460
+#. i18n: file bgdialog_ui.ui line 361
+#: rc.cpp:165 rc.cpp:426
+#, no-c-format
+msgid "Posi&tion:"
+msgstr "&Posisi:"
+
+#. i18n: file bgdialog_ui.ui line 376
+#: rc.cpp:168 rc.cpp:212 rc.cpp:429 rc.cpp:473
 #, no-c-format
 msgid ""
 "<qt>You can choose here how a background picture is shown on the desktop:\n"
@@ -752,8 +751,8 @@ msgstr ""
 "desktop.</li>\n"
 "</ul></qt>"
 
-#. i18n: file bgdialog_ui.ui line 305
-#: rc.cpp:171 rc.cpp:427
+#. i18n: file bgdialog_ui.ui line 384
+#: rc.cpp:180 rc.cpp:441
 #, no-c-format
 msgid ""
 "If you have selected to use a background picture you can choose various methods "
@@ -764,14 +763,14 @@ msgstr ""
 "pelbagai kaedah pengadunan warna latar belakang dengan gambar. Opsyen piawai "
 "\"Tiada Adunan\" bermakna gambar hanya mengaburi warna latar belakang di bawah."
 
-#. i18n: file bgdialog_ui.ui line 324
-#: rc.cpp:175 rc.cpp:431
+#. i18n: file bgdialog_ui.ui line 403
+#: rc.cpp:184 rc.cpp:445
 #, no-c-format
 msgid "Click to choose the primary background color."
 msgstr "Klik untuk pilih warna latar belakang primer."
 
-#. i18n: file bgdialog_ui.ui line 335
-#: rc.cpp:179 rc.cpp:435
+#. i18n: file bgdialog_ui.ui line 414
+#: rc.cpp:188 rc.cpp:449
 #, no-c-format
 msgid ""
 "Click to choose the secondary background color. If no secondary color is "
@@ -780,14 +779,26 @@ msgstr ""
 "Klik untuk memilih warna latar belakang sekunder. Jika tiada warna sekunder "
 "diperlukan oleh corak yang dipilih, butang ini dinyahaktifkan."
 
-#. i18n: file bgdialog_ui.ui line 356
-#: rc.cpp:185 rc.cpp:441
+#. i18n: file bgdialog_ui.ui line 424
+#: rc.cpp:191 rc.cpp:452
+#, no-c-format
+msgid "Co&lors:"
+msgstr "Wa&rna:"
+
+#. i18n: file bgdialog_ui.ui line 435
+#: rc.cpp:194 rc.cpp:455
 #, no-c-format
 msgid "&Blending:"
 msgstr "&Pengadunan:"
 
-#. i18n: file bgdialog_ui.ui line 381
-#: rc.cpp:191 rc.cpp:194 rc.cpp:447 rc.cpp:450
+#. i18n: file bgdialog_ui.ui line 454
+#: rc.cpp:197 rc.cpp:458
+#, no-c-format
+msgid "Balance:"
+msgstr "Imbangan:"
+
+#. i18n: file bgdialog_ui.ui line 460
+#: rc.cpp:200 rc.cpp:203 rc.cpp:461 rc.cpp:464
 #, no-c-format
 msgid ""
 "You can use this slider to control the degree of blending. You can experiment "
@@ -796,14 +807,14 @@ msgstr ""
 "Anda boleh guna peleret ini untuk mengawal darjah pengadunan. Anda boleh uji "
 "dengan mengalihkan peleret dan perhatikan kesannya dalam imej prapapar."
 
-#. i18n: file bgdialog_ui.ui line 417
-#: rc.cpp:197 rc.cpp:453
+#. i18n: file bgdialog_ui.ui line 496
+#: rc.cpp:206 rc.cpp:467
 #, no-c-format
 msgid "Reverse roles"
 msgstr "Terbalikkan peranan"
 
-#. i18n: file bgdialog_ui.ui line 420
-#: rc.cpp:200 rc.cpp:456
+#. i18n: file bgdialog_ui.ui line 499
+#: rc.cpp:209 rc.cpp:470
 #, no-c-format
 msgid ""
 "For some types of blending, you can reverse the role of the background and the "
@@ -812,32 +823,38 @@ msgstr ""
 "Bagi sesetengah jenis pengadunan, anda boleh songsangkan peranan latar belakang "
 "dan gambar dengan menandakan opsyen ini."
 
-#. i18n: file bgdialog_ui.ui line 508
-#: rc.cpp:219 rc.cpp:475
+#. i18n: file bgdialog_ui.ui line 573
+#: rc.cpp:224 rc.cpp:485
+#, no-c-format
+msgid "Background"
+msgstr "Latarbelakang"
+
+#. i18n: file bgdialog_ui.ui line 584
+#: rc.cpp:227 rc.cpp:488
 #, no-c-format
 msgid "&No picture"
 msgstr "&Tiada gambar"
 
-#. i18n: file bgdialog_ui.ui line 511
-#: rc.cpp:222 rc.cpp:478
-#, no-c-format
-msgid "No picture, color only"
-msgstr "Tiada gambar, warna sahaja"
-
-#. i18n: file bgdialog_ui.ui line 519
-#: rc.cpp:225 rc.cpp:481
+#. i18n: file bgdialog_ui.ui line 592
+#: rc.cpp:230 rc.cpp:491
 #, no-c-format
 msgid "&Slide show:"
 msgstr "Tayangan &slaid:"
 
-#. i18n: file bgdialog_ui.ui line 555
-#: rc.cpp:231 rc.cpp:487
+#. i18n: file bgdialog_ui.ui line 600
+#: rc.cpp:233 rc.cpp:494
+#, no-c-format
+msgid "&Picture:"
+msgstr "&Gambar:"
+
+#. i18n: file bgdialog_ui.ui line 628
+#: rc.cpp:236 rc.cpp:497
 #, no-c-format
 msgid "Set&up..."
 msgstr "&Setup..."
 
-#. i18n: file bgdialog_ui.ui line 558
-#: rc.cpp:234 rc.cpp:490
+#. i18n: file bgdialog_ui.ui line 631
+#: rc.cpp:239 rc.cpp:500
 #, no-c-format
 msgid ""
 "Click this button to select a set of images to be used as background pictures. "
@@ -851,31 +868,37 @@ msgstr ""
 "dipaparkan secara rawak atau menurut tertib yang anda nyatakan."
 
 #. i18n: file bgwallpaper_ui.ui line 27
-#: rc.cpp:238 rc.cpp:494
+#: rc.cpp:243 rc.cpp:504
 #, no-c-format
 msgid "Show the following pictures:"
 msgstr "Papar gambar berikut:"
 
 #. i18n: file bgwallpaper_ui.ui line 35
-#: rc.cpp:241 rc.cpp:497
+#: rc.cpp:246 rc.cpp:507
 #, no-c-format
 msgid "&Show pictures in random order"
 msgstr "&Papar gambar dalam tertib rawak"
 
 #. i18n: file bgwallpaper_ui.ui line 51
-#: rc.cpp:244 rc.cpp:500
+#: rc.cpp:249 rc.cpp:510
 #, no-c-format
 msgid "Change &picture after:"
 msgstr "Ubah &Gambar selepas:"
 
 #. i18n: file bgwallpaper_ui.ui line 146
-#: rc.cpp:253 rc.cpp:509
+#: rc.cpp:258 rc.cpp:519
 #, no-c-format
 msgid "Move &Down"
 msgstr "Alih Ke &Bawah"
 
 #. i18n: file bgwallpaper_ui.ui line 154
-#: rc.cpp:256 rc.cpp:512
+#: rc.cpp:261 rc.cpp:522
 #, no-c-format
 msgid "Move &Up"
 msgstr "Alih Ke &Atas"
+
+#~ msgid "Monitor"
+#~ msgstr "Monitor"
+
+#~ msgid "No picture, color only"
+#~ msgstr "Tiada gambar, warna sahaja"
