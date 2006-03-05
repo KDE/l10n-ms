@@ -11,13 +11,80 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.0\n"
 
+#: command.cc:125
+msgid ""
+"The server rejected both EHLO and HELO commands as unknown or unimplemented.\n"
+"Please contact the server's system administrator."
+msgstr ""
+"Pelayan menolak arahan EHLO dan HELO sebagai tak diketahui atau tak "
+"dilaksanakan.\n"
+"Hubungi pentadbir sistem pelayan."
+
+#: command.cc:139
+msgid ""
+"Unexpected server response to %1 command.\n"
+"%2"
+msgstr ""
+"Respons pelayan yang tak dijangka terhadap arahan %1.\n"
+"%2"
+
+#: command.cc:159
+msgid ""
+"Your SMTP server does not support TLS. Disable TLS, if you want to connect "
+"without encryption."
+msgstr ""
+"Pelayan SMTP anda tidak menyokong TLS. Nyahaktifkan TLS, jika anda ingin "
+"sambung tanpa penyulitan."
+
+#: command.cc:173
+msgid ""
+"Your SMTP server claims to support TLS, but negotiation was unsuccessful.\n"
+"You can disable TLS in KDE using the crypto settings module."
+msgstr ""
+"Pelayan SMTP anda mendakwa menyokong TLS, tetapi rundingan tidak berjaya.\n"
+"Anda boleh nyahaktifkan TLS dalam KDE menggunakan modul seting kripto."
+
 #: command.cc:178
 msgid "Connection Failed"
 msgstr "Sambungan Gagal"
 
+#: command.cc:229
+msgid "Authentication support is not compiled into kio_smtp."
+msgstr "Sokongan pengesahan tidak dikompil ke dalam kio_smtp."
+
 #: command.cc:258
 msgid "No authentication details supplied."
 msgstr "Tiada maklumat pengesahan diberikan."
+
+#: command.cc:361
+msgid ""
+"Your SMTP server does not support %1.\n"
+"Choose a different authentication method.\n"
+"%2"
+msgstr ""
+"Pelayan SMTP anda tidak menyokong %1\n"
+"Pilih kaedah pengesahan berbeza.\n"
+"%2"
+
+#: command.cc:365
+#, c-format
+msgid ""
+"Your SMTP server does not support authentication.\n"
+"  %2"
+msgstr ""
+"Pelayan SMTP anda tidak menyokong pengesahan.\n"
+"%2"
+
+#: command.cc:369
+#, c-format
+msgid ""
+"Authentication failed.\n"
+"Most likely the password is wrong.\n"
+"%1"
+msgstr ""
+"Pengesahan gagal.\n"
+"Besar kemungkinan kata laluan silap.\n"
+"%1"
 
 #: command.cc:507
 msgid "Could not read data from application."
@@ -61,81 +128,6 @@ msgstr "Alamat penghantar hilang."
 msgid "SMTPProtocol::smtp_open failed (%1)"
 msgstr "SMTPProtocol::smtp_open gagal (%1)"
 
-#: smtp.cc:345
-msgid "Invalid SMTP response (%1) received."
-msgstr "Jawapan SMTP tidak sah (%1) diterima."
-
-#: smtp.cc:604
-msgid "Username and password for your SMTP account:"
-msgstr "Namapengguna dan katalaluan untuk akaun SMTP anda:"
-
-#: command.cc:125
-msgid ""
-"The server rejected both EHLO and HELO commands as unknown or unimplemented.\n"
-"Please contact the server's system administrator."
-msgstr ""
-"Pelayan menolak arahan EHLO dan HELO sebagai tak diketahui atau tak "
-"dilaksanakan.\n"
-"Hubungi pentadbir sistem pelayan."
-
-#: command.cc:139
-msgid ""
-"Unexpected server response to %1 command.\n"
-"%2"
-msgstr ""
-"Respons pelayan yang tak dijangka terhadap arahan %1.\n"
-"%2"
-
-#: command.cc:159
-msgid ""
-"Your SMTP server does not support TLS. Disable TLS, if you want to connect "
-"without encryption."
-msgstr ""
-"Pelayan SMTP anda tidak menyokong TLS. Nyahaktifkan TLS, jika anda ingin "
-"sambung tanpa penyulitan."
-
-#: command.cc:173
-msgid ""
-"Your SMTP server claims to support TLS, but negotiation was unsuccessful.\n"
-"You can disable TLS in KDE using the crypto settings module."
-msgstr ""
-"Pelayan SMTP anda mendakwa menyokong TLS, tetapi rundingan tidak berjaya.\n"
-"Anda boleh nyahaktifkan TLS dalam KDE menggunakan modul seting kripto."
-
-#: command.cc:229
-msgid "Authentication support is not compiled into kio_smtp."
-msgstr "Sokongan pengesahan tidak dikompil ke dalam kio_smtp."
-
-#: command.cc:361
-msgid ""
-"Your SMTP server does not support %1.\n"
-"Choose a different authentication method.\n"
-"%2"
-msgstr ""
-"Pelayan SMTP anda tidak menyokong %1\n"
-"Pilih kaedah pengesahan berbeza.\n"
-"%2"
-
-#: command.cc:365
-#, c-format
-msgid ""
-"Your SMTP server does not support authentication.\n"
-"  %2"
-msgstr ""
-"Pelayan SMTP anda tidak menyokong pengesahan.\n"
-"%2"
-
-#: command.cc:369
-#, c-format
-msgid ""
-"Authentication failed.\n"
-"Most likely the password is wrong.\n"
-"%1"
-msgstr ""
-"Pengesahan gagal.\n"
-"Besar kemungkinan kata laluan silap.\n"
-"%1"
-
 #: smtp.cc:266
 msgid ""
 "Your server does not support sending of 8-bit messages.\n"
@@ -143,6 +135,10 @@ msgid ""
 msgstr ""
 "Pelayan anda tidak menyokong penghantaran mesej 8 bit.\n"
 "Guna base64 atau pengekodan sebut-boleh cetak."
+
+#: smtp.cc:345
+msgid "Invalid SMTP response (%1) received."
+msgstr "Jawapan SMTP tidak sah (%1) diterima."
 
 #: smtp.cc:529
 #, c-format
@@ -152,6 +148,10 @@ msgid ""
 msgstr ""
 "Pelayan tidak terima sambungan.\n"
 "%1"
+
+#: smtp.cc:604
+msgid "Username and password for your SMTP account:"
+msgstr "Namapengguna dan katalaluan untuk akaun SMTP anda:"
 
 #: transactionstate.cc:53
 #, c-format
