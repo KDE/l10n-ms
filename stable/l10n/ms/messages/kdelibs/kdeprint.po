@@ -14,6 +14,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
 
+#: ext/kextprinterimpl.cpp:47
+msgid "Empty print command."
+msgstr "Arahan cetak kosong."
+
 #: ext/kmextmanager.cpp:41
 msgid "PS_printer"
 msgstr "Pencetak_PS"
@@ -54,8 +58,7 @@ msgstr "B5"
 msgid "Enabled"
 msgstr "Dihidupkan"
 
-#: kpgeneralpage.cpp:415 lpd/lpdtools.cpp:40
-#: management/kmconfiggeneral.cpp:52
+#: kpgeneralpage.cpp:415 lpd/lpdtools.cpp:40 management/kmconfiggeneral.cpp:52
 msgid "Disabled"
 msgstr "Dimatikan"
 
@@ -76,6 +79,10 @@ msgstr "Resolusi"
 msgid "Color depth"
 msgstr "Kedalaman-warna"
 
+#: lpd/lpdtools.cpp:301
+msgid "Additional GS options"
+msgstr "Opsyen GS tambahan "
+
 #: driver.cpp:377 kpgeneralpage.cpp:260 lpd/lpdtools.cpp:307
 #: management/kmconfiggeneral.cpp:44 management/kmpropgeneral.cpp:54
 #: management/kmwend.cpp:49
@@ -90,26 +97,97 @@ msgstr "Saiz-halaman"
 msgid "Pages per sheet"
 msgstr "Halaman setiap helaian"
 
+#: lpd/lpdtools.cpp:345
+msgid "Left/right margin (1/72 in)"
+msgstr "Jidar Kiri/kanan (1/72 in)"
+
+#: lpd/lpdtools.cpp:350
+msgid "Top/bottom margin (1/72 in)"
+msgstr "Jidar Atas/bawah (1/72 in)"
+
 #: lpd/lpdtools.cpp:356
 msgid "Text options"
 msgstr "Pilihan teks"
+
+#: lpd/lpdtools.cpp:362
+msgid "Send EOF after job to eject page"
+msgstr "Hantar EOF selepas tugas untuk mengeluarkan halaman"
+
+#: lpd/lpdtools.cpp:370
+msgid "Fix stair-stepping text"
+msgstr "Betulkan teks melangkah tangga"
+
+#: lpd/lpdtools.cpp:382
+msgid "Fast text printing (non-PS printers only)"
+msgstr "Cetakan teks cepat (pencetak bukan-PS sahaja)"
+
+#: lpd/klpdprinterimpl.cpp:46 rlpr/krlprprinterimpl.cpp:53
+msgid ""
+"The <b>%1</b> executable could not be found in your path. Check your "
+"installation."
+msgstr ""
+" <b>%1</b> yang boleh laksana tidak ditemui dalam laluan anda. Semak "
+"pemasangan."
+
+#: lpd/kmlpduimanager.cpp:44
+msgid "Local printer (parallel, serial, USB)"
+msgstr "Pencetak setempat (selari, bersiri, USB)"
 
 #: lpd/kmlpduimanager.cpp:45 management/kmpropbackend.cpp:68
 #: rlpr/kmwrlpr.cpp:116
 msgid "Remote LPD queue"
 msgstr "Giliran LPD jauh"
 
+#: lpd/kmlpduimanager.cpp:46
+msgid "SMB shared printer (Windows)"
+msgstr "Pencetak kongsi SMB  (Windows)"
+
 #: lpd/kmlpduimanager.cpp:47
 msgid "Network printer (TCP)"
 msgstr "Pencetak rangkaian (TCP)"
+
+#: lpd/kmlpduimanager.cpp:48
+msgid "File printer (print to file)"
+msgstr "Pencetak fail (cetak ke fail)"
+
+#: lpd/kmlpdmanager.cpp:87
+msgid "Local printer queue (%1)"
+msgstr "Baris gilir pencetak setempat(%1)"
+
+#: lpd/kmlpdmanager.cpp:87
+msgid ""
+"_: Unknown type of local printer queue\n"
+"Unknown"
+msgstr "Tidak diketahui"
 
 #: lpd/kmlpdmanager.cpp:88
 msgid "<Not available>"
 msgstr "<Not available>"
 
+#: lpd/kmlpdmanager.cpp:89
+msgid ""
+"_: Unknown Driver\n"
+"Unknown"
+msgstr "Tidak diketahui"
+
 #: lpd/kmlpdmanager.cpp:95
 msgid "Remote LPD queue %1@%2"
 msgstr "Giliran LPD Jauh %1@%2"
+
+#: lpd/kmlpdmanager.cpp:158
+msgid "Unable to create spool directory %1 for printer %2."
+msgstr "Tidak dapat mencipta direktori spul %1 untuk pencetak %2."
+
+#: lpd/kmlpdmanager.cpp:165
+msgid "Unable to save information for printer <b>%1</b>."
+msgstr "Tidak dapat menyimpan maklumat untuk pencetak <b>%1</b>."
+
+#: lpd/kmlpdmanager.cpp:193
+msgid ""
+"Unable to set correct permissions on spool directory %1 for printer <b>%2</b>."
+msgstr ""
+"Tidak dapat mengeset keizinan yang betul pada direktori spul  %1 untuk pencetak "
+"<b>%2</b>."
 
 #: lpd/kmlpdmanager.cpp:237
 msgid "Permission denied: you must be root."
@@ -140,6 +218,18 @@ msgstr "Tiada pemacu ditemui (pencetak baru)"
 msgid "Printer type not recognized."
 msgstr "Jenis pencetak tidak dikenali"
 
+#: lpd/kmlpdmanager.cpp:452
+msgid ""
+"The driver device <b>%1</b> is not compiled in your GhostScript distribution. "
+"Check your installation or use another driver."
+msgstr ""
+"Peranti pemacu <b>%1</b> tidak dikompil dalam agihan GhostScript. Semak "
+"pemasangan anda atau guna pemacu lain."
+
+#: lpd/kmlpdmanager.cpp:560
+msgid "Unable to write driver associated files in spool directory."
+msgstr "Tidak dapat menulis fail pemacu bersekutu dalam direktori spul."
+
 #: lpr/apshandler.cpp:68
 msgid "APS Driver (%1)"
 msgstr "Pemacu APS (%1)"
@@ -147,6 +237,12 @@ msgstr "Pemacu APS (%1)"
 #: lpr/apshandler.cpp:112 lpr/lprhandler.cpp:74 lpr/lprngtoolhandler.cpp:72
 msgid "Network printer (%1)"
 msgstr "Pencetak rangkaian (%1)"
+
+#: lpr/apshandler.cpp:215 lpr/lprhandler.cpp:127 lpr/lprngtoolhandler.cpp:276
+#: lpr/matichandler.cpp:421
+#, c-format
+msgid "Unsupported backend: %1."
+msgstr "Hujung belakang tidak disokong: %1."
 
 #: lpr/apshandler.cpp:221
 #, c-format
@@ -157,6 +253,11 @@ msgstr "Gagal mencipta direktori %1."
 #, c-format
 msgid "Missing element: %1."
 msgstr "Elemen hilang %1."
+
+#: lpr/apshandler.cpp:258 lpr/apshandler.cpp:289 lpr/lprngtoolhandler.cpp:323
+#, c-format
+msgid "Invalid printer backend specification: %1"
+msgstr "Spesifikasi hujung belakang pencetak tidak sah: %1"
 
 #: lpr/apshandler.cpp:264 lpr/apshandler.cpp:295 lpr/apshandler.cpp:367
 #, c-format
@@ -172,6 +273,10 @@ msgstr "Pemacu APS tidak dikenalpasti."
 msgid "Unable to remove directory %1."
 msgstr "Gagal memadam direktori %1."
 
+#: lpr/lprhandler.cpp:59 lpr/lprhandler.cpp:97
+msgid "Unknown (unrecognized entry)"
+msgstr "Tidak diketahui (entri tidak dicam)"
+
 #: lpr/lprhandler.cpp:67 lpr/lprhandler.cpp:91
 msgid "Remote queue (%1) on %2"
 msgstr "Giliran jauh (%1) pada %2"
@@ -185,255 +290,6 @@ msgstr "Pencetak setempat pada %1"
 msgid "Unrecognized entry."
 msgstr "Masukan tidak dikenali."
 
-#: lpr/kmlprmanager.cpp:330
-msgid "Internal error: no handler defined."
-msgstr "Ralat dalaman: tiada pengendali ditentukan."
-
-#: lpr/kmlprmanager.cpp:458
-msgid "&Edit printcap Entry..."
-msgstr "&Edit."
-
-#: lpr/lpchelper.cpp:256 lpr/lpchelper.cpp:280 lpr/lpchelper.cpp:298
-msgid "Permission denied."
-msgstr "Keizinan dinafikan."
-
-#: lpr/lpchelper.cpp:259
-msgid "Printer %1 does not exist."
-msgstr "Pencetak %1 tidak wujud."
-
-#: lpr/lpchelper.cpp:263
-#, c-format
-msgid "Unknown error: %1"
-msgstr "Ralat tidak diketahui: %1"
-
-#: lpr/lprngtoolhandler.cpp:99 lpr/lprngtoolhandler.cpp:170
-msgid "unknown"
-msgstr "tidak diketahui"
-
-#: lpr/matichandler.cpp:82
-msgid "Network printer"
-msgstr "Pencteak rangkaian"
-
-#: lpr/matichandler.cpp:245
-msgid "Internal error."
-msgstr "Ralat dalaman."
-
-#: lpr/editentrydialog.cpp:40
-msgid "Aliases:"
-msgstr "Alias:"
-
-#: lpr/editentrydialog.cpp:46 management/kxmlcommanddlg.cpp:107
-msgid "String"
-msgstr "Rentetan"
-
-#: lpr/editentrydialog.cpp:47
-msgid "Number"
-msgstr "Nombor"
-
-#: lpr/editentrydialog.cpp:48 management/kxmlcommanddlg.cpp:111
-msgid "Boolean"
-msgstr "Boolean"
-
-#: kprintdialog.cpp:265 management/kmmainview.cpp:290
-#: management/kmwend.cpp:90 management/smbview.cpp:43
-msgid "Printer"
-msgstr "Pencetak"
-
-#: kprintdialog.cpp:278 management/kmspecialprinterdlg.cpp:56
-#: management/kxmlcommanddlg.cpp:114
-msgid "&Name:"
-msgstr "&Nama:"
-
-#: kprintdialog.cpp:282 management/kminfopage.cpp:48
-msgid "Type:"
-msgstr "Jenis:"
-
-#: kprintdialog.cpp:284 management/kmwname.cpp:40
-msgid "Location:"
-msgstr "Lokasi:"
-
-#: kprintdialog.cpp:286 management/kxmlcommanddlg.cpp:175
-msgid "Comment:"
-msgstr "Komen:"
-
-#: kprintdialog.cpp:305
-msgid "Add printer..."
-msgstr "Tambah pencetak..."
-
-#: cups/ippreportdlg.cpp:34 cups/ippreportdlg.cpp:41 kprintdialog.cpp:307
-msgid "&Print"
-msgstr "Cetak"
-
-#: kprintdialog.cpp:315
-msgid "O&utput file:"
-msgstr "Fail o&utput:"
-
-#: kprintdialog.cpp:965
-msgid "Print to File"
-msgstr "Cetak ke Fail"
-
-#: kmprinter.cpp:197 kprintdialog.cpp:983
-msgid "All Files"
-msgstr "Semua Fail"
-
-#: cups/kpschedulepage.cpp:126
-msgid "Advanced Options"
-msgstr "Pilihan Lanjutan"
-
-#: cups/kpschedulepage.cpp:142
-msgid "Weekend"
-msgstr "Hujung Minggu"
-
-#: cups/kpschedulepage.cpp:145
-msgid "Specified Time"
-msgstr "Jadual Ditentukan"
-
-#: cups/kpschedulepage.cpp:163
-msgid "&Billing information:"
-msgstr "Maklumat &Bil"
-
-#: cups/kpschedulepage.cpp:169
-msgid "&Job priority:"
-msgstr "Keutamaan Ker&ja:"
-
-#: cups/kmwbanners.cpp:57
-msgid "No Banner"
-msgstr "Tiada Pemidang"
-
-#: cups/kmwbanners.cpp:59
-msgid "Confidential"
-msgstr "Sulit"
-
-#: cups/kmwbanners.cpp:60
-msgid "Secret"
-msgstr "Rahsia"
-
-#: cups/kmwbanners.cpp:61
-msgid "Standard"
-msgstr "Piawaian"
-
-#: cups/kmwbanners.cpp:62
-msgid "Top Secret"
-msgstr "Rahsia Besar"
-
-#: cups/kmpropbanners.cpp:35 cups/kmwbanners.cpp:92
-msgid "&Starting banner:"
-msgstr "Memulakan pemidang"
-
-#: rlpr/kmrlprmanager.cpp:49 rlpr/kmwrlpr.cpp:87
-msgid "Empty queue name."
-msgstr "Nama giliran kosong."
-
-#: management/kmwend.cpp:82 rlpr/kmproprlpr.cpp:48
-msgid "Queue"
-msgstr "Giliran"
-
-#: ext/kextprinterimpl.cpp:47
-msgid "Empty print command."
-msgstr "Arahan cetak kosong."
-
-#: lpd/lpdtools.cpp:301
-msgid "Additional GS options"
-msgstr "Opsyen GS tambahan "
-
-#: lpd/lpdtools.cpp:345
-msgid "Left/right margin (1/72 in)"
-msgstr "Jidar Kiri/kanan (1/72 in)"
-
-#: lpd/lpdtools.cpp:350
-msgid "Top/bottom margin (1/72 in)"
-msgstr "Jidar Atas/bawah (1/72 in)"
-
-#: lpd/lpdtools.cpp:362
-msgid "Send EOF after job to eject page"
-msgstr "Hantar EOF selepas tugas untuk mengeluarkan halaman"
-
-#: lpd/lpdtools.cpp:370
-msgid "Fix stair-stepping text"
-msgstr "Betulkan teks melangkah tangga"
-
-#: lpd/lpdtools.cpp:382
-msgid "Fast text printing (non-PS printers only)"
-msgstr "Cetakan teks cepat (pencetak bukan-PS sahaja)"
-
-#: lpd/klpdprinterimpl.cpp:46 rlpr/krlprprinterimpl.cpp:53
-msgid ""
-"The <b>%1</b> executable could not be found in your path. Check your "
-"installation."
-msgstr ""
-" <b>%1</b> yang boleh laksana tidak ditemui dalam laluan anda. Semak "
-"pemasangan."
-
-#: lpd/kmlpduimanager.cpp:44
-msgid "Local printer (parallel, serial, USB)"
-msgstr "Pencetak setempat (selari, bersiri, USB)"
-
-#: lpd/kmlpduimanager.cpp:46
-msgid "SMB shared printer (Windows)"
-msgstr "Pencetak kongsi SMB  (Windows)"
-
-#: lpd/kmlpduimanager.cpp:48
-msgid "File printer (print to file)"
-msgstr "Pencetak fail (cetak ke fail)"
-
-#: lpd/kmlpdmanager.cpp:87
-msgid "Local printer queue (%1)"
-msgstr "Baris gilir pencetak setempat(%1)"
-
-#: lpd/kmlpdmanager.cpp:87
-msgid ""
-"_: Unknown type of local printer queue\n"
-"Unknown"
-msgstr "Tidak diketahui"
-
-#: lpd/kmlpdmanager.cpp:89
-msgid ""
-"_: Unknown Driver\n"
-"Unknown"
-msgstr "Tidak diketahui"
-
-#: lpd/kmlpdmanager.cpp:158
-msgid "Unable to create spool directory %1 for printer %2."
-msgstr "Tidak dapat mencipta direktori spul %1 untuk pencetak %2."
-
-#: lpd/kmlpdmanager.cpp:165
-msgid "Unable to save information for printer <b>%1</b>."
-msgstr "Tidak dapat menyimpan maklumat untuk pencetak <b>%1</b>."
-
-#: lpd/kmlpdmanager.cpp:193
-msgid ""
-"Unable to set correct permissions on spool directory %1 for printer <b>%2</b>."
-msgstr ""
-"Tidak dapat mengeset keizinan yang betul pada direktori spul  %1 untuk pencetak "
-"<b>%2</b>."
-
-#: lpd/kmlpdmanager.cpp:452
-msgid ""
-"The driver device <b>%1</b> is not compiled in your GhostScript distribution. "
-"Check your installation or use another driver."
-msgstr ""
-"Peranti pemacu <b>%1</b> tidak dikompil dalam agihan GhostScript. Semak "
-"pemasangan anda atau guna pemacu lain."
-
-#: lpd/kmlpdmanager.cpp:560
-msgid "Unable to write driver associated files in spool directory."
-msgstr "Tidak dapat menulis fail pemacu bersekutu dalam direktori spul."
-
-#: lpr/apshandler.cpp:215 lpr/lprhandler.cpp:127 lpr/lprngtoolhandler.cpp:276
-#: lpr/matichandler.cpp:421
-#, c-format
-msgid "Unsupported backend: %1."
-msgstr "Hujung belakang tidak disokong: %1."
-
-#: lpr/apshandler.cpp:258 lpr/apshandler.cpp:289 lpr/lprngtoolhandler.cpp:323
-#, c-format
-msgid "Invalid printer backend specification: %1"
-msgstr "Spesifikasi hujung belakang pencetak tidak sah: %1"
-
-#: lpr/lprhandler.cpp:59 lpr/lprhandler.cpp:97
-msgid "Unknown (unrecognized entry)"
-msgstr "Tidak diketahui (entri tidak dicam)"
-
 #: lpr/kmlprmanager.cpp:289
 msgid "The printcap file is a remote file (NIS). It cannot be written."
 msgstr "Fail printcap adalah fail jauh (NIS). Ia tidak boleh ditulis."
@@ -445,6 +301,10 @@ msgid ""
 msgstr ""
 "Tidak dapat menyimpan fail printcap. Semak bahawa anda ada keizinan menulis "
 "untuk fail berkenaan"
+
+#: lpr/kmlprmanager.cpp:330
+msgid "Internal error: no handler defined."
+msgstr "Ralat dalaman: tiada pengendali ditentukan."
 
 #: lpr/kmlprmanager.cpp:344
 msgid "Couldn't determine spool directory. See options dialog."
@@ -472,6 +332,10 @@ msgid ""
 msgstr ""
 "Tidak dapat mengeluarkan direktori spul %1. Pastikan anda ada keizinan menulis "
 "untuk direktori berkenaan."
+
+#: lpr/kmlprmanager.cpp:458
+msgid "&Edit printcap Entry..."
+msgstr "&Edit."
 
 #: lpr/kmlprmanager.cpp:473
 msgid ""
@@ -505,6 +369,19 @@ msgstr "Seting Penspulan"
 msgid "The executable %1 couldn't be found in your PATH."
 msgstr " %1 yang boleh laksana tidak ditemui dalam PATH anda."
 
+#: lpr/lpchelper.cpp:256 lpr/lpchelper.cpp:280 lpr/lpchelper.cpp:298
+msgid "Permission denied."
+msgstr "Keizinan dinafikan."
+
+#: lpr/lpchelper.cpp:259
+msgid "Printer %1 does not exist."
+msgstr "Pencetak %1 tidak wujud."
+
+#: lpr/lpchelper.cpp:263
+#, c-format
+msgid "Unknown error: %1"
+msgstr "Ralat tidak diketahui: %1"
+
 #: lpr/lpchelper.cpp:282
 #, c-format
 msgid "Execution of lprm failed: %1"
@@ -513,6 +390,10 @@ msgstr "Pelaksanaan Iprm gagal:%1"
 #: lpr/lprngtoolhandler.cpp:99
 msgid "IFHP Driver (%1)"
 msgstr "Pemacu IFHP (%1)"
+
+#: lpr/lprngtoolhandler.cpp:99 lpr/lprngtoolhandler.cpp:170
+msgid "unknown"
+msgstr "tidak diketahui"
 
 #: lpr/lprngtoolhandler.cpp:162
 msgid "No driver defined for that printer. It might be a raw printer."
@@ -523,7 +404,15 @@ msgstr ""
 msgid "LPRngTool Common Driver (%1)"
 msgstr "Pemacu biasa LPRngTool (%1)"
 
-#: cups/kmcupsmanager.cpp:560 lpr/matichandler.cpp:254
+#: lpr/matichandler.cpp:82
+msgid "Network printer"
+msgstr "Pencteak rangkaian"
+
+#: lpr/matichandler.cpp:245
+msgid "Internal error."
+msgstr "Ralat dalaman."
+
+#: cups/kmcupsmanager.cpp:580 lpr/matichandler.cpp:254
 #: lpr/matichandler.cpp:358
 msgid ""
 "Unable to find the executable foomatic-datafile in your PATH. Check that "
@@ -532,7 +421,7 @@ msgstr ""
 "Tidak dapat mencari fail data foomatic yang boleh laksana dalam PATH anda.Semak "
 " bahawa Foomatic telah dipasang dengan betul."
 
-#: cups/kmcupsmanager.cpp:592 lpr/matichandler.cpp:286
+#: cups/kmcupsmanager.cpp:612 lpr/matichandler.cpp:286
 #: lpr/matichandler.cpp:405
 msgid ""
 "Unable to create the Foomatic driver [%1,%2]. Either that driver does not "
@@ -560,6 +449,22 @@ msgstr ""
 #, c-format
 msgid "Unable to remove driver file %1."
 msgstr "Tidak dapat mengeluarkan fail pemacu %1."
+
+#: lpr/editentrydialog.cpp:40
+msgid "Aliases:"
+msgstr "Alias:"
+
+#: lpr/editentrydialog.cpp:46 management/kxmlcommanddlg.cpp:107
+msgid "String"
+msgstr "Rentetan"
+
+#: lpr/editentrydialog.cpp:47
+msgid "Number"
+msgstr "Nombor"
+
+#: lpr/editentrydialog.cpp:48 management/kxmlcommanddlg.cpp:111
+msgid "Boolean"
+msgstr "Boolean"
 
 #: lpr/editentrydialog.cpp:72
 #, c-format
@@ -893,11 +798,33 @@ msgstr ""
 "\"Piawaikan kepada pencetak terakhir digunakan di dalam aplikasi\"</em> "
 "dinyahaktif) </qt>"
 
+#: kprintdialog.cpp:265 management/kmmainview.cpp:290 management/kmwend.cpp:90
+#: management/smbview.cpp:43
+msgid "Printer"
+msgstr "Pencetak"
+
+#: kprintdialog.cpp:278 management/kmspecialprinterdlg.cpp:56
+#: management/kxmlcommanddlg.cpp:114
+msgid "&Name:"
+msgstr "&Nama:"
+
 #: kprintdialog.cpp:280 management/kminfopage.cpp:50
 msgid ""
 "_: Status\n"
 "State:"
 msgstr "Keadaan:"
+
+#: kprintdialog.cpp:282 management/kminfopage.cpp:48
+msgid "Type:"
+msgstr "Jenis:"
+
+#: kprintdialog.cpp:284 management/kmwname.cpp:40
+msgid "Location:"
+msgstr "Lokasi:"
+
+#: kprintdialog.cpp:286 management/kxmlcommanddlg.cpp:175
+msgid "Comment:"
+msgstr "Komen:"
 
 #: kprintdialog.cpp:289
 msgid "P&roperties"
@@ -915,9 +842,21 @@ msgstr "Set sebagai &Piawai"
 msgid "Toggle selective view on printer list"
 msgstr "Toggelkan paparan pilihan pada senarai pencetak"
 
+#: kprintdialog.cpp:305
+msgid "Add printer..."
+msgstr "Tambah pencetak..."
+
+#: cups/ippreportdlg.cpp:34 cups/ippreportdlg.cpp:41 kprintdialog.cpp:307
+msgid "&Print"
+msgstr "Cetak"
+
 #: kprintdialog.cpp:313
 msgid "Previe&w"
 msgstr "&Prapapar"
+
+#: kprintdialog.cpp:315
+msgid "O&utput file:"
+msgstr "Fail o&utput:"
 
 #: kprintdialog.cpp:321
 msgid "Print co&mmand:"
@@ -962,6 +901,14 @@ msgstr "&Opsyen >>"
 #: kprintdialog.cpp:929
 msgid "Initializing printing system..."
 msgstr "Memulakan sistem cetakan..."
+
+#: kprintdialog.cpp:965
+msgid "Print to File"
+msgstr "Cetak ke Fail"
+
+#: kmprinter.cpp:197 kprintdialog.cpp:983
+msgid "All Files"
+msgstr "Semua Fail"
 
 #: cups/kpschedulepage.cpp:40
 msgid ""
@@ -1115,6 +1062,10 @@ msgstr ""
 "<pre>    -o kerja-keutamaan=...   # contohnya: \"10\" atau \"66\" atau \"99\"  "
 "</pre> </p>  </qt>"
 
+#: cups/kpschedulepage.cpp:126
+msgid "Advanced Options"
+msgstr "Pilihan Lanjutan"
+
 #: cups/kpschedulepage.cpp:137
 msgid "Immediately"
 msgstr "Serta-merta"
@@ -1135,6 +1086,10 @@ msgstr "Petang (6 pm - 6 am)"
 msgid "Night (6 pm - 6 am)"
 msgstr "Malam (6 pm - 6 am)"
 
+#: cups/kpschedulepage.cpp:142
+msgid "Weekend"
+msgstr "Hujung Minggu"
+
 #: cups/kpschedulepage.cpp:143
 msgid "Second Shift (4 pm - 12 am)"
 msgstr "Syif kedua (4 pm - 12 am)"
@@ -1143,21 +1098,53 @@ msgstr "Syif kedua (4 pm - 12 am)"
 msgid "Third Shift (12 am - 8 am)"
 msgstr "Syif ketiga (12 am - 8 am)"
 
+#: cups/kpschedulepage.cpp:145
+msgid "Specified Time"
+msgstr "Jadual Ditentukan"
+
 #: cups/kpschedulepage.cpp:160
 msgid "&Scheduled printing:"
 msgstr "Cetakan &Berjadual:"
+
+#: cups/kpschedulepage.cpp:163
+msgid "&Billing information:"
+msgstr "Maklumat &Bil"
 
 #: cups/kpschedulepage.cpp:166
 msgid "T&op/Bottom page label:"
 msgstr "Label halaman &atas/bawah:"
 
+#: cups/kpschedulepage.cpp:169
+msgid "&Job priority:"
+msgstr "Keutamaan Ker&ja:"
+
 #: cups/kpschedulepage.cpp:200
 msgid "The time specified is not valid."
 msgstr "Waktu yang diskhususkan tidak sah"
 
+#: cups/kmwbanners.cpp:57
+msgid "No Banner"
+msgstr "Tiada Pemidang"
+
 #: cups/kmwbanners.cpp:58
 msgid "Classified"
 msgstr "Diklasifikasikan"
+
+#: cups/kmwbanners.cpp:59
+msgid "Confidential"
+msgstr "Sulit"
+
+#: cups/kmwbanners.cpp:60
+msgid "Secret"
+msgstr "Rahsia"
+
+#: cups/kmwbanners.cpp:61
+msgid "Standard"
+msgstr "Piawaian"
+
+#: cups/kmwbanners.cpp:62
+msgid "Top Secret"
+msgstr "Rahsia Besar"
 
 #: cups/kmwbanners.cpp:63
 msgid "Unclassified"
@@ -1166,6 +1153,10 @@ msgstr "Tidak diklasifikasi"
 #: cups/kmwbanners.cpp:86
 msgid "Banner Selection"
 msgstr "Pemilihan kain rentang"
+
+#: cups/kmpropbanners.cpp:35 cups/kmwbanners.cpp:92
+msgid "&Starting banner:"
+msgstr "Memulakan pemidang"
 
 #: cups/kmpropbanners.cpp:36 cups/kmwbanners.cpp:93
 msgid "&Ending banner:"
@@ -2040,36 +2031,36 @@ msgstr "<p>Pilih peranti yang bersambung dengan Faks/Modem bersiri anda.</p>"
 msgid "You must select a device."
 msgstr "Anda mesti memilih satu peranti."
 
-#: cups/kmcupsmanager.cpp:745
+#: cups/kmcupsmanager.cpp:765
 msgid "Library cupsdconf not found. Check your installation."
 msgstr "Cupsdconf pustaka tidak ditemui. Semak pemasangan anda."
 
-#: cups/kmcupsmanager.cpp:751
+#: cups/kmcupsmanager.cpp:771
 msgid "Symbol %1 not found in cupsdconf library."
 msgstr "Simbol %1 tidak ditemui dalam pustaka cupsdconf."
 
-#: cups/kmcupsmanager.cpp:826
+#: cups/kmcupsmanager.cpp:846
 msgid "&Export Driver..."
 msgstr "&Eksport Pemacu..."
 
-#: cups/kmcupsmanager.cpp:828
+#: cups/kmcupsmanager.cpp:848
 msgid "&Printer IPP Report"
 msgstr "Laporan IPP &pencetak"
 
-#: cups/kmcupsmanager.cpp:874 cups/kmwippprinter.cpp:218
+#: cups/kmcupsmanager.cpp:894 cups/kmwippprinter.cpp:218
 #, c-format
 msgid "IPP Report for %1"
 msgstr "Laporan IPP untuk %1"
 
-#: cups/kmcupsmanager.cpp:878
+#: cups/kmcupsmanager.cpp:898
 msgid "Unable to retrieve printer information. Error received:"
 msgstr "Tidak dapat memperoleh semula maklumat pencetak. Ralat diterima:"
 
-#: cups/kmcupsmanager.cpp:891
+#: cups/kmcupsmanager.cpp:911
 msgid "Server"
 msgstr "Pelayan"
 
-#: cups/kmcupsmanager.cpp:931 cups/kmcupsmanager.cpp:958
+#: cups/kmcupsmanager.cpp:951 cups/kmcupsmanager.cpp:978
 #, c-format
 msgid ""
 "Connection to CUPS server failed. Check that the CUPS server is correctly "
@@ -2078,15 +2069,15 @@ msgstr ""
 "Sambungan ke pelayan CUPS gagal. Semak bahawa pelayan  CUPS dipasang dengan "
 "betul dan berjalan. Ralat: %1."
 
-#: cups/kmcupsmanager.cpp:932
+#: cups/kmcupsmanager.cpp:952
 msgid "the IPP request failed for an unknown reason"
 msgstr "Permohonan IPP gagal atas sebab yang tidak diketahui"
 
-#: cups/kmcupsmanager.cpp:959
+#: cups/kmcupsmanager.cpp:979
 msgid "connection refused"
 msgstr "Sambungan ditolak"
 
-#: cups/kmcupsmanager.cpp:959
+#: cups/kmcupsmanager.cpp:979
 msgid "host not found"
 msgstr "hos tidak ditemui"
 
@@ -2958,6 +2949,10 @@ msgstr "Baris gilir:"
 msgid "Empty host name."
 msgstr "Nama hos kosong."
 
+#: rlpr/kmrlprmanager.cpp:49 rlpr/kmwrlpr.cpp:87
+msgid "Empty queue name."
+msgstr "Nama giliran kosong."
+
 #: rlpr/kmwrlpr.cpp:124
 msgid "Remote queue %1 on %2"
 msgstr "Baris gilir jauh  %1 on %2"
@@ -2965,6 +2960,10 @@ msgstr "Baris gilir jauh  %1 on %2"
 #: rlpr/kmwrlpr.cpp:199
 msgid "No Predefined Printers"
 msgstr "Tiada pencetak tertakrif"
+
+#: management/kmwend.cpp:82 rlpr/kmproprlpr.cpp:48
+msgid "Queue"
+msgstr "Giliran"
 
 #: management/kmwsmb.cpp:81 rlpr/kmrlprmanager.cpp:45
 msgid "Empty printer name."
@@ -3674,23 +3673,23 @@ msgstr ""
 msgid "Printer Test"
 msgstr "Ujian pencetak"
 
-#: management/kmwdrivertest.cpp:50
+#: management/kmwdrivertest.cpp:51
 msgid "<b>Manufacturer:</b>"
 msgstr "<b>Pembuat:</b>"
 
-#: management/kmwdrivertest.cpp:51
+#: management/kmwdrivertest.cpp:52
 msgid "<b>Model:</b>"
 msgstr "<b>Model:</b>"
 
-#: management/kmwdrivertest.cpp:52
+#: management/kmwdrivertest.cpp:53
 msgid "<b>Description:</b>"
 msgstr "<b>Huraian:</b>"
 
-#: management/kmwdrivertest.cpp:54
+#: management/kmwdrivertest.cpp:55
 msgid "&Test"
 msgstr "&Ujian"
 
-#: management/kmwdrivertest.cpp:58
+#: management/kmwdrivertest.cpp:59
 msgid ""
 "<p>Now you can test the printer before finishing installation. Use the <b>"
 "Settings</b> button to configure the printer driver and the <b>Test</b> "
@@ -3702,11 +3701,11 @@ msgstr ""
 "untuk menguji konfigurasi. Gunakan butang <b>Undur</b> "
 "untuk megubah pemacu (konfigurasi semasa akan dibuang).</p>"
 
-#: management/kmwdrivertest.cpp:116
+#: management/kmwdrivertest.cpp:117
 msgid "<qt>Unable to load the requested driver:<p>%1</p></qt>"
 msgstr "<qt>Tidak dapat memuatkan pemacu yang diminta:<p>%1</p></qt>"
 
-#: management/kmwdrivertest.cpp:145
+#: management/kmwdrivertest.cpp:146
 msgid ""
 "Test page successfully sent to printer. Wait until printing is complete, then "
 "click the OK button."
@@ -3714,15 +3713,15 @@ msgstr ""
 "Halaman ujian berjaya dihantar ke pencetak. Tunggu hingga cetakan selesai, "
 "kemudian klik butang OK."
 
-#: management/kmwdrivertest.cpp:147
+#: management/kmwdrivertest.cpp:148
 msgid "Unable to test printer: "
 msgstr "Tidak dapat menguji pencetak"
 
-#: management/kmwdrivertest.cpp:149
+#: management/kmwdrivertest.cpp:150
 msgid "Unable to remove temporary printer."
 msgstr "Tidak dapat mengeluarkan pencetak sementara"
 
-#: management/kmwdrivertest.cpp:152
+#: management/kmwdrivertest.cpp:153
 msgid "Unable to create temporary printer."
 msgstr "Tidak dapat mencipta pencetak sementara"
 
@@ -4033,7 +4032,7 @@ msgstr ""
 "Halaman ujian yang dipilih bukan fail PostScript.. Anda mungkin tidak dapat "
 "lagi menguji  pencetak."
 
-#: management/smbview.cpp:39
+#: management/smbview.cpp:44
 msgid "Comment"
 msgstr "Komen"
 
@@ -4474,7 +4473,8 @@ msgid "Some information is missing."
 msgstr "Beberapa maklumat hilang."
 
 #: management/kmwlpd.cpp:61
-msgid "Can not find queue %1 on server %2; do you want to continue anyway?"
+#, fuzzy
+msgid "Cannot find queue %1 on server %2; do you want to continue anyway?"
 msgstr "Tidak dapat mencari baris gilir  %1 pada pelayan %2; Teruskan?"
 
 #: management/kmconfigfilter.cpp:40
@@ -4844,7 +4844,7 @@ msgstr "Baru..."
 msgid "Copy..."
 msgstr "Salin..."
 
-#: management/kminstancepage.cpp:91
+#: kmvirtualmanager.cpp:166 management/kminstancepage.cpp:91
 msgid "Set as Default"
 msgstr "Set sebagai piawai"
 
@@ -5899,8 +5899,11 @@ msgid ""
 msgstr "Hujung &panjang"
 
 #: kpgeneralpage.cpp:310
-msgid "S&hort side"
-msgstr "Hujung &pendek"
+#, fuzzy
+msgid ""
+"_: duplex orientation\n"
+"S&hort side"
+msgstr "Hujung &panjang"
 
 #: kpgeneralpage.cpp:322
 msgid "S&tart:"
@@ -6286,7 +6289,7 @@ msgstr "Teruskan juga mencetak?"
 msgid "Print Preview"
 msgstr "Prapapar Cetakan"
 
-#: kprintpreview.cpp:274
+#: kprintpreview.cpp:275
 msgid ""
 "The preview program %1 cannot be found. Check that the program is correctly "
 "installed and located in a directory included in your PATH environment "
@@ -6295,7 +6298,7 @@ msgstr ""
 "Program prapapar %1 tidak ditemui. Pastikan program telah dipasang dengan betul "
 "dan terletak dalam direktori yang termasuk dalam variabel persekitaran PATH."
 
-#: kprintpreview.cpp:299
+#: kprintpreview.cpp:300
 msgid ""
 "Preview failed: neither the internal KDE PostScript viewer (KGhostView) nor any "
 "other external PostScript viewer could be found."
@@ -6303,7 +6306,7 @@ msgstr ""
 "Prapapar gagal: Kedua-dua pemapar  KDE PostScript dalaman  (KGhostView) dan "
 "pemapar PostScript luaran tidak ditemui."
 
-#: kprintpreview.cpp:303
+#: kprintpreview.cpp:304
 #, c-format
 msgid ""
 "Preview failed: KDE could not find any application to preview files of type %1."
@@ -6311,12 +6314,12 @@ msgstr ""
 "Prapapar gagal: KDE tidak dapat mencari sebarang aplikasi untuk prapapar fail "
 "jenis %1."
 
-#: kprintpreview.cpp:313
+#: kprintpreview.cpp:314
 #, c-format
 msgid "Preview failed: unable to start program %1."
 msgstr "Prapapar gagal: tidak dapat memulakan program %1."
 
-#: kprintpreview.cpp:318
+#: kprintpreview.cpp:319
 msgid "Do you want to continue printing?"
 msgstr "Anda ingin meneruskan cetakan?"
 
@@ -7215,3 +7218,5 @@ msgstr "&Skala kelabu"
 msgid "Ot&her"
 msgstr "&Lain-lain"
 
+#~ msgid "S&hort side"
+#~ msgstr "Hujung &pendek"
