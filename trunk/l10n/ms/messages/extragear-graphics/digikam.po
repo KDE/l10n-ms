@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
-"POT-Creation-Date: 2006-06-11 11:40+0200\n"
+"POT-Creation-Date: 2006-06-12 11:28+0200\n"
 "PO-Revision-Date: 2006-05-10 22:59+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -2824,7 +2824,7 @@ msgstr "Paparan Slaid Mandriva"
 msgid "Slide Show Settings"
 msgstr "Paparan Slaid Mandriva"
 
-#: showfoto/setup/setup.cpp:99 utilities/setup/setup.cpp:161
+#: showfoto/setup/setup.cpp:99
 msgid "ICC Profiles"
 msgstr ""
 
@@ -3222,6 +3222,7 @@ msgstr ""
 
 #: imageplugins/imageeffect_iccproof.cpp:76
 #: utilities/imageeditor/tools/imageprint.cpp:372
+#: utilities/setup/setup.cpp:161
 #, fuzzy
 msgid "Color Management"
 msgstr "Kedalaman _Warna:"
@@ -4725,8 +4726,9 @@ msgid "Image Editor Slide Show Settings"
 msgstr "Paparan Slaid Mandriva"
 
 #: utilities/setup/setup.cpp:161
-msgid "Image Editor Color Profiles Management"
-msgstr ""
+#, fuzzy
+msgid "Image Editor Color Management"
+msgstr "Kedalaman _Warna:"
 
 #: utilities/setup/setup.cpp:165
 #, fuzzy
@@ -4763,63 +4765,64 @@ msgstr ""
 #: utilities/setup/setupiofiles.cpp:118
 msgid ""
 "<p>If enable, all RAW files will be decoded to 16-bit color depth using a "
-"linear gamma curve."
+"linear gamma curve. To prevent black picture rendering on editor, it's "
+"recommended to use Color Management in this mode."
 "<p>If disable, all RAW files will be decoded to 8-bit color depth with a BT.709 "
 "gamma curve and a 99th-percentile white point. This mode is more faster than "
 "16-bit decoding."
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:125
+#: utilities/setup/setupiofiles.cpp:127
 msgid "Interpolate RGB as four colors"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:126
+#: utilities/setup/setupiofiles.cpp:128
 msgid ""
 "<p>Interpolate RGB as four colors. This blurs the image a little, but it "
 "eliminates false 2x2 mesh patterns."
 "<p>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:130
+#: utilities/setup/setupiofiles.cpp:132
 #, fuzzy
 msgid "Automatic color balance"
 msgstr "Kedalaman _Warna:"
 
-#: utilities/setup/setupiofiles.cpp:131
+#: utilities/setup/setupiofiles.cpp:133
 msgid ""
 "<p>Automatic color balance. The default is to use a fixed color balance based "
 "on a white card photographed in sunlight."
 "<p>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:136
+#: utilities/setup/setupiofiles.cpp:138
 #, fuzzy
 msgid "Camera color balance"
 msgstr "Kedalaman _Warna:"
 
-#: utilities/setup/setupiofiles.cpp:137
+#: utilities/setup/setupiofiles.cpp:139
 msgid ""
 "<p>Use the color balance specified by the camera. If this can't be found, "
 "reverts to the default."
 "<p>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:141
+#: utilities/setup/setupiofiles.cpp:143
 msgid "Unclip colors"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:142
+#: utilities/setup/setupiofiles.cpp:144
 msgid ""
 "<p>Enabled this option to leave the image color completely unclipped else all "
 "colors will be cliped to prevent pink highlights."
 "<p>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:146
+#: utilities/setup/setupiofiles.cpp:148
 msgid "Using Super CCD secondary sensors (Fuji cameras only)"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:147
+#: utilities/setup/setupiofiles.cpp:149
 msgid ""
 "<p>For Fuji Super CCD SR cameras, use the secondary sensors, in effect "
 "underexposing the image by four stops to reveal detail in the highlights. For "
@@ -4827,30 +4830,30 @@ msgid ""
 "<p>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:152
+#: utilities/setup/setupiofiles.cpp:154
 msgid "Enable RAW decoding quality"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:153
+#: utilities/setup/setupiofiles.cpp:155
 msgid ""
 "<p>Toggle quality decoding option for RAW images using a setting value."
 "<p>Enable this option if you use dcraw version >= 0.8.0 in your system."
 "<p>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:158
+#: utilities/setup/setupiofiles.cpp:160
 msgid "Bilinear interpolation"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:159
+#: utilities/setup/setupiofiles.cpp:161
 msgid "VNG interpolation"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:160
+#: utilities/setup/setupiofiles.cpp:162
 msgid "AHD interpolation"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:161
+#: utilities/setup/setupiofiles.cpp:163
 msgid ""
 "<p>Select here the demosaicing RAW images decoding interpolation method. A "
 "demosaicing algorithm is a digital image process used to interpolate a complete "
@@ -4872,11 +4875,11 @@ msgid ""
 "<p>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:181
+#: utilities/setup/setupiofiles.cpp:183
 msgid "Enable noise reduction during decoding (warning: slow)"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:183
+#: utilities/setup/setupiofiles.cpp:185
 msgid ""
 "<p>Toggle bilateral filter to smooth noise while preserving edges. This option "
 "can be use to reduce low noise. The pictures edges are preserved because it is "
@@ -4890,45 +4893,45 @@ msgid ""
 "<p>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:198
+#: utilities/setup/setupiofiles.cpp:200
 msgid "Sigma domain:"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:199
+#: utilities/setup/setupiofiles.cpp:201
 msgid ""
 "<p>The noise reduction Sigma Domain in units of pixels. The default value is "
 "2.0."
 "<p>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:208
+#: utilities/setup/setupiofiles.cpp:210
 msgid "Sigma range:"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:209
+#: utilities/setup/setupiofiles.cpp:211
 msgid ""
 "<p>The noise reduction Sigma Range in units of CIELab colorspace. The default "
 "value is 4.0."
 "<p>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:215
+#: utilities/setup/setupiofiles.cpp:217
 msgid "ICC profile correction during decoding:"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:217
+#: utilities/setup/setupiofiles.cpp:219
 msgid "Disabled (recommended)"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:218
+#: utilities/setup/setupiofiles.cpp:220
 msgid "Using embeded profile"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:219
+#: utilities/setup/setupiofiles.cpp:221
 msgid "Using digiKam ICC settings"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:220
+#: utilities/setup/setupiofiles.cpp:222
 msgid ""
 "<p>This option toggle the right way to use ICC color profiles during RAW files "
 "decoding."
@@ -4946,16 +4949,16 @@ msgid ""
 "<p>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:256
+#: utilities/setup/setupiofiles.cpp:258
 #, fuzzy
 msgid "Saving Images Options"
 msgstr "Opsyen Saiz Tambahan"
 
-#: utilities/setup/setupiofiles.cpp:262
+#: utilities/setup/setupiofiles.cpp:264
 msgid "JPEG quality:"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:264
+#: utilities/setup/setupiofiles.cpp:266
 msgid ""
 "<p>The quality value for JPEG images:"
 "<p><b>1</b>: low quality (high compression and small file size)"
@@ -4965,11 +4968,11 @@ msgid ""
 "<p><b>Note: JPEG is not a lossless image compression format.</b>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:278
+#: utilities/setup/setupiofiles.cpp:280
 msgid "PNG compression:"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:280
+#: utilities/setup/setupiofiles.cpp:282
 msgid ""
 "<p>The compression value for PNG images:"
 "<p><b>1</b>: low compression (large file size but short compression duration - "
@@ -4979,12 +4982,12 @@ msgid ""
 "<p><b>Note: PNG is always a lossless image compression format.</b>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:291
+#: utilities/setup/setupiofiles.cpp:293
 #, fuzzy
 msgid "Compress TIFF files"
 msgstr "Padat dan nyahpadat fail"
 
-#: utilities/setup/setupiofiles.cpp:294
+#: utilities/setup/setupiofiles.cpp:296
 msgid ""
 "<p>Toggle compression for TIFF images."
 "<p>If you enable this option, you can reduce the final file size of the TIFF "
