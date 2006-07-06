@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: k3b\n"
-"POT-Creation-Date: 2006-07-05 11:29+0200\n"
+"POT-Creation-Date: 2006-07-06 11:36+0200\n"
 "PO-Revision-Date: 2006-06-09 00:52+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -39,7 +39,7 @@ msgid "Length"
 msgstr "Panjang"
 
 #: projects/k3bvcdlistview.cpp:89 rip/k3baudioprojectconvertingdialog.cpp:104
-#: rip/k3baudiorippingdialog.cpp:128 rip/k3bvideodvdrippingwidget.cpp:53
+#: rip/k3baudiorippingdialog.cpp:128 rip/k3bvideodvdrippingwidget.cpp:56
 msgid "File Size"
 msgstr "Saiz Fail"
 
@@ -156,7 +156,7 @@ msgstr ""
 
 #: rip/k3baudiocdview.cpp:246 rip/k3baudiorippingdialog.cpp:176
 #: rip/k3bdvdripperwidget.cpp:148 rip/k3bvideocdrippingdialog.cpp:123
-#: rip/k3bvideocdview.cpp:327 rip/k3bvideodvdrippingview.cpp:68
+#: rip/k3bvideocdview.cpp:327 rip/k3bvideodvdrippingview.cpp:198
 #, fuzzy
 msgid "Start Ripping"
 msgstr "Memulakan VNC"
@@ -323,21 +323,21 @@ msgstr "Teks Placeholder."
 msgid "Query CDDB"
 msgstr "Tanya CDDB"
 
-#: rip/k3baudiocdview.cpp:227
+#: rip/k3baudiocdview.cpp:227 rip/k3bvideodvdrippingview.cpp:186
 #, fuzzy
 msgid "Check All"
 msgstr "Fail Log"
 
-#: rip/k3baudiocdview.cpp:230
+#: rip/k3baudiocdview.cpp:230 rip/k3bvideodvdrippingview.cpp:189
 msgid "Uncheck All"
 msgstr ""
 
-#: rip/k3baudiocdview.cpp:233
+#: rip/k3baudiocdview.cpp:233 rip/k3bvideodvdrippingview.cpp:192
 #, fuzzy
 msgid "Check Track"
 msgstr "Trek Seterusnya"
 
-#: rip/k3baudiocdview.cpp:236
+#: rip/k3baudiocdview.cpp:236 rip/k3bvideodvdrippingview.cpp:195
 #, fuzzy
 msgid "Uncheck Track"
 msgstr "Trek Seterusnya"
@@ -508,7 +508,7 @@ msgstr "Fail Khas peranti telah wujud dalam gugusan"
 msgid "Unable to get data for audio normalizing. Use default of 1.0."
 msgstr ""
 
-#: k3bmedium.cpp:251 rip/k3bmovieview.cpp:77 rip/k3bvideodvdrippingview.cpp:89
+#: k3bmedium.cpp:251 rip/k3bmovieview.cpp:77 rip/k3bvideodvdrippingview.cpp:97
 msgid "Video DVD"
 msgstr "Video DVD"
 
@@ -1023,21 +1023,21 @@ msgstr "Data"
 #: k3bdiskinfoview.cpp:300 option/k3bpatternoptiontab.cpp:96
 #: option/k3bpatternoptiontab.cpp:101 option/k3bpatternoptiontab.cpp:106
 #: option/k3bpatternoptiontab.cpp:323 projects/k3bvcdlistview.cpp:82
-#: rip/k3baudiocdlistview.cpp:36 rip/k3bvideodvdrippingdialog.cpp:435
-#: rip/k3bvideodvdrippingdialog.cpp:453
+#: rip/k3baudiocdlistview.cpp:36 rip/k3bvideodvdrippingdialog.cpp:439
+#: rip/k3bvideodvdrippingdialog.cpp:457
 #: rip/k3bvideodvdrippingtitlelistview.cpp:256
-#: rip/k3bvideodvdrippingwidget.cpp:51 rip/k3bvideodvdrippingwidget.cpp:60
+#: rip/k3bvideodvdrippingwidget.cpp:54 rip/k3bvideodvdrippingwidget.cpp:63
 msgid "Title"
 msgstr "Tajuk"
 
-#: rip/k3bvideodvdrippingwidget.cpp:52
+#: rip/k3bvideodvdrippingwidget.cpp:55
 #, fuzzy
 msgid "Video Size"
 msgstr "_Saiz (MB):"
 
 #: k3baudioplayer.cpp:116 projects/k3baudiotrackview.cpp:136
 #: projects/k3bvcdlistview.cpp:90 projects/k3bvcdtrackdialog.cpp:389
-#: rip/k3bvideodvdrippingwidget.cpp:54
+#: rip/k3bvideodvdrippingwidget.cpp:57
 msgid "Filename"
 msgstr "Namafail"
 
@@ -1047,7 +1047,7 @@ msgstr "Namafail"
 #: ../plugins/encoder/lame/k3blameencoder.cpp:488
 #: ../plugins/encoder/lame/k3blameencoder.cpp:489
 #: ../plugins/encoder/lame/k3blameencoder.cpp:490
-#: rip/k3bvideodvdrippingwidget.cpp:68
+#: rip/k3bvideodvdrippingwidget.cpp:71
 msgid "%1 kbps"
 msgstr "%1 kbps"
 
@@ -1162,35 +1162,35 @@ msgstr ""
 msgid "(full)"
 msgstr "Nama Penuh"
 
-#: rip/k3bvideodvdrippingdialog.cpp:117 rip/k3bvideodvdrippingdialog.cpp:141
+#: rip/k3bvideodvdrippingdialog.cpp:121 rip/k3bvideodvdrippingdialog.cpp:145
 #, fuzzy
 msgid "Video DVD Ripping"
 msgstr "Penyalin dan penukar video"
 
-#: rip/k3bvideodvdrippingdialog.cpp:142
+#: rip/k3bvideodvdrippingdialog.cpp:146
 #, fuzzy
 msgid ""
 "_n: 1 title from %1\n"
 "%n titles from %1"
 msgstr "Judul panjang:"
 
-#: rip/k3bvideodvdrippingdialog.cpp:164
+#: rip/k3bvideodvdrippingdialog.cpp:168
 #, fuzzy
 msgid "Title %1 (%2)"
 msgstr "<title></title>"
 
-#: rip/k3bvideodvdrippingdialog.cpp:211
+#: rip/k3bvideodvdrippingdialog.cpp:215
 msgid "%1 %2Ch (%3%4)"
 msgstr ""
 
-#: rip/k3bvideodvdrippingdialog.cpp:215
+#: rip/k3bvideodvdrippingdialog.cpp:219
 #: rip/k3bvideodvdrippingtitlelistview.cpp:44
 #: rip/k3bvideodvdrippingtitlelistview.cpp:69
 #, fuzzy
 msgid "unknown language"
 msgstr "Pilihan Bahasa"
 
-#: rip/k3bvideodvdrippingdialog.cpp:386
+#: rip/k3bvideodvdrippingdialog.cpp:390
 #, c-format
 msgid ""
 "_n: %nCh\n"
@@ -1207,21 +1207,48 @@ msgstr "Kadar HSync: "
 msgid "Estimated time: "
 msgstr "Waktu Alaska"
 
-#: rip/k3bvideodvdrippingview.cpp:70
-#, fuzzy
-msgid "Open the Video DVD ripping dialog"
-msgstr "dialog telah dibatalkan"
+#: rip/k3bvideodvdrippingview.cpp:88
+msgid ""
+"K3b was unable to unmount device '%1' containing medium '%2'. Video DVD ripping "
+"will not work if the device is mounted. Please unmount manually."
+msgstr ""
 
-#: rip/k3bvideodvdrippingview.cpp:90
+#: rip/k3bvideodvdrippingview.cpp:91
+#, fuzzy
+msgid "Unmounting failed"
+msgstr "Pelekapan gagal"
+
+#: rip/k3bvideodvdrippingview.cpp:98
 #, fuzzy, c-format
 msgid ""
 "_n: %n title\n"
 "%n titles"
 msgstr "Judul panjang:"
 
-#: rip/k3bvideodvdrippingview.cpp:96
+#: rip/k3bvideodvdrippingview.cpp:113
+msgid ""
+"<p>Unable to read Video DVD contents: Found encrypted Video DVD."
+"<p>Install <i>libdvdcss</i> to get Video DVD decryption support."
+msgstr ""
+
+#: rip/k3bvideodvdrippingview.cpp:120
 msgid "Unable to read Video DVD contents."
 msgstr ""
+
+#: rip/k3bvideodvdrippingview.cpp:134
+#, fuzzy
+msgid "Please select the titles to rip."
+msgstr "Pilih monitor yang disambung pada sistem anda."
+
+#: rip/k3bvideodvdrippingview.cpp:135
+#, fuzzy
+msgid "No Titles Selected"
+msgstr "Tiada monitor dipilih"
+
+#: rip/k3bvideodvdrippingview.cpp:201
+#, fuzzy
+msgid "Open the Video DVD ripping dialog"
+msgstr "dialog telah dibatalkan"
 
 #: rip/k3bvideodvdrippingtitlelistview.cpp:40
 msgid "%1 %2Ch (%3<em>%4</em>)"
@@ -3020,7 +3047,7 @@ msgstr ""
 
 #: k3bsystemproblemdialog.cpp:192 k3bsystemproblemdialog.cpp:266
 #: k3bsystemproblemdialog.cpp:274 k3bsystemproblemdialog.cpp:282
-#: k3bsystemproblemdialog.cpp:314 k3bsystemproblemdialog.cpp:424
+#: k3bsystemproblemdialog.cpp:314 k3bsystemproblemdialog.cpp:422
 #, fuzzy
 msgid "Used %1 version %2 is outdated"
 msgstr ""
@@ -3122,54 +3149,56 @@ msgid ""
 "when creating data projects."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:344
+#: k3bsystemproblemdialog.cpp:343
 #, fuzzy
 msgid "Writing device %1 - %2 is automounted."
 msgstr "$dev bukan peranti dump"
 
-#: k3bsystemproblemdialog.cpp:346
+#: k3bsystemproblemdialog.cpp:345
 msgid ""
 "Automounting can cause problems with CD/DVD writing, especially with rewritable "
 "media. Although it might all work just fine it is recommended to disable "
 "automounting completely for now."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:349
-msgid "Replace the automounting entries in /etc/fstab with old-fashioned ones."
+#: k3bsystemproblemdialog.cpp:348
+msgid ""
+"Replace the automounting entries in /etc/fstab with old-fashioned ones or use "
+"pmount or ivman."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:360
+#: k3bsystemproblemdialog.cpp:358
 #, fuzzy
 msgid "No ATAPI writing support in kernel"
 msgstr "Tiada sokongan VLAN 802.1Q pada kernel."
 
-#: k3bsystemproblemdialog.cpp:361
+#: k3bsystemproblemdialog.cpp:359
 msgid ""
 "Your kernel does not support writing without SCSI emulation but there is at "
 "least one writer in your system not configured to use SCSI emulation."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:365
+#: k3bsystemproblemdialog.cpp:363
 msgid ""
 "The best and recommended solution is to enable ide-scsi (SCSI emulation) for "
 "all devices. This way you won't have any problems.Be aware that you may still "
 "enable DMA on ide-scsi emulated drives."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:382 k3bsystemproblemdialog.cpp:401
+#: k3bsystemproblemdialog.cpp:380 k3bsystemproblemdialog.cpp:399
 #, fuzzy
 msgid "%1 %2 does not support ATAPI"
 msgstr ""
 "khidmat %s tidak menyokong chkconfig\n"
 
-#: k3bsystemproblemdialog.cpp:383 k3bsystemproblemdialog.cpp:403
+#: k3bsystemproblemdialog.cpp:381 k3bsystemproblemdialog.cpp:401
 msgid ""
 "The configured version of %1 does not support writing to ATAPI devices without "
 "SCSI emulation and there is at least one writer in your system not configured "
 "to use SCSI emulation."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:388
+#: k3bsystemproblemdialog.cpp:386
 #, c-format
 msgid ""
 "The best and recommended solution is to enable ide-scsi (SCSI emulation) for "
@@ -3177,12 +3206,12 @@ msgid ""
 "the default) a more recent version of %1."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:409
+#: k3bsystemproblemdialog.cpp:407
 msgid ""
 "Install cdrdao >= 1.1.8 which supports writing to ATAPI devices directly."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:411
+#: k3bsystemproblemdialog.cpp:409
 #, c-format
 msgid ""
 "The best, and recommended, solution is to use ide-scsi (SCSI emulation) for all "
@@ -3190,90 +3219,90 @@ msgid ""
 "(or select as the default) a more recent version of %1."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:425
+#: k3bsystemproblemdialog.cpp:423
 msgid ""
 "K3b won't be able to write DVD-R Dual Layer media using a growisofs version "
 "older than 6.0."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:427
+#: k3bsystemproblemdialog.cpp:425
 msgid "Install a more recent version of growisofs."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:437
+#: k3bsystemproblemdialog.cpp:435
 #, c-format
 msgid "No write access to device %1"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:438
+#: k3bsystemproblemdialog.cpp:436
 msgid ""
 "K3b needs write access to all the devices to perform certain tasks. Without you "
 "might encounter problems with %1 - %2"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:440 k3bsystemproblemdialog.cpp:451
+#: k3bsystemproblemdialog.cpp:438 k3bsystemproblemdialog.cpp:449
 msgid ""
 "Make sure you have write access to %1. In case you are not using devfs or udev "
 "K3bSetup is able to do this for you."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:448
+#: k3bsystemproblemdialog.cpp:446
 #, c-format
 msgid "No write access to generic SCSI device %1"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:449
+#: k3bsystemproblemdialog.cpp:447
 msgid ""
 "Without write access to the generic device you might encounter problems with "
 "Audio CD ripping from %1 - %2"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:457
+#: k3bsystemproblemdialog.cpp:455
 msgid "DMA disabled on device %1 - %2"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:458
+#: k3bsystemproblemdialog.cpp:456
 msgid ""
 "With most modern CD/DVD devices enabling DMA highly increases read/write "
 "performance. If you experience very low writing speeds this is probably the "
 "cause."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:461
+#: k3bsystemproblemdialog.cpp:459
 msgid "Enable DMA temporarily as root with 'hdparm -d 1 %1'."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:474
+#: k3bsystemproblemdialog.cpp:472
 #, fuzzy, c-format
 msgid "User parameters specified for external program %1"
 msgstr ""
 "Mencari untuk kumpulan bernama %s.\n"
 
-#: k3bsystemproblemdialog.cpp:475
+#: k3bsystemproblemdialog.cpp:473
 msgid ""
 "Sometimes it may be nessessary to specify user parameters in addition to the "
 "parameters generated by K3b. This is simply a warning to make sure that these "
 "parameters are really wanted and won't be pat of some bug report."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:478
+#: k3bsystemproblemdialog.cpp:476
 msgid ""
 "To remove the user parameters for the external program %1 open the K3b settings "
 "page 'Programs' and choose the tab 'User Parameters'."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:498
+#: k3bsystemproblemdialog.cpp:496
 msgid "Mp3 Audio Decoder plugin not found."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:499
+#: k3bsystemproblemdialog.cpp:497
 msgid ""
 "K3b could not load or find the Mp3 decoder plugin. This means that you will not "
 "be able to create Audio CDs from Mp3 files. Many Linux distributions do not "
 "include Mp3 support for legal reasons."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:502
+#: k3bsystemproblemdialog.cpp:500
 msgid ""
 "To enable Mp3 support, please install the MAD Mp3 decoding library as well as "
 "the K3b MAD Mp3 decoder plugin (the latter may already be installed but not "
@@ -3281,17 +3310,17 @@ msgid ""
 "Mp3 support via an online update tool (i.e. SuSE's YOU)."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:533
+#: k3bsystemproblemdialog.cpp:531
 #, fuzzy
 msgid "No problems found in system configuration."
 msgstr "Alatan tetapan sistem"
 
-#: k3bsystemproblemdialog.cpp:533
+#: k3bsystemproblemdialog.cpp:531
 #, fuzzy
 msgid "System Problems"
 msgstr "Memeriksa fail log sistem"
 
-#: k3bsystemproblemdialog.cpp:545
+#: k3bsystemproblemdialog.cpp:543
 #, fuzzy
 msgid "Unable to start K3bSetup2."
 msgstr "Cuba melaksanakan pelayan X."
@@ -9398,15 +9427,15 @@ msgstr ""
 msgid "Parent Directory"
 msgstr "Direktori Default"
 
-#: k3bfiletreeview.cpp:436
+#: k3bfiletreeview.cpp:428
 msgid "Directories"
 msgstr "Direktori"
 
-#: k3bfiletreeview.cpp:501
+#: k3bfiletreeview.cpp:493
 msgid "Root"
 msgstr "Root"
 
-#: k3bfiletreeview.cpp:502
+#: k3bfiletreeview.cpp:494
 msgid "Home"
 msgstr "Rumah"
 
