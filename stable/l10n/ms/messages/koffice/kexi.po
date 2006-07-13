@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
-"POT-Creation-Date: 2006-07-07 04:10+0200\n"
+"POT-Creation-Date: 2006-07-13 03:35+0200\n"
 "PO-Revision-Date: 2005-09-29 18:17-0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Reka bentuk telah diubah. Anda mesti menyimpannya sebelum beralih ke paparan "
 "lain. "
 
-#: core/kexidialogbase.cpp:358 main/keximainwindowimpl.cpp:2600
+#: core/kexidialogbase.cpp:358 main/keximainwindowimpl.cpp:2632
 msgid "Switching to other view failed (%1)."
 msgstr "Beralih ke papar lain gagal (%1)."
 
@@ -49,7 +49,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "(c) 2002-2006, Kexi Team\n"
-"(c) 2003-2006, OpenOffice Polska Ltd.\n"
+"(c) 2003-2006, OpenOffice Polska LLC\n"
 msgstr ""
 "(c) 2002-2005, Kexi Team\n"
 "(c) 2003-2005, OpenOffice Polska Ltd.\n"
@@ -134,23 +134,27 @@ msgid "Coffee sponsoring"
 msgstr "Penajaan Kopi"
 
 #: core/kexiaboutdata.h:75
+msgid "Numerous bug reports, usability tests, technical support"
+msgstr ""
+
+#: _translatorinfo.cpp:1 core/kexiaboutdata.h:76
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
 msgstr "MIMOS"
 
-#: core/kexiaboutdata.h:75
+#: _translatorinfo.cpp:3 core/kexiaboutdata.h:76
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "opensource@mimos.my"
 
-#: core/kexipartmanager.cpp:132
+#: core/kexipartmanager.cpp:134
 #, fuzzy
 msgid "Error while loading plugin \"%1\""
 msgstr "Ralat semasa memuatkan modul bahagian \"%1\" "
 
-#: core/kexipartmanager.cpp:199
+#: core/kexipartmanager.cpp:201
 #, fuzzy
 msgid "No plugin for mime type \"%1\""
 msgstr "Tiada modul bahagian untuk jenis mime \"%1\""
@@ -189,27 +193,31 @@ msgstr "Kapsyen projek:"
 msgid "Project description"
 msgstr "Kapsyen projek:"
 
-#: core/kexiproject.cpp:699
+#: core/kexiproject.cpp:708
 msgid "Opening object \"%1\" failed."
 msgstr "Membuka objek \"%1\" gagal."
 
-#: core/kexiproject.cpp:769 main/keximainwindowimpl.cpp:3551
+#: core/kexiproject.cpp:727
+msgid "This project is opened as read only."
+msgstr ""
+
+#: core/kexiproject.cpp:778 main/keximainwindowimpl.cpp:3487
 msgid "Could not set empty name for this object."
 msgstr "Tidak dapat setkan nama kosong untuk objek ini."
 
-#: core/kexiproject.cpp:773
+#: core/kexiproject.cpp:782
 msgid "Could not use this name. Object with name \"%1\" already exists."
 msgstr "Tidak dapat guna nama ini. Objek dengan nama \"%1\" sudah wujud. "
 
-#: core/kexiproject.cpp:780
+#: core/kexiproject.cpp:789
 msgid "Could not rename object \"%1\"."
 msgstr "Tidak dapat namakan semula objek \"%1\"."
 
-#: core/kexiproject.cpp:898
+#: core/kexiproject.cpp:907
 msgid "Warning: entire project's data will be removed."
 msgstr "Amaran: seluruh data projek akan dialih keluar."
 
-#: core/kexiproject.cpp:913
+#: core/kexiproject.cpp:922
 #, fuzzy
 msgid ""
 "The project %1 already exists.\n"
@@ -218,19 +226,25 @@ msgstr ""
 "Projek \"%1\" sudah wujud.\n"
 "Anda ingin ganti dengan yang kosong dan baru?"
 
-#: core/kexiproject.cpp:941
+#: core/kexiproject.cpp:950
 msgid "Do you want to drop the project \"%1\"?"
 msgstr "Anda ingin gugurkan projek \"%1\"?"
+
+#: core/kexiproject.cpp:959
+msgid ""
+"Could not drop this project. Database connection for this project has been "
+"opened as read only."
+msgstr ""
 
 #: core/kexiinternalpart.cpp:57
 msgid "Could not load \"%1\" plugin."
 msgstr "Tidak dapat muatkan plugin \"%1\"."
 
-#: core/kexicmdlineargs.h:27
+#: core/kexicmdlineargs.h:30
 msgid "Options related to entire projects:"
 msgstr "Opsyen berkaitan dengan seluruh projek:"
 
-#: core/kexicmdlineargs.h:29
+#: core/kexicmdlineargs.h:32
 msgid ""
 "Create a new, blank project using specified\n"
 "database driver and database name\n"
@@ -245,7 +259,7 @@ msgstr ""
 "Anda akan ditanya tentang pengesahan\n"
 "jika tulis ganti diperlukan."
 
-#: core/kexicmdlineargs.h:35
+#: core/kexicmdlineargs.h:38
 msgid ""
 "Like --createdb, but also open newly\n"
 "created database.\n"
@@ -253,7 +267,7 @@ msgstr ""
 "Seperti--cipta pangkalan data, tetapi juga buka pangkalan data yang baru\n"
 " dicipta.\n"
 
-#: core/kexicmdlineargs.h:38
+#: core/kexicmdlineargs.h:41
 msgid ""
 "Drop (remove) a project using specified\n"
 "database driver and database name.\n"
@@ -264,7 +278,7 @@ msgstr ""
 ".\n"
 " Anda akan ditanya tentang pengesahan. "
 
-#: core/kexicmdlineargs.h:43
+#: core/kexicmdlineargs.h:46
 msgid ""
 "Database driver to be used\n"
 "for connecting to a database project\n"
@@ -278,7 +292,7 @@ msgstr ""
 "Abaikan jika nama fail pintas\n"
 "disediakan."
 
-#: core/kexicmdlineargs.h:50
+#: core/kexicmdlineargs.h:53
 #, fuzzy
 msgid ""
 "Specify the type of file provided as an argument.\n"
@@ -306,7 +320,7 @@ msgstr ""
 "-\"pintas\" untuk fail pintas yang mengarahkan\n"
 " anda ke projek.\n"
 
-#: core/kexicmdlineargs.h:65
+#: core/kexicmdlineargs.h:68
 msgid ""
 "\n"
 "Specify a database connection shortcut .kexic\n"
@@ -319,11 +333,19 @@ msgid ""
 "file."
 msgstr ""
 
-#: core/kexicmdlineargs.h:74
+#: core/kexicmdlineargs.h:77
+msgid ""
+"Specify that any database connections will\n"
+"be performed without write support. This option\n"
+"is ignored when \"createdb\" option is present,\n"
+"otherwise the database could not be created."
+msgstr ""
+
+#: core/kexicmdlineargs.h:82
 msgid "Options related to opening objects within a project:"
 msgstr "Opsyen berkaitan dengan membuka objek dalam projek:"
 
-#: core/kexicmdlineargs.h:76
+#: core/kexicmdlineargs.h:84
 msgid ""
 "\n"
 "Open object of type <object_type>\n"
@@ -351,7 +373,7 @@ msgstr ""
 "Contoh:--open My Table,\n"
 "--open query:\"My very big query\""
 
-#: core/kexicmdlineargs.h:88
+#: core/kexicmdlineargs.h:96
 #, fuzzy
 msgid ""
 "\n"
@@ -362,7 +384,7 @@ msgstr ""
 "Seperti --buka, tetapi objek akan\n"
 "dibuka dalam Mod Reka Bentuk, jika ada"
 
-#: core/kexicmdlineargs.h:91
+#: core/kexicmdlineargs.h:99
 #, fuzzy
 msgid ""
 "\n"
@@ -373,12 +395,37 @@ msgstr ""
 "Seperti --buka, tetapi objek akan\n"
 "dibuka dalam Mod Teks, jika ada"
 
-#: core/kexicmdlineargs.h:94
+#: core/kexicmdlineargs.h:103
+#, fuzzy
+msgid ""
+"\n"
+"Start execution of object of type <object_type>\n"
+"and name <object_name> on application start.\n"
+"<object_type>: is optional, if omitted - macro\n"
+"type is assumed.\n"
+"Other object types can be script (may be more\n"
+"or less, depending on your plugins installed).\n"
+"Use \"\" chars to specify names containing spaces."
+msgstr ""
+"\n"
+"Buka objek jenis <object_type>\n"
+"dan nama <object_name> dari projek yang ditetapkan\n"
+"semasa  memulakan aplikasi.\n"
+"<object_type>: adalah opsyenal, jika diabaikan - jenis jadual\n"
+"akan diandaikan.\n"
+"Jenis objek lain termasuk pertanyaan, laporan, borang,\n"
+"skrip (mungkin lebih atau kurang, bergantung pada plugin anda\n"
+" yang dipasang).\n"
+"Gunakan aksara \"\" untuk menetapkan nama yang mengandungi jarak.\n"
+"Contoh:--open My Table,\n"
+"--open query:\"My very big query\""
+
+#: core/kexicmdlineargs.h:111
 #, fuzzy
 msgid "Start new object design of type <object_type>."
 msgstr "Mula reka bentuk objek baru jenis <object_type>"
 
-#: core/kexicmdlineargs.h:96
+#: core/kexicmdlineargs.h:113
 msgid ""
 "\n"
 "Open the Print dialog window for an object of type\n"
@@ -389,7 +436,7 @@ msgid ""
 "type is assumed. Object type can also be query."
 msgstr ""
 
-#: core/kexicmdlineargs.h:103
+#: core/kexicmdlineargs.h:120
 msgid ""
 "\n"
 "Open Print Preview window for object\n"
@@ -398,7 +445,7 @@ msgid ""
 "See --print for more details."
 msgstr ""
 
-#: core/kexicmdlineargs.h:112
+#: core/kexicmdlineargs.h:129
 #, fuzzy
 msgid ""
 "Start project in Design Mode, regardless \n"
@@ -407,11 +454,11 @@ msgstr ""
 "Mula projek dalam Mod Akhir, tanpa mengambil kira \n"
 "seting projek"
 
-#: core/kexicmdlineargs.h:117
+#: core/kexicmdlineargs.h:134
 msgid "Options related to database servers:"
 msgstr "Opsyen berkaitan dengan pelayan pangkalan data:"
 
-#: core/kexicmdlineargs.h:120
+#: core/kexicmdlineargs.h:137
 msgid ""
 "User name to be used\n"
 "for connecting to a database project.\n"
@@ -423,7 +470,7 @@ msgstr ""
 "Abaikan jika nama fail\n"
 "pintas disediakan."
 
-#: core/kexicmdlineargs.h:131
+#: core/kexicmdlineargs.h:148
 msgid ""
 "Server (host) name to be used\n"
 "for connecting to a database project.\n"
@@ -435,7 +482,7 @@ msgstr ""
 "Abaikan jika nama fail\n"
 "disediakan."
 
-#: core/kexicmdlineargs.h:136
+#: core/kexicmdlineargs.h:153
 #, fuzzy
 msgid ""
 "Server's port number to be used\n"
@@ -448,7 +495,7 @@ msgstr ""
 "Abaikan jika nama fail\n"
 " pintas disediakan."
 
-#: core/kexicmdlineargs.h:141
+#: core/kexicmdlineargs.h:158
 msgid ""
 "Server's local socket filename\n"
 "to be used for connecting to a database\n"
@@ -458,14 +505,14 @@ msgstr ""
 "Nama fail\n"
 " soket lokal bagi pelayan untuk digunakan bagi sambungan "
 
-#: core/kexicmdlineargs.h:146
+#: core/kexicmdlineargs.h:163
 msgid ""
 "Skip displaying connection dialog window\n"
 "and connect directly. Available when\n"
 "opening .kexic or .kexis shortcut files."
 msgstr ""
 
-#: core/kexicmdlineargs.h:152
+#: core/kexicmdlineargs.h:169
 #, fuzzy
 msgid ""
 "Kexi database project filename,\n"
@@ -512,17 +559,17 @@ msgstr "Tidak dapat alih keluar data objek."
 msgid "Data identifier: \"%1\"."
 msgstr "Pengenal pasti data: \"%1\"."
 
-#: core/kexi.h:135
+#: core/kexi.h:138
 #, fuzzy
 msgid "This function is not available for version %1 of %2 application."
 msgstr "%1 untuk versi %2 bagi aplikasi %3."
 
-#: core/kexi.h:139
+#: core/kexi.h:142
 #, fuzzy
 msgid "\"%1\" function is not available for version %2 of %3 application."
 msgstr "%1 untuk versi %2 bagi aplikasi %3."
 
-#: core/kexiprojectdata.cpp:157
+#: core/kexiprojectdata.cpp:159
 msgid ""
 "_: database connection\n"
 "(connection %1)"
@@ -556,27 +603,27 @@ msgstr "Bahagian ditetapkan tidak wujud"
 msgid "Specified document could not be opened."
 msgstr "Dokumen ditetapkan tidak dapat dibuka."
 
-#: core/kexi.cpp:151
+#: core/kexi.cpp:159
 msgid "No View"
 msgstr "Tiada Papar"
 
-#: core/kexi.cpp:152
+#: core/kexi.cpp:160
 msgid "Data View"
 msgstr "Papar Data"
 
-#: core/kexi.cpp:153
+#: core/kexi.cpp:161
 msgid "Design View"
 msgstr "Papar Reka Bentuk"
 
-#: core/kexi.cpp:154
+#: core/kexi.cpp:162
 msgid "Text View"
 msgstr "Papar Teks"
 
-#: core/kexi.cpp:156
+#: core/kexi.cpp:164
 msgid "Unknown"
 msgstr "Tak diketahui"
 
-#: core/kexi.cpp:162
+#: core/kexi.cpp:170
 msgid ""
 "You can correct data in this row or use \"Cancel row changes\" function."
 msgstr ""
@@ -587,7 +634,7 @@ msgstr ""
 msgid "&Rename"
 msgstr "&Nama Semula"
 
-#: main/kexibrowser.cpp:107 main/keximainwindowimpl.cpp:630
+#: main/kexibrowser.cpp:107 main/keximainwindowimpl.cpp:626
 msgid "Project Navigator"
 msgstr "Navigator Projek"
 
@@ -623,63 +670,68 @@ msgstr ""
 msgid "Open in &Text View"
 msgstr "Buka dalam Papar &Teks"
 
-#: main/kexibrowser.cpp:163 main/kexibrowser.cpp:168
+#: main/kexibrowser.cpp:163 main/kexibrowser.cpp:169
 #, fuzzy
 msgid "Open object in Text View"
 msgstr "Buka dalam Papar &Teks"
 
-#: main/kexibrowser.cpp:164 main/kexibrowser.cpp:169
+#: main/kexibrowser.cpp:164 main/kexibrowser.cpp:170
 msgid "Opens selected object in the list in Text View"
 msgstr ""
 
-#: main/kexibrowser.cpp:195
+#: main/kexibrowser.cpp:197 plugins/macros/kexiactions/executeaction.cpp:35
+#, fuzzy
+msgid "Execute"
+msgstr "Laksana skrip"
+
+#: main/kexibrowser.cpp:203
 msgid ""
-"_: Export->As Data &Table... \n"
-"As Data &Table..."
+"_: Export->To File As Data &Table... \n"
+"To &File As Data Table..."
 msgstr ""
 
-#: main/kexibrowser.cpp:198
+#: main/kexibrowser.cpp:206
 #, fuzzy
 msgid "Exports data from the currently selected table or query data to a file."
 msgstr "Simpan data dalam baris jadual yang sedang dipilih."
 
-#: main/kexibrowser.cpp:208
+#: main/kexibrowser.cpp:216
 #, fuzzy
 msgid "Prints data from the currently selected table or query."
 msgstr "Selitkan satu baris kosong di atas baris jadual yang sedang dipilih."
 
-#: main/kexibrowser.cpp:211
+#: main/kexibrowser.cpp:219
 msgid "Page Setup..."
 msgstr ""
 
-#: main/kexibrowser.cpp:214 main/keximainwindowimpl.cpp:547
+#: main/kexibrowser.cpp:222 main/keximainwindowimpl.cpp:546
 msgid "Shows page setup for printing the active table or query."
 msgstr ""
 
-#: main/kexibrowser.cpp:379
+#: main/kexibrowser.cpp:388
 msgid "&Create Object: %1..."
 msgstr "&Cipta Objek: %1..."
 
-#: main/kexibrowser.cpp:385
+#: main/kexibrowser.cpp:394
 #, fuzzy, c-format
 msgid "Create object: %1"
 msgstr "&Cipta Objek: %1..."
 
-#: main/kexibrowser.cpp:387
+#: main/kexibrowser.cpp:396
 #, fuzzy, c-format
 msgid "Creates a new object: %1"
 msgstr "Cipta projek baru"
 
-#: main/kexibrowser.cpp:389
+#: main/kexibrowser.cpp:398
 msgid "&Create Object..."
 msgstr "&Cipta Objek..."
 
-#: main/kexibrowser.cpp:393
+#: main/kexibrowser.cpp:402
 #, fuzzy
 msgid "Create object"
 msgstr "Cipta Projek "
 
-#: main/kexibrowser.cpp:394
+#: main/kexibrowser.cpp:403
 #, fuzzy
 msgid "Creates a new object"
 msgstr "Cipta projek baru"
@@ -906,7 +958,7 @@ msgstr "Nama pengguna:%1"
 msgid "&Details"
 msgstr "&Butiran"
 
-#: main/startup/KexiStartup.cpp:281
+#: main/startup/KexiStartup.cpp:287
 msgid ""
 "Could not read connection information from connection shortcut file <nobr>"
 "\"%1\"</nobr>."
@@ -914,34 +966,34 @@ msgid ""
 "<br>Check whether the file has valid contents."
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:294
+#: main/startup/KexiStartup.cpp:300
 msgid ""
 "You have specified invalid argument (\"%1\") for \"type\" command-line option."
 msgstr ""
 "Anda telah tetapkan argumen tak sah (\"%1\") untuk \"jenis\" opsyen baris "
 "perintah."
 
-#: main/startup/KexiStartup.cpp:352
+#: main/startup/KexiStartup.cpp:358
 msgid "You have specified invalid port number \"%1\"."
 msgstr "Anda telah tetapkan nombor \"%1\" port tak sah."
 
-#: main/startup/KexiStartup.cpp:372
+#: main/startup/KexiStartup.cpp:379
 msgid "Could not start Kexi application this way."
 msgstr "Tidak dapat mula aplikasi Kexi dengan cara ini."
 
-#: main/startup/KexiStartup.cpp:376
+#: main/startup/KexiStartup.cpp:383
 msgid "You have used both \"createdb\" and \"dropdb\" startup options."
 msgstr "Anda telah gunakan opsyen mula \"ciptadb\" dan \"gugurdb\"."
 
-#: main/startup/KexiStartup.cpp:382
+#: main/startup/KexiStartup.cpp:389
 msgid "No project name specified."
 msgstr "Tiada nama projek ditetapkan."
 
-#: main/startup/KexiStartup.cpp:417
+#: main/startup/KexiStartup.cpp:424
 msgid "You have used both \"final-mode\" and \"design-mode\" startup options."
 msgstr "Anda telah gunakan opsyen mula \"mod akhir\" dan \"mod reka bentuk\"."
 
-#: main/startup/KexiStartup.cpp:440
+#: main/startup/KexiStartup.cpp:447
 msgid ""
 "Could not remove project.\n"
 "The file \"%1\" does not exist."
@@ -949,7 +1001,7 @@ msgstr ""
 "Tidak dapat alih keluar projek.\n"
 "Fail \"%1\" tidak wujud."
 
-#: main/startup/KexiStartup.cpp:482
+#: main/startup/KexiStartup.cpp:489
 msgid ""
 "Could not open shortcut file\n"
 "\"%1\"."
@@ -957,7 +1009,7 @@ msgstr ""
 "Tidak dapat buka fail pintas\n"
 "\"%1\"."
 
-#: main/startup/KexiStartup.cpp:515
+#: main/startup/KexiStartup.cpp:522
 #, fuzzy
 msgid ""
 "Could not open connection data file\n"
@@ -966,7 +1018,7 @@ msgstr ""
 "Tidak dapat buka fail pintas\n"
 "\"%1\"."
 
-#: main/startup/KexiStartup.cpp:601
+#: main/startup/KexiStartup.cpp:609
 msgid ""
 "You have specified a few database objects to be opened automatically, using "
 "startup options.\n"
@@ -978,55 +1030,55 @@ msgstr ""
 "Opsyen ini akan diabaikan kerana ia tidak disediakan semasa mencipta atau "
 "menggugurkan projek."
 
-#: main/startup/KexiStartup.cpp:617
+#: main/startup/KexiStartup.cpp:625
 msgid "Project \"%1\" created successfully."
 msgstr "Projek \"%1\" berjaya dicipta."
 
-#: main/startup/KexiStartup.cpp:627
+#: main/startup/KexiStartup.cpp:635
 msgid "Project \"%1\" dropped successfully."
 msgstr "Projek \"%1\" berjaya digugurkan."
 
-#: main/startup/KexiStartup.cpp:742 main/startup/KexiStartup.cpp:773
+#: main/startup/KexiStartup.cpp:752 main/startup/KexiStartup.cpp:784
 #, fuzzy
 msgid "<p>Could not open project.</p>"
 msgstr "Tidak dapat buka projek \"%1\""
 
-#: main/startup/KexiStartup.cpp:743
+#: main/startup/KexiStartup.cpp:753
 #, fuzzy
 msgid "<p>The file <nobr>\"%1\"</nobr> does not exist or is not readable.</p>"
 msgstr "Fail \"%1\" tidak boleh baca."
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:220
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:226
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:259
-#: main/startup/KexiStartup.cpp:745 main/startup/KexiStartup.cpp:776
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:215
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:221
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:258
+#: main/startup/KexiStartup.cpp:755 main/startup/KexiStartup.cpp:787
 msgid ""
 "Check the file's permissions and whether it is already opened and locked by "
 "another application."
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:774
+#: main/startup/KexiStartup.cpp:785
 #, fuzzy
 msgid "<p>The file <nobr>\"%1\"</nobr> is not readable.</p>"
 msgstr "Fail \"%1\" tidak boleh baca."
 
-#: main/startup/KexiStartup.cpp:796
+#: main/startup/KexiStartup.cpp:807
 msgid ""
 "\"%1\" is an external file of type:\n"
 "\"%2\".\n"
 "Do you want to import the file as a Kexi project?"
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:799
+#: main/startup/KexiStartup.cpp:810
 msgid "Open External File"
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:799
+#: main/startup/KexiStartup.cpp:810
 #, fuzzy
 msgid "Import..."
 msgstr "&Import"
 
-#: main/startup/KexiStartup.cpp:819
+#: main/startup/KexiStartup.cpp:832
 msgid ""
 "The project file \"%1\" is recognized as compatible with \"%2\" database "
 "driver, while you have asked for \"%3\" database driver to be used.\n"
@@ -1036,7 +1088,7 @@ msgstr ""
 "\"%2\", tetapi anda minta supaya pemacu pangkalan data \"%3\" digunakan.\n"
 "Anda mahu guna pemacu pangkalan data \"%4\"?"
 
-#: main/startup/KexiStartup.cpp:841
+#: main/startup/KexiStartup.cpp:854
 msgid ""
 "Previous version of database file format (\"%1\") is detected in the \"%2\" "
 "project file.\n"
@@ -1046,7 +1098,7 @@ msgstr ""
 "projek \"%2\".\n"
 "Anda mahu tukar projek ke format \"%3\" baru yang (disarankan)?"
 
-#: main/startup/KexiStartup.cpp:852
+#: main/startup/KexiStartup.cpp:865
 #, fuzzy
 msgid ""
 "Failed to convert project file \"%1\" to a new \"%2\" format.\n"
@@ -1055,15 +1107,15 @@ msgstr ""
 "Gagal menukar fail projek \"%1\" kepada format \"%2\" baru.\n"
 "Format fail masih tidak berubah."
 
-#: main/startup/KexiStartup.cpp:864
+#: main/startup/KexiStartup.cpp:877
 msgid "Possible problems:"
 msgstr "Masalah yang mungkin:"
 
-#: main/startup/KexiStartup.cpp:868
+#: main/startup/KexiStartup.cpp:882
 msgid "The file \"%1\" is not recognized as being supported by Kexi."
 msgstr "Fail \"%1\" tidak dikenal pasti sebagai disokong oleh Kexi."
 
-#: main/startup/KexiStartup.cpp:871
+#: main/startup/KexiStartup.cpp:885
 #, c-format
 msgid ""
 "Database driver for this file type not found.\n"
@@ -1072,14 +1124,14 @@ msgstr ""
 "Pemacu pangkalan data untuk jenis fail ini tidak ditemui.\n"
 "Jenis MIME yang dikesan: %1"
 
-#: main/startup/KexiStartup.cpp:907 main/startup/KexiStartup.cpp:911
+#: main/startup/KexiStartup.cpp:921 main/startup/KexiStartup.cpp:925
 #, fuzzy
 msgid ""
 "Could not load list of available projects for <b>%1</b> database server."
 msgstr ""
 "Tidak dapat memuatkan senarai projek yang disediakan untuk sambungan \"%1\""
 
-#: main/startup/KexiStartup.cpp:942
+#: main/startup/KexiStartup.cpp:956
 msgid ""
 "Failed saving connection data to\n"
 "\"%1\" file."
@@ -1184,83 +1236,83 @@ msgstr ""
 "<b>Projek A dengan nama pangkalan data \"%1\" sudah wujud</b>"
 "<p>Anda mahu hapuskannya atau cipta yang baru?"
 
-#. i18n: file data/kexiui.rc line 121
-#: main/keximainwindowimpl.cpp:247 main/keximainwindowimpl.cpp:294 rc.cpp:45
+#. i18n: file data/kexiui.rc line 122
+#: main/keximainwindowimpl.cpp:244 main/keximainwindowimpl.cpp:291 rc.cpp:45
 #, no-c-format
 msgid "&Window"
 msgstr "&Tetingkap"
 
-#: main/keximainwindowimpl.cpp:250
+#: main/keximainwindowimpl.cpp:247
 msgid "Task Bar"
 msgstr "Task Bar"
 
-#: main/keximainwindowimpl.cpp:269
+#: main/keximainwindowimpl.cpp:266
 msgid ""
 "_: Close the current tab page in Kexi tab interface\n"
 "Close the current tab"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:365
+#: main/keximainwindowimpl.cpp:362
 msgid ""
 "User interface mode will be switched to IDEAl at next %1 application startup."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:391
+#: main/keximainwindowimpl.cpp:389
 msgid ""
 "User interface mode will be switched to Childframe at next %1 application "
 "startup."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:418
+#: main/keximainwindowimpl.cpp:417
 msgid "&New..."
 msgstr "&Baru..."
 
-#: main/keximainwindowimpl.cpp:420
+#: main/keximainwindowimpl.cpp:419
 msgid "Create a new project"
 msgstr "Cipta projek baru"
 
-#: main/keximainwindowimpl.cpp:421
+#: main/keximainwindowimpl.cpp:420
 msgid "Creates a new project. Currently opened project is not affected."
 msgstr "Cipta projek baru. Projek yang sedang dibuka tidak terjejas."
 
-#: main/keximainwindowimpl.cpp:424
+#: main/keximainwindowimpl.cpp:423
 msgid "Open an existing project"
 msgstr "Buka projek sedia ada"
 
-#: main/keximainwindowimpl.cpp:425
+#: main/keximainwindowimpl.cpp:424
 msgid "Opens an existing project. Currently opened project is not affected."
 msgstr "Buka projek sedia ada. Projek yang sedang dibuka tidak terjejas."
 
-#: main/keximainwindowimpl.cpp:428
+#: main/keximainwindowimpl.cpp:427
 msgid "&Download Example Databases..."
 msgstr "&Muat Turun Pangkalan Data Contoh..."
 
-#: main/keximainwindowimpl.cpp:430
+#: main/keximainwindowimpl.cpp:429
 msgid "Download example databases from the Internet"
 msgstr "Muat turun pangkalan data contoh dari Internet"
 
-#: main/keximainwindowimpl.cpp:431
+#: main/keximainwindowimpl.cpp:430
 #, fuzzy
 msgid "Downloads example databases from the Internet."
 msgstr "Muat turun pangkalan data contoh dari Internet"
 
-#: main/keximainwindowimpl.cpp:459
+#: main/keximainwindowimpl.cpp:458
 msgid "Save object changes"
 msgstr "Simpan perubahan projek"
 
-#: main/keximainwindowimpl.cpp:460
+#: main/keximainwindowimpl.cpp:459
 msgid "Saves object changes from currently selected window."
 msgstr "Simpan perubahan projek daripada tetingkap yang sedang dipilih."
 
-#: main/keximainwindowimpl.cpp:463
+#: main/keximainwindowimpl.cpp:462
 msgid "Save &As..."
 msgstr "Simpan &Sebagai..."
 
-#: main/keximainwindowimpl.cpp:465 main/keximainwindowimpl.cpp:2461
+#: main/keximainwindowimpl.cpp:464 main/keximainwindowimpl.cpp:2493
 msgid "Save object as"
 msgstr "Simpan objek sebagai"
 
-#: main/keximainwindowimpl.cpp:467
+#: main/keximainwindowimpl.cpp:466
 msgid ""
 "Saves object changes from currently selected window under a new name (within "
 "the same project)."
@@ -1268,282 +1320,303 @@ msgstr ""
 "Simpan perubahan objek dari tetingkap yang sedang dipilih di bawah nama baru "
 "(dalam projek yang sama)"
 
-#: main/keximainwindowimpl.cpp:469
+#: main/keximainwindowimpl.cpp:468
 msgid "Project Properties"
 msgstr "Ciri Projek"
 
-#: main/keximainwindowimpl.cpp:476
+#: main/keximainwindowimpl.cpp:475
 msgid "&Close Project"
 msgstr "&Tutup Projek"
 
-#: main/keximainwindowimpl.cpp:478
+#: main/keximainwindowimpl.cpp:477
 msgid "Close the current project"
 msgstr "Tutup projek semasa"
 
-#: main/keximainwindowimpl.cpp:479
+#: main/keximainwindowimpl.cpp:478
 msgid "Closes the current project."
 msgstr "Tutup projek semasa."
 
-#: main/keximainwindowimpl.cpp:484
+#: main/keximainwindowimpl.cpp:483
 msgid "&Relationships..."
 msgstr "&Hubungan..."
 
-#: main/keximainwindowimpl.cpp:486
+#: main/keximainwindowimpl.cpp:485
 msgid "Project relationships"
 msgstr "Hubungan Projek"
 
-#: main/keximainwindowimpl.cpp:487
+#: main/keximainwindowimpl.cpp:486
 msgid "Shows project relationships."
 msgstr "Paparkan hubungan projek."
 
-#: main/keximainwindowimpl.cpp:494
+#: main/keximainwindowimpl.cpp:492
 msgid "&Import Database..."
 msgstr "&Import Pangkalan Data..."
 
-#: main/keximainwindowimpl.cpp:496
+#: main/keximainwindowimpl.cpp:494
 msgid "Import entire database as a Kexi Project"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:497
+#: main/keximainwindowimpl.cpp:495
 msgid "Imports entire database as a Kexi Project."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:504
+#: main/keximainwindowimpl.cpp:498
+#, fuzzy
+msgid "&Compact Database..."
+msgstr "&Import Pangkalan Data..."
+
+#: main/keximainwindowimpl.cpp:500
+#, fuzzy
+msgid "Compact the current database project"
+msgstr "Tutup projek semasa"
+
+#: main/keximainwindowimpl.cpp:502
 msgid ""
-"_: Import->Data Table...\n"
-"Data &Table..."
+"Compacts the current database project, so it will take less space and work "
+"faster."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:508
-msgid "Import table data from a file"
+#: main/keximainwindowimpl.cpp:505
+msgid ""
+"_: Import->Table Data From File...\n"
+"Table Data From &File..."
 msgstr ""
 
 #: main/keximainwindowimpl.cpp:509
+msgid "Import table data from a file"
+msgstr ""
+
+#: main/keximainwindowimpl.cpp:510
 msgid "Imports table data from a file."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:514
+#: main/keximainwindowimpl.cpp:513
 msgid ""
-"_: Export->Table or Query as Data Table...\n"
-"Table or Query as Data &Table..."
+"_: Export->Table or Query Data to File...\n"
+"Table or Query Data to &File..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:519
+#: main/keximainwindowimpl.cpp:518
 msgid "Export data from the active table or query data to a file"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:521
+#: main/keximainwindowimpl.cpp:520
 msgid "Exports data from the active table or query data to a file."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:530
+#: main/keximainwindowimpl.cpp:529
 msgid "Print data from the active table or query"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:531
+#: main/keximainwindowimpl.cpp:530
 msgid "Prints data from the active table or query."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:537
+#: main/keximainwindowimpl.cpp:536
 msgid "Show print preview for the active table or query"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:539
+#: main/keximainwindowimpl.cpp:538
 msgid "Shows print preview for the active table or query."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:541
+#: main/keximainwindowimpl.cpp:540
 #: main/printing/kexisimpleprintpreviewwindow.cpp:171
 msgid "Page Set&up..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:545
+#: main/keximainwindowimpl.cpp:544
 msgid "Show page setup for printing the active table or query"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:556
+#: main/keximainwindowimpl.cpp:554
 msgid ""
 "_: Paste Special->As Data &Table...\n"
 "As Data &Table..."
 msgstr ""
 
+#: main/keximainwindowimpl.cpp:558
+msgid "Paste clipboard data as a table"
+msgstr ""
+
 #: main/keximainwindowimpl.cpp:560
-msgid "Paste clipboard data to a new table"
+msgid "Pastes clipboard data to a table."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:562
-msgid "Pastes clipboard data to a new table."
-msgstr ""
-
-#: main/keximainwindowimpl.cpp:568
+#: main/keximainwindowimpl.cpp:564
 msgid ""
-"_: Copy Special->Table or Query As Data Table...\n"
+"_: Copy Special->Table or Query Data...\n"
 "Table or Query As Data Table..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:572
+#: main/keximainwindowimpl.cpp:568
 msgid "Copy selected table or query data to clipboard"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:574
+#: main/keximainwindowimpl.cpp:570
 msgid "Copies selected table or query data to clipboard."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:577
+#: main/keximainwindowimpl.cpp:573
 msgid "Reverts the most recent editing action."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:579
+#: main/keximainwindowimpl.cpp:575
 msgid "Reverts the most recent undo action."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:585
+#: main/keximainwindowimpl.cpp:581
 msgid "Delete object"
 msgstr "Hapuskan objek"
 
-#: main/keximainwindowimpl.cpp:586
+#: main/keximainwindowimpl.cpp:582
 msgid "Deletes currently selected object."
 msgstr "Hapuskan objek yang sedang dipilih."
 
-#: main/keximainwindowimpl.cpp:588
+#: main/keximainwindowimpl.cpp:584
 msgid "Delete Row"
 msgstr "Hapuskan Baris"
 
-#: main/keximainwindowimpl.cpp:590
+#: main/keximainwindowimpl.cpp:586
 msgid "Delete currently selected row from a table"
 msgstr "Hapuskan baris yang sedang dipilih dari jadual"
 
-#: main/keximainwindowimpl.cpp:591
+#: main/keximainwindowimpl.cpp:587
 msgid "Deletes currently selected row from a table."
 msgstr "Hapuskan baris yang sedang dipilih dari jadual."
 
-#: main/keximainwindowimpl.cpp:593
+#: main/keximainwindowimpl.cpp:589
 msgid "Clear Table Contents"
 msgstr "Kosongkan Kandungan Jadual"
 
-#: main/keximainwindowimpl.cpp:595
+#: main/keximainwindowimpl.cpp:591
 msgid "Clear table contents"
 msgstr "Kosongkan kandungan jadual"
 
-#: main/keximainwindowimpl.cpp:596
+#: main/keximainwindowimpl.cpp:592
 msgid "Clears table contents."
 msgstr "Kosongkan kandungan jadual."
 
-#: main/keximainwindowimpl.cpp:599
+#: main/keximainwindowimpl.cpp:595
 msgid "Edit Item"
 msgstr "Edit Butiran"
 
-#: main/keximainwindowimpl.cpp:600
+#: main/keximainwindowimpl.cpp:596
 msgid "Edit currently selected item"
 msgstr "Edit butiran yang sedang dipilih"
 
-#: main/keximainwindowimpl.cpp:601
+#: main/keximainwindowimpl.cpp:597
 msgid "Edits currently selected item."
 msgstr "Edit butiran yang sedang dipilih."
 
-#: main/keximainwindowimpl.cpp:603
+#: main/keximainwindowimpl.cpp:599
 msgid "&Insert Empty Row"
 msgstr "&Selitkan Baris Kosong"
 
-#: main/keximainwindowimpl.cpp:605
+#: main/keximainwindowimpl.cpp:601
 msgid "Insert one empty row above"
 msgstr "Selitkan satu baris kosong di atas"
 
-#: main/keximainwindowimpl.cpp:606
+#: main/keximainwindowimpl.cpp:602
 msgid "Inserts one empty row above currently selected table row."
 msgstr "Selitkan satu baris kosong di atas baris jadual yang sedang dipilih."
 
-#: main/keximainwindowimpl.cpp:609
+#: main/keximainwindowimpl.cpp:605
 msgid "&Data View"
 msgstr "Papar &Data"
 
-#: main/keximainwindowimpl.cpp:613
+#: main/keximainwindowimpl.cpp:609
 #, fuzzy
 msgid "Switch to Data View"
 msgstr "Beralih ke mod Papar Data"
 
-#: main/keximainwindowimpl.cpp:614
+#: main/keximainwindowimpl.cpp:610
 #, fuzzy
 msgid "Switches to Data View."
 msgstr "Beralih ke mod Papar Data."
 
-#: main/keximainwindowimpl.cpp:616
+#: main/keximainwindowimpl.cpp:612
 msgid "D&esign View"
 msgstr "Papar &Reka Bentuk"
 
-#: main/keximainwindowimpl.cpp:620
+#: main/keximainwindowimpl.cpp:616
 #, fuzzy
 msgid "Switch to Design View"
 msgstr "Beralih ke mod Papar Reka Bentuk"
 
-#: main/keximainwindowimpl.cpp:621
+#: main/keximainwindowimpl.cpp:617
 #, fuzzy
 msgid "Switches to Design View."
 msgstr "Beralih ke mod Papar Reka Bentuk."
 
-#: main/keximainwindowimpl.cpp:623
+#: main/keximainwindowimpl.cpp:619
 msgid "&Text View"
 msgstr "&Papar Teks"
 
-#: main/keximainwindowimpl.cpp:627
+#: main/keximainwindowimpl.cpp:623
 #, fuzzy
 msgid "Switch to Text View"
 msgstr "Beralih ke mod Papar Teks"
 
-#: main/keximainwindowimpl.cpp:628
+#: main/keximainwindowimpl.cpp:624
 #, fuzzy
 msgid "Switches to Text View."
 msgstr "Beralih ke mod Papar Teks."
 
-#: main/keximainwindowimpl.cpp:632
+#: main/keximainwindowimpl.cpp:628
 #, fuzzy
 msgid "Go to project navigator panel"
 msgstr "Beralih ke panel pemandu arah Projek"
 
-#: main/keximainwindowimpl.cpp:633
+#: main/keximainwindowimpl.cpp:629
 #, fuzzy
 msgid "Goes to project navigator panel."
 msgstr "Beralih ke panel pemandu arah Projek."
 
-#: main/keximainwindowimpl.cpp:636
+#: main/keximainwindowimpl.cpp:632
 msgid "Property Editor"
 msgstr "Editor Ciri"
 
-#: main/keximainwindowimpl.cpp:638
+#: main/keximainwindowimpl.cpp:634
 #, fuzzy
 msgid "Go to property editor panel"
 msgstr "Beralih ke panel editor Ciri"
 
-#: main/keximainwindowimpl.cpp:639
+#: main/keximainwindowimpl.cpp:635
 #, fuzzy
 msgid "Goes to property editor panel."
 msgstr "Beralih ke panel editor Ciri."
 
-#: main/keximainwindowimpl.cpp:643
+#: main/keximainwindowimpl.cpp:639
 msgid "&Save Row"
 msgstr "&Simpan Baris"
 
-#: main/keximainwindowimpl.cpp:644
+#: main/keximainwindowimpl.cpp:640
 msgid "Save currently selected table row's data"
 msgstr "Simpan data dalam baris jadual yang sedang dipilih"
 
-#: main/keximainwindowimpl.cpp:645
+#: main/keximainwindowimpl.cpp:641
 msgid "Saves currently selected table row's data."
 msgstr "Simpan data dalam baris jadual yang sedang dipilih."
 
-#: main/keximainwindowimpl.cpp:648
+#: main/keximainwindowimpl.cpp:644
 msgid "&Cancel Row Changes"
 msgstr "&Batalkan Perubahan Baris"
 
-#: main/keximainwindowimpl.cpp:649
+#: main/keximainwindowimpl.cpp:645
 msgid "Cancel changes made to currently selected table row"
 msgstr ""
 "Batalkan perubahan yang dibuat ke atas baris jadual yang sedang dipilih"
 
-#: main/keximainwindowimpl.cpp:650
+#: main/keximainwindowimpl.cpp:646
 msgid "Cancels changes made to currently selected table row."
 msgstr ""
 "Batalkan perubahan yang dibuat ke atas baris jadual yang sedang dipilih."
+
+#: main/keximainwindowimpl.cpp:649
+#, fuzzy
+msgid "&Execute"
+msgstr "Laksana skrip"
 
 #: main/keximainwindowimpl.cpp:653
 msgid "&Filter"
@@ -1649,96 +1722,117 @@ msgstr "Aktifkan Borang"
 msgid "Disable Forms"
 msgstr "Nyahaktifkan Borang"
 
-#: main/keximainwindowimpl.cpp:758
+#: main/keximainwindowimpl.cpp:764
 msgid "Lets you configure Kexi."
 msgstr "Membenarkan anda mengkonfigur Kexi."
 
-#: main/keximainwindowimpl.cpp:764
+#: main/keximainwindowimpl.cpp:770
 msgid "This shows useful tips on the use of this application."
 msgstr "Ini memaparkan tip yang berguna tentang kegunaan aplikasi ini."
 
-#: main/keximainwindowimpl.cpp:767 main/keximainwindowimpl.cpp:3679
+#: main/keximainwindowimpl.cpp:773 main/keximainwindowimpl.cpp:3621
 msgid "Important Information"
 msgstr "Maklumat Penting"
 
-#: main/keximainwindowimpl.cpp:774
+#: main/keximainwindowimpl.cpp:780
 msgid "Give Feedback..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:934
+#: main/keximainwindowimpl.cpp:944
 msgid "reason:"
 msgstr "alasan:"
 
-#: main/keximainwindowimpl.cpp:971
+#: main/keximainwindowimpl.cpp:981
 msgid ""
 "<qt>Database project %1 does not appear to have been created using Kexi."
 "<br>"
 "<br>Do you want to import it as a new Kexi project?</qt>"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:973
+#: main/keximainwindowimpl.cpp:983
 #, fuzzy
 msgid ""
 "_: Import Database\n"
 "&Import..."
 msgstr "&Import Pangkalan Data..."
 
-#: main/keximainwindowimpl.cpp:1034
+#: main/keximainwindowimpl.cpp:1045
 #, fuzzy
 msgid "cannot create object - unknown object type \"%1\""
 msgstr "tidak boleh cipta objek jenis \"%1\""
 
-#: main/keximainwindowimpl.cpp:1037
+#: main/keximainwindowimpl.cpp:1048
 msgid "unknown object type \"%1\""
 msgstr "objek tak diketahui jenis \"%1\""
 
-#: main/keximainwindowimpl.cpp:1045
+#: main/keximainwindowimpl.cpp:1056
 msgid "cannot create object of type \"%1\""
 msgstr "tidak boleh cipta objek jenis \"%1\""
 
-#: main/keximainwindowimpl.cpp:1059
+#: main/keximainwindowimpl.cpp:1070
 msgid "making print preview for"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:1061
+#: main/keximainwindowimpl.cpp:1072
 #, fuzzy
 msgid "printing"
 msgstr "Mengisih"
 
-#: main/keximainwindowimpl.cpp:1063
+#: main/keximainwindowimpl.cpp:1074
+msgid ""
+"_: \"executing object\" action\n"
+"executing"
+msgstr ""
+
+#: main/keximainwindowimpl.cpp:1076
 #, fuzzy
 msgid "opening"
 msgstr "Menaik"
 
-#: main/keximainwindowimpl.cpp:1067
+#: main/keximainwindowimpl.cpp:1080
 #, fuzzy
 msgid "table not found"
 msgstr "Jadual tidak ditemui"
 
-#: main/keximainwindowimpl.cpp:1069
+#: main/keximainwindowimpl.cpp:1082
 #, fuzzy
 msgid "query not found"
 msgstr "Jadual tidak ditemui"
 
-#: main/keximainwindowimpl.cpp:1071
+#: main/keximainwindowimpl.cpp:1084
+#, fuzzy
+msgid "macro not found"
+msgstr "Jadual tidak ditemui"
+
+#: main/keximainwindowimpl.cpp:1086
+#, fuzzy
+msgid "script not found"
+msgstr "objek tidak ditemui"
+
+#: main/keximainwindowimpl.cpp:1088
 msgid "object not found"
 msgstr "objek tidak ditemui"
 
-#: main/keximainwindowimpl.cpp:1080
+#: main/keximainwindowimpl.cpp:1097
+#, fuzzy
+msgid "cannot execute object"
+msgstr "tidak boleh cipta objek-"
+
+#: main/keximainwindowimpl.cpp:1106
 #, fuzzy
 msgid "cannot print object"
 msgstr "tidak boleh buka objek"
 
-#: main/keximainwindowimpl.cpp:1089
+#: main/keximainwindowimpl.cpp:1115
 #, fuzzy
 msgid "cannot make print preview of object"
 msgstr "tidak boleh buka objek"
 
-#: main/keximainwindowimpl.cpp:1107
+#: main/keximainwindowimpl.cpp:1133
 msgid "cannot open object"
 msgstr "tidak boleh buka objek"
 
-#: main/keximainwindowimpl.cpp:1118
+#: main/keximainwindowimpl.cpp:1145
 #, fuzzy
 msgid ""
 "You have requested selected objects to be automatically opened or processed on "
@@ -1747,101 +1841,102 @@ msgstr ""
 "Anda minta objek yang dipilih supaya dibuka secara automatik semasa mula. "
 "Beberapa objek tidak boleh dibuka."
 
-#: main/keximainwindowimpl.cpp:2402
+#: main/keximainwindowimpl.cpp:2434
 #, fuzzy
 msgid "Recently Opened Databases"
 msgstr "Buka Pangkalan Data"
 
-#: main/keximainwindowimpl.cpp:2421
+#: main/keximainwindowimpl.cpp:2453
 #, fuzzy
 msgid "Recently Connected Database Servers"
 msgstr "Tidak disambungkan ke pelayan pangkalan data."
 
-#: main/keximainwindowimpl.cpp:2520
+#: main/keximainwindowimpl.cpp:2552
 msgid "From File..."
 msgstr "Dari Fail..."
 
-#: main/keximainwindowimpl.cpp:2525
+#: main/keximainwindowimpl.cpp:2557
 msgid "From Server..."
 msgstr "Dari Pelayan..."
 
-#: main/keximainwindowimpl.cpp:2586
+#: main/keximainwindowimpl.cpp:2618
 #, fuzzy
 msgid "Selected view is not supported for \"%1\" object."
 msgstr "Mod papar yang dipilih tidak disokong untuk objek \"%1\"."
 
-#: main/keximainwindowimpl.cpp:2588
+#: main/keximainwindowimpl.cpp:2620
 #, fuzzy
 msgid "Selected view (%1) is not supported by this object type (%2)."
 msgstr "Mod papar (%1) yang dipilih tidak disokong oleh jenis objek (%2) ini"
 
-#: main/keximainwindowimpl.cpp:2774
+#: main/keximainwindowimpl.cpp:2710
 msgid "Save Object As"
 msgstr "Simpan Objek Sebagai"
 
-#: main/keximainwindowimpl.cpp:2794
+#: main/keximainwindowimpl.cpp:2730
 #, fuzzy
 msgid "Do you want to replace it?"
 msgstr "Anda mahu alih keluar:"
 
-#: main/keximainwindowimpl.cpp:2795 migration/importwizard.cpp:817
+#: main/keximainwindowimpl.cpp:2731 migration/importwizard.cpp:825
+#: plugins/forms/widgets/kexidbimagebox.cpp:437
 #, fuzzy
 msgid "&Replace"
 msgstr "&Nama Semula"
 
-#: main/keximainwindowimpl.cpp:2796
+#: main/keximainwindowimpl.cpp:2732
 msgid "&Choose Other Name..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2811
+#: main/keximainwindowimpl.cpp:2747
 #, fuzzy
 msgid "Please choose other name."
 msgstr "Sila masukkan nama."
 
-#: main/keximainwindowimpl.cpp:2835
+#: main/keximainwindowimpl.cpp:2771
 msgid "Saving \"%1\" object failed."
 msgstr "Menyimpan objek \"%1\"gagal."
 
-#: main/keximainwindowimpl.cpp:2852
+#: main/keximainwindowimpl.cpp:2788
 msgid "Saving new \"%1\" object failed."
 msgstr "Menyimpan objek \"%1\" baru gagal."
 
-#: main/keximainwindowimpl.cpp:2900 main/keximainwindowimpl.cpp:4015
+#: main/keximainwindowimpl.cpp:2836 main/keximainwindowimpl.cpp:4033
 #, fuzzy
 msgid "Save changes"
 msgstr "Simpan Perubahan"
 
-#: main/keximainwindowimpl.cpp:2902 main/keximainwindowimpl.cpp:4017
+#: main/keximainwindowimpl.cpp:2838 main/keximainwindowimpl.cpp:4035
 msgid ""
 "Pressing this button will save all recent changes made in \"%1\" object."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2906
+#: main/keximainwindowimpl.cpp:2842
 msgid ""
 "Pressing this button will discard all recent changes made in \"%1\" object."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2922
+#: main/keximainwindowimpl.cpp:2858
 #, fuzzy
 msgid "Do you want to save changes?"
 msgstr "Anda ingin simpan reka bentuk sekarang?"
 
-#: main/keximainwindowimpl.cpp:3485
+#: main/keximainwindowimpl.cpp:3421
 msgid ""
 "Do you want to permanently delete:\n"
 "%1\n"
 "If you click Yes, you will not be able to undo the deletion."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:3540
+#: main/keximainwindowimpl.cpp:3476
 msgid "Could not remove object."
 msgstr "Tidak boleh alih keluar objek."
 
-#: main/keximainwindowimpl.cpp:3559
+#: main/keximainwindowimpl.cpp:3495
 msgid "Renaming object \"%1\" failed."
 msgstr "Menamakan semula objek \"%1\" gagal."
 
-#: main/keximainwindowimpl.cpp:3720
+#: main/keximainwindowimpl.cpp:3662
 msgid ""
 "Please note that forms are currently unstable functionality, provided <u>"
 "only for your preview</u>."
@@ -1849,50 +1944,63 @@ msgstr ""
 "Perhatikan bahawa borang adalah fungsian yang tak stabil ketika ini, melainkan "
 "<u>hanya untuk prapapar anda sahaja</u>."
 
-#: main/keximainwindowimpl.cpp:3723
+#: main/keximainwindowimpl.cpp:3665
 msgid "Forms will be available after restarting Kexi application."
 msgstr "Borang akan disediakan selepas memulakan semula aplikasi Kexi."
 
-#: main/keximainwindowimpl.cpp:3727
+#: main/keximainwindowimpl.cpp:3669
 msgid "Forms will be hidden after restarting Kexi application."
 msgstr "Borang akan disembunyikan selepas memulakan semula aplikasi Kexi."
 
-#: main/keximainwindowimpl.cpp:3757
+#: main/keximainwindowimpl.cpp:3700
 msgid "Could not start project \"%1\" in Final Mode."
 msgstr "Tidak dapat mula projek \"%1\" dalam Mod Akhir."
 
-#: main/keximainwindowimpl.cpp:3762
+#: main/keximainwindowimpl.cpp:3705
 msgid "No Final Mode data found."
 msgstr "Tiada Mod Akhir ditemui."
 
-#: main/keximainwindowimpl.cpp:3770
+#: main/keximainwindowimpl.cpp:3713
 msgid "Error reading Final Mode data."
 msgstr "Ralat membaca data Mod Akhir."
 
-#: main/keximainwindowimpl.cpp:3800
+#: main/keximainwindowimpl.cpp:3743
 msgid "Specified plugin does not exist."
 msgstr "Plugin yang ditetapkan tidak wujud."
 
-#: main/keximainwindowimpl.cpp:3809
+#: main/keximainwindowimpl.cpp:3752
 msgid "Specified object could not be opened."
 msgstr "Objek yang ditetapkan tidak dapat dibuka."
 
-#: main/keximainwindowimpl.cpp:4021
+#: main/keximainwindowimpl.cpp:3822
+#, fuzzy
+msgid "Compacting database file <nobr>\"%1\"</nobr> is not supported."
+msgstr "Fail \"%1\" tidak boleh baca."
+
+#: main/keximainwindowimpl.cpp:3835
+msgid ""
+"The current project has to be closed before compacting the database. It will be "
+"open again after compacting.\n"
+"\n"
+"Do you want to continue?"
+msgstr ""
+
+#: main/keximainwindowimpl.cpp:4039
 msgid ""
 "Pressing this button will ignore all unsaved changes made in \"%1\" object."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:4026
+#: main/keximainwindowimpl.cpp:4044
 #, fuzzy
 msgid "Do you want to save changes before printing?"
 msgstr "Anda ingin simpan reka bentuk sekarang?"
 
-#: main/keximainwindowimpl.cpp:4028
+#: main/keximainwindowimpl.cpp:4046
 #, fuzzy
 msgid "Do you want to save changes before making print preview?"
 msgstr "Anda ingin simpan reka bentuk sekarang?"
 
-#: main/keximainwindowimpl.cpp:4030
+#: main/keximainwindowimpl.cpp:4048
 #, fuzzy
 msgid "Do you want to save changes before showing page setup?"
 msgstr "Anda mahu batalkan mana-mana perubahan yang dibuat ke atas teks SQL?"
@@ -2033,7 +2141,11 @@ msgstr "Sila masukkan nama."
 msgid "Please enter the caption."
 msgstr "Sila masukkan kapsyen."
 
-#: main/kexistatusbar.cpp:131
+#: main/kexistatusbar.cpp:53 main/kexistatusbar.cpp:142
+msgid "Read only"
+msgstr ""
+
+#: main/kexistatusbar.cpp:129
 msgid " Line: %1 Col: %2 "
 msgstr "Baris: %1 Lajur:%2"
 
@@ -2049,37 +2161,39 @@ msgstr "\"%1\" bukan pengenal pasti yang sah."
 msgid "\"%1\" value has to be entered."
 msgstr "Nilai \"%1\" perlu dimasukkan."
 
-#: kexidb/drivermanager.cpp:186 migration/migratemanager.cpp:179
-msgid "Could not find any database drivers."
+#: migration/migratemanager.cpp:179
+#, fuzzy
+msgid "Could not find any import/export database drivers."
 msgstr "Tidak jumpa apa-apa pemacu pangkalan data."
 
-#: kexidb/drivermanager.cpp:196 kexidb/drivermanager.cpp:213
 #: migration/migratemanager.cpp:198
-msgid "Could not find database driver \"%1\"."
+#, fuzzy
+msgid "Could not find import/export database driver \"%1\"."
 msgstr "Tidak jumpa pemacu  pangkalan data \"%1\"."
 
-#: kexidb/drivermanager.cpp:225 migration/migratemanager.cpp:210
-msgid "Could not load database driver \"%1\"."
+#: migration/migratemanager.cpp:210
+#, fuzzy
+msgid "Could not load import/export database driver \"%1\"."
 msgstr "Tidak dapat memuatkan pemacu pangkalan data \"%1\"."
 
-#: migration/importwizard.cpp:65
+#: migration/importwizard.cpp:66
 #, fuzzy
 msgid "Import Database"
 msgstr "Pangkalan Data yang Diimport"
 
-#: migration/importwizard.cpp:154
+#: migration/importwizard.cpp:155
 msgid ""
 "<qt>Database Importing wizard is about to import \"%1\" database <nobr>"
 "(connection %2)</nobr> into a Kexi database.</qt>"
 msgstr ""
 
-#: migration/importwizard.cpp:161
+#: migration/importwizard.cpp:162
 msgid ""
 "<qt>Database Importing wizard is about to import <nobr>\"%1\"</nobr> "
 "file of type \"%2\" into a Kexi database.</qt>"
 msgstr ""
 
-#: migration/importwizard.cpp:166
+#: migration/importwizard.cpp:167
 #, fuzzy
 msgid ""
 "Database Importing wizard allows you to import an existing database into a Kexi "
@@ -2088,96 +2202,106 @@ msgstr ""
 "Wizard ini akan memandu anda sepanjang proses menukar set data sedia ada ke "
 "dalam pangkalan data Kexi."
 
-#: migration/importwizard.cpp:170
+#: migration/importwizard.cpp:171
 msgid ""
 "Click \"Next\" button to continue or \"Cancel\" button to exit this wizard."
 msgstr ""
 
-#: migration/importwizard.cpp:172
+#: migration/importwizard.cpp:173
 msgid "Welcome to the Database Importing Wizard"
 msgstr ""
 
-#: migration/importwizard.cpp:224
+#: migration/importwizard.cpp:225
 #, fuzzy
 msgid "Select Location for Source Database"
 msgstr "Pilih Pangkalan Data Sumber"
 
-#: migration/importwizard.cpp:234
+#: migration/importwizard.cpp:235
 msgid "Select Source Database"
 msgstr "Pilih Pangkalan Data Sumber"
 
-#: migration/importwizard.cpp:249
+#: migration/importwizard.cpp:250
 #, fuzzy
 msgid "Destination database type:"
 msgstr "Pilih Jenis Pangkalan Data Destinasi"
 
-#: migration/importwizard.cpp:260
+#: migration/importwizard.cpp:256
+#, fuzzy
+msgid "Database project stored in a file"
+msgstr "Projek Baru Disimpan dalam Fail"
+
+#: migration/importwizard.cpp:257
+#, fuzzy
+msgid "Database project stored on a server"
+msgstr "Projek Baru Disimpan dalam Pelayan Pangkalan Data"
+
+#: migration/importwizard.cpp:269
 msgid "Select Destination Database Type"
 msgstr "Pilih Jenis Pangkalan Data Destinasi"
 
-#: migration/importwizard.cpp:267
+#: migration/importwizard.cpp:276
 msgid "Destination project's caption:"
 msgstr "Kapsyen projek destinasi"
 
-#: migration/importwizard.cpp:272
+#: migration/importwizard.cpp:281
 #, fuzzy
 msgid "Select Destination Database Project's Caption"
 msgstr "Pilih Kapsyen Projek Destinasi"
 
-#: migration/importwizard.cpp:305
+#: migration/importwizard.cpp:314
 #, fuzzy
 msgid "Select Location for Destination Database"
 msgstr "Pilih Pangkalan Data Destinasi"
 
-#: migration/importwizard.cpp:318
+#: migration/importwizard.cpp:327
 msgid "Structure and data"
 msgstr ""
 
-#: migration/importwizard.cpp:319
+#: migration/importwizard.cpp:328
 msgid "Structure only"
 msgstr ""
 
-#: migration/importwizard.cpp:323
+#: migration/importwizard.cpp:332
 msgid "Select Type of Import"
 msgstr ""
 
-#: migration/importwizard.cpp:348
+#: migration/importwizard.cpp:357
 #, fuzzy
 msgid "Advanced Options"
 msgstr "&Lanjutan"
 
-#: migration/importwizard.cpp:358
+#: migration/importwizard.cpp:367
 #, fuzzy
 msgid "Importing"
 msgstr "&Import"
 
-#: migration/importwizard.cpp:372
+#: migration/importwizard.cpp:381
 #, fuzzy
 msgid "Open imported project"
 msgstr "Buka projek sedia ada"
 
-#: migration/importwizard.cpp:379 migration/importwizard.cpp:839
+#: migration/importwizard.cpp:388 migration/importwizard.cpp:847
 msgid "Success"
 msgstr "Kejayaan"
 
-#: migration/importwizard.cpp:394
+#: migration/importwizard.cpp:403
 msgid "No new database name was entered."
 msgstr "Tiada nama baru pangkalan data dimasukkan."
 
-#: migration/importwizard.cpp:399
+#: migration/importwizard.cpp:408
 msgid "Following problems were found with the data you entered:"
 msgstr "Masalah berikut ditemui berikutan data yang anda masukkan:"
 
-#: migration/importwizard.cpp:403
+#: migration/importwizard.cpp:412
 msgid "Please click 'Back' button and correct these errors."
 msgstr "Klik butang 'Undur' dan betulkan ralat ini."
 
-#: migration/importwizard.cpp:469
+#: migration/importwizard.cpp:478
 #, fuzzy
 msgid "Select source database you wish to import:"
 msgstr "Pilih Jenis Pangkalan Data Sumber"
 
-#: migration/importwizard.cpp:534
+#: migration/importwizard.cpp:543
 msgid ""
 "All required information has now been gathered. Click \"Next\" button to start "
 "importing.\n"
@@ -2185,78 +2309,71 @@ msgid ""
 "Depending on size of the database this may take some time."
 msgstr ""
 
-#: migration/importwizard.cpp:701
-#, fuzzy
-msgid ""
-"No connection data is available. You did not select a destination filename."
-msgstr ""
-"Tiada sambungan disediakan. Anda tidak pilih nama fail destinasi SQLite."
-
-#: migration/importwizard.cpp:712
+#: migration/importwizard.cpp:720
 msgid "No appropriate migration driver found."
 msgstr ""
 
-#: migration/importwizard.cpp:814
+#: migration/importwizard.cpp:822
 #, fuzzy
 msgid "Database %1 already exists.<p>Do you want to replace it with a new one?"
 msgstr ""
 "Projek \"%1\" sudah wujud.\n"
 "Anda ingin ganti dengan yang kosong dan baru?"
 
-#: migration/importwizard.cpp:853
+#: migration/importwizard.cpp:861
 msgid "Failure"
 msgstr "Kegagalan"
 
-#: migration/importwizard.cpp:855
+#: migration/importwizard.cpp:863
 msgid ""
 "<p>Import failed.</p>%1"
 "<p>%2</p>"
 "<p>You can click \"Back\" button and try again.</p>"
 msgstr ""
 
-#: migration/importwizard.cpp:876
+#: migration/importwizard.cpp:884
 #, fuzzy
 msgid "Select source database filename."
 msgstr "Pilih Jenis Pangkalan Data Sumber"
 
-#: migration/importwizard.cpp:881
+#: migration/importwizard.cpp:889
 #, fuzzy
 msgid "Select source database."
 msgstr "Pilih Pangkalan Data Sumber"
 
-#: migration/importwizard.cpp:895
+#: migration/importwizard.cpp:903
 msgid "Could not import database%1. This type is not supported."
 msgstr ""
 
-#: migration/importwizard.cpp:912
+#: migration/importwizard.cpp:920
 msgid "Importing in progress..."
 msgstr ""
 
-#: migration/importwizard.cpp:916
+#: migration/importwizard.cpp:924
 msgid "Database has been imported into Kexi database project \"%1\"."
 msgstr ""
 
-#: migration/importwizard.cpp:984 migration/importwizard.cpp:1008
+#: migration/importwizard.cpp:992 migration/importwizard.cpp:1016
 #, fuzzy
 msgid "No help is available for this page."
 msgstr "Tiada bantuan disediakan untuk halaman ini"
 
-#: migration/importwizard.cpp:992
+#: migration/importwizard.cpp:1000
 #, fuzzy
 msgid "Here you can choose the location to import data from."
 msgstr "Di sini anda boleh pilih lokasi untuk mengimport data "
 
-#: migration/importwizard.cpp:996
+#: migration/importwizard.cpp:1004
 #, fuzzy
 msgid "Here you can choose the actual database to import data from."
 msgstr "Di sini anda boleh pilih pangkalan data sebenar untuk mengimport data "
 
-#: migration/importwizard.cpp:1000
+#: migration/importwizard.cpp:1008
 #, fuzzy
 msgid "Here you can choose the location to save the data."
 msgstr "Di sini anda boleh pilih lokasi untuk menyimpan data"
 
-#: migration/importwizard.cpp:1004
+#: migration/importwizard.cpp:1012
 #, fuzzy
 msgid ""
 "Here you can choose the location to save the data in and the new database name."
@@ -2330,18 +2447,18 @@ msgstr "Tidak dapat pinda jadual \"%1\" menggunakan jadual yang sama."
 msgid "Could not import data from data source \"%1\"."
 msgstr "Tidak jumpa pemacu  pangkalan data \"%1\"."
 
-#: migration/keximigrate.cpp:455
+#: migration/keximigrate.cpp:453
 msgid "Field Type"
 msgstr "Jenis Medan"
 
-#: migration/keximigrate.cpp:456
+#: migration/keximigrate.cpp:454
 msgid ""
 "The data type for %1 could not be determined. Please select one of the "
 "following data types"
 msgstr ""
 "Data jenis %1 tidak dapat ditemui. Pilih satu daripada jenis data yang berikut"
 
-#: migration/keximigrate.cpp:520
+#: migration/keximigrate.cpp:518
 #, fuzzy
 msgid ""
 "Incompatible migration driver's \"%1\" version: found version %2, expected "
@@ -2350,76 +2467,77 @@ msgstr ""
 "Versi \"%1\" pemacu pangkalan data tak serasi: ditemui versi %2, dijangka versi "
 "%3."
 
-#: kexidb/field.cpp:629
+#: kexidb/field.cpp:640
 msgid "Invalid Type"
 msgstr "Jenis Tak Sah"
 
-#: kexidb/field.cpp:630
+#: kexidb/field.cpp:641
 msgid "Byte"
 msgstr "Bait"
 
-#: kexidb/field.cpp:631
+#: kexidb/field.cpp:642
 msgid "Short Integer Number"
 msgstr "Nombor Integer Pendek"
 
-#: kexidb/field.cpp:632 kexidb/field.cpp:662
+#: kexidb/field.cpp:643 kexidb/field.cpp:673
 msgid "Integer Number"
 msgstr "Nombor Integer"
 
-#: kexidb/field.cpp:633
+#: kexidb/field.cpp:644
 msgid "Big Integer Number"
 msgstr "Nombor Integer Besar"
 
-#: kexidb/field.cpp:634
+#: kexidb/field.cpp:645
 msgid "Yes/No Value"
 msgstr "Nilai Ya/Tidak "
 
-#: kexidb/field.cpp:635 plugins/importexport/csv/kexicsvimportdialog.cpp:224
+#: kexidb/field.cpp:646 plugins/importexport/csv/kexicsvimportdialog.cpp:224
 msgid "Date"
 msgstr "Tarikh"
 
-#: kexidb/field.cpp:636
+#: kexidb/field.cpp:647
 msgid "Date and Time"
 msgstr "Tarikh dan Masa"
 
-#: kexidb/field.cpp:637 plugins/importexport/csv/kexicsvimportdialog.cpp:225
+#: kexidb/field.cpp:648 plugins/importexport/csv/kexicsvimportdialog.cpp:225
 msgid "Time"
 msgstr "Masa"
 
-#: kexidb/field.cpp:638
+#: kexidb/field.cpp:649
 msgid "Single Precision Number"
 msgstr "Nombor Kepersisan Tunggal"
 
-#: kexidb/field.cpp:639
+#: kexidb/field.cpp:650
 msgid "Double Precision Number"
 msgstr "Nombor Kepersisan Kembar"
 
-#: kexidb/field.cpp:640 kexidb/field.cpp:661
+#: kexidb/field.cpp:651 kexidb/field.cpp:672
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:222
 msgid "Text"
 msgstr "Teks"
 
-#: kexidb/field.cpp:641
+#: kexidb/field.cpp:652
 msgid "Long Text"
 msgstr "Teks Panjang"
 
-#: kexidb/field.cpp:642 kexidb/field.cpp:666
+#: kexidb/field.cpp:653 kexidb/field.cpp:677
+#: plugins/macros/kexiactions/objectvariable.h:55
 msgid "Object"
 msgstr "Objek"
 
-#: kexidb/field.cpp:660
+#: kexidb/field.cpp:671
 msgid "Invalid Group"
 msgstr "Kumpulan Tak Sah"
 
-#: kexidb/field.cpp:663
+#: kexidb/field.cpp:674
 msgid "Floating Point Number"
 msgstr "Nombor Titik Apung"
 
-#: kexidb/field.cpp:664
+#: kexidb/field.cpp:675
 msgid "Yes/No"
 msgstr "Ya/Tidak"
 
-#: kexidb/field.cpp:665 plugins/importexport/csv/kexicsvimportdialog.cpp:226
+#: kexidb/field.cpp:676 plugins/importexport/csv/kexicsvimportdialog.cpp:226
 msgid "Date/Time"
 msgstr "Tarikh/Masa"
 
@@ -2446,95 +2564,128 @@ msgstr "Ralat tak diketahui"
 msgid "No connection for cursor open operation specified"
 msgstr "Tiada sambungan untuk operasi buka kursor ditetapkan"
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:201
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:218
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:224
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:80
+#, fuzzy
+msgid "Compacting database"
+msgstr "Membuka pangkalan data "
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:81
+#, fuzzy
+msgid "Compacting database \"%1\"..."
+msgstr "Membuka pangkalan data \"%1\" gagal"
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:100
+msgid "The database has been compacted. Current size decreased by %1% to %2."
+msgstr ""
+
+#: kexidb/drivers/sqlite/sqliteadmin.cpp:47
+#, fuzzy
+msgid "Could not compact database \"%1\"."
+msgstr "Tidak dapat memuatkan pemacu pangkalan data \"%1\"."
+
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:194
+#, fuzzy
+msgid "Do you want to open file \"%1\" as read-only?"
+msgstr "Anda ingin membukanya dalam Papar Teks?"
+
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:197
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:213
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:219
 msgid "The file is probably already open on this or another computer."
 msgstr ""
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:202
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:225
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:198
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:220
 msgid "Could not gain exclusive access for writing the file."
 msgstr ""
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:219
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:200
+msgid "Open As Read-Only"
+msgstr ""
+
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:214
 msgid "Could not gain exclusive access for reading and writing the file."
 msgstr ""
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:257
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:244
+#, fuzzy
+msgid "Could not close busy database."
+msgstr "Tidak dapat memuatkan pemacu pangkalan data \"%1\"."
+
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:256
 msgid "Could not remove file \"%1\"."
 msgstr "Tidak dapat alih keluar fail \"%1\""
 
-#: kexidb/driver_p.cpp:48
+#: kexidb/driver_p.cpp:49
 msgid "Client library version"
 msgstr "Versi pustaka klien"
 
-#: kexidb/driver_p.cpp:52
+#: kexidb/driver_p.cpp:53
 msgid "Default character encoding on server"
 msgstr "Pengekodan aksara piawai pada pelayan"
 
-#: kexidb/driver_p.cpp:58
+#: kexidb/driver_p.cpp:59
 msgid "File-based database driver"
 msgstr "Pemacu pangkalan data berasaskan fail"
 
-#: kexidb/driver_p.cpp:61
+#: kexidb/driver_p.cpp:62
 msgid "File-based database's MIME type"
 msgstr "Jenis MIME bagi pangkalan data berasaskan fail"
 
-#: kexidb/driver_p.cpp:67
+#: kexidb/driver_p.cpp:68
 msgid "Single transactions"
 msgstr "Urusan tunggal"
 
-#: kexidb/driver_p.cpp:69
+#: kexidb/driver_p.cpp:70
 msgid "Multiple transactions"
 msgstr "Urusan berbilang"
 
-#: kexidb/driver_p.cpp:71
+#: kexidb/driver_p.cpp:72
 msgid "Nested transactions"
 msgstr "Urusan tersarang"
 
-#: kexidb/driver_p.cpp:73
+#: kexidb/driver_p.cpp:74
 msgid "Ignored"
 msgstr "Abaikan"
 
-#: kexidb/driver_p.cpp:75 plugins/importexport/csv/kexicsvwidgets.cpp:137
+#: kexidb/driver_p.cpp:76 plugins/importexport/csv/kexicsvwidgets.cpp:137
 #: plugins/importexport/csv/kexicsvwidgets.cpp:152
 #: plugins/queries/kexiquerydesignerguieditor.cpp:1531
 msgid "None"
 msgstr "Tiada "
 
-#: kexidb/driver_p.cpp:80
+#: kexidb/driver_p.cpp:81
 #, fuzzy
 msgid "Single transactions support"
 msgstr "Urusan tunggal"
 
-#: kexidb/driver_p.cpp:82
+#: kexidb/driver_p.cpp:83
 #, fuzzy
 msgid "Multiple transactions support"
 msgstr "Urusan berbilang"
 
-#: kexidb/driver_p.cpp:84
+#: kexidb/driver_p.cpp:85
 #, fuzzy
 msgid "Nested transactions support"
 msgstr "Urusan tersarang"
 
-#: kexidb/driver_p.cpp:89
+#: kexidb/driver_p.cpp:90
 msgid "KexiDB driver version"
 msgstr "Versi pemacu KexiDB"
 
-#: kexidb/cursor.cpp:120
+#: kexidb/cursor.cpp:136
 msgid "No query statement or schema defined."
 msgstr "Tiada penyataan pertanyaan atau skema ditentukan."
 
-#: kexidb/cursor.cpp:126
+#: kexidb/cursor.cpp:142
 msgid "Query statement is empty."
 msgstr "Penyataan pertanyaan kosong."
 
-#: kexidb/cursor.cpp:136
+#: kexidb/cursor.cpp:152
 msgid "Error opening database cursor."
 msgstr "Ralat semasa membuka kursor pangkalan data."
 
-#: kexidb/cursor.cpp:391 kexidb/cursor.cpp:414
+#: kexidb/cursor.cpp:407 kexidb/cursor.cpp:430
 msgid "Cannot fetch next record."
 msgstr "Tidak dapat mengambil rekod berikutnya."
 
@@ -2550,7 +2701,19 @@ msgid ""
 "expr"
 msgstr "expr"
 
-#: kexidb/drivermanager.cpp:368
+#: kexidb/drivermanager.cpp:186
+msgid "Could not find any database drivers."
+msgstr "Tidak jumpa apa-apa pemacu pangkalan data."
+
+#: kexidb/drivermanager.cpp:196 kexidb/drivermanager.cpp:213
+msgid "Could not find database driver \"%1\"."
+msgstr "Tidak jumpa pemacu  pangkalan data \"%1\"."
+
+#: kexidb/drivermanager.cpp:225
+msgid "Could not load database driver \"%1\"."
+msgstr "Tidak dapat memuatkan pemacu pangkalan data \"%1\"."
+
+#: kexidb/drivermanager.cpp:370
 msgid "No such driver service: \"%1\"."
 msgstr "Tiada servis pemacu seperti itu: \"%1\"."
 
@@ -2665,7 +2828,7 @@ msgstr "Pengenal pasti sepatutnya mula dengan huruf atau aksara '_'"
 msgid "Table not found"
 msgstr "Jadual tidak ditemui"
 
-#: kexidb/connection.cpp:1501 kexidb/expression.cpp:596
+#: kexidb/connection.cpp:1548 kexidb/expression.cpp:596
 msgid "Unknown table \"%1\""
 msgstr "Jadual \"%1\" tak diketahui"
 
@@ -2673,7 +2836,7 @@ msgstr "Jadual \"%1\" tak diketahui"
 msgid "file"
 msgstr "fail"
 
-#: kexidb/driver.cpp:100
+#: kexidb/driver.cpp:108
 msgid ""
 "Incompatible database driver's \"%1\" version: found version %2, expected "
 "version %3."
@@ -2681,17 +2844,17 @@ msgstr ""
 "Versi \"%1\" pemacu pangkalan data tak serasi: ditemui versi %2, dijangka versi "
 "%3."
 
-#: kexidb/driver.cpp:107
+#: kexidb/driver.cpp:115
 msgid ""
 "Invalid database driver's \"%1\" implementation:\n"
 msgstr ""
 "Pelaksanaan \"%1\" pemacu pangkalan data tak sah:\n"
 
-#: kexidb/driver.cpp:108
+#: kexidb/driver.cpp:116
 msgid "Value of \"%1\" is not initialized for the driver."
 msgstr "Nilai \"%1\" tidak dimulakan untuk pemacu. "
 
-#: kexidb/driver.cpp:166
+#: kexidb/driver.cpp:186
 msgid "File name expected for file-based database driver."
 msgstr "Nama fail yang dijangka untuk pemacu pangkalan data berasaskan fail."
 
@@ -2717,202 +2880,208 @@ msgstr "Tidak dapat memuatkan pemacu pangkalan data \"%1\"."
 msgid "Could not read database properties."
 msgstr "Tidak jumpa apa-apa pemacu pangkalan data."
 
-#: kexidb/connection.cpp:85
+#: kexidb/connection.cpp:88
 msgid "Invalid database contents. "
 msgstr "Kandungan pangkalan data tak sah."
 
-#: kexidb/connection.cpp:89
+#: kexidb/connection.cpp:92
 msgid "It is a system object."
 msgstr "Ia adalah objek sistem."
 
-#: kexidb/connection.cpp:211
+#: kexidb/connection.cpp:214
 msgid "Connection already established."
 msgstr "Sambungan sudah tersedia."
 
-#: kexidb/connection.cpp:217
+#: kexidb/connection.cpp:220
 msgid "Could not open \"%1\" project file."
 msgstr "Tidak dapat  buka fail projek \"%1\"."
 
-#: kexidb/connection.cpp:218
+#: kexidb/connection.cpp:221
 msgid "Could not connect to \"%1\" database server."
 msgstr "Tidak dapat sambung ke pelayan pangkalan data \"%1\"."
 
-#: kexidb/connection.cpp:260
+#: kexidb/connection.cpp:263
 msgid "Not connected to the database server."
 msgstr "Tidak disambungkan ke pelayan pangkalan data."
 
-#: kexidb/connection.cpp:270
+#: kexidb/connection.cpp:273
 msgid "Currently no database is used."
 msgstr "Ketika ini tiada pangkalan data digunakan."
 
-#: kexidb/connection.cpp:326
+#: kexidb/connection.cpp:329
 msgid "The database \"%1\" does not exist."
 msgstr "Pangkalan data \"%1\" tidak wujud."
 
-#: kexidb/connection.cpp:346
+#: kexidb/connection.cpp:349
 msgid "Database file \"%1\" does not exist."
 msgstr "Fail pangkalan data \"%1\" tidak wujud."
 
-#: kexidb/connection.cpp:352
+#: kexidb/connection.cpp:355
 msgid "Database file \"%1\" is not readable."
 msgstr "Fail pangkalan data \"%1\" tidak boleh baca."
 
-#: kexidb/connection.cpp:358
+#: kexidb/connection.cpp:361
 msgid "Database file \"%1\" is not writable."
 msgstr "Fail pangkalan data \"%1\" tidak boleh tulis."
 
-#: kexidb/connection.cpp:401
+#: kexidb/connection.cpp:404
 msgid "Database \"%1\" already exists."
 msgstr "Pangkalan \"%1\" sudah wujud."
 
-#: kexidb/connection.cpp:406
+#: kexidb/connection.cpp:409
 msgid ""
 "Cannot create database \"%1\". This name is reserved for system database."
 msgstr ""
 "Tidak dapat cipta pangkalan data \"%1\". Nama ini disimpan khas untuk pangkalan "
 "data sistem."
 
-#: kexidb/connection.cpp:421
+#: kexidb/connection.cpp:424
 msgid "Error creating database \"%1\" on the server."
 msgstr "Ralat semasa mencipta pangkalan data \"%1\" pada pelayan."
 
-#: kexidb/connection.cpp:435
+#: kexidb/connection.cpp:438
 msgid "Database \"%1\" created but could not be opened."
 msgstr "Pangkalan data \"%1\" telah dicipta tetapi tidak dapat dibuka. "
 
-#: kexidb/connection.cpp:529
+#: kexidb/connection.cpp:532
 #, fuzzy
 msgid "Opening database \"%1\" failed."
 msgstr "Membuka pangkalan data \"%1\" gagal"
 
-#: kexidb/connection.cpp:568
+#: kexidb/connection.cpp:571
 msgid "Database version (%1) does not match Kexi application's version (%2)"
 msgstr ""
 "Pangkalan data versi (%1) tidak sepadan dengan versi (%2) aplikasi Kexi"
 
-#: kexidb/connection.cpp:632
+#: kexidb/connection.cpp:635
 msgid "Cannot find any database for temporary connection."
 msgstr "Tidak jumpa mana-mana pangkalan data untuk sambungan sementara."
 
-#: kexidb/connection.cpp:641
+#: kexidb/connection.cpp:644
 msgid "Error during starting temporary connection using \"%1\" database name."
 msgstr ""
 "Ralat semasa memulakan sambungan sementara menggunakan nama pangkalan data "
 "\"%1\"."
 
-#: kexidb/connection.cpp:658
+#: kexidb/connection.cpp:661
 msgid "Cannot drop database - name not specified."
 msgstr "Tidak boleh gugurkan pangkalan data - nama tidak ditetapkan."
 
-#: kexidb/connection.cpp:676
+#: kexidb/connection.cpp:679
 msgid "Cannot delete database - name not specified."
 msgstr "Tidak boleh hapuskan pangkalan data - nama tidak ditetapkan."
 
-#: kexidb/connection.cpp:681
+#: kexidb/connection.cpp:684
 msgid "Cannot delete system database \"%1\"."
 msgstr "Tidak boleh hapuskan pangkalan data \"%1\" sistem."
 
-#: kexidb/connection.cpp:1007
+#: kexidb/connection.cpp:1010
 msgid "Error while executing SQL statement."
 msgstr "Ralat semasa melaksanakan penyataan SQL."
 
-#: kexidb/connection.cpp:1217
+#: kexidb/connection.cpp:1285
 msgid "Cannot create table without fields."
 msgstr "Tidak dapat cipta jadual tanpa medan."
 
-#: kexidb/connection.cpp:1227
+#: kexidb/connection.cpp:1295
 msgid "System name \"%1\" cannot be used as table name."
 msgstr "Nama sistem \"%1\" tidak boleh digunakan sebagai nama jadual."
 
-#: kexidb/connection.cpp:1236
+#: kexidb/connection.cpp:1304
 msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
 msgstr ""
 "Nama sistem \"%1\" tidak boleh digunakan sebagai satu medan dalam jadual "
 "\"%2\". "
 
-#: kexidb/connection.cpp:1252
+#: kexidb/connection.cpp:1320
 msgid "Could not create the same table \"%1\" twice."
 msgstr "Tidak dapat cipta jadual \"%1\" yang sama dua kali."
 
-#: kexidb/connection.cpp:1266 plugins/tables/kexitablepart.cpp:194
+#: kexidb/connection.cpp:1334 plugins/tables/kexitablepart.cpp:194
 msgid "Table \"%1\" already exists."
 msgstr "Jadual \"%1\" sudah wujud."
 
-#: kexidb/connection.cpp:1381
+#: kexidb/connection.cpp:1425
 msgid "Could not remove object's data."
 msgstr "Tidak dapat alih keluar data objek."
 
-#: kexidb/connection.cpp:1412
+#: kexidb/connection.cpp:1456
 msgid ""
 "Table \"%1\" cannot be removed.\n"
 msgstr ""
 "Jadual \"%1\" tidak dapat dialih keluar.\n"
 
-#: kexidb/connection.cpp:1419
+#: kexidb/connection.cpp:1463
 msgid "Unexpected name or identifier."
 msgstr "Nama atau pengenal pasti yang tak dijangka."
 
-#: kexidb/connection.cpp:1464
+#: kexidb/connection.cpp:1511
 msgid "Table \"%1\" does not exist."
 msgstr "Jadual \"%1\" tidak wujud."
 
-#: kexidb/connection.cpp:1479
+#: kexidb/connection.cpp:1526
 msgid "Could not alter table \"%1\" using the same table."
 msgstr "Tidak dapat pinda jadual \"%1\" menggunakan jadual yang sama."
 
-#: kexidb/connection.cpp:1505
+#: kexidb/connection.cpp:1552
 msgid "Invalid table name \"%1\""
 msgstr "Nama jadual \"%1\" tak sah"
 
-#: kexidb/connection.cpp:1510
+#: kexidb/connection.cpp:1558
 msgid "Could rename table \"%1\" using the same name."
 msgstr "Dapat menamakan semula jadual \"%1\" menggunakan nama yang sama."
 
-#: kexidb/connection.cpp:1533
+#: kexidb/connection.cpp:1568
 msgid "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
 msgstr ""
 "Tidak dapat menamakan semula jadual \"%1\" kepada \"%2\". Jadual \"%3\" sudah "
 "wujud. "
 
-#: kexidb/connection.cpp:1640
+#: kexidb/connection.cpp:1678
 msgid "Query \"%1\" does not exist."
 msgstr "Pertanyaan \"%1\" tidak wujud. "
 
-#: kexidb/connection.cpp:1737
+#: kexidb/connection.cpp:1775
 msgid "Transaction already started."
 msgstr "Urusan sudah dimulakan."
 
-#: kexidb/connection.cpp:1779 kexidb/connection.cpp:1815
+#: kexidb/connection.cpp:1817 kexidb/connection.cpp:1853
 msgid "Transaction not started."
 msgstr "Urusan belum dimulakan."
 
-#: kexidb/connection.cpp:1793
+#: kexidb/connection.cpp:1831
 msgid "Error on commit transaction"
 msgstr "Ralat semasa menjalankan urusan"
 
-#: kexidb/connection.cpp:1829
+#: kexidb/connection.cpp:1867
 msgid "Error on rollback transaction"
 msgstr "Ralat semasa urusan gulung balik"
 
-#: kexidb/connection.cpp:1988 kexidb/connection.cpp:2272
+#: kexidb/connection.cpp:2026 kexidb/connection.cpp:2505
 msgid "Invalid object name \"%1\""
 msgstr "Nama objek \"%1\" tak sah"
 
-#: kexidb/connection.cpp:2107
+#: kexidb/connection.cpp:2145
 msgid "Column %1 does not exist for the query."
 msgstr "Lajur %1 tidak wujud untuk pertanyaan."
 
-#: kexidb/connection.cpp:2245
+#: kexidb/connection.cpp:2404
+msgid ""
+"Error in XML data: \"%1\" in line %2, column %3.\n"
+"XML data: "
+msgstr ""
+
+#: kexidb/connection.cpp:2476
 #, fuzzy
 msgid "Table has no fields defined."
 msgstr "Jadual \"%1\" tiada medan \"%2\""
 
-#: kexidb/connection.cpp:2386
+#: kexidb/connection.cpp:2624
 msgid ""
 "Could not find definition for query \"%1\". Removing this query is recommended."
 msgstr ""
 
-#: kexidb/connection.cpp:2395
+#: kexidb/connection.cpp:2633
 msgid ""
 "<p>Could not load definition for query \"%1\". SQL statement for this query is "
 "invalid:"
@@ -2920,16 +3089,16 @@ msgid ""
 "<p>You can open this query in Text View and correct it.</p>"
 msgstr ""
 
-#: kexidb/connection.cpp:2593
+#: kexidb/connection.cpp:2831
 msgid "Could not update row because there is no master table defined."
 msgstr "Tidak dapat kemas kini baris kerana tiada jadual induk ditentukan. "
 
-#: kexidb/connection.cpp:2600
+#: kexidb/connection.cpp:2838
 msgid "Could not update row because master table has no primary key defined."
 msgstr ""
 "Tidak dapat kemas kini baris kerana tiada kunci utama jadual induk ditentukan. "
 
-#: kexidb/connection.cpp:2622
+#: kexidb/connection.cpp:2860
 msgid ""
 "Could not update row because it does not contain entire master table's primary "
 "key."
@@ -2937,45 +3106,45 @@ msgstr ""
 "Tidak dapat kemas kini baris kerana ia tidak ada kunci utama seluruh jadual "
 "induk."
 
-#: kexidb/connection.cpp:2633 kexidb/connection.cpp:2854
+#: kexidb/connection.cpp:2871 kexidb/connection.cpp:3092
 msgid "Primary key's field \"%1\" cannot be empty."
 msgstr "Medan \"%1\" kunci utama tidak sepatutnya kosong. "
 
-#: kexidb/connection.cpp:2650
+#: kexidb/connection.cpp:2888
 msgid "Row updating on the server failed."
 msgstr "Mengemaskinikan baris pada pelayan gagal."
 
-#: kexidb/connection.cpp:2682
+#: kexidb/connection.cpp:2920
 msgid "Could not insert row because there is no master table defined."
 msgstr "Tidak dapat selit baris kerana tiada jadual induk ditentukan."
 
-#: kexidb/connection.cpp:2701
+#: kexidb/connection.cpp:2939
 msgid "Could not insert row because master table has no primary key defined."
 msgstr ""
 "Tidak dapat selit baris kerana tiada kunci utama jadual induk ditentukan."
 
-#: kexidb/connection.cpp:2710
+#: kexidb/connection.cpp:2948
 msgid ""
 "Could not insert row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 "Tidak dapat selit baris kerana ia tidak ada kunci utama seluruh jadual induk."
 
-#: kexidb/connection.cpp:2746
+#: kexidb/connection.cpp:2984
 msgid "Row inserting on the server failed."
 msgstr "Menyelit baris pada pelayan gagal."
 
-#: kexidb/connection.cpp:2820
+#: kexidb/connection.cpp:3058
 msgid "Could not delete row because there is no master table defined."
 msgstr "Tidak dapat hapuskan baris kerana tiada jadual induk ditentukan."
 
-#: kexidb/connection.cpp:2830
+#: kexidb/connection.cpp:3068
 msgid ""
 "Could not delete row because there is no primary key for master table defined."
 msgstr ""
 "Tidak dapat hapuskan baris kerana tiada kunci utama jadual induk ditentukan."
 
-#: kexidb/connection.cpp:2845
+#: kexidb/connection.cpp:3083
 msgid ""
 "Could not delete row because it does not contain entire master table's primary "
 "key."
@@ -2983,43 +3152,43 @@ msgstr ""
 "Tidak dapat hapuskan baris kerana ia tidak ada kunci utama seluruh jadual "
 "induk."
 
-#: kexidb/connection.cpp:2871 kexidb/connection.cpp:2894
+#: kexidb/connection.cpp:3109 kexidb/connection.cpp:3132
 msgid "Row deletion on the server failed."
 msgstr "Menghapuskan baris pada pelayan gagal. "
 
-#: kexidb/utils.cpp:133
+#: kexidb/utils.cpp:135
 msgid "Message from server:"
 msgstr "Mesej daripada pelayan:"
 
-#: kexidb/utils.cpp:135
+#: kexidb/utils.cpp:137
 msgid "SQL statement:"
 msgstr "Penyataan SQL:"
 
-#: kexidb/utils.cpp:147
+#: kexidb/utils.cpp:149
 msgid "Server result name:"
 msgstr "Nama hasil pelayan:"
 
-#: kexidb/utils.cpp:151
+#: kexidb/utils.cpp:153
 msgid "Server result number:"
 msgstr "Bilangan hasil pelayan:"
 
-#: kexidb/utils.cpp:364 kexidb/utils.cpp:420 kexidb/utils.cpp:426
+#: kexidb/utils.cpp:366 kexidb/utils.cpp:422 kexidb/utils.cpp:428
 #, fuzzy
 msgid "Test Connection"
 msgstr "Sambungan"
 
-#: kexidb/utils.cpp:364
+#: kexidb/utils.cpp:366
 #, fuzzy
 msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
 msgstr "Tidak dapat sambung ke pelayan pangkalan data \"%1\"."
 
-#: kexidb/utils.cpp:418
+#: kexidb/utils.cpp:420
 msgid ""
 "<qt>Test connection to <b>%1</b> database server failed. The server is not "
 "responding.</qt>"
 msgstr ""
 
-#: kexidb/utils.cpp:424
+#: kexidb/utils.cpp:426
 msgid ""
 "<qt>Test connection to <b>%1</b> database server established successfully.</qt>"
 msgstr ""
@@ -3036,37 +3205,37 @@ msgstr "&Projek"
 msgid "&Import"
 msgstr "&Import"
 
-#. i18n: file data/kexiui.rc line 28
+#. i18n: file data/kexiui.rc line 26
 #: rc.cpp:12
 #, no-c-format
 msgid "&Export"
 msgstr "&Eksport"
 
-#. i18n: file data/kexiui.rc line 54
+#. i18n: file data/kexiui.rc line 53
 #: rc.cpp:18
 #, no-c-format
 msgid "Copy &Special"
 msgstr ""
 
-#. i18n: file data/kexiui.rc line 58
+#. i18n: file data/kexiui.rc line 57
 #: rc.cpp:21
 #, no-c-format
 msgid "Paste &Special"
 msgstr ""
 
-#. i18n: file data/kexiui.rc line 90
+#. i18n: file data/kexiui.rc line 89
 #: rc.cpp:30
 #, no-c-format
 msgid "&Format"
 msgstr "&Format"
 
-#. i18n: file data/kexiui.rc line 97
+#. i18n: file data/kexiui.rc line 96
 #: rc.cpp:33
 #, no-c-format
 msgid "&Data"
 msgstr "&Data"
 
-#. i18n: file data/kexiui.rc line 102
+#. i18n: file data/kexiui.rc line 101
 #: rc.cpp:36
 #, no-c-format
 msgid "Sort"
@@ -3078,38 +3247,26 @@ msgstr "Isih"
 msgid "&Migrate"
 msgstr "&Penghijrahan "
 
-#. i18n: file data/kexiui.rc line 136
+#. i18n: file data/kexiui.rc line 137
 #: rc.cpp:51
 #, no-c-format
 msgid "&Other"
 msgstr "&Lain-lain "
 
-#. i18n: file data/kexiui.rc line 152
+#. i18n: file data/kexiui.rc line 153
 #: rc.cpp:57
 #, no-c-format
 msgid "Other &Licenses"
 msgstr "&Lesen Lain"
 
-#. i18n: file data/kexiui.rc line 182
+#. i18n: file data/kexiui.rc line 183
 #: rc.cpp:66
 #, no-c-format
 msgid "Data"
 msgstr "Data"
 
-#. i18n: file ./main/startup/KexiPrjTypeSelectorBase.ui line 53
-#: rc.cpp:70
-#, fuzzy, no-c-format
-msgid "Projects stored on a database server"
-msgstr "Projek Baru Disimpan dalam Pelayan Pangkalan Data"
-
-#. i18n: file ./main/startup/KexiPrjTypeSelectorBase.ui line 108
-#: rc.cpp:75
-#, fuzzy, no-c-format
-msgid "Projects stored in a file"
-msgstr "Projek Baru Disimpan dalam Fail"
-
 #. i18n: file ./main/startup/KexiNewPrjTypeSelector.ui line 75
-#: rc.cpp:79
+#: rc.cpp:70
 #, no-c-format
 msgid ""
 "Kexi will create a new database project. Select a storage method which will be "
@@ -3119,7 +3276,7 @@ msgstr ""
 "digunakan untuk menyimpan projek baru.\n"
 
 #. i18n: file ./main/startup/KexiOpenExistingFile.ui line 36
-#: rc.cpp:83
+#: rc.cpp:74
 #, no-c-format
 msgid ""
 "<b>Select existing Kexi project file to open:</b>\n"
@@ -3127,13 +3284,13 @@ msgstr ""
 "<b>Pilih fail projek Kexi sedia ada untuk membuka:</b>\n"
 
 #. i18n: file ./main/startup/KexiOpenExistingFile.ui line 97
-#: rc.cpp:87
+#: rc.cpp:78
 #, no-c-format
 msgid "&Advanced "
 msgstr "&Lanjutan"
 
 #. i18n: file ./main/startup/KexiOpenExistingFile.ui line 113
-#: rc.cpp:90
+#: rc.cpp:81
 #, no-c-format
 msgid ""
 "Click \"Advanced\" button if you want to find an existing project on a server "
@@ -3143,43 +3300,46 @@ msgstr ""
 "bukan pada fail."
 
 #. i18n: file ./main/startup/KexiConnSelectorBase.ui line 33
-#: plugins/tables/kexialtertabledialog.cpp:353 rc.cpp:93 rc.cpp:265
+#: plugins/macros/kexiactions/objectnamevariable.h:46
+#: plugins/tables/kexitabledesignerview.cpp:272 rc.cpp:84 rc.cpp:268
+#: rc.cpp:288
 #, no-c-format
 msgid "Name"
 msgstr "Nama"
 
 #. i18n: file ./main/startup/KexiConnSelectorBase.ui line 44
-#: plugins/tables/kexialtertabledialog.cpp:358 rc.cpp:96 rc.cpp:139 rc.cpp:268
+#: plugins/tables/kexitabledesignerview.cpp:277 rc.cpp:87 rc.cpp:130
+#: rc.cpp:271
 #, no-c-format
 msgid "Type"
 msgstr "Jenis"
 
 #. i18n: file ./main/startup/KexiConnSelectorBase.ui line 55
-#: rc.cpp:99
+#: rc.cpp:90
 #, no-c-format
 msgid "Server Information"
 msgstr "Maklumat Pelayan"
 
 #. i18n: file ./main/startup/KexiConnSelectorBase.ui line 107
-#: rc.cpp:102
+#: rc.cpp:93
 #, no-c-format
 msgid "&Edit..."
 msgstr "&Edit..."
 
 #. i18n: file ./main/startup/KexiConnSelectorBase.ui line 123
-#: rc.cpp:105
+#: rc.cpp:96
 #, no-c-format
 msgid "&Add..."
 msgstr "&Tambah..."
 
 #. i18n: file ./main/startup/KexiConnSelectorBase.ui line 187
-#: rc.cpp:111
+#: rc.cpp:102
 #, fuzzy, no-c-format
 msgid "Description"
 msgstr "&Huraian:"
 
 #. i18n: file ./main/startup/KexiConnSelectorBase.ui line 247
-#: rc.cpp:114
+#: rc.cpp:105
 #, fuzzy, no-c-format
 msgid ""
 "<b>Select Existing Database Server's Connection From the List Below</b>\n"
@@ -3193,19 +3353,19 @@ msgstr ""
 "senarai.\n"
 
 #. i18n: file ./main/startup/KexiServerDBNamePage.ui line 24
-#: rc.cpp:120 rc.cpp:126
+#: rc.cpp:111 rc.cpp:117
 #, no-c-format
 msgid "Project caption: "
 msgstr "Kapsyen projek:"
 
 #. i18n: file ./main/startup/KexiServerDBNamePage.ui line 32
-#: rc.cpp:123
+#: rc.cpp:114
 #, no-c-format
 msgid "Project's database name: "
 msgstr "Nama pangkalan data projek:"
 
 #. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 44
-#: rc.cpp:129
+#: rc.cpp:120
 #, no-c-format
 msgid ""
 "<b>There are Kexi projects you have recently opened.</b> "
@@ -3214,220 +3374,256 @@ msgstr ""
 "<b>Ini projek Kexi yang baru anda buka.</b>Pilih satu yang ingin dibuka:\n"
 
 #. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 53
-#: rc.cpp:133
+#: rc.cpp:124
 #, no-c-format
 msgid "Project Name"
 msgstr "Nama Projek"
 
 #. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 64
-#: rc.cpp:136 rc.cpp:237 widget/kexidbconnectionwidget.cpp:140
+#: rc.cpp:127 rc.cpp:240 widget/kexidbconnectionwidget.cpp:140
 #, no-c-format
 msgid "Database"
 msgstr "Pangkalan Data"
 
 #. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 86
-#: rc.cpp:142
+#: rc.cpp:133
 #, no-c-format
 msgid "Connection"
 msgstr "Sambungan"
 
 #. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 16
-#: rc.cpp:145
+#: rc.cpp:136
 #, no-c-format
 msgid "."
 msgstr ""
 
 #. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 57
-#: rc.cpp:149
+#: rc.cpp:140
 #, no-c-format
 msgid "<h2>Page Setup for Printing \"%1\" Table Data</h2>"
 msgstr ""
 
 #. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 91
-#: rc.cpp:152
+#: rc.cpp:143
 #, fuzzy, no-c-format
 msgid "Set Font..."
 msgstr "Simpan ke Fail..."
 
 #. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 107
-#: rc.cpp:155
+#: rc.cpp:146
 #, fuzzy, no-c-format
 msgid "Page title:"
 msgstr "Halaman:"
 
 #. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 183
-#: rc.cpp:161
+#: rc.cpp:152
 #, no-c-format
 msgid "Add page numbers"
 msgstr ""
 
 #. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 191
-#: rc.cpp:164
+#: rc.cpp:155
 #, no-c-format
 msgid "Page Size && Margins"
 msgstr ""
 
 #. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 220
-#: rc.cpp:168
+#: rc.cpp:159
 #, no-c-format
 msgid "Change..."
 msgstr ""
 
 #. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 259
-#: rc.cpp:171
+#: rc.cpp:162
 #, no-c-format
 msgid "Save This Setup as Default"
 msgstr ""
 
 #. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 282
-#: rc.cpp:176
+#: rc.cpp:167
 #, fuzzy, no-c-format
 msgid "Open This Table"
 msgstr "&Buka Jadual"
 
 #. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 299
-#: rc.cpp:181
+#: rc.cpp:172
 #, fuzzy, no-c-format
 msgid "Related actions:"
 msgstr "Urusan tersarang"
 
 #. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 317
-#: rc.cpp:184
+#: rc.cpp:175
 #, fuzzy, no-c-format
 msgid "Add date and time"
 msgstr "Tarikh dan Masa"
 
 #. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 333
-#: rc.cpp:187
+#: rc.cpp:178
 #, no-c-format
 msgid "Add table borders"
 msgstr ""
 
 #. i18n: file ./widget/kexidbconnectionwidgetdetailsbase.ui line 38
-#: rc.cpp:190
+#: rc.cpp:181
 #, no-c-format
 msgid "Use socket &file instead of TCP/IP port:"
 msgstr "Gunakan &fail soket dan bukan port TCP/IP:"
 
-#. i18n: file ./widget/kexidbconnectionwidgetdetailsbase.ui line 151
-#: rc.cpp:197
+#. i18n: file ./widget/kexidbconnectionwidgetdetailsbase.ui line 150
+#: rc.cpp:188
 #, no-c-format
 msgid "&Description:"
 msgstr "&Huraian:"
 
+#. i18n: file ./widget/kexiprjtypeselectorbase.ui line 16
+#: rc.cpp:191
+#, no-c-format
+msgid "KexiPrjTypeSelectorBase"
+msgstr ""
+
+#. i18n: file ./widget/kexiprjtypeselectorbase.ui line 56
+#: rc.cpp:195
+#, fuzzy, no-c-format
+msgid "Projects stored on a database server"
+msgstr "Projek Baru Disimpan dalam Pelayan Pangkalan Data"
+
+#. i18n: file ./widget/kexiprjtypeselectorbase.ui line 67
+#: rc.cpp:198
+#, fuzzy, no-c-format
+msgid "Projects stored in a file"
+msgstr "Projek Baru Disimpan dalam Fail"
+
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 16
-#: rc.cpp:200
+#: rc.cpp:203
 #, no-c-format
 msgid "KexiConnectionWidget"
 msgstr "Widget Sambungan Kexi"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 101
-#: rc.cpp:203
+#: rc.cpp:206
 #, fuzzy, no-c-format
 msgid "Database Server"
 msgstr "Pelayan pangkalan data:%1"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 137
-#: rc.cpp:206
+#: rc.cpp:209
 #, no-c-format
 msgid "Port:"
 msgstr "Port:"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 150
-#: rc.cpp:209
+#: rc.cpp:212
 #, fuzzy, no-c-format
 msgid "Local server"
 msgstr "pelayan pangkalan data lokal"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 181
-#: rc.cpp:213
+#: rc.cpp:216
 #, no-c-format
 msgid "&Hostname:"
 msgstr "&Nama hos:"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 204
-#: rc.cpp:219
+#: rc.cpp:222
 #, fuzzy, no-c-format
 msgid "Remote server"
 msgstr "Jauh"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 218
-#: rc.cpp:222
+#: rc.cpp:225
 #, no-c-format
 msgid "&Engine:"
 msgstr "&Enjin:"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 250
-#: rc.cpp:225
+#: rc.cpp:228
 #, no-c-format
 msgid "Authentication"
 msgstr "Pengesahan"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 261
-#: rc.cpp:228
+#: rc.cpp:231
 #, no-c-format
 msgid "&Username:"
 msgstr "&Nama pengguna:"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 277
-#: rc.cpp:231
+#: rc.cpp:234
 #, no-c-format
 msgid "&Password:"
 msgstr "&Kata Laluan:"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 296
-#: rc.cpp:234
+#: rc.cpp:237
 #, no-c-format
 msgid "Save password in the shortcut file"
 msgstr "Simpan kata laluan dalam fail pintas"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 325
-#: rc.cpp:240 widget/pixmapcollection.cpp:160
+#: rc.cpp:243 widget/pixmapcollection.cpp:160
 #, no-c-format
 msgid "&Name:"
 msgstr "&Nama:"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 341
-#: rc.cpp:243
+#: rc.cpp:246
 #, no-c-format
 msgid "&Title (optional):"
 msgstr ""
 
 #. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 16
-#: rc.cpp:247
+#: rc.cpp:250
 #, no-c-format
 msgid "Parameter"
 msgstr "Parameter"
 
 #. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 35
-#: rc.cpp:250
+#: rc.cpp:253
 #, no-c-format
 msgid "Name:"
 msgstr "Nama:"
 
 #. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 51
-#: rc.cpp:253
+#: rc.cpp:256
 #, no-c-format
 msgid "kexi_"
 msgstr "kexi_"
 
 #. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 96
-#: rc.cpp:256
+#: rc.cpp:259
 #, no-c-format
 msgid "Message:"
 msgstr "Mesej:"
 
 #. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 119
-#: rc.cpp:259
+#: rc.cpp:262
 #, no-c-format
 msgid "Type:"
 msgstr "Jenis:"
 
 #. i18n: file ./plugins/queries/kexiparameterlisteditor.ui line 24
-#: rc.cpp:262
+#: rc.cpp:265
 #, no-c-format
 msgid "Parameters:"
 msgstr "Parameter:"
+
+#. i18n: file ./plugins/macros/kexipart/keximacroerrorbase.ui line 121
+#: rc.cpp:291
+#, no-c-format
+msgid "Value"
+msgstr "Nilai"
+
+#. i18n: file ./plugins/macros/kexipart/keximacroerrorbase.ui line 168
+#: rc.cpp:294
+#, fuzzy, no-c-format
+msgid "Open in design view"
+msgstr "Buka dalam Papar &Teks"
+
+#. i18n: file ./plugins/macros/kexipart/keximacroerrorbase.ui line 190
+#: rc.cpp:301
+#, fuzzy, no-c-format
+msgid "Abort"
+msgstr "Isih"
 
 #: widget/kexidbconnectionwidget.cpp:84
 #, fuzzy
@@ -3500,7 +3696,7 @@ msgstr "Projek Baru Disimpan dalam Pelayan Pangkalan Data"
 msgid "Field Name"
 msgstr "Nama Medan"
 
-#: plugins/tables/kexialtertabledialog.cpp:136 widget/kexifieldlistview.cpp:62
+#: plugins/tables/kexitabledesignerview.cpp:97 widget/kexifieldlistview.cpp:62
 msgid "Data Type"
 msgstr "Jenis Data"
 
@@ -3665,7 +3861,7 @@ msgstr "Pilih Pixmap Dari %1"
 msgid "Edit Collection..."
 msgstr "Edit Koleksi..."
 
-#: widget/kexidatasourcecombobox.cpp:119
+#: widget/kexidatasourcecombobox.cpp:120
 msgid "Define Query..."
 msgstr ""
 
@@ -3675,33 +3871,33 @@ msgstr ""
 msgid "Error: %1"
 msgstr "Ralat: %1"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:921
+#: widget/tableview/kexidataawareobjectiface.cpp:895
 #: widget/tableview/kexitableviewdata.cpp:606
 msgid "The column's constraint is declared as NOT NULL."
 msgstr "Sekatan lajur diisytiharkan sebagai NOT NULL."
 
-#: widget/tableview/kexidataawareobjectiface.cpp:943
+#: widget/tableview/kexidataawareobjectiface.cpp:917
 #: widget/tableview/kexitableviewdata.cpp:617
 msgid "The column's constraint is declared as NOT EMPTY."
 msgstr "Sekatan lajur diisytiharkan sebagai NOT EMPTY."
 
-#: widget/tableview/kexidataawareobjectiface.cpp:961
+#: widget/tableview/kexidataawareobjectiface.cpp:935
 msgid "The column's constraint is declared as NOT EMPTY and NOT NULL."
 msgstr "Sekatan lajur diisytiharkan sebagai NOT EMPTY dan NOT NULL."
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1153
+#: widget/tableview/kexidataawareobjectiface.cpp:1127
 msgid "Do you want to delete selected row?"
 msgstr "Anda mahu hapuskan baris yang dipilih?"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1154
+#: widget/tableview/kexidataawareobjectiface.cpp:1128
 msgid "&Delete Row"
 msgstr "&Hapuskan Baris"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1275
+#: widget/tableview/kexidataawareobjectiface.cpp:1249
 msgid "Do you want to clear the contents of table %1?"
 msgstr "Anda mahu kosongkan kandungan jadual %1?"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1276
+#: widget/tableview/kexidataawareobjectiface.cpp:1250
 msgid "&Clear Contents"
 msgstr "&Kosongkan Kandungan"
 
@@ -3722,18 +3918,6 @@ msgstr "Mengubah baris gagal."
 msgid "Row deleting failed."
 msgstr "Menghapuskan baris gagal."
 
-#: widget/tableview/kexiblobtableedit.cpp:256
-msgid "Open With..."
-msgstr "Buka Dengan..."
-
-#: widget/tableview/kexiblobtableedit.cpp:258
-msgid "Load From File..."
-msgstr "Muatkan Dari Fail..."
-
-#: widget/tableview/kexiblobtableedit.cpp:259
-msgid "Save to File..."
-msgstr "Simpan ke Fail..."
-
 #: widget/tableview/kexitableview.cpp:195
 #, fuzzy
 msgid "Contains a pointer to the currently selected row"
@@ -3753,7 +3937,7 @@ msgstr "Tambah Rekod"
 msgid "Remove Record"
 msgstr "Alih Keluar Rekod"
 
-#: widget/tableview/kexitableview.cpp:2600
+#: widget/tableview/kexitableview.cpp:2602
 msgid "Row: "
 msgstr "Baris:"
 
@@ -3803,7 +3987,7 @@ msgstr "Laporan"
 msgid "Label"
 msgstr "Label"
 
-#: plugins/forms/kexidbfactory.cpp:145
+#: plugins/forms/kexidbfactory.cpp:142
 #: plugins/reports/kexireportfactory.cpp:53
 #, fuzzy
 msgid ""
@@ -3872,11 +4056,11 @@ msgstr "Edit Teks Kaya "
 msgid "Set Form's Data Source to \"%1\""
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:80 plugins/forms/kexiformpart.cpp:90
+#: plugins/forms/kexidbfactory.cpp:77 plugins/forms/kexiformpart.cpp:90
 msgid "Form"
 msgstr "Borang"
 
-#: plugins/forms/kexidbfactory.cpp:82
+#: plugins/forms/kexidbfactory.cpp:79
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3884,16 +4068,16 @@ msgid ""
 "form"
 msgstr "Laporan"
 
-#: plugins/forms/kexidbfactory.cpp:83
+#: plugins/forms/kexidbfactory.cpp:80
 #, fuzzy
 msgid "A data-aware form widget"
 msgstr "Widget borang sedar pangkalan data"
 
-#: plugins/forms/kexidbfactory.cpp:91
+#: plugins/forms/kexidbfactory.cpp:88
 msgid "Sub Form"
 msgstr "SubBorang"
 
-#: plugins/forms/kexidbfactory.cpp:93
+#: plugins/forms/kexidbfactory.cpp:90
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3901,16 +4085,16 @@ msgid ""
 "subForm"
 msgstr "Laporan"
 
-#: plugins/forms/kexidbfactory.cpp:94
+#: plugins/forms/kexidbfactory.cpp:91
 msgid "A form widget included in another Form"
 msgstr "Widget borang disertakan dalam Borang lain"
 
-#: plugins/forms/kexidbfactory.cpp:107
+#: plugins/forms/kexidbfactory.cpp:104
 #, fuzzy
 msgid "Text Box"
 msgstr "Teks"
 
-#: plugins/forms/kexidbfactory.cpp:109
+#: plugins/forms/kexidbfactory.cpp:106
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3918,17 +4102,17 @@ msgid ""
 "textBox"
 msgstr "Laporan"
 
-#: plugins/forms/kexidbfactory.cpp:110
+#: plugins/forms/kexidbfactory.cpp:107
 #, fuzzy
 msgid "A widget for entering and displaying text"
 msgstr "Widget untuk memaparkan teks "
 
-#: plugins/forms/kexidbfactory.cpp:120
+#: plugins/forms/kexidbfactory.cpp:117
 #, fuzzy
 msgid "Text Editor"
 msgstr "Editor Ciri"
 
-#: plugins/forms/kexidbfactory.cpp:122
+#: plugins/forms/kexidbfactory.cpp:119
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3936,16 +4120,16 @@ msgid ""
 "textEditor"
 msgstr "Laporan"
 
-#: plugins/forms/kexidbfactory.cpp:123
+#: plugins/forms/kexidbfactory.cpp:120
 msgid "A multiline text editor"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:131
+#: plugins/forms/kexidbfactory.cpp:128
 #, fuzzy
 msgid "Frame"
 msgstr "Nama Borang"
 
-#: plugins/forms/kexidbfactory.cpp:133
+#: plugins/forms/kexidbfactory.cpp:130
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3953,30 +4137,29 @@ msgid ""
 "frame"
 msgstr "Laporan"
 
-#: plugins/forms/kexidbfactory.cpp:134
+#: plugins/forms/kexidbfactory.cpp:131
 #, fuzzy
 msgid "A simple frame widget"
 msgstr "Widget borang sedar pangkalan data"
 
-#: plugins/forms/kexidbfactory.cpp:143
+#: plugins/forms/kexidbfactory.cpp:140
 #, fuzzy
 msgid ""
 "_: Text Label\n"
 "Label"
 msgstr "Label Teks"
 
-#: plugins/forms/kexidbfactory.cpp:146
+#: plugins/forms/kexidbfactory.cpp:143
 #, fuzzy
 msgid "A widget for displaying text"
 msgstr "Widget untuk memaparkan teks "
 
-#: plugins/forms/kexidbfactory.cpp:156
-#: plugins/forms/widgets/kexidbimagebox.cpp:109
-#: plugins/forms/widgets/kexidbimagebox.cpp:553
+#: plugins/forms/kexidbfactory.cpp:153
+#: plugins/forms/widgets/kexidbimagebox.cpp:630
 msgid "Image Box"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:158
+#: plugins/forms/kexidbfactory.cpp:155
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3984,17 +4167,17 @@ msgid ""
 "image"
 msgstr "Laporan"
 
-#: plugins/forms/kexidbfactory.cpp:159
+#: plugins/forms/kexidbfactory.cpp:156
 #, fuzzy
 msgid "A widget for displaying images"
 msgstr "Widget untuk memaparkan teks "
 
-#: plugins/forms/kexidbfactory.cpp:172
+#: plugins/forms/kexidbfactory.cpp:169
 #, fuzzy
 msgid "Check Box"
 msgstr "Semak Pertanyaan"
 
-#: plugins/forms/kexidbfactory.cpp:174
+#: plugins/forms/kexidbfactory.cpp:171
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -4002,16 +4185,16 @@ msgid ""
 "checkBox"
 msgstr "Laporan"
 
-#: plugins/forms/kexidbfactory.cpp:175
+#: plugins/forms/kexidbfactory.cpp:172
 msgid "A check box with text label"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:183
+#: plugins/forms/kexidbfactory.cpp:180
 #, fuzzy
 msgid "Auto Field"
 msgstr "Medan"
 
-#: plugins/forms/kexidbfactory.cpp:185
+#: plugins/forms/kexidbfactory.cpp:182
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -4019,105 +4202,17 @@ msgid ""
 "autoField"
 msgstr "Laporan"
 
-#: plugins/forms/kexidbfactory.cpp:186
+#: plugins/forms/kexidbfactory.cpp:183
 msgid ""
 "A widget containing an automatically selected editor and a label to edit the "
 "value of a database field of any type."
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:199
-#, fuzzy
-msgid "Date Widget"
-msgstr "Widget Bentangan"
-
-#: plugins/forms/kexidbfactory.cpp:201
-#, fuzzy
-msgid ""
-"_: Widget name. This string will be used to name widgets of this class. It must "
-"_not_ contain white spaces and non latin1 characters.\n"
-"dateWidget"
-msgstr "Laporan"
-
-#: plugins/forms/kexidbfactory.cpp:202
-#, fuzzy
-msgid "A widget to input and display a date"
-msgstr "Widget untuk memaparkan teks "
-
-#: plugins/forms/kexidbfactory.cpp:214
-#, fuzzy
-msgid "Time Widget"
-msgstr "Ke Terlebar"
-
-#: plugins/forms/kexidbfactory.cpp:216
-#, fuzzy
-msgid ""
-"_: Widget name. This string will be used to name widgets of this class. It must "
-"_not_ contain white spaces and non latin1 characters.\n"
-"timeWidget"
-msgstr "Laporan"
-
-#: plugins/forms/kexidbfactory.cpp:217
-#, fuzzy
-msgid "A widget to input and display a time"
-msgstr "Widget untuk memaparkan teks "
-
-#: plugins/forms/kexidbfactory.cpp:229
-#, fuzzy
-msgid "Date/Time Widget"
-msgstr "Tarikh/Masa"
-
-#: plugins/forms/kexidbfactory.cpp:231
-#, fuzzy
-msgid ""
-"_: Widget name. This string will be used to name widgets of this class. It must "
-"_not_ contain white spaces and non latin1 characters.\n"
-"dateTimeWidget"
-msgstr "Laporan"
-
-#: plugins/forms/kexidbfactory.cpp:232
-#, fuzzy
-msgid "A widget to input and display a date and time"
-msgstr "Widget untuk memaparkan teks "
-
-#: plugins/forms/kexidbfactory.cpp:240
-#, fuzzy
-msgid "Integer Number Spin Box"
-msgstr "Nombor Integer"
-
-#: plugins/forms/kexidbfactory.cpp:242
-#, fuzzy
-msgid ""
-"_: Widget name. This string will be used to name widgets of this class. It must "
-"_not_ contain white spaces and non latin1 characters.\n"
-"intSpinBox"
-msgstr "Laporan"
-
-#: plugins/forms/kexidbfactory.cpp:243
-msgid "A spin box widget to input and display integer numbers"
-msgstr ""
-
-#: plugins/forms/kexidbfactory.cpp:250
-#, fuzzy
-msgid "Floating-point Number Spin Box"
-msgstr "Nombor Titik Apung"
-
-#: plugins/forms/kexidbfactory.cpp:252
-#, fuzzy
-msgid ""
-"_: Widget name. This string will be used to name widgets of this class. It must "
-"_not_ contain white spaces and non latin1 characters.\n"
-"dblSpinBox"
-msgstr "Laporan"
-
-#: plugins/forms/kexidbfactory.cpp:253
-msgid "A spin box widget to input and display floating-point numbers"
-msgstr ""
-
-#: plugins/forms/kexidbfactory.cpp:260
+#: plugins/forms/kexidbfactory.cpp:259
 msgid "Command Button"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:262
+#: plugins/forms/kexidbfactory.cpp:261
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -4125,116 +4220,154 @@ msgid ""
 "button"
 msgstr "Laporan"
 
-#: plugins/forms/kexidbfactory.cpp:263
+#: plugins/forms/kexidbfactory.cpp:262
 msgid "A command button to execute actions"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:266 plugins/forms/kexiformpart.cpp:487
+#: plugins/forms/kexidatasourcepage.cpp:59 plugins/forms/kexidbfactory.cpp:265
+#: plugins/forms/kexiformpart.cpp:489
 msgid "Data Source"
 msgstr "Sumber Data"
 
-#: plugins/forms/kexidbfactory.cpp:267
+#: plugins/forms/kexidbfactory.cpp:266
 msgid "Form Name"
 msgstr "Nama Borang"
 
-#: plugins/forms/kexidbfactory.cpp:268
+#: plugins/forms/kexidbfactory.cpp:267
 msgid "On Click"
 msgstr "Dengan Mengklik "
 
-#: plugins/forms/kexidbfactory.cpp:269
+#: plugins/forms/kexidbfactory.cpp:268
 msgid "Auto Tab Stops"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:270
+#: plugins/forms/kexidbfactory.cpp:269
 msgid "Shadow Enabled"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:272
+#: plugins/forms/kexidbfactory.cpp:271
 #, fuzzy
 msgid "Editor Type"
 msgstr "Jenis Data"
 
-#: plugins/forms/kexidbfactory.cpp:274
+#: plugins/forms/kexidbfactory.cpp:273
 msgid ""
 "_: AutoField editor's type\n"
 "Auto"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:282
+#: plugins/forms/kexidbfactory.cpp:281
 msgid ""
 "_: AutoField editor's type\n"
 "Multiline Text"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:283
+#: plugins/forms/kexidbfactory.cpp:282
 msgid ""
 "_: AutoField editor's type\n"
 "List of Values"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:284
+#: plugins/forms/kexidbfactory.cpp:283
 msgid ""
 "_: AutoField editor's type\n"
 "Image"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:287
+#: plugins/forms/kexidbfactory.cpp:286
 #, fuzzy
 msgid "Auto Label"
 msgstr "Label Teks"
 
-#: plugins/forms/kexidbfactory.cpp:289
-msgid "Label Position"
+#: plugins/forms/kexidbfactory.cpp:287
+msgid "Label Text Color"
+msgstr ""
+
+#: plugins/forms/kexidbfactory.cpp:288
+msgid ""
+"_: (a property name, keep the text narrow!)\n"
+"Label Background\n"
+"Color"
 msgstr ""
 
 #: plugins/forms/kexidbfactory.cpp:290
-msgid ""
-"_: Label Position\n"
-"Left"
+msgid "Label Position"
 msgstr ""
 
 #: plugins/forms/kexidbfactory.cpp:291
 msgid ""
 "_: Label Position\n"
-"Top"
+"Left"
 msgstr ""
 
 #: plugins/forms/kexidbfactory.cpp:292
 msgid ""
 "_: Label Position\n"
+"Top"
+msgstr ""
+
+#: plugins/forms/kexidbfactory.cpp:293
+msgid ""
+"_: Label Position\n"
 "No Label"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:294
+#: plugins/forms/kexidbfactory.cpp:295
 #, fuzzy
 msgid "Size"
 msgstr "&Saiz:"
 
-#: plugins/forms/kexidbfactory.cpp:296
+#: plugins/forms/kexidbfactory.cpp:297
 #, fuzzy
 msgid "Image"
 msgstr "Halaman:"
 
-#: plugins/forms/kexidbfactory.cpp:297
+#: plugins/forms/kexidbfactory.cpp:298
 #, fuzzy
 msgid "Scaled Contents"
 msgstr "&Kosongkan Kandungan"
 
-#: plugins/forms/kexidbfactory.cpp:298
+#: plugins/forms/kexidbfactory.cpp:299
 msgid ""
 "_: Keep Aspect Ratio (short)\n"
 "Keep Ratio"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:308
+#: plugins/forms/kexidbfactory.cpp:309
 msgid "Frame Color"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:391
+#: plugins/forms/kexidbfactory.cpp:310
+msgid ""
+"_: Drop-Down Button for Image Box Visible (a property name, keep the text "
+"narrow!)\n"
+"Drop-Down\n"
+"Button Visible"
+msgstr ""
+
+#: plugins/forms/kexidbfactory.cpp:313
+msgid ""
+"_: Tristate checkbox, default\n"
+"Default"
+msgstr ""
+
+#: plugins/forms/kexidbfactory.cpp:314
+msgid ""
+"_: Tristate checkbox, yes\n"
+"Yes"
+msgstr ""
+
+#: plugins/forms/kexidbfactory.cpp:315
+msgid ""
+"_: Tristate checkbox, no\n"
+"No"
+msgstr ""
+
+#: plugins/forms/kexidbfactory.cpp:398
 msgid "&Image"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:411
+#: plugins/forms/kexidbfactory.cpp:418
 msgid "Assign Action..."
 msgstr "Umpuk Tindakan..."
 
@@ -4243,92 +4376,101 @@ msgstr "Umpuk Tindakan..."
 msgid "NAME"
 msgstr "NAME"
 
-#: plugins/forms/kexiformview.cpp:1016
+#: plugins/forms/kexiformview.cpp:1056
 msgid "Insert AutoField widget"
 msgstr ""
 
-#: plugins/forms/kexiformview.cpp:1016
+#: plugins/forms/kexiformview.cpp:1056
 msgid "Insert %1 AutoField widgets"
 msgstr ""
 
-#: plugins/forms/kexiactionselectiondialog.cpp:129
-msgid "Assigning Action to Command Button"
-msgstr ""
-
-#: plugins/forms/kexiactionselectiondialog.cpp:138
-#, fuzzy
-msgid "Select Action to be executed after clicking \"%1\" button."
-msgstr "Pilih Tindakan untuk dilaksanakan selepas mengklik butang \"%1\":"
-
-#: plugins/forms/kexiactionselectiondialog.cpp:145
-#, fuzzy
-msgid "No Action"
-msgstr "<No Action>"
-
-#: plugins/forms/kexiactionselectiondialog.cpp:146
-#, fuzzy
-msgid "Application"
-msgstr "Keluar Aplikasi Utama"
-
 #: plugins/forms/kexiactionselectiondialog.cpp:147
-msgid "Action type:"
+msgid "Assigning Action to Command Button"
 msgstr ""
 
 #: plugins/forms/kexiactionselectiondialog.cpp:156
 #, fuzzy
+msgid "Select Action to be executed after clicking \"%1\" button."
+msgstr "Pilih Tindakan untuk dilaksanakan selepas mengklik butang \"%1\":"
+
+#: plugins/forms/kexiactionselectiondialog.cpp:163
+#, fuzzy
+msgid "No Action"
+msgstr "<No Action>"
+
+#: plugins/forms/kexiactionselectiondialog.cpp:164
+#, fuzzy
+msgid "Application"
+msgstr "Keluar Aplikasi Utama"
+
+#: plugins/forms/kexiactionselectiondialog.cpp:165
+msgid "Action type:"
+msgstr ""
+
+#: plugins/forms/kexiactionselectiondialog.cpp:178
+msgid "Macros"
+msgstr ""
+
+#: plugins/forms/kexiactionselectiondialog.cpp:183
+#, fuzzy
 msgid "Scripts"
 msgstr "Skrip"
 
-#: plugins/forms/kexidatasourcepage.cpp:52
+#: plugins/forms/kexidatasourcepage.cpp:53
 msgid "No data source could be assigned for this widget."
 msgstr ""
 
-#: plugins/forms/kexidatasourcepage.cpp:53
+#: plugins/forms/kexidatasourcepage.cpp:54
 msgid "No data source could be assigned for multiple widgets."
 msgstr ""
 
-#: plugins/forms/kexidatasourcepage.cpp:66
+#: plugins/forms/kexidatasourcepage.cpp:78
 msgid ""
 "_: Table Field or Query Field\n"
 "Source field:"
 msgstr ""
 
-#: plugins/forms/kexidatasourcepage.cpp:80
+#: plugins/forms/kexidatasourcepage.cpp:92
 msgid "Clear widget's data source"
 msgstr ""
 
-#: plugins/forms/kexidatasourcepage.cpp:96
+#: plugins/forms/kexidatasourcepage.cpp:109
 #, fuzzy
 msgid "Form's data source:"
 msgstr "Sumber data:"
 
-#: plugins/forms/kexidatasourcepage.cpp:109
+#: plugins/forms/kexidatasourcepage.cpp:122
 #, fuzzy
 msgid "Go to selected data source"
 msgstr "Kembali ke pertanyaan yang dipilih"
 
-#: plugins/forms/kexidatasourcepage.cpp:119
+#: plugins/forms/kexidatasourcepage.cpp:132
 #, fuzzy
 msgid "Clear data source"
 msgstr "Sumber data:"
 
-#: plugins/forms/kexidatasourcepage.cpp:146
+#: plugins/forms/kexidatasourcepage.cpp:159
+#, fuzzy
+msgid "Inserting fields"
+msgstr "Menyelit baris gagal."
+
+#: plugins/forms/kexidatasourcepage.cpp:173
 msgid ""
 "Select fields from the list below and drag them onto a form or click the "
 "\"Insert\" button"
 msgstr ""
 
-#: plugins/forms/kexidatasourcepage.cpp:153
+#: plugins/forms/kexidatasourcepage.cpp:180
 msgid "Available fields:"
 msgstr ""
 
-#: plugins/forms/kexidatasourcepage.cpp:162
+#: plugins/forms/kexidatasourcepage.cpp:189
 msgid ""
 "_: Insert selected field into form\n"
 "Insert"
 msgstr ""
 
-#: plugins/forms/kexidatasourcepage.cpp:168
+#: plugins/forms/kexidatasourcepage.cpp:195
 msgid "Insert selected fields into form"
 msgstr ""
 
@@ -4448,57 +4590,69 @@ msgstr "Ke Terkecil"
 msgid "To Widest"
 msgstr "Ke Terlebar"
 
-#: plugins/forms/kexiformpart.cpp:430
+#: plugins/forms/kexiformpart.cpp:432
 #, fuzzy
 msgid "Design of form \"%1\" has been modified."
 msgstr ""
 "<p>Reka bentuk borang \"%1\" telah diubah suai.</p>"
 "<p>Anda mahu simpan perubahan?</p>"
 
-#: plugins/forms/kexiformpart.cpp:432
+#: plugins/forms/kexiformpart.cpp:434
 #, fuzzy
 msgid "Form \"%1\" already exists."
 msgstr "Jadual \"%1\" sudah wujud."
 
-#: plugins/forms/kexiformpart.cpp:490
+#: plugins/forms/kexiformpart.cpp:492
 msgid "Widgets"
 msgstr "Widget"
 
-#: plugins/forms/widgets/kexidbimagebox.cpp:111
+#: plugins/forms/widgets/kexidbimagebox.cpp:99
 #, fuzzy
 msgid "Insert From &File..."
 msgstr "Dari Fail..."
 
-#: plugins/forms/widgets/kexidbimagebox.cpp:124
+#: plugins/forms/widgets/kexidbimagebox.cpp:112
 #, fuzzy
 msgid "&Clear"
 msgstr "&Tapis "
 
-#: plugins/forms/widgets/kexidbimagebox.cpp:317
-#: plugins/forms/widgets/kexidbimagebox.cpp:322
+#: plugins/forms/widgets/kexidbimagebox.cpp:325
+#: plugins/forms/widgets/kexidbimagebox.cpp:330
 msgid "Insert Image From File"
 msgstr ""
 
-#: plugins/forms/widgets/kexidbimagebox.cpp:394
-#: plugins/forms/widgets/kexidbimagebox.cpp:398
+#: plugins/forms/widgets/kexidbimagebox.cpp:418
+#: plugins/forms/widgets/kexidbimagebox.cpp:422
 #, fuzzy
 msgid "Save Image to File"
 msgstr "Simpan ke Fail..."
 
-#: plugins/forms/widgets/kexidbimagebox.cpp:560
+#: plugins/forms/widgets/kexidbimagebox.cpp:434
+#, fuzzy
+msgid "File %1 already exists.<p>Do you want to replace it with a new one?"
+msgstr ""
+"Projek \"%1\" sudah wujud.\n"
+"Anda ingin ganti dengan yang kosong dan baru?"
+
+#: plugins/forms/widgets/kexidbimagebox.cpp:437
+#, fuzzy
+msgid "&Don't Replace"
+msgstr "&Nama Semula"
+
+#: plugins/forms/widgets/kexidbimagebox.cpp:642
 msgid "Click to show actions for this image box"
 msgstr ""
 
-#: plugins/forms/widgets/kexidbimagebox.cpp:562
+#: plugins/forms/widgets/kexidbimagebox.cpp:654
 msgid "Click to show actions for \"%1\" image box"
 msgstr ""
 
-#: plugins/forms/widgets/kexidbimagebox.cpp:635
+#: plugins/forms/widgets/kexidbimagebox.cpp:736
 msgid "No Image"
 msgstr ""
 
-#: plugins/forms/widgets/kexidbautofield.cpp:444
-#: plugins/forms/widgets/kexidbautofield.cpp:559
+#: plugins/forms/widgets/kexidbautofield.cpp:571
+#: plugins/forms/widgets/kexidbautofield.cpp:689
 msgid ""
 "_: Unbound Auto Field\n"
 " (unbound)"
@@ -4509,7 +4663,9 @@ msgstr ""
 msgid "Query Columns"
 msgstr "Lajur pertanyaan"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1079
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1078
+#: plugins/macros/kexiactions/navigateaction.cpp:73
+#: plugins/macros/kexiactions/navigateaction.cpp:100
 #: plugins/queries/kexiquerydesignerguieditor.cpp:179
 msgid "Column"
 msgstr "Lajur"
@@ -4615,8 +4771,9 @@ msgstr "Tidak dapat setkan kriteria untuk baris kosong"
 msgid "Query column"
 msgstr "Lajur pertanyaan"
 
+#: plugins/macros/kexiactions/messageaction.cpp:34
 #: plugins/queries/kexiquerydesignerguieditor.cpp:1514
-#: plugins/tables/kexialtertabledialog.cpp:379
+#: plugins/tables/kexitabledesignerview.cpp:298
 msgid "Caption"
 msgstr "Kapsyen"
 
@@ -4636,7 +4793,7 @@ msgstr "Menurun"
 msgid "Sorting"
 msgstr "Mengisih"
 
-#: plugins/queries/kexiqueryview.cpp:74
+#: plugins/queries/kexiqueryview.cpp:75
 msgid "Query executing failed."
 msgstr "Melaksanakan pertanyaan gagal."
 
@@ -4949,26 +5106,26 @@ msgstr ""
 msgid "Column %1"
 msgstr "Lajur"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1105
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1104
 #, fuzzy
 msgid "Column name"
 msgstr "Lajur"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1230
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1229
 msgid "Data set contains no rows. Do you want to import empty table?"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1236
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1235
 #, fuzzy
 msgid "No project available."
 msgstr "Tiada nama projek ditetapkan."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1241
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1240
 #, fuzzy
 msgid "No database connection available."
 msgstr "Buka Sambungan Pangkalan Data"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1302
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1301
 msgid ""
 "No Primary Key (autonumber) has been defined.\n"
 "Should it be automatically defined on import (recommended)?\n"
@@ -4977,48 +5134,65 @@ msgid ""
 "database type)."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1305
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1304
 msgid ""
 "_: Add Database Primary Key to a Table\n"
 "Add Primary Key"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1306
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1305
 msgid ""
 "_: Do Not Add Database Primary Key to a Table\n"
 "Do Not Add"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1426
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1425
 #, fuzzy
 msgid "Importing CSV Data"
 msgstr "Pangkalan Data yang Diimport"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1429
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1428
 msgid "Importing CSV Data from <nobr>\"%1\"</nobr> into \"%2\" table..."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1476
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1475
 msgid "Data has been successfully imported to table \"%1\"."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1486
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1485
 msgid ""
 "_: Text type for column\n"
 "Text"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1488
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1487
 msgid ""
 "_: Numeric type for column\n"
 "Number"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1490
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1489
 msgid ""
 "_: Currency type for column\n"
 "Currency"
 msgstr ""
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1557
+msgid ""
+"_: row count\n"
+"(rows: %1)"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1562
+msgid ""
+"_: row count\n"
+"(rows: more than %1)"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1563
+#, fuzzy
+msgid "Not all rows are visible on this preview"
+msgstr "Tiada bantuan disediakan untuk halaman ini"
 
 #: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:38
 msgid "CSV Import Options"
@@ -5032,6 +5206,132 @@ msgstr ""
 msgid "Relationships"
 msgstr "Hubungan"
 
+#: plugins/macros/kexiactions/messageaction.cpp:32
+#: plugins/macros/kexiactions/messageaction.cpp:35
+#, fuzzy
+msgid "Message"
+msgstr "Mesej:"
+
+#: plugins/macros/kexiactions/navigateaction.cpp:46
+#, fuzzy
+msgid "Record"
+msgstr "Tambah Rekod"
+
+#: plugins/macros/kexiactions/navigateaction.cpp:64
+#, fuzzy
+msgid "Navigate"
+msgstr "&Penghijrahan "
+
+#: plugins/macros/kexiactions/navigateaction.cpp:69
+#: plugins/macros/kexiactions/navigateaction.cpp:94
+#, fuzzy
+msgid "Row"
+msgstr "Baris:"
+
+#: plugins/macros/kexiactions/navigateaction.cpp:120
+msgid "No window active."
+msgstr ""
+
+#: plugins/macros/kexiactions/navigateaction.cpp:125
+msgid "No view selected for \"%1\"."
+msgstr ""
+
+#: plugins/macros/kexiactions/navigateaction.cpp:131
+#, fuzzy
+msgid "The view for \"%1\" is not dataaware."
+msgstr "Fail \"%1\" tidak boleh baca."
+
+#: plugins/macros/kexiactions/navigateaction.cpp:165
+msgid "Unknown record \"%1\" in view for \"%2\"."
+msgstr ""
+
+#: plugins/macros/kexiactions/executeaction.cpp:79
+#, fuzzy
+msgid "No such mimetype \"%1\""
+msgstr "Tiada modul bahagian untuk jenis mime \"%1\""
+
+#: plugins/macros/kexiactions/executeaction.cpp:84
+#, fuzzy
+msgid "Failed to open part \"%1\" for mimetype \"%2\""
+msgstr "Tiada modul bahagian untuk jenis mime \"%1\""
+
+#: plugins/macros/kexiactions/openaction.cpp:127
+#, fuzzy
+msgid "No project loaded."
+msgstr "Tiada nama projek ditetapkan."
+
+#: plugins/macros/kexiactions/openaction.cpp:134
+#, fuzzy
+msgid "No such object \"%1.%2\"."
+msgstr "Tiada servis pemacu seperti itu: \"%1\"."
+
+#: plugins/macros/kexiactions/openaction.cpp:147
+msgid "No such viewmode \"%1\" in object \"%2.%3\"."
+msgstr ""
+
+#: plugins/macros/kexiactions/openaction.cpp:154
+#, fuzzy
+msgid "Failed to open object \"%1.%2\"."
+msgstr "Tidak dapat buka projek \"%1\""
+
+#: plugins/macros/kexipart/keximacroerror.cpp:56
+msgid "<qt>Failed to execute the macro \"%1\".<br>%2</qt>"
+msgstr ""
+
+#: plugins/macros/kexipart/keximacrodesignview.cpp:127
+#: plugins/macros/kexipart/keximacroerror.cpp:64
+#, fuzzy
+msgid "Action"
+msgstr "<No Action>"
+
+#: plugins/macros/kexipart/keximacrodesignview.cpp:155
+#, fuzzy
+msgid "Comment"
+msgstr "Komen"
+
+#: plugins/macros/kexipart/keximacropart.cpp:70
+msgid ""
+"_: Translate this word using only lowercase alphanumeric characters (a..z, "
+"0..9). Use '_' character instead of spaces. First character should be a..z "
+"character. If you cannot use latin characters in your language, use english "
+"word.\n"
+"macro"
+msgstr ""
+
+#: plugins/macros/kexipart/keximacropart.cpp:73
+msgid "Macro"
+msgstr ""
+
+#: plugins/macros/kexipart/keximacropart.cpp:160
+#, fuzzy
+msgid "Design of macro \"%1\" has been modified."
+msgstr ""
+"<p>Reka bentuk laporan \"%1\" telah diubah suai. </p>"
+"<p>Anda mahu simpan perubahan?</p>"
+
+#: plugins/macros/kexipart/keximacropart.cpp:163
+#, fuzzy
+msgid "Macro \"%1\" already exists."
+msgstr "Jadual \"%1\" sudah wujud."
+
+#: plugins/tables/kexitabledesignerview_p.cpp:233
+msgid "Do you want to save the design now?"
+msgstr "Anda ingin simpan reka bentuk sekarang?"
+
+#: plugins/tables/kexitabledesignercommands.cpp:74
+msgid "Change \"%1\" property for table field from \"%2\" to \"%3\""
+msgstr ""
+
+#: plugins/tables/kexitabledesignercommands.cpp:139
+#, fuzzy
+msgid "Remove table field \"%1\""
+msgstr "Nama jadual \"%1\" tak sah"
+
+#: plugins/tables/kexitabledesignercommands.cpp:194
+#, fuzzy
+msgid "Insert table field \"%1\""
+msgstr "Nama jadual \"%1\" tak sah"
+
 #: plugins/tables/kexitablepart.cpp:52
 msgid ""
 "_: Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -5041,7 +5341,7 @@ msgid ""
 "table"
 msgstr ""
 
-#: plugins/tables/kexialtertabledialog.cpp:411
+#: plugins/tables/kexitabledesignerview.cpp:334
 #: plugins/tables/kexitablepart.cpp:71
 msgid "Primary Key"
 msgstr "Kunci Utama"
@@ -5074,87 +5374,97 @@ msgstr ""
 "<p>Anda mahu simpan perubahan?</p>"
 
 #: plugins/tables/kexitablepart.cpp:198
-msgid "Note: Any data in this table will be removed upon design's saving."
+msgid "Warning! Any data in this table will be removed upon design's saving!"
 msgstr ""
 
-#: plugins/tables/kexialtertabledialog.cpp:122
+#: plugins/tables/kexitabledesignerview.cpp:83
 msgid ""
 "_: Primary Key\n"
 "PK"
 msgstr "PK"
 
-#: plugins/tables/kexialtertabledialog.cpp:123
+#: plugins/tables/kexitabledesignerview.cpp:84
 #, fuzzy
 msgid "Describes primary key for the field."
 msgstr "Setkan atau alih keluar kunci utama untuk medan yang sedang dipilih."
 
-#: plugins/tables/kexialtertabledialog.cpp:129
+#: plugins/tables/kexitabledesignerview.cpp:90
 #, fuzzy
 msgid "Field Caption"
 msgstr "Kapsyen"
 
-#: plugins/tables/kexialtertabledialog.cpp:130
+#: plugins/tables/kexitabledesignerview.cpp:91
 msgid "Describes name for the field."
 msgstr ""
 
-#: plugins/tables/kexialtertabledialog.cpp:137
+#: plugins/tables/kexitabledesignerview.cpp:98
 msgid "Describes data type for the field."
 msgstr ""
 
-#: plugins/tables/kexialtertabledialog.cpp:154
+#: plugins/tables/kexitabledesignerview.cpp:115
 msgid "Comments"
 msgstr "Komen"
 
-#: plugins/tables/kexialtertabledialog.cpp:155
+#: plugins/tables/kexitabledesignerview.cpp:116
 msgid "Describes additional comments for the field."
 msgstr ""
 
-#: plugins/tables/kexialtertabledialog.cpp:323
+#: plugins/tables/kexitabledesignerview.cpp:239
 msgid ""
 "_: Image object type\n"
 "Image"
 msgstr ""
 
-#: plugins/tables/kexialtertabledialog.cpp:346
+#: plugins/tables/kexitabledesignerview.cpp:265
 #, fuzzy
 msgid "Table field"
 msgstr "Jadual"
 
-#: plugins/tables/kexialtertabledialog.cpp:376
+#: plugins/tables/kexitabledesignerview.cpp:295
 msgid "Subtype"
 msgstr "Subjenis"
 
-#: plugins/tables/kexialtertabledialog.cpp:387
+#: plugins/tables/kexitabledesignerview.cpp:306
 msgid "Unsigned Number"
 msgstr "Nombor Tak Bertandatangan"
 
-#: plugins/tables/kexialtertabledialog.cpp:390
+#: plugins/tables/kexitabledesignerview.cpp:309
 msgid "Length"
 msgstr "Panjang"
 
-#: plugins/tables/kexialtertabledialog.cpp:393
+#: plugins/tables/kexitabledesignerview.cpp:312
 msgid "Precision"
 msgstr "Kepersisan"
 
-#: plugins/tables/kexialtertabledialog.cpp:400
+#: plugins/tables/kexitabledesignerview.cpp:317
+msgid "Visible Decimal Places"
+msgstr ""
+
+#: plugins/tables/kexitabledesignerview.cpp:319
+msgid ""
+"_: Auto Decimal Places\n"
+"Auto"
+msgstr ""
+
+#: plugins/tables/kexitabledesignerview.cpp:323
 #, fuzzy
 msgid "Column Width"
 msgstr "Lebar Lajur"
 
-#: plugins/tables/kexialtertabledialog.cpp:406
+#: plugins/tables/kexitabledesignerview.cpp:329
 #, fuzzy
 msgid "Default Value"
 msgstr "Nilai piawai"
 
-#: plugins/tables/kexialtertabledialog.cpp:415
+#: plugins/tables/kexitabledesignerview.cpp:338
 msgid "Unique"
 msgstr "Unik"
 
-#: plugins/tables/kexialtertabledialog.cpp:418
+#: plugins/tables/kexitabledesignerview.cpp:341
 msgid "Required"
 msgstr "Diperlukan"
 
-#: plugins/tables/kexialtertabledialog.cpp:421
+#: plugins/tables/kexitabledesignerview.cpp:344
 msgid ""
 "Allow Zero\n"
 "Size"
@@ -5162,19 +5472,15 @@ msgstr ""
 "Terima Sifar\n"
 "Saiz"
 
-#: plugins/tables/kexialtertabledialog.cpp:424
+#: plugins/tables/kexitabledesignerview.cpp:347
 msgid "Autonumber"
 msgstr "Autonombor"
 
-#: plugins/tables/kexialtertabledialog.cpp:428
+#: plugins/tables/kexitabledesignerview.cpp:351
 msgid "Indexed"
 msgstr "Berindeks"
 
-#: plugins/tables/kexialtertabledialog.cpp:539
-msgid "Do you want to save the design now?"
-msgstr "Anda ingin simpan reka bentuk sekarang?"
-
-#: plugins/tables/kexialtertabledialog.cpp:557
+#: plugins/tables/kexitabledesignerview.cpp:488
 msgid ""
 "Cannot switch to data view, because table design is empty.\n"
 "First, please create your design."
@@ -5182,21 +5488,29 @@ msgstr ""
 "Tidak boleh beralih ke papar data, kerana reka bentuk jadual kosong.\n"
 "Cipta reka bentuk anda dahulu."
 
-#: plugins/tables/kexialtertabledialog.cpp:568
+#: plugins/tables/kexitabledesignerview.cpp:499
 msgid "Saving changes for existing table design is now required."
 msgstr ""
 "Menyimpan perubahan untuk reka bentuk jadual sedia ada kini diperlukan."
 
-#: plugins/tables/kexialtertabledialog.cpp:850
+#: plugins/tables/kexitabledesignerview.cpp:584
+msgid "Change \"%1\" field's name to \"%2\" and caption from \"%3\" to \"%4\""
+msgstr ""
+
+#: plugins/tables/kexitabledesignerview.cpp:655
+msgid "Change data type for field \"%1\" to \"%2\""
+msgstr ""
+
+#: plugins/tables/kexitabledesignerview.cpp:824
 msgid "Setting autonumber requires primary key to be set for current field."
 msgstr ""
 "Mengeset autonombor memerlukan kunci utama disetkan untuk medan semasa. "
 
-#: plugins/tables/kexialtertabledialog.cpp:852
+#: plugins/tables/kexitabledesignerview.cpp:826
 msgid "Previous primary key will be removed."
 msgstr "Kunci utama sebelum ini akan dialih keluar. "
 
-#: plugins/tables/kexialtertabledialog.cpp:854
+#: plugins/tables/kexitabledesignerview.cpp:828
 msgid ""
 "Do you want to create primary key for current field? Click \"Cancel\" to cancel "
 "setting autonumber."
@@ -5204,15 +5518,43 @@ msgstr ""
 "Anda mahu cipta kunci utama untuk medan semasa? Klik \"Batal\" untuk "
 "membatalkan seting autonombor."
 
-#: plugins/tables/kexialtertabledialog.cpp:858
+#: plugins/tables/kexitabledesignerview.cpp:832
 msgid "Setting autonumber field"
 msgstr "Mengesetkan medan autonombor"
 
-#: plugins/tables/kexialtertabledialog.cpp:859
+#: plugins/tables/kexitabledesignerview.cpp:833
 msgid "Create &Primary Key"
 msgstr "Cipta Kunci &Utama"
 
-#: plugins/tables/kexialtertabledialog.cpp:896
+#: plugins/tables/kexitabledesignerview.cpp:840
+#, fuzzy
+msgid "Assign autonumber for field \"%1\""
+msgstr "Mengesetkan medan autonombor"
+
+#: plugins/tables/kexitabledesignerview.cpp:846
+#, fuzzy
+msgid "Remove autonumber from field \"%1\""
+msgstr "Mengesetkan medan autonombor"
+
+#: plugins/tables/kexitabledesignerview.cpp:866
+msgid "Set \"%1\" property for field \"%1\""
+msgstr ""
+
+#: plugins/tables/kexitabledesignerview.cpp:889
+msgid "Change type for field \"%1\" to \"%2\""
+msgstr ""
+
+#: plugins/tables/kexitabledesignerview.cpp:918
+#, fuzzy
+msgid "Set primary key for field \"%1\""
+msgstr "Setkan atau alih keluar kunci utama untuk medan yang sedang dipilih."
+
+#: plugins/tables/kexitabledesignerview.cpp:944
+#, fuzzy
+msgid "Unset primary key for field \"%1\""
+msgstr "Setkan atau alih keluar kunci utama untuk medan yang sedang dipilih."
+
+#: plugins/tables/kexitabledesignerview.cpp:1061
 msgid ""
 "<p>Table \"%1\" has no <b>primary key</b> defined.</p>"
 "<p>Although a primary key is not required, it is needed for creating relations "
@@ -5227,22 +5569,22 @@ msgstr ""
 "<p>Jika anda mahu tambah kunci utama dengan tangan, tekan \"Batal\" untuk "
 "membatalkan simpan reka bentuk jadual.</p>"
 
-#: plugins/tables/kexialtertabledialog.cpp:902
+#: plugins/tables/kexitabledesignerview.cpp:1067
 msgid "&Add Primary Key"
 msgstr "&Tambah Kunci Utama"
 
-#: plugins/tables/kexialtertabledialog.cpp:912
+#: plugins/tables/kexitabledesignerview.cpp:1077
 msgid ""
 "_: Identifier%1\n"
 "Id%1"
 msgstr ""
 
-#: plugins/tables/kexialtertabledialog.cpp:959
+#: plugins/tables/kexitabledesignerview.cpp:1124
 #, fuzzy
 msgid "You should enter field caption."
 msgstr "Anda perlu masukkan nama medan."
 
-#: plugins/tables/kexialtertabledialog.cpp:971
+#: plugins/tables/kexitabledesignerview.cpp:1136
 msgid ""
 "You have added no fields.\n"
 "Every table should have at least one field."
@@ -5250,7 +5592,7 @@ msgstr ""
 "Anda tidak tambah medan. \n"
 "Setiap jadual perlu ada sekurang-kurangnya satu medan."
 
-#: plugins/tables/kexialtertabledialog.cpp:979
+#: plugins/tables/kexitabledesignerview.cpp:1144
 msgid ""
 "You have added \"%1\" field name twice.\n"
 "Field names cannot be repeated. Correct name of the field."
@@ -5258,13 +5600,99 @@ msgstr ""
 "Anda telah tambah nama medan \"%1\" dua kali.\n"
 "Nama medan tidak boleh diulang. Betulkan nama medan."
 
-#: plugins/tables/kexialtertabledialog.cpp:1119
+#: plugins/tables/kexitabledesignerview.cpp:1277
 msgid ""
 "You are about to change the design of table \"%1\" but following objects using "
 "this table are opened:"
 msgstr ""
 "Anda hampir-hampir mengubah reka bentuk jadual \"%1\" tetapi objek berikut yang "
 "menggunakan jadual ini sedang dibuka:"
+
+#: plugins/tables/kexitabledesignerview.cpp:1433
+#, fuzzy
+msgid "Table field \"%1\""
+msgstr "Jadual"
+
+#: plugins/tables/kexitabledesignerview.cpp:1436
+msgid ""
+"_: Empty table row\n"
+"Empty row"
+msgstr ""
+
+#, fuzzy
+#~ msgid "No connection data is available. You did not select a destination filename."
+#~ msgstr "Tiada sambungan disediakan. Anda tidak pilih nama fail destinasi SQLite."
+
+#~ msgid "Open With..."
+#~ msgstr "Buka Dengan..."
+
+#~ msgid "Load From File..."
+#~ msgstr "Muatkan Dari Fail..."
+
+#~ msgid "Save to File..."
+#~ msgstr "Simpan ke Fail..."
+
+#, fuzzy
+#~ msgid "Date Widget"
+#~ msgstr "Widget Bentangan"
+
+#, fuzzy
+#~ msgid ""
+#~ "_: Widget name. This string will be used to name widgets of this class. It must _not_ contain white spaces and non latin1 characters.\n"
+#~ "dateWidget"
+#~ msgstr "Laporan"
+
+#, fuzzy
+#~ msgid "A widget to input and display a date"
+#~ msgstr "Widget untuk memaparkan teks "
+
+#, fuzzy
+#~ msgid "Time Widget"
+#~ msgstr "Ke Terlebar"
+
+#, fuzzy
+#~ msgid ""
+#~ "_: Widget name. This string will be used to name widgets of this class. It must _not_ contain white spaces and non latin1 characters.\n"
+#~ "timeWidget"
+#~ msgstr "Laporan"
+
+#, fuzzy
+#~ msgid "A widget to input and display a time"
+#~ msgstr "Widget untuk memaparkan teks "
+
+#, fuzzy
+#~ msgid "Date/Time Widget"
+#~ msgstr "Tarikh/Masa"
+
+#, fuzzy
+#~ msgid ""
+#~ "_: Widget name. This string will be used to name widgets of this class. It must _not_ contain white spaces and non latin1 characters.\n"
+#~ "dateTimeWidget"
+#~ msgstr "Laporan"
+
+#, fuzzy
+#~ msgid "A widget to input and display a date and time"
+#~ msgstr "Widget untuk memaparkan teks "
+
+#, fuzzy
+#~ msgid "Integer Number Spin Box"
+#~ msgstr "Nombor Integer"
+
+#, fuzzy
+#~ msgid ""
+#~ "_: Widget name. This string will be used to name widgets of this class. It must _not_ contain white spaces and non latin1 characters.\n"
+#~ "intSpinBox"
+#~ msgstr "Laporan"
+
+#, fuzzy
+#~ msgid "Floating-point Number Spin Box"
+#~ msgstr "Nombor Titik Apung"
+
+#, fuzzy
+#~ msgid ""
+#~ "_: Widget name. This string will be used to name widgets of this class. It must _not_ contain white spaces and non latin1 characters.\n"
+#~ "dblSpinBox"
+#~ msgstr "Laporan"
 
 #~ msgid "Saving object's data failed."
 #~ msgstr "Menyimpan data objek gagal."
@@ -5399,9 +5827,6 @@ msgstr ""
 #~ msgid "&More Projects..."
 #~ msgstr "&Lagi Projek..."
 
-#~ msgid "cannot create object - "
-#~ msgstr "tidak boleh cipta objek-"
-
 #~ msgid ""
 #~ "_: %1 is the type of the object (eg 'report', 'table', 'query') and %2 is its name For example: Table \"my_table\" allready exists\n"
 #~ "%1 \"%2\" already exists.\n"
@@ -5525,9 +5950,6 @@ msgstr ""
 #~ msgid "Property"
 #~ msgstr "Ciri"
 
-#~ msgid "Value"
-#~ msgstr "Nilai"
-
 #~ msgid "Undo changes"
 #~ msgstr "Batalkan perubahan"
 
@@ -5557,9 +5979,6 @@ msgstr ""
 
 #~ msgid "Note: This table is already filled with data which will be removed."
 #~ msgstr "Nota: Jadual ini sudah diisi dengan data yang akan dialih keluar."
-
-#~ msgid "Execute script"
-#~ msgstr "Laksana skrip"
 
 #~ msgid ""
 #~ "_: Widget name (see above)\n"
