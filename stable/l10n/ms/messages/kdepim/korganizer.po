@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
-"POT-Creation-Date: 2006-09-05 02:40+0200\n"
+"POT-Creation-Date: 2006-09-13 02:40+0200\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -77,9 +77,9 @@ msgstr ""
 msgid "Name"
 msgstr "Nama"
 
-#. i18n: file publishdialog_base.ui line 39
-#: koeditoralarms.cpp:86 koeditordetails.cpp:223 koeditorfreebusy.cpp:256
-#: koprefsdialog.cpp:859 rc.cpp:425 rc.cpp:1707
+#. i18n: file koeditoralarms_base.ui line 282
+#: koeditoralarms.cpp:89 koeditordetails.cpp:223 koeditorfreebusy.cpp:256
+#: koprefsdialog.cpp:859 rc.cpp:228 rc.cpp:425 rc.cpp:1707 rc.cpp:1784
 #, no-c-format
 msgid "Email"
 msgstr "E-mel"
@@ -385,8 +385,10 @@ msgstr "Mengeset sekerap mana peristiwa atau tugasan ini sepatutnya berulang."
 msgid "&Recur every"
 msgstr "Be&rulang setiap"
 
+#. i18n: file koeditoralarms_base.ui line 70
 #: koeditorgeneral.cpp:217 koeditorrecurrence.cpp:167
-#: korgac/alarmdialog.cpp:83
+#: korgac/alarmdialog.cpp:83 rc.cpp:182 rc.cpp:1738
+#, no-c-format
 msgid "day(s)"
 msgstr "hari"
 
@@ -900,47 +902,49 @@ msgstr "Tidak dapat mencari templat '%1'."
 msgid "Error loading template file '%1'."
 msgstr "Ralat semasa memuatkan fail templat '%1'."
 
-#: koeditoralarms.cpp:80 koprefsdialog.cpp:174
-msgid "Unknown"
-msgstr "Tidak diketahui"
-
-#: koeditoralarms.cpp:82
+#: koeditoralarms.cpp:83
 msgid "Reminder Dialog"
 msgstr "Dialog Peringatan"
 
-#: koeditoralarms.cpp:84
-msgid "Application/Script"
-msgstr "Aplikasi/Skrip"
+#. i18n: file koeditoralarms_base.ui line 271
+#: koeditoralarms.cpp:86 rc.cpp:225 rc.cpp:1781
+#, no-c-format
+msgid "Program"
+msgstr ""
 
-#: koeditoralarms.cpp:88
+#: koeditoralarms.cpp:92
 msgid "Audio"
 msgstr "Audio"
 
-#: koeditoralarms.cpp:100
+#: koeditoralarms.cpp:95 koprefsdialog.cpp:174
+msgid "Unknown"
+msgstr "Tidak diketahui"
+
+#: koeditoralarms.cpp:106
 msgid ""
 "_: N days/hours/minutes before/after the start/end\n"
 "%1 before the start"
 msgstr ""
 
-#: koeditoralarms.cpp:103
+#: koeditoralarms.cpp:109
 msgid ""
 "_: N days/hours/minutes before/after the start/end\n"
 "%1 after the start"
 msgstr ""
 
-#: koeditoralarms.cpp:108
+#: koeditoralarms.cpp:114
 msgid ""
 "_: N days/hours/minutes before/after the start/end\n"
 "%1 before the end"
 msgstr ""
 
-#: koeditoralarms.cpp:111
+#: koeditoralarms.cpp:117
 msgid ""
 "_: N days/hours/minutes before/after the start/end\n"
 "%1 after the end"
 msgstr ""
 
-#: koeditoralarms.cpp:120
+#: koeditoralarms.cpp:126
 #, fuzzy, c-format
 msgid ""
 "_n: 1 day\n"
@@ -949,7 +953,7 @@ msgstr ""
 "_n: 1 hari\n"
 "%n hari"
 
-#: koeditoralarms.cpp:123 koeditorgeneralevent.cpp:388
+#: koeditoralarms.cpp:129 koeditorgeneralevent.cpp:388
 #, fuzzy, c-format
 msgid ""
 "_n: 1 hour\n"
@@ -958,7 +962,7 @@ msgstr ""
 "_n: 1 jam\n"
 "%n jam"
 
-#: koeditoralarms.cpp:126 koeditorgeneralevent.cpp:395
+#: koeditoralarms.cpp:132 koeditorgeneralevent.cpp:395
 #, fuzzy, c-format
 msgid ""
 "_n: 1 minute\n"
@@ -967,7 +971,7 @@ msgstr ""
 "_n: 1 minit\n"
 "%n minit"
 
-#: koeditoralarms.cpp:140
+#: koeditoralarms.cpp:148
 #, fuzzy
 msgid "Edit Reminders"
 msgstr "&Peringatan"
@@ -1360,11 +1364,15 @@ msgid "Sets how long before the event occurs the reminder will be triggered."
 msgstr ""
 "Mengeset berapa lama sebelum peristiwa berlaku satu-satu peringatan dicetus."
 
-#: koeditorgeneral.cpp:215 korgac/alarmdialog.cpp:81
+#. i18n: file koeditoralarms_base.ui line 60
+#: koeditorgeneral.cpp:215 korgac/alarmdialog.cpp:81 rc.cpp:176 rc.cpp:1732
+#, no-c-format
 msgid "minute(s)"
 msgstr "minit"
 
-#: koeditorgeneral.cpp:216 korgac/alarmdialog.cpp:82
+#. i18n: file koeditoralarms_base.ui line 65
+#: koeditorgeneral.cpp:216 korgac/alarmdialog.cpp:82 rc.cpp:179 rc.cpp:1735
+#, no-c-format
 msgid "hour(s)"
 msgstr "jam"
 
@@ -1372,18 +1380,18 @@ msgstr "jam"
 msgid "Advanced"
 msgstr ""
 
-#: koeditorgeneral.cpp:263 koeditorgeneral.cpp:336
+#: koeditorgeneral.cpp:265 koeditorgeneral.cpp:341
 msgid "Owner: "
 msgstr "Pemilik:"
 
-#: koeditorgeneral.cpp:296
+#: koeditorgeneral.cpp:299
 #, c-format
 msgid ""
-"_n: 1 reminder configured\n"
-"%n reminders configured"
+"_n: 1 advanced reminder configured\n"
+"%n advanced reminders configured"
 msgstr ""
 
-#: koeditorgeneral.cpp:322
+#: koeditorgeneral.cpp:326
 msgid "1 advanced reminder configured"
 msgstr ""
 
@@ -1568,9 +1576,7 @@ msgstr "%1ini melibatkan orang lain. Hantar e-mel kepada penghadir?"
 msgid "Group Scheduling Email"
 msgstr "E-mel Penjadualan Kumpulan"
 
-#. i18n: file koeditoralarms_base.ui line 282
-#: kogroupware.cpp:233 rc.cpp:228 rc.cpp:1784
-#, no-c-format
+#: kogroupware.cpp:233
 msgid "Send Email"
 msgstr "Hantar E-mel"
 
@@ -1854,53 +1860,53 @@ msgstr "Tolak"
 msgid "Accept"
 msgstr "Terima"
 
-#: koprefs.cpp:84
+#: koprefs.cpp:85
 msgid ""
 "_: Default export file\n"
 "calendar.html"
 msgstr "calendar.html"
 
-#: koprefs.cpp:169
+#: koprefs.cpp:161
 msgid "Appointment"
 msgstr "Temu janji"
 
-#: koprefs.cpp:169
+#: koprefs.cpp:161
 msgid "Business"
 msgstr "Perniagaan"
 
-#: koprefs.cpp:170
+#: koprefs.cpp:162
 msgid "Meeting"
 msgstr "Mesyuarat"
 
-#: koprefs.cpp:170
+#: koprefs.cpp:162
 msgid "Phone Call"
 msgstr "Panggilan Telefon"
 
-#: koprefs.cpp:170
+#: koprefs.cpp:162
 msgid "Education"
 msgstr "Pendidikan"
 
-#: koprefs.cpp:171 printing/calprinthelper.cpp:332
+#: koprefs.cpp:163 printing/calprinthelper.cpp:332
 msgid "Holiday"
 msgstr "Hari cuti"
 
-#: koprefs.cpp:171
+#: koprefs.cpp:163
 msgid "Vacation"
 msgstr "Percutian"
 
-#: koprefs.cpp:171
+#: koprefs.cpp:163
 msgid "Special Occasion"
 msgstr "Peristiwa Khusus"
 
-#: koprefs.cpp:172
+#: koprefs.cpp:164
 msgid "Personal"
 msgstr "Peribadi"
 
-#: koprefs.cpp:172
+#: koprefs.cpp:164
 msgid "Travel"
 msgstr "Perjalanan"
 
-#: koprefs.cpp:173
+#: koprefs.cpp:165
 msgid "Birthday"
 msgstr "Hari Lahir"
 
@@ -3065,51 +3071,33 @@ msgid "Alarms"
 msgstr "Penggera"
 
 #. i18n: file koeditoralarms_base.ui line 30
-#: rc.cpp:173 rc.cpp:1729
-#, no-c-format
-msgid "Time"
-msgstr "Waktu"
-
-#. i18n: file koeditoralarms_base.ui line 60
-#: rc.cpp:176 rc.cpp:1732
-#, no-c-format
-msgid "Minutes"
-msgstr "Minit"
-
-#. i18n: file koeditoralarms_base.ui line 65
-#: rc.cpp:179 rc.cpp:1735
-#, no-c-format
-msgid "Hours"
-msgstr "Jam"
-
-#. i18n: file koeditoralarms_base.ui line 70
-#: rc.cpp:182 rc.cpp:1738
-#, no-c-format
-msgid "Days"
-msgstr "Hari"
+#: rc.cpp:173 rc.cpp:267 rc.cpp:1729 rc.cpp:1823
+#, fuzzy, no-c-format
+msgid "Time Offset"
+msgstr "Ofset"
 
 #. i18n: file koeditoralarms_base.ui line 80
 #: rc.cpp:185 rc.cpp:1741
-#, no-c-format
-msgid "Before the Start"
+#, fuzzy, no-c-format
+msgid "before the start"
 msgstr "Sebelum Pemulaan"
 
 #. i18n: file koeditoralarms_base.ui line 85
 #: rc.cpp:188 rc.cpp:1744
-#, no-c-format
-msgid "After the Start"
+#, fuzzy, no-c-format
+msgid "after the start"
 msgstr "Selepas pemulaan"
 
 #. i18n: file koeditoralarms_base.ui line 90
 #: rc.cpp:191 rc.cpp:1747
 #, no-c-format
-msgid "Before the End"
-msgstr "Sebelum Tamat"
+msgid "before the end"
+msgstr "sebelum tamat"
 
 #. i18n: file koeditoralarms_base.ui line 95
 #: rc.cpp:194 rc.cpp:1750
-#, no-c-format
-msgid "After the End"
+#, fuzzy, no-c-format
+msgid "after the end"
 msgstr "Selepas Tamat"
 
 #. i18n: file koeditoralarms_base.ui line 128
@@ -3132,9 +3120,9 @@ msgstr "&Sela:"
 
 #. i18n: file koeditoralarms_base.ui line 178
 #: rc.cpp:206 rc.cpp:1762
-#, no-c-format
-msgid "&Repeating:"
-msgstr "&Berulang:"
+#, fuzzy, no-c-format
+msgid "&Repeat:"
+msgstr "Ulang"
 
 #. i18n: file koeditoralarms_base.ui line 189
 #: rc.cpp:209 rc.cpp:1765
@@ -3144,9 +3132,9 @@ msgstr "setiap"
 
 #. i18n: file koeditoralarms_base.ui line 192
 #: rc.cpp:212 rc.cpp:1768
-#, no-c-format
-msgid " Minute(s)"
-msgstr "Minit"
+#, fuzzy, no-c-format
+msgid " minute(s)"
+msgstr "minit"
 
 #. i18n: file koeditoralarms_base.ui line 210
 #: rc.cpp:215 rc.cpp:264 rc.cpp:1771 rc.cpp:1820
@@ -3156,32 +3144,26 @@ msgstr "Jenis"
 
 #. i18n: file koeditoralarms_base.ui line 252
 #: rc.cpp:219 rc.cpp:1775
-#, no-c-format
-msgid "&Display reminder"
-msgstr "&Paparkan peringatan"
+#, fuzzy, no-c-format
+msgid "&Reminder Dialog"
+msgstr "Dialog Peringatan"
 
 #. i18n: file koeditoralarms_base.ui line 263
 #: rc.cpp:222 rc.cpp:1778
-#, no-c-format
-msgid "&Sound"
-msgstr "&Bunyi"
-
-#. i18n: file koeditoralarms_base.ui line 271
-#: rc.cpp:225 rc.cpp:1781
 #, fuzzy, no-c-format
-msgid "Application / script"
-msgstr "Aplikasi/skrip"
+msgid "A&udio"
+msgstr "Audio"
 
 #. i18n: file koeditoralarms_base.ui line 341
 #: rc.cpp:231 rc.cpp:1787
-#, no-c-format
-msgid "Reminder &text:"
-msgstr "&Teks peringatan:"
+#, fuzzy, no-c-format
+msgid "Reminder Dialog &text:"
+msgstr "Dialog Peringatan"
 
 #. i18n: file koeditoralarms_base.ui line 373
 #: rc.cpp:234 rc.cpp:1790
-#, no-c-format
-msgid "Sound &file:"
+#, fuzzy, no-c-format
+msgid "Audio &file:"
 msgstr "&Fail bunyi:"
 
 #. i18n: file koeditoralarms_base.ui line 384
@@ -3194,8 +3176,8 @@ msgstr "*.wav|Fail Wav;*.mp3|Fail MP3;*.*|Semua fail"
 #. i18n: file koeditoralarms_base.ui line 425
 #: rc.cpp:240 rc.cpp:1796
 #, no-c-format
-msgid "&Application / Script:"
-msgstr "&Aplikasi / Skrip:"
+msgid "&Program file:"
+msgstr ""
 
 #. i18n: file koeditoralarms_base.ui line 436
 #: rc.cpp:243 rc.cpp:1799
@@ -3205,21 +3187,21 @@ msgstr "*.*|Semua fail"
 
 #. i18n: file koeditoralarms_base.ui line 444
 #: rc.cpp:246 rc.cpp:1802
-#, no-c-format
-msgid "Ar&guments:"
+#, fuzzy, no-c-format
+msgid "Program ar&guments:"
 msgstr "&Argumen:"
 
 #. i18n: file koeditoralarms_base.ui line 493
 #: rc.cpp:249 rc.cpp:1805
 #, no-c-format
-msgid "&Text of the message:"
-msgstr "&Teks mesej:"
+msgid "Email &message text:"
+msgstr ""
 
 #. i18n: file koeditoralarms_base.ui line 514
-#: rc.cpp:252 rc.cpp:1808 searchdialog.cpp:91
-#, no-c-format
-msgid "&To:"
-msgstr "&Kepada:"
+#: rc.cpp:252 rc.cpp:1808
+#, fuzzy, no-c-format
+msgid "Email &address(es):"
+msgstr "Alamat e-&mel:"
 
 #. i18n: file koeditoralarms_base.ui line 538
 #: rc.cpp:255 rc.cpp:1811
@@ -3232,12 +3214,6 @@ msgstr "&Buang..."
 #, no-c-format
 msgid "D&uplicate"
 msgstr "D&uplikasikan"
-
-#. i18n: file koeditoralarms_base.ui line 588
-#: rc.cpp:267 rc.cpp:1823
-#, no-c-format
-msgid "Offset"
-msgstr "Ofset"
 
 #. i18n: file koeditoralarms_base.ui line 599
 #: rc.cpp:270 rc.cpp:1826
@@ -5011,6 +4987,10 @@ msgstr "Julat Tarikh"
 msgid "Fr&om:"
 msgstr "&Daripada:"
 
+#: searchdialog.cpp:91
+msgid "&To:"
+msgstr "&Kepada:"
+
 #: searchdialog.cpp:95
 msgid "E&vents have to be completely included"
 msgstr "&Perisitiwa mesti disertakan sepenuhnya"
@@ -6608,6 +6588,49 @@ msgstr ""
 "Tidak dapat menambah item akan datang ke dalam kalendar. Tiada perubahan akan "
 "dibuat."
 
+#~ msgid "Application/Script"
+#~ msgstr "Aplikasi/Skrip"
+
+#~ msgid "Time"
+#~ msgstr "Waktu"
+
+#~ msgid "Minutes"
+#~ msgstr "Minit"
+
+#~ msgid "Hours"
+#~ msgstr "Jam"
+
+#~ msgid "Days"
+#~ msgstr "Hari"
+
+#~ msgid "Before the End"
+#~ msgstr "Sebelum Tamat"
+
+#~ msgid "&Repeating:"
+#~ msgstr "&Berulang:"
+
+#~ msgid " Minute(s)"
+#~ msgstr "Minit"
+
+#~ msgid "&Display reminder"
+#~ msgstr "&Paparkan peringatan"
+
+#~ msgid "&Sound"
+#~ msgstr "&Bunyi"
+
+#, fuzzy
+#~ msgid "Application / script"
+#~ msgstr "Aplikasi/skrip"
+
+#~ msgid "Reminder &text:"
+#~ msgstr "&Teks peringatan:"
+
+#~ msgid "&Application / Script:"
+#~ msgstr "&Aplikasi / Skrip:"
+
+#~ msgid "&Text of the message:"
+#~ msgstr "&Teks mesej:"
+
 #~ msgid "Toggle Alarm"
 #~ msgstr "Toggelkan Penggera"
 
@@ -6761,9 +6784,6 @@ msgstr ""
 
 #~ msgid "15 Minutes"
 #~ msgstr "15 Minit"
-
-#~ msgid "before the end"
-#~ msgstr "sebelum tamat"
 
 #~ msgid "Display"
 #~ msgstr "Paparkan"
