@@ -4,13 +4,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
-"POT-Creation-Date: 2006-03-29 04:03+0200\n"
+"POT-Creation-Date: 2006-11-02 02:46+0100\n"
 "PO-Revision-Date: 2005-09-30 02:24-0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: lib/mfieldobject.cpp:233
+msgid ","
+msgstr ""
 
 #: lib/mreportviewer.cpp:155 lib/mreportviewer.cpp:293
 msgid ""
@@ -81,31 +85,37 @@ msgid "Grid size:"
 msgstr ""
 
 #: kudesigner/kudesigner_view.cpp:192 kudesigner_lib/reportheader.cpp:45
+#: kudesigner_lib/structurewidget.cpp:123
 msgid "Report Header"
 msgstr "Pengepala Laporan"
 
 #: kudesigner/kudesigner_view.cpp:194 kudesigner_lib/reportfooter.cpp:47
+#: kudesigner_lib/structurewidget.cpp:126
 msgid "Report Footer"
 msgstr "Pengaki Laporan"
 
 #: kudesigner/kudesigner_view.cpp:196 kudesigner_lib/pageheader.cpp:46
+#: kudesigner_lib/structurewidget.cpp:132
 msgid "Page Header"
 msgstr "Pengepala Halaman"
 
 #: kudesigner/kudesigner_view.cpp:198 kudesigner_lib/pagefooter.cpp:45
+#: kudesigner_lib/structurewidget.cpp:129
 msgid "Page Footer"
 msgstr "Pengaki Halaman"
 
 #: kudesigner/kudesigner_view.cpp:200 kudesigner_lib/detailheader.cpp:39
+#: kudesigner_lib/structurewidget.cpp:138
 msgid "Detail Header"
 msgstr "Pengepala Perincian"
 
 #: kudesigner/kudesigner_view.cpp:202 kudesigner_lib/detail.cpp:42
-#: kudesigner_lib/detailbase.cpp:29
+#: kudesigner_lib/detailbase.cpp:29 kudesigner_lib/structurewidget.cpp:135
 msgid "Detail"
 msgstr "Perincian"
 
 #: kudesigner/kudesigner_view.cpp:204 kudesigner_lib/detailfooter.cpp:39
+#: kudesigner_lib/structurewidget.cpp:141
 msgid "Detail Footer"
 msgstr "Pengaki Perincian"
 
@@ -132,6 +142,7 @@ msgstr "Medan Terhitung"
 
 #: kudesigner/kudesigner_view.cpp:223 kudesigner_lib/commdefs.cpp:42
 #: kudesigner_lib/label.cpp:62 kudesigner_lib/line.cpp:35
+#: kudesigner_lib/structurewidget.cpp:182
 msgid "Line"
 msgstr "Garis"
 
@@ -143,6 +154,23 @@ msgstr "Label"
 #: kudesigner/kudesigner_view.cpp:230
 msgid "Grid Size"
 msgstr ""
+
+#: kudesigner/kudesigner_view.cpp:312
+msgid "Add Detail Header"
+msgstr "Tambah Pengepala Perincian"
+
+#: kudesigner/kudesigner_view.cpp:312 kudesigner/kudesigner_view.cpp:325
+#: kudesigner/kudesigner_view.cpp:339
+msgid "Enter detail level:"
+msgstr "Masukkan tahap perincian:"
+
+#: kudesigner/kudesigner_view.cpp:325
+msgid "Add Detail"
+msgstr "Tambah Perincian"
+
+#: kudesigner/kudesigner_view.cpp:339
+msgid "Add Detail Footer"
+msgstr "Tambah Pengaki Perincian"
 
 #: kudesigner_lib/calcfield.cpp:35
 #, fuzzy
@@ -178,6 +206,43 @@ msgstr ""
 #, fuzzy
 msgid "Calculation Type"
 msgstr "Jenis pengiraan"
+
+#: kudesigner_lib/command.cpp:54
+msgid "Insert Detail Footer Section"
+msgstr "Selitkan Seksyen Pengaki Perincian"
+
+#: kudesigner_lib/command.cpp:78
+msgid "Insert Detail Section"
+msgstr "Selitkan Seksyen Perincian"
+
+#: kudesigner_lib/command.cpp:102
+msgid "Insert Detail Header Section"
+msgstr "Selitkan Seksyen Pengepala Perincian"
+
+#: kudesigner_lib/command.cpp:126
+msgid "Insert Page Footer Section"
+msgstr "Selitkan Seksyen Pengaki Halaman"
+
+#: kudesigner_lib/command.cpp:149
+msgid "Insert Page Header Section"
+msgstr "Selitkan Seksyen Pengepala Halaman"
+
+#: kudesigner_lib/command.cpp:172
+msgid "Insert Report Footer Section"
+msgstr "Selitkan Seksyen Pengaki Laporan"
+
+#: kudesigner_lib/command.cpp:195
+msgid "Insert Report Header Section"
+msgstr "Selitkan Seksyen Pengepala Laporan"
+
+#: kudesigner_lib/command.cpp:218
+#, fuzzy
+msgid "Insert Report Item"
+msgstr "Selitkan Butiran Laporan"
+
+#: kudesigner_lib/command.cpp:273
+msgid "Delete Report Item(s)"
+msgstr "Hapuskan Butiran Laporan"
 
 #: kudesigner_lib/commdefs.cpp:38
 #, fuzzy
@@ -570,6 +635,109 @@ msgstr "Medan Khas "
 msgid "PageNo"
 msgstr "Nombor Halaman"
 
+#: kudesigner_lib/structurewidget.cpp:82
+#, fuzzy
+msgid "Report Structure"
+msgstr "Selitkan Butiran Laporan"
+
+#: kudesigner_lib/structurewidget.cpp:94
+#, fuzzy
+msgid "Report Template"
+msgstr "Pengepala Laporan"
+
+#: kudesigner_lib/structurewidget.cpp:145
+msgid " (level %1)"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:163
+msgid "<unknown>"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:168
+#, fuzzy, c-format
+msgid "Label: %1"
+msgstr "Label"
+
+#: kudesigner_lib/structurewidget.cpp:171
+#, fuzzy, c-format
+msgid "Field: %1"
+msgstr "Medan"
+
+#: kudesigner_lib/structurewidget.cpp:174
+#, fuzzy, c-format
+msgid "Calculated Field: %1"
+msgstr "Medan Terhitung"
+
+#: kudesigner_lib/structurewidget.cpp:179
+#, fuzzy, c-format
+msgid "Special Field: %1"
+msgstr "Medan Khas "
+
+#: part/kugar_about.h:31
+msgid "Kugar"
+msgstr "Kugar"
+
+#: part/kugar_about.h:32
+msgid "Report viewer(generator)"
+msgstr ""
+
+#: part/kugar_about.h:33
+msgid "(c) 1999-2006, The Kugar Team"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:40 part/kugar_about.h:36
+#, fuzzy
+msgid "Maintainer, Report Designer, Kugar library enhancements"
+msgstr ""
+"Penyenggara Semasa, Pereka Bentuk Laporan, Penambahan Am, Pemasang Pepijat"
+
+#: part/kugar_about.h:39
+msgid "Smaller fixes and Kexi integration"
+msgstr ""
+
+#: part/kugar_about.h:42
+msgid "Direct database support"
+msgstr ""
+
+#: part/kugar_about.h:45
+msgid "Former maintainer"
+msgstr ""
+
+#: part/kugar_about.h:48
+#, fuzzy
+msgid "Original author of Metaphrast"
+msgstr "Pengarang asal"
+
+#: _translatorinfo.cpp:1 kudesigner/kudesigner_aboutdata.h:51
+#: part/kugar_about.h:50
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "MIMOS"
+
+#: _translatorinfo.cpp:3 kudesigner/kudesigner_aboutdata.h:52
+#: part/kugar_about.h:50
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "opensource@mimos.my"
+
+#: kudesigner/kudesigner_aboutdata.h:27
+msgid "GUI report template designer for Kugar report engine"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:36
+msgid "Kugar Report Designer"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:44
+msgid "Major bugfixes, additional features and Kexi integration"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:48
+msgid "Fast property editing for report items"
+msgstr ""
+
 #. i18n: file kudesigner/kudesignerui.rc line 16
 #: rc.cpp:9
 #, no-c-format
@@ -593,30 +761,6 @@ msgstr "Seksyen"
 #, no-c-format
 msgid "Items"
 msgstr "Butiran"
-
-#: _translatorinfo.cpp:1
-msgid ""
-"_: NAME OF TRANSLATORS\n"
-"Your names"
-msgstr "MIMOS"
-
-#: _translatorinfo.cpp:3
-msgid ""
-"_: EMAIL OF TRANSLATORS\n"
-"Your emails"
-msgstr "opensource@mimos.my"
-
-#~ msgid "Add Detail Header"
-#~ msgstr "Tambah Pengepala Perincian"
-
-#~ msgid "Enter detail level:"
-#~ msgstr "Masukkan tahap perincian:"
-
-#~ msgid "Add Detail"
-#~ msgstr "Tambah Perincian"
-
-#~ msgid "Add Detail Footer"
-#~ msgstr "Tambah Pengaki Perincian"
 
 #~ msgid "Insert Label"
 #~ msgstr "Selitkan Label"
@@ -657,11 +801,6 @@ msgstr "opensource@mimos.my"
 #~ "_: candefs\n"
 #~ "Insert Line"
 #~ msgstr "Selitkan Garis"
-
-#~ msgid ""
-#~ "_: candefs\n"
-#~ "Insert Report Item"
-#~ msgstr "Selitkan Butiran Laporan"
 
 #~ msgid "Detail height"
 #~ msgstr "Tinggi Perincian"
@@ -738,30 +877,6 @@ msgstr "opensource@mimos.my"
 #~ msgid "Field type to display"
 #~ msgstr "Jenis medan hendak dipaparkan"
 
-#~ msgid "Insert Detail Footer Section"
-#~ msgstr "Selitkan Seksyen Pengaki Perincian"
-
-#~ msgid "Insert Detail Section"
-#~ msgstr "Selitkan Seksyen Perincian"
-
-#~ msgid "Insert Detail Header Section"
-#~ msgstr "Selitkan Seksyen Pengepala Perincian"
-
-#~ msgid "Insert Page Footer Section"
-#~ msgstr "Selitkan Seksyen Pengaki Halaman"
-
-#~ msgid "Insert Page Header Section"
-#~ msgstr "Selitkan Seksyen Pengepala Halaman"
-
-#~ msgid "Insert Report Footer Section"
-#~ msgstr "Selitkan Seksyen Pengaki Laporan"
-
-#~ msgid "Insert Report Header Section"
-#~ msgstr "Selitkan Seksyen Pengepala Laporan"
-
-#~ msgid "Delete Report Item(s)"
-#~ msgstr "Hapuskan Butiran Laporan"
-
 #~ msgid "Custom..."
 #~ msgstr "Biasa..."
 
@@ -780,9 +895,6 @@ msgstr "opensource@mimos.my"
 #~ msgid "Property"
 #~ msgstr "Ciri"
 
-#~ msgid "Kugar"
-#~ msgstr "Kugar"
-
 #~ msgid "A template driven report viewer for XML data."
 #~ msgstr "Pemapar laporan berasaskan templat untuk data XML."
 
@@ -793,14 +905,8 @@ msgstr "opensource@mimos.my"
 #~ "Kugar mencantumkan fail data XML dengan templat\n"
 #~ " XML untuk memaparkan dan mencetak laporan bermutu tinggi."
 
-#~ msgid "Current maintainer, Report Designer, General Enhancements, Bugfixes"
-#~ msgstr "Penyenggara Semasa, Pereka Bentuk Laporan, Penambahan Am, Pemasang Pepijat"
-
 #~ msgid "Former maintainer, Shell, Konqueror Part"
 #~ msgstr "Bekas Penyenggara, Rangka, Bahagian Konqueror"
-
-#~ msgid "Original author"
-#~ msgstr "Pengarang asal"
 
 #~ msgid "The XML data file"
 #~ msgstr "Fail data XML"
