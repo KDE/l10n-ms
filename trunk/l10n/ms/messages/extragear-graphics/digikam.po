@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
-"POT-Creation-Date: 2006-12-04 08:54+0100\n"
+"POT-Creation-Date: 2006-12-05 08:55+0100\n"
 "PO-Revision-Date: 2006-05-10 22:59+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -178,7 +178,10 @@ msgstr ""
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:309
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:342
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:372
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:393 showfoto/showfoto.cpp:641
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:393
+#: libs/widgets/metadata/exifwidget.cpp:216
+#: libs/widgets/metadata/gpswidget.cpp:346
+#: libs/widgets/metadata/makernotewidget.cpp:232 showfoto/showfoto.cpp:641
 #: utilities/imageeditor/canvas/undoaction.h:123
 #: utilities/imageeditor/editor/imagewindow.cpp:582
 #, fuzzy
@@ -729,7 +732,7 @@ msgstr ""
 
 #: libs/dialogs/imagedlgbase.cpp:220 libs/dialogs/imageguidedlg.cpp:238
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:296
-#: utilities/cameragui/cameraui.cpp:351
+#: utilities/cameragui/cameraui.cpp:349
 #: utilities/imageeditor/tools/imageprint.cpp:378
 #, fuzzy
 msgid "Settings"
@@ -783,16 +786,8 @@ msgid "Size:"
 msgstr "Saiz:"
 
 #: libs/widgets/metadata/exifwidget.cpp:109
-msgid "Standard Exif Tags"
+msgid "Standard EXIF Tags"
 msgstr ""
-
-#: libs/widgets/metadata/exifwidget.cpp:216
-#: libs/widgets/metadata/gpswidget.cpp:346
-#: libs/widgets/metadata/iptcwidget.cpp:190
-#: libs/widgets/metadata/makernotewidget.cpp:232
-#, fuzzy
-msgid "Unknow"
-msgstr "Entah"
 
 #: libs/widgets/metadata/exifwidget.cpp:233
 #: libs/widgets/metadata/gpswidget.cpp:363
@@ -804,13 +799,13 @@ msgstr ""
 #: libs/widgets/metadata/exifwidget.cpp:239
 #: libs/widgets/metadata/gpswidget.cpp:384
 #: libs/widgets/metadata/makernotewidget.cpp:255
-msgid "Exif File to Save"
+msgid "EXIF File to Save"
 msgstr ""
 
 #: libs/widgets/metadata/exifwidget.cpp:240
 #: libs/widgets/metadata/gpswidget.cpp:385
 #: libs/widgets/metadata/makernotewidget.cpp:256
-msgid "Exif binary Files (*.dat)"
+msgid "EXIF binary Files (*.dat)"
 msgstr ""
 
 #: libs/widgets/metadata/metadatawidget.cpp:105
@@ -842,12 +837,17 @@ msgid "<p><big><big><b>File name: %1 (%2)</b></big></big>"
 msgstr ""
 
 #: libs/widgets/metadata/makernotewidget.cpp:134
-msgid "Maker Note Exif Tags"
+msgid "MakerNote EXIF Tags"
 msgstr ""
 
 #: libs/widgets/metadata/iptcwidget.cpp:81
 msgid "IPTC Records"
 msgstr ""
+
+#: libs/widgets/metadata/iptcwidget.cpp:190
+#, fuzzy
+msgid "Unknow"
+msgstr "Entah"
 
 #: libs/widgets/metadata/iptcwidget.cpp:213
 msgid "IPTC File to Save"
@@ -867,6 +867,7 @@ msgid "Image Information"
 msgstr "Maklumat tidak sah"
 
 #: libs/widgets/metadata/mdkeylistviewitem.cpp:48
+#: utilities/setup/setuptooltip.cpp:134
 #, fuzzy
 msgid "Photograph Information"
 msgstr "Maklumat tidak sah"
@@ -1042,7 +1043,7 @@ msgstr ""
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:197
 #, fuzzy
-msgid "ICC Color Profile Informations"
+msgid "ICC Color Profile Information"
 msgstr "Tetapan Lain-lain"
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:285
@@ -1192,23 +1193,23 @@ msgid ""
 msgstr ""
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:153
-msgid "<p>Press this buttom to not magnify image"
+msgid "<p>Press this button to stop magnifying the image"
 msgstr ""
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:161
-msgid "<p>Press this buttom to magnify image using 1.5:1 zoom factor."
+msgid "<p>Press this button to magnify image using 1.5:1 zoom factor."
 msgstr ""
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:169
-msgid "<p>Press this buttom to magnify image using 2:1 zoom factor."
+msgid "<p>Press this button to magnify image using 2:1 zoom factor."
 msgstr ""
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:177
-msgid "<p>Press this buttom to magnify image using 2.5:1 zoom factor."
+msgid "<p>Press this button to magnify image using 2.5:1 zoom factor."
 msgstr ""
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:185
-msgid "<p>Press this buttom to magnify image using 3:1 zoom factor."
+msgid "<p>Press this button to magnify image using 3:1 zoom factor."
 msgstr ""
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:205
@@ -2414,7 +2415,7 @@ msgstr ""
 msgid "&Save search as:"
 msgstr "/Fail/Simpan Seb_agai..."
 
-#: digikam/searchadvanceddialog.cpp:174 digikam/searchquickdialog.cpp:91
+#: digikam/searchadvanceddialog.cpp:174
 msgid ""
 "<p>Enter here the name used to save the current search in \"My Searches\" view"
 msgstr ""
@@ -2431,7 +2432,7 @@ msgstr ""
 msgid "Reading database"
 msgstr ""
 
-#: digikam/digikamapp.cpp:235 showfoto/showfoto.cpp:310
+#: digikam/digikamapp.cpp:235
 msgid ""
 "<qt>"
 "<p>ICC profiles path seems to be invalid.</p>"
@@ -2929,7 +2930,7 @@ msgid "Quick Search"
 msgstr "Tapi_san pencarian:"
 
 #: digikam/searchquickdialog.cpp:81
-msgid "<p>Enter here your search arguments in albums library"
+msgid "<p>Enter your search arguments to find items in the albums library"
 msgstr ""
 
 #: digikam/searchquickdialog.cpp:85
@@ -2942,6 +2943,11 @@ msgstr ""
 #, fuzzy
 msgid "Save search as:"
 msgstr "/Fail/Simpan Seb_agai..."
+
+#: digikam/searchquickdialog.cpp:91
+msgid ""
+"<p>Enter the name used to save the current search in the \"My Searches\" view"
+msgstr ""
 
 #: digikam/digikamview.cpp:152 utilities/setup/setup.cpp:134
 #, fuzzy
@@ -2977,7 +2983,7 @@ msgid "&Background color:"
 msgstr "Kedalaman _Warna:"
 
 #: showfoto/setup/setupeditor.cpp:92
-msgid "<p>Select here the background color to use for image editor area."
+msgid "<p>Select the background color to use for the image editor area."
 msgstr ""
 
 #: showfoto/setup/setupeditor.cpp:96 utilities/setup/setupeditor.cpp:96
@@ -3112,6 +3118,15 @@ msgstr ""
 msgid "Decrease Contrast"
 msgstr ""
 
+#: showfoto/showfoto.cpp:310
+msgid ""
+"<qt>"
+"<p>The ICC profile path seems to be invalid.</p>"
+"<p>If you want to set it now, select \"Yes\", otherwise select \"No\". In this "
+"case, \"Color Management\" feature will be disabled until you solve this "
+"issue</p></qt>"
+msgstr ""
+
 #: showfoto/showfoto.cpp:415
 #, fuzzy
 msgid "Open folder"
@@ -3161,7 +3176,7 @@ msgstr ""
 #: showfoto/showfoto.cpp:1020
 #, fuzzy
 msgid ""
-"About to Delete File \"%1\"\n"
+"About to delete file \"%1\"\n"
 "Are you sure?"
 msgstr "Anda pasti untuk memadam fail but rangkaian '%s'?"
 
@@ -4710,7 +4725,7 @@ msgstr ""
 
 #: utilities/setup/setupmetadata.cpp:109
 msgid ""
-"<p>Toggle on this option to store image tags into IPTC <i>Keywords</i> tag."
+"<p>Turn this option on to store the image tags in the IPTC <i>Keywords</i> tag."
 msgstr ""
 
 #: utilities/setup/setupmetadata.cpp:113
@@ -4719,7 +4734,8 @@ msgstr ""
 
 #: utilities/setup/setupmetadata.cpp:114
 msgid ""
-"<p>Toggle on this option to store image rating into IPTC <i>Urgency</i> tag."
+"<p>Turn this option on to store the image rating in the IPTC <i>Urgency</i> "
+"tag."
 msgstr ""
 
 #: utilities/setup/setupmetadata.cpp:118
@@ -4728,8 +4744,8 @@ msgstr ""
 
 #: utilities/setup/setupmetadata.cpp:119
 msgid ""
-"<p>Toggle on this option to store default photographer identity into IPTC tags. "
-"You can set this value in the Identity setup page."
+"<p>Turn this option on to store the default photographer identity into the IPTC "
+"tags. You can set this value in the Identity setup page."
 msgstr ""
 
 #: utilities/setup/setupmetadata.cpp:124
@@ -4738,8 +4754,8 @@ msgstr ""
 
 #: utilities/setup/setupmetadata.cpp:125
 msgid ""
-"<p>Toggle on this option to store default credit and copyright identity into "
-"IPTC tags. You can set this value in the Identity setup page."
+"<p>Turn this option on to store the default credit and copyright identity into "
+"the IPTC tags. You can set this value in the Identity setup page."
 msgstr ""
 
 #: utilities/setup/setupmetadata.cpp:133
@@ -4752,7 +4768,7 @@ msgstr ""
 
 #: utilities/setup/setupmetadata.cpp:137
 msgid ""
-"<p>Toggle on this option to store image comments into JFIF section, Exif tag, "
+"<p>Turn this option on to store image comments into the JFIF section, EXIF tag, "
 "and IPTC tag."
 msgstr ""
 
@@ -4762,7 +4778,8 @@ msgstr ""
 
 #: utilities/setup/setupmetadata.cpp:142
 msgid ""
-"<p>Toggle on this option to store image date and time into Exif and IPTC tags."
+"<p>Turn this option on to store the image date and time into the EXIF and IPTC "
+"tags."
 msgstr ""
 
 #: utilities/setup/setupmetadata.cpp:158
@@ -4772,10 +4789,10 @@ msgstr ""
 #: utilities/setup/setupmetadata.cpp:161
 msgid ""
 "<p><b>EXIF</b> is a standard used by most digital cameras today to store "
-"technical information about photograph. You can learn more about EXIF at <a "
-"href='http://www.exif.org'>www.exif.org</a>.</p>"
+"technical information about the photograph as metadata in the image file. You "
+"can learn more about EXIF at <a href='http://www.exif.org'>www.exif.org</a>.</p>"
 "<p><b>IPTC</b> is another standard used in digital photography to store embeded "
-"informations in pictures. You can learn more about IPTC at <a "
+"information in pictures. You can learn more about IPTC at <a "
 "href='http://www.iptc.org/IIM'>www.iptc.org</a>.</p>"
 msgstr ""
 
@@ -4802,8 +4819,9 @@ msgid "&Delay between images:"
 msgstr "Direktori mengendungi imej:"
 
 #: utilities/setup/setupslideshow.cpp:71
-msgid "<p>The delay in seconds between images."
-msgstr ""
+#, fuzzy
+msgid "<p>The delay, in seconds, between images."
+msgstr "Direktori mengendungi imej:"
 
 #: utilities/setup/setupslideshow.cpp:73
 msgid "Start with current image"
@@ -4812,7 +4830,7 @@ msgstr ""
 #: utilities/setup/setupslideshow.cpp:74
 msgid ""
 "<p>If this option is enabled, Slideshow will be started with current image "
-"selected from images list."
+"selected from the images list."
 msgstr ""
 
 #: utilities/setup/setupslideshow.cpp:77
@@ -4821,7 +4839,7 @@ msgid "Display in loop"
 msgstr "Papar dalam tetingkap root"
 
 #: utilities/setup/setupslideshow.cpp:78
-msgid "<p>Slideshow running in loop with all current images."
+msgid "<p>Run the slideshow in a loop."
 msgstr ""
 
 #: utilities/setup/setupslideshow.cpp:80
@@ -4830,7 +4848,7 @@ msgid "Fullscreen mode"
 msgstr "Mod Penyelamatan"
 
 #: utilities/setup/setupslideshow.cpp:81
-msgid "<p>Toggle in fullScreen mode during Slideshow."
+msgid "<p>Use full-screen mode during the slideshow."
 msgstr ""
 
 #: utilities/setup/setupmime.cpp:70
@@ -4845,8 +4863,8 @@ msgstr ""
 #: utilities/setup/setupmime.cpp:76
 msgid ""
 "<p>Here you can set the extensions of image files to be displayed in Albums "
-"(such as JPEG or TIFF); when these files are double-clicked on they will be "
-"opened with the digiKam Image Editor."
+"(such as JPEG or TIFF); when these files are clicked on they will be opened "
+"with the digiKam Image Editor."
 msgstr ""
 
 #: utilities/setup/setupmime.cpp:85
@@ -4861,8 +4879,8 @@ msgstr ""
 #: utilities/setup/setupmime.cpp:91
 msgid ""
 "<p>Here you can set the extensions of movie files to be displayed in Albums "
-"(such as MPEG or AVI); when these files are double-clicked on they will be "
-"opened with the default KDE movie player."
+"(such as MPEG or AVI); when these files are clicked on they will be opened with "
+"the default KDE movie player."
 msgstr ""
 
 #: utilities/setup/setupmime.cpp:100
@@ -4877,8 +4895,8 @@ msgstr ""
 #: utilities/setup/setupmime.cpp:106
 msgid ""
 "<p>Here you can set the extensions of audio files to be displayed in Albums "
-"(such as MP3 or OGG); when these files are double-clicked on they will be "
-"opened with the default KDE audio player."
+"(such as MP3 or OGG); when these files are clicked on they will be opened with "
+"the default KDE audio player."
 msgstr ""
 
 #: utilities/setup/setupmime.cpp:117
@@ -4906,7 +4924,7 @@ msgstr ""
 
 #: utilities/setup/setupidentity.cpp:77
 #, fuzzy
-msgid "Photographer Informations"
+msgid "Photographer Information"
 msgstr "Maklumat tidak sah"
 
 #: utilities/setup/setupidentity.cpp:80
@@ -4915,8 +4933,7 @@ msgstr ""
 
 #: utilities/setup/setupidentity.cpp:87
 msgid ""
-"<p>Set here the photographer name. This field is limited to 32 ASCII "
-"characters."
+"<p>Set the photographer name. This field is limited to 32 ASCII characters."
 msgstr ""
 
 #: utilities/setup/setupidentity.cpp:90
@@ -4926,8 +4943,7 @@ msgstr "<title></title>"
 
 #: utilities/setup/setupidentity.cpp:97
 msgid ""
-"<p>Set here the photographer title. This field is limited to 32 ASCII "
-"characters."
+"<p>Set the photographer title. This field is limited to 32 ASCII characters."
 msgstr ""
 
 #: utilities/setup/setupidentity.cpp:102
@@ -4940,8 +4956,8 @@ msgstr ""
 
 #: utilities/setup/setupidentity.cpp:112
 msgid ""
-"<p>Set here the default provider identification of the picture, not necessarily "
-"the owner/creator. This field is limited to 32 ASCII characters."
+"<p>Set the default provider identification of the picture, not necessarily the "
+"owner/creator. This field is limited to 32 ASCII characters."
 msgstr ""
 
 #: utilities/setup/setupidentity.cpp:116
@@ -4950,9 +4966,9 @@ msgstr ""
 
 #: utilities/setup/setupidentity.cpp:123
 msgid ""
-"<p>Set here the default original owner identification of the intellectual "
-"content of the picture. This could be an agency, a member of an agency or an "
-"individual photographer name. This field is limited to 32 ASCII characters."
+"<p>Set the default original owner identification of the intellectual content of "
+"the picture. This could be an agency, a member of an agency or an individual "
+"photographer name. This field is limited to 32 ASCII characters."
 msgstr ""
 
 #: utilities/setup/setupidentity.cpp:128
@@ -4961,13 +4977,13 @@ msgstr ""
 
 #: utilities/setup/setupidentity.cpp:135
 msgid ""
-"<p>Set here the default copyright notice of the pictures. This field is limited "
-"to 128 ASCII characters."
+"<p>Set the default copyright notice of the pictures. This field is limited to "
+"128 ASCII characters."
 msgstr ""
 
 #: utilities/setup/setupidentity.cpp:140
 msgid ""
-"<b>Note: IPTC text tags only support printable ASCII characters set.</b>"
+"<b>Note: IPTC text tags only support the printable ASCII characters set.</b>"
 msgstr ""
 
 #: utilities/setup/setupcollections.cpp:90
@@ -5000,11 +5016,12 @@ msgstr "Kedalaman _Warna:"
 
 #: utilities/setup/setupeditor.cpp:82
 msgid ""
-"<p>Enable this option to use the background theme color into image editor area"
+"<p>Enable this option to use the background theme color in the image editor "
+"area"
 msgstr ""
 
 #: utilities/setup/setupeditor.cpp:92
-msgid "<p>Customize here the background color to use into image editor area."
+msgid "<p>Customize the background color to use in the image editor area."
 msgstr ""
 
 #: utilities/setup/setupcamera.cpp:85
@@ -5058,7 +5075,7 @@ msgstr ""
 
 #: utilities/setup/setup.cpp:134
 #, fuzzy
-msgid "Albums Settings"
+msgid "Album Settings"
 msgstr "Tetapan Lain-lain"
 
 #: utilities/setup/setup.cpp:138
@@ -5072,7 +5089,7 @@ msgstr "Tetapan Lain-lain"
 
 #: utilities/setup/setup.cpp:142
 #, fuzzy
-msgid "Embedded Image Informations Management"
+msgid "Embedded Image Information Management"
 msgstr "Membaca maklumat pakej..."
 
 #: utilities/setup/setup.cpp:146
@@ -5117,7 +5134,7 @@ msgstr ""
 
 #: utilities/setup/setup.cpp:166
 #, fuzzy
-msgid "Image Editor Plugins Settings"
+msgid "Image Editor Plug-in Settings"
 msgstr ""
 "penggunaan:   %s --list [nama]\n"
 
@@ -5137,8 +5154,10 @@ msgid "Kipi Plugins"
 msgstr "Tetapkan plugin pelayar"
 
 #: utilities/setup/setup.cpp:178
-msgid "Main Interface Plugins Settings"
+#, fuzzy
+msgid "Main Interface Plug-in Settings"
 msgstr ""
+"penggunaan:   %s --list [nama]\n"
 
 #: utilities/setup/setup.cpp:182
 msgid "Cameras"
@@ -5146,7 +5165,7 @@ msgstr ""
 
 #: utilities/setup/setup.cpp:182
 #, fuzzy
-msgid "Cameras Settings"
+msgid "Camera Settings"
 msgstr "Tetapan Lain-lain"
 
 #: utilities/setup/setup.cpp:186
@@ -5159,8 +5178,8 @@ msgid ""
 "The Exif auto-rotate thumbnails option has been changed.\n"
 "Do you want to rebuild all albums items thumbnails now?\n"
 "\n"
-"Note: thumbnails processing can take a while! You can start this job later "
-"using \"Tools\" menu."
+"Note: thumbnail processing can take a while! You can start this job later using "
+"\"Tools\" menu."
 msgstr ""
 
 #: utilities/setup/setupiofiles.cpp:91
@@ -5732,7 +5751,7 @@ msgstr ""
 
 #: utilities/setup/setuptooltip.cpp:113
 #, fuzzy
-msgid "File/Image Informations"
+msgid "File/Image Information"
 msgstr "Maklumat tidak sah"
 
 #: utilities/setup/setuptooltip.cpp:115
@@ -5779,11 +5798,6 @@ msgstr ""
 msgid "<p>Set this option to display image dimensions in pixels."
 msgstr ""
 
-#: utilities/setup/setuptooltip.cpp:134
-#, fuzzy
-msgid "Photograph Informations"
-msgstr "Maklumat tidak sah"
-
 #: utilities/setup/setuptooltip.cpp:136
 msgid "Show camera make and model"
 msgstr ""
@@ -5800,7 +5814,7 @@ msgid "Show camera date"
 msgstr "Pemindahan Fail (FTP)"
 
 #: utilities/setup/setuptooltip.cpp:141
-msgid "<p>Set this option to display the date when the picture has been taken."
+msgid "<p>Set this option to display the date when the picture was taken."
 msgstr ""
 
 #: utilities/setup/setuptooltip.cpp:143
@@ -5854,7 +5868,7 @@ msgstr ""
 
 #: utilities/setup/setuptooltip.cpp:167
 #, fuzzy
-msgid "digiKam Informations"
+msgid "digiKam Information"
 msgstr "Maklumat tidak sah"
 
 #: utilities/setup/setuptooltip.cpp:169
@@ -5863,7 +5877,7 @@ msgid "Show album name"
 msgstr "nama fail rpm [%s] tidak sah"
 
 #: utilities/setup/setuptooltip.cpp:170
-msgid "<p>Set this option to display album name."
+msgid "<p>Set this option to display the album name."
 msgstr ""
 
 #: utilities/setup/setuptooltip.cpp:172
@@ -5890,7 +5904,7 @@ msgid "Show picture rating"
 msgstr "Pemindahan Fail (FTP)"
 
 #: utilities/setup/setuptooltip.cpp:179
-msgid "<p>Set this option to display picture rating."
+msgid "<p>Set this option to display the picture rating."
 msgstr ""
 
 #: utilities/setup/cameraselection.cpp:95
@@ -6082,7 +6096,7 @@ msgstr ""
 
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:61
 #, fuzzy
-msgid "Do Nothing"
+msgid "Do nothing"
 msgstr "%s tidak wujud"
 
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:62
@@ -6118,13 +6132,13 @@ msgstr ""
 
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:88
 msgid ""
-"<p>This picture has not assigned any color profile.</p>"
+"<p>This picture has not been assigned any color profile.</p>"
 "<p>Do you want to convert it to your workspace color profile?</p>"
 msgstr ""
 
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:98
 msgid ""
-"<p>This picture has assigned a color profile that does not match with your "
+"<p>This picture has been assigned a color profile that does not match with your "
 "default workspace color profile.</p>"
 "<p>Do you want to convert it to your workspace color profile?</p>"
 msgstr ""
@@ -6161,9 +6175,9 @@ msgstr ""
 
 #: utilities/imageeditor/canvas/dimginterface.cpp:373
 msgid ""
-"Cannot find ICC color-space profile file. ICC profiles path seems to be "
-"invalid. No color transform will be done. Please, check the color management "
-"configuration it in digiKam setup."
+"Cannot find the ICC color-space profile file. ICC profiles path seems to be "
+"invalid. No color transform will be applied. Please check the color management "
+"configuration in digiKam's setup to verify the ICC path."
 msgstr ""
 
 #: utilities/imageeditor/canvas/canvas.cpp:297
@@ -6222,8 +6236,8 @@ msgstr ""
 
 #: utilities/imageeditor/editor/editorwindow.cpp:349
 msgid ""
-"This option can be used to crop the image. Select the image region to enable "
-"this action."
+"This option can be used to crop the image. Select a region of the image to "
+"enable this action."
 msgstr ""
 
 #: utilities/imageeditor/editor/editorwindow.cpp:354
@@ -6261,7 +6275,7 @@ msgstr "Tetapkan plugin pelayar"
 
 #: utilities/imageeditor/editor/editorwindow.cpp:414
 #, fuzzy
-msgid "Exit Fullscreen"
+msgid "Exit Fullscreen mode"
 msgstr "Pemasang akan keluar sekarang..."
 
 #: utilities/imageeditor/editor/editorwindow.cpp:415
@@ -6289,7 +6303,7 @@ msgstr "Sedang dilaksanakan...   "
 
 #: utilities/imageeditor/editor/editorwindow.cpp:440
 #, fuzzy
-msgid "Zoom into Image"
+msgid "Zoom in on Image"
 msgstr "Path imej boot:        %s"
 
 #: utilities/imageeditor/editor/editorwindow.cpp:444
@@ -6423,9 +6437,9 @@ msgid "No Image in Current Album"
 msgstr ""
 
 #: utilities/cameragui/camerainfodialog.cpp:43
-#: utilities/cameragui/cameraui.cpp:437
+#: utilities/cameragui/cameraui.cpp:435
 #, fuzzy
-msgid "Camera Informations"
+msgid "Camera Information"
 msgstr "Maklumat tidak sah"
 
 #: utilities/cameragui/camerainfodialog.cpp:50
@@ -6453,7 +6467,7 @@ msgstr ""
 #: utilities/cameragui/umscamera.cpp:439
 msgid ""
 "<b>Mounted Camera</b> driver for USB/IEEE1394 mass storage cameras and Flash "
-"Disk card readers."
+"disk card readers."
 "<br>"
 "<br>"
 msgstr ""
@@ -6471,13 +6485,13 @@ msgstr ""
 
 #: utilities/cameragui/umscamera.cpp:463
 msgid ""
-"The <b>Mounted Camera</b> driver is a simple interface to a remote camera disk "
-"mounted locally on your system."
+"The <b>Mounted Camera</b> driver is a simple interface to a camera disk mounted "
+"locally on your system."
 "<br>"
-"<br>It doesn't use a libgphoto2 driver."
+"<br>It doesn't use any libgphoto2 drivers."
 "<br>"
-"<br>To report any problems with this driver, please contact the digiKam team at "
-"this address:"
+"<br>To report any problems with this driver, please contact the digiKam team "
+"at:"
 "<br>"
 "<br>http://www.digikam.org/?q=contact"
 msgstr ""
@@ -6503,7 +6517,7 @@ msgstr "Judul panjang:"
 
 #: utilities/cameragui/renamecustomizer.cpp:142
 msgid ""
-"<p>Toggle on this option to use camera provided image filenames without "
+"<p>Turn on this option to use camera provided image filenames without "
 "modifications."
 msgstr ""
 
@@ -6526,7 +6540,7 @@ msgid "Lower"
 msgstr ""
 
 #: utilities/cameragui/renamecustomizer.cpp:159
-msgid "<p>Set here the method to use to change case of image filenames."
+msgid "<p>Set the method to use to change the case of image filenames."
 msgstr ""
 
 #: utilities/cameragui/renamecustomizer.cpp:171
@@ -6535,7 +6549,7 @@ msgid "Customize"
 msgstr "Tersendiri"
 
 #: utilities/cameragui/renamecustomizer.cpp:173
-msgid "<p>Toggle on this option to customize image filenames during download."
+msgid "<p>Turn on this option to customize image filenames during download."
 msgstr ""
 
 #: utilities/cameragui/renamecustomizer.cpp:185
@@ -6551,7 +6565,7 @@ msgid "Suffix:"
 msgstr ""
 
 #: utilities/cameragui/renamecustomizer.cpp:197
-msgid "<p>Set the suffix which will be added to image filenames."
+msgid "<p>Set the suffix which will be postpended to image filenames."
 msgstr ""
 
 #: utilities/cameragui/renamecustomizer.cpp:200
@@ -6563,7 +6577,7 @@ msgstr "Tarikh & Masa"
 msgid "<p>Set this option to add the camera provided date and time."
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:278
+#: utilities/cameragui/cameraui.cpp:277
 #: utilities/cameragui/renamecustomizer.cpp:205
 #, fuzzy
 msgid "Date format:"
@@ -6573,18 +6587,18 @@ msgstr "Maklumat tidak sah"
 msgid "Standard"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:280
+#: utilities/cameragui/cameraui.cpp:279
 #: utilities/cameragui/renamecustomizer.cpp:208
 msgid "ISO"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:281
+#: utilities/cameragui/cameraui.cpp:280
 #: utilities/cameragui/renamecustomizer.cpp:209
 #, fuzzy
 msgid "Full Text"
 msgstr "Nama Penuh"
 
-#: utilities/cameragui/cameraui.cpp:282
+#: utilities/cameragui/cameraui.cpp:281
 #: utilities/cameragui/renamecustomizer.cpp:210
 #, fuzzy
 msgid "Local Settings"
@@ -6597,8 +6611,8 @@ msgstr "Tapi_san pencarian:"
 
 #: utilities/cameragui/renamecustomizer.cpp:212
 msgid ""
-"<p>Select here your preferred date format used to create new albums. The "
-"options available are:</p>"
+"<p>Select your preferred date format used to create new albums. The options "
+"available are:</p>"
 "<p><b>Standard</b>: the date format that has been used as a standard by "
 "digiKam. E.g.: <i>20060824T142618</i></p><p/><b>ISO</b>"
 ": the date format is in accordance with ISO 8601 (YYYY-MM-DD). E.g.: <i>"
@@ -6635,7 +6649,7 @@ msgstr ""
 
 #: utilities/cameragui/renamecustomizer.cpp:244
 msgid ""
-"<p>Set here the start index value used to rename picture files with a sequence "
+"<p>Set the starting index value used to rename picture files with a sequence "
 "number."
 msgstr ""
 
@@ -6842,43 +6856,41 @@ msgid "&Images"
 msgstr "&Imej"
 
 #: utilities/cameragui/cameraui.cpp:265
-msgid ""
-"<p>Set here all options to rename picture filenames automatically during "
-"downoading."
+msgid "<p>Set how digiKam will rename picture files as they are downloaded."
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:269
+#: utilities/cameragui/cameraui.cpp:268
 #, fuzzy
-msgid "Files Renaming Options"
+msgid "File Renaming Options"
 msgstr "Opsyen RAID"
 
-#: utilities/cameragui/cameraui.cpp:275
+#: utilities/cameragui/cameraui.cpp:274
 msgid "Extension-based sub-albums"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:276
+#: utilities/cameragui/cameraui.cpp:275
 msgid "Date-based sub-albums"
+msgstr ""
+
+#: utilities/cameragui/cameraui.cpp:287
+msgid "<p>Set how digiKam creates albums automatically when downloading."
 msgstr ""
 
 #: utilities/cameragui/cameraui.cpp:288
 msgid ""
-"<p>Set here all options to create albums automatically during downlading."
+"<p>Toggle on this option if you want to download your pictures into "
+"automatically created file extension-based sub-albums of the destination album. "
+"This way, you can separate JPEG and RAW files as they are downloaded from your "
+"camera."
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:290
+#: utilities/cameragui/cameraui.cpp:291
 msgid ""
 "<p>Toggle on this option if you want to download your pictures into "
-"automatically created file extension-based sub-albums of destination album. By "
-"this way, you can separate JPEG and RAW files from your camera."
+"automatically created file date-based sub-albums of the destination album."
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:293
-msgid ""
-"<p>Toggle on this option if you want to download your pictures into "
-"automatically created file date-based sub-albums of destination album."
-msgstr ""
-
-#: utilities/cameragui/cameraui.cpp:296
+#: utilities/cameragui/cameraui.cpp:294
 msgid ""
 "<p>Select here your preferred date format used to create new albums. The "
 "options available are:"
@@ -6891,61 +6903,61 @@ msgid ""
 "<p>"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:305
+#: utilities/cameragui/cameraui.cpp:303
 msgid "Auto-creation of Albums"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:311
+#: utilities/cameragui/cameraui.cpp:309
 msgid "Set default photographer identity"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:312
+#: utilities/cameragui/cameraui.cpp:310
 msgid "Set default credit and copyright"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:313
+#: utilities/cameragui/cameraui.cpp:311
 msgid "Fix internal date && time"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:315
+#: utilities/cameragui/cameraui.cpp:313
 #, fuzzy
 msgid "Auto-rotate/flip image"
 msgstr "Up2date - Halaman Logmasuk"
 
-#: utilities/cameragui/cameraui.cpp:316
+#: utilities/cameragui/cameraui.cpp:314
 msgid "Convert to lossless file format"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:318
+#: utilities/cameragui/cameraui.cpp:316
 #, fuzzy
 msgid "New image format:"
 msgstr "Maklumat tidak sah"
 
+#: utilities/cameragui/cameraui.cpp:328
+msgid ""
+"<p>Set here all options to fix/transform JPEG files automatically as they are "
+"downloaded."
+msgstr ""
+
 #: utilities/cameragui/cameraui.cpp:330
 msgid ""
-"<p>Set here all options to fix/transform JPEG files automatically during "
-"downlading."
+"<p>Toggle on this option if you want images automatically rotated or flipped "
+"using EXIF information provided by the camera."
 msgstr ""
 
 #: utilities/cameragui/cameraui.cpp:332
 msgid ""
-"<p>Toggle on this option if you want automatically rotated or flipped images "
-"using EXIF information provided by camera."
+"<p>Toggle on this option to store the default photographer identity into IPTC "
+"tags using digiKam's metadata settings."
 msgstr ""
 
 #: utilities/cameragui/cameraui.cpp:334
 msgid ""
-"<p>Toggle on this option to store default photographer identity into IPTC tags "
-"using main digiKam metadata settings."
+"<p>Toggle on this option to store the default credit and copyright information "
+"into IPTC tags using digiKam's metadata settings."
 msgstr ""
 
 #: utilities/cameragui/cameraui.cpp:336
-msgid ""
-"<p>Toggle on this option to store default credit and copyright information into "
-"IPTC tags using main digiKam metadata settings."
-msgstr ""
-
-#: utilities/cameragui/cameraui.cpp:338
 msgid ""
 "<p>Toggle on this option to set date and time metadata tags to the right values "
 "if your camera does not set these tags correctly when pictures are taken. The "
@@ -6953,164 +6965,161 @@ msgid ""
 "fields."
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:342
+#: utilities/cameragui/cameraui.cpp:340
 msgid ""
-"<p>Toggle on this option to convert automatically all JPEG files to a lossless "
-"image format. Note: Image conversion can take a while on a slow computer."
+"<p>Toggle on this option to automatically convert all JPEG files to a lossless "
+"image format. <b>Note:</b> Image conversion can take a while on a slow "
+"computer."
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:345
+#: utilities/cameragui/cameraui.cpp:343
 msgid ""
-"<p>Select your preferred lossless image file format to convert JPEG files. "
-"Note: All metadata will be preserved during conversions."
+"<p>Select your preferred lossless image file format to convert to.  <b>Note:</b> "
+"All metadata will be preserved during the conversion."
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:349
+#: utilities/cameragui/cameraui.cpp:347
 msgid "On the Fly Operations (JPEG only)"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:383
+#: utilities/cameragui/cameraui.cpp:381
 msgid "Visit digiKam project website"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:403
+#: utilities/cameragui/cameraui.cpp:401
 msgid "Select &All"
 msgstr "Pilih Semu&a"
 
-#: utilities/cameragui/cameraui.cpp:404
+#: utilities/cameragui/cameraui.cpp:402
 msgid "Select N&one"
 msgstr "&Pilih Tiada"
 
-#: utilities/cameragui/cameraui.cpp:405
+#: utilities/cameragui/cameraui.cpp:403
 msgid "&Invert Selection"
 msgstr "Terbal&ik Pilihan"
 
-#: utilities/cameragui/cameraui.cpp:407
+#: utilities/cameragui/cameraui.cpp:405
 msgid "Select &New Items"
 msgstr "&Pilih Item Baru"
 
-#: utilities/cameragui/cameraui.cpp:409
+#: utilities/cameragui/cameraui.cpp:407
 #, fuzzy
 msgid "Increase Thumbs"
 msgstr "Jumlah saiz pemasangan: %s"
 
-#: utilities/cameragui/cameraui.cpp:410
+#: utilities/cameragui/cameraui.cpp:408
 #, fuzzy
 msgid "Decrease Thumbs"
 msgstr "Jumlah saiz pemasangan: %s"
 
-#: utilities/cameragui/cameraui.cpp:412
+#: utilities/cameragui/cameraui.cpp:410
 msgid "Toggle Lock"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:418
+#: utilities/cameragui/cameraui.cpp:416
 msgid "Download Selected"
 msgstr "Muatturun Dipilih"
 
-#: utilities/cameragui/cameraui.cpp:419
+#: utilities/cameragui/cameraui.cpp:417
 msgid "Download All"
 msgstr "Muatturun Semua"
 
-#: utilities/cameragui/cameraui.cpp:421
+#: utilities/cameragui/cameraui.cpp:419
 #, fuzzy
 msgid "Upload..."
 msgstr "_Tambah"
 
-#: utilities/cameragui/cameraui.cpp:428
+#: utilities/cameragui/cameraui.cpp:426
 msgid "Delete Selected"
 msgstr "Padam Dipilih"
 
-#: utilities/cameragui/cameraui.cpp:651
+#: utilities/cameragui/cameraui.cpp:649
 msgid "Cancelling current operation, please wait..."
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:679
+#: utilities/cameragui/cameraui.cpp:677
 msgid "Do you want to close the dialog and cancel the current operation?"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:685
+#: utilities/cameragui/cameraui.cpp:683
 #, fuzzy
-msgid "Disconnecting from camera, please Wait..."
+msgid "Disconnecting from camera, please wait..."
 msgstr "Menyambung ke Internet"
 
-#: utilities/cameragui/cameraui.cpp:721
+#: utilities/cameragui/cameraui.cpp:719
 #, fuzzy
-msgid "Scanning new files, please wait..."
+msgid "Scanning for new files, please wait..."
 msgstr "&Pilih Item Baru"
 
-#: utilities/cameragui/cameraui.cpp:761
+#: utilities/cameragui/cameraui.cpp:759
 msgid "Ready"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:874
+#: utilities/cameragui/cameraui.cpp:872
 msgid ""
-"Failed to connect to camera. Please make sure it is connected properly and "
+"Failed to connect to the camera. Please make sure it is connected properly and "
 "turned on. Would you like to try again?"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:878
+#: utilities/cameragui/cameraui.cpp:876
 msgid "Connection Failed"
 msgstr "Sambungan Gagal"
 
-#: utilities/cameragui/cameraui.cpp:879
+#: utilities/cameragui/cameraui.cpp:877
 msgid "Retry"
 msgstr "Ulangi"
 
-#: utilities/cameragui/cameraui.cpp:880
+#: utilities/cameragui/cameraui.cpp:878
 msgid "Abort"
 msgstr "Batal"
 
-#: utilities/cameragui/cameraui.cpp:986
+#: utilities/cameragui/cameraui.cpp:984
 msgid "Select Image to Upload"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1021
+#: utilities/cameragui/cameraui.cpp:1019
 msgid ""
 "Camera Folder <b>%1</b> already contains item <b>%2</b>"
-"<br>Please, enter New Name (without extension):"
+"<br>Please enter a new file name (without extension):"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1025 utilities/cameragui/cameraui.cpp:1028
+#: utilities/cameragui/cameraui.cpp:1023 utilities/cameragui/cameraui.cpp:1026
 #, fuzzy
-msgid "File already exist"
+msgid "File already exists"
 msgstr "Bersiri Peranti fail s"
 
-#: utilities/cameragui/cameraui.cpp:1067
+#: utilities/cameragui/cameraui.cpp:1065
 msgid ""
-"<p>Please select the destination album from digiKam library to import camera "
-"pictures.</p>"
+"<p>Please select the destination album from the digiKam library to import the "
+"camera pictures into.</p>"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1341
+#: utilities/cameragui/cameraui.cpp:1339
 msgid ""
 "The items listed below are locked by the camera (read-only). These items will "
 "not be deleted. If you really want to delete these items, please unlock them "
-"before."
+"and try again."
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1344 utilities/cameragui/cameraui.cpp:1411
-#, fuzzy
-msgid "Informations"
-msgstr "Maklumat tidak sah"
-
-#: utilities/cameragui/cameraui.cpp:1353 utilities/cameragui/cameraui.cpp:1420
+#: utilities/cameragui/cameraui.cpp:1351 utilities/cameragui/cameraui.cpp:1418
 #, c-format
 msgid ""
 "_n: About to delete this image. Deleted files are unrecoverable. Are you sure?\n"
 "About to delete these %n images. Deleted files are unrecoverable. Are you sure?"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1408
+#: utilities/cameragui/cameraui.cpp:1406
 msgid ""
 "The items listed below are locked by camera (read-only). These items will not "
-"be deleted. If you want really to delete these items, please unlock it before."
+"be deleted. If you want really to delete these items, please unlock them and "
+"try again."
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1564
+#: utilities/cameragui/cameraui.cpp:1562
 msgid "A file with same name (%1) exists in folder %2"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1577
+#: utilities/cameragui/cameraui.cpp:1575
 msgid "Failed to find Album for path '%1'"
 msgstr ""
 
@@ -7145,8 +7154,7 @@ msgstr ""
 msgid ""
 "\n"
 "\n"
-"To report problems about this driver, please contact the gphoto2 team at this "
-"address:\n"
+"To report problems about this driver, please contact the gphoto2 team at:\n"
 "\n"
 "http://gphoto.org/bugs"
 msgstr ""
@@ -7164,6 +7172,14 @@ msgstr "Menyalin Fail"
 #, fuzzy
 msgid "&Upload into camera"
 msgstr "Memuatkan jurupacu %s..."
+
+#, fuzzy
+#~ msgid "Photograph Informations"
+#~ msgstr "Maklumat tidak sah"
+
+#, fuzzy
+#~ msgid "Informations"
+#~ msgstr "Maklumat tidak sah"
 
 #, fuzzy
 #~ msgid "RAW Image Decoding Options"
