@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-03-04 08:33+0100\n"
+"POT-Creation-Date: 2007-03-06 13:38+0100\n"
 "PO-Revision-Date: 2007-02-22 15:19+0730\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
@@ -385,9 +385,15 @@ msgstr ""
 msgid "Deleting Tense Description"
 msgstr "Description=ioslave Subversion"
 
+#: kvttablemodel.cpp:130 kvttablemodel.cpp:133 kvttablemodel.cpp:135
+#: kvttablemodel.cpp:140
+#, fuzzy
+msgid "Default lesson"
+msgstr "Membuang masukan bukutelefon"
+
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 72
-#: kvttablemodel.cpp:176 rc.cpp:1570
+#: kvttablemodel.cpp:197 rc.cpp:1570 kvtlessonmodel.cpp:57
 #, no-c-format
 msgid "Lesson"
 msgstr ""
@@ -4471,72 +4477,72 @@ msgstr "Fail Wujud"
 msgid "Open Vocabulary Document"
 msgstr "Dokumen yang hendak dibuka"
 
-#: kva_io.cpp:168 kva_io.cpp:222
+#: kva_io.cpp:168 kva_io.cpp:234
 #, fuzzy, qt-format
 msgid "Loading %1"
 msgstr "Memuatkan"
 
-#: kva_io.cpp:191
+#: kva_io.cpp:203
 #, fuzzy
 msgid "Opening example file..."
 msgstr "Comment=Fail Projek KDevelop"
 
-#: kva_io.cpp:195
+#: kva_io.cpp:207
 #, fuzzy
 msgid "Open Example Vocabulary Document"
 msgstr "Tidak dapat membuka '%1'. Fail tidak wujud."
 
-#: kva_io.cpp:215
+#: kva_io.cpp:227
 #, fuzzy
 msgid "Merging file..."
 msgstr "Fail Wujud"
 
-#: kva_io.cpp:218
+#: kva_io.cpp:230
 #, fuzzy
 msgid "Merge Vocabulary File"
 msgstr "Comment=Fail Projek KDevelop"
 
-#: kva_io.cpp:246
+#: kva_io.cpp:258
 #, qt-format
 msgid "Merging %1"
 msgstr ""
 
-#: kva_io.cpp:463
+#: kva_io.cpp:475
 #, fuzzy
 msgid "Untitled"
 msgstr "Tajuk"
 
-#: kva_io.cpp:468 kva_io.cpp:506 kva_io.cpp:623
+#: kva_io.cpp:480 kva_io.cpp:518 kva_io.cpp:635
 #, fuzzy, qt-format
 msgid "Saving %1"
 msgstr "Menyimpan Cekupanskrin"
 
-#: kva_io.cpp:488
+#: kva_io.cpp:500
 msgid "Saving file under new filename..."
 msgstr ""
 
-#: kva_io.cpp:493 kva_io.cpp:610
+#: kva_io.cpp:505 kva_io.cpp:622
 #, fuzzy
 msgid "Save Vocabulary As"
 msgstr "/Fail/Simpan Seb_agai..."
 
-#: kva_io.cpp:498 kva_io.cpp:616
+#: kva_io.cpp:510 kva_io.cpp:628
 #, qt-format
 msgid ""
 "<qt>The file<br><b>%1</b><br>already exists. Do you want to overwrite it?</"
 "qt>"
 msgstr ""
 
-#: kva_io.cpp:594
+#: kva_io.cpp:606
 msgid "Saving selected area under new filename..."
 msgstr ""
 
-#: kva_io.cpp:667
+#: kva_io.cpp:679
 #, fuzzy
 msgid "Original"
 msgstr "Pulihkan nilai _asal"
 
-#: kva_io.cpp:668
+#: kva_io.cpp:680
 #, fuzzy
 msgid "Translation"
 msgstr "Penukaran linefeed"
@@ -4942,20 +4948,42 @@ msgstr "Papar nombor baris"
 msgid "Toggle display of the toolbars"
 msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
-#: kva_init.cpp:395
+#: kva_init.cpp:399
+msgid ""
+"Double click to rename a lesson. With the checkboxes you can select which "
+"lessons you want to be tested. Only checked lessons [x] will be asked!"
+msgstr ""
+
+#: kva_init.cpp:404
+#, fuzzy
+msgid "Edit current lesson"
+msgstr "Amerika/Swift_Current"
+
+#: kva_init.cpp:405
+#, fuzzy
+msgid "Edit lessons in test"
+msgstr "Sharuzzaman Ahmat Raslan"
+
+#: kva_init.cpp:406
+#, fuzzy
+msgid "Edit all lessons"
+msgstr "Tak dapat mengumpukkan alamat"
+
+#: kva_init.cpp:407
+msgid "Here you select which lessons you want to edit on the right."
+msgstr ""
+
+#: kva_init.cpp:409 kvtlessonview.cpp:53 kvtlessonview.cpp:57
+#: kvtlessonview.cpp:63
 #, fuzzy
 msgid "New lesson"
 msgstr "Cipta perbendaharaan kata baru."
 
-#: kvtlessonmodel.cpp:35
-#, fuzzy
-msgid "All Lessons"
-msgstr "Tak dapat mengumpukkan alamat"
-
-#: kvtlessonmodel.cpp:36
-#, fuzzy
-msgid "<no lesson>"
-msgstr "Tiada padanan"
+#: kva_init.cpp:410
+msgid ""
+"Click here to create a new lesson. You can then type its name directly in "
+"the list."
+msgstr ""
 
 #: query-dialogs/RandomQueryDlg.cpp:142
 #, fuzzy
@@ -5104,6 +5132,10 @@ msgid ""
 "td><td>%10</td></tr><tr><td>%11</td><td>%12</td></tr><tr><td>%13</td><td>%"
 "14</td></tr><tr><td>%15</td><td>%16</td></tr></table></html>"
 msgstr ""
+
+#, fuzzy
+#~ msgid "<no lesson>"
+#~ msgstr "Tiada padanan"
 
 #, fuzzy
 #~ msgid "Original &expression in %1:"

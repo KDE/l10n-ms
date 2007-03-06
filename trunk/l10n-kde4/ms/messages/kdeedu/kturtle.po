@@ -4,7 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kturtle\n"
-"POT-Creation-Date: 2005-08-10 10:20+0200\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2007-03-06 12:44+0100\n"
 "PO-Revision-Date: 2007-02-24 13:13+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -14,56 +15,930 @@ msgstr ""
 "X-Generator: KBabel 1.10.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: _translatorinfo.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Sharuzzaman Ahmat Raslan"
-
-#: _translatorinfo.cpp:3
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "sharuzzaman@myrealbox.com"
-
-#: canvas.cpp:609
-msgid "The turtle picture could not be found. Please check your installation."
-msgstr "Gambar penyu tidak dijumpai. Sila periksa pemasangan anda."
-
-#: dialogs.cpp:29
-msgid "Help on &Error"
-msgstr "Bantuan pada &Ralat"
-
-#: dialogs.cpp:33
-msgid "Error Dialog"
-msgstr "Dialog Ralat"
-
-#: dialogs.cpp:34
-msgid "Closes this error dialog"
-msgstr "Tutup dialog ralat ini"
-
-#: dialogs.cpp:35
-msgid "Click here to read more on this error dialog in KTurtle's Handbook."
+#: interpreter/executer.cpp:261
+#, qt-format
+msgid "Internationlalized string with an %1"
 msgstr ""
-"Klik disini untuk membaca lebih lanjut mengenai dialog ralat ini dalam "
-"Panduan KTurtle."
 
-#: dialogs.cpp:36
-msgid "Click here for help using this error dialog"
-msgstr "Klik disini untuk bantuan menggunakan dialog ralat ini"
+#: interpreter/executer.cpp:262
+#, fuzzy, qt-format
+msgid "The %1 command accepts no parameters."
+msgstr "Tiada pengendali bagi arahan: "
 
-#: dialogs.cpp:37
+#: interpreter/executer.cpp:272
+#, fuzzy, qt-format
+msgid "The %1 command was called with %2 but needs 1 parameter."
+msgstr "Tiada pengendali bagi arahan: "
+
+#: interpreter/executer.cpp:274
+#, fuzzy, qt-format
+msgid "The %1 command was called with %2 but only accepts 1 parameter."
+msgstr "Tiada pengendali bagi arahan: "
+
+#: interpreter/executer.cpp:292
+#, qt-format
+msgid "The %1 command only accepts a string as its parameter."
+msgstr ""
+
+#: interpreter/executer.cpp:294
+#, qt-format
+msgid "The %1 command only accepts strings as its parameters."
+msgstr ""
+
+#: interpreter/executer.cpp:299
+#, qt-format
+msgid "The %1 command only accepts a number as its parameter."
+msgstr ""
+
+#: interpreter/executer.cpp:301
+#, qt-format
+msgid "The %1 command only accepts numbers as its parameters."
+msgstr ""
+
+#: interpreter/executer.cpp:306
+#, fuzzy, qt-format
+msgid "The %1 command only accepts an answer as its parameter."
+msgstr "Tiada pengendali bagi arahan: "
+
+#: interpreter/executer.cpp:308
+#, fuzzy, qt-format
+msgid "The %1 command only accepts answers as its parameters."
+msgstr "Tiada pengendali bagi arahan: "
+
+#: interpreter/executer.cpp:388
+#, qt-format
+msgid "The variable '%1' was used without first being assigned to a value"
+msgstr ""
+
+#: interpreter/executer.cpp:401
+#, qt-format
+msgid "An unknown function with named '%1' was called"
+msgstr ""
+
+#: interpreter/executer.cpp:418 interpreter/executer.cpp:419
+#, qt-format
+msgid "1 parameter"
+msgid_plural "%1 parameters"
+msgstr[0] ""
+msgstr[1] ""
+
+#: interpreter/executer.cpp:416
+#, qt-format
 msgid ""
-"Click here for help regarding the error you selected in the list. This "
-"button will not work when no error is selected."
+"The function '%1' was called with %2, while it should should be called with %"
+"3"
 msgstr ""
-"Klik disini untuk bantuan mengenai ralat yang anda pilih dalam senarai. "
-"Butang ini tidak akan berfungsi apabila tiada ralat dipilih."
 
-#: dialogs.cpp:38
+#: interpreter/executer.cpp:564
+msgid "'And' needs two variables"
+msgstr ""
+
+#: interpreter/executer.cpp:573
+msgid "'Or' needs two variables"
+msgstr ""
+
+#: interpreter/executer.cpp:583
+msgid "I need something to do a not on"
+msgstr ""
+
+#: interpreter/executer.cpp:591
+msgid "I can't do a '==' without 2 variables"
+msgstr ""
+
+#: interpreter/executer.cpp:599
+msgid "I can't do a '!=' without 2 variables"
+msgstr ""
+
+#: interpreter/executer.cpp:607
+msgid "I can't do a '>' without 2 variables"
+msgstr ""
+
+#: interpreter/executer.cpp:615
+msgid "I can't do a '<' without 2 variables"
+msgstr ""
+
+#: interpreter/executer.cpp:623
+msgid "I can't do a '>=' without 2 variables"
+msgstr ""
+
+#: interpreter/executer.cpp:631
+msgid "I can't do a '<=' without 2 variables"
+msgstr ""
+
+#: interpreter/executer.cpp:639
+msgid "You need two numbers or string to do an addition"
+msgstr ""
+
+#: interpreter/executer.cpp:651
+msgid "You need two numbers to substract"
+msgstr ""
+
+#: interpreter/executer.cpp:658
+#, qt-format
+msgid "You tried to substract from a non-number, '%1'"
+msgstr ""
+
+#: interpreter/executer.cpp:660
+#, qt-format
+msgid "You tried to substract a non-number, '%1'"
+msgstr ""
+
+#: interpreter/executer.cpp:666
+msgid "You need two numbers to multiplicate"
+msgstr ""
+
+#: interpreter/executer.cpp:673
+#, qt-format
+msgid "You tried to multiplicate a non-number, '%1'"
+msgstr ""
+
+#: interpreter/executer.cpp:675
+#, qt-format
+msgid "You tried to multiplicate by a non-number, '%1'"
+msgstr ""
+
+#: interpreter/executer.cpp:681
+msgid "You need two numbers to devide"
+msgstr ""
+
+#: interpreter/executer.cpp:688
+#, qt-format
+msgid "You tried to divide a non-number, '%1'"
+msgstr ""
+
+#: interpreter/executer.cpp:690
+#, qt-format
+msgid "You tried to divide by a non-number, '%1'"
+msgstr ""
+
+#: interpreter/executer.cpp:696
+msgid "You need two numbers to raise a power"
+msgstr ""
+
+#: interpreter/executer.cpp:703
+#, qt-format
+msgid "You tried to raise a non-number to a power, '%1'"
+msgstr ""
+
+#: interpreter/executer.cpp:705
+#, qt-format
+msgid "You tried to raise the power of a non-number, '%1'"
+msgstr ""
+
+#: interpreter/executer.cpp:711
+msgid "You need one variable and a value or variable to do a '='"
+msgstr ""
+
+#: interpreter/executer.cpp:727
+#, qt-format
+msgid "The function '%1' is already defined!"
+msgstr ""
+
+#: interpreter/parser.cpp:233
+#, qt-format
+msgid "You can't put '%1' here!"
+msgstr ""
+
+#: interpreter/parser.cpp:620
+msgid "'for' was called wrongly"
+msgstr ""
+
+#: interpreter/parser.cpp:682
 #, fuzzy
-msgid "Click here for help regarding the error you selected."
-msgstr "for."
+msgid "Expected a scope after the 'learn' command"
+msgstr "Kehilangan nama fail selepas -C"
 
-#: dialogs.cpp:45
+#: interpreter/translator.cpp:124
+#, fuzzy
+msgctxt ""
+"You are about to translate the 'True' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "true"
+msgstr "betul"
+
+#: interpreter/translator.cpp:131
+#, fuzzy
+msgctxt ""
+"You are about to translate the 'False' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "false"
+msgstr "salah"
+
+#: interpreter/translator.cpp:150
+msgctxt ""
+"You are about to translate the 'ArgumentSeparator' COMMAND, there are some "
+"rules on how to translate it.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn how to properly translate it."
+msgid ","
+msgstr ""
+
+#: interpreter/translator.cpp:157
+msgctxt ""
+"You are about to translate the 'DecimalSeparator' COMMAND, there are some "
+"rules on how to translate it.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn how to properly translate it."
+msgid "."
+msgstr ""
+
+#: interpreter/translator.cpp:164
+msgctxt ""
+"You are about to translate the 'Exit' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "exit"
+msgstr ""
+
+#: interpreter/translator.cpp:171
+msgctxt ""
+"You are about to translate the 'If' COMMAND, there are some rules on how to "
+"translate it.Please see http://edu.kde.org/kturtle/translator.php to learn "
+"how to properly translate it."
+msgid "if"
+msgstr ""
+
+#: interpreter/translator.cpp:178
+#, fuzzy
+msgctxt ""
+"You are about to translate the 'Else' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "else"
+msgstr "salah"
+
+#: interpreter/translator.cpp:185
+msgctxt ""
+"You are about to translate the 'Repeat' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "repeat"
+msgstr ""
+
+#: interpreter/translator.cpp:192
+msgctxt ""
+"You are about to translate the 'While' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "while"
+msgstr ""
+
+#: interpreter/translator.cpp:199
+msgctxt ""
+"You are about to translate the 'For' COMMAND, there are some rules on how to "
+"translate it.Please see http://edu.kde.org/kturtle/translator.php to learn "
+"how to properly translate it."
+msgid "for"
+msgstr ""
+
+#: interpreter/translator.cpp:206
+msgctxt ""
+"You are about to translate the 'To' COMMAND, there are some rules on how to "
+"translate it.Please see http://edu.kde.org/kturtle/translator.php to learn "
+"how to properly translate it."
+msgid "to"
+msgstr ""
+
+#: interpreter/translator.cpp:213
+msgctxt ""
+"You are about to translate the 'Step' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "step"
+msgstr ""
+
+#: interpreter/translator.cpp:220
+msgctxt ""
+"You are about to translate the 'Break' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "break"
+msgstr ""
+
+#: interpreter/translator.cpp:227
+msgctxt ""
+"You are about to translate the 'Return' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "return"
+msgstr ""
+
+#: interpreter/translator.cpp:234
+msgctxt ""
+"You are about to translate the 'Wait' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "wait"
+msgstr ""
+
+#: interpreter/translator.cpp:241
+msgctxt ""
+"You are about to translate the 'And' COMMAND, there are some rules on how to "
+"translate it.Please see http://edu.kde.org/kturtle/translator.php to learn "
+"how to properly translate it."
+msgid "and"
+msgstr ""
+
+#: interpreter/translator.cpp:248
+msgctxt ""
+"You are about to translate the 'Or' COMMAND, there are some rules on how to "
+"translate it.Please see http://edu.kde.org/kturtle/translator.php to learn "
+"how to properly translate it."
+msgid "or"
+msgstr ""
+
+#: interpreter/translator.cpp:255
+msgctxt ""
+"You are about to translate the 'Not' COMMAND, there are some rules on how to "
+"translate it.Please see http://edu.kde.org/kturtle/translator.php to learn "
+"how to properly translate it."
+msgid "not"
+msgstr ""
+
+#: interpreter/translator.cpp:286
+msgctxt ""
+"You are about to translate the 'Learn' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "learn"
+msgstr ""
+
+#: interpreter/translator.cpp:293
+msgctxt ""
+"You are about to translate the 'Reset' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "reset"
+msgstr ""
+
+#: interpreter/translator.cpp:300
+msgctxt ""
+"You are about to translate the 'Clear' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "clear"
+msgstr ""
+
+#: interpreter/translator.cpp:307
+msgctxt ""
+"You are about to translate the 'Clear' COMMAND ALIAS, there are some rules "
+"on how to translate it.Please see http://edu.kde.org/kturtle/translator.php "
+"to learn how to properly translate it."
+msgid "ccl"
+msgstr ""
+
+#: interpreter/translator.cpp:314
+#, fuzzy
+msgctxt ""
+"You are about to translate the 'Center' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "center"
+msgstr "Umum"
+
+#: interpreter/translator.cpp:321
+msgctxt ""
+"You are about to translate the 'Go' COMMAND, there are some rules on how to "
+"translate it.Please see http://edu.kde.org/kturtle/translator.php to learn "
+"how to properly translate it."
+msgid "go"
+msgstr ""
+
+#: interpreter/translator.cpp:328
+msgctxt ""
+"You are about to translate the 'GoX' COMMAND, there are some rules on how to "
+"translate it.Please see http://edu.kde.org/kturtle/translator.php to learn "
+"how to properly translate it."
+msgid "gox"
+msgstr ""
+
+#: interpreter/translator.cpp:335
+msgctxt ""
+"You are about to translate the 'GoX' COMMAND ALIAS, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "gx"
+msgstr ""
+
+#: interpreter/translator.cpp:342
+msgctxt ""
+"You are about to translate the 'GoY' COMMAND, there are some rules on how to "
+"translate it.Please see http://edu.kde.org/kturtle/translator.php to learn "
+"how to properly translate it."
+msgid "goy"
+msgstr ""
+
+#: interpreter/translator.cpp:349
+msgctxt ""
+"You are about to translate the 'GoY' COMMAND ALIAS, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "gy"
+msgstr ""
+
+#: interpreter/translator.cpp:356
+msgctxt ""
+"You are about to translate the 'Forward' COMMAND, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "forward"
+msgstr ""
+
+#: interpreter/translator.cpp:363
+msgctxt ""
+"You are about to translate the 'Forward' COMMAND ALIAS, there are some rules "
+"on how to translate it.Please see http://edu.kde.org/kturtle/translator.php "
+"to learn how to properly translate it."
+msgid "fw"
+msgstr ""
+
+#: interpreter/translator.cpp:370
+msgctxt ""
+"You are about to translate the 'Backward' COMMAND, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "backward"
+msgstr ""
+
+#: interpreter/translator.cpp:377
+msgctxt ""
+"You are about to translate the 'Backward' COMMAND ALIAS, there are some "
+"rules on how to translate it.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn how to properly translate it."
+msgid "bw"
+msgstr ""
+
+#: interpreter/translator.cpp:384
+#, fuzzy
+msgctxt ""
+"You are about to translate the 'Direction' COMMAND, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "direction"
+msgstr "keterangan"
+
+#: interpreter/translator.cpp:391
+msgctxt ""
+"You are about to translate the 'Direction' COMMAND ALIAS, there are some "
+"rules on how to translate it.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn how to properly translate it."
+msgid "dir"
+msgstr ""
+
+#: interpreter/translator.cpp:398
+msgctxt ""
+"You are about to translate the 'TurnLeft' COMMAND, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "turnleft"
+msgstr ""
+
+#: interpreter/translator.cpp:405
+msgctxt ""
+"You are about to translate the 'TurnLeft' COMMAND ALIAS, there are some "
+"rules on how to translate it.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn how to properly translate it."
+msgid "tl"
+msgstr ""
+
+#: interpreter/translator.cpp:412
+msgctxt ""
+"You are about to translate the 'TurnRight' COMMAND, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "turnright"
+msgstr ""
+
+#: interpreter/translator.cpp:419
+#, fuzzy
+msgctxt ""
+"You are about to translate the 'TurnRight' COMMAND ALIAS, there are some "
+"rules on how to translate it.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn how to properly translate it."
+msgid "tr"
+msgstr "betul"
+
+#: interpreter/translator.cpp:426
+msgctxt ""
+"You are about to translate the 'PenWidth' COMMAND, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "penwidth"
+msgstr ""
+
+#: interpreter/translator.cpp:433
+msgctxt ""
+"You are about to translate the 'PenWidth' COMMAND ALIAS, there are some "
+"rules on how to translate it.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn how to properly translate it."
+msgid "pw"
+msgstr ""
+
+#: interpreter/translator.cpp:440
+msgctxt ""
+"You are about to translate the 'PenUp' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "penup"
+msgstr ""
+
+#: interpreter/translator.cpp:447
+msgctxt ""
+"You are about to translate the 'PenUp' COMMAND ALIAS, there are some rules "
+"on how to translate it.Please see http://edu.kde.org/kturtle/translator.php "
+"to learn how to properly translate it."
+msgid "pu"
+msgstr ""
+
+#: interpreter/translator.cpp:454
+msgctxt ""
+"You are about to translate the 'PenDown' COMMAND, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "pendown"
+msgstr ""
+
+#: interpreter/translator.cpp:461
+msgctxt ""
+"You are about to translate the 'PenDown' COMMAND ALIAS, there are some rules "
+"on how to translate it.Please see http://edu.kde.org/kturtle/translator.php "
+"to learn how to properly translate it."
+msgid "pd"
+msgstr ""
+
+#: interpreter/translator.cpp:468
+msgctxt ""
+"You are about to translate the 'PenColor' COMMAND, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "pencolor"
+msgstr ""
+
+#: interpreter/translator.cpp:475
+msgctxt ""
+"You are about to translate the 'PenColor' COMMAND ALIAS, there are some "
+"rules on how to translate it.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn how to properly translate it."
+msgid "pc"
+msgstr ""
+
+#: interpreter/translator.cpp:482
+msgctxt ""
+"You are about to translate the 'CanvasColor' COMMAND, there are some rules "
+"on how to translate it.Please see http://edu.kde.org/kturtle/translator.php "
+"to learn how to properly translate it."
+msgid "canvascolor"
+msgstr ""
+
+#: interpreter/translator.cpp:489
+msgctxt ""
+"You are about to translate the 'CanvasColor' COMMAND ALIAS, there are some "
+"rules on how to translate it.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn how to properly translate it."
+msgid "cc"
+msgstr ""
+
+#: interpreter/translator.cpp:496
+msgctxt ""
+"You are about to translate the 'SpriteShow' COMMAND, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "spriteshow"
+msgstr ""
+
+#: interpreter/translator.cpp:503
+msgctxt ""
+"You are about to translate the 'SpriteShow' COMMAND ALIAS, there are some "
+"rules on how to translate it.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn how to properly translate it."
+msgid "ss"
+msgstr ""
+
+#: interpreter/translator.cpp:510
+msgctxt ""
+"You are about to translate the 'SpriteHide' COMMAND, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "spritehide"
+msgstr ""
+
+#: interpreter/translator.cpp:517
+msgctxt ""
+"You are about to translate the 'SpriteHide' COMMAND ALIAS, there are some "
+"rules on how to translate it.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn how to properly translate it."
+msgid "sh"
+msgstr ""
+
+#: interpreter/translator.cpp:524
+msgctxt ""
+"You are about to translate the 'Print' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "print"
+msgstr ""
+
+#: interpreter/translator.cpp:531
+msgctxt ""
+"You are about to translate the 'FontSize' COMMAND, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "fontsize"
+msgstr ""
+
+#: interpreter/translator.cpp:538
+msgctxt ""
+"You are about to translate the 'Random' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "random"
+msgstr ""
+
+#: interpreter/translator.cpp:545
+msgctxt ""
+"You are about to translate the 'Random' COMMAND ALIAS, there are some rules "
+"on how to translate it.Please see http://edu.kde.org/kturtle/translator.php "
+"to learn how to properly translate it."
+msgid "rnd"
+msgstr ""
+
+#: interpreter/translator.cpp:552
+msgctxt ""
+"You are about to translate the 'GetX' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "getx"
+msgstr ""
+
+#: interpreter/translator.cpp:559
+msgctxt ""
+"You are about to translate the 'GetY' COMMAND, there are some rules on how "
+"to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "gety"
+msgstr ""
+
+#: interpreter/translator.cpp:566
+#, fuzzy
+msgctxt ""
+"You are about to translate the 'Message' COMMAND, there are some rules on "
+"how to translate it.Please see http://edu.kde.org/kturtle/translator.php to "
+"learn how to properly translate it."
+msgid "message"
+msgstr "Mesej"
+
+#: interpreter/translator.cpp:573
+msgctxt ""
+"You are about to translate the 'Ask' COMMAND, there are some rules on how to "
+"translate it.Please see http://edu.kde.org/kturtle/translator.php to learn "
+"how to properly translate it."
+msgid "ask"
+msgstr ""
+
+#: interpreter/translator.cpp:592
+#, fuzzy
+msgctxt ""
+"This is an EXAMPLE NAME in KTurtle.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn know how to properly translate it."
+msgid "triangle"
+msgstr "$STRING"
+
+#: interpreter/translator.cpp:596
+#, qt-format
+msgctxt ""
+"You are about to translate the 'triangle' EXAMPLE PROGRAM, examples have to "
+"be translated in a speacial way.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn how to properly translate it."
+msgid ""
+"# Example: %1\n"
+"\n"
+"@(repeat) 3 {\n"
+"  @(forward) 100\n"
+"  @(turnleft) 120\n"
+"}\n"
+msgstr ""
+
+#: interpreter/translator.cpp:607
+msgctxt ""
+"This is an EXAMPLE NAME in KTurtle.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn know how to properly translate it."
+msgid "curly"
+msgstr ""
+
+#: interpreter/translator.cpp:611
+#, qt-format
+msgctxt ""
+"You are about to translate the 'curly' EXAMPLE PROGRAM, examples have to be "
+"translated in a speacial way.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn know how to properly translate it."
+msgid ""
+"# Example: %1\n"
+"# This example draws some nice curving shapes...\n"
+"\n"
+"@(reset)\n"
+"@(penup)\n"
+"@(forward) 50\n"
+"@(pendown)\n"
+"\n"
+"@(repeat) 4 {\n"
+"  @(for) $x = 1 @(to) 100 {\n"
+"    @(forward) 10\n"
+"    @(turnright) 100 - $x\n"
+"  }\n"
+"}\n"
+msgstr ""
+
+#: interpreter/translator.cpp:630
+msgctxt ""
+"This is an EXAMPLE NAME in KTurtle.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn know how to properly translate it."
+msgid "arrow"
+msgstr ""
+
+#: interpreter/translator.cpp:634
+#, qt-format
+msgctxt ""
+"You are about to translate the 'arrow' EXAMPLE PROGRAM, examples have to be "
+"translated in a speacial way.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn know how to properly translate it."
+msgid ""
+"# Example: %1\n"
+"# This example draws an arrow...\n"
+"@(reset)\n"
+"\n"
+"@(canvassize) 200@(,) 200\n"
+"@(canvascolor) 0@(,) 0@(,) 0\n"
+"@(pencolor) 255@(,) 0@(,) 0\n"
+"@(penwidth) 5\n"
+"@(clear)\n"
+"\n"
+"@(go) 20@(,)20\n"
+"@(direction) 135\n"
+"\n"
+"@(forward) 200\n"
+"@(turnleft) 135\n"
+"@(forward) 100\n"
+"@(turnleft) 135\n"
+"@(forward) 141\n"
+"@(turnleft) 135\n"
+"@(forward) 100\n"
+"@(turnleft) 45\n"
+"\n"
+"@(go) 40@(,) 100"
+msgstr ""
+
+#: interpreter/translator.cpp:662
+#, fuzzy
+msgctxt ""
+"This is an EXAMPLE NAME in KTurtle.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn know how to properly translate it."
+msgid "flower"
+msgstr "Lebih perlahan"
+
+#: interpreter/translator.cpp:666
+#, qt-format
+msgctxt ""
+"You are about to translate the 'flower' EXAMPLE PROGRAM, examples have to be "
+"translated in a speacial way.Please see http://edu.kde.org/kturtle/"
+"translator.php to learn know how to properly translate it."
+msgid ""
+"# Example: %1\n"
+"# This example draws a flower...\n"
+"\n"
+"@(reset)\n"
+"@(canvassize) 170@(,) 170\n"
+"@(canvascolor) 255@(,) 55@(,) 140\n"
+"@(go) 45@(,) 120\n"
+"@(pencolor) 160@(,) 0@(,) 255\n"
+"@(penwidth) 3\n"
+"\n"
+"@(repeat) 8 {\n"
+"  @(repeat) 4 {\n"
+"    @(forward) 20\n"
+"    @(turnright) 30\n"
+"  }\n"
+"  @(repeat) 7 {\n"
+"    @(forward) 10\n"
+"    @(turnright) 15\n"
+"  }\n"
+"  @(repeat) 9 {\n"
+"    @(forward) 3\n"
+"    @(turnright) 10\n"
+"  }\n"
+"}\n"
+"\n"
+"@(go) 145@(,) 145\n"
+"@(direction) 0"
+msgstr ""
+
+#: canvas.cpp:182
+msgid "bold"
+msgstr ""
+
+#: canvas.cpp:183
+msgid "italic"
+msgstr ""
+
+#: canvas.cpp:184
+#, fuzzy
+msgid "underline"
+msgstr "BARIS"
+
+#: canvas.cpp:185
+#, fuzzy
+msgid "overline"
+msgstr "BARIS"
+
+#: canvas.cpp:186
+msgid "strikeout"
+msgstr ""
+
+#: directiondialog.cpp:210
+#, fuzzy
+msgid "Set a direction"
+msgstr "Henti $arahan"
+
+#: directiondialog.cpp:237
+msgid "Previous direction"
+msgstr ""
+
+#: directiondialog.cpp:252 directiondialog.cpp:274
+#, fuzzy
+msgid "Direction"
+msgstr "keterangan"
+
+#: directiondialog.cpp:264
+#, fuzzy
+msgid "Command"
+msgstr "Ko&men"
+
+#: directiondialog.cpp:266
+#, fuzzy
+msgid "Turnleft"
+msgstr "KTurtle"
+
+#: directiondialog.cpp:270
+msgid "Turnright"
+msgstr ""
+
+#: editor.cpp:143 editor.cpp:208
+msgid "Turtle code files"
+msgstr ""
+
+#: editor.cpp:143 editor.cpp:208
+msgid "All files"
+msgstr ""
+
+#: editor.cpp:143
+msgid "Open"
+msgstr ""
+
+#: editor.cpp:154
+#, fuzzy, qt-format
+msgid "Cannot read %1"
+msgstr "Tidak memahami '%1'"
+
+#: editor.cpp:208
+msgid "Save As"
+msgstr ""
+
+#: editor.cpp:212
+#, qt-format
+msgid "Are you sure you want to overwrite %1"
+msgstr ""
+
+#: editor.cpp:213
+msgid "Overwrite Existing File"
+msgstr ""
+
+#: editor.cpp:213 editor.cpp:214
+#, fuzzy
+msgid "&Overwrite"
+msgstr "&Tindih"
+
+#: editor.cpp:225
+#, fuzzy
+msgid ""
+"The program you are currently working on is not saved. By continuing you may "
+"lose the changes you have made."
+msgstr "buka ialah."
+
+#: editor.cpp:227
+#, fuzzy
+msgid "Unsaved File"
+msgstr "Menyalin Fail"
+
+#: editor.cpp:227
+#, fuzzy
+msgid "&Discard Changes"
+msgstr "Terap perubahan"
+
+#: errordialog.cpp:30
+#, fuzzy
+msgid "Errors"
+msgstr "Ralat Tidak Diketahui"
+
+#: errordialog.cpp:43
 #, fuzzy
 msgid ""
 "In this list you find the error(s) that resulted from running your Logo "
@@ -71,833 +946,998 @@ msgid ""
 "Good luck!"
 msgstr "Dalam s larian Logo!"
 
-#: dialogs.cpp:60
-#, fuzzy
-msgid "number"
-msgstr "Nombor"
-
-#: dialogs.cpp:63
+#: errordialog.cpp:68
 #, fuzzy
 msgid "line"
 msgstr "BARIS"
 
-#: dialogs.cpp:66
+#: errordialog.cpp:68
 msgid "description"
 msgstr "keterangan"
 
-#: dialogs.cpp:144
-msgid "Color Picker"
-msgstr "Pemilih Warna"
+#: errordialog.cpp:68
+msgid "code"
+msgstr ""
 
-#: dialogs.cpp:157
-#, fuzzy
-msgid "Insert Color Code at Cursor"
-msgstr "Masukkan tab di kedudukan kursor"
+#: inspector.cpp:46
+msgid "&Variables"
+msgstr ""
 
-#: dialogs.cpp:200
-#, fuzzy
-msgid "Color code:"
-msgstr "Masukkan kod warna"
+#: inspector.cpp:52
+msgid "&Learned Functions"
+msgstr ""
 
-#: dialogs.cpp:301
-#, fuzzy
-msgid "&Restart"
-msgstr "ulanghidup"
+#: inspector.cpp:58
+msgid "Code &Tree"
+msgstr ""
 
-#: dialogs.cpp:301
+#: inspector.cpp:79 inspector.cpp:87
 #, fuzzy
-msgid "&Back"
-msgstr "_Undur"
+msgid "name"
+msgstr " Nama   : "
 
-#: dialogs.cpp:303
+#: inspector.cpp:79
 #, fuzzy
-msgid "Finished Execution"
-msgstr "Pemasangan selesai"
+msgid "value"
+msgstr "salah"
 
-#: dialogs.cpp:304
-#, fuzzy
-msgid "Click here to restart the current logo program."
-msgstr "hingga."
+#: inspector.cpp:79
+msgid "type"
+msgstr ""
 
-#: dialogs.cpp:305
-#, fuzzy
-msgid "Click here to switch back to the edit mode."
-msgstr "hingga belakang hingga."
+#: inspector.cpp:87
+msgid "parameters"
+msgstr ""
 
-#: dialogs.cpp:311
+#: inspector.cpp:96 inspector.cpp:101
 #, fuzzy
+msgid "Nothing to show here"
+msgstr "Padam aksara dibawah kursor"
+
+#: inspector.cpp:144 mainwindow.cpp:629
+msgid "boolean"
+msgstr ""
+
+#: inspector.cpp:147
+#, fuzzy
+msgid "number"
+msgstr "Nombor"
+
+#: inspector.cpp:150
+#, fuzzy
+msgid "string"
+msgstr "$STRING"
+
+#: inspector.cpp:177
+#, fuzzy
+msgid "None"
+msgstr "Selesai."
+
+#: main.cpp:40
+msgid "KTurtle; an educational programming environment."
+msgstr ""
+
+#: main.cpp:48
+msgid "File to open (in the GUI mode)"
+msgstr ""
+
+#: main.cpp:50
 msgid ""
-"Execution was finished without errors.\n"
-"What do you want to do next?"
-msgstr "Pelaksanaan selesai hingga?"
-
-#: executer.cpp:222
-#, fuzzy, c-format
-msgid "Call to undefined function: %1."
-msgstr "Panggil ke subproses yang tidak sah."
-
-#: executer.cpp:233
-#, fuzzy
-msgid "Call to function '%1' with wrong number of parameters."
-msgstr "hingga bagi."
-
-#: executer.cpp:276
-#, fuzzy
-msgid "Function %1 did not return a value."
-msgstr "Fungsi."
-
-#: executer.cpp:527
-#, fuzzy
-msgid "Can only multiply numbers."
-msgstr "Namahos hanya boleh mengandungi 'a-z', 'A-Z', '-', atau '.'"
-
-#: executer.cpp:538
-msgid "Cannot divide by zero."
+"Starts KTurtle in testing mode (without a GUI), directly runs the specified "
+"local file"
 msgstr ""
 
-#: executer.cpp:541
-#, fuzzy
-msgid "Can only divide numbers."
-msgstr "Namahos hanya boleh mengandungi 'a-z', 'A-Z', '-', atau '.'"
-
-#: executer.cpp:553
-#, fuzzy
-msgid "Can only subtract numbers."
-msgstr "Namahos hanya boleh mengandungi 'a-z', 'A-Z', '-', atau '.'"
-
-#: executer.cpp:814
-#, fuzzy
+#: main.cpp:52
 msgid ""
-"The penwidth cannot be set to something smaller than 1, or bigger than 10000."
-msgstr "hingga atau."
+"Specifies the localization language by a language code, defaults to \"en_US"
+"\" (only works in testing mode)"
+msgstr ""
 
-#: executer.cpp:841
-#, fuzzy
-msgid "The parameters of function %1 must be within range: 0 to 350."
-msgstr "bagi hingga."
+#: main.cpp:54
+msgid "Only tokenizes the turtle code (only works in testing mode)"
+msgstr ""
 
-#: executer.cpp:879
-#, fuzzy
+#: main.cpp:56
 msgid ""
-"The parameters of the %1 command must be numbers in the range: 1 to 10000."
-msgstr "bagi inci hingga."
+"Translates turtle code to embeddable C++ example strings (for developers "
+"only)"
+msgstr ""
 
-#: executer.cpp:919 executer.cpp:940
+#: main.cpp:63
+msgid "KTurtle"
+msgstr "KTurtle"
+
+#: main.cpp:65
+msgid "Initiator and core developer"
+msgstr ""
+
+#: mainwindow.cpp:52
+msgid "Toolbar"
+msgstr ""
+
+#: mainwindow.cpp:68
+msgid "Ready"
+msgstr ""
+
+#: mainwindow.cpp:119
 #, fuzzy
+msgid "About KTurtle"
+msgstr "KTurtle"
+
+#: mainwindow.cpp:120
 msgid ""
-"The parameters of the %1 command must be numbers in the range: 0 to 255."
-msgstr "bagi inci hingga."
-
-#: executer.cpp:978
-msgid "The print command needs input"
+"KTurtle is an educational programming environment, that aims to make "
+"programming as easy and touchable as possible. KTurtle intends to help "
+"teaching kids the basics of math, geometry and... programming."
 msgstr ""
 
-#: executer.cpp:1058
-#, fuzzy
-msgid "The %1 command accepts no parameters."
-msgstr "Tiada pengendali bagi arahan: "
-
-#: executer.cpp:1070
-#, fuzzy
-msgid "The %1 command was called with %2 but needs 1 parameter."
-msgid_plural "The %1 command was called with %2 but needs %n parameters."
-msgstr[0] "Tiada pengendali bagi arahan: "
-msgstr[1] "Tiada pengendali bagi arahan: "
-
-#: executer.cpp:1074
-#, fuzzy
-msgid "The %1 command was called with %2 but only accepts 1 parameter."
-msgid_plural ""
-"The %1 command was called with %2 but only accepts %n parameters."
-msgstr[0] "Tiada pengendali bagi arahan: "
-msgstr[1] "Tiada pengendali bagi arahan: "
-
-#: executer.cpp:1095
-msgid "The %1 command only accepts a string as its parameter."
+#: mainwindow.cpp:161
+msgid "Create a new file"
 msgstr ""
 
-#: executer.cpp:1097
-msgid "The %1 command only accepts strings as its parameters."
+#: mainwindow.cpp:164
+msgid "Open an existing file"
 msgstr ""
 
-#: executer.cpp:1102
-msgid "The %1 command only accepts a number as its parameter."
+#: mainwindow.cpp:168
+msgid "Open a recently used file"
 msgstr ""
 
-#: executer.cpp:1104
-msgid "The %1 command only accepts numbers as its parameters."
+#: mainwindow.cpp:171
+msgid "Save the current file to disk"
 msgstr ""
 
-#: kturtle.cpp:86
-#, fuzzy
-msgid ""
-"A KDE text-editor component could not be found;\n"
-"please check your KDE installation."
-msgstr ""
-"Komponen editor teks KDE tidak dapat ditemui;\n"
-"semak pemasangan KDE anda.."
-
-#: kturtle.cpp:126
-#, fuzzy
-msgid "Open Exa&mples..."
-msgstr "dulang terbuka"
-
-#: kturtle.cpp:131
-#, fuzzy
-msgid "Save &Canvas..."
-msgstr "Simpan Tetapan"
-
-#: kturtle.cpp:132
-#, fuzzy
-msgid "Execution Speed"
-msgstr "Kelajuan Failover"
-
-#: kturtle.cpp:133
-#, fuzzy
-msgid "Full Speed"
-msgstr "Kelajuan Failover"
-
-#: kturtle.cpp:133
-msgid "Slow"
-msgstr "Perlahan"
-
-#: kturtle.cpp:133
-msgid "Slower"
-msgstr "Lebih perlahan"
-
-#: kturtle.cpp:133
-msgid "Slowest"
+#: mainwindow.cpp:175
+msgid "Save the current file under a different name"
 msgstr ""
 
-#: kturtle.cpp:136
-#, fuzzy
-msgid "&Execute Commands"
-msgstr "Arahan Pengguna..."
+#: mainwindow.cpp:177
+msgid "&Run"
+msgstr ""
 
-#: kturtle.cpp:137
+#: mainwindow.cpp:180
+msgid "Execute the code in the Code Editor"
+msgstr ""
+
+#: mainwindow.cpp:183
+msgid "&Pause"
+msgstr ""
+
+#: mainwindow.cpp:187
 #, fuzzy
-msgid "Pause E&xecution"
+msgid "Pause execution"
 msgstr "Main/Sebentar"
 
-#: kturtle.cpp:140
+#: mainwindow.cpp:190
+msgid "&Abort"
+msgstr ""
+
+#: mainwindow.cpp:193
 #, fuzzy
-msgid "Stop E&xecution"
+msgid "Abort execution"
 msgstr "Henti $arahan"
 
-#: kturtle.cpp:153
+#: mainwindow.cpp:197
 #, fuzzy
-msgid "Toggle Insert"
+msgid "Print the code"
+msgstr "Kod keluar yang tidak diketahui."
+
+#: mainwindow.cpp:200
+#, fuzzy
+msgid "Quit KTurtle"
+msgstr "Name=KTurtle"
+
+#: mainwindow.cpp:205
+msgid "Undo a change in the Code Editor"
+msgstr ""
+
+#: mainwindow.cpp:210
+msgid "Redo a previously undone change in the Code Editor"
+msgstr ""
+
+#: mainwindow.cpp:215
+msgid "Cut the selected text to the clipboard"
+msgstr ""
+
+#: mainwindow.cpp:220
+msgid "Copy the selected text to the clipboard"
+msgstr ""
+
+#: mainwindow.cpp:225
+msgid "Paste the clipboard's content into the current selection"
+msgstr ""
+
+#: mainwindow.cpp:228
+msgid "Select all the code in the editor"
+msgstr ""
+
+#: mainwindow.cpp:231
+#, fuzzy
+msgid "Toggle &Insert"
 msgstr "Masukkan cakera liut"
 
-#: kturtle.cpp:160
+#: mainwindow.cpp:233
+msgid "Toggle between the 'insert' and 'overwrite' mode"
+msgstr ""
+
+#: mainwindow.cpp:240
+msgid "Search through the code in the editor"
+msgstr ""
+
+#: mainwindow.cpp:243
+msgid "Find the next occurrence"
+msgstr ""
+
+#: mainwindow.cpp:246
+msgid "Find the previous occurrence"
+msgstr ""
+
+#: mainwindow.cpp:249
+msgid "Search and replace"
+msgstr ""
+
+#: mainwindow.cpp:253
+msgid "Show &Code Editor"
+msgstr ""
+
+#: mainwindow.cpp:255
+msgid "Show or hide the Code Editor"
+msgstr ""
+
+#: mainwindow.cpp:261
+msgid "Show &Inspector"
+msgstr ""
+
+#: mainwindow.cpp:263
+msgid "Show or hide the Inspector"
+msgstr ""
+
+#: mainwindow.cpp:269
+msgid "Show &Statusbar"
+msgstr ""
+
+#: mainwindow.cpp:271
+msgid "Show or hide the Statusbar"
+msgstr ""
+
+#: mainwindow.cpp:276
+msgid "Show &Toolbar"
+msgstr ""
+
+#: mainwindow.cpp:278
+msgid "Show or hide the Toolbar"
+msgstr ""
+
+#: mainwindow.cpp:286
+msgid "&Direction chooser"
+msgstr ""
+
+#: mainwindow.cpp:288
+msgid "Shows the direction chooser dialog"
+msgstr ""
+
+#: mainwindow.cpp:291
 #, fuzzy
 msgid "Show &Line Numbers"
 msgstr "Papar nombor baris"
 
-#: kturtle.cpp:165
-#, fuzzy
-msgid "&Color Picker"
-msgstr "Kedalaman _Warna:"
-
-#: kturtle.cpp:166
-msgid "&Indent"
-msgstr "&Inden"
-
-#: kturtle.cpp:167
-#, fuzzy
-msgid "&Unindent"
-msgstr "Teks Tidak Indent"
-
-#: kturtle.cpp:168
-#, fuzzy
-msgid "Cl&ean Indentation"
-msgstr ""
-"\n"
-"masukkan EAN baru %s\n"
-
-#: kturtle.cpp:169
-msgid "Co&mment"
-msgstr "Ko&men"
-
-#: kturtle.cpp:170
-msgid "Unc&omment"
+#: mainwindow.cpp:293
+msgid "Turn the editors line numbers on/off"
 msgstr ""
 
-#: kturtle.cpp:174
+#: mainwindow.cpp:308
+msgid "Configure the application's keyboard shortcut assignments."
+msgstr ""
+
+#: mainwindow.cpp:317
+msgid "Get help on the command under the cursor"
+msgstr ""
+
+#: mainwindow.cpp:322
+msgid "Information about KTurtle"
+msgstr ""
+
+#: mainwindow.cpp:325
+msgid "Information about KDE"
+msgstr ""
+
+#: mainwindow.cpp:328 mainwindow.cpp:331
+msgid "Help"
+msgstr ""
+
+#: mainwindow.cpp:334
+msgid "Point and click information about the interface of KTurtle"
+msgstr ""
+
+#: mainwindow.cpp:340
 #, fuzzy
-msgid "&Configure Editor..."
+msgid "&Full Speed"
+msgstr "Kelajuan Failover"
+
+#: mainwindow.cpp:347
+#, fuzzy
+msgid "&Slow"
+msgstr "Perlahan"
+
+#: mainwindow.cpp:353
+#, fuzzy
+msgid "S&lower"
+msgstr "Lebih perlahan"
+
+#: mainwindow.cpp:359
+#, fuzzy
+msgid "Sl&owest"
+msgstr "Lebih perlahan"
+
+#: mainwindow.cpp:365
+msgid "S&tep-by-Step"
+msgstr ""
+
+#: mainwindow.cpp:388
+#, fuzzy
+msgid "&Code Editor"
 msgstr "&Tetap Penyunting..."
 
-#: kturtle.cpp:193
-#, fuzzy
-msgid ""
-"This is the code editor, here you type the Logo commands to instruct the "
-"turtle. You can also open an existing Logo program with File->Open "
-"Examples... or File->Open."
-msgstr "ialah jenis Logo hingga Anda Logo Fail Buka Contoh atau Fail Buka."
-
-#: kturtle.cpp:221
-#, fuzzy
-msgid "Welcome to KTurtle..."
-msgstr "Selamat datang ke &RHL;"
-
-#: kturtle.cpp:222
-#, fuzzy
-msgid "Line: %1 Column: %2"
-msgstr "+BARIS,LAJUR"
-
-#: kturtle.cpp:223
-msgid "INS"
-msgstr "INS"
-
-#: kturtle.cpp:235
-#, fuzzy
-msgid "This is the canvas, here the turtle draws a picture."
-msgstr "ialah."
-
-#: kturtle.cpp:257
-#, fuzzy
-msgid " Line: %1 Column: %2 "
-msgstr "+BARIS,LAJUR"
-
-#: kturtle.cpp:273 kturtle.cpp:316
-#, fuzzy
-msgid ""
-"The program you are currently working on is not saved. By continuing you may "
-"lose the changes you have made."
-msgstr "buka ialah."
-
-#: kturtle.cpp:275 kturtle.cpp:318 kturtle.cpp:476
-#, fuzzy
-msgid "Unsaved File"
-msgstr "Menyalin Fail"
-
-#: kturtle.cpp:275 kturtle.cpp:318
-#, fuzzy
-msgid "&Discard Changes"
-msgstr "Terap perubahan"
-
-#: kturtle.cpp:283
-#, fuzzy
-msgid "New file... Happy coding!"
-msgstr "Tidak, simpan kepada fail baru"
-
-#: kturtle.cpp:293 kturtle.cpp:358
-#, fuzzy
-msgid "Logo Files"
-msgstr "Fail Log"
-
-#: kturtle.cpp:293
-#, fuzzy
-msgid "Open Logo File"
-msgstr "tidak dapat membuka fail `%s'"
-
-#: kturtle.cpp:302
-#, fuzzy
-msgid "Logo Examples Files"
-msgstr "Tiada Fail Dinyatakan."
-
-#: kturtle.cpp:302
-#, fuzzy
-msgid "Open Logo Example File"
-msgstr "Tidak dapat membuka fail imej %s"
-
-#: kturtle.cpp:321
-msgid "Opening aborted, nothing opened."
+#: mainwindow.cpp:404
+msgid "&Inspector"
 msgstr ""
 
-#: kturtle.cpp:331
-#, fuzzy, c-format
-msgid "Opened file: %1"
-msgstr "Menyalin Fail"
+#: mainwindow.cpp:446
+msgid "&File"
+msgstr ""
 
-#: kturtle.cpp:339
-#, fuzzy, c-format
-msgid ""
-"KTurtle was unable to open: \n"
-"%1."
-msgstr "Tidak dapat membuka folder buku"
+#: mainwindow.cpp:453
+msgid "&Edit"
+msgstr ""
 
-#: kturtle.cpp:340
+#: mainwindow.cpp:458
+msgid "&View"
+msgstr ""
+
+#: mainwindow.cpp:461
+msgid "&Tools"
+msgstr ""
+
+#: mainwindow.cpp:466
 #, fuzzy
-msgid "Open Error"
-msgstr "Ralat Tidak Diketahui"
+msgid "&Settings"
+msgstr "Tet&apan Lanjutan"
 
-#: kturtle.cpp:341
+#: mainwindow.cpp:469
+msgid "&Help"
+msgstr ""
+
+#: mainwindow.cpp:481
 #, fuzzy
-msgid "Opening aborted because of error."
-msgstr "Ralat membuka fail kickstart %s: %s"
+msgid "R&un Speed"
+msgstr "Kelajuan Failover"
 
-#: kturtle.cpp:345
+#: mainwindow.cpp:488
 #, fuzzy
-msgid "Opening aborted."
-msgstr "Pengguna dibatalkan"
+msgid "&Language"
+msgstr "Bahasa"
 
-#: kturtle.cpp:361
+#: mainwindow.cpp:498
+#, qt-format
+msgid "Switch to the %1 dictionary"
+msgstr ""
+
+#: mainwindow.cpp:506
 #, fuzzy
-msgid "Saving aborted."
-msgstr "Pengguna dibatalkan"
+msgid "&Open Example"
+msgstr "dulang terbuka"
 
-#: kturtle.cpp:367
+#: mainwindow.cpp:530
 #, fuzzy
-msgid ""
-"A program named \"%1\" already exists in this folder. Do you want to "
-"overwrite it?"
-msgstr "A inci hingga?"
+msgid "Full Speed"
+msgstr "Kelajuan Failover"
 
-#: kturtle.cpp:369 kturtle.cpp:409
-#, fuzzy
-msgid "Overwrite?"
-msgstr "Tindih"
+#: mainwindow.cpp:531
+msgid "Slow"
+msgstr "Perlahan"
 
-#: kturtle.cpp:369 kturtle.cpp:409
-#, fuzzy
-msgid "&Overwrite"
-msgstr "&Tindih"
+#: mainwindow.cpp:532
+msgid "Slower"
+msgstr "Lebih perlahan"
 
-#: kturtle.cpp:387
-#, fuzzy, c-format
-msgid "Saved to: %1"
-msgstr "Selamat datang ke %s"
+#: mainwindow.cpp:533
+msgid "Slowest"
+msgstr ""
 
-#: kturtle.cpp:402
-msgid "Pictures"
-msgstr "Gambar"
+#: mainwindow.cpp:534
+msgid "Step by Step"
+msgstr ""
 
-#: kturtle.cpp:402
-#, fuzzy
-msgid "Save Canvas as Picture"
-msgstr "Simpan hasil kerja dahulu?"
+#: mainwindow.cpp:578
+msgid "(empty)"
+msgstr ""
 
-#: kturtle.cpp:407
-#, fuzzy
-msgid ""
-"A picture named \"%1\" already in this folder. Do you want to overwrite it?"
-msgstr "A inci hingga?"
-
-#: kturtle.cpp:431
-#, fuzzy, c-format
-msgid ""
-"KTurtle was unable to save the image to: \n"
-"%1."
-msgstr "hingga imej hingga."
-
-#: kturtle.cpp:432
-#, fuzzy
-msgid "Unable to Save Image"
-msgstr "Tidak dapat menyimpan fail '%1'."
-
-#: kturtle.cpp:433
-#, fuzzy
-msgid "Could not save image."
-msgstr "Imej Tidak Dapat Disimpan"
-
-#: kturtle.cpp:436
-#, fuzzy, c-format
-msgid "Saved canvas to: %1"
-msgstr "Berbalik ke perubahan terakhir disimpan"
-
-#: kturtle.cpp:444
-#, fuzzy
-msgid "Do you want to print the Logo code or the canvas?"
-msgstr "hingga Logo atau?"
-
-#: kturtle.cpp:445
-#, fuzzy
-msgid "What to Print?"
-msgstr "-> Hendak buat apa ?"
-
-#: kturtle.cpp:445
-#, fuzzy
-msgid "Print &Logo Code"
-msgstr "Kod keluar yang tidak diketahui."
-
-#: kturtle.cpp:445
-#, fuzzy
-msgid "Print &Canvas"
-msgstr "Pengurus Pencetak"
-
-#: kturtle.cpp:462
-#, fuzzy
-msgid "Printing aborted."
-msgstr "Pengguna dibatalkan"
-
-#: kturtle.cpp:471
-#, fuzzy
-msgid "Quitting KTurtle..."
-msgstr "Name=KTurtle"
-
-#: kturtle.cpp:474
-#, fuzzy
-msgid ""
-"The program you are currently working on is not saved. By quitting KTurtle "
-"you may lose the changes you have made."
-msgstr "buka ialah."
-
-#: kturtle.cpp:476
-#, fuzzy
-msgid "Discard Changes && &Quit"
-msgstr "Keluar tanpa simpan perubahan?"
-
-#: kturtle.cpp:479 kturtle.cpp:488
-#, fuzzy
-msgid "Quitting aborted."
-msgstr "Pengguna dibatalkan"
-
-#: kturtle.cpp:521
-#, fuzzy
-msgid "Parsing commands..."
-msgstr "Arahan Pengguna..."
-
-#: kturtle.cpp:540 kturtle.cpp:602
-#, fuzzy
-msgid "Executing commands..."
-msgstr "Arahan Pengguna..."
-
-#: kturtle.cpp:583
-msgid "Done."
-msgstr "Selesai."
-
-#: kturtle.cpp:584
-#, fuzzy
-msgid "Execution aborted."
-msgstr "Pengguna dibatalkan"
-
-#: kturtle.cpp:597
-#, fuzzy
-msgid "Execution paused."
-msgstr "Terima laporan pelaksanaan"
-
-#: kturtle.cpp:641
-msgid "Input"
-msgstr "Masukan"
-
-#: kturtle.cpp:646
-msgid "Message"
-msgstr "Mesej"
-
-#: kturtle.cpp:745
-msgid " OVR "
-msgstr " OVR "
-
-#: kturtle.cpp:745
+#: mainwindow.cpp:596
 msgid " INS "
 msgstr " INS "
 
-#: kturtle.cpp:878
-#, fuzzy
-msgid "Initial Canvas Size"
-msgstr "Jumlah saiz pemasangan: %s"
+#: mainwindow.cpp:596
+msgid " OVR "
+msgstr " OVR "
 
-#: kturtle.cpp:901
-#, fuzzy
-msgid "Canvas &width:"
-msgstr "Lebar kanvas dalam piksel"
-
-#: kturtle.cpp:903
-#, fuzzy
-msgid "Ca&nvas height:"
-msgstr "Muatturun Sijil CA"
-
-#: kturtle.cpp:909
-#, fuzzy
-msgid "You need to restart before these settings have effect"
-msgstr "Anda hingga"
-
-#: kturtle.cpp:914
-msgid "General"
-msgstr "Umum"
-
-#: kturtle.cpp:914
-#, fuzzy
-msgid "General Settings"
-msgstr "Tetapan Lain-lain"
-
-#: kturtle.cpp:937
-#, fuzzy
-msgid "&Select the language for the Logo commands:"
-msgstr "Senarai bahasa yang terdapat untuk arahan Logo"
-
-#: kturtle.cpp:946
-msgid "Language"
-msgstr "Bahasa"
-
-#: kturtle.cpp:946
-#, fuzzy
-msgid "Language Settings"
-msgstr "Tetapan Lain-lain"
-
-#: kturtle.cpp:970 kturtle.cpp:982
-#, fuzzy, c-format
-msgid "Command language: %1"
-msgstr "Pilihan Bahasa"
-
-#: kturtle.cpp:1016 kturtle.cpp:1066 kturtle.cpp:1110 kturtle.cpp:1135
+#: mainwindow.cpp:602 mainwindow.cpp:645
 #, fuzzy
 msgid "<no keyword>"
 msgstr "katakunci tidak diketahui: %s"
 
-#: kturtle.cpp:1018
-#, fuzzy
-msgid "There is currently no text under the cursor to get help on."
-msgstr "ialah tidak teks hingga buka."
+#: mainwindow.cpp:603
+#, fuzzy, qt-format
+msgid "Help on: %1"
+msgstr "Pada Ahli:"
 
-#: kturtle.cpp:1018
-#, fuzzy
-msgid "Nothing Under Cursor"
-msgstr "Padam aksara dibawah kursor"
+#: mainwindow.cpp:608
+#, fuzzy, qt-format
+msgid " Line: %1 Column: %2 "
+msgstr "+BARIS,LAJUR"
 
-#: kturtle.cpp:1021 kturtle.cpp:1115
+#: mainwindow.cpp:618
+msgid "<variable>"
+msgstr ""
+
+#: mainwindow.cpp:619
 #, fuzzy
 msgid "<number>"
 msgstr "Nombor"
 
-#: kturtle.cpp:1022 kturtle.cpp:1084
-#, fuzzy
-msgid "<string>"
-msgstr "$STRING"
-
-#: kturtle.cpp:1023 kturtle.cpp:1119
-#, fuzzy
-msgid "<assignment>"
-msgstr "menjangka umpukan"
-
-#: kturtle.cpp:1024 kturtle.cpp:1121
-#, fuzzy
-msgid "<question>"
-msgstr "Soalan"
-
-#: kturtle.cpp:1025 kturtle.cpp:1126
-#, fuzzy
-msgid "<name>"
-msgstr " Nama   : "
-
-#: kturtle.cpp:1026 kturtle.cpp:1060
+#: mainwindow.cpp:620
 #, fuzzy
 msgid "<comment>"
 msgstr "Komen"
 
-#: kturtle.cpp:1047
-msgid "\"%1\""
-msgstr "\"%1\""
-
-#: kturtle.cpp:1048
-#, fuzzy, c-format
-msgid "Displaying help on %1"
-msgstr "Terdapat ralat memapar bantuan: %s"
-
-#: kturtle.cpp:1061 kturtle.cpp:1067 kturtle.cpp:1085 kturtle.cpp:1128
-#: kturtle.cpp:1136
-#, fuzzy, c-format
-msgid "Help on: %1"
-msgstr "Pada Ahli:"
-
-#: kturtle.cpp:1117
+#: mainwindow.cpp:621
 #, fuzzy
-msgid "<math>"
-msgstr "OpenOffice.org Math"
+msgid "<string>"
+msgstr "$STRING"
 
-#: main.cpp:27
+#: mainwindow.cpp:622
 #, fuzzy
-msgid "Educational Programming Environment using the Logo programming language"
-msgstr "Pemprograman Persekitaran Logo"
+msgid "<scope>"
+msgstr "Komen"
 
-#: main.cpp:31
+#: mainwindow.cpp:623
 #, fuzzy
-msgid "(C) 2003 The KTurtle Authors"
-msgstr "(c) 2003-2005, Mandriva"
+msgid "<assignment>"
+msgstr "menjangka umpukan"
 
-#: main.cpp:48
-msgid "KTurtle"
-msgstr "KTurtle"
-
-#: main.cpp:50
-#, fuzzy
-msgid "Main developer and initiator"
-msgstr "Utama pemaju dan"
-
-#: main.cpp:53
-#, fuzzy
-msgid "Big contributor, supporter and fan"
-msgstr "Besar dan"
-
-#: main.cpp:56
-#, fuzzy
-msgid ""
-"Author of \"wsbasic\" (wsbasic.sf.net) the base for the interpreter of "
-"KTurtle"
-msgstr "Pengarang bagi for bagi"
-
-#: main.cpp:59 main.cpp:62
-#, fuzzy
-msgid "German Data Files"
-msgstr "Tiada Fail Dinyatakan."
-
-#: main.cpp:65
-#, fuzzy
-msgid "Swedish Data Files"
-msgstr "Tiada Fail Dinyatakan."
-
-#: main.cpp:68
-#, fuzzy
-msgid "Slovenian Data Files"
-msgstr "Tiada Fail Dinyatakan."
-
-#: main.cpp:71
-#, fuzzy
-msgid "Serbian (Latin and Cyrillic) Data Files"
-msgstr "Serbia Latin dan Cyrillic Data Fail"
-
-#: main.cpp:74
-#, fuzzy
-msgid "Italian Data Files"
-msgstr "Tiada Fail Dinyatakan."
-
-#: main.cpp:77
-#, fuzzy
-msgid "British English Data Files"
-msgstr "Bahasa Inggeris Data Fail"
-
-#: main.cpp:80
-#, fuzzy
-msgid "Spanish Data Files"
-msgstr "Tiada Fail Dinyatakan."
-
-#: main.cpp:83
-#, fuzzy
-msgid "Brazilian Portuguese Data Files"
-msgstr "Brazil Portugis Data Fail"
-
-#: main.cpp:86
-#, fuzzy
-msgid "Norwegian Nynorsk and Bokmål Data files"
-msgstr "Norway dan Data"
-
-#: main.cpp:88
-#, fuzzy
-msgid "Parser Cyrillic support"
-msgstr "Sokongan Bahasa Tambahan"
-
-#: parser.cpp:97
-msgid ""
-"Unexpected intruction after the '%1' command, please use only one instuction "
-"per line"
+#: mainwindow.cpp:624
+msgid "<parenthesis>"
 msgstr ""
 
-#: parser.cpp:101
-#, fuzzy
-msgid "Expected '['"
-msgstr "')' dijangka\n"
-
-#: parser.cpp:105
-#, fuzzy
-msgid "Expected 'to' after the '%1' command"
-msgstr "Gagal untuk melaksanakan arahan \"%s\": %s\n"
-
-#: parser.cpp:109
-#, fuzzy
-msgid "Expected '=' after the '%1' command"
-msgstr "%s: integer dijangka selepas `%c'"
-
-#: parser.cpp:113
-#, fuzzy
-msgid "Expected ']' after the '%1' command"
-msgstr "%s: integer dijangka selepas `%c'"
-
-#: parser.cpp:117
-#, fuzzy
-msgid "Expected a name after the '%1' command"
-msgstr "Kehilangan nama fail selepas -C"
-
-#: parser.cpp:121
-#, fuzzy
-msgid ""
-"UNDEFINED ERROR NR %1: please sent this Logo script to the KTurtle developers"
+#: mainwindow.cpp:626
+msgid "mathmatical operator"
 msgstr ""
-"RALAT TIDAK DINYATAKAN NR %1: sila hantar skrip Logo ini ke pembangun KTurtle"
 
-#: parser.cpp:161 parser.cpp:167
-msgid "Expected an expression"
+#: mainwindow.cpp:627
+#, fuzzy
+msgid "expression"
 msgstr "Menjangka ungkapan"
 
-#: parser.cpp:211
-msgid "String text not properly delimited with a ' \" ' (double quote)"
-msgstr ""
-"Rentetan teks tidak dihadkan dengan betul dengan '\"' (petikan berganda)"
-
-#: parser.cpp:244
-msgid ""
-"INTERNAL ERROR NR %1: please sent this Logo script to KTurtle developers"
-msgstr "RALAT DALAMAN NR %1: sila hantar skrip Logo ini ke pembangun KTurtle"
-
-#: parser.cpp:249
-msgid "Cannot understand '%1', expected an expression after the '%2' command"
+#: mainwindow.cpp:628
+msgid "boolean operator"
 msgstr ""
 
-#: parser.cpp:346 parser.cpp:445
-msgid "Expected '*' or '/'"
-msgstr "Menjangka '*' atau '/'"
+#: mainwindow.cpp:630 mainwindow.cpp:631 mainwindow.cpp:632
+#, fuzzy
+msgid "command"
+msgstr "Komen"
 
-#: parser.cpp:527
-msgid "Cannot understand ']'"
-msgstr "Tidak memahami ']'"
+#: mainwindow.cpp:659
+#, qt-format
+msgid "Could not change the language to %1."
+msgstr ""
 
-#: parser.cpp:532
-msgid "Cannot understand '['"
-msgstr "Tidak memahami '['"
+#: mainwindow.cpp:668
+#, qt-format
+msgid "%1 [built in]"
+msgstr ""
 
-#: parser.cpp:541
-msgid "Cannot understand '%1'"
-msgstr "Tidak memahami '%1'"
-
-#: parser.cpp:1066
-msgid "'%1' is neither a Logo command nor a learned command."
-msgstr "'%1' adalah bukan arahan Logo atau arahan dipelajari."
-
-#. i18n: file kturtleui.rc line 58
-#: rc.cpp:18
-#, no-c-format
-msgid "&Advanced Settings"
-msgstr "Tet&apan Lanjutan"
-
-#. i18n: file kturtle.kcfg line 10
-#: rc.cpp:24
-#, no-c-format
-msgid "The width of the canvas in pixels"
-msgstr "Lebar kanvas dalam piksel"
-
-#. i18n: file kturtle.kcfg line 14
-#: rc.cpp:27
-#, no-c-format
-msgid "The height of the canvas in pixels"
-msgstr "Tinggi kanvas dalam piksel"
-
-#. i18n: file kturtle.kcfg line 22
-#: rc.cpp:30
-#, no-c-format
-msgid "The list of the available languages for the Logo commands"
-msgstr "Senarai bahasa yang terdapat untuk arahan Logo"
-
-#. i18n: file kturtle.kcfg line 47
-#: rc.cpp:33
-#, no-c-format
-msgid "The language of the Logo commands"
-msgstr "Bahasa bagi arahan Logo"
-
-#. i18n: file kturtle.kcfg line 83
-#: rc.cpp:36
-#, no-c-format
-msgid "The value of the ComboBox"
-msgstr "Nilai bagi ComboBox"
-
-#: translate.cpp:41
-msgid "'%1' (%2)"
+#: mainwindow.cpp:669
+#, fuzzy, qt-format
+msgid "%1 (%2)"
 msgstr "'%1' (%2)"
 
-#: value.cpp:49 value.cpp:84 value.cpp:127
-msgid "false"
-msgstr "salah"
+#: mainwindow.cpp:752
+msgid "untitled"
+msgstr ""
 
-#: value.cpp:79 value.cpp:126
-msgid "true"
-msgstr "betul"
+#: mainwindow.cpp:798
+msgid "Input"
+msgstr "Masukan"
+
+#: mainwindow.cpp:805
+msgid "Message"
+msgstr "Mesej"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sharuzzaman Ahmat Raslan"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sharuzzaman@myrealbox.com"
+
+#~ msgid ""
+#~ "The turtle picture could not be found. Please check your installation."
+#~ msgstr "Gambar penyu tidak dijumpai. Sila periksa pemasangan anda."
+
+#~ msgid "Help on &Error"
+#~ msgstr "Bantuan pada &Ralat"
+
+#~ msgid "Error Dialog"
+#~ msgstr "Dialog Ralat"
+
+#~ msgid "Closes this error dialog"
+#~ msgstr "Tutup dialog ralat ini"
+
+#~ msgid "Click here to read more on this error dialog in KTurtle's Handbook."
+#~ msgstr ""
+#~ "Klik disini untuk membaca lebih lanjut mengenai dialog ralat ini dalam "
+#~ "Panduan KTurtle."
+
+#~ msgid "Click here for help using this error dialog"
+#~ msgstr "Klik disini untuk bantuan menggunakan dialog ralat ini"
+
+#~ msgid ""
+#~ "Click here for help regarding the error you selected in the list. This "
+#~ "button will not work when no error is selected."
+#~ msgstr ""
+#~ "Klik disini untuk bantuan mengenai ralat yang anda pilih dalam senarai. "
+#~ "Butang ini tidak akan berfungsi apabila tiada ralat dipilih."
+
+#, fuzzy
+#~ msgid "Click here for help regarding the error you selected."
+#~ msgstr "for."
+
+#~ msgid "Color Picker"
+#~ msgstr "Pemilih Warna"
+
+#, fuzzy
+#~ msgid "Insert Color Code at Cursor"
+#~ msgstr "Masukkan tab di kedudukan kursor"
+
+#, fuzzy
+#~ msgid "Color code:"
+#~ msgstr "Masukkan kod warna"
+
+#, fuzzy
+#~ msgid "&Restart"
+#~ msgstr "ulanghidup"
+
+#, fuzzy
+#~ msgid "&Back"
+#~ msgstr "_Undur"
+
+#, fuzzy
+#~ msgid "Finished Execution"
+#~ msgstr "Pemasangan selesai"
+
+#, fuzzy
+#~ msgid "Click here to restart the current logo program."
+#~ msgstr "hingga."
+
+#, fuzzy
+#~ msgid "Click here to switch back to the edit mode."
+#~ msgstr "hingga belakang hingga."
+
+#, fuzzy
+#~ msgid ""
+#~ "Execution was finished without errors.\n"
+#~ "What do you want to do next?"
+#~ msgstr "Pelaksanaan selesai hingga?"
+
+#, fuzzy
+#~ msgid "Call to undefined function: %1."
+#~ msgstr "Panggil ke subproses yang tidak sah."
+
+#, fuzzy
+#~ msgid "Call to function '%1' with wrong number of parameters."
+#~ msgstr "hingga bagi."
+
+#, fuzzy
+#~ msgid "Function %1 did not return a value."
+#~ msgstr "Fungsi."
+
+#, fuzzy
+#~ msgid "Can only multiply numbers."
+#~ msgstr "Namahos hanya boleh mengandungi 'a-z', 'A-Z', '-', atau '.'"
+
+#, fuzzy
+#~ msgid "Can only divide numbers."
+#~ msgstr "Namahos hanya boleh mengandungi 'a-z', 'A-Z', '-', atau '.'"
+
+#, fuzzy
+#~ msgid "Can only subtract numbers."
+#~ msgstr "Namahos hanya boleh mengandungi 'a-z', 'A-Z', '-', atau '.'"
+
+#, fuzzy
+#~ msgid ""
+#~ "The penwidth cannot be set to something smaller than 1, or bigger than "
+#~ "10000."
+#~ msgstr "hingga atau."
+
+#, fuzzy
+#~ msgid "The parameters of function %1 must be within range: 0 to 350."
+#~ msgstr "bagi hingga."
+
+#, fuzzy
+#~ msgid ""
+#~ "The parameters of the %1 command must be numbers in the range: 1 to 10000."
+#~ msgstr "bagi inci hingga."
+
+#, fuzzy
+#~ msgid ""
+#~ "The parameters of the %1 command must be numbers in the range: 0 to 255."
+#~ msgstr "bagi inci hingga."
+
+#, fuzzy
+#~ msgid ""
+#~ "A KDE text-editor component could not be found;\n"
+#~ "please check your KDE installation."
+#~ msgstr ""
+#~ "Komponen editor teks KDE tidak dapat ditemui;\n"
+#~ "semak pemasangan KDE anda.."
+
+#, fuzzy
+#~ msgid "Save &Canvas..."
+#~ msgstr "Simpan Tetapan"
+
+#, fuzzy
+#~ msgid "Execution Speed"
+#~ msgstr "Kelajuan Failover"
+
+#, fuzzy
+#~ msgid "&Execute Commands"
+#~ msgstr "Arahan Pengguna..."
+
+#, fuzzy
+#~ msgid "&Color Picker"
+#~ msgstr "Kedalaman _Warna:"
+
+#~ msgid "&Indent"
+#~ msgstr "&Inden"
+
+#, fuzzy
+#~ msgid "&Unindent"
+#~ msgstr "Teks Tidak Indent"
+
+#, fuzzy
+#~ msgid "Cl&ean Indentation"
+#~ msgstr ""
+#~ "\n"
+#~ "masukkan EAN baru %s\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "This is the code editor, here you type the Logo commands to instruct the "
+#~ "turtle. You can also open an existing Logo program with File->Open "
+#~ "Examples... or File->Open."
+#~ msgstr "ialah jenis Logo hingga Anda Logo Fail Buka Contoh atau Fail Buka."
+
+#, fuzzy
+#~ msgid "Welcome to KTurtle..."
+#~ msgstr "Selamat datang ke &RHL;"
+
+#, fuzzy
+#~ msgid "Line: %1 Column: %2"
+#~ msgstr "+BARIS,LAJUR"
+
+#~ msgid "INS"
+#~ msgstr "INS"
+
+#, fuzzy
+#~ msgid "This is the canvas, here the turtle draws a picture."
+#~ msgstr "ialah."
+
+#, fuzzy
+#~ msgid "New file... Happy coding!"
+#~ msgstr "Tidak, simpan kepada fail baru"
+
+#, fuzzy
+#~ msgid "Logo Files"
+#~ msgstr "Fail Log"
+
+#, fuzzy
+#~ msgid "Open Logo File"
+#~ msgstr "tidak dapat membuka fail `%s'"
+
+#, fuzzy
+#~ msgid "Logo Examples Files"
+#~ msgstr "Tiada Fail Dinyatakan."
+
+#, fuzzy
+#~ msgid "Open Logo Example File"
+#~ msgstr "Tidak dapat membuka fail imej %s"
+
+#, fuzzy
+#~ msgid "Opened file: %1"
+#~ msgstr "Menyalin Fail"
+
+#, fuzzy
+#~ msgid ""
+#~ "KTurtle was unable to open: \n"
+#~ "%1."
+#~ msgstr "Tidak dapat membuka folder buku"
+
+#, fuzzy
+#~ msgid "Opening aborted because of error."
+#~ msgstr "Ralat membuka fail kickstart %s: %s"
+
+#, fuzzy
+#~ msgid "Opening aborted."
+#~ msgstr "Pengguna dibatalkan"
+
+#, fuzzy
+#~ msgid "Saving aborted."
+#~ msgstr "Pengguna dibatalkan"
+
+#, fuzzy
+#~ msgid ""
+#~ "A program named \"%1\" already exists in this folder. Do you want to "
+#~ "overwrite it?"
+#~ msgstr "A inci hingga?"
+
+#, fuzzy
+#~ msgid "Overwrite?"
+#~ msgstr "Tindih"
+
+#, fuzzy
+#~ msgid "Saved to: %1"
+#~ msgstr "Selamat datang ke %s"
+
+#~ msgid "Pictures"
+#~ msgstr "Gambar"
+
+#, fuzzy
+#~ msgid "Save Canvas as Picture"
+#~ msgstr "Simpan hasil kerja dahulu?"
+
+#, fuzzy
+#~ msgid ""
+#~ "A picture named \"%1\" already in this folder. Do you want to overwrite "
+#~ "it?"
+#~ msgstr "A inci hingga?"
+
+#, fuzzy
+#~ msgid ""
+#~ "KTurtle was unable to save the image to: \n"
+#~ "%1."
+#~ msgstr "hingga imej hingga."
+
+#, fuzzy
+#~ msgid "Unable to Save Image"
+#~ msgstr "Tidak dapat menyimpan fail '%1'."
+
+#, fuzzy
+#~ msgid "Could not save image."
+#~ msgstr "Imej Tidak Dapat Disimpan"
+
+#, fuzzy
+#~ msgid "Saved canvas to: %1"
+#~ msgstr "Berbalik ke perubahan terakhir disimpan"
+
+#, fuzzy
+#~ msgid "Do you want to print the Logo code or the canvas?"
+#~ msgstr "hingga Logo atau?"
+
+#, fuzzy
+#~ msgid "What to Print?"
+#~ msgstr "-> Hendak buat apa ?"
+
+#, fuzzy
+#~ msgid "Print &Canvas"
+#~ msgstr "Pengurus Pencetak"
+
+#, fuzzy
+#~ msgid "Printing aborted."
+#~ msgstr "Pengguna dibatalkan"
+
+#, fuzzy
+#~ msgid ""
+#~ "The program you are currently working on is not saved. By quitting "
+#~ "KTurtle you may lose the changes you have made."
+#~ msgstr "buka ialah."
+
+#, fuzzy
+#~ msgid "Discard Changes && &Quit"
+#~ msgstr "Keluar tanpa simpan perubahan?"
+
+#, fuzzy
+#~ msgid "Quitting aborted."
+#~ msgstr "Pengguna dibatalkan"
+
+#, fuzzy
+#~ msgid "Parsing commands..."
+#~ msgstr "Arahan Pengguna..."
+
+#, fuzzy
+#~ msgid "Executing commands..."
+#~ msgstr "Arahan Pengguna..."
+
+#, fuzzy
+#~ msgid "Execution aborted."
+#~ msgstr "Pengguna dibatalkan"
+
+#, fuzzy
+#~ msgid "Execution paused."
+#~ msgstr "Terima laporan pelaksanaan"
+
+#, fuzzy
+#~ msgid "Initial Canvas Size"
+#~ msgstr "Jumlah saiz pemasangan: %s"
+
+#, fuzzy
+#~ msgid "Canvas &width:"
+#~ msgstr "Lebar kanvas dalam piksel"
+
+#, fuzzy
+#~ msgid "Ca&nvas height:"
+#~ msgstr "Muatturun Sijil CA"
+
+#, fuzzy
+#~ msgid "You need to restart before these settings have effect"
+#~ msgstr "Anda hingga"
+
+#, fuzzy
+#~ msgid "General Settings"
+#~ msgstr "Tetapan Lain-lain"
+
+#, fuzzy
+#~ msgid "&Select the language for the Logo commands:"
+#~ msgstr "Senarai bahasa yang terdapat untuk arahan Logo"
+
+#, fuzzy
+#~ msgid "Language Settings"
+#~ msgstr "Tetapan Lain-lain"
+
+#, fuzzy
+#~ msgid "Command language: %1"
+#~ msgstr "Pilihan Bahasa"
+
+#, fuzzy
+#~ msgid "There is currently no text under the cursor to get help on."
+#~ msgstr "ialah tidak teks hingga buka."
+
+#, fuzzy
+#~ msgid "<question>"
+#~ msgstr "Soalan"
+
+#~ msgid "\"%1\""
+#~ msgstr "\"%1\""
+
+#, fuzzy
+#~ msgid "Displaying help on %1"
+#~ msgstr "Terdapat ralat memapar bantuan: %s"
+
+#, fuzzy
+#~ msgid "<math>"
+#~ msgstr "OpenOffice.org Math"
+
+#, fuzzy
+#~ msgid ""
+#~ "Educational Programming Environment using the Logo programming language"
+#~ msgstr "Pemprograman Persekitaran Logo"
+
+#, fuzzy
+#~ msgid "(C) 2003 The KTurtle Authors"
+#~ msgstr "(c) 2003-2005, Mandriva"
+
+#, fuzzy
+#~ msgid "Main developer and initiator"
+#~ msgstr "Utama pemaju dan"
+
+#, fuzzy
+#~ msgid "Big contributor, supporter and fan"
+#~ msgstr "Besar dan"
+
+#, fuzzy
+#~ msgid ""
+#~ "Author of \"wsbasic\" (wsbasic.sf.net) the base for the interpreter of "
+#~ "KTurtle"
+#~ msgstr "Pengarang bagi for bagi"
+
+#, fuzzy
+#~ msgid "German Data Files"
+#~ msgstr "Tiada Fail Dinyatakan."
+
+#, fuzzy
+#~ msgid "Swedish Data Files"
+#~ msgstr "Tiada Fail Dinyatakan."
+
+#, fuzzy
+#~ msgid "Slovenian Data Files"
+#~ msgstr "Tiada Fail Dinyatakan."
+
+#, fuzzy
+#~ msgid "Serbian (Latin and Cyrillic) Data Files"
+#~ msgstr "Serbia Latin dan Cyrillic Data Fail"
+
+#, fuzzy
+#~ msgid "Italian Data Files"
+#~ msgstr "Tiada Fail Dinyatakan."
+
+#, fuzzy
+#~ msgid "British English Data Files"
+#~ msgstr "Bahasa Inggeris Data Fail"
+
+#, fuzzy
+#~ msgid "Spanish Data Files"
+#~ msgstr "Tiada Fail Dinyatakan."
+
+#, fuzzy
+#~ msgid "Brazilian Portuguese Data Files"
+#~ msgstr "Brazil Portugis Data Fail"
+
+#, fuzzy
+#~ msgid "Norwegian Nynorsk and Bokmål Data files"
+#~ msgstr "Norway dan Data"
+
+#, fuzzy
+#~ msgid "Parser Cyrillic support"
+#~ msgstr "Sokongan Bahasa Tambahan"
+
+#, fuzzy
+#~ msgid "Expected '['"
+#~ msgstr "')' dijangka\n"
+
+#, fuzzy
+#~ msgid "Expected 'to' after the '%1' command"
+#~ msgstr "Gagal untuk melaksanakan arahan \"%s\": %s\n"
+
+#, fuzzy
+#~ msgid "Expected '=' after the '%1' command"
+#~ msgstr "%s: integer dijangka selepas `%c'"
+
+#, fuzzy
+#~ msgid "Expected ']' after the '%1' command"
+#~ msgstr "%s: integer dijangka selepas `%c'"
+
+#, fuzzy
+#~ msgid ""
+#~ "UNDEFINED ERROR NR %1: please sent this Logo script to the KTurtle "
+#~ "developers"
+#~ msgstr ""
+#~ "RALAT TIDAK DINYATAKAN NR %1: sila hantar skrip Logo ini ke pembangun "
+#~ "KTurtle"
+
+#~ msgid "String text not properly delimited with a ' \" ' (double quote)"
+#~ msgstr ""
+#~ "Rentetan teks tidak dihadkan dengan betul dengan '\"' (petikan berganda)"
+
+#~ msgid ""
+#~ "INTERNAL ERROR NR %1: please sent this Logo script to KTurtle developers"
+#~ msgstr ""
+#~ "RALAT DALAMAN NR %1: sila hantar skrip Logo ini ke pembangun KTurtle"
+
+#~ msgid "Expected '*' or '/'"
+#~ msgstr "Menjangka '*' atau '/'"
+
+#~ msgid "Cannot understand ']'"
+#~ msgstr "Tidak memahami ']'"
+
+#~ msgid "Cannot understand '['"
+#~ msgstr "Tidak memahami '['"
+
+#~ msgid "'%1' is neither a Logo command nor a learned command."
+#~ msgstr "'%1' adalah bukan arahan Logo atau arahan dipelajari."
+
+#~ msgid "The width of the canvas in pixels"
+#~ msgstr "Lebar kanvas dalam piksel"
+
+#~ msgid "The height of the canvas in pixels"
+#~ msgstr "Tinggi kanvas dalam piksel"
+
+#~ msgid "The list of the available languages for the Logo commands"
+#~ msgstr "Senarai bahasa yang terdapat untuk arahan Logo"
+
+#~ msgid "The language of the Logo commands"
+#~ msgstr "Bahasa bagi arahan Logo"
+
+#~ msgid "The value of the ComboBox"
+#~ msgstr "Nilai bagi ComboBox"
