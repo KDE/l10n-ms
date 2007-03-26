@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
-"POT-Creation-Date: 2007-03-23 14:08+0100\n"
+"POT-Creation-Date: 2007-03-26 02:16+0200\n"
 "PO-Revision-Date: 2005-10-06 11:21+0800\n"
 "Last-Translator: junetazawawi <junetazawawi@yahoo.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -181,7 +181,7 @@ msgstr "Waktu"
 msgid "Time To"
 msgstr "Waktu Untuk"
 
-#: alarmlistview.cpp:71 sounddlg.cpp:50
+#: alarmlistview.cpp:71 sounddlg.cpp:56
 msgid "Repeat"
 msgstr "Ulang"
 
@@ -761,7 +761,7 @@ msgstr "Masukkan teks mesej penggera. Ia mungkin berbilang garisan."
 msgid "Enter the name or URL of a text or image file to display."
 msgstr "Masukkan nama atau URL teks atau fail imej yang hendak dipapar."
 
-#: editdlg.cpp:456 editdlg.cpp:548 sounddlg.cpp:77 soundpicker.cpp:86
+#: editdlg.cpp:456 editdlg.cpp:548 sounddlg.cpp:91
 msgid "Choose a file"
 msgstr "Pilih fail"
 
@@ -1856,7 +1856,7 @@ msgstr "Fail adalah folder"
 msgid "Failed to open file"
 msgstr "Gagal membuka fail"
 
-#: messagewin.cpp:367
+#: messagewin.cpp:367 sounddlg.cpp:331
 msgid "File not found"
 msgstr "Fail tidak ditemui"
 
@@ -2630,7 +2630,7 @@ msgstr ""
 msgid "System tray icon &update interval:"
 msgstr "Sela masa &kemas kini ikon dulang sistem:"
 
-#: prefdlg.cpp:1263 sounddlg.cpp:135
+#: prefdlg.cpp:1263 sounddlg.cpp:149
 msgid "seconds"
 msgstr "Saat"
 
@@ -3112,69 +3112,78 @@ msgstr "Semak untuk menyatakan berapa lama masa untuk mengulang penggera"
 msgid "Enter the length of time to repeat the alarm"
 msgstr "Masukkan berapa lama untuk mengulang penggera"
 
-#: sounddlg.cpp:48
+#: sounddlg.cpp:54
 msgid "Set volume"
 msgstr "Setkan volum"
 
-#: sounddlg.cpp:49
+#: sounddlg.cpp:55
 msgid "Set &volume"
 msgstr "Setkan &volum"
 
-#: sounddlg.cpp:51
+#: sounddlg.cpp:57
 msgid "Re&peat"
 msgstr "&Ulang"
 
-#: sounddlg.cpp:70
+#: sounddlg.cpp:78
+#, fuzzy
+msgid "Test the sound"
+msgstr "Hentikan siaran bunyi"
+
+#: sounddlg.cpp:79
+msgid "Play the selected sound file."
+msgstr ""
+
+#: sounddlg.cpp:84
 msgid "Enter the name or URL of a sound file to play."
 msgstr "Masukkan nama atau URL fail bunyi untuk disiarkan"
 
-#: sounddlg.cpp:78
+#: sounddlg.cpp:92
 msgid "Select a sound file to play."
 msgstr "Pilih fail bunyi untuk disiarkan."
 
-#: sounddlg.cpp:84
+#: sounddlg.cpp:98
 msgid ""
 "If checked, the sound file will be played repeatedly for as long as the message "
 "is displayed."
 msgstr ""
 "Jika disemak, fail bunyi akan disiarkan berkali-kali selagi mesej dipaparkan."
 
-#: sounddlg.cpp:88
+#: sounddlg.cpp:102
 msgid "Volume"
 msgstr "Kekuatan bunyi"
 
-#: sounddlg.cpp:107
+#: sounddlg.cpp:121
 msgid "Select to choose the volume for playing the sound file."
 msgstr "Pilih untuk memilih kekuatan bunyi untuk siaran fail bunyi"
 
-#: sounddlg.cpp:114
+#: sounddlg.cpp:128
 msgid "Choose the volume for playing the sound file."
 msgstr "Pilih volum untuk menyiarkan fail bunyi"
 
-#: sounddlg.cpp:118
+#: sounddlg.cpp:132
 msgid "Fade"
 msgstr "Pudar"
 
-#: sounddlg.cpp:122
+#: sounddlg.cpp:136
 msgid "Select to fade the volume when the sound file first starts to play."
 msgstr "Pilih volum untuk siaran fail bunyi"
 
-#: sounddlg.cpp:129
+#: sounddlg.cpp:143
 msgid ""
 "_: Time period over which to fade the sound\n"
 "Fade time:"
 msgstr "Masa pudar:"
 
-#: sounddlg.cpp:137
+#: sounddlg.cpp:151
 msgid ""
 "Enter how many seconds to fade the sound before reaching the set volume."
 msgstr "Masukkan berapa saat  untuk pudar sebelum mencapai volum yang diset"
 
-#: sounddlg.cpp:143
+#: sounddlg.cpp:157
 msgid "Initial volume:"
 msgstr "Volum awal:"
 
-#: sounddlg.cpp:150
+#: sounddlg.cpp:164
 msgid "Choose the initial volume for playing the sound file."
 msgstr "Pilih volum permulaan untuk siarkan fail bunyi"
 
@@ -3203,6 +3212,11 @@ msgid ""
 "_: An audio sound\n"
 "&Sound:"
 msgstr "&Bunyi"
+
+#: soundpicker.cpp:86
+#, fuzzy
+msgid "Configure sound file"
+msgstr "Pilih fail bunyi"
 
 #: soundpicker.cpp:87
 msgid "Configure a sound file to play when the alarm is displayed."
@@ -3259,11 +3273,11 @@ msgstr ""
 msgid "Special Alarm Actions"
 msgstr "Tindakan Penggera Khas"
 
-#: specialactions.cpp:158
+#: specialactions.cpp:140
 msgid "Pre-a&larm action:"
 msgstr "Tindakan Pra&penggera:"
 
-#: specialactions.cpp:165
+#: specialactions.cpp:147
 #, fuzzy
 msgid ""
 "Enter a shell command to execute before the alarm is displayed. N.B. KAlarm "
@@ -3272,11 +3286,11 @@ msgstr ""
 "Masukkan arahan shell untuk dilaksanakan sebelum penggera dipaparkan. N.B. %1 "
 "akan menunggu sehingga arahan selesai sebelum penggera dipaparkan."
 
-#: specialactions.cpp:171
+#: specialactions.cpp:153
 msgid "Post-alar&m action:"
 msgstr "Tindakan pasca&penggera"
 
-#: specialactions.cpp:177
+#: specialactions.cpp:159
 msgid "Enter a shell command to execute after the alarm window is closed."
 msgstr ""
 "Masukkan arahan shell yang dilaksanakan selepas tetingkap penggera ditutup."
