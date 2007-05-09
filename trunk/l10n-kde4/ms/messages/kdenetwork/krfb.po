@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-05-04 05:46+0200\n"
+"POT-Creation-Date: 2007-05-09 05:49+0200\n"
 "PO-Revision-Date: 2006-10-15 15:56+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,22 +14,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: connectioncontroller.cpp:92
+#: connectioncontroller.cpp:109
 #, fuzzy, qt-format
 msgid "Attepted uninvited connection from %1: connection refused"
 msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
 
-#: connectioncontroller.cpp:99
+#: connectioncontroller.cpp:116
 #, fuzzy, qt-format
 msgid "Accepted uninvited connection from %1"
 msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
 
-#: connectioncontroller.cpp:107
+#: connectioncontroller.cpp:124
 #, qt-format
 msgid "Received connection from %1, on hold (waiting for confirmation)"
 msgstr ""
 
-#: connectioncontroller.cpp:153 connectioncontroller.cpp:157
+#: connectioncontroller.cpp:169 connectioncontroller.cpp:173
 #, qt-format
 msgid "Failed login attempt from %1: wrong password"
 msgstr ""
@@ -49,7 +49,7 @@ msgstr "Sambungan Masatamat:"
 msgid "Refuse Connection"
 msgstr "Sambungan Masatamat:"
 
-#: invitedialog.cpp:35 manageinvitationsdialog.cpp:55
+#: invitedialog.cpp:35 manageinvitationsdialog.cpp:58
 msgid "Invitation"
 msgstr ""
 
@@ -141,7 +141,7 @@ msgstr "Path imej boot:        %s"
 msgid "KDesktop background deactivation"
 msgstr "Memulakan readahead: "
 
-#: manageinvitationsdialog.cpp:93
+#: manageinvitationsdialog.cpp:96
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
 "connect to your desktop.\n"
@@ -159,24 +159,59 @@ msgid ""
 "in the configuration."
 msgstr ""
 
-#: manageinvitationsdialog.cpp:137
+#: manageinvitationsdialog.cpp:118
+msgid ""
+"When sending an invitation by email, note that everybody who reads this "
+"email will be able to connect to your computer for one hour, or until the "
+"first successful connection took place, whichever comes first. \n"
+"You should either encrypt the email or at least send it only in a secure "
+"network, but not over the Internet."
+msgstr ""
+
+#: manageinvitationsdialog.cpp:123
+#, fuzzy
+msgid "Send Invitation via Email"
+msgstr "Kirim emel dan urus penjadualan anda"
+
+#: manageinvitationsdialog.cpp:142
+#, fuzzy
+msgid "Desktop Sharing (VNC) invitation"
+msgstr " Selaraskan Perkongsian Desktop"
+
+#: manageinvitationsdialog.cpp:143
+#, qt-format
+msgid ""
+"You have been invited to a VNC session. If you have the KDE Remote Desktop "
+"Connection installed, just click on the link below.\n"
+"\n"
+"vnc://invitation:%1@%2:%3\n"
+"\n"
+"Otherwise you can use any VNC client with the following parameters:\n"
+"\n"
+"Host: %4:%5\n"
+"Password: %6\n"
+"\n"
+"For security reasons this invitation will expire at %7."
+msgstr ""
+
+#: manageinvitationsdialog.cpp:182
 msgid "Network"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:138
+#: manageinvitationsdialog.cpp:183
 msgid "Security"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:146
+#: manageinvitationsdialog.cpp:191
 msgid "<qt>Are you sure you want to delete all invitations?</qt>"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:147 manageinvitationsdialog.cpp:163
+#: manageinvitationsdialog.cpp:192 manageinvitationsdialog.cpp:208
 #, fuzzy
 msgid "Confirm delete Invitations"
 msgstr "Membuang semua rantai:"
 
-#: manageinvitationsdialog.cpp:162
+#: manageinvitationsdialog.cpp:207
 msgid "<qt>Are you sure you want to delete this invitation?</qt>"
 msgstr ""
 
@@ -185,7 +220,7 @@ msgstr ""
 msgid "Personal Invitation"
 msgstr "Desktop _Peribadi"
 
-#: personalinvitedialog.cpp:84
+#: personalinvitedialog.cpp:86
 msgid ""
 "Desktop Sharing uses the VNC protocol. You can use any VNC client to "
 "connect. \n"
@@ -194,7 +229,7 @@ msgid ""
 "into the client and it will connect.."
 msgstr ""
 
-#: personalinvitedialog.cpp:89
+#: personalinvitedialog.cpp:91
 msgid ""
 "This field contains the address of your computer and the display number, "
 "separated by a colon.\n"
@@ -592,10 +627,6 @@ msgid "The remote user has closed the connection."
 msgstr "Hos remote putuskan hubungan utk %s@%s."
 
 #, fuzzy
-#~ msgid "Send Invitation via Email"
-#~ msgstr "Kirim emel dan urus penjadualan anda"
-
-#, fuzzy
 #~ msgid "User accepts connection from %1"
 #~ msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
 
@@ -623,10 +654,6 @@ msgstr "Hos remote putuskan hubungan utk %s@%s."
 
 #~ msgid "17:12"
 #~ msgstr "17:12"
-
-#, fuzzy
-#~ msgid "Desktop Sharing - connecting"
-#~ msgstr " Selaraskan Perkongsian Desktop"
 
 #, fuzzy
 #~ msgid "Manage &Invitations"
