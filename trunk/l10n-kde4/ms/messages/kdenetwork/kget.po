@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-26 05:31+0200\n"
+"POT-Creation-Date: 2007-07-27 05:45+0200\n"
 "PO-Revision-Date: 2006-08-24 22:53+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -79,6 +79,10 @@ msgid "Start KGet with drop target"
 msgstr ""
 
 #: main.cpp:128
+msgid "Start KGet with hidden main window"
+msgstr ""
+
+#: main.cpp:129
 #, fuzzy
 msgid "URL(s) to download"
 msgstr "Muatturun fail ke:"
@@ -100,14 +104,13 @@ msgstr "eksport senarai (default)"
 msgid "Edit Groups..."
 msgstr ""
 
-#: mainwindow.cpp:120
-#, fuzzy
-msgid "Delete Group."
-msgstr "Tambah _direktori"
+#: mainwindow.cpp:120 ui/groupseditdialog.cpp:37
+msgid "Delete Group"
+msgstr ""
 
 #: mainwindow.cpp:125
 #, fuzzy
-msgid "Rename Group."
+msgid "Rename Group"
 msgstr "Tambah _direktori"
 
 #: mainwindow.cpp:130
@@ -173,74 +176,74 @@ msgstr "<sharuzzaman@myrealbox.com>"
 msgid "Copy URL to Clipboard"
 msgstr "Salin fail setempat ke remote"
 
-#: mainwindow.cpp:253
+#: mainwindow.cpp:250
 msgid ""
 "This is the first time you have run KGet.\n"
-"Would you like to use KGet as the download manager for Konqueror?"
+"Would you like to enable KGet as the download manager for Konqueror?"
 msgstr ""
 
-#: mainwindow.cpp:255
+#: mainwindow.cpp:252
 #, fuzzy
 msgid "Konqueror Integration"
 msgstr "Pelayar Konqueror"
 
-#: mainwindow.cpp:255
+#: mainwindow.cpp:252
 #, fuzzy
 msgid "Enable"
 msgstr "Hidupkan"
 
-#: mainwindow.cpp:256
+#: mainwindow.cpp:253
 #, fuzzy
 msgid "Do Not Enable"
 msgstr "_Jangan Format"
 
-#: mainwindow.cpp:282
+#: mainwindow.cpp:284
 msgid "All Openable Files"
 msgstr ""
 
-#: mainwindow.cpp:283
+#: mainwindow.cpp:285
 #, fuzzy
 msgid "Open File"
 msgstr "Buka Fail"
 
-#: mainwindow.cpp:299
+#: mainwindow.cpp:301
 msgid ""
 "Some transfers are still running.\n"
 "Are you sure you want to close KGet?"
 msgstr ""
 
-#: mainwindow.cpp:301
+#: mainwindow.cpp:303
 msgid "Confirm Quit"
 msgstr ""
 
-#: mainwindow.cpp:334
+#: mainwindow.cpp:336
 #, fuzzy
 msgid "KGet Transfer List"
 msgstr "Log Pemindahan"
 
-#: mainwindow.cpp:336
+#: mainwindow.cpp:338
 #, fuzzy
 msgid "Export Transfers"
 msgstr "eksport senarai (default)"
 
-#: mainwindow.cpp:366 ui/groupseditdialog.cpp:65
+#: mainwindow.cpp:368 ui/groupseditdialog.cpp:65
 #, fuzzy
 msgid "Enter Group Name"
 msgstr "Sharuzzaman Ahmat Raslan"
 
-#: mainwindow.cpp:367 ui/groupseditdialog.cpp:66
+#: mainwindow.cpp:369 ui/groupseditdialog.cpp:66
 #, fuzzy
 msgid "Group name:"
 msgstr "Sharuzzaman Ahmat Raslan"
 
-#: mainwindow.cpp:545
+#: mainwindow.cpp:547
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
 "download manager for Konqueror\"."
 msgstr ""
 
-#: mainwindow.cpp:548
+#: mainwindow.cpp:550
 #, fuzzy
 msgid "Konqueror Integration disabled"
 msgstr "Pelayar Konqueror"
@@ -762,33 +765,42 @@ msgstr "Dialog Kemajuan"
 msgid "Speed"
 msgstr "Kelajuan"
 
-#: ui/droptarget.cpp:82
-#, fuzzy
-msgid "Hide Me"
-msgstr "Nama fail"
-
 #: ui/droptarget.cpp:83
+#, fuzzy
+msgid "Hide Drop Target"
+msgstr "Menukar polisi sasaran ke DROP: "
+
+#: ui/droptarget.cpp:84
 #, fuzzy
 msgid "Sticky"
 msgstr "Nota Lekat"
 
-#: ui/droptarget.cpp:254
+#: ui/droptarget.cpp:260
 #, fuzzy
 msgid "Show Main Window"
 msgstr "Pelayan Fail Windows"
 
-#: ui/droptarget.cpp:255
+#: ui/droptarget.cpp:261
 #, fuzzy
 msgid "Hide Main Window"
 msgstr "Pengurus tetingkap Sawfish"
 
-#: ui/droptarget.cpp:375
+#: ui/droptarget.cpp:338
+#, fuzzy
+msgid "Drop Target"
+msgstr "Pemacu Sasaran:"
+
+#: ui/droptarget.cpp:339
+msgid "You can drag download links into the drop target."
+msgstr ""
+
+#: ui/droptarget.cpp:385
 msgid ""
 "Drop target has been hidden. If you want to show it again, go to Settings-"
 ">Configure KGet->Look & Feel."
 msgstr ""
 
-#: ui/droptarget.cpp:377
+#: ui/droptarget.cpp:387
 #, fuzzy
 msgid "Hiding drop target"
 msgstr "Menukar polisi sasaran ke DROP: "
@@ -799,10 +811,6 @@ msgstr ""
 
 #: ui/groupseditdialog.cpp:32
 msgid "Add Group..."
-msgstr ""
-
-#: ui/groupseditdialog.cpp:37
-msgid "Delete Group"
 msgstr ""
 
 #: ui/groupseditdialog.cpp:74
@@ -860,6 +868,14 @@ msgstr "Pemindahan"
 #, fuzzy
 msgid "Transfer details:"
 msgstr "Pemindahan fail"
+
+#, fuzzy
+#~ msgid "Delete Group."
+#~ msgstr "Tambah _direktori"
+
+#, fuzzy
+#~ msgid "Hide Me"
+#~ msgstr "Nama fail"
 
 #, fuzzy
 #~ msgid ""
@@ -1295,10 +1311,6 @@ msgstr "Pemindahan fail"
 
 #~ msgid "Normal"
 #~ msgstr "Normal"
-
-#, fuzzy
-#~ msgid "Drop target"
-#~ msgstr "Pemacu Sasaran:"
 
 #, fuzzy
 #~ msgid "Copy file from: %1"
