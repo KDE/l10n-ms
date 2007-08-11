@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcminput\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-03 05:05+0200\n"
+"POT-Creation-Date: 2007-08-11 05:31+0200\n"
 "PO-Revision-Date: 2005-10-03 22:08+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -537,19 +537,19 @@ msgstr "sharuzzaman@myrealbox.com"
 msgid "Select the cursor theme you want to use:"
 msgstr "Pilih tema kursor yang anda ingin guna:"
 
-#: core/themepage.cpp:66 xcursor/themepage.cpp:96
+#: core/themepage.cpp:66 xcursor/thememodel.cpp:66
 msgid "Name"
 msgstr "Nama"
 
-#: core/themepage.cpp:67 xcursor/themepage.cpp:97
+#: core/themepage.cpp:67 xcursor/thememodel.cpp:69
 msgid "Description"
 msgstr "Huraian"
 
-#: core/themepage.cpp:106 xcursor/themepage.cpp:143
+#: core/themepage.cpp:106 xcursor/themepage.cpp:122
 msgid "You have to restart KDE for these changes to take effect."
 msgstr "Anda perlu mulakan semula KDE agar perubahan ini berkesan."
 
-#: core/themepage.cpp:107 xcursor/themepage.cpp:144
+#: core/themepage.cpp:107 xcursor/themepage.cpp:123
 msgid "Cursor Settings Changed"
 msgstr "Seting Kursor Diubah"
 
@@ -585,30 +585,24 @@ msgstr "Putih besar"
 msgid "Large white cursors"
 msgstr "Kursor putih besar"
 
-#: xcursor/themepage.cpp:84
-msgid "Select the cursor theme you want to use (hover preview to test cursor):"
+#: xcursor/legacytheme.cpp:324
+msgid "KDE Classic"
 msgstr ""
-"Pilih tema kursor yang anda ingin guna (prapapar ambang untuk menguji "
-"kursor):"
 
-#: xcursor/themepage.cpp:108
-msgid "Install New Theme..."
-msgstr "Pasang Tema Baru..."
+#: xcursor/legacytheme.cpp:324
+msgid "The default cursor theme in KDE 2 and 3"
+msgstr ""
 
-#: xcursor/themepage.cpp:109
-msgid "Remove Theme"
-msgstr "Buang Tema"
-
-#: xcursor/themepage.cpp:210
+#: xcursor/themepage.cpp:201
 msgid "Drag or Type Theme URL"
 msgstr "Seret atau Taip URL Tema"
 
-#: xcursor/themepage.cpp:219
+#: xcursor/themepage.cpp:212
 #, qt-format
 msgid "Unable to find the cursor theme archive %1."
 msgstr "Tidak dapat mencari arkib tema kursor %1."
 
-#: xcursor/themepage.cpp:222
+#: xcursor/themepage.cpp:215
 #, qt-format
 msgid ""
 "Unable to download the cursor theme archive; please check that the address %"
@@ -616,25 +610,34 @@ msgid ""
 msgstr ""
 "Tidak dapat memuat turun arkib tema kursor; pastikan alamat %1 adalah betul."
 
-#: xcursor/themepage.cpp:231
+#: xcursor/themepage.cpp:224
 #, qt-format
 msgid "The file %1 does not appear to be a valid cursor theme archive."
 msgstr "Fail %1 bukannya arkib tema kursor yang sah."
 
-#: xcursor/themepage.cpp:240
-#, qt-format
+#: xcursor/themepage.cpp:239
 msgid ""
-"<qt>Are you sure you want to remove the <strong>%1</strong> cursor theme?"
-"<br>This will delete all the files installed by this theme.</qt>"
+"<qt>You can't delete the theme you're currently using.<br>You have to switch "
+"to another theme first.</qt>"
+msgstr ""
+
+#: xcursor/themepage.cpp:245
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt>Are you sure you want to remove the <strong>%1</strong> cursor theme?"
+#| "<br>This will delete all the files installed by this theme.</qt>"
+msgid ""
+"<qt>Are you sure you want to remove the <i>%1</i> cursor theme?<br>This will "
+"delete all the files installed by this theme.</qt>"
 msgstr ""
 "<qt>Anda pasti anda ingin membuang <strong>%1</strong> tema kursor?<br>Ini "
 "akan menghapuskan semua fail yang dipasang oleh tema ini.</qt>"
 
-#: xcursor/themepage.cpp:246
+#: xcursor/themepage.cpp:251
 msgid "Confirmation"
 msgstr "Kepastian"
 
-#: xcursor/themepage.cpp:299
+#: xcursor/themepage.cpp:308
 #, qt-format
 msgid ""
 "A theme named %1 already exists in your icon theme folder. Do you want "
@@ -643,31 +646,35 @@ msgstr ""
 "Tema bernama %1 sudah wujud dalam folder tema ikon anda. Anda ingin "
 "menggantikannya dengan yang ini?"
 
-#: xcursor/themepage.cpp:301
+#: xcursor/themepage.cpp:312
 #, fuzzy
 msgid "Overwrite Theme?"
 msgstr "Tema tulis ganti?"
 
-#: xcursor/themepage.cpp:301
-msgid "Replace"
-msgstr ""
-
-#: xcursor/themepage.cpp:335 xcursor/themepage.cpp:482
+#: xcursor/xcursortheme.cpp:39
 msgid "No description available"
 msgstr "Tidak keterangan didapati"
 
-#: xcursor/themepage.cpp:536
-msgid "No theme"
-msgstr "Tiada tema"
+#~ msgid ""
+#~ "Select the cursor theme you want to use (hover preview to test cursor):"
+#~ msgstr ""
+#~ "Pilih tema kursor yang anda ingin guna (prapapar ambang untuk menguji "
+#~ "kursor):"
 
-#: xcursor/themepage.cpp:536
-msgid "The old classic X cursors"
-msgstr "Kursor klasik X lama"
+#~ msgid "Install New Theme..."
+#~ msgstr "Pasang Tema Baru..."
 
-#: xcursor/themepage.cpp:538
-msgid "System theme"
-msgstr "Tema sistem"
+#~ msgid "Remove Theme"
+#~ msgstr "Buang Tema"
 
-#: xcursor/themepage.cpp:538
-msgid "Do not change cursor theme"
-msgstr "Jangan ubah tema kursor"
+#~ msgid "No theme"
+#~ msgstr "Tiada tema"
+
+#~ msgid "The old classic X cursors"
+#~ msgstr "Kursor klasik X lama"
+
+#~ msgid "System theme"
+#~ msgstr "Tema sistem"
+
+#~ msgid "Do not change cursor theme"
+#~ msgstr "Jangan ubah tema kursor"
