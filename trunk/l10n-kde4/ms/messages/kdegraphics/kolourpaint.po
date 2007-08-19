@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-17 05:42+0200\n"
+"POT-Creation-Date: 2007-08-19 05:34+0200\n"
 "PO-Revision-Date: 2005-11-06 05:51+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -658,8 +658,8 @@ msgid "Click or drag to erase."
 msgstr "Klik atau seret untuk memadam."
 
 #: tools/flow/kpToolFlowBase.cpp:302 tools/kpToolColorPicker.cpp:112
-#: tools/selection/kpToolSelection.cpp:168
-#: tools/selection/kpToolSelection.cpp:1047 tools/kpToolZoom.cpp:196
+#: tools/selection/kpAbstractSelectionTool.cpp:250
+#: tools/selection/kpAbstractSelectionTool.cpp:493 tools/kpToolZoom.cpp:196
 #: tools/rectangular/kpToolRectangularBase.cpp:333
 #: tools/kpToolFloodFill.cpp:131 tools/polygonal/kpToolPolygonalBase.cpp:433
 msgid "Let go of all the mouse buttons."
@@ -710,174 +710,173 @@ msgstr "Membenarkan anda memilih warna dari imej"
 msgid "Click to select a color."
 msgstr "Klik untuk pilih warna."
 
-#: tools/selection/text/kpToolText_InputMethodEvents.cpp:113
-#: tools/selection/text/kpToolText_InputMethodEvents.cpp:180
-#: tools/selection/text/kpToolText.cpp:148
+#: tools/selection/text/kpToolText_Create.cpp:47
+msgid "Left drag to create text box."
+msgstr "Seret kiri untuk mencipta kotak teks."
+
+#: tools/selection/text/kpToolText_InputMethodEvents.cpp:118
+#: tools/selection/text/kpToolText_InputMethodEvents.cpp:185
+#: tools/selection/text/kpToolText_Commands.cpp:87
 msgid "Text: Delete"
 msgstr "Teks: Hapus"
 
-#: tools/selection/text/kpToolText_InputMethodEvents.cpp:133
-#: tools/selection/text/kpToolText_InputMethodEvents.cpp:202
-#: tools/selection/text/kpToolText_KeyboardEvents.cpp:391
+#: tools/selection/text/kpToolText_InputMethodEvents.cpp:138
+#: tools/selection/text/kpToolText_InputMethodEvents.cpp:207
+#: tools/selection/text/kpToolText_Commands.cpp:121
 msgid "Text: Write"
 msgstr "Teks: Tulis"
 
-#: tools/selection/text/kpToolText.cpp:57
+#: tools/selection/text/kpToolText_Commands.cpp:70
+msgid "Text: Backspace"
+msgstr "Teks: Ruang belakang"
+
+#: tools/selection/text/kpToolText_Commands.cpp:104
+msgid "Text: New Line"
+msgstr "Teks: Garis Baru"
+
+#: tools/selection/text/kpToolText.cpp:62
 #: layers/selections/text/kpTextSelection.cpp:136
 msgid "Text"
 msgstr "Teks"
 
-#: tools/selection/text/kpToolText.cpp:57
+#: tools/selection/text/kpToolText.cpp:62
 msgid "Writes text"
 msgstr "Tulis teks"
 
-#: tools/selection/text/kpToolText.cpp:85
-msgid "Left drag to resize text box."
-msgstr "Seret kiri untuk mensaiz semula kotak teks"
-
-#: tools/selection/text/kpToolText.cpp:92
-msgid "Left click to change cursor position."
-msgstr "Klik kiri untuk menukar posisi kursor."
-
-#: tools/selection/text/kpToolText.cpp:94
-msgid "Left drag to move text box."
-msgstr "Seret kiri untuk mengalih kotak teks."
-
-#: tools/selection/text/kpToolText.cpp:100
-msgid "Left drag to create text box."
-msgstr "Seret kiri untuk mencipta kotak teks."
-
-#: tools/selection/text/kpToolText.cpp:132
-msgid "Text: Backspace"
-msgstr "Teks: Ruang belakang"
-
-#: tools/selection/text/kpToolText.cpp:441
-#: mainWindow/kpMainWindow_Edit.cpp:400
+#: tools/selection/text/kpToolText.cpp:99 mainWindow/kpMainWindow_Edit.cpp:400
 msgid "Text: Create Box"
 msgstr "Teks: Cipta Kotak"
 
-#: tools/selection/text/kpToolText.cpp:502
-msgid "Text: Move Box"
-msgstr "Teks: Alihkan Kotak"
-
-#: tools/selection/text/kpToolText.cpp:587
+#: tools/selection/text/kpToolText_TextStyle.cpp:118
 msgid "Text: Opaque Background"
 msgstr "Teks: Latar Belakang Legap"
 
-#: tools/selection/text/kpToolText.cpp:588
+#: tools/selection/text/kpToolText_TextStyle.cpp:119
 msgid "Text: Transparent Background"
 msgstr "Teks: Latar Belakang  Lutsinar"
 
-#: tools/selection/text/kpToolText.cpp:610
+#: tools/selection/text/kpToolText_TextStyle.cpp:141
 msgid "Text: Swap Colors"
 msgstr "Teks: Nyilih Warna"
 
-#: tools/selection/text/kpToolText.cpp:630
+#: tools/selection/text/kpToolText_TextStyle.cpp:161
 msgid "Text: Foreground Color"
 msgstr "Teks: Warna Latar Depan"
 
-#: tools/selection/text/kpToolText.cpp:650
+#: tools/selection/text/kpToolText_TextStyle.cpp:181
 msgid "Text: Background Color"
 msgstr "Teks: Warna Latar Belakang"
 
-#: tools/selection/text/kpToolText.cpp:686
+#: tools/selection/text/kpToolText_TextStyle.cpp:217
 msgid "Text: Font"
 msgstr "Teks: Fon"
 
-#: tools/selection/text/kpToolText.cpp:713
+#: tools/selection/text/kpToolText_TextStyle.cpp:244
 msgid "Text: Font Size"
 msgstr "Teks: Saiz Fon"
 
-#: tools/selection/text/kpToolText.cpp:735
+#: tools/selection/text/kpToolText_TextStyle.cpp:266
 msgid "Text: Bold"
 msgstr "Teks: Tebal"
 
-#: tools/selection/text/kpToolText.cpp:756
+#: tools/selection/text/kpToolText_TextStyle.cpp:287
 msgid "Text: Italic"
 msgstr "Teks: Italik"
 
-#: tools/selection/text/kpToolText.cpp:777
+#: tools/selection/text/kpToolText_TextStyle.cpp:308
 msgid "Text: Underline"
 msgstr "Teks: Garis bawah"
 
-#: tools/selection/text/kpToolText.cpp:798
+#: tools/selection/text/kpToolText_TextStyle.cpp:329
 msgid "Text: Strike Through"
 msgstr "Teks: Garis lorek"
 
-#: tools/selection/text/kpToolText_KeyboardEvents.cpp:354
-msgid "Text: New Line"
-msgstr "Teks: Garis Baru"
+#: tools/selection/text/kpToolText_SelectText.cpp:56
+msgid "Left click to change cursor position."
+msgstr "Klik kiri untuk menukar posisi kursor."
 
-#: tools/selection/kpToolFreeFormSelection.cpp:46
+#: tools/selection/text/kpToolText_Move.cpp:42
+msgid "Left drag to move text box."
+msgstr "Seret kiri untuk mengalih kotak teks."
+
+#: tools/selection/text/kpToolText_Move.cpp:61
+msgid "Text: Move Box"
+msgstr "Teks: Alihkan Kotak"
+
+#: tools/selection/text/kpToolText_ResizeScale.cpp:42
+msgid "Left drag to resize text box."
+msgstr "Seret kiri untuk mensaiz semula kotak teks"
+
+#: tools/selection/image/kpToolFreeFormSelection.cpp:45
 msgid "Selection (Free-Form)"
 msgstr "Pilihan (Bentuk Bebas)"
 
-#: tools/selection/kpToolFreeFormSelection.cpp:47
+#: tools/selection/image/kpToolFreeFormSelection.cpp:46
 msgid "Makes a free-form selection"
 msgstr "Buat pilihan bentuk bebas"
 
-#: tools/selection/kpToolSelection.cpp:140
-msgid "Left drag to scale selection."
-msgstr "Seret kiri untuk menskala pilihan."
+#: tools/selection/image/kpToolRectSelection.cpp:41
+msgid "Selection (Rectangular)"
+msgstr "Pilihan (Segi empat tepat)"
 
-#: tools/selection/kpToolSelection.cpp:146
-msgid "Left drag to move selection."
-msgstr "Seret kiri untuk mengalih pilihan."
+#: tools/selection/image/kpToolRectSelection.cpp:42
+msgid "Makes a rectangular selection"
+msgstr "Buat pilihan segi empat tepat"
 
-#: tools/selection/kpToolSelection.cpp:153
-msgid "Left drag to create selection."
-msgstr "Seret kiri untuk mencipta pilihan."
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:118
+msgid "Selection: Transparency"
+msgstr "Pilihan: Kelutsinaran"
 
-#: tools/selection/kpToolSelection.cpp:1060
-msgid "Selection: Move"
-msgstr "Pilihan: Alih"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:174
+msgid "Selection: Opaque"
+msgstr "Pilihan: Legap"
 
-#: tools/selection/kpToolSelection.cpp:1084
-#, qt-format
-msgid "%1: Smear"
-msgstr "%1: Comot"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:175
+msgid "Selection: Transparent"
+msgstr "Pilihan: Lut sinar"
 
-#: tools/selection/kpToolSelection.cpp:1128
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:223
+msgid "Selection: Transparency Color"
+msgstr "Pilihan: Warna Kelutsinaran"
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:267
+msgid "Selection: Transparency Color Similarity"
+msgstr "Pilihan: Keserupaan Warna Kelutsinaran"
+
+#: tools/selection/image/kpToolEllipticalSelection.cpp:42
+msgid "Selection (Elliptical)"
+msgstr "Pilihan (Bujur)"
+
+#: tools/selection/image/kpToolEllipticalSelection.cpp:43
+msgid "Makes an elliptical or circular selection"
+msgstr "Buat pilihan bujur atau bulatan"
+
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
 #: imagelib/transforms/kpTransformCrop.cpp:371
 #: mainWindow/kpMainWindow_Edit.cpp:401 mainWindow/kpMainWindow_Image.cpp:289
 msgid "Selection: Create"
 msgstr "Pilihan: Cipta"
 
-#: tools/selection/kpToolSelection.cpp:1277
-msgid "Selection: Transparency"
-msgstr "Pilihan: Kelutsinaran"
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:89
+msgid "Left drag to create selection."
+msgstr "Seret kiri untuk mencipta pilihan."
 
-#: tools/selection/kpToolSelection.cpp:1333
-msgid "Selection: Opaque"
-msgstr "Pilihan: Legap"
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:95
+msgid "Left drag to move selection."
+msgstr "Seret kiri untuk mengalih pilihan."
 
-#: tools/selection/kpToolSelection.cpp:1334
-msgid "Selection: Transparent"
-msgstr "Pilihan: Lut sinar"
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:101
+msgid "Left drag to scale selection."
+msgstr "Seret kiri untuk menskala pilihan."
 
-#: tools/selection/kpToolSelection.cpp:1382
-msgid "Selection: Transparency Color"
-msgstr "Pilihan: Warna Kelutsinaran"
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:311
+msgid "Selection: Move"
+msgstr "Pilihan: Alih"
 
-#: tools/selection/kpToolSelection.cpp:1426
-msgid "Selection: Transparency Color Similarity"
-msgstr "Pilihan: Keserupaan Warna Kelutsinaran"
-
-#: tools/selection/kpToolRectSelection.cpp:42
-msgid "Selection (Rectangular)"
-msgstr "Pilihan (Segi empat tepat)"
-
-#: tools/selection/kpToolRectSelection.cpp:43
-msgid "Makes a rectangular selection"
-msgstr "Buat pilihan segi empat tepat"
-
-#: tools/selection/kpToolEllipticalSelection.cpp:43
-msgid "Selection (Elliptical)"
-msgstr "Pilihan (Bujur)"
-
-#: tools/selection/kpToolEllipticalSelection.cpp:44
-msgid "Makes an elliptical or circular selection"
-msgstr "Buat pilihan bujur atau bulatan"
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:331
+#, qt-format
+msgid "%1: Smear"
+msgstr "%1: Comot"
 
 #: tools/kpToolZoom.cpp:72
 msgid "Zoom"
