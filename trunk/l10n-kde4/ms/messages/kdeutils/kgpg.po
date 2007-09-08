@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-07 05:34+0200\n"
+"POT-Creation-Date: 2007-09-08 05:33+0200\n"
 "PO-Revision-Date: 2005-11-17 23:25+0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -127,12 +127,12 @@ msgstr "<p>Anda ingin import fail <b>%1</b> ke dalam gegelang kunci anda?</p>"
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 32
-#: keylistview.cpp:364 kgpginterface.cpp:2937 rc.cpp:398
+#: keylistview.cpp:364 kgpginterface.cpp:3030 rc.cpp:398
 #, fuzzy
 msgid "Import"
 msgstr "&Import"
 
-#: keylistview.cpp:364 kgpginterface.cpp:2937
+#: keylistview.cpp:364 kgpginterface.cpp:3030
 #, fuzzy
 msgid "Do Not Import"
 msgstr "Import Kunci"
@@ -954,7 +954,7 @@ msgstr "Import Kunci"
 msgid "Open File"
 msgstr "Buka Fail"
 
-#: keysmanager.cpp:2430
+#: keysmanager.cpp:2435 keysmanager.cpp:2448
 msgid "Importing..."
 msgstr "Mengimport..."
 
@@ -1310,7 +1310,7 @@ msgid "Enter passphrase (symmetrical encryption)"
 msgstr "Masukkan frasa laluan (penyulitan simetri)"
 
 #: kgpginterface.cpp:1088 kgpginterface.cpp:1246 kgpginterface.cpp:1842
-#: kgpginterface.cpp:2727 kgpginterface.cpp:2844
+#: kgpginterface.cpp:2727 kgpginterface.cpp:2937
 msgid "[No user id found]"
 msgstr "[Tiada id pengguna ditemui]"
 
@@ -1330,7 +1330,7 @@ msgstr "<b>Frasa laluan tidak bagus</b>. Anda ada %1 cubaan lagi.<br>"
 
 #: kgpginterface.cpp:1095 kgpginterface.cpp:1251 kgpginterface.cpp:1591
 #: kgpginterface.cpp:1734 kgpginterface.cpp:2130 kgpginterface.cpp:2220
-#: kgpginterface.cpp:2472 kgpginterface.cpp:2735 kgpginterface.cpp:2849
+#: kgpginterface.cpp:2472 kgpginterface.cpp:2735 kgpginterface.cpp:2942
 #, qt-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Masukkan frasa laluan untuk <b>%1</b>"
@@ -1339,7 +1339,7 @@ msgstr "Masukkan frasa laluan untuk <b>%1</b>"
 msgid "Bad MDC detected. The encrypted text has been manipulated."
 msgstr "MDC tidak bagus dikesan. Teks yang disulitkan telah dimanipulasi."
 
-#: kgpginterface.cpp:1348 kgpginterface.cpp:2907
+#: kgpginterface.cpp:1348 kgpginterface.cpp:3000
 #, fuzzy, qt-format
 #| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2</qt>"
@@ -1357,16 +1357,16 @@ msgstr ""
 "<qt><b>Tandatangan tak bagus</b> dari:<br>%1<br>ID kunci: %2<br><br><b>Teks "
 "rosak.</b></qt>"
 
-#: kgpginterface.cpp:1363 kgpginterface.cpp:1385 kgpginterface.cpp:2904
-#: kgpginterface.cpp:2931
+#: kgpginterface.cpp:1363 kgpginterface.cpp:1385 kgpginterface.cpp:2997
+#: kgpginterface.cpp:3024
 msgid "No signature found."
 msgstr "Tiada tandatangan ditemui."
 
-#: kgpginterface.cpp:1366 kgpginterface.cpp:2919
+#: kgpginterface.cpp:1366 kgpginterface.cpp:3012
 msgid "The signature is valid, but the key is untrusted"
 msgstr "Tandatangan ini sah, tetapi kunci tak dipercayai"
 
-#: kgpginterface.cpp:1369 kgpginterface.cpp:2922
+#: kgpginterface.cpp:1369 kgpginterface.cpp:3015
 msgid "The signature is valid, and the key is ultimately trusted"
 msgstr "Tandatangan adalah sah, dan kunci dipercayai secara mutlak"
 
@@ -1455,22 +1455,22 @@ msgstr ""
 "<b>Masukkan frasa laluan untuk %1</b>:<br>Frasa laluan hendaklah memasukkan "
 "aksara bukan alfaangka dan jujukan rawak"
 
-#: kgpginterface.cpp:2818
+#: kgpginterface.cpp:2911
 #, qt-format
 msgid "The signature file %1 was successfully created."
 msgstr "Fail tandatangan %1 berjaya dicipta."
 
-#: kgpginterface.cpp:2821
+#: kgpginterface.cpp:2914
 msgid "Bad passphrase, signature was not created."
 msgstr "Frasa laluan tidak bagus, tandatangan tidak dicipta."
 
-#: kgpginterface.cpp:2848
+#: kgpginterface.cpp:2941
 #, fuzzy, qt-format
 #| msgid "<b>Bad passphrase</b>. you have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. you have %1 tries left.</p>"
 msgstr "<b>Frasa laluan tidak bagus</b>. anda mempunyai %1 cubaan lagi.<br>"
 
-#: kgpginterface.cpp:2910
+#: kgpginterface.cpp:3003
 #, fuzzy, qt-format
 msgid ""
 "<qt><b>BAD signature</b> from:<br /> %1<br />Key id: %2<br /><br /><b>The "
@@ -1479,7 +1479,7 @@ msgstr ""
 "<qt><b>Tandatangan TIDAK BAGUS</b> dari:<br> %1<br>Id kunci: %"
 "2<br><br><b>Fail rosak!</b></qt>"
 
-#: kgpginterface.cpp:2937 kgpgview.cpp:399
+#: kgpginterface.cpp:3030 kgpgview.cpp:399
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -1491,11 +1491,11 @@ msgstr ""
 "<qt><b>Tandatangan hilang:</b><br>Id kunci: %1<br><br>Anda ingin import "
 "kunci ini dari pelayan kunci?</qt>"
 
-#: kgpginterface.cpp:3022
+#: kgpginterface.cpp:3115
 msgid "Creation of the revocation certificate failed..."
 msgstr "Penciptaan sijil pembatalan gagal..."
 
-#: kgpginterface.cpp:3057
+#: kgpginterface.cpp:3150
 #, fuzzy, qt-format
 #| msgid "<qt>%1 Enter passphrase for <b>%2</b>:</qt>"
 msgid "<qt>Enter passphrase for <b>%1</b>:</qt>"
