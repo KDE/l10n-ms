@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-07 05:34+0200\n"
+"POT-Creation-Date: 2007-09-10 05:33+0200\n"
 "PO-Revision-Date: 2006-12-24 15:39+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -248,7 +248,7 @@ msgid "Invisible"
 msgstr "Ghaib"
 
 #: libkopete/kopeteonlinestatus.cpp:122 libkopete/kopetemetacontact.cpp:473
-#: libkopete/kopeteidentity.cpp:128
+#: libkopete/kopeteidentity.cpp:128 kopete/kopetewindow.cpp:310
 #: kopete/identity/identitystatuswidget.cpp:151
 #: plugins/statistics/statisticscontact.cpp:262
 #: plugins/statistics/statisticsdialog.cpp:354 protocols/qq/qqprotocol.cpp:39
@@ -574,12 +574,12 @@ msgstr "Anda."
 msgid "Command Error"
 msgstr "Ralat Tidak Diketahui"
 
-#: libkopete/kopeteawayaction.cpp:75 kopete/kopetewindow.cpp:1029
+#: libkopete/kopeteawayaction.cpp:75 kopete/kopetewindow.cpp:1013
 #, fuzzy
 msgid "No Message"
 msgstr "Mesej Init"
 
-#: libkopete/kopeteawayaction.cpp:76 kopete/kopetewindow.cpp:1023
+#: libkopete/kopeteawayaction.cpp:76 kopete/kopetewindow.cpp:1007
 #, fuzzy
 msgid "New Message..."
 msgstr "Mesej Baru:"
@@ -987,18 +987,22 @@ msgstr "[K] Sambungan AP: "
 msgid "Remove"
 msgstr "&Buang"
 
-#: libkopete/kopetecontact.cpp:555
-#, qt-format
-msgctxt "@label:textbox display name"
-msgid "<b>DISPLAY NAME</b><br /><img src=\"%2\">&nbsp;CONTACT STATUS"
+#: libkopete/kopetecontact.cpp:556
+#, fuzzy, qt-format
+msgctxt "@label:textbox %3 is contact-display-name, %1 is its status"
+msgid "<b><nobr>%3</nobr></b><br /><img src=\"%2\">&nbsp;%1"
 msgstr ""
+"<b> NAMA</b><br><img src=\"%2\">&nbsp;\n"
+"<b><nobr></nobr></b><br><img src=\"%2\">&nbsp;"
 
-#: libkopete/kopetecontact.cpp:562
-#, qt-format
-msgctxt "@label:textbox display name"
-msgid ""
-"<b>DISPLAY NAME</b> (CONTACT ID)<br /><img src=\"%2\">&nbsp;CONTACT STATUS"
+#: libkopete/kopetecontact.cpp:563
+#, fuzzy, qt-format
+msgctxt ""
+"@label:textbox %4 is contact-display-name, %3 is contact-id, %1 is its status"
+msgid "<nobr><b>%4</b> (%3)</nobr><br /><img src=\"%2\">&nbsp;%1"
 msgstr ""
+"<b> NAMA</b> ID<br><img src=\"%2\">&nbsp;\n"
+"<nobr><b></b></nobr><br><img src=\"%2\">&nbsp;"
 
 #: libkopete/kopetecontact.cpp:581
 #, fuzzy, qt-format
@@ -1032,10 +1036,13 @@ msgstr ""
 "<br><b> Mesej</b>&nbsp;\n"
 "<br><b>&nbsp; Mesej</b>&nbsp;"
 
-#: libkopete/kopetecontact.cpp:645
-msgctxt "@label:textbox property label"
-msgid "<br /><b>PROPERTY LABEL:</b>&nbsp;PROPERTY VALUE"
+#: libkopete/kopetecontact.cpp:646
+#, fuzzy, qt-format
+msgctxt "@label:textbox property label %2 is name, %1 is value"
+msgid "<br /><nobr><b>%2:</b></nobr>&nbsp;%1"
 msgstr ""
+"<b> NAMA</b><br><img src=\"%2\">&nbsp;\n"
+"<b><nobr></nobr></b><br><img src=\"%2\">&nbsp;"
 
 #: libkopete/kopetecontact.cpp:669
 #, qt-format
@@ -1120,7 +1127,7 @@ msgstr "Dilaksana semenjak:"
 msgid "Last Seen"
 msgstr "Terakhir Dilihat"
 
-#: libkopete/kopeteglobal.cpp:153 kopete/kopetewindow.cpp:1006
+#: libkopete/kopeteglobal.cpp:153 kopete/kopetewindow.cpp:990
 #: protocols/meanwhile/meanwhileprotocol.cpp:62
 #, fuzzy
 msgid "Status Message"
@@ -1233,17 +1240,6 @@ msgstr "Papar mesej ini"
 #, fuzzy
 msgid "&Add Contact"
 msgstr "[K] Sambungan AP: "
-
-#. i18n: tag string
-#. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 112
-#: kopete/kopetewindow.cpp:310 rc.cpp:3192 protocols/qq/qqprotocol.cpp:39
-#: protocols/gadu/gaduprotocol.cpp:60
-#: protocols/oscar/aim/aimstatusmanager.cpp:67
-#: protocols/oscar/icq/icqstatusmanager.cpp:74
-#: protocols/groupwise/gwprotocol.cpp:52
-#, fuzzy
-msgid "O&ffline"
-msgstr "LuarTalian"
 
 #: kopete/kopetewindow.cpp:315
 #, fuzzy
@@ -1363,19 +1359,19 @@ msgstr "atau"
 msgid "Set Away/Back"
 msgstr "Belakang"
 
-#: kopete/kopetewindow.cpp:677
+#: kopete/kopetewindow.cpp:661
 #, fuzzy
 msgid ""
 "<qt>Closing the main window will keep Kopete running in the system tray. Use "
 "'Quit' from the 'File' menu to quit the application.</qt>"
 msgstr "<qt> utama dalam Guna Keluar Fail</qt>"
 
-#: kopete/kopetewindow.cpp:679
+#: kopete/kopetewindow.cpp:663
 #, fuzzy
 msgid "Docking in System Tray"
 msgstr "Aplet Amaran Dulang Sistem"
 
-#: kopete/kopetewindow.cpp:841
+#: kopete/kopetewindow.cpp:825
 #, fuzzy, qt-format
 msgctxt ""
 "Account tooltip information: <nobr>ICON <b>PROTOCOL:</b> NAME (<i>STATUS</i>)"
@@ -1388,12 +1384,12 @@ msgstr ""
 "<tr><td><img src=\"kopete-account-icon:%3:%4\">&nbsp;<b></b>&nbsp;</td><td "
 "align=\"right\"></td></tr>"
 
-#: kopete/kopetewindow.cpp:1012
+#: kopete/kopetewindow.cpp:996
 #, fuzzy
 msgid "Add "
 msgstr "_Tambah"
 
-#: kopete/kopetewindow.cpp:1087
+#: kopete/kopetewindow.cpp:1071
 #: kopete/contactlist/kopetecontactlistview.cpp:1772
 #, fuzzy
 msgid "Add Contact"
@@ -2628,114 +2624,118 @@ msgstr "Chat"
 msgid "<qt><i>%1</i> is now %2.</qt>"
 msgstr "Pelayan VNC kini terlaksana."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:223
-#: kopete/chatwindow/kopeteemailwindow.cpp:501
-#: kopete/chatwindow/kopeteemailwindow.cpp:519
+#: kopete/chatwindow/kopetechatwindow.cpp:225
+#, fuzzy
+#| msgid "Send"
+msgctxt "@action:button"
 msgid "Send"
 msgstr "Hantar"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:234
+#: kopete/chatwindow/kopetechatwindow.cpp:236
+#, fuzzy
+#| msgid "Ready."
+msgctxt "@info:status"
 msgid "Ready."
 msgstr "Sedia."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:340
+#: kopete/chatwindow/kopetechatwindow.cpp:339
 #: kopete/chatwindow/kopeteemailwindow.cpp:225
 #, fuzzy
 msgid "&Send Message"
 msgstr "Mesej Init"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:350
+#: kopete/chatwindow/kopetechatwindow.cpp:349
 #, fuzzy
 msgid "Close All Chats"
 msgstr "Tutup semua pad"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:355
+#: kopete/chatwindow/kopetechatwindow.cpp:354
 #, fuzzy
 msgid "&Activate Next Tab"
 msgstr "Gerak tab kiri"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:361
+#: kopete/chatwindow/kopetechatwindow.cpp:360
 #, fuzzy
 msgid "&Activate Previous Tab"
 msgstr "Gerak tab kiri"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:367
+#: kopete/chatwindow/kopetechatwindow.cpp:366
 #, fuzzy
 msgid "Nic&k Completion"
 msgstr "Penyiapan Eksport NFS"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:372
+#: kopete/chatwindow/kopetechatwindow.cpp:371
 #, fuzzy
 msgid "&Detach Chat"
 msgstr "NZ-CHAT"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:377
+#: kopete/chatwindow/kopetechatwindow.cpp:376
 #, fuzzy
 msgid "&Move Tab to Window"
 msgstr "Pindah ke skrin sebelumnya"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:384
+#: kopete/chatwindow/kopetechatwindow.cpp:383
 #, fuzzy
 msgid "&Tab Placement"
 msgstr "Tutup Tab"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:396
+#: kopete/chatwindow/kopetechatwindow.cpp:395
 #, fuzzy
 msgid "Set Default &Font..."
 msgstr "/Tetapkan sebagai _default"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:400
+#: kopete/chatwindow/kopetechatwindow.cpp:399
 #, fuzzy
 msgid "Set Default Text &Color..."
 msgstr "Tetapkan pilihan direktori default"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:404
+#: kopete/chatwindow/kopetechatwindow.cpp:403
 #: kopete/chatwindow/kopeteemailwindow.cpp:246
 #, fuzzy
 msgid "Set &Background Color..."
 msgstr "Tetap Warna Latarbelakang"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:408
+#: kopete/chatwindow/kopetechatwindow.cpp:407
 #, fuzzy
 msgid "Previous History"
 msgstr "Buang Sejarah"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:413
+#: kopete/chatwindow/kopetechatwindow.cpp:412
 #, fuzzy
 msgid "Next History"
 msgstr "Buang Sejarah"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:425
+#: kopete/chatwindow/kopetechatwindow.cpp:424
 #, fuzzy
 msgid "Place to Left of Chat Area"
 msgstr "Kiri"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:429
+#: kopete/chatwindow/kopetechatwindow.cpp:428
 #, fuzzy
 msgid "Place to Right of Chat Area"
 msgstr "Kanan"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:433
+#: kopete/chatwindow/kopetechatwindow.cpp:432
 #, fuzzy
 msgid "Show"
 msgstr "Papar _Bantuan"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:435
+#: kopete/chatwindow/kopetechatwindow.cpp:434
 #, fuzzy
 msgid "Hide"
 msgstr "Sembunyi _Bantuan"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:438
+#: kopete/chatwindow/kopetechatwindow.cpp:437
 #, fuzzy
 msgid "Automatic Spell Checking"
 msgstr "Semakan ejaan gagal: %s"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:448
+#: kopete/chatwindow/kopetechatwindow.cpp:447
 #, fuzzy
 msgid "Co&ntacts"
 msgstr "Pe_ngawal Domain Winbind"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:472
+#: kopete/chatwindow/kopetechatwindow.cpp:471
 #: kopete/chatwindow/kopeteemailwindow.cpp:274
 #, fuzzy
 msgid "Toolbar Animation"
@@ -2743,45 +2743,46 @@ msgstr "Animasi ANIM"
 
 #: kopete/chatwindow/kopetechatwindow.cpp:626
 #, fuzzy
+msgctxt "@info:tooltip"
 msgid "Close the current tab"
 msgstr "CLOSE, Tutup tetingkap/tab semasa"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1036
+#: kopete/chatwindow/kopetechatwindow.cpp:1033
 #, fuzzy
 msgid "More..."
 msgstr "Lagi"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1052
+#: kopete/chatwindow/kopetechatwindow.cpp:1049
 #, fuzzy
 msgid "Top"
 msgstr "Topik"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1055
+#: kopete/chatwindow/kopetechatwindow.cpp:1052
 msgid "Bottom"
 msgstr ""
 
-#: kopete/chatwindow/chatmessagepart.cpp:244
+#: kopete/chatwindow/chatmessagepart.cpp:243
 #: plugins/history/historydialog.cpp:186
 #, fuzzy
 msgid "Copy Link Address"
 msgstr "tak boleh salin pautan simbolik cyclic %s"
 
-#: kopete/chatwindow/chatmessagepart.cpp:271
+#: kopete/chatwindow/chatmessagepart.cpp:267
 #, fuzzy
 msgid "Save Conversation"
 msgstr "Simpan Tetapan"
 
-#: kopete/chatwindow/chatmessagepart.cpp:313
+#: kopete/chatwindow/chatmessagepart.cpp:309
 #, fuzzy, qt-format
 msgid "<qt>Could not open <b>%1</b> for writing.</qt>"
 msgstr "Fail tidak dapat dibuka untuk ditulis: %s"
 
-#: kopete/chatwindow/chatmessagepart.cpp:314
+#: kopete/chatwindow/chatmessagepart.cpp:310
 #, fuzzy
 msgid "Error While Saving"
 msgstr "Ralat Menyimpan Cekupanskrin"
 
-#: kopete/chatwindow/chatmessagepart.cpp:652
+#: kopete/chatwindow/chatmessagepart.cpp:648
 #, fuzzy
 msgid "User Has Left"
 msgstr "pengguna %s tidak mempunyai UID"
@@ -2828,8 +2829,6 @@ msgstr "Borak Jaringan Setempat"
 #: kopete/chatwindow/kopeteemailwindow.cpp:462
 #: kopete/chatwindow/kopeteemailwindow.cpp:469
 #: kopete/chatwindow/kopeteemailwindow.cpp:476
-#: kopete/chatwindow/chatview.cpp:347 kopete/chatwindow/chatview.cpp:354
-#: kopete/chatwindow/chatview.cpp:361
 #, fuzzy
 msgid "Cl&ose Chat"
 msgstr "Borak Jaringan Setempat"
@@ -2861,6 +2860,11 @@ msgstr "Anda dalam?"
 #, fuzzy
 msgid "Message in Transit"
 msgstr "Mesej dalam beberapa format"
+
+#: kopete/chatwindow/kopeteemailwindow.cpp:501
+#: kopete/chatwindow/kopeteemailwindow.cpp:519
+msgid "Send"
+msgstr "Hantar"
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:508
 msgid "Reply"
@@ -2952,6 +2956,13 @@ msgstr "Justifikasi"
 #, fuzzy
 msgid "Chat members list"
 msgstr "X-Chat: Senarai Saluran (%s)"
+
+#: kopete/chatwindow/chatview.cpp:347 kopete/chatwindow/chatview.cpp:354
+#: kopete/chatwindow/chatview.cpp:361
+#, fuzzy
+msgctxt "@action:button"
+msgid "Close Chat"
+msgstr "Borak Jaringan Setempat"
 
 #: kopete/chatwindow/chatview.cpp:396
 #, fuzzy, qt-format
@@ -10429,6 +10440,17 @@ msgid "Choose this status to disconnect with description entered below."
 msgstr "ustatus uketerangan."
 
 #. i18n: tag string
+#. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 112
+#: rc.cpp:3192 protocols/qq/qqprotocol.cpp:39
+#: protocols/gadu/gaduprotocol.cpp:60
+#: protocols/oscar/aim/aimstatusmanager.cpp:67
+#: protocols/oscar/icq/icqstatusmanager.cpp:74
+#: protocols/groupwise/gwprotocol.cpp:52
+#, fuzzy
+msgid "O&ffline"
+msgstr "LuarTalian"
+
+#. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 132
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 151
@@ -15157,11 +15179,6 @@ msgstr ""
 msgid "Select public key for %1"
 msgstr "tiada kekunci ditakrifkan untuk `%s'"
 
-#: plugins/cryptography/cryptographyselectuserkey.cpp:84
-#: plugins/cryptography/cryptographyguiclient.cpp:143
-msgid "Public Keys Found"
-msgstr ""
-
 #: plugins/cryptography/cryptographypreferences.cpp:48
 #: plugins/cryptography/cryptographypreferences.cpp:49
 msgid "Select the key you want to use to decrypt and sign messages"
@@ -15218,54 +15235,48 @@ msgstr "Kunci awam sijil: "
 msgid "Export checked keys to address book"
 msgstr "Tambah ke Buku Alamat"
 
-#: plugins/cryptography/exportkeys.cpp:71
+#: plugins/cryptography/exportkeys.cpp:69
 #, fuzzy
 msgid "<No meta-contacts with keys to export>"
 msgstr "s Awam Kekunci"
 
-#: plugins/cryptography/cryptographyplugin.cpp:70
+#: plugins/cryptography/kabckeyselector.cpp:29
+#, fuzzy
+msgid "Public Key Found"
+msgstr "Kunci awam sijil: "
+
+#: plugins/cryptography/kabckeyselector.cpp:40
+msgid "Public Keys Found"
+msgstr ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:69
 #, fuzzy
 msgid "&Select Public Key..."
 msgstr "Kunci awam sijil: "
 
-#: plugins/cryptography/cryptographyplugin.cpp:76
+#: plugins/cryptography/cryptographyplugin.cpp:75
 #, fuzzy
-msgid "&Export Public Key To Address Book..."
+msgid "&Export Public Keys To Address Book..."
 msgstr "Tambah ke Buku Alamat"
 
-#: plugins/cryptography/cryptographyplugin.cpp:153
-#: plugins/cryptography/cryptographyplugin.cpp:166
+#: plugins/cryptography/cryptographyplugin.cpp:154
+#: plugins/cryptography/cryptographyplugin.cpp:167
 msgid ""
 "Cryptography plugin refuses to show the most recent message because it "
 "contains an attempt to forge an encrypted or signed message"
 msgstr ""
 
-#: plugins/cryptography/cryptographyplugin.cpp:212
+#: plugins/cryptography/cryptographyplugin.cpp:211
 msgid "You have not chosen an encryption key for one or more recipients"
 msgstr ""
 
-#: plugins/cryptography/cryptographyplugin.cpp:267
-#, fuzzy
-msgid "No key has been set for this meta-contact"
-msgstr "for"
-
-#: plugins/cryptography/cryptographyplugin.cpp:267
-#, fuzzy
-msgid "No Key"
-msgstr "Tiada"
-
-#: plugins/cryptography/cryptographyplugin.cpp:278
-#, fuzzy
-msgid "Export Public Key"
-msgstr "Kunci awam sijil: "
-
-#: plugins/cryptography/cryptographyplugin.cpp:295
+#: plugins/cryptography/cryptographyplugin.cpp:272
 #, fuzzy
 msgid "Enter password for GPG encryption and signing key"
 msgstr "Masukkan kalimat kunci utk %s@%s:"
 
-#: plugins/cryptography/cryptographyplugin.cpp:309
-#: plugins/cryptography/cryptographyguiclient.cpp:164
+#: plugins/cryptography/cryptographyplugin.cpp:288
+#: plugins/cryptography/cryptographyguiclient.cpp:153
 msgid ""
 "This protocol may not work with messages that are encrypted. This is because "
 "encrypted messages are very long, and the server or peer may reject them due "
@@ -15273,8 +15284,8 @@ msgid ""
 "temporarily suspended, turn off encryption."
 msgstr ""
 
-#: plugins/cryptography/cryptographyplugin.cpp:309
-#: plugins/cryptography/cryptographyguiclient.cpp:164
+#: plugins/cryptography/cryptographyplugin.cpp:288
+#: plugins/cryptography/cryptographyguiclient.cpp:153
 #, fuzzy
 msgid "Cryptography Unsupported Protocol"
 msgstr "%s: fail `%s' tidak mempunyai versi disokong %d\n"
@@ -15286,27 +15297,27 @@ msgid ""
 "You have %2 tries left."
 msgstr "Masukkan kalimat kunci utk %s@%s:"
 
-#: plugins/cryptography/cryptographyguiclient.cpp:78
+#: plugins/cryptography/cryptographyguiclient.cpp:56
+#, fuzzy
+msgid "Cryptography"
+msgstr "Papan Alat Mdk"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:80
 #, fuzzy
 msgid "Encrypt Messages"
 msgstr "Buang Mesej"
 
-#: plugins/cryptography/cryptographyguiclient.cpp:80
+#: plugins/cryptography/cryptographyguiclient.cpp:82
 #, fuzzy
 msgid "Sign Messages"
 msgstr "Mesej Init"
 
-#: plugins/cryptography/cryptographyguiclient.cpp:82
+#: plugins/cryptography/cryptographyguiclient.cpp:84
 #, fuzzy
-msgid "Export Contact's Key to Address Book"
+msgid "Export Contacts' Keys to Address Book"
 msgstr "Eksport Alamat Book"
 
-#: plugins/cryptography/cryptographyguiclient.cpp:132
-#, fuzzy
-msgid "Public Key Found"
-msgstr "Kunci awam sijil: "
-
-#: plugins/cryptography/cryptographyguiclient.cpp:174
+#: plugins/cryptography/cryptographyguiclient.cpp:164
 #, qt-format
 msgid ""
 "To send encrypted messages to %2, you still need to select a public key for "
@@ -15318,7 +15329,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: plugins/cryptography/cryptographyguiclient.cpp:174
+#: plugins/cryptography/cryptographyguiclient.cpp:164
 msgid "Missing public key"
 msgid_plural "Missing public keys"
 msgstr[0] ""
@@ -21575,28 +21586,16 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-#~ msgctxt ""
-#~ "@label:textbox <b>DISPLAY NAME</b><br><img src=\"%2\">&nbsp;CONTACT STATUS"
-#~ msgid "<b><nobr>%3</nobr></b><br><img src=\"%2\">&nbsp;%1"
-#~ msgstr ""
-#~ "<b> NAMA</b><br><img src=\"%2\">&nbsp;\n"
-#~ "<b><nobr></nobr></b><br><img src=\"%2\">&nbsp;"
+#~ msgid "No key has been set for this meta-contact"
+#~ msgstr "for"
 
 #, fuzzy
-#~ msgctxt ""
-#~ "@label:textbox <b>DISPLAY NAME</b> (CONTACT ID)<br><img src=\"%2\">&nbsp;"
-#~ "CONTACT STATUS"
-#~ msgid "<nobr><b>%4</b> (%3)</nobr><br><img src=\"%2\">&nbsp;%1"
-#~ msgstr ""
-#~ "<b> NAMA</b> ID<br><img src=\"%2\">&nbsp;\n"
-#~ "<nobr><b></b></nobr><br><img src=\"%2\">&nbsp;"
+#~ msgid "No Key"
+#~ msgstr "Tiada"
 
 #, fuzzy
-#~ msgctxt "@label:textbox <br><b>PROPERTY LABEL:</b>&nbsp;PROPERTY VALUE"
-#~ msgid "<br><nobr><b>%2:</b></nobr>&nbsp;%1"
-#~ msgstr ""
-#~ "<b> NAMA</b><br><img src=\"%2\">&nbsp;\n"
-#~ "<b><nobr></nobr></b><br><img src=\"%2\">&nbsp;"
+#~ msgid "Export Public Key"
+#~ msgstr "Kunci awam sijil: "
 
 #, fuzzy
 #~ msgid "The list of accounts"
@@ -21740,10 +21739,6 @@ msgstr ""
 
 #~ msgid "Unlimited"
 #~ msgstr "Tanpa had"
-
-#, fuzzy
-#~ msgid "Cryptography Plugin"
-#~ msgstr "Papan Alat Mdk"
 
 #~ msgid "&Video"
 #~ msgstr "&Video"
