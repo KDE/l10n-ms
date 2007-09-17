@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-14 05:37+0200\n"
+"POT-Creation-Date: 2007-09-17 05:34+0200\n"
 "PO-Revision-Date: 2007-02-24 13:11+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -690,22 +690,31 @@ msgstr "Tetapkan Katalaluan Root"
 msgid "Unknown"
 msgstr "Entah"
 
-#: fitsimage.cpp:137 fitsimage.cpp:145 fitsimage.cpp:153
+#: fitsimage.cpp:129
+#, fuzzy
+msgid "Loading FITS"
+msgstr "Memuatkan jurupacu %s..."
+
+#: fitsimage.cpp:129
+msgid "Please hold while loading FITS file..."
+msgstr ""
+
+#: fitsimage.cpp:141 fitsimage.cpp:152 fitsimage.cpp:160
 #, fuzzy, qt-format
 msgid "FITS file open error: %1"
 msgstr "Tidak dapat memuatkan fail!"
 
-#: fitsimage.cpp:137 fitsimage.cpp:145 fitsimage.cpp:153 fitsimage.cpp:324
-#: fitsimage.cpp:332 fitsimage.cpp:339
+#: fitsimage.cpp:141 fitsimage.cpp:152 fitsimage.cpp:160 fitsimage.cpp:346
+#: fitsimage.cpp:354 fitsimage.cpp:361
 #, fuzzy
 msgid "FITS Open"
 msgstr "Skala"
 
-#: fitsimage.cpp:324 fitsimage.cpp:332
+#: fitsimage.cpp:346 fitsimage.cpp:354
 msgid "Unable to calculate FITS Min/Max values."
 msgstr ""
 
-#: fitsimage.cpp:339
+#: fitsimage.cpp:361
 msgid "FITS image is saturated and cannot be displayed."
 msgstr ""
 
@@ -1360,7 +1369,7 @@ msgstr "Tiada topik ditetapkan"
 msgid "No set time: Never rises"
 msgstr "Tidak masa  Tidak sekali"
 
-#: kstars.cpp:152 kstarsactions.cpp:687 skymap.cpp:298
+#: kstars.cpp:152 kstarsactions.cpp:689 skymap.cpp:298
 #, fuzzy
 msgid "Stop &Tracking"
 msgstr "Henti $arahan"
@@ -23798,7 +23807,12 @@ msgstr "Laksana Alat"
 msgid "Running script: %1"
 msgstr ""
 
-#: kstarsactions.cpp:610
+#: kstarsactions.cpp:603
+#, fuzzy
+msgid "Script finished."
+msgstr "Nama Pengguna"
+
+#: kstarsactions.cpp:612
 #, fuzzy
 msgid ""
 "You can save printer ink by using the \"Star Chart\" color scheme, which "
@@ -23806,52 +23820,52 @@ msgid ""
 "Chart color scheme for printing?"
 msgstr "Anda Bintang latar belakang seperti hingga hingga Bintang for?"
 
-#: kstarsactions.cpp:615
+#: kstarsactions.cpp:617
 #, fuzzy
 msgid "Switch to Star Chart Colors?"
 msgstr "hingga Bintang Warna?"
 
-#: kstarsactions.cpp:616
+#: kstarsactions.cpp:618
 #, fuzzy
 msgid "Switch Color Scheme"
 msgstr "Kod sumber Scheme"
 
-#: kstarsactions.cpp:616
+#: kstarsactions.cpp:618
 #, fuzzy
 msgid "Do Not Switch"
 msgstr "_Jangan Format"
 
-#: kstarsactions.cpp:671 kstarsinit.cpp:160
+#: kstarsactions.cpp:673 kstarsinit.cpp:160
 msgid "Engage &Tracking"
 msgstr ""
 
-#: kstarsactions.cpp:790
+#: kstarsactions.cpp:792
 #, fuzzy
 msgctxt "The user should enter an angle for the field-of-view of the display"
 msgid "Enter Desired Field-of-View Angle"
 msgstr "for bagi bagi Medan bagi Lihat Sudut"
 
-#: kstarsactions.cpp:790
+#: kstarsactions.cpp:792
 #, fuzzy
 msgid "Enter a field-of-view angle in degrees: "
 msgstr "Enter bagi inci darjah "
 
-#: kstarsactions.cpp:853
+#: kstarsactions.cpp:855
 #, qt-format
 msgid "Projection system: %1"
 msgstr ""
 
-#: kstarsactions.cpp:895
+#: kstarsactions.cpp:897
 #, fuzzy
 msgid "Could not open fov.dat for writing."
 msgstr "Tidak dapat membuka fail stats untuk menulis."
 
-#: kstarsactions.cpp:926 kstarsinit.cpp:526
+#: kstarsactions.cpp:928 kstarsinit.cpp:526
 #, fuzzy, qt-format
 msgid "Could not open file: %1"
 msgstr "tidak dapat membuka fail tetapan `%s': %s"
 
-#: kstarsactions.cpp:931 kstarsinit.cpp:531
+#: kstarsactions.cpp:933 kstarsinit.cpp:531
 #, fuzzy
 msgid "Edit FOV Symbols..."
 msgstr "Tidak dapat Edit"
@@ -25751,13 +25765,13 @@ msgstr "Komen"
 #. i18n: tag string
 #. i18n: file fitsheaderdialog.ui line 77
 #. i18n: tag string
-#. i18n: file fitshistogramui.ui line 343
+#. i18n: file fitshistogramui.ui line 349
 #. i18n: tag string
 #. i18n: file imgsequencedlg.ui line 87
 #. i18n: tag string
 #. i18n: file fitsheaderdialog.ui line 77
 #. i18n: tag string
-#. i18n: file fitshistogramui.ui line 343
+#. i18n: file fitshistogramui.ui line 349
 #. i18n: tag string
 #. i18n: file imgsequencedlg.ui line 87
 #: rc.cpp:324 rc.cpp:360 rc.cpp:444 rc.cpp:2989 rc.cpp:3025 rc.cpp:3094
@@ -25806,28 +25820,28 @@ msgid "Max."
 msgstr "Jumlah Maksimum Sambungan:"
 
 #. i18n: tag string
-#. i18n: file fitshistogramui.ui line 254
+#. i18n: file fitshistogramui.ui line 257
 #: rc.cpp:348 rc.cpp:3013
 #, fuzzy
 msgid "Intensity:"
 msgstr "Keamatan kesan:"
 
 #. i18n: tag string
-#. i18n: file fitshistogramui.ui line 271
+#. i18n: file fitshistogramui.ui line 277
 #: rc.cpp:351 rc.cpp:3016
 #, fuzzy
 msgid "Frequency:"
 msgstr "[C] Saluran frekuensi:"
 
 #. i18n: tag string
-#. i18n: file fitshistogramui.ui line 278
+#. i18n: file fitshistogramui.ui line 284
 #: rc.cpp:354 rc.cpp:3019
 #, fuzzy
 msgid "Min."
 msgstr " minit"
 
 #. i18n: tag string
-#. i18n: file fitshistogramui.ui line 330
+#. i18n: file fitshistogramui.ui line 336
 #: rc.cpp:357 rc.cpp:3022
 msgid "&Apply"
 msgstr ""
@@ -38214,10 +38228,6 @@ msgstr "Tenggelam pada: %1"
 #, fuzzy
 #~ msgid "FITS Viewer"
 #~ msgstr "Pelihat Dokumen"
-
-#, fuzzy
-#~ msgid "Loading FITS..."
-#~ msgstr "Memuatkan jurupacu %s..."
 
 #, fuzzy
 #~ msgid "Not enough memory to load FITS."
