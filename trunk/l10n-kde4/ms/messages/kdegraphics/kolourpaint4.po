@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-30 05:38+0200\n"
+"POT-Creation-Date: 2007-10-02 05:32+0200\n"
 "PO-Revision-Date: 2005-11-06 05:51+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -563,7 +563,7 @@ msgid "Tone Enhance"
 msgstr ""
 
 #: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:123
-#: mainWindow/kpMainWindow_File.cpp:644
+#: mainWindow/kpMainWindow_File.cpp:648
 msgid "Document Properties"
 msgstr ""
 
@@ -905,7 +905,7 @@ msgid "Makes an elliptical or circular selection"
 msgstr "Buat pilihan bujur atau bulatan"
 
 #: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
-#: imagelib/transforms/kpTransformCrop.cpp:371
+#: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:242
 #: mainWindow/kpMainWindow_Edit.cpp:391 mainWindow/kpMainWindow_Image.cpp:293
 msgid "Selection: Create"
 msgstr "Pilihan: Cipta"
@@ -1339,23 +1339,23 @@ msgstr "Saiz semula Imej: Lepaskan semua butang tetikus."
 msgid "Resize Image: Right click to cancel."
 msgstr "Saiz semula Imej: Klik Kanan untuk batal."
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:383
+#: imagelib/transforms/kpTransformAutoCrop.cpp:384
 msgid "Remove Internal B&order"
 msgstr "Buang S&empadan Dalaman"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:385
+#: imagelib/transforms/kpTransformAutoCrop.cpp:386
 msgid "Remove Internal Border"
 msgstr "Buang Sempadan Dalaman"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:390
+#: imagelib/transforms/kpTransformAutoCrop.cpp:391
 msgid "Autocr&op"
 msgstr "Autopo&tong"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:392
+#: imagelib/transforms/kpTransformAutoCrop.cpp:393
 msgid "Autocrop"
 msgstr "Autopotong"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:639
+#: imagelib/transforms/kpTransformAutoCrop.cpp:622
 msgid ""
 "KolourPaint cannot remove the selection's internal border as it could not be "
 "located."
@@ -1363,11 +1363,11 @@ msgstr ""
 "KolourPaint tak boleh buang pilihan dalaman sempadan kerana ia tak dapat "
 "ditemui."
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:641
+#: imagelib/transforms/kpTransformAutoCrop.cpp:624
 msgid "Cannot Remove Internal Border"
 msgstr "Tidak Boleh Buang Sempadan Dalaman"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:647
+#: imagelib/transforms/kpTransformAutoCrop.cpp:630
 msgid ""
 "KolourPaint cannot automatically crop the image as its border could not be "
 "located."
@@ -1375,11 +1375,11 @@ msgstr ""
 "KolourPaint tak boleh potong imej secara automatik kerana sempadannya tak "
 "dapat ditemui."
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:649
+#: imagelib/transforms/kpTransformAutoCrop.cpp:632
 msgid "Cannot Autocrop"
 msgstr "Tidak Boleh Auto Potong"
 
-#: imagelib/transforms/kpTransformCrop.cpp:272
+#: imagelib/transforms/kpTransformCrop.cpp:45
 msgid "Set as Image"
 msgstr "Set sebagai Imej"
 
@@ -1832,40 +1832,40 @@ msgstr "Set sebagai &Kertas Dinding (Tengah)"
 msgid "Set as Wallpaper (&Tiled)"
 msgstr "Set sebagai Kertas Dinding (&Dijubin)"
 
-#: mainWindow/kpMainWindow_File.cpp:438
+#: mainWindow/kpMainWindow_File.cpp:442
 msgid "Open Image"
 msgstr "Buka Imej"
 
-#: mainWindow/kpMainWindow_File.cpp:510
+#: mainWindow/kpMainWindow_File.cpp:514
 msgid "Scanning support is not installed."
 msgstr ""
 
-#: mainWindow/kpMainWindow_File.cpp:511
+#: mainWindow/kpMainWindow_File.cpp:515
 msgid "No Scanning Support"
 msgstr ""
 
-#: mainWindow/kpMainWindow_File.cpp:614
+#: mainWindow/kpMainWindow_File.cpp:618
 #, fuzzy
 #| msgid "Could not open \"%1\" - out of graphics memory."
 msgid "Cannot scan - out of graphics memory."
 msgstr "Tidak boleh buka \"%1\"- kehabisan ingatan grafik."
 
-#: mainWindow/kpMainWindow_File.cpp:615
+#: mainWindow/kpMainWindow_File.cpp:619
 #, fuzzy
 #| msgid "Cannot Paste"
 msgid "Cannot Scan"
 msgstr "Tidak Boleh Tampal"
 
-#: mainWindow/kpMainWindow_File.cpp:881
+#: mainWindow/kpMainWindow_File.cpp:885
 msgid "Save Image As"
 msgstr "Simpan Imej Sebagai"
 
-#: mainWindow/kpMainWindow_File.cpp:931
+#: mainWindow/kpMainWindow_File.cpp:935
 #, fuzzy
 msgid "Export"
 msgstr "E&kspot..."
 
-#: mainWindow/kpMainWindow_File.cpp:995
+#: mainWindow/kpMainWindow_File.cpp:999
 #, qt-format
 msgid ""
 "The document \"%1\" has been modified.\n"
@@ -1876,7 +1876,7 @@ msgstr ""
 "Muat semula akan menghilangkan semua ubahan semenjak simpanan yang akhir.\n"
 "Anda pasti?"
 
-#: mainWindow/kpMainWindow_File.cpp:1000 mainWindow/kpMainWindow_File.cpp:1010
+#: mainWindow/kpMainWindow_File.cpp:1004 mainWindow/kpMainWindow_File.cpp:1014
 #: mainWindow/kpMainWindow_Colors.cpp:346
 #: mainWindow/kpMainWindow_Colors.cpp:359
 #: mainWindow/kpMainWindow_Colors.cpp:368
@@ -1884,7 +1884,7 @@ msgstr ""
 msgid "&Reload"
 msgstr "Muat &semula"
 
-#: mainWindow/kpMainWindow_File.cpp:1005
+#: mainWindow/kpMainWindow_File.cpp:1009
 #, qt-format
 msgid ""
 "The document \"%1\" has been modified.\n"
@@ -1895,7 +1895,7 @@ msgstr ""
 "Muat semula akan menghilangkan semua ubahan.\n"
 "Anda pasti?"
 
-#: mainWindow/kpMainWindow_File.cpp:1316
+#: mainWindow/kpMainWindow_File.cpp:1320
 msgid ""
 "You must save this image before sending it.\n"
 "Do you want to save it?"
@@ -1903,7 +1903,7 @@ msgstr ""
 "Anda mesti simpan imej ini sebelum menghantarnya.\n"
 "Anda mahu menyimpannya?"
 
-#: mainWindow/kpMainWindow_File.cpp:1359
+#: mainWindow/kpMainWindow_File.cpp:1363
 msgid ""
 "Before this image can be set as the wallpaper, you must save it as a local "
 "file.\n"
@@ -1913,7 +1913,7 @@ msgstr ""
 "sebagai fail setempat.\n"
 "Anda mahu menyimpannya?"
 
-#: mainWindow/kpMainWindow_File.cpp:1365
+#: mainWindow/kpMainWindow_File.cpp:1369
 msgid ""
 "Before this image can be set as the wallpaper, you must save it.\n"
 "Do you want to save it?"
@@ -1921,11 +1921,11 @@ msgstr ""
 "Sebelum imej ini boleh diset sebagai wallpaper, anda mesti menyimpannya.\n"
 "Anda mahu menyimpannya?"
 
-#: mainWindow/kpMainWindow_File.cpp:1439
+#: mainWindow/kpMainWindow_File.cpp:1443
 msgid "Could not change wallpaper."
 msgstr "Tidak boleh ubah wallpaper."
 
-#: mainWindow/kpMainWindow_File.cpp:1474
+#: mainWindow/kpMainWindow_File.cpp:1478
 #, qt-format
 msgid ""
 "The document \"%1\" has been modified.\n"

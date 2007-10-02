@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-01 05:35+0200\n"
+"POT-Creation-Date: 2007-10-02 05:33+0200\n"
 "PO-Revision-Date: 2005-11-17 23:25+0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -218,12 +218,12 @@ msgstr "<p>Anda ingin import fail <b>%1</b> ke dalam gegelang kunci anda?</p>"
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 32
-#: keylistview.cpp:351 kgpginterface.cpp:3096 rc.cpp:451
+#: keylistview.cpp:351 kgpginterface.cpp:3069 rc.cpp:451
 #, fuzzy, no-c-format
 msgid "Import"
 msgstr "&Import"
 
-#: keylistview.cpp:351 kgpginterface.cpp:3096
+#: keylistview.cpp:351 kgpginterface.cpp:3069
 #, fuzzy
 msgid "Do Not Import"
 msgstr "Import Kunci"
@@ -237,7 +237,7 @@ msgstr "Sedia"
 msgid "Loading Keys..."
 msgstr "Memuatkan Kunci..."
 
-#: keylistview.cpp:608 keysmanager.cpp:1722
+#: keylistview.cpp:608 keysmanager.cpp:1733
 #, fuzzy, qt-format
 #| msgid "%1 subkey"
 msgid "%1 key"
@@ -382,7 +382,7 @@ msgid_plural "<qt><b>%1 keys imported:</b><br/></qt>"
 msgstr[0] "_n: <qt><b>Satu kunci diimport:</b><br></qt>"
 msgstr[1] "<qt><b>%1 kunci diimport:</b><br></qt>"
 
-#: keyservers.cpp:213 kgpginterface.cpp:2353
+#: keyservers.cpp:213 kgpginterface.cpp:2326
 msgid ""
 "No key imported... \n"
 "Check detailed log for more infos"
@@ -774,11 +774,16 @@ msgid "ID: "
 msgstr "ID: "
 
 #: keysmanager.cpp:1442
+#, fuzzy
+#| msgid ""
+#| "Secret keys SHOULD NOT be saved in an unsafe place.\n"
+#| "If someone else can access this file, encryption with this key will be "
+#| "compromised!\n"
+#| "Continue key export?"
 msgid ""
-"Secret keys SHOULD NOT be saved in an unsafe place.\n"
-"If someone else can access this file, encryption with this key will be "
-"compromised!\n"
-"Continue key export?"
+"<qt>Secret keys <b>should not</b> be saved in an unsafe place.<br/>If "
+"someone else can access this file, encryption with this key will be "
+"compromised!<br/>Continue key export?</qt>"
 msgstr ""
 "Kunci rahsia TIDAK PATUT disimpan di tempat yang tak selamat.\n"
 "Jika orang lain boleh mengakses fail ini, penyulitan dengan kunci ini akan "
@@ -790,15 +795,18 @@ msgid "Export PRIVATE KEY As"
 msgstr "Eksport KUNCI PERSENDIRIAN Sebagai"
 
 #: keysmanager.cpp:1468
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "Your PRIVATE key \"%1\" was successfully exported.\n"
+#| "DO NOT leave it in an insecure place."
 msgid ""
-"Your PRIVATE key \"%1\" was successfully exported.\n"
-"DO NOT leave it in an insecure place."
+"<qt>Your <b>private</b> key \"%1\" was successfully exported to<br/>%2 .<br/"
+"><b>Do not</b> leave it in an insecure place.</qt>"
 msgstr ""
 "Kunci PERSENDIRIAN anda \"%1\" berjaya dieksport.\n"
 "JANGAN biarkan ia di tempat tak selamat."
 
-#: keysmanager.cpp:1470
+#: keysmanager.cpp:1471
 msgid ""
 "Your secret key could not be exported.\n"
 "Check the key."
@@ -806,20 +814,20 @@ msgstr ""
 "Kunci rahsia anda tidak boleh dieksport.\n"
 "Semak kunci."
 
-#: keysmanager.cpp:1510
+#: keysmanager.cpp:1511
 msgid "Public Key Export"
 msgstr "Eksport Kunci Awam"
 
-#: keysmanager.cpp:1527 kgpgeditor.cpp:464
+#: keysmanager.cpp:1528 kgpgeditor.cpp:464
 msgid "Save File"
 msgstr "Simpan Fail"
 
-#: keysmanager.cpp:1572
+#: keysmanager.cpp:1573
 #, qt-format
 msgid "Your public key \"%1\" was successfully exported\n"
 msgstr "Kunci awam anda \"%1\" berjaya dieksport\n"
 
-#: keysmanager.cpp:1574
+#: keysmanager.cpp:1575
 msgid ""
 "Your public key could not be exported\n"
 "Check the key."
@@ -827,7 +835,7 @@ msgstr ""
 "Kunci awam anda tidak dapat dieksport\n"
 "Semak kunci."
 
-#: keysmanager.cpp:1655
+#: keysmanager.cpp:1666
 msgid ""
 "This key is an orphaned secret key (secret key without public key.) It is "
 "currently not usable.\n"
@@ -837,26 +845,26 @@ msgstr ""
 "Kunci ini adalah kunci rahsia yatim (kunci rahsia tanpa kunci awam.) Masa "
 "ini ia tidak boleh diguna.\\nAnda ingin menjana semula kunci rahsia?"
 
-#: keysmanager.cpp:1656
+#: keysmanager.cpp:1667
 #, fuzzy
 msgid "Generate"
 msgstr "Jana Pasangan Kunci "
 
-#: keysmanager.cpp:1656
+#: keysmanager.cpp:1667
 msgid "Do Not Generate"
 msgstr ""
 
-#: keysmanager.cpp:1692
+#: keysmanager.cpp:1703
 #, qt-format
 msgid "<qt>Are you sure you want to delete group <b>%1</b> ?</qt>"
 msgstr "<qt>Anda pasti ingin hapuskan kumpulan <b>%1</b> ?</qt>"
 
-#: keysmanager.cpp:1692 keysmanager.cpp:2220
+#: keysmanager.cpp:1703 keysmanager.cpp:2231
 #, fuzzy
 msgid "Delete"
 msgstr "&Hapuskan Kunci"
 
-#: keysmanager.cpp:1766
+#: keysmanager.cpp:1777
 msgid ""
 "<qt>You cannot create a group containing signatures, subkeys or other groups."
 "</qt>"
@@ -864,15 +872,15 @@ msgstr ""
 "<qt>Anda tidak boleh cipta kumpulan yang mengandungi tandatangan, subkunci "
 "atau kumpulan lain.</qt>"
 
-#: keysmanager.cpp:1770
+#: keysmanager.cpp:1781
 msgid "Create New Group"
 msgstr "Cipta Kumpulan Baru"
 
-#: keysmanager.cpp:1770
+#: keysmanager.cpp:1781
 msgid "Enter new group name:"
 msgstr "Masukkan nama kumpulan baru:"
 
-#: keysmanager.cpp:1776
+#: keysmanager.cpp:1787
 msgid ""
 "Following keys are not valid or not trusted and will not be added to the "
 "group:"
@@ -880,7 +888,7 @@ msgstr ""
 "Kunci yang berikut tidak sah atau tidak dipercayai dan tidak akan ditambah "
 "ke dalam kumpulan:"
 
-#: keysmanager.cpp:1792
+#: keysmanager.cpp:1803
 #, qt-format
 msgid ""
 "<qt>No valid or trusted key was selected. The group <b>%1</b> will not be "
@@ -889,7 +897,7 @@ msgstr ""
 "<qt>Tiada kunci yang sah atau dipercayai dipilih. Kumpulan <b>%1</b> tidak "
 "akan dicipta.</qt>"
 
-#: keysmanager.cpp:1823
+#: keysmanager.cpp:1834
 msgid ""
 "Following keys are in the group but are not valid or not in your keyring. "
 "They will be removed from the group."
@@ -897,15 +905,15 @@ msgstr ""
 "Kunci yang berikut adalah dalam kumpulan tetapi tidak sah atau tiada dalam "
 "penguncian anda. Ia akan dibuang dari kumpulan."
 
-#: keysmanager.cpp:1833
+#: keysmanager.cpp:1844
 msgid "Group Properties"
 msgstr "Ciri Kumpulan"
 
-#: keysmanager.cpp:1903
+#: keysmanager.cpp:1914
 msgid "You can only sign primary keys. Please check your selection."
 msgstr "Anda hanya boleh tandatangan kunci primer. Semak pilihan anda."
 
-#: keysmanager.cpp:1918
+#: keysmanager.cpp:1929
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>You are about to sign key:<br><br>%1<br>ID: %2<br>Fingerprint: <br><b>"
@@ -923,7 +931,7 @@ msgstr ""
 "dengan pemilik kunci untuk memastikan seseorang tidak cuba menceroboh "
 "komunikasi anda</qt>"
 
-#: keysmanager.cpp:1935
+#: keysmanager.cpp:1946
 #, fuzzy
 #| msgid ""
 #| "<qt>You are about to sign the following keys in one pass.<br><b>If you "
@@ -938,29 +946,29 @@ msgstr ""
 "anda belum semak dengan teliti semua cap jari, sekuriti komunikasi boleh "
 "dikompromi.</b></qt>"
 
-#: keysmanager.cpp:1979
+#: keysmanager.cpp:1990
 #, fuzzy, qt-format
 #| msgid "<qt>Bad passphrase, key <b>%1</b> not signed.</qt>"
 msgid "<qt>Bad passphrase, key <b>%1 (%2)</b> not signed.</qt>"
 msgstr "<qt>Kunci, frasa laluan <b>%1</b> tidak ditandatangani.</qt>"
 
-#: keysmanager.cpp:1982
+#: keysmanager.cpp:1993
 #, fuzzy, qt-format
 msgid "<qt>The key <b>%1 (%2)</b> is already signed.</qt>"
 msgstr "<qt>Kunci, frasa laluan <b>%1</b> tidak ditandatangani.</qt>"
 
-#: keysmanager.cpp:2023
+#: keysmanager.cpp:2034
 #, fuzzy
 msgid "All signatures for this key are already in your keyring"
 msgid_plural "All signatures for this keys are already in your keyring"
 msgstr[0] "Semua tandatangan untuk kunci ini sudah ada dalam gelang kunci anda"
 msgstr[1] "Semua tandatangan untuk kunci ini sudah ada dalam gelang kunci anda"
 
-#: keysmanager.cpp:2130
+#: keysmanager.cpp:2141
 msgid "Edit key manually to delete a self-signature."
 msgstr "Edit kunci secara manual untuk hapuskan swatandatangan."
 
-#: keysmanager.cpp:2134
+#: keysmanager.cpp:2145
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>Are you sure you want to delete signature<br><b>%1</b> from key:"
@@ -972,16 +980,16 @@ msgstr ""
 "<qt>Anda pasti ingin hapuskan tandatangan<br><b>%1</b> dari kunci:<br><b>%2</"
 "b>?</qt>"
 
-#: keysmanager.cpp:2156
+#: keysmanager.cpp:2167
 msgid "Requested operation was unsuccessful, please edit the key manually."
 msgstr "Operasi yang diminta tidak berjaya, sila edit kunci secara manual."
 
-#: keysmanager.cpp:2197
+#: keysmanager.cpp:2208
 #, qt-format
 msgid "<qt>Cannot open file <b>%1</b> for printing...</qt>"
 msgstr "<qt>Tidak dapat buka fail <b>%1</b> untuk cetak...</qt>"
 
-#: keysmanager.cpp:2218
+#: keysmanager.cpp:2229
 #, fuzzy, qt-format
 #| msgid ""
 #| "<p>Delete <b>SECRET KEY</b> pair <b>%1</b>?</p>Deleting this key pair "
@@ -995,18 +1003,18 @@ msgstr ""
 "kunci ini tidak akan dapat menyahsulit fail yang disulitkan dengan kunci ini "
 "lagi."
 
-#: keysmanager.cpp:2243
+#: keysmanager.cpp:2254
 #, qt-format
 msgid "Can not delete key <b>%1</b> while it is edited in terminal."
 msgstr ""
 
-#: keysmanager.cpp:2243
+#: keysmanager.cpp:2254
 #, fuzzy
 #| msgid "&Delete Keys"
 msgid "Delete key"
 msgstr "&Hapuskan Kunci"
 
-#: keysmanager.cpp:2279
+#: keysmanager.cpp:2290
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>The following are secret key pairs:<br><b>%1</b>They will not be "
@@ -1018,22 +1026,22 @@ msgstr ""
 "<qt>Yang berikut adalah pasangan kunci rahsia:<br><b>%1</b>Ia tidak akan "
 "dihapuskan.<br></qt>"
 
-#: keysmanager.cpp:2287
+#: keysmanager.cpp:2298
 #, fuzzy, qt-format
 msgid "<qt><b>Delete the following public key?</b></qt>"
 msgid_plural "<qt><b>Delete the following %1 public keys?</b></qt>"
 msgstr[0] "_n: <qt><b>Hapuskan kunci awam yang berikut?</b></qt>"
 msgstr[1] "<qt><b>Hapuskan %1 kunci awam yang berikut?</b></qt>"
 
-#: keysmanager.cpp:2356
+#: keysmanager.cpp:2367
 msgid "Key Import"
 msgstr "Import Kunci"
 
-#: keysmanager.cpp:2363
+#: keysmanager.cpp:2374
 msgid "Open File"
 msgstr "Buka Fail"
 
-#: keysmanager.cpp:2375 keysmanager.cpp:2388
+#: keysmanager.cpp:2386 keysmanager.cpp:2399
 msgid "Importing..."
 msgstr "Mengimport..."
 
@@ -1382,51 +1390,51 @@ msgstr "Buka Fail untuk Tandatangan"
 msgid "Open File to Verify"
 msgstr "Buka Fail untuk Pengesahan"
 
-#: kgpginterface.cpp:387
+#: kgpginterface.cpp:393
 msgid " or "
 msgstr "atau"
 
-#: kgpginterface.cpp:965
+#: kgpginterface.cpp:971
 msgid "Enter passphrase (symmetrical encryption)"
 msgstr "Masukkan frasa laluan (penyulitan simetri)"
 
-#: kgpginterface.cpp:1053 kgpginterface.cpp:1210 kgpginterface.cpp:1804
-#: kgpginterface.cpp:2689 kgpginterface.cpp:3003
+#: kgpginterface.cpp:1059 kgpginterface.cpp:1216 kgpginterface.cpp:1810
+#: kgpginterface.cpp:2662 kgpginterface.cpp:2976
 msgid "[No user id found]"
 msgstr "[Tiada id pengguna ditemui]"
 
-#: kgpginterface.cpp:1057 kgpginterface.cpp:2694
+#: kgpginterface.cpp:1063 kgpginterface.cpp:2667
 #, fuzzy
 #| msgid "<b>No user id found</b>. Trying all secret keys.<br>"
 msgid "<p><b>No user id found</b>. Trying all secret keys.</p>"
 msgstr "<b>Tiada id pengguna ditemui</b>. Mencuba semua kunci rahsia.<br>"
 
-#: kgpginterface.cpp:1059 kgpginterface.cpp:1214 kgpginterface.cpp:1552
-#: kgpginterface.cpp:1695 kgpginterface.cpp:1811 kgpginterface.cpp:2091
-#: kgpginterface.cpp:2181 kgpginterface.cpp:2434 kgpginterface.cpp:2696
+#: kgpginterface.cpp:1065 kgpginterface.cpp:1220 kgpginterface.cpp:1558
+#: kgpginterface.cpp:1701 kgpginterface.cpp:1817 kgpginterface.cpp:2064
+#: kgpginterface.cpp:2154 kgpginterface.cpp:2407 kgpginterface.cpp:2669
 #, fuzzy, qt-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
 msgstr "<b>Frasa laluan tidak bagus</b>. Anda ada %1 cubaan lagi.<br>"
 
-#: kgpginterface.cpp:1060 kgpginterface.cpp:1215 kgpginterface.cpp:1553
-#: kgpginterface.cpp:1696 kgpginterface.cpp:2092 kgpginterface.cpp:2182
-#: kgpginterface.cpp:2435 kgpginterface.cpp:2697 kgpginterface.cpp:3008
+#: kgpginterface.cpp:1066 kgpginterface.cpp:1221 kgpginterface.cpp:1559
+#: kgpginterface.cpp:1702 kgpginterface.cpp:2065 kgpginterface.cpp:2155
+#: kgpginterface.cpp:2408 kgpginterface.cpp:2670 kgpginterface.cpp:2981
 #, qt-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Masukkan frasa laluan untuk <b>%1</b>"
 
-#: kgpginterface.cpp:1131
+#: kgpginterface.cpp:1137
 msgid "Bad MDC detected. The encrypted text has been manipulated."
 msgstr "MDC tidak bagus dikesan. Teks yang disulitkan telah dimanipulasi."
 
-#: kgpginterface.cpp:1311 kgpginterface.cpp:3066
+#: kgpginterface.cpp:1317 kgpginterface.cpp:3039
 #, fuzzy, qt-format
 #| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2</qt>"
 msgstr "<qt>Tandatangan bagus dari:<br><b>%1</b><br>ID kunci: %2</qt>"
 
-#: kgpginterface.cpp:1316
+#: kgpginterface.cpp:1322
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt><b>Bad signature</b> from:<br>%1<br>Key ID: %2<br><br><b>Text is "
@@ -1438,24 +1446,24 @@ msgstr ""
 "<qt><b>Tandatangan tak bagus</b> dari:<br>%1<br>ID kunci: %2<br><br><b>Teks "
 "rosak.</b></qt>"
 
-#: kgpginterface.cpp:1326 kgpginterface.cpp:1348 kgpginterface.cpp:3063
-#: kgpginterface.cpp:3090
+#: kgpginterface.cpp:1332 kgpginterface.cpp:1354 kgpginterface.cpp:3036
+#: kgpginterface.cpp:3063
 msgid "No signature found."
 msgstr "Tiada tandatangan ditemui."
 
-#: kgpginterface.cpp:1329 kgpginterface.cpp:3078
+#: kgpginterface.cpp:1335 kgpginterface.cpp:3051
 msgid "The signature is valid, but the key is untrusted"
 msgstr "Tandatangan ini sah, tetapi kunci tak dipercayai"
 
-#: kgpginterface.cpp:1332 kgpginterface.cpp:3081
+#: kgpginterface.cpp:1338 kgpginterface.cpp:3054
 msgid "The signature is valid, and the key is ultimately trusted"
 msgstr "Tandatangan adalah sah, dan kunci dipercayai secara mutlak"
 
-#: kgpginterface.cpp:1422
+#: kgpginterface.cpp:1428
 msgid "Enter passphrase for your file (symmetrical encryption):"
 msgstr "Masukkan frasa laluan untuk fail anda (penyulitan simetri):"
 
-#: kgpginterface.cpp:1596
+#: kgpginterface.cpp:1602
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>Signing key <b>%1</b> with key <b>%2</b> failed.<br>Do you want to "
@@ -1467,7 +1475,7 @@ msgstr ""
 "<qt>Menandatangan kunci <b>%1</b> dengan kunci <b>%2</b> gagal.<br>Anda "
 "ingin cuba menandatangan kunci dalam mod konsol?</qt>"
 
-#: kgpginterface.cpp:1739
+#: kgpginterface.cpp:1745
 #, fuzzy
 #| msgid ""
 #| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing the "
@@ -1479,12 +1487,12 @@ msgstr ""
 "<qt><b>Mengubah peluputan gagal.</b><br>Anda ingin cuba ubah peluputan kunci "
 "dalam mod konsol?</qt>"
 
-#: kgpginterface.cpp:1812
+#: kgpginterface.cpp:1818
 #, fuzzy, qt-format
 msgid "Enter old passphrase for <b>%1</b>"
 msgstr "Masukkan frasa laluan untuk <b>%1</b>"
 
-#: kgpginterface.cpp:1825
+#: kgpginterface.cpp:1831
 #, fuzzy, qt-format
 msgid ""
 "<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
@@ -1493,110 +1501,110 @@ msgstr ""
 "<qt>Masukkan frasa laluan baru bagi <b>%1</b><br>Jika anda lupa frasa laluan "
 "ini, semua fail dan mesej anda yang disulitkan akan hilang!<br></qt>"
 
-#: kgpginterface.cpp:2077
+#: kgpginterface.cpp:2050
 msgid "This image is very large. Use it anyway?"
 msgstr "Imej ini sangat besar. Gunakan juga?"
 
-#: kgpginterface.cpp:2077
+#: kgpginterface.cpp:2050
 msgid "Use Anyway"
 msgstr ""
 
-#: kgpginterface.cpp:2077
+#: kgpginterface.cpp:2050
 msgid "Do Not Use"
 msgstr ""
 
-#: kgpginterface.cpp:2311
+#: kgpginterface.cpp:2284
 #, fuzzy, qt-format
 msgid "<qt>%1 key processed.</qt>"
 msgid_plural "<qt>%1 keys processed.</qt>"
 msgstr[0] "_n: <qt>%1 kunci diproses.<br></qt>"
 msgstr[1] "<qt>%1 kunci diproses.<br></qt>"
 
-#: kgpginterface.cpp:2314
+#: kgpginterface.cpp:2287
 #, fuzzy, qt-format
 msgid "<qt>One key without ID.</qt>"
 msgid_plural "<qt>%1 keys without ID.</qt>"
 msgstr[0] "_n: <qt>Satu kunci tanpa ID.<br></qt>"
 msgstr[1] "<qt>%1 kunci tanpa ID.<br></qt>"
 
-#: kgpginterface.cpp:2316
+#: kgpginterface.cpp:2289
 #, fuzzy, qt-format
 msgid "<qt><b>One key imported:</b></qt>"
 msgid_plural "<qt><b>%1 keys imported:</b></qt>"
 msgstr[0] "_n: <qt><b>Satu kunci diimport:</b><br></qt>"
 msgstr[1] "<qt><b>%1 kunci diimport:</b><br></qt>"
 
-#: kgpginterface.cpp:2318
+#: kgpginterface.cpp:2291
 #, fuzzy, qt-format
 msgid "<qt>One RSA key imported.</qt>"
 msgid_plural "<qt>%1 RSA keys imported.</qt>"
 msgstr[0] "_n: <qt>Satu kunci RSA diimport.<br></qt>"
 msgstr[1] "<qt>%1 kunci RSA diimport.<br></qt>"
 
-#: kgpginterface.cpp:2320
+#: kgpginterface.cpp:2293
 #, fuzzy, qt-format
 msgid "<qt>One key unchanged.</qt>"
 msgid_plural "<qt>%1 keys unchanged.</qt>"
 msgstr[0] "_n: <qt>Satu kunci tidak berubah.<br></qt>"
 msgstr[1] "<qt>%1 kunci tidak berubah.<br></qt>"
 
-#: kgpginterface.cpp:2322
+#: kgpginterface.cpp:2295
 #, fuzzy, qt-format
 msgid "<qt>One user ID imported.</qt>"
 msgid_plural "<qt>%1 user IDs imported.</qt>"
 msgstr[0] "_n: <qt>Satu ID pengguna diimport.<br></qt>"
 msgstr[1] "<qt>%1 ID pengguna diimport.<br></qt>"
 
-#: kgpginterface.cpp:2324
+#: kgpginterface.cpp:2297
 #, fuzzy, qt-format
 msgid "<qt>One subkey imported.</qt>"
 msgid_plural "<qt>%1 subkeys imported.</qt>"
 msgstr[0] "_n: <qt>Satu subkunci diimport.<br></qt>"
 msgstr[1] "<qt>%1 subkunci diimport.<br></qt>"
 
-#: kgpginterface.cpp:2326
+#: kgpginterface.cpp:2299
 #, fuzzy, qt-format
 msgid "<qt>One signature imported.</qt>"
 msgid_plural "<qt>%1 signatures imported.</qt>"
 msgstr[0] "_n: <qt>Satu tandatangan diimport.<br></qt>"
 msgstr[1] "<qt>%1 tandatangan diimport.<br></qt>"
 
-#: kgpginterface.cpp:2329
+#: kgpginterface.cpp:2302
 #, fuzzy, qt-format
 msgid "<qt>One revocation certificate imported.</qt>"
 msgid_plural "<qt>%1 revocation certificates imported.</qt>"
 msgstr[0] "_n: <qt>Satu sijil pembatalan diimport.<br></qt>"
 msgstr[1] "<qt>%1 sijil pembatalan diimport.<br></qt>"
 
-#: kgpginterface.cpp:2334
+#: kgpginterface.cpp:2307
 #, fuzzy, qt-format
 msgid "<qt>One secret key processed.</qt>"
 msgid_plural "<qt>%1 secret keys processed.</qt>"
 msgstr[0] "_n: <qt>Satu kunci rahsia diproses.<br></qt>"
 msgstr[1] "<qt>%1 kunci rahsia diproses.<br></qt>"
 
-#: kgpginterface.cpp:2340
+#: kgpginterface.cpp:2313
 #, fuzzy, qt-format
 msgid "<qt><b>One secret key imported.</b></qt>"
 msgid_plural "<qt><b>%1 secret keys imported.</b></qt>"
 msgstr[0] "_n: <qt><b>Satu kunci rahsia diimport.</b><br></qt>"
 msgstr[1] "<qt><b>%1 kunci rahsia diimport.</b><br></qt>"
 
-#: kgpginterface.cpp:2342
+#: kgpginterface.cpp:2315
 #, fuzzy, qt-format
 msgid "<qt>One secret key unchanged.</qt>"
 msgid_plural "<qt>%1 secret keys unchanged.</qt>"
 msgstr[0] "_n: <qt>Satu kunci rahsia tidak berubah.<br></qt>"
 msgstr[1] "<qt>%1 kunci rahsia tidak berubah.<br></qt>"
 
-#: kgpginterface.cpp:2344
+#: kgpginterface.cpp:2317
 #, fuzzy, qt-format
 msgid "<qt>One secret key not imported.</qt>"
 msgid_plural "<qt>%1 secret keys not imported.</qt>"
 msgstr[0] "_n: <qt>Satu kunci rahsia tidak diimport.<br></qt>"
 msgstr[1] "<qt>%1 kunci rahsia tidak diimport.<br></qt>"
 
-#: kgpginterface.cpp:2347
+#: kgpginterface.cpp:2320
 #, fuzzy
 #| msgid ""
 #| "<qt><br><b>You have imported a secret key.</b> <br>Please note that "
@@ -1615,7 +1623,7 @@ msgstr ""
 "anda mesti edit kunci tersebut (klik dua kali di atasnya) dan setkan "
 "amanahnya kepada Penuh atau Mutlak.</qt>"
 
-#: kgpginterface.cpp:2586
+#: kgpginterface.cpp:2559
 #, fuzzy, qt-format
 #| msgid ""
 #| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
@@ -1627,22 +1635,22 @@ msgstr ""
 "<b>Masukkan frasa laluan untuk %1</b>:<br>Frasa laluan hendaklah memasukkan "
 "aksara bukan alfaangka dan jujukan rawak"
 
-#: kgpginterface.cpp:2977
+#: kgpginterface.cpp:2950
 #, qt-format
 msgid "The signature file %1 was successfully created."
 msgstr "Fail tandatangan %1 berjaya dicipta."
 
-#: kgpginterface.cpp:2980
+#: kgpginterface.cpp:2953
 msgid "Bad passphrase, signature was not created."
 msgstr "Frasa laluan tidak bagus, tandatangan tidak dicipta."
 
-#: kgpginterface.cpp:3007
+#: kgpginterface.cpp:2980
 #, fuzzy, qt-format
 #| msgid "<b>Bad passphrase</b>. you have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. you have %1 tries left.</p>"
 msgstr "<b>Frasa laluan tidak bagus</b>. anda mempunyai %1 cubaan lagi.<br>"
 
-#: kgpginterface.cpp:3069
+#: kgpginterface.cpp:3042
 #, fuzzy, qt-format
 msgid ""
 "<qt><b>BAD signature</b> from:<br /> %1<br />Key id: %2<br /><br /><b>The "
@@ -1651,7 +1659,7 @@ msgstr ""
 "<qt><b>Tandatangan TIDAK BAGUS</b> dari:<br> %1<br>Id kunci: %"
 "2<br><br><b>Fail rosak!</b></qt>"
 
-#: kgpginterface.cpp:3096 kgpgview.cpp:399
+#: kgpginterface.cpp:3069 kgpgview.cpp:399
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -1663,11 +1671,11 @@ msgstr ""
 "<qt><b>Tandatangan hilang:</b><br>Id kunci: %1<br><br>Anda ingin import "
 "kunci ini dari pelayan kunci?</qt>"
 
-#: kgpginterface.cpp:3181
+#: kgpginterface.cpp:3154
 msgid "Creation of the revocation certificate failed..."
 msgstr "Penciptaan sijil pembatalan gagal..."
 
-#: kgpginterface.cpp:3216
+#: kgpginterface.cpp:3189
 #, fuzzy, qt-format
 #| msgid "<qt>%1 Enter passphrase for <b>%2</b>:</qt>"
 msgid "<qt>Enter passphrase for <b>%1</b>:</qt>"
@@ -1871,8 +1879,8 @@ msgid "<b>Correct checksum</b>, file is ok."
 msgstr "<b>Betulkan semak jumlah</b>, fail adalah ok."
 
 #: kgpgmd5widget.cpp:94
-msgid "<b>Wrong checksum, FILE CORRUPTED</b>"
-msgstr "<b>Semak jumlah salah, FAIL ROSAK</b>"
+msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
+msgstr ""
 
 #: kgpgoptions.cpp:57 kgpgoptions.cpp:69 kgpgoptions.cpp:71
 #: kgpgoptions.cpp:220 kgpgoptions.cpp:236 kgpgoptions.cpp:243
@@ -4189,6 +4197,9 @@ msgid ""
 "<p>You can reach your default key by pressing &quot;Ctrl+Home&quot; in the "
 "key manager.</p>\n"
 msgstr ""
+
+#~ msgid "<b>Wrong checksum, FILE CORRUPTED</b>"
+#~ msgstr "<b>Semak jumlah salah, FAIL ROSAK</b>"
 
 #, fuzzy
 #~ msgid "Do Not Export"
