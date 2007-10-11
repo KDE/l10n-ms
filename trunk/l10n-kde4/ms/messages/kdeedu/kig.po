@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-10 05:34+0200\n"
+"POT-Creation-Date: 2007-10-11 05:43+0200\n"
 "PO-Revision-Date: 2007-03-02 11:22+0730\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -673,7 +673,8 @@ msgstr ""
 
 #: filters/filter.h:55 filters/cabri-utils.cc:33 misc/object_hierarchy.cc:486
 #: objects/object_imp_factory.cc:294
-#, qt-format
+#, kde-format
+#| msgid "An error was encountered at line %1 in file %2."
 msgid "An error was encountered at line %1 in file %2."
 msgstr ""
 
@@ -793,26 +794,34 @@ msgid "This is an XFig file, not a Cabri figure."
 msgstr ""
 
 #: filters/cabri-filter.cc:200
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "This Cabri version (%1) is not supported yet.\n"
+#| "Please contact the Kig authors to help supporting this Cabri version."
 msgid ""
 "This Cabri version (%1) is not supported yet.\n"
 "Please contact the Kig authors to help supporting this Cabri version."
 msgstr ""
 
 #: filters/cabri-filter.cc:629
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "This Cabri file contains a \"%1\" object, which Kig does not currently "
+#| "support."
 msgid ""
 "This Cabri file contains a \"%1\" object, which Kig does not currently "
 "support."
 msgstr ""
 
 #: filters/drgeo-filter.cc:108
-#, qt-format
+#, kde-format
+#| msgid "The Dr. Geo file \"%1\" is a macro file so it contains no figures."
 msgid "The Dr. Geo file \"%1\" is a macro file so it contains no figures."
 msgstr ""
 
 #: filters/drgeo-filter.cc:111
-#, qt-format
+#, kde-format
+#| msgid "There are no figures in Dr. Geo file \"%1\"."
 msgid "There are no figures in Dr. Geo file \"%1\"."
 msgstr ""
 
@@ -833,7 +842,10 @@ msgstr ""
 #: filters/drgeo-filter.cc:503 filters/drgeo-filter.cc:630
 #: filters/drgeo-filter.cc:648 filters/drgeo-filter.cc:689
 #: filters/drgeo-filter.cc:701 filters/drgeo-filter.cc:721
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "This Dr. Geo file contains a \"%1 %2\" object, which Kig does not "
+#| "currently support."
 msgid ""
 "This Dr. Geo file contains a \"%1 %2\" object, which Kig does not currently "
 "support."
@@ -872,14 +884,18 @@ msgstr "%s: maaf, format format `prof' belum lagi disokong\n"
 
 #: filters/exporter.cc:118 filters/latexexporter.cc:508
 #: filters/svgexporter.cc:82 filters/xfigexporter.cc:490
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "The file \"%1\" could not be opened. Please check if the file permissions "
+#| "are set correctly."
 msgid ""
 "The file \"%1\" could not be opened. Please check if the file permissions "
 "are set correctly."
 msgstr ""
 
 #: filters/exporter.cc:134
-#, qt-format
+#, kde-format
+#| msgid "Sorry, something went wrong while saving to image \"%1\""
 msgid "Sorry, something went wrong while saving to image \"%1\""
 msgstr ""
 
@@ -889,14 +905,20 @@ msgid "&Export To"
 msgstr "Sambung '%1' ke '%2'"
 
 #: filters/filter.cc:73
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "The file \"%1\" could not be opened.  This probably means that it does "
+#| "not exist, or that it cannot be opened due to its permissions"
 msgid ""
 "The file \"%1\" could not be opened.  This probably means that it does not "
 "exist, or that it cannot be opened due to its permissions"
 msgstr ""
 
 #: filters/filter.cc:82
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "An error was encountered while parsing the file \"%1\".  It cannot be "
+#| "opened."
 msgid ""
 "An error was encountered while parsing the file \"%1\".  It cannot be opened."
 msgstr ""
@@ -907,7 +929,7 @@ msgid "Parse Error"
 msgstr "Name=Ralat proses"
 
 #: filters/filter.cc:95
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Kig cannot open the file \"%1\"."
 msgstr "Tidak dapat membuka '%1'. Fail tidak wujud."
 
@@ -963,13 +985,21 @@ msgid "Latex Options"
 msgstr "Opsyen RAID"
 
 #: filters/native-filter.cc:194
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "This file was created by Kig version \"%1\", which this version cannot "
+#| "open."
 msgid ""
 "This file was created by Kig version \"%1\", which this version cannot open."
 msgstr ""
 
 #: filters/native-filter.cc:200
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "This file was created by Kig version \"%1\".\n"
+#| "Support for older Kig formats (pre-0.4) has been removed from Kig.\n"
+#| "You can try to open this file with an older Kig version (0.4 to 0.6),\n"
+#| "and then save it again, which will save it in the new format."
 msgid ""
 "This file was created by Kig version \"%1\".\n"
 "Support for older Kig formats (pre-0.4) has been removed from Kig.\n"
@@ -986,7 +1016,11 @@ msgstr ""
 
 #: filters/native-filter.cc:336 filters/native-filter.cc:529
 #: objects/object_imp_factory.cc:505
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "This Kig file uses an object of type \"%1\", which this Kig version does "
+#| "not support.Perhaps you have compiled Kig without support for this object "
+#| "type,or perhaps you are using an older Kig version."
 msgid ""
 "This Kig file uses an object of type \"%1\", which this Kig version does not "
 "support.Perhaps you have compiled Kig without support for this object type,"
@@ -994,7 +1028,11 @@ msgid ""
 msgstr ""
 
 #: filters/native-filter.cc:389
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "This Kig file uses an object of type \"%1\", which is obsolete, you "
+#| "should save the construction with a different name and check that it "
+#| "works as expected."
 msgid ""
 "This Kig file uses an object of type \"%1\", which is obsolete, you should "
 "save the construction with a different name and check that it works as "
@@ -1025,7 +1063,8 @@ msgid "SVG Options"
 msgstr "Opsyen RAID"
 
 #: filters/svgexporter.cc:111
-#, qt-format
+#, kde-format
+#| msgid "Sorry, something went wrong while saving to SVG file \"%1\""
 msgid "Sorry, something went wrong while saving to SVG file \"%1\""
 msgstr ""
 
@@ -1656,7 +1695,8 @@ msgid "Numeric Value"
 msgstr ""
 
 #: misc/kigfiledialog.cc:54 kig/kig_part.cpp:646 modes/typesdialog.cpp:455
-#, qt-format
+#, kde-format
+#| msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
 msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
 msgstr ""
 
@@ -1687,12 +1727,12 @@ msgid ""
 msgstr ""
 
 #: misc/lists.cc:302 misc/lists.cc:308
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Could not open macro file '%1'"
 msgstr "Tidak dapat membuka '%1'. Fail tidak wujud."
 
 #: misc/lists.cc:319
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Kig cannot open the macro file \"%1\"."
 msgstr "tidak dapat membuka file keluaran guile %s"
 
@@ -1705,12 +1745,16 @@ msgid ""
 msgstr ""
 
 #: misc/lists.cc:376
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Unnamed Macro #%1"
 msgstr "Mulakan Makro"
 
 #: misc/object_hierarchy.cc:551
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "This Kig file uses an object of type \"%1\", which this Kig version does "
+#| "not support. Perhaps you have compiled Kig without support for this "
+#| "object type, or perhaps you are using an older Kig version."
 msgid ""
 "This Kig file uses an object of type \"%1\", which this Kig version does not "
 "support. Perhaps you have compiled Kig without support for this object type, "
@@ -1830,12 +1874,12 @@ msgid "Construct a regular polygon with this vertex"
 msgstr ""
 
 #: misc/special_constructors.cc:876
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Adjust the number of sides (%1/%2)"
 msgstr "Papar nombor baris"
 
 #: misc/special_constructors.cc:880
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Adjust the number of sides (%1)"
 msgstr "Papar nombor baris"
 
@@ -2187,12 +2231,12 @@ msgid ""
 msgstr ""
 
 #: modes/label.cc:410
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "argument %1"
 msgstr "hujah tidak dijangka"
 
 #: modes/label.cc:439
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Selecting argument %1"
 msgstr "hujah tidak dijangka"
 
@@ -2276,7 +2320,7 @@ msgid "Define New Macro"
 msgstr "Tajuk laman baru"
 
 #: modes/moving.cc:157
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Move %1 Objects"
 msgstr "/Mudah Alih"
 
@@ -2291,7 +2335,7 @@ msgid "Kig Document"
 msgstr "Dokumen yang hendak dibuka"
 
 #: modes/popup.cc:203
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "%1 Objects"
 msgstr "Objek"
 
@@ -2432,7 +2476,7 @@ msgid "U&nhide All"
 msgstr "Laras Semua..."
 
 #: modes/popup.cc:1134
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "%1 Object"
 msgid_plural "%1 Objects"
 msgstr[0] "Objek"
@@ -2444,6 +2488,11 @@ msgid "Enter Label Text"
 msgstr "Sila guna mod teks"
 
 #: modes/textlabelwizard.cc:59
+#, kde-format
+#| msgid ""
+#| "Enter the text for your label here and press \"Next\".\n"
+#| "If you want to show variable parts, then put %1, %2, ... at the "
+#| "appropriate places (e.g. \"This segment is %1 units long.\")."
 msgid ""
 "Enter the text for your label here and press \"Next\".\n"
 "If you want to show variable parts, then put %1, %2, ... at the appropriate "
@@ -2621,7 +2670,7 @@ msgid "Polar Equation"
 msgstr ""
 
 #: objects/circle_imp.cc:238
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "rho = %1   [centered at %2]"
 msgstr "Pada penghujung tugas:"
 
@@ -2636,7 +2685,7 @@ msgid "Select this circle"
 msgstr "Pilih aksara ini"
 
 #: objects/circle_imp.cc:348
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select circle %1"
 msgstr "Pilih Partisyen"
 
@@ -2729,7 +2778,7 @@ msgid "sin theta"
 msgstr ""
 
 #: objects/conic_imp.cc:272
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "[centered at %1]"
 msgstr "Pada penghujung tugas:"
 
@@ -2743,7 +2792,7 @@ msgid "Select this conic"
 msgstr "Pilih aksara ini"
 
 #: objects/conic_imp.cc:384
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select conic %1"
 msgstr "Pilih Partisyen"
 
@@ -2801,7 +2850,7 @@ msgid "Select this conic arc"
 msgstr "Pilih aksara ini"
 
 #: objects/conic_imp.cc:610
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select conic arc %1"
 msgstr "Pilih Partisyen"
 
@@ -3013,7 +3062,7 @@ msgid "Select this cubic curve"
 msgstr "Pilih peranti ethernet untuk akaun ini."
 
 #: objects/cubic_imp.cc:358
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select cubic curve %1"
 msgstr "_Pilih pakej individu"
 
@@ -3064,7 +3113,7 @@ msgid "Select this curve"
 msgstr "Pilih aksara ini"
 
 #: objects/curve_imp.cc:27
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select curve %1"
 msgstr "Pilih Partisyen"
 
@@ -3209,7 +3258,7 @@ msgid "Select this line"
 msgstr "Papar nombor baris"
 
 #: objects/line_imp.cc:534
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select line %1"
 msgstr "Nombor baris:"
 
@@ -3253,7 +3302,7 @@ msgid "Select this segment"
 msgstr "Pilih aksara ini"
 
 #: objects/line_imp.cc:551
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select segment %1"
 msgstr "Pilih Partisyen"
 
@@ -3298,7 +3347,7 @@ msgid "Select this half-line"
 msgstr "  -a             - pilih semua yg sama dgn baris perintah.\n"
 
 #: objects/line_imp.cc:568
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select half-line %1"
 msgstr "Papar nombor baris"
 
@@ -3449,7 +3498,7 @@ msgid "Select this locus"
 msgstr "Pilih aksara ini"
 
 #: objects/locus_imp.cc:359
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select locus %1"
 msgstr "Pilih Partisyen"
 
@@ -3499,7 +3548,7 @@ msgid "Select this object"
 msgstr "Pilih aksara ini"
 
 #: objects/object_imp.cc:274
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select object %1"
 msgstr "Objek LightWave"
 
@@ -3591,7 +3640,7 @@ msgid "Select this angle"
 msgstr "Pilih aksara ini"
 
 #: objects/other_imp.cc:573
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select angle %1"
 msgstr "Pilih Partisyen"
 
@@ -3636,7 +3685,7 @@ msgid "Select this vector"
 msgstr "Pilih aksara ini"
 
 #: objects/other_imp.cc:589
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select vector %1"
 msgstr "Pilih Partisyen"
 
@@ -3680,7 +3729,7 @@ msgid "Select this arc"
 msgstr "Pilih aksara ini"
 
 #: objects/other_imp.cc:605
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select arc %1"
 msgstr "Pilih Partisyen"
 
@@ -3740,7 +3789,7 @@ msgid "Select this point"
 msgstr "Pilih aksara ini"
 
 #: objects/point_imp.cc:165
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select point %1"
 msgstr "Titik Lekapan"
 
@@ -3880,7 +3929,7 @@ msgid "Select this polygon"
 msgstr "Pilih aksara ini"
 
 #: objects/polygon_imp.cc:360
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select polygon %1"
 msgstr "Pilih Partisyen"
 
@@ -3925,7 +3974,7 @@ msgid "Select this triangle"
 msgstr "Pilih aksara ini"
 
 #: objects/polygon_imp.cc:378
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select triangle %1"
 msgstr "Pilih Partisyen"
 
@@ -3969,7 +4018,7 @@ msgid "Select this quadrilateral"
 msgstr "Pilih aksara ini"
 
 #: objects/polygon_imp.cc:396
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select quadrilateral %1"
 msgstr "Pilih Partisyen"
 
@@ -4330,7 +4379,7 @@ msgid "Select this label"
 msgstr "Pilih aksara ini"
 
 #: objects/text_imp.cc:149
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select label %1"
 msgstr "Label Bertindan"
 
@@ -4374,7 +4423,7 @@ msgid "Select this numeric label"
 msgstr "Pilih aksara ini"
 
 #: objects/text_imp.cc:195
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select numeric label %1"
 msgstr "Label Bertindan"
 
@@ -4423,7 +4472,7 @@ msgid "Select this boolean label"
 msgstr "Pilih aksara ini"
 
 #: objects/text_imp.cc:287
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Select boolean label %1"
 msgstr "Label Bertindan"
 
@@ -4998,7 +5047,12 @@ msgid "Now fill in the Python code:"
 msgstr ""
 
 #: scripting/script-common.cc:54
-#, qt-format
+#, kde-format
+#| msgctxt ""
+#| "Note to translators: this should be a default name for an argument in a "
+#| "Python function. The default is \"arg%1\" which would become arg1, arg2, "
+#| "etc. Give something which seems appropriate for your language."
+#| msgid "arg%1"
 msgctxt ""
 "Note to translators: this should be a default name for an argument in a "
 "Python function. The default is \"arg%1\" which would become arg1, arg2, "
@@ -5013,7 +5067,10 @@ msgid ""
 msgstr ""
 
 #: scripting/script_mode.cc:209 scripting/script_mode.cc:351
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "The Python Interpreter generated the following error output:\n"
+#| "%1"
 msgid ""
 "The Python Interpreter generated the following error output:\n"
 "%1"
@@ -5054,7 +5111,7 @@ msgid "Could not find the necessary Kig library, check your installation."
 msgstr ""
 
 #: kig/kig.cpp:203
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Save changes to document %1?"
 msgstr "Berbalik ke yang Ter_akhir Disimpan"
 
@@ -5076,12 +5133,12 @@ msgid ""
 msgstr ""
 
 #: kig/kig_commands.cpp:99
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Remove %1 Objects"
 msgstr "akan membuang %s\n"
 
 #: kig/kig_commands.cpp:111
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Add %1 Objects"
 msgstr "Tambah Bar Alatan"
 
@@ -5229,17 +5286,21 @@ msgid "Enable/disable hidden objects visibility."
 msgstr ""
 
 #: kig/kig_part.cpp:348
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Repeat Construction (%1)"
 msgstr "Batal fungsi semasa"
 
 #: kig/kig_part.cpp:350
-#, qt-format
+#, kde-format
+#| msgid "Repeat %1 (with new data)"
 msgid "Repeat %1 (with new data)"
 msgstr ""
 
 #: kig/kig_part.cpp:379
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "The file \"%1\" you tried to open does not exist. Please verify that you "
+#| "entered the correct path."
 msgid ""
 "The file \"%1\" you tried to open does not exist. Please verify that you "
 "entered the correct path."
@@ -5250,7 +5311,12 @@ msgid "File Not Found"
 msgstr "Fail Tidak Dijumpai"
 
 #: kig/kig_part.cpp:399
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "You tried to open a document of type \"%1\"; unfortunately, Kig does not "
+#| "support this format. If you think the format in question would be worth "
+#| "implementing support for, you can always ask us nicely on mailto:pino@kde."
+#| "org or do the work yourself and send me a patch."
 msgid ""
 "You tried to open a document of type \"%1\"; unfortunately, Kig does not "
 "support this format. If you think the format in question would be worth "
@@ -5283,14 +5349,14 @@ msgid "Print Geometry"
 msgstr "Geometri Cetakan"
 
 #: kig/kig_part.cpp:879
-#, qt-format
+#, kde-format
 msgid "Hide %1 Object"
 msgid_plural "Hide %1 Objects"
 msgstr[0] ""
 msgstr[1] ""
 
 #: kig/kig_part.cpp:898
-#, qt-format
+#, kde-format
 msgid "Show %1 Object"
 msgid_plural "Show %1 Objects"
 msgstr[0] ""
@@ -5405,7 +5471,7 @@ msgid "Manage Types"
 msgstr "Kedua-dua jenis"
 
 #: modes/typesdialog.cpp:425
-#, qt-format
+#, kde-format
 msgid "Are you sure you want to delete this type?"
 msgid_plural "Are you sure you want to delete these %1 types?"
 msgstr[0] ""
