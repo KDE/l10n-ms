@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeprint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-19 05:38+0200\n"
+"POT-Creation-Date: 2007-10-20 05:39+0200\n"
 "PO-Revision-Date: 2006-12-24 15:45+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -2364,28 +2364,28 @@ msgstr "<b>Huraian</b>: %1<br>"
 msgid "<b>Model</b>: %1<br />"
 msgstr "<b>Model</b>: %1<br>"
 
-#: cups/kmwippprinter.cpp:180
+#: cups/kmwippprinter.cpp:180 kmprinter.cpp:135
 #, fuzzy
 #| msgid "Idle"
 msgctxt "@item:intext Printer state"
 msgid "Idle"
 msgstr "Melahu"
 
-#: cups/kmwippprinter.cpp:181
+#: cups/kmwippprinter.cpp:181 kmprinter.cpp:137
 #, fuzzy
 #| msgid "Stopped"
 msgctxt "@item:intext Printer state"
 msgid "Stopped"
 msgstr "Dihentikan"
 
-#: cups/kmwippprinter.cpp:182
+#: cups/kmwippprinter.cpp:182 kmprinter.cpp:136
 #, fuzzy
 #| msgid "Processing..."
 msgctxt "@item:intext Printer state"
 msgid "Processing..."
 msgstr "Memproses..."
 
-#: cups/kmwippprinter.cpp:183
+#: cups/kmwippprinter.cpp:183 kmprinter.cpp:138
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "@item:intext Printer state"
@@ -3010,38 +3010,59 @@ msgstr "Sistem cetakan"
 msgid "Authentication failed (user name=%1)"
 msgstr "Pengesahan gagal (nama pengguna=%1)"
 
-#: kmjob.cpp:110 kmprinter.cpp:136
+#: kmjob.cpp:110
+#, fuzzy
+#| msgid "Processing..."
+msgctxt "@item:intext Job state"
 msgid "Processing..."
 msgstr "Memproses..."
 
 #: kmjob.cpp:113
+#, fuzzy
+#| msgid "Queued"
+msgctxt "@item:intext Job state"
 msgid "Queued"
 msgstr "Dibaris gilir"
 
 #: kmjob.cpp:116
+#, fuzzy
+#| msgid "Held"
+msgctxt "@item:intext Job state"
 msgid "Held"
 msgstr "Tangguh"
 
-#: kmjob.cpp:119 tools/escputil/escpwidget.cpp:228
+#: kmjob.cpp:119
+msgctxt "@item:intext Job state"
 msgid "Error"
 msgstr ""
 
 #: kmjob.cpp:122
+#, fuzzy
+#| msgid "Canceled"
+msgctxt "@item:intext Job state"
 msgid "Canceled"
 msgstr "Batal"
 
 #: kmjob.cpp:125
+#, fuzzy
+#| msgid "Aborted"
+msgctxt "@item:intext Job state"
 msgid "Aborted"
 msgstr "Dihenti paksa"
 
 #: kmjob.cpp:128
+#, fuzzy
+#| msgid "Completed"
+msgctxt "@item:intext Job state"
 msgid "Completed"
 msgstr "Selesai"
 
-#: kmjob.cpp:131 kmprinter.cpp:138
-msgctxt "Unknown State"
+#: kmjob.cpp:131
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "@item:intext Job state"
 msgid "Unknown"
-msgstr "Tak diketahui"
+msgstr "Tidak diketahui"
 
 #: tests/main.cpp:18
 msgid "helpviewer"
@@ -3124,6 +3145,10 @@ msgstr "Operasi ditamatkan dengan ralat."
 #: tools/escputil/escpwidget.cpp:226 kpfilterpage.cpp:399
 msgid "Output"
 msgstr "Output"
+
+#: tools/escputil/escpwidget.cpp:228
+msgid "Error"
+msgstr ""
 
 #: management/kmmainview.cpp:73
 #, kde-format
@@ -5987,14 +6012,6 @@ msgstr "Tiada opsyen dipilih"
 msgid "Configuration of %1"
 msgstr "Konfigurasi %1"
 
-#: kmprinter.cpp:135
-msgid "Idle"
-msgstr "Melahu"
-
-#: kmprinter.cpp:137
-msgid "Stopped"
-msgstr "Dihentikan"
-
 #: kmprinter.cpp:140
 msgid "(rejecting jobs)"
 msgstr "(menolak kerja)"
@@ -7329,6 +7346,16 @@ msgstr "&Skala kelabu"
 #: kpqtpage.cpp:156
 msgid "Ot&her"
 msgstr "&Lain-lain"
+
+#~ msgctxt "Unknown State"
+#~ msgid "Unknown"
+#~ msgstr "Tak diketahui"
+
+#~ msgid "Idle"
+#~ msgstr "Melahu"
+
+#~ msgid "Stopped"
+#~ msgstr "Dihentikan"
 
 #~ msgid "Daytime (6 am - 6 pm)"
 #~ msgstr "Siang (6 am - 6 pm)"
