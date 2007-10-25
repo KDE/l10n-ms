@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-24 06:11+0200\n"
+"POT-Creation-Date: 2007-10-25 06:18+0200\n"
 "PO-Revision-Date: 2006-10-20 20:16+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -632,11 +632,11 @@ msgstr "&Urus..."
 msgid "&Quick Open"
 msgstr "Buka &Pantas"
 
-#: app/katemainwindow.cpp:422 app/katedocmanager.cpp:437
+#: app/katemainwindow.cpp:422 app/katedocmanager.cpp:445
 msgid "New file opened while trying to close Kate, closing aborted."
 msgstr "Fail baru dibuka semas cuba menutup Kate, penutupan dihenti paksa."
 
-#: app/katemainwindow.cpp:423 app/katedocmanager.cpp:438
+#: app/katemainwindow.cpp:423 app/katedocmanager.cpp:446
 msgid "Closing Aborted"
 msgstr "Menutup Dibatalkan"
 
@@ -915,20 +915,20 @@ msgstr "Senarai Dokumen"
 msgid "Document List Settings"
 msgstr "Seting Senarai Dokumen"
 
-#: app/kateconfigdialog.cpp:242
+#: app/kateconfigdialog.cpp:243
 msgid "Plugins"
 msgstr "Plugin"
 
-#: app/kateconfigdialog.cpp:243
+#: app/kateconfigdialog.cpp:244
 msgid "Plugin Manager"
 msgstr "Pengurus Plugin"
 
-#: app/kateconfigdialog.cpp:257
+#: app/kateconfigdialog.cpp:258
 #, fuzzy
 msgid "Editor Component"
 msgstr "Pilih Komponen Penyunting"
 
-#: app/kateconfigdialog.cpp:259
+#: app/kateconfigdialog.cpp:260
 #, fuzzy
 msgid "Editor Component Options"
 msgstr "Pilih Komponen Penyunting"
@@ -1191,19 +1191,19 @@ msgstr "Baca kandungan stdin"
 msgid "Document to open"
 msgstr "Dokumen yang hendak dibuka"
 
-#: app/katedocmanager.cpp:291
+#: app/katedocmanager.cpp:299
 #, kde-format
 msgid ""
 "The supposedly temporary file %1 has been modified. Do you want to delete it "
 "anyway?"
 msgstr ""
 
-#: app/katedocmanager.cpp:293
+#: app/katedocmanager.cpp:301
 #, fuzzy
 msgid "Delete File?"
 msgstr "Dipadam"
 
-#: app/katedocmanager.cpp:402
+#: app/katedocmanager.cpp:410
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The document '%1' has been modified, but not saved.<p>Do you want to "
@@ -1215,25 +1215,25 @@ msgstr ""
 "<p>Dokumen'%1' telah diubah suai, tetapi tidak disimpan.<p>Anda ingin "
 "menyimpan perubahan anda atau membuangnya?"
 
-#: app/katedocmanager.cpp:404
+#: app/katedocmanager.cpp:412
 msgid "Close Document"
 msgstr "Tutup Dokumen"
 
-#: app/katedocmanager.cpp:411
+#: app/katedocmanager.cpp:419
 #, fuzzy
 msgid "Save As"
 msgstr "Simp&an Sebagai..."
 
-#: app/katedocmanager.cpp:482
+#: app/katedocmanager.cpp:490
 #, fuzzy
 msgid "Starting Up"
 msgstr "Memulakan daemon APM: "
 
-#: app/katedocmanager.cpp:483
+#: app/katedocmanager.cpp:491
 msgid "Reopening files from the last session..."
 msgstr "Buka semula fail dari sesi terakhir..."
 
-#: app/katedocmanager.cpp:684
+#: app/katedocmanager.cpp:692
 msgid "Errors/Warnings while opening documents"
 msgstr ""
 
@@ -1354,25 +1354,68 @@ msgstr ""
 msgid "Session Renaming"
 msgstr "Nama Pengguna"
 
-#: app/katefilelist.cpp:38
+#: app/katefilelist.cpp:51
 msgid "Sort &By"
 msgstr "Isih &Menurut"
 
-#: app/katefilelist.cpp:42
+#: app/katefilelist.cpp:55 app/katefilelist.cpp:179
 msgid "Opening Order"
 msgstr "Tertib Buka"
 
-#: app/katefilelist.cpp:42
+#: app/katefilelist.cpp:55 app/katefilelist.cpp:180
 msgid "Document Name"
 msgstr "Nama Dokumen"
 
-#: app/katefilelist.cpp:42
+#: app/katefilelist.cpp:55
 msgid "URL"
 msgstr "URL"
 
-#: app/katefilelist.cpp:42
+#: app/katefilelist.cpp:55 app/katefilelist.cpp:182
 msgid "Custom"
 msgstr ""
+
+#: app/katefilelist.cpp:153
+msgid "Background Shading"
+msgstr "Pelorekan Latar Belakang"
+
+#: app/katefilelist.cpp:162
+msgid "&Viewed documents' shade:"
+msgstr "&Paparkan lorekan dokumen:"
+
+#: app/katefilelist.cpp:167
+msgid "&Modified documents' shade:"
+msgstr "&Ubah suai pelorekan dokumen:"
+
+#: app/katefilelist.cpp:174
+msgid "&Sort by:"
+msgstr "&Diisih oleh:"
+
+#: app/katefilelist.cpp:181
+msgid "Url"
+msgstr ""
+
+#: app/katefilelist.cpp:187
+msgid ""
+"When background shading is enabled, documents that have been viewed or "
+"edited within the current session will have a shaded background. The most "
+"recent documents have the strongest shade."
+msgstr ""
+"Apabila pelorekan latar belakang diaktifkan, dokumen yang telah dipapar atau "
+"diedit dalam sesi semasa akan mempunyai latar belakang berwarna. Dokumen "
+"paling terkini mempunyai warna paling pekat."
+
+#: app/katefilelist.cpp:191
+msgid "Set the color for shading viewed documents."
+msgstr "Setkan warna untuk pewarnaan dokumen yang dipapar."
+
+#: app/katefilelist.cpp:193
+msgid ""
+"Set the color for modified documents. This color is blended into the color "
+"for viewed files. The most recently edited documents get most of this color."
+msgstr ""
+"Setkan warna untuk dokumen terubah suai. Warna diadun ke dalam warna untuk "
+"fail yang dipaparkan. Dokumen paling terkini diedit paling banyak mendapat "
+"warna ini."
 
 #: app/kateviewmanager.cpp:117
 msgid "Split Ve&rtical"
@@ -2431,41 +2474,8 @@ msgstr "Sesi"
 #~ "<b>This file was changed (deleted) on disk by another program.</b><br />"
 #~ msgstr "<b>Fail ini diubah (dihapuskan) oleh program lain.</b><br />"
 
-#~ msgid "Background Shading"
-#~ msgstr "Pelorekan Latar Belakang"
-
 #~ msgid "&Enable background shading"
 #~ msgstr "&Aktifkan pelorekan latar belakang"
-
-#~ msgid "&Viewed documents' shade:"
-#~ msgstr "&Paparkan lorekan dokumen:"
-
-#~ msgid "&Modified documents' shade:"
-#~ msgstr "&Ubah suai pelorekan dokumen:"
-
-#~ msgid "&Sort by:"
-#~ msgstr "&Diisih oleh:"
-
-#~ msgid ""
-#~ "When background shading is enabled, documents that have been viewed or "
-#~ "edited within the current session will have a shaded background. The most "
-#~ "recent documents have the strongest shade."
-#~ msgstr ""
-#~ "Apabila pelorekan latar belakang diaktifkan, dokumen yang telah dipapar "
-#~ "atau diedit dalam sesi semasa akan mempunyai latar belakang berwarna. "
-#~ "Dokumen paling terkini mempunyai warna paling pekat."
-
-#~ msgid "Set the color for shading viewed documents."
-#~ msgstr "Setkan warna untuk pewarnaan dokumen yang dipapar."
-
-#~ msgid ""
-#~ "Set the color for modified documents. This color is blended into the "
-#~ "color for viewed files. The most recently edited documents get most of "
-#~ "this color."
-#~ msgstr ""
-#~ "Setkan warna untuk dokumen terubah suai. Warna diadun ke dalam warna "
-#~ "untuk fail yang dipaparkan. Dokumen paling terkini diedit paling banyak "
-#~ "mendapat warna ini."
 
 #~ msgid "Set the sorting method for the documents."
 #~ msgstr "Set kaedah isih untuk dokumen."
