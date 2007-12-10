@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-09 06:00+0100\n"
+"POT-Creation-Date: 2007-12-10 05:59+0100\n"
 "PO-Revision-Date: 2007-01-18 22:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -58,7 +58,7 @@ msgstr "Hidupkan N_IS"
 
 #. i18n: tag string
 #. i18n: file ./languages/cpp/debugger/debuggertracingdialog.ui line 30
-#: rc.cpp:19 languages/cpp/debugger/memviewdlg.cpp:122
+#: rc.cpp:19 languages/cpp/debugger/memviewdlg.cpp:117
 #, fuzzy
 msgid "Cancel"
 msgstr "Bertindih"
@@ -72,7 +72,7 @@ msgstr "Rentetan IP tidak sah"
 
 #. i18n: tag string
 #. i18n: file ./languages/cpp/debugger/debuggertracingdialog.ui line 47
-#: rc.cpp:25 languages/cpp/debugger/memviewdlg.cpp:119
+#: rc.cpp:25 languages/cpp/debugger/memviewdlg.cpp:114
 msgid "OK"
 msgstr ""
 
@@ -343,7 +343,7 @@ msgstr "Stack sekarang"
 
 #. i18n: tag string
 #. i18n: file ./languages/cpp/debugger/debuggerconfigwidget.ui line 208
-#: rc.cpp:150 languages/cpp/debugger/gdboutputwidget.cpp:61
+#: rc.cpp:150 languages/cpp/debugger/gdboutputwidget.cpp:56
 #, fuzzy
 msgid "GDB Output"
 msgstr "Fail output:"
@@ -1141,7 +1141,7 @@ msgstr ""
 
 #. i18n: tag Text
 #. i18n: file ./plugins/grepview/kdevgrepview.rc line 4
-#: rc.cpp:496 languages/cpp/debugger/gdbbreakpointwidget.cpp:263
+#: rc.cpp:496 languages/cpp/debugger/gdbbreakpointwidget.cpp:262
 #, fuzzy
 msgid "Edit"
 msgstr "&Sunting..."
@@ -1499,10 +1499,15 @@ msgstr "Laluan SFS"
 msgid "Includers"
 msgstr "terlalu banyak masukan"
 
-#: languages/cpp/cpplanguagesupport.cpp:147
+#: languages/cpp/cpplanguagesupport.cpp:148
 #, fuzzy
 msgid "Files"
 msgstr "Fail"
+
+#: languages/cpp/cpplanguagesupport.cpp:310
+#: languages/cpp/cpplanguagesupport.cpp:328
+msgid "Include-path resolver:"
+msgstr ""
 
 #: languages/cpp/cppduchain/navigationwidget.cpp:111
 #, fuzzy
@@ -1516,8 +1521,7 @@ msgid "Class"
 msgstr "Kelas"
 
 #: languages/cpp/cppduchain/navigationwidget.cpp:222
-#: languages/cpp/debugger/variablewidget.cpp:231
-#: languages/cpp/debugger/variablecollection.cpp:132
+#: languages/cpp/debugger/variablecollection.cpp:190
 #, fuzzy
 msgid "Variable"
 msgstr "Pembolehubah Persekitaran"
@@ -1612,107 +1616,107 @@ msgstr "pelbagai pengisytiharan %s"
 msgid "not parsed yet"
 msgstr ""
 
-#: languages/cpp/debugger/breakpoint.cpp:270
+#: languages/cpp/debugger/breakpoint.cpp:269
 msgid "Disabled"
 msgstr "Dimatikan"
 
-#: languages/cpp/debugger/breakpoint.cpp:275
+#: languages/cpp/debugger/breakpoint.cpp:274
 #, fuzzy
 msgid "Pending (add)"
 msgstr "Tambah Partisyen"
 
-#: languages/cpp/debugger/breakpoint.cpp:277
+#: languages/cpp/debugger/breakpoint.cpp:276
 #, fuzzy
 msgid "Pending (clear)"
 msgstr "Buang Sejarah"
 
-#: languages/cpp/debugger/breakpoint.cpp:279
+#: languages/cpp/debugger/breakpoint.cpp:278
 #, fuzzy
 msgid "Pending (modify)"
 msgstr "_Ubahsuai Partisyen"
 
-#: languages/cpp/debugger/breakpoint.cpp:283
+#: languages/cpp/debugger/breakpoint.cpp:282
 msgid "Active"
 msgstr "Aktif"
 
-#: languages/cpp/debugger/breakpoint.cpp:424
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:250
+#: languages/cpp/debugger/breakpoint.cpp:423
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:249
 #, fuzzy
 msgctxt "Code breakpoint"
 msgid "Code"
 msgstr "cookie.tjansen.de:0"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:313
+#: languages/cpp/debugger/gdbcontroller.cpp:317
 #, kde-format
 msgid ""
 "<b>Gdb command sent when debugger is not running</b><br>The command was:<br> "
 "%1"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:315
-#: languages/cpp/debugger/variablewidget.cpp:773
+#: languages/cpp/debugger/gdbcontroller.cpp:319
+#: languages/cpp/debugger/frameitem.cpp:182
 #, fuzzy
 msgid "Internal error"
 msgstr "Ralat dalaman.\n"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:396
+#: languages/cpp/debugger/gdbcontroller.cpp:400
 #, kde-format
 msgid "<b>Invalid debugger command</b><br>%1"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:397
+#: languages/cpp/debugger/gdbcontroller.cpp:401
 msgid "Invalid debugger command"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:486
+#: languages/cpp/debugger/gdbcontroller.cpp:490
 msgid ""
 "<b>Invalid gdb reply</b><p>The 'stopped' packet does not include the "
 "'reason' field'."
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:488
+#: languages/cpp/debugger/gdbcontroller.cpp:492
 msgid "The gdb reply is: bla-bla-bla"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:489
-#: languages/cpp/debugger/gdbcontroller.cpp:721
+#: languages/cpp/debugger/gdbcontroller.cpp:493
+#: languages/cpp/debugger/gdbcontroller.cpp:725
 msgid "Invalid gdb reply"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:504
+#: languages/cpp/debugger/gdbcontroller.cpp:508
 #, fuzzy, kde-format
 msgid "Exited on signal %1"
 msgstr "Tambah alamat baru..."
 
-#: languages/cpp/debugger/gdbcontroller.cpp:557
+#: languages/cpp/debugger/gdbcontroller.cpp:561
 #, kde-format
 msgid "Program received signal %1 (%2)"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:558
+#: languages/cpp/debugger/gdbcontroller.cpp:562
 #, fuzzy
 msgid "Received signal"
 msgstr "[S] Tahap isyarat:"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:648
+#: languages/cpp/debugger/gdbcontroller.cpp:652
 #, fuzzy, kde-format
 msgid ""
 "gdb message:\n"
 "%1"
 msgstr "Mesej Init"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:648
-#: languages/cpp/debugger/gdbcontroller.cpp:902
+#: languages/cpp/debugger/gdbcontroller.cpp:652
+#: languages/cpp/debugger/gdbcontroller.cpp:940
 #, fuzzy
 msgid "Warning"
 msgstr "Ralat hujah penelitian: %s.\n"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:690
+#: languages/cpp/debugger/gdbcontroller.cpp:694
 #, fuzzy
 msgid "No such file or directory."
 msgstr "tiada objek sebegitu dalam direktori LDAP"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:714
+#: languages/cpp/debugger/gdbcontroller.cpp:718
 #, kde-format
 msgid ""
 "Invalid gdb reply\n"
@@ -1721,17 +1725,22 @@ msgid ""
 "Invalid response kind: \"%3\""
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:823
+#: languages/cpp/debugger/gdbcontroller.cpp:827
 #, fuzzy, kde-format
 msgid "Could not locate the debugging shell '%1'."
 msgstr "Tidak dapat membuat fail sementara: %s"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:824
+#: languages/cpp/debugger/gdbcontroller.cpp:828
 #, fuzzy
 msgid "Debugging Shell Not Found"
 msgstr "$0: konfigurasi bagi ${1} tidak dijumpai."
 
-#: languages/cpp/debugger/gdbcontroller.cpp:898
+#: languages/cpp/debugger/gdbcontroller.cpp:908
+#, fuzzy
+msgid "Running program"
+msgstr "Keluar program"
+
+#: languages/cpp/debugger/gdbcontroller.cpp:936
 msgid ""
 "GDB cannot use the tty* or pty* devices.\n"
 "Check the settings on /dev/tty* and /dev/pty*\n"
@@ -1739,12 +1748,7 @@ msgid ""
 "user to the tty group using \"usermod -G tty username\"."
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:928
-#, fuzzy
-msgid "Running program"
-msgstr "Keluar program"
-
-#: languages/cpp/debugger/gdbcontroller.cpp:1005
+#: languages/cpp/debugger/gdbcontroller.cpp:1012
 #, kde-format
 msgid ""
 "<b>Application does not exist</b><p>The application you're trying to debug,"
@@ -1753,12 +1757,12 @@ msgid ""
 "debugger configuration."
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1011
+#: languages/cpp/debugger/gdbcontroller.cpp:1018
 #, fuzzy
 msgid "Application does not exist"
 msgstr "%s tidak wujud"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1024
+#: languages/cpp/debugger/gdbcontroller.cpp:1031
 #, kde-format
 msgid ""
 "<b>Could not run application '%1'.</b><p>The application does not have the "
@@ -1766,66 +1770,46 @@ msgid ""
 "manually."
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1029
+#: languages/cpp/debugger/gdbcontroller.cpp:1036
 #, fuzzy
 msgid "Could not run application"
 msgstr "Tidak dapat memperuntukkan partisyen"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1299
+#: languages/cpp/debugger/gdbcontroller.cpp:1306
 #, kde-format
 msgid "<b>Debugger error</b><p>Debugger reported the following error:<p><tt>%1"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1302
-#: languages/cpp/debugger/variableitem.cpp:67
-#: languages/cpp/debugger/variablewidget.cpp:908
+#: languages/cpp/debugger/gdbcontroller.cpp:1309
+#: languages/cpp/debugger/variableitem.cpp:872
 #, fuzzy
 msgid "Debugger error"
 msgstr "Papan Alat Mdk"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1529
-msgctxt "<b>Internal debugger error</b>"
-msgid ""
-"<p>The debugger component encountered internal error while processing reply "
-"from gdb. Please submit a bug report."
-msgstr ""
-
-#: languages/cpp/debugger/gdbcontroller.cpp:1531
-#, kde-format
-msgid ""
-"The exception is: %1\n"
-"The MI response is: %2"
-msgstr ""
-
-#: languages/cpp/debugger/gdbcontroller.cpp:1533
-#, fuzzy
-msgid "Internal debugger error"
-msgstr "Ralat dalaman.\n"
-
-#: languages/cpp/debugger/gdbcontroller.cpp:1621
-#: languages/cpp/debugger/debuggerplugin.cpp:879
+#: languages/cpp/debugger/gdbcontroller.cpp:1629
+#: languages/cpp/debugger/debuggerplugin.cpp:882
 #, fuzzy
 msgid "Process exited"
 msgstr "Berjaya keluar"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1634
+#: languages/cpp/debugger/gdbcontroller.cpp:1642
 #, kde-format
 msgid ""
 "<b>Could not start debugger.</b><p>Could not run '%1'. Make sure that the "
 "path name is specified correctly."
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1638
+#: languages/cpp/debugger/gdbcontroller.cpp:1646
 #, fuzzy
 msgid "Could not start debugger"
 msgstr "Tidak dapat memperuntukkan partisyen"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1649
+#: languages/cpp/debugger/gdbcontroller.cpp:1657
 #, fuzzy
 msgid "Process didn't start"
 msgstr "%s: keluar dengan status; abaikan"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1675
+#: languages/cpp/debugger/gdbcontroller.cpp:1683
 #, kde-format
 msgid ""
 "%1 commands in queue\n"
@@ -1833,7 +1817,7 @@ msgid ""
 "Debugger state: %3\n"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1681
+#: languages/cpp/debugger/gdbcontroller.cpp:1689
 #, kde-format
 msgid ""
 "Current command class: '%1'\n"
@@ -1841,12 +1825,12 @@ msgid ""
 "Current command original text: '%3'\n"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1688
+#: languages/cpp/debugger/gdbcontroller.cpp:1696
 #, fuzzy
 msgid "Debugger status"
 msgstr "%s diberhentikan\n"
 
-#: languages/cpp/debugger/disassemblewidget.cpp:54
+#: languages/cpp/debugger/disassemblewidget.cpp:52
 msgid ""
 "<b>Machine code display</b><p>A machine code view into your running "
 "executable with the current instruction highlighted. You can step "
@@ -1854,12 +1838,12 @@ msgid ""
 "\" instruction and \"step into\" instruction."
 msgstr ""
 
-#: languages/cpp/debugger/disassemblewidget.cpp:62
+#: languages/cpp/debugger/disassemblewidget.cpp:60
 #, fuzzy
 msgid "Disassemble View"
 msgstr "Lihat status faks"
 
-#: languages/cpp/debugger/framestackwidget.cpp:51
+#: languages/cpp/debugger/framestackwidget.cpp:49
 msgid ""
 "<b>Frame stack</b><p>Often referred to as the \"call stack\", this is a list "
 "showing what function is currently active and who called each function to "
@@ -1867,191 +1851,200 @@ msgid ""
 "values in any of the previous calling functions."
 msgstr ""
 
-#: languages/cpp/debugger/framestackwidget.cpp:531
+#: languages/cpp/debugger/framestackwidget.cpp:529
 #, kde-format
 msgid "Thread %1"
 msgstr ""
 
-#: languages/cpp/debugger/variableitem.cpp:66
-#: languages/cpp/debugger/variablewidget.cpp:907
+#: languages/cpp/debugger/variableitem.cpp:871
 #, fuzzy, kde-format
 msgid "<b>Debugger error</b><br>%1"
 msgstr "Papan Alat Mdk"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:191
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:190
 #, fuzzy
 #| msgid "Memory"
 msgid " temporary"
 msgstr "Memori"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:193
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:192
 msgid " hw"
 msgstr ""
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:213
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:212
 #, fuzzy
 msgid "Debugger Breakpoints"
 msgstr "Toggle tambahan awalan"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:214
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:213
 msgid ""
 "<b>Breakpoint list</b><p>Displays a list of breakpoints with their current "
 "status. Clicking on a breakpoint item allows you to change the breakpoint "
 "and will take you to the source in the editor window."
 msgstr ""
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:241
-#: languages/cpp/debugger/variablecollection.cpp:138
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:240
+#: languages/cpp/debugger/variablecollection.cpp:196
 #: buildtools/managers/cmake/cmakecachemodel.cpp:14
 #, fuzzy
 #| msgid "Type:"
 msgid "Type"
 msgstr "Jenis:"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:242
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:241
 msgid "Status"
 msgstr "Status"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:243
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:242
 #, fuzzy
 msgid "Location"
 msgstr "_Lokasi"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:244
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:243
 #, fuzzy
 msgid "Condition"
 msgstr "Perhubungan"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:245
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:244
 #, fuzzy
 msgid "Ignore Count"
 msgstr "Kiraan perkataan"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:246
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:245
 #, fuzzy
 msgid "Hits"
 msgstr "Hit"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:247
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:246
 #, fuzzy
 msgid "Tracing"
 msgstr "Mencipta"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:252
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:251
 #, fuzzy
 msgctxt "Data breakpoint"
 msgid "Data write"
 msgstr "Fail Data Kugar"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:254
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:253
 #, fuzzy
 msgctxt "Data read breakpoint"
 msgid "Data read"
 msgstr "Fail Data Kugar"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:259
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:258
 #, fuzzy
 #| msgid "New"
 msgctxt "New breakpoint"
 msgid "New"
 msgstr "Baru"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:261
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:260
 #, fuzzy
 #| msgid "New text"
 msgid "Show text"
 msgstr "Teks baru"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:265
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:766
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:264
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:765
 msgid "Disable"
 msgstr "Matikan"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:268
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:267
 #, fuzzy
 msgid "Delete"
 msgstr "Pa_dam"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:271
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:270
 #, fuzzy
 #| msgid "Disable"
 msgid "Disable all"
 msgstr "Matikan"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:272
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:271
 #, fuzzy
 #| msgid "Enable"
 msgid "Enable all"
 msgstr "Hidupkan"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:273
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:272
 #, fuzzy
 msgid "Delete all"
 msgstr "[S] Tahap isyarat:"
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:421
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:420
 #, kde-format
 msgid ""
 "<b>Data write breakpoint</b><br>Expression: %1<br>Address: 0x%2<br>Old "
 "value: %3<br>New value: %4"
 msgstr ""
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:770
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:769
 msgid "Enable"
 msgstr "Hidupkan"
 
-#: languages/cpp/debugger/gdboutputwidget.cpp:62
+#: languages/cpp/debugger/gdboutputwidget.cpp:57
 msgid ""
 "<b>GDB output</b><p>Shows all gdb commands being executed. You can also "
 "issue any other gdb command while debugging."
 msgstr ""
 
-#: languages/cpp/debugger/gdboutputwidget.cpp:72
+#: languages/cpp/debugger/gdboutputwidget.cpp:66
 msgid "&GDB cmd:"
 msgstr ""
 
-#: languages/cpp/debugger/gdboutputwidget.cpp:82
+#: languages/cpp/debugger/gdboutputwidget.cpp:71
 msgid "Pause execution of the app to enter gdb commands"
 msgstr ""
 
-#: languages/cpp/debugger/gdboutputwidget.cpp:352
+#: languages/cpp/debugger/gdboutputwidget.cpp:344
 msgid "Show Internal Commands"
 msgstr ""
 
-#: languages/cpp/debugger/gdboutputwidget.cpp:359
+#: languages/cpp/debugger/gdboutputwidget.cpp:351
 msgid ""
 "Controls if commands issued internally by KDevelop will be shown or not."
 "<br>This option will affect only future commands, it won't add or remove "
 "already issued commands from the view."
 msgstr ""
 
-#: languages/cpp/debugger/gdboutputwidget.cpp:364
+#: languages/cpp/debugger/gdboutputwidget.cpp:356
 #, fuzzy
 msgid "Copy All"
 msgstr "Kuncupkan Semua Blok"
 
+#: languages/cpp/debugger/watchitem.cpp:41
+#, fuzzy
+msgid "Watches"
+msgstr "Tompokan"
+
+#: languages/cpp/debugger/watchitem.cpp:59
+#, fuzzy
+msgid "Recent"
+msgstr "Ulangtetap"
+
 #: languages/cpp/debugger/processselection.cpp:62
-#: languages/cpp/debugger/debuggerplugin.cpp:411
+#: languages/cpp/debugger/debuggerplugin.cpp:409
 #, fuzzy
 msgid "Attach to Process"
 msgstr "Fail dalam proses: %d"
 
-#: languages/cpp/debugger/variablewidget.cpp:94
+#: languages/cpp/debugger/variablewidget.cpp:88
 #, fuzzy
 msgid "Debugger Variables"
 msgstr "Lihat status faks"
 
-#: languages/cpp/debugger/variablewidget.cpp:104
+#: languages/cpp/debugger/variablewidget.cpp:99
 #, fuzzy
 msgid "&Evaluate"
 msgstr "Nilai tidak sah"
 
-#: languages/cpp/debugger/variablewidget.cpp:107
+#: languages/cpp/debugger/variablewidget.cpp:102
 #, fuzzy
 msgid "&Watch"
 msgstr "Tonton televisyen"
 
-#: languages/cpp/debugger/variablewidget.cpp:133
+#: languages/cpp/debugger/variablewidget.cpp:125
 msgid ""
 "<b>Variable tree</b><p>The variable tree allows you to see the values of "
 "local variables and arbitrary expressions.<p>Local variables are displayed "
@@ -2063,149 +2056,133 @@ msgid ""
 "variable or an expression, click on the value."
 msgstr ""
 
-#: languages/cpp/debugger/variablewidget.cpp:147
+#: languages/cpp/debugger/variablewidget.cpp:139
 msgid "<b>Expression entry</b><p>Type in expression to evaluate."
 msgstr ""
 
-#: languages/cpp/debugger/variablewidget.cpp:151
+#: languages/cpp/debugger/variablewidget.cpp:143
 #, fuzzy
 msgid "Evaluate the expression."
 msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
 
-#: languages/cpp/debugger/variablewidget.cpp:154
+#: languages/cpp/debugger/variablewidget.cpp:146
 msgid "Evaluate the expression and auto-update the value when stepping."
 msgstr ""
 
-#: languages/cpp/debugger/variablewidget.cpp:232
-#: languages/cpp/debugger/variablecollection.cpp:135
-#: buildtools/managers/cmake/cmakecachemodel.cpp:15
-msgid "Value"
-msgstr "Nilai"
+#: languages/cpp/debugger/variablewidget.cpp:226
+#, fuzzy
+msgid "Recent Expressions"
+msgstr "Ungkapan corak:\n"
 
-#: languages/cpp/debugger/variablewidget.cpp:279
+#: languages/cpp/debugger/variablewidget.cpp:227
+#, fuzzy
+msgid "Remove All"
+msgstr "Buang semua partisyen yang ada"
+
+#: languages/cpp/debugger/variablewidget.cpp:228
+#, fuzzy
+msgid "Re-evaluate All"
+msgstr "Semua Pakej"
+
+#: languages/cpp/debugger/variablewidget.cpp:270
 #, fuzzy
 msgid "Format"
 msgstr "Borang"
 
-#: languages/cpp/debugger/variablewidget.cpp:283
+#: languages/cpp/debugger/variablewidget.cpp:274
 #, fuzzy
 #| msgid "Manual"
 msgid "Natural"
 msgstr "Manual"
 
-#: languages/cpp/debugger/variablewidget.cpp:287
+#: languages/cpp/debugger/variablewidget.cpp:278
 #, fuzzy
 msgid "Hexadecimal"
 msgstr "Keluaran Heksadesimal"
 
-#: languages/cpp/debugger/variablewidget.cpp:291
+#: languages/cpp/debugger/variablewidget.cpp:282
 #, fuzzy
 msgid "Decimal"
 msgstr "Latitud (darjah desimal): "
 
-#: languages/cpp/debugger/variablewidget.cpp:295
+#: languages/cpp/debugger/variablewidget.cpp:286
 #, fuzzy
 msgid "Character"
 msgstr "Pilih Aksara"
 
-#: languages/cpp/debugger/variablewidget.cpp:299
+#: languages/cpp/debugger/variablewidget.cpp:290
 #, fuzzy
 msgid "Binary"
 msgstr "[%s (perduaan): diabaikan]\n"
 
-#: languages/cpp/debugger/variablewidget.cpp:318
+#: languages/cpp/debugger/variablewidget.cpp:311
 #, fuzzy
 msgid "Remember Value"
 msgstr "Nilai tidak sah"
 
-#: languages/cpp/debugger/variablewidget.cpp:323
+#: languages/cpp/debugger/variablewidget.cpp:316
 #, fuzzy
 msgid "Remove Watch Variable"
 msgstr "VBR"
 
-#: languages/cpp/debugger/variablewidget.cpp:327
+#: languages/cpp/debugger/variablewidget.cpp:320
 #, fuzzy
 msgid "Watch Variable"
 msgstr "VBR"
 
-#: languages/cpp/debugger/variablewidget.cpp:332
+#: languages/cpp/debugger/variablewidget.cpp:325
 #, fuzzy
 msgid "Reevaluate Expression"
 msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
 
-#: languages/cpp/debugger/variablewidget.cpp:334
+#: languages/cpp/debugger/variablewidget.cpp:327
 #, fuzzy
 msgid "Remove Expression"
 msgstr "akan membuang %s\n"
 
-#: languages/cpp/debugger/variablewidget.cpp:340
+#: languages/cpp/debugger/variablewidget.cpp:333
 #, fuzzy
 msgid "Data write breakpoint"
 msgstr "Padam giliran dipilih"
 
-#: languages/cpp/debugger/variablewidget.cpp:346
+#: languages/cpp/debugger/variablewidget.cpp:339
 #, fuzzy
 #| msgid "Value"
 msgid "Copy Value"
 msgstr "Nilai"
 
-#: languages/cpp/debugger/variablewidget.cpp:415
-#, fuzzy
-msgid "Recent Expressions"
-msgstr "Ungkapan corak:\n"
-
-#: languages/cpp/debugger/variablewidget.cpp:416
-#, fuzzy
-msgid "Remove All"
-msgstr "Buang semua partisyen yang ada"
-
-#: languages/cpp/debugger/variablewidget.cpp:417
-#, fuzzy
-msgid "Reevaluate All"
-msgstr "Semua Pakej"
-
-#: languages/cpp/debugger/variablewidget.cpp:667
-#, fuzzy
-msgid "Locals"
-msgstr "lokal"
-
-#: languages/cpp/debugger/variablewidget.cpp:1990
-#, fuzzy
-msgid "Watch"
-msgstr "Tonton televisyen"
-
-#: languages/cpp/debugger/memviewdlg.cpp:102
+#: languages/cpp/debugger/memviewdlg.cpp:97
 #, fuzzy
 #| msgid "start"
 msgid "Start"
 msgstr "mula"
 
-#: languages/cpp/debugger/memviewdlg.cpp:108
+#: languages/cpp/debugger/memviewdlg.cpp:103
 #, fuzzy
 msgid "Amount"
 msgstr "ANT-phone"
 
-#: languages/cpp/debugger/memviewdlg.cpp:147
+#: languages/cpp/debugger/memviewdlg.cpp:143
 #, fuzzy
 msgid "Memory view"
 msgstr "Paparan _Pepohon"
 
-#: languages/cpp/debugger/memviewdlg.cpp:360
+#: languages/cpp/debugger/memviewdlg.cpp:356
 #, fuzzy
 msgid "Change memory range"
 msgstr "Nama Volum _Logikal:"
 
-#: languages/cpp/debugger/memviewdlg.cpp:365
+#: languages/cpp/debugger/memviewdlg.cpp:361
 #, fuzzy
 msgid "Reload"
 msgstr "Paparan _Pepohon"
 
-#: languages/cpp/debugger/memviewdlg.cpp:369
+#: languages/cpp/debugger/memviewdlg.cpp:365
 #, fuzzy
 msgid "Close this view"
 msgstr "Projek Glade"
 
-#: languages/cpp/debugger/memviewdlg.cpp:427
+#: languages/cpp/debugger/memviewdlg.cpp:423
 #, fuzzy
 msgid "Special debugger views"
 msgstr "Memproses Pengepala"
@@ -2215,48 +2192,53 @@ msgstr "Memproses Pengepala"
 msgid "Breakpoint"
 msgstr "Senarai Dibenarkan"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:224
+#: languages/cpp/debugger/frameitem.cpp:294
+#, fuzzy
+msgid "Locals"
+msgstr "lokal"
+
+#: languages/cpp/debugger/debuggerplugin.cpp:222
 #, fuzzy
 msgid "Breakpoints"
 msgstr "Senarai Dibenarkan"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:227
+#: languages/cpp/debugger/debuggerplugin.cpp:225
 #, fuzzy
 msgid "Variables"
 msgstr "Pembolehubah Persekitaran"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:230
+#: languages/cpp/debugger/debuggerplugin.cpp:228
 #, fuzzy
 msgid "Frame Stack"
 msgstr "Stack sekarang"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:233
+#: languages/cpp/debugger/debuggerplugin.cpp:231
 #, fuzzy
 #| msgid "Disable"
 msgid "Disassemble"
 msgstr "Matikan"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:236
+#: languages/cpp/debugger/debuggerplugin.cpp:234
 msgid "GDB"
 msgstr "GDB"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:239
+#: languages/cpp/debugger/debuggerplugin.cpp:237
 #, fuzzy
 msgid "Debug views"
 msgstr "Paparan _Pepohon"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:291
-#: languages/cpp/debugger/debuggerplugin.cpp:830
+#: languages/cpp/debugger/debuggerplugin.cpp:289
+#: languages/cpp/debugger/debuggerplugin.cpp:833
 #, fuzzy
 msgid "&Start"
 msgstr "permulaan %s"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:293
+#: languages/cpp/debugger/debuggerplugin.cpp:291
 #, fuzzy
 msgid "Start in debugger"
 msgstr "Nama sudah digunakan"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:294
+#: languages/cpp/debugger/debuggerplugin.cpp:292
 msgid ""
 "<b>Start in debugger</b><p>Starts the debugger with the project's main "
 "executable. You may set some breakpoints before this, or you can interrupt "
@@ -2264,164 +2246,164 @@ msgid ""
 "variables, frame stack, and so on."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:303
+#: languages/cpp/debugger/debuggerplugin.cpp:301
 #, fuzzy
 msgid "&Restart"
 msgstr "ulanghidup"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:304
+#: languages/cpp/debugger/debuggerplugin.cpp:302
 #, fuzzy
 msgid "Restart program"
 msgstr "Keluar program"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:305
+#: languages/cpp/debugger/debuggerplugin.cpp:303
 msgid "<b>Restarts application</b><p>Restarts applications from the beginning."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:313
+#: languages/cpp/debugger/debuggerplugin.cpp:311
 #, fuzzy
 msgid "Sto&p"
 msgstr "Ber&henti"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:314
+#: languages/cpp/debugger/debuggerplugin.cpp:312
 #, fuzzy
 msgid "Stop debugger"
 msgstr "Henti $arahan"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:315
+#: languages/cpp/debugger/debuggerplugin.cpp:313
 msgid "<b>Stop debugger</b><p>Kills the executable and exits the debugger."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:319
+#: languages/cpp/debugger/debuggerplugin.cpp:317
 #, fuzzy
 msgid "Interrupt"
 msgstr "Ganggu"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:320
+#: languages/cpp/debugger/debuggerplugin.cpp:318
 #, fuzzy
 msgid "Interrupt application"
 msgstr "Tambah _aplikasi"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:321
+#: languages/cpp/debugger/debuggerplugin.cpp:319
 msgid ""
 "<b>Interrupt application</b><p>Interrupts the debugged process or current "
 "GDB command."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:325
+#: languages/cpp/debugger/debuggerplugin.cpp:323
 #, fuzzy
 msgid "Run to &Cursor"
 msgstr ""
 "Gagal untuk dilaksanakan:\n"
 "%s"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:326
+#: languages/cpp/debugger/debuggerplugin.cpp:324
 #, fuzzy
 msgid "Run to cursor"
 msgstr ""
 "Gagal untuk dilaksanakan:\n"
 "%s"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:327
+#: languages/cpp/debugger/debuggerplugin.cpp:325
 msgid ""
 "<b>Run to cursor</b><p>Continues execution until the cursor position is "
 "reached."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:332
+#: languages/cpp/debugger/debuggerplugin.cpp:330
 #, fuzzy
 msgid "Set E&xecution Position to Cursor"
 msgstr "Potong dari kedudukan kursor hingga ke akhir fail"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:333
+#: languages/cpp/debugger/debuggerplugin.cpp:331
 #, fuzzy
 msgid "Jump to cursor"
 msgstr ""
 "Gagal untuk dilaksanakan:\n"
 "%s"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:334
+#: languages/cpp/debugger/debuggerplugin.cpp:332
 msgid ""
 "<b>Set Execution Position </b><p>Set the execution pointer to the current "
 "cursor position."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:338
+#: languages/cpp/debugger/debuggerplugin.cpp:336
 #, fuzzy
 msgid "Step &Over"
 msgstr "Lebih 50"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:340
+#: languages/cpp/debugger/debuggerplugin.cpp:338
 #, fuzzy
 msgid "Step over the next line"
 msgstr "Gerak ke baris berikutnya"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:341
+#: languages/cpp/debugger/debuggerplugin.cpp:339
 msgid ""
 "<b>Step over</b><p>Executes one line of source in the current source file. "
 "If the source line is a call to a function the whole function is executed "
 "and the app will stop at the line following the function call."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:350
+#: languages/cpp/debugger/debuggerplugin.cpp:348
 #, fuzzy
 msgid "Step over Ins&truction"
 msgstr "Pilihan pelayan FTP, langkah 2"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:351
+#: languages/cpp/debugger/debuggerplugin.cpp:349
 #, fuzzy
 msgid "Step over instruction"
 msgstr "Pilihan pelayan FTP, langkah 2"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:352
+#: languages/cpp/debugger/debuggerplugin.cpp:350
 msgid ""
 "<b>Step over instruction</b><p>Steps over the next assembly instruction."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:357
+#: languages/cpp/debugger/debuggerplugin.cpp:355
 #, fuzzy
 msgid "Step &Into"
 msgstr "Langkah bersudut:"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:359
+#: languages/cpp/debugger/debuggerplugin.cpp:357
 #, fuzzy
 msgid "Step into the next statement"
 msgstr "Gerak ke baris berikutnya"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:360
+#: languages/cpp/debugger/debuggerplugin.cpp:358
 msgid ""
 "<b>Step into</b><p>Executes exactly one line of source. If the source line "
 "is a call to a function then execution will stop after the function has been "
 "entered."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:368
+#: languages/cpp/debugger/debuggerplugin.cpp:366
 #, fuzzy
 msgid "Step into I&nstruction"
 msgstr "disimpan kedalam fail `%s'"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:369
+#: languages/cpp/debugger/debuggerplugin.cpp:367
 #, fuzzy
 msgid "Step into instruction"
 msgstr "disimpan kedalam fail `%s'"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:370
+#: languages/cpp/debugger/debuggerplugin.cpp:368
 #, fuzzy
 msgid ""
 "<b>Step into instruction</b><p>Steps into the next assembly instruction."
 msgstr "Pindah ke skrin berikutnya"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:375
+#: languages/cpp/debugger/debuggerplugin.cpp:373
 #, fuzzy
 msgid "Step O&ut"
 msgstr "Langkah bersudut:"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:377
+#: languages/cpp/debugger/debuggerplugin.cpp:375
 #, fuzzy
 msgid "Steps out of the current function"
 msgstr "<b>Menerapkan tindakan penapis:</b> "
 
-#: languages/cpp/debugger/debuggerplugin.cpp:378
+#: languages/cpp/debugger/debuggerplugin.cpp:376
 msgid ""
 "<b>Step out</b><p>Executes the application until the currently executing "
 "function is completed. The debugger will then display the line after the "
@@ -2429,34 +2411,34 @@ msgid ""
 "frame (i.e. in main()) then this operation has no effect."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:388
+#: languages/cpp/debugger/debuggerplugin.cpp:386
 #, fuzzy
 msgid "Viewers"
 msgstr "Pemapar"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:389
+#: languages/cpp/debugger/debuggerplugin.cpp:387
 #, fuzzy
 msgid "Debugger viewers"
 msgstr "Lihat status faks"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:390
+#: languages/cpp/debugger/debuggerplugin.cpp:388
 msgid ""
 "<b>Debugger viewers</b><p>Various information about application being "
 "executed. There are 4 views available:<br><b>Memory</b><br><b>Disassemble</"
 "b><br><b>Registers</b><br><b>Libraries</b>"
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:399
+#: languages/cpp/debugger/debuggerplugin.cpp:397
 #, fuzzy
 msgid "Examine Core File..."
 msgstr "mod fail teras?"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:400
+#: languages/cpp/debugger/debuggerplugin.cpp:398
 #, fuzzy
 msgid "Examine core file"
 msgstr "mod fail teras?"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:401
+#: languages/cpp/debugger/debuggerplugin.cpp:399
 msgid ""
 "<b>Examine core file</b><p>This loads a core file, which is typically "
 "created after the application has crashed, e.g. with a segmentation fault. "
@@ -2464,48 +2446,48 @@ msgid ""
 "crashed, allowing you to do a post-mortem analysis."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:412
+#: languages/cpp/debugger/debuggerplugin.cpp:410
 #, fuzzy
 msgid "Attach to process"
 msgstr "Fail dalam proses: %d"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:413
+#: languages/cpp/debugger/debuggerplugin.cpp:411
 msgid "<b>Attach to process</b><p>Attaches the debugger to a running process."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:417
+#: languages/cpp/debugger/debuggerplugin.cpp:415
 #, fuzzy
 msgid "Toggle Breakpoint"
 msgstr "Toggle tambahan awalan"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:418
+#: languages/cpp/debugger/debuggerplugin.cpp:416
 #, fuzzy
 msgid "Toggle breakpoint"
 msgstr "Toggle tambahan awalan"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:419
+#: languages/cpp/debugger/debuggerplugin.cpp:417
 msgid ""
 "<b>Toggle breakpoint</b><p>Toggles the breakpoint at the current line in "
 "editor."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:536
+#: languages/cpp/debugger/debuggerplugin.cpp:534
 #, fuzzy, kde-format
 msgid "Evaluate: %1"
 msgstr "Nilai"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:538
+#: languages/cpp/debugger/debuggerplugin.cpp:536
 msgid ""
 "<b>Evaluate expression</b><p>Shows the value of the expression under the "
 "cursor."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:539
+#: languages/cpp/debugger/debuggerplugin.cpp:537
 #, fuzzy, kde-format
 msgid "Watch: %1"
 msgstr "Tonton televisyen"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:540
+#: languages/cpp/debugger/debuggerplugin.cpp:538
 msgid ""
 "<b>Watch expression</b><p>Adds an expression under the cursor to the "
 "Variables/Watch list."
@@ -2542,22 +2524,22 @@ msgstr "Fail dalam proses: %d"
 msgid "Attaching to process %1"
 msgstr "Fail dalam proses: %d"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:775
+#: languages/cpp/debugger/debuggerplugin.cpp:776
 #, fuzzy
 msgid "Debugger"
 msgstr "Papan Alat Mdk"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:803
+#: languages/cpp/debugger/debuggerplugin.cpp:804
 #, fuzzy
 msgid "Debugger stopped"
 msgstr "%s diberhentikan\n"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:831
+#: languages/cpp/debugger/debuggerplugin.cpp:834
 #, fuzzy
 msgid "Runs the program in the debugger"
 msgstr "Log kepada _Program:"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:832
+#: languages/cpp/debugger/debuggerplugin.cpp:835
 msgid ""
 "Start in debugger\n"
 "\n"
@@ -2566,17 +2548,17 @@ msgid ""
 "running, in order to get information about variables, frame stack, and so on."
 msgstr ""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:846
+#: languages/cpp/debugger/debuggerplugin.cpp:849
 #, fuzzy
 msgid "&Continue"
 msgstr "_Teruskan"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:847
+#: languages/cpp/debugger/debuggerplugin.cpp:850
 #, fuzzy
 msgid "Continues the application execution"
 msgstr "Terima laporan pelaksanaan"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:848
+#: languages/cpp/debugger/debuggerplugin.cpp:851
 msgid ""
 "Continue application execution\n"
 "\n"
@@ -2585,7 +2567,12 @@ msgid ""
 "breakpoint has been activated or the interrupt was pressed)."
 msgstr ""
 
-#: languages/cpp/debugger/stty.cpp:335
+#: languages/cpp/debugger/variablecollection.cpp:193
+#: buildtools/managers/cmake/cmakecachemodel.cpp:15
+msgid "Value"
+msgstr "Nilai"
+
+#: languages/cpp/debugger/stty.cpp:334
 #, fuzzy
 msgid "kdevelop: Debug application console"
 msgstr "Aplikasi webcam GNOME"
@@ -3771,20 +3758,28 @@ msgstr "Editor formula"
 msgid "Object Inspector"
 msgstr "Microsoft Explorer"
 
-#: languages/cpp/debugger/breakpoint.h:133
+#: languages/cpp/debugger/breakpoint.h:132
 #, fuzzy
 msgid "Invalid"
 msgstr "Lokasi Baru"
 
-#: languages/cpp/debugger/breakpoint.h:285
+#: languages/cpp/debugger/breakpoint.h:284
 #, fuzzy
 msgid "Watchpoint"
 msgstr "Toggle tambahan awalan"
 
-#: languages/cpp/debugger/breakpoint.h:309
+#: languages/cpp/debugger/breakpoint.h:308
 #, fuzzy
 msgid "Read Watchpoint"
 msgstr "Toggle tambahan awalan"
+
+#, fuzzy
+#~ msgid "Internal debugger error"
+#~ msgstr "Ralat dalaman.\n"
+
+#, fuzzy
+#~ msgid "Watch"
+#~ msgstr "Tonton televisyen"
 
 #, fuzzy
 #~ msgid "Form"
@@ -7199,10 +7194,6 @@ msgstr "Toggle tambahan awalan"
 
 #~ msgid "Submit"
 #~ msgstr "Hantar"
-
-#, fuzzy
-#~ msgid "Reset"
-#~ msgstr "Ulangtetap"
 
 #, fuzzy
 #~ msgid "&Project type:"
