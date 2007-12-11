@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-10 05:59+0100\n"
+"POT-Creation-Date: 2007-12-11 06:01+0100\n"
 "PO-Revision-Date: 2007-01-18 22:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -1521,7 +1521,7 @@ msgid "Class"
 msgstr "Kelas"
 
 #: languages/cpp/cppduchain/navigationwidget.cpp:222
-#: languages/cpp/debugger/variablecollection.cpp:190
+#: languages/cpp/debugger/variablecollection.cpp:185
 #, fuzzy
 msgid "Variable"
 msgstr "Pembolehubah Persekitaran"
@@ -1537,6 +1537,7 @@ msgid "Namespace alias"
 msgstr "Ruang Diperlukan"
 
 #: languages/cpp/cppduchain/navigationwidget.cpp:232
+#: languages/cpp/debugger/stackmanager.cpp:267
 #, fuzzy
 msgid "Function"
 msgstr "Plot Fungsi"
@@ -1615,6 +1616,22 @@ msgstr "pelbagai pengisytiharan %s"
 #: languages/cpp/cppduchain/navigationwidget.cpp:697
 msgid "not parsed yet"
 msgstr ""
+
+#: languages/cpp/debugger/stackmanager.cpp:250
+#: languages/cpp/debugger/framestackwidget.cpp:529
+#, kde-format
+msgid "Thread %1"
+msgstr ""
+
+#: languages/cpp/debugger/stackmanager.cpp:265
+msgid "ID"
+msgstr ""
+
+#: languages/cpp/debugger/stackmanager.cpp:269
+#, fuzzy
+#| msgid "Source"
+msgid "Source"
+msgstr "Sumber"
 
 #: languages/cpp/debugger/breakpoint.cpp:269
 msgid "Disabled"
@@ -1851,11 +1868,6 @@ msgid ""
 "values in any of the previous calling functions."
 msgstr ""
 
-#: languages/cpp/debugger/framestackwidget.cpp:529
-#, kde-format
-msgid "Thread %1"
-msgstr ""
-
 #: languages/cpp/debugger/variableitem.cpp:871
 #, fuzzy, kde-format
 msgid "<b>Debugger error</b><br>%1"
@@ -1884,7 +1896,7 @@ msgid ""
 msgstr ""
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:240
-#: languages/cpp/debugger/variablecollection.cpp:196
+#: languages/cpp/debugger/variablecollection.cpp:191
 #: buildtools/managers/cmake/cmakecachemodel.cpp:14
 #, fuzzy
 #| msgid "Type:"
@@ -2150,6 +2162,11 @@ msgstr "Padam giliran dipilih"
 #| msgid "Value"
 msgid "Copy Value"
 msgstr "Nilai"
+
+#: languages/cpp/debugger/framestackitem.cpp:39
+#, fuzzy
+msgid "<Loading...>"
+msgstr "%s terlaksana.\n"
 
 #: languages/cpp/debugger/memviewdlg.cpp:97
 #, fuzzy
@@ -2567,7 +2584,7 @@ msgid ""
 "breakpoint has been activated or the interrupt was pressed)."
 msgstr ""
 
-#: languages/cpp/debugger/variablecollection.cpp:193
+#: languages/cpp/debugger/variablecollection.cpp:188
 #: buildtools/managers/cmake/cmakecachemodel.cpp:15
 msgid "Value"
 msgstr "Nilai"
@@ -4427,10 +4444,6 @@ msgstr "Toggle tambahan awalan"
 #~ msgstr "Ralat melaksanakan \"spell\""
 
 #, fuzzy
-#~ msgid "Command running..."
-#~ msgstr "%s terlaksana.\n"
-
-#, fuzzy
 #~ msgid "Select Tool View to Add"
 #~ msgstr "Lihat status faks"
 
@@ -4853,11 +4866,6 @@ msgstr "Toggle tambahan awalan"
 #~| msgid "Port"
 #~ msgid " Abort"
 #~ msgstr "Port"
-
-#, fuzzy
-#~| msgid "Source"
-#~ msgid "Source:"
-#~ msgstr "Sumber"
 
 #, fuzzy
 #~ msgid "Destination:"
