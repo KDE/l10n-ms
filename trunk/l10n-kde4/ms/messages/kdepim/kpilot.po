@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-04 06:20+0100\n"
+"POT-Creation-Date: 2007-12-20 06:14+0100\n"
 "PO-Revision-Date: 2005-11-24 21:18+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -44,6 +44,24 @@ msgstr "<b><em>Perhatian:</em></b><br>"
 #: lib/pilotTodoEntry.cc:157 lib/pilotDateEntry.cc:275
 msgid "Note:\n"
 msgstr "Perhatian:\n"
+
+#: lib/kpilotdevicelinkPrivate.h:304
+msgid " The port does not exist."
+msgstr "Port tidak wujud"
+
+#: lib/kpilotdevicelinkPrivate.h:307
+#, fuzzy
+#| msgid " These is no such device."
+msgid " There is no such device."
+msgstr "Tiada peranti seperti itu."
+
+#: lib/kpilotdevicelinkPrivate.h:310
+msgid " You do not have permission to open the Pilot device."
+msgstr "Anda tidak ada keizinan untuk membuka peranti Pilot."
+
+#: lib/kpilotdevicelinkPrivate.h:314
+msgid " Check Pilot path and permissions."
+msgstr "Semak laluan Pilot dan keizinan."
 
 #: lib/pilotMemo.cc:72
 #, fuzzy, kde-format
@@ -160,67 +178,54 @@ msgstr "Soalan"
 msgid "&Do not ask again"
 msgstr "&Jangan tanya lagi"
 
-#: lib/kpilotdevicelink.cc:294
-msgid " The port does not exist."
-msgstr "Port tidak wujud"
+#: lib/kpilotdevicelink.cc:154
+#, kde-format
+msgid "Could not open device: %1 (will retry)"
+msgstr "Tidak dapat membuka peranti:%1 (akan mencuba lagi)"
 
-#: lib/kpilotdevicelink.cc:297
-#, fuzzy
-#| msgid " These is no such device."
-msgid " There is no such device."
-msgstr "Tiada peranti seperti itu."
-
-#: lib/kpilotdevicelink.cc:300
-msgid " You do not have permission to open the Pilot device."
-msgstr "Anda tidak ada keizinan untuk membuka peranti Pilot."
-
-#: lib/kpilotdevicelink.cc:304
-msgid " Check Pilot path and permissions."
-msgstr "Semak laluan Pilot dan keizinan."
-
-#: lib/kpilotdevicelink.cc:334
+#: lib/kpilotdevicelink.cc:193
 #, kde-format
 msgid "Trying to open device %1..."
 msgstr "Cuba membuka peranti %1..."
 
-#: lib/kpilotdevicelink.cc:377
+#: lib/kpilotdevicelink.cc:247
 msgid "Already listening on that device"
 msgstr "Sedang mendengar peranti"
 
-#: lib/kpilotdevicelink.cc:397
+#: lib/kpilotdevicelink.cc:267
 #, fuzzy, kde-format
 #| msgid "Cannot create socket for communicating with the Pilot"
 msgid "Cannot create socket for communicating with the Pilot (%1)"
 msgstr "Tidak dapat mencipta soket untuk berkomunikasi dengn Pilot"
 
-#: lib/kpilotdevicelink.cc:423
+#: lib/kpilotdevicelink.cc:295
 #, kde-format
 msgid "Cannot open Pilot port \"%1\". "
 msgstr "Tidak dapat membuka port Pilot \"%1\""
 
-#: lib/kpilotdevicelink.cc:456
+#: lib/kpilotdevicelink.cc:397
 #, kde-format
 msgid "Cannot listen on Pilot socket (%1)"
 msgstr "Tidak dapat mendengar soket Pilot (%1)"
 
-#: lib/kpilotdevicelink.cc:480 lib/kpilotdevicelink.cc:494
+#: lib/kpilotdevicelink.cc:417 lib/kpilotdevicelink.cc:432
 #, kde-format
 msgid "Cannot accept Pilot (%1)"
 msgstr "Tidak dapat menerima Pilot (%1)"
 
-#: lib/kpilotdevicelink.cc:494
+#: lib/kpilotdevicelink.cc:433
 msgid "already connected"
 msgstr "sudah disambungkan"
 
-#: lib/kpilotdevicelink.cc:509
+#: lib/kpilotdevicelink.cc:447
 msgid "Unable to read system information from Pilot"
 msgstr "Tidak dapat membaca maklumat sistem dari Pilot"
 
-#: lib/kpilotdevicelink.cc:541
+#: lib/kpilotdevicelink.cc:484
 msgid "Checking last PC..."
 msgstr "Semakan PC terakhir..."
 
-#: lib/kpilotdevicelink.cc:550
+#: lib/kpilotdevicelink.cc:493
 msgid ""
 "Could not read user information from the Pilot. Perhaps you have a password "
 "set on the device?"
@@ -228,21 +233,16 @@ msgstr ""
 "Tidak dapat membaca maklumat pengguna dari Pilot. Mungkinkah anda mempunyai "
 "set kata laluan pada peranti?"
 
-#: lib/kpilotdevicelink.cc:608
-#, kde-format
-msgid "Could not open device: %1 (will retry)"
-msgstr "Tidak dapat membuka peranti:%1 (akan mencuba lagi)"
-
-#: lib/kpilotdevicelink.cc:795
+#: lib/kpilotdevicelink.cc:679
 msgid "The Pilot device is not configured yet."
 msgstr "Peranti Pilot belum dikonfigur."
 
-#: lib/kpilotdevicelink.cc:836
+#: lib/kpilotdevicelink.cc:720
 #, kde-format
 msgid "Pilot device %1 is not read-write."
 msgstr "Peranti Pilot %1 tidak baca tulis"
 
-#: lib/kpilotdevicelink.cc:844
+#: lib/kpilotdevicelink.cc:728
 #, fuzzy, kde-format
 msgid ""
 "Pilot device %1 does not exist. Probably it is a USB device and will appear "
@@ -251,12 +251,12 @@ msgstr ""
 "Peranti Pilot %1 tidak wujud. Ia mungkin peranti USB dan akan muncul semasa "
 "HotSync"
 
-#: lib/kpilotdevicelink.cc:892 lib/kpilotdevicelink.cc:900
+#: lib/kpilotdevicelink.cc:776 lib/kpilotdevicelink.cc:784
 #, kde-format
 msgid "<qt>Cannot install the file &quot;%1&quot;.</qt>"
 msgstr "<qt>Tidak dapat memasang fail  &quot;%1&quot;.</qt>"
 
-#: lib/kpilotdevicelink.cc:971
+#: lib/kpilotdevicelink.cc:855
 msgid "End of HotSync\n"
 msgstr "Penghujung HotSync\n"
 
