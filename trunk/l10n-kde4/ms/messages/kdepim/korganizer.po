@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-27 06:11+0100\n"
+"POT-Creation-Date: 2007-12-28 06:13+0100\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -116,8 +116,8 @@ msgstr "Nama"
 #. i18n: file publishdialog_base.ui line 31
 #. i18n: tag string
 #. i18n: file ./publishdialog_base.ui line 31
-#: koeditordetails.cpp:226 koeditorfreebusy.cpp:273 koeditoralarms.cpp:82
-#: koprefsdialog.cpp:911 rc.cpp:888 rc.cpp:2086
+#: koeditordetails.cpp:226 koeditorfreebusy.cpp:273 koprefsdialog.cpp:911
+#: rc.cpp:888 rc.cpp:2086
 msgid "Email"
 msgstr "E-mel"
 
@@ -1160,75 +1160,95 @@ msgstr "Tidak dapat mencari templat '%1'."
 msgid "Error loading template file '%1'."
 msgstr "Ralat semasa memuatkan fail templat '%1'."
 
-#: koeditoralarms.cpp:76 koprefsdialog.cpp:207 koeditorattachments.cpp:228
+#: koeditoralarms.cpp:78
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "@option unknown alarm type"
 msgid "Unknown"
 msgstr "Tidak diketahui"
 
-#: koeditoralarms.cpp:78
+#: koeditoralarms.cpp:81
+#, fuzzy
+#| msgid "Reminder Dialog"
+msgctxt "@option popup reminder dialog"
 msgid "Reminder Dialog"
 msgstr "Dialog Peringatan"
 
-#: koeditoralarms.cpp:80
+#: koeditoralarms.cpp:84
+msgctxt "@option run application or script"
 msgid "Application/Script"
 msgstr ""
 
-#: koeditoralarms.cpp:84
+#: koeditoralarms.cpp:87
+#, fuzzy
+#| msgid "Email"
+msgctxt "@option send email reminder"
+msgid "Email"
+msgstr "E-mel"
+
+#: koeditoralarms.cpp:90
+#, fuzzy
+#| msgid "Audio"
+msgctxt "@option play a sound"
 msgid "Audio"
 msgstr "Audio"
 
-#: koeditoralarms.cpp:96 printing/calprintdefaultplugins.cpp:329
-#, kde-format
-msgctxt "N days/hours/minutes before/after the start/end"
-msgid "%1 before the start"
-msgstr ""
-
-#: koeditoralarms.cpp:99 printing/calprintdefaultplugins.cpp:333
-#, kde-format
-msgctxt "N days/hours/minutes before/after the start/end"
-msgid "%1 after the start"
-msgstr ""
-
-#: koeditoralarms.cpp:104 printing/calprintdefaultplugins.cpp:339
-#, kde-format
-msgctxt "N days/hours/minutes before/after the start/end"
-msgid "%1 before the end"
-msgstr ""
-
-#: koeditoralarms.cpp:107 printing/calprintdefaultplugins.cpp:343
-#, kde-format
-msgctxt "N days/hours/minutes before/after the start/end"
-msgid "%1 after the end"
-msgstr ""
-
-#: koeditoralarms.cpp:116 printing/calprintdefaultplugins.cpp:352
+#: koeditoralarms.cpp:104
 #, fuzzy, kde-format
+msgctxt "@info N days/hours/minutes before/after the start/end"
+msgid "%1 before the start"
+msgstr "Sebelum Pemulaan"
+
+#: koeditoralarms.cpp:109
+#, fuzzy, kde-format
+msgctxt "@info N days/hours/minutes before/after the start/end"
+msgid "%1 after the start"
+msgstr "Selepas pemulaan"
+
+#: koeditoralarms.cpp:116
+#, fuzzy, kde-format
+msgctxt "@info N days/hours/minutes before/after the start/end"
+msgid "%1 before the end"
+msgstr "sebelum tamat"
+
+#: koeditoralarms.cpp:121
+#, fuzzy, kde-format
+msgctxt "@info N days/hours/minutes before/after the start/end"
+msgid "%1 after the end"
+msgstr "Selepas Tamat"
+
+#: koeditoralarms.cpp:132
+#, fuzzy, kde-format
+msgctxt "@info alarm offset specified in days"
 msgid "1 day"
 msgid_plural "%1 days"
 msgstr[0] "_n: 1 hari"
 msgstr[1] "%1 hari"
 
-#: koeditoralarms.cpp:119 printing/calprintdefaultplugins.cpp:355
-#: koeditorgeneralevent.cpp:430
+#: koeditoralarms.cpp:137
 #, fuzzy, kde-format
+msgctxt "@info alarm offset specified in hours"
 msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] "_n: 1 jam"
 msgstr[1] "%1 jam"
 
-#: koeditoralarms.cpp:122 koprefsdialog.cpp:368
-#: printing/calprintdefaultplugins.cpp:358 koeditorgeneralevent.cpp:437
+#: koeditoralarms.cpp:142
 #, fuzzy, kde-format
+msgctxt "@info alarm offset specified in minutes"
 msgid "1 minute"
 msgid_plural "%1 minutes"
 msgstr[0] "_n: 1 minit"
 msgstr[1] "%1 minit"
 
-#: koeditoralarms.cpp:128
+#: koeditoralarms.cpp:148
+msgctxt "@info yes, the alarm repeats"
 msgid "Yes"
 msgstr ""
 
-#: koeditoralarms.cpp:137
+#: koeditoralarms.cpp:156
 #, fuzzy
+msgctxt "@title"
 msgid "Edit Reminders"
 msgstr "&Peringatan"
 
@@ -1363,6 +1383,10 @@ msgid ""
 "KOrganizer will automatically adjust for daylight savings."
 msgstr ""
 
+#: koprefsdialog.cpp:207 koeditorattachments.cpp:228
+msgid "Unknown"
+msgstr "Tidak diketahui"
+
 #: koprefsdialog.cpp:219
 msgid "[No selection]"
 msgstr "[Tiada pilihan]"
@@ -1410,6 +1434,14 @@ msgstr ""
 msgid "Default values"
 msgstr "Kalendar Piawai"
 
+#: koprefsdialog.cpp:368 printing/calprintdefaultplugins.cpp:358
+#: koeditorgeneralevent.cpp:437
+#, fuzzy, kde-format
+msgid "1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "_n: 1 minit"
+msgstr[1] "%1 minit"
+
 #: koprefsdialog.cpp:368
 msgid "5 minutes"
 msgstr "5 minit"
@@ -1435,8 +1467,8 @@ msgstr "Waktu bunyi penggera piawai:"
 msgid "Enter the default reminder time here."
 msgstr ""
 
-#: koprefsdialog.cpp:475 kojournaleditor.cpp:79 exportwebdialog.cpp:143
-#: koeventeditor.cpp:113 kotodoeditor.cpp:94
+#: koprefsdialog.cpp:475 kojournaleditor.cpp:79 koeventeditor.cpp:113
+#: kotodoeditor.cpp:94
 msgid "General"
 msgstr "Umum"
 
@@ -2989,13 +3021,14 @@ msgstr "Cari Dalam"
 msgid "Any category"
 msgstr ""
 
-#: freebusyurldialog.cpp:48
+#: freebusyurldialog.cpp:47
 msgid "Edit Free/Busy Location"
 msgstr "Edit Lokasi Lapang/Sibuk"
 
-#: freebusyurldialog.cpp:77
-#, kde-format
-msgid "Location of Free/Busy information for %1 <%2>:"
+#: freebusyurldialog.cpp:75
+#, fuzzy, kde-format
+#| msgid "Location of Free/Busy information for %1 <%2>:"
+msgid "Location of Free/Busy information for %1 <placeholder>%2</placeholder>:"
 msgstr "Lokasi maklumat Lapang/Sibuk untuk %1 <%2>:"
 
 #: kojournaleditor.cpp:50
@@ -6047,7 +6080,7 @@ msgstr "Entri &jurnal"
 #. i18n: file searchdialog_base.ui line 99
 #. i18n: tag string
 #. i18n: file ./searchdialog_base.ui line 99
-#: rc.cpp:927 rc.cpp:1156 exportwebdialog.cpp:147
+#: rc.cpp:927 rc.cpp:1156 exportwebdialog.cpp:149
 msgid "Date Range"
 msgstr "Julat Tarikh"
 
@@ -7048,7 +7081,7 @@ msgstr "Eksport kalendar sebagai Laman Web"
 msgid "Export"
 msgstr "&Eksport"
 
-#: exportwebdialog.cpp:133
+#: exportwebdialog.cpp:134
 msgid ""
 "You are about to set all preferences to default values. All custom "
 "modifications will be lost."
@@ -7056,27 +7089,34 @@ msgstr ""
 "Anda akan mengeset semua keutamaan menjadi nilai piawai. Semua "
 "pengubahsuaian kebiasaan akan hilang."
 
-#: exportwebdialog.cpp:134
+#: exportwebdialog.cpp:136
 msgid "Setting Default Preferences"
 msgstr "Mengeset Keutamaan Piawai"
 
-#: exportwebdialog.cpp:135
+#: exportwebdialog.cpp:137
 msgid "Reset to Defaults"
 msgstr "Set semula ke piawai"
 
-#: exportwebdialog.cpp:159
+#: exportwebdialog.cpp:145
+#, fuzzy
+#| msgid "General"
+msgctxt "general settings for html export"
+msgid "General"
+msgstr "Umum"
+
+#: exportwebdialog.cpp:161
 msgid "View Type"
 msgstr "Paparkan Jenis"
 
-#: exportwebdialog.cpp:172
+#: exportwebdialog.cpp:174
 msgid "Destination"
 msgstr "Destinasi"
 
-#: exportwebdialog.cpp:195
+#: exportwebdialog.cpp:197
 msgid "To-dos"
 msgstr "Tugasan"
 
-#: exportwebdialog.cpp:218
+#: exportwebdialog.cpp:220
 msgid "Events"
 msgstr "Peristiwa"
 
@@ -7448,6 +7488,44 @@ msgid "Reminder: "
 msgid_plural "%1 reminders: "
 msgstr[0] "_n: 1 minit"
 msgstr[1] "%1 minit"
+
+#: printing/calprintdefaultplugins.cpp:329
+#, kde-format
+msgctxt "N days/hours/minutes before/after the start/end"
+msgid "%1 before the start"
+msgstr ""
+
+#: printing/calprintdefaultplugins.cpp:333
+#, kde-format
+msgctxt "N days/hours/minutes before/after the start/end"
+msgid "%1 after the start"
+msgstr ""
+
+#: printing/calprintdefaultplugins.cpp:339
+#, kde-format
+msgctxt "N days/hours/minutes before/after the start/end"
+msgid "%1 before the end"
+msgstr ""
+
+#: printing/calprintdefaultplugins.cpp:343
+#, kde-format
+msgctxt "N days/hours/minutes before/after the start/end"
+msgid "%1 after the end"
+msgstr ""
+
+#: printing/calprintdefaultplugins.cpp:352
+#, fuzzy, kde-format
+msgid "1 day"
+msgid_plural "%1 days"
+msgstr[0] "_n: 1 hari"
+msgstr[1] "%1 hari"
+
+#: printing/calprintdefaultplugins.cpp:355 koeditorgeneralevent.cpp:430
+#, fuzzy, kde-format
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "_n: 1 jam"
+msgstr[1] "%1 jam"
 
 #: printing/calprintdefaultplugins.cpp:362
 #: printing/calprintdefaultplugins.cpp:502
