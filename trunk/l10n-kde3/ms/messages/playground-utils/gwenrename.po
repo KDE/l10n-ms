@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gwenrename\n"
-"POT-Creation-Date: 2007-12-28 09:37+0100\n"
+"POT-Creation-Date: 2007-12-29 10:03+0100\n"
 "PO-Revision-Date: 2007-07-29 01:26+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -24,35 +24,39 @@ msgid ""
 "Your emails"
 msgstr "<sharuzzaman@myrealbox.com>"
 
-#: main.cpp:50
+#: main.cpp:55
 #, fuzzy
 msgid "A tool for renaming files"
 msgstr "Alatan untuk pengguna eBay"
 
-#: main.cpp:55
+#: main.cpp:60
 #, fuzzy
 msgid "Disable profiles"
 msgstr "Menukar Profil"
 
-#: main.cpp:56
+#: main.cpp:61
 #, fuzzy
-msgid "File(s) to be renamed"
+msgid "File(s) to be renamed, or"
 msgstr ""
 "%s: fail terlalu pendek untuk menjadi fail gmon\n"
 
-#. i18n: file ./rename.ui line 16
-#: main.cpp:62 rc.cpp:103
+#: main.cpp:62
+#, fuzzy
+msgid "Folders to be renamed, or"
+msgstr ""
+"%s: fail terlalu pendek untuk menjadi fail gmon\n"
+
+#: main.cpp:63
+msgid "Location of files to rename"
+msgstr ""
+
+#. i18n: file ./initaskmode.ui line 16
+#: main.cpp:70 rc.cpp:46 rc.cpp:137
 #, no-c-format
 msgid "GwenRename"
 msgstr ""
 
-#: main.cpp:76 main.cpp:84
-#, fuzzy
-msgid "No input files specified..."
-msgstr ""
-"Tiada nama pengguna dinyatakan.\n"
-
-#: main.cpp:88 main.cpp:158 rename.ui.h:2326
+#: main.cpp:115 main.cpp:219 main.cpp:229 main.cpp:233 rename.ui.h:2335
 msgid ""
 "Memory allocation error\n"
 "\n"
@@ -60,44 +64,55 @@ msgid ""
 "applications and try again"
 msgstr ""
 
-#: main.cpp:97
+#: main.cpp:125
+msgid ""
+"<p>The folder <b>%1</b> is the only parameter passed to <b>GwenRename</b>."
+"<br>"
+"<br>Do you want to rename this folder, or the files contained in it?</p>"
+msgstr ""
+
+#: main.cpp:153
 msgid ""
 "File '%1' does not exist\n"
 "Please check your selection and try again"
 msgstr ""
 
-#: main.cpp:104
+#: main.cpp:160
 msgid ""
 "File '%1' can not be renamed\n"
 "You don't have write permission to this file"
 msgstr ""
 
-#: main.cpp:113
+#: main.cpp:169
 msgid ""
 "Invalid file type selected\n"
 "You can rename normal files or directories"
 msgstr ""
 
-#: main.cpp:117
+#: main.cpp:173
 msgid ""
 "Invalid selection\n"
 "You can not mix files and directoriesin the same renaming function"
 msgstr ""
 
-#: main.cpp:122
+#: main.cpp:178
 msgid ""
 "Invalid selection\n"
 "The files must be in the same directory"
 msgstr ""
 
-#: main.cpp:129
+#: main.cpp:185
 msgid ""
 "Invalid selection\n"
 "You can't rename the current or parent directory"
 msgstr ""
 
+#: main.cpp:225
+msgid "<p>Folder <b>%1</b> is empty!!!</p>"
+msgstr ""
+
 #. i18n: file ./timestamp.ui line 16
-#: rc.cpp:3 rc.cpp:324
+#: rc.cpp:3 rc.cpp:358
 #, no-c-format
 msgid "Timestamping"
 msgstr ""
@@ -149,7 +164,7 @@ msgstr ""
 " "
 
 #. i18n: file ./timestamp.ui line 152
-#: rc.cpp:27 rc.cpp:301
+#: rc.cpp:27 rc.cpp:335
 #, fuzzy, no-c-format
 msgid "Example:"
 msgstr "EXAMPLE.COM"
@@ -166,14 +181,38 @@ msgstr "Mesti nyatakan nilai"
 msgid "Use Exif info when available"
 msgstr ""
 
+#. i18n: file ./initaskmode.ui line 116
+#: rc.cpp:49
+#, fuzzy, no-c-format
+msgid "Rename &folder"
+msgstr "Profil aktif: %s"
+
+#. i18n: file ./initaskmode.ui line 119
+#: rc.cpp:52
+#, fuzzy, no-c-format
+msgid "Alt+F"
+msgstr "Alt+C"
+
+#. i18n: file ./initaskmode.ui line 127
+#: rc.cpp:55
+#, fuzzy, no-c-format
+msgid "&Rename files"
+msgstr "Profil aktif: %s"
+
+#. i18n: file ./initaskmode.ui line 130
+#: rc.cpp:58
+#, fuzzy, no-c-format
+msgid "Alt+R"
+msgstr "Alt+C"
+
 #. i18n: file ./multiselecttool.ui line 16
-#: rc.cpp:46
+#: rc.cpp:65
 #, no-c-format
 msgid "Search string"
 msgstr ""
 
 #. i18n: file ./multiselecttool.ui line 51
-#: rc.cpp:49
+#: rc.cpp:68
 #, no-c-format
 msgid ""
 "<p>Please insert a string to be used to select items in <b>GwenRename</b> "
@@ -181,37 +220,37 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./multiselecttool.ui line 94
-#: rc.cpp:52
+#: rc.cpp:71
 #, no-c-format
 msgid "Search &string:"
 msgstr ""
 
 #. i18n: file ./multiselecttool.ui line 118
-#: rc.cpp:55
+#: rc.cpp:74
 #, no-c-format
 msgid "&Case sensitive search"
 msgstr ""
 
 #. i18n: file ./multiselecttool.ui line 121
-#: rc.cpp:58 rc.cpp:74 rc.cpp:295
+#: rc.cpp:77 rc.cpp:93 rc.cpp:329
 #, no-c-format
 msgid "Alt+C"
 msgstr "Alt+C"
 
 #. i18n: file ./multiselecttool.ui line 129
-#: rc.cpp:61
+#: rc.cpp:80
 #, no-c-format
 msgid "&Invert selection in item list"
 msgstr ""
 
 #. i18n: file ./multiselecttool.ui line 132
-#: rc.cpp:64
+#: rc.cpp:83
 #, fuzzy, no-c-format
 msgid "Alt+I"
 msgstr "Alt+A"
 
 #. i18n: file ./multiselecttool.ui line 136
-#: rc.cpp:67
+#: rc.cpp:86
 #, no-c-format
 msgid ""
 "<p><b>Invert selection in item list</b>"
@@ -223,13 +262,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./multiselecttool.ui line 144
-#: rc.cpp:71
+#: rc.cpp:90
 #, no-c-format
 msgid "Add to &current selection"
 msgstr ""
 
 #. i18n: file ./multiselecttool.ui line 153
-#: rc.cpp:77
+#: rc.cpp:96
 #, no-c-format
 msgid ""
 "<p><b>Add to &current selection</b>"
@@ -248,338 +287,350 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./multiselecttool.ui line 169
-#: rc.cpp:83
+#: rc.cpp:102
 #, fuzzy, no-c-format
 msgid "Regular e&xpression"
 msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
 
 #. i18n: file ./multiselecttool.ui line 172
-#: rc.cpp:86
+#: rc.cpp:105
 #, fuzzy, no-c-format
 msgid "Alt+X"
 msgstr "Alt+A"
 
 #. i18n: file ./multiselecttool.ui line 214
-#: rc.cpp:89
+#: rc.cpp:108
 #, no-c-format
 msgid "&Edit..."
 msgstr ""
 
 #. i18n: file ./multiselecttool.ui line 217
-#: rc.cpp:92
+#: rc.cpp:111
 #, fuzzy, no-c-format
 msgid "Alt+E"
 msgstr "Alt+A"
 
+#. i18n: file ./inputdir.ui line 16
+#: inputdir.ui.h:22 rc.cpp:122
+#, no-c-format
+msgid "Folder selection"
+msgstr ""
+
+#. i18n: file ./inputdir.ui line 78
+#: rc.cpp:125
+#, no-c-format
+msgid "Please select the location of the files you want to rename"
+msgstr ""
+
 #. i18n: file ./rename.ui line 69
-#: rc.cpp:106
+#: rc.cpp:140
 #, fuzzy, no-c-format
 msgid "Show all items"
 msgstr ""
 "-c            papar semua item diketahui\n"
 
 #. i18n: file ./rename.ui line 112
-#: rc.cpp:110
+#: rc.cpp:144
 #, no-c-format
 msgid "Micscelaneous"
 msgstr ""
 
 #. i18n: file ./rename.ui line 123
-#: rc.cpp:113
+#: rc.cpp:147
 #, fuzzy, no-c-format
 msgid "Use numeric sorting"
 msgstr "hujah bukan-numerik"
 
 #. i18n: file ./rename.ui line 156
-#: rc.cpp:117
+#: rc.cpp:151
 #, fuzzy, no-c-format
 msgid "Shuffle directories"
 msgstr "Direktori tidak sah"
 
 #. i18n: file ./rename.ui line 235
-#: rc.cpp:124
+#: rc.cpp:158
 #, fuzzy, no-c-format
 msgid "<b>Space manipulation</b>"
 msgstr "Ruang Diperlukan"
 
 #. i18n: file ./rename.ui line 292
-#: rc.cpp:127
+#: rc.cpp:161
 #, fuzzy, no-c-format
 msgid "Convert space characters to"
 msgstr "Tukar Teks ke Postscript"
 
 #. i18n: file ./rename.ui line 325
-#: rc.cpp:130 rc.cpp:141
+#: rc.cpp:164 rc.cpp:175
 #, no-c-format
 msgid "underscore"
 msgstr ""
 
 #. i18n: file ./rename.ui line 353
-#: rc.cpp:134 rc.cpp:144
+#: rc.cpp:168 rc.cpp:178
 #, no-c-format
 msgid "dash"
 msgstr ""
 
 #. i18n: file ./rename.ui line 382
-#: rc.cpp:138
+#: rc.cpp:172
 #, fuzzy, no-c-format
 msgid "Convert from"
 msgstr "Tapisan From:"
 
 #. i18n: file ./rename.ui line 422
-#: rc.cpp:147
+#: rc.cpp:181
 #, fuzzy, no-c-format
 msgid "to space characters"
 msgstr "Aksara per inci"
 
 #. i18n: file ./rename.ui line 449
-#: rc.cpp:150
+#: rc.cpp:184
 #, fuzzy, no-c-format
 msgid "Extension"
 msgstr "Penghujungan"
 
 #. i18n: file ./rename.ui line 471
-#: rc.cpp:153
+#: rc.cpp:187
 #, fuzzy, no-c-format
 msgid "Use original extension"
 msgstr "Guna sambungan Xinerama"
 
 #. i18n: file ./rename.ui line 502
-#: rc.cpp:156
+#: rc.cpp:190
 #, fuzzy, no-c-format
 msgid "New extension:"
 msgstr "Shell Baru"
 
 #. i18n: file ./rename.ui line 565
-#: rc.cpp:159 rc.cpp:205
+#: rc.cpp:193 rc.cpp:239
 #, fuzzy, no-c-format
 msgid "Convert to lowercase"
 msgstr "Tukar Teks ke Postscript"
 
 #. i18n: file ./rename.ui line 579
-#: rc.cpp:163 rc.cpp:209
+#: rc.cpp:197 rc.cpp:243
 #, fuzzy, no-c-format
 msgid "Convert to uppercase"
 msgstr "Tukar Teks ke Postscript"
 
 #. i18n: file ./rename.ui line 608
-#: rc.cpp:167
+#: rc.cpp:201
 #, fuzzy, no-c-format
 msgid "Use compound extensions"
 msgstr "Pustaka Lanjutan Eazel."
 
 #. i18n: file ./rename.ui line 653
-#: rc.cpp:171
+#: rc.cpp:205
 #, fuzzy, no-c-format
 msgid "New extension"
 msgstr "Shell Baru"
 
 #. i18n: file ./rename.ui line 682
-#: rc.cpp:175
+#: rc.cpp:209
 #, fuzzy, no-c-format
 msgid "Save extension"
 msgstr "Simpan Tetapan"
 
 #. i18n: file ./rename.ui line 708
-#: rc.cpp:179
+#: rc.cpp:213
 #, fuzzy, no-c-format
 msgid "Delete extension"
 msgstr "Kepastian Pemadaman"
 
 #. i18n: file ./rename.ui line 720
-#: rc.cpp:182
+#: rc.cpp:216
 #, fuzzy, no-c-format
 msgid "Prefix - Suffix"
 msgstr "prefix tidak dikenali: %s"
 
 #. i18n: file ./rename.ui line 747
-#: rc.cpp:185
+#: rc.cpp:219
 #, fuzzy, no-c-format
 msgid "Prefix:"
 msgstr "Prefiks"
 
 #. i18n: file ./rename.ui line 761
-#: rc.cpp:188
+#: rc.cpp:222
 #, fuzzy, no-c-format
 msgid "Suffix:"
 msgstr "Suffik penyempurnaan gelaran"
 
 #. i18n: file ./rename.ui line 836
-#: rc.cpp:192 rc.cpp:196
+#: rc.cpp:226 rc.cpp:230
 #, fuzzy, no-c-format
 msgid "Use time-stamping info"
 msgstr "_Guna Sumber Masa Tempatan"
 
 #. i18n: file ./rename.ui line 924
-#: rc.cpp:199
+#: rc.cpp:233
 #, no-c-format
 msgid "Name"
 msgstr "Nama"
 
 #. i18n: file ./rename.ui line 946
-#: rc.cpp:202
+#: rc.cpp:236
 #, fuzzy, no-c-format
 msgid "Use original name"
 msgstr "Nama sudah digunakan"
 
 #. i18n: file ./rename.ui line 1070
-#: rc.cpp:212
+#: rc.cpp:246
 #, fuzzy, no-c-format
 msgid "Capitalize first letter"
 msgstr "Jurucipta Pertama Kali"
 
 #. i18n: file ./rename.ui line 1087
-#: rc.cpp:216
+#: rc.cpp:250
 #, fuzzy, no-c-format
 msgid "Capitalize starting letters"
 msgstr "Jenis huruf bertanda tekanan"
 
 #. i18n: file ./rename.ui line 1124
-#: rc.cpp:219
+#: rc.cpp:253
 #, fuzzy, no-c-format
 msgid "Specify name:"
 msgstr "Sila nyatakan nama pengguna"
 
 #. i18n: file ./rename.ui line 1184
-#: rc.cpp:224
+#: rc.cpp:258
 #, fuzzy, no-c-format
 msgid "Use part of the original name"
 msgstr "nama pengguna/kumpulan sedang digunakan"
 
 #. i18n: file ./rename.ui line 1199
-#: rc.cpp:227
+#: rc.cpp:261
 #, no-c-format
 msgid "Counter"
 msgstr ""
 
 #. i18n: file ./rename.ui line 1210
-#: rc.cpp:230
+#: rc.cpp:264
 #, fuzzy, no-c-format
 msgid "Enable Counter"
 msgstr "Hidupkan N_IS"
 
 #. i18n: file ./rename.ui line 1254
-#: rc.cpp:233 rename.ui.h:605 rename.ui.h:615
+#: rc.cpp:267 rename.ui.h:612 rename.ui.h:622
 #, fuzzy, no-c-format
 msgid "Start:"
 msgstr "Mula"
 
 #. i18n: file ./rename.ui line 1265
-#: rc.cpp:236
+#: rc.cpp:270
 #, fuzzy, no-c-format
 msgid "Step:"
 msgstr "Langkah bersudut:"
 
 #. i18n: file ./rename.ui line 1276
-#: rc.cpp:239
+#: rc.cpp:273
 #, fuzzy, no-c-format
 msgid "Number of Digits:"
 msgstr "Numbor peranti"
 
 #. i18n: file ./rename.ui line 1393
-#: rc.cpp:242
+#: rc.cpp:276
 #, fuzzy, no-c-format
 msgid "Same number of digits"
 msgstr "keyboard|Arab (digit)"
 
 #. i18n: file ./rename.ui line 1427
-#: rc.cpp:245
+#: rc.cpp:279
 #, fuzzy, no-c-format
 msgid "Use 'relaxed' numbering"
 msgstr "Sila guna mod teks"
 
 #. i18n: file ./rename.ui line 1447
-#: rc.cpp:249
+#: rc.cpp:283
 #, fuzzy, no-c-format
 msgid "Profiles"
 msgstr "Profi:"
 
 #. i18n: file ./rename.ui line 1469
-#: rc.cpp:252
+#: rc.cpp:286
 #, fuzzy, no-c-format
 msgid "Use profiles"
 msgstr "Menukar Profil"
 
 #. i18n: file ./rename.ui line 1589
-#: rc.cpp:257
+#: rc.cpp:291
 #, fuzzy, no-c-format
 msgid "Load default profile"
 msgstr "Menukar ke profil %s"
 
 #. i18n: file ./rename.ui line 1618
-#: rc.cpp:261
+#: rc.cpp:295
 #, fuzzy, no-c-format
 msgid "Use as default profile"
 msgstr "Guna _GRUB sebagai pemuat but"
 
 #. i18n: file ./rename.ui line 1664
-#: rc.cpp:265 rename.ui.h:196
+#: rc.cpp:299 rename.ui.h:198
 #, fuzzy, no-c-format
 msgid "New profile"
 msgstr "Profil Baru"
 
 #. i18n: file ./rename.ui line 1693
-#: rc.cpp:269
+#: rc.cpp:303
 #, fuzzy, no-c-format
 msgid "Rename profile"
 msgstr "Profil aktif: %s"
 
 #. i18n: file ./rename.ui line 1722
-#: rc.cpp:273
+#: rc.cpp:307
 #, fuzzy, no-c-format
 msgid "Save profile"
 msgstr "Profil aktif: %s"
 
 #. i18n: file ./rename.ui line 1751
-#: rc.cpp:277
+#: rc.cpp:311
 #, no-c-format
 msgid "Delete profile"
 msgstr "Padam profil"
 
 #. i18n: file ./rename.ui line 1794
-#: rc.cpp:283
+#: rc.cpp:317
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
 #. i18n: file ./rename.ui line 1828
-#: rc.cpp:289
+#: rc.cpp:323
 #, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
 
 #. i18n: file ./namepartbase.ui line 24
-#: rc.cpp:298
+#: rc.cpp:332
 #, fuzzy, no-c-format
 msgid "Select part of name"
 msgstr "Nama Volum _Logikal:"
 
 #. i18n: file ./namepartbase.ui line 128
-#: rc.cpp:304
+#: rc.cpp:338
 #, fuzzy, no-c-format
 msgid "Prefix"
 msgstr "Prefiks"
 
 #. i18n: file ./namepartbase.ui line 155
-#: rc.cpp:307
+#: rc.cpp:341
 #, fuzzy, no-c-format
 msgid "From character:"
 msgstr "Pilih Aksara"
 
 #. i18n: file ./namepartbase.ui line 166
-#: rc.cpp:310
+#: rc.cpp:344
 #, fuzzy, no-c-format
 msgid "Number of characters:"
 msgstr "Aksara Khas"
 
 #. i18n: file ./namepartbase.ui line 177
-#: rc.cpp:313
+#: rc.cpp:347
 #, fuzzy, no-c-format
 msgid "Until you find a:"
 msgstr "Cari braket sepadan"
 
 #. i18n: file ./fabout.ui line 173
-#: rc.cpp:331
+#: rc.cpp:365
 #, no-c-format
 msgid ""
 "<center>A tool for renaming files"
@@ -589,13 +640,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./fabout.ui line 243
-#: rc.cpp:336
+#: rc.cpp:370
 #, fuzzy, no-c-format
 msgid "&Thanks To"
 msgstr "Terima kasih khas kepada:"
 
 #. i18n: file ./fabout.ui line 270
-#: rc.cpp:339
+#: rc.cpp:373
 #, fuzzy, no-c-format
 msgid "&License Agreement"
 msgstr "Perjanjian Lesen"
@@ -638,69 +689,69 @@ msgstr ""
 msgid "T&ranslation"
 msgstr ""
 
-#: rename.ui.h:131 rename.ui.h:154
+#: rename.ui.h:132 rename.ui.h:156
 msgid "Multiple file selection"
 msgstr ""
 
-#: rename.ui.h:132
+#: rename.ui.h:133
 #, fuzzy
 msgid "All items"
 msgstr ""
 "-c            papar semua item diketahui\n"
 
-#: rename.ui.h:133
+#: rename.ui.h:134
 #, fuzzy
 msgid "All items of selected type"
 msgstr "<b>Peranti Dipilih</b>"
 
-#: rename.ui.h:135
+#: rename.ui.h:137
 msgid "Invert current selection"
 msgstr ""
 
-#: rename.ui.h:137
+#: rename.ui.h:139
 msgid "Items containing a string"
 msgstr ""
 
-#: rename.ui.h:140
+#: rename.ui.h:142
 #, fuzzy
 msgid "Manage files"
 msgstr "Fail Log"
 
-#: rename.ui.h:143
+#: rename.ui.h:145
 #, fuzzy
 msgid "Add to list"
 msgstr "senarai ke fail"
 
-#: rename.ui.h:146
+#: rename.ui.h:148
 #, fuzzy
 msgid "Remove from list"
 msgstr "Buang hos ini daripada senarai"
 
-#: rename.ui.h:159
+#: rename.ui.h:161
 msgid "Adjust part of the original name"
 msgstr ""
 
-#: rename.ui.h:184
+#: rename.ui.h:186
 #, fuzzy
 msgid "Original filename"
 msgstr "nama fail adalah %s"
 
-#: rename.ui.h:185
+#: rename.ui.h:187
 #, fuzzy
 msgid "New filename"
 msgstr "Namafail Baru"
 
-#: rename.ui.h:206 rename.ui.h:2506
+#: rename.ui.h:208 rename.ui.h:488 rename.ui.h:2515
 #, fuzzy
 msgid "%1/%2 items selected"
 msgstr "<b>Peranti Dipilih</b>"
 
-#: rename.ui.h:616
+#: rename.ui.h:623
 #, fuzzy
 msgid "End:"
 msgstr "Akhir"
 
-#: rename.ui.h:1012
+#: rename.ui.h:1019
 #, fuzzy
 msgid ""
 "A profile named \"%1\" already exists.\n"
@@ -709,14 +760,14 @@ msgstr ""
 "Hos maya bernama \"%s\" telah wujud.\n"
 "Sila gunakan nama lain untuk hos maya ini."
 
-#: rename.ui.h:2276
+#: rename.ui.h:2285
 msgid ""
 "Renaming process error\n"
 "\n"
 "No files have been renamed"
 msgstr ""
 
-#: rename.ui.h:2313
+#: rename.ui.h:2322
 msgid ""
 "Error renaming file \"%1\"\n"
 "\n"
@@ -724,7 +775,7 @@ msgid ""
 "directory"
 msgstr ""
 
-#: rename.ui.h:2329
+#: rename.ui.h:2338
 msgid ""
 "Icon not found\n"
 "\n"
@@ -732,7 +783,7 @@ msgid ""
 "check your installation"
 msgstr ""
 
-#: rename.ui.h:2331
+#: rename.ui.h:2340
 msgid ""
 "Icons not found\n"
 "\n"
@@ -740,27 +791,27 @@ msgid ""
 "Please check your installation"
 msgstr ""
 
-#: rename.ui.h:2462
+#: rename.ui.h:2471
 msgid "Item <b>%1</b> is of wrong type"
 msgstr ""
 
-#: rename.ui.h:2470
+#: rename.ui.h:2479
 msgid "Item <b>%1</b> is not writable"
 msgstr ""
 
-#: rename.ui.h:2478
+#: rename.ui.h:2487
 msgid "Item <b>%1</b> no longer exists"
 msgstr ""
 
-#: rename.ui.h:2492 rename.ui.h:2494
+#: rename.ui.h:2501 rename.ui.h:2503
 msgid "The following problems occured:"
 msgstr ""
 
-#: rename.ui.h:2492
+#: rename.ui.h:2501
 msgid "(not displaying %1 more problems)"
 msgstr ""
 
-#: rename.ui.h:2492 rename.ui.h:2494
+#: rename.ui.h:2501 rename.ui.h:2503
 msgid "Items present in this list will not be available for renaming!!!"
 msgstr ""
 
@@ -891,3 +942,7 @@ msgstr "Sumber"
 #, fuzzy
 msgid "Other..."
 msgstr "Lain-lain"
+
+#, fuzzy
+#~ msgid "No input files specified..."
+#~ msgstr "Tiada nama pengguna dinyatakan.\n"
