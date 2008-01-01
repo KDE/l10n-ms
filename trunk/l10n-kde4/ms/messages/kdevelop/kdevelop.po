@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-31 06:16+0100\n"
+"POT-Creation-Date: 2008-01-01 06:16+0100\n"
 "PO-Revision-Date: 2007-01-18 22:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -1659,10 +1659,22 @@ msgstr ""
 msgid "Folder: \"%1\"  Command: \"%2\"Output: \"%3\""
 msgstr ""
 
-#: languages/cpp/preprocessjob.cpp:124
+#: languages/cpp/preprocessjob.cpp:133
 #, fuzzy, kde-format
 msgid "Could not open file '%1'"
 msgstr "Tidak dapat membaca fail %s."
+
+#: languages/cpp/preprocessjob.cpp:374
+#, fuzzy, kde-format
+msgid "Included file was not found: %1"
+msgstr "Pemindahan Fail (FTP)"
+
+#: languages/cpp/preprocessjob.cpp:375
+#, fuzzy, kde-format
+msgid ""
+"Searched include path:\n"
+"%1"
+msgstr "ralat pada carian ungkapan biasa (regexp)"
 
 #: languages/cpp/quickopen.cpp:196
 #, fuzzy
@@ -1700,24 +1712,31 @@ msgstr "Laluan SFS"
 msgid "Includers"
 msgstr "terlalu banyak masukan"
 
-#: languages/cpp/cpplanguagesupport.cpp:155
+#: languages/cpp/cpplanguagesupport.cpp:156
 #, fuzzy
 msgid "Files"
 msgstr "Fail"
 
-#: languages/cpp/cpplanguagesupport.cpp:327
+#: languages/cpp/cpplanguagesupport.cpp:340
 msgid "Build-manager did not return an include-path"
 msgstr ""
 
-#: languages/cpp/cpplanguagesupport.cpp:328
+#: languages/cpp/cpplanguagesupport.cpp:341
 #, kde-format
 msgid ""
-"The build-manager did not return the include-path %1, which was resolved by "
-"the include-path resolver"
+"The build-manager did not return the include-path %1, which could be "
+"resolved by the include-path resolver"
 msgstr ""
 
-#: languages/cpp/cpplanguagesupport.cpp:345
+#: languages/cpp/cpplanguagesupport.cpp:358
 msgid "Include-path resolver:"
+msgstr ""
+
+#: languages/cpp/cpplanguagesupport.cpp:359
+#, kde-format
+msgid ""
+"Used build directory: \"%1\"\n"
+"Include-path resolver: %2"
 msgstr ""
 
 #: languages/cpp/cppduchain/navigationwidget.cpp:111
@@ -12012,10 +12031,6 @@ msgstr "Toggle tambahan awalan"
 #~ msgstr "Hasil pencarian bagi "
 
 #, fuzzy
-#~ msgid "Include file patterns"
-#~ msgstr "Pemindahan Fail (FTP)"
-
-#, fuzzy
 #~ msgid "Expand as defined"
 #~ msgstr "Tiada 'Mountpoints' dikenalpasti"
 
@@ -12640,10 +12655,6 @@ msgstr "Toggle tambahan awalan"
 #, fuzzy
 #~ msgid "Find Documentation: %1"
 #~ msgstr "Lebih Dokumentasi"
-
-#, fuzzy
-#~ msgid "Search in Documentation: %1"
-#~ msgstr "ralat pada carian ungkapan biasa (regexp)"
 
 #, fuzzy
 #~ msgid "Goto Manpage: %1"
