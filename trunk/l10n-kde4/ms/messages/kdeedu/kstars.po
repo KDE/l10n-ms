@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-04 06:37+0100\n"
+"POT-Creation-Date: 2008-01-09 07:19+0100\n"
 "PO-Revision-Date: 2007-02-24 13:11+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -133,13 +133,13 @@ msgstr "Pralihat"
 msgid "Catalog Preview"
 msgstr "Pilihan Pralihat"
 
-#: addcatdialog.cpp:213 fitsviewer.cpp:292 imageviewer.cpp:222
+#: addcatdialog.cpp:213 fitsviewer.cpp:293 imageviewer.cpp:222
 #: kstarsactions.cpp:505 tools/scriptbuilder.cpp:1024
 #, fuzzy, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
 msgstr "Fail bernama \"%1\" telah wujud. Tulis gantikan ia?"
 
-#: addcatdialog.cpp:215 fitsviewer.cpp:294 imageviewer.cpp:224
+#: addcatdialog.cpp:215 fitsviewer.cpp:295 imageviewer.cpp:224
 #: kstarsactions.cpp:507 tools/scriptbuilder.cpp:1026
 #, fuzzy
 msgid "Overwrite File?"
@@ -172,7 +172,7 @@ msgid ""
 "to the Google search engine?"
 msgstr "URL ialah seperti hingga?"
 
-#: addlinkdialog.cpp:53 fitsviewer.cpp:322 streamwg.cpp:203
+#: addlinkdialog.cpp:53 fitsviewer.cpp:323 streamwg.cpp:203
 #: tools/scriptbuilder.cpp:987 tools/scriptbuilder.cpp:1063
 msgid "Invalid URL"
 msgstr "URL tidak sah"
@@ -363,16 +363,16 @@ msgid ""
 "Scheme cannot be recorded."
 msgstr "Setempat fail."
 
-#: colorscheme.cpp:287 colorscheme.cpp:305 indidriver.cpp:517
-#: indidriver.cpp:976 kstarsactions.cpp:583 locationdialog.cpp:246
+#: colorscheme.cpp:287 colorscheme.cpp:305 indidriver.cpp:501
+#: indidriver.cpp:966 kstarsactions.cpp:583 locationdialog.cpp:246
 #: opscolors.cpp:193 skymap.cpp:1593 tools/modcalcaltaz.cpp:267
 #: tools/modcalcangdist.cpp:143 tools/modcalcapcoord.cpp:165
 #: tools/modcalcdaylength.cpp:250 tools/modcalceclipticcoords.cpp:204
 #: tools/modcalcgalcoord.cpp:191 tools/modcalcgeodcoord.cpp:232
 #: tools/modcalcjd.cpp:123 tools/modcalcplanets.cpp:278
 #: tools/modcalcsidtime.cpp:206 tools/modcalcvizequinox.cpp:95
-#: tools/modcalcvlsr.cpp:271 tools/observinglist.cpp:560
-#: tools/observinglist.cpp:635 tools/scriptbuilder.cpp:976
+#: tools/modcalcvlsr.cpp:271 tools/observinglist.cpp:558
+#: tools/observinglist.cpp:633 tools/scriptbuilder.cpp:976
 #: tools/scriptbuilder.cpp:1040 tools/scriptbuilder.cpp:1106
 #, fuzzy
 msgid "Could Not Open File"
@@ -526,7 +526,7 @@ msgid "Log"
 msgstr "Log"
 
 #: detaildialog.cpp:416 skyobject.cpp:374 tools/observinglist.cpp:299
-#: tools/observinglist.cpp:520 tools/observinglist.cpp:530
+#: tools/observinglist.cpp:518 tools/observinglist.cpp:528
 #, fuzzy, kde-format
 msgid "Record here observation logs and/or data on %1."
 msgstr "Rekod dan atau buka."
@@ -547,29 +547,19 @@ msgstr "URL:"
 msgid "Are you sure you want to remove the %1 link?"
 msgstr "Adakah anda pasti untuk memadam sumber \"%s\"?"
 
-#: detaildialog.cpp:599 indidriver.cpp:950 telescopeprop.cpp:243
+#: detaildialog.cpp:599 indidriver.cpp:940 telescopeprop.cpp:243
 #, fuzzy
 msgid "Delete Confirmation"
 msgstr "Kepastian Pemadaman"
 
-#: detaildialog.cpp:845 tools/observinglist.cpp:403
+#: detaildialog.cpp:843 tools/observinglist.cpp:401
 #, fuzzy, kde-format
 msgid "Telescope %1 is offline. Please connect and retry again."
 msgstr "ialah luar talian dan."
 
-#: detaildialog.cpp:929 tools/observinglist.cpp:487
+#: detaildialog.cpp:927 tools/observinglist.cpp:485
 msgid "KStars did not find any active telescopes."
 msgstr ""
-
-#: devicemanager.cpp:104
-#, fuzzy
-msgid "Cannot create socket"
-msgstr "Tidak dapat mencipta soket aliran."
-
-#: devicemanager.cpp:128
-#, fuzzy
-msgid "Cannot read server file descriptor"
-msgstr "urpmq: tidak dapat membaca fail rpm \"%s\"\n"
 
 #: finddialog.cpp:34
 msgid "Any"
@@ -715,31 +705,36 @@ msgstr "Tetapkan Katalaluan Root"
 msgid "Unknown"
 msgstr "Entah"
 
-#: fitsimage.cpp:133
+#: fitsimage.cpp:134
+msgid "Please hold while loading FITS file..."
+msgstr ""
+
+#: fitsimage.cpp:134 indistd.cpp:820
+#, fuzzy
+msgid "Cancel"
+msgstr "Bandar nama"
+
+#: fitsimage.cpp:135
 #, fuzzy
 msgid "Loading FITS"
 msgstr "Memuatkan jurupacu %s..."
 
-#: fitsimage.cpp:133
-msgid "Please hold while loading FITS file..."
-msgstr ""
-
-#: fitsimage.cpp:145 fitsimage.cpp:156 fitsimage.cpp:164
+#: fitsimage.cpp:145 fitsimage.cpp:159 fitsimage.cpp:167
 #, fuzzy, kde-format
 msgid "FITS file open error: %1"
 msgstr "Tidak dapat memuatkan fail!"
 
-#: fitsimage.cpp:145 fitsimage.cpp:156 fitsimage.cpp:164 fitsimage.cpp:350
-#: fitsimage.cpp:358 fitsimage.cpp:365
+#: fitsimage.cpp:145 fitsimage.cpp:159 fitsimage.cpp:167 fitsimage.cpp:400
+#: fitsimage.cpp:408 fitsimage.cpp:415
 #, fuzzy
 msgid "FITS Open"
 msgstr "Skala"
 
-#: fitsimage.cpp:350 fitsimage.cpp:358
+#: fitsimage.cpp:400 fitsimage.cpp:408
 msgid "Unable to calculate FITS Min/Max values."
 msgstr ""
 
-#: fitsimage.cpp:365
+#: fitsimage.cpp:415
 msgid "FITS image is saturated and cannot be displayed."
 msgstr ""
 
@@ -769,54 +764,54 @@ msgstr "Statistik:"
 
 #. i18n: tag string
 #. i18n: file fitsheaderdialog.ui line 13
-#: fitsviewer.cpp:146 fitsviewer.cpp:398 rc.cpp:312 rc.cpp:2974
+#: fitsviewer.cpp:146 fitsviewer.cpp:399 rc.cpp:312 rc.cpp:2974
 #, fuzzy
 msgid "FITS Header"
 msgstr "BUANG HEADER [%s]"
 
-#: fitsviewer.cpp:185 fitsviewer.cpp:207 fitsviewer.cpp:232
+#: fitsviewer.cpp:186 fitsviewer.cpp:208 fitsviewer.cpp:233
 #, fuzzy
 msgid "Save Changes to FITS?"
 msgstr "Berbalik ke yang Ter_akhir Disimpan"
 
-#: fitsviewer.cpp:186 fitsviewer.cpp:208 fitsviewer.cpp:233
+#: fitsviewer.cpp:187 fitsviewer.cpp:209 fitsviewer.cpp:234
 #, fuzzy
 msgid ""
 "The current FITS file has unsaved changes.  Would you like to save before "
 "closing it?"
 msgstr "fail seperti hingga?"
 
-#: fitsviewer.cpp:295
+#: fitsviewer.cpp:296
 msgid "&Overwrite"
 msgstr "&Tindih"
 
-#: fitsviewer.cpp:307
+#: fitsviewer.cpp:308
 #, fuzzy, kde-format
 msgid "FITS file save error: %1"
 msgstr "Tidak dapat memuatkan fail!"
 
-#: fitsviewer.cpp:308
+#: fitsviewer.cpp:309
 #, fuzzy
 msgid "FITS Save"
 msgstr "Skala"
 
-#: fitsviewer.cpp:313
+#: fitsviewer.cpp:314
 #, fuzzy
 msgid "File saved."
 msgstr "disimpan kedalam fail `%s'"
 
-#: fitsviewer.cpp:321 streamwg.cpp:202 tools/scriptbuilder.cpp:986
+#: fitsviewer.cpp:322 streamwg.cpp:202 tools/scriptbuilder.cpp:986
 #: tools/scriptbuilder.cpp:1062
 #, fuzzy, kde-format
 msgid "Invalid URL: %1"
 msgstr "URL tidak sah"
 
-#: fitsviewer.cpp:365
+#: fitsviewer.cpp:366
 #, fuzzy
 msgid " [modified]"
 msgstr "Diubahsuai"
 
-#: fitsviewer.cpp:398
+#: fitsviewer.cpp:399
 #, kde-format
 msgid "FITS record error: %1"
 msgstr ""
@@ -958,34 +953,24 @@ msgid "Saving of the image %1 failed."
 msgstr "Gagal untuk muatkan imej \"%1\"\n"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 16
+#. i18n: file devmanager.ui line 13
 #: indidriver.cpp:90 rc.cpp:234 rc.cpp:2896
 #, fuzzy
 msgid "Device Manager"
 msgstr "Pengurus Pencetak"
 
-#: indidriver.cpp:277
-#, kde-format
-msgid "Connection to INDI host at localhost on port %1 failed."
-msgstr ""
-
-#: indidriver.cpp:348
-#, kde-format
-msgid "Connection to INDI host at %1 on port %2 failed."
-msgstr ""
-
-#: indidriver.cpp:460
+#: indidriver.cpp:290 indidriver.cpp:442
 msgid "Cannot start INDI server: port error."
 msgstr ""
 
-#: indidriver.cpp:516
+#: indidriver.cpp:500
 #, fuzzy
 msgid ""
 "unable to write to file 'drivers.xml'\n"
 "Any changes to INDI device drivers will not be saved."
 msgstr "hingga hingga fail hingga."
 
-#: indidriver.cpp:652
+#: indidriver.cpp:637
 #, fuzzy
 msgid ""
 "Unable to find device driver file 'drivers.xml'. Please locate the file and "
@@ -997,37 +982,37 @@ msgstr ""
 "hingga fail fail dan inci bagi\n"
 " 1"
 
-#: indidriver.cpp:848
+#: indidriver.cpp:838
 #, fuzzy
 msgid "Add Host"
 msgstr "Tambah hos"
 
-#: indidriver.cpp:864
+#: indidriver.cpp:854
 #, fuzzy
 msgid "Error: the port number is invalid."
 msgstr "Ralat ialah."
 
-#: indidriver.cpp:874
+#: indidriver.cpp:864
 #, fuzzy, kde-format
 msgid "Host: %1 Port: %2 already exists."
 msgstr "Direktori bernama %s telah wujud."
 
-#: indidriver.cpp:899
+#: indidriver.cpp:889
 #, fuzzy
 msgid "Modify Host"
 msgstr "Hos tidak diketahui"
 
-#: indidriver.cpp:946
+#: indidriver.cpp:936
 #, fuzzy
 msgid "You need to disconnect the client before removing it."
 msgstr "Anda hingga."
 
-#: indidriver.cpp:950
+#: indidriver.cpp:940
 #, fuzzy, kde-format
 msgid "Are you sure you want to remove the %1 client?"
 msgstr "Adakah anda pasti untuk memadam sumber \"%s\"?"
 
-#: indidriver.cpp:975
+#: indidriver.cpp:965
 #, fuzzy
 msgid ""
 "unable to write to file 'indihosts.xml'\n"
@@ -1045,12 +1030,12 @@ msgstr ""
 msgid "Configure INDI"
 msgstr "_Konfigurasikan Firewall"
 
-#: indimenu.cpp:78
+#: indimenu.cpp:76
 #, fuzzy
 msgid "INDI Control Panel"
 msgstr "Buang Daripada Panel"
 
-#: indimenu.cpp:105 indimenu.cpp:111
+#: indimenu.cpp:96
 #, fuzzy
 msgid ""
 "No INDI devices currently running. To run devices, please select devices "
@@ -1108,11 +1093,6 @@ msgstr "Mandriva Online"
 #, fuzzy, kde-format
 msgid "%1 is online and ready."
 msgstr "ialah dan."
-
-#: indistd.cpp:819
-#, fuzzy
-msgid "Cancel"
-msgstr "Bandar nama"
 
 #: infoboxes.cpp:354
 #, fuzzy
@@ -25081,13 +25061,13 @@ msgstr "Simpan ialah?"
 msgid "Invalid Save Location"
 msgstr "Pilih lokasi untuk menyimpan fail"
 
-#: kstarsactions.cpp:540 tools/observinglist.cpp:584
+#: kstarsactions.cpp:540 tools/observinglist.cpp:582
 #, fuzzy
 msgid "Try Another"
 msgstr "Ulang_cuba"
 
-#: kstarsactions.cpp:540 tools/observinglist.cpp:584
-#: tools/observinglist.cpp:635
+#: kstarsactions.cpp:540 tools/observinglist.cpp:582
+#: tools/observinglist.cpp:633
 #, fuzzy
 msgid "Do Not Try"
 msgstr "_Jangan Format"
@@ -25114,7 +25094,7 @@ msgstr "Tidak dapat membaca fail %s."
 msgid "Download Error"
 msgstr "Ralat semasa muatturun"
 
-#: kstarsactions.cpp:582 kstarsdata.cpp:986 tools/observinglist.cpp:559
+#: kstarsactions.cpp:582 kstarsdata.cpp:986 tools/observinglist.cpp:557
 #, fuzzy, kde-format
 msgid "Could not open file %1"
 msgstr "tidak dapat membuka fail tetapan `%s': %s"
@@ -26891,20 +26871,20 @@ msgid "Azimuth at rise:"
 msgstr "tidak terbit"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 29
+#. i18n: file devmanager.ui line 35
 #: rc.cpp:237 rc.cpp:2899
 #, fuzzy
 msgid "Local/Server"
 msgstr "_Pelayan NIS:"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 49
+#. i18n: file devmanager.ui line 65
 #. i18n: tag string
-#. i18n: file devmanager.ui line 199
+#. i18n: file devmanager.ui line 239
 #. i18n: tag string
-#. i18n: file devmanager.ui line 49
+#. i18n: file devmanager.ui line 65
 #. i18n: tag string
-#. i18n: file devmanager.ui line 199
+#. i18n: file devmanager.ui line 239
 #. i18n: tag string
 #. i18n: file tools/argstartindi.ui line 45
 #: rc.cpp:240 rc.cpp:264 rc.cpp:2902 rc.cpp:2926 rc.cpp:4599
@@ -26912,7 +26892,7 @@ msgid "Mode"
 msgstr "Mod"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 64
+#. i18n: file devmanager.ui line 89
 #. i18n: tag string
 #. i18n: file tools/argstartindi.ui line 60
 #: rc.cpp:243 rc.cpp:2905 rc.cpp:4602
@@ -26920,7 +26900,7 @@ msgid "Local"
 msgstr "Tempatan"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 82
+#. i18n: file devmanager.ui line 105
 #. i18n: tag string
 #. i18n: file tools/argstartindi.ui line 70
 #: rc.cpp:246 rc.cpp:2908 rc.cpp:4605
@@ -26928,97 +26908,97 @@ msgid "Server"
 msgstr "Pelayan"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 98
+#. i18n: file devmanager.ui line 121
 #: rc.cpp:249 rc.cpp:2911
 #, fuzzy
 msgid "Server Log"
 msgstr "Log Pelayan MySQL"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 142
+#. i18n: file devmanager.ui line 181
 #: rc.cpp:252 rc.cpp:2914
 #, fuzzy
 msgid "Run Service"
 msgstr "                    [--initscript <service>]\n"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 149
+#. i18n: file devmanager.ui line 188
 #: rc.cpp:255 rc.cpp:2917
 #, fuzzy
 msgid "Stop Service"
 msgstr "Hentikan servis dipilih"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 189
+#. i18n: file devmanager.ui line 229
 #: rc.cpp:258 rc.cpp:2920
 msgid "Device"
 msgstr "Peranti"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 194
+#. i18n: file devmanager.ui line 234
 #. i18n: tag string
-#. i18n: file devmanager.ui line 280
+#. i18n: file devmanager.ui line 341
 #. i18n: tag string
-#. i18n: file devmanager.ui line 194
+#. i18n: file devmanager.ui line 234
 #. i18n: tag string
-#. i18n: file devmanager.ui line 280
+#. i18n: file devmanager.ui line 341
 #: rc.cpp:261 rc.cpp:288 rc.cpp:2923 rc.cpp:2950
 msgid "Status"
 msgstr "Status"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 204
+#. i18n: file devmanager.ui line 244
 #: rc.cpp:267 rc.cpp:2929
 msgid "Version"
 msgstr "Versi"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 209
+#. i18n: file devmanager.ui line 249
 #. i18n: tag string
-#. i18n: file devmanager.ui line 290
+#. i18n: file devmanager.ui line 351
 #. i18n: tag string
-#. i18n: file devmanager.ui line 209
+#. i18n: file devmanager.ui line 249
 #. i18n: tag string
-#. i18n: file devmanager.ui line 290
+#. i18n: file devmanager.ui line 351
 #: rc.cpp:270 rc.cpp:294 rc.cpp:2932 rc.cpp:2956
 #, fuzzy
 msgid "Port"
 msgstr "Liang"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 218
+#. i18n: file devmanager.ui line 258
 #: rc.cpp:273 rc.cpp:2935
 msgid "Client"
 msgstr "Klien"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 243
+#. i18n: file devmanager.ui line 295
 #: rc.cpp:276 rc.cpp:2938
 msgid "Hosts"
 msgstr "Hos"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 255
+#. i18n: file devmanager.ui line 316
 #: rc.cpp:279 rc.cpp:2941
 #, fuzzy
 msgid "Add"
 msgstr "Tambah..."
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 262
+#. i18n: file devmanager.ui line 323
 #: rc.cpp:282 rc.cpp:2944
 #, fuzzy
 msgid "Modify..."
 msgstr "Sunting..."
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 269
+#. i18n: file devmanager.ui line 330
 #. i18n: tag string
 #. i18n: file fovdialog.ui line 102
 #. i18n: tag string
 #. i18n: file telescopeprop.ui line 60
 #. i18n: tag string
-#. i18n: file devmanager.ui line 269
+#. i18n: file devmanager.ui line 330
 #. i18n: tag string
 #. i18n: file fovdialog.ui line 102
 #. i18n: tag string
@@ -27026,19 +27006,19 @@ msgstr "Sunting..."
 #. i18n: tag string
 #. i18n: file tools/observinglist.ui line 332
 #: rc.cpp:285 rc.cpp:429 rc.cpp:2493 rc.cpp:2947 rc.cpp:3076 rc.cpp:4156
-#: rc.cpp:5880 tools/observinglist.cpp:724
+#: rc.cpp:5880 tools/observinglist.cpp:722
 #, fuzzy
 msgid "Remove"
 msgstr "&Buang"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 285
+#. i18n: file devmanager.ui line 346
 #: rc.cpp:291 rc.cpp:2953 tools/observinglist.cpp:80
 msgid "Name"
 msgstr "Nama"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 298
+#. i18n: file devmanager.ui line 359
 #. i18n: tag string
 #. i18n: file tools/argswitchindi.ui line 25
 #: rc.cpp:297 rc.cpp:2959 rc.cpp:4608
@@ -27047,13 +27027,13 @@ msgid "Connection"
 msgstr "Perhubungan"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 310
+#. i18n: file devmanager.ui line 380
 #: rc.cpp:300 rc.cpp:2962
 msgid "Connect"
 msgstr "Sambung"
 
 #. i18n: tag string
-#. i18n: file devmanager.ui line 317
+#. i18n: file devmanager.ui line 387
 #: rc.cpp:303 rc.cpp:2965
 msgid "Disconnect"
 msgstr "Putus"
@@ -34650,7 +34630,7 @@ msgstr "inci"
 
 #. i18n: tag string
 #. i18n: file tools/observinglist.ui line 269
-#: rc.cpp:5853 tools/observinglist.cpp:721
+#: rc.cpp:5853 tools/observinglist.cpp:719
 #, fuzzy
 msgid "Scope"
 msgstr "Skop"
@@ -34671,7 +34651,7 @@ msgstr "Buka Terperinci for"
 
 #. i18n: tag string
 #. i18n: file tools/observinglist.ui line 291
-#: rc.cpp:5862 tools/observinglist.cpp:722
+#: rc.cpp:5862 tools/observinglist.cpp:720
 #, fuzzy
 msgid "Details"
 msgstr "Perincian"
@@ -37134,87 +37114,87 @@ msgstr "Catat nota untuk akan datang"
 msgid "Object %1 not found in observing ist."
 msgstr "data tidak ditemui dalam fail"
 
-#: tools/observinglist.cpp:534
+#: tools/observinglist.cpp:532
 #, fuzzy
 msgid "Observing notes for object:"
 msgstr "Catat nota untuk akan datang"
 
-#: tools/observinglist.cpp:583
+#: tools/observinglist.cpp:581
 #, fuzzy
 msgid "The specified file is invalid.  Try another file?"
 msgstr "fail ialah fail?"
 
-#: tools/observinglist.cpp:584
+#: tools/observinglist.cpp:582
 #, fuzzy
 msgid "Invalid File"
 msgstr "%s: fail saiz tidak sah"
 
-#: tools/observinglist.cpp:595
+#: tools/observinglist.cpp:593
 #, fuzzy
 msgid "Do you want to save the current list before opening a new list?"
 msgstr "hingga baru?"
 
-#: tools/observinglist.cpp:597
+#: tools/observinglist.cpp:595
 #, fuzzy
 msgid "Save Current List?"
 msgstr "Saya tak dapat simpan senarai kosong"
 
-#: tools/observinglist.cpp:612
+#: tools/observinglist.cpp:610
 #, fuzzy
 msgid "Enter List Name"
 msgstr "penggunaan:   %s --list [nama]\n"
 
-#: tools/observinglist.cpp:613
+#: tools/observinglist.cpp:611
 #, fuzzy
 msgid "List name:"
 msgstr "penggunaan:   %s --list [nama]\n"
 
-#: tools/observinglist.cpp:633
+#: tools/observinglist.cpp:631
 #, fuzzy, kde-format
 msgid "Could not open file %1.  Try a different filename?"
 msgstr "fail?"
 
-#: tools/observinglist.cpp:635
+#: tools/observinglist.cpp:633
 #, fuzzy
 msgid "Try Different"
 msgstr "Ulang_cuba"
 
-#: tools/observinglist.cpp:669
+#: tools/observinglist.cpp:667
 #, fuzzy
 msgctxt "First letter in 'Center'"
 msgid "C"
 msgstr "Pertama inci Tengah"
 
-#: tools/observinglist.cpp:670
+#: tools/observinglist.cpp:668
 #, fuzzy
 msgctxt "First letter in 'Scope'"
 msgid "S"
 msgstr "Pertama inci Skop"
 
-#: tools/observinglist.cpp:671
+#: tools/observinglist.cpp:669
 #, fuzzy
 msgctxt "First letter in 'Details'"
 msgid "D"
 msgstr "Pertama inci Terperinci"
 
-#: tools/observinglist.cpp:672
+#: tools/observinglist.cpp:670
 #, fuzzy
 msgctxt "First letter in 'Alt vs Time'"
 msgid "A"
 msgstr "Pertama inci Alt Masa"
 
-#: tools/observinglist.cpp:673
+#: tools/observinglist.cpp:671
 #, fuzzy
 msgctxt "First letter in 'Remove'"
 msgid "R"
 msgstr "Pertama inci Buang"
 
-#: tools/observinglist.cpp:720
+#: tools/observinglist.cpp:718
 #, fuzzy
 msgid "Center"
 msgstr "&Tengah"
 
-#: tools/observinglist.cpp:723
+#: tools/observinglist.cpp:721
 #, fuzzy
 msgid "Alt vs Time"
 msgstr "Baki masa: %s minit"
@@ -38601,6 +38581,14 @@ msgid ""
 msgstr ""
 "for A bagi inci masa  CPU Negatif bagi kiri inci bagi kanan ialah hingga "
 "hingga bagi masa  Untuk ialah min kanan dan kanan"
+
+#, fuzzy
+#~ msgid "Cannot create socket"
+#~ msgstr "Tidak dapat mencipta soket aliran."
+
+#, fuzzy
+#~ msgid "Cannot read server file descriptor"
+#~ msgstr "urpmq: tidak dapat membaca fail rpm \"%s\"\n"
 
 #, fuzzy
 #~ msgctxt "Image/info menu item (should be translated)"

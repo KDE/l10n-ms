@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvoctrain\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-28 06:14+0100\n"
+"POT-Creation-Date: 2008-01-09 07:19+0100\n"
 "PO-Revision-Date: 2007-02-22 15:19+0730\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -14,68 +14,73 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: parley.cpp:268
-#, fuzzy
-msgid "Do you really want to delete the selected entry?"
-msgstr "Anda mahu memadam masukan ini dari buku telefon?"
-
-#: parley.cpp:275
-#, fuzzy
-msgid "Do you really want to delete the selected entries?"
-msgstr "Anda mahu memadam masukan ini dari buku telefon?"
-
-#: parley.cpp:350
-#, kde-format
-msgid "1 entry with the same content was found and removed."
-msgid_plural "%1 entries with the same content were found and removed."
-msgstr[0] ""
-msgstr[1] ""
-
-#: parley.cpp:353
-#, fuzzy
-msgid "Remove Duplicates"
-msgstr "Pilihan Bahasa"
-
-#: parley.cpp:508
-#, kde-format
-msgid "Comment: %1"
-msgstr ""
-
-#: parley.cpp:511
-#, kde-format
-msgid "Pronunciation: %1"
-msgstr ""
-
-#: parley.cpp:515
-#, kde-format
-msgid " (%1)"
-msgstr ""
-
-#: parley.cpp:518
-#, kde-format
-msgid "Type: %1"
-msgstr ""
-
-#: parley.cpp:556
+#: parley.cpp:405
 #, fuzzy, kde-format
 msgctxt "@title:window document properties"
 msgid "Properties for %1"
 msgstr "Sunting ciri-ciri direktori yang dipilih"
 
-#: docprop-dialogs/UsageOptPage.cpp:42
-#, fuzzy
-msgid "Usage Labels"
-msgstr "Label Berulang"
-
-#: docprop-dialogs/UsageOptPage.cpp:83 docprop-dialogs/UsageOptPage.cpp:111
-msgctxt "usage (area) of an expression"
-msgid "Usage Description"
+#: parley.cpp:453
+msgid ""
+"Vocabulary is modified.\n"
+"\n"
+"Save file before exit?\n"
 msgstr ""
 
-#: docprop-dialogs/UsageOptPage.cpp:83 docprop-dialogs/UsageOptPage.cpp:111
+#: parley.cpp:493
 #, fuzzy
-msgid "Enter usage description:"
-msgstr "Description=ioslave Subversion"
+msgid "Lessons"
+msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
+
+#: parley.cpp:505
+msgid ""
+"Right click to add, delete, or rename lessons. \n"
+"With the checkboxes you can select which lessons you want to practice. \n"
+"Only checked lessons [x] will be asked in the tests!"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./configure-practice/thresholdoptions.ui line 151
+#: parley.cpp:520 rc.cpp:583
+#, fuzzy
+msgid "Word Types"
+msgstr "Lilit perkataan"
+
+#. i18n: tag string
+#. i18n: file ./configure-practice/configurepracticewidget.ui line 65
+#: parley.cpp:556 rc.cpp:646
+msgid "Conjugation"
+msgstr ""
+
+#: parley.cpp:570
+msgid "Declination"
+msgstr ""
+
+#: parley.cpp:581
+#, fuzzy
+msgid "Comparison forms"
+msgstr "perbandingan rentetan gagal"
+
+#. i18n: tag string
+#. i18n: file ./configure-practice/configurepracticewidget.ui line 38
+#: parley.cpp:596 practice/MCQueryDlg.cpp:43 rc.cpp:637
+#, fuzzy
+msgid "Multiple Choice"
+msgstr "Pilihan Tidak Sah"
+
+#: parley.cpp:608
+msgid "Pronunciation IPA symbols?"
+msgstr ""
+
+#: parley.cpp:617
+#, fuzzy
+msgid "Image"
+msgstr "Lelaki"
+
+#: parley.cpp:628
+#, fuzzy
+msgid "Sound"
+msgstr "Pilihan Bahasa"
 
 #: docprop-dialogs/TypeOptPage.cpp:36
 #, fuzzy
@@ -124,17 +129,17 @@ msgstr ""
 msgid "%1 is not a special type."
 msgstr ""
 
-#: docprop-dialogs/TenseOptPage.cpp:42
+#: docprop-dialogs/TenseOptPage.cpp:43
 #, fuzzy
 msgid "Tense Descriptions"
 msgstr "Kala semasa adalah %1."
 
-#: docprop-dialogs/TenseOptPage.cpp:78 docprop-dialogs/TenseOptPage.cpp:101
+#: docprop-dialogs/TenseOptPage.cpp:79 docprop-dialogs/TenseOptPage.cpp:102
 #, fuzzy
 msgid "Tense Description"
 msgstr "Description=ioslave Subversion"
 
-#: docprop-dialogs/TenseOptPage.cpp:78 docprop-dialogs/TenseOptPage.cpp:101
+#: docprop-dialogs/TenseOptPage.cpp:79 docprop-dialogs/TenseOptPage.cpp:102
 #, fuzzy
 msgid "Enter tense description:"
 msgstr "Description=ioslave Subversion"
@@ -152,7 +157,8 @@ msgstr "Description=ioslave Subversion"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 72
-#: kvttablemodel.cpp:167 rc.cpp:1268 kvtlessonmodel.cpp:127
+#: kvttablemodel.cpp:180 rc.cpp:1313 kvtlessonmodel.cpp:49
+#: vocabulary/lessonmodel.cpp:343 vocabulary/containermodel.cpp:381
 msgid "Lesson"
 msgstr ""
 
@@ -351,30 +357,17 @@ msgctxt "Edit language properties"
 msgid "Properties for %1"
 msgstr "Sunting ciri-ciri direktori yang dipilih"
 
-#: language-dialogs/grammardialog.cpp:35
+#: language-dialogs/grammardialog.cpp:33
 #, fuzzy
 msgid "Grammar Properties"
 msgstr "/_Profil"
 
-#: language-dialogs/grammardialog.cpp:43
-msgctxt "word types"
-msgid "Types"
-msgstr ""
-
 #. i18n: tag string
 #. i18n: file ./configure-practice/conjugationoptionswidget.ui line 23
-#: language-dialogs/grammardialog.cpp:46 rc.cpp:613
+#: language-dialogs/grammardialog.cpp:44 rc.cpp:619
 #, fuzzy
 msgid "Tenses"
 msgstr "Kala semasa adalah %1."
-
-#: language-dialogs/grammardialog.cpp:49
-#, fuzzy
-msgctxt "usage (area) of an expression"
-msgid "Usage"
-msgstr ""
-"Pengunaan: %s UNGKAPAN\n"
-"    atau: %s OPSYEN\n"
 
 #: language-dialogs/editlanguagedialogpage.cpp:84
 msgid "No icon"
@@ -384,6 +377,19 @@ msgstr ""
 #, fuzzy
 msgid "without name"
 msgstr "Name=KDevAdaProject"
+
+#: practice/practicedialog.cpp:68
+#, kde-format
+msgctxt "@popupmessage"
+msgid ""
+"Either the language set up is incorrect or no spellchecker was installed for "
+"%1 (%2)."
+msgstr ""
+
+#: practice/practicedialog.cpp:68
+msgctxt "@title of a popup"
+msgid "No Spell Checker Available"
+msgstr ""
 
 #: practice/practicesummarydialog.cpp:28
 #, fuzzy
@@ -395,46 +401,46 @@ msgstr "Artikel:"
 msgid "Comparison Training"
 msgstr "Tahap latihan semasa"
 
-#: practice/testentrymanager.cpp:139
+#: practice/testentrymanager.cpp:141
 msgid ""
 "<p>The lessons you selected for the practice contain no vocabulary.</"
 "p><p>Hint: To select a lesson set a checkmark next to it in the lesson "
 "column on the left.</p><p>Would you like to include all lessons?</p>"
 msgstr ""
 
-#: practice/testentrymanager.cpp:139
+#: practice/testentrymanager.cpp:141
 #, fuzzy
 msgid "No Entries in Selected Lessons"
 msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
-#: practice/testentrymanager.cpp:211
+#: practice/testentrymanager.cpp:214
 msgid ""
 "You selected to practice the genders of nouns, but no appropriate nouns "
 "could be found. Use \"Edit Entry\" and select Noun as word type and the "
 "gender."
 msgstr ""
 
-#: practice/testentrymanager.cpp:212 practice/testentrymanager.cpp:218
-#: practice/testentrymanager.cpp:222
+#: practice/testentrymanager.cpp:215 practice/testentrymanager.cpp:221
+#: practice/testentrymanager.cpp:225
 #, fuzzy
 msgid "No valid word type found"
 msgstr "Description=ioslave Subversion"
 
-#: practice/testentrymanager.cpp:217
+#: practice/testentrymanager.cpp:220
 msgid ""
 "You selected to practice comparison forms, but no adjectives or adverbs "
 "containing comparison forms could be found. Use \"Edit Entry\" and select "
 "Adverb or Adjective as word type and enter the comparison forms."
 msgstr ""
 
-#: practice/testentrymanager.cpp:222
+#: practice/testentrymanager.cpp:225
 msgid ""
 "You selected to practice conjugations, but no vocabulary containing "
 "conjugations in the tenses you selected could be found. Use \"Edit Entry\" "
 "and select Verb as word type and enter the conjugation forms."
 msgstr ""
 
-#: practice/testentrymanager.cpp:228
+#: practice/testentrymanager.cpp:231
 msgid ""
 "<p>The lessons you selected for the practice contain no entries when the "
 "threshold settings are respected.</p><p>Hint: To configure the thresholds "
@@ -442,19 +448,19 @@ msgid ""
 "you like to ignore the threshold setting?</p>"
 msgstr ""
 
-#: practice/testentrymanager.cpp:228
+#: practice/testentrymanager.cpp:231
 #, fuzzy
 msgid "No Entries with Current Threshold Settings"
 msgstr "Tetapan Lain-lain"
 
-#: practice/testentrymanager.cpp:559
+#: practice/testentrymanager.cpp:538
 msgid ""
 "The test dialog was not answered several times in a row.\n"
 "It is assumed that there is currently nobody in front of the screen, and for "
 "that reason the practice is stopped."
 msgstr ""
 
-#: practice/testentrymanager.cpp:563
+#: practice/testentrymanager.cpp:542
 #, fuzzy
 msgid "Stopping Test"
 msgstr "Tanya CDDB"
@@ -469,79 +475,72 @@ msgstr "Kata Kerja Sepanyol"
 msgid "Current tense is: %1"
 msgstr "Kala semasa adalah %1."
 
-#: practice/writtenpracticedialog.cpp:47
+#: practice/writtenpracticedialog.cpp:48
 #, fuzzy
 msgid "Written Practice"
 msgstr "Artikel:"
 
-#: practice/writtenpracticedialog.cpp:175
+#: practice/writtenpracticedialog.cpp:176
 msgid "<font color=\"#188C18\">You are right!</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:178
+#: practice/writtenpracticedialog.cpp:179
 msgid "<font color=\"#222978\">Watch your capitalization!</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:181
+#: practice/writtenpracticedialog.cpp:182
 msgid ""
 "<font color=\"#8C1818\">I think you made a spelling mistake. But the word is "
 "right.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:184
+#: practice/writtenpracticedialog.cpp:185
 msgid "<font color=\"#8C1818\">You made a mistake.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:187
+#: practice/writtenpracticedialog.cpp:188
 msgid "<font color=\"#222978\">Your accentuation was wrong.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:190
+#: practice/writtenpracticedialog.cpp:191
 msgid "<font color=\"#222978\">The article is wrong.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:193
+#: practice/writtenpracticedialog.cpp:194
 msgid "<font color=\"#222978\">The article is missing.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:196
+#: practice/writtenpracticedialog.cpp:197
 msgid "<font color=\"#8C1818\">Watch out! This is a false friend!</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:199
+#: practice/writtenpracticedialog.cpp:200
 msgid "<font color=\"#8C1818\">Great, you entered a synonym.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:202
+#: practice/writtenpracticedialog.cpp:203
 msgid "<font color=\"#8C8C18\">Please enter something for me to check.</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:205
+#: practice/writtenpracticedialog.cpp:206
 msgid ""
 "<font color=\"#8C1818\">I know that word, but are you sure it's the right "
 "one here?</font>"
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:209
+#: practice/writtenpracticedialog.cpp:210
 msgid "There is a mistake."
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:235
+#: practice/writtenpracticedialog.cpp:236
 msgid "The answer was wrong."
 msgstr ""
 
-#: practice/writtenpracticedialog.cpp:494 practice/MCQueryDlg.cpp:213
+#: practice/writtenpracticedialog.cpp:495 practice/MCQueryDlg.cpp:214
 msgid "Well done, you knew the correct answer."
 msgstr ""
 
-#. i18n: tag string
-#. i18n: file ./configure-practice/configurepracticewidget.ui line 38
-#: practice/MCQueryDlg.cpp:42 rc.cpp:631 entry-dialogs/EntryDlg.cpp:65
-#, fuzzy
-msgid "Multiple Choice"
-msgstr "Pilihan Tidak Sah"
-
-#: practice/MCQueryDlg.cpp:226
+#: practice/MCQueryDlg.cpp:227
 msgid "Your answer was wrong."
 msgstr ""
 
@@ -572,7 +571,8 @@ msgstr "Tahap latihan semasa"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 86
-#: practice/SimpleQueryDlg.cpp:115 rc.cpp:649
+#: practice/SimpleQueryDlg.cpp:115 rc.cpp:655
+#: vocabulary/vocabularymodel.cpp:292
 msgid "Paraphrase"
 msgstr ""
 
@@ -660,24 +660,36 @@ msgid "&Lesson"
 msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
 
 #. i18n: tag text
-#. i18n: file parleyui.rc line 38
+#. i18n: file parleyui.rc line 35
 #: rc.cpp:6
 #, fuzzy
 msgid "&Practice"
 msgstr "Artikel:"
 
 #. i18n: tag text
-#. i18n: file parleyui.rc line 52
+#. i18n: file parleyui.rc line 43
 #: rc.cpp:9
+msgid "Tools"
+msgstr ""
+
+#. i18n: tag text
+#. i18n: file parleyui.rc line 58
+#: rc.cpp:12
+msgid "&Help"
+msgstr ""
+
+#. i18n: tag text
+#. i18n: file parleyui.rc line 64
+#: rc.cpp:15
 msgid "Main Toolbar"
 msgstr ""
 
-#: rc.cpp:10
+#: rc.cpp:16
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Sharuzzaman Ahmat Raslan"
 
-#: rc.cpp:11
+#: rc.cpp:17
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "<sharuzzaman@myrealbox.com>"
@@ -695,10 +707,6 @@ msgstr "<sharuzzaman@myrealbox.com>"
 #. i18n: tag string
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 92
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 25
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 19
-#. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 20
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 26
@@ -707,40 +715,39 @@ msgstr "<sharuzzaman@myrealbox.com>"
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 19
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 22
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 25
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 22
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 14
-#: rc.cpp:14 rc.cpp:32 rc.cpp:95 rc.cpp:153 rc.cpp:466 rc.cpp:469 rc.cpp:770
-#: rc.cpp:803 rc.cpp:827 rc.cpp:869 rc.cpp:896 rc.cpp:905 rc.cpp:971
-#: rc.cpp:1238 rc.cpp:1256
+#: rc.cpp:20 rc.cpp:38 rc.cpp:101 rc.cpp:159 rc.cpp:472 rc.cpp:475 rc.cpp:803
+#: rc.cpp:845 rc.cpp:872 rc.cpp:881 rc.cpp:956 rc.cpp:1283 rc.cpp:1301
 msgid "-"
 msgstr "-"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/typeeditform.ui line 49
-#: rc.cpp:17
+#: rc.cpp:23
 #, fuzzy
 msgid "Type for Practice"
 msgstr "Artikel:"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/typeeditform.ui line 91
-#: rc.cpp:20
+#: rc.cpp:26
 #, fuzzy
 msgid "&New word type"
 msgstr "Lilit perkataan"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/typeeditform.ui line 98
-#: rc.cpp:23
+#: rc.cpp:29
 msgid "&Add subtype"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/typeeditform.ui line 111
-#: rc.cpp:26
+#: rc.cpp:32
 #, fuzzy
 #| msgid "Filename:"
 msgid "&Rename"
@@ -750,47 +757,47 @@ msgstr "Namafail:"
 #. i18n: file ./docprop-dialogs/typeeditform.ui line 124
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/optionlistform.ui line 93
-#: rc.cpp:29 rc.cpp:162
+#: rc.cpp:35 rc.cpp:168
 #, fuzzy
 msgid "&Delete"
 msgstr "&Ulangtetap"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 25
-#: rc.cpp:35
+#: rc.cpp:41
 #, fuzzy
 msgid "Language Elements"
 msgstr "Pilihan Bahasa"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 37
-#: rc.cpp:38
+#: rc.cpp:44
 msgid "Articles"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 61
-#: rc.cpp:41
+#: rc.cpp:47
 #, fuzzy
 msgid "&Male:"
 msgstr "Lelaki"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 71
-#: rc.cpp:44
+#: rc.cpp:50
 #, fuzzy
 msgid "&Female:"
 msgstr "Perempuan"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 97
-#: rc.cpp:47
+#: rc.cpp:53
 msgid "Definite"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 170
-#: rc.cpp:50
+#: rc.cpp:56
 #, fuzzy
 #| msgid "&neutral"
 msgid "&Neutral:"
@@ -798,13 +805,13 @@ msgstr "&neutral"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 180
-#: rc.cpp:53
+#: rc.cpp:59
 msgid "Indefinite"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 196
-#: rc.cpp:56
+#: rc.cpp:62
 msgid "Personal Pronouns"
 msgstr ""
 
@@ -814,7 +821,9 @@ msgstr ""
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 136
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 92
-#: rc.cpp:59 rc.cpp:193 rc.cpp:917
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 93
+#: rc.cpp:65 rc.cpp:199 rc.cpp:893 rc.cpp:968
 msgid "Singular"
 msgstr ""
 
@@ -824,59 +833,61 @@ msgstr ""
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 210
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 166
-#: rc.cpp:62 rc.cpp:211 rc.cpp:935
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 241
+#: rc.cpp:68 rc.cpp:217 rc.cpp:911 rc.cpp:1004
 msgid "Plural"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 232
-#: rc.cpp:65
+#: rc.cpp:71
 #, fuzzy
 msgid "&1. Person:"
 msgstr "Hos orang itu"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 265
-#: rc.cpp:68
+#: rc.cpp:74
 #, fuzzy
 msgid "&2. Person:"
 msgstr "Hos orang itu"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 298
-#: rc.cpp:71
+#: rc.cpp:77
 #, fuzzy
 msgid "3. Person:"
 msgstr "Hos orang itu"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 305
-#: rc.cpp:74
+#: rc.cpp:80
 msgid "M&ale:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 338
-#: rc.cpp:77
+#: rc.cpp:83
 msgid "F&emale:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 371
-#: rc.cpp:80
+#: rc.cpp:86
 #, fuzzy
 msgid "Neu&ter:"
 msgstr "&neutral"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 410
-#: rc.cpp:83
+#: rc.cpp:89
 msgid "Male/female have different conjugations"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 417
-#: rc.cpp:86
+#: rc.cpp:92
 #, fuzzy
 #| msgid "Enter the correct conjugation forms."
 msgid "A neutral conjugation form exists"
@@ -884,7 +895,7 @@ msgstr "Masukkan bentuk konjugatan yang betul."
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 424
-#: rc.cpp:89
+#: rc.cpp:95
 #, fuzzy
 msgid "Dual conjugations"
 msgstr "Kepas_tian:"
@@ -895,33 +906,35 @@ msgstr "Kepas_tian:"
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 301
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 240
-#: rc.cpp:92 rc.cpp:229 rc.cpp:953
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 167
+#: rc.cpp:98 rc.cpp:235 rc.cpp:929 rc.cpp:986
 msgid "Dual"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 40
-#: rc.cpp:98
+#: rc.cpp:104
 #, fuzzy
 msgid "General Document Properties"
 msgstr "Dokumen yang hendak dibuka"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 64
-#: rc.cpp:101
+#: rc.cpp:107
 #, fuzzy
 msgid "&Title:"
 msgstr "Tajuk"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 80
-#: rc.cpp:104
+#: rc.cpp:110
 msgid "A title for your document."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 87
-#: rc.cpp:107
+#: rc.cpp:113
 #, fuzzy
 msgid "&Authors:"
 msgstr "Penulis: "
@@ -930,37 +943,35 @@ msgstr "Penulis: "
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 97
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 327
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 106
-#: rc.cpp:110 rc.cpp:532 rc.cpp:785
+#: rc.cpp:116 rc.cpp:538
 #, fuzzy
 msgid "&Comment:"
 msgstr "Umum"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 107
-#: rc.cpp:113
+#: rc.cpp:119
 #, fuzzy
 msgid "&License:"
 msgstr "Lesen"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 123
-#: rc.cpp:116
+#: rc.cpp:122
 #, fuzzy
 msgid "Any additional information."
 msgstr "Ciri perkongsian - %s"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 136
-#: rc.cpp:119
+#: rc.cpp:125
 #, fuzzy
 msgid "Cat&egory"
 msgstr "Pilihan Bahasa"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 146
-#: rc.cpp:122
+#: rc.cpp:128
 msgid "A general category into which your document belongs."
 msgstr ""
 
@@ -968,51 +979,51 @@ msgstr ""
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 153
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 125
-#: rc.cpp:125 rc.cpp:658
+#: rc.cpp:131 rc.cpp:664
 msgid "Languages"
 msgstr "Bahasa"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 158
-#: rc.cpp:128
+#: rc.cpp:134
 msgid "Music"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 163
-#: rc.cpp:131
+#: rc.cpp:137
 msgid "Geography"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 168
-#: rc.cpp:134
+#: rc.cpp:140
 #, fuzzy
 msgid "Anatomy"
 msgstr "Falak"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 173
-#: rc.cpp:137
+#: rc.cpp:143
 msgid "History"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 178
-#: rc.cpp:140
+#: rc.cpp:146
 #, fuzzy
 msgid "Test Preparation"
 msgstr "Description=ioslave Subversion"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 192
-#: rc.cpp:143
+#: rc.cpp:149
 msgid "Your name. You can also add an email address as contact information."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 206
-#: rc.cpp:146
+#: rc.cpp:152
 msgid ""
 "The license under which your document will be.\n"
 "If you consider contributing your file to KDE in the future, an appropriate "
@@ -1021,34 +1032,34 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 213
-#: rc.cpp:150
+#: rc.cpp:156
 msgid "GPLv2 (GNU General Public License version 2)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/optionlistform.ui line 63
-#: rc.cpp:156
+#: rc.cpp:162
 #, fuzzy
 msgid "&New..."
 msgstr "Baru"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/optionlistform.ui line 78
-#: rc.cpp:159
+#: rc.cpp:165
 #, fuzzy
 msgid "&Modify..."
 msgstr "Ubah"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/optionlistform.ui line 124
-#: rc.cpp:165
+#: rc.cpp:171
 #, fuzzy
 msgid "&Clean Up"
 msgstr "Menetapkan"
 
 #. i18n: tag string
 #. i18n: file ./language-dialogs/languagepage.ui line 16
-#: rc.cpp:168
+#: rc.cpp:174
 #, fuzzy
 #| msgid "Languages"
 msgid "Language:"
@@ -1056,7 +1067,7 @@ msgstr "Bahasa"
 
 #. i18n: tag string
 #. i18n: file ./language-dialogs/languagepage.ui line 26
-#: rc.cpp:171
+#: rc.cpp:177
 #, fuzzy
 #| msgid "Name"
 msgid "Name:"
@@ -1064,40 +1075,40 @@ msgstr "Nama"
 
 #. i18n: tag string
 #. i18n: file ./language-dialogs/languagepage.ui line 39
-#: rc.cpp:174
+#: rc.cpp:180
 msgid "Flag:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./language-dialogs/languagepage.ui line 49
-#: rc.cpp:177
+#: rc.cpp:183
 #, fuzzy
 msgid "Keyboard layout:"
 msgstr "Susunatur papan kekunci: %s\n"
 
 #. i18n: tag string
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 46
-#: rc.cpp:180
+#: rc.cpp:186
 #, fuzzy
 msgid "Verb:"
 msgstr "Kata Kerja Sepanyol"
 
 #. i18n: tag string
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 62
-#: rc.cpp:183
+#: rc.cpp:189
 #, fuzzy
 msgid "verb name"
 msgstr "Name=KDevAdaProject"
 
 #. i18n: tag string
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 99
-#: rc.cpp:186
+#: rc.cpp:192
 msgid "Enter the correct conjugation forms."
 msgstr "Masukkan bentuk konjugatan yang betul."
 
 #. i18n: tag string
 #. i18n: file ./practice/VerbQueryDlgForm.ui line 123
-#: rc.cpp:190
+#: rc.cpp:196
 #, no-c-format, kde-format
 msgid "Current tense is %1."
 msgstr "Kala semasa adalah %1."
@@ -1114,7 +1125,14 @@ msgstr "Kala semasa adalah %1."
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 172
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 246
-#: rc.cpp:196 rc.cpp:214 rc.cpp:232 rc.cpp:920 rc.cpp:938 rc.cpp:956
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 99
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 173
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 247
+#: rc.cpp:202 rc.cpp:220 rc.cpp:238 rc.cpp:896 rc.cpp:914 rc.cpp:932
+#: rc.cpp:971 rc.cpp:989 rc.cpp:1007
 msgid "First"
 msgstr ""
 
@@ -1130,7 +1148,14 @@ msgstr ""
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 185
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 259
-#: rc.cpp:199 rc.cpp:217 rc.cpp:235 rc.cpp:923 rc.cpp:941 rc.cpp:959
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 112
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 186
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 260
+#: rc.cpp:205 rc.cpp:223 rc.cpp:241 rc.cpp:899 rc.cpp:917 rc.cpp:935
+#: rc.cpp:974 rc.cpp:992 rc.cpp:1010
 #, fuzzy
 msgid "Second"
 msgstr "Pilihan Bahasa"
@@ -1147,7 +1172,14 @@ msgstr "Pilihan Bahasa"
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 198
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 272
-#: rc.cpp:202 rc.cpp:220 rc.cpp:238 rc.cpp:926 rc.cpp:944 rc.cpp:962
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 125
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 199
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 273
+#: rc.cpp:208 rc.cpp:226 rc.cpp:244 rc.cpp:902 rc.cpp:920 rc.cpp:938
+#: rc.cpp:977 rc.cpp:995 rc.cpp:1013
 msgid "Third Male"
 msgstr ""
 
@@ -1163,7 +1195,14 @@ msgstr ""
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 211
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 285
-#: rc.cpp:205 rc.cpp:223 rc.cpp:241 rc.cpp:929 rc.cpp:947 rc.cpp:965
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 138
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 212
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 286
+#: rc.cpp:211 rc.cpp:229 rc.cpp:247 rc.cpp:905 rc.cpp:923 rc.cpp:941
+#: rc.cpp:980 rc.cpp:998 rc.cpp:1016
 #, fuzzy
 msgid "Third Female"
 msgstr "Perempuan"
@@ -1180,7 +1219,14 @@ msgstr "Perempuan"
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 224
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 298
-#: rc.cpp:208 rc.cpp:226 rc.cpp:244 rc.cpp:932 rc.cpp:950 rc.cpp:968
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 151
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 225
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 299
+#: rc.cpp:214 rc.cpp:232 rc.cpp:250 rc.cpp:908 rc.cpp:926 rc.cpp:944
+#: rc.cpp:983 rc.cpp:1001 rc.cpp:1019
 #, fuzzy
 msgid "Third Neutral"
 msgstr "Perempuan"
@@ -1199,8 +1245,8 @@ msgstr "Perempuan"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 300
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 192
-#: rc.cpp:247 rc.cpp:295 rc.cpp:322 rc.cpp:370 rc.cpp:403 rc.cpp:490
-#: rc.cpp:511
+#: rc.cpp:253 rc.cpp:301 rc.cpp:328 rc.cpp:376 rc.cpp:409 rc.cpp:496
+#: rc.cpp:517
 #, fuzzy
 msgid "Show &Solution"
 msgstr "Papar penanda"
@@ -1217,7 +1263,7 @@ msgstr "Papar penanda"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 274
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 261
-#: rc.cpp:250 rc.cpp:292 rc.cpp:367 rc.cpp:406 rc.cpp:484 rc.cpp:520
+#: rc.cpp:256 rc.cpp:298 rc.cpp:373 rc.cpp:412 rc.cpp:490 rc.cpp:526
 #, fuzzy
 #| msgid "I &Know It"
 msgid "Skip (I &Know It)"
@@ -1235,7 +1281,7 @@ msgstr "&Saya Tahu"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 287
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 274
-#: rc.cpp:253 rc.cpp:298 rc.cpp:373 rc.cpp:409 rc.cpp:487 rc.cpp:523
+#: rc.cpp:259 rc.cpp:304 rc.cpp:379 rc.cpp:415 rc.cpp:493 rc.cpp:529
 #, fuzzy
 #| msgid "Do &Not Know"
 msgid "Skip (Do &Not Know)"
@@ -1249,7 +1295,7 @@ msgstr "&Tidak Tahu"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 326
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 220
-#: rc.cpp:256 rc.cpp:289 rc.cpp:496 rc.cpp:514
+#: rc.cpp:262 rc.cpp:295 rc.cpp:502 rc.cpp:520
 msgid "&Verify"
 msgstr "&Tentusah"
 
@@ -1267,8 +1313,8 @@ msgstr "&Tentusah"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 162
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 426
-#: rc.cpp:259 rc.cpp:301 rc.cpp:328 rc.cpp:355 rc.cpp:412 rc.cpp:472
-#: rc.cpp:538
+#: rc.cpp:265 rc.cpp:307 rc.cpp:334 rc.cpp:361 rc.cpp:418 rc.cpp:478
+#: rc.cpp:544
 msgid "Progress"
 msgstr "Perkembangan"
 
@@ -1286,8 +1332,8 @@ msgstr "Perkembangan"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 205
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 450
-#: rc.cpp:262 rc.cpp:304 rc.cpp:331 rc.cpp:358 rc.cpp:415 rc.cpp:475
-#: rc.cpp:541
+#: rc.cpp:268 rc.cpp:310 rc.cpp:337 rc.cpp:364 rc.cpp:421 rc.cpp:481
+#: rc.cpp:547
 msgid "Count:"
 msgstr "Kira:"
 
@@ -1305,8 +1351,8 @@ msgstr "Kira:"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 218
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 460
-#: rc.cpp:265 rc.cpp:307 rc.cpp:334 rc.cpp:361 rc.cpp:418 rc.cpp:478
-#: rc.cpp:544
+#: rc.cpp:271 rc.cpp:313 rc.cpp:340 rc.cpp:367 rc.cpp:424 rc.cpp:484
+#: rc.cpp:550
 msgid "Time:"
 msgstr "Masa:"
 
@@ -1324,8 +1370,8 @@ msgstr "Masa:"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 228
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 473
-#: rc.cpp:268 rc.cpp:310 rc.cpp:337 rc.cpp:364 rc.cpp:421 rc.cpp:481
-#: rc.cpp:547
+#: rc.cpp:274 rc.cpp:316 rc.cpp:343 rc.cpp:370 rc.cpp:427 rc.cpp:487
+#: rc.cpp:553
 msgid "Cycle:"
 msgstr "Pusingan:"
 
@@ -1343,8 +1389,8 @@ msgstr "Pusingan:"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 350
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 517
-#: rc.cpp:271 rc.cpp:313 rc.cpp:340 rc.cpp:376 rc.cpp:424 rc.cpp:499
-#: rc.cpp:553
+#: rc.cpp:277 rc.cpp:319 rc.cpp:346 rc.cpp:382 rc.cpp:430 rc.cpp:505
+#: rc.cpp:559
 #, fuzzy
 msgid "&Stop Practice"
 msgstr "Artikel:"
@@ -1361,21 +1407,20 @@ msgstr "Artikel:"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 357
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 510
-#: rc.cpp:274 rc.cpp:316 rc.cpp:379 rc.cpp:427 rc.cpp:502 rc.cpp:550
-#: kva_init.cpp:231
+#: rc.cpp:280 rc.cpp:322 rc.cpp:385 rc.cpp:433 rc.cpp:508 rc.cpp:556
 #, fuzzy
 msgid "&Edit Entry..."
 msgstr "Ubah sambungan..."
 
 #. i18n: tag string
 #. i18n: file ./practice/AdjQueryDlgForm.ui line 46
-#: rc.cpp:277
+#: rc.cpp:283
 msgid "Fill in the missing comparison expressions:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/AdjQueryDlgForm.ui line 55
-#: rc.cpp:280
+#: rc.cpp:286
 msgctxt ""
 "Comparison form of adjective - the normal form of the adjective (good)"
 msgid "&Absolute"
@@ -1383,7 +1428,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/AdjQueryDlgForm.ui line 75
-#: rc.cpp:283
+#: rc.cpp:289
 #, fuzzy
 msgctxt "comparison form of adjectives - comparison form (better)"
 msgid "&Comparative"
@@ -1391,7 +1436,7 @@ msgstr "perbandingan rentetan gagal"
 
 #. i18n: tag string
 #. i18n: file ./practice/AdjQueryDlgForm.ui line 95
-#: rc.cpp:286
+#: rc.cpp:292
 #, fuzzy
 msgctxt "comparison of adjectives - (best)"
 msgid "&Superlative"
@@ -1399,13 +1444,13 @@ msgstr "Artikel:"
 
 #. i18n: tag string
 #. i18n: file ./practice/mixedletterpracticedialog.ui line 55
-#: rc.cpp:319
+#: rc.cpp:325
 msgid "Can you order the letters?"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/mixedletterpracticedialog.ui line 92
-#: rc.cpp:325
+#: rc.cpp:331
 #, fuzzy
 #| msgid "&Verify"
 msgid "Verify"
@@ -1413,37 +1458,37 @@ msgstr "&Tentusah"
 
 #. i18n: tag string
 #. i18n: file ./practice/ArtQueryDlgForm.ui line 46
-#: rc.cpp:343
+#: rc.cpp:349
 msgid "Select the correct article for this noun:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/ArtQueryDlgForm.ui line 93
-#: rc.cpp:346
+#: rc.cpp:352
 msgid "&male"
 msgstr "&lelaki"
 
 #. i18n: tag string
 #. i18n: file ./practice/ArtQueryDlgForm.ui line 100
-#: rc.cpp:349
+#: rc.cpp:355
 msgid "&female"
 msgstr "&perempuan"
 
 #. i18n: tag string
 #. i18n: file ./practice/ArtQueryDlgForm.ui line 107
-#: rc.cpp:352
+#: rc.cpp:358
 msgid "&neutral"
 msgstr "&neutral"
 
 #. i18n: tag string
 #. i18n: file ./practice/MCQueryDlgForm.ui line 46
-#: rc.cpp:382
+#: rc.cpp:388
 msgid "Select the correct translation:"
 msgstr "Pilih terjemahan yang betul:"
 
 #. i18n: tag string
 #. i18n: file ./practice/MCQueryDlgForm.ui line 103
-#: rc.cpp:385
+#: rc.cpp:391
 #, fuzzy
 #| msgid "&1"
 msgid "1"
@@ -1451,7 +1496,7 @@ msgstr "&1"
 
 #. i18n: tag string
 #. i18n: file ./practice/MCQueryDlgForm.ui line 127
-#: rc.cpp:388
+#: rc.cpp:394
 #, fuzzy
 #| msgid "&2"
 msgid "2"
@@ -1459,7 +1504,7 @@ msgstr "&2"
 
 #. i18n: tag string
 #. i18n: file ./practice/MCQueryDlgForm.ui line 151
-#: rc.cpp:391
+#: rc.cpp:397
 #, fuzzy
 #| msgid "&3"
 msgid "3"
@@ -1467,7 +1512,7 @@ msgstr "&3"
 
 #. i18n: tag string
 #. i18n: file ./practice/MCQueryDlgForm.ui line 175
-#: rc.cpp:394
+#: rc.cpp:400
 #, fuzzy
 #| msgid "&4"
 msgid "4"
@@ -1475,7 +1520,7 @@ msgstr "&4"
 
 #. i18n: tag string
 #. i18n: file ./practice/MCQueryDlgForm.ui line 199
-#: rc.cpp:397
+#: rc.cpp:403
 #, fuzzy
 #| msgid "&5"
 msgid "5"
@@ -1485,53 +1530,53 @@ msgstr "&5"
 #. i18n: file ./practice/MCQueryDlgForm.ui line 230
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 233
-#: rc.cpp:400 rc.cpp:517
+#: rc.cpp:406 rc.cpp:523
 #, fuzzy
 msgid "&Continue"
 msgstr "Sedang dilaksanakan...   "
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 16
-#: rc.cpp:430
+#: rc.cpp:436
 msgid "General"
 msgstr "Umum"
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 22
-#: rc.cpp:433
+#: rc.cpp:439
 #, fuzzy
 msgid "Total:"
 msgstr "Lelaki"
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 42
-#: rc.cpp:436
+#: rc.cpp:442
 msgid "Answered correctly (first attempt):"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 66
-#: rc.cpp:439
+#: rc.cpp:445
 #, fuzzy
 msgid "Wrong answer:"
 msgstr "%i Salah"
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 90
-#: rc.cpp:442
+#: rc.cpp:448
 #, fuzzy
 msgid "Not answered:"
 msgstr "%s tidak dijumpai"
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 114
-#: rc.cpp:445
+#: rc.cpp:451
 msgid "Skipped:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/practicesummarywidget.ui line 138
-#: rc.cpp:448
+#: rc.cpp:454
 msgid "Postponed:"
 msgstr ""
 
@@ -1539,13 +1584,13 @@ msgstr ""
 #. i18n: file ./practice/showsolutionwidget.ui line 31
 #. i18n: tag string
 #. i18n: file ./practice/showsolutionwidget.ui line 78
-#: rc.cpp:451 rc.cpp:457
+#: rc.cpp:457 rc.cpp:463
 msgid "TextLabel"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/showsolutionwidget.ui line 53
-#: rc.cpp:454
+#: rc.cpp:460
 #, fuzzy
 #| msgid " : "
 msgid " - "
@@ -1555,7 +1600,7 @@ msgstr " : "
 #. i18n: file ./practice/showsolutionwidget.ui line 109
 #. i18n: tag string
 #. i18n: file ./practice/showsolutionwidget.ui line 162
-#: rc.cpp:460 rc.cpp:463
+#: rc.cpp:466 rc.cpp:469
 #, fuzzy
 #| msgid "Malay"
 msgctxt "Listen to the vocabulary entry (sound)"
@@ -1566,19 +1611,19 @@ msgstr "Melayu"
 #. i18n: file ./practice/SimpleQueryDlgForm.ui line 313
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 173
-#: rc.cpp:493 rc.cpp:508
+#: rc.cpp:499 rc.cpp:514
 msgid "Show &More"
 msgstr "Papar &Lagi"
 
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 102
-#: rc.cpp:505
+#: rc.cpp:511
 msgid "Enter the correct translation:"
 msgstr "Masukkan terjemahan yang betul:"
 
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 301
-#: rc.cpp:526
+#: rc.cpp:532
 #, fuzzy
 #| msgid "minutes"
 msgid "Hints"
@@ -1588,73 +1633,66 @@ msgstr "minit"
 #. i18n: file ./practice/writtenpracticedialog.ui line 307
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 116
-#: rc.cpp:529 rc.cpp:836
+#: rc.cpp:535 rc.cpp:812
 msgid "&False friend:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./practice/writtenpracticedialog.ui line 347
-#: rc.cpp:535
+#: rc.cpp:541
 msgid "T&ype:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 16
-#: rc.cpp:556
+#: rc.cpp:562
 msgid "Only practice vocabulary that fulfills the following conditions:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 25
-#: rc.cpp:559
+#: rc.cpp:565
 msgid "At least"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 32
-#: rc.cpp:562
+#: rc.cpp:568
 msgid "At most"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 42
-#: rc.cpp:565
+#: rc.cpp:571
 #, fuzzy
 msgid "Grade"
 msgstr "Tahap Gred: %1. Strok: %2."
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 49
-#: rc.cpp:568
+#: rc.cpp:574
 #, fuzzy
 msgid "Times practiced"
 msgstr "Artikel:"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 73
-#: rc.cpp:571
+#: rc.cpp:577
 msgid "Answered wrong"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/thresholdoptions.ui line 143
-#: rc.cpp:574
+#: rc.cpp:580
 #, fuzzy
 msgid "Enable word type selection"
 msgstr "Description=ioslave Subversion"
 
 #. i18n: tag string
-#. i18n: file ./configure-practice/thresholdoptions.ui line 151
-#: rc.cpp:577
-#, fuzzy
-msgid "Word Types"
-msgstr "Lilit perkataan"
-
-#. i18n: tag string
 #. i18n: file ./configure-practice/blockoptions.ui line 40
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 389
-#: rc.cpp:580 rc.cpp:1136
+#: rc.cpp:586 rc.cpp:1181
 #, fuzzy
 msgid "Level &2:"
 msgstr "Aras"
@@ -1663,7 +1701,7 @@ msgstr "Aras"
 #. i18n: file ./configure-practice/blockoptions.ui line 53
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 341
-#: rc.cpp:583 rc.cpp:1127
+#: rc.cpp:589 rc.cpp:1172
 #, fuzzy
 msgid "Level &5:"
 msgstr "Aras"
@@ -1672,20 +1710,20 @@ msgstr "Aras"
 #. i18n: file ./configure-practice/blockoptions.ui line 63
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 325
-#: rc.cpp:586 rc.cpp:1124
+#: rc.cpp:592 rc.cpp:1169
 #, fuzzy
 msgid "Level &6:"
 msgstr "Aras"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/blockoptions.ui line 79
-#: rc.cpp:589
+#: rc.cpp:595
 msgid "E&xpiring"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/blockoptions.ui line 95
-#: rc.cpp:592
+#: rc.cpp:598
 msgid "Bl&ocking"
 msgstr ""
 
@@ -1693,7 +1731,7 @@ msgstr ""
 #. i18n: file ./configure-practice/blockoptions.ui line 118
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 357
-#: rc.cpp:595 rc.cpp:1130
+#: rc.cpp:601 rc.cpp:1175
 #, fuzzy
 msgid "Level &4:"
 msgstr "Aras"
@@ -1702,7 +1740,7 @@ msgstr "Aras"
 #. i18n: file ./configure-practice/blockoptions.ui line 128
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 309
-#: rc.cpp:598 rc.cpp:1121
+#: rc.cpp:604 rc.cpp:1166
 #, fuzzy
 msgid "Level &7:"
 msgstr "Aras"
@@ -1711,7 +1749,7 @@ msgstr "Aras"
 #. i18n: file ./configure-practice/blockoptions.ui line 150
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 405
-#: rc.cpp:601 rc.cpp:1139
+#: rc.cpp:607 rc.cpp:1184
 #, fuzzy
 msgid "Level &1:"
 msgstr "Aras"
@@ -1720,131 +1758,125 @@ msgstr "Aras"
 #. i18n: file ./configure-practice/blockoptions.ui line 192
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 373
-#: rc.cpp:604 rc.cpp:1133
+#: rc.cpp:610 rc.cpp:1178
 #, fuzzy
 msgid "Level &3:"
 msgstr "Aras"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/blockoptions.ui line 218
-#: rc.cpp:607
+#: rc.cpp:613
 msgid "Do not practice vocabulary that has been asked within:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/blockoptions.ui line 228
-#: rc.cpp:610
+#: rc.cpp:616
 msgid "Vocabulary drops one grade after this much time:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/comparisonoptionswidget.ui line 16
-#: rc.cpp:616
+#: rc.cpp:622
 msgid "Include Adjectives"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/comparisonoptionswidget.ui line 23
-#: rc.cpp:619
+#: rc.cpp:625
 msgid "Include Adverbs"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 18
-#: rc.cpp:622
+#: rc.cpp:628
 msgid "Type of Test"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 24
-#: rc.cpp:625
+#: rc.cpp:631
 #, fuzzy
 msgid "Mixed Letters"
 msgstr "Artikel:"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 31
-#: rc.cpp:628
+#: rc.cpp:634
 #, fuzzy
 msgid "Article Training"
 msgstr "Tahap latihan semasa"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 45
-#: rc.cpp:634 entry-dialogs/EntryDlg.cpp:77
+#: rc.cpp:640
 #, fuzzy
 msgid "Comparison"
 msgstr "perbandingan rentetan gagal"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 55
-#: rc.cpp:637
+#: rc.cpp:643
 msgid "Written"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./configure-practice/configurepracticewidget.ui line 65
-#: rc.cpp:640 entry-dialogs/EntryDlg.cpp:71
-msgid "Conjugation"
-msgstr ""
-
-#. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 72
-#: rc.cpp:643
+#: rc.cpp:649
 #, fuzzy
 msgid "Example Sentences"
 msgstr "EXAMPLE.COM"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 79
-#: rc.cpp:646
+#: rc.cpp:652 vocabulary/vocabularymodel.cpp:284
 #, fuzzy
 msgid "Synonym"
 msgstr "Tahap latihan semasa"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 93
-#: rc.cpp:652
+#: rc.cpp:658 vocabulary/vocabularymodel.cpp:286
 #, fuzzy
 msgid "Antonym"
 msgstr "Comment=Projek Ant"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 116
-#: rc.cpp:655
+#: rc.cpp:661
 #, fuzzy
 msgid "Options"
 msgstr "Tetapan Lain-lain"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 133
-#: rc.cpp:661
+#: rc.cpp:667
 #, fuzzy
 msgid "From"
 msgstr "Dari %s"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/configurepracticewidget.ui line 140
-#: rc.cpp:664
+#: rc.cpp:670
 #, fuzzy
 msgid "To"
 msgstr "Lelaki"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/writtenpracticeoptionswidget.ui line 16
-#: rc.cpp:667
+#: rc.cpp:673
 msgid "Ignore accent mistakes"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/writtenpracticeoptionswidget.ui line 23
-#: rc.cpp:670
+#: rc.cpp:676
 msgid "Ignore capitalization mistakes"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 16
-#: rc.cpp:673
+#: rc.cpp:679
 #, fuzzy
 msgid "General Options"
 msgstr "Tetapan Lain-lain"
@@ -1853,7 +1885,7 @@ msgstr "Tetapan Lain-lain"
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 22
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 25
-#: rc.cpp:676 rc.cpp:679
+#: rc.cpp:682 rc.cpp:685
 msgid ""
 "By checking this, you will use the Leitner method of learning which requires "
 "you to answer correctly to each question 3 times in a row. "
@@ -1861,19 +1893,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 28
-#: rc.cpp:682
+#: rc.cpp:688
 msgid "&Require 3 consecutive correct answers to count as right"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 40
-#: rc.cpp:685
+#: rc.cpp:691
 msgid "Enable the Show More button on the Random Query screen"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 43
-#: rc.cpp:688
+#: rc.cpp:694
 msgid ""
 "When this is checked, you will be able to use a Show More button which allow "
 "you to get the next letter in your answer in the query. If this is "
@@ -1883,26 +1915,26 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 46
-#: rc.cpp:691
+#: rc.cpp:697
 msgid "Enable S&how More button"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 53
-#: rc.cpp:694
+#: rc.cpp:700
 #, fuzzy
 msgid "Enable Sound"
 msgstr "Tetikus 2 Butang (bersiri)"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 63
-#: rc.cpp:697
+#: rc.cpp:703
 msgid "Enable the I Know It button on the Random Query screen"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 66
-#: rc.cpp:700
+#: rc.cpp:706
 msgid ""
 "If this is checked, the I Know button will be available. It allows you to "
 "tell the query that you know the result without writing it or having it "
@@ -1912,34 +1944,34 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 69
-#: rc.cpp:703
+#: rc.cpp:709
 #, fuzzy
 msgid "Enable Skip (I Know it) &button"
 msgstr "Tetikus 2 Butang (bersiri)"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 76
-#: rc.cpp:706
+#: rc.cpp:712
 #, fuzzy
 msgid "Enable Images"
 msgstr "Terap perubahan"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 83
-#: rc.cpp:709
+#: rc.cpp:715
 msgid "Accept synonyms as correct"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 93
-#: rc.cpp:712
+#: rc.cpp:718
 #, fuzzy
 msgid "S&wap direction randomly"
 msgstr "Hala rayauan diluar julat"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 100
-#: rc.cpp:715
+#: rc.cpp:721
 msgid ""
 "When practicing new words will be chosen loosely in lesson order if this is "
 "selected, otherwise at total random."
@@ -1947,7 +1979,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 103
-#: rc.cpp:718
+#: rc.cpp:724
 msgid "&Practice in lesson order"
 msgstr ""
 
@@ -1955,7 +1987,7 @@ msgstr ""
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 114
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 127
-#: rc.cpp:721 rc.cpp:727
+#: rc.cpp:727 rc.cpp:733
 msgid ""
 "The number of vocabulary that will show up repeatedly until it is answered "
 "correctly."
@@ -1963,7 +1995,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 117
-#: rc.cpp:724
+#: rc.cpp:730
 msgid "&Active entries during practice:"
 msgstr ""
 
@@ -1971,20 +2003,20 @@ msgstr ""
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 163
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 173
-#: rc.cpp:730 rc.cpp:736
+#: rc.cpp:736 rc.cpp:742
 msgid "After the answer was given the solution will be shown for this long"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 166
-#: rc.cpp:733
+#: rc.cpp:739
 #, fuzzy
 msgid "&Show solution after answering:"
 msgstr "Papar penanda"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 176
-#: rc.cpp:739
+#: rc.cpp:745
 msgid "unlimited"
 msgstr ""
 
@@ -1992,14 +2024,14 @@ msgstr ""
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 179
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 284
-#: rc.cpp:742 rc.cpp:767
+#: rc.cpp:748 rc.cpp:773
 msgctxt "Seconds (suffix)"
 msgid "s"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 213
-#: rc.cpp:746
+#: rc.cpp:752
 msgid ""
 "If a time limit is set, an answer has to be given in the set time, when "
 "practicing."
@@ -2007,349 +2039,309 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 216
-#: rc.cpp:749
+#: rc.cpp:755
 msgid "&Time Limit in Tests"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 249
-#: rc.cpp:752
+#: rc.cpp:758
 #, fuzzy
 msgid "&Show solution"
 msgstr "Papar penanda"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 256
-#: rc.cpp:755
+#: rc.cpp:761
 #, fuzzy
 msgid "&Continue after timeout"
 msgstr "Hadmasa (dlm saat):"
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 268
-#: rc.cpp:758
+#: rc.cpp:764
 msgid "Limit:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 278
-#: rc.cpp:761
+#: rc.cpp:767
 msgid "Set the maximum time allowed per answer."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./configure-practice/advancedpracticeoptions.ui line 281
-#: rc.cpp:764
+#: rc.cpp:770
 msgid "Set here the maximum time you want to allow per answer."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 55
-#: rc.cpp:773
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 13
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/audiowidget.ui line 13
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/imagechooserwidget.ui line 13
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/multiplechoicewidget.ui line 13
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/wordtypewidget.ui line 13
+#: rc.cpp:776 rc.cpp:947 rc.cpp:1022 rc.cpp:1025 rc.cpp:1034
 #, fuzzy
-msgid "Additional Properties"
-msgstr "Ciri perkongsian - %s"
+msgid "Form"
+msgstr "Dari %s"
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 63
-#: rc.cpp:776
-#, fuzzy
-msgid "S&ynonym:"
-msgstr "Tahap latihan semasa"
-
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 27
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 80
-#: rc.cpp:779
-#, fuzzy
-msgid "Ant&onym:"
-msgstr "Comment=Projek Ant"
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 93
-#: rc.cpp:782
-msgid "E&xample:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 119
-#: rc.cpp:788
-msgid "&Paraphrase:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 152
-#: rc.cpp:791
-#, fuzzy
-#| msgid "Author:"
-msgid "Audio:"
-msgstr "Pengarang:"
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 162
-#: rc.cpp:794
-#, fuzzy
-#| msgid "Malay"
-msgid "Play"
-msgstr "Melayu"
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 169
-#: rc.cpp:797
-#, fuzzy
-msgid "Image:"
-msgstr "Lelaki"
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/additionaleditpage.ui line 191
-#: rc.cpp:800
-#, fuzzy
-msgid "No Image"
-msgstr "Lelaki"
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 56
-#: rc.cpp:806
-#, fuzzy
-msgid "Comparison of Adjectives"
-msgstr "perbandingan rentetan gagal"
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 96
-#: rc.cpp:809
-msgid "The superlative (fastest)"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 99
-#: rc.cpp:812
-msgid "&3. Superlative:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 125
-#: rc.cpp:815
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 56
+#: rc.cpp:779 rc.cpp:785
 msgid "The comparative is used to compare nouns or verbs (faster)"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 128
-#: rc.cpp:818
-msgid "&2. Comparative:"
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 30
+#: rc.cpp:782
+msgid "Absolute:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 144
-#: rc.cpp:821
-msgid "The base form of the adjective or adverb (fast)"
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 59
+#: rc.cpp:788
+#, fuzzy
+msgid "Comparative:"
+msgstr "perbandingan rentetan gagal"
+
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 85
+#: rc.cpp:791
+msgid "The superlative (fastest)"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 147
-#: rc.cpp:824
-msgid "&1. Absolute:"
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 88
+#: rc.cpp:794
+#, fuzzy
+msgid "Superlative:"
+msgstr "Artikel:"
+
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 110
+#: rc.cpp:797
+#, fuzzy
+msgid "Adjective"
+msgstr "Edit baris dipilih"
+
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/comparisonwidget.ui line 117
+#: rc.cpp:800
+msgid "Adverb"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 26
-#: rc.cpp:830
+#: rc.cpp:806
 #, fuzzy
 msgid "Properties From Original"
 msgstr "Pulihkan nilai _asal"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 96
-#: rc.cpp:833
+#: rc.cpp:809
 #, fuzzy
 msgid "&Grade:"
 msgstr "Tahap Gred: %1. Strok: %2."
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 128
-#: rc.cpp:839
+#: rc.cpp:815
 #, fuzzy
 msgid "Practice &Counts"
 msgstr "Artikel:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 172
-#: rc.cpp:842
+#: rc.cpp:818
 #, fuzzy
 msgid "&Wrong:"
 msgstr "%i Salah"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 182
-#: rc.cpp:845
+#: rc.cpp:821
 #, fuzzy
 msgid "Tot&al:"
 msgstr "Lelaki"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 195
-#: rc.cpp:848
+#: rc.cpp:824
 #, fuzzy
 msgid "&Last Practiced"
 msgstr "Artikel:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 219
-#: rc.cpp:851
+#: rc.cpp:827
 #, fuzzy
 msgid "&Never"
 msgstr "Tidak sekali"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 226
-#: rc.cpp:854
+#: rc.cpp:830
 msgid "T&oday"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 242
-#: rc.cpp:857
+#: rc.cpp:833
 msgid "The date this expression was last practiced"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 245
-#: rc.cpp:860
+#: rc.cpp:836
 #, fuzzy
 msgid "Not Practiced Yet"
 msgstr "Tidak dapat mencari bahagian KDevDesigner."
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 265
-#: rc.cpp:863
+#: rc.cpp:839
 msgid "dd.MM.yyyy"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 296
-#: rc.cpp:866
+#: rc.cpp:842
 #, fuzzy
 msgid "&Reset Grades"
 msgstr "Kepastian Ulangtetap"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 59
-#: rc.cpp:872
+#: rc.cpp:848
 #, fuzzy
 msgid "Common Properties"
 msgstr "Ciri perkongsian - %s"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 91
-#: rc.cpp:875
+#: rc.cpp:851
 msgid "&Pronunciation:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 101
-#: rc.cpp:878
+#: rc.cpp:854
 msgid "&Lesson:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 129
-#: rc.cpp:881
+#: rc.cpp:857
 msgid "Invokes dialog page with characters from phonetic alphabet"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 142
-#: rc.cpp:884
+#: rc.cpp:860
 #, fuzzy
 msgid "&Expression:"
 msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 160
-#: rc.cpp:887
+#: rc.cpp:863
 msgid "T&ype"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 227
-#: rc.cpp:890
+#: rc.cpp:866
 msgid "&Subtype:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 265
-#: rc.cpp:893
+#: rc.cpp:869
 msgid "Invokes input dialog for word types"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 388
-#: rc.cpp:899
+#: rc.cpp:875
 msgid "Invokes input dialog for usage labels"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 414
-#: rc.cpp:902
+#: rc.cpp:878
 msgid "Acti&ve"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 25
-#: rc.cpp:908
+#: rc.cpp:884
 msgid "Conjugation of Verbs"
 msgstr "Konjugatan Kata Kerja"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 57
-#: rc.cpp:911
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 52
+#: rc.cpp:887 rc.cpp:962
 #, fuzzy
 msgid "&Tense:"
 msgstr "Kala semasa adalah %1."
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 73
-#: rc.cpp:914
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 68
+#: rc.cpp:890 rc.cpp:965
 msgid "Ne&xt"
 msgstr "&Maju"
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 47
-#: rc.cpp:974
-msgid "Suggestions for Multiple Choice"
+#. i18n: file ./entry-dialogs/audiowidget.ui line 21
+#: rc.cpp:950
+#, fuzzy
+#| msgid "Malay"
+msgid "Play"
+msgstr "Melayu"
+
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/audiowidget.ui line 28
+#: rc.cpp:953
+#, fuzzy
+msgid "Record"
+msgstr "Pilihan Bahasa"
+
+#. i18n: tag string
+#. i18n: file ./entry-dialogs/conjugationwidget.ui line 31
+#: rc.cpp:959
+msgid "Turn the selected word into a verb."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 67
-#: rc.cpp:977
-msgid "&1:"
-msgstr "&1:"
+#. i18n: file ./entry-dialogs/multiplechoicewidget.ui line 24
+#: rc.cpp:1028
+#, fuzzy
+msgid "Add"
+msgstr "Tambah Bar Alatan"
 
 #. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 85
-#: rc.cpp:980
-msgid "&2:"
-msgstr "&2:"
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 103
-#: rc.cpp:983
-msgid "&3:"
-msgstr "&3:"
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 181
-#: rc.cpp:986
-msgid "&4:"
-msgstr "&4:"
-
-#. i18n: tag string
-#. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 199
-#: rc.cpp:989
-msgid "&5:"
-msgstr "&5:"
+#. i18n: file ./entry-dialogs/multiplechoicewidget.ui line 31
+#: rc.cpp:1031
+#, fuzzy
+#| msgid "Filename:"
+msgid "Remove"
+msgstr "Namafail:"
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/identifierlanguagepage.ui line 16
-#: rc.cpp:992
+#: rc.cpp:1037
 #, fuzzy
 msgid "Please select a language:"
 msgstr "Pilihan Bahasa"
@@ -2358,7 +2350,7 @@ msgstr "Pilihan Bahasa"
 #. i18n: file ./newdocument-wizard/identifierlanguagepage.ui line 26
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 41
-#: rc.cpp:995 rc.cpp:1244
+#: rc.cpp:1040 rc.cpp:1289
 #, fuzzy
 msgid "Title:"
 msgstr "Tajuk"
@@ -2367,7 +2359,7 @@ msgstr "Tajuk"
 #. i18n: file ./newdocument-wizard/identifierlanguagepage.ui line 36
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 79
-#: rc.cpp:998 rc.cpp:1016
+#: rc.cpp:1043 rc.cpp:1061
 msgid ""
 "This does not have to be a language. Anything goes: Definition, Chinese "
 "simplified or anything else you want to learn."
@@ -2375,38 +2367,38 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 16
-#: rc.cpp:1001
+#: rc.cpp:1046
 msgid "So far your document contains:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 26
-#: rc.cpp:1004
+#: rc.cpp:1049
 msgid "To change the first selection go back one page."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 52
-#: rc.cpp:1007
+#: rc.cpp:1052
 msgid "Please select a second language (can be the same as before):"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 62
-#: rc.cpp:1010
+#: rc.cpp:1055
 msgid "The language of the second column of vocabulary."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 69
-#: rc.cpp:1013
+#: rc.cpp:1058
 #, fuzzy
 msgid "Second title:"
 msgstr "Pilihan Bahasa"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 70
-#: rc.cpp:1019
+#: rc.cpp:1064
 msgid ""
 "Specify which font to use for displaying pronunciations using phonetic "
 "symbols."
@@ -2414,216 +2406,216 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 77
-#: rc.cpp:1022
+#: rc.cpp:1067
 #, fuzzy
 msgid "&IPA font:"
 msgstr "Tetap Font"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 87
-#: rc.cpp:1025
+#: rc.cpp:1070
 #, fuzzy
 msgid "&Table font:"
 msgstr "Tetap Font"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 97
-#: rc.cpp:1028
+#: rc.cpp:1073
 msgid "Specify which font to use for editing of the main table."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 112
-#: rc.cpp:1031
+#: rc.cpp:1076
 #, fuzzy
 msgid "Grade Colors"
 msgstr "256 Warna"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 142
-#: rc.cpp:1034
+#: rc.cpp:1079
 msgid "&N"
 msgstr "&N"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 155
-#: rc.cpp:1037
+#: rc.cpp:1082
 #, fuzzy
 msgid "Color for the grade 1"
 msgstr "Tetap Buddy untuk %1"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 158
-#: rc.cpp:1040
+#: rc.cpp:1085
 msgid "Click here to change the color for grade 1."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 161
-#: rc.cpp:1043
+#: rc.cpp:1088
 msgid "&1"
 msgstr "&1"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 164
-#: rc.cpp:1046
+#: rc.cpp:1091
 #, fuzzy
 msgid "Alt+1"
 msgstr "Alt+1"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 177
-#: rc.cpp:1049
+#: rc.cpp:1094
 #, fuzzy
 msgid "Color for the grade 2"
 msgstr "Tetap Buddy untuk %1"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 180
-#: rc.cpp:1052
+#: rc.cpp:1097
 msgid "Click here to change the color for grade 2."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 183
-#: rc.cpp:1055
+#: rc.cpp:1100
 msgid "&2"
 msgstr "&2"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 186
-#: rc.cpp:1058
+#: rc.cpp:1103
 msgid "Alt+2"
 msgstr "Alt+2"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 199
-#: rc.cpp:1061
+#: rc.cpp:1106
 #, fuzzy
 msgid "Color for the grade 3"
 msgstr "Tetap Buddy untuk %1"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 202
-#: rc.cpp:1064
+#: rc.cpp:1109
 msgid "Click here to change the color for grade 3."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 205
-#: rc.cpp:1067
+#: rc.cpp:1112
 msgid "&3"
 msgstr "&3"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 208
-#: rc.cpp:1070
+#: rc.cpp:1115
 msgid "Alt+3"
 msgstr "cAlt+3"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 221
-#: rc.cpp:1073
+#: rc.cpp:1118
 #, fuzzy
 msgid "Color for the grade 4"
 msgstr "Tetap Buddy untuk %1"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 224
-#: rc.cpp:1076
+#: rc.cpp:1121
 msgid "Click here to change the color for grade 4."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 227
-#: rc.cpp:1079
+#: rc.cpp:1124
 msgid "&4"
 msgstr "&4"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 230
-#: rc.cpp:1082
+#: rc.cpp:1127
 msgid "Alt+4"
 msgstr "Alt+4"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 243
-#: rc.cpp:1085
+#: rc.cpp:1130
 #, fuzzy
 msgid "Color for the grade 5"
 msgstr "Tetap Buddy untuk %1"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 246
-#: rc.cpp:1088
+#: rc.cpp:1133
 msgid "Click here to change the color for grade 5."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 249
-#: rc.cpp:1091
+#: rc.cpp:1136
 msgid "&5"
 msgstr "&5"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 252
-#: rc.cpp:1094
+#: rc.cpp:1139
 msgid "Alt+5"
 msgstr "Alt+5"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 265
-#: rc.cpp:1097
+#: rc.cpp:1142
 #, fuzzy
 msgid "Color for the grade 6"
 msgstr "Tetap Buddy untuk %1"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 268
-#: rc.cpp:1100
+#: rc.cpp:1145
 msgid "Click here to change the color for grade 6."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 271
-#: rc.cpp:1103
+#: rc.cpp:1148
 msgid "&6"
 msgstr "&6"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 274
-#: rc.cpp:1106
+#: rc.cpp:1151
 msgid "Alt+6"
 msgstr "Alt+6"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 287
-#: rc.cpp:1109
+#: rc.cpp:1154
 #, fuzzy
 msgid "Color for the grade 7"
 msgstr "Tetap Buddy untuk %1"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 290
-#: rc.cpp:1112
+#: rc.cpp:1157
 msgid "Click here to change the color for grade 7."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 293
-#: rc.cpp:1115
+#: rc.cpp:1160
 msgid "&7"
 msgstr "&7"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 296
-#: rc.cpp:1118
+#: rc.cpp:1163
 msgid "Alt+7"
 msgstr "Alt+7"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 421
-#: rc.cpp:1142
+#: rc.cpp:1187
 #, fuzzy
 msgid "Not &practiced:"
 msgstr "Tidak dapat mencari bahagian KDevDesigner."
@@ -2632,7 +2624,7 @@ msgstr "Tidak dapat mencari bahagian KDevDesigner."
 #. i18n: file ./settings/viewoptionsbase.ui line 431
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 434
-#: rc.cpp:1145 rc.cpp:1148
+#: rc.cpp:1190 rc.cpp:1193
 msgid ""
 "If it is unchecked, you will just have black on white for the grades; if it "
 "is checked, the colors below will be chosen."
@@ -2640,27 +2632,27 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 437
-#: rc.cpp:1151
+#: rc.cpp:1196
 #, fuzzy
 msgid "&Use colors"
 msgstr "Guna Hint Saiz"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 447
-#: rc.cpp:1154
+#: rc.cpp:1199
 #, fuzzy
 msgid "Column Resizing"
 msgstr "+BARIS,LAJUR"
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 453
-#: rc.cpp:1157
+#: rc.cpp:1202
 msgid "Automatically resize the columns"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 456
-#: rc.cpp:1160
+#: rc.cpp:1205
 msgid ""
 "Parley makes each column the same width except the leftmost with the lesson "
 "names, which is half the size of the others. The second column, which "
@@ -2669,51 +2661,51 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 459
-#: rc.cpp:1163
+#: rc.cpp:1208
 msgid "A&utomatic"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 466
-#: rc.cpp:1166
+#: rc.cpp:1211
 msgid "The columns resize using the same factor that the window is resized to."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 469
-#: rc.cpp:1169
+#: rc.cpp:1214
 msgid "If this is checked, the columns resize by the same amount as the window"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 472
-#: rc.cpp:1172
+#: rc.cpp:1217
 msgid "P&ercentage"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 479
-#: rc.cpp:1175
+#: rc.cpp:1220
 #, fuzzy
 msgid "There is no resizing of the columns"
 msgstr "Tiada dokumentasi terdapat bagi %1."
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 482
-#: rc.cpp:1178
+#: rc.cpp:1223
 msgid "When checked, the columns are not resized"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/viewoptionsbase.ui line 485
-#: rc.cpp:1181
+#: rc.cpp:1226
 #, fuzzy
 msgid "&Fixed"
 msgstr "Saiz _tetap"
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 17
-#: rc.cpp:1184
+#: rc.cpp:1229
 msgid "Open/Save"
 msgstr ""
 
@@ -2721,7 +2713,7 @@ msgstr ""
 #. i18n: file ./settings/generaloptionsbase.ui line 23
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 38
-#: rc.cpp:1187 rc.cpp:1196
+#: rc.cpp:1232 rc.cpp:1241
 msgid "Allow automatic saving of your work"
 msgstr ""
 
@@ -2729,38 +2721,38 @@ msgstr ""
 #. i18n: file ./settings/generaloptionsbase.ui line 26
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 41
-#: rc.cpp:1190 rc.cpp:1199
+#: rc.cpp:1235 rc.cpp:1244
 msgid "Your work will be automatically saved if you check this option"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 29
-#: rc.cpp:1193
+#: rc.cpp:1238
 msgid "&Save vocabularies automatically on close and quit"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 44
-#: rc.cpp:1202
+#: rc.cpp:1247
 #, fuzzy
 msgid "&Create a backup every"
 msgstr "tak dapat nyahbackup %s"
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 54
-#: rc.cpp:1205
+#: rc.cpp:1250
 msgid "minutes"
 msgstr "minit"
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 81
-#: rc.cpp:1208
+#: rc.cpp:1253
 msgid "Sep&arator for text file import/export (CSV):"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 97
-#: rc.cpp:1211
+#: rc.cpp:1256
 msgid ""
 "Choose which separator you want to use to separate your data when importing "
 "and exporting text."
@@ -2768,7 +2760,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 100
-#: rc.cpp:1214
+#: rc.cpp:1259
 msgid ""
 "Choose the separator to use to divide the parts of an expression when "
 "importing or exporting data as text."
@@ -2776,19 +2768,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 128
-#: rc.cpp:1217
+#: rc.cpp:1262
 msgid "Editing"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 152
-#: rc.cpp:1220
+#: rc.cpp:1265
 msgid "Your changes will be applied automatically."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 155
-#: rc.cpp:1223
+#: rc.cpp:1268
 msgid ""
 "If checked, you will not be asked if you really want this change; it will be "
 "applied automatically."
@@ -2796,20 +2788,20 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 158
-#: rc.cpp:1226
+#: rc.cpp:1271
 #, fuzzy
 msgid "Appl&y changes without asking"
 msgstr "Keluar tanpa simpan perubahan?"
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 165
-#: rc.cpp:1229
+#: rc.cpp:1274
 msgid "If checked, the entry dialog will popup repeatedly"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 168
-#: rc.cpp:1232
+#: rc.cpp:1277
 msgid ""
 "If this feature is activated, you will repeatedly be prompted with the entry "
 "dialog. After entering the first original you have to enter the "
@@ -2819,218 +2811,63 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./settings/generaloptionsbase.ui line 171
-#: rc.cpp:1235
+#: rc.cpp:1280
 #, fuzzy
 msgid "Smart a&ppending"
 msgstr "Kad Pintar"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 34
-#: rc.cpp:1241
+#: rc.cpp:1286
 msgid "Filename:"
 msgstr "Namafail:"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 48
-#: rc.cpp:1247
+#: rc.cpp:1292
 #, fuzzy
 msgid "Entries:"
 msgstr "Masukan hilang"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 55
-#: rc.cpp:1250
+#: rc.cpp:1295
 msgid "Author:"
 msgstr "Pengarang:"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 62
-#: rc.cpp:1253
+#: rc.cpp:1298
 msgid "Lessons:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 57
-#: rc.cpp:1259
+#: rc.cpp:1304
 #, fuzzy
 msgid "Grade FROM"
 msgstr "Tapisan From:"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 62
-#: rc.cpp:1262
+#: rc.cpp:1307
 #, fuzzy
 msgid "Grade TO"
 msgstr "Sambung '%1' ke '%2'"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 67
-#: rc.cpp:1265
+#: rc.cpp:1310
 #, fuzzy
 msgid "Entries"
 msgstr "Masukan hilang"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 77
-#: rc.cpp:1271
+#: rc.cpp:1316
 #, fuzzy
 msgid "Reset"
 msgstr "Ulangtetap"
-
-#: kva_io.cpp:85
-msgid ""
-"Vocabulary is modified.\n"
-"\n"
-"Save file before exit?\n"
-msgstr ""
-
-#: kva_io.cpp:135
-#, fuzzy
-msgid "Open Vocabulary Document"
-msgstr "Dokumen yang hendak dibuka"
-
-#: kva_io.cpp:189
-#, fuzzy
-msgid "Open Example Vocabulary Document"
-msgstr "Tidak dapat membuka '%1'. Fail tidak wujud."
-
-#: kva_io.cpp:259
-#, fuzzy
-msgid "Untitled"
-msgstr "Tajuk"
-
-#: kva_io.cpp:264 kva_io.cpp:306
-#, fuzzy, kde-format
-msgctxt "@info:status saving a file"
-msgid "Saving %1"
-msgstr "Menyimpan Cekupanskrin"
-
-#: kva_io.cpp:276 kva_io.cpp:321
-#, kde-format
-msgid "Writing file \"%1\" resulted in an error: %2"
-msgstr ""
-
-#: kva_io.cpp:276 kva_io.cpp:321
-msgid "Save File"
-msgstr ""
-
-#: kva_io.cpp:295
-#, fuzzy
-msgid "Save Vocabulary As"
-msgstr "/Fail/Simpan Seb_agai..."
-
-#: kva_io.cpp:300
-#, kde-format
-msgid ""
-"<qt>The file<p><b>%1</b></p>already exists. Do you want to overwrite it?</qt>"
-msgstr ""
-
-#: kva_io.cpp:460
-msgctxt "context in which vocabulary entry is used"
-msgid "abbreviation"
-msgstr ""
-
-#: kva_io.cpp:461
-#, fuzzy
-msgctxt "context in which vocabulary entry is used"
-msgid "anatomy"
-msgstr "Falak"
-
-#: kva_io.cpp:462
-msgctxt "context in which vocabulary entry is used"
-msgid "biology"
-msgstr ""
-
-#: kva_io.cpp:463
-msgctxt "context in which vocabulary entry is used"
-msgid "figuratively"
-msgstr ""
-
-#: kva_io.cpp:464
-msgctxt "context in which vocabulary entry is used"
-msgid "geology"
-msgstr ""
-
-#: kva_io.cpp:465
-msgctxt "context in which vocabulary entry is used"
-msgid "historical"
-msgstr ""
-
-#: kva_io.cpp:466
-msgctxt "context in which vocabulary entry is used"
-msgid "informal"
-msgstr ""
-
-#: kva_io.cpp:467
-msgctxt "context in which vocabulary entry is used"
-msgid "ironic"
-msgstr ""
-
-#: kva_io.cpp:468
-#, fuzzy
-#| msgid "February"
-msgctxt "context in which vocabulary entry is used"
-msgid "literary"
-msgstr "Febuari"
-
-#: kva_io.cpp:469
-msgctxt "context in which vocabulary entry is used"
-msgid "mythology"
-msgstr ""
-
-#: kva_io.cpp:470
-#, fuzzy
-msgctxt "context in which vocabulary entry is used"
-msgid "proper name"
-msgstr "Name=KDevAdaProject"
-
-#: kva_io.cpp:471
-msgctxt "context in which vocabulary entry is used"
-msgid "pharmacy"
-msgstr ""
-
-#: kva_io.cpp:472
-msgctxt "context in which vocabulary entry is used"
-msgid "philosophy"
-msgstr ""
-
-#: kva_io.cpp:473
-msgctxt "context in which vocabulary entry is used"
-msgid "physics"
-msgstr ""
-
-#: kva_io.cpp:474
-msgctxt "context in which vocabulary entry is used"
-msgid "physiology"
-msgstr ""
-
-#: kva_io.cpp:475
-msgctxt "context in which vocabulary entry is used"
-msgid "rhetoric"
-msgstr ""
-
-#: kva_io.cpp:476
-msgctxt "context in which vocabulary entry is used"
-msgid "zoology"
-msgstr ""
-
-#: kva_io.cpp:491
-msgid "Welcome"
-msgstr ""
-
-#: kva_io.cpp:492
-msgid "GPL (GNU General Public License)"
-msgstr ""
-
-#: kva_io.cpp:493
-#, fuzzy
-msgid "Example document"
-msgstr "EXAMPLE.COM"
-
-#: kva_io.cpp:501
-#, fuzzy
-msgid "A Second Language"
-msgstr "Pilihan Bahasa"
 
 #: configure-practice/blockoptions.cpp:43
 #, fuzzy
@@ -3222,7 +3059,7 @@ msgctxt "@title:window"
 msgid "Configure Practice"
 msgstr "Sharuzzaman Ahmat Raslan"
 
-#: configure-practice/configurepracticedialog.cpp:36 kva_init.cpp:328
+#: configure-practice/configurepracticedialog.cpp:36 kva_init.cpp:289
 #, fuzzy
 msgid "Start Practice..."
 msgstr "Fail Istimewa Peranti"
@@ -3275,94 +3112,26 @@ msgctxt "Configure advanced settings for practicing vocabulary."
 msgid "Advanced Practice Settings"
 msgstr "Tetapan Lain-lain"
 
-#: entry-dialogs/EntryDlg.cpp:45
-msgid "&Reset"
-msgstr "&Ulangtetap"
-
-#: entry-dialogs/EntryDlg.cpp:53
-#, fuzzy
-msgctxt "edit general vocabulary properties that are common to all word types"
-msgid "Common"
-msgstr "Umum"
-
-#: entry-dialogs/EntryDlg.cpp:54
-#, fuzzy
-msgid "General properties of the word"
-msgstr "Sunting Ciri-ciri Pad"
-
-#: entry-dialogs/EntryDlg.cpp:59
-#, fuzzy
-msgctxt "edit additional properties like image, synonym, etc."
-msgid "Additional"
-msgstr "Ciri perkongsian - %s"
-
-#: entry-dialogs/EntryDlg.cpp:60
-#, fuzzy
-msgid "Additional properties"
-msgstr "Ciri perkongsian - %s"
-
-#: entry-dialogs/EntryDlg.cpp:66
-msgid "Predetermined multiple choice suggestions"
+#: entry-dialogs/comparisonwidget.cpp:86
+msgid "Could not determine word type of adjectives"
 msgstr ""
 
-#: entry-dialogs/EntryDlg.cpp:72
-#, fuzzy
-#| msgid "Conjugation of Verbs"
-msgid "Conjugation of the selected verb"
-msgstr "Konjugatan Kata Kerja"
-
-#: entry-dialogs/EntryDlg.cpp:78
-msgid "Comparison forms of the selected adjective or adverb"
+#: entry-dialogs/comparisonwidget.cpp:105
+msgid "Could not determine word type of adverbs"
 msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:100 entry-dialogs/EntryDlg.cpp:110
-#, kde-format
-msgid ""
-"Grades from \n"
-"%1 to %2"
-msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:214
-#, fuzzy, kde-format
-msgid "Edit General Properties"
-msgid_plural "Edit General Properties for %1 Files"
-msgstr[0] "Sunting Ciri-ciri Pad"
-msgstr[1] "Sunting Ciri-ciri Pad"
-
-#: entry-dialogs/EntryDlg.cpp:217
-#, kde-format
-msgctxt "@title:window Editing one entry, %1 the word, %2 the language"
-msgid "\"%1\" (%2)"
-msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:221
-#, kde-format
-msgctxt "@title:window Editing %1 entries, %2 the language"
-msgid "Edit One Word (%2)"
-msgid_plural "Edit %1 words (%2)"
-msgstr[0] ""
-msgstr[1] ""
-
-#: entry-dialogs/EntryDlg.cpp:288
-msgid ""
-"The entry dialog contains unsaved changes.\n"
-"Do you want to apply or discard your changes?"
-msgstr ""
-
-#: entry-dialogs/EntryDlg.cpp:290
-#, fuzzy
-msgid "Unsaved Changes"
-msgstr "Terap perubahan"
-
-#: entry-dialogs/additionaleditpage.cpp:95
-#, fuzzy
-msgctxt "@label image preview is empty"
-msgid "No Image"
-msgstr "Lelaki"
 
 #: entry-dialogs/FromToEntryPage.cpp:125
 #, kde-format
 msgid "Grades from %1 to %2"
+msgstr ""
+
+#: entry-dialogs/conjugationwidget.cpp:125
+#, kde-format
+msgid "\"%1\" is a verb"
+msgstr ""
+
+#: entry-dialogs/conjugationwidget.cpp:163
+msgid "Could not determine word type of verbs"
 msgstr ""
 
 #: entry-dialogs/PhoneticEntryPage.cpp:182
@@ -3379,6 +3148,31 @@ msgctxt "Describing the sound of the character"
 msgid "Sound: "
 msgstr ""
 
+#: entry-dialogs/imagechooserwidget.cpp:49
+msgctxt "@label image preview is empty"
+msgid "No Preview"
+msgstr ""
+
+#: entry-dialogs/imagechooserwidget.cpp:60
+#, fuzzy
+msgctxt "@label image preview is empty"
+msgid "No Image"
+msgstr "Lelaki"
+
+#: entry-dialogs/wordtypewidget.cpp:55
+#, fuzzy
+msgid "No word type set"
+msgstr "Lilit perkataan"
+
+#: entry-dialogs/wordtypewidget.cpp:66
+msgid "No sub types defined"
+msgstr ""
+
+#: entry-dialogs/wordtypewidget.cpp:69
+#, fuzzy
+msgid "No secondary word type set"
+msgstr "Description=ioslave Subversion"
+
 #: entry-dialogs/CommonEntryPage.cpp:73
 #, fuzzy
 msgctxt "Usage (area) of an Expression"
@@ -3387,13 +3181,13 @@ msgstr ""
 "Pengunaan: %s UNGKAPAN\n"
 "    atau: %s OPSYEN\n"
 
-#: entry-dialogs/CommonEntryPage.cpp:240
+#: entry-dialogs/CommonEntryPage.cpp:195
 #, fuzzy
 msgctxt "usage (area) of an expression"
 msgid "Edit User-Defined Usage Labels"
 msgstr "Membuang rantaian ditakrif pengguna:"
 
-#: entry-dialogs/CommonEntryPage.cpp:260
+#: entry-dialogs/CommonEntryPage.cpp:215
 #, fuzzy
 msgid "Edit User Defined Types"
 msgstr "Membuang rantaian ditakrif pengguna:"
@@ -3436,6 +3230,65 @@ msgstr ""
 #: newdocument-wizard/secondidentifierlanguagepage.cpp:46
 msgid "Please select the second column data:"
 msgstr ""
+
+#: parleydocument.cpp:84
+#, fuzzy
+msgid "Open Vocabulary Document"
+msgstr "Dokumen yang hendak dibuka"
+
+#: parleydocument.cpp:121
+#, fuzzy
+msgid "Open Example Vocabulary Document"
+msgstr "Tidak dapat membuka '%1'. Fail tidak wujud."
+
+#: parleydocument.cpp:133
+#, fuzzy
+msgid "Untitled"
+msgstr "Tajuk"
+
+#: parleydocument.cpp:146 parleydocument.cpp:185
+#, kde-format
+msgid "Writing file \"%1\" resulted in an error: %2"
+msgstr ""
+
+#: parleydocument.cpp:146 parleydocument.cpp:185
+msgid "Save File"
+msgstr ""
+
+#: parleydocument.cpp:160
+#, fuzzy
+msgid "Save Vocabulary As"
+msgstr "/Fail/Simpan Seb_agai..."
+
+#: parleydocument.cpp:165
+#, kde-format
+msgid ""
+"<qt>The file<p><b>%1</b></p>already exists. Do you want to overwrite it?</qt>"
+msgstr ""
+
+#: parleydocument.cpp:171
+#, fuzzy, kde-format
+msgctxt "@info:status saving a file"
+msgid "Saving %1"
+msgstr "Menyimpan Cekupanskrin"
+
+#: parleydocument.cpp:281
+msgid "Welcome"
+msgstr ""
+
+#: parleydocument.cpp:282
+msgid "GPL (GNU General Public License)"
+msgstr ""
+
+#: parleydocument.cpp:283
+#, fuzzy
+msgid "Example document"
+msgstr "EXAMPLE.COM"
+
+#: parleydocument.cpp:291
+#, fuzzy
+msgid "A Second Language"
+msgstr "Pilihan Bahasa"
 
 #: kvttabledelegate.cpp:113
 #, fuzzy
@@ -3531,280 +3384,241 @@ msgctxt "CSV separator"
 msgid " :: "
 msgstr " :: "
 
-#: kva_init.cpp:98
+#: kva_init.cpp:63
 msgid "Creates a new blank vocabulary document"
 msgstr ""
 
-#: kva_init.cpp:103
+#: kva_init.cpp:68
 msgid "Opens an existing vocabulary document"
 msgstr ""
 
-#: kva_init.cpp:110
+#: kva_init.cpp:75
 #, fuzzy
 msgid "Open &Example..."
 msgstr "Buka Fail"
 
-#: kva_init.cpp:112
+#: kva_init.cpp:77
 #, fuzzy
 msgid "Open an example vocabulary document"
 msgstr "Dokumen yang hendak dibuka"
 
-#: kva_init.cpp:116
+#: kva_init.cpp:81
 #, fuzzy
 msgid "Vocabularies..."
 msgstr "Tajuk laman baru"
 
-#: kva_init.cpp:118
+#: kva_init.cpp:83
 #, fuzzy
 msgid "Downloads new vocabularies"
 msgstr "Tajuk laman baru"
 
-#: kva_init.cpp:126
+#: kva_init.cpp:92
 #, fuzzy
 msgid "&Merge..."
 msgstr "Gabung"
 
-#: kva_init.cpp:128
+#: kva_init.cpp:94
 msgid "Merge an existing vocabulary document with the current one"
 msgstr ""
 
-#: kva_init.cpp:134
+#: kva_init.cpp:100
 msgid "Save the active vocabulary document"
 msgstr ""
 
-#: kva_init.cpp:140
+#: kva_init.cpp:106
 msgid "Save the active vocabulary document with a different name"
 msgstr ""
 
-#: kva_init.cpp:145
+#: kva_init.cpp:111
 msgid "Print the active vocabulary document"
 msgstr ""
 
-#: kva_init.cpp:151
+#: kva_init.cpp:117
 #, fuzzy
 msgid "&Properties..."
 msgstr "/_Profil"
 
-#: kva_init.cpp:154
+#: kva_init.cpp:120
 #, fuzzy
 msgid "Edit document properties"
 msgstr "Dokumen yang hendak dibuka"
 
-#: kva_init.cpp:160
+#: kva_init.cpp:126
 #, fuzzy
 #| msgid "Malay"
 msgid "Quit Parley"
 msgstr "Melayu"
 
-#: kva_init.cpp:167 kva_init.cpp:172
+#: kva_init.cpp:133 kva_init.cpp:138
 msgid "Copy"
 msgstr ""
 
-#: kva_init.cpp:177
+#: kva_init.cpp:143
 #, fuzzy
 msgid "Paste"
 msgstr "Nyatakan perkataan/frasa"
 
-#: kva_init.cpp:185
+#: kva_init.cpp:151
 #, fuzzy
 msgid "&Languages..."
 msgstr "Pilihan Bahasa"
 
-#: kva_init.cpp:191
+#: kva_init.cpp:157
 #, fuzzy
 #| msgid "German"
 msgid "&Grammar..."
 msgstr "Jerman"
 
-#: kva_init.cpp:192
+#: kva_init.cpp:158
 msgid "Edit language properties (types, tenses and usages)."
 msgstr ""
 
-#: kva_init.cpp:199
+#: kva_init.cpp:165
 #, fuzzy
 msgid "Select all rows"
 msgstr "Kuncupkan Semua Blok"
 
-#: kva_init.cpp:204
+#: kva_init.cpp:170
 #, fuzzy
 msgid "Deselect all rows"
 msgstr "Kuncupkan Semua Blok"
 
-#: kva_init.cpp:211
+#: kva_init.cpp:177
 #, fuzzy
 msgid "&Add New Entry"
 msgstr "Tajuk laman baru"
 
-#: kva_init.cpp:214
+#: kva_init.cpp:180
 msgid "Append a new row to the vocabulary"
 msgstr ""
 
-#: kva_init.cpp:221
+#: kva_init.cpp:188
 #, fuzzy
 msgid "&Delete Entry"
 msgstr "Tajuk laman baru"
 
-#: kva_init.cpp:224
+#: kva_init.cpp:191
 #, fuzzy
 msgid "Delete the selected rows"
 msgstr "Padam giliran dipilih"
 
-#: kva_init.cpp:234
-msgid "Edit the entries in the selected rows"
-msgstr ""
-
-#: kva_init.cpp:253
+#: kva_init.cpp:211
 #, fuzzy
 msgid "New Lesson"
 msgstr "Cipta perbendaharaan kata baru."
 
-#: kva_init.cpp:255
+#: kva_init.cpp:213
 msgid "Add a new lesson to your document"
 msgstr ""
 
-#: kva_init.cpp:262
+#: kva_init.cpp:220
 #, fuzzy
 msgid "Rename Lesson"
 msgstr "Cipta perbendaharaan kata baru."
 
-#: kva_init.cpp:264
+#: kva_init.cpp:222
 #, fuzzy
 msgid "Rename the selected lesson"
 msgstr "Padam giliran dipilih"
 
-#: kva_init.cpp:271
+#: kva_init.cpp:229
 #, fuzzy
 msgid "Delete Lesson"
 msgstr "Membuang masukan bukutelefon"
 
-#: kva_init.cpp:273
+#: kva_init.cpp:231
 #, fuzzy
 msgid "Delete the selected lesson."
 msgstr "Padam giliran dipilih"
 
-#: kva_init.cpp:280
-#, fuzzy
-msgid "Select All Lessons"
-msgstr "Kuncupkan Semua Blok"
-
-#: kva_init.cpp:282
-#, fuzzy
-msgid "Select all lessons for the test."
-msgstr "Kuncupkan Semua Blok"
-
-#: kva_init.cpp:289
-#, fuzzy
-msgid "Deselect All Lessons"
-msgstr "Kuncupkan Semua Blok"
-
-#: kva_init.cpp:291
-msgid "Remove all lessons from the test."
-msgstr ""
-
-#: kva_init.cpp:298
+#: kva_init.cpp:238
 msgid "Split Lesson into Smaller Lessons"
 msgstr ""
 
-#: kva_init.cpp:300
+#: kva_init.cpp:240
 msgid "Make multiple smaller lessons out of one big lesson."
 msgstr ""
 
-#: kva_init.cpp:310
+#: kva_init.cpp:271
 msgid "Remove &Duplicates"
 msgstr ""
 
-#: kva_init.cpp:312
+#: kva_init.cpp:273
 msgid "Remove duplicate entries from the vocabulary"
 msgstr ""
 
-#: kva_init.cpp:319
+#: kva_init.cpp:280
 #, fuzzy
 msgid "Configure Practice..."
 msgstr "Artikel:"
 
-#: kva_init.cpp:321
+#: kva_init.cpp:282
 #, fuzzy
 msgid "Set up and start a test"
 msgstr "Tanya CDDB"
 
-#: kva_init.cpp:330
+#: kva_init.cpp:291
 msgid "Start a test with the last settings"
 msgstr ""
 
-#: kva_init.cpp:339
+#: kva_init.cpp:300
 #, fuzzy
 msgid "&Statistics..."
 msgstr "Papar penanda"
 
-#: kva_init.cpp:341
+#: kva_init.cpp:302
 msgid "Show and reset statistics for the current vocabulary"
 msgstr ""
 
-#: kva_init.cpp:349
+#: kva_init.cpp:310
 #, fuzzy
 msgid "Show the configuration dialog"
 msgstr "Papar nombor baris"
 
-#: kva_init.cpp:355
+#: kva_init.cpp:316
 #, fuzzy
 msgid "Toggle display of the toolbars"
 msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
-#: kva_init.cpp:360
+#: kva_init.cpp:321
 #, fuzzy
 msgid "Show Se&arch"
 msgstr "Tapi_san pencarian:"
 
-#: kva_init.cpp:362
+#: kva_init.cpp:323
 #, fuzzy
 msgid "Toggle display of the search bar"
 msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
-#: kva_init.cpp:368
+#: kva_init.cpp:330
 #, fuzzy
 msgid "Show Lesson Column"
 msgstr "Description=ioslave Subversion"
 
-#: kva_init.cpp:374
+#: kva_init.cpp:336
 #, fuzzy
 msgid "Show Active Entry Column"
 msgstr "Description=ioslave Subversion"
 
-#: kva_init.cpp:382
+#: kva_init.cpp:341
+#, fuzzy
+msgid "Vocabulary Columns"
+msgstr "Dokumen yang hendak dibuka"
+
+#: kva_init.cpp:342
+#, fuzzy
+msgid "Toggle display of individual vocabulary columns"
+msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
+
+#: kva_init.cpp:352
 msgid "Restore Native Order"
 msgstr ""
 
-#: kva_init.cpp:468
-msgid ""
-"Right click to add, delete, or rename lessons. \n"
-"With the checkboxes you can select which lessons you want to practice. \n"
-"Only checked lessons [x] will be asked in the tests!"
-msgstr ""
-
-#: kva_init.cpp:474
-#, fuzzy
-msgid "Edit current lesson"
-msgstr "Amerika/Swift_Current"
-
-#: kva_init.cpp:475
-#, fuzzy
-msgid "Edit lessons in test"
-msgstr "Sharuzzaman Ahmat Raslan"
-
-#: kva_init.cpp:476
-#, fuzzy
-msgid "Edit all lessons"
-msgstr "Tak dapat mengumpukkan alamat"
-
-#: kva_init.cpp:477
-msgid "Select which lessons should be displayed for editing to the right."
-msgstr ""
-
-#: kva_init.cpp:535
+#: kva_init.cpp:404
 msgid "Enter search terms here"
 msgstr ""
 
-#: kva_init.cpp:537
+#: kva_init.cpp:406
 msgid ""
 "Enter space-separated search terms to find words.\n"
 "\n"
@@ -3813,26 +3627,64 @@ msgid ""
 "Enter type:verb to search for verbs."
 msgstr ""
 
-#: kva_init.cpp:539
+#: kva_init.cpp:408
 #, fuzzy
 msgid "S&earch:"
 msgstr "Mac"
 
-#: kvtlessonmodel.cpp:231
+#: kvtlessonmodel.cpp:153
 #, fuzzy, kde-format
 msgid "Lesson %1"
 msgstr "Cipta perbendaharaan kata baru."
+
+#: vocabulary/vocabularymodel.cpp:280
+msgid "Pronunciation"
+msgstr ""
+
+#: vocabulary/vocabularymodel.cpp:282
+#, fuzzy
+msgid "Word Type"
+msgstr "Lilit perkataan"
+
+#: vocabulary/vocabularymodel.cpp:288
+#, fuzzy
+msgid "Example"
+msgstr "EXAMPLE.COM"
+
+#: vocabulary/vocabularymodel.cpp:290
+#, fuzzy
+msgid "Comment"
+msgstr "Umum"
+
+#: vocabulary/containerview.cpp:93
+#, kde-format
+msgid "There is %1 word left in this lesson. Do you want to delete them?"
+msgid_plural ""
+"There are %1 words left in this lesson. Do you want to delete them?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vocabulary/containerview.cpp:108 kvtlessonview.cpp:132
+#, fuzzy
+msgid "Entries per Lesson"
+msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
+
+#: vocabulary/containerview.cpp:108
+msgid ""
+"The lesson will be split into smaller lessons. How many entries in each "
+"lesson do you want?"
+msgstr ""
+
+#: vocabulary/lessonmodel.cpp:351 vocabulary/containermodel.cpp:389
+#, fuzzy
+msgid "Number of entries in this lesson."
+msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
 #: kvtlessonview.cpp:100
 msgid ""
 "There are vocabularies left in this lesson. Do you want to delete them? You "
 "will lose your entries! You have been warned!"
 msgstr ""
-
-#: kvtlessonview.cpp:132
-#, fuzzy
-msgid "Entries per Lesson"
-msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
 #: kvtlessonview.cpp:132
 msgid ""
@@ -3864,6 +3716,150 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+#~ msgid "Do you really want to delete the selected entry?"
+#~ msgstr "Anda mahu memadam masukan ini dari buku telefon?"
+
+#, fuzzy
+#~ msgid "Do you really want to delete the selected entries?"
+#~ msgstr "Anda mahu memadam masukan ini dari buku telefon?"
+
+#, fuzzy
+#~ msgid "Remove Duplicates"
+#~ msgstr "Pilihan Bahasa"
+
+#, fuzzy
+#~ msgid "Usage Labels"
+#~ msgstr "Label Berulang"
+
+#, fuzzy
+#~ msgid "Enter usage description:"
+#~ msgstr "Description=ioslave Subversion"
+
+#, fuzzy
+#~ msgctxt "usage (area) of an expression"
+#~ msgid "Usage"
+#~ msgstr ""
+#~ "Pengunaan: %s UNGKAPAN\n"
+#~ "    atau: %s OPSYEN\n"
+
+#, fuzzy
+#~ msgid "Additional Properties"
+#~ msgstr "Ciri perkongsian - %s"
+
+#, fuzzy
+#~ msgid "S&ynonym:"
+#~ msgstr "Tahap latihan semasa"
+
+#, fuzzy
+#~ msgid "Ant&onym:"
+#~ msgstr "Comment=Projek Ant"
+
+#, fuzzy
+#~| msgid "Author:"
+#~ msgid "Audio:"
+#~ msgstr "Pengarang:"
+
+#, fuzzy
+#~ msgid "No Image"
+#~ msgstr "Lelaki"
+
+#, fuzzy
+#~ msgid "Comparison of Adjectives"
+#~ msgstr "perbandingan rentetan gagal"
+
+#~ msgid "&1:"
+#~ msgstr "&1:"
+
+#~ msgid "&2:"
+#~ msgstr "&2:"
+
+#~ msgid "&3:"
+#~ msgstr "&3:"
+
+#~ msgid "&4:"
+#~ msgstr "&4:"
+
+#~ msgid "&5:"
+#~ msgstr "&5:"
+
+#, fuzzy
+#~ msgctxt "context in which vocabulary entry is used"
+#~ msgid "anatomy"
+#~ msgstr "Falak"
+
+#, fuzzy
+#~| msgid "February"
+#~ msgctxt "context in which vocabulary entry is used"
+#~ msgid "literary"
+#~ msgstr "Febuari"
+
+#, fuzzy
+#~ msgctxt "context in which vocabulary entry is used"
+#~ msgid "proper name"
+#~ msgstr "Name=KDevAdaProject"
+
+#~ msgid "&Reset"
+#~ msgstr "&Ulangtetap"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "edit general vocabulary properties that are common to all word types"
+#~ msgid "Common"
+#~ msgstr "Umum"
+
+#, fuzzy
+#~ msgid "General properties of the word"
+#~ msgstr "Sunting Ciri-ciri Pad"
+
+#, fuzzy
+#~ msgctxt "edit additional properties like image, synonym, etc."
+#~ msgid "Additional"
+#~ msgstr "Ciri perkongsian - %s"
+
+#, fuzzy
+#~ msgid "Additional properties"
+#~ msgstr "Ciri perkongsian - %s"
+
+#, fuzzy
+#~| msgid "Conjugation of Verbs"
+#~ msgid "Conjugation of the selected verb"
+#~ msgstr "Konjugatan Kata Kerja"
+
+#, fuzzy
+#~ msgid "Edit General Properties"
+#~ msgid_plural "Edit General Properties for %1 Files"
+#~ msgstr[0] "Sunting Ciri-ciri Pad"
+#~ msgstr[1] "Sunting Ciri-ciri Pad"
+
+#, fuzzy
+#~ msgid "Unsaved Changes"
+#~ msgstr "Terap perubahan"
+
+#, fuzzy
+#~ msgid "Select All Lessons"
+#~ msgstr "Kuncupkan Semua Blok"
+
+#, fuzzy
+#~ msgid "Select all lessons for the test."
+#~ msgstr "Kuncupkan Semua Blok"
+
+#, fuzzy
+#~ msgid "Deselect All Lessons"
+#~ msgstr "Kuncupkan Semua Blok"
+
+#, fuzzy
+#~ msgid "Edit current lesson"
+#~ msgstr "Amerika/Swift_Current"
+
+#, fuzzy
+#~ msgid "Edit lessons in test"
+#~ msgstr "Sharuzzaman Ahmat Raslan"
+
+#, fuzzy
+#~ msgid "Edit all lessons"
+#~ msgstr "Tak dapat mengumpukkan alamat"
+
+#, fuzzy
 #~ msgid "Split Translations"
 #~ msgstr "Penukaran linefeed"
 
@@ -3882,10 +3878,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Quit KVocTrain"
 #~ msgstr "Keluar program"
-
-#, fuzzy
-#~ msgid "Form"
-#~ msgstr "Dari %s"
 
 #, fuzzy
 #~ msgid "&No time limitation"
@@ -4176,14 +4168,6 @@ msgstr ""
 #~ msgstr "P&apar Semua"
 
 #, fuzzy
-#~ msgid "Comparison Forms"
-#~ msgstr "perbandingan rentetan gagal"
-
-#, fuzzy
-#~ msgid "Examples"
-#~ msgstr "EXAMPLE.COM"
-
-#, fuzzy
 #~ msgid "Use the Leitner learning method"
 #~ msgstr "_Guna kaedah masukan tersendiri"
 
@@ -4358,10 +4342,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Add New Language or Identifier"
 #~ msgstr "Tambah pilihan giliran baru"
-
-#, fuzzy
-#~ msgid "&Add"
-#~ msgstr "Tambah Bar Alatan"
 
 #, fuzzy
 #~ msgid "&Original"

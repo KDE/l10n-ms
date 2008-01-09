@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krandr\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-03 06:19+0100\n"
+"POT-Creation-Date: 2008-01-09 07:16+0100\n"
 "PO-Revision-Date: 2006-05-07 16:33+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -16,78 +16,78 @@ msgstr ""
 "X-Generator: KBabel 1.3.1\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: krandrmodule.cpp:57
+#: krandrmodule.cpp:59
 #, fuzzy
 msgid ""
 "Your X server does not support resizing and rotating the display. Please "
-"update to version 4.3 or greater. You need the X Resize And Rotate extension "
-"(RANDR) version 1.1 or greater to use this feature."
+"update to version 4.3 or greater. You need the X Resize, Rotate, and Reflect "
+"extension (RANDR) version 1.1 or greater to use this feature."
 msgstr ""
 "<qt> Pelayan X anda tidak menyokong paparan ulang saiz dan putar paparan. "
 "Sila naik taraf ke 4.3 atau lebih. Anda perlukan sambungan X Resize dan "
 "Rotate (RANDR) versi 1.1 atau lebih untuk gunakan ciri-ciri ini.</qt>"
 
-#: krandrtray.cpp:51
+#: krandrtray.cpp:52
 msgid "Screen resize & rotate"
 msgstr "Ulang saiz skrin & putar"
 
-#: krandrtray.cpp:67
+#: krandrtray.cpp:68
 msgid "Required X Extension Not Available"
 msgstr "Sambungan X Diperlukan Tiada"
 
-#: krandrtray.cpp:89 legacyrandrconfig.cpp:36
+#: krandrtray.cpp:90 legacyrandrconfig.cpp:37
 #, kde-format
 msgid "Screen %1"
 msgstr "Skrin %1"
 
-#: krandrtray.cpp:110
+#: krandrtray.cpp:111
 msgid "Configure Display..."
 msgstr "Tetap Paparan..."
 
-#: krandrtray.cpp:142
+#: krandrtray.cpp:143
 msgid "Screen configuration has changed"
 msgstr "Penyelarasan skrin telah berubah"
 
-#: krandrtray.cpp:177 krandrtray.cpp:285
+#: krandrtray.cpp:178 krandrtray.cpp:286
 msgid "Screen Size"
 msgstr "Saiz Skrin"
 
-#: krandrtray.cpp:185 krandrtray.cpp:246 krandrtray.cpp:298
+#: krandrtray.cpp:186 krandrtray.cpp:247 krandrtray.cpp:299
 #, fuzzy
 msgid "Orientation"
 msgstr "Orientasi tak diketahui"
 
-#: krandrtray.cpp:202
+#: krandrtray.cpp:203
 msgid "Outputs"
 msgstr ""
 
-#: krandrtray.cpp:214
+#: krandrtray.cpp:215
 #, fuzzy, kde-format
 #| msgid "Screen Size"
 msgid "%1 - Screen Size"
 msgstr "Saiz Skrin"
 
-#: krandrtray.cpp:230
+#: krandrtray.cpp:231
 msgid "Disable"
 msgstr ""
 
-#: krandrtray.cpp:256 krandrtray.cpp:307
+#: krandrtray.cpp:257 krandrtray.cpp:308
 msgid "Refresh Rate"
 msgstr "Kadar Pulih Semula"
 
-#: krandrtray.cpp:271
+#: krandrtray.cpp:272
 msgid "Unify Outputs"
 msgstr ""
 
-#: krandrtray.cpp:367 legacyrandrconfig.cpp:268 legacyrandrscreen.cpp:245
-#: outputconfig.cpp:107
+#: krandrtray.cpp:368 legacyrandrconfig.cpp:269 legacyrandrscreen.cpp:245
+#: outputconfig.cpp:249
 #, fuzzy, kde-format
 #| msgctxt "Refresh rate in Hertz (Hz)"
 #| msgid "%1 Hz"
 msgid "%1 Hz"
 msgstr "%1 Hz"
 
-#: krandrtray.cpp:460
+#: krandrtray.cpp:461
 msgid "Configure Display"
 msgstr "Tetap Paparan"
 
@@ -96,11 +96,6 @@ msgstr "Tetap Paparan"
 msgid "1 second remaining:"
 msgid_plural "%1 seconds remaining:"
 msgstr[0] "baki %1 saat:"
-
-#: legacyrandrconfig.cpp:125
-#, kde-format
-msgid "%1 x %2"
-msgstr "%1 x %2"
 
 #: legacyrandrscreen.cpp:140
 #, kde-format
@@ -137,7 +132,9 @@ msgid "Resize and Rotate"
 msgstr "Saiz Semula dan Putar"
 
 #: main.cpp:35
-msgid "Resize and Rotate System Tray App"
+#, fuzzy
+#| msgid "Resize and Rotate System Tray App"
+msgid "X Resize and Rotate System Tray App"
 msgstr "Aplikasi Dulang Sistem Saiz Semula dan Putar"
 
 #: main.cpp:36
@@ -168,91 +165,141 @@ msgstr ""
 msgid "Many fixes"
 msgstr "Banyak pemulihan"
 
-#: main.cpp:45
+#: main.cpp:40
+msgid "Harry Bock"
+msgstr ""
+
+#: main.cpp:40
+msgid "Many fixes, multi-head support"
+msgstr ""
+
+#: main.cpp:46
 msgid "Application is being auto-started at KDE session start"
 msgstr "Application is being auto-started at KDE session start"
 
-#: randr.cpp:34 randr.cpp:51
-msgid "Normal"
-msgstr "Normal"
+#: outputconfig.cpp:124
+msgid "Left of"
+msgstr ""
 
-#: randr.cpp:36
+#: outputconfig.cpp:125
+msgid "Right of"
+msgstr ""
+
+#: outputconfig.cpp:126
+msgctxt "Output is placed above another one"
+msgid "Above"
+msgstr ""
+
+#: outputconfig.cpp:127
+msgctxt "Output is placed below another one"
+msgid "Below"
+msgstr ""
+
+#: outputconfig.cpp:128
+msgid "Clone of"
+msgstr ""
+
+#: outputconfig.cpp:131
+msgid "No relative position"
+msgstr ""
+
+#: outputconfig.cpp:217
+msgid "Disabled"
+msgstr ""
+
+#: outputconfig.cpp:243
+msgctxt "Automatic configuration"
+msgid "Auto"
+msgstr ""
+
+#: randr.cpp:31
+#, fuzzy
+msgid "No Rotation"
+msgstr "Orientasi tak diketahui"
+
+#: randr.cpp:33
 msgid "Left (90 degrees)"
 msgstr "Kiri (90 darjah)"
 
-#: randr.cpp:38
+#: randr.cpp:35
 msgid "Upside-down (180 degrees)"
 msgstr "Terbalik (180 darjah)"
 
-#: randr.cpp:40
+#: randr.cpp:37
 msgid "Right (270 degrees)"
 msgstr "Kanan (270 darjah)"
 
-#: randr.cpp:42
+#: randr.cpp:39
 msgid "Mirror horizontally"
 msgstr "Simetri mendatar"
 
-#: randr.cpp:44
+#: randr.cpp:41
 msgid "Mirror vertically"
 msgstr "Simetri menegak"
 
-#: randr.cpp:46 randr.cpp:77
+#: randr.cpp:43 randr.cpp:74
 msgid "Unknown orientation"
 msgstr "Orientasi tak diketahui"
 
-#: randr.cpp:53
+#: randr.cpp:48
+msgid "Not rotated"
+msgstr ""
+
+#: randr.cpp:50
 msgid "Rotated 90 degrees counterclockwise"
 msgstr "Diputar 90 darjah lawan jam"
 
-#: randr.cpp:55
+#: randr.cpp:52
 msgid "Rotated 180 degrees counterclockwise"
 msgstr "Diputar 180 darjah lawan jam"
 
-#: randr.cpp:57
+#: randr.cpp:54
 msgid "Rotated 270 degrees counterclockwise"
 msgstr "Diputar 270 darjah lawan jam"
 
-#: randr.cpp:62
+#: randr.cpp:59
 msgid "Mirrored horizontally and vertically"
 msgstr "Cerminan mendatar dan menegak"
 
-#: randr.cpp:64
+#: randr.cpp:61
 msgid "mirrored horizontally and vertically"
 msgstr "cerminan mendatar dan menegak"
 
-#: randr.cpp:67
+#: randr.cpp:64
 msgid "Mirrored horizontally"
 msgstr "Cerminan mendatar"
 
-#: randr.cpp:69
+#: randr.cpp:66
 msgid "mirrored horizontally"
 msgstr "Cerminan mendatar"
 
-#: randr.cpp:72
+#: randr.cpp:69
 msgid "Mirrored vertically"
 msgstr "Cerminan menegak"
 
-#: randr.cpp:74
+#: randr.cpp:71
 msgid "mirrored vertically"
 msgstr "cerminan menegak"
 
-#: randr.cpp:79
+#: randr.cpp:76
 msgid "unknown orientation"
 msgstr "orientasi tak diketahui"
 
-#: randr.cpp:132
+#: randr.cpp:125
 msgid "Confirm Display Setting Change"
 msgstr "Sahkan Paparan Perubahan Seting"
 
-#: randr.cpp:136
+#: randr.cpp:129
 msgid "&Accept Configuration"
 msgstr "Terim&a Tetapan"
 
-#: randr.cpp:137
-msgid "&Return to Previous Configuration"
+#: randr.cpp:130
+#, fuzzy
+#| msgid "&Return to Previous Configuration"
+msgid "&Revert to Previous Configuration"
 msgstr "Kembali ke Tetapan Te&rdahulu"
 
-#: randr.cpp:139
+#: randr.cpp:132
 #, fuzzy
 #| msgid ""
 #| "Your screen orientation, size and refresh rate have been changed to the "
@@ -296,7 +343,7 @@ msgstr ""
 #: rc.cpp:9
 #, fuzzy
 #| msgid "Settings for screen:"
-msgid "Settings for Screen:"
+msgid "Settings for screen:"
 msgstr "Tetapan untuk skrin:"
 
 #. i18n: tag string
@@ -312,10 +359,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file legacyrandrconfigbase.ui line 45
 #: rc.cpp:15
-#, fuzzy
-#| msgid "Screen Size"
-msgid "Screen Size:"
-msgstr "Saiz Skrin"
+msgid "Screen size:"
+msgstr "Saiz skrin:"
 
 #. i18n: tag string
 #. i18n: file legacyrandrconfigbase.ui line 55
@@ -330,10 +375,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file legacyrandrconfigbase.ui line 66
 #: rc.cpp:21
-#, fuzzy
-#| msgid "Refresh Rate"
-msgid "Refresh Rate:"
-msgstr "Kadar Pulih Semula"
+msgid "Refresh rate:"
+msgstr "Kadar segar-semula:"
 
 #. i18n: tag string
 #. i18n: file legacyrandrconfigbase.ui line 73
@@ -387,39 +430,37 @@ msgid "Output Config"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file outputconfigbase.ui line 25
+#. i18n: file outputconfigbase.ui line 27
 #: rc.cpp:45
-msgid "Active"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file outputconfigbase.ui line 34
-#: rc.cpp:48
 msgid "Size:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file outputconfigbase.ui line 47
-#: rc.cpp:51
+#. i18n: file outputconfigbase.ui line 40
+#: rc.cpp:48
 #, fuzzy
 #| msgid "Refresh Rate"
 msgid "Refresh:"
 msgstr "Kadar Pulih Semula"
 
 #. i18n: tag string
-#. i18n: file outputconfigbase.ui line 80
-#: rc.cpp:54
+#. i18n: file outputconfigbase.ui line 73
+#: rc.cpp:51
 #, fuzzy
 msgid "Orientation:"
 msgstr "Orientasi tak diketahui"
 
 #. i18n: tag string
+#. i18n: file outputconfigbase.ui line 100
+#: rc.cpp:54
+msgid "Position:"
+msgstr ""
+
+#. i18n: tag string
 #. i18n: file randrconfigbase.ui line 13
 #: rc.cpp:57
-#, fuzzy
-#| msgid "Screen resize & rotate"
-msgid "Screen Resize and Rotate Configuration"
-msgstr "Ulang saiz skrin & putar"
+msgid "Display Configuration (X11 Resize, Rotate and Reflect)"
+msgstr ""
 
 #: rc.cpp:58
 msgctxt "NAME OF TRANSLATORS"
@@ -431,17 +472,28 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "md_najmi@yahoo.com,sharuzzaman@myrealbox.com"
 
+#~ msgid "%1 x %2"
+#~ msgstr "%1 x %2"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
 #, fuzzy
-#~ msgid "Rotation"
-#~ msgstr "Orientasi tak diketahui"
+#~| msgid "Screen Size"
+#~ msgid "Screen Size:"
+#~ msgstr "Saiz Skrin"
+
+#, fuzzy
+#~| msgid "Refresh Rate"
+#~ msgid "Refresh Rate:"
+#~ msgstr "Kadar Pulih Semula"
+
+#, fuzzy
+#~| msgid "Screen resize & rotate"
+#~ msgid "Screen Resize and Rotate Configuration"
+#~ msgstr "Ulang saiz skrin & putar"
 
 #, fuzzy
 #~| msgid "Screen Size"
 #~ msgid "Screen SIze:"
 #~ msgstr "Saiz Skrin"
-
-#~ msgid "Screen size:"
-#~ msgstr "Saiz skrin:"
-
-#~ msgid "Refresh rate:"
-#~ msgstr "Kadar segar-semula:"
