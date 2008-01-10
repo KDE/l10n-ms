@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-09 07:18+0100\n"
+"POT-Creation-Date: 2008-01-10 10:26+0100\n"
 "PO-Revision-Date: 2006-08-24 22:53+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -111,8 +111,8 @@ msgstr ""
 msgid "Folder and extension can not be empty."
 msgstr ""
 
-#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:115 core/kget.cpp:450
-#: core/kget.cpp:736 ui/transferhistory.cpp:168 ui/transferhistory.cpp:214
+#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:117 core/kget.cpp:450
+#: core/kget.cpp:736 ui/transferhistory.cpp:177 ui/transferhistory.cpp:224
 msgid "Error"
 msgstr ""
 
@@ -147,8 +147,19 @@ msgctxt "speed of download"
 msgid "Speed"
 msgstr "Kelajuan"
 
-#: core/transfergroup.cpp:115 ui/transferhistory.cpp:168
-#: ui/transferhistory.cpp:214
+#: core/transfergroup.cpp:112 ui/transferhistory.cpp:52
+#, fuzzy
+msgctxt "the transfer has been finished"
+msgid "Finished"
+msgstr "Pemasangan selesai"
+
+#: core/transfergroup.cpp:114
+msgctxt "the transfer has been aborted"
+msgid "Aborted"
+msgstr ""
+
+#: core/transfergroup.cpp:117 ui/transferhistory.cpp:177
+#: ui/transferhistory.cpp:224
 msgid "History-File cannot be opened correctly!"
 msgstr ""
 
@@ -332,6 +343,10 @@ msgid "Aborted"
 msgstr ""
 
 #: transfer-plugins/kio/transferKio.cpp:153
+#, fuzzy
+msgid "Downloading..."
+msgstr "Muatturun Dipilih"
+
 #: transfer-plugins/kio/transferKio.cpp:167
 #: transfer-plugins/kio/transferKio.cpp:182
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:240
@@ -695,7 +710,7 @@ msgstr "Jadual Program"
 msgid "Transfer details"
 msgstr "Pemindahan fail"
 
-#: ui/transferhistory.cpp:30
+#: ui/transferhistory.cpp:33
 #, fuzzy
 msgid "Transfer History"
 msgstr "Log Pemindahan"
@@ -847,54 +862,54 @@ msgstr ""
 msgid "Show:"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:92
-#: extensions/konqueror/kget_linkview.cpp:249
+#: extensions/konqueror/kget_linkview.cpp:90
+#: extensions/konqueror/kget_linkview.cpp:247
 msgid "Select all"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:93
+#: extensions/konqueror/kget_linkview.cpp:91
 msgid "Show web content"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:94
+#: extensions/konqueror/kget_linkview.cpp:92
 #, fuzzy
 msgid "Download checked"
 msgstr "Pemasangan selesai"
 
-#: extensions/konqueror/kget_linkview.cpp:96
+#: extensions/konqueror/kget_linkview.cpp:94
 msgid "Cancel"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:132
+#: extensions/konqueror/kget_linkview.cpp:130
 msgid "Auxiliar header"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:133
+#: extensions/konqueror/kget_linkview.cpp:131
 #, fuzzy
 msgid "File Name"
 msgstr "Dari Fail Tempatan"
 
-#: extensions/konqueror/kget_linkview.cpp:134
+#: extensions/konqueror/kget_linkview.cpp:132
 msgid "Description"
 msgstr "Huraian"
 
-#: extensions/konqueror/kget_linkview.cpp:135
+#: extensions/konqueror/kget_linkview.cpp:133
 #, fuzzy
 msgctxt "list header: type of file"
 msgid "File Type"
 msgstr "Jenis Sistem _Fail:"
 
-#: extensions/konqueror/kget_linkview.cpp:136
+#: extensions/konqueror/kget_linkview.cpp:134
 #, fuzzy
 msgid "Location (URL)"
 msgstr "URL Autokonfigurasi:"
 
-#: extensions/konqueror/kget_linkview.cpp:197
+#: extensions/konqueror/kget_linkview.cpp:195
 #, fuzzy, kde-format
 msgid "Links in: %1 - KGet"
 msgstr "Nama sudah digunakan"
 
-#: extensions/konqueror/kget_linkview.cpp:249
+#: extensions/konqueror/kget_linkview.cpp:247
 msgid "Select all filtered"
 msgstr ""
 
@@ -1800,7 +1815,7 @@ msgstr "Kelajuan"
 #. i18n: file ui/transferhistory.ui line 47
 #: rc.cpp:375
 #, fuzzy
-msgid "Source"
+msgid "Source-File"
 msgstr "Sumber"
 
 #. i18n: tag string
@@ -1821,73 +1836,84 @@ msgstr "Pemasa Kanak-kanak"
 #. i18n: file ui/transferhistory.ui line 62
 #: rc.cpp:384
 #, fuzzy
-msgid "State"
+msgid "File-Size"
+msgstr "Buka Fail"
+
+#. i18n: tag string
+#. i18n: file ui/transferhistory.ui line 67
+#: rc.cpp:387
+#, fuzzy
+msgid "Status"
 msgstr "Memulakan VNC"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 78
-#: rc.cpp:387
+#. i18n: file ui/transferhistory.ui line 83
+#: rc.cpp:390
 msgid "Clear History"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 104
-#: rc.cpp:390
+#. i18n: file ui/transferhistory.ui line 109
+#: rc.cpp:393
 msgid "Filter history..."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 113
-#: rc.cpp:393
+#. i18n: file ui/transferhistory.ui line 118
+#: rc.cpp:396
 #, fuzzy
 msgctxt "delete selected transfer"
 msgid "Delete Selected"
 msgstr "Tambah fail dipilih"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 118
-#: rc.cpp:396
+#. i18n: file ui/transferhistory.ui line 123
+#: rc.cpp:399
 #, fuzzy
 msgid "Download"
 msgstr "Muatturun Dipilih"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 4
-#: rc.cpp:399
+#: rc.cpp:402
 #, fuzzy
 msgid "&File"
 msgstr "Buka Fail"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 14
-#: rc.cpp:402
+#: rc.cpp:405
 #, fuzzy
 msgid "&Downloads"
 msgstr "Muatturun Dipilih"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 23
-#: rc.cpp:405
+#: rc.cpp:408
 msgid "&Settings"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 35
-#: rc.cpp:408
+#: rc.cpp:411
 msgid "&Help"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 38
-#: rc.cpp:411
+#: rc.cpp:414
 msgid "Main Toolbar"
 msgstr ""
 
 #. i18n: tag Text
 #. i18n: file extensions/konqueror/kget_plug_in.rc line 4
-#: rc.cpp:414
+#: rc.cpp:417
 msgid "&Tools"
 msgstr ""
+
+#, fuzzy
+#~ msgid "State"
+#~ msgstr "Memulakan VNC"
 
 #, fuzzy
 #~ msgid "Hide Drop Target"
