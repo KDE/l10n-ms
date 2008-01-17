@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kommander\n"
-"POT-Creation-Date: 2008-01-10 01:19+0100\n"
+"POT-Creation-Date: 2008-01-17 01:19+0100\n"
 "PO-Revision-Date: 2007-09-03 21:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -71,13 +71,13 @@ msgstr ""
 msgid "Cannot add plugin"
 msgstr "Perihal Plagmasuk Gema"
 
-#: _translatorinfo.cpp:1 editor/main.cpp:49
+#: _translatorinfo.cpp:1 editor/main.cpp:50
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
 msgstr "Sharuzzaman Ahmat Raslan"
 
-#: _translatorinfo.cpp:3 editor/main.cpp:50
+#: _translatorinfo.cpp:3 editor/main.cpp:51
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
@@ -1078,7 +1078,24 @@ msgstr ""
 msgid "Kommander"
 msgstr "Penyunting Kommander"
 
-#: editor/main.cpp:70
+#: editor/main.cpp:46
+msgid "Project manager"
+msgstr ""
+
+#: editor/main.cpp:47
+#, fuzzy
+msgid "Current maintainer"
+msgstr "Gerak ke permulaan baris semasa"
+
+#: editor/main.cpp:48
+msgid "Previous maintainer"
+msgstr ""
+
+#: editor/main.cpp:49
+msgid "Original author"
+msgstr ""
+
+#: editor/main.cpp:71
 #, fuzzy
 msgid "Kommander Dialog Editor"
 msgstr "Penyunting Dialog Dinamik"
@@ -2031,12 +2048,17 @@ msgstr ""
 msgid "Lay Out Children in a Grid"
 msgstr ""
 
-#: editor/functionsimpl.cpp:136
+#: editor/functionsimpl.cpp:72 plugin/specialinformation.cpp:372
+#, fuzzy
+msgid "Slots"
+msgstr "Slot"
+
+#: editor/functionsimpl.cpp:162
 #, fuzzy
 msgid "<p>Parameters are not obligatory."
 msgstr "Beberapa parameter tiada"
 
-#: editor/functionsimpl.cpp:139
+#: editor/functionsimpl.cpp:165
 #, c-format
 msgid ""
 "_n: "
@@ -2044,12 +2066,526 @@ msgid ""
 "<p>Only first %n arguments are obligatory."
 msgstr ""
 
-#: editor/functionsimpl.cpp:147
+#: editor/functionsimpl.cpp:173
 msgid ""
 "<qt>"
 "<h3>%1</h3>"
 "<p><b>Description:</b> %2\n"
 "<p><b>Syntax:</b> <i>%3</i>%4</qt>"
+msgstr ""
+
+#: plugin/specialinformation.cpp:286
+msgid "Inserts the item if it will not create a duplicate."
+msgstr ""
+
+#: plugin/specialinformation.cpp:288
+msgid ""
+"Returns scripts associated with widget. This is an advanced feature that would "
+"not be commonly used."
+msgstr ""
+
+#: plugin/specialinformation.cpp:289
+msgid "Stops execution of the script associated with the widget."
+msgstr ""
+
+#: plugin/specialinformation.cpp:291
+msgid "Returns text of a cell in a table."
+msgstr ""
+
+#: plugin/specialinformation.cpp:293
+msgid "Returns 1 for checked boxes, 0 for unchecked."
+msgstr ""
+
+#: plugin/specialinformation.cpp:295
+msgid ""
+"Returns the list of child widgets contained in the parent widget. Set the <i>"
+"recursive</i> parameter to <i>true</i> to include widgets contained by child "
+"widgets."
+msgstr ""
+
+#: plugin/specialinformation.cpp:297
+msgid "Removes all content from the widget."
+msgstr ""
+
+#: plugin/specialinformation.cpp:300
+msgid "Returns number of items in a widget such as combobox or listbox."
+msgstr ""
+
+#: plugin/specialinformation.cpp:302
+msgid "Returns index of current column."
+msgstr ""
+
+#: plugin/specialinformation.cpp:304
+msgid "Returns index of current item."
+msgstr ""
+
+#: plugin/specialinformation.cpp:306
+msgid "Returns index of current row."
+msgstr ""
+
+#: plugin/specialinformation.cpp:307
+msgid "Executes the script associated with the widget."
+msgstr ""
+
+#: plugin/specialinformation.cpp:309
+msgid "Returns the index of an item with the given text."
+msgstr ""
+
+#: plugin/specialinformation.cpp:311
+msgid "Inserts new column (or <i>count</i> columns) at <i>column</i> position."
+msgstr ""
+
+#: plugin/specialinformation.cpp:313
+msgid "Inserts item at <i>index</i> position."
+msgstr ""
+
+#: plugin/specialinformation.cpp:316
+msgid "Inserts multiple items (EOL-separated) at <i>index</i> position."
+msgstr ""
+
+#: plugin/specialinformation.cpp:319
+msgid "Inserts new row (or <i>count</i> rows) at <i>row</i> position."
+msgstr ""
+
+#: plugin/specialinformation.cpp:321
+msgid "Returns the text of the item at the given index."
+msgstr ""
+
+#: plugin/specialinformation.cpp:323
+msgid ""
+"Returns the depth of the current item in the tree. Root items have depth 0."
+msgstr ""
+
+#: plugin/specialinformation.cpp:325
+msgid "Returns the slash-separated path to the given item in the tree."
+msgstr ""
+
+#: plugin/specialinformation.cpp:327
+msgid ""
+"Removes the column (or <i>count</i> consecutive columns) with the given index."
+msgstr ""
+
+#: plugin/specialinformation.cpp:329
+msgid "Removes the item with the given index."
+msgstr ""
+
+#: plugin/specialinformation.cpp:332
+msgid ""
+"Removes the row (or <i>count</i> consecutive rows) with the given index."
+msgstr ""
+
+#: plugin/specialinformation.cpp:335
+msgid ""
+"Returns selected text or text of current item.\n"
+"In case of Table widgets, returns the selection coordinates, separated by "
+"commas in TopRow,LeftColumn,BottomRow,RightColumn form. "
+msgstr ""
+
+#: plugin/specialinformation.cpp:337
+msgid ""
+"Sets scripts associated with widget. This is an advanced feature that would not "
+"be commonly used."
+msgstr ""
+
+#: plugin/specialinformation.cpp:339
+msgid "Enables or disables widget."
+msgstr ""
+
+#: plugin/specialinformation.cpp:342
+msgid "Sets text of a cell in a table."
+msgstr ""
+
+#: plugin/specialinformation.cpp:344
+msgid "Inserts a widget into a cell of a table."
+msgstr ""
+
+#: plugin/specialinformation.cpp:346
+#, fuzzy
+msgid "Sets/unsets checkbox."
+msgstr "Bulan tenggelam pada: %1"
+
+#: plugin/specialinformation.cpp:348
+#, fuzzy
+msgid "Sets caption of the column <i>column</i>."
+msgstr "nombor lajur melimpah"
+
+#: plugin/specialinformation.cpp:350
+msgid "Selects the item at the specified index. Indexes are zero based."
+msgstr ""
+
+#: plugin/specialinformation.cpp:353
+msgid ""
+"Inserts a tab to the tabwidget with the specified label at the given index. "
+"Indexes are zero based."
+msgstr ""
+
+#: plugin/specialinformation.cpp:355
+#, fuzzy
+msgid "Sets maximum numeric value"
+msgstr "Arkib mengandungi %.*s dimana nilai %s numerik dijangka"
+
+#: plugin/specialinformation.cpp:357
+msgid ""
+"Sets pixmap at the given index to the specified icon. Use <i>index = -1</i> "
+"to set the pixmap for all items."
+msgstr ""
+
+#: plugin/specialinformation.cpp:359
+#, fuzzy
+msgid "Sets caption of the row <i>row</i>."
+msgstr "Edit baris dipilih"
+
+#: plugin/specialinformation.cpp:361
+msgid "Selects given text or select item containing given text."
+msgstr ""
+
+#: plugin/specialinformation.cpp:364
+#, fuzzy
+msgid "Sets widget's content."
+msgstr "Log Pemecut Kandungan"
+
+#: plugin/specialinformation.cpp:367
+#, fuzzy
+msgid "Shows/hides widget."
+msgstr "Selit %1 (widget tersendiri)"
+
+#: plugin/specialinformation.cpp:368
+#, fuzzy
+msgid "Returns content of widget."
+msgstr "Selit %1 (widget tersendiri)"
+
+#: plugin/specialinformation.cpp:370
+msgid "Returns type(class) of widget."
+msgstr ""
+
+#: plugin/specialinformation.cpp:376
+msgid ""
+"Returns current widget's content. This was required inside widget A to return "
+"widget A content when requested by widget B. The new method is to use @A.text "
+"inside B instead of just @A if you just want the unaltered text."
+msgstr ""
+
+#: plugin/specialinformation.cpp:378
+msgid ""
+"Returns selected text or text of current item. This is deprecated for <i>"
+"@mywidget.selected</i>."
+msgstr ""
+
+#: plugin/specialinformation.cpp:380
+msgid ""
+"Does nothing. This is useful if you request a CheckBox or RadioButton to return "
+"a value where a state, typically the unchecked state, has no value. The @null "
+"prevents an error indicating it is empty."
+msgstr ""
+
+#: plugin/specialinformation.cpp:382
+msgid "Returns the pid (process ID) of the current process."
+msgstr ""
+
+#: plugin/specialinformation.cpp:384
+msgid ""
+"Returns DCOP identifier of current process. This is shorthand for <i>"
+"kmdr-executor-@pid</i>."
+msgstr ""
+
+#: plugin/specialinformation.cpp:387
+msgid "Returns the pid of the parent Kommander window."
+msgstr ""
+
+#: plugin/specialinformation.cpp:389
+msgid "Writes <i>text</i> on stderr."
+msgstr ""
+
+#: plugin/specialinformation.cpp:391
+msgid "Writes <i>text</i> on standard output."
+msgstr ""
+
+#: plugin/specialinformation.cpp:393
+msgid ""
+"Executes a script block. Bash is used if no shell is given. It is primarily for "
+"use in non-button widgets where script actions are not expected. Full path is "
+"not required for the shell which may be useful for portability. "
+"<p><i>If this is used inside a button it allows alternate script languages to "
+"be used and will return a value to the main script, which may be unexpected.</i>"
+msgstr ""
+
+#: plugin/specialinformation.cpp:395
+msgid ""
+"Returns value of an environment (shell) variable. Do not use <i>$</i> "
+"in the name. For example, <i>@env(PATH)</i>."
+msgstr ""
+
+#: plugin/specialinformation.cpp:397
+msgid "Executes an external shell command."
+msgstr ""
+
+#: plugin/specialinformation.cpp:399
+msgid "Parses an expression and returns computed value."
+msgstr ""
+
+#: plugin/specialinformation.cpp:401
+msgid ""
+"Executes loop: values from <i>items</i> list (passed as EOL-separated string) "
+"are assigned to the variable. "
+"<br> <i>@forEach(i,A\\nB\\nC\\n)"
+"<br>  @# @i=A"
+"<br>@endif</i>"
+msgstr ""
+
+#: plugin/specialinformation.cpp:403
+msgid ""
+"Executes loop: variable is set to <i>start</i> and is increased by <i>step</i> "
+"each time loop is executed. Execution stops when variable becomes larger then "
+"<i>end</i>. "
+"<br><i>@for(i,1,10,1)"
+"<br>  @# @i=1"
+"<br>@endif</i>."
+msgstr ""
+
+#: plugin/specialinformation.cpp:405
+msgid "Returns the value of a global variable."
+msgstr ""
+
+#: plugin/specialinformation.cpp:407
+msgid ""
+"Translates the string into the current language. Texts in GUI would be "
+"automatically extracted for translation."
+msgstr ""
+
+#: plugin/specialinformation.cpp:409
+msgid ""
+"Executes block if expression is true (non-zero number or non-empty string.) "
+"<p>Close with <b>@endif</b></p>"
+msgstr ""
+
+#: plugin/specialinformation.cpp:411
+msgid ""
+"Executes another Kommander dialog. Current dialog directory is used if no path "
+"is given. Arguments may be given as named arguments which will become global "
+"variables in the new dialog. For instance: <i>var=val</i>"
+msgstr ""
+
+#: plugin/specialinformation.cpp:413
+msgid "Reads setting from configration file for this dialog."
+msgstr ""
+
+#: plugin/specialinformation.cpp:415
+msgid ""
+"Sets the value of a global variable. Global variables exist for the life of the "
+"Kommander window."
+msgstr ""
+
+#: plugin/specialinformation.cpp:417
+msgid "Stores setting in configuration file for this dialog."
+msgstr ""
+
+#: plugin/specialinformation.cpp:419
+msgid ""
+"Begin of <b>switch</b> block. Following <b>case</b> values are compared to <i>"
+"expression</i>."
+"<p>@switch()"
+"<br>@case()"
+"<br>@end"
+msgstr ""
+
+#: plugin/specialinformation.cpp:421
+msgid "Executes an external DCOP call."
+msgstr ""
+
+#: plugin/specialinformation.cpp:423
+msgid "Adds a comment to EOL that Kommander will not parse"
+msgstr ""
+
+#: plugin/specialinformation.cpp:425
+msgid ""
+"Creates a new widget with the specified type and as the child of parent."
+msgstr ""
+
+#: plugin/specialinformation.cpp:429
+msgid "Returns an EOL-separated list of all values in the array."
+msgstr ""
+
+#: plugin/specialinformation.cpp:431
+msgid "Returns an EOL-separated list of all keys in the array."
+msgstr ""
+
+#: plugin/specialinformation.cpp:433
+msgid "Removes all elements from the array."
+msgstr ""
+
+#: plugin/specialinformation.cpp:435
+msgid "Returns the number of elements in the array."
+msgstr ""
+
+#: plugin/specialinformation.cpp:437
+msgid "Returns the value associated with the given key."
+msgstr ""
+
+#: plugin/specialinformation.cpp:439
+msgid "Removes element with the given key from the array."
+msgstr ""
+
+#: plugin/specialinformation.cpp:441
+msgid "Adds element with the given key and value to the array"
+msgstr ""
+
+#: plugin/specialinformation.cpp:443
+msgid ""
+"Adds all elements in the string to the array. String should have <i>"
+"key\\tvalue\\n</i> format."
+msgstr ""
+
+#: plugin/specialinformation.cpp:446
+msgid ""
+"Returns all elements in the array in "
+"<pre>key\\tvalue\\n</pre> format."
+msgstr ""
+
+#: plugin/specialinformation.cpp:451
+msgid "Returns number of chars in the string."
+msgstr ""
+
+#: plugin/specialinformation.cpp:453
+msgid "Checks if the the string contains the given substring."
+msgstr ""
+
+#: plugin/specialinformation.cpp:455
+msgid ""
+"Returns the position of a substring in the string, or -1 if it is not found."
+msgstr ""
+
+#: plugin/specialinformation.cpp:457
+msgid ""
+"Returns the position of a substring in the string, or -1 if it is not found. "
+"String is searched backwards"
+msgstr ""
+
+#: plugin/specialinformation.cpp:459
+msgid "Returns the first <i>n</i> chars of the string."
+msgstr ""
+
+#: plugin/specialinformation.cpp:461
+msgid "Returns the last <i>n</i> chars of the string."
+msgstr ""
+
+#: plugin/specialinformation.cpp:463
+msgid "Returns <i>n</i> chars of the string, starting from <i>start</i>."
+msgstr ""
+
+#: plugin/specialinformation.cpp:465
+msgid "Removes all occurrences of given substring."
+msgstr ""
+
+#: plugin/specialinformation.cpp:467
+msgid ""
+"Replaces all occurrences of the given substring with the given replacement."
+msgstr ""
+
+#: plugin/specialinformation.cpp:469
+msgid "Converts the string to uppercase."
+msgstr ""
+
+#: plugin/specialinformation.cpp:471
+msgid "Converts the string to lowercase."
+msgstr ""
+
+#: plugin/specialinformation.cpp:473
+msgid ""
+"Compares two strings. Returns 0 if they are equal, -1 if the first one is "
+"lower, 1 if the first one is higher"
+msgstr ""
+
+#: plugin/specialinformation.cpp:476
+msgid "Checks if the string is empty."
+msgstr ""
+
+#: plugin/specialinformation.cpp:478
+msgid "Checks if the string is a valid number."
+msgstr ""
+
+#: plugin/specialinformation.cpp:480
+msgid "Returns given section of a string."
+msgstr ""
+
+#: plugin/specialinformation.cpp:482
+msgid ""
+"Returns the given string with %1, %2, %3 replaced with <i>arg1</i>, <i>arg2</i>"
+", <i>arg3</i> accordingly."
+msgstr ""
+
+#: plugin/specialinformation.cpp:486
+#, fuzzy
+msgid "Returns content of given file."
+msgstr ""
+"Cipta NAMA fail istimewa bagi JENIS diberi.\n"
+"\n"
+
+#: plugin/specialinformation.cpp:488
+msgid "Writes given string to a file."
+msgstr ""
+
+#: plugin/specialinformation.cpp:490
+msgid "Appends given string to the end of a file."
+msgstr ""
+
+#: plugin/specialinformation.cpp:493
+msgid "Shows color dialog. Returns color in #RRGGBB format."
+msgstr ""
+
+#: plugin/specialinformation.cpp:495
+msgid "Shows text selection dialog. Returns entered text."
+msgstr ""
+
+#: plugin/specialinformation.cpp:497
+msgid "Shows a dialog asking user for password and returns it."
+msgstr ""
+
+#: plugin/specialinformation.cpp:499
+msgid "Shows value selection dialog. Returns entered value."
+msgstr ""
+
+#: plugin/specialinformation.cpp:501
+msgid "Shows float value selection dialog. Returns entered value."
+msgstr ""
+
+#: plugin/specialinformation.cpp:503
+msgid "Shows existing file selection dialog. Returns selected file."
+msgstr ""
+
+#: plugin/specialinformation.cpp:505
+msgid "Shows save file selection dialog. Returns selected file."
+msgstr ""
+
+#: plugin/specialinformation.cpp:507
+msgid "Shows directory selection dialog. Returns selected directory."
+msgstr ""
+
+#: plugin/specialinformation.cpp:509
+msgid ""
+"Shows multiple files selection dialog. Returns EOL-separated list of selected "
+"files."
+msgstr ""
+
+#: plugin/specialinformation.cpp:513
+#, fuzzy
+msgid "Shows an information dialog."
+msgstr "dialog telah dibatalkan"
+
+#: plugin/specialinformation.cpp:515
+#, fuzzy
+msgid "Shows an error dialog."
+msgstr "dialog telah dibatalkan"
+
+#: plugin/specialinformation.cpp:517
+msgid ""
+"Shows a warning dialog with up to three buttons. Returns number of selected "
+"button."
+msgstr ""
+
+#: plugin/specialinformation.cpp:519
+msgid ""
+"Shows a question dialog with up to three buttons. Returns number of selected "
+"button."
 msgstr ""
 
 #. i18n: file ./editor/wizardeditor.ui line 16
@@ -3833,13 +4369,13 @@ msgstr "aksara tidak sah: %s"
 msgid "Constant value expected"
 msgstr ""
 
-#: widget/parser.cpp:216 widget/parser.cpp:485
+#: widget/parser.cpp:216 widget/parser.cpp:497
 #, fuzzy
 msgid "'%1' is not a widget"
 msgstr ""
 "%s tidak dilaksanakan.\n"
 
-#: widget/parser.cpp:221 widget/parser.cpp:487
+#: widget/parser.cpp:221 widget/parser.cpp:500
 #, fuzzy
 msgid "'%1' is not a function"
 msgstr ""
@@ -3869,18 +4405,18 @@ msgstr "terlalu sedikit hujah"
 msgid "too many parameters"
 msgstr "Terlalu banyak gantian"
 
-#: widget/parser.cpp:456
+#: widget/parser.cpp:460
 #, fuzzy
 msgid "in widget function '%1.%2': %3"
 msgstr "tiada fungsi permulaan %s dalam `%s'"
 
-#: widget/parser.cpp:489
+#: widget/parser.cpp:502
 #, fuzzy
 msgid "Unexpected symbol after variable '%1'"
 msgstr ""
 "%s: %s: EOF tidak dijangka selepas membaca %u dari %u sampel\n"
 
-#: widget/parser.cpp:675
+#: widget/parser.cpp:720
 msgid ""
 "Expected '%1'"
 "<br>"
@@ -3888,552 +4424,47 @@ msgid ""
 "widget"
 msgstr ""
 
-#: widget/parser.cpp:677
+#: widget/parser.cpp:722
 #, fuzzy
 msgid "Expected '%1'"
 msgstr ""
 "')' dijangka\n"
 
-#: widget/parser.cpp:691 widget/parser.cpp:704
+#: widget/parser.cpp:736 widget/parser.cpp:749
 #, fuzzy
 msgid "Expected variable"
 msgstr "Pembolehubah Persekitaran"
-
-#: widget/specials.cpp:24
-msgid "Inserts the item if it will not create a duplicate."
-msgstr ""
-
-#: widget/specials.cpp:26
-msgid ""
-"Returns scripts associated with widget. This is an advanced feature that would "
-"not be commonly used."
-msgstr ""
-
-#: widget/specials.cpp:27
-msgid "Stops execution of the script associated with the widget."
-msgstr ""
-
-#: widget/specials.cpp:29
-msgid "Returns text of a cell in a table."
-msgstr ""
-
-#: widget/specials.cpp:31
-msgid "Returns 1 for checked boxes, 0 for unchecked."
-msgstr ""
-
-#: widget/specials.cpp:33
-msgid ""
-"Returns the list of child widgets contained in the parent widget. Set the <i>"
-"recursive</i> parameter to <i>true</i> to include widgets contained by child "
-"widgets."
-msgstr ""
-
-#: widget/specials.cpp:35
-msgid "Removes all content from the widget."
-msgstr ""
-
-#: widget/specials.cpp:38
-msgid "Returns number of items in a widget such as combobox or listbox."
-msgstr ""
-
-#: widget/specials.cpp:40
-msgid "Returns index of current column."
-msgstr ""
-
-#: widget/specials.cpp:42
-msgid "Returns index of current item."
-msgstr ""
-
-#: widget/specials.cpp:44
-msgid "Returns index of current row."
-msgstr ""
-
-#: widget/specials.cpp:45
-msgid "Executes the script associated with the widget."
-msgstr ""
-
-#: widget/specials.cpp:47
-msgid "Returns the index of an item with the given text."
-msgstr ""
-
-#: widget/specials.cpp:49
-msgid "Inserts new column (or <i>count</i> columns) at <i>column</i> position."
-msgstr ""
-
-#: widget/specials.cpp:51
-msgid "Inserts item at <i>index</i> position."
-msgstr ""
-
-#: widget/specials.cpp:54
-msgid "Inserts multiple items (EOL-separated) at <i>index</i> position."
-msgstr ""
-
-#: widget/specials.cpp:57
-msgid "Inserts new row (or <i>count</i> rows) at <i>row</i> position."
-msgstr ""
-
-#: widget/specials.cpp:59
-msgid "Returns the text of the item at the given index."
-msgstr ""
-
-#: widget/specials.cpp:61
-msgid ""
-"Returns the depth of the current item in the tree. Root items have depth 0."
-msgstr ""
-
-#: widget/specials.cpp:63
-msgid "Returns the slash-separated path to the given item in the tree."
-msgstr ""
-
-#: widget/specials.cpp:65
-msgid ""
-"Removes the column (or <i>count</i> consecutive columns) with the given index."
-msgstr ""
-
-#: widget/specials.cpp:67
-msgid "Removes the item with the given index."
-msgstr ""
-
-#: widget/specials.cpp:70
-msgid ""
-"Removes the row (or <i>count</i> consecutive rows) with the given index."
-msgstr ""
-
-#: widget/specials.cpp:73
-msgid ""
-"Returns selected text or text of current item.\n"
-"In case of Table widgets, returns the selection coordinates, separated by "
-"commas in TopRow,LeftColumn,BottomRow,RightColumn form. "
-msgstr ""
-
-#: widget/specials.cpp:75
-msgid ""
-"Sets scripts associated with widget. This is an advanced feature that would not "
-"be commonly used."
-msgstr ""
-
-#: widget/specials.cpp:77
-msgid "Enables or disables widget."
-msgstr ""
-
-#: widget/specials.cpp:80
-msgid "Sets text of a cell in a table."
-msgstr ""
-
-#: widget/specials.cpp:82
-#, fuzzy
-msgid "Sets/unsets checkbox."
-msgstr "Bulan tenggelam pada: %1"
-
-#: widget/specials.cpp:84
-#, fuzzy
-msgid "Sets caption of the column <i>column</i>."
-msgstr "nombor lajur melimpah"
-
-#: widget/specials.cpp:86
-msgid "Selects the item at the specified index. Indexes are zero based."
-msgstr ""
-
-#: widget/specials.cpp:89
-msgid ""
-"Inserts a tab to the tabwidget with the specified label at the given index. "
-"Indexes are zero based."
-msgstr ""
-
-#: widget/specials.cpp:91
-#, fuzzy
-msgid "Sets maximum numeric value"
-msgstr "Arkib mengandungi %.*s dimana nilai %s numerik dijangka"
-
-#: widget/specials.cpp:93
-msgid ""
-"Sets pixmap at the given index to the specified icon. Use <i>index = -1</i> "
-"to set the pixmap for all items."
-msgstr ""
-
-#: widget/specials.cpp:95
-#, fuzzy
-msgid "Sets caption of the row <i>row</i>."
-msgstr "Edit baris dipilih"
-
-#: widget/specials.cpp:97
-msgid "Selects given text or select item containing given text."
-msgstr ""
-
-#: widget/specials.cpp:100
-#, fuzzy
-msgid "Sets widget's content."
-msgstr "Log Pemecut Kandungan"
-
-#: widget/specials.cpp:103
-#, fuzzy
-msgid "Shows/hides widget."
-msgstr "Selit %1 (widget tersendiri)"
-
-#: widget/specials.cpp:104
-#, fuzzy
-msgid "Returns content of widget."
-msgstr "Selit %1 (widget tersendiri)"
-
-#: widget/specials.cpp:106
-msgid "Returns type(class) of widget."
-msgstr ""
-
-#: widget/specials.cpp:109
-msgid ""
-"Returns current widget's content. This was required inside widget A to return "
-"widget A content when requested by widget B. The new method is to use @A.text "
-"inside B instead of just @A if you just want the unaltered text."
-msgstr ""
-
-#: widget/specials.cpp:111
-msgid ""
-"Returns selected text or text of current item. This is deprecated for <i>"
-"@mywidget.selected</i>."
-msgstr ""
-
-#: widget/specials.cpp:113
-msgid ""
-"Does nothing. This is useful if you request a CheckBox or RadioButton to return "
-"a value where a state, typically the unchecked state, has no value. The @null "
-"prevents an error indicating it is empty."
-msgstr ""
-
-#: widget/specials.cpp:115
-msgid "Returns the pid (process ID) of the current process."
-msgstr ""
-
-#: widget/specials.cpp:117
-msgid ""
-"Returns DCOP identifier of current process. This is shorthand for <i>"
-"kmdr-executor-@pid</i>."
-msgstr ""
-
-#: widget/specials.cpp:120
-msgid "Returns the pid of the parent Kommander window."
-msgstr ""
-
-#: widget/specials.cpp:122
-msgid "Writes <i>text</i> on stderr."
-msgstr ""
-
-#: widget/specials.cpp:124
-msgid "Writes <i>text</i> on standard output."
-msgstr ""
-
-#: widget/specials.cpp:126
-msgid ""
-"Executes a script block. Bash is used if no shell is given. It is primarily for "
-"use in non-button widgets where script actions are not expected. Full path is "
-"not required for the shell which may be useful for portability. "
-"<p><i>If this is used inside a button it allows alternate script languages to "
-"be used and will return a value to the main script, which may be unexpected.</i>"
-msgstr ""
-
-#: widget/specials.cpp:128
-msgid ""
-"Returns value of an environment (shell) variable. Do not use <i>$</i> "
-"in the name. For example, <i>@env(PATH)</i>."
-msgstr ""
-
-#: widget/specials.cpp:130
-msgid "Executes an external shell command."
-msgstr ""
-
-#: widget/specials.cpp:132
-msgid "Parses an expression and returns computed value."
-msgstr ""
-
-#: widget/specials.cpp:134
-msgid ""
-"Executes loop: values from <i>items</i> list (passed as EOL-separated string) "
-"are assigned to the variable. "
-"<br> <i>@forEach(i,A\\nB\\nC\\n)"
-"<br>  @# @i=A"
-"<br>@endif</i>"
-msgstr ""
-
-#: widget/specials.cpp:136
-msgid ""
-"Executes loop: variable is set to <i>start</i> and is increased by <i>step</i> "
-"each time loop is executed. Execution stops when variable becomes larger then "
-"<i>end</i>. "
-"<br><i>@for(i,1,10,1)"
-"<br>  @# @i=1"
-"<br>@endif</i>."
-msgstr ""
-
-#: widget/specials.cpp:138
-msgid "Returns the value of a global variable."
-msgstr ""
-
-#: widget/specials.cpp:140
-msgid ""
-"Translates the string into the current language. Texts in GUI would be "
-"automatically extracted for translation."
-msgstr ""
-
-#: widget/specials.cpp:142
-msgid ""
-"Executes block if expression is true (non-zero number or non-empty string.) "
-"<p>Close with <b>@endif</b></p>"
-msgstr ""
-
-#: widget/specials.cpp:144
-msgid ""
-"Executes another Kommander dialog. Current dialog directory is used if no path "
-"is given. Arguments may be given as named arguments which will become global "
-"variables in the new dialog. For instance: <i>var=val</i>"
-msgstr ""
-
-#: widget/specials.cpp:146
-msgid "Reads setting from configration file for this dialog."
-msgstr ""
-
-#: widget/specials.cpp:148
-msgid ""
-"Sets the value of a global variable. Global variables exist for the life of the "
-"Kommander window."
-msgstr ""
-
-#: widget/specials.cpp:150
-msgid "Stores setting in configuration file for this dialog."
-msgstr ""
-
-#: widget/specials.cpp:152
-msgid ""
-"Begin of <b>switch</b> block. Following <b>case</b> values are compared to <i>"
-"expression</i>."
-"<p>@switch()"
-"<br>@case()"
-"<br>@end"
-msgstr ""
-
-#: widget/specials.cpp:154
-msgid "Executes an external DCOP call."
-msgstr ""
-
-#: widget/specials.cpp:156
-msgid "Adds a comment to EOL that Kommander will not parse"
-msgstr ""
-
-#: widget/specials.cpp:160
-msgid "Returns an EOL-separated list of all values in the array."
-msgstr ""
-
-#: widget/specials.cpp:162
-msgid "Returns an EOL-separated list of all keys in the array."
-msgstr ""
-
-#: widget/specials.cpp:164
-msgid "Removes all elements from the array."
-msgstr ""
-
-#: widget/specials.cpp:166
-msgid "Returns the number of elements in the array."
-msgstr ""
-
-#: widget/specials.cpp:168
-msgid "Returns the value associated with the given key."
-msgstr ""
-
-#: widget/specials.cpp:170
-msgid "Removes element with the given key from the array."
-msgstr ""
-
-#: widget/specials.cpp:172
-msgid "Adds element with the given key and value to the array"
-msgstr ""
-
-#: widget/specials.cpp:174
-msgid ""
-"Adds all elements in the string to the array. String should have <i>"
-"key\\tvalue\\n</i> format."
-msgstr ""
-
-#: widget/specials.cpp:177
-msgid ""
-"Returns all elements in the array in "
-"<pre>key\\tvalue\\n</pre> format."
-msgstr ""
-
-#: widget/specials.cpp:182
-msgid "Returns number of chars in the string."
-msgstr ""
-
-#: widget/specials.cpp:184
-msgid "Checks if the the string contains the given substring."
-msgstr ""
-
-#: widget/specials.cpp:186
-msgid ""
-"Returns the position of a substring in the string, or -1 if it is not found."
-msgstr ""
-
-#: widget/specials.cpp:188
-msgid ""
-"Returns the position of a substring in the string, or -1 if it is not found. "
-"String is searched backwards"
-msgstr ""
-
-#: widget/specials.cpp:190
-msgid "Returns the first <i>n</i> chars of the string."
-msgstr ""
-
-#: widget/specials.cpp:192
-msgid "Returns the last <i>n</i> chars of the string."
-msgstr ""
-
-#: widget/specials.cpp:194
-msgid "Returns <i>n</i> chars of the string, starting from <i>start</i>."
-msgstr ""
-
-#: widget/specials.cpp:196
-msgid "Removes all occurrences of given substring."
-msgstr ""
-
-#: widget/specials.cpp:198
-msgid ""
-"Replaces all occurrences of the given substring with the given replacement."
-msgstr ""
-
-#: widget/specials.cpp:200
-msgid "Converts the string to uppercase."
-msgstr ""
-
-#: widget/specials.cpp:202
-msgid "Converts the string to lowercase."
-msgstr ""
-
-#: widget/specials.cpp:204
-msgid ""
-"Compares two strings. Returns 0 if they are equal, -1 if the first one is "
-"lower, 1 if the first one is higher"
-msgstr ""
-
-#: widget/specials.cpp:207
-msgid "Checks if the string is empty."
-msgstr ""
-
-#: widget/specials.cpp:209
-msgid "Checks if the string is a valid number."
-msgstr ""
-
-#: widget/specials.cpp:211
-msgid "Returns given section of a string."
-msgstr ""
-
-#: widget/specials.cpp:213
-msgid ""
-"Returns the given string with %1, %2, %3 replaced with <i>arg1</i>, <i>arg2</i>"
-", <i>arg3</i> accordingly."
-msgstr ""
-
-#: widget/specials.cpp:217
-#, fuzzy
-msgid "Returns content of given file."
-msgstr ""
-"Cipta NAMA fail istimewa bagi JENIS diberi.\n"
-"\n"
-
-#: widget/specials.cpp:219
-msgid "Writes given string to a file."
-msgstr ""
-
-#: widget/specials.cpp:221
-msgid "Appends given string to the end of a file."
-msgstr ""
-
-#: widget/specials.cpp:224
-msgid "Shows color dialog. Returns color in #RRGGBB format."
-msgstr ""
-
-#: widget/specials.cpp:226
-msgid "Shows text selection dialog. Returns entered text."
-msgstr ""
-
-#: widget/specials.cpp:228
-msgid "Shows a dialog asking user for password and returns it."
-msgstr ""
-
-#: widget/specials.cpp:230
-msgid "Shows value selection dialog. Returns entered value."
-msgstr ""
-
-#: widget/specials.cpp:232
-msgid "Shows float value selection dialog. Returns entered value."
-msgstr ""
-
-#: widget/specials.cpp:234
-msgid "Shows existing file selection dialog. Returns selected file."
-msgstr ""
-
-#: widget/specials.cpp:236
-msgid "Shows save file selection dialog. Returns selected file."
-msgstr ""
-
-#: widget/specials.cpp:238
-msgid "Shows directory selection dialog. Returns selected directory."
-msgstr ""
-
-#: widget/specials.cpp:240
-msgid ""
-"Shows multiple files selection dialog. Returns EOL-separated list of selected "
-"files."
-msgstr ""
-
-#: widget/specials.cpp:244
-#, fuzzy
-msgid "Shows an information dialog."
-msgstr "dialog telah dibatalkan"
-
-#: widget/specials.cpp:246
-#, fuzzy
-msgid "Shows an error dialog."
-msgstr "dialog telah dibatalkan"
-
-#: widget/specials.cpp:248
-msgid ""
-"Shows a warning dialog with up to three buttons. Returns number of selected "
-"button."
-msgstr ""
-
-#: widget/specials.cpp:250
-msgid ""
-"Shows a question dialog with up to three buttons. Returns number of selected "
-"button."
-msgstr ""
 
 #: widget/myprocess.cpp:94
 msgid "<qt>Failed to start shell process<br><b>%1</b></qt>"
 msgstr ""
 
-#: widget/kommanderfunctions.cpp:119
+#: widget/kommanderfunctions.cpp:120
 msgid "Unterminated @execBegin ... @execEnd block."
 msgstr ""
 
-#: widget/kommanderfunctions.cpp:137 widget/kommanderfunctions.cpp:163
+#: widget/kommanderfunctions.cpp:138 widget/kommanderfunctions.cpp:164
 msgid "Unterminated @forEach ... @end block."
 msgstr ""
 
-#: widget/kommanderfunctions.cpp:200
+#: widget/kommanderfunctions.cpp:201
 msgid "Unterminated @if ... @endif block."
 msgstr ""
 
-#: widget/kommanderfunctions.cpp:220
+#: widget/kommanderfunctions.cpp:221
 msgid "Unterminated @switch ... @end block."
 msgstr ""
 
-#: widget/kommanderfunctions.cpp:320
+#: widget/kommanderfunctions.cpp:321
 #, fuzzy, c-format
 msgid "Unknown widget: @%1."
 msgstr "Memasukkan Widget"
 
-#: widget/kommanderfunctions.cpp:338
+#: widget/kommanderfunctions.cpp:339
 msgid "Infinite loop: @%1 called inside @%2."
 msgstr ""
 
-#: widget/kommanderfunctions.cpp:344
+#: widget/kommanderfunctions.cpp:345
 #, fuzzy
 msgid "Script for @%1 is empty."
 msgstr "Nama direktori adalah kosong."
@@ -4485,38 +4516,38 @@ msgid ""
 "  %2\n"
 msgstr "Ralat dalam %s pada baris %d: "
 
-#: widget/kommanderwidget.cpp:569
+#: widget/kommanderwidget.cpp:576
 #, fuzzy
 msgid "Unmatched parenthesis after '%1'."
 msgstr "operan hilang selepas `%s'"
 
-#: widget/kommanderwidget.cpp:578
+#: widget/kommanderwidget.cpp:585
 msgid "Unmatched quotes in argument of '%1'."
 msgstr ""
 
-#: widget/kommanderwidget.cpp:580
+#: widget/kommanderwidget.cpp:587
 #, fuzzy
 msgid "Unknown function group: '%1'."
 msgstr "Kumpulan_kerja SMB:"
 
-#: widget/kommanderwidget.cpp:582
+#: widget/kommanderwidget.cpp:589
 #, fuzzy
 msgid "Unknown function: '%1' in group '%2'."
 msgstr "Pilih _semua dalam kumpulan"
 
-#: widget/kommanderwidget.cpp:584
+#: widget/kommanderwidget.cpp:591
 #, fuzzy
 msgid "Unknown widget function: '%1'."
 msgstr ""
 "Fungsi tidak dijumpai\n"
 
-#: widget/kommanderwidget.cpp:586
+#: widget/kommanderwidget.cpp:593
 msgid ""
 "Not enough arguments for '%1' (%2 instead of %3)."
 "<p>Correct syntax is: %4"
 msgstr ""
 
-#: widget/kommanderwidget.cpp:591
+#: widget/kommanderwidget.cpp:598
 msgid "Too many arguments for '%1' (%2 instead of %3).<p>Correct syntax is: %4"
 msgstr ""
 
@@ -4544,25 +4575,25 @@ msgid ""
 "Error: no dialog given. Use --stdin option to read dialog from standard input.\n"
 msgstr ""
 
-#: executor/instance.cpp:113
+#: executor/instance.cpp:114
 msgid "<qt>Unable to create dialog.</qt>"
 msgstr ""
 
-#: executor/instance.cpp:183
+#: executor/instance.cpp:184
 msgid "<qt>Kommander file<br><b>%1</b><br>does not exist.</qt>"
 msgstr ""
 
-#: executor/instance.cpp:191
+#: executor/instance.cpp:192
 msgid ""
 "<qt>This file does not have a <b>.kmdr</b> extension. As a security precaution "
 "Kommander will only run Kommander scripts with a clear identity.</qt>"
 msgstr ""
 
-#: executor/instance.cpp:193
+#: executor/instance.cpp:194
 msgid "Wrong Extension"
 msgstr "Salah Penghujungan"
 
-#: executor/instance.cpp:210
+#: executor/instance.cpp:211
 msgid ""
 "<qt>This dialog is running from your <i>/tmp</i> directory.  This may mean that "
 "it was run from a KMail attachment or from a webpage. "
@@ -4571,7 +4602,7 @@ msgid ""
 "<p>are you sure you want to continue?</qt>"
 msgstr ""
 
-#: executor/instance.cpp:214
+#: executor/instance.cpp:215
 msgid "Run Nevertheless"
 msgstr "Laksanakan Juga"
 
