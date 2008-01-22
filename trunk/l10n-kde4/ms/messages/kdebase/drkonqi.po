@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-15 09:40+0100\n"
+"POT-Creation-Date: 2008-01-22 07:57+0100\n"
 "PO-Revision-Date: 2005-07-11 17:34+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -17,58 +17,61 @@ msgstr ""
 "X-Generator: KBabel 1.3.1\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: backtrace.cpp:80
+#: backtrace.cpp:76
 #, kde-format
 msgid "Could not generate a backtrace as the debugger '%1' was not found."
 msgstr ""
 "Tidak dapat menjana jejakundur kerana penyahpepijat '%1' was not found."
 
-#: debugger.cpp:75
+#: debugger.cpp:71
 msgid "C&opy"
 msgstr "Sal&in"
 
-#: debugger.cpp:96
+#: debugger.cpp:92
+#, fuzzy
+#| msgid "Done."
+msgctxt "debugging finished"
 msgid "Done."
 msgstr "Selesai."
 
-#: debugger.cpp:121
+#: debugger.cpp:117
 #, kde-format
 msgid "Backtrace saved to %1"
 msgstr "Jejakundur disimpan ke %1"
 
-#: debugger.cpp:125
+#: debugger.cpp:121
 #, fuzzy
 msgid "Cannot create a file to save the backtrace in"
 msgstr "Tidak dapat mencipta fail untuk menyimpan jejakundur"
 
-#: debugger.cpp:130
+#: debugger.cpp:126
 msgid "Select Filename"
 msgstr "Pilih Namafail"
 
-#: debugger.cpp:138
+#: debugger.cpp:134
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "Fail bernama \"%1\" telah wujud. Anda pasti untuk menindih kepadanya?"
 
-#: debugger.cpp:140
+#: debugger.cpp:136
 msgid "Overwrite File?"
 msgstr "Tindih Fail?"
 
-#: debugger.cpp:141
+#: debugger.cpp:137
 msgid "&Overwrite"
 msgstr "&Tindih"
 
-#: debugger.cpp:153
+#: debugger.cpp:149
 #, kde-format
 msgid "Cannot open file %1 for writing"
 msgstr "Tidak dapat membuka fail %1 untuk menulis"
 
-#: debugger.cpp:161
+#: debugger.cpp:157
 msgid "Unable to create a valid backtrace."
 msgstr "Gagal mencipta jejakundur sah."
 
-#: debugger.cpp:162
+#: debugger.cpp:158
 msgid ""
 "This backtrace appears to be of no use.\n"
 "This is probably because your packages are built in a way which prevents "
@@ -83,11 +86,11 @@ msgstr ""
 "ketika crash.\n"
 "\n"
 
-#: debugger.cpp:171
+#: debugger.cpp:167
 msgid "Loading backtrace..."
 msgstr "Memuatkan jejak rekod..."
 
-#: debugger.cpp:194
+#: debugger.cpp:190
 msgid ""
 "The following options are enabled:\n"
 "\n"
@@ -95,7 +98,7 @@ msgstr ""
 "Pilihan berikut adalah dihidupkan:\n"
 "\n"
 
-#: debugger.cpp:196
+#: debugger.cpp:192
 msgid ""
 "\n"
 "As the usage of these options is not recommended - because they can, in rare "
@@ -110,15 +113,15 @@ msgstr ""
 "Anda mematikan pilihan ini dan mengulanghasil masalah ini lagi untuk "
 "mendapatkan jejakundur.\n"
 
-#: debugger.cpp:201
+#: debugger.cpp:197
 msgid "Backtrace will not be created."
 msgstr "Jejakundur tidak akan dicipta."
 
-#: debugger.cpp:209
+#: debugger.cpp:205
 msgid "Loading symbols..."
 msgstr "Memuatkan simbol..."
 
-#: debugger.cpp:230
+#: debugger.cpp:226
 msgid "System configuration startup check disabled.\n"
 msgstr "Pemeriksaan permulaan tetapan sistem dimatikan.\n"
 
@@ -127,6 +130,9 @@ msgid "You have to edit the description before the report can be sent."
 msgstr "Anda hendaklah mengedit penejelasan sebelum laporan dihantar."
 
 #: krashconf.cpp:78
+#, fuzzy
+#| msgid "unknown"
+msgctxt "unknown application"
 msgid "unknown"
 msgstr "tidak diketahui"
 
@@ -197,47 +203,36 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "md_najmi@yahoo.com, sharuzzaman@myrealbox.com"
 
-#: toplevel.cpp:64
+#: toplevel.cpp:54
 #, fuzzy
 #| msgid "&Bug report"
 msgid "&Bug Report"
 msgstr "Laporan rala&t"
 
-#: toplevel.cpp:65
+#: toplevel.cpp:55
 msgid "&Debugger"
 msgstr "Penya&h-ralat"
 
-#: toplevel.cpp:71
-#, fuzzy
-msgid "General"
-msgstr "U&mum"
+#: toplevel.cpp:88
+msgid "Please attach the following backtrace to your bugreport."
+msgstr ""
 
-#: toplevel.cpp:95
-#, fuzzy
-msgid "Backtrace"
-msgstr "Jejak Reko&d"
+#: toplevel.cpp:130
+msgid "A Fatal Error Occurred"
+msgstr ""
 
-#: toplevel.cpp:119
-#, kde-format
-msgid "<p><b>Short description</b></p><p>%1</p>"
-msgstr "<p><b> Keterangan Ringkas </b></p><p>%1</p>"
+#: toplevel.cpp:134
+msgid "What can I do?"
+msgstr ""
 
-#: toplevel.cpp:123
-#, kde-format
-msgid "<p><b>What is this?</b></p><p>%1</p>"
-msgstr "<p><b>Apakah ini?</b></p><p>%1</p>"
-
-#: toplevel.cpp:127
-#, kde-format
-msgid "<p><b>What can I do?</b></p><p>%1</p>"
-msgstr "<p><b>Apa yang saya boleh tolong?</b></p><p>%1</p>"
-
-#: toplevel.cpp:132
-#, c-format
-msgid "<p><b>Application crashed</b></p><p>The program %appname crashed.</p>"
+#: toplevel.cpp:139
+#, fuzzy, c-format
+#| msgid ""
+#| "<p><b>Application crashed</b></p><p>The program %appname crashed.</p>"
+msgid "<p>Application crashed</p><p>The program %appname crashed.</p>"
 msgstr "<p><b>Aplikasi rosak</b></p><p> Program %appname rosak.</p>"
 
-#: toplevel.cpp:151
+#: toplevel.cpp:158
 msgid ""
 "<p>Do you want to generate a backtrace? This will help the developers to "
 "figure out what went wrong.</p>\n"
@@ -254,22 +249,39 @@ msgstr ""
 "penjelasan. Adalah mustahil untuk membuang pepijat tanpa penjelasan yang "
 "jelas.</b></p>"
 
-#: toplevel.cpp:163
+#: toplevel.cpp:170
 msgid "Include Backtrace"
 msgstr "Masukkan Jejak-rekod"
 
-#: toplevel.cpp:163
+#: toplevel.cpp:170
 msgid "Generate"
 msgstr "Jana"
 
-#: toplevel.cpp:163
+#: toplevel.cpp:170
 msgid "Do Not Generate"
 msgstr "Jangan Jana"
 
-#: toplevel.cpp:230
+#: toplevel.cpp:237
 msgid "It was not possible to generate a backtrace."
 msgstr "Tidak mungkin untuk menjanakan jejak-rekod."
 
-#: toplevel.cpp:231
+#: toplevel.cpp:238
 msgid "Backtrace Not Possible"
 msgstr "Jejak-rekod Tidak Mungkin Dilaksanakan"
+
+#, fuzzy
+#~ msgid "General"
+#~ msgstr "U&mum"
+
+#, fuzzy
+#~ msgid "Backtrace"
+#~ msgstr "Jejak Reko&d"
+
+#~ msgid "<p><b>Short description</b></p><p>%1</p>"
+#~ msgstr "<p><b> Keterangan Ringkas </b></p><p>%1</p>"
+
+#~ msgid "<p><b>What is this?</b></p><p>%1</p>"
+#~ msgstr "<p><b>Apakah ini?</b></p><p>%1</p>"
+
+#~ msgid "<p><b>What can I do?</b></p><p>%1</p>"
+#~ msgstr "<p><b>Apa yang saya boleh tolong?</b></p><p>%1</p>"
