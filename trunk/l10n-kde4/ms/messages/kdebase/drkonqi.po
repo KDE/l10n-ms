@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-22 07:57+0100\n"
+"POT-Creation-Date: 2008-01-23 08:58+0100\n"
 "PO-Revision-Date: 2005-07-11 17:34+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -27,51 +27,60 @@ msgstr ""
 msgid "C&opy"
 msgstr "Sal&in"
 
-#: debugger.cpp:92
-#, fuzzy
-#| msgid "Done."
-msgctxt "debugging finished"
-msgid "Done."
-msgstr "Selesai."
+#: debugger.cpp:83
+#, c-format
+msgid "Application: %progname (%execname), signal %signame"
+msgstr ""
 
-#: debugger.cpp:117
-#, kde-format
-msgid "Backtrace saved to %1"
-msgstr "Jejakundur disimpan ke %1"
+#: debugger.cpp:96
+#, fuzzy
+msgctxt "debugging finished"
+msgid "Backtrace loaded."
+msgstr "Jejak Reko&d"
 
 #: debugger.cpp:121
+#, fuzzy, kde-format
+#| msgid "Backtrace saved to %1"
+msgid "Backtrace saved to <filename>%1</filename>."
+msgstr "Jejakundur disimpan ke %1"
+
+#: debugger.cpp:125
 #, fuzzy
 msgid "Cannot create a file to save the backtrace in"
 msgstr "Tidak dapat mencipta fail untuk menyimpan jejakundur"
 
-#: debugger.cpp:126
+#: debugger.cpp:133
 msgid "Select Filename"
 msgstr "Pilih Namafail"
 
-#: debugger.cpp:134
-#, kde-format
+#: debugger.cpp:141
+#, fuzzy, kde-format
+#| msgid ""
+#| "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgid ""
-"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
+"A file named <filename>%1</filename> already exists. Are you sure you want "
+"to overwrite it?"
 msgstr "Fail bernama \"%1\" telah wujud. Anda pasti untuk menindih kepadanya?"
 
-#: debugger.cpp:136
+#: debugger.cpp:143
 msgid "Overwrite File?"
 msgstr "Tindih Fail?"
 
-#: debugger.cpp:137
+#: debugger.cpp:144
 msgid "&Overwrite"
 msgstr "&Tindih"
 
-#: debugger.cpp:149
-#, kde-format
-msgid "Cannot open file %1 for writing"
+#: debugger.cpp:156
+#, fuzzy, kde-format
+#| msgid "Cannot open file %1 for writing"
+msgid "Cannot open file <filename>%1</filename> for writing."
 msgstr "Tidak dapat membuka fail %1 untuk menulis"
 
-#: debugger.cpp:157
+#: debugger.cpp:164
 msgid "Unable to create a valid backtrace."
 msgstr "Gagal mencipta jejakundur sah."
 
-#: debugger.cpp:158
+#: debugger.cpp:165
 msgid ""
 "This backtrace appears to be of no use.\n"
 "This is probably because your packages are built in a way which prevents "
@@ -86,11 +95,11 @@ msgstr ""
 "ketika crash.\n"
 "\n"
 
-#: debugger.cpp:167
+#: debugger.cpp:174
 msgid "Loading backtrace..."
 msgstr "Memuatkan jejak rekod..."
 
-#: debugger.cpp:190
+#: debugger.cpp:197
 msgid ""
 "The following options are enabled:\n"
 "\n"
@@ -98,7 +107,7 @@ msgstr ""
 "Pilihan berikut adalah dihidupkan:\n"
 "\n"
 
-#: debugger.cpp:192
+#: debugger.cpp:199
 msgid ""
 "\n"
 "As the usage of these options is not recommended - because they can, in rare "
@@ -113,15 +122,15 @@ msgstr ""
 "Anda mematikan pilihan ini dan mengulanghasil masalah ini lagi untuk "
 "mendapatkan jejakundur.\n"
 
-#: debugger.cpp:197
+#: debugger.cpp:204
 msgid "Backtrace will not be created."
 msgstr "Jejakundur tidak akan dicipta."
 
-#: debugger.cpp:205
+#: debugger.cpp:212
 msgid "Loading symbols..."
 msgstr "Memuatkan simbol..."
 
-#: debugger.cpp:226
+#: debugger.cpp:233
 msgid "System configuration startup check disabled.\n"
 msgstr "Pemeriksaan permulaan tetapan sistem dimatikan.\n"
 
@@ -135,6 +144,21 @@ msgstr "Anda hendaklah mengedit penejelasan sebelum laporan dihantar."
 msgctxt "unknown application"
 msgid "unknown"
 msgstr "tidak diketahui"
+
+#: krashconf.cpp:159
+#, kde-format
+msgid "<application>%1</application>"
+msgstr ""
+
+#: krashconf.cpp:164 krashconf.cpp:171
+#, kde-format
+msgid "<command>%1</command>"
+msgstr ""
+
+#: krashconf.cpp:177
+#, kde-format
+msgid "<filename>%1</filename>"
+msgstr ""
 
 #: main.cpp:43
 msgid "KDE crash handler gives the user feedback if a program crashed"
@@ -213,26 +237,28 @@ msgstr "Laporan rala&t"
 msgid "&Debugger"
 msgstr "Penya&h-ralat"
 
-#: toplevel.cpp:88
-msgid "Please attach the following backtrace to your bugreport."
+#: toplevel.cpp:96
+msgid "Please attach the following backtrace to your bug report:"
 msgstr ""
 
-#: toplevel.cpp:130
+#: toplevel.cpp:138
 msgid "A Fatal Error Occurred"
 msgstr ""
 
-#: toplevel.cpp:134
+#: toplevel.cpp:142
 msgid "What can I do?"
 msgstr ""
 
-#: toplevel.cpp:139
+#: toplevel.cpp:147
 #, fuzzy, c-format
 #| msgid ""
 #| "<p><b>Application crashed</b></p><p>The program %appname crashed.</p>"
-msgid "<p>Application crashed</p><p>The program %appname crashed.</p>"
+msgid ""
+"<p style=\"margin-bottom: 6px;\"><b>Application crashed</b></p><p>The "
+"program %appname crashed.</p>"
 msgstr "<p><b>Aplikasi rosak</b></p><p> Program %appname rosak.</p>"
 
-#: toplevel.cpp:158
+#: toplevel.cpp:166
 msgid ""
 "<p>Do you want to generate a backtrace? This will help the developers to "
 "figure out what went wrong.</p>\n"
@@ -249,33 +275,35 @@ msgstr ""
 "penjelasan. Adalah mustahil untuk membuang pepijat tanpa penjelasan yang "
 "jelas.</b></p>"
 
-#: toplevel.cpp:170
+#: toplevel.cpp:178
 msgid "Include Backtrace"
 msgstr "Masukkan Jejak-rekod"
 
-#: toplevel.cpp:170
+#: toplevel.cpp:178
 msgid "Generate"
 msgstr "Jana"
 
-#: toplevel.cpp:170
+#: toplevel.cpp:178
 msgid "Do Not Generate"
 msgstr "Jangan Jana"
 
-#: toplevel.cpp:237
+#: toplevel.cpp:245
 msgid "It was not possible to generate a backtrace."
 msgstr "Tidak mungkin untuk menjanakan jejak-rekod."
 
-#: toplevel.cpp:238
+#: toplevel.cpp:246
 msgid "Backtrace Not Possible"
 msgstr "Jejak-rekod Tidak Mungkin Dilaksanakan"
 
 #, fuzzy
-#~ msgid "General"
-#~ msgstr "U&mum"
+#~| msgid "Done."
+#~ msgctxt "debugging finished"
+#~ msgid "Done."
+#~ msgstr "Selesai."
 
 #, fuzzy
-#~ msgid "Backtrace"
-#~ msgstr "Jejak Reko&d"
+#~ msgid "General"
+#~ msgstr "U&mum"
 
 #~ msgid "<p><b>Short description</b></p><p>%1</p>"
 #~ msgstr "<p><b> Keterangan Ringkas </b></p><p>%1</p>"
