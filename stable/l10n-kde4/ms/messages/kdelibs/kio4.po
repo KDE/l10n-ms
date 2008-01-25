@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-22 05:54+0100\n"
+"POT-Creation-Date: 2008-01-25 06:36+0100\n"
 "PO-Revision-Date: 2006-12-25 13:38+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -137,7 +137,7 @@ msgstr "Format datas"
 msgid "The peer SSL certificate chainappears to be corrupt."
 msgstr "Sijil SSL sebaya kelihatan rosak."
 
-#: kio/slaveinterface.cpp:484 kio/tcpslavebase.cpp:631
+#: kio/slaveinterface.cpp:484 kio/tcpslavebase.cpp:641
 msgid "SSL"
 msgstr "SSL"
 
@@ -336,7 +336,7 @@ msgstr ""
 "Anda akan meninggalkan mod terlindung. Transmisi tidak akan dienkrip.\n"
 "Ini bermakna pihak ketiga boleh memerhatikan data di dalam transit."
 
-#: kio/tcpslavebase.cpp:269 kio/tcpslavebase.cpp:463
+#: kio/tcpslavebase.cpp:269 kio/tcpslavebase.cpp:473
 msgid "Security Information"
 msgstr "Maklumat Sekuriti"
 
@@ -344,7 +344,13 @@ msgstr "Maklumat Sekuriti"
 msgid "C&ontinue Loading"
 msgstr "Terus Muatkan"
 
-#: kio/tcpslavebase.cpp:457
+#: kio/tcpslavebase.cpp:316
+#, fuzzy
+#| msgid "Authentication Failed."
+msgid ": SSL negotiation failed"
+msgstr "Pengesahan Gagal."
+
+#: kio/tcpslavebase.cpp:467
 msgid ""
 "You are about to enter secure mode. All transmissions will be encrypted "
 "unless otherwise noted.\n"
@@ -355,31 +361,31 @@ msgstr ""
 "Ini bermakna pihak ketiga tidak boleh memerhatikan data di dalam transit "
 "dengan mudah."
 
-#: kio/tcpslavebase.cpp:464
+#: kio/tcpslavebase.cpp:474
 msgid "Display SSL &Information"
 msgstr "Papar &Maklumat SSL"
 
-#: kio/tcpslavebase.cpp:465
+#: kio/tcpslavebase.cpp:475
 msgid "C&onnect"
 msgstr "&Sambung"
 
-#: kio/tcpslavebase.cpp:602
+#: kio/tcpslavebase.cpp:612
 msgid "Enter the certificate password:"
 msgstr "Masukkan kata laluan sijil:"
 
-#: kio/tcpslavebase.cpp:603
+#: kio/tcpslavebase.cpp:613
 msgid "SSL Certificate Password"
 msgstr "Kata Laluan Sijil SSL"
 
-#: kio/tcpslavebase.cpp:616
+#: kio/tcpslavebase.cpp:626
 msgid "Unable to open the certificate. Try a new password?"
 msgstr "Gagal membuka sijil. Cuba kata laluan baru?"
 
-#: kio/tcpslavebase.cpp:629
+#: kio/tcpslavebase.cpp:639
 msgid "The procedure to set the client certificate for the session failed."
 msgstr "Prosedur untuk menetapkan sijil klien untuk sesi telah gagal."
 
-#: kio/tcpslavebase.cpp:659
+#: kio/tcpslavebase.cpp:669
 #, fuzzy, kde-format
 #| msgid "The server certificate failed the authenticity test (%1)."
 msgid ""
@@ -387,34 +393,34 @@ msgid ""
 "\n"
 msgstr "Sijil pelayan gagal ujian pengesahan (%1)."
 
-#: kio/tcpslavebase.cpp:708 kio/tcpslavebase.cpp:725 kio/tcpslavebase.cpp:827
-#: kio/tcpslavebase.cpp:839
+#: kio/tcpslavebase.cpp:718 kio/tcpslavebase.cpp:735 kio/tcpslavebase.cpp:837
+#: kio/tcpslavebase.cpp:849
 msgid "Server Authentication"
 msgstr "Autentikasi Pelayan"
 
-#: kio/tcpslavebase.cpp:709
+#: kio/tcpslavebase.cpp:719
 msgid "&Details"
 msgstr "&Terperinci"
 
-#: kio/tcpslavebase.cpp:709
+#: kio/tcpslavebase.cpp:719
 msgid "Co&ntinue"
 msgstr "Sambu&ng"
 
-#: kio/tcpslavebase.cpp:722
+#: kio/tcpslavebase.cpp:732
 msgid ""
 "Would you like to accept this certificate forever without being prompted?"
 msgstr ""
 "Adakah anda mahu menerima sijil ini seterusnya selepas ini tanpa diberitahu?"
 
-#: kio/tcpslavebase.cpp:726
+#: kio/tcpslavebase.cpp:736
 msgid "&Forever"
 msgstr "&Selamanya"
 
-#: kio/tcpslavebase.cpp:727
+#: kio/tcpslavebase.cpp:737
 msgid "&Current Sessions Only"
 msgstr "Sesi Ini Saha&ja"
 
-#: kio/tcpslavebase.cpp:826
+#: kio/tcpslavebase.cpp:836
 msgid ""
 "You have indicated that you wish to accept this certificate, but it is not "
 "issued to the server who is presenting it. Do you wish to continue loading?"
@@ -422,7 +428,7 @@ msgstr ""
 "Anda menunjukkan bahawa anda mahu menerima sijil ini, tetapi sijil ini tidak "
 "dikeluarkan kepada pelayan yang menunjukkannya. Anda mahu terus muatkan?"
 
-#: kio/tcpslavebase.cpp:838
+#: kio/tcpslavebase.cpp:848
 msgid ""
 "SSL certificate is being rejected as requested. You can disable this in the "
 "KDE Control Center."
@@ -2467,22 +2473,22 @@ msgstr "Keizinan:"
 msgid "No service implementing %1"
 msgstr "Tiada servis melaksnakan %1"
 
-#: kio/slave.cpp:405
+#: kio/slave.cpp:406
 #, kde-format
 msgid "Unknown protocol '%1'."
 msgstr "Protokol tak diketahui '%1'."
 
-#: kio/slave.cpp:413
+#: kio/slave.cpp:414
 #, kde-format
 msgid "Can not find io-slave for protocol '%1'."
 msgstr "Tidak dapat cari io-hamba untuk protokol '%1'."
 
-#: kio/slave.cpp:431
+#: kio/slave.cpp:432
 #, fuzzy, kde-format
 msgid "Cannot talk to klauncher: %1"
 msgstr "Tidak dapat bercakap dengan klauncher"
 
-#: kio/slave.cpp:439
+#: kio/slave.cpp:440
 #, kde-format
 msgid ""
 "Unable to create io-slave:\n"
