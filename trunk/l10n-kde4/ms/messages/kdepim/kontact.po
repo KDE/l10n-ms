@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-09 07:18+0100\n"
+"POT-Creation-Date: 2008-01-26 09:53+0100\n"
 "PO-Revision-Date: 2005-11-22 11:01+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -122,7 +122,8 @@ msgstr "(c), 2003 Cornelius Schumacher"
 #: plugins/knotes/knotes_plugin.cpp:91
 #: plugins/korganizer/kcmapptsummary.cpp:140
 #: plugins/korganizer/kcmtodosummary.cpp:166
-#: plugins/newsticker/kcmkontactknt.cpp:476
+#: plugins/newsticker/kcmkontactknt.cpp:476 plugins/planner/kcmplanner.cpp:76
+#: plugins/planner/plannerplugin.cpp:66
 #: plugins/specialdates/kcmsdsummary.cpp:195
 #: plugins/specialdates/specialdates_plugin.cpp:65
 #: plugins/summary/kcmkontactsummary.cpp:119
@@ -462,7 +463,7 @@ msgstr "Pembangun (C) 2001-2004 The Kontact "
 msgid "Michael Brade"
 msgstr ""
 
-#: plugins/knotes/knotes_plugin.cpp:90
+#: plugins/knotes/knotes_plugin.cpp:90 plugins/planner/plannerplugin.cpp:65
 #: plugins/specialdates/specialdates_plugin.cpp:64
 #, fuzzy
 #| msgid "Maintainer"
@@ -489,12 +490,14 @@ msgstr ""
 
 #: plugins/korganizer/apptsummarywidget.cpp:193
 #: plugins/korganizer/todosummarywidget.cpp:212
+#: plugins/planner/planner.cpp:510
 #: plugins/specialdates/sdsummarywidget.cpp:455
 msgid "Today"
 msgstr "Hari ini"
 
 #: plugins/korganizer/apptsummarywidget.cpp:197
 #: plugins/korganizer/todosummarywidget.cpp:214
+#: plugins/planner/planner.cpp:514
 #: plugins/specialdates/sdsummarywidget.cpp:457
 msgid "Tomorrow"
 msgstr "Esok"
@@ -514,6 +517,7 @@ msgid "now"
 msgstr "sekarang"
 
 #: plugins/korganizer/apptsummarywidget.cpp:270
+#: plugins/planner/planner.cpp:414
 #, kde-format
 msgctxt "Time from - to"
 msgid "%1 - %2"
@@ -527,11 +531,13 @@ msgstr[0] "_n: Tiada tarikh khusus dalam masa 1 hari seterusnya"
 msgstr[1] "Tiada tarikh khusus menunggu dalam masa %1 hari seterusnya"
 
 #: plugins/korganizer/apptsummarywidget.cpp:317
+#: plugins/planner/planner.cpp:579
 #, fuzzy
 msgid "&Edit Appointment..."
 msgstr "Temu janji"
 
 #: plugins/korganizer/apptsummarywidget.cpp:318
+#: plugins/planner/planner.cpp:581
 #, fuzzy
 msgid "&Delete Appointment"
 msgstr "Temu janji"
@@ -550,7 +556,7 @@ msgid "Synchronize Journal"
 msgstr ""
 
 #: plugins/korganizer/kcmapptsummary.cpp:81
-#: plugins/korganizer/kcmtodosummary.cpp:88
+#: plugins/korganizer/kcmtodosummary.cpp:88 plugins/planner/kcmplanner.cpp:107
 #: plugins/specialdates/kcmsdsummary.cpp:93
 #, fuzzy
 msgid " day"
@@ -575,7 +581,8 @@ msgid "(c) 2003 - 2004 Tobias Koenig"
 msgstr "(c) 2003 - 2004 Tobias Koenig"
 
 #: plugins/korganizer/kcmapptsummary.cpp:141
-#: plugins/korganizer/kcmtodosummary.cpp:167
+#: plugins/korganizer/kcmtodosummary.cpp:167 plugins/planner/kcmplanner.cpp:77
+#: plugins/planner/plannerplugin.cpp:64
 #: plugins/specialdates/kcmsdsummary.cpp:194
 #: plugins/specialdates/specialdates_plugin.cpp:64
 msgid "Allen Winter"
@@ -663,20 +670,24 @@ msgstr[0] "_n: Tiada tarikh khusus dalam masa 1 hari seterusnya"
 msgstr[1] "Tiada tarikh khusus menunggu dalam masa %1 hari seterusnya"
 
 #: plugins/korganizer/todosummarywidget.cpp:335
+#: plugins/planner/planner.cpp:643
 #, fuzzy
 msgid "&Edit To-do..."
 msgstr "Tugasan Baru..."
 
 #: plugins/korganizer/todosummarywidget.cpp:336
+#: plugins/planner/planner.cpp:645
 #, fuzzy
 msgid "&Delete To-do"
 msgstr "Hapuskan Suapan"
 
 #: plugins/korganizer/todosummarywidget.cpp:342
+#: plugins/planner/planner.cpp:649
 msgid "&Mark To-do Completed"
 msgstr ""
 
 #: plugins/korganizer/todosummarywidget.cpp:363
+#: plugins/planner/planner.cpp:751
 #, kde-format
 msgid "Edit To-do: \"%1\""
 msgstr ""
@@ -686,10 +697,13 @@ msgid "open-ended"
 msgstr ""
 
 #: plugins/korganizer/todosummarywidget.cpp:441
+#: plugins/planner/planner.cpp:235 plugins/planner/planner.cpp:256
+#: plugins/planner/planner.cpp:268 plugins/planner/planner.cpp:615
 msgid "overdue"
 msgstr "Lewat Tempoh"
 
 #: plugins/korganizer/todosummarywidget.cpp:443
+#: plugins/planner/planner.cpp:627
 msgid "starts today"
 msgstr "mula hari ini"
 
@@ -698,6 +712,7 @@ msgid "not-started"
 msgstr ""
 
 #: plugins/korganizer/todosummarywidget.cpp:449
+#: plugins/planner/planner.cpp:635
 msgid "completed"
 msgstr ""
 
@@ -809,6 +824,141 @@ msgstr ""
 msgid "Copy URL to Clipboard"
 msgstr "Salin URL ke Klipbod"
 
+#: plugins/planner/kcmplanner.cpp:71
+msgid "kcmplanner"
+msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:72
+msgid "Schedule Configuration Dialog"
+msgstr "Dialog Konfigurasi Jadual"
+
+#: plugins/planner/kcmplanner.cpp:74
+msgid "(c) 2007-2008 Oral Timocin"
+msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:146
+msgid "Calendar View"
+msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:149
+msgid "One day"
+msgstr "Satu hari"
+
+#: plugins/planner/kcmplanner.cpp:152
+msgid "Five days"
+msgstr "Lima hari"
+
+#: plugins/planner/kcmplanner.cpp:155
+msgid "One week"
+msgstr "Satu minggu"
+
+#: plugins/planner/kcmplanner.cpp:158
+msgid "One month"
+msgstr "Satu bulan"
+
+#: plugins/planner/kcmplanner.cpp:181
+#, fuzzy
+msgid "Show To-dos?"
+msgstr "Paparkan semua tugasan"
+
+#: plugins/planner/kcmplanner.cpp:184
+#, fuzzy
+msgid "Show all to-dos"
+msgstr "Paparkan semua tugasan"
+
+#: plugins/planner/kcmplanner.cpp:185
+#, fuzzy
+msgid "Overdue To-dos"
+msgstr "Tugasan"
+
+#: plugins/planner/kcmplanner.cpp:186
+#, fuzzy
+msgid "Starting to-dos"
+msgstr "Tugasan"
+
+#: plugins/planner/kcmplanner.cpp:187
+#, fuzzy
+msgid "Ending to-dos"
+msgstr "Tugasan"
+
+#: plugins/planner/kcmplanner.cpp:188
+#, fuzzy
+msgid "To-dos in progress"
+msgstr "sedang berjalan"
+
+#: plugins/planner/kcmplanner.cpp:189
+#, fuzzy
+msgid "Completed To-dos"
+msgstr "Hapuskan Suapan"
+
+#: plugins/planner/kcmplanner.cpp:219
+#, fuzzy
+msgid "Show Special Dates?"
+msgstr "Tarikh Khusus"
+
+#: plugins/planner/kcmplanner.cpp:246
+#, fuzzy
+#| msgid "Active Calendar"
+msgid "Calendar"
+msgstr "Kalendar Aktif"
+
+#: plugins/planner/kcmplanner.cpp:247
+#, fuzzy
+msgid "To-dos"
+msgstr "Tugasan"
+
+#: plugins/planner/kcmplanner.cpp:248
+#, fuzzy
+#| msgid "Special Dates Summary"
+msgid "Special Dates"
+msgstr "Ringkasan Tarikh Khusus"
+
+#: plugins/planner/planner.cpp:69
+msgid "Planner"
+msgstr ""
+
+#: plugins/planner/planner.cpp:548
+#, fuzzy, c-format
+msgid "No appointments pending within the next day"
+msgid_plural "No appointments pending within the next %n days"
+msgstr[0] "_n: Tiada tarikh khusus dalam masa 1 hari seterusnya"
+msgstr[1] "Tiada tarikh khusus menunggu dalam masa %1 hari seterusnya"
+
+#: plugins/planner/planner.cpp:598
+#, fuzzy, kde-format
+msgid "Edit Appointment: \"%1\""
+msgstr "Temu janji"
+
+#: plugins/planner/planner.cpp:622
+#, fuzzy
+msgid "in progress"
+msgstr "sedang berjalan"
+
+#: plugins/planner/planner.cpp:632
+msgid "ends today"
+msgstr "tamat hari ini"
+
+#: plugins/planner/plannerplugin.cpp:59
+#, fuzzy
+#| msgid "Summary"
+msgid "Planner Summary"
+msgstr "Ringkasan"
+
+#: plugins/planner/plannerplugin.cpp:61
+#, fuzzy
+#| msgid "Kontact Summary"
+msgid "Kontact Planner Summary"
+msgstr "Ringkasan Kontact"
+
+#: plugins/planner/plannerplugin.cpp:63
+#: plugins/specialdates/specialdates_plugin.cpp:63
+msgid "(c) 2004-2005 The KDE PIM Team"
+msgstr "Pasukan (c) 2004-2005 The KDE PIM "
+
+#: plugins/planner/plannerplugin.cpp:68
+msgid "Oral Timocin"
+msgstr ""
+
 #: plugins/specialdates/kcmsdsummary.cpp:189
 msgid "kcmsdsummary"
 msgstr "kcmsdsummary"
@@ -901,10 +1051,6 @@ msgstr "Ringkasan Tarikh Khusus"
 #: plugins/specialdates/specialdates_plugin.cpp:61
 msgid "Kontact Special Dates Summary"
 msgstr "Ringkasan Tarikh Khusus Kontact "
-
-#: plugins/specialdates/specialdates_plugin.cpp:63
-msgid "(c) 2004-2005 The KDE PIM Team"
-msgstr "Pasukan (c) 2004-2005 The KDE PIM "
 
 #: plugins/summary/kcmkontactsummary.cpp:86
 msgid "Name"
@@ -1053,9 +1199,6 @@ msgstr "Tidak diketahui"
 #~ msgid "kcmkorgsummary"
 #~ msgstr "kcmkorgsummary"
 
-#~ msgid "Schedule Configuration Dialog"
-#~ msgstr "Dialog Konfigurasi Jadual"
-
 #~ msgid "Appointments"
 #~ msgstr "Temu janji"
 
@@ -1063,28 +1206,9 @@ msgstr "Tidak diketahui"
 #~ msgid "How many days should the calendar show at once?"
 #~ msgstr "Berapa hari kalendar sepatutnya dipaparkan sekaligus?"
 
-#~ msgid "One day"
-#~ msgstr "Satu hari"
-
-#~ msgid "Five days"
-#~ msgstr "Lima hari"
-
-#~ msgid "One week"
-#~ msgstr "Satu minggu"
-
-#~ msgid "One month"
-#~ msgstr "Satu bulan"
-
-#, fuzzy
-#~ msgid "Show all to-dos"
-#~ msgstr "Paparkan semua tugasan"
-
 #, fuzzy
 #~ msgid "Show today's to-dos only"
 #~ msgstr "Paparkan tugasan hari ini"
-
-#~ msgid "ends today"
-#~ msgstr "tamat hari ini"
 
 #~ msgid "No to-dos pending"
 #~ msgstr "Tiada tugasan menunggu"
