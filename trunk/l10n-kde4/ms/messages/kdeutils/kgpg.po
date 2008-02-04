@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-01 14:07+0100\n"
+"POT-Creation-Date: 2008-02-04 11:31+0100\n"
 "PO-Revision-Date: 2005-11-17 23:25+0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -180,14 +180,14 @@ msgstr "[Tandatangan pembatalan]"
 msgid " [Revocation signature]"
 msgstr "[Tandatangan pembatalan]"
 
-#: keylistview.cpp:106 selectpublickeydialog.cpp:138 selectsecretkey.cpp:37
+#: keylistview.cpp:106 selectsecretkey.cpp:37
 #, fuzzy
 #| msgid "Name"
 msgctxt "Name of key owner"
 msgid "Name"
 msgstr "Nama"
 
-#: keylistview.cpp:107 selectpublickeydialog.cpp:139 selectsecretkey.cpp:38
+#: keylistview.cpp:107 selectsecretkey.cpp:38
 #, fuzzy
 #| msgid "Email"
 msgctxt "Email address of key owner"
@@ -212,9 +212,9 @@ msgid "Creation"
 msgstr "Penciptaan"
 
 #. i18n: tag string
-#. i18n: file groupedit.ui line 64
+#. i18n: file groupedit.ui line 61
 #. i18n: tag string
-#. i18n: file groupedit.ui line 151
+#. i18n: file groupedit.ui line 145
 #: keylistview.cpp:112 rc.cpp:287 rc.cpp:299
 msgid "Id"
 msgstr "Id"
@@ -347,7 +347,7 @@ msgid_plural "<qt><b>%1 keys imported:</b><br/></qt>"
 msgstr[0] "_n: <qt><b>Satu kunci diimport:</b><br></qt>"
 msgstr[1] "<qt><b>%1 kunci diimport:</b><br></qt>"
 
-#: keyservers.cpp:207 kgpginterface.cpp:1570
+#: keyservers.cpp:207 kgpginterface.cpp:1576
 msgid ""
 "No key imported... \n"
 "Check detailed log for more infos"
@@ -396,7 +396,7 @@ msgstr ""
 msgid "Key Management"
 msgstr "Pengurusan Kunci"
 
-#: keysmanager.cpp:125 kgpg.cpp:913
+#: keysmanager.cpp:125 kgpg.cpp:918
 msgid "&Key Server Dialog"
 msgstr "Dialog Pelayan &Kunci"
 
@@ -412,7 +412,7 @@ msgstr "Papar Manual GnuPG"
 msgid "&Open Editor"
 msgstr "&Buka Editor"
 
-#: keysmanager.cpp:146 selectpublickeydialog.cpp:197
+#: keysmanager.cpp:146 selectpublickeydialog.cpp:134
 msgid "&Go to Default Key"
 msgstr "&Pergi ke Kunci Piawai"
 
@@ -1084,7 +1084,7 @@ msgstr "&Tandatangan Fail"
 msgid "KGpg - encryption tool"
 msgstr "KGpg - alat penyulitan"
 
-#: kgpg.cpp:145 kgpg.cpp:190 kgpg.cpp:838
+#: kgpg.cpp:145 kgpg.cpp:190 kgpg.cpp:843
 msgid "Clipboard is empty."
 msgstr "Klipbod kosong."
 
@@ -1204,7 +1204,13 @@ msgstr ""
 "<qt><b>Fail konfigurasi GnuPG tidak ditemui</b>. Pastikan anda GnuPG "
 "dipasang dan beri laluan kepada fail konfig.</qt>"
 
-#: kgpg.cpp:722
+#: kgpg.cpp:723
+msgid ""
+"GnuPG was not found on your system. Please make sure to have the &quot;"
+"gpg&quot; binary in your application search path."
+msgstr ""
+
+#: kgpg.cpp:726
 msgid ""
 "Your GnuPG version seems to be older than 1.2.0. Photo Id's and Key Groups "
 "will not work properly. Please consider upgrading GnuPG (http://gnupg.org)."
@@ -1212,39 +1218,39 @@ msgstr ""
 "Versi GnuPG anda lebih lama daripada 1.2.0. Id foto dan Kumpulan Kunci tidak "
 "akan berfungsi dengan baik. Pertimbangkan naik taraf GnuPG (http://gnupg.org)"
 
-#: kgpg.cpp:757
+#: kgpg.cpp:761
 msgid "Step Three: Select your Default Private Key"
 msgstr "Langkah Tiga: Pilih Kunci Persendirian Piawai"
 
-#: kgpg.cpp:866
+#: kgpg.cpp:871
 msgid "Encrypted following text:"
 msgstr "Teks berikutnya yang disulitkan:"
 
-#: kgpg.cpp:894
+#: kgpg.cpp:899
 #, fuzzy
 #| msgid "Editor"
 msgid "E&ditor"
 msgstr "Editor"
 
-#: kgpg.cpp:898
+#: kgpg.cpp:903
 #, fuzzy
 #| msgid "Key Manager"
 msgid "Ke&y Manager"
 msgstr "Pengurus Kunci"
 
-#: kgpg.cpp:902
+#: kgpg.cpp:907
 msgid "&Encrypt Clipboard"
 msgstr "&Sulitkan Klipbod"
 
-#: kgpg.cpp:905
+#: kgpg.cpp:910
 msgid "&Decrypt Clipboard"
 msgstr "&Nyahsulit Klipbod"
 
-#: kgpg.cpp:908
+#: kgpg.cpp:913
 msgid "&Sign/Verify Clipboard"
 msgstr "&Tandatangan/Sahkan Klipbod"
 
-#: kgpg.cpp:1033
+#: kgpg.cpp:1038
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The use of <b>GnuPG Agent</b> is enabled in GnuPG's configuration "
@@ -1262,7 +1268,7 @@ msgstr ""
 "masalah dalam tandatangan/penyahsulitan.<br>Sila nyahaktifkan Ejen GnuPG "
 "daripada seting KGpg, atau tetapkan ejen.</qt>"
 
-#: kgpg.cpp:1080
+#: kgpg.cpp:1085
 msgid ""
 "Unable to perform requested operation.\n"
 "Please select only one folder, or several files, but do not mix files and "
@@ -1272,15 +1278,15 @@ msgstr ""
 "Pilih hanya satu folder, atau beberapa fail, tetapi jangan campurkan fail "
 "dengan folder."
 
-#: kgpg.cpp:1099
+#: kgpg.cpp:1104
 msgid "Cannot decrypt and show folder."
 msgstr "Tidak dapat nyahsulitkan dan papar folder."
 
-#: kgpg.cpp:1107
+#: kgpg.cpp:1112
 msgid "Cannot sign folder."
 msgstr "Tidak dapat tandatangan folder."
 
-#: kgpg.cpp:1115
+#: kgpg.cpp:1120
 msgid "Cannot verify folder."
 msgstr "Tidak dapat sahkan folder."
 
@@ -1379,25 +1385,25 @@ msgstr "Buka Fail untuk Tandatangan"
 msgid "Open File to Verify"
 msgstr "Buka Fail untuk Pengesahan"
 
-#: kgpginterface.cpp:386 kgpgtextinterface.cpp:87
+#: kgpginterface.cpp:392 kgpgtextinterface.cpp:87
 msgid " or "
 msgstr "atau"
 
-#: kgpginterface.cpp:930 kgpginterface.cpp:1058 kgpginterface.cpp:1159
-#: kgpginterface.cpp:1354 kgpginterface.cpp:1418 kgpginterface.cpp:1629
+#: kgpginterface.cpp:936 kgpginterface.cpp:1064 kgpginterface.cpp:1165
+#: kgpginterface.cpp:1360 kgpginterface.cpp:1424 kgpginterface.cpp:1635
 #: kgpgtextinterface.cpp:93
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
 msgstr "<b>Frasa laluan tidak bagus</b>. Anda ada %1 cubaan lagi.<br>"
 
-#: kgpginterface.cpp:931 kgpginterface.cpp:1059 kgpginterface.cpp:1355
-#: kgpginterface.cpp:1419 kgpginterface.cpp:1630 kgpgtextinterface.cpp:97
+#: kgpginterface.cpp:937 kgpginterface.cpp:1065 kgpginterface.cpp:1361
+#: kgpginterface.cpp:1425 kgpginterface.cpp:1636 kgpgtextinterface.cpp:97
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Masukkan frasa laluan untuk <b>%1</b>"
 
-#: kgpginterface.cpp:972
+#: kgpginterface.cpp:978
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Signing key <b>%1</b> with key <b>%2</b> failed.<br>Do you want to "
@@ -1409,7 +1415,7 @@ msgstr ""
 "<qt>Menandatangan kunci <b>%1</b> dengan kunci <b>%2</b> gagal.<br>Anda "
 "ingin cuba menandatangan kunci dalam mod konsol?</qt>"
 
-#: kgpginterface.cpp:1099
+#: kgpginterface.cpp:1105
 #, fuzzy
 #| msgid ""
 #| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing the "
@@ -1421,16 +1427,16 @@ msgstr ""
 "<qt><b>Mengubah peluputan gagal.</b><br>Anda ingin cuba ubah peluputan kunci "
 "dalam mod konsol?</qt>"
 
-#: kgpginterface.cpp:1152 kgpgtextinterface.cpp:85
+#: kgpginterface.cpp:1158 kgpgtextinterface.cpp:85
 msgid "[No user id found]"
 msgstr "[Tiada id pengguna ditemui]"
 
-#: kgpginterface.cpp:1160
+#: kgpginterface.cpp:1166
 #, fuzzy, kde-format
 msgid "Enter old passphrase for <b>%1</b>"
 msgstr "Masukkan frasa laluan untuk <b>%1</b>"
 
-#: kgpginterface.cpp:1173
+#: kgpginterface.cpp:1179
 #, fuzzy, kde-format
 msgid ""
 "<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
@@ -1439,110 +1445,110 @@ msgstr ""
 "<qt>Masukkan frasa laluan baru bagi <b>%1</b><br>Jika anda lupa frasa laluan "
 "ini, semua fail dan mesej anda yang disulitkan akan hilang!<br></qt>"
 
-#: kgpginterface.cpp:1340
+#: kgpginterface.cpp:1346
 msgid "This image is very large. Use it anyway?"
 msgstr "Imej ini sangat besar. Gunakan juga?"
 
-#: kgpginterface.cpp:1340
+#: kgpginterface.cpp:1346
 msgid "Use Anyway"
 msgstr ""
 
-#: kgpginterface.cpp:1340
+#: kgpginterface.cpp:1346
 msgid "Do Not Use"
 msgstr ""
 
-#: kgpginterface.cpp:1528
+#: kgpginterface.cpp:1534
 #, fuzzy, kde-format
 msgid "<qt>%1 key processed.</qt>"
 msgid_plural "<qt>%1 keys processed.</qt>"
 msgstr[0] "_n: <qt>%1 kunci diproses.<br></qt>"
 msgstr[1] "<qt>%1 kunci diproses.<br></qt>"
 
-#: kgpginterface.cpp:1531
+#: kgpginterface.cpp:1537
 #, fuzzy, kde-format
 msgid "<qt>One key without ID.</qt>"
 msgid_plural "<qt>%1 keys without ID.</qt>"
 msgstr[0] "_n: <qt>Satu kunci tanpa ID.<br></qt>"
 msgstr[1] "<qt>%1 kunci tanpa ID.<br></qt>"
 
-#: kgpginterface.cpp:1533
+#: kgpginterface.cpp:1539
 #, fuzzy, kde-format
 msgid "<qt><b>One key imported:</b></qt>"
 msgid_plural "<qt><b>%1 keys imported:</b></qt>"
 msgstr[0] "_n: <qt><b>Satu kunci diimport:</b><br></qt>"
 msgstr[1] "<qt><b>%1 kunci diimport:</b><br></qt>"
 
-#: kgpginterface.cpp:1535
+#: kgpginterface.cpp:1541
 #, fuzzy, kde-format
 msgid "<qt>One RSA key imported.</qt>"
 msgid_plural "<qt>%1 RSA keys imported.</qt>"
 msgstr[0] "_n: <qt>Satu kunci RSA diimport.<br></qt>"
 msgstr[1] "<qt>%1 kunci RSA diimport.<br></qt>"
 
-#: kgpginterface.cpp:1537
+#: kgpginterface.cpp:1543
 #, fuzzy, kde-format
 msgid "<qt>One key unchanged.</qt>"
 msgid_plural "<qt>%1 keys unchanged.</qt>"
 msgstr[0] "_n: <qt>Satu kunci tidak berubah.<br></qt>"
 msgstr[1] "<qt>%1 kunci tidak berubah.<br></qt>"
 
-#: kgpginterface.cpp:1539
+#: kgpginterface.cpp:1545
 #, fuzzy, kde-format
 msgid "<qt>One user ID imported.</qt>"
 msgid_plural "<qt>%1 user IDs imported.</qt>"
 msgstr[0] "_n: <qt>Satu ID pengguna diimport.<br></qt>"
 msgstr[1] "<qt>%1 ID pengguna diimport.<br></qt>"
 
-#: kgpginterface.cpp:1541
+#: kgpginterface.cpp:1547
 #, fuzzy, kde-format
 msgid "<qt>One subkey imported.</qt>"
 msgid_plural "<qt>%1 subkeys imported.</qt>"
 msgstr[0] "_n: <qt>Satu subkunci diimport.<br></qt>"
 msgstr[1] "<qt>%1 subkunci diimport.<br></qt>"
 
-#: kgpginterface.cpp:1543
+#: kgpginterface.cpp:1549
 #, fuzzy, kde-format
 msgid "<qt>One signature imported.</qt>"
 msgid_plural "<qt>%1 signatures imported.</qt>"
 msgstr[0] "_n: <qt>Satu tandatangan diimport.<br></qt>"
 msgstr[1] "<qt>%1 tandatangan diimport.<br></qt>"
 
-#: kgpginterface.cpp:1546
+#: kgpginterface.cpp:1552
 #, fuzzy, kde-format
 msgid "<qt>One revocation certificate imported.</qt>"
 msgid_plural "<qt>%1 revocation certificates imported.</qt>"
 msgstr[0] "_n: <qt>Satu sijil pembatalan diimport.<br></qt>"
 msgstr[1] "<qt>%1 sijil pembatalan diimport.<br></qt>"
 
-#: kgpginterface.cpp:1552
+#: kgpginterface.cpp:1558
 #, fuzzy, kde-format
 msgid "<qt>One secret key processed.</qt>"
 msgid_plural "<qt>%1 secret keys processed.</qt>"
 msgstr[0] "_n: <qt>Satu kunci rahsia diproses.<br></qt>"
 msgstr[1] "<qt>%1 kunci rahsia diproses.<br></qt>"
 
-#: kgpginterface.cpp:1556
+#: kgpginterface.cpp:1562
 #, fuzzy, kde-format
 msgid "<qt><b>One secret key imported.</b></qt>"
 msgid_plural "<qt><b>%1 secret keys imported.</b></qt>"
 msgstr[0] "_n: <qt><b>Satu kunci rahsia diimport.</b><br></qt>"
 msgstr[1] "<qt><b>%1 kunci rahsia diimport.</b><br></qt>"
 
-#: kgpginterface.cpp:1558
+#: kgpginterface.cpp:1564
 #, fuzzy, kde-format
 msgid "<qt>One secret key unchanged.</qt>"
 msgid_plural "<qt>%1 secret keys unchanged.</qt>"
 msgstr[0] "_n: <qt>Satu kunci rahsia tidak berubah.<br></qt>"
 msgstr[1] "<qt>%1 kunci rahsia tidak berubah.<br></qt>"
 
-#: kgpginterface.cpp:1560
+#: kgpginterface.cpp:1566
 #, fuzzy, kde-format
 msgid "<qt>One secret key not imported.</qt>"
 msgid_plural "<qt>%1 secret keys not imported.</qt>"
 msgstr[0] "_n: <qt>Satu kunci rahsia tidak diimport.<br></qt>"
 msgstr[1] "<qt>%1 kunci rahsia tidak diimport.<br></qt>"
 
-#: kgpginterface.cpp:1563
+#: kgpginterface.cpp:1569
 #, fuzzy
 #| msgid ""
 #| "<qt><br><b>You have imported a secret key.</b> <br>Please note that "
@@ -1561,7 +1567,7 @@ msgstr ""
 "anda mesti edit kunci tersebut (klik dua kali di atasnya) dan setkan "
 "amanahnya kepada Penuh atau Mutlak.</qt>"
 
-#: kgpginterface.cpp:1757
+#: kgpginterface.cpp:1763
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
@@ -1573,35 +1579,35 @@ msgstr ""
 "<b>Masukkan frasa laluan untuk %1</b>:<br>Frasa laluan hendaklah memasukkan "
 "aksara bukan alfaangka dan jujukan rawak"
 
-#: kgpginterface.cpp:2025
+#: kgpginterface.cpp:2031
 msgid "Creation of the revocation certificate failed..."
 msgstr "Penciptaan sijil pembatalan gagal..."
 
-#: kgpginterface.cpp:2056
+#: kgpginterface.cpp:2062
 #, fuzzy, kde-format
 #| msgid "<qt>%1 Enter passphrase for <b>%2</b>:</qt>"
 msgid "<qt>Enter passphrase for <b>%1</b>:</qt>"
 msgstr "<qt>%1 Masukkan frasa laluan bagi <b>%2</b>:</qt>"
 
 #. i18n: tag string
-#. i18n: file groupedit.ui line 54
+#. i18n: file groupedit.ui line 51
 #. i18n: tag string
-#. i18n: file groupedit.ui line 141
+#. i18n: file groupedit.ui line 135
 #: kgpgitemmodel.cpp:230 rc.cpp:281 rc.cpp:293
 msgid "Name"
 msgstr "Nama"
 
 #. i18n: tag string
-#. i18n: file groupedit.ui line 59
+#. i18n: file groupedit.ui line 56
 #. i18n: tag string
-#. i18n: file groupedit.ui line 146
+#. i18n: file groupedit.ui line 140
 #. i18n: tag string
 #. i18n: file keyexport.ui line 34
 #: kgpgitemmodel.cpp:231 rc.cpp:284 rc.cpp:296 rc.cpp:302
 msgid "Email"
 msgstr "E-mel"
 
-#: kgpgitemmodel.cpp:236 selectpublickeydialog.cpp:140 selectsecretkey.cpp:40
+#: kgpgitemmodel.cpp:236 selectsecretkey.cpp:40
 msgid "ID"
 msgstr "ID"
 
@@ -2230,7 +2236,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 42
-#: rc.cpp:29 selectpublickeydialog.cpp:154
+#: rc.cpp:29 selectpublickeydialog.cpp:91
 msgid "ASCII armored encryption"
 msgstr "Penyulitan perisai ASCII"
 
@@ -2282,7 +2288,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 64
-#: rc.cpp:43 selectpublickeydialog.cpp:165
+#: rc.cpp:43 selectpublickeydialog.cpp:102
 msgid "Hide user id"
 msgstr "Sembunyikan id pengguna"
 
@@ -2388,7 +2394,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 161
-#: rc.cpp:71 selectpublickeydialog.cpp:159
+#: rc.cpp:71 selectpublickeydialog.cpp:96
 msgid "Allow encryption with untrusted keys"
 msgstr "Benarkan penyulitan dengan kunci tak dipercayai"
 
@@ -2896,7 +2902,7 @@ msgid "Available Trusted Keys"
 msgstr "Kunci Dipercayai Yang Boleh Didapatkan"
 
 #. i18n: tag string
-#. i18n: file groupedit.ui line 80
+#. i18n: file groupedit.ui line 77
 #: rc.cpp:290
 #, fuzzy
 msgid "Keys in the Group"
@@ -3681,31 +3687,31 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "opensource@mimos.my"
 
-#: selectpublickeydialog.cpp:113
+#: selectpublickeydialog.cpp:45
 msgid "Select Public Key"
 msgstr "Pilih Kunci Awam"
 
-#: selectpublickeydialog.cpp:116
+#: selectpublickeydialog.cpp:48
 msgid "O&ptions"
 msgstr ""
 
-#: selectpublickeydialog.cpp:120
+#: selectpublickeydialog.cpp:52
 #, kde-format
 msgid "Select Public Key for %1"
 msgstr "Pilih Kunci Awam untuk %1"
 
-#: selectpublickeydialog.cpp:128
+#: selectpublickeydialog.cpp:60
 #, fuzzy
 msgid "&Search: "
 msgstr "Cari:"
 
-#: selectpublickeydialog.cpp:142
+#: selectpublickeydialog.cpp:79
 msgid ""
 "<b>Public keys list</b>: select the key that will be used for encryption."
 msgstr ""
 "<b>Senarai kunci awam</b>: pilih kunci yang akan digunakan untuk penyulitan."
 
-#: selectpublickeydialog.cpp:156
+#: selectpublickeydialog.cpp:93
 msgid ""
 "<b>ASCII encryption</b>: makes it possible to open the encrypted file/"
 "message in a text editor"
@@ -3713,7 +3719,7 @@ msgstr ""
 "<b>Penyulitan ASCII</b>: menjadikannya boleh membuka fail/mesej yang "
 "disulitkan dalam editor teks"
 
-#: selectpublickeydialog.cpp:161
+#: selectpublickeydialog.cpp:98
 msgid ""
 "<b>Allow encryption with untrusted keys</b>: when you import a public key, "
 "it is usually marked as untrusted and you cannot use it unless you sign it "
@@ -3726,7 +3732,7 @@ msgstr ""
 "'dipercayai'. Menyemak kotak ini membolehkan anda menggunakan sebarang "
 "kunci, sekalipun ia tak ditandatangani."
 
-#: selectpublickeydialog.cpp:167
+#: selectpublickeydialog.cpp:104
 msgid ""
 "<b>Hide user ID</b>: Do not put the keyid into encrypted packets. This "
 "option hides the receiver of the message and is a countermeasure against "
@@ -3738,11 +3744,11 @@ msgstr ""
 "balas terhadap analisis trafik. Ia boleh memperlahankan proses penyahsulitan "
 "kerana semua kunci rahsia yang ada sudah dicuba."
 
-#: selectpublickeydialog.cpp:171
+#: selectpublickeydialog.cpp:108
 msgid "Symmetrical encryption"
 msgstr "Penyulitan simetri"
 
-#: selectpublickeydialog.cpp:172
+#: selectpublickeydialog.cpp:109
 msgid ""
 "<b>Symmetrical encryption</b>: encryption does not use keys. You just need "
 "to give a password to encrypt/decrypt the file"
@@ -3750,11 +3756,11 @@ msgstr ""
 "<b>Penyulitan simetri</b>: penyulitan tidak menggunakan kunci. Anda mesti "
 "berikan kata laluan untuk menyulit/menyahsulit fail"
 
-#: selectpublickeydialog.cpp:186
+#: selectpublickeydialog.cpp:123
 msgid "Custom option:"
 msgstr "Opsyen langganan:"
 
-#: selectpublickeydialog.cpp:190
+#: selectpublickeydialog.cpp:127
 msgid ""
 "<b>Custom option</b>: for experienced users only, allows you to enter a gpg "
 "command line option, like: '--armor'"
