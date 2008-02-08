@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-05 10:20+0100\n"
+"POT-Creation-Date: 2008-02-08 10:59+0100\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -20,7 +20,7 @@ msgid "&Show"
 msgstr "&Paparkan"
 
 #: koeventpopupmenu.cpp:54 kotodoview.cpp:501 actionmanager.cpp:517
-#: actionmanager.cpp:1590 actionmanager.cpp:1621 resourceview.cpp:545
+#: actionmanager.cpp:1590 actionmanager.cpp:1621 resourceview.cpp:544
 msgid "&Edit..."
 msgstr "&Edit..."
 
@@ -2537,15 +2537,15 @@ msgid "Sets how long before the event occurs the reminder will be triggered."
 msgstr ""
 "Mengeset berapa lama sebelum peristiwa berlaku satu-satu peringatan dicetus."
 
-#: koeditorgeneral.cpp:294 korgac/alarmdialog.cpp:131
+#: koeditorgeneral.cpp:294
 msgid "minute(s)"
 msgstr "minit"
 
-#: koeditorgeneral.cpp:295 korgac/alarmdialog.cpp:132
+#: koeditorgeneral.cpp:295
 msgid "hour(s)"
 msgstr "jam"
 
-#: koeditorgeneral.cpp:296 korgac/alarmdialog.cpp:133
+#: koeditorgeneral.cpp:296
 msgid "day(s)"
 msgstr "hari"
 
@@ -2907,14 +2907,14 @@ msgstr "&Tambah"
 msgid "&Cancel"
 msgstr "&Ubah"
 
-#: kolistview.cpp:211 kotodoview.cpp:129 korgac/alarmdialog.cpp:105
+#: kolistview.cpp:211 kotodoview.cpp:129
 #: printing/calprintdefaultplugins.cpp:1055
 #: printing/calprintdefaultplugins.cpp:1141
 #: plugins/timespanview/timespanwidget.cpp:53
 msgid "Summary"
 msgstr "Ringkasan"
 
-#: kolistview.cpp:212 korgac/alarmdialog.cpp:89
+#: kolistview.cpp:212
 #, fuzzy
 msgid "Reminder"
 msgstr "Pe&ringatan:"
@@ -3614,64 +3614,90 @@ msgstr ""
 msgid "This file is not a KOrganizer theme file."
 msgstr ""
 
-#: korgac/korgacmain.cpp:59 korgac/korgacmain.cpp:60
-#: korgac/alarmdockwindow.cpp:58
+#: korgac/korgacmain.cpp:60 korgac/korgacmain.cpp:61
 #, fuzzy
 msgid "KOrganizer Reminder Daemon"
 msgstr "Daemon Penggera KOrganizer"
 
-#: korgac/korgacmain.cpp:62
+#: korgac/korgacmain.cpp:63
 msgid "(c) 2003 Cornelius Schumacher"
 msgstr ""
 
-#: korgac/korgacmain.cpp:64 aboutdata.cpp:43
+#: korgac/korgacmain.cpp:65 aboutdata.cpp:43
 msgid "Cornelius Schumacher"
 msgstr ""
 
-#: korgac/korgacmain.cpp:64 korgac/korgacmain.cpp:66
-msgid "Maintainer"
-msgstr "Penyenggara"
+#: korgac/korgacmain.cpp:65 korgac/korgacmain.cpp:67 aboutdata.cpp:41
+#: aboutdata.cpp:43
+#, fuzzy
+#| msgid "Current Maintainer"
+msgid "Former Maintainer"
+msgstr "Penyenggara Semasa"
 
-#: korgac/korgacmain.cpp:66 aboutdata.cpp:41
+#: korgac/korgacmain.cpp:67 aboutdata.cpp:41
 msgid "Reinhold Kainhofer"
 msgstr ""
 
-#: korgac/tests/testalarmdlg.cpp:37
+#: korgac/korgacmain.cpp:69 aboutdata.cpp:45
+msgid "Allen Winter"
+msgstr ""
+
+#: korgac/korgacmain.cpp:69 aboutdata.cpp:45
+msgid "Janitorial Staff"
+msgstr ""
+
+#: korgac/tests/testalarmdlg.cpp:40
 msgid "TestKabc"
 msgstr "TestKabc"
+
+#: korgac/alarmdockwindow.cpp:58
+#, fuzzy
+msgctxt "@title:window"
+msgid "KOrganizer Reminder Daemon"
+msgstr "Daemon Penggera KOrganizer"
 
 #: korgac/alarmdockwindow.cpp:66
 msgctxt "@info"
 msgid "Cannot load system tray icon."
 msgstr ""
 
-#: korgac/alarmdockwindow.cpp:78
+#: korgac/alarmdockwindow.cpp:79
+#, fuzzy
+#| msgid "Suspend All"
+msgctxt "@action:inmenu"
 msgid "Suspend All"
 msgstr "Tangguhkan  Semua"
 
-#: korgac/alarmdockwindow.cpp:80
+#: korgac/alarmdockwindow.cpp:82
+#, fuzzy
+#| msgid "Dismiss All"
+msgctxt "@action:inmenu"
 msgid "Dismiss All"
 msgstr "Singkir Semua"
 
-#: korgac/alarmdockwindow.cpp:86
+#: korgac/alarmdockwindow.cpp:89
 #, fuzzy
+msgctxt "@action:inmenu"
 msgid "Reminders Enabled"
 msgstr "Dialog Peringatan"
 
-#: korgac/alarmdockwindow.cpp:88
+#: korgac/alarmdockwindow.cpp:92
 #, fuzzy
+msgctxt "@action:inmenu"
 msgid "Start Reminder Daemon at Login"
 msgstr "Mulakan Pelanggan Penggera semasa Log Masuk"
 
-#: korgac/alarmdockwindow.cpp:120
+#: korgac/alarmdockwindow.cpp:125
 #, fuzzy, kde-format
+msgctxt "@info:tooltip"
 msgid "There is 1 active reminder."
 msgid_plural "There are %1 active reminders."
 msgstr[0] "_n: Ada 1 peringatan yang aktif."
 msgstr[1] "Ada %1 peringatan yang aktif."
 
-#: korgac/alarmdockwindow.cpp:177
+#: korgac/alarmdockwindow.cpp:182
 #, fuzzy
+msgctxt "@info"
 msgid ""
 "Do you want to start the KOrganizer reminder daemon at login (note that you "
 "will not get reminders whilst the daemon is not running)?"
@@ -3679,64 +3705,116 @@ msgstr ""
 "Anda ingin memulakan penggera  KOrganizer semasa log masuk (ambil perhatian "
 "bahawa anda tidak akan diberi penggera semasa daemon sedang berjalan)?"
 
-#: korgac/alarmdockwindow.cpp:179
+#: korgac/alarmdockwindow.cpp:184
 #, fuzzy
+msgctxt "@title:window"
 msgid "Close KOrganizer Reminder Daemon"
 msgstr "Tutup Daemon Penggera KOrganizer"
 
-#: korgac/alarmdockwindow.cpp:180
+#: korgac/alarmdockwindow.cpp:185
 #, fuzzy
 msgctxt "@action:button start the reminder daemon"
 msgid "Start"
 msgstr "&Mula:"
 
-#: korgac/alarmdockwindow.cpp:180
+#: korgac/alarmdockwindow.cpp:186
 #, fuzzy
 msgctxt "@action:button do not start the reminder daemon"
 msgid "Do Not Start"
 msgstr "Sebelum Pemulaan"
 
-#: korgac/alarmdialog.cpp:92
+#: korgac/alarmdialog.cpp:91
+#, fuzzy
+msgctxt "@title:window"
+msgid "Reminder"
+msgstr "Pe&ringatan:"
+
+#: korgac/alarmdialog.cpp:94
 #, fuzzy
 #| msgid "Dismiss All"
+msgctxt "@action:button"
 msgid "Dismiss"
 msgstr "Singkir Semua"
 
-#: korgac/alarmdialog.cpp:93
+#: korgac/alarmdialog.cpp:95
 #, fuzzy
 #| msgid "Dismiss All"
+msgctxt "@action:button"
 msgid "Dismiss all"
 msgstr "Singkir Semua"
 
-#: korgac/alarmdialog.cpp:94
+#: korgac/alarmdialog.cpp:96
+#, fuzzy
+#| msgid "Edit..."
+msgctxt "@action:button"
 msgid "Edit..."
 msgstr "Edit..."
 
-#: korgac/alarmdialog.cpp:95
+#: korgac/alarmdialog.cpp:97
+#, fuzzy
+#| msgid "Suspend"
+msgctxt "@action:button"
 msgid "Suspend"
 msgstr "Tangguhkan"
 
-#: korgac/alarmdialog.cpp:99
+#: korgac/alarmdialog.cpp:102
 #, fuzzy
+msgctxt "@label"
 msgid "The following events triggered reminders:"
 msgstr "Peristiwa berikut mencetuskan penggera:"
 
-#: korgac/alarmdialog.cpp:105
+#: korgac/alarmdialog.cpp:108
+#, fuzzy
+#| msgid "Summary"
+msgctxt "@title:column reminder summary"
+msgid "Summary"
+msgstr "Ringkasan"
+
+#: korgac/alarmdialog.cpp:109
 #, fuzzy
 #| msgid "Due"
+msgctxt "@title:column reminder due date/time"
 msgid "Due"
 msgstr "Cukup Tempoh"
 
-#: korgac/alarmdialog.cpp:124
+#: korgac/alarmdialog.cpp:128
 #, fuzzy
+msgctxt "@label:spinbox"
 msgid "Suspend &duration:"
 msgstr "Tempoh penangguhan:"
 
-#: korgac/alarmdialog.cpp:134
+#: korgac/alarmdialog.cpp:135
+#, fuzzy
+#| msgid "minute(s)"
+msgctxt "@item:inlistbox suspend in terms of minutes"
+msgid "minute(s)"
+msgstr "minit"
+
+#: korgac/alarmdialog.cpp:136
+#, fuzzy
+#| msgid "hour(s)"
+msgctxt "@item:inlistbox suspend in terms of hours"
+msgid "hour(s)"
+msgstr "jam"
+
+#: korgac/alarmdialog.cpp:137
+#, fuzzy
+#| msgid "day(s)"
+msgctxt "@item:inlistbox suspend in terms of days"
+msgid "day(s)"
+msgstr "hari"
+
+#: korgac/alarmdialog.cpp:138
+#, fuzzy
+#| msgid "week(s)"
+msgctxt "@item:inlistbox suspend in terms of weeks"
 msgid "week(s)"
 msgstr "minggu"
 
-#: korgac/alarmdialog.cpp:252
+#: korgac/alarmdialog.cpp:259
+#, fuzzy
+#| msgid "Could not start KOrganizer."
+msgctxt "@info"
 msgid "Could not start KOrganizer."
 msgstr "Tidak dapat memulakan KOrganizer."
 
@@ -6919,7 +6997,7 @@ msgstr "Pilih &Penerima..."
 #. i18n: file publishdialog_base.ui line 77
 #. i18n: tag string
 #. i18n: file ./publishdialog_base.ui line 77
-#: rc.cpp:957 rc.cpp:2209 resourceview.cpp:546
+#: rc.cpp:957 rc.cpp:2209 resourceview.cpp:545
 #, fuzzy
 msgid "&Remove"
 msgstr "&Buang..."
@@ -8133,20 +8211,6 @@ msgid ""
 "(c) 2004-2005 Reinhold Kainhofer"
 msgstr ""
 
-#: aboutdata.cpp:41 aboutdata.cpp:43
-#, fuzzy
-#| msgid "Current Maintainer"
-msgid "Former Maintainer"
-msgstr "Penyenggara Semasa"
-
-#: aboutdata.cpp:45
-msgid "Allen Winter"
-msgstr ""
-
-#: aboutdata.cpp:45
-msgid "Janitorial Staff"
-msgstr ""
-
 #: aboutdata.cpp:47
 msgid "Preston Brown"
 msgstr ""
@@ -8291,7 +8355,7 @@ msgstr ""
 msgid "Fester Zigterman"
 msgstr ""
 
-#: resourceview.cpp:232
+#: resourceview.cpp:233
 msgid ""
 "<qt><p>Select on this list the active KOrganizer resources. Check the "
 "resource box to make it active. Use the context menu to add, remove or edit "
@@ -8303,92 +8367,92 @@ msgid ""
 "resource to use.</p></qt>"
 msgstr ""
 
-#: resourceview.cpp:245
+#: resourceview.cpp:246
 #, fuzzy
 #| msgid "Calendar"
 msgid "Calendars"
 msgstr "Kalendar"
 
-#: resourceview.cpp:289
+#: resourceview.cpp:291
 #, fuzzy
 #| msgid "%1 resource"
 msgid "Add Subresource"
 msgstr "Sumber %1 "
 
-#: resourceview.cpp:290
+#: resourceview.cpp:292
 #, fuzzy
 msgid "Please enter a name for the new subresource"
 msgstr "Masukkan nama untuk templat:"
 
-#: resourceview.cpp:296
+#: resourceview.cpp:301
 #, fuzzy, kde-format
 #| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
 msgid "<qt>Unable to create subresource <b>%1</b>.</qt>"
 msgstr "<qt>Tidak dapat mencipta sumber jenis <b>%1</b>.</qt>"
 
-#: resourceview.cpp:304
+#: resourceview.cpp:309
 msgid "Resource Configuration"
 msgstr "Konfigurasi Sumber"
 
-#: resourceview.cpp:305
+#: resourceview.cpp:310
 msgid "Please select type of the new resource:"
 msgstr "Pilih jenis sumber baru:"
 
-#: resourceview.cpp:317
+#: resourceview.cpp:322
 #, kde-format
 msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
 msgstr "<qt>Tidak dapat mencipta sumber jenis <b>%1</b>.</qt>"
 
-#: resourceview.cpp:321
+#: resourceview.cpp:326
 #, kde-format
 msgid "%1 resource"
 msgstr "Sumber %1 "
 
-#: resourceview.cpp:439
+#: resourceview.cpp:440
 #, kde-format
 msgid "<qt>Do you really want to delete the resource <b>%1</b>?</qt>"
 msgstr "<qt>Anda pasti ingin  menghapuskan sumber <b>%1</b>?</qt>"
 
-#: resourceview.cpp:450
+#: resourceview.cpp:449
 msgid "You cannot delete your standard resource."
 msgstr "Anda tidak boleh menghapuskan sumber piawai."
 
-#: resourceview.cpp:513 resourceview.cpp:553
+#: resourceview.cpp:512 resourceview.cpp:552
 msgid "&Add..."
 msgstr "&Tambah..."
 
-#: resourceview.cpp:526
+#: resourceview.cpp:525
 #, fuzzy
 #| msgid "Re&load"
 msgctxt "reload the resource"
 msgid "Re&load"
 msgstr "&Muat semula"
 
-#: resourceview.cpp:530
+#: resourceview.cpp:529
 #, fuzzy
 #| msgid "Travel"
 msgctxt "save the resource"
 msgid "&Save"
 msgstr "Perjalanan"
 
-#: resourceview.cpp:535
+#: resourceview.cpp:534
 msgid "Show &Info"
 msgstr "Paparkan &maklumat"
 
-#: resourceview.cpp:538
+#: resourceview.cpp:537
 #, fuzzy
 msgid "Resource Colors"
 msgstr "Warna Sumber"
 
-#: resourceview.cpp:539
+#: resourceview.cpp:538
 msgid "&Assign Color"
 msgstr "&Tetapkan Warna "
 
-#: resourceview.cpp:541
+#: resourceview.cpp:540
 msgid "&Disable Color"
 msgstr "&Nyahaktifkan Warna"
 
-#: resourceview.cpp:549
+#: resourceview.cpp:548
 msgid "Use as &Default Calendar"
 msgstr "Gunakan sebagai Kalendar &Piawai"
 
@@ -10234,6 +10298,9 @@ msgid "Unable to add the future items to the calendar. No change will be done."
 msgstr ""
 "Tidak dapat menambah item akan datang ke dalam kalendar. Tiada perubahan "
 "akan dibuat."
+
+#~ msgid "Maintainer"
+#~ msgstr "Penyenggara"
 
 #~ msgid "Agenda view uses resource colors"
 #~ msgstr "Paparan agenda menggunakan warna sumber"
