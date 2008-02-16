@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quanta\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-12 11:49+0100\n"
+"POT-Creation-Date: 2008-02-16 16:25+0100\n"
 "PO-Revision-Date: 2006-10-06 22:12+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -3007,7 +3007,7 @@ msgstr "Protokol"
 
 #. i18n: tag string
 #. i18n: file ./plugins/upload/uploaddialog.ui line 13
-#: rc.cpp:1373
+#: rc.cpp:1373 plugins/upload/kdevuploadplugin.cpp:198
 #, fuzzy
 msgid "Upload"
 msgstr "Muatnaik"
@@ -10683,7 +10683,7 @@ msgstr "Membuang semua rantai:"
 msgid "Open File"
 msgstr "Buka Fail"
 
-#: plugins/upload/uploaddialog.cpp:44
+#: plugins/upload/uploaddialog.cpp:45
 #, fuzzy
 msgid "&Upload"
 msgstr "Muatnaik"
@@ -10693,49 +10693,84 @@ msgstr "Muatnaik"
 msgid "Can't upload, no profile selected."
 msgstr "Tiada monitor dipilih"
 
-#: plugins/upload/uploadjob.cpp:36
+#: plugins/upload/uploadjob.cpp:37
 #, fuzzy
 msgid "Uploading files"
 msgstr "Fail Log"
 
-#: plugins/upload/uploadjob.cpp:37
-msgid "Prepearing..."
+#: plugins/upload/uploadjob.cpp:38
+msgid "Preparing..."
 msgstr ""
 
-#: plugins/upload/uploadjob.cpp:50
+#: plugins/upload/uploadjob.cpp:51
 msgid "Calculating size..."
 msgstr ""
 
-#: plugins/upload/uploadjob.cpp:110
+#: plugins/upload/uploadjob.cpp:80
+#, fuzzy
+msgid "Upload completed"
+msgstr "Tetapan muatnaik"
+
+#: plugins/upload/uploadjob.cpp:111
+#, kde-format
+msgid "Marked as uploaded for %1: %2"
+msgstr ""
+
+#: plugins/upload/uploadjob.cpp:120
+#, fuzzy, kde-format
+msgid "Uploading to %1: %2"
+msgstr "Muatnaik"
+
+#: plugins/upload/uploadjob.cpp:125
 #, fuzzy, kde-format
 msgid "Uploading %1..."
 msgstr "Muatnaik"
+
+#: plugins/upload/uploadjob.cpp:128
+#, fuzzy, kde-format
+msgid "Directory in %1 allready exists: %2"
+msgstr "Kumpulan dengan nama '%s' sudah wujud."
+
+#: plugins/upload/uploadjob.cpp:137
+#, fuzzy, kde-format
+msgid "Creating directory in %1: %2"
+msgstr "Direktori Default"
+
+#: plugins/upload/uploadjob.cpp:164
+#, fuzzy
+msgid "Upload canceled"
+msgstr "Paparan _Pepohon"
+
+#: plugins/upload/uploadjob.cpp:168
+#, fuzzy, kde-format
+msgid "Upload error: %1"
+msgstr "Terima Kasih"
 
 #: plugins/upload/profilesfiletree.cpp:44
 msgid "Please choose an upload profile."
 msgstr ""
 
-#: plugins/upload/kdevuploadplugin.cpp:73
+#: plugins/upload/kdevuploadplugin.cpp:78
 #, fuzzy
 msgid "Upload Profiles"
 msgstr "Menukar Profil"
 
-#: plugins/upload/kdevuploadplugin.cpp:85
+#: plugins/upload/kdevuploadplugin.cpp:90
 #, fuzzy
 msgid "&Upload Project"
 msgstr "Projek Glade"
 
-#: plugins/upload/kdevuploadplugin.cpp:87
+#: plugins/upload/kdevuploadplugin.cpp:92
 #, fuzzy
 msgid "Upload project"
 msgstr "Projek Glade"
 
-#: plugins/upload/kdevuploadplugin.cpp:135
+#: plugins/upload/kdevuploadplugin.cpp:140
 #, fuzzy
 msgid "Upload..."
 msgstr "Muatnaik"
 
-#: plugins/upload/kdevuploadplugin.cpp:139
+#: plugins/upload/kdevuploadplugin.cpp:144
 #, fuzzy
 msgid "Quick Upload"
 msgstr "Tidak dapat memuatnaik ke '%1'."
@@ -11788,10 +11823,6 @@ msgstr "Fail tidak dapat dibuka untuk ditulis: %s"
 #~ msgstr "Direktori Default"
 
 #, fuzzy
-#~ msgid "Main directory:"
-#~ msgstr "Direktori Default"
-
-#, fuzzy
 #~ msgid "Project Sources"
 #~ msgstr "Sumber edaran"
 
@@ -12294,10 +12325,6 @@ msgstr "Fail tidak dapat dibuka untuk ditulis: %s"
 #, fuzzy
 #~ msgid "Group name:"
 #~ msgstr "Nama kumpulan:"
-
-#, fuzzy
-#~ msgid "Group already exists"
-#~ msgstr "Kumpulan dengan nama '%s' sudah wujud."
 
 #, fuzzy
 #~ msgid "Add DTEP"
@@ -12863,10 +12890,6 @@ msgstr "Fail tidak dapat dibuka untuk ditulis: %s"
 #~ msgstr "Segerak %s@%s:%s dgn %s."
 
 #, fuzzy
-#~ msgid "Upload Tree"
-#~ msgstr "Paparan _Pepohon"
-
-#, fuzzy
 #~ msgid "Local Scripts"
 #~ msgstr "CDROM lokal"
 
@@ -13156,10 +13179,6 @@ msgstr "Fail tidak dapat dibuka untuk ditulis: %s"
 #, fuzzy
 #~ msgid "After Project Close"
 #~ msgstr "Gagal tutup dir: %s"
-
-#, fuzzy
-#~ msgid "Upload Requested"
-#~ msgstr "Tetapan muatnaik"
 
 #, fuzzy
 #~ msgid "Before Document Upload"
