@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-10 23:27+0200\n"
+"POT-Creation-Date: 2008-04-16 16:11+0200\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1407,7 +1407,7 @@ msgstr "Skrin"
 
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdgnewimage.ui line 246
-#: rc.cpp:245 ui/kis_dlg_preferences.cc:409
+#: rc.cpp:245 ui/dialogs/kis_dlg_preferences.cc:409
 msgid "Color"
 msgstr "Warna"
 
@@ -1605,7 +1605,8 @@ msgstr "&Saluran:"
 
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdgautogradient.ui line 25
-#: rc.cpp:335 ui/kis_gradient_chooser.cc:41 ui/kis_gradient_chooser.cc:46
+#: rc.cpp:335 ui/widgets/kis_gradient_chooser.cc:41
+#: ui/widgets/kis_gradient_chooser.cc:46
 #, fuzzy
 msgid "Custom Gradient"
 msgstr "Autokecerunan"
@@ -1716,8 +1717,8 @@ msgstr "Model warna kerja piawai:"
 #. i18n: file ./ui/forms/wdgcolorsettings.ui line 60
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdgdisplaysettings.ui line 13
-#: rc.cpp:398 rc.cpp:473 ui/kis_dlg_preferences.cc:400
-#: ui/kis_dlg_preferences.cc:401
+#: rc.cpp:398 rc.cpp:473 ui/dialogs/kis_dlg_preferences.cc:400
+#: ui/dialogs/kis_dlg_preferences.cc:401
 #, fuzzy
 msgid "Display"
 msgstr "Menggantikan "
@@ -2124,7 +2125,7 @@ msgstr ""
 #. i18n: file ./ui/forms/wdgcustombrush.ui line 98
 #. i18n: tag string
 #. i18n: file ./plugins/brushes/imagepipe/wdgcustombrush.ui line 98
-#: rc.cpp:578 rc.cpp:2731 ui/kis_brush_chooser.cc:44
+#: rc.cpp:578 rc.cpp:2731 ui/widgets/kis_brush_chooser.cc:44
 msgid "Use color as mask"
 msgstr "Guna warna sebagai topeng"
 
@@ -3651,7 +3652,7 @@ msgstr "Ciri Lapisan"
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/compose/wdg_compose.ui line 22
-#: rc.cpp:1393 ui/kis_dlg_adj_layer_props.cc:75
+#: rc.cpp:1393 ui/dialogs/kis_dlg_adj_layer_props.cc:75
 #, fuzzy
 msgid "Layer name:"
 msgstr "Jenis lapisan:"
@@ -5124,7 +5125,7 @@ msgstr "Lapisan Teralih"
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/scripting/scripts/pilimport.ui line 134
-#: rc.cpp:2227 ui/kis_dlg_new_layer.cc:51
+#: rc.cpp:2227 ui/dialogs/kis_dlg_new_layer.cc:51
 msgid "New Layer"
 msgstr "Lapisan Baru"
 
@@ -5985,20 +5986,6 @@ msgstr "Pilih"
 msgid "&Rotate"
 msgstr "Putar"
 
-#: ui/kis_dlg_image_properties.cc:52
-msgid "Image Properties"
-msgstr "Ciri Imej"
-
-#: ui/kis_gradient_chooser.cc:55
-#, fuzzy
-msgid "Custom Gradient..."
-msgstr "Autokecerunan"
-
-#: ui/kis_gradient_chooser.cc:90
-#, fuzzy
-msgid "Choose Gradient to Add"
-msgstr "Pelet"
-
 #: ui/kis_image_manager.cc:57
 msgid "I&nsert Image as Layer..."
 msgstr "&Selitkan Imej sebagai Lapisan..."
@@ -6012,38 +5999,65 @@ msgstr "Ciri Lapisan"
 msgid "Import Image"
 msgstr "Import Imej"
 
-#: ui/kis_dlg_preferences.cc:148
+#: ui/dialogs/kis_dlg_image_properties.cc:52
+msgid "Image Properties"
+msgstr "Ciri Imej"
+
+#: ui/dialogs/kis_dlg_preferences.cc:148
 #, fuzzy
 msgid "Monitor profile: "
 msgstr "Tiada profil"
 
-#: ui/kis_dlg_preferences.cc:152
+#: ui/dialogs/kis_dlg_preferences.cc:152
 #, fuzzy
 msgid "&Monitor profile: "
 msgstr "Tiada profil"
 
-#: ui/kis_dlg_preferences.cc:387
+#: ui/dialogs/kis_dlg_preferences.cc:387
 msgid "Preferences"
 msgstr "Keutamaan"
 
-#: ui/kis_dlg_preferences.cc:393 ui/kis_dlg_preferences.cc:394
+#: ui/dialogs/kis_dlg_preferences.cc:393 ui/dialogs/kis_dlg_preferences.cc:394
 msgid "General"
 msgstr "Am"
 
-#: ui/kis_dlg_preferences.cc:408
+#: ui/dialogs/kis_dlg_preferences.cc:408
 #, fuzzy
 msgid "Color Management"
 msgstr "Pengurus Warna"
 
-#: ui/kis_dlg_preferences.cc:415 ui/kis_dlg_preferences.cc:416
+#: ui/dialogs/kis_dlg_preferences.cc:415 ui/dialogs/kis_dlg_preferences.cc:416
 #, fuzzy
 msgid "Performance"
 msgstr "Ujian Prestasi"
 
-#: ui/kis_dlg_preferences.cc:421 ui/kis_dlg_preferences.cc:422
+#: ui/dialogs/kis_dlg_preferences.cc:421 ui/dialogs/kis_dlg_preferences.cc:422
 #, fuzzy
 msgid "Grid"
 msgstr "Grid Biru"
+
+#: ui/dialogs/kis_dlg_layer_properties.cc:58
+msgid "Layer Properties"
+msgstr "Ciri Lapisan"
+
+#: ui/dialogs/kis_dlg_apply_profile.cc:45
+msgid "Apply Image Profile to Clipboard Data"
+msgstr "Guna Profil Imej pada Data Klipbod"
+
+#: ui/dialogs/kis_dlg_adjustment_layer.cc:62
+#, fuzzy
+msgid "Name:"
+msgstr "&Nama:"
+
+#: ui/dialogs/kis_dlg_adjustment_layer.cc:77
+#, fuzzy
+msgid "Configuration"
+msgstr "Konfigurasi Clmg"
+
+#: ui/dialogs/kis_dlg_adjustment_layer.cc:83
+#: ui/dialogs/kis_dlg_adj_layer_props.cc:93
+msgid "No configuration options are available for this filter"
+msgstr ""
 
 #: ui/kis_paintop_box.cc:68
 #, fuzzy
@@ -6059,29 +6073,10 @@ msgstr ""
 msgid "Edit brush settings"
 msgstr "Ciri Lapisan"
 
-#: ui/kis_previewwidget.cc:113 ui/kis_previewwidget.cc:165
-#, fuzzy
-msgid "Preview: "
-msgstr "Prapapar"
-
-#: ui/kis_previewwidget.cc:168
-#, fuzzy
-msgid "Original: "
-msgstr "Asal:"
-
-#: ui/kis_previewwidget.cc:176
-msgid "Preview (needs update)"
-msgstr ""
-
 #: ui/kis_bookmarked_configurations_editor.cc:63
 #, fuzzy, kde-format
 msgid "New configuration %1"
 msgstr "Konfigurasi Clmg"
-
-#: ui/kis_pattern_chooser.cc:71
-#, fuzzy
-msgid "Choose Pattern to Add"
-msgstr "Pelet"
 
 #: ui/kis_mask_manager.cc:84 ui/kis_mask_manager.cc:197
 #, fuzzy
@@ -6204,35 +6199,9 @@ msgstr ""
 msgid "Apply Filter Again: %1"
 msgstr ""
 
-#: ui/kis_dlg_layer_properties.cc:58
-msgid "Layer Properties"
-msgstr "Ciri Lapisan"
-
-#: ui/kis_gradient_slider_widget.cc:48
-msgid "Split Segment"
-msgstr "Cerai Segmen"
-
-#: ui/kis_gradient_slider_widget.cc:49
-msgid "Duplicate Segment"
-msgstr "Duplikasikan Segmen"
-
-#: ui/kis_gradient_slider_widget.cc:50
-msgid "Mirror Segment"
-msgstr "Segmen Cermin"
-
-#: ui/kis_gradient_slider_widget.cc:52
-msgid "Remove Segment"
-msgstr "Alih Keluar Segmen"
-
 #: ui/kis_birdeye_box.cc:214
 msgid "Exposure:"
 msgstr ""
-
-#: ui/kis_filter_dialog.cc:144
-#: plugins/viewplugins/tonemapping/kis_tonemapping_dialog.cc:121
-#, fuzzy
-msgid "No configuration option."
-msgstr "Konfigurasi Clmg"
 
 #: ui/kis_layer_manager.cc:138
 #, fuzzy
@@ -6398,34 +6367,6 @@ msgstr "Imej Rata"
 msgid "Export Layer"
 msgstr "Eksport Lapisan"
 
-#: ui/kis_dlg_apply_profile.cc:45
-msgid "Apply Image Profile to Clipboard Data"
-msgstr "Guna Profil Imej pada Data Klipbod"
-
-#: ui/kis_brush_chooser.cc:38
-#, fuzzy
-msgid "Spacing: "
-msgstr "Jarak:"
-
-#: ui/kis_brush_chooser.cc:114
-#, fuzzy
-msgid "Choose Brush to Add"
-msgstr "Berus Teks"
-
-#: ui/kis_dlg_adjustment_layer.cc:62
-#, fuzzy
-msgid "Name:"
-msgstr "&Nama:"
-
-#: ui/kis_dlg_adjustment_layer.cc:77
-#, fuzzy
-msgid "Configuration"
-msgstr "Konfigurasi Clmg"
-
-#: ui/kis_dlg_adjustment_layer.cc:83 ui/kis_dlg_adj_layer_props.cc:93
-msgid "No configuration options are available for this filter"
-msgstr ""
-
 #: ui/kis_custom_palette.cc:104 ui/kis_custom_palette.cc:142
 #: plugins/tools/defaulttools/kis_tool_colorpicker.cc:181
 #, kde-format
@@ -6506,6 +6447,65 @@ msgid ""
 "The rulers show the horizontal and vertical positions of the mouse on the "
 "image and can be used to position your mouse at the right place on the "
 "canvas. <p>Uncheck this to hide the rulers."
+msgstr ""
+
+#: ui/widgets/kis_gradient_chooser.cc:55
+#, fuzzy
+msgid "Custom Gradient..."
+msgstr "Autokecerunan"
+
+#: ui/widgets/kis_gradient_chooser.cc:90
+#, fuzzy
+msgid "Choose Gradient to Add"
+msgstr "Pelet"
+
+#: ui/widgets/kis_previewwidget.cc:113 ui/widgets/kis_previewwidget.cc:165
+#, fuzzy
+msgid "Preview: "
+msgstr "Prapapar"
+
+#: ui/widgets/kis_previewwidget.cc:168
+#, fuzzy
+msgid "Original: "
+msgstr "Asal:"
+
+#: ui/widgets/kis_previewwidget.cc:176
+msgid "Preview (needs update)"
+msgstr ""
+
+#: ui/widgets/kis_pattern_chooser.cc:71
+#, fuzzy
+msgid "Choose Pattern to Add"
+msgstr "Pelet"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:48
+msgid "Split Segment"
+msgstr "Cerai Segmen"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:49
+msgid "Duplicate Segment"
+msgstr "Duplikasikan Segmen"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:50
+msgid "Mirror Segment"
+msgstr "Segmen Cermin"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:52
+msgid "Remove Segment"
+msgstr "Alih Keluar Segmen"
+
+#: ui/widgets/kis_brush_chooser.cc:38
+#, fuzzy
+msgid "Spacing: "
+msgstr "Jarak:"
+
+#: ui/widgets/kis_brush_chooser.cc:114
+#, fuzzy
+msgid "Choose Brush to Add"
+msgstr "Berus Teks"
+
+#: ui/widgets/kis_meta_data_merge_strategy_chooser_widget.cc:61
+msgid "Choose meta data merge strategy"
 msgstr ""
 
 #: ui/kis_selection_manager.cc:144
@@ -6608,10 +6608,6 @@ msgstr "Menajamkan"
 msgid "Border"
 msgstr "Sempadan"
 
-#: ui/kis_meta_data_merge_strategy_chooser_widget.cc:61
-msgid "Choose meta data merge strategy"
-msgstr ""
-
 #: ui/kis_tool_paint.cc:131
 #, fuzzy
 msgid "Mode: "
@@ -6637,7 +6633,6 @@ msgid "Opacity"
 msgstr "Kelegapan:"
 
 #: image/kis_layer.cc:99
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:209
 #, kde-format
 msgid "%1%"
 msgstr ""
@@ -7763,6 +7758,11 @@ msgstr "Ricik Imej"
 #: plugins/viewplugins/tonemapping/tonemapping.cc:53
 msgid "Tonemapping"
 msgstr ""
+
+#: plugins/viewplugins/tonemapping/kis_tonemapping_dialog.cc:121
+#, fuzzy
+msgid "No configuration option."
+msgstr "Konfigurasi Clmg"
 
 #: plugins/viewplugins/tonemapping/operators/icam/kis_icam_operator.cc:67
 msgid "Icam"
