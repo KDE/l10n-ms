@@ -1,14 +1,14 @@
 # krunner Bahasa Melayu (Malay) (ms)
-# Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2008 K Desktop Environment
+# This file is distributed under the same license as the krunner package.
 #
-# Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2007.
+# Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2007, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2008-03-18 08:34+0100\n"
-"PO-Revision-Date: 2007-12-24 19:05+0800\n"
+"PO-Revision-Date: 2008-06-17 23:21+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -36,8 +36,7 @@ msgstr ""
 #: lock/autologout.cc:86
 #, kde-format
 msgid "<qt><nobr>You will be automatically logged out in 1 second</nobr></qt>"
-msgid_plural ""
-"<qt><nobr>You will be automatically logged out in %1 seconds</nobr></qt>"
+msgid_plural "<qt><nobr>You will be automatically logged out in %1 seconds</nobr></qt>"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -142,7 +141,7 @@ msgstr "Lokasi"
 #: lock/lockdlg.cc:606
 msgctxt "session"
 msgid "&Activate"
-msgstr ""
+msgstr "&Aktifkan"
 
 #: lock/lockdlg.cc:615
 msgid "Start &New Session"
@@ -199,7 +198,7 @@ msgstr ""
 
 #: main.cpp:41
 msgid "(c) 2006, Aaron Seigo"
-msgstr ""
+msgstr "(c) 2006, Aaron Seigo"
 
 #: main.cpp:42
 msgid "Aaron J. Seigo"
@@ -347,6 +346,7 @@ msgstr "sharuzzaman@myrealbox.com"
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 90
 #: rc.cpp:77
+#, fuzzy
 msgid ""
 "<qt>Select whether realtime scheduling should be enabled for the "
 "application. The scheduler governs which process will run and which will "
@@ -361,54 +361,75 @@ msgid ""
 "</ul>\n"
 "</qt>"
 msgstr ""
+"<qt>Pilih sama ada penjadualan masa sebenar patut diaktifkan untuk aplikasi. "
+"Penjadual mengawal proses mana akan berjalan dan yang mana perlu tunggu. Dua "
+"penjadual boleh didapatkan:\n"
+"<ul>\n"
+"<li><em>Normal:</em> Ini adalah penjadual standard dan berkongsi masa. Ia "
+"akan membahagikan dengan adil masa pemprosesan yang boleh didapatkan antara "
+"semua proses.</li>\n"
+"<li><em>Masa Sebenar:</em>Penjadual ini akan menjalankan aplikasi anda tanpa "
+"sampukan sehingga ia meninggalkan pemproses. Ini boleh jadi berbahaya. "
+"Aplikasi yang tidak meninggalkan pemproses mungkin menjadikan sistem "
+"tergantung. Anda perlu kata laluan root untuk menggunakan penjadual.</li>\n"
+"</ul>\n"
+"</qt>"
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 93
 #: rc.cpp:85
 msgid "Run with realtime &scheduling"
-msgstr ""
+msgstr "Jalankan dengan penjadualan ma&sa nyata"
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 111
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 242
 #: rc.cpp:88 rc.cpp:121
+#, fuzzy
 msgid "Enter the user you want to run the application as here."
-msgstr ""
+msgstr "Masukkan nama pengguna yang anda ingin laksanakan aplikasi untuknya."
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 114
 #: rc.cpp:91
+#, fuzzy
 msgid "User&name:"
-msgstr ""
+msgstr "&Nama Pengguna:"
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 135
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 156
 #: rc.cpp:94 rc.cpp:97
+#, fuzzy
 msgid "Enter the password here for the user you specified above."
-msgstr ""
+msgstr "Masukkan kata laluan untuk pengguna yang anda telah tentukan."
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 159
 #: rc.cpp:100
+#, fuzzy
 msgid "Pass&word:"
-msgstr ""
+msgstr "&Kata laluan:"
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 169
 #: rc.cpp:103
+#, fuzzy
 msgid ""
 "Check this option if the application you want to run is a text mode "
 "application. The application will then be run in a terminal emulator window."
 msgstr ""
+"Pilih pilihan ini jika anda maukan aplikasi dilaksanakan di dalam mod teks. "
+"Aplikasi akan dijalankan di dalam tetingkap emulator terminal."
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 172
 #: rc.cpp:106
+#, fuzzy
 msgid "Run in &terminal window"
-msgstr ""
+msgstr "Laksana dalam &terminal"
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 190
@@ -419,61 +440,80 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 297
 #: rc.cpp:109 rc.cpp:124 rc.cpp:130 rc.cpp:136
+#, fuzzy
 msgid ""
 "The priority that the command will be run with can be set here. From left to "
 "right, it goes from low to high. The center position is the default value. "
 "For priorities higher than the default, you will need to provide the root "
 "password."
 msgstr ""
+"Keutaman boleh ditetapkan di sini. Bermula dari kiri ke kanan, dan "
+"dipadankan dengan dari rendah ke tinggi. Posisi tengah adalah untuk nilai "
+"default. Untuk keutaaman lebih tinggi daripada nilai default, anda "
+"memerlukan kata laluan root."
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 193
 #: rc.cpp:112
+#, fuzzy
 msgid "&Priority:"
-msgstr ""
+msgstr "&Keutamaan:"
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 221
 #: rc.cpp:115
+#, fuzzy
 msgid ""
 "Check this option if you want to run the application with a different "
 "priority. A higher priority tells the operating system to give more "
 "processing time to your application."
 msgstr ""
+"Pilih pilihan ini jika anda ingin laksanakan aplikasi dengan keutamaan "
+"berlainan. Keutamaan yang lebih tinggi memberitahu sistem operasi untuk "
+"memberikan lebih masa pemprosesan untuk aplikasi anda."
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 224
 #: rc.cpp:118
+#, fuzzy
 msgid "Run with a &different priority"
-msgstr ""
+msgstr "&Laksanakan dengan keutamaan berlainan"
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 263
 #: rc.cpp:127
+#, fuzzy
 msgid "Low"
-msgstr ""
+msgstr "Rendah"
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 276
 #: rc.cpp:133
+#, fuzzy
 msgid "High"
-msgstr ""
+msgstr "Tinggi"
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 312
 #: rc.cpp:139
+#, fuzzy
 msgid ""
 "Check this option if you want to run the application with a different user "
 "id. Every process has a user id associated with it. This id code determines "
 "file access and other permissions. The password of the user is required to "
 "do this."
 msgstr ""
+"Pilih pilhan ini jika anda ingin laksanakan aplikasi dengan id pengguna "
+"berlainan. Setiap proses mempunyai id pengguna yang dikaitkan. Kod id "
+"menentukan akses fail dan keizinan lain. Kata laluan pengguna diperlukan "
+"untuk perkara tersebut."
 
 #. i18n: tag string
 #. i18n: file ./runners/shell/shellOptions.ui line 315
 #: rc.cpp:142
+#, fuzzy
 msgid "Run as a different &user"
-msgstr ""
+msgstr "Laksanakan sebagai pengg&una lain"
 
 #: krunnerapp.cpp:139 krunnerapp.cpp:140
 msgid "Show Taskmanager"
@@ -522,3 +562,4 @@ msgstr ""
 "Pengurus sesi tidak dapat dihubungi. Anda boleh cuba paksa tutup dengan "
 "menekan Ctrl+Alt+Backspace; bagaimanapun, ambil perhatian bahawa sesi semasa "
 "anda tidak akan disimpan dengan tutup paksa."
+
