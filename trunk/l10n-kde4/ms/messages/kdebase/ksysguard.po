@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-03 08:18+0200\n"
+"POT-Creation-Date: 2008-08-04 08:27+0200\n"
 "PO-Revision-Date: 2006-05-07 16:32+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -15,12 +15,12 @@ msgstr ""
 "X-Generator: KBabel 1.3.1\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: WorkSheet.cc:93 KSysGuardApplet.cc:306
+#: WorkSheet.cc:93
 #, kde-format
 msgid "Cannot open the file %1."
 msgstr "Tidak dapat membuka fail %1."
 
-#: WorkSheet.cc:101 KSysGuardApplet.cc:315
+#: WorkSheet.cc:101
 #, kde-format
 msgid "The file %1 does not contain valid XML."
 msgstr "Fail %1 tidak mengandungi XML yang sah."
@@ -39,7 +39,7 @@ msgstr ""
 msgid "The file %1 has an invalid worksheet size."
 msgstr "Fail %1 mempunyai saiz helaian kerja yang tidak sah."
 
-#: WorkSheet.cc:234 KSysGuardApplet.cc:459
+#: WorkSheet.cc:234
 #, kde-format
 msgid "Cannot save file %1"
 msgstr "Tidak dapat menyimpan fail %1"
@@ -48,7 +48,7 @@ msgstr "Tidak dapat menyimpan fail %1"
 msgid "The clipboard does not contain a valid display description."
 msgstr "Papan klip tidak mengandungi keterangan paparan yang sah."
 
-#: WorkSheet.cc:331 KSysGuardApplet.cc:200
+#: WorkSheet.cc:331
 msgid "Select Display Type"
 msgstr "Pilih Jenis Paparan"
 
@@ -70,19 +70,18 @@ msgstr "Graf &Bar"
 msgid "Log to a &file"
 msgstr "Log Fail"
 
-#: WorkSheet.cc:505 KSysGuardApplet.cc:241
+#: WorkSheet.cc:505
 #, fuzzy
 msgid "Do you really want to delete the display?"
 msgstr "Anda benar-benar ingin menyimpan semula lembaran kerja piawai?"
 
-#: WorkSheet.cc:506 KSysGuardApplet.cc:241
+#: WorkSheet.cc:506
 #, fuzzy
 msgid "Delete Display"
 msgstr "Pilih Jenis Paparan"
 
 #: WorkSheet.cc:525 WorkSheet.cc:528 WorkSheet.cc:530 WorkSheet.cc:532
-#: WorkSheet.cc:534 WorkSheet.cc:536 WorkSheet.cc:540 KSysGuardApplet.cc:377
-#: KSysGuardApplet.cc:379 KSysGuardApplet.cc:381
+#: WorkSheet.cc:534 WorkSheet.cc:536 WorkSheet.cc:540
 msgid "Dummy"
 msgstr ""
 
@@ -640,51 +639,60 @@ msgstr ""
 msgid "e.g. ssh -l root remote.host.org ksysguardd"
 msgstr "e.g. ssh -l root remote.host.org ksysguardd"
 
-#: Workspace.cc:46
+#: Workspace.cc:47
+#, fuzzy
+#| msgid ""
+#| "This is your work space. It holds your worksheets. You need to create a "
+#| "new worksheet (Menu File->New) before you can drag sensors here."
 msgid ""
-"This is your work space. It holds your worksheets. You need to create a new "
-"worksheet (Menu File->New) before you can drag sensors here."
+"This is your work space. It holds your tabs. You need to create a new tab "
+"(Menu File->New) before you can drag sensors here."
 msgstr ""
 "Ini ialah ruang kerja anda. Ia memegang lembaran kerja anda. Anda perlu "
 "cipta lembaran kerja baru (Fail Menu->Baru) sebelum anda boleh seret "
 "penderia di sini."
 
-#: Workspace.cc:106
+#: Workspace.cc:107
 #, kde-format
 msgid "Sheet %1"
 msgstr "Lembaran %1"
 
-#: Workspace.cc:161
-#, kde-format
+#: Workspace.cc:162
+#, fuzzy, kde-format
+#| msgid ""
+#| "The worksheet '%1' contains unsaved data.\n"
+#| "Do you want to save the worksheet?"
 msgid ""
-"The worksheet '%1' contains unsaved data.\n"
-"Do you want to save the worksheet?"
+"The tab '%1' contains unsaved data.\n"
+"Do you want to save the tab?"
 msgstr ""
 "Lembaran kerja '%1' mengandungi data yang tak disimpan.\n"
 "Anda ingin simpan lembaran kerja??"
 
-#: Workspace.cc:176
+#: Workspace.cc:177
 #, fuzzy
 #| msgid "*.sgrd|Sensor Files"
 msgid "*.sgrd|Sensor Files (*.sgrd)"
 msgstr "*.sgrd|Sensor Files"
 
-#: Workspace.cc:176
-#, fuzzy
-msgid "Select Worksheet to Open"
-msgstr "Pilih Lembaran Kerja yang Hendak Dimuat"
+#: Workspace.cc:177
+msgid "Select Tab file to Import"
+msgstr ""
 
-#: Workspace.cc:204 Workspace.cc:225
-msgid "You do not have a worksheet that could be saved."
+#: Workspace.cc:205 Workspace.cc:226
+#, fuzzy
+#| msgid "You do not have a worksheet that could be saved."
+msgid "You do not have a tab that could be saved."
 msgstr "Anda tidak mempunyai lembaran kerja yang boleh disimpan."
 
-#: Workspace.cc:232
-#, fuzzy
-msgid "Export Work Sheet"
-msgstr "&Eksport Helaiankerja..."
+#: Workspace.cc:233
+msgid "Export Tab"
+msgstr ""
 
-#: Workspace.cc:250
-msgid "There are no worksheets that could be deleted."
+#: Workspace.cc:251
+#, fuzzy
+#| msgid "There are no worksheets that could be deleted."
+msgid "There are no tabs that could be deleted."
 msgstr "Tiada lembaran kerja yang boleh dihapuskan."
 
 #: KSGAppletSettings.cc:34
@@ -1365,8 +1373,9 @@ msgid "Network History"
 msgstr "Rangkaian"
 
 #: WorkSheetSettings.cc:40
-msgid "Worksheet Properties"
-msgstr "Ciri Lembaran Kerja"
+#, fuzzy
+msgid "Tab Properties"
+msgstr "&Ciri"
 
 #: WorkSheetSettings.cc:62
 #, fuzzy
@@ -1393,39 +1402,6 @@ msgstr "Masukkan bilangan lajur yang lembaran patut ada."
 msgid "Enter the title of the worksheet here."
 msgstr "Masukkan tajuk lembaran kerja di sini."
 
-#: KSysGuardApplet.cc:201
-msgid "&Signal Plotter"
-msgstr "Pemplot I&syarat"
-
-#: KSysGuardApplet.cc:202
-msgid "&Multimeter"
-msgstr "&Multimeter"
-
-#: KSysGuardApplet.cc:203
-msgid "&Dancing Bars"
-msgstr "Bar &Menari"
-
-#: KSysGuardApplet.cc:223 KSysGuardApplet.cc:383
-msgid ""
-"The KSysGuard applet does not support displaying of this type of sensor. "
-"Please choose another sensor."
-msgstr ""
-"Aplet KSysGuard tidak menyokong pemaparan penderi jenis ini. Pilih penderia "
-"lain."
-
-#: KSysGuardApplet.cc:322
-#, kde-format
-msgid ""
-"The file %1 does not contain a valid applet definition, which must have a "
-"document type 'KSysGuardApplet'."
-msgstr ""
-"Fail %1 tidak mengandungi takrif aplet yang sah, yang mesti mempunyai "
-"dokumen jenis 'KSysGuardApplet'."
-
-#: KSysGuardApplet.cc:478
-msgid "Drag sensors from the KDE System Guard into this cell."
-msgstr "Seret penderia dari Pengawal Sistem KDE ke dalam sel ini."
-
 #: SensorBrowser.cc:116
 msgid "Sensor Browser"
 msgstr "Pelayar Penderia"
@@ -1448,126 +1424,126 @@ msgstr ""
 "oleh penderia. Sesetengah paparan penderia boleh memaparkan berbilang "
 "penderia. Hanya seret penderia lain ke paparan untuk menambah lagi penderia."
 
-#: ksysguard.cc:74
+#: ksysguard.cc:73
 #, fuzzy
 msgid "KDE System Monitor"
 msgstr "KDE System Guard"
 
-#: ksysguard.cc:151 ksysguard.cc:542
+#: ksysguard.cc:150 ksysguard.cc:541
 #, fuzzy
 msgid "System Monitor"
 msgstr "Beban Sistem"
 
+#: ksysguard.cc:151
+msgid "&New Tab..."
+msgstr ""
+
 #: ksysguard.cc:152
-#, fuzzy
-msgid "&New Worksheet..."
-msgstr "Shell Baru"
+msgid "Import Tab Fr&om File..."
+msgstr ""
 
 #: ksysguard.cc:153
-#, fuzzy
-msgid "Open Worksheet..."
-msgstr "Shell Baru"
+msgid "Save Tab &As..."
+msgstr ""
 
 #: ksysguard.cc:154
-msgid "&Export Worksheet..."
-msgstr "&Eksport Helaiankerja..."
+msgid "&Close Tab"
+msgstr ""
 
 #: ksysguard.cc:155
-msgid "&Remove Worksheet"
-msgstr "&Buang Helaiankerja"
+msgid "Monitor &Remote Machine..."
+msgstr ""
 
 #: ksysguard.cc:156
-msgid "Monitor remote machine..."
-msgstr ""
+#, fuzzy
+msgid "&Download New Tabs..."
+msgstr "Shell Baru"
 
 #: ksysguard.cc:157
 #, fuzzy
-msgid "Download new worksheets..."
-msgstr "Shell Baru"
+#| msgid "&Properties"
+msgid "Tab &Properties"
+msgstr "&Ciri"
 
-#: ksysguard.cc:158
-msgid "&Worksheet Properties"
-msgstr "Ciri &Lembaran Kerja"
-
-#: ksysguard.cc:450
+#: ksysguard.cc:449
 #, fuzzy, kde-format
 msgid " %1 processes "
 msgstr "%1 Proses"
 
-#: ksysguard.cc:456
+#: ksysguard.cc:455
 #, fuzzy, kde-format
 msgid " CPU: %1% "
 msgstr "CPU%1"
 
-#: ksysguard.cc:470
+#: ksysguard.cc:469
 #, kde-format
 msgid " Memory: %1 / %2 "
 msgstr ""
 
-#: ksysguard.cc:497
+#: ksysguard.cc:496
 #, fuzzy
 msgid " No swap space available "
 msgstr "Tiada ruang tukar ganti"
 
-#: ksysguard.cc:499
+#: ksysguard.cc:498
 #, kde-format
 msgid " Swap: %1 / %2 "
 msgstr ""
 
-#: ksysguard.cc:544
+#: ksysguard.cc:543
 #, fuzzy
 msgid "(c) 1996-2008 The KDE System Monitor Developers"
 msgstr "(c) 1996-2002 Pemaju KSysGuard"
 
-#: ksysguard.cc:545
+#: ksysguard.cc:544
 msgid "John Tapsell"
 msgstr ""
 
-#: ksysguard.cc:545
+#: ksysguard.cc:544
 msgid "Current Maintainer"
 msgstr ""
 
-#: ksysguard.cc:546
+#: ksysguard.cc:545
 msgid "Chris Schlaeger"
 msgstr ""
 
-#: ksysguard.cc:546
+#: ksysguard.cc:545
 msgid "Previous Maintainer"
 msgstr ""
 
-#: ksysguard.cc:547
+#: ksysguard.cc:546
 msgid "Greg Martyn"
 msgstr ""
 
-#: ksysguard.cc:548
+#: ksysguard.cc:547
 msgid "Tobias Koenig"
 msgstr ""
 
-#: ksysguard.cc:549
+#: ksysguard.cc:548
 msgid "Nicolas Leclercq"
 msgstr ""
 
-#: ksysguard.cc:550
+#: ksysguard.cc:549
 msgid "Alex Sanda"
 msgstr ""
 
-#: ksysguard.cc:551
+#: ksysguard.cc:550
 msgid "Bernd Johannes Wuebben"
 msgstr ""
 
-#: ksysguard.cc:552
+#: ksysguard.cc:551
 msgid "Ralf Mueller"
 msgstr ""
 
-#: ksysguard.cc:553
+#: ksysguard.cc:552
 msgid "Hamish Rodda"
 msgstr ""
 
-#: ksysguard.cc:554
+#: ksysguard.cc:553
 msgid "Torsten Kasch"
 msgstr ""
 
-#: ksysguard.cc:554
+#: ksysguard.cc:553
 msgid ""
 "Solaris Support\n"
 "Parts derived (by permission) from the sunos5\n"
@@ -1577,9 +1553,63 @@ msgstr ""
 "Bahagian diperoleh (dengan keizinan) dari sunos5\n"
 "modul kemudahan \"atas\" William LeFebvre."
 
-#: ksysguard.cc:563
+#: ksysguard.cc:562
 msgid "Optional worksheet files to load"
 msgstr "Fail lembaran kerja opsyenal yang hendak dimuatkan"
+
+#, fuzzy
+#~ msgid "Select Worksheet to Open"
+#~ msgstr "Pilih Lembaran Kerja yang Hendak Dimuat"
+
+#, fuzzy
+#~ msgid "Export Work Sheet"
+#~ msgstr "&Eksport Helaiankerja..."
+
+#~ msgid "Worksheet Properties"
+#~ msgstr "Ciri Lembaran Kerja"
+
+#~ msgid "&Signal Plotter"
+#~ msgstr "Pemplot I&syarat"
+
+#~ msgid "&Multimeter"
+#~ msgstr "&Multimeter"
+
+#~ msgid "&Dancing Bars"
+#~ msgstr "Bar &Menari"
+
+#~ msgid ""
+#~ "The KSysGuard applet does not support displaying of this type of sensor. "
+#~ "Please choose another sensor."
+#~ msgstr ""
+#~ "Aplet KSysGuard tidak menyokong pemaparan penderi jenis ini. Pilih "
+#~ "penderia lain."
+
+#~ msgid ""
+#~ "The file %1 does not contain a valid applet definition, which must have a "
+#~ "document type 'KSysGuardApplet'."
+#~ msgstr ""
+#~ "Fail %1 tidak mengandungi takrif aplet yang sah, yang mesti mempunyai "
+#~ "dokumen jenis 'KSysGuardApplet'."
+
+#~ msgid "Drag sensors from the KDE System Guard into this cell."
+#~ msgstr "Seret penderia dari Pengawal Sistem KDE ke dalam sel ini."
+
+#, fuzzy
+#~ msgid "&New Worksheet..."
+#~ msgstr "Shell Baru"
+
+#, fuzzy
+#~ msgid "Open Worksheet..."
+#~ msgstr "Shell Baru"
+
+#~ msgid "&Export Worksheet..."
+#~ msgstr "&Eksport Helaiankerja..."
+
+#~ msgid "&Remove Worksheet"
+#~ msgstr "&Buang Helaiankerja"
+
+#~ msgid "&Worksheet Properties"
+#~ msgstr "Ciri &Lembaran Kerja"
 
 #~ msgid "Import Worksheet..."
 #~ msgstr "Import Helaiankerja..."
