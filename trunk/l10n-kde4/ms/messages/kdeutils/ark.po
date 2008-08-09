@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-08 08:24+0200\n"
+"POT-Creation-Date: 2008-08-09 09:49+0200\n"
 "PO-Revision-Date: 2005-11-17 12:03+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -14,13 +14,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: app/batchextract.cpp:85 app/batchextract.cpp:106
+#: app/batchextract.cpp:93 app/batchextract.cpp:114
 #, fuzzy
 #| msgid "Save Archive?"
 msgid "Source archive"
 msgstr "Simpan Arkib?"
 
-#: app/batchextract.cpp:86 app/batchextract.cpp:107
+#: app/batchextract.cpp:94 app/batchextract.cpp:115
 #, fuzzy
 msgid "Destination"
 msgstr "Buka folder destinasi selepas pengekstrakan"
@@ -200,17 +200,35 @@ msgid_plural "Deleting %1 files"
 msgstr[0] "Ralat berlaku semasa menambah fail ke dalam arkib."
 msgstr[1] "Ralat berlaku semasa menambah fail ke dalam arkib."
 
-#: part/archivemodel.cpp:237
+#: kerfuffle/queries.cpp:65
+#, fuzzy
+#| msgid "Archive Already Exists"
+msgid "File already exists"
+msgstr "Arkib Sudah Wujud"
+
+#: part/archivemodel.cpp:259
 msgctxt "Name of a file inside an archive"
 msgid "Name"
 msgstr ""
 
-#: part/archivemodel.cpp:239
+#: part/archivemodel.cpp:261
 #, fuzzy
 #| msgid " Size "
 msgctxt "Uncompressed size of a file inside an archive"
 msgid "Size"
 msgstr "Saiz"
+
+#: part/archivemodel.cpp:263
+#, fuzzy
+#| msgid "Compressed File"
+msgctxt "Compressed size of a file inside an archive"
+msgid "Compressed"
+msgstr "Fail Termampat"
+
+#: part/archivemodel.cpp:265
+msgctxt "Compression rate of file"
+msgid "Rate"
+msgstr ""
 
 #: part/infopanel.cpp:59
 msgid "No archive loaded"
@@ -265,7 +283,7 @@ msgstr ""
 msgid "Operation finished."
 msgstr "Buka dialog ekstrak, keluar apabila selesai"
 
-#: part/part.cpp:158
+#: part/part.cpp:159
 #, fuzzy
 #| msgctxt "to view something"
 #| msgid "&View"
@@ -273,79 +291,97 @@ msgctxt "to preview a file inside an archive"
 msgid "Pre&view"
 msgstr "&Papar"
 
-#: part/part.cpp:160
+#: part/part.cpp:161
 msgid "Click to preview the selected file"
 msgstr ""
 
-#: part/part.cpp:165
+#: part/part.cpp:166
 msgid "E&xtract..."
 msgstr "&Ekstrak..."
 
-#: part/part.cpp:167
+#: part/part.cpp:168
 msgid ""
 "Click to open an extraction dialog, where you can choose to extract either "
 "all files or just the selected ones"
 msgstr ""
 
-#: part/part.cpp:173
+#: part/part.cpp:174
 msgid "Add &File..."
 msgstr "Tambah &Fail..."
 
-#: part/part.cpp:174
+#: part/part.cpp:175
 #, fuzzy
 #| msgid "An error occurred while adding the files to the archive."
 msgid "Click to add files to the archive"
 msgstr "Ralat berlaku semasa menambah fail ke dalam arkib."
 
-#: part/part.cpp:180
+#: part/part.cpp:181
 #, fuzzy
 #| msgid "Add Folde&r..."
 msgid "Add Fo&lder..."
 msgstr "Tambah &Folder..."
 
-#: part/part.cpp:181
+#: part/part.cpp:182
 msgid "Click to add a folder to the archive"
 msgstr ""
 
-#: part/part.cpp:187
+#: part/part.cpp:188
 msgid "De&lete"
 msgstr "&Hapus"
 
-#: part/part.cpp:188
+#: part/part.cpp:189
 #, fuzzy
 #| msgid "Do you really want to delete the selected items?"
 msgid "Click to delete the selected files"
 msgstr "Anda benar-benar ingin hapuskan item yang dipilih?"
 
-#: part/part.cpp:214
+#: part/part.cpp:215
 #, fuzzy
 #| msgid "E&xtract..."
 msgid "Quick extract to..."
 msgstr "&Ekstrak..."
 
-#: part/part.cpp:275
+#: part/part.cpp:276
 #, fuzzy
 #| msgid "Ark"
 msgid "ArkPart"
 msgstr "Ark"
 
-#: part/part.cpp:355
+#: part/part.cpp:282
+#, kde-format
+msgid "Error opening archive: the file '%1' was not found."
+msgstr ""
+
+#: part/part.cpp:282 part/part.cpp:291
+#, fuzzy
+#| msgid "Open 'archive'"
+msgid "Error opening archive"
+msgstr "Buka 'arkib'"
+
+#: part/part.cpp:291
+#, kde-format
+msgid ""
+"Ark was not able to open the archive '%1'. No library capable of handling "
+"the file was found."
+msgstr ""
+
+#: part/part.cpp:366
 msgid "The internal viewer cannot preview this file."
 msgstr ""
 
-#: part/part.cpp:436
+#: part/part.cpp:447
 msgid ""
 "This archive contains one or more password protected files. Please enter the "
 "password to extract these."
 msgstr ""
 
-#: part/part.cpp:539
+#: part/part.cpp:550
 #, fuzzy
 #| msgid "All Files"
 msgid "Add Files"
 msgstr "Semua Fail"
 
-#: part/part.cpp:553
+#: part/part.cpp:564
 #, fuzzy
 #| msgid "Add Folde&r..."
 msgid "Add Folder"
@@ -427,7 +463,7 @@ msgstr "Tidak dapat cipta folder %1"
 msgid "Could not find a file named %1 in the archive."
 msgstr "Ralat berlaku semasa menambah fail ke dalam arkib."
 
-#: plugins/rarplugin/rarplugin.cpp:48
+#: plugins/rarplugin/rarplugin.cpp:49
 msgid "Neither rar or unrar are available in your PATH."
 msgstr ""
 
@@ -489,9 +525,6 @@ msgstr ""
 #~ "Anda akan membuka fail yang mempunyai sambungan tak standard.\n"
 #~ "Ark telah mengesan format: %1\n"
 #~ "Jika ini tidak betul, pilih format yang sesuai."
-
-#~ msgid "Compressed File"
-#~ msgstr "Fail Termampat"
 
 #~ msgid "All Valid Archives\n"
 #~ msgstr "Semua Arkib Sah\n"
@@ -606,9 +639,6 @@ msgstr ""
 
 #~ msgid "Archive already exists. Do you wish to overwrite it?"
 #~ msgstr "Arkib sudah wujud. Anda ingin menulisgantinya?"
-
-#~ msgid "Archive Already Exists"
-#~ msgstr "Arkib Sudah Wujud"
 
 #~ msgid "You do not have permission to write to the directory %1"
 #~ msgstr "Anda tidak mempunyai keizinan untuk menulis ke dalam direktori %1"
