@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-06 10:28+0200\n"
+"POT-Creation-Date: 2008-09-07 09:40+0200\n"
 "PO-Revision-Date: 2005-11-22 11:01+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -214,7 +214,7 @@ msgstr ""
 
 #. i18n: file: plugins/planner/planner.ui:61
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:102 plugins/planner/kcmplanner.cpp:162
+#: rc.cpp:102 plugins/planner/kcmplanner.cpp:151
 #, fuzzy
 msgid "Show To-dos"
 msgstr "Paparkan semua tugasan"
@@ -229,7 +229,7 @@ msgstr ""
 
 #. i18n: file: plugins/planner/planner.ui:90
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:108
+#: rc.cpp:108 plugins/planner/kcmplanner.cpp:174
 #, fuzzy
 msgid "Show Special Dates"
 msgstr "Tarikh Khusus"
@@ -305,7 +305,7 @@ msgstr "Melkan Dialog Konfigurasi Ringkasan"
 
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:21
 #. i18n: ectx: property (title), widget (QGroupBox, mDaysButtonGroup)
-#: rc.cpp:156 plugins/planner/kcmplanner.cpp:134
+#: rc.cpp:156 plugins/planner/kcmplanner.cpp:123
 #, fuzzy
 msgid "Show Upcoming Events Starting"
 msgstr "Tarikh Khusus"
@@ -457,7 +457,7 @@ msgstr "(c), 2003 Cornelius Schumacher"
 #: plugins/knotes/knotes_plugin.cpp:99
 #: plugins/korganizer/kcmapptsummary.cpp:159
 #: plugins/korganizer/kcmtodosummary.cpp:165
-#: plugins/newsticker/kcmkontactknt.cpp:485 plugins/planner/kcmplanner.cpp:73
+#: plugins/newsticker/kcmkontactknt.cpp:485 plugins/planner/kcmplanner.cpp:69
 #: plugins/planner/plannerplugin.cpp:65
 #: plugins/specialdates/kcmsdsummary.cpp:203
 #: plugins/specialdates/specialdates_plugin.cpp:64
@@ -496,7 +496,7 @@ msgid "(C) 2001-2008 The Kontact developers"
 msgstr "Pembangun (C) 2001-2004 The Kontact "
 
 #: src/main.cpp:167 plugins/korganizer/kcmapptsummary.cpp:160
-#: plugins/korganizer/kcmtodosummary.cpp:167 plugins/planner/kcmplanner.cpp:74
+#: plugins/korganizer/kcmtodosummary.cpp:167 plugins/planner/kcmplanner.cpp:70
 #: plugins/planner/plannerplugin.cpp:63
 #: plugins/specialdates/kcmsdsummary.cpp:202
 #: plugins/specialdates/specialdates_plugin.cpp:62
@@ -977,7 +977,7 @@ msgid "Synchronize Journal"
 msgstr ""
 
 #: plugins/korganizer/kcmapptsummary.cpp:83
-#: plugins/korganizer/kcmtodosummary.cpp:87 plugins/planner/kcmplanner.cpp:149
+#: plugins/korganizer/kcmtodosummary.cpp:87 plugins/planner/kcmplanner.cpp:138
 #: plugins/specialdates/kcmsdsummary.cpp:106
 #, fuzzy
 msgid " day"
@@ -1218,64 +1218,94 @@ msgstr ""
 msgid "Copy URL to Clipboard"
 msgstr "Salin URL ke Klipbod"
 
-#: plugins/planner/kcmplanner.cpp:68
+#: plugins/planner/kcmplanner.cpp:64
 msgid "kcmplanner"
 msgstr ""
 
-#: plugins/planner/kcmplanner.cpp:69
+#: plugins/planner/kcmplanner.cpp:65
 #, fuzzy
 #| msgid "Mail Summary Configuration Dialog"
 msgid "Planner Summary Configuration Dialog"
 msgstr "Melkan Dialog Konfigurasi Ringkasan"
 
-#: plugins/planner/kcmplanner.cpp:71
+#: plugins/planner/kcmplanner.cpp:67
 msgid "(c) 2007-2008 Oral Timocin"
 msgstr ""
 
-#: plugins/planner/kcmplanner.cpp:75 plugins/planner/plannerplugin.cpp:67
+#: plugins/planner/kcmplanner.cpp:71 plugins/planner/plannerplugin.cpp:67
 msgid "Oral Timocin"
 msgstr ""
 
-#: plugins/planner/kcmplanner.cpp:119
+#: plugins/planner/kcmplanner.cpp:108
 #, fuzzy
 msgid "Show recurrences"
 msgstr "Paparkan semua tugasan"
 
-#: plugins/planner/kcmplanner.cpp:120
+#: plugins/planner/kcmplanner.cpp:109
 #, fuzzy
 msgid "Show reminders"
 msgstr "Paparkan semua tugasan"
 
-#: plugins/planner/kcmplanner.cpp:121
+#: plugins/planner/kcmplanner.cpp:110
 #, fuzzy
 msgid "Underline Links"
 msgstr "Tugasan"
 
-#: plugins/planner/kcmplanner.cpp:137
+#: plugins/planner/kcmplanner.cpp:126
 #, fuzzy
 #| msgid "Today"
 msgid "Today only"
 msgstr "Hari ini"
 
-#: plugins/planner/kcmplanner.cpp:166
+#: plugins/planner/kcmplanner.cpp:155
 msgid "Overdue (not completetd and beyond due-date)"
 msgstr ""
 
-#: plugins/planner/kcmplanner.cpp:168
+#: plugins/planner/kcmplanner.cpp:157
 #, fuzzy
 #| msgid "starts today"
 msgid "To-dos starting today"
 msgstr "mula hari ini"
 
-#: plugins/planner/kcmplanner.cpp:170
+#: plugins/planner/kcmplanner.cpp:159
 #, fuzzy
 #| msgid "No to-dos pending"
 msgid "To-dos ending today"
 msgstr "Tiada tugasan menunggu"
 
-#: plugins/planner/kcmplanner.cpp:172
+#: plugins/planner/kcmplanner.cpp:161
 msgid "In-progress(started but not completetd)"
 msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:179
+#, fuzzy
+msgid "Show Birthdays from Calendar"
+msgstr "Paparkan semua tarikh lahir"
+
+#: plugins/planner/kcmplanner.cpp:181
+#, fuzzy
+msgid "Show Birthdays from Contact List"
+msgstr "Dialog Konfigurasi Tarikh Khusus"
+
+#: plugins/planner/kcmplanner.cpp:187
+#, fuzzy
+msgid "Show Anniversaries from Calendar"
+msgstr "Paparkan semula ulang tahun"
+
+#: plugins/planner/kcmplanner.cpp:190
+#, fuzzy
+msgid "Show Anniversaries from Contact List"
+msgstr "Dialog Konfigurasi Tarikh Khusus"
+
+#: plugins/planner/kcmplanner.cpp:195
+#, fuzzy
+msgid "Show Holidays from Calendar"
+msgstr "Ringkasan Tarikh Khusus"
+
+#: plugins/planner/kcmplanner.cpp:197
+#, fuzzy
+msgid "Show Special Occasions from Calendar"
+msgstr "Ringkasan Tarikh Khusus"
 
 #: plugins/planner/planner.cpp:70
 msgid "Planner"
