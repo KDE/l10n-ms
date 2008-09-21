@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-18 09:52+0200\n"
+"POT-Creation-Date: 2008-09-21 09:47+0200\n"
 "PO-Revision-Date: 2008-06-28 02:04+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -122,7 +122,7 @@ msgstr "Butang tetikus:"
 msgid "Application"
 msgstr "Aksi"
 
-#. i18n: file: kcm_hotkeys/ui/menuentry_action_widget.ui:28
+#. i18n: file: kcm_hotkeys/ui/menuentry_action_widget.ui:32
 #. i18n: ectx: property (text), widget (KPushButton, applicationButton)
 #: rc.cpp:44
 #, fuzzy
@@ -132,7 +132,7 @@ msgstr "Hapuskan Tindakan"
 
 #. i18n: file: kcm_hotkeys/ui/command_url_action_widget.ui:16
 #. i18n: ectx: property (text), widget (QLabel, commandLabel)
-#: rc.cpp:47 kcm_hotkeys/hotkeys_tree_view.cpp:54
+#: rc.cpp:47 kcm_hotkeys/hotkeys_tree_view.cpp:110
 #, fuzzy
 #| msgid "Command/URL : "
 msgid "Command/URL"
@@ -158,40 +158,42 @@ msgstr ""
 msgid "&Enabled"
 msgstr "&Dinyahaktifkan"
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:38
+#: kcm_hotkeys/hotkeys_tree_view.cpp:40
 #, fuzzy
 #| msgid "&Reset"
 msgid "Test"
 msgstr "&Set semula"
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:45
-msgid "Delete"
-msgstr "Padam"
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:51
-#, fuzzy
-#| msgid "Keyboard Shortcut"
-msgid "New Global Shortcut"
-msgstr "Jalan Pintas Papan Kekunci"
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:58
-msgid "Dbus Command"
-msgstr ""
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:62
-#, fuzzy
-#| msgid "K-Menu Entry..."
-msgid "K-Menu Entry"
-msgstr "Entri K-Menu..."
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:66 kcm_hotkeys/hotkeys_tree_view.cpp:94
-#: kcm_hotkeys/hotkeys_model.cpp:60
+#: kcm_hotkeys/hotkeys_tree_view.cpp:59 kcm_hotkeys/hotkeys_tree_view.cpp:75
+#: kcm_hotkeys/hotkeys_tree_view.cpp:145 kcm_hotkeys/hotkeys_model.cpp:90
 #, fuzzy
 #| msgid "New &Group"
 msgid "New Group"
 msgstr "&Kumpulan Baru"
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:94 kcm_hotkeys/hotkeys_model.cpp:60
+#: kcm_hotkeys/hotkeys_tree_view.cpp:69
+msgid "Delete"
+msgstr "Padam"
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:91
+#, fuzzy
+#| msgid "Keyboard Shortcut"
+msgid "New Global Shortcut"
+msgstr "Jalan Pintas Papan Kekunci"
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:117
+#, fuzzy
+#| msgid "DCOP Call..."
+msgid "D-Bus Command"
+msgstr "Panggilan DCOP..."
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:124
+#, fuzzy
+#| msgid "K-Menu Entry..."
+msgid "K-Menu Entry"
+msgstr "Entri K-Menu..."
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:145 kcm_hotkeys/hotkeys_model.cpp:90
 #, fuzzy
 #| msgid "Comment:"
 msgid "Comment"
@@ -256,17 +258,17 @@ msgid ""
 "i>"
 msgstr ""
 
-#: kcm_hotkeys/hotkeys_model.cpp:223
+#: kcm_hotkeys/hotkeys_model.cpp:332
 msgid "Name"
 msgstr ""
 
-#: kcm_hotkeys/hotkeys_model.cpp:226
+#: kcm_hotkeys/hotkeys_model.cpp:335
 #, fuzzy
 #| msgid "&Disable"
 msgid "Enabled"
 msgstr "&Dinyahaktifkan"
 
-#: kcm_hotkeys/hotkeys_model.cpp:229
+#: kcm_hotkeys/hotkeys_model.cpp:338
 msgid "Type"
 msgstr ""
 
@@ -293,7 +295,7 @@ msgstr "Daemon KHotkeys"
 msgid "Id of the script to add to %1"
 msgstr ""
 
-#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:133
+#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:135
 msgid "Shortcut trigger: "
 msgstr "Picu jalan pintas:"
 
@@ -363,7 +365,7 @@ msgstr "Aktifkan tetingkap:"
 msgid "Keyboard input: "
 msgstr "Input papan kekunci:"
 
-#: libkhotkeysprivate/settings.cpp:190
+#: libkhotkeysprivate/settings.cpp:264
 msgid ""
 "This \"actions\" file has already been imported before. Are you sure you "
 "want to import it again?"
@@ -371,7 +373,7 @@ msgstr ""
 "Fail \"tindakan\" telah diimport sebelum ini. Anda pasti ingin mengimportnya "
 "lagi?"
 
-#: libkhotkeysprivate/settings.cpp:201
+#: libkhotkeysprivate/settings.cpp:275
 msgid ""
 "This \"actions\" file has no ImportId field and therefore it cannot be "
 "determined whether or not it has been imported already. Are you sure you "
@@ -380,11 +382,11 @@ msgstr ""
 "Fail \"tindakan\" tidak mempunyai medan ImportId. Oleh itu, tidak dapat "
 "ditentukan sama ada ia telah diimport. Anda pasti anda ingin mengimportnya?"
 
-#: libkhotkeysprivate/settings.cpp:371
+#: libkhotkeysprivate/settings.cpp:444
 msgid "These entries were created using Menu Editor."
 msgstr "Entri dicipta menggunakan Editor Menu."
 
-#: libkhotkeysprivate/windows.cpp:361
+#: libkhotkeysprivate/windows.cpp:360
 msgid "Window simple: "
 msgstr "Tetingkap ringkas:"
 
@@ -762,11 +764,6 @@ msgstr "Entri Editor Menu"
 
 #~ msgid "Command/URL..."
 #~ msgstr "Arahan/URL..."
-
-#, fuzzy
-#~| msgid "DCOP Call..."
-#~ msgid "D-Bus Call..."
-#~ msgstr "Panggilan DCOP..."
 
 #~ msgid "Keyboard Input..."
 #~ msgstr "Input Papan Kekunci..."
