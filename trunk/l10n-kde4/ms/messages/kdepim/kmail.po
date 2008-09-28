@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-25 10:28+0200\n"
+"POT-Creation-Date: 2008-09-28 09:47+0200\n"
 "PO-Revision-Date: 2005-11-23 18:09+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -372,7 +372,7 @@ msgstr "Selamat datang ke Wizard Antispam KMail "
 #| "wizard to setup your mail accounts. Just enter the connection data that "
 #| "you received from your email provider into the following pages.</qt>"
 msgid ""
-"<qt>It seems you have started KMail for the first time.<br>You can use this "
+"<qt>It seems you have started KMail for the first time.<br/>You can use this "
 "wizard to setup your mail accounts. Just enter the connection data that you "
 "received from your email provider into the following pages.</qt>"
 msgstr ""
@@ -387,7 +387,7 @@ msgstr ""
 #| "wizard to setup your mail accounts. Just enter the connection data that "
 #| "you received from your email provider into the following pages.</qt>"
 msgid ""
-"<qt>You can use this wizard to setup your mail accounts.<br>Just enter the "
+"<qt>You can use this wizard to setup your mail accounts.<br/>Just enter the "
 "connection data that you received from your email provider into the "
 "following pages.</qt>"
 msgstr ""
@@ -403,9 +403,9 @@ msgstr "Identiti &penghantar:"
 
 #: accountwizard.cpp:219
 msgid ""
-"An identity is your email address, name, organization and so on.<br>Do not "
-"uncheck this if you do not know what you are doing<br>as some servers "
-"refuses to send mail if the sending identity<br>does not match the one "
+"An identity is your email address, name, organization and so on.<br/>Do not "
+"uncheck this if you do not know what you are doing<br/>as some servers "
+"refuses to send mail if the sending identity<br/>does not match the one "
 "belonging to that account."
 msgstr ""
 
@@ -540,17 +540,17 @@ msgstr ""
 msgid "Virus handling"
 msgstr "Pengendalian virus"
 
-#: antispamwizard.cpp:289 antispamwizard.cpp:291 antispamwizard.cpp:592
+#: antispamwizard.cpp:289 antispamwizard.cpp:291 antispamwizard.cpp:600
 #, fuzzy
 #| msgid "Spam handling"
 msgid "Spam Handling"
 msgstr "Pengendalian spam"
 
-#: antispamwizard.cpp:330 antispamwizard.cpp:332 antispamwizard.cpp:605
+#: antispamwizard.cpp:330 antispamwizard.cpp:332 antispamwizard.cpp:613
 msgid "Semi spam (unsure) handling"
 msgstr "Pengendalian separa spam (tak pasti)"
 
-#: antispamwizard.cpp:392 antispamwizard.cpp:394 antispamwizard.cpp:613
+#: antispamwizard.cpp:392 antispamwizard.cpp:394 antispamwizard.cpp:621
 #, fuzzy
 #| msgid "Classify as spam"
 msgid "Classify as Spam"
@@ -560,7 +560,7 @@ msgstr "Kelaskan sebagai spam"
 msgid "Spam"
 msgstr "Spam"
 
-#: antispamwizard.cpp:435 antispamwizard.cpp:437 antispamwizard.cpp:615
+#: antispamwizard.cpp:435 antispamwizard.cpp:437 antispamwizard.cpp:623
 #, fuzzy
 #| msgid "Classify as NOT spam"
 msgid "Classify as NOT Spam"
@@ -594,41 +594,56 @@ msgstr ""
 msgid "Scanning complete. No anti-virus tools found."
 msgstr "Pengimbasan untuk alat antivirus selesai."
 
-#: antispamwizard.cpp:575
-msgid "<p>Messages classified as spam are marked as read."
-msgstr ""
-
-#: antispamwizard.cpp:577
-msgid "<p>Messages classified as spam are not marked as read."
+#: antispamwizard.cpp:576
+#, kde-format
+msgid ""
+"<p>Messages classified as spam are marked as read.<br />Spam messages are "
+"moved into the folder named <i>%1</i>.</p>"
 msgstr ""
 
 #: antispamwizard.cpp:580
-msgid "<br />Spam messages are moved into the folder named <i>"
+msgid ""
+"<p>Messages classified as spam are marked as read.<br />Spam messages are "
+"not moved into a certain folder.</p>"
 msgstr ""
 
-#: antispamwizard.cpp:583
-msgid "<br />Spam messages are not moved into a certain folder.</p>"
+#: antispamwizard.cpp:585
+#, kde-format
+msgid ""
+"<p>Messages classified as spam are not marked as read.<br />Spam messages "
+"are moved into the folder named <i>%1</i>.</p>"
 msgstr ""
 
-#: antispamwizard.cpp:607
-msgid "<p>The folder for messages classified as unsure (probably spam) is <i>"
+#: antispamwizard.cpp:589
+msgid ""
+"<p>Messages classified as spam are not marked as read.<br />Spam messages "
+"are not moved into a certain folder.</p>"
 msgstr ""
 
-#: antispamwizard.cpp:620
-msgid "<p>The wizard will create the following filters:<ul>"
+#: antispamwizard.cpp:615
+#, kde-format
+msgid ""
+"<p>The folder for messages classified as unsure (probably spam) is <i>%1</i>."
+"</p>"
 msgstr ""
 
-#: antispamwizard.cpp:623
-msgid "<p>The wizard will replace the following filters:<ul>"
+#: antispamwizard.cpp:628
+#, kde-format
+msgid "<p>The wizard will create the following filters:<ul>%1</ul></p>"
 msgstr ""
 
-#: antispamwizard.cpp:891
+#: antispamwizard.cpp:631
+#, kde-format
+msgid "<p>The wizard will replace the following filters:<ul>%1</ul></p>"
+msgstr ""
+
+#: antispamwizard.cpp:899
 msgid ""
 "The wizard will search for any tools to do spam detection\n"
 "and setup KMail to work with them."
 msgstr ""
 
-#: antispamwizard.cpp:895
+#: antispamwizard.cpp:903
 #, fuzzy
 #| msgid ""
 #| "<p>Here you can get some assistance in setting up KMail's filter rules to "
@@ -665,50 +680,50 @@ msgstr ""
 "menghapuskan peraturan penapis yang dicipta oleh wizard untuk kembali kepada "
 "peri laku sebelumnya."
 
-#: antispamwizard.cpp:949
+#: antispamwizard.cpp:957
 msgid ""
 "<p>Please select the tools to be used for the detection and go to the next "
 "page.</p>"
 msgstr ""
 
-#: antispamwizard.cpp:978
+#: antispamwizard.cpp:986
 #, fuzzy
 msgid "&Mark detected spam messages as read"
 msgstr "Tandakan mesej yang dipilih sebagai sudah baca"
 
-#: antispamwizard.cpp:980
+#: antispamwizard.cpp:988
 #, fuzzy
 msgid "Mark messages which have been classified as spam as read."
 msgstr ""
 "Tandakan mesej yang dikelaskan sebagai spam sebagai sudah baca, sekaligus "
 "pindahkannya ke dalam folder dipilih."
 
-#: antispamwizard.cpp:983
+#: antispamwizard.cpp:991
 msgid "Move &known spam to:"
 msgstr ""
 
-#: antispamwizard.cpp:985
+#: antispamwizard.cpp:993
 msgid ""
 "The default folder for spam messages is the trash folder, but you may change "
 "that in the folder view below."
 msgstr ""
 
-#: antispamwizard.cpp:1000
+#: antispamwizard.cpp:1008
 msgid "Move &probable spam to:"
 msgstr ""
 
-#: antispamwizard.cpp:1002
+#: antispamwizard.cpp:1010
 msgid ""
 "The default folder is the inbox folder, but you may change that in the "
 "folder view below.<p>Not all tools support a classification as unsure. If "
 "you have not selected a capable tool, you cannot select a folder as well.</p>"
 msgstr ""
 
-#: antispamwizard.cpp:1105
+#: antispamwizard.cpp:1113
 msgid "Check messages using the anti-virus tools"
 msgstr "Semak mesej menggunakan alat antivirus"
 
-#: antispamwizard.cpp:1107
+#: antispamwizard.cpp:1115
 msgid ""
 "Let the anti-virus tools check your messages. The wizard will create "
 "appropriate filters. The messages are usually marked by the tools so that "
@@ -719,11 +734,11 @@ msgstr ""
 "sesuai. Biasanya mesej ditanda oleh alat tersebut supaya penapis berikut "
 "boleh bertindak, contohnya, alihkan mesej virus ke folder khusus"
 
-#: antispamwizard.cpp:1113
+#: antispamwizard.cpp:1121
 msgid "Move detected viral messages to the selected folder"
 msgstr "Alilhkan mesej yang dikesan bervirus ke folder khusus"
 
-#: antispamwizard.cpp:1115
+#: antispamwizard.cpp:1123
 msgid ""
 "A filter to detect messages classified as virus-infected and to move those "
 "messages into a predefined folder is created. The default folder is the "
@@ -733,11 +748,11 @@ msgstr ""
 "mengalihkannya ke folder pratakrif telah dicipta. Folder piawai adalah "
 "folder sampah, tapi anda boleh mengubahnya dalam paparan folder."
 
-#: antispamwizard.cpp:1121
+#: antispamwizard.cpp:1129
 msgid "Additionally, mark detected viral messages as read"
 msgstr "Sebagai tambahan, tandakan mesej bervirus sebagai sudah baca"
 
-#: antispamwizard.cpp:1124
+#: antispamwizard.cpp:1132
 msgid ""
 "Mark messages which have been classified as virus-infected as read, as well "
 "as moving them to the selected folder."
@@ -745,39 +760,52 @@ msgstr ""
 "Tandakan mesej yang dikelaskan dijangkiti virus sebagai sudah baca, "
 "sekaligus pindahkannya ke folder yang dipilih."
 
-#. i18n: file: customtemplates_base.ui:85
-#. i18n: ectx: property (text), widget (QTreeWidget, mList)
-#: attachmentlistview.cpp:47 configuredialog.cpp:3370
-#: distributionlistdialog.cpp:127 rc.cpp:59 recipientspicker.cpp:363
+#: attachmentlistview.cpp:47
+#, fuzzy
+#| msgid "Name"
+msgctxt "@title collumn attachment name."
 msgid "Name"
 msgstr "Nama"
 
-#: attachmentlistview.cpp:47 kmfoldertree.cpp:1729 kmheaders.cpp:166
-#: kmheaders.cpp:213 kmmainwidget.cpp:583 kmmainwidget.cpp:590
-#: kmmainwidget.cpp:597 kmmimeparttree.cpp:66
+#: attachmentlistview.cpp:48
+#, fuzzy
+#| msgid "Size"
+msgctxt "@title collumn attachment size."
 msgid "Size"
 msgstr "Saiz"
 
-#: attachmentlistview.cpp:47 kmmimeparttree.cpp:65
+#: attachmentlistview.cpp:49
+#, fuzzy
+#| msgid "Encoding"
+msgctxt "@title collumn attachment encoding."
 msgid "Encoding"
 msgstr "Pengekodan"
 
-#. i18n: file: customtemplates_base.ui:80
-#. i18n: ectx: property (text), widget (QTreeWidget, mList)
-#: attachmentlistview.cpp:48 kmfilterdlg.cpp:237 kmmimeparttree.cpp:64
-#: rc.cpp:56
+#: attachmentlistview.cpp:50
+#, fuzzy
+#| msgid "Type"
+msgctxt "@title collumn attachment type."
 msgid "Type"
 msgstr "Jenis"
 
-#: attachmentlistview.cpp:48 kmcomposewin.cpp:2689
+#: attachmentlistview.cpp:51
+#, fuzzy
+#| msgid "Compress"
+msgctxt "@title collumn attachment compression checkbox."
 msgid "Compress"
 msgstr "Mampatkan"
 
-#: attachmentlistview.cpp:48 kmcomposewin.cpp:1278
+#: attachmentlistview.cpp:52
+#, fuzzy
+#| msgid "Encrypt"
+msgctxt "@title collumn attachment encryption checkbox."
 msgid "Encrypt"
 msgstr "Sulitkan"
 
-#: attachmentlistview.cpp:49 kmcomposewin.cpp:1281
+#: attachmentlistview.cpp:53
+#, fuzzy
+#| msgid "Sign"
+msgctxt "@title collumn attachment signed checkbox."
 msgid "Sign"
 msgstr "Tandatangan"
 
@@ -909,7 +937,7 @@ msgstr "&Muatkan Profail..."
 msgid "&Add..."
 msgstr "T&ambah..."
 
-#: configuredialog.cpp:344 configuredialog.cpp:840 configuredialog.cpp:3238
+#: configuredialog.cpp:344 configuredialog.cpp:840 configuredialog.cpp:3240
 #: simplestringlisteditor.cpp:99
 msgid "&Modify..."
 msgstr "&Ubah suai..."
@@ -918,7 +946,7 @@ msgstr "&Ubah suai..."
 msgid "&Rename"
 msgstr "&Namakan semula"
 
-#: configuredialog.cpp:346 configuredialog.cpp:3183 configuredialog.cpp:3237
+#: configuredialog.cpp:346 configuredialog.cpp:3185 configuredialog.cpp:3239
 msgid "Remo&ve"
 msgstr "&Buang"
 
@@ -940,11 +968,11 @@ msgstr "Buang Identiti"
 msgid "&Remove"
 msgstr "&Buang"
 
-#: configuredialog.cpp:559 configuredialog.cpp:3182
+#: configuredialog.cpp:559 configuredialog.cpp:3184
 msgid "Add..."
 msgstr "Tambah..."
 
-#: configuredialog.cpp:561 configuredialog.cpp:3184
+#: configuredialog.cpp:561 configuredialog.cpp:3186
 msgid "Modify..."
 msgstr "Ubahsuai..."
 
@@ -1039,8 +1067,8 @@ msgstr ""
 msgid "Incoming accounts (add at least one):"
 msgstr "Akaun mendatang (tambah sekurang-kurangnya satu):"
 
-#: configuredialog.cpp:833 configuredialog.cpp:3149 configuredialog.cpp:3237
-#: configuredialog.cpp:3591
+#: configuredialog.cpp:833 configuredialog.cpp:3151 configuredialog.cpp:3239
+#: configuredialog.cpp:3594
 msgid "A&dd..."
 msgstr "T&ambah..."
 
@@ -1372,8 +1400,10 @@ msgstr "For&mat beragam (%1)"
 msgid "C&ustom format:"
 msgstr "Format &Storan:"
 
-#: configuredialog.cpp:1752 configuredialog.cpp:2768 identitydialog.cpp:120
-#: kmfolderdialog.cpp:122
+#: configuredialog.cpp:1752
+#, fuzzy
+#| msgid "General"
+msgctxt "General options for the message list."
 msgid "General"
 msgstr "Umum"
 
@@ -1425,11 +1455,35 @@ msgstr ""
 msgid "Date Display"
 msgstr "Paparan Tarikh"
 
-#: configuredialog.cpp:1832
-msgid "<qt><a href=\"whatsthis1\">Custom format information...</a>"
+#: configuredialog.cpp:1833
+msgid "<qt><a href=\"whatsthis1\">Custom format information...</a></qt>"
 msgstr ""
 
-#: configuredialog.cpp:1837
+#: configuredialog.cpp:1838
+#, fuzzy
+#| msgid ""
+#| "<qt><p><strong>These expressions may be used for the date:</strong></"
+#| "p><ul><li>d - the day as a number without a leading zero (1-31)</"
+#| "li><li>dd - the day as a number with a leading zero (01-31)</li><li>ddd - "
+#| "the abbreviated day name (Mon - Sun)</li><li>dddd - the long day name "
+#| "(Monday - Sunday)</li><li>M - the month as a number without a leading "
+#| "zero (1-12)</li><li>MM - the month as a number with a leading zero (01-12)"
+#| "</li><li>MMM - the abbreviated month name (Jan - Dec)</li><li>MMMM - the "
+#| "long month name (January - December)</li><li>yy - the year as a two digit "
+#| "number (00-99)</li><li>yyyy - the year as a four digit number (0000-9999)"
+#| "</li></ul><p><strong>These expressions may be used for the time:</"
+#| "string></p> <ul><li>h - the hour without a leading zero (0-23 or 1-12 if "
+#| "AM/PM display)</li><li>hh - the hour with a leading zero (00-23 or 01-12 "
+#| "if AM/PM display)</li><li>m - the minutes without a leading zero (0-59)</"
+#| "li><li>mm - the minutes with a leading zero (00-59)</li><li>s - the "
+#| "seconds without a leading zero (0-59)</li><li>ss - the seconds with a "
+#| "leading zero (00-59)</li><li>z - the milliseconds without leading zeroes "
+#| "(0-999)</li><li>zzz - the milliseconds with leading zeroes (000-999)</"
+#| "li><li>AP - switch to AM/PM display. AP will be replaced by either \"AM\" "
+#| "or \"PM\".</li><li>ap - switch to AM/PM display. ap will be replaced by "
+#| "either \"am\" or \"pm\".</li><li>Z - time zone in numeric form (-0500)</"
+#| "li></ul><p><strong>All other input characters will be ignored.</strong></"
+#| "p></qt>"
 msgid ""
 "<qt><p><strong>These expressions may be used for the date:</strong></"
 "p><ul><li>d - the day as a number without a leading zero (1-31)</li><li>dd - "
@@ -1440,7 +1494,7 @@ msgid ""
 "the abbreviated month name (Jan - Dec)</li><li>MMMM - the long month name "
 "(January - December)</li><li>yy - the year as a two digit number (00-99)</"
 "li><li>yyyy - the year as a four digit number (0000-9999)</li></"
-"ul><p><strong>These expressions may be used for the time:</string></p> "
+"ul><p><strong>These expressions may be used for the time:</strong></p> "
 "<ul><li>h - the hour without a leading zero (0-23 or 1-12 if AM/PM display)</"
 "li><li>hh - the hour with a leading zero (00-23 or 01-12 if AM/PM display)</"
 "li><li>m - the minutes without a leading zero (0-59)</li><li>mm - the "
@@ -1475,7 +1529,7 @@ msgstr ""
 "bentuk angka (-0500)</li></ul><p><strong>semua input lain akan diabaikan.</"
 "strong></p></qt>"
 
-#: configuredialog.cpp:1958
+#: configuredialog.cpp:1959
 msgid ""
 "Changing the global threading setting will override all folder specific "
 "values."
@@ -1483,150 +1537,161 @@ msgstr ""
 "Menukar seting rantaian global akan menulis tindih semua nilai folder yang "
 "dinyatakan."
 
-#: configuredialog.cpp:1995
+#: configuredialog.cpp:1996
 msgid "Show HTML stat&us bar"
 msgstr "Paparkan bar stat&us HTML"
 
-#: configuredialog.cpp:1999
+#: configuredialog.cpp:2000
 msgid "Show s&pam status in fancy headers"
 msgstr "Paparkan status s&pam dalam pengepala beragam"
 
 #. i18n: file: kmail.kcfg:530
 #. i18n: ectx: label, entry (ShowEmoticons), group (Reader)
-#: configuredialog.cpp:2003 rc.cpp:500
+#: configuredialog.cpp:2004 rc.cpp:500
 msgid "Replace smileys by emoticons"
 msgstr "Gantikan smileys dengan ikon emosi"
 
-#: configuredialog.cpp:2007
+#: configuredialog.cpp:2008
 msgid "Use smaller font for quoted text"
 msgstr ""
 
 #. i18n: file: kmail.kcfg:535
 #. i18n: ectx: label, entry (ShowExpandQuotesMark), group (Reader)
-#: configuredialog.cpp:2011 rc.cpp:506
+#: configuredialog.cpp:2012 rc.cpp:506
 msgid "Show expand/collapse quote marks"
 msgstr "Paparkan tanda sebutan kembang/runtuh"
 
-#: configuredialog.cpp:2090
+#: configuredialog.cpp:2091
 msgid "Fallback ch&aracter encoding:"
 msgstr " Pengekodan &aksara undur belakang:"
 
-#: configuredialog.cpp:2101 configuredialog.cpp:2156 kmreaderwin.cpp:632
+#: configuredialog.cpp:2102 configuredialog.cpp:2157 kmreaderwin.cpp:632
 msgid "Auto"
 msgstr "Auto"
 
-#: configuredialog.cpp:2112
+#: configuredialog.cpp:2113
 msgid "&Override character encoding:"
 msgstr "&Tulis tindihkan pengekodan aksara:"
 
 #. i18n: file: kmail.kcfg:105
 #. i18n: ectx: label, entry (SystemTrayEnabled), group (General)
-#: configuredialog.cpp:2236 rc.cpp:299
+#: configuredialog.cpp:2237 rc.cpp:299
 msgid "Enable system tray icon"
 msgstr "Aktifkan ikon dulang sistem"
 
-#: configuredialog.cpp:2243
+#: configuredialog.cpp:2244
 msgid "System Tray Mode"
 msgstr "Mod Dulang Sistem "
 
-#: configuredialog.cpp:2252
+#: configuredialog.cpp:2253
 msgid "Always show KMail in system tray"
 msgstr "Sentiasa paparkan KMail dalam dulang sistem "
 
-#: configuredialog.cpp:2253
+#: configuredialog.cpp:2254
 msgid "Only show KMail in system tray if there are unread messages"
 msgstr ""
 "Hanya paparkan KMail dalam dulang sistem jika terdapat mesej belum baca"
 
-#: configuredialog.cpp:2302
+#: configuredialog.cpp:2303
 #, fuzzy
 #| msgid "Available Filters"
 msgid "A&vailable Tags"
 msgstr "Penapis Yang Boleh Didapatkan"
 
-#: configuredialog.cpp:2317
+#: configuredialog.cpp:2318
 msgid "Add new tag"
 msgstr ""
 
-#: configuredialog.cpp:2322
+#: configuredialog.cpp:2323
 #, fuzzy
 #| msgid "Remove Duplicate Messages"
 msgid "Remove selected tag"
 msgstr "Buang Mesej Duplikasi"
 
-#: configuredialog.cpp:2331
+#: configuredialog.cpp:2332
 msgid "Increase tag priority"
 msgstr ""
 
-#: configuredialog.cpp:2337
+#: configuredialog.cpp:2338
 msgid "Decrease tag priority"
 msgstr ""
 
-#: configuredialog.cpp:2357
+#: configuredialog.cpp:2358
 #, fuzzy
 msgid "Ta&g Settings"
 msgstr "&Menghantar"
 
-#: configuredialog.cpp:2373 favoritefolderview.cpp:389
+#: configuredialog.cpp:2374
+#, fuzzy
+#| msgid "Name:"
+msgctxt "@label:listbox Name of the tag"
 msgid "Name:"
 msgstr "Nama:"
 
-#: configuredialog.cpp:2381
+#: configuredialog.cpp:2383
 #, fuzzy
 #| msgid "Text Color..."
 msgid "Change te&xt color:"
 msgstr "Warna Teks..."
 
-#: configuredialog.cpp:2396
+#: configuredialog.cpp:2398
 #, fuzzy
 #| msgid "Change Encoding"
 msgid "Change fo&nt:"
 msgstr "Tukar Pengekodan"
 
-#: configuredialog.cpp:2415
+#: configuredialog.cpp:2417
 #, fuzzy
 msgid "Message tag &icon:"
 msgstr "Senarai Mesej"
 
 #. i18n: file: customtemplates_base.ui:166
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: configuredialog.cpp:2428 rc.cpp:74
+#: configuredialog.cpp:2430 rc.cpp:74
 #, fuzzy
 msgid "Shortc&ut:"
 msgstr "Jalan pintas:"
 
-#: configuredialog.cpp:2438
+#: configuredialog.cpp:2440
 msgid "Enable &toolbar button"
 msgstr ""
 
-#: configuredialog.cpp:2775
+#: configuredialog.cpp:2770
+#, fuzzy
+#| msgid "General"
+msgctxt "General settings for the composer."
+msgid "General"
+msgstr "Umum"
+
+#: configuredialog.cpp:2777
 #, fuzzy
 msgid "Standard Templates"
 msgstr "&Gantikan"
 
-#: configuredialog.cpp:2781
+#: configuredialog.cpp:2783
 #, fuzzy
 msgid "Custom Templates"
 msgstr "&Gantikan"
 
-#: configuredialog.cpp:2787 kmheaders.cpp:210 kmheaders.cpp:790
-#: kmheaders.cpp:2666 kmsearchpatternedit.cpp:55 searchwindow.cpp:227
-#: templatesinsertcommand.cpp:163 templatesinsertcommand.cpp:287
+#: configuredialog.cpp:2789
+#, fuzzy
+#| msgid "Subject"
+msgctxt "Settings regarding the subject when composing a message."
 msgid "Subject"
 msgstr "Subjek"
 
-#: configuredialog.cpp:2794
+#: configuredialog.cpp:2796
 #, fuzzy
 #| msgid "Cha&rset"
 msgid "Charset"
 msgstr "Set aksa&ra"
 
-#: configuredialog.cpp:2800
+#: configuredialog.cpp:2802
 #, fuzzy
 msgid "Headers"
 msgstr "Tambahkan Pengepala"
 
-#: configuredialog.cpp:2806
+#: configuredialog.cpp:2808
 #, fuzzy
 #| msgctxt "Config->Composer->Attachments"
 #| msgid "A&ttachments"
@@ -1634,7 +1699,7 @@ msgctxt "Config->Composer->Attachments"
 msgid "Attachments"
 msgstr "Lam&piran"
 
-#: configuredialog.cpp:2907
+#: configuredialog.cpp:2909
 msgid "No autosave"
 msgstr "Tiada autosimpan"
 
@@ -1646,34 +1711,34 @@ msgstr "Tiada autosimpan"
 #. i18n: ectx: property (suffix), widget (KIntNumInput, intervalSpin)
 #. i18n: file: popsettings.ui:161
 #. i18n: ectx: property (suffix), widget (KIntNumInput, intervalSpin)
-#: configuredialog.cpp:2908 rc.cpp:136 rc.cpp:752 rc.cpp:782 rc.cpp:827
+#: configuredialog.cpp:2910 rc.cpp:136 rc.cpp:752 rc.cpp:782 rc.cpp:827
 msgid " min"
 msgstr " min"
 
-#: configuredialog.cpp:2915
+#: configuredialog.cpp:2917
 #, fuzzy
 #| msgid "Configure &Filters..."
 msgid "Configure Completion Order..."
 msgstr "Konfigur &Penapis"
 
-#: configuredialog.cpp:2924 kmlineeditspell.cpp:169
+#: configuredialog.cpp:2926 kmlineeditspell.cpp:169
 msgid "Edit Recent Addresses..."
 msgstr "Edit Alamat Terkini..."
 
-#: configuredialog.cpp:2931
+#: configuredialog.cpp:2933
 msgid "External Editor"
 msgstr "Pengedit Luar"
 
-#: configuredialog.cpp:2965
+#: configuredialog.cpp:2967
 #, c-format
 msgid "<b>%f</b> will be replaced with the filename to edit."
 msgstr "<b>%f</b> akan diganti dengan nama fail untuk diedit."
 
-#: configuredialog.cpp:3134
+#: configuredialog.cpp:3136
 msgid "Repl&y Subject Prefixes"
 msgstr "Awalan Subjek &Jawapan"
 
-#: configuredialog.cpp:3139 configuredialog.cpp:3174
+#: configuredialog.cpp:3141 configuredialog.cpp:3176
 msgid ""
 "Recognize any sequence of the following prefixes\n"
 "(entries are case-insensitive regular expressions):"
@@ -1681,27 +1746,27 @@ msgstr ""
 "Iktiraf sebarang turutan awalan berikut\n"
 "(entri adalah ungkapan lazim tak sensitif huruf besar kecil):"
 
-#: configuredialog.cpp:3149 configuredialog.cpp:3381 configuredialog.cpp:3591
+#: configuredialog.cpp:3151 configuredialog.cpp:3384 configuredialog.cpp:3594
 msgid "Re&move"
 msgstr "&Buang"
 
-#: configuredialog.cpp:3150 configuredialog.cpp:3592
+#: configuredialog.cpp:3152 configuredialog.cpp:3595
 msgid "Mod&ify..."
 msgstr "Ubahsua&i..."
 
-#: configuredialog.cpp:3151
+#: configuredialog.cpp:3153
 msgid "Enter new reply prefix:"
 msgstr "Masukkan awalan jawapan baru"
 
-#: configuredialog.cpp:3169
+#: configuredialog.cpp:3171
 msgid "For&ward Subject Prefixes"
 msgstr "Awalan Subjek Per&panjang"
 
-#: configuredialog.cpp:3185
+#: configuredialog.cpp:3187
 msgid "Enter new forward prefix:"
 msgstr "Masukkan awalan perpanjang baru"
 
-#: configuredialog.cpp:3229
+#: configuredialog.cpp:3231
 msgid ""
 "This list is checked for every outgoing message from the top to the bottom "
 "for a charset that contains all required characters."
@@ -1709,58 +1774,70 @@ msgstr ""
 "Senarai ini disemak bagi setiap mesej yang keluar, dengan turutan dari atas "
 "ke bawah bagi set aksara yang mengandungi semua aksara yang diperlukan."
 
-#: configuredialog.cpp:3238
+#: configuredialog.cpp:3240
 msgid "Enter charset:"
 msgstr "Masukkan set aksara"
 
-#: configuredialog.cpp:3244
+#: configuredialog.cpp:3246
 msgid "&Keep original charset when replying or forwarding (if possible)"
 msgstr ""
 "&Kekalkan set aksara asal semasa menjawab atau memperpanjang (jika boleh)"
 
-#: configuredialog.cpp:3278
+#: configuredialog.cpp:3280
 msgid "This charset is not supported."
 msgstr "Set aksara ini tidak disokong"
 
-#: configuredialog.cpp:3332
+#: configuredialog.cpp:3334
 msgid "&Use custom message-id suffix"
 msgstr "&Gunakan akhiran id mesej kebiasaan"
 
-#: configuredialog.cpp:3346
+#: configuredialog.cpp:3348
 msgid "Custom message-&id suffix:"
 msgstr "Akhiran id mesej kebiasaan"
 
-#: configuredialog.cpp:3361
+#: configuredialog.cpp:3363
 msgid "Define custom mime header fields:"
 msgstr "Takrifkan medan pengepala mime kebiasaan:"
 
-#: configuredialog.cpp:3370
+#: configuredialog.cpp:3372
+#, fuzzy
+#| msgid "Name"
+msgctxt "@title:column Name of the mime header."
+msgid "Name"
+msgstr "Nama"
+
+#: configuredialog.cpp:3373
+#, fuzzy
+#| msgid "Value"
+msgctxt "@title:column Value of the mimeheader."
 msgid "Value"
 msgstr "Nilai"
 
-#: configuredialog.cpp:3377
+#: configuredialog.cpp:3380
+#, fuzzy
+#| msgid "Ne&w"
+msgctxt "@action:button Add new mime header field."
 msgid "Ne&w"
 msgstr "Ba&ru"
 
-#. i18n: file: snippetdlgbase.ui:19
-#. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: configuredialog.cpp:3390 distributionlistdialog.cpp:116
-#: kmfolderdialog.cpp:287 kmmsgpartdlg.cpp:120 newfolderdialog.cpp:85
-#: rc.cpp:1030
+#: configuredialog.cpp:3393
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "@label:textbox Name of the mime header."
 msgid "&Name:"
 msgstr "&Nama:"
 
-#: configuredialog.cpp:3400
+#: configuredialog.cpp:3403
 msgid "&Value:"
 msgstr "&Nilai:"
 
 #. i18n: file: kmail.kcfg:344
 #. i18n: ectx: label, entry (OutlookCompatibleAttachments), group (Composer)
-#: configuredialog.cpp:3559 rc.cpp:435
+#: configuredialog.cpp:3562 rc.cpp:435
 msgid "Outlook-compatible attachment naming"
 msgstr "Penamaan lampiran serasi Outlook"
 
-#: configuredialog.cpp:3562
+#: configuredialog.cpp:3565
 msgid ""
 "Turn this option on to make Outlook(tm) understand attachment names "
 "containing non-English characters"
@@ -1768,19 +1845,19 @@ msgstr ""
 "Buka opsyen ini supaya Outlook (tm) faham nama lampiran yang mengandungi "
 "aksara bukan Inggeris"
 
-#: configuredialog.cpp:3573
+#: configuredialog.cpp:3576
 msgid "E&nable detection of missing attachments"
 msgstr "&Aktifkan pengesanan lampiran hilang"
 
-#: configuredialog.cpp:3580
+#: configuredialog.cpp:3583
 msgid "Recognize any of the following key words as intention to attach a file:"
 msgstr "Camkan kata kunci berikut sebagai hasrat untuk melampirkan fail:"
 
-#: configuredialog.cpp:3593
+#: configuredialog.cpp:3596
 msgid "Enter new key word:"
 msgstr "Masukkan kata kunci baru:"
 
-#: configuredialog.cpp:3626
+#: configuredialog.cpp:3629
 msgid ""
 "You have chosen to encode attachment names containing non-English characters "
 "in a way that is understood by Outlook(tm) and other mail clients that do "
@@ -1799,33 +1876,33 @@ msgstr ""
 "oleh pelanggan mel patuh piawai; jadi, jika tiada pilihan lain, anda "
 "dinasihatkan supaya tidak mengaktifkan opsyen ini."
 
-#: configuredialog.cpp:3653
+#: configuredialog.cpp:3656
 #, fuzzy
 #| msgid "&Reading"
 msgid "Reading"
 msgstr "&Membaca"
 
-#: configuredialog.cpp:3659
+#: configuredialog.cpp:3662
 msgid "Composing"
 msgstr "Menggubah"
 
-#: configuredialog.cpp:3665
+#: configuredialog.cpp:3668
 msgid "Warnings"
 msgstr "Amaran"
 
-#: configuredialog.cpp:3671
+#: configuredialog.cpp:3674
 #, fuzzy
 #| msgid "S/MIME &Validation"
 msgid "S/MIME Validation"
 msgstr "&Pengesahan S/MIME "
 
-#: configuredialog.cpp:3677
+#: configuredialog.cpp:3680
 #, fuzzy
 #| msgid "Crypto Backe&nds"
 msgid "Crypto Backends"
 msgstr "Hujung Belaka&ng Kripto"
 
-#: configuredialog.cpp:3708
+#: configuredialog.cpp:3711
 msgid ""
 "<qt><p>Messages sometimes come in both formats. This option controls whether "
 "you want the HTML part or the plain text part to be displayed.</"
@@ -1853,7 +1930,7 @@ msgstr ""
 "mengeset opsyen ini folder demi folder dari <i>Folder</i> menu  tetingkap "
 "utama KMail.</p></qt>"
 
-#: configuredialog.cpp:3724
+#: configuredialog.cpp:3727
 msgid ""
 "<qt><p>Some mail advertisements are in HTML and contain references to, for "
 "example, images that the advertisers employ to find out that you have read "
@@ -1876,7 +1953,7 @@ msgstr ""
 "anda boleh aktifkan opsyen ini, tetapi anda perlu menyedari masalah yang "
 "mungkin berlaku.</p></qt>"
 
-#: configuredialog.cpp:3736
+#: configuredialog.cpp:3739
 msgid ""
 "<qt><h3>Message Disposition Notification Policy</h3><p>MDNs are a "
 "generalization of what is commonly called <b>read receipt</b>. The message "
@@ -1922,23 +1999,23 @@ msgstr ""
 "berguna contohnya untuk pengurusan perhubungan pelanggan, ia telah "
 "diwujudkan.</li></ul></qt>"
 
-#: configuredialog.cpp:3767
+#: configuredialog.cpp:3770
 msgid "HTML Messages"
 msgstr "Mesej HTML"
 
-#: configuredialog.cpp:3770
+#: configuredialog.cpp:3773
 #, fuzzy
 #| msgid "Prefer H&TML to plain text"
 msgid "Prefer HTML to plain text"
 msgstr "Utamakan H&TML daripada teks ringkas"
 
-#: configuredialog.cpp:3776
+#: configuredialog.cpp:3779
 #, fuzzy
 #| msgid "Allow messages to load e&xternal references from the Internet"
 msgid "Allow messages to load external references from the Internet"
 msgstr "Benarkan mesej memuatkan rujukan l&uar dari internet"
 
-#: configuredialog.cpp:3784
+#: configuredialog.cpp:3787
 #, fuzzy
 msgid ""
 "<b>WARNING:</b> Allowing HTML in email may increase the risk that your "
@@ -1951,78 +2028,78 @@ msgstr ""
 "dijangka. <a href=\"Apa ini:%1\">Lagi tentang mel HTML...</a> <a href=\"apa "
 "ini:%2\">Lagi tentang rujukan luar...</a>"
 
-#: configuredialog.cpp:3801
+#: configuredialog.cpp:3804
 #, fuzzy
 #| msgid "Encrypted message"
 msgid "Encrypted Messages"
 msgstr "Mesej Disulitkan"
 
-#: configuredialog.cpp:3803
+#: configuredialog.cpp:3806
 #, fuzzy
 #| msgid "Automatically encrypt &messages whenever possible"
 msgid "Attempt decryption of encrypted messages when viewing"
 msgstr "Autosulitkan &mesej apabila boleh dilakukan"
 
-#: configuredialog.cpp:3810
+#: configuredialog.cpp:3813
 msgid "Message Disposition Notifications"
 msgstr "Pemberitahuan Penyusunan Mesej"
 
-#: configuredialog.cpp:3820
+#: configuredialog.cpp:3823
 msgid "Send policy:"
 msgstr "Hantar dasar:"
 
-#: configuredialog.cpp:3822 vacation.cpp:660
+#: configuredialog.cpp:3825 vacation.cpp:660
 #, fuzzy
 #| msgctxt "MDN type"
 #| msgid "Ignore"
 msgid "Ignore"
 msgstr "Abaikan"
 
-#: configuredialog.cpp:3827
+#: configuredialog.cpp:3830
 #, fuzzy
 #| msgid "As&k"
 msgid "Ask"
 msgstr "Tany&a"
 
-#: configuredialog.cpp:3832
+#: configuredialog.cpp:3835
 #, fuzzy
 #| msgid "&Deny"
 msgid "Deny"
 msgstr "&Tolak"
 
-#: configuredialog.cpp:3837
+#: configuredialog.cpp:3840
 #, fuzzy
 #| msgid "Al&ways send"
 msgid "Always send"
 msgstr "Senti&asa hantar"
 
-#: configuredialog.cpp:3847
+#: configuredialog.cpp:3850
 msgid "Quote original message:"
 msgstr "Petik  mesej asal:"
 
-#: configuredialog.cpp:3849
+#: configuredialog.cpp:3852
 #, fuzzy
 #| msgid "Nothin&g"
 msgid "Nothing"
 msgstr "Tiad&a apa-apa"
 
-#: configuredialog.cpp:3854
+#: configuredialog.cpp:3857
 #, fuzzy
 #| msgid "&Full message"
 msgid "Full message"
 msgstr "Mesej &Penuh"
 
-#: configuredialog.cpp:3859
+#: configuredialog.cpp:3862
 #, fuzzy
 #| msgid "Onl&y headers"
 msgid "Only headers"
 msgstr "Pengepala sahaj&a"
 
-#: configuredialog.cpp:3865
+#: configuredialog.cpp:3868
 msgid "Do not send MDNs in response to encrypted messages"
 msgstr "Jangan hantar MDN sebagai respons kepada mesej sulit"
 
-#: configuredialog.cpp:3870
+#: configuredialog.cpp:3873
 #, fuzzy
 msgid ""
 "<b>WARNING:</b> Unconditionally returning confirmations undermines your "
@@ -2031,129 +2108,129 @@ msgstr ""
 "<b>AMARAN:</b> Mengembalikan pengesahan tanpa syarat akan  mengganggu "
 "privasi anda. <a href=\"whatsthis:%1\">Lebih lanjut...</a>"
 
-#: configuredialog.cpp:3884
+#: configuredialog.cpp:3887
 msgid "Certificate && Key Bundle Attachments"
 msgstr "Sijil && Lampiran && Kekunci Bandel "
 
-#: configuredialog.cpp:3887
+#: configuredialog.cpp:3890
 msgid "Automatically import keys and certificates"
 msgstr "Mengimport kekunci dan sijil secara automatik"
 
-#: configuredialog.cpp:3963
+#: configuredialog.cpp:3966
 msgid ""
 "Changing the global HTML setting will override all folder specific values."
 msgstr ""
 "Mengubah seting HTML global akan menulis tindih nilai yang dinyatakan dalam "
 "semua folder"
 
-#: configuredialog.cpp:4284
+#: configuredialog.cpp:4287
 msgid "This option requires dirmngr >= 0.9.0"
 msgstr "Opsyen ini perlukan dirmngr >= 0.9.0"
 
 #. i18n: file: smimeconfiguration.ui:182
 #. i18n: ectx: property (text), widget (QLabel, systemHTTPProxy)
-#: configuredialog.cpp:4393 rc.cpp:999
+#: configuredialog.cpp:4396 rc.cpp:999
 msgid "no proxy"
 msgstr "Tiada proksi"
 
-#: configuredialog.cpp:4394
+#: configuredialog.cpp:4397
 #, kde-format
 msgid "(Current system setting: %1)"
 msgstr "(Seting sistem semasa: %1)"
 
-#: configuredialog.cpp:4553
+#: configuredialog.cpp:4556
 #, fuzzy
 #| msgid "&Folders"
 msgid "Folders"
 msgstr "&Folder"
 
-#: configuredialog.cpp:4556
+#: configuredialog.cpp:4559
 #, fuzzy
 #| msgid "&Groupware"
 msgid "Groupware"
 msgstr "&Groupware"
 
-#: configuredialog.cpp:4578
+#: configuredialog.cpp:4581
 msgctxt "Corresponds to Folder->Move All Messages to Trash"
 msgid "Ask for co&nfirmation before moving all messages to trash"
 msgstr "Minta kepas&tian sebelum mengalihkan semua mesej ke tong sampah"
 
-#: configuredialog.cpp:4585
+#: configuredialog.cpp:4588
 msgid "E&xclude important messages from expiry"
 msgstr "&Keluarkan mesej penting dari peluputan"
 
-#: configuredialog.cpp:4600
+#: configuredialog.cpp:4603
 msgctxt ""
 "to be continued with \"do not loop\", \"loop in current folder\", and \"loop "
 "in all folders\"."
 msgid "When trying to find unread messages:"
 msgstr "Apabila cuba mencari mesej belum baca:"
 
-#: configuredialog.cpp:4604
+#: configuredialog.cpp:4607
 msgctxt "continuation of \"When trying to find unread messages:\""
 msgid "Do not Loop"
 msgstr "Jangan gelungkan"
 
-#: configuredialog.cpp:4606
+#: configuredialog.cpp:4609
 msgctxt "continuation of \"When trying to find unread messages:\""
 msgid "Loop in Current Folder"
 msgstr "Gelungkan dalam Mesej Semasa"
 
-#: configuredialog.cpp:4608
+#: configuredialog.cpp:4611
 msgctxt "continuation of \"When trying to find unread messages:\""
 msgid "Loop in All Folders"
 msgstr "Gelungkan dalam Semua Folder"
 
-#: configuredialog.cpp:4623
+#: configuredialog.cpp:4626
 msgctxt ""
 "to be continued with \"jump to first new message\", \"jump to first unread "
 "or new message\",and \"jump to last selected message\"."
 msgid "When entering a folder:"
 msgstr "Apabila masuk ke folder:"
 
-#: configuredialog.cpp:4627
+#: configuredialog.cpp:4630
 msgctxt "continuation of \"When entering a folder:\""
 msgid "Jump to First New Message"
 msgstr "Langkau ke Mesej Baru Pertama"
 
-#: configuredialog.cpp:4629
+#: configuredialog.cpp:4632
 msgctxt "continuation of \"When entering a folder:\""
 msgid "Jump to First Unread or New Message"
 msgstr "Langkau ke Mesej Belum Baca Pertama atau Mesej Baru"
 
-#: configuredialog.cpp:4631
+#: configuredialog.cpp:4634
 msgctxt "continuation of \"When entering a folder:\""
 msgid "Jump to Last Selected Message"
 msgstr "Langkau ke Mesej Terakhir Dipilih"
 
-#: configuredialog.cpp:4639
+#: configuredialog.cpp:4642
 msgid "Mar&k selected message as read after"
 msgstr "Tan&dakan mesej yang dipilih sebagai baca selepas"
 
-#: configuredialog.cpp:4643
+#: configuredialog.cpp:4646
 msgid " sec"
 msgstr "saat"
 
-#: configuredialog.cpp:4656
+#: configuredialog.cpp:4659
 msgid "Ask for action after &dragging messages to another folder"
 msgstr "Tanya apa tindakan selepas m&enyeret mesej ke folder lain"
 
-#: configuredialog.cpp:4668
+#: configuredialog.cpp:4671
 msgctxt "to be continued with \"flat files\" and \"directories\", resp."
 msgid "By default, &message folders on disk are:"
 msgstr "Secara piawai, folder &mesej atas cakera ialah:"
 
-#: configuredialog.cpp:4672
+#: configuredialog.cpp:4675
 msgctxt "continuation of \"By default, &message folders on disk are\""
 msgid "Flat Files (\"mbox\" format)"
 msgstr "Fail Rata (\"mbox\" format)"
 
-#: configuredialog.cpp:4674
+#: configuredialog.cpp:4677
 msgctxt "continuation of \"By default, &message folders on disk are\""
 msgid "Directories (\"maildir\" format)"
 msgstr "Direktori (\"maildir\" format)"
 
-#: configuredialog.cpp:4677
+#: configuredialog.cpp:4680
 msgctxt "what's this help"
 msgid ""
 "<qt><p>This selects which mailbox format will be the default for local "
@@ -2175,32 +2252,32 @@ msgstr ""
 "ruang dalam cakera, tetapi ia sepatutnya lebih kukuh, contohnya, semasa "
 "mengalihkan mesej antara folder.</p></qt>"
 
-#: configuredialog.cpp:4702
+#: configuredialog.cpp:4705
 msgid "Open this folder on startup:"
 msgstr "Buka folder ini semasa pemulaan:"
 
-#: configuredialog.cpp:4712
+#: configuredialog.cpp:4715
 msgid "Empty local &trash folder on program exit"
 msgstr "Kosongkan folder &sampah setempat semasa keluar program"
 
-#: configuredialog.cpp:4723
+#: configuredialog.cpp:4726
 #, fuzzy
 msgid "Quota units: "
 msgstr "Petunjuk &Petikan:"
 
-#: configuredialog.cpp:4726 quotajobs.h:90
+#: configuredialog.cpp:4729 quotajobs.h:90
 msgid "KB"
 msgstr ""
 
-#: configuredialog.cpp:4727 quotajobs.h:95
+#: configuredialog.cpp:4730 quotajobs.h:95
 msgid "MB"
 msgstr ""
 
-#: configuredialog.cpp:4728 quotajobs.h:100
+#: configuredialog.cpp:4731 quotajobs.h:100
 msgid "GB"
 msgstr ""
 
-#: configuredialog.cpp:4737
+#: configuredialog.cpp:4740
 msgctxt "what's this help"
 msgid ""
 "<qt><p>When jumping to the next unread message, it may occur that no more "
@@ -2225,83 +2302,95 @@ msgstr ""
 "sebelumnya, carian akan bermula dari mesej terbawah senarai dan bersambung "
 "ke folder sebelumnya bergantung kepada opsyen yang dipilih.</p></qt>"
 
-#: configuredialog.cpp:4809
+#: configuredialog.cpp:4812
 msgid "&IMAP Resource Folder Options"
 msgstr "Opsyen Folder Sumber &IMAP"
 
-#: configuredialog.cpp:4813
+#: configuredialog.cpp:4816
 msgid "&Enable IMAP resource functionality"
 msgstr "&Aktifkan sumber keberfungsian IMAP"
 
-#: configuredialog.cpp:4814
+#: configuredialog.cpp:4817
 msgid "This enables the IMAP storage for the Kontact applications"
 msgstr "Ini mengaktifkan storan IMAP aplikasi Kontact"
 
-#: configuredialog.cpp:4829
+#: configuredialog.cpp:4832
 msgid "&Format used for the groupware folders:"
 msgstr "&Format digunakan untuk folder groupware:"
 
-#: configuredialog.cpp:4831
+#: configuredialog.cpp:4834
 msgid ""
 "Choose the format to use to store the contents of the groupware folders."
 msgstr ""
 "Pilih format yang digunakan untuk menstorkan kandungan folder groupware."
 
-#: configuredialog.cpp:4841
+#: configuredialog.cpp:4844
 msgid "Deprecated Kolab1 (iCal/vCard)"
 msgstr ""
 
-#: configuredialog.cpp:4841
+#: configuredialog.cpp:4844
 #, fuzzy
 #| msgid "Kolab (XML)"
 msgid "Kolab2 (XML)"
 msgstr "Kolab (XML)"
 
-#: configuredialog.cpp:4849
+#: configuredialog.cpp:4852
 msgid "&Language of the groupware folders:"
 msgstr "&Bahasa folder groupware:"
 
-#: configuredialog.cpp:4852
+#: configuredialog.cpp:4855
 msgid "Set the language of the folder names"
 msgstr "Setkan bahasa nama folder"
 
-#: configuredialog.cpp:4862
+#: configuredialog.cpp:4865
+#, fuzzy
+#| msgid "English"
+msgctxt "@item:inlistbox Englis language."
 msgid "English"
 msgstr "English"
 
-#: configuredialog.cpp:4862
+#: configuredialog.cpp:4866
+#, fuzzy
+#| msgid "German"
+msgctxt "@item:inlistbox German language"
 msgid "German"
 msgstr "German"
 
-#: configuredialog.cpp:4862
+#: configuredialog.cpp:4867
+#, fuzzy
+#| msgid "French"
+msgctxt "@item:inlistbox French language"
 msgid "French"
 msgstr "French"
 
-#: configuredialog.cpp:4862
+#: configuredialog.cpp:4868
+#, fuzzy
+#| msgid "Dutch"
+msgctxt "@item:inlistbox Dutch language"
 msgid "Dutch"
 msgstr "Dutch"
 
-#: configuredialog.cpp:4871
+#: configuredialog.cpp:4877
 msgid "Set the parent of the resource folders"
 msgstr "Setkan induk folder sumber"
 
-#: configuredialog.cpp:4900
+#: configuredialog.cpp:4906
 msgid "&Hide groupware folders"
 msgstr "&Sembunyikan folder groupware"
 
-#: configuredialog.cpp:4904
+#: configuredialog.cpp:4910
 msgid ""
 "When this is checked, you will not see the IMAP resource folders in the "
 "folder tree."
 msgstr ""
 "Jika ini disemak, folder sumber IMAP tidak dapat dilihat dalam pepohon folder"
 
-#: configuredialog.cpp:4914
+#: configuredialog.cpp:4920
 #, fuzzy
 msgid "&Only show groupware folders for this account"
 msgstr "Folder &Sumber adalah di dalam akaun:"
 
-#: configuredialog.cpp:4918
+#: configuredialog.cpp:4924
 #, fuzzy
 msgid ""
 "When this is checked, you will not see normal  mail folders in the folder "
@@ -2309,65 +2398,65 @@ msgid ""
 msgstr ""
 "Jika ini disemak, folder sumber IMAP tidak dapat dilihat dalam pepohon folder"
 
-#: configuredialog.cpp:4926
+#: configuredialog.cpp:4932
 msgid "Synchronize groupware changes immediately"
 msgstr ""
 
-#: configuredialog.cpp:4927
+#: configuredialog.cpp:4933
 msgid ""
 "Synchronize groupware changes in disconnected IMAP folders immediately when "
 "being online."
 msgstr ""
 
-#: configuredialog.cpp:4940
+#: configuredialog.cpp:4946
 msgid "Groupware Compatibility && Legacy Options"
 msgstr "Keserasian Groupware && Opsyen Warisan"
 
-#: configuredialog.cpp:4946
+#: configuredialog.cpp:4952
 msgid "&Enable groupware functionality"
 msgstr "&Aktifkan keberfungsian groupware"
 
-#: configuredialog.cpp:4954
+#: configuredialog.cpp:4960
 msgid "Mangle From:/To: headers in replies to invitations"
 msgstr "Koyakkan Dari:/Ke: pengepala dalam jawapan kepada  undangan"
 
-#: configuredialog.cpp:4955
+#: configuredialog.cpp:4961
 msgid ""
 "Turn this option on in order to make Outlook(tm) understand your answers to "
 "invitation replies"
 msgstr "Buka opsyen ini supaya Outlook (tm) faham  jawapan terhadap undangan"
 
-#: configuredialog.cpp:4960
+#: configuredialog.cpp:4966
 msgid "Send invitations in the mail body"
 msgstr "Hantar undangan dalam isi mel"
 
-#: configuredialog.cpp:4961
+#: configuredialog.cpp:4967
 msgid ""
 "Turn this option on in order to make Outlook(tm) understand your answers to "
 "invitations"
 msgstr "Buka opsyen ini  supaya Outlook (tm) faham jawapan terhadap undangan"
 
-#: configuredialog.cpp:4969
+#: configuredialog.cpp:4975
 #, fuzzy
 #| msgid "Automatic invitation sending"
 msgid "Exchange compatible invitation naming"
 msgstr "Penghantaran undangan automatik"
 
-#: configuredialog.cpp:4971
+#: configuredialog.cpp:4977
 msgid ""
 "Microsoft Outlook, when used in combination with a Microsoft Exchange server,"
-"<br>has a problem understanding standards-compliant groupware e-mail."
-"<br>Turn this option on to send groupware invitations in a way that "
-"Microsoft Exchange understands."
+"<br/>has a problem understanding standards-compliant groupware e-mail.<br/"
+">Turn this option on to send groupware invitations in a way that Microsoft "
+"Exchange understands."
 msgstr ""
 
 #. i18n: file: kmail.kcfg:187
 #. i18n: ectx: label, entry (AutomaticSending), group (Groupware)
-#: configuredialog.cpp:4979 rc.cpp:347
+#: configuredialog.cpp:4985 rc.cpp:347
 msgid "Automatic invitation sending"
 msgstr "Penghantaran undangan automatik"
 
-#: configuredialog.cpp:4980
+#: configuredialog.cpp:4986
 msgid ""
 "When this is on, the user will not see the mail composer window. Invitation "
 "mails are sent automatically"
@@ -2375,7 +2464,7 @@ msgstr ""
 "Jika ini dibuka, pengguna tidak nampak tetingkap penggubah mel. Mel undangan "
 "akan dihantar secara automatik"
 
-#: configuredialog.cpp:4993
+#: configuredialog.cpp:4999
 #, fuzzy
 #| msgid ""
 #| "<qt>Invitations are normally sent as attachments to a mail. This switch "
@@ -2404,15 +2493,15 @@ msgstr ""
 "e-mel yang tidak memahami undangan tersebut.<br>Pemilik program e-mel yang "
 "memahami undangan ini tidak akan menghadapi sebarang masalah.</qt>"
 
-#: configuredialog.cpp:5047
+#: configuredialog.cpp:5053
 msgid "<Choose a Folder>"
 msgstr "<Choose a Folder>"
 
-#: configuredialog.cpp:5157
+#: configuredialog.cpp:5163
 msgid "&Resource folders are subfolders of:"
 msgstr "Folder &Sumber adalah subfolder kepada:"
 
-#: configuredialog.cpp:5160
+#: configuredialog.cpp:5166
 msgid "&Resource folders are in account:"
 msgstr "Folder &Sumber adalah di dalam akaun:"
 
@@ -2544,6 +2633,19 @@ msgstr "Simpan Senarai Agihan"
 msgid "Save List"
 msgstr "Simpan Senarai"
 
+#. i18n: file: snippetdlgbase.ui:19
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: distributionlistdialog.cpp:116 kmfolderdialog.cpp:287
+#: newfolderdialog.cpp:85 rc.cpp:1030
+msgid "&Name:"
+msgstr "&Nama:"
+
+#. i18n: file: customtemplates_base.ui:85
+#. i18n: ectx: property (text), widget (QTreeWidget, mList)
+#: distributionlistdialog.cpp:127 rc.cpp:59 recipientspicker.cpp:363
+msgid "Name"
+msgstr "Nama"
+
 #: distributionlistdialog.cpp:127 recipientspicker.cpp:364
 msgid "Email"
 msgstr "E-mel"
@@ -2657,6 +2759,9 @@ msgid "Expire read messages after"
 msgstr "Luputkan mel sudah baca selepas"
 
 #: expirypropertiesdialog.cpp:65 expirypropertiesdialog.cpp:83
+#, fuzzy
+#| msgid "days"
+msgctxt "Unit label of the expiry time."
 msgid "days"
 msgstr "hari"
 
@@ -2729,6 +2834,10 @@ msgstr "Folder &Baru..."
 #| msgid "Rename Filter"
 msgid "Rename Favorite"
 msgstr "Namakan Semula Penapis"
+
+#: favoritefolderview.cpp:389
+msgid "Name:"
+msgstr "Nama:"
 
 #: favoritefolderview.cpp:406
 #, fuzzy
@@ -3054,7 +3163,7 @@ msgstr ""
 msgid "You can start typing to filter the list of folders."
 msgstr ""
 
-#: folderselectiontreewidget.cpp:61 kmfoldertree.cpp:398 searchwindow.cpp:228
+#: folderselectiontreewidget.cpp:61 kmfoldertree.cpp:398
 msgid "Folder"
 msgstr "Folder"
 
@@ -3145,7 +3254,10 @@ msgstr "Tarikh: "
 msgid "From: "
 msgstr "Daripada: "
 
-#: headerstyle.cpp:277 headerstyle.cpp:597 headerstyle.cpp:804
+#: headerstyle.cpp:277
+#, fuzzy
+#| msgid "To: "
+msgctxt "To-field of the mailheader."
 msgid "To: "
 msgstr "Ke:"
 
@@ -3185,6 +3297,13 @@ msgstr ""
 msgid "(resent from %1)"
 msgstr ""
 
+#: headerstyle.cpp:597
+#, fuzzy
+#| msgid "To: "
+msgctxt "To-field of the mail header."
+msgid "To: "
+msgstr "Ke:"
+
 #: headerstyle.cpp:626
 #, fuzzy
 msgid "User-Agent: "
@@ -3197,6 +3316,13 @@ msgstr ""
 #: headerstyle.cpp:646
 msgid "Spam Status:"
 msgstr "Status spam:"
+
+#: headerstyle.cpp:804
+#, fuzzy
+#| msgid "To: "
+msgctxt "To field of the mail header."
+msgid "To: "
+msgstr "Ke:"
 
 #: htmlstatusbar.cpp:93
 #, fuzzy
@@ -3224,6 +3350,13 @@ msgstr ""
 #: identitydialog.cpp:95
 msgid "Edit Identity"
 msgstr "Edit Identiti"
+
+#: identitydialog.cpp:120
+#, fuzzy
+#| msgid "General"
+msgctxt "@title:tab General identity settings."
+msgid "General"
+msgstr "Umum"
 
 #: identitydialog.cpp:131
 msgid "&Your name:"
@@ -3421,6 +3554,9 @@ msgid "Preferred crypto message format:"
 msgstr "Format mesej kripto yang diutamakan:"
 
 #: identitydialog.cpp:313
+#, fuzzy
+#| msgid "Advanced"
+msgctxt "@title:tab Advanced identity settings."
 msgid "Advanced"
 msgstr "Lanjutan"
 
@@ -5051,9 +5187,17 @@ msgstr "Pilih Mesej yang ada Fokus"
 msgid "&Encrypt Message"
 msgstr "&Sulitkan Mesej"
 
+#: kmcomposewin.cpp:1278
+msgid "Encrypt"
+msgstr "Sulitkan"
+
 #: kmcomposewin.cpp:1280
 msgid "&Sign Message"
 msgstr "&Tandatangan Mesej"
+
+#: kmcomposewin.cpp:1281
+msgid "Sign"
+msgstr "Tandatangan"
 
 #: kmcomposewin.cpp:1328
 msgid "&Cryptographic Message Format"
@@ -5246,6 +5390,10 @@ msgstr ""
 msgctxt "Do not compress"
 msgid "Keep"
 msgstr "&Bip"
+
+#: kmcomposewin.cpp:2689
+msgid "Compress"
+msgstr "Mampatkan"
 
 #: kmcomposewin.cpp:2748 kmcomposewin.cpp:2756
 msgid "KMail could not uncompress the file."
@@ -5871,6 +6019,12 @@ msgstr "dari akaun disemak sahaja"
 msgid "Account Name"
 msgstr "Nama Akaun"
 
+#. i18n: file: customtemplates_base.ui:80
+#. i18n: ectx: property (text), widget (QTreeWidget, mList)
+#: kmfilterdlg.cpp:237 kmmimeparttree.cpp:64 rc.cpp:56
+msgid "Type"
+msgstr "Jenis"
+
 #: kmfilterdlg.cpp:245
 msgid "Apply this filter to &sent messages"
 msgstr "Gunakan penapis ini ke mesej &hantaran"
@@ -6332,6 +6486,10 @@ msgstr "Alihkan Mesej ke Folder"
 msgid "Permissions (ACL)"
 msgstr "Keizinan (SKA)"
 
+#: kmfolderdialog.cpp:122
+msgid "General"
+msgstr "Umum"
+
 #: kmfolderdialog.cpp:141
 msgid "Access Control"
 msgstr "Kawalan Akses "
@@ -6526,7 +6684,7 @@ msgstr "<qt>Folder <b>%1</b> tidak dapat dibaca.</qt>"
 msgid "Removing folder"
 msgstr "Menamakan semula folder"
 
-#: kmfolderimap.cpp:256 searchjob.cpp:274
+#: kmfolderimap.cpp:256 searchjob.cpp:275
 #, kde-format
 msgid "URL: %1"
 msgstr ""
@@ -6884,6 +7042,12 @@ msgctxt "@title:column Collumn showing the total number of messages"
 msgid "Total"
 msgstr "Total"
 
+#: kmfoldertree.cpp:1729 kmheaders.cpp:166 kmheaders.cpp:213
+#: kmmainwidget.cpp:583 kmmainwidget.cpp:590 kmmainwidget.cpp:597
+#: kmmimeparttree.cpp:66
+msgid "Size"
+msgstr "Saiz"
+
 #: kmfoldertree.cpp:1939
 msgid "Move to This Folder"
 msgstr "Alih ke folder ini"
@@ -6950,7 +7114,12 @@ msgstr "Diawasi/Diabaikan"
 msgid "Encryption"
 msgstr "Penyulitan"
 
-#: kmheaders.cpp:212 kmheaders.cpp:785 kmheaders.cpp:2661 searchwindow.cpp:227
+#: kmheaders.cpp:210 kmheaders.cpp:790 kmheaders.cpp:2666
+#: kmsearchpatternedit.cpp:55
+msgid "Subject"
+msgstr "Subjek"
+
+#: kmheaders.cpp:212 kmheaders.cpp:785 kmheaders.cpp:2661
 #: templatesinsertcommand.cpp:68 templatesinsertcommand.cpp:192
 msgid "Date"
 msgstr "Tarikh"
@@ -7050,12 +7219,12 @@ msgid "Moving messages canceled."
 msgstr "Pengalihan mesej dibatalkan."
 
 #: kmheaders.cpp:2491 kmmainwidget.cpp:3088 kmreadermainwin.cpp:329
-#: searchwindow.cpp:836
+#: searchwindow.cpp:839
 msgid "&Copy To"
 msgstr "&Salin Ke"
 
 #: kmheaders.cpp:2495 kmheaders.cpp:2501 kmmainwidget.cpp:3085
-#: searchwindow.cpp:838
+#: searchwindow.cpp:841
 msgid "&Move To"
 msgstr "&Alihkan Ke"
 
@@ -7142,8 +7311,8 @@ msgstr "&Gantikan"
 msgid "You do not have read/write permission to your templates folder."
 msgstr "Anda tidak mempunyai keizinan baca/tulis ke folder sampah anda."
 
-#: kmkernel.cpp:1425 searchwindow.cpp:254 searchwindow.cpp:478
-#: searchwindow.cpp:632
+#: kmkernel.cpp:1425 searchwindow.cpp:256 searchwindow.cpp:481
+#: searchwindow.cpp:635
 msgid "Last Search"
 msgstr "Carian Terakhir"
 
@@ -7788,17 +7957,17 @@ msgstr "Tiada mesej baru dari pelayan"
 msgid "New Message t&o Mailing-List..."
 msgstr "Mesej Baru k&e Senarai Hantar/Terima Mel..."
 
-#: kmmainwidget.cpp:2972 kmreadermainwin.cpp:295 searchwindow.cpp:322
+#: kmmainwidget.cpp:2972 kmreadermainwin.cpp:295 searchwindow.cpp:324
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Perpanjangkan"
 
-#: kmmainwidget.cpp:2977 kmreadermainwin.cpp:300 searchwindow.cpp:330
+#: kmmainwidget.cpp:2977 kmreadermainwin.cpp:300 searchwindow.cpp:333
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "Sebagai  &Lampiran..."
 
-#: kmmainwidget.cpp:2982 kmreadermainwin.cpp:306 searchwindow.cpp:326
+#: kmmainwidget.cpp:2982 kmreadermainwin.cpp:306
 msgid "&Inline..."
 msgstr "&Dalam baris..."
 
@@ -8306,6 +8475,10 @@ msgstr ""
 msgid "Later"
 msgstr "Hantar kemudian"
 
+#: kmmimeparttree.cpp:65
+msgid "Encoding"
+msgstr "Pengekodan"
+
 #: kmmimeparttree.cpp:175 kmreaderwin.cpp:1987
 msgid "Open With..."
 msgstr "Buka Dengan..."
@@ -8348,6 +8521,9 @@ msgid "Quoted Printable"
 msgstr "Petikan Boleh Cetak"
 
 #: kmmsgpartdlg.cpp:44
+#, fuzzy
+#| msgid "Base 64"
+msgctxt "Base 64 message encoding."
 msgid "Base 64"
 msgstr "Asas 64"
 
@@ -8380,6 +8556,13 @@ msgstr ""
 "di sini, kerana mengira saiz secara tepat mengambil masa yang terlalu lama; "
 "jika kes ini berlaku, ia boleh dilihat dengan menambah \"(anggaran.)\" "
 "kepada saiz yang dipaparkan.</p></qt>"
+
+#: kmmsgpartdlg.cpp:120
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "file name of the attachment."
+msgid "&Name:"
+msgstr "&Nama:"
 
 #: kmmsgpartdlg.cpp:125
 msgid ""
@@ -9298,11 +9481,16 @@ msgstr ""
 "kecuali yakin  %1 tidak berjalan di %3."
 
 #: kmstartup.cpp:228
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Start %1"
+msgctxt "Start kmail even when another instance is running."
 msgid "Start %1"
 msgstr "Mulakan %1"
 
 #: kmstartup.cpp:229
+#, fuzzy
+#| msgid "Exit"
+msgctxt "Do not start another kmail instance."
 msgid "Exit"
 msgstr "Keluar"
 
@@ -9484,7 +9672,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Jawab"
 
-#: messageactions.cpp:49 searchwindow.cpp:313
+#: messageactions.cpp:49 searchwindow.cpp:315
 msgid "&Reply..."
 msgstr "&Jawab"
 
@@ -9492,11 +9680,11 @@ msgstr "&Jawab"
 msgid "Reply to A&uthor..."
 msgstr "Jawab kepada &Pengarang..."
 
-#: messageactions.cpp:63 searchwindow.cpp:316
+#: messageactions.cpp:63 searchwindow.cpp:318
 msgid "Reply to &All..."
 msgstr "Jawab kepada &Semua"
 
-#: messageactions.cpp:70 searchwindow.cpp:319
+#: messageactions.cpp:70 searchwindow.cpp:321
 msgid "Reply to Mailing-&List..."
 msgstr "Jawab kepada &Senarai Mel..."
 
@@ -10037,12 +10225,15 @@ msgstr "Tanda tangan menghasilkan keputusan berbeza"
 msgid "The crypto engine returned no cleartext data."
 msgstr "Tiada data teks kosong dikembalikan oleh enjin kripto."
 
-#: objecttreeparser.cpp:572 objecttreeparser.cpp:2376
-#: objecttreeparser.cpp:2419
+#: objecttreeparser.cpp:572 objecttreeparser.cpp:2377
+#: objecttreeparser.cpp:2420
 msgid "Status: "
 msgstr "Status: "
 
 #: objecttreeparser.cpp:579
+#, fuzzy
+#| msgid "(unknown)"
+msgctxt "Status of message unknown."
 msgid "(unknown)"
 msgstr "(tidak diketahui)"
 
@@ -10181,7 +10372,9 @@ msgid "Certificate import details:"
 msgstr "Perincian import sijil:"
 
 #: objecttreeparser.cpp:1521
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed: %1 (%2)"
+msgctxt "Certificate import failed."
 msgid "Failed: %1 (%2)"
 msgstr "Gagal: %1 (%2)"
 
@@ -10340,25 +10533,28 @@ msgstr "[Perincian]"
 msgid "certificate"
 msgstr "Sijil"
 
-#: objecttreeparser.cpp:2267 objecttreeparser.cpp:2292
+#: objecttreeparser.cpp:2268 objecttreeparser.cpp:2293
+#, fuzzy
+#| msgid "Warning:"
+msgctxt "Start of warning message."
 msgid "Warning:"
 msgstr "Amaran:"
 
-#: objecttreeparser.cpp:2269
+#: objecttreeparser.cpp:2270
 #, kde-format
 msgid "Sender's mail address is not stored in the %1 used for signing."
 msgstr ""
 "Alamat penghantar mel tidak distor dalam %1 yang digunakan untuk tandatangan."
 
-#: objecttreeparser.cpp:2272
+#: objecttreeparser.cpp:2273
 msgid "sender: "
 msgstr "Pengirim:"
 
-#: objecttreeparser.cpp:2275
+#: objecttreeparser.cpp:2276
 msgid "stored: "
 msgstr "distor:"
 
-#: objecttreeparser.cpp:2294
+#: objecttreeparser.cpp:2295
 #, kde-format
 msgid ""
 "No mail address is stored in the %1 used for signing, so we cannot compare "
@@ -10367,94 +10563,94 @@ msgstr ""
 "Tiada alamat mel yang distor dalam %1 digunakan untuk tandatangan, jadi "
 "perbandingan dengan alamat penghantar %2 tidak boleh dibuat."
 
-#: objecttreeparser.cpp:2318
+#: objecttreeparser.cpp:2319
 #, kde-format
 msgid "Not enough information to check signature. %1"
 msgstr "Tidak cukup maklumat untuk menyemak tanda tangan. %1"
 
-#: objecttreeparser.cpp:2335 objecttreeparser.cpp:2413
+#: objecttreeparser.cpp:2336 objecttreeparser.cpp:2414
 msgid "Message was signed with unknown key."
 msgstr "Mesej ditandatangani dengan kekunci yang tidak diketahui."
 
-#: objecttreeparser.cpp:2337 objecttreeparser.cpp:2451
-#: objecttreeparser.cpp:2495
+#: objecttreeparser.cpp:2338 objecttreeparser.cpp:2452
+#: objecttreeparser.cpp:2496
 #, kde-format
 msgid "Message was signed by %1."
 msgstr "Mesej ditandatangani oleh %1."
 
-#: objecttreeparser.cpp:2344 objecttreeparser.cpp:2353
-#: objecttreeparser.cpp:2364
+#: objecttreeparser.cpp:2345 objecttreeparser.cpp:2354
+#: objecttreeparser.cpp:2365
 #, kde-format
 msgid "Message was signed with key %1."
 msgstr "Mesej ditandatangani dengan kekunci %1."
 
-#: objecttreeparser.cpp:2347
+#: objecttreeparser.cpp:2348
 #, kde-format
 msgid "Message was signed on %1 with key %2."
 msgstr "Mesej ditandatangani pada %1 dengan kekunci %2"
 
-#: objecttreeparser.cpp:2356
+#: objecttreeparser.cpp:2357
 #, kde-format
 msgid "Message was signed by %3 on %1 with key %2"
 msgstr "Mesej ditandatangani oleh %3 pada %1 dengan kekunci %2"
 
-#: objecttreeparser.cpp:2367
+#: objecttreeparser.cpp:2368
 #, kde-format
 msgid "Message was signed by %2 with key %1."
 msgstr "Mesej ditandatangani oleh %2 dengan kekunci %1."
 
-#: objecttreeparser.cpp:2405
+#: objecttreeparser.cpp:2406
 #, kde-format
 msgid "Message was signed on %1 with unknown key %2."
 msgstr "Mesej ditandatangani pada %1 dengan kekunci %2 yang tidak diketahui."
 
-#: objecttreeparser.cpp:2409
+#: objecttreeparser.cpp:2410
 #, kde-format
 msgid "Message was signed with unknown key %1."
 msgstr "Mesej ditandatangani dengan kekunci %1 yang tidak diketahui."
 
-#: objecttreeparser.cpp:2415
+#: objecttreeparser.cpp:2416
 msgid "The validity of the signature cannot be verified."
 msgstr "Kesahihan tandatangan tidak boleh disahkan."
 
-#: objecttreeparser.cpp:2447 objecttreeparser.cpp:2491
+#: objecttreeparser.cpp:2448 objecttreeparser.cpp:2492
 #, kde-format
 msgid "Message was signed by %2 (Key ID: %1)."
 msgstr "Mesej ditandatangani oleh %2 (ID kekunci: %1)."
 
-#: objecttreeparser.cpp:2457
+#: objecttreeparser.cpp:2458
 msgid "The signature is valid, but the key's validity is unknown."
 msgstr "Tandatangan sah tetapi kesahihan kekunci tidak diketahui."
 
-#: objecttreeparser.cpp:2461
+#: objecttreeparser.cpp:2462
 msgid "The signature is valid and the key is marginally trusted."
 msgstr "Tandatangan sah dan kekunci agak dipercayai."
 
-#: objecttreeparser.cpp:2465
+#: objecttreeparser.cpp:2466
 msgid "The signature is valid and the key is fully trusted."
 msgstr "Tandatangan sah dan kekunci boleh dipercayai sepenuhnya."
 
-#: objecttreeparser.cpp:2469
+#: objecttreeparser.cpp:2470
 msgid "The signature is valid and the key is ultimately trusted."
 msgstr "Tandatangan sah dan kekunci sangat dipercayai."
 
-#: objecttreeparser.cpp:2473
+#: objecttreeparser.cpp:2474
 msgid "The signature is valid, but the key is untrusted."
 msgstr "Tandatangan sah tetapi kekunci tidak boleh dipercayai."
 
-#: objecttreeparser.cpp:2497
+#: objecttreeparser.cpp:2498
 msgid "Warning: The signature is bad."
 msgstr "Amaran: Tandatangan rosak."
 
-#: objecttreeparser.cpp:2521
+#: objecttreeparser.cpp:2522
 msgid "End of signed message"
 msgstr "Penghujung mesej bertandatangan"
 
-#: objecttreeparser.cpp:2527
+#: objecttreeparser.cpp:2528
 msgid "End of encrypted message"
 msgstr "Penghujung mesej yang disulitkan"
 
-#: objecttreeparser.cpp:2534
+#: objecttreeparser.cpp:2535
 msgid "End of encapsulated message"
 msgstr "Penghujung mesej yang dikapsulkan"
 
@@ -12053,6 +12249,9 @@ msgstr "Bar alat HTML"
 #. i18n: file: kmmainwin.rc:10
 #. i18n: ectx: Menu (file_new)
 #: rc.cpp:653
+#, fuzzy
+#| msgid "New"
+msgctxt "@title:menu New message, folder or new window."
 msgid "New"
 msgstr "Baru"
 
@@ -12224,7 +12423,7 @@ msgstr "&Biarkan mesej yang dikutip berada dalam pelayan"
 #. i18n: file: warningconfiguration.ui:252
 #. i18n: ectx: property (suffix), widget (QSpinBox, mWarnEncrRootCertExpiresSB)
 #: rc.cpp:839 rc.cpp:1121 rc.cpp:1135 rc.cpp:1149 rc.cpp:1163 rc.cpp:1177
-#: rc.cpp:1191 rulewidgethandlermanager.cpp:1366
+#: rc.cpp:1191
 msgid " days"
 msgstr "hari"
 
@@ -13013,33 +13212,34 @@ msgstr "Pilih penerima dari buku alamat"
 #: recipientseditor.cpp:782
 #, fuzzy
 #| msgid "No recipients"
-msgctxt "@info:status Number of recipients selected"
+msgctxt "@info:status No recipients selected"
 msgid "No recipients"
 msgstr "Tiada penerima"
 
-#: recipientseditor.cpp:783
+#: recipientseditor.cpp:784
 #, fuzzy, kde-format
+msgctxt "@info:status Number of recipients selected"
 msgid "1 recipient"
 msgid_plural "%1 recipients"
 msgstr[0] "_n: 1 penerima"
 msgstr[1] "%1 penerima"
 
-#: recipientseditor.cpp:822
+#: recipientseditor.cpp:823
 msgctxt "@info:tooltip"
 msgid "<interface>To:</interface><nl/>"
 msgstr ""
 
-#: recipientseditor.cpp:823
+#: recipientseditor.cpp:824
 msgctxt "@info:tooltip"
 msgid "<interface>CC:</interface><nl/>"
 msgstr ""
 
-#: recipientseditor.cpp:824
+#: recipientseditor.cpp:825
 msgctxt "@info:tooltip"
 msgid "<interface>BCC:</interface><nl/>"
 msgstr ""
 
-#: recipientseditor.cpp:918
+#: recipientseditor.cpp:919
 #, fuzzy, kde-format
 #| msgid "Truncating recipients list to %1 of %2 entries."
 msgctxt "@info:status"
@@ -13241,6 +13441,13 @@ msgstr "kurang daripada"
 msgid "is greater than or equal to"
 msgstr "lebih besar daripada atau sama dengan"
 
+#: rulewidgethandlermanager.cpp:1366
+#, fuzzy
+#| msgid " days"
+msgctxt "Unit suffix where units are days."
+msgid " days"
+msgstr "hari"
+
 #: searchjob.cpp:257
 #, kde-format
 msgid ""
@@ -13255,21 +13462,31 @@ msgstr ""
 msgid "Continue Search"
 msgstr "Teruskan Carian"
 
-#: searchjob.cpp:261 searchwindow.cpp:127
+#: searchjob.cpp:261
+#, fuzzy
+#| msgid "&Search"
+msgctxt "Continue search button."
 msgid "&Search"
 msgstr "&Cari"
 
-#: searchjob.cpp:273
+#: searchjob.cpp:274
 msgid "Downloading emails from IMAP server"
 msgstr "Memuat turun e-mel dari pelayan IMAP"
 
-#: searchjob.cpp:355
+#: searchjob.cpp:356
 msgid "Error while searching."
 msgstr "Ralat semasa mencari."
 
 #: searchwindow.cpp:124
 msgid "Find Messages"
 msgstr "Cari Mesej"
+
+#: searchwindow.cpp:127
+#, fuzzy
+#| msgid "&Search"
+msgctxt "@action:button Search for messags"
+msgid "&Search"
+msgstr "&Cari"
 
 #: searchwindow.cpp:146
 msgid "Search in &all local folders"
@@ -13284,79 +13501,114 @@ msgid "I&nclude sub-folders"
 msgstr "&Masukkan subfolder"
 
 #: searchwindow.cpp:227
+#, fuzzy
+#| msgid "Subject"
+msgctxt "@title:column Subject of the found message."
+msgid "Subject"
+msgstr "Subjek"
+
+#: searchwindow.cpp:228
+#, fuzzy
+#| msgid "Sender/Receiver"
+msgctxt "@title:column Sender of the found message."
 msgid "Sender/Receiver"
 msgstr "Penghantar/Penerima"
 
-#: searchwindow.cpp:249
+#: searchwindow.cpp:229
+#, fuzzy
+#| msgid "Date"
+msgctxt "@title:column date of receival ofthe found message."
+msgid "Date"
+msgstr "Tarikh"
+
+#: searchwindow.cpp:230
+#, fuzzy
+#| msgid "Folder"
+msgctxt "@title:column Folder in which the message is found."
+msgid "Folder"
+msgstr "Folder"
+
+#: searchwindow.cpp:251
 msgid "Search folder &name:"
 msgstr "Cari &nama folder: "
 
-#: searchwindow.cpp:257
+#: searchwindow.cpp:259
 #, fuzzy
 msgid "Op&en Search Folder"
 msgstr "Hapuskan Folder"
 
-#: searchwindow.cpp:266
+#: searchwindow.cpp:268
 #, fuzzy
 #| msgid "Open Message"
 msgid "Open &Message"
 msgstr "Buka Mesej"
 
-#: searchwindow.cpp:277
+#: searchwindow.cpp:279
 msgid "AMiddleLengthText..."
 msgstr "Teks Sederhana Panjang..."
 
-#: searchwindow.cpp:278
+#: searchwindow.cpp:280
+#, fuzzy
+#| msgid "Ready."
+msgctxt "@info:status finished searching."
 msgid "Ready."
 msgstr "Sedia."
 
-#: searchwindow.cpp:335
+#: searchwindow.cpp:329
+#, fuzzy
+#| msgid "&Inline..."
+msgctxt "@action:inmenu Forward message inline."
+msgid "&Inline..."
+msgstr "&Dalam baris..."
+
+#: searchwindow.cpp:338
 msgid "Save Attachments..."
 msgstr "Simpan Lampiran..."
 
-#: searchwindow.cpp:340
+#: searchwindow.cpp:343
 msgid "Clear Selection"
 msgstr "Kosongkan Pilihan"
 
-#: searchwindow.cpp:405
+#: searchwindow.cpp:408
 #, fuzzy
+msgctxt "Search finished."
 msgid "Done"
 msgstr "Selesai"
 
-#: searchwindow.cpp:407 searchwindow.cpp:413
+#: searchwindow.cpp:410 searchwindow.cpp:416
 #, fuzzy, kde-format
 msgid "%1 message processed"
 msgid_plural "%1 messages processed"
 msgstr[0] "_n: %1 mesej telah diproses"
 msgstr[1] "%1 mesej telah diproses"
 
-#: searchwindow.cpp:406
+#: searchwindow.cpp:409
 #, fuzzy, kde-format
 msgid "%1 match (%2)"
 msgid_plural "%1 matches (%2)"
 msgstr[0] "_n: %1 padan dengan (%2)"
 msgstr[1] "%1 padan dengan (%2)"
 
-#: searchwindow.cpp:410
+#: searchwindow.cpp:413
 #, fuzzy
 msgid "Search canceled"
 msgstr "Carian dibatalkan"
 
-#: searchwindow.cpp:411
+#: searchwindow.cpp:414
 #, fuzzy, kde-format
 msgid "%1 match so far (%2)"
 msgid_plural "%1 matches so far (%2)"
 msgstr[0] "_n: %1 padanan setakat ini (%2)"
 msgstr[1] "%1 padanan setakat ini (%2)"
 
-#: searchwindow.cpp:417
+#: searchwindow.cpp:420
 #, fuzzy, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] "_n: %1 padan"
 msgstr[1] "%1 padan"
 
-#: searchwindow.cpp:418
+#: searchwindow.cpp:421
 #, fuzzy, kde-format
 msgid "Searching in %1 (message %2)"
 msgstr "Sedang mencari dalam %1 (mesej %2)"
@@ -13848,6 +14100,13 @@ msgstr "Alamat &e-mel:"
 msgid "From Field Last Name"
 msgstr "Alamat &e-mel:"
 
+#: templatesinsertcommand.cpp:163
+#, fuzzy
+#| msgid "Subject"
+msgctxt "Template value for subject of the message"
+msgid "Subject"
+msgstr "Subjek"
+
 #: templatesinsertcommand.cpp:168
 #, fuzzy
 msgid "Quoted Headers"
@@ -13872,6 +14131,13 @@ msgstr "Penggunaan Semasa"
 #, fuzzy
 msgid "From field Name"
 msgstr "Alamat &e-mel:"
+
+#: templatesinsertcommand.cpp:287
+#, fuzzy
+#| msgid "Subject"
+msgctxt "Template subject command."
+msgid "Subject"
+msgstr "Subjek"
 
 #: templatesinsertcommand.cpp:298
 msgid "Process with External Programs"
@@ -13904,6 +14170,7 @@ msgstr ""
 
 #: templatesinsertcommand.cpp:332
 #, fuzzy
+msgctxt "Miscellaneous template commands menu"
 msgid "Miscellaneous"
 msgstr "Perkataan Salah Eja"
 
