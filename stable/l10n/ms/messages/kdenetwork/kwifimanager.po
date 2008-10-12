@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwifimanager\n"
 "POT-Creation-Date: 2006-11-26 03:33+0100\n"
-"PO-Revision-Date: 2008-02-03 00:05+0800\n"
+"PO-Revision-Date: 2008-10-13 00:18+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr "tidak diketahui"
 #: interface_wireless_wirelessextensions.cpp:524
 #, fuzzy
 msgid "Network Name"
-msgstr "Nama Medan"
+msgstr "ESSID (nama rangkaian):"
 
 #: interface_wireless_wirelessextensions.cpp:525
 msgid "Mode"
@@ -47,9 +47,7 @@ msgid "WEP"
 msgstr "WEP"
 
 #: interface_wireless_wirelessextensions.cpp:541
-msgid ""
-"Unable to perform the scan. Please make sure the executable \"iwlist\" is in "
-"your $PATH."
+msgid "Unable to perform the scan. Please make sure the executable \"iwlist\" is in your $PATH."
 msgstr ""
 
 #: interface_wireless_wirelessextensions.cpp:542
@@ -59,19 +57,19 @@ msgid "Scanning not possible"
 msgstr "Pemasangan sekecil mungkin"
 
 #: interface_wireless_wirelessextensions.cpp:566
-msgid ""
-"Your card does not support scanning. The results window will not contain any "
-"results."
+msgid "Your card does not support scanning. The results window will not contain any results."
 msgstr ""
 
-#: interface_wireless_wirelessextensions.cpp:584 networkscanning.cpp:130
+#: interface_wireless_wirelessextensions.cpp:584
+#: networkscanning.cpp:130
+#, fuzzy
 msgid "Managed"
-msgstr ""
+msgstr "Jumlah latihan diurus"
 
 #: interface_wireless_wirelessextensions.cpp:586
 #, fuzzy
 msgid "Ad-Hoc"
-msgstr "Betulkan Tarikh & Masa..."
+msgstr "MOD AD-HOC"
 
 #: kwifimanager.cpp:125
 #, fuzzy
@@ -81,16 +79,18 @@ msgstr "Antaramuka Pengguna"
 #: kwifimanager.cpp:129
 #, fuzzy, c-format
 msgid "Interface %1"
-msgstr "Antaramuka Pengguna"
+msgstr "<b>_Antaramuka:</b>"
 
-#: kwifimanager.cpp:207 strength.cpp:89 strength.cpp:157
+#: kwifimanager.cpp:207
+#: strength.cpp:89
+#: strength.cpp:157
 msgid "N/A"
 msgstr "N/A"
 
 #: kwifimanager.cpp:307
 #, fuzzy
 msgid "&Disable Radio"
-msgstr "Tetapan Radio"
+msgstr "Aliran Radio..."
 
 #: kwifimanager.cpp:312
 #, fuzzy
@@ -113,21 +113,24 @@ msgstr "Pengedit Konfigrasi"
 #: kwifimanager.cpp:334
 #, fuzzy
 msgid "Connection &Statistics"
-msgstr "Sambungan Gagal"
+msgstr ""
+"Statistik bitset:\n"
+"\n"
 
 #: kwifimanager.cpp:336
 #, fuzzy
 msgid "&Acoustic Scanning"
-msgstr "Mengesan melalui antaramuka rangkaian:"
+msgstr "Mengesan jadual inode"
 
 #: kwifimanager.cpp:343
 msgid "Stay in System &Tray on Close"
 msgstr ""
 
-#: kwifimanager.cpp:370 kwifimanager.cpp:419
+#: kwifimanager.cpp:370
+#: kwifimanager.cpp:419
 #, fuzzy
 msgid "Scan for &Networks..."
-msgstr "Cari rangkaian tanpawayar"
+msgstr "Kesan untuk fail boleh dinamakan semula"
 
 #: kwifimanager.cpp:372
 #, fuzzy
@@ -150,7 +153,7 @@ msgstr ""
 #: kwifimanager.cpp:416
 #, fuzzy
 msgid "Scan in progress..."
-msgstr "&Dalam pelayar web"
+msgstr "Pembatalan sedang dilaksanakan"
 
 #: locator.cpp:36
 msgid "AccessPoint: "
@@ -161,8 +164,9 @@ msgid "KWiFiManager - Wireless LAN Manager for KDE"
 msgstr ""
 
 #: main.cpp:39
+#, fuzzy
 msgid "KWiFiManager"
-msgstr ""
+msgstr "Name=KWiFiManager"
 
 #: main.cpp:42
 msgid "Original Author and Maintainer"
@@ -172,19 +176,21 @@ msgstr ""
 msgid "Lots of Fixes and Optimizations, added Session Management"
 msgstr ""
 
-#: networkscanning.cpp:52 networkscanning.cpp:96 status.cpp:359
+#: networkscanning.cpp:52
+#: networkscanning.cpp:96
+#: status.cpp:359
 msgid "off"
 msgstr "off"
 
 #: networkscanning.cpp:58
 #, fuzzy
 msgid "Scan Results"
-msgstr "Program Imbas & OCR"
+msgstr "Hasil carian"
 
 #: networkscanning.cpp:61
 #, fuzzy
 msgid "Switch to Network..."
-msgstr "Pelayan Rangkaian Lama"
+msgstr "akses ke alatan rangkaian"
 
 #: networkscanning.cpp:82
 msgid "The scan is complete, but no networks have been found."
@@ -193,7 +199,7 @@ msgstr ""
 #: networkscanning.cpp:82
 #, fuzzy
 msgid "No Network Available"
-msgstr "Pelayan Rangkaian Lama"
+msgstr "Tiada pemacu liut didapati!"
 
 #: networkscanning.cpp:88
 #, fuzzy
@@ -207,17 +213,17 @@ msgstr ""
 #: networkscanning.cpp:112
 #, fuzzy
 msgid "Invalid WEP Key"
-msgstr "Gugusan Kunci OpenPGP"
+msgstr "Kekunci ID tidak sah (%s)"
 
 #: speed.cpp:42
 #, fuzzy
 msgid "Connection speed [MBit/s]:"
-msgstr "Permintaan per Sambungan"
+msgstr "Perkongsian sambungan Internet"
 
 #: statistics.cpp:27
 #, fuzzy
 msgid "Statistics - KWiFiManager"
-msgstr "Statistik Ethernet"
+msgstr "Name=KWiFiManager"
 
 #: statistics.cpp:37
 msgid "Noise/Signal Level Statistics"
@@ -234,62 +240,59 @@ msgstr ""
 #: statistics.cpp:43
 #, fuzzy
 msgid "now"
-msgstr "Hantar sekarang"
+msgstr "Sekarang"
 
 #: status.cpp:41
 #, fuzzy
 msgid "Status of Active Connection"
-msgstr "Papar Bar &Status"
+msgstr "Perkongsian sambungan Internet"
 
 #: status.cpp:46
 #, fuzzy
 msgid "Searching for network: "
-msgstr "Pelayan Rangkaian Lama"
+msgstr "Konfigurasi Rangkaian bagi %s"
 
 #: status.cpp:49
 #, fuzzy
 msgid "Connected to network: "
-msgstr "Pelayan Rangkaian Lama"
+msgstr "akses ke alatan rangkaian"
 
 #: status.cpp:51
 #, fuzzy
 msgid "Access point: "
-msgstr "Kawalan Jauh"
+msgstr "Titik _Pelekapan:"
 
 #: status.cpp:59
 #, fuzzy
 msgid "- no access point -"
-msgstr "Pangkalan Data Microsoft Access"
+msgstr "Titik lekapan tidak sah"
 
 #: status.cpp:61
 #, fuzzy
 msgid "Local IP: "
-msgstr "Layari Rangkaian Tempatan"
+msgstr "IP Dinamik"
 
 #: status.cpp:63
 #, fuzzy
 msgid "Frequency [channel]: "
-msgstr "[C] Saluran frekuensi:"
+msgstr "Name=Channel event"
 
 #: status.cpp:348
 #, fuzzy
 msgid "Encryption: "
-msgstr "Enkripsi"
+msgstr "Enkripsi:"
 
 #: status.cpp:362
-#, fuzzy
 msgid "active"
-msgstr "Aktifkan Plugin"
+msgstr "aktif"
 
 #: strength.cpp:100
-#, fuzzy
 msgid "DISABLED"
-msgstr "Pemasangan--IOAPIC Dimatikan"
+msgstr "DIMATIKAN"
 
 #: strength.cpp:105
-#, fuzzy
 msgid "NOT CONNECTED"
-msgstr "Tiada"
+msgstr "TIDAK DISAMBUNG"
 
 #: strength.cpp:110
 msgid "AD-HOC MODE"
@@ -326,3 +329,4 @@ msgstr "DILUAR JULAT"
 #: strength.cpp:160
 msgid "Signal strength: "
 msgstr "Kekuatan isyarat:"
+
