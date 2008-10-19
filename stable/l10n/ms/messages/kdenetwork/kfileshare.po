@@ -19,15 +19,13 @@ msgid "Allow all users to share folders"
 msgstr "Benarkan Samba untuk berkongsi direktori rumah pengguna"
 
 #. i18n: file ./simple/groupconfiggui.ui line 55
-#: rc.cpp:6
-#: simple/groupconfigdlg.cpp:335
+#: rc.cpp:6 simple/groupconfigdlg.cpp:335
 #, no-c-format
 msgid "Only users of the '%1' group are allowed to share folders"
 msgstr ""
 
 #. i18n: file ./simple/groupconfiggui.ui line 68
-#: rc.cpp:9
-#: simple/groupconfigdlg.cpp:337
+#: rc.cpp:9 simple/groupconfigdlg.cpp:337
 #, fuzzy, no-c-format
 msgid "Users of '%1' Group"
 msgstr "Kumpul Pengguna"
@@ -39,8 +37,7 @@ msgid "Remove User"
 msgstr "Antaramuka Pengguna"
 
 #. i18n: file ./simple/groupconfiggui.ui line 112
-#: advanced/kcm_sambaconf/usertabimpl.cpp:279
-#: rc.cpp:15
+#: advanced/kcm_sambaconf/usertabimpl.cpp:279 rc.cpp:15
 #, no-c-format
 msgid "Add User"
 msgstr "Tambah Pengguna"
@@ -52,8 +49,7 @@ msgid "Group members can share folders without root password"
 msgstr ""
 
 #. i18n: file ./simple/groupconfiggui.ui line 166
-#: rc.cpp:21
-#: simple/groupconfigdlg.cpp:339
+#: rc.cpp:21 simple/groupconfigdlg.cpp:339
 #, fuzzy, no-c-format
 msgid "Change Group..."
 msgstr "Kumpulan Hilang"
@@ -61,7 +57,9 @@ msgstr "Kumpulan Hilang"
 #. i18n: file ./simple/controlcenter.ui line 30
 #: rc.cpp:24
 #, no-c-format
-msgid "SMB and NFS servers are not installed on this machine, to enable this module the servers must be installed."
+msgid ""
+"SMB and NFS servers are not installed on this machine, to enable this module "
+"the servers must be installed."
 msgstr ""
 
 #. i18n: file ./simple/controlcenter.ui line 41
@@ -79,7 +77,9 @@ msgstr "Tetapkan Perkongsian Fail"
 #. i18n: file ./simple/controlcenter.ui line 113
 #: rc.cpp:33
 #, no-c-format
-msgid "Enable simple sharing to allow users to share folders from their HOME folder, without knowing the root password."
+msgid ""
+"Enable simple sharing to allow users to share folders from their HOME folder, "
+"without knowing the root password."
 msgstr ""
 
 #. i18n: file ./simple/controlcenter.ui line 126
@@ -91,7 +91,10 @@ msgstr "Tetapan Lanjutan"
 #. i18n: file ./simple/controlcenter.ui line 178
 #: rc.cpp:39
 #, no-c-format
-msgid "Enable advanced sharing to allow users to share any folders, as long as they have write access to the needed configuration files, or they know the root password."
+msgid ""
+"Enable advanced sharing to allow users to share any folders, as long as they "
+"have write access to the needed configuration files, or they know the root "
+"password."
 msgstr ""
 
 #. i18n: file ./simple/controlcenter.ui line 230
@@ -119,8 +122,7 @@ msgid "Shared Folders"
 msgstr "Tidak boleh kongsi"
 
 #. i18n: file ./simple/controlcenter.ui line 303
-#: rc.cpp:54
-#: rc.cpp:914
+#: rc.cpp:54 rc.cpp:914
 #, no-c-format
 msgid "Path"
 msgstr "Laluan"
@@ -150,8 +152,7 @@ msgid "Chang&e..."
 msgstr "&Ubah..."
 
 #. i18n: file ./simple/controlcenter.ui line 388
-#: rc.cpp:69
-#: rc.cpp:986
+#: rc.cpp:69 rc.cpp:986
 #, fuzzy, no-c-format
 msgid "Rem&ove"
 msgstr "Karl Ove Hufthammer"
@@ -172,8 +173,10 @@ msgstr "Urus takrifan hos"
 #: rc.cpp:78
 #, no-c-format
 msgid ""
-"Here you can see a list of hosts which are allowed to access this directory via NFS.\n"
-"The first column shows the name or address of the host, the second column shows the access parameters. The name '*' donates public access."
+"Here you can see a list of hosts which are allowed to access this directory via "
+"NFS.\n"
+"The first column shows the name or address of the host, the second column shows "
+"the access parameters. The name '*' donates public access."
 msgstr ""
 
 #. i18n: file ./advanced/nfs/nfsdialoggui.ui line 57
@@ -207,8 +210,7 @@ msgid "Parameters"
 msgstr "Parameter"
 
 #. i18n: file ./advanced/nfs/hostprops.ui line 50
-#: advanced/nfs/nfshostdlg.cpp:36
-#: rc.cpp:97
+#: advanced/nfs/nfshostdlg.cpp:36 rc.cpp:97
 #, fuzzy, no-c-format
 msgid "Host Properties"
 msgstr "Ciri-ciri Dokumen"
@@ -225,27 +227,41 @@ msgstr "Buku Alamat"
 msgid ""
 "<b>Name / Address field</b>\n"
 "<p>\n"
-"Here you can enter the host name or address.<br>\n"
+"Here you can enter the host name or address."
+"<br>\n"
 "The host may be specified in a number of ways:\n"
 "<p>\n"
 "<i>single host</i>\n"
 "<p>\n"
-" This is the most common format. You may specify a host either by an abbreviated name recognized by the resolver, the fully qualified domain name, or an IP address.\n"
+" This is the most common format. You may specify a host either by an "
+"abbreviated name recognized by the resolver, the fully qualified domain name, "
+"or an IP address.\n"
 "</p>\n"
 "\n"
 "<i>netgroups</i>\n"
 "<p>\n"
-" NIS netgroups may be given as @group. Only the host part of each netgroup members is consider in checking for membership. Empty host parts or those containing a single dash (-) are ignored.\n"
+" NIS netgroups may be given as @group. Only the host part of each netgroup "
+"members is consider in checking for membership. Empty host parts or those "
+"containing a single dash (-) are ignored.\n"
 "</p>\n"
 "\n"
 "<i>wildcards</i>\n"
 "<p>\n"
-" Machine names may contain the wildcard characters * and ?. This can be used to make the exports file more compact; for instance, *.cs.foo.edu matches all hosts in the domain cs.foo.edu. However, these wildcard characters do not match the dots in a domain name, so the above pattern does not include hosts such as a.b.cs.foo.edu.\n"
+" Machine names may contain the wildcard characters * and ?. This can be used to "
+"make the exports file more compact; for instance, *.cs.foo.edu matches all "
+"hosts in the domain cs.foo.edu. However, these wildcard characters do not match "
+"the dots in a domain name, so the above pattern does not include hosts such as "
+"a.b.cs.foo.edu.\n"
 "</p>\n"
 "\n"
 "<i>IP networks</i>\n"
 "<p>\n"
-" You can also export directories to all hosts on an IP (sub-) network simultaneously. This is done by specifying an IP address and netmask pair as address/netmask where the netmask can be specified in dotted-decimal format, or as a contiguous mask length (for example, either `/255.255.252.0' or `/22' appended to the network base address result in identical subnetworks with 10 bits of host).\n"
+" You can also export directories to all hosts on an IP (sub-) network "
+"simultaneously. This is done by specifying an IP address and netmask pair as "
+"address/netmask where the netmask can be specified in dotted-decimal format, or "
+"as a contiguous mask length (for example, either `/255.255.252.0' or `/22' "
+"appended to the network base address result in identical subnetworks with 10 "
+"bits of host).\n"
 "</p>"
 msgstr ""
 
@@ -261,14 +277,14 @@ msgstr "Kawalan Jauh"
 msgid ""
 "<b>Public access</b>\n"
 "<p>\n"
-"If you check this, the host address will be a single wildcard , which means public access.\n"
+"If you check this, the host address will be a single wildcard , which means "
+"public access.\n"
 "This is just the same as if you would enter a wildcard in the address field.\n"
 "</p>"
 msgstr ""
 
 #. i18n: file ./advanced/nfs/hostprops.ui line 157
-#: rc.cpp:142
-#: rc.cpp:2784
+#: rc.cpp:142 rc.cpp:2784
 #, fuzzy, no-c-format
 msgid "&Writable"
 msgstr "_Boleh Tulis"
@@ -298,7 +314,8 @@ msgstr ""
 msgid ""
 "<b>Insecure</b>\n"
 "<p>\n"
-"If this option is checked, it is not required that requests originate on an internet port less than IPPORT_RESERVED (1024).\n"
+"If this option is checked, it is not required that requests originate on an "
+"internet port less than IPPORT_RESERVED (1024).\n"
 "</p>\n"
 "<p>\n"
 "If unsure leave it unchecked.\n"
@@ -317,7 +334,9 @@ msgstr "Sync Me_negak:"
 msgid ""
 "<b>Sync</b>\n"
 "<p>\n"
-"This option requests that all file writes be committed to disk before the write request completes. This is required for complete safety of data in the face of a server crash, but incurs a performance hit.\n"
+"This option requests that all file writes be committed to disk before the write "
+"request completes. This is required for complete safety of data in the face of "
+"a server crash, but incurs a performance hit.\n"
 "</p>\n"
 "<p>\n"
 "The default is to allow the server to write the data out whenever it is ready.\n"
@@ -336,7 +355,13 @@ msgstr "Tiada Fail"
 msgid ""
 "<b>No wdelay</b>\n"
 "<p>\n"
-"This option only has effect if sync is also set. The NFS server will normally delay committing a write request to disk slightly if it suspects that another related write request may be in progress or may arrive soon. This allows multiple write requests to be committed to disk with the one operation which can improve performance. If an NFS server received mainly small unrelated requests, this behavior could actually reduce performance, so no wdelay is available to turn it off. </p>"
+"This option only has effect if sync is also set. The NFS server will normally "
+"delay committing a write request to disk slightly if it suspects that another "
+"related write request may be in progress or may arrive soon. This allows "
+"multiple write requests to be committed to disk with the one operation which "
+"can improve performance. If an NFS server received mainly small unrelated "
+"requests, this behavior could actually reduce performance, so no wdelay is "
+"available to turn it off. </p>"
 msgstr ""
 
 #. i18n: file ./advanced/nfs/hostprops.ui line 224
@@ -351,19 +376,31 @@ msgstr "Sembunyikan Bar &Menu"
 msgid ""
 "<b>No hide</b>\n"
 "<p>\n"
-"This option is based on the option of the same name provided in IRIX NFS. Normally, if a server exports two filesystems one of which is mounted on the other, then the client will have to mount both filesystems explicitly to get access to them. If it just mounts the parent, it will see an empty directory at the place where the other filesystem is mounted. That filesystem is \"hidden\".\n"
+"This option is based on the option of the same name provided in IRIX NFS. "
+"Normally, if a server exports two filesystems one of which is mounted on the "
+"other, then the client will have to mount both filesystems explicitly to get "
+"access to them. If it just mounts the parent, it will see an empty directory at "
+"the place where the other filesystem is mounted. That filesystem is "
+"\"hidden\".\n"
 "</p>\n"
 "<p>\n"
-"Setting the nohide option on a filesystem causes it not to be hidden, and an appropriately authorized client will be able to move from the parent to that filesystem without noticing the change.\n"
+"Setting the nohide option on a filesystem causes it not to be hidden, and an "
+"appropriately authorized client will be able to move from the parent to that "
+"filesystem without noticing the change.\n"
 "</p>\n"
 "<p>\n"
-"However, some NFS clients do not cope well with this situation as, for instance, it is then possible for two files in the one apparent filesystem to have the same inode number.\n"
+"However, some NFS clients do not cope well with this situation as, for "
+"instance, it is then possible for two files in the one apparent filesystem to "
+"have the same inode number.\n"
 "</p>\n"
 "<p>\n"
-"The nohide option is currently only effective on single host exports. It does not work reliably with netgroup, subnet, or wildcard exports.\n"
+"The nohide option is currently only effective on single host exports. It does "
+"not work reliably with netgroup, subnet, or wildcard exports.\n"
 "</p>\n"
 "<p>\n"
-"This option can be very useful in some situations, but it should be used with due care, and only after confirming that the client system copes with the situation effectively.\n"
+"This option can be very useful in some situations, but it should be used with "
+"due care, and only after confirming that the client system copes with the "
+"situation effectively.\n"
 "</p>"
 msgstr ""
 
@@ -379,19 +416,34 @@ msgstr "Tiada lagi peranti untuk diperiksa"
 msgid ""
 "<b>No subtree check</b>\n"
 "<p>\n"
-"This option disables subtree checking, which has mild security implications, but can improve reliability is some circumstances.\n"
+"This option disables subtree checking, which has mild security implications, "
+"but can improve reliability is some circumstances.\n"
 "</p>\n"
 "<p>\n"
-"If a subdirectory of a filesystem is exported, but the whole filesystem is not, then whenever a NFS request arrives, the server must check not only that the accessed file is in the appropriate filesystem (which is easy) but also that it is in the exported tree (which is harder). This check is called the subtree_check.\n"
+"If a subdirectory of a filesystem is exported, but the whole filesystem is not, "
+"then whenever a NFS request arrives, the server must check not only that the "
+"accessed file is in the appropriate filesystem (which is easy) but also that it "
+"is in the exported tree (which is harder). This check is called the "
+"subtree_check.\n"
 "</p>\n"
 "<p>\n"
-"In order to perform this check, the server must include some information about the location of the file in the \"filehandle\" that is given to the client. This can cause problems with accessing files that are renamed while a client has them open (though in many simple cases it will still work).\n"
+"In order to perform this check, the server must include some information about "
+"the location of the file in the \"filehandle\" that is given to the client. "
+"This can cause problems with accessing files that are renamed while a client "
+"has them open (though in many simple cases it will still work).\n"
 "</p>\n"
 "<p>\n"
-"subtree checking is also used to make sure that files inside directories to which only root has access can only be accessed if the filesystem is exported with no_root_squash (see below), even the file itself allows more general access.\n"
+"subtree checking is also used to make sure that files inside directories to "
+"which only root has access can only be accessed if the filesystem is exported "
+"with no_root_squash (see below), even the file itself allows more general "
+"access.\n"
 "</p>\n"
 "<p>\n"
-"As a general guide, a home directory filesystem, which is normally exported at the root and may see lots of file renames, should be exported with subtree checking disabled. A filesystem which is mostly read-only, and at least does not see many file renames (e.g. /usr or /var) and for which subdirectories may be exported, should probably be exported with subtree checks enabled.\n"
+"As a general guide, a home directory filesystem, which is normally exported at "
+"the root and may see lots of file renames, should be exported with subtree "
+"checking disabled. A filesystem which is mostly read-only, and at least does "
+"not see many file renames (e.g. /usr or /var) and for which subdirectories may "
+"be exported, should probably be exported with subtree checks enabled.\n"
 "</p>"
 msgstr ""
 
@@ -407,10 +459,16 @@ msgstr "Benarkan kuncian fai_l kurang selamat"
 msgid ""
 "<b>Insecure locks</b>\n"
 "<p>\n"
-"This option tells the NFS server not to require authentication of locking requests (i.e. requests which use the NLM protocol). Normally the NFS server will require a lock request to hold a credential for a user who has read access to the file. With this flag no access checks will be performed.\n"
+"This option tells the NFS server not to require authentication of locking "
+"requests (i.e. requests which use the NLM protocol). Normally the NFS server "
+"will require a lock request to hold a credential for a user who has read access "
+"to the file. With this flag no access checks will be performed.\n"
 "</p>\n"
 "<p>\n"
-"Early NFS client implementations did not send credentials with lock requests, and many current NFS clients still exist which are based on the old implementations. Use this flag if you find that you can only lock files which are world readable.\n"
+"Early NFS client implementations did not send credentials with lock requests, "
+"and many current NFS clients still exist which are based on the old "
+"implementations. Use this flag if you find that you can only lock files which "
+"are world readable.\n"
 "</p>"
 msgstr ""
 
@@ -432,7 +490,8 @@ msgstr "Aba&i Semua"
 msgid ""
 "<b>All squash</b>\n"
 "<p>\n"
-"Map all uids and gids to the anonymous user. Useful for NFS-exported public FTP directories, news spool directories, etc. </p>"
+"Map all uids and gids to the anonymous user. Useful for NFS-exported public FTP "
+"directories, news spool directories, etc. </p>"
 msgstr ""
 
 #. i18n: file ./advanced/nfs/hostprops.ui line 336
@@ -451,7 +510,8 @@ msgid ""
 "</p>\n"
 "<i>root squashing</i>\n"
 "<p>\n"
-"Map requests from uid/gid 0 to the anonymous uid/gid. Note that this does not apply to any other uids that might be equally sensitive, such as user bin.\n"
+"Map requests from uid/gid 0 to the anonymous uid/gid. Note that this does not "
+"apply to any other uids that might be equally sensitive, such as user bin.\n"
 "</p>"
 msgstr ""
 
@@ -462,15 +522,17 @@ msgid "Anonym. &UID:"
 msgstr "Uid pengguna adalah < 500"
 
 #. i18n: file ./advanced/nfs/hostprops.ui line 368
-#: rc.cpp:267
-#: rc.cpp:276
+#: rc.cpp:267 rc.cpp:276
 #, no-c-format
-msgid "<b>Anonym. UID/GID</b> <p> These options explicitly set the uid and gid of the anonymous account. This option is primarily useful for PC/NFS clients, where you might want all requests appear to be from one user. </p>"
+msgid ""
+"<b>Anonym. UID/GID</b> "
+"<p> These options explicitly set the uid and gid of the anonymous account. This "
+"option is primarily useful for PC/NFS clients, where you might want all "
+"requests appear to be from one user. </p>"
 msgstr ""
 
 #. i18n: file ./advanced/nfs/hostprops.ui line 390
-#: rc.cpp:270
-#: rc.cpp:279
+#: rc.cpp:270 rc.cpp:279
 #, no-c-format
 msgid "FF"
 msgstr "FF"
@@ -530,73 +592,56 @@ msgid "Select &Users"
 msgstr "Pengguna dibenarkan"
 
 #. i18n: file ./advanced/kcm_sambaconf/userselectdlg.ui line 51
-#: rc.cpp:312
-#: rc.cpp:657
-#: rc.cpp:911
-#: rc.cpp:941
-#: rc.cpp:971
-#: rc.cpp:992
-#: rc.cpp:2150
-#: rc.cpp:2285
+#: rc.cpp:312 rc.cpp:657 rc.cpp:911 rc.cpp:941 rc.cpp:971 rc.cpp:992
+#: rc.cpp:2150 rc.cpp:2285
 #, no-c-format
 msgid "Name"
 msgstr "Nama"
 
 #. i18n: file ./advanced/kcm_sambaconf/userselectdlg.ui line 62
-#: rc.cpp:315
-#: rc.cpp:974
-#: rc.cpp:995
-#: rc.cpp:2153
+#: rc.cpp:315 rc.cpp:974 rc.cpp:995 rc.cpp:2153
 #, no-c-format
 msgid "UID"
 msgstr "UID"
 
 #. i18n: file ./advanced/kcm_sambaconf/userselectdlg.ui line 73
-#: rc.cpp:318
-#: rc.cpp:660
-#: rc.cpp:2156
+#: rc.cpp:318 rc.cpp:660 rc.cpp:2156
 #, no-c-format
 msgid "GID"
 msgstr "GID"
 
 #. i18n: file ./advanced/kcm_sambaconf/userselectdlg.ui line 104
-#: rc.cpp:321
-#: rc.cpp:663
+#: rc.cpp:321 rc.cpp:663
 #, no-c-format
 msgid "Acc&ess"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/userselectdlg.ui line 121
-#: rc.cpp:324
-#: rc.cpp:666
+#: rc.cpp:324 rc.cpp:666
 #, no-c-format
 msgid "&Default"
 msgstr "&Default"
 
 #. i18n: file ./advanced/kcm_sambaconf/userselectdlg.ui line 135
-#: rc.cpp:327
-#: rc.cpp:669
+#: rc.cpp:327 rc.cpp:669
 #, fuzzy, no-c-format
 msgid "&Read access"
 msgstr "Kawalan Jauh"
 
 #. i18n: file ./advanced/kcm_sambaconf/userselectdlg.ui line 146
-#: rc.cpp:330
-#: rc.cpp:672
+#: rc.cpp:330 rc.cpp:672
 #, fuzzy, no-c-format
 msgid "&Write access"
 msgstr "Kawalan Jauh"
 
 #. i18n: file ./advanced/kcm_sambaconf/userselectdlg.ui line 157
-#: rc.cpp:333
-#: rc.cpp:675
+#: rc.cpp:333 rc.cpp:675
 #, fuzzy, no-c-format
 msgid "&Admin access"
 msgstr "Kawalan Jauh"
 
 #. i18n: file ./advanced/kcm_sambaconf/userselectdlg.ui line 168
-#: rc.cpp:336
-#: rc.cpp:678
+#: rc.cpp:336 rc.cpp:678
 #, fuzzy, no-c-format
 msgid "&No access at all"
 msgstr "  --no-media-update      jangan kemaskini media ketika permulaan"
@@ -608,16 +653,13 @@ msgid "Printer Settings"
 msgstr "Tetapan Semasa"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 58
-#: rc.cpp:348
-#: rc.cpp:827
-#: rc.cpp:2186
+#: rc.cpp:348 rc.cpp:827 rc.cpp:2186
 #, fuzzy, no-c-format
 msgid "&Base Settings"
 msgstr "Tetapan Semasa"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 111
-#: rc.cpp:351
-#: rc.cpp:2189
+#: rc.cpp:351 rc.cpp:2189
 #, fuzzy, no-c-format
 msgid "Pixmap"
 msgstr "Imej X PixMap"
@@ -653,8 +695,7 @@ msgid "I&dentifier"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 240
-#: rc.cpp:369
-#: rc.cpp:714
+#: rc.cpp:369 rc.cpp:714
 #, fuzzy, no-c-format
 msgid "&Name:"
 msgstr "&Nama:"
@@ -672,24 +713,19 @@ msgid "Main Properties"
 msgstr "Takrif Ciri-ciri Utama"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 291
-#: rc.cpp:378
-#: rc.cpp:777
-#: rc.cpp:2222
+#: rc.cpp:378 rc.cpp:777 rc.cpp:2222
 #, no-c-format
 msgid "A&vailable"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 299
-#: rc.cpp:381
-#: rc.cpp:771
-#: rc.cpp:2219
+#: rc.cpp:381 rc.cpp:771 rc.cpp:2219
 #, no-c-format
 msgid "Bro&wseable"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 307
-#: rc.cpp:384
-#: rc.cpp:2216
+#: rc.cpp:384 rc.cpp:2216
 #, no-c-format
 msgid "Pub&lic"
 msgstr ""
@@ -815,50 +851,35 @@ msgid "De&fault devmode"
 msgstr "cookie.tjansen.de:0"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 568
-#: rc.cpp:447
-#: rc.cpp:2225
+#: rc.cpp:447 rc.cpp:2225
 #, fuzzy, no-c-format
 msgid "&Security"
 msgstr "Keselamatan"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 579
-#: rc.cpp:450
-#: rc.cpp:2255
+#: rc.cpp:450 rc.cpp:2255
 #, fuzzy, no-c-format
 msgid "Hosts &deny:"
 msgstr "Takrifan hos"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 585
-#: rc.cpp:453
-#: rc.cpp:456
-#: rc.cpp:468
-#: rc.cpp:474
-#: rc.cpp:729
-#: rc.cpp:738
-#: rc.cpp:2246
-#: rc.cpp:2258
+#: rc.cpp:453 rc.cpp:456 rc.cpp:468 rc.cpp:474 rc.cpp:729 rc.cpp:738
+#: rc.cpp:2246 rc.cpp:2258
 #, no-c-format
-msgid "The opposite of hosts allow - hosts listed here are NOT permitted access to services unless the specific services have their own lists to override this one. Where the lists conflict, the allow list takes precedence."
+msgid ""
+"The opposite of hosts allow - hosts listed here are NOT permitted access to "
+"services unless the specific services have their own lists to override this "
+"one. Where the lists conflict, the allow list takes precedence."
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 601
-#: rc.cpp:459
-#: rc.cpp:465
-#: rc.cpp:732
-#: rc.cpp:744
-#: rc.cpp:2252
-#: rc.cpp:2261
-#: rc.cpp:2367
-#: rc.cpp:2373
-#: rc.cpp:2379
-#: rc.cpp:2385
-#: rc.cpp:2418
-#: rc.cpp:2424
-#: rc.cpp:2430
-#: rc.cpp:2454
-#: rc.cpp:2478
+#: rc.cpp:459 rc.cpp:465 rc.cpp:732 rc.cpp:744 rc.cpp:2252 rc.cpp:2261
+#: rc.cpp:2367 rc.cpp:2373 rc.cpp:2379 rc.cpp:2385 rc.cpp:2418 rc.cpp:2424
+#: rc.cpp:2430 rc.cpp:2454 rc.cpp:2478
 #, no-c-format
-msgid "This parameter is a comma, space, or tab delimited set of hosts which are permitted to access a service."
+msgid ""
+"This parameter is a comma, space, or tab delimited set of hosts which are "
+"permitted to access a service."
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 609
@@ -874,18 +895,21 @@ msgid "P&rinter admin:"
 msgstr "Pelayan Admin:"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 662
-#: rc.cpp:477
-#: rc.cpp:2231
+#: rc.cpp:477 rc.cpp:2231
 #, fuzzy, no-c-format
 msgid "&Guest account:"
 msgstr "Akaun Fedora"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 668
-#: rc.cpp:480
-#: rc.cpp:750
-#: rc.cpp:2234
+#: rc.cpp:480 rc.cpp:750 rc.cpp:2234
 #, no-c-format
-msgid "This is a username which will be used for access to services which are specified as guest ok. Whatever privileges this user has will be available to any client connecting to the guest service. Typically this user will exist in the password file, but will not have a valid login. The user account \\\"ftp\\\" is often a good choice for this parameter. If a username is specified in a given service, the specified username overrides this one."
+msgid ""
+"This is a username which will be used for access to services which are "
+"specified as guest ok. Whatever privileges this user has will be available to "
+"any client connecting to the guest service. Typically this user will exist in "
+"the password file, but will not have a valid login. The user account "
+"\\\"ftp\\\" is often a good choice for this parameter. If a username is "
+"specified in a given service, the specified username overrides this one."
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 700
@@ -937,8 +961,7 @@ msgid "qu&eueresume:"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 848
-#: rc.cpp:507
-#: rc.cpp:2348
+#: rc.cpp:507 rc.cpp:2348
 #, fuzzy, no-c-format
 msgid "&Advanced"
 msgstr "Lanjutan"
@@ -1004,17 +1027,13 @@ msgid "S&tatus"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcmprinterdlg.ui line 1066
-#: rc.cpp:543
-#: rc.cpp:588
-#: rc.cpp:636
-#: rc.cpp:2742
+#: rc.cpp:543 rc.cpp:588 rc.cpp:636 rc.cpp:2742
 #, no-c-format
 msgid "F1"
 msgstr "F1"
 
 #. i18n: file ./advanced/kcm_sambaconf/socketoptionsdlg.ui line 37
-#: rc.cpp:552
-#: rc.cpp:1653
+#: rc.cpp:552 rc.cpp:1653
 #, fuzzy, no-c-format
 msgid "Socket Options"
 msgstr "Pilihan Bina"
@@ -1044,22 +1063,19 @@ msgid "SO_KEEPALIVE"
 msgstr "&Isih Jadual"
 
 #. i18n: file ./advanced/kcm_sambaconf/socketoptionsdlg.ui line 103
-#: rc.cpp:567
-#: rc.cpp:1683
+#: rc.cpp:567 rc.cpp:1683
 #, fuzzy, no-c-format
 msgid "SO_RCVBUF:"
 msgstr "&Isih Jadual"
 
 #. i18n: file ./advanced/kcm_sambaconf/socketoptionsdlg.ui line 133
-#: rc.cpp:570
-#: rc.cpp:1662
+#: rc.cpp:570 rc.cpp:1662
 #, fuzzy, no-c-format
 msgid "SO_BROADCAST"
 msgstr "Alamat Siaran:"
 
 #. i18n: file ./advanced/kcm_sambaconf/socketoptionsdlg.ui line 141
-#: rc.cpp:573
-#: rc.cpp:1668
+#: rc.cpp:573 rc.cpp:1668
 #, no-c-format
 msgid "IPTOS_LOWDELAY"
 msgstr ""
@@ -1107,11 +1123,11 @@ msgid "Read"
 msgstr "Baca"
 
 #. i18n: file ./advanced/kcm_sambaconf/filemodedlg.ui line 139
-#: rc.cpp:609
-#: rc.cpp:2688
+#: rc.cpp:609 rc.cpp:2688
 #, fuzzy, no-c-format
 msgid "Exec"
-msgstr "Tidak dapat melaksana %s: %s\n"
+msgstr ""
+"Tidak dapat melaksana %s: %s\n"
 
 #. i18n: file ./advanced/kcm_sambaconf/filemodedlg.ui line 151
 #: rc.cpp:612
@@ -1120,15 +1136,13 @@ msgid "Write"
 msgstr "Tulis"
 
 #. i18n: file ./advanced/kcm_sambaconf/filemodedlg.ui line 235
-#: rc.cpp:615
-#: rc.cpp:2306
+#: rc.cpp:615 rc.cpp:2306
 #, no-c-format
 msgid "Owner"
 msgstr "Pemilik"
 
 #. i18n: file ./advanced/kcm_sambaconf/filemodedlg.ui line 259
-#: rc.cpp:618
-#: rc.cpp:2309
+#: rc.cpp:618 rc.cpp:2309
 #, no-c-format
 msgid "Group"
 msgstr "Kumpulan"
@@ -1161,13 +1175,15 @@ msgstr "I&stimewa:"
 #: rc.cpp:645
 #, fuzzy, no-c-format
 msgid "Select Groups"
-msgstr "kumpulan blok %u\n"
+msgstr ""
+"kumpulan blok %u\n"
 
 #. i18n: file ./advanced/kcm_sambaconf/groupselectdlg.ui line 136
 #: rc.cpp:654
 #, fuzzy, no-c-format
 msgid "Selec&t Groups"
-msgstr "kumpulan blok %u\n"
+msgstr ""
+"kumpulan blok %u\n"
 
 #. i18n: file ./advanced/kcm_sambaconf/groupselectdlg.ui line 318
 #: rc.cpp:681
@@ -1212,18 +1228,18 @@ msgid "Bas&e Options"
 msgstr "Pilihan Bina"
 
 #. i18n: file ./advanced/kcm_sambaconf/konqinterface.ui line 124
-#: rc.cpp:702
-#: rc.cpp:917
-#: rc.cpp:947
+#: rc.cpp:702 rc.cpp:917 rc.cpp:947
 #, no-c-format
 msgid "Comment"
 msgstr "Komen"
 
 #. i18n: file ./advanced/kcm_sambaconf/konqinterface.ui line 127
-#: rc.cpp:705
-#: rc.cpp:723
+#: rc.cpp:705 rc.cpp:723
 #, no-c-format
-msgid "This is a text field that is seen next to a share when a client queries the server, either via the network neighborhood or via net view, to list what shares are available."
+msgid ""
+"This is a text field that is seen next to a share when a client queries the "
+"server, either via the network neighborhood or via net view, to list what "
+"shares are available."
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/konqinterface.ui line 139
@@ -1233,8 +1249,7 @@ msgid "Name of the share"
 msgstr "Nama perkongsian"
 
 #. i18n: file ./advanced/kcm_sambaconf/konqinterface.ui line 142
-#: rc.cpp:711
-#: rc.cpp:717
+#: rc.cpp:711 rc.cpp:717
 #, fuzzy, no-c-format
 msgid "This is the name of the share"
 msgstr "Nama terlalu panjang"
@@ -1278,7 +1293,9 @@ msgstr "Baca-Saja"
 #. i18n: file ./advanced/kcm_sambaconf/konqinterface.ui line 300
 #: rc.cpp:756
 #, no-c-format
-msgid "If this is checked, then users of a service may not create or modify files in the service's directory."
+msgid ""
+"If this is checked, then users of a service may not create or modify files in "
+"the service's directory."
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/konqinterface.ui line 312
@@ -1288,22 +1305,23 @@ msgid "G&uests allowed"
 msgstr "Pengguna dibenarkan"
 
 #. i18n: file ./advanced/kcm_sambaconf/konqinterface.ui line 318
-#: rc.cpp:762
-#: rc.cpp:2240
-#: rc.cpp:2279
+#: rc.cpp:762 rc.cpp:2240 rc.cpp:2279
 #, no-c-format
-msgid "If this is checked , then no password is required to connect to the service. Privileges will be those of the guest account."
+msgid ""
+"If this is checked , then no password is required to connect to the service. "
+"Privileges will be those of the guest account."
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/konqinterface.ui line 333
 #: rc.cpp:765
 #, no-c-format
-msgid "This is a username which will be used for access this directory if guests are allowed"
+msgid ""
+"This is a username which will be used for access this directory if guests are "
+"allowed"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/konqinterface.ui line 347
-#: rc.cpp:768
-#: rc.cpp:2565
+#: rc.cpp:768 rc.cpp:2565
 #, fuzzy, no-c-format
 msgid "Other Options"
 msgstr "Pilihan Lain"
@@ -1311,13 +1329,17 @@ msgstr "Pilihan Lain"
 #. i18n: file ./advanced/kcm_sambaconf/konqinterface.ui line 371
 #: rc.cpp:774
 #, no-c-format
-msgid "This controls whether this share is seen in the list of available shares in a net view and in the browse list."
+msgid ""
+"This controls whether this share is seen in the list of available shares in a "
+"net view and in the browse list."
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/konqinterface.ui line 394
 #: rc.cpp:780
 #, no-c-format
-msgid "Checkbox lets you \\\"turn off\\\" a service. If not checked, then ALL attempts to connect to the service will fail. Such failures are logged."
+msgid ""
+"Checkbox lets you \\\"turn off\\\" a service. If not checked, then ALL attempts "
+"to connect to the service will fail. Such failures are logged."
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/konqinterface.ui line 435
@@ -1370,7 +1392,8 @@ msgid ""
 "Here you can edit the Samba users, stored in the smbpasswd file.\n"
 "<p>\n"
 "Every Samba user must have a corresponding UNIX user.\n"
-"On the right you can see all UNIX users, stored in the passwd file and not configured as Samba users.\n"
+"On the right you can see all UNIX users, stored in the passwd file and not "
+"configured as Samba users.\n"
 "You can see the Samba users on the left-hand side.\n"
 "<p>\n"
 "To add new Samba users simply press the <em>&lt; add</em> button.\n"
@@ -1438,16 +1461,8 @@ msgid "Share"
 msgstr "Kongsi"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 286
-#: rc.cpp:857
-#: rc.cpp:863
-#: rc.cpp:869
-#: rc.cpp:878
-#: rc.cpp:932
-#: rc.cpp:1026
-#: rc.cpp:1032
-#: rc.cpp:1044
-#: rc.cpp:1065
-#: rc.cpp:1787
+#: rc.cpp:857 rc.cpp:863 rc.cpp:869 rc.cpp:878 rc.cpp:932 rc.cpp:1026
+#: rc.cpp:1032 rc.cpp:1044 rc.cpp:1065 rc.cpp:1787
 #, no-c-format
 msgid "Alt+"
 msgstr "Alt+"
@@ -1459,8 +1474,7 @@ msgid "User"
 msgstr "Pengguna"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 316
-#: rc.cpp:866
-#: rc.cpp:1206
+#: rc.cpp:866 rc.cpp:1206
 #, no-c-format
 msgid "Server"
 msgstr "Pelayan"
@@ -1480,7 +1494,10 @@ msgstr "ADS"
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 368
 #: rc.cpp:881
 #, no-c-format
-msgid "Use the <i>share</i> security level if you have a home network or a small office network.<br> It allows everyone to read all share names before a login is required."
+msgid ""
+"Use the <i>share</i> security level if you have a home network or a small "
+"office network."
+"<br> It allows everyone to read all share names before a login is required."
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 391
@@ -1593,8 +1610,7 @@ msgstr "Pengkalan data pencetak foomatic."
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 943
 #: advanced/kcm_sambaconf/printerdlgimpl.cpp:109
-#: advanced/kcm_sambaconf/sharedlgimpl.cpp:123
-#: rc.cpp:965
+#: advanced/kcm_sambaconf/sharedlgimpl.cpp:123 rc.cpp:965
 #, fuzzy, no-c-format
 msgid "&Users"
 msgstr "Pengguna"
@@ -1606,9 +1622,7 @@ msgid "Sa&mba Users"
 msgstr "Pengguna dan Kumpulan"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 1011
-#: rc.cpp:977
-#: rc.cpp:1185
-#: rc.cpp:1221
+#: rc.cpp:977 rc.cpp:1185 rc.cpp:1221
 #, fuzzy, no-c-format
 msgid "Disabled"
 msgstr "Dimatikan"
@@ -1644,8 +1658,7 @@ msgid "Advan&ced"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 1337
-#: rc.cpp:1007
-#: rc.cpp:2351
+#: rc.cpp:1007 rc.cpp:2351
 #, no-c-format
 msgid ""
 "Here you can change advanced options of the SAMBA server.\n"
@@ -1653,24 +1666,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 1349
-#: rc.cpp:1011
-#: rc.cpp:2355
+#: rc.cpp:1011 rc.cpp:2355
 #, fuzzy, no-c-format
 msgid "Advanced Dump"
 msgstr "Longgokan Ditulis"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 1373
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:295
-#: rc.cpp:1014
-#: rc.cpp:2358
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:295 rc.cpp:1014 rc.cpp:2358
 #, no-c-format
 msgid "Security"
 msgstr "Keselamatan"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 1394
-#: rc.cpp:1017
-#: rc.cpp:1377
-#: rc.cpp:1515
+#: rc.cpp:1017 rc.cpp:1377 rc.cpp:1515
 #, fuzzy, no-c-format
 msgid "&General"
 msgstr "Umum"
@@ -1712,9 +1720,7 @@ msgid "Paranoid server security"
 msgstr "Pelayan Nama DNS"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 1519
-#: rc.cpp:1047
-#: rc.cpp:1245
-#: rc.cpp:2487
+#: rc.cpp:1047 rc.cpp:1245 rc.cpp:2487
 #, no-c-format
 msgid "General"
 msgstr "Umum"
@@ -1840,17 +1846,8 @@ msgid "Passwd chat debug"
 msgstr "Borak Jaringan Setempat"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 1951
-#: rc.cpp:1113
-#: rc.cpp:1131
-#: rc.cpp:1326
-#: rc.cpp:1332
-#: rc.cpp:1344
-#: rc.cpp:1347
-#: rc.cpp:1464
-#: rc.cpp:1467
-#: rc.cpp:1772
-#: rc.cpp:1886
-#: rc.cpp:1931
+#: rc.cpp:1113 rc.cpp:1131 rc.cpp:1326 rc.cpp:1332 rc.cpp:1344 rc.cpp:1347
+#: rc.cpp:1464 rc.cpp:1467 rc.cpp:1772 rc.cpp:1886 rc.cpp:1931
 #, fuzzy, no-c-format
 msgid "Sec"
 msgstr " saat"
@@ -1961,7 +1958,8 @@ msgstr "Klien"
 #: rc.cpp:1170
 #, fuzzy, no-c-format
 msgid "C&lient signing:"
-msgstr "\t\t\tMenandatangan sijil.\n"
+msgstr ""
+"\t\t\tMenandatangan sijil.\n"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 2361
 #: rc.cpp:1173
@@ -1976,19 +1974,13 @@ msgid "Client lanman authentication"
 msgstr "Guna Pengesahan LDAP"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 2379
-#: rc.cpp:1179
-#: rc.cpp:1194
-#: rc.cpp:1215
-#: rc.cpp:1230
-#: rc.cpp:1898
-#: rc.cpp:1943
+#: rc.cpp:1179 rc.cpp:1194 rc.cpp:1215 rc.cpp:1230 rc.cpp:1898 rc.cpp:1943
 #, no-c-format
 msgid "Auto"
 msgstr "Auto"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 2384
-#: rc.cpp:1182
-#: rc.cpp:1218
+#: rc.cpp:1182 rc.cpp:1218
 #, no-c-format
 msgid "Mandatory"
 msgstr ""
@@ -2015,7 +2007,8 @@ msgstr "Guna Pengesahan LDAP"
 #: rc.cpp:1209
 #, fuzzy, no-c-format
 msgid "Server signing:"
-msgstr "\t\t\tMenandatangan sijil.\n"
+msgstr ""
+"\t\t\tMenandatangan sijil.\n"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 2507
 #: rc.cpp:1212
@@ -2042,8 +2035,7 @@ msgid "NTLM authentication"
 msgstr "Pengesahan LDAP"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 2631
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:298
-#: rc.cpp:1242
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:298 rc.cpp:1242
 #, fuzzy, no-c-format
 msgid "Logging"
 msgstr "Perincian Menglog"
@@ -2079,9 +2071,7 @@ msgid "Log &level:"
 msgstr "Paras log:"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 2804
-#: rc.cpp:1263
-#: rc.cpp:1407
-#: rc.cpp:1775
+#: rc.cpp:1263 rc.cpp:1407 rc.cpp:1775
 #, no-c-format
 msgid "S&witches"
 msgstr ""
@@ -2105,8 +2095,7 @@ msgid "Ti&mestamp"
 msgstr "&Masa:"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 2870
-#: rc.cpp:1275
-#: rc.cpp:1533
+#: rc.cpp:1275 rc.cpp:1533
 #, no-c-format
 msgid "microseconds"
 msgstr ""
@@ -2124,9 +2113,7 @@ msgid "Debu&g uid"
 msgstr "Uid pengguna adalah < 500"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 2925
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:301
-#: rc.cpp:1284
-#: rc.cpp:2517
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:301 rc.cpp:1284 rc.cpp:2517
 #, no-c-format
 msgid "Tuning"
 msgstr "Penalaan"
@@ -2216,8 +2203,7 @@ msgid "&Keepalive:"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 3269
-#: rc.cpp:1335
-#: rc.cpp:2099
+#: rc.cpp:1335 rc.cpp:2099
 #, no-c-format
 msgid "Min"
 msgstr "Min"
@@ -2283,8 +2269,7 @@ msgid "Write raw"
 msgstr "RAW/R16"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 3438
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:310
-#: rc.cpp:1374
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:310 rc.cpp:1374
 #, no-c-format
 msgid "Printing"
 msgstr "Mencetak"
@@ -2320,9 +2305,7 @@ msgid "Pri&nter driver file: "
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 3582
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:334
-#: rc.cpp:1395
-#: rc.cpp:2051
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:334 rc.cpp:1395 rc.cpp:2051
 #, no-c-format
 msgid "Commands"
 msgstr "Arahan"
@@ -2490,9 +2473,7 @@ msgid "WINS pro&xy"
 msgstr "%1 x² + %2 y² + %3 xy + %4 x + %5 y + %6 = 0"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 4219
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:304
-#: rc.cpp:1488
-#: rc.cpp:2562
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:304 rc.cpp:1488 rc.cpp:2562
 #, no-c-format
 msgid "Filenames"
 msgstr ""
@@ -2540,9 +2521,7 @@ msgid "Stat cache"
 msgstr "Maklumat Cache"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 4410
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:307
-#: rc.cpp:1512
-#: rc.cpp:2634
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:307 rc.cpp:1512 rc.cpp:2634
 #, no-c-format
 msgid "Locking"
 msgstr "Penguncian"
@@ -2602,15 +2581,13 @@ msgid "Oplock break &wait time:"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 4630
-#: rc.cpp:1548
-#: rc.cpp:2030
+#: rc.cpp:1548 rc.cpp:2030
 #, no-c-format
 msgid "milliseconds"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 4676
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:319
-#: rc.cpp:1551
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:319 rc.cpp:1551
 #, no-c-format
 msgid "Charset"
 msgstr ""
@@ -2682,9 +2659,7 @@ msgid "Client code page:"
 msgstr "Arab, Halaman Kod Windows 1256"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 4934
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:313
-#: rc.cpp:1587
-#: rc.cpp:1632
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:313 rc.cpp:1587 rc.cpp:1632
 #, fuzzy, no-c-format
 msgid "Logon"
 msgstr "Logmasuk"
@@ -2753,7 +2728,8 @@ msgstr "Ralat melaksanakan skrip %s"
 #: rc.cpp:1620
 #, fuzzy, no-c-format
 msgid "Set primar&y group script:"
-msgstr "Gagal untuk menetapkan katalaluan bagi kumpulan %s: %s\n"
+msgstr ""
+"Gagal untuk menetapkan katalaluan bagi kumpulan %s: %s\n"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 5153
 #: rc.cpp:1623
@@ -2798,8 +2774,7 @@ msgid "Lo&gon script:"
 msgstr "Ralat melaksanakan skrip %s"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 5289
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:322
-#: rc.cpp:1647
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:322 rc.cpp:1647
 #, no-c-format
 msgid "Socket"
 msgstr "Soket"
@@ -2853,8 +2828,7 @@ msgid "IPTOS_THROU&GHPUT"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 5517
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:325
-#: rc.cpp:1686
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:325 rc.cpp:1686
 #, no-c-format
 msgid "SSL"
 msgstr "SSL"
@@ -2875,9 +2849,13 @@ msgstr ""
 #: rc.cpp:1695
 #, no-c-format
 msgid ""
-"This enables or disables the entire SSL mode. If it is set to no, the SSL-enabled Samba behaves exactly like the non-SSL Samba. If set to yes, it depends on the variables ssl hosts and ssl hosts resign whether an SSL connection will be required.\n"
+"This enables or disables the entire SSL mode. If it is set to no, the "
+"SSL-enabled Samba behaves exactly like the non-SSL Samba. If set to yes, it "
+"depends on the variables ssl hosts and ssl hosts resign whether an SSL "
+"connection will be required.\n"
 "\n"
-"This is only available if the SSL libraries have been compiled on your system and the configure option --with-ssl was given at configure time."
+"This is only available if the SSL libraries have been compiled on your system "
+"and the configure option --with-ssl was given at configure time."
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 5587
@@ -3001,8 +2979,7 @@ msgid "SSL server &key:"
 msgstr "Gugusan Kunci OpenPGP"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 5930
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:316
-#: rc.cpp:1760
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:316 rc.cpp:1760
 #, no-c-format
 msgid "Protocol"
 msgstr "Protokol"
@@ -3086,41 +3063,31 @@ msgid "Pr&otocol:"
 msgstr "K&eutamaan"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 6206
-#: rc.cpp:1811
-#: rc.cpp:1826
-#: rc.cpp:1841
+#: rc.cpp:1811 rc.cpp:1826 rc.cpp:1841
 #, no-c-format
 msgid "NT1"
 msgstr "NT1"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 6211
-#: rc.cpp:1814
-#: rc.cpp:1829
-#: rc.cpp:1844
+#: rc.cpp:1814 rc.cpp:1829 rc.cpp:1844
 #, no-c-format
 msgid "LANMAN2"
 msgstr "LANMAN2"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 6216
-#: rc.cpp:1817
-#: rc.cpp:1832
-#: rc.cpp:1847
+#: rc.cpp:1817 rc.cpp:1832 rc.cpp:1847
 #, no-c-format
 msgid "LANMAN1"
 msgstr "LANMAN1"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 6221
-#: rc.cpp:1820
-#: rc.cpp:1835
-#: rc.cpp:1850
+#: rc.cpp:1820 rc.cpp:1835 rc.cpp:1850
 #, fuzzy, no-c-format
 msgid "CORE"
 msgstr "Teras"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 6226
-#: rc.cpp:1823
-#: rc.cpp:1838
-#: rc.cpp:1853
+#: rc.cpp:1823 rc.cpp:1838 rc.cpp:1853
 #, no-c-format
 msgid "COREPLUS"
 msgstr ""
@@ -3168,8 +3135,7 @@ msgid "SMB ports:"
 msgstr "Port IO"
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 6427
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:328
-#: rc.cpp:1877
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:328 rc.cpp:1877
 #, fuzzy, no-c-format
 msgid "Browsing"
 msgstr "Konfigur pelayaran lanjutan"
@@ -3349,8 +3315,7 @@ msgid "lmhosts host wins bcast"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 6966
-#: rc.cpp:1985
-#: rc.cpp:2679
+#: rc.cpp:1985 rc.cpp:2679
 #, no-c-format
 msgid "VFS"
 msgstr "VFS"
@@ -3500,9 +3465,7 @@ msgid "Pa&nic action:"
 msgstr "<b>Menerapkan tindakan penapis:</b> "
 
 #. i18n: file ./advanced/kcm_sambaconf/kcminterface.ui line 7520
-#: advanced/kcm_sambaconf/kcmsambaconf.cpp:331
-#: rc.cpp:2078
-#: rc.cpp:2709
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:331 rc.cpp:2078 rc.cpp:2709
 #, fuzzy, no-c-format
 msgid "Misc"
 msgstr "Lain-lain"
@@ -3622,8 +3585,7 @@ msgid "Allow"
 msgstr "Benarkan"
 
 #. i18n: file ./advanced/kcm_sambaconf/usertab.ui line 41
-#: advanced/kcm_sambaconf/usertabimpl.cpp:222
-#: rc.cpp:2144
+#: advanced/kcm_sambaconf/usertabimpl.cpp:222 rc.cpp:2144
 #, fuzzy, no-c-format
 msgid "Reject"
 msgstr "&Tolak semakan"
@@ -3775,13 +3737,17 @@ msgstr ""
 #. i18n: file ./advanced/kcm_sambaconf/share.ui line 501
 #: rc.cpp:2270
 #, no-c-format
-msgid "Allow following of symbolic links that &point to areas outside the directory tree"
+msgid ""
+"Allow following of symbolic links that &point to areas outside the directory "
+"tree"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/share.ui line 511
 #: rc.cpp:2273
 #, no-c-format
-msgid "<qt>Validate password against the following usernames if the client cannot supply a username:</qt>"
+msgid ""
+"<qt>Validate password against the following usernames if the client cannot "
+"supply a username:</qt>"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/share.ui line 527
@@ -3845,8 +3811,7 @@ msgid "Hi&de"
 msgstr "De&fault"
 
 #. i18n: file ./advanced/kcm_sambaconf/share.ui line 706
-#: advanced/kcm_sambaconf/hiddenfileview.cpp:116
-#: rc.cpp:2318
+#: advanced/kcm_sambaconf/hiddenfileview.cpp:116 rc.cpp:2318
 #, no-c-format
 msgid "&Veto"
 msgstr ""
@@ -3936,28 +3901,15 @@ msgid "Force create mo&de:"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/share.ui line 1060
-#: rc.cpp:2388
-#: rc.cpp:2391
-#: rc.cpp:2406
-#: rc.cpp:2409
-#: rc.cpp:2433
-#: rc.cpp:2436
-#: rc.cpp:2439
-#: rc.cpp:2460
+#: rc.cpp:2388 rc.cpp:2391 rc.cpp:2406 rc.cpp:2409 rc.cpp:2433 rc.cpp:2436
+#: rc.cpp:2439 rc.cpp:2460
 #, no-c-format
 msgid "..."
 msgstr "..."
 
 #. i18n: file ./advanced/kcm_sambaconf/share.ui line 1096
-#: rc.cpp:2394
-#: rc.cpp:2397
-#: rc.cpp:2400
-#: rc.cpp:2403
-#: rc.cpp:2442
-#: rc.cpp:2445
-#: rc.cpp:2448
-#: rc.cpp:2457
-#: rc.cpp:2484
+#: rc.cpp:2394 rc.cpp:2397 rc.cpp:2400 rc.cpp:2403 rc.cpp:2442 rc.cpp:2445
+#: rc.cpp:2448 rc.cpp:2457 rc.cpp:2484
 #, no-c-format
 msgid "01234567"
 msgstr "01234567"
@@ -4119,8 +4071,7 @@ msgid "Client-side cachin&g policy:"
 msgstr ""
 
 #. i18n: file ./advanced/kcm_sambaconf/share.ui line 1713
-#: rc.cpp:2538
-#: rc.cpp:2556
+#: rc.cpp:2538 rc.cpp:2556
 #, no-c-format
 msgid "bytes"
 msgstr "byte"
@@ -4272,8 +4223,7 @@ msgid "Upper"
 msgstr "Senarai Huruf Besar"
 
 #. i18n: file ./advanced/kcm_sambaconf/share.ui line 2247
-#: rc.cpp:2622
-#: rc.cpp:2664
+#: rc.cpp:2622 rc.cpp:2664
 #, fuzzy, no-c-format
 msgid "Automatic"
 msgstr "Automatik"
@@ -4471,8 +4421,7 @@ msgid "Share with &NFS (Linux/UNIX)"
 msgstr ""
 
 #. i18n: file ./advanced/propsdlgplugin/propertiespagegui.ui line 103
-#: advanced/nfs/nfsdialog.cpp:42
-#: rc.cpp:2760
+#: advanced/nfs/nfsdialog.cpp:42 rc.cpp:2760
 #, fuzzy, no-c-format
 msgid "NFS Options"
 msgstr "Pilihan Bina"
@@ -4508,8 +4457,7 @@ msgid "Samba Options"
 msgstr "Pilihan Bina"
 
 #. i18n: file ./advanced/propsdlgplugin/propertiespagegui.ui line 230
-#: advanced/kcm_sambaconf/usertabimpl.cpp:279
-#: rc.cpp:2778
+#: advanced/kcm_sambaconf/usertabimpl.cpp:279 rc.cpp:2778
 #, no-c-format
 msgid "Name:"
 msgstr "Nama:"
@@ -4550,7 +4498,11 @@ msgid "Saving Failed"
 msgstr "Gagal menyimpan keputusan ke %1."
 
 #: simple/fileshare.cpp:344
-msgid "<h1>File Sharing</h1><p>This module can be used to enable file sharing over the network using the \"Network File System\" (NFS) or SMB in Konqueror. The latter enables you to share your files with Windows(R) computers on your network.</p>"
+msgid ""
+"<h1>File Sharing</h1>"
+"<p>This module can be used to enable file sharing over the network using the "
+"\"Network File System\" (NFS) or SMB in Konqueror. The latter enables you to "
+"share your files with Windows(R) computers on your network.</p>"
 msgstr ""
 
 #: simple/fileshare.cpp:358
@@ -4558,8 +4510,7 @@ msgstr ""
 msgid "Share Folder"
 msgstr "Folder Rumah"
 
-#: simple/groupconfigdlg.cpp:55
-#: simple/groupconfigdlg.cpp:269
+#: simple/groupconfigdlg.cpp:55 simple/groupconfigdlg.cpp:269
 #, fuzzy
 msgid "Allowed Users"
 msgstr "Pengguna dibenarkan"
@@ -4630,7 +4581,8 @@ msgstr "Adakah anda pasti untuk memadam kumpulan %s?"
 #: simple/groupconfigdlg.cpp:388
 #, fuzzy
 msgid "Deleting group '%1' failed."
-msgstr "Pelaksanaan gpg gagal (%d)\n"
+msgstr ""
+"Pelaksanaan gpg gagal (%d)\n"
 
 #: simple/groupconfigdlg.cpp:396
 #, fuzzy
@@ -4653,14 +4605,14 @@ msgstr "_Jangan Format"
 #: simple/groupconfigdlg.cpp:409
 #, fuzzy
 msgid "Creation of group '%1' failed."
-msgstr "Pelaksanaan gpg gagal (%d)\n"
+msgstr ""
+"Pelaksanaan gpg gagal (%d)\n"
 
 #: advanced/nfs/nfshostdlg.cpp:149
 msgid "There already exists a public entry."
 msgstr ""
 
-#: advanced/nfs/nfshostdlg.cpp:150
-#: advanced/nfs/nfshostdlg.cpp:167
+#: advanced/nfs/nfshostdlg.cpp:150 advanced/nfs/nfshostdlg.cpp:167
 #, fuzzy
 msgid "Host Already Exists"
 msgstr "Profil \"%s\" telah wujud!"
@@ -4685,19 +4637,31 @@ msgid "Unnamed"
 msgstr "Buku Tanpa Nama"
 
 #: advanced/kcm_sambaconf/linuxpermissionchecker.cpp:116
-msgid "<qt>You have specified <b>public read access</b> for this directory, but the guest account <b>%1</b> does not have the necessary read permissions;<br>do you want to continue anyway?</qt>"
+msgid ""
+"<qt>You have specified <b>public read access</b> for this directory, but the "
+"guest account <b>%1</b> does not have the necessary read permissions;"
+"<br>do you want to continue anyway?</qt>"
 msgstr ""
 
 #: advanced/kcm_sambaconf/linuxpermissionchecker.cpp:130
-msgid "<qt>You have specified <b>public write access</b> for this directory, but the guest account <b>%1</b> does not have the necessary write permissions;<br>do you want to continue anyway?</qt>"
+msgid ""
+"<qt>You have specified <b>public write access</b> for this directory, but the "
+"guest account <b>%1</b> does not have the necessary write permissions;"
+"<br>do you want to continue anyway?</qt>"
 msgstr ""
 
 #: advanced/kcm_sambaconf/linuxpermissionchecker.cpp:167
-msgid "<qt>You have specified <b>write access</b> to the user <b>%1</b> for this directory, but the user does not have the necessary write permissions;<br>do you want to continue anyway?</qt>"
+msgid ""
+"<qt>You have specified <b>write access</b> to the user <b>%1</b> "
+"for this directory, but the user does not have the necessary write permissions;"
+"<br>do you want to continue anyway?</qt>"
 msgstr ""
 
 #: advanced/kcm_sambaconf/linuxpermissionchecker.cpp:190
-msgid "<qt>You have specified <b>read access</b> to the user <b>%1</b> for this directory, but the user does not have the necessary read permissions;<br>do you want to continue anyway?</qt>"
+msgid ""
+"<qt>You have specified <b>read access</b> to the user <b>%1</b> "
+"for this directory, but the user does not have the necessary read permissions;"
+"<br>do you want to continue anyway?</qt>"
 msgstr ""
 
 #: advanced/kcm_sambaconf/kcmsambaconf.cpp:515
@@ -4747,7 +4711,9 @@ msgid "&Veto Oplock"
 msgstr ""
 
 #: advanced/kcm_sambaconf/hiddenfileview.cpp:386
-msgid "<qt>Some files you have selected are hidden because they start with a dot; do you want to uncheck all files starting with a dot?</qt>"
+msgid ""
+"<qt>Some files you have selected are hidden because they start with a dot; do "
+"you want to uncheck all files starting with a dot?</qt>"
 msgstr ""
 
 #: advanced/kcm_sambaconf/hiddenfileview.cpp:387
@@ -4766,7 +4732,9 @@ msgid "Keep Hidden"
 msgstr "&Teks Tersembunyi"
 
 #: advanced/kcm_sambaconf/hiddenfileview.cpp:406
-msgid "<b></b>Some files you have selected are matched by the wildcarded string <b>'%1'</b>; do you want to uncheck all files matching <b>'%1'</b>?"
+msgid ""
+"<b></b>Some files you have selected are matched by the wildcarded string <b>"
+"'%1'</b>; do you want to uncheck all files matching <b>'%1'</b>?"
 msgstr ""
 
 #: advanced/kcm_sambaconf/hiddenfileview.cpp:408
@@ -4786,7 +4754,8 @@ msgstr "Muatturun Dipilih"
 
 #: advanced/kcm_sambaconf/smbconfconfigwidget.cpp:48
 msgid ""
-"<p>The SAMBA configuration file <strong>'smb.conf'</strong> could not be found;</p>make sure you have SAMBA installed.\n"
+"<p>The SAMBA configuration file <strong>'smb.conf'</strong> "
+"could not be found;</p>make sure you have SAMBA installed.\n"
 "\n"
 msgstr ""
 
@@ -4827,29 +4796,47 @@ msgid "The option <em>%1</em> is not supported by your Samba version"
 msgstr ""
 
 #: advanced/kcm_sambaconf/kcminterface.ui.h:101
-msgid "Use the <i>share</i> security level if you have a home network or a small office network.<br> It allows everyone to read the list of all your shared directories and printers before a login is required."
+msgid ""
+"Use the <i>share</i> security level if you have a home network or a small "
+"office network."
+"<br> It allows everyone to read the list of all your shared directories and "
+"printers before a login is required."
 msgstr ""
 
 #: advanced/kcm_sambaconf/kcminterface.ui.h:106
-msgid "Use the <i>user</i> security level if you have a bigger network and you do not want to allow everyone to read your list of shared directories and printers without a login.<p>If you want to run your Samba server as a <b>Primary Domain controller</b> (PDC) you also have to set this option."
+msgid ""
+"Use the <i>user</i> security level if you have a bigger network and you do not "
+"want to allow everyone to read your list of shared directories and printers "
+"without a login."
+"<p>If you want to run your Samba server as a <b>Primary Domain controller</b> "
+"(PDC) you also have to set this option."
 msgstr ""
 
 #: advanced/kcm_sambaconf/kcminterface.ui.h:112
-msgid "Use the <i>server</i> security level if you have a big network and the samba server should validate the username/password by passing it to another SMB server, such as an NT box."
+msgid ""
+"Use the <i>server</i> security level if you have a big network and the samba "
+"server should validate the username/password by passing it to another SMB "
+"server, such as an NT box."
 msgstr ""
 
 #: advanced/kcm_sambaconf/kcminterface.ui.h:116
-msgid "Use the <i>domain</i> security level if you have a big network and the samba server should validate the username/password by passing it to a Windows NT Primary or Backup Domain Controller."
+msgid ""
+"Use the <i>domain</i> security level if you have a big network and the samba "
+"server should validate the username/password by passing it to a Windows NT "
+"Primary or Backup Domain Controller."
 msgstr ""
 
 #: advanced/kcm_sambaconf/kcminterface.ui.h:120
-msgid "Use the <i>ADS</i> security level if you have a big network and the samba server should act as a domain member in an ADS realm."
+msgid ""
+"Use the <i>ADS</i> security level if you have a big network and the samba "
+"server should act as a domain member in an ADS realm."
 msgstr ""
 
 #: advanced/propsdlgplugin/propsdlgshareplugin.cpp:60
 #, fuzzy
 msgid "&Share"
-msgstr "Kongsi\n"
+msgstr ""
+"Kongsi\n"
 
 #: advanced/propsdlgplugin/propsdlgshareplugin.cpp:73
 #, fuzzy
@@ -4913,6 +4900,7 @@ msgid "You have to enter a name for the Samba share."
 msgstr ""
 
 #: advanced/propsdlgplugin/propertiespage.cpp:530
-msgid "<qt>There is already a share with the name <strong>%1</strong>.<br> Please choose another name.</qt>"
+msgid ""
+"<qt>There is already a share with the name <strong>%1</strong>."
+"<br> Please choose another name.</qt>"
 msgstr ""
-
