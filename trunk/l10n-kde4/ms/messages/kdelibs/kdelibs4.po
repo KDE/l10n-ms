@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-26 09:02+0100\n"
+"POT-Creation-Date: 2008-10-27 10:16+0100\n"
 "PO-Revision-Date: 2008-10-25 23:57+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -5564,6 +5564,13 @@ msgstr "<qt>Anda pasti ingin keluar <b>%1</b>?</qt>"
 msgid "Confirm Quit From System Tray"
 msgstr "Sahkan Keluar Dari Dulang Sistem"
 
+#: kdeui/util/knotificationrestrictions.cpp:179
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "About Application"
+msgid "Unknown Application"
+msgstr "Perihal Aplikasi"
+
 #: kdeui/util/kstandardguiitem.cpp:105
 msgid "&OK"
 msgstr "&OK"
@@ -6255,8 +6262,8 @@ msgstr ""
 msgid "Reset Toolbars"
 msgstr "Ulangtetap Bar Alatan"
 
-#: kdeui/dialogs/kedittoolbar.cpp:527 khtml/khtmlview.cpp:2973
-#: khtml/khtmlview.cpp:3006 khtml/html/html_formimpl.cpp:2165
+#: kdeui/dialogs/kedittoolbar.cpp:527 khtml/khtmlview.cpp:2971
+#: khtml/khtmlview.cpp:3004 khtml/html/html_formimpl.cpp:2165
 msgid "Reset"
 msgstr "Set semula"
 
@@ -6322,7 +6329,7 @@ msgstr "Ubah Ikon"
 
 #: kdeui/dialogs/kshortcutseditor.cpp:508
 #: kdeui/dialogs/kshortcutseditor.cpp:524
-#: kdeui/widgets/kkeysequencewidget.cpp:152
+#: kdeui/widgets/kkeysequencewidget.cpp:236
 msgid "Key Conflict"
 msgstr "Konflik Kekunci"
 
@@ -6339,8 +6346,9 @@ msgstr ""
 #: kdeui/dialogs/kshortcutseditor.cpp:513
 #: kdeui/dialogs/kshortcutseditor.cpp:529 kdeui/shortcuts/kglobalaccel.cpp:429
 #: kdeui/shortcuts/kglobalaccel.cpp:468
-#: kdeui/widgets/kkeysequencewidget.cpp:160
-#: kdeui/widgets/kkeysequencewidget.cpp:483
+#: kdeui/widgets/kkeysequencewidget.cpp:173
+#: kdeui/widgets/kkeysequencewidget.cpp:244
+#: kdeui/widgets/kkeysequencewidget.cpp:578
 msgid "Reassign"
 msgstr "Ulangtugas"
 
@@ -9385,7 +9393,23 @@ msgstr "Tidak Diketahui"
 msgid "&Copy Full Text"
 msgstr "&Salin Teks Penuh"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:154
+#: kdeui/widgets/kkeysequencewidget.cpp:160
+#, kde-format
+msgid "Shortcut '%1' in Application %2 for action %3\n"
+msgstr ""
+
+#: kdeui/widgets/kkeysequencewidget.cpp:167
+#, kde-format
+msgid "The shortcut '%1' conflicts with the following key combinations:\n"
+msgstr ""
+
+#: kdeui/widgets/kkeysequencewidget.cpp:171
+#, fuzzy
+#| msgid "Conflict With Registered Global Shortcut"
+msgid "Conflict With Registered Global Shortcut(s)"
+msgstr "Konflik dengan Pintasan Global Berdaftar"
+
+#: kdeui/widgets/kkeysequencewidget.cpp:238
 #, kde-format
 msgid ""
 "The \"%1\" key sequence conflicts with \"%2\" for the \"%3\" action.\n"
@@ -9394,11 +9418,11 @@ msgstr ""
 "Turutan kekunci '%1' berkonflik dengan \"%2\" untuk tindakan \"%3\".\n"
 "Adakah anda ingin menugaskannya pintasan kosong untuk tindakan tersebut?"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:168
+#: kdeui/widgets/kkeysequencewidget.cpp:252
 msgid "Shortcut conflict"
 msgstr "Konflik pintasan"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:169
+#: kdeui/widgets/kkeysequencewidget.cpp:253
 #, kde-format
 msgid ""
 "<qt>The '%1' key combination is already used by the <b>%2</b> action."
@@ -9407,11 +9431,11 @@ msgstr ""
 "<qt>Kombinasi kekunci '%1' telah digunakan oleh tindakan \"%2\".<br>Sila "
 "pilih yang lain.</qt>"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:477
+#: kdeui/widgets/kkeysequencewidget.cpp:572
 msgid "Conflict with Standard Application Shortcut"
 msgstr "Konflik dengan Piawaian Kekunci Pintas Aplikasi"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:478
+#: kdeui/widgets/kkeysequencewidget.cpp:573
 #, kde-format
 msgid ""
 "The '%1' key combination is also used for the standard action \"%2\" that "
@@ -9422,15 +9446,25 @@ msgstr ""
 "yang digunakan oleh kebanyakan  aplikasi.\n"
 "Adakah anda betul-betul hendak menggunakannya sebagai pintasan global juga?"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:510
+#: kdeui/widgets/kkeysequencewidget.cpp:605
 msgctxt "What the user inputs now will be taken as the new shortcut"
 msgid "Input"
 msgstr "Masukan"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:517
+#: kdeui/widgets/kkeysequencewidget.cpp:612
 msgctxt "No shortcut defined"
 msgid "None"
 msgstr "Tiada"
+
+#: kdeui/widgets/kkeysequencewidget.cpp:655
+msgid "The key you just pressed isn't supported by qt."
+msgstr ""
+
+#: kdeui/widgets/kkeysequencewidget.cpp:656
+#, fuzzy
+#| msgid "Unsorted"
+msgid "Unsupported Key"
+msgstr "Tidak diisih"
 
 #: kdeui/widgets/keditlistbox.cpp:328
 msgid "&Add"
@@ -10335,7 +10369,7 @@ msgstr ""
 "<qt>Borang akan dihantar ke <br /><b>%1</b><br />pada sistem fail tempatan "
 "anda.<br />Anda mahu hantar borang ini?</qt>"
 
-#: khtml/khtml_part.cpp:4952 khtml/khtmlview.cpp:2959 khtml/khtmlview.cpp:3001
+#: khtml/khtml_part.cpp:4952 khtml/khtmlview.cpp:2957 khtml/khtmlview.cpp:2999
 #: khtml/html/html_formimpl.cpp:1579 khtml/html/html_formimpl.cpp:2173
 msgid "Submit"
 msgstr "Hantar"
@@ -10453,39 +10487,39 @@ msgstr "Tambah ke abai..."
 msgid "Remove from ignores..."
 msgstr ""
 
-#: khtml/khtmlview.cpp:1923
+#: khtml/khtmlview.cpp:1921
 msgid "Find stopped."
 msgstr "Carian dihentikan."
 
-#: khtml/khtmlview.cpp:1934
+#: khtml/khtmlview.cpp:1932
 msgid "Starting -- find links as you type"
 msgstr "Mula -- cari pautan semasa anda taip"
 
-#: khtml/khtmlview.cpp:1940
+#: khtml/khtmlview.cpp:1938
 msgid "Starting -- find text as you type"
 msgstr "Mula -- cari teks semasa anda taip"
 
-#: khtml/khtmlview.cpp:1963
+#: khtml/khtmlview.cpp:1961
 #, kde-format
 msgid "Link found: \"%1\"."
 msgstr "Pautan ditemui: \"%1\"."
 
-#: khtml/khtmlview.cpp:1968
+#: khtml/khtmlview.cpp:1966
 #, kde-format
 msgid "Link not found: \"%1\"."
 msgstr "Pautan tidak ditemui: \"%1\""
 
-#: khtml/khtmlview.cpp:1976
+#: khtml/khtmlview.cpp:1974
 #, kde-format
 msgid "Text found: \"%1\"."
 msgstr "Teks ditemui: \"%1\"."
 
-#: khtml/khtmlview.cpp:1981
+#: khtml/khtmlview.cpp:1979
 #, kde-format
 msgid "Text not found: \"%1\"."
 msgstr "Teks tidak ditemui: \"%1\"."
 
-#: khtml/khtmlview.cpp:2029
+#: khtml/khtmlview.cpp:2027
 msgid "Access Keys activated"
 msgstr "Kekunci Akses diaktifkan"
 
