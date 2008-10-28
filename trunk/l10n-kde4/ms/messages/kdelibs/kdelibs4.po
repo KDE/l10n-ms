@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-27 10:16+0100\n"
+"POT-Creation-Date: 2008-10-28 09:45+0100\n"
 "PO-Revision-Date: 2008-10-25 23:57+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -5177,7 +5177,6 @@ msgstr ""
 #: knewstuff/knewstuff2/ui/kdxsbutton.cpp:540
 #: knewstuff/knewstuff2/ui/itemsviewdelegate.cpp:64
 #: knewstuff/knewstuff2/ui/itemsviewdelegate.cpp:186
-#: knewstuff/knewstuff2/ui/itemsviewdelegate.cpp:188
 #: knewstuff/knewstuff2/ui/itemsviewdelegate.cpp:194
 msgid "Install"
 msgstr "Pasang"
@@ -5213,7 +5212,6 @@ msgstr "Kerjasama"
 
 #: knewstuff/knewstuff2/ui/kdxsbutton.cpp:140
 #: knewstuff/knewstuff2/ui/itemsviewdelegate.cpp:177
-#: knewstuff/knewstuff2/ui/itemsviewdelegate.cpp:179
 msgid "Update"
 msgstr "Kemaskini"
 
@@ -6329,7 +6327,6 @@ msgstr "Ubah Ikon"
 
 #: kdeui/dialogs/kshortcutseditor.cpp:508
 #: kdeui/dialogs/kshortcutseditor.cpp:524
-#: kdeui/widgets/kkeysequencewidget.cpp:236
 msgid "Key Conflict"
 msgstr "Konflik Kekunci"
 
@@ -6344,11 +6341,11 @@ msgstr ""
 "tindakan semasa?"
 
 #: kdeui/dialogs/kshortcutseditor.cpp:513
-#: kdeui/dialogs/kshortcutseditor.cpp:529 kdeui/shortcuts/kglobalaccel.cpp:429
-#: kdeui/shortcuts/kglobalaccel.cpp:468
-#: kdeui/widgets/kkeysequencewidget.cpp:173
-#: kdeui/widgets/kkeysequencewidget.cpp:244
-#: kdeui/widgets/kkeysequencewidget.cpp:578
+#: kdeui/dialogs/kshortcutseditor.cpp:529 kdeui/shortcuts/kglobalaccel.cpp:431
+#: kdeui/shortcuts/kglobalaccel.cpp:470
+#: kdeui/widgets/kkeysequencewidget.cpp:174
+#: kdeui/widgets/kkeysequencewidget.cpp:256
+#: kdeui/widgets/kkeysequencewidget.cpp:633
 msgid "Reassign"
 msgstr "Ulangtugas"
 
@@ -7493,11 +7490,11 @@ msgstr "Semua Lajur Dapat Dilihat"
 msgid "S&earch:"
 msgstr "&Cari:"
 
-#: kdeui/shortcuts/kglobalaccel.cpp:422
+#: kdeui/shortcuts/kglobalaccel.cpp:424
 msgid "Conflict with Global Shortcut"
 msgstr "Konflik dengan Pintasan Global"
 
-#: kdeui/shortcuts/kglobalaccel.cpp:423
+#: kdeui/shortcuts/kglobalaccel.cpp:425
 #, kde-format
 msgid ""
 "The '%1' key combination has already been allocated to the global action \"%2"
@@ -7509,24 +7506,24 @@ msgstr ""
 "Adakah anda ingin menetapkannya semula daripada tindakan tersebut kepada "
 "tindakan semasa?"
 
-#: kdeui/shortcuts/kglobalaccel.cpp:449
+#: kdeui/shortcuts/kglobalaccel.cpp:451
 #, kde-format
 msgid "The '%1' key combination is registered by application %2 for action %3:"
 msgstr ""
 
-#: kdeui/shortcuts/kglobalaccel.cpp:456
+#: kdeui/shortcuts/kglobalaccel.cpp:458
 #, kde-format
 msgid "In context '%1' for action '%2'\n"
 msgstr ""
 
-#: kdeui/shortcuts/kglobalaccel.cpp:460
+#: kdeui/shortcuts/kglobalaccel.cpp:462
 #, kde-format
 msgid ""
 "The '%1' key combination is registered by application %2.\n"
 "%3"
 msgstr ""
 
-#: kdeui/shortcuts/kglobalaccel.cpp:466
+#: kdeui/shortcuts/kglobalaccel.cpp:468
 msgid "Conflict With Registered Global Shortcut"
 msgstr "Konflik dengan Pintasan Global Berdaftar"
 
@@ -9393,36 +9390,53 @@ msgstr "Tidak Diketahui"
 msgid "&Copy Full Text"
 msgstr "&Salin Teks Penuh"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:160
+#: kdeui/widgets/kkeysequencewidget.cpp:161
 #, kde-format
 msgid "Shortcut '%1' in Application %2 for action %3\n"
 msgstr ""
 
-#: kdeui/widgets/kkeysequencewidget.cpp:167
+#: kdeui/widgets/kkeysequencewidget.cpp:168
 #, kde-format
 msgid "The shortcut '%1' conflicts with the following key combinations:\n"
 msgstr ""
 
-#: kdeui/widgets/kkeysequencewidget.cpp:171
+#: kdeui/widgets/kkeysequencewidget.cpp:172
 #, fuzzy
 #| msgid "Conflict With Registered Global Shortcut"
 msgid "Conflict With Registered Global Shortcut(s)"
 msgstr "Konflik dengan Pintasan Global Berdaftar"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:238
-#, kde-format
+#: kdeui/widgets/kkeysequencewidget.cpp:241
+#, fuzzy
+#| msgid "Shortcut conflict"
+msgid "Shortcut Conflict(s)"
+msgstr "Konflik pintasan"
+
+#: kdeui/widgets/kkeysequencewidget.cpp:245
+#, fuzzy, kde-format
+#| msgctxt "header for an applications shortcut list"
+#| msgid "Shortcuts for %1"
+msgid "Shortcut(s) '%1' for action '%2'\n"
+msgstr "Pintasan untuk %1"
+
+#: kdeui/widgets/kkeysequencewidget.cpp:250
+#, fuzzy, kde-format
+#| msgid ""
+#| "The \"%1\" key sequence conflicts with \"%2\" for the \"%3\" action.\n"
+#| "Do you want to assign an empty shortcut to that action?"
 msgid ""
-"The \"%1\" key sequence conflicts with \"%2\" for the \"%3\" action.\n"
-"Do you want to assign an empty shortcut to that action?"
+"The \"%1\" shortcut is ambiguous with the following shortcuts.\n"
+"Do you want to assign an empty shortcut to these actions?\n"
+"%2"
 msgstr ""
 "Turutan kekunci '%1' berkonflik dengan \"%2\" untuk tindakan \"%3\".\n"
 "Adakah anda ingin menugaskannya pintasan kosong untuk tindakan tersebut?"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:252
+#: kdeui/widgets/kkeysequencewidget.cpp:264
 msgid "Shortcut conflict"
 msgstr "Konflik pintasan"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:253
+#: kdeui/widgets/kkeysequencewidget.cpp:265
 #, kde-format
 msgid ""
 "<qt>The '%1' key combination is already used by the <b>%2</b> action."
@@ -9431,11 +9445,11 @@ msgstr ""
 "<qt>Kombinasi kekunci '%1' telah digunakan oleh tindakan \"%2\".<br>Sila "
 "pilih yang lain.</qt>"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:572
+#: kdeui/widgets/kkeysequencewidget.cpp:627
 msgid "Conflict with Standard Application Shortcut"
 msgstr "Konflik dengan Piawaian Kekunci Pintas Aplikasi"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:573
+#: kdeui/widgets/kkeysequencewidget.cpp:628
 #, kde-format
 msgid ""
 "The '%1' key combination is also used for the standard action \"%2\" that "
@@ -9446,21 +9460,21 @@ msgstr ""
 "yang digunakan oleh kebanyakan  aplikasi.\n"
 "Adakah anda betul-betul hendak menggunakannya sebagai pintasan global juga?"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:605
+#: kdeui/widgets/kkeysequencewidget.cpp:660
 msgctxt "What the user inputs now will be taken as the new shortcut"
 msgid "Input"
 msgstr "Masukan"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:612
+#: kdeui/widgets/kkeysequencewidget.cpp:667
 msgctxt "No shortcut defined"
 msgid "None"
 msgstr "Tiada"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:655
+#: kdeui/widgets/kkeysequencewidget.cpp:710
 msgid "The key you just pressed isn't supported by qt."
 msgstr ""
 
-#: kdeui/widgets/kkeysequencewidget.cpp:656
+#: kdeui/widgets/kkeysequencewidget.cpp:711
 #, fuzzy
 #| msgid "Unsorted"
 msgid "Unsupported Key"
@@ -10382,49 +10396,49 @@ msgstr ""
 "Laman ini cuba mengepil fail dari komputer anda di dalam borang. Kepilan "
 "telah ditanggalkan untuk keselamatan."
 
-#: khtml/khtml_part.cpp:6008
+#: khtml/khtml_part.cpp:6011
 #, kde-format
 msgid "(%1/s)"
 msgstr "(%1/s)"
 
-#: khtml/khtml_part.cpp:6923
+#: khtml/khtml_part.cpp:6926
 msgid "Security Warning"
 msgstr "Amaran Keselamatan"
 
-#: khtml/khtml_part.cpp:6929
+#: khtml/khtml_part.cpp:6932
 #, kde-format
 msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied.</qt>"
 msgstr ""
 "<qt>Akses oleh halaman tidak dipercayai ke<br /><b>%1</b><br /> dinafikan.</"
 "qt>"
 
-#: khtml/khtml_part.cpp:6930 khtml/java/kjavaappletserver.cpp:792
+#: khtml/khtml_part.cpp:6933 khtml/java/kjavaappletserver.cpp:792
 msgid "Security Alert"
 msgstr "Amaran Keselamatan"
 
-#: khtml/khtml_part.cpp:7280
+#: khtml/khtml_part.cpp:7283
 #, kde-format
 msgid "The wallet '%1' is open and being used for form data and passwords."
 msgstr "Wallet '%1' terbuka dan digunakan untuk data borang dan kata laluan."
 
-#: khtml/khtml_part.cpp:7337
+#: khtml/khtml_part.cpp:7340
 msgid "&Close Wallet"
 msgstr "&Tutup Wallet"
 
-#: khtml/khtml_part.cpp:7380
+#: khtml/khtml_part.cpp:7383
 msgid "JavaScript &Debugger"
 msgstr "Penyah-rala&t JavaScript"
 
-#: khtml/khtml_part.cpp:7413
+#: khtml/khtml_part.cpp:7416
 msgid "This page was prevented from opening a new window via JavaScript."
 msgstr ""
 "Laman ini meminta untuk membuka tetingkap pelayar baru menerusi JavaScript."
 
-#: khtml/khtml_part.cpp:7419
+#: khtml/khtml_part.cpp:7422
 msgid "Popup Window Blocked"
 msgstr "Tetingkap Pop keluar dihalang"
 
-#: khtml/khtml_part.cpp:7419
+#: khtml/khtml_part.cpp:7422
 msgid ""
 "This page has attempted to open a popup window but was blocked.\n"
 "You can click on this icon in the status bar to control this behavior\n"
@@ -10434,18 +10448,18 @@ msgstr ""
 "Anda boleh klik pada ikon ini pada bar status untuk mengawal perkara ini\n"
 "atau untuk membukak pop keluar."
 
-#: khtml/khtml_part.cpp:7432
+#: khtml/khtml_part.cpp:7435
 #, kde-format
 msgid "&Show Blocked Popup Window"
 msgid_plural "&Show %1 Blocked Popup Windows"
 msgstr[0] "&Papar Tetingkap Popup Dihalang"
 msgstr[1] "&Papar %1 Tetingkap Popup Dihalang"
 
-#: khtml/khtml_part.cpp:7433
+#: khtml/khtml_part.cpp:7436
 msgid "Show Blocked Window Passive Popup &Notification"
 msgstr "Tunjuk Tetingkap Pasif Popkeluar & Notifikasi "
 
-#: khtml/khtml_part.cpp:7435
+#: khtml/khtml_part.cpp:7438
 msgid "&Configure JavaScript New Window Policies..."
 msgstr "Selaras&kan Polisi Tetingkap Baru Javaskrip..."
 
@@ -10544,7 +10558,7 @@ msgstr "ralat maut dalam penghuraian: %1 pada baris %2, kolum %3"
 msgid "XML parsing error"
 msgstr "Ralat penghuraian XML"
 
-#: khtml/xml/dom_docimpl.cpp:2203
+#: khtml/xml/dom_docimpl.cpp:2237
 msgid "Basic Page Style"
 msgstr "Halaman"
 
@@ -10892,7 +10906,7 @@ msgstr ""
 msgid "Key Generator"
 msgstr "Penjana Kekunci"
 
-#: khtml/html/html_objectimpl.cpp:577
+#: khtml/html/html_objectimpl.cpp:574
 #, kde-format
 msgid ""
 "No plugin found for '%1'.\n"
@@ -10901,15 +10915,15 @@ msgstr ""
 "Tiada plugmasuk ditemui untuk '%1'.\n"
 "Anda mahu muat turun dari %2?"
 
-#: khtml/html/html_objectimpl.cpp:578
+#: khtml/html/html_objectimpl.cpp:575
 msgid "Missing Plugin"
 msgstr "PlugMasuk Hilang"
 
-#: khtml/html/html_objectimpl.cpp:578
+#: khtml/html/html_objectimpl.cpp:575
 msgid "Download"
 msgstr "Muatturun"
 
-#: khtml/html/html_objectimpl.cpp:578
+#: khtml/html/html_objectimpl.cpp:575
 msgid "Do Not Download"
 msgstr "Jangan Muat turun"
 
