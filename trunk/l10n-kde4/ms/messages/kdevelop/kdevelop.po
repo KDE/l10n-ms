@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-08 10:48+0100\n"
+"POT-Creation-Date: 2008-11-10 10:12+0100\n"
 "PO-Revision-Date: 2007-01-18 22:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -130,7 +130,7 @@ msgstr "Hidupkan N_IS"
 #. i18n: file: languages/cpp/debugger/debuggertracingdialog.ui:30
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: rc.cpp:49 languages/cpp/codegen/progressdialogs.cpp:54
-#: languages/cpp/codegen/simplerefactoring.cpp:216
+#: languages/cpp/codegen/simplerefactoring.cpp:245
 #: languages/cpp/debugger/memviewdlg.cpp:116
 #, fuzzy
 msgid "Cancel"
@@ -601,7 +601,7 @@ msgctxt "@title:menu"
 msgid "Settings"
 msgstr "Setting"
 
-#. i18n: file: src/kdevelopui.rc:114
+#. i18n: file: src/kdevelopui.rc:115
 #. i18n: ectx: Menu (window)
 #: rc.cpp:250
 #, fuzzy
@@ -609,11 +609,11 @@ msgctxt "@title:menu"
 msgid "Window"
 msgstr "_Tetingkap"
 
-#. i18n: file: src/kdevelopui.rc:145
+#. i18n: file: src/kdevelopui.rc:146
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: plugins/qtdesigner/kdevqtdesigner.rc:35
 #. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: src/kdevelopui.rc:145
+#. i18n: file: src/kdevelopui.rc:146
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: plugins/qtdesigner/kdevqtdesigner.rc:35
 #. i18n: ectx: ToolBar (mainToolBar)
@@ -2131,7 +2131,7 @@ msgstr ""
 msgid "Folder: \"%1\"  Command: \"%2\"Output: \"%3\""
 msgstr ""
 
-#: languages/cpp/codecompletioncontext.cpp:695
+#: languages/cpp/codecompletioncontext.cpp:716
 #, kde-format
 msgid "%1 overloads of"
 msgstr ""
@@ -2231,41 +2231,41 @@ msgstr ""
 msgid "Create &New Class"
 msgstr "Cipta Queue baru"
 
-#: languages/cpp/cpplanguagesupport.cpp:586
+#: languages/cpp/cpplanguagesupport.cpp:597
 #, kde-format
 msgid "Build manager for project %1 did not return a build directory"
 msgstr ""
 
-#: languages/cpp/cpplanguagesupport.cpp:587
+#: languages/cpp/cpplanguagesupport.cpp:598
 msgid ""
 "The include path resolver needs the build directory to resolve additional "
 "include paths. Consider setting up a build directory in the project manager "
 "if you have not done so yet."
 msgstr ""
 
-#: languages/cpp/cpplanguagesupport.cpp:625
+#: languages/cpp/cpplanguagesupport.cpp:636
 msgid "Build-manager did not return an include-path"
 msgstr ""
 
-#: languages/cpp/cpplanguagesupport.cpp:626
+#: languages/cpp/cpplanguagesupport.cpp:637
 #, kde-format
 msgid ""
 "The build-manager did not return the include-path %1, which could be "
 "resolved by the include-path resolver"
 msgstr ""
 
-#: languages/cpp/cpplanguagesupport.cpp:644
+#: languages/cpp/cpplanguagesupport.cpp:655
 msgid "Include-path resolver:"
 msgstr ""
 
-#: languages/cpp/cpplanguagesupport.cpp:645
+#: languages/cpp/cpplanguagesupport.cpp:656
 #, kde-format
 msgid ""
 "Used build directory: \"%1\"\n"
 "Include-path resolver: %2"
 msgstr ""
 
-#: languages/cpp/cpplanguagesupport.cpp:1003
+#: languages/cpp/cpplanguagesupport.cpp:1014
 msgid "Emptied by preprocessor<br />"
 msgstr ""
 
@@ -2289,74 +2289,89 @@ msgstr "Pakej Hilang"
 msgid "Ready"
 msgstr "Paparan _Pepohon"
 
+#: languages/cpp/implementationhelperitem.cpp:32
+#, fuzzy
+msgid "Override"
+msgstr "Tindih"
+
+#: languages/cpp/implementationhelperitem.cpp:34
+#, fuzzy
+msgid "Implement"
+msgstr "Tiada slot kosong"
+
 #: languages/cpp/missingincludecompletionitem.cpp:197
 #, fuzzy
 #| msgid "or"
 msgid "for"
 msgstr "atau"
 
-#: languages/cpp/codegen/simplerefactoring.cpp:62
+#: languages/cpp/codegen/simplerefactoring.cpp:64
 msgid ""
 "Refactoring is an experimental feature, it may damage your code. Before "
 "using it, make sure to make a backup."
 msgstr ""
 
-#: languages/cpp/codegen/simplerefactoring.cpp:85
-#: languages/cpp/codegen/simplerefactoring.cpp:201
+#: languages/cpp/codegen/simplerefactoring.cpp:86
+#: languages/cpp/codegen/simplerefactoring.cpp:230
 #, fuzzy, kde-format
 msgid "Rename %1"
 msgstr "/Kumpulan/Ubah _nama"
 
-#: languages/cpp/codegen/simplerefactoring.cpp:203
+#: languages/cpp/codegen/simplerefactoring.cpp:99
+#, fuzzy
+msgid "Create Class"
+msgstr "Cipta Queue baru"
+
+#: languages/cpp/codegen/simplerefactoring.cpp:232
 #, fuzzy
 msgid "New name:"
 msgstr "Nama fail"
 
-#: languages/cpp/codegen/simplerefactoring.cpp:211
+#: languages/cpp/codegen/simplerefactoring.cpp:240
 #, fuzzy
 msgid "Rename"
 msgstr "/Kumpulan/Ubah _nama"
 
-#: languages/cpp/codegen/simplerefactoring.cpp:212
+#: languages/cpp/codegen/simplerefactoring.cpp:241
 msgid ""
 "Note: All overloaded functions, overloads, forward-declarations, etc. will "
 "be renamed too"
 msgstr ""
 
-#: languages/cpp/codegen/simplerefactoring.cpp:220
+#: languages/cpp/codegen/simplerefactoring.cpp:249
 #, fuzzy
 #| msgid "User"
 msgid "Uses"
 msgstr "Pengguna"
 
-#: languages/cpp/codegen/simplerefactoring.cpp:244
+#: languages/cpp/codegen/simplerefactoring.cpp:273
 #, fuzzy, kde-format
 msgid "Searching uses of \"%1\""
 msgstr "_Simpan ke cakera liut"
 
-#: languages/cpp/codegen/simplerefactoring.cpp:264
-#: languages/cpp/codegen/simplerefactoring.cpp:272
-#: languages/cpp/codegen/simplerefactoring.cpp:278
+#: languages/cpp/codegen/simplerefactoring.cpp:293
+#: languages/cpp/codegen/simplerefactoring.cpp:301
+#: languages/cpp/codegen/simplerefactoring.cpp:307
 #, kde-format
 msgid "Applying changes failed: %1"
 msgstr ""
 
-#: languages/cpp/codegen/cppnewclass.cpp:69
+#: languages/cpp/codegen/cppnewclass.cpp:81
 #, kde-format
 msgid "Unable to open '%1' to write the new class header."
 msgstr ""
 
-#: languages/cpp/codegen/cppnewclass.cpp:69
+#: languages/cpp/codegen/cppnewclass.cpp:81
 #, fuzzy
 msgid "Header generation error"
 msgstr "Kod Ralat"
 
-#: languages/cpp/codegen/cppnewclass.cpp:145
+#: languages/cpp/codegen/cppnewclass.cpp:157
 #, kde-format
 msgid "Unable to open '%1' to write the new class implementation."
 msgstr ""
 
-#: languages/cpp/codegen/cppnewclass.cpp:145
+#: languages/cpp/codegen/cppnewclass.cpp:157
 #, fuzzy
 msgid "Implementation generation error"
 msgstr "Menyalin Fail"
@@ -4526,37 +4541,37 @@ msgstr "Pemerhati CVS"
 msgid "Support for running check unit tests"
 msgstr ""
 
-#: plugins/xtest/qtest/qtestoutputjob.cpp:45
+#: plugins/xtest/qtest/qtestoutputjob.cpp:44
 #, fuzzy
 msgid "QTest verbose output"
 msgstr "_Katalaluan root: "
 
-#: plugins/xtest/qtest/qtestcase.cpp:148
+#: plugins/xtest/qtest/qtestcase.cpp:150
 #: plugins/xtest/qtest/tests/qtestrunnertest.cpp:245
 #, fuzzy
 msgid "Failed to start test executable."
 msgstr "tidak dapat memulakan crond: crond telah dilaksanakan."
 
-#: plugins/xtest/qtest/qtestcase.cpp:151
+#: plugins/xtest/qtest/qtestcase.cpp:153
 #: plugins/xtest/qtest/tests/qtestrunnertest.cpp:283
 #, fuzzy
 msgid "Test executable crashed."
 msgstr "Skrip PHP"
 
-#: plugins/xtest/qtest/qtestcase.cpp:154
+#: plugins/xtest/qtest/qtestcase.cpp:156
 msgid "Test executable timed out."
 msgstr ""
 
-#: plugins/xtest/qtest/qtestcase.cpp:157
+#: plugins/xtest/qtest/qtestcase.cpp:159
 #, fuzzy
 msgid "Failed to write to test executable."
 msgstr "tidak dapat memulakan crond: crond telah dilaksanakan."
 
-#: plugins/xtest/qtest/qtestcase.cpp:160
+#: plugins/xtest/qtest/qtestcase.cpp:162
 msgid "Failed to read from test executable."
 msgstr ""
 
-#: plugins/xtest/qtest/qtestcase.cpp:163
+#: plugins/xtest/qtest/qtestcase.cpp:165
 #, fuzzy
 msgid "Unknown error occurred."
 msgstr "Ralat telah berlaku"
@@ -4574,30 +4589,30 @@ msgstr ""
 msgid "xTest"
 msgstr "Ujian"
 
-#: plugins/xtest/qtest/qtestplugin.cpp:67
+#: plugins/xtest/qtest/qtestplugin.cpp:60
 #, fuzzy
 msgid "QTest test"
 msgstr "Nama dan Jenis"
 
-#: plugins/xtest/qtest/qtestplugin.cpp:67
+#: plugins/xtest/qtest/qtestplugin.cpp:60
 msgid "Support for running QTest unit tests"
 msgstr ""
 
-#: plugins/xtest/qtest/qtestplugin.cpp:101
+#: plugins/xtest/qtest/qtestplugin.cpp:94
 msgid "Print each QVERIFY/QCOMPARE"
 msgstr ""
 
-#: plugins/xtest/qtest/qtestplugin.cpp:106
+#: plugins/xtest/qtest/qtestplugin.cpp:99
 msgid "Print every signal emitted"
 msgstr ""
 
-#: plugins/xtest/qtest/qtestplugin.cpp:136
-#: plugins/xtest/qtest/qtestplugin.cpp:229
+#: plugins/xtest/qtest/qtestplugin.cpp:129
+#: plugins/xtest/qtest/qtestplugin.cpp:226
 #, fuzzy
 msgid "New QTest"
 msgstr "Memasukkan Widget"
 
-#: plugins/xtest/qtest/qtestplugin.cpp:137
+#: plugins/xtest/qtest/qtestplugin.cpp:130
 #, fuzzy
 msgid "Class name:"
 msgstr "Nama kelas aksara tidak sah"
@@ -8489,10 +8504,6 @@ msgstr "Toggle tambahan awalan"
 
 #~ msgid "Company"
 #~ msgstr "Syarikat"
-
-#, fuzzy
-#~ msgid "Implement Slots"
-#~ msgstr "Tiada slot kosong"
 
 #, fuzzy
 #~ msgid "No options available for this VCS."
@@ -12396,10 +12407,6 @@ msgstr "Toggle tambahan awalan"
 #, fuzzy
 #~ msgid "Do Not Reload"
 #~ msgstr "_Jangan Format"
-
-#, fuzzy
-#~ msgid "Overwrite"
-#~ msgstr "Tindih"
 
 #, fuzzy
 #~ msgid "Do Not Overwrite"
