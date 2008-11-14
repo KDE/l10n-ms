@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-13 10:10+0100\n"
+"POT-Creation-Date: 2008-11-14 10:05+0100\n"
 "PO-Revision-Date: 2007-01-18 22:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -714,7 +714,7 @@ msgstr "dd"
 #. i18n: ectx: property (text), widget (KPushButton)
 #. i18n: file: buildtools/managers/cmake/settings/cmakebuildsettings.ui:46
 #. i18n: ectx: property (text), widget (QPushButton, removeBuildDir)
-#: rc.cpp:277 rc.cpp:391 buildtools/managers/cmake/applychangeswidget.cpp:89
+#: rc.cpp:277 rc.cpp:391 buildtools/managers/cmake/applychangeswidget.cpp:117
 #, fuzzy
 msgid "Remove"
 msgstr "/Mudah Alih"
@@ -4198,51 +4198,63 @@ msgstr "Tiada data dijumpai utk nod terpilih"
 msgid "Could not create language plugin for %1."
 msgstr "Tidak dapat mencipta konteks fail untuk %s"
 
-#: buildtools/managers/cmake/cmakemanager.cpp:81
+#: buildtools/managers/cmake/cmakemanager.cpp:82
 #, fuzzy
 msgid "CMake Manager"
 msgstr "Pengurus Pencetak"
 
-#: buildtools/managers/cmake/cmakemanager.cpp:81
+#: buildtools/managers/cmake/cmakemanager.cpp:82
 msgid "Support for managing CMake projects"
 msgstr ""
 
-#: buildtools/managers/cmake/cmakemanager.cpp:899
+#: buildtools/managers/cmake/cmakemanager.cpp:909
 #, fuzzy
 msgid "Jump to target definition"
 msgstr "Definisi jenis dokumen"
 
-#: buildtools/managers/cmake/cmakemanager.cpp:975
-#: buildtools/managers/cmake/cmakemanager.cpp:984
+#: buildtools/managers/cmake/cmakemanager.cpp:973
+#, fuzzy, kde-format
+msgid "Create a folder called '%1'."
+msgstr "Cipta fail kickstart"
+
+#: buildtools/managers/cmake/cmakemanager.cpp:985
+#: buildtools/managers/cmake/cmakemanager.cpp:994
+#: buildtools/managers/cmake/cmakemanager.cpp:1015
 msgid "KDevelop - CMake Support"
 msgstr ""
 
-#: buildtools/managers/cmake/cmakemanager.cpp:976
+#: buildtools/managers/cmake/cmakemanager.cpp:986
 #, fuzzy
 msgid "Could not create the directory's CMakeLists.txt file."
 msgstr "Tidak dapat menulis fail stats."
 
-#: buildtools/managers/cmake/cmakemanager.cpp:985
+#: buildtools/managers/cmake/cmakemanager.cpp:995
+#: buildtools/managers/cmake/cmakemanager.cpp:1016
 #, fuzzy
 msgid "Could not save the change."
 msgstr ""
 "Tidak dapat mencipta\n"
 "direktori %s!"
 
-#: buildtools/managers/cmake/applychangeswidget.cpp:29
+#: buildtools/managers/cmake/cmakemanager.cpp:1005
+#, fuzzy, kde-format
+msgid "Remove a folder called '%1'."
+msgstr "Dari Fail Tempatan"
+
+#: buildtools/managers/cmake/applychangeswidget.cpp:50
 msgid "Text"
 msgstr "Teks"
 
-#: buildtools/managers/cmake/applychangeswidget.cpp:29
+#: buildtools/managers/cmake/applychangeswidget.cpp:50
 msgid "Action"
 msgstr "Aksi"
 
-#: buildtools/managers/cmake/applychangeswidget.cpp:79
+#: buildtools/managers/cmake/applychangeswidget.cpp:107
 #, fuzzy
 msgid "Change"
 msgstr "Teks Placeholder."
 
-#: buildtools/managers/cmake/applychangeswidget.cpp:84
+#: buildtools/managers/cmake/applychangeswidget.cpp:112
 #, fuzzy
 #| msgid "Insert %1"
 msgid "Insert"
@@ -4838,29 +4850,34 @@ msgstr "Cipta Queue baru"
 msgid "The file %1 cannot be created."
 msgstr "Fail \"%s\" tidak dapat diakses."
 
-#: plugins/appwizard/importproject.cpp:70
+#: plugins/appwizard/importproject.cpp:60
+msgid ""
+"The given name is used by an already opened project. Choose a different name"
+msgstr ""
+
+#: plugins/appwizard/importproject.cpp:80
 #, fuzzy
 msgid "Please choose an existing folder."
 msgstr "Pilih direktori setempat"
 
-#: plugins/appwizard/importproject.cpp:75
+#: plugins/appwizard/importproject.cpp:85
 #, fuzzy
 msgid "Please choose a project name."
 msgstr "Pilih alatan yang anda hendak guna"
 
-#: plugins/appwizard/importproject.cpp:84
+#: plugins/appwizard/importproject.cpp:94
 msgid ""
 "Cannot create project file.<p><b>Suggestion</b>: check permissions on the "
 "selected directory"
 msgstr ""
 
-#: plugins/appwizard/importproject.cpp:85
-#: plugins/appwizard/importproject.cpp:93
+#: plugins/appwizard/importproject.cpp:95
+#: plugins/appwizard/importproject.cpp:103
 #, fuzzy
 msgid "Project import error"
 msgstr "Direktori Default"
 
-#: plugins/appwizard/importproject.cpp:93
+#: plugins/appwizard/importproject.cpp:103
 #, fuzzy
 msgid "Could not create temporary file to upload."
 msgstr "Tidak dapat membaca fail %s."
@@ -6725,10 +6742,6 @@ msgstr "Toggle tambahan awalan"
 #, fuzzy
 #~ msgid "New Folder"
 #~ msgstr "Fail Baru"
-
-#, fuzzy
-#~ msgid "Create new folder in:\n"
-#~ msgstr "Cipta fail kickstart"
 
 #, fuzzy
 #~ msgid "File Manager"
@@ -14802,10 +14815,6 @@ msgstr "Toggle tambahan awalan"
 #, fuzzy
 #~ msgid "Add Existing Files to '%1'"
 #~ msgstr "Tambah ke kumpulan yang ada"
-
-#, fuzzy
-#~ msgid "Remove File From '%1'"
-#~ msgstr "Dari Fail Tempatan"
 
 #, fuzzy
 #~ msgid "Remove Target From '%1'"
