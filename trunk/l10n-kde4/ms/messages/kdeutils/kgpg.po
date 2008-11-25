@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-17 09:41+0100\n"
+"POT-Creation-Date: 2008-11-25 10:22+0100\n"
 "PO-Revision-Date: 2005-11-17 23:25+0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -932,13 +932,13 @@ msgstr ""
 "dengan pemilik kunci untuk memastikan seseorang tidak cuba menceroboh "
 "komunikasi anda</qt>"
 
-#: keysmanager.cpp:1840 keysmanager.cpp:1910
+#: keysmanager.cpp:1840 keysmanager.cpp:1910 kgpgfirstassistant.cpp:279
 #, kde-format
 msgctxt "Name: ID"
 msgid "%1: %2"
 msgstr ""
 
-#: keysmanager.cpp:1842 keysmanager.cpp:1913
+#: keysmanager.cpp:1842 keysmanager.cpp:1913 kgpgfirstassistant.cpp:281
 #, kde-format
 msgctxt "Name (Email): ID"
 msgid "%1 (%2): %3"
@@ -1091,10 +1091,10 @@ msgstr ""
 "kunci ini tidak akan dapat menyahsulit fail yang disulitkan dengan kunci ini "
 "lagi."
 
-#: keysmanager.cpp:2290
+#: keysmanager.cpp:2290 keysmanager.cpp:2318
 msgid ""
-"Another key is currently deleted. Please wait until the operation is "
-"complete."
+"Another key delete operation is still in progress.\n"
+"Please wait a moment until this operation is complete."
 msgstr ""
 
 #: keysmanager.cpp:2305
@@ -1105,12 +1105,6 @@ msgstr ""
 #: keysmanager.cpp:2308
 #, kde-format
 msgid "Deleting key <b>%1</b> failed."
-msgstr ""
-
-#: keysmanager.cpp:2318
-msgid ""
-"Another key delete operation is still in progress.\n"
-"Please wait a moment until this operation is complete."
 msgstr ""
 
 #: keysmanager.cpp:2330
@@ -1379,6 +1373,10 @@ msgstr ""
 "mencipta pasangan kekunci anda sendiri, membolehkan anda menyulitkan fail "
 "dan e-mel."
 
+#: kgpgfirstassistant.cpp:74
+msgid "Welcome to the KGpg assistant"
+msgstr ""
+
 #: kgpgfirstassistant.cpp:86
 #, fuzzy
 #| msgid "KGpg needs to know where your GnuPG configuration file is stored."
@@ -1392,6 +1390,15 @@ msgid ""
 msgstr ""
 "Melainkan anda ingin cuba seting luar biasa, hanya klik pada butang "
 "\"Seterusnya\"."
+
+#: kgpgfirstassistant.cpp:107
+#, fuzzy
+#| msgid "GnuPG Settings"
+msgctxt "search filter for gpg binary"
+msgid ""
+"gpg|GnuPG binary\n"
+"*|All files"
+msgstr "Seting GnuPG"
 
 #: kgpgfirstassistant.cpp:115
 #, fuzzy
@@ -1468,25 +1475,25 @@ msgstr "Cipta"
 msgid "<qt><b>The GnuPG configuration file was not found</b>.</qt>"
 msgstr ""
 
-#: kgpgfirstassistant.cpp:289
+#: kgpgfirstassistant.cpp:293
 #, fuzzy, kde-format
 #| msgid "GnuPG Settings"
 msgid "Your GnuPG binary is: %1"
 msgstr "Seting GnuPG"
 
-#: kgpgfirstassistant.cpp:305 kgpgfirstassistant.cpp:361
+#: kgpgfirstassistant.cpp:309 kgpgfirstassistant.cpp:365
 #, fuzzy, kde-format
 #| msgid "You have GnuPG version:"
 msgid "You have GnuPG version: %1"
 msgstr "Anda mempunyai versi GnuPG:"
 
-#: kgpgfirstassistant.cpp:308
+#: kgpgfirstassistant.cpp:312
 #, fuzzy, kde-format
 #| msgid "Your default key:"
 msgid "Your default key is: %1"
 msgstr "Kunci piawai anda:"
 
-#: kgpgfirstassistant.cpp:359
+#: kgpgfirstassistant.cpp:363
 #, fuzzy, kde-format
 #| msgid ""
 #| "Your GnuPG version seems to be older than 1.2.0. Photo Id's and Key "
@@ -3242,7 +3249,7 @@ msgstr "Bulan"
 #. i18n: ectx: label, entry (KeyServers), group (Servers)
 #: rc.cpp:479
 msgid ""
-"Key servers used by kgpg. The first server in the list is the default server."
+"Key servers used by KGpg. The first server in the list is the default server."
 msgstr ""
 
 #. i18n: file: kgpg.kcfg:237
