@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-17 10:45+0100\n"
+"POT-Creation-Date: 2008-12-18 10:01+0100\n"
 "PO-Revision-Date: 2005-10-12 15:05+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -42,7 +42,7 @@ msgstr "Kerjakan fail yang diberikan"
 msgid "Import the given vCard"
 msgstr "Import vCard yang diberikan"
 
-#: typecombo.h:109
+#: typecombo.h:111
 #, kde-format
 msgctxt "label (number)"
 msgid "%1 (%2)"
@@ -1047,9 +1047,9 @@ msgctxt "<urlLabel>:"
 msgid "%1:"
 msgstr "%1:"
 
-#: addresseeeditorwidget.cpp:230
-msgid "&General"
-msgstr "&Am"
+#: addresseeeditorwidget.cpp:230 views/configurecardviewdialog.cpp:202
+msgid "General"
+msgstr "Umum"
 
 #: addresseeeditorwidget.cpp:255
 #, kde-format
@@ -1064,7 +1064,9 @@ msgid "Partner's name:"
 msgstr "Nama pengurus:"
 
 #: addresseeeditorwidget.cpp:283
-msgid "&Details"
+#, fuzzy
+#| msgid "&Details"
+msgid "Details"
 msgstr "&Perincian"
 
 #: addresseeeditorwidget.cpp:296
@@ -1371,7 +1373,7 @@ msgstr "Timur"
 msgid "West"
 msgstr "Barat"
 
-#: geowidget.cpp:462 xxport/csvimportdialog.cpp:70
+#: geowidget.cpp:462 xxport/csvimportdialog.cpp:69
 msgid "Undefined"
 msgstr "Tak ditakrif"
 
@@ -2996,7 +2998,7 @@ msgid "Do Not Import"
 msgstr "&Hentikan Import"
 
 #: viewmanager.cpp:579 views/configuretableviewdialog.cpp:120
-#: xxport/csvimportdialog.cpp:436
+#: xxport/csvimportdialog.cpp:435
 msgid "None"
 msgstr "Tiada"
 
@@ -3087,42 +3089,42 @@ msgstr "<qt>Tiada plugin eksport untuk <b>%1</b>.</qt>"
 msgid "Unable to export contacts."
 msgstr "Tidak dapat mengeksport orang hubungan."
 
-#: xxportselectdialog.cpp:52
+#: xxportselectdialog.cpp:51
 msgid "Choose Which Contacts to Export"
 msgstr "Pilih orang hubungan yang ingin dieksport"
 
-#: xxportselectdialog.cpp:82 printing/stylepage.cpp:46
+#: xxportselectdialog.cpp:81 printing/stylepage.cpp:46
 msgid "Ascending"
 msgstr "Menaik"
 
-#: xxportselectdialog.cpp:83 printing/stylepage.cpp:47
+#: xxportselectdialog.cpp:82 printing/stylepage.cpp:47
 msgid "Descending"
 msgstr "Menurun"
 
-#: xxportselectdialog.cpp:177
+#: xxportselectdialog.cpp:176
 msgid "Which contacts do you want to export?"
 msgstr "Mana satu orang hubungan yang anda ingin eksport?"
 
-#: xxportselectdialog.cpp:180
+#: xxportselectdialog.cpp:179
 msgid "Selection"
 msgstr "Pilihan"
 
-#: xxportselectdialog.cpp:187 printing/selectionpage.cpp:65
+#: xxportselectdialog.cpp:186 printing/selectionpage.cpp:65
 msgid "&All contacts"
 msgstr "&Semua orang hubungan"
 
-#: xxportselectdialog.cpp:189
+#: xxportselectdialog.cpp:188
 msgid "Export the entire address book"
 msgstr "Eksport keseluruhan buku alamat"
 
-#: xxportselectdialog.cpp:191
+#: xxportselectdialog.cpp:190
 #, fuzzy, kde-format
 msgid "&Selected contact"
 msgid_plural "&Selected contacts (%1 selected)"
 msgstr[0] "_n: Orang hubungan yang &dipilih"
 msgstr[1] "Orang hubungan yang &dipilih (%1 dipilih)"
 
-#: xxportselectdialog.cpp:192
+#: xxportselectdialog.cpp:191
 msgid ""
 "Only export contacts selected in KAddressBook.\n"
 "This option is disabled if no contacts are selected."
@@ -3130,11 +3132,11 @@ msgstr ""
 "Eksport orang hubungan yang dipilih dalam  KAddressBook sahaja.\n"
 "Opsyen ini akan dinyahaktifkan jika tiada orang hubungan dipilih."
 
-#: xxportselectdialog.cpp:196 printing/selectionpage.cpp:75
+#: xxportselectdialog.cpp:195 printing/selectionpage.cpp:75
 msgid "Contacts matching &filter"
 msgstr "Orang hubungan sepadanan dengan &penapis"
 
-#: xxportselectdialog.cpp:197
+#: xxportselectdialog.cpp:196
 msgid ""
 "Only export contacts matching the selected filter.\n"
 "This option is disabled if you have not defined any filters"
@@ -3142,11 +3144,11 @@ msgstr ""
 "Eksport orang hubungan yang sepadan dengan penapis yang dipilih sahaja.\n"
 "Opsyen ini dinyahaktif jika tiada penapis ditakrif"
 
-#: xxportselectdialog.cpp:201 printing/selectionpage.cpp:80
+#: xxportselectdialog.cpp:200 printing/selectionpage.cpp:80
 msgid "Category &members"
 msgstr "Ahli &kategori"
 
-#: xxportselectdialog.cpp:202
+#: xxportselectdialog.cpp:201
 msgid ""
 "Only export contacts who are members of a category that is checked on the "
 "list to the left.\n"
@@ -3156,23 +3158,23 @@ msgstr ""
 "senarai di sebelah kiri.\n"
 "Opsyen ini dinyahaktif  jika  tidak ada kategori."
 
-#: xxportselectdialog.cpp:208
+#: xxportselectdialog.cpp:207
 msgid "Select a filter to decide which contacts to export."
 msgstr "Pilih penapis untuk menentukan orang hubungan yang akan dieksport."
 
-#: xxportselectdialog.cpp:214 printing/selectionpage.cpp:93
+#: xxportselectdialog.cpp:213 printing/selectionpage.cpp:93
 msgid "Check the categories whose members you want to print."
 msgstr "Semak kategori yang ahlinya hendak dicetak."
 
-#: xxportselectdialog.cpp:222 printing/stylepage.cpp:126
+#: xxportselectdialog.cpp:221 printing/stylepage.cpp:126
 msgid "Sorting"
 msgstr "Isihan"
 
-#: xxportselectdialog.cpp:228 printing/stylepage.cpp:133
+#: xxportselectdialog.cpp:227 printing/stylepage.cpp:133
 msgid "Criterion:"
 msgstr "Kriteria:"
 
-#: xxportselectdialog.cpp:234 printing/stylepage.cpp:139
+#: xxportselectdialog.cpp:233 printing/stylepage.cpp:139
 msgid "Order:"
 msgstr "Tertib:"
 
@@ -3562,10 +3564,6 @@ msgstr "Warna Tonjolan"
 msgid "Highlighted Text Color"
 msgstr "Warna Teks Yang Ditonjolkan"
 
-#: views/configurecardviewdialog.cpp:202
-msgid "General"
-msgstr "Umum"
-
 #: views/configurecardviewdialog.cpp:204
 msgid "Draw &separators"
 msgstr "Lukis &Pemisah"
@@ -3613,7 +3611,9 @@ msgid "Sets the width of column separators"
 msgstr "Mengeset lebar pemisah lajur"
 
 #: views/configurecardviewdialog.cpp:245
-msgid "&Layout"
+#, fuzzy
+#| msgid "&Layout"
+msgid "Layout"
 msgstr "&Bentangan"
 
 #: views/configurecardviewdialog.cpp:251
@@ -3621,7 +3621,9 @@ msgid "&Enable custom colors"
 msgstr "&Aktifkan warna kebiasaan"
 
 #: views/configurecardviewdialog.cpp:254
-msgid "&Colors"
+#, fuzzy
+#| msgid "&Colors"
+msgid "Colors"
 msgstr "&Warna"
 
 #: views/configurecardviewdialog.cpp:257
@@ -3667,8 +3669,10 @@ msgstr ""
 "gaya huruf tebal untuk pengepala dan gaya normal data. "
 
 #: views/configurecardviewdialog.cpp:305
-msgid "&Fonts"
-msgstr ""
+#, fuzzy
+#| msgid "Contains"
+msgid "Fonts"
+msgstr "Mengandungi"
 
 #: views/configurecardviewdialog.cpp:312
 msgid "Show &empty fields"
@@ -3679,7 +3683,9 @@ msgid "Show field &labels"
 msgstr "Paparkan &label medan"
 
 #: views/configurecardviewdialog.cpp:317
-msgid "Be&havior"
+#, fuzzy
+#| msgid "Be&havior"
+msgid "Behavior"
 msgstr "&Peri laku"
 
 #: views/configuretableviewdialog.cpp:113
@@ -3776,55 +3782,55 @@ msgstr "<qt>Tidak dapat membuka fail <b>%1</b>.</qt>"
 msgid "The contacts have been exported successfully."
 msgstr "Orang hubungan berjaya dieksport."
 
-#: xxport/csvimportdialog.cpp:64
+#: xxport/csvimportdialog.cpp:63
 msgid "CSV Import Dialog"
 msgstr "Dialog import CSV"
 
-#: xxport/csvimportdialog.cpp:175
+#: xxport/csvimportdialog.cpp:174
 msgid "Importing contacts"
 msgstr "Mengimport orang hubungan"
 
-#: xxport/csvimportdialog.cpp:382
+#: xxport/csvimportdialog.cpp:381
 msgid "File to import:"
 msgstr "Fail untuk  diimport:"
 
-#: xxport/csvimportdialog.cpp:392
+#: xxport/csvimportdialog.cpp:391
 msgid "Delimiter"
 msgstr "Pembatas"
 
-#: xxport/csvimportdialog.cpp:403
+#: xxport/csvimportdialog.cpp:402
 msgid "Comma"
 msgstr "Koma"
 
-#: xxport/csvimportdialog.cpp:408
+#: xxport/csvimportdialog.cpp:407
 msgid "Semicolon"
 msgstr "Koma bertitik"
 
-#: xxport/csvimportdialog.cpp:412
+#: xxport/csvimportdialog.cpp:411
 msgid "Tabulator"
 msgstr "Penjadual"
 
-#: xxport/csvimportdialog.cpp:416
+#: xxport/csvimportdialog.cpp:415
 msgid "Space"
 msgstr "Ruang"
 
-#: xxport/csvimportdialog.cpp:420
+#: xxport/csvimportdialog.cpp:419
 msgid "Other"
 msgstr "Lain-lain"
 
-#: xxport/csvimportdialog.cpp:429
+#: xxport/csvimportdialog.cpp:428
 msgid "1"
 msgstr "1"
 
-#: xxport/csvimportdialog.cpp:434
+#: xxport/csvimportdialog.cpp:433
 msgid "\""
 msgstr "\""
 
-#: xxport/csvimportdialog.cpp:435
+#: xxport/csvimportdialog.cpp:434
 msgid "'"
 msgstr "'"
 
-#: xxport/csvimportdialog.cpp:441
+#: xxport/csvimportdialog.cpp:440
 msgid ""
 "<ul><li>y: year with 2 digits</li><li>Y: year with 4 digits</li><li>m: month "
 "with 1 or 2 digits</li><li>M: month with 2 digits</li><li>d: day with 1 or 2 "
@@ -3834,72 +3840,72 @@ msgstr ""
 "bulan  dengan 1 atau 2 digit</li><li>B: bulan dengan 2 digit</li><li>h: hari "
 "dengan 1 atau 2 digit</li><li>H: hari dengan 2 digit</li></ul>"
 
-#: xxport/csvimportdialog.cpp:449
+#: xxport/csvimportdialog.cpp:448
 msgid "Start at line:"
 msgstr "Mula di baris:"
 
-#: xxport/csvimportdialog.cpp:452
+#: xxport/csvimportdialog.cpp:451
 msgid "Textquote:"
 msgstr "Petikan teks:"
 
-#: xxport/csvimportdialog.cpp:455
+#: xxport/csvimportdialog.cpp:454
 msgid "Date format:"
 msgstr "Format tarikh:"
 
-#: xxport/csvimportdialog.cpp:459
+#: xxport/csvimportdialog.cpp:458
 msgid "Ignore duplicate delimiters"
 msgstr "Abaikan pembatas duplikasi"
 
-#: xxport/csvimportdialog.cpp:470
+#: xxport/csvimportdialog.cpp:469
 msgid "Apply Template..."
 msgstr "Aplikasikan Templat..."
 
-#: xxport/csvimportdialog.cpp:471
+#: xxport/csvimportdialog.cpp:470
 msgid "Save Template..."
 msgstr "Simpan Templat..."
 
-#: xxport/csvimportdialog.cpp:686
+#: xxport/csvimportdialog.cpp:685
 #, kde-format
 msgid "Local (%1)"
 msgstr "Setempat (%1)"
 
-#: xxport/csvimportdialog.cpp:687
+#: xxport/csvimportdialog.cpp:686
 msgid "[guess]"
 msgstr "[teka]"
 
-#: xxport/csvimportdialog.cpp:688
+#: xxport/csvimportdialog.cpp:687
 msgid "Latin1"
 msgstr "Latin1"
 
-#: xxport/csvimportdialog.cpp:689
+#: xxport/csvimportdialog.cpp:688
 msgid "Unicode"
 msgstr "Ekakod"
 
-#: xxport/csvimportdialog.cpp:690
+#: xxport/csvimportdialog.cpp:689
 msgid "Microsoft Unicode"
 msgstr "Ekakod Microsoft"
 
-#: xxport/csvimportdialog.cpp:813
+#: xxport/csvimportdialog.cpp:812
 msgid "You have to assign at least one column."
 msgstr "Anda perlu beri tugasan sekurang-kurangnya satu lajur."
 
-#: xxport/csvimportdialog.cpp:841
+#: xxport/csvimportdialog.cpp:840
 msgid "Template Selection"
 msgstr "Pilihan Templat"
 
-#: xxport/csvimportdialog.cpp:842
+#: xxport/csvimportdialog.cpp:841
 msgid "Please select a template, that matches the CSV file:"
 msgstr "Pilih satu templat yang padan dengan fail CSV:"
 
-#: xxport/csvimportdialog.cpp:889
+#: xxport/csvimportdialog.cpp:888
 msgid "Template Name"
 msgstr "Nama Templat"
 
-#: xxport/csvimportdialog.cpp:889
+#: xxport/csvimportdialog.cpp:888
 msgid "Please enter a name for the template:"
 msgstr "Masukkan nama untuk templat:"
 
-#: xxport/csvimportdialog.cpp:965
+#: xxport/csvimportdialog.cpp:964
 msgid "Cannot open input file."
 msgstr "Tidak dapat membuka fail input."
 
@@ -4364,6 +4370,9 @@ msgstr "Medan Lain"
 #: xxport/vcard_xxport.cpp:501
 msgid "Encryption keys"
 msgstr "Kekunci penyulitan"
+
+#~ msgid "&General"
+#~ msgstr "&Am"
 
 #, fuzzy
 #~| msgid "Text"
