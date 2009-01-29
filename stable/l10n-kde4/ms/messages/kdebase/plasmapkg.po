@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasmapkg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-27 08:23+0100\n"
+"POT-Creation-Date: 2009-01-29 07:20+0100\n"
 "PO-Revision-Date: 2009-01-27 11:49+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -17,37 +17,33 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: main.cpp:36
+#: main.cpp:42
 msgid "Install, list, remove Plasma packages"
 msgstr "Pasang, senarai, buang pakej Plasma"
 
-#: main.cpp:47
-msgid "Listing is not yet implemented."
-msgstr ""
-
-#: main.cpp:52
+#: main.cpp:77
 msgid "Plasma Package Manager"
 msgstr "Pengurus Pakej Plasma"
 
-#: main.cpp:54
+#: main.cpp:79
 msgid "(C) 2008, Aaron Seigo"
 msgstr "(C) 2008, Aaron Seigo"
 
-#: main.cpp:55
+#: main.cpp:80
 msgid "Aaron Seigo"
 msgstr ""
 
-#: main.cpp:56
+#: main.cpp:81
 msgid "Original author"
 msgstr "Pengarang asal"
 
-#: main.cpp:65
+#: main.cpp:90
 msgid "For install or remove, operates on packages installed for all users."
 msgstr ""
 "Untuk memasang atau membuang, bertindak pada pakej yang dipasang untuk semua "
 "pengguna."
 
-#: main.cpp:68
+#: main.cpp:96
 #, fuzzy
 #| msgctxt ""
 #| "theme, wallpaper, etc. are keywords, but they may be translated, as both "
@@ -56,88 +52,113 @@ msgstr ""
 #| msgid ""
 #| "The type of package, e.g. theme, wallpaper, plasmoid, dataengine, runner, "
 #| "etc."
+msgctxt ""
+"theme, wallpaper, etc. are keywords, but they may be translated, as both "
+"versions are recognized by the application (if translated, should be same as "
+"messages with 'package type' context below)"
 msgid ""
-"The type of package, e.g. theme, wallpaper, plasmoid, DataEngine, Runner, "
+"The type of package, e.g. theme, wallpaper, plasmoid, dataengine, runner, "
 "etc."
 msgstr ""
 "Jenis pakej, contoh theme, wallpaper, plasmoid, dataengine, runner, dan "
 "sebagainya."
 
-#: main.cpp:72
+#: main.cpp:100
 #, fuzzy
+msgctxt "Do not translate <path>"
 msgid "Install the package at <path>"
 msgstr "Pasang<path>"
 
-#: main.cpp:74
+#: main.cpp:102
+#, fuzzy
+msgctxt "Do not translate <path>"
+msgid "Upgrade the package at <path>"
+msgstr "Naiktaraf<path>"
+
+#: main.cpp:104
 #, fuzzy
 msgid "List installed packages"
 msgstr "Senarai"
 
-#: main.cpp:76
+#: main.cpp:106
 #, fuzzy
+msgctxt "Do not translate <name>"
 msgid "Remove the package named <name>"
 msgstr "Buang<name>"
 
-#: main.cpp:78
+#: main.cpp:108
 #, fuzzy
 msgid ""
 "Absolute path to the package root. If not supplied, then the standard data "
 "directories for this KDE session will be searched instead."
 msgstr "laluan hingga root for KDE."
 
-#: main.cpp:97
+#: main.cpp:120
+msgctxt "package type"
 msgid "plasmoid"
 msgstr ""
 
-#: main.cpp:100
+#: main.cpp:124
+msgctxt "package type"
 msgid "theme"
 msgstr ""
 
-#: main.cpp:102
+#: main.cpp:126
+msgctxt "package type"
 msgid "wallpaper"
 msgstr ""
 
-#: main.cpp:104
+#: main.cpp:128
+msgctxt "package type"
 msgid "dataengine"
 msgstr ""
 
-#: main.cpp:107
+#: main.cpp:132
+msgctxt "package type"
 msgid "runner"
 msgstr ""
 
-#: main.cpp:118
+#: main.cpp:140
 #, fuzzy, kde-format
 msgid "Could not find a suitable installer for package of type %1"
 msgstr "a for bagi jenis 1"
 
-#: main.cpp:127
+#: main.cpp:149
 #, fuzzy, kde-format
 msgid "Could not load installer for package of type %1. Error reported was: %2"
 msgstr "for bagi jenis Ralat 2"
 
-#: main.cpp:150
-#, fuzzy, kde-format
-msgid "Successfully installed %1"
-msgstr "1"
-
-#: main.cpp:152
-#, fuzzy, kde-format
-msgid "Installation of %1 failed."
-msgstr "Pemasangan bagi Gagal."
-
-#: main.cpp:158
+#: main.cpp:205
 #, fuzzy, kde-format
 msgid "Successfully removed %1"
 msgstr "1"
 
-#: main.cpp:160
+#: main.cpp:207
 #, fuzzy, kde-format
 msgid "Removal of %1 failed."
 msgstr "bagi Gagal."
 
-#: main.cpp:164
+#: main.cpp:211
+#, fuzzy, kde-format
+msgid "Plugin %1 is not installed."
+msgstr "Plugin ialah."
+
+#: main.cpp:216
+#, fuzzy, kde-format
+msgid "Successfully installed %1"
+msgstr "1"
+
+#: main.cpp:218
+#, fuzzy, kde-format
+msgid "Installation of %1 failed."
+msgstr "Pemasangan bagi Gagal."
+
+#: main.cpp:223
 #, fuzzy
-msgid "One of install, remove or list is required."
+msgctxt ""
+"No option was given, this is the error message telling the user he needs at "
+"least one, do not translate install, remove, upgrade nor list"
+msgid "One of install, remove, upgrade or list is required."
 msgstr "Satu bagi atau ialah."
 
 #: rc.cpp:1
@@ -149,12 +170,3 @@ msgstr "Sharuzzaman Ahmat Raslan"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sharuzzaman@myrealbox.com"
-
-#, fuzzy
-#~ msgctxt "Do not translate <path>"
-#~ msgid "Upgrade the package at <path>"
-#~ msgstr "Naiktaraf<path>"
-
-#, fuzzy
-#~ msgid "Plugin %1 is not installed."
-#~ msgstr "Plugin ialah."

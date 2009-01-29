@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krandr\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-27 08:23+0100\n"
+"POT-Creation-Date: 2009-01-29 07:19+0100\n"
 "PO-Revision-Date: 2009-01-09 22:28+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -78,7 +78,7 @@ msgid "Unify Outputs"
 msgstr ""
 
 #: krandrtray.cpp:375 legacyrandrconfig.cpp:269 legacyrandrscreen.cpp:246
-#: outputconfig.cpp:292
+#: outputconfig.cpp:325
 #, kde-format
 msgid "%1 Hz"
 msgstr "%1 Hz"
@@ -176,50 +176,50 @@ msgstr ""
 msgid "Application is being auto-started at KDE session start"
 msgstr "Application is being auto-started at KDE session start"
 
-#: outputconfig.cpp:145
+#: outputconfig.cpp:165
 msgid "Left of"
 msgstr ""
 
-#: outputconfig.cpp:146
+#: outputconfig.cpp:166
 msgid "Right of"
 msgstr ""
 
-#: outputconfig.cpp:147
+#: outputconfig.cpp:167
 msgctxt "Output is placed above another one"
 msgid "Above"
 msgstr ""
 
-#: outputconfig.cpp:148
+#: outputconfig.cpp:168
 #, fuzzy
 msgctxt "Output is placed below another one"
 msgid "Below"
 msgstr "Bawah"
 
-#: outputconfig.cpp:149
+#: outputconfig.cpp:169
 msgid "Clone of"
 msgstr ""
 
-#: outputconfig.cpp:150
+#: outputconfig.cpp:170
 msgctxt "Fixed, abitrary position"
 msgid "Absolute"
 msgstr ""
 
-#: outputconfig.cpp:153
+#: outputconfig.cpp:173
 msgid "No relative position"
 msgstr ""
 
-#: outputconfig.cpp:256
+#: outputconfig.cpp:288
 #, fuzzy
 msgid "Disabled"
 msgstr "Dimatikan"
 
-#: outputconfig.cpp:261
-#, fuzzy
-msgctxt "Automatic (native resolution)"
-msgid " (Auto)"
+#: outputconfig.cpp:294
+#, fuzzy, kde-format
+msgctxt "Automatic screen size (native resolution)"
+msgid "%1 (Auto)"
 msgstr "Auto"
 
-#: outputconfig.cpp:286
+#: outputconfig.cpp:319
 #, fuzzy
 msgctxt "Automatic configuration"
 msgid "Auto"
@@ -237,7 +237,7 @@ msgstr "Kiri (90 darjah)"
 #: randr.cpp:35
 #, fuzzy
 #| msgid "Upside-down (180 degrees)"
-msgid "Upside-down (180 degrees)"
+msgid "Upside-Down (180 degrees)"
 msgstr "Terbalik (180 darjah)"
 
 #: randr.cpp:37
@@ -247,49 +247,49 @@ msgstr "Kanan (270 darjah)"
 #: randr.cpp:39
 #, fuzzy
 #| msgid "Mirror horizontally"
-msgid "Mirror horizontally"
+msgid "Mirror Horizontally"
 msgstr "Simetri mendatar"
 
 #: randr.cpp:41
 #, fuzzy
 #| msgid "Mirror vertically"
-msgid "Mirror vertically"
+msgid "Mirror Vertically"
 msgstr "Simetri menegak"
 
 #: randr.cpp:43 randr.cpp:74
 #, fuzzy
 #| msgid "Unknown orientation"
-msgid "Unknown orientation"
+msgid "Unknown Orientation"
 msgstr "Orientasi tak diketahui"
 
 #: randr.cpp:48
 #, fuzzy
-msgid "Not rotated"
+msgid "Not Rotated"
 msgstr "Orientasi tak diketahui"
 
 #: randr.cpp:50
 #, fuzzy
 #| msgid "Rotated 90 degrees counterclockwise"
-msgid "Rotated 90 degrees counterclockwise"
+msgid "Rotated 90 Degrees Counterclockwise"
 msgstr "Diputar 90 darjah lawan jam"
 
 #: randr.cpp:52
 #, fuzzy
 #| msgid "Rotated 180 degrees counterclockwise"
-msgid "Rotated 180 degrees counterclockwise"
+msgid "Rotated 180 Degrees Counterclockwise"
 msgstr "Diputar 180 darjah lawan jam"
 
 #: randr.cpp:54
 #, fuzzy
 #| msgid "Rotated 270 degrees counterclockwise"
-msgid "Rotated 270 degrees counterclockwise"
+msgid "Rotated 270 Degrees Counterclockwise"
 msgstr "Diputar 270 darjah lawan jam"
 
 #: randr.cpp:59
 #, fuzzy
-#| msgid "mirrored horizontally and vertically"
-msgid "Mirrored horizontally and vertically"
-msgstr "cerminan mendatar dan menegak"
+#| msgid "Mirrored horizontally and vertically"
+msgid "Mirrored Horizontally And Vertically"
+msgstr "Cerminan mendatar dan menegak"
 
 #: randr.cpp:61
 msgid "mirrored horizontally and vertically"
@@ -298,7 +298,7 @@ msgstr "cerminan mendatar dan menegak"
 #: randr.cpp:64
 #, fuzzy
 #| msgid "Mirrored horizontally"
-msgid "Mirrored horizontally"
+msgid "Mirrored Horizontally"
 msgstr "Cerminan mendatar"
 
 #: randr.cpp:66
@@ -308,7 +308,7 @@ msgstr "Cerminan mendatar"
 #: randr.cpp:69
 #, fuzzy
 #| msgid "Mirrored vertically"
-msgid "Mirrored vertically"
+msgid "Mirrored Vertically"
 msgstr "Cerminan menegak"
 
 #: randr.cpp:71
@@ -348,6 +348,11 @@ msgstr ""
 "Orientasi, saiz dan kadar muat semula skrin anda telah diubah kepada seting "
 "yang diminta. Nyatakan sama ada anda ingin menyimpan konfigurasi ini. Dalam "
 "15 saat, paparan akan kembali kepada seting sebelumnya."
+
+#: randrconfig.cpp:111
+#, kde-format
+msgid "%1 (Connected)"
+msgstr ""
 
 #: randrdisplay.cpp:49
 #, fuzzy, kde-format
@@ -499,17 +504,23 @@ msgstr "Posisi:"
 msgid "Display Configuration (X11 Resize, Rotate and Reflect)"
 msgstr ""
 
-#: rc.cpp:58
+#. i18n: file: randrconfigbase.ui:42
+#. i18n: ectx: property (text), widget (QPushButton, identifyOutputsButton)
+#: rc.cpp:60
+msgid "Identify Outputs"
+msgstr ""
+
+#: rc.cpp:61
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Muhammad Najmi Ahmad Zabidi,Sharuzzaman Ahmat Raslan"
 
-#: rc.cpp:59
+#: rc.cpp:62
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "md_najmi@yahoo.com,sharuzzaman@myrealbox.com"
 
 #, fuzzy
-#~| msgid "Mirrored horizontally and vertically"
-#~ msgid "Mirrored Horizontally And Vertically"
-#~ msgstr "Cerminan mendatar dan menegak"
+#~| msgid "mirrored horizontally and vertically"
+#~ msgid "Mirrored horizontally and vertically"
+#~ msgstr "cerminan mendatar dan menegak"
