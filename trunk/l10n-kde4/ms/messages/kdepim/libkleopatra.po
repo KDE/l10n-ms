@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-30 09:51+0100\n"
+"POT-Creation-Date: 2009-01-29 19:57+0100\n"
 "PO-Revision-Date: 2005-10-12 04:18+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -376,7 +376,21 @@ msgstr ""
 msgid "&Reset"
 msgstr "&Set semula"
 
-#: ui/cryptoconfigmodule.cpp:395
+#: ui/cryptoconfigmodule.cpp:119
+#, fuzzy
+#| msgid "Encryption keys:"
+msgid "GpgConf Error"
+msgstr "Kekunci penyulitan:"
+
+#: ui/cryptoconfigmodule.cpp:165
+#, kde-format
+msgid ""
+"The gpgconf tool used to provide the information for this dialog does not "
+"seem to be installed properly. It did not return any components. Try running "
+"\"%1\" on the command line for more information."
+msgstr ""
+
+#: ui/cryptoconfigmodule.cpp:420
 msgctxt ""
 "Translate this to 'yes' or 'no' (use the English words!) depending on "
 "whether your language uses Sentence style capitalisation in GUI labels (yes) "
@@ -387,58 +401,58 @@ msgctxt ""
 msgid "yes"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:444
+#: ui/cryptoconfigmodule.cpp:469
 msgid "None (no debugging at all)"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:445
+#: ui/cryptoconfigmodule.cpp:470
 msgid "Basic (some basic debug messages)"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:446
+#: ui/cryptoconfigmodule.cpp:471
 msgid "Advanced (more verbose debug messages)"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:447
+#: ui/cryptoconfigmodule.cpp:472
 msgid "Expert (even more detailed messages)"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:448
+#: ui/cryptoconfigmodule.cpp:473
 msgid "Guru (all of the debug messages you can get)"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:457
+#: ui/cryptoconfigmodule.cpp:482
 msgid "Set the debugging level to"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:782
+#: ui/cryptoconfigmodule.cpp:807
 msgid "Show..."
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:782 ui/cryptoconfigmodule.cpp:866
+#: ui/cryptoconfigmodule.cpp:807 ui/cryptoconfigmodule.cpp:891
 msgid "Edit..."
 msgstr "Edit..."
 
-#: ui/cryptoconfigmodule.cpp:829
+#: ui/cryptoconfigmodule.cpp:854
 msgid "Configure LDAP Servers"
 msgstr "Konfigurkan pelayan LDAP"
 
-#: ui/cryptoconfigmodule.cpp:851
+#: ui/cryptoconfigmodule.cpp:876
 msgid "No server configured yet"
 msgstr "Belum ada pelayan yang dikonfigur"
 
-#: ui/cryptoconfigmodule.cpp:853
+#: ui/cryptoconfigmodule.cpp:878
 #, fuzzy, kde-format
 msgid "1 server configured"
 msgid_plural "%1 servers configured"
 msgstr[0] "_n: 1 pelayan dikonfigur"
 msgstr[1] "%1 pelayan dikonfigur"
 
-#: ui/cryptoconfigmodule.cpp:870
+#: ui/cryptoconfigmodule.cpp:895
 msgid "Use keyserver at"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:909
+#: ui/cryptoconfigmodule.cpp:934
 #, fuzzy
 #| msgid "Configure LDAP Servers"
 msgid "Configure Keyservers"
@@ -673,11 +687,11 @@ msgstr ""
 msgid "Change..."
 msgstr "Ubah..."
 
-#: ui/keyrequester.cpp:219 ui/keyselectiondialog.cpp:225
+#: ui/keyrequester.cpp:219 ui/keyselectiondialog.cpp:227
 msgid "<placeholder>unknown</placeholder>"
 msgstr ""
 
-#: ui/keyrequester.cpp:231 ui/keyselectiondialog.cpp:541
+#: ui/keyrequester.cpp:231 ui/keyselectiondialog.cpp:551
 #: backends/qgpgme/qgpgmekeylistjob.cpp:148
 #, kde-format
 msgid ""
@@ -688,7 +702,7 @@ msgstr ""
 "%1</b></p></qt>"
 
 #: ui/keyrequester.cpp:236 ui/keyrequester.cpp:265 ui/keyrequester.cpp:289
-#: ui/keyselectiondialog.cpp:521 ui/keyselectiondialog.cpp:546
+#: ui/keyselectiondialog.cpp:524 ui/keyselectiondialog.cpp:556
 msgid "Key Listing Failed"
 msgstr "Penyenaraian Kekunci Gagal"
 
@@ -730,25 +744,25 @@ msgstr "Pilihan Kekunci"
 msgid "Please select an (OpenPGP or S/MIME) key to use."
 msgstr "Pilih satu kekunci (OpenPGP atau S/MIME) untuk digunakan."
 
-#: ui/keyselectiondialog.cpp:201
+#: ui/keyselectiondialog.cpp:203
 msgid "Key ID"
 msgstr "ID kekunci"
 
-#: ui/keyselectiondialog.cpp:202
+#: ui/keyselectiondialog.cpp:204
 msgid "User ID"
 msgstr "ID pengguna"
 
-#: ui/keyselectiondialog.cpp:246
+#: ui/keyselectiondialog.cpp:248
 msgid "never"
 msgstr "jangan sekali-kali"
 
-#: ui/keyselectiondialog.cpp:253 ui/keyselectiondialog.cpp:255
-#: ui/keyselectiondialog.cpp:262 ui/keyselectiondialog.cpp:264
-#: ui/keyselectiondialog.cpp:265 backends/qgpgme/qgpgmebackend.cpp:85
+#: ui/keyselectiondialog.cpp:255 ui/keyselectiondialog.cpp:257
+#: ui/keyselectiondialog.cpp:264 ui/keyselectiondialog.cpp:266
+#: ui/keyselectiondialog.cpp:267 backends/qgpgme/qgpgmebackend.cpp:85
 msgid "unknown"
 msgstr "tidak diketahui"
 
-#: ui/keyselectiondialog.cpp:249
+#: ui/keyselectiondialog.cpp:251
 #, kde-format
 msgid ""
 "OpenPGP key for %1\n"
@@ -761,7 +775,7 @@ msgstr ""
 "Luput: %3\n"
 "Cap jari: %4"
 
-#: ui/keyselectiondialog.cpp:257
+#: ui/keyselectiondialog.cpp:259
 #, kde-format
 msgid ""
 "S/MIME key for %1\n"
@@ -776,15 +790,15 @@ msgstr ""
 "Cap jari: %4\n"
 "Pengeluar: %5"
 
-#: ui/keyselectiondialog.cpp:375
+#: ui/keyselectiondialog.cpp:378
 msgid "&Search for:"
 msgstr "&Cari:"
 
-#: ui/keyselectiondialog.cpp:398
+#: ui/keyselectiondialog.cpp:401
 msgid "&Remember choice"
 msgstr "&Ingat pilihan"
 
-#: ui/keyselectiondialog.cpp:401
+#: ui/keyselectiondialog.cpp:404
 msgid ""
 "<qt><p>If you check this box your choice will be stored and you will not be "
 "asked again.</p></qt>"
@@ -792,37 +806,37 @@ msgstr ""
 "<qt><p>Jika kotak ini disemak, pilihan anda akan distor dan anda tidak akan "
 "ditanya lagi.</p></qt>"
 
-#: ui/keyselectiondialog.cpp:417
+#: ui/keyselectiondialog.cpp:420
 msgid "&Reread Keys"
 msgstr "&Baca Semula Kekunci"
 
-#: ui/keyselectiondialog.cpp:418
+#: ui/keyselectiondialog.cpp:421
 msgid "&Start Certificate Manager"
 msgstr ""
 
-#: ui/keyselectiondialog.cpp:519
+#: ui/keyselectiondialog.cpp:522
 msgid "No backends found for listing keys. Check your installation."
 msgstr ""
 "Tiada tepi belakang ditemui untuk menyenaraikan kekunci. Semak pemasangan "
 "anda."
 
-#: ui/keyselectiondialog.cpp:530
+#: ui/keyselectiondialog.cpp:540
 msgid "Could not start certificate manager; please check your installation."
 msgstr ""
 
-#: ui/keyselectiondialog.cpp:532
+#: ui/keyselectiondialog.cpp:542
 msgid "Certificate Manager Error"
 msgstr ""
 
-#: ui/keyselectiondialog.cpp:579
+#: ui/keyselectiondialog.cpp:589
 msgid "Checking selected keys..."
 msgstr "Menyemak kekunci yang dipilih..."
 
-#: ui/keyselectiondialog.cpp:579
+#: ui/keyselectiondialog.cpp:589
 msgid "Fetching keys..."
 msgstr "Mengutip kekunci..."
 
-#: ui/keyselectiondialog.cpp:603
+#: ui/keyselectiondialog.cpp:613
 #, fuzzy, kde-format
 msgid ""
 "<qt>One backend returned truncated output.<p>Not all available keys are "
@@ -837,104 +851,115 @@ msgstr[1] ""
 "<qt>%1 tepi belakang memulangkan output terpangkas.<br>Ada kekunci yang "
 "tidak dipaparkan</qt>"
 
-#: ui/keyselectiondialog.cpp:608
+#: ui/keyselectiondialog.cpp:618
 msgid "Key List Result"
 msgstr "Keputusan Senarai Kekunci"
 
-#: ui/keyselectiondialog.cpp:715
+#: ui/keyselectiondialog.cpp:725
 msgid "Recheck Key"
 msgstr "Semak Semula Kekunci"
 
-#: ui/messagebox.cpp:63
+#: ui/messagebox.cpp:66
 msgid "&Save to Disk..."
 msgstr ""
 
-#: ui/messagebox.cpp:67
+#: ui/messagebox.cpp:70
 msgid "&Copy to Clipboard"
 msgstr ""
 
-#: ui/messagebox.cpp:67
+#: ui/messagebox.cpp:70
 msgid "Copy Audit Log to Clipboard"
 msgstr ""
 
-#: ui/messagebox.cpp:71
+#: ui/messagebox.cpp:74
 msgid "&Show Audit Log"
 msgstr ""
 
-#: ui/messagebox.cpp:80
+#: ui/messagebox.cpp:83
 msgid "View GnuPG Audit Log"
 msgstr ""
 
-#: ui/messagebox.cpp:105 ui/messagebox.cpp:107
+#: ui/messagebox.cpp:108 ui/messagebox.cpp:110
 msgid "Choose File to Save GnuPG Audit Log to"
 msgstr ""
 
-#: ui/messagebox.cpp:122
+#: ui/messagebox.cpp:125
 #, kde-format
 msgid "Couldn't save to file \"%1\": %2"
 msgstr ""
 
-#: ui/messagebox.cpp:124
+#: ui/messagebox.cpp:127
 msgid "File Save Error"
 msgstr ""
 
-#: ui/messagebox.cpp:140
+#: ui/messagebox.cpp:143
 msgid "Your system does not have support for GnuPG Audit Logs"
 msgstr ""
 
-#: ui/messagebox.cpp:141
+#: ui/messagebox.cpp:144
 msgid "System Error"
 msgstr ""
 
-#: ui/messagebox.cpp:147
+#: ui/messagebox.cpp:151
+#, kde-format
+msgid ""
+"An error occurred while trying to retrieve the GnuPG Audit Log:\n"
+"%1"
+msgstr ""
+
+#: ui/messagebox.cpp:153
+msgid "GnuPG Audit Log Error"
+msgstr ""
+
+#: ui/messagebox.cpp:160
 msgid "No GnuPG Audit Log available for this operation."
 msgstr ""
 
-#: ui/messagebox.cpp:148
+#: ui/messagebox.cpp:161
 msgid "No GnuPG Audit Log"
 msgstr ""
 
-#: ui/messagebox.cpp:165 ui/messagebox.cpp:170
+#: ui/messagebox.cpp:178 ui/messagebox.cpp:183
 msgid "GnuPG Audit Log Viewer"
 msgstr ""
 
-#: ui/messagebox.cpp:175
+#: ui/messagebox.cpp:188
 #, kde-format
 msgid "Signing failed: %1"
 msgstr "Tandatangan gagal:%1"
 
-#: ui/messagebox.cpp:176
+#: ui/messagebox.cpp:189
 msgid "Signing successful"
 msgstr ""
 
-#: ui/messagebox.cpp:185 backends/chiasmus/chiasmusjob.cpp:206
+#: ui/messagebox.cpp:198 backends/chiasmus/chiasmusjob.cpp:206
 #, kde-format
 msgid "Encryption failed: %1"
 msgstr "Penyulitan gagal:%1"
 
-#: ui/messagebox.cpp:186
+#: ui/messagebox.cpp:199
 #, fuzzy
 #| msgid "Encryption keys:"
 msgid "Encryption successful"
 msgstr "Kekunci penyulitan:"
 
-#: ui/messagebox.cpp:203
+#: ui/messagebox.cpp:216
 #, fuzzy
 #| msgid "Scan Results"
 msgid "Signing Result"
 msgstr "Hasil imbasan"
 
-#: ui/messagebox.cpp:213
+#: ui/messagebox.cpp:226
 msgid "Signing Error"
 msgstr ""
 
-#: ui/messagebox.cpp:223 ui/messagebox.cpp:243
+#: ui/messagebox.cpp:236 ui/messagebox.cpp:256
 #, fuzzy
 #| msgid "Encryption keys:"
 msgid "Encryption Result"
 msgstr "Kekunci penyulitan:"
 
-#: ui/messagebox.cpp:233 ui/messagebox.cpp:253
+#: ui/messagebox.cpp:246 ui/messagebox.cpp:266
 #, fuzzy
 #| msgid "Encryption keys:"
 msgid "Encryption Error"
