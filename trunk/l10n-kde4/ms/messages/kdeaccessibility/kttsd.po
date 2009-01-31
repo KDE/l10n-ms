@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-31 11:12+0100\n"
+"POT-Creation-Date: 2009-01-31 11:43+0100\n"
 "PO-Revision-Date: 2005-08-10 11:32+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -123,12 +123,13 @@ msgstr "&Bahasa:"
 #: rc.cpp:41
 #, fuzzy
 #| msgid "&General"
+msgctxt "General, as title of window"
 msgid "General"
 msgstr "&Umum"
 
 #. i18n: file: kcmkttsmgr/kcmkttsmgrwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, kttsdVersion)
-#: rc.cpp:44 kcmkttsmgr/kcmkttsmgr.cpp:1761
+#: rc.cpp:44 kcmkttsmgr/kcmkttsmgr.cpp:1762
 #, fuzzy
 msgid "KTTSD not running"
 msgstr "KTTS Tidak Dikonfigur"
@@ -211,7 +212,7 @@ msgstr "Tambah..."
 #. i18n: ectx: property (text), widget (KPushButton, higherTalkerPriorityButton)
 #. i18n: file: kcmkttsmgr/kcmkttsmgrwidget.ui:259
 #. i18n: ectx: property (text), widget (KPushButton, higherFilterPriorityButton)
-#: rc.cpp:74 rc.cpp:104 kcmkttsmgr/kcmkttsmgr.cpp:332
+#: rc.cpp:74 rc.cpp:104
 msgid "U&p"
 msgstr "&Atas"
 
@@ -221,7 +222,7 @@ msgstr "&Atas"
 #. i18n: ectx: property (text), widget (KPushButton, lowerFilterPriorityButton)
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:292
 #. i18n: ectx: property (text), widget (QPushButton, downButton)
-#: rc.cpp:77 rc.cpp:110 rc.cpp:441 kcmkttsmgr/kcmkttsmgr.cpp:334
+#: rc.cpp:77 rc.cpp:110 rc.cpp:441 kcmkttsmgr/kcmkttsmgr.cpp:335
 msgid "Do&wn"
 msgstr "&Bawah"
 
@@ -235,7 +236,7 @@ msgstr "Klik untuk mengkonfigur opsyen untuk Talker yang diserlahkan."
 #. i18n: ectx: property (text), widget (KPushButton, configureTalkerButton)
 #. i18n: file: kcmkttsmgr/kcmkttsmgrwidget.ui:294
 #. i18n: ectx: property (text), widget (KPushButton, configureFilterButton)
-#: rc.cpp:83 rc.cpp:116 kcmkttsmgr/kcmkttsmgr.cpp:330
+#: rc.cpp:83 rc.cpp:116 kcmkttsmgr/kcmkttsmgr.cpp:331
 msgid "&Edit..."
 msgstr "&Edit..."
 
@@ -251,7 +252,7 @@ msgstr "Klik untuk membuang Penutur yang ditonjolkan"
 #. i18n: ectx: property (text), widget (KPushButton, removeFilterButton)
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:334
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
-#: rc.cpp:89 rc.cpp:122 rc.cpp:453 kcmkttsmgr/kcmkttsmgr.cpp:338
+#: rc.cpp:89 rc.cpp:122 rc.cpp:453 kcmkttsmgr/kcmkttsmgr.cpp:339
 #, fuzzy
 msgid "&Remove"
 msgstr "&Buang"
@@ -1027,6 +1028,7 @@ msgstr "Klik untuk memuatkan senarai perkataan dari fail."
 #. i18n: ectx: property (text), widget (KPushButton, loadButton)
 #: rc.cpp:411
 #, fuzzy
+msgctxt "Load a word list from a file"
 msgid "Load"
 msgstr "Muatkan..."
 
@@ -1053,6 +1055,7 @@ msgstr "Klik untuk mengosongkan senarai perkataan."
 #. i18n: ectx: property (text), widget (KPushButton, clearButton)
 #: rc.cpp:423
 #, fuzzy
+msgctxt "Clear the word list"
 msgid "Clear"
 msgstr "&Kosongkan"
 
@@ -1896,6 +1899,9 @@ msgstr "Fail &FreeTTS jar:"
 #. i18n: file: plugins/freetts/freettsconfigwidget.ui:143
 #. i18n: ectx: property (text), widget (QPushButton, freettsTest)
 #: rc.cpp:869
+#, fuzzy
+#| msgid "Test"
+msgctxt "Test the settings"
 msgid "Test"
 msgstr "Uji"
 
@@ -2086,12 +2092,18 @@ msgstr "Jantina"
 #. i18n: file: plugins/hadifix/voicefileui.ui:57
 #. i18n: ectx: property (text), widget (QRadioButton, femaleOption)
 #: rc.cpp:989
+#, fuzzy
+#| msgid "Female"
+msgctxt "Female, as option for gender"
 msgid "Female"
 msgstr "Perempuan"
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:64
 #. i18n: ectx: property (text), widget (QRadioButton, maleOption)
 #: rc.cpp:992
+#, fuzzy
+#| msgid "Male"
+msgctxt "Male, as option for gender"
 msgid "Male"
 msgstr "Lelaki"
 
@@ -2373,83 +2385,93 @@ msgctxt "FestivalVoiceName"
 msgid "Vietnamese Female"
 msgstr "Lelaki British, OGC"
 
-#: filters/main.cpp:24
+#: filters/main.cpp:41
 msgid "testfilter"
 msgstr "penapis uji"
 
-#: filters/main.cpp:25
+#: filters/main.cpp:42
 msgid "A utility for testing KTTSD filter plugins."
 msgstr "Kemudahan untuk menguji plugin penapis KTTSD."
 
-#: filters/main.cpp:26
-msgid "Copyright 2005, Gary Cramblitt <garycramblitt@comcast.net>"
+#: filters/main.cpp:43
+msgid "Copyright 2005, Gary Cramblitt &lt;garycramblitt@comcast.net&gt;"
 msgstr ""
 
-#: filters/main.cpp:27 kcmkttsmgr/kcmkttsmgr.cpp:1025 kspeak/main.cpp:48
+#: filters/main.cpp:44 kcmkttsmgr/kcmkttsmgr.cpp:1026 kspeak/main.cpp:48
 #: kttsd/main.cpp:44 kttsmgr/kttsmgr.cpp:58
 msgid "Gary Cramblitt"
 msgstr ""
 
-#: filters/main.cpp:27 kcmkttsmgr/kcmkttsmgr.cpp:1025 kspeak/main.cpp:48
+#: filters/main.cpp:44 kcmkttsmgr/kcmkttsmgr.cpp:1026 kspeak/main.cpp:48
 #: kttsd/main.cpp:44 kttsmgr/kttsmgr.cpp:58
 msgid "Maintainer"
 msgstr "Penyenggara"
 
-#: filters/main.cpp:33
+#: filters/main.cpp:50
 msgid "Name of a KTTSD filter plugin (required)"
 msgstr "Nama plugin penapis KTTSD (diperlukan)"
 
-#: filters/main.cpp:35
+#: filters/main.cpp:52
 msgid "Talker code passed to filter"
 msgstr "Kod Penutur diberikan kepada penapis"
 
-#: filters/main.cpp:37
+#: filters/main.cpp:54
 msgid "DCOP application ID passed to filter"
 msgstr "ID aplikasi DCOP diberikan kepada penapis"
 
-#: filters/main.cpp:39
+#: filters/main.cpp:56
 #, fuzzy
 msgid "Config file group name passed to filter"
 msgstr "Kod Penutur diberikan kepada penapis"
 
-#: filters/main.cpp:40
+#: filters/main.cpp:57
 msgid "Display list of available Filter PlugIns and exit"
 msgstr "Paparkan senarai Plugin Penapis yang ada dan keluar"
 
-#: filters/main.cpp:42
+#: filters/main.cpp:59
 msgid "Display tabs as \\t, otherwise they are removed"
 msgstr "Paparkan tab sebagai \\t, jika tidak tab akan dibuang"
 
-#: filters/main.cpp:43
+#: filters/main.cpp:60
 msgid "Display list of available filter plugins and exit"
 msgstr "Paparkan senarai plugin penapis yang ada dan keluar"
 
-#: kcmkttsmgr/addtalker.cpp:139 kcmkttsmgr/kcmkttsmgr.cpp:616
+#: kcmkttsmgr/addtalker.cpp:139 kcmkttsmgr/kcmkttsmgr.cpp:617
 #: libkttsd/talkercode.cpp:232
+#, fuzzy
+#| msgid "Other"
+msgctxt "Other language"
 msgid "Other"
 msgstr "Lain"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:80
+#: kcmkttsmgr/kcmkttsmgr.cpp:81
 msgid "Text interrupted. Message."
 msgstr "Teks disampuk. Mesej"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:86
+#: kcmkttsmgr/kcmkttsmgr.cpp:87
 msgid "Resuming text."
 msgstr "Menyambung semula teks"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:183 kcmkttsmgr/kcmkttsmgr.cpp:1304
+#: kcmkttsmgr/kcmkttsmgr.cpp:184 kcmkttsmgr/kcmkttsmgr.cpp:1305
 msgid "Filter"
 msgstr "Penapis"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:272
+#: kcmkttsmgr/kcmkttsmgr.cpp:273
 msgid "Sentence Boundary Detector"
 msgstr "Pengesan Sempadan Ayat"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:336
+#: kcmkttsmgr/kcmkttsmgr.cpp:333
+#, fuzzy
+#| msgid "U&p"
+msgctxt "One slot up"
+msgid "U&p"
+msgstr "&Atas"
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:337
 msgid "&Add..."
 msgstr "&Tambah"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:887
+#: kcmkttsmgr/kcmkttsmgr.cpp:888
 msgid ""
 "You have made changes to the configuration but have not saved them yet.  "
 "Click Apply to save the changes or Cancel to abandon the changes."
@@ -2458,7 +2480,7 @@ msgstr ""
 "menyimpannya. Klik Laksana untuk menyimpan atau Batal untuk mengabaikan "
 "perubahan."
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1012
+#: kcmkttsmgr/kcmkttsmgr.cpp:1013
 msgid ""
 "<h1>Text-to-Speech</h1><p>This is the configuration for the text-to-speech "
 "dcop service</p><p>This allows other applications to access text-to-speech "
@@ -2470,71 +2492,71 @@ msgstr ""
 "p><p>Jangan lupa mengkonfigur bahasa piawai untuk bahasa yang anda guna "
 "kerana ia akan menjadi bahasa yang paling banyak digunakan oleh aplikasi</p>"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1020 kttsd/main.cpp:40
+#: kcmkttsmgr/kcmkttsmgr.cpp:1021 kttsd/main.cpp:40
 msgid "kttsd"
 msgstr "kttsd"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1020
+#: kcmkttsmgr/kcmkttsmgr.cpp:1021
 msgid "KCMKttsMgr"
 msgstr "KCMKttsMgr"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1022
+#: kcmkttsmgr/kcmkttsmgr.cpp:1023
 msgid "(c) 2002, José Pablo Ezequiel Fernández"
 msgstr "(c) 2002, José Pablo Ezequiel Fernández"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1024 kttsd/main.cpp:43 kttsmgr/kttsmgr.cpp:57
+#: kcmkttsmgr/kcmkttsmgr.cpp:1025 kttsd/main.cpp:43 kttsmgr/kttsmgr.cpp:57
 #, fuzzy
 #| msgid "(c) 2002, José Pablo Ezequiel Fernández"
 msgid "José Pablo Ezequiel Fernández"
 msgstr "(c) 2002, José Pablo Ezequiel Fernández"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1024
+#: kcmkttsmgr/kcmkttsmgr.cpp:1025
 msgid "Author"
 msgstr "Pengarang"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1026 kttsd/main.cpp:46 kttsmgr/kttsmgr.cpp:60
+#: kcmkttsmgr/kcmkttsmgr.cpp:1027 kttsd/main.cpp:46 kttsmgr/kttsmgr.cpp:60
 msgid "Olaf Schmidt"
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1026 kcmkttsmgr/kcmkttsmgr.cpp:1027
+#: kcmkttsmgr/kcmkttsmgr.cpp:1027 kcmkttsmgr/kcmkttsmgr.cpp:1028
 #: kttsd/main.cpp:45 kttsd/main.cpp:46 kttsd/main.cpp:47
 #: kttsmgr/kttsmgr.cpp:59 kttsmgr/kttsmgr.cpp:60 kttsmgr/kttsmgr.cpp:61
 msgid "Contributor"
 msgstr "Penyumbang"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1027 kttsd/main.cpp:47 kttsmgr/kttsmgr.cpp:61
+#: kcmkttsmgr/kcmkttsmgr.cpp:1028 kttsd/main.cpp:47 kttsmgr/kttsmgr.cpp:61
 msgid "Paul Giannaros"
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1127
+#: kcmkttsmgr/kcmkttsmgr.cpp:1128
 msgid "Add Talker"
 msgstr "Tambah Penutur"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1145 libkttsd/selecttalkerdlg.cpp:166
+#: kcmkttsmgr/kcmkttsmgr.cpp:1146 libkttsd/selecttalkerdlg.cpp:166
 #: libkttsd/selectlanguagedlg.h:66
 msgid "Select Language"
 msgstr "Pilih Bahasa"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1303
+#: kcmkttsmgr/kcmkttsmgr.cpp:1304
 msgid "Select Filter"
 msgstr "Pilih Penapis"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1718
+#: kcmkttsmgr/kcmkttsmgr.cpp:1719
 #, fuzzy
 #| msgid "&Jobs"
 msgid "Jobs"
 msgstr "&Kerja"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1737
+#: kcmkttsmgr/kcmkttsmgr.cpp:1738
 #, kde-format
 msgid "KTTSD Version: %1"
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1918
+#: kcmkttsmgr/kcmkttsmgr.cpp:1919
 msgid "Talker Configuration"
 msgstr " Konfigurasi Talker"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1960
+#: kcmkttsmgr/kcmkttsmgr.cpp:1961
 msgid "Filter Configuration"
 msgstr "Konfigurasi Penapis"
 
@@ -2558,7 +2580,7 @@ msgid "Invalid number of parameters."
 msgstr ""
 
 #: kspeak/kspeak.cpp:353
-msgid "Enter HELP <option> where <option> may be:"
+msgid "Enter HELP &lt;option&gt; where &lt;option&gt; may be:"
 msgstr ""
 
 #: kspeak/kspeak.cpp:354
@@ -2575,7 +2597,8 @@ msgstr ""
 
 #: kspeak/kspeak.cpp:357
 msgid ""
-"  <member> to show a single command that may be sent to KTTSD via D-Bus."
+"  &lt;member&gt; to show a single command that may be sent to KTTSD via D-"
+"Bus."
 msgstr ""
 
 #: kspeak/kspeak.cpp:358
@@ -2631,7 +2654,7 @@ msgid "Do not display KTTSD signals."
 msgstr ""
 
 #: kspeak/kspeak.cpp:372
-msgid "Set the WAIT timeout to <msec> milliseconds. 0 waits forever."
+msgid "Set the WAIT timeout to &lt;msec&gt; milliseconds. 0 waits forever."
 msgstr ""
 
 #: kspeak/kspeak.cpp:373
@@ -2647,11 +2670,12 @@ msgid "  Example buffer usage:"
 msgstr ""
 
 #: kspeak/kspeak.cpp:381
-msgid "Pause <msec> milliseconds.  Example"
+msgid "Pause &lt;msec&gt; milliseconds.  Example"
 msgstr ""
 
 #: kspeak/kspeak.cpp:383
-msgid "Wait for <signal> with (optional) <args> arguments.  Example:"
+msgid ""
+"Wait for &lt;signal&gt; with (optional) &lt;args&gt; arguments.  Example:"
 msgstr ""
 
 #: kspeak/kspeak.cpp:393
@@ -2677,7 +2701,9 @@ msgid "Filtering"
 msgstr "Penapis"
 
 #: kspeak/kspeak.cpp:430 kttsjobmgr/jobinfolistmodel.cpp:200
-#: kttsmgr/kttsmgr.cpp:247
+#, fuzzy
+#| msgid "Waiting"
+msgctxt "Waiting for a job"
 msgid "Waiting"
 msgstr "Menunggu"
 
@@ -2696,19 +2722,22 @@ msgstr "Jeda"
 msgid "Interrupted"
 msgstr "&Sampukan"
 
-#: kspeak/kspeak.cpp:434 kttsjobmgr/jobinfolistmodel.cpp:204
-#: kttsmgr/kttsmgr.cpp:250
+#: kspeak/kspeak.cpp:434 kttsmgr/kttsmgr.cpp:250
+#, fuzzy
+#| msgid "Finished"
+msgctxt "Finished the job"
 msgid "Finished"
 msgstr "Habis"
 
 #: kspeak/kspeak.cpp:435
+msgctxt "Deleted the job"
 msgid "Deleted"
 msgstr ""
 
-#: kspeak/kspeak.cpp:436 kttsjobmgr/jobinfolistmodel.cpp:205
-#: kttsjobmgr/jobinfolistmodel.cpp:223 kttsmgr/kttsmgr.cpp:251
-#: plugins/festivalint/festivalintconf.cpp:305
-#: plugins/festivalint/festivalintconf.cpp:513
+#: kspeak/kspeak.cpp:436
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "Job state unknown"
 msgid "Unknown"
 msgstr "Tidak Diketahui"
 
@@ -2738,7 +2767,7 @@ msgid "A utility for sending speech commands to KTTSD service via D-Bus."
 msgstr ""
 
 #: kspeak/main.cpp:47
-msgid "Copyright 2006, Gary Cramblitt <garycramblitt@comcast.net>"
+msgid "Copyright 2006, Gary Cramblitt &lt;garycramblitt@comcast.net&gt;"
 msgstr ""
 
 #: kspeak/main.cpp:55
@@ -2861,6 +2890,9 @@ msgid "Talker ID"
 msgstr "ID Penutur"
 
 #: kttsjobmgr/jobinfolistmodel.cpp:125
+#, fuzzy
+#| msgid "State"
+msgctxt "State of the section"
 msgid "State"
 msgstr "Keadaan"
 
@@ -2872,7 +2904,22 @@ msgstr "Posisi"
 msgid "Sentences"
 msgstr "Ayat"
 
+#: kttsjobmgr/jobinfolistmodel.cpp:204
+#, fuzzy
+#| msgid "Finished"
+msgctxt "The job is finished"
+msgid "Finished"
+msgstr "Habis"
+
+#: kttsjobmgr/jobinfolistmodel.cpp:205
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "The state is unknown"
+msgid "Unknown"
+msgstr "Tidak Diketahui"
+
 #: kttsjobmgr/jobinfolistmodel.cpp:218
+msgctxt "Job priorty: All"
 msgid "All"
 msgstr ""
 
@@ -2883,6 +2930,7 @@ msgstr "Pengganti Rentetan"
 
 #: kttsjobmgr/jobinfolistmodel.cpp:220
 #, fuzzy
+msgctxt "Prioritylevel: warning"
 msgid "Warning"
 msgstr "Menunggu"
 
@@ -2895,6 +2943,13 @@ msgstr "&Pramesej:"
 #, fuzzy
 msgid "Text"
 msgstr "Uji"
+
+#: kttsjobmgr/jobinfolistmodel.cpp:223
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "Prioritylevel: unknown"
+msgid "Unknown"
+msgstr "Tidak Diketahui"
 
 #: kttsjobmgr/kttsjobmgr.cpp:63
 msgid "KttsJobMgr"
@@ -2966,6 +3021,9 @@ msgstr ""
 "ia mula bertutur.</p>"
 
 #: kttsjobmgr/kttsjobmgr.cpp:173
+#, fuzzy
+#| msgid "R&estart"
+msgctxt "Restart a job to the beginning"
 msgid "R&estart"
 msgstr "&Sambung semula"
 
@@ -3079,7 +3137,7 @@ msgstr "<p>Teks ayat yang sedang dituturkan.</p>"
 msgid "KTTSMgr"
 msgstr "KTTSMgr"
 
-#: kttsmgr/kttsmgr.cpp:55
+#: kttsmgr/kttsmgr.cpp:55 kttsmgr/kttsmgr.cpp:172
 msgid "Text-to-Speech Manager"
 msgstr "Pengurus Teks-ke-Tutur"
 
@@ -3125,10 +3183,19 @@ msgstr "&Buku Panduan KTTS"
 msgid "&About KTTSMgr"
 msgstr "&Tentang KTTSMgr"
 
-#: kttsmgr/kttsmgr.cpp:172
+#: kttsmgr/kttsmgr.cpp:247
 #, fuzzy
-msgid "<qt>Text-to-Speech Manager"
-msgstr "Pengurus Teks-ke-Tutur"
+#| msgid "Waiting"
+msgctxt "Waiting for an action"
+msgid "Waiting"
+msgstr "Menunggu"
+
+#: kttsmgr/kttsmgr.cpp:251
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "State is unknown"
+msgid "Unknown"
+msgstr "Tidak Diketahui"
 
 #: kttsmgr/kttsmgr.cpp:257
 #, fuzzy
@@ -3148,10 +3215,16 @@ msgid ", current job %1 at sentence %2 of %3 sentences"
 msgstr ""
 
 #: libkttsd/pluginproc.cpp:185
+#, fuzzy
+#| msgid "Local"
+msgctxt "Local charset"
 msgid "Local"
 msgstr "Tempatan"
 
 #: libkttsd/pluginproc.cpp:189
+#, fuzzy
+#| msgid "Latin1"
+msgctxt "Latin charset"
 msgid "Latin1"
 msgstr "Latin1"
 
@@ -3168,6 +3241,9 @@ msgid "Code"
 msgstr "Kod"
 
 #: libkttsd/talkercode.cpp:154
+#, fuzzy
+#| msgid "default"
+msgctxt "Default language code"
 msgid "default"
 msgstr "piawai"
 
@@ -3192,10 +3268,16 @@ msgid "UK"
 msgstr "UK"
 
 #: libkttsd/talkercode.cpp:257 libkttsd/talkercode.cpp:266
+#, fuzzy
+#| msgid "male"
+msgctxt "Male gender"
 msgid "male"
 msgstr "lelaki"
 
 #: libkttsd/talkercode.cpp:259 libkttsd/talkercode.cpp:268
+#, fuzzy
+#| msgid "female"
+msgctxt "Female gender"
 msgid "female"
 msgstr "perempuan"
 
@@ -3249,6 +3331,9 @@ msgid "Voice Code"
 msgstr "Suara"
 
 #: libkttsd/talkerlistmodel.cpp:125
+#, fuzzy
+#| msgid "Volume"
+msgctxt "Volume of noise"
 msgid "Volume"
 msgstr "Volum"
 
@@ -3314,11 +3399,13 @@ msgstr "Perkataan"
 #: filters/stringreplacer/stringreplacerconf.cpp:338
 #: filters/stringreplacer/stringreplacerconf.cpp:581
 #: filters/stringreplacer/stringreplacerconf.cpp:609
+msgctxt "Yes or no"
 msgid "Yes"
 msgstr ""
 
 #: filters/stringreplacer/stringreplacerconf.cpp:239
 #: filters/stringreplacer/stringreplacerconf.cpp:609
+msgctxt "Yes or no"
 msgid "No"
 msgstr ""
 
@@ -3368,6 +3455,14 @@ msgstr "Transformer XML"
 #: plugins/hadifix/hadifixconf.cpp:614
 msgid "Testing."
 msgstr "Menguji"
+
+#: plugins/festivalint/festivalintconf.cpp:305
+#: plugins/festivalint/festivalintconf.cpp:513
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "The voice is unknown"
+msgid "Unknown"
+msgstr "Tidak Diketahui"
 
 #: plugins/festivalint/festivalintconf.cpp:397
 msgid "Scanning... Please wait."
@@ -3439,6 +3534,10 @@ msgstr "Cuba untuk menentukan Jantina - Plugin Hadifix"
 #, kde-format
 msgid "The file %1 does not seem to be a voice file."
 msgstr "Fail %1 bukannya fail suara."
+
+#, fuzzy
+#~ msgid "<qt>Text-to-Speech Manager"
+#~ msgstr "Pengurus Teks-ke-Tutur"
 
 #~ msgid ""
 #~ "Specify options to be passed to Epos client.  Do not use -o.  To see "
