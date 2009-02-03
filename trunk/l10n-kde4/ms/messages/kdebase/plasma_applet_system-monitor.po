@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_system-monitor\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-28 09:13+0100\n"
+"POT-Creation-Date: 2009-02-03 11:13+0100\n"
 "PO-Revision-Date: 2009-01-29 22:29+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -21,9 +21,16 @@ msgstr ""
 msgid "CPU"
 msgstr "CPU"
 
-#: cpu.cpp:154
+#: cpu.cpp:155
 msgid "CPUs"
 msgstr ""
+
+#: cpu.cpp:163 net.cpp:179 temperature.cpp:111
+#, fuzzy
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "saat"
+msgstr[1] "saat"
 
 #: hdd.cpp:49
 msgid "Disk Space"
@@ -37,20 +44,27 @@ msgstr "Titik Lekap"
 msgid "Name"
 msgstr "Nama"
 
-#: hdd.cpp:83
+#: hdd.cpp:84
 msgid "Partitions"
 msgstr "Partisyen"
 
-#: hdd.cpp:125
+#: hdd.cpp:92
+#, fuzzy
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "minit"
+msgstr[1] "minit"
+
+#: hdd.cpp:132
 msgctxt "the root filesystem"
 msgid "root"
 msgstr "root"
 
-#: hdd.cpp:132
+#: hdd.cpp:139
 msgid "Unknown filesystem"
 msgstr ""
 
-#: hdd.cpp:142
+#: hdd.cpp:149
 #, kde-format
 msgctxt "hard disk label (not mounted or accessible)"
 msgid "%1 (not accessible)"
@@ -81,7 +95,7 @@ msgstr "Rangkaian"
 msgid "Network interface"
 msgstr ""
 
-#: net.cpp:170
+#: net.cpp:171
 #, fuzzy
 msgid "Interfaces"
 msgstr "Antara Muka"
@@ -100,53 +114,35 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: temperature-config.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:6 rc.cpp:15 rc.cpp:24 rc.cpp:36
+#: rc.cpp:6 rc.cpp:12 rc.cpp:18 rc.cpp:27
 msgid "Update &interval:"
 msgstr ""
 
-#. i18n: file: cpu-config.ui:83
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: net-config.ui:83
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: temperature-config.ui:87
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:9 rc.cpp:27 rc.cpp:39
-#, fuzzy
-msgid "seconds"
-msgstr "saat"
-
 #. i18n: file: hdd-config.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:12
+#: rc.cpp:9
 msgid "Hard &disks:"
 msgstr ""
 
-#. i18n: file: hdd-config.ui:92
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:18
-#, fuzzy
-msgid "minutes"
-msgstr "minit"
-
 #. i18n: file: net-config.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:21
+#: rc.cpp:15
 msgid "&Network Interfaces:"
 msgstr ""
 
 #. i18n: file: temperature-config.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:30
+#: rc.cpp:21
 msgid "&Available temperatures:"
 msgstr ""
 
 #. i18n: file: temperature-config.ui:42
 #. i18n: ectx: property (text), widget (QCheckBox, showPlotters)
-#: rc.cpp:33
+#: rc.cpp:24
 msgid "Show plotters"
 msgstr ""
 
-#: temperature.cpp:50 temperature.cpp:102
+#: temperature.cpp:50 temperature.cpp:103
 #, fuzzy
 msgid "Temperature"
 msgstr "Suhu"
@@ -156,12 +152,12 @@ msgstr "Suhu"
 msgid "Sensor"
 msgstr "Penderia"
 
-#: temperature.cpp:228
+#: temperature.cpp:235
 #, kde-format
 msgid "%1 °C"
 msgstr ""
 
-#: temperature.cpp:230
+#: temperature.cpp:237
 #, kde-format
 msgid "%1 °F"
 msgstr ""
