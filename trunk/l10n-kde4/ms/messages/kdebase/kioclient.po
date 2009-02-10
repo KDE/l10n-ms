@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kioclient\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-25 09:05+0200\n"
+"POT-Creation-Date: 2009-02-10 10:19+0100\n"
 "PO-Revision-Date: 2009-01-22 20:49+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -44,6 +44,15 @@ msgstr ""
 "\n"
 
 #: kioclient.cpp:57
+#, fuzzy
+#| msgid ""
+#| "  kioclient exec 'url' ['mimetype']\n"
+#| "            # Tries to open the document pointed to by 'url', in the "
+#| "application\n"
+#| "            #   associated with it in KDE. You may omit 'mimetype'.\n"
+#| "            #   In this case the mimetype is determined\n"
+#| "            #   automatically. Of course URL may be the URL of a\n"
+#| "            #   document, or it may be a *.desktop file.\n"
 msgid ""
 "  kioclient exec 'url' ['mimetype']\n"
 "            # Tries to open the document pointed to by 'url', in the "
@@ -52,6 +61,7 @@ msgid ""
 "            #   In this case the mimetype is determined\n"
 "            #   automatically. Of course URL may be the URL of a\n"
 "            #   document, or it may be a *.desktop file.\n"
+"            #   'url' can be an executable, too.\n"
 msgstr ""
 "  kioclient exec 'url' ['mimetype']\n"
 "            # Cuba untuk membuka dokumen dinyatakan oleh 'url', dalam "
@@ -62,7 +72,7 @@ msgstr ""
 "            #   secara automatik. Sudah pasti URL mungkin URL bagi\n"
 "            #   dokumen, atau ia mungkin fail *.desktop.\n"
 
-#: kioclient.cpp:63
+#: kioclient.cpp:64
 msgid ""
 "  kioclient move 'src' 'dest'\n"
 "            # Moves the URL 'src' to 'dest'.\n"
@@ -72,7 +82,14 @@ msgstr ""
 "            # Memindahkan URL 'src' ke 'dest'.\n"
 "            #   'src' mungkin adalah senarai URL.\n"
 
-#: kioclient.cpp:68
+#: kioclient.cpp:67
+msgid ""
+"            #   'dest' may be \"trash:/\" to move the files\n"
+"            #   in the trash bin.\n"
+"\n"
+msgstr ""
+
+#: kioclient.cpp:69
 msgid ""
 "  kioclient download ['src']\n"
 "            # Copies the URL 'src' to a user-specified location'.\n"
@@ -86,7 +103,7 @@ msgstr ""
 "            #   satu URL akan diminta.\n"
 "\n"
 
-#: kioclient.cpp:72
+#: kioclient.cpp:73
 msgid ""
 "  kioclient copy 'src' 'dest'\n"
 "            # Copies the URL 'src' to 'dest'.\n"
@@ -98,7 +115,7 @@ msgstr ""
 "            #   'src' mungkin adalah senarai URL.\n"
 "\n"
 
-#: kioclient.cpp:75
+#: kioclient.cpp:76
 msgid ""
 "  kioclient cat 'url'\n"
 "            # Writes out the contents of 'url' to stdout\n"
@@ -108,7 +125,7 @@ msgstr ""
 "            # Tulis kandungan 'url' ke stdout\n"
 "\n"
 
-#: kioclient.cpp:78
+#: kioclient.cpp:79
 msgid ""
 "*** Examples:\n"
 "  kioclient exec file:/root/Desktop/cdrom.desktop \"Mount default\"\n"
@@ -120,7 +137,7 @@ msgstr ""
 "             // Melekapkan CDROM\n"
 "\n"
 
-#: kioclient.cpp:81
+#: kioclient.cpp:82
 msgid ""
 "  kioclient exec file:/home/weis/data/test.html\n"
 "             // Opens the file with default binding\n"
@@ -130,7 +147,7 @@ msgstr ""
 "             // Membuka fail dengan ikatan default\n"
 "\n"
 
-#: kioclient.cpp:83
+#: kioclient.cpp:84
 msgid ""
 "  kioclient exec file:/home/weis/data/test.html Netscape\n"
 "             // Opens the file with netscape\n"
@@ -140,7 +157,7 @@ msgstr ""
 "             // Membuka fail dengan netscape\n"
 "\n"
 
-#: kioclient.cpp:85
+#: kioclient.cpp:86
 msgid ""
 "  kioclient exec ftp://localhost/\n"
 "             // Opens new window with URL\n"
@@ -150,7 +167,7 @@ msgstr ""
 "             // Membuka tetingkap baru dengan URL\n"
 "\n"
 
-#: kioclient.cpp:87
+#: kioclient.cpp:88
 msgid ""
 "  kioclient exec file:/root/Desktop/emacs.desktop\n"
 "             // Starts emacs\n"
@@ -160,7 +177,7 @@ msgstr ""
 "             // Memulakan emacs\n"
 "\n"
 
-#: kioclient.cpp:89
+#: kioclient.cpp:90
 msgid ""
 "  kioclient exec file:/root/Desktop/cdrom.desktop\n"
 "             // Opens the CDROM's mount directory\n"
@@ -170,7 +187,7 @@ msgstr ""
 "             // Membuka direktori lekapan CDROM\n"
 "\n"
 
-#: kioclient.cpp:91
+#: kioclient.cpp:92
 #, fuzzy
 msgid ""
 "  kioclient exec .\n"
@@ -180,50 +197,50 @@ msgstr ""
 "\n"
 " n n"
 
-#: kioclient.cpp:102
+#: kioclient.cpp:103
 msgid "Non-interactive use: no message boxes"
 msgstr "Penggunaan tidak interaktif: tiada kekotak mesej"
 
-#: kioclient.cpp:104
+#: kioclient.cpp:105
 #, fuzzy
 msgid "URL or URLs"
 msgstr "URL atau URL"
 
-#: kioclient.cpp:106 kioclient.cpp:109
+#: kioclient.cpp:107 kioclient.cpp:110
 #, fuzzy
 msgid "Source URL or URLs"
 msgstr "Sumber URL atau URL"
 
-#: kioclient.cpp:107 kioclient.cpp:110
+#: kioclient.cpp:108 kioclient.cpp:111
 #, fuzzy
 msgid "Destination URL"
 msgstr "Destinasi URL"
 
-#: kioclient.cpp:112
+#: kioclient.cpp:113
 msgid "Show available commands"
 msgstr "Papar arahan yang ada"
 
-#: kioclient.cpp:113
+#: kioclient.cpp:114
 msgid "Command (see --commands)"
 msgstr "Arahan (lihat --commands)"
 
-#: kioclient.cpp:114
+#: kioclient.cpp:115
 msgid "Arguments for command"
 msgstr "Hujah untuk arahan"
 
-#: kioclient.cpp:149
+#: kioclient.cpp:150
 msgid "Syntax Error: Not enough arguments\n"
 msgstr "Ralat Sintaks: Tidak cukup hujah\n"
 
-#: kioclient.cpp:154
+#: kioclient.cpp:155
 msgid "Syntax Error: Too many arguments\n"
 msgstr "Ralat Sintaks: Terlalu banyak hujah\n"
 
-#: kioclient.cpp:285
+#: kioclient.cpp:287
 msgid "Unable to download from an invalid URL."
 msgstr "Gagal untuk muatturun daripada URL yang tidak sah."
 
-#: kioclient.cpp:323
+#: kioclient.cpp:325
 #, kde-format
 msgid "Syntax Error: Unknown command '%1'\n"
 msgstr "Ralat Sintaks: Arahan '%1' tidak diketahui\n"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-02 11:25+0100\n"
+"POT-Creation-Date: 2009-02-10 10:23+0100\n"
 "PO-Revision-Date: 2005-08-10 11:32+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -92,7 +92,7 @@ msgstr "Pilih pensintesis tutur untuk melakukan percakapan"
 #. i18n: ectx: property (text), widget (QLabel, synthesizerLabel)
 #. i18n: file: libkttsd/selecttalkerwidget.ui:158
 #. i18n: ectx: property (text), widget (QLabel, synthLabel)
-#: rc.cpp:26 rc.cpp:237
+#: rc.cpp:26 rc.cpp:327
 msgid "&Synthesizer:"
 msgstr "&Pensintesis"
 
@@ -114,7 +114,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, languageLabel)
 #. i18n: file: libkttsd/selecttalkerwidget.ui:68
 #. i18n: ectx: property (text), widget (QLabel, languageLabelLabel)
-#: rc.cpp:32 rc.cpp:228
+#: rc.cpp:32 rc.cpp:318
 msgid "&Language:"
 msgstr "&Bahasa:"
 
@@ -222,7 +222,7 @@ msgstr "&Atas"
 #. i18n: ectx: property (text), widget (KPushButton, lowerFilterPriorityButton)
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:292
 #. i18n: ectx: property (text), widget (QPushButton, downButton)
-#: rc.cpp:77 rc.cpp:110 rc.cpp:441 kcmkttsmgr/kcmkttsmgr.cpp:334
+#: rc.cpp:77 rc.cpp:110 rc.cpp:531 kcmkttsmgr/kcmkttsmgr.cpp:334
 msgid "Do&wn"
 msgstr "&Bawah"
 
@@ -252,7 +252,7 @@ msgstr "Klik untuk membuang Penutur yang ditonjolkan"
 #. i18n: ectx: property (text), widget (KPushButton, removeFilterButton)
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:334
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
-#: rc.cpp:89 rc.cpp:122 rc.cpp:453 kcmkttsmgr/kcmkttsmgr.cpp:338
+#: rc.cpp:89 rc.cpp:122 rc.cpp:543 kcmkttsmgr/kcmkttsmgr.cpp:338
 #, fuzzy
 msgid "&Remove"
 msgstr "&Buang"
@@ -500,7 +500,7 @@ msgstr "Nyatakan direktori yang di dalamnya fail audio disalin."
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, timeBox)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:382
 #. i18n: ectx: property (whatsThis), widget (QSlider, timeSlider)
-#: rc.cpp:209 rc.cpp:215 rc.cpp:222 rc.cpp:776 rc.cpp:796 rc.cpp:809
+#: rc.cpp:209 rc.cpp:215 rc.cpp:222 rc.cpp:866 rc.cpp:886 rc.cpp:899
 msgid ""
 "Sets the speed of speech.  Slide the slider to the left to slow speech down; "
 "to the right to increase talking speed.  Anything less than 75 percent is "
@@ -537,15 +537,287 @@ msgstr "&Kelajuan"
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, timeBox)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:309
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, frequencyBox)
-#: rc.cpp:219 rc.cpp:673 rc.cpp:680 rc.cpp:786 rc.cpp:793 rc.cpp:800
-#: rc.cpp:906 rc.cpp:922 rc.cpp:938
+#: rc.cpp:219 rc.cpp:763 rc.cpp:770 rc.cpp:876 rc.cpp:883 rc.cpp:890
+#: rc.cpp:996 rc.cpp:1012 rc.cpp:1028
 #, no-c-format
 msgid " %"
 msgstr " %"
 
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, kttsjobmgr)
+#: rc.cpp:225 kcmkttsmgr/kcmkttsmgr.cpp:1718
+#, fuzzy
+#| msgid "&Jobs"
+msgid "Jobs"
+msgstr "&Kerja"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:32
+#. i18n: ectx: property (whatsThis), widget (QTreeView, m_jobListView)
+#: rc.cpp:228
+#, fuzzy
+#| msgid ""
+#| "<p>These are all the text jobs.  The <b>State</b> column may be:"
+#| "<ul><li><b>Queued</b> - the job is waiting and will not be spoken until "
+#| "its state is changed to <b>Waiting</b> by clicking the <b>Resume</b> or "
+#| "<b>Restart</b> buttons.</li><li><b>Waiting</b> - the job is ready to be "
+#| "spoken.  It will be spoken when the jobs preceding it in the list have "
+#| "finished.</li><li><b>Speaking</b> - the job is speaking.  The "
+#| "<b>Position</b> column shows the current sentence of the job being "
+#| "spoken.  You may pause a speaking job by clicking the <b>Hold</b> button."
+#| "</li><li><b>Paused</b> - the job is currently paused.  Paused jobs "
+#| "prevent jobs below them from speaking.  Use the <b>Resume</b> or "
+#| "<b>Restart</b> buttons to resume speaking the job, or click <b>Later</b> "
+#| "to move the job down in the list.</li><li><b>Finished</b> - the job has "
+#| "finished speaking.  When a second job finishes, this one will be "
+#| "deleted.  You may click <b>Restart</b> to repeat the job.</li></"
+#| "ul><em>Note</em>: Messages, Warnings, and Screen Reader Output do not "
+#| "appear in this list.  See the Handbook for more information.</p>"
+msgid ""
+"<p>These are all the text jobs.  The <b>State</b> column may be:\n"
+"        <ul>\n"
+"        <li><b>Queued</b> - the job is waiting and will not be spoken until "
+"its state is changed to <b>Waiting</b> by clicking the <b>Resume</b> or "
+"<b>Restart</b> buttons.</li>\n"
+"        <li><b>Waiting</b> - the job is ready to be spoken.  It will be "
+"spoken when the jobs preceding it in the list have finished.</li>\n"
+"        <li><b>Speaking</b> - the job is speaking.  The <b>Position</b> "
+"column shows the current sentence of the job being spoken.  You may pause a "
+"speaking job by clicking the <b>Hold</b> button.</li>\n"
+"        <li><b>Paused</b> - the job is currently paused.  Paused jobs "
+"prevent jobs below them from speaking.  Use the <b>Resume</b> or <b>Restart</"
+"b> buttons to resume speaking the job, or click <b>Later</b> to move the job "
+"down in the list.</li>\n"
+"        <li><b>Finished</b> - the job has finished speaking.  When a second "
+"job finishes, this one will be deleted.  You may click <b>Restart</b> to "
+"repeat the job.</li>\n"
+"        </ul>\n"
+"        <em>Note</em>: Messages, Warnings, and Screen Reader Output do not "
+"appear in this list.  See the Handbook for more information.\n"
+"        </p>"
+msgstr ""
+"<p>Ini semua adalah kerja teks. Lajur <b>Keadaan</b> boleh jadi:"
+"<ul><li><b>Dibaris gilir</b> - kerja sedang menunggu dan tidak akan ditutur "
+"sehingga keadaannya diubah kepada <b>Menunggu</b> dengan mengklik butang "
+"<b>Sambung semula</b> atau <b>Mula semula</b>.</li><li><b>Menunggu</b> - "
+"kerja sedia untuk dituturkan.  Ia akan dituturkan apabila kerja sebelumnya "
+"dalam senarai sudah siap.</li><li><b>Bertutur</b> - kerja sedang bertutur. "
+"Lajur <b>Posisi</b> menayangkan ayat yang sedang dituturkan.  Anda boleh "
+"menjedakan kerja tutur dengan mengklik butang <b>Tunggu dulu</b> .</"
+"li><li><b>Jeda</b> - kerja sedang jeda.  Kerja jeda menghalang kerja di "
+"bawahnya daripada bertutur.  Guna butang <b>Sambung semula</b> atau <b>Mula "
+"semula</b> untuk menyambung semula kerja tutur, atau klik <b>Kemudian</b> "
+"untuk mengalihkan kerja ke bawah.</li><li><b>Selesai</b> - kerja selesai "
+"bertutur.  Apabila kerja kedua selesai, yang ini akan dihapuskan.  Anda "
+"boleh klik <b>Mula semula</b> untuk mengulangi kerja.</li></"
+"ul><em>Perhatian</em>: Mesej, Amaran, dan Output Pembaca Skrin tidak muncul "
+"dalam senarai ini.  Lihat Buku Panduan untuk maklumat lanjut.</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:45
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_hold)
+#: rc.cpp:240
+#, fuzzy
+#| msgid ""
+#| "<p>Changes a job to Paused state.  If currently speaking, the job stops "
+#| "speaking.  Paused jobs prevent jobs that follow them from speaking, so "
+#| "either click <b>Resume</b> to make the job speakable, or click <b>Later</"
+#| "b> to move it down in the list.</p>"
+msgid ""
+"<p>Changes a job to Paused state.  If currently speaking, the job stops "
+"speaking. Paused jobs prevent jobs that follow them from speaking, so either "
+"click <b>Resume</b> to make the job speakable, or click <b>Later</b> to move "
+"it down in the list.</p>"
+msgstr ""
+"<p>Mengubah kerja kepada keadaan Jeda.  Jika sedang bertutur, kerja akan "
+"berhenti bertutur.  Kerja terjeda akan menghalang kerja berikutnya daripada "
+"bertutur, jadi sama ada klik <b>Sambung semula</b> untuk menjadikan kerja "
+"boleh tutur, atau klik <b>Kemudian</b> untuk beralih ke bawah senarai.</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:48
+#. i18n: ectx: property (text), widget (KPushButton, job_hold)
+#: rc.cpp:243
+msgid "Hold"
+msgstr "Tunggu dulu"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:55
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_resume)
+#: rc.cpp:246
+msgid ""
+"<p>Resumes a paused job or changes a Queued job to Waiting.  If the job is "
+"the top speakable job in the list, it begins speaking.</p>"
+msgstr ""
+"<p>Sambung semula kerja terjeda atau ubah kerja dalam Baris Gilir kepada "
+"Menunggu. Jika kerja ialah kerja boleh tutur berada teratas dalam senarai, "
+"ia mula bertutur.</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:58
+#. i18n: ectx: property (text), widget (KPushButton, job_resume)
+#: rc.cpp:249
+msgid "Resume"
+msgstr "Sambung semula"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:65
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_restart)
+#: rc.cpp:252
+msgid ""
+"<p>Rewinds a job to the beginning and changes its state to Waiting.  If the "
+"job is the top speakable job in the list, it begins speaking.</p>"
+msgstr ""
+"<p>Menggulung semula kerja ke awal dan mengubah keadaannya kepada Menunggu. "
+"Jika kerja boleh tutur berada teratas dalam senarai, ia mula bertutur.</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:68
+#. i18n: ectx: property (text), widget (KPushButton, job_restart)
+#: rc.cpp:255
+#, fuzzy
+#| msgid "R&estart"
+msgctxt "Restart a job to the beginning"
+msgid "R&estart"
+msgstr "&Sambung semula"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:75
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_remove)
+#: rc.cpp:258
+msgid ""
+"<p>Deletes the job.  If it is currently speaking, it stops speaking.  The "
+"next speakable job in the list begins speaking.</p>"
+msgstr ""
+"<p>Menghapuskan kerja.  Jika ia sedang bertutur, ia berhenti bertutur. Kerja "
+"boleh tutur berikutnya dalam senarai mula bertutur.</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:78
+#. i18n: ectx: property (text), widget (KPushButton, job_remove)
+#: rc.cpp:261
+msgid "Re&move"
+msgstr "&Buang"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:85
+#. i18n: ectx: property (text), widget (KPushButton, job_removeall)
+#: rc.cpp:264
+#, fuzzy
+msgid "Remove &All"
+msgstr "&Buang"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:92
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_later)
+#: rc.cpp:267
+msgid ""
+"<p>Moves a job downward in the list so that it will be spoken later.  If the "
+"job is currently speaking, its state changes to Paused.</p>"
+msgstr ""
+"<p>Mengalihkan kerja ke bawah dalam senarai supaya ia akan ditutur kemudian. "
+"Jika kerja sedang bertutur, keadaannya berubah kepada Jeda.</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:95
+#. i18n: ectx: property (text), widget (KPushButton, job_later)
+#: rc.cpp:270
+msgid "&Later"
+msgstr "&Kemudian"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:106
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_prevsentence)
+#: rc.cpp:273
+msgid "<p>Rewinds a job to the previous sentence.</p>"
+msgstr "<p>Menggulung semula kerja ke ayat sebelumnya.</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:109
+#. i18n: ectx: property (text), widget (KPushButton, job_prevsentence)
+#: rc.cpp:276
+msgid "&Previous Sentence"
+msgstr "&Ayat Sebelumnya"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:116
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_nextsentence)
+#: rc.cpp:279
+msgid "<p>Advances a job to the next sentence.</p>"
+msgstr "<p>Melanjutkan kerja ke ayat berikutnya.</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:119
+#. i18n: ectx: property (text), widget (KPushButton, job_nextsentence)
+#: rc.cpp:282
+msgid "&Next Sentence"
+msgstr "&Ayat Berikutnya"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:130
+#. i18n: ectx: property (whatsThis), widget (KPushButton, speak_clipboard)
+#: rc.cpp:285
+msgid ""
+"<p>Queues the current contents of the clipboard for speaking and sets its "
+"state to Waiting.  If the job is the topmost in the list, it begins "
+"speaking.  The job will be spoken by the topmost Talker in the <b>Talkers</"
+"b> tab.</p>"
+msgstr ""
+"<p>Membarisgilirkan kandungan semasa klipbod untuk bertutur dan mengeset "
+"keadaannya kepada Menunggu.  Jika kerja itu berada teratas dalam senarai, ia "
+"mula bertutur.  Kerja akan ditutur oleh Penutur teratas dalam tab "
+"<b>Talkers</b>.</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:133
+#. i18n: ectx: property (text), widget (KPushButton, speak_clipboard)
+#: rc.cpp:288
+msgid "&Speak Clipboard"
+msgstr "&Klipbod tutur"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:140
+#. i18n: ectx: property (whatsThis), widget (KPushButton, speak_file)
+#: rc.cpp:291
+msgid ""
+"<p>Prompts you for a file name and queues the contents of the file for "
+"speaking.  You must click the <b>Resume</b> button before the job will be "
+"speakable.  The job will be spoken by the topmost Talker in the <b>Talkers</"
+"b> tab.</p>"
+msgstr ""
+"<p>Menggesa anda untuk nama fail dan menbarisgilirkan kandungan fail untuk "
+"bertutur.  Anda mesti klik butang <b>Sambung semula</b> sebelum kerja "
+"tersebut boleh tutur.  Kerja akan ditutur oleh Penutur  teratas dalam tab "
+"<b>Talkers</b>.</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:143
+#. i18n: ectx: property (text), widget (KPushButton, speak_file)
+#: rc.cpp:294
+msgid "Spea&k File"
+msgstr "&Fail Tutur"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:150
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_changetalker)
+#: rc.cpp:297
+msgid ""
+"<p>Prompts you with a list of your configured Talkers from the <b>Talkers</"
+"b> tab.  The job will be spoken using the selected Talker.</p>"
+msgstr ""
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:153
+#. i18n: ectx: property (text), widget (KPushButton, job_changetalker)
+#: rc.cpp:300
+msgid "Change Talker"
+msgstr "Ubah Penutur"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:160
+#. i18n: ectx: property (whatsThis), widget (KPushButton, refresh)
+#: rc.cpp:303
+msgid "<p>Refresh the list of jobs.</p>"
+msgstr "<p>Muatkan semula senarai kerja.</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:163
+#. i18n: ectx: property (text), widget (KPushButton, refresh)
+#: rc.cpp:306
+msgid "&Refresh"
+msgstr "&Muat semula"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:172
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:309
+msgid "Current Sentence"
+msgstr "Ayat Semasa"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:179
+#. i18n: ectx: property (whatsThis), widget (KTextEdit, m_currentSentence)
+#: rc.cpp:312
+msgid "<p>The text of the sentence currently speaking.</p>"
+msgstr "<p>Teks ayat yang sedang dituturkan.</p>"
+
 #. i18n: file: libkttsd/selecttalkerwidget.ui:24
 #. i18n: ectx: property (windowTitle), widget (QWidget, SelectTalkerWidget)
-#: rc.cpp:225 kttsjobmgr/kttsjobmgr.cpp:398 libkttsd/selecttalkerdlg.h:59
+#: rc.cpp:315 kttsjobmgr/kttsjobmgr.cpp:282 libkttsd/selecttalkerdlg.h:59
 #: filters/talkerchooser/talkerchooserconf.cpp:220
 msgid "Select Talker"
 msgstr "Pilih Talker"
@@ -564,26 +836,26 @@ msgstr "Pilih Talker"
 #. i18n: ectx: property (text), widget (KPushButton, reEditorButton)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:207
 #. i18n: ectx: property (text), widget (KPushButton, talkerButton)
-#: rc.cpp:231 rc.cpp:288 rc.cpp:324 rc.cpp:363 rc.cpp:402 rc.cpp:504
-#: rc.cpp:522
+#: rc.cpp:321 rc.cpp:378 rc.cpp:414 rc.cpp:453 rc.cpp:492 rc.cpp:594
+#: rc.cpp:612
 msgid "..."
 msgstr "..."
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:143
 #. i18n: ectx: property (text), widget (QLabel, preferredLabel)
-#: rc.cpp:234
+#: rc.cpp:324
 msgid "Checked items are preferred over unchecked items."
 msgstr "Item bertanda lebih digemari berbanding dengan item tak bertanda."
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:214
 #. i18n: ectx: property (text), widget (QLabel, rateLabel)
-#: rc.cpp:240
+#: rc.cpp:330
 msgid "&Rate:"
 msgstr "&Kadar"
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:267
 #. i18n: ectx: property (text), widget (QLabel, genderLabel)
-#: rc.cpp:243
+#: rc.cpp:333
 msgid "&Gender:"
 msgstr "&Jantina:"
 
@@ -591,13 +863,13 @@ msgstr "&Jantina:"
 #. i18n: ectx: property (text), widget (QLabel, volumeLabel)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:171
 #. i18n: ectx: property (text), widget (QLabel, volumeLabel)
-#: rc.cpp:246 rc.cpp:767
+#: rc.cpp:336 rc.cpp:857
 msgid "&Volume:"
 msgstr "&Volum"
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:429
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, useClosestMatchRadioButton)
-#: rc.cpp:249
+#: rc.cpp:339
 msgid ""
 "When checked, will use a configured Talker most closely matching the "
 "attributes you choose.  Attributes with checks next to them will be "
@@ -610,13 +882,13 @@ msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:432
 #. i18n: ectx: property (text), widget (QRadioButton, useClosestMatchRadioButton)
-#: rc.cpp:252
+#: rc.cpp:342
 msgid "Use closest &matching Talker having"
 msgstr "Guna Penutur yang paling hampir padan"
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:439
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, useDefaultRadioButton)
-#: rc.cpp:255
+#: rc.cpp:345
 msgid ""
 "When checked, will use the default Talker, which is the topmost Talker "
 "listed in the Talkers tab."
@@ -626,13 +898,13 @@ msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:442
 #. i18n: ectx: property (text), widget (QRadioButton, useDefaultRadioButton)
-#: rc.cpp:258
+#: rc.cpp:348
 msgid "&Use default Talker"
 msgstr "&Guna Penutur piawai"
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:449
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, useSpecificTalkerRadioButton)
-#: rc.cpp:261
+#: rc.cpp:351
 msgid ""
 "When checked, will use the specific Talker (if it is still configured), "
 "otherwise the Talker most closely matching."
@@ -642,13 +914,13 @@ msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:452
 #. i18n: ectx: property (text), widget (QRadioButton, useSpecificTalkerRadioButton)
-#: rc.cpp:264
+#: rc.cpp:354
 msgid "Use specific &Talker"
 msgstr "Guna &Penutur khusus"
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:33
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:267
+#: rc.cpp:357
 msgid ""
 "<b>WARNING: This filter is a key component of the KTTS system. Please read "
 "the KTTS Handbook before modifying these settings.</b>"
@@ -658,7 +930,7 @@ msgstr ""
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:51
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
-#: rc.cpp:270
+#: rc.cpp:360
 #, fuzzy
 #| msgid "The name of this filter.  Enter any descriptive name you like."
 msgctxt "What's this text"
@@ -673,19 +945,19 @@ msgstr "Nama penapis ini. Masukkan sebarang nama deskriptif yang anda suka."
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:94
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: rc.cpp:273 rc.cpp:375 rc.cpp:474 rc.cpp:558
+#: rc.cpp:363 rc.cpp:465 rc.cpp:564 rc.cpp:648
 msgid "&Name:"
 msgstr "&Nama:"
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:67
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
-#: rc.cpp:276
+#: rc.cpp:366
 msgid "The name of this filter.  Enter any descriptive name you like."
 msgstr "Nama penapis ini. Masukkan sebarang nama deskriptif yang anda suka."
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:84
 #. i18n: ectx: property (whatsThis), widget (QLabel, reLabel)
-#: rc.cpp:279
+#: rc.cpp:369
 #, fuzzy
 #| msgid ""
 #| "The regular expression that detects boundaries between sentences in text "
@@ -698,13 +970,13 @@ msgstr "Ungkapan biasa yang mengesan sempadan di antara ayat dalam kerja teks."
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:87
 #. i18n: ectx: property (text), widget (QLabel, reLabel)
-#: rc.cpp:282
+#: rc.cpp:372
 msgid "&Sentence boundary regular expression:"
 msgstr "Ungkapan biasa sempadan &ayat:"
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:100
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, reLineEdit)
-#: rc.cpp:285
+#: rc.cpp:375
 msgid ""
 "The regular expression that detects boundaries between sentences in text "
 "jobs."
@@ -712,7 +984,7 @@ msgstr "Ungkapan biasa yang mengesan sempadan di antara ayat dalam kerja teks."
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:124
 #. i18n: ectx: property (whatsThis), widget (QLabel, sbLabel)
-#: rc.cpp:291
+#: rc.cpp:381
 #, fuzzy
 #| msgid ""
 #| "This string replaces the matched regular expression.  <b>Important</b>: "
@@ -727,13 +999,13 @@ msgstr ""
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:127
 #. i18n: ectx: property (text), widget (QLabel, sbLabel)
-#: rc.cpp:294
+#: rc.cpp:384
 msgid "&Replacement sentence boundary:"
 msgstr "Sempadan ayat &penggantian:"
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:140
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, sbLineEdit)
-#: rc.cpp:297
+#: rc.cpp:387
 msgid ""
 "This string replaces the matched regular expression.  <b>Important</b>: must "
 "end with tab (\\t)."
@@ -749,7 +1021,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, applyGroupBox)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:141
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, applyGroupBox)
-#: rc.cpp:300 rc.cpp:381 rc.cpp:480 rc.cpp:573
+#: rc.cpp:390 rc.cpp:471 rc.cpp:570 rc.cpp:663
 msgid "These settings determines when the filter is applied to text."
 msgstr "Seting ini menetukan bila penapis itu dipakai pada teks."
 
@@ -757,7 +1029,7 @@ msgstr "Seting ini menetukan bila penapis itu dipakai pada teks."
 #. i18n: ectx: property (title), widget (QGroupBox, applyGroupBox)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:144
 #. i18n: ectx: property (title), widget (QGroupBox, applyGroupBox)
-#: rc.cpp:303 rc.cpp:576
+#: rc.cpp:393 rc.cpp:666
 msgid "Apply This &Filter When"
 msgstr "Laksanakan &Penapis Ini Apabila"
 
@@ -765,7 +1037,7 @@ msgstr "Laksanakan &Penapis Ini Apabila"
 #. i18n: ectx: property (whatsThis), widget (QLabel, languageLabel)
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:81
 #. i18n: ectx: property (whatsThis), widget (QLabel, languageLabel)
-#: rc.cpp:306 rc.cpp:384
+#: rc.cpp:396 rc.cpp:474
 #, fuzzy
 #| msgid ""
 #| "This filter is applied to text jobs of the specified language.  You may "
@@ -786,7 +1058,7 @@ msgstr ""
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:175
 #. i18n: ectx: property (text), widget (QLabel, languageLabel)
-#: rc.cpp:309
+#: rc.cpp:399
 msgid "&Language is:"
 msgstr "&Bahasa ialah:"
 
@@ -794,7 +1066,7 @@ msgstr "&Bahasa ialah:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:100
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
-#: rc.cpp:312 rc.cpp:492
+#: rc.cpp:402 rc.cpp:582
 msgid ""
 "Enter a DCOP Application ID.  This filter will only apply to text jobs "
 "queued by that application.  You may enter more than one ID separated by "
@@ -815,7 +1087,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, appIdLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:103
 #. i18n: ectx: property (text), widget (QLabel, appIdLabel)
-#: rc.cpp:315 rc.cpp:393 rc.cpp:495
+#: rc.cpp:405 rc.cpp:483 rc.cpp:585
 msgid "Application &ID contains:"
 msgstr "&ID Aplikasi mengandungi:"
 
@@ -823,7 +1095,7 @@ msgstr "&ID Aplikasi mengandungi:"
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, languageLineEdit)
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:134
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, languageLineEdit)
-#: rc.cpp:318 rc.cpp:396
+#: rc.cpp:408 rc.cpp:486
 msgid ""
 "This filter is applied to text jobs of the specified language.  You may "
 "select more than one language by clicking the browse button and Ctrl-"
@@ -841,7 +1113,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KPushButton, languageBrowseButton)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:141
 #. i18n: ectx: property (whatsThis), widget (KPushButton, reEditorButton)
-#: rc.cpp:321 rc.cpp:399 rc.cpp:501
+#: rc.cpp:411 rc.cpp:489 rc.cpp:591
 msgid ""
 "Click to select one or more languages.  This filter will be applied to text "
 "jobs of those languages."
@@ -853,7 +1125,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:153
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
-#: rc.cpp:327 rc.cpp:507
+#: rc.cpp:417 rc.cpp:597
 #, fuzzy
 msgid ""
 "<qt>Enter a DCOP Application ID.  This filter will only apply to text jobs "
@@ -873,26 +1145,26 @@ msgstr ""
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:272
 #. i18n: ectx: property (whatsThis), widget (KPushButton, loadButton)
-#: rc.cpp:330
+#: rc.cpp:420
 msgid "Click to load a Sentence Boundary Detection configuration from a file."
 msgstr "Klik untuk memuatkan konfigurasi Pengesan Sempadan Ayat dari fail."
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:275
 #. i18n: ectx: property (text), widget (KPushButton, loadButton)
-#: rc.cpp:333
+#: rc.cpp:423
 #, fuzzy
 msgid "Lo&ad..."
 msgstr "Muatkan..."
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:290
 #. i18n: ectx: property (whatsThis), widget (KPushButton, saveButton)
-#: rc.cpp:336
+#: rc.cpp:426
 msgid "Click to save this Sentence Boundary Detection configuration to a file."
 msgstr "Klik untuk menyimpan konfigurasi Pengesan Sempadan Ayat ke fail."
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:293
 #. i18n: ectx: property (text), widget (KPushButton, saveButton)
-#: rc.cpp:339
+#: rc.cpp:429
 msgid "Sa&ve..."
 msgstr "&Simpan..."
 
@@ -900,7 +1172,7 @@ msgstr "&Simpan..."
 #. i18n: ectx: property (whatsThis), widget (KPushButton, clearButton)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:268
 #. i18n: ectx: property (whatsThis), widget (KPushButton, clearButton)
-#: rc.cpp:342 rc.cpp:537
+#: rc.cpp:432 rc.cpp:627
 msgid "Click to clear everything."
 msgstr "Klik untuk mengosongkan segala-galanya."
 
@@ -908,50 +1180,50 @@ msgstr "Klik untuk mengosongkan segala-galanya."
 #. i18n: ectx: property (text), widget (KPushButton, clearButton)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:271
 #. i18n: ectx: property (text), widget (KPushButton, clearButton)
-#: rc.cpp:345 rc.cpp:540
+#: rc.cpp:435 rc.cpp:630
 msgid "Cl&ear"
 msgstr "&Kosongkan"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:25
 #. i18n: ectx: property (title), widget (QGroupBox, typeGroupBox)
-#: rc.cpp:348
+#: rc.cpp:438
 msgid "&Type"
 msgstr "&Jenis"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:37
 #. i18n: ectx: property (text), widget (QRadioButton, wordRadioButton)
-#: rc.cpp:351
+#: rc.cpp:441
 msgid "&Word"
 msgstr "&Perkataan"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:47
 #. i18n: ectx: property (text), widget (QRadioButton, regexpRadioButton)
-#: rc.cpp:354
+#: rc.cpp:444
 msgid "Regular &expression"
 msgstr "&Ungkapan Biasa"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:65
 #. i18n: ectx: property (text), widget (QLabel, matchLabel)
-#: rc.cpp:357
+#: rc.cpp:447
 msgid "&Match:"
 msgstr "&Padan"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:78
 #. i18n: ectx: property (text), widget (QLabel, substLabel)
-#: rc.cpp:360
+#: rc.cpp:450
 msgid "&Replace with:"
 msgstr "&Gantikan dengan:"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:135
 #. i18n: ectx: property (text), widget (QCheckBox, matchCaseCheckBox)
-#: rc.cpp:366
+#: rc.cpp:456
 #, fuzzy
 msgid "Match &case"
 msgstr "Padan"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, StringReplacerConfWidget)
-#: rc.cpp:369
+#: rc.cpp:459
 msgid "Configure String Replacer"
 msgstr "Konfigur Pengganti Rentetan"
 
@@ -959,7 +1231,7 @@ msgstr "Konfigur Pengganti Rentetan"
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:36
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
-#: rc.cpp:372 rc.cpp:471
+#: rc.cpp:462 rc.cpp:561
 #, fuzzy
 #| msgid "Enter any name you like for this filter."
 msgctxt "What's this text"
@@ -970,19 +1242,19 @@ msgstr "Masukkan sebarang nama yang anda suka bagi penapis ini."
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:52
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
-#: rc.cpp:378 rc.cpp:477
+#: rc.cpp:468 rc.cpp:567
 msgid "Enter any name you like for this filter."
 msgstr "Masukkan sebarang nama yang anda suka bagi penapis ini."
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:84
 #. i18n: ectx: property (text), widget (QLabel, languageLabel)
-#: rc.cpp:387
+#: rc.cpp:477
 msgid "Lan&guage is:"
 msgstr "&Bahasa ialah:"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
-#: rc.cpp:390
+#: rc.cpp:480
 #, fuzzy
 msgid ""
 "Enter a D-Bus Application ID.  This filter will only apply to text jobs "
@@ -1000,7 +1272,7 @@ msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:153
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
-#: rc.cpp:405
+#: rc.cpp:495
 #, fuzzy
 msgid ""
 "<qt>Enter a D-Bus Application ID.  This filter will only apply to text jobs "
@@ -1020,13 +1292,13 @@ msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:181
 #. i18n: ectx: property (whatsThis), widget (KPushButton, loadButton)
-#: rc.cpp:408
+#: rc.cpp:498
 msgid "Click to load a word list from a file."
 msgstr "Klik untuk memuatkan senarai perkataan dari fail."
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:184
 #. i18n: ectx: property (text), widget (KPushButton, loadButton)
-#: rc.cpp:411
+#: rc.cpp:501
 #, fuzzy
 msgctxt "Load a word list from a file"
 msgid "Load"
@@ -1034,26 +1306,26 @@ msgstr "Muatkan..."
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:199
 #. i18n: ectx: property (whatsThis), widget (KPushButton, saveButton)
-#: rc.cpp:414
+#: rc.cpp:504
 msgid "Click to save word list to a file."
 msgstr "Klik untuk menyimpan senarai perkataan ke fail."
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:202
 #. i18n: ectx: property (text), widget (KPushButton, saveButton)
-#: rc.cpp:417
+#: rc.cpp:507
 #, fuzzy
 msgid "&Save"
 msgstr "&Simpan"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:217
 #. i18n: ectx: property (whatsThis), widget (KPushButton, clearButton)
-#: rc.cpp:420
+#: rc.cpp:510
 msgid "Click to empty the word list."
 msgstr "Klik untuk mengosongkan senarai perkataan."
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:220
 #. i18n: ectx: property (text), widget (KPushButton, clearButton)
-#: rc.cpp:423
+#: rc.cpp:513
 #, fuzzy
 msgctxt "Clear the word list"
 msgid "Clear"
@@ -1061,21 +1333,21 @@ msgstr "&Kosongkan"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:253
 #. i18n: ectx: property (whatsThis), widget (KPushButton, addButton)
-#: rc.cpp:426
+#: rc.cpp:516
 msgid "Click to add another word or regular expression to the list."
 msgstr ""
 "Klik untuk menambah perkataan atau ungkapan biasa lain ke dalam senarai."
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:256
 #. i18n: ectx: property (text), widget (KPushButton, addButton)
-#: rc.cpp:429
+#: rc.cpp:519
 #, fuzzy
 msgid "&Add"
 msgstr "&Tambah"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:271
 #. i18n: ectx: property (whatsThis), widget (QPushButton, upButton)
-#: rc.cpp:432
+#: rc.cpp:522
 msgid ""
 "Click to move selected word up in the list.  Words higher in the list are "
 "applied first."
@@ -1085,13 +1357,13 @@ msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:274
 #. i18n: ectx: property (text), widget (QPushButton, upButton)
-#: rc.cpp:435
+#: rc.cpp:525
 msgid "&Up"
 msgstr "&Atas"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:289
 #. i18n: ectx: property (whatsThis), widget (QPushButton, downButton)
-#: rc.cpp:438
+#: rc.cpp:528
 msgid ""
 "Click to move a word down in the list.  Words lower in the list are applied "
 "last."
@@ -1101,7 +1373,7 @@ msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:310
 #. i18n: ectx: property (whatsThis), widget (KPushButton, editButton)
-#: rc.cpp:444
+#: rc.cpp:534
 msgid "Click to modify an existing word or regular expression in the list."
 msgstr ""
 "Klik untuk mengubah suai perkataan sedia ada atau ungkapan biasa dalam "
@@ -1109,57 +1381,57 @@ msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:313
 #. i18n: ectx: property (text), widget (KPushButton, editButton)
-#: rc.cpp:447
+#: rc.cpp:537
 #, fuzzy
 msgid "&Edit"
 msgstr "&Edit..."
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:331
 #. i18n: ectx: property (whatsThis), widget (KPushButton, removeButton)
-#: rc.cpp:450
+#: rc.cpp:540
 msgid "Click to remove a word or regular expression from the list."
 msgstr "Klik untuk membuang perkataan atau ungkapan biasa dari senarai."
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:372
 #. i18n: ectx: property (text), widget (QTableWidget, substLView)
-#: rc.cpp:456
+#: rc.cpp:546
 msgid "Type"
 msgstr "Jenis"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:377
 #. i18n: ectx: property (text), widget (QTableWidget, substLView)
-#: rc.cpp:459
+#: rc.cpp:549
 #, fuzzy
 msgid "Match Case"
 msgstr "Padan"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:382
 #. i18n: ectx: property (text), widget (QTableWidget, substLView)
-#: rc.cpp:462
+#: rc.cpp:552
 msgid "Match"
 msgstr "Padan"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:387
 #. i18n: ectx: property (text), widget (QTableWidget, substLView)
-#: rc.cpp:465
+#: rc.cpp:555
 msgid "Replace With"
 msgstr "Gantikan Dengan"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, TalkerChooserConfWidget)
-#: rc.cpp:468
+#: rc.cpp:558
 msgid "Configure Talker Chooser"
 msgstr "Konfigur Pemilih Penutur"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:64
 #. i18n: ectx: property (title), widget (QGroupBox, applyGroupBox)
-#: rc.cpp:483
+#: rc.cpp:573
 msgid "&Apply This Filter When"
 msgstr "&Laksanakan Penapis Ini Apabila "
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:84
 #. i18n: ectx: property (whatsThis), widget (QLabel, reLabel)
-#: rc.cpp:486
+#: rc.cpp:576
 #, fuzzy
 #| msgid ""
 #| "This filter is applied to text jobs of the specified language.  You may "
@@ -1180,13 +1452,13 @@ msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:87
 #. i18n: ectx: property (text), widget (QLabel, reLabel)
-#: rc.cpp:489
+#: rc.cpp:579
 msgid "Te&xt contains:"
 msgstr "&Teks mengandungi:"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:134
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, reLineEdit)
-#: rc.cpp:498
+#: rc.cpp:588
 msgid ""
 "This filter is applied to text jobs of the specified language.  You may "
 "select more than one language by clicking the browse button and Ctrl-"
@@ -1202,7 +1474,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QLabel, talkerLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:197
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, talkerLineEdit)
-#: rc.cpp:510 rc.cpp:516
+#: rc.cpp:600 rc.cpp:606
 msgid ""
 "The new Talker that will be used when the conditions above are met.  The "
 "default Talker is the topmost in the Talkers tab.  Click the button to "
@@ -1214,49 +1486,49 @@ msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:184
 #. i18n: ectx: property (text), widget (QLabel, talkerLabel)
-#: rc.cpp:513
+#: rc.cpp:603
 msgid "&Talker:"
 msgstr "&Penutur:"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:204
 #. i18n: ectx: property (whatsThis), widget (KPushButton, talkerButton)
-#: rc.cpp:519
+#: rc.cpp:609
 msgid "Click to select a Talker."
 msgstr "Klik untuk memilih Penutur."
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:232
 #. i18n: ectx: property (whatsThis), widget (KPushButton, loadButton)
-#: rc.cpp:525
+#: rc.cpp:615
 msgid "Click to load a Talker Chooser configuration from a file."
 msgstr "Klik untuk memuatkan konfigur Pemilih Penutur dari fail."
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:235
 #. i18n: ectx: property (text), widget (KPushButton, loadButton)
-#: rc.cpp:528
+#: rc.cpp:618
 msgid "&Load..."
 msgstr "&Muat"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:250
 #. i18n: ectx: property (whatsThis), widget (KPushButton, saveButton)
-#: rc.cpp:531
+#: rc.cpp:621
 msgid "Click to save this Talker Chooser to a file."
 msgstr "Klik untuk menyimpan Pemilih Penutur ke dalam fail."
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:253
 #. i18n: ectx: property (text), widget (KPushButton, saveButton)
-#: rc.cpp:534
+#: rc.cpp:624
 msgid "&Save..."
 msgstr "&Simpan"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, XmlTransformerConfWidget)
-#: rc.cpp:543
+#: rc.cpp:633
 msgid "Configure XML Transformer"
 msgstr "Konfigur Transformer XML"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:44
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
-#: rc.cpp:546
+#: rc.cpp:636
 msgid "Enter any descriptive name you like for this filter."
 msgstr "Masukkan sebarang nama deskriptif yang anda suka untuk penapis ini."
 
@@ -1264,7 +1536,7 @@ msgstr "Masukkan sebarang nama deskriptif yang anda suka untuk penapis ini."
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, xsltPath)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:107
 #. i18n: ectx: property (whatsThis), widget (QLabel, xsltLabel)
-#: rc.cpp:549 rc.cpp:561
+#: rc.cpp:639 rc.cpp:651
 msgid ""
 "Enter the full path to an XML Style Language - Transforms (XSLT) stylesheet "
 "file.  XSLT files usually end with extension .xsl."
@@ -1276,7 +1548,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, xsltprocPath)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:123
 #. i18n: ectx: property (whatsThis), widget (QLabel, xsltprocLabel)
-#: rc.cpp:552 rc.cpp:567
+#: rc.cpp:642 rc.cpp:657
 msgid ""
 "Enter the path to the xsltproc executable program.  If it is in the PATH "
 "environment variable, just enter \"xsltproc\"."
@@ -1286,7 +1558,7 @@ msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:91
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
-#: rc.cpp:555
+#: rc.cpp:645
 #, fuzzy
 #| msgid "Enter any descriptive name you like for this filter."
 msgctxt "What's this text"
@@ -1295,19 +1567,19 @@ msgstr "Masukkan sebarang nama deskriptif yang anda suka untuk penapis ini."
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:110
 #. i18n: ectx: property (text), widget (QLabel, xsltLabel)
-#: rc.cpp:564
+#: rc.cpp:654
 msgid "&XSLT file:"
 msgstr "Fail &XSLT:"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:126
 #. i18n: ectx: property (text), widget (QLabel, xsltprocLabel)
-#: rc.cpp:570
+#: rc.cpp:660
 msgid "xsltproc &executable:"
 msgstr "xsltproc &boleh laksana:"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:172
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, rootElementLineEdit)
-#: rc.cpp:579
+#: rc.cpp:669
 #, fuzzy
 msgid ""
 "This filter will be applied only to text having the specified XML root "
@@ -1323,7 +1595,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, doctypeLineEdit)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:235
 #. i18n: ectx: property (whatsThis), widget (QLabel, doctypeLabel)
-#: rc.cpp:582 rc.cpp:594
+#: rc.cpp:672 rc.cpp:684
 #, fuzzy
 msgid ""
 "This filter will be applied only to text having the specified DOCTYPE "
@@ -1339,7 +1611,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:251
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
-#: rc.cpp:585 rc.cpp:600
+#: rc.cpp:675 rc.cpp:690
 #, fuzzy
 msgid ""
 "<qt>Enter a D-Bus Application ID.  This filter will only apply to text "
@@ -1359,7 +1631,7 @@ msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:219
 #. i18n: ectx: property (whatsThis), widget (QLabel, rootElementLabel)
-#: rc.cpp:588
+#: rc.cpp:678
 #, fuzzy
 msgctxt "What's this text"
 msgid ""
@@ -1374,39 +1646,39 @@ msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:222
 #. i18n: ectx: property (text), widget (QLabel, rootElementLabel)
-#: rc.cpp:591
+#: rc.cpp:681
 msgid "&Root element is:"
 msgstr "Unsur &Root ialah:"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:238
 #. i18n: ectx: property (text), widget (QLabel, doctypeLabel)
-#: rc.cpp:597
+#: rc.cpp:687
 #, fuzzy
 msgid "or DOC&TYPE is:"
 msgstr "DOC&TYPE ialah:"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:254
 #. i18n: ectx: property (text), widget (QLabel, appIdLabel)
-#: rc.cpp:603
+#: rc.cpp:693
 #, fuzzy
 msgid "and Application &ID contains:"
 msgstr "&ID Aplikasi mengandungi:"
 
 #. i18n: file: plugins/command/commandconfwidget.ui:25
 #. i18n: ectx: property (title), widget (QGroupBox, confiurationBox)
-#: rc.cpp:606
+#: rc.cpp:696
 msgid "Co&mmand Configuration"
 msgstr "Konfigurasi &Arahan"
 
 #. i18n: file: plugins/command/commandconfwidget.ui:47
 #. i18n: ectx: property (text), widget (QLabel, urlLabel)
-#: rc.cpp:609
+#: rc.cpp:699
 msgid "Command &for speaking texts:"
 msgstr "Arahan &untuk teks cakap:"
 
 #. i18n: file: plugins/command/commandconfwidget.ui:57
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, urlReq)
-#: rc.cpp:613
+#: rc.cpp:703
 #, no-c-format
 msgid ""
 "This field specifies both the command used for speaking texts and its "
@@ -1423,13 +1695,13 @@ msgstr ""
 
 #. i18n: file: plugins/command/commandconfwidget.ui:69
 #. i18n: ectx: property (text), widget (QCheckBox, stdInButton)
-#: rc.cpp:616
+#: rc.cpp:706
 msgid "&Send the data as standard input"
 msgstr "&Hantar data sebagai input standard"
 
 #. i18n: file: plugins/command/commandconfwidget.ui:72
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, stdInButton)
-#: rc.cpp:619
+#: rc.cpp:709
 msgid ""
 "This check box specifies whether the text is sent as standard input (stdin) "
 "to the speech synthesizer."
@@ -1447,7 +1719,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, fliteTest)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:499
 #. i18n: ectx: property (text), widget (KPushButton, testButton)
-#: rc.cpp:622 rc.cpp:731 rc.cpp:821 rc.cpp:857 rc.cpp:974
+#: rc.cpp:712 rc.cpp:821 rc.cpp:911 rc.cpp:947 rc.cpp:1064
 msgid "&Test"
 msgstr "&Uji"
 
@@ -1457,7 +1729,7 @@ msgstr "&Uji"
 #. i18n: ectx: property (text), widget (QLabel, characterCodingLabel)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:445
 #. i18n: ectx: property (text), widget (QLabel, characterCodingLabel)
-#: rc.cpp:625 rc.cpp:651 rc.cpp:968
+#: rc.cpp:715 rc.cpp:741 rc.cpp:1058
 msgid "Character &encoding:"
 msgstr "&Pengekodan Aksara"
 
@@ -1465,7 +1737,7 @@ msgstr "&Pengekodan Aksara"
 #. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:495
 #. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
-#: rc.cpp:628 rc.cpp:830
+#: rc.cpp:718 rc.cpp:920
 msgid ""
 "This combo box specifies which character encoding is used for passing the "
 "text."
@@ -1475,7 +1747,7 @@ msgstr ""
 
 #. i18n: file: plugins/command/commandconfwidget.ui:148
 #. i18n: ectx: property (text), widget (QLabel, explanationLabel)
-#: rc.cpp:632
+#: rc.cpp:722
 #, no-c-format
 msgid ""
 "Parameters:\n"
@@ -1492,7 +1764,7 @@ msgstr ""
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:24
 #. i18n: ectx: property (windowTitle), widget (QWidget, EposConfWidget)
-#: rc.cpp:639
+#: rc.cpp:729
 msgid "Epos Config UI"
 msgstr "Epos Config UI"
 
@@ -1500,7 +1772,7 @@ msgstr "Epos Config UI"
 #. i18n: ectx: property (whatsThis), widget (QWidget, EposConfWidget)
 #. i18n: file: plugins/epos/eposconfwidget.ui:47
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, eposConfigurationBox)
-#: rc.cpp:642 rc.cpp:645
+#: rc.cpp:732 rc.cpp:735
 msgid ""
 "This is the configuration dialog for the Epos Czech and Slovak speech "
 "synthesizer."
@@ -1509,13 +1781,13 @@ msgstr ""
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:50
 #. i18n: ectx: property (title), widget (QGroupBox, eposConfigurationBox)
-#: rc.cpp:648
+#: rc.cpp:738
 msgid "E&pos Configuration"
 msgstr "Konfigurasi &Epos"
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:96
 #. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
-#: rc.cpp:654
+#: rc.cpp:744
 msgid "Specifies which character encoding is used for passing the text."
 msgstr ""
 "Menyatakan pengekodan aksara mana yang digunakan untuk menghantar teks."
@@ -1526,7 +1798,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, timeBox)
 #. i18n: file: plugins/epos/eposconfwidget.ui:249
 #. i18n: ectx: property (whatsThis), widget (QSlider, timeSlider)
-#: rc.cpp:657 rc.cpp:669 rc.cpp:683
+#: rc.cpp:747 rc.cpp:759 rc.cpp:773
 msgid ""
 "Sets the speed of speech.  Slide the slider to the left to slow speech down; "
 "to the right to increase talking speed.  Anything less than 75 percent is "
@@ -1542,7 +1814,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, timeLabel)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:209
 #. i18n: ectx: property (text), widget (QLabel, timeLabel)
-#: rc.cpp:660 rc.cpp:915
+#: rc.cpp:750 rc.cpp:1005
 msgid "Speed:"
 msgstr "Kelajuan:"
 
@@ -1552,7 +1824,7 @@ msgstr "Kelajuan:"
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, frequencyBox)
 #. i18n: file: plugins/epos/eposconfwidget.ui:277
 #. i18n: ectx: property (whatsThis), widget (QSlider, frequencySlider)
-#: rc.cpp:663 rc.cpp:676 rc.cpp:686
+#: rc.cpp:753 rc.cpp:766 rc.cpp:776
 msgid ""
 "Sets the tone (frequency) of speech.  Slide the slider to the left to lower "
 "the voice tone; to the right to increase tone.  Anything less than 75 "
@@ -1565,7 +1837,7 @@ msgstr ""
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:153
 #. i18n: ectx: property (text), widget (QLabel, frequencyLabel)
-#: rc.cpp:666
+#: rc.cpp:756
 msgid "Pitch:"
 msgstr "Pic:"
 
@@ -1573,7 +1845,7 @@ msgstr "Pic:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, eposServerPathLabel)
 #. i18n: file: plugins/epos/eposconfwidget.ui:385
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, eposServerPath)
-#: rc.cpp:689 rc.cpp:701
+#: rc.cpp:779 rc.cpp:791
 msgid ""
 "If the Epos server program will be found due to your PATH environment "
 "variable, simply enter \"epos\", otherwise enter the full path to the Epos "
@@ -1585,7 +1857,7 @@ msgstr ""
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:330
 #. i18n: ectx: property (text), widget (QLabel, eposServerPathLabel)
-#: rc.cpp:692
+#: rc.cpp:782
 msgid "Epos server executable path:"
 msgstr "Laluan boleh laksana pelayan Epos:"
 
@@ -1593,7 +1865,7 @@ msgstr "Laluan boleh laksana pelayan Epos:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, eposClientPathLabel)
 #. i18n: file: plugins/epos/eposconfwidget.ui:400
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, eposClientPath)
-#: rc.cpp:695 rc.cpp:704
+#: rc.cpp:785 rc.cpp:794
 msgid ""
 "If the Epos client program will be found due to the PATH environment "
 "variable, simply enter \"say\" here.  Otherwise, specify the full path to "
@@ -1605,13 +1877,13 @@ msgstr ""
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:354
 #. i18n: ectx: property (text), widget (QLabel, eposClientPathLabel)
-#: rc.cpp:698
+#: rc.cpp:788
 msgid "Epos client executable path:"
 msgstr "Laluan boleh laksana pelanggan Epos:"
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:411
 #. i18n: ectx: property (title), widget (QGroupBox, advancedGroupBox)
-#: rc.cpp:707
+#: rc.cpp:797
 msgid "Additional Options (advanced)"
 msgstr "Opsyen Tambahan (termaju)"
 
@@ -1619,7 +1891,7 @@ msgstr "Opsyen Tambahan (termaju)"
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, eposServerOptions)
 #. i18n: file: plugins/epos/eposconfwidget.ui:471
 #. i18n: ectx: property (whatsThis), widget (QLabel, eposServerOptionsLabel)
-#: rc.cpp:710 rc.cpp:716
+#: rc.cpp:800 rc.cpp:806
 msgid ""
 "Optional.  Enter any server command line options here.  To see available "
 "options, enter \"epos -h\" in a terminal.  Do not use \"-o\"."
@@ -1632,7 +1904,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, eposClientOptions)
 #. i18n: file: plugins/epos/eposconfwidget.ui:495
 #. i18n: ectx: property (whatsThis), widget (QLabel, eposClientOptionsLabel)
-#: rc.cpp:713 rc.cpp:722
+#: rc.cpp:803 rc.cpp:812
 msgid ""
 "Specify options to be passed to Epos client.  To see available options, "
 "enter \"say -h\" in a terminal.  Do not use \"-o\"."
@@ -1642,19 +1914,19 @@ msgstr ""
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:474
 #. i18n: ectx: property (text), widget (QLabel, eposServerOptionsLabel)
-#: rc.cpp:719
+#: rc.cpp:809
 msgid "Epos server:"
 msgstr "Pelayan Epos:"
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:498
 #. i18n: ectx: property (text), widget (QLabel, eposClientOptionsLabel)
-#: rc.cpp:725
+#: rc.cpp:815
 msgid "Epos client:"
 msgstr "Pelanggan Epos:"
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:542
 #. i18n: ectx: property (whatsThis), widget (QPushButton, eposTest)
-#: rc.cpp:728
+#: rc.cpp:818
 msgid ""
 "Click to test the configuration.  If correct, you will hear a sentence "
 "spoken."
@@ -1663,7 +1935,7 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:24
 #. i18n: ectx: property (windowTitle), widget (QWidget, FestivalIntConfWidget)
-#: rc.cpp:734
+#: rc.cpp:824
 msgid "Festival Config UI"
 msgstr "Festival Config UI"
 
@@ -1671,7 +1943,7 @@ msgstr "Festival Config UI"
 #. i18n: ectx: property (whatsThis), widget (QWidget, FestivalIntConfWidget)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:44
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, festivalConfigurationBox)
-#: rc.cpp:737 rc.cpp:743
+#: rc.cpp:827 rc.cpp:833
 msgid ""
 "This is the dialog for configuring the Festival speech synthesizer in "
 "interactive mode."
@@ -1681,13 +1953,13 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:41
 #. i18n: ectx: property (title), widget (QGroupBox, festivalConfigurationBox)
-#: rc.cpp:740
+#: rc.cpp:830
 msgid "Festival &Interactive Configuration"
 msgstr "Konfigurasi &Interaktif Festival"
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:72
 #. i18n: ectx: property (text), widget (QLabel, festivalPathLabel)
-#: rc.cpp:746
+#: rc.cpp:836
 msgid "&Festival executable:"
 msgstr "&Festival boleh laksana:"
 
@@ -1695,7 +1967,7 @@ msgstr "&Festival boleh laksana:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, festivalPathLabel)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:96
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, festivalPath)
-#: rc.cpp:749 rc.cpp:752
+#: rc.cpp:839 rc.cpp:842
 msgid ""
 "If Festival is in your PATH environment variable, just enter \"festival\", "
 "otherwise specify the full path to the Festival executable program."
@@ -1706,7 +1978,7 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:113
 #. i18n: ectx: property (text), widget (QLabel, selectVoiceLabel)
-#: rc.cpp:755
+#: rc.cpp:845
 msgid "&Select voice:"
 msgstr "&Pilih suara:"
 
@@ -1714,7 +1986,7 @@ msgstr "&Pilih suara:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, selectVoiceLabel)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:137
 #. i18n: ectx: property (whatsThis), widget (KComboBox, selectVoiceCombo)
-#: rc.cpp:758 rc.cpp:761
+#: rc.cpp:848 rc.cpp:851
 msgid ""
 "Select a voice to speak text with.  MultiSyn voices are high quality but are "
 "slow to load.  If no voices are shown, check the Festival executable path.  "
@@ -1730,7 +2002,7 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:144
 #. i18n: ectx: property (text), widget (KPushButton, rescan)
-#: rc.cpp:764
+#: rc.cpp:854
 #, fuzzy
 #| msgid "&Rescan"
 msgctxt "Rescan for voices"
@@ -1743,7 +2015,7 @@ msgstr "&Imbas semula"
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, volumeBox)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:354
 #. i18n: ectx: property (whatsThis), widget (QSlider, volumeSlider)
-#: rc.cpp:770 rc.cpp:789 rc.cpp:806
+#: rc.cpp:860 rc.cpp:879 rc.cpp:896
 msgid ""
 "Sets the volume (loudness) of speech.  Slide the slider to the left to lower "
 "the volume; to the right to increase volume.  Anything less than 75 percent "
@@ -1757,7 +2029,7 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:192
 #. i18n: ectx: property (text), widget (QLabel, timeLabel)
-#: rc.cpp:773
+#: rc.cpp:863
 msgid "Sp&eed:"
 msgstr "&Kelajuan:"
 
@@ -1765,7 +2037,7 @@ msgstr "&Kelajuan:"
 #. i18n: ectx: property (text), widget (QLabel, frequencyLabel)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:288
 #. i18n: ectx: property (text), widget (QLabel, frequencyLabel)
-#: rc.cpp:779 rc.cpp:931
+#: rc.cpp:869 rc.cpp:1021
 msgid "&Pitch:"
 msgstr "&Pic:"
 
@@ -1775,7 +2047,7 @@ msgstr "&Pic:"
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, frequencyBox)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:410
 #. i18n: ectx: property (whatsThis), widget (QSlider, frequencySlider)
-#: rc.cpp:782 rc.cpp:803 rc.cpp:812
+#: rc.cpp:872 rc.cpp:893 rc.cpp:902
 msgid ""
 "Sets the tone (frequency) of speech.  Slide the slider to the left to lower "
 "the voice tone; to the right to increase tone.  Anything less than 75 "
@@ -1790,13 +2062,13 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:426
 #. i18n: ectx: property (text), widget (QCheckBox, preloadCheckBox)
-#: rc.cpp:815
+#: rc.cpp:905
 msgid "&Load this voice when starting KTTSD"
 msgstr "&Muatkan suara ini apabila memulakan KTTSD"
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:429
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, preloadCheckBox)
-#: rc.cpp:818
+#: rc.cpp:908
 #, fuzzy
 #| msgid ""
 #| "If checked, Festival will be started and this voice will be loaded when "
@@ -1816,7 +2088,7 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:455
 #. i18n: ectx: property (whatsThis), widget (QPushButton, testButton)
-#: rc.cpp:824
+#: rc.cpp:914
 msgid ""
 "Click to test the configuration.  Festival will be started and a test "
 "sentence will be spoken."
@@ -1826,13 +2098,13 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:477
 #. i18n: ectx: property (text), widget (QLabel, characterCodingLabel)
-#: rc.cpp:827
+#: rc.cpp:917
 msgid "Character e&ncoding:"
 msgstr "&Pengekodan aksara:"
 
 #. i18n: file: plugins/flite/fliteconfwidget.ui:24
 #. i18n: ectx: property (windowTitle), widget (QWidget, FliteConfWidget)
-#: rc.cpp:833
+#: rc.cpp:923
 msgid "Flite Config UI"
 msgstr "Flite Config UI"
 
@@ -1840,7 +2112,7 @@ msgstr "Flite Config UI"
 #. i18n: ectx: property (whatsThis), widget (QWidget, FliteConfWidget)
 #. i18n: file: plugins/flite/fliteconfwidget.ui:60
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, fliteConfigurationBox)
-#: rc.cpp:836 rc.cpp:842
+#: rc.cpp:926 rc.cpp:932
 msgid ""
 "This is the configuration dialog for the Festival Lite (Flite) speech "
 "synthesis engine."
@@ -1850,13 +2122,13 @@ msgstr ""
 
 #. i18n: file: plugins/flite/fliteconfwidget.ui:57
 #. i18n: ectx: property (title), widget (QGroupBox, fliteConfigurationBox)
-#: rc.cpp:839
+#: rc.cpp:929
 msgid "Festival &Lite (flite) Configuration"
 msgstr "Konfigurasi Festival &Lite (flite) "
 
 #. i18n: file: plugins/flite/fliteconfwidget.ui:88
 #. i18n: ectx: property (text), widget (QLabel, flitePathLabel)
-#: rc.cpp:845
+#: rc.cpp:935
 msgid "&Flite executable path:"
 msgstr "Laluan boleh laksana &Flite:"
 
@@ -1864,7 +2136,7 @@ msgstr "Laluan boleh laksana &Flite:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, flitePathLabel)
 #. i18n: file: plugins/flite/fliteconfwidget.ui:115
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, flitePath)
-#: rc.cpp:848 rc.cpp:854
+#: rc.cpp:938 rc.cpp:944
 msgid ""
 "If Flite is in your PATH environment variable, simply enter \"flite\", "
 "otherwise specify the complete path to the Flite executable program."
@@ -1874,31 +2146,31 @@ msgstr ""
 
 #. i18n: file: plugins/flite/fliteconfwidget.ui:112
 #. i18n: ectx: property (url), widget (KUrlRequester, flitePath)
-#: rc.cpp:851
+#: rc.cpp:941
 msgid "flite"
 msgstr "flite"
 
 #. i18n: file: plugins/freetts/freettsconfigwidget.ui:24
 #. i18n: ectx: property (windowTitle), widget (QWidget, FreeTTSConfWidget)
-#: rc.cpp:860
+#: rc.cpp:950
 msgid "FreeTTS Config UI"
 msgstr "FreeTTS Config UI"
 
 #. i18n: file: plugins/freetts/freettsconfigwidget.ui:54
 #. i18n: ectx: property (title), widget (QGroupBox, freettsConfigurationBox)
-#: rc.cpp:863
+#: rc.cpp:953
 msgid "FreeTTS Interactive Configuration"
 msgstr "Konfigurasi Interaktif FreeTTS"
 
 #. i18n: file: plugins/freetts/freettsconfigwidget.ui:82
 #. i18n: ectx: property (text), widget (QLabel, freettsPathLabel)
-#: rc.cpp:866
+#: rc.cpp:956
 msgid "&FreeTTS jar file:"
 msgstr "Fail &FreeTTS jar:"
 
 #. i18n: file: plugins/freetts/freettsconfigwidget.ui:143
 #. i18n: ectx: property (text), widget (QPushButton, freettsTest)
-#: rc.cpp:869
+#: rc.cpp:959
 #, fuzzy
 #| msgid "Test"
 msgctxt "Test the settings"
@@ -1907,7 +2179,7 @@ msgstr "Uji"
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, HadifixConfigUI)
-#: rc.cpp:872
+#: rc.cpp:962
 msgid "Hadifix Configuration"
 msgstr "Konfigurasi Hadifix "
 
@@ -1915,7 +2187,7 @@ msgstr "Konfigurasi Hadifix "
 #. i18n: ectx: property (whatsThis), widget (QWidget, HadifixConfigUI)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:42
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, GroupBox4)
-#: rc.cpp:875 rc.cpp:881
+#: rc.cpp:965 rc.cpp:971
 msgid ""
 "This is the configuration dialog for the Hadifix (txt2pho and Mbrola) speech "
 "synthesizer."
@@ -1925,19 +2197,19 @@ msgstr ""
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:39
 #. i18n: ectx: property (title), widget (QGroupBox, GroupBox4)
-#: rc.cpp:878
+#: rc.cpp:968
 msgid "Had&ifix Configuration"
 msgstr "Konfigurasi Had&ifix"
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:62
 #. i18n: ectx: property (title), widget (QGroupBox, basicOptions)
-#: rc.cpp:884
+#: rc.cpp:974
 msgid "&Basic Options"
 msgstr "Opsyen &Asas"
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:76
 #. i18n: ectx: property (text), widget (QLabel, voiceLabel)
-#: rc.cpp:887
+#: rc.cpp:977
 msgid "&Voice file:"
 msgstr "Fail &Suara:"
 
@@ -1945,7 +2217,7 @@ msgstr "Fail &Suara:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, voiceLabel)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:97
 #. i18n: ectx: property (whatsThis), widget (KComboBox, voiceCombo)
-#: rc.cpp:890 rc.cpp:893
+#: rc.cpp:980 rc.cpp:983
 msgid ""
 "Select a voice for speaking text.  If no voices are listed, check your "
 "Mbrola configuration.  You must install at least one voice."
@@ -1955,13 +2227,13 @@ msgstr ""
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:112
 #. i18n: ectx: property (text), widget (KPushButton, voiceButton)
-#: rc.cpp:896
+#: rc.cpp:986
 msgid "&Select..."
 msgstr "&Pilih..."
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:127
 #. i18n: ectx: property (text), widget (QLabel, volumeLabel)
-#: rc.cpp:899
+#: rc.cpp:989
 msgid "Volume &ratio:"
 msgstr "&Kadar volum:"
 
@@ -1971,7 +2243,7 @@ msgstr "&Kadar volum:"
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, volumeBox)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:194
 #. i18n: ectx: property (whatsThis), widget (QSlider, volumeSlider)
-#: rc.cpp:902 rc.cpp:909 rc.cpp:912
+#: rc.cpp:992 rc.cpp:999 rc.cpp:1002
 msgid ""
 "Adjusts the volume of speech.  Slide to left for softer speech; to the right "
 "for louder."
@@ -1985,7 +2257,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, timeBox)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:273
 #. i18n: ectx: property (whatsThis), widget (QSlider, timeSlider)
-#: rc.cpp:918 rc.cpp:925 rc.cpp:928
+#: rc.cpp:1008 rc.cpp:1015 rc.cpp:1018
 msgid ""
 "Adjusts the speed of speech.  Slide to left for slower speech; to the right "
 "for faster."
@@ -1999,7 +2271,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, frequencyBox)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:346
 #. i18n: ectx: property (whatsThis), widget (QSlider, frequencySlider)
-#: rc.cpp:934 rc.cpp:941 rc.cpp:944
+#: rc.cpp:1024 rc.cpp:1031 rc.cpp:1034
 msgid ""
 "Adjusts the pitch (tone) of speech.  Slide to left for lower speech; to the "
 "right for higher."
@@ -2009,13 +2281,13 @@ msgstr ""
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:364
 #. i18n: ectx: property (title), widget (QGroupBox, advancedOptions)
-#: rc.cpp:947
+#: rc.cpp:1037
 msgid "&Advanced Options"
 msgstr "Opsyen &Lanjutan"
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:376
 #. i18n: ectx: property (text), widget (QLabel, hadifixBinLabel)
-#: rc.cpp:950
+#: rc.cpp:1040
 msgid "txt2pho e&xecutable:"
 msgstr "txt2pho &boleh laksana:"
 
@@ -2023,7 +2295,7 @@ msgstr "txt2pho &boleh laksana:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, hadifixBinLabel)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:397
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, hadifixURL)
-#: rc.cpp:953 rc.cpp:956
+#: rc.cpp:1043 rc.cpp:1046
 msgid ""
 "If the txt2pho program is in your PATH environment variable, simply enter "
 "\"txt2pho\", otherwise specify the full path to the txt2pho executable "
@@ -2035,7 +2307,7 @@ msgstr ""
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:404
 #. i18n: ectx: property (text), widget (QLabel, mbrolaBinLabel)
-#: rc.cpp:959
+#: rc.cpp:1049
 msgid "&Mbrola executable:"
 msgstr "&Mbrola boleh laksana:"
 
@@ -2043,7 +2315,7 @@ msgstr "&Mbrola boleh laksana:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, mbrolaBinLabel)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:425
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, mbrolaURL)
-#: rc.cpp:962 rc.cpp:965
+#: rc.cpp:1052 rc.cpp:1055
 msgid ""
 "If the Mbrola program is in your PATH environment variable, simply enter "
 "\"mbrola\", otherwise specify the full path to the Mbrola executable program."
@@ -2054,7 +2326,7 @@ msgstr ""
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:463
 #. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
-#: rc.cpp:971
+#: rc.cpp:1061
 msgid ""
 "This combo box specifies which character encoding is used for passing the "
 "text.  For most western languages, use ISO-8859-1.  For Hungarian, use ISO-"
@@ -2066,32 +2338,32 @@ msgstr ""
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:502
 #. i18n: ectx: property (whatsThis), widget (KPushButton, testButton)
-#: rc.cpp:977
+#: rc.cpp:1067
 msgid "Click to test the configuration.  You should hear a spoken sentence."
 msgstr ""
 "Kilik untuk menguji konfigurasi. Anda sepatutnya dengar ayat dituturkan."
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, VoiceFileWidget)
-#: rc.cpp:980
+#: rc.cpp:1070
 msgid "Selecting Voice File"
 msgstr "Memilih Fail Suara"
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:28
 #. i18n: ectx: property (text), widget (QLabel, voiceFileLabel)
-#: rc.cpp:983
+#: rc.cpp:1073
 msgid "Path of the voice file:"
 msgstr "Laluan fail suara:"
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:45
 #. i18n: ectx: property (title), widget (QGroupBox, genderOption)
-#: rc.cpp:986 libkttsd/talkerlistmodel.cpp:124
+#: rc.cpp:1076 libkttsd/talkerlistmodel.cpp:124
 msgid "Gender"
 msgstr "Jantina"
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:57
 #. i18n: ectx: property (text), widget (QRadioButton, femaleOption)
-#: rc.cpp:989
+#: rc.cpp:1079
 #, fuzzy
 #| msgid "Female"
 msgctxt "Female, as option for gender"
@@ -2100,7 +2372,7 @@ msgstr "Perempuan"
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:64
 #. i18n: ectx: property (text), widget (QRadioButton, maleOption)
-#: rc.cpp:992
+#: rc.cpp:1082
 #, fuzzy
 #| msgid "Male"
 msgctxt "Male, as option for gender"
@@ -2109,7 +2381,7 @@ msgstr "Lelaki"
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:71
 #. i18n: ectx: property (text), widget (KPushButton, genderButton)
-#: rc.cpp:995
+#: rc.cpp:1085
 msgid "Try to Determine From Voice File"
 msgstr "Cuba Tentukan Dari Fail Suara"
 
@@ -2120,21 +2392,21 @@ msgstr "Cuba Tentukan Dari Fail Suara"
 #. i18n: file: plugins/festivalint/voices:532
 #. i18n: file: plugins/festivalint/voices:556
 #. i18n: file: plugins/festivalint/voices:592
-#: rc.cpp:997 rc.cpp:999 rc.cpp:1075 rc.cpp:1079 rc.cpp:1083 rc.cpp:1087
-#: rc.cpp:1093
+#: rc.cpp:1087 rc.cpp:1089 rc.cpp:1165 rc.cpp:1169 rc.cpp:1173 rc.cpp:1177
+#: rc.cpp:1183
 msgctxt "FestivalVoiceName"
 msgid "American Male"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:38
-#: rc.cpp:1001
+#: rc.cpp:1091
 msgctxt "FestivalVoiceName"
 msgid "American Female, MBROLA"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:50
 #. i18n: file: plugins/festivalint/voices:62
-#: rc.cpp:1003 rc.cpp:1005
+#: rc.cpp:1093 rc.cpp:1095
 msgctxt "FestivalVoiceName"
 msgid "American Male, MBROLA"
 msgstr ""
@@ -2142,7 +2414,7 @@ msgstr ""
 #. i18n: file: plugins/festivalint/voices:74
 #. i18n: file: plugins/festivalint/voices:86
 #. i18n: file: plugins/festivalint/voices:604
-#: rc.cpp:1007 rc.cpp:1009 rc.cpp:1095
+#: rc.cpp:1097 rc.cpp:1099 rc.cpp:1185
 #, fuzzy
 #| msgctxt "FestivalVoiceName"
 #| msgid "British Male, OGC"
@@ -2151,7 +2423,7 @@ msgid "British Male"
 msgstr "Lelaki British, OGC"
 
 #. i18n: file: plugins/festivalint/voices:98
-#: rc.cpp:1011
+#: rc.cpp:1101
 msgctxt "FestivalVoiceName"
 msgid "Castilian Spanish Male"
 msgstr ""
@@ -2159,25 +2431,25 @@ msgstr ""
 #. i18n: file: plugins/festivalint/voices:110
 #. i18n: file: plugins/festivalint/voices:158
 #. i18n: file: plugins/festivalint/voices:170
-#: rc.cpp:1013 rc.cpp:1021 rc.cpp:1023
+#: rc.cpp:1103 rc.cpp:1111 rc.cpp:1113
 msgctxt "FestivalVoiceName"
 msgid "American Male, HTS"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:122
-#: rc.cpp:1015
+#: rc.cpp:1105
 msgctxt "FestivalVoiceName"
 msgid "American Female, HTS"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:134
-#: rc.cpp:1017
+#: rc.cpp:1107
 msgctxt "FestivalVoiceName"
 msgid "Canadian English Male, HTS"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:146
-#: rc.cpp:1019
+#: rc.cpp:1109
 #, fuzzy
 #| msgctxt "FestivalVoiceName"
 #| msgid "British Male, OGC"
@@ -2186,32 +2458,32 @@ msgid "Scottish Male, HTS"
 msgstr "Lelaki British, OGC"
 
 #. i18n: file: plugins/festivalint/voices:182
-#: rc.cpp:1025
+#: rc.cpp:1115
 msgctxt "FestivalVoiceName"
 msgid "Canadian English Male, MultiSyn"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:194
-#: rc.cpp:1027
+#: rc.cpp:1117
 msgctxt "FestivalVoiceName"
 msgid "Scottish Male, MultiSyn"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:206
 #. i18n: file: plugins/festivalint/voices:230
-#: rc.cpp:1029 rc.cpp:1033
+#: rc.cpp:1119 rc.cpp:1123
 msgctxt "FestivalVoiceName"
 msgid "German Female, Festival"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:218
-#: rc.cpp:1031
+#: rc.cpp:1121
 msgctxt "FestivalVoiceName"
 msgid "German Male, Festival"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:242
-#: rc.cpp:1035
+#: rc.cpp:1125
 #, fuzzy
 #| msgctxt "FestivalVoiceName"
 #| msgid "British Male, OGC"
@@ -2220,7 +2492,7 @@ msgid "Mexican Spanish Male, OGC"
 msgstr "Lelaki British, OGC"
 
 #. i18n: file: plugins/festivalint/voices:254
-#: rc.cpp:1037
+#: rc.cpp:1127
 msgctxt "FestivalVoiceName"
 msgid "Mexican Spanish Female, OGC"
 msgstr ""
@@ -2229,7 +2501,7 @@ msgstr ""
 #. i18n: file: plugins/festivalint/voices:278
 #. i18n: file: plugins/festivalint/voices:290
 #. i18n: file: plugins/festivalint/voices:326
-#: rc.cpp:1039 rc.cpp:1041 rc.cpp:1043 rc.cpp:1049
+#: rc.cpp:1129 rc.cpp:1131 rc.cpp:1133 rc.cpp:1139
 #, fuzzy
 #| msgctxt "FestivalVoiceName"
 #| msgid "British Male, OGC"
@@ -2239,19 +2511,19 @@ msgstr "Lelaki British, OGC"
 
 #. i18n: file: plugins/festivalint/voices:302
 #. i18n: file: plugins/festivalint/voices:338
-#: rc.cpp:1045 rc.cpp:1051
+#: rc.cpp:1135 rc.cpp:1141
 msgctxt "FestivalVoiceName"
 msgid "American Female, OGC"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:314
-#: rc.cpp:1047
+#: rc.cpp:1137
 msgctxt "FestivalVoiceName"
 msgid "British Male, OGC"
 msgstr "Lelaki British, OGC"
 
 #. i18n: file: plugins/festivalint/voices:350
-#: rc.cpp:1053
+#: rc.cpp:1143
 #, fuzzy
 #| msgid "Finished"
 msgctxt "FestivalVoiceName"
@@ -2259,33 +2531,33 @@ msgid "Finnish Male"
 msgstr "Habis"
 
 #. i18n: file: plugins/festivalint/voices:362
-#: rc.cpp:1055
+#: rc.cpp:1145
 msgctxt "FestivalVoiceName"
 msgid "Czech Male, MBROLA"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:374
-#: rc.cpp:1057
+#: rc.cpp:1147
 msgctxt "FestivalVoiceName"
 msgid "Polish Male"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:386
-#: rc.cpp:1059
+#: rc.cpp:1149
 msgctxt "FestivalVoiceName"
 msgid "Russian Male"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:398
 #. i18n: file: plugins/festivalint/voices:422
-#: rc.cpp:1061 rc.cpp:1065
+#: rc.cpp:1151 rc.cpp:1155
 msgctxt "FestivalVoiceName"
 msgid "Italian Male"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:410
 #. i18n: file: plugins/festivalint/voices:434
-#: rc.cpp:1063 rc.cpp:1067
+#: rc.cpp:1153 rc.cpp:1157
 #, fuzzy
 #| msgid "Female"
 msgctxt "FestivalVoiceName"
@@ -2293,13 +2565,13 @@ msgid "Italian Female"
 msgstr "Perempuan"
 
 #. i18n: file: plugins/festivalint/voices:446
-#: rc.cpp:1069
+#: rc.cpp:1159
 msgctxt "FestivalVoiceName"
 msgid "Kiswahili Male"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:460
-#: rc.cpp:1071
+#: rc.cpp:1161
 #, fuzzy
 #| msgid "Female"
 msgctxt "FestivalVoiceName"
@@ -2307,7 +2579,7 @@ msgid "Ibibio Female"
 msgstr "Perempuan"
 
 #. i18n: file: plugins/festivalint/voices:472
-#: rc.cpp:1073
+#: rc.cpp:1163
 #, fuzzy
 #| msgid "Male"
 msgctxt "FestivalVoiceName"
@@ -2319,13 +2591,13 @@ msgstr "Lelaki"
 #. i18n: file: plugins/festivalint/voices:544
 #. i18n: file: plugins/festivalint/voices:568
 #. i18n: file: plugins/festivalint/voices:580
-#: rc.cpp:1077 rc.cpp:1081 rc.cpp:1085 rc.cpp:1089 rc.cpp:1091
+#: rc.cpp:1167 rc.cpp:1171 rc.cpp:1175 rc.cpp:1179 rc.cpp:1181
 msgctxt "FestivalVoiceName"
 msgid "American Female"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:616
-#: rc.cpp:1097
+#: rc.cpp:1187
 #, fuzzy
 #| msgctxt "FestivalVoiceName"
 #| msgid "British Male, OGC"
@@ -2334,25 +2606,25 @@ msgid "British Female"
 msgstr "Lelaki British, OGC"
 
 #. i18n: file: plugins/festivalint/voices:628
-#: rc.cpp:1099
+#: rc.cpp:1189
 msgctxt "FestivalVoiceName"
 msgid "French Canadian Male"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:640
-#: rc.cpp:1101
+#: rc.cpp:1191
 msgctxt "FestivalVoiceName"
 msgid "French Canadian Female"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:652
-#: rc.cpp:1103
+#: rc.cpp:1193
 msgctxt "FestivalVoiceName"
 msgid "German Male"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:664
-#: rc.cpp:1105
+#: rc.cpp:1195
 #, fuzzy
 #| msgid "Female"
 msgctxt "FestivalVoiceName"
@@ -2360,26 +2632,26 @@ msgid "German Female"
 msgstr "Perempuan"
 
 #. i18n: file: plugins/festivalint/voices:676
-#: rc.cpp:1107
+#: rc.cpp:1197
 msgctxt "FestivalVoiceName"
 msgid "Americas Spanish Male"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:688
-#: rc.cpp:1109
+#: rc.cpp:1199
 msgctxt "FestivalVoiceName"
 msgid "Americas Spanish Female"
 msgstr ""
 
 #. i18n: file: plugins/festivalint/voices:700
-#: rc.cpp:1111
+#: rc.cpp:1201
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Vietnamese Male"
 msgstr "Lelaki British, OGC"
 
 #. i18n: file: plugins/festivalint/voices:711
-#: rc.cpp:1113
+#: rc.cpp:1203
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Vietnamese Female"
@@ -2540,12 +2812,6 @@ msgstr "Pilih Bahasa"
 #: kcmkttsmgr/kcmkttsmgr.cpp:1303
 msgid "Select Filter"
 msgstr "Pilih Penapis"
-
-#: kcmkttsmgr/kcmkttsmgr.cpp:1718
-#, fuzzy
-#| msgid "&Jobs"
-msgid "Jobs"
-msgstr "&Kerja"
 
 #: kcmkttsmgr/kcmkttsmgr.cpp:1737
 #, kde-format
@@ -2951,187 +3217,9 @@ msgctxt "Prioritylevel: unknown"
 msgid "Unknown"
 msgstr "Tidak Diketahui"
 
-#: kttsjobmgr/kttsjobmgr.cpp:63
+#: kttsjobmgr/kttsjobmgr.cpp:64
 msgid "KttsJobMgr"
 msgstr "KttsJobMgr"
-
-#: kttsjobmgr/kttsjobmgr.cpp:111
-msgid ""
-"<p>These are all the text jobs.  The <b>State</b> column may be:"
-"<ul><li><b>Queued</b> - the job is waiting and will not be spoken until its "
-"state is changed to <b>Waiting</b> by clicking the <b>Resume</b> or "
-"<b>Restart</b> buttons.</li><li><b>Waiting</b> - the job is ready to be "
-"spoken.  It will be spoken when the jobs preceding it in the list have "
-"finished.</li><li><b>Speaking</b> - the job is speaking.  The <b>Position</"
-"b> column shows the current sentence of the job being spoken.  You may pause "
-"a speaking job by clicking the <b>Hold</b> button.</li><li><b>Paused</b> - "
-"the job is currently paused.  Paused jobs prevent jobs below them from "
-"speaking.  Use the <b>Resume</b> or <b>Restart</b> buttons to resume "
-"speaking the job, or click <b>Later</b> to move the job down in the list.</"
-"li><li><b>Finished</b> - the job has finished speaking.  When a second job "
-"finishes, this one will be deleted.  You may click <b>Restart</b> to repeat "
-"the job.</li></ul><em>Note</em>: Messages, Warnings, and Screen Reader "
-"Output do not appear in this list.  See the Handbook for more information.</"
-"p>"
-msgstr ""
-"<p>Ini semua adalah kerja teks. Lajur <b>Keadaan</b> boleh jadi:"
-"<ul><li><b>Dibaris gilir</b> - kerja sedang menunggu dan tidak akan ditutur "
-"sehingga keadaannya diubah kepada <b>Menunggu</b> dengan mengklik butang "
-"<b>Sambung semula</b> atau <b>Mula semula</b>.</li><li><b>Menunggu</b> - "
-"kerja sedia untuk dituturkan.  Ia akan dituturkan apabila kerja sebelumnya "
-"dalam senarai sudah siap.</li><li><b>Bertutur</b> - kerja sedang bertutur. "
-"Lajur <b>Posisi</b> menayangkan ayat yang sedang dituturkan.  Anda boleh "
-"menjedakan kerja tutur dengan mengklik butang <b>Tunggu dulu</b> .</"
-"li><li><b>Jeda</b> - kerja sedang jeda.  Kerja jeda menghalang kerja di "
-"bawahnya daripada bertutur.  Guna butang <b>Sambung semula</b> atau <b>Mula "
-"semula</b> untuk menyambung semula kerja tutur, atau klik <b>Kemudian</b> "
-"untuk mengalihkan kerja ke bawah.</li><li><b>Selesai</b> - kerja selesai "
-"bertutur.  Apabila kerja kedua selesai, yang ini akan dihapuskan.  Anda "
-"boleh klik <b>Mula semula</b> untuk mengulangi kerja.</li></"
-"ul><em>Perhatian</em>: Mesej, Amaran, dan Output Pembaca Skrin tidak muncul "
-"dalam senarai ini.  Lihat Buku Panduan untuk maklumat lanjut.</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:157
-msgid "Hold"
-msgstr "Tunggu dulu"
-
-#: kttsjobmgr/kttsjobmgr.cpp:160
-msgid ""
-"<p>Changes a job to Paused state.  If currently speaking, the job stops "
-"speaking.  Paused jobs prevent jobs that follow them from speaking, so "
-"either click <b>Resume</b> to make the job speakable, or click <b>Later</b> "
-"to move it down in the list.</p>"
-msgstr ""
-"<p>Mengubah kerja kepada keadaan Jeda.  Jika sedang bertutur, kerja akan "
-"berhenti bertutur.  Kerja terjeda akan menghalang kerja berikutnya daripada "
-"bertutur, jadi sama ada klik <b>Sambung semula</b> untuk menjadikan kerja "
-"boleh tutur, atau klik <b>Kemudian</b> untuk beralih ke bawah senarai.</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:166
-msgid "Resume"
-msgstr "Sambung semula"
-
-#: kttsjobmgr/kttsjobmgr.cpp:169
-msgid ""
-"<p>Resumes a paused job or changes a Queued job to Waiting.  If the job is "
-"the top speakable job in the list, it begins speaking.</p>"
-msgstr ""
-"<p>Sambung semula kerja terjeda atau ubah kerja dalam Baris Gilir kepada "
-"Menunggu. Jika kerja ialah kerja boleh tutur berada teratas dalam senarai, "
-"ia mula bertutur.</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:173
-#, fuzzy
-#| msgid "R&estart"
-msgctxt "Restart a job to the beginning"
-msgid "R&estart"
-msgstr "&Sambung semula"
-
-#: kttsjobmgr/kttsjobmgr.cpp:176
-msgid ""
-"<p>Rewinds a job to the beginning and changes its state to Waiting.  If the "
-"job is the top speakable job in the list, it begins speaking.</p>"
-msgstr ""
-"<p>Menggulung semula kerja ke awal dan mengubah keadaannya kepada Menunggu. "
-"Jika kerja boleh tutur berada teratas dalam senarai, ia mula bertutur.</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:180
-msgid "Re&move"
-msgstr "&Buang"
-
-#: kttsjobmgr/kttsjobmgr.cpp:183
-msgid ""
-"<p>Deletes the job.  If it is currently speaking, it stops speaking.  The "
-"next speakable job in the list begins speaking.</p>"
-msgstr ""
-"<p>Menghapuskan kerja.  Jika ia sedang bertutur, ia berhenti bertutur. Kerja "
-"boleh tutur berikutnya dalam senarai mula bertutur.</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:187
-msgid "&Later"
-msgstr "&Kemudian"
-
-#: kttsjobmgr/kttsjobmgr.cpp:190
-msgid ""
-"<p>Moves a job downward in the list so that it will be spoken later.  If the "
-"job is currently speaking, its state changes to Paused.</p>"
-msgstr ""
-"<p>Mengalihkan kerja ke bawah dalam senarai supaya ia akan ditutur kemudian. "
-"Jika kerja sedang bertutur, keadaannya berubah kepada Jeda.</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:195
-msgid "&Previous Sentence"
-msgstr "&Ayat Sebelumnya"
-
-#: kttsjobmgr/kttsjobmgr.cpp:198
-msgid "<p>Rewinds a job to the previous sentence.</p>"
-msgstr "<p>Menggulung semula kerja ke ayat sebelumnya.</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:201
-msgid "&Next Sentence"
-msgstr "&Ayat Berikutnya"
-
-#: kttsjobmgr/kttsjobmgr.cpp:204
-msgid "<p>Advances a job to the next sentence.</p>"
-msgstr "<p>Melanjutkan kerja ke ayat berikutnya.</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:208
-msgid "&Speak Clipboard"
-msgstr "&Klipbod tutur"
-
-#: kttsjobmgr/kttsjobmgr.cpp:211
-msgid ""
-"<p>Queues the current contents of the clipboard for speaking and sets its "
-"state to Waiting.  If the job is the topmost in the list, it begins "
-"speaking.  The job will be spoken by the topmost Talker in the <b>Talkers</"
-"b> tab.</p>"
-msgstr ""
-"<p>Membarisgilirkan kandungan semasa klipbod untuk bertutur dan mengeset "
-"keadaannya kepada Menunggu.  Jika kerja itu berada teratas dalam senarai, ia "
-"mula bertutur.  Kerja akan ditutur oleh Penutur teratas dalam tab "
-"<b>Talkers</b>.</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:216
-msgid "Spea&k File"
-msgstr "&Fail Tutur"
-
-#: kttsjobmgr/kttsjobmgr.cpp:219
-msgid ""
-"<p>Prompts you for a file name and queues the contents of the file for "
-"speaking.  You must click the <b>Resume</b> button before the job will be "
-"speakable.  The job will be spoken by the topmost Talker in the <b>Talkers</"
-"b> tab.</p>"
-msgstr ""
-"<p>Menggesa anda untuk nama fail dan menbarisgilirkan kandungan fail untuk "
-"bertutur.  Anda mesti klik butang <b>Sambung semula</b> sebelum kerja "
-"tersebut boleh tutur.  Kerja akan ditutur oleh Penutur  teratas dalam tab "
-"<b>Talkers</b>.</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:224
-msgid "Change Talker"
-msgstr "Ubah Penutur"
-
-#: kttsjobmgr/kttsjobmgr.cpp:227
-msgid ""
-"<p>Prompts you with a list of your configured Talkers from the <b>Talkers</"
-"b> tab.  The job will be spoken using the selected Talker.</p>"
-msgstr ""
-
-#: kttsjobmgr/kttsjobmgr.cpp:231
-msgid "&Refresh"
-msgstr "&Muat semula"
-
-#: kttsjobmgr/kttsjobmgr.cpp:234
-msgid "<p>Refresh the list of jobs.</p>"
-msgstr "<p>Muatkan semula senarai kerja.</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:247
-msgid "Current Sentence"
-msgstr "Ayat Semasa"
-
-#: kttsjobmgr/kttsjobmgr.cpp:256
-msgid "<p>The text of the sentence currently speaking.</p>"
-msgstr "<p>Teks ayat yang sedang dituturkan.</p>"
 
 #: kttsmgr/kttsmgr.cpp:54
 msgid "KTTSMgr"
