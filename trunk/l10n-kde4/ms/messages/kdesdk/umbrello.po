@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-05 11:15+0100\n"
+"POT-Creation-Date: 2009-02-16 09:05+0100\n"
 "PO-Revision-Date: 2007-02-25 15:47+0730\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -371,7 +371,7 @@ msgstr "Name=KDevelop: KDE/C++"
 #: dialogs/statedialog.cpp:37 dialogs/statedialog.cpp:125
 #: dialogs/umlviewdialog.cpp:35 dialogs/objectnodedialog.cpp:39
 #: dialogs/classpropdlg.cpp:109 dialogs/parmpropdlg.cpp:65
-#: dialogs/assocgenpage.cpp:60 refactoring/refactoringassistant.cpp:313
+#: dialogs/assocgenpage.cpp:60 refactoring/refactoringassistant.cpp:453
 #: listpopupmenu.cpp:556
 #, fuzzy
 msgid "Properties"
@@ -530,7 +530,8 @@ msgstr "Jenis MIME"
 msgid "New Activity..."
 msgstr "Teks baru"
 
-#: dialogs/activitypage.cpp:88 listpopupmenu.cpp:562
+#: dialogs/activitypage.cpp:88 refactoring/refactoringassistant.cpp:454
+#: listpopupmenu.cpp:562
 #, fuzzy
 msgid "Delete"
 msgstr "&Pilih"
@@ -775,7 +776,7 @@ msgid "Color"
 msgstr "Warna:"
 
 #: dialogs/classifierlistpage.cpp:92 dialogs/classpropdlg.cpp:265
-#: refactoring/refactoringassistant.cpp:488 listpopupmenu.cpp:815
+#: refactoring/refactoringassistant.cpp:658 listpopupmenu.cpp:815
 msgid "Attributes"
 msgstr ""
 
@@ -785,7 +786,7 @@ msgid "N&ew Attribute..."
 msgstr "Teks baru"
 
 #: dialogs/classifierlistpage.cpp:96 dialogs/classpropdlg.cpp:277
-#: refactoring/refactoringassistant.cpp:504 listpopupmenu.cpp:818
+#: refactoring/refactoringassistant.cpp:674 listpopupmenu.cpp:818
 msgid "Operations"
 msgstr ""
 
@@ -1074,17 +1075,17 @@ msgid "You have entered an invalid operation name."
 msgstr ""
 
 #: dialogs/umloperationdialog.cpp:430 dialogs/umloperationdialog.cpp:442
-#: refactoring/refactoringassistant.cpp:658
+#: refactoring/refactoringassistant.cpp:808
 #, fuzzy
 msgid "Operation Name Invalid"
 msgstr "Name=KDevelop: KDE/C++"
 
-#: dialogs/umloperationdialog.cpp:439 refactoring/refactoringassistant.cpp:655
+#: dialogs/umloperationdialog.cpp:439 refactoring/refactoringassistant.cpp:805
 #, kde-format
 msgid "An operation with that signature already exists in %1.\n"
 msgstr ""
 
-#: dialogs/umloperationdialog.cpp:441 refactoring/refactoringassistant.cpp:657
+#: dialogs/umloperationdialog.cpp:441 refactoring/refactoringassistant.cpp:807
 #, fuzzy
 msgid "Choose a different name or parameter list."
 msgstr "Name=KDevelop: KDE/C++"
@@ -1302,7 +1303,7 @@ msgstr ""
 msgid "You have entered an invalid attribute name."
 msgstr ""
 
-#: dialogs/umlattributedialog.cpp:161
+#: dialogs/umlattributedialog.cpp:161 refactoring/refactoringassistant.cpp:829
 #, fuzzy
 msgid "Attribute Name Invalid"
 msgstr "Name=KDevelop: KDE/C++"
@@ -4919,50 +4920,66 @@ msgid ""
 "item of the same name already exists.  Any other items have been pasted."
 msgstr ""
 
-#: refactoring/refactoringassistant.cpp:295
+#: refactoring/refactoringassistant.cpp:49
+#, fuzzy
+#| msgid "Name"
+msgid "Name"
+msgstr "Nama"
+
+#: refactoring/refactoringassistant.cpp:437
 #, fuzzy
 msgid "Add Base Class"
 msgstr "Tambah Bar Alatan ke '%1'"
 
-#: refactoring/refactoringassistant.cpp:296
+#: refactoring/refactoringassistant.cpp:438
 #, fuzzy
 msgid "Add Derived Class"
 msgstr "Tambah Bar Alatan ke '%1'"
 
-#: refactoring/refactoringassistant.cpp:298
-#: refactoring/refactoringassistant.cpp:305
-#: refactoring/refactoringassistant.cpp:319
+#: refactoring/refactoringassistant.cpp:440
+#: refactoring/refactoringassistant.cpp:446
+#: refactoring/refactoringassistant.cpp:458
 #, fuzzy
 msgid "Add Operation"
 msgstr "Tambah Bar Alatan"
 
-#: refactoring/refactoringassistant.cpp:299
-#: refactoring/refactoringassistant.cpp:323
+#: refactoring/refactoringassistant.cpp:441
+#: refactoring/refactoringassistant.cpp:461
 #, fuzzy
 msgid "Add Attribute"
 msgstr "Tambah Bar Alatan"
 
-#: refactoring/refactoringassistant.cpp:303
+#: refactoring/refactoringassistant.cpp:444
 #, fuzzy
 msgid "Add Base Interface"
 msgstr "Tambah Bar Alatan ke '%1'"
 
-#: refactoring/refactoringassistant.cpp:304
+#: refactoring/refactoringassistant.cpp:445
 #, fuzzy
 msgid "Add Derived Interface"
 msgstr "Tambah Bar Alatan ke '%1'"
 
-#: refactoring/refactoringassistant.cpp:361
-#: refactoring/refactoringassistant.cpp:515
+#: refactoring/refactoringassistant.cpp:504
+#: refactoring/refactoringassistant.cpp:684
 #, fuzzy
 msgid "Base Classifiers"
 msgstr "Tambah Bar Alatan ke '%1'"
 
-#: refactoring/refactoringassistant.cpp:403
-#: refactoring/refactoringassistant.cpp:533
+#: refactoring/refactoringassistant.cpp:549
+#: refactoring/refactoringassistant.cpp:699
 #, fuzzy
 msgid "Derived Classifiers"
 msgstr "Tambah Bar Alatan ke '%1'"
+
+#: refactoring/refactoringassistant.cpp:826
+#, kde-format
+msgid "An attribute with that name already exists in %1.\n"
+msgstr ""
+
+#: refactoring/refactoringassistant.cpp:828
+#, fuzzy
+msgid "Choose a different name."
+msgstr "Name=KDevelop: KDE/C++"
 
 #: widgets/objectnodewidget.cpp:198
 #, fuzzy
