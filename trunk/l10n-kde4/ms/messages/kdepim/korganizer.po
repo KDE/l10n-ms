@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-16 09:08+0100\n"
+"POT-Creation-Date: 2009-02-17 09:10+0100\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -198,7 +198,7 @@ msgstr "Hapuskan Pengesahan"
 
 #. i18n: file: template_management_dialog_base.ui:41
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonDelete)
-#: filtereditdialog.cpp:252 kojournaleditor.cpp:209 rc.cpp:1126 rc.cpp:1962
+#: filtereditdialog.cpp:252 rc.cpp:1126 rc.cpp:1962
 #, fuzzy
 msgid "Delete"
 msgstr "Hapuskan%1"
@@ -1545,8 +1545,8 @@ msgctxt "@info"
 msgid "Do you really want to cancel?"
 msgstr ""
 
-#: koincidenceeditor.cpp:109 koeditorattachments.cpp:697 koeventeditor.cpp:410
-#: kotodoeditor.cpp:344
+#: koincidenceeditor.cpp:109 kojournaleditor.cpp:230
+#: koeditorattachments.cpp:697 koeventeditor.cpp:410 kotodoeditor.cpp:344
 #, fuzzy
 #| msgid "KOrganizer Confirmation"
 msgctxt "@title:window"
@@ -1924,7 +1924,7 @@ msgstr ""
 #. i18n: file: filteredit_base.ui:35
 #. i18n: ectx: property (text), widget (QPushButton, mDeleteButton)
 #: views/todoview/kotodoview.cpp:167 views/journalview/journalview.cpp:185
-#: calendarview.cpp:843 actionmanager.cpp:330 actionmanager.cpp:527
+#: calendarview.cpp:848 actionmanager.cpp:330 actionmanager.cpp:527
 #: actionmanager.cpp:1601 actionmanager.cpp:1630 rc.cpp:6 rc.cpp:2784
 #, fuzzy
 msgid "&Delete"
@@ -3462,42 +3462,42 @@ msgid ""
 "KOrganizer's main view here."
 msgstr ""
 
-#: calendarview.cpp:427
+#: calendarview.cpp:432
 #, kde-format
 msgid "Could not load calendar '%1'."
 msgstr "Tidak dapat memuatkan kalendar '%1'."
 
-#: calendarview.cpp:634
+#: calendarview.cpp:639
 msgid ""
 "The time zone setting was changed. Do you want to keep the absolute time of "
 "the items in your calendar, which will show them to be at a different time "
 "than before, or move them to be at the old time also in the new time zone?"
 msgstr ""
 
-#: calendarview.cpp:641
+#: calendarview.cpp:646
 msgid "Keep Absolute Times?"
 msgstr ""
 
-#: calendarview.cpp:642
+#: calendarview.cpp:647
 msgid "Keep Times"
 msgstr ""
 
-#: calendarview.cpp:643
+#: calendarview.cpp:648
 #, fuzzy
 msgid "Move Times"
 msgstr "Alihkan Ke"
 
-#: calendarview.cpp:712
+#: calendarview.cpp:717
 #, fuzzy, kde-format
 msgid "Todo completed: %1 (%2)"
 msgstr "Tugasan selesai: %1"
 
-#: calendarview.cpp:722
+#: calendarview.cpp:727
 #, fuzzy, kde-format
 msgid "Journal of %1"
 msgstr "&Jurnal"
 
-#: calendarview.cpp:777
+#: calendarview.cpp:782
 #, fuzzy, kde-format
 msgid ""
 "The item \"%1\" is filtered by your current filter rules, so it will be "
@@ -3506,25 +3506,19 @@ msgstr ""
 "Kejadian\"%1\" ditapis oleh peraturan tapisan semasa, jadi ia akan "
 "disembunyikan dan tidak muncul dalam paparan."
 
-#: calendarview.cpp:780
+#: calendarview.cpp:785
 msgid "Filter Applied"
 msgstr "Penapis Digunakan"
 
-#: calendarview.cpp:841
+#: calendarview.cpp:846
 #, kde-format
 msgid "The item \"%1\" will be permanently deleted."
 msgstr "Item \"%1\" dihapuskan secara kekal."
 
-#: calendarview.cpp:842 calendarview.cpp:2094 calendarview.cpp:2157
-#: calendarview.cpp:2168 kojournaleditor.cpp:208
+#: calendarview.cpp:847 calendarview.cpp:2094 calendarview.cpp:2157
+#: calendarview.cpp:2168
 msgid "KOrganizer Confirmation"
 msgstr "Pengesahan KOrganizer"
-
-#: calendarview.cpp:1088
-#, fuzzy, kde-format
-msgctxt "Journal for DATE"
-msgid "Journal for %1"
-msgstr "&Jurnal"
 
 #: calendarview.cpp:1188
 msgid ""
@@ -4435,24 +4429,35 @@ msgstr "Hapuskan Tugasan"
 msgid "Not delegated"
 msgstr "Tiada kejadian dipilih."
 
-#: kojournaleditor.cpp:49
-#, fuzzy
-msgid "Edit Journal Entry"
-msgstr "Edit Jurnal"
-
-#: kojournaleditor.cpp:77
+#: kojournaleditor.cpp:78
 #, fuzzy
 #| msgid "General"
 msgctxt "@title general journal settings"
 msgid "General"
 msgstr "Umum"
 
-#: kojournaleditor.cpp:207
+#: kojournaleditor.cpp:106
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Edit Journal: %1"
+msgstr "Edit Jurnal"
+
+#: kojournaleditor.cpp:116
+#, fuzzy
+msgctxt "@title:window"
+msgid "New Journal"
+msgstr "&Jurnal"
+
+#: kojournaleditor.cpp:229
+#, fuzzy
+#| msgid "This journal entry will be permanently deleted."
+msgctxt "@info"
 msgid "This journal entry will be permanently deleted."
 msgstr "Entri jurnal ini akan dihapuskan secara kekal."
 
-#: kojournaleditor.cpp:223
+#: kojournaleditor.cpp:247
 #, fuzzy
+msgctxt "@info"
 msgid "Template does not contain a valid journal."
 msgstr "Templat '%1' tidak mengandungi jurnal yang sah."
 
@@ -10295,40 +10300,47 @@ msgctxt "@info"
 msgid "The archive file name is not valid."
 msgstr "Nama fail arkib tidak sah.\n"
 
-#: koeditorgeneraljournal.cpp:69
+#: koeditorgeneraljournal.cpp:71
 msgid "Sets the title of this journal."
 msgstr "Mengeset tajuk jurnal ini"
 
-#: koeditorgeneraljournal.cpp:70
+#: koeditorgeneraljournal.cpp:72
 #, fuzzy
 #| msgid "T&itle:"
 msgctxt "journal title"
 msgid "T&itle:"
 msgstr "&Tajuk:"
 
-#: koeditorgeneraljournal.cpp:88
+#: koeditorgeneraljournal.cpp:90
 msgid "&Date:"
 msgstr "&Tarikh:"
 
-#: koeditorgeneraljournal.cpp:97
+#: koeditorgeneraljournal.cpp:99
 msgid "&Time: "
 msgstr "&Waktu:"
 
-#: koeditorgeneraljournal.cpp:129
+#: koeditorgeneraljournal.cpp:131
 #, fuzzy
 #| msgid ""
 #| "Allows you to select the categories that this event or to-do belongs to."
 msgid "Allows you to select the categories that this journal belongs to."
 msgstr "Membolehkan anda memilih kategori golongan peristiwa atau tugasan ini."
 
-#: koeditorgeneraljournal.cpp:132
+#: koeditorgeneraljournal.cpp:134
 msgid "Select Cate&gories..."
 msgstr "Pilih kate&gori..."
 
-#: koeditorgeneraljournal.cpp:219
+#: koeditorgeneraljournal.cpp:222
 #, kde-format
 msgid "Please specify a valid date, for example '%1'."
 msgstr "Tetapkan tarikh yang sah, contohnya  '%1'."
+
+#: koeditorgeneraljournal.cpp:229
+#, fuzzy
+#| msgid "Please specify a valid due time."
+msgctxt "@info"
+msgid "Please specify a journal title."
+msgstr "Nyatakan waktu cukup tempoh yang sah."
 
 #: templatemanagementdialog.cpp:51
 #, fuzzy
@@ -11201,6 +11213,11 @@ msgstr "Cetak apa yang seterusnya"
 #: plugins/printing/whatsnext/whatsnextprint.h:42
 msgid "Prints a list of all upcoming events and todos."
 msgstr "Mencetak senarai semua peristiwa dan tugasan"
+
+#, fuzzy
+#~ msgctxt "Journal for DATE"
+#~ msgid "Journal for %1"
+#~ msgstr "&Jurnal"
 
 #, fuzzy
 #~ msgctxt "@item delimiter for joining category names"
