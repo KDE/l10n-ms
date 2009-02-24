@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-14 10:21+0100\n"
+"POT-Creation-Date: 2009-02-24 11:07+0100\n"
 "PO-Revision-Date: 2008-08-16 19:18+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -16,15 +16,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=1;\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: encodefileimp.cpp:31
-msgid "Encode File"
+#: encodefileimp.cpp:39
+#, fuzzy
+#| msgid "Encode File"
+msgid "Encode Files"
 msgstr "Kodkan Fail"
 
-#: encodefileimp.cpp:33
-msgid "&Encode File"
-msgstr "&Kodkan Fail"
+#: encodefileimp.cpp:41
+msgid "&Add to queue"
+msgstr ""
 
-#: encodefileimp.cpp:75 tracksimp.cpp:410
+#: encodefileimp.cpp:68
+#, fuzzy, kde-format
+#| msgid "Track"
+msgid "track_%1"
+msgstr "Trek"
+
+#: encodefileimp.cpp:69 encodefileimp.cpp:70
+msgid "unknown"
+msgstr ""
+
+#: encodefileimp.cpp:152 tracksimp.cpp:410
 #, kde-format
 msgid ""
 "%1 Job(s) have been started.  You can watch their progress in the jobs "
@@ -33,11 +45,11 @@ msgstr ""
 "%1 Kerja telah dimulakan.  Anda boleh melihat perkembangannya dalam seksyen "
 "kerja."
 
-#: encodefileimp.cpp:77 tracksimp.cpp:412
+#: encodefileimp.cpp:154 tracksimp.cpp:412
 msgid "Jobs have started"
 msgstr "Kerja telah bermula."
 
-#: encoder.cpp:68
+#: encoder.cpp:71
 msgid ""
 "No encoder has been selected.\n"
 "Please select an encoder in the configuration."
@@ -45,32 +57,32 @@ msgstr ""
 "Pengekod tidak dipilih.\n"
 "Pilih pengekod dalam tetapan."
 
-#: encoder.cpp:68 encoderconfigimp.cpp:169 encoderconfigimp.cpp:198
+#: encoder.cpp:71 encoderconfigimp.cpp:124 encoderconfigimp.cpp:164
 msgid "No Encoder Selected"
 msgstr "Pengekod Tidak Dipilih."
 
-#: encoder.cpp:147
+#: encoder.cpp:155
 #, kde-format
 msgid "Encoding (%1): %2 - %3"
 msgstr "Pengekodan (%1): %2 - %3"
 
-#: encoder.cpp:187
+#: encoder.cpp:196
 msgid "File Already Exists"
 msgstr "Fail telah Wujud"
 
-#: encoder.cpp:187
+#: encoder.cpp:196
 msgid "Sorry, file already exists. Please pick a new name:"
 msgstr "Maaf, fail telah wujud. Pilih nama baru:"
 
-#: encoder.cpp:201
+#: encoder.cpp:210
 msgid "Cannot place file, unable to make directories."
 msgstr "Tidak dapat menyimpan fail, tidak dapat membentuk direktori."
 
-#: encoder.cpp:201 encoder.cpp:303 encoder.cpp:309 encoder.cpp:324
+#: encoder.cpp:210 encoder.cpp:312 encoder.cpp:318 encoder.cpp:333
 msgid "Encoding Failed"
 msgstr "Pengekodan Gagal"
 
-#: encoder.cpp:303
+#: encoder.cpp:312
 #, kde-format
 msgid ""
 "The selected encoder was not found.\n"
@@ -79,7 +91,7 @@ msgstr ""
 "Pengekod yang dipilih tidak ditemui.\n"
 "Fail wav telah dikeluarkan. Arahan ialah: %1"
 
-#: encoder.cpp:309
+#: encoder.cpp:318
 msgid ""
 "The encoder exited with a error.  Please check that the file was created.\n"
 "Do you want to see the full encoder output?"
@@ -88,17 +100,17 @@ msgstr ""
 "tidak.\n"
 "Anda ingin lihat keseluruhan output pengekod?"
 
-#: encoder.cpp:309 encoder.cpp:324
+#: encoder.cpp:318 encoder.cpp:333
 #, fuzzy
 msgid "Show Output"
 msgstr "Output:"
 
-#: encoder.cpp:309 encoder.cpp:324
+#: encoder.cpp:318 encoder.cpp:333
 #, fuzzy
 msgid "Skip Output"
 msgstr "Output:"
 
-#: encoder.cpp:324
+#: encoder.cpp:333
 msgid ""
 "The encoded file was not created.\n"
 "Please check the encoder options.\n"
@@ -110,48 +122,32 @@ msgstr ""
 "Fail wav telah dikeluarkan.\n"
 "Anda ingin lihat keseluruhan output pengekod?"
 
-#: encoderconfigimp.cpp:56
-msgid "Ogg Vorbis"
-msgstr ""
-
-#: encoderconfigimp.cpp:63
-msgid "MP3"
-msgstr ""
-
-#: encoderconfigimp.cpp:70
-msgid "WAV"
-msgstr ""
-
-#: encoderconfigimp.cpp:77
-msgid "FLAC"
-msgstr "FLAC"
-
-#: encoderconfigimp.cpp:151 encoderconfigimp.cpp:212
+#: encoderconfigimp.cpp:90 encoderconfigimp.cpp:180
 msgid "Configure Encoder"
 msgstr "Tetapkan Pengekod"
 
-#: encoderconfigimp.cpp:152 encoderconfigimp.cpp:213 kaudiocreator.cpp:316
+#: encoderconfigimp.cpp:91 encoderconfigimp.cpp:181 kaudiocreator.cpp:372
 msgid "Encoder Configuration"
 msgstr "Tetapan Pengekod"
 
-#: encoderconfigimp.cpp:169 encoderconfigimp.cpp:198
+#: encoderconfigimp.cpp:124 encoderconfigimp.cpp:164
 msgid "Please select an encoder."
 msgstr "Pilih pengekod."
 
-#: encoderconfigimp.cpp:173
+#: encoderconfigimp.cpp:129
 msgid "At least one encoder must exist."
 msgstr "Sekurang-kurangnya satu pengekod mestilah wujud."
 
-#: encoderconfigimp.cpp:173
+#: encoderconfigimp.cpp:129
 msgid "Can Not Remove"
 msgstr "Tidak Boleh Keluarkan."
 
-#: encoderconfigimp.cpp:176
+#: encoderconfigimp.cpp:133
 #, fuzzy
 msgid "Delete encoder?"
 msgstr "Hapuskan Pengekod?"
 
-#: encoderconfigimp.cpp:176
+#: encoderconfigimp.cpp:133
 msgid "Delete Encoder"
 msgstr "Hapuskan Pengekod"
 
@@ -175,7 +171,7 @@ msgstr ""
 
 #. i18n: file: jobque.ui:28
 #. i18n: ectx: property (text), widget (QLabel, queLabel)
-#: jobqueimp.cpp:190 jobqueimp.cpp:249 rc.cpp:218
+#: jobqueimp.cpp:190 jobqueimp.cpp:249 rc.cpp:242
 msgid "No jobs are in the queue"
 msgstr "Tiada kerja dalam baris gilir"
 
@@ -187,119 +183,141 @@ msgstr "KAudioCreator belum selesaikan semua kerja. Keluarkan semua kerja?"
 msgid "&CD Tracks"
 msgstr "&Trek CD"
 
-#: kaudiocreator.cpp:70
+#: kaudiocreator.cpp:72
 msgid "&Jobs"
 msgstr "&Kerja"
 
-#: kaudiocreator.cpp:99
+#: kaudiocreator.cpp:101
 msgid "&Eject CD"
 msgstr "&Keluarkan CD"
 
-#: kaudiocreator.cpp:103
+#: kaudiocreator.cpp:105
 msgid "&Configure KAudioCreator..."
 msgstr "&Tetapkan KAudioCreator..."
 
 #. i18n: file: tracks.ui:161
 #. i18n: ectx: property (text), widget (QPushButton, selectAllTracksButton)
-#: kaudiocreator.cpp:107 rc.cpp:354
+#: kaudiocreator.cpp:109 rc.cpp:381
 msgid "Select &All Tracks"
 msgstr "Pilih &Semua Trek"
 
-#: kaudiocreator.cpp:112
+#: kaudiocreator.cpp:114
 msgid "Deselect &All Tracks"
 msgstr "Nyahpilih &Semua Trek"
 
-#: kaudiocreator.cpp:119 kaudiocreator.cpp:129
+#: kaudiocreator.cpp:121 kaudiocreator.cpp:131
 msgid "Rip &Selection"
 msgstr "Asingkan &Pemilihan"
 
-#: kaudiocreator.cpp:137
+#: kaudiocreator.cpp:139
 msgid "Remove &Completed Jobs"
 msgstr "Keluarkan &Kerja yang telah Selesai"
 
-#: kaudiocreator.cpp:141
+#: kaudiocreator.cpp:143
 msgid "&Edit Album..."
 msgstr "&Edit Album..."
 
-#: kaudiocreator.cpp:147
-msgid "Encode &File..."
-msgstr "Kodkan &Fail..."
+#: kaudiocreator.cpp:149
+#, fuzzy
+#| msgid "Encode File"
+msgid "Encode &Files from disk"
+msgstr "Kodkan Fail"
 
-#: kaudiocreator.cpp:151
+#: kaudiocreator.cpp:153
 msgid "&CDDB Lookup"
 msgstr "&Carian CDDB"
 
-#: kaudiocreator.cpp:172 kaudiocreator.cpp:214
+#: kaudiocreator.cpp:174 kaudiocreator.cpp:265
 msgid "No Audio CD detected"
 msgstr "Tiada CD Audio dikesan"
 
-#: kaudiocreator.cpp:212
+#: kaudiocreator.cpp:196
+msgid "WAV"
+msgstr ""
+
+#: kaudiocreator.cpp:203
+msgid "Ogg Default"
+msgstr ""
+
+#: kaudiocreator.cpp:210
+msgid "MP3 Lame Standard"
+msgstr ""
+
+#: kaudiocreator.cpp:217
+#, fuzzy
+#| msgid "FLAC"
+msgid "FLAC Best"
+msgstr "FLAC"
+
+#: kaudiocreator.cpp:263
 msgid "CD Inserted"
 msgstr "CD Disisipkan"
 
-#: kaudiocreator.cpp:221
+#: kaudiocreator.cpp:272
 #, fuzzy, kde-format
 msgid "Default encoder: %1"
 msgstr "Hapuskan Pengekod?"
 
-#: kaudiocreator.cpp:226
+#: kaudiocreator.cpp:277
 msgid "Idle."
 msgstr "Melahu."
 
-#: kaudiocreator.cpp:235
+#: kaudiocreator.cpp:286
 #, kde-format
 msgid "Ripping (%1 active, %2 queued)"
 msgstr "Pengasingan (%1 aktif, %2 dibarisgilirkan)"
 
-#: kaudiocreator.cpp:239
+#: kaudiocreator.cpp:290
 #, kde-format
 msgid "Encoding (%1 active, %2 queued)"
 msgstr "Pengekodan (%1 aktif, %2 dibarisgilirkan)"
 
-#: kaudiocreator.cpp:257
+#: kaudiocreator.cpp:308
 msgid "There are unfinished jobs in the queue. Would you like to quit anyway?"
 msgstr "Ada kerja belum selesai dalam baris gilir. Anda ingin keluar?"
 
-#: kaudiocreator.cpp:257
+#: kaudiocreator.cpp:308
 #, fuzzy
 msgid "Unfinished Jobs in Queue"
 msgstr "Kerja Belum Selesai dalam Baris Gilir"
 
 #. i18n: file: general.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, General)
-#: kaudiocreator.cpp:293 rc.cpp:118
+#: kaudiocreator.cpp:349 rc.cpp:142
 msgid "General"
 msgstr "Umum"
 
-#: kaudiocreator.cpp:294
+#: kaudiocreator.cpp:350
 msgid "General Configuration"
 msgstr "Tetapan Umum"
 
-#: kaudiocreator.cpp:296
+#: kaudiocreator.cpp:352
 msgid "CD"
 msgstr "CD"
 
-#: kaudiocreator.cpp:297
+#: kaudiocreator.cpp:353
 msgid "CD Configuration"
 msgstr "Tetapan CD"
 
-#: kaudiocreator.cpp:307
+#: kaudiocreator.cpp:363
 msgid "CDDB"
 msgstr "CDDB"
 
-#: kaudiocreator.cpp:307
+#: kaudiocreator.cpp:363
 msgid "CDDB Configuration"
 msgstr "Tetapan CDDB"
 
-#: kaudiocreator.cpp:313
+#: kaudiocreator.cpp:369
 msgid "Ripper"
 msgstr "Pengasing"
 
-#: kaudiocreator.cpp:313
+#: kaudiocreator.cpp:369
 msgid "Ripper Configuration"
 msgstr "Tetapan Pengasing"
 
-#: kaudiocreator.cpp:316
+#. i18n: file: encodefile.ui:75
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#: kaudiocreator.cpp:372 rc.cpp:33
 msgid "Encoder"
 msgstr "Pengekod"
 
@@ -340,105 +358,157 @@ msgid "&Automatically rip all tracks upon a successful CDDB retrieval"
 msgstr ""
 "&Asingkan semua trek secara automatik setelah berjaya mendapatkan semula CDDB"
 
-#. i18n: file: encodefile.ui:33
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#. i18n: file: encodefile.ui:35
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
 #: rc.cpp:9
-msgid "&File to encode:"
-msgstr "&Fail untuk dikodkan:"
+#, fuzzy
+#| msgid "Title"
+msgid "File"
+msgstr "Judul"
 
-#. i18n: file: encodefile.ui:48
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
+#. i18n: file: encodefile.ui:40
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#. i18n: file: tracks.ui:135
+#. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
+#: rc.cpp:12 rc.cpp:378
+msgid "Title"
+msgstr "Judul"
+
+#. i18n: file: encodefile.ui:45
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#: rc.cpp:15
+#, fuzzy
+#| msgid "Artist:"
+msgid "Artist"
+msgstr "Artis:"
+
+#. i18n: file: encodefile.ui:50
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#. i18n: file: infodialog.ui:91
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
+#: rc.cpp:18 rc.cpp:212
+msgid "Album"
+msgstr "Album"
+
+#. i18n: file: encodefile.ui:55
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#: rc.cpp:21
+#, fuzzy
+#| msgid "Comment:"
+msgid "Comment"
+msgstr "Komen:"
+
+#. i18n: file: encodefile.ui:60
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#: rc.cpp:24
+#, fuzzy
+#| msgid "Genre:"
+msgid "Genre"
+msgstr "Genre:"
+
+#. i18n: file: encodefile.ui:65
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
 #. i18n: file: tracks.ui:125
 #. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
-#: rc.cpp:12 rc.cpp:345
+#: rc.cpp:27 rc.cpp:372
 msgid "Track"
 msgstr "Trek"
 
-#. i18n: file: encodefile.ui:67
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:15
-msgid "Track:"
-msgstr "Trek:"
+#. i18n: file: encodefile.ui:70
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#: rc.cpp:30
+#, fuzzy
+#| msgid "Year:"
+msgid "Year"
+msgstr "Tahun:"
 
-#. i18n: file: encodefile.ui:77
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: encodefile.ui:187
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#. i18n: file: infodialog.ui:40
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: infodialog.ui:168
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:18 rc.cpp:42 rc.cpp:179 rc.cpp:203
-msgid "Comment:"
-msgstr "Komen:"
+#. i18n: file: encodefile.ui:88
+#. i18n: ectx: property (text), widget (QPushButton, addFilesButton)
+#: rc.cpp:36
+#, fuzzy
+#| msgid "Encode File"
+msgid "Add Files"
+msgstr "Kodkan Fail"
 
-#. i18n: file: encodefile.ui:90
-#. i18n: ectx: property (text), widget (QLabel, trackLabel)
-#. i18n: file: infodialog.ui:56
-#. i18n: ectx: property (text), widget (QLabel, trackLabel)
-#: rc.cpp:21 rc.cpp:182
-msgid "Title:"
-msgstr "Judul:"
+#. i18n: file: encodefile.ui:95
+#. i18n: ectx: property (text), widget (QPushButton, clearButton)
+#: rc.cpp:39
+msgid "Clear List"
+msgstr ""
 
-#. i18n: file: encodefile.ui:100
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#. i18n: file: encodefile.ui:134
+#. i18n: file: encodefile.ui:108
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
+#: rc.cpp:42
+#, fuzzy
+#| msgid "Select &All Tracks"
+msgid "Selected Tracks"
+msgstr "Pilih &Semua Trek"
+
+#. i18n: file: encodefile.ui:114
 #. i18n: ectx: property (text), widget (QLabel, TextLabel5)
 #. i18n: file: infodialog.ui:72
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: file: infodialog.ui:103
 #. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:24 rc.cpp:30 rc.cpp:185 rc.cpp:191
+#: rc.cpp:45 rc.cpp:209 rc.cpp:215
 msgid "Artist:"
 msgstr "Artis:"
 
-#. i18n: file: encodefile.ui:119
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#. i18n: file: infodialog.ui:91
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:27 rc.cpp:188
-msgid "Album"
-msgstr "Album"
-
-#. i18n: file: encodefile.ui:144
+#. i18n: file: encodefile.ui:127
 #. i18n: ectx: property (text), widget (QLabel, TextLabel6)
 #. i18n: file: infodialog.ui:116
 #. i18n: ectx: property (text), widget (QLabel, TextLabel6)
-#: rc.cpp:33 rc.cpp:194
+#: rc.cpp:48 rc.cpp:218
 msgid "Album:"
 msgstr "Album:"
 
-#. i18n: file: encodefile.ui:164
+#. i18n: file: encodefile.ui:140
 #. i18n: ectx: property (text), widget (QLabel, TextLabel7)
 #. i18n: file: infodialog.ui:139
 #. i18n: ectx: property (text), widget (QLabel, TextLabel7)
-#: rc.cpp:36 rc.cpp:197
+#: rc.cpp:51 rc.cpp:221
 msgid "Year:"
 msgstr "Tahun:"
 
-#. i18n: file: encodefile.ui:174
+#. i18n: file: encodefile.ui:157
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1)
 #. i18n: file: infodialog.ui:152
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:39 rc.cpp:200
+#: rc.cpp:54 rc.cpp:224
 msgid "Genre:"
 msgstr "Genre:"
 
+#. i18n: file: encodefile.ui:170
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: file: infodialog.ui:40
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: file: infodialog.ui:168
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:57 rc.cpp:203 rc.cpp:227
+msgid "Comment:"
+msgstr "Komen:"
+
+#. i18n: file: encodefile.ui:183
+#. i18n: ectx: property (text), widget (QPushButton, assignButton)
+#: rc.cpp:60
+msgid "Assign to selected tracks"
+msgstr ""
+
 #. i18n: file: encoderconfig.ui:19
 #. i18n: ectx: property (toolTip), widget (QPushButton, addEncoder)
-#: rc.cpp:45
+#: rc.cpp:63
 msgid "Add a new encoder configuration."
 msgstr ""
 
 #. i18n: file: encoderconfig.ui:22
 #. i18n: ectx: property (text), widget (QPushButton, addEncoder)
-#: rc.cpp:48
+#: rc.cpp:66
 msgid "&Add..."
 msgstr "&Tambah..."
 
 #. i18n: file: encoderconfig.ui:29
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeEncoder)
-#: rc.cpp:51
+#: rc.cpp:69
 #, fuzzy
 #| msgid "At least one encoder must exist."
 msgid "Remove encoder from list."
@@ -446,128 +516,140 @@ msgstr "Sekurang-kurangnya satu pengekod mestilah wujud."
 
 #. i18n: file: encoderconfig.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, removeEncoder)
-#: rc.cpp:54
+#: rc.cpp:72
 msgid "&Remove"
 msgstr ""
 
 #. i18n: file: encoderconfig.ui:39
 #. i18n: ectx: property (toolTip), widget (QPushButton, configureEncoder)
-#: rc.cpp:57
+#: rc.cpp:75
 msgid "Set encoder details."
 msgstr ""
 
 #. i18n: file: encoderconfig.ui:42
 #. i18n: ectx: property (text), widget (QPushButton, configureEncoder)
-#: rc.cpp:60
+#: rc.cpp:78
 msgid "&Configure..."
 msgstr "&Tetapkan..."
 
 #. i18n: file: encoderconfig.ui:51
 #. i18n: ectx: property (text), widget (QLabel, currentEncoderText)
-#: rc.cpp:63
+#: rc.cpp:81
 #, fuzzy
 #| msgid "Current encoder:"
 msgid "Current default encoder:"
 msgstr "Pengekod semasa:"
 
-#. i18n: file: encoderconfig.ui:92
+#. i18n: file: encoderconfig.ui:95
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:66
+#: rc.cpp:84
 msgid "Encoded File Location"
 msgstr "Lokasi Fail Dikodkan"
 
-#. i18n: file: encoderconfig.ui:98
+#. i18n: file: encoderconfig.ui:101
 #. i18n: ectx: property (text), widget (QLabel, TextLabel2_2)
-#: rc.cpp:69
+#: rc.cpp:87
 msgid "Location:"
 msgstr "Lokasi:"
 
-#. i18n: file: encoderconfig.ui:111
+#. i18n: file: encoderconfig.ui:114
 #. i18n: ectx: property (text), widget (QPushButton, encoderWizardButton)
-#: rc.cpp:72
+#: rc.cpp:90
 msgid "&Wizard"
 msgstr "&Wizard"
 
-#. i18n: file: encoderconfig.ui:121
+#. i18n: file: encoderconfig.ui:124
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1_2)
-#: rc.cpp:75
+#: rc.cpp:93
 msgid "&Number of wav files to encode at a time:"
 msgstr "&Bilangan fail wav untuk dikodkan serentak:"
 
-#. i18n: file: encoderconfig.ui:144
+#. i18n: file: encoderconfig.ui:147
 #. i18n: ectx: property (title), widget (QGroupBox, niceLevelBox)
-#: rc.cpp:78
+#: rc.cpp:96
 #, fuzzy
 #| msgid "Encode File"
 msgid "Encoder nice level"
 msgstr "Kodkan Fail"
 
-#. i18n: file: encoderconfig.ui:177
+#. i18n: file: encoderconfig.ui:180
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:81
+#: rc.cpp:99
 msgid "-19"
 msgstr ""
 
-#. i18n: file: encoderconfig.ui:203
+#. i18n: file: encoderconfig.ui:206
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:84
+#: rc.cpp:102
 #, fuzzy
 #| msgid "Current encoder:"
 msgid "Current:"
 msgstr "Pengekod semasa:"
 
-#. i18n: file: encoderconfig.ui:216
+#. i18n: file: encoderconfig.ui:219
 #. i18n: ectx: property (text), widget (QLabel, niceLevelLabel)
-#: rc.cpp:87
+#: rc.cpp:105
 msgid "0"
 msgstr ""
 
-#. i18n: file: encoderconfig.ui:242
+#. i18n: file: encoderconfig.ui:245
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:90
+#: rc.cpp:108
 msgid "19"
 msgstr ""
 
-#. i18n: file: encoderedit.ui:19
-#. i18n: ectx: property (text), widget (QLineEdit, kcfg_commandLine)
-#: rc.cpp:94
-#, no-c-format
-msgid "app.exe %f %o"
-msgstr "anggaran pelaksanaan %f %o"
+#. i18n: file: encoderconfig.ui:276
+#. i18n: ectx: property (text), widget (QPushButton, defaultButton)
+#: rc.cpp:111
+msgid "Set as default"
+msgstr ""
+
+#. i18n: file: encoderedit.ui:16
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: rc.cpp:114
+msgid "Name:"
+msgstr "Nama:"
 
 #. i18n: file: encoderedit.ui:32
 #. i18n: ectx: property (text), widget (QLineEdit, kcfg_encoderName)
-#: rc.cpp:97
+#: rc.cpp:117
 msgid "Unknown Encoder"
 msgstr "Pengekod Tak Diketahui"
 
 #. i18n: file: encoderedit.ui:39
-#. i18n: ectx: property (text), widget (QLineEdit, kcfg_extension)
-#: rc.cpp:100
-msgid "wav"
-msgstr "wav"
-
-#. i18n: file: encoderedit.ui:46
-#. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:103
-msgid "Extension:"
-msgstr "Sambungan:"
-
-#. i18n: file: encoderedit.ui:56
 #. i18n: ectx: property (text), widget (QLabel, textLabel6)
-#: rc.cpp:106
+#: rc.cpp:120
 msgid "Command line:"
 msgstr "Baris arahan:"
 
+#. i18n: file: encoderedit.ui:49
+#. i18n: ectx: property (text), widget (QLineEdit, kcfg_commandLine)
+#: rc.cpp:124
+#, no-c-format
+msgid "app.exe %f %o"
+msgstr "anggaran pelaksanaan %f %o"
+
+#. i18n: file: encoderedit.ui:56
+#. i18n: ectx: property (text), widget (QLabel, textLabel5)
+#: rc.cpp:127
+msgid "Extension:"
+msgstr "Sambungan:"
+
 #. i18n: file: encoderedit.ui:66
-#. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:109
-msgid "Name:"
-msgstr "Nama:"
+#. i18n: ectx: property (text), widget (QLineEdit, kcfg_extension)
+#: rc.cpp:130
+msgid "ext"
+msgstr ""
+
+#. i18n: file: encoderedit.ui:73
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:133
+msgid "Percent length"
+msgstr ""
 
 #. i18n: file: encoderoutput.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, EncoderOutput)
-#: rc.cpp:112
+#: rc.cpp:136
 msgid "Encoder Output"
 msgstr "Output Pengekod"
 
@@ -577,13 +659,13 @@ msgstr "Output Pengekod"
 #. i18n: ectx: property (text), widget (QPushButton, buttonOk)
 #. i18n: file: wizard.ui:270
 #. i18n: ectx: property (text), widget (QPushButton, buttonOk)
-#: rc.cpp:115 rc.cpp:212 rc.cpp:413
+#: rc.cpp:139 rc.cpp:236 rc.cpp:440
 msgid "&OK"
 msgstr ""
 
 #. i18n: file: general.ui:19
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_removeCompletedJobs)
-#: rc.cpp:121
+#: rc.cpp:145
 msgid "&Automatically remove jobs when finished"
 msgstr "&Mengeluarkan kerja setelah selesai secara automatik"
 
@@ -591,25 +673,25 @@ msgstr "&Mengeluarkan kerja setelah selesai secara automatik"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_promptIfIncompleteInfo)
 #. i18n: file: kaudiocreator.kcfg:22
 #. i18n: ectx: label, entry (promptIfIncompleteInfo), group (CD)
-#: rc.cpp:124 rc.cpp:248
+#: rc.cpp:148 rc.cpp:272
 msgid "Prompt if information is not complete"
 msgstr "Gesa jika maklumat tidak lengkap"
 
 #. i18n: file: general.ui:33
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:127
+#: rc.cpp:151
 msgid "File Regular Expression Replacement"
 msgstr "Penggantian Ungkapan Biasa Fail"
 
 #. i18n: file: general.ui:51
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:130
+#: rc.cpp:154
 msgid "Selection:"
 msgstr "Pemilihan:"
 
 #. i18n: file: general.ui:62
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:133
+#: rc.cpp:157
 msgid ""
 "Regular expression used on all file names. For example using selection \" \" "
 "and replace with \"_\" would replace all the spaces with underlines.\n"
@@ -620,19 +702,19 @@ msgstr ""
 
 #. i18n: file: general.ui:75
 #. i18n: ectx: property (text), widget (QLabel, inputlabel)
-#: rc.cpp:137
+#: rc.cpp:161
 msgid "Input:"
 msgstr "Input:"
 
 #. i18n: file: general.ui:85
 #. i18n: ectx: property (text), widget (QLabel, outputLabel)
-#: rc.cpp:140
+#: rc.cpp:164
 msgid "Output:"
 msgstr "Output:"
 
 #. i18n: file: general.ui:95
 #. i18n: ectx: property (text), widget (QLabel, exampleLabel)
-#: rc.cpp:143
+#: rc.cpp:167
 msgid "Example"
 msgstr "Contoh"
 
@@ -640,73 +722,79 @@ msgstr "Contoh"
 #. i18n: ectx: property (text), widget (QLabel, exampleOutput)
 #. i18n: file: general.ui:115
 #. i18n: ectx: property (text), widget (QLineEdit, example)
-#: rc.cpp:146 rc.cpp:149
+#: rc.cpp:170 rc.cpp:173
 msgid "Cool artist - example audio file.wav"
 msgstr "Artis hebat - contoh file.wav audio"
 
 #. i18n: file: general.ui:128
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:152
+#: rc.cpp:176
 msgid "Replace with:"
 msgstr "Gantikan dengan:"
 
 #. i18n: file: general.ui:151
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_seperateMultiArtist)
-#: rc.cpp:155
+#: rc.cpp:179
 msgid "Automatically Separate Multi-Artist CDDB Entries"
 msgstr "Memisahkan Entri Pelbagai Artis CDDB Secara Automatik"
 
 #. i18n: file: general.ui:163
 #. i18n: ectx: property (title), widget (KButtonGroup, kbuttongroup)
-#: rc.cpp:158
+#: rc.cpp:182
 msgid "Format"
 msgstr "Format"
 
 #. i18n: file: general.ui:169
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_format_titleArtist)
-#: rc.cpp:161
+#: rc.cpp:185
 msgid "Title - Artist"
 msgstr "Judul - Artis"
 
 #. i18n: file: general.ui:176
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_format_artistTitle)
-#: rc.cpp:164
+#: rc.cpp:188
 msgid "Artist - Title"
 msgstr "Artis - Judul"
 
 #. i18n: file: general.ui:203
 #. i18n: ectx: property (text), widget (QLabel, delimiterLabel)
-#: rc.cpp:167
+#: rc.cpp:191
 msgid "Delimiter:"
 msgstr "Pembatas:"
 
 #. i18n: file: general.ui:213
 #. i18n: ectx: property (text), widget (QLabel, genArtistLabel)
-#: rc.cpp:170
+#: rc.cpp:194
 msgid "Generic artist:"
 msgstr "Artis generik:"
 
 #. i18n: file: infodialog.ui:16
 #. i18n: ectx: property (windowTitle), widget (QDialog, AlbumEditor)
-#: rc.cpp:173
+#: rc.cpp:197
 msgid "Album Editor"
 msgstr "Editor Album"
 
 #. i18n: file: infodialog.ui:31
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:176
+#: rc.cpp:200
 msgid "Current Track"
 msgstr "Trek Semasa"
 
+#. i18n: file: infodialog.ui:56
+#. i18n: ectx: property (text), widget (QLabel, trackLabel)
+#: rc.cpp:206
+msgid "Title:"
+msgstr "Judul:"
+
 #. i18n: file: infodialog.ui:208
 #. i18n: ectx: property (text), widget (QPushButton, buttonPrevious)
-#: rc.cpp:206
+#: rc.cpp:230
 msgid "&Previous Track"
 msgstr "&Trek Sebelumnya"
 
 #. i18n: file: infodialog.ui:215
 #. i18n: ectx: property (text), widget (QPushButton, buttonNext)
-#: rc.cpp:209
+#: rc.cpp:233
 msgid "&Next Track"
 msgstr "&Trek Seterusnya"
 
@@ -714,62 +802,62 @@ msgstr "&Trek Seterusnya"
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
 #. i18n: file: wizard.ui:283
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
-#: rc.cpp:215 rc.cpp:416
+#: rc.cpp:239 rc.cpp:443
 msgid "&Cancel"
 msgstr ""
 
 #. i18n: file: jobque.ui:54
 #. i18n: ectx: property (text), widget (QTreeWidget, todoQue)
-#: rc.cpp:221
+#: rc.cpp:245
 msgid "Job"
 msgstr "Kerja"
 
 #. i18n: file: jobque.ui:59
 #. i18n: ectx: property (text), widget (QTreeWidget, todoQue)
-#: rc.cpp:224
+#: rc.cpp:248
 msgid "Progress"
 msgstr "Kemajuan"
 
 #. i18n: file: jobque.ui:64
 #. i18n: ectx: property (text), widget (QTreeWidget, todoQue)
-#: rc.cpp:227
+#: rc.cpp:251
 msgid "Description"
 msgstr "Perihalan"
 
 #. i18n: file: jobque.ui:90
 #. i18n: ectx: property (text), widget (QPushButton, removeDoneJobs)
-#: rc.cpp:230
+#: rc.cpp:254
 msgid "Remove Completed Jobs"
 msgstr "Keluarkan Kerja yang telah Selesai"
 
 #. i18n: file: jobque.ui:97
 #. i18n: ectx: property (text), widget (QPushButton, removeAll)
-#: rc.cpp:233
+#: rc.cpp:257
 msgid "Remove All Jobs"
 msgstr "Keluarkan Semua Kerja"
 
 #. i18n: file: jobque.ui:104
 #. i18n: ectx: property (text), widget (QPushButton, removeSelected)
-#: rc.cpp:236
+#: rc.cpp:260
 msgid "Remove Selected Jobs"
 msgstr "Keluarkan Kerja yang Dipilih"
 
 #. i18n: file: kaudiocreator.kcfg:10
 #. i18n: ectx: label, entry (performCDDBauto), group (CD)
-#: rc.cpp:239
+#: rc.cpp:263
 msgid "Perform automatic CDDB lookups."
 msgstr "Laksanakan carian automatik CDDB."
 
 #. i18n: file: kaudiocreator.kcfg:14
 #. i18n: ectx: label, entry (autoRip), group (CD)
-#: rc.cpp:242
+#: rc.cpp:266
 msgid "Automatically rip all tracks upon a successful CDDB retrieval"
 msgstr ""
 "Asingkan semua trek secara automatik setelah berjaya mendapatkan kembali CDDB"
 
 #. i18n: file: kaudiocreator.kcfg:18
 #. i18n: ectx: label, entry (lastUsedDevice), group (CD)
-#: rc.cpp:245
+#: rc.cpp:269
 #, fuzzy
 #| msgid "CD device"
 msgid "Last used CD device"
@@ -777,19 +865,19 @@ msgstr "Peranti CD"
 
 #. i18n: file: kaudiocreator.kcfg:28
 #. i18n: ectx: label, entry (removeCompletedJobs), group (General)
-#: rc.cpp:251
+#: rc.cpp:275
 msgid "Automatically remove jobs when finished"
 msgstr "Membuang kerja secara automatik setelah selesai"
 
 #. i18n: file: kaudiocreator.kcfg:32
 #. i18n: ectx: label, entry (replaceInput), group (General)
-#: rc.cpp:254
+#: rc.cpp:278
 msgid "Regexp to match file names with"
 msgstr "Regexp untuk memadankan nama fail dengan"
 
 #. i18n: file: kaudiocreator.kcfg:35
 #. i18n: ectx: label, entry (replaceOutput), group (General)
-#: rc.cpp:257
+#: rc.cpp:281
 msgid "String used to replace the parts that match the selection regexp"
 msgstr ""
 "Rentetan digunakan untuk menggantikan bahagian yang sepadan dengan regexp "
@@ -797,133 +885,141 @@ msgstr ""
 
 #. i18n: file: kaudiocreator.kcfg:55
 #. i18n: ectx: label, entry (currentEncoder), group (Encoder)
-#: rc.cpp:260
+#: rc.cpp:284
 msgid "Currently selected encoder"
 msgstr "Pengekod semasa yang dipilih"
 
 #. i18n: file: kaudiocreator.kcfg:59
+#. i18n: ectx: label, entry (defaultEncoder), group (Encoder)
+#: rc.cpp:287
+#, fuzzy
+#| msgid "Current encoder:"
+msgid "Current default encoder"
+msgstr "Pengekod semasa:"
+
+#. i18n: file: kaudiocreator.kcfg:63
 #. i18n: ectx: label, entry (lastKnownEncoder), group (Encoder)
-#: rc.cpp:263
+#: rc.cpp:290
 msgid "Last encoder in the list"
 msgstr "Pengekod terakhir dalam senarai"
 
-#. i18n: file: kaudiocreator.kcfg:63
+#. i18n: file: kaudiocreator.kcfg:67
 #. i18n: ectx: label, entry (numberOfCpus), group (Encoder)
-#: rc.cpp:266
+#: rc.cpp:293
 msgid "Number of files to encode at a time"
 msgstr "Bilangan fail yang dikodkan serentak"
 
-#. i18n: file: kaudiocreator.kcfg:67
+#. i18n: file: kaudiocreator.kcfg:71
 #. i18n: ectx: label, entry (fileFormat), group (Encoder)
-#: rc.cpp:269
+#: rc.cpp:296
 msgid "Location pattern for encoded files"
 msgstr "Corak lokasi untuk fail yang dikodkan"
 
-#. i18n: file: kaudiocreator.kcfg:71
+#. i18n: file: kaudiocreator.kcfg:75
 #. i18n: ectx: label, entry (NiceLevel), group (Encoder)
-#: rc.cpp:272
+#: rc.cpp:299
 msgid "Encoder priority"
 msgstr "Keutamaan pengekod"
 
-#. i18n: file: kaudiocreator.kcfg:77
+#. i18n: file: kaudiocreator.kcfg:81
 #. i18n: ectx: label, entry (FullDecoderDebug), group (Encoder)
-#: rc.cpp:275
+#: rc.cpp:302
 msgid "Enable full decoder debugging"
 msgstr "Mengaktifkan penyahpepijatan pengekod sepenuhnya"
 
-#. i18n: file: kaudiocreator.kcfg:83
+#. i18n: file: kaudiocreator.kcfg:87
 #. i18n: ectx: label, entry (maxWavFiles), group (Ripper)
-#: rc.cpp:278
+#: rc.cpp:305
 msgid "Number of tracks to rip at a time"
 msgstr "Bilangan trek yang diasingkan serentak"
 
-#. i18n: file: kaudiocreator.kcfg:87
+#. i18n: file: kaudiocreator.kcfg:91
 #. i18n: ectx: label, entry (beepAfterRip), group (Ripper)
-#: rc.cpp:281
+#: rc.cpp:308
 msgid "Beep after rip"
 msgstr "Bip selepas pengasingan"
 
-#. i18n: file: kaudiocreator.kcfg:91
+#. i18n: file: kaudiocreator.kcfg:95
 #. i18n: ectx: label, entry (autoEjectAfterRip), group (Ripper)
-#: rc.cpp:284
+#: rc.cpp:311
 msgid "Eject CD after last track is ripped"
 msgstr "Keluarkan CD setelah trek terakhir diasingkan"
 
-#. i18n: file: kaudiocreator.kcfg:95
+#. i18n: file: kaudiocreator.kcfg:99
 #. i18n: ectx: label, entry (autoEjectDelay), group (Ripper)
-#: rc.cpp:287
+#: rc.cpp:314
 msgid "Auto-eject delay"
 msgstr "Lengah autokeluar"
 
-#. i18n: file: kaudiocreator.kcfg:99
+#. i18n: file: kaudiocreator.kcfg:103
 #. i18n: ectx: label, entry (enableTempDir), group (Ripper)
-#: rc.cpp:290
+#: rc.cpp:317
 msgid "Specify temporary directory"
 msgstr "Nyatakan direktori sementara"
 
-#. i18n: file: kaudiocreator.kcfg:103
+#. i18n: file: kaudiocreator.kcfg:107
 #. i18n: ectx: label, entry (tempDir), group (Ripper)
-#: rc.cpp:293
+#: rc.cpp:320
 msgid "Location of temporary directory to use"
 msgstr "Lokasi direktori sementara untuk digunakan"
 
 #. i18n: file: kaudiocreator_encoders.kcfg:12
 #. i18n: ectx: label, entry (encoderName), group ($(encoder))
-#: rc.cpp:296
+#: rc.cpp:323
 msgid "Name of the encoder"
 msgstr "Nama pengekod"
 
 #. i18n: file: kaudiocreator_encoders.kcfg:16
 #. i18n: ectx: label, entry (commandLine), group ($(encoder))
-#: rc.cpp:299
+#: rc.cpp:326
 msgid "Command line to invoke encoder"
 msgstr "Baris arahan untuk menggunakan pengekod"
 
 #. i18n: file: kaudiocreator_encoders.kcfg:20
 #. i18n: ectx: label, entry (extension), group ($(encoder))
-#: rc.cpp:302
+#: rc.cpp:329
 msgid "File extension"
 msgstr "Sambungan fail"
 
 #. i18n: file: kaudiocreatorui.rc:14
 #. i18n: ectx: Menu (file)
-#: rc.cpp:306
+#: rc.cpp:333
 msgid "&Program"
 msgstr "&Program"
 
 #. i18n: file: ripconfig.ui:16
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_beepAfterRip)
-#: rc.cpp:309
+#: rc.cpp:336
 msgid "&Beep after each rip is done"
 msgstr "&Bip selepas setiap pengasingan selesai"
 
 #. i18n: file: ripconfig.ui:40
 #. i18n: ectx: property (text), widget (QLabel, TextLabel14)
-#: rc.cpp:312
+#: rc.cpp:339
 msgid "&Number of tracks to rip at a time:"
 msgstr "&Bilangan trek untuk diasingkan secara serentak:"
 
 #. i18n: file: ripconfig.ui:65
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_autoEjectAfterRip)
-#: rc.cpp:315
+#: rc.cpp:342
 msgid "&Auto-eject CD after last track is ripped"
 msgstr "&Autokeluar CD setelah trek terakhir diasingkan"
 
 #. i18n: file: ripconfig.ui:92
 #. i18n: ectx: property (text), widget (QLabel, autoEjectLabel)
-#: rc.cpp:318
+#: rc.cpp:345
 msgid "Auto-&eject delay:"
 msgstr "Lengah Auto&keluar:"
 
 #. i18n: file: ripconfig.ui:108
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_autoEjectDelay)
-#: rc.cpp:321
+#: rc.cpp:348
 msgid " seconds"
 msgstr " saat"
 
 #. i18n: file: ripconfig.ui:120
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_enableTempDir)
-#: rc.cpp:324
+#: rc.cpp:351
 #, fuzzy
 #| msgid "Default Temporary Directory"
 msgid "Use custom temporary directory"
@@ -931,7 +1027,7 @@ msgstr "Direktori Sementara Piawai"
 
 #. i18n: file: ripconfig.ui:132
 #. i18n: ectx: property (text), widget (QLabel, temporaryDirectoryLabel)
-#: rc.cpp:327
+#: rc.cpp:354
 #, fuzzy
 #| msgid "Specify temporary directory"
 msgid "Temporary directory:"
@@ -939,61 +1035,55 @@ msgstr "Nyatakan direktori sementara"
 
 #. i18n: file: tracks.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, Tracks)
-#: rc.cpp:330
+#: rc.cpp:357
 msgid "Tracks"
 msgstr "Trek"
 
 #. i18n: file: tracks.ui:39
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:333
+#: rc.cpp:360
 msgid "Device:"
 msgstr "Peranti:"
 
 #. i18n: file: tracks.ui:59
 #. i18n: ectx: property (text), item, widget (KComboBox, deviceCombo)
-#: rc.cpp:336
+#: rc.cpp:363
 msgid "/dev/cdrom"
 msgstr "/dev/cdrom"
 
 #. i18n: file: tracks.ui:91
 #. i18n: ectx: property (text), widget (QLabel, albumName)
-#: rc.cpp:339
+#: rc.cpp:366
 msgid "Unknown Artist - Unknown Album"
 msgstr "Artis Tak Diketahui - Album Tak Diketahui"
 
 #. i18n: file: tracks.ui:120
 #. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
-#: rc.cpp:342 tracksimp.cpp:375
+#: rc.cpp:369 tracksimp.cpp:375
 msgid "Rip"
 msgstr "Asingkan"
 
 #. i18n: file: tracks.ui:130
 #. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
-#: rc.cpp:348
+#: rc.cpp:375
 msgid "Length"
 msgstr "Panjang"
 
-#. i18n: file: tracks.ui:135
-#. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
-#: rc.cpp:351
-msgid "Title"
-msgstr "Judul"
-
 #. i18n: file: tracks.ui:168
 #. i18n: ectx: property (text), widget (QPushButton, deselectAllTracksButton)
-#: rc.cpp:357
+#: rc.cpp:384
 msgid "&Deselect All Tracks"
 msgstr "&Nyahpilih Semua Trek"
 
 #. i18n: file: wizard.ui:19
 #. i18n: ectx: property (windowTitle), widget (QDialog, fileWizard)
-#: rc.cpp:360
+#: rc.cpp:387
 msgid "File Location Wizard"
 msgstr "Wizard Lokasi Fail"
 
 #. i18n: file: wizard.ui:46
 #. i18n: ectx: property (text), widget (QLabel, TextLabel8)
-#: rc.cpp:364
+#: rc.cpp:391
 #, fuzzy, no-c-format
 #| msgid ""
 #| "When files have finished being processed, they are saved based upon the "
@@ -1021,103 +1111,103 @@ msgstr ""
 
 #. i18n: file: wizard.ui:95
 #. i18n: ectx: property (text), widget (QLabel, TextLabel9)
-#: rc.cpp:367
+#: rc.cpp:394
 msgid "&File location:"
 msgstr "&Lokasi fail:"
 
 #. i18n: file: wizard.ui:108
 #. i18n: ectx: property (text), widget (QLineEdit, fileFormat)
-#: rc.cpp:371
+#: rc.cpp:398
 #, no-c-format
 msgid "~/%{extension}/%{artist}/%{album}/%{artist} - %{album}.m3u"
 msgstr "~/%{sambungan}/%{artis}/%{album}/%{artis} - %{album}.m3u"
 
 #. i18n: file: wizard.ui:117
 #. i18n: ectx: property (text), widget (QLabel, exampleLabel)
-#: rc.cpp:374
+#: rc.cpp:401
 msgid "Example: ~/mp3/Staind/Lost Love/Staind - Lost Love.m3u"
 msgstr "Contoh: ~/mp3/Staind/Lost Love/Staind - Lost Love.m3u"
 
 #. i18n: file: wizard.ui:141
 #. i18n: ectx: property (text), widget (QPushButton, artistButton)
-#: rc.cpp:377
+#: rc.cpp:404
 msgid "&Artist"
 msgstr "&Artis"
 
 #. i18n: file: wizard.ui:148
 #. i18n: ectx: property (text), widget (QPushButton, homeDirButton)
-#: rc.cpp:380
+#: rc.cpp:407
 msgid "&Home Folder"
 msgstr "&Folder Utama"
 
 #. i18n: file: wizard.ui:155
 #. i18n: ectx: property (text), widget (QPushButton, trackNumberButton)
-#: rc.cpp:383
+#: rc.cpp:410
 msgid "&Track Number"
 msgstr "&Nombor Trek"
 
 #. i18n: file: wizard.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, extensionButton)
-#: rc.cpp:386
+#: rc.cpp:413
 msgid "&Extension"
 msgstr "&Sambungan"
 
 #. i18n: file: wizard.ui:169
 #. i18n: ectx: property (text), widget (QPushButton, trackTitleButton)
-#: rc.cpp:389
+#: rc.cpp:416
 msgid "Track T&itle"
 msgstr "J&udul Trek"
 
 #. i18n: file: wizard.ui:176
 #. i18n: ectx: property (text), widget (QPushButton, trackCommentButton)
-#: rc.cpp:392
+#: rc.cpp:419
 msgid "T&rack Comment"
 msgstr "Komen T&rek"
 
 #. i18n: file: wizard.ui:183
 #. i18n: ectx: property (text), widget (QPushButton, genreButton)
-#: rc.cpp:395
+#: rc.cpp:422
 msgid "&Genre"
 msgstr "&Genre"
 
 #. i18n: file: wizard.ui:190
 #. i18n: ectx: property (text), widget (QPushButton, yearButton)
-#: rc.cpp:398
+#: rc.cpp:425
 msgid "&Year"
 msgstr "&Tahun"
 
 #. i18n: file: wizard.ui:197
 #. i18n: ectx: property (text), widget (QPushButton, albumButton)
-#: rc.cpp:401
+#: rc.cpp:428
 msgid "Al&bum"
 msgstr "Al&bum"
 
 #. i18n: file: wizard.ui:204
 #. i18n: ectx: property (text), widget (QPushButton, trackArtistButton)
-#: rc.cpp:404
+#: rc.cpp:431
 msgid "Trac&k Artist"
 msgstr "Artis Tre&k"
 
 #. i18n: file: wizard.ui:211
 #. i18n: ectx: property (text), widget (QPushButton, commentButton)
-#: rc.cpp:407
+#: rc.cpp:434
 msgid "Co&mment"
 msgstr "Ko&men"
 
 #. i18n: file: wizard.ui:218
 #. i18n: ectx: property (text), widget (QPushButton, artistInitialButton)
-#: rc.cpp:410
+#: rc.cpp:437
 #, fuzzy
 #| msgid "Artist - Title"
 msgid "Arti&st's Initial"
 msgstr "Artis - Judul"
 
-#: rc.cpp:417
+#: rc.cpp:444
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "MIMOS"
 
-#: rc.cpp:418
+#: rc.cpp:445
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "opensource@mimos.my"
@@ -1225,3 +1315,18 @@ msgstr "Contoh: %1"
 #: job.h:32
 msgid "Other"
 msgstr "Lain-lain"
+
+#~ msgid "&Encode File"
+#~ msgstr "&Kodkan Fail"
+
+#~ msgid "Encode &File..."
+#~ msgstr "Kodkan &Fail..."
+
+#~ msgid "&File to encode:"
+#~ msgstr "&Fail untuk dikodkan:"
+
+#~ msgid "Track:"
+#~ msgstr "Trek:"
+
+#~ msgid "wav"
+#~ msgstr "wav"
