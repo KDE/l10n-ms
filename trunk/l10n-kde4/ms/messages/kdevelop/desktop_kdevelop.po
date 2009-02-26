@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-25 10:54+0000\n"
+"POT-Creation-Date: 2009-02-26 09:53+0000\n"
 "PO-Revision-Date: 2007-01-05 15:33+0730\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -139,7 +139,7 @@ msgctxt "Name"
 msgid "GDB Support"
 msgstr "%{APPNAME}"
 
-#: debuggers/gdb/kdevgdb.desktop:40
+#: debuggers/gdb/kdevgdb.desktop:40 debuggers/valgrind/kdevvalgrind.desktop:46
 #, fuzzy
 msgctxt "GenericName"
 msgid "Debugger Frontend"
@@ -172,17 +172,12 @@ msgctxt "Name"
 msgid "Valgrind Support"
 msgstr "Frontend Valgrind"
 
-#: debuggers/valgrind/kdevvalgrind.desktop:46
-msgctxt "GenericName"
-msgid "Valgrind Frontend"
-msgstr "Frontend Valgrind"
-
 #: documentation/qthelp/kdevqthelp.desktop:4
 msgctxt "Comment"
 msgid "This plugin provides QtHelp integration"
 msgstr ""
 
-#: documentation/qthelp/kdevqthelp.desktop:13
+#: documentation/qthelp/kdevqthelp.desktop:5
 #, fuzzy
 #| msgctxt "Comment"
 #| msgid "KDevelop"
@@ -190,7 +185,7 @@ msgctxt "Name"
 msgid "KDevQtHelp"
 msgstr "KDevelop"
 
-#: documentation/qthelp/kdevqthelp.desktop:16
+#: documentation/qthelp/kdevqthelp.desktop:6
 msgctxt "GenericName"
 msgid "Qt Help"
 msgstr ""
@@ -202,16 +197,14 @@ msgid ""
 msgstr ""
 
 #: formatters/kdevastyle.desktop:25
-#, fuzzy
 msgctxt "Name"
-msgid "Source Code Formatter"
-msgstr "Kod sumber Emacs Lisp"
+msgid "AStyle Formatter Backend"
+msgstr ""
 
 #: formatters/kdevastyle.desktop:42
-#, fuzzy
 msgctxt "GenericName"
-msgid "AStyle Plugin"
-msgstr "Plugin Kate Pertama Saya"
+msgid "Formatter Backend"
+msgstr ""
 
 #: formatters/kdevindent.desktop:5
 msgctxt "Comment"
@@ -219,10 +212,9 @@ msgid "A plugin for formatting C files using GNU indent"
 msgstr ""
 
 #: formatters/kdevindent.desktop:23
-#, fuzzy
 msgctxt "Name"
-msgid "KDevIndent"
-msgstr "KDevAdaProject"
+msgid "Indent Formatter Backend"
+msgstr ""
 
 #: languages/cpp/kdevcppsupport.desktop:4
 #, fuzzy
@@ -233,20 +225,20 @@ msgstr "Sokongan asas bagi bahasa pengaturcaraan Ruby."
 #: languages/cpp/kdevcppsupport.desktop:31
 #, fuzzy
 msgctxt "Name"
-msgid "KDevCppSupport"
-msgstr "KDevAdaProject"
+msgid "C++ Support"
+msgstr "%{APPNAME}"
 
 #: languages/cpp/kdevcppsupport.desktop:42
 #, fuzzy
 msgctxt "GenericName"
-msgid "C/C++ Support"
-msgstr "IDE"
+msgid "Language Support"
+msgstr "Sokongan asas bagi bahasa pengaturcaraan Ruby."
 
 #: projectbuilders/cmakebuilder/kdevcmakebuilder.desktop:3
 #, fuzzy
 msgctxt "Name"
-msgid "KDevCMakeBuilder"
-msgstr "KDevAdaProject"
+msgid "CMake Project Builder"
+msgstr "Fail Projek KDevelop"
 
 #: projectbuilders/cmakebuilder/kdevcmakebuilder.desktop:7
 #, fuzzy
@@ -267,8 +259,8 @@ msgstr ""
 #: projectbuilders/makebuilder/kdevmakebuilder.desktop:3
 #, fuzzy
 msgctxt "Name"
-msgid "KDevMakeBuilder"
-msgstr "KDevAdaProject"
+msgid "Make Project Builder"
+msgstr "Fail Projek KDevelop"
 
 #: projectbuilders/makebuilder/kdevmakebuilder.desktop:9
 #, fuzzy
@@ -277,7 +269,6 @@ msgid "KDevelop Make Builder"
 msgstr "KDevAdaProject"
 
 #: projectbuilders/qmakebuilder/kcm_kdev_qmakebuilder.desktop:13
-#: projectmanagers/qmake/kdevqmakemanager.desktop:3
 msgctxt "Name"
 msgid "QMake"
 msgstr ""
@@ -290,8 +281,8 @@ msgstr ""
 #: projectbuilders/qmakebuilder/kdevqmakebuilder.desktop:3
 #, fuzzy
 msgctxt "Name"
-msgid "KDevQMakeBuilder"
-msgstr "KDevAdaProject"
+msgid "QMake Project Builder"
+msgstr "Projek Ada"
 
 #: projectbuilders/qmakebuilder/kdevqmakebuilder.desktop:8
 #, fuzzy
@@ -300,7 +291,6 @@ msgid "Builds QMake Projects"
 msgstr "Projek Ada"
 
 #: projectmanagers/cmake/kcm_kdevcmake_settings.desktop:13
-#: projectmanagers/cmake/kdevcmakemanager.desktop:3
 msgctxt "Name"
 msgid "CMake"
 msgstr ""
@@ -310,20 +300,33 @@ msgctxt "Comment"
 msgid "Configure CMake settings"
 msgstr ""
 
+#: projectmanagers/cmake/kdevcmakemanager.desktop:3
+#, fuzzy
+msgctxt "Name"
+msgid "CMake Project Manager"
+msgstr "IDE"
+
 #: projectmanagers/cmake/kdevcmakemanager.desktop:7
 msgctxt "Comment"
 msgid "Allows KDevelop to manager CMake based projects"
 msgstr ""
 
 #: projectmanagers/custommake/kdevcustommakemanager.desktop:3
+#, fuzzy
 msgctxt "Name"
-msgid "Custom Makefile"
-msgstr ""
+msgid "Custom Makefile Project Manager"
+msgstr "IDE"
 
 #: projectmanagers/custommake/kdevcustommakemanager.desktop:20
 msgctxt "Comment"
 msgid "Imports and edits custom make projects"
 msgstr ""
+
+#: projectmanagers/qmake/kdevqmakemanager.desktop:3
+#, fuzzy
+msgctxt "Name"
+msgid "QMake Project Manager"
+msgstr "IDE"
 
 #: projectmanagers/qmake/kdevqmakemanager.desktop:7
 msgctxt "Comment"
@@ -337,7 +340,7 @@ msgstr ""
 
 #: tools/coverage/kdevcoverage.desktop:23
 msgctxt "Name"
-msgid "Code coverage report"
+msgid "Code Coverage Report"
 msgstr ""
 
 #: tools/documentview/kdevdocumentview.desktop:4
@@ -357,7 +360,7 @@ msgstr "Projek Ada"
 #: tools/documentview/kdevdocumentview.desktop:50
 #, fuzzy
 msgctxt "GenericName"
-msgid "Document View"
+msgid "Document Tool"
 msgstr "Projek Ada"
 
 #: tools/documentview/settings/kcm_documentview_settings.desktop:37
@@ -374,14 +377,13 @@ msgstr ""
 
 #: tools/grepview/kdevgrepview.desktop:22
 msgctxt "Name"
-msgid "File Searching Support"
+msgid "Find In Files"
 msgstr ""
 
 #: tools/grepview/kdevgrepview.desktop:39
-#, fuzzy
 msgctxt "GenericName"
-msgid "Grep Frontend"
-msgstr "Frontend Valgrind"
+msgid "Search Tool"
+msgstr ""
 
 #: tools/qtdesigner/kdevqtdesigner.desktop:4
 msgctxt "Comment"
@@ -390,15 +392,19 @@ msgstr ""
 
 #: tools/qtdesigner/kdevqtdesigner.desktop:28
 #, fuzzy
+#| msgctxt "GenericName"
+#| msgid "ClearCase Integration"
 msgctxt "Name"
-msgid "Qt Designer Support"
-msgstr "KDevAdaProject"
+msgid "Qt Designer Integration"
+msgstr "Intergrasi ClearCase"
 
 #: tools/qtdesigner/kdevqtdesigner.desktop:53
 #, fuzzy
+#| msgctxt "GenericName"
+#| msgid "ClearCase Integration"
 msgctxt "GenericName"
-msgid "KDevelop Qt Designer Support"
-msgstr "KDevelop: KDE/C++"
+msgid "GUI Designer Integration"
+msgstr "Intergrasi ClearCase"
 
 #: xtest/config/kcm_kdev_veritassettings.desktop:13
 msgctxt "Name"
@@ -418,13 +424,72 @@ msgstr ""
 
 #: xtest/qtest/kdevqtest.desktop:25
 msgctxt "Name"
-msgid "QTest runner"
+msgid "QTest Runner"
 msgstr ""
 
 #: xtest/qtest/kdevqtest.desktop:44
 msgctxt "GenericName"
 msgid "Unit test runner"
 msgstr ""
+
+#~ msgctxt "GenericName"
+#~ msgid "Valgrind Frontend"
+#~ msgstr "Frontend Valgrind"
+
+#, fuzzy
+#~ msgctxt "Name"
+#~ msgid "Source Code Formatter"
+#~ msgstr "Kod sumber Emacs Lisp"
+
+#, fuzzy
+#~ msgctxt "GenericName"
+#~ msgid "AStyle Plugin"
+#~ msgstr "Plugin Kate Pertama Saya"
+
+#, fuzzy
+#~ msgctxt "Name"
+#~ msgid "KDevIndent"
+#~ msgstr "KDevAdaProject"
+
+#, fuzzy
+#~ msgctxt "Name"
+#~ msgid "KDevCppSupport"
+#~ msgstr "KDevAdaProject"
+
+#, fuzzy
+#~ msgctxt "GenericName"
+#~ msgid "C/C++ Support"
+#~ msgstr "IDE"
+
+#, fuzzy
+#~ msgctxt "Name"
+#~ msgid "KDevCMakeBuilder"
+#~ msgstr "KDevAdaProject"
+
+#, fuzzy
+#~ msgctxt "Name"
+#~ msgid "KDevMakeBuilder"
+#~ msgstr "KDevAdaProject"
+
+#, fuzzy
+#~ msgctxt "Name"
+#~ msgid "KDevQMakeBuilder"
+#~ msgstr "KDevAdaProject"
+
+#, fuzzy
+#~ msgctxt "GenericName"
+#~ msgid "Grep Frontend"
+#~ msgstr "Frontend Valgrind"
+
+#, fuzzy
+#~ msgctxt "Name"
+#~ msgid "Qt Designer Support"
+#~ msgstr "KDevAdaProject"
+
+#, fuzzy
+#~ msgctxt "GenericName"
+#~ msgid "KDevelop Qt Designer Support"
+#~ msgstr "KDevelop: KDE/C++"
 
 #, fuzzy
 #~ msgctxt "Comment"
@@ -531,11 +596,6 @@ msgstr ""
 #~ msgstr "%{APPNAME}"
 
 #, fuzzy
-#~ msgctxt "GenericName"
-#~ msgid "Project Manager"
-#~ msgstr "IDE"
-
-#, fuzzy
 #~ msgctxt "Name"
 #~ msgid "KDevCvs"
 #~ msgstr "KDevAdaProject"
@@ -624,11 +684,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgctxt "Name"
-#~ msgid "KDevelop Project Builder"
-#~ msgstr "Fail Projek KDevelop"
-
-#, fuzzy
-#~ msgctxt "Name"
 #~ msgid "Project"
 #~ msgstr "Projek Ada"
 
@@ -656,11 +711,6 @@ msgstr ""
 #~ msgctxt "GenericName"
 #~ msgid "Documentation Viewer"
 #~ msgstr "Projek Ada"
-
-#, fuzzy
-#~ msgctxt "Comment"
-#~ msgid "C# Language Support"
-#~ msgstr "Sokongan asas bagi bahasa pengaturcaraan Ruby."
 
 #, fuzzy
 #~ msgctxt "Name"
@@ -824,11 +874,6 @@ msgstr ""
 #~ msgctxt "Name"
 #~ msgid "KDevTrollProject"
 #~ msgstr "KDevAdaProject"
-
-#, fuzzy
-#~ msgctxt "GenericName"
-#~ msgid "QMake Project"
-#~ msgstr "Projek Ada"
 
 #, fuzzy
 #~ msgctxt "Comment"
@@ -1161,11 +1206,6 @@ msgstr ""
 #~ msgctxt "Name"
 #~ msgid "GppOptions"
 #~ msgstr "KDevAdaProject"
-
-#, fuzzy
-#~ msgctxt "Comment"
-#~ msgid "C++ Support"
-#~ msgstr "%{APPNAME}"
 
 #, fuzzy
 #~ msgctxt "Name"
@@ -1743,10 +1783,6 @@ msgstr ""
 #~ msgctxt "Name"
 #~ msgid "KDevClearCase"
 #~ msgstr "KDevClearCase"
-
-#~ msgctxt "GenericName"
-#~ msgid "ClearCase Integration"
-#~ msgstr "Intergrasi ClearCase"
 
 #~ msgctxt "Name"
 #~ msgid "KDED Subversion Module"
