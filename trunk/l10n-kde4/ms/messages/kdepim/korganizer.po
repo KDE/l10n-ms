@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-26 10:44+0100\n"
+"POT-Creation-Date: 2009-02-27 10:54+0100\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -65,16 +65,12 @@ msgid "&Toggle Reminder"
 msgstr "Pe&ringatan:"
 
 #: koeventpopupmenu.cpp:85
-msgid "&Dissociate This Occurrence"
-msgstr "&Lekangkan Kejadian Ini"
-
-#: koeventpopupmenu.cpp:87
 #, fuzzy
-#| msgid "&Dissociate Future Occurrences"
-msgid "Dissociate &Future Occurrences"
-msgstr "&Lekangkan Kejadian Akan Datang"
+#| msgid "Dissociate occurrence"
+msgid "&Dissociate From Recurrence"
+msgstr "Asingkan kemunculan"
 
-#: koeventpopupmenu.cpp:91
+#: koeventpopupmenu.cpp:89
 #, fuzzy
 #| msgid "&iCalendar..."
 msgid "Send as iCalendar..."
@@ -161,13 +157,13 @@ msgctxt "@title"
 msgid "Invalid Email Address"
 msgstr "Alamat e-mel tambahan:"
 
-#: koviewmanager.cpp:383
+#: koviewmanager.cpp:381
 #, fuzzy
 #| msgid "Merged calendar '%1'."
 msgid "Merged calendar"
 msgstr "Kalendar '%1' dicantum."
 
-#: koviewmanager.cpp:401
+#: koviewmanager.cpp:399
 msgid "Calendars Side by Side"
 msgstr ""
 
@@ -3437,7 +3433,7 @@ msgstr "&Tambah"
 
 #. i18n: file: timescaleedit_base.ui:96
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: kodaymatrix.cpp:594 rc.cpp:1175 rc.cpp:2765
+#: kodaymatrix.cpp:594 calendarview.cpp:1269 rc.cpp:1175 rc.cpp:2765
 #, fuzzy
 msgid "&Cancel"
 msgstr "&Ubah"
@@ -3660,8 +3656,8 @@ msgstr "Penapis Digunakan"
 msgid "The item \"%1\" will be permanently deleted."
 msgstr "Item \"%1\" dihapuskan secara kekal."
 
-#: calendarview.cpp:824 calendarview.cpp:2088 calendarview.cpp:2151
-#: calendarview.cpp:2162
+#: calendarview.cpp:824 calendarview.cpp:1267 calendarview.cpp:1280
+#: calendarview.cpp:2116 calendarview.cpp:2179 calendarview.cpp:2190
 msgid "KOrganizer Confirmation"
 msgstr "Pengesahan KOrganizer"
 
@@ -3676,84 +3672,115 @@ msgstr ""
 msgid "Make sub-to-dos independent"
 msgstr "Jadikan subtugasan tak bersandar"
 
-#: calendarview.cpp:1256
+#: calendarview.cpp:1263
+#, fuzzy, kde-format
+#| msgid "Dissociate event from recurrence"
+msgid "Do you want to dissociate the occurrence at %1 from the recurrence?"
+msgstr "Asingkan peristiwa daripada pengulangan"
+
+#: calendarview.cpp:1268
+#, fuzzy
+#| msgid "T&ime associated"
+msgid "&Dissociate"
+msgstr "&Masa berkaitan"
+
+#: calendarview.cpp:1275
+#, kde-format
+msgid ""
+"Do you want to dissociate the occurrence at %1 from the recurrence or also "
+"dissociate future ones?"
+msgstr ""
+
+#: calendarview.cpp:1281
+#, fuzzy
+#| msgid "&Dissociate This Occurrence"
+msgid "&Only Dissociate This One"
+msgstr "&Lekangkan Kejadian Ini"
+
+#: calendarview.cpp:1282
+#, fuzzy
+#| msgid "&Dissociate Future Occurrences"
+msgid "&Also Dissociate Future Ones"
+msgstr "&Lekangkan Kejadian Akan Datang"
+
+#: calendarview.cpp:1300
 msgid "Dissociate occurrence"
 msgstr "Asingkan kemunculan"
 
-#: calendarview.cpp:1267
+#: calendarview.cpp:1311
 msgid "Dissociating the occurrence failed."
 msgstr "Gagal mengasingkan kemunculan."
 
-#: calendarview.cpp:1268 calendarview.cpp:1311
+#: calendarview.cpp:1312 calendarview.cpp:1339
 msgid "Dissociating Failed"
 msgstr "Pengasingan Gagal"
 
-#: calendarview.cpp:1285
+#: calendarview.cpp:1325
 msgid "Dissociate future occurrences"
 msgstr "Asingkan kemunculan akan datang"
 
-#: calendarview.cpp:1310
+#: calendarview.cpp:1338
 msgid "Dissociating the future occurrences failed."
 msgstr "Gagal mengasingkan kemunculan akan datang."
 
-#: calendarview.cpp:1325 calendarview.cpp:1396 calendarview.cpp:1459
+#: calendarview.cpp:1353 calendarview.cpp:1424 calendarview.cpp:1487
 #, fuzzy
 msgid "No item selected."
 msgstr "Tiada kejadian dipilih."
 
-#: calendarview.cpp:1345 calendarview.cpp:1412
+#: calendarview.cpp:1373 calendarview.cpp:1440
 msgid "The item information was successfully sent."
 msgstr ""
 
-#: calendarview.cpp:1346
+#: calendarview.cpp:1374
 #, fuzzy
 msgid "Publishing"
 msgstr "Terbitkan"
 
-#: calendarview.cpp:1348
+#: calendarview.cpp:1376
 #, fuzzy, kde-format
 msgid "Unable to publish the item '%1'"
 msgstr "Tidak dapat mencari templat '%1'."
 
-#: calendarview.cpp:1413
+#: calendarview.cpp:1441
 #, fuzzy
 #| msgid "Go &Forward"
 msgid "Forwarding"
 msgstr "Pergi ke &Hadapan"
 
-#: calendarview.cpp:1415
+#: calendarview.cpp:1443
 #, fuzzy, kde-format
 msgid "Unable to forward the item '%1'"
 msgstr "Tidak dapat mencari templat '%1'."
 
-#: calendarview.cpp:1436
+#: calendarview.cpp:1464
 #, fuzzy
 msgid "The free/busy information was successfully sent."
 msgstr "Terbitkan maklumat lapang/&sibuk secara automatik"
 
-#: calendarview.cpp:1437 calendarview.cpp:1480
+#: calendarview.cpp:1465 calendarview.cpp:1508
 #, fuzzy
 msgid "Sending Free/Busy"
 msgstr "&Lapang/Sibuk"
 
-#: calendarview.cpp:1440
+#: calendarview.cpp:1468
 #, fuzzy
 msgid "Unable to publish the free/busy data."
 msgstr "Nama pengguna untuk maklumat penerbitan lapang/sibuk"
 
-#: calendarview.cpp:1464
+#: calendarview.cpp:1492
 #, fuzzy
 msgid "The item has no attendees."
 msgstr "Kejadian tidak mempunyai penghadir."
 
-#: calendarview.cpp:1476
+#: calendarview.cpp:1504
 #, fuzzy, kde-format
 msgid ""
 "The groupware message for item '%1' was successfully sent.\n"
 "Method: %2"
 msgstr "Terbitkan maklumat lapang/&sibuk secara automatik"
 
-#: calendarview.cpp:1486
+#: calendarview.cpp:1514
 #, kde-format
 msgctxt ""
 "Groupware message sending failed. %2 is request/reply/add/cancel/counter/etc."
@@ -3762,50 +3789,50 @@ msgid ""
 "Method: %2"
 msgstr ""
 
-#: calendarview.cpp:1578
+#: calendarview.cpp:1606
 msgid "*.ics|ICalendars"
 msgstr "*.ics|Ikalendar"
 
-#: calendarview.cpp:1596
+#: calendarview.cpp:1624
 msgid "The journal entries can not be exported to a vCalendar file."
 msgstr "Entri jurnal tidak dapat dieksport ke fail vCalendar."
 
-#: calendarview.cpp:1597
+#: calendarview.cpp:1625
 msgid "Data Loss Warning"
 msgstr "Amaran Kehilangan Data"
 
-#: calendarview.cpp:1598 actionmanager.cpp:1040
+#: calendarview.cpp:1626 actionmanager.cpp:1040
 msgid "Proceed"
 msgstr "Teruskan"
 
-#: calendarview.cpp:1608
+#: calendarview.cpp:1636
 msgid "*.vcs|vCalendars"
 msgstr "*.vcs|vCalendars"
 
-#: calendarview.cpp:1634
+#: calendarview.cpp:1662
 msgid "&Previous Day"
 msgstr "Hari &Sebelumnya"
 
-#: calendarview.cpp:1635 actionmanager.cpp:366 actionmanager.cpp:1320
+#: calendarview.cpp:1663 actionmanager.cpp:366 actionmanager.cpp:1320
 #, fuzzy, kde-format
 msgid "&Next Day"
 msgid_plural "&Next %1 Days"
 msgstr[0] "_n: Hari &seterusnya"
 msgstr[1] " %1 hari seterusnya"
 
-#: calendarview.cpp:1637
+#: calendarview.cpp:1665
 msgid "&Previous Week"
 msgstr "Minggu &Sebelumnya"
 
-#: calendarview.cpp:1638
+#: calendarview.cpp:1666
 msgid "&Next Week"
 msgstr "Minggu &Seterusnya"
 
-#: calendarview.cpp:1722 calendarview.cpp:1762
+#: calendarview.cpp:1750 calendarview.cpp:1790
 msgid "No filter"
 msgstr "Tiada penapis"
 
-#: calendarview.cpp:2083
+#: calendarview.cpp:2111
 #, fuzzy, kde-format
 msgid ""
 "The item \"%1\" has sub-to-dos. Do you want to delete just this item and "
@@ -3816,20 +3843,20 @@ msgstr ""
 "sahaja dan menjadikan semua subtugasannya tak bersandar, atau "
 "menghapuskannya bersama dengan semua subtugasannya?"
 
-#: calendarview.cpp:2089
+#: calendarview.cpp:2117
 msgid "Delete Only This"
 msgstr "Hapuskan Ini Sahaja"
 
-#: calendarview.cpp:2090 calendarview.cpp:2152
+#: calendarview.cpp:2118 calendarview.cpp:2180
 #, fuzzy
 msgid "Delete All"
 msgstr "Hapuskan &Semua"
 
-#: calendarview.cpp:2092
+#: calendarview.cpp:2120
 msgid "Deleting sub-to-dos"
 msgstr "Menghapuskan subtugasan"
 
-#: calendarview.cpp:2116
+#: calendarview.cpp:2144
 #, kde-format
 msgid ""
 "The item \"%1\" is marked read-only and cannot be deleted; it probably "
@@ -3838,11 +3865,11 @@ msgstr ""
 "Item \"%1\" bertanda baca saja dan tidak boleh dihapuskan; mungkin ia adalah "
 "anggota sumber kalendar baca saja.."
 
-#: calendarview.cpp:2120
+#: calendarview.cpp:2148
 msgid "Removing not possible"
 msgstr "Tidak boleh dibuang"
 
-#: calendarview.cpp:2148
+#: calendarview.cpp:2176
 #, fuzzy, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates; are you sure you want "
@@ -3851,7 +3878,7 @@ msgstr ""
 "Kejadian \"%1\" berulang pada beberapa tarikh; anda pasti ingin "
 "menghapuskannya dan semua pengulangannya?"
 
-#: calendarview.cpp:2157
+#: calendarview.cpp:2185
 #, fuzzy, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
@@ -3862,64 +3889,64 @@ msgstr ""
 "terkini sahaja pada  %2, pengulangan akan datang sahaja, atau semua "
 "pengulangannya?"
 
-#: calendarview.cpp:2163
+#: calendarview.cpp:2191
 msgid "Delete C&urrent"
 msgstr "Hapuskan yang &Semasa"
 
-#: calendarview.cpp:2164
+#: calendarview.cpp:2192
 msgid "Delete &Future"
 msgstr "Hapuskan yang &Akan Datang"
 
-#: calendarview.cpp:2165
+#: calendarview.cpp:2193
 msgid "Delete &All"
 msgstr "Hapuskan &Semua"
 
-#: calendarview.cpp:2251
+#: calendarview.cpp:2279
 msgid "Delete all completed to-dos?"
 msgstr "Hapuskan semua tugasan yang telah selesai?"
 
-#: calendarview.cpp:2252
+#: calendarview.cpp:2280
 msgid "Purge To-dos"
 msgstr "Singkirkan Tugasan"
 
-#: calendarview.cpp:2253
+#: calendarview.cpp:2281
 msgid "Purge"
 msgstr "Singkirkan"
 
-#: calendarview.cpp:2257
+#: calendarview.cpp:2285
 msgid "Purging completed to-dos"
 msgstr "Menyingkirkan tugasan yang telah selesai"
 
-#: calendarview.cpp:2274
+#: calendarview.cpp:2302
 #, fuzzy
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr ""
 "Tidak dapat menyingkirkan item tugasan dengan anak-anak yang belum selesai."
 
-#: calendarview.cpp:2275
+#: calendarview.cpp:2303
 msgid "Delete To-do"
 msgstr "Hapuskan Tugasan"
 
-#: calendarview.cpp:2284
+#: calendarview.cpp:2312
 #, fuzzy
 msgid "Unable to edit item: it is locked by another process."
 msgstr "Tidak dapat mengedit kejadian: ia dipasak oleh proses lain."
 
-#: calendarview.cpp:2317
+#: calendarview.cpp:2345
 #, fuzzy, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "Tidak dapat menyalin kejadian ke %1."
 
-#: calendarview.cpp:2318
+#: calendarview.cpp:2346
 msgid "Copying Failed"
 msgstr "Gagal Disalin"
 
-#: calendarview.cpp:2362
+#: calendarview.cpp:2390
 #, fuzzy, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "Tidak dapat mengalihkan kejadian ke %1."
 
-#: calendarview.cpp:2363
+#: calendarview.cpp:2391
 msgid "Moving Failed"
 msgstr "Gagal Dialihkan"
 
@@ -7771,9 +7798,9 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QPushButton, m_buttonAdd)
 #: rc.cpp:1145 rc.cpp:2009
 msgid ""
-"Clicking this button to create a new template. The current settings in the "
-"editor will be created a template which you can use to quickly add new items "
-"in the future."
+"Click on this button to create a new template based on the current settings "
+"in the editor. You can use this template to quickly add new items in the "
+"future."
 msgstr ""
 
 #. i18n: file: template_management_dialog_base.ui:72
