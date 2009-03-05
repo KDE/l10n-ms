@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-23 05:38+0100\n"
+"POT-Creation-Date: 2009-03-05 06:20+0100\n"
 "PO-Revision-Date: 2005-11-17 23:25+0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1520,16 +1520,19 @@ msgstr ""
 "akan berfungsi dengan baik. Pertimbangkan naik taraf GnuPG (http://gnupg.org)"
 
 #: kgpginterface.cpp:458 kgpgtextinterface.cpp:108
+#: transactions/kgpgtransaction.cpp:149
 msgid " or "
 msgstr "atau"
 
 #: kgpginterface.cpp:1010 kgpgtextinterface.cpp:114
+#: transactions/kgpgchangeexpire.cpp:71
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
 msgstr "<b>Frasa laluan tidak bagus</b>. Anda ada %1 cubaan lagi.<br>"
 
 #: kgpginterface.cpp:1011 kgpgtextinterface.cpp:118
+#: transactions/kgpgchangeexpire.cpp:72 transactions/kgpgtransaction.cpp:177
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Masukkan frasa laluan untuk <b>%1</b>"
@@ -1947,6 +1950,7 @@ msgid "Enter passphrase (symmetrical encryption)"
 msgstr "Masukkan frasa laluan (penyulitan simetri)"
 
 #: kgpgtextinterface.cpp:106 model/kgpgitemnode.cpp:836
+#: transactions/kgpgtransaction.cpp:170
 msgid "[No user id found]"
 msgstr "[Tiada id pengguna ditemui]"
 
@@ -4157,6 +4161,81 @@ msgid_plural "%1 keys"
 msgstr[0] "%1 subkunci"
 msgstr[1] "%1 subkunci"
 
+#: transactions/kgpgaddphoto.cpp:52
+msgid "This image is very large. Use it anyway?"
+msgstr "Imej ini sangat besar. Gunakan juga?"
+
+#: transactions/kgpgaddphoto.cpp:52
+msgid "Use Anyway"
+msgstr ""
+
+#: transactions/kgpgaddphoto.cpp:52
+#, fuzzy
+msgid "Do Not Use"
+msgstr "Cipta"
+
+#: transactions/kgpgchangeexpire.cpp:98
+#, fuzzy
+#| msgid ""
+#| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing the "
+#| "key expiration in console mode?</qt>"
+msgid ""
+"<qt><b>Changing expiration failed.</b><br />Do you want to try changing the "
+"key expiration in console mode?</qt>"
+msgstr ""
+"<qt><b>Mengubah peluputan gagal.</b><br>Anda ingin cuba ubah peluputan kunci "
+"dalam mod konsol?</qt>"
+
+#: transactions/kgpgchangeexpire.cpp:101
+msgid "work in progress..."
+msgstr ""
+
+#: transactions/kgpgchangepass.cpp:64
+#, fuzzy, kde-format
+msgid "Enter old passphrase for <b>%1</b>"
+msgstr "Masukkan frasa laluan untuk <b>%1</b>"
+
+#: transactions/kgpgchangepass.cpp:67
+#, fuzzy, kde-format
+msgid ""
+"<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
+"all your encrypted files and messages will be inaccessible!</qt>"
+msgstr ""
+"<qt>Masukkan frasa laluan baru bagi <b>%1</b><br>Jika anda lupa frasa laluan "
+"ini, semua fail dan mesej anda yang disulitkan akan hilang!<br></qt>"
+
+#: transactions/kgpggeneratekey.cpp:113
+#, fuzzy, kde-format
+#| msgid ""
+#| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
+#| "alphanumeric characters and random sequences"
+msgid ""
+"<p><b>Enter passphrase for %1 &lt;%2&gt;</b>:<br />Passphrase should include "
+"non alphanumeric characters and random sequences</p>"
+msgstr ""
+"<b>Masukkan frasa laluan untuk %1</b>:<br>Frasa laluan hendaklah memasukkan "
+"aksara bukan alfaangka dan jujukan rawak"
+
+#: transactions/kgpggeneratekey.cpp:115
+#, fuzzy, kde-format
+#| msgid ""
+#| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
+#| "alphanumeric characters and random sequences"
+msgid ""
+"<p><b>Enter passphrase for %1</b>:<br />Passphrase should include non "
+"alphanumeric characters and random sequences</p>"
+msgstr ""
+"<b>Masukkan frasa laluan untuk %1</b>:<br>Frasa laluan hendaklah memasukkan "
+"aksara bukan alfaangka dan jujukan rawak"
+
+#: transactions/kgpgtransaction.cpp:175
+#, fuzzy, kde-format
+#| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
+msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
+msgid_plural "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
+msgstr[0] "<b>Frasa laluan tidak bagus</b>. Anda ada %1 cubaan lagi.<br>"
+msgstr[1] "<b>Frasa laluan tidak bagus</b>. Anda ada %1 cubaan lagi.<br>"
+
 #~ msgid "Could not change expiration"
 #~ msgstr "Tidak dapat ubah peluputan"
 
@@ -4197,48 +4276,6 @@ msgstr[1] "%1 subkunci"
 
 #~ msgid "Step Three: Select your Default Private Key"
 #~ msgstr "Langkah Tiga: Pilih Kunci Persendirian Piawai"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing "
-#~| "the key expiration in console mode?</qt>"
-#~ msgid ""
-#~ "<qt><b>Changing expiration failed.</b><br />Do you want to try changing "
-#~ "the key expiration in console mode?</qt>"
-#~ msgstr ""
-#~ "<qt><b>Mengubah peluputan gagal.</b><br>Anda ingin cuba ubah peluputan "
-#~ "kunci dalam mod konsol?</qt>"
-
-#, fuzzy
-#~ msgid "Enter old passphrase for <b>%1</b>"
-#~ msgstr "Masukkan frasa laluan untuk <b>%1</b>"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
-#~ "all your encrypted files and messages will be inaccessible<br /></qt>"
-#~ msgstr ""
-#~ "<qt>Masukkan frasa laluan baru bagi <b>%1</b><br>Jika anda lupa frasa "
-#~ "laluan ini, semua fail dan mesej anda yang disulitkan akan hilang!<br></"
-#~ "qt>"
-
-#~ msgid "This image is very large. Use it anyway?"
-#~ msgstr "Imej ini sangat besar. Gunakan juga?"
-
-#, fuzzy
-#~ msgid "Do Not Use"
-#~ msgstr "Cipta"
-
-#, fuzzy
-#~| msgid ""
-#~| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
-#~| "alphanumeric characters and random sequences"
-#~ msgid ""
-#~ "<p><b>Enter passphrase for %1</b>:<br />Passphrase should include non "
-#~ "alphanumeric characters and random sequences</p>"
-#~ msgstr ""
-#~ "<b>Masukkan frasa laluan untuk %1</b>:<br>Frasa laluan hendaklah "
-#~ "memasukkan aksara bukan alfaangka dan jujukan rawak"
 
 #, fuzzy
 #~| msgid ""
