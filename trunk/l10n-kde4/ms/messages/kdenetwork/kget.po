@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-03 10:22+0100\n"
+"POT-Creation-Date: 2009-03-08 10:12+0100\n"
 "PO-Revision-Date: 2006-08-24 22:53+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -24,8 +24,8 @@ msgstr ""
 
 #: conf/transfersgroupwidget.cpp:73
 msgid ""
-"A group can not have an empty name\n"
-"Please select a new one"
+"A group can not have an empty name.\n"
+"Please select a new one."
 msgstr ""
 
 #: conf/transfersgroupwidget.cpp:84
@@ -34,8 +34,8 @@ msgstr "Nama kumpulan telah digunakan"
 
 #: conf/transfersgroupwidget.cpp:84
 msgid ""
-"Another group with this name already exists\n"
-"Please select a different name"
+"Another group with this name already exists.\n"
+"Please select a different name."
 msgstr ""
 
 #: conf/transfersgroupwidget.cpp:102 conf/transfersgroupwidget.cpp:107
@@ -47,7 +47,9 @@ msgid "My Downloads"
 msgstr "Muatturun Saya"
 
 #: conf/transfersgroupwidget.cpp:130
-msgid "You can not delete this group!"
+#, fuzzy
+#| msgid "You can not delete this group!"
+msgid "You can not delete this group."
 msgstr "Anda tidak boleh padam kumpulan ini!"
 
 #: conf/transfersgroupwidget.cpp:135
@@ -79,9 +81,7 @@ msgstr "Tambah _direktori"
 msgid "Select Icon"
 msgstr ""
 
-#. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:81
-#. i18n: ectx: property (text), widget (QPushButton, configureScriptButton)
-#: conf/transfersgroupwidget.cpp:183 rc.cpp:482
+#: conf/transfersgroupwidget.cpp:183
 msgid "Configure..."
 msgstr ""
 
@@ -136,11 +136,11 @@ msgid "Network and Downloads"
 msgstr "Bahagian mesej emel"
 
 #: conf/preferencesdialog.cpp:73
-msgid "Webinterface"
+msgid "Web Interface"
 msgstr ""
 
 #: conf/preferencesdialog.cpp:73
-msgid "Control KGet over Network or Internet"
+msgid "Control KGet over a Network or the Internet"
 msgstr ""
 
 #: conf/preferencesdialog.cpp:74
@@ -285,13 +285,12 @@ msgstr "KGet"
 
 #: core/transferhandler.cpp:373
 #, fuzzy
-msgid "KGet quits now because all downloads have been completed."
+msgid "KGet is now closing, as all downloads have completed."
 msgstr "Semua selesai. Klik \"Maju\" untuk meneruskan."
 
 #: core/transferhandler.cpp:383
 #, fuzzy
-msgid ""
-"The computer will turn off now because all downloads have been completed."
+msgid "The computer will now turn off, as all downloads have completed."
 msgstr "Semua selesai. Klik \"Maju\" untuk meneruskan."
 
 #: core/transfergrouphandler.cpp:114
@@ -445,7 +444,7 @@ msgstr ""
 #: transfer-plugins/metalink/metalink.cpp:37
 #, fuzzy
 msgctxt "transfer state: connecting"
-msgid "Connecting.."
+msgid "Connecting...."
 msgstr "Perhubungan"
 
 #: transfer-plugins/kio/transferKio.cpp:125
@@ -454,23 +453,19 @@ msgid "Aborted"
 msgstr ""
 
 #: transfer-plugins/kio/transferKio.cpp:153
-#, fuzzy
-msgid "Downloading..."
-msgstr "Muatturun Dipilih"
-
 #: transfer-plugins/kio/transferKio.cpp:167
 #: transfer-plugins/kio/transferKio.cpp:182
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:248
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:265
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:282
 #, fuzzy
-msgid "Downloading.."
+msgid "Downloading...."
 msgstr "Muatturun Dipilih"
 
 #: transfer-plugins/mms/mmsTransfer.cpp:36
 #, fuzzy
 msgctxt "transfer state: running"
-msgid "Running.."
+msgid "Running...."
 msgstr "Perhubungan"
 
 #: transfer-plugins/metalink/metalink.cpp:112
@@ -556,12 +551,12 @@ msgid "Expand Folder Tree"
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:266
-msgid "You will lose all data in this file, are you sure you want to do this ?"
+msgid "You will lose all data in this file, are you sure you want to do this?"
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:267
 msgid ""
-"You will lose all data in these files, are you sure you want to do this ?"
+"You will lose all data in these files, are you sure you want to do this?"
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:281
@@ -701,16 +696,16 @@ msgstr "Kelajuan"
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:333
 msgid ""
-"Whether or not the peer has choked us, when we are choked the peer will not "
-"send any data to us"
+"Whether or not the peer has choked us.  If we are choked, the peer will not "
+"send us any data."
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:334
-msgid "Snubbed means the peer hasn't sent us any data in the last 2 minutes"
+msgid "Snubbed means the peer has not sent us any data in the last 2 minutes"
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:335
-msgid "How much data the peer has of the torrent"
+msgid "How much of the torrent's data the peer has"
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:336
@@ -718,7 +713,8 @@ msgid "Whether or not the peer has DHT enabled"
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:337
-msgid "The score of the peer, KTorrent uses this to determine who to upload to"
+msgid ""
+"The score of the peer. KTorrent uses this to determine who to upload to."
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:338
@@ -730,11 +726,11 @@ msgid "The number of download and upload requests"
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:340
-msgid "How much data we downloaded from this peer"
+msgid "How much data we have downloaded from this peer"
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:341
-msgid "How much data we uploaded to this peer"
+msgid "How much data we have uploaded to this peer"
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:342
@@ -750,10 +746,6 @@ msgid "URL"
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:54
-#, fuzzy, kde-format
-msgid "Advanced-Details for %1"
-msgstr "Tambah _direktori"
-
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:58
 #, fuzzy, kde-format
 msgid "Advanced Details for %1"
@@ -810,7 +802,7 @@ msgstr "URL Autokonfigurasi:"
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:101
 #, kde-format
-msgid "There already is a tracker named <b>%1</b> !"
+msgid "There already is a tracker named <b>%1</b>."
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:119
@@ -953,39 +945,39 @@ msgstr "Buka Fail"
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:77
 #, fuzzy
-msgid "Downloading Torrent-File.."
+msgid "Downloading Torrent File...."
 msgstr "Muatturun Dipilih"
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:213
 #, fuzzy
 msgctxt "transfer state: downloading"
-msgid "Downloading.."
+msgid "Downloading...."
 msgstr "Muatturun Dipilih"
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:283
 #, fuzzy
-msgid "Analyzing torrent.."
+msgid "Analyzing torrent...."
 msgstr "Muatturun Dipilih"
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:332
 #: transfer-plugins/bittorrent/bttransfer.cpp:343
-msgid "An error occurred.."
+msgid "An error occurred...."
 msgstr ""
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:353
 #, fuzzy
 msgctxt "Transfer status: seeding"
-msgid "Seeding.."
+msgid "Seeding...."
 msgstr "Jadual Program"
 
 #: transfer-plugins/bittorrent/btsettingswidget.cpp:36
 #, fuzzy
-msgid "Select a default Torrent-Folder"
+msgid "Select a default torrent folder"
 msgstr "Tambah _direktori"
 
 #: transfer-plugins/bittorrent/btsettingswidget.cpp:38
 #, fuzzy
-msgid "Select a default Temporary-Folder"
+msgid "Select a default temporary folder"
 msgstr "Tambah _direktori"
 
 #: transfer-plugins/bittorrent/libbtcore/peer/peerid.cpp:203
@@ -1467,7 +1459,7 @@ msgstr "tidak dapat membuka fail tetapan `%s': %s"
 
 #: transfer-plugins/contentfetch/contentfetch.cpp:47
 msgctxt "Transfer state: processing script"
-msgid "Processing script..."
+msgid "Processing script...."
 msgstr ""
 
 #: transfer-plugins/contentfetch/contentfetch.cpp:78
@@ -1507,7 +1499,7 @@ msgstr "Pengurus Pencetak"
 
 #: ui/groupsettingsdialog.cpp:18
 #, fuzzy, kde-format
-msgid "Group-Settings for %1"
+msgid "Group Settings for %1"
 msgstr "Tambah _direktori"
 
 #: ui/transfersviewdelegate.cpp:491
@@ -1595,7 +1587,7 @@ msgstr "Pemasangan selesai"
 
 #: ui/history/transferhistory.cpp:247
 #, fuzzy
-msgid "Source-File"
+msgid "Source File"
 msgstr "Sumber"
 
 #: ui/history/transferhistory.cpp:247
@@ -1661,7 +1653,7 @@ msgstr "Buka Fail"
 
 #: ui/transfersettingsdialog.cpp:18
 #, fuzzy, kde-format
-msgid "Transfer-Settings for %1"
+msgid "Transfer Settings for %1"
 msgstr "Tambah _direktori"
 
 #: ui/nepomukwidget.cpp:56
@@ -1704,8 +1696,9 @@ msgid "Sticky"
 msgstr "Nota Lekat"
 
 #: ui/droptarget.cpp:214 mainwindow.cpp:871
-msgid "The dropped file is a KGet-Transferlist"
-msgstr ""
+#, fuzzy
+msgid "The dropped file is a KGet Transfer List"
+msgstr "Log Pemindahan"
 
 #: ui/droptarget.cpp:215 mainwindow.cpp:872
 #, fuzzy
@@ -1714,7 +1707,7 @@ msgstr "Muatturun Dipilih"
 
 #: ui/droptarget.cpp:216 mainwindow.cpp:873
 #, fuzzy
-msgid "&Load transferlist"
+msgid "&Load transfer list"
 msgstr "Log Pemindahan"
 
 #: ui/droptarget.cpp:272
@@ -1811,7 +1804,7 @@ msgid "Import Links"
 msgstr "Pautan Pelayan"
 
 #: ui/linkview/kget_linkview.cpp:77
-msgid "Filter files here..."
+msgid "Filter files here...."
 msgstr ""
 
 #: ui/linkview/kget_linkview.cpp:82
@@ -1820,7 +1813,7 @@ msgid "Contains"
 msgstr "Perhubungan"
 
 #: ui/linkview/kget_linkview.cpp:83
-msgid "Does not Contain"
+msgid "Does not contain"
 msgstr ""
 
 #: ui/linkview/kget_linkview.cpp:94
@@ -1871,7 +1864,7 @@ msgid "Cancel"
 msgstr ""
 
 #: ui/linkview/kget_linkview.cpp:219
-msgid "Auxiliar header"
+msgid "Auxiliary header"
 msgstr ""
 
 #: ui/linkview/kget_linkview.cpp:220
@@ -1953,7 +1946,7 @@ msgstr "%1/s"
 
 #: extensions/webinterface/httpserver.cpp:154
 msgctxt "@label"
-msgid "KGet Webinterface"
+msgid "KGet Web Interface"
 msgstr ""
 
 #: extensions/webinterface/httpserver.cpp:155
@@ -2017,7 +2010,7 @@ msgstr ""
 
 #: extensions/webinterface/httpserver.cpp:165
 msgctxt "@label Title in header"
-msgid "Webinterface"
+msgid "Web Interface"
 msgstr ""
 
 #: extensions/webinterface/httpserver.cpp:166
@@ -2066,7 +2059,7 @@ msgstr "Muatturun Dipilih"
 
 #: extensions/webinterface/httpserver.cpp:176
 msgctxt "@label text in footer"
-msgid "KGet Webinterface | Valid XHTML 1.0 Strict &amp; CSS"
+msgid "KGet Web Interface | Valid XHTML 1.0 Strict &amp; CSS"
 msgstr ""
 
 #: main.cpp:113 mainwindow.cpp:85 mainwindow.cpp:436
@@ -2158,7 +2151,7 @@ msgid "Mensur Zahirovic (Nookie)"
 msgstr ""
 
 #: main.cpp:132
-msgid "Design of Webinterface"
+msgid "Design of Web Interface"
 msgstr ""
 
 #: main.cpp:137
@@ -2400,8 +2393,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lbl_maxnum)
 #: rc.cpp:8
 #, fuzzy
-msgid "Downloads number:"
-msgstr "Pengurus Pencetak"
+msgid "Number of downloads:"
+msgstr "Numbor peranti"
 
 #. i18n: file: conf/dlgnetwork.ui:45
 #. i18n: ectx: property (text), widget (QLabel, lbl_maxnum_2)
@@ -2421,7 +2414,7 @@ msgstr "Kelajuan"
 #. i18n: ectx: property (text), widget (QLabel, dllimitlb)
 #: rc.cpp:17
 #, fuzzy
-msgid "Global Download-Limit:"
+msgid "Global Download Limit:"
 msgstr "Muatturun Dipilih"
 
 #. i18n: file: conf/dlgnetwork.ui:78
@@ -2440,7 +2433,7 @@ msgstr " %1 KB/s "
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:23
 #, fuzzy
-msgid "Global Upload-Limit:"
+msgid "Global Upload Limit:"
 msgstr "Muatturun Dipilih"
 
 #. i18n: file: conf/dlgnetwork.ui:117
@@ -2526,7 +2519,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QTableWidget, folderForExtensionList)
 #: rc.cpp:68
 #, fuzzy
-msgid "File-Extension"
+msgid "File Extension"
 msgstr "Penghujungan"
 
 #. i18n: file: conf/dlgdirectories.ui:109
@@ -2581,7 +2574,7 @@ msgstr "Memulakan VNC"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartupAction)
 #: rc.cpp:102
 #, fuzzy
-msgid "Restore Download-State"
+msgid "Restore Download State"
 msgstr "Muatturun Dipilih"
 
 #. i18n: file: conf/dlgadvanced.ui:61
@@ -2692,8 +2685,9 @@ msgstr ""
 #. i18n: file: conf/dlgwebinterface.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_WebinterfaceEnabled)
 #: rc.cpp:156
-msgid "Enable Webinterface"
-msgstr ""
+#, fuzzy
+msgid "Enable Web Interface"
+msgstr "Animasi ANIM"
 
 #. i18n: file: conf/dlgwebinterface.ui:31
 #. i18n: ectx: property (text), widget (QLabel, portLabel)
@@ -2797,21 +2791,21 @@ msgstr "Log Pemindahan"
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:16
 #. i18n: ectx: property (text), widget (QLabel, torrent_label)
 #: rc.cpp:210
-msgid "Scanning data of torrent :"
+msgid "Scanning data of torrent:"
 msgstr ""
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:30
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: rc.cpp:213
 #, fuzzy
-msgid "Number of chunks found :"
+msgid "Number of chunks found:"
 msgstr "Numbor peranti"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:40
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: rc.cpp:216
 #, fuzzy
-msgid "Number of chunks failed :"
+msgid "Number of chunks failed:"
 msgstr "Numbor peranti"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:50
@@ -2883,7 +2877,7 @@ msgstr "Muatturun Dipilih"
 #. i18n: ectx: property (text), widget (QLabel, torrentFolderLabel)
 #: rc.cpp:267
 #, fuzzy
-msgid "Default Torrent-Folder:"
+msgid "Default torrent folder:"
 msgstr "Tambah _direktori"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:129
@@ -2896,7 +2890,7 @@ msgstr "Tambah _direktori"
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, preallocBox)
 #: rc.cpp:273
-msgid "Preallocate disk-space"
+msgid "Pre-allocate disk space"
 msgstr ""
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/webseedstab.ui:21
@@ -3100,14 +3094,16 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: rc.cpp:362
 #, fuzzy
-msgid "Download-Speed:"
+msgid "Download Speed:"
 msgstr "Pemasangan selesai"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:125
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: rc.cpp:374
-msgid "Upload-Speed:"
-msgstr ""
+#, fuzzy
+#| msgid "Speed"
+msgid "Upload Speed:"
+msgstr "Kelajuan"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:177
 #. i18n: ectx: property (text), widget (QLabel, label_5)
@@ -3137,7 +3133,7 @@ msgstr "Sumber"
 #. i18n: ectx: property (title), widget (QGroupBox, fileSettingGroupBox)
 #: rc.cpp:413
 #, fuzzy
-msgid "File-Settings"
+msgid "File Settings"
 msgstr "Jadual Program"
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:25
@@ -3181,7 +3177,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QGroupBox, loginGroupBox)
 #: rc.cpp:434
 msgid ""
-"Provide login info of your youtube account in order to access restricted "
+"Provide login info of your YouTube account in order to access restricted "
 "media."
 msgstr ""
 
@@ -3254,20 +3250,26 @@ msgstr ""
 #. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:60
 #. i18n: ectx: property (text), widget (QPushButton, newScriptButton)
 #: rc.cpp:473
-msgid "New Script..."
+msgid "New Script...."
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:74
 #. i18n: ectx: property (text), widget (QPushButton, editScriptButton)
 #: rc.cpp:479
-msgid "Edit..."
+msgid "Edit...."
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:81
+#. i18n: ectx: property (text), widget (QPushButton, configureScriptButton)
+#: rc.cpp:482
+msgid "Configure...."
 msgstr ""
 
 #. i18n: file: ui/transfersettingsdialog.ui:22
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
 #: rc.cpp:485
 #, fuzzy
-msgid "Transfer-Settings"
+msgid "Transfer Settings"
 msgstr "Pemindahan fail"
 
 #. i18n: file: ui/transfersettingsdialog.ui:31
@@ -3321,8 +3323,9 @@ msgstr "Waktu Alaska"
 #. i18n: file: ui/groupsettingsdialog.ui:19
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
 #: rc.cpp:535
-msgid "Group-Settings"
-msgstr ""
+#, fuzzy
+msgid "Group Settings"
+msgstr "Tambah _direktori"
 
 #. i18n: file: ui/groupsettingsdialog.ui:28
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -3437,6 +3440,23 @@ msgstr ""
 #: rc.cpp:595
 msgid "&Tools"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Downloading.."
+#~ msgstr "Muatturun Dipilih"
+
+#, fuzzy
+#~ msgid "Advanced-Details for %1"
+#~ msgstr "Tambah _direktori"
+
+#, fuzzy
+#~ msgctxt "transfer state: downloading"
+#~ msgid "Downloading.."
+#~ msgstr "Muatturun Dipilih"
+
+#, fuzzy
+#~ msgid "Downloads number:"
+#~ msgstr "Pengurus Pencetak"
 
 #, fuzzy
 #~| msgid " %1/s "
