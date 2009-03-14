@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-13 10:22+0100\n"
+"POT-Creation-Date: 2009-03-14 10:51+0100\n"
 "PO-Revision-Date: 2005-10-06 11:21+0800\n"
 "Last-Translator: junetazawawi <junetazawawi@yahoo.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -118,6 +118,13 @@ msgstr "hari"
 msgctxt "@item:inlistbox Time units"
 msgid "weeks"
 msgstr "minggu"
+
+#: lib/filedialog.cpp:55
+#, fuzzy
+#| msgid "Failed to open file"
+msgctxt "@option:check"
+msgid "Append to existing file"
+msgstr "Gagal membuka fail"
 
 #: kalarmapp.cpp:305 kalarmapp.cpp:375 kalarmapp.cpp:377 kalarmapp.cpp:387
 #: kalarmapp.cpp:389 kalarmapp.cpp:404 kalarmapp.cpp:493 kalarmapp.cpp:495
@@ -3674,19 +3681,25 @@ msgctxt "@action"
 msgid "Im&port..."
 msgstr "Import &Tarikh Lahir..."
 
-#: resourceselector.cpp:374
+#: resourceselector.cpp:321 mainwindow.cpp:495
+#, fuzzy
+msgctxt "@action"
+msgid "E&xport..."
+msgstr "Import &Tarikh Lahir..."
+
+#: resourceselector.cpp:378
 #, fuzzy
 msgctxt "@action"
 msgid "Use as &Default for Active Alarms"
 msgstr "Gunakan fon &piawai"
 
-#: resourceselector.cpp:375
+#: resourceselector.cpp:379
 #, fuzzy
 msgctxt "@action"
 msgid "Use as &Default for Archived Alarms"
 msgstr "Gunakan fon &piawai"
 
-#: resourceselector.cpp:376
+#: resourceselector.cpp:380
 #, fuzzy
 msgctxt "@action"
 msgid "Use as &Default for Alarm Templates"
@@ -4791,7 +4804,7 @@ msgctxt "@info"
 msgid "Cannot defer reminder past the main alarm time (%1)"
 msgstr "Tidak dapat menunda peringatan melepasi waktu penggera utama (%1)"
 
-#: alarmcalendar.cpp:274 alarmcalendar.cpp:586
+#: alarmcalendar.cpp:276 alarmcalendar.cpp:588
 #, fuzzy, kde-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -4802,7 +4815,7 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: alarmcalendar.cpp:289
+#: alarmcalendar.cpp:291
 #, fuzzy, kde-format
 #| msgid ""
 #| "Error loading calendar:\n"
@@ -4819,7 +4832,7 @@ msgstr ""
 "\n"
 "Baiki atau hapuskan fail."
 
-#: alarmcalendar.cpp:352
+#: alarmcalendar.cpp:354
 #, fuzzy, kde-format
 #| msgid ""
 #| "Failed to save calendar to\n"
@@ -4830,7 +4843,7 @@ msgstr ""
 "Gagal menyimpan kalendar ke\n"
 "'%1'"
 
-#: alarmcalendar.cpp:361
+#: alarmcalendar.cpp:363
 #, fuzzy, kde-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -4841,19 +4854,57 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: alarmcalendar.cpp:555
+#: alarmcalendar.cpp:557 alarmcalendar.cpp:699
 #, fuzzy
 msgctxt "@info/plain"
 msgid "Calendar Files"
 msgstr "URL fail kalendar"
 
-#: alarmcalendar.cpp:577 alarmcalendar.cpp:598
+#: alarmcalendar.cpp:579 alarmcalendar.cpp:600
 #, fuzzy, kde-format
 #| msgid ""
 #| "Cannot open audio file:\n"
 #| "%1"
 msgctxt "@info"
 msgid "Could not load calendar <filename>%1</filename>."
+msgstr ""
+"Tidak dapat membuka fail audio:\n"
+"%1"
+
+#: alarmcalendar.cpp:700
+msgctxt "@title:window"
+msgid "Choose Export Calendar"
+msgstr ""
+
+#: alarmcalendar.cpp:722
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Error loading calendar to append to:<nl/><filename>%1</filename>"
+msgstr ""
+"Tidak dapat membuka fail audio:\n"
+"%1"
+
+#: alarmcalendar.cpp:757
+#, fuzzy, kde-format
+#| msgid ""
+#| "Failed to save calendar to\n"
+#| "'%1'"
+msgctxt "@info"
+msgid "Failed to save new calendar to:<nl/><filename>%1</filename>"
+msgstr ""
+"Gagal menyimpan kalendar ke\n"
+"'%1'"
+
+#: alarmcalendar.cpp:763
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Cannot upload new calendar to:<nl/><filename>%1</filename>"
 msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
@@ -5777,19 +5828,19 @@ msgstr "&Beritahu bila e-mel jauh dibaris gilir"
 msgid "&File"
 msgstr "Fai&l"
 
-#. i18n: file: kalarmui.rc:28
+#. i18n: file: kalarmui.rc:29
 #. i18n: ectx: Menu (view)
 #: rc.cpp:358 rc.cpp:724
 msgid "&View"
 msgstr ""
 
-#. i18n: file: kalarmui.rc:39
+#. i18n: file: kalarmui.rc:40
 #. i18n: ectx: Menu (actions)
 #: rc.cpp:361 rc.cpp:727
 msgid "&Actions"
 msgstr "&Tindakan"
 
-#. i18n: file: kalarmui.rc:53
+#. i18n: file: kalarmui.rc:55
 #. i18n: ectx: Menu (settings)
 #: rc.cpp:364 rc.cpp:730
 #, fuzzy
@@ -6054,33 +6105,33 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: messagewin.cpp:1572
+#: messagewin.cpp:1577
 #, fuzzy
 #| msgid "Do you really want to acknowledge this alarm?"
 msgctxt "@info"
 msgid "Do you really want to acknowledge this alarm?"
 msgstr "Anda pasti ingin memperakui penggera ini?"
 
-#: messagewin.cpp:1573
+#: messagewin.cpp:1578
 #, fuzzy
 #| msgid "Acknowledge Alarm"
 msgctxt "@action:button"
 msgid "Acknowledge Alarm"
 msgstr "Perakui penggera"
 
-#: messagewin.cpp:1573
+#: messagewin.cpp:1578
 #, fuzzy
 #| msgid "&Acknowledge"
 msgctxt "@action:button"
 msgid "Acknowledge"
 msgstr "&Perakui"
 
-#: messagewin.cpp:1620
+#: messagewin.cpp:1625
 msgctxt "@info"
 msgid "Unable to locate this email in <application>KMail</application>"
 msgstr ""
 
-#: messagewin.cpp:1750
+#: messagewin.cpp:1755
 msgctxt "@info"
 msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
 msgstr ""
@@ -6950,12 +7001,18 @@ msgstr "Import &Tarikh Lahir..."
 
 #: mainwindow.cpp:491
 #, fuzzy
+msgctxt "@action"
+msgid "E&xport Selected Alarms..."
+msgstr "Import &Tarikh Lahir..."
+
+#: mainwindow.cpp:499
+#, fuzzy
 #| msgid "&Refresh Alarms"
 msgctxt "@action"
 msgid "&Refresh Alarms"
 msgstr "&Muat Semula Penggera"
 
-#: mainwindow.cpp:695
+#: mainwindow.cpp:704
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Do you really want to delete the selected alarm?"
@@ -6963,7 +7020,7 @@ msgid_plural "Do you really want to delete the %1 selected alarms?"
 msgstr[0] "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 msgstr[1] "Anda pasti ingin menghapuskan %1 penggera yang dipilih?"
 
-#: mainwindow.cpp:697
+#: mainwindow.cpp:706
 #, fuzzy
 msgctxt "@title:window"
 msgid "Delete Alarm"
@@ -6971,19 +7028,19 @@ msgid_plural "Delete Alarms"
 msgstr[0] "_n: Hapuskan penggera"
 msgstr[1] "Hapuskan penggera"
 
-#: mainwindow.cpp:698 templatedlg.cpp:186
+#: mainwindow.cpp:707 templatedlg.cpp:186
 #, fuzzy
 msgctxt "@action:button"
 msgid "&Delete"
 msgstr "_n: Hapuskan penggera"
 
-#: mainwindow.cpp:838
+#: mainwindow.cpp:858
 #, fuzzy
 msgctxt "@info"
 msgid "Import birthdays"
 msgstr "Import &Tarikh Lahir..."
 
-#: mainwindow.cpp:1008
+#: mainwindow.cpp:1028
 #, fuzzy, kde-format
 #| msgctxt "Undo-action: message"
 #| msgid "%1: %2"
@@ -6991,7 +7048,7 @@ msgctxt "@action Undo/Redo [action]"
 msgid "%1 %2"
 msgstr "%1: %2"
 
-#: mainwindow.cpp:1009
+#: mainwindow.cpp:1029
 #, fuzzy, kde-format
 #| msgctxt "Undo [action]: message"
 #| msgid "%1 %2: %3"
@@ -6999,49 +7056,49 @@ msgctxt "@action Undo [action]: message"
 msgid "%1 %2: %3"
 msgstr "%1 %2: %3"
 
-#: mainwindow.cpp:1283
+#: mainwindow.cpp:1303
 #, fuzzy
 #| msgid "Display Alarms"
 msgctxt "@item:inlistbox"
 msgid "Display Alarm"
 msgstr "Paparkan penggera"
 
-#: mainwindow.cpp:1285
+#: mainwindow.cpp:1305
 #, fuzzy
 #| msgid "Email Alarms"
 msgctxt "@item:inlistbox"
 msgid "Email Alarm"
 msgstr "Penggera E-mel"
 
-#: mainwindow.cpp:1287
+#: mainwindow.cpp:1307
 #, fuzzy
 #| msgid "Command Alarms"
 msgctxt "@item:inlistbox"
 msgid "Command Alarm"
 msgstr "Penggera Arahan"
 
-#: mainwindow.cpp:1289
+#: mainwindow.cpp:1309
 #, fuzzy
 #| msgid "Alarm Type"
 msgctxt "@title:window"
 msgid "Alarm Type"
 msgstr "Jenis penggera"
 
-#: mainwindow.cpp:1290
+#: mainwindow.cpp:1310
 #, fuzzy
 #| msgid "Choose Alarm Template"
 msgctxt "@info"
 msgid "Choose alarm type to create:"
 msgstr "Pilih Templat Penggera"
 
-#: mainwindow.cpp:1415
+#: mainwindow.cpp:1439
 #, fuzzy
 #| msgid "Ena&ble"
 msgctxt "@action"
 msgid "Ena&ble"
 msgstr "&Aktifkan"
 
-#: mainwindow.cpp:1415
+#: mainwindow.cpp:1439
 #, fuzzy
 #| msgid "Disa&ble"
 msgctxt "@action"
