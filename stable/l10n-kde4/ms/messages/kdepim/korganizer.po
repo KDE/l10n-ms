@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-14 06:22+0100\n"
+"POT-Creation-Date: 2009-03-16 06:13+0100\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1509,7 +1509,7 @@ msgid "Do you really want to cancel?"
 msgstr ""
 
 #: koincidenceeditor.cpp:116 koeditorattachments.cpp:677 koeventeditor.cpp:420
-#: kotodoeditor.cpp:354
+#: kotodoeditor.cpp:356
 #, fuzzy
 #| msgid "KOrganizer Confirmation"
 msgctxt "@title:window"
@@ -1771,13 +1771,13 @@ msgstr ""
 msgid "Attendee added"
 msgstr "Penghadir Dibuang"
 
-#: views/agendaview/koagendaitem.cpp:911
-#: views/agendaview/koagendaitem.cpp:1014
+#: views/agendaview/koagendaitem.cpp:902
+#: views/agendaview/koagendaitem.cpp:1005
 #, kde-format
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: views/agendaview/koagendaitem.cpp:925
+#: views/agendaview/koagendaitem.cpp:916
 #, kde-format
 msgid "- %1"
 msgstr "- %1"
@@ -2172,12 +2172,12 @@ msgctxt "Date from - to"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: views/timespentview/kotimespentview.cpp:88
+#: views/timespentview/kotimespentview.cpp:134
 #, fuzzy
 msgid "No category"
 msgstr "Kategori"
 
-#: views/timespentview/kotimespentview.cpp:128
+#: views/timespentview/kotimespentview.cpp:174
 #, fuzzy, kde-format
 msgctxt "number of hours spent"
 msgid "%1 hour"
@@ -2185,7 +2185,7 @@ msgid_plural "%1 hours"
 msgstr[0] "_n: 1 jam"
 msgstr[1] "%1 jam"
 
-#: views/timespentview/kotimespentview.cpp:129
+#: views/timespentview/kotimespentview.cpp:175
 #, fuzzy, kde-format
 #| msgid "Redo (%1)"
 msgctxt "percent of hours spent"
@@ -2213,7 +2213,7 @@ msgstr ""
 msgid "Do Not Send"
 msgstr ""
 
-#: incidencechanger.cpp:371 kodialogmanager.cpp:126
+#: incidencechanger.cpp:372 kodialogmanager.cpp:126
 #, kde-format
 msgid "Unable to save %1 \"%2\"."
 msgstr "Tidak dapat menyimpan %1 \"%2\"."
@@ -2319,13 +2319,18 @@ msgctxt "@title:tab"
 msgid "Regional"
 msgstr "Peribadi"
 
-#: koprefsdialog.cpp:226
+#: koprefsdialog.cpp:224
+msgctxt "@title:group"
+msgid "General Time and Date"
+msgstr ""
+
+#: koprefsdialog.cpp:232
 #, fuzzy
 msgctxt "@label"
 msgid "Time zone:"
 msgstr "Zon waktu:"
 
-#: koprefsdialog.cpp:228
+#: koprefsdialog.cpp:234
 msgctxt "@info:whatsthis"
 msgid ""
 "Select your time zone from the list of locations on this drop down box. If "
@@ -2333,42 +2338,49 @@ msgid ""
 "KOrganizer will automatically adjust for daylight savings."
 msgstr ""
 
-#: koprefsdialog.cpp:239
+#: koprefsdialog.cpp:245
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "@item:inlistbox unknown timezone"
 msgid "Unknown"
 msgstr "Tidak diketahui"
 
-#: koprefsdialog.cpp:254
+#: koprefsdialog.cpp:260
 #, fuzzy
 #| msgid "[No selection]"
 msgctxt "@item:inlistbox no timezone selected"
 msgid "[No selection]"
 msgstr "[Tiada pilihan]"
 
-#: koprefsdialog.cpp:273
+#: koprefsdialog.cpp:280
+#, fuzzy
+#| msgid "Holiday"
+msgctxt "@title:group"
+msgid "Holidays"
+msgstr "Hari cuti"
+
+#: koprefsdialog.cpp:290
 #, fuzzy
 #| msgid "Use holiday region:"
 msgctxt "@label"
 msgid "Use holiday region:"
 msgstr "Gunakan rantau cuti:"
 
-#: koprefsdialog.cpp:308
+#: koprefsdialog.cpp:325
 #, fuzzy
 #| msgid "(None)"
 msgctxt "@item:inlistbox do not use holidays"
 msgid "(None)"
 msgstr "(Tiada)"
 
-#: koprefsdialog.cpp:325
+#: koprefsdialog.cpp:337
 #, fuzzy
 #| msgid "Working Hours"
 msgctxt "@title:group"
 msgid "Working Hours"
 msgstr "Waktu Bekerja"
 
-#: koprefsdialog.cpp:346
+#: koprefsdialog.cpp:358
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box to make KOrganizer mark the working hours for this day of the "
@@ -2376,81 +2388,94 @@ msgid ""
 "will not be marked with color."
 msgstr ""
 
-#: koprefsdialog.cpp:384
+#: koprefsdialog.cpp:396
 #, fuzzy
 #| msgid "Default Calendar"
 msgctxt "@title:tab"
 msgid "Default Values"
 msgstr "Kalendar Piawai"
 
-#: koprefsdialog.cpp:399
+#: koprefsdialog.cpp:401
+#, fuzzy
+#| msgid "Appointment"
+msgctxt "@title:group"
+msgid "Appointments"
+msgstr "Temu janji"
+
+#: koprefsdialog.cpp:417
+#, fuzzy
+msgctxt "@title:group"
+msgid "Reminders"
+msgstr "Pe&ringatan:"
+
+#: koprefsdialog.cpp:423
 #, fuzzy
 msgctxt "@item:inlistbox"
 msgid "1 minute"
 msgstr "_n: 1 minit"
 
-#: koprefsdialog.cpp:400
+#: koprefsdialog.cpp:424
 #, fuzzy
 #| msgid "5 minutes"
 msgctxt "@item:inlistbox"
 msgid "5 minutes"
 msgstr "5 minit"
 
-#: koprefsdialog.cpp:401
+#: koprefsdialog.cpp:425
 #, fuzzy
 #| msgid "10 minutes"
 msgctxt "@item:inlistbox"
 msgid "10 minutes"
 msgstr "10 minit"
 
-#: koprefsdialog.cpp:402
+#: koprefsdialog.cpp:426
 #, fuzzy
 #| msgid "15 minutes"
 msgctxt "@item:inlistbox"
 msgid "15 minutes"
 msgstr "15 minit"
 
-#: koprefsdialog.cpp:403
+#: koprefsdialog.cpp:427
 #, fuzzy
 #| msgid "30 minutes"
 msgctxt "@item:inlistbox"
 msgid "30 minutes"
 msgstr "30 minit"
 
-#: koprefsdialog.cpp:404
+#: koprefsdialog.cpp:428
 #, fuzzy
 msgctxt "@label"
 msgid "Default reminder time:"
 msgstr "Waktu bunyi penggera piawai:"
 
-#: koprefsdialog.cpp:512
+#: koprefsdialog.cpp:536
 #, fuzzy
 #| msgid "General"
 msgctxt "@title:tab general settings"
 msgid "General"
 msgstr "Umum"
 
-#: koprefsdialog.cpp:529
+#: koprefsdialog.cpp:553
 #, fuzzy
 #| msgid "Date Navigator"
 msgctxt "@title:group"
 msgid "Date Navigator"
 msgstr "Navigator Tarikh"
 
-#: koprefsdialog.cpp:541
+#: koprefsdialog.cpp:565
 #, fuzzy
 #| msgid "Agenda View"
 msgctxt "@title:tab"
 msgid "Agenda View"
 msgstr "Paparan Agenda"
 
-#: koprefsdialog.cpp:546
+#: koprefsdialog.cpp:570
 #, fuzzy
 msgctxt "@title:group"
 msgid "Display Options"
 msgstr "Paparkan"
 
-#: koprefsdialog.cpp:554
+#: koprefsdialog.cpp:578
 #, fuzzy
 #| msgctxt "suffix in the hour size spin box"
 #| msgid " pixel"
@@ -2458,7 +2483,7 @@ msgctxt "@label suffix in the hour size spin box"
 msgid " pixel"
 msgstr " piksel"
 
-#: koprefsdialog.cpp:566
+#: koprefsdialog.cpp:590
 #, fuzzy
 #| msgctxt "suffix in the N days spin box"
 #| msgid " days"
@@ -2466,40 +2491,40 @@ msgctxt "@label suffix in the N days spin box"
 msgid " days"
 msgstr " hari"
 
-#: koprefsdialog.cpp:597
+#: koprefsdialog.cpp:621
 #, fuzzy
 #| msgid "Month View"
 msgctxt "@title:tab"
 msgid "Month View"
 msgstr "Paparan Bulan"
 
-#: koprefsdialog.cpp:616
+#: koprefsdialog.cpp:640
 #, fuzzy
 #| msgid "To-do View"
 msgctxt "@title:tab"
 msgid "Todo View"
 msgstr "Paparan Tugasan"
 
-#: koprefsdialog.cpp:655
+#: koprefsdialog.cpp:679
 msgctxt "@title:tab"
 msgid "Colors"
 msgstr ""
 
-#: koprefsdialog.cpp:690
+#: koprefsdialog.cpp:714
 #, fuzzy
 #| msgid "Categories"
 msgctxt "@title:group"
 msgid "Categories"
 msgstr "Kategori"
 
-#: koprefsdialog.cpp:700
+#: koprefsdialog.cpp:724
 msgctxt "@info:whatsthis"
 msgid ""
 "Select here the event category you want to modify. You can change the "
 "selected category color using the button below."
 msgstr ""
 
-#: koprefsdialog.cpp:709
+#: koprefsdialog.cpp:733
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2507,63 +2532,63 @@ msgid ""
 "above."
 msgstr "Mengedit peranan penghadir yang dipilih dalam senarai di atas."
 
-#: koprefsdialog.cpp:717
+#: koprefsdialog.cpp:741
 #, fuzzy
 #| msgid "Resources"
 msgctxt "@title:group"
 msgid "Resources"
 msgstr "Sumber"
 
-#: koprefsdialog.cpp:726
+#: koprefsdialog.cpp:750
 msgctxt "@info:whatsthis"
 msgid ""
 "Select here resource you want to modify. You can change the selected "
 "resource color using the button below."
 msgstr ""
 
-#: koprefsdialog.cpp:735
+#: koprefsdialog.cpp:759
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose here the color of the resource selected using the combo box above."
 msgstr "Mengedit peranan penghadir yang dipilih dalam senarai di atas."
 
-#: koprefsdialog.cpp:746
+#: koprefsdialog.cpp:770
 #, fuzzy
 #| msgid "month(s)"
 msgctxt "@title:tab"
 msgid "Fonts"
 msgstr "bulan"
 
-#: koprefsdialog.cpp:761 koprefsdialog.cpp:769
+#: koprefsdialog.cpp:785 koprefsdialog.cpp:793
 #, fuzzy
 #| msgid "Event text"
 msgctxt "@label"
 msgid "Event text"
 msgstr "Teks peristiwa"
 
-#: koprefsdialog.cpp:919
+#: koprefsdialog.cpp:943
 #, fuzzy
 #| msgid "Scheduler Mail Client"
 msgctxt "@title"
 msgid "Scheduler Mail Client"
 msgstr "Pelanggan Mel Penjadual"
 
-#: koprefsdialog.cpp:921
+#: koprefsdialog.cpp:945
 #, fuzzy
 #| msgid "Mail client"
 msgctxt "@option:radio"
 msgid "Mail client"
 msgstr "Pelanggan mel"
 
-#: koprefsdialog.cpp:927
+#: koprefsdialog.cpp:951
 #, fuzzy
 #| msgid "Additional email addresses:"
 msgctxt "@label"
 msgid "Additional email addresses:"
 msgstr "Alamat e-mel tambahan:"
 
-#: koprefsdialog.cpp:929
+#: koprefsdialog.cpp:953
 msgctxt "@info:whatsthis"
 msgid ""
 "Add, edit or remove additional e-mails addresses here. These email addresses "
@@ -2572,21 +2597,21 @@ msgid ""
 "need to list this address here so KOrganizer can recognize it as yours."
 msgstr ""
 
-#: koprefsdialog.cpp:941
+#: koprefsdialog.cpp:965
 #, fuzzy
 #| msgid "Email"
 msgctxt "@title:column email addresses"
 msgid "Email"
 msgstr "E-mel"
 
-#: koprefsdialog.cpp:944
+#: koprefsdialog.cpp:968
 #, fuzzy
 #| msgid "Additional email address:"
 msgctxt "@label"
 msgid "Additional email address:"
 msgstr "Alamat e-mel tambahan:"
 
-#: koprefsdialog.cpp:946
+#: koprefsdialog.cpp:970
 msgctxt "@info:whatsthis"
 msgid ""
 "Edit additional e-mails addresses here. To edit an address select it from "
@@ -2594,47 +2619,47 @@ msgid ""
 "the ones you have in addition to the one set in personal preferences."
 msgstr ""
 
-#: koprefsdialog.cpp:959
+#: koprefsdialog.cpp:983
 #, fuzzy
 #| msgid "New"
 msgctxt "@action:button add a new email address"
 msgid "New"
 msgstr "Baru"
 
-#: koprefsdialog.cpp:962
+#: koprefsdialog.cpp:986
 msgctxt "@info:whatsthis"
 msgid ""
 "Press this button to add a new entry to the additional e-mail addresses "
 "list. Use the edit box above to edit the new entry."
 msgstr ""
 
-#: koprefsdialog.cpp:967
+#: koprefsdialog.cpp:991
 #, fuzzy
 msgctxt "@action:button"
 msgid "Remove"
 msgstr "&Buang..."
 
-#: koprefsdialog.cpp:1010
+#: koprefsdialog.cpp:1034
 #, fuzzy
 #| msgid "(EmptyEmail)"
 msgctxt "@label"
 msgid "(EmptyEmail)"
 msgstr "(Kosongkan E-mel)"
 
-#: koprefsdialog.cpp:1230
+#: koprefsdialog.cpp:1254
 #, fuzzy
 #| msgid "Name"
 msgctxt "@title:column plugin name"
 msgid "Name"
 msgstr "Nama"
 
-#: koprefsdialog.cpp:1249
+#: koprefsdialog.cpp:1273
 #, fuzzy
 msgctxt "@action:button"
 msgid "Configure &Plugin..."
 msgstr "&Konfigur Plugin..."
 
-#: koprefsdialog.cpp:1252
+#: koprefsdialog.cpp:1276
 #, fuzzy
 #| msgid ""
 #| "This button allows you to configure the plugin that you have selected in "
@@ -2647,53 +2672,53 @@ msgstr ""
 "Butang ini membenarkan anda mengkonfigur plugin yang anda pilih dalam "
 "senarai di atas"
 
-#: koprefsdialog.cpp:1259
+#: koprefsdialog.cpp:1283
 #, fuzzy
 #| msgid "Destination"
 msgctxt "@title:group"
 msgid "Position"
 msgstr "Destinasi"
 
-#: koprefsdialog.cpp:1261
+#: koprefsdialog.cpp:1285
 #, fuzzy
 msgctxt "@option:check"
 msgid "Show in the month view"
 msgstr "Paparkan yang dipilih &sahaja"
 
-#: koprefsdialog.cpp:1263
+#: koprefsdialog.cpp:1287
 #, fuzzy
 msgctxt "@option:check"
 msgid "Show at the top of the agenda views"
 msgstr "Paparkan yang dipilih &sahaja"
 
-#: koprefsdialog.cpp:1265
+#: koprefsdialog.cpp:1289
 #, fuzzy
 msgctxt "@option:check"
 msgid "Show at the bottom of the agenda views"
 msgstr "Paparkan yang dipilih &sahaja"
 
-#: koprefsdialog.cpp:1298
+#: koprefsdialog.cpp:1322
 #, fuzzy
 #| msgid "Calendar"
 msgctxt "@title:group"
 msgid "Calendar Decorations"
 msgstr "Kalendar"
 
-#: koprefsdialog.cpp:1301
+#: koprefsdialog.cpp:1325
 #, fuzzy
 #| msgid "Print list"
 msgctxt "@title:group"
 msgid "Print Plugins"
 msgstr "Cetak senarai"
 
-#: koprefsdialog.cpp:1304
+#: koprefsdialog.cpp:1328
 #, fuzzy
 #| msgid "Other Options"
 msgctxt "@title:group"
 msgid "Other Plugins"
 msgstr "Opsyen Lain"
 
-#: koprefsdialog.cpp:1372
+#: koprefsdialog.cpp:1396
 #, fuzzy
 #| msgid "Unable to configure this plugin"
 msgctxt "@info"
@@ -2920,30 +2945,30 @@ msgctxt "advanced alarm settings"
 msgid "Advanced..."
 msgstr "Tambah..."
 
-#: koeditorgeneral.cpp:409
+#: koeditorgeneral.cpp:411
 #, fuzzy, kde-format
 msgid "1 reminder configured"
 msgid_plural "%1 reminders configured"
 msgstr[0] "Pe&ringatan:"
 msgstr[1] "Pe&ringatan:"
 
-#: koeditorgeneral.cpp:436
+#: koeditorgeneral.cpp:438
 msgid "1 advanced reminder configured"
 msgstr ""
 
-#: koeditorgeneral.cpp:577
+#: koeditorgeneral.cpp:579
 #, fuzzy
 msgid "No attendees"
 msgstr "Pe&nghadir"
 
-#: koeditorgeneral.cpp:579
+#: koeditorgeneral.cpp:581
 #, fuzzy, kde-format
 msgid "One attendee"
 msgid_plural "%1 attendees"
 msgstr[0] "_n: 1 minit"
 msgstr[1] "%1 minit"
 
-#: koeditorgeneral.cpp:587
+#: koeditorgeneral.cpp:589
 #, fuzzy
 #| msgid "Please specify a valid start date."
 msgid "Please specify a summary."
@@ -3661,52 +3686,52 @@ msgstr "Hapuskan yang &Semasa"
 msgid "Delete &All"
 msgstr "Hapuskan &Semua"
 
-#: calendarview.cpp:2248
+#: calendarview.cpp:2250
 msgid "Delete all completed to-dos?"
 msgstr "Hapuskan semua tugasan yang telah selesai?"
 
-#: calendarview.cpp:2249
+#: calendarview.cpp:2251
 msgid "Purge To-dos"
 msgstr "Singkirkan Tugasan"
 
-#: calendarview.cpp:2250
+#: calendarview.cpp:2252
 msgid "Purge"
 msgstr "Singkirkan"
 
-#: calendarview.cpp:2254
+#: calendarview.cpp:2256
 msgid "Purging completed to-dos"
 msgstr "Menyingkirkan tugasan yang telah selesai"
 
-#: calendarview.cpp:2271
+#: calendarview.cpp:2273
 #, fuzzy
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr ""
 "Tidak dapat menyingkirkan item tugasan dengan anak-anak yang belum selesai."
 
-#: calendarview.cpp:2272
+#: calendarview.cpp:2274
 msgid "Delete To-do"
 msgstr "Hapuskan Tugasan"
 
-#: calendarview.cpp:2281
+#: calendarview.cpp:2283
 #, fuzzy
 msgid "Unable to edit item: it is locked by another process."
 msgstr "Tidak dapat mengedit kejadian: ia dipasak oleh proses lain."
 
-#: calendarview.cpp:2314
+#: calendarview.cpp:2316
 #, fuzzy, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "Tidak dapat menyalin kejadian ke %1."
 
-#: calendarview.cpp:2315
+#: calendarview.cpp:2317
 msgid "Copying Failed"
 msgstr "Gagal Disalin"
 
-#: calendarview.cpp:2359
+#: calendarview.cpp:2361
 #, fuzzy, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "Tidak dapat mengalihkan kejadian ke %1."
 
-#: calendarview.cpp:2360
+#: calendarview.cpp:2362
 msgid "Moving Failed"
 msgstr "Gagal Dialihkan"
 
@@ -9051,7 +9076,7 @@ msgid ""
 msgstr ""
 "Tab Umum membenarkan anda mengeset opsyen paling biasa untuk peristiwa."
 
-#: koeventeditor.cpp:153 kotodoeditor.cpp:120
+#: koeventeditor.cpp:153 kotodoeditor.cpp:122
 #, fuzzy
 #| msgid "Details"
 msgctxt "@title:tab"
@@ -9065,7 +9090,7 @@ msgctxt "@title:tab general event settings"
 msgid "&General"
 msgstr "&Umum"
 
-#: koeventeditor.cpp:198 kotodoeditor.cpp:167
+#: koeventeditor.cpp:198 kotodoeditor.cpp:169
 #, fuzzy
 #| msgid "Rec&urrence"
 msgctxt "@title:tab"
@@ -9134,7 +9159,7 @@ msgstr "Saling tukar"
 msgid "My counter proposal for: %1"
 msgstr "&Jurnal"
 
-#: koeventeditor.cpp:419 kotodoeditor.cpp:353
+#: koeventeditor.cpp:419 kotodoeditor.cpp:355
 #, fuzzy
 #| msgid "This item will be permanently deleted."
 msgctxt "@info"
@@ -9154,35 +9179,35 @@ msgctxt "@info"
 msgid "Template does not contain a valid event."
 msgstr "Templat tidak mengandungi peristiwa yang sah."
 
-#: kotodoeditor.cpp:106
+#: kotodoeditor.cpp:108
 #, fuzzy
 #| msgid "General"
 msgctxt "@title:tab general to-do settings"
 msgid "General"
 msgstr "Umum"
 
-#: kotodoeditor.cpp:136
+#: kotodoeditor.cpp:138
 #, fuzzy
 #| msgid "&General"
 msgctxt "@title:tab general to-do settings"
 msgid "&General"
 msgstr "&Umum"
 
-#: kotodoeditor.cpp:191
+#: kotodoeditor.cpp:193
 #, fuzzy, kde-format
 #| msgid "Edit To-do"
 msgctxt "@title:window"
 msgid "Edit To-do: %1"
 msgstr "Edit Tugasan"
 
-#: kotodoeditor.cpp:199
+#: kotodoeditor.cpp:201
 #, fuzzy
 #| msgid "New To-do"
 msgctxt "@title:window"
 msgid "New To-do"
 msgstr "Tugasan Baru"
 
-#: kotodoeditor.cpp:371
+#: kotodoeditor.cpp:373
 #, fuzzy
 msgctxt "@info"
 msgid "Template does not contain a valid to-do."
