@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-18 09:58+0200\n"
+"POT-Creation-Date: 2009-03-17 10:52+0100\n"
 "PO-Revision-Date: 2005-11-14 04:39+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1402,8 +1402,10 @@ msgstr "Perincian"
 
 #: pminserterrordialog.cpp:37
 #, fuzzy, kde-format
-msgid "%1 of %2 objects could not be inserted."
-msgstr "Objek %1 dari %2 tak boleh diselitkan."
+msgid "%2 of 1 object could not be inserted."
+msgid_plural "%2 of %1 objects could not be inserted."
+msgstr[0] "Objek %1 dari %2 tak boleh diselitkan."
+msgstr[1] "Objek %1 dari %2 tak boleh diselitkan."
 
 #: pminserterrordialog.cpp:40
 msgid "Objects not inserted:"
@@ -2054,18 +2056,18 @@ msgstr "Alihkan Objek"
 
 #: pmmovecommand.cpp:362
 #, fuzzy, kde-format
-msgid "Can not insert the declare \"%1\" at that point."
+msgid "Cannot insert the declare \"%1\" at that point."
 msgstr "Tidak boleh selit pengisytiharan \"%1\" di titik itu."
 
 #: pmmovecommand.cpp:365
 #, fuzzy, kde-format
-msgid "The declare \"%1\" can not be moved behind linked objects."
+msgid "The declare \"%1\" cannot be moved behind linked objects."
 msgstr "Pengistiharan \"%1\" tak boleh dialih ke belakang objek terpaut. "
 
 #: pmmovecommand.cpp:449
 #, fuzzy, kde-format
 msgid ""
-"The %1 \"%2\" can not be moved because it contains a link to the declare \"%3"
+"The %1 \"%2\" cannot be moved because it contains a link to the declare \"%3"
 "\" and the insert point is not after the declare."
 msgstr ""
 "%1 \"%2\" tak boleh dialih kerana ia mengandungi pautan untuk diisytihar \"%3"
@@ -2252,7 +2254,7 @@ msgstr "Maklumat"
 
 #: pmparser.cpp:251 pmparser.cpp:267
 #, fuzzy, kde-format
-msgid "Can not insert %1 into %2."
+msgid "Cannot insert %1 into %2."
 msgstr "Tidak boleh selit %1 ke dalam %2"
 
 #: pmparser.cpp:378 pmparser.cpp:380
@@ -3047,31 +3049,33 @@ msgstr "Ungkapan apung dijangkakan"
 
 #: pmpovrayparser.cpp:1338 pmpovrayparser.cpp:1352
 #, fuzzy
-msgid "You can not multiply a vector with a color"
+msgid "Cannot multiply a vector by a color."
 msgstr "Anda tidak boleh darab vektor dengan warna"
 
 #: pmpovrayparser.cpp:1398
-msgid "You can't divide a vector by a color"
+#, fuzzy
+#| msgid "You can't divide a vector by a color"
+msgid "Cannot divide a vector by a color."
 msgstr "Anda tidak boleh bahagi vektor menurut warna"
 
 #: pmpovrayparser.cpp:1412
 #, fuzzy
-msgid "You can not divide a color by a vector"
+msgid "Cannot divide a color by a vector."
 msgstr "Anda tidak boleh bahagi warna menurut vektor"
 
-#: pmpovrayparser.cpp:1454
+#: pmpovrayparser.cpp:1454 pmpovrayparser.cpp:1468
 #, fuzzy
-msgid "You can not add a vector and a color"
+msgid "Cannot add a vector and a color."
 msgstr "Anda tidak boleh tambah vektor dan warna"
 
-#: pmpovrayparser.cpp:1468
+#: pmpovrayparser.cpp:1510
 #, fuzzy
-msgid "You can not add a vector with a color"
-msgstr "Anda tidak boleh tambah vektor dengan warna"
+msgid "Cannot subtract a color from a vector."
+msgstr "Anda tidak boleh tolak vektor dan warna"
 
-#: pmpovrayparser.cpp:1510 pmpovrayparser.cpp:1524
+#: pmpovrayparser.cpp:1524
 #, fuzzy
-msgid "You can not subtract a vector and a color"
+msgid "Cannot subtract a vector from a color."
 msgstr "Anda tidak boleh tolak vektor dan warna"
 
 #: pmpovrayparser.cpp:1617 pmpovrayparser.cpp:1628
@@ -3217,7 +3221,7 @@ msgstr "Satu objek grafik dijangkakan"
 
 #: pmpovrayrenderwidget.cpp:70
 #, fuzzy
-msgid "Can not render an empty scene.\n"
+msgid "Cannot render an empty scene.\n"
 msgstr "Tak boleh kemuka babak kosong.\n"
 
 #: pmpovrayrenderwidget.cpp:80
@@ -4298,7 +4302,7 @@ msgstr "Jarak eksponen:"
 
 #: pmxmlparser.cpp:64
 #, fuzzy
-msgid "Could not load the documents data."
+msgid "Could not load the document's data."
 msgstr "Tak dapat muatkan data dokumen!"
 
 #: pmxmlparser.cpp:96
@@ -4460,6 +4464,10 @@ msgstr "MIMOS"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "opensource@mimos.my"
+
+#, fuzzy
+#~ msgid "You can not add a vector with a color"
+#~ msgstr "Anda tidak boleh tambah vektor dengan warna"
 
 #~ msgid "Disables OpenGL rendering"
 #~ msgstr "Nyahaktifkan penrealisasian OpenGL"
