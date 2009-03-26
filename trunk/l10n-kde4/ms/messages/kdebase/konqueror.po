@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-16 10:31+0100\n"
+"POT-Creation-Date: 2009-03-26 10:47+0100\n"
 "PO-Revision-Date: 2006-05-07 16:37+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1235,6 +1235,21 @@ msgstr ""
 msgid "Session exists. Overwrite?"
 msgstr ""
 
+#: src/konqhistorymodel.cpp:132
+#: sidebar/trees/history_module/history_item.cpp:120
+#, fuzzy, kde-format
+msgid ""
+"<qt><center><b>%1</b></center><hr />Last visited: %2<br />First visited: %"
+"3<br />Number of times visited: %4</qt>"
+msgstr ""
+"<qt><center><b>%4</b></center><hr>Terakhir dilawati: %1<br>Pertama dilawati: "
+"%2<br>Bilangan lawatan: %3</qt>"
+
+#: src/konqhistorymodel.cpp:203
+#: sidebar/trees/history_module/history_module.h:62
+msgid "Miscellaneous"
+msgstr ""
+
 #: src/konqview.cpp:1314
 msgid ""
 "The page you are trying to view is the result of posted form data. If you "
@@ -1443,15 +1458,6 @@ msgstr "Anda benar-benar mahu bersihkan keseluruhan sejarah pelungsuran?"
 msgid "Clear History?"
 msgstr "Kosongkan Sejarah?"
 
-#: sidebar/trees/history_module/history_item.cpp:120
-#, fuzzy, kde-format
-msgid ""
-"<qt><center><b>%1</b></center><hr />Last visited: %2<br />First visited: %"
-"3<br />Number of times visited: %4</qt>"
-msgstr ""
-"<qt><center><b>%4</b></center><hr>Terakhir dilawati: %1<br>Pertama dilawati: "
-"%2<br>Bilangan lawatan: %3</qt>"
-
 #: sidebar/trees/history_module/kcmhistory.cpp:76
 #: sidebar/trees/history_module/kcmhistory.cpp:81
 msgid "Minutes"
@@ -1485,10 +1491,6 @@ msgid "Minute"
 msgid_plural "Minutes"
 msgstr[0] ""
 msgstr[1] ""
-
-#: sidebar/trees/history_module/history_module.h:62
-msgid "Miscellaneous"
-msgstr ""
 
 #: sidebar/trees/dirtree_module/dirtree_module.cpp:424
 #, kde-format
@@ -2028,7 +2030,7 @@ msgstr "Ciri-ciri"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:137
 #. i18n: ectx: property (title), widget (QGroupBox, gbDetails)
-#: about/konq_aboutpage.cc:234 rc.cpp:95
+#: about/konq_aboutpage.cc:234 rc.cpp:92
 msgid "Details"
 msgstr "Terperinci"
 
@@ -2264,20 +2266,6 @@ msgstr "Matikan"
 msgid "Keep"
 msgstr "Kekal Kebenaran"
 
-#: remoteencodingplugin/kremoteencodingplugin.cpp:53
-#, fuzzy
-msgid "Select Remote Charset"
-msgstr "Logmasuk Jauh (SSH)"
-
-#: remoteencodingplugin/kremoteencodingplugin.cpp:127
-#, fuzzy
-msgid "Reload"
-msgstr "&Muatkan Semula Tab"
-
-#: remoteencodingplugin/kremoteencodingplugin.cpp:128
-msgid "Default"
-msgstr ""
-
 #: shellcmdplugin/kshellcmdexecutor.cpp:124
 msgid "Input Required:"
 msgstr "Input Diperlukan:"
@@ -2388,30 +2376,28 @@ msgstr "Lokasi Papan Alatan"
 msgid "Bookmark Toolbar"
 msgstr "Papan Tanda-laman"
 
-#. i18n: file: remoteencodingplugin/kremoteencodingplugin.rc:4
-#. i18n: ectx: Menu (tools)
 #. i18n: file: shellcmdplugin/kshellcmdplugin.rc:4
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:38 rc.cpp:41
+#: rc.cpp:38
 #, fuzzy
 msgid "&Tools"
 msgstr "Alat"
 
 #. i18n: file: src/konqprofiledlg_base.ui:16
 #. i18n: ectx: property (text), widget (QLabel, lblName)
-#: rc.cpp:44
+#: rc.cpp:41
 msgid "&Profile name:"
 msgstr "Nama &Profil:"
 
 #. i18n: file: src/konqprofiledlg_base.ui:32
 #. i18n: ectx: property (text), widget (QCheckBox, m_cbSaveURLs)
-#: rc.cpp:47
+#: rc.cpp:44
 msgid "Save &URLs in profile"
 msgstr "Simpan &URL di dalam profil"
 
 #. i18n: file: src/konqsessiondlg_base.ui:25
 #. i18n: ectx: property (text), widget (QPushButton, m_pNewButton)
-#: rc.cpp:50
+#: rc.cpp:47
 #, fuzzy
 msgctxt "@action:button New session"
 msgid "New..."
@@ -2419,7 +2405,7 @@ msgstr "&Folder Baru..."
 
 #. i18n: file: src/konqsessiondlg_base.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, m_pSaveCurrentButton)
-#: rc.cpp:53
+#: rc.cpp:50
 #, fuzzy
 #| msgid "Close Current Tab"
 msgctxt "@action:button Save current session"
@@ -2428,7 +2414,7 @@ msgstr "Tutup Tab Semasa"
 
 #. i18n: file: src/konqsessiondlg_base.ui:39
 #. i18n: ectx: property (text), widget (QPushButton, m_pRenameButton)
-#: rc.cpp:56
+#: rc.cpp:53
 #, fuzzy
 #| msgid "Rename"
 msgctxt "@action:button Rename session"
@@ -2437,7 +2423,7 @@ msgstr "Tukar nama"
 
 #. i18n: file: src/konqsessiondlg_base.ui:46
 #. i18n: ectx: property (text), widget (QPushButton, m_pDeleteButton)
-#: rc.cpp:59
+#: rc.cpp:56
 #, fuzzy
 msgctxt "@action:button Delete session"
 msgid "Delete"
@@ -2445,7 +2431,7 @@ msgstr "Padam Pautan"
 
 #. i18n: file: src/konqsessiondlg_base.ui:72
 #. i18n: ectx: property (text), widget (QCheckBox, m_pOpenTabsInsideCurrentWindow)
-#: rc.cpp:62
+#: rc.cpp:59
 #, fuzzy
 #| msgid "Open the document in current window"
 msgid "Open tabs inside current window"
@@ -2453,43 +2439,43 @@ msgstr "Buka dokumen dalam tetingkap semasa"
 
 #. i18n: file: src/konqnewsessiondlg_base.ui:33
 #. i18n: ectx: property (text), widget (QLabel, lblDescription)
-#: rc.cpp:65
+#: rc.cpp:62
 msgid "Save open tabs and windows for easy retrieval"
 msgstr ""
 
 #. i18n: file: src/konqnewsessiondlg_base.ui:48
 #. i18n: ectx: property (text), widget (QLabel, lblSessionName)
-#: rc.cpp:68
+#: rc.cpp:65
 msgid "&Session name:"
 msgstr ""
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, gbLimits)
-#: rc.cpp:71
+#: rc.cpp:68
 msgid "Limits"
 msgstr "Had"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:44
 #. i18n: ectx: property (text), widget (QCheckBox, cbExpire)
-#: rc.cpp:74
+#: rc.cpp:71
 msgid "URLs e&xpire after"
 msgstr "U&RL luput selepas"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:54
 #. i18n: ectx: property (text), widget (QLabel, lEntries)
-#: rc.cpp:77
+#: rc.cpp:74
 msgid "Maximum &number of URLs:"
 msgstr "Jumlah maksima &URL:"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:73
 #. i18n: ectx: property (title), widget (QGroupBox, gbFonts)
-#: rc.cpp:80
+#: rc.cpp:77
 msgid "Custom Fonts For"
 msgstr "Font Tersendiri Untuk"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:91
 #. i18n: ectx: property (text), widget (QLabel, lbNewer)
-#: rc.cpp:83
+#: rc.cpp:80
 msgid "URLs newer than"
 msgstr "URL lebih baru daripada"
 
@@ -2497,19 +2483,19 @@ msgstr "URL lebih baru daripada"
 #. i18n: ectx: property (text), widget (QPushButton, btnFontOlder)
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:127
 #. i18n: ectx: property (text), widget (QPushButton, btnFontNewer)
-#: rc.cpp:86 rc.cpp:92
+#: rc.cpp:83 rc.cpp:89
 msgid "Choose Font..."
 msgstr "Pilih Font..."
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:114
 #. i18n: ectx: property (text), widget (QLabel, lbOlder)
-#: rc.cpp:89
+#: rc.cpp:86
 msgid "URLs older than"
 msgstr "URL lebih lama daripada"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:146
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbDetailedTips)
-#: rc.cpp:98
+#: rc.cpp:95
 msgid ""
 "Shows the number of times visited and the dates of the first and last "
 "visits, in addition to the URL"
@@ -2519,15 +2505,23 @@ msgstr ""
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:149
 #. i18n: ectx: property (text), widget (QCheckBox, cbDetailedTips)
-#: rc.cpp:101
+#: rc.cpp:98
 msgid "Detailed tooltips"
 msgstr "Petua Alatan Terperinci"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:164
 #. i18n: ectx: property (text), widget (QPushButton, btnClearHistory)
-#: rc.cpp:104
+#: rc.cpp:101
 msgid "Clear History"
 msgstr "Kosongkan Rekod"
+
+#, fuzzy
+#~ msgid "Select Remote Charset"
+#~ msgstr "Logmasuk Jauh (SSH)"
+
+#, fuzzy
+#~ msgid "Reload"
+#~ msgstr "&Muatkan Semula Tab"
 
 #, fuzzy
 #~ msgctxt "@action:button New session"
