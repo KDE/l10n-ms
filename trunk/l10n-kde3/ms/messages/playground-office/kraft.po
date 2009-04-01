@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kraft\n"
-"POT-Creation-Date: 2009-03-31 09:38+0200\n"
+"POT-Creation-Date: 2009-04-01 10:16+0200\n"
 "PO-Revision-Date: 2007-12-05 19:49+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -72,49 +72,53 @@ msgstr ""
 msgid ""
 "The template may contain the following tags:"
 "<ul>"
-"<li>%y - the year of the documents date.</li>"
-"<li>%w - the week number of the documents date</li>"
-"<li>%d - the day number of the documents date</li>"
-"<li>%m - the month number of the documents date</li>"
+"<li>%y or %yyyy - the year of the documents date.</li>"
+"<li>%yy - the year of the document (two digits).</li>"
+"<li>%w - the week number of the documents date.</li>"
+"<li>%ww - the week number of the documents date with leading zero.</li>"
+"<li>%d - the day number of the documents date.</li>"
+"<li>%dd - the day number of the documents date with leading zero.</li>"
+"<li>%m or %M - the month number of the documents date.</li>"
+"<li>%MM - the month number with leading zero.</li>"
 "<li>%c - the customer id from kaddressbook</li>"
 "<li>%i - the unique counter</li>"
 "<li>%type - the localised doc type (offer, invoice etc.)</li></ul>"
 "%i needs to be part of the template."
 msgstr ""
 
-#: numbercycledialog.cpp:121
+#: numbercycledialog.cpp:129
 #, fuzzy
 msgid "Doc-Type"
 msgstr "Jenis"
 
-#: numbercycledialog.cpp:193
+#: numbercycledialog.cpp:201
 #, fuzzy
 msgid "Add Number Cycle"
 msgstr "Dokumen"
 
-#: numbercycledialog.cpp:194
+#: numbercycledialog.cpp:202
 #, fuzzy
 msgid "Enter the name of a new number cycle."
 msgstr "Cipta dokumen baru"
 
-#: numbercycledialog.cpp:251
+#: numbercycledialog.cpp:259
 msgid ""
 "The numbercycle %1 is still assigned to a document type.The number cycle can "
 "not be deleted as long as it is assigned to a document type."
 msgstr ""
 
-#: numbercycledialog.cpp:254
+#: numbercycledialog.cpp:262
 #, fuzzy
 msgid "Numbercycle Deletion"
 msgstr "Dokumen"
 
-#: numbercycledialog.cpp:305
+#: numbercycledialog.cpp:313
 msgid ""
 "The new counter is lower than the old one. That has potential to create "
 "doublicate document numbers. Do you really want to decrease it?"
 msgstr ""
 
-#: numbercycledialog.cpp:307
+#: numbercycledialog.cpp:315
 msgid "Dangerous Counter Change"
 msgstr ""
 
@@ -240,7 +244,7 @@ msgstr "Extension &fail:"
 #: brunsviewer.cpp:66 katalogview.cpp:181 katalogview.cpp:205
 #: katalogview.cpp:220 katalogview.cpp:230 katalogview.cpp:240
 #: katalogview.cpp:252 katalogview.cpp:260 katalogview.cpp:267
-#: katalogview.cpp:274 katalogview.cpp:311 kraftdb.cpp:303 portal.cpp:194
+#: katalogview.cpp:274 katalogview.cpp:311 kraftdb.cpp:315 portal.cpp:194
 #: portal.cpp:313 portal.cpp:358 portal.cpp:440 portal.cpp:479 portal.cpp:509
 #: portal.cpp:566 portal.cpp:705 portal.cpp:712 portal.cpp:719 portal.cpp:736
 msgid "Ready."
@@ -338,16 +342,16 @@ msgstr ""
 msgid "Calculate full tax for all items"
 msgstr ""
 
-#: kraftview.cpp:1003
+#: kraftview.cpp:1010
 #, fuzzy
 msgid "Discount"
 msgstr "Dokumen"
 
-#: kraftview.cpp:1305
+#: kraftview.cpp:1312
 msgid "The document was modified. Do you really want to discard all changes?"
 msgstr ""
 
-#: kraftview.cpp:1307
+#: kraftview.cpp:1314
 #, fuzzy
 msgid "Document Modified"
 msgstr "Sunting Pengepala"
@@ -1041,11 +1045,11 @@ msgstr "Dokumen"
 msgid "Edit Details of Document Types."
 msgstr ""
 
-#: prefsdialog.cpp:291
+#: prefsdialog.cpp:292
 msgid "Good!"
 msgstr ""
 
-#: prefsdialog.cpp:293
+#: prefsdialog.cpp:294
 #, fuzzy
 msgid "Failed"
 msgstr "Gagal"
@@ -1099,15 +1103,15 @@ msgstr "Ubah font pada teks pilihan"
 msgid "Decrease Font Sizes"
 msgstr "Ubah font pada teks pilihan"
 
-#: kraftdb.cpp:207
+#: kraftdb.cpp:219
 msgid "Checking Database Schema Version"
 msgstr ""
 
-#: kraftdb.cpp:219
+#: kraftdb.cpp:231
 msgid "Database schema not up to date"
 msgstr ""
 
-#: kraftdb.cpp:221
+#: kraftdb.cpp:233
 msgid ""
 "This Kraft database schema is not up to date (it is version %1 instead of the "
 "required version %2).\n"
@@ -1116,54 +1120,54 @@ msgid ""
 "Do you want Kraft to update the database schema version now?"
 msgstr ""
 
-#: kraftdb.cpp:227
+#: kraftdb.cpp:239
 msgid "Database Schema Update"
 msgstr ""
 
-#: kraftdb.cpp:244
+#: kraftdb.cpp:256
 msgid ""
 "The update of the database failed, only %1 of %2 commands succeeded. It is not "
 "recommended to continue.\n"
 "Please check the database consistency.\n"
 msgstr ""
 
-#: kraftdb.cpp:248
+#: kraftdb.cpp:260
 msgid "Database Schema Update Error"
 msgstr ""
 
-#: kraftdb.cpp:263
+#: kraftdb.cpp:275
 msgid "Database Schema Version ok"
 msgstr ""
 
-#: kraftdb.cpp:273
+#: kraftdb.cpp:285
 msgid "Recreate Database"
 msgstr ""
 
-#: kraftdb.cpp:275
+#: kraftdb.cpp:287
 msgid ""
 "The Kraft System Table was not found in database %1. Do you want me to rebuild "
 "the database?\n"
 "WARNING: ALL YOUR DATA WILL BE DESTROYED!"
 msgstr ""
 
-#: kraftdb.cpp:279
+#: kraftdb.cpp:291
 msgid "Database Rebuild"
 msgstr ""
 
-#: kraftdb.cpp:280
+#: kraftdb.cpp:292
 msgid "Creating Database..."
 msgstr ""
 
-#: kraftdb.cpp:297
+#: kraftdb.cpp:309
 msgid "Filling Database..."
 msgstr ""
 
-#: kraftdb.cpp:300
+#: kraftdb.cpp:312
 #, fuzzy
 msgid "Failed."
 msgstr "Gagal"
 
-#: kraftdb.cpp:372
+#: kraftdb.cpp:384
 #, fuzzy
 msgid "SQL File %1 not found"
 msgstr "Tak dapat membuka fail %s."
@@ -2400,59 +2404,59 @@ msgstr ""
 #. i18n: file kraftsettings.kcfg line 72
 #: rc.cpp:828
 #, fuzzy, no-c-format
-msgid "The default tax type for new documents."
-msgstr "Buang Header pada halaman ini daripada Dokumen"
-
-#. i18n: file kraftsettings.kcfg line 76
-#: rc.cpp:831
-#, fuzzy, no-c-format
 msgid "The greeting below on the document footer."
 msgstr "Buang Footer pada halaman ini daripada Dokumen"
 
-#. i18n: file kraftsettings.kcfg line 79
-#: rc.cpp:834
+#. i18n: file kraftsettings.kcfg line 75
+#: rc.cpp:831
 #, fuzzy, no-c-format
 msgid "The salut message on the document header."
 msgstr "Buang Header pada halaman ini daripada Dokumen"
 
-#. i18n: file kraftsettings.kcfg line 82
-#: rc.cpp:837
+#. i18n: file kraftsettings.kcfg line 78
+#: rc.cpp:834
 #, no-c-format
 msgid ""
 "The name of the catalog chapter where to store new templates in by default"
 msgstr ""
 
-#. i18n: file kraftsettings.kcfg line 85
-#: rc.cpp:840
+#. i18n: file kraftsettings.kcfg line 81
+#: rc.cpp:837
 #, no-c-format
 msgid "The name of the last used import schema for items."
 msgstr ""
 
-#. i18n: file kraftsettings.kcfg line 88
-#: rc.cpp:843
+#. i18n: file kraftsettings.kcfg line 84
+#: rc.cpp:840
 #, no-c-format
 msgid "The name of the last used input file for items."
 msgstr ""
 
-#. i18n: file kraftsettings.kcfg line 94
-#: rc.cpp:846
+#. i18n: file kraftsettings.kcfg line 90
+#: rc.cpp:843
 #, fuzzy, no-c-format
 msgid "The doc id template"
 msgstr "Baru me&nggunakan Template"
 
-#. i18n: file kraftsettings.kcfg line 98
-#: rc.cpp:849
+#. i18n: file kraftsettings.kcfg line 94
+#: rc.cpp:846
 #, no-c-format
 msgid "Localisation on document level"
 msgstr ""
 
-#. i18n: file kraftsettings.kcfg line 103
+#. i18n: file kraftsettings.kcfg line 99
+#: rc.cpp:849
+#, fuzzy, no-c-format
+msgid "The tax default for new documents."
+msgstr "Buang Header pada halaman ini daripada Dokumen"
+
+#. i18n: file kraftsettings.kcfg line 104
 #: rc.cpp:852
 #, no-c-format
 msgid "The label for alternative positions"
 msgstr ""
 
-#. i18n: file kraftsettings.kcfg line 106
+#. i18n: file kraftsettings.kcfg line 107
 #: rc.cpp:855 rc.cpp:858
 #, no-c-format
 msgid "The label for demand positions"
