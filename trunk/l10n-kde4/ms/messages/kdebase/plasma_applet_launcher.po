@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_launcher\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-31 10:41+0200\n"
+"POT-Creation-Date: 2009-04-08 11:57+0200\n"
 "PO-Revision-Date: 2008-01-17 01:20+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: ui/flipscrollview.cpp:138 simpleapplet/simpleapplet.cpp:543
+#: ui/flipscrollview.cpp:138 core/applicationmodel.cpp:377
 #, fuzzy
 #| msgid "Applications"
 msgid "All Applications"
@@ -51,51 +51,54 @@ msgstr "Lenting"
 msgid "Safely Remove"
 msgstr ""
 
-#: ui/launcher.cpp:159 simpleapplet/simpleapplet.cpp:189
+#: ui/launcher.cpp:161 core/leavemodel.cpp:106
+#: simpleapplet/simpleapplet.cpp:189
 msgid "Leave"
 msgstr ""
 
-#: ui/launcher.cpp:170 core/favoritesmodel.cpp:44
+#: ui/launcher.cpp:172 core/favoritesmodel.cpp:44 core/favoritesmodel.cpp:265
 #: simpleapplet/simpleapplet.cpp:171
 msgid "Favorites"
 msgstr ""
 
-#: ui/launcher.cpp:173
+#: ui/launcher.cpp:175
 msgid "Sort Alphabetically (A to Z)"
 msgstr ""
 
-#: ui/launcher.cpp:176
+#: ui/launcher.cpp:178
 msgid "Sort Alphabetically (Z to A)"
 msgstr ""
 
-#: ui/launcher.cpp:199 core/recentlyusedmodel.cpp:115 core/systemmodel.cpp:88
+#: ui/launcher.cpp:201 core/recentlyusedmodel.cpp:115 core/systemmodel.cpp:88
 #: core/searchmodel.cpp:135 simpleapplet/simpleapplet.cpp:173
 msgid "Applications"
 msgstr "Aplikasi"
 
-#: ui/launcher.cpp:211 simpleapplet/simpleapplet.cpp:175
+#: ui/launcher.cpp:213 core/recentlyusedmodel.cpp:176
+#: simpleapplet/simpleapplet.cpp:175
 msgid "Recently Used"
 msgstr ""
 
-#: ui/launcher.cpp:213
+#: ui/launcher.cpp:215
 msgid "Clear Recent Applications"
 msgstr ""
 
-#: ui/launcher.cpp:214
+#: ui/launcher.cpp:216
 msgid "Clear Recent Documents"
 msgstr ""
 
-#: ui/launcher.cpp:231 simpleapplet/simpleapplet.cpp:174
+#: ui/launcher.cpp:233 core/systemmodel.cpp:369
+#: simpleapplet/simpleapplet.cpp:174
 msgid "Computer"
 msgstr "Komputer"
 
-#: ui/launcher.cpp:503
+#: ui/launcher.cpp:506
 #, kde-format
 msgctxt "login name, hostname"
 msgid "User <b>%1</b> on <b>%2</b>"
 msgstr ""
 
-#: ui/launcher.cpp:505
+#: ui/launcher.cpp:508
 #, kde-format
 msgctxt "full name, login name, hostname"
 msgid "<b>%1 (%2)</b> on <b>%3</b>"
@@ -177,17 +180,13 @@ msgstr ""
 msgid "Suspend to RAM"
 msgstr ""
 
-#: core/leavemodel.cpp:103
+#: core/leavemodel.cpp:118
 msgid "Session"
 msgstr "Sesi"
 
-#: core/leavemodel.cpp:125
+#: core/leavemodel.cpp:140
 msgid "System"
 msgstr "Sistem"
-
-#: core/applicationmodel.cpp:365
-msgid "Known Applications"
-msgstr "Aplikasi Diketahui"
 
 #: core/models.cpp:117
 msgid "Home Folder"
@@ -200,6 +199,18 @@ msgstr "Folder Rangkaian"
 #: core/recentlyusedmodel.cpp:107 core/searchmodel.cpp:221
 msgid "Documents"
 msgstr "Dokumen"
+
+#: core/recentlyusedmodel.cpp:178 simpleapplet/simpleapplet.cpp:177
+#, fuzzy
+#| msgid "Applications"
+msgid "Recently Used Documents"
+msgstr "Aplikasi"
+
+#: core/recentlyusedmodel.cpp:180 simpleapplet/simpleapplet.cpp:176
+#, fuzzy
+#| msgid "Applications"
+msgid "Recently Used Applications"
+msgstr "Aplikasi"
 
 #: core/systemmodel.cpp:89
 msgid "Places"
@@ -242,35 +253,43 @@ msgstr ""
 msgid "Application Launcher"
 msgstr ""
 
-#: applet/applet.cpp:85
+#: applet/applet.cpp:86
 #, fuzzy
 #| msgid "Known Applications"
 msgid "Kickoff Application Launcher"
 msgstr "Aplikasi Diketahui"
 
-#: applet/applet.cpp:86
+#: applet/applet.cpp:87
 msgid ""
 "Favorites, applications, computer places, recently used items and desktop "
 "sessions"
 msgstr ""
 
-#: applet/applet.cpp:111 simpleapplet/simpleapplet.cpp:313
+#: applet/applet.cpp:112 simpleapplet/simpleapplet.cpp:313
 msgid "Menu Editor"
 msgstr ""
 
-#: applet/applet.cpp:117
+#: applet/applet.cpp:118
 msgid "Switch to Classic Menu Style"
 msgstr ""
 
-#: applet/applet.cpp:151 simpleapplet/simpleapplet.cpp:397
+#: applet/applet.cpp:152 simpleapplet/simpleapplet.cpp:397
 msgid "Icon:"
 msgstr ""
 
-#: applet/applet.cpp:158
-msgid "Switch tabs on hover"
-msgstr ""
+#: applet/applet.cpp:159
+#, fuzzy
+#| msgid "Switch User"
+msgid "Switch tabs on hover:"
+msgstr "Tukar Pengguna"
 
-#: applet/applet.cpp:163
+#: applet/applet.cpp:166
+#, fuzzy
+#| msgid "Known Applications"
+msgid "Show applications by name:"
+msgstr "Aplikasi Diketahui"
+
+#: applet/applet.cpp:175
 msgid "General"
 msgstr ""
 
@@ -287,18 +306,6 @@ msgstr "sharuzzaman@myrealbox.com"
 #: simpleapplet/simpleapplet.cpp:172
 msgid "Bookmarks"
 msgstr ""
-
-#: simpleapplet/simpleapplet.cpp:176 simpleapplet/simpleapplet.cpp:559
-#, fuzzy
-#| msgid "Applications"
-msgid "Recently Used Applications"
-msgstr "Aplikasi"
-
-#: simpleapplet/simpleapplet.cpp:177 simpleapplet/simpleapplet.cpp:566
-#, fuzzy
-#| msgid "Applications"
-msgid "Recently Used Documents"
-msgstr "Aplikasi"
 
 #: simpleapplet/simpleapplet.cpp:178
 msgid "System Settings"
@@ -364,7 +371,7 @@ msgstr ""
 msgid "Options"
 msgstr "Aplikasi"
 
-#: simpleapplet/simpleapplet.cpp:545
+#: simpleapplet/simpleapplet.cpp:546
 #, fuzzy
 #| msgid "Applications"
 msgid "Actions"
