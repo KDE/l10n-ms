@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kraft\n"
-"POT-Creation-Date: 2009-04-01 10:16+0200\n"
+"POT-Creation-Date: 2009-04-12 10:01+0200\n"
 "PO-Revision-Date: 2007-12-05 19:49+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -58,6 +58,11 @@ msgstr ""
 #: importitemdialog.cpp:113 templtopositiondialogbase.cpp:54
 msgid "..."
 msgstr ""
+
+#: taxeditdialog.cpp:33
+#, fuzzy
+msgid "Edit Tax Rates"
+msgstr "Ubah Warna Teks"
 
 #: numbercycle.cpp:64
 #, fuzzy
@@ -330,15 +335,15 @@ msgstr ""
 msgid "show Template"
 msgstr "Papar &Sejarah"
 
-#: kraftview.cpp:576 prefsdialog.cpp:211
+#: kraftview.cpp:576 prefsdialog.cpp:320
 msgid "Display no tax at all"
 msgstr ""
 
-#: kraftview.cpp:577 prefsdialog.cpp:212
+#: kraftview.cpp:577 prefsdialog.cpp:321
 msgid "Calculate reduced tax for all items"
 msgstr ""
 
-#: kraftview.cpp:578 prefsdialog.cpp:213
+#: kraftview.cpp:578 prefsdialog.cpp:322
 msgid "Calculate full tax for all items"
 msgstr ""
 
@@ -924,132 +929,150 @@ msgstr "Buka Template"
 msgid "Template"
 msgstr "Buka Template"
 
-#: prefsdialog.cpp:56
+#: prefsdialog.cpp:62
 msgid "Configure Kraft"
 msgstr ""
 
-#: prefsdialog.cpp:72
+#: prefsdialog.cpp:78
 msgid "Database"
 msgstr ""
 
-#: prefsdialog.cpp:73
+#: prefsdialog.cpp:79
 msgid "Database Connection Settings"
 msgstr ""
 
-#: prefsdialog.cpp:83
+#: prefsdialog.cpp:89
 msgid "Database Host:"
 msgstr ""
 
-#: prefsdialog.cpp:86
+#: prefsdialog.cpp:92
 #, fuzzy
 msgid "Database Name:"
 msgstr "Nama Medan"
 
 #. i18n: file katalogsettings.kcfg line 22
-#: prefsdialog.cpp:89 rc.cpp:768
+#: prefsdialog.cpp:95 rc.cpp:783
 #, fuzzy, no-c-format
 msgid "Database User:"
 msgstr "Antaramuka Pengguna"
 
 #. i18n: file katalogsettings.kcfg line 26
-#: prefsdialog.cpp:92 rc.cpp:771
+#: prefsdialog.cpp:98 rc.cpp:786
 #, fuzzy, no-c-format
 msgid "Database Password:"
 msgstr "Katalaluan Tidak Betul"
 
-#: prefsdialog.cpp:95
+#: prefsdialog.cpp:101
 #, fuzzy
 msgid "Connection Status:"
 msgstr "Bar &status"
 
-#: prefsdialog.cpp:98
+#: prefsdialog.cpp:104
 #, fuzzy
 msgid "Check Connection"
 msgstr "Sambungan Gagal"
 
-#: prefsdialog.cpp:102
+#: prefsdialog.cpp:108
 msgid ""
 "Please restart Kraft after changes in the database connection parameters to "
 "make the changes effective!"
 msgstr ""
 
-#: prefsdialog.cpp:150
+#: prefsdialog.cpp:156
 msgid "Taxes"
 msgstr ""
 
-#: prefsdialog.cpp:151
+#: prefsdialog.cpp:157
 #, fuzzy
 msgid "Tax Settings."
 msgstr "Tetapan Semasa"
 
-#: prefsdialog.cpp:156
+#: prefsdialog.cpp:163
 msgid "Tax rates beginning at date:"
 msgstr ""
 
-#: prefsdialog.cpp:160
+#: prefsdialog.cpp:168
 msgid "Start Date"
 msgstr ""
 
-#: prefsdialog.cpp:161
-msgid "Reduced Tax Rate"
-msgstr ""
-
-#: prefsdialog.cpp:162
-msgid "Full Tax Rate"
-msgstr ""
-
 #: prefsdialog.cpp:169
+msgid "Reduced Tax [%]"
+msgstr ""
+
+#: prefsdialog.cpp:171
+msgid "Full Tax [%]"
+msgstr ""
+
+#. i18n: file doctypedetailseditbase.ui line 185
+#: mateditor.cpp:159 prefsdialog.cpp:180 rc.cpp:108 rc.cpp:132 rc.cpp:651
+#, fuzzy, no-c-format
+msgid "add"
+msgstr "T&ambah"
+
+#. i18n: file doctypedetailseditbase.ui line 196
+#: prefsdialog.cpp:185 rc.cpp:114 rc.cpp:138 rc.cpp:657
+#, fuzzy, no-c-format
+msgid "edit"
+msgstr "&Sunting"
+
+#. i18n: file flostab.ui line 523
+#: prefsdialog.cpp:190 rc.cpp:336 rc.cpp:378 rc.cpp:420
+#, fuzzy, no-c-format
+msgid "delete"
+msgstr "Pa&dam"
+
+#: prefsdialog.cpp:278
 #, fuzzy
 msgid "Document Defaults"
 msgstr "Sunting Footer"
 
-#: prefsdialog.cpp:170
+#: prefsdialog.cpp:279
 #, fuzzy
 msgid "Defaults for new Documents."
 msgstr "Cipta dokumen baru"
 
-#: prefsdialog.cpp:180
+#: prefsdialog.cpp:289
 msgid "&Default document type on creation:"
 msgstr ""
 
-#: prefsdialog.cpp:185
+#: prefsdialog.cpp:294
 msgid "New documents are from the selected type by default."
 msgstr ""
 
-#: prefsdialog.cpp:194
+#: prefsdialog.cpp:303
 msgid "Enable &Localisation on Document Level"
 msgstr ""
 
-#: prefsdialog.cpp:195
+#: prefsdialog.cpp:304
 msgid ""
 "Checking this enables language settings for each document."
 "<br>Leave it unchecked to use the KDE default settings for the document "
 "localisation."
 msgstr ""
 
-#: prefsdialog.cpp:207
+#: prefsdialog.cpp:316
 #, fuzzy
 msgid "Default &Tax for Documents:"
 msgstr "&Cipta dan Ubah Gaya"
 
-#: prefsdialog.cpp:210
+#: prefsdialog.cpp:319
 msgid "The default tax setting for all documents."
 msgstr ""
 
-#: prefsdialog.cpp:225
+#: prefsdialog.cpp:334
 #, fuzzy
 msgid "Document Types"
 msgstr "Dokumen"
 
-#: prefsdialog.cpp:226
+#: prefsdialog.cpp:335
 msgid "Edit Details of Document Types."
 msgstr ""
 
-#: prefsdialog.cpp:292
+#: prefsdialog.cpp:443
 msgid "Good!"
 msgstr ""
 
-#: prefsdialog.cpp:294
+#: prefsdialog.cpp:445
 #, fuzzy
 msgid "Failed"
 msgstr "Gagal"
@@ -1258,12 +1281,6 @@ msgstr "Heading Bab"
 msgid "Amount: "
 msgstr ""
 
-#. i18n: file doctypedetailseditbase.ui line 185
-#: mateditor.cpp:159 rc.cpp:108 rc.cpp:132 rc.cpp:651
-#, fuzzy, no-c-format
-msgid "add"
-msgstr "T&ambah"
-
 #: mateditor.cpp:160
 #, fuzzy
 msgid " to Calculation "
@@ -1280,17 +1297,17 @@ msgstr ""
 msgid "Calc. Type"
 msgstr "Jenis per&nomboran:"
 
-#: doctypeedit.cpp:132 doctypeedit.cpp:155
+#: doctypeedit.cpp:134 doctypeedit.cpp:157
 #, fuzzy
 msgid "Add Document Type"
 msgstr "Dokumen"
 
-#: doctypeedit.cpp:133
+#: doctypeedit.cpp:135
 #, fuzzy
 msgid "Enter the name of a new document type"
 msgstr "Cipta dokumen baru"
 
-#: doctypeedit.cpp:156
+#: doctypeedit.cpp:158
 #, fuzzy
 msgid "Edit the name of a document type"
 msgstr "Cipta dokumen baru"
@@ -1483,12 +1500,6 @@ msgstr "&Tetingkap Baru"
 msgid "Click to add a new document type to the list."
 msgstr ""
 
-#. i18n: file doctypedetailseditbase.ui line 196
-#: rc.cpp:114 rc.cpp:138 rc.cpp:657
-#, fuzzy, no-c-format
-msgid "edit"
-msgstr "&Sunting"
-
 #. i18n: file doctypedetailseditbase.ui line 199
 #: rc.cpp:117 rc.cpp:141 rc.cpp:660
 #, no-c-format
@@ -1634,7 +1645,7 @@ msgid "Price for one piece"
 msgstr ""
 
 #. i18n: file fixpartui.ui line 145
-#: rc.cpp:225 rc.cpp:732
+#: rc.cpp:225 rc.cpp:747
 #, fuzzy, no-c-format
 msgid "&Label:"
 msgstr "War&isi label"
@@ -1652,7 +1663,7 @@ msgid "describing text"
 msgstr "&Teks Tersembunyi"
 
 #. i18n: file fixpartui.ui line 188
-#: rc.cpp:237 rc.cpp:456 rc.cpp:579 rc.cpp:612 rc.cpp:747 timecalcpart.cpp:154
+#: rc.cpp:237 rc.cpp:456 rc.cpp:579 rc.cpp:612 rc.cpp:762 timecalcpart.cpp:154
 #, no-c-format
 msgid "F1"
 msgstr ""
@@ -1813,12 +1824,6 @@ msgstr "&Sunting"
 msgid "Edits the current time calculation part"
 msgstr ""
 
-#. i18n: file flostab.ui line 523
-#: rc.cpp:336 rc.cpp:378 rc.cpp:420
-#, fuzzy, no-c-format
-msgid "delete"
-msgstr "Pa&dam"
-
 #. i18n: file flostab.ui line 526
 #: rc.cpp:339
 #, no-c-format
@@ -1916,7 +1921,7 @@ msgid "Time Calculation Part:"
 msgstr "Tarikh/masa bolehubah"
 
 #. i18n: file flostab.ui line 967
-#: rc.cpp:435 rc.cpp:438 rc.cpp:441 rc.cpp:702
+#: rc.cpp:435 rc.cpp:438 rc.cpp:441 rc.cpp:717
 #, no-c-format
 msgid "textLabel2"
 msgstr ""
@@ -1940,7 +1945,7 @@ msgid "Calculated Price:"
 msgstr "Selit medan terkira"
 
 #. i18n: file importtodocbase.ui line 16
-#: rc.cpp:465 rc.cpp:513 rc.cpp:690
+#: rc.cpp:465 rc.cpp:513 rc.cpp:690 rc.cpp:705
 #, no-c-format
 msgid "Form2"
 msgstr ""
@@ -2173,56 +2178,80 @@ msgstr ""
 msgid "D"
 msgstr ""
 
-#. i18n: file texteditbase.ui line 49
+#. i18n: file taxeditbase.ui line 31
 #: rc.cpp:693
+#, fuzzy, no-c-format
+msgid "<h2>Add a Tax Rate</h2>"
+msgstr "Ubah Warna Teks"
+
+#. i18n: file taxeditbase.ui line 47
+#: rc.cpp:696
+#, no-c-format
+msgid "Start-Date:"
+msgstr ""
+
+#. i18n: file taxeditbase.ui line 92
+#: rc.cpp:699
+#, no-c-format
+msgid "&Reduced Tax Rate:"
+msgstr ""
+
+#. i18n: file taxeditbase.ui line 108
+#: rc.cpp:702
+#, no-c-format
+msgid "&Full Tax Rate:"
+msgstr ""
+
+#. i18n: file texteditbase.ui line 49
+#: rc.cpp:708
 #, fuzzy, no-c-format
 msgid "Edit Document Text Template"
 msgstr "Simpan dokumen sebagai template"
 
 #. i18n: file texteditbase.ui line 82
-#: rc.cpp:696
+#: rc.cpp:711
 #, fuzzy, no-c-format
 msgid "&Name:"
 msgstr "&Nama:"
 
 #. i18n: file texteditbase.ui line 120
-#: rc.cpp:699
+#: rc.cpp:714
 #, fuzzy, no-c-format
 msgid "displayed as"
 msgstr "Mempuny&ai label"
 
 #. i18n: file texteditbase.ui line 160
-#: rc.cpp:705
+#: rc.cpp:720
 #, fuzzy, no-c-format
 msgid "in doc type"
 msgstr "Jenis Senarai Semasa"
 
 #. i18n: file texteditbase.ui line 184
-#: rc.cpp:708
+#: rc.cpp:723
 #, no-c-format
 msgid "textLabel3"
 msgstr ""
 
 #. i18n: file texteditbase.ui line 211
-#: rc.cpp:711
+#: rc.cpp:726
 #, fuzzy, no-c-format
 msgid "&Text:"
 msgstr "Teks"
 
 #. i18n: file zeitpartui.ui line 16
-#: rc.cpp:714 timecalcpart.cpp:144
+#: rc.cpp:729 timecalcpart.cpp:144
 #, no-c-format
 msgid "Kalkulationsanteil Zeit"
 msgstr ""
 
 #. i18n: file zeitpartui.ui line 55
-#: rc.cpp:717
+#: rc.cpp:732
 #, no-c-format
 msgid "<h1>Calculation Part 'Time'</h1>"
 msgstr ""
 
 #. i18n: file zeitpartui.ui line 63
-#: rc.cpp:720
+#: rc.cpp:735
 #, no-c-format
 msgid ""
 "Calculate time efforts here for one unit of the template. Note that the costs "
@@ -2230,91 +2259,91 @@ msgid ""
 msgstr ""
 
 #. i18n: file zeitpartui.ui line 96
-#: rc.cpp:723
+#: rc.cpp:738
 #, no-c-format
 msgid "Work"
 msgstr ""
 
 #. i18n: file zeitpartui.ui line 104
-#: rc.cpp:726
+#: rc.cpp:741
 #, no-c-format
 msgid "&Hourly Rate:"
 msgstr ""
 
 #. i18n: file zeitpartui.ui line 115
-#: rc.cpp:729
+#: rc.cpp:744
 #, fuzzy, no-c-format
 msgid "&Time Effort:"
 msgstr "Masa Himpun"
 
 #. i18n: file zeitpartui.ui line 159
-#: rc.cpp:735
+#: rc.cpp:750
 #, fuzzy, no-c-format
 msgid "Minutes"
 msgstr "minit"
 
 #. i18n: file zeitpartui.ui line 169
-#: rc.cpp:738
+#: rc.cpp:753
 #, no-c-format
 msgid "Apply the &global hourly rate."
 msgstr ""
 
 #. i18n: file zeitpartui.ui line 172
-#: rc.cpp:741 timecalcpart.cpp:152
+#: rc.cpp:756 timecalcpart.cpp:152
 #, no-c-format
 msgid "Alt+G"
 msgstr ""
 
 #. i18n: file katalogsettings.kcfg line 7
-#: rc.cpp:756
+#: rc.cpp:771
 #, fuzzy, no-c-format
 msgid "Bruns Data File:"
 msgstr "Ralat mengimport fail %s"
 
 #. i18n: file katalogsettings.kcfg line 10
-#: rc.cpp:759
+#: rc.cpp:774
 #, fuzzy, no-c-format
 msgid "Bruns Key File:"
 msgstr "Ralat mengimport fail %s"
 
 #. i18n: file katalogsettings.kcfg line 15
-#: rc.cpp:762
+#: rc.cpp:777
 #, no-c-format
 msgid "Database Server:"
 msgstr ""
 
 #. i18n: file katalogsettings.kcfg line 19
-#: rc.cpp:765
+#: rc.cpp:780
 #, no-c-format
 msgid "Database or File Name"
 msgstr ""
 
 #. i18n: file katalogsettings.kcfg line 29
-#: rc.cpp:774
+#: rc.cpp:789
 #, no-c-format
 msgid "The default database name when creating new databases"
 msgstr ""
 
 #. i18n: file katalogsettings.kcfg line 32
-#: rc.cpp:777
+#: rc.cpp:792
 #, no-c-format
 msgid "The path where database file are stored. Leave empty!"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 8
-#: rc.cpp:780
+#: rc.cpp:795
 #, no-c-format
 msgid "Do Database Initialisation"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 12
-#: rc.cpp:783
+#: rc.cpp:798
 #, no-c-format
 msgid "Do XML archiving of documents they're printed?"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 16
-#: rc.cpp:786
+#: rc.cpp:801
 #, no-c-format
 msgid ""
 "Where Kraft stores the XML archive documents. If empty, KDEHOME/share/apps is "
@@ -2322,55 +2351,55 @@ msgid ""
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 22
-#: rc.cpp:789
+#: rc.cpp:804
 #, no-c-format
 msgid "The default size of the document view dialog"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 25
-#: rc.cpp:792
+#: rc.cpp:807
 #, no-c-format
 msgid "The default size of the read only document view dialog"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 28
-#: rc.cpp:795
+#: rc.cpp:810
 #, no-c-format
 msgid "The default position of the document view dialog"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 31
-#: rc.cpp:798
+#: rc.cpp:813
 #, no-c-format
 msgid "The splitter position of the document view dialog"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 34
-#: rc.cpp:801
+#: rc.cpp:816
 #, no-c-format
 msgid "The default size of the material catalog view"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 37
-#: rc.cpp:804
+#: rc.cpp:819
 #, no-c-format
 msgid "The splitter setting for the the doc assistant"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 40
-#: rc.cpp:807
+#: rc.cpp:822
 #, no-c-format
 msgid "The window size of the template to document dialog for plants"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 43
-#: rc.cpp:810
+#: rc.cpp:825
 #, no-c-format
 msgid "The window size of the template  to document dialog"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 49
-#: rc.cpp:813
+#: rc.cpp:828
 #, no-c-format
 msgid ""
 "Default percentage the sale price for a material should be higher than its "
@@ -2378,86 +2407,86 @@ msgid ""
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 53
-#: rc.cpp:816
+#: rc.cpp:831
 #, no-c-format
 msgid "The name of the last selected chapter in the catalog"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 59
-#: rc.cpp:819
+#: rc.cpp:834
 #, no-c-format
 msgid "The complete filename of the trml2pdf binary"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 63
-#: rc.cpp:822
+#: rc.cpp:837
 #, no-c-format
 msgid "The path to the output directory for document pdfs"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 69
-#: rc.cpp:825
+#: rc.cpp:840
 #, no-c-format
 msgid "The last created doc type."
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 72
-#: rc.cpp:828
+#: rc.cpp:843
 #, fuzzy, no-c-format
 msgid "The greeting below on the document footer."
 msgstr "Buang Footer pada halaman ini daripada Dokumen"
 
 #. i18n: file kraftsettings.kcfg line 75
-#: rc.cpp:831
+#: rc.cpp:846
 #, fuzzy, no-c-format
 msgid "The salut message on the document header."
 msgstr "Buang Header pada halaman ini daripada Dokumen"
 
 #. i18n: file kraftsettings.kcfg line 78
-#: rc.cpp:834
+#: rc.cpp:849
 #, no-c-format
 msgid ""
 "The name of the catalog chapter where to store new templates in by default"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 81
-#: rc.cpp:837
+#: rc.cpp:852
 #, no-c-format
 msgid "The name of the last used import schema for items."
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 84
-#: rc.cpp:840
+#: rc.cpp:855
 #, no-c-format
 msgid "The name of the last used input file for items."
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 90
-#: rc.cpp:843
+#: rc.cpp:858
 #, fuzzy, no-c-format
 msgid "The doc id template"
 msgstr "Baru me&nggunakan Template"
 
 #. i18n: file kraftsettings.kcfg line 94
-#: rc.cpp:846
+#: rc.cpp:861
 #, no-c-format
 msgid "Localisation on document level"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 99
-#: rc.cpp:849
+#: rc.cpp:864
 #, fuzzy, no-c-format
 msgid "The tax default for new documents."
 msgstr "Buang Header pada halaman ini daripada Dokumen"
 
 #. i18n: file kraftsettings.kcfg line 104
-#: rc.cpp:852
+#: rc.cpp:867
 #, no-c-format
 msgid "The label for alternative positions"
 msgstr ""
 
 #. i18n: file kraftsettings.kcfg line 107
-#: rc.cpp:855 rc.cpp:858
+#: rc.cpp:870 rc.cpp:873
 #, no-c-format
 msgid "The label for demand positions"
 msgstr ""
