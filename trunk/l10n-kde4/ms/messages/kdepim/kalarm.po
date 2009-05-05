@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-30 11:45+0200\n"
+"POT-Creation-Date: 2009-05-05 11:24+0200\n"
 "PO-Revision-Date: 2005-10-06 11:21+0800\n"
 "Last-Translator: junetazawawi <junetazawawi@yahoo.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1737,19 +1737,19 @@ msgstr "Templat penggera baru"
 
 #: prefdlg.cpp:798
 msgctxt "@option:radio"
-msgid "Store in default resource"
+msgid "Store in default calendar"
 msgstr ""
 
 #: prefdlg.cpp:800
 msgctxt "@info:whatsthis"
 msgid ""
-"Add all new alarms and alarm templates to the default resources, without "
+"Add all new alarms and alarm templates to the default calendars, without "
 "prompting."
 msgstr ""
 
 #: prefdlg.cpp:802
 msgctxt "@option:radio"
-msgid "Prompt for which resource to store in"
+msgid "Prompt for which calendar to store in"
 msgstr ""
 
 #. i18n: file: kalarmconfig.kcfg:93
@@ -1757,10 +1757,10 @@ msgstr ""
 #: prefdlg.cpp:805 rc.cpp:60 rc.cpp:426
 msgctxt "@info:whatsthis"
 msgid ""
-"<para>When saving a new alarm or alarm template, prompt for which resource "
-"to store it in, if there is more than one active resource.</para><para>Note "
+"<para>When saving a new alarm or alarm template, prompt for which calendar "
+"to store it in, if there is more than one active calendar.</para><para>Note "
 "that archived alarms are always stored in the default archived alarm "
-"resource.</para>"
+"calendar.</para>"
 msgstr ""
 
 #: prefdlg.cpp:810
@@ -1826,15 +1826,15 @@ msgstr "Hapuskan semua penggera luput yang masih wujud"
 msgctxt "@info:whatsthis"
 msgid ""
 "Delete all existing archived alarms (from the default archived alarm "
-"resource only)."
+"calendar only)."
 msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
 #: prefdlg.cpp:887
 msgctxt "@info"
 msgid ""
-"<para>A default resource is required in order to archive alarms, but none is "
+"<para>A default calendar is required in order to archive alarms, but none is "
 "currently enabled.</para><para>If you wish to keep expired alarms, please "
-"first use the resources view to select a default archived alarms resource.</"
+"first use the calendars view to select a default archived alarms calendar.</"
 "para>"
 msgstr ""
 
@@ -1849,7 +1849,7 @@ msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 msgctxt "@info"
 msgid ""
 "Do you really want to delete all alarms in the default archived alarm "
-"resource?"
+"calendar?"
 msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
 #: prefdlg.cpp:923
@@ -2595,7 +2595,7 @@ msgstr "Fon diminta"
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Resource <resource>%1</resource> is in an old format (<application>KAlarm</"
+"Calendar <resource>%1</resource> is in an old format (<application>KAlarm</"
 "application> version %2), and will be read-only unless you choose to update "
 "it to the current format."
 msgstr ""
@@ -2604,7 +2604,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Some or all of the alarms in resource <resource>%1</resource> are in an old "
+"Some or all of the alarms in calendar <resource>%1</resource> are in an old "
 "<application>KAlarm</application> format, and will be read-only unless you "
 "choose to update them to the current format."
 msgstr ""
@@ -2613,10 +2613,10 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<para>%1</para><para><warning>Do not update the resource if it is shared "
+"<para>%1</para><para><warning>Do not update the calendar if it is shared "
 "with other users who run an older version of <application>KAlarm</"
 "application>. If you do so, they may be unable to use it any more.</"
-"warning></para><para>Do you wish to update the resource?</para>"
+"warning></para><para>Do you wish to update the calendar?</para>"
 msgstr ""
 
 #: functions.cpp:143
@@ -2736,7 +2736,7 @@ msgstr ""
 #: functions.cpp:976
 #, fuzzy
 msgctxt "@info"
-msgid "You must enable a template resource to save the template in"
+msgid "You must enable a template calendar to save the template in"
 msgstr "Pilih templat untuk mendasari penggera baru."
 
 #: functions.cpp:1139
@@ -3481,8 +3481,8 @@ msgstr "Tiada bulan dipilih"
 #: resourceselector.cpp:73
 #, fuzzy
 msgctxt "@title:group"
-msgid "Resources"
-msgstr "&Pengulangan"
+msgid "Calendars"
+msgstr "URL fail kalendar"
 
 #: resourceselector.cpp:77
 #, fuzzy
@@ -3505,15 +3505,15 @@ msgstr "Templat penggera"
 
 #: resourceselector.cpp:81
 msgctxt "@info:whatsthis"
-msgid "Choose which type of data to show alarm resources for"
+msgid "Choose which type of data to show alarm calendars for"
 msgstr ""
 
 #: resourceselector.cpp:95
 msgctxt "@info:whatsthis"
 msgid ""
-"List of available resources of the selected type. The checked state shows "
-"whether a resource is enabled (checked) or disabled (unchecked). The default "
-"resource is shown in bold."
+"List of available calendars of the selected type. The checked state shows "
+"whether a calendar is enabled (checked) or disabled (unchecked). The default "
+"calendar is shown in bold."
 msgstr ""
 
 #: resourceselector.cpp:106 templatedlg.cpp:98
@@ -3525,95 +3525,99 @@ msgstr "&Edit..."
 #: resourceselector.cpp:111
 #, fuzzy
 msgctxt "@info:whatsthis"
-msgid "Edit the highlighted resource"
+msgid "Edit the highlighted calendar"
 msgstr "Edit templat penggera yang sedang ditonjolkan "
 
 #: resourceselector.cpp:112
 msgctxt "@info:whatsthis"
 msgid ""
-"<para>Remove the highlighted resource from the list.</para><para>The "
-"resource itself is left intact, and may subsequently be reinstated in the "
+"<para>Remove the highlighted calendar from the list.</para><para>The "
+"calendar itself is left intact, and may subsequently be reinstated in the "
 "list if desired.</para>"
 msgstr ""
 
 #: resourceselector.cpp:138
 #, fuzzy
 msgctxt "@info:tooltip"
-msgid "Add a new active alarm resource"
+msgid "Add a new active alarm calendar"
 msgstr "Cipta templat penggera baru"
 
 #: resourceselector.cpp:142
 #, fuzzy
 msgctxt "@info:tooltip"
-msgid "Add a new archived alarm resource"
+msgid "Add a new archived alarm calendar"
 msgstr "Cipta templat penggera baru"
 
 #: resourceselector.cpp:146
 #, fuzzy
 msgctxt "@info:tooltip"
-msgid "Add a new alarm template resource"
+msgid "Add a new alarm template calendar"
 msgstr "Cipta templat penggera baru"
 
 #: resourceselector.cpp:162 resourceconfigdialog.cpp:47
 #, fuzzy
+#| msgid "Alarm Configuration"
 msgctxt "@title:window"
-msgid "Resource Configuration"
+msgid "Calendar Configuration"
 msgstr "Konfigurasi penggera"
 
 #: resourceselector.cpp:163
 msgctxt "@info"
-msgid "Select storage type of new resource:"
+msgid "Select storage type of new calendar:"
 msgstr ""
 
 #: resourceselector.cpp:170
 #, kde-format
 msgctxt "@info"
-msgid "Unable to create resource of type <resource>%1</resource>."
+msgid "Unable to create calendar of type <resource>%1</resource>."
 msgstr ""
 
 #: resourceselector.cpp:173
 #, fuzzy, kde-format
+#| msgid "%1: wrong calendar file"
 msgctxt "@info/plain"
-msgid "%1 resource"
-msgstr "%1 memerlukan %2"
+msgid "%1 calendar"
+msgstr "%1: fail kalendar salah"
 
 #: resourceselector.cpp:212
 #, fuzzy
 msgctxt "@info"
-msgid "You cannot make your default active alarm resource read-only."
+msgid "You cannot make your default active alarm calendar read-only."
 msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
 #: resourceselector.cpp:219
+#, fuzzy
 msgctxt "@info"
 msgid ""
-"You cannot make your default archived alarm resource read-only while expired "
+"You cannot make your default archived alarm calendar read-only while expired "
 "alarms are configured to be kept."
-msgstr ""
+msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
 #: resourceselector.cpp:223
 #, fuzzy
 msgctxt "@info"
-msgid "Do you really want to make your default resource read-only?"
+msgid "Do you really want to make your default calendar read-only?"
 msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
 #: resourceselector.cpp:246
 #, fuzzy
 msgctxt "@info"
-msgid "You cannot remove your default active alarm resource."
+msgid "You cannot remove your default active alarm calendar."
 msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
 #: resourceselector.cpp:253
+#, fuzzy
 msgctxt "@info"
 msgid ""
-"You cannot remove your default archived alarm resource while expired alarms "
+"You cannot remove your default archived alarm calendar while expired alarms "
 "are configured to be kept."
-msgstr ""
+msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
 #: resourceselector.cpp:258
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
-"Do you really want to remove your default resource (<resource>%1</resource>) "
+"Do you really want to remove your default calendar (<resource>%1</resource>) "
 "from the list?"
 msgstr "_n: Anda pasti ingin menghapuskan templat penggera yang dipilih?"
 
@@ -3621,12 +3625,12 @@ msgstr "_n: Anda pasti ingin menghapuskan templat penggera yang dipilih?"
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
-"Do you really want to remove the resource <resource>%1</resource> from the "
+"Do you really want to remove the calendar <resource>%1</resource> from the "
 "list?"
 msgstr "_n: Anda pasti ingin menghapuskan templat penggera yang dipilih?"
 
 #: resourceselector.cpp:291
-msgctxt "@action Reload resource"
+msgctxt "@action Reload calendar"
 msgid "Re&load"
 msgstr ""
 
@@ -3738,7 +3742,7 @@ msgstr "Paparkan Seting"
 
 #: resourceconfigdialog.cpp:62
 #, fuzzy
-msgctxt "@label:textbox Resource name"
+msgctxt "@label:textbox Calendar name"
 msgid "Name:"
 msgstr "Nama"
 
@@ -3750,12 +3754,12 @@ msgstr ""
 #: resourceconfigdialog.cpp:80
 #, fuzzy, kde-format
 msgctxt "@title:group"
-msgid "<resource>%1</resource> Resource Settings"
+msgid "<resource>%1</resource> Calendar Settings"
 msgstr "Paparkan Seting"
 
 #: resourceconfigdialog.cpp:122
 msgctxt "@info"
-msgid "Please enter a resource name."
+msgid "Please enter a calendar name."
 msgstr ""
 
 #: latecancel.cpp:37
@@ -4100,7 +4104,7 @@ msgstr ""
 #: editdlg.cpp:980
 #, fuzzy
 msgctxt "@info"
-msgid "You must select a resource to save the alarm in"
+msgid "You must select a calendar to save the alarm in"
 msgstr "Pilih templat untuk mendasari penggera baru."
 
 #: editdlg.cpp:1057
@@ -5091,7 +5095,7 @@ msgstr "Masukkan fail bunyi piawai untuk digunakan dalam dialog edit penggera."
 #. i18n: ectx: label, entry (AskResource), group (General)
 #: rc.cpp:57 rc.cpp:423
 msgctxt "@label"
-msgid "Prompt for which resource to store in"
+msgid "Prompt for which calendar to store in"
 msgstr ""
 
 #. i18n: file: kalarmconfig.kcfg:97
@@ -6397,14 +6401,14 @@ msgid "Disabled"
 msgstr "&Nyahaktifkan"
 
 #: resources/alarmresource.cpp:334
-msgctxt "@info/plain Parameter in 'Default resource: Yes/No'"
+msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
 msgid "Yes"
 msgstr ""
 
 #: resources/alarmresource.cpp:334
 #, fuzzy
 #| msgid "None"
-msgctxt "@info/plain Parameter in 'Default resource: Yes/No'"
+msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
 msgid "No"
 msgstr "Tiada"
 
@@ -6412,8 +6416,8 @@ msgstr "Tiada"
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<title>%1</title><para>Resource type: %2<nl/>Contents: %3<nl/>%4: <filename>%"
-"5</filename><nl/>Permissions: %6<nl/>Status: %7<nl/>Default resource: %8</"
+"<title>%1</title><para>Calendar type: %2<nl/>Contents: %3<nl/>%4: <filename>%"
+"5</filename><nl/>Permissions: %6<nl/>Status: %7<nl/>Default calendar: %8</"
 "para>"
 msgstr ""
 
@@ -6421,7 +6425,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Resource <resource>%1</resource> cannot be made writable since it either was "
+"Calendar <resource>%1</resource> cannot be made writable since it either was "
 "not created by <application>KAlarm</application>, or was created by a newer "
 "version of <application>KAlarm</application>"
 msgstr ""
@@ -6866,20 +6870,21 @@ msgstr ""
 #: resourcemodelview.cpp:416
 #, fuzzy
 msgctxt "@info"
-msgid "You cannot disable your default active alarm resource."
+msgid "You cannot disable your default active alarm calendar."
 msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
 #: resourcemodelview.cpp:425
+#, fuzzy
 msgctxt "@info"
 msgid ""
-"You cannot disable your default archived alarm resource while expired alarms "
+"You cannot disable your default archived alarm calendar while expired alarms "
 "are configured to be kept."
-msgstr ""
+msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
 #: resourcemodelview.cpp:430
 #, fuzzy
 msgctxt "@info"
-msgid "Do you really want to disable your default resource?"
+msgid "Do you really want to disable your default calendar?"
 msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
 #: mainwindow.cpp:111
@@ -7258,6 +7263,21 @@ msgstr "Tindakan"
 msgctxt "@info/plain Todo calendar item's due date/time"
 msgid "Due:"
 msgstr "Tarikh:"
+
+#, fuzzy
+#~ msgctxt "@title:group"
+#~ msgid "Resources"
+#~ msgstr "&Pengulangan"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Resource Configuration"
+#~ msgstr "Konfigurasi penggera"
+
+#, fuzzy
+#~ msgctxt "@info/plain"
+#~ msgid "%1 resource"
+#~ msgstr "%1 memerlukan %2"
 
 #, fuzzy
 #~ msgctxt "@info:whatsthis"
@@ -8541,9 +8561,6 @@ msgstr "Tarikh:"
 
 #~ msgid "%1 requires %2, %3 or %4"
 #~ msgstr "%1 memerlukan %2, %3 atau %4"
-
-#~ msgid "%1: wrong calendar file"
-#~ msgstr "%1: fail kalendar salah"
 
 #~ msgid "URL of calendar file"
 #~ msgstr "URL fail kalendar"
