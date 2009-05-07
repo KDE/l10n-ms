@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-05 11:22+0200\n"
+"POT-Creation-Date: 2009-05-07 11:18+0200\n"
 "PO-Revision-Date: 2005-11-17 12:03+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -13,6 +13,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
+
+#: app/extractHereDndPlugin.cpp:47 kerfuffle/extractiondialog.cpp:121
+#, fuzzy
+#| msgid "Extract"
+msgid "Extract here"
+msgstr "Ekstrak"
 
 #: app/main.cpp:38
 msgid "Ark"
@@ -201,7 +207,7 @@ msgstr "Buka 'arkib'"
 #: kerfuffle/adddialog.cpp:54
 #, fuzzy
 #| msgid "Simple Compressed Archive"
-msgid "Compress to archive"
+msgid "Compress to Archive"
 msgstr "Arkib Termampat Ringkas"
 
 #: kerfuffle/addtoarchive.cpp:91
@@ -301,35 +307,35 @@ msgstr "Arkib sudah wujud. Anda ingin menulisgantinya?"
 msgid "Folder exists"
 msgstr "Arkib Sudah Wujud"
 
-#: kerfuffle/extractiondialog.cpp:121
-#, fuzzy
-#| msgid "Extract"
-msgid "Extract here"
-msgstr "Ekstrak"
-
-#: kerfuffle/extractiondialog.cpp:121 part/part.cpp:321
+#: kerfuffle/extractiondialog.cpp:121 part/part.cpp:321 part/part.cpp:747
 msgid "Cancel"
 msgstr ""
 
-#: kerfuffle/jobs.cpp:138
+#: kerfuffle/jobs.cpp:110
+#, fuzzy
+#| msgid "An error occurred while opening the archive %1."
+msgid "An error occurred while performing the operation."
+msgstr "Ralat berlaku semasa membuka arkib %1."
+
+#: kerfuffle/jobs.cpp:141
 #, fuzzy
 #| msgid "Creating archive..."
 msgid "Loading archive..."
 msgstr "Mencipta arkib..."
 
-#: kerfuffle/jobs.cpp:186
+#: kerfuffle/jobs.cpp:189
 #, fuzzy
 msgid "Extracting all files"
 msgstr "Ekstrak Fail Dari %1"
 
-#: kerfuffle/jobs.cpp:190
+#: kerfuffle/jobs.cpp:193
 #, fuzzy, kde-format
 msgid "Extracting one file"
 msgid_plural "Extracting %1 files"
 msgstr[0] "Ekstrak Fail Dari %1"
 msgstr[1] "Ekstrak Fail Dari %1"
 
-#: kerfuffle/jobs.cpp:225
+#: kerfuffle/jobs.cpp:228
 #, fuzzy, kde-format
 #| msgid "Adding files..."
 msgid "Adding a file"
@@ -337,7 +343,7 @@ msgid_plural "Adding %1 files"
 msgstr[0] "Menambah fail..."
 msgstr[1] "Menambah fail..."
 
-#: kerfuffle/jobs.cpp:246
+#: kerfuffle/jobs.cpp:249
 #, fuzzy, kde-format
 #| msgid "An error occurred while adding the files to the archive."
 msgid "Deleting a file from the archive"
@@ -516,8 +522,10 @@ msgid "Click to preview the selected file"
 msgstr ""
 
 #: part/part.cpp:198
-msgid "E&xtract..."
-msgstr "&Ekstrak..."
+#, fuzzy
+#| msgid "Extract"
+msgid "E&xtract"
+msgstr "Ekstrak"
 
 #: part/part.cpp:200
 msgid ""
@@ -565,7 +573,7 @@ msgstr "buka folder"
 #: part/part.cpp:248
 #, fuzzy
 #| msgid "E&xtract..."
-msgid "Quick extract to..."
+msgid "Quick Extract To..."
 msgstr "&Ekstrak..."
 
 #: part/part.cpp:311
@@ -583,13 +591,13 @@ msgstr "Arkib sudah wujud. Anda ingin menulisgantinya?"
 #: part/part.cpp:321
 #, fuzzy
 #| msgid "Archive Already Exists"
-msgid "File exists"
+msgid "File Exists"
 msgstr "Arkib Sudah Wujud"
 
 #: part/part.cpp:321
 #, fuzzy
 #| msgid "Open with:"
-msgid "Open file"
+msgid "Open File"
 msgstr "Buka dengan:"
 
 #: part/part.cpp:330
@@ -600,11 +608,11 @@ msgstr ""
 #: part/part.cpp:330 part/part.cpp:374 part/part.cpp:415
 #, fuzzy
 #| msgid "Open 'archive'"
-msgid "Error opening archive"
+msgid "Error Opening Archive"
 msgstr "Buka 'arkib'"
 
 #: part/part.cpp:360
-msgid "Unable to determine archive type"
+msgid "Unable to Determine Archive Type"
 msgstr ""
 
 #: part/part.cpp:361
@@ -643,6 +651,15 @@ msgstr "Semua Fail"
 #| msgid "Add Folde&r..."
 msgid "Add Folder"
 msgstr "Tambah &Folder..."
+
+#: part/part.cpp:747
+msgid "Deleting these files is not undoable. Are you sure you want to do this?"
+msgstr ""
+
+#: part/part.cpp:747
+#, fuzzy
+msgid "Delete files"
+msgstr "Fail yang dipilih"
 
 #: plugins/7zipplugin/7zipplugin.cpp:60
 msgid "Unable to find 7zr, 7za or 7z"
@@ -1039,6 +1056,9 @@ msgstr "Semua Fail"
 msgid "Open destination folder after extraction"
 msgstr "Buka folder destinasi selepas pengekstrakan"
 
+#~ msgid "E&xtract..."
+#~ msgstr "&Ekstrak..."
+
 #, fuzzy
 #~| msgid "An error occurred while adding the files to the archive."
 #~ msgid "Couldn't open the file '%1', libarchive can't handle it."
@@ -1191,9 +1211,6 @@ msgstr "Buka folder destinasi selepas pengekstrakan"
 
 #~ msgid "Saving..."
 #~ msgstr "Menyimpan..."
-
-#~ msgid "An error occurred while opening the archive %1."
-#~ msgstr "Ralat berlaku semasa membuka arkib %1."
 
 #~ msgid ""
 #~ "The following files will not be extracted\n"
