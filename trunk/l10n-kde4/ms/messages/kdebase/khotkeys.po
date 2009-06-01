@@ -27,12 +27,11 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sharuzzaman@myrealbox.com"
 
-#. i18n: file: kcm_hotkeys/triggers/shortcut_trigger_widget.ui:19
+#. i18n: file: kcm_hotkeys/ui/shortcut_trigger_widget.ui:18
 #. i18n: ectx: property (text), widget (QLabel, shortcut_label)
-#: rc.cpp:5
-#, fuzzy
+#: rc.cpp:23
 msgid "&Shortcut:"
-msgstr "Jalan pintas:"
+msgstr "Pinta&san:"
 
 #. i18n: file: kcm_hotkeys/triggers/window_trigger_widget.ui:22
 #. i18n: ectx: property (title), widget (QGroupBox, when_group)
@@ -409,10 +408,9 @@ msgstr "Fungsi:"
 msgid "Arguments:"
 msgstr "Hujah:"
 
-#. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:84
+#. i18n: file: kcm_hotkeys/ui/dbus_action_widget.ui:84
 #. i18n: ectx: property (text), widget (QPushButton, execButton)
-#: rc.cpp:182
-#, fuzzy
+#: rc.cpp:17
 msgid "Call"
 msgstr "Panggil"
 
@@ -670,17 +668,17 @@ msgid ""
 "activated."
 msgstr ""
 
-#: kcm_hotkeys/simple_action_data_widget.cpp:124
-#, fuzzy
-#| msgid "Triggers"
+#. i18n: file: kcm_hotkeys/ui/simple_action_data_widget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, triggerBox)
+#: rc.cpp:26
 msgid "Trigger"
 msgstr "Picu"
 
-#: kcm_hotkeys/simple_action_data_widget.cpp:160
-#, fuzzy
-#| msgid "Actions"
+#. i18n: file: kcm_hotkeys/ui/simple_action_data_widget.ui:24
+#. i18n: ectx: property (title), widget (QGroupBox, actionBox)
+#: rc.cpp:29
 msgid "Action"
-msgstr "Aksi"
+msgstr "Tindakan"
 
 #: libkhotkeysprivate/triggers/shortcut_trigger.cpp:126
 msgid "Shortcut trigger: "
@@ -755,9 +753,7 @@ msgstr "Entri menu:"
 msgid "D-Bus: "
 msgstr "Panggilan DCOP..."
 
-#: libkhotkeysprivate/actions/command_url_action.cpp:69
-#, fuzzy
-#| msgid "Command/URL : "
+#: libkhotkeysprivate/actions/command_url_action.cpp:68
 msgid "Command/URL : "
 msgstr "Arahan/URL:"
 
@@ -794,6 +790,105 @@ msgstr ""
 msgid "Menu Editor entries"
 msgstr "Entri Editor Menu"
 
+#. i18n: file: kcm_hotkeys/ui/global_settings_widget.ui:28
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:32
+msgid "KHotKeys Daemon"
+msgstr "Daemon KHotkeys"
+
+#. i18n: file: kcm_hotkeys/ui/dbus_action_widget.ui:18
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: rc.cpp:5
+msgid "Remote Application:"
+msgstr "Aplikasi Jauh:"
+
+#. i18n: file: kcm_hotkeys/ui/dbus_action_widget.ui:31
+#. i18n: ectx: property (text), widget (QLabel, objectLabel)
+#: rc.cpp:8
+msgid "Remote Object:"
+msgstr "Objek Jauh:"
+
+#. i18n: file: kcm_hotkeys/ui/global_settings_widget.ui:36
+#. i18n: ectx: property (text), widget (QCheckBox, enabled)
+#: rc.cpp:35
+msgid "Start the khotkeys daemon on logon"
+msgstr ""
+
+#. i18n: file: kcm_hotkeys/ui/menuentry_action_widget.ui:18
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: rc.cpp:38
+msgid "Application"
+msgstr "Aplikasi"
+
+#. i18n: file: kcm_hotkeys/ui/hotkeys_widget_base.ui:25
+#. i18n: ectx: property (text), widget (QLabel, enabled_comment)
+#: rc.cpp:50
+msgid "Add comment here"
+msgstr ""
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:91
+#, fuzzy
+#| msgid "Keyboard Shortcut"
+msgid "New Global Shortcut"
+msgstr "Jalan Pintas Papan Kekunci"
+
+#: kcm_hotkeys/kcm_gestures.cpp:302 kcm_hotkeys/kcm_hotkeys.cpp:340
+msgid ""
+"The current action has unsaved changes. If you continue those changes will "
+"be lost!"
+msgstr ""
+
+#: kcm_hotkeys/kcm_gestures.cpp:347
+msgid "Started server <em>org.kde.khotkeys</em>."
+msgstr ""
+
+#: kcm_hotkeys/kcm_gestures.cpp:349
+msgid "Unable to start server <em>org.kde.khotkeys</em>."
+msgstr ""
+
+#: kcm_hotkeys/kcm_gestures.cpp:355
+#, kde-format
+msgid ""
+"Unable to start service <em>org.kde.khotkeys</em>.<br /><br /><i>Error: %1</"
+"i>"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:366 kcm_hotkeys/kcm_hotkeys.cpp:388
+msgid ""
+"Unable to contact khotkeys. Your changes are saved but i failed to activate "
+"them"
+msgstr ""
+
+#: update/update.cpp:31
+#, fuzzy
+#| msgid "KHotKeys daemon"
+msgid "KHotKeys Update"
+msgstr "Daemon KHotkeys"
+
+#: update/update.cpp:35
+#, kde-format
+msgid "Id of the script to add to %1"
+msgstr ""
+
+#: libkhotkeysprivate/triggers/gesture_trigger.cpp:76
+msgid "Gesture trigger: "
+msgstr "Picu gerak isyarat:"
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:80
+msgid "No service configured!"
+msgstr ""
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:81
+#: libkhotkeysprivate/actions/menuentry_action.cpp:90
+#, kde-format
+msgid "Input Action : %1"
+msgstr ""
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:89
+#, kde-format
+msgid "Failed to start service '%1'!"
+msgstr ""
+
 #, fuzzy
 #~| msgid "Active window: "
 #~ msgid "Active Window"
@@ -810,11 +905,6 @@ msgstr "Entri Editor Menu"
 #, fuzzy
 #~| msgid "KHotKeys daemon"
 #~ msgid "KHotKeys update utility"
-#~ msgstr "Daemon KHotkeys"
-
-#, fuzzy
-#~| msgid "KHotKeys daemon"
-#~ msgid "KHotKeys Daemon"
 #~ msgstr "Daemon KHotkeys"
 
 #, fuzzy
