@@ -1091,7 +1091,7 @@ msgstr ""
 msgid "Transferred down: %1 / up: %2"
 msgstr ""
 
-#: apps/ktorrent/ktorrent.cpp:768
+#: ktorrent/statusbar.cpp:41 ktorrent/statusbar.cpp:94
 msgid "DHT: off"
 msgstr "DHT: off"
 
@@ -1151,7 +1151,7 @@ msgstr ""
 msgid "%1 short!"
 msgstr ""
 
-#: apps/ktorrent/groups/groupview.cpp:75 apps/ktorrent/ktorrent.cpp:231
+#: ktorrent/gui.cpp:85
 msgid "Groups"
 msgstr "Kumpulan"
 
@@ -1519,9 +1519,8 @@ msgid ""
 "order."
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 177
-#: rc.cpp:273 rc.cpp:282
-#, no-c-format
+#: ktorrent/speedlimitsmodel.cpp:110
+#: plugins/syndication/feedwidgetmodel.cpp:83
 msgid "Torrent"
 msgstr "Torrent"
 
@@ -1593,9 +1592,8 @@ msgstr ""
 msgid "Cannot write beyond end of the mmap buffer!"
 msgstr ""
 
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 44
-#: libktorrent/pluginmanagerprefpage.cpp:36 rc.cpp:1306
-#, no-c-format
+#: libktcore/pluginmanagerprefpage.cpp:38
+#: libktcore/pluginmanagerprefpage.cpp:54
 msgid "Plugins"
 msgstr "Plugin"
 
@@ -1870,9 +1868,23 @@ msgid ""
 "were not downloaded but have been found anyway.</p></body></html>"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/scandlgbase.ui line 89
-#: rc.cpp:507 rc.cpp:510
-#, no-c-format
+#. i18n: file: ktorrent/scandlg.ui:53
+#. i18n: ectx: property (text), widget (QLabel, chunks_found)
+#. i18n: file: ktorrent/scandlg.ui:94
+#. i18n: ectx: property (text), widget (QLabel, chunks_failed)
+#. i18n: file: ktorrent/scandlg.ui:132
+#. i18n: ectx: property (text), widget (QLabel, chunks_not_downloaded)
+#. i18n: file: ktorrent/scandlg.ui:170
+#. i18n: ectx: property (text), widget (QLabel, chunks_downloaded)
+#. i18n: file: ktorrent/scandlg.ui:53
+#. i18n: ectx: property (text), widget (QLabel, chunks_found)
+#. i18n: file: ktorrent/scandlg.ui:94
+#. i18n: ectx: property (text), widget (QLabel, chunks_failed)
+#. i18n: file: ktorrent/scandlg.ui:132
+#. i18n: ectx: property (text), widget (QLabel, chunks_not_downloaded)
+#. i18n: file: ktorrent/scandlg.ui:170
+#. i18n: ectx: property (text), widget (QLabel, chunks_downloaded)
+#: rc.cpp:17 rc.cpp:29 rc.cpp:41 rc.cpp:53
 msgid "0"
 msgstr "0"
 
@@ -2020,9 +2032,9 @@ msgstr ""
 msgid "Calculate"
 msgstr "Kira"
 
-#. i18n: file ./apps/ktorrent/downloadpref.ui line 224
-#: apps/ktorrent/pref.cpp:56 rc.cpp:207
-#, no-c-format
+#. i18n: file: ktorrent/recommendedsettingsdlg.ui:120
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:92
 msgid "Preferences"
 msgstr "Keutamaan"
 
@@ -2771,15 +2783,52 @@ msgid ""
 "body></html>"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/addpeerwidgetbase.ui line 43
-#: rc.cpp:114 rc.cpp:144
-#, no-c-format
+#. i18n: file: ktorrent/addpeersdlg.ui:48
+#. i18n: ectx: property (text), widget (QLineEdit, m_ip)
+#. i18n: file: ktorrent/ipfilterwidget.ui:28
+#. i18n: ectx: property (text), widget (KLineEdit, m_ip_to_add)
+#. i18n: file: ktorrent/addpeersdlg.ui:48
+#. i18n: ectx: property (text), widget (QLineEdit, m_ip)
+#. i18n: file: ktorrent/ipfilterwidget.ui:28
+#. i18n: ectx: property (text), widget (KLineEdit, m_ip_to_add)
+#: rc.cpp:401 rc.cpp:845
 msgid "127.0.0.1"
 msgstr "127.0.0.1"
 
-#. i18n: file ./apps/ktorrent/addpeerwidgetbase.ui line 51
-#: rc.cpp:117 rc.cpp:237 rc.cpp:423 rc.cpp:750
-#, no-c-format
+#. i18n: file: ktorrent/addpeersdlg.ui:59
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: ktorrent/torrentcreatordlg.ui:244
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: file: ktorrent/proxypref.ui:52
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: ktorrent/proxypref.ui:145
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#. i18n: file: ktorrent/networkpref.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: ktupnptest/upnptestwidget.ui:64
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: plugins/webinterface/webinterfaceprefwidget.ui:135
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: file: plugins/scripting/scripts/email_notifications/emailconfig.ui:61
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: file: ktorrent/addpeersdlg.ui:59
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: ktorrent/torrentcreatordlg.ui:244
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: file: ktorrent/proxypref.ui:52
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: ktorrent/proxypref.ui:145
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#. i18n: file: ktorrent/networkpref.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: ktupnptest/upnptestwidget.ui:64
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: plugins/webinterface/webinterfaceprefwidget.ui:135
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: file: plugins/scripting/scripts/email_notifications/emailconfig.ui:61
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:404 rc.cpp:485 rc.cpp:885 rc.cpp:931 rc.cpp:979 rc.cpp:1227
+#: rc.cpp:1359 rc.cpp:2102
 msgid "Port:"
 msgstr "Port:"
 
@@ -3007,9 +3056,9 @@ msgstr ""
 msgid "IP or Hostname"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 396
-#: rc.cpp:429 rc.cpp:546 rc.cpp:549
-#, no-c-format
+#. i18n: file: ktorrent/torrentcreatordlg.ui:285
+#. i18n: ectx: property (text), widget (QTreeWidget, m_node_list)
+#: rc.cpp:494
 msgid "Port"
 msgstr "Port"
 
@@ -3038,9 +3087,9 @@ msgstr ""
 msgid "Torrent:"
 msgstr ""
 
-#. i18n: file ./plugins/partfileimport/importdlgbase.ui line 63
-#: rc.cpp:997
-#, no-c-format
+#. i18n: file: ktorrent/importdialog.ui:45
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:518
 msgid "Data:"
 msgstr "Data:"
 
@@ -3845,9 +3894,19 @@ msgid ""
 "body></html>"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/pastedlgbase.ui line 52
-#: rc.cpp:336 rc.cpp:1582
-#, no-c-format
+#. i18n: file: ktorrent/pastedlgbase.ui:36
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: file: plugins/infowidget/trackerview.ui:34
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: plugins/syndication/feedwidget.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: ktorrent/pastedlgbase.ui:36
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: file: plugins/infowidget/trackerview.ui:34
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: plugins/syndication/feedwidget.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:973 rc.cpp:1424 rc.cpp:1866
 msgid "URL:"
 msgstr "URL:"
 
@@ -4381,9 +4440,10 @@ msgstr ""
 msgid "Torrent to display:"
 msgstr ""
 
-#. i18n: file ./plugins/upnp/upnpwidget.ui line 16
-#: plugins/upnp/upnpprefpage.cpp:31 rc.cpp:639
-#, no-c-format
+#. i18n: file: plugins/upnp/upnpwidget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, UPnPWidget)
+#: rc.cpp:1254 plugins/upnp/upnpplugin.cpp:55 plugins/upnp/upnpplugin.cpp:58
+#: plugins/upnp/upnpplugin.cpp:69
 msgid "UPnP"
 msgstr "UPnP"
 
@@ -4711,9 +4771,9 @@ msgstr ""
 msgid "Left:"
 msgstr "Kiri:"
 
-#. i18n: file ./plugins/infowidget/chunkdownloadviewbase.ui line 195
-#: rc.cpp:807
-#, no-c-format
+#. i18n: file: plugins/infowidget/chunkdownloadview.ui:203
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_8)
+#: rc.cpp:1418
 msgid "Size:"
 msgstr "Saiz:"
 
@@ -4723,9 +4783,15 @@ msgstr "Saiz:"
 msgid "Current Tracker"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 69
-#: rc.cpp:258 rc.cpp:291
-#, no-c-format
+#. i18n: file: plugins/infowidget/trackerview.ui:55
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: plugins/syndication/feedwidget.ui:56
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: plugins/infowidget/trackerview.ui:55
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: plugins/syndication/feedwidget.ui:56
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:1427 rc.cpp:1870
 msgid "Status:"
 msgstr "Status:"
 
@@ -4923,9 +4989,9 @@ msgid ""
 "priority files.</p></body></html>"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 42
-#: apps/ktorrent/ktorrent.cpp:193 rc.cpp:255 rc.cpp:288 rc.cpp:864
-#, no-c-format
+#. i18n: file: plugins/infowidget/statustab.ui:31
+#. i18n: ectx: property (text), widget (QLabel, hdr_info)
+#: rc.cpp:1523
 msgid "Info"
 msgstr "Maklumat"
 
@@ -4965,9 +5031,9 @@ msgstr ""
 msgid "Available chunks:"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 461
-#: rc.cpp:894
-#, no-c-format
+#. i18n: file: plugins/infowidget/statustab.ui:302
+#. i18n: ectx: property (text), widget (QLabel, hdr_sharing)
+#: rc.cpp:1553
 msgid "Sharing"
 msgstr "Perkongsian"
 
@@ -6351,9 +6417,7 @@ msgstr ""
 msgid "Weekend"
 msgstr "Hujung Minggu"
 
-#. i18n: file ./plugins/upnp/upnpwidget.ui line 41
-#: rc.cpp:645
-#, no-c-format
+#: plugins/upnp/routermodel.cpp:68
 msgid "Device"
 msgstr "Peranti"
 
@@ -6490,7 +6554,7 @@ msgstr "Alamat IP"
 msgid "Country"
 msgstr "Negara"
 
-#: plugins/infowidget/peerview.cpp:175
+#: plugins/infowidget/peerviewmodel.cpp:368
 msgid "Client"
 msgstr "Klien"
 
@@ -6640,9 +6704,7 @@ msgstr ""
 msgid "Displays all the webseeds of a torrent"
 msgstr ""
 
-#. i18n: file ./plugins/search/searchpref.ui line 148
-#: rc.cpp:1591
-#, no-c-format
+#: plugins/infowidget/webseedsmodel.cpp:124
 msgid "URL"
 msgstr "URL"
 
@@ -6749,9 +6811,7 @@ msgstr "Tidak"
 msgid "Chunk"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/chunkdownloadviewbase.ui line 253
-#: rc.cpp:813
-#, no-c-format
+#: plugins/infowidget/chunkdownloadmodel.cpp:211
 msgid "Progress"
 msgstr "Perkembangan"
 
@@ -6929,7 +6989,8 @@ msgstr ""
 msgid "Average seeds connected per running torrent"
 msgstr ""
 
-#: plugins/logviewer/logviewerplugin.cpp:57
+#: plugins/logviewer/logprefpage.cpp:30
+#: plugins/logviewer/logviewerplugin.cpp:59
 msgid "Log Viewer"
 msgstr "Pelihat Log"
 
@@ -6946,11 +7007,8 @@ msgstr "Sistem"
 msgid "Log Level"
 msgstr ""
 
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 58
-#: rc.cpp:1312 rc.cpp:1330 rc.cpp:1348 rc.cpp:1369 rc.cpp:1384 rc.cpp:1402
-#: rc.cpp:1423 rc.cpp:1441 rc.cpp:1456 rc.cpp:1489 rc.cpp:1504 rc.cpp:1519
-#: rc.cpp:1537 rc.cpp:1552
-#, no-c-format
+#: plugins/logviewer/logflags.cpp:205
+#: plugins/logviewer/logflagsdelegate.cpp:46
 msgid "Debug"
 msgstr "Nyahpepijat"
 
@@ -6965,11 +7023,8 @@ msgstr ""
 msgid "Important"
 msgstr "Penting"
 
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 53
-#: rc.cpp:1309 rc.cpp:1327 rc.cpp:1345 rc.cpp:1366 rc.cpp:1381 rc.cpp:1399
-#: rc.cpp:1420 rc.cpp:1438 rc.cpp:1453 rc.cpp:1486 rc.cpp:1501 rc.cpp:1516
-#: rc.cpp:1534 rc.cpp:1549
-#, no-c-format
+#: plugins/logviewer/logflags.cpp:208
+#: plugins/logviewer/logflagsdelegate.cpp:43
 msgid "All"
 msgstr "Semua"
 
@@ -7080,15 +7135,13 @@ msgstr ""
 msgid "Title: <b>%1</b>"
 msgstr ""
 
-#: plugins/infowidget/infowidget.cpp:366
-#: plugins/infowidget/iwfiletreeitem.cpp:71
-#: plugins/infowidget/iwfiletreeitem.cpp:103
+#: plugins/mediaplayer/mediamodel.cpp:124
+#: plugins/mediaplayer/mediamodel.cpp:151
 msgid "Available"
 msgstr "Ada"
 
-#: plugins/infowidget/infowidget.cpp:368
-#: plugins/infowidget/iwfiletreeitem.cpp:75
-#: plugins/infowidget/iwfiletreeitem.cpp:107
+#: plugins/mediaplayer/mediamodel.cpp:124
+#: plugins/mediaplayer/mediamodel.cpp:151
 msgid "Pending"
 msgstr "Tertangguh"
 
@@ -7114,7 +7167,7 @@ msgstr ""
 msgid "<b>Downloading</b>"
 msgstr ""
 
-#: plugins/rssfeed/rssfeedmanager.cpp:78
+#: plugins/syndication/feedwidgetmodel.cpp:81
 msgid "Title"
 msgstr "Tajuk"
 
@@ -7224,9 +7277,9 @@ msgstr[1] ""
 msgid "<b>%1</b><br/><br/>%2"
 msgstr ""
 
-#. i18n: file ./plugins/search/searchtabbase.ui line 16
-#: plugins/search/searchplugin.cpp:69 rc.cpp:1615 rc.cpp:1618 rc.cpp:1633
-#, no-c-format
+#: plugins/search/searchprefpage.cpp:58 plugins/search/searchtoolbar.cpp:72
+#: plugins/search/searchplugin.cpp:67 plugins/search/searchplugin.cpp:87
+#: plugins/search/searchplugin.cpp:232
 msgid "Search"
 msgstr "Cari"
 
@@ -7270,15 +7323,16 @@ msgstr ""
 msgid "Open in New Tab"
 msgstr "Buka di Tab Baru"
 
-#: plugins/search/searchwidget.cpp:170
+#: plugins/search/searchwidget.cpp:192
+#, kde-format
 msgid "Searching for %1..."
 msgstr "Mencari untuk %1..."
 
-#: plugins/search/searchwidget.cpp:202
+#: plugins/search/searchwidget.cpp:213
 msgid "torrent files"
 msgstr "fail torrent"
 
-#: plugins/search/searchwidget.cpp:192
+#: plugins/search/searchwidget.cpp:281
 msgid "Search finished"
 msgstr "Carian selesai"
 
@@ -7309,7 +7363,7 @@ msgstr ""
 msgid "Do you want to download or save the torrent?"
 msgstr ""
 
-#: plugins/search/htmlpart.cpp:165
+#: plugins/search/htmlpart.cpp:175
 msgid "Download Torrent"
 msgstr "Muatturun Torrent"
 
@@ -7669,7 +7723,7 @@ msgstr ""
 msgid "Cannot seek in file : %1"
 msgstr ""
 
-#: apps/ktorrent/pref.cpp:196
+#: libbtcore/util/logsystemmanager.cpp:33
 msgid "General"
 msgstr "Umum"
 
@@ -7938,8 +7992,8 @@ msgstr "Memuat turun"
 msgid "Stalled"
 msgstr "Tergantung"
 
-#: libktorrent/torrent/peersourcemanager.cpp:155
-#: libktorrent/torrent/torrentcontrol.cpp:1173
+#: libbtcore/torrent/torrentcontrol.cpp:1491
+#: libbtcore/torrent/peersourcemanager.cpp:162
 msgid "Stopped"
 msgstr "Dihentikan"
 
@@ -7997,2498 +8051,1108 @@ msgstr ""
 msgid "Cannot open file : %1 : %2"
 msgstr ""
 
-#: apps/ktorrent/ktorrent.cpp:120
-msgid "Torrents"
-msgstr "Torrent"
+#~ msgid "Torrents"
+#~ msgstr "Torrent"
 
-#: apps/ktorrent/ktorrent.cpp:194
-msgid "Data transferred during the current session"
-msgstr ""
+#~ msgid ""
+#~ "_: to start\n"
+#~ "Start"
+#~ msgstr "Mula"
 
-#: apps/ktorrent/ktorrent.cpp:195
-msgid "Current speed of all torrents combined"
-msgstr ""
+#~ msgid ""
+#~ "_: to stop\n"
+#~ "Stop"
+#~ msgstr "Henti"
 
-#: apps/ktorrent/ktorrent.cpp:448 apps/ktorrent/ktorrentview.cpp:163
-msgid ""
-"_: to start\n"
-"Start"
-msgstr "Mula"
+#~ msgid ""
+#~ "_: to start all\n"
+#~ "Start All"
+#~ msgstr "Mula Semua"
 
-#: apps/ktorrent/ktorrent.cpp:452 apps/ktorrent/ktorrentview.cpp:159
-msgid ""
-"_: to stop\n"
-"Stop"
-msgstr "Henti"
+#~ msgid ""
+#~ "_: to stop all\n"
+#~ "Stop All"
+#~ msgstr "Henti Semua"
 
-#: apps/ktorrent/ktorrent.cpp:460
-msgid ""
-"_: to start all\n"
-"Start All"
-msgstr "Mula Semua"
+#~ msgid "IPFilter"
+#~ msgstr "IPFilter"
 
-#: apps/ktorrent/ktorrent.cpp:464
-msgid ""
-"_: to stop all\n"
-"Stop All"
-msgstr "Henti Semua"
+#~ msgid "Check Data Integrity"
+#~ msgstr "Periksa Integriti Data"
 
-#: apps/ktorrent/ktorrent.cpp:468
-msgid ""
-"_: to paste torrent URL\n"
-"Paste Torrent URL..."
-msgstr ""
+#~ msgid "Set max upload rate"
+#~ msgstr "Tetap kadar muatnaik maksimum"
 
-#: apps/ktorrent/ktorrent.cpp:472
-msgid ""
-"_: to open Queue Manager\n"
-"Open Queue Manager..."
-msgstr ""
+#~ msgid "Set max download rate"
+#~ msgstr "Tetap kadar muatturun maksimum"
 
-#: apps/ktorrent/ktorrent.cpp:482
-msgid "IPFilter"
-msgstr "IPFilter"
-
-#: apps/ktorrent/ktorrent.cpp:487 apps/ktorrent/ktorrentview.cpp:214
-msgid "Check Data Integrity"
-msgstr "Periksa Integriti Data"
-
-#: apps/ktorrent/ktorrent.cpp:498
-msgid "Set max upload rate"
-msgstr "Tetap kadar muatnaik maksimum"
-
-#: apps/ktorrent/ktorrent.cpp:501
-msgid "Set max download rate"
-msgstr "Tetap kadar muatturun maksimum"
-
-#: apps/ktorrent/ktorrent.cpp:750
 #, fuzzy
-msgid "Downloads %1/%2"
-msgstr "Muat Turun"
+#~ msgid "Downloads %1/%2"
+#~ msgstr "Muat Turun"
 
-#: apps/ktorrent/ktorrent.cpp:755
 #, fuzzy
-msgid "Uploads %1/%2"
-msgstr "Tetapan berjaya dimuatnaik"
+#~ msgid "Uploads %1/%2"
+#~ msgstr "Tetapan berjaya dimuatnaik"
 
-#: apps/ktorrent/ipfilterwidget.cpp:72
-msgid ""
-"You must enter IP in format 'XXX.XXX.XXX.XXX'. You can also use wildcards "
-"for ranges like '127.0.0.*'."
-msgstr ""
-
-#: apps/ktorrent/ktorrentcore.cpp:298
-msgid ""
-"You need to have default save directory selected to load torrents silently."
-msgstr ""
-
-#: apps/ktorrent/ktorrentcore.cpp:899
-msgid ""
-"Several data files of the torrent \"%1\" are missing, do you want to "
-"recreate them, or do you want to not download them?"
-msgstr ""
-
-#: apps/ktorrent/ktorrentcore.cpp:939
-msgid ""
-"The file where the data is saved of the torrent \"%1\" is missing, do you "
-"want to recreate it?"
-msgstr ""
-
-#: apps/ktorrent/main.cpp:64
 #, fuzzy
-msgid "A BitTorrent program for KDE"
-msgstr "Program BitTorrent untuk KDE"
+#~ msgid "A BitTorrent program for KDE"
+#~ msgstr "Program BitTorrent untuk KDE"
 
-#: apps/ktorrent/main.cpp:70
 #, fuzzy
-msgid "Debug mode"
-msgstr "Mod nyahpepijat"
+#~ msgid "Debug mode"
+#~ msgstr "Mod nyahpepijat"
 
-#: apps/ktorrent/main.cpp:90
 #, fuzzy
-msgid "The downloads icon"
-msgstr "Editor Ikon"
+#~ msgid "The downloads icon"
+#~ msgstr "Editor Ikon"
 
-#: apps/ktorrent/main.cpp:103
 #, fuzzy
-msgid "File prioritization"
-msgstr "Extension &fail:"
+#~ msgid "File prioritization"
+#~ msgstr "Extension &fail:"
 
-#: apps/ktorrent/torrentcreatordlg.cpp:70
 #, fuzzy
-msgid "You must add at least one tracker."
-msgstr "Anda mesti masukkan sekurang-kurangnya satu Sistem Operasi"
+#~ msgid "You must add at least one tracker."
+#~ msgstr "Anda mesti masukkan sekurang-kurangnya satu Sistem Operasi"
 
-#: apps/ktorrent/torrentcreatordlg.cpp:96
 #, fuzzy
-msgid "Choose File to Save Torrent"
-msgstr "Simpan imej dipilih kedalam fail"
+#~ msgid "Choose File to Save Torrent"
+#~ msgstr "Simpan imej dipilih kedalam fail"
 
-#: apps/ktorrent/groups/groupview.cpp:204
-msgid "Please enter the new group name."
-msgstr ""
-
-#: apps/ktorrent/groups/queueduploadsgroup.cpp:29
-msgid "Queued uploads"
-msgstr ""
-
-#: apps/ktorrent/groups/queueddownloadsgroup.cpp:29
 #, fuzzy
-msgid "Queued downloads"
-msgstr "Tiada icon"
+#~ msgid "Queued downloads"
+#~ msgstr "Tiada icon"
 
-#: apps/ktorrent/groups/useruploadsgroup.cpp:29
 #, fuzzy
-msgid "User uploads"
-msgstr "Antaramuka Pengguna"
+#~ msgid "User uploads"
+#~ msgstr "Antaramuka Pengguna"
 
-#: apps/ktorrent/groups/userdownloadsgroup.cpp:29
 #, fuzzy
-msgid "User downloads"
-msgstr "Antaramuka Pengguna"
+#~ msgid "User downloads"
+#~ msgstr "Antaramuka Pengguna"
 
-#: apps/ktorrent/addpeerwidget.cpp:67
-msgid "Torrent does not exist. Report this bug to KTorrent developers."
-msgstr ""
-
-#: apps/ktorrent/addpeerwidget.cpp:102
-msgid "Potential peer added."
-msgstr ""
-
-#: apps/ktorrent/addpeerwidget.cpp:106
 #, fuzzy
-msgid "Malformed IP address."
-msgstr "URL Autokonfigurasi:"
+#~ msgid "Malformed IP address."
+#~ msgstr "URL Autokonfigurasi:"
 
-#: apps/ktorrent/pref.cpp:135
 #, fuzzy
-msgid "Download Options"
-msgstr "Pilihan Bina"
+#~ msgid "Download Options"
+#~ msgstr "Pilihan Bina"
 
-#: apps/ktorrent/pref.cpp:164 apps/ktorrent/pref.cpp:263
-msgid "The DHT port needs to be different from the UDP tracker port!"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 16
-#: apps/ktorrent/pref.cpp:196 rc.cpp:30
-#, fuzzy, no-c-format
-msgid "General Options"
-msgstr "Pilihan Umum"
-
-#: apps/ktorrent/pref.cpp:252
-msgid ""
-"Cannot lookup %1: %2\n"
-"Please provide a valid IP address or hostname."
-msgstr ""
-
-#: apps/ktorrent/pref.cpp:355
 #, fuzzy
-msgid "Advanced Options"
-msgstr "Pilihan Lanjutan"
+#~ msgid "General Options"
+#~ msgstr "Pilihan Umum"
 
-#: apps/ktorrent/ktorrentview.cpp:89
 #, fuzzy
-msgid "Visible columns"
-msgstr "&Lajur Kiri"
+#~ msgid "Advanced Options"
+#~ msgstr "Pilihan Lanjutan"
 
-#: apps/ktorrent/ktorrentview.cpp:101
 #, fuzzy
-msgid "Share ratio"
-msgstr "Pelihara nisbah aspek"
+#~ msgid "Visible columns"
+#~ msgstr "&Lajur Kiri"
 
-#: apps/ktorrent/ktorrentview.cpp:181
 #, fuzzy
-msgid "Add Peers..."
-msgstr "T_ambah Semua"
+#~ msgid "Share ratio"
+#~ msgstr "Pelihara nisbah aspek"
 
-#: apps/ktorrent/ktorrentview.cpp:186
-msgid "Torrent peer sources:"
-msgstr ""
-
-#: apps/ktorrent/ktorrentview.cpp:203
 #, fuzzy
-msgid "Open Directory..."
-msgstr "pemilih direktori"
+#~ msgid "Add Peers..."
+#~ msgstr "T_ambah Semua"
 
-#: apps/ktorrent/ktorrentview.cpp:208
 #, fuzzy
-msgid "Remove From Group"
-msgstr "Buang Ciri-ciri daripada Gaya"
+#~ msgid "Open Directory..."
+#~ msgstr "pemilih direktori"
 
-#: apps/ktorrent/ktorrentview.cpp:284
-#, c-format
-msgid ""
-"_n: Cannot start more than 1 download, \n"
-"Cannot start more than %n downloads, "
-msgstr ""
-
-#: apps/ktorrent/ktorrentview.cpp:286
-#, fuzzy, c-format
-msgid ""
-"_n: and 1 seed. \n"
-"and %n seeds. "
-msgstr "Alamat rakan jauh:"
-
-#: apps/ktorrent/ktorrentview.cpp:372
-msgid ""
-"The torrent %1 has not finished downloading, do you want to delete the "
-"incomplete data, too?"
-msgstr ""
-
-#: apps/ktorrent/ktorrentview.cpp:704
-msgid "You are already checking the data of the torrent %1 !"
-msgstr ""
-
-#: apps/ktorrent/queuedialog.cpp:73
-msgid "User"
-msgstr "Pengguna"
-
-#: apps/ktorrent/queuedialog.cpp:305 apps/ktorrent/queuedialog.cpp:326
 #, fuzzy
-msgid "No (private torrent)"
-msgstr "(tiada cadangan ejaan)"
+#~ msgid "Remove From Group"
+#~ msgstr "Buang Ciri-ciri daripada Gaya"
 
-#: apps/ktorrent/trayicon.cpp:65
-msgid ""
-"<center><b>KTorrent</b></center><table cellpadding='2' cellspacing='2' "
-"align='center'><tr><td><b>Speed:</b></td><td></td></tr><tr><td>Download: "
-"<font color='#1c9a1c'>%1</font></td><td>Upload: <font color='#990000'>%2</"
-"font></td></tr><tr><td><b>Transfer:</b></td><td></td></tr><tr><td>Download: "
-"<font color='#1c9a1c'>%3</font></td><td>Upload: <font color='#990000'>%4</"
-"font></td></tr></table>"
-msgstr ""
-
-#: apps/ktorrent/trayicon.cpp:166
-msgid ""
-"<b>%1</b> has reached its maximum share ratio of %2 and cannot be enqueued. "
-"Remove the limit manually if you want to continue seeding."
-msgstr ""
-
-#: apps/ktorrent/trayicon.cpp:168
 #, fuzzy
-msgid "Torrent cannot be enqueued."
-msgstr "Ralat - %s tidak dijumpai"
+#~ msgid ""
+#~ "_n: and 1 seed. \n"
+#~ "and %n seeds. "
+#~ msgstr "Alamat rakan jauh:"
 
-#: apps/ktorrent/trayicon.cpp:188
-msgid "Speed limit in KB/s"
-msgstr ""
+#~ msgid "User"
+#~ msgstr "Pengguna"
 
-#: apps/ktupnptest/main.cpp:35
 #, fuzzy
-msgid "A KDE KPart Application"
-msgstr "Fail Log Aplikasi"
+#~ msgid "No (private torrent)"
+#~ msgstr "(tiada cadangan ejaan)"
 
-#: _translatorinfo.cpp:1
-msgid ""
-"_: NAME OF TRANSLATORS\n"
-"Your names"
-msgstr "Sharuzzaman Ahmat Raslan"
-
-#: _translatorinfo.cpp:3
 #, fuzzy
-msgid ""
-"_: EMAIL OF TRANSLATORS\n"
-"Your emails"
-msgstr "opensource@mimos.my,sharuzzaman@myrealbox.com"
+#~ msgid "Torrent cannot be enqueued."
+#~ msgstr "Ralat - %s tidak dijumpai"
 
-#. i18n: file ./apps/ktorrent/fileselectdlgbase.ui line 73
-#: rc.cpp:15 rc.cpp:339
-#, no-c-format
-msgid "O&K"
-msgstr "O&K"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 46
-#: rc.cpp:36
-#, no-c-format
-msgid "Folder to store temporary files:"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 69
-#: rc.cpp:39
-#, fuzzy, no-c-format
-msgid "&Automatically save downloads to:"
-msgstr "Simp&an Skim ini secara automatik"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 97
-#: rc.cpp:45
-#, no-c-format
-msgid "Show s&ystem tray icon"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 105
-#: rc.cpp:48
-#, fuzzy, no-c-format
-msgid "Show speed &bar in tray icon"
-msgstr "Aplet Amaran Dulang Sistem"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 132
-#: rc.cpp:54
-#, no-c-format
-msgid "Upload bandwidth (in KB/sec):"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 157
-#: rc.cpp:57
-#, no-c-format
-msgid "Download bandwidth (in KB/sec):"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 186
-#: rc.cpp:60
-#, fuzzy, no-c-format
-msgid "Custom IP"
-msgstr "Kamus Lazim:"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 197
-#: rc.cpp:63
-#, fuzzy, no-c-format
-msgid "Se&nd the tracker a custom IP or hostname"
-msgstr "Namahos atau Alamat IP/Subnet:"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 213
-#: rc.cpp:66
-#, fuzzy, no-c-format
-msgid "Custom IP or hostname:"
-msgstr "Namahos atau Alamat IP/Subnet:"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 233
-#: rc.cpp:72
-#, no-c-format
-msgid ""
-"<b>D</b>istributed <b>H</b>ash <b>T</b>able protocol.<br>Decentralized peers "
-"exchange protocol. See manual for more info."
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 244
-#: rc.cpp:75
-#, no-c-format
-msgid "&Use DHT to get additional peers"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 263
-#: rc.cpp:78
-#, no-c-format
-msgid "UDP port for DHT communication:"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 326
-#: rc.cpp:87
-#, no-c-format
-msgid ""
-"Protocol encryption is used to prevent ISP's from slowing down bittorrent "
-"connections."
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 337
-#: rc.cpp:93
-#, no-c-format
-msgid ""
-"If unchecked, you'll be able to connect only to clients supporting "
-"encryption."
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/addpeerwidgetbase.ui line 16
-#: rc.cpp:108
-#, fuzzy, no-c-format
-msgid "Add potential peer"
-msgstr "Tambah lajur selepas"
-
-#. i18n: file ./apps/ktorrent/addpeerwidgetbase.ui line 35
-#: rc.cpp:111
-#, fuzzy, no-c-format
-msgid "Peer IP:"
-msgstr "Alamat rakan jauh:"
-
-#. i18n: file ./apps/ktorrent/addpeerwidgetbase.ui line 100
-#: rc.cpp:120
-#, no-c-format
-msgid "Enter peer IP and port."
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/ipfilterwidgetbase.ui line 16
-#: rc.cpp:129
-#, fuzzy, no-c-format
-msgid "KTorrent Blacklist"
-msgstr "Fail torrent awam"
-
-#. i18n: file ./apps/ktorrent/ipfilterwidgetbase.ui line 30
-#: rc.cpp:132
-#, no-c-format
-msgid ""
-"Note: Blacklist applies to current session only. Use save/open to save your "
-"entries or use IPFilter plugin (PeerGuardian)."
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/ipfilterwidgetbase.ui line 41
-#: rc.cpp:135
-#, no-c-format
-msgid "Banned Peers"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/ipfilterwidgetbase.ui line 50
-#: rc.cpp:138
-#, no-c-format
-msgid "Peer IP address"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/ipfilterwidgetbase.ui line 134
-#: rc.cpp:150
-#, no-c-format
-msgid "Adds a peer to blacklist"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/ipfilterwidgetbase.ui line 168
-#: rc.cpp:156
-#, no-c-format
-msgid "Removes selected peer from blacklist"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/ipfilterwidgetbase.ui line 176
-#: rc.cpp:159
-#, fuzzy, no-c-format
-msgid "C&lear"
-msgstr "&Kosongkan"
-
-#. i18n: file ./apps/ktorrent/ipfilterwidgetbase.ui line 182
-#: rc.cpp:162
-#, fuzzy, no-c-format
-msgid "Clears this list"
-msgstr "Label Senarai Semasa"
-
-#. i18n: file ./apps/ktorrent/ipfilterwidgetbase.ui line 218
-#: rc.cpp:168
-#, fuzzy, no-c-format
-msgid "Save &As..."
-msgstr "Simp&an sebagai.."
-
-#. i18n: file ./apps/ktorrent/ipfilterwidgetbase.ui line 224
-#: rc.cpp:171
-#, no-c-format
-msgid "Save this blacklist to use with KTorrent IPFilter plugin"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/downloadpref.ui line 68
-#: rc.cpp:186 rc.cpp:189 rc.cpp:210 rc.cpp:213 rc.cpp:222
-#, fuzzy, no-c-format
-msgid "(0 is no limit)"
-msgstr "Had saiz log:"
-
-#. i18n: file ./apps/ktorrent/downloadpref.ui line 192
-#: rc.cpp:198
-#, fuzzy, no-c-format
-msgid "Attention"
-msgstr "Perhatian"
-
-#. i18n: file ./apps/ktorrent/downloadpref.ui line 203
-#: rc.cpp:201
-#, no-c-format
-msgid ""
-"The above ports must also be forwarded if you are behind a router. The UPnP "
-"plugin can do this for you."
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/downloadpref.ui line 213
-#: rc.cpp:204
-#, no-c-format
-msgid "&Keep seeding after download is finished"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/downloadpref.ui line 259
-#: rc.cpp:216 rc.cpp:219
-#, no-c-format
-msgid "KB/sec (0 is no limit)"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/downloadpref.ui line 528
-#: rc.cpp:246
-#, fuzzy, no-c-format
-msgid "Max share ratio:"
-msgstr "Pelihara nisbah aspek"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 16
-#: rc.cpp:249
-#, fuzzy, no-c-format
-msgid "KT Queue Dialog"
-msgstr "Test Dialog Tanya"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 85
-#: rc.cpp:261 rc.cpp:294 rc.cpp:1483
-#, fuzzy, no-c-format
-msgid "Tracker:"
-msgstr "Penjejak Waktu Peribadi"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 93
-#: rc.cpp:264 rc.cpp:297 rc.cpp:1480
-#, no-c-format
-msgid "DHT:"
-msgstr "DHT:"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 117
-#: rc.cpp:270
-#, fuzzy, no-c-format
-msgid "Bytes left:"
-msgstr "&Lajur Kiri"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 188
-#: rc.cpp:276 rc.cpp:285
-#, fuzzy, no-c-format
-msgid "Controlled by"
-msgstr "Diperlukan oleh"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 214
-#: rc.cpp:279
-#, fuzzy, no-c-format
-msgid "Upload&s"
-msgstr "Tetapan berjaya dimuatnaik"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 333
-#: rc.cpp:303
-#, fuzzy, no-c-format
-msgid "Uploaded:"
-msgstr "Tetapan berjaya dimuatnaik"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 486
-#: rc.cpp:306
-#, fuzzy, no-c-format
-msgid "M&ove up"
-msgstr "&Tetapan Halaman"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 494
-#: rc.cpp:309
-#, fuzzy, no-c-format
-msgid "Move dow&n"
-msgstr "Gerak Tab Kiri"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 519
-#: rc.cpp:312
-#, fuzzy, no-c-format
-msgid "Move to top"
-msgstr "Alih ke atas"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 530
-#: rc.cpp:315
-#, fuzzy, no-c-format
-msgid "Move to &bottom"
-msgstr "Sudut Kiri-Bawah"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 555
-#: rc.cpp:318
-#, fuzzy, no-c-format
-msgid "&QM Controlled"
-msgstr "Diperlukan oleh"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 563
-#: rc.cpp:321
-#, fuzzy, no-c-format
-msgid "&User Controlled"
-msgstr "Antaramuka Pengguna"
-
-#. i18n: file ./apps/ktorrent/pastedlgbase.ui line 30
-#: rc.cpp:333
-#, fuzzy, no-c-format
-msgid "Paste URL"
-msgstr "URL untuk IG"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 16
-#: rc.cpp:345
-#, fuzzy, no-c-format
-msgid "Create Torrent"
-msgstr "Hasilkan fax"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 38
-#: rc.cpp:348
-#, no-c-format
-msgid "The file or folder of which you want to create a torrent:"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 53
-#: rc.cpp:351
-#, fuzzy, no-c-format
-msgid "You must add at least one tracker or node."
-msgstr "Anda mesti masukkan sekurang-kurangnya satu Sistem Operasi"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 61
-#: rc.cpp:354
-#, fuzzy, no-c-format
-msgid "File Options"
-msgstr "Pilihan Bina"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 86
-#: rc.cpp:360
-#, no-c-format
-msgid "32"
-msgstr "32"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 91
-#: rc.cpp:363
-#, no-c-format
-msgid "64"
-msgstr "64"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 96
-#: rc.cpp:366
-#, no-c-format
-msgid "128"
-msgstr "128"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 101
-#: rc.cpp:369
-#, no-c-format
-msgid "256"
-msgstr "256"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 106
-#: rc.cpp:372
-#, no-c-format
-msgid "512"
-msgstr "512"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 111
-#: rc.cpp:375
-#, no-c-format
-msgid "1024"
-msgstr "1024"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 116
-#: rc.cpp:378
-#, no-c-format
-msgid "2048"
-msgstr "2048"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 121
-#: rc.cpp:381
-#, no-c-format
-msgid "4096"
-msgstr "4096"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 126
-#: rc.cpp:384
-#, no-c-format
-msgid "8192"
-msgstr "8192"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 138
-#: rc.cpp:387 rc.cpp:474
-#, no-c-format
-msgid "KB"
-msgstr "KB"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 165
-#: rc.cpp:390
-#, fuzzy, no-c-format
-msgid "Start seedin&g the torrent"
-msgstr "Mula Senarai Baru"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 176
-#: rc.cpp:393
-#, no-c-format
-msgid "Decentrali&zed (DHT only)"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 248
-#: rc.cpp:402
-#, fuzzy, no-c-format
-msgid "&Create"
-msgstr "Hasilkan fax"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 283
-#: rc.cpp:411
-#, no-c-format
-msgid "DHT nodes"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 385
-#: rc.cpp:426
-#, fuzzy, no-c-format
-msgid "IP or hostname"
-msgstr "LImau atau Lebih"
-
-#. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 437
-#: rc.cpp:432
-#, no-c-format
-msgid ""
-"NOTE: Some known good DHT nodes are already inserted. You should probably "
-"insert your own IP address and port too if you plan to seed this torrent."
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 16
-#: rc.cpp:435
-#, fuzzy, no-c-format
-msgid "Advanced Preferences"
-msgstr "Tetap keutamaan"
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 46
-#: rc.cpp:441
-#, fuzzy, no-c-format
-msgid "Memory usage:"
-msgstr "Permainan memori"
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 52
-#: rc.cpp:444
-#, no-c-format
-msgid "Low"
-msgstr "Rendah"
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 57
-#: rc.cpp:447
-#, no-c-format
-msgid "Medium"
-msgstr "Sederhana"
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 62
-#: rc.cpp:450
-#, no-c-format
-msgid "High"
-msgstr "Tinggi"
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 107
-#: rc.cpp:456
-#, no-c-format
-msgid "500ms"
-msgstr "500ms"
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 112
-#: rc.cpp:459
-#, no-c-format
-msgid "1s"
-msgstr "1s"
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 117
-#: rc.cpp:462
-#, no-c-format
-msgid "2s"
-msgstr "2s"
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 122
-#: rc.cpp:465
-#, no-c-format
-msgid "5s"
-msgstr "5s"
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 174
-#: rc.cpp:471
-#, no-c-format
-msgid "During uploading, do &not recheck chunks bigger than"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 231
-#: rc.cpp:477
-#, no-c-format
-msgid "Do a data integrit&y check after"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 250
-#: rc.cpp:480
-#, no-c-format
-msgid "corrupted chunks"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 279
-#: rc.cpp:483
-#, fuzzy, no-c-format
-msgid "Networking"
-msgstr "Rangkaian"
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 298
-#: rc.cpp:486
-#, no-c-format
-msgid "Type of service field of IP packets"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 339
-#: rc.cpp:489
-#, no-c-format
-msgid "Do not use the KDE pro&xy for HTTP tracker connections"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/advancedpref.ui line 355
-#: rc.cpp:492
-#, fuzzy, no-c-format
-msgid "HTTP tracker proxy:"
-msgstr "Penjejak Waktu Peribadi"
-
-#. i18n: file ./apps/ktorrent/scandlgbase.ui line 16
-#: rc.cpp:495
-#, fuzzy, no-c-format
-msgid "Scanning data"
-msgstr "Visualisasi Data"
-
-#. i18n: file ./apps/ktorrent/scandlgbase.ui line 30
-#: rc.cpp:498
-#, fuzzy, no-c-format
-msgid "Scanning data of torrent :"
-msgstr "Data Program Rosak"
-
-#. i18n: file ./apps/ktorrent/scandlgbase.ui line 54
-#: rc.cpp:501
-#, fuzzy, no-c-format
-msgid "Number of chunks found :"
-msgstr "Fail %s tidak dijumpai"
-
-#. i18n: file ./apps/ktorrent/scandlgbase.ui line 62
-#: rc.cpp:504
-#, no-c-format
-msgid "Number of chunks failed / not downloaded :"
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 10
-#: rc.cpp:525
-#, no-c-format
-msgid "Maximum number of downloads (0 = no limit)"
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 15
-#: rc.cpp:528
-#, no-c-format
-msgid "Maximum number of seeds (0 = no limit)"
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 20
-#: rc.cpp:531
-#, no-c-format
-msgid "Maximum number of connections per torrent (0 = no limit)"
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 25
-#: rc.cpp:534
-#, no-c-format
-msgid "Maximum number of connections for all torrents (0 = no limit) "
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 30
-#: rc.cpp:537
-#, no-c-format
-msgid "Maximum upload speed in KB/sec (0 = no limit)"
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 35
-#: rc.cpp:540
-#, no-c-format
-msgid "Maximum download speed in KB/sec (0 = no limit)"
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 40
-#: rc.cpp:543
-#, no-c-format
-msgid "Maximum share ratio(0 = no limit)"
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 57
-#: rc.cpp:552
-#, fuzzy, no-c-format
-msgid "Show a system tray icon"
-msgstr "Aplet Amaran Dulang Sistem"
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 61
-#: rc.cpp:555
-#, fuzzy, no-c-format
-msgid "Show speed bar in tray icon"
-msgstr "Aplet Amaran Dulang Sistem"
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 65
-#: rc.cpp:558
-#, no-c-format
-msgid "Download bandwidth (in kb/s):"
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 71
-#: rc.cpp:561
-#, no-c-format
-msgid "Upload bandwidth (in kb/s):"
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 77
-#: rc.cpp:564
-#, no-c-format
-msgid "Show popup messages when torrent is finished."
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 81
-#: rc.cpp:567
-#, no-c-format
-msgid "Keep seeding after download has finished"
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 85
-#: rc.cpp:570
-#, no-c-format
-msgid "Folder to store temporary files"
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 89
-#: rc.cpp:573
-#, fuzzy, no-c-format
-msgid "Whether to automatically save downloads to saveDir"
-msgstr "Berbalik ke yang Ter_akhir Disimpan"
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 93
-#: rc.cpp:576
-#, no-c-format
-msgid "Folder to store downloaded files"
-msgstr ""
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 97
-#: rc.cpp:579
-#, fuzzy, no-c-format
-msgid "Whether to use a custom IP to pass to the tracker"
-msgstr "Hantar kepada Skrip CGI"
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 101
-#: rc.cpp:582
-#, fuzzy, no-c-format
-msgid "IP to pass to the tracker"
-msgstr "Hantar kepada Skrip CGI"
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 105
-#: rc.cpp:585
-#, fuzzy, no-c-format
-msgid "Memory usage"
-msgstr "Permainan memori"
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 109
-#: rc.cpp:588
-#, fuzzy, no-c-format
-msgid "GUI update interval"
-msgstr "Mandriva Linux Update"
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 113
-#: rc.cpp:591
-#, fuzzy, no-c-format
-msgid "Support for DHT"
-msgstr "&Cari Bantuan"
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 117
-#: rc.cpp:594
-#, fuzzy, no-c-format
-msgid "DHT port"
-msgstr "Maklumat port IO"
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 123
-#: rc.cpp:597
-#, fuzzy, no-c-format
-msgid "Number of upload slots"
-msgstr "Ubah jumlah lajur"
-
-#. i18n: file ./libktorrent/ktorrent.kcfg line 157
-#: rc.cpp:606
-#, fuzzy, no-c-format
-msgid "Columns shown in KTorrentView"
-msgstr "Isih Lajur dalam Susunan Menaik"
-
-#. i18n: file ./libktorrent/pluginmanagerwidget.ui line 16
-#: rc.cpp:609
-#, fuzzy, no-c-format
-msgid "Plugin Manager"
-msgstr "Pengurus Plugin"
-
-#. i18n: file ./libktorrent/pluginmanagerwidget.ui line 47
-#: plugins/rssfeed/rssfeedmanager.cpp:78 rc.cpp:618
-#, no-c-format
-msgid "Description"
-msgstr "Huraian"
-
-#. i18n: file ./libktorrent/pluginmanagerwidget.ui line 58
-#: rc.cpp:621
-#, fuzzy, no-c-format
-msgid "Author"
-msgstr "Pengarang"
-
-#. i18n: file ./libktorrent/pluginmanagerwidget.ui line 84
-#: rc.cpp:624
-#, fuzzy, no-c-format
-msgid "Load"
-msgstr "Muat"
-
-#. i18n: file ./libktorrent/pluginmanagerwidget.ui line 92
-#: rc.cpp:627
-#, no-c-format
-msgid "U&nload"
-msgstr ""
-
-#. i18n: file ./libktorrent/pluginmanagerwidget.ui line 100
-#: rc.cpp:630
-#, fuzzy, no-c-format
-msgid "Load All"
-msgstr "Aba&i Semua"
-
-#. i18n: file ./libktorrent/pluginmanagerwidget.ui line 108
-#: rc.cpp:633
-#, fuzzy, no-c-format
-msgid "Unload All"
-msgstr "Aba&i Semua"
-
-#. i18n: file ./plugins/upnp/ktupnpplugin.kcfg line 10
-#: rc.cpp:636
-#, fuzzy, no-c-format
-msgid "Default UPnP device to use"
-msgstr "Masukkan peranti yang anda hendak guna."
-
-#. i18n: file ./plugins/upnp/upnpwidget.ui line 35
-#: rc.cpp:642
-#, fuzzy, no-c-format
-msgid "Detected devices:"
-msgstr "Peranti dikesan:"
-
-#. i18n: file ./plugins/upnp/upnpwidget.ui line 52
-#: rc.cpp:648
-#, fuzzy, no-c-format
-msgid "Ports Forwarded"
-msgstr "Port IO"
-
-#. i18n: file ./plugins/upnp/upnpwidget.ui line 91
-#: rc.cpp:654
-#, fuzzy, no-c-format
-msgid "Forw&ard Ports"
-msgstr "Port lain"
-
-#. i18n: file ./plugins/upnp/upnpwidget.ui line 99
-#: rc.cpp:657
-#, fuzzy, no-c-format
-msgid "Undo Port Forwarding"
-msgstr "Maklumat port IO"
-
-#. i18n: file ./plugins/scanfolder/ktscanfolderplugin.kcfg line 9
-#: rc.cpp:663
-#, fuzzy, no-c-format
-msgid "Enable scanning of folder1?"
-msgstr "Hidupkan p&etikan pintar"
-
-#. i18n: file ./plugins/scanfolder/ktscanfolderplugin.kcfg line 14
-#: rc.cpp:666
-#, fuzzy, no-c-format
-msgid "Enable scanning of folder2?"
-msgstr "Hidupkan p&etikan pintar"
-
-#. i18n: file ./plugins/scanfolder/ktscanfolderplugin.kcfg line 19
-#: rc.cpp:669
-#, fuzzy, no-c-format
-msgid "Enable scanning of folder3?"
-msgstr "Hidupkan p&etikan pintar"
-
-#. i18n: file ./plugins/scanfolder/ktscanfolderplugin.kcfg line 24
-#: rc.cpp:672
-#, no-c-format
-msgid "Folder1 path"
-msgstr ""
-
-#. i18n: file ./plugins/scanfolder/ktscanfolderplugin.kcfg line 29
-#: rc.cpp:675
-#, no-c-format
-msgid "Folder2 path"
-msgstr ""
-
-#. i18n: file ./plugins/scanfolder/ktscanfolderplugin.kcfg line 34
-#: rc.cpp:678
-#, no-c-format
-msgid "Folder3 path"
-msgstr ""
-
-#. i18n: file ./plugins/scanfolder/ktscanfolderplugin.kcfg line 39
-#: rc.cpp:681
-#, fuzzy, no-c-format
-msgid "Whether to open torrent silently or not."
-msgstr "Tidak menjumpai fail comps."
-
-#. i18n: file ./plugins/scanfolder/ktscanfolderplugin.kcfg line 44
-#: rc.cpp:684
-#, fuzzy, no-c-format
-msgid "Delete action checked."
-msgstr "<b>Menerapkan tindakan penapis:</b> "
-
-#. i18n: file ./plugins/scanfolder/ktscanfolderplugin.kcfg line 49
-#: rc.cpp:687
-#, fuzzy, no-c-format
-msgid "Move action checked."
-msgstr "<b>Menerapkan tindakan penapis:</b> "
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 16
-#: rc.cpp:690
-#, fuzzy, no-c-format
-msgid "ScanFolder Preferences"
-msgstr "Tetap keutamaan"
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 35
-#: rc.cpp:693
-#, fuzzy, no-c-format
-msgid "Scan folder &1"
-msgstr "Folder Rumah"
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 38
-#: rc.cpp:696 rc.cpp:1156
-#, no-c-format
-msgid "Alt+1"
-msgstr "Alt+1"
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 46
-#: rc.cpp:699
-#, fuzzy, no-c-format
-msgid "Scan folder &2"
-msgstr "Folder Rumah"
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 49
-#: rc.cpp:702 rc.cpp:1147 rc.cpp:1171
-#, no-c-format
-msgid "Alt+2"
-msgstr "Alt+2"
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 57
-#: rc.cpp:705
-#, fuzzy, no-c-format
-msgid "Scan folder &3"
-msgstr "Folder Rumah"
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 60
-#: rc.cpp:708 rc.cpp:1141
-#, no-c-format
-msgid "Alt+3"
-msgstr "Alt+3"
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 81
-#: rc.cpp:714
-#, no-c-format
-msgid "Move to \"loaded\" directory &after loading"
-msgstr ""
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 84
-#: rc.cpp:717
-#, no-c-format
-msgid "Move torrent to \"loaded\" directory after loading it"
-msgstr ""
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 92
-#: rc.cpp:720
-#, fuzzy, no-c-format
-msgid "Open torrents silentl&y"
-msgstr "Buka dokumen sedia ada"
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 95
-#: rc.cpp:723
-#, no-c-format
-msgid "Don't show 'Select files to download' dialog"
-msgstr ""
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 103
-#: rc.cpp:726
-#, fuzzy, no-c-format
-msgid "Delete after loadin&g"
-msgstr "Tambah lajur selepas"
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 106
-#: rc.cpp:729
-#, no-c-format
-msgid "Deletes torrent after loading"
-msgstr ""
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 116
-#: rc.cpp:732
-#, fuzzy, no-c-format
-msgid "Folders to scan"
-msgstr "Program Imbas & OCR"
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 151
-#: rc.cpp:735
-#, fuzzy, no-c-format
-msgid "Folder 1:"
-msgstr "Folder Rumah"
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 162
-#: rc.cpp:738
-#, fuzzy, no-c-format
-msgid "Folder 2:"
-msgstr "Folder Rumah"
-
-#. i18n: file ./plugins/scanfolder/sfprefwidgetbase.ui line 173
-#: rc.cpp:741
-#, fuzzy, no-c-format
-msgid "Folder 3:"
-msgstr "Folder Rumah"
-
-#. i18n: file ./plugins/webinterface/webinterfacepref.ui line 107
-#: rc.cpp:756
-#, no-c-format
-msgid "Session TTL (in sec):"
-msgstr ""
-
-#. i18n: file ./plugins/webinterface/webinterfacepref.ui line 142
-#: rc.cpp:759
-#, fuzzy, no-c-format
-msgid "Select interface:"
-msgstr "Antaramuka Pengguna"
-
-#. i18n: file ./plugins/webinterface/webinterfacepref.ui line 188
-#: rc.cpp:765
-#, fuzzy, no-c-format
-msgid "Change password ..."
-msgstr "Tukar katalaluan"
-
-#. i18n: file ./plugins/webinterface/webinterfacepref.ui line 206
-#: rc.cpp:768
-#, fuzzy, no-c-format
-msgid "Php executable path:"
-msgstr "Skrip (mungkin boleh laksana)"
-
-#. i18n: file ./plugins/webinterface/ktwebinterfaceplugin.kcfg line 10
-#: rc.cpp:771
-#, fuzzy, no-c-format
-msgid "Port number"
-msgstr "Jumlah Lajur"
-
-#. i18n: file ./plugins/webinterface/ktwebinterfaceplugin.kcfg line 15
-#: rc.cpp:774
-#, fuzzy, no-c-format
-msgid "forward Port"
-msgstr "Maklumat port IO"
-
-#. i18n: file ./plugins/webinterface/ktwebinterfaceplugin.kcfg line 20
-#: rc.cpp:777
-#, no-c-format
-msgid "Session time to live"
-msgstr ""
-
-#. i18n: file ./plugins/webinterface/ktwebinterfaceplugin.kcfg line 24
-#: rc.cpp:780
-#, fuzzy, no-c-format
-msgid "interface skin"
-msgstr "Antaramuka Pengguna"
-
-#. i18n: file ./plugins/webinterface/ktwebinterfaceplugin.kcfg line 28
-#: rc.cpp:783
-#, fuzzy, no-c-format
-msgid "php executable path"
-msgstr "Skrip (mungkin boleh laksana)"
-
-#. i18n: file ./plugins/webinterface/ktwebinterfaceplugin.kcfg line 33
-#: rc.cpp:786
-#, fuzzy, no-c-format
-msgid "username"
-msgstr "Namapengguna:"
-
-#. i18n: file ./plugins/webinterface/ktwebinterfaceplugin.kcfg line 37
-#: rc.cpp:789
-#, fuzzy, no-c-format
-msgid "password"
-msgstr "Katalaluan:"
-
-#. i18n: file ./plugins/infowidget/chunkdownloadviewbase.ui line 286
-#: rc.cpp:822
-#, no-c-format
-msgid "Assigned Peers"
-msgstr ""
-
-#. i18n: file ./plugins/infowidget/trackerviewbase.ui line 24
-#: rc.cpp:825
-#, fuzzy, no-c-format
-msgid "TrackerViewBase"
-msgstr "Maklumat penjejak"
-
-#. i18n: file ./plugins/infowidget/trackerviewbase.ui line 78
-#: rc.cpp:831
-#, fuzzy, no-c-format
-msgid "Tracker URL:"
-msgstr "URL untuk IG"
-
-#. i18n: file ./plugins/infowidget/trackerviewbase.ui line 201
-#: rc.cpp:840
-#, fuzzy, no-c-format
-msgid "&Update Tracker"
-msgstr " Auto Kemaskini"
-
-#. i18n: file ./plugins/infowidget/trackerviewbase.ui line 204
-#: rc.cpp:843
-#, no-c-format
-msgid "Alt+U"
-msgstr "Alt+U"
-
-#. i18n: file ./plugins/infowidget/trackerviewbase.ui line 207
-#: rc.cpp:846
-#, no-c-format
-msgid "Minimum update interval - 60 seconds"
-msgstr ""
-
-#. i18n: file ./plugins/infowidget/trackerviewbase.ui line 215
-#: rc.cpp:849
-#, fuzzy, no-c-format
-msgid "Add Trac&ker"
-msgstr "Tambah lajur selepas"
-
-#. i18n: file ./plugins/infowidget/trackerviewbase.ui line 242
-#: rc.cpp:855
-#, fuzzy, no-c-format
-msgid "Cha&nge Tracker"
-msgstr "Penjejak Waktu Peribadi"
-
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 47
-#: rc.cpp:861
-#, no-c-format
-msgid "St&atus"
-msgstr "St&atus"
-
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 160
-#: rc.cpp:873
-#, fuzzy, no-c-format
-msgid "Average Down Speed:"
-msgstr "Kelajuan Failover"
-
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 208
-#: rc.cpp:876
-#, fuzzy, no-c-format
-msgid "Average Up Speed:"
-msgstr "&Tetapan Halaman"
-
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 234
-#: rc.cpp:882
-#, fuzzy, no-c-format
-msgid "Tracker Status:"
-msgstr "Bar &status"
-
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 355
-#: rc.cpp:888
-#, no-c-format
-msgid "Parts of the torrent which have been downloaded:"
-msgstr ""
-
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 390
-#: rc.cpp:891
-#, no-c-format
-msgid "Parts of the torrent which are available:"
-msgstr ""
-
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 515
-#: rc.cpp:900
-#, fuzzy, no-c-format
-msgid "&Use limit?"
-msgstr "Sedang Diguna"
-
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 518
-#: rc.cpp:903 rc.cpp:909
-#, no-c-format
-msgid "Limit works only in seed mode"
-msgstr ""
-
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 526
-#: rc.cpp:906
-#, fuzzy, no-c-format
-msgid "Max ratio:"
-msgstr "Pelihara nisbah aspek"
-
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 551
-#: rc.cpp:912
-#, no-c-format
-msgid ""
-"Your upload will stop when share ratio gets to this value. Zero means no "
-"limit."
-msgstr ""
-
-#. i18n: file ./plugins/infowidget/ktinfowidgetplugin.kcfg line 10
-#: rc.cpp:933
-#, no-c-format
-msgid "Show peer view tab in main window"
-msgstr ""
-
-#. i18n: file ./plugins/infowidget/ktinfowidgetplugin.kcfg line 14
-#: rc.cpp:936
-#, no-c-format
-msgid "Show chunk download view tab in main window"
-msgstr ""
-
-#. i18n: file ./plugins/infowidget/ktinfowidgetplugin.kcfg line 18
-#: rc.cpp:939
-#, no-c-format
-msgid "Show trackers view tab in main window"
-msgstr ""
-
-#. i18n: file ./plugins/infowidget/iwpref.ui line 35
-#: rc.cpp:945
-#, no-c-format
-msgid "Show list of chunks currentl&y downloading"
-msgstr ""
-
-#. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 47
-#: rc.cpp:954
-#, fuzzy, no-c-format
-msgid "Select PeerGuardian Filter File "
-msgstr "Pilih imej dari Fail"
-
-#. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 58
-#: rc.cpp:957
-#, fuzzy, no-c-format
-msgid "Use PeerGuardian filter?"
-msgstr "<b>Menerapkan tindakan penapis:</b> "
-
-#. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 85
-#: rc.cpp:963
-#, no-c-format
-msgid "http://www.bluetack.co.uk/modules.php?name=Downloads&d_op=getit&lid=8"
-msgstr ""
-
-#. i18n: file ./plugins/ipfilter/ktipfilterplugin.kcfg line 10
-#: rc.cpp:973
-#, fuzzy, no-c-format
-msgid "Level1 filter url"
-msgstr "URL untuk IG"
-
-#. i18n: file ./plugins/ipfilter/ktipfilterplugin.kcfg line 14
-#: rc.cpp:976
-#, fuzzy, no-c-format
-msgid "Use level1 filter?"
-msgstr "<b>Menerapkan tindakan penapis:</b> "
-
-#. i18n: file ./plugins/ipfilter/convert_dlg.ui line 41
-#: rc.cpp:982
-#, no-c-format
-msgid ""
-"Click on the 'convert' button to start converting antip2p file. NOTE: This "
-"process could take a while even on fast machines and during that time you "
-"won't be able to use KTorrent."
-msgstr ""
-
-#. i18n: file ./plugins/partfileimport/importdlgbase.ui line 16
-#: rc.cpp:991
-#, fuzzy, no-c-format
-msgid "Import an existing download"
-msgstr "Muatturun fail BitTorrent"
-
-#. i18n: file ./plugins/partfileimport/importdlgbase.ui line 95
-#: rc.cpp:1000
-#, no-c-format
-msgid ""
-"Please specify the torrent and the data already downloaded for that torrent."
-msgstr ""
-
-#. i18n: file ./plugins/rssfeed/ktrssfeedplugin.kcfg line 10
-#: rc.cpp:1009
-#, no-c-format
-msgid "default"
-msgstr "default"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 18
-#: rc.cpp:1012
-#, fuzzy, no-c-format
-msgid "Rss Feeds"
-msgstr "Pengumpul RSS GNOME"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 33
-#: rc.cpp:1015
-#, fuzzy, no-c-format
-msgid "Feeds"
-msgstr "Suapan"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 75
-#: rc.cpp:1018
-#, fuzzy, no-c-format
-msgid "De&lete"
-msgstr "&Padam"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 83
-#: rc.cpp:1021 rc.cpp:1060 rc.cpp:1069
-#, fuzzy, no-c-format
-msgid "&New"
-msgstr "&Baru"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 114
-#: rc.cpp:1024
-#, no-c-format
-msgid "&URL"
-msgstr "&URL"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 136
-#: rc.cpp:1027
-#, fuzzy, no-c-format
-msgid "Articles"
-msgstr "Artikel"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 213
-#: rc.cpp:1033
-#, fuzzy, no-c-format
-msgid "Auto&refresh"
-msgstr " Auto Kemaskini"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 239
-#: rc.cpp:1036
-#, fuzzy, no-c-format
-msgid "I&gnore TTL"
-msgstr "&Abai Semua"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 296
-#: rc.cpp:1042 rc.cpp:1072
-#, fuzzy, no-c-format
-msgid "&Title"
-msgstr "&Judul"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 320
-#: rc.cpp:1045
-#, fuzzy, no-c-format
-msgid "Keep Articles (days)"
-msgstr "Tetap&kan baris bersama"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 341
-#: rc.cpp:1048 rc.cpp:1075
-#, fuzzy, no-c-format
-msgid "&Active"
-msgstr "Aktifkan Plugin"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 393
-#: rc.cpp:1054
-#, fuzzy, no-c-format
-msgid "Accept Filters"
-msgstr "Penapis AdBlocK"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 444
-#: rc.cpp:1063
-#, fuzzy, no-c-format
-msgid "Reject Filters"
-msgstr "Penapis AdBlocK"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 545
-#: rc.cpp:1078
-#, fuzzy, no-c-format
-msgid "Regular Expressions"
-msgstr "Penyunting Ungkapan Nalar (regexp)"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 567
-#: rc.cpp:1081
-#, fuzzy, no-c-format
-msgid "Treat as &Series"
-msgstr "&Simpan Imej Sebagai"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 598
-#: rc.cpp:1084
-#, fuzzy, no-c-format
-msgid "Process"
-msgstr "Process"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 611
-#: rc.cpp:1087
-#, no-c-format
-msgid "Series Criteria"
-msgstr ""
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 655
-#: rc.cpp:1090
-#, no-c-format
-msgid "Min Season"
-msgstr ""
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 679
-#: rc.cpp:1093
-#, no-c-format
-msgid "Min Episode"
-msgstr ""
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 717
-#: rc.cpp:1096
-#, fuzzy, no-c-format
-msgid "Max Season"
-msgstr "Saiz Lajur maksimum"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 741
-#: rc.cpp:1099
-#, fuzzy, no-c-format
-msgid "Max Episode"
-msgstr "Saiz Lajur maksimum"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 756
-#: rc.cpp:1102
-#, fuzzy, no-c-format
-msgid "Download \"Proper\" ReReleases"
-msgstr "Muatturun fail BitTorrent"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 767
-#: rc.cpp:1105
-#, no-c-format
-msgid "Download Matches Without Episode"
-msgstr ""
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 813
-#: rc.cpp:1108
-#, fuzzy, no-c-format
-msgid "Test te&xt"
-msgstr "&Memformat Teks"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 839
-#: rc.cpp:1111
-#, fuzzy, no-c-format
-msgid "Te&st"
-msgstr "Ga&ya"
-
-#. i18n: file ./plugins/rssfeed/rssfeedwidget.ui line 857
-#: rc.cpp:1114
-#, fuzzy, no-c-format
-msgid "Filter Matches"
-msgstr "Tiada padanan dijumpai. :-("
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 28
-#: rc.cpp:1123
-#, fuzzy, no-c-format
-msgid "Bandwidth scheduler"
-msgstr "Penjadual Tugas"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 50
-#: rc.cpp:1126
-#, fuzzy, no-c-format
-msgid "Left click category"
-msgstr "Klik Tetikus Automatik"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 61
-#: rc.cpp:1129
-#, no-c-format
-msgid "Categor&y 1"
-msgstr ""
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 157
-#: rc.cpp:1132 rc.cpp:1159
-#, no-c-format
-msgid "T&urn off"
-msgstr ""
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 165
-#: rc.cpp:1135 rc.cpp:1162
-#, fuzzy, no-c-format
-msgid "&Normal"
-msgstr "&Normal"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 195
-#: rc.cpp:1138
-#, fuzzy, no-c-format
-msgid "Category &3"
-msgstr "Kategori:"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 206
-#: rc.cpp:1144 rc.cpp:1168
-#, fuzzy, no-c-format
-msgid "Category &2"
-msgstr "Kategori:"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 219
-#: rc.cpp:1150
-#, fuzzy, no-c-format
-msgid "Right click category"
-msgstr "Klik Tetikus Automatik"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 230
-#: rc.cpp:1153
-#, fuzzy, no-c-format
-msgid "Category &1"
-msgstr "Kategori:"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 367
-#: rc.cpp:1165
-#, fuzzy, no-c-format
-msgid "&Category 3"
-msgstr "Kategori:"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 390
-#: rc.cpp:1174
-#, fuzzy, no-c-format
-msgid "Categories"
-msgstr "Kategori"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 401
-#: rc.cpp:1177
-#, fuzzy, no-c-format
-msgid "<b>1. Category</b>"
-msgstr "Kategori:"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 409
-#: rc.cpp:1180
-#, fuzzy, no-c-format
-msgid "<b>3. Category</b>"
-msgstr "Kategori:"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 425
-#: rc.cpp:1183 rc.cpp:1192 rc.cpp:1201
-#, fuzzy, no-c-format
-msgid "download:"
-msgstr "&Muatturun"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 441
-#: rc.cpp:1186 rc.cpp:1195 rc.cpp:1204
-#, fuzzy, no-c-format
-msgid "upload:"
-msgstr "Tetapan berjaya dimuatnaik"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 457
-#: rc.cpp:1189 rc.cpp:1198 rc.cpp:1207
-#, no-c-format
-msgid "KB/s *"
-msgstr "KB/s *"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 567
-#: rc.cpp:1210
-#, fuzzy, no-c-format
-msgid "<b>2. Category</b>"
-msgstr "Kategori:"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 626
-#: rc.cpp:1213
-#, fuzzy, no-c-format
-msgid "* zero means no limit"
-msgstr "(tiada tetikus dikonfigurasikan)"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 672
-#: rc.cpp:1216
-#, fuzzy, no-c-format
-msgid "Save to file"
-msgstr "Simpan ke fail"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 680
-#: rc.cpp:1219
-#, fuzzy, no-c-format
-msgid "&Load from file"
-msgstr "Selit MathML dari fail"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 688
-#: rc.cpp:1222
-#, fuzzy, no-c-format
-msgid "Reset schedule"
-msgstr "&Tetapsemula kepada susunatur default"
-
-#. i18n: file ./plugins/scheduler/bwspage.ui line 751
-#: rc.cpp:1225
-#, no-c-format
-msgid "O&k"
-msgstr "O&k"
-
-#. i18n: file ./plugins/scheduler/schedulerpage.ui line 16
-#: rc.cpp:1234
-#, no-c-format
-msgid "Scheduler Plugin Pref Page"
-msgstr ""
-
-#. i18n: file ./plugins/scheduler/schedulerpage.ui line 27
-#: rc.cpp:1237
-#, fuzzy, no-c-format
-msgid "Use &bandwidth scheduler?"
-msgstr "Penjadual Penggera Peribadi "
-
-#. i18n: file ./plugins/scheduler/schedulerpage.ui line 46
-#: rc.cpp:1243
-#, no-c-format
-msgid "Use colors instead of pi&xmaps?"
-msgstr ""
-
-#. i18n: file ./plugins/scheduler/schedulerpage.ui line 54
-#: rc.cpp:1246
-#, no-c-format
-msgid "(Recommended for slower systems)"
-msgstr ""
-
-#. i18n: file ./plugins/scheduler/schedulerpage.ui line 62
-#: rc.cpp:1249
-#, fuzzy, no-c-format
-msgid "Edit s&chedule"
-msgstr "Sunting hip&erlink"
-
-#. i18n: file ./plugins/scheduler/ktschedulerplugin.kcfg line 10
-#: rc.cpp:1252
-#, fuzzy, no-c-format
-msgid "Enable bandwidth scheduler?"
-msgstr "Penjadual Penggera Peribadi "
-
-#. i18n: file ./plugins/scheduler/ktschedulerplugin.kcfg line 14
-#: rc.cpp:1255
-#, no-c-format
-msgid "Use colors instead of pixmaps?"
-msgstr ""
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 10
-#: rc.cpp:1258
-#, no-c-format
-msgid "Use rich log text"
-msgstr ""
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 15
-#: rc.cpp:1261
-#, no-c-format
-msgid "General info messages flag"
-msgstr ""
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 19
-#: rc.cpp:1264
-#, fuzzy, no-c-format
-msgid "Connections messages flag"
-msgstr "Sambungan daemon audio JACK"
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 23
-#: rc.cpp:1267
-#, no-c-format
-msgid "DHT messages flag"
-msgstr ""
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 27
-#: rc.cpp:1270
-#, no-c-format
-msgid "Tracker info messages flag"
-msgstr ""
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 31
-#: rc.cpp:1273
-#, fuzzy, no-c-format
-msgid "Disk IO info messages flag"
-msgstr "Opsyen RAID"
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 35
-#: rc.cpp:1276
-#, no-c-format
-msgid "IPFilter plugin messages flag"
-msgstr ""
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 39
-#: rc.cpp:1279
-#, no-c-format
-msgid "Search plugin messages flag"
-msgstr ""
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 43
-#: rc.cpp:1282
-#, no-c-format
-msgid "PartFileImport plugin messages flag"
-msgstr ""
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 47
-#: rc.cpp:1285
-#, no-c-format
-msgid "InfoWidget plugin messages flag"
-msgstr ""
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 51
-#: rc.cpp:1288
-#, no-c-format
-msgid "UPnP plugin messages flag"
-msgstr ""
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 55
-#: rc.cpp:1291
-#, fuzzy, no-c-format
-msgid "ScanFolder plugin messages flag"
-msgstr "Opsyen Sistem Fail"
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 59
-#: rc.cpp:1294
-#, fuzzy, no-c-format
-msgid "Scheduler plugin messages flag"
-msgstr "Opsyen RAID"
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 63
-#: rc.cpp:1297
-#, fuzzy, no-c-format
-msgid "RSS plugin messages flag"
-msgstr "Opsyen RAID"
-
-#. i18n: file ./plugins/logviewer/ktlogviewerplugin.kcfg line 67
-#: rc.cpp:1300
-#, fuzzy, no-c-format
-msgid "WebInterface plugin messages flag"
-msgstr "Opsyen RAID"
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 16
-#: plugins/logviewer/logprefpage.cpp:31 rc.cpp:1303
-#, fuzzy, no-c-format
-msgid "LogViewer Options"
-msgstr "Pilihan Bina"
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 85
-#: rc.cpp:1324
-#, fuzzy, no-c-format
-msgid "IPFilter:"
-msgstr "Pemindahan Fail (FTP)"
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 126
-#: rc.cpp:1342
-#, fuzzy, no-c-format
-msgid "Search:"
-msgstr "Cari:"
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 167
-#: rc.cpp:1360
-#, no-c-format
-msgid "UPnP:"
-msgstr "UPnP:"
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 178
-#: rc.cpp:1363
-#, fuzzy, no-c-format
-msgid "ScanFolder:"
-msgstr "Opsyen Sistem Fail"
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 249
-#: rc.cpp:1396
-#, fuzzy, no-c-format
-msgid "Scheduler:"
-msgstr "Penjadual Tugas"
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 290
-#: rc.cpp:1414
-#, no-c-format
-msgid "PartFileImport:"
-msgstr ""
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 301
-#: rc.cpp:1417
-#, fuzzy, no-c-format
-msgid "InfoWidget:"
-msgstr "<i>info_label</i>"
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 342
-#: rc.cpp:1435
-#, fuzzy, no-c-format
-msgid "RSS plugin:"
-msgstr "Nyahaktif plugin"
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 413
-#: rc.cpp:1468
-#, fuzzy, no-c-format
-msgid "WebInterface plugin:"
-msgstr "Nyahaktif plugin"
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 437
-#: rc.cpp:1474
-#, fuzzy, no-c-format
-msgid "General:"
-msgstr "Umum"
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 445
-#: rc.cpp:1477
-#, fuzzy, no-c-format
-msgid "Connections:"
-msgstr "Ubah sambungan..."
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 559
-#: rc.cpp:1531
-#, fuzzy, no-c-format
-msgid "Disk I/O:"
-msgstr "Gantung Ke Cakera"
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 640
-#: rc.cpp:1567
-#, no-c-format
-msgid "Use rich te&xt for log"
-msgstr ""
-
-#. i18n: file ./plugins/logviewer/logprefwidgetbase.ui line 643
-#: rc.cpp:1570
-#, no-c-format
-msgid "Alt+X"
-msgstr "Alt+X"
-
-#. i18n: file ./plugins/search/searchpref.ui line 60
-#: rc.cpp:1579
-#, fuzzy, no-c-format
-msgid "Search engine name:"
-msgstr "Tetap Nama Imej"
-
-#. i18n: file ./plugins/search/searchpref.ui line 121
-#: rc.cpp:1585
-#, fuzzy, no-c-format
-msgid "&Add"
-msgstr "&Tambah"
-
-#. i18n: file ./plugins/search/searchpref.ui line 137
-#: rc.cpp:1588
-#, no-c-format
-msgid "Engines"
-msgstr ""
-
-#. i18n: file ./plugins/search/searchpref.ui line 232
-#: rc.cpp:1603
-#, fuzzy, no-c-format
-msgid "Update From Internet"
-msgstr "Internet Asas-teks"
-
-#. i18n: file ./plugins/search/searchpref.ui line 244
-#: rc.cpp:1606
-#, fuzzy, no-c-format
-msgid "External Browser"
-msgstr "Pelungsur Web"
-
-#. i18n: file ./plugins/search/searchtabbase.ui line 107
-#: rc.cpp:1624
-#, no-c-format
-msgid "Open search results in e&xternal browser"
-msgstr ""
-
-#. i18n: file ./plugins/search/searchtabbase.ui line 140
-#: rc.cpp:1627
-#, fuzzy, no-c-format
-msgid "Search Engine:"
-msgstr "Kosongkan Carian"
-
-#. i18n: file ./plugins/search/searchtabbase.ui line 165
-#: rc.cpp:1630
-#, fuzzy, no-c-format
-msgid "Clear Search Histor&y"
-msgstr "&Cari Bantuan"
-
-#. i18n: file ./plugins/search/searchbar.ui line 78
-#: rc.cpp:1636
-#, fuzzy, no-c-format
-msgid "Search engine:"
-msgstr "Kosongkan Carian"
-
-#. i18n: file ./plugins/search/ktsearchplugin.kcfg line 10
-#: rc.cpp:1639
-#, fuzzy, no-c-format
-msgid "Current search engine"
-msgstr "&Cari Bantuan"
-
-#. i18n: file ./plugins/search/ktsearchplugin.kcfg line 19
-#: rc.cpp:1645
-#, fuzzy, no-c-format
-msgid "Use custom browser"
-msgstr "&Dalam pelayar web"
-
-#. i18n: file ./plugins/search/ktsearchplugin.kcfg line 23
-#: rc.cpp:1648
-#, no-c-format
-msgid "Custom browser executable path"
-msgstr ""
-
-#: libktorrent/interfaces/functions.cpp:37
-msgid "%1 GB"
-msgstr "%1 GB"
-
-#: libktorrent/interfaces/functions.cpp:39
-msgid "%1 MB"
-msgstr "%1 MB"
-
-#: libktorrent/interfaces/functions.cpp:41
-msgid "%1 KB"
-msgstr "%1 KB"
-
-#: libktorrent/interfaces/functions.cpp:43
-msgid "%1 B"
-msgstr "%1 B"
-
-#: libktorrent/interfaces/functions.cpp:49
 #, fuzzy
-msgid "%1 KB/s"
-msgstr "IP_sec"
+#~ msgid "A KDE KPart Application"
+#~ msgstr "Fail Log Aplikasi"
 
-#: libktorrent/interfaces/functions.cpp:60
-#, fuzzy, c-format
-msgid ""
-"_n: 1 day \n"
-"%n days "
-msgstr "Hari # dalam tahun"
+#~ msgid ""
+#~ "_: NAME OF TRANSLATORS\n"
+#~ "Your names"
+#~ msgstr "Sharuzzaman Ahmat Raslan"
 
-#: libktorrent/interfaces/filetreeitem.cpp:77
-#: plugins/infowidget/iwfiletreediritem.cpp:148
-#: plugins/infowidget/iwfiletreeitem.cpp:120
 #, fuzzy
-msgid "Yes, First"
-msgstr "Baris pertama"
+#~ msgid ""
+#~ "_: EMAIL OF TRANSLATORS\n"
+#~ "Your emails"
+#~ msgstr "opensource@mimos.my,sharuzzaman@myrealbox.com"
 
-#: libktorrent/interfaces/filetreeitem.cpp:80
-#: plugins/infowidget/iwfiletreediritem.cpp:152
-#: plugins/infowidget/iwfiletreeitem.cpp:123
+#~ msgid "O&K"
+#~ msgstr "O&K"
+
 #, fuzzy
-msgid "Yes, Last"
-msgstr "Disimpan terakhir:"
+#~ msgid "&Automatically save downloads to:"
+#~ msgstr "Simp&an Skim ini secara automatik"
 
-#: libktorrent/util/fileops.cpp:52
 #, fuzzy
-msgid "Cannot create directory %1: %2"
-msgstr "Pilih direktori baru"
+#~ msgid "Show speed &bar in tray icon"
+#~ msgstr "Aplet Amaran Dulang Sistem"
 
-#: libktorrent/util/fileops.cpp:254
-#, fuzzy, c-format
-msgid "Cannot calculate the filesize : %2"
-msgstr "Tidak boleh buang gaya ini"
-
-#: libktorrent/pluginmanagerprefpage.cpp:36
 #, fuzzy
-msgid "Plugin Options"
-msgstr "Pilihan Bina"
+#~ msgid "Custom IP"
+#~ msgstr "Kamus Lazim:"
 
-#: libktorrent/pluginmanagerprefpage.cpp:77
-#: libktorrent/pluginmanagerprefpage.cpp:152
-#: libktorrent/pluginmanagerprefpage.cpp:164
 #, fuzzy
-msgid "Loaded"
-msgstr "Dimuatkan"
+#~ msgid "Se&nd the tracker a custom IP or hostname"
+#~ msgstr "Namahos atau Alamat IP/Subnet:"
 
-#: libktorrent/pluginmanagerprefpage.cpp:77
-#: libktorrent/pluginmanagerprefpage.cpp:152
-#: libktorrent/pluginmanagerprefpage.cpp:164
 #, fuzzy
-msgid "Not loaded"
-msgstr "Tiada"
+#~ msgid "Custom IP or hostname:"
+#~ msgstr "Namahos atau Alamat IP/Subnet:"
 
-#: libktorrent/torrent/torrent.cpp:75
-msgid "Torrent has no announce or nodes field"
-msgstr ""
-
-#: libktorrent/torrent/singlefilecache.cpp:78
-#, fuzzy, c-format
-msgid "Cannot load chunk %1"
-msgstr "Tidak boleh buang gaya ini"
-
-#: libktorrent/torrent/torrentcontrol.cpp:468
-#: libktorrent/torrent/torrentcontrol.cpp:497
-msgid ""
-"An error occurred while loading the torrent. The torrent is probably corrupt "
-"or is not a torrent file."
-msgstr ""
-
-#: libktorrent/torrent/queuemanager.cpp:111
-msgid ""
-"Torrent \"%1\" has reached its maximum share ratio. Ignore the limit and "
-"start seeding anyway?"
-msgstr ""
-
-#: libktorrent/torrent/chunkdownload.cpp:339
-#, fuzzy, c-format
-msgid ""
-"_n: 1 peer\n"
-"%n peers"
-msgstr "Alamat rakan jauh:"
-
-#: libktorrent/torrent/cachefile.cpp:246
-#, fuzzy, c-format
-msgid "Cannot expand file %1"
-msgstr "Ralat mengimport fail %s"
-
-#: libktorrent/torrent/cachefile.cpp:367
 #, fuzzy
-msgid "Error writing to %1 : %2"
-msgstr "&Lompat ke hiperlink"
+#~ msgid "Add potential peer"
+#~ msgstr "Tambah lajur selepas"
 
-#: libktorrent/torrent/cachefile.cpp:371
-#, fuzzy, c-format
-msgid "Error writing to %1"
-msgstr "&Lompat ke hiperlink"
-
-#: libktorrent/torrent/udptrackersocket.cpp:54
-msgid ""
-"Specified udp port (%1) is unavailable or in use by another application. "
-"KTorrent is bound to port %2."
-msgstr ""
-
-#: plugins/upnp/upnpplugin.cpp:46
-msgid "Uses UPnP to automatically forward ports on your router"
-msgstr ""
-
-#: plugins/upnp/upnpprefpage.cpp:31
 #, fuzzy
-msgid "UPnP Devices"
-msgstr "Peranti dikesan:"
+#~ msgid "Peer IP:"
+#~ msgstr "Alamat rakan jauh:"
 
-#: plugins/scanfolder/scanfolderplugin.cpp:49
-msgid "Automatically scans directories for torrent files and loads them."
-msgstr ""
-
-#: plugins/scanfolder/scanfolderprefpage.cpp:34
-msgid "ScanFolder"
-msgstr ""
-
-#: plugins/scanfolder/scanfolderprefpage.cpp:34
 #, fuzzy
-msgid "ScanFolder Options"
-msgstr "Pilihan Bina"
+#~ msgid "KTorrent Blacklist"
+#~ msgstr "Fail torrent awam"
 
-#: plugins/scanfolder/scanfolderprefpagewidget.cpp:73
-msgid ""
-"ScanFolder - Folder %1: Invalid URL or folder does not exist. Please, choose "
-"a valid directory."
-msgstr ""
-
-#: plugins/webinterface/webinterfaceprefpage.cpp:27
-msgid "WebInterface"
-msgstr ""
-
-#: plugins/webinterface/webinterfaceprefpage.cpp:27
 #, fuzzy
-msgid "WebInterface Options"
-msgstr "Pilihan Bina"
+#~ msgid "C&lear"
+#~ msgstr "&Kosongkan"
 
-#: plugins/webinterface/webinterfaceprefwidget.cpp:70
-msgid "Php executable isn't in default path, please enter the path manually"
-msgstr ""
-
-#: plugins/webinterface/webinterfaceprefwidget.cpp:106
-msgid "Please enter a new password for the web interface."
-msgstr ""
-
-#: plugins/webinterface/webinterfaceprefwidget.cpp:116
-msgid "%1 exists and it is executable"
-msgstr ""
-
-#: plugins/webinterface/webinterfaceprefwidget.cpp:120
 #, fuzzy
-msgid "%1 doesn't exist"
-msgstr "Tiada direktori %s tertentu (%s)."
+#~ msgid "Clears this list"
+#~ msgstr "Label Senarai Semasa"
 
-#: plugins/webinterface/webinterfaceprefwidget.cpp:124
 #, fuzzy
-msgid "%1 isn't executable"
-msgstr "Fail Boleh Laksana"
+#~ msgid "Save &As..."
+#~ msgstr "Simp&an sebagai.."
 
-#: plugins/webinterface/webinterfaceprefwidget.cpp:128
 #, fuzzy
-msgid "%1 is a directory"
-msgstr "Direktori '%s' adalah dihalang-tulis."
+#~ msgid "(0 is no limit)"
+#~ msgstr "Had saiz log:"
 
-#: plugins/webinterface/webinterfaceprefwidget.cpp:132
-msgid "%1 isn't php executable path"
-msgstr ""
-
-#: plugins/webinterface/webinterfaceplugin.cpp:43
-msgid "Allow to control ktorrent through browser"
-msgstr ""
-
-#: plugins/infowidget/infowidgetplugin.cpp:43
-msgid ""
-"Shows additional information about a download. Like which chunks have been "
-"downloaded, how many seeders and leechers ..."
-msgstr ""
-
-#: plugins/infowidget/peerview.cpp:173
-msgid "IP"
-msgstr "IP"
-
-#: plugins/infowidget/peerview.cpp:209
-msgid ""
-"_: to kick\n"
-"Kick peer"
-msgstr ""
-
-#: plugins/infowidget/peerview.cpp:210
-msgid ""
-"_: to ban\n"
-"Ban peer"
-msgstr ""
-
-#: plugins/infowidget/infowidgetprefpage.cpp:34
 #, fuzzy
-msgid "Information Widget Options"
-msgstr "Pilihan Dua-Arah"
+#~ msgid "Attention"
+#~ msgstr "Perhatian"
 
-#: plugins/infowidget/infowidget.cpp:79
 #, fuzzy
-msgid "Download First"
-msgstr "Baris pertama"
+#~ msgid "Max share ratio:"
+#~ msgstr "Pelihara nisbah aspek"
 
-#: plugins/infowidget/infowidget.cpp:80
 #, fuzzy
-msgid "Download Normally"
-msgstr "Muatturun Dipilih"
+#~ msgid "KT Queue Dialog"
+#~ msgstr "Test Dialog Tanya"
 
-#: plugins/infowidget/infowidget.cpp:81
 #, fuzzy
-msgid "Download Last"
-msgstr "Disimpan terakhir:"
+#~ msgid "Tracker:"
+#~ msgstr "Penjejak Waktu Peribadi"
 
-#: plugins/infowidget/infowidget.cpp:581
-msgid ""
-"_n: You will lose all data in this file, are you sure you want to do this ?\n"
-"You will lose all data in these files, are you sure you want to do this ?"
-msgstr ""
+#~ msgid "DHT:"
+#~ msgstr "DHT:"
 
-#: plugins/ipfilter/convertdialog.cpp:85
 #, fuzzy
-msgid "Convert"
-msgstr "Tukar"
+#~ msgid "Bytes left:"
+#~ msgstr "&Lajur Kiri"
 
-#: plugins/ipfilter/convertdialog.cpp:107
 #, fuzzy
-msgid "Please wait..."
-msgstr "Sila tunggu..."
+#~ msgid "Controlled by"
+#~ msgstr "Diperlukan oleh"
 
-#: plugins/ipfilter/convertdialog.cpp:195
 #, fuzzy
-msgid "File converted."
-msgstr "Extension &fail:"
+#~ msgid "Upload&s"
+#~ msgstr "Tetapan berjaya dimuatnaik"
 
-#: plugins/ipfilter/convertdialog.cpp:200
 #, fuzzy
-msgid "Could not load filter:"
-msgstr "Tidak dapat mengaktifkan/memuatkan plugin"
+#~ msgid "Uploaded:"
+#~ msgstr "Tetapan berjaya dimuatnaik"
 
-#: plugins/ipfilter/convertdialog.cpp:200
-msgid "Bad filter file. It may be corrupted or has a bad format."
-msgstr ""
-
-#: plugins/ipfilter/ipfilterplugin.cpp:43
-msgid "IP filter plugin, filters out unwanted peers"
-msgstr ""
-
-#: plugins/ipfilter/ipblockingprefpage.cpp:96
-msgid ""
-"Status: <font color=\"#ff0000\">Filter file not found.</font> Download and "
-"convert filter file."
-msgstr ""
-
-#: plugins/ipfilter/ipblockingprefpage.cpp:117
-msgid "Selected file already exists, do you want to download it again?"
-msgstr ""
-
-#: plugins/ipfilter/ipblockingprefpage.cpp:223
 #, fuzzy
-msgid "IPBlocking Filter"
-msgstr "<b>Menerapkan tindakan penapis:</b> "
+#~ msgid "M&ove up"
+#~ msgstr "&Tetapan Halaman"
 
-#: plugins/ipfilter/ipblockingprefpage.cpp:223
 #, fuzzy
-msgid "IPBlocking Filter Options"
-msgstr "Pilihan Dua-Arah"
+#~ msgid "Move dow&n"
+#~ msgstr "Gerak Tab Kiri"
 
-#: plugins/partfileimport/partfileimportplugin.cpp:43
-msgid "Imports partially or fully downloaded torrents from other clients"
-msgstr ""
-
-#: plugins/partfileimport/partfileimportplugin.cpp:56
 #, fuzzy
-msgid "Import existing download"
-msgstr "Muatturun fail BitTorrent"
+#~ msgid "Move to top"
+#~ msgstr "Alih ke atas"
 
-#: plugins/rssfeed/rss/testlibrss.cpp:14
 #, fuzzy
-msgid "URL of feed"
-msgstr " Pembaca Suapan RSS "
+#~ msgid "Move to &bottom"
+#~ msgstr "Sudut Kiri-Bawah"
 
-#: plugins/rssfeed/rssfeedplugin.cpp:48
-msgid ""
-"Automatically scans rssfeeds for torrent matching regular expressions and "
-"loads them."
-msgstr ""
-
-#: plugins/rssfeed/rssfeedplugin.cpp:68
 #, fuzzy
-msgid "RSS Feeds"
-msgstr "RSS Feed"
+#~ msgid "&QM Controlled"
+#~ msgstr "Diperlukan oleh"
 
-#: plugins/rssfeed/rssfeedmanager.cpp:78 plugins/rssfeed/rssfeedmanager.cpp:87
 #, fuzzy
-msgid "Link"
-msgstr "Pautan"
+#~ msgid "&User Controlled"
+#~ msgstr "Antaramuka Pengguna"
 
-#: plugins/rssfeed/rssfeedmanager.cpp:87
 #, fuzzy
-msgid "Season"
-msgstr "Nama Perkongsian"
+#~ msgid "Paste URL"
+#~ msgstr "URL untuk IG"
 
-#: plugins/rssfeed/rssfeedmanager.cpp:87
-msgid "Episode"
-msgstr ""
-
-#: plugins/scheduler/schedulerprefpage.cpp:35
 #, fuzzy
-msgid "Scheduler"
-msgstr "Penjadual Tugas"
+#~ msgid "Create Torrent"
+#~ msgstr "Hasilkan fax"
 
-#: plugins/scheduler/schedulerprefpage.cpp:35
 #, fuzzy
-msgid "Scheduler plugin options"
-msgstr "Pilihan Dua-Arah"
+#~ msgid "You must add at least one tracker or node."
+#~ msgstr "Anda mesti masukkan sekurang-kurangnya satu Sistem Operasi"
 
-#: plugins/scheduler/bwswidget.cpp:45
-msgid "MON"
-msgstr ""
+#, fuzzy
+#~ msgid "File Options"
+#~ msgstr "Pilihan Bina"
 
-#: plugins/scheduler/bwswidget.cpp:45
-msgid "TUE"
-msgstr ""
+#~ msgid "32"
+#~ msgstr "32"
 
-#: plugins/scheduler/bwswidget.cpp:45
-msgid "WED"
-msgstr ""
+#~ msgid "64"
+#~ msgstr "64"
 
-#: plugins/scheduler/bwswidget.cpp:45
-msgid "THU"
-msgstr ""
+#~ msgid "128"
+#~ msgstr "128"
 
-#: plugins/scheduler/bwswidget.cpp:45
-msgid "FRI"
-msgstr ""
+#~ msgid "256"
+#~ msgstr "256"
 
-#: plugins/scheduler/bwswidget.cpp:45
-msgid "SAT"
-msgstr ""
+#~ msgid "512"
+#~ msgstr "512"
 
-#: plugins/scheduler/bwswidget.cpp:45
-msgid "SUN"
-msgstr "AHA"
+#~ msgid "1024"
+#~ msgstr "1024"
 
-#: plugins/scheduler/bwsprefpagewidget.cpp:165
-msgid "Schedule saved."
-msgstr "Jadual disimpan."
+#~ msgid "2048"
+#~ msgstr "2048"
 
-#: plugins/scheduler/bwsprefpagewidget.cpp:174
-msgid "File not found."
-msgstr "Fail tidak dijumpai."
+#~ msgid "4096"
+#~ msgstr "4096"
 
-#: plugins/scheduler/bwsprefpagewidget.cpp:208
-msgid "Schedule loaded."
-msgstr ""
+#~ msgid "8192"
+#~ msgstr "8192"
 
-#: plugins/scheduler/schedulerplugin.cpp:56
-msgid "Bandwidth scheduling plugin"
-msgstr "Plugin penjadual lebarjalur"
+#~ msgid "KB"
+#~ msgstr "KB"
 
-#: plugins/scheduler/schedulerplugin.cpp:97
-#: plugins/scheduler/schedulerplugin.cpp:137
-msgid "Open Bandwidth Scheduler"
-msgstr "Penjadual Lebarjalur Terbuka"
+#, fuzzy
+#~ msgid "Start seedin&g the torrent"
+#~ msgstr "Mula Senarai Baru"
 
-#: plugins/scheduler/schedulerplugin.cpp:130
-msgid ""
-"Bandwidth scheduler is disabled. Go to Preferences->Scheduler to enable it."
-msgstr ""
+#, fuzzy
+#~ msgid "&Create"
+#~ msgstr "Hasilkan fax"
 
-#: plugins/logviewer/logprefpage.cpp:31
-msgid "LogViewer"
-msgstr ""
+#, fuzzy
+#~ msgid "IP or hostname"
+#~ msgstr "LImau atau Lebih"
 
-#: plugins/logviewer/logviewerplugin.cpp:44
-msgid "Shows logging output in a widget"
-msgstr ""
+#, fuzzy
+#~ msgid "Advanced Preferences"
+#~ msgstr "Tetap keutamaan"
 
-#: plugins/search/searchprefpage.cpp:50
-msgid ""
-"Use your web browser to search for the string %1 (capital letters) on the "
-"search engine you want to add. Then copy the URL in the addressbar after the "
-"search is finished, and paste it here.<br>Searching for %2 on Google for "
-"example, will result in http://www.google.com/search?q=FOOBAR&ie=UTF-"
-"8&oe=UTF-8. If you add this URL here, ktorrent can search using Google."
-msgstr ""
+#, fuzzy
+#~ msgid "Memory usage:"
+#~ msgstr "Permainan memori"
 
-#: plugins/search/searchprefpage.cpp:115
-msgid "You must enter the search engine's name and URL"
-msgstr ""
+#~ msgid "Low"
+#~ msgstr "Rendah"
 
-#: plugins/search/searchprefpage.cpp:128
-msgid ""
-"A search engine with the same name already exists. Please use a different "
-"name."
-msgstr ""
+#~ msgid "Medium"
+#~ msgstr "Sederhana"
 
-#: plugins/search/searchprefpage.cpp:137
-msgid ""
-"Bad URL. You should search for FOOBAR with your Internet browser and copy/"
-"paste the exact URL here."
-msgstr ""
+#~ msgid "High"
+#~ msgstr "Tinggi"
 
-#: plugins/search/searchprefpage.cpp:238
-msgid ""
-"_: a noun\n"
-"Search"
-msgstr ""
+#~ msgid "500ms"
+#~ msgstr "500ms"
 
-#: plugins/search/searchprefpage.cpp:238
-msgid "Search Engine Options"
-msgstr "Pilihan Enjin Carian"
+#~ msgid "1s"
+#~ msgstr "1s"
 
-#: plugins/search/searchplugin.cpp:50
-msgid "Search for torrents on several popular torrent search engines"
-msgstr ""
+#~ msgid "2s"
+#~ msgstr "2s"
 
-#: plugins/search/htmlpart.cpp:166
-msgid ""
-"_: to download\n"
-"Download"
-msgstr "Muatturun"
+#~ msgid "5s"
+#~ msgstr "5s"
 
-#: plugins/zeroconf/zeroconfplugin.cpp:41
-msgid ""
-"Finds peers running ktorrent on the local network to share torrents with"
-msgstr ""
+#, fuzzy
+#~ msgid "Networking"
+#~ msgstr "Rangkaian"
+
+#, fuzzy
+#~ msgid "HTTP tracker proxy:"
+#~ msgstr "Penjejak Waktu Peribadi"
+
+#, fuzzy
+#~ msgid "Scanning data"
+#~ msgstr "Visualisasi Data"
+
+#, fuzzy
+#~ msgid "Scanning data of torrent :"
+#~ msgstr "Data Program Rosak"
+
+#, fuzzy
+#~ msgid "Number of chunks found :"
+#~ msgstr "Fail %s tidak dijumpai"
+
+#, fuzzy
+#~ msgid "Show a system tray icon"
+#~ msgstr "Aplet Amaran Dulang Sistem"
+
+#, fuzzy
+#~ msgid "Show speed bar in tray icon"
+#~ msgstr "Aplet Amaran Dulang Sistem"
+
+#, fuzzy
+#~ msgid "Whether to automatically save downloads to saveDir"
+#~ msgstr "Berbalik ke yang Ter_akhir Disimpan"
+
+#, fuzzy
+#~ msgid "Whether to use a custom IP to pass to the tracker"
+#~ msgstr "Hantar kepada Skrip CGI"
+
+#, fuzzy
+#~ msgid "IP to pass to the tracker"
+#~ msgstr "Hantar kepada Skrip CGI"
+
+#, fuzzy
+#~ msgid "Memory usage"
+#~ msgstr "Permainan memori"
+
+#, fuzzy
+#~ msgid "GUI update interval"
+#~ msgstr "Mandriva Linux Update"
+
+#, fuzzy
+#~ msgid "Support for DHT"
+#~ msgstr "&Cari Bantuan"
+
+#, fuzzy
+#~ msgid "DHT port"
+#~ msgstr "Maklumat port IO"
+
+#, fuzzy
+#~ msgid "Number of upload slots"
+#~ msgstr "Ubah jumlah lajur"
+
+#, fuzzy
+#~ msgid "Columns shown in KTorrentView"
+#~ msgstr "Isih Lajur dalam Susunan Menaik"
+
+#, fuzzy
+#~ msgid "Plugin Manager"
+#~ msgstr "Pengurus Plugin"
+
+#~ msgid "Description"
+#~ msgstr "Huraian"
+
+#, fuzzy
+#~ msgid "Author"
+#~ msgstr "Pengarang"
+
+#, fuzzy
+#~ msgid "Load"
+#~ msgstr "Muat"
+
+#, fuzzy
+#~ msgid "Load All"
+#~ msgstr "Aba&i Semua"
+
+#, fuzzy
+#~ msgid "Unload All"
+#~ msgstr "Aba&i Semua"
+
+#, fuzzy
+#~ msgid "Default UPnP device to use"
+#~ msgstr "Masukkan peranti yang anda hendak guna."
+
+#, fuzzy
+#~ msgid "Detected devices:"
+#~ msgstr "Peranti dikesan:"
+
+#, fuzzy
+#~ msgid "Ports Forwarded"
+#~ msgstr "Port IO"
+
+#, fuzzy
+#~ msgid "Forw&ard Ports"
+#~ msgstr "Port lain"
+
+#, fuzzy
+#~ msgid "Undo Port Forwarding"
+#~ msgstr "Maklumat port IO"
+
+#, fuzzy
+#~ msgid "Enable scanning of folder1?"
+#~ msgstr "Hidupkan p&etikan pintar"
+
+#, fuzzy
+#~ msgid "Enable scanning of folder2?"
+#~ msgstr "Hidupkan p&etikan pintar"
+
+#, fuzzy
+#~ msgid "Enable scanning of folder3?"
+#~ msgstr "Hidupkan p&etikan pintar"
+
+#, fuzzy
+#~ msgid "Whether to open torrent silently or not."
+#~ msgstr "Tidak menjumpai fail comps."
+
+#, fuzzy
+#~ msgid "Delete action checked."
+#~ msgstr "<b>Menerapkan tindakan penapis:</b> "
+
+#, fuzzy
+#~ msgid "Move action checked."
+#~ msgstr "<b>Menerapkan tindakan penapis:</b> "
+
+#, fuzzy
+#~ msgid "ScanFolder Preferences"
+#~ msgstr "Tetap keutamaan"
+
+#, fuzzy
+#~ msgid "Scan folder &1"
+#~ msgstr "Folder Rumah"
+
+#~ msgid "Alt+1"
+#~ msgstr "Alt+1"
+
+#, fuzzy
+#~ msgid "Scan folder &2"
+#~ msgstr "Folder Rumah"
+
+#~ msgid "Alt+2"
+#~ msgstr "Alt+2"
+
+#, fuzzy
+#~ msgid "Scan folder &3"
+#~ msgstr "Folder Rumah"
+
+#~ msgid "Alt+3"
+#~ msgstr "Alt+3"
+
+#, fuzzy
+#~ msgid "Open torrents silentl&y"
+#~ msgstr "Buka dokumen sedia ada"
+
+#, fuzzy
+#~ msgid "Delete after loadin&g"
+#~ msgstr "Tambah lajur selepas"
+
+#, fuzzy
+#~ msgid "Folders to scan"
+#~ msgstr "Program Imbas & OCR"
+
+#, fuzzy
+#~ msgid "Folder 1:"
+#~ msgstr "Folder Rumah"
+
+#, fuzzy
+#~ msgid "Folder 2:"
+#~ msgstr "Folder Rumah"
+
+#, fuzzy
+#~ msgid "Folder 3:"
+#~ msgstr "Folder Rumah"
+
+#, fuzzy
+#~ msgid "Select interface:"
+#~ msgstr "Antaramuka Pengguna"
+
+#, fuzzy
+#~ msgid "Change password ..."
+#~ msgstr "Tukar katalaluan"
+
+#, fuzzy
+#~ msgid "Php executable path:"
+#~ msgstr "Skrip (mungkin boleh laksana)"
+
+#, fuzzy
+#~ msgid "Port number"
+#~ msgstr "Jumlah Lajur"
+
+#, fuzzy
+#~ msgid "forward Port"
+#~ msgstr "Maklumat port IO"
+
+#, fuzzy
+#~ msgid "interface skin"
+#~ msgstr "Antaramuka Pengguna"
+
+#, fuzzy
+#~ msgid "php executable path"
+#~ msgstr "Skrip (mungkin boleh laksana)"
+
+#, fuzzy
+#~ msgid "username"
+#~ msgstr "Namapengguna:"
+
+#, fuzzy
+#~ msgid "password"
+#~ msgstr "Katalaluan:"
+
+#, fuzzy
+#~ msgid "TrackerViewBase"
+#~ msgstr "Maklumat penjejak"
+
+#, fuzzy
+#~ msgid "Tracker URL:"
+#~ msgstr "URL untuk IG"
+
+#, fuzzy
+#~ msgid "&Update Tracker"
+#~ msgstr " Auto Kemaskini"
+
+#~ msgid "Alt+U"
+#~ msgstr "Alt+U"
+
+#, fuzzy
+#~ msgid "Add Trac&ker"
+#~ msgstr "Tambah lajur selepas"
+
+#, fuzzy
+#~ msgid "Cha&nge Tracker"
+#~ msgstr "Penjejak Waktu Peribadi"
+
+#~ msgid "St&atus"
+#~ msgstr "St&atus"
+
+#, fuzzy
+#~ msgid "Average Down Speed:"
+#~ msgstr "Kelajuan Failover"
+
+#, fuzzy
+#~ msgid "Average Up Speed:"
+#~ msgstr "&Tetapan Halaman"
+
+#, fuzzy
+#~ msgid "Tracker Status:"
+#~ msgstr "Bar &status"
+
+#, fuzzy
+#~ msgid "&Use limit?"
+#~ msgstr "Sedang Diguna"
+
+#, fuzzy
+#~ msgid "Max ratio:"
+#~ msgstr "Pelihara nisbah aspek"
+
+#, fuzzy
+#~ msgid "Select PeerGuardian Filter File "
+#~ msgstr "Pilih imej dari Fail"
+
+#, fuzzy
+#~ msgid "Use PeerGuardian filter?"
+#~ msgstr "<b>Menerapkan tindakan penapis:</b> "
+
+#, fuzzy
+#~ msgid "Level1 filter url"
+#~ msgstr "URL untuk IG"
+
+#, fuzzy
+#~ msgid "Use level1 filter?"
+#~ msgstr "<b>Menerapkan tindakan penapis:</b> "
+
+#, fuzzy
+#~ msgid "Import an existing download"
+#~ msgstr "Muatturun fail BitTorrent"
+
+#~ msgid "default"
+#~ msgstr "default"
+
+#, fuzzy
+#~ msgid "Rss Feeds"
+#~ msgstr "Pengumpul RSS GNOME"
+
+#, fuzzy
+#~ msgid "Feeds"
+#~ msgstr "Suapan"
+
+#, fuzzy
+#~ msgid "De&lete"
+#~ msgstr "&Padam"
+
+#, fuzzy
+#~ msgid "&New"
+#~ msgstr "&Baru"
+
+#~ msgid "&URL"
+#~ msgstr "&URL"
+
+#, fuzzy
+#~ msgid "Articles"
+#~ msgstr "Artikel"
+
+#, fuzzy
+#~ msgid "Auto&refresh"
+#~ msgstr " Auto Kemaskini"
+
+#, fuzzy
+#~ msgid "I&gnore TTL"
+#~ msgstr "&Abai Semua"
+
+#, fuzzy
+#~ msgid "&Title"
+#~ msgstr "&Judul"
+
+#, fuzzy
+#~ msgid "Keep Articles (days)"
+#~ msgstr "Tetap&kan baris bersama"
+
+#, fuzzy
+#~ msgid "&Active"
+#~ msgstr "Aktifkan Plugin"
+
+#, fuzzy
+#~ msgid "Accept Filters"
+#~ msgstr "Penapis AdBlocK"
+
+#, fuzzy
+#~ msgid "Reject Filters"
+#~ msgstr "Penapis AdBlocK"
+
+#, fuzzy
+#~ msgid "Regular Expressions"
+#~ msgstr "Penyunting Ungkapan Nalar (regexp)"
+
+#, fuzzy
+#~ msgid "Treat as &Series"
+#~ msgstr "&Simpan Imej Sebagai"
+
+#, fuzzy
+#~ msgid "Process"
+#~ msgstr "Process"
+
+#, fuzzy
+#~ msgid "Max Season"
+#~ msgstr "Saiz Lajur maksimum"
+
+#, fuzzy
+#~ msgid "Max Episode"
+#~ msgstr "Saiz Lajur maksimum"
+
+#, fuzzy
+#~ msgid "Download \"Proper\" ReReleases"
+#~ msgstr "Muatturun fail BitTorrent"
+
+#, fuzzy
+#~ msgid "Test te&xt"
+#~ msgstr "&Memformat Teks"
+
+#, fuzzy
+#~ msgid "Te&st"
+#~ msgstr "Ga&ya"
+
+#, fuzzy
+#~ msgid "Filter Matches"
+#~ msgstr "Tiada padanan dijumpai. :-("
+
+#, fuzzy
+#~ msgid "Bandwidth scheduler"
+#~ msgstr "Penjadual Tugas"
+
+#, fuzzy
+#~ msgid "Left click category"
+#~ msgstr "Klik Tetikus Automatik"
+
+#, fuzzy
+#~ msgid "&Normal"
+#~ msgstr "&Normal"
+
+#, fuzzy
+#~ msgid "Category &3"
+#~ msgstr "Kategori:"
+
+#, fuzzy
+#~ msgid "Category &2"
+#~ msgstr "Kategori:"
+
+#, fuzzy
+#~ msgid "Right click category"
+#~ msgstr "Klik Tetikus Automatik"
+
+#, fuzzy
+#~ msgid "Category &1"
+#~ msgstr "Kategori:"
+
+#, fuzzy
+#~ msgid "&Category 3"
+#~ msgstr "Kategori:"
+
+#, fuzzy
+#~ msgid "Categories"
+#~ msgstr "Kategori"
+
+#, fuzzy
+#~ msgid "<b>1. Category</b>"
+#~ msgstr "Kategori:"
+
+#, fuzzy
+#~ msgid "<b>3. Category</b>"
+#~ msgstr "Kategori:"
+
+#, fuzzy
+#~ msgid "download:"
+#~ msgstr "&Muatturun"
+
+#, fuzzy
+#~ msgid "upload:"
+#~ msgstr "Tetapan berjaya dimuatnaik"
+
+#~ msgid "KB/s *"
+#~ msgstr "KB/s *"
+
+#, fuzzy
+#~ msgid "<b>2. Category</b>"
+#~ msgstr "Kategori:"
+
+#, fuzzy
+#~ msgid "* zero means no limit"
+#~ msgstr "(tiada tetikus dikonfigurasikan)"
+
+#, fuzzy
+#~ msgid "Save to file"
+#~ msgstr "Simpan ke fail"
+
+#, fuzzy
+#~ msgid "&Load from file"
+#~ msgstr "Selit MathML dari fail"
+
+#, fuzzy
+#~ msgid "Reset schedule"
+#~ msgstr "&Tetapsemula kepada susunatur default"
+
+#~ msgid "O&k"
+#~ msgstr "O&k"
+
+#, fuzzy
+#~ msgid "Use &bandwidth scheduler?"
+#~ msgstr "Penjadual Penggera Peribadi "
+
+#, fuzzy
+#~ msgid "Edit s&chedule"
+#~ msgstr "Sunting hip&erlink"
+
+#, fuzzy
+#~ msgid "Enable bandwidth scheduler?"
+#~ msgstr "Penjadual Penggera Peribadi "
+
+#, fuzzy
+#~ msgid "Connections messages flag"
+#~ msgstr "Sambungan daemon audio JACK"
+
+#, fuzzy
+#~ msgid "Disk IO info messages flag"
+#~ msgstr "Opsyen RAID"
+
+#, fuzzy
+#~ msgid "ScanFolder plugin messages flag"
+#~ msgstr "Opsyen Sistem Fail"
+
+#, fuzzy
+#~ msgid "Scheduler plugin messages flag"
+#~ msgstr "Opsyen RAID"
+
+#, fuzzy
+#~ msgid "RSS plugin messages flag"
+#~ msgstr "Opsyen RAID"
+
+#, fuzzy
+#~ msgid "WebInterface plugin messages flag"
+#~ msgstr "Opsyen RAID"
+
+#, fuzzy
+#~ msgid "LogViewer Options"
+#~ msgstr "Pilihan Bina"
+
+#, fuzzy
+#~ msgid "IPFilter:"
+#~ msgstr "Pemindahan Fail (FTP)"
+
+#, fuzzy
+#~ msgid "Search:"
+#~ msgstr "Cari:"
+
+#~ msgid "UPnP:"
+#~ msgstr "UPnP:"
+
+#, fuzzy
+#~ msgid "ScanFolder:"
+#~ msgstr "Opsyen Sistem Fail"
+
+#, fuzzy
+#~ msgid "Scheduler:"
+#~ msgstr "Penjadual Tugas"
+
+#, fuzzy
+#~ msgid "InfoWidget:"
+#~ msgstr "<i>info_label</i>"
+
+#, fuzzy
+#~ msgid "RSS plugin:"
+#~ msgstr "Nyahaktif plugin"
+
+#, fuzzy
+#~ msgid "WebInterface plugin:"
+#~ msgstr "Nyahaktif plugin"
+
+#, fuzzy
+#~ msgid "General:"
+#~ msgstr "Umum"
+
+#, fuzzy
+#~ msgid "Connections:"
+#~ msgstr "Ubah sambungan..."
+
+#, fuzzy
+#~ msgid "Disk I/O:"
+#~ msgstr "Gantung Ke Cakera"
+
+#~ msgid "Alt+X"
+#~ msgstr "Alt+X"
+
+#, fuzzy
+#~ msgid "Search engine name:"
+#~ msgstr "Tetap Nama Imej"
+
+#, fuzzy
+#~ msgid "&Add"
+#~ msgstr "&Tambah"
+
+#, fuzzy
+#~ msgid "Update From Internet"
+#~ msgstr "Internet Asas-teks"
+
+#, fuzzy
+#~ msgid "External Browser"
+#~ msgstr "Pelungsur Web"
+
+#, fuzzy
+#~ msgid "Search Engine:"
+#~ msgstr "Kosongkan Carian"
+
+#, fuzzy
+#~ msgid "Clear Search Histor&y"
+#~ msgstr "&Cari Bantuan"
+
+#, fuzzy
+#~ msgid "Search engine:"
+#~ msgstr "Kosongkan Carian"
+
+#, fuzzy
+#~ msgid "Current search engine"
+#~ msgstr "&Cari Bantuan"
+
+#, fuzzy
+#~ msgid "Use custom browser"
+#~ msgstr "&Dalam pelayar web"
+
+#~ msgid "%1 GB"
+#~ msgstr "%1 GB"
+
+#~ msgid "%1 MB"
+#~ msgstr "%1 MB"
+
+#~ msgid "%1 KB"
+#~ msgstr "%1 KB"
+
+#~ msgid "%1 B"
+#~ msgstr "%1 B"
+
+#, fuzzy
+#~ msgid "%1 KB/s"
+#~ msgstr "IP_sec"
+
+#, fuzzy
+#~ msgid ""
+#~ "_n: 1 day \n"
+#~ "%n days "
+#~ msgstr "Hari # dalam tahun"
+
+#, fuzzy
+#~ msgid "Yes, First"
+#~ msgstr "Baris pertama"
+
+#, fuzzy
+#~ msgid "Yes, Last"
+#~ msgstr "Disimpan terakhir:"
+
+#, fuzzy
+#~ msgid "Cannot create directory %1: %2"
+#~ msgstr "Pilih direktori baru"
+
+#, fuzzy
+#~ msgid "Cannot calculate the filesize : %2"
+#~ msgstr "Tidak boleh buang gaya ini"
+
+#, fuzzy
+#~ msgid "Plugin Options"
+#~ msgstr "Pilihan Bina"
+
+#, fuzzy
+#~ msgid "Loaded"
+#~ msgstr "Dimuatkan"
+
+#, fuzzy
+#~ msgid "Not loaded"
+#~ msgstr "Tiada"
+
+#, fuzzy
+#~ msgid "Cannot load chunk %1"
+#~ msgstr "Tidak boleh buang gaya ini"
+
+#, fuzzy
+#~ msgid ""
+#~ "_n: 1 peer\n"
+#~ "%n peers"
+#~ msgstr "Alamat rakan jauh:"
+
+#, fuzzy
+#~ msgid "Cannot expand file %1"
+#~ msgstr "Ralat mengimport fail %s"
+
+#, fuzzy
+#~ msgid "Error writing to %1 : %2"
+#~ msgstr "&Lompat ke hiperlink"
+
+#, fuzzy
+#~ msgid "Error writing to %1"
+#~ msgstr "&Lompat ke hiperlink"
+
+#, fuzzy
+#~ msgid "UPnP Devices"
+#~ msgstr "Peranti dikesan:"
+
+#, fuzzy
+#~ msgid "ScanFolder Options"
+#~ msgstr "Pilihan Bina"
+
+#, fuzzy
+#~ msgid "WebInterface Options"
+#~ msgstr "Pilihan Bina"
+
+#, fuzzy
+#~ msgid "%1 doesn't exist"
+#~ msgstr "Tiada direktori %s tertentu (%s)."
+
+#, fuzzy
+#~ msgid "%1 isn't executable"
+#~ msgstr "Fail Boleh Laksana"
+
+#, fuzzy
+#~ msgid "%1 is a directory"
+#~ msgstr "Direktori '%s' adalah dihalang-tulis."
+
+#~ msgid "IP"
+#~ msgstr "IP"
+
+#, fuzzy
+#~ msgid "Information Widget Options"
+#~ msgstr "Pilihan Dua-Arah"
+
+#, fuzzy
+#~ msgid "Download First"
+#~ msgstr "Baris pertama"
+
+#, fuzzy
+#~ msgid "Download Normally"
+#~ msgstr "Muatturun Dipilih"
+
+#, fuzzy
+#~ msgid "Download Last"
+#~ msgstr "Disimpan terakhir:"
+
+#, fuzzy
+#~ msgid "Convert"
+#~ msgstr "Tukar"
+
+#, fuzzy
+#~ msgid "Please wait..."
+#~ msgstr "Sila tunggu..."
+
+#, fuzzy
+#~ msgid "File converted."
+#~ msgstr "Extension &fail:"
+
+#, fuzzy
+#~ msgid "Could not load filter:"
+#~ msgstr "Tidak dapat mengaktifkan/memuatkan plugin"
+
+#, fuzzy
+#~ msgid "IPBlocking Filter"
+#~ msgstr "<b>Menerapkan tindakan penapis:</b> "
+
+#, fuzzy
+#~ msgid "IPBlocking Filter Options"
+#~ msgstr "Pilihan Dua-Arah"
+
+#, fuzzy
+#~ msgid "Import existing download"
+#~ msgstr "Muatturun fail BitTorrent"
+
+#, fuzzy
+#~ msgid "URL of feed"
+#~ msgstr " Pembaca Suapan RSS "
+
+#, fuzzy
+#~ msgid "RSS Feeds"
+#~ msgstr "RSS Feed"
+
+#, fuzzy
+#~ msgid "Link"
+#~ msgstr "Pautan"
+
+#, fuzzy
+#~ msgid "Season"
+#~ msgstr "Nama Perkongsian"
+
+#, fuzzy
+#~ msgid "Scheduler"
+#~ msgstr "Penjadual Tugas"
+
+#, fuzzy
+#~ msgid "Scheduler plugin options"
+#~ msgstr "Pilihan Dua-Arah"
+
+#~ msgid "SUN"
+#~ msgstr "AHA"
+
+#~ msgid "Schedule saved."
+#~ msgstr "Jadual disimpan."
+
+#~ msgid "File not found."
+#~ msgstr "Fail tidak dijumpai."
+
+#~ msgid "Bandwidth scheduling plugin"
+#~ msgstr "Plugin penjadual lebarjalur"
+
+#~ msgid "Open Bandwidth Scheduler"
+#~ msgstr "Penjadual Lebarjalur Terbuka"
+
+#~ msgid "Search Engine Options"
+#~ msgstr "Pilihan Enjin Carian"
+
+#~ msgid ""
+#~ "_: to download\n"
+#~ "Download"
+#~ msgstr "Muatturun"
