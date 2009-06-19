@@ -24,9 +24,7 @@ msgstr "Aksi"
 msgid "Shortcut"
 msgstr ""
 
-#. i18n: file prefcharacterbase.ui line 84
-#: rc.cpp:552
-#, no-c-format
+#: prefcharacter.cpp:46
 msgid "Character"
 msgstr "Aksara"
 
@@ -35,19 +33,19 @@ msgstr "Aksara"
 msgid "Special Character %1"
 msgstr "fail istimewa aksara"
 
-#: dlgrc.cpp:22
+#: dlgrc.cpp:24
 msgid "Rows & Columns"
 msgstr "Baris & Lajur"
 
-#: flashview.cpp:89 multipleview.cpp:129 qaview.cpp:160
+#: flashview.cpp:84 qaview.cpp:147 multipleview.cpp:130
 msgid "Your answer was correct!"
 msgstr "Jawapan anda betul!"
 
-#: flashview.cpp:97 multipleview.cpp:143 qaview.cpp:173
+#: flashview.cpp:92 qaview.cpp:160 multipleview.cpp:143
 msgid "Your answer was incorrect."
 msgstr "Jawapan anda adalah salah."
 
-#: dlglanguage.cpp:26
+#: dlglanguage.cpp:28
 msgid "Column Titles"
 msgstr "Tajuk Lajur"
 
@@ -130,21 +128,39 @@ msgctxt "@title:group special character settings"
 msgid "Special Characters"
 msgstr "Aksara Khas"
 
-#. i18n: file multipleviewbase.ui line 584
-#: multipleview.cpp:140 qaview.cpp:170 rc.cpp:360 rc.cpp:906
-#, no-c-format
+#. i18n: file: multipleviewbase.ui:551
+#. i18n: ectx: property (text), widget (QLabel, lblCorrectHeader)
+#. i18n: file: qaviewbase.ui:533
+#. i18n: ectx: property (text), widget (QLabel, lblCorrectHeader)
+#. i18n: file: multipleviewbase.ui:551
+#. i18n: ectx: property (text), widget (QLabel, lblCorrectHeader)
+#. i18n: file: qaviewbase.ui:533
+#. i18n: ectx: property (text), widget (QLabel, lblCorrectHeader)
+#: qaview.cpp:157 rc.cpp:381 rc.cpp:864 multipleview.cpp:140
 msgid "Correct Answer"
 msgstr "Jawapan Betul"
 
-#. i18n: file multipleviewbase.ui line 847
-#: multipleview.cpp:146 qaview.cpp:176 rc.cpp:420 rc.cpp:861
-#, no-c-format
+#. i18n: file: multipleviewbase.ui:340
+#. i18n: ectx: property (text), widget (QLabel, lblPreviousQuestionHeader)
+#. i18n: file: qaviewbase.ui:300
+#. i18n: ectx: property (text), widget (QLabel, lblPreviousQuestionHeader)
+#. i18n: file: multipleviewbase.ui:340
+#. i18n: ectx: property (text), widget (QLabel, lblPreviousQuestionHeader)
+#. i18n: file: qaviewbase.ui:300
+#. i18n: ectx: property (text), widget (QLabel, lblPreviousQuestionHeader)
+#: qaview.cpp:163 rc.cpp:339 rc.cpp:819 multipleview.cpp:146
 msgid "Previous Question"
 msgstr "Soalan Terdahulu"
 
-#. i18n: file multipleviewbase.ui line 198
-#: multipleview.cpp:151 qaview.cpp:179 rc.cpp:282 rc.cpp:882
-#, no-c-format
+#. i18n: file: multipleviewbase.ui:472
+#. i18n: ectx: property (text), widget (QLabel, lblYourAnswerHeader)
+#. i18n: file: qaviewbase.ui:404
+#. i18n: ectx: property (text), widget (QLabel, lblYourAnswerHeader)
+#. i18n: file: multipleviewbase.ui:472
+#. i18n: ectx: property (text), widget (QLabel, lblYourAnswerHeader)
+#. i18n: file: qaviewbase.ui:404
+#. i18n: ectx: property (text), widget (QLabel, lblYourAnswerHeader)
+#: qaview.cpp:168 rc.cpp:363 rc.cpp:840 multipleview.cpp:150
 msgid "Your Answer"
 msgstr "Jawapan Anda"
 
@@ -909,9 +925,9 @@ msgstr "pergi ke keadaan %d\n"
 msgid "Quiz"
 msgstr ""
 
-#. i18n: file kwordquizui.rc line 89
-#: kwordquizprefs.cpp:59 rc.cpp:21
-#, no-c-format
+#. i18n: file: kwordquizui.rc:96
+#. i18n: ectx: ToolBar (characterToolBar)
+#: rc.cpp:270
 msgid "Special Characters"
 msgstr "Aksara Istimewa"
 
@@ -1337,9 +1353,9 @@ msgstr ""
 msgid "Card Appearance"
 msgstr "Penampilan Bulan"
 
-#. i18n: file prefcardappearancebase.ui line 191
-#: prefcardappearance.cpp:81 rc.cpp:459
-#, no-c-format
+#. i18n: file: prefcardappearancebase.ui:140
+#. i18n: ectx: property (text), widget (QLabel, titleLabel)
+#: rc.cpp:471 prefcardappearance.cpp:132
 msgid "Front"
 msgstr "Depan"
 
@@ -1603,9 +1619,9 @@ msgstr "<Enter> untuk keluar"
 msgid "Select if the next cell below should become active when pressing Enter."
 msgstr ""
 
-#. i18n: file prefeditorbase.ui line 53
-#: rc.cpp:672
-#, no-c-format
+#. i18n: file: prefeditorbase.ui:53
+#. i18n: ectx: property (text), widget (QRadioButton, optDown)
+#: rc.cpp:597
 msgid "&Down"
 msgstr "&Bawah"
 
@@ -2219,7 +2235,7 @@ msgstr ""
 msgid "Starts a question and answer session using the active vocabulary"
 msgstr ""
 
-#: kwordquiz.cpp:246
+#: kwordquiz.cpp:325
 msgid "&Check"
 msgstr "&Semak"
 
@@ -2227,7 +2243,7 @@ msgstr "&Semak"
 msgid "Checks your answer to this question"
 msgstr ""
 
-#: kwordquiz.cpp:250
+#: kwordquiz.cpp:333
 msgid "I &Know"
 msgstr "&Saya Tahu"
 
@@ -2235,7 +2251,7 @@ msgstr "&Saya Tahu"
 msgid "Counts this card as correct and shows the next card"
 msgstr ""
 
-#: kwordquiz.cpp:254
+#: kwordquiz.cpp:341
 msgid "I &Do Not Know"
 msgstr "&Saya Tidak Tahu"
 
@@ -2243,7 +2259,7 @@ msgstr "&Saya Tidak Tahu"
 msgid "Counts this card as incorrect and shows the next card"
 msgstr ""
 
-#: kwordquiz.cpp:258
+#: kwordquiz.cpp:349
 msgid "&Hint"
 msgstr "&Petua"
 
@@ -2251,7 +2267,7 @@ msgstr "&Petua"
 msgid "Gets the next correct letter of the answer"
 msgstr ""
 
-#: kwordquiz.cpp:262
+#: kwordquiz.cpp:357
 msgid "&Restart"
 msgstr "&Ulangmula"
 
@@ -2259,7 +2275,7 @@ msgstr "&Ulangmula"
 msgid "Restarts the quiz session from the beginning"
 msgstr ""
 
-#: kwordquiz.cpp:266
+#: kwordquiz.cpp:365
 msgid "Repeat &Errors"
 msgstr "&Ulang Ralat"
 
@@ -2297,7 +2313,7 @@ msgstr ""
 msgid "Special Character <numid>%1</numid>"
 msgstr "fail istimewa aksara"
 
-#: kwordquiz.cpp:312
+#: kwordquiz.cpp:415
 msgid "Toggles display of the toolbars"
 msgstr "Toggle paparan bagi bar alatan"
 
@@ -2335,7 +2351,7 @@ msgstr "Pilihan Tidak Sah"
 msgid "Q&A"
 msgstr ""
 
-#: kwordquiz.cpp:380 kwordquiz.cpp:494 kwordquiz.cpp:548
+#: kwordquiz.cpp:571 kwordquiz.cpp:723 kwordquiz.cpp:770
 msgid "Opening file..."
 msgstr "Membuka fail..."
 
@@ -2357,7 +2373,7 @@ msgid ""
 "Do you want to save it?"
 msgstr ""
 
-#: kwordquiz.cpp:480
+#: kwordquiz.cpp:713
 msgid "Opening a new document window..."
 msgstr "Membuka tetingkap dokumen baru..."
 
@@ -2365,19 +2381,19 @@ msgstr "Membuka tetingkap dokumen baru..."
 msgid "&Merge selected files with the current document"
 msgstr ""
 
-#: kwordquiz.cpp:503
+#: kwordquiz.cpp:733
 msgid "Open Vocabulary Document"
 msgstr "Buka Dokumen Tatabahasa"
 
-#: kwordquiz.cpp:556
+#: kwordquiz.cpp:800
 msgid "Saving file..."
 msgstr "Menyimpan fail..."
 
-#: kwordquiz.cpp:577
+#: kwordquiz.cpp:819
 msgid "Saving file with a new filename..."
 msgstr "Menyimpan fail dengan namafail baru..."
 
-#: kwordquiz.cpp:590
+#: kwordquiz.cpp:834
 msgid "Save Vocabulary Document As"
 msgstr "Simpan Dokumen Tatabahasa Sebagai"
 
@@ -2388,7 +2404,7 @@ msgid ""
 "it?</html>"
 msgstr ""
 
-#: kwordquiz.cpp:635
+#: kwordquiz.cpp:878
 msgid "Closing file..."
 msgstr "Menutup fail..."
 
@@ -2402,27 +2418,27 @@ msgctxt "@info:status quitting"
 msgid "Quitting..."
 msgstr "Hadmasa Tamat! Keluar..."
 
-#: kwordquiz.cpp:709
+#: kwordquiz.cpp:928
 msgid "Cutting selection..."
 msgstr "Memotong pilihan..."
 
-#: kwordquiz.cpp:716
+#: kwordquiz.cpp:935
 msgid "Copying selection to clipboard..."
 msgstr "Menyalin pilihan ke papanklip..."
 
-#: kwordquiz.cpp:723
+#: kwordquiz.cpp:942
 msgid "Inserting clipboard contents..."
 msgstr "Memasukkan kandungan papanklip..."
 
-#: kwordquiz.cpp:730
+#: kwordquiz.cpp:949
 msgid "Clearing the selected cells..."
 msgstr "Mengosongkan sel dipilih..."
 
-#: kwordquiz.cpp:737
+#: kwordquiz.cpp:956
 msgid "Inserting rows..."
 msgstr "Memasukkan baris..."
 
-#: kwordquiz.cpp:744
+#: kwordquiz.cpp:963
 msgid "Deleting selected rows..."
 msgstr "Memadam baris dipilih..."
 
@@ -2430,7 +2446,7 @@ msgstr "Memadam baris dipilih..."
 msgid "Marking selected text as a blank..."
 msgstr ""
 
-#: kwordquiz.cpp:758
+#: kwordquiz.cpp:977
 msgid "Removing blank markings..."
 msgstr "Membuang tanda kosong..."
 
@@ -2438,15 +2454,15 @@ msgstr "Membuang tanda kosong..."
 msgid "Setting the column titles of the vocabulary..."
 msgstr ""
 
-#: kwordquiz.cpp:789
+#: kwordquiz.cpp:1003
 msgid "Setting the font of the vocabulary..."
 msgstr "Menetapkan font bagi tatabahasa..."
 
-#: kwordquiz.cpp:804
+#: kwordquiz.cpp:1019
 msgid "Changing the keyboard layout..."
 msgstr "Menukar susunatur papan kekunci..."
 
-#: kwordquiz.cpp:766 kwordquiz.cpp:805
+#: kwordquiz.cpp:1020
 msgid "Not implemented yet"
 msgstr "Tidak diterapkan lagi"
 
@@ -2665,549 +2681,301 @@ msgctxt "@info:tooltip select this character"
 msgid "Select this character"
 msgstr "Pilih aksara ini"
 
-#: kwordquiz.cpp:242
-msgid "&Question && Answer"
-msgstr "&Soalan && Jawapan"
+#~ msgid "&Question && Answer"
+#~ msgstr "&Soalan && Jawapan"
 
-#: kwordquizdoc.cpp:110
-msgid ""
-"The current file has been modified.\n"
-"Do you want to save it?"
-msgstr ""
-"Fail semasa telah di ubahsuai.\n"
-"Adakah anda mahu menyimpannya?"
+#~ msgid ""
+#~ "The current file has been modified.\n"
+#~ "Do you want to save it?"
+#~ msgstr ""
+#~ "Fail semasa telah di ubahsuai.\n"
+#~ "Adakah anda mahu menyimpannya?"
 
-#: kwordquizdoc.cpp:165
-msgid "<qt>Cannot open file<br><b>%1</b></qt>"
-msgstr "<qt>Tidak dapat membuka fail<br><b>%1</b></qt>"
+#~ msgid "<qt>Cannot open file<br><b>%1</b></qt>"
+#~ msgstr "<qt>Tidak dapat membuka fail<br><b>%1</b></qt>"
 
-#: kwordquizdoc.cpp:335
-msgid "<qt>Cannot write to file<br><b>%1</b></qt>"
-msgstr "<qt>Tidak dapat menulis ke fail<br><b>%1</b></qt>"
+#~ msgid "<qt>Cannot write to file<br><b>%1</b></qt>"
+#~ msgstr "<qt>Tidak dapat menulis ke fail<br><b>%1</b></qt>"
 
-#: wqlreader.cpp:62
-msgid "This does not appear to be a (K)WordQuiz file"
-msgstr "Ini bukan kelihatan seperti fail (K)WordQuiz"
+#~ msgid "This does not appear to be a (K)WordQuiz file"
+#~ msgstr "Ini bukan kelihatan seperti fail (K)WordQuiz"
 
-#: wqlreader.cpp:71
-msgid "KWordQuiz can only open files created by WordQuiz 5.x"
-msgstr ""
+#~ msgid "Editor"
+#~ msgstr "Penyunting"
 
-#. i18n: file prefeditorbase.ui line 22
-#: kwordquizprefs.cpp:50 rc.cpp:660
-#, no-c-format
-msgid "Editor"
-msgstr "Penyunting"
+#~ msgid "Editor Settings"
+#~ msgstr "Tetapan Penyunting"
 
-#: kwordquizprefs.cpp:50
-msgid "Editor Settings"
-msgstr "Tetapan Penyunting"
+#~ msgid "Quiz Settings"
+#~ msgstr "Tetapan Kuiz"
 
-#: kwordquizprefs.cpp:53
-msgid "Quiz Settings"
-msgstr "Tetapan Kuiz"
+#~ msgid ""
+#~ "Flashcard\n"
+#~ "Appearance"
+#~ msgstr ""
+#~ "Rupa\n"
+#~ "Kad imbas"
 
-#: kwordquizprefs.cpp:56
-msgid ""
-"Flashcard\n"
-"Appearance"
-msgstr ""
-"Rupa\n"
-"Kad imbas"
+#~ msgid "Flashcard Appearance Settings"
+#~ msgstr "Tetapan Rupa Kad Imbas"
 
-#: kwordquizprefs.cpp:56
-msgid "Flashcard Appearance Settings"
-msgstr "Tetapan Rupa Kad Imbas"
+#~ msgid ""
+#~ "Special\n"
+#~ "Characters"
+#~ msgstr ""
+#~ "Aksara\n"
+#~ "Istimewa"
 
-#: kwordquizprefs.cpp:59
-msgid ""
-"Special\n"
-"Characters"
-msgstr ""
-"Aksara\n"
-"Istimewa"
+#~ msgid ""
+#~ "_: NAME OF TRANSLATORS\n"
+#~ "Your names"
+#~ msgstr "Sharuzzaman Ahmat Raslan"
 
-#: _translatorinfo.cpp:1
-msgid ""
-"_: NAME OF TRANSLATORS\n"
-"Your names"
-msgstr "Sharuzzaman Ahmat Raslan"
-
-#: _translatorinfo.cpp:3
 #, fuzzy
-msgid ""
-"_: EMAIL OF TRANSLATORS\n"
-"Your emails"
-msgstr "opensource@mimos.my,sharuzzaman@myrealbox.com"
+#~ msgid ""
+#~ "_: EMAIL OF TRANSLATORS\n"
+#~ "Your emails"
+#~ msgstr "opensource@mimos.my,sharuzzaman@myrealbox.com"
 
-#: kwqnewstuff.cpp:81
 #, fuzzy
-msgid "The file '%1' already exists. Do you want to overwrite it?"
-msgstr "Fail %1 sudah wujud. Anda ingin tulis tindih?"
+#~ msgid "The file '%1' already exists. Do you want to overwrite it?"
+#~ msgstr "Fail %1 sudah wujud. Anda ingin tulis tindih?"
 
-#: kwordquiz.cpp:613 kwqnewstuff.cpp:84
-msgid "Overwrite"
-msgstr "Tindih"
+#~ msgid "Overwrite"
+#~ msgstr "Tindih"
 
-#: kwqnewstuff.cpp:84
 #, fuzzy
-msgid "Do Not Overwrite"
-msgstr "_Jangan Format"
+#~ msgid "Do Not Overwrite"
+#~ msgstr "_Jangan Format"
 
-#: kwqnewstuff.cpp:89
-msgid ""
-"<qt>The selected file will now be downloaded and saved as\n"
-"<b>'%1'</b>.</qt>"
-msgstr ""
+#~ msgid "Sort"
+#~ msgstr "Isih"
 
-#: dlgsort.cpp:24
-msgid "Sort"
-msgstr "Isih"
+#~ msgid "0123456789"
+#~ msgstr "0123456789"
 
-#. i18n: file dlgrcbase.ui line 50
-#: rc.cpp:66 rc.cpp:84 rc.cpp:111
-#, no-c-format
-msgid "0123456789"
-msgstr "0123456789"
-
-#. i18n: file dlgsortbase.ui line 49
-#: rc.cpp:120
-#, fuzzy, no-c-format
-msgid "Based On"
-msgstr "Berasaskan:"
-
-#. i18n: file dlgsortbase.ui line 52
-#: rc.cpp:123 rc.cpp:132 rc.cpp:141
-#, no-c-format
-msgid "Sort based on this column"
-msgstr ""
-
-#. i18n: file dlgsortbase.ui line 55
-#: rc.cpp:126
-#, no-c-format
-msgid "Select the column on which you want to base the sort"
-msgstr ""
-
-#. i18n: file dlgsortbase.ui line 66
-#: rc.cpp:129
-#, fuzzy, no-c-format
-msgid "&1 Language 1"
-msgstr "&Bahasa"
-
-#. i18n: file dlgsortbase.ui line 72
-#: rc.cpp:135
-#, no-c-format
-msgid "Select to sort based on the left column"
-msgstr ""
-
-#. i18n: file dlgsortbase.ui line 80
-#: rc.cpp:138
-#, fuzzy, no-c-format
-msgid "&2 Language 2"
-msgstr "&Bahasa"
-
-#. i18n: file dlgsortbase.ui line 86
-#: rc.cpp:144
-#, no-c-format
-msgid "Select to sort based on the right column"
-msgstr ""
-
-#. i18n: file dlgsortbase.ui line 96
-#: rc.cpp:147
-#, fuzzy, no-c-format
-msgid "Direction"
-msgstr "Haluan"
-
-#. i18n: file dlgsortbase.ui line 99
-#: rc.cpp:150 rc.cpp:159 rc.cpp:168
-#, fuzzy, no-c-format
-msgid "Sort in this direction"
-msgstr "Aksara Baru dalam Tahap Ini"
-
-#. i18n: file dlgsortbase.ui line 102
-#: rc.cpp:153
-#, fuzzy, no-c-format
-msgid "Select direction for the sort"
-msgstr "Pilih Fail Tempatan untuk %1"
-
-#. i18n: file dlgsortbase.ui line 113
-#: rc.cpp:156
-#, fuzzy, no-c-format
-msgid "&Ascending"
-msgstr "&Menaik"
-
-#. i18n: file dlgsortbase.ui line 119
-#: rc.cpp:162
-#, no-c-format
-msgid "Select to sort in ascending order"
-msgstr ""
-
-#. i18n: file dlgsortbase.ui line 127
-#: rc.cpp:165
-#, fuzzy, no-c-format
-msgid "&Descending"
-msgstr "&Menurun"
-
-#. i18n: file dlgsortbase.ui line 133
-#: rc.cpp:171
-#, no-c-format
-msgid "Select to sort in descending order"
-msgstr ""
-
-#. i18n: file prefcardappearancebase.ui line 209
-#: rc.cpp:468
-#, no-c-format
-msgid "&Flip"
-msgstr "&Terbalik"
-
-#. i18n: file prefcardappearancebase.ui line 231
-#: rc.cpp:477
-#, fuzzy, no-c-format
-msgid "Text color:"
-msgstr "Warna teks:"
-
-#. i18n: file prefcardappearancebase.ui line 250
-#: rc.cpp:480
-#, fuzzy, no-c-format
-msgid "Frame color:"
-msgstr "Warna latarbelakang:"
-
-#. i18n: file prefcardappearancebase.ui line 269
-#: rc.cpp:483 rc.cpp:489 rc.cpp:516
-#, no-c-format
-msgid "Font:"
-msgstr "Font:"
-
-#. i18n: file prefcardappearancebase.ui line 288
-#: rc.cpp:486
-#, fuzzy, no-c-format
-msgid "Card color:"
-msgstr "Warna latarbelakang:"
-
-#. i18n: file prefcardappearancebase.ui line 339
-#: rc.cpp:492
-#, fuzzy, no-c-format
-msgid "Font for back of card"
-msgstr "Meme_rlukan kad pintar untuk logmasuk"
-
-#. i18n: file prefcardappearancebase.ui line 422
-#: rc.cpp:519
-#, fuzzy, no-c-format
-msgid "Font for front of card"
-msgstr "Meme_rlukan kad pintar untuk logmasuk"
-
-#. i18n: file prefcharacterbase.ui line 95
-#: kwordquiz.cpp:281 rc.cpp:555
-#, fuzzy, no-c-format
-msgid "Special Character 1"
-msgstr "Memasukkan aksara khas..."
-
-#. i18n: file prefcharacterbase.ui line 98
-#: rc.cpp:558
-#, no-c-format
-msgid "Ctrl+1"
-msgstr "Ctrl+1"
-
-#. i18n: file prefcharacterbase.ui line 115
-#: kwordquiz.cpp:282 rc.cpp:564
-#, fuzzy, no-c-format
-msgid "Special Character 2"
-msgstr "Memasukkan aksara khas..."
-
-#. i18n: file prefcharacterbase.ui line 118
-#: rc.cpp:567
-#, no-c-format
-msgid "Ctrl+2"
-msgstr "Ctrl+2"
-
-#. i18n: file prefcharacterbase.ui line 121
-#: rc.cpp:570
-#, no-c-format
-msgid "B"
-msgstr "B"
-
-#. i18n: file prefcharacterbase.ui line 135
-#: kwordquiz.cpp:283 rc.cpp:573
-#, fuzzy, no-c-format
-msgid "Special Character 3"
-msgstr "Memasukkan aksara khas..."
-
-#. i18n: file prefcharacterbase.ui line 138
-#: rc.cpp:576
-#, no-c-format
-msgid "Ctrl+3"
-msgstr "Ctrl+3"
-
-#. i18n: file prefcharacterbase.ui line 141
-#: rc.cpp:579
-#, no-c-format
-msgid "C"
-msgstr "C"
-
-#. i18n: file prefcharacterbase.ui line 155
-#: kwordquiz.cpp:284 rc.cpp:582
-#, fuzzy, no-c-format
-msgid "Special Character 4"
-msgstr "Memasukkan aksara khas..."
-
-#. i18n: file prefcharacterbase.ui line 158
-#: rc.cpp:585
-#, no-c-format
-msgid "Ctrl+4"
-msgstr "Ctrl+4"
-
-#. i18n: file prefcharacterbase.ui line 161
-#: rc.cpp:588
-#, no-c-format
-msgid "D"
-msgstr "D"
-
-#. i18n: file prefcharacterbase.ui line 175
-#: kwordquiz.cpp:285 rc.cpp:591
-#, fuzzy, no-c-format
-msgid "Special Character 5"
-msgstr "Memasukkan aksara khas..."
-
-#. i18n: file prefcharacterbase.ui line 178
-#: rc.cpp:594
-#, no-c-format
-msgid "Ctrl+5"
-msgstr "Ctrl+5"
-
-#. i18n: file prefcharacterbase.ui line 181
-#: rc.cpp:597
-#, no-c-format
-msgid "E"
-msgstr "E"
-
-#. i18n: file prefcharacterbase.ui line 195
-#: kwordquiz.cpp:286 rc.cpp:600
-#, fuzzy, no-c-format
-msgid "Special Character 6"
-msgstr "Memasukkan aksara khas..."
-
-#. i18n: file prefcharacterbase.ui line 198
-#: rc.cpp:603
-#, no-c-format
-msgid "Ctrl+6"
-msgstr "Ctrl+6"
-
-#. i18n: file prefcharacterbase.ui line 201
-#: rc.cpp:606
-#, no-c-format
-msgid "F"
-msgstr "F"
-
-#. i18n: file prefcharacterbase.ui line 215
-#: kwordquiz.cpp:287 rc.cpp:609
-#, fuzzy, no-c-format
-msgid "Special Character 7"
-msgstr "Memasukkan aksara khas..."
-
-#. i18n: file prefcharacterbase.ui line 218
-#: rc.cpp:612
-#, no-c-format
-msgid "Ctrl+7"
-msgstr "Ctrl+7"
-
-#. i18n: file prefcharacterbase.ui line 221
-#: rc.cpp:615
-#, no-c-format
-msgid "G"
-msgstr "G"
-
-#. i18n: file prefcharacterbase.ui line 235
-#: kwordquiz.cpp:288 rc.cpp:618
-#, fuzzy, no-c-format
-msgid "Special Character 8"
-msgstr "Memasukkan aksara khas..."
-
-#. i18n: file prefcharacterbase.ui line 238
-#: rc.cpp:621
-#, no-c-format
-msgid "Ctrl+8"
-msgstr "Ctrl+8"
-
-#. i18n: file prefcharacterbase.ui line 241
-#: rc.cpp:624
-#, no-c-format
-msgid "H"
-msgstr "H"
-
-#. i18n: file prefcharacterbase.ui line 255
-#: kwordquiz.cpp:289 rc.cpp:627
-#, fuzzy, no-c-format
-msgid "Special Character 9"
-msgstr "Memasukkan aksara khas..."
-
-#. i18n: file prefcharacterbase.ui line 258
-#: rc.cpp:630
-#, no-c-format
-msgid "Ctrl+9"
-msgstr "Ctrl+9"
-
-#. i18n: file prefcharacterbase.ui line 261
-#: rc.cpp:633
-#, no-c-format
-msgid "I"
-msgstr "I"
-
-#: kwordquiz.cpp:79 kwordquiz.cpp:652 kwordquizview.cpp:399
 #, fuzzy
-msgid "Cannot &Undo"
-msgstr "Nyahbuat suntingan"
+#~ msgid "Based On"
+#~ msgstr "Berasaskan:"
 
-#: kwordquiz.cpp:118
 #, fuzzy
-msgid "&Get New Vocabularies..."
-msgstr "Muatturun Tatabahasa Baru"
+#~ msgid "&1 Language 1"
+#~ msgstr "&Bahasa"
 
-#: kwordquiz.cpp:143
 #, fuzzy
-msgid "Undoes the last command"
-msgstr "Papar arahan laksana"
+#~ msgid "&2 Language 2"
+#~ msgstr "&Bahasa"
 
-#: kwordquiz.cpp:194
 #, fuzzy
-msgid "&Sort..."
-msgstr "&Isih..."
+#~ msgid "Direction"
+#~ msgstr "Haluan"
 
-#: kwordquiz.cpp:195
-msgid ""
-"Sorts the vocabulary in ascending or descending order based on the left or "
-"right column"
-msgstr ""
+#, fuzzy
+#~ msgid "Sort in this direction"
+#~ msgstr "Aksara Baru dalam Tahap Ini"
 
-#: kwordquiz.cpp:388 kwordquiz.cpp:489 kwordquiz.cpp:543 kwordquiz.cpp:551
-#: kwordquiz.cpp:565 kwordquiz.cpp:579 kwordquiz.cpp:657 kwordquiz.cpp:672
-#: kwordquiz.cpp:704 kwordquiz.cpp:711 kwordquiz.cpp:718 kwordquiz.cpp:725
-#: kwordquiz.cpp:732 kwordquiz.cpp:739 kwordquiz.cpp:746 kwordquiz.cpp:753
-#: kwordquiz.cpp:760 kwordquiz.cpp:767 kwordquiz.cpp:784 kwordquiz.cpp:799
-#: kwordquiz.cpp:806 kwordquiz.cpp:813 kwordquiz.cpp:820 kwordquiz.cpp:827
-#: kwordquiz.cpp:834 kwordquiz.cpp:847 kwordquiz.cpp:854 kwordquiz.cpp:861
-#: kwordquiz.cpp:868 kwordquiz.cpp:875 kwordquiz.cpp:882 kwordquiz.cpp:889
-#: kwordquiz.cpp:896 kwordquiz.cpp:903 kwordquiz.cpp:910 kwordquiz.cpp:1210
-msgid "Ready"
-msgstr "Sedia"
+#, fuzzy
+#~ msgid "Select direction for the sort"
+#~ msgstr "Pilih Fail Tempatan untuk %1"
 
-#: kwordquiz.cpp:496
-msgid "&Join selected files into one list"
-msgstr ""
+#, fuzzy
+#~ msgid "&Ascending"
+#~ msgstr "&Menaik"
 
-#: kwordquiz.cpp:499
-msgid ""
-"*.kvtml *.wql *.xml.gz *.csv|All Supported Documents\n"
-"*.kvtml|KDE Vocabulary Document\n"
-"*.wql|KWordQuiz Document\n"
-"*.xml.gz|Pauker Lesson\n"
-"*.csv|Comma-Separated Values"
-msgstr ""
+#, fuzzy
+#~ msgid "&Descending"
+#~ msgstr "&Menurun"
 
-#: kwordquiz.cpp:587
-msgid ""
-"*.kvtml|KDE Vocabulary Document\n"
-"*.wql|KWordQuiz Document\n"
-"*.csv|Comma-Separated Values\n"
-"*.html|Hypertext Markup Language"
-msgstr ""
+#~ msgid "&Flip"
+#~ msgstr "&Terbalik"
 
-#: kwordquiz.cpp:612
-msgid ""
-"<qt>The file<br><b>%1</b><br>already exists. Do you want to overwrite it?</"
-"qt>"
-msgstr ""
+#, fuzzy
+#~ msgid "Text color:"
+#~ msgstr "Warna teks:"
 
-#: kwordquiz.cpp:677
-msgid "Exiting..."
-msgstr "Keluar..."
+#, fuzzy
+#~ msgid "Frame color:"
+#~ msgstr "Warna latarbelakang:"
 
-#: kwordquiz.cpp:702
-msgid "Undoing previous command..."
-msgstr "Menyahbuat arahan terdahulu..."
+#~ msgid "Font:"
+#~ msgstr "Font:"
 
-#: kwordquiz.cpp:765
-msgid "Searching for indicated text..."
-msgstr "Mencari untuk teks dinyatakan..."
+#, fuzzy
+#~ msgid "Card color:"
+#~ msgstr "Warna latarbelakang:"
 
-#: kwordquiz.cpp:811
-msgid "Inserting special character..."
-msgstr "Memasukkan aksara khas..."
+#, fuzzy
+#~ msgid "Font for back of card"
+#~ msgstr "Meme_rlukan kad pintar untuk logmasuk"
 
-#: kwordquiz.cpp:825
-msgid "Sorting the vocabulary..."
-msgstr "Menyusun tatabahasa..."
+#, fuzzy
+#~ msgid "Font for front of card"
+#~ msgstr "Meme_rlukan kad pintar untuk logmasuk"
 
-#: kwordquiz.cpp:1152 kwordquiz.cpp:1171
-msgid "&5 %1 <-> %2 Randomly"
-msgstr ""
+#, fuzzy
+#~ msgid "Special Character 1"
+#~ msgstr "Memasukkan aksara khas..."
 
-#: kwordquiz.cpp:1190
-msgid "%1 <-> %2 Randomly"
-msgstr ""
+#~ msgid "Ctrl+1"
+#~ msgstr "Ctrl+1"
 
-#: kwordquizview.cpp:214 kwordquizview.cpp:219
-#, c-format
-msgid "KWordQuiz - %1"
-msgstr "KWordQuiz - %1"
+#, fuzzy
+#~ msgid "Special Character 2"
+#~ msgstr "Memasukkan aksara khas..."
 
-#: kwordquizview.cpp:304
-msgid "&Undo Entry"
-msgstr "Padam Mas&ukan"
+#~ msgid "Ctrl+2"
+#~ msgstr "Ctrl+2"
 
-#: kwordquizview.cpp:411
-msgid "&Undo Cut"
-msgstr "Nyahb&uat Potong"
+#~ msgid "B"
+#~ msgstr "B"
 
-#: kwordquizview.cpp:451
-msgid "&Undo Paste"
-msgstr "Nyahb&uat Tampal"
+#, fuzzy
+#~ msgid "Special Character 3"
+#~ msgstr "Memasukkan aksara khas..."
 
-#: kwordquizview.cpp:539
-msgid "&Undo Clear"
-msgstr "Nyahb&uat Bersih"
+#~ msgid "Ctrl+3"
+#~ msgstr "Ctrl+3"
 
-#: kwordquizview.cpp:550
-msgid "&Undo Insert"
-msgstr "Nyahb&uat Selit"
+#~ msgid "C"
+#~ msgstr "C"
 
-#: kwordquizview.cpp:564
-msgid "&Undo Delete"
-msgstr "Nyahb&uat Padam"
+#, fuzzy
+#~ msgid "Special Character 4"
+#~ msgstr "Memasukkan aksara khas..."
 
-#: kwordquizview.cpp:633
-msgid "&Undo Mark Blank"
-msgstr "Nyahb&uat Tanda Kosong"
+#~ msgid "Ctrl+4"
+#~ msgstr "Ctrl+4"
 
-#: kwordquizview.cpp:679
-msgid "&Undo Unmark Blank"
-msgstr "Nyahb&uat Nyahtanda Kosong"
+#~ msgid "D"
+#~ msgstr "D"
 
-#: kwordquizview.cpp:778
-msgid "&Undo Sort"
-msgstr "Nyahb&uat Isih"
+#, fuzzy
+#~ msgid "Special Character 5"
+#~ msgstr "Memasukkan aksara khas..."
 
-#: kwordquizview.cpp:793
-msgid "&Undo Shuffle"
-msgstr "Nyahb&uat Selerak"
+#~ msgid "Ctrl+5"
+#~ msgstr "Ctrl+5"
 
-#: wqprintdialogpage.cpp:50
-msgid "Specify type of printout to make"
-msgstr ""
+#~ msgid "E"
+#~ msgstr "E"
 
-#: prefcardappearance.cpp:68
-msgid ""
-"_: Back of the flashcard\n"
-"Back"
-msgstr "Belakang"
+#, fuzzy
+#~ msgid "Special Character 6"
+#~ msgstr "Memasukkan aksara khas..."
 
-#: dlgspecchar.cpp:26
-msgid "Select Character"
-msgstr "Pilih Aksara"
+#~ msgid "Ctrl+6"
+#~ msgstr "Ctrl+6"
 
-#: dlgspecchar.cpp:30
-msgid "&Select"
-msgstr "&Pilih"
+#~ msgid "F"
+#~ msgstr "F"
 
-#: dlgspecchar.cpp:31
-msgid "Select this character"
-msgstr "Pilih aksara ini"
+#, fuzzy
+#~ msgid "Special Character 7"
+#~ msgstr "Memasukkan aksara khas..."
+
+#~ msgid "Ctrl+7"
+#~ msgstr "Ctrl+7"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#, fuzzy
+#~ msgid "Special Character 8"
+#~ msgstr "Memasukkan aksara khas..."
+
+#~ msgid "Ctrl+8"
+#~ msgstr "Ctrl+8"
+
+#~ msgid "H"
+#~ msgstr "H"
+
+#, fuzzy
+#~ msgid "Special Character 9"
+#~ msgstr "Memasukkan aksara khas..."
+
+#~ msgid "Ctrl+9"
+#~ msgstr "Ctrl+9"
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#, fuzzy
+#~ msgid "Cannot &Undo"
+#~ msgstr "Nyahbuat suntingan"
+
+#, fuzzy
+#~ msgid "&Get New Vocabularies..."
+#~ msgstr "Muatturun Tatabahasa Baru"
+
+#, fuzzy
+#~ msgid "Undoes the last command"
+#~ msgstr "Papar arahan laksana"
+
+#, fuzzy
+#~ msgid "&Sort..."
+#~ msgstr "&Isih..."
+
+#~ msgid "Ready"
+#~ msgstr "Sedia"
+
+#~ msgid "Exiting..."
+#~ msgstr "Keluar..."
+
+#~ msgid "Undoing previous command..."
+#~ msgstr "Menyahbuat arahan terdahulu..."
+
+#~ msgid "Searching for indicated text..."
+#~ msgstr "Mencari untuk teks dinyatakan..."
+
+#~ msgid "Inserting special character..."
+#~ msgstr "Memasukkan aksara khas..."
+
+#~ msgid "Sorting the vocabulary..."
+#~ msgstr "Menyusun tatabahasa..."
+
+#~ msgid "KWordQuiz - %1"
+#~ msgstr "KWordQuiz - %1"
+
+#~ msgid "&Undo Entry"
+#~ msgstr "Padam Mas&ukan"
+
+#~ msgid "&Undo Cut"
+#~ msgstr "Nyahb&uat Potong"
+
+#~ msgid "&Undo Paste"
+#~ msgstr "Nyahb&uat Tampal"
+
+#~ msgid "&Undo Clear"
+#~ msgstr "Nyahb&uat Bersih"
+
+#~ msgid "&Undo Insert"
+#~ msgstr "Nyahb&uat Selit"
+
+#~ msgid "&Undo Delete"
+#~ msgstr "Nyahb&uat Padam"
+
+#~ msgid "&Undo Mark Blank"
+#~ msgstr "Nyahb&uat Tanda Kosong"
+
+#~ msgid "&Undo Unmark Blank"
+#~ msgstr "Nyahb&uat Nyahtanda Kosong"
+
+#~ msgid "&Undo Sort"
+#~ msgstr "Nyahb&uat Isih"
+
+#~ msgid "&Undo Shuffle"
+#~ msgstr "Nyahb&uat Selerak"
+
+#~ msgid ""
+#~ "_: Back of the flashcard\n"
+#~ "Back"
+#~ msgstr "Belakang"
+
+#~ msgid "Select Character"
+#~ msgstr "Pilih Aksara"
+
+#~ msgid "&Select"
+#~ msgstr "&Pilih"
+
+#~ msgid "Select this character"
+#~ msgstr "Pilih aksara ini"
