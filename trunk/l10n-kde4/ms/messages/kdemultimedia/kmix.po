@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-20 12:15+0200\n"
+"POT-Creation-Date: 2009-07-05 11:43+0200\n"
 "PO-Revision-Date: 2005-11-30 11:20+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -32,21 +32,25 @@ msgstr "Pengadun semasa"
 msgid "Select the channel representing the master volume:"
 msgstr ""
 
-#: dialogviewconfiguration.cpp:42 kmixprefdlg.cpp:41
+#: dialogviewconfiguration.cpp:152 kmixprefdlg.cpp:41
 msgid "Configure"
 msgstr ""
 
-#: dialogviewconfiguration.cpp:58
+#: dialogviewconfiguration.cpp:167
 msgid "Configuration of the channels."
 msgstr ""
 
-#: dialogviewconfiguration.cpp:73
-msgid "Show/Hide"
-msgstr ""
+#: dialogviewconfiguration.cpp:228
+#, fuzzy
+#| msgid "Available mixers:"
+msgid "Available channels"
+msgstr "Pengadun yang boleh didapatkan:"
 
-#: dialogviewconfiguration.cpp:75
-msgid "Split"
-msgstr ""
+#: dialogviewconfiguration.cpp:232
+#, fuzzy
+#| msgid "Select Channel"
+msgid "Visible channels"
+msgstr "Pilih Saluran"
 
 #: kmixapplet.cpp:94
 msgid "Configure - Mixer Applet"
@@ -92,46 +96,51 @@ msgstr "Pengadun yang boleh didapatkan:"
 msgid "Invalid mixer entered."
 msgstr "Pengadun tak sah dimasukkan."
 
-#: kmix.cpp:119
+#: kmix.cpp:120
 msgid "Hardware &Information"
 msgstr "&Maklumat Perkakasan"
 
-#: kmix.cpp:122 kmixdockwidget.cpp:382
+#: kmix.cpp:123 kmixdockwidget.cpp:380
 msgid "Hide Mixer Window"
 msgstr "Sembunyikan Tetingkap Pengadun"
 
-#: kmix.cpp:126
+#: kmix.cpp:127
 #, fuzzy
 #| msgid "&Channels"
 msgid "Configure &Channels..."
 msgstr "&Saluran"
 
-#: kmix.cpp:130 mdwslider.cpp:111
+#: kmix.cpp:130 kmixdockwidget.cpp:103
+#, fuzzy
+msgid "Select Master Channel..."
+msgstr "Pilih Saluran"
+
+#: kmix.cpp:134 mdwslider.cpp:111
 #, fuzzy
 msgid "Increase Volume"
 msgstr "Naikkan Volum"
 
-#: kmix.cpp:135 mdwslider.cpp:122
+#: kmix.cpp:139 mdwslider.cpp:122
 #, fuzzy
 msgid "Decrease Volume"
 msgstr "Turunkan Volum"
 
-#: kmix.cpp:140 mdwslider.cpp:365
+#: kmix.cpp:144 mdwslider.cpp:365
 msgid "Mute"
 msgstr "Senyap"
 
-#: kmix.cpp:493
+#: kmix.cpp:503
 #, kde-format
 msgid ""
 "The soundcard containing the master device was unplugged. Changing to "
 "control %1 on card %2."
 msgstr ""
 
-#: kmix.cpp:502
+#: kmix.cpp:512
 msgid "The last soundcard was unplugged."
 msgstr ""
 
-#: kmix.cpp:777
+#: kmix.cpp:789
 msgid "Mixer Hardware Information"
 msgstr "Maklumat Perkakasan Pengadun"
 
@@ -163,25 +172,20 @@ msgstr "Simpan semula volum piawai"
 msgid "M&ute"
 msgstr "&Senyap"
 
-#: kmixdockwidget.cpp:104
-#, fuzzy
-msgid "Select Master Channel..."
-msgstr "Pilih Saluran"
-
-#: kmixdockwidget.cpp:193
+#: kmixdockwidget.cpp:191
 msgid "Mixer cannot be found"
 msgstr "Pengadun tidak ditemui"
 
-#: kmixdockwidget.cpp:213
+#: kmixdockwidget.cpp:211
 #, kde-format
 msgid "Volume at %1%"
 msgstr "Volum pada %1%"
 
-#: kmixdockwidget.cpp:215
+#: kmixdockwidget.cpp:213
 msgid " (Muted)"
 msgstr " (Disenyapkan)"
 
-#: kmixdockwidget.cpp:386
+#: kmixdockwidget.cpp:384
 msgid "Show Mixer Window"
 msgstr "Papar Tetingkap Pengadun"
 
@@ -453,6 +457,36 @@ msgstr ""
 msgid "kmix: Unknown error. Please report how you produced this error."
 msgstr "kmix: Ralat tak diketahui. Laporkan bagaimana anda mendapat ralat ini."
 
+#: mixer_oss4.cpp:349 mixer_oss.cpp:230
+msgid ""
+"kmix: You do not have permission to access the mixer device.\n"
+"Login as root and do a 'chmod a+rw /dev/mixer*' to allow the access."
+msgstr ""
+"kmix: Anda tidak diizinkan mengakses peranti pencampur.\n"
+"Log masuk sebagai root dan lakukan 'chmod a+rw /dev/mixer*' untuk "
+"membolehkan pengaksesan."
+
+#: mixer_oss4.cpp:353
+#, fuzzy
+#| msgid ""
+#| "kmix: Mixer cannot be found.\n"
+#| "Please check that the soundcard is installed and the\n"
+#| "soundcard driver is loaded.\n"
+#| "On Linux you might need to use 'insmod' to load the driver.\n"
+#| "Use 'soundon' when using commercial OSS."
+msgid ""
+"kmix: Mixer cannot be found.\n"
+"Please check that the soundcard is installed and the\n"
+"soundcard driver is loaded.\n"
+"On Linux you might need to use 'insmod' to load the driver.\n"
+"Use 'soundon' when using OSS4 from 4front."
+msgstr ""
+"kmix: Pengadun tidak ditemui.\n"
+"Periksa sama ada kad bunyi dipasang dan\n"
+"peranti kad bunyi dimuatkan atau tidak.\n"
+"Pada Linux anda mungkin perlu menggunakan 'insmod' untuk memuatkan pemacu.\n"
+"Gunakan 'soundon' apabila menggunakan OSS komersil."
+
 #: mixer_oss.cpp:58
 msgid "Volume"
 msgstr "Volum"
@@ -565,15 +599,6 @@ msgstr "Tengah 3D"
 msgid "unused"
 msgstr "tidak digunakan"
 
-#: mixer_oss.cpp:230
-msgid ""
-"kmix: You do not have permission to access the mixer device.\n"
-"Login as root and do a 'chmod a+rw /dev/mixer*' to allow the access."
-msgstr ""
-"kmix: Anda tidak diizinkan mengakses peranti pencampur.\n"
-"Log masuk sebagai root dan lakukan 'chmod a+rw /dev/mixer*' untuk "
-"membolehkan pengaksesan."
-
 #: mixer_oss.cpp:234
 msgid ""
 "kmix: Mixer cannot be found.\n"
@@ -621,11 +646,11 @@ msgstr ""
 "Tanya pentadbir sistem anda untuk memasang /dev/audioctl bagi membenarkan "
 "pengaksesan."
 
-#: mixertoolbox.cpp:198
+#: mixertoolbox.cpp:199
 msgid "Sound drivers supported:"
 msgstr "Pemacu bunyi disokong:"
 
-#: mixertoolbox.cpp:199
+#: mixertoolbox.cpp:200
 msgid "Sound drivers used:"
 msgstr "Pemacu bunyi digunakan:"
 
@@ -690,7 +715,7 @@ msgstr "&Senyap"
 msgid "&File"
 msgstr "&Senyap"
 
-#. i18n: file: kmixui.rc:19
+#. i18n: file: kmixui.rc:20
 #. i18n: ectx: Menu (help)
 #: rc.cpp:33
 #, fuzzy
@@ -711,11 +736,11 @@ msgstr "opensource@mimos.my"
 msgid "&Channels"
 msgstr "&Saluran"
 
-#: viewbase.cpp:146
+#: viewbase.cpp:182
 msgid "Device Settings"
 msgstr "Seting Peranti"
 
-#: viewdockareapopup.cpp:112
+#: viewdockareapopup.cpp:115
 msgid "Mixer"
 msgstr "Pengadun"
 
@@ -742,9 +767,6 @@ msgstr "Pengadun"
 #, fuzzy
 #~ msgid "Decrease Volume of Master Channel"
 #~ msgstr "Turunkan Volum"
-
-#~ msgid "Select Channel"
-#~ msgstr "Pilih Saluran"
 
 #~ msgid "Output"
 #~ msgstr "Output"
