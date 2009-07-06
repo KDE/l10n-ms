@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-05 11:44+0200\n"
+"POT-Creation-Date: 2009-07-06 11:44+0200\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -15,12 +15,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=1;\n"
 
 #: koeventpopupmenu.cpp:46 views/todoview/kotodoview.cpp:153
-#: actionmanager.cpp:538 actionmanager.cpp:1640 actionmanager.cpp:1673
+#: actionmanager.cpp:536 actionmanager.cpp:1638 actionmanager.cpp:1671
 msgid "&Show"
 msgstr "&Paparkan"
 
 #: koeventpopupmenu.cpp:47 views/todoview/kotodoview.cpp:156
-#: actionmanager.cpp:543 actionmanager.cpp:1643 actionmanager.cpp:1674
+#: actionmanager.cpp:541 actionmanager.cpp:1641 actionmanager.cpp:1672
 #: resourceview.cpp:686
 msgid "&Edit..."
 msgstr "&Edit..."
@@ -1953,17 +1953,17 @@ msgstr ""
 #. i18n: file: filteredit_base.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, mDeleteButton)
 #: views/todoview/kotodoview.cpp:172 views/journalview/journalview.cpp:186
-#: calendarview.cpp:824 actionmanager.cpp:351 actionmanager.cpp:548
-#: actionmanager.cpp:1646 actionmanager.cpp:1675 rc.cpp:6 rc.cpp:3012
+#: actionmanager.cpp:351 actionmanager.cpp:546 actionmanager.cpp:1644
+#: actionmanager.cpp:1673 rc.cpp:6 rc.cpp:3012
 #, fuzzy
 msgid "&Delete"
 msgstr "Hapuskan%1"
 
-#: views/todoview/kotodoview.cpp:179 kodaymatrix.cpp:530 actionmanager.cpp:516
+#: views/todoview/kotodoview.cpp:179 kodaymatrix.cpp:530 actionmanager.cpp:514
 msgid "New &To-do..."
 msgstr "&Tugasan Baru..."
 
-#: views/todoview/kotodoview.cpp:182 actionmanager.cpp:523
+#: views/todoview/kotodoview.cpp:182 actionmanager.cpp:521
 msgid "New Su&b-to-do..."
 msgstr "&Subtugasan Baru..."
 
@@ -3417,11 +3417,11 @@ msgstr "(Nama Kosong)"
 msgid "(EmptyEmail)"
 msgstr "(Kosongkan E-mel)"
 
-#: kodaymatrix.cpp:528 actionmanager.cpp:509
+#: kodaymatrix.cpp:528 actionmanager.cpp:507
 msgid "New E&vent..."
 msgstr "&Peristiwa Baru..."
 
-#: kodaymatrix.cpp:532 actionmanager.cpp:531
+#: kodaymatrix.cpp:532 actionmanager.cpp:529
 #, fuzzy
 msgid "New &Journal..."
 msgstr "&Jurnal"
@@ -3444,7 +3444,7 @@ msgstr "&Tambah"
 
 #. i18n: file: timescaleedit_base.ui:96
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: kodaymatrix.cpp:703 calendarview.cpp:1303 rc.cpp:1255 rc.cpp:2925
+#: kodaymatrix.cpp:703 calendarview.cpp:1304 rc.cpp:1255 rc.cpp:2925
 #, fuzzy
 msgid "&Cancel"
 msgstr "&Ubah"
@@ -3468,7 +3468,7 @@ msgstr ""
 msgid "Delete Old Items"
 msgstr "Hapuskan Kejadian Lama"
 
-#: eventarchiver.cpp:220 calendarview.cpp:1662 calendarview.cpp:1710
+#: eventarchiver.cpp:220 calendarview.cpp:1663 calendarview.cpp:1711
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
@@ -3662,142 +3662,150 @@ msgstr ""
 msgid "Filter Applied"
 msgstr "Penapis Digunakan"
 
-#: calendarview.cpp:822
-#, kde-format
-msgid "The item \"%1\" will be permanently deleted."
-msgstr "Item \"%1\" dihapuskan secara kekal."
+#: calendarview.cpp:823
+#, fuzzy, kde-format
+#| msgid "<qt>Do you really want to delete the resource <b>%1</b>?</qt>"
+msgctxt "@info"
+msgid "Do you really want to permanently remove the item \"%1\"?"
+msgstr "<qt>Anda pasti ingin  menghapuskan sumber <b>%1</b>?</qt>"
 
-#: calendarview.cpp:823 calendarview.cpp:1301 calendarview.cpp:1313
-#: calendarview.cpp:2187 calendarview.cpp:2250 calendarview.cpp:2281
-msgid "KOrganizer Confirmation"
-msgstr "Pengesahan KOrganizer"
+#: calendarview.cpp:824
+#, fuzzy
+msgctxt "@title:window"
+msgid "Delete Item?"
+msgstr "Hapuskan Kejadian Lama"
 
-#: calendarview.cpp:893
+#: calendarview.cpp:894
 #, fuzzy
 #| msgid "Please specify a valid start date."
 msgid "Paste failed: unable to determine a valid target date."
 msgstr "Nyatakan tarikh mula yang sah."
 
-#: calendarview.cpp:1168
+#: calendarview.cpp:1169
 msgid ""
 "Unable to turn sub-to-do into a top-level to-do, because it cannot be locked."
 msgstr ""
 "Tidak dapat menukar subtugasan ke tugasan tahap tinggi, kerana ia tidak "
 "boleh dipasak."
 
-#: calendarview.cpp:1193
+#: calendarview.cpp:1194
 msgid "Make sub-to-dos independent"
 msgstr "Jadikan subtugasan tak bersandar"
 
-#: calendarview.cpp:1297
+#: calendarview.cpp:1298
 #, fuzzy, kde-format
 #| msgid "Dissociate event from recurrence"
 msgid "Do you want to dissociate the occurrence at %1 from the recurrence?"
 msgstr "Asingkan peristiwa daripada pengulangan"
 
-#: calendarview.cpp:1302
+#: calendarview.cpp:1302 calendarview.cpp:1314 calendarview.cpp:2188
+#: calendarview.cpp:2251 calendarview.cpp:2282
+msgid "KOrganizer Confirmation"
+msgstr "Pengesahan KOrganizer"
+
+#: calendarview.cpp:1303
 #, fuzzy
 #| msgid "T&ime associated"
 msgid "&Dissociate"
 msgstr "&Masa berkaitan"
 
-#: calendarview.cpp:1308
+#: calendarview.cpp:1309
 #, kde-format
 msgid ""
 "Do you want to dissociate the occurrence at %1 from the recurrence or also "
 "dissociate future ones?"
 msgstr ""
 
-#: calendarview.cpp:1314
+#: calendarview.cpp:1315
 #, fuzzy
 #| msgid "&Dissociate This Occurrence"
 msgid "&Only Dissociate This One"
 msgstr "&Lekangkan Kejadian Ini"
 
-#: calendarview.cpp:1315
+#: calendarview.cpp:1316
 #, fuzzy
 #| msgid "&Dissociate Future Occurrences"
 msgid "&Also Dissociate Future Ones"
 msgstr "&Lekangkan Kejadian Akan Datang"
 
-#: calendarview.cpp:1333
+#: calendarview.cpp:1334
 msgid "Dissociate occurrence"
 msgstr "Asingkan kemunculan"
 
-#: calendarview.cpp:1344
+#: calendarview.cpp:1345
 msgid "Dissociating the occurrence failed."
 msgstr "Gagal mengasingkan kemunculan."
 
-#: calendarview.cpp:1345 calendarview.cpp:1372
+#: calendarview.cpp:1346 calendarview.cpp:1373
 msgid "Dissociating Failed"
 msgstr "Pengasingan Gagal"
 
-#: calendarview.cpp:1358
+#: calendarview.cpp:1359
 msgid "Dissociate future occurrences"
 msgstr "Asingkan kemunculan akan datang"
 
-#: calendarview.cpp:1371
+#: calendarview.cpp:1372
 msgid "Dissociating the future occurrences failed."
 msgstr "Gagal mengasingkan kemunculan akan datang."
 
-#: calendarview.cpp:1386 calendarview.cpp:1457 calendarview.cpp:1521
+#: calendarview.cpp:1387 calendarview.cpp:1458 calendarview.cpp:1522
 #, fuzzy
 msgid "No item selected."
 msgstr "Tiada kejadian dipilih."
 
-#: calendarview.cpp:1406 calendarview.cpp:1473
+#: calendarview.cpp:1407 calendarview.cpp:1474
 msgid "The item information was successfully sent."
 msgstr ""
 
-#: calendarview.cpp:1407
+#: calendarview.cpp:1408
 #, fuzzy
 msgid "Publishing"
 msgstr "Terbitkan"
 
-#: calendarview.cpp:1409
+#: calendarview.cpp:1410
 #, fuzzy, kde-format
 msgid "Unable to publish the item '%1'"
 msgstr "Tidak dapat mencari templat '%1'."
 
-#: calendarview.cpp:1474
+#: calendarview.cpp:1475
 #, fuzzy
 #| msgid "Go &Forward"
 msgid "Forwarding"
 msgstr "Pergi ke &Hadapan"
 
-#: calendarview.cpp:1476
+#: calendarview.cpp:1477
 #, fuzzy, kde-format
 msgid "Unable to forward the item '%1'"
 msgstr "Tidak dapat mencari templat '%1'."
 
-#: calendarview.cpp:1498
+#: calendarview.cpp:1499
 #, fuzzy
 msgid "The free/busy information was successfully sent."
 msgstr "Terbitkan maklumat lapang/&sibuk secara automatik"
 
-#: calendarview.cpp:1499 calendarview.cpp:1542
+#: calendarview.cpp:1500 calendarview.cpp:1543
 #, fuzzy
 msgid "Sending Free/Busy"
 msgstr "&Lapang/Sibuk"
 
-#: calendarview.cpp:1502
+#: calendarview.cpp:1503
 #, fuzzy
 msgid "Unable to publish the free/busy data."
 msgstr "Nama pengguna untuk maklumat penerbitan lapang/sibuk"
 
-#: calendarview.cpp:1526
+#: calendarview.cpp:1527
 #, fuzzy
 msgid "The item has no attendees."
 msgstr "Kejadian tidak mempunyai penghadir."
 
-#: calendarview.cpp:1538
+#: calendarview.cpp:1539
 #, fuzzy, kde-format
 msgid ""
 "The groupware message for item '%1' was successfully sent.\n"
 "Method: %2"
 msgstr "Terbitkan maklumat lapang/&sibuk secara automatik"
 
-#: calendarview.cpp:1548
+#: calendarview.cpp:1549
 #, kde-format
 msgctxt ""
 "Groupware message sending failed. %2 is request/reply/add/cancel/counter/etc."
@@ -3806,71 +3814,71 @@ msgid ""
 "Method: %2"
 msgstr ""
 
-#: calendarview.cpp:1640
+#: calendarview.cpp:1641
 #, fuzzy
 #| msgid "*.ics|ICalendars"
 msgid "*.ics|iCalendars"
 msgstr "*.ics|Ikalendar"
 
-#: calendarview.cpp:1651 calendarview.cpp:1699
+#: calendarview.cpp:1652 calendarview.cpp:1700
 #, kde-format
 msgid "Do you want to overwrite %1?"
 msgstr ""
 
-#: calendarview.cpp:1666
+#: calendarview.cpp:1667
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgctxt "@info"
 msgid "Cannot write iCalendar file %1. %2"
 msgstr "Tidak dapat menulis fail arkib %1."
 
-#: calendarview.cpp:1678
+#: calendarview.cpp:1679
 msgid "The journal entries can not be exported to a vCalendar file."
 msgstr "Entri jurnal tidak dapat dieksport ke fail vCalendar."
 
-#: calendarview.cpp:1679
+#: calendarview.cpp:1680
 msgid "Data Loss Warning"
 msgstr "Amaran Kehilangan Data"
 
-#: calendarview.cpp:1680 actionmanager.cpp:1063
+#: calendarview.cpp:1681 actionmanager.cpp:1061
 msgid "Proceed"
 msgstr "Teruskan"
 
-#: calendarview.cpp:1690
+#: calendarview.cpp:1691
 msgid "*.vcs|vCalendars"
 msgstr "*.vcs|vCalendars"
 
-#: calendarview.cpp:1714
+#: calendarview.cpp:1715
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgctxt "@info"
 msgid "Cannot write vCalendar file %1. %2"
 msgstr "Tidak dapat menulis fail arkib %1."
 
-#: calendarview.cpp:1733
+#: calendarview.cpp:1734
 msgid "&Previous Day"
 msgstr "Hari &Sebelumnya"
 
-#: calendarview.cpp:1734 actionmanager.cpp:387 actionmanager.cpp:1355
+#: calendarview.cpp:1735 actionmanager.cpp:387 actionmanager.cpp:1353
 #, fuzzy, kde-format
 msgid "&Next Day"
 msgid_plural "&Next %1 Days"
 msgstr[0] "_n: Hari &seterusnya"
 msgstr[1] " %1 hari seterusnya"
 
-#: calendarview.cpp:1736
+#: calendarview.cpp:1737
 msgid "&Previous Week"
 msgstr "Minggu &Sebelumnya"
 
-#: calendarview.cpp:1737
+#: calendarview.cpp:1738
 msgid "&Next Week"
 msgstr "Minggu &Seterusnya"
 
-#: calendarview.cpp:1821 calendarview.cpp:1861
+#: calendarview.cpp:1822 calendarview.cpp:1862
 msgid "No filter"
 msgstr "Tiada penapis"
 
-#: calendarview.cpp:2182
+#: calendarview.cpp:2183
 #, fuzzy, kde-format
 msgid ""
 "The item \"%1\" has sub-to-dos. Do you want to delete just this item and "
@@ -3881,20 +3889,20 @@ msgstr ""
 "sahaja dan menjadikan semua subtugasannya tak bersandar, atau "
 "menghapuskannya bersama dengan semua subtugasannya?"
 
-#: calendarview.cpp:2188
+#: calendarview.cpp:2189
 msgid "Delete Only This"
 msgstr "Hapuskan Ini Sahaja"
 
-#: calendarview.cpp:2189 calendarview.cpp:2251
+#: calendarview.cpp:2190 calendarview.cpp:2252
 #, fuzzy
 msgid "Delete All"
 msgstr "Hapuskan &Semua"
 
-#: calendarview.cpp:2191
+#: calendarview.cpp:2192
 msgid "Deleting sub-to-dos"
 msgstr "Menghapuskan subtugasan"
 
-#: calendarview.cpp:2215
+#: calendarview.cpp:2216
 #, fuzzy, kde-format
 #| msgid ""
 #| "The item \"%1\" is marked read-only and cannot be deleted; it probably "
@@ -3906,11 +3914,11 @@ msgstr ""
 "Item \"%1\" bertanda baca saja dan tidak boleh dihapuskan; mungkin ia adalah "
 "anggota sumber kalendar baca saja.."
 
-#: calendarview.cpp:2219
+#: calendarview.cpp:2220
 msgid "Removing not possible"
 msgstr "Tidak boleh dibuang"
 
-#: calendarview.cpp:2247
+#: calendarview.cpp:2248
 #, fuzzy, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates; are you sure you want "
@@ -3919,13 +3927,13 @@ msgstr ""
 "Kejadian \"%1\" berulang pada beberapa tarikh; anda pasti ingin "
 "menghapuskannya dan semua pengulangannya?"
 
-#: calendarview.cpp:2258
+#: calendarview.cpp:2259
 #, fuzzy
 #| msgid "Delete &Future"
 msgid "Also Delete &Future"
 msgstr "Hapuskan yang &Akan Datang"
 
-#: calendarview.cpp:2262
+#: calendarview.cpp:2263
 #, fuzzy, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
@@ -3935,7 +3943,7 @@ msgstr ""
 "terkini sahaja pada  %2, pengulangan akan datang sahaja, atau semua "
 "pengulangannya?"
 
-#: calendarview.cpp:2269
+#: calendarview.cpp:2270
 #, fuzzy, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
@@ -3945,60 +3953,60 @@ msgstr ""
 "terkini sahaja pada  %2, pengulangan akan datang sahaja, atau semua "
 "pengulangannya?"
 
-#: calendarview.cpp:2282
+#: calendarview.cpp:2283
 msgid "Delete C&urrent"
 msgstr "Hapuskan yang &Semasa"
 
-#: calendarview.cpp:2284
+#: calendarview.cpp:2285
 msgid "Delete &All"
 msgstr "Hapuskan &Semua"
 
-#: calendarview.cpp:2373
+#: calendarview.cpp:2375
 msgid "Delete all completed to-dos?"
 msgstr "Hapuskan semua tugasan yang telah selesai?"
 
-#: calendarview.cpp:2374
+#: calendarview.cpp:2376
 msgid "Purge To-dos"
 msgstr "Singkirkan Tugasan"
 
-#: calendarview.cpp:2375
+#: calendarview.cpp:2377
 msgid "Purge"
 msgstr "Singkirkan"
 
-#: calendarview.cpp:2379
+#: calendarview.cpp:2381
 msgid "Purging completed to-dos"
 msgstr "Menyingkirkan tugasan yang telah selesai"
 
-#: calendarview.cpp:2396
+#: calendarview.cpp:2398
 #, fuzzy
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr ""
 "Tidak dapat menyingkirkan item tugasan dengan anak-anak yang belum selesai."
 
-#: calendarview.cpp:2397
+#: calendarview.cpp:2399
 msgid "Delete To-do"
 msgstr "Hapuskan Tugasan"
 
-#: calendarview.cpp:2406
+#: calendarview.cpp:2408
 #, fuzzy
 msgid "Unable to edit item: it is locked by another process."
 msgstr "Tidak dapat mengedit kejadian: ia dipasak oleh proses lain."
 
-#: calendarview.cpp:2439
+#: calendarview.cpp:2441
 #, fuzzy, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "Tidak dapat menyalin kejadian ke %1."
 
-#: calendarview.cpp:2440
+#: calendarview.cpp:2442
 msgid "Copying Failed"
 msgstr "Gagal Disalin"
 
-#: calendarview.cpp:2484
+#: calendarview.cpp:2486
 #, fuzzy, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "Tidak dapat mengalihkan kejadian ke %1."
 
-#: calendarview.cpp:2485
+#: calendarview.cpp:2487
 msgid "Moving Failed"
 msgstr "Gagal Dialihkan"
 
@@ -4812,222 +4820,222 @@ msgstr "&Rentangan waktu"
 msgid "&Refresh"
 msgstr "&Muat semula"
 
-#: actionmanager.cpp:437
+#: actionmanager.cpp:435
 msgid "F&ilter"
 msgstr "&Penapis"
 
-#: actionmanager.cpp:452
+#: actionmanager.cpp:450
 #, fuzzy
 #| msgid "Zoom In Horizontally"
 msgid "In Horizontally"
 msgstr "Zum Masuk Mendatar"
 
-#: actionmanager.cpp:457
+#: actionmanager.cpp:455
 #, fuzzy
 #| msgid "Zoom Out Horizontally"
 msgid "Out Horizontally"
 msgstr "Zum Keluar Mendatar"
 
-#: actionmanager.cpp:462
+#: actionmanager.cpp:460
 #, fuzzy
 #| msgid "Zoom In Vertically"
 msgid "In Vertically"
 msgstr "Zum Masuk menegak"
 
-#: actionmanager.cpp:467
+#: actionmanager.cpp:465
 #, fuzzy
 #| msgid "Zoom Out Vertically"
 msgid "Out Vertically"
 msgstr "Zum Keluar menegak"
 
-#: actionmanager.cpp:476
+#: actionmanager.cpp:474
 #, fuzzy
 #| msgid "day"
 msgctxt "@action Jump to today"
 msgid "To &Today"
 msgstr "hari"
 
-#: actionmanager.cpp:477
+#: actionmanager.cpp:475
 #, fuzzy
 #| msgid "day"
 msgid "Today"
 msgstr "hari"
 
-#: actionmanager.cpp:478
+#: actionmanager.cpp:476
 #, fuzzy
 #| msgid "Go to &Today"
 msgid "Scroll to Today"
 msgstr "Pergi ke &Hari Ini"
 
-#: actionmanager.cpp:483
+#: actionmanager.cpp:481
 #, fuzzy
 #| msgid "Go &Backward"
 msgctxt "scroll backward"
 msgid "&Backward"
 msgstr "Undur &Belakang"
 
-#: actionmanager.cpp:484
+#: actionmanager.cpp:482
 #, fuzzy
 #| msgid "Balak"
 msgctxt "scroll backward"
 msgid "Back"
 msgstr "Balak"
 
-#: actionmanager.cpp:485
+#: actionmanager.cpp:483
 #, fuzzy
 #| msgid "Go &Backward"
 msgid "Scroll Backward"
 msgstr "Undur &Belakang"
 
-#: actionmanager.cpp:498
+#: actionmanager.cpp:496
 #, fuzzy
 #| msgid "Go &Forward"
 msgctxt "scroll forward"
 msgid "&Forward"
 msgstr "Pergi ke &Hadapan"
 
-#: actionmanager.cpp:499
+#: actionmanager.cpp:497
 #, fuzzy
 #| msgid "Go &Forward"
 msgctxt "scoll forward"
 msgid "Forward"
 msgstr "Pergi ke &Hadapan"
 
-#: actionmanager.cpp:500
+#: actionmanager.cpp:498
 #, fuzzy
 #| msgid "Go &Forward"
 msgid "Scroll Forward"
 msgstr "Pergi ke &Hadapan"
 
-#: actionmanager.cpp:510
+#: actionmanager.cpp:508
 #, fuzzy
 #| msgid "Events"
 msgctxt "@action:intoolbar create a new event"
 msgid "Event"
 msgstr "Peristiwa"
 
-#: actionmanager.cpp:511
+#: actionmanager.cpp:509
 msgid "Create a new Event"
 msgstr ""
 
-#: actionmanager.cpp:517
+#: actionmanager.cpp:515
 #, fuzzy
 #| msgid "To-do:"
 msgid "To-do"
 msgstr "Tugasan:"
 
-#: actionmanager.cpp:518
+#: actionmanager.cpp:516
 #, fuzzy
 #| msgid "Click to add a new to-do"
 msgid "Create a new To-do"
 msgstr "Klik untuk tambah tugasan baru"
 
-#: actionmanager.cpp:532
+#: actionmanager.cpp:530
 #, fuzzy
 #| msgid "&Journal"
 msgid "Journal"
 msgstr "&Jurnal"
 
-#: actionmanager.cpp:533
+#: actionmanager.cpp:531
 msgid "Create a new Journal"
 msgstr ""
 
-#: actionmanager.cpp:554
+#: actionmanager.cpp:552
 msgid "&Make Sub-to-do Independent"
 msgstr "&Jadikan Subtugasan Tak Bersandar"
 
-#: actionmanager.cpp:571
+#: actionmanager.cpp:569
 msgid "&Publish Item Information..."
 msgstr ""
 
-#: actionmanager.cpp:576
+#: actionmanager.cpp:574
 msgid "Send &Invitation to Attendees"
 msgstr ""
 
-#: actionmanager.cpp:583
+#: actionmanager.cpp:581
 #, fuzzy
 msgid "Re&quest Update"
 msgstr "&Mohon"
 
-#: actionmanager.cpp:590
+#: actionmanager.cpp:588
 msgid "Send &Cancellation to Attendees"
 msgstr ""
 
-#: actionmanager.cpp:597
+#: actionmanager.cpp:595
 #, fuzzy
 msgid "Send Status &Update"
 msgstr "Tarikh mula:"
 
-#: actionmanager.cpp:604
+#: actionmanager.cpp:602
 #, fuzzy
 msgctxt "counter proposal"
 msgid "Request Chan&ge"
 msgstr "&balas"
 
-#: actionmanager.cpp:611
+#: actionmanager.cpp:609
 #, fuzzy
 msgid "&Mail Free Busy Information..."
 msgstr "&Melkan Maklumat Sibuk Lapang"
 
-#: actionmanager.cpp:616
+#: actionmanager.cpp:614
 #, fuzzy
 #| msgid "&iCalendar..."
 msgid "&Send as iCalendar..."
 msgstr "&iCalendar..."
 
-#: actionmanager.cpp:621
+#: actionmanager.cpp:619
 msgid "&Upload Free Busy Information"
 msgstr "&Muat Naik Maklumat Sibuk Lapang"
 
-#: actionmanager.cpp:627
+#: actionmanager.cpp:625
 #, fuzzy
 #| msgid "&Addressbook"
 msgid "&Address Book"
 msgstr "&Buku alamat"
 
-#: actionmanager.cpp:635
+#: actionmanager.cpp:633
 msgid "Show Date Navigator"
 msgstr "Papar Navogator Tarikh"
 
-#: actionmanager.cpp:639
+#: actionmanager.cpp:637
 #, fuzzy
 msgid "Show To-do View"
 msgstr "Paparkan Paparan Tugasan"
 
-#: actionmanager.cpp:643
+#: actionmanager.cpp:641
 #, fuzzy
 msgid "Show Item Viewer"
 msgstr "Paparkan Pemapar Peristiwa"
 
-#: actionmanager.cpp:658
+#: actionmanager.cpp:656
 #, fuzzy
 #| msgid "Export Calendar as Web Page"
 msgid "Show Calendar Manager"
 msgstr "Eksport kalendar sebagai Laman Web"
 
-#: actionmanager.cpp:671
+#: actionmanager.cpp:669
 msgid "Configure &Date && Time..."
 msgstr "Konfigur &Tarikh && Waktu"
 
-#: actionmanager.cpp:680
+#: actionmanager.cpp:678
 #, fuzzy
 msgid "Manage View &Filters..."
 msgstr "Edit &Penapis"
 
-#: actionmanager.cpp:685
+#: actionmanager.cpp:683
 #, fuzzy
 msgid "Manage C&ategories..."
 msgstr "Edit K&ategori..."
 
-#: actionmanager.cpp:691
+#: actionmanager.cpp:689
 msgid "&Configure Calendar..."
 msgstr "&Konfigur Kalendar..."
 
-#: actionmanager.cpp:774 actionmanager.cpp:866
+#: actionmanager.cpp:772 actionmanager.cpp:864
 msgid "*.vcs *.ics|Calendar Files"
 msgstr "*.vcs *.ics|Fail Kalendar "
 
-#: actionmanager.cpp:819
+#: actionmanager.cpp:817
 msgid ""
 "You have no ical file in your home directory.\n"
 "Import cannot proceed.\n"
@@ -5035,7 +5043,7 @@ msgstr ""
 "Tiada fail ical dalam direktori utama.\n"
 "Import tidak dapat diteruskan.\n"
 
-#: actionmanager.cpp:840
+#: actionmanager.cpp:838
 msgid ""
 "KOrganizer successfully imported and merged your .calendar file from ical "
 "into the currently opened calendar."
@@ -5043,7 +5051,7 @@ msgstr ""
 "KOrganizer berjaya mengimport dan mencantumkan fail kalendar anda dari ical "
 "ke dalam kalendar yang sedang terbuka."
 
-#: actionmanager.cpp:846
+#: actionmanager.cpp:844
 msgid ""
 "KOrganizer encountered some unknown fields while parsing your .calendar ical "
 "file, and had to discard them; please check to see that all your relevant "
@@ -5053,11 +5061,11 @@ msgstr ""
 "kalendar ical anda, dan terpaksa membuangnya; semak untuk mempastikan semua "
 "data yang berkaitan telah diimport dengan betul."
 
-#: actionmanager.cpp:850
+#: actionmanager.cpp:848
 msgid "ICal Import Successful with Warning"
 msgstr "Berjaya mengimport ICal bersama Amaran"
 
-#: actionmanager.cpp:854
+#: actionmanager.cpp:852
 msgid ""
 "KOrganizer encountered an error parsing your .calendar file from ical; "
 "import has failed."
@@ -5065,7 +5073,7 @@ msgstr ""
 "KOrganizer menemui ralat semasa menghurai fail .calendar dari ical; gagal "
 "mengimport."
 
-#: actionmanager.cpp:858
+#: actionmanager.cpp:856
 msgid ""
 "KOrganizer does not think that your .calendar file is a valid ical calendar; "
 "import has failed."
@@ -5073,38 +5081,38 @@ msgstr ""
 "KOrganizer fikir fail .calendar anda bukan kalendar ical yang sah; gagal "
 "mengimport."
 
-#: actionmanager.cpp:944
+#: actionmanager.cpp:942
 #, kde-format
 msgid "New calendar '%1'."
 msgstr "Kalendar baru'%1'."
 
-#: actionmanager.cpp:979
+#: actionmanager.cpp:977
 #, kde-format
 msgid "Cannot download calendar from '%1'."
 msgstr "Tidak dapat memuat turun kalendar dari '%1'."
 
-#: actionmanager.cpp:1016
+#: actionmanager.cpp:1014
 #, fuzzy, kde-format
 #| msgid "Saved calendar '%1'."
 msgid "Added calendar for URL '%1'."
 msgstr "Kalendar '%1' disimpan"
 
-#: actionmanager.cpp:1024
+#: actionmanager.cpp:1022
 #, fuzzy, kde-format
 msgid "Unable to create calendar '%1'."
 msgstr "Tidak dapat menyimpan kalendar ke fail %1."
 
-#: actionmanager.cpp:1033
+#: actionmanager.cpp:1031
 #, kde-format
 msgid "Merged calendar '%1'."
 msgstr "Kalendar '%1' dicantum."
 
-#: actionmanager.cpp:1036
+#: actionmanager.cpp:1034
 #, kde-format
 msgid "Opened calendar '%1'."
 msgstr "Kalendar '%1' dibuka."
 
-#: actionmanager.cpp:1061
+#: actionmanager.cpp:1059
 msgid ""
 "Your calendar will be saved in iCalendar format. Use 'Export vCalendar' to "
 "save in vCalendar format."
@@ -5112,41 +5120,41 @@ msgstr ""
 "Kalendar anda akan disimpan dalam format iCalendar. Gunakan 'Eksport "
 "vKalendar' untuk menyimpan dalam format vKalendar."
 
-#: actionmanager.cpp:1063
+#: actionmanager.cpp:1061
 msgid "Format Conversion"
 msgstr "Penukaran Format"
 
-#: actionmanager.cpp:1091
+#: actionmanager.cpp:1089
 #, kde-format
 msgid "Cannot upload calendar to '%1'"
 msgstr "Tidak dapat memuat naik kalendar ke '%1'"
 
-#: actionmanager.cpp:1104
+#: actionmanager.cpp:1102
 #, kde-format
 msgid "Saved calendar '%1'."
 msgstr "Kalendar '%1' disimpan"
 
-#: actionmanager.cpp:1139
+#: actionmanager.cpp:1137
 #, fuzzy, kde-format
 #| msgid "<qt>Do you really want to delete the resource <b>%1</b>?</qt>"
 msgid "Do you want to overwrite file \"%1\""
 msgstr "<qt>Anda pasti ingin  menghapuskan sumber <b>%1</b>?</qt>"
 
-#: actionmanager.cpp:1177
+#: actionmanager.cpp:1175
 msgid "Could not upload file."
 msgstr "Tidak dapat muat naik fail."
 
-#: actionmanager.cpp:1221
+#: actionmanager.cpp:1219
 #, kde-format
 msgid "Unable to save calendar to the file %1."
 msgstr "Tidak dapat menyimpan kalendar ke fail %1."
 
-#: actionmanager.cpp:1222
+#: actionmanager.cpp:1220
 #, fuzzy
 msgid "Error"
 msgstr "Tiada ralat"
 
-#: actionmanager.cpp:1248
+#: actionmanager.cpp:1246
 msgid ""
 "The calendar has been modified.\n"
 "Do you want to save it?"
@@ -5154,97 +5162,97 @@ msgstr ""
 "Kalendar telah diubah suai.\n"
 "Anda ingin simpan?"
 
-#: actionmanager.cpp:1275
+#: actionmanager.cpp:1273
 #, fuzzy
 #| msgid "*.vcs *.ics|Calendar Files"
 msgid "*.ics *.vcs|Calendar Files"
 msgstr "*.vcs *.ics|Fail Kalendar "
 
-#: actionmanager.cpp:1397
+#: actionmanager.cpp:1395
 msgid "Could not start control module for date and time format."
 msgstr "Tidak dapat memulakan modul kawalan untuk format tarikh dan waktu."
 
-#: actionmanager.cpp:1532
+#: actionmanager.cpp:1530
 msgid "Could not load calendar."
 msgstr "Tidak dapat memuatkan kalendar."
 
-#: actionmanager.cpp:1547
+#: actionmanager.cpp:1545
 msgid "The downloaded events will be merged into your current calendar."
 msgstr "Peristiwa yang dimuat turun akan dicantumkan ke dalam kalendar semasa."
 
-#: actionmanager.cpp:1604
+#: actionmanager.cpp:1602
 msgid "&Show Event"
 msgstr "&Paparkan Peristiwa"
 
-#: actionmanager.cpp:1607
+#: actionmanager.cpp:1605
 msgid "&Edit Event..."
 msgstr "&Edit Peristiwa..."
 
-#: actionmanager.cpp:1610
+#: actionmanager.cpp:1608
 msgid "&Delete Event"
 msgstr "&Hapuskan Peristiwa"
 
-#: actionmanager.cpp:1617
+#: actionmanager.cpp:1615
 msgid "&Show To-do"
 msgstr "&Paparkan Tugasan"
 
-#: actionmanager.cpp:1620
+#: actionmanager.cpp:1618
 msgid "&Edit To-do..."
 msgstr "&Edit Tugasan..."
 
-#: actionmanager.cpp:1623
+#: actionmanager.cpp:1621
 msgid "&Delete To-do"
 msgstr "&Hapuskan Tugasan"
 
-#: actionmanager.cpp:1762 actionmanager.cpp:1867
+#: actionmanager.cpp:1760 actionmanager.cpp:1865
 msgid "Attach as &link"
 msgstr ""
 
-#: actionmanager.cpp:1763 actionmanager.cpp:1868
+#: actionmanager.cpp:1761 actionmanager.cpp:1866
 #, fuzzy
 msgid "Attach &inline"
 msgstr "Tambah Lampiran"
 
-#: actionmanager.cpp:1764
+#: actionmanager.cpp:1762
 msgid "Attach inline &without attachments"
 msgstr ""
 
-#: actionmanager.cpp:1766 actionmanager.cpp:1870
+#: actionmanager.cpp:1764 actionmanager.cpp:1868
 msgid "C&ancel"
 msgstr ""
 
-#: actionmanager.cpp:1806
+#: actionmanager.cpp:1804
 msgid "Removing attachments from an email might invalidate its signature."
 msgstr ""
 
-#: actionmanager.cpp:1807
+#: actionmanager.cpp:1805
 #, fuzzy
 #| msgid "Attach&ments"
 msgid "Remove Attachments"
 msgstr "La&mpiran"
 
-#: actionmanager.cpp:1956 actionmanager.cpp:1965
+#: actionmanager.cpp:1946 actionmanager.cpp:1955
 #, fuzzy
 msgid "Undo"
 msgstr "Batalkan (%1)"
 
-#: actionmanager.cpp:1962
+#: actionmanager.cpp:1952
 #, fuzzy, kde-format
 #| msgid "Undo (%1)"
 msgid "Undo: %1"
 msgstr "Batalkan (%1)"
 
-#: actionmanager.cpp:1972 actionmanager.cpp:1976
+#: actionmanager.cpp:1962 actionmanager.cpp:1966
 #, fuzzy
 msgid "Redo"
 msgstr "Buat semula (%1)"
 
-#: actionmanager.cpp:1978
+#: actionmanager.cpp:1968
 #, kde-format
 msgid "Redo (%1)"
 msgstr "Buat semula (%1)"
 
-#: actionmanager.cpp:1992
+#: actionmanager.cpp:1982
 msgid ""
 "The calendar contains unsaved changes. Do you want to save them before "
 "exiting?"
@@ -5252,16 +5260,16 @@ msgstr ""
 "Kalendar mengandungi perubahan yang belum disimpan. Anda ingin simpan "
 "sebelum keluar?"
 
-#: actionmanager.cpp:2000
+#: actionmanager.cpp:1990
 msgid "Unable to save the calendar. Do you still want to close this window?"
 msgstr ""
 "Tidak dapat menyimpan kalendar. Anda masih ingin menutup tetingkap ini?"
 
-#: actionmanager.cpp:2024
+#: actionmanager.cpp:2014
 msgid "Unable to exit. Saving still in progress."
 msgstr "Tidak dapat keluar. Proses menyimpan masih berjalan."
 
-#: actionmanager.cpp:2068
+#: actionmanager.cpp:2058
 #, fuzzy, kde-format
 #| msgid ""
 #| "Saving of '%1' failed. Check that the resource is properly configured.\n"
@@ -5273,20 +5281,20 @@ msgstr ""
 "Gagal menyimpan '%1. Pastikan sumber telah dikonfigur dengan betul.\n"
 "Abaikan masalah dan teruskan tanpa menyimpan atau batalkan penyimpanan?"
 
-#: actionmanager.cpp:2071
+#: actionmanager.cpp:2061
 msgid "Save Error"
 msgstr "Simpan Ralat"
 
-#: actionmanager.cpp:2072
+#: actionmanager.cpp:2062
 msgid "Continue Save"
 msgstr ""
 
-#: actionmanager.cpp:2073
+#: actionmanager.cpp:2063
 #, fuzzy
 msgid "Cancel Save"
 msgstr "&Ubah"
 
-#: actionmanager.cpp:2086
+#: actionmanager.cpp:2076
 #, kde-format
 msgid "URL '%1' is invalid."
 msgstr "URL '%1' tidak sah."
@@ -11858,6 +11866,9 @@ msgstr "Cetak apa yang seterusnya"
 #: plugins/printing/whatsnext/whatsnextprint.h:42
 msgid "Prints a list of all upcoming events and todos."
 msgstr "Mencetak senarai semua peristiwa dan tugasan"
+
+#~ msgid "The item \"%1\" will be permanently deleted."
+#~ msgstr "Item \"%1\" dihapuskan secara kekal."
 
 #~ msgid "This item will be permanently deleted."
 #~ msgstr "Item ini akan dihapuskan sementara"
