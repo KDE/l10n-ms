@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevplatform\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-19 11:38+0200\n"
+"POT-Creation-Date: 2009-07-21 11:52+0200\n"
 "PO-Revision-Date: 2009-07-05 19:31+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -16,29 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 "X-Generator: KBabel 1.11.4\n"
-
-#: debugger/interfaces/stackitem.cpp:93
-#, kde-format
-msgctxt "#thread-id at function-name or address"
-msgid "#%1 at %2"
-msgstr ""
-
-#: debugger/interfaces/stackmodel.cpp:26
-msgid "Frames"
-msgstr ""
-
-#: debugger/interfaces/stackmodel.cpp:52
-msgid "Depth"
-msgstr "Kedalaman"
-
-#: debugger/interfaces/stackmodel.cpp:52
-#: language/duchain/navigation/abstractnavigationcontext.cpp:385
-msgid "Function"
-msgstr "Fungsi"
-
-#: debugger/interfaces/stackmodel.cpp:52
-msgid "Source"
-msgstr "Sumber"
 
 #: debugger/interfaces/ibreakpointcontroller.cpp:171
 #, kde-format
@@ -49,6 +26,37 @@ msgstr ""
 #, kde-format
 msgid "Watchpoint hit: %1"
 msgstr ""
+
+#: debugger/framestack/framestackwidget.cpp:53
+msgid ""
+"<b>Frame stack</b><p>Often referred to as the \"call stack\", this is a list "
+"showing which function is currently active, and what called each function to "
+"get to this point in your program. By clicking on an item you can see the "
+"values in any of the previous calling functions.</p>"
+msgstr ""
+
+#: debugger/framestack/framestackwidget.cpp:70
+msgid "Threads:"
+msgstr ""
+
+#: debugger/framestack/framestackmodel.cpp:138
+#, kde-format
+msgctxt "#thread-id at function-name or address"
+msgid "#%1 at %2"
+msgstr ""
+
+#: debugger/framestack/framestackmodel.cpp:215
+msgid "Depth"
+msgstr "Kedalaman"
+
+#: debugger/framestack/framestackmodel.cpp:217
+#: language/duchain/navigation/abstractnavigationcontext.cpp:385
+msgid "Function"
+msgstr "Fungsi"
+
+#: debugger/framestack/framestackmodel.cpp:219
+msgid "Source"
+msgstr "Sumber"
 
 #: debugger/breakpoint/breakpointwidget.cpp:48
 msgid "Debugger Breakpoints"
@@ -112,7 +120,7 @@ msgstr "Matikan"
 #. i18n: file: vcs/dvcs/ui/branchmanager.ui:58
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
 #: debugger/breakpoint/breakpointwidget.cpp:130
-#: shell/workingsetcontroller.cpp:691 rc.cpp:143 rc.cpp:158 rc.cpp:310
+#: shell/workingsetcontroller.cpp:693 rc.cpp:143 rc.cpp:158 rc.cpp:310
 #: rc.cpp:405
 #, fuzzy
 msgid "Delete"
@@ -937,64 +945,64 @@ msgstr ""
 msgid "%1 Area"
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:447
+#: shell/workingsetcontroller.cpp:449
 msgid "Close Working Set (Left Click)"
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:448
+#: shell/workingsetcontroller.cpp:450
 msgid "Duplicate Working Set"
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:450
+#: shell/workingsetcontroller.cpp:452
 msgid "Load Working Set (Left Click)"
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:460
+#: shell/workingsetcontroller.cpp:462
 msgid "Delete Working Set"
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:675
+#: shell/workingsetcontroller.cpp:677
 #, fuzzy
 msgid "Add All"
 msgstr "Tambah Semua"
 
-#: shell/workingsetcontroller.cpp:676
+#: shell/workingsetcontroller.cpp:678
 msgid ""
 "Add all documents that are part of this working set to the currently active "
 "working set."
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:682
+#: shell/workingsetcontroller.cpp:684
 msgid "Subtract All"
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:683
+#: shell/workingsetcontroller.cpp:685
 msgid ""
 "Remove all documents that are part of this working set from the currently "
 "active working set."
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:692
+#: shell/workingsetcontroller.cpp:694
 msgid "Remove this working set. The contained documents are not affected."
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:700
+#: shell/workingsetcontroller.cpp:702
 msgid "Documents:"
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:748
+#: shell/workingsetcontroller.cpp:750
 msgid "Remove this file from the current working set"
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:752
+#: shell/workingsetcontroller.cpp:754
 msgid "Add this file to the current working set"
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:764
+#: shell/workingsetcontroller.cpp:766
 msgid "Close Working Set"
 msgstr ""
 
-#: shell/workingsetcontroller.cpp:768
+#: shell/workingsetcontroller.cpp:770
 msgid "Load Working Set"
 msgstr ""
 
@@ -1146,29 +1154,29 @@ msgstr "Tiada tajuk"
 msgid "Aborting..."
 msgstr "Menghenti paksa..."
 
-#: shell/debugcontroller.cpp:109
+#: shell/debugcontroller.cpp:111
 msgid "Frame Stack"
 msgstr ""
 
-#: shell/debugcontroller.cpp:115
+#: shell/debugcontroller.cpp:117
 msgid "Breakpoints"
 msgstr ""
 
-#: shell/debugcontroller.cpp:121
+#: shell/debugcontroller.cpp:123
 #, fuzzy
 msgid "Variables"
 msgstr "Variabel"
 
-#: shell/debugcontroller.cpp:171
+#: shell/debugcontroller.cpp:179
 #, fuzzy
 msgid "&Continue"
 msgstr "Sa&mbung"
 
-#: shell/debugcontroller.cpp:172
+#: shell/debugcontroller.cpp:180
 msgid "Continues the application execution"
 msgstr ""
 
-#: shell/debugcontroller.cpp:173
+#: shell/debugcontroller.cpp:181
 msgid ""
 "<b>Continue application execution</b><p>Continues the execution of your "
 "application in the debugger. This only takes effect when the application has "
@@ -1176,141 +1184,141 @@ msgid ""
 "interrupt was pressed).</p>"
 msgstr ""
 
-#: shell/debugcontroller.cpp:181
+#: shell/debugcontroller.cpp:189
 #, fuzzy
 msgid "&Restart"
 msgstr "&Mula semula"
 
-#: shell/debugcontroller.cpp:182
+#: shell/debugcontroller.cpp:190
 msgid "Restart program"
 msgstr ""
 
-#: shell/debugcontroller.cpp:183
+#: shell/debugcontroller.cpp:191
 msgid ""
 "<b>Restarts application</b><p>Restarts applications from the beginning.</p>"
 msgstr ""
 
-#: shell/debugcontroller.cpp:191
+#: shell/debugcontroller.cpp:199
 #, fuzzy
 msgid "Sto&p"
 msgstr "&Henti"
 
-#: shell/debugcontroller.cpp:192
+#: shell/debugcontroller.cpp:200
 msgid "Stop debugger"
 msgstr ""
 
-#: shell/debugcontroller.cpp:193
+#: shell/debugcontroller.cpp:201
 msgid "<b>Stop debugger</b><p>Kills the executable and exits the debugger.</p>"
 msgstr ""
 
-#: shell/debugcontroller.cpp:197
+#: shell/debugcontroller.cpp:205
 #, fuzzy
 msgid "Interrupt"
 msgstr "Ganggu"
 
-#: shell/debugcontroller.cpp:198
+#: shell/debugcontroller.cpp:206
 msgid "Interrupt application"
 msgstr ""
 
-#: shell/debugcontroller.cpp:199
+#: shell/debugcontroller.cpp:207
 msgid ""
 "<b>Interrupt application</b><p>Interrupts the debugged process or current "
 "debugger command.</p>"
 msgstr ""
 
-#: shell/debugcontroller.cpp:203
+#: shell/debugcontroller.cpp:211
 msgid "Run to &Cursor"
 msgstr ""
 
-#: shell/debugcontroller.cpp:204
+#: shell/debugcontroller.cpp:212
 msgid "Run to cursor"
 msgstr ""
 
-#: shell/debugcontroller.cpp:205
+#: shell/debugcontroller.cpp:213
 msgid ""
 "<b>Run to cursor</b><p>Continues execution until the cursor position is "
 "reached.</p>"
 msgstr ""
 
-#: shell/debugcontroller.cpp:210
+#: shell/debugcontroller.cpp:218
 msgid "Set E&xecution Position to Cursor"
 msgstr ""
 
-#: shell/debugcontroller.cpp:211
+#: shell/debugcontroller.cpp:219
 msgid "Jump to cursor"
 msgstr ""
 
-#: shell/debugcontroller.cpp:212
+#: shell/debugcontroller.cpp:220
 msgid ""
 "<b>Set Execution Position </b><p>Set the execution pointer to the current "
 "cursor position.</p>"
 msgstr ""
 
-#: shell/debugcontroller.cpp:216
+#: shell/debugcontroller.cpp:224
 msgid "Step &Over"
 msgstr ""
 
-#: shell/debugcontroller.cpp:218
+#: shell/debugcontroller.cpp:226
 msgid "Step over the next line"
 msgstr ""
 
-#: shell/debugcontroller.cpp:219
+#: shell/debugcontroller.cpp:227
 msgid ""
 "<b>Step over</b><p>Executes one line of source in the current source file. "
 "If the source line is a call to a function the whole function is executed "
 "and the app will stop at the line following the function call.</p>"
 msgstr ""
 
-#: shell/debugcontroller.cpp:228
+#: shell/debugcontroller.cpp:236
 msgid "Step over Ins&truction"
 msgstr ""
 
-#: shell/debugcontroller.cpp:229
+#: shell/debugcontroller.cpp:237
 msgid "Step over instruction"
 msgstr ""
 
-#: shell/debugcontroller.cpp:230
+#: shell/debugcontroller.cpp:238
 msgid ""
 "<b>Step over instruction</b><p>Steps over the next assembly instruction.</p>"
 msgstr ""
 
-#: shell/debugcontroller.cpp:235
+#: shell/debugcontroller.cpp:243
 msgid "Step &Into"
 msgstr ""
 
-#: shell/debugcontroller.cpp:237
+#: shell/debugcontroller.cpp:245
 msgid "Step into the next statement"
 msgstr ""
 
-#: shell/debugcontroller.cpp:238
+#: shell/debugcontroller.cpp:246
 msgid ""
 "<b>Step into</b><p>Executes exactly one line of source. If the source line "
 "is a call to a function then execution will stop after the function has been "
 "entered.</p>"
 msgstr ""
 
-#: shell/debugcontroller.cpp:246
+#: shell/debugcontroller.cpp:254
 msgid "Step into I&nstruction"
 msgstr ""
 
-#: shell/debugcontroller.cpp:247
+#: shell/debugcontroller.cpp:255
 msgid "Step into instruction"
 msgstr ""
 
-#: shell/debugcontroller.cpp:248
+#: shell/debugcontroller.cpp:256
 msgid ""
 "<b>Step into instruction</b><p>Steps into the next assembly instruction.</p>"
 msgstr ""
 
-#: shell/debugcontroller.cpp:252
+#: shell/debugcontroller.cpp:260
 msgid "Step O&ut"
 msgstr ""
 
-#: shell/debugcontroller.cpp:254
+#: shell/debugcontroller.cpp:262
 msgid "Steps out of the current function"
 msgstr ""
 
-#: shell/debugcontroller.cpp:255
+#: shell/debugcontroller.cpp:263
 msgid ""
 "<b>Step out</b><p>Executes the application until the currently executing "
 "function is completed. The debugger will then display the line after the "
@@ -1318,15 +1326,15 @@ msgid ""
 "frame (i.e. in main()) then this operation has no effect.</p>"
 msgstr ""
 
-#: shell/debugcontroller.cpp:264
+#: shell/debugcontroller.cpp:272
 msgid "Toggle Breakpoint"
 msgstr ""
 
-#: shell/debugcontroller.cpp:265
+#: shell/debugcontroller.cpp:273
 msgid "Toggle breakpoint"
 msgstr ""
 
-#: shell/debugcontroller.cpp:266
+#: shell/debugcontroller.cpp:274
 msgid ""
 "<b>Toggle breakpoint</b><p>Toggles the breakpoint at the current line in "
 "editor.</p>"
@@ -1466,121 +1474,109 @@ msgstr "Jenis"
 msgid "New Configuration"
 msgstr ""
 
-#: shell/debugger/framestackwidget.cpp:51
-msgid ""
-"<b>Frame stack</b><p>Often referred to as the \"call stack\", this is a list "
-"showing which function is currently active, and what called each function to "
-"get to this point in your program. By clicking on an item you can see the "
-"values in any of the previous calling functions.</p>"
-msgstr ""
-
-#: shell/debugger/framestackwidget.cpp:65
-msgid "Threads:"
-msgstr ""
-
-#: shell/core.cpp:63
+#: shell/core.cpp:62
 msgid "KDevelop Platform"
 msgstr ""
 
-#: shell/core.cpp:64
+#: shell/core.cpp:63
 msgid "Development Platform for IDE-like Applications"
 msgstr ""
 
-#: shell/core.cpp:65
+#: shell/core.cpp:64
 msgid "Copyright 2004-2009, The KDevelop developers"
 msgstr ""
 
-#: shell/core.cpp:67
+#: shell/core.cpp:66
 msgid "Andreas Pakulat"
 msgstr ""
 
-#: shell/core.cpp:67
+#: shell/core.cpp:66
 msgid ""
 "Maintainer, Architecture, VCS Support, Project Management Support, QMake "
 "Projectmanager"
 msgstr ""
 
-#: shell/core.cpp:68
+#: shell/core.cpp:67
 msgid "Alexander Dymo"
 msgstr ""
 
-#: shell/core.cpp:68
+#: shell/core.cpp:67
 msgid "Architecture, Sublime UI, Ruby support"
 msgstr ""
 
-#: shell/core.cpp:69
+#: shell/core.cpp:68
 msgid "David Nolden"
 msgstr ""
 
-#: shell/core.cpp:69
+#: shell/core.cpp:68
 msgid "Definition-Use Chain, C++ Support"
 msgstr ""
 
-#: shell/core.cpp:70
+#: shell/core.cpp:69
 msgid "Aleix Pol Gonzalez"
 msgstr ""
 
-#: shell/core.cpp:70
+#: shell/core.cpp:69
 msgid "CMake Support, Run Support, Kross Support"
 msgstr ""
 
-#: shell/core.cpp:71
+#: shell/core.cpp:70
 msgid "Vladimir Prus"
 msgstr ""
 
-#: shell/core.cpp:71
+#: shell/core.cpp:70
 msgid "GDB integration"
 msgstr ""
 
-#: shell/core.cpp:72
+#: shell/core.cpp:71
 msgid "Hamish Rodda"
 msgstr ""
 
-#: shell/core.cpp:72
+#: shell/core.cpp:71
 msgid "Text editor integration, definition-use chain"
 msgstr ""
 
-#: shell/core.cpp:74
+#: shell/core.cpp:73
 msgid "Matt Rogers"
 msgstr ""
 
-#: shell/core.cpp:75
+#: shell/core.cpp:74
 msgid "Cédric Pasteur"
 msgstr ""
 
-#: shell/core.cpp:75
+#: shell/core.cpp:74
 msgid "astyle and ident support"
 msgstr ""
 
-#: shell/core.cpp:76
+#: shell/core.cpp:75
 msgid "Evgeniy Ivanov"
 msgstr ""
 
-#: shell/core.cpp:76
+#: shell/core.cpp:75
 msgid "Distributed VCS, Git, Mercurial"
 msgstr ""
 
-#: shell/core.cpp:77
+#: shell/core.cpp:76
 msgid "Manuel Breugelmanns"
 msgstr ""
 
-#: shell/core.cpp:77
+#: shell/core.cpp:76
 msgid "Veritas, QTest integraton"
 msgstr ""
 
-#: shell/core.cpp:78
+#: shell/core.cpp:77
 msgid "Robert Gruber"
 msgstr ""
 
-#: shell/core.cpp:78
+#: shell/core.cpp:77
 msgid "SnippetPart, debugger and usability patches"
 msgstr ""
 
-#: shell/core.cpp:79
+#: shell/core.cpp:78
 msgid "Dukju Ahn"
 msgstr ""
 
-#: shell/core.cpp:79
+#: shell/core.cpp:78
 msgid "Subversion plugin, Custom Make Manager, Overall improvements"
 msgstr ""
 
