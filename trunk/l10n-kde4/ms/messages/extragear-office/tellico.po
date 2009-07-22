@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tellico\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-20 11:43+0200\n"
+"POT-Creation-Date: 2009-07-22 13:07+0200\n"
 "PO-Revision-Date: 2009-06-18 00:39+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -60,6 +60,17 @@ msgstr ""
 #: src/gui/tablefieldwidget.cpp:252
 msgid "Move Row Down"
 msgstr ""
+
+#: src/gui/statusbar.cpp:64
+#, fuzzy
+msgid "Cancel"
+msgstr "Batal"
+
+#: src/gui/statusbar.cpp:95 src/controller.cpp:144 src/fetchdialog.cpp:262
+#: src/fetchdialog.cpp:373 src/fetchdialog.cpp:463 src/fetchdialog.cpp:518
+#, fuzzy
+msgid "Ready."
+msgstr "Sedia."
 
 #: src/gui/kwidgetlister.cpp:63
 msgctxt "more widgets"
@@ -401,9 +412,9 @@ msgid "The cover image could not be loaded."
 msgstr ""
 
 #: src/fetch/yahoofetcher.cpp:383 src/fetch/bibsonomyfetcher.cpp:178
-#: src/fetch/isbndbfetcher.cpp:329 src/fetch/arxivfetcher.cpp:361
+#: src/fetch/isbndbfetcher.cpp:329 src/fetch/arxivfetcher.cpp:325
 #: src/fetch/ibsfetcher.cpp:404 src/fetch/animenfofetcher.cpp:368
-#: src/fetch/citebasefetcher.cpp:238 src/fetch/entrezfetcher.cpp:467
+#: src/fetch/citebasefetcher.cpp:226 src/fetch/entrezfetcher.cpp:467
 #: src/fetch/googlescholarfetcher.cpp:216
 msgid "This source has no options."
 msgstr ""
@@ -498,7 +509,7 @@ msgstr "Kata Kunci"
 msgid "DOI"
 msgstr ""
 
-#: src/fetch/fetchmanager.cpp:91 src/translators/pdfimporter.cpp:189
+#: src/fetch/fetchmanager.cpp:91 src/translators/pdfimporter.cpp:191
 msgid "arXiv ID"
 msgstr ""
 
@@ -788,13 +799,13 @@ msgstr ""
 msgid "Keywords"
 msgstr "Kata Kunci"
 
-#: src/fetch/arxivfetcher.cpp:69
+#: src/fetch/arxivfetcher.cpp:68
 msgid "arXiv.org"
 msgstr ""
 
-#: src/fetch/arxivfetcher.cpp:209 src/fetch/crossreffetcher.cpp:198
+#: src/fetch/arxivfetcher.cpp:208 src/fetch/crossreffetcher.cpp:197
 #: src/collections/comicbookcollection.cpp:157
-#: src/collections/bookcollection.cpp:186 src/translators/pdfimporter.cpp:219
+#: src/collections/bookcollection.cpp:186 src/translators/pdfimporter.cpp:221
 #: src/translators/referencerimporter.cpp:62
 #, fuzzy
 msgid "Front Cover"
@@ -833,6 +844,15 @@ msgstr ""
 #, fuzzy
 msgid "Features"
 msgstr "Ciri-ciri"
+
+#: src/fetch/citebasefetcher.cpp:155
+#: src/collections/comicbookcollection.cpp:31
+#: src/collections/bibtexcollection.cpp:37
+#: src/collections/bookcollection.cpp:32 src/translators/pdfimporter.cpp:192
+#: src/translators/grs1importer.cpp:70 src/translators/grs1importer.cpp:75
+#, fuzzy
+msgid "Publishing"
+msgstr "Penerbitan"
 
 #: src/fetch/entrezfetcher.cpp:68
 msgid "Entrez Database"
@@ -928,27 +948,27 @@ msgstr ""
 msgid "Enter the result format used by the server."
 msgstr ""
 
-#: src/fetch/crossreffetcher.cpp:94
+#: src/fetch/crossreffetcher.cpp:93
 #, kde-format
 msgid "%1 requires a username and password."
 msgstr ""
 
-#: src/fetch/crossreffetcher.cpp:337
+#: src/fetch/crossreffetcher.cpp:299
 msgid ""
 "CrossRef requires an account for access. If you agree to the terms and "
 "conditions, <a href='http://www.crossref.org/requestaccount/'>request an "
 "account</a>, and enter your OpenURL account information below."
 msgstr ""
 
-#: src/fetch/crossreffetcher.cpp:350
+#: src/fetch/crossreffetcher.cpp:312
 msgid "&Username: "
 msgstr ""
 
-#: src/fetch/crossreffetcher.cpp:355
+#: src/fetch/crossreffetcher.cpp:317
 msgid "A username and password is required to access the CrossRef service."
 msgstr ""
 
-#: src/fetch/crossreffetcher.cpp:360
+#: src/fetch/crossreffetcher.cpp:322
 msgid "&Password: "
 msgstr ""
 
@@ -2100,14 +2120,6 @@ msgstr "Kulit album"
 msgid "Comments"
 msgstr "Komen"
 
-#: src/collections/comicbookcollection.cpp:31
-#: src/collections/bibtexcollection.cpp:37
-#: src/collections/bookcollection.cpp:32 src/translators/pdfimporter.cpp:190
-#: src/translators/grs1importer.cpp:70 src/translators/grs1importer.cpp:75
-#, fuzzy
-msgid "Publishing"
-msgstr "Penerbitan"
-
 #: src/collections/comicbookcollection.cpp:32
 #: src/collections/bookcollection.cpp:33
 msgid "Classification"
@@ -3124,17 +3136,6 @@ msgstr ""
 msgid "Select template to delete:"
 msgstr ""
 
-#: src/statusbar.cpp:64
-#, fuzzy
-msgid "Cancel"
-msgstr "Batal"
-
-#: src/statusbar.cpp:95 src/controller.cpp:144 src/fetchdialog.cpp:262
-#: src/fetchdialog.cpp:373 src/fetchdialog.cpp:463 src/fetchdialog.cpp:518
-#, fuzzy
-msgid "Ready."
-msgstr "Sedia."
-
 #: src/entryview.cpp:215
 msgid "Tellico is unable to locate the default entry stylesheet."
 msgstr ""
@@ -3451,11 +3452,11 @@ msgstr ""
 msgid "New Field"
 msgstr ""
 
-#: src/translators/pdfimporter.cpp:108 src/translators/pdfimporter.cpp:116
+#: src/translators/pdfimporter.cpp:110 src/translators/pdfimporter.cpp:118
 msgid "Tellico was unable to read any metadata from the PDF file."
 msgstr ""
 
-#: src/translators/pdfimporter.cpp:247
+#: src/translators/pdfimporter.cpp:249
 msgid ""
 "Tellico is able to download information about entries with a DOI from "
 "CrossRef.org. However, you must create an CrossRef account and add a new "
