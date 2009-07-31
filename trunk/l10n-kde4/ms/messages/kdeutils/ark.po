@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-30 06:31+0200\n"
+"POT-Creation-Date: 2009-07-31 06:18+0200\n"
 "PO-Revision-Date: 2005-11-17 12:03+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: app/extractHereDndPlugin.cpp:69 kerfuffle/extractiondialog.cpp:104
+#: app/extractHereDndPlugin.cpp:69 kerfuffle/extractiondialog.cpp:118
 #, fuzzy
 #| msgid "Extract"
 msgid "Extract here"
@@ -224,24 +224,24 @@ msgstr ""
 msgid "Failed to create the new archive. Permissions might not be sufficient."
 msgstr ""
 
-#: kerfuffle/batchextract.cpp:120 kerfuffle/batchextract.cpp:167
+#: kerfuffle/batchextract.cpp:122 kerfuffle/batchextract.cpp:175
 #, fuzzy
 #| msgid "Extracting..."
 msgid "Extracting file..."
 msgstr "Mengekstrak..."
 
-#: kerfuffle/batchextract.cpp:121 kerfuffle/batchextract.cpp:168
+#: kerfuffle/batchextract.cpp:123 kerfuffle/batchextract.cpp:176
 #, fuzzy
 #| msgid "Save Archive?"
 msgid "Source archive"
 msgstr "Simpan Arkib?"
 
-#: kerfuffle/batchextract.cpp:122 kerfuffle/batchextract.cpp:169
+#: kerfuffle/batchextract.cpp:124 kerfuffle/batchextract.cpp:177
 #, fuzzy
 msgid "Destination"
 msgstr "Buka folder destinasi selepas pengekstrakan"
 
-#: kerfuffle/batchextract.cpp:135
+#: kerfuffle/batchextract.cpp:137
 #, fuzzy
 #| msgid ""
 #| "The following files will not be extracted\n"
@@ -251,7 +251,7 @@ msgstr ""
 "Fail yang berikut tidak akan diekstrak\n"
 "kerana ia sudah wujud:"
 
-#: kerfuffle/batchextract.cpp:151
+#: kerfuffle/batchextract.cpp:153
 msgid "There was an error during extraction."
 msgstr ""
 
@@ -275,63 +275,72 @@ msgstr ""
 
 #. i18n: file: kerfuffle/extractiondialog.ui:161
 #. i18n: ectx: property (title), widget (QGroupBox, filesToExtractGroupBox)
-#: kerfuffle/extractiondialog.cpp:51 rc.cpp:72
+#: kerfuffle/extractiondialog.cpp:54 rc.cpp:72
 msgid "Extract"
 msgstr "Ekstrak"
 
-#: kerfuffle/extractiondialog.cpp:77
+#: kerfuffle/extractiondialog.cpp:90
 #, fuzzy
 msgid "Extract multiple archives"
 msgstr "Ekstrak Fail Dari %1"
 
-#: kerfuffle/extractiondialog.cpp:83
+#: kerfuffle/extractiondialog.cpp:96
 msgid "The subfolder name may not contain the character '/'."
 msgstr ""
 
-#: kerfuffle/extractiondialog.cpp:88
+#: kerfuffle/extractiondialog.cpp:101
 #, kde-format
 msgid "Create folder %1?"
 msgstr "Cipta folder %1?"
 
-#: kerfuffle/extractiondialog.cpp:89
+#: kerfuffle/extractiondialog.cpp:102
 #, fuzzy
 msgid "Missing Folder"
 msgstr "Folder hilang."
 
-#: kerfuffle/extractiondialog.cpp:89
+#: kerfuffle/extractiondialog.cpp:102
 #, fuzzy
 msgid "Create Folder"
 msgstr "Cipta folder %1?"
 
-#: kerfuffle/extractiondialog.cpp:89
+#: kerfuffle/extractiondialog.cpp:102
 msgid "Do Not Create"
 msgstr ""
 
-#: kerfuffle/extractiondialog.cpp:95
+#: kerfuffle/extractiondialog.cpp:108
 msgid "The folder could not be created. Please check permissions."
 msgstr "Folder tidak dapat dicipta. Semak keizinan."
 
-#: kerfuffle/extractiondialog.cpp:104
+#: kerfuffle/extractiondialog.cpp:118
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgid "The folder '%1' already exists. Are you sure you want to extract here?"
 msgstr "Arkib sudah wujud. Anda ingin menulisgantinya?"
 
-#: kerfuffle/extractiondialog.cpp:104
+#: kerfuffle/extractiondialog.cpp:118
 #, fuzzy
 #| msgid "Archive Already Exists"
 msgid "Folder exists"
 msgstr "Arkib Sudah Wujud"
 
-#: kerfuffle/extractiondialog.cpp:104 part/part.cpp:337 part/part.cpp:716
+#: kerfuffle/extractiondialog.cpp:118 part/part.cpp:339 part/part.cpp:709
 msgid "Cancel"
 msgstr ""
 
-#: kerfuffle/extractiondialog.cpp:112
+#: kerfuffle/extractiondialog.cpp:127 kerfuffle/extractiondialog.cpp:133
 #, fuzzy, kde-format
 #| msgid "The folder could not be created. Please check permissions."
-msgid "The folder '%1' could not be created. Please check permissions."
+msgid "The folder <b>%1</b> could not be created."
 msgstr "Folder tidak dapat dicipta. Semak keizinan."
+
+#: kerfuffle/extractiondialog.cpp:128
+#, kde-format
+msgid "<b>%1</b> already exists, but is not a folder."
+msgstr ""
+
+#: kerfuffle/extractiondialog.cpp:134
+msgid "Please check your permissions to create it."
+msgstr ""
 
 #: kerfuffle/jobs.cpp:111
 #, fuzzy
@@ -535,7 +544,7 @@ msgstr "Buka dialog ekstrak, keluar apabila selesai"
 msgid "Show information panel"
 msgstr ""
 
-#: part/part.cpp:215
+#: part/part.cpp:217
 #, fuzzy
 #| msgctxt "to view something"
 #| msgid "&View"
@@ -543,143 +552,168 @@ msgctxt "to preview a file inside an archive"
 msgid "Pre&view"
 msgstr "&Papar"
 
-#: part/part.cpp:217
+#: part/part.cpp:219
 msgid "Click to preview the selected file"
 msgstr ""
 
-#: part/part.cpp:222
+#: part/part.cpp:224
 #, fuzzy
 #| msgid "Extract"
 msgid "E&xtract"
 msgstr "Ekstrak"
 
-#: part/part.cpp:224
+#: part/part.cpp:226
 msgid ""
 "Click to open an extraction dialog, where you can choose to extract either "
 "all files or just the selected ones"
 msgstr ""
 
-#: part/part.cpp:231
+#: part/part.cpp:233
 msgid "Add &File..."
 msgstr "Tambah &Fail..."
 
-#: part/part.cpp:232
+#: part/part.cpp:234
 #, fuzzy
 #| msgid "An error occurred while adding the files to the archive."
 msgid "Click to add files to the archive"
 msgstr "Ralat berlaku semasa menambah fail ke dalam arkib."
 
-#: part/part.cpp:238
+#: part/part.cpp:240
 #, fuzzy
 #| msgid "Add Folde&r..."
 msgid "Add Fo&lder..."
 msgstr "Tambah &Folder..."
 
-#: part/part.cpp:239
+#: part/part.cpp:241
 msgid "Click to add a folder to the archive"
 msgstr ""
 
-#: part/part.cpp:245
+#: part/part.cpp:247
 msgid "De&lete"
 msgstr "&Hapus"
 
-#: part/part.cpp:246
+#: part/part.cpp:248
 #, fuzzy
 #| msgid "Do you really want to delete the selected items?"
 msgid "Click to delete the selected files"
 msgstr "Anda benar-benar ingin hapuskan item yang dipilih?"
 
-#: part/part.cpp:267
+#: part/part.cpp:269
 #, fuzzy
 #| msgctxt "folder for opening files (used as part of a sentence)"
 #| msgid "open folder"
 msgid "Recent folders"
 msgstr "buka folder"
 
-#: part/part.cpp:271
+#: part/part.cpp:273
 #, fuzzy
 #| msgid "E&xtract..."
 msgid "Quick Extract To..."
 msgstr "&Ekstrak..."
 
-#: part/part.cpp:328
+#: part/part.cpp:330
 #, fuzzy
 #| msgid "Ark"
 msgid "ArkPart"
 msgstr "Ark"
 
-#: part/part.cpp:337
+#: part/part.cpp:339
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgid "The file '%1' already exists. Would you like to open it instead?"
 msgstr "Arkib sudah wujud. Anda ingin menulisgantinya?"
 
-#: part/part.cpp:337
+#: part/part.cpp:339
 #, fuzzy
 #| msgid "Archive Already Exists"
 msgid "File Exists"
 msgstr "Arkib Sudah Wujud"
 
-#: part/part.cpp:337
+#: part/part.cpp:339
 #, fuzzy
 #| msgid "Open with:"
 msgid "Open File"
 msgstr "Buka dengan:"
 
-#: part/part.cpp:344
+#: part/part.cpp:346
 #, kde-format
 msgid "Error opening archive: the file '%1' was not found."
 msgstr ""
 
-#: part/part.cpp:344 part/part.cpp:388 part/part.cpp:424
+#: part/part.cpp:346 part/part.cpp:390 part/part.cpp:426
 #, fuzzy
 #| msgid "Open 'archive'"
 msgid "Error Opening Archive"
 msgstr "Buka 'arkib'"
 
-#: part/part.cpp:374
+#: part/part.cpp:376
 msgid "Unable to Determine Archive Type"
 msgstr ""
 
-#: part/part.cpp:375
+#: part/part.cpp:377
 msgid ""
 "Ark was unable to determine the archive type of the filename.\n"
 "\n"
 "Please choose the correct archive type below."
 msgstr ""
 
-#: part/part.cpp:388
+#: part/part.cpp:390
 #, kde-format
 msgid ""
 "Ark was not able to open the archive '%1'. No library capable of handling "
 "the file was found."
 msgstr ""
 
-#: part/part.cpp:424
+#: part/part.cpp:426
 #, kde-format
 msgid "Reading the archive '%1' failed with the error '%2'"
 msgstr ""
 
-#: part/part.cpp:681
+#: part/part.cpp:674
 #, fuzzy
 #| msgid "All Files"
 msgid "Add Files"
 msgstr "Semua Fail"
 
-#: part/part.cpp:689
+#: part/part.cpp:682
 #, fuzzy
 #| msgid "Add Folde&r..."
 msgid "Add Folder"
 msgstr "Tambah &Folder..."
 
-#: part/part.cpp:716
+#: part/part.cpp:709
 msgid "Deleting these files is not undoable. Are you sure you want to do this?"
 msgstr ""
 
-#: part/part.cpp:716
+#: part/part.cpp:709
 #, fuzzy
 msgid "Delete files"
 msgstr "Fail yang dipilih"
+
+#: part/part.cpp:750
+#, fuzzy, kde-format
+#| msgid "Archive already exists. Do you wish to overwrite it?"
+msgid ""
+"A file named <b>%1</b> already exists. Are you sure you want to overwrite it?"
+msgstr "Arkib sudah wujud. Anda ingin menulisgantinya?"
+
+#: part/part.cpp:752
+msgid "Overwrite"
+msgstr ""
+
+#: part/part.cpp:764
+#, kde-format
+msgid ""
+"The file <b>%1</b> cannot be copied to the specified location. The archive "
+"does not exist anymore."
+msgstr ""
+
+#: part/part.cpp:776
+#, kde-format
+msgid ""
+"The archive could not be saved as <b>%1</b>. Try to save it in another "
+"location."
+msgstr ""
 
 #: plugins/bk/bkplugin.cpp:72
 #, fuzzy, kde-format
@@ -808,31 +842,31 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "opensource@mimos.my"
 
-#. i18n: file: app/arkui.rc:4
-#. i18n: ectx: Menu (file)
-#: rc.cpp:5
-#, fuzzy
-msgid "&File"
-msgstr "&Folder"
-
-#. i18n: file: app/arkui.rc:10
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:8
-#, fuzzy
-msgid "&Settings"
-msgstr "Seting"
-
-#. i18n: file: app/arkui.rc:16
+#. i18n: file: app/arkui.rc:13
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:11
+#: rc.cpp:5
 msgid "Main Toolbar"
 msgstr ""
 
 #. i18n: file: part/ark_part.rc:5
+#. i18n: ectx: Menu (file)
+#: rc.cpp:8
+#, fuzzy
+msgid "&File"
+msgstr "&Folder"
+
+#. i18n: file: part/ark_part.rc:9
 #. i18n: ectx: Menu (action)
-#: rc.cpp:14
+#: rc.cpp:11
 msgid "&Action"
 msgstr "&Tindakan"
+
+#. i18n: file: part/ark_part.rc:17
+#. i18n: ectx: Menu (settings)
+#: rc.cpp:14
+#, fuzzy
+msgid "&Settings"
+msgstr "Seting"
 
 #. i18n: file: part/infopanel.ui:19
 #. i18n: ectx: property (windowTitle), widget (QWidget, InformationPanel)
@@ -969,13 +1003,19 @@ msgstr "Fail yang dipilih"
 msgid "All &files"
 msgstr "Semua Fail"
 
-#. i18n: file: part/ark.kcfg:9
+#. i18n: file: kerfuffle/ark.kcfg:9
 #. i18n: ectx: label, entry (openDestinationFolderAfterExtraction), group (Extraction)
 #: rc.cpp:81
 #, fuzzy
 #| msgid "Open destination folder after extraction"
 msgid "Open destination folder after extraction"
 msgstr "Buka folder destinasi selepas pengekstrakan"
+
+#. i18n: file: kerfuffle/ark.kcfg:13
+#. i18n: ectx: label, entry (preservePaths), group (Extraction)
+#: rc.cpp:84
+msgid "Preserve paths when extracting"
+msgstr ""
 
 #, fuzzy
 #~| msgid "An error occurred while extracting the archive."
