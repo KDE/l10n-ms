@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-11 12:51+0200\n"
+"POT-Creation-Date: 2009-08-11 06:30+0200\n"
 "PO-Revision-Date: 2005-11-15 03:11+0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "could not execute [%1]"
 msgstr "tidak dapat laksana  [%s]"
 
-#: disks.cpp:282
+#: disks.cpp:278
 #, kde-format
 msgid ""
 "Called: %1\n"
@@ -30,7 +30,7 @@ msgstr ""
 "Telah panggil:%1\n"
 "\n"
 
-#: disks.cpp:303
+#: disks.cpp:299
 #, kde-format
 msgid "could not execute %1"
 msgstr "tidak dapat laksana %1"
@@ -113,52 +113,35 @@ msgctxt "Usage graphical bar"
 msgid "Usage"
 msgstr "Kegunaan"
 
-#: kdfconfig.cpp:98 kdfconfig.cpp:247
+#: kdfconfig.cpp:88 kdfconfig.cpp:191
 #, fuzzy
 #| msgid "visible"
 msgctxt "Visible items on device information columns (enable|disable)"
 msgid "visible"
 msgstr "dapat dilihat"
 
-#: kdfconfig.cpp:104
-msgid "Update frequency [seconds]. The value 0 disables update"
-msgstr "Frekuensi kemas kini [saat]. Nilai 0 menyahaktifkan kemas kini"
-
-#: kdfconfig.cpp:132
-#, c-format
-msgid "File manager (e.g. konsole -e mc %m):"
-msgstr "Pengurus fail (contohnya, konsol -e mc %m]:"
-
-#: kdfconfig.cpp:145
-msgid "Open file manager automatically on mount"
-msgstr "Buka fail pengurus secara automatik pada lekap"
-
-#: kdfconfig.cpp:150
-msgid "Pop up a window when a disk gets critically full"
-msgstr "Popup tetingkap apabila cakera terlalu penuh"
-
-#: kdfconfig.cpp:226
+#: kdfconfig.cpp:171
 #, fuzzy
 #| msgid "visible"
 msgctxt "Are items on device information columns visible?"
 msgid "visible"
 msgstr "dapat dilihat"
 
-#: kdfconfig.cpp:227
+#: kdfconfig.cpp:172
 #, fuzzy
 #| msgid "hidden"
 msgctxt "Are items on device information columns hidden?"
 msgid "hidden"
 msgstr "tersembunyi"
 
-#: kdfconfig.cpp:264
+#: kdfconfig.cpp:208
 #, fuzzy
 #| msgid "hidden"
 msgctxt "Device information item is hidden"
 msgid "hidden"
 msgstr "tersembunyi"
 
-#: kdfconfig.cpp:265
+#: kdfconfig.cpp:209
 #, fuzzy
 #| msgid "visible"
 msgctxt "Device information item is visible"
@@ -286,78 +269,41 @@ msgstr ""
 msgid "KDE 3 changes"
 msgstr "Perubahan KDE 3"
 
-#: mntconfig.cpp:76 mntconfig.cpp:84
+#: mntconfig.cpp:70 mntconfig.cpp:75
 msgid "Device"
 msgstr "Peranti"
 
-#: mntconfig.cpp:77 mntconfig.cpp:86
+#: mntconfig.cpp:71 mntconfig.cpp:77
 msgid "Mount Point"
 msgstr "Titik Lekap"
 
-#: mntconfig.cpp:77
+#: mntconfig.cpp:71
 msgid "Mount Command"
 msgstr "Arahan Lekap"
 
-#: mntconfig.cpp:77
+#: mntconfig.cpp:71
 msgid "Unmount Command"
 msgstr "Arahan Nyahlekap"
 
-#: mntconfig.cpp:85
+#: mntconfig.cpp:76
 #, fuzzy
 #| msgid "None"
 msgctxt "No device is selected"
 msgid "None"
 msgstr "Tiada"
 
-#: mntconfig.cpp:87
+#: mntconfig.cpp:78
 #, fuzzy
 #| msgid "None"
 msgctxt "No mount point is selected"
 msgid "None"
 msgstr "Tiada"
 
-#: mntconfig.cpp:118
-msgid "Default Icon"
-msgstr ""
-
-#: mntconfig.cpp:122
-#, fuzzy
-#| msgid "Icon"
-msgid "Icon name:"
-msgstr "Ikon"
-
-#: mntconfig.cpp:137 mntconfig.cpp:157
-#, fuzzy
-#| msgid "Get Mount Command"
-msgid "Get Command..."
-msgstr "Dapatkan Perintah Lekap"
-
-#: mntconfig.cpp:142
-#, fuzzy
-#| msgid "Mount Command"
-msgid "Mount command:"
-msgstr "Arahan Lekap"
-
-#: mntconfig.cpp:162
-#, fuzzy
-#| msgid "Unmount Command"
-msgid "Unmount command:"
-msgstr "Arahan Nyahlekap"
-
-#: mntconfig.cpp:295
-#, kde-format
-msgid ""
-"This filename is not valid: %1\n"
-"It must end with \"_mount\" or \"_unmount\"."
-msgstr ""
-"Nama fail ini tak sah: %1\n"
-"Nama ini mesti diakhiri dengan \"_lekap\" atau \"_nyahlekap\"."
-
-#: mntconfig.cpp:340
+#: mntconfig.cpp:262
 msgid "Only local files supported."
 msgstr "Hanya fail setempat disokong."
 
-#: mntconfig.cpp:356
+#: mntconfig.cpp:278
 msgid "Only local files are currently supported."
 msgstr "Hanya fail setempat yang disokong pada masa ini."
 
@@ -373,21 +319,118 @@ msgstr "Seting Umum"
 msgid "Mount Commands"
 msgstr "Arahan Lekap"
 
+#. i18n: file: kdfconfig.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, KDFConfigWidget)
+#: rc.cpp:3
+msgid "Form"
+msgstr ""
+
+#. i18n: file: kdfconfig.ui:38
+#. i18n: ectx: property (text), widget (QLabel, updateLabel)
+#: rc.cpp:7
+msgid "Update frequency:"
+msgstr ""
+
+#. i18n: file: kdfconfig.ui:45
+#. i18n: ectx: property (suffix), widget (QSpinBox, m_updateSpinBox)
+#: rc.cpp:10
+msgid " sec"
+msgstr ""
+
+#. i18n: file: kdfconfig.ui:58
+#. i18n: ectx: property (text), widget (QCheckBox, mOpenMountCheck)
+#: rc.cpp:13
+msgid "Open file manager automatically on mount"
+msgstr "Buka fail pengurus secara automatik pada lekap"
+
+#. i18n: file: kdfconfig.ui:65
+#. i18n: ectx: property (text), widget (QCheckBox, mPopupFullCheck)
+#: rc.cpp:16
+msgid "Pop up a window when a disk gets critically full"
+msgstr "Popup tetingkap apabila cakera terlalu penuh"
+
+#. i18n: file: kdfconfig.ui:72
+#. i18n: ectx: property (text), widget (QLabel, fileManagerEdit)
+#: rc.cpp:20
+#, no-c-format
+msgid "File manager (e.g. konsole -e mc %m):"
+msgstr "Pengurus fail (contohnya, konsol -e mc %m]:"
+
 #. i18n: file: kdfui.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:3
+#: rc.cpp:23
 msgid "&File"
 msgstr ""
 
-#: rc.cpp:4
+#. i18n: file: mntconfig.ui:20
+#. i18n: ectx: property (text), widget (QLabel, iconNameLabel)
+#: rc.cpp:26
+#, fuzzy
+#| msgid "Icon"
+msgid "Icon name:"
+msgstr "Ikon"
+
+#. i18n: file: mntconfig.ui:30
+#. i18n: ectx: property (text), widget (QLabel, mountLabel)
+#: rc.cpp:29
+#, fuzzy
+#| msgid "Mount Command"
+msgid "Mount Command:"
+msgstr "Arahan Lekap"
+
+#. i18n: file: mntconfig.ui:40
+#. i18n: ectx: property (text), widget (QLabel, umountLabel)
+#: rc.cpp:32
+#, fuzzy
+#| msgid "Unmount Command"
+msgid "Unmount Command:"
+msgstr "Arahan Nyahlekap"
+
+#. i18n: file: mntconfig.ui:50
+#. i18n: ectx: property (text), widget (QPushButton, mDefaultIconButton)
+#: rc.cpp:35
+msgid "Default Icon"
+msgstr ""
+
+#. i18n: file: mntconfig.ui:57
+#. i18n: ectx: property (text), widget (QPushButton, mMountButton)
+#. i18n: file: mntconfig.ui:64
+#. i18n: ectx: property (text), widget (QPushButton, mUmountButton)
+#: rc.cpp:38 rc.cpp:41
+#, fuzzy
+#| msgid "Get Mount Command"
+msgid "Get Command..."
+msgstr "Dapatkan Perintah Lekap"
+
+#: rc.cpp:42
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "MIMOS"
 
-#: rc.cpp:5
+#: rc.cpp:43
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "opensource@mimos.my"
+
+#~ msgid "Update frequency [seconds]. The value 0 disables update"
+#~ msgstr "Frekuensi kemas kini [saat]. Nilai 0 menyahaktifkan kemas kini"
+
+#, fuzzy
+#~| msgid "Mount Command"
+#~ msgid "Mount command:"
+#~ msgstr "Arahan Lekap"
+
+#, fuzzy
+#~| msgid "Unmount Command"
+#~ msgid "Unmount command:"
+#~ msgstr "Arahan Nyahlekap"
+
+#~ msgid ""
+#~ "This filename is not valid: %1\n"
+#~ "It must end with \"_mount\" or \"_unmount\"."
+#~ msgstr ""
+#~ "Nama fail ini tak sah: %1\n"
+#~ "Nama ini mesti diakhiri dengan \"_lekap\" atau \"_nyahlekap\"."
 
 #, fuzzy
 #~| msgid "Icon"
