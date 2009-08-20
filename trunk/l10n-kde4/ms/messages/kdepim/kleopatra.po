@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-06 06:22+0200\n"
+"POT-Creation-Date: 2009-08-20 06:14+0200\n"
 "PO-Revision-Date: 2008-11-24 22:51+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -429,9 +429,9 @@ msgstr[1] ""
 
 #: dialogs/deletecertificatesdialog.cpp:218
 #, fuzzy
-#| msgid "Secret Key Export"
-msgid "Secret Key Deletion"
-msgstr "Pengeksportan Kekunci Rahsia"
+#| msgid "Certificate Deletion Failed"
+msgid "Secret Certificate Deletion"
+msgstr "Gagal Menghapuskan Sijil"
 
 #: dialogs/certificateselectiondialog.cpp:110
 msgid "Please select one or more of the following certificates:"
@@ -807,18 +807,22 @@ msgid "FlatKeyListModel Test"
 msgstr ""
 
 #: tests/test_keylistmodels.cpp:94
-msgid "Perform flat key listing"
-msgstr ""
+#, fuzzy
+#| msgid "&Certificates"
+msgid "Perform flat certificate listing"
+msgstr "&Sijil"
 
 #: tests/test_keylistmodels.cpp:95
 #, fuzzy
 #| msgid "Hierarchical Key List"
-msgid "Perform hierarchical key listing"
+msgid "Perform hierarchical certificate listing"
 msgstr "Senarai Kekunci Berhierarki"
 
 #: tests/test_keylistmodels.cpp:96
-msgid "Do not list SMIME keys"
-msgstr ""
+#, fuzzy
+#| msgid "ASCII Armored Certificate Bundles (*.pem)"
+msgid "Do not list SMIME certificates"
+msgstr "Berkas Sijil  Berperisai ASCII  (*.pem)"
 
 #: utils/formatting.cpp:205 utils/formatting.cpp:208
 #, fuzzy, kde-format
@@ -828,7 +832,7 @@ msgstr "<tr><td jajar=\"kanan\">%1</td><td>%2</td></tr>"
 
 #: utils/formatting.cpp:217
 #, kde-format
-msgid "%1-bit %2 (secret key available)"
+msgid "%1-bit %2 (secret certificate available)"
 msgstr ""
 
 #: utils/formatting.cpp:219
@@ -1030,8 +1034,10 @@ msgid "good"
 msgstr ""
 
 #: utils/formatting.cpp:468
-msgid "key expired"
-msgstr ""
+#, fuzzy
+#| msgid "Deleting CA Certificates"
+msgid "certificate expired"
+msgstr "Menghapuskan sijil PBP"
 
 #: utils/formatting.cpp:469
 msgctxt "fake/invalid signature"
@@ -1048,13 +1054,14 @@ msgstr "%1 (%2):"
 
 #: utils/formatting.cpp:528
 #, kde-format
-msgid "Bad signature by unknown key %1: %2"
+msgid "Bad signature by unknown certificate %1: %2"
 msgstr ""
 
 #: utils/formatting.cpp:530
-#, kde-format
-msgid "Bad signature by an unknown key: %1"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Could not generate certificate: %1"
+msgid "Bad signature by an unknown certificate: %1"
+msgstr "Tidak dapat menjana sijil: %1"
 
 #: utils/formatting.cpp:532
 #, kde-format
@@ -1062,13 +1069,16 @@ msgid "Bad signature by %1: %2"
 msgstr ""
 
 #: utils/formatting.cpp:537
-#, kde-format
-msgid "Good signature by unknown key %1."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Deleting CA Certificates"
+msgid "Good signature by unknown certificate %1."
+msgstr "Menghapuskan sijil PBP"
 
 #: utils/formatting.cpp:539
-msgid "Good signature by an unknown key."
-msgstr ""
+#, fuzzy
+#| msgid "Delete Certificates"
+msgid "Good signature by an unknown certificate."
+msgstr "Hapuskan Sijil"
 
 #: utils/formatting.cpp:541
 #, kde-format
@@ -1077,13 +1087,14 @@ msgstr ""
 
 #: utils/formatting.cpp:546
 #, kde-format
-msgid "Invalid signature by unknown key %1: %2"
+msgid "Invalid signature by unknown certificate %1: %2"
 msgstr ""
 
 #: utils/formatting.cpp:548
-#, kde-format
-msgid "Invalid signature by an unknown key: %1"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Could not generate certificate: %1"
+msgid "Invalid signature by an unknown certificate: %1"
+msgstr "Tidak dapat menjana sijil: %1"
 
 #: utils/formatting.cpp:550
 #, kde-format
@@ -2073,7 +2084,7 @@ msgid "Signing certificate expired"
 msgstr "Menghapuskan sijil PBP"
 
 #: crypto/decryptverifytask.cpp:177
-msgid "No public key to verify the signature"
+msgid "No public certificate to verify the signature"
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:179
@@ -2081,8 +2092,10 @@ msgid "Signature expired"
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:181
-msgid "Key missing"
-msgstr ""
+#, fuzzy
+#| msgid "Certificate Usage"
+msgid "Certificate missing"
+msgstr "Penggunaan Sijil"
 
 #: crypto/decryptverifytask.cpp:183
 msgid "CRL missing"
@@ -2132,18 +2145,22 @@ msgid "The signature is valid but the certificate's validity is undefined."
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:225 crypto/decryptverifytask.cpp:231
-msgid "Unknown key"
-msgstr ""
+#, fuzzy
+#| msgid "Deleting CA Certificates"
+msgid "Unknown certificate"
+msgstr "Menghapuskan sijil PBP"
 
 #: crypto/decryptverifytask.cpp:250
-#, kde-format
-msgid "Signed on %1 with unknown key %2."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Deleting CA Certificates"
+msgid "Signed on %1 with unknown certificate %2."
+msgstr "Menghapuskan sijil PBP"
 
 #: crypto/decryptverifytask.cpp:252
-#, kde-format
-msgid "Signed with unknown key %1."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Deleting CA Certificates"
+msgid "Signed with unknown certificate %1."
+msgstr "Menghapuskan sijil PBP"
 
 #: crypto/decryptverifytask.cpp:257
 #, kde-format
@@ -2152,19 +2169,22 @@ msgid "Signed on %1 by %2 (Key ID: %3)."
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:262
-#, kde-format
-msgid "Signed by %1 with key %2."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Deleting CA Certificates"
+msgid "Signed by %1 with certificate %2."
+msgstr "Menghapuskan sijil PBP"
 
 #: crypto/decryptverifytask.cpp:265
-#, kde-format
-msgid "Signed on %1 with key %2."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Deleting CA Certificates"
+msgid "Signed on %1 with certificate %2."
+msgstr "Menghapuskan sijil PBP"
 
 #: crypto/decryptverifytask.cpp:266
-#, kde-format
-msgid "Signed with key %1."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Deleting CA Certificates"
+msgid "Signed with certificate %1."
+msgstr "Menghapuskan sijil PBP"
 
 #: crypto/decryptverifytask.cpp:371
 #, fuzzy
@@ -2742,8 +2762,9 @@ msgstr ""
 #| "%1"
 msgctxt "@info"
 msgid ""
-"<para>An error occurred while trying to learn the smart card's keys.</para> "
-"<para>The output from <command>%1</command> was: <message>%2</message></para>"
+"<para>An error occurred while trying to learn the smart card's certificates."
+"</para> <para>The output from <command>%1</command> was: <message>%2</"
+"message></para>"
 msgstr ""
 "Ralat berlaku semasa cuba mengosongkan fail  CRL. Output dari  DirMngr "
 "adalah:\n"
@@ -2752,7 +2773,7 @@ msgstr ""
 #: commands/learncardkeyscommand.cpp:94
 #, fuzzy
 #| msgid "Secret keys imported:"
-msgid "Smart card keys successfully learned."
+msgid "Smart card certificates successfully learned."
 msgstr "Kekunci rahsia telah diimport:"
 
 #: commands/adduseridcommand.cpp:212
@@ -2800,7 +2821,7 @@ msgstr "Eksport Sijil..."
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Failed to search on keyserver. The error returned was:\n"
+"Failed to search on certificate server. The error returned was:\n"
 "%1"
 msgstr ""
 
@@ -2849,17 +2870,17 @@ msgstr ""
 
 #: commands/exportsecretkeycommand.cpp:129
 #, fuzzy
-#| msgid "Secret Key Export"
+#| msgid "Certificate Manager Error"
 msgctxt "@title:window"
-msgid "Secret Key Export Error"
-msgstr "Pengeksportan Kekunci Rahsia"
+msgid "Secret Certificate Export Error"
+msgstr "Ralat Pengurus Sijil"
 
 #: commands/exportsecretkeycommand.cpp:133
 #, fuzzy
-#| msgid "Secret-Key Export Failed"
+#| msgid "Certificate Request Options"
 msgctxt "@title:window"
-msgid "Secret Key Export Finished"
-msgstr "Gagal Mengekspot Kekunci Rahsia"
+msgid "Secret Certificate Export Finished"
+msgstr "Opsyen Permohonan Sijil"
 
 #: commands/exportsecretkeycommand.cpp:138
 #, fuzzy, kde-format
@@ -2868,9 +2889,9 @@ msgstr "Gagal Mengekspot Kekunci Rahsia"
 #| "because of an unexpected error."
 msgctxt "@info"
 msgid ""
-"<para>The GPG or GpgSM process that tried to export the secret key ended "
-"prematurely because of an unexpected error.</para><para>Please check the "
-"output of <icode>%1</icode> for details.</para>"
+"<para>The GPG or GpgSM process that tried to export the secret certificate "
+"ended prematurely because of an unexpected error.</para><para>Please check "
+"the output of <icode>%1</icode> for details.</para>"
 msgstr ""
 "Proses cubaan DirMngr untuk mengosongkan cache CRL tamat separuh jalan "
 "kerana ralat yang tak dijangka."
@@ -2883,8 +2904,9 @@ msgstr ""
 #| "%1"
 msgctxt "@info"
 msgid ""
-"<para>An error occurred while trying to export the secret key.</para> "
-"<para>The output from <command>%1</command> was: <message>%2</message></para>"
+"<para>An error occurred while trying to export the secret certificate.</"
+"para> <para>The output from <command>%1</command> was: <message>%2</"
+"message></para>"
 msgstr ""
 "Ralat berlaku semasa cuba mengosongkan fail  CRL. Output dari  DirMngr "
 "adalah:\n"
@@ -2894,7 +2916,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Secret keys imported:"
 msgctxt "@info"
-msgid "Secret key successfully exported."
+msgid "Secret certificate successfully exported."
 msgstr "Kekunci rahsia telah diimport:"
 
 #: commands/encryptclipboardcommand.cpp:146
@@ -2988,19 +3010,27 @@ msgid "Unchanged:"
 msgstr "Tidak diubah:"
 
 #: commands/importcertificatescommand.cpp:271
-msgid "Secret keys processed:"
+#, fuzzy
+#| msgid "Secret keys processed:"
+msgid "Secret certificates processed:"
 msgstr "Kekunci rahsia telah diproses:"
 
 #: commands/importcertificatescommand.cpp:274
-msgid "Secret keys imported:"
+#, fuzzy
+#| msgid "Secret keys imported:"
+msgid "Secret certificates imported:"
 msgstr "Kekunci rahsia telah diimport:"
 
 #: commands/importcertificatescommand.cpp:278
-msgid "Secret keys <em>not</em> imported:"
+#, fuzzy
+#| msgid "Secret keys <em>not</em> imported:"
+msgid "Secret certificates <em>not</em> imported:"
 msgstr "Kekunci rahsia <em>tidak</em> diimport:"
 
 #: commands/importcertificatescommand.cpp:281
-msgid "Secret keys unchanged:"
+#, fuzzy
+#| msgid "Secret keys unchanged:"
+msgid "Secret certificates unchanged:"
 msgstr "Kekunci rahsia tidak diubah:"
 
 #: commands/importcertificatescommand.cpp:294
@@ -3845,20 +3875,28 @@ msgid ""
 msgstr ""
 
 #: models/keycache.cpp:902
-msgid "Listing public X.509 keys"
-msgstr ""
+#, fuzzy
+#| msgid "&Certificates"
+msgid "Listing public X.509 certificates"
+msgstr "&Sijil"
 
 #: models/keycache.cpp:902
-msgid "Listing private X.509 keys"
-msgstr ""
+#, fuzzy
+#| msgid "&Certificates"
+msgid "Listing private X.509 certificates"
+msgstr "&Sijil"
 
 #: models/keycache.cpp:903
-msgid "Listing public OpenPGP keys"
-msgstr ""
+#, fuzzy
+#| msgid "Certificate Manager Error"
+msgid "Listing public OpenPGP certificates"
+msgstr "Ralat Pengurus Sijil"
 
 #: models/keycache.cpp:903
-msgid "Listing private OpenPGP keys"
-msgstr ""
+#, fuzzy
+#| msgid "&Certificates"
+msgid "Listing private OpenPGP certificates"
+msgstr "&Sijil"
 
 #: models/keylistmodel.cpp:248 models/useridlistmodel.cpp:249
 #: newcertificatewizard/newcertificatewizard.cpp:921
@@ -4504,9 +4542,9 @@ msgstr ""
 #. i18n: ectx: property (windowTitle), widget (QDialog, ExportSecretKeyDialog)
 #: rc.cpp:261
 #, fuzzy
-#| msgid "Export Secret Key..."
-msgid "Export Secret Key"
-msgstr "Eksport Kekunci Rahsia..."
+#| msgid "Export Certificates..."
+msgid "Export Secret Certificate"
+msgstr "Eksport Sijil..."
 
 #. i18n: file: dialogs/exportsecretkeydialog.ui:26
 #. i18n: ectx: property (text), widget (QLabel, outputFileLB)
@@ -4531,7 +4569,7 @@ msgstr ""
 #: rc.cpp:273
 #, fuzzy
 #| msgid "Delete Certificates"
-msgid "Keyserver Certificate Lookup"
+msgid "Certificateserver Certificate Lookup"
 msgstr "Hapuskan Sijil"
 
 #. i18n: file: dialogs/lookupcertificatesdialog.ui:24
@@ -4583,7 +4621,7 @@ msgstr ""
 #. i18n: file: dialogs/certificationoptionswidget.ui:30
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: rc.cpp:297
-msgid "Choose which of your keys to sign with:"
+msgid "Choose which of your certificates to sign with:"
 msgstr ""
 
 #. i18n: file: dialogs/certificationoptionswidget.ui:60
@@ -4721,8 +4759,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:358
 msgid ""
-"<b>Step 2:</b> How thoroughly have you checked that this key actually "
-"belongs to the person it claims it is from?"
+"<b>Step 2:</b> How thoroughly have you checked that this certificate "
+"actually belongs to the person it claims it is from?"
 msgstr ""
 
 #. i18n: file: dialogs/selectchecklevelwidget.ui:26
@@ -4748,8 +4786,8 @@ msgstr ""
 #: rc.cpp:370
 msgid ""
 "Choose this if you know the person, and have asked them whether this was "
-"their key, but you have not verified they are actually in possession of the "
-"secret key."
+"their certificate, but you have not verified they are actually in possession "
+"of the secret certificate."
 msgstr ""
 
 #. i18n: file: dialogs/selectchecklevelwidget.ui:98
@@ -6213,7 +6251,9 @@ msgid "Michel Boyer de la Giroday"
 msgstr ""
 
 #: aboutdata.cpp:68
-msgid "Key-state dependant colors and fonts in the key list"
+#, fuzzy
+#| msgid "Key-state dependant colors and fonts in the key list"
+msgid "Key-state dependant colors and fonts in the certificates list"
 msgstr ""
 "Fon dan warna yang bergantung pada keadaan kekunci dalam senarai kekunci"
 
@@ -6587,8 +6627,10 @@ msgid "Export Certificates to Server..."
 msgstr "Eksport Sijil..."
 
 #: mainwindow.cpp:400
-msgid "Export Secret Key..."
-msgstr "Eksport Kekunci Rahsia..."
+#, fuzzy
+#| msgid "Export Certificates..."
+msgid "Export Secret Certificate..."
+msgstr "Eksport Sijil..."
 
 #: mainwindow.cpp:402
 #, fuzzy
@@ -6757,6 +6799,31 @@ msgstr "Ralat Pengurus Sijil"
 #: crlview.cpp:145
 msgid "The GpgSM process ended prematurely because of an unexpected error."
 msgstr "Proses  GpgSM tamat separuh jalan kerana ralat yang tak dijangka."
+
+#, fuzzy
+#~| msgid "Secret Key Export"
+#~ msgid "Secret Key Deletion"
+#~ msgstr "Pengeksportan Kekunci Rahsia"
+
+#, fuzzy
+#~| msgid "Secret Key Export"
+#~ msgctxt "@title:window"
+#~ msgid "Secret Key Export Error"
+#~ msgstr "Pengeksportan Kekunci Rahsia"
+
+#, fuzzy
+#~| msgid "Secret-Key Export Failed"
+#~ msgctxt "@title:window"
+#~ msgid "Secret Key Export Finished"
+#~ msgstr "Gagal Mengekspot Kekunci Rahsia"
+
+#, fuzzy
+#~| msgid "Export Secret Key..."
+#~ msgid "Export Secret Key"
+#~ msgstr "Eksport Kekunci Rahsia..."
+
+#~ msgid "Export Secret Key..."
+#~ msgstr "Eksport Kekunci Rahsia..."
 
 #, fuzzy
 #~| msgid "Certificate Download Failed"
