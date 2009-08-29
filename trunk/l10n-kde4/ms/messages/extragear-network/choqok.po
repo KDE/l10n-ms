@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: choqok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-27 07:22+0200\n"
+"POT-Creation-Date: 2009-08-29 07:31+0200\n"
 "PO-Revision-Date: 2009-06-05 01:26+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -61,7 +61,7 @@ msgid "Private messages you have sent"
 msgstr ""
 
 #: helperlibs/twitterapihelper/twitterapimicroblog.cpp:121
-msgid "Send Private Message"
+msgid "Send Private Message..."
 msgstr ""
 
 #: helperlibs/twitterapihelper/twitterapimicroblog.cpp:303
@@ -121,19 +121,23 @@ msgstr "Jawapan"
 msgid "in reply to"
 msgstr ""
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:72
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:54
+msgid "Send Private Message"
+msgstr ""
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:74
 msgid "To:"
 msgstr ""
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:76
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:79
 msgid "Reload friends list"
 msgstr ""
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:102
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:105
 msgid "Please wait..."
 msgstr ""
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:147
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:150
 msgid "Private message sent successfully"
 msgstr ""
 
@@ -264,6 +268,11 @@ msgstr ""
 msgid "Appearance"
 msgstr "Rupa"
 
+#: choqok/config/plugins/choqokpluginconfig.cpp:60
+#, fuzzy
+msgid "General Plugins"
+msgstr "Umum"
+
 #: choqok/systrayicon.cpp:73
 #, kde-format
 msgid "Choqok - 1 unread post"
@@ -340,13 +349,18 @@ msgid "File"
 msgstr "Fail"
 
 #. i18n: file: choqok/choqokui.rc:11
-#. i18n: ectx: Menu (accounts)
-#: rc.cpp:8
-#, fuzzy
-msgid "Accounts"
-msgstr "Akaun"
+#. i18n: ectx: Menu (tools)
+#. i18n: file: plugins/nowlistening/nowlisteningui.rc:4
+#. i18n: ectx: Menu (tools)
+#. i18n: file: choqok/choqokui.rc:11
+#. i18n: ectx: Menu (tools)
+#. i18n: file: plugins/nowlistening/nowlisteningui.rc:4
+#. i18n: ectx: Menu (tools)
+#: rc.cpp:8 rc.cpp:238
+msgid "Tools"
+msgstr ""
 
-#. i18n: file: choqok/choqokui.rc:14
+#. i18n: file: choqok/choqokui.rc:13
 #. i18n: ectx: Menu (settings)
 #: rc.cpp:11
 #, fuzzy
@@ -825,6 +839,11 @@ msgstr ""
 msgid "Laconica MicroBlog"
 msgstr ""
 
+#: plugins/nowlistening/nowlistening.cpp:36
+#: plugins/nowlistening/nowlistening.cpp:42
+msgid "Now Listening"
+msgstr ""
+
 #: plugins/shorteners/digg/digg.cpp:35
 msgid "Digg.com Shortener"
 msgstr ""
@@ -846,51 +865,55 @@ msgstr ""
 msgid "Abort"
 msgstr ""
 
-#: libchoqok/ui/postwidget.cpp:125
+#: libchoqok/ui/postwidget.cpp:131
 msgctxt "@info:tooltip"
 msgid "ReSend"
 msgstr ""
 
-#: libchoqok/ui/postwidget.cpp:129
+#: libchoqok/ui/postwidget.cpp:135
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Remove"
 msgstr "Buang"
 
-#: libchoqok/ui/postwidget.cpp:305
+#: libchoqok/ui/postwidget.cpp:308
 msgid "Just now"
 msgstr ""
 
-#: libchoqok/ui/postwidget.cpp:310
+#: libchoqok/ui/postwidget.cpp:313
 #, kde-format
 msgid "1 sec ago"
 msgid_plural "%1 secs ago"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libchoqok/ui/postwidget.cpp:316
+#: libchoqok/ui/postwidget.cpp:319
 #, kde-format
 msgid "1 min ago"
 msgid_plural "%1 mins ago"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libchoqok/ui/postwidget.cpp:322
+#: libchoqok/ui/postwidget.cpp:325
 #, kde-format
 msgid "1 hour ago"
 msgid_plural "%1 hours ago"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libchoqok/ui/postwidget.cpp:327
+#: libchoqok/ui/postwidget.cpp:330
 #, kde-format
 msgid "1 day ago"
 msgid_plural "%1 days ago"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libchoqok/ui/postwidget.cpp:332
+#: libchoqok/ui/postwidget.cpp:335
 msgid "Are you sure to remove this post from server?"
+msgstr ""
+
+#: libchoqok/ui/postwidget.cpp:420
+msgid "Copy Post Text"
 msgstr ""
 
 #: libchoqok/ui/timelinewidget.cpp:164 libchoqok/ui/microblogwidget.cpp:209
@@ -971,6 +994,10 @@ msgid ""
 "An account with this alias already exists: a unique alias has to be "
 "specified."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Accounts"
+#~ msgstr "Akaun"
 
 #, fuzzy
 #~ msgid "Manage Accounts"
