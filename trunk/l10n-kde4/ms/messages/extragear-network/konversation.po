@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-04 07:06+0200\n"
+"POT-Creation-Date: 2009-09-05 07:00+0200\n"
 "PO-Revision-Date: 2008-02-22 22:30+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -185,8 +185,8 @@ msgstr "Fail %s tidak dijumpai"
 msgid "Established DCC Chat connection to %1."
 msgstr ""
 
-#: src/dcc/chat.cpp:247 src/dcc/chat.cpp:364 src/irc/outputfilter.cpp:1449
-#: src/irc/outputfilter.cpp:1788 src/irc/inputfilter.cpp:1148
+#: src/dcc/chat.cpp:247 src/dcc/chat.cpp:364 src/irc/outputfilter.cpp:1512
+#: src/irc/outputfilter.cpp:1876 src/irc/inputfilter.cpp:1148
 #: src/irc/inputfilter.cpp:1152 src/irc/inputfilter.cpp:1165
 #: src/irc/inputfilter.cpp:1236 src/irc/inputfilter.cpp:1407
 #: src/irc/inputfilter.cpp:1972 src/irc/inputfilter.cpp:1993
@@ -198,14 +198,14 @@ msgstr ""
 msgid "Error"
 msgstr ""
 
-#: src/dcc/chat.cpp:247
+#: src/dcc/chat.cpp:247 src/dcc/transfersend.cpp:515
 #, fuzzy, kde-format
-msgid "Connection broken, error (%1) %2."
-msgstr "Gagal untuk mencari seksyen: %s"
+msgid "Socket error: %1"
+msgstr "Ralat KMail"
 
 #. i18n: file: src/config/ignore_configui.ui:83
 #. i18n: ectx: property (text), widget (QCheckBox, chkCTCP)
-#: src/dcc/chat.cpp:285 src/irc/outputfilter.cpp:803
+#: src/dcc/chat.cpp:285 src/irc/outputfilter.cpp:829
 #: src/irc/inputfilter.cpp:269 src/irc/inputfilter.cpp:276
 #: src/irc/inputfilter.cpp:292 src/irc/inputfilter.cpp:299
 #: src/irc/inputfilter.cpp:431 src/irc/inputfilter.cpp:439
@@ -285,11 +285,6 @@ msgstr ""
 #, fuzzy
 msgid "Could not accept the connection (socket error.)"
 msgstr "Tak dapat membuka fail %s."
-
-#: src/dcc/transfersend.cpp:515
-#, fuzzy, kde-format
-msgid "Socket error: %1"
-msgstr "Ralat KMail"
 
 #: src/dcc/transfersend.cpp:537 src/dcc/transferrecv.cpp:748
 msgid "Timed out"
@@ -884,8 +879,8 @@ msgstr "Bahasa Antaramuka Pengguna"
 msgid "Kick / Ban"
 msgstr ""
 
-#: src/irc/nicklistview.cpp:165 src/irc/outputfilter.cpp:1373
-#: src/irc/outputfilter.cpp:1442 src/irc/query.cpp:86 src/irc/query.cpp:394
+#: src/irc/nicklistview.cpp:165 src/irc/outputfilter.cpp:1433
+#: src/irc/outputfilter.cpp:1504 src/irc/query.cpp:86 src/irc/query.cpp:394
 #: src/irc/query.cpp:395 src/irc/channel.cpp:670 src/irc/channel.cpp:671
 #: src/config/settingsdialog.cpp:131 src/config/warnings_config.cpp:118
 #: src/viewer/ircview.cpp:883
@@ -1105,81 +1100,81 @@ msgstr ""
 msgid "Do you really want to delete %1?"
 msgstr "Adakah anda pasti untuk menggantung ke cakera?"
 
-#: src/irc/outputfilter.cpp:207
+#: src/irc/outputfilter.cpp:208
 msgid ""
 "The message you're sending includes characters that do not exist in your "
 "current encoding. If you choose to continue anyway those characters will be "
 "replaced by a '?'."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:211
+#: src/irc/outputfilter.cpp:212
 msgid "Encoding Conflict Warning"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:313
+#: src/irc/outputfilter.cpp:316
 #, fuzzy
 msgid "Raw"
 msgstr "Imej Kamera RAW"
 
-#: src/irc/outputfilter.cpp:366
+#: src/irc/outputfilter.cpp:373
 #, kde-format
 msgid "Usage: %1JOIN <channel> [password]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:404
+#: src/irc/outputfilter.cpp:412
 #, kde-format
 msgid "Usage: %1KICK <nick> [reason]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:418
+#: src/irc/outputfilter.cpp:426
 #, kde-format
 msgid "%1KICK only works from within channels."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:436
+#: src/irc/outputfilter.cpp:446
 #, kde-format
 msgid ""
 "%1PART and %1LEAVE without parameters only work from within a channel or a "
 "query."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:460
+#: src/irc/outputfilter.cpp:471
 #, kde-format
 msgid "%1PART without channel name only works from within a channel."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:483
+#: src/irc/outputfilter.cpp:495
 #, kde-format
 msgid "%1TOPIC without parameters only works from within a channel."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:519
+#: src/irc/outputfilter.cpp:532
 #, kde-format
 msgid "%1TOPIC without channel name only works from within a channel."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:576
+#: src/irc/outputfilter.cpp:590
 #, kde-format
 msgid ""
 "%1NAMES with no target may disconnect you from the server. Specify '*' if "
 "you really want this."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:597
+#: src/irc/outputfilter.cpp:613
 #, c-format, kde-format
 msgid ""
 "Usage: %1close [window] closes the named channel or query tab, or the "
 "current tab if none specified."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:624
+#: src/irc/outputfilter.cpp:642
 #, kde-format
 msgid "Usage: %1NOTICE <recipient> <message>"
 msgstr ""
 
 #. i18n: file: src/config/ignore_configui.ui:104
 #. i18n: ectx: property (text), widget (QCheckBox, chkNotice)
-#: src/irc/outputfilter.cpp:627 src/irc/outputfilter.cpp:848
+#: src/irc/outputfilter.cpp:646 src/irc/outputfilter.cpp:874
 #: src/irc/inputfilter.cpp:484 src/irc/inputfilter.cpp:552
 #: src/irc/inputfilter.cpp:557 src/irc/inputfilter.cpp:580
 #: src/irc/inputfilter.cpp:748 src/irc/inputfilter.cpp:1289
@@ -1189,223 +1184,223 @@ msgstr ""
 msgid "Notice"
 msgstr "Notis pengusangan"
 
-#: src/irc/outputfilter.cpp:629
+#: src/irc/outputfilter.cpp:649
 #, fuzzy, kde-format
 msgctxt "%1 is the message, %2 the recipient nickname"
 msgid "Sending notice \"%1\" to %2."
 msgstr "&Lompat ke hiperlink"
 
-#: src/irc/outputfilter.cpp:641
+#: src/irc/outputfilter.cpp:661
 #, fuzzy, kde-format
 msgid "Usage: %1ME text"
 msgstr "Ubah Warna Teks"
 
-#: src/irc/outputfilter.cpp:703
+#: src/irc/outputfilter.cpp:727
 msgid "Error: You need to specify a recipient."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:708
+#: src/irc/outputfilter.cpp:732
 msgid "Error: You cannot open queries to channels."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:714
+#: src/irc/outputfilter.cpp:738
 msgid "Error: You need to specify a message."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:795 src/irc/outputfilter.cpp:800
+#: src/irc/outputfilter.cpp:821 src/irc/outputfilter.cpp:826
 #, kde-format
 msgid "Sending CTCP-%1 request to %2."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:812
+#: src/irc/outputfilter.cpp:838
 #, fuzzy, c-format, kde-format
 msgid "Usage: %1AME text"
 msgstr "Ubah Warna Teks"
 
-#: src/irc/outputfilter.cpp:822
+#: src/irc/outputfilter.cpp:848
 #, fuzzy, c-format, kde-format
 msgid "Usage: %1AMSG text"
 msgstr "Ubah Warna Teks"
 
-#: src/irc/outputfilter.cpp:832
+#: src/irc/outputfilter.cpp:858
 #, fuzzy, kde-format
 msgid "Usage: %1OMSG text"
 msgstr "Ubah Warna Teks"
 
-#: src/irc/outputfilter.cpp:850
+#: src/irc/outputfilter.cpp:876
 #, fuzzy, kde-format
 msgid "Sending notice \"%1\" to %2."
 msgstr "&Lompat ke hiperlink"
 
-#: src/irc/outputfilter.cpp:853
+#: src/irc/outputfilter.cpp:879
 #, fuzzy, kde-format
 msgid "Usage: %1ONOTICE text"
 msgstr "Ubah Warna Teks"
 
-#: src/irc/outputfilter.cpp:863
+#: src/irc/outputfilter.cpp:889
 #, kde-format
 msgid "Usage: %1QUOTE command list"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:875
+#: src/irc/outputfilter.cpp:901
 #, fuzzy, c-format, kde-format
 msgid "Usage: %1SAY text"
 msgstr "Ubah Warna Teks"
 
-#: src/irc/outputfilter.cpp:919
+#: src/irc/outputfilter.cpp:946
 #, fuzzy, kde-format
 msgid "File \"%1\" does not exist."
 msgstr "Tak dapat membuka fail %s."
 
-#: src/irc/outputfilter.cpp:922
+#: src/irc/outputfilter.cpp:949
 #, kde-format
 msgid "Usage: %1DCC [SEND nickname filename]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:939
+#: src/irc/outputfilter.cpp:967
 #, kde-format
 msgid "Usage: %1DCC [GET [nickname [filename]]]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:948
+#: src/irc/outputfilter.cpp:977
 #, kde-format
 msgid "Usage: %1DCC [CHAT nickname]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:951
+#: src/irc/outputfilter.cpp:981
 #, kde-format
 msgid "Unrecognized command %1DCC %2. Possible commands are SEND, CHAT, CLOSE."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1052
+#: src/irc/outputfilter.cpp:1101
 #, kde-format
 msgid "Usage: %1INVITE <nick> [channel]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1063
+#: src/irc/outputfilter.cpp:1112
 #, kde-format
 msgid "%1INVITE without channel name works only from within channels."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1071
+#: src/irc/outputfilter.cpp:1121
 #, fuzzy, kde-format
 msgid "%1 is not a channel."
 msgstr "Fail %s tidak dijumpai"
 
-#: src/irc/outputfilter.cpp:1083
+#: src/irc/outputfilter.cpp:1133
 #, c-format, kde-format
 msgid "Usage: %1EXEC <script> [parameter list]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1091
+#: src/irc/outputfilter.cpp:1142
 msgid "Script name may not contain \"../\"."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1106
+#: src/irc/outputfilter.cpp:1157
 #, kde-format
 msgid "Usage: %1RAW [OPEN | CLOSE]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1141 src/irc/server.cpp:2487
+#: src/irc/outputfilter.cpp:1195 src/irc/server.cpp:2487
 #: src/irc/server.cpp:2505 src/viewer/ircview.cpp:374
 msgid "Notify"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1144
+#: src/irc/outputfilter.cpp:1198
 msgid "Current notify list is empty."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1146
+#: src/irc/outputfilter.cpp:1200
 #, fuzzy, kde-format
 msgid "Current notify list: %1"
 msgstr "Label Senarai Semasa"
 
-#: src/irc/outputfilter.cpp:1170
+#: src/irc/outputfilter.cpp:1224
 msgid "Enter username and password for IRC operator privileges:"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1172
+#: src/irc/outputfilter.cpp:1226
 #, fuzzy
 msgid "IRC Operator Password"
 msgstr "Kata Laluan & Akaun Pengguna"
 
-#: src/irc/outputfilter.cpp:1236
+#: src/irc/outputfilter.cpp:1290
 #, kde-format
 msgid "%1BAN without channel name works only from inside a channel."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1238
+#: src/irc/outputfilter.cpp:1293
 #, kde-format
 msgid "%1KICKBAN without channel name works only from inside a channel."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1269
+#: src/irc/outputfilter.cpp:1325
 #, kde-format
 msgid ""
 "Usage: %1BAN [-HOST | -DOMAIN | -USERHOST | -USERDOMAIN] [channel] <user|"
 "mask>"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1271
+#: src/irc/outputfilter.cpp:1328
 #, kde-format
 msgid ""
 "Usage: %1KICKBAN [-HOST | -DOMAIN | -USERHOST | -USERDOMAIN] [channel] <user|"
 "mask> [reason]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1312
+#: src/irc/outputfilter.cpp:1371
 #, kde-format
 msgid "%1UNBAN without channel name works only from inside a channel."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1326
+#: src/irc/outputfilter.cpp:1386
 #, kde-format
 msgid "Usage: %1UNBAN [channel] pattern"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1372
+#: src/irc/outputfilter.cpp:1432
 #, kde-format
 msgid "Added %1 to your ignore list."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1382
+#: src/irc/outputfilter.cpp:1442
 #, kde-format
 msgid "Usage: %1IGNORE [ -ALL ] <user 1> <user 2> ... <user n>"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1392
+#: src/irc/outputfilter.cpp:1453
 #, fuzzy, kde-format
 msgid "Usage: %1UNIGNORE <user 1> <user 2> ... <user n>"
 msgstr "Bahasa Antaramuka Pengguna"
 
-#: src/irc/outputfilter.cpp:1442
+#: src/irc/outputfilter.cpp:1504
 #, kde-format
 msgid "Removed %1 from your ignore list."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1449
+#: src/irc/outputfilter.cpp:1512
 #, fuzzy, kde-format
 msgid "No such ignore: %2"
 msgid_plural "No such ignores: %2"
 msgstr[0] "(tiada cadangan ejaan)"
 msgstr[1] "(tiada cadangan ejaan)"
 
-#: src/irc/outputfilter.cpp:1499
+#: src/irc/outputfilter.cpp:1564
 #, fuzzy, kde-format
 msgid "Current encoding is: %1"
 msgstr "Pilihan Semasa adalah Kosong"
 
-#: src/irc/outputfilter.cpp:1509
+#: src/irc/outputfilter.cpp:1575
 #, fuzzy, kde-format
 msgid "Switched to %1 encoding."
 msgstr "&Lompat ke hiperlink"
 
-#: src/irc/outputfilter.cpp:1512
+#: src/irc/outputfilter.cpp:1578
 #, fuzzy, kde-format
 msgid "%1 is not a valid encoding."
 msgstr "Rentetan arahan cetakan tidah sah."
 
-#: src/irc/outputfilter.cpp:1532
+#: src/irc/outputfilter.cpp:1598
 #, c-format, kde-format
 msgid ""
 "Usage: %1setkey <nick|channel> <key> sets the encryption key for nick or "
@@ -1418,12 +1413,12 @@ msgid ""
 "Codebook (ECB)."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1541
+#: src/irc/outputfilter.cpp:1616
 #, kde-format
 msgid "The key for %1 has been set."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1543 src/irc/outputfilter.cpp:1565
+#: src/irc/outputfilter.cpp:1618 src/irc/outputfilter.cpp:1644
 msgid ""
 "Setting an encryption key requires Konversation to have been built with "
 "support for the Qt Cryptographic Architecture (QCA) library. Contact your "
@@ -1431,80 +1426,80 @@ msgid ""
 "Konversation with QCA present."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1559
+#: src/irc/outputfilter.cpp:1637
 #, kde-format
 msgid ""
 "Usage: %1keyx <nick|channel> triggers DH1080 key exchange with the target."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1563
+#: src/irc/outputfilter.cpp:1642
 #, kde-format
 msgid "Beginning DH1080 key exchange with %1."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1579
+#: src/irc/outputfilter.cpp:1662
 #, c-format, kde-format
 msgid ""
 "Usage: %1delkey <nick> or <channel> deletes the encryption key for nick or "
 "channel"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1590
+#: src/irc/outputfilter.cpp:1674
 #, kde-format
 msgid "The key for %1 has been deleted."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1593 src/irc/outputfilter.cpp:1610
+#: src/irc/outputfilter.cpp:1677 src/irc/outputfilter.cpp:1697
 #, kde-format
 msgid "No key has been set for %1."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1608
+#: src/irc/outputfilter.cpp:1694
 #, fuzzy, kde-format
 msgid "The key for %1 is \"%2\"."
 msgstr "Pilihan Semasa adalah Kosong"
 
-#: src/irc/outputfilter.cpp:1608
+#: src/irc/outputfilter.cpp:1695
 msgid "Blowfish"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1620
+#: src/irc/outputfilter.cpp:1707
 #, kde-format
 msgid "Usage: %1KILL <nick> [comment]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1636
+#: src/irc/outputfilter.cpp:1723
 #, fuzzy, kde-format
 msgid "Usage: %1DNS <nick>"
 msgstr "Lihat Penggunaan Cakera"
 
-#: src/irc/outputfilter.cpp:1651 src/irc/outputfilter.cpp:1670
+#: src/irc/outputfilter.cpp:1738 src/irc/outputfilter.cpp:1757
 #: src/irc/inputfilter.cpp:1398
 #, fuzzy
 msgid "DNS"
 msgstr "Pelayan Nama DNS"
 
-#: src/irc/outputfilter.cpp:1652 src/irc/outputfilter.cpp:1671
+#: src/irc/outputfilter.cpp:1739 src/irc/outputfilter.cpp:1758
 #, fuzzy, kde-format
 msgid "Resolved %1 to: %2"
 msgstr "Ub&ahsuai kepada:"
 
-#: src/irc/outputfilter.cpp:1656 src/irc/outputfilter.cpp:1675
+#: src/irc/outputfilter.cpp:1743 src/irc/outputfilter.cpp:1762
 #, fuzzy, kde-format
 msgid "Unable to resolve %1"
 msgstr "&Lompat ke hiperlink"
 
-#: src/irc/outputfilter.cpp:1709
+#: src/irc/outputfilter.cpp:1796
 #, c-format, kde-format
 msgid "Usage: %1queuetuner [on | off]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1770
+#: src/irc/outputfilter.cpp:1858
 #, fuzzy
 msgid "Usage"
 msgstr "Lihat Penggunaan Cakera"
 
-#: src/irc/outputfilter.cpp:1779 src/irc/server.cpp:211 src/irc/server.cpp:378
+#: src/irc/outputfilter.cpp:1867 src/irc/server.cpp:211 src/irc/server.cpp:378
 #: src/irc/server.cpp:433 src/irc/server.cpp:564 src/irc/server.cpp:575
 #: src/irc/server.cpp:758 src/connectionmanager.cpp:203
 #: src/connectionmanager.cpp:212
@@ -8595,6 +8590,10 @@ msgstr ""
 #, fuzzy
 msgid "&Window"
 msgstr "&Tetingkap"
+
+#, fuzzy
+#~ msgid "Connection broken, error (%1) %2."
+#~ msgstr "Gagal untuk mencari seksyen: %s"
 
 #, fuzzy
 #~ msgid "Accept"
