@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-31 06:20+0200\n"
+"POT-Creation-Date: 2009-09-14 06:18+0200\n"
 "PO-Revision-Date: 2005-10-14 13:28+0800\n"
 "Last-Translator: junetazawawi <junetazawawi@yahoo.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -29,7 +29,7 @@ msgstr "&Salin Total  ke Klipbod"
 
 #. i18n: file: csvexportdialog_base.ui:176
 #. i18n: ectx: property (text), item, widget (QComboBox, combodecimalminutes)
-#: csvexportdialog.cpp:95 rc.cpp:99 rc.cpp:208
+#: csvexportdialog.cpp:95 rc.cpp:99 rc.cpp:211
 #, fuzzy
 #| msgid "Decimal"
 msgctxt "format to display times"
@@ -38,51 +38,54 @@ msgstr "Perpuluhan"
 
 #. i18n: file: csvexportdialog_base.ui:203
 #. i18n: ectx: property (text), item, widget (QComboBox, combosessiontimes)
-#: csvexportdialog.cpp:110 rc.cpp:108 rc.cpp:217
+#: csvexportdialog.cpp:110 rc.cpp:108 rc.cpp:220
 #, fuzzy
 msgid "Session Times"
 msgstr "Waktu Sesi"
 
 #. i18n: file: csvexportdialog_base.ui:220
 #. i18n: ectx: property (text), item, widget (QComboBox, comboalltasks)
-#: csvexportdialog.cpp:111 rc.cpp:111 rc.cpp:220
+#: csvexportdialog.cpp:111 rc.cpp:111 rc.cpp:223
 #, fuzzy
 msgid "All Tasks"
 msgstr "Salin Semua Tugasan"
 
-#: edithistorydialog.cpp:81
+#. i18n: file: historydialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QDialog, historydialog)
+#: edithistorydialog.cpp:81 rc.cpp:138 rc.cpp:307
 #, fuzzy
 #| msgid "Log history"
 msgid "Edit History"
 msgstr "Sejarah pelogan"
 
-#: edithistorydialog.cpp:94 timekard.cpp:67
+#: edithistorydialog.cpp:94 historydialog.cpp:81 timekard.cpp:67
 msgid "Task"
 msgstr "Tugasan"
 
-#: edithistorydialog.cpp:94
+#: edithistorydialog.cpp:94 historydialog.cpp:81
 #, fuzzy
 #| msgid "Total Time"
 msgid "StartTime"
 msgstr "Waktu Total"
 
-#: edithistorydialog.cpp:94
+#: edithistorydialog.cpp:94 historydialog.cpp:81
 #, fuzzy
 #| msgid "Time"
 msgid "EndTime"
 msgstr "Waktu"
 
-#: edithistorydialog.cpp:95
+#: edithistorydialog.cpp:95 historydialog.cpp:82
 #, fuzzy
 #| msgid "Comma"
 msgid "Comment"
 msgstr "Koma"
 
-#: edithistorydialog.cpp:128
+#: edithistorydialog.cpp:128 historydialog.cpp:113
 msgid "You can change this task's comment, start time and end time."
 msgstr ""
 
-#: edithistorydialog.cpp:186 edithistorydialog.cpp:209
+#: edithistorydialog.cpp:186 edithistorydialog.cpp:209 historydialog.cpp:183
+#: historydialog.cpp:206
 msgid "This is not a valid Date/Time."
 msgstr ""
 
@@ -389,7 +392,7 @@ msgstr "popup tugasan"
 
 #. i18n: file: cfgbehavior.ui:16
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_enabled)
-#: rc.cpp:3 rc.cpp:280
+#: rc.cpp:3 rc.cpp:283
 #, fuzzy
 #| msgid "Detect desktop as idle after"
 msgid "Detect desktop as idle after:"
@@ -401,31 +404,31 @@ msgstr "Kesan desktop sebagai melahu selepas"
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_autoSavePeriod)
 #. i18n: file: cfgbehavior.ui:23
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_period)
-#: rc.cpp:6 rc.cpp:63 rc.cpp:172 rc.cpp:283
+#: rc.cpp:6 rc.cpp:63 rc.cpp:175 rc.cpp:286
 msgid " min"
 msgstr " min"
 
 #. i18n: file: cfgbehavior.ui:36
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:9 rc.cpp:286
+#: rc.cpp:9 rc.cpp:289
 msgid "Minimum desktop active time:"
 msgstr ""
 
 #. i18n: file: cfgbehavior.ui:43
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_minActiveTime)
-#: rc.cpp:12 rc.cpp:289
+#: rc.cpp:12 rc.cpp:292
 msgid " sec"
 msgstr ""
 
 #. i18n: file: cfgbehavior.ui:56
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_promptDelete)
-#: rc.cpp:15 rc.cpp:292
+#: rc.cpp:15 rc.cpp:295
 msgid "Prompt before deleting tasks"
 msgstr "Gesa sebelum menghapuskan tugasan"
 
 #. i18n: file: cfgbehavior.ui:63
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_uniTasking)
-#: rc.cpp:18 rc.cpp:295
+#: rc.cpp:18 rc.cpp:298
 msgid ""
 "Unitasking - allow only one task to be timed at a time. Does not stop any "
 "timer."
@@ -433,40 +436,40 @@ msgstr ""
 
 #. i18n: file: cfgbehavior.ui:66
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_uniTasking)
-#: rc.cpp:21 rc.cpp:298
+#: rc.cpp:21 rc.cpp:301
 msgid "Allow only one timer at a time"
 msgstr ""
 
 #. i18n: file: cfgbehavior.ui:73
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_trayIcon)
-#: rc.cpp:24 rc.cpp:301
+#: rc.cpp:24 rc.cpp:304
 msgid "Place an icon to the system tray"
 msgstr ""
 
 #. i18n: file: cfgdisplay.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:27 rc.cpp:247
+#: rc.cpp:27 rc.cpp:250
 msgctxt "title of group box, general options"
 msgid "General"
 msgstr ""
 
 #. i18n: file: cfgdisplay.ui:25
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_decimalFormat)
-#: rc.cpp:30 rc.cpp:250
+#: rc.cpp:30 rc.cpp:253
 #, fuzzy
 msgid "Decimal number format"
 msgstr "Format Waktu"
 
 #. i18n: file: cfgdisplay.ui:32
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_configPDA)
-#: rc.cpp:33 rc.cpp:253
+#: rc.cpp:33 rc.cpp:256
 msgid ""
 "Choose this if you have a touchscreen and your screen real estate is precious"
 msgstr ""
 
 #. i18n: file: cfgdisplay.ui:35
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_configPDA)
-#: rc.cpp:36 rc.cpp:256
+#: rc.cpp:36 rc.cpp:259
 #, fuzzy
 #| msgid "Confirmation Required"
 msgctxt ""
@@ -477,7 +480,7 @@ msgstr "Pengesahan Diperlukan"
 
 #. i18n: file: cfgdisplay.ui:45
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:39 rc.cpp:259
+#: rc.cpp:39 rc.cpp:262
 #, fuzzy
 #| msgid "Columns displayed:"
 msgid "Columns Displayed"
@@ -485,44 +488,44 @@ msgstr "Lajur dipaparkan:"
 
 #. i18n: file: cfgdisplay.ui:51
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_displaySessionTime)
-#: rc.cpp:42 rc.cpp:262
+#: rc.cpp:42 rc.cpp:265
 msgid "Session time"
 msgstr "Waktu sesi"
 
 #. i18n: file: cfgdisplay.ui:58
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_displayTime)
-#: rc.cpp:45 rc.cpp:265
+#: rc.cpp:45 rc.cpp:268
 msgid "Cumulative task time"
 msgstr "Waktu tugasan kumulatif"
 
 #. i18n: file: cfgdisplay.ui:65
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_displayTotalSessionTime)
-#: rc.cpp:48 rc.cpp:268
+#: rc.cpp:48 rc.cpp:271
 msgid "Total session time"
 msgstr "Waktu sesi total"
 
 #. i18n: file: cfgdisplay.ui:72
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_displayTotalTime)
-#: rc.cpp:51 rc.cpp:271
+#: rc.cpp:51 rc.cpp:274
 msgid "Total task time"
 msgstr "Waktu tugasan total"
 
 #. i18n: file: cfgdisplay.ui:79
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_displayPriority)
-#: rc.cpp:54 rc.cpp:274 taskview.cpp:174
+#: rc.cpp:54 rc.cpp:277 taskview.cpp:174
 msgid "Priority"
 msgstr ""
 
 #. i18n: file: cfgdisplay.ui:86
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_displayPercentComplete)
-#: rc.cpp:57 rc.cpp:277
+#: rc.cpp:57 rc.cpp:280
 #, fuzzy
 msgid "Percent complete"
 msgstr "&Tandakan sebagai Selesai"
 
 #. i18n: file: cfgstorage.ui:28
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_autoSave)
-#: rc.cpp:60 rc.cpp:169
+#: rc.cpp:60 rc.cpp:172
 #, fuzzy
 #| msgid "Save tasks every"
 msgid "Save tasks every:"
@@ -530,55 +533,55 @@ msgstr "Simpan tugasan setiap"
 
 #. i18n: file: csvexportdialog_base.ui:13
 #. i18n: ectx: property (windowTitle), widget (KDialog, CSVExportDialogBase)
-#: rc.cpp:66 rc.cpp:175
+#: rc.cpp:66 rc.cpp:178
 msgid "CSV Export"
 msgstr "Eksport CSV "
 
 #. i18n: file: csvexportdialog_base.ui:36
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:69 rc.cpp:178
+#: rc.cpp:69 rc.cpp:181
 msgid "Export to:"
 msgstr "Eksport ke:"
 
 #. i18n: file: csvexportdialog_base.ui:46
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, urlExportTo)
-#: rc.cpp:72 rc.cpp:181
+#: rc.cpp:72 rc.cpp:184
 msgid "The file where Karm will write the data."
 msgstr "Fail di mana Karm akan menulis data"
 
 #. i18n: file: csvexportdialog_base.ui:64
 #. i18n: ectx: property (text), widget (QLabel, quotesLabel)
-#: rc.cpp:75 rc.cpp:184
+#: rc.cpp:75 rc.cpp:187
 msgid "Quotes:"
 msgstr "Petikan:"
 
 #. i18n: file: csvexportdialog_base.ui:85
 #. i18n: ectx: property (whatsThis), widget (QComboBox, cboQuote)
-#: rc.cpp:78 rc.cpp:187
+#: rc.cpp:78 rc.cpp:190
 msgid "All fields are quoted in the output."
 msgstr "Semua medan dipetik dalam output."
 
 #. i18n: file: csvexportdialog_base.ui:89
 #. i18n: ectx: property (text), item, widget (QComboBox, cboQuote)
-#: rc.cpp:81 rc.cpp:190
+#: rc.cpp:81 rc.cpp:193
 msgid "\""
 msgstr "\""
 
 #. i18n: file: csvexportdialog_base.ui:94
 #. i18n: ectx: property (text), item, widget (QComboBox, cboQuote)
-#: rc.cpp:84 rc.cpp:193
+#: rc.cpp:84 rc.cpp:196
 msgid "'"
 msgstr "'"
 
 #. i18n: file: csvexportdialog_base.ui:105
 #. i18n: ectx: property (title), widget (QGroupBox, grpDateRange)
-#: rc.cpp:87 rc.cpp:196
+#: rc.cpp:87 rc.cpp:199
 msgid "Date Range"
 msgstr "Julat Tarikh"
 
 #. i18n: file: csvexportdialog_base.ui:108
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, grpDateRange)
-#: rc.cpp:90 rc.cpp:199
+#: rc.cpp:90 rc.cpp:202
 msgid ""
 "<p>An inclusive date range for reporting on time card history.  Not enabled "
 "when reporting on totals.</p>"
@@ -588,45 +591,45 @@ msgstr ""
 
 #. i18n: file: csvexportdialog_base.ui:114
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:93 rc.cpp:202
+#: rc.cpp:93 rc.cpp:205
 msgid "From:"
 msgstr "Dari:"
 
 #. i18n: file: csvexportdialog_base.ui:139
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:96 rc.cpp:205
+#: rc.cpp:96 rc.cpp:208
 msgid "To:"
 msgstr "Hingga:"
 
 #. i18n: file: csvexportdialog_base.ui:181
 #. i18n: ectx: property (text), item, widget (QComboBox, combodecimalminutes)
-#: rc.cpp:102 rc.cpp:211
+#: rc.cpp:102 rc.cpp:214
 msgid "Hours:Minutes"
 msgstr "Jam:Minit"
 
 #. i18n: file: csvexportdialog_base.ui:198
 #. i18n: ectx: property (text), item, widget (QComboBox, combosessiontimes)
-#: rc.cpp:105 rc.cpp:214
+#: rc.cpp:105 rc.cpp:217
 #, fuzzy
 msgid "All Times"
 msgstr "Set  Semula Semua Waktu"
 
 #. i18n: file: csvexportdialog_base.ui:225
 #. i18n: ectx: property (text), item, widget (QComboBox, comboalltasks)
-#: rc.cpp:114 rc.cpp:223
+#: rc.cpp:114 rc.cpp:226
 #, fuzzy
 msgid "Only Selected"
 msgstr "Menghapuskan Tugasan"
 
 #. i18n: file: csvexportdialog_base.ui:241
 #. i18n: ectx: property (title), widget (QGroupBox, grpDelimiter)
-#: rc.cpp:117 rc.cpp:226
+#: rc.cpp:117 rc.cpp:229
 msgid "Delimiter"
 msgstr "Penyahhad"
 
 #. i18n: file: csvexportdialog_base.ui:244
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, grpDelimiter)
-#: rc.cpp:120 rc.cpp:229
+#: rc.cpp:120 rc.cpp:232
 #, fuzzy
 #| msgid "The character used to seperate one field from another in the output."
 msgid "The character used to separate one field from another in the output."
@@ -636,7 +639,7 @@ msgstr ""
 
 #. i18n: file: csvexportdialog_base.ui:256
 #. i18n: ectx: property (text), widget (QRadioButton, radioTab)
-#: rc.cpp:123 rc.cpp:232
+#: rc.cpp:123 rc.cpp:235
 #, fuzzy
 #| msgid "Tab"
 msgctxt "tabulator delimiter"
@@ -645,7 +648,7 @@ msgstr "Tab"
 
 #. i18n: file: csvexportdialog_base.ui:263
 #. i18n: ectx: property (text), widget (QRadioButton, radioOther)
-#: rc.cpp:126 rc.cpp:235
+#: rc.cpp:126 rc.cpp:238
 #, fuzzy
 #| msgid "Other:"
 msgctxt "user can set an user defined delimiter"
@@ -654,31 +657,31 @@ msgstr "Lain-lain:"
 
 #. i18n: file: csvexportdialog_base.ui:270
 #. i18n: ectx: property (text), widget (QRadioButton, radioSpace)
-#: rc.cpp:129 rc.cpp:238
+#: rc.cpp:129 rc.cpp:241
 msgid "Space"
 msgstr "Ruang"
 
 #. i18n: file: csvexportdialog_base.ui:277
 #. i18n: ectx: property (text), widget (QRadioButton, radioComma)
-#: rc.cpp:132 rc.cpp:241
+#: rc.cpp:132 rc.cpp:244
 msgid "Comma"
 msgstr "Koma"
 
 #. i18n: file: csvexportdialog_base.ui:314
 #. i18n: ectx: property (text), widget (QRadioButton, radioSemicolon)
-#: rc.cpp:135 rc.cpp:244
+#: rc.cpp:135 rc.cpp:247
 msgid "Semicolon"
 msgstr "Koma Bertitik"
 
 #. i18n: file: ktimetrackerui.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:143 rc.cpp:304
+#: rc.cpp:146 rc.cpp:310
 msgid "&File"
 msgstr ""
 
 #. i18n: file: ktimetrackerui.rc:16
 #. i18n: ectx: Menu (import)
-#: rc.cpp:146 rc.cpp:307
+#: rc.cpp:149 rc.cpp:313
 #, fuzzy
 #| msgid "&Export"
 msgid "&Import"
@@ -686,49 +689,49 @@ msgstr "&Eksport"
 
 #. i18n: file: ktimetrackerui.rc:20
 #. i18n: ectx: Menu (export)
-#: rc.cpp:149 rc.cpp:310
+#: rc.cpp:152 rc.cpp:316
 msgid "&Export"
 msgstr "&Eksport"
 
 #. i18n: file: ktimetrackerui.rc:31
 #. i18n: ectx: Menu (clock)
-#: rc.cpp:152 rc.cpp:313
+#: rc.cpp:155 rc.cpp:319
 msgid "&Clock"
 msgstr "&Jam"
 
 #. i18n: file: ktimetrackerui.rc:38
 #. i18n: ectx: Menu (task)
-#: rc.cpp:155 rc.cpp:316
+#: rc.cpp:158 rc.cpp:322
 msgid "&Task"
 msgstr "&Tugasan"
 
 #. i18n: file: ktimetrackerui.rc:49
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:158 rc.cpp:319
+#: rc.cpp:161 rc.cpp:325
 #, fuzzy
 msgid "&Settings"
 msgstr "Seting Paparan"
 
 #. i18n: file: ktimetrackerui.rc:56
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:161 rc.cpp:322
+#: rc.cpp:164 rc.cpp:328
 msgid "Main Toolbar"
 msgstr ""
 
 #. i18n: file: ktimetrackerui.rc:65
 #. i18n: ectx: ToolBar (taskToolBar)
-#: rc.cpp:164 rc.cpp:325
+#: rc.cpp:167 rc.cpp:331
 #, fuzzy
 #| msgid "Task"
 msgid "Tasks"
 msgstr "Tugasan"
 
-#: rc.cpp:165
+#: rc.cpp:168
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "MIMOS"
 
-#: rc.cpp:166
+#: rc.cpp:169
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "opensource@mimos.my"
@@ -870,36 +873,36 @@ msgstr "Tiada tugasan"
 msgid "Week of %1"
 msgstr "Minggu %1"
 
-#: timetrackerwidget.cpp:103
+#: timetrackerwidget.cpp:104
 msgid "Search or add task"
 msgstr ""
 
-#: timetrackerwidget.cpp:104
+#: timetrackerwidget.cpp:105
 msgid ""
 "This is a combined field. As long as you do not type ENTER, it acts as a "
 "filter. Then, only tasks that match your input are shown. As soon as you "
 "type ENTER, your input is used as name to create a new task."
 msgstr ""
 
-#: timetrackerwidget.cpp:183
+#: timetrackerwidget.cpp:184
 msgid "Cannot create new file."
 msgstr ""
 
-#: timetrackerwidget.cpp:196 timetrackerwidget.cpp:442
+#: timetrackerwidget.cpp:197 timetrackerwidget.cpp:443
 msgid "Untitled"
 msgstr ""
 
-#: timetrackerwidget.cpp:295
+#: timetrackerwidget.cpp:296
 msgid "Start &New Session"
 msgstr "Mulakan Sesi &Baru"
 
-#: timetrackerwidget.cpp:296
+#: timetrackerwidget.cpp:297
 #, fuzzy
 #| msgid "Start a new session"
 msgid "Starts a new session"
 msgstr "Mulakan sesi baru"
 
-#: timetrackerwidget.cpp:296
+#: timetrackerwidget.cpp:297
 msgid ""
 "This will reset the session time to 0 for all tasks, to start a new session, "
 "without affecting the totals."
@@ -907,33 +910,33 @@ msgstr ""
 "Ini akan mengeset semula waktu sesi kepada 0 untuk semua tugasan, untuk "
 "memulakan sesi baru tanpa mengganggu total."
 
-#: timetrackerwidget.cpp:299
+#: timetrackerwidget.cpp:300
 #, fuzzy
 #| msgid "Log history"
 msgid "Edit History..."
 msgstr "Sejarah pelogan"
 
-#: timetrackerwidget.cpp:300
+#: timetrackerwidget.cpp:301
 msgid "Edits history of all tasks of the current document"
 msgstr ""
 
-#: timetrackerwidget.cpp:300
+#: timetrackerwidget.cpp:301
 msgid ""
 "A window will be opened where you can change start and stop times of tasks "
 "or add a comment to them."
 msgstr ""
 
-#: timetrackerwidget.cpp:303
+#: timetrackerwidget.cpp:304
 msgid "&Reset All Times"
 msgstr "&Set Semula Semua Waktu"
 
-#: timetrackerwidget.cpp:304
+#: timetrackerwidget.cpp:305
 #, fuzzy
 #| msgid "Reset all times"
 msgid "Resets all times"
 msgstr "Set semula semua waktu"
 
-#: timetrackerwidget.cpp:304
+#: timetrackerwidget.cpp:305
 msgid ""
 "This will reset the session and total time to 0 for all tasks, to restart "
 "from scratch."
@@ -941,19 +944,19 @@ msgstr ""
 "Ini akan mengeset semula sesi dan waktu total kepada 0 untuk semua tugasan, "
 "untuk memulakan semula dari awal."
 
-#: timetrackerwidget.cpp:306
+#: timetrackerwidget.cpp:307
 #, fuzzy
 #| msgid "Total Time"
 msgid "&Start"
 msgstr "Waktu Total"
 
-#: timetrackerwidget.cpp:307
+#: timetrackerwidget.cpp:308
 #, fuzzy
 #| msgid "Start timing for selected task"
 msgid "Starts timing for selected task"
 msgstr "Mulakan hitungan masa untuk tugasan yang dipilih"
 
-#: timetrackerwidget.cpp:307
+#: timetrackerwidget.cpp:308
 #, fuzzy
 #| msgid ""
 #| "This will start timing for the selected task.\n"
@@ -975,109 +978,109 @@ msgstr ""
 "tetikus kiri pada tugasan yang diberikan.  Bagaimanapun, ini akan "
 "menghentikan hitungan masa tugasan lain."
 
-#: timetrackerwidget.cpp:312
+#: timetrackerwidget.cpp:313
 msgid "S&top"
 msgstr "&Hentikan"
 
-#: timetrackerwidget.cpp:313
+#: timetrackerwidget.cpp:314
 #, fuzzy
 #| msgid "Stop timing of the selected task"
 msgid "Stops timing of the selected task"
 msgstr "Hentikan hitungan masa untuk tugasan yang dipilih"
 
-#: timetrackerwidget.cpp:314
+#: timetrackerwidget.cpp:315
 msgid "Focus on Searchbar"
 msgstr ""
 
-#: timetrackerwidget.cpp:315
+#: timetrackerwidget.cpp:316
 msgid "Sets the focus on the searchbar"
 msgstr ""
 
-#: timetrackerwidget.cpp:316
+#: timetrackerwidget.cpp:317
 msgid "Stop &All Timers"
 msgstr "Hentikan &Semua Penghitung Masa"
 
-#: timetrackerwidget.cpp:317
+#: timetrackerwidget.cpp:318
 #, fuzzy
 #| msgid "Stop all of the active timers"
 msgid "Stops all of the active timers"
 msgstr "Hentikan semua penghitung masa yang aktif"
 
-#: timetrackerwidget.cpp:318
+#: timetrackerwidget.cpp:319
 msgid "Track Active Applications"
 msgstr ""
 
-#: timetrackerwidget.cpp:319
+#: timetrackerwidget.cpp:320
 msgid ""
 "Auto-creates and updates tasks when the focus of the current window has "
 "changed"
 msgstr ""
 
-#: timetrackerwidget.cpp:320
+#: timetrackerwidget.cpp:321
 msgid ""
 "If the focus of a window changes for the first time when this action is "
 "enabled, a new task will be created with the title of the window as its name "
 "and will be started. If there already exists such an task it will be started."
 msgstr ""
 
-#: timetrackerwidget.cpp:324
+#: timetrackerwidget.cpp:325
 #, fuzzy
 #| msgid "New Task"
 msgid "&New Task..."
 msgstr "Tugasan Baru"
 
-#: timetrackerwidget.cpp:324
+#: timetrackerwidget.cpp:325
 #, fuzzy
 #| msgid "Create new top level task"
 msgid "Creates new top level task"
 msgstr "Cipta tugasan tahap atas yang baru"
 
-#: timetrackerwidget.cpp:325
+#: timetrackerwidget.cpp:326
 msgid "This will create a new top level task."
 msgstr "Ini akan mencipta tugasan tahap atasan yang baru."
 
-#: timetrackerwidget.cpp:326
+#: timetrackerwidget.cpp:327
 msgid "New &Subtask..."
 msgstr "&Subtugasan Baru..."
 
-#: timetrackerwidget.cpp:327
+#: timetrackerwidget.cpp:328
 msgid "Creates a new subtask to the current selected task"
 msgstr ""
 
-#: timetrackerwidget.cpp:328
+#: timetrackerwidget.cpp:329
 #, fuzzy
 #| msgid "This will create a new top level task."
 msgid "This will create a new subtask to the current selected task."
 msgstr "Ini akan mencipta tugasan tahap atasan yang baru."
 
-#: timetrackerwidget.cpp:329
+#: timetrackerwidget.cpp:330
 #, fuzzy
 msgid "&Delete"
 msgstr "Penyahhad"
 
-#: timetrackerwidget.cpp:329
+#: timetrackerwidget.cpp:330
 #, fuzzy
 #| msgid "Delete selected task"
 msgid "Deletes selected task"
 msgstr "Hapuskan tugasan yang dipilih"
 
-#: timetrackerwidget.cpp:330
+#: timetrackerwidget.cpp:331
 #, fuzzy
 #| msgid "This will delete the selected task and all its subtasks."
 msgid "This will delete the selected task(s) and all subtasks."
 msgstr "Ini akan menghapuskan tugasan yang dipilih dan semua subtugasannya."
 
-#: timetrackerwidget.cpp:332
+#: timetrackerwidget.cpp:333
 msgid "&Edit..."
 msgstr "&Edit..."
 
-#: timetrackerwidget.cpp:333
+#: timetrackerwidget.cpp:334
 #, fuzzy
 #| msgid "Edit name or times for selected task"
 msgid "Edits name or times for selected task"
 msgstr "Edit nama atau waktu untuk tugasan yang dipilih"
 
-#: timetrackerwidget.cpp:333
+#: timetrackerwidget.cpp:334
 msgid ""
 "This will bring up a dialog box where you may edit the parameters for the "
 "selected task."
@@ -1085,104 +1088,104 @@ msgstr ""
 "Ini akan membawa kotak dialog di mana anda boleh mengedit parameter untuk "
 "tugasan yang dipilih"
 
-#: timetrackerwidget.cpp:335
+#: timetrackerwidget.cpp:336
 msgid "&Mark as Complete"
 msgstr "&Tandakan sebagai Selesai"
 
-#: timetrackerwidget.cpp:337
+#: timetrackerwidget.cpp:338
 #, fuzzy
 msgid "&Mark as Incomplete"
 msgstr "&Tandakan sebagai Selesai"
 
-#: timetrackerwidget.cpp:339
+#: timetrackerwidget.cpp:340
 #, fuzzy
 msgid "&Export Times..."
 msgstr "&Eksport ke fail CSV..."
 
-#: timetrackerwidget.cpp:341
+#: timetrackerwidget.cpp:342
 #, fuzzy
 msgid "Export &History..."
 msgstr "Eksport &Sejarah ke Fail CSV..."
 
-#: timetrackerwidget.cpp:343
+#: timetrackerwidget.cpp:344
 msgid "Import Tasks From &Planner..."
 msgstr "Impot Tugasan Dari &Perancang..."
 
-#: timetrackerwidget.cpp:345
+#: timetrackerwidget.cpp:346
 msgid "Show Searchbar"
 msgstr ""
 
-#: timetrackerwidget.cpp:441
+#: timetrackerwidget.cpp:442
 msgid "This document has not been saved yet. Do you want to save it?"
 msgstr ""
 
-#: timetrackerwidget.cpp:670
+#: timetrackerwidget.cpp:671
 #, fuzzy
 msgid "Settings"
 msgstr "Seting Paparan"
 
-#: timetrackerwidget.cpp:776
+#: timetrackerwidget.cpp:781
 msgctxt "@info in message box"
 msgid ""
 "There is no history yet. Start and stop a task and you will have an entry in "
 "your history."
 msgstr ""
 
-#: timetrackerwidget.cpp:784
+#: timetrackerwidget.cpp:790
 msgid "Do you really want to reset the time to zero for all tasks?"
 msgstr ""
 "Anda pasti ingin mengeset semula waktu kepada sifar untuk semua tugasan?"
 
-#: timetrackerwidget.cpp:785
+#: timetrackerwidget.cpp:791
 msgid "Confirmation Required"
 msgstr "Pengesahan Diperlukan"
 
-#: timetrackerwidget.cpp:785
+#: timetrackerwidget.cpp:791
 msgid "Reset All Times"
 msgstr "Set  Semula Semua Waktu"
 
-#: timetrackerwidget.cpp:952
+#: timetrackerwidget.cpp:959
 msgid "Save failed, most likely because the file could not be locked."
 msgstr ""
 
-#: timetrackerwidget.cpp:954
+#: timetrackerwidget.cpp:961
 msgid "Could not modify calendar resource."
 msgstr ""
 
-#: timetrackerwidget.cpp:956
+#: timetrackerwidget.cpp:963
 msgid "Out of memory--could not create object."
 msgstr ""
 
-#: timetrackerwidget.cpp:958
+#: timetrackerwidget.cpp:965
 #, fuzzy
 msgid "UID not found."
 msgstr "Fail \"%1\" tidak ditemui."
 
-#: timetrackerwidget.cpp:960
+#: timetrackerwidget.cpp:967
 msgid "Invalidate date--format is YYYY-MM-DD."
 msgstr ""
 
-#: timetrackerwidget.cpp:962
+#: timetrackerwidget.cpp:969
 msgid "Invalid time--format is YYYY-MM-DDTHH:MM:SS."
 msgstr ""
 
-#: timetrackerwidget.cpp:964
+#: timetrackerwidget.cpp:971
 msgid "Invalid task duration--must be greater than zero."
 msgstr ""
 
-#: timetrackerwidget.cpp:966
+#: timetrackerwidget.cpp:973
 #, kde-format
 msgid "Invalid error number: %1"
 msgstr ""
 
-#: timetrackerwidget.cpp:1231
+#: timetrackerwidget.cpp:1238
 msgid ""
 "This is ktimetracker, KDE's program to help you track your time. Best, start "
 "with creating your first task - enter it into the field where you see "
 "\"search or add task\"."
 msgstr ""
 
-#: timetrackerwidget.cpp:1232
+#: timetrackerwidget.cpp:1239
 msgid "You have already created a task. You can now start and stop timing"
 msgstr ""
 
