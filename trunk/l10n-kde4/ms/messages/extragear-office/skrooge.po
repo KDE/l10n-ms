@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: skrooge\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-14 06:22+0200\n"
+"POT-Creation-Date: 2009-09-15 06:21+0200\n"
 "PO-Revision-Date: 2009-07-02 21:38+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -49,7 +49,8 @@ msgstr "Lain-lain"
 
 #. i18n: file: skrooge_bank/skgbankpluginwidget_board.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: skrooge_bank/skgbankpluginwidget.cpp:70 rc.cpp:298
+#: skrooge_bank/skgbankpluginwidget.cpp:70 skrooge_bank/skgbankplugin.cpp:63
+#: rc.cpp:298
 msgid "Accounts"
 msgstr "Akaun"
 
@@ -76,7 +77,7 @@ msgid "Account updated."
 msgstr ""
 
 #: skrooge_bank/skgbankpluginwidget.cpp:386
-#: skrooge_scheduled/skgscheduledpluginwidget.cpp:248
+#: skrooge_scheduled/skgscheduledpluginwidget.cpp:257
 msgid "Update failed"
 msgstr ""
 
@@ -113,19 +114,19 @@ msgstr "Semua"
 msgid "Total"
 msgstr "Jumlah"
 
-#: skrooge_bank/skgbankplugin.cpp:83
+#: skrooge_bank/skgbankplugin.cpp:95
 msgid "Bank and Account"
 msgstr ""
 
-#: skrooge_bank/skgbankplugin.cpp:93
+#: skrooge_bank/skgbankplugin.cpp:105
 msgid "Bank and account management (creation, update ...)"
 msgstr ""
 
-#: skrooge_bank/skgbankplugin.cpp:98
+#: skrooge_bank/skgbankplugin.cpp:110
 msgid "Bank and account management"
 msgstr ""
 
-#: skrooge_bank/skgbankplugin.cpp:104
+#: skrooge_bank/skgbankplugin.cpp:116
 msgid "<p>... you can associate a logo with your banks.</p>"
 msgstr ""
 
@@ -284,49 +285,55 @@ msgstr ""
 msgid "&Split share..."
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:151 skrooge_unit/skgunitpluginwidget.cpp:79
+#. i18n: file: skrooge_unit/skgunitpluginwidget_board.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: skrooge_unit/skgunitplugin.cpp:84 rc.cpp:1523
+msgid "Shares && Indexes"
+msgstr ""
+
+#: skrooge_unit/skgunitplugin.cpp:163 skrooge_unit/skgunitpluginwidget.cpp:79
 msgid "Units"
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:161
+#: skrooge_unit/skgunitplugin.cpp:173
 msgid "Unit management (creation, update, ...)"
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:166
+#: skrooge_unit/skgunitplugin.cpp:178
 msgid "Unit management"
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:172
+#: skrooge_unit/skgunitplugin.cpp:184
 msgid "<p>... you can download units.</p>"
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:173
+#: skrooge_unit/skgunitplugin.cpp:185
 msgid ""
 "<p>... units can be downloaded automatically when a document is opened.</p>"
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:174
+#: skrooge_unit/skgunitplugin.cpp:186
 msgid "<p>... you can split a share.</p>"
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:199
+#: skrooge_unit/skgunitplugin.cpp:211
 msgid "Split share"
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:200
+#: skrooge_unit/skgunitplugin.cpp:212
 msgid "Ratio (2 means 2-for-1, 0.5 means 1-for-2) :"
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:204
+#: skrooge_unit/skgunitplugin.cpp:216
 #, kde-format
 msgid "Split stock [%1] by [%2]"
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:212
+#: skrooge_unit/skgunitplugin.cpp:224
 msgid "Stock split."
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:213
+#: skrooge_unit/skgunitplugin.cpp:225
 msgid "Splitting stock failed."
 msgstr ""
 
@@ -468,7 +475,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (KPushButton, kAddButton)
 #. i18n: file: skrooge_unit/skgunitpluginwidget_base.ui:713
 #. i18n: ectx: property (text), widget (KPushButton, kUnitAdd)
-#: skrooge_dashboard/skgdashboardpluginwidget.cpp:48 rc.cpp:286 rc.cpp:351
+#: skrooge_dashboard/skgdashboardpluginwidget.cpp:49 rc.cpp:286 rc.cpp:351
 #: rc.cpp:854 rc.cpp:1277 rc.cpp:1325 rc.cpp:1511
 #, fuzzy
 msgid "Add"
@@ -478,12 +485,12 @@ msgstr "Tambah"
 #. i18n: ectx: property (text), widget (KPushButton, kRemove)
 #. i18n: file: skrooge_operation/skgoperationpluginwidget_base.ui:1016
 #. i18n: ectx: property (text), widget (KPushButton, kRemoveSubOperation)
-#: skrooge_dashboard/skgdashboardpluginwidget.cpp:49 rc.cpp:5 rc.cpp:755
+#: skrooge_dashboard/skgdashboardpluginwidget.cpp:50 rc.cpp:5 rc.cpp:755
 #, fuzzy
 msgid "Remove"
 msgstr "Buang"
 
-#: skrooge_dashboard/skgdashboardpluginwidget.cpp:72
+#: skrooge_dashboard/skgdashboardpluginwidget.cpp:76
 #, fuzzy
 msgid "Number of columns"
 msgstr "Operasi"
@@ -567,58 +574,64 @@ msgid "&Schedule"
 msgstr ""
 
 #: skrooge_scheduled/skgscheduledplugin.cpp:97
-#: skrooge_scheduled/skgscheduledpluginwidget.cpp:266
+#: skrooge_scheduled/skgscheduledpluginwidget.cpp:275
 msgid "Insert recurrent operations"
 msgstr ""
 
-#: skrooge_scheduled/skgscheduledplugin.cpp:142
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_board.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: skrooge_scheduled/skgscheduledplugin.cpp:123 rc.cpp:1124
+msgid "Scheduled operations"
+msgstr ""
+
+#: skrooge_scheduled/skgscheduledplugin.cpp:154
 msgid "Scheduled"
 msgstr ""
 
-#: skrooge_scheduled/skgscheduledplugin.cpp:152
-#: skrooge_scheduled/skgscheduledplugin.cpp:157
+#: skrooge_scheduled/skgscheduledplugin.cpp:164
+#: skrooge_scheduled/skgscheduledplugin.cpp:169
 msgid "Manage scheduled operations"
 msgstr ""
 
-#: skrooge_scheduled/skgscheduledplugin.cpp:169
+#: skrooge_scheduled/skgscheduledplugin.cpp:181
 msgid "<p>... you can schedule operations or templates.</p>"
 msgstr ""
 
-#: skrooge_scheduled/skgscheduledplugin.cpp:194
+#: skrooge_scheduled/skgscheduledplugin.cpp:206
 msgid "Operation schedule"
 msgstr ""
 
-#: skrooge_scheduled/skgscheduledplugin.cpp:208
+#: skrooge_scheduled/skgscheduledplugin.cpp:220
 msgid "A template has been created"
 msgstr ""
 
-#: skrooge_scheduled/skgscheduledplugin.cpp:234
+#: skrooge_scheduled/skgscheduledplugin.cpp:246
 msgid "Operation scheduled."
 msgstr ""
 
-#: skrooge_scheduled/skgscheduledplugin.cpp:235
+#: skrooge_scheduled/skgscheduledplugin.cpp:247
 msgid "Operation schedule failed"
 msgstr ""
 
-#: skrooge_scheduled/skgscheduledpluginwidget.cpp:49
-#: skrooge_scheduled/skgscheduledpluginwidget.cpp:155
+#: skrooge_scheduled/skgscheduledpluginwidget.cpp:53
+#: skrooge_scheduled/skgscheduledpluginwidget.cpp:164
 msgid "Recurrent operations"
 msgstr ""
 
-#: skrooge_scheduled/skgscheduledpluginwidget.cpp:227
+#: skrooge_scheduled/skgscheduledpluginwidget.cpp:236
 #: skgbankgui/skgobjectmodel.cpp:645
 msgid "Recurrent operation update"
 msgstr ""
 
-#: skrooge_scheduled/skgscheduledpluginwidget.cpp:247
+#: skrooge_scheduled/skgscheduledpluginwidget.cpp:256
 msgid "Recurrent operation updated."
 msgstr ""
 
-#: skrooge_scheduled/skgscheduledpluginwidget.cpp:277
+#: skrooge_scheduled/skgscheduledpluginwidget.cpp:286
 msgid "Recurrent operation inserted."
 msgstr ""
 
-#: skrooge_scheduled/skgscheduledpluginwidget.cpp:278
+#: skrooge_scheduled/skgscheduledpluginwidget.cpp:287
 msgid "Insertion failed"
 msgstr ""
 
@@ -1065,7 +1078,7 @@ msgid_plural "Operation [%1] will be inserted in %2 day"
 msgstr[0] ""
 msgstr[1] ""
 
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:175
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:201
 #. i18n: ectx: property (text), item, widget (KComboBox, kOnceEveryUnit)
 #. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:77
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_once_every_unit)
@@ -1074,7 +1087,7 @@ msgstr[1] ""
 msgid "year(s)"
 msgstr "tahun"
 
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:170
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:196
 #. i18n: ectx: property (text), item, widget (KComboBox, kOnceEveryUnit)
 #. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:72
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_once_every_unit)
@@ -1083,7 +1096,7 @@ msgstr "tahun"
 msgid "month(s)"
 msgstr "bulan"
 
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:165
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:191
 #. i18n: ectx: property (text), item, widget (KComboBox, kOnceEveryUnit)
 #. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:67
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_once_every_unit)
@@ -1567,167 +1580,167 @@ msgstr ""
 msgid "Move bookmark"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:109
+#: skgbasegui/skgmainpanel.cpp:108
 #, fuzzy
 msgid "Quit"
 msgstr "Keluar"
 
-#: skgbasegui/skgmainpanel.cpp:135
+#: skgbasegui/skgmainpanel.cpp:134
 msgid "Loading plugins..."
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:141
+#: skgbasegui/skgmainpanel.cpp:140
 #, kde-format
 msgid "Loading plugin %1/%2: %3..."
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:179
+#: skgbasegui/skgmainpanel.cpp:178
 #, kde-format
 msgid "Plugin's interface %1 not found in %2"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:184
+#: skgbasegui/skgmainpanel.cpp:183
 #, kde-format
 msgid "Loading plugin %1 failed because the factory could not be found in %2"
 msgstr ""
 
 #. i18n: file: skgbasegui/skgmainpanel_base.ui:33
 #. i18n: ectx: property (windowTitle), widget (QDockWidget, kDockContext)
-#: skgbasegui/skgmainpanel.cpp:207 rc.cpp:65
+#: skgbasegui/skgmainpanel.cpp:206 rc.cpp:65
 msgid "Context Chooser"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:221
+#: skgbasegui/skgmainpanel.cpp:220
 #, fuzzy
 msgid "Theme"
 msgstr "Tema"
 
-#: skgbasegui/skgmainpanel.cpp:240
+#: skgbasegui/skgmainpanel.cpp:239
 #, fuzzy
 msgid "Context"
 msgstr "Konteks"
 
-#: skgbasegui/skgmainpanel.cpp:317 skgbasegui/skgmainpanel.cpp:318
-#: skgbasegui/skgmainpanel.cpp:319
+#: skgbasegui/skgmainpanel.cpp:316 skgbasegui/skgmainpanel.cpp:317
+#: skgbasegui/skgmainpanel.cpp:318
 msgid "Progress of the current action"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:329 skgbasegui/skgmainpanel.cpp:330
-#: skgbasegui/skgmainpanel.cpp:331
+#: skgbasegui/skgmainpanel.cpp:328 skgbasegui/skgmainpanel.cpp:329
+#: skgbasegui/skgmainpanel.cpp:330
 msgid "Cancel the current action"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:447
+#: skgbasegui/skgmainpanel.cpp:446
 msgid "New &Tab"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:454
+#: skgbasegui/skgmainpanel.cpp:453
 #, fuzzy
 msgid "Close"
 msgstr "Tutup"
 
-#: skgbasegui/skgmainpanel.cpp:461
+#: skgbasegui/skgmainpanel.cpp:460
 msgid "Close All"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:468
+#: skgbasegui/skgmainpanel.cpp:467
 msgid "Close All Other"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:475
+#: skgbasegui/skgmainpanel.cpp:474
 msgid "Save context state"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:482
+#: skgbasegui/skgmainpanel.cpp:481
 msgid "Reset context state"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:489
+#: skgbasegui/skgmainpanel.cpp:488
 msgid "Overwrite bookmark state"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:536
+#: skgbasegui/skgmainpanel.cpp:535
 msgid "Skrooge cannot be closed when an operation is running."
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:545
+#: skgbasegui/skgmainpanel.cpp:544
 msgid ""
 "The document has been modified.\n"
 "Do you want to save it before closing?"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:547
+#: skgbasegui/skgmainpanel.cpp:546
 msgid "Save as"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:547 skgbasegui/skgmainpanel.cpp:1148
+#: skgbasegui/skgmainpanel.cpp:546 skgbasegui/skgmainpanel.cpp:1147
 #: skgbasemodeler/skgdocument.cpp:1781
 #, fuzzy
 msgid "Save"
 msgstr "Simpan"
 
-#: skgbasegui/skgmainpanel.cpp:549
+#: skgbasegui/skgmainpanel.cpp:548
 msgid "Do not save"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:554
+#: skgbasegui/skgmainpanel.cpp:553
 msgid ""
 "Current modifications will not be saved.\n"
 "Do you want to continue ?"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:632
+#: skgbasegui/skgmainpanel.cpp:631
 #, fuzzy
 msgid "General"
 msgstr "Umum"
 
-#: skgbasegui/skgmainpanel.cpp:669
+#: skgbasegui/skgmainpanel.cpp:668
 msgid "Save settings"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:764
+#: skgbasegui/skgmainpanel.cpp:763
 msgid " [modified]"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:766
+#: skgbasegui/skgmainpanel.cpp:765
 #, fuzzy
 msgid "Untitled"
 msgstr "Tiada tajuk"
 
-#: skgbasegui/skgmainpanel.cpp:767
+#: skgbasegui/skgmainpanel.cpp:766
 #, kde-format
 msgid "%1%2 - %3"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:817
+#: skgbasegui/skgmainpanel.cpp:816
 msgid "Impossible to open the page because the plugin was not found"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:946
+#: skgbasegui/skgmainpanel.cpp:945
 msgid "Reset default state"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:953
+#: skgbasegui/skgmainpanel.cpp:952
 msgid "Default state has been reset"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1072 skgbasegui/skgmainpanel.cpp:1076
+#: skgbasegui/skgmainpanel.cpp:1071 skgbasegui/skgmainpanel.cpp:1075
 msgid "Error"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1074 skrooge_undoredo/skgundoredoplugin.cpp:177
+#: skgbasegui/skgmainpanel.cpp:1073 skrooge_undoredo/skgundoredoplugin.cpp:177
 #: skrooge_undoredo/skgundoredoplugin.cpp:187
 #: skrooge_undoredo/skgundoredoplugin.cpp:192
 #, fuzzy
 msgid "History"
 msgstr "Sejarah"
 
-#: skgbasegui/skgmainpanel.cpp:1146
+#: skgbasegui/skgmainpanel.cpp:1145
 #, kde-format
 msgid "File <b>%1</b> already exists. Do you really want to overwrite it?"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1147
+#: skgbasegui/skgmainpanel.cpp:1146
 #, fuzzy
 msgid "Warning"
 msgstr "Amaran"
@@ -2243,99 +2256,105 @@ msgstr ""
 msgid "&Open highlights"
 msgstr "Operasi"
 
+#. i18n: file: skrooge_operation/skgoperationpluginwidget_board.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: skrooge_operation/skgoperationplugin.cpp:155 rc.cpp:866
+msgid "Income && Expenditure"
+msgstr ""
+
 #. i18n: file: skrooge_operation/skgoperationpluginwidget_base.ui:207
 #. i18n: ectx: property (text), widget (QToolButton, kOperationBtn)
-#: skrooge_operation/skgoperationplugin.cpp:174 rc.cpp:620
+#: skrooge_operation/skgoperationplugin.cpp:186 rc.cpp:620
 #, fuzzy
 msgid "Operations"
 msgstr "Operasi"
 
-#: skrooge_operation/skgoperationplugin.cpp:184
+#: skrooge_operation/skgoperationplugin.cpp:196
 msgid "Operation management (creation, update, ...)"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:189
+#: skrooge_operation/skgoperationplugin.cpp:201
 msgid "Operation management"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:201
+#: skrooge_operation/skgoperationplugin.cpp:213
 msgid ""
 "<p>... you can press <strong>+</strong>, <strong>-</strong>, <strong>CTRL +</"
 "strong> or <strong>CTRL -</strong> to quickly change dates.</p>"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:202
+#: skrooge_operation/skgoperationplugin.cpp:214
 msgid "<p>... you can update many operations in one shot.</p>"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:203
+#: skrooge_operation/skgoperationplugin.cpp:215
 msgid ""
 "<p>... you can double click on an operation to show or edit sub operations.</"
 "p>"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:204
+#: skrooge_operation/skgoperationplugin.cpp:216
 msgid ""
 "<p>... you can duplicate an operation including complex operations (split, "
 "grouped, ...).</p>"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:205
+#: skrooge_operation/skgoperationplugin.cpp:217
 msgid "<p>... you can create template of operations.</p>"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:223
+#: skrooge_operation/skgoperationplugin.cpp:235
 msgid "Switch to pointed"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:237
+#: skrooge_operation/skgoperationplugin.cpp:249
 msgid "Operation pointed."
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:238
+#: skrooge_operation/skgoperationplugin.cpp:250
 #: skrooge_operation/skgoperationpluginwidget.cpp:1674
 msgid "Switch failed"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:254
+#: skrooge_operation/skgoperationplugin.cpp:266
 #, fuzzy
 msgid "Operation highlight"
 msgstr "Operasi"
 
-#: skrooge_operation/skgoperationplugin.cpp:268
+#: skrooge_operation/skgoperationplugin.cpp:280
 #, fuzzy
 msgid "Operation highlighted."
 msgstr "Operasi"
 
-#: skrooge_operation/skgoperationplugin.cpp:269
+#: skrooge_operation/skgoperationplugin.cpp:281
 msgid "Operation highlight failed"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:286
+#: skrooge_operation/skgoperationplugin.cpp:298
 msgid "Duplicate operation"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:302
+#: skrooge_operation/skgoperationplugin.cpp:314
 msgid "Operation duplicated."
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:305
+#: skrooge_operation/skgoperationplugin.cpp:317
 msgid "Duplicate operation failed"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:322
+#: skrooge_operation/skgoperationplugin.cpp:334
 msgid "Create template"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:338
+#: skrooge_operation/skgoperationplugin.cpp:350
 msgid "Template created."
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:344
+#: skrooge_operation/skgoperationplugin.cpp:356
 msgid "Creation template failed"
 msgstr ""
 
-#: skrooge_operation/skgoperationplugin.cpp:355
+#: skrooge_operation/skgoperationplugin.cpp:367
 #, fuzzy
 msgid "Highlighted operations"
 msgstr "Operasi"
@@ -2663,95 +2682,95 @@ msgid ""
 "<p>... skrooge can search and automatically process some operations.</p>"
 msgstr ""
 
-#: skrooge_search/skgsearchpluginwidget.cpp:69
+#: skrooge_search/skgsearchpluginwidget.cpp:77
 #, fuzzy
 msgid "Rules"
 msgstr "Peraturan"
 
-#: skrooge_search/skgsearchpluginwidget.cpp:217
+#: skrooge_search/skgsearchpluginwidget.cpp:225
 msgid "Search creation"
 msgstr ""
 
-#: skrooge_search/skgsearchpluginwidget.cpp:229
+#: skrooge_search/skgsearchpluginwidget.cpp:237
 msgid "Search created"
 msgstr ""
 
-#: skrooge_search/skgsearchpluginwidget.cpp:231
+#: skrooge_search/skgsearchpluginwidget.cpp:239
 msgid "Search creation failed"
 msgstr ""
 
-#: skrooge_search/skgsearchpluginwidget.cpp:236
+#: skrooge_search/skgsearchpluginwidget.cpp:244
 #, fuzzy
 msgid "Process creation"
 msgstr "Process"
 
-#: skrooge_search/skgsearchpluginwidget.cpp:246
+#: skrooge_search/skgsearchpluginwidget.cpp:254
 #, fuzzy
 msgid "Process created"
 msgstr "Process"
 
-#: skrooge_search/skgsearchpluginwidget.cpp:247
+#: skrooge_search/skgsearchpluginwidget.cpp:255
 #, fuzzy
 msgid "Process creation failed"
 msgstr "Gagal untuk memadam"
 
-#: skrooge_search/skgsearchpluginwidget.cpp:259
-#: skrooge_search/skgsearchpluginwidget.cpp:371
-#: skrooge_search/skgsearchpluginwidget.cpp:406
-#: skrooge_search/skgsearchpluginwidget.cpp:447
-#: skrooge_search/skgsearchpluginwidget.cpp:488
+#: skrooge_search/skgsearchpluginwidget.cpp:267
+#: skrooge_search/skgsearchpluginwidget.cpp:379
+#: skrooge_search/skgsearchpluginwidget.cpp:414
+#: skrooge_search/skgsearchpluginwidget.cpp:455
+#: skrooge_search/skgsearchpluginwidget.cpp:496
 msgid "Search update"
 msgstr ""
 
-#: skrooge_search/skgsearchpluginwidget.cpp:270
-#: skrooge_search/skgsearchpluginwidget.cpp:390
-#: skrooge_search/skgsearchpluginwidget.cpp:431
-#: skrooge_search/skgsearchpluginwidget.cpp:472
-#: skrooge_search/skgsearchpluginwidget.cpp:507
+#: skrooge_search/skgsearchpluginwidget.cpp:278
+#: skrooge_search/skgsearchpluginwidget.cpp:398
+#: skrooge_search/skgsearchpluginwidget.cpp:439
+#: skrooge_search/skgsearchpluginwidget.cpp:480
+#: skrooge_search/skgsearchpluginwidget.cpp:515
 msgid "Search updated"
 msgstr ""
 
-#: skrooge_search/skgsearchpluginwidget.cpp:271
-#: skrooge_search/skgsearchpluginwidget.cpp:391
-#: skrooge_search/skgsearchpluginwidget.cpp:432
-#: skrooge_search/skgsearchpluginwidget.cpp:473
-#: skrooge_search/skgsearchpluginwidget.cpp:508
+#: skrooge_search/skgsearchpluginwidget.cpp:279
+#: skrooge_search/skgsearchpluginwidget.cpp:399
+#: skrooge_search/skgsearchpluginwidget.cpp:440
+#: skrooge_search/skgsearchpluginwidget.cpp:481
+#: skrooge_search/skgsearchpluginwidget.cpp:516
 msgid "Search update failed"
 msgstr ""
 
-#: skrooge_search/skgsearchpluginwidget.cpp:273
+#: skrooge_search/skgsearchpluginwidget.cpp:281
 #, fuzzy
 msgid "Process update"
 msgstr "Process"
 
-#: skrooge_search/skgsearchpluginwidget.cpp:284
+#: skrooge_search/skgsearchpluginwidget.cpp:292
 #, fuzzy
 msgid "Process updated"
 msgstr "Process"
 
-#: skrooge_search/skgsearchpluginwidget.cpp:285
+#: skrooge_search/skgsearchpluginwidget.cpp:293
 msgid "Process update failed"
 msgstr ""
 
-#: skrooge_search/skgsearchpluginwidget.cpp:309
+#: skrooge_search/skgsearchpluginwidget.cpp:317
 msgid "Process execution"
 msgstr ""
 
-#: skrooge_search/skgsearchpluginwidget.cpp:325
+#: skrooge_search/skgsearchpluginwidget.cpp:333
 #, fuzzy
 msgid "Process executed"
 msgstr "Process"
 
-#: skrooge_search/skgsearchpluginwidget.cpp:326
+#: skrooge_search/skgsearchpluginwidget.cpp:334
 msgid "Process execution failed"
 msgstr ""
 
-#: skrooge_search/skgsearchpluginwidget.cpp:529
+#: skrooge_search/skgsearchpluginwidget.cpp:537
 #, kde-format
 msgid "Sub operations corresponding to rule '%1'"
 msgstr ""
 
-#: skrooge_search/skgsearchpluginwidget.cpp:584
+#: skrooge_search/skgsearchpluginwidget.cpp:592
 #, fuzzy, kde-format
 msgid "%1 operation found."
 msgid_plural "%1 operations found."
@@ -3425,7 +3444,7 @@ msgstr "Nama:"
 #. i18n: ectx: property (text), widget (KPushButton, kModifyCategoryButton)
 #. i18n: file: skrooge_operation/skgoperationpluginwidget_base.ui:1494
 #. i18n: ectx: property (text), widget (KPushButton, kModifyOperationBtn)
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:140
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:166
 #. i18n: ectx: property (text), widget (KPushButton, kModifyBtn)
 #. i18n: file: skrooge_tracker/skgtrackerpluginwidget_base.ui:221
 #. i18n: ectx: property (text), widget (KPushButton, kModifyButton)
@@ -4160,22 +4179,16 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (KPushButton, kModifyOperationBtn)
 #. i18n: file: skrooge_operation/skgoperationpluginwidget_base.ui:1491
 #. i18n: ectx: property (statusTip), widget (KPushButton, kModifyOperationBtn)
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:134
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:160
 #. i18n: ectx: property (toolTip), widget (KPushButton, kModifyBtn)
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:137
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:163
 #. i18n: ectx: property (statusTip), widget (KPushButton, kModifyBtn)
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:234
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:247
 #. i18n: ectx: property (toolTip), widget (KPushButton, kProcessBtn)
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:237
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:250
 #. i18n: ectx: property (statusTip), widget (KPushButton, kProcessBtn)
 #: rc.cpp:857 rc.cpp:860 rc.cpp:1085 rc.cpp:1088 rc.cpp:1112 rc.cpp:1115
 msgid "Update selected operations"
-msgstr ""
-
-#. i18n: file: skrooge_operation/skgoperationpluginwidget_board.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:866
-msgid "Income && Expenditure"
 msgstr ""
 
 #. i18n: file: skrooge_operation/skgoperationpluginwidget_board.ui:30
@@ -4457,21 +4470,21 @@ msgstr ""
 msgid "First, you have to schedule an operation from the operations page."
 msgstr ""
 
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:27
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:66
 #. i18n: ectx: property (toolTip), widget (SKGTableView, kView)
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:30
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:69
 #. i18n: ectx: property (statusTip), widget (SKGTableView, kView)
 #: rc.cpp:1070 rc.cpp:1073
 msgid "List of recurrent operations"
 msgstr ""
 
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:55
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:1076
 msgid "Next occurrence:"
 msgstr ""
 
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:88
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:127
 #. i18n: ectx: property (text), widget (QCheckBox, kRemindMe)
 #. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_remind_me)
@@ -4480,19 +4493,19 @@ msgstr ""
 msgid "Remind me"
 msgstr "Tukar nama"
 
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:108
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:208
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:234
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:110
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:153
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:140
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:1082 rc.cpp:1109 rc.cpp:1151 rc.cpp:1157
 msgid "days before term"
 msgstr ""
 
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:147
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:173
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -4500,16 +4513,16 @@ msgstr ""
 msgid "Once every:"
 msgstr ""
 
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:188
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:214
 #. i18n: ectx: property (text), widget (QCheckBox, kAutoWrite)
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:133
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:120
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_auto_write)
 #: rc.cpp:1106 rc.cpp:1154
 #, fuzzy
 msgid "Automatically write"
 msgstr "Automula"
 
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:240
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:253
 #. i18n: ectx: property (text), widget (KPushButton, kProcessBtn)
 #. i18n: file: skrooge_search/skgsearchpluginwidget_base.ui:352
 #. i18n: ectx: property (text), widget (QToolButton, kActionBtn)
@@ -4518,20 +4531,14 @@ msgstr "Automula"
 msgid "Process"
 msgstr "Process"
 
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:247
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_base.ui:260
 #. i18n: ectx: property (text), widget (QCheckBox, kNbTimes)
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:176
+#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:173
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_nb_times)
 #: rc.cpp:1121 rc.cpp:1160
 #, fuzzy
 msgid "Number of occurences"
 msgstr "Operasi"
-
-#. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_board.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1124
-msgid "Scheduled operations"
-msgstr ""
 
 #. i18n: file: skrooge_scheduled/skgscheduledpluginwidget_pref.ui:20
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_check_on_open)
@@ -5030,12 +5037,6 @@ msgstr ""
 #. i18n: ectx: property (statusTip), widget (KPushButton, kUnitUpdate)
 #: rc.cpp:1514 rc.cpp:1517
 msgid "Update the selected unit"
-msgstr ""
-
-#. i18n: file: skrooge_unit/skgunitpluginwidget_board.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1523
-msgid "Shares && Indexes"
 msgstr ""
 
 #. i18n: file: skrooge_unit/skgunitpluginwidget_pref.ui:17
