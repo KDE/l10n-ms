@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-19 06:01+0200\n"
+"POT-Creation-Date: 2009-09-20 06:17+0200\n"
 "PO-Revision-Date: 2009-09-12 00:31+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -403,7 +403,7 @@ msgid ""
 "useful if you want to take a look at it or to report the bug later."
 msgstr "Guna hingga hingga a fail ialah hingga a atau hingga."
 
-#: backtracewidget.cpp:98 reportassistantpages_bugzilla.cpp:615
+#: backtracewidget.cpp:98 reportassistantpages_bugzilla.cpp:636
 msgctxt "@info:status"
 msgid "Loading..."
 msgstr "Memuatkan..."
@@ -521,28 +521,34 @@ msgctxt "@title:window"
 msgid "Error during the installation of debug symbols"
 msgstr "Guna hingga henti."
 
-#: bugzillalib.cpp:142
+#: bugzillalib.cpp:132
 #, fuzzy
 msgctxt "@info"
 msgid "Unknown response from the server"
 msgstr "Tidak diketahui"
 
-#: bugzillalib.cpp:196
+#: bugzillalib.cpp:163
 #, fuzzy
 msgctxt "@info"
 msgid "Invalid bug report: corrupted data"
 msgstr "Tidak sah"
 
-#: bugzillalib.cpp:257
+#: bugzillalib.cpp:219
 #, fuzzy
 msgctxt "@info"
 msgid "Invalid bug list: corrupted data"
 msgstr "Tidak sah"
 
-#: bugzillalib.cpp:339
+#: bugzillalib.cpp:297 bugzillalib.cpp:358
 msgctxt "@info"
 msgid "Unknown error"
 msgstr "Ralat tidak diketahui"
+
+#: bugzillalib.cpp:361
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Error while attaching the data to the bug report: %1"
+msgstr "Ralat"
 
 #: debugpackageinstaller.cpp:65
 msgctxt "@title:window"
@@ -1057,13 +1063,13 @@ msgctxt "@title:window"
 msgid "Crash Information is not useful enough"
 msgstr "Maklumat ialah"
 
-#: reportassistantpages_base.cpp:140 reportassistantpages_bugzilla.cpp:926
+#: reportassistantpages_base.cpp:140 reportassistantpages_bugzilla.cpp:947
 #, fuzzy
 msgctxt "@action:button"
 msgid "Sho&w Contents of the Report"
 msgstr "Papar Kandungan bagi Laporan"
 
-#: reportassistantpages_base.cpp:142 reportassistantpages_bugzilla.cpp:928
+#: reportassistantpages_base.cpp:142 reportassistantpages_bugzilla.cpp:949
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid ""
@@ -1071,7 +1077,7 @@ msgid ""
 msgstr "Guna hingga."
 
 #: reportassistantpages_base.cpp:172 reportassistantpages_base.cpp:343
-#: reportassistantpages_bugzilla.cpp:998
+#: reportassistantpages_bugzilla.cpp:1019
 #, fuzzy, kde-format
 msgctxt "@info/plain"
 msgid "Report to %1"
@@ -1233,18 +1239,18 @@ msgid ""
 "You can use this option to report the bug later."
 msgstr "Guna hingga hingga a fail Anda hingga."
 
-#: reportassistantpages_bugzilla.cpp:61
+#: reportassistantpages_bugzilla.cpp:62
 #, fuzzy, kde-format
 msgctxt "@info:status '1' is replaced with \"bugs.kde.org\""
 msgid "You need to login with your %1 account in order to proceed."
 msgstr "Anda hingga akaun inci hingga."
 
-#: reportassistantpages_bugzilla.cpp:64
+#: reportassistantpages_bugzilla.cpp:65
 msgctxt "@action:button"
 msgid "Login"
 msgstr "Logmasuk"
 
-#: reportassistantpages_bugzilla.cpp:66
+#: reportassistantpages_bugzilla.cpp:67
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid ""
@@ -1252,7 +1258,7 @@ msgid ""
 "username and password."
 msgstr "Guna hingga hingga KDE dan."
 
-#: reportassistantpages_bugzilla.cpp:75
+#: reportassistantpages_bugzilla.cpp:76
 #, fuzzy, kde-format
 msgctxt "@info/rich"
 msgid ""
@@ -1264,86 +1270,96 @@ msgstr ""
 "<note> Anda a akaun buka<link url='%1'> KDE</link> inci hingga fail a hingga "
 "for<link url='%2'></link></note>"
 
-#: reportassistantpages_bugzilla.cpp:92
+#: reportassistantpages_bugzilla.cpp:93
 #, fuzzy, kde-format
 msgctxt "@info:status"
 msgid "Error when trying to login: <message>%1.</message>"
 msgstr "Ralat hingga<message></message>"
 
-#: reportassistantpages_bugzilla.cpp:118
+#: reportassistantpages_bugzilla.cpp:119
 #, fuzzy, kde-format
 msgctxt "@info:status the user is logged at the bugtracker site as USERNAME"
 msgid "Logged in at the KDE bug tracking system (%1) as: %2."
 msgstr "inci KDE."
 
-#: reportassistantpages_bugzilla.cpp:233
+#: reportassistantpages_bugzilla.cpp:234
 #, kde-format
 msgctxt "@info:status '1' is a url, '2' the username"
 msgid "Performing login at %1 as %2..."
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:257
+#: reportassistantpages_bugzilla.cpp:258
 #, fuzzy
 msgctxt "@info:status/rich"
 msgid "<b>Error: Invalid username or password</b>"
 msgstr "Tidak sah atau"
 
-#: reportassistantpages_bugzilla.cpp:306
+#: reportassistantpages_bugzilla.cpp:308
+msgctxt "@item:intable custom bug report number"
+msgid "Custom"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:310
+msgctxt "@item:intable custom bug report number description"
+msgid "Manually enter a bug report ID"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:316
 #, fuzzy
 msgctxt "@action:button"
 msgid "Search for more reports"
 msgstr "Cari for lebih"
 
-#: reportassistantpages_bugzilla.cpp:308
+#: reportassistantpages_bugzilla.cpp:318
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid ""
 "Use this button to search for more similar bug reports on an earlier date."
 msgstr "Guna hingga for lebih buka tarikh."
 
-#: reportassistantpages_bugzilla.cpp:314
+#: reportassistantpages_bugzilla.cpp:324
 #, fuzzy
 msgctxt "@action:button"
 msgid "Retry search"
 msgstr "Ulangi"
 
-#: reportassistantpages_bugzilla.cpp:316
+#: reportassistantpages_bugzilla.cpp:326
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Use this button to retry the search that previously failed."
 msgstr "Guna hingga Gagal."
 
-#: reportassistantpages_bugzilla.cpp:320
+#: reportassistantpages_bugzilla.cpp:330
 #, fuzzy
 msgctxt "@action:button"
 msgid "Open selected report"
 msgstr "Buka"
 
-#: reportassistantpages_bugzilla.cpp:322
+#: reportassistantpages_bugzilla.cpp:332
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Use this button to view the information of the selected bug report."
 msgstr "Guna hingga bagi."
 
-#: reportassistantpages_bugzilla.cpp:326
+#: reportassistantpages_bugzilla.cpp:336
 #, fuzzy
 msgctxt "@action:button"
 msgid "Stop searching"
 msgstr "Henti"
 
-#: reportassistantpages_bugzilla.cpp:328
+#: reportassistantpages_bugzilla.cpp:338
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Use this button to stop the current search."
 msgstr "Guna hingga henti."
 
-#: reportassistantpages_bugzilla.cpp:383
+#: reportassistantpages_bugzilla.cpp:393
 #, fuzzy
 msgctxt "@info:status"
 msgid "Error fetching the bug report list"
 msgstr "Ralat"
 
-#: reportassistantpages_bugzilla.cpp:385
+#: reportassistantpages_bugzilla.cpp:395
 #, fuzzy, kde-format
 msgctxt "@info/rich"
 msgid ""
@@ -1351,49 +1367,59 @@ msgid ""
 "wait some time and try again."
 msgstr "Ralat<nl/><message></message><nl/> beberapa masa  dan."
 
-#: reportassistantpages_bugzilla.cpp:467
+#: reportassistantpages_bugzilla.cpp:408
+msgctxt "@title:window"
+msgid "Enter a custom bug report number"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:409
+msgctxt "@label"
+msgid "Enter the number of the bug report you want to check"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:488
 #, fuzzy
 msgctxt "@info:status"
 msgid "Search stopped."
 msgstr "Cari dihentikan."
 
-#: reportassistantpages_bugzilla.cpp:469
+#: reportassistantpages_bugzilla.cpp:490
 #, fuzzy, kde-format
 msgctxt "@info:status"
 msgid "Search stopped. Showing results from %1 to %2"
 msgstr "Cari dihentikan hingga 2"
 
-#: reportassistantpages_bugzilla.cpp:483
+#: reportassistantpages_bugzilla.cpp:504
 #, fuzzy, kde-format
 msgctxt "@info:status"
 msgid "Searching for duplicates (from %1 to %2)..."
 msgstr "Mencari for hingga."
 
-#: reportassistantpages_bugzilla.cpp:522
+#: reportassistantpages_bugzilla.cpp:543
 #, fuzzy, kde-format
 msgctxt "@info:status"
 msgid "Showing results from %1 to %2"
 msgstr "hingga 2"
 
-#: reportassistantpages_bugzilla.cpp:549
+#: reportassistantpages_bugzilla.cpp:570
 #, fuzzy
 msgctxt "@info:status"
 msgid "Search Finished. No reports found."
 msgstr "Cari Habis Tidak."
 
-#: reportassistantpages_bugzilla.cpp:573
+#: reportassistantpages_bugzilla.cpp:594
 #, fuzzy
 msgctxt "@title:window"
 msgid "Bug Description"
 msgstr "Huraian"
 
-#: reportassistantpages_bugzilla.cpp:580
+#: reportassistantpages_bugzilla.cpp:601
 #, fuzzy
 msgctxt "@action:button"
 msgid "My crash may be a duplicate of this report"
 msgstr "a bagi"
 
-#: reportassistantpages_bugzilla.cpp:581
+#: reportassistantpages_bugzilla.cpp:602
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid ""
@@ -1402,103 +1428,103 @@ msgid ""
 "duplicates or not."
 msgstr "Guna hingga hingga KDE hingga atau."
 
-#: reportassistantpages_bugzilla.cpp:618
+#: reportassistantpages_bugzilla.cpp:639
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "<link url='%1'>Bug report page at the KDE bug tracking system</link>"
 msgstr "<link url='%1'> halaman KDE</link>"
 
-#: reportassistantpages_bugzilla.cpp:622
+#: reportassistantpages_bugzilla.cpp:643
 #, fuzzy, kde-format
 msgctxt "@info:status"
 msgid "Loading information about bug <numid>%1</numid> from %2...."
 msgstr "Memuat<numid></numid>."
 
-#: reportassistantpages_bugzilla.cpp:650
+#: reportassistantpages_bugzilla.cpp:671
 msgctxt "@info bug status"
 msgid "Open"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:657
+#: reportassistantpages_bugzilla.cpp:678
 msgctxt "@info bug resolution"
 msgid "Fixed"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:659
+#: reportassistantpages_bugzilla.cpp:680
 msgctxt "@info bug resolution"
 msgid "Non-reproducible"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:661
+#: reportassistantpages_bugzilla.cpp:682
 msgctxt "@info bug resolution"
 msgid "Already reported"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:663
+#: reportassistantpages_bugzilla.cpp:684
 #, fuzzy
 msgctxt "@info bug resolution"
 msgid "Not a valid report/crash"
 msgstr "Tidak sah"
 
-#: reportassistantpages_bugzilla.cpp:666
+#: reportassistantpages_bugzilla.cpp:687
 msgctxt "@info bug resolution"
 msgid "Not a KDE bug"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:671
+#: reportassistantpages_bugzilla.cpp:692
 #, kde-format
 msgctxt "@info bug status, %1 is the resolutin"
 msgid "Closed (%1)"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:674
+#: reportassistantpages_bugzilla.cpp:695
 msgctxt "@info bug status"
 msgid "Temporary closed because the lack of information"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:682
+#: reportassistantpages_bugzilla.cpp:703
 #, fuzzy, kde-format
 msgctxt "@label:textbox bug report label and value"
 msgid "<strong>Product:</strong> %1 (%2)<br />"
 msgstr "<strong> Produk</strong><br />"
 
-#: reportassistantpages_bugzilla.cpp:685
+#: reportassistantpages_bugzilla.cpp:706
 #, fuzzy, kde-format
 msgctxt "@label:textbox bug report label and value"
 msgid "<strong>Title:</strong> %1<br />"
 msgstr "<strong> Status</strong><br />"
 
-#: reportassistantpages_bugzilla.cpp:687
+#: reportassistantpages_bugzilla.cpp:708
 #, fuzzy, kde-format
 msgctxt "@label:textbox bug report label and value"
 msgid "<strong>Status:</strong> %1<br />"
 msgstr "<strong> Status</strong><br />"
 
-#: reportassistantpages_bugzilla.cpp:689
+#: reportassistantpages_bugzilla.cpp:710
 #, fuzzy, kde-format
 msgctxt "@label:textbox bug report label and value"
 msgid "<strong>Full Description:</strong><br />%1"
 msgstr "<strong> Penuh Huraian</strong><br /> 1"
 
-#: reportassistantpages_bugzilla.cpp:694
+#: reportassistantpages_bugzilla.cpp:715
 #, fuzzy, kde-format
 msgctxt "@label:textbox bug report label and value"
 msgid "<br /><br /><strong>Comments:</strong> %1"
 msgstr "<strong> Komen</strong> 1"
 
-#: reportassistantpages_bugzilla.cpp:702
+#: reportassistantpages_bugzilla.cpp:723
 #, kde-format
 msgctxt "@info:status"
 msgid "Showing report <numid>%1</numid>"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:705
+#: reportassistantpages_bugzilla.cpp:726
 #, fuzzy
 msgctxt "@info"
 msgid "Invalid report data"
 msgstr "Tidak sah"
 
-#: reportassistantpages_bugzilla.cpp:719
+#: reportassistantpages_bugzilla.cpp:740
 #, fuzzy, kde-format
 msgctxt "@info/rich"
 msgid ""
@@ -1506,126 +1532,126 @@ msgid ""
 "some time and try again."
 msgstr "Ralat<nl/><message></message><nl/> beberapa masa  dan."
 
-#: reportassistantpages_bugzilla.cpp:723
+#: reportassistantpages_bugzilla.cpp:744
 #, fuzzy
 msgctxt "@info"
 msgid "Error fetching the bug report"
 msgstr "Ralat"
 
-#: reportassistantpages_bugzilla.cpp:724
+#: reportassistantpages_bugzilla.cpp:745
 #, fuzzy
 msgctxt "@info:status"
 msgid "Error fetching the bug report"
 msgstr "Ralat"
 
-#: reportassistantpages_bugzilla.cpp:755
+#: reportassistantpages_bugzilla.cpp:776
 msgctxt "@label:listbox KDE distribution method"
 msgid "Unspecified"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:757
+#: reportassistantpages_bugzilla.cpp:778
 msgctxt "@label:listbox KDE distribution method"
 msgid "Debian stable"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:759
+#: reportassistantpages_bugzilla.cpp:780
 msgctxt "@label:listbox KDE distribution method"
 msgid "Debian testing"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:761
+#: reportassistantpages_bugzilla.cpp:782
 msgctxt "@label:listbox KDE distribution method"
 msgid "Debian unstable"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:763
+#: reportassistantpages_bugzilla.cpp:784
 msgctxt "@label:listbox KDE distribution method"
 msgid "Exherbo"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:765
+#: reportassistantpages_bugzilla.cpp:786
 msgctxt "@label:listbox KDE distribution method"
 msgid "Gentoo"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:767
+#: reportassistantpages_bugzilla.cpp:788
 msgctxt "@label:listbox KDE distribution method"
 msgid "Mandriva"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:769
+#: reportassistantpages_bugzilla.cpp:790
 msgctxt "@label:listbox KDE distribution method"
 msgid "Slackware"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:771
+#: reportassistantpages_bugzilla.cpp:792
 msgctxt "@label:listbox KDE distribution method"
 msgid "SuSE/OpenSUSE"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:773
+#: reportassistantpages_bugzilla.cpp:794
 msgctxt "@label:listbox KDE distribution method"
 msgid "RedHat"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:775
+#: reportassistantpages_bugzilla.cpp:796
 msgctxt "@label:listbox KDE distribution method"
 msgid "Fedora"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:777
+#: reportassistantpages_bugzilla.cpp:798
 msgctxt "@label:listbox KDE distribution method"
 msgid "Kubuntu/Ubuntu (and derivates)"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:780
+#: reportassistantpages_bugzilla.cpp:801
 msgctxt "@label:listbox KDE distribution method"
 msgid "Pardus"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:782
+#: reportassistantpages_bugzilla.cpp:803
 msgctxt "@label:listbox KDE distribution method"
 msgid "Archlinux"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:784
+#: reportassistantpages_bugzilla.cpp:805
 msgctxt "@label:listbox KDE distribution method"
 msgid "FreeBSD (Ports)"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:786
+#: reportassistantpages_bugzilla.cpp:807
 msgctxt "@label:listbox KDE distribution method"
 msgid "NetBSD (pkgsrc)"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:788
+#: reportassistantpages_bugzilla.cpp:809
 msgctxt "@label:listbox KDE distribution method"
 msgid "OpenBSD"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:790
+#: reportassistantpages_bugzilla.cpp:811
 msgctxt "@label:listbox KDE distribution method"
 msgid "Mac OS X"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:792
+#: reportassistantpages_bugzilla.cpp:813
 msgctxt "@label:listbox KDE distribution method"
 msgid "Solaris"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:836
+#: reportassistantpages_bugzilla.cpp:857
 msgctxt "@info"
 msgid "The title does not provide enough information."
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:838
+#: reportassistantpages_bugzilla.cpp:859
 #, fuzzy
 msgctxt "@info"
 msgid ""
 "The description about the crash details does not provide enough information."
 msgstr "uketerangan."
 
-#: reportassistantpages_bugzilla.cpp:841
+#: reportassistantpages_bugzilla.cpp:862
 #, fuzzy
 msgctxt "@info"
 msgid ""
@@ -1633,47 +1659,47 @@ msgid ""
 "enough information."
 msgstr "dan uketerangan."
 
-#: reportassistantpages_bugzilla.cpp:845
+#: reportassistantpages_bugzilla.cpp:866
 #, fuzzy
 msgctxt "@info"
 msgid "Can you tell us more?"
 msgstr "us lebih?"
 
-#: reportassistantpages_bugzilla.cpp:849
+#: reportassistantpages_bugzilla.cpp:870
 #, fuzzy
 msgctxt "@title:window"
 msgid "We need more information"
 msgstr "lebih"
 
-#: reportassistantpages_bugzilla.cpp:902
+#: reportassistantpages_bugzilla.cpp:923
 #, fuzzy
 msgctxt "@info question"
 msgid "Are you ready to submit this report?"
 msgstr "hingga?"
 
-#: reportassistantpages_bugzilla.cpp:903
+#: reportassistantpages_bugzilla.cpp:924
 msgctxt "@title:window"
 msgid "Are you sure?"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:920
+#: reportassistantpages_bugzilla.cpp:941
 #, fuzzy
 msgctxt "@action:button"
 msgid "Retry..."
 msgstr "Ulangi."
 
-#: reportassistantpages_bugzilla.cpp:922
+#: reportassistantpages_bugzilla.cpp:943
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Use this button to retry sending the crash report if it failed before."
 msgstr "Guna hingga Gagal."
 
-#: reportassistantpages_bugzilla.cpp:949
+#: reportassistantpages_bugzilla.cpp:970
 msgctxt "@info:status"
 msgid "Sending crash report... (please wait)"
 msgstr ""
 
-#: reportassistantpages_bugzilla.cpp:966
+#: reportassistantpages_bugzilla.cpp:987
 #, fuzzy, kde-format
 msgctxt "@info/rich"
 msgid ""
@@ -1683,13 +1709,13 @@ msgstr ""
 "<nl/> Nombor<numid></numid><nl/> URL<link></link><nl/> for hingga KDE Anda "
 "sekarang."
 
-#: reportassistantpages_bugzilla.cpp:976
+#: reportassistantpages_bugzilla.cpp:997
 #, fuzzy, kde-format
 msgctxt "@info:status"
 msgid "Error sending the crash report:  <message>%1.</message>"
 msgstr "Ralat<message></message>"
 
-#: reportinterface.cpp:142
+#: reportinterface.cpp:144
 #, fuzzy
 msgctxt "@info/plain"
 msgid ""
