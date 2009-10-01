@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tellico\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-30 07:07+0200\n"
+"POT-Creation-Date: 2009-10-01 06:00+0200\n"
 "PO-Revision-Date: 2009-10-01 00:22+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -185,7 +185,8 @@ msgstr ""
 
 #: src/core/filehandler.cpp:209
 #, kde-format
-msgid "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
+msgid ""
+"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "Fail bernama \"%1\" telah wujud. Anda pasti ingin tulis semula?"
 
 #: src/core/filehandler.cpp:212
@@ -240,7 +241,8 @@ msgid "Select a report template and click <em>Generate</em>."
 msgstr ""
 
 #: src/reportdialog.cpp:125
-msgid "Some reports may take several seconds to generate for large collections."
+msgid ""
+"Some reports may take several seconds to generate for large collections."
 msgstr ""
 
 #: src/reportdialog.cpp:215 src/translators/htmlexporter.cpp:89
@@ -428,28 +430,36 @@ msgstr ""
 msgid "Author: "
 msgstr "Pengarang:"
 
-#: src/fetch/isbndbfetcher.cpp:68
+#: src/fetch/isbndbfetcher.cpp:69
 msgid "ISBNdb.com"
 msgstr ""
 
-#: src/fetch/isbndbfetcher.cpp:247 src/fetch/amazonfetcher.cpp:541
+#: src/fetch/isbndbfetcher.cpp:225
+msgid ""
+"<qt><p><b>The ISBNndb.com server reports an access key error.</b></p>You may "
+"have reached the maximum number of searches for today with this key, or you "
+"may have entered the access key incorrectly.</qt>"
+msgstr ""
+
+#: src/fetch/isbndbfetcher.cpp:260 src/fetch/winecomfetcher.cpp:227
+#: src/fetch/amazonfetcher.cpp:541
 #, kde-format
 msgid "Results from %1: %2/%3"
 msgstr ""
 
-#: src/fetch/isbndbfetcher.cpp:337
+#: src/fetch/isbndbfetcher.cpp:350
 msgid ""
 "An Access Key is required for searching ISBNdb.com. If you agree to the "
 "terms and conditions, <a href='http://isbndb.com/docs/api/30-keys.html'>sign "
 "up for an account</a>, and enter your information below."
 msgstr ""
 
-#: src/fetch/isbndbfetcher.cpp:349 src/fetch/amazonfetcher.cpp:845
-#: src/fetch/discogsfetcher.cpp:363
+#: src/fetch/isbndbfetcher.cpp:362 src/fetch/winecomfetcher.cpp:306
+#: src/fetch/amazonfetcher.cpp:845 src/fetch/discogsfetcher.cpp:364
 msgid "Access key: "
 msgstr ""
 
-#: src/fetch/isbndbfetcher.cpp:355 src/fetch/discogsfetcher.cpp:369
+#: src/fetch/isbndbfetcher.cpp:368 src/fetch/discogsfetcher.cpp:370
 msgid ""
 "The default Tellico key may be used, but searching may fail due to reaching "
 "access limits."
@@ -473,7 +483,7 @@ msgstr ""
 msgid "Connection error %1: %2"
 msgstr ""
 
-#: src/fetch/fetchmanager.cpp:85 src/collection.cpp:54
+#: src/fetch/fetchmanager.cpp:86 src/collection.cpp:54
 #: src/collections/musiccollection.cpp:86 src/entryupdater.cpp:251
 #: src/translators/xmlstatehandler.cpp:392
 #: src/translators/audiofileimporter.cpp:174 src/fetchdialog.cpp:203
@@ -481,40 +491,40 @@ msgstr ""
 msgid "Title"
 msgstr "Tajuk"
 
-#: src/fetch/fetchmanager.cpp:86
+#: src/fetch/fetchmanager.cpp:87
 msgid "Person"
 msgstr ""
 
-#: src/fetch/fetchmanager.cpp:87
+#: src/fetch/fetchmanager.cpp:88
 msgid "ISBN"
 msgstr ""
 
-#: src/fetch/fetchmanager.cpp:88
+#: src/fetch/fetchmanager.cpp:89
 msgid "UPC/EAN"
 msgstr ""
 
-#: src/fetch/fetchmanager.cpp:89
+#: src/fetch/fetchmanager.cpp:90
 #, fuzzy
 msgid "Keyword"
 msgstr "Kata Kunci"
 
-#: src/fetch/fetchmanager.cpp:90 src/collections/bibtexcollection.cpp:174
+#: src/fetch/fetchmanager.cpp:91 src/collections/bibtexcollection.cpp:174
 msgid "DOI"
 msgstr ""
 
-#: src/fetch/fetchmanager.cpp:91 src/translators/pdfimporter.cpp:198
+#: src/fetch/fetchmanager.cpp:92 src/translators/pdfimporter.cpp:198
 msgid "arXiv ID"
 msgstr ""
 
-#: src/fetch/fetchmanager.cpp:92
+#: src/fetch/fetchmanager.cpp:93
 msgid "PubMed ID"
 msgstr ""
 
-#: src/fetch/fetchmanager.cpp:93
+#: src/fetch/fetchmanager.cpp:94
 msgid "LCCN"
 msgstr ""
 
-#: src/fetch/fetchmanager.cpp:94
+#: src/fetch/fetchmanager.cpp:95
 msgid "Raw Query"
 msgstr ""
 
@@ -624,6 +634,17 @@ msgstr "Abstrak"
 
 #: src/fetch/z3950fetcher.cpp:718
 msgid "Illustrator"
+msgstr ""
+
+#: src/fetch/winecomfetcher.cpp:69
+msgid "Wine.com"
+msgstr ""
+
+#: src/fetch/winecomfetcher.cpp:294
+msgid ""
+"An Access Key is required for searching Wine.com. If you agree to the terms "
+"and conditions, <a href='http://api.wine.com/plans'>sign up for an account</"
+"a>, and enter your information below."
 msgstr ""
 
 #: src/fetch/amazonfetcher.cpp:67
@@ -757,7 +778,7 @@ msgid "No Image"
 msgstr ""
 
 #: src/fetch/amazonfetcher.cpp:892 src/fetch/imdbfetcher.cpp:1162
-#: src/fetch/discogsfetcher.cpp:378
+#: src/fetch/discogsfetcher.cpp:379
 msgid ""
 "The cover image may be downloaded as well. However, too many large images in "
 "the collection may degrade performance."
@@ -857,7 +878,8 @@ msgid "External Application"
 msgstr ""
 
 #: src/fetch/execexternalfetcher.cpp:299
-msgid "Set the collection type of the data returned from the external application."
+msgid ""
+"Set the collection type of the data returned from the external application."
 msgstr ""
 
 #: src/fetch/execexternalfetcher.cpp:304
@@ -970,7 +992,8 @@ msgid "Select IMDb Result"
 msgstr ""
 
 #: src/fetch/imdbfetcher.cpp:574
-msgid "<qt>Your search returned multiple matches. Please select one below.</qt>"
+msgid ""
+"<qt>Your search returned multiple matches. Please select one below.</qt>"
 msgstr ""
 
 #: src/fetch/imdbfetcher.cpp:591
@@ -1006,31 +1029,31 @@ msgid ""
 "returned from the search."
 msgstr ""
 
-#: src/fetch/imdbfetcher.cpp:1158 src/fetch/discogsfetcher.cpp:374
+#: src/fetch/imdbfetcher.cpp:1158 src/fetch/discogsfetcher.cpp:375
 msgid "Download cover &image"
 msgstr ""
 
-#: src/fetch/discogsfetcher.cpp:69
+#: src/fetch/discogsfetcher.cpp:70
 msgid "Discogs Audio Search"
 msgstr ""
 
-#: src/fetch/discogsfetcher.cpp:351
+#: src/fetch/discogsfetcher.cpp:352
 msgid ""
 "An Access Key is required for searching Discogs. If you agree to the terms "
 "and conditions, <a href='http://www.discogs.com/users/api_key'>sign up for "
 "an account</a>, and enter your information below."
 msgstr ""
 
-#: src/fetch/discogsfetcher.cpp:412 src/collections/videocollection.cpp:123
+#: src/fetch/discogsfetcher.cpp:417 src/collections/videocollection.cpp:123
 #, fuzzy
 msgid "Producer"
 msgstr "Pengeluar"
 
-#: src/fetch/discogsfetcher.cpp:413 src/collections/videocollection.cpp:95
+#: src/fetch/discogsfetcher.cpp:418 src/collections/videocollection.cpp:95
 msgid "Nationality"
 msgstr ""
 
-#: src/fetch/discogsfetcher.cpp:414
+#: src/fetch/discogsfetcher.cpp:419
 msgid "Discogs Link"
 msgstr ""
 
@@ -1131,7 +1154,8 @@ msgid "An <i>Image</i> field holds a picture. "
 msgstr ""
 
 #: src/collectionfieldsdialog.cpp:171
-msgid "A <i>Date</i> field can be used for values with a day, month, and year. "
+msgid ""
+"A <i>Date</i> field can be used for values with a day, month, and year. "
 msgstr ""
 
 #: src/collectionfieldsdialog.cpp:172
@@ -1257,7 +1281,8 @@ msgid "Allow grouping"
 msgstr ""
 
 #: src/collectionfieldsdialog.cpp:291
-msgid "If checked, this field may be used to group the entries in the group view."
+msgid ""
+"If checked, this field may be used to group the entries in the group view."
 msgstr ""
 
 #: src/collectionfieldsdialog.cpp:307
@@ -2097,7 +2122,7 @@ msgstr "Kulit album"
 #: src/collections/musiccollection.cpp:121
 #: src/collections/gamecollection.cpp:126
 #: src/collections/coincollection.cpp:136
-#: src/collections/winecollection.cpp:125
+#: src/collections/winecollection.cpp:128
 #: src/collections/cardcollection.cpp:126
 #: src/collections/boardgamecollection.cpp:113
 #: src/collections/stampcollection.cpp:136
@@ -2205,6 +2230,7 @@ msgid "Name"
 msgstr "Nama"
 
 #: src/collections/filecatalog.cpp:57 src/collections/gamecollection.cpp:94
+#: src/collections/winecollection.cpp:125
 #: src/collections/boardgamecollection.cpp:85
 #: src/collections/stampcollection.cpp:54 src/entryupdater.cpp:251
 #: src/fetchdialog.cpp:204
@@ -2690,7 +2716,8 @@ msgid "Scott#"
 msgstr ""
 
 #: src/collections/stampcollection.cpp:87
-msgctxt "Stamp grade levels - Superb,Extremely Fine,Very Fine,Fine,Average,Poor"
+msgctxt ""
+"Stamp grade levels - Superb,Extremely Fine,Very Fine,Fine,Average,Poor"
 msgid "Superb,Extremely Fine,Very Fine,Fine,Average,Poor"
 msgstr ""
 
@@ -3139,7 +3166,8 @@ msgid "&Source name: "
 msgstr ""
 
 #: src/fetcherconfigdialog.cpp:102
-msgid "The name identifies the data source and should be unique and informative."
+msgid ""
+"The name identifies the data source and should be unique and informative."
 msgstr ""
 
 #: src/fetcherconfigdialog.cpp:113 src/fetcherconfigdialog.cpp:117
@@ -3969,7 +3997,8 @@ msgid "Edit List..."
 msgstr ""
 
 #: src/fetchdialog.cpp:178
-msgid "Click to open a text edit box for entering or editing multiple ISBN values."
+msgid ""
+"Click to open a text edit box for entering or editing multiple ISBN values."
 msgstr ""
 
 #: src/fetchdialog.cpp:184
@@ -5368,4 +5397,3 @@ msgid ""
 "types by respecting proper sorting at the same time. Consider for example\n"
 "a number field followed by a text subfield with entries 3b, 14a.</p>\n"
 msgstr ""
-
