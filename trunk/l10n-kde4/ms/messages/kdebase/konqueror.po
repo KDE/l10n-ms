@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-16 06:15+0200\n"
+"POT-Creation-Date: 2009-10-17 06:44+0200\n"
 "PO-Revision-Date: 2009-08-16 18:29+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -50,7 +50,7 @@ msgstr "(c) 1999-2008, Pembangun Konqueror"
 msgid "http://konqueror.kde.org"
 msgstr "http://konqueror.kde.org"
 
-#: src/konqfactory.cpp:236 sidebar/konqsidebar.cpp:30
+#: src/konqfactory.cpp:236 sidebar/sidebar_part.cpp:30
 msgid "David Faure"
 msgstr "David Faure"
 
@@ -331,7 +331,7 @@ msgstr "Torben Weis"
 msgid "KFM author"
 msgstr "pengarang kfm"
 
-#: src/konqfactory.cpp:268 sidebar/konqsidebar.cpp:29
+#: src/konqfactory.cpp:268 sidebar/sidebar_part.cpp:29
 #, fuzzy
 msgid "Joseph Wenninger"
 msgstr "Joseph Wenninger"
@@ -452,7 +452,7 @@ msgstr ""
 msgid "Ask Me Later"
 msgstr "Sebagai Folder Baru"
 
-#: src/konqmainwindow.cpp:518
+#: src/konqmainwindow.cpp:519
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -461,7 +461,7 @@ msgstr ""
 "URL Punah\n"
 "%1"
 
-#: src/konqmainwindow.cpp:523
+#: src/konqmainwindow.cpp:524
 #, kde-format
 msgid ""
 "Protocol not supported\n"
@@ -470,7 +470,7 @@ msgstr ""
 "Protokol tidak disokong\n"
 "%1"
 
-#: src/konqmainwindow.cpp:562
+#: src/konqmainwindow.cpp:563
 #, fuzzy
 msgctxt "@title:tab"
 msgid "Loading..."
@@ -496,7 +496,7 @@ msgstr ""
 #: src/konqmainwindow.cpp:2421 src/konqmainwindow.cpp:2510
 #: src/konqmainwindow.cpp:2528 src/konqmainwindow.cpp:2548
 #: src/konqmainwindow.cpp:2596 src/konqmainwindow.cpp:2629
-#: src/konqmainwindow.cpp:5075 src/konqviewmanager.cpp:1387
+#: src/konqmainwindow.cpp:5075 src/konqviewmanager.cpp:1396
 msgid "Discard Changes?"
 msgstr "Abaikan Perubahan?"
 
@@ -504,7 +504,7 @@ msgstr "Abaikan Perubahan?"
 #: src/konqmainwindow.cpp:2421 src/konqmainwindow.cpp:2510
 #: src/konqmainwindow.cpp:2528 src/konqmainwindow.cpp:2548
 #: src/konqmainwindow.cpp:2596 src/konqmainwindow.cpp:2629
-#: src/konqmainwindow.cpp:5075 src/konqviewmanager.cpp:1387
+#: src/konqmainwindow.cpp:5075 src/konqviewmanager.cpp:1396
 msgid "&Discard Changes"
 msgstr "&Abaikan Perubahan"
 
@@ -1154,7 +1154,7 @@ msgstr ""
 "Anda mempunyai banyak tab yang dibuka pada tetingkap ini, anda pasti mahu "
 "keluar?"
 
-#: src/konqmainwindow.cpp:5037 src/konqviewmanager.cpp:1369
+#: src/konqmainwindow.cpp:5037 src/konqviewmanager.cpp:1378
 msgid "Confirmation"
 msgstr "Kepastian"
 
@@ -1371,7 +1371,7 @@ msgstr "Tutup Ta&b"
 msgid "Und&o"
 msgstr "&Nyahcara"
 
-#: src/konqviewmanager.cpp:1367
+#: src/konqviewmanager.cpp:1376
 msgid ""
 "You have multiple tabs open in this window.\n"
 "Loading a view profile will close them."
@@ -1379,11 +1379,11 @@ msgstr ""
 "Anda mempunyai banyak tab yang dibuka pada tetingkap ini .\n"
 "Memuat lihat profail akan membuatkannya tertutup."
 
-#: src/konqviewmanager.cpp:1370
+#: src/konqviewmanager.cpp:1379
 msgid "Load View Profile"
 msgstr "Muatkan Lihat Profil"
 
-#: src/konqviewmanager.cpp:1386
+#: src/konqviewmanager.cpp:1395
 msgid ""
 "This tab contains changes that have not been submitted.\n"
 "Loading a profile will discard these changes."
@@ -1645,11 +1645,15 @@ msgstr "Cipta Baru Folder"
 msgid "Enter folder name:"
 msgstr "Masukkan nama folder:"
 
-#: sidebar/sidebar_widget.cpp:104
+#: sidebar/sidebar_part.cpp:28
+msgid "Extended Sidebar"
+msgstr "Papan Sisi Lanjutan"
+
+#: sidebar/sidebar_widget.cpp:99
 msgid "Rollback to System Default"
 msgstr "Kembalikan kepada Sistem Default"
 
-#: sidebar/sidebar_widget.cpp:110
+#: sidebar/sidebar_widget.cpp:105
 #, fuzzy
 #| msgid ""
 #| "<qt>This removes all your entries from the sidebar and adds the system "
@@ -1664,67 +1668,67 @@ msgstr ""
 "sistem default.<BR><B>Prosedur ini tidak boleh dikembalikan semula</"
 "B><BR>Anda mahu meneruskannya?</qt>"
 
-#: sidebar/sidebar_widget.cpp:240
+#: sidebar/sidebar_widget.cpp:234
 msgid "Configure Navigation Panel"
 msgstr "Selaraskan Panel Navigasi"
 
-#: sidebar/sidebar_widget.cpp:242
+#: sidebar/sidebar_widget.cpp:236
 msgid "Add New"
 msgstr "Tambah Baru"
 
-#: sidebar/sidebar_widget.cpp:244
+#: sidebar/sidebar_widget.cpp:238
 msgid "Multiple Views"
 msgstr "Pandangan Pelbagai"
 
-#: sidebar/sidebar_widget.cpp:246 sidebar/sidebar_widget.cpp:362
+#: sidebar/sidebar_widget.cpp:240 sidebar/sidebar_widget.cpp:353
 msgid "Show Tabs Left"
 msgstr "Papar Tab Kiri"
 
-#: sidebar/sidebar_widget.cpp:247
+#: sidebar/sidebar_widget.cpp:241
 msgid "Show Configuration Button"
 msgstr "Papar Butang Penyelarasan"
 
-#: sidebar/sidebar_widget.cpp:250
+#: sidebar/sidebar_widget.cpp:244
 msgid "Close Navigation Panel"
 msgstr "Tutup Panel Navigasi"
 
-#: sidebar/sidebar_widget.cpp:293
+#: sidebar/sidebar_widget.cpp:287
 msgid "This entry already exists."
 msgstr "Masukan ini sudah ada."
 
-#: sidebar/sidebar_widget.cpp:307 sidebar/web_module/web_module.cpp:217
+#: sidebar/sidebar_widget.cpp:301 sidebar/web_module/web_module.cpp:217
 msgid "Web SideBar Plugin"
 msgstr "Plugmasuk Bar Sisi Web"
 
-#: sidebar/sidebar_widget.cpp:362
+#: sidebar/sidebar_widget.cpp:353
 #, fuzzy
 #| msgid "Move Tab Right"
 msgid "Show Tabs Right"
 msgstr "Pindah Tab ke Kanan"
 
-#: sidebar/sidebar_widget.cpp:437
+#: sidebar/sidebar_widget.cpp:424
 msgid "Set Name"
 msgstr "Tetapkan Nama"
 
-#: sidebar/sidebar_widget.cpp:437
+#: sidebar/sidebar_widget.cpp:424
 msgid "Enter the name:"
 msgstr "Masukkan nama:"
 
-#: sidebar/sidebar_widget.cpp:455
+#: sidebar/sidebar_widget.cpp:442
 msgid "Enter a URL:"
 msgstr "Masukkan URL:"
 
-#: sidebar/sidebar_widget.cpp:463
+#: sidebar/sidebar_widget.cpp:450
 #, kde-format
 msgid "<qt><b>%1</b> does not exist</qt>"
 msgstr "<qt><b>%1</b> tidak wujud</qt>"
 
-#: sidebar/sidebar_widget.cpp:494
+#: sidebar/sidebar_widget.cpp:481
 #, kde-format
 msgid "<qt>Do you really want to remove the <b>%1</b> tab?</qt>"
 msgstr "<qt>Adakah anda benar-benar ingin membuang tab <b>%1</b> ?</qt>"
 
-#: sidebar/sidebar_widget.cpp:542
+#: sidebar/sidebar_widget.cpp:529
 msgid ""
 "You have hidden the navigation panel configuration button. To make it "
 "visible again, click the right mouse button on any of the navigation panel "
@@ -1734,23 +1738,23 @@ msgstr ""
 "memaparkannya semula, klik butang kanan tetikus pada mana-mana butang panel "
 "pelayaran dan pilih \"Papar Butang Pelarasan\"."
 
-#: sidebar/sidebar_widget.cpp:627
+#: sidebar/sidebar_widget.cpp:598
 msgid "Configure Sidebar"
 msgstr "Selaraskan Papan Sisi"
 
-#: sidebar/sidebar_widget.cpp:744
+#: sidebar/sidebar_widget.cpp:715
 msgid "Set Name..."
 msgstr "Tetapkan Nama"
 
-#: sidebar/sidebar_widget.cpp:745
+#: sidebar/sidebar_widget.cpp:716
 msgid "Set URL..."
 msgstr "Tetapkan URL..."
 
-#: sidebar/sidebar_widget.cpp:746
+#: sidebar/sidebar_widget.cpp:717
 msgid "Set Icon..."
 msgstr "Tetapkan Ikon..."
 
-#: sidebar/sidebar_widget.cpp:748
+#: sidebar/sidebar_widget.cpp:719
 #, fuzzy
 msgid "Remove"
 msgstr "Buang"
@@ -1774,10 +1778,6 @@ msgstr "Buka Pautan"
 #: sidebar/web_module/web_module.h:59
 msgid "Set &Automatic Reload"
 msgstr "Tetapkan Ulangmuat &Automatik"
-
-#: sidebar/konqsidebar.cpp:28
-msgid "Extended Sidebar"
-msgstr "Papan Sisi Lanjutan"
 
 #: about/konq_aboutpage.cc:79 about/konq_aboutpage.cc:81
 #: about/konq_aboutpage.cc:135 about/konq_aboutpage.cc:137
