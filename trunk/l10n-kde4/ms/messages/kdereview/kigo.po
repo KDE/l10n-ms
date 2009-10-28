@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kigo\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-27 07:11+0100\n"
+"POT-Creation-Date: 2009-10-28 07:25+0100\n"
 "PO-Revision-Date: 2009-07-20 00:23+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -82,15 +82,15 @@ msgstr ""
 msgid "Computer"
 msgstr "Komputer"
 
-#: gui/mainwindow.cpp:102
-msgid "Setup a new game..."
+#: gui/mainwindow.cpp:103
+msgid "Set up a new game..."
 msgstr ""
 
-#: gui/mainwindow.cpp:138
-msgid "Setup a loaded game..."
+#: gui/mainwindow.cpp:139
+msgid "Set up a loaded game..."
 msgstr ""
 
-#: gui/mainwindow.cpp:140
+#: gui/mainwindow.cpp:141
 msgid "Unable to load game..."
 msgstr ""
 
@@ -108,105 +108,110 @@ msgstr ""
 
 #: gui/mainwindow.cpp:270
 #, kde-format
-msgid "%1 has won this game with a score of %2."
+msgid "%1 has won this game with a score of %2 (bounded by %3 and %4)."
 msgstr ""
 
-#: gui/mainwindow.cpp:276
+#: gui/mainwindow.cpp:277
 msgid "Undone move"
 msgstr ""
 
-#: gui/mainwindow.cpp:284
+#: gui/mainwindow.cpp:285
 msgid "Redone move"
 msgstr ""
 
-#: gui/mainwindow.cpp:292
-msgid "Passed move"
-msgstr ""
-
-#: gui/mainwindow.cpp:300
-msgid "These are the recommended moves..."
-msgstr ""
-
-#: gui/mainwindow.cpp:309
+#: gui/mainwindow.cpp:310
 msgid "General"
 msgstr "Umum"
 
-#: gui/mainwindow.cpp:310
+#: gui/mainwindow.cpp:311
 msgid "Themes"
 msgstr "Tema"
 
-#: gui/mainwindow.cpp:327
+#: gui/mainwindow.cpp:328
 msgid "Backend was changed, restart necessary..."
 msgstr ""
 
-#: gui/mainwindow.cpp:379 gui/mainwindow.cpp:381
+#: gui/mainwindow.cpp:379
+msgid "White passed"
+msgstr ""
+
+#: gui/mainwindow.cpp:381
+#, fuzzy
+msgid "Black passed"
+msgstr "Hujung belakang"
+
+#: gui/mainwindow.cpp:391 gui/mainwindow.cpp:393
 msgctxt "@action"
 msgid "Get More Games..."
 msgstr ""
 
-#: gui/mainwindow.cpp:387 gui/mainwindow.cpp:389
+#: gui/mainwindow.cpp:399 gui/mainwindow.cpp:401
 msgctxt "@action"
 msgid "Start Game"
 msgstr ""
 
-#: gui/mainwindow.cpp:393 gui/mainwindow.cpp:395
+#: gui/mainwindow.cpp:405 gui/mainwindow.cpp:407
 msgctxt "@action"
 msgid "Finish Game"
 msgstr ""
 
-#: gui/mainwindow.cpp:403
+#: gui/mainwindow.cpp:415
 msgctxt "@action:inmenu Move"
 msgid "Pass Move"
 msgstr ""
 
-#: gui/mainwindow.cpp:408
+#: gui/mainwindow.cpp:420
 msgctxt "@action:inmenu View"
 msgid "Show Move &Numbers"
 msgstr ""
 
-#: gui/mainwindow.cpp:421
+#: gui/mainwindow.cpp:433
 msgctxt "@title:window"
 msgid "Game Setup"
 msgstr ""
 
-#: gui/mainwindow.cpp:433
+#: gui/mainwindow.cpp:445
 #, fuzzy
 msgctxt "@title:window"
 msgid "Information"
 msgstr "Maklumat"
 
-#: gui/mainwindow.cpp:446 gui/mainwindow.cpp:455
+#: gui/mainwindow.cpp:458 gui/mainwindow.cpp:467
 msgctxt "@title:window"
 msgid "Moves"
 msgstr ""
 
-#: gui/mainwindow.cpp:449
+#: gui/mainwindow.cpp:461
 msgid "No move"
 msgstr ""
 
-#: gui/mainwindow.cpp:460
+#: gui/mainwindow.cpp:472
 #, fuzzy
 msgctxt "@title:window"
 msgid "Error"
 msgstr "Ralat"
 
-#: game/game.cpp:305 game/game.cpp:350 game/game.cpp:433
+#: game/game.cpp:303 game/game.cpp:354 game/game.cpp:442
 msgid "White "
 msgstr ""
 
-#: game/game.cpp:307 game/game.cpp:353 game/game.cpp:431
+#: game/game.cpp:305 game/game.cpp:356 game/game.cpp:440
 msgid "Black "
 msgstr ""
 
-#: game/game.cpp:313
+#: game/game.cpp:311 game/game.cpp:366
 msgid "passed"
 msgstr ""
 
-#: game/game.cpp:363 game/game.cpp:441
+#: game/game.cpp:370
+msgid "resigned"
+msgstr ""
+
+#: game/game.cpp:450
 msgid "pass"
 msgstr ""
 
-#: game/game.cpp:366 game/game.cpp:444
+#: game/game.cpp:453
 msgid "resign"
 msgstr ""
 
@@ -632,9 +637,8 @@ msgstr ""
 #. i18n: file: gui/widgets/setupwidget.ui:346
 #. i18n: ectx: property (text), widget (QRadioButton, sizeOther)
 #: rc.cpp:179
-#, fuzzy
-msgid "Other:"
-msgstr "Lain-lain:"
+msgid "Custom:"
+msgstr ""
 
 #. i18n: file: gui/widgets/setupwidget.ui:378
 #. i18n: ectx: property (suffix), widget (QDoubleSpinBox, komiSpinBox)
@@ -777,6 +781,10 @@ msgstr ""
 #: rc.cpp:248
 msgid "Finish Game"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Other:"
+#~ msgstr "Lain-lain:"
 
 #, fuzzy
 #~ msgid "0"
