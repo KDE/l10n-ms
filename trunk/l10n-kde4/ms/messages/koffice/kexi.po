@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-08 06:06+0100\n"
+"POT-Creation-Date: 2009-11-12 06:18+0100\n"
 "PO-Revision-Date: 2006-10-05 19:45+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -3754,44 +3754,42 @@ msgstr "Mesej daripada pelayan:"
 msgid "SQL statement:"
 msgstr "Penyataan SQL:"
 
-#: kexidb/utils.cpp:142
-msgid "Server result name:"
+#: kexidb/utils.cpp:148 kexidb/utils.cpp:155
+#, fuzzy
+#| msgid "Server result name:"
+msgid "Server result:"
 msgstr "Nama hasil pelayan:"
 
-#: kexidb/utils.cpp:145
-msgid "Server result number:"
-msgstr "Bilangan hasil pelayan:"
-
-#: kexidb/utils.cpp:380 kexidb/utils.cpp:436 kexidb/utils.cpp:441
+#: kexidb/utils.cpp:391 kexidb/utils.cpp:447 kexidb/utils.cpp:452
 #, fuzzy
 msgid "Test Connection"
 msgstr "Sambungan"
 
-#: kexidb/utils.cpp:381
+#: kexidb/utils.cpp:392
 #, fuzzy, kde-format
 msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
 msgstr "Tidak dapat sambung ke pelayan pangkalan data \"%1\"."
 
-#: kexidb/utils.cpp:435
+#: kexidb/utils.cpp:446
 #, kde-format
 msgid ""
 "<qt>Test connection to <b>%1</b> database server failed. The server is not "
 "responding.</qt>"
 msgstr ""
 
-#: kexidb/utils.cpp:439
+#: kexidb/utils.cpp:450
 #, kde-format
 msgid ""
 "<qt>Test connection to <b>%1</b> database server established successfully.</"
 "qt>"
 msgstr ""
 
-#: kexidb/utils.cpp:1236
+#: kexidb/utils.cpp:1247
 #, fuzzy
 msgid "Number"
 msgstr "Autonombor"
 
-#: kexidb/utils.cpp:1239 widget/utils/kexicontextmenuutils.cpp:290
+#: kexidb/utils.cpp:1250 widget/utils/kexicontextmenuutils.cpp:290
 #: plugins/forms/kexidbfactory.cpp:344
 #: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1511
 #, fuzzy
@@ -6915,9 +6913,10 @@ msgid "Define Query..."
 msgstr ""
 
 #: widget/tableview/kexidataawareobjectiface.cpp:935
-#: plugins/queries/kexiquerydesignersqlhistory.cpp:354
-#, kde-format
-msgid "Error: %1"
+#, fuzzy, kde-format
+#| msgid "Error: %1"
+msgctxt "Question"
+msgid "Error: %1?"
 msgstr "Ralat: %1"
 
 #: widget/tableview/kexidataawareobjectiface.cpp:951
@@ -6942,33 +6941,33 @@ msgstr "Anda mahu hapuskan baris yang dipilih?"
 msgid "&Delete Row"
 msgstr "&Hapuskan Baris"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1317
+#: widget/tableview/kexidataawareobjectiface.cpp:1318
 #, kde-format
 msgid "Do you want to clear the contents of table %1?"
 msgstr "Anda mahu kosongkan kandungan jadual %1?"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1318
+#: widget/tableview/kexidataawareobjectiface.cpp:1319
 msgid "&Clear Contents"
 msgstr "&Kosongkan Kandungan"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1737
+#: widget/tableview/kexidataawareobjectiface.cpp:1738
 #, fuzzy, kde-format
 #| msgid "Row: "
 msgid "Row: %1"
 msgstr "Baris:"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1856
+#: widget/tableview/kexidataawareobjectiface.cpp:1857
 #, fuzzy
 msgctxt "Correct Changes"
 msgid "Correct"
 msgstr "Simpan perubahan projek"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1858
+#: widget/tableview/kexidataawareobjectiface.cpp:1859
 #, fuzzy
 msgid "Correct changes"
 msgstr "Simpan perubahan projek"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1859
+#: widget/tableview/kexidataawareobjectiface.cpp:1860
 #, fuzzy
 msgid "Discard Changes"
 msgstr "Simpan Perubahan"
@@ -7014,11 +7013,6 @@ msgstr "Tambah Rekod"
 #: widget/tableview/kexitableview.cpp:244
 msgid "Remove Record"
 msgstr "Alih Keluar Rekod"
-
-#: widget/tableview/kexitableview.cpp:248
-#, fuzzy
-msgid "Row"
-msgstr "Baris:"
 
 #: webforms/main.cpp:53
 msgid "Web Forms Daemon"
@@ -7835,6 +7829,11 @@ msgstr "Anda mahu simpan pertanyaan tak sah?"
 #: plugins/queries/kexiquerydesignersqlhistory.cpp:50
 msgid "Copy to Clipboard"
 msgstr "Salin ke Klipbod"
+
+#: plugins/queries/kexiquerydesignersqlhistory.cpp:354
+#, kde-format
+msgid "Error: %1"
+msgstr "Ralat: %1"
 
 #: plugins/queries/kexiquerypart.cpp:48
 #, fuzzy
@@ -9052,6 +9051,13 @@ msgstr "Jadual"
 msgctxt "Empty table row"
 msgid "Empty Row"
 msgstr "&Selitkan Baris Kosong"
+
+#~ msgid "Server result number:"
+#~ msgstr "Bilangan hasil pelayan:"
+
+#, fuzzy
+#~ msgid "Row"
+#~ msgstr "Baris:"
 
 #~ msgid "&Project"
 #~ msgstr "&Projek"
