@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-13 06:18+0100\n"
+"POT-Creation-Date: 2009-11-15 06:06+0100\n"
 "PO-Revision-Date: 2008-02-22 22:30+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -43,32 +43,37 @@ msgstr ""
 msgid "Unknown server"
 msgstr "Pelayan FTP"
 
-#: src/dcc/transferdetailedinfopanel.cpp:153
+#: src/dcc/transferdetailedinfopanel.cpp:157
 #, fuzzy, kde-format
+msgctxt "%1=partnerNick, %2=IRC Servername, %3=partnerIP, %4=partnerPort"
+msgid "%1 on %2, %3 (port %4)"
+msgstr "seadanya"
+
+#: src/dcc/transferdetailedinfopanel.cpp:163
+#, fuzzy, kde-format
+msgctxt "%1 = PartnerNick, %2 = Partner IRC Servername"
 msgid "%1 on %2"
 msgstr "Berasaskan:"
 
-#: src/dcc/transferdetailedinfopanel.cpp:157
+#: src/dcc/transferdetailedinfopanel.cpp:170
 #, fuzzy, kde-format
-msgid ", %1 (port %2)"
-msgstr "Port"
-
-#: src/dcc/transferdetailedinfopanel.cpp:162
-#, fuzzy, kde-format
+msgctxt "%1=ownIP, %2=ownPort"
 msgid "%1 (port %2)"
 msgstr "Port"
 
-#: src/dcc/transferdetailedinfopanel.cpp:169
+#: src/dcc/transferdetailedinfopanel.cpp:178
 #, fuzzy, kde-format
+msgctxt "%1=Transferstartposition"
 msgid "Yes, %1"
 msgstr "Ya"
 
-#: src/dcc/transferdetailedinfopanel.cpp:171
+#: src/dcc/transferdetailedinfopanel.cpp:180
 #, fuzzy
+msgctxt "no - not a resumed transfer"
 msgid "No"
 msgstr "Tiada"
 
-#: src/dcc/transferdetailedinfopanel.cpp:237
+#: src/dcc/transferdetailedinfopanel.cpp:246
 msgid "< 1sec"
 msgstr ""
 
@@ -97,163 +102,219 @@ msgstr "Saluran:"
 msgid "Close the window without changes"
 msgstr ""
 
-#: src/dcc/dcccommon.cpp:112
+#: src/dcc/chatcontainer.cpp:104
+#, kde-format
+msgid "DCC chat with %1 on port %2."
+msgstr ""
+
+#. i18n: file: src/config/ignore_configui.ui:97
+#. i18n: ectx: property (text), widget (QCheckBox, chkDCC)
+#: src/dcc/chatcontainer.cpp:105 src/dcc/chatcontainer.cpp:111
+#: src/dcc/chatcontainer.cpp:115 src/dcc/chatcontainer.cpp:120
+#: src/irc/inputfilter.cpp:370 src/irc/inputfilter.cpp:385
+#: src/irc/inputfilter.cpp:400 src/irc/inputfilter.cpp:428
+#: src/irc/inputfilter.cpp:436 src/irc/server.cpp:1897 src/irc/server.cpp:2017
+#: src/irc/server.cpp:2029 src/irc/server.cpp:2041 src/irc/server.cpp:2176
+#: src/irc/server.cpp:2232 src/irc/server.cpp:2303 src/irc/server.cpp:2308
+#: src/irc/server.cpp:2320 src/irc/server.cpp:2323 src/irc/server.cpp:2337
+#: src/irc/server.cpp:2344 src/config/settingsdialog.cpp:143
+#: src/viewer/ignorelistviewitem.cpp:46 rc.cpp:883
+msgid "DCC"
+msgstr ""
+
+#: src/dcc/chatcontainer.cpp:109
+#, kde-format
+msgctxt "%1 = nickname, %2 = IP, %3 = port"
+msgid "DCC chat with %1 on %2:%3."
+msgstr ""
+
+#: src/dcc/chatcontainer.cpp:129 src/dcc/transfersend.cpp:318
+#: src/dcc/transferrecv.cpp:532
+msgctxt "Universal Plug and Play"
+msgid "UPnP"
+msgstr ""
+
+#: src/dcc/chatcontainer.cpp:172
+#, fuzzy, kde-format
+msgctxt "%1=partnerNick"
+msgid "Do you want to close your DCC Chat with %1?"
+msgstr "Adakah anda pasti untuk menggantung ke cakera?"
+
+#: src/dcc/chatcontainer.cpp:173
+#, fuzzy
+msgid "Close DCC Chat"
+msgstr "Borak Jaringan Setempat"
+
+#: src/dcc/chatcontainer.cpp:192 src/irc/query.cpp:670
+#, fuzzy
+msgid "Talking to yourself"
+msgstr "&Lompat ke hiperlink"
+
+#: src/dcc/chatcontainer.cpp:208
+#, fuzzy, kde-format
+msgctxt "%1=Encoding"
+msgid "Default ( %1 )"
+msgstr "Bahasa default:"
+
+#: src/dcc/chatcontainer.cpp:287 src/irc/outputfilter.cpp:1553
+#: src/irc/outputfilter.cpp:1917 src/irc/inputfilter.cpp:1162
+#: src/irc/inputfilter.cpp:1166 src/irc/inputfilter.cpp:1179
+#: src/irc/inputfilter.cpp:1250 src/irc/inputfilter.cpp:1429
+#: src/irc/inputfilter.cpp:1994 src/irc/inputfilter.cpp:2015
+#: src/irc/inputfilter.cpp:2023 src/irc/inputfilter.cpp:2031
+#: src/irc/server.cpp:605 src/irc/server.cpp:1865 src/irc/server.cpp:1934
+#: src/irc/server.cpp:2099 src/irc/server.cpp:2135 src/irc/server.cpp:2186
+#: src/irc/server.cpp:2254 src/irc/server.cpp:2273 src/irc/server.cpp:2289
+#: src/irc/server.cpp:3750 src/irc/server.cpp:3778 src/irc/server.cpp:3809
+#: src/connectionmanager.cpp:265 src/linkaddressbook/addressbook.cpp:113
+msgid "Error"
+msgstr ""
+
+#: src/dcc/chatcontainer.cpp:287
+#, fuzzy
+msgid "Unknown command."
+msgstr "Arahan pencetak: "
+
+#. i18n: file: src/config/ignore_configui.ui:83
+#. i18n: ectx: property (text), widget (QCheckBox, chkCTCP)
+#: src/dcc/chatcontainer.cpp:330 src/irc/outputfilter.cpp:829
+#: src/irc/inputfilter.cpp:269 src/irc/inputfilter.cpp:276
+#: src/irc/inputfilter.cpp:292 src/irc/inputfilter.cpp:299
+#: src/irc/inputfilter.cpp:445 src/irc/inputfilter.cpp:453
+#: src/irc/inputfilter.cpp:473 src/irc/inputfilter.cpp:524
+#: src/irc/inputfilter.cpp:552 src/viewer/ignorelistviewitem.cpp:45 rc.cpp:877
+msgid "CTCP"
+msgstr ""
+
+#: src/dcc/chatcontainer.cpp:330
+#, kde-format
+msgid "Received unknown CTCP-%1 request from %2"
+msgstr ""
+
+#: src/dcc/dcccommon.cpp:152
 #, fuzzy
 msgid "No vacant port"
 msgstr "Maklumat port IO"
 
-#: src/dcc/dcccommon.cpp:123
+#: src/dcc/dcccommon.cpp:163
 #, fuzzy
 msgid "Could not open a socket"
 msgstr "Tak dapat membuka fail %s."
 
-#. i18n: file: src/config/ignore_configui.ui:97
-#. i18n: ectx: property (text), widget (QCheckBox, chkDCC)
-#: src/dcc/chat.cpp:161 src/dcc/chat.cpp:191 src/dcc/chat.cpp:201
-#: src/dcc/chat.cpp:214 src/dcc/chat.cpp:232 src/dcc/chat.cpp:237
-#: src/dcc/chat.cpp:242 src/dcc/chat.cpp:386 src/dcc/chat.cpp:391
-#: src/irc/inputfilter.cpp:368 src/irc/inputfilter.cpp:383
-#: src/irc/inputfilter.cpp:398 src/irc/inputfilter.cpp:414
-#: src/irc/inputfilter.cpp:422 src/irc/server.cpp:1856 src/irc/server.cpp:1887
-#: src/irc/server.cpp:1899 src/irc/server.cpp:1999 src/irc/server.cpp:2050
-#: src/irc/server.cpp:2107 src/irc/server.cpp:2112 src/irc/server.cpp:2124
-#: src/irc/server.cpp:2127 src/irc/server.cpp:2141 src/irc/server.cpp:2148
-#: src/config/settingsdialog.cpp:143 src/viewer/ignorelistviewitem.cpp:46
-#: rc.cpp:883
-msgid "DCC"
+#: src/dcc/chat.cpp:100
+msgid "Could not send a DCC CHAT request to the partner via the IRC server."
 msgstr ""
 
-#: src/dcc/chat.cpp:161 src/dcc/transferrecv.cpp:486
+#: src/dcc/chat.cpp:120 src/dcc/transfersend.cpp:298
+msgid "Awaiting remote user's acceptance"
+msgstr ""
+
+#: src/dcc/chat.cpp:149
+#, kde-format
+msgctxt "%1=partnerNick, %2=Servername"
+msgid "%1 (on %2) offers to DCC Chat with you"
+msgstr ""
+
+#: src/dcc/chat.cpp:150
+#, kde-format
+msgctxt "%1=partnerNick"
+msgid "DCC Chat offer from %1"
+msgstr ""
+
+#: src/dcc/chat.cpp:151
+#, fuzzy
+msgid "Accept"
+msgstr "Terim&a semakan"
+
+#: src/dcc/chat.cpp:152
+msgid "Reject"
+msgstr ""
+
+#: src/dcc/chat.cpp:157
+msgid "You rejected the DCC Chat offer."
+msgstr ""
+
+#: src/dcc/chat.cpp:194
+msgid "DCC CHAT request was rejected"
+msgstr ""
+
+#: src/dcc/chat.cpp:279 src/dcc/chat.cpp:308 src/dcc/transferrecv.cpp:486
 #: src/dcc/transferrecv.cpp:518
 msgid ""
 "Could not send Reverse DCC SEND acknowledgement to the partner via the IRC "
 "server."
 msgstr ""
 
-#: src/dcc/chat.cpp:172 src/dcc/transfersend.cpp:350
-#: src/dcc/transferrecv.cpp:532
-msgctxt "Universal Plug and Play"
-msgid "UPnP"
-msgstr ""
-
-#: src/dcc/chat.cpp:172 src/dcc/transfersend.cpp:350
+#: src/dcc/chat.cpp:295 src/dcc/chat.cpp:324 src/dcc/transfersend.cpp:318
 #: src/dcc/transferrecv.cpp:532
 #, kde-format
 msgid ""
 "Failed to forward port %1. Sending DCC request to remote user regardless."
 msgstr ""
 
-#: src/dcc/chat.cpp:191
+#: src/dcc/chat.cpp:348
 #, fuzzy, kde-format
 msgid "Could not open a socket for listening: %1"
 msgstr "Tak dapat membuka fail %s untuk menulis"
 
-#: src/dcc/chat.cpp:201
+#: src/dcc/chat.cpp:358
 #, kde-format
+msgctxt "%1=partnerNick, %2=port"
 msgid "Offering DCC Chat connection to %1 on port %2..."
 msgstr ""
 
-#: src/dcc/chat.cpp:203
-#, kde-format
-msgid "DCC chat with %1 on port %2."
-msgstr ""
-
-#: src/dcc/chat.cpp:215
+#: src/dcc/chat.cpp:400
 #, kde-format
 msgctxt "%1 = nickname, %2 = IP, %3 = port"
 msgid "Establishing DCC Chat connection to %1 (%2:%3)..."
 msgstr ""
 
-#: src/dcc/chat.cpp:217
-#, kde-format
-msgctxt "%1 = nickname, %2 = IP, %3 = port"
-msgid "DCC chat with %1 on %2:%3."
-msgstr ""
-
-#: src/dcc/chat.cpp:232
+#: src/dcc/chat.cpp:416
 #, fuzzy, kde-format
-msgid "Looking for host %1..."
-msgstr "Pelayan Nama DNS"
-
-#: src/dcc/chat.cpp:237
-#, fuzzy
-msgid "Host found, connecting..."
-msgstr "Fail %s tidak dijumpai"
-
-#: src/dcc/chat.cpp:242 src/dcc/chat.cpp:386
-#, kde-format
+msgctxt "%1 = partnerNick"
 msgid "Established DCC Chat connection to %1."
-msgstr ""
+msgstr "Sambung ke komputer jauh"
 
-#: src/dcc/chat.cpp:248 src/dcc/chat.cpp:365 src/irc/outputfilter.cpp:1512
-#: src/irc/outputfilter.cpp:1876 src/irc/inputfilter.cpp:1148
-#: src/irc/inputfilter.cpp:1152 src/irc/inputfilter.cpp:1165
-#: src/irc/inputfilter.cpp:1236 src/irc/inputfilter.cpp:1415
-#: src/irc/inputfilter.cpp:1980 src/irc/inputfilter.cpp:2001
-#: src/irc/inputfilter.cpp:2009 src/irc/inputfilter.cpp:2017
-#: src/irc/server.cpp:600 src/irc/server.cpp:1964 src/irc/server.cpp:2009
-#: src/irc/server.cpp:2073 src/irc/server.cpp:2092 src/irc/server.cpp:3554
-#: src/irc/server.cpp:3582 src/irc/server.cpp:3613
-#: src/connectionmanager.cpp:265 src/linkaddressbook/addressbook.cpp:113
-msgid "Error"
-msgstr ""
-
-#: src/dcc/chat.cpp:248 src/dcc/transfersend.cpp:516
+#: src/dcc/chat.cpp:421 src/dcc/transfersend.cpp:484
 #, fuzzy, kde-format
 msgid "Socket error: %1"
 msgstr "Ralat KMail"
 
-#. i18n: file: src/config/ignore_configui.ui:83
-#. i18n: ectx: property (text), widget (QCheckBox, chkCTCP)
-#: src/dcc/chat.cpp:286 src/irc/outputfilter.cpp:829
-#: src/irc/inputfilter.cpp:269 src/irc/inputfilter.cpp:276
-#: src/irc/inputfilter.cpp:292 src/irc/inputfilter.cpp:299
-#: src/irc/inputfilter.cpp:431 src/irc/inputfilter.cpp:439
-#: src/irc/inputfilter.cpp:459 src/irc/inputfilter.cpp:510
-#: src/irc/inputfilter.cpp:538 src/viewer/ignorelistviewitem.cpp:45 rc.cpp:877
-msgid "CTCP"
-msgstr ""
-
-#: src/dcc/chat.cpp:286
-#, kde-format
-msgid "Received unknown CTCP-%1 request from %2"
-msgstr ""
-
-#: src/dcc/chat.cpp:365
+#: src/dcc/chat.cpp:482
 #, fuzzy
 msgid "Could not accept the client."
 msgstr "Tak dapat membuka fail %s."
 
-#: src/dcc/chat.cpp:391
+#: src/dcc/chat.cpp:505
+#, kde-format
+msgid "Established DCC Chat connection to %1."
+msgstr ""
+
+#: src/dcc/chat.cpp:510
 #, fuzzy
 msgid "Connection closed."
 msgstr "Sambungan Gagal"
 
-#: src/dcc/chat.cpp:461
-#, fuzzy, kde-format
-msgid "Default ( %1 )"
-msgstr "Bahasa default:"
-
-#: src/dcc/transfersend.cpp:160
+#: src/dcc/transfersend.cpp:147
 msgid "The admin has restricted the right to send files"
 msgstr ""
 
-#: src/dcc/transfersend.cpp:197
+#: src/dcc/transfersend.cpp:165
 #, kde-format
 msgid "The url \"%1\" does not exist"
 msgstr ""
 
-#: src/dcc/transfersend.cpp:205
+#: src/dcc/transfersend.cpp:173
 #, fuzzy, kde-format
 msgid "Could not retrieve \"%1\""
 msgstr "Tak dapat membuka fail %s."
 
-#: src/dcc/transfersend.cpp:214
+#: src/dcc/transfersend.cpp:182
 #, fuzzy
 msgid "Enter Filename"
 msgstr "Masukkan Katalaluan"
 
-#: src/dcc/transfersend.cpp:214
+#: src/dcc/transfersend.cpp:182
 #, kde-format
 msgid ""
 "<qt>The file that you are sending to <i>%1</i> does not have a filename."
@@ -261,72 +322,68 @@ msgid ""
 "dcc transfer</qt>"
 msgstr ""
 
-#: src/dcc/transfersend.cpp:218
+#: src/dcc/transfersend.cpp:186
 msgid "No filename was given"
 msgstr ""
 
-#: src/dcc/transfersend.cpp:236
+#: src/dcc/transfersend.cpp:204
 msgid "Unable to send a 0 byte file."
 msgstr ""
 
-#: src/dcc/transfersend.cpp:246
+#: src/dcc/transfersend.cpp:214
 msgid "DCC SEND request was rejected"
 msgstr ""
 
-#: src/dcc/transfersend.cpp:271 src/dcc/transfersend.cpp:339
+#: src/dcc/transfersend.cpp:239 src/dcc/transfersend.cpp:307
 msgid "Could not send a DCC SEND request to the partner via the IRC server."
 msgstr ""
 
-#: src/dcc/transfersend.cpp:330
-msgid "Awaiting remote user's acceptance"
-msgstr ""
-
-#: src/dcc/transfersend.cpp:404
+#: src/dcc/transfersend.cpp:372 src/dcc/transferrecv.cpp:632
 #, fuzzy
-msgid "Could not accept the connection (socket error.)"
+msgid "Could not accept the connection (socket error)."
 msgstr "Tak dapat membuka fail %s."
 
-#: src/dcc/transfersend.cpp:538 src/dcc/transferrecv.cpp:757
+#: src/dcc/transfersend.cpp:506 src/dcc/transferrecv.cpp:757
 msgid "Timed out"
 msgstr ""
 
-#: src/dcc/transfersend.cpp:548
+#: src/dcc/transfersend.cpp:516
 msgid "The operation was successful. Should never happen in an error dialog."
 msgstr ""
 
-#: src/dcc/transfersend.cpp:551
+#: src/dcc/transfersend.cpp:519
 #, fuzzy, kde-format
 msgid "Could not read from file \"%1\"."
 msgstr "Tidak dapat menulis kepada fail %s"
 
-#: src/dcc/transfersend.cpp:554
+#: src/dcc/transfersend.cpp:522
 #, fuzzy, kde-format
 msgid "Could not write to file \"%1\"."
 msgstr "Tidak dapat menulis kepada fail %s"
 
-#: src/dcc/transfersend.cpp:557
+#: src/dcc/transfersend.cpp:525
 msgid "A fatal unrecoverable error occurred."
 msgstr ""
 
-#: src/dcc/transfersend.cpp:560
+#: src/dcc/transfersend.cpp:528
 #, fuzzy, kde-format
 msgid "Could not open file \"%1\"."
 msgstr "Tak dapat membuka fail %s."
 
-#: src/dcc/transfersend.cpp:569
+#: src/dcc/transfersend.cpp:537
 msgid "The operation was unexpectedly aborted."
 msgstr ""
 
-#: src/dcc/transfersend.cpp:572
+#: src/dcc/transfersend.cpp:540
 #, fuzzy
 msgid "The operation timed out."
 msgstr "Kehabisan memori ketika mencuba membuka %s"
 
-#: src/dcc/transfersend.cpp:575
+#: src/dcc/transfersend.cpp:543
 msgid "An unspecified error happened on close."
 msgstr ""
 
-#: src/dcc/transfersend.cpp:578
+#: src/dcc/transfersend.cpp:546
 #, fuzzy, kde-format
 msgid "Unknown error. Code %1"
 msgstr "Ralat mengira nilai!"
@@ -543,11 +600,6 @@ msgstr ""
 msgid "Unexpected response from remote host"
 msgstr ""
 
-#: src/dcc/transferrecv.cpp:632
-#, fuzzy
-msgid "Could not accept the connection (socket error)."
-msgstr "Tak dapat membuka fail %s."
-
 #: src/dcc/transferrecv.cpp:720
 #, fuzzy
 msgid "Transfer error"
@@ -696,10 +748,10 @@ msgstr "Arahan Strategik Lanjutan"
 
 #. i18n: file: src/config/nicklistbehavior_configui.ui:98
 #. i18n: ectx: property (text), widget (QTreeWidget, sortOrder)
-#: src/irc/channeloptionsdialog.cpp:261 src/irc/inputfilter.cpp:967
-#: src/irc/inputfilter.cpp:971 src/irc/inputfilter.cpp:2073
-#: src/irc/inputfilter.cpp:2127 src/irc/channelnick.cpp:208
-#: src/irc/channel.cpp:2140 rc.cpp:1557
+#: src/irc/channeloptionsdialog.cpp:261 src/irc/inputfilter.cpp:981
+#: src/irc/inputfilter.cpp:985 src/irc/inputfilter.cpp:2087
+#: src/irc/inputfilter.cpp:2141 src/irc/channelnick.cpp:208
+#: src/irc/channel.cpp:2140 rc.cpp:1562
 #, fuzzy
 msgid "Mode"
 msgstr "M-x nxml-mode"
@@ -886,10 +938,10 @@ msgstr "Bahasa Antaramuka Pengguna"
 msgid "Kick / Ban"
 msgstr ""
 
-#: src/irc/nicklistview.cpp:165 src/irc/outputfilter.cpp:1433
-#: src/irc/outputfilter.cpp:1504 src/irc/query.cpp:86 src/irc/query.cpp:394
+#: src/irc/nicklistview.cpp:165 src/irc/outputfilter.cpp:1474
+#: src/irc/outputfilter.cpp:1545 src/irc/query.cpp:86 src/irc/query.cpp:394
 #: src/irc/query.cpp:395 src/irc/channel.cpp:664 src/irc/channel.cpp:665
-#: src/config/settingsdialog.cpp:131 src/config/warnings_config.cpp:118
+#: src/config/settingsdialog.cpp:131 src/config/warnings_config.cpp:119
 #: src/viewer/ircview.cpp:1242
 #, fuzzy
 msgid "Ignore"
@@ -897,7 +949,7 @@ msgstr "Abai"
 
 #: src/irc/nicklistview.cpp:166 src/irc/query.cpp:87 src/irc/query.cpp:420
 #: src/irc/query.cpp:421 src/irc/channel.cpp:689 src/irc/channel.cpp:690
-#: src/config/warnings_config.cpp:119 src/viewer/ircview.cpp:1243
+#: src/config/warnings_config.cpp:120 src/viewer/ircview.cpp:1243
 msgid "Unignore"
 msgstr ""
 
@@ -1025,7 +1077,7 @@ msgstr ""
 #. i18n: file: src/linkaddressbook/linkaddressbookui_base.ui:99
 #. i18n: ectx: property (text), widget (K3ListView, addresseeListView)
 #: src/irc/nickinfo.cpp:388 src/linkaddressbook/linkaddressbookui.cpp:64
-#: rc.cpp:1857
+#: rc.cpp:1862
 #, fuzzy
 msgid "Email"
 msgstr "Emel"
@@ -1182,10 +1234,10 @@ msgstr ""
 #. i18n: file: src/config/ignore_configui.ui:104
 #. i18n: ectx: property (text), widget (QCheckBox, chkNotice)
 #: src/irc/outputfilter.cpp:646 src/irc/outputfilter.cpp:874
-#: src/irc/inputfilter.cpp:484 src/irc/inputfilter.cpp:552
-#: src/irc/inputfilter.cpp:557 src/irc/inputfilter.cpp:580
-#: src/irc/inputfilter.cpp:748 src/irc/inputfilter.cpp:1289
-#: src/irc/server.cpp:3588 src/irc/server.cpp:3609
+#: src/irc/inputfilter.cpp:498 src/irc/inputfilter.cpp:566
+#: src/irc/inputfilter.cpp:571 src/irc/inputfilter.cpp:594
+#: src/irc/inputfilter.cpp:762 src/irc/inputfilter.cpp:1303
+#: src/irc/server.cpp:3784 src/irc/server.cpp:3805
 #: src/viewer/ignorelistviewitem.cpp:44 rc.cpp:886
 #, fuzzy
 msgid "Notice"
@@ -1254,160 +1306,161 @@ msgstr ""
 msgid "Usage: %1SAY text"
 msgstr "Ubah Warna Teks"
 
-#: src/irc/outputfilter.cpp:946
+#: src/irc/outputfilter.cpp:957
 #, fuzzy, kde-format
 msgid "File \"%1\" does not exist."
 msgstr "Tak dapat membuka fail %s."
 
-#: src/irc/outputfilter.cpp:949
+#: src/irc/outputfilter.cpp:961
 #, kde-format
-msgid "Usage: %1DCC [SEND nickname filename]"
+msgid "Usage: %1DCC [SEND [nickname [filename]]]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:967
+#: src/irc/outputfilter.cpp:979
 #, kde-format
 msgid "Usage: %1DCC [GET [nickname [filename]]]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:977
+#: src/irc/outputfilter.cpp:994
+#, fuzzy, kde-format
+msgid "Usage: %1DCC [CHAT [nickname]]"
+msgstr "Lihat Penggunaan Cakera"
+
+#: src/irc/outputfilter.cpp:999
 #, kde-format
-msgid "Usage: %1DCC [CHAT nickname]"
+msgid ""
+"Unrecognized command %1DCC %2. Possible commands are SEND, CHAT, CLOSE, GET."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:981
-#, kde-format
-msgid "Unrecognized command %1DCC %2. Possible commands are SEND, CHAT, CLOSE."
-msgstr ""
-
-#: src/irc/outputfilter.cpp:1101
+#: src/irc/outputfilter.cpp:1142
 #, kde-format
 msgid "Usage: %1INVITE <nick> [channel]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1112
+#: src/irc/outputfilter.cpp:1153
 #, kde-format
 msgid "%1INVITE without channel name works only from within channels."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1121
+#: src/irc/outputfilter.cpp:1162
 #, fuzzy, kde-format
 msgid "%1 is not a channel."
 msgstr "Fail %s tidak dijumpai"
 
-#: src/irc/outputfilter.cpp:1133
+#: src/irc/outputfilter.cpp:1174
 #, c-format, kde-format
 msgid "Usage: %1EXEC <script> [parameter list]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1142
+#: src/irc/outputfilter.cpp:1183
 msgid "Script name may not contain \"../\"."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1157
+#: src/irc/outputfilter.cpp:1198
 #, kde-format
 msgid "Usage: %1RAW [OPEN | CLOSE]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1195 src/irc/server.cpp:2469
-#: src/irc/server.cpp:2487 src/viewer/ircview.cpp:712
+#: src/irc/outputfilter.cpp:1236 src/irc/server.cpp:2665
+#: src/irc/server.cpp:2683 src/viewer/ircview.cpp:712
 msgid "Notify"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1198
+#: src/irc/outputfilter.cpp:1239
 msgid "Current notify list is empty."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1200
+#: src/irc/outputfilter.cpp:1241
 #, fuzzy, kde-format
 msgid "Current notify list: %1"
 msgstr "Label Senarai Semasa"
 
-#: src/irc/outputfilter.cpp:1224
+#: src/irc/outputfilter.cpp:1265
 msgid "Enter username and password for IRC operator privileges:"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1226
+#: src/irc/outputfilter.cpp:1267
 #, fuzzy
 msgid "IRC Operator Password"
 msgstr "Kata Laluan & Akaun Pengguna"
 
-#: src/irc/outputfilter.cpp:1290
+#: src/irc/outputfilter.cpp:1331
 #, kde-format
 msgid "%1BAN without channel name works only from inside a channel."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1293
+#: src/irc/outputfilter.cpp:1334
 #, kde-format
 msgid "%1KICKBAN without channel name works only from inside a channel."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1325
+#: src/irc/outputfilter.cpp:1366
 #, kde-format
 msgid ""
 "Usage: %1BAN [-HOST | -DOMAIN | -USERHOST | -USERDOMAIN] [channel] <user|"
 "mask>"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1328
+#: src/irc/outputfilter.cpp:1369
 #, kde-format
 msgid ""
 "Usage: %1KICKBAN [-HOST | -DOMAIN | -USERHOST | -USERDOMAIN] [channel] <user|"
 "mask> [reason]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1371
+#: src/irc/outputfilter.cpp:1412
 #, kde-format
 msgid "%1UNBAN without channel name works only from inside a channel."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1386
+#: src/irc/outputfilter.cpp:1427
 #, kde-format
 msgid "Usage: %1UNBAN [channel] pattern"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1432
+#: src/irc/outputfilter.cpp:1473
 #, kde-format
 msgid "Added %1 to your ignore list."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1442
+#: src/irc/outputfilter.cpp:1483
 #, kde-format
 msgid "Usage: %1IGNORE [ -ALL ] <user 1> <user 2> ... <user n>"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1453
+#: src/irc/outputfilter.cpp:1494
 #, fuzzy, kde-format
 msgid "Usage: %1UNIGNORE <user 1> <user 2> ... <user n>"
 msgstr "Bahasa Antaramuka Pengguna"
 
-#: src/irc/outputfilter.cpp:1504
+#: src/irc/outputfilter.cpp:1545
 #, kde-format
 msgid "Removed %1 from your ignore list."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1512
+#: src/irc/outputfilter.cpp:1553
 #, fuzzy, kde-format
 msgid "No such ignore: %2"
 msgid_plural "No such ignores: %2"
 msgstr[0] "(tiada cadangan ejaan)"
 msgstr[1] "(tiada cadangan ejaan)"
 
-#: src/irc/outputfilter.cpp:1564
+#: src/irc/outputfilter.cpp:1605
 #, fuzzy, kde-format
 msgid "Current encoding is: %1"
 msgstr "Pilihan Semasa adalah Kosong"
 
-#: src/irc/outputfilter.cpp:1575
+#: src/irc/outputfilter.cpp:1616
 #, fuzzy, kde-format
 msgid "Switched to %1 encoding."
 msgstr "&Lompat ke hiperlink"
 
-#: src/irc/outputfilter.cpp:1578
+#: src/irc/outputfilter.cpp:1619
 #, fuzzy, kde-format
 msgid "%1 is not a valid encoding."
 msgstr "Rentetan arahan cetakan tidah sah."
 
-#: src/irc/outputfilter.cpp:1598
+#: src/irc/outputfilter.cpp:1639
 #, c-format, kde-format
 msgid ""
 "Usage: %1setkey <nick|channel> <key> sets the encryption key for nick or "
@@ -1420,12 +1473,12 @@ msgid ""
 "Codebook (ECB)."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1616
+#: src/irc/outputfilter.cpp:1657
 #, kde-format
 msgid "The key for %1 has been set."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1618 src/irc/outputfilter.cpp:1644
+#: src/irc/outputfilter.cpp:1659 src/irc/outputfilter.cpp:1685
 msgid ""
 "Setting an encryption key requires Konversation to have been built with "
 "support for the Qt Cryptographic Architecture (QCA) library. Contact your "
@@ -1433,82 +1486,82 @@ msgid ""
 "Konversation with QCA present."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1637
+#: src/irc/outputfilter.cpp:1678
 #, kde-format
 msgid ""
 "Usage: %1keyx <nick|channel> triggers DH1080 key exchange with the target."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1642
+#: src/irc/outputfilter.cpp:1683
 #, kde-format
 msgid "Beginning DH1080 key exchange with %1."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1662
+#: src/irc/outputfilter.cpp:1703
 #, c-format, kde-format
 msgid ""
 "Usage: %1delkey <nick> or <channel> deletes the encryption key for nick or "
 "channel"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1674
+#: src/irc/outputfilter.cpp:1715
 #, kde-format
 msgid "The key for %1 has been deleted."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1677 src/irc/outputfilter.cpp:1697
+#: src/irc/outputfilter.cpp:1718 src/irc/outputfilter.cpp:1738
 #, kde-format
 msgid "No key has been set for %1."
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1694
+#: src/irc/outputfilter.cpp:1735
 #, fuzzy, kde-format
 msgid "The key for %1 is \"%2\"."
 msgstr "Pilihan Semasa adalah Kosong"
 
-#: src/irc/outputfilter.cpp:1695
+#: src/irc/outputfilter.cpp:1736
 msgid "Blowfish"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1707
+#: src/irc/outputfilter.cpp:1748
 #, kde-format
 msgid "Usage: %1KILL <nick> [comment]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1723
+#: src/irc/outputfilter.cpp:1764
 #, fuzzy, kde-format
 msgid "Usage: %1DNS <nick>"
 msgstr "Lihat Penggunaan Cakera"
 
-#: src/irc/outputfilter.cpp:1738 src/irc/outputfilter.cpp:1757
-#: src/irc/inputfilter.cpp:1406
+#: src/irc/outputfilter.cpp:1779 src/irc/outputfilter.cpp:1798
+#: src/irc/inputfilter.cpp:1420
 #, fuzzy
 msgid "DNS"
 msgstr "Pelayan Nama DNS"
 
-#: src/irc/outputfilter.cpp:1739 src/irc/outputfilter.cpp:1758
+#: src/irc/outputfilter.cpp:1780 src/irc/outputfilter.cpp:1799
 #, fuzzy, kde-format
 msgid "Resolved %1 to: %2"
 msgstr "Ub&ahsuai kepada:"
 
-#: src/irc/outputfilter.cpp:1743 src/irc/outputfilter.cpp:1762
+#: src/irc/outputfilter.cpp:1784 src/irc/outputfilter.cpp:1803
 #, fuzzy, kde-format
 msgid "Unable to resolve %1"
 msgstr "&Lompat ke hiperlink"
 
-#: src/irc/outputfilter.cpp:1796
+#: src/irc/outputfilter.cpp:1837
 #, c-format, kde-format
 msgid "Usage: %1queuetuner [on | off]"
 msgstr ""
 
-#: src/irc/outputfilter.cpp:1858
+#: src/irc/outputfilter.cpp:1899
 #, fuzzy
 msgid "Usage"
 msgstr "Lihat Penggunaan Cakera"
 
-#: src/irc/outputfilter.cpp:1867 src/irc/inputfilter.cpp:1297
-#: src/irc/server.cpp:211 src/irc/server.cpp:347 src/irc/server.cpp:402
-#: src/irc/server.cpp:533 src/irc/server.cpp:544 src/irc/server.cpp:728
+#: src/irc/outputfilter.cpp:1908 src/irc/inputfilter.cpp:1311
+#: src/irc/server.cpp:212 src/irc/server.cpp:352 src/irc/server.cpp:407
+#: src/irc/server.cpp:538 src/irc/server.cpp:549 src/irc/server.cpp:733
 #: src/connectionmanager.cpp:241 src/connectionmanager.cpp:251
 #, fuzzy
 msgid "Info"
@@ -1519,8 +1572,8 @@ msgstr "Pusat Maklumat"
 msgid "Received CTCP-PING request from %1 to channel %2, sending answer."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:277 src/irc/inputfilter.cpp:432
-#: src/irc/inputfilter.cpp:440
+#: src/irc/inputfilter.cpp:277 src/irc/inputfilter.cpp:446
+#: src/irc/inputfilter.cpp:454
 #, kde-format
 msgid "Received CTCP-%1 request from %2, sending answer."
 msgstr ""
@@ -1535,391 +1588,391 @@ msgstr ""
 msgid "Received Version request from %1."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:369
+#: src/irc/inputfilter.cpp:371
 #, kde-format
 msgid "Received invalid DCC SEND request from %1."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:384
+#: src/irc/inputfilter.cpp:386
 #, kde-format
 msgid "Received invalid DCC ACCEPT request from %1."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:399
+#: src/irc/inputfilter.cpp:401
 #, kde-format
 msgid "Received invalid DCC RESUME request from %1."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:415
+#: src/irc/inputfilter.cpp:429
 #, kde-format
 msgid "Received invalid DCC CHAT request from %1."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:423
+#: src/irc/inputfilter.cpp:437
 #, kde-format
 msgid "Unknown DCC command %1 received from %2."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:455
+#: src/irc/inputfilter.cpp:469
 #, kde-format
 msgid "Received unknown CTCP-%1 request from %2 to Channel %3."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:460
+#: src/irc/inputfilter.cpp:474
 #, kde-format
 msgid "Received unknown CTCP-%1 request from %2."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:485
+#: src/irc/inputfilter.cpp:499
 #, fuzzy, kde-format
 msgid "-%1 to %2- %3"
 msgstr " sehingga "
 
-#: src/irc/inputfilter.cpp:511
+#: src/irc/inputfilter.cpp:525
 #, kde-format
 msgid "Received CTCP-PING reply from %1: %2 %3."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:539
+#: src/irc/inputfilter.cpp:553
 #, kde-format
 msgid "Received CTCP-%1 reply from %2: %3."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:552
+#: src/irc/inputfilter.cpp:566
 #, kde-format
 msgid "Received DH1080_INIT from %1"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:557
+#: src/irc/inputfilter.cpp:571
 #, kde-format
 msgid "Received DH1080_FINISH from %1"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:580 src/irc/inputfilter.cpp:748
+#: src/irc/inputfilter.cpp:594 src/irc/inputfilter.cpp:762
 #, kde-format
 msgid "-%1- %2"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:687 src/irc/inputfilter.cpp:1358
+#: src/irc/inputfilter.cpp:701 src/irc/inputfilter.cpp:1372
 msgid "Invite"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:688
+#: src/irc/inputfilter.cpp:702
 #, kde-format
 msgid "%1 invited you to channel %2."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:796 src/irc/inputfilter.cpp:804
+#: src/irc/inputfilter.cpp:810 src/irc/inputfilter.cpp:818
 #, fuzzy
 msgid "Welcome"
 msgstr "Selamat Datang"
 
-#: src/irc/inputfilter.cpp:805
+#: src/irc/inputfilter.cpp:819
 #, kde-format
 msgid "Server %1 (Version %2), User modes: %3, Channel modes: %4"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:831
+#: src/irc/inputfilter.cpp:845
 #, fuzzy
 msgid "Support"
 msgstr "Sokongan Arab"
 
-#: src/irc/inputfilter.cpp:918
+#: src/irc/inputfilter.cpp:932
 msgid "Your personal modes are:"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:930 src/irc/inputfilter.cpp:972
+#: src/irc/inputfilter.cpp:944 src/irc/inputfilter.cpp:986
 msgid "Channel modes: "
 msgstr ""
 
-#: src/irc/inputfilter.cpp:946 src/common.cpp:45
+#: src/irc/inputfilter.cpp:960 src/common.cpp:45
 #, fuzzy
 msgid "password protected"
 msgstr "Katalaluan Tidak Betul"
 
-#: src/irc/inputfilter.cpp:952
+#: src/irc/inputfilter.cpp:966
 #, kde-format
 msgid "limited to %1 user"
 msgid_plural "limited to %1 users"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/irc/inputfilter.cpp:982 src/urlcatcher.cpp:120
+#: src/irc/inputfilter.cpp:996 src/urlcatcher.cpp:120
 #, fuzzy
 msgid "URL"
 msgstr "URL"
 
-#: src/irc/inputfilter.cpp:983
+#: src/irc/inputfilter.cpp:997
 #, fuzzy, kde-format
 msgid "Channel URL: %1"
 msgstr "&Cari Bantuan"
 
-#: src/irc/inputfilter.cpp:993
+#: src/irc/inputfilter.cpp:1007
 #, fuzzy
 msgid "Created"
 msgstr "Dicipta"
 
-#: src/irc/inputfilter.cpp:994
+#: src/irc/inputfilter.cpp:1008
 #, kde-format
 msgid "This channel was created on %1."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1007 src/irc/inputfilter.cpp:1135
-#: src/irc/inputfilter.cpp:1390 src/irc/inputfilter.cpp:1446
-#: src/irc/inputfilter.cpp:1589 src/irc/inputfilter.cpp:1597
-#: src/irc/inputfilter.cpp:1604 src/irc/inputfilter.cpp:1611
+#: src/irc/inputfilter.cpp:1021 src/irc/inputfilter.cpp:1149
+#: src/irc/inputfilter.cpp:1404 src/irc/inputfilter.cpp:1460
+#: src/irc/inputfilter.cpp:1603 src/irc/inputfilter.cpp:1611
 #: src/irc/inputfilter.cpp:1618 src/irc/inputfilter.cpp:1625
-#: src/irc/inputfilter.cpp:1651 src/irc/inputfilter.cpp:1666
-#: src/irc/inputfilter.cpp:1682 src/irc/inputfilter.cpp:1684
-#: src/irc/inputfilter.cpp:1727 src/irc/inputfilter.cpp:1739
-#: src/irc/inputfilter.cpp:1749 src/irc/inputfilter.cpp:1756
-#: src/irc/inputfilter.cpp:1762 src/irc/inputfilter.cpp:1780
+#: src/irc/inputfilter.cpp:1632 src/irc/inputfilter.cpp:1639
+#: src/irc/inputfilter.cpp:1665 src/irc/inputfilter.cpp:1680
+#: src/irc/inputfilter.cpp:1696 src/irc/inputfilter.cpp:1698
+#: src/irc/inputfilter.cpp:1741 src/irc/inputfilter.cpp:1753
+#: src/irc/inputfilter.cpp:1763 src/irc/inputfilter.cpp:1770
+#: src/irc/inputfilter.cpp:1776 src/irc/inputfilter.cpp:1794
 msgid "Whois"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1007
+#: src/irc/inputfilter.cpp:1021
 #, kde-format
 msgid "%1 is logged in as %2."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1040 src/irc/inputfilter.cpp:1062
+#: src/irc/inputfilter.cpp:1054 src/irc/inputfilter.cpp:1076
 msgid "Names"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1062
+#: src/irc/inputfilter.cpp:1076
 #, fuzzy
 msgid "End of NAMES list."
 msgstr "Label Senarai Semasa"
 
-#: src/irc/inputfilter.cpp:1073
+#: src/irc/inputfilter.cpp:1087
 msgid "TOPIC"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1073
+#: src/irc/inputfilter.cpp:1087
 #, kde-format
 msgid "The channel %1 has no topic set."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1094 src/irc/inputfilter.cpp:1110
-#: src/irc/inputfilter.cpp:1117 src/irc/channel.cpp:1627
+#: src/irc/inputfilter.cpp:1108 src/irc/inputfilter.cpp:1124
+#: src/irc/inputfilter.cpp:1131 src/irc/channel.cpp:1627
 #: src/irc/channel.cpp:1646 src/irc/channel.cpp:1650
 msgid "Topic"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1094
+#: src/irc/inputfilter.cpp:1108
 #, kde-format
 msgid "The channel topic for %1 is: \"%2\""
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1111
+#: src/irc/inputfilter.cpp:1125
 #, kde-format
 msgid "The topic was set by %1 on %2."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1117
+#: src/irc/inputfilter.cpp:1131
 #, kde-format
 msgid "The topic for %1 was set by %2 on %3."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1135
+#: src/irc/inputfilter.cpp:1149
 #, kde-format
 msgid "%1 is actually using the host %2."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1148
+#: src/irc/inputfilter.cpp:1162
 #, kde-format
 msgid "%1: No such nick/channel."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1152
+#: src/irc/inputfilter.cpp:1166
 #, fuzzy, kde-format
 msgid "No such nick: %1."
 msgstr "(tiada cadangan ejaan)"
 
-#: src/irc/inputfilter.cpp:1165
+#: src/irc/inputfilter.cpp:1179
 #, fuzzy, kde-format
 msgid "%1: No such channel."
 msgstr "(tiada cadangan ejaan)"
 
-#: src/irc/inputfilter.cpp:1178 src/irc/inputfilter.cpp:1196
-#: src/irc/inputfilter.cpp:1210 src/irc/inputfilter.cpp:1225
+#: src/irc/inputfilter.cpp:1192 src/irc/inputfilter.cpp:1210
+#: src/irc/inputfilter.cpp:1224 src/irc/inputfilter.cpp:1239
 #: src/irc/query.cpp:178 src/irc/channel.cpp:1351 src/irc/channel.cpp:1356
 msgid "Nick"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1178
+#: src/irc/inputfilter.cpp:1192
 msgid "Nickname already in use, try a different one."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1196
+#: src/irc/inputfilter.cpp:1210
 #, kde-format
 msgid "Nickname already in use. Trying %1."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1225
+#: src/irc/inputfilter.cpp:1239
 #, kde-format
 msgid "Erroneus nickname. Changing nick to %1."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1236
+#: src/irc/inputfilter.cpp:1250
 #, fuzzy, kde-format
 msgid "You are not on %1."
 msgstr "(tidak dijumpai pada sistem ini)"
 
-#: src/irc/inputfilter.cpp:1247 src/irc/inputfilter.cpp:1256
-#: src/irc/inputfilter.cpp:1265 src/viewer/ircview.cpp:691
+#: src/irc/inputfilter.cpp:1261 src/irc/inputfilter.cpp:1270
+#: src/irc/inputfilter.cpp:1279 src/viewer/ircview.cpp:691
 msgid "MOTD"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1247
+#: src/irc/inputfilter.cpp:1261
 #, fuzzy
 msgid "Message of the day:"
 msgstr "Mesej Emel"
 
-#: src/irc/inputfilter.cpp:1265
+#: src/irc/inputfilter.cpp:1279
 #, fuzzy
 msgid "End of message of the day"
 msgstr "Hari # dalam tahun"
 
-#: src/irc/inputfilter.cpp:1289
+#: src/irc/inputfilter.cpp:1303
 msgid "You are now an IRC operator on this server."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1297
+#: src/irc/inputfilter.cpp:1311
 #, kde-format
 msgid "'%1' is now your hidden host (set by services)."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1307 src/irc/inputfilter.cpp:1317
-#: src/irc/inputfilter.cpp:1993 src/irc/channellistpanel.cpp:86
+#: src/irc/inputfilter.cpp:1321 src/irc/inputfilter.cpp:1331
+#: src/irc/inputfilter.cpp:2007 src/irc/channellistpanel.cpp:86
 #, fuzzy
 msgid "Users"
 msgstr "Pengguna dan Kumpulan"
 
-#: src/irc/inputfilter.cpp:1307
+#: src/irc/inputfilter.cpp:1321
 #, fuzzy, kde-format
 msgid "Current users on the network: %1"
 msgstr "Sunting Footer pada halaman semasa"
 
-#: src/irc/inputfilter.cpp:1317
+#: src/irc/inputfilter.cpp:1331
 #, fuzzy, kde-format
 msgid "Current users on %1: %2."
 msgstr "Sunting Footer pada halaman semasa"
 
 #. i18n: file: src/identitydialog.ui:262
 #. i18n: ectx: attribute (title), widget (QWidget, awayWidget)
-#: src/irc/inputfilter.cpp:1347 src/irc/server.cpp:3373
-#: src/irc/server.cpp:3398 src/irc/server.cpp:3407 src/irc/nicksonline.cpp:261
+#: src/irc/inputfilter.cpp:1361 src/irc/server.cpp:3569
+#: src/irc/server.cpp:3594 src/irc/server.cpp:3603 src/irc/nicksonline.cpp:261
 #: src/linkaddressbook/addressbook.cpp:109 rc.cpp:503
 msgid "Away"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1348
+#: src/irc/inputfilter.cpp:1362
 #, fuzzy, kde-format
 msgid "%1 is away: %2"
 msgstr "seadanya"
 
-#: src/irc/inputfilter.cpp:1359
+#: src/irc/inputfilter.cpp:1373
 #, kde-format
 msgid "You invited %1 to channel %2."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1381 src/irc/inputfilter.cpp:1464
+#: src/irc/inputfilter.cpp:1395 src/irc/inputfilter.cpp:1478
 #, kde-format
 msgid "%1@%2"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1391
+#: src/irc/inputfilter.cpp:1405
 #, fuzzy, kde-format
 msgid "%1 is %2@%3 (%4)"
 msgstr "seadanya"
 
-#: src/irc/inputfilter.cpp:1407
+#: src/irc/inputfilter.cpp:1421
 #, fuzzy, kde-format
 msgid "Resolved %1 (%2) to address: %3"
 msgstr "&Lompat ke hiperlink"
 
-#: src/irc/inputfilter.cpp:1416
+#: src/irc/inputfilter.cpp:1430
 #, kde-format
 msgid "Unable to resolve address for %1 (%2)"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1446
+#: src/irc/inputfilter.cpp:1460
 #, fuzzy, kde-format
 msgid "%1 is an identified user."
 msgstr "Bahasa Antaramuka Pengguna"
 
-#: src/irc/inputfilter.cpp:1478 src/irc/inputfilter.cpp:1503
+#: src/irc/inputfilter.cpp:1492 src/irc/inputfilter.cpp:1517
 msgid "Who"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1483
+#: src/irc/inputfilter.cpp:1497
 msgid " (Away)"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1479
+#: src/irc/inputfilter.cpp:1493
 #, fuzzy, kde-format
 msgid "%1 is %2@%3 (%4)%5"
 msgstr "seadanya"
 
-#: src/irc/inputfilter.cpp:1504
+#: src/irc/inputfilter.cpp:1518
 #, fuzzy, kde-format
 msgid "End of /WHO list for %1"
 msgstr "Senarai Fail (untuk Plug Masuk Pemuat Senarai Fail Kate)"
 
-#: src/irc/inputfilter.cpp:1590
+#: src/irc/inputfilter.cpp:1604
 #, kde-format
 msgid "%1 is a user on channels: %2"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1598
+#: src/irc/inputfilter.cpp:1612
 #, kde-format
 msgid "%1 has voice on channels: %2"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1605
+#: src/irc/inputfilter.cpp:1619
 #, kde-format
 msgid "%1 is a halfop on channels: %2"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1612
+#: src/irc/inputfilter.cpp:1626
 #, kde-format
 msgid "%1 is an operator on channels: %2"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1619
+#: src/irc/inputfilter.cpp:1633
 #, fuzzy, kde-format
 msgid "%1 is owner of channels: %2"
 msgstr "Pilihan Semasa adalah Kosong"
 
-#: src/irc/inputfilter.cpp:1626
+#: src/irc/inputfilter.cpp:1640
 #, kde-format
 msgid "%1 is admin on channels: %2"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1652
+#: src/irc/inputfilter.cpp:1666
 #, fuzzy, kde-format
 msgid "%1 is online via %2 (%3)."
 msgstr "Pilihan Semasa adalah Kosong"
 
-#: src/irc/inputfilter.cpp:1667
+#: src/irc/inputfilter.cpp:1681
 #, fuzzy, kde-format
 msgid "%1 is available for help."
 msgstr "Cari bantuan mengenai..."
 
-#: src/irc/inputfilter.cpp:1682
+#: src/irc/inputfilter.cpp:1696
 #, fuzzy, kde-format
 msgid "%1 is an IRC Operator."
 msgstr "Pilihan Semasa adalah Kosong"
 
-#: src/irc/inputfilter.cpp:1722 src/statusbar.cpp:181
+#: src/irc/inputfilter.cpp:1736 src/statusbar.cpp:181
 #, fuzzy, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
 msgstr[0] "Hari # dalam tahun"
 msgstr[1] ""
 
-#: src/irc/inputfilter.cpp:1723 src/irc/inputfilter.cpp:1736
+#: src/irc/inputfilter.cpp:1737 src/irc/inputfilter.cpp:1750
 #: src/statusbar.cpp:182 src/statusbar.cpp:190
 #, kde-format
 msgid "1 hour"
@@ -1927,8 +1980,8 @@ msgid_plural "%1 hours"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/irc/inputfilter.cpp:1724 src/irc/inputfilter.cpp:1737
-#: src/irc/inputfilter.cpp:1747 src/statusbar.cpp:183 src/statusbar.cpp:191
+#: src/irc/inputfilter.cpp:1738 src/irc/inputfilter.cpp:1751
+#: src/irc/inputfilter.cpp:1761 src/statusbar.cpp:183 src/statusbar.cpp:191
 #: src/statusbar.cpp:198
 #, kde-format
 msgid "1 minute"
@@ -1936,8 +1989,8 @@ msgid_plural "%1 minutes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/irc/inputfilter.cpp:1725 src/irc/inputfilter.cpp:1738
-#: src/irc/inputfilter.cpp:1748 src/statusbar.cpp:184 src/statusbar.cpp:192
+#: src/irc/inputfilter.cpp:1739 src/irc/inputfilter.cpp:1752
+#: src/irc/inputfilter.cpp:1762 src/statusbar.cpp:184 src/statusbar.cpp:192
 #: src/statusbar.cpp:199
 #, fuzzy, kde-format
 msgid "1 second"
@@ -1945,7 +1998,7 @@ msgid_plural "%1 seconds"
 msgstr[0] "Tahap kedua..."
 msgstr[1] ""
 
-#: src/irc/inputfilter.cpp:1729
+#: src/irc/inputfilter.cpp:1743
 #, kde-format
 msgctxt ""
 "%1 = name of person, %2 = (x days), %3 = (x hours), %4 = (x minutes), %5 = "
@@ -1953,190 +2006,190 @@ msgctxt ""
 msgid "%1 has been idle for %2, %3, %4, and %5."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1741
+#: src/irc/inputfilter.cpp:1755
 #, kde-format
 msgctxt ""
 "%1 = name of person, %2 = (x hours), %3 = (x minutes), %4 = (x seconds)"
 msgid "%1 has been idle for %2, %3, and %4."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1751
+#: src/irc/inputfilter.cpp:1765
 #, kde-format
 msgctxt "%1 = name of person, %2 = (x minutes), %3 = (x seconds)"
 msgid "%1 has been idle for %2 and %3."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1757
+#: src/irc/inputfilter.cpp:1771
 #, kde-format
 msgid "%2 has been idle for 1 second."
 msgid_plural "%2 has been idle for %1 seconds."
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/irc/inputfilter.cpp:1763
+#: src/irc/inputfilter.cpp:1777
 #, kde-format
 msgid "%1 has been online since %2."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1780
+#: src/irc/inputfilter.cpp:1794
 #, fuzzy
 msgid "End of WHOIS list."
 msgstr "Label Senarai Semasa"
 
-#: src/irc/inputfilter.cpp:1820
+#: src/irc/inputfilter.cpp:1834
 msgid "Userhost"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1823
+#: src/irc/inputfilter.cpp:1837
 #, fuzzy
 msgid " (IRC Operator)"
 msgstr "Chad"
 
-#: src/irc/inputfilter.cpp:1825
+#: src/irc/inputfilter.cpp:1839
 msgid " (away)"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1821
+#: src/irc/inputfilter.cpp:1835
 #, kde-format
 msgctxt "%1 = nick, %2 = shows if nick is op, %3 = hostmask, %4 = shows away"
 msgid "%1%2 is %3%4."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1843 src/irc/inputfilter.cpp:1856
-#: src/irc/inputfilter.cpp:1872
+#: src/irc/inputfilter.cpp:1857 src/irc/inputfilter.cpp:1870
+#: src/irc/inputfilter.cpp:1886
 #, fuzzy
 msgid "List"
 msgstr "Senarai"
 
-#: src/irc/inputfilter.cpp:1843
+#: src/irc/inputfilter.cpp:1857
 #, fuzzy
 msgid "List of channels:"
 msgstr "Saluran DMA"
 
-#: src/irc/inputfilter.cpp:1855
+#: src/irc/inputfilter.cpp:1869
 #, fuzzy, kde-format
 msgid "%2 (%1 user): %3"
 msgid_plural "%2 (%1 users): %3"
 msgstr[0] "Antaramuka Pengguna"
 msgstr[1] ""
 
-#: src/irc/inputfilter.cpp:1872
+#: src/irc/inputfilter.cpp:1886
 #, fuzzy
 msgid "End of channel list."
 msgstr "Label Senarai Semasa"
 
-#: src/irc/inputfilter.cpp:1925 src/irc/inputfilter.cpp:1943
+#: src/irc/inputfilter.cpp:1939 src/irc/inputfilter.cpp:1957
 #, kde-format
 msgid "BanList:%1"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1926
+#: src/irc/inputfilter.cpp:1940
 #, kde-format
 msgctxt "BanList message: e.g. *!*@aol.com set by MrGrim on <date>"
 msgid "%1 set by %2 on %3"
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1943
+#: src/irc/inputfilter.cpp:1957
 #, fuzzy
 msgid "End of Ban List."
 msgstr "Label Senarai Semasa"
 
 #. i18n: file: src/config/ignore_configui.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, chkChannel)
-#: src/irc/inputfilter.cpp:1955 src/irc/inputfilter.cpp:1959
+#: src/irc/inputfilter.cpp:1969 src/irc/inputfilter.cpp:1973
 #: src/irc/invitedialog.cpp:169 src/viewer/ignorelistviewitem.cpp:42
 #: rc.cpp:880
 #, fuzzy
 msgid "Channel"
 msgstr "Saluran:"
 
-#: src/irc/inputfilter.cpp:1980
+#: src/irc/inputfilter.cpp:1994
 #, fuzzy, kde-format
 msgid "%1 is currently unavailable."
 msgstr "Pilihan Semasa adalah Kosong"
 
-#: src/irc/inputfilter.cpp:2001
+#: src/irc/inputfilter.cpp:2015
 #, fuzzy, kde-format
 msgid "%1: Unknown command."
 msgstr "Arahan pencetak: "
 
-#: src/irc/inputfilter.cpp:2009
+#: src/irc/inputfilter.cpp:2023
 #, fuzzy
 msgid "Not registered."
 msgstr "Tiada"
 
-#: src/irc/inputfilter.cpp:2017
+#: src/irc/inputfilter.cpp:2031
 #, kde-format
 msgid "%1: This command requires more parameters."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:2065
+#: src/irc/inputfilter.cpp:2079
 #, fuzzy, kde-format
 msgid "You have set personal modes: %1"
 msgstr "Anda telah mengubah mod arah."
 
-#: src/irc/inputfilter.cpp:2069
+#: src/irc/inputfilter.cpp:2083
 #, fuzzy, kde-format
 msgid "%1 has changed your personal modes: %2"
 msgstr "Anda telah mengubah mod arah."
 
-#: src/irc/inputfilter.cpp:2088
+#: src/irc/inputfilter.cpp:2102
 #, fuzzy, kde-format
 msgid "%1 sets mode: %2"
 msgstr "M-x nxml-mode"
 
-#: src/irc/server.cpp:349
+#: src/irc/server.cpp:354
 msgid "Warning"
 msgstr ""
 
-#: src/irc/server.cpp:402
+#: src/irc/server.cpp:407
 #, fuzzy, kde-format
 msgid "Looking for server %1 (port %2) ..."
 msgstr "Pelayan Nama DNS"
 
-#: src/irc/server.cpp:533
+#: src/irc/server.cpp:538
 #, fuzzy
 msgid "Server found, connecting..."
 msgstr "Fail %s tidak dijumpai"
 
-#: src/irc/server.cpp:544
+#: src/irc/server.cpp:549
 #, fuzzy
 msgid "Connected; logging in..."
 msgstr "&Dalam pelayar web"
 
-#: src/irc/server.cpp:595
+#: src/irc/server.cpp:600
 #, fuzzy, kde-format
 msgid "Connection to server %1 (port %2) lost: %3."
 msgstr "Gagal untuk mencari seksyen: %s"
 
-#: src/irc/server.cpp:616
+#: src/irc/server.cpp:621
 #, kde-format
 msgid ""
 "Could not connect to %1 (port %2) using SSL encryption. Maybe the server "
 "does not support SSL, or perhaps you have the wrong port? %3"
 msgstr ""
 
-#: src/irc/server.cpp:620
+#: src/irc/server.cpp:625
 #, fuzzy
 msgid "SSL Connection Error"
 msgstr "Ralat mengira nilai!"
 
-#: src/irc/server.cpp:629
+#: src/irc/server.cpp:634
 #, kde-format
 msgid "The server (%1) certificate failed the authenticity test. %2"
 msgstr ""
 
-#: src/irc/server.cpp:635
+#: src/irc/server.cpp:640
 #, fuzzy
 msgid "Server Authentication"
 msgstr "Pelayan FTP"
 
-#: src/irc/server.cpp:728
+#: src/irc/server.cpp:733
 #, fuzzy, kde-format
 msgid "Disconnected from %1 (port %2)."
 msgstr "Pelayan Nama DNS"
 
-#: src/irc/server.cpp:891
+#: src/irc/server.cpp:896
 #, kde-format
 msgid ""
 "No nicknames from the \"%1\" identity were accepted by the connection \"%2"
@@ -2144,50 +2197,73 @@ msgid ""
 "Please enter a new one or press Cancel to disconnect:"
 msgstr ""
 
-#: src/irc/server.cpp:892
+#: src/irc/server.cpp:897
 #, fuzzy
 msgid "Nickname error"
 msgstr "Ralat KMail"
 
-#: src/irc/server.cpp:1351 src/irc/server.cpp:3111 src/irc/server.cpp:3116
+#: src/irc/server.cpp:1356 src/irc/server.cpp:3307 src/irc/server.cpp:3312
 #: src/application.cpp:301
 msgid "D-Bus"
 msgstr ""
 
-#: src/irc/server.cpp:1714
+#: src/irc/server.cpp:1719
 #, fuzzy, kde-format
 msgid "Select File(s) to Send to %1"
 msgstr "Hantar emel ke senarai"
 
-#: src/irc/server.cpp:1860 src/irc/server.cpp:1891 src/irc/server.cpp:1903
-#: src/irc/server.cpp:2005 src/irc/server.cpp:2056 src/irc/server.cpp:2151
+#: src/irc/server.cpp:1866
+#, kde-format
+msgctxt "%1=nickname"
+msgid "Received invalid DCC SEND request from %1."
+msgstr ""
+
+#: src/irc/server.cpp:1901 src/irc/server.cpp:2021 src/irc/server.cpp:2033
+#: src/irc/server.cpp:2182 src/irc/server.cpp:2238 src/irc/server.cpp:2347
 #, fuzzy
 msgid "unknown size"
 msgstr "% dari saiz normal"
 
-#: src/irc/server.cpp:1857
+#: src/irc/server.cpp:1898
 #, fuzzy, kde-format
 msgid "%1 offers to send you \"%2\" (%3)..."
 msgstr "Hantar emel ke senarai"
 
-#: src/irc/server.cpp:1888
+#: src/irc/server.cpp:1935
+#, kde-format
+msgctxt "%1=nickname"
+msgid "Received invalid DCC CHAT request from %1."
+msgstr ""
+
+#: src/irc/server.cpp:2018
 #, kde-format
 msgid "Asking %1 to accept upload of \"%2\" (%3)..."
 msgstr ""
 
-#: src/irc/server.cpp:1900
+#: src/irc/server.cpp:2030
 #, kde-format
 msgid "Asking %1 to accept passive upload of \"%2\" (%3)..."
 msgstr ""
 
-#: src/irc/server.cpp:1966
+#: src/irc/server.cpp:2042
+#, kde-format
+msgid "Asking %1 to accept chat..."
+msgstr ""
+
+#: src/irc/server.cpp:2101
+#, kde-format
+msgctxt "%1 = nickname"
+msgid "Received invalid passive DCC chat acceptance message from %1."
+msgstr ""
+
+#: src/irc/server.cpp:2137
 #, kde-format
 msgctxt "%1 = file name, %2 = nickname"
 msgid ""
 "Received invalid passive DCC send acceptance message for \"%1\" from %2."
 msgstr ""
 
-#: src/irc/server.cpp:2001
+#: src/irc/server.cpp:2178
 #, kde-format
 msgctxt ""
 "%1 = file name, %2 = nickname of sender, %3 = percentage of file size, %4 = "
@@ -2195,13 +2271,13 @@ msgctxt ""
 msgid "Resuming download of \"%1\" from %2 starting at %3% of %4..."
 msgstr ""
 
-#: src/irc/server.cpp:2011
+#: src/irc/server.cpp:2188
 #, kde-format
 msgctxt "%1 = file name, %2 = nickname"
 msgid "Received invalid resume acceptance message for \"%1\" from %2."
 msgstr ""
 
-#: src/irc/server.cpp:2052
+#: src/irc/server.cpp:2234
 #, kde-format
 msgctxt ""
 "%1 = file name, %2 = nickname of recipient, %3 = percentage of file size, %4 "
@@ -2209,115 +2285,121 @@ msgctxt ""
 msgid "Resuming upload of \"%1\" to %2 starting at %3% of %4..."
 msgstr ""
 
-#: src/irc/server.cpp:2075
+#: src/irc/server.cpp:2256
 #, kde-format
 msgctxt "%1 = file name, %2 = nickname"
 msgid "Received invalid resume request for \"%1\" from %2."
 msgstr ""
 
-#: src/irc/server.cpp:2094
+#: src/irc/server.cpp:2275
 #, kde-format
 msgctxt "%1 = file name, %2 = nickname"
 msgid "Received invalid reject request for \"%1\" from %2."
 msgstr ""
 
-#: src/irc/server.cpp:2108
+#: src/irc/server.cpp:2291
+#, kde-format
+msgctxt "%1 = nickname"
+msgid "Received invalid reject request from %1."
+msgstr ""
+
+#: src/irc/server.cpp:2304
 #, kde-format
 msgctxt "%1 = file name, %2 = nickname of sender"
 msgid "Download of \"%1\" from %2 finished."
 msgstr ""
 
-#: src/irc/server.cpp:2113
+#: src/irc/server.cpp:2309
 #, kde-format
 msgctxt "%1 = file name, %2 = nickname of sender"
 msgid "Download of \"%1\" from %2 failed. Reason: %3."
 msgstr ""
 
-#: src/irc/server.cpp:2125
+#: src/irc/server.cpp:2321
 #, kde-format
 msgctxt "%1 = file name, %2 = nickname of recipient"
 msgid "Upload of \"%1\" to %2 finished."
 msgstr ""
 
-#: src/irc/server.cpp:2128
+#: src/irc/server.cpp:2324
 #, kde-format
 msgctxt "%1 = file name, %2 = nickname of recipient"
 msgid "Upload of \"%1\" to %2 failed. Reason: %3."
 msgstr ""
 
-#: src/irc/server.cpp:2142
+#: src/irc/server.cpp:2338
 #, kde-format
 msgctxt "%1 = file name, %2 nickname of recipient"
 msgid "Sending \"%1\" to %2..."
 msgstr ""
 
-#: src/irc/server.cpp:2149
+#: src/irc/server.cpp:2345
 #, kde-format
 msgctxt "%1 = file name, %2 = file size, %3 = nickname of sender"
 msgid "Downloading \"%1\" (%2) from %3..."
 msgstr ""
 
-#: src/irc/server.cpp:2470 src/notificationhandler.cpp:260
+#: src/irc/server.cpp:2666 src/notificationhandler.cpp:260
 #, fuzzy, kde-format
 msgid "%1 is online (%2)."
 msgstr "Kamus Talian"
 
-#: src/irc/server.cpp:2487 src/notificationhandler.cpp:274
+#: src/irc/server.cpp:2683 src/notificationhandler.cpp:274
 #, kde-format
 msgid "%1 went offline (%2)."
 msgstr ""
 
-#: src/irc/server.cpp:3111
+#: src/irc/server.cpp:3307
 #, kde-format
 msgid "Error: Could not find script \"%1\"."
 msgstr ""
 
-#: src/irc/server.cpp:3116
+#: src/irc/server.cpp:3312
 #, kde-format
 msgid "Error: Could not execute script \"%1\". Check file permissions."
 msgstr ""
 
-#: src/irc/server.cpp:3343
+#: src/irc/server.cpp:3539
 msgid "Gone away for now"
 msgstr ""
 
-#: src/irc/server.cpp:3373
+#: src/irc/server.cpp:3569
 msgid "You are now marked as being away."
 msgstr ""
 
-#: src/irc/server.cpp:3398
+#: src/irc/server.cpp:3594
 msgid "You are no longer marked as being away."
 msgstr ""
 
-#: src/irc/server.cpp:3407
+#: src/irc/server.cpp:3603
 msgid "You are not marked as being away."
 msgstr ""
 
-#: src/irc/server.cpp:3554
+#: src/irc/server.cpp:3750
 #, kde-format
 msgid "Failed to initiate key exchange with %1."
 msgstr ""
 
-#: src/irc/server.cpp:3582
+#: src/irc/server.cpp:3778
 #, kde-format
 msgid "Failed to parse the DH1080_INIT of %1. Key exchange failed."
 msgstr ""
 
-#: src/irc/server.cpp:3588
+#: src/irc/server.cpp:3784
 #, kde-format
 msgid ""
 "Your key is set and your messages will now be encrypted, sending "
 "DH1080_FINISH to %1."
 msgstr ""
 
-#: src/irc/server.cpp:3609
+#: src/irc/server.cpp:3805
 #, kde-format
 msgid ""
 "Successfully parsed DH1080_FINISH sent by %1. Your key is set and your "
 "messages will now be encrypted."
 msgstr ""
 
-#: src/irc/server.cpp:3613
+#: src/irc/server.cpp:3809
 #, kde-format
 msgid "Failed to parse DH1080_FINISH sent by %1. Key exchange failed."
 msgstr ""
@@ -2338,7 +2420,7 @@ msgstr ""
 msgid "Nickname"
 msgstr ""
 
-#: src/irc/nicksonline.cpp:40 src/viewer/viewcontainer.cpp:2501
+#: src/irc/nicksonline.cpp:40 src/viewer/viewcontainer.cpp:2495
 msgid "Watched Nicks Online"
 msgstr ""
 
@@ -2478,8 +2560,8 @@ msgstr ""
 
 #. i18n: file: src/irc/channellistpanelui.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ChannelListWidgetUI)
-#: src/irc/channellistpanel.cpp:143 src/viewer/viewcontainer.cpp:2433
-#: src/viewer/viewcontainer.cpp:2491 rc.cpp:56
+#: src/irc/channellistpanel.cpp:143 src/viewer/viewcontainer.cpp:2427
+#: src/viewer/viewcontainer.cpp:2485 rc.cpp:56
 #, fuzzy
 msgid "Channel List"
 msgstr "Senarai Arab"
@@ -2607,7 +2689,7 @@ msgstr "Format imej ini"
 #. i18n: ectx: property (toolTip), widget (QToolButton, m_closeButton)
 #. i18n: file: src/viewer/searchbarbase.ui:21
 #. i18n: ectx: property (toolTip), widget (QToolButton, m_closeButton)
-#: src/irc/query.cpp:405 rc.cpp:290 rc.cpp:1863
+#: src/irc/query.cpp:405 rc.cpp:290 rc.cpp:1868
 #, fuzzy
 msgid "Close"
 msgstr "Warna"
@@ -2637,11 +2719,6 @@ msgstr ""
 #, fuzzy
 msgid "Close Query"
 msgstr "Tutup dokumen"
-
-#: src/irc/query.cpp:670
-#, fuzzy
-msgid "Talking to yourself"
-msgstr "&Lompat ke hiperlink"
 
 #: src/irc/query.cpp:686 src/irc/query.cpp:693 src/irc/channel.cpp:1411
 #: src/irc/channel.cpp:1413 src/irc/channel.cpp:1432 src/irc/channel.cpp:1434
@@ -3975,7 +4052,7 @@ msgstr "Baru"
 #. i18n: file: src/config/highlight_configui.ui:242
 #. i18n: ectx: property (toolTip), widget (KPushButton, patternButton)
 #: src/config/autoreplace_config.cpp:42 src/config/highlight_config.cpp:165
-#: rc.cpp:1066
+#: rc.cpp:1069
 msgid "Click to run Regular Expression Editor (KRegExpEditor)"
 msgstr ""
 
@@ -4082,7 +4159,7 @@ msgstr "Kelakuan"
 
 #. i18n: file: src/config/tabnotifications_config.ui:45
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
-#: src/config/settingsdialog.cpp:52 rc.cpp:1806
+#: src/config/settingsdialog.cpp:52 rc.cpp:1811
 #, fuzzy
 msgid "Notifications"
 msgstr "Pemberitahuan Sistem"
@@ -4122,7 +4199,7 @@ msgstr "Tab"
 #. i18n: ectx: attribute (title), widget (QWidget, generalWidget)
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
-#: src/config/settingsdialog.cpp:97 rc.cpp:474 rc.cpp:1468
+#: src/config/settingsdialog.cpp:97 rc.cpp:474 rc.cpp:1473
 #, fuzzy
 msgid "General"
 msgstr "Umum"
@@ -4154,7 +4231,7 @@ msgstr "Perincian Menglog"
 
 #. i18n: file: src/config/tabnotifications_config.ui:236
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TabNotificationsHighlights)
-#: src/config/settingsdialog.cpp:153 rc.cpp:1830
+#: src/config/settingsdialog.cpp:153 rc.cpp:1835
 #, fuzzy
 msgid "Highlight"
 msgstr "Sorot"
@@ -4215,30 +4292,35 @@ msgid "Close query tab"
 msgstr "Default hentian tab:"
 
 #: src/config/warnings_config.cpp:113
+#, fuzzy
+msgid "Close DCC Chat tab"
+msgstr "Default hentian tab:"
+
+#: src/config/warnings_config.cpp:114
 msgid "The channel list can only be opened from server-aware tabs"
 msgstr ""
 
-#: src/config/warnings_config.cpp:114
+#: src/config/warnings_config.cpp:115
 msgid "Warning on hiding the main window menu"
 msgstr ""
 
-#: src/config/warnings_config.cpp:115
+#: src/config/warnings_config.cpp:116
 msgid "Warning on high traffic with channel list"
 msgstr ""
 
-#: src/config/warnings_config.cpp:116
+#: src/config/warnings_config.cpp:117
 msgid "Warning on pasting large portions of text"
 msgstr ""
 
-#: src/config/warnings_config.cpp:117
+#: src/config/warnings_config.cpp:118
 msgid "Warning on quitting Konversation"
 msgstr ""
 
-#: src/config/warnings_config.cpp:120
+#: src/config/warnings_config.cpp:121
 msgid "Warn before quitting with active DCC file transfers"
 msgstr ""
 
-#: src/config/warnings_config.cpp:121
+#: src/config/warnings_config.cpp:122
 msgid "Warn when sending characters incompatible with your current encoding"
 msgstr ""
 
@@ -4759,7 +4841,7 @@ msgstr "Kiraan Aksara"
 
 #. i18n: file: data/konversationui.rc:23
 #. i18n: ectx: Menu (insert)
-#: src/viewer/insertchardialog.cpp:30 rc.cpp:1935
+#: src/viewer/insertchardialog.cpp:30 rc.cpp:1940
 msgid "&Insert"
 msgstr ""
 
@@ -4935,7 +5017,7 @@ msgid ""
 "\n"
 msgstr "dikemaskini pada %(date)s"
 
-#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2218
+#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2212
 #, fuzzy
 msgid "Raw Log"
 msgstr "Log Sistem"
@@ -5032,19 +5114,19 @@ msgstr "Cari teks yang dinyatakan"
 msgid "Logfile of %1"
 msgstr ""
 
-#: src/viewer/viewcontainer.cpp:2459
+#: src/viewer/viewcontainer.cpp:2453
 msgid ""
 "Using this function may result in a lot of network traffic. If your "
 "connection is not fast enough, it is possible that your client will be "
 "disconnected by the server."
 msgstr ""
 
-#: src/viewer/viewcontainer.cpp:2463
+#: src/viewer/viewcontainer.cpp:2457
 #, fuzzy
 msgid "Channel List Warning"
 msgstr "Label Senarai Semasa"
 
-#: src/viewer/viewcontainer.cpp:2487
+#: src/viewer/viewcontainer.cpp:2481
 msgid ""
 "To know which server to display the channel list for, the list can only be "
 "opened from a query, channel or status window."
@@ -5516,7 +5598,7 @@ msgstr "Mula pada:"
 #. i18n: ectx: property (text), widget (QLabel, textLabel12)
 #. i18n: file: src/config/connectionbehavior_config.ui:260
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
-#: rc.cpp:35 rc.cpp:1140
+#: rc.cpp:35 rc.cpp:1143
 #, fuzzy
 msgid "Type:"
 msgstr "Jenis:"
@@ -5801,7 +5883,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, regExpEditorButton)
 #. i18n: file: src/config/highlight_configui.ui:245
 #. i18n: ectx: property (text), widget (KPushButton, patternButton)
-#: rc.cpp:164 rc.cpp:859 rc.cpp:1069
+#: rc.cpp:164 rc.cpp:859 rc.cpp:1072
 msgid "..."
 msgstr ""
 
@@ -6736,7 +6818,7 @@ msgstr "&Memformat Teks"
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: file: src/viewer/irccolorchooserui.ui:122
 #. i18n: ectx: property (text), widget (QLabel, m_bgColorLbl)
-#: rc.cpp:660 rc.cpp:1932
+#: rc.cpp:660 rc.cpp:1937
 #, fuzzy
 msgid "&Background color:"
 msgstr "Warna latarbelakang:"
@@ -6786,7 +6868,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (KPushButton, newButton)
 #. i18n: file: src/config/highlight_configui.ui:162
 #. i18n: ectx: property (text), widget (KPushButton, newButton)
-#: rc.cpp:681 rc.cpp:784 rc.cpp:892 rc.cpp:1057
+#: rc.cpp:681 rc.cpp:784 rc.cpp:892 rc.cpp:1060
 #, fuzzy
 msgid "&New"
 msgstr "&Baru"
@@ -6799,7 +6881,7 @@ msgstr "&Baru"
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
 #. i18n: file: src/config/highlight_configui.ui:175
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
-#: rc.cpp:684 rc.cpp:790 rc.cpp:895 rc.cpp:1060
+#: rc.cpp:684 rc.cpp:790 rc.cpp:895 rc.cpp:1063
 #, fuzzy
 msgid "&Remove"
 msgstr "Buang Footer"
@@ -6919,7 +7001,7 @@ msgstr " Auto Kemaskini"
 #. i18n: ectx: property (suffix), widget (KIntNumInput, kcfg_ReconnectDelay)
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:271
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_AutoWhoContinuousInterval)
-#: rc.cpp:748 rc.cpp:1096 rc.cpp:1536
+#: rc.cpp:748 rc.cpp:1099 rc.cpp:1541
 #, fuzzy
 msgid " seconds"
 msgstr "Saat antara kemaskini"
@@ -6998,7 +7080,7 @@ msgstr "Fail Config Ruang Kerja"
 #. i18n: ectx: property (title), widget (QGroupBox, lookGBox)
 #. i18n: file: src/config/tabnotifications_config.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox4)
-#: rc.cpp:796 rc.cpp:1797
+#: rc.cpp:796 rc.cpp:1802
 msgid "Look"
 msgstr ""
 
@@ -7082,7 +7164,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QTreeWidget, patternListView)
 #. i18n: file: src/config/highlight_configui.ui:131
 #. i18n: ectx: property (text), widget (QTreeWidget, highlightListView)
-#: rc.cpp:835 rc.cpp:1045
+#: rc.cpp:835 rc.cpp:1048
 msgid "RegEx"
 msgstr ""
 
@@ -7366,187 +7448,193 @@ msgstr ""
 msgid "Fallback to an IPv&4 interface for DCC send:"
 msgstr ""
 
-#. i18n: file: src/config/dcc_configui.ui:138
+#. i18n: file: src/config/dcc_configui.ui:122
 #. i18n: ectx: property (text), widget (QLabel, textLabel7)
 #: rc.cpp:994
 #, fuzzy
 msgid "DCC send t&imeout:"
 msgstr "Hantar emel ke senarai"
 
-#. i18n: file: src/config/dcc_configui.ui:151
+#. i18n: file: src/config/dcc_configui.ui:135
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_DccSendTimeout)
 #: rc.cpp:997
 #, fuzzy
 msgid " sec"
 msgstr "Sela masa (saat): "
 
-#. i18n: file: src/config/dcc_configui.ui:180
+#. i18n: file: src/config/dcc_configui.ui:164
 #. i18n: ectx: property (text), widget (QLabel, textLabel6)
 #: rc.cpp:1000
 #, fuzzy
 msgid "Buffer si&ze:"
 msgstr "Sai&z Kertas:"
 
-#. i18n: file: src/config/dcc_configui.ui:193
+#. i18n: file: src/config/dcc_configui.ui:177
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_DccBufferSize)
 #: rc.cpp:1003
 msgid " bytes"
 msgstr ""
 
-#. i18n: file: src/config/dcc_configui.ui:225
+#. i18n: file: src/config/dcc_configui.ui:209
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
 #: rc.cpp:1006
 msgid "IP"
 msgstr ""
 
-#. i18n: file: src/config/dcc_configui.ui:234
+#. i18n: file: src/config/dcc_configui.ui:215
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
 #: rc.cpp:1009
 msgid "&Method to get own IP:"
 msgstr ""
 
-#. i18n: file: src/config/dcc_configui.ui:247
+#. i18n: file: src/config/dcc_configui.ui:231
 #. i18n: ectx: property (text), widget (QLabel, ownIP)
 #: rc.cpp:1012
 msgid "O&wn IP:"
 msgstr ""
 
-#. i18n: file: src/config/dcc_configui.ui:266
+#. i18n: file: src/config/dcc_configui.ui:250
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
 #: rc.cpp:1015
 #, fuzzy
 msgid "Ports"
 msgstr "Port IO"
 
-#. i18n: file: src/config/dcc_configui.ui:272
+#. i18n: file: src/config/dcc_configui.ui:256
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DccSpecificChatPorts)
 #: rc.cpp:1018
 msgid "Enable specific p&orts for DCC chat:"
 msgstr ""
 
-#. i18n: file: src/config/dcc_configui.ui:311
+#. i18n: file: src/config/dcc_configui.ui:295
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#. i18n: file: src/config/dcc_configui.ui:376
+#. i18n: file: src/config/dcc_configui.ui:360
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #: rc.cpp:1021 rc.cpp:1027
 #, fuzzy
 msgid "to"
 msgstr " sehingga "
 
-#. i18n: file: src/config/dcc_configui.ui:337
+#. i18n: file: src/config/dcc_configui.ui:321
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DccSpecificSendPorts)
 #: rc.cpp:1024
 msgid "Enable specific &ports for DCC transfer server:"
 msgstr ""
 
-#. i18n: file: src/config/dcc_configui.ui:421
+#. i18n: file: src/config/dcc_configui.ui:405
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DccUPnP)
 #: rc.cpp:1030
 msgid "Enable UPnP for NAT traversal"
 msgstr ""
 
+#. i18n: file: src/config/dcc_configui.ui:412
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DccChatAutoAccept)
+#: rc.cpp:1033
+msgid "Automatically accept DCC chat offer"
+msgstr ""
+
 #. i18n: file: src/config/highlight_configui.ui:20
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightSoundsEnabled)
-#: rc.cpp:1033
+#: rc.cpp:1036
 msgid "Ena&ble sound for highlights"
 msgstr ""
 
 #. i18n: file: src/config/highlight_configui.ui:47
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightNick)
-#: rc.cpp:1036
+#: rc.cpp:1039
 msgid "Alwa&ys highlight own current nick:"
 msgstr ""
 
 #. i18n: file: src/config/highlight_configui.ui:54
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightOwnLines)
-#: rc.cpp:1039
+#: rc.cpp:1042
 msgid "Always highlight own &lines:"
 msgstr ""
 
 #. i18n: file: src/config/highlight_configui.ui:109
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:1042
+#: rc.cpp:1045
 #, fuzzy
 msgid "Highlight List"
 msgstr "Senarai Arab"
 
 #. i18n: file: src/config/highlight_configui.ui:136
 #. i18n: ectx: property (text), widget (QTreeWidget, highlightListView)
-#: rc.cpp:1048
+#: rc.cpp:1051
 msgid "Highlights"
 msgstr ""
 
 #. i18n: file: src/config/highlight_configui.ui:141
 #. i18n: ectx: property (text), widget (QTreeWidget, highlightListView)
-#: rc.cpp:1051
+#: rc.cpp:1054
 #, fuzzy
 msgid "Sound"
 msgstr "Bunyi"
 
 #. i18n: file: src/config/highlight_configui.ui:146
 #. i18n: ectx: property (text), widget (QTreeWidget, highlightListView)
-#: rc.cpp:1054
+#: rc.cpp:1057
 #, fuzzy
 msgid "Auto Text"
 msgstr "&Teks Tersembunyi"
 
 #. i18n: file: src/config/highlight_configui.ui:205
 #. i18n: ectx: property (text), widget (QLabel, patternLabel)
-#: rc.cpp:1063
+#: rc.cpp:1066
 #, fuzzy
 msgid "&Pattern:"
 msgstr "Log penerangan corak"
 
 #. i18n: file: src/config/highlight_configui.ui:260
 #. i18n: ectx: property (text), widget (QLabel, colorLabel)
-#: rc.cpp:1072
+#: rc.cpp:1075
 #, fuzzy
 msgid "Color:"
 msgstr "Warna:"
 
 #. i18n: file: src/config/highlight_configui.ui:283
 #. i18n: ectx: property (text), widget (QLabel, soundLabel)
-#: rc.cpp:1075
+#: rc.cpp:1078
 #, fuzzy
 msgid "&Sound:"
 msgstr "Bunyi"
 
 #. i18n: file: src/config/highlight_configui.ui:307
 #. i18n: ectx: property (filter), widget (KUrlRequester, soundURL)
-#: rc.cpp:1078
+#: rc.cpp:1081
 msgid "audio/x-wav audio/x-mp3 application/ogg audio/x-adpcm"
 msgstr ""
 
 #. i18n: file: src/config/highlight_configui.ui:323
 #. i18n: ectx: property (toolTip), widget (QToolButton, soundPlayBtn)
-#: rc.cpp:1081
+#: rc.cpp:1084
 #, fuzzy
 msgid "Test sound"
 msgstr "Bunyi & Video"
 
 #. i18n: file: src/config/highlight_configui.ui:338
 #. i18n: ectx: property (text), widget (QLabel, autoTextLabel)
-#: rc.cpp:1084
+#: rc.cpp:1087
 #, fuzzy
 msgid "&Auto text:"
 msgstr "&Teks Tersembunyi"
 
 #. i18n: file: src/config/connectionbehavior_config.ui:23
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_AutoReconnect)
-#: rc.cpp:1087
+#: rc.cpp:1090
 #, fuzzy
 msgid "Enable Automatic Reconnect"
 msgstr "Semakan Tatabahasa Automatik"
 
 #. i18n: file: src/config/connectionbehavior_config.ui:32
 #. i18n: ectx: property (text), widget (QLabel, reconnectDelayLabel)
-#: rc.cpp:1090
+#: rc.cpp:1093
 msgid "Reconnect delay:"
 msgstr ""
 
 #. i18n: file: src/config/connectionbehavior_config.ui:61
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1093
+#: rc.cpp:1096
 msgid "Reconnection attempts:"
 msgstr ""
 
@@ -7554,41 +7642,41 @@ msgstr ""
 #. i18n: ectx: property (specialValueText), widget (KIntNumInput, kcfg_ReconnectCount)
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:104
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_ScrollbackMax)
-#: rc.cpp:1099 rc.cpp:1506
+#: rc.cpp:1102 rc.cpp:1511
 #, fuzzy
 msgid "Unlimited"
 msgstr "tanpa had"
 
 #. i18n: file: src/config/connectionbehavior_config.ui:122
 #. i18n: ectx: property (title), widget (QGroupBox, debugGBox)
-#: rc.cpp:1102
+#: rc.cpp:1105
 #, fuzzy
 msgid "Debug"
 msgstr "Mod nyahpepijat"
 
 #. i18n: file: src/config/connectionbehavior_config.ui:128
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_RawLog)
-#: rc.cpp:1105
+#: rc.cpp:1108
 msgid "Show raw &log window when connecting"
 msgstr ""
 
 #. i18n: file: src/config/connectionbehavior_config.ui:138
 #. i18n: ectx: property (title), widget (QGroupBox, encryptionGBox)
-#: rc.cpp:1108
+#: rc.cpp:1111
 #, fuzzy
 msgid "Encryption"
 msgstr "Sambungan Gagal"
 
 #. i18n: file: src/config/connectionbehavior_config.ui:144
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1111
+#: rc.cpp:1114
 #, fuzzy
 msgid "Default encryption type:"
 msgstr "Bahasa default:"
 
 #. i18n: file: src/config/connectionbehavior_config.ui:153
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_EncryptionType)
-#: rc.cpp:1114
+#: rc.cpp:1117
 msgid ""
 "ECB or Electronic Codebook mode is supported by many encryption clients like "
 "FiSH and Mircryption however it is generally considered to be insecure.\n"
@@ -7602,143 +7690,143 @@ msgstr ""
 
 #. i18n: file: src/config/connectionbehavior_config.ui:157
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EncryptionType)
-#: rc.cpp:1119
+#: rc.cpp:1122
 msgid "Electronic Codebook (ECB)"
 msgstr ""
 
 #. i18n: file: src/config/connectionbehavior_config.ui:162
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EncryptionType)
-#: rc.cpp:1122
+#: rc.cpp:1125
 msgid "Cipher-Block Chaining (CBC)"
 msgstr ""
 
 #. i18n: file: src/config/connectionbehavior_config.ui:186
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_ProxyEnabled)
-#: rc.cpp:1125
+#: rc.cpp:1128
 msgid "Proxy"
 msgstr ""
 
 #. i18n: file: src/config/connectionbehavior_config.ui:198
 #. i18n: ectx: property (text), widget (QLabel, addressLabel)
-#: rc.cpp:1128
+#: rc.cpp:1131
 #, fuzzy
 msgid "Address:"
 msgstr "Buku Alamat"
 
 #. i18n: file: src/config/connectionbehavior_config.ui:212
 #. i18n: ectx: property (text), widget (QLabel, portLabel)
-#: rc.cpp:1131
+#: rc.cpp:1134
 #, fuzzy
 msgid "Port:"
 msgstr "Port"
 
 #. i18n: file: src/config/connectionbehavior_config.ui:226
 #. i18n: ectx: property (text), widget (QLabel, usernameLabel)
-#: rc.cpp:1134
+#: rc.cpp:1137
 #, fuzzy
 msgid "Username:"
 msgstr "Tukar nama"
 
 #. i18n: file: src/config/connectionbehavior_config.ui:240
 #. i18n: ectx: property (text), widget (QLabel, passwordLabel)
-#: rc.cpp:1137
+#: rc.cpp:1140
 #, fuzzy
 msgid "Password:"
 msgstr "&Seluruh perkataan"
 
 #. i18n: file: src/config/connectionbehavior_config.ui:271
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ProxyType)
-#: rc.cpp:1143
+#: rc.cpp:1146
 msgid "Socks v5"
 msgstr ""
 
 #. i18n: file: src/config/connectionbehavior_config.ui:276
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ProxyType)
-#: rc.cpp:1146
+#: rc.cpp:1149
 msgid "HTTP"
 msgstr ""
 
 #. i18n: file: src/config/konversation.kcfg:22
 #. i18n: ectx: label, entry, group (Appearance)
-#: rc.cpp:1151
+#: rc.cpp:1154
 msgid "Limit the size of the tab labels to fit them all on screen"
 msgstr ""
 
 #. i18n: file: src/config/konversation.kcfg:227
 #. i18n: ectx: label, entry, group (Appearance)
-#: rc.cpp:1220
+#: rc.cpp:1223
 #, fuzzy
 msgid "Hide the scrollbar"
 msgstr "Papar atau sembunyi pembaris"
 
 #. i18n: file: src/config/konversation.kcfg:233
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:1223
+#: rc.cpp:1226
 msgid ""
 "Enable if you want all the IRC input lines to check your spelling as you type"
 msgstr ""
 
 #. i18n: file: src/config/konversation.kcfg:242
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:1226
+#: rc.cpp:1229
 msgid ""
 "Enabling this will cause the input box to grow vertically when it fills up."
 msgstr ""
 
 #. i18n: file: src/config/konversation.kcfg:276
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:1241
+#: rc.cpp:1244
 msgid "Start with hidden main window"
 msgstr ""
 
 #. i18n: file: src/config/konversation.kcfg:320
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:1260
+#: rc.cpp:1263
 msgid "&Show real names next to nicknames"
 msgstr ""
 
 #. i18n: file: src/config/konversation.kcfg:534
 #. i18n: ectx: label, entry (OpenWatchedNicksAtStartup), group (Notify List)
-#: rc.cpp:1344
+#: rc.cpp:1347
 msgid "Open Watched Nicks tab at application startup"
 msgstr ""
 
-#. i18n: file: src/config/konversation.kcfg:836
+#. i18n: file: src/config/konversation.kcfg:841
 #. i18n: ectx: label, entry, group (Themes)
-#: rc.cpp:1442
+#: rc.cpp:1447
 #, fuzzy
 msgid "Enable emoticons"
 msgstr "Hidupkan animasi"
 
-#. i18n: file: src/config/konversation.kcfg:840
+#. i18n: file: src/config/konversation.kcfg:845
 #. i18n: ectx: label, entry, group (Themes)
-#: rc.cpp:1445
+#: rc.cpp:1450
 #, fuzzy
 msgid "Emoticons theme"
 msgstr "Pengurus Tema"
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:25
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_Beep)
-#: rc.cpp:1471
+#: rc.cpp:1476
 msgid ""
 "Sounds the system bell when you receive an ASCII BEL (0x07) control character"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:28
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Beep)
-#: rc.cpp:1474
+#: rc.cpp:1479
 msgid "Enable s&ystem bell on incoming ASCII BEL"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:35
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_HideUnimportantEvents)
-#: rc.cpp:1477
+#: rc.cpp:1482
 msgid "Hide &Join/Part/Nick events"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:42
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_DisableExpansion)
-#: rc.cpp:1481
+#: rc.cpp:1486
 #, no-c-format
 msgid ""
 "Do not expand variables when sending text to the server. A variable starts "
@@ -7748,14 +7836,14 @@ msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:45
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DisableExpansion)
-#: rc.cpp:1485
+#: rc.cpp:1490
 #, no-c-format
 msgid "Disable variable (e.g. %C, %B, %G...) e&xpansion"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:52
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_RedirectServerAndAppMsgToStatusPane)
-#: rc.cpp:1488
+#: rc.cpp:1493
 msgid "&Redirect status messages to the server status window"
 msgstr ""
 
@@ -7763,20 +7851,20 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:101
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_ScrollbackMax)
-#: rc.cpp:1491 rc.cpp:1503
+#: rc.cpp:1496 rc.cpp:1508
 msgid "How many lines to keep in buffers, 0 = unlimited"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:62
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1494
+#: rc.cpp:1499
 #, fuzzy
 msgid "Scroll&back limit:"
 msgstr "Had saiz log:"
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:91
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_UseLiteralModes)
-#: rc.cpp:1497
+#: rc.cpp:1502
 msgid ""
 "Keep channel mode string as a combination of characters instead of "
 "translating them into human readable words. E.g. '*** Channel modes: no "
@@ -7785,27 +7873,27 @@ msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:94
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseLiteralModes)
-#: rc.cpp:1500
+#: rc.cpp:1505
 msgid "Show raw mode characters"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:107
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_ScrollbackMax)
-#: rc.cpp:1509
+#: rc.cpp:1514
 #, fuzzy
 msgid " lines"
 msgstr "1.5 baris"
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:136
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox3_2)
-#: rc.cpp:1512
+#: rc.cpp:1517
 #, fuzzy
 msgid "Marker Lines"
 msgstr "Penan&da Arah"
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:142
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutomaticRememberLine)
-#: rc.cpp:1515
+#: rc.cpp:1520
 msgid ""
 "Inserts a remember line into the chat window when you switch to another chat "
 "window or minimize the application."
@@ -7813,279 +7901,279 @@ msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:145
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutomaticRememberLine)
-#: rc.cpp:1518
+#: rc.cpp:1523
 msgid "Mark the last position in a chat window when it is hidden"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:176
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutomaticRememberLineOnlyOnTextChange)
-#: rc.cpp:1521
+#: rc.cpp:1526
 msgid "Move the line only when new text is about to be shown"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:185
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_MarkerLineInAllViews)
-#: rc.cpp:1524
+#: rc.cpp:1529
 msgid "Show manually inserted lines in all chat windows"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:195
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_AutoWhoContinuousEnabled)
-#: rc.cpp:1527
+#: rc.cpp:1532
 msgid "Enable Automatic User Information Look Up (/WHO)"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:239
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:1530
+#: rc.cpp:1535
 msgid "Max. number of users in a channel:"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:252
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_AutoWhoNicksLimit)
-#: rc.cpp:1533
+#: rc.cpp:1538
 msgid " nicks"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowbehaviour_config.ui:287
 #. i18n: ectx: property (text), widget (QLabel, whoIntervalLbl)
-#: rc.cpp:1539
+#: rc.cpp:1544
 #, fuzzy
 msgid "Update interval:"
 msgstr " Auto Kemaskini"
 
 #. i18n: file: src/config/nicklistbehavior_configui.ui:26
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:1542
+#: rc.cpp:1547
 msgid "&Command to be executed on double click:"
 msgstr ""
 
 #. i18n: file: src/config/nicklistbehavior_configui.ui:39
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SortCaseInsensitive)
-#: rc.cpp:1545
+#: rc.cpp:1550
 #, fuzzy
 msgid "Sort case &insensitive"
 msgstr "Carian tidak sensitif huruf"
 
 #. i18n: file: src/config/nicklistbehavior_configui.ui:46
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SortByActivity)
-#: rc.cpp:1548
+#: rc.cpp:1553
 #, fuzzy
 msgid "Sort by &activity"
 msgstr "Buka dokumen dengan membuat salinan"
 
 #. i18n: file: src/config/nicklistbehavior_configui.ui:59
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SortByStatus)
-#: rc.cpp:1551
+#: rc.cpp:1556
 #, fuzzy
 msgid "Sort b&y user status"
 msgstr "Papar Bar &Status"
 
 #. i18n: file: src/config/nicklistbehavior_configui.ui:72
 #. i18n: ectx: property (text), widget (QLabel, orderHintLabel)
-#: rc.cpp:1554
+#: rc.cpp:1559
 msgid "(Reorder nick sorting order by drag and drop)"
 msgstr ""
 
 #. i18n: file: src/config/nicklistbehavior_configui.ui:103
 #. i18n: ectx: property (text), widget (QTreeWidget, sortOrder)
-#: rc.cpp:1560
+#: rc.cpp:1565
 msgid "Explanation"
 msgstr ""
 
 #. i18n: file: src/config/fontappearance_config.ui:25
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_FixedMOTD)
-#: rc.cpp:1563
+#: rc.cpp:1568
 msgid "Show MOTD (Message Of The Day) message in fixed font"
 msgstr ""
 
 #. i18n: file: src/config/fontappearance_config.ui:28
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FixedMOTD)
-#: rc.cpp:1566
+#: rc.cpp:1571
 msgid "Enable fi&xed font for MOTD messages"
 msgstr ""
 
 #. i18n: file: src/config/fontappearance_config.ui:35
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseBoldNicks)
-#: rc.cpp:1569
+#: rc.cpp:1574
 msgid "Show sender nicknames &bold in the chat view"
 msgstr ""
 
 #. i18n: file: src/config/fontappearance_config.ui:61
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_CustomTextFont)
-#: rc.cpp:1572
+#: rc.cpp:1577
 #, fuzzy
 msgid "Chat text:"
 msgstr "&Teks Tersembunyi"
 
 #. i18n: file: src/config/fontappearance_config.ui:92
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_CustomListFont)
-#: rc.cpp:1575
+#: rc.cpp:1580
 #, fuzzy
 msgid "Nickname list:"
 msgstr "Senarai Arab"
 
 #. i18n: file: src/config/fontappearance_config.ui:102
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_CustomTabFont)
-#: rc.cpp:1578
+#: rc.cpp:1583
 #, fuzzy
 msgid "Tab bar:"
 msgstr "Tab Bar"
 
 #. i18n: file: src/config/theme_configui.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Theme_ConfigUI)
-#: rc.cpp:1581
+#: rc.cpp:1586
 #, fuzzy
 msgid "Theme_Config"
 msgstr "Pengurus Tema"
 
 #. i18n: file: src/config/theme_configui.ui:28
 #. i18n: ectx: property (text), widget (QPushButton, installButton)
-#: rc.cpp:1584
+#: rc.cpp:1589
 #, fuzzy
 msgid "I&nstall Theme..."
 msgstr "Pengurus Tema"
 
 #. i18n: file: src/config/theme_configui.ui:38
 #. i18n: ectx: property (text), widget (QPushButton, removeButton)
-#: rc.cpp:1587
+#: rc.cpp:1592
 #, fuzzy
 msgid "&Remove Theme"
 msgstr "Pengurus Tema"
 
 #. i18n: file: src/config/theme_configui.ui:78
 #. i18n: ectx: property (toolTip), widget (QLabel, previewLabel1)
-#: rc.cpp:1590
+#: rc.cpp:1595
 #, fuzzy
 msgid "Icon for normal users"
 msgstr "Alatan untuk pengguna eBay"
 
 #. i18n: file: src/config/theme_configui.ui:97
 #. i18n: ectx: property (toolTip), widget (QLabel, previewLabel2)
-#: rc.cpp:1593
+#: rc.cpp:1598
 #, fuzzy
 msgid "Icon for away users"
 msgstr "Alatan untuk pengguna eBay"
 
 #. i18n: file: src/config/theme_configui.ui:113
 #. i18n: ectx: property (toolTip), widget (QLabel, previewLabel3)
-#: rc.cpp:1596
+#: rc.cpp:1601
 msgid "Icon for users with voice"
 msgstr ""
 
 #. i18n: file: src/config/theme_configui.ui:129
 #. i18n: ectx: property (toolTip), widget (QLabel, previewLabel4)
-#: rc.cpp:1599
+#: rc.cpp:1604
 msgid "Icon for users with half-operator privileges"
 msgstr ""
 
 #. i18n: file: src/config/theme_configui.ui:145
 #. i18n: ectx: property (toolTip), widget (QLabel, previewLabel5)
-#: rc.cpp:1602
+#: rc.cpp:1607
 msgid "Icon for users with operator privileges"
 msgstr ""
 
 #. i18n: file: src/config/theme_configui.ui:161
 #. i18n: ectx: property (toolTip), widget (QLabel, previewLabel6)
-#: rc.cpp:1605
+#: rc.cpp:1610
 msgid "Icon for users with admin privileges"
 msgstr ""
 
 #. i18n: file: src/config/theme_configui.ui:177
 #. i18n: ectx: property (toolTip), widget (QLabel, previewLabel7)
-#: rc.cpp:1608
+#: rc.cpp:1613
 msgid "Icon for users with owner privileges"
 msgstr ""
 
 #. i18n: file: src/config/theme_configui.ui:202
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:1611
+#: rc.cpp:1616
 #, fuzzy
 msgid "Preview:"
 msgstr "Pralihat:"
 
 #. i18n: file: src/config/colorsappearance_config.ui:30
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:1614
+#: rc.cpp:1619
 #, fuzzy
 msgid "Custom Colors"
 msgstr "Kamus Lazim:"
 
 #. i18n: file: src/config/colorsappearance_config.ui:36
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_InputFieldsBackgroundColor)
-#: rc.cpp:1617
+#: rc.cpp:1622
 msgid "&Use custom colors for input box, nickname list and tab list"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:273
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:1620
+#: rc.cpp:1625
 #, fuzzy
 msgid "&Background:"
 msgstr "Latarbelakang"
 
 #. i18n: file: src/config/colorsappearance_config.ui:286
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:1623
+#: rc.cpp:1628
 #, fuzzy
 msgid "&Server message:"
 msgstr "Mesej Emel"
 
 #. i18n: file: src/config/colorsappearance_config.ui:299
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:1626
+#: rc.cpp:1631
 msgid "H&yperlink:"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:312
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:1629
+#: rc.cpp:1634
 #, fuzzy
 msgid "Channel &message:"
 msgstr "Mesej Emel"
 
 #. i18n: file: src/config/colorsappearance_config.ui:325
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1632
+#: rc.cpp:1637
 msgid "Actio&n:"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:338
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:1635
+#: rc.cpp:1640
 msgid "Bac&klog:"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:351
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:1638
+#: rc.cpp:1643
 #, fuzzy
 msgid "Comman&d message:"
 msgstr "Mesej Emel"
 
 #. i18n: file: src/config/colorsappearance_config.ui:364
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_8)
-#: rc.cpp:1641
+#: rc.cpp:1646
 #, fuzzy
 msgid "&Query message:"
 msgstr "Mesej Emel"
 
 #. i18n: file: src/config/colorsappearance_config.ui:377
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_9)
-#: rc.cpp:1644
+#: rc.cpp:1649
 msgid "&Timestamp:"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:390
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_10)
-#: rc.cpp:1647
+#: rc.cpp:1652
 #, fuzzy
 msgid "A&lternate background:"
 msgstr "Warna latarbelakang:"
 
 #. i18n: file: src/config/colorsappearance_config.ui:409
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_UseColoredNicks)
-#: rc.cpp:1650
+#: rc.cpp:1655
 msgid "Colored Nicks"
 msgstr ""
 
@@ -8093,7 +8181,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel9)
 #. i18n: file: src/config/colorsappearance_config.ui:868
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_6)
-#: rc.cpp:1653 rc.cpp:1704
+#: rc.cpp:1658 rc.cpp:1709
 msgid "5:"
 msgstr ""
 
@@ -8101,7 +8189,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel8)
 #. i18n: file: src/config/colorsappearance_config.ui:878
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_5)
-#: rc.cpp:1656 rc.cpp:1707
+#: rc.cpp:1661 rc.cpp:1712
 msgid "4:"
 msgstr ""
 
@@ -8109,7 +8197,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel7)
 #. i18n: file: src/config/colorsappearance_config.ui:794
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_4)
-#: rc.cpp:1659 rc.cpp:1692
+#: rc.cpp:1664 rc.cpp:1697
 msgid "3:"
 msgstr ""
 
@@ -8117,7 +8205,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel6)
 #. i18n: file: src/config/colorsappearance_config.ui:778
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_3)
-#: rc.cpp:1662 rc.cpp:1689
+#: rc.cpp:1667 rc.cpp:1694
 msgid "2:"
 msgstr ""
 
@@ -8125,7 +8213,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel4_2)
 #. i18n: file: src/config/colorsappearance_config.ui:838
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_14)
-#: rc.cpp:1665 rc.cpp:1695
+#: rc.cpp:1670 rc.cpp:1700
 msgid "0:"
 msgstr ""
 
@@ -8133,7 +8221,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel5_2)
 #. i18n: file: src/config/colorsappearance_config.ui:762
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_2)
-#: rc.cpp:1668 rc.cpp:1686
+#: rc.cpp:1673 rc.cpp:1691
 msgid "1:"
 msgstr ""
 
@@ -8141,7 +8229,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel11)
 #. i18n: file: src/config/colorsappearance_config.ui:848
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_8)
-#: rc.cpp:1671 rc.cpp:1698
+#: rc.cpp:1676 rc.cpp:1703
 msgid "7:"
 msgstr ""
 
@@ -8149,20 +8237,20 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel10)
 #. i18n: file: src/config/colorsappearance_config.ui:858
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_7)
-#: rc.cpp:1674 rc.cpp:1701
+#: rc.cpp:1679 rc.cpp:1706
 msgid "6:"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:700
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:1677
+#: rc.cpp:1682
 #, fuzzy
 msgid "&Own nick color:"
 msgstr "Ubah Warna Latarbelakang"
 
 #. i18n: file: src/config/colorsappearance_config.ui:744
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, kcfg_AllowColorCodes)
-#: rc.cpp:1680
+#: rc.cpp:1685
 msgid ""
 "By enabling this option, color codes added to IRC messages will be displayed "
 "in your chat window as colored text. You can add color codes to your "
@@ -8171,211 +8259,211 @@ msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:747
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_AllowColorCodes)
-#: rc.cpp:1683
+#: rc.cpp:1688
 msgid "&Allow Colored Text in IRC Messages"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:1051
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_12)
-#: rc.cpp:1710
+#: rc.cpp:1715
 msgid "11:"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:1082
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_10)
-#: rc.cpp:1713
+#: rc.cpp:1718
 msgid "9:"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:1092
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_9)
-#: rc.cpp:1716
+#: rc.cpp:1721
 msgid "8:"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:1102
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_11)
-#: rc.cpp:1719
+#: rc.cpp:1724
 msgid "10:"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:1183
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_13)
-#: rc.cpp:1722
+#: rc.cpp:1727
 #, fuzzy
 msgid "12:"
 msgstr "12 pt sebelum"
 
 #. i18n: file: src/config/colorsappearance_config.ui:1200
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_16)
-#: rc.cpp:1725
+#: rc.cpp:1730
 msgid "15:"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:1224
 #. i18n: ectx: property (text), widget (QLabel, textLabel12_15)
-#: rc.cpp:1728
+#: rc.cpp:1733
 msgid "14:"
 msgstr ""
 
 #. i18n: file: src/config/colorsappearance_config.ui:1234
 #. i18n: ectx: property (text), widget (QLabel, textLabel12)
-#: rc.cpp:1731
+#: rc.cpp:1736
 msgid "13:"
 msgstr ""
 
 #. i18n: file: src/config/log_config.ui:23
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_Log)
-#: rc.cpp:1734
+#: rc.cpp:1739
 #, fuzzy
 msgid "&Enable Logging"
 msgstr "Perincian Menglog"
 
 #. i18n: file: src/config/log_config.ui:32
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_LowerLog)
-#: rc.cpp:1737
+#: rc.cpp:1742
 msgid "Enable &lower case logfile names"
 msgstr ""
 
 #. i18n: file: src/config/log_config.ui:39
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AddHostnameToLog)
-#: rc.cpp:1740
+#: rc.cpp:1745
 msgid "&Append hostname to logfile names"
 msgstr ""
 
 #. i18n: file: src/config/log_config.ui:46
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1743
+#: rc.cpp:1748
 msgid "Logfile &path:"
 msgstr ""
 
 #. i18n: file: src/config/log_config.ui:69
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseExternalLogViewer)
-#: rc.cpp:1746
+#: rc.cpp:1751
 msgid "Use system text editor to open logs"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:24
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_Timestamping)
-#: rc.cpp:1749
+#: rc.cpp:1754
 #, fuzzy
 msgid "Enable &Timestamps"
 msgstr "Hidupkan animasi"
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:33
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowDate)
-#: rc.cpp:1752
+#: rc.cpp:1757
 msgid "Sho&w dates"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:40
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1755
+#: rc.cpp:1760
 #, fuzzy
 msgid "&Format:"
 msgstr "Format"
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:79
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_ShowBacklog)
-#: rc.cpp:1758
+#: rc.cpp:1763
 #, fuzzy
 msgid "Show &Backlog"
 msgstr "Papar &Sejarah"
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:88
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:1761
+#: rc.cpp:1766
 #, fuzzy
 msgid "&Lines: "
 msgstr "1.5 baris"
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:130
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:1764
+#: rc.cpp:1769
 #, fuzzy
 msgid "&Layout"
 msgstr "Susunatur"
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:136
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowTopic)
-#: rc.cpp:1767
+#: rc.cpp:1772
 #, fuzzy
 msgid "&Show channel topic"
 msgstr "Papar Bar &Status"
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:143
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowModeButtons)
-#: rc.cpp:1770
+#: rc.cpp:1775
 msgid "Show channel &mode buttons"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:150
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowNickList)
-#: rc.cpp:1773
+#: rc.cpp:1778
 msgid "Show channel &nick list and quick buttons"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:178
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoUserhost)
-#: rc.cpp:1776
+#: rc.cpp:1781
 msgid "Show hostmas&ks in nickname list"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:208
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowRealNames)
-#: rc.cpp:1779
+#: rc.cpp:1784
 msgid "Show real names in nickname list"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:238
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowQuickButtons)
-#: rc.cpp:1782
+#: rc.cpp:1787
 #, fuzzy
 msgid "Show &quick buttons"
 msgstr "Papar Bar &Status"
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:247
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowNicknameBox)
-#: rc.cpp:1785
+#: rc.cpp:1790
 msgid "Show bo&x to change own nickname"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:254
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowIRCViewScrollBar)
-#: rc.cpp:1788
+#: rc.cpp:1793
 #, fuzzy
 msgid "Show sc&rollbar"
 msgstr "Papar &Sejarah"
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:267
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_ShowBackgroundImage)
-#: rc.cpp:1791
+#: rc.cpp:1796
 msgid "Enable Back&ground Image"
 msgstr ""
 
 #. i18n: file: src/config/chatwindowappearance_config.ui:276
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:1794
+#: rc.cpp:1799
 msgid "P&ath:"
 msgstr ""
 
 #. i18n: file: src/config/tabnotifications_config.ui:25
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TabNotificationsText)
-#: rc.cpp:1800
+#: rc.cpp:1805
 #, fuzzy
 msgid "Use colored text"
 msgstr "Ubah Warna Teks"
 
 #. i18n: file: src/config/tabnotifications_config.ui:35
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TabNotificationsLeds)
-#: rc.cpp:1803
+#: rc.cpp:1808
 #, fuzzy
 msgid "Use colored LEDs"
 msgstr "Guna Susunan RTL"
 
 #. i18n: file: src/config/tabnotifications_config.ui:51
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_TabNotificationsSystem)
-#: rc.cpp:1809
+#: rc.cpp:1814
 msgid ""
 "Application events occur in Konsole tabs, the DCC Status tab and other "
 "application tabs not used directly for chatting."
@@ -8383,41 +8471,41 @@ msgstr ""
 
 #. i18n: file: src/config/tabnotifications_config.ui:54
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TabNotificationsSystem)
-#: rc.cpp:1812
+#: rc.cpp:1817
 #, fuzzy
 msgid "Application event"
 msgstr "Permulaan Aplikasi"
 
 #. i18n: file: src/config/tabnotifications_config.ui:87
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TabNotificationsMsgs)
-#: rc.cpp:1815
+#: rc.cpp:1820
 #, fuzzy
 msgid "Message"
 msgstr "Mesej Emel"
 
 #. i18n: file: src/config/tabnotifications_config.ui:143
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TabNotificationsPrivate)
-#: rc.cpp:1818
+#: rc.cpp:1823
 #, fuzzy
 msgid "Private message"
 msgstr "Mesej Emel"
 
 #. i18n: file: src/config/tabnotifications_config.ui:167
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TabNotificationsNick)
-#: rc.cpp:1821
+#: rc.cpp:1826
 #, fuzzy
 msgid "Current nick used"
 msgstr "&Skim Keutamaan Semasa"
 
 #. i18n: file: src/config/tabnotifications_config.ui:223
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_TabNotificationsEvents)
-#: rc.cpp:1824
+#: rc.cpp:1829
 msgid "Channel events are mode changes or users joining/leaving a channel."
 msgstr ""
 
 #. i18n: file: src/config/tabnotifications_config.ui:226
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TabNotificationsEvents)
-#: rc.cpp:1827
+#: rc.cpp:1832
 msgid "Channel event"
 msgstr ""
 
@@ -8425,13 +8513,13 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox10)
 #. i18n: file: src/viewer/searchbarbase.ui:92
 #. i18n: ectx: property (text), widget (QToolButton, m_optionsButton)
-#: rc.cpp:1833 rc.cpp:1872
+#: rc.cpp:1838 rc.cpp:1877
 msgid "Options"
 msgstr ""
 
 #. i18n: file: src/config/tabnotifications_config.ui:281
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_TabNotificationsOverride)
-#: rc.cpp:1836
+#: rc.cpp:1841
 msgid ""
 "If you select this, the colors you chose in the Highlights preferences page "
 "will override the colors for \"Current nick used\" and \"Highlight\"."
@@ -8439,92 +8527,92 @@ msgstr ""
 
 #. i18n: file: src/config/tabnotifications_config.ui:284
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TabNotificationsOverride)
-#: rc.cpp:1839
+#: rc.cpp:1844
 msgid "Give precedence to chat window highlight colors"
 msgstr ""
 
 #. i18n: file: src/linkaddressbook/linkaddressbookui_base.ui:41
 #. i18n: ectx: property (toolTip), widget (QPushButton, addAddresseeButton)
-#: rc.cpp:1842
+#: rc.cpp:1847
 msgid "Create a new entry in your address book"
 msgstr ""
 
 #. i18n: file: src/linkaddressbook/linkaddressbookui_base.ui:44
 #. i18n: ectx: property (text), widget (QPushButton, addAddresseeButton)
-#: rc.cpp:1845
+#: rc.cpp:1850
 #, fuzzy
 msgid "Create New &Entry..."
 msgstr "Cipta dokumen baru"
 
 #. i18n: file: src/linkaddressbook/linkaddressbookui_base.ui:67
 #. i18n: ectx: property (toolTip), widget (K3ListView, addresseeListView)
-#: rc.cpp:1848
+#: rc.cpp:1853
 msgid "Select the contact you want to communicate with via Instant Messaging"
 msgstr ""
 
 #. i18n: file: src/linkaddressbook/linkaddressbookui_base.ui:77
 #. i18n: ectx: property (text), widget (K3ListView, addresseeListView)
-#: rc.cpp:1851
+#: rc.cpp:1856
 #, fuzzy
 msgid "Photo"
 msgstr "Pengurusan Gambar"
 
 #. i18n: file: src/linkaddressbook/linkaddressbookui_base.ui:88
 #. i18n: ectx: property (text), widget (K3ListView, addresseeListView)
-#: rc.cpp:1854
+#: rc.cpp:1859
 #, fuzzy
 msgid "Name"
 msgstr "Nama"
 
 #. i18n: file: src/linkaddressbook/linkaddressbookui_base.ui:121
 #. i18n: ectx: property (text), widget (QLabel, lblSearch)
-#: rc.cpp:1860
+#: rc.cpp:1865
 msgid "S&earch:"
 msgstr ""
 
 #. i18n: file: src/viewer/searchbarbase.ui:72
 #. i18n: ectx: property (text), widget (KPushButton, m_findNextButton)
-#: rc.cpp:1866
+#: rc.cpp:1871
 #, fuzzy
 msgid "Find Ne&xt"
 msgstr "&Sertakan dengan berikut"
 
 #. i18n: file: src/viewer/searchbarbase.ui:82
 #. i18n: ectx: property (text), widget (KPushButton, m_findPreviousButton)
-#: rc.cpp:1869
+#: rc.cpp:1874
 #, fuzzy
 msgid "Find Previous"
 msgstr "Cari semakan terdahulu"
 
 #. i18n: file: src/viewer/pasteeditor.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, PasteEditor)
-#: rc.cpp:1875
+#: rc.cpp:1880
 msgid "Paste Editor"
 msgstr ""
 
 #. i18n: file: src/viewer/pasteeditor.ui:20
 #. i18n: ectx: property (text), widget (KPushButton, m_removeNewlinesButton)
-#: rc.cpp:1878
+#: rc.cpp:1883
 #, fuzzy
 msgid "&Remove Newlines"
 msgstr "Pengurus Tema"
 
 #. i18n: file: src/viewer/pasteeditor.ui:27
 #. i18n: ectx: property (text), widget (KPushButton, m_addQuotesButton)
-#: rc.cpp:1881
+#: rc.cpp:1886
 #, fuzzy
 msgid "Add &Quotation Indicators"
 msgstr "Tambah lajur selepas"
 
 #. i18n: file: src/viewer/irccolorchooserui.ui:19
 #. i18n: ectx: property (toolTip), widget (QLabel, m_previewLbl)
-#: rc.cpp:1884
+#: rc.cpp:1889
 msgid "This is how your message will look with these colors"
 msgstr ""
 
 #. i18n: file: src/viewer/irccolorchooserui.ui:24
 #. i18n: ectx: property (whatsThis), widget (QLabel, m_previewLbl)
-#: rc.cpp:1887
+#: rc.cpp:1892
 msgid ""
 "<qt>This is a preview of how your readers may see view your message if you "
 "select these colors.<br>\n"
@@ -8535,7 +8623,7 @@ msgstr ""
 
 #. i18n: file: src/viewer/irccolorchooserui.ui:33
 #. i18n: ectx: property (text), widget (QLabel, m_previewLbl)
-#: rc.cpp:1892
+#: rc.cpp:1897
 msgid "Preview"
 msgstr "Pralihat"
 
@@ -8543,7 +8631,7 @@ msgstr "Pralihat"
 #. i18n: ectx: property (toolTip), widget (KComboBox, m_fgColorCBox)
 #. i18n: file: src/viewer/irccolorchooserui.ui:69
 #. i18n: ectx: property (toolTip), widget (QLabel, m_fgColorLbl)
-#: rc.cpp:1895 rc.cpp:1902
+#: rc.cpp:1900 rc.cpp:1907
 msgid "The chosen text color is added to the input line."
 msgstr ""
 
@@ -8551,7 +8639,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KComboBox, m_fgColorCBox)
 #. i18n: file: src/viewer/irccolorchooserui.ui:73
 #. i18n: ectx: property (whatsThis), widget (QLabel, m_fgColorLbl)
-#: rc.cpp:1898 rc.cpp:1905
+#: rc.cpp:1903 rc.cpp:1910
 msgid ""
 "<qt>Here you choose what color you want you the text in the next message you "
 "send to be.  If you choose a color and click Ok, the chosen color is added "
@@ -8562,7 +8650,7 @@ msgstr ""
 
 #. i18n: file: src/viewer/irccolorchooserui.ui:76
 #. i18n: ectx: property (text), widget (QLabel, m_fgColorLbl)
-#: rc.cpp:1909
+#: rc.cpp:1914
 #, fuzzy
 msgid "&Foreground color:"
 msgstr "Warna latarbelakang:"
@@ -8571,7 +8659,7 @@ msgstr "Warna latarbelakang:"
 #. i18n: ectx: property (toolTip), widget (KComboBox, m_bgColorCBox)
 #. i18n: file: src/viewer/irccolorchooserui.ui:112
 #. i18n: ectx: property (toolTip), widget (QLabel, m_bgColorLbl)
-#: rc.cpp:1912 rc.cpp:1922
+#: rc.cpp:1917 rc.cpp:1927
 msgid "The chosen text-background color is added to the input line."
 msgstr ""
 
@@ -8579,7 +8667,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KComboBox, m_bgColorCBox)
 #. i18n: file: src/viewer/irccolorchooserui.ui:119
 #. i18n: ectx: property (whatsThis), widget (QLabel, m_bgColorLbl)
-#: rc.cpp:1915 rc.cpp:1925
+#: rc.cpp:1920 rc.cpp:1930
 msgid ""
 "<qt>Here you choose what color you want you background for the text in the "
 "next message you send to be.\n"
@@ -8596,10 +8684,26 @@ msgstr ""
 
 #. i18n: file: data/konversationui.rc:35
 #. i18n: ectx: Menu (windows)
-#: rc.cpp:1938
+#: rc.cpp:1943
 #, fuzzy
 msgid "&Window"
 msgstr "&Tetingkap"
+
+#, fuzzy
+#~ msgid ", %1 (port %2)"
+#~ msgstr "Port"
+
+#, fuzzy
+#~ msgid "Looking for host %1..."
+#~ msgstr "Pelayan Nama DNS"
+
+#, fuzzy
+#~ msgid "Host found, connecting..."
+#~ msgstr "Fail %s tidak dijumpai"
+
+#, fuzzy
+#~ msgid "Could not accept the connection (socket error.)"
+#~ msgstr "Tak dapat membuka fail %s."
 
 #, fuzzy
 #~ msgid "Nick Limit"
@@ -8612,10 +8716,6 @@ msgstr "&Tetingkap"
 #, fuzzy
 #~ msgid "Connection broken, error (%1) %2."
 #~ msgstr "Gagal untuk mencari seksyen: %s"
-
-#, fuzzy
-#~ msgid "Accept"
-#~ msgstr "Terim&a semakan"
 
 #, fuzzy
 #~ msgid "Abort"
