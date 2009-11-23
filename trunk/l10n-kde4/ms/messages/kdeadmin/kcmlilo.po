@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-11 12:52+0200\n"
+"POT-Creation-Date: 2009-11-23 06:17+0100\n"
 "PO-Revision-Date: 2005-09-22 14:39+0730\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -138,11 +138,17 @@ msgid "Mount root filesystem &read-only"
 msgstr "Lekapkan sistem fail root &baca-sahaja"
 
 #: kde/Details.cpp:79 qt/Details.cpp:77
+#, fuzzy
+#| msgid ""
+#| "Mount the root filesystem for this kernel read-only. Since the init "
+#| "scripts normally take care of remounting the root filesystem in read-"
+#| "write mode after running some checks, this should always be turned on."
+#| "<br>Don't turn this off unless you know what you're doing."
 msgid ""
 "Mount the root filesystem for this kernel read-only. Since the init scripts "
 "normally take care of remounting the root filesystem in read-write mode "
-"after running some checks, this should always be turned on.<br>Don't turn "
-"this off unless you know what you're doing."
+"after running some checks, this should always be turned on.<br>Do not turn "
+"this off unless you know what you are doing."
 msgstr ""
 "Lekapkan sistem fail root bagi  baca-sahaja kernel ini. Oleh sebab skrip "
 "mula biasanya menangani pelekapan semula sistem fail root dalam mod baca-"
@@ -204,12 +210,19 @@ msgid "Require &password:"
 msgstr "Perlu &kata laluan:"
 
 #: kde/Details.cpp:97 qt/Details.cpp:98
+#, fuzzy
+#| msgid ""
+#| "Enter the password required for bootup (if any) here. If <i>restricted</"
+#| "i> above is checked, the password is required for additional parameters "
+#| "only.<br><b>WARNING:</b> The password is stored in clear text in /etc/"
+#| "lilo.conf. You'll want to make sure nobody untrusted can read this file. "
+#| "Also, you probably don't want to use your normal/root password here."
 msgid ""
 "Enter the password required for bootup (if any) here. If <i>restricted</i> "
 "above is checked, the password is required for additional parameters only."
 "<br><b>WARNING:</b> The password is stored in clear text in /etc/lilo.conf. "
-"You'll want to make sure nobody untrusted can read this file. Also, you "
-"probably don't want to use your normal/root password here."
+"Make sure that nobody untrusted can read this file. Also, you probably do "
+"not want to use your normal/root password here."
 msgstr ""
 "Masukkan kata laluan yang diperlukan untuk but (jika ada) di sini. Jika "
 "<i>terhad</i> di atas ditandakan, kata laluan diperlukan hanya untuk "
@@ -287,12 +300,19 @@ msgid "Use &linear mode"
 msgstr "Guna mod &linear"
 
 #: kde-qt-common/general.cpp:73
+#, fuzzy
+#| msgid ""
+#| "Check this box if you want to use the linear mode.<br>Linear mode tells "
+#| "the boot loader the location of kernels in linear addressing rather than "
+#| "sector/head/cylinder.<br>linear mode is required for some SCSI drives, "
+#| "and shouldn't hurt unless you're planning to create a boot disk to be "
+#| "used with a different computer.<br>See the lilo.conf man page for details."
 msgid ""
 "Check this box if you want to use the linear mode.<br>Linear mode tells the "
 "boot loader the location of kernels in linear addressing rather than sector/"
-"head/cylinder.<br>linear mode is required for some SCSI drives, and "
-"shouldn't hurt unless you're planning to create a boot disk to be used with "
-"a different computer.<br>See the lilo.conf man page for details."
+"head/cylinder.<br>Linear mode is required for some SCSI drives, and should "
+"not cause problems unless you are planning to create a boot disk to be used "
+"with a different computer.<br>See the lilo.conf man page for details."
 msgstr ""
 "Tandakan kotak ini jika anda ingin guna mod linear.<br>Mod linear "
 "memberitahu pemuat but tentang lokasi kernel dalam pengalamatan linear dan "
@@ -346,14 +366,24 @@ msgstr ""
 "prakernel, pergi ke <i>Tab sistem operasi</i> dan pilih <i>Perincian</i>."
 
 #: kde-qt-common/general.cpp:97
+#, fuzzy
+#| msgid ""
+#| "Enter the password required for bootup (if any) here. If <i>restricted</"
+#| "i> above is checked, the password is required for additional parameters "
+#| "only.<br><b>WARNING:</b> The password is stored in clear text in /etc/"
+#| "lilo.conf. You'll want to make sure nobody untrusted can read this file. "
+#| "Also, you probably don't want to use your normal/root password here."
+#| "<br>This sets a default for all Linux kernels you want to boot. If you "
+#| "need a per-kernel setting, go to the <i>Operating systems</i> tab and "
+#| "select <i>Details</i>."
 msgid ""
 "Enter the password required for bootup (if any) here. If <i>restricted</i> "
-"above is checked, the password is required for additional parameters only."
+"is checked above, the password is only required for additional parameters."
 "<br><b>WARNING:</b> The password is stored in clear text in /etc/lilo.conf. "
-"You'll want to make sure nobody untrusted can read this file. Also, you "
-"probably don't want to use your normal/root password here.<br>This sets a "
-"default for all Linux kernels you want to boot. If you need a per-kernel "
-"setting, go to the <i>Operating systems</i> tab and select <i>Details</i>."
+"Make sure that nobody untrusted can read this file. Also, you probably do "
+"not want to use your normal/root password here.<br>This sets a default for "
+"all Linux kernels you want to boot. If you need a per-kernel setting, go to "
+"the <i>Operating systems</i> tab and select <i>Details</i>."
 msgstr ""
 "Masukkan kata laluan yang diperlukan untuk membut (jika ada) di sini. Jika "
 "<i>terhad</i> di atas ditandakan, kata laluan diperlukan untuk parameter "
@@ -442,9 +472,14 @@ msgid "&Initial ramdisk:"
 msgstr "Cakera ram &mula:"
 
 #: kde-qt-common/images.cpp:73 kde-qt-common/images.cpp:195
+#, fuzzy
+#| msgid ""
+#| "If you want to use an initial ramdisk (initrd) for this kernel, enter its "
+#| "filename here. Leave this field blank if you don't intend to use an "
+#| "initial ramdisk for this kernel."
 msgid ""
 "If you want to use an initial ramdisk (initrd) for this kernel, enter its "
-"filename here. Leave this field blank if you don't intend to use an initial "
+"filename here. Leave this field blank if you do not intend to use an initial "
 "ramdisk for this kernel."
 msgstr ""
 "Jika anda ingin menggunakan cakera ram mula (initrd) bagi kernel ini, "
@@ -469,7 +504,9 @@ msgid "Set &Default"
 msgstr "Set &Piawai"
 
 #: kde-qt-common/images.cpp:84
-msgid "Boot this kernel/OS if the user doesn't make a different choice"
+#, fuzzy
+#| msgid "Boot this kernel/OS if the user doesn't make a different choice"
+msgid "Boot this kernel/OS if the user does not make a different choice"
 msgstr "But kernel/OS ini jika pengguna tidak membuat sebarang pilihan"
 
 #: kde-qt-common/images.cpp:86
@@ -499,7 +536,9 @@ msgid "&Check Configuration"
 msgstr "&Semak Konfigurasi"
 
 #: kde-qt-common/images.cpp:94
-msgid "Run LILO in test mode to see if the configuration is ok"
+#, fuzzy
+#| msgid "Run LILO in test mode to see if the configuration is ok"
+msgid "Run LILO in test mode to see if the configuration is okay."
 msgstr ""
 "Jalankan LILO dalam mod ujian untuk melihat sama ada konfigurasi adalah ok"
 
@@ -528,19 +567,27 @@ msgid "Remove entry from the boot menu"
 msgstr "Buang entri dari menu but"
 
 #: kde-qt-common/images.cpp:182
-msgid "Configuration ok. LILO said:\n"
+#, fuzzy
+#| msgid "Configuration ok. LILO said:\n"
+msgid "Configuration okay. LILO reported:\n"
 msgstr "Konfigurasi ok. Kata LILO:\n"
 
 #: kde-qt-common/images.cpp:183
-msgid "Configuration OK"
+#, fuzzy
+#| msgid "Configuration OK"
+msgid "Configuration Okay"
 msgstr "Konfigurasi OK"
 
 #: kde-qt-common/images.cpp:185
-msgid "Configuration NOT ok. LILO said:\n"
+#, fuzzy
+#| msgid "Configuration NOT ok. LILO said:\n"
+msgid "Configuration NOT okay. LILO reported:\n"
 msgstr "Konfigurasi TIDAK ok. Kata LILO:\n"
 
 #: kde-qt-common/images.cpp:186
-msgid "Configuration NOT ok"
+#, fuzzy
+#| msgid "Configuration NOT ok"
+msgid "Configuration NOT Okay"
 msgstr "Konfigurasi TIDAK ok"
 
 #: kde-qt-common/images.cpp:192
@@ -552,14 +599,21 @@ msgid "Boot from dis&k:"
 msgstr "But dari &cakera:"
 
 #: kde-qt-common/images.cpp:220
+#, fuzzy
+#| msgid ""
+#| "Enter the partition containing the operating system you'd like to boot "
+#| "here."
 msgid ""
-"Enter the partition containing the operating system you'd like to boot here."
+"Enter here the partition containing the operating system you would like to "
+"boot."
 msgstr ""
 "Masukkan petakan yang mengandungi sistem operasi yang anda ingin butkan di "
 "sini."
 
 #: kde-qt-common/images.cpp:221
-msgid "Enter the label (name) of the operating system here."
+#, fuzzy
+#| msgid "Enter the label (name) of the operating system here."
+msgid "Enter here the label (name) of the operating system."
 msgstr "Masukkan label (nama) sistem operasi di sini."
 
 #: kde-qt-common/images.cpp:302
@@ -588,9 +642,16 @@ msgid "&Operating systems"
 msgstr "Sistem &operasi"
 
 #: qt/Details.cpp:81
+#, fuzzy
+#| msgid ""
+#| "This turns off some sanity checks while writing the configuration. This "
+#| "shouldn't be used under \"normal\" circumstances, but it's useful, for "
+#| "example, for installing the possibility to boot from a floppy disk "
+#| "without having a floppy in the drive every time you run lilo.<br>This "
+#| "sets the <i>unsafe</i> keyword in lilo.conf."
 msgid ""
 "This turns off some sanity checks while writing the configuration. This "
-"shouldn't be used under \"normal\" circumstances, but it's useful, for "
+"should not be used under \"normal\" circumstances, but it is useful, for "
 "example, for installing the possibility to boot from a floppy disk without "
 "having a floppy in the drive every time you run lilo.<br>This sets the "
 "<i>unsafe</i> keyword in lilo.conf."
