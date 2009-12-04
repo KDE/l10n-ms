@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-28 07:23+0100\n"
+"POT-Creation-Date: 2009-12-04 06:10+0100\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -103,6 +103,20 @@ msgstr ""
 "Dokumen RTF tidak dapat dimuatkan, kerana ia mempunyai kata kunci pertama "
 "yang tidak dijangka: \\%1."
 
+#: kword/docx/DocxXmlStylesReader.cpp:81
+#: kword/docx/DocxXmlDocumentReader.cpp:107
+#: kword/docx/DocxXmlFontTableReader.cpp:89 libmsooxml/MsooXmlReader.cpp:223
+#: libmsooxml/MsooXmlThemesReader.cpp:217
+#: kspread/xlsx/XlsxXmlSharedStringsReader.cpp:108
+#: kspread/xlsx/XlsxXmlWorksheetReader.cpp:135
+#: kspread/xlsx/XlsxXmlDocumentReader.cpp:124
+#: kspread/xlsx/XlsxXmlStylesReader.cpp:311
+#: kpresenter/pptx/PptxXmlSlideReader.cpp:180
+#: kpresenter/pptx/PptxXmlDocumentReader.cpp:122
+#, kde-format
+msgid "Namespace \"%1\" not found"
+msgstr ""
+
 #: kword/html/export/ExportFilter.cc:614
 msgid "Untitled Document"
 msgstr "Dokumen Tak Bertajuk"
@@ -135,6 +149,7 @@ msgid "Cannot find encoding: %1"
 msgstr "Tidak jumpa pengekodan: %1"
 
 #: kword/libexport/KWEFKWordLeader.cc:1285 kword/abiword/abiwordimport.cc:1631
+#: libmsooxml/MsooXmlUtils.cpp:154
 msgid "QXml"
 msgstr ""
 
@@ -374,6 +389,85 @@ msgstr ""
 msgid "Unsupported document version"
 msgstr "Versi dokumen tak disokong"
 
+#: libmsooxml/MsooXmlReader.cpp:148
+#, kde-format
+msgid "%1 (line %2, column %3)"
+msgstr ""
+
+#: libmsooxml/MsooXmlReader.cpp:150
+#, kde-format
+msgid "%1 (%2, line %3, column %4)"
+msgstr ""
+
+#: libmsooxml/MsooXmlReader.cpp:177 libmsooxml/MsooXmlReader.cpp:197
+#, kde-format
+msgid "Element \"%1\" not found"
+msgstr ""
+
+#: libmsooxml/MsooXmlReader.cpp:187 libmsooxml/MsooXmlReader.cpp:208
+#, kde-format
+msgid "Expected closing of element \"%1\""
+msgstr ""
+
+#: libmsooxml/MsooXmlReader.cpp:231
+#, kde-format
+msgid "Unexpected value \"%1\" of attribute \"%2\""
+msgstr ""
+
+#: libmsooxml/MsooXmlImport.cpp:83
+#, kde-format
+msgid "Couldn't open the requested file %1"
+msgstr ""
+
+#: libmsooxml/MsooXmlImport.cpp:91
+#, kde-format
+msgid "Couldn't read ZIP directory of the requested file %1"
+msgstr ""
+
+#: libmsooxml/MsooXmlUtils.cpp:153
+#, fuzzy, kde-format
+#| msgid ""
+#| "Parsing error in MathML file %4 at line %1, column %2\n"
+#| "Error message: %3"
+msgid ""
+"Parsing error in the main document at line %1, column %2\n"
+"Error message: %3"
+msgstr ""
+"Ralat kaji hurai dalam fail MathML %4 pada baris %1, lajur %2\n"
+"Mesej ralat: %3"
+
+#: libmsooxml/MsooXmlUtils.cpp:202
+#, kde-format
+msgid "Entry '%1' not found."
+msgstr ""
+
+#: libmsooxml/MsooXmlUtils.cpp:208
+#, kde-format
+msgid "Entry '%1' is not a file."
+msgstr ""
+
+#: libmsooxml/MsooXmlUtils.cpp:232
+#, kde-format
+msgid "Could not open entry \"%1\" for writing."
+msgstr ""
+
+#: libmsooxml/MsooXmlUtils.cpp:244
+#, fuzzy
+#| msgid "Could not read from file."
+msgid "Could not write block"
+msgstr "Tidak dapat baca dari fail."
+
+#: libmsooxml/MsooXmlRelationships.cpp:81
+#, kde-format
+msgid "Could not find target \"%1\" in file \"%2\""
+msgstr ""
+
+#: libmsooxml/MsooXmlRelationships.cpp:85
+#, fuzzy, kde-format
+#| msgid "Could not read from file."
+msgid "Could not find relationships file \"%1\""
+msgstr "Tidak dapat baca dari fail."
+
 #: kspread/csv/csvimport.cc:94
 msgid "CSV filter cannot open input file - please report."
 msgstr "Penapis CSV tidak boleh buka fail input - sila lapor."
@@ -454,6 +548,25 @@ msgid ""
 msgstr ""
 "Tidak dapat buka fail terlindung kata laluan. \n"
 "Algoritma kata laluan belum diterbitkan"
+
+#: kspread/xlsx/XlsxXmlSharedStringsReader.cpp:209
+#, kde-format
+msgid "Declared number of shared strings too small (%1)"
+msgstr ""
+
+#: kspread/xlsx/XlsxXmlWorksheetReader.cpp:622
+msgid "Expected integer of floating point number"
+msgstr ""
+
+#: kspread/xlsx/XlsxXmlStylesReader.cpp:431
+#, kde-format
+msgid "Declared number of font styles too small (%1)"
+msgstr ""
+
+#: kspread/xlsx/XlsxXmlStylesReader.cpp:690
+#, kde-format
+msgid "Declared number of cell formats too small (%1)"
+msgstr ""
 
 #: kspread/dbase/dbaseimport.cc:57
 msgid "File format is not supported."
@@ -1792,13 +1905,6 @@ msgstr "Penapis Import AbiWord"
 
 #~ msgid "Failed to open input file: %1"
 #~ msgstr "Gagal membuka fail input: %1"
-
-#~ msgid ""
-#~ "Parsing error in MathML file %4 at line %1, column %2\n"
-#~ "Error message: %3"
-#~ msgstr ""
-#~ "Ralat kaji hurai dalam fail MathML %4 pada baris %1, lajur %2\n"
-#~ "Mesej ralat: %3"
 
 #~ msgid "Failed to write formula."
 #~ msgstr "Gagal menulis formula."
