@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-09 08:06+0100\n"
+"POT-Creation-Date: 2009-12-10 06:47+0100\n"
 "PO-Revision-Date: 2009-06-14 00:43+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1069,11 +1069,11 @@ msgstr "Buang Footer"
 
 #: context/applets/albums/AlbumsView.cpp:115
 #: browsers/filebrowser/MyDirOperator.cpp:274
-#: playlist/view/PlaylistViewCommon.cpp:198
+#: playlist/view/PlaylistViewCommon.cpp:203
 msgid "Edit Track Details"
 msgstr ""
 
-#: context/applets/albums/Albums.cpp:178
+#: context/applets/albums/Albums.cpp:182
 #, kde-format
 msgid "Disc %1"
 msgstr "Cakera %1"
@@ -1248,7 +1248,8 @@ msgstr "Artis"
 #: browsers/collectionbrowser/CollectionWidget.cpp:186
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:250 rc.cpp:1225
 #: services/magnatune/MagnatuneStore.cpp:211
-#: services/jamendo/JamendoInfoParser.cpp:83 playlist/PlaylistHeader.cpp:40
+#: services/jamendo/JamendoInfoParser.cpp:83
+#: playlist/view/PlaylistViewCommon.cpp:52 playlist/PlaylistHeader.cpp:40
 #: playlist/PlaylistModel.cpp:704 widgets/SmartPlaylistEditor.cpp:183
 #: widgets/SmartPlaylistEditor.cpp:197
 msgid "Album"
@@ -4659,15 +4660,20 @@ msgstr ""
 msgid "&Export Playlist As..."
 msgstr ""
 
-#: MainWindow.cpp:747 MainWindow.cpp:755
+#: MainWindow.cpp:747 amarokurls/NavigationUrlGenerator.cpp:216
 #, fuzzy
-msgid "Bookmark This Location"
-msgstr "Terjemahan versi ini oleh:"
+msgid "Bookmark Media Sources View"
+msgstr "Tanda Laman"
 
 #: MainWindow.cpp:751 amarokurls/BookmarkManager.cpp:42
 #, fuzzy
 msgid "Bookmark Manager"
 msgstr "Pengurus Kulit Album"
+
+#: MainWindow.cpp:755 playlist/PlaylistViewUrlGenerator.cpp:101
+#, fuzzy
+msgid "Bookmark Playlist Setup"
+msgstr "Penjana Album-Web"
 
 #: MainWindow.cpp:759
 #, fuzzy
@@ -4754,7 +4760,7 @@ msgstr "Buka pautan selepas halaman semasa"
 msgid "Last.fm: Skip Current Track"
 msgstr "Buka pautan selepas halaman semasa"
 
-#: MainWindow.cpp:864 playlist/view/PlaylistViewCommon.cpp:106
+#: MainWindow.cpp:864 playlist/view/PlaylistViewCommon.cpp:111
 #, fuzzy
 msgid "Queue Track"
 msgstr "Trek Giliran"
@@ -9197,26 +9203,20 @@ msgstr ""
 msgid "Ok"
 msgstr "O&k"
 
-#: playlist/view/PlaylistViewCommon.cpp:48
-#, fuzzy
-#| msgid "Album"
-msgid " Album"
-msgstr "Album"
-
-#: playlist/view/PlaylistViewCommon.cpp:99
+#: playlist/view/PlaylistViewCommon.cpp:104
 #, fuzzy
 msgid "Stop Playing After This Track"
 msgstr "Buka pautan selepas mukasurat kini"
 
-#: playlist/view/PlaylistViewCommon.cpp:106
+#: playlist/view/PlaylistViewCommon.cpp:111
 msgid "Dequeue Track"
 msgstr ""
 
-#: playlist/view/PlaylistViewCommon.cpp:117
+#: playlist/view/PlaylistViewCommon.cpp:122
 msgid "Remove From Playlist"
 msgstr ""
 
-#: playlist/view/PlaylistViewCommon.cpp:181
+#: playlist/view/PlaylistViewCommon.cpp:186
 #, fuzzy
 msgid "Select Source"
 msgstr "Fail Pakej RPM"
@@ -9236,11 +9236,6 @@ msgstr "Cari"
 #, fuzzy, kde-format
 msgid "%1 layout"
 msgstr "#1 socket() gagal."
-
-#: playlist/PlaylistViewUrlGenerator.cpp:101
-#, fuzzy
-msgid "Bookmark Playlist Setup"
-msgstr "Penjana Album-Web"
 
 #: playlist/PlaylistDefines.h:86
 msgctxt "Empty placeholder token used for spacing in playlist layouts"
@@ -10027,11 +10022,6 @@ msgstr ""
 msgid "Artist \"%1\""
 msgstr "Artis"
 
-#: amarokurls/NavigationUrlGenerator.cpp:216
-#, fuzzy
-msgid "Bookmark Media Sources View"
-msgstr "Tanda Laman"
-
 #: widgets/VolumeWidget.cpp:48
 msgid "Mute"
 msgstr "Bisu"
@@ -10570,6 +10560,15 @@ msgstr ""
 #: TrayIcon.cpp:224
 msgid "&Queue Track"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Bookmark This Location"
+#~ msgstr "Terjemahan versi ini oleh:"
+
+#, fuzzy
+#~| msgid "Album"
+#~ msgid " Album"
+#~ msgstr "Album"
 
 #, fuzzy
 #~| msgid "No results found"
