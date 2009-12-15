@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-14 06:52+0100\n"
+"POT-Creation-Date: 2009-12-15 06:06+0100\n"
 "PO-Revision-Date: 2005-11-17 23:25+0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -235,7 +235,7 @@ msgstr[1] "Import Kunci Dari Pelayan Kunci"
 
 #. i18n: file: keyserver.ui:140
 #. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
-#: keyservers.cpp:197 rc.cpp:324 editor/kgpgview.cpp:381
+#: keyservers.cpp:197 rc.cpp:324 editor/kgpgtextedit.cpp:377
 msgid "&Import"
 msgstr "&Import"
 
@@ -750,7 +750,7 @@ msgstr ""
 msgid "Public Key Export"
 msgstr "Eksport Kunci Awam"
 
-#: keysmanager.cpp:1531 editor/kgpgeditor.cpp:488
+#: keysmanager.cpp:1531 editor/kgpgeditor.cpp:504
 msgid "Save File"
 msgstr "Simpan Fail"
 
@@ -1263,7 +1263,7 @@ msgid "Tar"
 msgstr ""
 
 #: kgpgexternalactions.cpp:156 kgpgexternalactions.cpp:340 kgpglibrary.cpp:112
-#: editor/kgpgeditor.cpp:509
+#: editor/kgpgeditor.cpp:525
 msgid "File Already Exists"
 msgstr "Fail Sudah Wujud"
 
@@ -1287,7 +1287,8 @@ msgid_plural "Decryption of these files failed:"
 msgstr[0] "Nyahsulit gagal."
 msgstr[1] "Nyahsulit gagal."
 
-#: kgpgexternalactions.cpp:372 editor/kgpgview.cpp:306 editor/kgpgview.cpp:345
+#: kgpgexternalactions.cpp:372 editor/kgpgtextedit.cpp:302
+#: editor/kgpgtextedit.cpp:341
 msgid "Decryption failed."
 msgstr "Nyahsulit gagal."
 
@@ -1823,7 +1824,7 @@ msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "Tandatangan adalah sah, dan kunci dipercayai secara mutlak"
 
-#: kgpgtextinterface.cpp:627 editor/kgpgview.cpp:388
+#: kgpgtextinterface.cpp:627 editor/kgpgtextedit.cpp:384
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -2462,7 +2463,7 @@ msgstr "Pengurus Kunci"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftClick)
 #. i18n: file: conf_misc.ui:272
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:194 rc.cpp:197 editor/kgpgeditor.cpp:490
+#: rc.cpp:194 rc.cpp:197 editor/kgpgeditor.cpp:506
 msgid "Editor"
 msgstr "Editor"
 
@@ -3754,64 +3755,64 @@ msgctxt "Unlimited key lifetime"
 msgid "Unlimited"
 msgstr "Tidak terhad"
 
-#: editor/kgpgeditor.cpp:71 editor/kgpgeditor.cpp:230
-#: editor/kgpgeditor.cpp:707 editor/kgpgeditor.cpp:736
+#: editor/kgpgeditor.cpp:89 editor/kgpgeditor.cpp:246
+#: editor/kgpgeditor.cpp:723 editor/kgpgeditor.cpp:752
 #, fuzzy
 msgid "Untitled"
 msgstr "tak bertajuk"
 
-#: editor/kgpgeditor.cpp:171
+#: editor/kgpgeditor.cpp:187
 msgid "&Encrypt File..."
 msgstr "&Sulitkan Fail..."
 
-#: editor/kgpgeditor.cpp:175
+#: editor/kgpgeditor.cpp:191
 msgid "&Decrypt File..."
 msgstr "&Nyahsulitkan Fail..."
 
-#: editor/kgpgeditor.cpp:179
+#: editor/kgpgeditor.cpp:195
 msgid "&Open Key Manager"
 msgstr "&Buka Pengurus Kunci"
 
-#: editor/kgpgeditor.cpp:182
+#: editor/kgpgeditor.cpp:198
 msgid "&Generate Signature..."
 msgstr "&Hasilkan Tandatangan..."
 
-#: editor/kgpgeditor.cpp:186
+#: editor/kgpgeditor.cpp:202
 msgid "&Verify Signature..."
 msgstr "&Sahkan Tandatangan..."
 
-#: editor/kgpgeditor.cpp:189
+#: editor/kgpgeditor.cpp:205
 msgid "&Check MD5 Sum..."
 msgstr "&Semak Jumlah MD5..."
 
-#: editor/kgpgeditor.cpp:193
+#: editor/kgpgeditor.cpp:209
 msgid "&Unicode (utf-8) Encoding"
 msgstr ""
 
-#: editor/kgpgeditor.cpp:200
+#: editor/kgpgeditor.cpp:216
 msgid "En&crypt"
 msgstr "&Sulitkan"
 
-#: editor/kgpgeditor.cpp:205
+#: editor/kgpgeditor.cpp:221
 msgid "&Decrypt"
 msgstr "&Nyahsulit"
 
-#: editor/kgpgeditor.cpp:210
+#: editor/kgpgeditor.cpp:226
 msgid "S&ign/Verify"
 msgstr "&Tandatangan/Sah"
 
-#: editor/kgpgeditor.cpp:234
+#: editor/kgpgeditor.cpp:250
 #, kde-format
 msgid ""
 "The document \"%1\" has changed.\n"
 "Do you want to save it?"
 msgstr ""
 
-#: editor/kgpgeditor.cpp:235
+#: editor/kgpgeditor.cpp:251
 msgid "Close the document"
 msgstr ""
 
-#: editor/kgpgeditor.cpp:282
+#: editor/kgpgeditor.cpp:298
 msgid ""
 "The document could not been saved, as the selected encoding cannot encode "
 "every unicode character in it."
@@ -3819,41 +3820,41 @@ msgstr ""
 "Dokumen tidak dapat disimpan, kerana pengekodan yang dipilih tidak dapat "
 "mengekod setiap aksara ekakod di dalamnya."
 
-#: editor/kgpgeditor.cpp:291 editor/kgpgeditor.cpp:310
+#: editor/kgpgeditor.cpp:307 editor/kgpgeditor.cpp:326
 msgid ""
 "The document could not be saved, please check your permissions and disk "
 "space."
 msgstr ""
 "Dokumen tidak dapat disimpan, sila semak keizinan anda dan ruang cakera."
 
-#: editor/kgpgeditor.cpp:336 editor/kgpgeditor.cpp:346
+#: editor/kgpgeditor.cpp:352 editor/kgpgeditor.cpp:362
 #, kde-format
 msgid "Overwrite existing file %1?"
 msgstr "Tulis ganti fail sedia ada %1?"
 
-#: editor/kgpgeditor.cpp:457 editor/kgpgeditor.cpp:465
-#: editor/kgpgeditor.cpp:603 editor/kgpgeditor.cpp:644
-#: editor/kgpgeditor.cpp:677
+#: editor/kgpgeditor.cpp:473 editor/kgpgeditor.cpp:481
+#: editor/kgpgeditor.cpp:619 editor/kgpgeditor.cpp:660
+#: editor/kgpgeditor.cpp:693
 msgid "*|All Files"
 msgstr "*|Semua Fail"
 
-#: editor/kgpgeditor.cpp:457
+#: editor/kgpgeditor.cpp:473
 msgid "Open File to Encode"
 msgstr "Buka Fail untuk Mengekod"
 
-#: editor/kgpgeditor.cpp:465
+#: editor/kgpgeditor.cpp:481
 msgid "Open File to Decode"
 msgstr "Buka Fail untuk Nyahkod"
 
-#: editor/kgpgeditor.cpp:479
+#: editor/kgpgeditor.cpp:495
 msgid "Decrypt File To"
 msgstr "Nyahsulit Fail Ke"
 
-#: editor/kgpgeditor.cpp:603
+#: editor/kgpgeditor.cpp:619
 msgid "Open File to Sign"
 msgstr "Buka Fail untuk Tandatangan"
 
-#: editor/kgpgeditor.cpp:644 editor/kgpgeditor.cpp:677
+#: editor/kgpgeditor.cpp:660 editor/kgpgeditor.cpp:693
 msgid "Open File to Verify"
 msgstr "Buka Fail untuk Pengesahan"
 
@@ -3886,7 +3887,7 @@ msgstr "<b>Betulkan semak jumlah</b>, fail adalah ok."
 msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
 msgstr ""
 
-#: editor/kgpgview.cpp:89
+#: editor/kgpgtextedit.cpp:85
 #, fuzzy
 #| msgid ""
 #| "<qt><b>Remote file dropped</b>.<br>The remote file will now be copied to "
@@ -3901,15 +3902,15 @@ msgstr ""
 "sementara untuk memproses operasi yang diminta. Fail sementara ini akan "
 "dihapuskan selepas operasi.</qt>"
 
-#: editor/kgpgview.cpp:94
+#: editor/kgpgtextedit.cpp:90
 msgid "Could not download file."
 msgstr "Tidak dapat muat turun fail."
 
-#: editor/kgpgview.cpp:228
+#: editor/kgpgtextedit.cpp:224
 msgid "Unable to read file."
 msgstr "Tidak dapat membaca fail."
 
-#: editor/kgpgview.cpp:265
+#: editor/kgpgtextedit.cpp:261
 #, fuzzy
 msgid ""
 "<qt>This file is a <b>public</b> key.\n"
@@ -3918,7 +3919,7 @@ msgstr ""
 "Fail ini adalah kunci persendirian.\n"
 "Guna pengurusan kunci kgpg untuk mengimportnya."
 
-#: editor/kgpgview.cpp:268
+#: editor/kgpgtextedit.cpp:264
 #, fuzzy
 #| msgid ""
 #| "This file is a private key.\n"
@@ -3930,30 +3931,30 @@ msgstr ""
 "Fail ini adalah kunci persendirian.\n"
 "Guna pengurusan kunci kgpg untuk mengimportnya."
 
-#: editor/kgpgview.cpp:317
+#: editor/kgpgtextedit.cpp:313
 msgid "Encryption failed."
 msgstr "Penyulitan gagal."
 
-#: editor/kgpgview.cpp:353
+#: editor/kgpgtextedit.cpp:349
 msgid "Signing not possible: bad passphrase or missing key"
 msgstr ""
 "Tandatangan tidak boleh dilakukan: frasa laluan tidak bagus atau kunci hilang"
 
-#: editor/kgpgview.cpp:382
+#: editor/kgpgtextedit.cpp:378
 #, fuzzy
 msgid "Import key in your list"
 msgstr "Import ke dalam gegelang kunci"
 
-#: editor/kgpgview.cpp:385
+#: editor/kgpgtextedit.cpp:381
 #, fuzzy
 msgid "Do &Not Import"
 msgstr "Import Kunci"
 
-#: editor/kgpgview.cpp:386
+#: editor/kgpgtextedit.cpp:382
 msgid "Will not import this key in your list"
 msgstr ""
 
-#: editor/kgpgview.cpp:388
+#: editor/kgpgtextedit.cpp:384
 msgid "Missing Key"
 msgstr "Kunci Hilang"
 
