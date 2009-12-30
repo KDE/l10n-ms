@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: choqok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-27 06:14+0100\n"
+"POT-Creation-Date: 2009-12-30 07:25+0100\n"
 "PO-Revision-Date: 2009-09-27 23:23+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -229,7 +229,7 @@ msgid "Cannot load user information."
 msgstr ""
 
 #: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:332
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:109
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:114
 #, fuzzy
 msgid "Please wait..."
 msgstr "Sila tunggu..."
@@ -246,27 +246,27 @@ msgstr ""
 msgid "Block"
 msgstr ""
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:54
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:55
 msgid "Send Private Message"
 msgstr ""
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:64
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:69
 #, fuzzy
 msgctxt "Send private message"
 msgid "Send"
 msgstr "Hantar"
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:77
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:82
 #, fuzzy
 msgctxt "Send message to"
 msgid "To:"
 msgstr "Ke:"
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:82
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:87
 msgid "Reload friends list"
 msgstr ""
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:155
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:160
 msgid "Private message sent successfully"
 msgstr ""
 
@@ -494,13 +494,17 @@ msgstr "Fail"
 #. i18n: ectx: Menu (tools)
 #. i18n: file: plugins/searchaction/searchactionui.rc:4
 #. i18n: ectx: Menu (tools)
+#. i18n: file: plugins/twitpic/twitpicui.rc:4
+#. i18n: ectx: Menu (tools)
 #. i18n: file: choqok/choqokui.rc:11
 #. i18n: ectx: Menu (tools)
 #. i18n: file: plugins/nowlistening/nowlisteningui.rc:4
 #. i18n: ectx: Menu (tools)
 #. i18n: file: plugins/searchaction/searchactionui.rc:4
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:8 rc.cpp:259 rc.cpp:262
+#. i18n: file: plugins/twitpic/twitpicui.rc:4
+#. i18n: ectx: Menu (tools)
+#: rc.cpp:8 rc.cpp:259 rc.cpp:262 rc.cpp:271
 #, fuzzy
 msgid "Tools"
 msgstr "Alat"
@@ -1027,6 +1031,39 @@ msgstr ""
 msgid "Template:"
 msgstr "Templat:"
 
+#. i18n: file: plugins/twitpic/twitpicprefs.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: rc.cpp:265
+msgid "Twitter password:"
+msgstr ""
+
+#. i18n: file: plugins/twitpic/twitpicprefs.ui:27
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:268
+#, fuzzy
+msgid "Twitter username:"
+msgstr "Akaun"
+
+#. i18n: file: plugins/twitpic/twitpicuploadimage_base.ui:30
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_imageUrl)
+#: rc.cpp:274
+msgid "*.gif, *.jpeg, *.png"
+msgstr ""
+
+#. i18n: file: plugins/twitpic/twitpicuploadimage_base.ui:37
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:277
+msgid "Image:"
+msgstr ""
+
+#. i18n: file: plugins/twitpic/twitpicuploadimage_base.ui:48
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:280
+msgid ""
+"Message:\n"
+"(Optional)"
+msgstr ""
+
 #: microblogs/twitter/twittereditaccount.cpp:145
 #: microblogs/laconica/laconicaeditaccount.cpp:150
 #, fuzzy
@@ -1159,6 +1196,41 @@ msgstr ""
 
 #: plugins/searchaction/searchaction.cpp:61
 msgid "The Search action plugin does not support the current microblog."
+msgstr ""
+
+#: plugins/twitpic/twitpicuploadimage.cpp:42
+msgid "Upload image to Twitpic"
+msgstr ""
+
+#: plugins/twitpic/twitpicuploadimage.cpp:51
+msgid ""
+"You did not set your twitter account!\n"
+"In order to use this plugin, You have to set a twitter account! Please go to "
+"Plugin configuration and set it."
+msgstr ""
+
+#: plugins/twitpic/twitpicuploadimage.cpp:84
+#: plugins/twitpic/twitpicuploadimage.cpp:90
+msgid "Uploading media failed: cannot read the media file."
+msgstr ""
+
+#: plugins/twitpic/twitpicuploadimage.cpp:144
+#: plugins/twitpic/twitpicuploadimage.cpp:176
+#: plugins/twitpic/twitpicuploadimage.cpp:187
+msgid "Uploading image to Twitpic failed."
+msgstr ""
+
+#: plugins/twitpic/twitpicuploadimage.cpp:165
+msgid "Image successfully uploaded to Twitpic, and posted to Twitter."
+msgstr ""
+
+#: plugins/twitpic/twitpicuploadimage.cpp:173
+#: plugins/twitpic/twitpicuploadimage.cpp:188
+msgid "Unrecognised result."
+msgstr ""
+
+#: plugins/twitpic/twitpic.cpp:43
+msgid "Upload to TwitPic"
 msgstr ""
 
 #: libchoqok/ui/quickpost.cpp:75
