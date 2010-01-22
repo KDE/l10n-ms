@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-21 06:12+0100\n"
+"POT-Creation-Date: 2010-01-22 06:27+0100\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1645,7 +1645,7 @@ msgstr "Skrin"
 
 #. i18n: file: ui/forms/wdgnewimage.ui:227
 #. i18n: ectx: property (title), widget (QGroupBox, grpMode)
-#: rc.cpp:266 ui/dialogs/kis_dlg_preferences.cc:439
+#: rc.cpp:266 ui/dialogs/kis_dlg_preferences.cc:440
 #: plugins/generators/solid/colorgenerator.h:52
 msgid "Color"
 msgstr "Warna"
@@ -1848,8 +1848,8 @@ msgstr "Model warna kerja piawai:"
 #. i18n: ectx: property (title), widget (QGroupBox, grpDisplay)
 #. i18n: file: ui/forms/wdgdisplaysettings.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgDisplaySettings)
-#: rc.cpp:365 rc.cpp:437 ui/dialogs/kis_dlg_preferences.cc:430
-#: ui/dialogs/kis_dlg_preferences.cc:431
+#: rc.cpp:365 rc.cpp:437 ui/dialogs/kis_dlg_preferences.cc:431
+#: ui/dialogs/kis_dlg_preferences.cc:432
 #, fuzzy
 msgid "Display"
 msgstr "Menggantikan "
@@ -8766,39 +8766,63 @@ msgstr "Ralat Lapisan"
 msgid "Image Properties"
 msgstr "Ciri Imej"
 
-#: ui/dialogs/kis_dlg_preferences.cc:168
+#: ui/dialogs/kis_dlg_preferences.cc:169
 #, fuzzy
 msgid "Monitor profile: "
 msgstr "Tiada profil"
 
-#: ui/dialogs/kis_dlg_preferences.cc:171
+#: ui/dialogs/kis_dlg_preferences.cc:172
 #, fuzzy
 msgid "&Monitor profile: "
 msgstr "Tiada profil"
 
-#: ui/dialogs/kis_dlg_preferences.cc:414
+#: ui/dialogs/kis_dlg_preferences.cc:415
 msgid "Preferences"
 msgstr "Keutamaan"
 
-#: ui/dialogs/kis_dlg_preferences.cc:422 ui/dialogs/kis_dlg_preferences.cc:423
+#: ui/dialogs/kis_dlg_preferences.cc:423 ui/dialogs/kis_dlg_preferences.cc:424
 msgid "General"
 msgstr "Am"
 
-#: ui/dialogs/kis_dlg_preferences.cc:438
+#: ui/dialogs/kis_dlg_preferences.cc:439
 #, fuzzy
 msgid "Color Management"
 msgstr "Pengurus Warna"
 
-#: ui/dialogs/kis_dlg_preferences.cc:447 ui/dialogs/kis_dlg_preferences.cc:448
+#: ui/dialogs/kis_dlg_preferences.cc:448 ui/dialogs/kis_dlg_preferences.cc:449
 #, fuzzy
 msgid "Performance"
 msgstr "Ujian Prestasi"
 
-#: ui/dialogs/kis_dlg_preferences.cc:456 ui/dialogs/kis_dlg_preferences.cc:457
+#: ui/dialogs/kis_dlg_preferences.cc:457 ui/dialogs/kis_dlg_preferences.cc:458
 #: ui/canvas/kis_grid_manager.cpp:46
 #, fuzzy
 msgid "Grid"
 msgstr "Grid Biru"
+
+#: ui/dialogs/kis_dlg_preferences.cc:531
+msgid ""
+"You are trying to enable OpenGL\n"
+"\n"
+"But Krita might have had problems with the OpenGL canvas before,\n"
+"either because of driver issues, or because of issues with window effects.\n"
+"\n"
+"Are you sure you want to enable OpenGL?\n"
+msgstr ""
+
+#: ui/dialogs/kis_dlg_preferences.cc:534 ui/kis_aboutdata.h:31
+#: plugins/formats/gif/gif_export.cpp:64
+#: plugins/extensions/glsl/kis_glsl_widget.cc:59
+#: plugins/extensions/glsl/kis_glsl_widget.cc:60
+#: plugins/extensions/glsl/kis_glsl_widget.cc:74
+#: plugins/extensions/glsl/kis_glsl_widget.cc:174
+#: plugins/extensions/glsl/kis_glsl_widget.cc:185
+#: plugins/extensions/glsl/kis_glsl_widget.cc:186
+#: plugins/extensions/glsl/kis_glsl_widget.cc:202
+#: plugins/extensions/glsl/kis_glsl_widget.cc:223
+#: plugins/extensions/glsl/kis_glsl_widget.cc:228
+msgid "Krita"
+msgstr "Krita"
 
 #: ui/dialogs/kis_dlg_layer_properties.cc:60
 msgid "Layer Properties"
@@ -8824,16 +8848,16 @@ msgstr "Ubah..."
 msgid "Flake shapes %1"
 msgstr ""
 
-#: ui/kis_paintop_box.cc:77
+#: ui/kis_paintop_box.cc:78
 #, fuzzy
 msgid "Painter's Toolchest"
 msgstr "Alat Lukisan"
 
-#: ui/kis_paintop_box.cc:83
+#: ui/kis_paintop_box.cc:84
 msgid "Artist's materials"
 msgstr ""
 
-#: ui/kis_paintop_box.cc:90
+#: ui/kis_paintop_box.cc:91
 #, fuzzy
 msgid "Edit brush preset"
 msgstr "Ciri Lapisan"
@@ -8923,19 +8947,6 @@ msgstr ""
 #, kde-format
 msgid "Apply Filter Again: %1"
 msgstr ""
-
-#: ui/kis_aboutdata.h:31 plugins/formats/gif/gif_export.cpp:64
-#: plugins/extensions/glsl/kis_glsl_widget.cc:59
-#: plugins/extensions/glsl/kis_glsl_widget.cc:60
-#: plugins/extensions/glsl/kis_glsl_widget.cc:74
-#: plugins/extensions/glsl/kis_glsl_widget.cc:174
-#: plugins/extensions/glsl/kis_glsl_widget.cc:185
-#: plugins/extensions/glsl/kis_glsl_widget.cc:186
-#: plugins/extensions/glsl/kis_glsl_widget.cc:202
-#: plugins/extensions/glsl/kis_glsl_widget.cc:223
-#: plugins/extensions/glsl/kis_glsl_widget.cc:228
-msgid "Krita"
-msgstr "Krita"
 
 #: ui/kis_aboutdata.h:33
 msgid "KOffice image manipulation application"
