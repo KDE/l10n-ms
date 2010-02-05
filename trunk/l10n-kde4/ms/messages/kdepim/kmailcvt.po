@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-26 06:17+0100\n"
+"POT-Creation-Date: 2010-02-05 02:40+0100\n"
 "PO-Revision-Date: 2005-10-10 08:43+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -113,40 +113,127 @@ msgid_plural "%1 duplicate messages not imported"
 msgstr[0] "_n: 1 mesej duplikat tak diimport"
 msgstr[1] "%1 mesej duplikat tak diimport"
 
-#: filters.cxx:146 filters.cxx:186 filters.cxx:219
+#: filters.cxx:174
 #, fuzzy, kde-format
-msgid ""
-"<b>Fatal:</b> Unable to start KMail for D-Bus communication: %1; %2<br /"
-">Make sure <i>kmail</i> is installed."
-msgstr ""
-"<b>Fatal:</b> Tidak dapat memulakan KMail untuk komunikasi  DCOP. Pastikan "
-"<i>kmail</i> telah dipasang."
-
-#: filters.cxx:154 filters.cxx:194
-#, kde-format
-msgid "Cannot make folder %1 in KMail"
-msgstr "Tidak dapat membuat folder %1 dalam KMail"
-
-#: filters.cxx:157 filters.cxx:197
-#, kde-format
-msgid "Cannot add message to folder %1 in KMail"
-msgstr "Tidak dapat menambah mesej ke folder %1 dalam KMail"
-
-#: filters.cxx:163 filters.cxx:200
-#, kde-format
-msgid "Error while adding message to folder %1 in KMail"
+#| msgid "Error while adding message to folder %1 in KMail"
+msgid "<b>Error:<\b> Could not add message to folder %1. Reason: %2"
 msgstr "Ralat semasa menambah mesej ke folder %1 dalam KMail"
 
-#: filter_kmail_archive.cxx:24
+#: filters.cxx:221
+#, kde-format
+msgid ""
+"<b>Warning:<\b> Could not check that the folder already exists. Reason: %1"
+msgstr ""
+
+#: filters.cxx:239
+#, kde-format
+msgid "<b>Error:<\b> Could not create folder. Reason: %1"
+msgstr ""
+
+#: filters.cxx:268
+#, kde-format
+msgid ""
+"<b>Warning:<\b> Could not fetch mail in folder %1. Reason: %2 You may have "
+"duplicate messages."
+msgstr ""
+
+#: filters.cxx:273
+#, kde-format
+msgid "<b>Warning:<\b> Got an invalid message in folder %1."
+msgstr ""
+
+#: filters.cxx:341
+#, kde-format
+msgid "Error: failed to read temporary file at %1"
+msgstr ""
+
+#: filters.cxx:369
+msgid "<b>Warning:<\b> Got a bad message folder, adding to root folder."
+msgstr ""
+
+#: filter_kmail_archive.cxx:33
 msgid "Import KMail Archive File"
 msgstr ""
 
-#: filter_kmail_archive.cxx:26
+#: filter_kmail_archive.cxx:35
 msgid ""
 "<p><b>KMail Archive File Import Filter</b></p><p>This filter will import "
 "archives files previously exported by KMail.</p><p>Archive files contain a "
 "complete folder subtree compressed into a single file.</p>"
 msgstr ""
+
+#: filter_kmail_archive.cxx:75
+#, kde-format
+msgid "Unable to retrieve folder for folder path %1."
+msgstr ""
+
+#: filter_kmail_archive.cxx:99
+#, fuzzy, kde-format
+#| msgid "Import folder %1..."
+msgid "Importing folder '%1'..."
+msgstr "Import folder %1..."
+
+#: filter_kmail_archive.cxx:125
+#, kde-format
+msgid "Unexpected subfolder %1 in folder %2."
+msgstr ""
+
+#: filter_kmail_archive.cxx:130
+#, kde-format
+msgid "No subfolder named 'cur' in folder %1."
+msgstr ""
+
+#: filter_kmail_archive.cxx:155
+#, kde-format
+msgid "Unexpected subdirectory named '%1'."
+msgstr ""
+
+#: filter_kmail_archive.cxx:189
+msgid "Select KMail Archive File to Import"
+msgstr ""
+
+#: filter_kmail_archive.cxx:191
+msgid "KMail Archive Files (*.tar, *.tar.gz, *.tar.bz2, *.zip)"
+msgstr ""
+
+#: filter_kmail_archive.cxx:193
+msgid "Please select an archive file that should be imported."
+msgstr ""
+
+#: filter_kmail_archive.cxx:207
+#, kde-format
+msgid "The file '%1' does not appear to be a valid archive."
+msgstr ""
+
+#: filter_kmail_archive.cxx:212
+#, fuzzy, kde-format
+#| msgid "Unable to open mailbox %1"
+msgid "Unable to open archive file '%1'"
+msgstr "Tidak dapat membuka kotak mel %1"
+
+#: filter_kmail_archive.cxx:217
+#, fuzzy
+#| msgid "Counting files..."
+msgid "Counting files in archive..."
+msgstr "Menghitung fail..."
+
+#: filter_kmail_archive.cxx:223
+#, kde-format
+msgid "Importing the archive file '%1' into the folder '%2' succeeded."
+msgstr ""
+
+#: filter_kmail_archive.cxx:225
+#, fuzzy, kde-format
+msgid "1 message was imported."
+msgid_plural "%1 messages were imported."
+msgstr[0] "_n: 1 mesej duplikat tak diimport"
+msgstr[1] "%1 mesej duplikat tak diimport"
+
+#: filter_kmail_archive.cxx:229
+#, fuzzy
+#| msgid "Importing new mail files..."
+msgid "Importing the archive failed."
+msgstr "Mengimport fail mel baru..."
 
 #: filter_sylpheed.cxx:26
 msgid "Import Sylpheed Maildirs and Folder Structure"
@@ -185,17 +272,19 @@ msgstr "Import folder %1..."
 msgid "Could not import %1"
 msgstr "Tidak dapat mengimport %1"
 
-#: main.cpp:28
+#: main.cpp:28 kmailcvt.cpp:117
 msgid "KMailCVT"
 msgstr "KMailCVT"
 
 #: main.cpp:29
-msgid "KMail Import Filters"
-msgstr "Penapis import KMail "
+#, fuzzy
+#| msgid "KMailCVT Import Tool"
+msgid "Mail Import Tool"
+msgstr "Alat pengimport KMailCVT"
 
 #: main.cpp:30
 #, fuzzy
-msgid "(c) 2000-2009, The KMailCVT developers"
+msgid "(c) 2000-2010, The KMailCVT developers"
 msgstr "(c) 2000-2003, Pembangun KMailCVT "
 
 #: main.cpp:31
@@ -224,6 +313,14 @@ msgstr "GUI baru & pembersihan"
 
 #: main.cpp:34
 msgid "Daniel Molkentin"
+msgstr ""
+
+#: main.cpp:35
+msgid "Matthew James Leach"
+msgstr ""
+
+#: main.cpp:35
+msgid "Port to Akonadi"
 msgstr ""
 
 #: filter_evolution.cxx:30
@@ -271,25 +368,29 @@ msgstr "Mengimport fail mel baru..."
 msgid "Counting files..."
 msgstr "Menghitung fail..."
 
-#: kmailcvt.cpp:32
+#: kmailcvt.cpp:43
 msgid "KMailCVT Import Tool"
 msgstr "Alat pengimport KMailCVT"
 
-#: kmailcvt.cpp:36
+#: kmailcvt.cpp:47
 msgid "Step 1: Select Filter"
 msgstr "Langkah 1: Pilih Penapis"
 
-#: kmailcvt.cpp:41
+#: kmailcvt.cpp:52
 msgid "Step 2: Importing..."
 msgstr "Langkah 2: Mengimport..."
 
-#: kmailcvt.cpp:86
+#: kmailcvt.cpp:94
 msgid "Import in progress"
 msgstr "Import sedang berjalan"
 
-#: kmailcvt.cpp:89
+#: kmailcvt.cpp:98
 msgid "Import finished"
 msgstr "Import tamat"
+
+#: kmailcvt.cpp:116
+msgid "Akonadi failed to start. Please check your configuration."
+msgstr ""
 
 #: filter_pmail.cxx:28
 msgid "Import Folders From Pegasus-Mail"
@@ -389,34 +490,45 @@ msgstr "Jumlah:"
 msgid "Click 'Back' to import more emails or contacts"
 msgstr "Klik 'Undur' untuk mengimport lebih banyak e-mel atau orang hubungan"
 
-#. i18n: file: kselfilterpagedlg.ui:84
+#. i18n: file: kselfilterpagedlg.ui:82
 #. i18n: ectx: property (text), widget (QLabel, TextLabel6)
 #: rc.cpp:30
 msgid ""
-"<b>Welcome to KMailCVT - The KMail Import Tool</b>\n"
-"<br><br>\n"
-"This program will help you import your email from your previous email "
-"program into KMail.<br><br><br><br>\n"
-" Please select the program you would like to import from, then click 'Next'."
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'DejaVu Sans'; font-size:8pt; font-weight:600;\">Welcome to KMailCVT "
+"- The Mail Import Tool</span><span style=\" font-family:'DejaVu Sans'; font-"
+"size:8pt;\"> <br /><br />This program will help you import your email from "
+"your previous email program into Akonadi.<br /><br /><br /><br />Please "
+"select the program you would like to import from. Next, select the folder "
+"you would like to import to, then click 'Next'.</span></p></body></html>"
 msgstr ""
-"<b>Selamat Datang ke KMailCVT - Alat KMail Import</b>\n"
-"<br><br>\n"
-"Program ini akan membantu anda mengimpot e-mel dari program e-mel terdahulu "
-"ke dalam KMail.<br><br><br><br>\n"
-"Pilih program yang darinya anda ingin import, kemudian klik 'Seterusnya'."
 
-#. i18n: file: kselfilterpagedlg.ui:119
+#. i18n: file: kselfilterpagedlg.ui:115
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:37
+msgid "Please select the folder to import to:"
+msgstr ""
+
+#. i18n: file: kselfilterpagedlg.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, remDupMsg)
-#: rc.cpp:36
+#: rc.cpp:40
 msgid "Remove &duplicate messages during import"
 msgstr "Buang mesej &duplikat semasa import"
 
-#: rc.cpp:37
+#: rc.cpp:41
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "MIMOS"
 
-#: rc.cpp:38
+#: rc.cpp:42
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "opensource@mimos.my"
@@ -601,7 +713,7 @@ msgstr ""
 "boleh dicipta semula, folder akan disimpan di bawah: \"TheBat-Import\" dalam "
 "akaun setempat anda.</p>"
 
-#: kselfilterpage.cpp:80
+#: kselfilterpage.cpp:100
 #, kde-format
 msgid "<p><i>Written by %1.</i></p>"
 msgstr "<p><i>Ditulis oleh %1.</i></p>"
@@ -659,3 +771,34 @@ msgstr ""
 "ditempatkan dalam folder yang namanya sama dengan direktori asal, dengan "
 "awalan PLAIN-</p><p>Penapis ini akan mengimport semua e-mel  .msg, .eml dan ."
 "txt.</p>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<b>Fatal:</b> Unable to start KMail for D-Bus communication: %1; %2<br /"
+#~ ">Make sure <i>kmail</i> is installed."
+#~ msgstr ""
+#~ "<b>Fatal:</b> Tidak dapat memulakan KMail untuk komunikasi  DCOP. "
+#~ "Pastikan <i>kmail</i> telah dipasang."
+
+#~ msgid "Cannot make folder %1 in KMail"
+#~ msgstr "Tidak dapat membuat folder %1 dalam KMail"
+
+#~ msgid "Cannot add message to folder %1 in KMail"
+#~ msgstr "Tidak dapat menambah mesej ke folder %1 dalam KMail"
+
+#~ msgid "KMail Import Filters"
+#~ msgstr "Penapis import KMail "
+
+#~ msgid ""
+#~ "<b>Welcome to KMailCVT - The KMail Import Tool</b>\n"
+#~ "<br><br>\n"
+#~ "This program will help you import your email from your previous email "
+#~ "program into KMail.<br><br><br><br>\n"
+#~ " Please select the program you would like to import from, then click "
+#~ "'Next'."
+#~ msgstr ""
+#~ "<b>Selamat Datang ke KMailCVT - Alat KMail Import</b>\n"
+#~ "<br><br>\n"
+#~ "Program ini akan membantu anda mengimpot e-mel dari program e-mel "
+#~ "terdahulu ke dalam KMail.<br><br><br><br>\n"
+#~ "Pilih program yang darinya anda ingin import, kemudian klik 'Seterusnya'."
