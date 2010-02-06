@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-30 06:14+0100\n"
+"POT-Creation-Date: 2010-02-06 01:52+0100\n"
 "PO-Revision-Date: 2005-11-23 18:09+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -14,78 +14,573 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: attachmentdialog.cpp:33
+#: objecttreeparser.cpp:507
+msgid "Wrong Crypto Plug-In."
+msgstr "Plugin Crypto salah."
+
+#: objecttreeparser.cpp:620 objecttreeparser.cpp:2180
+msgid "Different results for signatures"
+msgstr "Tanda tangan menghasilkan keputusan berbeza"
+
+#: objecttreeparser.cpp:693
+msgid "The crypto engine returned no cleartext data."
+msgstr "Tiada data teks kosong dikembalikan oleh enjin kripto."
+
+#: objecttreeparser.cpp:696 objecttreeparser.cpp:2646
+#: objecttreeparser.cpp:2689
+msgid "Status: "
+msgstr "Status: "
+
+#: objecttreeparser.cpp:703
+#, fuzzy
+#| msgid "(unknown)"
+msgctxt "Status of message unknown."
+msgid "(unknown)"
+msgstr "(tidak diketahui)"
+
+#: objecttreeparser.cpp:714 objecttreeparser.cpp:938
+#, kde-format
+msgid "Crypto plug-in \"%1\" is not initialized."
+msgstr "Plugin Kripto \"%1\" tidak dimulakan."
+
+#: objecttreeparser.cpp:718
+#, kde-format
+msgid "Crypto plug-in \"%1\" cannot verify signatures."
+msgstr "Plugin  kripto \"%1\" tidak dapat mengesahkan tandatangan."
+
+#: objecttreeparser.cpp:723 objecttreeparser.cpp:946
+msgid "No appropriate crypto plug-in was found."
+msgstr "Plugin kripto sesuai tidak ditemui"
+
+#: objecttreeparser.cpp:726
+#, kde-format
+msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
+msgid "No %1 plug-in was found."
+msgstr "Tiada %1 plug-in ditemui."
+
+#: objecttreeparser.cpp:730
 #, kde-format
 msgid ""
-"Open attachment '%1'?\n"
-"Note that opening an attachment may compromise your system's security."
+"The message is signed, but the validity of the signature cannot be verified."
+"<br />Reason: %1"
 msgstr ""
-"Buka lampiran '%1'?\n"
-"Ambil perhatian bahawa membuka lampiran mungkin menyebabkan keselamatan "
-"sistem berkompromi."
+"Mesej telah ditandatangani, tetapi kesahihan tanda tangan tidak dapat "
+"disahkan.<br />Sebab: %1"
 
-#: attachmentdialog.cpp:39
-msgid "Open Attachment?"
-msgstr "Buka Lampiran?"
+#: objecttreeparser.cpp:765
+#, fuzzy
+#| msgid "Store sent messages encry&pted"
+msgid "This message is encrypted."
+msgstr "Stor mesej yang dihantar dalam bentuk &disulitkan"
 
-#: attachmentdialog.cpp:46
+#: objecttreeparser.cpp:770
+#, fuzzy
+#| msgid "&Encrypt Message"
+msgid "Decrypt Message"
+msgstr "&Sulitkan Mesej"
+
+#: objecttreeparser.cpp:795
+#, fuzzy
+#| msgid "Encrypted data not shown."
+msgid "Encrypted data not shown"
+msgstr "Data yang disulitkan tidak dipapar."
+
+#: objecttreeparser.cpp:835
+#, fuzzy
+#| msgid "Crypto plug-in \"%1\" could not decrypt the data."
+msgid "Could not decrypt the data."
+msgstr "Plugin kripto \"%1\" tidak dapat menyahsulit data."
+
+#: objecttreeparser.cpp:925
 #, kde-format
-msgid "&Open with '%1'"
-msgstr "&Buka dengan '%1'"
+msgid "Crypto plug-in \"%1\" could not decrypt the data."
+msgstr "Plugin kripto \"%1\" tidak dapat menyahsulit data."
 
-#: attachmentdialog.cpp:50
-msgid "&Open With..."
-msgstr "&Buka Dengan..."
+#: objecttreeparser.cpp:927
+#, kde-format
+msgid "Error: %1"
+msgstr "Ralat: %1"
 
-#: attachmentdialog.cpp:69
-msgid "Do not ask again"
+#: objecttreeparser.cpp:942
+#, kde-format
+msgid "Crypto plug-in \"%1\" cannot decrypt messages."
+msgstr "Plugin Kripto \"%1\" tidak dapat menyahsulit mesej."
+
+#: objecttreeparser.cpp:1050
+msgid ""
+"<b>Note:</b> This HTML message may contain external references to images "
+"etc. For security/privacy reasons external references are not loaded. If you "
+"trust the sender of this message then you can load the external references "
+"for this message <a href=\"kmail:loadExternal\">by clicking here</a>."
+msgstr ""
+"<b>Perhatian:</b> Mesej HTML ini mungkin mengandungi  rujukan luar kepada "
+"imej dll. Atas sebab keselamatan/privasi, rujukan luar tidak dimuatkan. Jika "
+"anda percaya kepada penghantar mesej ini, anda boleh memuatkan rujukan luar "
+"untuk mesej ini <a href=\"kmail:loadExternal\">dengan mengklik di sini</a>."
+
+#: objecttreeparser.cpp:1060
+msgid ""
+"<b>Note:</b> This is an HTML message. For security reasons, only the raw "
+"HTML code is shown. If you trust the sender of this message then you can "
+"activate formatted HTML display for this message <a href=\"kmail:showHTML"
+"\">by clicking here</a>."
+msgstr ""
+"<b>Perhatian:</b> Ini adalah mesej HTML. Atas sebab keselamatan, hanya kod "
+"mentah HTML dipaparkan. Jika anda percaya kepada penghantar mesej, anda "
+"boleh aktifkan paparan HTML terformat untuk mesej ini <a href=\"kmail:"
+"showHTML\">dengan mengklik di sini</a>."
+
+#: objecttreeparser.cpp:1711
+#, fuzzy, kde-format
+#| msgid "Sorry, certificate could not be imported.<br>Reason: %1"
+msgid "Sorry, certificate could not be imported.<br />Reason: %1"
+msgstr "Maaf, sijil tidak boleh diimport.<br>Sebab: %1"
+
+#: objecttreeparser.cpp:1721
+msgid "Sorry, no certificates were found in this message."
+msgstr "Maaf, tiada sebarang sijil ditemui dalam mesej ini."
+
+#: objecttreeparser.cpp:1724
+msgid "Certificate import status:"
+msgstr "Status import sijil:"
+
+#: objecttreeparser.cpp:1726
+#, fuzzy, kde-format
+msgid "1 new certificate was imported."
+msgid_plural "%1 new certificates were imported."
+msgstr[0] "_n:1 sijil baru telah diimport."
+msgstr[1] "%1 sijil baru telah diimport."
+
+#: objecttreeparser.cpp:1729
+#, fuzzy, kde-format
+msgid "1 certificate was unchanged."
+msgid_plural "%1 certificates were unchanged."
+msgstr[0] "_n: 1 sijil tidak diubah."
+msgstr[1] "%1 sijil tidak diubah."
+
+#: objecttreeparser.cpp:1732
+#, fuzzy, kde-format
+msgid "1 new secret key was imported."
+msgid_plural "%1 new secret keys were imported."
+msgstr[0] "_n: 1 kekunci rahsia baru telah diimport."
+msgstr[1] "%1 kekunci rahsia baru telah diimport."
+
+#: objecttreeparser.cpp:1735
+#, fuzzy, kde-format
+msgid "1 secret key was unchanged."
+msgid_plural "%1 secret keys were unchanged."
+msgstr[0] "_n: 1 kekunci rahsia tidak diubah."
+msgstr[1] "%1 kekunci rahsia tidak diubah."
+
+#: objecttreeparser.cpp:1745
+msgid "Sorry, no details on certificate import available."
+msgstr "Maaf, tidak sebarang perincian pengimportan sijil."
+
+#: objecttreeparser.cpp:1748
+msgid "Certificate import details:"
+msgstr "Perincian import sijil:"
+
+#: objecttreeparser.cpp:1751
+#, fuzzy, kde-format
+#| msgid "Failed: %1 (%2)"
+msgctxt "Certificate import failed."
+msgid "Failed: %1 (%2)"
+msgstr "Gagal: %1 (%2)"
+
+#: objecttreeparser.cpp:1755
+#, kde-format
+msgid "New or changed: %1 (secret key available)"
+msgstr "Baru atau diubah: %1 (ada kekunci rahsia)"
+
+#: objecttreeparser.cpp:1757
+#, kde-format
+msgid "New or changed: %1"
+msgstr "Baru atau diubah: %1"
+
+#: objecttreeparser.cpp:1903 viewer_p.cpp:3074
+msgid ""
+"Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
+"report this bug."
 msgstr ""
 
-#: configurewidget.cpp:36 configurewidget.cpp:89 viewer_p.cpp:1887
-msgid "Auto"
-msgstr "Auto"
+#: objecttreeparser.cpp:1909 viewer_p.cpp:3076 viewer_p.cpp:3081
+#: viewer_p.cpp:3090 viewer_p.cpp:3099 viewer_p.cpp:3118 viewer_p.cpp:3130
+#: viewer_p.cpp:3170
+msgid "Chiasmus Backend Error"
+msgstr ""
 
-#: editorwatcher.cpp:69
+#: objecttreeparser.cpp:1915 viewer_p.cpp:3087
+msgid ""
+"Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
+"function did not return a string list. Please report this bug."
+msgstr ""
+
+#: objecttreeparser.cpp:1923 viewer_p.cpp:3096
+msgid ""
+"No keys have been found. Please check that a valid key path has been set in "
+"the Chiasmus configuration."
+msgstr ""
+
+#: objecttreeparser.cpp:1930 viewer_p.cpp:3104
+#, fuzzy
+msgid "Chiasmus Decryption Key Selection"
+msgstr "Pilihan Kekunci Penyulitan"
+
+#: objecttreeparser.cpp:1941 viewer_p.cpp:3116
+msgid ""
+"Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
+"this bug."
+msgstr ""
+
+#: objecttreeparser.cpp:1949 viewer_p.cpp:3128
+msgid ""
+"The \"x-decrypt\" function does not accept the expected parameters. Please "
+"report this bug."
+msgstr ""
+
+#: objecttreeparser.cpp:1955 viewer_p.cpp:3135 viewer_p.cpp:3162
+msgid "Chiasmus Decryption Error"
+msgstr ""
+
+#: objecttreeparser.cpp:1961 viewer_p.cpp:3167
+msgid ""
+"Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
+"did not return a byte array. Please report this bug."
+msgstr ""
+
+#: objecttreeparser.cpp:2099
+#, fuzzy
+#| msgid "Unnamed"
+msgctxt "display name for an unnamed attachment"
+msgid "Unnamed"
+msgstr "Tidak dinamakan"
+
+#: objecttreeparser.cpp:2162
+msgid "Error: Signature not verified"
+msgstr "Ralat: Tanda tangan tidak disahkan"
+
+#: objecttreeparser.cpp:2165
+msgid "Good signature"
+msgstr "Tandatangan elok"
+
+#: objecttreeparser.cpp:2168
+msgid "<b>Bad</b> signature"
+msgstr "Tanda tangan <b>rosak</b>"
+
+#: objecttreeparser.cpp:2171
+msgid "No public key to verify the signature"
+msgstr "Tiada kekunci umum untuk mengesahkan tanda tangan"
+
+#: objecttreeparser.cpp:2174
+msgid "No signature found"
+msgstr "Tanda tangan tidak ditemui"
+
+#: objecttreeparser.cpp:2177
+msgid "Error verifying the signature"
+msgstr "Ralat semasa mengesahkan tanda tangan"
+
+#: objecttreeparser.cpp:2200
+msgid "No status information available."
+msgstr "Tiada maklumat status boleh didapatkan."
+
+#: objecttreeparser.cpp:2207 objecttreeparser.cpp:2291
+msgid "Good signature."
+msgstr "Tandatangan elok."
+
+#: objecttreeparser.cpp:2228
+msgid "One key has expired."
+msgstr "Satu kekunci telah luput."
+
+#: objecttreeparser.cpp:2232
+msgid "The signature has expired."
+msgstr "Tanda tangan luput."
+
+#: objecttreeparser.cpp:2237
+msgid "Unable to verify: key missing."
+msgstr "Tidak dapat membuat pengesahan: kekunci hilang."
+
+#: objecttreeparser.cpp:2244
+msgid "CRL not available."
+msgstr "SPS tidak boleh didapatkan."
+
+#: objecttreeparser.cpp:2248
+msgid "Available CRL is too old."
+msgstr "SPS yang ada terlalu lama."
+
+#: objecttreeparser.cpp:2252
+msgid "A policy was not met."
+msgstr "Tidak menepati dasar."
+
+#: objecttreeparser.cpp:2256
+msgid "A system error occurred."
+msgstr "Berlaku ralat sistem."
+
+#: objecttreeparser.cpp:2267
+msgid "One key has been revoked."
+msgstr "Satu kekunci telah dibatalkan."
+
+#: objecttreeparser.cpp:2293
+msgid "<b>Bad</b> signature."
+msgstr "Tanda tangan <b>rosak</b>."
+
+#: objecttreeparser.cpp:2320
+#, fuzzy
+#| msgid "&Enable signature"
+msgid "Invalid signature."
+msgstr "&Aktifkan tandatangan"
+
+#: objecttreeparser.cpp:2322
+#, fuzzy
+#| msgid "Not enough information to check signature. %1"
+msgid "Not enough information to check signature validity."
+msgstr "Tidak cukup maklumat untuk menyemak tanda tangan. %1"
+
+#: objecttreeparser.cpp:2331
+#, fuzzy
+#| msgid "Signatures"
+msgid "Signature is valid."
+msgstr "Tandatangan"
+
+#: objecttreeparser.cpp:2333
+#, kde-format
+msgid "Signed by <a href=\"mailto:%1\">%2</a>."
+msgstr ""
+
+#: objecttreeparser.cpp:2337
+msgid "Unknown signature state"
+msgstr ""
+
+#: objecttreeparser.cpp:2341
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Show Details"
+msgstr "Paparkan &sentiasa"
+
+#: objecttreeparser.cpp:2358
+#, fuzzy
+#| msgid "Not available"
+msgid "No Audit Log available"
+msgstr "Tidak boleh didapatkan"
+
+#: objecttreeparser.cpp:2360
+#, fuzzy, kde-format
+msgid "Error Retrieving Audit Log: %1"
+msgstr ""
+"Ralat semasa memperoleh semula senarai kawalan akses  (SKA) dari pelayan\n"
+"%1"
+
+#: objecttreeparser.cpp:2370
+msgctxt "The Audit Log is a detailed error log from the gnupg backend"
+msgid "Show Audit Log"
+msgstr ""
+
+#: objecttreeparser.cpp:2381
+#, fuzzy
+#| msgid "Logging Details"
+msgid "Hide Details"
+msgstr "Perincian Pengelogan"
+
+#: objecttreeparser.cpp:2407 objecttreeparser.cpp:2409
+msgid "Encapsulated message"
+msgstr "Mesej Dikapsulkan"
+
+#: objecttreeparser.cpp:2418
+#, fuzzy
+msgid "Please wait while the message is being decrypted..."
+msgstr "_n: Tunggu sementara mesej dipindahkan"
+
+#: objecttreeparser.cpp:2420
+msgid "Encrypted message"
+msgstr "Mesej Disulitkan"
+
+#: objecttreeparser.cpp:2422
+msgid "Encrypted message (decryption not possible)"
+msgstr "Mesej disulitkan (tidak boleh dinyahsulit)"
+
+#: objecttreeparser.cpp:2424
+#, kde-format
+msgid "Reason: %1"
+msgstr "Sebab: %1"
+
+#: objecttreeparser.cpp:2434
+#, fuzzy
+msgid "Please wait while the signature is being verified..."
+msgstr "_n: Tunggu sementara mesej dipindahkan"
+
+#: objecttreeparser.cpp:2529 objecttreeparser.cpp:2531
+#, fuzzy
+#| msgid "Certificates"
+msgid "certificate"
+msgstr "Sijil"
+
+#: objecttreeparser.cpp:2537 objecttreeparser.cpp:2562
+#, fuzzy
+#| msgid "Warning:"
+msgctxt "Start of warning message."
+msgid "Warning:"
+msgstr "Amaran:"
+
+#: objecttreeparser.cpp:2539
+#, kde-format
+msgid "Sender's mail address is not stored in the %1 used for signing."
+msgstr ""
+"Alamat penghantar mel tidak distor dalam %1 yang digunakan untuk tandatangan."
+
+#: objecttreeparser.cpp:2542
+msgid "sender: "
+msgstr "Pengirim:"
+
+#: objecttreeparser.cpp:2545
+msgid "stored: "
+msgstr "distor:"
+
+#: objecttreeparser.cpp:2564
+#, kde-format
+msgid ""
+"No mail address is stored in the %1 used for signing, so we cannot compare "
+"it to the sender's address %2."
+msgstr ""
+"Tiada alamat mel yang distor dalam %1 digunakan untuk tandatangan, jadi "
+"perbandingan dengan alamat penghantar %2 tidak boleh dibuat."
+
+#: objecttreeparser.cpp:2588
+#, kde-format
+msgid "Not enough information to check signature. %1"
+msgstr "Tidak cukup maklumat untuk menyemak tanda tangan. %1"
+
+#: objecttreeparser.cpp:2605 objecttreeparser.cpp:2683
+msgid "Message was signed with unknown key."
+msgstr "Mesej ditandatangani dengan kekunci yang tidak diketahui."
+
+#: objecttreeparser.cpp:2607 objecttreeparser.cpp:2721
+#: objecttreeparser.cpp:2765
+#, kde-format
+msgid "Message was signed by %1."
+msgstr "Mesej ditandatangani oleh %1."
+
+#: objecttreeparser.cpp:2614 objecttreeparser.cpp:2623
+#: objecttreeparser.cpp:2634
+#, kde-format
+msgid "Message was signed with key %1."
+msgstr "Mesej ditandatangani dengan kekunci %1."
+
+#: objecttreeparser.cpp:2617
+#, kde-format
+msgid "Message was signed on %1 with key %2."
+msgstr "Mesej ditandatangani pada %1 dengan kekunci %2"
+
+#: objecttreeparser.cpp:2626
+#, kde-format
+msgid "Message was signed by %3 on %1 with key %2"
+msgstr "Mesej ditandatangani oleh %3 pada %1 dengan kekunci %2"
+
+#: objecttreeparser.cpp:2637
+#, kde-format
+msgid "Message was signed by %2 with key %1."
+msgstr "Mesej ditandatangani oleh %2 dengan kekunci %1."
+
+#: objecttreeparser.cpp:2675
+#, kde-format
+msgid "Message was signed on %1 with unknown key %2."
+msgstr "Mesej ditandatangani pada %1 dengan kekunci %2 yang tidak diketahui."
+
+#: objecttreeparser.cpp:2679
+#, kde-format
+msgid "Message was signed with unknown key %1."
+msgstr "Mesej ditandatangani dengan kekunci %1 yang tidak diketahui."
+
+#: objecttreeparser.cpp:2685
+msgid "The validity of the signature cannot be verified."
+msgstr "Kesahihan tandatangan tidak boleh disahkan."
+
+#: objecttreeparser.cpp:2717 objecttreeparser.cpp:2761
+#, kde-format
+msgid "Message was signed by %2 (Key ID: %1)."
+msgstr "Mesej ditandatangani oleh %2 (ID kekunci: %1)."
+
+#: objecttreeparser.cpp:2727
+msgid "The signature is valid, but the key's validity is unknown."
+msgstr "Tandatangan sah tetapi kesahihan kekunci tidak diketahui."
+
+#: objecttreeparser.cpp:2731
+msgid "The signature is valid and the key is marginally trusted."
+msgstr "Tandatangan sah dan kekunci agak dipercayai."
+
+#: objecttreeparser.cpp:2735
+msgid "The signature is valid and the key is fully trusted."
+msgstr "Tandatangan sah dan kekunci boleh dipercayai sepenuhnya."
+
+#: objecttreeparser.cpp:2739
+msgid "The signature is valid and the key is ultimately trusted."
+msgstr "Tandatangan sah dan kekunci sangat dipercayai."
+
+#: objecttreeparser.cpp:2743
+msgid "The signature is valid, but the key is untrusted."
+msgstr "Tandatangan sah tetapi kekunci tidak boleh dipercayai."
+
+#: objecttreeparser.cpp:2767
+msgid "Warning: The signature is bad."
+msgstr "Amaran: Tandatangan rosak."
+
+#: objecttreeparser.cpp:2791
+msgid "End of signed message"
+msgstr "Penghujung mesej bertandatangan"
+
+#: objecttreeparser.cpp:2797
+msgid "End of encrypted message"
+msgstr "Penghujung mesej yang disulitkan"
+
+#: objecttreeparser.cpp:2804
+msgid "End of encapsulated message"
+msgstr "Penghujung mesej yang dikapsulkan"
+
+#: objecttreeparser.cpp:2976
+#, fuzzy
+#| msgid "Store sent messages encry&pted"
+msgid "The message could not be decrypted."
+msgstr "Stor mesej yang dihantar dalam bentuk &disulitkan"
+
+#: editorwatcher.cpp:70
 #, fuzzy
 #| msgid "Edit Identity"
 msgid "Edit with:"
 msgstr "Edit Identiti"
 
-#: editorwatcher.cpp:157
+#: editorwatcher.cpp:158
 msgid ""
 "KMail is unable to detect when the chosen editor is closed. To avoid data "
 "loss, editing the attachment will be aborted."
 msgstr ""
 
-#: editorwatcher.cpp:159
+#: editorwatcher.cpp:160
 #, fuzzy
 #| msgid "Name of the attachment:"
 msgid "Unable to edit attachment"
 msgstr "Nama lampiran"
 
-#: headerstyle.cpp:125 headerstyle.cpp:225 headerstyle.cpp:464
-#: headerstyle.cpp:607 headerstyle.cpp:751
+#: headerstyle.cpp:125 headerstyle.cpp:225 headerstyle.cpp:465
+#: headerstyle.cpp:608 headerstyle.cpp:752
 msgid "No Subject"
 msgstr "Tiada Subjek"
 
-#: headerstyle.cpp:155 headerstyle.cpp:270 headerstyle.cpp:631
-#: headerstyle.cpp:841
+#: headerstyle.cpp:155 headerstyle.cpp:270 headerstyle.cpp:632
+#: headerstyle.cpp:842
 msgid "[vCard]"
 msgstr "[vCard]"
 
-#: headerstyle.cpp:160 headerstyle.cpp:284 headerstyle.cpp:651
+#: headerstyle.cpp:160 headerstyle.cpp:284 headerstyle.cpp:652
 msgid "CC: "
 msgstr "Sk: "
 
-#: headerstyle.cpp:163 headerstyle.cpp:288 headerstyle.cpp:658
+#: headerstyle.cpp:163 headerstyle.cpp:288 headerstyle.cpp:659
 msgid "BCC: "
 msgstr "SRk: "
 
-#: headerstyle.cpp:258 headerstyle.cpp:664
+#: headerstyle.cpp:258 headerstyle.cpp:665
 msgid "Date: "
 msgstr "Tarikh: "
 
-#: headerstyle.cpp:266 headerstyle.cpp:623 headerstyle.cpp:846
+#: headerstyle.cpp:266 headerstyle.cpp:624 headerstyle.cpp:847
 msgid "From: "
 msgstr "Daripada: "
 
@@ -114,7 +609,7 @@ msgstr ""
 "Laporan penuh:\n"
 "%2"
 
-#: headerstyle.cpp:397
+#: headerstyle.cpp:398
 #, fuzzy, kde-format
 msgid ""
 "%1% probability of being spam.\n"
@@ -127,31 +622,31 @@ msgstr ""
 "Laporan penuh:\n"
 "%2"
 
-#: headerstyle.cpp:408
+#: headerstyle.cpp:409
 msgid "No Spam agent"
 msgstr ""
 
-#: headerstyle.cpp:411
+#: headerstyle.cpp:412
 msgid "Spam filter score not a number"
 msgstr ""
 
-#: headerstyle.cpp:414
+#: headerstyle.cpp:415
 msgid "Threshold not a valid number"
 msgstr ""
 
-#: headerstyle.cpp:417
+#: headerstyle.cpp:418
 msgid "Spam filter score could not be extracted from header"
 msgstr ""
 
-#: headerstyle.cpp:420
+#: headerstyle.cpp:421
 msgid "Threshold could not be extracted from header"
 msgstr ""
 
-#: headerstyle.cpp:423
+#: headerstyle.cpp:424
 msgid "Error evaluating spam score"
 msgstr ""
 
-#: headerstyle.cpp:427
+#: headerstyle.cpp:428
 #, kde-format
 msgid ""
 "%1.\n"
@@ -160,54 +655,249 @@ msgid ""
 "%2"
 msgstr ""
 
-#: headerstyle.cpp:626
+#: headerstyle.cpp:627
 #, kde-format
 msgid "(resent from %1)"
 msgstr ""
 
-#: headerstyle.cpp:644
+#: headerstyle.cpp:645
 #, fuzzy
 #| msgid "To: "
 msgctxt "To-field of the mail header."
 msgid "To: "
 msgstr "Ke:"
 
-#: headerstyle.cpp:672
+#: headerstyle.cpp:673
 #, fuzzy
 msgid "User-Agent: "
 msgstr "&Segera"
 
-#: headerstyle.cpp:681
+#: headerstyle.cpp:682
 msgid "X-Mailer: "
 msgstr ""
 
-#: headerstyle.cpp:692
+#: headerstyle.cpp:693
 msgid "Spam Status:"
 msgstr "Status spam:"
 
-#: headerstyle.cpp:854
+#: headerstyle.cpp:855
 #, fuzzy
 #| msgid "To: "
 msgctxt "To field of the mail header."
 msgid "To: "
 msgstr "Ke:"
 
-#: htmlstatusbar.cpp:90
+#: attachmentdialog.cpp:34
+#, kde-format
+msgid ""
+"Open attachment '%1'?\n"
+"Note that opening an attachment may compromise your system's security."
+msgstr ""
+"Buka lampiran '%1'?\n"
+"Ambil perhatian bahawa membuka lampiran mungkin menyebabkan keselamatan "
+"sistem berkompromi."
+
+#: attachmentdialog.cpp:40
+msgid "Open Attachment?"
+msgstr "Buka Lampiran?"
+
+#: attachmentdialog.cpp:47
+#, kde-format
+msgid "&Open with '%1'"
+msgstr "&Buka dengan '%1'"
+
+#: attachmentdialog.cpp:51
+msgid "&Open With..."
+msgstr "&Buka Dengan..."
+
+#: attachmentdialog.cpp:70
+msgid "Do not ask again"
+msgstr ""
+
+#: mailsourceviewer.cpp:146
+#, fuzzy
+#| msgid "&View Source"
+msgctxt "Unchanged mail message"
+msgid "Raw Source"
+msgstr "&Paparkan Sumber"
+
+#: mailsourceviewer.cpp:147
+msgid "Raw, unmodified mail as it is stored on the filesystem or on the server"
+msgstr ""
+
+#: mailsourceviewer.cpp:152
+#, fuzzy
+#| msgctxt "MDN type"
+#| msgid "Processed"
+msgctxt "Mail message after being processed, might be alterred from original"
+msgid "Processed Source"
+msgstr "Diproses"
+
+#: mailsourceviewer.cpp:153
+msgid ""
+"Processed mail, for example after decrypting an encrypted part of the mail"
+msgstr ""
+
+#: mailsourceviewer.cpp:159
+#, fuzzy
+#| msgid "&View Source"
+msgctxt "Mail message as shown, in HTML format"
+msgid "HTML Source"
+msgstr "&Paparkan Sumber"
+
+#: mailsourceviewer.cpp:160
+msgid "HTML code for displaying the message to the user"
+msgstr ""
+
+#: urlhandlermanager.cpp:404
+msgid "Turn on HTML rendering for this message."
+msgstr "Buka penrealisasi HTML untuk mesej ini."
+
+#: urlhandlermanager.cpp:406
+msgid "Load external references from the Internet for this message."
+msgstr "Muatkan rujukan luar dari internet untuk mesej ini."
+
+#: urlhandlermanager.cpp:408
+msgid "Work online."
+msgstr ""
+
+#: urlhandlermanager.cpp:410
+#, fuzzy
+#| msgid "&Encrypt Message"
+msgid "Decrypt message."
+msgstr "&Sulitkan Mesej"
+
+#: urlhandlermanager.cpp:412
+#, fuzzy
+#| msgid "No signature found"
+msgid "Show signature details."
+msgstr "Tanda tangan tidak ditemui"
+
+#: urlhandlermanager.cpp:414
+#, fuzzy
+#| msgid "&Enable signature"
+msgid "Hide signature details."
+msgstr "&Aktifkan tandatangan"
+
+#: urlhandlermanager.cpp:416
+#, fuzzy
+#| msgid "Show attachment icon"
+msgid "Show attachment list."
+msgstr "Paparkan ikon lampiran"
+
+#: urlhandlermanager.cpp:418
+#, fuzzy
+#| msgid "Save Attachment As"
+msgid "Hide attachment list."
+msgstr "Simpan Lampiran Sebagai"
+
+#: urlhandlermanager.cpp:450
+msgid "Expand all quoted text."
+msgstr "Kembangkan semua teks petikan."
+
+#: urlhandlermanager.cpp:453
+msgid "Collapse quoted text."
+msgstr "Runtuhkan teks petikan."
+
+#: urlhandlermanager.cpp:517
+msgid "Could not start certificate manager. Please check your installation."
+msgstr "Tidak dapat memulakan pengurus sijil. Semak pemasangan anda."
+
+#: urlhandlermanager.cpp:519
+msgid "KMail Error"
+msgstr "Ralat KMail"
+
+#: urlhandlermanager.cpp:529
+#, kde-format
+msgid "Show certificate 0x%1"
+msgstr "Paparkan sijil 0x%1"
+
+#: urlhandlermanager.cpp:611
+#, kde-format
+msgid "Attachment: %1"
+msgstr "Lampiran: %1"
+
+#: urlhandlermanager.cpp:612
+#, kde-format
+msgid "Attachment #%1 (unnamed)"
+msgstr "Lampairan #%1 (tak dinamakan)"
+
+#: urlhandlermanager.cpp:642
+msgid "Show GnuPG Audit Log for this operation"
+msgstr ""
+
+#: findbar/findbar.cpp:50
+#, fuzzy
+#| msgid "Color&s"
+msgid "Close"
+msgstr "Wa&rna"
+
+#: findbar/findbar.cpp:54
+#, fuzzy
+#| msgid "French"
+msgctxt "Find text"
+msgid "F&ind:"
+msgstr "French"
+
+#: findbar/findbar.cpp:58
+msgid "Text to search for"
+msgstr ""
+
+#: findbar/findbar.cpp:63
+msgctxt "Find and go to the next search match"
+msgid "Next"
+msgstr ""
+
+#: findbar/findbar.cpp:64
+msgid "Jump to next match"
+msgstr ""
+
+#: findbar/findbar.cpp:68
+#, fuzzy
+#| msgid "&Previous Card"
+msgctxt "Find and go to the previous search match"
+msgid "Previous"
+msgstr "Kad &Sebelumnya"
+
+#: findbar/findbar.cpp:69
+#, fuzzy
+#| msgid "Go to the previous message"
+msgid "Jump to previous match"
+msgstr "Pergi ke mesej sebelumnya"
+
+#: findbar/findbar.cpp:74
+#, fuzzy
+msgid "Options"
+msgstr "Opsyen Biasa"
+
+#: findbar/findbar.cpp:75
+msgid "Modify search behavior"
+msgstr ""
+
+#: findbar/findbar.cpp:77
+msgid "Case sensitive"
+msgstr ""
+
+#: findbar/findbar.cpp:79
+msgid "Highlight all matches"
+msgstr ""
+
+#: htmlstatusbar.cpp:110
 #, fuzzy
 #| msgid ""
 #| "<qt><b><br>H<br>T<br>M<br>L<br> <br>M<br>e<br>s<br>s<br>a<br>g<br>e</b></"
 #| "qt>"
-msgid ""
-"<qt><b><br />H<br />T<br />M<br />L<br /> <br />M<br />e<br />s<br />s<br /"
-">a<br />g<br />e</b></qt>"
+msgctxt "'HTML Message' with html linebreaks between each letter."
+msgid "<br />M<br />e<br />s<br />s<br />a<br />g<br />e</b></qt>"
 msgstr ""
 "<qt><b><br>H<br>T<br>M<br>L<br> <br>M<br>e<br>s<br>s<br>a<br>g<br>e</b></qt>"
 
-#: htmlstatusbar.cpp:93
+#: htmlstatusbar.cpp:113
 #, fuzzy
 #| msgid ""
 #| "<qt><br>N<br>o<br> <br>H<br>T<br>M<br>L<br> "
 #| "<br>M<br>e<br>s<br>s<br>a<br>g<br>e</qt>"
+msgctxt "'No HTML Message' with html linebreaks between each letter."
 msgid ""
 "<qt><br />N<br />o<br /> <br />H<br />T<br />M<br />L<br /> <br />M<br /"
 ">e<br />s<br />s<br />a<br />g<br />e</qt>"
@@ -215,706 +905,48 @@ msgstr ""
 "<qt><br>N<br>o<br> <br>H<br>T<br>M<br>L<br> "
 "<br>M<br>e<br>s<br>s<br>a<br>g<br>e</qt>"
 
-#: kmmsgpartdlg.cpp:43
+#: htmlstatusbar.cpp:118
 #, fuzzy
-#| msgid "None (7-bit text)"
-msgctxt "message encoding type"
-msgid "None (7-bit text)"
-msgstr "Tiada (teks 7 bit)"
-
-#: kmmsgpartdlg.cpp:44
-#, fuzzy
-#| msgid "None (8-bit text)"
-msgctxt "message encoding type"
-msgid "None (8-bit text)"
-msgstr "Tiada (teks 8 bit)"
-
-#: kmmsgpartdlg.cpp:45
-#, fuzzy
-#| msgid "Quoted Printable"
-msgctxt "message encoding type"
-msgid "Quoted Printable"
-msgstr "Petikan Boleh Cetak"
-
-#: kmmsgpartdlg.cpp:46
-#, fuzzy
-#| msgid "Base 64"
-msgctxt "message encoding type"
-msgid "Base 64"
-msgstr "Asas 64"
-
-#: kmmsgpartdlg.cpp:59
-msgid "Message Part Properties"
-msgstr "Ciri Bahagian Mesej"
-
-#: kmmsgpartdlg.cpp:103
-#, kde-format
+#| msgid ""
+#| "<qt><b><br>H<br>T<br>M<br>L<br> <br>M<br>e<br>s<br>s<br>a<br>g<br>e</b></"
+#| "qt>"
+msgctxt "'Plain Message' with html linebreaks between each letter."
 msgid ""
-"<qt><p>The <em>MIME type</em> of the file:</p><p>normally, you do not need "
-"to touch this setting, since the type of the file is automatically checked; "
-"but, sometimes, %1 may not detect the type correctly -- here is where you "
-"can fix that.</p></qt>"
+"<qt><br />P<br />l<br />a<br />i<br />n<br /> <br />M<br />e<br />s<br /"
+">s<br />a<br />g<br />e<br /></qt>"
 msgstr ""
-"<qt><p>Jenis <em>MIME</em> fail:</p><p>dalam keadaan normal, anda tidak "
-"perlu menyentuh seting ini, kerana jenis fail telah disemak secara "
-"automatik; tetapi, kadang-kadang, %1 mungkin tidak mengesan jenis sebenar -- "
-"anda boleh membetulkannya di sini.</p></qt>"
+"<qt><b><br>H<br>T<br>M<br>L<br> <br>M<br>e<br>s<br>s<br>a<br>g<br>e</b></qt>"
 
-#: kmmsgpartdlg.cpp:115
-#, kde-format
-msgid ""
-"<qt><p>The size of the part:</p><p>sometimes, %1 will only give an estimated "
-"size here, because calculating the exact size would take too much time; when "
-"this is the case, it will be made visible by adding \"(est.)\" to the size "
-"displayed.</p></qt>"
+#: htmlstatusbar.cpp:132
+msgid "Click to toggle between HTML and plain text."
 msgstr ""
-"<qt><p>Saiz bahagian:</p><p>kadang-kadang, %1 hanya memberikan saiz anggaran "
-"di sini, kerana mengira saiz secara tepat mengambil masa yang terlalu lama; "
-"jika kes ini berlaku, ia boleh dilihat dengan menambah \"(anggaran.)\" "
-"kepada saiz yang dipaparkan.</p></qt>"
 
-#: kmmsgpartdlg.cpp:126
-#, fuzzy
-#| msgid "&Name:"
-msgctxt "file name of the attachment."
-msgid "&Name:"
-msgstr "&Nama:"
-
-#: kmmsgpartdlg.cpp:131
-msgid ""
-"<qt><p>The file name of the part:</p><p>although this defaults to the name "
-"of the attached file, it does not specify the file to be attached; rather, "
-"it suggests a file name to be used by the recipient's mail agent when saving "
-"the part to disk.</p></qt>"
-msgstr ""
-"<qt><p>Bahagian nama fail:</p><p>walaupun ini mempiawaikan nama fail "
-"terlampir, ia tidak menyatakan mana satu fail yang hendak dilampirkan; lebih "
-"tepat, ia mencadangkan nama fail yang akan digunakan oleh ejen mel penerima  "
-"apabila menyimpan bahagian tersebut ke cakera.</p></qt>"
-
-#: kmmsgpartdlg.cpp:142
-msgid "&Description:"
-msgstr "&Huraian:"
-
-#: kmmsgpartdlg.cpp:147
-msgid ""
-"<qt><p>A description of the part:</p><p>this is just an informational "
-"description of the part, much like the Subject is for the whole message; "
-"most mail agents will show this information in their message previews "
-"alongside the attachment's icon.</p></qt>"
-msgstr ""
-"<qt><p>Huraian bahagian:</p><p>ini hanya huraian maklumat tentang bahagian, "
-"seperti Subjek sebagai mesej keseluruhan; kebanyakan ejen mel akan "
-"memaparkan maklumat ini dalam prapapar mesej di samping ikon lampiran.</p></"
-"qt>"
-
-#: kmmsgpartdlg.cpp:159
-msgid "&Encoding:"
-msgstr "&Pengekodan:"
-
-#: kmmsgpartdlg.cpp:164
-#, kde-format
-msgid ""
-"<qt><p>The transport encoding of this part:</p><p>normally, you do not need "
-"to change this, since %1 will use a decent default encoding, depending on "
-"the MIME type; yet, sometimes, you can significantly reduce the size of the "
-"resulting message, e.g. if a PostScript file does not contain binary data, "
-"but consists of pure text -- in this case, choosing \"quoted-printable\" "
-"over the default \"base64\" will save up to 25% in resulting message size.</"
-"p></qt>"
-msgstr ""
-"<qt><p>Pengekodan pengangkutan bahagian ini:</p><p>biasanya, tidak perlu "
-"ditukar, kerana %1 akan menggunakan pengekodan piawai yang baik, bergantung "
-"pada jenis MIME; bagaimanapun, kadang-kadang, anda boleh mengurangkan saiz "
-"mesej yang terhasil secara signifikan, contohnya,  jika fail  PostScript "
-"tidak mengandungi data binari, tetapi terdiri daripada teks tulin -- dalam "
-"kes ini, memilih \"petikan boleh cetak\" berbanding  \"asas 64\" piawai "
-"boleh menjimatkan 25% saiz mesej yang terhasil.</p></qt>"
-
-#: kmmsgpartdlg.cpp:177
-msgid "Suggest &automatic display"
-msgstr "Cadangkan paparan &automatik"
-
-#: kmmsgpartdlg.cpp:180
-msgid ""
-"<qt><p>Check this option if you want to suggest to the recipient the "
-"automatic (inline) display of this part in the message preview, instead of "
-"the default icon view;</p><p>technically, this is carried out by setting "
-"this part's <em>Content-Disposition</em> header field to \"inline\" instead "
-"of the default \"attachment\".</p></qt>"
-msgstr ""
-"<qt><p>Semak opsyen ini jika anda ingin mencadangkan supaya penerima memilih "
-"paparan automatik (dalam baris)  bahagian ini dalam prapapar mesej, dan "
-"bukan paparan ikon piawai;</p><p>secara teknikal, ini dilakukan dengan "
-"mengeset medan pengepala <em>Susunan Kandungan</em> bahagian ini kepada "
-"\"dalam baris\", bukan \"lampiran\" piawai.</p></qt>"
-
-#: kmmsgpartdlg.cpp:189
-msgid "&Sign this part"
-msgstr "&Tandatangan bahagian ini"
-
-#: kmmsgpartdlg.cpp:192
-msgid ""
-"<qt><p>Check this option if you want this message part to be signed;</"
-"p><p>the signature will be made with the key that you associated with the "
-"currently-selected identity.</p></qt>"
-msgstr ""
-"<qt><p>Semak opsyen ini jika anda ingin bahagian mesej ditandatangani;</"
-"p><p>tandatangan akan dibuat dengan kekunci yang anda sekutukan dengan "
-"identiti pilihan semasa.</p></qt>"
-
-#: kmmsgpartdlg.cpp:199
-msgid "Encr&ypt this part"
-msgstr "Sulit&kan bahagian ini"
-
-#: kmmsgpartdlg.cpp:202
-msgid ""
-"<qt><p>Check this option if you want this message part to be encrypted;</"
-"p><p>the part will be encrypted for the recipients of this message</p></qt>"
-msgstr ""
-"<qt><p>Semak opsyen ini jika anda ingin bahagian mesej disulitkan;</"
-"p><p>bahagian tersebut akan di sulitkan untuk penerima mesej ini</p></qt>"
-
-#: kmmsgpartdlg.cpp:243
-#, kde-format
-msgctxt "%1: a filesize incl. unit (e.g. \"1.3 KB\")"
-msgid "%1 (est.)"
-msgstr "%1 (anggaran.)"
-
-#: mimetreemodel.cpp:63
+#: mimetreemodel.cpp:65
 msgid "body part"
 msgstr "bahagian isi"
 
-#: mimetreemodel.cpp:199
+#: mimetreemodel.cpp:203
 msgid "Description"
 msgstr "Huraian"
 
-#: mimetreemodel.cpp:201
+#: mimetreemodel.cpp:205
 msgid "Type"
 msgstr "Jenis"
 
-#: mimetreemodel.cpp:203
+#: mimetreemodel.cpp:207
 msgid "Size"
 msgstr "Saiz"
 
-#: objecttreeparser.cpp:515
-msgid "Wrong Crypto Plug-In."
-msgstr "Plugin Crypto salah."
-
-#: objecttreeparser.cpp:626 objecttreeparser.cpp:2193
-msgid "Different results for signatures"
-msgstr "Tanda tangan menghasilkan keputusan berbeza"
-
-#: objecttreeparser.cpp:699
-msgid "The crypto engine returned no cleartext data."
-msgstr "Tiada data teks kosong dikembalikan oleh enjin kripto."
-
-#: objecttreeparser.cpp:702 objecttreeparser.cpp:2659
-#: objecttreeparser.cpp:2702
-msgid "Status: "
-msgstr "Status: "
-
-#: objecttreeparser.cpp:709
+#: chiasmuskeyselector.cpp:29
 #, fuzzy
-#| msgid "(unknown)"
-msgctxt "Status of message unknown."
-msgid "(unknown)"
-msgstr "(tidak diketahui)"
+msgid "Please select the Chiasmus key file to use:"
+msgstr "Pilih penapis virus yang akan dicipta dalam KMail"
 
-#: objecttreeparser.cpp:720 objecttreeparser.cpp:943
-#, kde-format
-msgid "Crypto plug-in \"%1\" is not initialized."
-msgstr "Plugin Kripto \"%1\" tidak dimulakan."
-
-#: objecttreeparser.cpp:724
-#, kde-format
-msgid "Crypto plug-in \"%1\" cannot verify signatures."
-msgstr "Plugin  kripto \"%1\" tidak dapat mengesahkan tandatangan."
-
-#: objecttreeparser.cpp:729 objecttreeparser.cpp:951
-msgid "No appropriate crypto plug-in was found."
-msgstr "Plugin kripto sesuai tidak ditemui"
-
-#: objecttreeparser.cpp:732
-#, kde-format
-msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
-msgid "No %1 plug-in was found."
-msgstr "Tiada %1 plug-in ditemui."
-
-#: objecttreeparser.cpp:736
-#, kde-format
-msgid ""
-"The message is signed, but the validity of the signature cannot be verified."
-"<br />Reason: %1"
-msgstr ""
-"Mesej telah ditandatangani, tetapi kesahihan tanda tangan tidak dapat "
-"disahkan.<br />Sebab: %1"
-
-#: objecttreeparser.cpp:771
+#: chiasmuskeyselector.cpp:39
 #, fuzzy
-#| msgid "Store sent messages encry&pted"
-msgid "This message is encrypted."
-msgstr "Stor mesej yang dihantar dalam bentuk &disulitkan"
-
-#: objecttreeparser.cpp:776
-#, fuzzy
-#| msgid "&Encrypt Message"
-msgid "Decrypt Message"
-msgstr "&Sulitkan Mesej"
-
-#: objecttreeparser.cpp:801
-#, fuzzy
-#| msgid "Encrypted data not shown."
-msgid "Encrypted data not shown"
-msgstr "Data yang disulitkan tidak dipapar."
-
-#: objecttreeparser.cpp:841
-#, fuzzy
-#| msgid "Crypto plug-in \"%1\" could not decrypt the data."
-msgid "Could not decrypt the data."
-msgstr "Plugin kripto \"%1\" tidak dapat menyahsulit data."
-
-#: objecttreeparser.cpp:930
-#, kde-format
-msgid "Crypto plug-in \"%1\" could not decrypt the data."
-msgstr "Plugin kripto \"%1\" tidak dapat menyahsulit data."
-
-#: objecttreeparser.cpp:932
-#, kde-format
-msgid "Error: %1"
-msgstr "Ralat: %1"
-
-#: objecttreeparser.cpp:947
-#, kde-format
-msgid "Crypto plug-in \"%1\" cannot decrypt messages."
-msgstr "Plugin Kripto \"%1\" tidak dapat menyahsulit mesej."
-
-#: objecttreeparser.cpp:1080
-msgid ""
-"<b>Note:</b> This HTML message may contain external references to images "
-"etc. For security/privacy reasons external references are not loaded. If you "
-"trust the sender of this message then you can load the external references "
-"for this message <a href=\"kmail:loadExternal\">by clicking here</a>."
-msgstr ""
-"<b>Perhatian:</b> Mesej HTML ini mungkin mengandungi  rujukan luar kepada "
-"imej dll. Atas sebab keselamatan/privasi, rujukan luar tidak dimuatkan. Jika "
-"anda percaya kepada penghantar mesej ini, anda boleh memuatkan rujukan luar "
-"untuk mesej ini <a href=\"kmail:loadExternal\">dengan mengklik di sini</a>."
-
-#: objecttreeparser.cpp:1090
-msgid ""
-"<b>Note:</b> This is an HTML message. For security reasons, only the raw "
-"HTML code is shown. If you trust the sender of this message then you can "
-"activate formatted HTML display for this message <a href=\"kmail:showHTML"
-"\">by clicking here</a>."
-msgstr ""
-"<b>Perhatian:</b> Ini adalah mesej HTML. Atas sebab keselamatan, hanya kod "
-"mentah HTML dipaparkan. Jika anda percaya kepada penghantar mesej, anda "
-"boleh aktifkan paparan HTML terformat untuk mesej ini <a href=\"kmail:"
-"showHTML\">dengan mengklik di sini</a>."
-
-#: objecttreeparser.cpp:1731
-#, fuzzy, kde-format
-#| msgid "Sorry, certificate could not be imported.<br>Reason: %1"
-msgid "Sorry, certificate could not be imported.<br />Reason: %1"
-msgstr "Maaf, sijil tidak boleh diimport.<br>Sebab: %1"
-
-#: objecttreeparser.cpp:1741
-msgid "Sorry, no certificates were found in this message."
-msgstr "Maaf, tiada sebarang sijil ditemui dalam mesej ini."
-
-#: objecttreeparser.cpp:1744
-msgid "Certificate import status:"
-msgstr "Status import sijil:"
-
-#: objecttreeparser.cpp:1746
-#, fuzzy, kde-format
-msgid "1 new certificate was imported."
-msgid_plural "%1 new certificates were imported."
-msgstr[0] "_n:1 sijil baru telah diimport."
-msgstr[1] "%1 sijil baru telah diimport."
-
-#: objecttreeparser.cpp:1749
-#, fuzzy, kde-format
-msgid "1 certificate was unchanged."
-msgid_plural "%1 certificates were unchanged."
-msgstr[0] "_n: 1 sijil tidak diubah."
-msgstr[1] "%1 sijil tidak diubah."
-
-#: objecttreeparser.cpp:1752
-#, fuzzy, kde-format
-msgid "1 new secret key was imported."
-msgid_plural "%1 new secret keys were imported."
-msgstr[0] "_n: 1 kekunci rahsia baru telah diimport."
-msgstr[1] "%1 kekunci rahsia baru telah diimport."
-
-#: objecttreeparser.cpp:1755
-#, fuzzy, kde-format
-msgid "1 secret key was unchanged."
-msgid_plural "%1 secret keys were unchanged."
-msgstr[0] "_n: 1 kekunci rahsia tidak diubah."
-msgstr[1] "%1 kekunci rahsia tidak diubah."
-
-#: objecttreeparser.cpp:1765
-msgid "Sorry, no details on certificate import available."
-msgstr "Maaf, tidak sebarang perincian pengimportan sijil."
-
-#: objecttreeparser.cpp:1768
-msgid "Certificate import details:"
-msgstr "Perincian import sijil:"
-
-#: objecttreeparser.cpp:1771
-#, fuzzy, kde-format
-#| msgid "Failed: %1 (%2)"
-msgctxt "Certificate import failed."
-msgid "Failed: %1 (%2)"
-msgstr "Gagal: %1 (%2)"
-
-#: objecttreeparser.cpp:1775
-#, kde-format
-msgid "New or changed: %1 (secret key available)"
-msgstr "Baru atau diubah: %1 (ada kekunci rahsia)"
-
-#: objecttreeparser.cpp:1777
-#, kde-format
-msgid "New or changed: %1"
-msgstr "Baru atau diubah: %1"
-
-#: objecttreeparser.cpp:1921
-msgid ""
-"Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
-"report this bug."
-msgstr ""
-
-#: objecttreeparser.cpp:1927
-msgid "Chiasmus Backend Error"
-msgstr ""
-
-#: objecttreeparser.cpp:1933
-msgid ""
-"Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
-"function did not return a string list. Please report this bug."
-msgstr ""
-
-#: objecttreeparser.cpp:1941
-msgid ""
-"No keys have been found. Please check that a valid key path has been set in "
-"the Chiasmus configuration."
-msgstr ""
-
-#: objecttreeparser.cpp:1961
-msgid ""
-"Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
-"this bug."
-msgstr ""
-
-#: objecttreeparser.cpp:1969
-msgid ""
-"The \"x-decrypt\" function does not accept the expected parameters. Please "
-"report this bug."
-msgstr ""
-
-#: objecttreeparser.cpp:1975
-msgid "Chiasmus Decryption Error"
-msgstr ""
-
-#: objecttreeparser.cpp:1981
-msgid ""
-"Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
-"did not return a byte array. Please report this bug."
-msgstr ""
-
-#: objecttreeparser.cpp:2112
-#, fuzzy
-#| msgid "Unnamed"
-msgctxt "display name for an unnamed attachment"
-msgid "Unnamed"
-msgstr "Tidak dinamakan"
-
-#: objecttreeparser.cpp:2175
-msgid "Error: Signature not verified"
-msgstr "Ralat: Tanda tangan tidak disahkan"
-
-#: objecttreeparser.cpp:2178
-msgid "Good signature"
-msgstr "Tandatangan elok"
-
-#: objecttreeparser.cpp:2181
-msgid "<b>Bad</b> signature"
-msgstr "Tanda tangan <b>rosak</b>"
-
-#: objecttreeparser.cpp:2184
-msgid "No public key to verify the signature"
-msgstr "Tiada kekunci umum untuk mengesahkan tanda tangan"
-
-#: objecttreeparser.cpp:2187
-msgid "No signature found"
-msgstr "Tanda tangan tidak ditemui"
-
-#: objecttreeparser.cpp:2190
-msgid "Error verifying the signature"
-msgstr "Ralat semasa mengesahkan tanda tangan"
-
-#: objecttreeparser.cpp:2213
-msgid "No status information available."
-msgstr "Tiada maklumat status boleh didapatkan."
-
-#: objecttreeparser.cpp:2220 objecttreeparser.cpp:2304
-msgid "Good signature."
-msgstr "Tandatangan elok."
-
-#: objecttreeparser.cpp:2241
-msgid "One key has expired."
-msgstr "Satu kekunci telah luput."
-
-#: objecttreeparser.cpp:2245
-msgid "The signature has expired."
-msgstr "Tanda tangan luput."
-
-#: objecttreeparser.cpp:2250
-msgid "Unable to verify: key missing."
-msgstr "Tidak dapat membuat pengesahan: kekunci hilang."
-
-#: objecttreeparser.cpp:2257
-msgid "CRL not available."
-msgstr "SPS tidak boleh didapatkan."
-
-#: objecttreeparser.cpp:2261
-msgid "Available CRL is too old."
-msgstr "SPS yang ada terlalu lama."
-
-#: objecttreeparser.cpp:2265
-msgid "A policy was not met."
-msgstr "Tidak menepati dasar."
-
-#: objecttreeparser.cpp:2269
-msgid "A system error occurred."
-msgstr "Berlaku ralat sistem."
-
-#: objecttreeparser.cpp:2280
-msgid "One key has been revoked."
-msgstr "Satu kekunci telah dibatalkan."
-
-#: objecttreeparser.cpp:2306
-msgid "<b>Bad</b> signature."
-msgstr "Tanda tangan <b>rosak</b>."
-
-#: objecttreeparser.cpp:2333
-#, fuzzy
-#| msgid "&Enable signature"
-msgid "Invalid signature."
-msgstr "&Aktifkan tandatangan"
-
-#: objecttreeparser.cpp:2335
-#, fuzzy
-#| msgid "Not enough information to check signature. %1"
-msgid "Not enough information to check signature validity."
-msgstr "Tidak cukup maklumat untuk menyemak tanda tangan. %1"
-
-#: objecttreeparser.cpp:2344
-#, fuzzy
-#| msgid "Signatures"
-msgid "Signature is valid."
-msgstr "Tandatangan"
-
-#: objecttreeparser.cpp:2346
-#, kde-format
-msgid "Signed by <a href=\"mailto:%1\">%2</a>."
-msgstr ""
-
-#: objecttreeparser.cpp:2350
-msgid "Unknown signature state"
-msgstr ""
-
-#: objecttreeparser.cpp:2354
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Show Details"
-msgstr "Paparkan &sentiasa"
-
-#: objecttreeparser.cpp:2371
-#, fuzzy
-#| msgid "Not available"
-msgid "No Audit Log available"
-msgstr "Tidak boleh didapatkan"
-
-#: objecttreeparser.cpp:2373
-#, fuzzy, kde-format
-msgid "Error Retrieving Audit Log: %1"
-msgstr ""
-"Ralat semasa memperoleh semula senarai kawalan akses  (SKA) dari pelayan\n"
-"%1"
-
-#: objecttreeparser.cpp:2383
-msgctxt "The Audit Log is a detailed error log from the gnupg backend"
-msgid "Show Audit Log"
-msgstr ""
-
-#: objecttreeparser.cpp:2394
-#, fuzzy
-#| msgid "Logging Details"
-msgid "Hide Details"
-msgstr "Perincian Pengelogan"
-
-#: objecttreeparser.cpp:2420 objecttreeparser.cpp:2422
-msgid "Encapsulated message"
-msgstr "Mesej Dikapsulkan"
-
-#: objecttreeparser.cpp:2431
-#, fuzzy
-msgid "Please wait while the message is being decrypted..."
-msgstr "_n: Tunggu sementara mesej dipindahkan"
-
-#: objecttreeparser.cpp:2433
-msgid "Encrypted message"
-msgstr "Mesej Disulitkan"
-
-#: objecttreeparser.cpp:2435
-msgid "Encrypted message (decryption not possible)"
-msgstr "Mesej disulitkan (tidak boleh dinyahsulit)"
-
-#: objecttreeparser.cpp:2437
-#, kde-format
-msgid "Reason: %1"
-msgstr "Sebab: %1"
-
-#: objecttreeparser.cpp:2447
-#, fuzzy
-msgid "Please wait while the signature is being verified..."
-msgstr "_n: Tunggu sementara mesej dipindahkan"
-
-#: objecttreeparser.cpp:2542 objecttreeparser.cpp:2544
-#, fuzzy
-#| msgid "Certificates"
-msgid "certificate"
-msgstr "Sijil"
-
-#: objecttreeparser.cpp:2550 objecttreeparser.cpp:2575
-#, fuzzy
-#| msgid "Warning:"
-msgctxt "Start of warning message."
-msgid "Warning:"
-msgstr "Amaran:"
-
-#: objecttreeparser.cpp:2552
-#, kde-format
-msgid "Sender's mail address is not stored in the %1 used for signing."
-msgstr ""
-"Alamat penghantar mel tidak distor dalam %1 yang digunakan untuk tandatangan."
-
-#: objecttreeparser.cpp:2555
-msgid "sender: "
-msgstr "Pengirim:"
-
-#: objecttreeparser.cpp:2558
-msgid "stored: "
-msgstr "distor:"
-
-#: objecttreeparser.cpp:2577
-#, kde-format
-msgid ""
-"No mail address is stored in the %1 used for signing, so we cannot compare "
-"it to the sender's address %2."
-msgstr ""
-"Tiada alamat mel yang distor dalam %1 digunakan untuk tandatangan, jadi "
-"perbandingan dengan alamat penghantar %2 tidak boleh dibuat."
-
-#: objecttreeparser.cpp:2601
-#, kde-format
-msgid "Not enough information to check signature. %1"
-msgstr "Tidak cukup maklumat untuk menyemak tanda tangan. %1"
-
-#: objecttreeparser.cpp:2618 objecttreeparser.cpp:2696
-msgid "Message was signed with unknown key."
-msgstr "Mesej ditandatangani dengan kekunci yang tidak diketahui."
-
-#: objecttreeparser.cpp:2620 objecttreeparser.cpp:2734
-#: objecttreeparser.cpp:2778
-#, kde-format
-msgid "Message was signed by %1."
-msgstr "Mesej ditandatangani oleh %1."
-
-#: objecttreeparser.cpp:2627 objecttreeparser.cpp:2636
-#: objecttreeparser.cpp:2647
-#, kde-format
-msgid "Message was signed with key %1."
-msgstr "Mesej ditandatangani dengan kekunci %1."
-
-#: objecttreeparser.cpp:2630
-#, kde-format
-msgid "Message was signed on %1 with key %2."
-msgstr "Mesej ditandatangani pada %1 dengan kekunci %2"
-
-#: objecttreeparser.cpp:2639
-#, kde-format
-msgid "Message was signed by %3 on %1 with key %2"
-msgstr "Mesej ditandatangani oleh %3 pada %1 dengan kekunci %2"
-
-#: objecttreeparser.cpp:2650
-#, kde-format
-msgid "Message was signed by %2 with key %1."
-msgstr "Mesej ditandatangani oleh %2 dengan kekunci %1."
-
-#: objecttreeparser.cpp:2688
-#, kde-format
-msgid "Message was signed on %1 with unknown key %2."
-msgstr "Mesej ditandatangani pada %1 dengan kekunci %2 yang tidak diketahui."
-
-#: objecttreeparser.cpp:2692
-#, kde-format
-msgid "Message was signed with unknown key %1."
-msgstr "Mesej ditandatangani dengan kekunci %1 yang tidak diketahui."
-
-#: objecttreeparser.cpp:2698
-msgid "The validity of the signature cannot be verified."
-msgstr "Kesahihan tandatangan tidak boleh disahkan."
-
-#: objecttreeparser.cpp:2730 objecttreeparser.cpp:2774
-#, kde-format
-msgid "Message was signed by %2 (Key ID: %1)."
-msgstr "Mesej ditandatangani oleh %2 (ID kekunci: %1)."
-
-#: objecttreeparser.cpp:2740
-msgid "The signature is valid, but the key's validity is unknown."
-msgstr "Tandatangan sah tetapi kesahihan kekunci tidak diketahui."
-
-#: objecttreeparser.cpp:2744
-msgid "The signature is valid and the key is marginally trusted."
-msgstr "Tandatangan sah dan kekunci agak dipercayai."
-
-#: objecttreeparser.cpp:2748
-msgid "The signature is valid and the key is fully trusted."
-msgstr "Tandatangan sah dan kekunci boleh dipercayai sepenuhnya."
-
-#: objecttreeparser.cpp:2752
-msgid "The signature is valid and the key is ultimately trusted."
-msgstr "Tandatangan sah dan kekunci sangat dipercayai."
-
-#: objecttreeparser.cpp:2756
-msgid "The signature is valid, but the key is untrusted."
-msgstr "Tandatangan sah tetapi kekunci tidak boleh dipercayai."
-
-#: objecttreeparser.cpp:2780
-msgid "Warning: The signature is bad."
-msgstr "Amaran: Tandatangan rosak."
-
-#: objecttreeparser.cpp:2804
-msgid "End of signed message"
-msgstr "Penghujung mesej bertandatangan"
-
-#: objecttreeparser.cpp:2810
-msgid "End of encrypted message"
-msgstr "Penghujung mesej yang disulitkan"
-
-#: objecttreeparser.cpp:2817
-msgid "End of encapsulated message"
-msgstr "Penghujung mesej yang dikapsulkan"
-
-#: objecttreeparser.cpp:2989
-#, fuzzy
-#| msgid "Store sent messages encry&pted"
-msgid "The message could not be decrypted."
-msgstr "Stor mesej yang dihantar dalam bentuk &disulitkan"
+#| msgid "Automatically encrypt &messages whenever possible"
+msgid "Additional arguments for chiasmus:"
+msgstr "Autosulitkan &mesej apabila boleh dilakukan"
 
 #. i18n: file: messageviewer.kcfg:28
 #. i18n: ectx: whatsthis, entry (FallbackCharacterEncoding), group (Reader)
@@ -1156,144 +1188,94 @@ msgstr " Pengekodan &aksara undur belakang:"
 msgid "&Override character encoding:"
 msgstr "&Tulis tindihkan pengekodan aksara:"
 
-#: urlhandlermanager.cpp:409
-msgid "Turn on HTML rendering for this message."
-msgstr "Buka penrealisasi HTML untuk mesej ini."
-
-#: urlhandlermanager.cpp:411
-msgid "Load external references from the Internet for this message."
-msgstr "Muatkan rujukan luar dari internet untuk mesej ini."
-
-#: urlhandlermanager.cpp:413
-msgid "Work online."
-msgstr ""
-
-#: urlhandlermanager.cpp:415
-#, fuzzy
-#| msgid "&Encrypt Message"
-msgid "Decrypt message."
-msgstr "&Sulitkan Mesej"
-
-#: urlhandlermanager.cpp:417
-#, fuzzy
-#| msgid "No signature found"
-msgid "Show signature details."
-msgstr "Tanda tangan tidak ditemui"
-
-#: urlhandlermanager.cpp:419
-#, fuzzy
-#| msgid "&Enable signature"
-msgid "Hide signature details."
-msgstr "&Aktifkan tandatangan"
-
-#: urlhandlermanager.cpp:421
-#, fuzzy
-#| msgid "Show attachment icon"
-msgid "Show attachment list."
-msgstr "Paparkan ikon lampiran"
-
-#: urlhandlermanager.cpp:423
-#, fuzzy
-#| msgid "Save Attachment As"
-msgid "Hide attachment list."
-msgstr "Simpan Lampiran Sebagai"
-
-#: urlhandlermanager.cpp:455
-msgid "Expand all quoted text."
-msgstr "Kembangkan semua teks petikan."
-
-#: urlhandlermanager.cpp:458
-msgid "Collapse quoted text."
-msgstr "Runtuhkan teks petikan."
-
-#: urlhandlermanager.cpp:522
-msgid "Could not start certificate manager. Please check your installation."
-msgstr "Tidak dapat memulakan pengurus sijil. Semak pemasangan anda."
-
-#: urlhandlermanager.cpp:524
-msgid "KMail Error"
-msgstr "Ralat KMail"
-
-#: urlhandlermanager.cpp:534
-#, kde-format
-msgid "Show certificate 0x%1"
-msgstr "Paparkan sijil 0x%1"
-
-#: urlhandlermanager.cpp:616
-#, kde-format
-msgid "Attachment: %1"
-msgstr "Lampiran: %1"
-
-#: urlhandlermanager.cpp:617
-#, kde-format
-msgid "Attachment #%1 (unnamed)"
-msgstr "Lampairan #%1 (tak dinamakan)"
-
-#: urlhandlermanager.cpp:647
-msgid "Show GnuPG Audit Log for this operation"
-msgstr ""
-
-#: util.cpp:56
-#, fuzzy, kde-format
-msgid ""
-"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
-msgstr "Fail bernama %1 telah wujud. Anda ingin menulis gantikannya?"
-
-#: util.cpp:58
-#, fuzzy
-msgid "Overwrite File?"
-msgstr "&Tulis ganti"
-
-#: vcardviewer.cpp:39
+#: vcardviewer.cpp:41
 msgid "VCard Viewer"
 msgstr "Pemapar VKad"
 
-#: vcardviewer.cpp:43
+#: vcardviewer.cpp:45
 msgid "&Import"
 msgstr "&Import"
 
-#: vcardviewer.cpp:44
+#: vcardviewer.cpp:46
 msgid "&Next Card"
 msgstr "Kad &Seterusnya"
 
-#: vcardviewer.cpp:45
+#: vcardviewer.cpp:47
 msgid "&Previous Card"
 msgstr "Kad &Sebelumnya"
 
-#: vcardviewer.cpp:64
+#: vcardviewer.cpp:66
 msgid "Failed to parse vCard."
 msgstr "Gagal mengkaji hurai vCard"
 
-#: viewer_p.cpp:300
+#: viewer_p.cpp:322
 msgid ""
 "Deleting an attachment might invalidate any digital signature on this "
 "message."
 msgstr ""
 
-#: viewer_p.cpp:301 viewer_p.cpp:2003
+#: viewer_p.cpp:323 viewer_p.cpp:421 viewer_p.cpp:1976
 #, fuzzy
 #| msgid "&Remove Attachment"
 msgid "Delete Attachment"
 msgstr "&Buang Lampiran"
 
-#: viewer_p.cpp:322
+#: viewer_p.cpp:344
 msgid ""
 "Modifying an attachment might invalidate any digital signature on this "
 "message."
 msgstr ""
 
-#: viewer_p.cpp:323 viewer_p.cpp:2006
+#: viewer_p.cpp:345 viewer_p.cpp:415 viewer_p.cpp:1979
 #, fuzzy
 #| msgid "Attachment"
 msgid "Edit Attachment"
 msgstr "Lampiran"
 
-#: viewer_p.cpp:323
+#: viewer_p.cpp:345
 #, fuzzy
 msgid "Edit"
 msgstr "Keluar"
 
-#: viewer_p.cpp:701
+#: viewer_p.cpp:384 viewer_p.cpp:1954
+msgctxt "to open"
+msgid "Open"
+msgstr "Buka"
+
+#: viewer_p.cpp:388 viewer_p.cpp:1956
+msgid "Open With..."
+msgstr "Buka Dengan..."
+
+#: viewer_p.cpp:392 viewer_p.cpp:1957
+msgctxt "to view something"
+msgid "View"
+msgstr "Paparkan"
+
+#: viewer_p.cpp:399
+msgid "Scroll To"
+msgstr ""
+
+#: viewer_p.cpp:404
+#, fuzzy
+msgid "Save As..."
+msgstr "Simpan &Sebagai"
+
+#: viewer_p.cpp:408 viewer_p.cpp:1973
+#, fuzzy
+msgid "Copy"
+msgstr "&Salin Ke"
+
+#: viewer_p.cpp:428
+#, fuzzy
+msgid "Decrypt With Chiasmus..."
+msgstr "Pilih Mesej yang ada Fokus"
+
+#: viewer_p.cpp:432 viewer_p.cpp:1984
+#, fuzzy
+msgid "Properties"
+msgstr "&Ciri"
+
+#: viewer_p.cpp:716
 #, kde-format
 msgid ""
 "The part %1 of the message is encrypted. Do you want to keep the encryption "
@@ -1302,21 +1284,21 @@ msgstr ""
 "Bahagian %1 mesej telah disulitkan. Anda ingin mengekalkan penyulitan semasa "
 "menyimpan?"
 
-#: viewer_p.cpp:703 viewer_p.cpp:712
+#: viewer_p.cpp:718 viewer_p.cpp:727
 msgid "KMail Question"
 msgstr "Soalan KMail"
 
-#: viewer_p.cpp:703
+#: viewer_p.cpp:718
 #, fuzzy
 msgid "Keep Encryption"
 msgstr "Penyulitan"
 
-#: viewer_p.cpp:703 viewer_p.cpp:712
+#: viewer_p.cpp:718 viewer_p.cpp:727
 #, fuzzy
 msgid "Do Not Keep"
 msgstr "Ja&ngan Sulitkan"
 
-#: viewer_p.cpp:710
+#: viewer_p.cpp:725
 #, kde-format
 msgid ""
 "The part %1 of the message is signed. Do you want to keep the signature when "
@@ -1325,13 +1307,13 @@ msgstr ""
 "Bahagian %1 mesej telah ditandatangani. Anda ingin mengekalkan tandatangan "
 "semasa menyimpan?"
 
-#: viewer_p.cpp:712
+#: viewer_p.cpp:727
 #, fuzzy
 msgid "Keep Signature"
 msgstr "Tandatangan"
 
-#: viewer_p.cpp:768 viewer_p.cpp:793 viewer_p.cpp:809 viewer_p.cpp:2871
-#: viewer_p.cpp:2899 viewer_p.cpp:2915
+#: viewer_p.cpp:783 viewer_p.cpp:806 viewer_p.cpp:822 viewer_p.cpp:2861
+#: viewer_p.cpp:2887 viewer_p.cpp:2903
 #, fuzzy, kde-format
 #| msgctxt "%2 is detailed error description"
 #| msgid ""
@@ -1343,35 +1325,35 @@ msgstr ""
 "Fail tidak dapat ditulis %1:\n"
 "%2"
 
-#: viewer_p.cpp:771 viewer_p.cpp:796 viewer_p.cpp:812 viewer_p.cpp:2874
-#: viewer_p.cpp:2902 viewer_p.cpp:2918
+#: viewer_p.cpp:786 viewer_p.cpp:809 viewer_p.cpp:825 viewer_p.cpp:2864
+#: viewer_p.cpp:2890 viewer_p.cpp:2906
 #, fuzzy
 #| msgid "has an attachment"
 msgid "Error saving attachment"
 msgstr "ada lampiran"
 
-#: viewer_p.cpp:827
+#: viewer_p.cpp:840
 msgid "Save Attachments To"
 msgstr "Simpan Lampiran Ke"
 
-#: viewer_p.cpp:841
+#: viewer_p.cpp:854
 msgctxt "filename for an unnamed attachment"
 msgid "attachment.1"
 msgstr "lampiran.1"
 
-#: viewer_p.cpp:845
+#: viewer_p.cpp:858
 #, fuzzy
 #| msgid "Save Attachment As"
 msgid "Save Attachment"
 msgstr "Simpan Lampiran Sebagai"
 
-#: viewer_p.cpp:868
+#: viewer_p.cpp:881
 #, kde-format
 msgctxt "filename for the %1-th unnamed attachment"
 msgid "attachment.%1"
 msgstr "lampiran.%1"
 
-#: viewer_p.cpp:908 viewer_p.cpp:917
+#: viewer_p.cpp:921 viewer_p.cpp:930
 #, fuzzy, kde-format
 #| msgid "A file named %1 already exists. Do you want to overwrite it?"
 msgid ""
@@ -1379,39 +1361,39 @@ msgid ""
 "want to overwrite it?"
 msgstr "Fail bernama %1 telah wujud. Anda ingin menulis gantikannya?"
 
-#: viewer_p.cpp:910 viewer_p.cpp:919
+#: viewer_p.cpp:923 viewer_p.cpp:932
 msgid "File Already Exists"
 msgstr "Fail Telah Wujud"
 
-#: viewer_p.cpp:910 viewer_p.cpp:919
+#: viewer_p.cpp:923 viewer_p.cpp:932
 msgid "&Overwrite"
 msgstr "&Tulis ganti"
 
-#: viewer_p.cpp:920
+#: viewer_p.cpp:933
 #, fuzzy
 msgid "Overwrite &All"
 msgstr "&Tulis ganti"
 
-#: viewer_p.cpp:1070
+#: viewer_p.cpp:1061
 #, fuzzy
 #| msgid "Mail"
 msgid "Mailreader"
 msgstr "Mel"
 
-#: viewer_p.cpp:1072
+#: viewer_p.cpp:1063
 msgid "The email client for the K Desktop Environment."
 msgstr "Pelanggan e-mel untuk Persekitaran K Desktop"
 
-#: viewer_p.cpp:1131
+#: viewer_p.cpp:1129
 msgid "( body part )"
 msgstr "( bahagian isi )"
 
-#: viewer_p.cpp:1620 viewer_p.cpp:1655 viewer_p.cpp:1675
+#: viewer_p.cpp:1587 viewer_p.cpp:1622 viewer_p.cpp:1642
 #, kde-format
 msgid "View Attachment: %1"
 msgstr "Paparkan Lampiran: %1"
 
-#: viewer_p.cpp:1667
+#: viewer_p.cpp:1634
 #, fuzzy, kde-format
 msgid ""
 "[KMail: Attachment contains binary data. Trying to show first character.]"
@@ -1424,16 +1406,16 @@ msgstr[1] ""
 "[KMail: Lampiran mengandungi data binari. Sedang cuba untuk memaparkan  %1 "
 "aksara pertama.]"
 
-#: viewer_p.cpp:1794
+#: viewer_p.cpp:1756
 msgctxt "View->"
 msgid "&Headers"
 msgstr "&Pengepala"
 
-#: viewer_p.cpp:1796
+#: viewer_p.cpp:1758
 msgid "Choose display style of message headers"
 msgstr "Pilih gaya paparan pengepala mesej"
 
-#: viewer_p.cpp:1802
+#: viewer_p.cpp:1764
 #, fuzzy
 #| msgctxt "View->headers->"
 #| msgid "&Brief Headers"
@@ -1441,204 +1423,355 @@ msgctxt "View->headers->"
 msgid "&Enterprise Headers"
 msgstr "&Pengepala ringkas"
 
-#: viewer_p.cpp:1805
+#: viewer_p.cpp:1767
 #, fuzzy
 #| msgid "Show the list of headers in a fancy format"
 msgid "Show the list of headers in Enterprise style"
 msgstr "Paparkan senarai pengepala format beragam"
 
-#: viewer_p.cpp:1809
+#: viewer_p.cpp:1771
 msgctxt "View->headers->"
 msgid "&Fancy Headers"
 msgstr "&Pengepala beragam"
 
-#: viewer_p.cpp:1812
+#: viewer_p.cpp:1774
 msgid "Show the list of headers in a fancy format"
 msgstr "Paparkan senarai pengepala format beragam"
 
-#: viewer_p.cpp:1816
+#: viewer_p.cpp:1778
 msgctxt "View->headers->"
 msgid "&Brief Headers"
 msgstr "&Pengepala ringkas"
 
-#: viewer_p.cpp:1819
+#: viewer_p.cpp:1781
 msgid "Show brief list of message headers"
 msgstr "Paparkan senarai  ringkas pengepala mesej"
 
-#: viewer_p.cpp:1823
+#: viewer_p.cpp:1785
 msgctxt "View->headers->"
 msgid "&Standard Headers"
 msgstr "Pengepala &Standard"
 
-#: viewer_p.cpp:1826
+#: viewer_p.cpp:1788
 msgid "Show standard list of message headers"
 msgstr "Paparkan senarai piawai pengepala mesej"
 
-#: viewer_p.cpp:1830
+#: viewer_p.cpp:1792
 msgctxt "View->headers->"
 msgid "&Long Headers"
 msgstr "Pengepala &Panjang"
 
-#: viewer_p.cpp:1833
+#: viewer_p.cpp:1795
 msgid "Show long list of message headers"
 msgstr "Paparkan senarai panjang pengepala mesej"
 
-#: viewer_p.cpp:1837
+#: viewer_p.cpp:1799
 msgctxt "View->headers->"
 msgid "&All Headers"
 msgstr "&Semua pengepala"
 
-#: viewer_p.cpp:1840
+#: viewer_p.cpp:1802
 msgid "Show all message headers"
 msgstr "Paparkan semua pengepala mesej"
 
-#: viewer_p.cpp:1845
+#: viewer_p.cpp:1807
 msgctxt "View->"
 msgid "&Attachments"
 msgstr "&Lampiran"
 
-#: viewer_p.cpp:1847
+#: viewer_p.cpp:1809
 msgid "Choose display style of attachments"
 msgstr "Pilih gaya paparan lampiran"
 
-#: viewer_p.cpp:1852
+#: viewer_p.cpp:1814
 msgctxt "View->attachments->"
 msgid "&As Icons"
 msgstr "&Sebagai Ikon"
 
-#: viewer_p.cpp:1855
+#: viewer_p.cpp:1817
 msgid "Show all attachments as icons. Click to see them."
 msgstr "Paparkan semua lampiran sebagai ikon. Klik untuk melihatnya."
 
-#: viewer_p.cpp:1859
+#: viewer_p.cpp:1821
 msgctxt "View->attachments->"
 msgid "&Smart"
 msgstr "&Cekap"
 
-#: viewer_p.cpp:1862
+#: viewer_p.cpp:1824
 msgid "Show attachments as suggested by sender."
 msgstr "Paparkan lampiran seperti yang dicadangkan oleh penghantar"
 
-#: viewer_p.cpp:1866
+#: viewer_p.cpp:1828
 msgctxt "View->attachments->"
 msgid "&Inline"
 msgstr "&Dalam garisan"
 
-#: viewer_p.cpp:1869
+#: viewer_p.cpp:1831
 msgid "Show all attachments inline (if possible)"
 msgstr "Paparkan semua lampiran baris dalam (jika boleh)"
 
-#: viewer_p.cpp:1873
+#: viewer_p.cpp:1835
 msgctxt "View->attachments->"
 msgid "&Hide"
 msgstr "&Sembunyikan"
 
-#: viewer_p.cpp:1876
+#: viewer_p.cpp:1838
 msgid "Do not show attachments in the message viewer"
 msgstr "Jangan paparkan lampiran dalam pemapar mesej"
 
-#: viewer_p.cpp:1881
+#: viewer_p.cpp:1843
 msgid "&Set Encoding"
 msgstr "&Setkan Pengekodan"
 
-#: viewer_p.cpp:1900
+#: viewer_p.cpp:1849 configurewidget.cpp:39 configurewidget.cpp:92
+msgid "Auto"
+msgstr "Auto"
+
+#: viewer_p.cpp:1862
 #, fuzzy
 msgid "Select All Text"
 msgstr "Pilih &Semua Mesej"
 
-#: viewer_p.cpp:1907
+#: viewer_p.cpp:1869
 msgid "Copy Link Address"
 msgstr "Salin Alamat Pautan"
 
-#: viewer_p.cpp:1912
+#: viewer_p.cpp:1874
 msgid "Open URL"
 msgstr "Buka URL"
 
-#: viewer_p.cpp:1917
+#: viewer_p.cpp:1879
 msgid "Use Fi&xed Font"
 msgstr "Guna Fon Yang Di&tetapkan"
 
-#: viewer_p.cpp:1923
+#: viewer_p.cpp:1885
 #, fuzzy
 #| msgid "Message Structure Viewer"
 msgid "Show Message Structure"
 msgstr "Pemapar Sruktur Mesej"
 
-#: viewer_p.cpp:1928
+#: viewer_p.cpp:1890
 msgid "&View Source"
 msgstr "&Paparkan Sumber"
 
-#: viewer_p.cpp:1933
+#: viewer_p.cpp:1895
 #, fuzzy
 msgid "&Save message"
 msgstr "_n: 1 mesej, %2."
 
-#: viewer_p.cpp:1941
+#: viewer_p.cpp:1903
 #, fuzzy
 #| msgid "Select &All Messages"
 msgid "Scroll Message Up"
 msgstr "Pilih &Semua Mesej"
 
-#: viewer_p.cpp:1947
+#: viewer_p.cpp:1909
 #, fuzzy
 #| msgid "Select &All Messages"
 msgid "Scroll Message Down"
 msgstr "Pilih &Semua Mesej"
 
-#: viewer_p.cpp:1953
+#: viewer_p.cpp:1915
 msgid "Scroll Message Up (More)"
 msgstr ""
 
-#: viewer_p.cpp:1959
+#: viewer_p.cpp:1921
 msgid "Scroll Message Down (More)"
 msgstr ""
 
-#: viewer_p.cpp:1977
+#: viewer_p.cpp:1932
+msgid "Toggle HTML Display Mode"
+msgstr ""
+
+#: viewer_p.cpp:1936
+msgid "Toggle display mode between HTML and plain text"
+msgstr ""
+
+#: viewer_p.cpp:1950
 msgid "Save &As..."
 msgstr "Simpan &Sebagai"
 
-#: viewer_p.cpp:1981
-msgctxt "to open"
-msgid "Open"
-msgstr "Buka"
-
-#: viewer_p.cpp:1983
-msgid "Open With..."
-msgstr "Buka Dengan..."
-
-#: viewer_p.cpp:1984
-msgctxt "to view something"
-msgid "View"
-msgstr "Paparkan"
-
-#: viewer_p.cpp:1994
+#: viewer_p.cpp:1967
 msgid "Save All Attachments..."
 msgstr "Simpan Semua Lampiran..."
 
-#: viewer_p.cpp:2000
-#, fuzzy
-msgid "Copy"
-msgstr "&Salin Ke"
-
-#: viewer_p.cpp:2011
-#, fuzzy
-msgid "Properties"
-msgstr "&Ciri"
-
-#: viewer_p.cpp:2292
+#: viewer_p.cpp:2272
 msgid "Message as Plain Text"
 msgstr "Mesej sebagai Teks Biasa"
 
-#: viewer_p.cpp:2556
+#: viewer_p.cpp:2552
 #, fuzzy
 #| msgctxt "Config->Composer->Attachments"
 #| msgid "A&ttachments"
 msgid "Attachments:"
 msgstr "Lam&piran"
 
-#: viewer_p.cpp:2643
+#: viewer_p.cpp:2611 viewer_p.cpp:2641
 msgid "Found no attachments to save."
 msgstr "Tidak menemui lampiran untuk disimpan."
+
+#: viewer_p.cpp:2828
+msgid "Address copied to clipboard."
+msgstr "Alamat telah disalin ke klipbod."
+
+#: viewer_p.cpp:2833
+msgid "URL copied to clipboard."
+msgstr "URL telah disalin ke klipbod."
+
+#: util.cpp:60
+#, fuzzy, kde-format
+msgid ""
+"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
+msgstr "Fail bernama %1 telah wujud. Anda ingin menulis gantikannya?"
+
+#: util.cpp:62
+#, fuzzy
+msgid "Overwrite File?"
+msgstr "&Tulis ganti"
+
+#, fuzzy
+#~| msgid "None (7-bit text)"
+#~ msgctxt "message encoding type"
+#~ msgid "None (7-bit text)"
+#~ msgstr "Tiada (teks 7 bit)"
+
+#, fuzzy
+#~| msgid "None (8-bit text)"
+#~ msgctxt "message encoding type"
+#~ msgid "None (8-bit text)"
+#~ msgstr "Tiada (teks 8 bit)"
+
+#, fuzzy
+#~| msgid "Quoted Printable"
+#~ msgctxt "message encoding type"
+#~ msgid "Quoted Printable"
+#~ msgstr "Petikan Boleh Cetak"
+
+#, fuzzy
+#~| msgid "Base 64"
+#~ msgctxt "message encoding type"
+#~ msgid "Base 64"
+#~ msgstr "Asas 64"
+
+#~ msgid "Message Part Properties"
+#~ msgstr "Ciri Bahagian Mesej"
+
+#~ msgid ""
+#~ "<qt><p>The <em>MIME type</em> of the file:</p><p>normally, you do not "
+#~ "need to touch this setting, since the type of the file is automatically "
+#~ "checked; but, sometimes, %1 may not detect the type correctly -- here is "
+#~ "where you can fix that.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Jenis <em>MIME</em> fail:</p><p>dalam keadaan normal, anda tidak "
+#~ "perlu menyentuh seting ini, kerana jenis fail telah disemak secara "
+#~ "automatik; tetapi, kadang-kadang, %1 mungkin tidak mengesan jenis sebenar "
+#~ "-- anda boleh membetulkannya di sini.</p></qt>"
+
+#~ msgid ""
+#~ "<qt><p>The size of the part:</p><p>sometimes, %1 will only give an "
+#~ "estimated size here, because calculating the exact size would take too "
+#~ "much time; when this is the case, it will be made visible by adding "
+#~ "\"(est.)\" to the size displayed.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Saiz bahagian:</p><p>kadang-kadang, %1 hanya memberikan saiz "
+#~ "anggaran di sini, kerana mengira saiz secara tepat mengambil masa yang "
+#~ "terlalu lama; jika kes ini berlaku, ia boleh dilihat dengan menambah "
+#~ "\"(anggaran.)\" kepada saiz yang dipaparkan.</p></qt>"
+
+#, fuzzy
+#~| msgid "&Name:"
+#~ msgctxt "file name of the attachment."
+#~ msgid "&Name:"
+#~ msgstr "&Nama:"
+
+#~ msgid ""
+#~ "<qt><p>The file name of the part:</p><p>although this defaults to the "
+#~ "name of the attached file, it does not specify the file to be attached; "
+#~ "rather, it suggests a file name to be used by the recipient's mail agent "
+#~ "when saving the part to disk.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Bahagian nama fail:</p><p>walaupun ini mempiawaikan nama fail "
+#~ "terlampir, ia tidak menyatakan mana satu fail yang hendak dilampirkan; "
+#~ "lebih tepat, ia mencadangkan nama fail yang akan digunakan oleh ejen mel "
+#~ "penerima  apabila menyimpan bahagian tersebut ke cakera.</p></qt>"
+
+#~ msgid "&Description:"
+#~ msgstr "&Huraian:"
+
+#~ msgid ""
+#~ "<qt><p>A description of the part:</p><p>this is just an informational "
+#~ "description of the part, much like the Subject is for the whole message; "
+#~ "most mail agents will show this information in their message previews "
+#~ "alongside the attachment's icon.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Huraian bahagian:</p><p>ini hanya huraian maklumat tentang "
+#~ "bahagian, seperti Subjek sebagai mesej keseluruhan; kebanyakan ejen mel "
+#~ "akan memaparkan maklumat ini dalam prapapar mesej di samping ikon "
+#~ "lampiran.</p></qt>"
+
+#~ msgid "&Encoding:"
+#~ msgstr "&Pengekodan:"
+
+#~ msgid ""
+#~ "<qt><p>The transport encoding of this part:</p><p>normally, you do not "
+#~ "need to change this, since %1 will use a decent default encoding, "
+#~ "depending on the MIME type; yet, sometimes, you can significantly reduce "
+#~ "the size of the resulting message, e.g. if a PostScript file does not "
+#~ "contain binary data, but consists of pure text -- in this case, choosing "
+#~ "\"quoted-printable\" over the default \"base64\" will save up to 25% in "
+#~ "resulting message size.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Pengekodan pengangkutan bahagian ini:</p><p>biasanya, tidak perlu "
+#~ "ditukar, kerana %1 akan menggunakan pengekodan piawai yang baik, "
+#~ "bergantung pada jenis MIME; bagaimanapun, kadang-kadang, anda boleh "
+#~ "mengurangkan saiz mesej yang terhasil secara signifikan, contohnya,  jika "
+#~ "fail  PostScript tidak mengandungi data binari, tetapi terdiri daripada "
+#~ "teks tulin -- dalam kes ini, memilih \"petikan boleh cetak\" berbanding  "
+#~ "\"asas 64\" piawai boleh menjimatkan 25% saiz mesej yang terhasil.</p></"
+#~ "qt>"
+
+#~ msgid "Suggest &automatic display"
+#~ msgstr "Cadangkan paparan &automatik"
+
+#~ msgid ""
+#~ "<qt><p>Check this option if you want to suggest to the recipient the "
+#~ "automatic (inline) display of this part in the message preview, instead "
+#~ "of the default icon view;</p><p>technically, this is carried out by "
+#~ "setting this part's <em>Content-Disposition</em> header field to \"inline"
+#~ "\" instead of the default \"attachment\".</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Semak opsyen ini jika anda ingin mencadangkan supaya penerima "
+#~ "memilih paparan automatik (dalam baris)  bahagian ini dalam prapapar "
+#~ "mesej, dan bukan paparan ikon piawai;</p><p>secara teknikal, ini "
+#~ "dilakukan dengan mengeset medan pengepala <em>Susunan Kandungan</em> "
+#~ "bahagian ini kepada \"dalam baris\", bukan \"lampiran\" piawai.</p></qt>"
+
+#~ msgid "&Sign this part"
+#~ msgstr "&Tandatangan bahagian ini"
+
+#~ msgid ""
+#~ "<qt><p>Check this option if you want this message part to be signed;</"
+#~ "p><p>the signature will be made with the key that you associated with the "
+#~ "currently-selected identity.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Semak opsyen ini jika anda ingin bahagian mesej ditandatangani;</"
+#~ "p><p>tandatangan akan dibuat dengan kekunci yang anda sekutukan dengan "
+#~ "identiti pilihan semasa.</p></qt>"
+
+#~ msgid "Encr&ypt this part"
+#~ msgstr "Sulit&kan bahagian ini"
+
+#~ msgid ""
+#~ "<qt><p>Check this option if you want this message part to be encrypted;</"
+#~ "p><p>the part will be encrypted for the recipients of this message</p></"
+#~ "qt>"
+#~ msgstr ""
+#~ "<qt><p>Semak opsyen ini jika anda ingin bahagian mesej disulitkan;</"
+#~ "p><p>bahagian tersebut akan di sulitkan untuk penerima mesej ini</p></qt>"
+
+#~ msgctxt "%1: a filesize incl. unit (e.g. \"1.3 KB\")"
+#~ msgid "%1 (est.)"
+#~ msgstr "%1 (anggaran.)"
 
 #, fuzzy
 #~| msgid "Name"
@@ -2461,18 +2594,9 @@ msgstr "Tidak menemui lampiran untuk disimpan."
 #~ "\"%2\" adalah huraian ralat perincian"
 
 #, fuzzy
-#~| msgid "French"
-#~ msgid "Friend"
-#~ msgstr "French"
-
-#, fuzzy
 #~| msgid "Send Later"
 #~ msgid "Later"
 #~ msgstr "Hantar kemudian"
-
-#, fuzzy
-#~ msgid "Chiasmus Decryption Key Selection"
-#~ msgstr "Pilihan Kekunci Penyulitan"
 
 #~ msgid ""
 #~ "KWallet is not available. It is strongly recommended to use KWallet for "
@@ -4076,17 +4200,8 @@ msgstr "Tidak menemui lampiran untuk disimpan."
 #~ msgid "&Previous Message"
 #~ msgstr "Mesej &Sebelumnya"
 
-#~ msgid "Go to the previous message"
-#~ msgstr "Pergi ke mesej sebelumnya"
-
 #~ msgid "Previous Unread &Message"
 #~ msgstr "&Mesej belum baca sebelumnya"
-
-#, fuzzy
-#~| msgid "&Previous Card"
-#~ msgctxt "@action:inmenu Goto previous unread message."
-#~ msgid "Previous"
-#~ msgstr "Kad &Sebelumnya"
 
 #~ msgid "Go to the previous unread message"
 #~ msgstr "Pergi ke mesej belum baca sebelumnya"
@@ -4296,11 +4411,6 @@ msgstr "Tidak menemui lampiran untuk disimpan."
 #~| msgid "Contacts"
 #~ msgid "Fonts"
 #~ msgstr "Orang hubungan"
-
-#, fuzzy
-#~| msgid "Color&s"
-#~ msgid "Colors"
-#~ msgstr "Wa&rna"
 
 #, fuzzy
 #~| msgid "La&yout"
@@ -5396,10 +5506,6 @@ msgstr "Tidak menemui lampiran untuk disimpan."
 #~ msgctxt "MDN type"
 #~ msgid "Dispatched"
 #~ msgstr "Dikirim"
-
-#~ msgctxt "MDN type"
-#~ msgid "Processed"
-#~ msgstr "Diproses"
 
 #~ msgctxt "MDN type"
 #~ msgid "Denied"
@@ -6977,10 +7083,6 @@ msgstr "Tidak menemui lampiran untuk disimpan."
 #~ msgstr "&Gunakan akhiran id mesej kebiasaan"
 
 #, fuzzy
-#~ msgid "Please select the Chiasmus key file to use:"
-#~ msgstr "Pilih penapis virus yang akan dicipta dalam KMail"
-
-#, fuzzy
 #~ msgctxt "Message->"
 #~ msgid "Universal"
 #~ msgstr "&Jawab"
@@ -6999,11 +7101,6 @@ msgstr "Tidak menemui lampiran untuk disimpan."
 #~ msgctxt "Message->"
 #~ msgid "Forward"
 #~ msgstr "&Perpanjangkan"
-
-#, fuzzy
-#~| msgid "Automatically encrypt &messages whenever possible"
-#~ msgid "Additional recipients of the message"
-#~ msgstr "Autosulitkan &mesej apabila boleh dilakukan"
 
 #, fuzzy
 #~| msgid "Automatically encrypt &messages whenever possible"
@@ -8700,10 +8797,6 @@ msgstr "Tidak menemui lampiran untuk disimpan."
 #~ msgid "&Automatic invitation sending"
 #~ msgstr "Penghantaran undangan automatik"
 
-#, fuzzy
-#~ msgid "Options"
-#~ msgstr "Opsyen Biasa"
-
 #~ msgctxt "Corresponds to Folder->Move All Messages to Trash"
 #~ msgid "Ask for co&nfirmation before moving all messages to trash"
 #~ msgstr "Minta kepas&tian sebelum mengalihkan semua mesej ke tong sampah"
@@ -10059,10 +10152,6 @@ msgstr "Tidak menemui lampiran untuk disimpan."
 #~ msgid "Could not send MDN."
 #~ msgstr "Tidak dapat menghantar MDN."
 
-#, fuzzy
-#~ msgid "Save As..."
-#~ msgstr "Simpan &Sebagai"
-
 #~ msgid "Please wait"
 #~ msgstr "Sila tunggu "
 
@@ -10071,12 +10160,6 @@ msgstr "Tidak menemui lampiran untuk disimpan."
 #~ msgid_plural "Please wait while the %1 messages are transferred"
 #~ msgstr[0] "_n: Tunggu sementara mesej dipindahkan"
 #~ msgstr[1] "Tunggu sementara  %1 mesej dipindahkan"
-
-#~ msgid "Address copied to clipboard."
-#~ msgstr "Alamat telah disalin ke klipbod."
-
-#~ msgid "URL copied to clipboard."
-#~ msgstr "URL telah disalin ke klipbod."
 
 #, fuzzy
 #~| msgid "<qt>File <b>%1</b> exists.<br>Do you want to replace it?</qt>"
@@ -10321,10 +10404,6 @@ msgstr "Tidak menemui lampiran untuk disimpan."
 
 #~ msgid "Spellchecker"
 #~ msgstr "Penyemak eja"
-
-#, fuzzy
-#~ msgid "Encrypt Message with Chiasmus..."
-#~ msgstr "Pilih Mesej yang ada Fokus"
 
 #~ msgid "&Encrypt Message"
 #~ msgstr "&Sulitkan Mesej"
