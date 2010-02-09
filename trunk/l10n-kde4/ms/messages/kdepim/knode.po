@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-08 07:07+0100\n"
+"POT-Creation-Date: 2010-02-09 06:37+0100\n"
 "PO-Revision-Date: 2005-11-24 05:09+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -35,7 +35,7 @@ msgstr "Garisan"
 msgid "Date"
 msgstr "Tarikh"
 
-#: headerview.cpp:77
+#: headerview.cpp:77 treewidget.cpp:217
 msgid "View Columns"
 msgstr "Paparkan lajur"
 
@@ -91,6 +91,94 @@ msgstr "hari"
 #: knfilterconfigwidget.cpp:70
 msgid "&Additional"
 msgstr "&Tambahan"
+
+#: kscoring.cpp:87
+msgid "Notify Message"
+msgstr ""
+
+#: kscoring.cpp:98
+msgid "Do not show this message again"
+msgstr ""
+
+#: kscoring.cpp:122
+#, kde-format
+msgid ""
+"Article\n"
+"<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+msgstr ""
+
+#: kscoring.cpp:193
+msgid "Adjust Score"
+msgstr ""
+
+#: kscoring.cpp:195
+#, fuzzy
+#| msgid "Displayed na&me:"
+msgid "Display Message"
+msgstr "Na&ma yang dipaparkan:"
+
+#: kscoring.cpp:197
+msgid "Colorize Header"
+msgstr ""
+
+#: kscoring.cpp:199
+#, fuzzy
+#| msgid "Mark as &Read"
+msgid "Mark as Read"
+msgstr "Tandakan sebagai &Sudah Baca"
+
+#: kscoring.cpp:394
+msgid "<h1>List of collected notes</h1>"
+msgstr ""
+
+#: kscoring.cpp:418
+msgid "Collected Notes"
+msgstr ""
+
+#: kscoring.cpp:491
+msgid "Contains Substring"
+msgstr ""
+
+#: kscoring.cpp:493
+#, fuzzy
+#| msgid "Regular expression"
+msgid "Matches Regular Expression"
+msgstr "Ungkapan tetap"
+
+#: kscoring.cpp:495
+msgid "Matches Regular Expression (Case Sensitive)"
+msgstr ""
+
+#: kscoring.cpp:497
+msgid "Is Exactly the Same As"
+msgstr ""
+
+#: kscoring.cpp:499
+msgid "Less Than"
+msgstr ""
+
+#: kscoring.cpp:501
+msgid "Greater Than"
+msgstr ""
+
+#: kscoring.cpp:1042
+msgid "Choose Another Rule Name"
+msgstr ""
+
+#: kscoring.cpp:1043
+#, fuzzy
+#| msgid ""
+#| "A filter with this name exists already.\n"
+#| "Please choose a different name."
+msgid "The rule name is already assigned, please choose another name:"
+msgstr ""
+"Penapis dengan nama ini sudah wujud.\n"
+"Pilih nama lain."
+
+#: kscoring.cpp:1198
+#, kde-format
+msgid "rule %1"
+msgstr ""
 
 #: knsearchdialog.cpp:32
 #, fuzzy
@@ -1460,7 +1548,7 @@ msgid "&Expire old articles automatically"
 msgstr "&Luputkan artikel lama secara automatik"
 
 #: knconfigwidgets.cpp:1522 knconfigwidgets.cpp:1532 knconfigwidgets.cpp:1540
-#: knconfigwidgets.cpp:1620
+#: knconfigwidgets.cpp:1620 kscoringeditor.cpp:646
 msgid " day"
 msgid_plural " days"
 msgstr[0] ""
@@ -3012,7 +3100,7 @@ msgstr "Huraian"
 
 #. i18n: file: nntpaccountdialog_base.ui:160
 #. i18n: ectx: property (text), widget (QRadioButton, mEncNone)
-#: rc.cpp:758
+#: rc.cpp:758 foldertreewidget.cpp:384
 #, fuzzy
 msgid "None"
 msgstr "KNode"
@@ -3155,6 +3243,37 @@ msgstr "Belum Baca"
 #: kncollectionview.cpp:86
 msgid "Total"
 msgstr "Total"
+
+#: foldertreewidget.cpp:369
+#, fuzzy
+#| msgid "Total"
+msgid "Local"
+msgstr "Total"
+
+#: foldertreewidget.cpp:372
+msgid "IMAP"
+msgstr ""
+
+#: foldertreewidget.cpp:375
+msgid "Cached IMAP"
+msgstr ""
+
+#: foldertreewidget.cpp:378
+#, fuzzy
+#| msgid "Newsgroup"
+msgid "News"
+msgstr "Kumpulan berita"
+
+#: foldertreewidget.cpp:381
+#, fuzzy
+msgid "Search"
+msgstr "&Cari:"
+
+#: foldertreewidget.cpp:390
+#, fuzzy
+#| msgid "unknown"
+msgid "Unknown"
+msgstr "tidak diketahui"
 
 #: kndisplayedheader.cpp:28
 msgctxt "collection of article headers"
@@ -3362,139 +3481,139 @@ msgstr "Hak Cipta (c) 1999-2005 Pengarang KNode "
 msgid "Jakob Schroeter"
 msgstr ""
 
-#: articlewidget.cpp:158
+#: articlewidget.cpp:156
 msgid "F&ind in Article..."
 msgstr "&Cari dalam Artikel..."
 
-#: articlewidget.cpp:160
+#: articlewidget.cpp:158
 msgid "&View Source"
 msgstr "&Paparkan Sumber"
 
-#: articlewidget.cpp:165
+#: articlewidget.cpp:163
 msgid "&Followup to Newsgroup..."
 msgstr "&Susul ke Newsgroup..."
 
-#: articlewidget.cpp:170
+#: articlewidget.cpp:168
 msgid "Reply by E&mail..."
 msgstr "Jawab dengan &E-mel..."
 
-#: articlewidget.cpp:175
+#: articlewidget.cpp:173
 msgid "Forw&ard by Email..."
 msgstr "&Perpanjangkan dengan E-mel..."
 
-#: articlewidget.cpp:179
+#: articlewidget.cpp:177
 msgctxt "article"
 msgid "&Cancel Article"
 msgstr "&Batalkan Artikel"
 
-#: articlewidget.cpp:182
+#: articlewidget.cpp:180
 msgid "S&upersede Article"
 msgstr "&Ambil Alih Artikel"
 
-#: articlewidget.cpp:185
+#: articlewidget.cpp:183
 msgid "U&se Fixed Font"
 msgstr "&Gunakan Fon yang Ditetapkan"
 
-#: articlewidget.cpp:189
+#: articlewidget.cpp:187
 #, fuzzy
 #| msgid "Fancy Formating"
 msgid "Fancy Formatting"
 msgstr "Pemformatan Beragam"
 
-#: articlewidget.cpp:194
+#: articlewidget.cpp:192
 msgid "&Unscramble (Rot 13)"
 msgstr "&Nyahadukkan (Rot 13)"
 
-#: articlewidget.cpp:201
+#: articlewidget.cpp:199
 msgid "&Headers"
 msgstr "&Pengepala"
 
-#: articlewidget.cpp:203
+#: articlewidget.cpp:201
 msgid "&Fancy Headers"
 msgstr "&Pengepala Beragam"
 
-#: articlewidget.cpp:208
+#: articlewidget.cpp:206
 msgid "&Standard Headers"
 msgstr "Pengepala &Piawai"
 
-#: articlewidget.cpp:213
+#: articlewidget.cpp:211
 msgid "&All Headers"
 msgstr "&Semua Pengepala"
 
-#: articlewidget.cpp:220
+#: articlewidget.cpp:218
 msgid "&Attachments"
 msgstr "&Lampiran"
 
-#: articlewidget.cpp:222
+#: articlewidget.cpp:220
 msgid "&As Icon"
 msgstr "&Sebagai Ikon"
 
-#: articlewidget.cpp:227
+#: articlewidget.cpp:225
 msgid "&Inline"
 msgstr "&Dalam Talian"
 
-#: articlewidget.cpp:232
+#: articlewidget.cpp:230
 msgid "&Hide"
 msgstr "&Sembunyikan"
 
-#: articlewidget.cpp:238
+#: articlewidget.cpp:236
 #, fuzzy
 #| msgid "Set Charset"
 msgid "Set chars&et"
 msgstr "Setkan Set Aksara"
 
-#: articlewidget.cpp:241 articlewidget.cpp:1416
+#: articlewidget.cpp:239 articlewidget.cpp:1414
 msgctxt "@item default character set"
 msgid "Default"
 msgstr ""
 
-#: articlewidget.cpp:246
+#: articlewidget.cpp:244
 #, fuzzy
 #| msgid "Set Charset"
 msgid "Set charset"
 msgstr "Setkan Set Aksara"
 
-#: articlewidget.cpp:252
+#: articlewidget.cpp:250
 msgid "&Open URL"
 msgstr "&Buka URL"
 
-#: articlewidget.cpp:256
+#: articlewidget.cpp:254
 msgid "&Copy Link Address"
 msgstr "&Salin Alamat Pautan"
 
-#: articlewidget.cpp:260
+#: articlewidget.cpp:258
 msgid "&Bookmark This Link"
 msgstr "&Tanda Buku Pautan Ini"
 
-#: articlewidget.cpp:263
+#: articlewidget.cpp:261
 msgid "&Add to Address Book"
 msgstr "&Tambah ke Buku Alamat"
 
-#: articlewidget.cpp:266
+#: articlewidget.cpp:264
 msgid "&Open in Address Book"
 msgstr "&Buka dalam Buku Alamat"
 
-#: articlewidget.cpp:270
+#: articlewidget.cpp:268
 msgid "&Open Attachment"
 msgstr "&Buka Lampiran"
 
-#: articlewidget.cpp:274
+#: articlewidget.cpp:272
 msgid "&Save Attachment As..."
 msgstr "&Simpan Lampiran Sebagai..."
 
-#: articlewidget.cpp:400
+#: articlewidget.cpp:398
 msgid "Unable to load the article."
 msgstr "Tidak dapat memuatkan artikel."
 
-#: articlewidget.cpp:432
+#: articlewidget.cpp:430
 msgid "The article contains no data."
 msgstr "Artikel tidak mengandungi data."
 
-#: articlewidget.cpp:468
+#: articlewidget.cpp:466
 msgid "Unknown charset. Default charset is used instead."
 msgstr "Set aksara tidak diketahui. Sebaliknya set aksara piawai digunakan."
 
-#: articlewidget.cpp:528
+#: articlewidget.cpp:526
 #, fuzzy
 #| msgid ""
 #| "<br/><b>This article has the MIME type &quot;message/partial&quot;, which "
@@ -3509,7 +3628,7 @@ msgstr ""
 "belum boleh dikendalikan oleh KNode.<br>Untuk sementara, simpan artikel "
 "sebagai fail teks dan himpunkan semula secara manual.</b>"
 
-#: articlewidget.cpp:544
+#: articlewidget.cpp:542
 msgid ""
 "<b>Note:</b> This is an HTML message. For security reasons, only the raw "
 "HTML code is shown. If you trust the sender of this message then you can "
@@ -3521,73 +3640,73 @@ msgstr ""
 "anda boleh mengaktifkan paparan HTML terformat untuk mesej ini<a href="
 "\"knode:paparHTML\">dengan mengklik di sini</a>."
 
-#: articlewidget.cpp:589
+#: articlewidget.cpp:587
 msgid "An error occurred."
 msgstr "Ralat telah berlaku."
 
-#: articlewidget.cpp:708
+#: articlewidget.cpp:706
 msgid "References:"
 msgstr "Rujukan:"
 
-#: articlewidget.cpp:791
+#: articlewidget.cpp:789
 #, kde-format
 msgid "Message was signed with unknown key 0x%1."
 msgstr "Mesej ditandatangani menggunakan kekunci yang tidak diketahui 0x%1."
 
-#: articlewidget.cpp:794
+#: articlewidget.cpp:792
 msgid "The validity of the signature cannot be verified."
 msgstr "Kesahihan tandatangan tidak dapat disahkan."
 
-#: articlewidget.cpp:812
+#: articlewidget.cpp:810
 #, kde-format
 msgid "Message was signed by %1 (Key ID: 0x%2)."
 msgstr "Mesej ditandatangani oleh %1 (ID kekunci: 0x%2)."
 
-#: articlewidget.cpp:816
+#: articlewidget.cpp:814
 #, kde-format
 msgid "Message was signed by %1."
 msgstr "Mesej ditandatangani oleh %1."
 
-#: articlewidget.cpp:826
+#: articlewidget.cpp:824
 msgid "The signature is valid, but the key's validity is unknown."
 msgstr "Tandatangan sah, tetapi kesahihan kekunci tidak diketahui."
 
-#: articlewidget.cpp:830
+#: articlewidget.cpp:828
 msgid "The signature is valid and the key is marginally trusted."
 msgstr "Tandatangan sah dan kekunci agak boleh dipercayai."
 
-#: articlewidget.cpp:834
+#: articlewidget.cpp:832
 msgid "The signature is valid and the key is fully trusted."
 msgstr "Tandatangan sah dan kekunci boleh dipercayai sepenuhnya."
 
-#: articlewidget.cpp:838
+#: articlewidget.cpp:836
 msgid "The signature is valid and the key is ultimately trusted."
 msgstr "Tandatangan sah dan kekunci dipercayai secara mutlak."
 
-#: articlewidget.cpp:842
+#: articlewidget.cpp:840
 msgid "The signature is valid, but the key is untrusted."
 msgstr "Tandatangan sah tetapi kekunci tidak dipercayai."
 
-#: articlewidget.cpp:846
+#: articlewidget.cpp:844
 msgid "Warning: The signature is bad."
 msgstr "Amaran: Tandatangan rosak."
 
-#: articlewidget.cpp:863
+#: articlewidget.cpp:861
 msgid "End of signed message"
 msgstr "Penghujung mesej bertandatangan"
 
-#: articlewidget.cpp:879
+#: articlewidget.cpp:877
 msgid "unnamed"
 msgstr "tidak dinamakan"
 
-#: articlewidget.cpp:1078
+#: articlewidget.cpp:1076
 #, fuzzy, kde-format
 msgid ""
 "An error occurred while downloading the article source:\n"
 "%1"
 msgstr "Ralat berlaku semasa penghantaran artikel berikut:"
 
-#: articlewidget.cpp:1434 kncomposer.cpp:1248
+#: articlewidget.cpp:1432 kncomposer.cpp:1248
 msgid "Select Charset"
 msgstr "Pilih Set Aksara"
 
@@ -4147,6 +4266,140 @@ msgstr ""
 "fail.\n"
 "Teruskan?"
 
+#: kscoringeditor.cpp:76
+msgid "Not"
+msgstr ""
+
+#: kscoringeditor.cpp:77
+msgid "Negate this condition"
+msgstr ""
+
+#: kscoringeditor.cpp:82
+msgid "Select the header to match this condition against"
+msgstr ""
+
+#: kscoringeditor.cpp:86
+msgid "Select the type of match"
+msgstr ""
+
+#: kscoringeditor.cpp:94
+msgid "The condition for the match"
+msgstr ""
+
+#: kscoringeditor.cpp:98
+#, fuzzy
+msgid "Edit..."
+msgstr "&Edit..."
+
+#: kscoringeditor.cpp:245
+#, fuzzy
+#| msgid "Select Destinations"
+msgid "Select an action."
+msgstr "Pilih Destinasi"
+
+#: kscoringeditor.cpp:444
+#, fuzzy
+#| msgid "&Properties"
+msgid "Properties"
+msgstr "&Ciri"
+
+#: kscoringeditor.cpp:455
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "@label rule name"
+msgid "&Name:"
+msgstr "&Nama:"
+
+#: kscoringeditor.cpp:463
+#, fuzzy
+#| msgid "&Groups:"
+msgid "&Groups:"
+msgstr "&Kumpulan:"
+
+#: kscoringeditor.cpp:468
+#, fuzzy
+#| msgid "Ne&xt Group"
+msgid "A&dd Group"
+msgstr "Kumpulan &Seterusnya"
+
+#: kscoringeditor.cpp:479
+#, fuzzy
+#| msgid "&Expire old articles automatically"
+msgid "&Expire rule automatically"
+msgstr "&Luputkan artikel lama secara automatik"
+
+#: kscoringeditor.cpp:487
+msgid "&Rule is valid for:"
+msgstr ""
+
+#: kscoringeditor.cpp:498
+#, fuzzy
+#| msgid "Conversion"
+msgid "Conditions"
+msgstr "Penukaran"
+
+#: kscoringeditor.cpp:508
+msgid "Match a&ll conditions"
+msgstr ""
+
+#: kscoringeditor.cpp:511
+msgid "Matc&h any condition"
+msgstr ""
+
+#: kscoringeditor.cpp:521
+#, fuzzy
+msgid "Actions"
+msgstr "Opsye&n"
+
+#: kscoringeditor.cpp:681
+msgid "Move rule up"
+msgstr ""
+
+#: kscoringeditor.cpp:686
+msgid "Move rule down"
+msgstr ""
+
+#: kscoringeditor.cpp:698
+#, fuzzy
+#| msgid "News Article"
+msgid "New rule"
+msgstr "Artikel Berita"
+
+#: kscoringeditor.cpp:705
+#, fuzzy
+#| msgid "&Edit File"
+msgid "Edit rule"
+msgstr "&Edit Fail"
+
+#: kscoringeditor.cpp:711
+#, fuzzy
+msgid "Remove rule"
+msgstr "&Buang Kotak"
+
+#: kscoringeditor.cpp:716
+msgid "Copy rule"
+msgstr ""
+
+#: kscoringeditor.cpp:727 kscoringeditor.cpp:732 kscoringeditor.cpp:773
+msgid "<placeholder>all groups</placeholder>"
+msgstr ""
+
+#: kscoringeditor.cpp:733
+msgid "Sho&w only rules for group:"
+msgstr ""
+
+#: kscoringeditor.cpp:951
+#, fuzzy
+#| msgid "Choose Editor"
+msgid "Rule Editor"
+msgstr "Pilih Editor"
+
+#: kscoringeditor.cpp:1063
+#, fuzzy
+#| msgid "&Edit File"
+msgid "Edit Rule"
+msgstr "&Edit Fail"
+
 #: kncleanup.cpp:62
 #, kde-format
 msgid "Deleting expired articles in <b>%1</b>"
@@ -4241,12 +4494,6 @@ msgstr ""
 #~ msgid "Cannot run the signature generator."
 #~ msgstr "Tidak dapat menjalankan penjana tandatangan."
 
-#, fuzzy
-#~| msgid "&Name:"
-#~ msgctxt "@label:textbox Name of the user in a message"
-#~ msgid "&Name:"
-#~ msgstr "&Nama:"
-
 #~ msgid "&Use a signature from file"
 #~ msgstr "&Gunakan tandatangan dari fail"
 
@@ -4272,12 +4519,6 @@ msgstr ""
 #~ msgid "Choo&se..."
 #~ msgstr "&Pilih..."
 
-#, fuzzy
-#~| msgid "&Edit File"
-#~ msgctxt "@action:button Launch the edit of the signature file"
-#~ msgid "&Edit File"
-#~ msgstr "&Edit Fail"
-
 #~ msgid "&The file is a program"
 #~ msgstr "&Fail adalah program"
 
@@ -4299,9 +4540,6 @@ msgstr ""
 
 #~ msgid "You have specified a folder."
 #~ msgstr "Anda telah mengkhususkan folder"
-
-#~ msgid "Conversion"
-#~ msgstr "Penukaran"
 
 #~ msgid "Start Conversion..."
 #~ msgstr "Mulakan Penukaran..."
@@ -4552,10 +4790,6 @@ msgstr ""
 #~ msgstr "&Gantikan"
 
 #, fuzzy
-#~ msgid "Options"
-#~ msgstr "Opsye&n"
-
-#, fuzzy
 #~ msgid "Replace &All"
 #~ msgstr "&Gantikan"
 
@@ -4597,9 +4831,6 @@ msgstr ""
 
 #~ msgid "X-Headers"
 #~ msgstr "Pengepala-X"
-
-#~ msgid "Choose Editor"
-#~ msgstr "Pilih Editor"
 
 #~ msgid "Article Viewer"
 #~ msgstr "Pemapar Artikel"
