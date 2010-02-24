@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-22 07:04+0100\n"
+"POT-Creation-Date: 2010-02-24 07:18+0100\n"
 "PO-Revision-Date: 2008-11-24 22:51+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -189,7 +189,7 @@ msgid "<b>Step 1:</b> Please select the user IDs you wish to certify."
 msgstr ""
 
 #: dialogs/certifycertificatedialog.cpp:172
-#: newcertificatewizard/newcertificatewizard.cpp:1175
+#: newcertificatewizard/newcertificatewizard.cpp:1231
 #, fuzzy
 #| msgid "Certificate Usage"
 msgid "Certify"
@@ -806,27 +806,31 @@ msgstr "Ralat Pengurus Sijil"
 msgid "qttest"
 msgstr ""
 
-#: tests/test_keylistmodels.cpp:90
+#: tests/test_keylistmodels.cpp:97
 msgid "FlatKeyListModel Test"
 msgstr ""
 
-#: tests/test_keylistmodels.cpp:94
+#: tests/test_keylistmodels.cpp:101
 #, fuzzy
 #| msgid "&Certificates"
 msgid "Perform flat certificate listing"
 msgstr "&Sijil"
 
-#: tests/test_keylistmodels.cpp:95
+#: tests/test_keylistmodels.cpp:102
 #, fuzzy
 #| msgid "Hierarchical Key List"
 msgid "Perform hierarchical certificate listing"
 msgstr "Senarai Kekunci Berhierarki"
 
-#: tests/test_keylistmodels.cpp:96
+#: tests/test_keylistmodels.cpp:103
 #, fuzzy
 #| msgid "ASCII Armored Certificate Bundles (*.pem)"
 msgid "Do not list SMIME certificates"
 msgstr "Berkas Sijil  Berperisai ASCII  (*.pem)"
+
+#: tests/test_keylistmodels.cpp:104
+msgid "List secret keys only"
+msgstr ""
 
 #: utils/formatting.cpp:205 utils/formatting.cpp:208
 #, fuzzy, kde-format
@@ -896,160 +900,179 @@ msgstr "Muat Turun Sijil Gagal"
 msgid "The validity of this certificate cannot be checked at the moment."
 msgstr ""
 
-#: utils/formatting.cpp:277
+#: utils/formatting.cpp:276
 #, fuzzy
 #| msgid "Serial Number"
 msgid "Serial number"
 msgstr "Nombor Siri"
 
-#: utils/formatting.cpp:279
+#: utils/formatting.cpp:278
 msgid "Issuer"
 msgstr "Pengeluar"
 
-#: utils/formatting.cpp:285
+#: utils/formatting.cpp:284
 msgid "Subject"
 msgstr "Subjek"
 
-#: utils/formatting.cpp:286
+#: utils/formatting.cpp:285
 msgid "User-ID"
 msgstr ""
 
-#: utils/formatting.cpp:290
+#: utils/formatting.cpp:289
 #, fuzzy
 #| msgid "A.k.a."
 msgid "a.k.a."
 msgstr "A.k.a."
 
-#: utils/formatting.cpp:293
+#: utils/formatting.cpp:292
 #, fuzzy
 #| msgid "Valid"
 msgid "Validity"
 msgstr "Sah"
 
-#: utils/formatting.cpp:295
+#: utils/formatting.cpp:294
 #, kde-format
 msgid "from %1 until forever"
 msgstr ""
 
-#: utils/formatting.cpp:296
+#: utils/formatting.cpp:295
 #, kde-format
 msgid "from %1 through %2"
 msgstr ""
 
-#: utils/formatting.cpp:298
+#: utils/formatting.cpp:297
 #, fuzzy
 #| msgid "Certificate Usage"
 msgid "Certificate type"
 msgstr "Penggunaan Sijil"
 
-#: utils/formatting.cpp:300
+#: utils/formatting.cpp:299
 #, fuzzy
 #| msgid "Certificate Usage"
 msgid "Certificate usage"
 msgstr "Penggunaan Sijil"
 
-#: utils/formatting.cpp:302 models/keylistmodel.cpp:252
+#: utils/formatting.cpp:301
+msgid "Key-ID"
+msgstr ""
+
+#: utils/formatting.cpp:303 models/keylistmodel.cpp:252
 msgid "Fingerprint"
 msgstr "Cap jari"
 
-#: utils/formatting.cpp:393
+#: utils/formatting.cpp:306 utils/formatting.cpp:308
+msgid "Stored"
+msgstr ""
+
+#: utils/formatting.cpp:306
+#, kde-format
+msgctxt "stored..."
+msgid "on SmartCard with serial no. %1"
+msgstr ""
+
+#: utils/formatting.cpp:308
+msgctxt "stored..."
+msgid "on this computer"
+msgstr ""
+
+#: utils/formatting.cpp:399
 msgctxt "X.509/CMS encryption standard"
 msgid "X.509"
 msgstr ""
 
-#: utils/formatting.cpp:395 crypto/gui/resolverecipientspage.cpp:431
+#: utils/formatting.cpp:401 crypto/gui/resolverecipientspage.cpp:431
 #: crypto/gui/signencryptemailconflictdialog.cpp:518
 msgid "OpenPGP"
 msgstr ""
 
-#: utils/formatting.cpp:396
+#: utils/formatting.cpp:402
 msgctxt "Unknown encryption protocol"
 msgid "Unknown"
 msgstr ""
 
-#: utils/formatting.cpp:414 utils/formatting.cpp:445
+#: utils/formatting.cpp:420 utils/formatting.cpp:451
 msgctxt "unknown trust level"
 msgid "unknown"
 msgstr ""
 
-#: utils/formatting.cpp:415 utils/formatting.cpp:447
+#: utils/formatting.cpp:421 utils/formatting.cpp:453
 msgid "untrusted"
 msgstr ""
 
-#: utils/formatting.cpp:416 utils/formatting.cpp:448
+#: utils/formatting.cpp:422 utils/formatting.cpp:454
 #, fuzzy
 #| msgid "Email"
 msgctxt "marginal trust"
 msgid "marginal"
 msgstr "E-mel"
 
-#: utils/formatting.cpp:417 utils/formatting.cpp:449
+#: utils/formatting.cpp:423 utils/formatting.cpp:455
 msgctxt "full trust"
 msgid "full"
 msgstr ""
 
-#: utils/formatting.cpp:418 utils/formatting.cpp:450
+#: utils/formatting.cpp:424 utils/formatting.cpp:456
 #, fuzzy
 #| msgid "Validate"
 msgctxt "ultimate trust"
 msgid "ultimate"
 msgstr "Sahkan"
 
-#: utils/formatting.cpp:419 utils/formatting.cpp:446
+#: utils/formatting.cpp:425 utils/formatting.cpp:452
 msgctxt "undefined trust"
 msgid "undefined"
 msgstr ""
 
-#: utils/formatting.cpp:429 utils/formatting.cpp:441
+#: utils/formatting.cpp:435 utils/formatting.cpp:447
 #: models/useridlistmodel.cpp:304
 #, fuzzy
 #| msgid "Revoke"
 msgid "revoked"
 msgstr "Batalkan"
 
-#: utils/formatting.cpp:431 utils/formatting.cpp:467
+#: utils/formatting.cpp:437 utils/formatting.cpp:473
 #: models/useridlistmodel.cpp:306
 msgid "expired"
 msgstr ""
 
-#: utils/formatting.cpp:433 models/useridlistmodel.cpp:308
+#: utils/formatting.cpp:439 models/useridlistmodel.cpp:308
 msgid "disabled"
 msgstr ""
 
-#: utils/formatting.cpp:435 utils/formatting.cpp:443 utils/formatting.cpp:466
+#: utils/formatting.cpp:441 utils/formatting.cpp:449 utils/formatting.cpp:472
 #: models/useridlistmodel.cpp:310
 #, fuzzy
 #| msgid "Valid"
 msgid "invalid"
 msgstr "Sah"
 
-#: utils/formatting.cpp:436
+#: utils/formatting.cpp:442
 msgctxt "as in good/valid signature"
 msgid "good"
 msgstr ""
 
-#: utils/formatting.cpp:460
+#: utils/formatting.cpp:466
 #, kde-format
 msgid "class %1"
 msgstr ""
 
-#: utils/formatting.cpp:462
+#: utils/formatting.cpp:468
 msgctxt "good/valid signature"
 msgid "good"
 msgstr ""
 
-#: utils/formatting.cpp:468
+#: utils/formatting.cpp:474
 #, fuzzy
 #| msgid "Deleting CA Certificates"
 msgid "certificate expired"
 msgstr "Menghapuskan sijil PBP"
 
-#: utils/formatting.cpp:469
+#: utils/formatting.cpp:475
 msgctxt "fake/invalid signature"
 msgid "bad"
 msgstr ""
 
-#: utils/formatting.cpp:486
+#: utils/formatting.cpp:492
 #, fuzzy, kde-format
 #| msgctxt "Format string for the labels in the \"Your Personal Data\" page"
 #| msgid "%1 (%2):"
@@ -1057,66 +1080,66 @@ msgctxt "name, email, key id"
 msgid "%1 %2 (%3)"
 msgstr "%1 (%2):"
 
-#: utils/formatting.cpp:528
+#: utils/formatting.cpp:534
 #, kde-format
 msgid "Bad signature by unknown certificate %1: %2"
 msgstr ""
 
-#: utils/formatting.cpp:530
+#: utils/formatting.cpp:536
 #, fuzzy, kde-format
 #| msgid "Could not generate certificate: %1"
 msgid "Bad signature by an unknown certificate: %1"
 msgstr "Tidak dapat menjana sijil: %1"
 
-#: utils/formatting.cpp:532
+#: utils/formatting.cpp:538
 #, kde-format
 msgid "Bad signature by %1: %2"
 msgstr ""
 
-#: utils/formatting.cpp:537
+#: utils/formatting.cpp:543
 #, fuzzy, kde-format
 #| msgid "Deleting CA Certificates"
 msgid "Good signature by unknown certificate %1."
 msgstr "Menghapuskan sijil PBP"
 
-#: utils/formatting.cpp:539
+#: utils/formatting.cpp:545
 #, fuzzy
 #| msgid "Delete Certificates"
 msgid "Good signature by an unknown certificate."
 msgstr "Hapuskan Sijil"
 
-#: utils/formatting.cpp:541
+#: utils/formatting.cpp:547
 #, kde-format
 msgid "Good signature by %1."
 msgstr ""
 
-#: utils/formatting.cpp:546
+#: utils/formatting.cpp:552
 #, kde-format
 msgid "Invalid signature by unknown certificate %1: %2"
 msgstr ""
 
-#: utils/formatting.cpp:548
+#: utils/formatting.cpp:554
 #, fuzzy, kde-format
 #| msgid "Could not generate certificate: %1"
 msgid "Invalid signature by an unknown certificate: %1"
 msgstr "Tidak dapat menjana sijil: %1"
 
-#: utils/formatting.cpp:550
+#: utils/formatting.cpp:556
 #, kde-format
 msgid "Invalid signature by %1: %2"
 msgstr ""
 
-#: utils/formatting.cpp:563
+#: utils/formatting.cpp:569
 msgid "This certificate was imported from the following sources:"
 msgstr ""
 
-#: utils/formatting.cpp:573
+#: utils/formatting.cpp:579
 #, fuzzy
 #| msgid "Fetching certificate from server..."
 msgid "The import of this certificate was canceled."
 msgstr "Mengutip sijil dari pelayan..."
 
-#: utils/formatting.cpp:575
+#: utils/formatting.cpp:581
 #, fuzzy, kde-format
 #| msgid ""
 #| "An error occurred while trying to refresh keys:\n"
@@ -1126,29 +1149,29 @@ msgstr ""
 "Ralat berlaku semasa cuba memuat semula kekunci:\n"
 "%1"
 
-#: utils/formatting.cpp:581
+#: utils/formatting.cpp:587
 msgid "This certificate was new to your keystore. The secret key is available."
 msgstr ""
 
-#: utils/formatting.cpp:582
+#: utils/formatting.cpp:588
 #, fuzzy
 #| msgid "Certificate Download Failed"
 msgid "This certificate is new to your keystore."
 msgstr "Muat Turun Sijil Gagal"
 
-#: utils/formatting.cpp:586
+#: utils/formatting.cpp:592
 msgid "New user-ids were added to this certificate by the import."
 msgstr ""
 
-#: utils/formatting.cpp:588
+#: utils/formatting.cpp:594
 msgid "New signatures were added to this certificate by the import."
 msgstr ""
 
-#: utils/formatting.cpp:590
+#: utils/formatting.cpp:596
 msgid "New subkeys were added to this certificate by the import."
 msgstr ""
 
-#: utils/formatting.cpp:593
+#: utils/formatting.cpp:599
 #, fuzzy
 #| msgid "Fetching certificate from server..."
 msgid "The import contained no new data for this certificate. It is unchanged."
@@ -1417,6 +1440,11 @@ msgstr ""
 msgid ""
 "Cannot find common base directory for these files:\n"
 "%1"
+msgstr ""
+
+#: utils/archivedefinition.cpp:184
+#, kde-format
+msgid "Caught unknown exception in group %1"
 msgstr ""
 
 #: utils/hex.cpp:55
@@ -1787,15 +1815,15 @@ msgid "Sign and Encrypt (OpenPGP only)"
 msgstr ""
 
 #: crypto/gui/newsignencryptfileswizard.cpp:350
-#: newcertificatewizard/newcertificatewizard.cpp:1172
-#: newcertificatewizard/newcertificatewizard.cpp:1196
+#: newcertificatewizard/newcertificatewizard.cpp:1228
+#: newcertificatewizard/newcertificatewizard.cpp:1252
 #, fuzzy
 #| msgid "For &encrypting only"
 msgid "Encrypt"
 msgstr "Untuk &penyulitan sahaja"
 
 #: crypto/gui/newsignencryptfileswizard.cpp:351
-#: newcertificatewizard/newcertificatewizard.cpp:1170
+#: newcertificatewizard/newcertificatewizard.cpp:1226
 #, fuzzy
 #| msgid "For &signing only"
 msgid "Sign"
@@ -2510,18 +2538,36 @@ msgctxt "label: result example: foo.sig: Verification failed. "
 msgid "%1: %2"
 msgstr "%1 (%2):"
 
-#: crypto/decryptverifytask.cpp:829 crypto/decryptverifytask.cpp:958
+#: crypto/decryptverifytask.cpp:827
+msgid ""
+"Could not determine whether this is an S/MIME or an OpenPGP signature/"
+"ciphertext - maybe it is neither ciphertext nor a signature?"
+msgstr ""
+
+#: crypto/decryptverifytask.cpp:833 crypto/decryptverifytask.cpp:966
 #, fuzzy, kde-format
 #| msgid "Deleting keys..."
 msgid "Decrypting: %1..."
 msgstr "Menghapuskan kekunci..."
 
-#: crypto/decryptverifytask.cpp:1089
+#: crypto/decryptverifytask.cpp:960
+msgid ""
+"Could not determine whether this was S/MIME- or OpenPGP-encrypted - maybe it "
+"is not ciphertext at all?"
+msgstr ""
+
+#: crypto/decryptverifytask.cpp:1095 crypto/decryptverifytask.cpp:1221
+msgid ""
+"Could not determine whether this is an S/MIME or an OpenPGP signature - "
+"maybe it is not a signature at all?"
+msgstr ""
+
+#: crypto/decryptverifytask.cpp:1101
 #, kde-format
 msgid "Verifying: %1..."
 msgstr ""
 
-#: crypto/decryptverifytask.cpp:1216
+#: crypto/decryptverifytask.cpp:1232
 #, kde-format
 msgid "Verifying signature: %1..."
 msgstr ""
@@ -3281,6 +3327,7 @@ msgid ""
 msgstr ""
 
 #: commands/certifycertificatecommand.cpp:183
+msgctxt "@info"
 msgid ""
 "To certify other certificates, you first need to create an OpenPGP "
 "certificate for yourself. Choose <interface>File->New Certificate...</"
@@ -4099,7 +4146,7 @@ msgid "Listing private OpenPGP certificates"
 msgstr "&Sijil"
 
 #: models/keylistmodel.cpp:247 models/useridlistmodel.cpp:249
-#: newcertificatewizard/newcertificatewizard.cpp:898
+#: newcertificatewizard/newcertificatewizard.cpp:910
 msgid "Name"
 msgstr ""
 
@@ -4134,7 +4181,7 @@ msgid "ID"
 msgstr ""
 
 #: models/useridlistmodel.cpp:250
-#: newcertificatewizard/newcertificatewizard.cpp:902
+#: newcertificatewizard/newcertificatewizard.cpp:914
 #, fuzzy
 #| msgid "Email"
 msgid "EMail"
@@ -5241,9 +5288,9 @@ msgstr "&Sijil"
 
 #. i18n: file: dialogs/certificatedetailsdialog.ui:287
 #. i18n: ectx: attribute (title), widget (QWidget, detailsTab)
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:75
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:20
 #. i18n: ectx: attribute (title), widget (QWidget, technicalTab)
-#: rc.cpp:493 rc.cpp:658
+#: rc.cpp:493 rc.cpp:643
 #, fuzzy
 #| msgid "Certificate Details..."
 msgid "Technical Details"
@@ -5486,7 +5533,7 @@ msgstr "Nombor Siri"
 #. i18n: ectx: property (text), widget (QLabel, nameRequiredLB)
 #. i18n: file: newcertificatewizard/enterdetailspage.ui:43
 #. i18n: ectx: property (text), widget (QLabel, emailRequiredLB)
-#: rc.cpp:619 rc.cpp:625 newcertificatewizard/newcertificatewizard.cpp:996
+#: rc.cpp:619 rc.cpp:625 newcertificatewizard/newcertificatewizard.cpp:1016
 msgid "(required)"
 msgstr ""
 
@@ -5498,13 +5545,13 @@ msgstr ""
 
 #. i18n: file: newcertificatewizard/enterdetailspage.ui:50
 #. i18n: ectx: property (text), widget (QLabel, commentLB)
-#: rc.cpp:628 newcertificatewizard/newcertificatewizard.cpp:1252
+#: rc.cpp:628 newcertificatewizard/newcertificatewizard.cpp:1308
 msgid "Comment:"
 msgstr ""
 
 #. i18n: file: newcertificatewizard/enterdetailspage.ui:60
 #. i18n: ectx: property (text), widget (QLabel, commentRequiredLB)
-#: rc.cpp:631 newcertificatewizard/newcertificatewizard.cpp:996
+#: rc.cpp:631 newcertificatewizard/newcertificatewizard.cpp:1016
 #, fuzzy
 #| msgid "Stop Operation"
 msgid "(optional)"
@@ -5518,7 +5565,7 @@ msgstr "Hentikan Operasi"
 msgid "Add email address to DN (only needed for broken CAs)"
 msgstr "Tambah e-mel kepada DN sebagai permohonan untuk PBP yang rosak"
 
-#. i18n: file: newcertificatewizard/enterdetailspage.ui:117
+#. i18n: file: newcertificatewizard/enterdetailspage.ui:154
 #. i18n: ectx: property (text), widget (QPushButton, advancedPB)
 #: rc.cpp:637
 msgid "Advanced Settings..."
@@ -5530,108 +5577,108 @@ msgstr ""
 msgid "Advanced Settings"
 msgstr ""
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:20
-#. i18n: ectx: attribute (title), widget (QWidget, personalTab)
-#: rc.cpp:643
-#, fuzzy
-#| msgid "Your Personal Data"
-msgid "Personal Details"
-msgstr "Data Peribadi Anda"
-
 #. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:26
-#. i18n: ectx: property (title), widget (QGroupBox, uidGB)
-#: rc.cpp:646
-msgid "Additional User-IDs"
-msgstr ""
-
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:38
-#. i18n: ectx: property (title), widget (QGroupBox, emailGB)
-#: rc.cpp:649
-msgid "EMail Addresses"
-msgstr ""
-
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:50
-#. i18n: ectx: property (title), widget (QGroupBox, dnsGB)
-#: rc.cpp:652
-msgid "DNS Names"
-msgstr ""
-
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:62
-#. i18n: ectx: property (title), widget (QGroupBox, uriGB)
-#: rc.cpp:655
-msgid "URIs"
-msgstr ""
-
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:81
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:661
+#: rc.cpp:646
 #, fuzzy
 #| msgid "Key Categories"
 msgid "Key Material"
 msgstr "Kategori Kekunci"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:87
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:32
 #. i18n: ectx: property (text), widget (QRadioButton, rsaRB)
-#: rc.cpp:664
+#: rc.cpp:649
 msgid "RSA"
 msgstr ""
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:110
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:55
 #. i18n: ectx: property (text), widget (QRadioButton, dsaRB)
-#: rc.cpp:667
+#: rc.cpp:652
 msgid "DSA"
 msgstr ""
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:120
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:65
 #. i18n: ectx: property (text), widget (QCheckBox, elgCB)
-#: rc.cpp:670
+#: rc.cpp:655
 msgid "+ Elgamal"
 msgstr ""
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:163
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:108
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:673
+#: rc.cpp:658
 msgid "Certificate Usage"
 msgstr "Penggunaan Sijil"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:171
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:116
 #. i18n: ectx: property (text), widget (QCheckBox, expiryCB)
-#: rc.cpp:676
+#: rc.cpp:661
 #, fuzzy
 #| msgid "Validate"
 msgid "Valid until:"
 msgstr "Sahkan"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:196
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:141
 #. i18n: ectx: property (text), widget (QCheckBox, certificationCB)
-#: rc.cpp:679
+#: rc.cpp:664
 #, fuzzy
 #| msgid "&Certificates"
 msgid "Certification"
 msgstr "&Sijil"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:203
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:148
 #. i18n: ectx: property (text), widget (QCheckBox, signingCB)
-#: rc.cpp:682
+#: rc.cpp:667
 #, fuzzy
 #| msgid "Canceled."
 msgid "Signing"
 msgstr "Dibatalkan."
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:213
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:158
 #. i18n: ectx: property (text), widget (QCheckBox, encryptionCB)
-#: rc.cpp:685
+#: rc.cpp:670
 #, fuzzy
 #| msgid "For &encrypting only"
 msgid "Encryption"
 msgstr "Untuk &penyulitan sahaja"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:223
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:168
 #. i18n: ectx: property (text), widget (QCheckBox, authenticationCB)
-#: rc.cpp:688
+#: rc.cpp:673
 #, fuzzy
 msgid "Authentication"
 msgstr "Maklumat Sijil"
+
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:192
+#. i18n: ectx: attribute (title), widget (QWidget, personalTab)
+#: rc.cpp:676 newcertificatewizard/newcertificatewizard.cpp:1438
+#, fuzzy
+#| msgid "Your Personal Data"
+msgid "Personal Details"
+msgstr "Data Peribadi Anda"
+
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:198
+#. i18n: ectx: property (title), widget (QGroupBox, uidGB)
+#: rc.cpp:679
+msgid "Additional User-IDs"
+msgstr ""
+
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:210
+#. i18n: ectx: property (title), widget (QGroupBox, emailGB)
+#: rc.cpp:682
+msgid "EMail Addresses"
+msgstr ""
+
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:222
+#. i18n: ectx: property (title), widget (QGroupBox, dnsGB)
+#: rc.cpp:685
+msgid "DNS Names"
+msgstr ""
+
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:234
+#. i18n: ectx: property (title), widget (QGroupBox, uriGB)
+#: rc.cpp:688
+msgid "URIs"
+msgstr ""
 
 #. i18n: file: newcertificatewizard/resultpage.ui:28
 #. i18n: ectx: property (toolTip), widget (Kleo::DragQueen, dragQueen)
@@ -5779,6 +5826,23 @@ msgstr "Setkan F&on..."
 #| msgid "Save Certificate"
 msgid "Learn NetKey v3 Card Certificates"
 msgstr "Simpan Sijil"
+
+#: selftest/libkleopatrarccheck.cpp:59
+msgctxt "@title"
+msgid "Config File 'libkleopatrarc'"
+msgstr ""
+
+#: selftest/libkleopatrarccheck.cpp:72
+msgid "Errors found"
+msgstr ""
+
+#: selftest/libkleopatrarccheck.cpp:76
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>Kleopatra detected the following errors in the libkleopatrarc "
+"configuration:</para>%1"
+msgstr ""
 
 #: selftest/gpgagentcheck.cpp:64
 msgctxt "@title"
@@ -6115,30 +6179,30 @@ msgstr ""
 msgid "new uri"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:498
+#: newcertificatewizard/newcertificatewizard.cpp:510
 msgctxt "@action"
 msgid "Create Key"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:549
+#: newcertificatewizard/newcertificatewizard.cpp:561
 #, fuzzy, kde-format
 #| msgid "Could not start certificate generation: %1"
 msgid "Could not start certificate creation: %1"
 msgstr "Tidak dapat memulakan penjanaan sijil: %1"
 
-#: newcertificatewizard/newcertificatewizard.cpp:562
+#: newcertificatewizard/newcertificatewizard.cpp:574
 #, fuzzy
 #| msgid "Certificate Download Failed"
 msgid "Operation canceled."
 msgstr "Muat Turun Sijil Gagal"
 
-#: newcertificatewizard/newcertificatewizard.cpp:563
+#: newcertificatewizard/newcertificatewizard.cpp:575
 #, fuzzy, kde-format
 #| msgid "Could not generate certificate: %1"
 msgid "Could not create certificate: %1"
 msgstr "Tidak dapat menjana sijil: %1"
 
-#: newcertificatewizard/newcertificatewizard.cpp:570
+#: newcertificatewizard/newcertificatewizard.cpp:582
 #, fuzzy, kde-format
 #| msgid "Certificate Download Failed"
 msgid ""
@@ -6146,52 +6210,52 @@ msgid ""
 "Fingerprint: %1"
 msgstr "Muat Turun Sijil Gagal"
 
-#: newcertificatewizard/newcertificatewizard.cpp:576
+#: newcertificatewizard/newcertificatewizard.cpp:588
 #, fuzzy, kde-format
 #| msgid "Could not generate certificate: %1"
 msgid "Could not write output file %1: %2"
 msgstr "Tidak dapat menjana sijil: %1"
 
-#: newcertificatewizard/newcertificatewizard.cpp:584
+#: newcertificatewizard/newcertificatewizard.cpp:596
 #, fuzzy
 #| msgid "CRL cache cleared successfully."
 msgid "Certificate created successfully."
 msgstr "Cache CRL berjaya dikosongkan."
 
-#: newcertificatewizard/newcertificatewizard.cpp:623
+#: newcertificatewizard/newcertificatewizard.cpp:635
 #, fuzzy
 #| msgid "Key Generation Wizard"
 msgctxt "@title"
 msgid "Key Creation Failed"
 msgstr "Wizard Penjanaan Kekunci"
 
-#: newcertificatewizard/newcertificatewizard.cpp:624
+#: newcertificatewizard/newcertificatewizard.cpp:636
 msgid "Key pair creation failed. Please find details about the failure below."
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:626
+#: newcertificatewizard/newcertificatewizard.cpp:638
 msgctxt "@title"
 msgid "Key Pair Successfully Created"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:627
+#: newcertificatewizard/newcertificatewizard.cpp:639
 msgid ""
 "Your new key pair was created successfully. Please find details on the "
 "result and some suggested next steps below."
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:681
+#: newcertificatewizard/newcertificatewizard.cpp:693
 msgctxt "@title"
 msgid "Save Request"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:682
+#: newcertificatewizard/newcertificatewizard.cpp:694
 #, fuzzy
 #| msgid "PKCS#12 Key Bundle (*.p12)"
 msgid "PKCS#10 Requests (*.p10)"
 msgstr "Berkas kekunci PKCS#12  (*.p12)"
 
-#: newcertificatewizard/newcertificatewizard.cpp:691
+#: newcertificatewizard/newcertificatewizard.cpp:703
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -6199,12 +6263,12 @@ msgid ""
 "filename>: <message>%3</message>"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:694
+#: newcertificatewizard/newcertificatewizard.cpp:706
 msgctxt "@title"
 msgid "Error Saving Request"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:698
+#: newcertificatewizard/newcertificatewizard.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -6212,17 +6276,17 @@ msgid ""
 "should now send the request to the Certification Authority (CA).</para>"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:701
+#: newcertificatewizard/newcertificatewizard.cpp:713
 msgctxt "@title"
 msgid "Request Saved"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:709
+#: newcertificatewizard/newcertificatewizard.cpp:721
 #, fuzzy
 msgid "Please process this certificate."
 msgstr "_n: Anda pasti ingin menghapuskan sijil ini?"
 
-#: newcertificatewizard/newcertificatewizard.cpp:710
+#: newcertificatewizard/newcertificatewizard.cpp:722
 msgid ""
 "Please process this certificate and inform the sender about the location to "
 "fetch the resulting certificate.\n"
@@ -6230,17 +6294,17 @@ msgid ""
 "Thanks,\n"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:734
+#: newcertificatewizard/newcertificatewizard.cpp:746
 #, fuzzy
 #| msgid "&Certificates"
 msgid "My new OpenPGP certificate"
 msgstr "&Sijil"
 
-#: newcertificatewizard/newcertificatewizard.cpp:735
+#: newcertificatewizard/newcertificatewizard.cpp:747
 msgid "Please find attached my new OpenPGP certificate."
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:766
+#: newcertificatewizard/newcertificatewizard.cpp:778
 msgctxt "@info"
 msgid ""
 "<para><application>Kleopatra</application> tried to send a mail via your "
@@ -6252,126 +6316,177 @@ msgid ""
 "then attach that.</para>"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:770
+#: newcertificatewizard/newcertificatewizard.cpp:782
 #, fuzzy
 #| msgid "Canceled."
 msgctxt "@title"
 msgid "Sending Mail"
 msgstr "Dibatalkan."
 
-#: newcertificatewizard/newcertificatewizard.cpp:806
+#: newcertificatewizard/newcertificatewizard.cpp:818
 msgctxt "@info"
 msgid ""
 "This operation will delete the certification request. Please make sure that "
 "you have sent or saved it before proceeding."
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:808
+#: newcertificatewizard/newcertificatewizard.cpp:820
 #, fuzzy
 msgctxt "@title"
 msgid "Certification Request About To Be Deleted"
 msgstr "Permohonan Sijil Anda Sedia Untuk Dihantar"
 
-#: newcertificatewizard/newcertificatewizard.cpp:839
+#: newcertificatewizard/newcertificatewizard.cpp:851
 #, fuzzy
 #| msgid "Certificate Deletion Failed"
 msgctxt "@title"
 msgid "Certificate Creation Wizard"
 msgstr "Gagal Menghapuskan Sijil"
 
-#: newcertificatewizard/newcertificatewizard.cpp:900
+#: newcertificatewizard/newcertificatewizard.cpp:912
 msgid "Comment"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:915
-#, kde-format
+#: newcertificatewizard/newcertificatewizard.cpp:927
+#, fuzzy, kde-format
+#| msgctxt "Format string for the labels in the \"Your Personal Data\" page"
+#| msgid "%1 (%2):"
 msgctxt "Format string for the labels in the \"Your Personal Data\" page"
-msgid "%1 (%2):"
+msgid "%1 (%2)"
 msgstr "%1 (%2):"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1177
+#: newcertificatewizard/newcertificatewizard.cpp:1014
+#, fuzzy, kde-format
+#| msgctxt "Format string for the labels in the \"Your Personal Data\" page"
+#| msgid "%1 (%2):"
+msgctxt "interpunctation for labels"
+msgid "%1:"
+msgstr "%1 (%2):"
+
+#: newcertificatewizard/newcertificatewizard.cpp:1172
+#, kde-format
+msgctxt "@info"
+msgid "<interface>%1</interface> is required, but empty."
+msgstr ""
+
+#: newcertificatewizard/newcertificatewizard.cpp:1174
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<interface>%1</interface> is required, but empty.<nl/>Local Admin rule: "
+"<icode>%2</icode>"
+msgstr ""
+
+#: newcertificatewizard/newcertificatewizard.cpp:1180
+#, kde-format
+msgctxt "@info"
+msgid "<interface>%1</interface> is incomplete."
+msgstr ""
+
+#: newcertificatewizard/newcertificatewizard.cpp:1182
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<interface>%1</interface> is incomplete.<nl/>Local Admin rule: <icode>%2</"
+"icode>"
+msgstr ""
+
+#: newcertificatewizard/newcertificatewizard.cpp:1187
+#, kde-format
+msgctxt "@info"
+msgid "<interface>%1</interface> is invalid."
+msgstr ""
+
+#: newcertificatewizard/newcertificatewizard.cpp:1189
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<interface>%1</interface> is invalid.<nl/>Local Admin rule: <icode>%2</icode>"
+msgstr ""
+
+#: newcertificatewizard/newcertificatewizard.cpp:1233
 msgid "Authenticate"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1227
+#: newcertificatewizard/newcertificatewizard.cpp:1283
 msgid "Key Type:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1229
-#: newcertificatewizard/newcertificatewizard.cpp:1231
+#: newcertificatewizard/newcertificatewizard.cpp:1285
+#: newcertificatewizard/newcertificatewizard.cpp:1287
 msgid "Key Strength:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1231
-#: newcertificatewizard/newcertificatewizard.cpp:1243
+#: newcertificatewizard/newcertificatewizard.cpp:1287
+#: newcertificatewizard/newcertificatewizard.cpp:1299
 msgid "default"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1234
+#: newcertificatewizard/newcertificatewizard.cpp:1290
 msgid "Key Usage:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1234
-#: newcertificatewizard/newcertificatewizard.cpp:1236
-#: newcertificatewizard/newcertificatewizard.cpp:1244
+#: newcertificatewizard/newcertificatewizard.cpp:1290
+#: newcertificatewizard/newcertificatewizard.cpp:1292
+#: newcertificatewizard/newcertificatewizard.cpp:1300
 msgctxt "separator for key usages"
 msgid ",&nbsp;"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1236
+#: newcertificatewizard/newcertificatewizard.cpp:1292
 #, fuzzy
 #| msgid "Certificate Usage"
 msgid "Certificate Usage:"
 msgstr "Penggunaan Sijil"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1239
+#: newcertificatewizard/newcertificatewizard.cpp:1295
 msgid "Subkey Type:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1241
-#: newcertificatewizard/newcertificatewizard.cpp:1243
+#: newcertificatewizard/newcertificatewizard.cpp:1297
+#: newcertificatewizard/newcertificatewizard.cpp:1299
 msgid "Subkey Strength:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1244
+#: newcertificatewizard/newcertificatewizard.cpp:1300
 msgid "Subkey Usage:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1247
+#: newcertificatewizard/newcertificatewizard.cpp:1303
 #, fuzzy
 #| msgid "Validate"
 msgid "Valid Until:"
 msgstr "Sahkan"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1248
+#: newcertificatewizard/newcertificatewizard.cpp:1304
 msgid "Email Address:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1250
+#: newcertificatewizard/newcertificatewizard.cpp:1306
 #, fuzzy
 #| msgid "Serial Number"
 msgid "Real Name:"
 msgstr "Nombor Siri"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1254
+#: newcertificatewizard/newcertificatewizard.cpp:1310
 #, fuzzy
 #| msgid "Subject"
 msgid "Subject-DN:"
 msgstr "Subjek"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1256
+#: newcertificatewizard/newcertificatewizard.cpp:1312
 msgid "Add. Email Address:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1258
+#: newcertificatewizard/newcertificatewizard.cpp:1314
 msgid "DNS Name:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1260
+#: newcertificatewizard/newcertificatewizard.cpp:1316
 msgid "URI:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1318
+#: newcertificatewizard/newcertificatewizard.cpp:1374
 #, kde-format
 msgctxt "%2: some admin-supplied text, %1: key size in bits"
 msgid "%2 (1 bit; default)"
@@ -6379,7 +6494,7 @@ msgid_plural "%2 (%1 bits; default)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1319
+#: newcertificatewizard/newcertificatewizard.cpp:1375
 #, fuzzy, kde-format
 #| msgctxt "Format string for the labels in the \"Your Personal Data\" page"
 #| msgid "%1 (%2):"
@@ -6389,7 +6504,7 @@ msgid_plural "%2 (%1 bits)"
 msgstr[0] "%1 (%2):"
 msgstr[1] "%1 (%2):"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1321
+#: newcertificatewizard/newcertificatewizard.cpp:1377
 #, kde-format
 msgctxt "%1: key size in bits"
 msgid "1 bit (default)"
@@ -6397,7 +6512,7 @@ msgid_plural "%1 bits (default)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1322
+#: newcertificatewizard/newcertificatewizard.cpp:1378
 #, fuzzy, kde-format
 msgctxt "%1: key size in bits"
 msgid "1 bit"
@@ -6405,7 +6520,7 @@ msgid_plural "%1 bits"
 msgstr[0] "_n: %1 bit"
 msgstr[1] "_n: %1 bit"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1379
+#: newcertificatewizard/newcertificatewizard.cpp:1442
 msgctxt "@info:tooltip"
 msgid "Adding more than one User ID is not yet implemented."
 msgstr ""
