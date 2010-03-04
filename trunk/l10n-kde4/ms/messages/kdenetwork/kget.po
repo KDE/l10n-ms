@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-02 04:20+0100\n"
+"POT-Creation-Date: 2010-03-04 04:12+0100\n"
 "PO-Revision-Date: 2006-08-24 22:53+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -116,7 +116,6 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: core/transfergrouphandler.cpp:113 core/transferhandler.cpp:148
-#: transfer-plugins/bittorrent/libbtcore/util/functions.cpp:263
 #: ui/transferdetails.cpp:100
 #, kde-format
 msgid "%1/s"
@@ -318,7 +317,6 @@ msgid ""
 msgstr ""
 
 #: core/kget.cpp:1250
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:71
 #, fuzzy
 msgid "Download completed"
 msgstr "Pemasangan selesai"
@@ -505,9 +503,7 @@ msgctxt "not available"
 msgid "n/a"
 msgstr ""
 
-#: core/transferhandler.cpp:143
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:79
-#: ui/transferdetails.cpp:95
+#: core/transferhandler.cpp:143 ui/transferdetails.cpp:95
 msgid "Stalled"
 msgstr "Tergantung"
 
@@ -820,7 +816,6 @@ msgid "Availability"
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:314
-#: transfer-plugins/bittorrent/libbtcore/util/logsystemmanager.cpp:36
 msgid "DHT"
 msgstr "DHT"
 
@@ -1270,463 +1265,6 @@ msgstr "Tambah _direktori"
 #, fuzzy
 msgid "Select a default temporary folder"
 msgstr "Tambah _direktori"
-
-#: transfer-plugins/bittorrent/libbtcore/bcodec/bdecoder.cpp:61
-#, kde-format
-msgid "Illegal token: %1"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/bcodec/bdecoder.cpp:82
-msgid "Decode error"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/bcodec/bdecoder.cpp:143
-#: transfer-plugins/bittorrent/libbtcore/bcodec/bdecoder.cpp:188
-msgid "Unexpected end of input"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/bcodec/bdecoder.cpp:163
-#: transfer-plugins/bittorrent/libbtcore/bcodec/bdecoder.cpp:197
-#, kde-format
-msgid "Cannot convert %1 to an int"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/bcodec/bdecoder.cpp:202
-msgid "Torrent is incomplete."
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:94
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:318
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:347
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:406
-#, kde-format
-msgid "Cannot open %1 : %2"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:120
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:243
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:429
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:496
-#, kde-format
-msgid "Cannot open %1 for writing : readonly filesystem"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:253
-#, fuzzy, kde-format
-msgid "Cannot expand file %1 : %2"
-msgstr "Tidak dapat membaca fail %s."
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:395
-#, kde-format
-msgid "Error : Reading past the end of the file %1"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:400
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:446
-#, fuzzy, kde-format
-msgid "Failed to seek file %1 : %2"
-msgstr "Tidak dapat membaca fail %s."
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:408
-#, fuzzy, kde-format
-msgid "Error reading from %1"
-msgstr "Ralat membaca fail keutamaan."
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:450
-#, fuzzy, kde-format
-msgid "Failed to write to file %1 : %2"
-msgstr "Tidak dapat menulis ke fail %s."
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:523
-#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:795
-#, kde-format
-msgid "Cannot preallocate diskspace : %1"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/chunkmanager.cpp:209
-#: transfer-plugins/bittorrent/libbtcore/diskio/chunkmanager.cpp:324
-#, fuzzy, kde-format
-msgid "Cannot open index file %1 : %2"
-msgstr "tidak dapat membuka fail tetapan `%s': %s"
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/singlefilecache.cpp:72
-#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:107
-#, kde-format
-msgid "Failed to open %1 : %2"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/singlefilecache.cpp:83
-#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:134
-#, kde-format
-msgid "Failed to create %1 : %2"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/dndfile.cpp:89
-#, fuzzy, kde-format
-msgid "Cannot create file %1 : %2"
-msgstr "Tidak dapat membaca fail %s."
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/dndfile.cpp:137
-#, kde-format
-msgid "Failed to write first chunk to DND file : %1"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/dndfile.cpp:155
-#, fuzzy, kde-format
-msgid "Failed to write last chunk to DND file : %1"
-msgstr "Tidak dapat menulis ke fail %s."
-
-#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:739
-#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:803
-#, fuzzy, kde-format
-msgid "Cannot open file %1 : %2"
-msgstr "tidak dapat membuka fail tetapan `%s': %s"
-
-#: transfer-plugins/bittorrent/libbtcore/interfaces/trackerinterface.cpp:58
-msgid "OK"
-msgstr "OK"
-
-#: transfer-plugins/bittorrent/libbtcore/interfaces/trackerinterface.cpp:59
-msgid "Announcing"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/interfaces/trackerinterface.cpp:60
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:83
-#, fuzzy, kde-format
-msgid "Error: %1"
-msgstr "Kepada"
-
-#: transfer-plugins/bittorrent/libbtcore/migrate/migrate.cpp:45
-#, fuzzy, kde-format
-msgid "The directory %1 does not exist"
-msgstr "Tiada direktori %s tertentu (%s)."
-
-#: transfer-plugins/bittorrent/libbtcore/tracker/httpannouncejob.cpp:119
-msgid "Redirect without a redirect location"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/tracker/udptracker.cpp:299
-#: transfer-plugins/bittorrent/libbtcore/tracker/udptracker.cpp:309
-#: transfer-plugins/bittorrent/libbtcore/tracker/httptracker.cpp:559
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/tracker/udptracker.cpp:331
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/tracker/httptracker.cpp:282
-#: transfer-plugins/bittorrent/libbtcore/tracker/httptracker.cpp:302
-#: transfer-plugins/bittorrent/libbtcore/tracker/httptracker.cpp:342
-#: transfer-plugins/bittorrent/libbtcore/tracker/httptracker.cpp:461
-msgid "Invalid response from tracker"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/tracker/httptracker.cpp:295
-msgid "Invalid data from tracker"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/tracker/httptracker.cpp:478
-msgid "Invalid tracker URL"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/tracker/udptrackersocket.cpp:66
-#, kde-format
-msgid "Cannot bind to udp port %1 or the 10 following ports."
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/peer/peerid.cpp:203
-msgid "Unknown client"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:468
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:497
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
-"is probably corrupt or is not a valid torrent file."
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:507
-#, kde-format
-msgid "Unable to create %1 : %2"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:522
-#, kde-format
-msgid ""
-"You are already downloading this torrent %1, the list of trackers of both "
-"torrents has been merged."
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:526
-#, kde-format
-msgid "You are already downloading the torrent %1"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:69
-#, fuzzy
-msgid "Not started"
-msgstr " item dipadam"
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:73
-msgid "Seeding completed"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:75
-#, fuzzy
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Jadual Program"
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:77
-#, fuzzy
-msgid "Downloading"
-msgstr "Muatturun Dipilih"
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:81
-#, fuzzy
-#| msgid "Stopped"
-msgid "Stopped"
-msgstr "Dihentikan"
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:85
-msgid "Allocating diskspace"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:87
-#, fuzzy
-msgid "Queued for seeding"
-msgstr "Servis Giliran"
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:87
-#, fuzzy
-msgid "Queued for downloading"
-msgstr "Numbor peranti"
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:89
-msgid "Checking data"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentstats.cpp:91
-msgid "Stopped. No space left on device."
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcreator.cpp:124
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcreator.cpp:259
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcreator.cpp:297
-#, fuzzy, kde-format
-msgid "Cannot open file %1: %2"
-msgstr "tidak dapat membuka fail tetapan `%s': %s"
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcreator.cpp:359
-#, fuzzy, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Tidak dapat membaca fail %s."
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:83
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:154
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:182
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:189
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:197
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:201
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:222
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:293
-msgid "Corrupted torrent."
-msgstr "Hasilkan fax"
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:145
-#, kde-format
-msgid " Unable to open torrent file %1 : %2"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:275
-msgid "Parse Error"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/datachecker/singledatachecker.cpp:49
-#, fuzzy, kde-format
-msgid "Cannot open file : %1 : %2"
-msgstr "tidak dapat membuka fail tetapan `%s': %s"
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:37
-#: transfer-plugins/bittorrent/libbtcore/download/webseed.cpp:49
-#: transfer-plugins/bittorrent/libbtcore/download/webseed.cpp:92
-#, fuzzy
-msgid "Not connected"
-msgstr "_Sambungan tempatan"
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:103
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:112
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:125
-#: transfer-plugins/bittorrent/libbtcore/download/webseed.cpp:319
-#, fuzzy
-msgid "Connection closed"
-msgstr "Jenis perhubungan tidak diketahui"
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:132
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:149
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:213
-#, fuzzy
-msgid "Connected"
-msgstr "_Sambungan tempatan"
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:155
-msgid "Error: Failed to connect to webseed"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:220
-#, fuzzy
-msgid "Connecting"
-msgstr "Perhubungan"
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:231
-msgid "Failed to connect to webseed"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:238
-msgid "Failed to resolve hostname of webseed"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:318
-msgid "Error: failed to connect, server not responding"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:327
-msgid "Error: request timed out"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:391
-msgid "Redirected without a new location."
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/download/chunkdownload.cpp:391
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] ""
-msgstr[1] ""
-
-#: transfer-plugins/bittorrent/libbtcore/download/webseed.cpp:301
-#: transfer-plugins/bittorrent/libbtcore/download/webseed.cpp:515
-#, fuzzy
-msgid "Not in use"
-msgstr "Pautan Pelayan"
-
-#: transfer-plugins/bittorrent/libbtcore/util/file.cpp:83
-#, fuzzy, kde-format
-msgid "Cannot write to %1 : %2"
-msgstr "Tidak dapat menulis ke fail %s."
-
-#: transfer-plugins/bittorrent/libbtcore/util/file.cpp:97
-#, fuzzy, kde-format
-msgid "Cannot read from %1"
-msgstr "Dari Fail Tempatan"
-
-#: transfer-plugins/bittorrent/libbtcore/util/log.cpp:115
-#, fuzzy, kde-format
-msgid "Cannot open log file %1 : %2"
-msgstr "tidak dapat membuka fail tetapan `%s': %s"
-
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:88
-#, fuzzy, kde-format
-msgid "Cannot create directory %1"
-msgstr "Tidak dapat membaca fail %s."
-
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:129
-#, kde-format
-msgid "Cannot symlink %1 to %2: %3"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:146
-#, kde-format
-msgid "Cannot move %1 to %2: %3"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:162
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:178
-#, kde-format
-msgid "Cannot copy %1 to %2: %3"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:239
-#, kde-format
-msgid "Cannot delete %1: %2"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:256
-#, kde-format
-msgid "Cannot create %1: %2"
-msgstr "Tidak dapat cipta %1: %2"
-
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:274
-#, kde-format
-msgid "Cannot calculate the filesize of %1: %2"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:290
-#, kde-format
-msgid "Cannot calculate the filesize : %1"
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:368
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:374
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:377
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:392
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:394
-#, fuzzy, kde-format
-msgid "Cannot expand file: %1"
-msgstr "Tidak dapat membaca fail %s."
-
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:427
-#, fuzzy, kde-format
-msgid "Cannot seek in file : %1"
-msgstr "tidak dapat membuka fail tetapan `%s': %s"
-
-#: transfer-plugins/bittorrent/libbtcore/util/functions.cpp:274
-#, kde-format
-msgid "1 day "
-msgid_plural "%1 days "
-msgstr[0] ""
-msgstr[1] ""
-
-#: transfer-plugins/bittorrent/libbtcore/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Umum"
-
-#: transfer-plugins/bittorrent/libbtcore/util/logsystemmanager.cpp:34
-#, fuzzy
-msgid "Connections"
-msgstr "Perhubungan"
-
-#: transfer-plugins/bittorrent/libbtcore/util/logsystemmanager.cpp:35
-#, fuzzy
-msgid "Tracker"
-msgstr "Pemindahan"
-
-#: transfer-plugins/bittorrent/libbtcore/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr ""
 
 #: ui/metalinkcreator/dragdlg.cpp:67
 #, fuzzy
@@ -4742,6 +4280,148 @@ msgstr ""
 #: rc.cpp:989
 msgid "List of whether the script is enabled"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Cannot expand file %1 : %2"
+#~ msgstr "Tidak dapat membaca fail %s."
+
+#, fuzzy
+#~ msgid "Failed to seek file %1 : %2"
+#~ msgstr "Tidak dapat membaca fail %s."
+
+#, fuzzy
+#~ msgid "Error reading from %1"
+#~ msgstr "Ralat membaca fail keutamaan."
+
+#, fuzzy
+#~ msgid "Failed to write to file %1 : %2"
+#~ msgstr "Tidak dapat menulis ke fail %s."
+
+#, fuzzy
+#~ msgid "Cannot open index file %1 : %2"
+#~ msgstr "tidak dapat membuka fail tetapan `%s': %s"
+
+#, fuzzy
+#~ msgid "Cannot create file %1 : %2"
+#~ msgstr "Tidak dapat membaca fail %s."
+
+#, fuzzy
+#~ msgid "Failed to write last chunk to DND file : %1"
+#~ msgstr "Tidak dapat menulis ke fail %s."
+
+#, fuzzy
+#~ msgid "Cannot open file %1 : %2"
+#~ msgstr "tidak dapat membuka fail tetapan `%s': %s"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#, fuzzy
+#~ msgid "Error: %1"
+#~ msgstr "Kepada"
+
+#, fuzzy
+#~ msgid "The directory %1 does not exist"
+#~ msgstr "Tiada direktori %s tertentu (%s)."
+
+#, fuzzy
+#~ msgid "Not started"
+#~ msgstr " item dipadam"
+
+#, fuzzy
+#~ msgctxt "Status of a torrent file"
+#~ msgid "Seeding"
+#~ msgstr "Jadual Program"
+
+#, fuzzy
+#~ msgid "Downloading"
+#~ msgstr "Muatturun Dipilih"
+
+#, fuzzy
+#~| msgid "Stopped"
+#~ msgid "Stopped"
+#~ msgstr "Dihentikan"
+
+#, fuzzy
+#~ msgid "Queued for seeding"
+#~ msgstr "Servis Giliran"
+
+#, fuzzy
+#~ msgid "Queued for downloading"
+#~ msgstr "Numbor peranti"
+
+#, fuzzy
+#~ msgid "Cannot open file %1: %2"
+#~ msgstr "tidak dapat membuka fail tetapan `%s': %s"
+
+#, fuzzy
+#~ msgid "Cannot create index file: %1"
+#~ msgstr "Tidak dapat membaca fail %s."
+
+#~ msgid "Corrupted torrent."
+#~ msgstr "Hasilkan fax"
+
+#, fuzzy
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "tidak dapat membuka fail tetapan `%s': %s"
+
+#, fuzzy
+#~ msgid "Not connected"
+#~ msgstr "_Sambungan tempatan"
+
+#, fuzzy
+#~ msgid "Connection closed"
+#~ msgstr "Jenis perhubungan tidak diketahui"
+
+#, fuzzy
+#~ msgid "Connected"
+#~ msgstr "_Sambungan tempatan"
+
+#, fuzzy
+#~ msgid "Connecting"
+#~ msgstr "Perhubungan"
+
+#, fuzzy
+#~ msgid "Not in use"
+#~ msgstr "Pautan Pelayan"
+
+#, fuzzy
+#~ msgid "Cannot write to %1 : %2"
+#~ msgstr "Tidak dapat menulis ke fail %s."
+
+#, fuzzy
+#~ msgid "Cannot read from %1"
+#~ msgstr "Dari Fail Tempatan"
+
+#, fuzzy
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "tidak dapat membuka fail tetapan `%s': %s"
+
+#, fuzzy
+#~ msgid "Cannot create directory %1"
+#~ msgstr "Tidak dapat membaca fail %s."
+
+#~ msgid "Cannot create %1: %2"
+#~ msgstr "Tidak dapat cipta %1: %2"
+
+#, fuzzy
+#~ msgid "Cannot expand file: %1"
+#~ msgstr "Tidak dapat membaca fail %s."
+
+#, fuzzy
+#~ msgid "Cannot seek in file : %1"
+#~ msgstr "tidak dapat membuka fail tetapan `%s': %s"
+
+#~ msgid "General"
+#~ msgstr "Umum"
+
+#, fuzzy
+#~ msgid "Connections"
+#~ msgstr "Perhubungan"
+
+#, fuzzy
+#~ msgid "Tracker"
+#~ msgstr "Pemindahan"
 
 #, fuzzy
 #~| msgid "Group name already in use"
