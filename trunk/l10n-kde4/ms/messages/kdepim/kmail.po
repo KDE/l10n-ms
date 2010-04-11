@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-10 04:42+0200\n"
+"POT-Creation-Date: 2010-04-11 05:14+0200\n"
 "PO-Revision-Date: 2005-11-23 18:09+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -328,7 +328,7 @@ msgstr "Dihapuskan"
 
 #: kmfilterdlg.cpp:771 collectiongeneralpage.cpp:146
 #: managesievescriptsdialog.cpp:366 attachmentcontroller.cpp:606
-#: kmcomposewin.cpp:2914
+#: kmcomposewin.cpp:2915
 msgid "unnamed"
 msgstr "tak dinamakan"
 
@@ -1097,6 +1097,16 @@ msgstr "Pengalihan mesej lama dari folder  %1 ke folder %2 telah dibatalkan."
 msgid "There is nothing to undo."
 msgstr "Tiada apa-apa hendak dibatalkan."
 
+#: kmmainwin.cpp:57
+msgid "New &Window"
+msgstr "&Tetingkap Baru"
+
+#: kmmainwin.cpp:205
+#, fuzzy
+#| msgid "Subscription..."
+msgid "Starting..."
+msgstr "Langganan..."
+
 #. i18n: file: tips:2
 #. i18n: ectx: @info:tipoftheday
 #: tips.cpp:3
@@ -1234,16 +1244,6 @@ msgstr ""
 "<em>Message-&gt;Jawab Tanpa Petikan</em>.</p>\n"
 "<p align=\"right\"><em>disumbangan oleh David F. Newman</em></p>\n"
 
-#: kmmainwin.cpp:57
-msgid "New &Window"
-msgstr "&Tetingkap Baru"
-
-#: kmmainwin.cpp:205
-#, fuzzy
-#| msgid "Subscription..."
-msgid "Starting..."
-msgstr "Langganan..."
-
 #: kmsearchpattern.h:249
 #, fuzzy
 #| msgid "Important"
@@ -1365,22 +1365,13 @@ msgstr ""
 msgid "Please select a folder"
 msgstr "<select a folder>"
 
-#: util.cpp:69
-#, kde-format
-msgid "Distribution list \"%1\" is empty, it cannot be used."
-msgstr ""
-
-#: util.cpp:70 util.cpp:79 identitydialog.cpp:536
-msgid "Invalid Email Address"
-msgstr "Alamat E-mel Tidak Sah"
-
-#: util.cpp:182
+#: util.cpp:154
 #, fuzzy
 #| msgid "Could not start certificate manager. Please check your installation."
 msgid "Could not start the account wizard. Please check your installation."
 msgstr "Tidak dapat memulakan pengurus sijil. Semak pemasangan anda."
 
-#: util.cpp:184
+#: util.cpp:156
 #, fuzzy
 #| msgid "Unable to create account"
 msgid "Unable to start account wizard"
@@ -1713,7 +1704,7 @@ msgstr ""
 msgid "KMail is currently in offline mode. How do you want to proceed?"
 msgstr ""
 
-#: kmkernel.cpp:887 kmcomposewin.cpp:3100
+#: kmkernel.cpp:887 kmcomposewin.cpp:3101
 msgid "Online/Offline"
 msgstr ""
 
@@ -2048,12 +2039,12 @@ msgstr ""
 "Butang ini membuka dialog berasingan yang anda boleh pilih penerima daripada "
 "keseluruhan alamat yang ada. "
 
-#: redirectdialog.cpp:87 kmcomposewin.cpp:3369
+#: redirectdialog.cpp:87 kmcomposewin.cpp:3392
 msgid "&Send Now"
 msgstr "&Hantar Sekarang"
 
-#: redirectdialog.cpp:88 kmcomposewin.cpp:1133 kmcomposewin.cpp:1142
-#: kmcomposewin.cpp:3370
+#: redirectdialog.cpp:88 kmcomposewin.cpp:1134 kmcomposewin.cpp:1143
+#: kmcomposewin.cpp:3393
 msgid "Send &Later"
 msgstr "Hantar &Kemudian"
 
@@ -2064,6 +2055,16 @@ msgstr "Anda tidak boleh menghantar mesej tanpa alamat."
 #: redirectdialog.cpp:123
 msgid "Empty Redirection Address"
 msgstr "Kosongkan Alamat Penghantaran Baru"
+
+#: addressvalidationjob.cpp:288
+#, kde-format
+msgid "Distribution list \"%1\" is empty, it cannot be used."
+msgstr ""
+
+#: addressvalidationjob.cpp:290 addressvalidationjob.cpp:299
+#: identitydialog.cpp:536
+msgid "Invalid Email Address"
+msgstr "Alamat E-mel Tidak Sah"
 
 #: rulewidgethandlermanager.cpp:406 rulewidgethandlermanager.cpp:726
 #: rulewidgethandlermanager.cpp:1233
@@ -6384,7 +6385,7 @@ msgstr ""
 msgid "Send Queued Messages Via"
 msgstr "Hantar Mesej Baris Gilir Melalui"
 
-#: kmmainwidget.cpp:3006 kmcomposewin.cpp:1201
+#: kmmainwidget.cpp:3006 kmcomposewin.cpp:1202
 msgid "&Address Book"
 msgstr "Buku &Alamat"
 
@@ -7023,7 +7024,7 @@ msgstr "Lampirkan Kekunci &Umum"
 msgid "Attach &My Public Key"
 msgstr "Lampirkan Kekunci Umum &Saya"
 
-#: attachmentcontroller.cpp:404 kmcomposewin.cpp:1993
+#: attachmentcontroller.cpp:404 kmcomposewin.cpp:1994
 msgid "&Attach File..."
 msgstr "&Lampirkan Fail..."
 
@@ -8538,7 +8539,7 @@ msgstr "Tandatangan"
 msgid "Picture"
 msgstr "&Gambar"
 
-#: identitydialog.cpp:561
+#: identitydialog.cpp:571
 #, kde-format
 msgid ""
 "One of the configured OpenPGP signing keys does not contain any user ID with "
@@ -8552,7 +8553,7 @@ msgstr ""
 "Ini mungkin menyebabkan mesej amaran kepada penerima semasa cuba mengesahkan "
 "tandatangan yang dibuat menggunakan konfigurasi ini."
 
-#: identitydialog.cpp:569
+#: identitydialog.cpp:579
 #, kde-format
 msgid ""
 "One of the configured OpenPGP encryption keys does not contain any user ID "
@@ -8562,7 +8563,7 @@ msgstr ""
 "sebarang ID pengguna dengan alamat e-mel yang dikonfigurasi bagi identiti "
 "ini (%1)."
 
-#: identitydialog.cpp:575
+#: identitydialog.cpp:585
 #, kde-format
 msgid ""
 "One of the configured S/MIME signing certificates does not contain the "
@@ -8575,7 +8576,7 @@ msgstr ""
 "Ini mungkin menyebabkan mesej amaran di pihak penerima semasa cuba "
 "mengesahkan tandatangan yang dibuat menggunakan konfigurasi ini."
 
-#: identitydialog.cpp:583
+#: identitydialog.cpp:593
 #, kde-format
 msgid ""
 "One of the configured S/MIME encryption certificates does not contain the "
@@ -8584,20 +8585,20 @@ msgstr ""
 "Salah satu sijil penyulitan S/MIME yang dikonfigurasi tidak mengandungi "
 "alamat e-mel yang dikonfigurasi dengan identiti ini (%1)."
 
-#: identitydialog.cpp:591
+#: identitydialog.cpp:601
 msgid "Email Address Not Found in Key/Certificates"
 msgstr "Alamat E-mel Tidak Ditemui Dalam Kekunci/Sijil"
 
-#: identitydialog.cpp:606
+#: identitydialog.cpp:616
 msgid "The signature file is not valid"
 msgstr "Fail tandatangan  tidak sah"
 
-#: identitydialog.cpp:626
+#: identitydialog.cpp:636
 #, kde-format
 msgid "Edit Identity \"%1\""
 msgstr "Edit Identiti \"%1\""
 
-#: identitydialog.cpp:656
+#: identitydialog.cpp:666
 #, kde-format
 msgid ""
 "The custom sent-mail folder for identity \"%1\" does not exist (anymore); "
@@ -8606,7 +8607,7 @@ msgstr ""
 "Folder mel hantaran langganan untuk identiti \"%1\" tidak wujud (lagi); oleh "
 "itu, folder mel hantaran piawai akan digunakan."
 
-#: identitydialog.cpp:668
+#: identitydialog.cpp:678
 #, kde-format
 msgid ""
 "The custom drafts folder for identity \"%1\" does not exist (anymore); "
@@ -8615,7 +8616,7 @@ msgstr ""
 "Folder draf langganan untuk identiti \"%1\" tidak wujud (lagi); oleh itu, "
 "folder draf piawai akan digunakan."
 
-#: identitydialog.cpp:680
+#: identitydialog.cpp:690
 #, fuzzy, kde-format
 msgid ""
 "The custom templates folder for identity \"%1\" does not exist (anymore); "
@@ -8895,116 +8896,116 @@ msgid ""
 "the filter will fallback to the default address book.</p>"
 msgstr ""
 
-#: kmcomposewin.cpp:222
+#: kmcomposewin.cpp:223
 #, fuzzy
 #| msgid "Remove Identity"
 msgid "Select an identity for this message"
 msgstr "Buang Identiti"
 
-#: kmcomposewin.cpp:225
+#: kmcomposewin.cpp:226
 msgid "Select the dictionary to use when spell-checking this message"
 msgstr ""
 
-#: kmcomposewin.cpp:229
+#: kmcomposewin.cpp:230
 msgid "Select the sent-mail folder where a copy of this message will be saved"
 msgstr ""
 
-#: kmcomposewin.cpp:236
+#: kmcomposewin.cpp:237
 msgid "Select the outgoing account to use for sending this message"
 msgstr ""
 
-#: kmcomposewin.cpp:238
+#: kmcomposewin.cpp:239
 msgid "Set the \"From:\" email address for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:240
+#: kmcomposewin.cpp:241
 msgid "Set the \"Reply-To:\" email address for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:251
+#: kmcomposewin.cpp:252
 #, fuzzy
 #| msgid "Set subject of message"
 msgid "Set a subject for this message"
 msgstr "Setkan subjek mesej"
 
-#: kmcomposewin.cpp:252
+#: kmcomposewin.cpp:253
 msgid "&Identity:"
 msgstr "&Identiti:"
 
-#: kmcomposewin.cpp:253
+#: kmcomposewin.cpp:254
 msgid "&Dictionary:"
 msgstr "&Kamus:"
 
-#: kmcomposewin.cpp:254
+#: kmcomposewin.cpp:255
 msgid "&Sent-Mail folder:"
 msgstr "Folder &Mel Hantaran"
 
-#: kmcomposewin.cpp:255
+#: kmcomposewin.cpp:256
 msgid "&Mail transport:"
 msgstr "Pengangkutan &Mel:"
 
-#: kmcomposewin.cpp:256
+#: kmcomposewin.cpp:257
 msgctxt "sender address field"
 msgid "&From:"
 msgstr "&Daripada:"
 
-#: kmcomposewin.cpp:257
+#: kmcomposewin.cpp:258
 msgid "&Reply to:"
 msgstr "&Jawab kepada:"
 
-#: kmcomposewin.cpp:258
+#: kmcomposewin.cpp:259
 #, fuzzy
 #| msgid "S&ubject:"
 msgctxt "@label:textbox Subject of email."
 msgid "S&ubject:"
 msgstr "S&ubjek:"
 
-#: kmcomposewin.cpp:259
+#: kmcomposewin.cpp:260
 #, fuzzy
 #| msgid "Sticky"
 msgctxt "@option:check Sticky identity."
 msgid "Sticky"
 msgstr "Melekit"
 
-#: kmcomposewin.cpp:261
+#: kmcomposewin.cpp:262
 msgid "Use the selected value as your identity for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:263
+#: kmcomposewin.cpp:264
 msgid "Use the selected value as your sent-mail folder for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:265
+#: kmcomposewin.cpp:266
 msgid "Use the selected value as your outgoing account for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:267
+#: kmcomposewin.cpp:268
 msgid "Use the selected value as your dictionary for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:350 kmcomposewin.cpp:2278 configuredialog.cpp:925
+#: kmcomposewin.cpp:351 kmcomposewin.cpp:2279 configuredialog.cpp:925
 msgid "Composer"
 msgstr "Penggubah"
 
-#: kmcomposewin.cpp:677
+#: kmcomposewin.cpp:678
 #, fuzzy
 #| msgid "Could not write the file %1."
 msgid "Could not write all data to file."
 msgstr "Tidak dapat menulis fail %1"
 
-#: kmcomposewin.cpp:681
+#: kmcomposewin.cpp:682
 #, fuzzy
 #| msgid "Could not write the file %1."
 msgid "Could not finalize the file."
 msgstr "Tidak dapat menulis fail %1"
 
-#: kmcomposewin.cpp:686
+#: kmcomposewin.cpp:687
 #, fuzzy
 #| msgid "Cannot open file:"
 msgid "Could not open file."
 msgstr "Tidak dapat membuka fail:"
 
-#: kmcomposewin.cpp:692
+#: kmcomposewin.cpp:693
 #, fuzzy, kde-format
 #| msgid ""
 #| "Autosaving the message as %1 failed.\n"
@@ -9017,242 +9018,242 @@ msgstr ""
 "Mengautosimpan mesej sebagai %1 gagal.\n"
 " Sebab:%2"
 
-#: kmcomposewin.cpp:698
+#: kmcomposewin.cpp:699
 #, fuzzy
 #| msgid "Autosaving Failed"
 msgid "Autosaving Message Failed"
 msgstr "Autosimpan Gagal"
 
-#: kmcomposewin.cpp:1123 kmcomposewin.cpp:1149
+#: kmcomposewin.cpp:1124 kmcomposewin.cpp:1150
 msgid "&Send Mail"
 msgstr "&Hantar Mel"
 
-#: kmcomposewin.cpp:1129 kmcomposewin.cpp:1154
+#: kmcomposewin.cpp:1130 kmcomposewin.cpp:1155
 msgid "&Send Mail Via"
 msgstr "&Hantar Mel Melalui"
 
-#: kmcomposewin.cpp:1130
+#: kmcomposewin.cpp:1131
 #, fuzzy
 msgid "Send"
 msgstr "&Hantar"
 
-#: kmcomposewin.cpp:1136 kmcomposewin.cpp:1146
+#: kmcomposewin.cpp:1137 kmcomposewin.cpp:1147
 msgid "Send &Later Via"
 msgstr "Hantar &Kemudian Melalui"
 
-#: kmcomposewin.cpp:1137
+#: kmcomposewin.cpp:1138
 #, fuzzy
 #| msgid "Queued"
 msgctxt "Queue the message for sending at a later date"
 msgid "Queue"
 msgstr "Dibaris gilir"
 
-#: kmcomposewin.cpp:1181
+#: kmcomposewin.cpp:1182
 #, fuzzy
 msgid "Save as &Draft"
 msgstr "&Simpan Sebagai Draf"
 
-#: kmcomposewin.cpp:1185
+#: kmcomposewin.cpp:1186
 #, fuzzy
 msgid "Save as &Template"
 msgstr "&Gantikan"
 
-#: kmcomposewin.cpp:1189
+#: kmcomposewin.cpp:1190
 msgid "&Insert File..."
 msgstr "&Sisipkan Fail..."
 
-#: kmcomposewin.cpp:1193
+#: kmcomposewin.cpp:1194
 msgid "&Insert File Recent"
 msgstr "&Sisipkan Fail Terkini"
 
-#: kmcomposewin.cpp:1204
+#: kmcomposewin.cpp:1205
 msgid "&New Composer"
 msgstr "Penggubah &Baru"
 
-#: kmcomposewin.cpp:1208
+#: kmcomposewin.cpp:1209
 msgid "New Main &Window"
 msgstr "&Tetingkap Utama Baru"
 
-#: kmcomposewin.cpp:1212
+#: kmcomposewin.cpp:1213
 msgid "Select &Recipients..."
 msgstr "Pilih &Penerima..."
 
-#: kmcomposewin.cpp:1216
+#: kmcomposewin.cpp:1217
 msgid "Save &Distribution List..."
 msgstr "Simpan Senarai &Agihan"
 
-#: kmcomposewin.cpp:1238
+#: kmcomposewin.cpp:1239
 msgid "Paste as Attac&hment"
 msgstr "Tampalkan sebagai Lampi&ran"
 
-#: kmcomposewin.cpp:1242
+#: kmcomposewin.cpp:1243
 msgid "Cl&ean Spaces"
 msgstr "Bers&ihkan Ruang"
 
-#: kmcomposewin.cpp:1246
+#: kmcomposewin.cpp:1247
 msgid "Use Fi&xed Font"
 msgstr "Guna Fon Yang Di&tetapkan"
 
-#: kmcomposewin.cpp:1253
+#: kmcomposewin.cpp:1254
 #, fuzzy
 #| msgid "&Urgent"
 msgctxt "@action:inmenu Mark the email as urgent."
 msgid "&Urgent"
 msgstr "&Segera"
 
-#: kmcomposewin.cpp:1255
+#: kmcomposewin.cpp:1256
 msgid "&Request Disposition Notification"
 msgstr "&Minta Pemberitahuan Penyusunan"
 
-#: kmcomposewin.cpp:1261
+#: kmcomposewin.cpp:1262
 msgid "&Wordwrap"
 msgstr "&Bungkus perkataan"
 
-#: kmcomposewin.cpp:1266
+#: kmcomposewin.cpp:1267
 msgid "&Snippets"
 msgstr ""
 
-#: kmcomposewin.cpp:1273
+#: kmcomposewin.cpp:1274
 msgid "&Automatic Spellchecking"
 msgstr "Semak Eja  &Automatik"
 
-#: kmcomposewin.cpp:1290
+#: kmcomposewin.cpp:1291
 msgid "Formatting (HTML)"
 msgstr "Memformat (HTML)"
 
-#: kmcomposewin.cpp:1291
+#: kmcomposewin.cpp:1292
 #, fuzzy
 #| msgid "Use HTML"
 msgid "HTML"
 msgstr "Gunakan HTML"
 
-#: kmcomposewin.cpp:1295
+#: kmcomposewin.cpp:1296
 msgid "&All Fields"
 msgstr "&Semua Medan"
 
-#: kmcomposewin.cpp:1298
+#: kmcomposewin.cpp:1299
 msgid "&Identity"
 msgstr "&Identiti"
 
-#: kmcomposewin.cpp:1301
+#: kmcomposewin.cpp:1302
 msgid "&Dictionary"
 msgstr "&Kamus"
 
-#: kmcomposewin.cpp:1304
+#: kmcomposewin.cpp:1305
 msgid "&Sent-Mail Folder"
 msgstr "Folder Mel &Hantaran"
 
-#: kmcomposewin.cpp:1307
+#: kmcomposewin.cpp:1308
 msgid "&Mail Transport"
 msgstr "Pengangkutan &Mel "
 
-#: kmcomposewin.cpp:1310
+#: kmcomposewin.cpp:1311
 msgid "&From"
 msgstr "&Daripada"
 
-#: kmcomposewin.cpp:1313
+#: kmcomposewin.cpp:1314
 msgid "&Reply To"
 msgstr "&Jawab Kepada"
 
-#: kmcomposewin.cpp:1317
+#: kmcomposewin.cpp:1318
 #, fuzzy
 #| msgid "S&ubject"
 msgctxt "@action:inmenu Show the subject in the composer window."
 msgid "S&ubject"
 msgstr "S&ubjek"
 
-#: kmcomposewin.cpp:1322
+#: kmcomposewin.cpp:1323
 msgid "Append S&ignature"
 msgstr "Tambah T&andatangan"
 
-#: kmcomposewin.cpp:1325
+#: kmcomposewin.cpp:1326
 #, fuzzy
 #| msgid "Append S&ignature"
 msgid "Pr&epend Signature"
 msgstr "Tambah T&andatangan"
 
-#: kmcomposewin.cpp:1328
+#: kmcomposewin.cpp:1329
 msgid "Insert Signature At C&ursor Position"
 msgstr ""
 
-#: kmcomposewin.cpp:1346
+#: kmcomposewin.cpp:1347
 msgid "&Spellchecker..."
 msgstr "&Penyemak Ejaan..."
 
-#: kmcomposewin.cpp:1347
+#: kmcomposewin.cpp:1348
 msgid "Spellchecker"
 msgstr "Penyemak eja"
 
-#: kmcomposewin.cpp:1352 kmcomposewin.cpp:1354
+#: kmcomposewin.cpp:1353 kmcomposewin.cpp:1355
 #, fuzzy
 msgid "Encrypt Message with Chiasmus..."
 msgstr "Pilih Mesej yang ada Fokus"
 
-#: kmcomposewin.cpp:1362
+#: kmcomposewin.cpp:1363
 msgid "&Encrypt Message"
 msgstr "&Sulitkan Mesej"
 
-#: kmcomposewin.cpp:1363
+#: kmcomposewin.cpp:1364
 msgid "Encrypt"
 msgstr "Sulitkan"
 
-#: kmcomposewin.cpp:1365
+#: kmcomposewin.cpp:1366
 msgid "&Sign Message"
 msgstr "&Tandatangan Mesej"
 
-#: kmcomposewin.cpp:1366
+#: kmcomposewin.cpp:1367
 msgid "Sign"
 msgstr "Tandatangan"
 
-#: kmcomposewin.cpp:1404
+#: kmcomposewin.cpp:1405
 msgid "&Cryptographic Message Format"
 msgstr "Format Mesej &Kriptografi "
 
-#: kmcomposewin.cpp:1410
+#: kmcomposewin.cpp:1411
 msgid "Select a cryptographic format for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:1413
+#: kmcomposewin.cpp:1414
 msgid "Reset Font Settings"
 msgstr "Set Semula Seting Fon"
 
-#: kmcomposewin.cpp:1414
+#: kmcomposewin.cpp:1415
 #, fuzzy
 msgid "Reset Font"
 msgstr "Pilih Folder"
 
-#: kmcomposewin.cpp:1436
+#: kmcomposewin.cpp:1437
 #, fuzzy
 msgid "Configure KMail..."
 msgstr "&Konfigur KMail..."
 
-#: kmcomposewin.cpp:1446
+#: kmcomposewin.cpp:1447
 #, fuzzy, kde-format
 msgid " Spellcheck: %1 "
 msgstr "Penyemak eja"
 
-#: kmcomposewin.cpp:1447 kmcomposewin.cpp:3857
+#: kmcomposewin.cpp:1448 kmcomposewin.cpp:3880
 #, kde-format
 msgid " Column: %1 "
 msgstr "Lajur: %1 "
 
-#: kmcomposewin.cpp:1449 kmcomposewin.cpp:3855
+#: kmcomposewin.cpp:1450 kmcomposewin.cpp:3878
 #, fuzzy, kde-format
 #| msgid " Line: %1 "
 msgctxt "Shows the linenumber of the cursor position."
 msgid " Line: %1 "
 msgstr "Baris: %1 "
 
-#: kmcomposewin.cpp:1915
+#: kmcomposewin.cpp:1916
 #, fuzzy
 msgid "Re&save as Template"
 msgstr "&Gantikan"
 
-#: kmcomposewin.cpp:1916
+#: kmcomposewin.cpp:1917
 msgid "&Save as Draft"
 msgstr "&Simpan Sebagai Draf"
 
-#: kmcomposewin.cpp:1918
+#: kmcomposewin.cpp:1919
 #, fuzzy
 msgid ""
 "Resave this message in the Templates folder. It can then be used at a later "
@@ -9261,7 +9262,7 @@ msgstr ""
 "Simpan mesej ini dalam folder draf supaya ia boleh diedit dan dihantar "
 "kemudian."
 
-#: kmcomposewin.cpp:1920
+#: kmcomposewin.cpp:1921
 msgid ""
 "Save this message in the Drafts folder. It can then be edited and sent at a "
 "later time."
@@ -9269,15 +9270,15 @@ msgstr ""
 "Simpan mesej ini dalam folder draf supaya ia boleh diedit dan dihantar "
 "kemudian."
 
-#: kmcomposewin.cpp:1924
+#: kmcomposewin.cpp:1925
 msgid "Do you want to save the message for later or discard it?"
 msgstr "Anda ingin simpan mesej untuk digunakan kemudian atau buang mesej?"
 
-#: kmcomposewin.cpp:1925
+#: kmcomposewin.cpp:1926
 msgid "Close Composer"
 msgstr "Tutup Penggubah"
 
-#: kmcomposewin.cpp:1989
+#: kmcomposewin.cpp:1990
 msgid ""
 "The message you have composed seems to refer to an attached file but you "
 "have not attached anything.\n"
@@ -9287,15 +9288,15 @@ msgstr ""
 "tidak melampirkan apa-apa.\n"
 "Anda ingin melampirkan fail ke dalam mesej?"
 
-#: kmcomposewin.cpp:1992
+#: kmcomposewin.cpp:1993
 msgid "File Attachment Reminder"
 msgstr "Peringatan Lampiran Fail"
 
-#: kmcomposewin.cpp:1994 kmcomposewin.cpp:3390
+#: kmcomposewin.cpp:1995 kmcomposewin.cpp:3413
 msgid "&Send as Is"
 msgstr "&Hantar Seperti Adanya"
 
-#: kmcomposewin.cpp:2273
+#: kmcomposewin.cpp:2274
 #, kde-format
 msgid ""
 "Error composing message:\n"
@@ -9305,7 +9306,7 @@ msgid ""
 "Please report this bug."
 msgstr ""
 
-#: kmcomposewin.cpp:2275
+#: kmcomposewin.cpp:2276
 #, fuzzy, kde-format
 #| msgid "Error while copying messages."
 msgid ""
@@ -9314,17 +9315,17 @@ msgid ""
 "%1"
 msgstr "Ralat semasa menyalin mesej."
 
-#: kmcomposewin.cpp:2773
+#: kmcomposewin.cpp:2774
 #, fuzzy
 #| msgid "Paste as Attac&hment"
 msgid "Insert clipboard text as attachment"
 msgstr "Tampalkan sebagai Lampi&ran"
 
-#: kmcomposewin.cpp:2774 kmcomposereditor.cpp:190
+#: kmcomposewin.cpp:2775 kmcomposereditor.cpp:190
 msgid "Name of the attachment:"
 msgstr "Nama lampiran"
 
-#: kmcomposewin.cpp:2942
+#: kmcomposewin.cpp:2943
 msgid ""
 "<qt><p>You have requested that messages be encrypted to yourself, but the "
 "currently selected identity does not define an (OpenPGP or S/MIME) "
@@ -9336,11 +9337,11 @@ msgstr ""
 "yang hendak digunakan untuk tujuan tersebut (OpenPGP atau S/MIME) .</"
 "p><p>Pilih kekunci yang hendak digunakan dalam konfigurasi identiti.</p></qt>"
 
-#: kmcomposewin.cpp:2949
+#: kmcomposewin.cpp:2950
 msgid "Undefined Encryption Key"
 msgstr "Kekunci Penyulitan Tak Ditakrif"
 
-#: kmcomposewin.cpp:2993
+#: kmcomposewin.cpp:2994
 msgid ""
 "<qt><p>In order to be able to sign this message you first have to define the "
 "(OpenPGP or S/MIME) signing key to use.</p><p>Please select the key to use "
@@ -9350,17 +9351,17 @@ msgstr ""
 "digunakan terlebih dahulu supaya boleh menandatangani mesej ini.</p><p>Pilih "
 "kekunci yang hendak digunakan dalam konfigurasi identiti.</p></qt>"
 
-#: kmcomposewin.cpp:3000
+#: kmcomposewin.cpp:3001
 msgid "Undefined Signing Key"
 msgstr "Kekunci Tandatangan Tak Ditakrif"
 
-#: kmcomposewin.cpp:3098
+#: kmcomposewin.cpp:3099
 msgid ""
 "KMail is currently in offline mode. Your messages will be kept in the outbox "
 "until you go online."
 msgstr ""
 
-#: kmcomposewin.cpp:3115
+#: kmcomposewin.cpp:3116
 msgid ""
 "You must enter your email address in the From: field. You should also set "
 "your email address for all identities, so that you do not have to enter it "
@@ -9370,7 +9371,7 @@ msgstr ""
 "mengeset alamat e-mel untuk semua identiti supaya anda tidak perlu "
 "memasukkannya di setiap mesej"
 
-#: kmcomposewin.cpp:3124
+#: kmcomposewin.cpp:3125
 msgid ""
 "You must specify at least one receiver,either in the To: field or as CC or "
 "as BCC."
@@ -9378,57 +9379,57 @@ msgstr ""
 "Anda mesti nyatakan sekurang-kurangnya satu penerima samada di dalam medan "
 "Kepada: atau sebagai Sk atau sebagai SRk"
 
-#: kmcomposewin.cpp:3130
+#: kmcomposewin.cpp:3131
 #, fuzzy
 msgid "To: field is empty. Send message anyway?"
 msgstr "Anda tidak menyatakan  subjek. Hantarkan jua mesej?"
 
-#: kmcomposewin.cpp:3132
+#: kmcomposewin.cpp:3133
 #, fuzzy
 msgid "No To: specified"
 msgstr "Tiada nama dinyatakan"
 
-#: kmcomposewin.cpp:3159
+#: kmcomposewin.cpp:3147
 msgid "You did not specify a subject. Send message anyway?"
 msgstr "Anda tidak menyatakan  subjek. Hantarkan jua mesej?"
 
-#: kmcomposewin.cpp:3161
+#: kmcomposewin.cpp:3149
 msgid "No Subject Specified"
 msgstr "Tiada Subjek Dinyatakan"
 
-#: kmcomposewin.cpp:3162
+#: kmcomposewin.cpp:3150
 msgid "S&end as Is"
 msgstr "H&antar seperti adanya"
 
-#: kmcomposewin.cpp:3163
+#: kmcomposewin.cpp:3151
 msgid "&Specify the Subject"
 msgstr "&Nyatakan Subjek"
 
-#: kmcomposewin.cpp:3200
+#: kmcomposewin.cpp:3223
 msgid "&Keep markup, do not sign/encrypt"
 msgstr "&Kekalkan tanda, jangan tandatangan/sulitkan"
 
-#: kmcomposewin.cpp:3201
+#: kmcomposewin.cpp:3224
 msgid "&Keep markup, do not encrypt"
 msgstr "&Kekalkan tanda, jangan sulitkan"
 
-#: kmcomposewin.cpp:3202
+#: kmcomposewin.cpp:3225
 msgid "&Keep markup, do not sign"
 msgstr "&Kekalkan tanda, jangan tandatangan"
 
-#: kmcomposewin.cpp:3204
+#: kmcomposewin.cpp:3227
 msgid "Sign/Encrypt (delete markup)"
 msgstr "Tandatangan/sulitkan (hapuskan tanda)"
 
-#: kmcomposewin.cpp:3205
+#: kmcomposewin.cpp:3228
 msgid "Encrypt (delete markup)"
 msgstr "Sulitkan (hapuskan tanda)"
 
-#: kmcomposewin.cpp:3206
+#: kmcomposewin.cpp:3229
 msgid "Sign (delete markup)"
 msgstr "Tandatangan (hapuskan tanda)"
 
-#: kmcomposewin.cpp:3208
+#: kmcomposewin.cpp:3231
 msgid ""
 "<qt><p>Inline signing/encrypting of HTML messages is not possible;</p><p>do "
 "you want to delete your markup?</p></qt>"
@@ -9436,11 +9437,11 @@ msgstr ""
 "<qt><p>Penandatanganan/penyulitan baris dalam mesej HTML tidak boleh dibuat ;"
 "</p><p>Anda ingin hapuskan penandaan?</p></qt>"
 
-#: kmcomposewin.cpp:3210
+#: kmcomposewin.cpp:3233
 msgid "Sign/Encrypt Message?"
 msgstr "Tandatangan/Sulitkan Mesej?"
 
-#: kmcomposewin.cpp:3262
+#: kmcomposewin.cpp:3285
 #, fuzzy, kde-format
 msgid ""
 "The custom drafts or templates folder for identify \"%1\" does not exist "
@@ -9449,127 +9450,127 @@ msgstr ""
 "Folder draf langganan untuk identiti \"%1\" tidak wujud (lagi); oleh itu, "
 "folder draf piawai akan digunakan."
 
-#: kmcomposewin.cpp:3367
+#: kmcomposewin.cpp:3390
 msgid "About to send email..."
 msgstr "Akan menghantar e-mel..."
 
-#: kmcomposewin.cpp:3368
+#: kmcomposewin.cpp:3391
 msgid "Send Confirmation"
 msgstr "Hantar Pengesahan"
 
-#: kmcomposewin.cpp:3388
+#: kmcomposewin.cpp:3411
 #, kde-format
 msgid ""
 "You are trying to send the mail to more than %1 recipients. Send message "
 "anyway?"
 msgstr ""
 
-#: kmcomposewin.cpp:3389
+#: kmcomposewin.cpp:3412
 #, fuzzy
 #| msgid "No recipients"
 msgid "Too many recipients"
 msgstr "Tiada penerima"
 
-#: kmcomposewin.cpp:3391
+#: kmcomposewin.cpp:3414
 #, fuzzy
 #| msgid "Additional Recipients"
 msgid "&Edit Recipients"
 msgstr "Penerima Tambahan"
 
-#: kmcomposewin.cpp:3479
+#: kmcomposewin.cpp:3502
 msgid ""
 "Turning HTML mode off will cause the text to lose the formatting. Are you "
 "sure?"
 msgstr ""
 
-#: kmcomposewin.cpp:3481
+#: kmcomposewin.cpp:3504
 msgid "Lose the formatting?"
 msgstr ""
 
-#: kmcomposewin.cpp:3481
+#: kmcomposewin.cpp:3504
 #, fuzzy
 #| msgid "Login Information"
 msgid "Lose Formatting"
 msgstr "Maklumat Log Masuk"
 
-#: kmcomposewin.cpp:3535
+#: kmcomposewin.cpp:3558
 #, fuzzy
 msgid "Spellcheck: on"
 msgstr "Penyemak eja"
 
-#: kmcomposewin.cpp:3537
+#: kmcomposewin.cpp:3560
 #, fuzzy
 msgid "Spellcheck: off"
 msgstr "Penyemak eja"
 
-#: kmcomposewin.cpp:3903
+#: kmcomposewin.cpp:3926
 msgid ""
 "Please configure a Crypto Backend to use for Chiasmus encryption first.\n"
 "You can do this in the Crypto Backends tab of the configure dialog's "
 "Security page."
 msgstr ""
 
-#: kmcomposewin.cpp:3907
+#: kmcomposewin.cpp:3930
 msgid ""
 "It looks as though libkleopatra was compiled without Chiasmus support. You "
 "might want to recompile libkleopatra with --enable-chiasmus."
 msgstr ""
 
-#: kmcomposewin.cpp:3910
+#: kmcomposewin.cpp:3933
 msgid "No Chiasmus Backend Configured"
 msgstr ""
 
-#: kmcomposewin.cpp:3916
+#: kmcomposewin.cpp:3939
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
 msgstr ""
 
-#: kmcomposewin.cpp:3918 kmcomposewin.cpp:3923 kmcomposewin.cpp:3932
+#: kmcomposewin.cpp:3941 kmcomposewin.cpp:3946 kmcomposewin.cpp:3955
 msgid "Chiasmus Backend Error"
 msgstr ""
 
-#: kmcomposewin.cpp:3929
+#: kmcomposewin.cpp:3952
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
 msgstr ""
 
-#: kmcomposewin.cpp:3938
+#: kmcomposewin.cpp:3961
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
 msgstr ""
 
-#: kmcomposewin.cpp:3941
+#: kmcomposewin.cpp:3964
 #, fuzzy
 msgid "No Chiasmus Keys Found"
 msgstr "Tanda tangan tidak ditemui"
 
-#: kmcomposewin.cpp:3945
+#: kmcomposewin.cpp:3968
 #, fuzzy
 msgid "Chiasmus Encryption Key Selection"
 msgstr "Pilihan Kekunci Penyulitan"
 
-#: kmcomposewin.cpp:3974
+#: kmcomposewin.cpp:3997
 #, fuzzy
 #| msgid "Message was signed by %1."
 msgid "Message will be signed"
 msgstr "Mesej ditandatangani oleh %1."
 
-#: kmcomposewin.cpp:3975
+#: kmcomposewin.cpp:3998
 #, fuzzy
 #| msgid "Message List - Date Field"
 msgid "Message will not be signed"
 msgstr "Senarai Mesej - Medan Tarikh"
 
-#: kmcomposewin.cpp:3977
+#: kmcomposewin.cpp:4000
 #, fuzzy
 #| msgid "Store sent messages encry&pted"
 msgid "Message will be encrypted"
 msgstr "Stor mesej yang dihantar dalam bentuk &disulitkan"
 
-#: kmcomposewin.cpp:3978
+#: kmcomposewin.cpp:4001
 #, fuzzy
 #| msgid "Store sent messages encry&pted"
 msgid "Message will not be encrypted"
