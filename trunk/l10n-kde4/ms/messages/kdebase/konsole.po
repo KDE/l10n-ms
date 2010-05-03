@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-02 04:37+0200\n"
+"POT-Creation-Date: 2010-05-03 04:52+0200\n"
 "PO-Revision-Date: 2006-05-07 16:35+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -244,7 +244,7 @@ msgstr ""
 msgid "Copy Email Address"
 msgstr ""
 
-#: HistorySizeDialog.cpp:51 SessionController.cpp:527
+#: HistorySizeDialog.cpp:51 SessionController.cpp:501
 #, fuzzy
 msgid "Scrollback Options"
 msgstr "&Opsyen Tab"
@@ -591,45 +591,53 @@ msgstr ""
 msgid "Thanks to many others.\n"
 msgstr ""
 
-#: MainWindow.cpp:235
+#. i18n: file: ../desktop/konsoleui.rc:45
+#. i18n: ectx: Menu (new-tab)
+#: MainWindow.cpp:233 rc.cpp:882
 msgid "New &Tab"
 msgstr ""
 
-#: MainWindow.cpp:241
+#: MainWindow.cpp:238
+#, fuzzy
+#| msgid "Save Sessions &Profile..."
+msgid "&Default Profile"
+msgstr "Sim&pan &Profil Sesi"
+
+#: MainWindow.cpp:244
 msgid "New &Window"
 msgstr "&Tetingkap Baru"
 
-#: MainWindow.cpp:246
+#: MainWindow.cpp:249
 #, fuzzy
 #| msgid "Wor&d Connectors..."
 msgid "Remote Connection..."
 msgstr "Penyambung &Perkataan..."
 
-#: MainWindow.cpp:257
+#: MainWindow.cpp:260
 #, fuzzy
 msgid "&Bookmarks"
 msgstr "Cengkerang pada Tanda Laman"
 
-#: MainWindow.cpp:268
+#: MainWindow.cpp:271
 #, fuzzy
 msgid "Show Menu Bar"
 msgstr "Sembunyikan &Bar Menu"
 
-#: MainWindow.cpp:290 Part.cpp:116
+#: MainWindow.cpp:293 Part.cpp:116
 #, fuzzy
 #| msgid "Save Sessions &Profile..."
-msgid "Manage Profiles..."
+msgid "Configure Profiles..."
 msgstr "Sim&pan &Profil Sesi"
 
-#: MainWindow.cpp:363
+#: MainWindow.cpp:376
 msgid "You have multiple tabs in this window, are you sure you want to quit?"
 msgstr ""
 
-#: MainWindow.cpp:365 SessionController.cpp:633
+#: MainWindow.cpp:378 SessionController.cpp:608
 msgid "Confirm Close"
 msgstr ""
 
-#: MainWindow.cpp:367
+#: MainWindow.cpp:380
 #, fuzzy
 #| msgid "Close the current session"
 msgid "Close Current Tab"
@@ -1577,19 +1585,19 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "md_najmi@yahoo.com"
 
-#. i18n: file: ../desktop/sessionui.rc:14
+#. i18n: file: ../desktop/sessionui.rc:15
 #. i18n: ectx: Menu (edit-copy-input-to)
 #: rc.cpp:849
 msgid "Copy Input To"
 msgstr ""
 
-#. i18n: file: ../desktop/sessionui.rc:47
+#. i18n: file: ../desktop/sessionui.rc:43
 #. i18n: ectx: Menu (debug)
 #: rc.cpp:852
 msgid "Debug"
 msgstr ""
 
-#. i18n: file: ../desktop/sessionui.rc:65
+#. i18n: file: ../desktop/sessionui.rc:62
 #. i18n: ectx: Menu (change-profile)
 #. i18n: file: ../desktop/partui.rc:25
 #. i18n: ectx: Menu (change-profile)
@@ -1615,46 +1623,38 @@ msgstr "Jangan papar bar skrol"
 msgid "File"
 msgstr "Sa&iz"
 
-#. i18n: file: ../desktop/konsoleui.rc:15
+#. i18n: file: ../desktop/konsoleui.rc:14
 #. i18n: ectx: Menu (edit)
 #: rc.cpp:867
 #, fuzzy
 msgid "Edit"
 msgstr "&Edit..."
 
-#. i18n: file: ../desktop/konsoleui.rc:18
-#. i18n: ectx: Menu (history)
-#: rc.cpp:870
-#, fuzzy
-#| msgid "Do not display scrollbar"
-msgid "Scrollback"
-msgstr "Jangan papar bar skrol"
-
-#. i18n: file: ../desktop/konsoleui.rc:21
+#. i18n: file: ../desktop/konsoleui.rc:17
 #. i18n: ectx: Menu (view)
-#: rc.cpp:873
+#: rc.cpp:870
 #, fuzzy
 #| msgid "S&ize"
 msgid "View"
 msgstr "Sa&iz"
 
-#. i18n: file: ../desktop/konsoleui.rc:22
+#. i18n: file: ../desktop/konsoleui.rc:18
 #. i18n: ectx: Menu (view-split)
-#: rc.cpp:876
+#: rc.cpp:873
 #, fuzzy
 #| msgid "Shrink Font"
 msgid "Split View"
 msgstr "Kecilkan Fon"
 
-#. i18n: file: ../desktop/konsoleui.rc:40
+#. i18n: file: ../desktop/konsoleui.rc:33
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:879
+#: rc.cpp:876
 msgid "Settings"
 msgstr "Tetapan"
 
-#. i18n: file: ../desktop/konsoleui.rc:47
+#. i18n: file: ../desktop/konsoleui.rc:42
 #. i18n: ectx: Menu (help)
-#: rc.cpp:882
+#: rc.cpp:879
 msgid "Help"
 msgstr ""
 
@@ -1735,140 +1735,115 @@ msgstr ""
 msgid "Open File Manager"
 msgstr ""
 
-#: SessionController.cpp:408
-#, fuzzy
-msgid "&Copy"
-msgstr "A&tas"
-
-#: SessionController.cpp:412
-msgid "&Paste"
-msgstr ""
-
-#: SessionController.cpp:425
+#: SessionController.cpp:416
 msgid "Paste Selection"
 msgstr "Tepek Pilihan"
 
-#: SessionController.cpp:431
+#: SessionController.cpp:422
 #, fuzzy
 #| msgid "&Terminate Task"
 msgid "&Rename Tab..."
 msgstr "&Tamatkan Tugas"
 
-#: SessionController.cpp:438
+#: SessionController.cpp:429
 msgid "&All Tabs in Current Window"
 msgstr ""
 
-#: SessionController.cpp:445
+#: SessionController.cpp:436
 #, fuzzy
 #| msgid "Select &Tab Color..."
 msgid "&Select Tabs..."
 msgstr "Pilih Warna &Tab..."
 
-#: SessionController.cpp:452
+#: SessionController.cpp:443
 #, fuzzy
 #| msgid "N&one"
 msgid "&None"
 msgstr "&Tiada"
 
-#: SessionController.cpp:459
+#: SessionController.cpp:450
 #, fuzzy
 #| msgid "Clear Messages"
 msgid "Clear and Reset"
 msgstr "Buang Mesej"
 
-#: SessionController.cpp:464
+#: SessionController.cpp:455
 msgid "&ZModem Upload..."
 msgstr "Muat naik &ZModem ..."
 
-#: SessionController.cpp:470
+#: SessionController.cpp:461
 msgid "Monitor for &Activity"
 msgstr "Pe&rhatikan Aktiviti"
 
-#: SessionController.cpp:475
+#: SessionController.cpp:466
 msgid "Monitor for &Silence"
 msgstr "Per&hatikan Senyap"
 
-#: SessionController.cpp:481
+#: SessionController.cpp:472
 #, fuzzy
 #| msgid "&Encoding"
 msgid "Character Encoding"
 msgstr "P&enenkodan"
 
-#: SessionController.cpp:488
-msgid "Increase Text Size"
-msgstr ""
+#: SessionController.cpp:479
+msgid "Enlarge Font"
+msgstr "Besarkan Fon"
 
-#: SessionController.cpp:494
-msgid "Decrease Text Size"
-msgstr ""
-
-#: SessionController.cpp:500
+#: SessionController.cpp:482
 #, fuzzy
-#| msgid "Clear &History"
-msgid "Search Output..."
-msgstr "Kosong&kan Sejarah"
+#| msgid "&Shrink Font"
+msgid "Shrink Font"
+msgstr "&Kecilkan Fon"
 
-#: SessionController.cpp:509
+#: SessionController.cpp:498
 #, fuzzy
-#| msgid "Find"
-msgid "Find Next"
-msgstr "Cari"
-
-#: SessionController.cpp:516
-#, fuzzy
-#| msgid "Find Pre&vious"
-msgid "Find Previous"
-msgstr "Cari Sebe&lumnya"
-
-#: SessionController.cpp:522
-#, fuzzy
-msgid "Save Output..."
+msgid "Save Output As..."
 msgstr "Simpan Sejarah"
 
-#: SessionController.cpp:532
+#: SessionController.cpp:506
 #, fuzzy
 #| msgid "Clear Messages"
 msgid "Clear Scrollback and Reset"
 msgstr "Buang Mesej"
 
-#: SessionController.cpp:538
+#: SessionController.cpp:513
 msgid "Edit Current Profile..."
 msgstr ""
 
-#: SessionController.cpp:542
+#: SessionController.cpp:517
 #, fuzzy
 #| msgid "Save Sessions &Profile..."
 msgid "Change Profile"
 msgstr "Sim&pan &Profil Sesi"
 
-#: SessionController.cpp:583
+#: SessionController.cpp:558
 msgid "Rename Tab"
 msgstr ""
 
-#: SessionController.cpp:584
+#: SessionController.cpp:559
 msgid "Enter new tab text:"
 msgstr ""
 
-#: SessionController.cpp:627
+#: SessionController.cpp:602
 msgid ""
 "A program is currently running in this session.  Are you sure you want to "
 "close it?"
 msgstr ""
 
-#: SessionController.cpp:630
+#: SessionController.cpp:605
 #, kde-format
 msgid ""
 "The program '%1' is currently running in this session.  Are you sure you "
 "want to close it?"
 msgstr ""
 
-#: SessionController.cpp:1188
+#: SessionController.cpp:1163
 #, fuzzy
 #| msgid "&ZModem Upload..."
 msgid "Save ZModem Download to..."
 msgstr "Muat naik &ZModem ..."
 
-#: SessionController.cpp:1197
+#: SessionController.cpp:1172
 #, fuzzy
 #| msgid ""
 #| "<p>A ZModem file transfer attempt has been detected, but no suitable "
@@ -1883,7 +1858,7 @@ msgstr ""
 "yang sesuai ditemui dalam sistem.\n"
 "<p>Anda mungkin ingin memasang pakej 'rzsz' atau 'lrzsz'.\n"
 
-#: SessionController.cpp:1209
+#: SessionController.cpp:1184
 #, fuzzy
 #| msgid ""
 #| "<p>The current session already has a ZModem file transfer in progress."
@@ -1891,7 +1866,7 @@ msgid ""
 "<p>The current session already has a ZModem file transfer in progress.</p>"
 msgstr "<p> Sesi semasa sudah ada fail ZModem yang sedang dipindahkan."
 
-#: SessionController.cpp:1218
+#: SessionController.cpp:1193
 #, fuzzy
 #| msgid ""
 #| "<p>No suitable ZModem software was found on the system.\n"
@@ -1903,23 +1878,23 @@ msgstr ""
 "<p>Tiada perisian ZModem yang sesuai ditemui dalam sistem.\n"
 "<p>Anda ingin pasang pakej 'rzsz' atau 'lrzsz'.\n"
 
-#: SessionController.cpp:1224
+#: SessionController.cpp:1199
 #, fuzzy
 #| msgid "Select Files to Upload"
 msgid "Select Files for ZModem Upload"
 msgstr "Pilih Fail untuk Muat Naik"
 
-#: SessionController.cpp:1296
+#: SessionController.cpp:1271
 #, fuzzy, kde-format
 msgid "Save Output From %1"
 msgstr "Simpan Sejarah"
 
-#: SessionController.cpp:1307
+#: SessionController.cpp:1282
 #, kde-format
 msgid "%1 is an invalid URL, the output could not be saved."
 msgstr ""
 
-#: SessionController.cpp:1396
+#: SessionController.cpp:1371
 #, kde-format
 msgid ""
 "A problem occurred when saving the output.\n"
@@ -2166,6 +2141,30 @@ msgstr ""
 #: ZModemDialog.cpp:35
 msgid "&Stop"
 msgstr "&Berhenti"
+
+#, fuzzy
+#~| msgid "Do not display scrollbar"
+#~ msgid "Scrollback"
+#~ msgstr "Jangan papar bar skrol"
+
+#, fuzzy
+#~ msgid "&Copy"
+#~ msgstr "A&tas"
+
+#, fuzzy
+#~| msgid "Clear &History"
+#~ msgid "Search Output..."
+#~ msgstr "Kosong&kan Sejarah"
+
+#, fuzzy
+#~| msgid "Find"
+#~ msgid "Find Next"
+#~ msgstr "Cari"
+
+#, fuzzy
+#~| msgid "Find Pre&vious"
+#~ msgid "Find Previous"
+#~ msgstr "Cari Sebe&lumnya"
 
 #, fuzzy
 #~| msgid "Clear &History"
@@ -2700,9 +2699,6 @@ msgstr "&Berhenti"
 #~ msgid "&Enlarge Font"
 #~ msgstr "&Besarkan Fon"
 
-#~ msgid "&Shrink Font"
-#~ msgstr "&Kecilkan Fon"
-
 #, fuzzy
 #~ msgid "Default"
 #~ msgstr "Piawai Konsol"
@@ -2803,9 +2799,6 @@ msgstr "&Berhenti"
 
 #~ msgid "Switch to Session %1"
 #~ msgstr "Tukar ke Sesi %1"
-
-#~ msgid "Enlarge Font"
-#~ msgstr "Besarkan Fon"
 
 #~ msgid "Toggle Bidi"
 #~ msgstr "Toggel Bidi"
