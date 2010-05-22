@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-03 04:55+0200\n"
+"POT-Creation-Date: 2010-05-22 04:50+0200\n"
 "PO-Revision-Date: 2005-10-12 11:13+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -114,52 +114,6 @@ msgstr ""
 msgid "No Archive"
 msgstr "Arkib"
 
-#: src/pluginmanager.cpp:165
-#, fuzzy
-#| msgid "Name"
-msgctxt "Name of the plugin"
-msgid "Name"
-msgstr "Nama"
-
-#: src/pluginmanager.cpp:166
-#, fuzzy
-#| msgid "Library"
-msgctxt "Library name"
-msgid "Library"
-msgstr "Pustaka"
-
-#: src/pluginmanager.cpp:167
-#, fuzzy
-#| msgid "Authors"
-msgctxt "Plugin authors"
-msgid "Authors"
-msgstr "Penulis"
-
-#: src/pluginmanager.cpp:168
-#, fuzzy
-#| msgid "Email"
-msgctxt "Plugin authors' emaila addresses"
-msgid "Email"
-msgstr "E-mel"
-
-#: src/pluginmanager.cpp:169
-#, fuzzy
-#| msgid "Version"
-msgctxt "Plugin version"
-msgid "Version"
-msgstr "Versi"
-
-#: src/pluginmanager.cpp:170
-#, fuzzy
-#| msgid "Framework Version"
-msgctxt "Framework version plugin requires"
-msgid "Framework Version"
-msgstr "Versi Rangka Kerja"
-
-#: src/pluginmanager.cpp:174
-msgid "Plugin Information"
-msgstr "Maklumat Plugin"
-
 #: src/pageviewer.cpp:101 src/actionmanagerimpl.cpp:569
 msgctxt "Go back in browser history"
 msgid "Back"
@@ -203,9 +157,31 @@ msgstr "Buka Halaman di dalam Pelayar Luar"
 msgid "Add to Konqueror Bookmarks"
 msgstr "Tambah ke dalam Tanda Buku Konqueror "
 
-#: src/feedlist.cpp:177
-msgid "All Feeds"
-msgstr "Semua Suapan"
+#: src/importfeedlistcommand.cpp:64
+#, fuzzy
+#| msgid "&Import Feeds..."
+msgid "Imported Feeds"
+msgstr "Suapan &Import..."
+
+#: src/importfeedlistcommand.cpp:96
+msgid "Add Imported Folder"
+msgstr "Tambah Folder Import"
+
+#: src/importfeedlistcommand.cpp:97
+msgid "Imported folder name:"
+msgstr "Nama folder import"
+
+#: src/progressmanager.cpp:178
+msgid "Fetch completed"
+msgstr "Kutipan selesai"
+
+#: src/progressmanager.cpp:188
+msgid "Fetch error"
+msgstr "Ralat Kutip"
+
+#: src/progressmanager.cpp:198
+msgid "Fetch aborted"
+msgstr "Kutip dihenti paksa"
 
 #: src/akregator_options.h:37 src/akregator_options.h:41
 msgid "Add a feed with the given URL"
@@ -219,17 +195,9 @@ msgstr ""
 msgid "Hide main window on startup"
 msgstr ""
 
-#: src/progressmanager.cpp:178
-msgid "Fetch completed"
-msgstr "Kutipan selesai"
-
-#: src/progressmanager.cpp:188
-msgid "Fetch error"
-msgstr "Ralat Kutip"
-
-#: src/progressmanager.cpp:198
-msgid "Fetch aborted"
-msgstr "Kutip dihenti paksa"
+#: src/feedlist.cpp:177
+msgid "All Feeds"
+msgstr "Semua Suapan"
 
 #: src/akregator_part.cpp:107
 msgid "Akregator News"
@@ -534,6 +502,19 @@ msgstr ""
 #: src/aboutdata.cpp:55
 msgid "Gentoo Ebuild"
 msgstr "Gentoo Ebuild"
+
+#: src/trayicon.cpp:63
+#, fuzzy
+#| msgid "Akregator - RSS Feed Reader"
+msgid "Akregator - Feed Reader"
+msgstr "Pembaca Suapan Akregator - RSS "
+
+#: src/trayicon.cpp:120
+#, fuzzy, kde-format
+msgid "Akregator - 1 unread article"
+msgid_plural "Akregator - %1 unread articles"
+msgstr[0] "_n: Akregator - 1 artikel belum baca"
+msgstr[1] "Akregator - %1 artikel belum baca"
 
 #: src/articleviewer.cpp:135
 msgid "Copy &Link Address"
@@ -841,19 +822,43 @@ msgstr ""
 msgid "Docking in System Tray"
 msgstr "Mendok di dalam dulang sistem"
 
-#: src/importfeedlistcommand.cpp:64
+#: src/articlemodel.cpp:106
 #, fuzzy
-#| msgid "&Import Feeds..."
-msgid "Imported Feeds"
-msgstr "Suapan &Import..."
+msgctxt "Articlelist's column header"
+msgid "Title"
+msgstr "&Artikel"
 
-#: src/importfeedlistcommand.cpp:96
-msgid "Add Imported Folder"
-msgstr "Tambah Folder Import"
+#: src/articlemodel.cpp:108
+#, fuzzy
+#| msgid "Feed"
+msgctxt "Articlelist's column header"
+msgid "Feed"
+msgstr "Suapan"
 
-#: src/importfeedlistcommand.cpp:97
-msgid "Imported folder name:"
-msgstr "Nama folder import"
+#: src/articlemodel.cpp:110
+#, fuzzy
+#| msgid "Date"
+msgctxt "Articlelist's column header"
+msgid "Date"
+msgstr "Tarikh"
+
+#: src/articlemodel.cpp:112
+#, fuzzy
+msgctxt "Articlelist's column header"
+msgid "Author"
+msgstr "Penulis"
+
+#: src/articlemodel.cpp:114
+msgctxt "Articlelist's column header"
+msgid "Description"
+msgstr ""
+
+#: src/articlemodel.cpp:116
+#, fuzzy
+#| msgid "Comments"
+msgctxt "Articlelist's column header"
+msgid "Content"
+msgstr "Komen"
 
 #: src/actionmanagerimpl.cpp:76 src/actionmanagerimpl.cpp:253
 msgid "&Fetch Feed"
@@ -1174,56 +1179,51 @@ msgstr[1] "<qt>Anda pasti ingin menghapuskan %2 artikel yang dipilih?</qt>"
 msgid "Delete Article"
 msgstr "Hapuskan Artikel"
 
-#: src/articlemodel.cpp:106
+#: src/pluginmanager.cpp:165
 #, fuzzy
-msgctxt "Articlelist's column header"
-msgid "Title"
-msgstr "&Artikel"
+#| msgid "Name"
+msgctxt "Name of the plugin"
+msgid "Name"
+msgstr "Nama"
 
-#: src/articlemodel.cpp:108
+#: src/pluginmanager.cpp:166
 #, fuzzy
-#| msgid "Feed"
-msgctxt "Articlelist's column header"
-msgid "Feed"
-msgstr "Suapan"
+#| msgid "Library"
+msgctxt "Library name"
+msgid "Library"
+msgstr "Pustaka"
 
-#: src/articlemodel.cpp:110
+#: src/pluginmanager.cpp:167
 #, fuzzy
-#| msgid "Date"
-msgctxt "Articlelist's column header"
-msgid "Date"
-msgstr "Tarikh"
-
-#: src/articlemodel.cpp:112
-#, fuzzy
-msgctxt "Articlelist's column header"
-msgid "Author"
+#| msgid "Authors"
+msgctxt "Plugin authors"
+msgid "Authors"
 msgstr "Penulis"
 
-#: src/articlemodel.cpp:114
-msgctxt "Articlelist's column header"
-msgid "Description"
-msgstr ""
-
-#: src/articlemodel.cpp:116
+#: src/pluginmanager.cpp:168
 #, fuzzy
-#| msgid "Comments"
-msgctxt "Articlelist's column header"
-msgid "Content"
-msgstr "Komen"
+#| msgid "Email"
+msgctxt "Plugin authors' emaila addresses"
+msgid "Email"
+msgstr "E-mel"
 
-#: src/trayicon.cpp:63
+#: src/pluginmanager.cpp:169
 #, fuzzy
-#| msgid "Akregator - RSS Feed Reader"
-msgid "Akregator - Feed Reader"
-msgstr "Pembaca Suapan Akregator - RSS "
+#| msgid "Version"
+msgctxt "Plugin version"
+msgid "Version"
+msgstr "Versi"
 
-#: src/trayicon.cpp:120
-#, fuzzy, kde-format
-msgid "Akregator - 1 unread article"
-msgid_plural "Akregator - %1 unread articles"
-msgstr[0] "_n: Akregator - 1 artikel belum baca"
-msgstr[1] "Akregator - %1 artikel belum baca"
+#: src/pluginmanager.cpp:170
+#, fuzzy
+#| msgid "Framework Version"
+msgctxt "Framework version plugin requires"
+msgid "Framework Version"
+msgstr "Versi Rangka Kerja"
+
+#: src/pluginmanager.cpp:174
+msgid "Plugin Information"
+msgstr "Maklumat Plugin"
 
 #: src/loadfeedlistcommand.cpp:72
 #, fuzzy, kde-format
@@ -1945,7 +1945,7 @@ msgstr ""
 #. i18n: ectx: Menu (edit)
 #. i18n: file: src/akregator_part.rc:14
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:235 rc.cpp:325
+#: rc.cpp:235 rc.cpp:322
 msgid "&Edit"
 msgstr ""
 
@@ -1953,18 +1953,18 @@ msgstr ""
 #. i18n: ectx: Menu (view)
 #. i18n: file: src/akregator_part.rc:21
 #. i18n: ectx: Menu (view)
-#: rc.cpp:238 rc.cpp:328
+#: rc.cpp:238 rc.cpp:325
 #, fuzzy
 msgid "&View"
 msgstr "&Paparkan Mod"
 
 #. i18n: file: src/akregator_shell.rc:21
 #. i18n: ectx: Menu (go)
-#. i18n: file: src/pageviewer.rc:34
-#. i18n: ectx: Menu (go)
 #. i18n: file: src/akregator_part.rc:31
 #. i18n: ectx: Menu (go)
-#: rc.cpp:241 rc.cpp:322 rc.cpp:331
+#. i18n: file: src/pageviewer.rc:34
+#. i18n: ectx: Menu (go)
+#: rc.cpp:241 rc.cpp:328 rc.cpp:349
 msgid "&Go"
 msgstr "&Pergi"
 
@@ -1972,7 +1972,7 @@ msgstr "&Pergi"
 #. i18n: ectx: Menu (feed)
 #. i18n: file: src/akregator_part.rc:44
 #. i18n: ectx: Menu (feed)
-#: rc.cpp:244 rc.cpp:334
+#: rc.cpp:244 rc.cpp:331
 #, fuzzy
 #| msgid "Feed"
 msgid "Fee&d"
@@ -1982,7 +1982,7 @@ msgstr "Suapan"
 #. i18n: ectx: Menu (article)
 #. i18n: file: src/akregator_part.rc:57
 #. i18n: ectx: Menu (article)
-#: rc.cpp:247 rc.cpp:337
+#: rc.cpp:247 rc.cpp:334
 msgid "&Article"
 msgstr "&Artikel"
 
@@ -1990,7 +1990,7 @@ msgstr "&Artikel"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: src/akregator_part.rc:73
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:250 rc.cpp:340
+#: rc.cpp:250 rc.cpp:337
 #, fuzzy
 msgid "&Settings"
 msgstr "Lanjutan"
@@ -1999,7 +1999,7 @@ msgstr "Lanjutan"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: src/akregator_part.rc:84
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:253 rc.cpp:343
+#: rc.cpp:253 rc.cpp:340
 msgid "Main Toolbar"
 msgstr ""
 
@@ -2007,7 +2007,7 @@ msgstr ""
 #. i18n: ectx: ToolBar (browserToolBar)
 #. i18n: file: src/akregator_part.rc:94
 #. i18n: ectx: ToolBar (browserToolBar)
-#: rc.cpp:256 rc.cpp:346
+#: rc.cpp:256 rc.cpp:343
 #, fuzzy
 #| msgid "Browser"
 msgid "Browser Toolbar"
@@ -2017,7 +2017,7 @@ msgstr "Pelayar"
 #. i18n: ectx: ToolBar (textToSpeechToolBar)
 #. i18n: file: src/akregator_part.rc:102
 #. i18n: ectx: ToolBar (textToSpeechToolBar)
-#: rc.cpp:259 rc.cpp:349
+#: rc.cpp:259 rc.cpp:346
 msgid "Speech Toolbar"
 msgstr ""
 
