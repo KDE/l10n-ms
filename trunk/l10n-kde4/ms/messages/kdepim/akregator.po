@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-22 04:50+0200\n"
+"POT-Creation-Date: 2010-06-29 08:15+0200\n"
 "PO-Revision-Date: 2005-10-12 11:13+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -114,22 +114,68 @@ msgstr ""
 msgid "No Archive"
 msgstr "Arkib"
 
-#: src/pageviewer.cpp:101 src/actionmanagerimpl.cpp:569
+#: src/pluginmanager.cpp:165
+#, fuzzy
+#| msgid "Name"
+msgctxt "Name of the plugin"
+msgid "Name"
+msgstr "Nama"
+
+#: src/pluginmanager.cpp:166
+#, fuzzy
+#| msgid "Library"
+msgctxt "Library name"
+msgid "Library"
+msgstr "Pustaka"
+
+#: src/pluginmanager.cpp:167
+#, fuzzy
+#| msgid "Authors"
+msgctxt "Plugin authors"
+msgid "Authors"
+msgstr "Penulis"
+
+#: src/pluginmanager.cpp:168
+#, fuzzy
+#| msgid "Email"
+msgctxt "Plugin authors' emaila addresses"
+msgid "Email"
+msgstr "E-mel"
+
+#: src/pluginmanager.cpp:169
+#, fuzzy
+#| msgid "Version"
+msgctxt "Plugin version"
+msgid "Version"
+msgstr "Versi"
+
+#: src/pluginmanager.cpp:170
+#, fuzzy
+#| msgid "Framework Version"
+msgctxt "Framework version plugin requires"
+msgid "Framework Version"
+msgstr "Versi Rangka Kerja"
+
+#: src/pluginmanager.cpp:174
+msgid "Plugin Information"
+msgstr "Maklumat Plugin"
+
+#: src/pageviewer.cpp:101 src/actionmanagerimpl.cpp:572
 msgctxt "Go back in browser history"
 msgid "Back"
 msgstr ""
 
-#: src/pageviewer.cpp:109 src/actionmanagerimpl.cpp:562
+#: src/pageviewer.cpp:109 src/actionmanagerimpl.cpp:565
 msgctxt "Go forward in browser history"
 msgid "Forward"
 msgstr ""
 
-#: src/pageviewer.cpp:116 src/actionmanagerimpl.cpp:578
+#: src/pageviewer.cpp:116 src/actionmanagerimpl.cpp:581
 msgctxt "Reload current page"
 msgid "Reload"
 msgstr ""
 
-#: src/pageviewer.cpp:119 src/actionmanagerimpl.cpp:583
+#: src/pageviewer.cpp:119 src/actionmanagerimpl.cpp:586
 msgid "Stop"
 msgstr ""
 
@@ -157,31 +203,9 @@ msgstr "Buka Halaman di dalam Pelayar Luar"
 msgid "Add to Konqueror Bookmarks"
 msgstr "Tambah ke dalam Tanda Buku Konqueror "
 
-#: src/importfeedlistcommand.cpp:64
-#, fuzzy
-#| msgid "&Import Feeds..."
-msgid "Imported Feeds"
-msgstr "Suapan &Import..."
-
-#: src/importfeedlistcommand.cpp:96
-msgid "Add Imported Folder"
-msgstr "Tambah Folder Import"
-
-#: src/importfeedlistcommand.cpp:97
-msgid "Imported folder name:"
-msgstr "Nama folder import"
-
-#: src/progressmanager.cpp:178
-msgid "Fetch completed"
-msgstr "Kutipan selesai"
-
-#: src/progressmanager.cpp:188
-msgid "Fetch error"
-msgstr "Ralat Kutip"
-
-#: src/progressmanager.cpp:198
-msgid "Fetch aborted"
-msgstr "Kutip dihenti paksa"
+#: src/feedlist.cpp:177
+msgid "All Feeds"
+msgstr "Semua Suapan"
 
 #: src/akregator_options.h:37 src/akregator_options.h:41
 msgid "Add a feed with the given URL"
@@ -195,9 +219,17 @@ msgstr ""
 msgid "Hide main window on startup"
 msgstr ""
 
-#: src/feedlist.cpp:177
-msgid "All Feeds"
-msgstr "Semua Suapan"
+#: src/progressmanager.cpp:178
+msgid "Fetch completed"
+msgstr "Kutipan selesai"
+
+#: src/progressmanager.cpp:188
+msgid "Fetch error"
+msgstr "Ralat Kutip"
+
+#: src/progressmanager.cpp:198
+msgid "Fetch aborted"
+msgstr "Kutip dihenti paksa"
 
 #: src/akregator_part.cpp:107
 msgid "Akregator News"
@@ -502,19 +534,6 @@ msgstr ""
 #: src/aboutdata.cpp:55
 msgid "Gentoo Ebuild"
 msgstr "Gentoo Ebuild"
-
-#: src/trayicon.cpp:63
-#, fuzzy
-#| msgid "Akregator - RSS Feed Reader"
-msgid "Akregator - Feed Reader"
-msgstr "Pembaca Suapan Akregator - RSS "
-
-#: src/trayicon.cpp:120
-#, fuzzy, kde-format
-msgid "Akregator - 1 unread article"
-msgid_plural "Akregator - %1 unread articles"
-msgstr[0] "_n: Akregator - 1 artikel belum baca"
-msgstr[1] "Akregator - %1 artikel belum baca"
 
 #: src/articleviewer.cpp:135
 msgid "Copy &Link Address"
@@ -822,135 +841,111 @@ msgstr ""
 msgid "Docking in System Tray"
 msgstr "Mendok di dalam dulang sistem"
 
-#: src/articlemodel.cpp:106
+#: src/importfeedlistcommand.cpp:64
 #, fuzzy
-msgctxt "Articlelist's column header"
-msgid "Title"
-msgstr "&Artikel"
+#| msgid "&Import Feeds..."
+msgid "Imported Feeds"
+msgstr "Suapan &Import..."
 
-#: src/articlemodel.cpp:108
-#, fuzzy
-#| msgid "Feed"
-msgctxt "Articlelist's column header"
-msgid "Feed"
-msgstr "Suapan"
+#: src/importfeedlistcommand.cpp:96
+msgid "Add Imported Folder"
+msgstr "Tambah Folder Import"
 
-#: src/articlemodel.cpp:110
-#, fuzzy
-#| msgid "Date"
-msgctxt "Articlelist's column header"
-msgid "Date"
-msgstr "Tarikh"
+#: src/importfeedlistcommand.cpp:97
+msgid "Imported folder name:"
+msgstr "Nama folder import"
 
-#: src/articlemodel.cpp:112
-#, fuzzy
-msgctxt "Articlelist's column header"
-msgid "Author"
-msgstr "Penulis"
-
-#: src/articlemodel.cpp:114
-msgctxt "Articlelist's column header"
-msgid "Description"
-msgstr ""
-
-#: src/articlemodel.cpp:116
-#, fuzzy
-#| msgid "Comments"
-msgctxt "Articlelist's column header"
-msgid "Content"
-msgstr "Komen"
-
-#: src/actionmanagerimpl.cpp:76 src/actionmanagerimpl.cpp:253
+#: src/actionmanagerimpl.cpp:77 src/actionmanagerimpl.cpp:254
 msgid "&Fetch Feed"
 msgstr "&Kutip Suapan"
 
-#: src/actionmanagerimpl.cpp:77 src/actionmanagerimpl.cpp:221
+#: src/actionmanagerimpl.cpp:78 src/actionmanagerimpl.cpp:222
 msgid "&Delete Feed"
 msgstr "&Hapuskan Suapan"
 
-#: src/actionmanagerimpl.cpp:78 src/actionmanagerimpl.cpp:227
+#: src/actionmanagerimpl.cpp:79 src/actionmanagerimpl.cpp:228
 msgid "&Edit Feed..."
 msgstr "&Edit Suapan..."
 
-#: src/actionmanagerimpl.cpp:79 src/actionmanagerimpl.cpp:272
+#: src/actionmanagerimpl.cpp:80 src/actionmanagerimpl.cpp:273
 msgid "&Mark Feed as Read"
 msgstr "&Tandakan Suapan Sebagai Sudah Baca"
 
-#: src/actionmanagerimpl.cpp:93
+#: src/actionmanagerimpl.cpp:94
 #, fuzzy
 msgid "&Fetch Feeds"
 msgstr "&Kutip Suapan"
 
-#: src/actionmanagerimpl.cpp:94
+#: src/actionmanagerimpl.cpp:95
 #, fuzzy
 msgid "&Delete Folder"
 msgstr "Hapuskan Folder"
 
-#: src/actionmanagerimpl.cpp:95
+#: src/actionmanagerimpl.cpp:96
 #, fuzzy
 msgid "&Rename Folder"
 msgstr "Hapuskan Folder"
 
-#: src/actionmanagerimpl.cpp:96
+#: src/actionmanagerimpl.cpp:97
 #, fuzzy
 msgid "&Mark Feeds as Read"
 msgstr "&Tandakan Suapan Sebagai Sudah Baca"
 
-#: src/actionmanagerimpl.cpp:171
+#: src/actionmanagerimpl.cpp:172
 msgid "&Import Feeds..."
 msgstr "Suapan &Import..."
 
-#: src/actionmanagerimpl.cpp:175
+#: src/actionmanagerimpl.cpp:176
 msgid "&Export Feeds..."
 msgstr "Suapan &Eksport..."
 
-#: src/actionmanagerimpl.cpp:180
+#: src/actionmanagerimpl.cpp:181
 #, fuzzy
 #| msgid "Configure &Akregator..."
 msgid "&Configure Akregator..."
 msgstr "Konfigurkan &Akregator..."
 
-#: src/actionmanagerimpl.cpp:203
+#: src/actionmanagerimpl.cpp:204
 msgid "&Open Homepage"
 msgstr "&Buka Laman Utama"
 
-#: src/actionmanagerimpl.cpp:209
+#: src/actionmanagerimpl.cpp:210
 msgid "&Add Feed..."
 msgstr "&Tambah Suapan..."
 
-#: src/actionmanagerimpl.cpp:215
+#: src/actionmanagerimpl.cpp:216
 msgid "Ne&w Folder..."
 msgstr "Folder &Baru..."
 
-#: src/actionmanagerimpl.cpp:234
+#: src/actionmanagerimpl.cpp:235
 msgid "&Normal View"
 msgstr "Paparan &Normal"
 
-#: src/actionmanagerimpl.cpp:240
+#: src/actionmanagerimpl.cpp:241
 msgid "&Widescreen View"
 msgstr "Paparan Skrin &Lebar"
 
-#: src/actionmanagerimpl.cpp:246
+#: src/actionmanagerimpl.cpp:247
 msgid "C&ombined View"
 msgstr "Paparan &Gabungan"
 
-#: src/actionmanagerimpl.cpp:259
+#: src/actionmanagerimpl.cpp:260
 msgid "Fe&tch All Feeds"
 msgstr "Ku&tip Semua Suapan"
 
-#: src/actionmanagerimpl.cpp:265
+#: src/actionmanagerimpl.cpp:266
 #, fuzzy
 #| msgid "Concurrent Fetches"
 msgid "C&ancel Feed Fetches"
 msgstr "Kutipan Selaras."
 
-#: src/actionmanagerimpl.cpp:278
+#: src/actionmanagerimpl.cpp:279
 msgid "Ma&rk All Feeds as Read"
 msgstr "Tanda&kan Semua sSuapan Sebagai Sudah baca"
 
 #. i18n: file: interfaces/akregator.kcfg:9
 #. i18n: ectx: label, entry, group (View)
-#: src/actionmanagerimpl.cpp:284 rc.cpp:47
+#: src/actionmanagerimpl.cpp:285 rc.cpp:47
 msgid "Show Quick Filter"
 msgstr "Tayangkan Penapis Pantas"
 
@@ -958,7 +953,7 @@ msgstr "Tayangkan Penapis Pantas"
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LMBBehaviour)
 #. i18n: file: configuration/settings_browser.ui:46
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MMBBehaviour)
-#: src/actionmanagerimpl.cpp:290 rc.cpp:355 rc.cpp:367
+#: src/actionmanagerimpl.cpp:291 rc.cpp:355 rc.cpp:367
 msgid "Open in Tab"
 msgstr "Buka dalam Tab"
 
@@ -966,173 +961,173 @@ msgstr "Buka dalam Tab"
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LMBBehaviour)
 #. i18n: file: configuration/settings_browser.ui:56
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MMBBehaviour)
-#: src/actionmanagerimpl.cpp:296 rc.cpp:361 rc.cpp:373
+#: src/actionmanagerimpl.cpp:297 rc.cpp:361 rc.cpp:373
 msgid "Open in External Browser"
 msgstr "Buka dalam Pelayar Luar"
 
-#: src/actionmanagerimpl.cpp:301 src/actionmanagerimpl.cpp:533
+#: src/actionmanagerimpl.cpp:302 src/actionmanagerimpl.cpp:534
 msgid "Copy Link Address"
 msgstr "Salin Alamat Pautan"
 
-#: src/actionmanagerimpl.cpp:306
+#: src/actionmanagerimpl.cpp:307
 msgid "Pre&vious Unread Article"
 msgstr "Artikel Belum Baca &Sebelumnya"
 
-#: src/actionmanagerimpl.cpp:312
+#: src/actionmanagerimpl.cpp:313
 msgid "Ne&xt Unread Article"
 msgstr "Artikel Belum Baca &Seterusnya"
 
-#: src/actionmanagerimpl.cpp:318
+#: src/actionmanagerimpl.cpp:319
 #, fuzzy
 msgid "&Delete"
 msgstr "&Hapuskan Suapan"
 
-#: src/actionmanagerimpl.cpp:323
+#: src/actionmanagerimpl.cpp:324
 #, fuzzy
 msgid "&Mark As"
 msgstr "&Tandakan"
 
-#: src/actionmanagerimpl.cpp:328
+#: src/actionmanagerimpl.cpp:329
 #, fuzzy
 msgid "&Speak Selected Articles"
 msgstr "Tandakan artikel dipilih sebagai baru"
 
-#: src/actionmanagerimpl.cpp:333
+#: src/actionmanagerimpl.cpp:334
 msgid "&Stop Speaking"
 msgstr ""
 
-#: src/actionmanagerimpl.cpp:342
+#: src/actionmanagerimpl.cpp:343
 msgctxt "as in: mark as read"
 msgid "&Read"
 msgstr ""
 
-#: src/actionmanagerimpl.cpp:344
+#: src/actionmanagerimpl.cpp:345
 msgid "Mark selected article as read"
 msgstr "Tandakan artikel yang dipilih sebagai sudah baca"
 
-#: src/actionmanagerimpl.cpp:350
+#: src/actionmanagerimpl.cpp:351
 #, fuzzy
 msgctxt "as in: mark as new"
 msgid "&New"
 msgstr "Baru"
 
-#: src/actionmanagerimpl.cpp:353
+#: src/actionmanagerimpl.cpp:354
 msgid "Mark selected article as new"
 msgstr "Tandakan artikel dipilih sebagai baru"
 
-#: src/actionmanagerimpl.cpp:359
+#: src/actionmanagerimpl.cpp:360
 #, fuzzy
 msgctxt "as in: mark as unread"
 msgid "&Unread"
 msgstr "Belum baca"
 
-#: src/actionmanagerimpl.cpp:361
+#: src/actionmanagerimpl.cpp:362
 msgid "Mark selected article as unread"
 msgstr "Tandakan artikel yang dipilih sebagai belum baca"
 
-#: src/actionmanagerimpl.cpp:367
+#: src/actionmanagerimpl.cpp:368
 #, fuzzy
 msgid "&Mark as Important"
 msgstr "Tandakan sebagai &belum baca"
 
-#: src/actionmanagerimpl.cpp:372
+#: src/actionmanagerimpl.cpp:373
 msgid "Remove &Important Mark"
 msgstr ""
 
-#: src/actionmanagerimpl.cpp:376
+#: src/actionmanagerimpl.cpp:377
 msgid "Move Node Up"
 msgstr "Alih Nod ke Atas"
 
-#: src/actionmanagerimpl.cpp:381
+#: src/actionmanagerimpl.cpp:382
 msgid "Move Node Down"
 msgstr "Alih Nod ke Bawah"
 
-#: src/actionmanagerimpl.cpp:385 src/actionmanagerimpl.cpp:386
+#: src/actionmanagerimpl.cpp:386 src/actionmanagerimpl.cpp:387
 msgid "Move Node Left"
 msgstr "Alih Nod ke Kiri"
 
-#: src/actionmanagerimpl.cpp:391
+#: src/actionmanagerimpl.cpp:392
 msgid "Move Node Right"
 msgstr "Alihkan Nod ke Kanan"
 
-#: src/actionmanagerimpl.cpp:397
+#: src/actionmanagerimpl.cpp:398
 msgid "Send &Link Address..."
 msgstr "Alamat Hantar &Pautan..."
 
-#: src/actionmanagerimpl.cpp:402
+#: src/actionmanagerimpl.cpp:403
 msgid "Send &File..."
 msgstr "Hantar &Fail..."
 
-#: src/actionmanagerimpl.cpp:436
+#: src/actionmanagerimpl.cpp:437
 msgid "&Previous Article"
 msgstr "Artikel &Sebelumnya"
 
-#: src/actionmanagerimpl.cpp:440
+#: src/actionmanagerimpl.cpp:441
 msgid "&Next Article"
 msgstr "&Artikel Seterusnya"
 
-#: src/actionmanagerimpl.cpp:455
+#: src/actionmanagerimpl.cpp:456
 msgid "&Previous Feed"
 msgstr "Suapan &Sebelumnnya"
 
-#: src/actionmanagerimpl.cpp:460
+#: src/actionmanagerimpl.cpp:461
 msgid "&Next Feed"
 msgstr "Suapan &Seterusnya"
 
-#: src/actionmanagerimpl.cpp:466
+#: src/actionmanagerimpl.cpp:467
 msgid "N&ext Unread Feed"
 msgstr "Suapan Belum Baca &Seterusnya"
 
-#: src/actionmanagerimpl.cpp:472
+#: src/actionmanagerimpl.cpp:473
 msgid "Prev&ious Unread Feed"
 msgstr "Suapan Belum Baca &Sebelumnya"
 
-#: src/actionmanagerimpl.cpp:477
+#: src/actionmanagerimpl.cpp:478
 msgid "Go to Top of Tree"
 msgstr "Pergi ke Puncak Pepohon"
 
-#: src/actionmanagerimpl.cpp:482
+#: src/actionmanagerimpl.cpp:483
 msgid "Go to Bottom of Tree"
 msgstr "Pergi ke Bahagian Bawah Pepohon"
 
-#: src/actionmanagerimpl.cpp:487
+#: src/actionmanagerimpl.cpp:488
 msgid "Go Left in Tree"
 msgstr "Pergi ke Kiri dalam Pepohon"
 
-#: src/actionmanagerimpl.cpp:492
+#: src/actionmanagerimpl.cpp:493
 msgid "Go Right in Tree"
 msgstr "Pergi ke Kanan dalam Pepohon"
 
-#: src/actionmanagerimpl.cpp:497
+#: src/actionmanagerimpl.cpp:498
 msgid "Go Up in Tree"
 msgstr "Pergi ke Atas dalam Pepohon"
 
-#: src/actionmanagerimpl.cpp:502
+#: src/actionmanagerimpl.cpp:503
 msgid "Go Down in Tree"
 msgstr "Pergi ke Bawah dalam Pepohon"
 
-#: src/actionmanagerimpl.cpp:517
+#: src/actionmanagerimpl.cpp:518
 msgid "Select Next Tab"
 msgstr "Pilih Tab Seterusnya"
 
-#: src/actionmanagerimpl.cpp:522
+#: src/actionmanagerimpl.cpp:523
 msgid "Select Previous Tab"
 msgstr "Pilih Tab Sebelumnya"
 
-#: src/actionmanagerimpl.cpp:528
+#: src/actionmanagerimpl.cpp:529
 msgid "Detach Tab"
 msgstr "Pisahkan Tab"
 
-#: src/actionmanagerimpl.cpp:538
+#: src/actionmanagerimpl.cpp:539
 #, fuzzy
 msgid "Close Tab"
 msgstr "Tutup Tab"
 
-#: src/actionmanagerimpl.cpp:544
+#: src/actionmanagerimpl.cpp:545
 msgid "Enlarge Font"
 msgstr ""
 
-#: src/actionmanagerimpl.cpp:550
+#: src/actionmanagerimpl.cpp:551
 #, fuzzy
 #| msgid "Serif font:"
 msgid "Shrink Font"
@@ -1179,51 +1174,56 @@ msgstr[1] "<qt>Anda pasti ingin menghapuskan %2 artikel yang dipilih?</qt>"
 msgid "Delete Article"
 msgstr "Hapuskan Artikel"
 
-#: src/pluginmanager.cpp:165
+#: src/articlemodel.cpp:106
 #, fuzzy
-#| msgid "Name"
-msgctxt "Name of the plugin"
-msgid "Name"
-msgstr "Nama"
+msgctxt "Articlelist's column header"
+msgid "Title"
+msgstr "&Artikel"
 
-#: src/pluginmanager.cpp:166
+#: src/articlemodel.cpp:108
 #, fuzzy
-#| msgid "Library"
-msgctxt "Library name"
-msgid "Library"
-msgstr "Pustaka"
+#| msgid "Feed"
+msgctxt "Articlelist's column header"
+msgid "Feed"
+msgstr "Suapan"
 
-#: src/pluginmanager.cpp:167
+#: src/articlemodel.cpp:110
 #, fuzzy
-#| msgid "Authors"
-msgctxt "Plugin authors"
-msgid "Authors"
+#| msgid "Date"
+msgctxt "Articlelist's column header"
+msgid "Date"
+msgstr "Tarikh"
+
+#: src/articlemodel.cpp:112
+#, fuzzy
+msgctxt "Articlelist's column header"
+msgid "Author"
 msgstr "Penulis"
 
-#: src/pluginmanager.cpp:168
-#, fuzzy
-#| msgid "Email"
-msgctxt "Plugin authors' emaila addresses"
-msgid "Email"
-msgstr "E-mel"
+#: src/articlemodel.cpp:114
+msgctxt "Articlelist's column header"
+msgid "Description"
+msgstr ""
 
-#: src/pluginmanager.cpp:169
+#: src/articlemodel.cpp:116
 #, fuzzy
-#| msgid "Version"
-msgctxt "Plugin version"
-msgid "Version"
-msgstr "Versi"
+#| msgid "Comments"
+msgctxt "Articlelist's column header"
+msgid "Content"
+msgstr "Komen"
 
-#: src/pluginmanager.cpp:170
+#: src/trayicon.cpp:63
 #, fuzzy
-#| msgid "Framework Version"
-msgctxt "Framework version plugin requires"
-msgid "Framework Version"
-msgstr "Versi Rangka Kerja"
+#| msgid "Akregator - RSS Feed Reader"
+msgid "Akregator - Feed Reader"
+msgstr "Pembaca Suapan Akregator - RSS "
 
-#: src/pluginmanager.cpp:174
-msgid "Plugin Information"
-msgstr "Maklumat Plugin"
+#: src/trayicon.cpp:120
+#, fuzzy, kde-format
+msgid "Akregator - 1 unread article"
+msgid_plural "Akregator - %1 unread articles"
+msgstr[0] "_n: Akregator - 1 artikel belum baca"
+msgstr[1] "Akregator - %1 artikel belum baca"
 
 #: src/loadfeedlistcommand.cpp:72
 #, fuzzy, kde-format
@@ -1945,7 +1945,7 @@ msgstr ""
 #. i18n: ectx: Menu (edit)
 #. i18n: file: src/akregator_part.rc:14
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:235 rc.cpp:322
+#: rc.cpp:235 rc.cpp:325
 msgid "&Edit"
 msgstr ""
 
@@ -1953,18 +1953,18 @@ msgstr ""
 #. i18n: ectx: Menu (view)
 #. i18n: file: src/akregator_part.rc:21
 #. i18n: ectx: Menu (view)
-#: rc.cpp:238 rc.cpp:325
+#: rc.cpp:238 rc.cpp:328
 #, fuzzy
 msgid "&View"
 msgstr "&Paparkan Mod"
 
 #. i18n: file: src/akregator_shell.rc:21
 #. i18n: ectx: Menu (go)
-#. i18n: file: src/akregator_part.rc:31
-#. i18n: ectx: Menu (go)
 #. i18n: file: src/pageviewer.rc:34
 #. i18n: ectx: Menu (go)
-#: rc.cpp:241 rc.cpp:328 rc.cpp:349
+#. i18n: file: src/akregator_part.rc:31
+#. i18n: ectx: Menu (go)
+#: rc.cpp:241 rc.cpp:322 rc.cpp:331
 msgid "&Go"
 msgstr "&Pergi"
 
@@ -1972,7 +1972,7 @@ msgstr "&Pergi"
 #. i18n: ectx: Menu (feed)
 #. i18n: file: src/akregator_part.rc:44
 #. i18n: ectx: Menu (feed)
-#: rc.cpp:244 rc.cpp:331
+#: rc.cpp:244 rc.cpp:334
 #, fuzzy
 #| msgid "Feed"
 msgid "Fee&d"
@@ -1982,7 +1982,7 @@ msgstr "Suapan"
 #. i18n: ectx: Menu (article)
 #. i18n: file: src/akregator_part.rc:57
 #. i18n: ectx: Menu (article)
-#: rc.cpp:247 rc.cpp:334
+#: rc.cpp:247 rc.cpp:337
 msgid "&Article"
 msgstr "&Artikel"
 
@@ -1990,7 +1990,7 @@ msgstr "&Artikel"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: src/akregator_part.rc:73
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:250 rc.cpp:337
+#: rc.cpp:250 rc.cpp:340
 #, fuzzy
 msgid "&Settings"
 msgstr "Lanjutan"
@@ -1999,7 +1999,7 @@ msgstr "Lanjutan"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: src/akregator_part.rc:84
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:253 rc.cpp:340
+#: rc.cpp:253 rc.cpp:343
 msgid "Main Toolbar"
 msgstr ""
 
@@ -2007,7 +2007,7 @@ msgstr ""
 #. i18n: ectx: ToolBar (browserToolBar)
 #. i18n: file: src/akregator_part.rc:94
 #. i18n: ectx: ToolBar (browserToolBar)
-#: rc.cpp:256 rc.cpp:343
+#: rc.cpp:256 rc.cpp:346
 #, fuzzy
 #| msgid "Browser"
 msgid "Browser Toolbar"
@@ -2017,7 +2017,7 @@ msgstr "Pelayar"
 #. i18n: ectx: ToolBar (textToSpeechToolBar)
 #. i18n: file: src/akregator_part.rc:102
 #. i18n: ectx: ToolBar (textToSpeechToolBar)
-#: rc.cpp:259 rc.cpp:346
+#: rc.cpp:259 rc.cpp:349
 msgid "Speech Toolbar"
 msgstr ""
 
