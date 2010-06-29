@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-23 04:59+0200\n"
+"POT-Creation-Date: 2010-06-29 02:43+0200\n"
 "PO-Revision-Date: 2009-03-09 22:58+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -19,10 +19,9 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: kio/connection.cpp:211
-#, kde-format
-msgid "Unable to create io-slave: %1"
-msgstr "Tidak dapat mencipta io-hamba: %1"
+#: kio/kimageio.cpp:43
+msgid "All Pictures"
+msgstr "Semua Gambar"
 
 #: kio/kscan.cpp:50
 msgid "Acquire Image"
@@ -31,6 +30,25 @@ msgstr "Cekup Imej"
 #: kio/kscan.cpp:99
 msgid "OCR Image"
 msgstr "Imej OCR"
+
+#: kio/connection.cpp:211
+#, kde-format
+msgid "Unable to create io-slave: %1"
+msgstr "Tidak dapat mencipta io-hamba: %1"
+
+#: kio/kfileitemdelegate.cpp:236
+#, fuzzy, kde-format
+msgctxt "Items in a folder"
+msgid "1 item"
+msgid_plural "%1 items"
+msgstr[0] "Fail Log"
+
+#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "@info mimetype"
+msgid "Unknown"
+msgstr "Tidak Diketahui"
 
 #: kio/global.cpp:89
 #, fuzzy, kde-format
@@ -982,8 +1000,8 @@ msgstr "Fail atau Folder Tidak Wujud"
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr "Fail atau folder yang dinyatakan <strong>%1</strong> tidak wujud."
 
-#: kio/global.cpp:664 kio/job.cpp:2099 kio/paste.cpp:64 kio/copyjob.cpp:1326
-#: kio/copyjob.cpp:1897
+#: kio/global.cpp:664 kio/job.cpp:2099 kio/copyjob.cpp:1326
+#: kio/copyjob.cpp:1897 kio/paste.cpp:64
 msgid "File Already Exists"
 msgstr "Fail Sudah Wujud"
 
@@ -1889,144 +1907,92 @@ msgstr "Pilih nama fail lain untuk fail destinasi."
 msgid "Undocumented Error"
 msgstr "Ralat Tidak Didokumentasikan"
 
-#: kio/renamedialog.cpp:122
-msgid "Appl&y to All"
-msgstr ""
-
-#: kio/renamedialog.cpp:123
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"folder conflicts for the remainder of the current job.\n"
-"Unless you press Skip you will still be prompted in case of a conflict with "
-"an existing file in the directory."
-msgstr ""
-
-#: kio/renamedialog.cpp:124
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"conflicts for the remainder of the current job."
-msgstr ""
-
-#: kio/renamedialog.cpp:129
-msgid "&Rename"
-msgstr "Nama&kan semula"
-
-#: kio/renamedialog.cpp:131
-msgid "Suggest New &Name"
-msgstr "Cadangkan &Nama Baru "
-
-#: kio/renamedialog.cpp:137
-msgid "&Skip"
-msgstr "Langka&u"
-
-#: kio/renamedialog.cpp:138
-msgid "Do not copy or move this folder, skip to the next item instead"
-msgstr ""
-
-#: kio/renamedialog.cpp:139
-msgid "Do not copy or move this file, skip to the next item instead"
-msgstr ""
-
-#: kio/renamedialog.cpp:144
+#: kio/fileundomanager.cpp:116
 #, fuzzy
-#| msgid "Write"
-msgctxt "Write files into an existing folder"
-msgid "&Write Into"
-msgstr "Tulis"
+msgid "Creating directory"
+msgstr "Mencipta Folder"
 
-#: kio/renamedialog.cpp:144
-msgid "&Overwrite"
-msgstr "&Tulis semula"
-
-#: kio/renamedialog.cpp:146
-msgid ""
-"Files and folders will be copied into the existing directory, alongside its "
-"existing contents.\n"
-"You will be prompted again in case of a conflict with an existing file in "
-"the directory."
+#: kio/fileundomanager.cpp:117 kio/job.cpp:173
+msgid "Directory"
 msgstr ""
 
-#: kio/renamedialog.cpp:151
-msgid "&Resume"
-msgstr "Sa&mbung"
-
-#: kio/renamedialog.cpp:160
-#, kde-format
-msgid ""
-"This action would overwrite '%1' with itself.\n"
-"Please enter a new file name:"
-msgstr ""
-"Aksi ini akan tindih '%1' dengan dirinya sendiri.\n"
-"Sila masukkan nama fail baru:"
-
-#: kio/renamedialog.cpp:162
-msgid "C&ontinue"
-msgstr "Samb&ung"
-
-#: kio/renamedialog.cpp:234
-#, fuzzy, kde-format
-#| msgid ""
-#| "This action would overwrite '%1' with itself.\n"
-#| "Please enter a new file name:"
-msgid "This action will overwrite '%1' with a newer file '%2'."
-msgstr ""
-"Aksi ini akan tindih '%1' dengan dirinya sendiri.\n"
-"Sila masukkan nama fail baru:"
-
-#: kio/renamedialog.cpp:236
-#, fuzzy, kde-format
-#| msgid ""
-#| "This action would overwrite '%1' with itself.\n"
-#| "Please enter a new file name:"
-msgid "This action will overwrite '%1' with a file of the same age '%2'."
-msgstr ""
-"Aksi ini akan tindih '%1' dengan dirinya sendiri.\n"
-"Sila masukkan nama fail baru:"
-
-#: kio/renamedialog.cpp:238
-#, fuzzy, kde-format
-#| msgid ""
-#| "This action would overwrite '%1' with itself.\n"
-#| "Please enter a new file name:"
-msgid "This action will overwrite '%1' with an older file '%2'."
-msgstr ""
-"Aksi ini akan tindih '%1' dengan dirinya sendiri.\n"
-"Sila masukkan nama fail baru:"
-
-#: kio/renamedialog.cpp:242
+#: kio/fileundomanager.cpp:119
 #, fuzzy
+#| msgid "Moving"
+msgid "Moving"
+msgstr "Mengalih"
+
+#: kio/fileundomanager.cpp:120 kio/job.cpp:159 kio/job.cpp:166 kio/job.cpp:191
+#, fuzzy
+msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Sumber:"
 
-#: kio/renamedialog.cpp:243
+#: kio/fileundomanager.cpp:121 kio/job.cpp:160 kio/job.cpp:167
 #, fuzzy
+msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Destinasi:"
 
-#: kio/renamedialog.cpp:261
-#, kde-format
-msgid "An older item named '%1' already exists."
-msgstr "Item lebih lama bernama '%1' sudah wujud."
+#: kio/fileundomanager.cpp:123
+#, fuzzy
+msgid "Deleting"
+msgstr " (Memadam)"
 
-#: kio/renamedialog.cpp:263
-#, kde-format
-msgid "A similar file named '%1' already exists."
-msgstr "Fail bernama '%1' sudah wujud."
+#: kio/fileundomanager.cpp:124 kio/job.cpp:179 kio/job.cpp:185
+#, fuzzy
+msgid "File"
+msgstr "Tapi&s:"
 
-#: kio/renamedialog.cpp:265
-#, kde-format
-msgid "A newer item named '%1' already exists."
-msgstr "Fail lebih baru '%1' sudah wujud."
+#: kio/fileundomanager.cpp:284
+msgid "Und&o"
+msgstr ""
 
-#: kio/renamedialog.cpp:387 kio/paste.cpp:228 kio/krun.cpp:1095
-#: kio/kdirlister.cpp:329
+#: kio/fileundomanager.cpp:288
+msgid "Und&o: Copy"
+msgstr ""
+
+#: kio/fileundomanager.cpp:290
+msgid "Und&o: Link"
+msgstr ""
+
+#: kio/fileundomanager.cpp:292
+msgid "Und&o: Move"
+msgstr ""
+
+#: kio/fileundomanager.cpp:294
+#, fuzzy
+#| msgid "&Rename"
+msgid "Und&o: Rename"
+msgstr "Nama&kan semula"
+
+#: kio/fileundomanager.cpp:296
+#, fuzzy
+#| msgctxt "to trash"
+#| msgid "&Trash"
+msgid "Und&o: Trash"
+msgstr "&Tong Sampah"
+
+#: kio/fileundomanager.cpp:298
+#, fuzzy
+#| msgid "Could Not Create Folder"
+msgid "Und&o: Create Folder"
+msgstr "Tidak Dapat Cipta Folder"
+
+#: kio/fileundomanager.cpp:764
 #, kde-format
 msgid ""
-"Malformed URL\n"
-"%1"
+"The file %1 was copied from %2, but since then it has apparently been "
+"modified at %3.\n"
+"Undoing the copy will delete the file, and all modifications will be lost.\n"
+"Are you sure you want to delete %4?"
 msgstr ""
-"URL Punah\n"
-"%1"
+
+#: kio/fileundomanager.cpp:767
+#, fuzzy
+#| msgid "Updating System Configuration"
+msgid "Undo File Copy Confirmation"
+msgstr "Mengemaskini Konfigurasi Sistem"
 
 #: kio/kdesktopfileactions.cpp:60
 #, kde-format
@@ -2077,6 +2043,66 @@ msgstr "Lonjak"
 
 #: kio/kdesktopfileactions.cpp:214
 msgid "Unmount"
+msgstr "Nyah-lekap"
+
+#: kio/job.cpp:158
+#, fuzzy
+#| msgid "Moving"
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Mengalih"
+
+#: kio/job.cpp:165
+#, fuzzy
+#| msgid "Copying"
+msgctxt "@title job"
+msgid "Copying"
+msgstr "Menyalin"
+
+#: kio/job.cpp:172
+#, fuzzy
+msgctxt "@title job"
+msgid "Creating directory"
+msgstr "Mencipta Folder"
+
+#: kio/job.cpp:178
+#, fuzzy
+msgctxt "@title job"
+msgid "Deleting"
+msgstr " (Memadam)"
+
+#: kio/job.cpp:184
+msgctxt "@title job"
+msgid "Examining"
+msgstr ""
+
+#: kio/job.cpp:190
+msgctxt "@title job"
+msgid "Transferring"
+msgstr ""
+
+#: kio/job.cpp:196
+#, fuzzy
+#| msgid "Mounting"
+msgctxt "@title job"
+msgid "Mounting"
+msgstr "Melekap"
+
+#: kio/job.cpp:197
+#, fuzzy
+msgid "Device"
+msgstr "Peranti:"
+
+#: kio/job.cpp:198 kio/job.cpp:204
+#, fuzzy
+msgid "Mountpoint"
+msgstr "Titik lekap:"
+
+#: kio/job.cpp:203
+#, fuzzy
+#| msgid "Unmounting"
+msgctxt "@title job"
+msgid "Unmounting"
 msgstr "Nyah-lekap"
 
 #: kio/slave.cpp:432
@@ -2223,178 +2249,48 @@ msgstr ""
 "Sijil SSL ditolak seperti yang diminta. Anda boleh matikan fungsi ini di "
 "Pusat Kawalan KDE."
 
-#: kio/kfileitemdelegate.cpp:236
-#, fuzzy, kde-format
-msgctxt "Items in a folder"
-msgid "1 item"
-msgid_plural "%1 items"
-msgstr[0] "Fail Log"
-
-#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
+#: kio/slavebase.h:266 kio/slavebase.h:286
 #, fuzzy
-#| msgid "Unknown"
-msgctxt "@info mimetype"
-msgid "Unknown"
-msgstr "Tidak Diketahui"
+#| msgid "&Reset"
+msgid "&Yes"
+msgstr "&Set Semula"
+
+#: kio/slavebase.h:267 kio/slavebase.h:287
+#, fuzzy
+msgid "&No"
+msgstr "Tiada"
 
 #: kio/passworddialog.cpp:62
 msgid "Authorization Dialog"
 msgstr "Dialog Keizinan"
 
-#: kio/job.cpp:158
-#, fuzzy
-#| msgid "Moving"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Mengalih"
-
-#: kio/job.cpp:159 kio/job.cpp:166 kio/job.cpp:191 kio/fileundomanager.cpp:120
-#, fuzzy
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Sumber:"
-
-#: kio/job.cpp:160 kio/job.cpp:167 kio/fileundomanager.cpp:121
-#, fuzzy
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Destinasi:"
-
-#: kio/job.cpp:165
-#, fuzzy
-#| msgid "Copying"
-msgctxt "@title job"
-msgid "Copying"
-msgstr "Menyalin"
-
-#: kio/job.cpp:172
-#, fuzzy
-msgctxt "@title job"
-msgid "Creating directory"
-msgstr "Mencipta Folder"
-
-#: kio/job.cpp:173 kio/fileundomanager.cpp:117
-msgid "Directory"
-msgstr ""
-
-#: kio/job.cpp:178
-#, fuzzy
-msgctxt "@title job"
-msgid "Deleting"
-msgstr " (Memadam)"
-
-#: kio/job.cpp:179 kio/job.cpp:185 kio/fileundomanager.cpp:124
-#, fuzzy
-msgid "File"
-msgstr "Tapi&s:"
-
-#: kio/job.cpp:184
-msgctxt "@title job"
-msgid "Examining"
-msgstr ""
-
-#: kio/job.cpp:190
-msgctxt "@title job"
-msgid "Transferring"
-msgstr ""
-
-#: kio/job.cpp:196
-#, fuzzy
-#| msgid "Mounting"
-msgctxt "@title job"
-msgid "Mounting"
-msgstr "Melekap"
-
-#: kio/job.cpp:197
-#, fuzzy
-msgid "Device"
-msgstr "Peranti:"
-
-#: kio/job.cpp:198 kio/job.cpp:204
-#, fuzzy
-msgid "Mountpoint"
-msgstr "Titik lekap:"
-
-#: kio/job.cpp:203
-#, fuzzy
-#| msgid "Unmounting"
-msgctxt "@title job"
-msgid "Unmounting"
-msgstr "Nyah-lekap"
-
-#: kio/fileundomanager.cpp:116
-#, fuzzy
-msgid "Creating directory"
-msgstr "Mencipta Folder"
-
-#: kio/fileundomanager.cpp:119
-#, fuzzy
-#| msgid "Moving"
-msgid "Moving"
-msgstr "Mengalih"
-
-#: kio/fileundomanager.cpp:123
-#, fuzzy
-msgid "Deleting"
-msgstr " (Memadam)"
-
-#: kio/fileundomanager.cpp:284
-msgid "Und&o"
-msgstr ""
-
-#: kio/fileundomanager.cpp:288
-msgid "Und&o: Copy"
-msgstr ""
-
-#: kio/fileundomanager.cpp:290
-msgid "Und&o: Link"
-msgstr ""
-
-#: kio/fileundomanager.cpp:292
-msgid "Und&o: Move"
-msgstr ""
-
-#: kio/fileundomanager.cpp:294
-#, fuzzy
-#| msgid "&Rename"
-msgid "Und&o: Rename"
-msgstr "Nama&kan semula"
-
-#: kio/fileundomanager.cpp:296
-#, fuzzy
-#| msgctxt "to trash"
-#| msgid "&Trash"
-msgid "Und&o: Trash"
-msgstr "&Tong Sampah"
-
-#: kio/fileundomanager.cpp:298
-#, fuzzy
-#| msgid "Could Not Create Folder"
-msgid "Und&o: Create Folder"
-msgstr "Tidak Dapat Cipta Folder"
-
-#: kio/fileundomanager.cpp:764
-#, kde-format
-msgid ""
-"The file %1 was copied from %2, but since then it has apparently been "
-"modified at %3.\n"
-"Undoing the copy will delete the file, and all modifications will be lost.\n"
-"Are you sure you want to delete %4?"
-msgstr ""
-
-#: kio/fileundomanager.cpp:767
-#, fuzzy
-#| msgid "Updating System Configuration"
-msgid "Undo File Copy Confirmation"
-msgstr "Mengemaskini Konfigurasi Sistem"
-
 #: kio/accessmanagerreply_p.cpp:69
 msgid "Blocked request."
 msgstr ""
 
+#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
+#: kio/kemailsettings.cpp:261
+#, fuzzy
+msgid "Default"
+msgstr " (Default)"
+
 #: kio/pastedialog.cpp:55
 msgid "Data format:"
 msgstr "Format datas"
+
+#: kio/skipdialog.cpp:40
+#, fuzzy
+msgid "Information"
+msgstr "Maklumat SSL KDE"
+
+#: kio/skipdialog.cpp:47
+msgid "Skip"
+msgstr "Langkau"
+
+#: kio/skipdialog.cpp:50
+#, fuzzy
+msgid "AutoSkip"
+msgstr "Autolangkau"
 
 #: kio/jobuidelegate.cpp:149 ../kfile/kdiroperator.cpp:815
 #, fuzzy, kde-format
@@ -2488,89 +2384,6 @@ msgstr "Pemilik:"
 msgid "Permissions:"
 msgstr "Keizinan:"
 
-#: kio/paste.cpp:48 kio/paste.cpp:130
-msgid "Filename for clipboard content:"
-msgstr "Nama fail untuk kandungan papan klip"
-
-#: kio/paste.cpp:123
-#, kde-format
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: kio/paste.cpp:139
-msgid ""
-"The clipboard has changed since you used 'paste': the chosen data format is "
-"no longer applicable. Please copy again what you wanted to paste."
-msgstr ""
-"Papan klip telah berubah semenjak anda menggunakan 'tampal': Format data "
-"yang telah dipilih sebelum ini tidak lagi boleh digunakan. Sila salin semula "
-"apa yang anda hendak tampal."
-
-#: kio/paste.cpp:210 kio/paste.cpp:277
-msgid "The clipboard is empty"
-msgstr "Papan klip kosong"
-
-#: kio/paste.cpp:324
-#, kde-format
-msgid "&Paste File"
-msgid_plural "&Paste %1 Files"
-msgstr[0] "%1 &Tampal fail"
-msgstr[1] "%1 &Tampal fail-fail"
-
-#: kio/paste.cpp:326
-#, kde-format
-msgid "&Paste URL"
-msgid_plural "&Paste %1 URLs"
-msgstr[0] "%1 &Tampal URL"
-msgstr[1] "%1 &Tampal URL-URL"
-
-#: kio/paste.cpp:328
-msgid "&Paste Clipboard Contents"
-msgstr "&Tampal kandungan papan klip"
-
-#: kio/slavebase.h:266 kio/slavebase.h:286
-#, fuzzy
-#| msgid "&Reset"
-msgid "&Yes"
-msgstr "&Set Semula"
-
-#: kio/slavebase.h:267 kio/slavebase.h:287
-#, fuzzy
-msgid "&No"
-msgstr "Tiada"
-
-#: kio/kbuildsycocaprogressdialog.cpp:45
-msgid "Updating System Configuration"
-msgstr "Mengemaskini Konfigurasi Sistem"
-
-#: kio/kbuildsycocaprogressdialog.cpp:46
-msgid "Updating system configuration."
-msgstr "Mengemaskini Konfigurasi Sistem."
-
-#: kio/kstatusbarofflineindicator.cpp:52
-msgid "The desktop is offline"
-msgstr ""
-
-#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
-#: kio/kemailsettings.cpp:261
-#, fuzzy
-msgid "Default"
-msgstr " (Default)"
-
-#: kio/skipdialog.cpp:40
-#, fuzzy
-msgid "Information"
-msgstr "Maklumat SSL KDE"
-
-#: kio/skipdialog.cpp:47
-msgid "Skip"
-msgstr "Langkau"
-
-#: kio/skipdialog.cpp:50
-#, fuzzy
-msgid "AutoSkip"
-msgstr "Autolangkau"
-
 #: kio/krun.cpp:126
 #, kde-format
 msgid ""
@@ -2640,6 +2453,16 @@ msgstr ""
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr ""
 
+#: kio/krun.cpp:1095 kio/renamedialog.cpp:387 kio/paste.cpp:228
+#: kio/kdirlister.cpp:329
+#, kde-format
+msgid ""
+"Malformed URL\n"
+"%1"
+msgstr ""
+"URL Punah\n"
+"%1"
+
 #: kio/krun.cpp:1128
 #, kde-format
 msgid ""
@@ -2654,14 +2477,190 @@ msgstr ""
 msgid "Could not find the program '%1'"
 msgstr "Tidak dapat mencari program '%1'"
 
-#: kio/kimageio.cpp:43
-msgid "All Pictures"
-msgstr "Semua Gambar"
+#: kio/copyjob.cpp:1326 kio/copyjob.cpp:1897
+msgid "Already Exists as Folder"
+msgstr "Sudah Wujud sebagai Folder"
 
-#: kio/kdbusservicestarter.cpp:76
+#: kio/kbuildsycocaprogressdialog.cpp:45
+msgid "Updating System Configuration"
+msgstr "Mengemaskini Konfigurasi Sistem"
+
+#: kio/kbuildsycocaprogressdialog.cpp:46
+msgid "Updating system configuration."
+msgstr "Mengemaskini Konfigurasi Sistem."
+
+#: kio/kstatusbarofflineindicator.cpp:52
+msgid "The desktop is offline"
+msgstr ""
+
+#: kio/renamedialog.cpp:122
+msgid "Appl&y to All"
+msgstr ""
+
+#: kio/renamedialog.cpp:123
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"folder conflicts for the remainder of the current job.\n"
+"Unless you press Skip you will still be prompted in case of a conflict with "
+"an existing file in the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:124
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"conflicts for the remainder of the current job."
+msgstr ""
+
+#: kio/renamedialog.cpp:129
+msgid "&Rename"
+msgstr "Nama&kan semula"
+
+#: kio/renamedialog.cpp:131
+msgid "Suggest New &Name"
+msgstr "Cadangkan &Nama Baru "
+
+#: kio/renamedialog.cpp:137
+msgid "&Skip"
+msgstr "Langka&u"
+
+#: kio/renamedialog.cpp:138
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:139
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:144
+#, fuzzy
+#| msgid "Write"
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "Tulis"
+
+#: kio/renamedialog.cpp:144
+msgid "&Overwrite"
+msgstr "&Tulis semula"
+
+#: kio/renamedialog.cpp:146
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:151
+msgid "&Resume"
+msgstr "Sa&mbung"
+
+#: kio/renamedialog.cpp:160
 #, kde-format
-msgid "No service implementing %1"
-msgstr "Tiada servis melaksnakan %1"
+msgid ""
+"This action would overwrite '%1' with itself.\n"
+"Please enter a new file name:"
+msgstr ""
+"Aksi ini akan tindih '%1' dengan dirinya sendiri.\n"
+"Sila masukkan nama fail baru:"
+
+#: kio/renamedialog.cpp:162
+msgid "C&ontinue"
+msgstr "Samb&ung"
+
+#: kio/renamedialog.cpp:234
+#, fuzzy, kde-format
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite '%1' with a newer file '%2'."
+msgstr ""
+"Aksi ini akan tindih '%1' dengan dirinya sendiri.\n"
+"Sila masukkan nama fail baru:"
+
+#: kio/renamedialog.cpp:236
+#, fuzzy, kde-format
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite '%1' with a file of the same age '%2'."
+msgstr ""
+"Aksi ini akan tindih '%1' dengan dirinya sendiri.\n"
+"Sila masukkan nama fail baru:"
+
+#: kio/renamedialog.cpp:238
+#, fuzzy, kde-format
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite '%1' with an older file '%2'."
+msgstr ""
+"Aksi ini akan tindih '%1' dengan dirinya sendiri.\n"
+"Sila masukkan nama fail baru:"
+
+#: kio/renamedialog.cpp:242
+#, fuzzy
+msgid "Source"
+msgstr "Sumber:"
+
+#: kio/renamedialog.cpp:243
+#, fuzzy
+msgid "Destination"
+msgstr "Destinasi:"
+
+#: kio/renamedialog.cpp:261
+#, kde-format
+msgid "An older item named '%1' already exists."
+msgstr "Item lebih lama bernama '%1' sudah wujud."
+
+#: kio/renamedialog.cpp:263
+#, kde-format
+msgid "A similar file named '%1' already exists."
+msgstr "Fail bernama '%1' sudah wujud."
+
+#: kio/renamedialog.cpp:265
+#, kde-format
+msgid "A newer item named '%1' already exists."
+msgstr "Fail lebih baru '%1' sudah wujud."
+
+#: kio/paste.cpp:48 kio/paste.cpp:130
+msgid "Filename for clipboard content:"
+msgstr "Nama fail untuk kandungan papan klip"
+
+#: kio/paste.cpp:123
+#, kde-format
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: kio/paste.cpp:139
+msgid ""
+"The clipboard has changed since you used 'paste': the chosen data format is "
+"no longer applicable. Please copy again what you wanted to paste."
+msgstr ""
+"Papan klip telah berubah semenjak anda menggunakan 'tampal': Format data "
+"yang telah dipilih sebelum ini tidak lagi boleh digunakan. Sila salin semula "
+"apa yang anda hendak tampal."
+
+#: kio/paste.cpp:210 kio/paste.cpp:277
+msgid "The clipboard is empty"
+msgstr "Papan klip kosong"
+
+#: kio/paste.cpp:324
+#, kde-format
+msgid "&Paste File"
+msgid_plural "&Paste %1 Files"
+msgstr[0] "%1 &Tampal fail"
+msgstr[1] "%1 &Tampal fail-fail"
+
+#: kio/paste.cpp:326
+#, kde-format
+msgid "&Paste URL"
+msgid_plural "&Paste %1 URLs"
+msgstr[0] "%1 &Tampal URL"
+msgstr[1] "%1 &Tampal URL-URL"
+
+#: kio/paste.cpp:328
+msgid "&Paste Clipboard Contents"
+msgstr "&Tampal kandungan papan klip"
 
 #: kio/kdirlister.cpp:339
 #, kde-format
@@ -2670,9 +2669,10 @@ msgid ""
 "%1"
 msgstr ""
 
-#: kio/copyjob.cpp:1326 kio/copyjob.cpp:1897
-msgid "Already Exists as Folder"
-msgstr "Sudah Wujud sebagai Folder"
+#: kio/kdbusservicestarter.cpp:76
+#, kde-format
+msgid "No service implementing %1"
+msgstr "Tiada servis melaksnakan %1"
 
 #: kio/chmodjob.cpp:215
 #, kde-format
@@ -3072,6 +3072,28 @@ msgstr ""
 msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgstr "*.adr|Opera Bookmark Files (*.adr)"
 
+#: kfile/kfilemetadataprovider.cpp:303
+#, fuzzy
+#| msgid "Sorting"
+msgctxt "@label"
+msgid "Rating"
+msgstr "Isihan"
+
+#: kfile/kfilemetadataprovider.cpp:305
+#, fuzzy
+#| msgctxt "to trash"
+#| msgid "&Trash"
+msgctxt "@label"
+msgid "Tags"
+msgstr "&Tong Sampah"
+
+#: kfile/kfilemetadataprovider.cpp:307 kfile/knfotranslator.cpp:39
+#, fuzzy
+#| msgid "Comment"
+msgctxt "@label"
+msgid "Comment"
+msgstr "Komen"
+
 #: kfile/kfiledialog.cpp:129
 #, fuzzy
 #| msgid "*|All Files"
@@ -3102,6 +3124,33 @@ msgstr ""
 #: kfile/kurlrequester.cpp:242
 msgid "Open file dialog"
 msgstr "Buka dialog fail"
+
+#: kfile/kfilemetainfowidget.cpp:163
+msgid "<Error>"
+msgstr "<Error>"
+
+#: kfile/kmetaprops.cpp:57
+msgctxt "@title:window"
+msgid "Configure Shown Data"
+msgstr ""
+
+#: kfile/kmetaprops.cpp:62
+msgctxt "@label::textbox"
+msgid "Configure which data should be shown"
+msgstr ""
+
+#: kfile/kmetaprops.cpp:120
+#, fuzzy
+#| msgid "Calculating..."
+msgctxt "@action:button"
+msgid "Configure..."
+msgstr "Mengira..."
+
+#: kfile/kmetaprops.cpp:130
+#, fuzzy
+msgctxt "@title:tab"
+msgid "Information"
+msgstr "Maklumat SSL KDE"
 
 #: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
 msgid "Owner"
@@ -3219,37 +3268,10 @@ msgstr "Mengubah kebenaran zonmasa: %s"
 msgid "Effective"
 msgstr "Lokaliti Tapisan Efektif"
 
-#: kfile/kmetaprops.cpp:57
-msgctxt "@title:window"
-msgid "Configure Shown Data"
-msgstr ""
-
-#: kfile/kmetaprops.cpp:62
-msgctxt "@label::textbox"
-msgid "Configure which data should be shown"
-msgstr ""
-
-#: kfile/kmetaprops.cpp:120
-#, fuzzy
-#| msgid "Calculating..."
-msgctxt "@action:button"
-msgid "Configure..."
-msgstr "Mengira..."
-
-#: kfile/kmetaprops.cpp:130
-#, fuzzy
-msgctxt "@title:tab"
-msgid "Information"
-msgstr "Maklumat SSL KDE"
-
 #: kfile/kdevicelistmodel.cpp:116
 #, fuzzy
 msgid "Device name"
 msgstr "Peranti:"
-
-#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:994
-msgid "Location:"
-msgstr "Lokasi:"
 
 #: kfile/kfilesharedialog.cpp:59
 msgid "&Share"
@@ -3326,246 +3348,40 @@ msgstr ""
 "Ralat berlaku semasa cuba nyahkongsi folder '%1'. Pastikan skrip Perl "
 "'fileshareset' adalah set suid root."
 
+#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:994
+msgid "Location:"
+msgstr "Lokasi:"
+
 #: kfile/kpreviewprops.cpp:50
 msgid "P&review"
 msgstr "&Prapapar"
 
-#: kfile/knfotranslator.cpp:39 kfile/kfilemetadataprovider.cpp:307
+#: kfile/kcommentwidget.cpp:61
+#, fuzzy
+msgctxt "@label"
+msgid "Add Comment..."
+msgstr "Tambah masukan PXE"
+
+#: kfile/kcommentwidget.cpp:67
+#, fuzzy
+#| msgid "Calculating..."
+msgctxt "@label"
+msgid "Change..."
+msgstr "Mengira..."
+
+#: kfile/kcommentwidget.cpp:109
 #, fuzzy
 #| msgid "Comment"
-msgctxt "@label"
-msgid "Comment"
+msgctxt "@title:window"
+msgid "Change Comment"
 msgstr "Komen"
 
-#: kfile/knfotranslator.cpp:40
+#: kfile/kcommentwidget.cpp:110
 #, fuzzy
-#| msgid "Created:"
-msgctxt "@label creation date"
-msgid "Created"
-msgstr "Dicipta:"
-
-#: kfile/knfotranslator.cpp:41
-#, fuzzy
-#| msgid "Size"
-msgctxt "@label file content size"
-msgid "Size"
-msgstr "Saiz"
-
-#: kfile/knfotranslator.cpp:42
-msgctxt "@label file depends from"
-msgid "Depends"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:43
-#, fuzzy
-#| msgid "Parent Folder"
-msgctxt "@label parent directory"
-msgid "Part of"
-msgstr "Folder Induk"
-
-#: kfile/knfotranslator.cpp:44
-#, fuzzy
-#| msgid "Modified:"
-msgctxt "@label modified date of file"
-msgid "Modified"
-msgstr "Diubah Suai:"
-
-#: kfile/knfotranslator.cpp:45
-#, fuzzy
-#| msgid "Mime Type"
-msgctxt "@label"
-msgid "MIME Type"
-msgstr "Jenis Mime"
-
-#: kfile/knfotranslator.cpp:46
-#, fuzzy
-#| msgid "Contents:"
-msgctxt "@label"
-msgid "Content"
-msgstr "Kandungan:"
-
-#: kfile/knfotranslator.cpp:47
-#, fuzzy
-msgctxt "@label music title"
-msgid "Title"
-msgstr "Tapi&s:"
-
-#: kfile/knfotranslator.cpp:48
-#, fuzzy
-#| msgid "Location:"
-msgctxt "@label file URL"
-msgid "Location"
-msgstr "Lokasi:"
-
-#: kfile/knfotranslator.cpp:49
-#, fuzzy
-#| msgid "Created:"
-msgctxt "@label"
-msgid "Creator"
-msgstr "Dicipta:"
-
-#: kfile/knfotranslator.cpp:50
-msgctxt "@label"
-msgid "Average Bitrate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:51
-msgctxt "@label"
-msgid "Channels"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:52
-#, fuzzy
-msgctxt "@label number of characters"
-msgid "Characters"
-msgstr "Kategori"
-
-#: kfile/knfotranslator.cpp:53
-#, fuzzy
-#| msgid "C&onnect"
-msgctxt "@label"
-msgid "Codec"
-msgstr "&Sambung"
-
-#: kfile/knfotranslator.cpp:54
-msgctxt "@label"
-msgid "Color Depth"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:55
-#, fuzzy
-msgctxt "@label"
-msgid "Filename"
-msgstr "Peranti:"
-
-#: kfile/knfotranslator.cpp:56
-msgctxt "@label"
-msgid "Height"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:57
-msgctxt "@label"
-msgid "Interlace Mode"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:58
-#, fuzzy
-#| msgid "Link"
-msgctxt "@label number of lines"
-msgid "Lines"
-msgstr "Pautan"
-
-#: kfile/knfotranslator.cpp:59
-msgctxt "@label"
-msgid "Programming Language"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:60
-msgctxt "@label"
-msgid "Sample Rate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:61
-#, fuzzy
-#| msgid "Write"
-msgctxt "@label"
-msgid "Width"
-msgstr "Tulis"
-
-#: kfile/knfotranslator.cpp:62
-msgctxt "@label number of words"
-msgid "Words"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:63
-msgctxt "@label EXIF aperture value"
-msgid "Aperture"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:64
-msgctxt "@label EXIF"
-msgid "Exposure Bias Value"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:65
-#, fuzzy
-#| msgid "Exposure:"
-msgctxt "@label EXIF"
-msgid "Exposure Time"
-msgstr "Pendedahan:"
-
-#: kfile/knfotranslator.cpp:66
-#, fuzzy
-#| msgid "Class"
-msgctxt "@label EXIF"
-msgid "Flash"
-msgstr "Kelas"
-
-#: kfile/knfotranslator.cpp:67
-msgctxt "@label EXIF"
-msgid "Focal Length"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:68
-msgctxt "@label EXIF"
-msgid "Focal Length 35 mm"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:69
-msgctxt "@label EXIF"
-msgid "ISO Speed Ratings"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:70
-#, fuzzy
-msgctxt "@label EXIF"
-msgid "Make"
-msgstr "Topengan"
-
-#: kfile/knfotranslator.cpp:71
-msgctxt "@label EXIF"
-msgid "Metering Mode"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:72
-msgctxt "@label EXIF"
-msgid "Model"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:73
-#, fuzzy
-#| msgid "Organization:"
-msgctxt "@label EXIF"
-msgid "Orientation"
-msgstr "Organisasi:"
-
-#: kfile/knfotranslator.cpp:74
-msgctxt "@label EXIF"
-msgid "White Balance"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:75
-#, fuzzy
-#| msgid "&General"
-msgctxt "@label music genre"
-msgid "Genre"
-msgstr "U&mum"
-
-#: kfile/knfotranslator.cpp:76
-msgctxt "@label music album"
-msgid "Album"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:77
-msgctxt "@label music track number"
-msgid "Track"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:78 kfile/kfilemetadatawidget.cpp:575
-#, fuzzy
-msgctxt "@label file type"
-msgid "Type"
-msgstr "Jenis"
+#| msgid "Comment"
+msgctxt "@title:window"
+msgid "Add Comment"
+msgstr "Komen"
 
 #: kfile/kencodingfiledialog.cpp:50
 #, fuzzy
@@ -4154,66 +3970,235 @@ msgstr "Hanya boleh laksana dalam sistem fail setempat adalah disokong."
 msgid "Advanced Options for %1"
 msgstr "Opsyen Lanjutan untuk %1"
 
-#: kfile/kfilemetadatawidget.cpp:494
+#: kfile/knfotranslator.cpp:40
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label creation date"
+msgid "Created"
+msgstr "Dicipta:"
+
+#: kfile/knfotranslator.cpp:41
 #, fuzzy
 #| msgid "Size"
-msgctxt "@label"
+msgctxt "@label file content size"
 msgid "Size"
 msgstr "Saiz"
 
-#: kfile/kfilemetadatawidget.cpp:496
-#, fuzzy
-#| msgid "No Folders"
-msgctxt "@label"
-msgid "Folder"
-msgstr "Tiada Folder"
+#: kfile/knfotranslator.cpp:42
+msgctxt "@label file depends from"
+msgid "Depends"
+msgstr ""
 
-#: kfile/kfilemetadatawidget.cpp:512
+#: kfile/knfotranslator.cpp:43
 #, fuzzy
-#| msgid "Size:"
-msgctxt "@label"
-msgid "Total Size"
-msgstr "Saiz:"
+#| msgid "Parent Folder"
+msgctxt "@label parent directory"
+msgid "Part of"
+msgstr "Folder Induk"
 
-#: kfile/kfilemetadatawidget.cpp:577
+#: kfile/knfotranslator.cpp:44
 #, fuzzy
 #| msgid "Modified:"
-msgctxt "@label"
+msgctxt "@label modified date of file"
 msgid "Modified"
 msgstr "Diubah Suai:"
 
-#: kfile/kfilemetadatawidget.cpp:578
+#: kfile/knfotranslator.cpp:45
 #, fuzzy
-#| msgid "Owner"
+#| msgid "Mime Type"
 msgctxt "@label"
-msgid "Owner"
-msgstr "Pemilik"
+msgid "MIME Type"
+msgstr "Jenis Mime"
 
-#: kfile/kfilemetadatawidget.cpp:579
+#: kfile/knfotranslator.cpp:46
 #, fuzzy
-#| msgid "Permissions"
+#| msgid "Contents:"
 msgctxt "@label"
-msgid "Permissions"
-msgstr "Keizinan"
+msgid "Content"
+msgstr "Kandungan:"
 
-#: kfile/kfilemetadataprovider.cpp:303
+#: kfile/knfotranslator.cpp:47
 #, fuzzy
-#| msgid "Sorting"
-msgctxt "@label"
-msgid "Rating"
-msgstr "Isihan"
+msgctxt "@label music title"
+msgid "Title"
+msgstr "Tapi&s:"
 
-#: kfile/kfilemetadataprovider.cpp:305
+#: kfile/knfotranslator.cpp:48
 #, fuzzy
-#| msgctxt "to trash"
-#| msgid "&Trash"
-msgctxt "@label"
-msgid "Tags"
-msgstr "&Tong Sampah"
+#| msgid "Location:"
+msgctxt "@label file URL"
+msgid "Location"
+msgstr "Lokasi:"
 
-#: kfile/kfilemetainfowidget.cpp:163
-msgid "<Error>"
-msgstr "<Error>"
+#: kfile/knfotranslator.cpp:49
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label"
+msgid "Creator"
+msgstr "Dicipta:"
+
+#: kfile/knfotranslator.cpp:50
+msgctxt "@label"
+msgid "Average Bitrate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:51
+msgctxt "@label"
+msgid "Channels"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:52
+#, fuzzy
+msgctxt "@label number of characters"
+msgid "Characters"
+msgstr "Kategori"
+
+#: kfile/knfotranslator.cpp:53
+#, fuzzy
+#| msgid "C&onnect"
+msgctxt "@label"
+msgid "Codec"
+msgstr "&Sambung"
+
+#: kfile/knfotranslator.cpp:54
+msgctxt "@label"
+msgid "Color Depth"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:55
+#, fuzzy
+msgctxt "@label"
+msgid "Filename"
+msgstr "Peranti:"
+
+#: kfile/knfotranslator.cpp:56
+msgctxt "@label"
+msgid "Height"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:57
+msgctxt "@label"
+msgid "Interlace Mode"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:58
+#, fuzzy
+#| msgid "Link"
+msgctxt "@label number of lines"
+msgid "Lines"
+msgstr "Pautan"
+
+#: kfile/knfotranslator.cpp:59
+msgctxt "@label"
+msgid "Programming Language"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:60
+msgctxt "@label"
+msgid "Sample Rate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:61
+#, fuzzy
+#| msgid "Write"
+msgctxt "@label"
+msgid "Width"
+msgstr "Tulis"
+
+#: kfile/knfotranslator.cpp:62
+msgctxt "@label number of words"
+msgid "Words"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:63
+msgctxt "@label EXIF aperture value"
+msgid "Aperture"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:64
+msgctxt "@label EXIF"
+msgid "Exposure Bias Value"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:65
+#, fuzzy
+#| msgid "Exposure:"
+msgctxt "@label EXIF"
+msgid "Exposure Time"
+msgstr "Pendedahan:"
+
+#: kfile/knfotranslator.cpp:66
+#, fuzzy
+#| msgid "Class"
+msgctxt "@label EXIF"
+msgid "Flash"
+msgstr "Kelas"
+
+#: kfile/knfotranslator.cpp:67
+msgctxt "@label EXIF"
+msgid "Focal Length"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:68
+msgctxt "@label EXIF"
+msgid "Focal Length 35 mm"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:69
+msgctxt "@label EXIF"
+msgid "ISO Speed Ratings"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:70
+#, fuzzy
+msgctxt "@label EXIF"
+msgid "Make"
+msgstr "Topengan"
+
+#: kfile/knfotranslator.cpp:71
+msgctxt "@label EXIF"
+msgid "Metering Mode"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:72
+msgctxt "@label EXIF"
+msgid "Model"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:73
+#, fuzzy
+#| msgid "Organization:"
+msgctxt "@label EXIF"
+msgid "Orientation"
+msgstr "Organisasi:"
+
+#: kfile/knfotranslator.cpp:74
+msgctxt "@label EXIF"
+msgid "White Balance"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:75
+#, fuzzy
+#| msgid "&General"
+msgctxt "@label music genre"
+msgid "Genre"
+msgstr "U&mum"
+
+#: kfile/knfotranslator.cpp:76
+msgctxt "@label music album"
+msgid "Album"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:77
+msgctxt "@label music track number"
+msgid "Track"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:78 kfile/kfilemetadatawidget.cpp:575
+#, fuzzy
+msgctxt "@label file type"
+msgid "Type"
+msgstr "Jenis"
 
 #: kfile/kopenwithdialog.cpp:269
 msgid "Known Applications"
@@ -4314,32 +4299,47 @@ msgstr ""
 msgid "'%1' not found, please type a valid program name."
 msgstr ""
 
-#: kfile/kcommentwidget.cpp:61
+#: kfile/kfilemetadatawidget.cpp:494
 #, fuzzy
+#| msgid "Size"
 msgctxt "@label"
-msgid "Add Comment..."
-msgstr "Tambah masukan PXE"
+msgid "Size"
+msgstr "Saiz"
 
-#: kfile/kcommentwidget.cpp:67
+#: kfile/kfilemetadatawidget.cpp:496
 #, fuzzy
-#| msgid "Calculating..."
+#| msgid "No Folders"
 msgctxt "@label"
-msgid "Change..."
-msgstr "Mengira..."
+msgid "Folder"
+msgstr "Tiada Folder"
 
-#: kfile/kcommentwidget.cpp:109
+#: kfile/kfilemetadatawidget.cpp:512
 #, fuzzy
-#| msgid "Comment"
-msgctxt "@title:window"
-msgid "Change Comment"
-msgstr "Komen"
+#| msgid "Size:"
+msgctxt "@label"
+msgid "Total Size"
+msgstr "Saiz:"
 
-#: kfile/kcommentwidget.cpp:110
+#: kfile/kfilemetadatawidget.cpp:577
 #, fuzzy
-#| msgid "Comment"
-msgctxt "@title:window"
-msgid "Add Comment"
-msgstr "Komen"
+#| msgid "Modified:"
+msgctxt "@label"
+msgid "Modified"
+msgstr "Diubah Suai:"
+
+#: kfile/kfilemetadatawidget.cpp:578
+#, fuzzy
+#| msgid "Owner"
+msgctxt "@label"
+msgid "Owner"
+msgstr "Pemilik"
+
+#: kfile/kfilemetadatawidget.cpp:579
+#, fuzzy
+#| msgid "Permissions"
+msgctxt "@label"
+msgid "Permissions"
+msgstr "Keizinan"
 
 #: kfile/kfilemetadataconfigurationwidget.cpp:171
 #, fuzzy
@@ -6495,14 +6495,6 @@ msgstr ""
 "buku. <p> Tanda buku ini khusus untuk dialog fail, jika tidak ia beroperasi "
 "seperti tanda buku di tempat lain dalam KDE.</qt>"
 
-#: ../kfile/kurlnavigatortogglebutton.cpp:90
-msgid "Click for Location Navigation"
-msgstr ""
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:92
-msgid "Click to Edit Location"
-msgstr ""
-
 #: ../kfile/kdiroperator.cpp:769 ../kfile/kdirselectdialog.cpp:156
 #, kde-format
 msgid "A file or folder named %1 already exists."
@@ -6687,27 +6679,6 @@ msgstr "Buka dialog fail"
 msgid "&View"
 msgstr "&Prapapar"
 
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
-#, fuzzy
-#| msgid "Devices"
-msgctxt "@item:inmenu"
-msgid "Devices"
-msgstr "Peranti"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
-#, fuzzy
-#| msgid "SSL version:"
-msgctxt "@item:inmenu"
-msgid "Subversion"
-msgstr "Versi SSL:"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
-#, fuzzy
-#| msgid "Others"
-msgctxt "@item:inmenu"
-msgid "Other"
-msgstr "Lain-lain"
-
 #: ../kfile/kdirselectdialog.cpp:128
 #, fuzzy
 #| msgid "New Folder"
@@ -6767,6 +6738,14 @@ msgstr "Papar Folder Tersembunyi"
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Ciri-ciri untuk %1"
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:90
+msgid "Click for Location Navigation"
+msgstr ""
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:92
+msgid "Click to Edit Location"
+msgstr ""
 
 #: ../kfile/kfileplacesview.cpp:569
 #, fuzzy
@@ -7081,6 +7060,27 @@ msgstr "Ralat yang tidak terjangka (%1) berlaku ketika cuba untuk %2."
 #| msgid "Show Hidden Folders"
 msgid "Show Hidden Folders"
 msgstr "Papar Folder Tersembunyi"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
+#, fuzzy
+#| msgid "Devices"
+msgctxt "@item:inmenu"
+msgid "Devices"
+msgstr "Peranti"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
+#, fuzzy
+#| msgid "SSL version:"
+msgctxt "@item:inmenu"
+msgid "Subversion"
+msgstr "Versi SSL:"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
+#, fuzzy
+#| msgid "Others"
+msgctxt "@item:inmenu"
+msgid "Other"
+msgstr "Lain-lain"
 
 #, fuzzy
 #~| msgid "%1 (%2)"
