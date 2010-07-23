@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-07-21 05:20+0200\n"
+"POT-Creation-Date: 2010-07-23 05:24+0200\n"
 "PO-Revision-Date: 2009-06-14 00:43+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -3382,17 +3382,6 @@ msgstr ""
 msgid "Show under Various Artists"
 msgstr ""
 
-#: core-impl/collections/sqlcollection/ScanResultProcessor.cpp:208
-msgctxt "Front cover of an album"
-msgid "front"
-msgstr ""
-
-#: core-impl/collections/sqlcollection/ScanResultProcessor.cpp:216
-#, fuzzy
-msgctxt "(Front) Cover of an album"
-msgid "cover"
-msgstr "Papar &Sejarah"
-
 #. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:21
 #. i18n: ectx: property (windowTitle), widget (QWidget, OrganizeCollectionDialogBase)
 #: core-impl/collections/sqlcollection/SqlCollectionFactory.cpp:107
@@ -3442,19 +3431,6 @@ msgstr "Nilaian: %1"
 msgid "Imported Playlist Files"
 msgstr "&Import Gaya"
 
-#. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:90
-#. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: core-impl/collections/sqlcollection/SqlMeta.cpp:230 rc.cpp:2717
-msgid "Stream"
-msgstr "Stream"
-
-#: core-impl/collections/sqlcollection/SqlMeta.cpp:243
-#: covermanager/CoverManager.cpp:845 covermanager/CoverViewDialog.h:44
-#: services/lastfm/meta/LastFmMeta.cpp:138
-#, kde-format
-msgid "%1 - %2"
-msgstr "%1 - %2"
-
 #: core-impl/collections/sqlcollection/ScanManager.cpp:547
 msgid ""
 "<p>Sorry, the collection scan had to be aborted.</p><p>Too many errors were "
@@ -3468,6 +3444,30 @@ msgstr ""
 #: core-impl/collections/sqlcollection/ScanManager.cpp:669
 msgid "Scanning music"
 msgstr ""
+
+#: core-impl/collections/sqlcollection/ScanResultProcessor.cpp:211
+msgctxt "Front cover of an album"
+msgid "front"
+msgstr ""
+
+#: core-impl/collections/sqlcollection/ScanResultProcessor.cpp:219
+#, fuzzy
+msgctxt "(Front) Cover of an album"
+msgid "cover"
+msgstr "Papar &Sejarah"
+
+#. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:90
+#. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
+#: core-impl/collections/sqlcollection/SqlMeta.cpp:231 rc.cpp:2717
+msgid "Stream"
+msgstr "Stream"
+
+#: core-impl/collections/sqlcollection/SqlMeta.cpp:244
+#: covermanager/CoverManager.cpp:845 covermanager/CoverViewDialog.h:44
+#: services/lastfm/meta/LastFmMeta.cpp:138
+#, kde-format
+msgid "%1 - %2"
+msgstr "%1 - %2"
 
 #: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:40
 #, kde-format
@@ -4668,70 +4668,6 @@ msgid ""
 "been discarded."
 msgstr ""
 
-#: dialogs/EqualizerDialog.cpp:45
-#, fuzzy
-msgid "Configure Equalizer"
-msgstr "Konfigur Panel"
-
-#: dialogs/EqualizerDialog.cpp:79
-msgid "Sorry, equalizer is not supported by your Phonon version."
-msgstr ""
-
-#: dialogs/EqualizerDialog.cpp:146 dialogs/EqualizerDialog.cpp:236
-#: dialogs/EqualizerDialog.cpp:288
-#, fuzzy
-msgctxt "Equalizer state, as in, disabled"
-msgid "Off"
-msgstr "Off"
-
-#: dialogs/EqualizerDialog.cpp:244
-#, fuzzy
-#| msgid "Delete failed"
-msgid "Cannot delete this preset"
-msgstr "Gagal untuk memadam"
-
-#: dialogs/EqualizerDialog.cpp:245
-#, fuzzy
-msgid "Default presets can not be deleted"
-msgstr "Ralat - %s tidak dijumpai"
-
-#: dialogs/EqualizerDialog.cpp:246
-#, fuzzy
-msgid "Error deleting preset"
-msgstr "Utiliti Media Mudah Alih"
-
-#: dialogs/EqualizerDialog.cpp:256
-#, fuzzy
-msgid "Cannot restore this preset"
-msgstr "Ralat mengimport fail %s"
-
-#: dialogs/EqualizerDialog.cpp:257
-#, fuzzy
-msgid "Only default presets can be restored"
-msgstr "Ralat - %s tidak dijumpai"
-
-#: dialogs/EqualizerDialog.cpp:258
-#, fuzzy
-msgid "Error restoring preset"
-msgstr "Ralat mengimport fail %s"
-
-#: dialogs/EqualizerDialog.cpp:275
-#, fuzzy
-msgid "Cannot save this preset"
-msgstr "Utiliti Media Mudah Alih"
-
-#: dialogs/EqualizerDialog.cpp:276
-msgid ""
-"Preset 'Manual' is reserved for momentary settings.\n"
-"                                              Please choose different name "
-"and try again."
-msgstr ""
-
-#: dialogs/EqualizerDialog.cpp:278
-#, fuzzy
-msgid "Error saving preset"
-msgstr "Utiliti Media Mudah Alih"
-
 #: dialogs/OrganizeCollectionDialog.cpp:137
 #: dialogs/OrganizeCollectionDialog.cpp:140
 #, kde-format
@@ -5488,6 +5424,72 @@ msgstr ""
 #, fuzzy
 msgid "Folder"
 msgstr "Folder"
+
+#: dialogs/EqualizerDialog.cpp:45
+#, fuzzy
+msgid "Configure Equalizer"
+msgstr "Konfigur Panel"
+
+#: dialogs/EqualizerDialog.cpp:79
+msgid ""
+"Sorry, your current Phonon backend version does not provide equalizer "
+"support."
+msgstr ""
+
+#: dialogs/EqualizerDialog.cpp:146 dialogs/EqualizerDialog.cpp:236
+#: dialogs/EqualizerDialog.cpp:288
+#, fuzzy
+msgctxt "Equalizer state, as in, disabled"
+msgid "Off"
+msgstr "Off"
+
+#: dialogs/EqualizerDialog.cpp:244
+#, fuzzy
+#| msgid "Delete failed"
+msgid "Cannot delete this preset"
+msgstr "Gagal untuk memadam"
+
+#: dialogs/EqualizerDialog.cpp:245
+#, fuzzy
+msgid "Default presets can not be deleted"
+msgstr "Ralat - %s tidak dijumpai"
+
+#: dialogs/EqualizerDialog.cpp:246
+#, fuzzy
+msgid "Error deleting preset"
+msgstr "Utiliti Media Mudah Alih"
+
+#: dialogs/EqualizerDialog.cpp:256
+#, fuzzy
+msgid "Cannot restore this preset"
+msgstr "Ralat mengimport fail %s"
+
+#: dialogs/EqualizerDialog.cpp:257
+#, fuzzy
+msgid "Only default presets can be restored"
+msgstr "Ralat - %s tidak dijumpai"
+
+#: dialogs/EqualizerDialog.cpp:258
+#, fuzzy
+msgid "Error restoring preset"
+msgstr "Ralat mengimport fail %s"
+
+#: dialogs/EqualizerDialog.cpp:275
+#, fuzzy
+msgid "Cannot save this preset"
+msgstr "Utiliti Media Mudah Alih"
+
+#: dialogs/EqualizerDialog.cpp:276
+msgid ""
+"Preset 'Manual' is reserved for momentary settings.\n"
+"                                              Please choose different name "
+"and try again."
+msgstr ""
+
+#: dialogs/EqualizerDialog.cpp:278
+#, fuzzy
+msgid "Error saving preset"
+msgstr "Utiliti Media Mudah Alih"
 
 #: dynamic/BiasedPlaylist.cpp:142
 msgid "Generating playlist..."
@@ -10715,7 +10717,7 @@ msgstr ""
 #. i18n: file: context/applets/labels/labelsSettings.ui:113
 #. i18n: ectx: property (toolTip), widget (QSpinBox, minAutoAddCountSpinBox)
 #: rc.cpp:1488 rc.cpp:1505
-msgid "Show only lables that are rated at least that high"
+msgid "Show only labels that are rated at least that high"
 msgstr ""
 
 #. i18n: file: context/applets/labels/labelsSettings.ui:52
@@ -10734,7 +10736,7 @@ msgstr ""
 #. i18n: file: context/applets/labels/labelsSettings.ui:88
 #. i18n: ectx: property (text), widget (QCheckBox, autoAddCheckBox)
 #: rc.cpp:1499
-msgid "Automaticly add downloaded labels if none are assigned"
+msgid "Automatically add downloaded labels if none are assigned"
 msgstr ""
 
 #. i18n: file: context/applets/labels/labelsSettings.ui:128
