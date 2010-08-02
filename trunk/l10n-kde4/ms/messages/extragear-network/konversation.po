@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-01 05:14+0200\n"
+"POT-Creation-Date: 2010-08-02 05:05+0200\n"
 "PO-Revision-Date: 2008-02-22 22:30+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -23,7 +23,7 @@ msgstr "Penyunting teks XEmacs."
 #. i18n: ectx: property (text), widget (QPushButton, newButton)
 #: src/config/alias_config.cpp:162 src/config/highlight_config.cpp:246
 #: src/config/watchednicknames_config.cpp:218
-#: src/config/quickbuttons_config.cpp:201 rc.cpp:940
+#: src/config/quickbuttons_config.cpp:201 src/urlcatcher.cpp:305 rc.cpp:940
 #, fuzzy
 msgid "New"
 msgstr "Baru"
@@ -122,11 +122,6 @@ msgstr ""
 #: src/config/nicklistbehavior_config.cpp:58
 msgid "Channel Owners (+q)"
 msgstr ""
-
-#: src/config/preferences.cpp:50
-#, fuzzy
-msgid "Default Identity"
-msgstr "Bahasa default:"
 
 #: src/config/settingsdialog.cpp:46
 #, fuzzy
@@ -388,6 +383,11 @@ msgstr ""
 #: src/config/warnings_config.cpp:140
 msgid "Warn when sending characters incompatible with your current encoding"
 msgstr ""
+
+#: src/config/preferences.cpp:50
+#, fuzzy
+msgid "Default Identity"
+msgstr "Bahasa default:"
 
 #: src/dbus.cpp:144
 #, kde-format
@@ -779,7 +779,7 @@ msgstr ""
 msgid "Outgoing Transfers"
 msgstr ""
 
-#: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2163
+#: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2153
 #, fuzzy
 msgid "DCC Status"
 msgstr "Bar &status"
@@ -1312,8 +1312,8 @@ msgstr ""
 
 #. i18n: file: src/irc/channellistpanelui.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ChannelListWidgetUI)
-#: src/irc/channellistpanel.cpp:145 src/viewer/viewcontainer.cpp:2467
-#: src/viewer/viewcontainer.cpp:2525 rc.cpp:1630
+#: src/irc/channellistpanel.cpp:145 src/viewer/viewcontainer.cpp:2457
+#: src/viewer/viewcontainer.cpp:2515 rc.cpp:1630
 #, fuzzy
 msgid "Channel List"
 msgstr "Senarai Arab"
@@ -1410,114 +1410,13 @@ msgstr "Mempunyai &Heading"
 
 #. i18n: file: src/config/nicklistbehavior_configui.ui:98
 #. i18n: ectx: property (text), widget (QTreeWidget, sortOrder)
-#: src/irc/channelnick.cpp:208 src/irc/channeloptionsdialog.cpp:296
-#: src/irc/inputfilter.cpp:983 src/irc/inputfilter.cpp:987
-#: src/irc/inputfilter.cpp:2112 src/irc/inputfilter.cpp:2166
-#: src/irc/channel.cpp:2146 rc.cpp:880
+#: src/irc/channelnick.cpp:208 src/irc/inputfilter.cpp:983
+#: src/irc/inputfilter.cpp:987 src/irc/inputfilter.cpp:2112
+#: src/irc/inputfilter.cpp:2166 src/irc/channel.cpp:2146
+#: src/irc/channeloptionsdialog.cpp:299 rc.cpp:880
 #, fuzzy
 msgid "Mode"
 msgstr "M-x nxml-mode"
-
-#: src/irc/channeloptionsdialog.cpp:32
-#, fuzzy, kde-format
-msgid "Channel Settings for %1"
-msgstr "&Cari Bantuan"
-
-#: src/irc/channeloptionsdialog.cpp:156
-#, fuzzy
-msgid "&Hide Advanced Modes &lt;&lt;"
-msgstr "Arahan Strategik Lanjutan"
-
-#: src/irc/channeloptionsdialog.cpp:160
-#, fuzzy
-msgid "&Show Advanced Modes &gt;&gt;"
-msgstr "Arahan Strategik Lanjutan"
-
-#: src/irc/channeloptionsdialog.cpp:296
-msgid "Parameter"
-msgstr ""
-
-#: src/irc/channeloptionsdialog.cpp:304
-#, fuzzy, kde-format
-msgctxt "<mode character> (<mode description>)"
-msgid "%1 (%2)"
-msgstr "Port"
-
-#: src/irc/channeloptionsdialog.cpp:631
-#, fuzzy
-msgid "Timestamp"
-msgstr "Hidupkan animasi"
-
-#: src/irc/channeloptionsdialog.cpp:633
-#, fuzzy
-msgid "Author"
-msgstr "Fedora Artwork"
-
-#: src/irc/channeloptionsdialog.cpp:694
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>The <b>T</b>opic mode means that only the channel "
-"operator can change the topic for the channel.</p></qt>"
-msgstr ""
-
-#: src/irc/channeloptionsdialog.cpp:696
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p><b>N</b>o messages from outside means users who are not "
-"in the channel cannot send messages for everybody in the channel to see.  "
-"Almost all channels have this set to prevent nuisance messages.</p></qt>"
-msgstr ""
-
-#: src/irc/channeloptionsdialog.cpp:698
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>A <b>S</b>ecret channel will not show up in the channel "
-"list, nor will any user be able to see that you are in the channel with the "
-"<em>WHOIS</em> command or anything similar.  Only the people that are in the "
-"same channel will know that you are in this channel, if this mode is set.</"
-"p></qt>"
-msgstr ""
-
-#: src/irc/channeloptionsdialog.cpp:700
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>An <b>I</b>nvite only channel means that people can only "
-"join the channel if they are invited.  To invite someone, a channel operator "
-"needs to issue the command <em>/invite nick</em> from within the channel.</"
-"p></qt>"
-msgstr ""
-
-#: src/irc/channeloptionsdialog.cpp:702
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>A <b>P</b>rivate channel is shown in a listing of all "
-"channels, but the topic is not shown.  A user's <em>WHOIS</em> may or may "
-"not show them as being in a private channel depending on the IRC server.</"
-"p></qt>"
-msgstr ""
-
-#: src/irc/channeloptionsdialog.cpp:704
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>A <b>M</b>oderated channel is one where only operators, "
-"half-operators and those with voice can talk.</p></qt>"
-msgstr ""
-
-#: src/irc/channeloptionsdialog.cpp:706
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>A protected channel requires users to enter a password "
-"in order to join.</p></qt>"
-msgstr ""
-
-#: src/irc/channeloptionsdialog.cpp:708
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>A channel that has a user <b>L</b>imit means that only "
-"that many users can be in the channel at any one time.  Some channels have a "
-"bot that sits in the channel and changes this automatically depending on how "
-"busy the channel is.</p></qt>"
-msgstr ""
 
 #: src/irc/invitedialog.cpp:31
 #, fuzzy
@@ -1551,7 +1450,7 @@ msgctxt "network (nickname)"
 msgid "%1 (%2)"
 msgstr "Port"
 
-#: src/irc/nicksonline.cpp:42 src/viewer/viewcontainer.cpp:2535
+#: src/irc/nicksonline.cpp:42 src/viewer/viewcontainer.cpp:2525
 msgid "Watched Nicks Online"
 msgstr ""
 
@@ -1853,7 +1752,7 @@ msgid_plural "limited to %1 users"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/irc/inputfilter.cpp:998 src/urlcatcher.cpp:138
+#: src/irc/inputfilter.cpp:998 src/urlcatcher.cpp:173
 #, fuzzy
 msgid "URL"
 msgstr "URL"
@@ -3917,7 +3816,7 @@ msgid "Nickname error"
 msgstr "Ralat KMail"
 
 #: src/irc/server.cpp:1499 src/irc/server.cpp:3471 src/irc/server.cpp:3476
-#: src/application.cpp:370
+#: src/application.cpp:374
 msgid "D-Bus"
 msgstr ""
 
@@ -4117,6 +4016,107 @@ msgstr ""
 #: src/irc/server.cpp:3942
 #, kde-format
 msgid "Failed to parse DH1080_FINISH sent by %1. Key exchange failed."
+msgstr ""
+
+#: src/irc/channeloptionsdialog.cpp:32
+#, fuzzy, kde-format
+msgid "Channel Settings for %1"
+msgstr "&Cari Bantuan"
+
+#: src/irc/channeloptionsdialog.cpp:159
+#, fuzzy
+msgid "&Hide Advanced Modes &lt;&lt;"
+msgstr "Arahan Strategik Lanjutan"
+
+#: src/irc/channeloptionsdialog.cpp:163
+#, fuzzy
+msgid "&Show Advanced Modes &gt;&gt;"
+msgstr "Arahan Strategik Lanjutan"
+
+#: src/irc/channeloptionsdialog.cpp:299
+msgid "Parameter"
+msgstr ""
+
+#: src/irc/channeloptionsdialog.cpp:307
+#, fuzzy, kde-format
+msgctxt "<mode character> (<mode description>)"
+msgid "%1 (%2)"
+msgstr "Port"
+
+#: src/irc/channeloptionsdialog.cpp:634
+#, fuzzy
+msgid "Timestamp"
+msgstr "Hidupkan animasi"
+
+#: src/irc/channeloptionsdialog.cpp:636
+#, fuzzy
+msgid "Author"
+msgstr "Fedora Artwork"
+
+#: src/irc/channeloptionsdialog.cpp:697
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>The <b>T</b>opic mode means that only the channel "
+"operator can change the topic for the channel.</p></qt>"
+msgstr ""
+
+#: src/irc/channeloptionsdialog.cpp:699
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p><b>N</b>o messages from outside means users who are not "
+"in the channel cannot send messages for everybody in the channel to see.  "
+"Almost all channels have this set to prevent nuisance messages.</p></qt>"
+msgstr ""
+
+#: src/irc/channeloptionsdialog.cpp:701
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>A <b>S</b>ecret channel will not show up in the channel "
+"list, nor will any user be able to see that you are in the channel with the "
+"<em>WHOIS</em> command or anything similar.  Only the people that are in the "
+"same channel will know that you are in this channel, if this mode is set.</"
+"p></qt>"
+msgstr ""
+
+#: src/irc/channeloptionsdialog.cpp:703
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>An <b>I</b>nvite only channel means that people can only "
+"join the channel if they are invited.  To invite someone, a channel operator "
+"needs to issue the command <em>/invite nick</em> from within the channel.</"
+"p></qt>"
+msgstr ""
+
+#: src/irc/channeloptionsdialog.cpp:705
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>A <b>P</b>rivate channel is shown in a listing of all "
+"channels, but the topic is not shown.  A user's <em>WHOIS</em> may or may "
+"not show them as being in a private channel depending on the IRC server.</"
+"p></qt>"
+msgstr ""
+
+#: src/irc/channeloptionsdialog.cpp:707
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>A <b>M</b>oderated channel is one where only operators, "
+"half-operators and those with voice can talk.</p></qt>"
+msgstr ""
+
+#: src/irc/channeloptionsdialog.cpp:709
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>A protected channel requires users to enter a password "
+"in order to join.</p></qt>"
+msgstr ""
+
+#: src/irc/channeloptionsdialog.cpp:711
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>A channel that has a user <b>L</b>imit means that only "
+"that many users can be in the channel at any one time.  Some channels have a "
+"bot that sits in the channel and changes this automatically depending on how "
+"busy the channel is.</p></qt>"
 msgstr ""
 
 #: src/konsolepanel.cpp:27 src/viewer/viewcontainer.cpp:2111
@@ -4580,7 +4580,7 @@ msgstr ""
 msgid "Edit Multiline Paste"
 msgstr "Sunting Persamaan Latex"
 
-#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2249
+#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2239
 #, fuzzy
 msgid "Raw Log"
 msgstr "Log Sistem"
@@ -4716,6 +4716,110 @@ msgstr "Maklumat Peranti Terlampir"
 msgid "Konversation"
 msgstr ""
 
+#: src/viewer/statuspanel.cpp:232
+#, kde-format
+msgid ""
+"Do you really want to close '%1'?\n"
+"\n"
+" All associated tabs will be closed as well."
+msgstr ""
+
+#: src/viewer/statuspanel.cpp:233
+#, fuzzy
+msgid "Close Tab"
+msgstr "Awalan &tab:"
+
+#: src/viewer/statuspanel.cpp:242
+#, fuzzy, kde-format
+msgid ""
+"Do you want to disconnect from '%1'?\n"
+"\n"
+" All associated tabs will be closed as well."
+msgstr "Adakah anda pasti untuk menggantung ke cakera?"
+
+#: src/viewer/statuspanel.cpp:243
+#, fuzzy
+msgid "Disconnect From Server"
+msgstr "Pelayan Nama DNS"
+
+#: src/viewer/statuspanel.cpp:244
+msgid "Disconnect"
+msgstr ""
+
+#: src/viewer/chatwindow.cpp:423
+#, fuzzy, kde-format
+msgid ""
+"\n"
+"*** Logfile started\n"
+"*** on %1\n"
+"\n"
+msgstr "dikemaskini pada %(date)s"
+
+#: src/viewer/ircview.cpp:194 src/viewer/topiclabel.cpp:139
+msgid "Copy Link Address"
+msgstr ""
+
+#: src/viewer/ircview.cpp:201 src/viewer/topiclabel.cpp:140
+#, fuzzy
+msgid "Add to Bookmarks"
+msgstr "Tambah kepada Tandabuku"
+
+#: src/viewer/ircview.cpp:208 src/viewer/topiclabel.cpp:141
+#, fuzzy
+msgid "Save Link As..."
+msgstr "&Simpan Imej Sebagai"
+
+#: src/viewer/ircview.cpp:220
+#, fuzzy
+msgid "&Copy"
+msgstr "Salin Imej"
+
+#: src/viewer/ircview.cpp:227
+#, fuzzy
+msgid "Select All"
+msgstr "&Pilih Item Baru"
+
+#: src/viewer/ircview.cpp:233 src/viewer/viewcontainer.cpp:546
+#, fuzzy
+msgid "Find Text..."
+msgstr "Cari teks yang dinyatakan"
+
+#: src/viewer/ircview.cpp:1347
+#, fuzzy
+msgid "Open Query"
+msgstr "Buka Fail"
+
+#: src/viewer/ircview.cpp:1394 src/viewer/topiclabel.cpp:128
+#: src/mainwindow.cpp:433
+msgid "&Join Channel..."
+msgstr ""
+
+#: src/viewer/ircview.cpp:1397 src/viewer/topiclabel.cpp:130
+#, fuzzy
+msgid "Get &user list"
+msgstr "Label Senarai Semasa"
+
+#: src/viewer/ircview.cpp:1399 src/viewer/topiclabel.cpp:131
+#, fuzzy
+msgid "Get &topic"
+msgstr "Tapisan berkaitan akan dicipta"
+
+#: src/viewer/ircview.cpp:1542 src/viewer/topiclabel.cpp:328
+#: src/urlcatcher.cpp:277
+#, fuzzy
+msgid "Save link as"
+msgstr "&Simpan Imej Sebagai"
+
+#: src/viewer/ircview.cpp:1613
+#, fuzzy, kde-format
+msgid "Open a query with %1"
+msgstr "Aksara (dengan ruang):"
+
+#: src/viewer/ircview.cpp:1634 src/viewer/topiclabel.cpp:273
+#, kde-format
+msgid "Join the channel %1"
+msgstr ""
+
 #: src/viewer/viewcontainer.cpp:212 src/mainwindow.cpp:292
 #, fuzzy
 msgid "Move Tab Up"
@@ -4737,11 +4841,6 @@ msgstr "Gerak Tab Kiri"
 #, fuzzy
 msgid "Move Tab Right"
 msgstr "Gerak Tab Kanan"
-
-#: src/viewer/viewcontainer.cpp:546 src/viewer/ircview.cpp:233
-#, fuzzy
-msgid "Find Text..."
-msgstr "Cari teks yang dinyatakan"
 
 #: src/viewer/viewcontainer.cpp:548
 msgid "Search for text in the current tab"
@@ -4813,247 +4912,28 @@ msgstr "Cari teks yang dinyatakan"
 msgid "Logfile of %1"
 msgstr ""
 
-#. i18n: file: src/urlcatcherui.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, URLCatcherUI)
-#: src/viewer/viewcontainer.cpp:2123 src/urlcatcher.cpp:148 rc.cpp:1951
+#: src/viewer/viewcontainer.cpp:2122 src/urlcatcher.cpp:79
 #, fuzzy
 msgid "URL Catcher"
 msgstr "Pencekup podcast"
 
-#: src/viewer/viewcontainer.cpp:2493
+#: src/viewer/viewcontainer.cpp:2483
 msgid ""
 "Using this function may result in a lot of network traffic. If your "
 "connection is not fast enough, it is possible that your client will be "
 "disconnected by the server."
 msgstr ""
 
-#: src/viewer/viewcontainer.cpp:2497
+#: src/viewer/viewcontainer.cpp:2487
 #, fuzzy
 msgid "Channel List Warning"
 msgstr "Label Senarai Semasa"
 
-#: src/viewer/viewcontainer.cpp:2521
+#: src/viewer/viewcontainer.cpp:2511
 msgid ""
 "To know which server to display the channel list for, the list can only be "
 "opened from a query, channel or status window."
 msgstr ""
-
-#: src/viewer/statuspanel.cpp:232
-#, kde-format
-msgid ""
-"Do you really want to close '%1'?\n"
-"\n"
-" All associated tabs will be closed as well."
-msgstr ""
-
-#: src/viewer/statuspanel.cpp:233
-#, fuzzy
-msgid "Close Tab"
-msgstr "Awalan &tab:"
-
-#: src/viewer/statuspanel.cpp:242
-#, fuzzy, kde-format
-msgid ""
-"Do you want to disconnect from '%1'?\n"
-"\n"
-" All associated tabs will be closed as well."
-msgstr "Adakah anda pasti untuk menggantung ke cakera?"
-
-#: src/viewer/statuspanel.cpp:243
-#, fuzzy
-msgid "Disconnect From Server"
-msgstr "Pelayan Nama DNS"
-
-#: src/viewer/statuspanel.cpp:244
-msgid "Disconnect"
-msgstr ""
-
-#: src/viewer/chatwindow.cpp:423
-#, fuzzy, kde-format
-msgid ""
-"\n"
-"*** Logfile started\n"
-"*** on %1\n"
-"\n"
-msgstr "dikemaskini pada %(date)s"
-
-#: src/viewer/ircview.cpp:194 src/viewer/topiclabel.cpp:139
-msgid "Copy Link Address"
-msgstr ""
-
-#: src/viewer/ircview.cpp:201 src/viewer/topiclabel.cpp:140
-#, fuzzy
-msgid "Add to Bookmarks"
-msgstr "Tambah kepada Tandabuku"
-
-#: src/viewer/ircview.cpp:208 src/viewer/topiclabel.cpp:141
-#, fuzzy
-msgid "Save Link As..."
-msgstr "&Simpan Imej Sebagai"
-
-#: src/viewer/ircview.cpp:220
-#, fuzzy
-msgid "&Copy"
-msgstr "Salin Imej"
-
-#: src/viewer/ircview.cpp:227
-#, fuzzy
-msgid "Select All"
-msgstr "&Pilih Item Baru"
-
-#: src/viewer/ircview.cpp:1347
-#, fuzzy
-msgid "Open Query"
-msgstr "Buka Fail"
-
-#: src/viewer/ircview.cpp:1394 src/viewer/topiclabel.cpp:128
-#: src/mainwindow.cpp:433
-msgid "&Join Channel..."
-msgstr ""
-
-#: src/viewer/ircview.cpp:1397 src/viewer/topiclabel.cpp:130
-#, fuzzy
-msgid "Get &user list"
-msgstr "Label Senarai Semasa"
-
-#: src/viewer/ircview.cpp:1399 src/viewer/topiclabel.cpp:131
-#, fuzzy
-msgid "Get &topic"
-msgstr "Tapisan berkaitan akan dicipta"
-
-#: src/viewer/ircview.cpp:1542 src/viewer/topiclabel.cpp:328
-#: src/urlcatcher.cpp:464
-#, fuzzy
-msgid "Save link as"
-msgstr "&Simpan Imej Sebagai"
-
-#: src/viewer/ircview.cpp:1613
-#, fuzzy, kde-format
-msgid "Open a query with %1"
-msgstr "Aksara (dengan ruang):"
-
-#: src/viewer/ircview.cpp:1634 src/viewer/topiclabel.cpp:273
-#, kde-format
-msgid "Join the channel %1"
-msgstr ""
-
-#: src/urlcatcher.cpp:136
-#, fuzzy
-msgid "From"
-msgstr "Format"
-
-#: src/urlcatcher.cpp:140
-#, fuzzy
-msgid "Date"
-msgstr "Tarikh"
-
-#: src/urlcatcher.cpp:154
-#, fuzzy
-msgctxt "open url"
-msgid "&Open"
-msgstr "Buka Fail"
-
-#: src/urlcatcher.cpp:155
-msgid "Open link in external browser."
-msgstr ""
-
-#: src/urlcatcher.cpp:156
-msgid ""
-"<p>Select a <b>URL</b> above, then click this button to launch the "
-"application associated with the mimetype of the URL.</p>-<p>In the "
-"<b>Settings</b>, under <b>Behavior</b> | <b>General</b>, you can specify a "
-"custom web browser for web URLs.</p>"
-msgstr ""
-
-#: src/urlcatcher.cpp:158
-#, fuzzy
-msgid "&Save..."
-msgstr "Senarai Arab"
-
-#: src/urlcatcher.cpp:159
-msgid "Save selected link to the disk."
-msgstr ""
-
-#: src/urlcatcher.cpp:162
-#, fuzzy
-msgctxt "copy url"
-msgid "&Copy"
-msgstr "Salin Imej"
-
-#: src/urlcatcher.cpp:163
-#, fuzzy
-msgid "Copy link address to the clipboard."
-msgstr "Salin Kekotak Teks ke papanklip"
-
-#: src/urlcatcher.cpp:164
-msgid ""
-"Select a <b>URL</b> above, then click this button to copy the URL to the "
-"clipboard."
-msgstr ""
-
-#: src/urlcatcher.cpp:166
-#, fuzzy
-msgctxt "delete url"
-msgid "&Delete"
-msgstr "Pa&dam hiperlink"
-
-#: src/urlcatcher.cpp:167
-msgid ""
-"Select a <b>URL</b> above, then click this button to delete the URL from the "
-"list."
-msgstr ""
-
-#: src/urlcatcher.cpp:168
-#, fuzzy
-msgid "Delete selected link."
-msgstr "Pa&dam hiperlink"
-
-#: src/urlcatcher.cpp:171
-#, fuzzy
-msgctxt "save url list"
-msgid "&Save List..."
-msgstr "Senarai Arab"
-
-#: src/urlcatcher.cpp:172
-#, fuzzy
-msgid "Save list."
-msgstr "Label Senarai Semasa"
-
-#: src/urlcatcher.cpp:173
-msgid "Click to save the entire list to a file."
-msgstr ""
-
-#: src/urlcatcher.cpp:175
-#, fuzzy
-msgctxt "clear url list"
-msgid "&Clear List"
-msgstr "Senarai Arab"
-
-#: src/urlcatcher.cpp:176
-#, fuzzy
-msgid "Clear list."
-msgstr "Senarai Arab"
-
-#: src/urlcatcher.cpp:177
-msgid "Click to erase the entire list."
-msgstr ""
-
-#: src/urlcatcher.cpp:180
-#, fuzzy
-msgid "Add Bookmark..."
-msgstr "Tambah kepada Tandabuku"
-
-#: src/urlcatcher.cpp:376
-#, fuzzy
-msgid "Save URL List"
-msgstr "Label Senarai Semasa"
-
-#: src/urlcatcher.cpp:400
-#, fuzzy, kde-format
-msgid ""
-"Konversation URL List: %1\n"
-"\n"
-msgstr "Label Senarai Semasa"
 
 #: src/main.cpp:39
 msgid "A user-friendly IRC client"
@@ -5906,6 +5786,147 @@ msgstr "Tetapan Semasa"
 #, fuzzy
 msgid "Edit Identity..."
 msgstr "Sunting hip&erlink"
+
+#: src/urlcatcher.cpp:100
+#, fuzzy
+msgctxt "open url"
+msgid "&Open"
+msgstr "Buka Fail"
+
+#: src/urlcatcher.cpp:103
+msgid "Open URLs in external browser."
+msgstr ""
+
+#: src/urlcatcher.cpp:104
+msgid ""
+"<p>Select one or several <b>URLs</b> below, then click this button to launch "
+"the application associated with the mimetype of the URL.</p>-<p>In the "
+"<b>Settings</b>, under <b>Behavior</b> | <b>General</b>, you can specify a "
+"custom web browser for web URLs.</p>"
+msgstr ""
+
+#: src/urlcatcher.cpp:107
+#, fuzzy
+msgid "&Save..."
+msgstr "Senarai Arab"
+
+#: src/urlcatcher.cpp:110
+msgid "Save selected URLs to the disk."
+msgstr ""
+
+#: src/urlcatcher.cpp:113
+#, fuzzy
+msgid "Add Bookmark..."
+msgstr "Tambah kepada Tandabuku"
+
+#: src/urlcatcher.cpp:121
+#, fuzzy
+msgctxt "copy url"
+msgid "&Copy"
+msgstr "Salin Imej"
+
+#: src/urlcatcher.cpp:124
+#, fuzzy
+msgid "Copy URLs to the clipboard."
+msgstr "Salin Kekotak Teks ke papanklip"
+
+#: src/urlcatcher.cpp:125
+msgid ""
+"Select one or several <b>URLs</b> above, then click this button to copy them "
+"to the clipboard."
+msgstr ""
+
+#: src/urlcatcher.cpp:128
+#, fuzzy
+msgctxt "delete url"
+msgid "&Delete"
+msgstr "Pa&dam hiperlink"
+
+#: src/urlcatcher.cpp:131
+msgid ""
+"Select one or several <b>URLs</b> above, then click this button to delete "
+"them from the list."
+msgstr ""
+
+#: src/urlcatcher.cpp:132
+#, fuzzy
+msgid "Delete selected link."
+msgstr "Pa&dam hiperlink"
+
+#: src/urlcatcher.cpp:138
+#, fuzzy
+msgctxt "save url list"
+msgid "&Save List..."
+msgstr "Senarai Arab"
+
+#: src/urlcatcher.cpp:140
+#, fuzzy
+msgid "Save list."
+msgstr "Label Senarai Semasa"
+
+#: src/urlcatcher.cpp:141
+msgid "Click to save the entire list to a file."
+msgstr ""
+
+#: src/urlcatcher.cpp:144
+#, fuzzy
+msgctxt "clear url list"
+msgid "&Clear List"
+msgstr "Senarai Arab"
+
+#: src/urlcatcher.cpp:146
+#, fuzzy
+msgid "Clear list."
+msgstr "Senarai Arab"
+
+#: src/urlcatcher.cpp:147
+msgid "Click to erase the entire list."
+msgstr ""
+
+#: src/urlcatcher.cpp:158
+msgid ""
+"List of Uniform Resource Locators mentioned in any of the Konversation "
+"windows during this session."
+msgstr ""
+
+#: src/urlcatcher.cpp:171
+#, fuzzy
+msgid "From"
+msgstr "Format"
+
+#: src/urlcatcher.cpp:175
+#, fuzzy
+msgid "Date"
+msgstr "Tarikh"
+
+#: src/urlcatcher.cpp:234
+msgid ""
+"You have selected more than one URL. Do you really want to open several URLs "
+"at once?"
+msgstr ""
+
+#: src/urlcatcher.cpp:235 src/urlcatcher.cpp:261
+#, fuzzy
+msgid "Open URLs"
+msgstr "Buka Fail"
+
+#: src/urlcatcher.cpp:259
+msgid ""
+"You have selected more than one URL. A file dialog to set the destination "
+"will open for each. Do you really want to save several URLs at once?"
+msgstr ""
+
+#: src/urlcatcher.cpp:371
+#, fuzzy
+msgid "Save URL List"
+msgstr "Label Senarai Semasa"
+
+#: src/urlcatcher.cpp:398
+#, fuzzy, kde-format
+msgid ""
+"Konversation URL List: %1\n"
+"\n"
+msgstr "Label Senarai Semasa"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -9100,14 +9121,6 @@ msgstr "Awalan &tab:"
 msgid "&Options"
 msgstr ""
 
-#. i18n: file: src/urlcatcherui.ui:32
-#. i18n: ectx: property (whatsThis), widget (QTreeView, m_urlListView)
-#: rc.cpp:1954
-msgid ""
-"List of Uniform Resource Locators mentioned in any of the Konversation "
-"windows during this session."
-msgstr ""
-
 #, fuzzy
 #~ msgid "Filter pattern:"
 #~ msgstr "Penilaian corak penapis log"
@@ -9142,10 +9155,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Join Channel on %1"
 #~ msgstr "dikemaskini pada %(date)s"
-
-#, fuzzy
-#~ msgid "Open URL."
-#~ msgstr "Buka Fail"
 
 #, fuzzy
 #~ msgid "Copy URL."
