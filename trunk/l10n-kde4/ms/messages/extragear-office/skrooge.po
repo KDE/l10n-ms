@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: skrooge\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-13 05:48+0200\n"
+"POT-Creation-Date: 2010-08-14 05:22+0200\n"
 "PO-Revision-Date: 2009-10-03 23:05+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -824,6 +824,17 @@ msgctxt "Description of a tips"
 msgid "<p>...you can follow your refunds by using a tracker.</p>"
 msgstr ""
 
+#: skrooge_tracker/skgtrackerplugin.cpp:141
+#, kde-format
+msgctxt "Advice long message"
+msgid "'%1' is a very old tracker"
+msgstr ""
+
+#: skrooge_tracker/skgtrackerplugin.cpp:142
+msgctxt "Advice short message"
+msgid "Take care, some trackers are very old."
+msgstr ""
+
 #: skrooge_tracker/skgtrackerpluginwidget.cpp:238
 #, fuzzy, kde-format
 msgctxt "Noun, name of the user action"
@@ -1435,6 +1446,30 @@ msgstr ""
 msgctxt "Noun, a list of items"
 msgid "Sub operations"
 msgstr "Operasi"
+
+#: skrooge_operation/skgoperationplugin.cpp:571
+#, kde-format
+msgctxt "Advice long message"
+msgid "Duplicate number %1 in account '%2'"
+msgstr ""
+
+#: skrooge_operation/skgoperationplugin.cpp:572
+#, kde-format
+msgctxt "Advice short message"
+msgid "Your account '%1' contains more than one operation with number %2."
+msgstr ""
+
+#: skrooge_operation/skgoperationplugin.cpp:573
+#, fuzzy
+msgctxt "Advice correction message"
+msgid "Open operations with duplicate number"
+msgstr "Operasi"
+
+#: skrooge_operation/skgoperationplugin.cpp:602
+#, kde-format
+msgctxt "Noun, a list of items"
+msgid "Operations of '%1' with duplicate number %2"
+msgstr ""
 
 #: skrooge_operation/skgbookmarkboardwidget.cpp:83
 #, fuzzy
@@ -4117,12 +4152,12 @@ msgid ""
 "You can define a secondary currency to display all amounts in two currencies."
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:283
+#: skrooge_unit/skgunitplugin.cpp:284
 msgctxt "Advice long message"
 msgid "Define a primary currency"
 msgstr ""
 
-#: skrooge_unit/skgunitplugin.cpp:284
+#: skrooge_unit/skgunitplugin.cpp:285
 msgctxt "Advice short message"
 msgid "To avoid misunderstanding, you should define a primary currency."
 msgstr ""
@@ -4206,7 +4241,13 @@ msgctxt "Verb"
 msgid "Import standard categories"
 msgstr "Import"
 
-#: skrooge_categories/skgcategoriesplugin.cpp:114
+#: skrooge_categories/skgcategoriesplugin.cpp:77
+#, fuzzy
+msgctxt "Verb"
+msgid "Delete unused categories"
+msgstr "Import"
+
+#: skrooge_categories/skgcategoriesplugin.cpp:120
 msgctxt ""
 "List of categories.It is not needed to translate each item. You can set the "
 "list you want. ';' must be used to separate categories. ' > ' must be used "
@@ -4270,112 +4311,118 @@ msgid ""
 "Workman's Comp"
 msgstr ""
 
-#: skrooge_categories/skgcategoriesplugin.cpp:116
+#: skrooge_categories/skgcategoriesplugin.cpp:122
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Import standard categories"
 msgstr "Import"
 
-#: skrooge_categories/skgcategoriesplugin.cpp:128
+#: skrooge_categories/skgcategoriesplugin.cpp:134
 #, fuzzy
 msgctxt "Successful message after an user action"
 msgid "Standard categories imported."
 msgstr "Import"
 
-#: skrooge_categories/skgcategoriesplugin.cpp:129
+#: skrooge_categories/skgcategoriesplugin.cpp:135
 msgctxt "Error message"
 msgid "Importing standard categories failed."
 msgstr ""
 
-#: skrooge_categories/skgcategoriesplugin.cpp:148
+#: skrooge_categories/skgcategoriesplugin.cpp:154
 #, fuzzy
 msgctxt "Noun, categories of items"
 msgid "Categories"
 msgstr "Kategori"
 
-#: skrooge_categories/skgcategoriesplugin.cpp:158
+#: skrooge_categories/skgcategoriesplugin.cpp:164
 #, fuzzy
 msgctxt "A tool tip"
 msgid "Categories management"
 msgstr "Kategori"
 
-#: skrooge_categories/skgcategoriesplugin.cpp:164
+#: skrooge_categories/skgcategoriesplugin.cpp:170
 msgctxt "Description of a tips"
 msgid "<p>... categories can be reorganized by drag & drop.</p>"
 msgstr ""
 
-#: skrooge_categories/skgcategoriesplugin.cpp:189
+#: skrooge_categories/skgcategoriesplugin.cpp:195
 #, fuzzy
 msgctxt "Advice long message"
 msgid "Remove unused categories"
 msgstr "Import"
 
-#: skrooge_categories/skgcategoriesplugin.cpp:190
+#: skrooge_categories/skgcategoriesplugin.cpp:196
 msgctxt "Advice short message"
 msgid "You can improve performances by removing unused categories."
 msgstr ""
 
-#: skrooge_categories/skgcategoriespluginwidget.cpp:211
-#, fuzzy, kde-format
-msgctxt "Noun, name of the user action"
-msgid "Category creation '%1'"
-msgstr "Gagal untuk memadam"
-
-#: skrooge_categories/skgcategoriespluginwidget.cpp:227
-#, fuzzy, kde-format
-msgctxt "Successful message after an user action"
-msgid "Category '%1' created"
-msgstr "Gagal untuk memadam"
-
-#: skrooge_categories/skgcategoriespluginwidget.cpp:229
+#: skrooge_categories/skgcategoriesplugin.cpp:197
 #, fuzzy
-msgctxt "Error message"
-msgid "Category creation failed"
-msgstr "Gagal untuk memadam"
+msgctxt "Advice correction message"
+msgid "Delete unused categories."
+msgstr "Import"
 
-#: skrooge_categories/skgcategoriespluginwidget.cpp:246
-#, fuzzy, kde-format
-msgctxt "Noun, name of the user action"
-msgid "Category '%1' update"
-msgstr "Gagal untuk memadam"
-
-#: skrooge_categories/skgcategoriespluginwidget.cpp:254
-#, fuzzy, kde-format
-msgctxt "Successful message after an user action"
-msgid "Category '%1' updated"
-msgstr "Gagal untuk memadam"
-
-#: skrooge_categories/skgcategoriespluginwidget.cpp:255
-#, fuzzy
-msgctxt "Error message"
-msgid "Category update failed"
-msgstr "Gagal untuk memadam"
-
-#: skrooge_categories/skgcategoriespluginwidget.cpp:269
+#: skrooge_categories/skgcategoriesplugin.cpp:220
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Delete unused categories"
 msgstr "Import"
 
-#: skrooge_categories/skgcategoriespluginwidget.cpp:276
+#: skrooge_categories/skgcategoriesplugin.cpp:227
 #, fuzzy
 msgctxt "Successful message after an user action"
 msgid "Unused categories deleted"
 msgstr "Import"
 
-#: skrooge_categories/skgcategoriespluginwidget.cpp:277
+#: skrooge_categories/skgcategoriesplugin.cpp:228
 #, fuzzy
 msgctxt "Error message"
 msgid "Unused categories deletion failed"
 msgstr "Gagal untuk memadam"
 
-#: skrooge_categories/skgcategoriespluginwidget.cpp:303
+#: skrooge_categories/skgcategoriespluginwidget.cpp:212
+#, fuzzy, kde-format
+msgctxt "Noun, name of the user action"
+msgid "Category creation '%1'"
+msgstr "Gagal untuk memadam"
+
+#: skrooge_categories/skgcategoriespluginwidget.cpp:228
+#, fuzzy, kde-format
+msgctxt "Successful message after an user action"
+msgid "Category '%1' created"
+msgstr "Gagal untuk memadam"
+
+#: skrooge_categories/skgcategoriespluginwidget.cpp:230
+#, fuzzy
+msgctxt "Error message"
+msgid "Category creation failed"
+msgstr "Gagal untuk memadam"
+
+#: skrooge_categories/skgcategoriespluginwidget.cpp:247
+#, fuzzy, kde-format
+msgctxt "Noun, name of the user action"
+msgid "Category '%1' update"
+msgstr "Gagal untuk memadam"
+
+#: skrooge_categories/skgcategoriespluginwidget.cpp:255
+#, fuzzy, kde-format
+msgctxt "Successful message after an user action"
+msgid "Category '%1' updated"
+msgstr "Gagal untuk memadam"
+
+#: skrooge_categories/skgcategoriespluginwidget.cpp:256
+#, fuzzy
+msgctxt "Error message"
+msgid "Category update failed"
+msgstr "Gagal untuk memadam"
+
+#: skrooge_categories/skgcategoriespluginwidget.cpp:288
 #, fuzzy
 msgctxt "Noun, a list of items"
 msgid "Sub operations with empty category"
 msgstr "Operasi"
 
-#: skrooge_categories/skgcategoriespluginwidget.cpp:309
+#: skrooge_categories/skgcategoriespluginwidget.cpp:294
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Sub operations with category containing '%1'"
@@ -5036,92 +5083,104 @@ msgctxt "The description of the application"
 msgid "An application test."
 msgstr ""
 
-#: skrooge_payee/skgpayeeplugin.cpp:99
+#: skrooge_payee/skgpayeeplugin.cpp:65
+#, fuzzy
+msgctxt "Verb"
+msgid "Delete unused payees"
+msgstr "Import"
+
+#: skrooge_payee/skgpayeeplugin.cpp:106
 msgctxt "Noun, something that is used to track items"
 msgid "Payees"
 msgstr ""
 
-#: skrooge_payee/skgpayeeplugin.cpp:109
+#: skrooge_payee/skgpayeeplugin.cpp:116
 #, fuzzy
 msgctxt "A tool tip"
 msgid "Payees management"
 msgstr "Kategori"
 
-#: skrooge_payee/skgpayeeplugin.cpp:120
+#: skrooge_payee/skgpayeeplugin.cpp:127
 msgctxt "Description of a tips"
 msgid "<p>... payees can be merged by drag & drop.</p>"
 msgstr ""
 
-#: skrooge_payee/skgpayeeplugin.cpp:140
+#: skrooge_payee/skgpayeeplugin.cpp:147
 #, fuzzy
 msgctxt "Advice long message"
 msgid "Remove unused payees"
 msgstr "Import"
 
-#: skrooge_payee/skgpayeeplugin.cpp:141
+#: skrooge_payee/skgpayeeplugin.cpp:148
 msgctxt "Advice short message"
 msgid "You can improve performances by removing unused payees."
 msgstr ""
 
-#: skrooge_payee/skgpayeepluginwidget.cpp:230
-#, fuzzy, kde-format
-msgctxt "Noun, name of the user action"
-msgid "Payee creation '%1'"
-msgstr "Gagal untuk memadam"
-
-#: skrooge_payee/skgpayeepluginwidget.cpp:239
-#, fuzzy, kde-format
-msgctxt "Successful message after an user action"
-msgid "Payee '%1' created"
-msgstr "Gagal untuk memadam"
-
-#: skrooge_payee/skgpayeepluginwidget.cpp:242
+#: skrooge_payee/skgpayeeplugin.cpp:149
 #, fuzzy
-msgctxt "Error message"
-msgid "Payee creation failed"
-msgstr "Gagal untuk memadam"
+msgctxt "Advice correction message"
+msgid "Delete unused payees"
+msgstr "Import"
 
-#: skrooge_payee/skgpayeepluginwidget.cpp:260
-#, fuzzy, kde-format
-msgctxt "Noun, name of the user action"
-msgid "Payee '%1' update"
-msgstr "Cari"
-
-#: skrooge_payee/skgpayeepluginwidget.cpp:269
-#, fuzzy, kde-format
-msgctxt "Successful message after an user action"
-msgid "Payee '%1' updated"
-msgstr "Cari"
-
-#: skrooge_payee/skgpayeepluginwidget.cpp:270
-#, fuzzy
-msgctxt "Error message"
-msgid "Payee update failed"
-msgstr "Cari"
-
-#: skrooge_payee/skgpayeepluginwidget.cpp:291
-#, fuzzy, kde-format
-msgctxt "Noun, a list of items"
-msgid "Operations assigned to payee '%1'"
-msgstr "Operasi"
-
-#: skrooge_payee/skgpayeepluginwidget.cpp:352
+#: skrooge_payee/skgpayeeplugin.cpp:172
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Delete unused payees"
 msgstr "Import"
 
-#: skrooge_payee/skgpayeepluginwidget.cpp:359
+#: skrooge_payee/skgpayeeplugin.cpp:179
 #, fuzzy
 msgctxt "Successful message after an user action"
 msgid "Unused payees deleted"
 msgstr "Import"
 
-#: skrooge_payee/skgpayeepluginwidget.cpp:360
+#: skrooge_payee/skgpayeeplugin.cpp:180
 #, fuzzy
 msgctxt "Error message"
 msgid "Unused payees deletion failed"
 msgstr "Gagal untuk memadam"
+
+#: skrooge_payee/skgpayeepluginwidget.cpp:232
+#, fuzzy, kde-format
+msgctxt "Noun, name of the user action"
+msgid "Payee creation '%1'"
+msgstr "Gagal untuk memadam"
+
+#: skrooge_payee/skgpayeepluginwidget.cpp:241
+#, fuzzy, kde-format
+msgctxt "Successful message after an user action"
+msgid "Payee '%1' created"
+msgstr "Gagal untuk memadam"
+
+#: skrooge_payee/skgpayeepluginwidget.cpp:244
+#, fuzzy
+msgctxt "Error message"
+msgid "Payee creation failed"
+msgstr "Gagal untuk memadam"
+
+#: skrooge_payee/skgpayeepluginwidget.cpp:262
+#, fuzzy, kde-format
+msgctxt "Noun, name of the user action"
+msgid "Payee '%1' update"
+msgstr "Cari"
+
+#: skrooge_payee/skgpayeepluginwidget.cpp:271
+#, fuzzy, kde-format
+msgctxt "Successful message after an user action"
+msgid "Payee '%1' updated"
+msgstr "Cari"
+
+#: skrooge_payee/skgpayeepluginwidget.cpp:272
+#, fuzzy
+msgctxt "Error message"
+msgid "Payee update failed"
+msgstr "Cari"
+
+#: skrooge_payee/skgpayeepluginwidget.cpp:293
+#, fuzzy, kde-format
+msgctxt "Noun, a list of items"
+msgid "Operations assigned to payee '%1'"
+msgstr "Operasi"
 
 #: skgapplets/file/fileskroogoid.cpp:33
 msgid "<b>Did you know ...?<b>"
