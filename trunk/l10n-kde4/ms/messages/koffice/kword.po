@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-10 06:11+0200\n"
+"POT-Creation-Date: 2010-08-30 05:27+0200\n"
 "PO-Revision-Date: 2006-10-05 19:47+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -232,7 +232,7 @@ msgstr ""
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:51
 #. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
-#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:42
+#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:40
 #, fuzzy
 msgid "Columns"
 msgstr "Kolum"
@@ -1013,6 +1013,12 @@ msgstr "Sambung Bingkai Teks"
 msgid "Geometry"
 msgstr "Geometri"
 
+#: part/dialogs/KWPageSettingsDialog.cpp:92
+#, fuzzy
+#| msgid "Frame Properties"
+msgid "Change Page Properties"
+msgstr "Ciri Bingkai"
+
 #: part/dialogs/KWSelectBookmarkDialog.cpp:79
 msgid "Rename Bookmark"
 msgstr "Namakan Semula Penanda Buku"
@@ -1061,12 +1067,6 @@ msgstr "Cipta Bingkai Teks"
 msgid "Create custom outline"
 msgstr "Cipta jadual."
 
-#: part/commands/KWPagePropertiesCommand.cpp:36
-#, fuzzy
-#| msgid "Frame Properties"
-msgid "Page Properties"
-msgstr "Ciri Bingkai"
-
 #: part/commands/KWPageRemoveCommand.cpp:32
 #, fuzzy
 #| msgid "Remove entry"
@@ -1079,33 +1079,45 @@ msgstr "Alih keluar entri"
 msgid "Clip Frame"
 msgstr "Sebariskan Bingkai"
 
-#: part/frames/KWTextFrameSet.cpp:88
+#: part/commands/KWChangePageStyleCommand.cpp:25
+#, fuzzy
+#| msgid "Framestyle:"
+msgid "Set Page Style"
+msgstr "Gaya Bingkai:"
+
+#: part/commands/KWNewPageStyleCommand.cpp:27
+#, fuzzy
+#| msgid "Insert Page"
+msgid "Insert Page Style"
+msgstr "Selitkan Halaman"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:36
+#, fuzzy
+#| msgid "Frame Properties"
+msgid "Page Properties"
+msgstr "Ciri Bingkai"
+
+#: part/frames/KWTextFrameSet.cpp:90
 msgid "Odd Pages Header"
 msgstr "Pengepala Halaman Ganjil"
 
-#: part/frames/KWTextFrameSet.cpp:91
+#: part/frames/KWTextFrameSet.cpp:93
 msgid "Even Pages Header"
 msgstr "Pengepala Halaman Genap"
 
-#: part/frames/KWTextFrameSet.cpp:94
+#: part/frames/KWTextFrameSet.cpp:96
 msgid "Odd Pages Footer"
 msgstr "Pengaki Halaman Ganjil"
 
-#: part/frames/KWTextFrameSet.cpp:97
+#: part/frames/KWTextFrameSet.cpp:99
 msgid "Even Pages Footer"
 msgstr "Pengaki Halaman Genap"
 
-#: part/frames/KWTextFrameSet.cpp:100
+#: part/frames/KWTextFrameSet.cpp:102
 #, fuzzy
 #| msgid "Plain text"
 msgid "Main text"
 msgstr "Teks mudah"
-
-#: part/frames/KWTextFrameSet.cpp:103
-#, fuzzy
-#| msgid "Background"
-msgid "Page Background"
-msgstr "Latar belakang"
 
 #: part/KWStatusBar.cpp:39
 msgid "Modified"
@@ -1769,6 +1781,11 @@ msgstr ""
 #: part/KWDocument.cpp:835
 msgid "Installation Error"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Background"
+#~ msgid "Page Background"
+#~ msgstr "Latar belakang"
 
 #, fuzzy
 #~| msgid "Format"
