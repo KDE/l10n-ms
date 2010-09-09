@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevplatform\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-07 02:43+0200\n"
+"POT-Creation-Date: 2010-09-09 06:13+0200\n"
 "PO-Revision-Date: 2009-07-05 19:31+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -937,33 +937,6 @@ msgstr ""
 msgid "Select an item..."
 msgstr ""
 
-#: shell/textdocument.cpp:349 shell/partdocument.cpp:108
-#, kde-format
-msgid "The document \"%1\" has unsaved changes. Would you like to save them?"
-msgstr ""
-
-#: shell/textdocument.cpp:350 shell/partdocument.cpp:109
-#, fuzzy
-msgid "Close Document"
-msgstr "Tutup Dokumen"
-
-#: shell/textdocument.cpp:362
-#, kde-format
-msgid ""
-"The file \"%1\" is modified on disk.\n"
-"\n"
-"Are you sure you want to overwrite it? (External changes will be lost.)"
-msgstr ""
-
-#: shell/textdocument.cpp:365
-msgid "Document Externally Modified"
-msgstr ""
-
-#: shell/textdocument.cpp:643
-#, fuzzy, kde-format
-msgid " Line: %1 Col: %2 "
-msgstr " Baris: %1 Kol: %2 "
-
 #: shell/assistantpopup.cpp:99
 #, fuzzy
 msgid "Hide"
@@ -1777,6 +1750,16 @@ msgstr ""
 msgid "Selected URL is invalid."
 msgstr ""
 
+#: shell/partdocument.cpp:108 shell/textdocument.cpp:356
+#, kde-format
+msgid "The document \"%1\" has unsaved changes. Would you like to save them?"
+msgstr ""
+
+#: shell/partdocument.cpp:109 shell/textdocument.cpp:357
+#, fuzzy
+msgid "Close Document"
+msgstr "Tutup Dokumen"
+
 #: shell/progressdialog.cpp:186
 #, fuzzy
 msgid "Cancel this operation."
@@ -2059,17 +2042,6 @@ msgstr ""
 msgid "Parser Background Settings"
 msgstr ""
 
-#: shell/settings/editstyledialog.cpp:68
-#: shell/settings/sourceformattersettings.cpp:70
-msgid ""
-"A KDE text-editor component could not be found.\n"
-"Please check your KDE installation."
-msgstr ""
-
-#: shell/settings/editstyledialog.cpp:101
-msgid "No Source Formatter available"
-msgstr ""
-
 #: shell/settings/environmentpreferences.cpp:45
 msgid "Environment Settings"
 msgstr ""
@@ -2105,17 +2077,28 @@ msgstr ""
 msgid "User Interface Settings"
 msgstr ""
 
-#: shell/settings/sourceformattersettings.cpp:365
+#: shell/settings/editstyledialog.cpp:69
+#: shell/settings/sourceformattersettings.cpp:70
+msgid ""
+"A KDE text-editor component could not be found.\n"
+"Please check your KDE installation."
+msgstr ""
+
+#: shell/settings/editstyledialog.cpp:102
+msgid "No Source Formatter available"
+msgstr ""
+
+#: shell/settings/sourceformattersettings.cpp:366
 #, fuzzy, kde-format
 msgid "New %1"
 msgstr "Baru"
 
-#: shell/settings/sourceformattersettings.cpp:368
+#: shell/settings/sourceformattersettings.cpp:369
 #, fuzzy
 msgid "New Style"
 msgstr "Fail Baru"
 
-#: shell/settings/sourceformattersettings.cpp:426
+#: shell/settings/sourceformattersettings.cpp:427
 msgid "No Language selected"
 msgstr ""
 
@@ -2396,12 +2379,29 @@ msgstr ""
 
 #: shell/projectsourcepage.cpp:187
 msgid ""
-"You need to specify a valid or unexistent directory to check out a project"
+"You need to specify a valid or nonexistent directory to check out a project"
 msgstr ""
 
 #: shell/projectsourcepage.cpp:189
 msgid "You need to specify a valid location for the project"
 msgstr ""
+
+#: shell/textdocument.cpp:369
+#, kde-format
+msgid ""
+"The file \"%1\" is modified on disk.\n"
+"\n"
+"Are you sure you want to overwrite it? (External changes will be lost.)"
+msgstr ""
+
+#: shell/textdocument.cpp:372
+msgid "Document Externally Modified"
+msgstr ""
+
+#: shell/textdocument.cpp:650
+#, fuzzy, kde-format
+msgid " Line: %1 Col: %2 "
+msgstr " Baris: %1 Kol: %2 "
 
 #: sublime/examples/example1.cpp:29
 msgid "Example 1"
@@ -2710,48 +2710,6 @@ msgstr ""
 msgid "DVCS"
 msgstr ""
 
-#: vcs/dvcs/ui/branchmanager.cpp:72
-msgid "New branch"
-msgstr ""
-
-#: vcs/dvcs/ui/branchmanager.cpp:72
-msgid "Name of the new branch:"
-msgstr ""
-
-#: vcs/dvcs/ui/branchmanager.cpp:77
-#, kde-format
-msgid ""
-"Branch \"%1\" already exists.\n"
-"Please, choose another name."
-msgstr ""
-
-#: vcs/dvcs/ui/branchmanager.cpp:92
-#, kde-format
-msgid ""
-"Currently at the branch \"%1\".\n"
-"To remove it, please change to another branch."
-msgstr ""
-
-#: vcs/dvcs/ui/branchmanager.cpp:99
-#, kde-format
-msgid "Are you sure you want to irreversebly remove the branch '%1'?"
-msgstr ""
-
-#: vcs/dvcs/ui/branchmanager.cpp:110
-#, kde-format
-msgid "Already on branch \"%1\"\n"
-msgstr ""
-
-#: vcs/dvcs/ui/branchmanager.cpp:147
-#, kde-format
-msgid "Branch \"%1\" already exists."
-msgstr ""
-
-#: vcs/dvcs/ui/branchmanager.cpp:152
-#, kde-format
-msgid "Are you sure you want to rename %1 to %2 ?"
-msgstr ""
-
 #: vcs/dvcs/ui/dvcsgenericoutputview.cpp:56
 msgid "Job exited normally"
 msgstr ""
@@ -2779,29 +2737,46 @@ msgstr "Pengarang"
 msgid "Date"
 msgstr "Tarikh"
 
-#: vcs/dvcs/dvcsjob.cpp:147
-#, kde-format
-msgid "Working Directory doesn't exist: %1"
+#: vcs/dvcs/ui/branchmanager.cpp:72
+msgid "New branch"
 msgstr ""
 
-#: vcs/dvcs/dvcsjob.cpp:154
-#, kde-format
-msgid "Working Directory is not absolute: %1"
+#: vcs/dvcs/ui/branchmanager.cpp:72
+msgid "Name of the new branch:"
 msgstr ""
 
-#: vcs/dvcs/dvcsjob.cpp:194
+#: vcs/dvcs/ui/branchmanager.cpp:77
 #, kde-format
-msgid "Process exited with status %1"
+msgid ""
+"Branch \"%1\" already exists.\n"
+"Please, choose another name."
 msgstr ""
 
-#: vcs/dvcs/dvcsjob.cpp:224
+#: vcs/dvcs/ui/branchmanager.cpp:92
 #, kde-format
-msgid "Command finnished with error %1."
+msgid ""
+"Currently at the branch \"%1\".\n"
+"To remove it, please change to another branch."
 msgstr ""
 
-#: vcs/dvcs/dvcsjob.cpp:240
+#: vcs/dvcs/ui/branchmanager.cpp:99
 #, kde-format
-msgid "Command exited with value %1."
+msgid "Are you sure you want to irreversibly remove the branch '%1'?"
+msgstr ""
+
+#: vcs/dvcs/ui/branchmanager.cpp:110
+#, kde-format
+msgid "Already on branch \"%1\"\n"
+msgstr ""
+
+#: vcs/dvcs/ui/branchmanager.cpp:147
+#, kde-format
+msgid "Branch \"%1\" already exists."
+msgstr ""
+
+#: vcs/dvcs/ui/branchmanager.cpp:152
+#, kde-format
+msgid "Are you sure you want to rename %1 to %2 ?"
 msgstr ""
 
 #: vcs/dvcs/dvcsplugin.cpp:125
@@ -2819,6 +2794,31 @@ msgstr ""
 
 #: vcs/dvcs/dvcsplugin.cpp:128
 msgid "Revision History"
+msgstr ""
+
+#: vcs/dvcs/dvcsjob.cpp:147
+#, kde-format
+msgid "Working Directory does not exist: %1"
+msgstr ""
+
+#: vcs/dvcs/dvcsjob.cpp:154
+#, kde-format
+msgid "Working Directory is not absolute: %1"
+msgstr ""
+
+#: vcs/dvcs/dvcsjob.cpp:194
+#, kde-format
+msgid "Process exited with status %1"
+msgstr ""
+
+#: vcs/dvcs/dvcsjob.cpp:224
+#, kde-format
+msgid "Command finished with error %1."
+msgstr ""
+
+#: vcs/dvcs/dvcsjob.cpp:240
+#, kde-format
+msgid "Command exited with value %1."
 msgstr ""
 
 #: vcs/models/vcsannotationmodel.cpp:105
