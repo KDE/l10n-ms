@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpovmodeler\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-09 06:21+0200\n"
+"POT-Creation-Date: 2010-10-10 06:03+0200\n"
 "PO-Revision-Date: 2010-07-13 22:44+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -702,7 +702,7 @@ msgstr "setempat"
 msgid "&Preview"
 msgstr "&Prapapar"
 
-#: pmdialogeditbase.cpp:200 pmpovrayoutputwidget.cpp:48 pmpovraywidget.cpp:83
+#: pmdialogeditbase.cpp:200 pmpovrayoutputwidget.cpp:48 pmpovraywidget.cpp:82
 msgid "Povray Output"
 msgstr "Output Povray"
 
@@ -715,7 +715,7 @@ msgstr ""
 "Povray keluar secara tak normal dengan kod keluar %1.\n"
 "Lihat output povray untuk perincian."
 
-#: pmdialogeditbase.cpp:561 pmpovraywidget.cpp:356
+#: pmdialogeditbase.cpp:561 pmpovraywidget.cpp:330
 msgid ""
 "There were errors while rendering.\n"
 "See the povray output for details."
@@ -869,11 +869,11 @@ msgstr "Beberapa objek grafik"
 msgid "Leonardo Skorianez"
 msgstr ""
 
-#: pmfiledialog.cpp:55
+#: pmfiledialog.cpp:57
 msgid "Import"
 msgstr "Import"
 
-#: pmfiledialog.cpp:88
+#: pmfiledialog.cpp:92
 #, fuzzy
 msgid "Export"
 msgstr "&Eksport"
@@ -2252,17 +2252,17 @@ msgstr "Token '%1' tak dijangka."
 msgid "Info"
 msgstr "Maklumat"
 
-#: pmparser.cpp:251 pmparser.cpp:267
+#: pmparser.cpp:250 pmparser.cpp:266
 #, fuzzy, kde-format
 msgid "Cannot insert %1 into %2."
 msgstr "Tidak boleh selit %1 ke dalam %2"
 
-#: pmparser.cpp:378 pmparser.cpp:380
+#: pmparser.cpp:377 pmparser.cpp:379
 #, kde-format
 msgid "Undefined object \"%1\"."
 msgstr "Object \"%1\" tak ditakrif."
 
-#: pmparser.cpp:407
+#: pmparser.cpp:406
 #, kde-format
 msgid "Object \"%1\" is undefined at that point."
 msgstr "Objek \"%1\" tak ditakrif di titik itu."
@@ -2292,7 +2292,7 @@ msgstr "Realisasi"
 msgid "Render Modes..."
 msgstr "Mod Membalas..."
 
-#: pmpart.cpp:279 pmpovraywidget.cpp:119
+#: pmpart.cpp:279 pmpovraywidget.cpp:118
 msgid "Render Window"
 msgstr "Tetingkap Realisasi"
 
@@ -2646,14 +2646,26 @@ msgstr "Isytihar"
 msgid "Default"
 msgstr "Default"
 
-#: pmpart.cpp:2816 pmpart.cpp:2821
+#: pmpart.cpp:2816
 #, fuzzy
 msgid "Undo"
 msgstr "Nyahcara"
 
-#: pmpart.cpp:2829 pmpart.cpp:2834
+#: pmpart.cpp:2821
+#, fuzzy, kde-format
+msgctxt "Undo the specified action"
+msgid "Undo %1"
+msgstr "Nyahcara"
+
+#: pmpart.cpp:2829
 #, fuzzy
 msgid "Redo"
+msgstr "Ulangcara"
+
+#: pmpart.cpp:2834
+#, fuzzy, kde-format
+msgctxt "Redo the specified action"
+msgid "Redo %1"
 msgstr "Ulangcara"
 
 #: pmpattern.cpp:554
@@ -3287,44 +3299,32 @@ msgstr "Povray hanya menyokong sehingga 20 laluan pustaka. "
 msgid "The list of library paths already contains this path."
 msgstr "Senarai pustaka sudah mengandungi laluan ini."
 
-#: pmpovraywidget.cpp:73
+#: pmpovraywidget.cpp:72
 #, fuzzy
 msgid "Stop"
 msgstr "Henti"
 
-#: pmpovraywidget.cpp:76
+#: pmpovraywidget.cpp:75
 msgid "Suspend"
 msgstr "Tangguh"
 
-#: pmpovraywidget.cpp:79
+#: pmpovraywidget.cpp:78
 msgid "Resume"
 msgstr "Teruskan"
 
-#: pmpovraywidget.cpp:179
+#: pmpovraywidget.cpp:178
 msgid "running"
 msgstr "larian"
 
-#: pmpovraywidget.cpp:216
+#: pmpovraywidget.cpp:215
 msgid "suspended"
 msgstr "ditangguhkan"
 
-#: pmpovraywidget.cpp:254
+#: pmpovraywidget.cpp:247
 msgid "Malformed URL"
 msgstr ""
 
-#: pmpovraywidget.cpp:272
-msgid ""
-"Unknown image format.\n"
-"Please enter a valid suffix."
-msgstr ""
-"Format imej tidak diketahui.\n"
-"Masukkan akhiran sah."
-
-#: pmpovraywidget.cpp:279
-msgid "Format is not supported for writing."
-msgstr "Format tak disokong untuk menulis."
-
-#: pmpovraywidget.cpp:318
+#: pmpovraywidget.cpp:292
 #, fuzzy
 msgid ""
 "Could not correctly write the image.\n"
@@ -3333,7 +3333,7 @@ msgstr ""
 "Tidak dapat menulis imej dengan betul.\n"
 "Format imej salah?"
 
-#: pmpovraywidget.cpp:322
+#: pmpovraywidget.cpp:296
 #, fuzzy
 msgid ""
 "Could not write the image.\n"
@@ -3342,11 +3342,11 @@ msgstr ""
 "Tidak dapat menulis imej.\n"
 "Kebenaran dinafikan."
 
-#: pmpovraywidget.cpp:345
+#: pmpovraywidget.cpp:319
 msgid "finished"
 msgstr "selesai"
 
-#: pmpovraywidget.cpp:350
+#: pmpovraywidget.cpp:324
 #, fuzzy, kde-format
 msgid ""
 "Povray exited abnormally (%1).\n"
@@ -3355,7 +3355,7 @@ msgstr ""
 "Povray keluar secara tak normal.\n"
 "Lihat output povray untuk perincian."
 
-#: pmpovraywidget.cpp:422
+#: pmpovraywidget.cpp:396
 #, kde-format
 msgid "running, %1 pixels/second"
 msgstr "larian, %1 piksel/saat"
@@ -4467,3 +4467,13 @@ msgstr "Realisasi Povray"
 #: rc.cpp:98
 msgid "Graphical View"
 msgstr "Paparan Grafik"
+
+#~ msgid ""
+#~ "Unknown image format.\n"
+#~ "Please enter a valid suffix."
+#~ msgstr ""
+#~ "Format imej tidak diketahui.\n"
+#~ "Masukkan akhiran sah."
+
+#~ msgid "Format is not supported for writing."
+#~ msgstr "Format tak disokong untuk menulis."
