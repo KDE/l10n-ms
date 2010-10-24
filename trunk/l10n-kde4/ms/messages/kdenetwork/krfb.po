@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:46+0200\n"
+"POT-Creation-Date: 2010-10-24 06:22+0200\n"
 "PO-Revision-Date: 2008-07-22 22:01+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -15,25 +15,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=1;\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: connectioncontroller.cpp:112
-#, fuzzy, kde-format
-msgid "Refused uninvited connection attempt from %1"
-msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
-
-#: connectioncontroller.cpp:123
-#, fuzzy, kde-format
-msgid "Accepted uninvited connection from %1"
-msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
-
-#: connectioncontroller.cpp:131
-#, kde-format
-msgid "Received connection from %1, on hold (waiting for confirmation)"
+#: abstractrfbserver.cpp:221
+msgid "Address already in use"
 msgstr ""
 
-#: connectioncontroller.cpp:174 connectioncontroller.cpp:178
-#, kde-format
-msgid "Failed login attempt from %1: wrong password"
+#: abstractrfbserver.cpp:306
+msgid ""
+"Your X11 Server does not support the required XTest extension version 2.2. "
+"Sharing your desktop is not possible."
 msgstr ""
+
+#: abstractrfbserver.cpp:307
+#, fuzzy
+msgid "Desktop Sharing Error"
+msgstr " Selaraskan Perkongsian Desktop"
 
 #: connectiondialog.cpp:32
 #, fuzzy
@@ -50,7 +45,7 @@ msgstr "Sambungan Masatamat:"
 msgid "Refuse Connection"
 msgstr "Sambungan Masatamat:"
 
-#: invitedialog.cpp:34 manageinvitationsdialog.cpp:57
+#: invitedialog.cpp:34 manageinvitationsdialog.cpp:55
 msgid "Invitation"
 msgstr ""
 
@@ -79,25 +74,30 @@ msgid ""
 "in the configuration."
 msgstr ""
 
-#: krfbserver.cpp:194 krfbserver.cpp:214
+#: krfbconnectioncontroller.cpp:97
+#, fuzzy, kde-format
+msgid "Refused uninvited connection attempt from %1"
+msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
+
+#: krfbconnectioncontroller.cpp:108
+#, fuzzy, kde-format
+msgid "Accepted uninvited connection from %1"
+msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
+
+#: krfbconnectioncontroller.cpp:116
+#, kde-format
+msgid "Received connection from %1, on hold (waiting for confirmation)"
+msgstr ""
+
+#: krfbconnectioncontroller.cpp:159 krfbconnectioncontroller.cpp:163
+#, kde-format
+msgid "Failed login attempt from %1: wrong password"
+msgstr ""
+
+#: krfbserver.cpp:60 krfbserver.cpp:65
 #, fuzzy, kde-format
 msgid "%1@%2 (shared desktop)"
 msgstr "Desktop Default:"
-
-#: krfbserver.cpp:207
-msgid "Address already in use"
-msgstr ""
-
-#: krfbserver.cpp:302
-msgid ""
-"Your X11 Server does not support the required XTest extension version 2.2. "
-"Sharing your desktop is not possible."
-msgstr ""
-
-#: krfbserver.cpp:303
-#, fuzzy
-msgid "Desktop Sharing Error"
-msgstr " Selaraskan Perkongsian Desktop"
 
 #: main.cpp:40
 msgid "VNC-compatible server to share KDE desktops"
@@ -201,7 +201,7 @@ msgstr "Memulakan readahead: "
 msgid "Do not show the invitations management dialog at startup"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:95
+#: manageinvitationsdialog.cpp:93
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
 "connect to your desktop.\n"
@@ -219,7 +219,7 @@ msgid ""
 "in the configuration."
 msgstr ""
 
-#: manageinvitationsdialog.cpp:117
+#: manageinvitationsdialog.cpp:115
 msgid ""
 "When sending an invitation by email, note that everybody who reads this "
 "email will be able to connect to your computer for one hour, or until the "
@@ -228,17 +228,17 @@ msgid ""
 "network, but not over the Internet."
 msgstr ""
 
-#: manageinvitationsdialog.cpp:122
+#: manageinvitationsdialog.cpp:120
 #, fuzzy
 msgid "Send Invitation via Email"
 msgstr "Kirim emel dan urus penjadualan anda"
 
-#: manageinvitationsdialog.cpp:143
+#: manageinvitationsdialog.cpp:141
 #, fuzzy
 msgid "Desktop Sharing (VNC) invitation"
 msgstr " Selaraskan Perkongsian Desktop"
 
-#: manageinvitationsdialog.cpp:144
+#: manageinvitationsdialog.cpp:142
 #, kde-format
 msgid ""
 "You have been invited to a VNC session. If you have the KDE Remote Desktop "
@@ -254,24 +254,24 @@ msgid ""
 "For security reasons this invitation will expire at %5 (%6)."
 msgstr ""
 
-#: manageinvitationsdialog.cpp:182
+#: manageinvitationsdialog.cpp:180
 msgid "Network"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:183
+#: manageinvitationsdialog.cpp:181
 msgid "Security"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:192
+#: manageinvitationsdialog.cpp:190
 msgid "<qt>Are you sure you want to delete all invitations?</qt>"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:193 manageinvitationsdialog.cpp:209
+#: manageinvitationsdialog.cpp:191 manageinvitationsdialog.cpp:207
 #, fuzzy
 msgid "Confirm delete Invitations"
 msgstr "Membuang semua rantai:"
 
-#: manageinvitationsdialog.cpp:208
+#: manageinvitationsdialog.cpp:206
 msgid "<qt>Are you sure you want to delete this invitation?</qt>"
 msgstr ""
 
@@ -662,32 +662,32 @@ msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
 msgid "Preferred Frame Buffer Plugin"
 msgstr ""
 
-#: trayicon.cpp:39 trayicon.cpp:91
+#: trayicon.cpp:38 trayicon.cpp:90
 #, fuzzy
 msgid "Desktop Sharing - disconnected"
 msgstr " Selaraskan Perkongsian Desktop"
 
-#: trayicon.cpp:48
+#: trayicon.cpp:47
 #, fuzzy
 msgid "Enable Remote Control"
 msgstr "Sistem kawalan versi."
 
-#: trayicon.cpp:49
+#: trayicon.cpp:48
 #, fuzzy
 msgid "Disable Remote Control"
 msgstr "Sistem kawalan versi."
 
-#: trayicon.cpp:79
+#: trayicon.cpp:78
 #, fuzzy, kde-format
 msgid "The remote user %1 is now connected."
 msgstr "Hos remote putuskan hubungan utk %s@%s."
 
-#: trayicon.cpp:81
+#: trayicon.cpp:80
 #, kde-format
 msgid "Desktop Sharing - connected with %1"
 msgstr ""
 
-#: trayicon.cpp:93
+#: trayicon.cpp:92
 #, fuzzy
 msgid "The remote user has closed the connection."
 msgstr "Hos remote putuskan hubungan utk %s@%s."
