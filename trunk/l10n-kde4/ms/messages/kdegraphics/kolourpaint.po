@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-19 06:58+0200\n"
+"POT-Creation-Date: 2010-12-26 02:58+0100\n"
 "PO-Revision-Date: 2005-11-06 05:51+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1947,10 +1947,6 @@ msgstr "Kurangkan kepada 256 Warna"
 msgid "Invert Colors"
 msgstr "Songsangkan Warna"
 
-#: commands/imagelib/effects/kpEffectGrayscaleCommand.cpp:41
-msgid "Reduce to Grayscale"
-msgstr "Kurangkan kepada Skala kelabu"
-
 #: commands/imagelib/effects/kpEffectCommandBase.cpp:67
 #: commands/imagelib/effects/kpEffectClearCommand.cpp:62
 #: commands/imagelib/transforms/kpTransformSkewCommand.cpp:78
@@ -1959,6 +1955,10 @@ msgstr "Kurangkan kepada Skala kelabu"
 #, kde-format
 msgid "Selection: %1"
 msgstr "Pilihan: %1"
+
+#: commands/imagelib/effects/kpEffectGrayscaleCommand.cpp:41
+msgid "Reduce to Grayscale"
+msgstr "Kurangkan kepada Skala kelabu"
 
 #: commands/imagelib/effects/kpEffectBlurSharpenCommand.cpp:58
 msgid "Soften"
@@ -2065,67 +2065,6 @@ msgid_plural "%1 more items"
 msgstr[0] "_n: %1 item lagi"
 msgstr[1] "%1 item lagi"
 
-#: widgets/colorSimilarity/kpColorSimilarityHolder.cpp:72
-msgid ""
-"<qt><p><b>Color Similarity</b> is how <i>similar</i> the colors of different "
-"pixels must be, for operations to consider them to be the same.</p><p>If you "
-"set it to something other than <b>Exact Match</b>, you can work more "
-"effectively with dithered images and photos, in a comparable manner to the "
-"\"Magic Wand\" feature of other paint programs.</p><p>This feature applies "
-"to:</p><ul><li><b>Selections</b>: In <b>Transparent</b> mode, any color in "
-"the selection that is <i>similar</i> to the background color will be made "
-"transparent.</li><li><b>Flood Fill</b>: For regions with <i>similar</i> - "
-"but not identical - colored pixels, a higher setting is likely to fill more "
-"pixels.</li><li><b>Color Eraser</b>: Any pixel whose color is <i>similar</i> "
-"to the foreground color will be replaced with the background color.</"
-"li><li><b>Autocrop</b> and <b>Remove Internal Border</b>: For borders with "
-"<i>similar</i> - but not identical - colored pixels, a higher setting is "
-"more likely to crop the whole border.</li></ul><p>Higher settings mean that "
-"operations consider an increased range of colors to be sufficiently "
-"<i>similar</i> so as to be the same.  Therefore, you should increase the "
-"setting if the above operations are not affecting pixels whose colors you "
-"consider to be similar enough.</p><p>However, if they are having too much of "
-"an effect and are changing pixels whose colors you do not consider to be "
-"similar (e.g. if <b>Flood Fill</b> is changing too many pixels), you should "
-"decrease this setting.</p><p>To configure it, click on the cube.</p></qt>"
-msgstr ""
-
-#: widgets/colorSimilarity/kpColorSimilarityHolder.cpp:122
-msgid ""
-"<qt><p><b>Color Similarity</b> is how <i>similar</i> the colors of different "
-"pixels must be, for operations to consider them to be the same.</p><p>If you "
-"set it to something other than <b>Exact Match</b>, you can work more "
-"effectively with dithered images and photos, in a comparable manner to the "
-"\"Magic Wand\" feature of other paint programs.</p><p>This feature applies "
-"to:</p><ul><li><b>Selections</b>: In <b>Transparent</b> mode, any color in "
-"the selection that is <i>similar</i> to the background color will be made "
-"transparent.</li><li><b>Flood Fill</b>: For regions with <i>similar</i> - "
-"but not identical - colored pixels, a higher setting is likely to fill more "
-"pixels.</li><li><b>Color Eraser</b>: Any pixel whose color is <i>similar</i> "
-"to the foreground color will be replaced with the background color.</"
-"li><li><b>Autocrop</b> and <b>Remove Internal Border</b>: For borders with "
-"<i>similar</i> - but not identical - colored pixels, a higher setting is "
-"more likely to crop the whole border.</li></ul><p>Higher settings mean that "
-"operations consider an increased range of colors to be sufficiently "
-"<i>similar</i> so as to be the same.  Therefore, you should increase the "
-"setting if the above operations are not affecting pixels whose colors you "
-"consider to be similar enough.</p><p>However, if they are having too much of "
-"an effect and are changing pixels whose colors you do not consider to be "
-"similar (e.g. if <b>Flood Fill</b> is changing too many pixels), you should "
-"decrease this setting.</p></qt>"
-msgstr ""
-
-#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:224
-#, kde-format
-msgid "<p>Color Similarity: %1%</p><p align=\"center\">Click to configure.</p>"
-msgstr ""
-
-#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:231
-msgid ""
-"<p>Color Similarity: Exact Match</p><p align=\"center\">Click to configure.</"
-"p>"
-msgstr ""
-
 #: widgets/toolbars/options/kpToolWidgetBrush.cpp:164
 msgid "1x1"
 msgstr "1x1"
@@ -2191,11 +2130,66 @@ msgctxt "Colors: name_or_url_of_color_palette [modified]"
 msgid "Colors: %1 [modified]"
 msgstr ""
 
-#: widgets/imagelib/effects/kpEffectBlurSharpenWidget.cpp:53
-#: widgets/imagelib/effects/kpEffectToneEnhanceWidget.cpp:67
-#: widgets/imagelib/effects/kpEffectEmbossWidget.cpp:54
-msgid "&Amount:"
-msgstr "&Jumlah:"
+#: widgets/colorSimilarity/kpColorSimilarityHolder.cpp:72
+msgid ""
+"<qt><p><b>Color Similarity</b> is how <i>similar</i> the colors of different "
+"pixels must be, for operations to consider them to be the same.</p><p>If you "
+"set it to something other than <b>Exact Match</b>, you can work more "
+"effectively with dithered images and photos, in a comparable manner to the "
+"\"Magic Wand\" feature of other paint programs.</p><p>This feature applies "
+"to:</p><ul><li><b>Selections</b>: In <b>Transparent</b> mode, any color in "
+"the selection that is <i>similar</i> to the background color will be made "
+"transparent.</li><li><b>Flood Fill</b>: For regions with <i>similar</i> - "
+"but not identical - colored pixels, a higher setting is likely to fill more "
+"pixels.</li><li><b>Color Eraser</b>: Any pixel whose color is <i>similar</i> "
+"to the foreground color will be replaced with the background color.</"
+"li><li><b>Autocrop</b> and <b>Remove Internal Border</b>: For borders with "
+"<i>similar</i> - but not identical - colored pixels, a higher setting is "
+"more likely to crop the whole border.</li></ul><p>Higher settings mean that "
+"operations consider an increased range of colors to be sufficiently "
+"<i>similar</i> so as to be the same.  Therefore, you should increase the "
+"setting if the above operations are not affecting pixels whose colors you "
+"consider to be similar enough.</p><p>However, if they are having too much of "
+"an effect and are changing pixels whose colors you do not consider to be "
+"similar (e.g. if <b>Flood Fill</b> is changing too many pixels), you should "
+"decrease this setting.</p><p>To configure it, click on the cube.</p></qt>"
+msgstr ""
+
+#: widgets/colorSimilarity/kpColorSimilarityHolder.cpp:122
+msgid ""
+"<qt><p><b>Color Similarity</b> is how <i>similar</i> the colors of different "
+"pixels must be, for operations to consider them to be the same.</p><p>If you "
+"set it to something other than <b>Exact Match</b>, you can work more "
+"effectively with dithered images and photos, in a comparable manner to the "
+"\"Magic Wand\" feature of other paint programs.</p><p>This feature applies "
+"to:</p><ul><li><b>Selections</b>: In <b>Transparent</b> mode, any color in "
+"the selection that is <i>similar</i> to the background color will be made "
+"transparent.</li><li><b>Flood Fill</b>: For regions with <i>similar</i> - "
+"but not identical - colored pixels, a higher setting is likely to fill more "
+"pixels.</li><li><b>Color Eraser</b>: Any pixel whose color is <i>similar</i> "
+"to the foreground color will be replaced with the background color.</"
+"li><li><b>Autocrop</b> and <b>Remove Internal Border</b>: For borders with "
+"<i>similar</i> - but not identical - colored pixels, a higher setting is "
+"more likely to crop the whole border.</li></ul><p>Higher settings mean that "
+"operations consider an increased range of colors to be sufficiently "
+"<i>similar</i> so as to be the same.  Therefore, you should increase the "
+"setting if the above operations are not affecting pixels whose colors you "
+"consider to be similar enough.</p><p>However, if they are having too much of "
+"an effect and are changing pixels whose colors you do not consider to be "
+"similar (e.g. if <b>Flood Fill</b> is changing too many pixels), you should "
+"decrease this setting.</p></qt>"
+msgstr ""
+
+#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:224
+#, kde-format
+msgid "<p>Color Similarity: %1%</p><p align=\"center\">Click to configure.</p>"
+msgstr ""
+
+#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:231
+msgid ""
+"<p>Color Similarity: Exact Match</p><p align=\"center\">Click to configure.</"
+"p>"
+msgstr ""
 
 #: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:66
 msgid "&Brightness:"
@@ -2244,6 +2238,12 @@ msgstr "Set Semula &Semua Nilai"
 #: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:169
 msgid "Settings"
 msgstr "Seting"
+
+#: widgets/imagelib/effects/kpEffectBlurSharpenWidget.cpp:53
+#: widgets/imagelib/effects/kpEffectToneEnhanceWidget.cpp:67
+#: widgets/imagelib/effects/kpEffectEmbossWidget.cpp:54
+msgid "&Amount:"
+msgstr "&Jumlah:"
 
 #: widgets/imagelib/effects/kpEffectToneEnhanceWidget.cpp:65
 msgid "&Granularity:"
