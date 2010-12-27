@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: skrooge\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-26 03:11+0100\n"
+"POT-Creation-Date: 2010-12-27 02:38+0100\n"
 "PO-Revision-Date: 2009-10-03 23:05+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -30,7 +30,7 @@ msgstr ""
 #: skrooge_categories/skgcategoriesplugin.cpp:65 skg_file/skgfileplugin.cpp:84
 #: skg_dashboard/skgdashboardplugin.cpp:59
 #: skg_properties/skgpropertiesplugin.cpp:68 skg_print/skgprintplugin.cpp:67
-#: skg_delete/skgdeleteplugin.cpp:64 skg_undoredo/skgundoredoplugin.cpp:71
+#: skg_delete/skgdeleteplugin.cpp:65 skg_undoredo/skgundoredoplugin.cpp:71
 #: skg_debug/skgdebugplugin.cpp:58 skg_bookmark/skgbookmarkplugin.cpp:72
 #: skg_dashboard2/skgdashboard2plugin.cpp:60
 #: skrooge_payee/skgpayeeplugin.cpp:62 skg_advice/skgadviceplugin.cpp:59
@@ -141,7 +141,7 @@ msgstr "Jumlah"
 #: skrooge_bank/skgbankboardwidget.cpp:90
 #: skrooge_bank/skgaccountboardwidget.cpp:232
 #: skrooge_calculator/skginterestboardwidget.cpp:95
-#: skgbankmodeler/skgdocumentbank.cpp:2321
+#: skgbankmodeler/skgdocumentbank.cpp:2343
 #: skgapplets/bank/bankskroogoid.cpp:79
 #: skgapplets/calculator/calculatorskroogoid.cpp:69
 msgctxt "Noun, the numerical total of a sum of values"
@@ -1840,7 +1840,7 @@ msgstr "Gagal untuk memadam"
 #: skrooge_operation/skgoperationpluginwidget.cpp:1070
 #: skrooge_report/skgreportpluginwidget.cpp:375
 #: skrooge_report/skgreportpluginwidget.cpp:911
-#: skgbankmodeler/skgdocumentbank.cpp:630
+#: skgbankmodeler/skgdocumentbank.cpp:652
 #, fuzzy
 msgctxt "Noun"
 msgid "All"
@@ -2134,7 +2134,7 @@ msgid ""
 msgstr "Cari"
 
 #: skrooge_search/skgsearchpluginwidget.cpp:49
-#: skgbankmodeler/skgdocumentbank.cpp:2235
+#: skgbankmodeler/skgdocumentbank.cpp:2257
 #, fuzzy
 msgctxt "Adjective, an highlighted item"
 msgid "Highlighted"
@@ -2769,22 +2769,28 @@ msgctxt "Advice on making the best (action)"
 msgid "Open interest page"
 msgstr "Gagal untuk memadam"
 
-#: skgbasemodeler/skgdefine.h:159
+#: skgbasemodeler/skgdefine.h:165
 #, kde-format
 msgctxt "Error message"
-msgid "Impossible to insert object (Constraint name: %1)"
+msgid ""
+"Impossible to insert object (%1 is used by %2).\n"
+"Constraint name: %3"
 msgstr ""
 
-#: skgbasemodeler/skgdefine.h:166
+#: skgbasemodeler/skgdefine.h:172
 #, kde-format
 msgctxt "Error message"
-msgid "Impossible to update object (Constraint name: %1)"
+msgid ""
+"Impossible to update object (%1 is used by %2).\n"
+"Constraint name: %3"
 msgstr ""
 
-#: skgbasemodeler/skgdefine.h:180
+#: skgbasemodeler/skgdefine.h:186
 #, kde-format
 msgctxt "Error message"
-msgid "Impossible to delete used object (Constraint name: %1)"
+msgid ""
+"Impossible to delete used object (%1 is used by %2).\n"
+"Constraint name: %3"
 msgstr ""
 
 #: skgbasemodeler/skgobjectbase.cpp:144
@@ -2821,13 +2827,13 @@ msgctxt "Error message"
 msgid "Operation impossible because the document is missing"
 msgstr ""
 
-#: skgbasemodeler/skgobjectbase.cpp:466
+#: skgbasemodeler/skgobjectbase.cpp:468
 #, kde-format
-msgctxt "Error message"
-msgid "You are not authorized to delete this object '%1'"
+msgctxt "Error message for an object"
+msgid "'%1': %2"
 msgstr ""
 
-#: skgbasemodeler/skgobjectbase.cpp:472
+#: skgbasemodeler/skgobjectbase.cpp:475
 #, kde-format
 msgctxt "An information message"
 msgid "'%1' has been deleted"
@@ -2963,47 +2969,47 @@ msgid "Open file '%1' failed"
 msgstr "Gagal untuk memadam"
 
 #: skgbasemodeler/skgdocument.cpp:1846 skgbasemodeler/skgdocument.cpp:1860
-#: skgbasemodeler/skgdocument.cpp:1867 skgbankmodeler/skgdocumentbank.cpp:1872
-#: skgbankmodeler/skgdocumentbank.cpp:1937
-#: skgbankmodeler/skgdocumentbank.cpp:1953
-#: skgbankmodeler/skgdocumentbank.cpp:1974
-#: skgbankmodeler/skgdocumentbank.cpp:2002
-#: skgbankmodeler/skgdocumentbank.cpp:2016
-#: skgbankmodeler/skgdocumentbank.cpp:2023
-#: skgbankmodeler/skgdocumentbank.cpp:2037
-#: skgbankmodeler/skgdocumentbank.cpp:2051
-#: skgbankmodeler/skgdocumentbank.cpp:2058
-#: skgbankmodeler/skgdocumentbank.cpp:2072
-#: skgbankmodeler/skgdocumentbank.cpp:2086
-#: skgbankmodeler/skgdocumentbank.cpp:2100
+#: skgbasemodeler/skgdocument.cpp:1867 skgbankmodeler/skgdocumentbank.cpp:1894
+#: skgbankmodeler/skgdocumentbank.cpp:1959
+#: skgbankmodeler/skgdocumentbank.cpp:1975
+#: skgbankmodeler/skgdocumentbank.cpp:1996
+#: skgbankmodeler/skgdocumentbank.cpp:2024
+#: skgbankmodeler/skgdocumentbank.cpp:2038
+#: skgbankmodeler/skgdocumentbank.cpp:2045
+#: skgbankmodeler/skgdocumentbank.cpp:2059
+#: skgbankmodeler/skgdocumentbank.cpp:2073
+#: skgbankmodeler/skgdocumentbank.cpp:2080
+#: skgbankmodeler/skgdocumentbank.cpp:2094
+#: skgbankmodeler/skgdocumentbank.cpp:2108
+#: skgbankmodeler/skgdocumentbank.cpp:2122
 #, fuzzy
 msgctxt "Noun, the default value of an item"
 msgid "Default"
 msgstr "Default"
 
-#: skgbasemodeler/skgdocument.cpp:1853 skgbankmodeler/skgdocumentbank.cpp:1885
-#: skgbankmodeler/skgdocumentbank.cpp:1945
-#: skgbankmodeler/skgdocumentbank.cpp:1960
-#: skgbankmodeler/skgdocumentbank.cpp:1981
-#: skgbankmodeler/skgdocumentbank.cpp:2009
-#: skgbankmodeler/skgdocumentbank.cpp:2030
-#: skgbankmodeler/skgdocumentbank.cpp:2044
-#: skgbankmodeler/skgdocumentbank.cpp:2065
-#: skgbankmodeler/skgdocumentbank.cpp:2079
-#: skgbankmodeler/skgdocumentbank.cpp:2093
+#: skgbasemodeler/skgdocument.cpp:1853 skgbankmodeler/skgdocumentbank.cpp:1907
+#: skgbankmodeler/skgdocumentbank.cpp:1967
+#: skgbankmodeler/skgdocumentbank.cpp:1982
+#: skgbankmodeler/skgdocumentbank.cpp:2003
+#: skgbankmodeler/skgdocumentbank.cpp:2031
+#: skgbankmodeler/skgdocumentbank.cpp:2052
+#: skgbankmodeler/skgdocumentbank.cpp:2066
+#: skgbankmodeler/skgdocumentbank.cpp:2087
+#: skgbankmodeler/skgdocumentbank.cpp:2101
+#: skgbankmodeler/skgdocumentbank.cpp:2115
 #, fuzzy
 msgctxt "Noun, the minimum value of an item"
 msgid "Minimum"
 msgstr "Minimum"
 
-#: skgbasemodeler/skgdocument.cpp:1880 skgbankmodeler/skgdocumentbank.cpp:2179
+#: skgbasemodeler/skgdocument.cpp:1880 skgbankmodeler/skgdocumentbank.cpp:2201
 #, fuzzy
 msgctxt "Noun, the name of an item"
 msgid "Name"
 msgstr "Nama"
 
-#: skgbasemodeler/skgdocument.cpp:1881 skgbankmodeler/skgdocumentbank.cpp:2207
-#: skgbankmodeler/skgdocumentbank.cpp:2213
+#: skgbasemodeler/skgdocument.cpp:1881 skgbankmodeler/skgdocumentbank.cpp:2229
+#: skgbankmodeler/skgdocumentbank.cpp:2235
 #, fuzzy
 msgctxt "Noun, the date of an item"
 msgid "Date"
@@ -3060,7 +3066,7 @@ msgstr "Gagal untuk memadam"
 #: skgbasemodeler/skgservices.cpp:788 skgbasemodeler/skgservices.cpp:811
 #: skgbasemodeler/skgservices.cpp:825 skgbasemodeler/skgservices.cpp:878
 #: skgbasemodeler/skgservices.cpp:906 skgbasemodeler/skgservices.cpp:927
-#: skgbasemodeler/skgservices.cpp:939 skgbasemodeler/skgservices.cpp:1004
+#: skgbasemodeler/skgservices.cpp:939 skgbasemodeler/skgservices.cpp:1005
 msgctxt "Error message"
 msgid "No database defined"
 msgstr ""
@@ -3931,246 +3937,280 @@ msgctxt "Noun, a physical object like a house or a car"
 msgid "Object"
 msgstr "Objek"
 
-#: skgbankmodeler/skgdocumentbank.cpp:458
+#: skgbankmodeler/skgdocumentbank.cpp:427
+msgctxt "Error message"
+msgid ""
+"You are not authorized to delete this operation because in \"checked\" status"
+msgstr ""
+
+#: skgbankmodeler/skgdocumentbank.cpp:440
+msgctxt "Error message"
+msgid ""
+"You are not authorized to delete this account because it contains some "
+"checked operations"
+msgstr ""
+
+#: skgbankmodeler/skgdocumentbank.cpp:465
 #, fuzzy
 msgctxt "Noun"
 msgid "year(s)"
 msgstr "tahun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:458
+#: skgbankmodeler/skgdocumentbank.cpp:465
 #, fuzzy
 msgctxt "Noun"
 msgid "month(s)"
 msgstr "bulan"
 
-#: skgbankmodeler/skgdocumentbank.cpp:458
+#: skgbankmodeler/skgdocumentbank.cpp:465
 #, fuzzy
 msgctxt "Noun"
 msgid "day(s)"
 msgstr "hari"
 
-#: skgbankmodeler/skgdocumentbank.cpp:495
-#: skgbankmodeler/skgdocumentbank.cpp:547
-#: skgbankmodeler/skgdocumentbank.cpp:603
-#: skgbankmodeler/skgdocumentbank.cpp:2188
+#: skgbankmodeler/skgdocumentbank.cpp:502
+#: skgbankmodeler/skgdocumentbank.cpp:554
+#: skgbankmodeler/skgdocumentbank.cpp:625
+#: skgbankmodeler/skgdocumentbank.cpp:2210
 msgctxt "Noun, financial operations with a negative amount"
 msgid "Expenditure"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:495
-#: skgbankmodeler/skgdocumentbank.cpp:547
-#: skgbankmodeler/skgdocumentbank.cpp:603
-#: skgbankmodeler/skgdocumentbank.cpp:2186
+#: skgbankmodeler/skgdocumentbank.cpp:502
+#: skgbankmodeler/skgdocumentbank.cpp:554
+#: skgbankmodeler/skgdocumentbank.cpp:625
+#: skgbankmodeler/skgdocumentbank.cpp:2208
 msgctxt "Noun, financial operations with a positive amount"
 msgid "Income"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:524
+#: skgbankmodeler/skgdocumentbank.cpp:531
 #, fuzzy
 #| msgid "Current"
 msgctxt "Adjective, a current account"
 msgid "Current"
 msgstr "Semasa"
 
-#: skgbankmodeler/skgdocumentbank.cpp:524
+#: skgbankmodeler/skgdocumentbank.cpp:531
 msgctxt "Noun"
 msgid "Credit card"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:524
+#: skgbankmodeler/skgdocumentbank.cpp:531
 msgctxt "Noun, the type of an account"
 msgid "Assets"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:524
+#: skgbankmodeler/skgdocumentbank.cpp:531
 #, fuzzy
 #| msgid "Investment"
 msgctxt "Noun, a type of account WHERE you invest money"
 msgid "Investment"
 msgstr "Pelaburan"
 
-#: skgbankmodeler/skgdocumentbank.cpp:524
+#: skgbankmodeler/skgdocumentbank.cpp:531
 #, fuzzy
 #| msgid "Other"
 msgctxt "Noun, as in other type of item"
 msgid "Other"
 msgstr "Lain-lain"
 
-#: skgbankmodeler/skgdocumentbank.cpp:628
+#: skgbankmodeler/skgdocumentbank.cpp:575
+msgctxt "Error message"
+msgid ""
+"You are not authorized to delete this tracker because used by some checked "
+"operations"
+msgstr ""
+
+#: skgbankmodeler/skgdocumentbank.cpp:595
+msgctxt "Error message"
+msgid ""
+"You are not authorized to delete this payee because used by some checked "
+"operations"
+msgstr ""
+
+#: skgbankmodeler/skgdocumentbank.cpp:613
+msgctxt "Error message"
+msgid ""
+"You are not authorized to delete this category because used by some checked "
+"operations"
+msgstr ""
+
+#: skgbankmodeler/skgdocumentbank.cpp:650
 #, fuzzy
 msgctxt "Noun"
 msgid "Negative"
 msgstr "Tidak sekali"
 
-#: skgbankmodeler/skgdocumentbank.cpp:629
+#: skgbankmodeler/skgdocumentbank.cpp:651
 #, fuzzy
 msgctxt "Noun"
 msgid "Positive"
 msgstr "Font"
 
-#: skgbankmodeler/skgdocumentbank.cpp:634
+#: skgbankmodeler/skgdocumentbank.cpp:656
 #, fuzzy
 msgctxt "Noun"
 msgid "Next"
 msgstr "&Minggu hadapan"
 
-#: skgbankmodeler/skgdocumentbank.cpp:635
+#: skgbankmodeler/skgdocumentbank.cpp:657
 #, fuzzy
 #| msgid "Current"
 msgctxt "Noun"
 msgid "Current"
 msgstr "Semasa"
 
-#: skgbankmodeler/skgdocumentbank.cpp:636
-#: skgbankmodeler/skgdocumentbank.cpp:2255
+#: skgbankmodeler/skgdocumentbank.cpp:658
+#: skgbankmodeler/skgdocumentbank.cpp:2277
 #, fuzzy
 msgctxt "Noun"
 msgid "Year"
 msgstr "Tahun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:1646
+#: skgbankmodeler/skgdocumentbank.cpp:1668
 #, kde-format
 msgctxt "Error message"
 msgid "Migration database from version %1 to version %2 failed"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:1735
-#: skgbankmodeler/skgdocumentbank.cpp:1840
+#: skgbankmodeler/skgdocumentbank.cpp:1757
+#: skgbankmodeler/skgdocumentbank.cpp:1862
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Operation '%1' on '%2' failed"
 msgstr "Gagal untuk memadam"
 
-#: skgbankmodeler/skgdocumentbank.cpp:1898
+#: skgbankmodeler/skgdocumentbank.cpp:1920
 msgctxt "Noun"
 msgid "Amount in 2 columns"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:1911
-#: skgbankmodeler/skgdocumentbank.cpp:2194
+#: skgbankmodeler/skgdocumentbank.cpp:1933
+#: skgbankmodeler/skgdocumentbank.cpp:2216
 #, fuzzy
 msgctxt "Noun"
 msgid "Amount entered"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:1924
+#: skgbankmodeler/skgdocumentbank.cpp:1946
 msgctxt "Noun"
 msgid "Amount entered in 2 columns"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:1967
+#: skgbankmodeler/skgdocumentbank.cpp:1989
 msgctxt "Noun, an intermediate value between two extremums"
 msgid "Intermediate"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:1988
+#: skgbankmodeler/skgdocumentbank.cpp:2010
 #, fuzzy
 msgctxt "Noun"
 msgid "With operations"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:1995
+#: skgbankmodeler/skgdocumentbank.cpp:2017
 #, fuzzy
 msgctxt "Noun"
 msgid "With cumulative operations"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2176
+#: skgbankmodeler/skgdocumentbank.cpp:2198
 #, fuzzy
 msgctxt "Noun, an account as in a bank account"
 msgid "Account"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2177
+#: skgbankmodeler/skgdocumentbank.cpp:2199
 #, fuzzy
 #| msgid "Accounts"
 msgctxt "Noun, an account as in a bank account"
 msgid "Account's type"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2178
+#: skgbankmodeler/skgdocumentbank.cpp:2200
 #, fuzzy
 msgctxt "Noun, a financial operation"
 msgid "Operation"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2181
+#: skgbankmodeler/skgdocumentbank.cpp:2203
 #, fuzzy
 msgctxt "Noun, as in commercial balance"
 msgid "Balance"
 msgstr "Baki"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2182
-#: skgbankmodeler/skgdocumentbank.cpp:2184
+#: skgbankmodeler/skgdocumentbank.cpp:2204
+#: skgbankmodeler/skgdocumentbank.cpp:2206
 #, fuzzy
 msgctxt "Name, the numerical amount of a financial operation"
 msgid "Amount"
 msgstr "Jumlah:"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2190
+#: skgbankmodeler/skgdocumentbank.cpp:2212
 msgctxt "Noun"
 msgid "Income entered"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2192
+#: skgbankmodeler/skgdocumentbank.cpp:2214
 msgctxt "Noun"
 msgid "Expenditure entered"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2193
+#: skgbankmodeler/skgdocumentbank.cpp:2215
 #, fuzzy
 msgctxt "Noun"
 msgid "Quantity owned"
 msgstr "Keluar"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2195
+#: skgbankmodeler/skgdocumentbank.cpp:2217
 #, fuzzy
 msgctxt "Noun"
 msgid "Account number"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2197
+#: skgbankmodeler/skgdocumentbank.cpp:2219
 #, fuzzy
 msgctxt "Noun, a number identifying an item"
 msgid "Number"
 msgstr "Nombor"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2198
+#: skgbankmodeler/skgdocumentbank.cpp:2220
 #, fuzzy
 msgctxt "Noun"
 msgid "Bank number"
 msgstr "Nombor:"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2199
+#: skgbankmodeler/skgdocumentbank.cpp:2221
 #, fuzzy
 msgctxt "Noun"
 msgid "Agency number"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2200
+#: skgbankmodeler/skgdocumentbank.cpp:2222
 #, fuzzy
 msgctxt "Noun"
 msgid "Agency address"
 msgstr "Alamat:"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2201
+#: skgbankmodeler/skgdocumentbank.cpp:2223
 #, fuzzy
 msgctxt "Noun"
 msgid "Address"
 msgstr "Alamat:"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2202
+#: skgbankmodeler/skgdocumentbank.cpp:2224
 msgctxt "A person or institution receiving a payment, or paying the operation"
 msgid "Payee"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2204
+#: skgbankmodeler/skgdocumentbank.cpp:2226
 #, fuzzy
 msgctxt "Noun, a user comment on an item"
 msgid "Comment"
 msgstr "Komen"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2205
+#: skgbankmodeler/skgdocumentbank.cpp:2227
 #, fuzzy
 msgctxt ""
 "Noun, the mode used for payment of the operation (Credit Card, Cheque, "
@@ -4178,70 +4218,70 @@ msgctxt ""
 msgid "Mode"
 msgstr "Mod"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2206
+#: skgbankmodeler/skgdocumentbank.cpp:2228
 #, fuzzy
 msgctxt "Noun"
 msgid "Next occurrence"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2208
+#: skgbankmodeler/skgdocumentbank.cpp:2230
 #, fuzzy
 msgctxt "Noun, 7 days"
 msgid "Week"
 msgstr "Barat"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2209
+#: skgbankmodeler/skgdocumentbank.cpp:2231
 #, fuzzy
 msgctxt "Noun, the months in a year"
 msgid "Month"
 msgstr "Bulan"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2210
+#: skgbankmodeler/skgdocumentbank.cpp:2232
 msgctxt "Noun, 3 months"
 msgid "Quarter"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2211
+#: skgbankmodeler/skgdocumentbank.cpp:2233
 msgctxt "Noun, 6 months"
 msgid "Semester"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2212
+#: skgbankmodeler/skgdocumentbank.cpp:2234
 #, fuzzy
 msgctxt "Noun, the years in a century"
 msgid "Year"
 msgstr "Tahun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2214
+#: skgbankmodeler/skgdocumentbank.cpp:2236
 #, fuzzy
 msgctxt "Noun, the date of an item"
 msgid "First date"
 msgstr "Tarikh:"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2215
+#: skgbankmodeler/skgdocumentbank.cpp:2237
 #, fuzzy
 msgctxt "Noun, the date of an item"
 msgid "Last date"
 msgstr "Nilai"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2218
+#: skgbankmodeler/skgdocumentbank.cpp:2240
 #, fuzzy
 msgctxt "Noun, the category of an item"
 msgid "Category"
 msgstr "Kategori"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2219
+#: skgbankmodeler/skgdocumentbank.cpp:2241
 msgctxt "Noun, a financial institution"
 msgid "Bank"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2220
+#: skgbankmodeler/skgdocumentbank.cpp:2242
 #, fuzzy
 msgctxt "Noun, the unit of an operation, usually a currency or a share"
 msgid "Unit"
 msgstr "Unit"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2221
+#: skgbankmodeler/skgdocumentbank.cpp:2243
 #, fuzzy
 #| msgctxt "Noun, units for operations, usually currencies or a shares"
 #| msgid "Units"
@@ -4249,263 +4289,263 @@ msgctxt "Noun, the unit of an operation, usually a currency or a share"
 msgid "Unit's type"
 msgstr "Unit"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2222
+#: skgbankmodeler/skgdocumentbank.cpp:2244
 msgctxt "Adjective, has an item been checked or not"
 msgid "Checked"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2223
+#: skgbankmodeler/skgdocumentbank.cpp:2245
 msgctxt "Adjective, a foreseen value"
 msgid "Foreseen"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2224
+#: skgbankmodeler/skgdocumentbank.cpp:2246
 #, fuzzy
 msgctxt "Noun, ahe unit symbol, something in the line of $, €, £..."
 msgid "Symbol"
 msgstr "Simbol"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2225
+#: skgbankmodeler/skgdocumentbank.cpp:2247
 #, fuzzy
 msgctxt "Noun, a country in the world (France, China...)"
 msgid "Country"
 msgstr "Negara"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2226
-#: skgbankmodeler/skgdocumentbank.cpp:2227
+#: skgbankmodeler/skgdocumentbank.cpp:2248
+#: skgbankmodeler/skgdocumentbank.cpp:2249
 #, fuzzy
 msgctxt "Noun, the type of an item"
 msgid "Type"
 msgstr "Jenis"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2228
+#: skgbankmodeler/skgdocumentbank.cpp:2250
 #, fuzzy
 msgctxt "Noun"
 msgid "Internet code"
 msgstr "Gagal untuk memadam"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2229
+#: skgbankmodeler/skgdocumentbank.cpp:2251
 #, fuzzy
 msgctxt "Noun"
 msgid "Number of operations"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2230
+#: skgbankmodeler/skgdocumentbank.cpp:2252
 msgctxt "Noun, how frequently something occurs"
 msgid "Periodicity"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2231
+#: skgbankmodeler/skgdocumentbank.cpp:2253
 #, fuzzy
 msgctxt "Automatically write something"
 msgid "Auto write"
 msgstr "Automula"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2232
+#: skgbankmodeler/skgdocumentbank.cpp:2254
 #, fuzzy
 msgctxt "Noun"
 msgid "Nb of occurrences"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2233
+#: skgbankmodeler/skgdocumentbank.cpp:2255
 #, fuzzy
 msgctxt "Verb, warn the user about an event"
 msgid "Warn"
 msgstr "Amaran"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2234
+#: skgbankmodeler/skgdocumentbank.cpp:2256
 #, fuzzy
 msgctxt "Adjective, a closed item"
 msgid "Closed"
 msgstr "Tutup"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2236
+#: skgbankmodeler/skgdocumentbank.cpp:2258
 #, fuzzy
 msgctxt "Noun, the status of an item"
 msgid "Status"
 msgstr "Status"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2237
+#: skgbankmodeler/skgdocumentbank.cpp:2259
 msgctxt "Adjective, an item scheduled to happen on a regular basis"
 msgid "Scheduled"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2238
+#: skgbankmodeler/skgdocumentbank.cpp:2260
 #, fuzzy
 msgctxt "Noun"
 msgid "Number of operations (cumulative)"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2239
+#: skgbankmodeler/skgdocumentbank.cpp:2261
 msgctxt "Noun"
 msgid "Amount (cumulative)"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2240
+#: skgbankmodeler/skgdocumentbank.cpp:2262
 #, fuzzy
 msgctxt "Noun"
 msgid "Search description"
 msgstr "Cari"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2241
+#: skgbankmodeler/skgdocumentbank.cpp:2263
 #, fuzzy
 msgctxt "Noun"
 msgid "Process description"
 msgstr "Process"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2242
+#: skgbankmodeler/skgdocumentbank.cpp:2264
 msgctxt "Noun, the type of action"
 msgid "Action type"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2244
+#: skgbankmodeler/skgdocumentbank.cpp:2266
 msgctxt "Noun, something that is used to track items"
 msgid "Tracker"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2245
+#: skgbankmodeler/skgdocumentbank.cpp:2267
 #, fuzzy
 msgctxt "Noun"
 msgid "Import status"
 msgstr "Import"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2246
+#: skgbankmodeler/skgdocumentbank.cpp:2268
 msgctxt "Noun, after the dot"
 msgid "Nb decimal"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2247
+#: skgbankmodeler/skgdocumentbank.cpp:2269
 #, fuzzy
 msgctxt "Noun, for a share"
 msgid "Rate"
 msgstr "Tarikh"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2248
+#: skgbankmodeler/skgdocumentbank.cpp:2270
 #, fuzzy
 msgctxt "Noun"
 msgid "Value date"
 msgstr "Nilai"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2249
+#: skgbankmodeler/skgdocumentbank.cpp:2271
 #, fuzzy
 msgctxt "Noun"
 msgid "Coef"
 msgstr "Tutup"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2250
+#: skgbankmodeler/skgdocumentbank.cpp:2272
 msgctxt "Noun"
 msgid "Annual Interest"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2251
+#: skgbankmodeler/skgdocumentbank.cpp:2273
 msgctxt "Noun"
 msgid "Accrued Interest"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2252
+#: skgbankmodeler/skgdocumentbank.cpp:2274
 #, fuzzy
 msgctxt "Noun"
 msgid "Value date for credit"
 msgstr "Nilai"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2253
+#: skgbankmodeler/skgdocumentbank.cpp:2275
 #, fuzzy
 msgctxt "Noun"
 msgid "Value date for debit"
 msgstr "Nilai"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2254
+#: skgbankmodeler/skgdocumentbank.cpp:2276
 msgctxt "Noun"
 msgid "Base computation"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2256
+#: skgbankmodeler/skgdocumentbank.cpp:2278
 #, fuzzy
 msgctxt "Noun"
 msgid "Month"
 msgstr "Bulan"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2257
+#: skgbankmodeler/skgdocumentbank.cpp:2279
 msgctxt "Noun"
 msgid "Period"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2258
+#: skgbankmodeler/skgdocumentbank.cpp:2280
 #, fuzzy
 #| msgid "Other"
 msgctxt "Noun, sort order"
 msgid "Order"
 msgstr "Susunan"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2259
+#: skgbankmodeler/skgdocumentbank.cpp:2281
 msgctxt "Noun"
 msgid "When"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2260
+#: skgbankmodeler/skgdocumentbank.cpp:2282
 msgctxt "Noun"
 msgid "What"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2261
+#: skgbankmodeler/skgdocumentbank.cpp:2283
 msgctxt "Noun"
 msgid "Impacted budget"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2262
+#: skgbankmodeler/skgdocumentbank.cpp:2284
 #, fuzzy
 msgctxt "Noun"
 msgid "Rules"
 msgstr "Peraturan"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2263
+#: skgbankmodeler/skgdocumentbank.cpp:2285
 msgctxt "Noun"
 msgid "Originally budgeted"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2264
+#: skgbankmodeler/skgdocumentbank.cpp:2286
 msgctxt "Noun"
 msgid "Budgeted"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2265
+#: skgbankmodeler/skgdocumentbank.cpp:2287
 #, fuzzy
 msgctxt "Noun"
 msgid "Delta"
 msgstr "Padam"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2266
+#: skgbankmodeler/skgdocumentbank.cpp:2288
 msgctxt "Noun"
 msgid "Original delta"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2267
+#: skgbankmodeler/skgdocumentbank.cpp:2289
 msgctxt "Noun, the absence of anything"
 msgid "-- Nothing --"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2430
+#: skgbankmodeler/skgdocumentbank.cpp:2452
 #, kde-format
 msgid ""
 "Expenses in category <b>'%1'</b> increased by <b>%2</b> for a total of <b>%"
 "3</b>."
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2434
+#: skgbankmodeler/skgdocumentbank.cpp:2456
 #, kde-format
 msgid ""
 "Expenses in category <b>'%1'</b> decreased by <b>%2</b> for a total of <b>%"
 "3</b>."
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2442
+#: skgbankmodeler/skgdocumentbank.cpp:2464
 #, kde-format
 msgid ""
 "Incomes in category <b>'%1'</b> increased by <b>%2</b> for a total of <b>%3</"
 "b>."
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2447
+#: skgbankmodeler/skgdocumentbank.cpp:2469
 #, kde-format
 msgid ""
 "Incomes in category <b>'%1'</b> decreased by <b>%2</b> for a total of <b>%3</"
@@ -5716,8 +5756,8 @@ msgid "<p>... you can add files or Internet links as property.</p>"
 msgstr "Operasi"
 
 #: skg_properties/skgpropertiesplugindockwidget.cpp:283
-#: skg_delete/skgdeleteplugin.cpp:69 skg_delete/skgdeleteplugin.cpp:87
-#: skg_delete/skgdeleteplugin.cpp:107
+#: skg_delete/skgdeleteplugin.cpp:70 skg_delete/skgdeleteplugin.cpp:88
+#: skg_delete/skgdeleteplugin.cpp:108
 #: skg_bookmark/skgbookmarkplugindockwidget.cpp:53
 #, fuzzy
 msgctxt "Verb, delete an item"
@@ -5768,16 +5808,16 @@ msgctxt "Error message"
 msgid "Print failed"
 msgstr "Gagal untuk memadam"
 
-#: skg_delete/skgdeleteplugin.cpp:114
+#: skg_delete/skgdeleteplugin.cpp:115 skg_delete/skgdeleteplugin.cpp:116
+msgctxt "Question"
+msgid "Do you want to force the deletion ?"
+msgstr ""
+
+#: skg_delete/skgdeleteplugin.cpp:124
 #, fuzzy
 msgctxt "Successful message after an user action"
 msgid "Objects deleted."
 msgstr "Ciri-ciri"
-
-#: skg_delete/skgdeleteplugin.cpp:116
-msgctxt "Error message"
-msgid "Delete failed. You are not authorized to delete an object used."
-msgstr ""
 
 #: skg_undoredo/skgundoredoplugin.cpp:82
 msgctxt "Verb, action to cancel previous action"
