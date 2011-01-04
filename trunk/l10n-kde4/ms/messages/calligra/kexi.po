@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-03 02:56+0100\n"
+"POT-Creation-Date: 2011-01-04 03:12+0100\n"
 "PO-Revision-Date: 2006-10-05 19:45+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -701,6 +701,35 @@ msgctxt "database connection"
 msgid "(connection %1)"
 msgstr ""
 
+#: core/kexiinternalpart.cpp:53 core/kexipartmanager.cpp:137
+#, fuzzy, kde-format
+msgid ""
+"Incompatible plugin \"%1\" version: found version %2, expected version %3."
+msgstr ""
+"Versi \"%1\" pemacu pangkalan data tak serasi: ditemui versi %2, dijangka "
+"versi %3."
+
+#: core/kexiinternalpart.cpp:68
+#, kde-format
+msgid "Could not load \"%1\" plugin."
+msgstr "Tidak dapat muatkan plugin \"%1\"."
+
+#: core/kexipartmanager.cpp:66
+#, kde-format
+msgid ""
+"No \"%1\" service type installed. Check your Kexi installation. Aborting."
+msgstr ""
+
+#: core/kexipartmanager.cpp:150
+#, fuzzy, kde-format
+msgid "Error while loading plugin \"%1\""
+msgstr "Ralat semasa memuatkan modul bahagian \"%1\" "
+
+#: core/kexipartmanager.cpp:192
+#, fuzzy, kde-format
+msgid "No plugin for class \"%1\""
+msgstr "Tiada modul bahagian untuk jenis mime \"%1\""
+
 #: core/kexiaboutdata.cpp:30
 msgid ""
 "Database creation for everyone\n"
@@ -713,7 +742,7 @@ msgid "Database creation for everyone"
 msgstr "Penciptaan pangkalan data untuk semua"
 
 #: core/kexiaboutdata.cpp:49
-msgid "(c) 2002-2010, Kexi Team"
+msgid "(c) 2002-2011, Kexi Team"
 msgstr ""
 
 #: core/kexiaboutdata.cpp:50
@@ -895,35 +924,6 @@ msgstr "MIMOS"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "opensource@mimos.my"
-
-#: core/kexiinternalpart.cpp:53 core/kexipartmanager.cpp:137
-#, fuzzy, kde-format
-msgid ""
-"Incompatible plugin \"%1\" version: found version %2, expected version %3."
-msgstr ""
-"Versi \"%1\" pemacu pangkalan data tak serasi: ditemui versi %2, dijangka "
-"versi %3."
-
-#: core/kexiinternalpart.cpp:68
-#, kde-format
-msgid "Could not load \"%1\" plugin."
-msgstr "Tidak dapat muatkan plugin \"%1\"."
-
-#: core/kexipartmanager.cpp:66
-#, kde-format
-msgid ""
-"No \"%1\" service type installed. Check your Kexi installation. Aborting."
-msgstr ""
-
-#: core/kexipartmanager.cpp:150
-#, fuzzy, kde-format
-msgid "Error while loading plugin \"%1\""
-msgstr "Ralat semasa memuatkan modul bahagian \"%1\" "
-
-#: core/kexipartmanager.cpp:192
-#, fuzzy, kde-format
-msgid "No plugin for class \"%1\""
-msgstr "Tiada modul bahagian untuk jenis mime \"%1\""
 
 #: formeditor/WidgetTreeWidget.cpp:96 formeditor/commands.cpp:2218
 #: main/printing/kexisimpleprintingengine.cpp:326
@@ -3567,71 +3567,6 @@ msgstr "Tidak dapat pinda jadual \"%1\" menggunakan jadual yang sama."
 msgid "Could not export data to \"%1\"."
 msgstr "Tidak jumpa pemacu  pangkalan data \"%1\"."
 
-#: kexidb/expression.cpp:730 kexidb/parser/parser_p.cpp:283
-msgid "Ambiguous field name"
-msgstr "Nama medan kabur"
-
-#: kexidb/expression.cpp:731 kexidb/parser/parser_p.cpp:284
-#, kde-format
-msgid ""
-"Both table \"%1\" and \"%2\" have defined \"%3\" field. Use \"<tableName>.%4"
-"\" notation to specify table name."
-msgstr ""
-"Jadual \"%1\" dan \"%2\" telah menentukan medan \"%3\". Gunakan notasi "
-"\"<tableName>.%4\" untuk menetapkan nama jadual. "
-
-#: kexidb/expression.cpp:740 kexidb/expression.cpp:812
-#: kexidb/parser/parser_p.cpp:293 kexidb/parser/parser_p.cpp:375
-msgid "Field not found"
-msgstr "Medan tidak ditemui"
-
-#: kexidb/expression.cpp:741 kexidb/parser/parser_p.cpp:294
-#, kde-format
-msgid "Table containing \"%1\" field not found"
-msgstr "Jadual mengandungi medan \"%1\" tidak ditemui"
-
-#: kexidb/expression.cpp:767 kexidb/parser/parser_p.cpp:318
-msgid "Could not access the table directly using its name"
-msgstr "Tidak dapat mengakses jadual secara terus dengan menggunakan namanya"
-
-#: kexidb/expression.cpp:768 kexidb/parser/parser_p.cpp:319
-#, kde-format
-msgid ""
-"Table \"%1\" is covered by aliases. Instead of \"%2\", you can write \"%3\""
-msgstr ""
-"Jadual \"%1\" dipenuhi alias. Daripada \"%2\", lebih baik anda tulis \"%3\""
-
-#: kexidb/expression.cpp:786
-msgid "Table not found"
-msgstr "Jadual tidak ditemui"
-
-#: kexidb/expression.cpp:800 kexidb/parser/parser_p.cpp:349
-#, kde-format
-msgid "Ambiguous \"%1.*\" expression"
-msgstr "Ungkapan kabur \"%1\" "
-
-#: kexidb/expression.cpp:801 kexidb/parser/parser_p.cpp:350
-#, kde-format
-msgid "More than one \"%1\" table or alias defined"
-msgstr "Lebih daripada satu \"%1\" jadual atau alias ditentukan"
-
-#: kexidb/expression.cpp:813 kexidb/parser/parser_p.cpp:375
-#, kde-format
-msgid "Table \"%1\" has no \"%2\" field"
-msgstr "Jadual \"%1\" tiada medan \"%2\""
-
-#: kexidb/expression.cpp:825 kexidb/parser/parser_p.cpp:366
-#, kde-format
-msgid "Ambiguous \"%1.%2\" expression"
-msgstr "Ungkapan kabur \"%1.%2\" "
-
-#: kexidb/expression.cpp:826 kexidb/parser/parser_p.cpp:367
-#, kde-format
-msgid "More than one \"%1\" table or alias defined containing \"%2\" field"
-msgstr ""
-"Lebih daripada satu jadual atau alias \"%1\" yang ditentukan mengandungi "
-"medan \"%2\"."
-
 #: kexidb/field.cpp:705
 msgid "Invalid Type"
 msgstr "Jenis Tak Sah"
@@ -3700,65 +3635,6 @@ msgstr "Tarikh/Masa"
 msgid "Unspecified error encountered"
 msgstr "Ralat tak ditetapkan ditemui"
 
-#: kexidb/parser/parser_p.cpp:135
-msgid "identifier was expected"
-msgstr "pengenal pasti dijangka"
-
-#: kexidb/parser/parser_p.cpp:143 kexidb/parser/parser_p.cpp:147
-msgid "Syntax Error"
-msgstr "Ralat Sintaks"
-
-#: kexidb/parser/parser_p.cpp:144
-#, kde-format
-msgid "\"%1\" is a reserved keyword"
-msgstr "\"%1\" adalah kata kunci yang disimpan khas"
-
-#: kexidb/parser/parser_p.cpp:148
-#, kde-format
-msgid "Syntax Error near \"%1\""
-msgstr "Ralat Sintaks hampir \"%1\""
-
-#: kexidb/parser/parser_p.cpp:178
-#, fuzzy
-msgid "Error"
-msgstr "Ralat: %1"
-
-#: kexidb/parser/parser_p.cpp:178
-msgid "No query specified"
-msgstr "Tiada pertanyaan ditetapkan"
-
-#: kexidb/parser/parser_p.cpp:241
-msgid "\"*\" could not be used if no tables are specified"
-msgstr "\"*\" tidak dapat digunakan jika tiada jadual ditetapkan"
-
-#. i18n("Field List Error"),
-#: kexidb/parser/parser_p.cpp:431
-#, kde-format
-msgid "Table \"%1\" does not exist"
-msgstr "Jadual \"%1\" tidak wujud"
-
-#: kexidb/parser/parser_p.cpp:491
-#, kde-format
-msgid "Invalid alias definition for column \"%1\""
-msgstr "Takrif alias tak sah bagi lajur \"%1\""
-
-#: kexidb/parser/parser_p.cpp:519
-#, kde-format
-msgid "Invalid \"%1\" column definition"
-msgstr "Takrif lajur \"%1\" tak sah"
-
-#: kexidb/parser/parser_p.cpp:586
-#, kde-format
-msgid "Could not define sorting - no column at position %1"
-msgstr ""
-
-#: kexidb/parser/parser_p.cpp:594
-#, fuzzy, kde-format
-msgid "Could not define sorting - column name or alias \"%1\" does not exist"
-msgstr ""
-"Tidak dapat alih keluar projek.\n"
-"Fail \"%1\" tidak wujud."
-
 #: sqlscanner.l:98
 msgid "Invalid integer number"
 msgstr "Nombor integer tak sah"
@@ -3775,11 +3651,125 @@ msgstr "Pengenal pasti tak sah"
 msgid "Identifiers should start with a letter or '_' character"
 msgstr "Pengenal pasti sepatutnya mula dengan huruf atau aksara '_'"
 
-#: kexidb/queryschema.cpp:254
+#: kexidb/parser/parser_p.cpp:137
+msgid "identifier was expected"
+msgstr "pengenal pasti dijangka"
+
+#: kexidb/parser/parser_p.cpp:145 kexidb/parser/parser_p.cpp:149
+msgid "Syntax Error"
+msgstr "Ralat Sintaks"
+
+#: kexidb/parser/parser_p.cpp:146
+#, kde-format
+msgid "\"%1\" is a reserved keyword"
+msgstr "\"%1\" adalah kata kunci yang disimpan khas"
+
+#: kexidb/parser/parser_p.cpp:150
+#, kde-format
+msgid "Syntax Error near \"%1\""
+msgstr "Ralat Sintaks hampir \"%1\""
+
+#: kexidb/parser/parser_p.cpp:180
 #, fuzzy
-msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
-msgid "expr"
-msgstr "expr"
+msgid "Error"
+msgstr "Ralat: %1"
+
+#: kexidb/parser/parser_p.cpp:180
+msgid "No query specified"
+msgstr "Tiada pertanyaan ditetapkan"
+
+#: kexidb/parser/parser_p.cpp:244
+msgid "\"*\" could not be used if no tables are specified"
+msgstr "\"*\" tidak dapat digunakan jika tiada jadual ditetapkan"
+
+#: kexidb/parser/parser_p.cpp:286 kexidb/expression.cpp:730
+msgid "Ambiguous field name"
+msgstr "Nama medan kabur"
+
+#: kexidb/parser/parser_p.cpp:287 kexidb/expression.cpp:731
+#, kde-format
+msgid ""
+"Both table \"%1\" and \"%2\" have defined \"%3\" field. Use \"<tableName>.%4"
+"\" notation to specify table name."
+msgstr ""
+"Jadual \"%1\" dan \"%2\" telah menentukan medan \"%3\". Gunakan notasi "
+"\"<tableName>.%4\" untuk menetapkan nama jadual. "
+
+#: kexidb/parser/parser_p.cpp:296 kexidb/parser/parser_p.cpp:378
+#: kexidb/expression.cpp:740 kexidb/expression.cpp:812
+msgid "Field not found"
+msgstr "Medan tidak ditemui"
+
+#: kexidb/parser/parser_p.cpp:297 kexidb/expression.cpp:741
+#, kde-format
+msgid "Table containing \"%1\" field not found"
+msgstr "Jadual mengandungi medan \"%1\" tidak ditemui"
+
+#: kexidb/parser/parser_p.cpp:321 kexidb/expression.cpp:767
+msgid "Could not access the table directly using its name"
+msgstr "Tidak dapat mengakses jadual secara terus dengan menggunakan namanya"
+
+#: kexidb/parser/parser_p.cpp:322 kexidb/expression.cpp:768
+#, kde-format
+msgid ""
+"Table \"%1\" is covered by aliases. Instead of \"%2\", you can write \"%3\""
+msgstr ""
+"Jadual \"%1\" dipenuhi alias. Daripada \"%2\", lebih baik anda tulis \"%3\""
+
+#: kexidb/parser/parser_p.cpp:352 kexidb/expression.cpp:800
+#, kde-format
+msgid "Ambiguous \"%1.*\" expression"
+msgstr "Ungkapan kabur \"%1\" "
+
+#: kexidb/parser/parser_p.cpp:353 kexidb/expression.cpp:801
+#, kde-format
+msgid "More than one \"%1\" table or alias defined"
+msgstr "Lebih daripada satu \"%1\" jadual atau alias ditentukan"
+
+#: kexidb/parser/parser_p.cpp:369 kexidb/expression.cpp:825
+#, kde-format
+msgid "Ambiguous \"%1.%2\" expression"
+msgstr "Ungkapan kabur \"%1.%2\" "
+
+#: kexidb/parser/parser_p.cpp:370 kexidb/expression.cpp:826
+#, kde-format
+msgid "More than one \"%1\" table or alias defined containing \"%2\" field"
+msgstr ""
+"Lebih daripada satu jadual atau alias \"%1\" yang ditentukan mengandungi "
+"medan \"%2\"."
+
+#: kexidb/parser/parser_p.cpp:378 kexidb/expression.cpp:813
+#, kde-format
+msgid "Table \"%1\" has no \"%2\" field"
+msgstr "Jadual \"%1\" tiada medan \"%2\""
+
+#. i18n("Field List Error"),
+#: kexidb/parser/parser_p.cpp:434
+#, kde-format
+msgid "Table \"%1\" does not exist"
+msgstr "Jadual \"%1\" tidak wujud"
+
+#: kexidb/parser/parser_p.cpp:494
+#, kde-format
+msgid "Invalid alias definition for column \"%1\""
+msgstr "Takrif alias tak sah bagi lajur \"%1\""
+
+#: kexidb/parser/parser_p.cpp:522
+#, kde-format
+msgid "Invalid \"%1\" column definition"
+msgstr "Takrif lajur \"%1\" tak sah"
+
+#: kexidb/parser/parser_p.cpp:589
+#, kde-format
+msgid "Could not define sorting - no column at position %1"
+msgstr ""
+
+#: kexidb/parser/parser_p.cpp:597
+#, fuzzy, kde-format
+msgid "Could not define sorting - column name or alias \"%1\" does not exist"
+msgstr ""
+"Tidak dapat alih keluar projek.\n"
+"Fail \"%1\" tidak wujud."
 
 #: kexidb/simplecommandlineapp.cpp:81
 #, fuzzy
@@ -3881,6 +3871,16 @@ msgstr "Tidak dapat memuatkan pemacu pangkalan data \"%1\"."
 #, kde-format
 msgid "No such driver service: \"%1\"."
 msgstr "Tiada servis pemacu seperti itu: \"%1\"."
+
+#: kexidb/expression.cpp:786
+msgid "Table not found"
+msgstr "Jadual tidak ditemui"
+
+#: kexidb/queryschema.cpp:260
+#, fuzzy
+msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
+msgid "expr"
+msgstr "expr"
 
 #: kexiutils/identifier.cpp:92
 #, kde-format
