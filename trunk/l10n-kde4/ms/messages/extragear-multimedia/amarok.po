@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-08 02:34+0100\n"
+"POT-Creation-Date: 2011-01-09 02:33+0100\n"
 "PO-Revision-Date: 2009-06-14 00:43+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -3498,17 +3498,6 @@ msgstr "Sains komputer"
 msgid "Removing: %1"
 msgstr "Nilaian: %1"
 
-#: core-impl/collections/support/CollectionManager.cpp:162
-msgid ""
-"<p>Amarok could not find any collection plugins. It is possible that Amarok "
-"is installed under the wrong prefix, please fix your installation using:<pre>"
-"$ cd /path/to/amarok/source-code/<br>$ su -c \"make uninstall\"<br>$ cmake -"
-"DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` && su -c \"make install\"<br>$ "
-"kbuildsycoca4 --noincremental<br>$ amarok</pre>More information can be found "
-"in the README file. For further assistance join us at #amarok on irc."
-"freenode.net.</p>"
-msgstr ""
-
 #: core-impl/collections/support/TrashCollectionLocation.cpp:46
 #, fuzzy
 #| msgid "Tracks"
@@ -3519,6 +3508,17 @@ msgstr "Trek"
 #, fuzzy, kde-format
 msgid "Moving to trash: %1"
 msgstr "Ke Hadapan 5 trek"
+
+#: core-impl/collections/support/CollectionManager.cpp:162
+msgid ""
+"<p>Amarok could not find any collection plugins. It is possible that Amarok "
+"is installed under the wrong prefix, please fix your installation using:<pre>"
+"$ cd /path/to/amarok/source-code/<br>$ su -c \"make uninstall\"<br>$ cmake -"
+"DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` && su -c \"make install\"<br>$ "
+"kbuildsycoca4 --noincremental<br>$ amarok</pre>More information can be found "
+"in the README file. For further assistance join us at #amarok on irc."
+"freenode.net.</p>"
+msgstr ""
 
 #: core-impl/collections/umscollection/handler/UmsHandler.cpp:474
 #, fuzzy
@@ -4945,35 +4945,6 @@ msgstr ""
 msgid "No Artist"
 msgstr ""
 
-#: covermanager/CoverFetcher.cpp:169
-msgid "Fetching Cover"
-msgstr ""
-
-#: covermanager/CoverFetcher.cpp:191
-#, fuzzy, kde-format
-msgid "There was an error communicating with cover provider: %1"
-msgstr "Ada ralat komunikasi DCOP dengan K3b."
-
-#: covermanager/CoverFetcher.cpp:379
-#, kde-format
-msgid "Retrieved cover successfully for '%1'."
-msgstr ""
-
-#: covermanager/CoverFetcher.cpp:390
-#, kde-format
-msgid "Fetching cover for '%1' failed."
-msgstr ""
-
-#: covermanager/CoverFetcher.cpp:403
-#, fuzzy, kde-format
-msgid "Canceled fetching cover for '%1'."
-msgstr "&Lompat ke hiperlink"
-
-#: covermanager/CoverFetcher.cpp:412
-#, fuzzy, kde-format
-msgid "Unable to find a cover for '%1'."
-msgstr "&Lompat ke hiperlink"
-
 #: covermanager/CoverViewDialog.cpp:32 covermanager/CoverViewDialog.cpp:43
 #, fuzzy
 msgid "Cover View"
@@ -5159,6 +5130,35 @@ msgstr "Main"
 msgctxt "@item::intable"
 msgid "URL"
 msgstr "URL"
+
+#: covermanager/CoverFetcher.cpp:172 covermanager/CoverFetcher.cpp:339
+msgid "Fetching Cover"
+msgstr ""
+
+#: covermanager/CoverFetcher.cpp:194
+#, fuzzy, kde-format
+msgid "There was an error communicating with cover provider: %1"
+msgstr "Ada ralat komunikasi DCOP dengan K3b."
+
+#: covermanager/CoverFetcher.cpp:408
+#, kde-format
+msgid "Retrieved cover successfully for '%1'."
+msgstr ""
+
+#: covermanager/CoverFetcher.cpp:419
+#, kde-format
+msgid "Fetching cover for '%1' failed."
+msgstr ""
+
+#: covermanager/CoverFetcher.cpp:432
+#, fuzzy, kde-format
+msgid "Canceled fetching cover for '%1'."
+msgstr "&Lompat ke hiperlink"
+
+#: covermanager/CoverFetcher.cpp:441
+#, fuzzy, kde-format
+msgid "Unable to find a cover for '%1'."
+msgstr "&Lompat ke hiperlink"
 
 #: databaseimporter/amarok14/FastForwardImporterConfig.cpp:39
 #, fuzzy
@@ -7383,7 +7383,7 @@ msgstr "lebih besar daripada"
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
 #: playlistgenerator/constraints/PlaylistLength.cpp:208
 #: playlistgenerator/constraints/TagMatch.cpp:447
-#: widgets/MetaQueryWidget.cpp:903 rc.cpp:1506 rc.cpp:1590 rc.cpp:1623
+#: widgets/MetaQueryWidget.cpp:902 rc.cpp:1506 rc.cpp:1590 rc.cpp:1623
 #, fuzzy
 msgid "less than"
 msgstr "kurang daripada"
@@ -7391,7 +7391,7 @@ msgstr "kurang daripada"
 #: playlistgenerator/constraints/PlaylistLength.cpp:210
 #: playlistgenerator/constraints/PlaylistDuration.cpp:273
 #: playlistgenerator/constraints/TagMatch.cpp:472
-#: widgets/MetaQueryWidget.cpp:922
+#: widgets/MetaQueryWidget.cpp:921
 #, fuzzy
 #| msgid "Unknown Artist"
 msgid "unknown comparison"
@@ -7467,7 +7467,7 @@ msgid "\"%1\""
 msgstr "%1"
 
 #: playlistgenerator/constraints/TagMatch.cpp:443
-#: widgets/MetaQueryWidget.cpp:905
+#: widgets/MetaQueryWidget.cpp:904
 #, fuzzy
 msgctxt "a numerical tag (like year or track number) equals a value"
 msgid "equals"
@@ -7480,7 +7480,7 @@ msgstr "sama dengan"
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:614
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
 #: playlistgenerator/constraints/TagMatch.cpp:445
-#: widgets/MetaQueryWidget.cpp:907 rc.cpp:1512 rc.cpp:1596 rc.cpp:1629
+#: widgets/MetaQueryWidget.cpp:906 rc.cpp:1512 rc.cpp:1596 rc.cpp:1629
 #, fuzzy
 msgid "greater than"
 msgstr "lebih besar daripada"
@@ -7519,14 +7519,14 @@ msgid "equals"
 msgstr "sama dengan"
 
 #: playlistgenerator/constraints/TagMatch.cpp:463
-#: widgets/MetaQueryWidget.cpp:915
+#: widgets/MetaQueryWidget.cpp:914
 msgctxt ""
 "an alphabetical tag (like title or artist name) starts with some string"
 msgid "starts with"
 msgstr ""
 
 #: playlistgenerator/constraints/TagMatch.cpp:465
-#: widgets/MetaQueryWidget.cpp:917
+#: widgets/MetaQueryWidget.cpp:916
 #, fuzzy
 #| msgid "&Open With"
 msgctxt "an alphabetical tag (like title or artist name) ends with some string"
@@ -7534,7 +7534,7 @@ msgid "ends with"
 msgstr "&Buka Dengan"
 
 #: playlistgenerator/constraints/TagMatch.cpp:467
-#: widgets/MetaQueryWidget.cpp:911
+#: widgets/MetaQueryWidget.cpp:910
 #, fuzzy
 msgctxt "an alphabetical tag (like title or artist name) contains some string"
 msgid "contains"
@@ -8853,7 +8853,7 @@ msgstr ""
 msgid "The amount of time remaining in current song"
 msgstr ""
 
-#: widgets/MetaQueryWidget.cpp:58 widgets/MetaQueryWidget.cpp:125
+#: widgets/MetaQueryWidget.cpp:124
 #, fuzzy
 #| msgid "Seconds"
 msgid "second"
@@ -8861,28 +8861,28 @@ msgid_plural "seconds"
 msgstr[0] "Saat"
 msgstr[1] "Saat"
 
-#: widgets/MetaQueryWidget.cpp:59 widgets/MetaQueryWidget.cpp:126
+#: widgets/MetaQueryWidget.cpp:125
 #, fuzzy
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "Minit"
 msgstr[1] "Minit"
 
-#: widgets/MetaQueryWidget.cpp:60 widgets/MetaQueryWidget.cpp:127
+#: widgets/MetaQueryWidget.cpp:126
 #, fuzzy
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] "Jam"
 msgstr[1] "Jam"
 
-#: widgets/MetaQueryWidget.cpp:61 widgets/MetaQueryWidget.cpp:128
+#: widgets/MetaQueryWidget.cpp:127
 #, fuzzy
 msgid "day"
 msgid_plural "days"
 msgstr[0] "Hari"
 msgstr[1] "Hari"
 
-#: widgets/MetaQueryWidget.cpp:62 widgets/MetaQueryWidget.cpp:129
+#: widgets/MetaQueryWidget.cpp:128
 #, fuzzy
 #| msgid "Months"
 msgid "month"
@@ -8890,77 +8890,77 @@ msgid_plural "months"
 msgstr[0] "Bulan"
 msgstr[1] "Bulan"
 
-#: widgets/MetaQueryWidget.cpp:230
+#: widgets/MetaQueryWidget.cpp:229
 msgid "Simple Search"
 msgstr ""
 
-#: widgets/MetaQueryWidget.cpp:446 widgets/SmartPlaylistEditor.cpp:934
+#: widgets/MetaQueryWidget.cpp:445 widgets/SmartPlaylistEditor.cpp:934
 #: widgets/SmartPlaylistEditor.cpp:956 widgets/SmartPlaylistEditor.cpp:984
 #: widgets/SmartPlaylistEditor.cpp:1003
 msgid "and"
 msgstr "dan"
 
-#: widgets/MetaQueryWidget.cpp:555
+#: widgets/MetaQueryWidget.cpp:554
 msgctxt "Unit for data rate kilo bit per seconds"
 msgid "kbps"
 msgstr ""
 
-#: widgets/MetaQueryWidget.cpp:557
+#: widgets/MetaQueryWidget.cpp:556
 msgctxt "Unit for sample rate"
 msgid "Hz"
 msgstr ""
 
-#: widgets/MetaQueryWidget.cpp:559
+#: widgets/MetaQueryWidget.cpp:558
 msgctxt "Unit for file size in mega byte"
 msgid "MiB"
 msgstr ""
 
-#: widgets/MetaQueryWidget.cpp:883
+#: widgets/MetaQueryWidget.cpp:882
 #, fuzzy
 msgctxt "The date lies before the given fixed date"
 msgid "before"
 msgstr "Muat semula"
 
-#: widgets/MetaQueryWidget.cpp:885
+#: widgets/MetaQueryWidget.cpp:884
 #, fuzzy
 msgctxt "The date is the same as the given fixed date"
 msgid "on"
 msgstr "(tiada)"
 
-#: widgets/MetaQueryWidget.cpp:887
+#: widgets/MetaQueryWidget.cpp:886
 #, fuzzy
 #| msgid "Date"
 msgctxt "The date is after the given fixed date"
 msgid "after"
 msgstr "Tarikh"
 
-#: widgets/MetaQueryWidget.cpp:889
+#: widgets/MetaQueryWidget.cpp:888
 #, fuzzy
 #| msgid "between"
 msgctxt "The date is between the given fixed dates"
 msgid "between"
 msgstr "antara"
 
-#: widgets/MetaQueryWidget.cpp:891
+#: widgets/MetaQueryWidget.cpp:890
 #, fuzzy
 msgctxt "The date lies before the given time interval"
 msgid "older than"
 msgstr "kurang daripada"
 
-#: widgets/MetaQueryWidget.cpp:893
+#: widgets/MetaQueryWidget.cpp:892
 #, fuzzy
 msgctxt "The date lies after the given time interval"
 msgid "within"
 msgstr "Lebar"
 
-#: widgets/MetaQueryWidget.cpp:909
+#: widgets/MetaQueryWidget.cpp:908
 #, fuzzy
 #| msgid "between"
 msgctxt "a numerical tag (like year or track number) is between two values"
 msgid "between"
 msgstr "antara"
 
-#: widgets/MetaQueryWidget.cpp:913
+#: widgets/MetaQueryWidget.cpp:912
 #, fuzzy
 msgctxt "an alphabetical tag (like title or artist name) equals some string"
 msgid "matches"
