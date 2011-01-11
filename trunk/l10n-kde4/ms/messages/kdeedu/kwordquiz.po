@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwordquiz\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-26 02:57+0100\n"
+"POT-Creation-Date: 2011-01-11 02:38+0100\n"
 "PO-Revision-Date: 2008-07-09 21:10+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=1;\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: kwqtablemodel.cpp:223 kwordquiz.cpp:673 kwordquiz.cpp:730 kwordquiz.cpp:852
-msgid "Untitled"
+#: kwqcleardialog.cpp:27
+msgid "Clear Contents"
 msgstr ""
 
 #: kwqtableview.cpp:190
@@ -49,6 +49,16 @@ msgstr ""
 #| msgid "&Select"
 msgid "Select Sound"
 msgstr "&Pilih"
+
+#: flashview.cpp:66 multipleview.cpp:112 qaview.cpp:146
+#, fuzzy
+msgid "Your answer was correct!"
+msgstr "Upload Anda berjaya!"
+
+#: flashview.cpp:71 multipleview.cpp:121 qaview.cpp:157
+#, fuzzy
+msgid "Your answer was incorrect."
+msgstr "Upload Anda berjaya!"
 
 #: prefcardappearance.cpp:80
 msgctxt "Back of the flashcard"
@@ -134,6 +144,47 @@ msgctxt "@item:inmenu undo link sound"
 msgid "Link Sound"
 msgstr ""
 
+#: kwqtutor.cpp:40
+msgid ""
+"<qt>KWordQuiz Tutor displays flashcards on your screen in a way that allows "
+"you to set a certain time interval at which flashcards will pop up.<br /"
+"><br />The flashcards pop up in a non-intrusive way allowing you to carry on "
+"working without stealing the focus from other programs you might be working "
+"with.<br /><br />Be sure to right-click KWordQuiz Tutor icon on the panel "
+"and select Preferences. There you can assign keyboard shortcuts.</qt>"
+msgstr ""
+
+#: kwqtutor.cpp:46
+msgid "Tutor"
+msgstr ""
+
+#: kwqtutor.cpp:56 kwqtutor.cpp:128
+msgid "Start Exercise"
+msgstr ""
+
+#: kwqtutor.cpp:65
+msgid "Configure KWordQuiz Tutor..."
+msgstr ""
+
+#: kwqtutor.cpp:70
+#, fuzzy
+msgid "Close Flash Card"
+msgstr "Belakang"
+
+#: kwqtutor.cpp:75
+#, fuzzy
+msgid "Flip Flash Card"
+msgstr "Kad Video"
+
+#: kwqtutor.cpp:120
+msgid "Stop Exercise"
+msgstr ""
+
+#: kwqtutor.cpp:142 kwordquiz.cpp:786
+#, fuzzy
+msgid "Open Vocabulary Document"
+msgstr "Buka dokumen te&rbaru:"
+
 #: kwordquizprefs.cpp:36
 msgctxt "@title:group general settings"
 msgid "General"
@@ -188,10 +239,28 @@ msgctxt "@title:group special character settings"
 msgid "Special Characters"
 msgstr "Aksara Khas"
 
-#: multipleview.cpp:112 qaview.cpp:146 flashview.cpp:66
+#: kwqtutorprefs.cpp:31
+msgctxt "@title:group tutor settings"
+msgid "Tutor"
+msgstr ""
+
+#: kwqtutorprefs.cpp:31
 #, fuzzy
-msgid "Your answer was correct!"
-msgstr "Upload Anda berjaya!"
+msgctxt "@title:group tutor settings"
+msgid "Tutor Settings"
+msgstr "Tetapan Lain-lain"
+
+#: kwqtutorprefs.cpp:34
+#, fuzzy
+#| msgid "Sort"
+msgctxt "Shortcuts Config"
+msgid "Shortcuts"
+msgstr "Isih"
+
+#: kwqtutorprefs.cpp:34
+#, fuzzy
+msgid "Shortcuts Settings"
+msgstr "Tetapan Lain-lain"
 
 #. i18n: file: multipleviewbase.ui:558
 #. i18n: ectx: property (text), widget (QLabel, lblCorrectHeader)
@@ -205,11 +274,6 @@ msgstr "Upload Anda berjaya!"
 #, fuzzy
 msgid "Correct Answer"
 msgstr "Comment=Jawapan betul"
-
-#: multipleview.cpp:121 qaview.cpp:157 flashview.cpp:71
-#, fuzzy
-msgid "Your answer was incorrect."
-msgstr "Upload Anda berjaya!"
 
 #. i18n: file: multipleviewbase.ui:353
 #. i18n: ectx: property (text), widget (QLabel, lblPreviousQuestionHeader)
@@ -240,11 +304,6 @@ msgstr "Comment=Jawapan betul"
 #: multipleview.cpp:147 qaview.cpp:184
 msgid "Summary"
 msgstr "Ringkasan"
-
-#: dlglanguage.cpp:31
-#, fuzzy
-msgid "Column Settings"
-msgstr "Tetapan Lain-lain"
 
 #: kwqcommands.h:106
 #, fuzzy
@@ -652,6 +711,10 @@ msgctxt "@info:status ready"
 msgid "Ready"
 msgstr "Sedia."
 
+#: kwordquiz.cpp:673 kwordquiz.cpp:730 kwordquiz.cpp:852 kwqtablemodel.cpp:223
+msgid "Untitled"
+msgstr ""
+
 #: kwordquiz.cpp:722
 msgid ""
 "The current document has been modified.\n"
@@ -666,11 +729,6 @@ msgstr "Logmasuk baru di dalam tetingkap bersarang"
 #: kwordquiz.cpp:778
 msgid "&Merge selected files with the current document"
 msgstr ""
-
-#: kwordquiz.cpp:786 kwqtutor.cpp:142
-#, fuzzy
-msgid "Open Vocabulary Document"
-msgstr "Buka dokumen te&rbaru:"
 
 #: kwordquiz.cpp:851
 #, fuzzy
@@ -849,65 +907,6 @@ msgstr ""
 msgid "%1 &lt;-&gt; %2 Randomly"
 msgstr ""
 
-#: kwqtutor.cpp:40
-msgid ""
-"<qt>KWordQuiz Tutor displays flashcards on your screen in a way that allows "
-"you to set a certain time interval at which flashcards will pop up.<br /"
-"><br />The flashcards pop up in a non-intrusive way allowing you to carry on "
-"working without stealing the focus from other programs you might be working "
-"with.<br /><br />Be sure to right-click KWordQuiz Tutor icon on the panel "
-"and select Preferences. There you can assign keyboard shortcuts.</qt>"
-msgstr ""
-
-#: kwqtutor.cpp:46
-msgid "Tutor"
-msgstr ""
-
-#: kwqtutor.cpp:56 kwqtutor.cpp:128
-msgid "Start Exercise"
-msgstr ""
-
-#: kwqtutor.cpp:65
-msgid "Configure KWordQuiz Tutor..."
-msgstr ""
-
-#: kwqtutor.cpp:70
-#, fuzzy
-msgid "Close Flash Card"
-msgstr "Belakang"
-
-#: kwqtutor.cpp:75
-#, fuzzy
-msgid "Flip Flash Card"
-msgstr "Kad Video"
-
-#: kwqtutor.cpp:120
-msgid "Stop Exercise"
-msgstr ""
-
-#: kwqtutorprefs.cpp:31
-msgctxt "@title:group tutor settings"
-msgid "Tutor"
-msgstr ""
-
-#: kwqtutorprefs.cpp:31
-#, fuzzy
-msgctxt "@title:group tutor settings"
-msgid "Tutor Settings"
-msgstr "Tetapan Lain-lain"
-
-#: kwqtutorprefs.cpp:34
-#, fuzzy
-#| msgid "Sort"
-msgctxt "Shortcuts Config"
-msgid "Shortcuts"
-msgstr "Isih"
-
-#: kwqtutorprefs.cpp:34
-#, fuzzy
-msgid "Shortcuts Settings"
-msgstr "Tetapan Lain-lain"
-
 #: prefcharacter.cpp:44
 #, fuzzy
 msgid "Action"
@@ -926,27 +925,6 @@ msgstr "Pilih Aksara"
 #, fuzzy, kde-format
 msgid "Special Character %1"
 msgstr "fail istimewa aksara"
-
-#: dlgspecchar.cpp:24
-#, fuzzy
-#| msgid "Select Character"
-msgctxt "@title:window select character dialog"
-msgid "Select Character"
-msgstr "Pilih Aksara"
-
-#: dlgspecchar.cpp:31
-#, fuzzy
-#| msgid "&Select"
-msgctxt "@action:button select"
-msgid "&Select"
-msgstr "&Pilih"
-
-#: dlgspecchar.cpp:32
-#, fuzzy
-#| msgid "Select this character"
-msgctxt "@info:tooltip select this character"
-msgid "Select this character"
-msgstr "Pilih aksara ini"
 
 #: wqprintdialogpage.cpp:30
 msgid "Vocabulary Options"
@@ -1033,9 +1011,31 @@ msgstr ""
 msgid "File to open"
 msgstr "Fail HTML untuk dibuka"
 
-#: kwqcleardialog.cpp:27
-msgid "Clear Contents"
-msgstr ""
+#: dlglanguage.cpp:31
+#, fuzzy
+msgid "Column Settings"
+msgstr "Tetapan Lain-lain"
+
+#: dlgspecchar.cpp:24
+#, fuzzy
+#| msgid "Select Character"
+msgctxt "@title:window select character dialog"
+msgid "Select Character"
+msgstr "Pilih Aksara"
+
+#: dlgspecchar.cpp:31
+#, fuzzy
+#| msgid "&Select"
+msgctxt "@action:button select"
+msgid "&Select"
+msgstr "&Pilih"
+
+#: dlgspecchar.cpp:32
+#, fuzzy
+#| msgid "Select this character"
+msgctxt "@info:tooltip select this character"
+msgid "Select this character"
+msgstr "Pilih aksara ini"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
