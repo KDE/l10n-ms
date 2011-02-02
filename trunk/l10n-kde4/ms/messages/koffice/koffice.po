@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-26 03:29+0100\n"
+"POT-Creation-Date: 2011-02-02 03:38+0100\n"
 "PO-Revision-Date: 2008-07-08 22:08+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -58,11 +58,6 @@ msgstr "Cipta Templat"
 msgid "A simple path shape"
 msgstr ""
 
-#: flake/KoToolBase.cpp:172 flake/KoToolManager.cpp:351
-#, fuzzy
-msgid "Tool Options"
-msgstr "Kata Pelengkapan"
-
 #: flake/KoShapeController.cpp:64 kotext/InsertTextReferenceAction.cpp:63
 #: kotext/InsertVariableAction.cpp:51
 #: main/rdf/InsertSemanticObjectCreateAction.cpp:59
@@ -71,15 +66,31 @@ msgstr "Kata Pelengkapan"
 msgid "%1 Options"
 msgstr "Pengecualian"
 
+#: flake/KoShapePaste.cpp:100
+#, fuzzy
+msgid "Paste Shapes"
+msgstr "Cipta Templat"
+
+#: flake/KoToolBase.cpp:172 flake/KoToolManager.cpp:351
+#, fuzzy
+msgid "Tool Options"
+msgstr "Kata Pelengkapan"
+
 #: flake/KoToolManager.cpp:350
 #, kde-format
 msgid "Active tool: %1"
 msgstr ""
 
-#: flake/KoShapePaste.cpp:100
+#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
 #, fuzzy
-msgid "Paste Shapes"
-msgstr "Cipta Templat"
+#| msgid "Change Indent"
+msgid "Change Connection"
+msgstr "Ubah Inden"
+
+#: flake/commands/KoParameterHandleMoveCommand.cpp:34
+#, fuzzy
+msgid "Change Parameter"
+msgstr "Ubah Penjadual"
 
 #: flake/commands/KoParameterToPathCommand.cpp:43
 #: flake/commands/KoParameterToPathCommand.cpp:52
@@ -264,16 +275,34 @@ msgstr "Lebar Garis Biasa"
 msgid "Remove Subpath"
 msgstr "Alih Keluar Kumpulan"
 
-#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
+#: flake/tools/KoCreatePathTool.cpp:369 flake/tools/KoPathTool.cpp:181
+msgid "Snapping"
+msgstr ""
+
+#: flake/tools/KoCreatePathTool.cpp:374
+msgid "Angle snapping delta"
+msgstr ""
+
+#: flake/tools/KoCreatePathTool.cpp:379
 #, fuzzy
 #| msgid "Change Indent"
-msgid "Change Connection"
+msgid "Angle Constraints"
 msgstr "Ubah Inden"
 
-#: flake/commands/KoParameterHandleMoveCommand.cpp:34
+#: flake/tools/KoCreatePathToolFactory.cpp:33
 #, fuzzy
-msgid "Change Parameter"
-msgstr "Ubah Penjadual"
+msgid "Create Path"
+msgstr "Cipta Templat"
+
+#: flake/tools/KoCreateShapesToolFactory.cpp:33
+#, fuzzy
+msgid "Create object"
+msgstr "Cipta Dokumen"
+
+#: flake/tools/KoPanToolFactory.cpp:29
+#, fuzzy
+msgid "Pan"
+msgstr "Sawo Matang"
 
 #: flake/tools/KoPathSegmentChangeStrategy.cpp:145
 #, fuzzy
@@ -351,10 +380,6 @@ msgstr "Laluan Edit"
 msgid "Line/Curve"
 msgstr "Seksyen Semasa"
 
-#: flake/tools/KoPathTool.cpp:181 flake/tools/KoCreatePathTool.cpp:369
-msgid "Snapping"
-msgstr ""
-
 #: flake/tools/KoPathTool.cpp:515
 msgid "Drag to move handle."
 msgstr ""
@@ -378,31 +403,6 @@ msgstr ""
 #: flake/tools/KoPathToolFactory.cpp:29
 msgid "Path editing tool"
 msgstr ""
-
-#: flake/tools/KoCreatePathTool.cpp:374
-msgid "Angle snapping delta"
-msgstr ""
-
-#: flake/tools/KoCreatePathTool.cpp:379
-#, fuzzy
-#| msgid "Change Indent"
-msgid "Angle Constraints"
-msgstr "Ubah Inden"
-
-#: flake/tools/KoCreatePathToolFactory.cpp:33
-#, fuzzy
-msgid "Create Path"
-msgstr "Cipta Templat"
-
-#: flake/tools/KoCreateShapesToolFactory.cpp:33
-#, fuzzy
-msgid "Create object"
-msgstr "Cipta Dokumen"
-
-#: flake/tools/KoPanToolFactory.cpp:29
-#, fuzzy
-msgid "Pan"
-msgstr "Sawo Matang"
 
 #: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
 #: widgets/KoZoomController.cpp:38 widgets/KoZoomInput.cpp:52
@@ -1028,6 +1028,27 @@ msgstr[1] ""
 msgid "Found no match"
 msgstr ""
 
+#: kotext/KoReplaceStrategy.cpp:58
+msgid ""
+"Found no match\n"
+"\n"
+"No text was replaced"
+msgstr ""
+
+#: kotext/KoReplaceStrategy.cpp:61
+#, fuzzy, kde-format
+msgid "1 replacement made"
+msgid_plural "%1 replacements made"
+msgstr[0] "Gantikan Teks"
+msgstr[1] "Gantikan Teks"
+
+#: kotext/KoReplaceStrategy.cpp:74
+#, fuzzy, kde-format
+#| msgctxt "We add the 1/2 char at the %1"
+#| msgid "Re&place 1/2... with %1..."
+msgid "Replace %1 with %2?"
+msgstr "&Gantikan 1/2... dengan %1 ..."
+
 #: kotext/KoText.cpp:29
 msgctxt "Underline Style"
 msgid "None"
@@ -1189,27 +1210,6 @@ msgstr "Ubah Sempadan"
 #, fuzzy
 msgid "Format"
 msgstr "Format Tarikh"
-
-#: kotext/KoReplaceStrategy.cpp:58
-msgid ""
-"Found no match\n"
-"\n"
-"No text was replaced"
-msgstr ""
-
-#: kotext/KoReplaceStrategy.cpp:61
-#, fuzzy, kde-format
-msgid "1 replacement made"
-msgid_plural "%1 replacements made"
-msgstr[0] "Gantikan Teks"
-msgstr[1] "Gantikan Teks"
-
-#: kotext/KoReplaceStrategy.cpp:74
-#, fuzzy, kde-format
-#| msgctxt "We add the 1/2 char at the %1"
-#| msgid "Re&place 1/2... with %1..."
-msgid "Replace %1 with %2?"
-msgstr "&Gantikan 1/2... dengan %1 ..."
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
@@ -2182,6 +2182,20 @@ msgstr ""
 msgid "Reference"
 msgstr ""
 
+#: main/rdf/KoDocumentRdfEditWidget.cpp:270
+#, kde-format
+msgctxt "statement is an Rdf related term"
+msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+msgid_plural ""
+"<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: main/rdf/KoDocumentRdfEditWidget.cpp:273
+msgctxt "statement is an Rdf related term"
+msgid "Discard invalid statements?"
+msgstr ""
+
 #: main/rdf/KoRdfCalendarEvent.cpp:201
 msgid "Area"
 msgstr ""
@@ -2357,20 +2371,6 @@ msgstr "Tarikh"
 
 #: main/rdf/KoSopranoTableModel.cpp:140
 msgid "Stored In"
-msgstr ""
-
-#: main/rdf/KoDocumentRdfEditWidget.cpp:270
-#, kde-format
-msgctxt "statement is an Rdf related term"
-msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
-msgid_plural ""
-"<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: main/rdf/KoDocumentRdfEditWidget.cpp:273
-msgctxt "statement is an Rdf related term"
-msgid "Discard invalid statements?"
 msgstr ""
 
 #: main/config/KoConfigDocumentPage.cpp:75

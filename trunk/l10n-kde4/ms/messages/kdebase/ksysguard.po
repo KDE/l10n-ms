@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-11 02:36+0100\n"
+"POT-Creation-Date: 2011-02-02 03:07+0100\n"
 "PO-Revision-Date: 2010-11-14 23:32+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -16,19 +16,327 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
+#: HostConnector.cc:44
+msgid "Connect Host"
+msgstr "Sambungkan Hos"
+
+#: HostConnector.cc:55
+msgid "Host:"
+msgstr "Hos:"
+
+#: HostConnector.cc:65
+msgid "Enter the name of the host you want to connect to."
+msgstr "Masukkan nama hos yang anda ingin sambungkan."
+
+#: HostConnector.cc:71
+msgid "Connection Type"
+msgstr "Jenis Sambungan"
+
+#: HostConnector.cc:77
+msgid "ssh"
+msgstr "ssh"
+
+#: HostConnector.cc:80
+msgid "Select this to use the secure shell to login to the remote host."
+msgstr "Pilih ini untuk menggunakan shell selamat untuk log masuk ke hos jauh."
+
+#: HostConnector.cc:83
+msgid "rsh"
+msgstr "rsh"
+
+#: HostConnector.cc:84
+msgid "Select this to use the remote shell to login to the remote host."
+msgstr "Pilih ini untuk menggunakan shell jauh untuk log masuk ke hos jauh."
+
+#: HostConnector.cc:87
+msgid "Daemon"
+msgstr "Daemon"
+
+#: HostConnector.cc:88
+msgid ""
+"Select this if you want to connect to a ksysguard daemon that is running on "
+"the machine you want to connect to, and is listening for client requests."
+msgstr ""
+"Pilih ini jika anda ingin sambung ke daemon ksysguard yang berfungsi dalam "
+"mesin yang anda ingin sambung, dan mendengar permintaan klien."
+
+#: HostConnector.cc:91
+msgid "Custom command"
+msgstr "Arahan Langganan"
+
+#: HostConnector.cc:92
+msgid ""
+"Select this to use the command you entered below to start ksysguardd on the "
+"remote host."
+msgstr ""
+"Pilih ini untuk menggunakan arahan yang anda masukkan di bawah untuk "
+"memulakan ksysguard dalam hos jauh."
+
+#: HostConnector.cc:95
+msgid "Port:"
+msgstr "Port:"
+
+#: HostConnector.cc:102
+msgid ""
+"Enter the port number on which the ksysguard daemon is listening for "
+"connections."
+msgstr ""
+"Masukkan nombor port yang padanya daemon ksysguard mendengar sambungan."
+
+#: HostConnector.cc:105
+msgid "e.g.  3112"
+msgstr "contohnya, 3112"
+
+#: HostConnector.cc:108
+msgid "Command:"
+msgstr "Arahan:"
+
+#: HostConnector.cc:117
+msgid "Enter the command that runs ksysguardd on the host you want to monitor."
+msgstr ""
+"Masukkan arahan yang menjalankan ksysguard dalam hos yang anda ingin pantau."
+
+#: HostConnector.cc:121
+msgid "e.g. ssh -l root remote.host.org ksysguardd"
+msgstr "e.g. ssh -l root remote.host.org ksysguardd"
+
+#: SensorBrowser.cc:117
+msgid "Sensor Browser"
+msgstr "Pelayar Penderia"
+
+#: SensorBrowser.cc:473
+#, fuzzy
+#| msgid "Drag sensors to empty cells of a worksheet or the panel applet."
+msgid "Drag sensors to empty cells of a worksheet "
+msgstr "Seret penderia ke sel kosong lembaran kerja atau aplet panel."
+
+#: SensorBrowser.cc:474
+#, fuzzy
+#| msgid ""
+#| "The sensor browser lists the connected hosts and the sensors that they "
+#| "provide. Click and drag sensors into drop zones of a worksheet or the "
+#| "panel applet. A display will appear that visualizes the values provided "
+#| "by the sensor. Some sensor displays can display values of multiple "
+#| "sensors. Simply drag other sensors on to the display to add more sensors."
+msgid ""
+"The sensor browser lists the connected hosts and the sensors that they "
+"provide. Click and drag sensors into drop zones of a worksheet. A display "
+"will appear that visualizes the values provided by the sensor. Some sensor "
+"displays can display values of multiple sensors. Simply drag other sensors "
+"on to the display to add more sensors."
+msgstr ""
+"Pelayar penderia menyenaraikan hos yang disambungkan dan penderia yang ia "
+"sediakan. Klik dan seret penderia ke dalam zon lepas bagi lembaran kerja "
+"atau aplet panel. Paparan akan muncul, menvisualkan nilai yang disediakan "
+"oleh penderia. Sesetengah paparan penderia boleh memaparkan berbilang "
+"penderia. Hanya seret penderia lain ke paparan untuk menambah lagi penderia."
+
+#: SensorDisplayLib/DancingBars.cc:96 SensorDisplayLib/FancyPlotter.cc:281
+msgid "OK"
+msgstr "OK"
+
+#: SensorDisplayLib/DancingBars.cc:96 SensorDisplayLib/FancyPlotter.cc:281
+#: SensorDisplayLib/FancyPlotter.cc:515 SensorDisplayLib/FancyPlotter.cc:585
+msgid "Error"
+msgstr "Ralat"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:43
+msgid "Edit BarGraph Preferences"
+msgstr "Edit Keutamaan Graf Bar "
+
+#: SensorDisplayLib/DancingBarsSettings.cc:52
+msgid "Range"
+msgstr "Julat"
+
+#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
+#: SensorDisplayLib/DancingBarsSettings.cc:57 WorkSheetSettings.cc:50 rc.cpp:5
+#: rc.cpp:116
+msgid "Title"
+msgstr "Tajuk"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
+#: SensorDisplayLib/DancingBarsSettings.cc:62
+#: SensorDisplayLib/FancyPlotterSettings.cc:73 rc.cpp:47
+msgid "Enter the title of the display here."
+msgstr "Masukkan tajuk paparan di sini."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:67
+msgid "Display Range"
+msgstr "Julat Paparan"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:72
+#: SensorDisplayLib/FancyPlotterSettings.cc:101
+msgid "Minimum value:"
+msgstr "Nilai minimum:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:80
+#, fuzzy
+msgid ""
+"Enter the minimum value for the display here. If both values are 0, "
+"automatic range detection is enabled."
+msgstr ""
+"Masukkan nilai minimum bagi paparan di sini. Jika kedua-dua nilai adalah 0, "
+"pengesanan julat automatik diaktifkan."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:84
+#: SensorDisplayLib/FancyPlotterSettings.cc:112
+msgid "Maximum value:"
+msgstr "Nilai maksimum:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:92
+#, fuzzy
+msgid ""
+"Enter the maximum value for the display here. If both values are 0, "
+"automatic range detection is enabled."
+msgstr ""
+"Masukkan nilai maksimum untuk paparan di sini. Jika kedua-dua nilai adalah "
+"0, pengesanan julat automatik diaktifkan."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:102
+msgid "Alarms"
+msgstr "Penggera"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
+#: SensorDisplayLib/DancingBarsSettings.cc:107 rc.cpp:92
+msgid "Alarm for Minimum Value"
+msgstr "Penggera untuk Nilai Minimum"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:112
+#: SensorDisplayLib/DancingBarsSettings.cc:135
+msgid "Enable alarm"
+msgstr "Aktifkan penggera"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:56
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
+#: SensorDisplayLib/DancingBarsSettings.cc:113 rc.cpp:56 rc.cpp:98
+msgid "Enable the minimum value alarm."
+msgstr "Aktifkan nilai minimum penggera."
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
+#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
+#: SensorDisplayLib/DancingBarsSettings.cc:116 rc.cpp:101
+msgid "Lower limit:"
+msgstr "Had bawah:"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
+#: SensorDisplayLib/DancingBarsSettings.cc:130 rc.cpp:104
+msgid "Alarm for Maximum Value"
+msgstr "Penggera untuk Nilai Maksimum"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:115
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
+#: SensorDisplayLib/DancingBarsSettings.cc:136 rc.cpp:65 rc.cpp:110
+msgid "Enable the maximum value alarm."
+msgstr "Aktifkan nilai maksimum penggera."
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
+#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
+#: SensorDisplayLib/DancingBarsSettings.cc:139 rc.cpp:113
+msgid "Upper limit:"
+msgstr "Had atas:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:156
+#, fuzzy
+#| msgid "Look"
+msgctxt "@title:tab Appearance of the bar graph"
+msgid "Look"
+msgstr "Rupa"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:161
+msgid "Normal bar color:"
+msgstr "Warna bar normal:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:168
+msgid "Out-of-range color:"
+msgstr "Warna luar julat:"
+
+#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:74
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: SensorDisplayLib/DancingBarsSettings.cc:175 SensorDisplayLib/LogFile.cc:100
+#: rc.cpp:17 rc.cpp:29 rc.cpp:80 rc.cpp:125
+msgid "Background color:"
+msgstr "Warna latarbelakang:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:182
+#: SensorDisplayLib/FancyPlotterSettings.cc:183
+msgid "Font size:"
+msgstr "Saiz fon:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:186
+msgid ""
+"This determines the size of the font used to print a label underneath the "
+"bars. Bars are automatically suppressed if text becomes too large, so it is "
+"advisable to use a small font size here."
+msgstr ""
+"Ini menentukan saiz fon yang digunakan untuk mencetak label di bawah bar. "
+"Bar ditindas secara automatik jika teks menjadi terlalu besar, jadi ia "
+"eloklah menggunakan fon bersaiz kecil di sini."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:194
+#: SensorDisplayLib/FancyPlotterSettings.cc:198
+msgid "Sensors"
+msgstr "Penderia"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:207
+msgid "Edit..."
+msgstr "Edit..."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:208
+msgid "Push this button to configure the label."
+msgstr "Tolak butang ini untuk mengkonfigur label."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:211
+#: SensorDisplayLib/FancyPlotterSettings.cc:231
+msgid "Delete"
+msgstr "Padam"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:212
+#: SensorDisplayLib/FancyPlotterSettings.cc:232
+msgid "Push this button to delete the sensor."
+msgstr "Tolah butang ini untuk hapuskan penderia."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:366
+msgid "Label of Bar Graph"
+msgstr "Label Graf Bar"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:367
+msgid "Enter new label:"
+msgstr "Masukkan label baru:"
+
+#: SensorDisplayLib/DummyDisplay.cc:30 SensorDisplayLib/DummyDisplay.cc:38
+msgid "Drop Sensor Here"
+msgstr "Lepaskan Penderia Di Sini"
+
+#: SensorDisplayLib/DummyDisplay.cc:32
+msgid ""
+"This is an empty space in a worksheet. Drag a sensor from the Sensor Browser "
+"and drop it here. A sensor display will appear that allows you to monitor "
+"the values of the sensor over time."
+msgstr ""
+"Ini ialah ruang kosong dalam lembaran kerja. Seret penderia dari Pelayar "
+"Penderia dan lepaskan di sini. Paparan penderia akan muncul yang membolehkan "
+"anda memantau nilai penderia."
+
 #: SensorDisplayLib/FancyPlotter.cc:178
 msgctxt "Largest axis title"
 msgid "99999 XXXX"
 msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:281 SensorDisplayLib/DancingBars.cc:96
-msgid "OK"
-msgstr "OK"
-
-#: SensorDisplayLib/FancyPlotter.cc:281 SensorDisplayLib/FancyPlotter.cc:515
-#: SensorDisplayLib/FancyPlotter.cc:585 SensorDisplayLib/DancingBars.cc:96
-msgid "Error"
-msgstr "Ralat"
 
 #: SensorDisplayLib/FancyPlotter.cc:511 SensorDisplayLib/FancyPlotter.cc:574
 #: SensorDisplayLib/FancyPlotter.cc:637
@@ -102,51 +410,6 @@ msgctxt "unitless - just a number"
 msgid "%1"
 msgstr "%1"
 
-#: SensorDisplayLib/LogFile.cc:92
-#, fuzzy
-#| msgid "Log File Settings"
-msgid "File logging settings"
-msgstr "Log Seting Fail"
-
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:61
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: SensorDisplayLib/LogFile.cc:98 rc.cpp:113
-msgid "Foreground color:"
-msgstr "Warna Latar Depan:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
-#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:74
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: SensorDisplayLib/LogFile.cc:100 SensorDisplayLib/DancingBarsSettings.cc:175
-#: rc.cpp:74 rc.cpp:89 rc.cpp:101 rc.cpp:116
-msgid "Background color:"
-msgstr "Warna latarbelakang:"
-
-#: SensorDisplayLib/SensorModel.cc:166
-msgid "Host"
-msgstr "Hos"
-
-#: SensorDisplayLib/SensorModel.cc:169
-msgid "Sensor"
-msgstr "Penderia"
-
-#: SensorDisplayLib/SensorModel.cc:172
-msgid "Unit"
-msgstr "Unit"
-
-#: SensorDisplayLib/SensorModel.cc:175
-msgid "Status"
-msgstr "Status"
-
-#: SensorDisplayLib/SensorModel.cc:178
-msgid "Label"
-msgstr "Label"
-
 #: SensorDisplayLib/FancyPlotterSettings.cc:51
 #, fuzzy
 #| msgid "Signal Plotter Settings"
@@ -160,13 +423,6 @@ msgstr "Umum"
 #: SensorDisplayLib/FancyPlotterSettings.cc:69
 msgid "Title:"
 msgstr "Tajuk:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
-#: SensorDisplayLib/FancyPlotterSettings.cc:73
-#: SensorDisplayLib/DancingBarsSettings.cc:62 rc.cpp:41
-msgid "Enter the title of the display here."
-msgstr "Masukkan tajuk paparan di sini."
 
 #: SensorDisplayLib/FancyPlotterSettings.cc:85
 msgid "Scales"
@@ -192,21 +448,11 @@ msgstr ""
 "dinamik nilai yang dipaparkan masa ini; jika anda tidak semak kotak ini, "
 "anda perlu nyatakan julat yang anda ingin dalam medan di bawah."
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:101
-#: SensorDisplayLib/DancingBarsSettings.cc:72
-msgid "Minimum value:"
-msgstr "Nilai minimum:"
-
 #: SensorDisplayLib/FancyPlotterSettings.cc:107
 #, fuzzy
 #| msgid "Enter the title of the display here."
 msgid "Enter the minimum value for the display here."
 msgstr "Masukkan tajuk paparan di sini."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:112
-#: SensorDisplayLib/DancingBarsSettings.cc:84
-msgid "Maximum value:"
-msgstr "Nilai maksimum:"
 
 #: SensorDisplayLib/FancyPlotterSettings.cc:118
 msgid ""
@@ -278,16 +524,6 @@ msgstr ""
 "Semak kotak ini jika baris mendatar patut dihiasi dengan nilai yang "
 "ditandakan."
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:183
-#: SensorDisplayLib/DancingBarsSettings.cc:182
-msgid "Font size:"
-msgstr "Saiz fon:"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:198
-#: SensorDisplayLib/DancingBarsSettings.cc:194
-msgid "Sensors"
-msgstr "Penderia"
-
 #: SensorDisplayLib/FancyPlotterSettings.cc:223
 msgid "Set Color..."
 msgstr "Setkan Warna..."
@@ -295,16 +531,6 @@ msgstr "Setkan Warna..."
 #: SensorDisplayLib/FancyPlotterSettings.cc:224
 msgid "Push this button to configure the color of the sensor in the diagram."
 msgstr "Tolak butang ini untuk konfigur warna penderia dalam gambar rajah."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:231
-#: SensorDisplayLib/DancingBarsSettings.cc:211
-msgid "Delete"
-msgstr "Padam"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:232
-#: SensorDisplayLib/DancingBarsSettings.cc:212
-msgid "Push this button to delete the sensor."
-msgstr "Tolah butang ini untuk hapuskan penderia."
 
 #: SensorDisplayLib/FancyPlotterSettings.cc:236
 msgid "Move Up"
@@ -314,134 +540,29 @@ msgstr "Naik Atas"
 msgid "Move Down"
 msgstr "Alih ke Bawah"
 
-#: SensorDisplayLib/DancingBarsSettings.cc:43
-msgid "Edit BarGraph Preferences"
-msgstr "Edit Keutamaan Graf Bar "
+#: SensorDisplayLib/ListViewSettings.cc:30
+msgid "List View Settings"
+msgstr "Senaraikan Seting Paparan"
 
-#: SensorDisplayLib/DancingBarsSettings.cc:52
-msgid "Range"
-msgstr "Julat"
-
-#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
-#: SensorDisplayLib/DancingBarsSettings.cc:57 WorkSheetSettings.cc:50
-#: rc.cpp:77 rc.cpp:92
-msgid "Title"
-msgstr "Tajuk"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:67
-msgid "Display Range"
-msgstr "Julat Paparan"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:80
+#: SensorDisplayLib/LogFile.cc:92
 #, fuzzy
-msgid ""
-"Enter the minimum value for the display here. If both values are 0, "
-"automatic range detection is enabled."
-msgstr ""
-"Masukkan nilai minimum bagi paparan di sini. Jika kedua-dua nilai adalah 0, "
-"pengesanan julat automatik diaktifkan."
+#| msgid "Log File Settings"
+msgid "File logging settings"
+msgstr "Log Seting Fail"
 
-#: SensorDisplayLib/DancingBarsSettings.cc:92
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:61
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: SensorDisplayLib/LogFile.cc:98 rc.cpp:26
+msgid "Foreground color:"
+msgstr "Warna Latar Depan:"
+
+#: SensorDisplayLib/MultiMeterSettings.cc:31
 #, fuzzy
-msgid ""
-"Enter the maximum value for the display here. If both values are 0, "
-"automatic range detection is enabled."
-msgstr ""
-"Masukkan nilai maksimum untuk paparan di sini. Jika kedua-dua nilai adalah "
-"0, pengesanan julat automatik diaktifkan."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:102
-msgid "Alarms"
-msgstr "Penggera"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
-#: SensorDisplayLib/DancingBarsSettings.cc:107 rc.cpp:14
-msgid "Alarm for Minimum Value"
-msgstr "Penggera untuk Nilai Minimum"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:112
-#: SensorDisplayLib/DancingBarsSettings.cc:135
-msgid "Enable alarm"
-msgstr "Aktifkan penggera"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:56
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cc:113 rc.cpp:20 rc.cpp:50
-msgid "Enable the minimum value alarm."
-msgstr "Aktifkan nilai minimum penggera."
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
-#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
-#: SensorDisplayLib/DancingBarsSettings.cc:116 rc.cpp:23
-msgid "Lower limit:"
-msgstr "Had bawah:"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
-#: SensorDisplayLib/DancingBarsSettings.cc:130 rc.cpp:26
-msgid "Alarm for Maximum Value"
-msgstr "Penggera untuk Nilai Maksimum"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:115
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cc:136 rc.cpp:32 rc.cpp:59
-msgid "Enable the maximum value alarm."
-msgstr "Aktifkan nilai maksimum penggera."
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
-#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
-#: SensorDisplayLib/DancingBarsSettings.cc:139 rc.cpp:35
-msgid "Upper limit:"
-msgstr "Had atas:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:156
-#, fuzzy
-#| msgid "Look"
-msgctxt "@title:tab Appearance of the bar graph"
-msgid "Look"
-msgstr "Rupa"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:161
-msgid "Normal bar color:"
-msgstr "Warna bar normal:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:168
-msgid "Out-of-range color:"
-msgstr "Warna luar julat:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:186
-msgid ""
-"This determines the size of the font used to print a label underneath the "
-"bars. Bars are automatically suppressed if text becomes too large, so it is "
-"advisable to use a small font size here."
-msgstr ""
-"Ini menentukan saiz fon yang digunakan untuk mencetak label di bawah bar. "
-"Bar ditindas secara automatik jika teks menjadi terlalu besar, jadi ia "
-"eloklah menggunakan fon bersaiz kecil di sini."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:207
-msgid "Edit..."
-msgstr "Edit..."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:208
-msgid "Push this button to configure the label."
-msgstr "Tolak butang ini untuk mengkonfigur label."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:366
-msgid "Label of Bar Graph"
-msgstr "Label Graf Bar"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:367
-msgid "Enter new label:"
-msgstr "Masukkan label baru:"
+#| msgid "Multimeter Settings"
+msgctxt ""
+"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
+msgid "Multimeter Settings"
+msgstr "Seting Multimeter"
 
 #: SensorDisplayLib/SensorDisplay.cc:118 SensorDisplayLib/SensorLogger.cc:598
 msgid "&Properties"
@@ -464,25 +585,13 @@ msgstr ""
 "pilih entri <i>Ciri</i> dari menu popup. Pilih <i>Buang</i> untuk "
 "menghapuskan paparan dari lembaran kerja.</p>%1</qt>"
 
-#: SensorDisplayLib/SensorLoggerDlg.cc:32 SensorDisplayLib/SensorLogger.cc:431
-msgid "Sensor Logger"
-msgstr "Pengelog Penderia"
-
-#: SensorDisplayLib/MultiMeterSettings.cc:31
-#, fuzzy
-#| msgid "Multimeter Settings"
-msgctxt ""
-"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
-msgid "Multimeter Settings"
-msgstr "Seting Multimeter"
-
 #: SensorDisplayLib/SensorLogger.cc:138
 msgid "Logging"
 msgstr "Menglog"
 
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:31
 #. i18n: ectx: property (title), widget (QGroupBox, timerFrame)
-#: SensorDisplayLib/SensorLogger.cc:141 rc.cpp:8
+#: SensorDisplayLib/SensorLogger.cc:141 rc.cpp:86
 msgid "Timer Interval"
 msgstr "Jeda Masa"
 
@@ -497,6 +606,10 @@ msgstr "Nama Hos"
 #: SensorDisplayLib/SensorLogger.cc:150
 msgid "Log File"
 msgstr "Log Fail"
+
+#: SensorDisplayLib/SensorLogger.cc:431 SensorDisplayLib/SensorLoggerDlg.cc:32
+msgid "Sensor Logger"
+msgstr "Pengelog Penderia"
 
 #: SensorDisplayLib/SensorLogger.cc:608
 msgid "&Remove Sensor"
@@ -514,59 +627,218 @@ msgstr "&Hentikan Pengelogan"
 msgid "S&tart Logging"
 msgstr "&Mulakan Pengelogan"
 
-#: SensorDisplayLib/DummyDisplay.cc:30 SensorDisplayLib/DummyDisplay.cc:38
-msgid "Drop Sensor Here"
-msgstr "Lepaskan Penderia Di Sini"
-
-#: SensorDisplayLib/DummyDisplay.cc:32
-msgid ""
-"This is an empty space in a worksheet. Drag a sensor from the Sensor Browser "
-"and drop it here. A sensor display will appear that allows you to monitor "
-"the values of the sensor over time."
-msgstr ""
-"Ini ialah ruang kosong dalam lembaran kerja. Seret penderia dari Pelayar "
-"Penderia dan lepaskan di sini. Paparan penderia akan muncul yang membolehkan "
-"anda memantau nilai penderia."
-
-#: SensorDisplayLib/ListViewSettings.cc:30
-msgid "List View Settings"
-msgstr "Senaraikan Seting Paparan"
-
 #: SensorDisplayLib/SensorLoggerSettings.cc:30
 msgid "Sensor Logger Settings"
 msgstr "Seting Pengelog Penderia"
 
-#: ksgrd/SensorShellAgent.cc:126
-#, kde-format
-msgid "Could not run daemon program '%1'."
+#: SensorDisplayLib/SensorModel.cc:166
+msgid "Host"
+msgstr "Hos"
+
+#: SensorDisplayLib/SensorModel.cc:169
+msgid "Sensor"
+msgstr "Penderia"
+
+#: SensorDisplayLib/SensorModel.cc:172
+msgid "Unit"
+msgstr "Unit"
+
+#: SensorDisplayLib/SensorModel.cc:175
+msgid "Status"
+msgstr "Status"
+
+#: SensorDisplayLib/SensorModel.cc:178
+msgid "Label"
+msgstr "Label"
+
+#: TimerSettings.cc:38
+msgid "Timer Settings"
+msgstr "Seting Pemasa"
+
+#: TimerSettings.cc:48
+msgid "Use update interval of worksheet"
+msgstr "Guna jeda kemas kini bagi lembaran kerja"
+
+#: TimerSettings.cc:51 WorkSheetSettings.cc:90
+msgid "Update interval:"
+msgstr "Kemas kini jeda:"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:49
+#. i18n: ectx: property (suffix), widget (KIntNumInput, m_timerInterval)
+#: TimerSettings.cc:58 WorkSheetSettings.cc:94 rc.cpp:89
+msgid " sec"
+msgstr " saat"
+
+#: TimerSettings.cc:61 WorkSheetSettings.cc:100
+msgid "All displays of the sheet are updated at the rate specified here."
 msgstr ""
+"Semua paparan lembaran dikemas kini pada kadar yang dinyatakan di sini."
 
-#: ksgrd/SensorShellAgent.cc:133
+#: WorkSheet.cc:88
 #, kde-format
-msgid "The daemon program '%1' failed."
-msgstr ""
+msgid "Cannot open the file %1."
+msgstr "Tidak dapat membuka fail %1."
 
-#: ksgrd/SensorSocketAgent.cc:103
+#: WorkSheet.cc:96
 #, kde-format
-msgid "Connection to %1 refused"
-msgstr "Sambungan ke %1 ditolak"
+msgid "The file %1 does not contain valid XML."
+msgstr "Fail %1 tidak mengandungi XML yang sah."
 
-#: ksgrd/SensorSocketAgent.cc:107
-#, kde-format
-msgid "Host %1 not found"
-msgstr "Hos %1 tidak ditemui"
-
-#: ksgrd/SensorSocketAgent.cc:111
+#: WorkSheet.cc:103
 #, kde-format
 msgid ""
-"An error occurred with the network (e.g. the network cable was accidentally "
-"unplugged) for host %1."
+"The file %1 does not contain a valid worksheet definition, which must have a "
+"document type 'KSysGuardWorkSheet'."
+msgstr ""
+"Fail %1 tidak mengandungi definisi helaian kerja yang sah, dimana mesti "
+"mempunyai jenis dokumen 'KSysGuardWorkSheet'."
+
+#: WorkSheet.cc:127
+#, kde-format
+msgid "The file %1 has an invalid worksheet size."
+msgstr "Fail %1 mempunyai saiz helaian kerja yang tidak sah."
+
+#: WorkSheet.cc:228
+#, kde-format
+msgid "Cannot save file %1"
+msgstr "Tidak dapat menyimpan fail %1"
+
+#: WorkSheet.cc:274
+msgid "The clipboard does not contain a valid display description."
+msgstr "Papan klip tidak mengandungi keterangan paparan yang sah."
+
+#: WorkSheet.cc:372
+msgid "Select Display Type"
+msgstr "Pilih Jenis Paparan"
+
+#: WorkSheet.cc:373
+msgid "&Line graph"
 msgstr ""
 
-#: ksgrd/SensorSocketAgent.cc:115
-#, kde-format
-msgid "Error for host %1: %2"
+#: WorkSheet.cc:374
+msgid "&Digital display"
 msgstr ""
+
+#: WorkSheet.cc:375
+msgid "&Bar graph"
+msgstr "Graf &bar"
+
+#: WorkSheet.cc:376
+msgid "Log to a &file"
+msgstr "Log ke &fail"
+
+#: WorkSheet.cc:525
+#, fuzzy
+#| msgid "&Remove Display"
+msgid "Remove this display?"
+msgstr "&Buang Paparan"
+
+#: WorkSheet.cc:526
+#, fuzzy
+#| msgid "&Remove Display"
+msgid "Remove Display"
+msgstr "&Buang Paparan"
+
+#: WorkSheet.cc:567
+msgid "Dummy"
+msgstr "Dummy"
+
+#: WorkSheetSettings.cc:40
+#, fuzzy
+msgid "Tab Properties"
+msgstr "&Ciri"
+
+#: WorkSheetSettings.cc:61
+#, fuzzy
+msgid "Properties"
+msgstr "Ciri-ciri"
+
+#: WorkSheetSettings.cc:70
+msgid "Rows:"
+msgstr "Baris:"
+
+#: WorkSheetSettings.cc:79
+msgid "Columns:"
+msgstr "Lajur:"
+
+#: WorkSheetSettings.cc:87
+msgid "Enter the number of rows the sheet should have."
+msgstr "Masukkan bilangan baris yang lembaran patut ada."
+
+#: WorkSheetSettings.cc:88
+msgid "Enter the number of columns the sheet should have."
+msgstr "Masukkan bilangan lajur yang lembaran patut ada."
+
+#: WorkSheetSettings.cc:101
+msgid "Enter the title of the worksheet here."
+msgstr "Masukkan tajuk lembaran kerja di sini."
+
+#: Workspace.cc:113
+#, kde-format
+msgid "Sheet %1"
+msgstr "Lembaran %1"
+
+#: Workspace.cc:172
+#, fuzzy, kde-format
+#| msgid ""
+#| "The worksheet '%1' contains unsaved data.\n"
+#| "Do you want to save the worksheet?"
+msgid ""
+"The tab '%1' contains unsaved data.\n"
+"Do you want to save the tab?"
+msgstr ""
+"Lembaran kerja '%1' mengandungi data yang tidak disimpan.\n"
+"Anda ingin simpan lembaran kerja?"
+
+#: Workspace.cc:187
+#, fuzzy
+#| msgid "*.sgrd|Sensor Files"
+msgid "*.sgrd|Sensor Files (*.sgrd)"
+msgstr "*.sgrd|Sensor Files"
+
+#: Workspace.cc:187
+msgid "Select Tab File to Import"
+msgstr ""
+
+#: Workspace.cc:215 Workspace.cc:236
+#, fuzzy
+#| msgid "You do not have a worksheet that could be saved."
+msgid "You do not have a tab that could be saved."
+msgstr "Anda tidak mempunyai lembaran kerja yang boleh disimpan."
+
+#: Workspace.cc:243
+msgid "Export Tab"
+msgstr ""
+
+#: Workspace.cc:261
+#, fuzzy
+#| msgid "There are no worksheets that could be deleted."
+msgid "There are no tabs that could be deleted."
+msgstr "Tiada lembaran kerja yang boleh dihapuskan."
+
+#: Workspace.cc:301
+#, kde-format
+msgid ""
+"<qt>To propose the current custom tab as a new System Monitor tab, email "
+"<br><a href=\"file:%1\">%2</a><br> to <a href=\"mailto:john.tapsell@kde.org?"
+"subject='System Monitor Tab'&attach='file://%2'\">john.tapsell@kde.org</a></"
+"qt>"
+msgstr ""
+
+#: Workspace.cc:301
+#, fuzzy
+msgid "Upload custom System Monitor tab"
+msgstr "Monitor Sistem"
+
+#: ksgrd/SensorAgent.cc:109
+#, kde-format
+msgctxt "%1 is a host name"
+msgid ""
+"Message from %1:\n"
+"%2"
+msgstr ""
+"Mesej dari %1:\n"
+"%2"
 
 #: ksgrd/SensorManager.cc:60
 msgid "Change"
@@ -1068,194 +1340,37 @@ msgstr "Nilai Integer"
 msgid "Floating Point Value"
 msgstr "Nilai Titik Apung"
 
-#: ksgrd/SensorAgent.cc:109
+#: ksgrd/SensorShellAgent.cc:126
 #, kde-format
-msgctxt "%1 is a host name"
-msgid ""
-"Message from %1:\n"
-"%2"
+msgid "Could not run daemon program '%1'."
 msgstr ""
-"Mesej dari %1:\n"
-"%2"
 
-#: Workspace.cc:113
+#: ksgrd/SensorShellAgent.cc:133
 #, kde-format
-msgid "Sheet %1"
-msgstr "Lembaran %1"
-
-#: Workspace.cc:172
-#, fuzzy, kde-format
-#| msgid ""
-#| "The worksheet '%1' contains unsaved data.\n"
-#| "Do you want to save the worksheet?"
-msgid ""
-"The tab '%1' contains unsaved data.\n"
-"Do you want to save the tab?"
-msgstr ""
-"Lembaran kerja '%1' mengandungi data yang tidak disimpan.\n"
-"Anda ingin simpan lembaran kerja?"
-
-#: Workspace.cc:187
-#, fuzzy
-#| msgid "*.sgrd|Sensor Files"
-msgid "*.sgrd|Sensor Files (*.sgrd)"
-msgstr "*.sgrd|Sensor Files"
-
-#: Workspace.cc:187
-msgid "Select Tab File to Import"
+msgid "The daemon program '%1' failed."
 msgstr ""
 
-#: Workspace.cc:215 Workspace.cc:236
-#, fuzzy
-#| msgid "You do not have a worksheet that could be saved."
-msgid "You do not have a tab that could be saved."
-msgstr "Anda tidak mempunyai lembaran kerja yang boleh disimpan."
+#: ksgrd/SensorSocketAgent.cc:103
+#, kde-format
+msgid "Connection to %1 refused"
+msgstr "Sambungan ke %1 ditolak"
 
-#: Workspace.cc:243
-msgid "Export Tab"
-msgstr ""
+#: ksgrd/SensorSocketAgent.cc:107
+#, kde-format
+msgid "Host %1 not found"
+msgstr "Hos %1 tidak ditemui"
 
-#: Workspace.cc:261
-#, fuzzy
-#| msgid "There are no worksheets that could be deleted."
-msgid "There are no tabs that could be deleted."
-msgstr "Tiada lembaran kerja yang boleh dihapuskan."
-
-#: Workspace.cc:301
+#: ksgrd/SensorSocketAgent.cc:111
 #, kde-format
 msgid ""
-"<qt>To propose the current custom tab as a new System Monitor tab, email "
-"<br><a href=\"file:%1\">%2</a><br> to <a href=\"mailto:john.tapsell@kde.org?"
-"subject='System Monitor Tab'&attach='file://%2'\">john.tapsell@kde.org</a></"
-"qt>"
+"An error occurred with the network (e.g. the network cable was accidentally "
+"unplugged) for host %1."
 msgstr ""
 
-#: Workspace.cc:301
-#, fuzzy
-msgid "Upload custom System Monitor tab"
-msgstr "Monitor Sistem"
-
-#: TimerSettings.cc:38
-msgid "Timer Settings"
-msgstr "Seting Pemasa"
-
-#: TimerSettings.cc:48
-msgid "Use update interval of worksheet"
-msgstr "Guna jeda kemas kini bagi lembaran kerja"
-
-#: TimerSettings.cc:51 WorkSheetSettings.cc:90
-msgid "Update interval:"
-msgstr "Kemas kini jeda:"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:49
-#. i18n: ectx: property (suffix), widget (KIntNumInput, m_timerInterval)
-#: TimerSettings.cc:58 WorkSheetSettings.cc:94 rc.cpp:11
-msgid " sec"
-msgstr " saat"
-
-#: TimerSettings.cc:61 WorkSheetSettings.cc:100
-msgid "All displays of the sheet are updated at the rate specified here."
+#: ksgrd/SensorSocketAgent.cc:115
+#, kde-format
+msgid "Error for host %1: %2"
 msgstr ""
-"Semua paparan lembaran dikemas kini pada kadar yang dinyatakan di sini."
-
-#: WorkSheet.cc:88
-#, kde-format
-msgid "Cannot open the file %1."
-msgstr "Tidak dapat membuka fail %1."
-
-#: WorkSheet.cc:96
-#, kde-format
-msgid "The file %1 does not contain valid XML."
-msgstr "Fail %1 tidak mengandungi XML yang sah."
-
-#: WorkSheet.cc:103
-#, kde-format
-msgid ""
-"The file %1 does not contain a valid worksheet definition, which must have a "
-"document type 'KSysGuardWorkSheet'."
-msgstr ""
-"Fail %1 tidak mengandungi definisi helaian kerja yang sah, dimana mesti "
-"mempunyai jenis dokumen 'KSysGuardWorkSheet'."
-
-#: WorkSheet.cc:127
-#, kde-format
-msgid "The file %1 has an invalid worksheet size."
-msgstr "Fail %1 mempunyai saiz helaian kerja yang tidak sah."
-
-#: WorkSheet.cc:228
-#, kde-format
-msgid "Cannot save file %1"
-msgstr "Tidak dapat menyimpan fail %1"
-
-#: WorkSheet.cc:274
-msgid "The clipboard does not contain a valid display description."
-msgstr "Papan klip tidak mengandungi keterangan paparan yang sah."
-
-#: WorkSheet.cc:372
-msgid "Select Display Type"
-msgstr "Pilih Jenis Paparan"
-
-#: WorkSheet.cc:373
-msgid "&Line graph"
-msgstr ""
-
-#: WorkSheet.cc:374
-msgid "&Digital display"
-msgstr ""
-
-#: WorkSheet.cc:375
-msgid "&Bar graph"
-msgstr "Graf &bar"
-
-#: WorkSheet.cc:376
-msgid "Log to a &file"
-msgstr "Log ke &fail"
-
-#: WorkSheet.cc:525
-#, fuzzy
-#| msgid "&Remove Display"
-msgid "Remove this display?"
-msgstr "&Buang Paparan"
-
-#: WorkSheet.cc:526
-#, fuzzy
-#| msgid "&Remove Display"
-msgid "Remove Display"
-msgstr "&Buang Paparan"
-
-#: WorkSheet.cc:567
-msgid "Dummy"
-msgstr "Dummy"
-
-#: WorkSheetSettings.cc:40
-#, fuzzy
-msgid "Tab Properties"
-msgstr "&Ciri"
-
-#: WorkSheetSettings.cc:61
-#, fuzzy
-msgid "Properties"
-msgstr "Ciri-ciri"
-
-#: WorkSheetSettings.cc:70
-msgid "Rows:"
-msgstr "Baris:"
-
-#: WorkSheetSettings.cc:79
-msgid "Columns:"
-msgstr "Lajur:"
-
-#: WorkSheetSettings.cc:87
-msgid "Enter the number of rows the sheet should have."
-msgstr "Masukkan bilangan baris yang lembaran patut ada."
-
-#: WorkSheetSettings.cc:88
-msgid "Enter the number of columns the sheet should have."
-msgstr "Masukkan bilangan lajur yang lembaran patut ada."
-
-#: WorkSheetSettings.cc:101
-msgid "Enter the title of the worksheet here."
-msgstr "Masukkan tajuk lembaran kerja di sini."
 
 #: ksysguard.cc:74
 #, fuzzy
@@ -1407,121 +1522,6 @@ msgstr ""
 msgid "Optional worksheet files to load"
 msgstr "Fail lembaran kerja opsyenal yang hendak dimuatkan"
 
-#: SensorBrowser.cc:117
-msgid "Sensor Browser"
-msgstr "Pelayar Penderia"
-
-#: SensorBrowser.cc:473
-#, fuzzy
-#| msgid "Drag sensors to empty cells of a worksheet or the panel applet."
-msgid "Drag sensors to empty cells of a worksheet "
-msgstr "Seret penderia ke sel kosong lembaran kerja atau aplet panel."
-
-#: SensorBrowser.cc:474
-#, fuzzy
-#| msgid ""
-#| "The sensor browser lists the connected hosts and the sensors that they "
-#| "provide. Click and drag sensors into drop zones of a worksheet or the "
-#| "panel applet. A display will appear that visualizes the values provided "
-#| "by the sensor. Some sensor displays can display values of multiple "
-#| "sensors. Simply drag other sensors on to the display to add more sensors."
-msgid ""
-"The sensor browser lists the connected hosts and the sensors that they "
-"provide. Click and drag sensors into drop zones of a worksheet. A display "
-"will appear that visualizes the values provided by the sensor. Some sensor "
-"displays can display values of multiple sensors. Simply drag other sensors "
-"on to the display to add more sensors."
-msgstr ""
-"Pelayar penderia menyenaraikan hos yang disambungkan dan penderia yang ia "
-"sediakan. Klik dan seret penderia ke dalam zon lepas bagi lembaran kerja "
-"atau aplet panel. Paparan akan muncul, menvisualkan nilai yang disediakan "
-"oleh penderia. Sesetengah paparan penderia boleh memaparkan berbilang "
-"penderia. Hanya seret penderia lain ke paparan untuk menambah lagi penderia."
-
-#: HostConnector.cc:44
-msgid "Connect Host"
-msgstr "Sambungkan Hos"
-
-#: HostConnector.cc:55
-msgid "Host:"
-msgstr "Hos:"
-
-#: HostConnector.cc:65
-msgid "Enter the name of the host you want to connect to."
-msgstr "Masukkan nama hos yang anda ingin sambungkan."
-
-#: HostConnector.cc:71
-msgid "Connection Type"
-msgstr "Jenis Sambungan"
-
-#: HostConnector.cc:77
-msgid "ssh"
-msgstr "ssh"
-
-#: HostConnector.cc:80
-msgid "Select this to use the secure shell to login to the remote host."
-msgstr "Pilih ini untuk menggunakan shell selamat untuk log masuk ke hos jauh."
-
-#: HostConnector.cc:83
-msgid "rsh"
-msgstr "rsh"
-
-#: HostConnector.cc:84
-msgid "Select this to use the remote shell to login to the remote host."
-msgstr "Pilih ini untuk menggunakan shell jauh untuk log masuk ke hos jauh."
-
-#: HostConnector.cc:87
-msgid "Daemon"
-msgstr "Daemon"
-
-#: HostConnector.cc:88
-msgid ""
-"Select this if you want to connect to a ksysguard daemon that is running on "
-"the machine you want to connect to, and is listening for client requests."
-msgstr ""
-"Pilih ini jika anda ingin sambung ke daemon ksysguard yang berfungsi dalam "
-"mesin yang anda ingin sambung, dan mendengar permintaan klien."
-
-#: HostConnector.cc:91
-msgid "Custom command"
-msgstr "Arahan Langganan"
-
-#: HostConnector.cc:92
-msgid ""
-"Select this to use the command you entered below to start ksysguardd on the "
-"remote host."
-msgstr ""
-"Pilih ini untuk menggunakan arahan yang anda masukkan di bawah untuk "
-"memulakan ksysguard dalam hos jauh."
-
-#: HostConnector.cc:95
-msgid "Port:"
-msgstr "Port:"
-
-#: HostConnector.cc:102
-msgid ""
-"Enter the port number on which the ksysguard daemon is listening for "
-"connections."
-msgstr ""
-"Masukkan nombor port yang padanya daemon ksysguard mendengar sambungan."
-
-#: HostConnector.cc:105
-msgid "e.g.  3112"
-msgstr "contohnya, 3112"
-
-#: HostConnector.cc:108
-msgid "Command:"
-msgstr "Arahan:"
-
-#: HostConnector.cc:117
-msgid "Enter the command that runs ksysguardd on the host you want to monitor."
-msgstr ""
-"Masukkan arahan yang menjalankan ksysguard dalam hos yang anda ingin pantau."
-
-#: HostConnector.cc:121
-msgid "e.g. ssh -l root remote.host.org ksysguardd"
-msgstr "e.g. ssh -l root remote.host.org ksysguardd"
-
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -1532,82 +1532,11 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sharuzzaman@myrealbox.com"
 
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, fileFrame)
-#: rc.cpp:5
-#, fuzzy
-msgid "File"
-msgstr "Fail"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:68
-#. i18n: ectx: property (text), widget (QCheckBox, m_lowerLimitActive)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:59
-#. i18n: ectx: property (text), widget (QCheckBox, m_lowerLimitActive)
-#: rc.cpp:17 rc.cpp:53
-msgid "&Enable alarm"
-msgstr "&Aktifkan penggera"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:132
-#. i18n: ectx: property (text), widget (QCheckBox, m_upperLimitActive)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:118
-#. i18n: ectx: property (text), widget (QCheckBox, m_upperLimitActive)
-#: rc.cpp:29 rc.cpp:62
-msgid "E&nable alarm"
-msgstr "&Aktifkan penggera"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:25
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:38
-#, fuzzy
-#| msgid "Title:"
-msgid "&Title:"
-msgstr "&Tajuk:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:42
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_showUnit)
-#: rc.cpp:44
-msgid "Enable this to append the unit to the title of the display."
-msgstr "Aktifkan ini untuk menambah unit kepada tajuk paparan."
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:45
-#. i18n: ectx: property (text), widget (QCheckBox, m_showUnit)
-#: rc.cpp:47
-msgid "&Show unit"
-msgstr "&Tayang unit"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:85
-#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
-#: rc.cpp:56
-#, fuzzy
-#| msgid "Lower limit:"
-msgid "Lo&wer limit:"
-msgstr "Had bawah:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:144
-#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
-#: rc.cpp:65
-#, fuzzy
-#| msgid "Upper limit:"
-msgid "&Upper limit:"
-msgstr "&Had atas:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:174
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:68
-msgid "Normal digit color:"
-msgstr "Warna digit normal:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:201
-#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:71
-msgid "Alarm digit color:"
-msgstr "Gera warna digit:"
-
 #. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:37
 #. i18n: ectx: property (title), widget (QGroupBox, colorFrame)
 #. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:37
 #. i18n: ectx: property (title), widget (QGroupBox, colorFrame)
-#: rc.cpp:80 rc.cpp:95
+#: rc.cpp:8 rc.cpp:119
 msgid "Colors"
 msgstr "Warna"
 
@@ -1615,25 +1544,19 @@ msgstr "Warna"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:51
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:83 rc.cpp:98
+#: rc.cpp:11 rc.cpp:122
 msgid "Text color:"
 msgstr "Warna teks:"
 
 #. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:64
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:86
+#: rc.cpp:14
 msgid "Grid color:"
 msgstr "Warna grid:"
 
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:77
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:104
-msgid "Alarm color:"
-msgstr "Warna penggera:"
-
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:28
 #. i18n: ectx: attribute (title), widget (QWidget, textTab)
-#: rc.cpp:107
+#: rc.cpp:20
 #, fuzzy
 #| msgid "Text"
 msgid "&Text"
@@ -1641,7 +1564,7 @@ msgstr "&Teks"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:36
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:110
+#: rc.cpp:23
 #, fuzzy
 #| msgid "Title:"
 msgid "T&itle:"
@@ -1649,27 +1572,104 @@ msgstr "&Tajuk:"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:154
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:119
+#: rc.cpp:32
 msgid "Fi&lter"
 msgstr "&Tapis"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:175
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:122
+#: rc.cpp:35
 msgid "&Add"
 msgstr "T&ambah"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:182
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:125
+#: rc.cpp:38
 msgid "&Delete"
 msgstr "Pa&dam"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:189
 #. i18n: ectx: property (text), widget (QPushButton, changeButton)
-#: rc.cpp:128
+#: rc.cpp:41
 msgid "&Change"
 msgstr "&Ubah"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:25
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:44
+#, fuzzy
+#| msgid "Title:"
+msgid "&Title:"
+msgstr "&Tajuk:"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:42
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_showUnit)
+#: rc.cpp:50
+msgid "Enable this to append the unit to the title of the display."
+msgstr "Aktifkan ini untuk menambah unit kepada tajuk paparan."
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:45
+#. i18n: ectx: property (text), widget (QCheckBox, m_showUnit)
+#: rc.cpp:53
+msgid "&Show unit"
+msgstr "&Tayang unit"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:59
+#. i18n: ectx: property (text), widget (QCheckBox, m_lowerLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:68
+#. i18n: ectx: property (text), widget (QCheckBox, m_lowerLimitActive)
+#: rc.cpp:59 rc.cpp:95
+msgid "&Enable alarm"
+msgstr "&Aktifkan penggera"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:85
+#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
+#: rc.cpp:62
+#, fuzzy
+#| msgid "Lower limit:"
+msgid "Lo&wer limit:"
+msgstr "Had bawah:"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:118
+#. i18n: ectx: property (text), widget (QCheckBox, m_upperLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:132
+#. i18n: ectx: property (text), widget (QCheckBox, m_upperLimitActive)
+#: rc.cpp:68 rc.cpp:107
+msgid "E&nable alarm"
+msgstr "&Aktifkan penggera"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:144
+#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
+#: rc.cpp:71
+#, fuzzy
+#| msgid "Upper limit:"
+msgid "&Upper limit:"
+msgstr "&Had atas:"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:174
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: rc.cpp:74
+msgid "Normal digit color:"
+msgstr "Warna digit normal:"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:201
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
+#: rc.cpp:77
+msgid "Alarm digit color:"
+msgstr "Gera warna digit:"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, fileFrame)
+#: rc.cpp:83
+#, fuzzy
+msgid "File"
+msgstr "Fail"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:77
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: rc.cpp:128
+msgid "Alarm color:"
+msgstr "Warna penggera:"
 
 #. i18n: file: ksysguardui.rc:4
 #. i18n: ectx: Menu (file)

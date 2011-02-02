@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-19 02:37+0100\n"
+"POT-Creation-Date: 2011-02-02 03:19+0100\n"
 "PO-Revision-Date: 2009-06-07 23:54+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -141,6 +141,11 @@ msgstr "Tidak menjumpai fail comps."
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Pilih direktori baru"
 
+#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
+#, fuzzy, kde-format
+msgid "Cannot open index file %1: %2"
+msgstr "Ralat mengimport fail %s"
+
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
 msgid "Cannot create file %1: %2"
@@ -156,22 +161,26 @@ msgstr "Tidak menjumpai fail comps."
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Tidak menjumpai fail comps."
 
-#: src/diskio/movedatafilesjob.cpp:166
-msgctxt "@title job"
-msgid "Moving"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
 msgstr ""
 
-#: src/diskio/movedatafilesjob.cpp:167
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
 #, fuzzy
 msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Skor"
 
-#: src/diskio/movedatafilesjob.cpp:168
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
 #, fuzzy
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Destinasi"
+
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr ""
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
@@ -187,11 +196,6 @@ msgstr "Tidak dapat cipta %1: %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
 
-#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, fuzzy, kde-format
-msgid "Cannot open index file %1: %2"
-msgstr "Ralat mengimport fail %s"
-
 #: src/download/chunkdownload.cpp:382
 #, kde-format
 msgid "1 peer"
@@ -199,25 +203,15 @@ msgid_plural "%1 peers"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:37
-#, fuzzy
-msgid "Not connected"
-msgstr "Tersambung"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:129
-#, fuzzy
-msgid "Connection closed"
-msgstr "Sambungan ditutup"
-
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
-
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
 msgstr ""
+
+#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+#, fuzzy
+msgid "Not connected"
+msgstr "Tersambung"
 
 #: src/download/httpconnection.cpp:107
 #, kde-format
@@ -228,6 +222,11 @@ msgstr ""
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr ""
+
+#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
+#, fuzzy
+msgid "Connection closed"
+msgstr "Sambungan ditutup"
 
 #: src/download/httpconnection.cpp:136
 #, kde-format
@@ -266,6 +265,11 @@ msgstr ""
 
 #: src/download/httpconnection.cpp:398
 msgid "Redirected without a new location."
+msgstr ""
+
+#: src/download/webseed.cpp:544
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
@@ -315,6 +319,39 @@ msgstr "Tidak menjumpai fail comps."
 #, fuzzy
 msgid "Parse Error"
 msgstr "Ralat"
+
+#: src/torrent/torrentcontrol.cpp:308
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:545
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:575
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:586
+#, fuzzy, kde-format
+msgid "Unable to create %1: %2"
+msgstr "Tidak dapat cipta %1: %2"
+
+#: src/torrent/torrentcontrol.cpp:601
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:606
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr ""
 
 #: src/torrent/torrentcreator.cpp:361
 #, fuzzy, kde-format
@@ -384,39 +421,6 @@ msgstr "Jeda"
 #| msgid "Pending"
 msgid "Superseeding"
 msgstr "Tertangguh"
-
-#: src/torrent/torrentcontrol.cpp:308
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:545
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:575
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:586
-#, fuzzy, kde-format
-msgid "Unable to create %1: %2"
-msgstr "Tidak dapat cipta %1: %2"
-
-#: src/torrent/torrentcontrol.cpp:601
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:606
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr ""
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
@@ -536,6 +540,18 @@ msgstr "Ralat mengimport fail %s"
 msgid "Cannot seek in file: %1"
 msgstr "Ralat mengimport fail %s"
 
+#: src/util/functions.cpp:280
+#, fuzzy, kde-format
+msgid "%1/s"
+msgstr "%1/s"
+
+#: src/util/functions.cpp:291
+#, fuzzy, kde-format
+msgid "1 day "
+msgid_plural "%1 days "
+msgstr[0] "hari"
+msgstr[1] "hari"
+
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
 msgstr "Umum"
@@ -561,18 +577,6 @@ msgstr "Gantung Ke Cakera"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
-
-#: src/util/functions.cpp:280
-#, fuzzy, kde-format
-msgid "%1/s"
-msgstr "%1/s"
-
-#: src/util/functions.cpp:291
-#, fuzzy, kde-format
-msgid "1 day "
-msgid_plural "%1 days "
-msgstr[0] "hari"
-msgstr[1] "hari"
 
 #: src/util/signalcatcher.cpp:57
 #, fuzzy

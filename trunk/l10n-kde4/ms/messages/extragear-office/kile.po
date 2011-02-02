@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kile\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-20 02:39+0100\n"
+"POT-Creation-Date: 2011-02-02 03:21+0100\n"
 "PO-Revision-Date: 2009-10-01 00:21+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -17,45 +17,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=1;\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: documentinfo.cpp:102
-msgid "Invalid Characters"
-msgstr ""
-
-#: documentinfo.cpp:103
+#: abbreviationmanager.cpp:98
+#, kde-format
 msgid ""
-"The filename contains invalid characters ($~ #).<br>Please provide another "
-"one, or click \"Cancel\" to save anyway."
+"Could not save the local abbreviation list.\n"
+"Error code %1."
 msgstr ""
 
-#: documentinfo.cpp:121 dialogs/projectdialogs.cpp:393
-#, fuzzy
-msgid "File Already Exists"
-msgstr "Fail Sudah Wujud"
-
-#: documentinfo.cpp:122
-#, fuzzy, kde-format
-msgid ""
-"A file with filename '%1' already exists.<br>Please provide another one, or "
-"click \"Cancel\" to overwrite it."
-msgstr "Fail bernama \"%1\" telah wujud. Anda pasti ingin tulis semula?"
-
-#: documentinfo.cpp:143
-msgid ""
-"The given filename has no extension; do you want one to be automatically "
-"added?"
-msgstr ""
-
-#: documentinfo.cpp:144
-msgid "Missing Extension"
-msgstr ""
-
-#: documentinfo.cpp:1155 documentinfo.cpp:1180
-#, fuzzy
-msgid "Frame"
-msgstr "Bingkai"
-
-#: documentinfo.cpp:1183
-msgid "Untitled Block"
+#: abbreviationmanager.cpp:99
+msgid "Saving Problem"
 msgstr ""
 
 #: configtester.cpp:120 dialogs/configcheckerdialog.cpp:78
@@ -240,7 +210,7 @@ msgstr ""
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:26
 #. i18n: ectx: property (windowTitle), widget (QWidget, ToolConfigWidget)
-#: dialogs/configurationdialog.cpp:66 rc.cpp:1053
+#: dialogs/configurationdialog.cpp:66 rc.cpp:1101
 #, fuzzy
 msgid "Configure"
 msgstr "Tetapkan"
@@ -254,8 +224,8 @@ msgstr "Kile"
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetEnvironmentConfig)
 #. i18n: file: widgets/latexconfigwidget.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetLatexConfig)
-#: dialogs/configurationdialog.cpp:80 kileinfo.cpp:315 kile.cpp:554
-#: kile.cpp:890 rc.cpp:849 rc.cpp:978
+#: dialogs/configurationdialog.cpp:80 kile.cpp:554 kile.cpp:890
+#: kileinfo.cpp:315 rc.cpp:897 rc.cpp:1026
 #, fuzzy
 msgid "LaTeX"
 msgstr "LaTeX"
@@ -277,7 +247,7 @@ msgstr "Editor"
 #. i18n: file: widgets/maintoolconfigwidget.ui:265
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: dialogs/configurationdialog.cpp:165 dialogs/configurationdialog.cpp:226
-#: rc.cpp:879 rc.cpp:1077
+#: rc.cpp:927 rc.cpp:1125
 #, fuzzy
 msgid "General"
 msgstr "Umum"
@@ -299,7 +269,7 @@ msgstr "Penskriptan"
 
 #. i18n: file: widgets/scriptingconfigwidget.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetScriptingConfig)
-#: dialogs/configurationdialog.cpp:184 rc.cpp:1176
+#: dialogs/configurationdialog.cpp:184 rc.cpp:1224
 msgid "Scripting Support"
 msgstr ""
 
@@ -324,7 +294,7 @@ msgstr ""
 
 #. i18n: file: widgets/helpconfigwidget.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetHelpConfig)
-#: dialogs/configurationdialog.cpp:214 kilehelp.cpp:290 rc.cpp:948
+#: dialogs/configurationdialog.cpp:214 kilehelp.cpp:290 rc.cpp:996
 #, fuzzy
 msgid "Help"
 msgstr "Bantuan"
@@ -347,22 +317,225 @@ msgstr ""
 
 #. i18n: file: widgets/graphicsconfigwidget.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetGraphicsConfig)
-#: dialogs/configurationdialog.cpp:241 rc.cpp:924
+#: dialogs/configurationdialog.cpp:241 rc.cpp:972
 #, fuzzy
 msgid "Graphics"
 msgstr "Grafik"
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:25
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetStructureViewConfig)
-#: dialogs/configurationdialog.cpp:248 rc.cpp:1191
+#: dialogs/configurationdialog.cpp:248 rc.cpp:1239
 msgid "Structure View"
 msgstr ""
 
 #. i18n: file: widgets/symbolviewconfigwidget.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetSymbolViewConfig)
-#: dialogs/configurationdialog.cpp:255 rc.cpp:1263
+#: dialogs/configurationdialog.cpp:255 rc.cpp:1311
 msgid "Symbol View"
 msgstr ""
+
+#: dialogs/findfilesdialog.cpp:105 dialogs/projectdialogs.cpp:66
+#: kileproject.cpp:483
+msgid "Project"
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:112 dialogs/managetemplatesdialog.cpp:84
+#: dialogs/tabular/newtabulardialog.cpp:127
+#, fuzzy
+msgid "Name:"
+msgstr "Nama:"
+
+#: dialogs/findfilesdialog.cpp:115 dialogs/findfilesdialog.cpp:201
+#, fuzzy
+msgid "Directory:"
+msgstr "Direktori:"
+
+#: dialogs/findfilesdialog.cpp:130 dialogs/texdocumentationdialog.cpp:73
+msgid "Search"
+msgstr "Cari"
+
+#: dialogs/findfilesdialog.cpp:137
+#, fuzzy
+msgid "Pattern:"
+msgstr "Corak:"
+
+#: dialogs/findfilesdialog.cpp:148
+#, fuzzy
+msgid "Template:"
+msgstr "Templat:"
+
+#: dialogs/findfilesdialog.cpp:154
+#, fuzzy
+msgid "Normal"
+msgstr "Normal"
+
+#. i18n: file: dialogs/latexcommanddialog_base.ui:105
+#. i18n: ectx: property (text), widget (QTreeWidget, commands)
+#: dialogs/findfilesdialog.cpp:155 rc.cpp:233
+#, fuzzy
+msgid "Command"
+msgstr "Arahan"
+
+#: dialogs/findfilesdialog.cpp:156
+msgid "Command[]"
+msgstr ""
+
+#. i18n: file: dialogs/floatdialog_base.ui:19
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: file: dialogs/latexcommanddialog_base.ui:50
+#. i18n: ectx: property (text), widget (QTreeWidget, environments)
+#: dialogs/findfilesdialog.cpp:157 dialogs/mathenvironmentdialog.cpp:53
+#: dialogs/tabular/newtabulardialog.cpp:121 kile.cpp:813 rc.cpp:5 rc.cpp:209
+#, fuzzy
+msgid "Environment"
+msgstr "Persekitaran"
+
+#: dialogs/findfilesdialog.cpp:158
+#, fuzzy
+msgid "Image"
+msgstr "Imej"
+
+#: dialogs/findfilesdialog.cpp:159 kilestdactions.cpp:127
+#: kilestdactions.cpp:128
+#, fuzzy
+msgid "Label"
+msgstr "Label"
+
+#: dialogs/findfilesdialog.cpp:160 kilestdactions.cpp:133
+#, fuzzy
+msgid "Reference"
+msgstr "Rujukan"
+
+#. i18n: file: dialogs/includegraphicsdialog_base.ui:17
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/findfilesdialog.cpp:161 dialogs/projectdialogs.cpp:253 rc.cpp:38
+#, fuzzy
+msgid "File"
+msgstr "Fail"
+
+#: dialogs/findfilesdialog.cpp:185
+msgid "Directory Options"
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:192
+#, fuzzy
+msgid "Filter:"
+msgstr "Penapis:"
+
+#: dialogs/findfilesdialog.cpp:212
+msgid "Scan directories recursively"
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:228 dialogs/findfilesdialog.cpp:588
+#: dialogs/texdocumentationdialog.cpp:83
+msgid "&Search"
+msgstr "&Cari"
+
+#: dialogs/findfilesdialog.cpp:232
+msgid "&Clear"
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:265
+msgid ""
+"Enter the regular expression you want to search for here.<br>Possible meta "
+"characters are:<br><ul><li>&nbsp;<b>.</b> - Matches any character</"
+"li><li>&nbsp;<b>^</b> - Matches the beginning of a line</li><li>&nbsp;<b>$</"
+"b> - Matches the end of a line</li><li>&nbsp;<b>\\\\\\&lt;</b> - Matches the "
+"beginning of a word</li><li>&nbsp;<b>\\\\\\&gt;</b> - Matches the end of a "
+"word</li></ul>The following repetition operators exist:<ul><li>&nbsp;<b>?</"
+"b> - The preceding item is matched at most once</li><li>&nbsp;<b>*</b> - The "
+"preceding item is matched zero or more times</li><li>&nbsp;<b>+</b> - The "
+"preceding item is matched one or more times</li><li>&nbsp;<b>{<i>n</i>}</b> "
+"- The preceding item is matched exactly <i>n</i> times</li><li>&nbsp;<b>"
+"{<i>n</i>,}</b> - The preceding item is matched <i>n</i> or more times</"
+"li><li>&nbsp;<b>{,<i>n</i>}</b> - The preceding item is matched at most "
+"<i>n</i> times</li><li>&nbsp;<b>{<i>n</i>,<i>m</i>}</b> - The preceding item "
+"is matched at least <i>n</i>, but at most <i>m</i> times.</li></"
+"ul>Furthermore, backreferences to bracketed subexpressions are available via "
+"the notation \\\\<i>n</i>."
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:289
+msgid ""
+"Enter the file name pattern of the files to search here. You may give "
+"several patterns separated by commas."
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:292
+#, c-format
+msgid ""
+"Choose one search mode. For the first modes, the search pattern is build "
+"from the editable template, where '%s' is replaced by the given pattern."
+"<br><br>There are additional fixed predefined modes for environments, "
+"graphics, labels, references and input files. If the pattern is empty, Kile "
+"will search for all commands of this mode. If a pattern is given, it will be "
+"inserted as a parameter. For example, in environment mode with pattern "
+"'center', Kile will search for '\\begin{center}', and in graphics mode with "
+"pattern '.*\\.png', Kile will search for all png files."
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:300
+#, c-format
+msgid ""
+"For the first three modes you can choose a template for the pattern from the "
+"combo box and edit it here. The string %s in the template is replaced by the "
+"pattern input field, resulting in the regular expression to search for. In "
+"all other modes this template is ignored."
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:305
+msgid "Enter the directory which contains the files you want to search in."
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:307
+msgid "Check this box to search in all subdirectories."
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:309
+msgid ""
+"The results of the grep run are listed here. Select a filename/line number "
+"combination with a mouse click on the item or with the cursor to show the "
+"respective line in the editor."
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:316
+#, fuzzy
+msgid "Find in Files"
+msgstr "Cari dalam Fail"
+
+#: dialogs/findfilesdialog.cpp:320
+msgid "Find in Project"
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:399 kileactions.cpp:360 kiledocmanager.cpp:781
+#: kiledocmanager.cpp:1024
+#, fuzzy
+msgid "All Files"
+msgstr "Semua Fail"
+
+#: dialogs/findfilesdialog.cpp:417
+msgid "no project opened"
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:560
+#, fuzzy
+msgid "<strong>Error:</strong><p>"
+msgstr "<strong>Ralat:</strong><p>"
+
+#: dialogs/findfilesdialog.cpp:560 dialogs/findfilesdialog.cpp:694
+#, fuzzy
+msgid "Grep Tool Error"
+msgstr "Ralat Alat Grep"
+
+#: dialogs/findfilesdialog.cpp:694
+#, kde-format
+msgid "Invalid regular expression: %1"
+msgstr ""
+
+#: dialogs/findfilesdialog.cpp:699
+#, fuzzy
+msgid "&Cancel"
+msgstr "&Batal"
 
 #: dialogs/floatdialog.cpp:106
 msgid "Figure Environment"
@@ -372,11 +545,237 @@ msgstr ""
 msgid "Table Environment"
 msgstr ""
 
-#: dialogs/managetemplatesdialog.cpp:84
-#: dialogs/tabular/newtabulardialog.cpp:127 dialogs/findfilesdialog.cpp:112
+#. i18n: file: widgets/graphicsconfigwidget.ui:19
+#. i18n: ectx: property (title), widget (QGroupBox, m_bgGraphics)
+#: dialogs/includegraphicsdialog.cpp:49 rc.cpp:975
+msgid "Include Graphics"
+msgstr ""
+
+#: dialogs/includegraphicsdialog.cpp:423
+msgid "*.png *.jpg *.pdf|Graphics\n"
+msgstr ""
+
+#: dialogs/includegraphicsdialog.cpp:428
+msgid "*.png *.jpg *.eps.gz *.eps|Graphics\n"
+msgstr ""
+
+#: dialogs/includegraphicsdialog.cpp:595
+msgid "You must include the wrapfig package to use the text wrapping options"
+msgstr ""
+
+#: dialogs/includegraphicsdialog.cpp:595 editorextension.cpp:2783
+msgid "Missing Package"
+msgstr ""
+
+#: dialogs/includegraphicsdialog.cpp:612
+msgid "No graphics file was given. Proceed any way?"
+msgstr ""
+
+#: dialogs/includegraphicsdialog.cpp:620
+msgid "The graphics file does not exist. Proceed any way?"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:92
 #, fuzzy
-msgid "Name:"
-msgstr "Nama:"
+msgid "Attributes"
+msgstr "Atribut"
+
+#: dialogs/latexcommanddialog.cpp:98
+#, fuzzy
+msgid "Group:"
+msgstr "Kumpulan:"
+
+#: dialogs/latexcommanddialog.cpp:99 dialogs/mathenvironmentdialog.cpp:55
+#, fuzzy
+msgid "&Name:"
+msgstr "&Nama:"
+
+#: dialogs/latexcommanddialog.cpp:101
+msgid "Include *-&version:"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:114
+msgid "Name of the group, to which this environment or command belongs."
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:116
+msgid "Name of the new environment or command."
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:119
+msgid "Name of the environment or command to edit."
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:121
+msgid "Does this environment or command also exist in a starred version?"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:125
+msgid "\\\\ is end of &line:"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:126
+msgid "Needs &math mode:"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:127
+msgid "&Tabulator:"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:142
+msgid "Shall 'Smart New Line' insert \\\\?"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:143
+msgid "Does this environment need math mode?"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:144
+msgid "Define the standard tabulator of this environment."
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:155
+msgid "Opt&ion:"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:166
+msgid "Define an optional alignment parameter."
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:169
+msgid "Does this command need an optional parameter?"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:177
+msgid "&Parameter:"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:189
+msgid ""
+"Does this environment need an additional parameter like {n} for an integer "
+"number, {w} for a width or { } for any other parameter?"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:195
+msgid "Does this command need an argument?"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:208
+msgid "Define a new LaTeX environment:"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:212
+msgid "Define a new LaTeX command:"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:227
+msgid "Edit a LaTeX Environment"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:244
+msgid "Edit a LaTeX Command"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:302 dialogs/quickdocumentdialog.cpp:2325
+msgid "An empty string is not allowed."
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:312
+msgid "This environment already exists."
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:313
+msgid "This command already exists."
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:332
+msgid "LaTeX Configuration"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:374
+msgid "AMS-Math"
+msgstr ""
+
+#. i18n: file: dialogs/latexcommanddialog_base.ui:65
+#. i18n: ectx: property (text), widget (QTreeWidget, environments)
+#. i18n: file: kileui.rc:542
+#. i18n: ectx: ToolBar (mathToolBar)
+#: dialogs/latexcommanddialog.cpp:375 kile.cpp:846 rc.cpp:218 rc.cpp:837
+#, fuzzy
+msgid "Math"
+msgstr "Matematik"
+
+#: dialogs/latexcommanddialog.cpp:376
+#, fuzzy
+msgid "Lists"
+msgstr "Senarai"
+
+#: dialogs/latexcommanddialog.cpp:377 kile.cpp:842 kilestdactions.cpp:79
+msgid "Tabular"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:378 kilestdactions.cpp:53
+msgid "Verbatim"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:380 widgets/structurewidget.cpp:326
+#, fuzzy
+msgid "Labels"
+msgstr "Label"
+
+#: dialogs/latexcommanddialog.cpp:381
+#, fuzzy
+msgid "References"
+msgstr "Rujukan"
+
+#: dialogs/latexcommanddialog.cpp:382
+msgid "Citations"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:383
+msgid "Includes"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:613
+msgid "LaTeX Environments"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:619 dialogs/latexcommanddialog.cpp:700
+msgid "LaTeX Commands"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:664
+msgid "Do you want to delete this environment?"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:669
+msgid "Do you want to delete this command?"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:675 dialogs/quickdocumentdialog.cpp:1924
+#: dialogs/quickdocumentdialog.cpp:2097
+#, fuzzy
+msgid "Delete"
+msgstr "Padam"
+
+#: dialogs/latexcommanddialog.cpp:695
+msgid "LaTeX Environment"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:748
+msgid "'environment'"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:748
+msgid "'command'"
+msgstr ""
+
+#: dialogs/latexcommanddialog.cpp:749
+#, kde-format
+msgid ""
+"All your %1 settings will be overwritten with the default settings, are you "
+"sure you want to continue?"
+msgstr ""
 
 #: dialogs/managetemplatesdialog.cpp:95
 #, fuzzy, kde-format
@@ -406,7 +805,7 @@ msgstr ""
 #. i18n: file: widgets/newdocumentwidget.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
 #: dialogs/managetemplatesdialog.cpp:108 dialogs/managetemplatesdialog.cpp:160
-#: rc.cpp:1119
+#: rc.cpp:1167
 #, fuzzy
 msgid "Document Type"
 msgstr "Jenis Dokumen"
@@ -499,22 +898,6 @@ msgstr ""
 msgid "Math Environments"
 msgstr ""
 
-#. i18n: file: dialogs/floatdialog_base.ui:19
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#. i18n: file: dialogs/latexcommanddialog_base.ui:50
-#. i18n: ectx: property (text), widget (QTreeWidget, environments)
-#: dialogs/mathenvironmentdialog.cpp:53
-#: dialogs/tabular/newtabulardialog.cpp:121 dialogs/findfilesdialog.cpp:157
-#: kile.cpp:813 rc.cpp:5 rc.cpp:209
-#, fuzzy
-msgid "Environment"
-msgstr "Persekitaran"
-
-#: dialogs/mathenvironmentdialog.cpp:55 dialogs/latexcommanddialog.cpp:99
-#, fuzzy
-msgid "&Name:"
-msgstr "&Nama:"
-
 #: dialogs/mathenvironmentdialog.cpp:56
 msgid "Without n&umbering:"
 msgstr ""
@@ -591,6 +974,23 @@ msgstr ""
 
 #: dialogs/mathenvironmentdialog.cpp:221
 msgid "Number of groups:"
+msgstr ""
+
+#: dialogs/newfilewizard.cpp:45
+#, fuzzy
+msgid "New File"
+msgstr "Fail Baru"
+
+#: dialogs/newfilewizard.cpp:73
+msgid "LaTeX Document"
+msgstr ""
+
+#: dialogs/newfilewizard.cpp:74
+msgid "BibTeX Document"
+msgstr ""
+
+#: dialogs/newfilewizard.cpp:75
+msgid "Kile Script"
 msgstr ""
 
 #: dialogs/newtoolwizard.cpp:22
@@ -810,6 +1210,198 @@ msgstr "</center>"
 msgid "Postscript Tools"
 msgstr ""
 
+#: dialogs/projectdialogs.cpp:73
+msgid "Insert a short descriptive name of your project here."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:74
+msgid ""
+"Insert a list (separated by spaces) of file extensions which should be "
+"treated also as files of the corresponding type in this project."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:75
+msgid "Default graphic extension to open when none specified by file name."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:79
+#, fuzzy
+msgid "Project &title:"
+msgstr "&Tajuk projek:"
+
+#: dialogs/projectdialogs.cpp:84
+#, fuzzy
+msgid "Extensions"
+msgstr "Sambungan"
+
+#: dialogs/projectdialogs.cpp:97
+msgid "(use global settings)"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:98
+msgid "Default Graphics Extension:"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:106
+msgid "Source Files"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:107
+msgid "Package Files"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:108
+msgid "Image Files"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:109
+msgid "Predefined:"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:158
+msgid "Error in extension"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:158
+msgid "All user defined extensions should look like '.xyz'"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:158
+msgid "Invalid extension"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:224
+#, fuzzy
+msgid "Create New Project"
+msgstr "Cipta Projek Baru"
+
+#: dialogs/projectdialogs.cpp:242
+msgid "Insert the path to your project here."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:244
+msgid "Project &folder:"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:258
+msgid "Create a new file and add it to this project"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:260
+msgid "File&name (relative to where the project file is):"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:267
+msgid ""
+"If you want Kile to create a new file and add it to the project, then check "
+"this option and select a template from the list that will appear below."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:342
+msgid ""
+"You have not entered a project name. If you decide to proceed, the project "
+"name will be set to \"Untitled\".\n"
+"Do you want to create the project nevertheless?"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:343
+#, fuzzy
+msgid "No Project Name Given"
+msgstr "Tiada Nama Fail Diberi"
+
+#: dialogs/projectdialogs.cpp:344 kileviewmanager.cpp:717
+#, fuzzy
+msgid "Untitled"
+msgstr "Tiada tajuk"
+
+#: dialogs/projectdialogs.cpp:352
+msgid "Please enter the folder where the project file should be saved to."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:352
+#, fuzzy
+msgid "Empty Location"
+msgstr "Lokasi Kosong"
+
+#: dialogs/projectdialogs.cpp:366
+msgid "Could not create the project folder, check your permissions."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:370
+msgid "The project folder is not writable, check your permissions."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:374
+msgid ""
+"The project file already exists, please select another name. Delete the "
+"existing project file if your intention was to overwrite it."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:374
+#, fuzzy
+msgid "Project File Already Exists"
+msgstr "Fail Projek Telah Wujud"
+
+#: dialogs/projectdialogs.cpp:380
+msgid ""
+"Please enter a filename for the file that should be added to this project."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:380
+#, fuzzy
+msgid "No File Name Given"
+msgstr "Tiada Nama Fail Diberi"
+
+#: dialogs/projectdialogs.cpp:393
+#, fuzzy, kde-format
+msgid "The file \"%1\" already exists, overwrite it?"
+msgstr "Fail \"%1\" telah wujud, tulisganti?"
+
+#: dialogs/projectdialogs.cpp:393 documentinfo.cpp:121
+#, fuzzy
+msgid "File Already Exists"
+msgstr "Fail Sudah Wujud"
+
+#. i18n: file: widgets/generalconfigwidget.ui:32
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
+#: dialogs/projectdialogs.cpp:424 rc.cpp:930
+msgid "Project Options"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:425
+#, fuzzy
+msgid "(use global setting)"
+msgstr "(guna tetapan global)"
+
+#: dialogs/projectdialogs.cpp:448 widgets/previewconfigwidget.cpp:111
+#, fuzzy
+msgid "Properties"
+msgstr "Ciri-ciri"
+
+#: dialogs/projectdialogs.cpp:455
+msgid "Select the default master document. Leave empty for auto detection."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:460
+#, fuzzy
+msgid "&Master document:"
+msgstr "Doku&men utama:"
+
+#: dialogs/projectdialogs.cpp:466
+#, fuzzy
+msgid "(auto-detect)"
+msgstr "(auto-kesan)"
+
+#: dialogs/projectdialogs.cpp:483
+#, fuzzy
+msgid "&QuickBuild configuration:"
+msgstr "Tetapan &QuickBuild:"
+
+#: dialogs/projectdialogs.cpp:501
+#, fuzzy
+msgid "&MakeIndex options"
+msgstr "Pilihan &MakeIndex"
+
 #: dialogs/quickdocumentdialog.cpp:103
 msgid "Cla&ss Options"
 msgstr ""
@@ -950,7 +1542,7 @@ msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:150
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: dialogs/quickdocumentdialog.cpp:342 rc.cpp:903
+#: dialogs/quickdocumentdialog.cpp:342 rc.cpp:951
 #, fuzzy
 msgid "&Author:"
 msgstr "&Penulis:"
@@ -1629,12 +2221,6 @@ msgstr ""
 msgid "Do you want to delete this class option?"
 msgstr ""
 
-#: dialogs/quickdocumentdialog.cpp:1924 dialogs/quickdocumentdialog.cpp:2097
-#: dialogs/latexcommanddialog.cpp:675
-#, fuzzy
-msgid "Delete"
-msgstr "Padam"
-
 #: dialogs/quickdocumentdialog.cpp:1948
 msgid "Add Package"
 msgstr ""
@@ -1697,10 +2283,6 @@ msgstr ""
 #: dialogs/quickdocumentdialog.cpp:2306
 #, kde-format
 msgid "%1 '%2' is not allowed."
-msgstr ""
-
-#: dialogs/quickdocumentdialog.cpp:2325 dialogs/latexcommanddialog.cpp:302
-msgid "An empty string is not allowed."
 msgstr ""
 
 #: dialogs/quickdocumentdialog.cpp:2332
@@ -1873,7 +2455,7 @@ msgstr ""
 
 #. i18n: file: widgets/codecompletionconfigwidget.ui:235
 #. i18n: ectx: property (text), widget (QCheckBox, cb_setbullets)
-#: dialogs/tabular/newtabulardialog.cpp:157 rc.cpp:1323
+#: dialogs/tabular/newtabulardialog.cpp:157 rc.cpp:879
 msgid "Insert bullets"
 msgstr ""
 
@@ -2029,15 +2611,6 @@ msgstr ""
 msgid "Table of Contents"
 msgstr "Senarai Kandungan"
 
-#: dialogs/texdocumentationdialog.cpp:73 dialogs/findfilesdialog.cpp:130
-msgid "Search"
-msgstr "Cari"
-
-#: dialogs/texdocumentationdialog.cpp:83 dialogs/findfilesdialog.cpp:228
-#: dialogs/findfilesdialog.cpp:588
-msgid "&Search"
-msgstr "&Cari"
-
 #: dialogs/texdocumentationdialog.cpp:88
 msgid ""
 "A list of available documents, which are listed in 'texdoctk.dat', that come "
@@ -2117,7 +2690,7 @@ msgstr ""
 #. i18n: file: widgets/helpconfigwidget.ui:96
 #. i18n: ectx: property (title), widget (QGroupBox, m_gbUserHelp)
 #: dialogs/userhelpdialog.cpp:64 dialogs/userhelpdialog.cpp:374 kile.cpp:912
-#: rc.cpp:966
+#: rc.cpp:1014
 msgid "User Help"
 msgstr ""
 
@@ -2128,7 +2701,7 @@ msgstr "Item &menu:"
 
 #. i18n: file: widgets/quicktoolconfigwidget.ui:104
 #. i18n: ectx: property (text), widget (KPushButton, m_pshbRemove)
-#: dialogs/userhelpdialog.cpp:86 rc.cpp:1167
+#: dialogs/userhelpdialog.cpp:86 rc.cpp:1215
 #, fuzzy
 msgid "&Remove"
 msgstr "&Buang"
@@ -2237,734 +2810,56 @@ msgstr "Tambah"
 msgid "Insert"
 msgstr "Selit"
 
+#. i18n: file: widgets/codecompletionconfigwidget.ui:124
+#. i18n: ectx: property (text), widget (KPushButton, m_removeFileButton)
 #. i18n: file: widgets/maintoolconfigwidget.ui:101
 #. i18n: ectx: property (text), widget (KPushButton, m_pshbRemoveTool)
 #. i18n: file: widgets/maintoolconfigwidget.ui:222
 #. i18n: ectx: property (text), widget (KPushButton, m_pshbRemoveConfig)
-#. i18n: file: widgets/codecompletionconfigwidget.ui:124
-#. i18n: ectx: property (text), widget (KPushButton, m_removeFileButton)
-#: dialogs/usertagsdialog.cpp:66 rc.cpp:1062 rc.cpp:1074 rc.cpp:1302
+#: dialogs/usertagsdialog.cpp:66 rc.cpp:858 rc.cpp:1110 rc.cpp:1122
 #, fuzzy
 msgid "Remove"
 msgstr "Buang"
-
-#: dialogs/findfilesdialog.cpp:105 dialogs/projectdialogs.cpp:66
-#: kileproject.cpp:483
-msgid "Project"
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:115 dialogs/findfilesdialog.cpp:201
-#, fuzzy
-msgid "Directory:"
-msgstr "Direktori:"
-
-#: dialogs/findfilesdialog.cpp:137
-#, fuzzy
-msgid "Pattern:"
-msgstr "Corak:"
-
-#: dialogs/findfilesdialog.cpp:148
-#, fuzzy
-msgid "Template:"
-msgstr "Templat:"
-
-#: dialogs/findfilesdialog.cpp:154
-#, fuzzy
-msgid "Normal"
-msgstr "Normal"
-
-#. i18n: file: dialogs/latexcommanddialog_base.ui:105
-#. i18n: ectx: property (text), widget (QTreeWidget, commands)
-#: dialogs/findfilesdialog.cpp:155 rc.cpp:233
-#, fuzzy
-msgid "Command"
-msgstr "Arahan"
-
-#: dialogs/findfilesdialog.cpp:156
-msgid "Command[]"
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:158
-#, fuzzy
-msgid "Image"
-msgstr "Imej"
-
-#: dialogs/findfilesdialog.cpp:159 kilestdactions.cpp:127
-#: kilestdactions.cpp:128
-#, fuzzy
-msgid "Label"
-msgstr "Label"
-
-#: dialogs/findfilesdialog.cpp:160 kilestdactions.cpp:133
-#, fuzzy
-msgid "Reference"
-msgstr "Rujukan"
-
-#. i18n: file: dialogs/includegraphicsdialog_base.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/findfilesdialog.cpp:161 dialogs/projectdialogs.cpp:253 rc.cpp:38
-#, fuzzy
-msgid "File"
-msgstr "Fail"
-
-#: dialogs/findfilesdialog.cpp:185
-msgid "Directory Options"
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:192
-#, fuzzy
-msgid "Filter:"
-msgstr "Penapis:"
-
-#: dialogs/findfilesdialog.cpp:212
-msgid "Scan directories recursively"
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:232
-msgid "&Clear"
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:265
-msgid ""
-"Enter the regular expression you want to search for here.<br>Possible meta "
-"characters are:<br><ul><li>&nbsp;<b>.</b> - Matches any character</"
-"li><li>&nbsp;<b>^</b> - Matches the beginning of a line</li><li>&nbsp;<b>$</"
-"b> - Matches the end of a line</li><li>&nbsp;<b>\\\\\\&lt;</b> - Matches the "
-"beginning of a word</li><li>&nbsp;<b>\\\\\\&gt;</b> - Matches the end of a "
-"word</li></ul>The following repetition operators exist:<ul><li>&nbsp;<b>?</"
-"b> - The preceding item is matched at most once</li><li>&nbsp;<b>*</b> - The "
-"preceding item is matched zero or more times</li><li>&nbsp;<b>+</b> - The "
-"preceding item is matched one or more times</li><li>&nbsp;<b>{<i>n</i>}</b> "
-"- The preceding item is matched exactly <i>n</i> times</li><li>&nbsp;<b>"
-"{<i>n</i>,}</b> - The preceding item is matched <i>n</i> or more times</"
-"li><li>&nbsp;<b>{,<i>n</i>}</b> - The preceding item is matched at most "
-"<i>n</i> times</li><li>&nbsp;<b>{<i>n</i>,<i>m</i>}</b> - The preceding item "
-"is matched at least <i>n</i>, but at most <i>m</i> times.</li></"
-"ul>Furthermore, backreferences to bracketed subexpressions are available via "
-"the notation \\\\<i>n</i>."
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:289
-msgid ""
-"Enter the file name pattern of the files to search here. You may give "
-"several patterns separated by commas."
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:292
-#, c-format
-msgid ""
-"Choose one search mode. For the first modes, the search pattern is build "
-"from the editable template, where '%s' is replaced by the given pattern."
-"<br><br>There are additional fixed predefined modes for environments, "
-"graphics, labels, references and input files. If the pattern is empty, Kile "
-"will search for all commands of this mode. If a pattern is given, it will be "
-"inserted as a parameter. For example, in environment mode with pattern "
-"'center', Kile will search for '\\begin{center}', and in graphics mode with "
-"pattern '.*\\.png', Kile will search for all png files."
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:300
-#, c-format
-msgid ""
-"For the first three modes you can choose a template for the pattern from the "
-"combo box and edit it here. The string %s in the template is replaced by the "
-"pattern input field, resulting in the regular expression to search for. In "
-"all other modes this template is ignored."
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:305
-msgid "Enter the directory which contains the files you want to search in."
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:307
-msgid "Check this box to search in all subdirectories."
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:309
-msgid ""
-"The results of the grep run are listed here. Select a filename/line number "
-"combination with a mouse click on the item or with the cursor to show the "
-"respective line in the editor."
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:316
-#, fuzzy
-msgid "Find in Files"
-msgstr "Cari dalam Fail"
-
-#: dialogs/findfilesdialog.cpp:320
-msgid "Find in Project"
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:399 kileactions.cpp:360 kiledocmanager.cpp:781
-#: kiledocmanager.cpp:1024
-#, fuzzy
-msgid "All Files"
-msgstr "Semua Fail"
-
-#: dialogs/findfilesdialog.cpp:417
-msgid "no project opened"
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:560
-#, fuzzy
-msgid "<strong>Error:</strong><p>"
-msgstr "<strong>Ralat:</strong><p>"
-
-#: dialogs/findfilesdialog.cpp:560 dialogs/findfilesdialog.cpp:694
-#, fuzzy
-msgid "Grep Tool Error"
-msgstr "Ralat Alat Grep"
-
-#: dialogs/findfilesdialog.cpp:694
-#, kde-format
-msgid "Invalid regular expression: %1"
-msgstr ""
-
-#: dialogs/findfilesdialog.cpp:699
-#, fuzzy
-msgid "&Cancel"
-msgstr "&Batal"
-
-#. i18n: file: widgets/graphicsconfigwidget.ui:19
-#. i18n: ectx: property (title), widget (QGroupBox, m_bgGraphics)
-#: dialogs/includegraphicsdialog.cpp:49 rc.cpp:927
-msgid "Include Graphics"
-msgstr ""
-
-#: dialogs/includegraphicsdialog.cpp:423
-msgid "*.png *.jpg *.pdf|Graphics\n"
-msgstr ""
-
-#: dialogs/includegraphicsdialog.cpp:428
-msgid "*.png *.jpg *.eps.gz *.eps|Graphics\n"
-msgstr ""
-
-#: dialogs/includegraphicsdialog.cpp:595
-msgid "You must include the wrapfig package to use the text wrapping options"
-msgstr ""
-
-#: dialogs/includegraphicsdialog.cpp:595 editorextension.cpp:2783
-msgid "Missing Package"
-msgstr ""
-
-#: dialogs/includegraphicsdialog.cpp:612
-msgid "No graphics file was given. Proceed any way?"
-msgstr ""
-
-#: dialogs/includegraphicsdialog.cpp:620
-msgid "The graphics file does not exist. Proceed any way?"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:92
-#, fuzzy
-msgid "Attributes"
-msgstr "Atribut"
-
-#: dialogs/latexcommanddialog.cpp:98
-#, fuzzy
-msgid "Group:"
-msgstr "Kumpulan:"
-
-#: dialogs/latexcommanddialog.cpp:101
-msgid "Include *-&version:"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:114
-msgid "Name of the group, to which this environment or command belongs."
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:116
-msgid "Name of the new environment or command."
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:119
-msgid "Name of the environment or command to edit."
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:121
-msgid "Does this environment or command also exist in a starred version?"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:125
-msgid "\\\\ is end of &line:"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:126
-msgid "Needs &math mode:"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:127
-msgid "&Tabulator:"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:142
-msgid "Shall 'Smart New Line' insert \\\\?"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:143
-msgid "Does this environment need math mode?"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:144
-msgid "Define the standard tabulator of this environment."
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:155
-msgid "Opt&ion:"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:166
-msgid "Define an optional alignment parameter."
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:169
-msgid "Does this command need an optional parameter?"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:177
-msgid "&Parameter:"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:189
-msgid ""
-"Does this environment need an additional parameter like {n} for an integer "
-"number, {w} for a width or { } for any other parameter?"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:195
-msgid "Does this command need an argument?"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:208
-msgid "Define a new LaTeX environment:"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:212
-msgid "Define a new LaTeX command:"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:227
-msgid "Edit a LaTeX Environment"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:244
-msgid "Edit a LaTeX Command"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:312
-msgid "This environment already exists."
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:313
-msgid "This command already exists."
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:332
-msgid "LaTeX Configuration"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:374
-msgid "AMS-Math"
-msgstr ""
-
-#. i18n: file: dialogs/latexcommanddialog_base.ui:65
-#. i18n: ectx: property (text), widget (QTreeWidget, environments)
-#. i18n: file: kileui.rc:542
-#. i18n: ectx: ToolBar (mathToolBar)
-#: dialogs/latexcommanddialog.cpp:375 kile.cpp:846 rc.cpp:218 rc.cpp:837
-#, fuzzy
-msgid "Math"
-msgstr "Matematik"
-
-#: dialogs/latexcommanddialog.cpp:376
-#, fuzzy
-msgid "Lists"
-msgstr "Senarai"
-
-#: dialogs/latexcommanddialog.cpp:377 kilestdactions.cpp:79 kile.cpp:842
-msgid "Tabular"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:378 kilestdactions.cpp:53
-msgid "Verbatim"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:380 widgets/structurewidget.cpp:326
-#, fuzzy
-msgid "Labels"
-msgstr "Label"
-
-#: dialogs/latexcommanddialog.cpp:381
-#, fuzzy
-msgid "References"
-msgstr "Rujukan"
-
-#: dialogs/latexcommanddialog.cpp:382
-msgid "Citations"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:383
-msgid "Includes"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:613
-msgid "LaTeX Environments"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:619 dialogs/latexcommanddialog.cpp:700
-msgid "LaTeX Commands"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:664
-msgid "Do you want to delete this environment?"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:669
-msgid "Do you want to delete this command?"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:695
-msgid "LaTeX Environment"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:748
-msgid "'environment'"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:748
-msgid "'command'"
-msgstr ""
-
-#: dialogs/latexcommanddialog.cpp:749
-#, kde-format
-msgid ""
-"All your %1 settings will be overwritten with the default settings, are you "
-"sure you want to continue?"
-msgstr ""
-
-#: dialogs/newfilewizard.cpp:45
-#, fuzzy
-msgid "New File"
-msgstr "Fail Baru"
-
-#: dialogs/newfilewizard.cpp:73
-msgid "LaTeX Document"
-msgstr ""
-
-#: dialogs/newfilewizard.cpp:74
-msgid "BibTeX Document"
-msgstr ""
-
-#: dialogs/newfilewizard.cpp:75
-msgid "Kile Script"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:73
-msgid "Insert a short descriptive name of your project here."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:74
-msgid ""
-"Insert a list (separated by spaces) of file extensions which should be "
-"treated also as files of the corresponding type in this project."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:75
-msgid "Default graphic extension to open when none specified by file name."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:79
-#, fuzzy
-msgid "Project &title:"
-msgstr "&Tajuk projek:"
-
-#: dialogs/projectdialogs.cpp:84
-#, fuzzy
-msgid "Extensions"
-msgstr "Sambungan"
-
-#: dialogs/projectdialogs.cpp:97
-msgid "(use global settings)"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:98
-msgid "Default Graphics Extension:"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:106
-msgid "Source Files"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:107
-msgid "Package Files"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:108
-msgid "Image Files"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:109
-msgid "Predefined:"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:158
-msgid "Error in extension"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:158
-msgid "All user defined extensions should look like '.xyz'"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:158
-msgid "Invalid extension"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:224
-#, fuzzy
-msgid "Create New Project"
-msgstr "Cipta Projek Baru"
-
-#: dialogs/projectdialogs.cpp:242
-msgid "Insert the path to your project here."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:244
-msgid "Project &folder:"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:258
-msgid "Create a new file and add it to this project"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:260
-msgid "File&name (relative to where the project file is):"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:267
-msgid ""
-"If you want Kile to create a new file and add it to the project, then check "
-"this option and select a template from the list that will appear below."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:342
-msgid ""
-"You have not entered a project name. If you decide to proceed, the project "
-"name will be set to \"Untitled\".\n"
-"Do you want to create the project nevertheless?"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:343
-#, fuzzy
-msgid "No Project Name Given"
-msgstr "Tiada Nama Fail Diberi"
-
-#: dialogs/projectdialogs.cpp:344 kileviewmanager.cpp:717
-#, fuzzy
-msgid "Untitled"
-msgstr "Tiada tajuk"
-
-#: dialogs/projectdialogs.cpp:352
-msgid "Please enter the folder where the project file should be saved to."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:352
-#, fuzzy
-msgid "Empty Location"
-msgstr "Lokasi Kosong"
-
-#: dialogs/projectdialogs.cpp:366
-msgid "Could not create the project folder, check your permissions."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:370
-msgid "The project folder is not writable, check your permissions."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:374
-msgid ""
-"The project file already exists, please select another name. Delete the "
-"existing project file if your intention was to overwrite it."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:374
-#, fuzzy
-msgid "Project File Already Exists"
-msgstr "Fail Projek Telah Wujud"
-
-#: dialogs/projectdialogs.cpp:380
-msgid ""
-"Please enter a filename for the file that should be added to this project."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:380
-#, fuzzy
-msgid "No File Name Given"
-msgstr "Tiada Nama Fail Diberi"
-
-#: dialogs/projectdialogs.cpp:393
-#, fuzzy, kde-format
-msgid "The file \"%1\" already exists, overwrite it?"
-msgstr "Fail \"%1\" telah wujud, tulisganti?"
-
-#. i18n: file: widgets/generalconfigwidget.ui:32
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
-#: dialogs/projectdialogs.cpp:424 rc.cpp:882
-msgid "Project Options"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:425
-#, fuzzy
-msgid "(use global setting)"
-msgstr "(guna tetapan global)"
-
-#: dialogs/projectdialogs.cpp:448 widgets/previewconfigwidget.cpp:111
-#, fuzzy
-msgid "Properties"
-msgstr "Ciri-ciri"
-
-#: dialogs/projectdialogs.cpp:455
-msgid "Select the default master document. Leave empty for auto detection."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:460
-#, fuzzy
-msgid "&Master document:"
-msgstr "Doku&men utama:"
-
-#: dialogs/projectdialogs.cpp:466
-#, fuzzy
-msgid "(auto-detect)"
-msgstr "(auto-kesan)"
-
-#: dialogs/projectdialogs.cpp:483
-#, fuzzy
-msgid "&QuickBuild configuration:"
-msgstr "Tetapan &QuickBuild:"
-
-#: dialogs/projectdialogs.cpp:501
-#, fuzzy
-msgid "&MakeIndex options"
-msgstr "Pilihan &MakeIndex"
 
 #: docpart.cpp:61
 #, kde-format
 msgid "No KDE service found for the MIME type \"%1\"."
 msgstr ""
 
-#: main.cpp:77
-msgid "StandardInput.tex"
+#: documentinfo.cpp:102
+msgid "Invalid Characters"
 msgstr ""
 
-#: main.cpp:109
-msgid "KDE Integrated LaTeX Environment"
+#: documentinfo.cpp:103
+msgid ""
+"The filename contains invalid characters ($~ #).<br>Please provide another "
+"one, or click \"Cancel\" to save anyway."
 msgstr ""
 
-#: main.cpp:111
-msgid "by the Kile Team (2003 - 2011)"
+#: documentinfo.cpp:122
+#, fuzzy, kde-format
+msgid ""
+"A file with filename '%1' already exists.<br>Please provide another one, or "
+"click \"Cancel\" to overwrite it."
+msgstr "Fail bernama \"%1\" telah wujud. Anda pasti ingin tulis semula?"
+
+#: documentinfo.cpp:143
+msgid ""
+"The given filename has no extension; do you want one to be automatically "
+"added?"
 msgstr ""
 
-#: main.cpp:114
-msgid "Michel Ludwig"
+#: documentinfo.cpp:144
+msgid "Missing Extension"
 msgstr ""
 
-#: main.cpp:114
-msgid "Project Management/Developer"
-msgstr ""
-
-#: main.cpp:115
-msgid "Thomas Braun"
-msgstr ""
-
-#: main.cpp:115 main.cpp:116
+#: documentinfo.cpp:1155 documentinfo.cpp:1180
 #, fuzzy
-msgid "Former Developer"
-msgstr "pemaju"
+msgid "Frame"
+msgstr "Bingkai"
 
-#: main.cpp:116
-msgid "Holger Danielsson"
-msgstr ""
-
-#: main.cpp:117
-msgid "Jeroen Wijnhout"
-msgstr ""
-
-#: main.cpp:117
-msgid "Former Maintainer/Developer"
-msgstr ""
-
-#: main.cpp:118
-msgid "Brachet Pascal"
-msgstr ""
-
-#: main.cpp:120
-msgid "Andrius Štikonas"
-msgstr ""
-
-#: main.cpp:120
-msgid "Migration from Subversion to Git"
-msgstr ""
-
-#: main.cpp:121
-msgid "Simon Martin"
-msgstr ""
-
-#: main.cpp:121
-msgid "KConfig XT, Various Improvements and Bug-Fixing"
-msgstr ""
-
-#: main.cpp:122
-msgid "Roland Schulz"
-msgstr ""
-
-#: main.cpp:122
-msgid "KatePart Integration"
-msgstr ""
-
-#: main.cpp:123
-msgid "Thorsten Lück"
-msgstr ""
-
-#: main.cpp:123
-msgid "Log Parsing"
-msgstr ""
-
-#: main.cpp:124
-msgid "Jan-Marek Glogowski"
-msgstr ""
-
-#: main.cpp:124
-#, fuzzy
-msgid "Find-in-Files Dialog"
-msgstr "Cari dalam Fail"
-
-#: main.cpp:125
-msgid "Jonathan Pechta"
-msgstr ""
-
-#: main.cpp:125 main.cpp:126
-#, fuzzy
-msgid "Documentation"
-msgstr "Dokumentasi"
-
-#: main.cpp:126
-msgid "Federico Zenith"
-msgstr ""
-
-#: main.cpp:130
-msgid "Jump to line"
-msgstr ""
-
-#: main.cpp:131
-msgid "Start a new Kile mainwindow"
-msgstr ""
-
-#: main.cpp:132
-msgid "Files to open"
-msgstr ""
-
-#: main.cpp:133
-msgid "Read from stdin"
+#: documentinfo.cpp:1183
+msgid "Untitled Block"
 msgstr ""
 
 #: editorcommands.cpp:55
@@ -2988,163 +2883,699 @@ msgstr ""
 msgid "Saving failed and quitting canceled."
 msgstr ""
 
-#: kileinfo.cpp:311
-#, fuzzy
-msgid "Undefined"
-msgstr "Tak ditakrif"
+#: editorextension.cpp:63
+msgid "English quotes:   ``   &apos;&apos;"
+msgstr ""
 
-#: kileinfo.cpp:313
-#, fuzzy
-msgid "Text"
-msgstr "Teks"
+#: editorextension.cpp:64
+msgid "French quotes:   &quot;&lt;   &quot;&gt;"
+msgstr ""
 
-#: kileinfo.cpp:317 kile.cpp:926
-#, fuzzy
-msgid "BibTeX"
-msgstr "BibTeX"
+#: editorextension.cpp:65
+msgid "German quotes:   &quot;`   &quot;&apos;"
+msgstr ""
 
-#: kileinfo.cpp:319
-#, fuzzy
-msgid "Script"
-msgstr "Skrip"
+#: editorextension.cpp:66
+msgid "French quotes (long):   \\flqq   \\frqq"
+msgstr ""
+
+#: editorextension.cpp:67
+msgid "German quotes (long):   \\glqq   \\grqq"
+msgstr ""
+
+#: editorextension.cpp:68
+msgid "Icelandic quotes (v1):   \\ilqq   \\irqq"
+msgstr ""
+
+#: editorextension.cpp:69
+msgid "Icelandic quotes (v2):   \\iflqq   \\ifrqq"
+msgstr ""
+
+#: editorextension.cpp:70
+msgid "Czech quotes:   \\uv{   }"
+msgstr ""
+
+#: editorextension.cpp:71
+msgid "csquotes package:   \\enquote{   }"
+msgstr ""
+
+#: editorextension.cpp:2783
+#, kde-format
+msgid "You have to include the package %1 to use %2."
+msgstr ""
+
+#: editorextension.cpp:3033
+msgid ""
+"The document was modified and the structure view should be updated, before "
+"starting such an operation."
+msgstr ""
+
+#: editorextension.cpp:3034
+msgid "Structure View Error"
+msgstr ""
 
 #: editorkeysequencemanager.cpp:253
 #, kde-format
 msgid "Script execution of %1"
 msgstr ""
 
-#. i18n: file: tips:2
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:3
+#: kile.cpp:265
 msgid ""
-"<p>...that you can create your own templates? Create a document containing "
-"the text you usually start with and save it; then, select \"Create Template "
-"from Document\" from the \"File\" menu, fill in the dialog and you are done: "
-"next time you create a new document you can select the template from the "
-"template list.</p>\n"
+"You have defined some tools in the User menu. From now on these tools will "
+"be available from the Build->Other menu and can be configured in the "
+"configuration dialog (go to the Settings menu and choose Configure Kile). "
+"This has some advantages; your own tools can now be used in a QuickBuild "
+"command if you wish."
 msgstr ""
 
-#. i18n: file: tips:8
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:8
-msgid ""
-"<p>...that Kile supports forward search? This enables you to switch back and "
-"forth between places in the source file and their corresponding locations in "
-"the DVI file. Stop spending so much time on finding the place in the source "
-"file: if you spotted a mistake while viewing the DVI, finding the correct "
-"location is just a mouse-click away!</p>\n"
-"<p><a href=\"help:/kile/quick_inverseforward.html\">Read the manual to find "
-"out how to activate this feature.</a></p>\n"
+#: kile.cpp:265
+msgid "User Tools Detected"
 msgstr ""
 
-#. i18n: file: tips:16
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:14
+#: kile.cpp:271
 msgid ""
-"<p>...that the Quick Build tool is now fully configurable? Go to <b>Settings-"
-">Configure Kile->Build</b> and select the <b>QuickBuild</b> tool.</p>\n"
+"The standard tool list need to be reloaded because of the switch from KDE3 "
+"to KDE4. This will overwrite any changes in the tools you have made. Do you "
+"want to reload the list now (recommended)?"
 msgstr ""
 
-#. i18n: file: tips:22
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:19
-msgid ""
-"<p>...that using projects gives Kile much more power? You can, for example, "
-"bundle and archive all related documents in a project; also, features like "
-"auto-completion of references and citations become much more powerful. Kile "
-"is even able to determine which document is the master document in a project."
-"</p>\n"
+#: kile.cpp:272
+msgid "Tools need to be updated"
 msgstr ""
 
-#. i18n: file: tips:28
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:24
-msgid ""
-"<p>...that you can configure which QuickBuild command is issued for a "
-"project? Just go to <b>Project->Project Options</b> and select a QuickBuild "
-"command.</p>\n"
+#: kile.cpp:383
+msgid "Normal Mode"
 msgstr ""
 
-#. i18n: file: tips:34
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:29
-msgid ""
-"<p>...that inserting references and citations has never been easier? Enable "
-"auto-completion and type in <code>\\ref{</code>, a list with all available "
-"labels will appear automatically (if auto-completion is not enabled, press "
-"Ctrl+Space).</p>\n"
-"<p>Note that this feature is much more powerful if the current document "
-"belongs to a project.</p>\n"
-"<p>You can configure auto-completion by going to <b>Settings->Configure Kile-"
-">Complete</b>; there, you can select databases of LaTeX commands. You can "
-"even create your own lists of commands.</p>\n"
+#: kile.cpp:399
+#, fuzzy
+msgid "Open File"
+msgstr "Buka Fail"
+
+#: kile.cpp:418
+msgid "Files and Projects"
 msgstr ""
 
-#. i18n: file: tips:44
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:36
-msgid ""
-"<p>...that Kile can complete LaTeX commands for you? Type <code>\\se</code> "
-"and press Ctrl+Space, a list of all commands starting with <code>\\se</code> "
-"will appear.</p>\n"
-"<p>You can configure auto-completion by going to <b>Settings->Configure Kile-"
-">Complete</b>; there, you can select databases of LaTeX commands. You can "
-"even create your own lists of commands.</p>\n"
+#: kile.cpp:444 widgets/structurewidget.cpp:135
+msgid "Structure"
 msgstr ""
 
-#. i18n: file: tips:52
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:42
-msgid ""
-"<p>...starting a new environment is very easy using the auto-complete "
-"feature. For example, type <code>equ</code> and press Alt+Space and a list "
-"of all environments starting with <code>equ</code> appears. Press Enter to "
-"select the first entry and a <code>\\begin{equation}\\end{equation}</code> "
-"pair is inserted in your document.</p>\n"
-"<p>You can configure auto-completion by going to <b>Settings->Configure Kile-"
-">Complete</b>; there, you can select databases of LaTeX commands. You can "
-"even create your own lists of commands.</p>\n"
+#: kile.cpp:457
+#, fuzzy
+msgid "Scripts"
+msgstr "Skrip"
+
+#: kile.cpp:486
+#, fuzzy
+msgid "Symbols"
+msgstr "Simbol"
+
+#: kile.cpp:489
+msgid "Most Frequently Used"
 msgstr ""
 
-#. i18n: file: tips:60
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:48
-msgid ""
-"<p>...Kile now contains several editing tools to help you type in LaTeX "
-"faster and easier? Check out the <b>Complete, Select, Delete, Environment "
-"and TeX Group</b> menus in the <b>Edit</b> menu.</p>\n"
+#: kile.cpp:495
+msgid "Relation"
 msgstr ""
 
-#. i18n: file: tips:66
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:53
-msgid ""
-"<p>...that the Quick Preview tool will compile and select a part of a "
-"document? This can be a <b>selected text</b>, the <b>current environment</b> "
-"or the <b>current subdocument</b>.</p>\n"
-"<p>You can configure Quick preview by going to <b>Settings->Configure Kile-"
-">Preview</b>. There, you can select one of the predefined configurations.</"
-"p>\n"
+#: kile.cpp:500
+msgid "Operators"
 msgstr ""
 
-#. i18n: file: tips:74
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:59
-msgid ""
-"<p>...that a new wizard will help to create tabulars and arrays?</p>\n"
-"<p>A right click with the mouse will open a dialog or a popup menu, where a "
-"lot of attributes like <b>alignment</b>, <b>colors</b>, <b>horizontal and "
-"vertical lines</b> and more can be set. Also <b>multicolumn cells</b> are "
-"supported.</p>\n"
+#: kile.cpp:505
+msgid "Arrows"
 msgstr ""
 
-#. i18n: file: tips:82
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:65
+#: kile.cpp:510
+msgid "Miscellaneous Math"
+msgstr ""
+
+#: kile.cpp:515
+msgid "Miscellaneous Text"
+msgstr ""
+
+#: kile.cpp:520
+msgid "Delimiters"
+msgstr ""
+
+#: kile.cpp:525
+#, fuzzy
+msgid "Greek"
+msgstr "Greek"
+
+#. i18n: file: widgets/latexconfigwidget.ui:133
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: kile.cpp:530 rc.cpp:1047
+#, fuzzy
+msgid "Special Characters"
+msgstr "Aksara Khas"
+
+#: kile.cpp:535
+msgid "Cyrillic Characters"
+msgstr ""
+
+#: kile.cpp:540
+#, fuzzy
+msgid "User Defined"
+msgstr "Pengguna Ditentukan"
+
+#: kile.cpp:545
 msgid ""
-"<p>...that Kile can show user defined help files?</p>\n"
-"<p>Go to <b>Settings->Configure Kile->Help</b> and configure your help "
-"files, which are integrated into the help menu.</p>\n"
+"<p>Move the mouse over the icons to see the corresponding LaTeX commands.<br/"
+">Click on an image to insert the corresponding command, additionally "
+"pressing \"Shift\" inserts it in math mode, pressing \"Ctrl\" in curly "
+"brackets.</p>"
+msgstr ""
+
+#: kile.cpp:563 widgets/codecompletionconfigwidget.cpp:54
+#, fuzzy
+msgid "Abbreviation"
+msgstr "Kependekan"
+
+#: kile.cpp:592
+msgid "Log and Messages"
+msgstr ""
+
+#: kile.cpp:598
+#, fuzzy
+msgid "Output"
+msgstr "Keluaran"
+
+#: kile.cpp:607
+#, fuzzy
+msgid "Konsole"
+msgstr "Konsole"
+
+#: kile.cpp:691
+#, fuzzy
+msgid "Save All"
+msgstr "Simpan Semua"
+
+#: kile.cpp:692
+msgid "Save Copy As..."
+msgstr ""
+
+#: kile.cpp:693
+msgid "Create Template From Document..."
+msgstr ""
+
+#: kile.cpp:694
+msgid "&Remove Template..."
+msgstr ""
+
+#: kile.cpp:696 kile.cpp:805
+msgid "Close All"
+msgstr ""
+
+#: kile.cpp:697
+msgid "Close All Ot&hers"
+msgstr ""
+
+#: kile.cpp:698
+#, fuzzy
+msgid "S&tatistics"
+msgstr "S&tatistik"
+
+#: kile.cpp:699
+#, fuzzy
+msgid "&ASCII"
+msgstr "&ASCII"
+
+#: kile.cpp:700
+#, fuzzy
+msgid "Latin-&1 (iso 8859-1)"
+msgstr "Latin-&1 (iso 8859-1)"
+
+#: kile.cpp:701
+msgid "Latin-&2 (iso 8859-2)"
+msgstr ""
+
+#: kile.cpp:702
+msgid "Latin-&3 (iso 8859-3)"
+msgstr ""
+
+#: kile.cpp:703
+msgid "Latin-&4 (iso 8859-4)"
+msgstr ""
+
+#: kile.cpp:704
+msgid "Latin-&5 (iso 8859-5)"
+msgstr ""
+
+#: kile.cpp:705
+msgid "Latin-&9 (iso 8859-9)"
+msgstr ""
+
+#: kile.cpp:706
+msgid "&Central European (cp-1250)"
+msgstr ""
+
+#: kile.cpp:707
+msgid "&Western European (cp-1252)"
+msgstr ""
+
+#: kile.cpp:710
+msgid "Move Tab Left"
+msgstr ""
+
+#: kile.cpp:711
+msgid "Move Tab Right"
+msgstr ""
+
+#: kile.cpp:713
+msgid "Next section"
+msgstr ""
+
+#: kile.cpp:714
+msgid "Prev section"
+msgstr ""
+
+#: kile.cpp:715
+msgid "Next paragraph"
+msgstr ""
+
+#: kile.cpp:716
+msgid "Prev paragraph"
+msgstr ""
+
+#: kile.cpp:718
+msgid "Find &in Files..."
+msgstr ""
+
+#: kile.cpp:720
+msgid "Refresh Str&ucture"
+msgstr ""
+
+#: kile.cpp:723
+msgid "&New Project..."
+msgstr ""
+
+#: kile.cpp:724
+msgid "&Open Project..."
+msgstr ""
+
+#: kile.cpp:726
+#, fuzzy
+msgid "Open &Recent Project"
+msgstr "Buka Projek &Terbaru"
+
+#: kile.cpp:733
+msgid "A&dd Files to Project..."
+msgstr ""
+
+#: kile.cpp:734 widgets/projectview.cpp:832
+msgid "Refresh Project &Tree"
+msgstr ""
+
+#: kile.cpp:735 widgets/projectview.cpp:836
+#, fuzzy
+msgid "&Archive"
+msgstr "&Arkibkan"
+
+#: kile.cpp:736 widgets/projectview.cpp:834
+msgid "Project &Options"
+msgstr ""
+
+#: kile.cpp:737
+#, fuzzy
+msgid "&Close Project"
+msgstr "&Tutup Projek"
+
+#: kile.cpp:740
+msgid "&Show Projects..."
+msgstr ""
+
+#: kile.cpp:741
+msgid "Re&move Files From Project..."
+msgstr ""
+
+#: kile.cpp:742
+msgid "Show Project &Files..."
+msgstr ""
+
+#: kile.cpp:744 widgets/projectview.cpp:829
+msgid "Open All &Project Files"
+msgstr ""
+
+#: kile.cpp:745
+msgid "Find in &Project..."
+msgstr ""
+
+#: kile.cpp:748 kile.cpp:824 kile.cpp:2089 kiledocmanager.cpp:1885
+#: kiledocmanager.cpp:1895
+#, fuzzy
+msgid "Clean"
+msgstr "Bersih"
+
+#: kile.cpp:749
+#, fuzzy
+msgid "&Stop"
+msgstr "&Berhenti"
+
+#: kile.cpp:752
+msgid "View Log File"
+msgstr ""
+
+#: kile.cpp:754
+msgid "Previous LaTeX Error"
+msgstr ""
+
+#: kile.cpp:756
+msgid "Next LaTeX Error"
+msgstr ""
+
+#: kile.cpp:758
+msgid "Previous LaTeX Warning"
+msgstr ""
+
+#: kile.cpp:760
+msgid "Next LaTeX Warning"
+msgstr ""
+
+#: kile.cpp:762
+msgid "Previous LaTeX BadBox"
+msgstr ""
+
+#: kile.cpp:764
+msgid "Next LaTeX BadBox"
+msgstr ""
+
+#: kile.cpp:767
+msgid "Return to Editor"
+msgstr ""
+
+#: kile.cpp:768
+msgid "Next Document"
+msgstr ""
+
+#: kile.cpp:769
+msgid "Previous Document"
+msgstr ""
+
+#: kile.cpp:770
+msgid "Focus Log/Messages View"
+msgstr ""
+
+#: kile.cpp:771
+msgid "Focus Output View"
+msgstr ""
+
+#: kile.cpp:772
+msgid "Focus Konsole View"
+msgstr ""
+
+#: kile.cpp:773
+msgid "Focus Editor View"
+msgstr ""
+
+#: kile.cpp:775
+msgctxt "@action: Starts the completion of the current LaTeX command"
+msgid "Complete (La)TeX Command"
+msgstr ""
+
+#: kile.cpp:776
+msgctxt "@action: Starts the input (and completion) of a LaTeX environment"
+msgid "Complete LaTeX Environment"
+msgstr ""
+
+#: kile.cpp:777
+msgctxt "@action: Starts the completion of the current abbreviation"
+msgid "Complete Abbreviation"
+msgstr ""
+
+#: kile.cpp:779
+msgid "Next Bullet"
+msgstr ""
+
+#: kile.cpp:780
+msgid "Prev Bullet"
+msgstr ""
+
+#: kile.cpp:783 kile.cpp:792
+msgid "Environment (inside)"
+msgstr ""
+
+#: kile.cpp:784 kile.cpp:793
+msgid "Environment (outside)"
+msgstr ""
+
+#: kile.cpp:785 kile.cpp:794
+msgid "TeX Group (inside)"
+msgstr ""
+
+#: kile.cpp:786 kile.cpp:795
+msgid "TeX Group (outside)"
+msgstr ""
+
+#: kile.cpp:787 kile.cpp:796
+msgid "Math Group"
+msgstr ""
+
+#: kile.cpp:788 kile.cpp:797
+#, fuzzy
+msgid "Paragraph"
+msgstr "Perenggan"
+
+#: kile.cpp:789
+#, fuzzy
+msgid "Line"
+msgstr "Garis"
+
+#: kile.cpp:790 kile.cpp:799
+msgid "TeX Word"
+msgstr ""
+
+#: kile.cpp:798
+msgid "To End of Line"
+msgstr ""
+
+#: kile.cpp:801 kile.cpp:807
+msgid "Go to Begin"
+msgstr ""
+
+#: kile.cpp:802 kile.cpp:808
+msgid "Go to End"
+msgstr ""
+
+#: kile.cpp:803 kile.cpp:809
+#, fuzzy
+msgid "Match"
+msgstr "Padan"
+
+#: kile.cpp:804 kile.cpp:810
+#, fuzzy
+msgid "Close"
+msgstr "Tutup"
+
+#: kile.cpp:812
+#, fuzzy
+msgid "Selection"
+msgstr "Pilihan"
+
+#: kile.cpp:814
+msgid "Subdocument"
+msgstr ""
+
+#: kile.cpp:815
+msgid "Mathgroup"
+msgstr ""
+
+#: kile.cpp:820
+msgid "&Bibliography"
+msgstr ""
+
+#. i18n: file: kileui.rc:477
+#. i18n: ectx: Menu (settings)
+#: kile.cpp:826 rc.cpp:819
+#, fuzzy
+msgid "&Settings"
+msgstr "&Tetapan"
+
+#: kile.cpp:829
+msgid "Settings for BibTeX"
+msgstr ""
+
+#: kile.cpp:833
+msgid "Settings for Biblatex"
+msgstr ""
+
+#: kile.cpp:840 kile.cpp:2199
+msgid "Quick Start"
+msgstr ""
+
+#: kile.cpp:843 kilestdactions.cpp:376
+msgid "Array"
+msgstr ""
+
+#: kile.cpp:844 kile.cpp:2251 kilestdactions.cpp:78
+msgid "Tabbing"
+msgstr ""
+
+#: kile.cpp:845
+msgid "Floats"
+msgstr ""
+
+#: kile.cpp:849
+msgid "Define Current Document as '&Master Document'"
+msgstr ""
+
+#: kile.cpp:854
+msgid "Show S&ide Bar"
+msgstr ""
+
+#: kile.cpp:860
+msgid "Show Mess&ages Bar"
+msgstr ""
+
+#: kile.cpp:872
+msgid "Watch File Mode"
+msgstr ""
+
+#: kile.cpp:889
+msgid "TeX Guide"
+msgstr ""
+
+#: kile.cpp:891
+#, fuzzy
+msgid "LaTeX Command"
+msgstr "Arahan LaTeX"
+
+#: kile.cpp:892
+msgid "LaTeX Subject"
+msgstr ""
+
+#: kile.cpp:893
+msgid "LaTeX Env"
+msgstr ""
+
+#: kile.cpp:894
+#, fuzzy
+msgid "Context Help"
+msgstr "Bantuan Konteks"
+
+#: kile.cpp:897
+msgid "LaTeX Reference"
+msgstr ""
+
+#: kile.cpp:902
+msgid "&About Editor Component"
+msgstr ""
+
+#: kile.cpp:910
+msgid "&System Check..."
+msgstr ""
+
+#: kile.cpp:926 kileinfo.cpp:317
+#, fuzzy
+msgid "BibTeX"
+msgstr "BibTeX"
+
+#: kile.cpp:929
+msgid "Biblatex"
+msgstr ""
+
+#: kile.cpp:1081 widgets/toolconfigwidget.cpp:76
+msgid "Compile"
+msgstr ""
+
+#: kile.cpp:1082 widgets/toolconfigwidget.cpp:78
+#, fuzzy
+msgid "View"
+msgstr "Lihat"
+
+#: kile.cpp:1083 widgets/toolconfigwidget.cpp:77
+#, fuzzy
+msgid "Convert"
+msgstr "Tukar"
+
+#: kile.cpp:1084 widgets/toolconfigwidget.cpp:75
+#, fuzzy
+msgid "Quick"
+msgstr "Cepat"
+
+#: kile.cpp:1203
+msgid "Edit User Tags..."
+msgstr ""
+
+#: kile.cpp:1377
+#, kde-format
+msgid "Project: %1"
+msgstr ""
+
+#: kile.cpp:1380
+#, kde-format
+msgid "Project: %1 (Master document: %2)"
+msgstr ""
+
+#: kile.cpp:1386
+msgid "Normal mode"
+msgstr ""
+
+#: kile.cpp:1389
+#, kde-format
+msgid "Master document: %1"
+msgstr ""
+
+#: kile.cpp:1394 kile.cpp:2548
+msgid "Define Current Document as 'Master Document'"
+msgstr ""
+
+#: kile.cpp:1398 kile.cpp:2541
+#, kde-format
+msgid "Normal mode (current master document: %1)"
+msgstr ""
+
+#: kile.cpp:2082
+msgid "There is no active document or it is not saved."
+msgstr ""
+
+#: kile.cpp:2170
+#, kde-format
+msgid "You have to include the package %1."
+msgstr ""
+
+#: kile.cpp:2170 kile.cpp:2173
+msgid "Insert text"
+msgstr ""
+
+#: kile.cpp:2173
+#, kde-format
+msgid "You have to include the packages %1."
+msgstr ""
+
+#: kile.cpp:2313
+msgid "Edit User Tags"
+msgstr ""
+
+#: kile.cpp:2337 kile.cpp:2375
+msgid "no name"
+msgstr ""
+
+#: kile.cpp:2564
+msgid ""
+"In order to define the current document as a master document, it has to be "
+"saved first."
+msgstr ""
+
+#: kile.cpp:2619
+msgid ""
+"Please turn off the 'Master Document' mode before performing the System "
+"Check."
+msgstr ""
+
+#: kile.cpp:2869
+#, fuzzy, kde-format
+msgid "Line: %1 Col: %2"
+msgstr "Baris: %1 Lajur: %2"
+
+#: kile.cpp:2897
+msgctxt "@info:status status bar label for block selection mode"
+msgid "BLOCK"
+msgstr ""
+
+#: kile.cpp:2898
+msgctxt "@info:status status bar label for line selection mode"
+msgid "LINE"
 msgstr ""
 
 #: kileactions.cpp:331
@@ -3152,89 +3583,300 @@ msgstr ""
 msgid "&Label:"
 msgstr "&Label:"
 
-#: kiletool.cpp:49
-#, kde-format
-msgid "Could not change to the folder %1."
+#: kiledocmanager.cpp:122
+msgid "No editor component found. Please check your KDE installation."
 msgstr ""
 
-#: kiletool.cpp:50
+#: kiledocmanager.cpp:123
+msgid "No editor component found."
+msgstr ""
+
+#: kiledocmanager.cpp:166
+msgid ""
+"The internal structure of Kile is corrupted (probably due to a bug in Kile). "
+"Please select Save All from the File menu and close Kile.\n"
+"The Kile team apologizes for any inconvenience and would appreciate a bug "
+"report."
+msgstr ""
+
+#: kiledocmanager.cpp:644
+#, kde-format
+msgid "Could not find template: %1"
+msgstr ""
+
+#: kiledocmanager.cpp:644
+#, fuzzy
+msgid "File Not Found"
+msgstr "Fail Tidak Dijumpai"
+
+#: kiledocmanager.cpp:702
+msgid "Please save the file first."
+msgstr ""
+
+#: kiledocmanager.cpp:707
+msgid "Open/create a document first."
+msgstr ""
+
+#: kiledocmanager.cpp:715
+msgid "A template for this type of document cannot be created."
+msgstr ""
+
+#: kiledocmanager.cpp:719
+msgid "Create Template From Document"
+msgstr ""
+
+#: kiledocmanager.cpp:725
+#, fuzzy
+msgid "Remove Template"
+msgstr "Alih Keluar Templat"
+
+#: kiledocmanager.cpp:787
+#, fuzzy
+msgid "Open Files"
+msgstr "Buka Fail"
+
+#: kiledocmanager.cpp:906
 #, kde-format
 msgid ""
-"The folder %1 is not writable, therefore %2 will not be able to save its "
-"results."
+"The file %1 could not be saved, check the permissions and free disk space."
 msgstr ""
 
-#: kiletool.cpp:51
+#: kiledocmanager.cpp:907
+#, fuzzy
+msgid "Autosave"
+msgstr "Autosimpan"
+
+#: kiledocmanager.cpp:918
 #, kde-format
 msgid ""
-"The file %1/%2 does not exist. If this is unexpected, check the file "
-"permissions."
+"Kile encountered problems while saving the file %1. Do you have enough free "
+"disk space left?"
 msgstr ""
 
-#: kiletool.cpp:52
-#, kde-format
-msgid ""
-"The file %1/%2 is not readable. If this is unexpected, check the file "
-"permissions."
+#: kiledocmanager.cpp:919
+msgid "Saving"
 msgstr ""
 
-#: kiletool.cpp:53
-#, kde-format
-msgid ""
-"Could not determine on which file to run %1, because there is no active "
-"document."
-msgstr ""
+#: kiledocmanager.cpp:1025
+#, fuzzy
+msgid "Save File"
+msgstr "Simpan Fail"
 
-#: kiletool.cpp:54
-msgid "Could not determine the master file for this document."
-msgstr ""
-
-#: kiletool.cpp:55
-msgid "Please save the untitled document first."
-msgstr ""
-
-#: kiletool.cpp:56
+#: kiledocmanager.cpp:1035
 #, fuzzy, kde-format
-msgid "The file %1 does not exist."
-msgstr "Fail%1 tidak wujud."
+msgid ""
+"A file with the name \"%1\" exists already. Do you want to overwrite it?"
+msgstr "Fail bernama \"%1\" telah wujud. Anda pasti ingin tulis semula?"
 
-#: kiletool.cpp:57
-#, kde-format
-msgid "The file %1 is not readable."
+#: kiledocmanager.cpp:1035
+#, fuzzy
+msgid "Overwrite File?"
+msgstr "&Tindih"
+
+#: kiledocmanager.cpp:1035
+#, fuzzy
+msgid "&Overwrite"
+msgstr "&Tindih"
+
+#: kiledocmanager.cpp:1258
+msgid "Refresh Project Tree"
 msgstr ""
 
-#: kiletool.cpp:536
-#, kde-format
-msgid "The document %1 is not a LaTeX root document; continue anyway?"
-msgstr ""
-
-#: kiletool.cpp:536
-msgid "Continue?"
-msgstr ""
-
-#: kiletool.cpp:548
-#, kde-format
-msgid "The file %1/%2 does not exist; did you compile the source file?"
-msgstr ""
-
-#: kiletool.cpp:568
+#: kiledocmanager.cpp:1266
 msgid ""
 "The current document is not associated to a project. Please activate a "
-"document that is associated to the project you want to archive, then choose "
-"Archive again."
+"document that is associated to the project you want to build the tree for, "
+"then choose Refresh Project Tree again."
 msgstr ""
 
-#: kiletool.cpp:572
-msgid "No files have been chosen for archiving."
+#: kiledocmanager.cpp:1266
+msgid "Could Not Refresh Project Tree"
 msgstr ""
 
-#: kiletool.cpp:587
-msgid "Archive Project"
+#: kiledocmanager.cpp:1340 kiledocmanager.cpp:2036 kiledocmanager.cpp:2111
+#: kiledocmanager.cpp:2148
+msgid "Select Project"
 msgstr ""
 
-#: kiletool.cpp:653 kiletoolmanager.cpp:151
+#: kiledocmanager.cpp:1364 kiledocmanager.cpp:1380 kiledocmanager.cpp:1387
+msgid "Add to Project"
+msgstr ""
+
+#: kiledocmanager.cpp:1379
 #, kde-format
-msgid "Unknown tool %1."
+msgid "The file %1 is already member of the project %2"
+msgstr ""
+
+#: kiledocmanager.cpp:1386
+#, kde-format
+msgid ""
+"The file %1 can not be added because it does not exist or is not readable"
+msgstr ""
+
+#: kiledocmanager.cpp:1405
+msgid ""
+"This file is the project file, which holds all the information about your "
+"project.  As such, it cannot be removed from the project."
+msgstr ""
+
+#: kiledocmanager.cpp:1405
+msgid "Cannot Remove File From Project"
+msgstr ""
+
+#: kiledocmanager.cpp:1463
+msgid ""
+"The project you tried to open is already opened. If you wanted to reload the "
+"project, close the project before you re-open it."
+msgstr ""
+
+#: kiledocmanager.cpp:1463
+msgid "Project Already Open"
+msgstr ""
+
+#: kiledocmanager.cpp:1473
+#, kde-format
+msgid ""
+"The project file for the project \"%1\" does not exist or is not readable. "
+"Remove this project from the recent projects list?"
+msgstr ""
+
+#: kiledocmanager.cpp:1473
+msgid "Could Not Load Project File"
+msgstr ""
+
+#: kiledocmanager.cpp:1570
+msgid ""
+"*.kilepr|Kile Project Files\n"
+"*|All Files"
+msgstr ""
+
+#: kiledocmanager.cpp:1570
+#, fuzzy
+msgid "Open Project"
+msgstr "Buka Projek"
+
+#: kiledocmanager.cpp:1591
+msgid "Save Project"
+msgstr ""
+
+#: kiledocmanager.cpp:1643
+msgid ""
+"The current document is not associated to a project. Please activate a "
+"document that is associated to the project you want to save, then choose "
+"Save Project again."
+msgstr ""
+
+#: kiledocmanager.cpp:1643
+msgid "Could Determine Active Project"
+msgstr ""
+
+#: kiledocmanager.cpp:1666
+msgid "Add Files to Project"
+msgstr ""
+
+#: kiledocmanager.cpp:1677
+#, fuzzy
+msgid "*|All Files"
+msgstr "*|Semua Fail"
+
+#: kiledocmanager.cpp:1681
+msgid "Add Files"
+msgstr ""
+
+#: kiledocmanager.cpp:1697
+msgid ""
+"There are no projects opened. Please open the project you want to add files "
+"to, then choose Add Files again."
+msgstr ""
+
+#: kiledocmanager.cpp:1697 kiledocmanager.cpp:1732
+msgid "Could Not Determine Active Project"
+msgstr ""
+
+#: kiledocmanager.cpp:1723
+msgid "Project Options For"
+msgstr ""
+
+#: kiledocmanager.cpp:1732
+msgid ""
+"The current document is not associated to a project. Please activate a "
+"document that is associated to the project you want to modify, then choose "
+"Project Options again."
+msgstr ""
+
+#: kiledocmanager.cpp:1760
+msgid "Close Project"
+msgstr ""
+
+#: kiledocmanager.cpp:1814
+msgid ""
+"The current document is not associated to a project. Please activate a "
+"document that is associated to the project you want to close, then choose "
+"Close Project again."
+msgstr ""
+
+#: kiledocmanager.cpp:1814
+msgid "Could Not Close Project"
+msgstr ""
+
+#: kiledocmanager.cpp:1884
+#, kde-format
+msgid "Nothing to clean for %1"
+msgstr ""
+
+#: kiledocmanager.cpp:1894
+#, kde-format
+msgid "Cleaning %1: %2"
+msgstr ""
+
+#: kiledocmanager.cpp:1944
+msgid "Switch Project"
+msgstr ""
+
+#: kiledocmanager.cpp:2003
+msgid "Select Files to Remove"
+msgstr ""
+
+#: kiledocmanager.cpp:2017 kiledocmanager.cpp:2020
+msgid "Show Project Files"
+msgstr ""
+
+#: kiledocmanager.cpp:2017 kiledocmanager.cpp:2067
+msgid "project configuration file"
+msgstr ""
+
+#: kiledocmanager.cpp:2020 kiledocmanager.cpp:2070
+msgid "graphics file"
+msgstr ""
+
+#: kiledocmanager.cpp:2067 kiledocmanager.cpp:2070
+msgid "Open All Project Files"
+msgstr ""
+
+#: kiledocmanager.cpp:2104
+#, kde-format
+msgid "not opened: %1 (%2)"
+msgstr ""
+
+#: kiledocmanager.cpp:2129 kiledocmanager.cpp:2166
+msgid "Project Files"
+msgstr ""
+
+#: kiledocmanager.cpp:2137 kiledocmanager.cpp:2175
+msgid "Could not determine the selected file."
+msgstr ""
+
+#: kiledocmanager.cpp:2137 kiledocmanager.cpp:2175
+msgid "Project Error"
+msgstr ""
+
+#: kiledocmanager.cpp:2259
+#, fuzzy
+msgid "Opening Project..."
+msgstr "Buka Projek"
+
+#: kiledocmanager.cpp:2262
+msgid "Scanning project files..."
 msgstr ""
 
 #: kileerrorhandler.cpp:106 outputfilter.cpp:78
@@ -3295,6 +3937,21 @@ msgstr ""
 #, kde-format
 msgid "No help available for %1."
 msgstr ""
+
+#: kileinfo.cpp:311
+#, fuzzy
+msgid "Undefined"
+msgstr "Tak ditakrif"
+
+#: kileinfo.cpp:313
+#, fuzzy
+msgid "Text"
+msgstr "Teks"
+
+#: kileinfo.cpp:319
+#, fuzzy
+msgid "Script"
+msgstr "Skrip"
 
 #: kilelauncher.cpp:115 kilelauncher.cpp:372 kilelauncher.cpp:459
 #, fuzzy
@@ -3744,10 +4401,6 @@ msgstr ""
 
 #: kilestdactions.cpp:78
 msgid "Tabbing - \\begin{tabbing}"
-msgstr ""
-
-#: kilestdactions.cpp:78 kile.cpp:844 kile.cpp:2251
-msgid "Tabbing"
 msgstr ""
 
 #: kilestdactions.cpp:78
@@ -4795,10 +5448,6 @@ msgstr ""
 msgid "Array - \\begin{array}"
 msgstr ""
 
-#: kilestdactions.cpp:376 kile.cpp:843
-msgid "Array"
-msgstr ""
-
 #: kilestdactions.cpp:377
 msgid ""
 "\\begin{array}{col1col2...coln}\n"
@@ -5275,6 +5924,91 @@ msgid ""
 "to Settings->Configure Kile->Tools->ViewHTML->Advanced."
 msgstr ""
 
+#: kiletool.cpp:49
+#, kde-format
+msgid "Could not change to the folder %1."
+msgstr ""
+
+#: kiletool.cpp:50
+#, kde-format
+msgid ""
+"The folder %1 is not writable, therefore %2 will not be able to save its "
+"results."
+msgstr ""
+
+#: kiletool.cpp:51
+#, kde-format
+msgid ""
+"The file %1/%2 does not exist. If this is unexpected, check the file "
+"permissions."
+msgstr ""
+
+#: kiletool.cpp:52
+#, kde-format
+msgid ""
+"The file %1/%2 is not readable. If this is unexpected, check the file "
+"permissions."
+msgstr ""
+
+#: kiletool.cpp:53
+#, kde-format
+msgid ""
+"Could not determine on which file to run %1, because there is no active "
+"document."
+msgstr ""
+
+#: kiletool.cpp:54
+msgid "Could not determine the master file for this document."
+msgstr ""
+
+#: kiletool.cpp:55
+msgid "Please save the untitled document first."
+msgstr ""
+
+#: kiletool.cpp:56
+#, fuzzy, kde-format
+msgid "The file %1 does not exist."
+msgstr "Fail%1 tidak wujud."
+
+#: kiletool.cpp:57
+#, kde-format
+msgid "The file %1 is not readable."
+msgstr ""
+
+#: kiletool.cpp:536
+#, kde-format
+msgid "The document %1 is not a LaTeX root document; continue anyway?"
+msgstr ""
+
+#: kiletool.cpp:536
+msgid "Continue?"
+msgstr ""
+
+#: kiletool.cpp:548
+#, kde-format
+msgid "The file %1/%2 does not exist; did you compile the source file?"
+msgstr ""
+
+#: kiletool.cpp:568
+msgid ""
+"The current document is not associated to a project. Please activate a "
+"document that is associated to the project you want to archive, then choose "
+"Archive again."
+msgstr ""
+
+#: kiletool.cpp:572
+msgid "No files have been chosen for archiving."
+msgstr ""
+
+#: kiletool.cpp:587
+msgid "Archive Project"
+msgstr ""
+
+#: kiletool.cpp:653 kiletoolmanager.cpp:151
+#, kde-format
+msgid "Unknown tool %1."
+msgstr ""
+
 #: kiletoolmanager.cpp:145
 msgid "No factory installed, contact the author of Kile."
 msgstr ""
@@ -5287,928 +6021,6 @@ msgstr "Dibatalkan"
 #: kiletoolmanager.cpp:399
 #, kde-format
 msgid "Cannot find the tool \"%1\" in the configuration database."
-msgstr ""
-
-#: kiledocmanager.cpp:122
-msgid "No editor component found. Please check your KDE installation."
-msgstr ""
-
-#: kiledocmanager.cpp:123
-msgid "No editor component found."
-msgstr ""
-
-#: kiledocmanager.cpp:166
-msgid ""
-"The internal structure of Kile is corrupted (probably due to a bug in Kile). "
-"Please select Save All from the File menu and close Kile.\n"
-"The Kile team apologizes for any inconvenience and would appreciate a bug "
-"report."
-msgstr ""
-
-#: kiledocmanager.cpp:644
-#, kde-format
-msgid "Could not find template: %1"
-msgstr ""
-
-#: kiledocmanager.cpp:644
-#, fuzzy
-msgid "File Not Found"
-msgstr "Fail Tidak Dijumpai"
-
-#: kiledocmanager.cpp:702
-msgid "Please save the file first."
-msgstr ""
-
-#: kiledocmanager.cpp:707
-msgid "Open/create a document first."
-msgstr ""
-
-#: kiledocmanager.cpp:715
-msgid "A template for this type of document cannot be created."
-msgstr ""
-
-#: kiledocmanager.cpp:719
-msgid "Create Template From Document"
-msgstr ""
-
-#: kiledocmanager.cpp:725
-#, fuzzy
-msgid "Remove Template"
-msgstr "Alih Keluar Templat"
-
-#: kiledocmanager.cpp:787
-#, fuzzy
-msgid "Open Files"
-msgstr "Buka Fail"
-
-#: kiledocmanager.cpp:906
-#, kde-format
-msgid ""
-"The file %1 could not be saved, check the permissions and free disk space."
-msgstr ""
-
-#: kiledocmanager.cpp:907
-#, fuzzy
-msgid "Autosave"
-msgstr "Autosimpan"
-
-#: kiledocmanager.cpp:918
-#, kde-format
-msgid ""
-"Kile encountered problems while saving the file %1. Do you have enough free "
-"disk space left?"
-msgstr ""
-
-#: kiledocmanager.cpp:919
-msgid "Saving"
-msgstr ""
-
-#: kiledocmanager.cpp:1025
-#, fuzzy
-msgid "Save File"
-msgstr "Simpan Fail"
-
-#: kiledocmanager.cpp:1035
-#, fuzzy, kde-format
-msgid ""
-"A file with the name \"%1\" exists already. Do you want to overwrite it?"
-msgstr "Fail bernama \"%1\" telah wujud. Anda pasti ingin tulis semula?"
-
-#: kiledocmanager.cpp:1035
-#, fuzzy
-msgid "Overwrite File?"
-msgstr "&Tindih"
-
-#: kiledocmanager.cpp:1035
-#, fuzzy
-msgid "&Overwrite"
-msgstr "&Tindih"
-
-#: kiledocmanager.cpp:1258
-msgid "Refresh Project Tree"
-msgstr ""
-
-#: kiledocmanager.cpp:1266
-msgid ""
-"The current document is not associated to a project. Please activate a "
-"document that is associated to the project you want to build the tree for, "
-"then choose Refresh Project Tree again."
-msgstr ""
-
-#: kiledocmanager.cpp:1266
-msgid "Could Not Refresh Project Tree"
-msgstr ""
-
-#: kiledocmanager.cpp:1340 kiledocmanager.cpp:2036 kiledocmanager.cpp:2111
-#: kiledocmanager.cpp:2148
-msgid "Select Project"
-msgstr ""
-
-#: kiledocmanager.cpp:1364 kiledocmanager.cpp:1380 kiledocmanager.cpp:1387
-msgid "Add to Project"
-msgstr ""
-
-#: kiledocmanager.cpp:1379
-#, kde-format
-msgid "The file %1 is already member of the project %2"
-msgstr ""
-
-#: kiledocmanager.cpp:1386
-#, kde-format
-msgid ""
-"The file %1 can not be added because it does not exist or is not readable"
-msgstr ""
-
-#: kiledocmanager.cpp:1405
-msgid ""
-"This file is the project file, which holds all the information about your "
-"project.  As such, it cannot be removed from the project."
-msgstr ""
-
-#: kiledocmanager.cpp:1405
-msgid "Cannot Remove File From Project"
-msgstr ""
-
-#: kiledocmanager.cpp:1463
-msgid ""
-"The project you tried to open is already opened. If you wanted to reload the "
-"project, close the project before you re-open it."
-msgstr ""
-
-#: kiledocmanager.cpp:1463
-msgid "Project Already Open"
-msgstr ""
-
-#: kiledocmanager.cpp:1473
-#, kde-format
-msgid ""
-"The project file for the project \"%1\" does not exist or is not readable. "
-"Remove this project from the recent projects list?"
-msgstr ""
-
-#: kiledocmanager.cpp:1473
-msgid "Could Not Load Project File"
-msgstr ""
-
-#: kiledocmanager.cpp:1570
-msgid ""
-"*.kilepr|Kile Project Files\n"
-"*|All Files"
-msgstr ""
-
-#: kiledocmanager.cpp:1570
-#, fuzzy
-msgid "Open Project"
-msgstr "Buka Projek"
-
-#: kiledocmanager.cpp:1591
-msgid "Save Project"
-msgstr ""
-
-#: kiledocmanager.cpp:1643
-msgid ""
-"The current document is not associated to a project. Please activate a "
-"document that is associated to the project you want to save, then choose "
-"Save Project again."
-msgstr ""
-
-#: kiledocmanager.cpp:1643
-msgid "Could Determine Active Project"
-msgstr ""
-
-#: kiledocmanager.cpp:1666
-msgid "Add Files to Project"
-msgstr ""
-
-#: kiledocmanager.cpp:1677
-#, fuzzy
-msgid "*|All Files"
-msgstr "*|Semua Fail"
-
-#: kiledocmanager.cpp:1681
-msgid "Add Files"
-msgstr ""
-
-#: kiledocmanager.cpp:1697
-msgid ""
-"There are no projects opened. Please open the project you want to add files "
-"to, then choose Add Files again."
-msgstr ""
-
-#: kiledocmanager.cpp:1697 kiledocmanager.cpp:1732
-msgid "Could Not Determine Active Project"
-msgstr ""
-
-#: kiledocmanager.cpp:1723
-msgid "Project Options For"
-msgstr ""
-
-#: kiledocmanager.cpp:1732
-msgid ""
-"The current document is not associated to a project. Please activate a "
-"document that is associated to the project you want to modify, then choose "
-"Project Options again."
-msgstr ""
-
-#: kiledocmanager.cpp:1760
-msgid "Close Project"
-msgstr ""
-
-#: kiledocmanager.cpp:1814
-msgid ""
-"The current document is not associated to a project. Please activate a "
-"document that is associated to the project you want to close, then choose "
-"Close Project again."
-msgstr ""
-
-#: kiledocmanager.cpp:1814
-msgid "Could Not Close Project"
-msgstr ""
-
-#: kiledocmanager.cpp:1884
-#, kde-format
-msgid "Nothing to clean for %1"
-msgstr ""
-
-#: kiledocmanager.cpp:1885 kiledocmanager.cpp:1895 kile.cpp:748 kile.cpp:824
-#: kile.cpp:2089
-#, fuzzy
-msgid "Clean"
-msgstr "Bersih"
-
-#: kiledocmanager.cpp:1894
-#, kde-format
-msgid "Cleaning %1: %2"
-msgstr ""
-
-#: kiledocmanager.cpp:1944
-msgid "Switch Project"
-msgstr ""
-
-#: kiledocmanager.cpp:2003
-msgid "Select Files to Remove"
-msgstr ""
-
-#: kiledocmanager.cpp:2017 kiledocmanager.cpp:2020
-msgid "Show Project Files"
-msgstr ""
-
-#: kiledocmanager.cpp:2017 kiledocmanager.cpp:2067
-msgid "project configuration file"
-msgstr ""
-
-#: kiledocmanager.cpp:2020 kiledocmanager.cpp:2070
-msgid "graphics file"
-msgstr ""
-
-#: kiledocmanager.cpp:2067 kiledocmanager.cpp:2070
-msgid "Open All Project Files"
-msgstr ""
-
-#: kiledocmanager.cpp:2104
-#, kde-format
-msgid "not opened: %1 (%2)"
-msgstr ""
-
-#: kiledocmanager.cpp:2129 kiledocmanager.cpp:2166
-msgid "Project Files"
-msgstr ""
-
-#: kiledocmanager.cpp:2137 kiledocmanager.cpp:2175
-msgid "Could not determine the selected file."
-msgstr ""
-
-#: kiledocmanager.cpp:2137 kiledocmanager.cpp:2175
-msgid "Project Error"
-msgstr ""
-
-#: kiledocmanager.cpp:2259
-#, fuzzy
-msgid "Opening Project..."
-msgstr "Buka Projek"
-
-#: kiledocmanager.cpp:2262
-msgid "Scanning project files..."
-msgstr ""
-
-#: kile.cpp:265
-msgid ""
-"You have defined some tools in the User menu. From now on these tools will "
-"be available from the Build->Other menu and can be configured in the "
-"configuration dialog (go to the Settings menu and choose Configure Kile). "
-"This has some advantages; your own tools can now be used in a QuickBuild "
-"command if you wish."
-msgstr ""
-
-#: kile.cpp:265
-msgid "User Tools Detected"
-msgstr ""
-
-#: kile.cpp:271
-msgid ""
-"The standard tool list need to be reloaded because of the switch from KDE3 "
-"to KDE4. This will overwrite any changes in the tools you have made. Do you "
-"want to reload the list now (recommended)?"
-msgstr ""
-
-#: kile.cpp:272
-msgid "Tools need to be updated"
-msgstr ""
-
-#: kile.cpp:383
-msgid "Normal Mode"
-msgstr ""
-
-#: kile.cpp:399
-#, fuzzy
-msgid "Open File"
-msgstr "Buka Fail"
-
-#: kile.cpp:418
-msgid "Files and Projects"
-msgstr ""
-
-#: kile.cpp:444 widgets/structurewidget.cpp:135
-msgid "Structure"
-msgstr ""
-
-#: kile.cpp:457
-#, fuzzy
-msgid "Scripts"
-msgstr "Skrip"
-
-#: kile.cpp:486
-#, fuzzy
-msgid "Symbols"
-msgstr "Simbol"
-
-#: kile.cpp:489
-msgid "Most Frequently Used"
-msgstr ""
-
-#: kile.cpp:495
-msgid "Relation"
-msgstr ""
-
-#: kile.cpp:500
-msgid "Operators"
-msgstr ""
-
-#: kile.cpp:505
-msgid "Arrows"
-msgstr ""
-
-#: kile.cpp:510
-msgid "Miscellaneous Math"
-msgstr ""
-
-#: kile.cpp:515
-msgid "Miscellaneous Text"
-msgstr ""
-
-#: kile.cpp:520
-msgid "Delimiters"
-msgstr ""
-
-#: kile.cpp:525
-#, fuzzy
-msgid "Greek"
-msgstr "Greek"
-
-#. i18n: file: widgets/latexconfigwidget.ui:133
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: kile.cpp:530 rc.cpp:999
-#, fuzzy
-msgid "Special Characters"
-msgstr "Aksara Khas"
-
-#: kile.cpp:535
-msgid "Cyrillic Characters"
-msgstr ""
-
-#: kile.cpp:540
-#, fuzzy
-msgid "User Defined"
-msgstr "Pengguna Ditentukan"
-
-#: kile.cpp:545
-msgid ""
-"<p>Move the mouse over the icons to see the corresponding LaTeX commands.<br/"
-">Click on an image to insert the corresponding command, additionally "
-"pressing \"Shift\" inserts it in math mode, pressing \"Ctrl\" in curly "
-"brackets.</p>"
-msgstr ""
-
-#: kile.cpp:563 widgets/codecompletionconfigwidget.cpp:54
-#, fuzzy
-msgid "Abbreviation"
-msgstr "Kependekan"
-
-#: kile.cpp:592
-msgid "Log and Messages"
-msgstr ""
-
-#: kile.cpp:598
-#, fuzzy
-msgid "Output"
-msgstr "Keluaran"
-
-#: kile.cpp:607
-#, fuzzy
-msgid "Konsole"
-msgstr "Konsole"
-
-#: kile.cpp:691
-#, fuzzy
-msgid "Save All"
-msgstr "Simpan Semua"
-
-#: kile.cpp:692
-msgid "Save Copy As..."
-msgstr ""
-
-#: kile.cpp:693
-msgid "Create Template From Document..."
-msgstr ""
-
-#: kile.cpp:694
-msgid "&Remove Template..."
-msgstr ""
-
-#: kile.cpp:696 kile.cpp:805
-msgid "Close All"
-msgstr ""
-
-#: kile.cpp:697
-msgid "Close All Ot&hers"
-msgstr ""
-
-#: kile.cpp:698
-#, fuzzy
-msgid "S&tatistics"
-msgstr "S&tatistik"
-
-#: kile.cpp:699
-#, fuzzy
-msgid "&ASCII"
-msgstr "&ASCII"
-
-#: kile.cpp:700
-#, fuzzy
-msgid "Latin-&1 (iso 8859-1)"
-msgstr "Latin-&1 (iso 8859-1)"
-
-#: kile.cpp:701
-msgid "Latin-&2 (iso 8859-2)"
-msgstr ""
-
-#: kile.cpp:702
-msgid "Latin-&3 (iso 8859-3)"
-msgstr ""
-
-#: kile.cpp:703
-msgid "Latin-&4 (iso 8859-4)"
-msgstr ""
-
-#: kile.cpp:704
-msgid "Latin-&5 (iso 8859-5)"
-msgstr ""
-
-#: kile.cpp:705
-msgid "Latin-&9 (iso 8859-9)"
-msgstr ""
-
-#: kile.cpp:706
-msgid "&Central European (cp-1250)"
-msgstr ""
-
-#: kile.cpp:707
-msgid "&Western European (cp-1252)"
-msgstr ""
-
-#: kile.cpp:710
-msgid "Move Tab Left"
-msgstr ""
-
-#: kile.cpp:711
-msgid "Move Tab Right"
-msgstr ""
-
-#: kile.cpp:713
-msgid "Next section"
-msgstr ""
-
-#: kile.cpp:714
-msgid "Prev section"
-msgstr ""
-
-#: kile.cpp:715
-msgid "Next paragraph"
-msgstr ""
-
-#: kile.cpp:716
-msgid "Prev paragraph"
-msgstr ""
-
-#: kile.cpp:718
-msgid "Find &in Files..."
-msgstr ""
-
-#: kile.cpp:720
-msgid "Refresh Str&ucture"
-msgstr ""
-
-#: kile.cpp:723
-msgid "&New Project..."
-msgstr ""
-
-#: kile.cpp:724
-msgid "&Open Project..."
-msgstr ""
-
-#: kile.cpp:726
-#, fuzzy
-msgid "Open &Recent Project"
-msgstr "Buka Projek &Terbaru"
-
-#: kile.cpp:733
-msgid "A&dd Files to Project..."
-msgstr ""
-
-#: kile.cpp:734 widgets/projectview.cpp:832
-msgid "Refresh Project &Tree"
-msgstr ""
-
-#: kile.cpp:735 widgets/projectview.cpp:836
-#, fuzzy
-msgid "&Archive"
-msgstr "&Arkibkan"
-
-#: kile.cpp:736 widgets/projectview.cpp:834
-msgid "Project &Options"
-msgstr ""
-
-#: kile.cpp:737
-#, fuzzy
-msgid "&Close Project"
-msgstr "&Tutup Projek"
-
-#: kile.cpp:740
-msgid "&Show Projects..."
-msgstr ""
-
-#: kile.cpp:741
-msgid "Re&move Files From Project..."
-msgstr ""
-
-#: kile.cpp:742
-msgid "Show Project &Files..."
-msgstr ""
-
-#: kile.cpp:744 widgets/projectview.cpp:829
-msgid "Open All &Project Files"
-msgstr ""
-
-#: kile.cpp:745
-msgid "Find in &Project..."
-msgstr ""
-
-#: kile.cpp:749
-#, fuzzy
-msgid "&Stop"
-msgstr "&Berhenti"
-
-#: kile.cpp:752
-msgid "View Log File"
-msgstr ""
-
-#: kile.cpp:754
-msgid "Previous LaTeX Error"
-msgstr ""
-
-#: kile.cpp:756
-msgid "Next LaTeX Error"
-msgstr ""
-
-#: kile.cpp:758
-msgid "Previous LaTeX Warning"
-msgstr ""
-
-#: kile.cpp:760
-msgid "Next LaTeX Warning"
-msgstr ""
-
-#: kile.cpp:762
-msgid "Previous LaTeX BadBox"
-msgstr ""
-
-#: kile.cpp:764
-msgid "Next LaTeX BadBox"
-msgstr ""
-
-#: kile.cpp:767
-msgid "Return to Editor"
-msgstr ""
-
-#: kile.cpp:768
-msgid "Next Document"
-msgstr ""
-
-#: kile.cpp:769
-msgid "Previous Document"
-msgstr ""
-
-#: kile.cpp:770
-msgid "Focus Log/Messages View"
-msgstr ""
-
-#: kile.cpp:771
-msgid "Focus Output View"
-msgstr ""
-
-#: kile.cpp:772
-msgid "Focus Konsole View"
-msgstr ""
-
-#: kile.cpp:773
-msgid "Focus Editor View"
-msgstr ""
-
-#: kile.cpp:775
-msgctxt "@action: Starts the completion of the current LaTeX command"
-msgid "Complete (La)TeX Command"
-msgstr ""
-
-#: kile.cpp:776
-msgctxt "@action: Starts the input (and completion) of a LaTeX environment"
-msgid "Complete LaTeX Environment"
-msgstr ""
-
-#: kile.cpp:777
-msgctxt "@action: Starts the completion of the current abbreviation"
-msgid "Complete Abbreviation"
-msgstr ""
-
-#: kile.cpp:779
-msgid "Next Bullet"
-msgstr ""
-
-#: kile.cpp:780
-msgid "Prev Bullet"
-msgstr ""
-
-#: kile.cpp:783 kile.cpp:792
-msgid "Environment (inside)"
-msgstr ""
-
-#: kile.cpp:784 kile.cpp:793
-msgid "Environment (outside)"
-msgstr ""
-
-#: kile.cpp:785 kile.cpp:794
-msgid "TeX Group (inside)"
-msgstr ""
-
-#: kile.cpp:786 kile.cpp:795
-msgid "TeX Group (outside)"
-msgstr ""
-
-#: kile.cpp:787 kile.cpp:796
-msgid "Math Group"
-msgstr ""
-
-#: kile.cpp:788 kile.cpp:797
-#, fuzzy
-msgid "Paragraph"
-msgstr "Perenggan"
-
-#: kile.cpp:789
-#, fuzzy
-msgid "Line"
-msgstr "Garis"
-
-#: kile.cpp:790 kile.cpp:799
-msgid "TeX Word"
-msgstr ""
-
-#: kile.cpp:798
-msgid "To End of Line"
-msgstr ""
-
-#: kile.cpp:801 kile.cpp:807
-msgid "Go to Begin"
-msgstr ""
-
-#: kile.cpp:802 kile.cpp:808
-msgid "Go to End"
-msgstr ""
-
-#: kile.cpp:803 kile.cpp:809
-#, fuzzy
-msgid "Match"
-msgstr "Padan"
-
-#: kile.cpp:804 kile.cpp:810
-#, fuzzy
-msgid "Close"
-msgstr "Tutup"
-
-#: kile.cpp:812
-#, fuzzy
-msgid "Selection"
-msgstr "Pilihan"
-
-#: kile.cpp:814
-msgid "Subdocument"
-msgstr ""
-
-#: kile.cpp:815
-msgid "Mathgroup"
-msgstr ""
-
-#: kile.cpp:820
-msgid "&Bibliography"
-msgstr ""
-
-#. i18n: file: kileui.rc:477
-#. i18n: ectx: Menu (settings)
-#: kile.cpp:826 rc.cpp:819
-#, fuzzy
-msgid "&Settings"
-msgstr "&Tetapan"
-
-#: kile.cpp:829
-msgid "Settings for BibTeX"
-msgstr ""
-
-#: kile.cpp:833
-msgid "Settings for Biblatex"
-msgstr ""
-
-#: kile.cpp:840 kile.cpp:2199
-msgid "Quick Start"
-msgstr ""
-
-#: kile.cpp:845
-msgid "Floats"
-msgstr ""
-
-#: kile.cpp:849
-msgid "Define Current Document as '&Master Document'"
-msgstr ""
-
-#: kile.cpp:854
-msgid "Show S&ide Bar"
-msgstr ""
-
-#: kile.cpp:860
-msgid "Show Mess&ages Bar"
-msgstr ""
-
-#: kile.cpp:872
-msgid "Watch File Mode"
-msgstr ""
-
-#: kile.cpp:889
-msgid "TeX Guide"
-msgstr ""
-
-#: kile.cpp:891
-#, fuzzy
-msgid "LaTeX Command"
-msgstr "Arahan LaTeX"
-
-#: kile.cpp:892
-msgid "LaTeX Subject"
-msgstr ""
-
-#: kile.cpp:893
-msgid "LaTeX Env"
-msgstr ""
-
-#: kile.cpp:894
-#, fuzzy
-msgid "Context Help"
-msgstr "Bantuan Konteks"
-
-#: kile.cpp:897
-msgid "LaTeX Reference"
-msgstr ""
-
-#: kile.cpp:902
-msgid "&About Editor Component"
-msgstr ""
-
-#: kile.cpp:910
-msgid "&System Check..."
-msgstr ""
-
-#: kile.cpp:929
-msgid "Biblatex"
-msgstr ""
-
-#: kile.cpp:1081 widgets/toolconfigwidget.cpp:76
-msgid "Compile"
-msgstr ""
-
-#: kile.cpp:1082 widgets/toolconfigwidget.cpp:78
-#, fuzzy
-msgid "View"
-msgstr "Lihat"
-
-#: kile.cpp:1083 widgets/toolconfigwidget.cpp:77
-#, fuzzy
-msgid "Convert"
-msgstr "Tukar"
-
-#: kile.cpp:1084 widgets/toolconfigwidget.cpp:75
-#, fuzzy
-msgid "Quick"
-msgstr "Cepat"
-
-#: kile.cpp:1203
-msgid "Edit User Tags..."
-msgstr ""
-
-#: kile.cpp:1377
-#, kde-format
-msgid "Project: %1"
-msgstr ""
-
-#: kile.cpp:1380
-#, kde-format
-msgid "Project: %1 (Master document: %2)"
-msgstr ""
-
-#: kile.cpp:1386
-msgid "Normal mode"
-msgstr ""
-
-#: kile.cpp:1389
-#, kde-format
-msgid "Master document: %1"
-msgstr ""
-
-#: kile.cpp:1394 kile.cpp:2548
-msgid "Define Current Document as 'Master Document'"
-msgstr ""
-
-#: kile.cpp:1398 kile.cpp:2541
-#, kde-format
-msgid "Normal mode (current master document: %1)"
-msgstr ""
-
-#: kile.cpp:2082
-msgid "There is no active document or it is not saved."
-msgstr ""
-
-#: kile.cpp:2170
-#, kde-format
-msgid "You have to include the package %1."
-msgstr ""
-
-#: kile.cpp:2170 kile.cpp:2173
-msgid "Insert text"
-msgstr ""
-
-#: kile.cpp:2173
-#, kde-format
-msgid "You have to include the packages %1."
-msgstr ""
-
-#: kile.cpp:2313
-msgid "Edit User Tags"
-msgstr ""
-
-#: kile.cpp:2337 kile.cpp:2375
-msgid "no name"
-msgstr ""
-
-#: kile.cpp:2564
-msgid ""
-"In order to define the current document as a master document, it has to be "
-"saved first."
-msgstr ""
-
-#: kile.cpp:2619
-msgid ""
-"Please turn off the 'Master Document' mode before performing the System "
-"Check."
-msgstr ""
-
-#: kile.cpp:2869
-#, fuzzy, kde-format
-msgid "Line: %1 Col: %2"
-msgstr "Baris: %1 Lajur: %2"
-
-#: kile.cpp:2897
-msgctxt "@info:status status bar label for block selection mode"
-msgid "BLOCK"
-msgstr ""
-
-#: kile.cpp:2898
-msgctxt "@info:status status bar label for line selection mode"
-msgid "LINE"
 msgstr ""
 
 #: kileviewmanager.cpp:92
@@ -6238,6 +6050,121 @@ msgstr ""
 
 #: kileviewmanager.cpp:520
 msgid "&QuickPreview Math"
+msgstr ""
+
+#: main.cpp:77
+msgid "StandardInput.tex"
+msgstr ""
+
+#: main.cpp:109
+msgid "KDE Integrated LaTeX Environment"
+msgstr ""
+
+#: main.cpp:111
+msgid "by the Kile Team (2003 - 2011)"
+msgstr ""
+
+#: main.cpp:114
+msgid "Michel Ludwig"
+msgstr ""
+
+#: main.cpp:114
+msgid "Project Management/Developer"
+msgstr ""
+
+#: main.cpp:115
+msgid "Thomas Braun"
+msgstr ""
+
+#: main.cpp:115 main.cpp:116
+#, fuzzy
+msgid "Former Developer"
+msgstr "pemaju"
+
+#: main.cpp:116
+msgid "Holger Danielsson"
+msgstr ""
+
+#: main.cpp:117
+msgid "Jeroen Wijnhout"
+msgstr ""
+
+#: main.cpp:117
+msgid "Former Maintainer/Developer"
+msgstr ""
+
+#: main.cpp:118
+msgid "Brachet Pascal"
+msgstr ""
+
+#: main.cpp:120
+msgid "Andrius Štikonas"
+msgstr ""
+
+#: main.cpp:120
+msgid "Migration from Subversion to Git"
+msgstr ""
+
+#: main.cpp:121
+msgid "Simon Martin"
+msgstr ""
+
+#: main.cpp:121
+msgid "KConfig XT, Various Improvements and Bug-Fixing"
+msgstr ""
+
+#: main.cpp:122
+msgid "Roland Schulz"
+msgstr ""
+
+#: main.cpp:122
+msgid "KatePart Integration"
+msgstr ""
+
+#: main.cpp:123
+msgid "Thorsten Lück"
+msgstr ""
+
+#: main.cpp:123
+msgid "Log Parsing"
+msgstr ""
+
+#: main.cpp:124
+msgid "Jan-Marek Glogowski"
+msgstr ""
+
+#: main.cpp:124
+#, fuzzy
+msgid "Find-in-Files Dialog"
+msgstr "Cari dalam Fail"
+
+#: main.cpp:125
+msgid "Jonathan Pechta"
+msgstr ""
+
+#: main.cpp:125 main.cpp:126
+#, fuzzy
+msgid "Documentation"
+msgstr "Dokumentasi"
+
+#: main.cpp:126
+msgid "Federico Zenith"
+msgstr ""
+
+#: main.cpp:130
+msgid "Jump to line"
+msgstr ""
+
+#: main.cpp:131
+msgid "Start a new Kile mainwindow"
+msgstr ""
+
+#: main.cpp:132
+msgid "Files to open"
+msgstr ""
+
+#: main.cpp:133
+msgid "Read from stdin"
 msgstr ""
 
 #: quickpreview.cpp:41
@@ -6410,7 +6337,7 @@ msgstr ""
 
 #. i18n: file: widgets/quicktoolconfigwidget.ui:91
 #. i18n: ectx: property (text), widget (KPushButton, m_pshbAdd)
-#: widgets/abbreviationview.cpp:111 rc.cpp:1164
+#: widgets/abbreviationview.cpp:111 rc.cpp:1212
 #, fuzzy
 msgid "&Add"
 msgstr "T&ambah"
@@ -6436,13 +6363,108 @@ msgstr ""
 msgid "Delete Abbreviation"
 msgstr ""
 
+#: widgets/codecompletionconfigwidget.cpp:52
+#, fuzzy
+msgid "TeX/LaTeX"
+msgstr "TeX/LaTeX"
+
+#: widgets/codecompletionconfigwidget.cpp:53
+#, fuzzy
+msgid "Dictionary"
+msgstr "Kamus"
+
+#: widgets/codecompletionconfigwidget.cpp:56
+msgid "Try to place the cursor."
+msgstr ""
+
+#: widgets/codecompletionconfigwidget.cpp:57
+msgid "Insert bullets where the user must input data."
+msgstr ""
+
+#: widgets/codecompletionconfigwidget.cpp:58
+msgid "Also close an environment when an opening command is inserted."
+msgstr ""
+
+#: widgets/codecompletionconfigwidget.cpp:59
+msgid ""
+"Directional or popup-based completion of the TeX/LaTeX commands that are "
+"contained in the selected completion files."
+msgstr ""
+
+#: widgets/codecompletionconfigwidget.cpp:60
+msgid ""
+"Automatically show a completion list of TeX/LaTeX commands when the word has "
+"this length."
+msgstr ""
+
+#: widgets/codecompletionconfigwidget.cpp:61
+msgid "Move cursor out of braces after selecting from a citation keylist."
+msgstr ""
+
+#: widgets/codecompletionconfigwidget.cpp:63
+msgid "Show abbreviations of the selected completion files in the sidebar"
+msgstr ""
+
+#: widgets/codecompletionconfigwidget.cpp:64
+msgid ""
+"Directional or popup-based completion of abbreviations that are contained in "
+"the selected completion files."
+msgstr ""
+
+#: widgets/codecompletionconfigwidget.cpp:65
+msgid "Show LaTeX commands of the selected completion files in the sidebar"
+msgstr ""
+
+#: widgets/codecompletionconfigwidget.cpp:66
+msgid "Maximum number of completion files, which can be shown in the sidebar."
+msgstr ""
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:90
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: widgets/codecompletionconfigwidget.cpp:85 rc.cpp:852
+msgid "Completion Files"
+msgstr ""
+
+#: widgets/codecompletionconfigwidget.cpp:86
+#, fuzzy
+msgid "Local File"
+msgstr "Fail Setempat"
+
+#: widgets/codecompletionconfigwidget.cpp:203
+#, fuzzy
+msgid "File not found"
+msgstr "Fail tidak ditemui"
+
+#: widgets/codecompletionconfigwidget.cpp:355
+msgid "Complete Files"
+msgstr ""
+
+#: widgets/codecompletionconfigwidget.cpp:355
+msgid "Select Files"
+msgstr ""
+
+#: widgets/codecompletionconfigwidget.cpp:369
+#, kde-format
+msgid "Wordlist '%1' is already used."
+msgstr ""
+
+#: widgets/commandview.cpp:99
+#, fuzzy
+msgid "LaTeX commands"
+msgstr "Arahan LaTeX"
+
+#: widgets/commandview.cpp:103
+#, fuzzy
+msgid "No wordlists chosen"
+msgstr "Tiada fail bantuan telah dipilih."
+
 #: widgets/filebrowserwidget.cpp:120
 msgid "Open selected"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:127
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: widgets/filebrowserwidget.cpp:126 rc.cpp:1203
+#: widgets/filebrowserwidget.cpp:126 rc.cpp:1251
 #, fuzzy
 msgid "Options"
 msgstr "Pilihan"
@@ -6862,6 +6884,26 @@ msgstr ""
 msgid "Only the label"
 msgstr ""
 
+#: widgets/symbolview.cpp:203
+msgid "Command: "
+msgstr ""
+
+#: widgets/symbolview.cpp:205
+msgid "Unicode command: "
+msgstr ""
+
+#: widgets/symbolview.cpp:210
+msgid "Package: "
+msgstr ""
+
+#: widgets/symbolview.cpp:213
+msgid "Packages: "
+msgstr ""
+
+#: widgets/symbolview.cpp:231
+msgid "Comment: "
+msgstr ""
+
 #: widgets/toolconfigwidget.cpp:111
 msgid "Run Outside of Kile"
 msgstr ""
@@ -6926,183 +6968,6 @@ msgstr ""
 
 #: widgets/toolconfigwidget.cpp:520
 msgid "Cannot Remove Configuration"
-msgstr ""
-
-#: widgets/commandview.cpp:99
-#, fuzzy
-msgid "LaTeX commands"
-msgstr "Arahan LaTeX"
-
-#: widgets/commandview.cpp:103
-#, fuzzy
-msgid "No wordlists chosen"
-msgstr "Tiada fail bantuan telah dipilih."
-
-#: widgets/symbolview.cpp:203
-msgid "Command: "
-msgstr ""
-
-#: widgets/symbolview.cpp:205
-msgid "Unicode command: "
-msgstr ""
-
-#: widgets/symbolview.cpp:210
-msgid "Package: "
-msgstr ""
-
-#: widgets/symbolview.cpp:213
-msgid "Packages: "
-msgstr ""
-
-#: widgets/symbolview.cpp:231
-msgid "Comment: "
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:52
-#, fuzzy
-msgid "TeX/LaTeX"
-msgstr "TeX/LaTeX"
-
-#: widgets/codecompletionconfigwidget.cpp:53
-#, fuzzy
-msgid "Dictionary"
-msgstr "Kamus"
-
-#: widgets/codecompletionconfigwidget.cpp:56
-msgid "Try to place the cursor."
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:57
-msgid "Insert bullets where the user must input data."
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:58
-msgid "Also close an environment when an opening command is inserted."
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:59
-msgid ""
-"Directional or popup-based completion of the TeX/LaTeX commands that are "
-"contained in the selected completion files."
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:60
-msgid ""
-"Automatically show a completion list of TeX/LaTeX commands when the word has "
-"this length."
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:61
-msgid "Move cursor out of braces after selecting from a citation keylist."
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:63
-msgid "Show abbreviations of the selected completion files in the sidebar"
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:64
-msgid ""
-"Directional or popup-based completion of abbreviations that are contained in "
-"the selected completion files."
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:65
-msgid "Show LaTeX commands of the selected completion files in the sidebar"
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:66
-msgid "Maximum number of completion files, which can be shown in the sidebar."
-msgstr ""
-
-#. i18n: file: widgets/codecompletionconfigwidget.ui:90
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: widgets/codecompletionconfigwidget.cpp:85 rc.cpp:1296
-msgid "Completion Files"
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:86
-#, fuzzy
-msgid "Local File"
-msgstr "Fail Setempat"
-
-#: widgets/codecompletionconfigwidget.cpp:203
-#, fuzzy
-msgid "File not found"
-msgstr "Fail tidak ditemui"
-
-#: widgets/codecompletionconfigwidget.cpp:355
-msgid "Complete Files"
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:355
-msgid "Select Files"
-msgstr ""
-
-#: widgets/codecompletionconfigwidget.cpp:369
-#, kde-format
-msgid "Wordlist '%1' is already used."
-msgstr ""
-
-#: abbreviationmanager.cpp:98
-#, kde-format
-msgid ""
-"Could not save the local abbreviation list.\n"
-"Error code %1."
-msgstr ""
-
-#: abbreviationmanager.cpp:99
-msgid "Saving Problem"
-msgstr ""
-
-#: editorextension.cpp:63
-msgid "English quotes:   ``   &apos;&apos;"
-msgstr ""
-
-#: editorextension.cpp:64
-msgid "French quotes:   &quot;&lt;   &quot;&gt;"
-msgstr ""
-
-#: editorextension.cpp:65
-msgid "German quotes:   &quot;`   &quot;&apos;"
-msgstr ""
-
-#: editorextension.cpp:66
-msgid "French quotes (long):   \\flqq   \\frqq"
-msgstr ""
-
-#: editorextension.cpp:67
-msgid "German quotes (long):   \\glqq   \\grqq"
-msgstr ""
-
-#: editorextension.cpp:68
-msgid "Icelandic quotes (v1):   \\ilqq   \\irqq"
-msgstr ""
-
-#: editorextension.cpp:69
-msgid "Icelandic quotes (v2):   \\iflqq   \\ifrqq"
-msgstr ""
-
-#: editorextension.cpp:70
-msgid "Czech quotes:   \\uv{   }"
-msgstr ""
-
-#: editorextension.cpp:71
-msgid "csquotes package:   \\enquote{   }"
-msgstr ""
-
-#: editorextension.cpp:2783
-#, kde-format
-msgid "You have to include the package %1 to use %2."
-msgstr ""
-
-#: editorextension.cpp:3033
-msgid ""
-"The document was modified and the structure view should be updated, before "
-"starting such an operation."
-msgstr ""
-
-#: editorextension.cpp:3034
-msgid "Structure View Error"
 msgstr ""
 
 #: rc.cpp:1
@@ -7248,7 +7113,7 @@ msgstr "Sudut:"
 #. i18n: ectx: property (text), widget (QLabel, label_24)
 #. i18n: file: widgets/graphicsconfigwidget.ui:60
 #. i18n: ectx: property (text), widget (QLabel, m_tlBbox)
-#: rc.cpp:74 rc.cpp:936
+#: rc.cpp:74 rc.cpp:984
 msgid "Bounding box:"
 msgstr ""
 
@@ -7513,7 +7378,7 @@ msgstr "Parameter"
 #. i18n: ectx: attribute (title), widget (QWidget, pageCommands)
 #. i18n: file: widgets/latexconfigwidget.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, m_bgCommands)
-#: rc.cpp:230 rc.cpp:981
+#: rc.cpp:230 rc.cpp:1029
 #, fuzzy
 msgid "Commands"
 msgstr "Arahan"
@@ -8578,186 +8443,270 @@ msgstr "Utama"
 msgid "Edit"
 msgstr "Sunting"
 
+#. i18n: file: widgets/codecompletionconfigwidget.ui:17
+#. i18n: ectx: property (title), widget (QGroupBox, cb_autocomplete)
+#: rc.cpp:840
+msgid "Auto completion for LaTeX markup"
+msgstr ""
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:31
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:843
+#, fuzzy
+msgid "Threshold:"
+msgstr "Ambang:"
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:51
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:846
+msgid "letters"
+msgstr ""
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:76
+#. i18n: ectx: property (title), widget (QGroupBox, cb_autocompleteabbrev)
+#: rc.cpp:849
+msgid "Auto completion for abbreviations"
+msgstr ""
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:117
+#. i18n: ectx: property (text), widget (KPushButton, m_addFileButton)
+#: rc.cpp:855
+#, fuzzy
+msgid "Add..."
+msgstr "Tambah..."
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:146
+#. i18n: ectx: property (text), widget (QCheckBox, cb_showcwlview)
+#: rc.cpp:861
+#, fuzzy
+msgid "Show LaTeX commands"
+msgstr "Arahan LaTeX"
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:161
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:864
+msgid "Show a maximum of"
+msgstr ""
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:187
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:867
+#, fuzzy
+#| msgid "Files"
+msgid "files"
+msgstr "Fail"
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:209
+#. i18n: ectx: property (text), widget (QCheckBox, cb_showabbrevview)
+#: rc.cpp:870
+msgid "Show abbreviations"
+msgstr ""
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:219
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:873
+#, fuzzy
+msgid "Completion Properties"
+msgstr "Ciri-ciri"
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:228
+#. i18n: ectx: property (text), widget (QCheckBox, cb_setcursor)
+#: rc.cpp:876
+msgid "Place cursor"
+msgstr ""
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:242
+#. i18n: ectx: property (text), widget (QCheckBox, cb_closeenv)
+#: rc.cpp:882
+msgid "Close environments"
+msgstr ""
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:249
+#. i18n: ectx: property (text), widget (QCheckBox, cb_citeoutofbraces)
+#: rc.cpp:885
+msgid "Move out of braces (citation keylists)"
+msgstr ""
+
 #. i18n: file: widgets/configcheckerwidget.ui:25
 #. i18n: ectx: property (windowTitle), widget (QWidget, ConfigCheckerWidget)
-#: rc.cpp:840
+#: rc.cpp:888
 msgid "Performing System Check"
 msgstr ""
 
 #. i18n: file: widgets/configcheckerwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, m_lbChecking)
-#: rc.cpp:843
+#: rc.cpp:891
 msgid "Checking if your TeX system is installed correctly..."
 msgstr ""
 
 #. i18n: file: widgets/configcheckerwidget.ui:54
 #. i18n: ectx: property (title), widget (QGroupBox, m_grpResults)
-#: rc.cpp:846
+#: rc.cpp:894
 #, fuzzy
 msgid "Results"
 msgstr "Keputusan"
 
 #. i18n: file: widgets/environmentconfigwidget.ui:31
 #. i18n: ectx: property (title), widget (QGroupBox, m_bgEnv)
-#: rc.cpp:852
+#: rc.cpp:900
 msgid "Complete Environments"
 msgstr ""
 
 #. i18n: file: widgets/environmentconfigwidget.ui:40
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_CompleteEnvironment)
-#: rc.cpp:855
+#: rc.cpp:903
 msgid "Automatically complete \\begin{env} with \\end{env}"
 msgstr ""
 
 #. i18n: file: widgets/environmentconfigwidget.ui:56
 #. i18n: ectx: property (title), widget (QGroupBox, m_bgGraphics)
-#: rc.cpp:858
+#: rc.cpp:906
 msgid "Automatic Indentation Inside Environments"
 msgstr ""
 
 #. i18n: file: widgets/environmentconfigwidget.ui:65
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_envIndentation)
-#: rc.cpp:861
+#: rc.cpp:909
 msgid "Enable auto indentation of environments."
 msgstr ""
 
 #. i18n: file: widgets/environmentconfigwidget.ui:68
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_envIndentation)
-#: rc.cpp:864
+#: rc.cpp:912
 msgid "Activated"
 msgstr ""
 
 #. i18n: file: widgets/environmentconfigwidget.ui:75
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_envIndentSpaces)
-#: rc.cpp:867
+#: rc.cpp:915
 msgid "Use spaces instead of a tabulator to autoindent environments."
 msgstr ""
 
 #. i18n: file: widgets/environmentconfigwidget.ui:78
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_envIndentSpaces)
-#: rc.cpp:870
+#: rc.cpp:918
 msgid "Use spaces instead of tabs to indent"
 msgstr ""
 
 #. i18n: file: widgets/environmentconfigwidget.ui:87
 #. i18n: ectx: property (text), widget (QLabel, m_lbNumSpaces)
-#: rc.cpp:873
+#: rc.cpp:921
 #, fuzzy
 msgid "Number of spaces:"
 msgstr "Jumlah ruang:"
 
 #. i18n: file: widgets/environmentconfigwidget.ui:128
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_envIndentNumSpaces)
-#: rc.cpp:876
+#: rc.cpp:924
 msgid "Use this number of spaces to autoindent environments."
 msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:43
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:885
+#: rc.cpp:933
 msgid "&Default project location:"
 msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:61
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Restore)
-#: rc.cpp:888
+#: rc.cpp:936
 msgid "&Reopen files and projects on startup"
 msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:77
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:891
+#: rc.cpp:939
 msgid "Autosave Options"
 msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:86
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Autosave)
-#: rc.cpp:894
+#: rc.cpp:942
 msgid "Auto&save"
 msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:95
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:897
+#: rc.cpp:945
 msgid "Interval &time in minutes (1 - 9999):"
 msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:132
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
-#: rc.cpp:900
+#: rc.cpp:948
 msgid "Template Variables"
 msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:163
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:906
+#: rc.cpp:954
 msgid "&Document class options:"
 msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:176
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:909
+#: rc.cpp:957
 msgid "Input &encoding:"
 msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:192
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox4)
-#: rc.cpp:912
+#: rc.cpp:960
 msgid "File Clean-Up Details"
 msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:201
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_CleanUpAfterClose)
-#: rc.cpp:915
+#: rc.cpp:963
 msgid "Automatically clean-up files after close"
 msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:214
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_RunLyxServer)
-#: rc.cpp:918
+#: rc.cpp:966
 msgid "Let Kile process LyX commands sent by bibliography editors/viewers"
 msgstr ""
 
 #. i18n: file: widgets/generalconfigwidget.ui:221
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowSplashScreen)
-#: rc.cpp:921
+#: rc.cpp:969
 msgid "Show splash screen on startup"
 msgstr ""
 
 #. i18n: file: widgets/graphicsconfigwidget.ui:28
 #. i18n: ectx: property (text), widget (QLabel, m_tlResolution)
-#: rc.cpp:930
+#: rc.cpp:978
 msgid "Default resolution:"
 msgstr ""
 
 #. i18n: file: widgets/graphicsconfigwidget.ui:50
 #. i18n: ectx: property (text), widget (QLabel, m_tlResolutionHelp)
-#: rc.cpp:933
+#: rc.cpp:981
 msgid "(used when the picture offers no resolution)"
 msgstr ""
 
 #. i18n: file: widgets/graphicsconfigwidget.ui:79
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_boundingbox)
-#: rc.cpp:939
+#: rc.cpp:987
 msgid "Tr&y to determine from the picture"
 msgstr ""
 
 #. i18n: file: widgets/graphicsconfigwidget.ui:92
 #. i18n: ectx: property (text), widget (QLabel, m_tlBBoxHelp)
-#: rc.cpp:942
+#: rc.cpp:990
 msgid "(you have to install the ImageMagick package to use this option)"
 msgstr ""
 
 #. i18n: file: widgets/graphicsconfigwidget.ui:102
 #. i18n: ectx: property (text), widget (QLabel, m_tlImageMagick)
-#: rc.cpp:945
+#: rc.cpp:993
 #, fuzzy
 msgid "ImageMagick:"
 msgstr "ImageMagick:"
 
 #. i18n: file: widgets/helpconfigwidget.ui:28
 #. i18n: ectx: property (whatsThis), widget (QLabel, m_lbLocation)
-#: rc.cpp:951
+#: rc.cpp:999
 msgid ""
 "Insert the path to the TeX documentation directory here. For example /usr/"
 "share/texmf/doc."
@@ -8765,69 +8714,69 @@ msgstr ""
 
 #. i18n: file: widgets/helpconfigwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, m_lbLocation)
-#: rc.cpp:954
+#: rc.cpp:1002
 msgid "&Location of TeX documentation:"
 msgstr ""
 
 #. i18n: file: widgets/helpconfigwidget.ui:55
 #. i18n: ectx: property (title), widget (QGroupBox, m_gbContextHelp)
-#: rc.cpp:957
+#: rc.cpp:1005
 msgid "Context Sensitive Help"
 msgstr ""
 
 #. i18n: file: widgets/helpconfigwidget.ui:64
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_kilerefs)
-#: rc.cpp:960
+#: rc.cpp:1008
 msgid "Use the &Kile LaTeX reference"
 msgstr ""
 
 #. i18n: file: widgets/helpconfigwidget.ui:77
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_texrefs)
-#: rc.cpp:963
+#: rc.cpp:1011
 msgid "Use your system's &TeX documentation"
 msgstr ""
 
 #. i18n: file: widgets/helpconfigwidget.ui:107
 #. i18n: ectx: property (text), widget (QPushButton, m_pbConfigure)
-#: rc.cpp:969
+#: rc.cpp:1017
 #, fuzzy
 msgid "Con&figure..."
 msgstr "Selaraska&n..."
 
 #. i18n: file: widgets/helpconfigwidget.ui:129
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_embedded)
-#: rc.cpp:972
+#: rc.cpp:1020
 msgid "Use &embedded viewer"
 msgstr ""
 
 #. i18n: file: widgets/helpconfigwidget.ui:136
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_external)
-#: rc.cpp:975
+#: rc.cpp:1023
 msgid "Show help file in a &separate window"
 msgstr ""
 
 #. i18n: file: widgets/latexconfigwidget.ui:37
 #. i18n: ectx: property (text), widget (QPushButton, m_pbCommands)
-#: rc.cpp:984
+#: rc.cpp:1032
 #, fuzzy
 msgid "Configure..."
 msgstr "Tetapkan..."
 
 #. i18n: file: widgets/latexconfigwidget.ui:50
 #. i18n: ectx: property (text), widget (QLabel, m_tlCommands)
-#: rc.cpp:987
+#: rc.cpp:1035
 msgid "Configure LaTeX environments and commands"
 msgstr ""
 
 #. i18n: file: widgets/latexconfigwidget.ui:71
 #. i18n: ectx: property (title), widget (QGroupBox, m_bgQuotes)
-#: rc.cpp:990
+#: rc.cpp:1038
 msgid "Double Quotes"
 msgstr ""
 
 #. i18n: file: widgets/latexconfigwidget.ui:80
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_InsertDoubleQuotes)
-#: rc.cpp:993
+#: rc.cpp:1041
 msgid "Automatically insert opening and closing double &quotes for LaTeX"
 msgstr ""
 
@@ -8835,14 +8784,14 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, m_tlType)
 #. i18n: file: widgets/maintoolconfigwidget.ui:350
 #. i18n: ectx: property (text), widget (QLabel, m_lbType)
-#: rc.cpp:996 rc.cpp:1083
+#: rc.cpp:1044 rc.cpp:1131
 #, fuzzy
 msgid "&Type:"
 msgstr "&Jenis:"
 
 #. i18n: file: widgets/latexconfigwidget.ui:142
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_InsertSpecialCharacters)
-#: rc.cpp:1002
+#: rc.cpp:1050
 msgid ""
 "This option will insert the LaTeX equivalent of most special characters that "
 "can be typed on a keyboard."
@@ -8850,7 +8799,7 @@ msgstr ""
 
 #. i18n: file: widgets/latexconfigwidget.ui:145
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_InsertSpecialCharacters)
-#: rc.cpp:1005
+#: rc.cpp:1053
 msgid ""
 "Automatically insert the LaTeX equivalent of special characters when typing "
 "(accents, etc)"
@@ -8858,99 +8807,99 @@ msgstr ""
 
 #. i18n: file: widgets/latexconfigwidget.ui:161
 #. i18n: ectx: property (title), widget (QGroupBox, m_bgMathmode)
-#: rc.cpp:1008
+#: rc.cpp:1056
 msgid "Math mode"
 msgstr ""
 
 #. i18n: file: widgets/latexconfigwidget.ui:170
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_autoInsertDollar)
-#: rc.cpp:1011
+#: rc.cpp:1059
 msgid "Auto insert $"
 msgstr ""
 
 #. i18n: file: widgets/latexconfigwidget.ui:189
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
-#: rc.cpp:1014
+#: rc.cpp:1062
 msgid "Environment Variables"
 msgstr ""
 
 #. i18n: file: widgets/latexconfigwidget.ui:201
 #. i18n: ectx: property (text), widget (QLabel, m_tlPath)
-#: rc.cpp:1017
+#: rc.cpp:1065
 msgid "TEXINPUTS:"
 msgstr ""
 
 #. i18n: file: widgets/latexconfigwidget.ui:220
 #. i18n: ectx: property (text), widget (QLabel, m_bibinputpath)
-#: rc.cpp:1020
+#: rc.cpp:1068
 msgid "BIBINPUTS:"
 msgstr ""
 
 #. i18n: file: widgets/latexconfigwidget.ui:239
 #. i18n: ectx: property (text), widget (QLabel, m_bstinputpath)
-#: rc.cpp:1023
+#: rc.cpp:1071
 msgid "B&STINPUTS:"
 msgstr ""
 
 #. i18n: file: widgets/latextoolconfigwidget.ui:25
 #. i18n: ectx: property (toolTip), widget (QCheckBox, m_ckRootDoc)
-#: rc.cpp:1026
+#: rc.cpp:1074
 msgid "Check if root document is a LaTeX root before running LaTeX on it"
 msgstr ""
 
 #. i18n: file: widgets/latextoolconfigwidget.ui:28
 #. i18n: ectx: property (text), widget (QCheckBox, m_ckRootDoc)
-#: rc.cpp:1029
+#: rc.cpp:1077
 msgid "Check if &root document"
 msgstr ""
 
 #. i18n: file: widgets/latextoolconfigwidget.ui:35
 #. i18n: ectx: property (toolTip), widget (QCheckBox, m_ckJump)
-#: rc.cpp:1032
+#: rc.cpp:1080
 msgid "Jump to first error in case running LaTeX failed"
 msgstr ""
 
 #. i18n: file: widgets/latextoolconfigwidget.ui:38
 #. i18n: ectx: property (text), widget (QCheckBox, m_ckJump)
-#: rc.cpp:1035
+#: rc.cpp:1083
 msgid "&Jump to first error"
 msgstr ""
 
 #. i18n: file: widgets/latextoolconfigwidget.ui:45
 #. i18n: ectx: property (toolTip), widget (QCheckBox, m_ckAutoRun)
-#: rc.cpp:1038
+#: rc.cpp:1086
 msgid ""
 "Automatically run Asymptote, BibTeX, MakeIndex and rerun LaTeX when necessary"
 msgstr ""
 
 #. i18n: file: widgets/latextoolconfigwidget.ui:48
 #. i18n: ectx: property (text), widget (QCheckBox, m_ckAutoRun)
-#: rc.cpp:1041
+#: rc.cpp:1089
 msgid "Automatically run additional tools"
 msgstr ""
 
 #. i18n: file: widgets/librarytoolconfigwidget.ui:34
 #. i18n: ectx: property (text), widget (QLabel, m_lbLibrary)
-#: rc.cpp:1044
+#: rc.cpp:1092
 #, fuzzy
 msgid "&Library:"
 msgstr "&Pustaka:"
 
 #. i18n: file: widgets/librarytoolconfigwidget.ui:50
 #. i18n: ectx: property (text), widget (QLabel, m_lbLibClass)
-#: rc.cpp:1047
+#: rc.cpp:1095
 msgid "Library c&lass:"
 msgstr ""
 
 #. i18n: file: widgets/librarytoolconfigwidget.ui:66
 #. i18n: ectx: property (text), widget (QLabel, m_lbOptions)
-#: rc.cpp:1050
+#: rc.cpp:1098
 msgid "&Options:"
 msgstr ""
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:45
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1056
+#: rc.cpp:1104
 msgid "Select a tool"
 msgstr ""
 
@@ -8958,133 +8907,133 @@ msgstr ""
 #. i18n: ectx: property (text), widget (KPushButton, m_pshbNewTool)
 #. i18n: file: widgets/maintoolconfigwidget.ui:203
 #. i18n: ectx: property (text), widget (KPushButton, m_pshbNewConfig)
-#: rc.cpp:1059 rc.cpp:1071
+#: rc.cpp:1107 rc.cpp:1119
 #, fuzzy
 msgid "New..."
 msgstr "Baru..."
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:130
 #. i18n: ectx: property (title), widget (QGroupBox, m_groupBox)
-#: rc.cpp:1065
+#: rc.cpp:1113
 msgid "Choose a configuration for the current tool"
 msgstr ""
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:159
 #. i18n: ectx: property (text), widget (QLabel, m_lbConfig)
-#: rc.cpp:1068
+#: rc.cpp:1116
 msgid "Select:"
 msgstr ""
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:325
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:1080
+#: rc.cpp:1128
 #, fuzzy
 msgid "Advanced"
 msgstr "Lanjutan"
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:373
 #. i18n: ectx: property (text), widget (QLabel, m_lbClass)
-#: rc.cpp:1086
+#: rc.cpp:1134
 msgid "C&lass:"
 msgstr ""
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, m_lbSource)
-#: rc.cpp:1089
+#: rc.cpp:1137
 msgid "&Source extension:"
 msgstr ""
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:419
 #. i18n: ectx: property (text), widget (QLabel, m_lbTarget)
-#: rc.cpp:1092
+#: rc.cpp:1140
 msgid "Tar&get extension:"
 msgstr ""
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:442
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1095
+#: rc.cpp:1143
 msgid "Target &file:"
 msgstr ""
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:468
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:1098
+#: rc.cpp:1146
 msgid "&Relative dir:"
 msgstr ""
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:494
 #. i18n: ectx: property (text), widget (QLabel, m_lbState)
-#: rc.cpp:1101
+#: rc.cpp:1149
 msgid "St&ate:"
 msgstr ""
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:519
 #. i18n: ectx: property (text), widget (QCheckBox, m_ckClose)
-#: rc.cpp:1104
+#: rc.cpp:1152
 msgid "Close Konsole when tool is finished"
 msgstr ""
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:542
 #. i18n: ectx: attribute (title), widget (QWidget, TabPage)
-#: rc.cpp:1107
+#: rc.cpp:1155
 #, fuzzy
 msgid "Menu"
 msgstr "Menu"
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:556
 #. i18n: ectx: property (text), widget (QLabel, m_lbMenu)
-#: rc.cpp:1110
+#: rc.cpp:1158
 msgid "Add tool to Build &menu:"
 msgstr ""
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:579
 #. i18n: ectx: property (text), widget (QLabel, m_lbIcon)
-#: rc.cpp:1113
+#: rc.cpp:1161
 #, fuzzy
 msgid "&Icon:"
 msgstr "&Ikon:"
 
 #. i18n: file: widgets/maintoolconfigwidget.ui:638
 #. i18n: ectx: property (text), widget (KPushButton, m_pshbDefault)
-#: rc.cpp:1116
+#: rc.cpp:1164
 msgid "Restore Default Tools..."
 msgstr ""
 
 #. i18n: file: widgets/newdocumentwidget.ui:22
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1122
+#: rc.cpp:1170
 msgid "Please select the type of document you want to create:"
 msgstr ""
 
 #. i18n: file: widgets/newdocumentwidget.ui:58
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:1125
+#: rc.cpp:1173
 #, fuzzy
 msgid "Template"
 msgstr "Templat"
 
 #. i18n: file: widgets/newdocumentwidget.ui:64
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:1128
+#: rc.cpp:1176
 msgid "Please select the template that should be used:"
 msgstr ""
 
 #. i18n: file: widgets/newdocumentwidget.ui:77
 #. i18n: ectx: property (text), widget (QCheckBox, quickStartWizardCheckBox)
-#: rc.cpp:1131
+#: rc.cpp:1179
 msgid "Start the Quick Start wizard when creating an empty LaTeX file"
 msgstr ""
 
 #. i18n: file: widgets/processtoolconfigwidget.ui:37
 #. i18n: ectx: property (text), widget (QLabel, m_lbCommand)
-#: rc.cpp:1134
+#: rc.cpp:1182
 #, fuzzy
 msgid "Co&mmand:"
 msgstr "&Arahan:"
 
 #. i18n: file: widgets/processtoolconfigwidget.ui:80
 #. i18n: ectx: property (toolTip), widget (QLabel, m_lbOptions)
-#: rc.cpp:1138
+#: rc.cpp:1186
 #, no-c-format
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -9145,312 +9094,362 @@ msgstr ""
 
 #. i18n: file: widgets/processtoolconfigwidget.ui:83
 #. i18n: ectx: property (text), widget (QLabel, m_lbOptions)
-#: rc.cpp:1155
+#: rc.cpp:1203
 msgid "Options:"
 msgstr ""
 
 #. i18n: file: widgets/quicktoolconfigwidget.ui:27
 #. i18n: ectx: property (text), widget (QLabel, m_lbTool)
-#: rc.cpp:1158
+#: rc.cpp:1206
 msgid "Tool:"
 msgstr ""
 
 #. i18n: file: widgets/quicktoolconfigwidget.ui:53
 #. i18n: ectx: property (text), widget (QLabel, m_lbConfig)
-#: rc.cpp:1161
+#: rc.cpp:1209
 msgid "Configuration:"
 msgstr ""
 
 #. i18n: file: widgets/quicktoolconfigwidget.ui:117
 #. i18n: ectx: property (text), widget (KPushButton, m_pshbUp)
-#: rc.cpp:1170
+#: rc.cpp:1218
 #, fuzzy
 msgid "&Up"
 msgstr "&Atas"
 
 #. i18n: file: widgets/quicktoolconfigwidget.ui:130
 #. i18n: ectx: property (text), widget (KPushButton, m_pshbDown)
-#: rc.cpp:1173
+#: rc.cpp:1221
 #, fuzzy
 msgid "&Down"
 msgstr "&Bawah"
 
 #. i18n: file: widgets/scriptingconfigwidget.ui:32
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ScriptingEnabled)
-#: rc.cpp:1179
+#: rc.cpp:1227
 msgid "Enable &scripting"
 msgstr ""
 
 #. i18n: file: widgets/scriptingconfigwidget.ui:51
 #. i18n: ectx: property (title), widget (QGroupBox, executionTimeLimitGroupBox)
-#: rc.cpp:1182
+#: rc.cpp:1230
 msgid "Execution Time Limit"
 msgstr ""
 
 #. i18n: file: widgets/scriptingconfigwidget.ui:66
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TimeLimitEnabled)
-#: rc.cpp:1185
+#: rc.cpp:1233
 msgid "&Limit the execution time of scripts"
 msgstr ""
 
 #. i18n: file: widgets/scriptingconfigwidget.ui:84
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1188
+#: rc.cpp:1236
 msgid "&Time limit (seconds):"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:37
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1194
+#: rc.cpp:1242
 msgid "Expansion Level"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:51
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:1197
+#: rc.cpp:1245
 msgid "Default &value"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:111
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:1200
+#: rc.cpp:1248
 msgid "(&1=part, 2=chapter, 3=section, 4=subsection, 5=subsubsection, ...)"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:136
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SvShowLabels)
-#: rc.cpp:1206
+#: rc.cpp:1254
 #, fuzzy
 msgid "Show &labels"
 msgstr "Papar &label"
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:143
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SvOpenLabels)
-#: rc.cpp:1209
+#: rc.cpp:1257
 msgid "&Open labels item"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:150
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SvShowReferences)
-#: rc.cpp:1212
+#: rc.cpp:1260
 msgid "Show undefined references"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:157
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SvOpenReferences)
-#: rc.cpp:1215
+#: rc.cpp:1263
 msgid "Open references item"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:164
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SvShowBibitems)
-#: rc.cpp:1218
+#: rc.cpp:1266
 msgid "Show bibitems"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SvOpenBibitems)
-#: rc.cpp:1221
+#: rc.cpp:1269
 msgid "Open bibitems item"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:178
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SvShowTodo)
-#: rc.cpp:1224
+#: rc.cpp:1272
 msgid "Show TODO/FIXME"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:185
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SvOpenTodo)
-#: rc.cpp:1227
+#: rc.cpp:1275
 msgid "Open TODO/FIXME"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:192
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SvShowFloats)
-#: rc.cpp:1230
+#: rc.cpp:1278
 msgid "Show figure and table en&vironments"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:199
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SvShowGraphics)
-#: rc.cpp:1233
+#: rc.cpp:1281
 msgid "Show graphic files"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:206
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SvShowInputFiles)
-#: rc.cpp:1236
+#: rc.cpp:1284
 msgid "Show input files"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:216
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SvShowSectioningLabels)
-#: rc.cpp:1239
+#: rc.cpp:1287
 msgid "No extra section for labels"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:228
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1242
+#: rc.cpp:1290
 msgid "Default Graphic Extension:"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:235
 #. i18n: ectx: property (toolTip), widget (QComboBox, kcfg_SvDefaultGraphicExt)
-#: rc.cpp:1245
+#: rc.cpp:1293
 msgid "Extension to use for graphic files without extensions"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:242
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SvDefaultGraphicExt)
-#: rc.cpp:1248
+#: rc.cpp:1296
 msgid "eps"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:247
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SvDefaultGraphicExt)
-#: rc.cpp:1251
+#: rc.cpp:1299
 msgid "pdf"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:252
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SvDefaultGraphicExt)
-#: rc.cpp:1254
+#: rc.cpp:1302
 msgid "png"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:257
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SvDefaultGraphicExt)
-#: rc.cpp:1257
+#: rc.cpp:1305
 msgid "jpg"
 msgstr ""
 
 #. i18n: file: widgets/structureviewconfigwidget.ui:262
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SvDefaultGraphicExt)
-#: rc.cpp:1260
+#: rc.cpp:1308
 msgid "tif"
 msgstr ""
 
 #. i18n: file: widgets/symbolviewconfigwidget.ui:34
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1266
+#: rc.cpp:1314
 msgid "Most Frequently Used Symbols"
 msgstr ""
 
 #. i18n: file: widgets/symbolviewconfigwidget.ui:43
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_displayMFUS)
-#: rc.cpp:1269
+#: rc.cpp:1317
 msgid "Display the vie&w"
 msgstr ""
 
 #. i18n: file: widgets/symbolviewconfigwidget.ui:52
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1272
+#: rc.cpp:1320
 msgid "Number of symbols to show"
 msgstr ""
 
 #. i18n: file: widgets/symbolviewconfigwidget.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_clearMFUS)
-#: rc.cpp:1275
+#: rc.cpp:1323
 msgid "&Clear the list of symbols when closing Kile"
 msgstr ""
 
 #. i18n: file: widgets/symbolviewconfigwidget.ui:100
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1278
+#: rc.cpp:1326
 #, fuzzy
 msgid "Unicode"
 msgstr "Ekakod"
 
 #. i18n: file: widgets/symbolviewconfigwidget.ui:109
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_symbolViewUTF8)
-#: rc.cpp:1281
+#: rc.cpp:1329
 msgid "Insert UTF-8 characters instead of the command"
 msgstr ""
 
-#. i18n: file: widgets/codecompletionconfigwidget.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, cb_autocomplete)
-#: rc.cpp:1284
-msgid "Auto completion for LaTeX markup"
+#. i18n: file: tips:2
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:3
+msgid ""
+"<p>...that you can create your own templates? Create a document containing "
+"the text you usually start with and save it; then, select \"Create Template "
+"from Document\" from the \"File\" menu, fill in the dialog and you are done: "
+"next time you create a new document you can select the template from the "
+"template list.</p>\n"
 msgstr ""
 
-#. i18n: file: widgets/codecompletionconfigwidget.ui:31
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1287
-#, fuzzy
-msgid "Threshold:"
-msgstr "Ambang:"
-
-#. i18n: file: widgets/codecompletionconfigwidget.ui:51
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:1290
-msgid "letters"
+#. i18n: file: tips:8
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:8
+msgid ""
+"<p>...that Kile supports forward search? This enables you to switch back and "
+"forth between places in the source file and their corresponding locations in "
+"the DVI file. Stop spending so much time on finding the place in the source "
+"file: if you spotted a mistake while viewing the DVI, finding the correct "
+"location is just a mouse-click away!</p>\n"
+"<p><a href=\"help:/kile/quick_inverseforward.html\">Read the manual to find "
+"out how to activate this feature.</a></p>\n"
 msgstr ""
 
-#. i18n: file: widgets/codecompletionconfigwidget.ui:76
-#. i18n: ectx: property (title), widget (QGroupBox, cb_autocompleteabbrev)
-#: rc.cpp:1293
-msgid "Auto completion for abbreviations"
+#. i18n: file: tips:16
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:14
+msgid ""
+"<p>...that the Quick Build tool is now fully configurable? Go to <b>Settings-"
+">Configure Kile->Build</b> and select the <b>QuickBuild</b> tool.</p>\n"
 msgstr ""
 
-#. i18n: file: widgets/codecompletionconfigwidget.ui:117
-#. i18n: ectx: property (text), widget (KPushButton, m_addFileButton)
-#: rc.cpp:1299
-#, fuzzy
-msgid "Add..."
-msgstr "Tambah..."
-
-#. i18n: file: widgets/codecompletionconfigwidget.ui:146
-#. i18n: ectx: property (text), widget (QCheckBox, cb_showcwlview)
-#: rc.cpp:1305
-#, fuzzy
-msgid "Show LaTeX commands"
-msgstr "Arahan LaTeX"
-
-#. i18n: file: widgets/codecompletionconfigwidget.ui:161
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:1308
-msgid "Show a maximum of"
+#. i18n: file: tips:22
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:19
+msgid ""
+"<p>...that using projects gives Kile much more power? You can, for example, "
+"bundle and archive all related documents in a project; also, features like "
+"auto-completion of references and citations become much more powerful. Kile "
+"is even able to determine which document is the master document in a project."
+"</p>\n"
 msgstr ""
 
-#. i18n: file: widgets/codecompletionconfigwidget.ui:187
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:1311
-#, fuzzy
-#| msgid "Files"
-msgid "files"
-msgstr "Fail"
-
-#. i18n: file: widgets/codecompletionconfigwidget.ui:209
-#. i18n: ectx: property (text), widget (QCheckBox, cb_showabbrevview)
-#: rc.cpp:1314
-msgid "Show abbreviations"
+#. i18n: file: tips:28
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:24
+msgid ""
+"<p>...that you can configure which QuickBuild command is issued for a "
+"project? Just go to <b>Project->Project Options</b> and select a QuickBuild "
+"command.</p>\n"
 msgstr ""
 
-#. i18n: file: widgets/codecompletionconfigwidget.ui:219
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:1317
-#, fuzzy
-msgid "Completion Properties"
-msgstr "Ciri-ciri"
-
-#. i18n: file: widgets/codecompletionconfigwidget.ui:228
-#. i18n: ectx: property (text), widget (QCheckBox, cb_setcursor)
-#: rc.cpp:1320
-msgid "Place cursor"
+#. i18n: file: tips:34
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:29
+msgid ""
+"<p>...that inserting references and citations has never been easier? Enable "
+"auto-completion and type in <code>\\ref{</code>, a list with all available "
+"labels will appear automatically (if auto-completion is not enabled, press "
+"Ctrl+Space).</p>\n"
+"<p>Note that this feature is much more powerful if the current document "
+"belongs to a project.</p>\n"
+"<p>You can configure auto-completion by going to <b>Settings->Configure Kile-"
+">Complete</b>; there, you can select databases of LaTeX commands. You can "
+"even create your own lists of commands.</p>\n"
 msgstr ""
 
-#. i18n: file: widgets/codecompletionconfigwidget.ui:242
-#. i18n: ectx: property (text), widget (QCheckBox, cb_closeenv)
-#: rc.cpp:1326
-msgid "Close environments"
+#. i18n: file: tips:44
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:36
+msgid ""
+"<p>...that Kile can complete LaTeX commands for you? Type <code>\\se</code> "
+"and press Ctrl+Space, a list of all commands starting with <code>\\se</code> "
+"will appear.</p>\n"
+"<p>You can configure auto-completion by going to <b>Settings->Configure Kile-"
+">Complete</b>; there, you can select databases of LaTeX commands. You can "
+"even create your own lists of commands.</p>\n"
 msgstr ""
 
-#. i18n: file: widgets/codecompletionconfigwidget.ui:249
-#. i18n: ectx: property (text), widget (QCheckBox, cb_citeoutofbraces)
-#: rc.cpp:1329
-msgid "Move out of braces (citation keylists)"
+#. i18n: file: tips:52
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:42
+msgid ""
+"<p>...starting a new environment is very easy using the auto-complete "
+"feature. For example, type <code>equ</code> and press Alt+Space and a list "
+"of all environments starting with <code>equ</code> appears. Press Enter to "
+"select the first entry and a <code>\\begin{equation}\\end{equation}</code> "
+"pair is inserted in your document.</p>\n"
+"<p>You can configure auto-completion by going to <b>Settings->Configure Kile-"
+">Complete</b>; there, you can select databases of LaTeX commands. You can "
+"even create your own lists of commands.</p>\n"
+msgstr ""
+
+#. i18n: file: tips:60
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:48
+msgid ""
+"<p>...Kile now contains several editing tools to help you type in LaTeX "
+"faster and easier? Check out the <b>Complete, Select, Delete, Environment "
+"and TeX Group</b> menus in the <b>Edit</b> menu.</p>\n"
+msgstr ""
+
+#. i18n: file: tips:66
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:53
+msgid ""
+"<p>...that the Quick Preview tool will compile and select a part of a "
+"document? This can be a <b>selected text</b>, the <b>current environment</b> "
+"or the <b>current subdocument</b>.</p>\n"
+"<p>You can configure Quick preview by going to <b>Settings->Configure Kile-"
+">Preview</b>. There, you can select one of the predefined configurations.</"
+"p>\n"
+msgstr ""
+
+#. i18n: file: tips:74
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:59
+msgid ""
+"<p>...that a new wizard will help to create tabulars and arrays?</p>\n"
+"<p>A right click with the mouse will open a dialog or a popup menu, where a "
+"lot of attributes like <b>alignment</b>, <b>colors</b>, <b>horizontal and "
+"vertical lines</b> and more can be set. Also <b>multicolumn cells</b> are "
+"supported.</p>\n"
+msgstr ""
+
+#. i18n: file: tips:82
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:65
+msgid ""
+"<p>...that Kile can show user defined help files?</p>\n"
+"<p>Go to <b>Settings->Configure Kile->Help</b> and configure your help "
+"files, which are integrated into the help menu.</p>\n"
 msgstr ""
 
 #, fuzzy
