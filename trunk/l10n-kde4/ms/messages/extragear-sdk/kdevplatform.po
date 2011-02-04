@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevplatform\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:22+0100\n"
+"POT-Creation-Date: 2011-02-04 02:38+0100\n"
 "PO-Revision-Date: 2009-07-05 19:31+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1774,16 +1774,6 @@ msgid ""
 "Make sure that KDEDIRS is set properly and that you ran kbuildsycoca4."
 msgstr ""
 
-#: shell/partdocument.cpp:108 shell/textdocument.cpp:356
-#, kde-format
-msgid "The document \"%1\" has unsaved changes. Would you like to save them?"
-msgstr ""
-
-#: shell/partdocument.cpp:109 shell/textdocument.cpp:357
-#, fuzzy
-msgid "Close Document"
-msgstr "Tutup Dokumen"
-
 #: shell/plugincontroller.cpp:443
 #, kde-format
 msgid ""
@@ -2450,6 +2440,16 @@ msgstr ""
 msgid "Unable to write to %1"
 msgstr ""
 
+#: shell/textdocument.cpp:356 shell/partdocument.cpp:108
+#, kde-format
+msgid "The document \"%1\" has unsaved changes. Would you like to save them?"
+msgstr ""
+
+#: shell/textdocument.cpp:357 shell/partdocument.cpp:109
+#, fuzzy
+msgid "Close Document"
+msgstr "Tutup Dokumen"
+
 #: shell/textdocument.cpp:369
 #, kde-format
 msgid ""
@@ -2985,7 +2985,7 @@ msgstr ""
 msgid "No log information found"
 msgstr ""
 
-#: vcs/dvcs/ui/logview.cpp:63 vcs/widgets/vcsdiffpatchsources.cpp:127
+#: vcs/dvcs/ui/logview.cpp:63 vcs/widgets/vcsdiffpatchsources.cpp:153
 #, fuzzy
 msgid "Commit"
 msgstr "Lakukan"
@@ -3050,6 +3050,94 @@ msgstr ""
 msgid "Source Revision"
 msgstr ""
 
+#: vcs/widgets/standardvcslocationwidget.cpp:35
+msgid "Introduce the repository URL..."
+msgstr ""
+
+#: vcs/widgets/vcsdiffwidget.cpp:103
+#, kde-format
+msgid "Difference between revision %1 and %2:"
+msgstr ""
+
+#: vcs/widgets/vcseventwidget.cpp:83
+msgid "Diff to previous revision"
+msgstr ""
+
+#: vcs/widgets/vcseventwidget.cpp:86
+msgid "Diff between revisions"
+msgstr ""
+
+#: vcs/widgets/vcseventwidget.cpp:151
+msgid "Difference To Previous"
+msgstr ""
+
+#: vcs/widgets/vcseventwidget.cpp:175
+msgid "Difference between Revisions"
+msgstr ""
+
+#: vcs/widgets/vcscommitdialog.cpp:110
+msgid "Commit Message"
+msgstr ""
+
+#: vcs/widgets/vcscommitdialog.cpp:191
+#, fuzzy
+msgctxt "file was added to versioncontrolsystem"
+msgid "Added"
+msgstr "Ditambah"
+
+#: vcs/widgets/vcscommitdialog.cpp:195
+#, fuzzy
+msgctxt "file was deleted from versioncontrolsystem"
+msgid "Deleted"
+msgstr "Dihapus"
+
+#: vcs/widgets/vcscommitdialog.cpp:199
+#, fuzzy
+msgctxt "version controlled file was modified"
+msgid "Modified"
+msgstr "Diubahsuai"
+
+#: vcs/widgets/vcscommitdialog.cpp:202
+#, fuzzy
+msgctxt "file is not known to versioncontrolsystem"
+msgid "Unknown"
+msgstr "Tidak diketahui"
+
+#: vcs/widgets/vcscommitdialog.cpp:293 vcs/vcspluginhelper.cpp:270
+msgid "Unable to get difference."
+msgstr ""
+
+#. i18n: file: vcs/widgets/vcscommitdialog.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: vcs/widgets/vcsdiffpatchsources.cpp:46 rc.cpp:411
+msgid "Commit Message:"
+msgstr ""
+
+#: vcs/widgets/vcsdiffpatchsources.cpp:50
+#, fuzzy
+msgid "Old Messages"
+msgstr "Mesej"
+
+#: vcs/widgets/vcsdiffpatchsources.cpp:180
+msgid "Files will be committed:\n"
+msgstr ""
+
+#: vcs/widgets/vcsdiffpatchsources.cpp:184
+#, fuzzy, kde-format
+msgid ""
+"\n"
+"With message:\n"
+" %1"
+msgstr "Mesej:"
+
+#: vcs/widgets/vcsdiffpatchsources.cpp:186
+msgid "About to commit to repository"
+msgstr ""
+
+#: vcs/widgets/vcsdiffpatchsources.cpp:229
+msgid "Could not create a patch for the current version."
+msgstr ""
+
 #: vcs/vcspluginhelper.cpp:96
 msgid "Commit..."
 msgstr ""
@@ -3101,111 +3189,23 @@ msgstr ""
 msgid "VCS support"
 msgstr ""
 
-#: vcs/vcspluginhelper.cpp:270 vcs/widgets/vcscommitdialog.cpp:293
-msgid "Unable to get difference."
-msgstr ""
-
-#: vcs/vcspluginhelper.cpp:313
+#: vcs/vcspluginhelper.cpp:310
 #, kde-format
 msgid "%2 History (%1)"
 msgstr ""
 
-#: vcs/vcspluginhelper.cpp:347
+#: vcs/vcspluginhelper.cpp:344
 msgid ""
 "Cannot display annotations, missing interface KTextEditor::"
 "AnnotationInterface for the editor."
 msgstr ""
 
-#: vcs/vcspluginhelper.cpp:351
+#: vcs/vcspluginhelper.cpp:348
 #, kde-format
 msgid ""
 "Cannot execute annotate action because the document was not found, or was "
 "not a text document:\n"
 "%1"
-msgstr ""
-
-#: vcs/vcspluginhelper.cpp:412
-msgid "Could not create a patch for the current version."
-msgstr ""
-
-#: vcs/widgets/standardvcslocationwidget.cpp:35
-msgid "Introduce the repository URL..."
-msgstr ""
-
-#: vcs/widgets/vcscommitdialog.cpp:110
-msgid "Commit Message"
-msgstr ""
-
-#: vcs/widgets/vcscommitdialog.cpp:191
-#, fuzzy
-msgctxt "file was added to versioncontrolsystem"
-msgid "Added"
-msgstr "Ditambah"
-
-#: vcs/widgets/vcscommitdialog.cpp:195
-#, fuzzy
-msgctxt "file was deleted from versioncontrolsystem"
-msgid "Deleted"
-msgstr "Dihapus"
-
-#: vcs/widgets/vcscommitdialog.cpp:199
-#, fuzzy
-msgctxt "version controlled file was modified"
-msgid "Modified"
-msgstr "Diubahsuai"
-
-#: vcs/widgets/vcscommitdialog.cpp:202
-#, fuzzy
-msgctxt "file is not known to versioncontrolsystem"
-msgid "Unknown"
-msgstr "Tidak diketahui"
-
-#. i18n: file: vcs/widgets/vcscommitdialog.ui:22
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: vcs/widgets/vcsdiffpatchsources.cpp:46 rc.cpp:411
-msgid "Commit Message:"
-msgstr ""
-
-#: vcs/widgets/vcsdiffpatchsources.cpp:50
-#, fuzzy
-msgid "Old Messages"
-msgstr "Mesej"
-
-#: vcs/widgets/vcsdiffpatchsources.cpp:154
-msgid "Files will be committed:\n"
-msgstr ""
-
-#: vcs/widgets/vcsdiffpatchsources.cpp:158
-#, fuzzy, kde-format
-msgid ""
-"\n"
-"With message:\n"
-" %1"
-msgstr "Mesej:"
-
-#: vcs/widgets/vcsdiffpatchsources.cpp:160
-msgid "About to commit to repository"
-msgstr ""
-
-#: vcs/widgets/vcsdiffwidget.cpp:103
-#, kde-format
-msgid "Difference between revision %1 and %2:"
-msgstr ""
-
-#: vcs/widgets/vcseventwidget.cpp:83
-msgid "Diff to previous revision"
-msgstr ""
-
-#: vcs/widgets/vcseventwidget.cpp:86
-msgid "Diff between revisions"
-msgstr ""
-
-#: vcs/widgets/vcseventwidget.cpp:151
-msgid "Difference To Previous"
-msgstr ""
-
-#: vcs/widgets/vcseventwidget.cpp:175
-msgid "Difference between Revisions"
 msgstr ""
 
 #: rc.cpp:1
