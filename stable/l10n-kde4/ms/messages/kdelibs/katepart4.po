@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 12:20+0100\n"
+"POT-Creation-Date: 2011-02-21 12:22+0100\n"
 "PO-Revision-Date: 2008-07-13 01:04+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -207,7 +207,7 @@ msgstr "Ciri Kotak"
 
 #. i18n: file: dialogs/completionconfigtab.ui:28
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordCompletion)
-#: completion/katewordcompletion.cpp:89 rc.cpp:143
+#: completion/katewordcompletion.cpp:89 rc.cpp:752
 #, fuzzy
 #| msgid "Word Completion Plugin"
 msgid "Auto Word Completion"
@@ -244,12 +244,12 @@ msgid_plural " characters"
 msgstr[0] "Aksara"
 msgstr[1] "Aksara"
 
-#. i18n: file: dialogs/completionconfigtab.ui:12
-#. i18n: ectx: property (title), widget (QGroupBox, gbGeneral)
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:12
 #. i18n: ectx: property (title), widget (QGroupBox, gbViInputMode)
+#. i18n: file: dialogs/completionconfigtab.ui:12
+#. i18n: ectx: property (title), widget (QGroupBox, gbGeneral)
 #: dialogs/katedialogs.cpp:652 dialogs/katedialogs.cpp:729
-#: dialogs/katedialogs.cpp:891 rc.cpp:137 rc.cpp:709
+#: dialogs/katedialogs.cpp:891 rc.cpp:697 rc.cpp:746
 msgid "General"
 msgstr ""
 
@@ -312,7 +312,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:110
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/katedialogs.cpp:892 rc.cpp:688
+#: dialogs/katedialogs.cpp:892 rc.cpp:676
 msgid "Advanced"
 msgstr ""
 
@@ -695,7 +695,7 @@ msgstr "Ciri %1"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:66
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: mode/katemodeconfigpage.cpp:268 rc.cpp:353
+#: mode/katemodeconfigpage.cpp:268 rc.cpp:341
 #, fuzzy
 msgid "Properties"
 msgstr "Ciri Kotak"
@@ -2100,7 +2100,7 @@ msgstr "&Baru..."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:44
 #. i18n: ectx: property (text), widget (QPushButton, btnDelete)
-#: utils/kateschema.cpp:731 rc.cpp:350
+#: utils/kateschema.cpp:731 rc.cpp:338
 #, fuzzy
 msgid "&Delete"
 msgstr "Dipilih"
@@ -2539,13 +2539,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:500 rc.cpp:653
+#: view/kateview.cpp:500 rc.cpp:641
 msgid "&Dynamic Word Wrap"
 msgstr "Balut Perkataan &Dinamik"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:17
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:503 rc.cpp:650
+#: view/kateview.cpp:503 rc.cpp:638
 msgid ""
 "If this option is checked, the text lines will be wrapped at the view border "
 "on the screen."
@@ -3316,7 +3316,7 @@ msgstr "Ikut &posisi"
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:90
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:95 rc.cpp:746
+#: rc.cpp:95 rc.cpp:734
 #, fuzzy
 #| msgid "Comment"
 msgid "Command"
@@ -3387,7 +3387,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblName)
 #. i18n: file: dialogs/filetypeconfigwidget.ui:72
 #. i18n: ectx: property (text), widget (QLabel, lblName)
-#: rc.cpp:122 rc.cpp:356
+#: rc.cpp:122 rc.cpp:344
 #, fuzzy
 #| msgid "Name:"
 msgid "&Name:"
@@ -3423,23 +3423,9 @@ msgstr "&Seksyen:"
 msgid "&Category:"
 msgstr "&Corak:"
 
-#. i18n: file: dialogs/completionconfigtab.ui:18
-#. i18n: ectx: property (text), widget (QCheckBox, chkAutoCompletionEnabled)
-#: rc.cpp:140
-#, fuzzy
-#| msgid "Automatic Completion Popup"
-msgid "&Auto completion enabled"
-msgstr "Popup Penyelesaian Automatik"
-
-#. i18n: file: dialogs/completionconfigtab.ui:42
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:146
-msgid "Minimal word length to complete:"
-msgstr ""
-
 #. i18n: file: dialogs/completionconfigwidget.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, sorting)
-#: rc.cpp:149
+#: rc.cpp:137
 #, fuzzy
 #| msgid "String"
 msgid "Sorting"
@@ -3447,32 +3433,32 @@ msgstr "Rentetan"
 
 #. i18n: file: dialogs/completionconfigwidget.ui:36
 #. i18n: ectx: property (text), widget (QCheckBox, sortingAlphabetical)
-#: rc.cpp:152
+#: rc.cpp:140
 msgid "Alphabetical"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:43
 #. i18n: ectx: property (text), widget (QCheckBox, sortingReverse)
-#: rc.cpp:155
+#: rc.cpp:143
 msgid "Reverse"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:50
 #. i18n: ectx: property (text), widget (QCheckBox, sortingCaseSensitive)
-#: rc.cpp:158
+#: rc.cpp:146
 #, fuzzy
 msgid "Case sensitive"
 msgstr "Sensitif Huruf Besar/Kecil"
 
 #. i18n: file: dialogs/completionconfigwidget.ui:57
 #. i18n: ectx: property (text), widget (QCheckBox, sortingInheritanceDepth)
-#: rc.cpp:161
+#: rc.cpp:149
 msgid "Inheritance depth"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:84
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:164
+#: rc.cpp:152
 msgid "Order of Groupings (select a grouping method to configure):"
 msgstr ""
 
@@ -3482,7 +3468,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QToolButton, groupingUp)
 #. i18n: file: dialogs/completionconfigwidget.ui:405
 #. i18n: ectx: property (text), widget (QToolButton, columnUp)
-#: rc.cpp:167 rc.cpp:206 rc.cpp:242
+#: rc.cpp:155 rc.cpp:194 rc.cpp:230
 msgid "^"
 msgstr ""
 
@@ -3492,13 +3478,13 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QToolButton, groupingDown)
 #. i18n: file: dialogs/completionconfigwidget.ui:412
 #. i18n: ectx: property (text), widget (QToolButton, columnDown)
-#: rc.cpp:170 rc.cpp:209 rc.cpp:245
+#: rc.cpp:158 rc.cpp:197 rc.cpp:233
 msgid "\\/"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:127
 #. i18n: ectx: property (title), widget (QGroupBox, filtering)
-#: rc.cpp:173
+#: rc.cpp:161
 #, fuzzy
 #| msgid "String"
 msgid "Filtering"
@@ -3506,67 +3492,67 @@ msgstr "Rentetan"
 
 #. i18n: file: dialogs/completionconfigwidget.ui:142
 #. i18n: ectx: property (text), widget (QCheckBox, filteringContextMatchOnly)
-#: rc.cpp:176
+#: rc.cpp:164
 msgid "Suitable context matches only"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:149
 #. i18n: ectx: property (text), widget (QCheckBox, filteringHideAttributes)
-#: rc.cpp:179
+#: rc.cpp:167
 msgid "Hide completions with the following attributes:"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:159
 #. i18n: ectx: property (label), widget (KIntNumInput, filteringMaximumInheritanceDepth)
-#: rc.cpp:182
+#: rc.cpp:170
 msgid "Maximum inheritance depth:"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:171
 #. i18n: ectx: property (specialValueText), widget (KIntNumInput, filteringMaximumInheritanceDepth)
-#: rc.cpp:185
+#: rc.cpp:173
 msgid "Infinity"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:181
 #. i18n: ectx: property (title), widget (QGroupBox, grouping)
-#: rc.cpp:188
+#: rc.cpp:176
 msgid "Grouping"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:200
 #. i18n: ectx: property (text), widget (QTreeWidget, groupingMethods)
-#: rc.cpp:191
+#: rc.cpp:179
 msgid "Grouping Method"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:205
 #. i18n: ectx: property (text), item, widget (QTreeWidget, groupingMethods)
-#: rc.cpp:194
+#: rc.cpp:182
 msgid "Scope type (local, namespace, global)"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:210
 #. i18n: ectx: property (text), item, widget (QTreeWidget, groupingMethods)
-#: rc.cpp:197
+#: rc.cpp:185
 msgid "Scope (eg. per class)"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:215
 #. i18n: ectx: property (text), item, widget (QTreeWidget, groupingMethods)
-#: rc.cpp:200
+#: rc.cpp:188
 msgid "Access type (public etc.)"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:220
 #. i18n: ectx: property (text), item, widget (QTreeWidget, groupingMethods)
-#: rc.cpp:203
+#: rc.cpp:191
 msgid "Item type (function etc.)"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:270
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:212
+#: rc.cpp:200
 #, fuzzy
 #| msgid "Footer Properties"
 msgid "Access Grouping Properties"
@@ -3574,25 +3560,25 @@ msgstr "Ciri Pengaki"
 
 #. i18n: file: dialogs/completionconfigwidget.ui:277
 #. i18n: ectx: property (text), widget (QCheckBox, accessConst)
-#: rc.cpp:215
+#: rc.cpp:203
 msgid "Include const in grouping"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:284
 #. i18n: ectx: property (text), widget (QCheckBox, accessStatic)
-#: rc.cpp:218
+#: rc.cpp:206
 msgid "Include static in grouping"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:291
 #. i18n: ectx: property (text), widget (QCheckBox, accessSignalSlot)
-#: rc.cpp:221
+#: rc.cpp:209
 msgid "Include signals and slots in grouping"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:321
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:224
+#: rc.cpp:212
 #, fuzzy
 #| msgid "Footer Properties"
 msgid "Item Grouping properties"
@@ -3600,19 +3586,19 @@ msgstr "Ciri Pengaki"
 
 #. i18n: file: dialogs/completionconfigwidget.ui:328
 #. i18n: ectx: property (text), widget (QCheckBox, itemTemplate)
-#: rc.cpp:227
+#: rc.cpp:215
 msgid "Include templates in grouping"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:357
 #. i18n: ectx: property (title), widget (QGroupBox, columnMerging)
-#: rc.cpp:230
+#: rc.cpp:218
 msgid "Column Merging"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:382
 #. i18n: ectx: property (text), widget (QTreeWidget, columnMergeTree)
-#: rc.cpp:233
+#: rc.cpp:221
 #, fuzzy
 #| msgid "Colors"
 msgid "Columns"
@@ -3620,25 +3606,25 @@ msgstr "Warna"
 
 #. i18n: file: dialogs/completionconfigwidget.ui:387
 #. i18n: ectx: property (text), widget (QTreeWidget, columnMergeTree)
-#: rc.cpp:236
+#: rc.cpp:224
 msgid "Merged"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:392
 #. i18n: ectx: property (text), widget (QTreeWidget, columnMergeTree)
-#: rc.cpp:239
+#: rc.cpp:227
 msgid "Shown"
 msgstr ""
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:12
 #. i18n: ectx: property (title), widget (QGroupBox, gbCursorMovement)
-#: rc.cpp:248
+#: rc.cpp:236
 msgid "Text Cursor Movement"
 msgstr "Pergerakan Kursor Teks "
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:18
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkSmartHome)
-#: rc.cpp:251
+#: rc.cpp:239
 #, fuzzy
 msgid ""
 "When selected, pressing the home key will cause the cursor to skip "
@@ -3650,14 +3636,14 @@ msgstr ""
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:21
 #. i18n: ectx: property (text), widget (QCheckBox, chkSmartHome)
-#: rc.cpp:254
+#: rc.cpp:242
 #, fuzzy
 msgid "Smart ho&me and smart end"
 msgstr "Ru&mah bistari"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:28
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkWrapCursor)
-#: rc.cpp:257
+#: rc.cpp:245
 #, fuzzy
 #| msgid ""
 #| "When on, moving the insertion cursor using the <b>Left</b> and <b>Right</"
@@ -3680,7 +3666,7 @@ msgstr ""
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, chkWrapCursor)
-#: rc.cpp:260
+#: rc.cpp:248
 #, fuzzy
 #| msgid "Wrap c&ursor"
 msgid "Wrap c&ursor"
@@ -3688,7 +3674,7 @@ msgstr "Bal&ut kursor"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:38
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkPagingMovesCursor)
-#: rc.cpp:263
+#: rc.cpp:251
 msgid ""
 "Selects whether the PageUp and PageDown keys should alter the vertical "
 "position of the cursor relative to the top of the view."
@@ -3698,13 +3684,13 @@ msgstr ""
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:41
 #. i18n: ectx: property (text), widget (QCheckBox, chkPagingMovesCursor)
-#: rc.cpp:266
+#: rc.cpp:254
 msgid "&PageUp/PageDown moves cursor"
 msgstr "&PageUp/PageDown menggerakkan kursor"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:53
 #. i18n: ectx: property (text), widget (QLabel, lblAutoCenterCursor)
-#: rc.cpp:269
+#: rc.cpp:257
 #, fuzzy
 #| msgid "Autocenter cursor (lines):"
 msgid "&Autocenter cursor (lines):"
@@ -3712,7 +3698,7 @@ msgstr "Auto-tengah kursor (baris):"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:63
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbAutoCenterCursor)
-#: rc.cpp:272
+#: rc.cpp:260
 msgid ""
 "Sets the number of lines to maintain visible above and below the cursor when "
 "possible."
@@ -3722,13 +3708,13 @@ msgstr "Tetapkan jumlah baris untuk tampak atas dan bawah kursor yang mungkin."
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbAutoCenterCursor)
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:65
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:275 rc.cpp:669
+#: rc.cpp:263 rc.cpp:657
 msgid "Disabled"
 msgstr "Dinyahaktifkan"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:91
 #. i18n: ectx: property (title), widget (QGroupBox, gbSelectionMode)
-#: rc.cpp:278
+#: rc.cpp:266
 #, fuzzy
 #| msgid "Selection Mode"
 msgid "Text Selection Mode"
@@ -3736,7 +3722,7 @@ msgstr "Mod Pilihan"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbNormal)
-#: rc.cpp:281
+#: rc.cpp:269
 msgid ""
 "Selections will be overwritten by typed text and will be lost on cursor "
 "movement."
@@ -3746,19 +3732,19 @@ msgstr ""
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:100
 #. i18n: ectx: property (text), widget (QRadioButton, rbNormal)
-#: rc.cpp:284
+#: rc.cpp:272
 msgid "&Normal"
 msgstr "&Normal"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:107
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbPersistent)
-#: rc.cpp:287
+#: rc.cpp:275
 msgid "Selections will stay even after cursor movement and typing."
 msgstr "Pilihan akan kekal selepas kursor pergerakan kursor dan penaipan."
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:110
 #. i18n: ectx: property (text), widget (QRadioButton, rbPersistent)
-#: rc.cpp:290
+#: rc.cpp:278
 #, fuzzy
 #| msgid "&Persistent"
 msgid "P&ersistent"
@@ -3766,13 +3752,13 @@ msgstr "&Cekal"
 
 #. i18n: file: dialogs/editconfigwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
-#: rc.cpp:293
+#: rc.cpp:281
 msgid "Static Word Wrap"
 msgstr "Balut Perkataan Statik"
 
 #. i18n: file: dialogs/editconfigwidget.ui:26
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:296
+#: rc.cpp:284
 #, fuzzy
 #| msgid ""
 #| "Automatically start a new line of text when the current line exceeds the "
@@ -3798,13 +3784,13 @@ msgstr ""
 
 #. i18n: file: dialogs/editconfigwidget.ui:29
 #. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:299
+#: rc.cpp:287
 msgid "Enable static &word wrap"
 msgstr "Hidupkan balut perka&taan statik"
 
 #. i18n: file: dialogs/editconfigwidget.ui:36
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:302
+#: rc.cpp:290
 #, fuzzy
 #| msgid ""
 #| "<p>If this option is checked, a vertical line will be drawn at the word "
@@ -3822,7 +3808,7 @@ msgstr ""
 
 #. i18n: file: dialogs/editconfigwidget.ui:39
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:305
+#: rc.cpp:293
 #, fuzzy
 #| msgid "&Show static word wrap marker (if applicable)"
 msgid "Show static word wra&p marker (if applicable)"
@@ -3830,7 +3816,7 @@ msgstr "&Papar pembuat balut perkataan statik (jika terpakai)"
 
 #. i18n: file: dialogs/editconfigwidget.ui:51
 #. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
-#: rc.cpp:308
+#: rc.cpp:296
 #, fuzzy
 #| msgid "Wrap words at:"
 msgid "W&rap words at:"
@@ -3838,7 +3824,7 @@ msgstr "Balut perkataan di:"
 
 #. i18n: file: dialogs/editconfigwidget.ui:61
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbWordWrap)
-#: rc.cpp:311
+#: rc.cpp:299
 msgid ""
 "If the Word Wrap option is selected this entry determines the length (in "
 "characters) at which the editor will automatically start a new line."
@@ -3848,7 +3834,7 @@ msgstr ""
 
 #. i18n: file: dialogs/editconfigwidget.ui:95
 #. i18n: ectx: property (title), widget (QGroupBox, gbMisc)
-#: rc.cpp:314
+#: rc.cpp:302
 #, fuzzy
 #| msgctxt "Language"
 #| msgid "Cisco"
@@ -3857,7 +3843,7 @@ msgstr "Cisco"
 
 #. i18n: file: dialogs/editconfigwidget.ui:101
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:317
+#: rc.cpp:305
 #, fuzzy
 #| msgid ""
 #| "If this is enabled, the editor will remove any trailing whitespace on "
@@ -3871,7 +3857,7 @@ msgstr ""
 
 #. i18n: file: dialogs/editconfigwidget.ui:104
 #. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:320
+#: rc.cpp:308
 #, fuzzy
 #| msgid "Remove &trailing spaces"
 msgid "Remove &trailing spaces while editing"
@@ -3879,7 +3865,7 @@ msgstr "Buang ruang &mengekor"
 
 #. i18n: file: dialogs/editconfigwidget.ui:111
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:323
+#: rc.cpp:311
 msgid ""
 "When the user types a left bracket ([,(, or {) KateView automatically enters "
 "the right bracket (}, ), or ]) to the right of the cursor."
@@ -3889,31 +3875,31 @@ msgstr ""
 
 #. i18n: file: dialogs/editconfigwidget.ui:114
 #. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:326
+#: rc.cpp:314
 msgid "Auto &brackets"
 msgstr "Kurungan au&to"
 
 #. i18n: file: dialogs/editconfigwidget.ui:121
 #. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
-#: rc.cpp:329
+#: rc.cpp:317
 msgid "Copy/Cut the current line if no selection"
 msgstr ""
 
 #. i18n: file: dialogs/editconfigwidget.ui:128
 #. i18n: ectx: property (text), widget (QCheckBox, chkScrollPastEnd)
-#: rc.cpp:332
+#: rc.cpp:320
 msgid "Allow scrolling past the end of the document"
 msgstr ""
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:14
 #. i18n: ectx: property (text), widget (QLabel, lblFiletype)
-#: rc.cpp:335
+#: rc.cpp:323
 msgid "&Filetype:"
 msgstr "&Jenis Fail:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:24
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbFiletypes)
-#: rc.cpp:338
+#: rc.cpp:326
 #, fuzzy
 #| msgid "<p>Select the marker type you want to change.</p>"
 msgid "Select the filetype you want to change."
@@ -3921,13 +3907,13 @@ msgstr "<p>Pilih jenis penanda yang anda ingin ubah.</p>"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:31
 #. i18n: ectx: property (whatsThis), widget (QPushButton, btnNew)
-#: rc.cpp:341
+#: rc.cpp:329
 msgid "Create a new file type."
 msgstr "Cipta jenis fail baru."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:34
 #. i18n: ectx: property (text), widget (QPushButton, btnNew)
-#: rc.cpp:344
+#: rc.cpp:332
 #, fuzzy
 #| msgid "&New..."
 msgid "&New"
@@ -3935,39 +3921,39 @@ msgstr "&Baru..."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:41
 #. i18n: ectx: property (whatsThis), widget (QPushButton, btnDelete)
-#: rc.cpp:347
+#: rc.cpp:335
 msgid "Delete the current file type."
 msgstr "Hapuskan jenis fail semasa."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:82
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtName)
-#: rc.cpp:359
+#: rc.cpp:347
 msgid ""
 "The name of the filetype will be the text of the corresponding menu item."
 msgstr "Nama jenis fail akan menjadi teks item menu yang berkenaan."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:89
 #. i18n: ectx: property (text), widget (QLabel, lblSection)
-#: rc.cpp:362
+#: rc.cpp:350
 msgid "&Section:"
 msgstr "&Seksyen:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:99
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtSection)
-#: rc.cpp:365
+#: rc.cpp:353
 msgid "The section name is used to organize the file types in menus."
 msgstr "Nama seksyen digunakan untuk mengatur jenis fail dalam menu."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:106
 #. i18n: ectx: property (text), widget (QLabel, lblVariables)
-#: rc.cpp:368
+#: rc.cpp:356
 #, fuzzy
 msgid "&Variables:"
 msgstr "&Variabel:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:116
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtVariables)
-#: rc.cpp:371
+#: rc.cpp:359
 #, fuzzy
 #| msgid ""
 #| "<p>This string allows you to configure Kate's settings for the files "
@@ -3987,7 +3973,7 @@ msgstr ""
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:123
 #. i18n: ectx: property (text), widget (QLabel, lblHl)
-#: rc.cpp:374
+#: rc.cpp:362
 #, fuzzy
 #| msgid "&Highlighting"
 msgid "&Highlighting:"
@@ -3995,7 +3981,7 @@ msgstr "&Penonjolan"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:136
 #. i18n: ectx: property (text), widget (QLabel, lblIndenter)
-#: rc.cpp:377
+#: rc.cpp:365
 #, fuzzy
 #| msgid "&Indentation"
 msgid "&Indentation Mode:"
@@ -4003,7 +3989,7 @@ msgstr "&Indentasi"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:149
 #. i18n: ectx: property (text), widget (QLabel, lblExtensions)
-#: rc.cpp:380
+#: rc.cpp:368
 #, fuzzy
 #| msgid "File e&xtensions:"
 msgid "File e&xtensions:"
@@ -4011,7 +3997,7 @@ msgstr "&Sambungan fail:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:159
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtFileExtensions)
-#: rc.cpp:383
+#: rc.cpp:371
 #, fuzzy
 #| msgid ""
 #| "The wildcards mask allows you to select files by filename. A typical mask "
@@ -4029,13 +4015,13 @@ msgstr ""
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:166
 #. i18n: ectx: property (text), widget (QLabel, lblMimeTypes)
-#: rc.cpp:386
+#: rc.cpp:374
 msgid "MIME &types:"
 msgstr "&Jenis MIME:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:181
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtMimeTypes)
-#: rc.cpp:389
+#: rc.cpp:377
 #, fuzzy
 #| msgid ""
 #| "The mime type mask allows you to select files by mimetype. The string is "
@@ -4052,13 +4038,13 @@ msgstr ""
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:188
 #. i18n: ectx: property (whatsThis), widget (QToolButton, btnMimeTypes)
-#: rc.cpp:392
+#: rc.cpp:380
 msgid "Displays a wizard that helps you easily select mimetypes."
 msgstr "Memaparkan wizard yang membantu anda memilih jenis mime dengan mudah."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:197
 #. i18n: ectx: property (text), widget (QLabel, lblPriority)
-#: rc.cpp:395
+#: rc.cpp:383
 #, fuzzy
 #| msgid "Prio&rity:"
 msgid "P&riority:"
@@ -4066,7 +4052,7 @@ msgstr "&Keutamaan:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:207
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbPriority)
-#: rc.cpp:398
+#: rc.cpp:386
 #, fuzzy
 #| msgid ""
 #| "Sets a priority for this file type. If more than one file type selects "
@@ -4080,7 +4066,7 @@ msgstr ""
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:232
 #. i18n: ectx: property (text), widget (QPushButton, btnDownload)
-#: rc.cpp:401
+#: rc.cpp:389
 #, fuzzy
 #| msgid "Highlighting Rules"
 msgid "Download Highlighting Files..."
@@ -4088,7 +4074,7 @@ msgstr "Peraturan Penonjolan"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:25
 #. i18n: ectx: property (text), widget (QLabel, lblMode)
-#: rc.cpp:404
+#: rc.cpp:392
 #, fuzzy
 #| msgid "&Indentation mode:"
 msgid "Default indentation mode:"
@@ -4096,7 +4082,7 @@ msgstr "Mod &indentasi:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:35
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbMode)
-#: rc.cpp:407
+#: rc.cpp:395
 msgid ""
 "This is a list of available indentation modes. The specified indentation "
 "mode will be used for all new documents. Be aware that it is also possible "
@@ -4106,7 +4092,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:57
 #. i18n: ectx: property (title), widget (QGroupBox, gbIndentationMode)
-#: rc.cpp:410
+#: rc.cpp:398
 #, fuzzy
 #| msgid "Indentation"
 msgid "Indent using"
@@ -4114,7 +4100,7 @@ msgstr "Indentasi"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:63
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithTabs)
-#: rc.cpp:413
+#: rc.cpp:401
 #, fuzzy
 #| msgid "Tabulators"
 msgid "&Tabulators"
@@ -4122,14 +4108,14 @@ msgstr "Tabulator"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithSpaces)
-#: rc.cpp:416
+#: rc.cpp:404
 #, fuzzy
 msgid "&Spaces"
 msgstr "&Ganti"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:77
 #. i18n: ectx: property (text), widget (QLabel, lblIndentWidth)
-#: rc.cpp:419
+#: rc.cpp:407
 #, fuzzy
 #| msgid "Indentation with Spaces"
 msgid "&Indentation width:"
@@ -4137,7 +4123,7 @@ msgstr "Indentasi dengan Ruang"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbIndentWidth)
-#: rc.cpp:422
+#: rc.cpp:410
 msgid ""
 "The indentation width is the number of spaces which is used to indent a "
 "line. If the option <b>Insert spaces instead of tabulators</b> in the "
@@ -4147,7 +4133,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentMixed)
-#: rc.cpp:425
+#: rc.cpp:413
 #, fuzzy
 #| msgid "Tabulators"
 msgid "Tabulators &and Spaces"
@@ -4155,7 +4141,7 @@ msgstr "Tabulator"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:123
 #. i18n: ectx: property (text), widget (QLabel, lblTabWidth)
-#: rc.cpp:428
+#: rc.cpp:416
 #, fuzzy
 #| msgid "Tab width:"
 msgid "Tab wi&dth:"
@@ -4163,7 +4149,7 @@ msgstr "Lebar tab:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:152
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: rc.cpp:431
+#: rc.cpp:419
 #, fuzzy
 #| msgid "Indentation Rules"
 msgid "Indentation Properties"
@@ -4171,7 +4157,7 @@ msgstr "Peraturan Indentasi"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:158
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:434
+#: rc.cpp:422
 msgid ""
 "If this option is disabled, changing the indentation level aligns a line to "
 "a multiple of the width specified in <b>Indentation width</b>."
@@ -4179,7 +4165,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:161
 #. i18n: ectx: property (text), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:437
+#: rc.cpp:425
 #, fuzzy
 #| msgid "&Keep extra spaces"
 msgid "&Keep extra spaces"
@@ -4187,7 +4173,7 @@ msgstr "Simpan ruang e&kstra"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:168
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:440
+#: rc.cpp:428
 msgid ""
 "If this option is selected, pasted code from the clipboard is indented. "
 "Triggering the <b>undo</b>-action removes the indentation."
@@ -4195,13 +4181,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:443
+#: rc.cpp:431
 msgid "Adjust indentation of code &pasted from the clipboard"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:181
 #. i18n: ectx: property (title), widget (QGroupBox, gbKeys)
-#: rc.cpp:446
+#: rc.cpp:434
 #, fuzzy
 #| msgid "Indentation"
 msgid "Indentation Actions"
@@ -4209,7 +4195,7 @@ msgstr "Indentasi"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:187
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:449
+#: rc.cpp:437
 msgid ""
 "If this option is selected, the <b>Backspace</b> key decreases the "
 "indentation level if the cursor is located in the leading blank space of a "
@@ -4218,7 +4204,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:190
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:452
+#: rc.cpp:440
 #, fuzzy
 #| msgid "&Backspace key indents"
 msgid "&Backspace key in leading blank space unindents"
@@ -4226,7 +4212,7 @@ msgstr "Anjak ke &belakang inden kekunci"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:200
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:455
+#: rc.cpp:443
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4240,7 +4226,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:233
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:461
+#: rc.cpp:449
 msgid ""
 "If this option is selected, the <b>Tab</b> key always inserts white space so "
 "that the next tab position is reached. If the option <b>Insert spaces "
@@ -4250,13 +4236,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:236
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:464
+#: rc.cpp:452
 msgid "Always advance to the &next tab position"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:243
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:467
+#: rc.cpp:455
 msgid ""
 "If this option is selected, the <b>Tab</b> key always indents the current "
 "line by the number of character positions specified in <b>Indentation width</"
@@ -4265,13 +4251,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:246
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:470
+#: rc.cpp:458
 msgid "Always increase indentation &level"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:253
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:473
+#: rc.cpp:461
 msgid ""
 "If this option is selected, the <b>Tab</b> key either indents the current "
 "line or advances to the next tab position.<p> If the insertion point is at "
@@ -4287,13 +4273,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:256
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:476
+#: rc.cpp:464
 msgid "Increase indentation level if in l&eading blank space"
 msgstr ""
 
 #. i18n: file: dialogs/modonhdwidget.ui:22
 #. i18n: ectx: property (text), widget (QCheckBox, chkIgnoreWhiteSpaces)
-#: rc.cpp:479
+#: rc.cpp:467
 #, fuzzy
 #| msgid "&Ignore Changes"
 msgid "Ignore white space changes"
@@ -4301,7 +4287,7 @@ msgstr "&Abaikan Perubahan"
 
 #. i18n: file: dialogs/modonhdwidget.ui:29
 #. i18n: ectx: property (whatsThis), widget (QPushButton, btnDiff)
-#: rc.cpp:482
+#: rc.cpp:470
 #, fuzzy
 #| msgid ""
 #| "Calculates the difference between the editor contents and the disk file "
@@ -4316,19 +4302,19 @@ msgstr ""
 
 #. i18n: file: dialogs/modonhdwidget.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, btnDiff)
-#: rc.cpp:485
+#: rc.cpp:473
 msgid "&View Difference"
 msgstr "&Papar Perbezaan"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbConfigFile)
-#: rc.cpp:488
+#: rc.cpp:476
 msgid "Folder Config File"
 msgstr "Fail Konfig Folder"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:491
+#: rc.cpp:479
 #, fuzzy
 #| msgid "Se&arch depth for config file:"
 msgid "Search &depth for config file:"
@@ -4336,7 +4322,7 @@ msgstr "&Cari kedalaman untuk fail konfig:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:41
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:494
+#: rc.cpp:482
 #, fuzzy
 #| msgid ""
 #| "The editor will search the given number of folder levels upwards for ."
@@ -4350,13 +4336,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:44
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:497
+#: rc.cpp:485
 msgid "Do not use config file"
 msgstr "Jangan guna fail konfig"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:75
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbBackup)
-#: rc.cpp:500
+#: rc.cpp:488
 #, fuzzy
 #| msgid ""
 #| "<p>Backing up on save will cause Kate to copy the disk file to '&lt;"
@@ -4374,13 +4360,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:78
 #. i18n: ectx: property (title), widget (QGroupBox, gbBackup)
-#: rc.cpp:503
+#: rc.cpp:491
 msgid "Backup on Save"
 msgstr "Ganti semasa Simpan"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:506
+#: rc.cpp:494
 #, fuzzy
 #| msgid "Check this if you want backups of local files when saving"
 msgid ""
@@ -4390,7 +4376,7 @@ msgstr "Semak ini jika anda ingin sandaran fail setempatl semasa menyimpan"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:509
+#: rc.cpp:497
 #, fuzzy
 #| msgid "&Remote files"
 msgid "&Local files"
@@ -4398,7 +4384,7 @@ msgstr "Fail &Jauh"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:512
+#: rc.cpp:500
 #, fuzzy
 #| msgid "Check this if you want backups of remote files when saving"
 msgid ""
@@ -4408,20 +4394,20 @@ msgstr "Semak ini jika anda ingin sandaran fail jauh semasa menyimpan"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:515
+#: rc.cpp:503
 msgid "&Remote files"
 msgstr "Fail &Jauh"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:107
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:518
+#: rc.cpp:506
 #, fuzzy
 msgid "&Prefix:"
 msgstr "&Awalan:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:117
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupPrefix)
-#: rc.cpp:521
+#: rc.cpp:509
 #, fuzzy
 #| msgid "Enter the prefix to prepend to the backup file names"
 msgid "Enter the prefix to prepend to the backup file names."
@@ -4429,13 +4415,13 @@ msgstr "Masukkan awalan untuk prepend kepada nama fail sandaran"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:524
+#: rc.cpp:512
 msgid "&Suffix:"
 msgstr "&Sufiks:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:134
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupSuffix)
-#: rc.cpp:527
+#: rc.cpp:515
 #, fuzzy
 #| msgid "Enter the suffix to add to the backup file names"
 msgid "Enter the suffix to append to the backup file names."
@@ -4443,25 +4429,25 @@ msgstr "Masukkan akhiran untuk tambah kepada nama fail sandaran"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:167
 #. i18n: ectx: property (text), widget (QCheckBox, chkNoSync)
-#: rc.cpp:530
+#: rc.cpp:518
 msgid "Disable swap files syncing."
 msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbFileFormat)
-#: rc.cpp:533
+#: rc.cpp:521
 msgid "File Format"
 msgstr "Format Fail"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, lblEncoding)
-#: rc.cpp:536
+#: rc.cpp:524
 msgid "&Encoding:"
 msgstr "P&engenkodan:"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:41
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncoding)
-#: rc.cpp:539
+#: rc.cpp:527
 msgid ""
 "This defines the standard encoding to use to open/save files, if not changed "
 "in the open/save dialog or by using a command line option."
@@ -4469,7 +4455,7 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:48
 #. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection)
-#: rc.cpp:542
+#: rc.cpp:530
 #, fuzzy
 #| msgid "&Encoding:"
 msgid "&Encoding Detection:"
@@ -4477,7 +4463,7 @@ msgstr "P&engenkodan:"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:58
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingDetection)
-#: rc.cpp:545
+#: rc.cpp:533
 msgid ""
 "if neither the encoding chosen as standard above, nor the encoding specified "
 "in the open/save dialog, nor the encoding specified on command line match "
@@ -4486,7 +4472,7 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:65
 #. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection)
-#: rc.cpp:548
+#: rc.cpp:536
 #, fuzzy
 #| msgid "&Encoding:"
 msgid "&Fallback Encoding"
@@ -4494,7 +4480,7 @@ msgstr "P&engenkodan:"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:75
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingFallback)
-#: rc.cpp:551
+#: rc.cpp:539
 msgid ""
 "This defines the fallback encoding to try for opening files if neither the "
 "encoding chosen as standard above, nor the encoding specified in the open/"
@@ -4507,7 +4493,7 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:82
 #. i18n: ectx: property (text), widget (QLabel, lblEOL)
-#: rc.cpp:554
+#: rc.cpp:542
 #, fuzzy
 #| msgid "End &of line:"
 msgid "E&nd of line:"
@@ -4515,25 +4501,25 @@ msgstr "Akhir dari bar&is:"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:93
 #. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:557
+#: rc.cpp:545
 msgid "UNIX"
 msgstr "UNIX"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:98
 #. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:560
+#: rc.cpp:548
 msgid "DOS/Windows"
 msgstr "DOS/Windows"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:103
 #. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:563
+#: rc.cpp:551
 msgid "Macintosh"
 msgstr "Macintosh"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:113
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkDetectEOL)
-#: rc.cpp:566
+#: rc.cpp:554
 #, fuzzy
 #| msgid ""
 #| "Check this if you want the editor to autodetect the end of line type.The "
@@ -4548,14 +4534,14 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:116
 #. i18n: ectx: property (text), widget (QCheckBox, chkDetectEOL)
-#: rc.cpp:569
+#: rc.cpp:557
 #, fuzzy
 msgid "A&utomatic end of line detection"
 msgstr "`%s' hilang pada penghujung baris"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:123
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkEnableBOM)
-#: rc.cpp:572
+#: rc.cpp:560
 msgid ""
 "The byte order mark is a special sequence at the beginning of unicode "
 "encoded documents. It helps editors to open text documents with the correct "
@@ -4565,19 +4551,19 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:126
 #. i18n: ectx: property (text), widget (QCheckBox, chkEnableBOM)
-#: rc.cpp:575
+#: rc.cpp:563
 msgid "Enable byte order marker"
 msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:136
 #. i18n: ectx: property (title), widget (QGroupBox, gbCleanups)
-#: rc.cpp:578
+#: rc.cpp:566
 msgid "Automatic Cleanups on Load/Save"
 msgstr "Pembersihan Automatik bagi Muat/Simpan"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:142
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:581
+#: rc.cpp:569
 #, fuzzy
 #| msgid ""
 #| "The editor will automatically eliminate extra spaces at the ends of lines "
@@ -4592,38 +4578,38 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:145
 #. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:584
+#: rc.cpp:572
 msgid "Re&move trailing spaces"
 msgstr "&Buang ruang mengekor"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:587
+#: rc.cpp:575
 #, fuzzy
 msgid "Text Area Background"
 msgstr "Latar belakang Kawasan Teks "
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:590
+#: rc.cpp:578
 msgid "Normal text:"
 msgstr "Teks normal:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:33
 #. i18n: ectx: property (whatsThis), widget (KColorButton, back)
-#: rc.cpp:593
+#: rc.cpp:581
 msgid "<p>Sets the background color of the editing area.</p>"
 msgstr "<p>Tetapkan warna latarbelakang untuk kawasan suntingan.</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:596
+#: rc.cpp:584
 msgid "Selected text:"
 msgstr "Teks dipilih:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:47
 #. i18n: ectx: property (whatsThis), widget (KColorButton, selected)
-#: rc.cpp:599
+#: rc.cpp:587
 msgid ""
 "<p>Sets the background color of the selection.</p><p>To set the text color "
 "for selected text, use the \"<b>Configure Highlighting</b>\" dialog.</p>"
@@ -4633,13 +4619,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:54
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:602
+#: rc.cpp:590
 msgid "Current line:"
 msgstr "Baris semasa:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:61
 #. i18n: ectx: property (whatsThis), widget (KColorButton, current)
-#: rc.cpp:605
+#: rc.cpp:593
 msgid ""
 "<p>Sets the background color of the currently active line, which means the "
 "line where your cursor is positioned.</p>"
@@ -4649,13 +4635,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:68
 #. i18n: ectx: property (whatsThis), widget (KComboBox, combobox)
-#: rc.cpp:608
+#: rc.cpp:596
 msgid "<p>Select the marker type you want to change.</p>"
 msgstr "<p>Pilih jenis penanda yang anda ingin ubah.</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:75
 #. i18n: ectx: property (whatsThis), widget (KColorButton, markers)
-#: rc.cpp:611
+#: rc.cpp:599
 msgid ""
 "<p>Sets the background color of the selected marker type.</p><p><b>Note</b>: "
 "The marker color is displayed lightly because of transparency.</p>"
@@ -4665,25 +4651,25 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:85
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:614
+#: rc.cpp:602
 msgid "Additional Elements"
 msgstr "Elemen Tambahan"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:617
+#: rc.cpp:605
 msgid "Left border background:"
 msgstr "Latarbelakang sempadan kiri :"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:104
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:620
+#: rc.cpp:608
 msgid "Line numbers:"
 msgstr "Nombor baris:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:111
 #. i18n: ectx: property (whatsThis), widget (KColorButton, linenumber)
-#: rc.cpp:623
+#: rc.cpp:611
 msgid ""
 "<p>This color will be used to draw the line numbers (if enabled) and the "
 "lines in the code-folding pane.</p>"
@@ -4693,13 +4679,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:118
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:626
+#: rc.cpp:614
 msgid "Bracket highlight:"
 msgstr "Tonjolkan kurungan:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:125
 #. i18n: ectx: property (whatsThis), widget (KColorButton, bracket)
-#: rc.cpp:629
+#: rc.cpp:617
 msgid ""
 "<p>Sets the bracket matching color. This means, if you place the cursor e.g. "
 "at a <b>(</b>, the matching <b>)</b> will be highlighted with this color.</p>"
@@ -4710,13 +4696,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:132
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:632
+#: rc.cpp:620
 msgid "Word wrap markers:"
 msgstr "Penanda bungkus perkataan:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:139
 #. i18n: ectx: property (whatsThis), widget (KColorButton, wwmarker)
-#: rc.cpp:635
+#: rc.cpp:623
 msgid ""
 "<p>Sets the color of Word Wrap-related markers:</p><dl><dt>Static Word Wrap</"
 "dt><dd>A vertical line which shows the column where text is going to be "
@@ -4730,7 +4716,7 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:146
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:638
+#: rc.cpp:626
 #, fuzzy
 #| msgid "Tab markers:"
 msgid "Tab and space markers:"
@@ -4738,7 +4724,7 @@ msgstr "Penanda tab :"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:153
 #. i18n: ectx: property (whatsThis), widget (KColorButton, tmarker)
-#: rc.cpp:641
+#: rc.cpp:629
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid "<p>Sets the color of the tabulator marks.</p>"
@@ -4746,13 +4732,13 @@ msgstr "<p>Tetapkan warna penanda tabulator:</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:160
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:644
+#: rc.cpp:632
 msgid "Spelling mistake line:"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:167
 #. i18n: ectx: property (whatsThis), widget (KColorButton, spellingmistakeline)
-#: rc.cpp:647
+#: rc.cpp:635
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid ""
@@ -4761,7 +4747,7 @@ msgstr "<p>Tetapkan warna penanda tabulator:</p>"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:29
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators)
-#: rc.cpp:656
+#: rc.cpp:644
 #, fuzzy
 #| msgid "Dynamic word wrap indicators (if applicable):"
 msgid "Dynamic &word wrap indicators (if applicable):"
@@ -4769,7 +4755,7 @@ msgstr "Penanda balut perkataan Dinamik (jika boleh):"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:39
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbDynamicWordWrapIndicator)
-#: rc.cpp:659
+#: rc.cpp:647
 #, fuzzy
 #| msgid "Choose when the Dynamic Word Wrap Indicators should be displayed"
 msgid "Choose when the Dynamic Word Wrap Indicators should be displayed."
@@ -4777,7 +4763,7 @@ msgstr "Pilih bila penanda Balut Perkataan Dinamik harus dipaparkan"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators_2)
-#: rc.cpp:662
+#: rc.cpp:650
 #, fuzzy
 #| msgid "Vertically align dynamically wrapped lines to indentation depth:"
 msgid "Align dynamically wrapped lines to indentation depth:"
@@ -4786,7 +4772,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:62
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:666
+#: rc.cpp:654
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<p>Enables the start of dynamically wrapped lines to be aligned "
@@ -4816,7 +4802,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:68
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:673
+#: rc.cpp:661
 #, fuzzy, no-c-format
 #| msgid "% of View Width"
 msgid "% of View Width"
@@ -4824,7 +4810,7 @@ msgstr "% Lebar Paparan"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:84
 #. i18n: ectx: property (title), widget (QGroupBox, gbWhitespaceHighlighting)
-#: rc.cpp:676
+#: rc.cpp:664
 #, fuzzy
 #| msgid "&Highlighting"
 msgid "Whitespace Highlighting"
@@ -4832,7 +4818,7 @@ msgstr "&Penonjolan"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:90
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:679
+#: rc.cpp:667
 msgid ""
 "The editor will display a symbol to indicate the presence of a tab in the "
 "text."
@@ -4842,14 +4828,14 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:682
+#: rc.cpp:670
 #, fuzzy
 msgid "&Highlight tabulators"
 msgstr "&Penonjolan"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowSpaces)
-#: rc.cpp:685
+#: rc.cpp:673
 #, fuzzy
 #| msgid "Highlighting Rules"
 msgid "Highlight trailing &spaces"
@@ -4857,7 +4843,7 @@ msgstr "Peraturan Penonjolan"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:116
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:691
+#: rc.cpp:679
 msgid ""
 "Changing this mode affects only newly opened / created documents. In KWrite "
 "a restart is recommended."
@@ -4865,13 +4851,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:119
 #. i18n: ectx: property (text), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:694
+#: rc.cpp:682
 msgid "Enable power user mode (KDE 3 mode)"
 msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:126
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:697
+#: rc.cpp:685
 #, fuzzy
 msgid ""
 "If this is enabled, the editor will display vertical lines to help identify "
@@ -4882,7 +4868,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:700
+#: rc.cpp:688
 #, fuzzy
 #| msgid "Show indentation lines"
 msgid "Show i&ndentation lines"
@@ -4890,7 +4876,7 @@ msgstr "Papar baris indentasi"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:136
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:703
+#: rc.cpp:691
 msgid ""
 "If this is enabled, the range between the selected matching brackets will be "
 "highlighted."
@@ -4898,13 +4884,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:706
+#: rc.cpp:694
 msgid "Highlight range between selected brackets"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:18
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:712
+#: rc.cpp:700
 msgid ""
 "When selected, the vi input mode will be enabled when opening a new view. "
 "You can still toggle the vi input mode on/off for a particular view in the "
@@ -4913,13 +4899,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:21
 #. i18n: ectx: property (text), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:715
+#: rc.cpp:703
 msgid "Use Vi input mode"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:28
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:718
+#: rc.cpp:706
 msgid ""
 "When selected, vi commands will override Kate's built-in commands. For "
 "example: Ctrl+R will redo, and override the standard action (showing the "
@@ -4928,13 +4914,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:721
+#: rc.cpp:709
 msgid "Let Vi commands override Kate shortcuts"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:40
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:724
+#: rc.cpp:712
 msgid ""
 "By default, an extra status bar will be used when the Vi input mode is "
 "enabled. This status bar shows commands while they are being typed and "
@@ -4945,13 +4931,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:43
 #. i18n: ectx: property (text), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:729
+#: rc.cpp:717
 msgid "Hide the Vi mode status bar"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:58
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox)
-#: rc.cpp:732
+#: rc.cpp:720
 msgid ""
 "Key mapping is used to change the meaning of typed keys. This allows you to "
 "move commands to other keys or make special keypresses for doing a series of "
@@ -4965,13 +4951,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:61
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:740
+#: rc.cpp:728
 msgid "Key Mapping"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:71
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:743
+#: rc.cpp:731
 #, fuzzy
 #| msgid "Normal Text"
 msgid "Normal mode"
@@ -4979,14 +4965,14 @@ msgstr "Teks Normal"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:95
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:749
+#: rc.cpp:737
 #, fuzzy
 msgid "Replacement"
 msgstr "&Ganti"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, btnRemoveSelectedNormal)
-#: rc.cpp:752
+#: rc.cpp:740
 #, fuzzy
 #| msgid "Selected"
 msgid "Remove selected"
@@ -4994,8 +4980,22 @@ msgstr "Dipilih"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:112
 #. i18n: ectx: property (text), widget (QPushButton, btnAddNewNormal)
-#: rc.cpp:755
+#: rc.cpp:743
 msgid "Add new mapping"
+msgstr ""
+
+#. i18n: file: dialogs/completionconfigtab.ui:18
+#. i18n: ectx: property (text), widget (QCheckBox, chkAutoCompletionEnabled)
+#: rc.cpp:749
+#, fuzzy
+#| msgid "Word Completion Plugin"
+msgid "Enable &auto completion"
+msgstr "Plugin Penyelesaian Perkataan"
+
+#. i18n: file: dialogs/completionconfigtab.ui:42
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:755
+msgid "Minimal word length to complete:"
 msgstr ""
 
 #. i18n: file: search/searchbarincremental.ui:32
@@ -6839,6 +6839,11 @@ msgstr ""
 msgctxt "Language"
 msgid "Zonnon"
 msgstr "(Tidak diketahui)"
+
+#, fuzzy
+#~| msgid "Automatic Completion Popup"
+#~ msgid "&Auto completion enabled"
+#~ msgstr "Popup Penyelesaian Automatik"
 
 #, fuzzy
 #~| msgid "&Format:"
