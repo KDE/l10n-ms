@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-03 03:33+0100\n"
+"POT-Creation-Date: 2011-03-04 03:31+0100\n"
 "PO-Revision-Date: 2007-02-24 13:11+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -198,7 +198,7 @@ msgid ""
 msgstr "Setempat fail."
 
 #: colorscheme.cpp:229 colorscheme.cpp:244 kstarsactions.cpp:594
-#: skymap.cpp:1090 tools/modcalcaltaz.cpp:238 tools/modcalcangdist.cpp:128
+#: skymap.cpp:1070 tools/modcalcaltaz.cpp:238 tools/modcalcangdist.cpp:128
 #: tools/modcalcapcoord.cpp:151 tools/modcalcdaylength.cpp:246
 #: tools/modcalceclipticcoords.cpp:203 tools/modcalcgalcoord.cpp:193
 #: tools/modcalcgeodcoord.cpp:232 tools/modcalcjd.cpp:123
@@ -630,7 +630,7 @@ msgstr "_Jangan Format"
 msgid "Engage &Tracking"
 msgstr ""
 
-#: kstarsactions.cpp:719 kstars.cpp:149 skymap.cpp:464
+#: kstarsactions.cpp:719 kstars.cpp:149 skymap.cpp:444
 #, fuzzy
 msgid "Stop &Tracking"
 msgstr "Henti $arahan"
@@ -684,14 +684,14 @@ msgstr "Kordinat Bulan"
 msgid "Projection system: %1"
 msgstr ""
 
-#: kstars.cpp:158 kstarsinit.cpp:225 more-messages.cpp:16 skymap.cpp:1169
+#: kstars.cpp:158 kstarsinit.cpp:225 more-messages.cpp:16 skymap.cpp:1149
 msgid "Switch to QPainter backend"
 msgstr ""
 
 #. i18n: file: kstars.kcfg:693
 #. i18n: ectx: label, entry (UseGL), group (View)
 #: kstars.cpp:158 kstarsinit.cpp:225 more-messages.cpp:14 rc.cpp:5371
-#: skymap.cpp:1146 skymap.cpp:1153 skymap.cpp:1161
+#: skymap.cpp:1126 skymap.cpp:1133 skymap.cpp:1141
 msgid "Switch to OpenGL backend"
 msgstr ""
 
@@ -29353,7 +29353,7 @@ msgstr "Tidak dapat Edit"
 msgid " Welcome to KStars "
 msgstr "Selamat datang ke &RHL;"
 
-#: kstarsinit.cpp:590 skymap.cpp:424 widgets/infoboxwidget.cpp:117
+#: kstarsinit.cpp:590 skymap.cpp:404 widgets/infoboxwidget.cpp:117
 #, fuzzy
 msgid "nothing"
 msgstr "Tiada"
@@ -29557,14 +29557,14 @@ msgstr "_Log kepada Fail:"
 
 #. i18n: file: kstars.kcfg:694
 #. i18n: ectx: whatsthis, entry (UseGL), group (View)
-#: more-messages.cpp:12 rc.cpp:5374 skymap.cpp:1150
+#: more-messages.cpp:12 rc.cpp:5374 skymap.cpp:1130
 msgid ""
 "This version of KStars comes with new experimental OpenGL support. Our "
 "experience is that OpenGL works much faster on machines with hardware "
 "acceleration. Would you like to switch to OpenGL painting backends?"
 msgstr ""
 
-#: more-messages.cpp:18 skymap.cpp:1160
+#: more-messages.cpp:18 skymap.cpp:1140
 msgid ""
 "Infoboxes will be disabled as they do not work correctly when using OpenGL "
 "backends as of this version"
@@ -34264,7 +34264,7 @@ msgstr "Buka Terperinci for."
 
 #. i18n: file: tools/wutdialog.ui:480
 #. i18n: ectx: property (text), widget (KPushButton, DetailButton)
-#: rc.cpp:2391 skymap.cpp:751 dialogs/detaildialog.cpp:80
+#: rc.cpp:2391 skymap.cpp:731 dialogs/detaildialog.cpp:80
 #, fuzzy
 msgid "Object Details"
 msgstr "Perincian bagi '%s'"
@@ -41017,79 +41017,75 @@ msgstr "Tidak sah Tarikh Masa."
 msgid "New clock scale: %1 sec"
 msgstr "Baru skala"
 
-#: skymap.cpp:98 skycomponents/horizoncomponent.cpp:323
-msgid "Unrecognized coordinate projection: "
-msgstr ""
-
-#: skymap.cpp:446
+#: skymap.cpp:426
 #, fuzzy
 msgid "Requested Position Below Horizon"
 msgstr "Bulan kini dibawah ufuk."
 
-#: skymap.cpp:447
+#: skymap.cpp:427
 #, fuzzy
 msgid ""
 "The requested position is below the horizon.\n"
 "Would you like to go there anyway?"
 msgstr "ialah seperti hingga?"
 
-#: skymap.cpp:449
+#: skymap.cpp:429
 #, fuzzy
 msgid "Go Anyway"
 msgstr "_Pasang juga"
 
-#: skymap.cpp:449
+#: skymap.cpp:429
 #, fuzzy
 msgid "Keep Position"
 msgstr "Kekal Kebenaran"
 
-#: skymap.cpp:525
+#: skymap.cpp:505
 #, fuzzy
 msgid ""
 "Digitized Sky Survey image provided by the Space Telescope Science Institute "
 "[public domain]."
 msgstr "Langit imej Ruang."
 
-#: skymap.cpp:564
+#: skymap.cpp:544
 msgid ""
 "Sloan Digital Sky Survey image provided by the Astrophysical Research "
 "Consortium [free for non-commercial use]."
 msgstr ""
 
-#: skymap.cpp:620
+#: skymap.cpp:600
 #, fuzzy, kde-format
 msgid "Angular distance: %1"
 msgstr "Langkah bersudut:"
 
-#: skymap.cpp:751
+#: skymap.cpp:731
 #, fuzzy
 msgid "No object selected."
 msgstr "Tiada Objek Dipilih"
 
-#: skymap.cpp:1089
+#: skymap.cpp:1069
 #, fuzzy
 msgid ""
 "Custom image-links file could not be opened.\n"
 "Link cannot be recorded for future sessions."
 msgstr "Tersendiri imej fail for."
 
-#: skymap.cpp:1108
+#: skymap.cpp:1088
 #, fuzzy
 msgid ""
 "Custom information-links file could not be opened.\n"
 "Link cannot be recorded for future sessions."
 msgstr "Tersendiri fail for."
 
-#: skymap.cpp:1108
+#: skymap.cpp:1088
 #, fuzzy
 msgid "Could not Open File"
 msgstr "tidak dapat membuka fail tetapan `%s': %s"
 
-#: skymap.cpp:1184
+#: skymap.cpp:1164
 msgid "Xplanet binary path is empty in config panel."
 msgstr ""
 
-#: skymap.cpp:1289
+#: skymap.cpp:1269
 #, fuzzy, kde-format
 #| msgid "Sunset: %1"
 msgid "Run : %1"
@@ -43770,6 +43766,10 @@ msgstr "default"
 #, fuzzy
 msgid "Creating horizon"
 msgstr "Usia Bulan"
+
+#: skycomponents/horizoncomponent.cpp:323
+msgid "Unrecognized coordinate projection: "
+msgstr ""
 
 #: skycomponents/horizoncomponent.cpp:457
 #, fuzzy
