@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-13 03:22+0100\n"
+"POT-Creation-Date: 2011-03-14 03:25+0100\n"
 "PO-Revision-Date: 2009-06-14 00:43+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -2046,7 +2046,7 @@ msgstr "Muatturun Dipilih"
 
 #. i18n: file: context/applets/lyrics/lyricsSettings.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, lyricsSettings)
-#: rc.cpp:975 context/applets/lyrics/LyricsApplet.cpp:647
+#: rc.cpp:975 context/applets/lyrics/LyricsApplet.cpp:639
 #, fuzzy
 #| msgid "Settings"
 msgid "Lyrics Settings"
@@ -6273,8 +6273,7 @@ msgstr "Umum"
 #: configdialog/dialogs/ScriptsConfig.cpp:57
 #: context/applets/lyrics/LyricsApplet.cpp:398
 #: context/applets/lyrics/LyricsApplet.cpp:511
-#: context/applets/lyrics/LyricsApplet.cpp:537
-#: context/applets/lyrics/LyricsApplet.cpp:563 dialogs/TagDialog.cpp:550
+#: context/applets/lyrics/LyricsApplet.cpp:555 dialogs/TagDialog.cpp:550
 msgid "Lyrics"
 msgstr "Lirik"
 
@@ -6369,7 +6368,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: context/applets/albums/Albums.cpp:65
-#: context/engines/current/CurrentEngine.cpp:144
+#: context/engines/current/CurrentEngine.cpp:145
 msgid "Recently added albums"
 msgstr ""
 
@@ -6645,12 +6644,12 @@ msgstr "Mendapatkan pengepala rpm"
 msgid "Lyrics: Suggested URLs"
 msgstr "Terima gantian yang dicadang"
 
-#: context/applets/lyrics/LyricsApplet.cpp:570
+#: context/applets/lyrics/LyricsApplet.cpp:562
 #, fuzzy
 msgid "Lyrics: Not found"
 msgstr "Fail Tidak Dijumpai"
 
-#: context/applets/lyrics/LyricsApplet.cpp:610
+#: context/applets/lyrics/LyricsApplet.cpp:602
 msgctxt "@info"
 msgid ""
 "Do you really want to refetch lyrics for this track? All changes you may "
@@ -7145,13 +7144,13 @@ msgid ""
 "Please add some applets from the toolbar at the bottom of the context view."
 msgstr ""
 
-#: context/engines/current/CurrentEngine.cpp:213
+#: context/engines/current/CurrentEngine.cpp:214
 #, fuzzy
 msgctxt "Header text for current album applet"
 msgid "Albums"
 msgstr "Album"
 
-#: context/engines/current/CurrentEngine.cpp:224
+#: context/engines/current/CurrentEngine.cpp:225
 #, kde-format
 msgid "Albums by %1"
 msgstr ""
@@ -10152,6 +10151,76 @@ msgstr "Kadar Sampel"
 msgid "Edit Filter"
 msgstr ""
 
+#: dialogs/deviceconfiguredialog.cpp:39
+#, kde-format
+msgid "Select Plugin for %1"
+msgstr ""
+
+#: dialogs/deviceconfiguredialog.cpp:45
+msgid "Configure Media Device"
+msgstr "Tetapkan Peranti Media"
+
+#: dialogs/deviceconfiguredialog.cpp:68
+msgid "Pre-&connect command:"
+msgstr "&Arahan pra-sambung:"
+
+#: dialogs/deviceconfiguredialog.cpp:70
+#, c-format
+msgid "Example: mount %d"
+msgstr "Contoh: mount %d"
+
+#: dialogs/deviceconfiguredialog.cpp:72
+#, c-format
+msgid ""
+"Set a command to be run before connecting to your device (e.g. a mount "
+"command) here.\n"
+"%d is replaced by the device node, %m by the mount point.\n"
+"Empty commands are not executed."
+msgstr ""
+
+#: dialogs/deviceconfiguredialog.cpp:75
+msgid "Post-&disconnect command:"
+msgstr "Arahan selepas &diputuskan:"
+
+#: dialogs/deviceconfiguredialog.cpp:78
+#, c-format
+msgid "Example: eject %d"
+msgstr "Contoh: eject %d"
+
+#: dialogs/deviceconfiguredialog.cpp:79
+#, c-format
+msgid ""
+"Set a command to be run after disconnecting from your device (e.g. an eject "
+"command) here.\n"
+"%d is replaced by the device node, %m by the mount point.\n"
+"Empty commands are not executed."
+msgstr ""
+
+#: dialogs/deviceconfiguredialog.cpp:83
+msgid "&Transcode before transferring to device"
+msgstr ""
+
+#: dialogs/deviceconfiguredialog.cpp:90
+#, kde-format
+msgid "Transcode to preferred format (%1) for device"
+msgstr ""
+
+#: dialogs/deviceconfiguredialog.cpp:92
+msgid "Whenever possible"
+msgstr "Seboleh mungkin"
+
+#: dialogs/deviceconfiguredialog.cpp:95
+msgid "When necessary"
+msgstr "Ketika perlu"
+
+#: dialogs/deviceconfiguredialog.cpp:102
+msgid "Remove transcoded files after transfer"
+msgstr ""
+
+#: dialogs/deviceconfiguredialog.cpp:110 dialogs/deviceconfiguredialog.cpp:111
+msgid "For this feature, a script of type \"Transcode\" has to be running"
+msgstr ""
+
 #: dialogs/TagDialog.cpp:431
 msgid "Filename Layout Chooser"
 msgstr ""
@@ -10223,76 +10292,6 @@ msgstr "Tiada"
 #: dialogs/TagDialog.cpp:1369
 msgid ""
 "Writing to file failed. Please check permissions and available disc space."
-msgstr ""
-
-#: dialogs/deviceconfiguredialog.cpp:39
-#, kde-format
-msgid "Select Plugin for %1"
-msgstr ""
-
-#: dialogs/deviceconfiguredialog.cpp:45
-msgid "Configure Media Device"
-msgstr "Tetapkan Peranti Media"
-
-#: dialogs/deviceconfiguredialog.cpp:68
-msgid "Pre-&connect command:"
-msgstr "&Arahan pra-sambung:"
-
-#: dialogs/deviceconfiguredialog.cpp:70
-#, c-format
-msgid "Example: mount %d"
-msgstr "Contoh: mount %d"
-
-#: dialogs/deviceconfiguredialog.cpp:72
-#, c-format
-msgid ""
-"Set a command to be run before connecting to your device (e.g. a mount "
-"command) here.\n"
-"%d is replaced by the device node, %m by the mount point.\n"
-"Empty commands are not executed."
-msgstr ""
-
-#: dialogs/deviceconfiguredialog.cpp:75
-msgid "Post-&disconnect command:"
-msgstr "Arahan selepas &diputuskan:"
-
-#: dialogs/deviceconfiguredialog.cpp:78
-#, c-format
-msgid "Example: eject %d"
-msgstr "Contoh: eject %d"
-
-#: dialogs/deviceconfiguredialog.cpp:79
-#, c-format
-msgid ""
-"Set a command to be run after disconnecting from your device (e.g. an eject "
-"command) here.\n"
-"%d is replaced by the device node, %m by the mount point.\n"
-"Empty commands are not executed."
-msgstr ""
-
-#: dialogs/deviceconfiguredialog.cpp:83
-msgid "&Transcode before transferring to device"
-msgstr ""
-
-#: dialogs/deviceconfiguredialog.cpp:90
-#, kde-format
-msgid "Transcode to preferred format (%1) for device"
-msgstr ""
-
-#: dialogs/deviceconfiguredialog.cpp:92
-msgid "Whenever possible"
-msgstr "Seboleh mungkin"
-
-#: dialogs/deviceconfiguredialog.cpp:95
-msgid "When necessary"
-msgstr "Ketika perlu"
-
-#: dialogs/deviceconfiguredialog.cpp:102
-msgid "Remove transcoded files after transfer"
-msgstr ""
-
-#: dialogs/deviceconfiguredialog.cpp:110 dialogs/deviceconfiguredialog.cpp:111
-msgid "For this feature, a script of type \"Transcode\" has to be running"
 msgstr ""
 
 #: dynamic/BiasedPlaylist.cpp:142
