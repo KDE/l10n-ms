@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-12 03:43+0200\n"
+"POT-Creation-Date: 2011-04-13 03:25+0200\n"
 "PO-Revision-Date: 2008-07-08 22:08+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -722,7 +722,7 @@ msgstr "Sahkan Simpan"
 
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:40
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:41
-#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:43
+#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:39
 msgid "Misc"
 msgstr ""
 
@@ -986,7 +986,7 @@ msgstr "Biasa"
 #: kopageapp/KoPADocumentStructureDocker.cpp:641
 #: koreport/wrtembed/KoReportDesigner.cpp:833
 #: pigment/compositeops/KoCompositeOpCopy.h:37
-#: pigment/compositeops/KoCompositeOpCopy2.h:52
+#: pigment/compositeops/KoCompositeOpCopy2.h:42
 #, fuzzy
 #| msgid "Company:"
 msgid "Copy"
@@ -3424,41 +3424,20 @@ msgstr ""
 msgid "32 Bits Float"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:27
-msgid "Mix"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:31
-#, fuzzy
-#| msgctxt "color"
-#| msgid "LightGreen"
-msgid "Light"
-msgstr "Hijau Muda"
-
-#: pigment/KoCompositeOp.cpp:35
-#, fuzzy
-#| msgid "Autoinclude"
-msgid "Arithmetic"
-msgstr "Automasuk "
-
-#: pigment/KoCompositeOp.cpp:39
-#, fuzzy
-#| msgid "Color:"
-msgid "Color"
-msgstr "Warna:"
-
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:48
 msgid "Clear"
 msgstr ""
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:121
 #: pigment/compositeops/KoCompositeOpSubtract.h:37
+#: pigment/compositeops/KoCompositeOps.h:87
 #, fuzzy
 msgid "Subtract"
 msgstr "Abstrak"
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:193
 #: pigment/compositeops/KoCompositeOpMultiply.h:35
+#: pigment/compositeops/KoCompositeOps.h:88
 msgid "Multiply"
 msgstr ""
 
@@ -3483,7 +3462,7 @@ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
 msgstr ""
 
 #: pigment/colorspaces/KoLabColorSpace.cpp:42
-#: widgets/KoUniColorChooser.cpp:201
+#: pigment/compositeops/KoCompositeOps.h:152 widgets/KoUniColorChooser.cpp:201
 #, fuzzy
 msgid "Lightness"
 msgstr "Cyan Muda"
@@ -3540,6 +3519,7 @@ msgid "Alpha darken"
 msgstr ""
 
 #: pigment/compositeops/KoCompositeOpDivide.h:36
+#: pigment/compositeops/KoCompositeOps.h:89
 msgid "Divide"
 msgstr ""
 
@@ -3569,10 +3549,12 @@ msgid "Normal"
 msgstr "Biasa"
 
 #: pigment/compositeops/KoCompositeOpOverlay.h:36
+#: pigment/compositeops/KoCompositeOps.h:62
 msgid "Overlay"
 msgstr ""
 
 #: pigment/compositeops/KoCompositeOpScreen.h:36
+#: pigment/compositeops/KoCompositeOps.h:70
 msgid "Screen"
 msgstr "Skrin"
 
@@ -3591,8 +3573,345 @@ msgstr ""
 msgid "Copy Opacy"
 msgstr "Nama Syarikat"
 
+#: pigment/compositeops/KoCompositeOpDissolve.h:61
+msgid "Dissolve"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:63
+msgid "Grain Merge"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:64
+msgid "Grain Extract"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:65
+#, fuzzy
+msgid "Hard Mix"
+msgstr "&Tinggi:"
+
+#: pigment/compositeops/KoCompositeOps.h:66
+msgid "Geometric Mean"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:67
+#, fuzzy
+#| msgid "Variable"
+msgid "Parallel"
+msgstr "Variabel"
+
+#: pigment/compositeops/KoCompositeOps.h:68
+msgid "Allanon"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:71
+#, fuzzy
+msgid "Color Dodge"
+msgstr "Warna"
+
+#: pigment/compositeops/KoCompositeOps.h:72
+#, fuzzy
+#| msgid "Change Borders"
+msgid "Linear Dodge"
+msgstr "Ubah Sempadan"
+
+#: pigment/compositeops/KoCompositeOps.h:73 pigment/KoCompositeOp.cpp:32
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgid "Lighten"
+msgstr "Hijau Muda"
+
+#: pigment/compositeops/KoCompositeOps.h:74
+#, fuzzy
+msgid "Hard Light"
+msgstr "&Tinggi:"
+
+#: pigment/compositeops/KoCompositeOps.h:75
+#, fuzzy
+msgid "Soft Light"
+msgstr "Tunggal"
+
+#: pigment/compositeops/KoCompositeOps.h:76
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgid "Gamma Light"
+msgstr "Hijau Muda"
+
+#: pigment/compositeops/KoCompositeOps.h:77
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgid "Vivid Light"
+msgstr "Hijau Muda"
+
+#: pigment/compositeops/KoCompositeOps.h:78
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgid "Pin Light"
+msgstr "Hijau Muda"
+
+#: pigment/compositeops/KoCompositeOps.h:79
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgid "Linear Light"
+msgstr "Hijau Muda"
+
+#: pigment/compositeops/KoCompositeOps.h:81
+#, fuzzy
+#| msgid "Color:"
+msgid "Color Burn"
+msgstr "Warna:"
+
+#: pigment/compositeops/KoCompositeOps.h:82
+#, fuzzy
+#| msgid "Change Borders"
+msgid "Linear Burn"
+msgstr "Ubah Sempadan"
+
+#: pigment/compositeops/KoCompositeOps.h:83 pigment/KoCompositeOp.cpp:33
+#, fuzzy
+#| msgctxt "color"
+#| msgid "DarkGreen"
+msgid "Darken"
+msgstr "Hijau Tua"
+
+#: pigment/compositeops/KoCompositeOps.h:84
+msgid "Gamma Dark"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:86
+#, fuzzy
+#| msgid "Position"
+msgid "Addition"
+msgstr "Posisi"
+
+#: pigment/compositeops/KoCompositeOps.h:91
+msgid "Arcus Tangent"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:92
+msgid "Difference"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:93
+msgid "Exclusion"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:94
+msgid "Equivalence"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:95
+#, fuzzy
+msgid "Additive-Substractive"
+msgstr "Abstrak"
+
+#: pigment/compositeops/KoCompositeOps.h:100
+#, fuzzy
+#| msgid "Company Name"
+msgid "Copy Alpha"
+msgstr "Nama Syarikat"
+
+#: pigment/compositeops/KoCompositeOps.h:125
+#, fuzzy
+#| msgid "Company Name"
+msgid "Copy Red"
+msgstr "Nama Syarikat"
+
+#: pigment/compositeops/KoCompositeOps.h:126
+#, fuzzy
+msgid "Copy Green"
+msgstr "Skrin"
+
+#: pigment/compositeops/KoCompositeOps.h:127
+#, fuzzy
+#| msgid "Company Name"
+msgid "Copy Blue"
+msgstr "Nama Syarikat"
+
+#: pigment/compositeops/KoCompositeOps.h:129 pigment/KoCompositeOp.cpp:27
+#, fuzzy
+#| msgid "Color:"
+msgid "Color"
+msgstr "Warna:"
+
+#: pigment/compositeops/KoCompositeOps.h:130 widgets/KoUniColorChooser.cpp:116
+msgid "Hue"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:131 widgets/KoUniColorChooser.cpp:125
+msgid "Saturation"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:132
+#, fuzzy
+msgid "Increase Saturation"
+msgstr "Abstrak"
+
+#: pigment/compositeops/KoCompositeOps.h:133
+msgid "Decrease Saturation"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:134
+msgid "Luminosity"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:135
+#, fuzzy
+msgid "Increase Luminosity"
+msgstr "Ubah Huruf"
+
+#: pigment/compositeops/KoCompositeOps.h:136
+#, fuzzy
+msgid "Decrease Luminosity"
+msgstr "Ubah Huruf"
+
+#: pigment/compositeops/KoCompositeOps.h:138
+#, fuzzy
+#| msgid "Color:"
+msgid "Color HSI"
+msgstr "Warna:"
+
+#: pigment/compositeops/KoCompositeOps.h:139
+msgid "Hue HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:140
+msgid "Saturation HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:141
+msgid "Increase Saturation HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:142
+msgid "Decrease Saturation HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:143
+msgid "Intensity"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:144
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Increase Intensity"
+msgstr "Ubah Inden"
+
+#: pigment/compositeops/KoCompositeOps.h:145
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Decrease Intensity"
+msgstr "Ubah Inden"
+
+#: pigment/compositeops/KoCompositeOps.h:147
+#, fuzzy
+#| msgid "Color:"
+msgid "Color HSL"
+msgstr "Warna:"
+
+#: pigment/compositeops/KoCompositeOps.h:148
+msgid "Hue HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:149
+msgid "Saturation HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:150
+msgid "Increase Saturation HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:151
+msgid "Decrease Saturation HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:153
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Increase Lightness"
+msgstr "Ubah Inden"
+
+#: pigment/compositeops/KoCompositeOps.h:154
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Decrease Lightness"
+msgstr "Ubah Inden"
+
+#: pigment/compositeops/KoCompositeOps.h:156
+#, fuzzy
+#| msgid "Color:"
+msgid "Color HSV"
+msgstr "Warna:"
+
+#: pigment/compositeops/KoCompositeOps.h:157
+msgid "Hue HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:158
+msgid "Saturation HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:159
+msgid "Increase Saturation HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:160
+msgid "Decrease Saturation HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:161
+msgid "Value"
+msgstr "Nilai"
+
+#: pigment/compositeops/KoCompositeOps.h:162
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Increase Value"
+msgstr "Ubah Inden"
+
+#: pigment/compositeops/KoCompositeOps.h:163
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Decrease Value"
+msgstr "Ubah Inden"
+
 #: pigment/resources/KoStopGradient.cpp:421
 msgid "SVG Gradient"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:30
+#, fuzzy
+#| msgid "Autoinclude"
+msgid "Arithmetic"
+msgstr "Automasuk "
+
+#: pigment/KoCompositeOp.cpp:31
+msgid "Negative"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:34
+msgid "HSY"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:35
+msgid "HSI"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:36
+msgid "HSL"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:37
+msgid "HSV"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:38
+msgid "Mix"
 msgstr ""
 
 #: widgets/KoColorSetWidget.cpp:189
@@ -3774,14 +4093,6 @@ msgstr "Gelombang"
 #| msgid "Choose Filter"
 msgid "Choose File to Add"
 msgstr "Tentukan Penapis"
-
-#: widgets/KoUniColorChooser.cpp:116
-msgid "Hue"
-msgstr ""
-
-#: widgets/KoUniColorChooser.cpp:125
-msgid "Saturation"
-msgstr ""
 
 #: widgets/KoUniColorChooser.cpp:134
 msgid "Value (brightness)"
@@ -5002,6 +5313,12 @@ msgid "Blur radius:"
 msgstr ""
 
 #, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Light"
+#~ msgstr "Hijau Muda"
+
+#, fuzzy
 #~ msgid "Hide Dockers"
 #~ msgstr "Bilangan Baris"
 
@@ -5009,101 +5326,6 @@ msgstr ""
 #~| msgid "Author"
 #~ msgid "Atop"
 #~ msgstr "Penulis"
-
-#, fuzzy
-#~ msgid "Hard Mix"
-#~ msgstr "&Tinggi:"
-
-#, fuzzy
-#~| msgid "Color:"
-#~ msgid "Color Burn"
-#~ msgstr "Warna:"
-
-#, fuzzy
-#~ msgid "Color Dodge"
-#~ msgstr "Warna"
-
-#, fuzzy
-#~| msgid "Change Borders"
-#~ msgid "Linear Burn"
-#~ msgstr "Ubah Sempadan"
-
-#, fuzzy
-#~| msgid "Change Borders"
-#~ msgid "Linear Dodge"
-#~ msgstr "Ubah Sempadan"
-
-#, fuzzy
-#~| msgctxt "color"
-#~| msgid "DarkGreen"
-#~ msgid "Darken"
-#~ msgstr "Hijau Tua"
-
-#, fuzzy
-#~| msgctxt "color"
-#~| msgid "LightGreen"
-#~ msgid "Lighten"
-#~ msgstr "Hijau Muda"
-
-#, fuzzy
-#~ msgid "Hard Light"
-#~ msgstr "&Tinggi:"
-
-#, fuzzy
-#~ msgid "Soft Light"
-#~ msgstr "Tunggal"
-
-#, fuzzy
-#~| msgctxt "color"
-#~| msgid "LightGreen"
-#~ msgid "Gamma Light"
-#~ msgstr "Hijau Muda"
-
-#, fuzzy
-#~| msgctxt "color"
-#~| msgid "LightGreen"
-#~ msgid "Vivid Light"
-#~ msgstr "Hijau Muda"
-
-#, fuzzy
-#~| msgctxt "color"
-#~| msgid "LightGreen"
-#~ msgid "Pin Light"
-#~ msgstr "Hijau Muda"
-
-#, fuzzy
-#~| msgctxt "color"
-#~| msgid "LightGreen"
-#~ msgid "Linear Light"
-#~ msgstr "Hijau Muda"
-
-#, fuzzy
-#~| msgid "Position"
-#~ msgid "Addition"
-#~ msgstr "Posisi"
-
-#, fuzzy
-#~| msgid "Variable"
-#~ msgid "Parallel"
-#~ msgstr "Variabel"
-
-#, fuzzy
-#~ msgid "Additive-Substractive"
-#~ msgstr "Abstrak"
-
-#, fuzzy
-#~| msgid "Company Name"
-#~ msgid "Copy Red"
-#~ msgstr "Nama Syarikat"
-
-#, fuzzy
-#~ msgid "Copy Green"
-#~ msgstr "Skrin"
-
-#, fuzzy
-#~| msgid "Company Name"
-#~ msgid "Copy Blue"
-#~ msgstr "Nama Syarikat"
 
 #~ msgid "KOffice"
 #~ msgstr "KOffice"
@@ -5184,9 +5406,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Background tool"
 #~ msgstr "Warna latar belakang:"
-
-#~ msgid "Value"
-#~ msgstr "Nilai"
 
 #, fuzzy
 #~| msgid "Custom"
