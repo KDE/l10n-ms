@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-19 03:43+0200\n"
+"POT-Creation-Date: 2011-06-22 03:41+0200\n"
 "PO-Revision-Date: 2008-07-08 22:08+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -290,35 +290,6 @@ msgstr "Cipta Dokumen"
 msgid "Pan"
 msgstr "Sawo Matang"
 
-#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
-#, fuzzy
-#| msgid "Change Indent"
-msgid "Change Segment"
-msgstr "Ubah Inden"
-
-#: flake/tools/KoPathToolFactory.cpp:29
-msgid "Path editing tool"
-msgstr ""
-
-#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
-#: widgets/KoZoomController.cpp:39
-msgid "Zoom"
-msgstr ""
-
-#: flake/tools/KoCreatePathTool.cpp:369 flake/tools/KoPathTool.cpp:184
-msgid "Snapping"
-msgstr ""
-
-#: flake/tools/KoCreatePathTool.cpp:375
-msgid "Angle snapping delta"
-msgstr ""
-
-#: flake/tools/KoCreatePathTool.cpp:380
-#, fuzzy
-#| msgid "Change Indent"
-msgid "Angle Constraints"
-msgstr "Ubah Inden"
-
 #: flake/tools/KoPathTool.cpp:90
 #, fuzzy
 msgid "Corner point"
@@ -384,6 +355,10 @@ msgstr "Laluan Edit"
 msgid "Line/Curve"
 msgstr "Seksyen Semasa"
 
+#: flake/tools/KoPathTool.cpp:184 flake/tools/KoCreatePathTool.cpp:369
+msgid "Snapping"
+msgstr ""
+
 #: flake/tools/KoPathTool.cpp:519
 msgid "Drag to move handle."
 msgstr ""
@@ -403,6 +378,31 @@ msgstr ""
 #: flake/tools/KoPathTool.cpp:612
 msgid "Press B to break path at selected segments."
 msgstr ""
+
+#: flake/tools/KoPathToolFactory.cpp:29
+msgid "Path editing tool"
+msgstr ""
+
+#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
+#: widgets/KoZoomController.cpp:39
+msgid "Zoom"
+msgstr ""
+
+#: flake/tools/KoCreatePathTool.cpp:375
+msgid "Angle snapping delta"
+msgstr ""
+
+#: flake/tools/KoCreatePathTool.cpp:380
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Angle Constraints"
+msgstr "Ubah Inden"
+
+#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Change Segment"
+msgstr "Ubah Inden"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -541,71 +541,15 @@ msgstr "Pengurus Gaya"
 msgid "Execute Script File"
 msgstr "Skrip"
 
-#: kopageapp/KoPADocumentModel.cpp:166 kopageapp/KoPAPageThumbnailModel.cpp:67
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:166
 #, kde-format
 msgid "Slide %1"
 msgstr ""
-
-#: kopageapp/KoPADocumentModel.cpp:168
-#, fuzzy, kde-format
-msgid "Page  %1"
-msgstr "Halaman Berikutnya"
-
-#: kopageapp/KoPADocumentModel.cpp:172
-#: kopageapp/KoPADocumentStructureDocker.cpp:118
-#, fuzzy
-#| msgctxt "color"
-#| msgid "Lavender"
-msgid "Layer"
-msgstr "Lavender"
-
-#: kopageapp/KoPADocumentModel.cpp:175
-#, fuzzy
-#| msgid "Group:"
-msgid "Group"
-msgstr "Kumpulan:"
-
-#: kopageapp/KoPADocumentModel.cpp:178
-#, fuzzy
-msgid "Shape"
-msgstr "Gelombang"
-
-#: kopageapp/KoPADocumentModel.cpp:291
-#, fuzzy
-#| msgid "Variable"
-msgid "Visible"
-msgstr "Variabel"
-
-#: kopageapp/KoPADocumentModel.cpp:292
-#, fuzzy
-msgid "Locked"
-msgstr "Muatkan..."
-
-#: kopageapp/KoPADocumentModel.cpp:505 kopageapp/KoPADocumentModel.cpp:526
-#, fuzzy
-msgid "Reparent shapes"
-msgstr "Hapuskan Teks"
 
 #: kopageapp/KoPAPageThumbnailModel.cpp:69
 #, fuzzy, kde-format
 msgid "Page %1"
 msgstr "Halaman Berikutnya"
-
-#: kopageapp/KoPAPastePage.cpp:131
-#, fuzzy
-#| msgid "Paste Text"
-msgid "Paste Slide"
-msgid_plural "Paste Slides"
-msgstr[0] "Tampalkan Teks"
-msgstr[1] "Tampalkan Teks"
-
-#: kopageapp/KoPAPastePage.cpp:134
-#, fuzzy
-#| msgid "Paste Text"
-msgid "Paste Page"
-msgid_plural "Paste Pages"
-msgstr[0] "Tampalkan Teks"
-msgstr[1] "Tampalkan Teks"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 #, fuzzy
@@ -618,12 +562,6 @@ msgstr "Ubah Jenis Senarai"
 #| msgid "Change List Type"
 msgid "Change master page"
 msgstr "Ubah Jenis Senarai"
-
-#: kopageapp/commands/KoPAChangePageLayoutCommand.cpp:33
-#, fuzzy
-#| msgid "Page Layout"
-msgid "Set Page Layout"
-msgstr "Paparan Laman"
 
 #: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:31
 #, fuzzy
@@ -649,6 +587,12 @@ msgstr "Cipta Templat"
 #, fuzzy
 msgid "Hide master shapes"
 msgstr "Cipta Templat"
+
+#: kopageapp/commands/KoPAChangePageLayoutCommand.cpp:33
+#, fuzzy
+#| msgid "Page Layout"
+msgid "Set Page Layout"
+msgstr "Paparan Laman"
 
 #: kopageapp/commands/KoPAPageDeleteCommand.cpp:39
 #: kopageapp/commands/KoPAPageDeleteCommand.cpp:63
@@ -748,11 +692,6 @@ msgstr "Dokumen"
 msgid "Document Settings"
 msgstr "Maklumat Dokumen"
 
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
-#, fuzzy
-msgid "Change background image"
-msgstr "Saat"
-
 #: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:105
 #, fuzzy
 msgid "Background Tool"
@@ -766,6 +705,51 @@ msgstr ""
 #, fuzzy
 msgid "Background editing tool"
 msgstr "Warna latar belakang:"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
+#, fuzzy
+msgid "Change background image"
+msgstr "Saat"
+
+#: kopageapp/KoPADocumentModel.cpp:168
+#, fuzzy, kde-format
+msgid "Page  %1"
+msgstr "Halaman Berikutnya"
+
+#: kopageapp/KoPADocumentModel.cpp:172
+#: kopageapp/KoPADocumentStructureDocker.cpp:118
+#, fuzzy
+#| msgctxt "color"
+#| msgid "Lavender"
+msgid "Layer"
+msgstr "Lavender"
+
+#: kopageapp/KoPADocumentModel.cpp:175
+#, fuzzy
+#| msgid "Group:"
+msgid "Group"
+msgstr "Kumpulan:"
+
+#: kopageapp/KoPADocumentModel.cpp:178
+#, fuzzy
+msgid "Shape"
+msgstr "Gelombang"
+
+#: kopageapp/KoPADocumentModel.cpp:291
+#, fuzzy
+#| msgid "Variable"
+msgid "Visible"
+msgstr "Variabel"
+
+#: kopageapp/KoPADocumentModel.cpp:292
+#, fuzzy
+msgid "Locked"
+msgstr "Muatkan..."
+
+#: kopageapp/KoPADocumentModel.cpp:505 kopageapp/KoPADocumentModel.cpp:526
+#, fuzzy
+msgid "Reparent shapes"
+msgstr "Hapuskan Teks"
 
 #: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1723
 msgid "Document"
@@ -889,6 +873,22 @@ msgstr "Syarikat:"
 #| msgid "Date"
 msgid "Paste"
 msgstr "Tarikh"
+
+#: kopageapp/KoPAPastePage.cpp:131
+#, fuzzy
+#| msgid "Paste Text"
+msgid "Paste Slide"
+msgid_plural "Paste Slides"
+msgstr[0] "Tampalkan Teks"
+msgstr[1] "Tampalkan Teks"
+
+#: kopageapp/KoPAPastePage.cpp:134
+#, fuzzy
+#| msgid "Paste Text"
+msgid "Paste Page"
+msgid_plural "Paste Pages"
+msgstr[0] "Tampalkan Teks"
+msgstr[1] "Tampalkan Teks"
 
 #: kopageapp/KoPAView.cpp:241 main/KoToolBoxFactory.cpp:37
 #, fuzzy
@@ -2442,12 +2442,12 @@ msgid "Export to PDF"
 msgstr "&Eksport..."
 
 #: main/KoMainWindow.cpp:1385 main/KoUndoStackAction.cpp:36
-#: main/KoUndoStackAction.cpp:52
+#: main/KoUndoStackAction.cpp:52 kundo2/kundo2stack.cpp:1093
 msgid "Undo"
 msgstr ""
 
 #: main/KoMainWindow.cpp:1386 main/KoUndoStackAction.cpp:44
-#: main/KoUndoStackAction.cpp:52
+#: main/KoUndoStackAction.cpp:52 kundo2/kundo2stack.cpp:1074
 #, fuzzy
 msgid "Redo"
 msgstr "Muat Turun"
@@ -4379,6 +4379,27 @@ msgstr ""
 #: textlayout/ListItemsHelper.cpp:212
 msgid "ArabicAlphabet"
 msgstr ""
+
+#: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:841
+#, kde-format
+msgid "Undo %1"
+msgstr ""
+
+#: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:841
+msgctxt "Default text for undo action"
+msgid "Undo"
+msgstr ""
+
+#: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:867
+#, fuzzy, kde-format
+msgid "Redo %1"
+msgstr "Muat Turun"
+
+#: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:867
+#, fuzzy
+msgctxt "Default text for redo action"
+msgid "Redo"
+msgstr "Muat Turun"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
