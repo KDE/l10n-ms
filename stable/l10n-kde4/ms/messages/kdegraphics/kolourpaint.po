@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-07 04:02+0200\n"
+"POT-Creation-Date: 2011-07-05 04:35+0200\n"
 "PO-Revision-Date: 2005-11-06 05:51+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -55,11 +55,6 @@ msgstr "Meratakan"
 msgid "Reduce to Grayscale"
 msgstr "Kurangkan kepada Skala kelabu"
 
-#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
-msgid "Hue, Saturation, Value"
-msgstr ""
-
 #: commands/imagelib/effects/kpEffectInvertCommand.cpp:50
 #: commands/imagelib/effects/kpEffectInvertCommand.cpp:58
 msgid "Invert Colors"
@@ -69,6 +64,16 @@ msgstr "Songsangkan Warna"
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:117
 msgid "Invert"
 msgstr "Songsangkan"
+
+#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
+msgid "Histogram Equalizer"
+msgstr ""
+
+#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
+msgid "Hue, Saturation, Value"
+msgstr ""
 
 #: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:57
 msgid "Reduce to Monochrome (Dithered)"
@@ -86,11 +91,6 @@ msgstr "Kurangkan kepada 256 Warna (Mengagak)"
 msgid "Reduce to 256 Color"
 msgstr "Kurangkan kepada 256 Warna"
 
-#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
-msgid "Histogram Equalizer"
-msgstr ""
-
 #: commands/imagelib/transforms/kpTransformFlipCommand.cpp:69
 msgid "Flip"
 msgstr "Balikkan"
@@ -106,6 +106,14 @@ msgstr "Balikkan mendatar"
 #: commands/imagelib/transforms/kpTransformFlipCommand.cpp:76
 msgid "Flip vertically"
 msgstr "Balikkan menegak"
+
+#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
+msgid "Rotate"
+msgstr "Putar"
+
+#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
+msgid "Skew"
+msgstr "Senget"
 
 #: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:110
 #: commands/tools/selection/kpToolSelectionResizeScaleCommand.cpp:62
@@ -133,13 +141,14 @@ msgstr "Skala"
 msgid "Smooth Scale"
 msgstr "Skala Lancar"
 
-#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
-msgid "Rotate"
-msgstr "Putar"
+#: commands/tools/kpToolColorPickerCommand.cpp:61
+#: tools/kpToolColorPicker.cpp:47
+msgid "Color Picker"
+msgstr "Pemunggut Warna"
 
-#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
-msgid "Skew"
-msgstr "Senget"
+#: commands/tools/kpToolFloodFillCommand.cpp:78 tools/kpToolFloodFill.cpp:55
+msgid "Flood Fill"
+msgstr "Isian Banjir"
 
 #: commands/kpCommandHistoryBase.cpp:454
 #, kde-format
@@ -192,15 +201,6 @@ msgid "%1 more item"
 msgid_plural "%1 more items"
 msgstr[0] "_n: %1 item lagi"
 msgstr[1] "%1 item lagi"
-
-#: commands/tools/kpToolColorPickerCommand.cpp:61
-#: tools/kpToolColorPicker.cpp:47
-msgid "Color Picker"
-msgstr "Pemunggut Warna"
-
-#: commands/tools/kpToolFloodFillCommand.cpp:78 tools/kpToolFloodFill.cpp:55
-msgid "Flood Fill"
-msgstr "Isian Banjir"
 
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:91
 #, fuzzy
@@ -941,12 +941,6 @@ msgstr "Tidak boleh simpan imej - gagal untuk muat naik."
 msgid "Set as Image"
 msgstr "Set sebagai Imej"
 
-#: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:248
-#: mainWindow/kpMainWindow_Image.cpp:314 mainWindow/kpMainWindow_Edit.cpp:367
-#: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
-msgid "Selection: Create"
-msgstr "Pilihan: Cipta"
-
 #: imagelib/transforms/kpTransformAutoCrop.cpp:386
 msgid "Remove Internal B&order"
 msgstr "Buang S&empadan Dalaman"
@@ -993,99 +987,11 @@ msgctxt "@title:window"
 msgid "Cannot Autocrop"
 msgstr "Tidak Boleh Auto Potong"
 
-#: kolourpaint.cpp:49
-#, fuzzy
-#| msgid "KolourPaint"
-msgid "KolourPaint"
-msgstr "KolourPaint"
-
-#: kolourpaint.cpp:51
-msgid "Paint Program for KDE"
-msgstr "Program Lukisan untuk KDE"
-
-#: kolourpaint.cpp:54
-msgid "To obtain support, please visit the website."
-msgstr ""
-
-#: kolourpaint.cpp:65
-msgid "Clarence Dang"
-msgstr ""
-
-#: kolourpaint.cpp:65
-msgid "Project Founder"
-msgstr ""
-
-#: kolourpaint.cpp:66
-msgid "Thurston Dang"
-msgstr ""
-
-#: kolourpaint.cpp:66
-msgid "Chief Investigator"
-msgstr "Ketua Penyiasat"
-
-#: kolourpaint.cpp:68
-#, fuzzy
-msgid "Martin Koller"
-msgstr "Bar Alat Teks"
-
-#: kolourpaint.cpp:68
-msgid "Scanning Support, Alpha Support, Current Maintainer"
-msgstr ""
-
-#: kolourpaint.cpp:69
-msgid "Kristof Borrey"
-msgstr ""
-
-#: kolourpaint.cpp:69 kolourpaint.cpp:72 kolourpaint.cpp:73
-msgid "Icons"
-msgstr "Ikon"
-
-#: kolourpaint.cpp:70
-msgid "Tasuku Suzuki"
-msgstr ""
-
-#: kolourpaint.cpp:70 kolourpaint.cpp:71
-msgid "InputMethod Support"
-msgstr "Sokongan Kaedah Input"
-
-#: kolourpaint.cpp:71
-msgid "Kazuki Ohta"
-msgstr ""
-
-#: kolourpaint.cpp:72
-msgid "Nuno Pinheiro"
-msgstr ""
-
-#: kolourpaint.cpp:73
-msgid "Danny Allen"
-msgstr ""
-
-#: kolourpaint.cpp:74
-msgid "Mike Gashler"
-msgstr ""
-
-#: kolourpaint.cpp:74
-#, fuzzy
-#| msgid "More Image Effects"
-msgid "Image Effects"
-msgstr "Lagi Kesan Imej."
-
-#: kolourpaint.cpp:76
-msgid "Laurent Montel"
-msgstr ""
-
-#: kolourpaint.cpp:76
-msgid "KDE 4 Porting"
-msgstr ""
-
-#: kolourpaint.cpp:80
-msgid ""
-"Thanks to the many others who have helped to make this program possible."
-msgstr ""
-
-#: kolourpaint.cpp:85
-msgid "Image file to open"
-msgstr "Fail imej hendak dibuka"
+#: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:248
+#: mainWindow/kpMainWindow_Edit.cpp:367 mainWindow/kpMainWindow_Image.cpp:314
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
+msgid "Selection: Create"
+msgstr "Pilihan: Cipta"
 
 #: layers/selections/text/kpTextSelection.cpp:136
 #: tools/selection/text/kpToolText.cpp:59
@@ -1139,87 +1045,6 @@ msgstr ""
 msgid "Untitled"
 msgstr ""
 
-#: mainWindow/kpMainWindow_Image.cpp:119
-msgid "R&esize / Scale..."
-msgstr "S&aiz semula / Skala..."
-
-#: mainWindow/kpMainWindow_Image.cpp:124
-msgid "Se&t as Image (Crop)"
-msgstr "Se&t sebagai Imej (Potong)"
-
-#: mainWindow/kpMainWindow_Image.cpp:134
-#, fuzzy
-#| msgid "&Vertical (upside-down)"
-msgid "&Flip (upside down)"
-msgstr "&Menegak (atas ke bawah)"
-
-#: mainWindow/kpMainWindow_Image.cpp:139
-#, fuzzy
-#| msgid "Flip horizontally"
-msgid "Mirror (horizontally)"
-msgstr "Balikkan mendatar"
-
-#: mainWindow/kpMainWindow_Image.cpp:144
-msgid "&Rotate..."
-msgstr "&Putar..."
-
-#: mainWindow/kpMainWindow_Image.cpp:150
-#, fuzzy
-#| msgid "Rotate Image"
-msgid "Rotate &Left"
-msgstr "Putar Imej"
-
-#: mainWindow/kpMainWindow_Image.cpp:156
-#, fuzzy
-#| msgid "Rotate Image"
-msgid "Rotate Righ&t"
-msgstr "Putar Imej"
-
-#: mainWindow/kpMainWindow_Image.cpp:162
-msgid "S&kew..."
-msgstr "S&enget..."
-
-#: mainWindow/kpMainWindow_Image.cpp:167
-msgid "Reduce to Mo&nochrome (Dithered)"
-msgstr "Kurangkan ke Mo&nokrom (Mengagak)"
-
-#: mainWindow/kpMainWindow_Image.cpp:171
-msgid "Reduce to &Grayscale"
-msgstr "Kurangkan ke Skala kelabu"
-
-#: mainWindow/kpMainWindow_Image.cpp:175
-msgid "&Invert Colors"
-msgstr "&Songsangkan Warna"
-
-#: mainWindow/kpMainWindow_Image.cpp:180
-msgid "C&lear"
-msgstr "&Kosongkan"
-
-#: mainWindow/kpMainWindow_Image.cpp:185
-msgid "&More Effects..."
-msgstr "&Lebih Kesan..."
-
-#: mainWindow/kpMainWindow_Image.cpp:225
-#, fuzzy
-msgctxt ""
-"Image/Selection Menu caption - make sure the translation has the same accel "
-"as the Select&ion translation"
-msgid "&Image"
-msgstr "&Imej"
-
-#: mainWindow/kpMainWindow_Image.cpp:229
-#, fuzzy
-msgctxt ""
-"Image/Selection Menu caption - make sure that translation has the same accel "
-"as the &Image translation"
-msgid "Select&ion"
-msgstr "Pilih&an"
-
-#: mainWindow/kpMainWindow_Image.cpp:316 mainWindow/kpMainWindow_Edit.cpp:366
-#: mainWindow/kpMainWindow_Edit.cpp:441 tools/selection/text/kpToolText.cpp:93
-msgid "Text: Create Box"
-msgstr "Teks: Cipta Kotak"
-
 #: mainWindow/kpMainWindow_Text.cpp:60
 msgid "Font Family"
 msgstr "Keluarga Fon"
@@ -1257,62 +1082,6 @@ msgstr "Mod Thumbnail Yang &Dizum"
 #: mainWindow/kpMainWindow_View_Thumbnail.cpp:90
 msgid "Enable Thumbnail &Rectangle"
 msgstr "Aktifkan&Segi Empat Tepat Thumbnail "
-
-#: mainWindow/kpMainWindow_View.cpp:76
-msgid "Show &Grid"
-msgstr "Papar &Grid"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:91
-#: mainWindow/kpMainWindow_StatusBar.cpp:284
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:113
-msgid "&Zoom"
-msgstr ""
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:194
-#, kde-format
-msgid ""
-"Setting the zoom level to a value that is not a multiple of 100% results in "
-"imprecise editing and redraw glitches.\n"
-"Do you really want to set to zoom level to %1%?"
-msgstr ""
-"Mengeset tahap zum kepada nilai yang bukan gandaan 100% menghasilkan "
-"pengeditan yang tak ketepatan dan kesilapan lukis semula.\n"
-"Anda benar-benar mahu mengeset tahap zum kepada %1%? "
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:199
-#, kde-format
-msgid "Set Zoom Level to %1%"
-msgstr "Set Tahap Zum kepada %1%"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:149
-#, kde-format
-msgid "%1,%2"
-msgstr "%1,%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:156
-#, kde-format
-msgid "%1,%2 - %3,%4"
-msgstr "%1,%2 - %3,%4"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:199
-#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
-#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
-#, kde-format
-msgid "%1x%2"
-msgstr "%1x%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:258
-#, kde-format
-msgid "%1bpp"
-msgstr "%1bpp"
-
-#: mainWindow/kpMainWindow_Settings.cpp:67
-msgid "Show &Path"
-msgstr "Papar &Laluan"
 
 #: mainWindow/kpMainWindow_Colors.cpp:59
 #, fuzzy
@@ -1488,6 +1257,12 @@ msgstr "S&alin ke Fail..."
 msgid "Paste &From File..."
 msgstr "Tampal &Dari Fail..."
 
+#: mainWindow/kpMainWindow_Edit.cpp:366 mainWindow/kpMainWindow_Edit.cpp:441
+#: mainWindow/kpMainWindow_Image.cpp:316
+#: tools/selection/text/kpToolText.cpp:93
+msgid "Text: Create Box"
+msgstr "Teks: Cipta Kotak"
+
 #: mainWindow/kpMainWindow_Edit.cpp:447
 msgid "Text: Paste"
 msgstr "Teks: Tampal"
@@ -1657,6 +1432,114 @@ msgstr ""
 "Dokumen \"%1\" telah di ubah suai.\n"
 "Anda ingin menyimpannya?"
 
+#: mainWindow/kpMainWindow_Image.cpp:119
+msgid "R&esize / Scale..."
+msgstr "S&aiz semula / Skala..."
+
+#: mainWindow/kpMainWindow_Image.cpp:124
+msgid "Se&t as Image (Crop)"
+msgstr "Se&t sebagai Imej (Potong)"
+
+#: mainWindow/kpMainWindow_Image.cpp:134
+#, fuzzy
+#| msgid "&Vertical (upside-down)"
+msgid "&Flip (upside down)"
+msgstr "&Menegak (atas ke bawah)"
+
+#: mainWindow/kpMainWindow_Image.cpp:139
+#, fuzzy
+#| msgid "Flip horizontally"
+msgid "Mirror (horizontally)"
+msgstr "Balikkan mendatar"
+
+#: mainWindow/kpMainWindow_Image.cpp:144
+msgid "&Rotate..."
+msgstr "&Putar..."
+
+#: mainWindow/kpMainWindow_Image.cpp:150
+#, fuzzy
+#| msgid "Rotate Image"
+msgid "Rotate &Left"
+msgstr "Putar Imej"
+
+#: mainWindow/kpMainWindow_Image.cpp:156
+#, fuzzy
+#| msgid "Rotate Image"
+msgid "Rotate Righ&t"
+msgstr "Putar Imej"
+
+#: mainWindow/kpMainWindow_Image.cpp:162
+msgid "S&kew..."
+msgstr "S&enget..."
+
+#: mainWindow/kpMainWindow_Image.cpp:167
+msgid "Reduce to Mo&nochrome (Dithered)"
+msgstr "Kurangkan ke Mo&nokrom (Mengagak)"
+
+#: mainWindow/kpMainWindow_Image.cpp:171
+msgid "Reduce to &Grayscale"
+msgstr "Kurangkan ke Skala kelabu"
+
+#: mainWindow/kpMainWindow_Image.cpp:175
+msgid "&Invert Colors"
+msgstr "&Songsangkan Warna"
+
+#: mainWindow/kpMainWindow_Image.cpp:180
+msgid "C&lear"
+msgstr "&Kosongkan"
+
+#: mainWindow/kpMainWindow_Image.cpp:185
+msgid "&More Effects..."
+msgstr "&Lebih Kesan..."
+
+#: mainWindow/kpMainWindow_Image.cpp:225
+#, fuzzy
+msgctxt ""
+"Image/Selection Menu caption - make sure the translation has the same accel "
+"as the Select&ion translation"
+msgid "&Image"
+msgstr "&Imej"
+
+#: mainWindow/kpMainWindow_Image.cpp:229
+#, fuzzy
+msgctxt ""
+"Image/Selection Menu caption - make sure that translation has the same accel "
+"as the &Image translation"
+msgid "Select&ion"
+msgstr "Pilih&an"
+
+#: mainWindow/kpMainWindow_Settings.cpp:67
+msgid "Show &Path"
+msgstr "Papar &Laluan"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:149
+#, kde-format
+msgid "%1,%2"
+msgstr "%1,%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:156
+#, kde-format
+msgid "%1,%2 - %3,%4"
+msgstr "%1,%2 - %3,%4"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:199
+#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
+#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
+#, kde-format
+msgid "%1x%2"
+msgstr "%1x%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:258
+#, kde-format
+msgid "%1bpp"
+msgstr "%1bpp"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:284
+#: mainWindow/kpMainWindow_View_Zoom.cpp:91
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
 #: mainWindow/kpMainWindow_Tools.cpp:136
 msgid "Previous Tool Option (Group #1)"
 msgstr "Opsyen Alat Sebelumnya (Kumpulan #1)"
@@ -1702,6 +1585,30 @@ msgstr ""
 "masalah perolehan aplikasi lain.</p><p>Anda pasti mahu saiz semula imej?</"
 "p></qt>"
 
+#: mainWindow/kpMainWindow_View.cpp:76
+msgid "Show &Grid"
+msgstr "Papar &Grid"
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:113
+msgid "&Zoom"
+msgstr ""
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:194
+#, kde-format
+msgid ""
+"Setting the zoom level to a value that is not a multiple of 100% results in "
+"imprecise editing and redraw glitches.\n"
+"Do you really want to set to zoom level to %1%?"
+msgstr ""
+"Mengeset tahap zum kepada nilai yang bukan gandaan 100% menghasilkan "
+"pengeditan yang tak ketepatan dan kesilapan lukis semula.\n"
+"Anda benar-benar mahu mengeset tahap zum kepada %1%? "
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:199
+#, kde-format
+msgid "Set Zoom Level to %1%"
+msgstr "Set Tahap Zum kepada %1%"
+
 #: tools/flow/kpToolBrush.cpp:35
 msgid "Brush"
 msgstr "Berus"
@@ -1739,11 +1646,11 @@ msgid "Click or drag to erase."
 msgstr "Klik atau seret untuk memadam."
 
 #: tools/flow/kpToolFlowBase.cpp:302 tools/kpToolColorPicker.cpp:112
-#: tools/kpToolFloodFill.cpp:144 tools/kpToolZoom.cpp:207
-#: tools/polygonal/kpToolPolygonalBase.cpp:437
+#: tools/kpToolZoom.cpp:207 tools/polygonal/kpToolPolygonalBase.cpp:437
 #: tools/rectangular/kpToolRectangularBase.cpp:356
 #: tools/selection/kpAbstractSelectionTool.cpp:260
 #: tools/selection/kpAbstractSelectionTool.cpp:518
+#: tools/kpToolFloodFill.cpp:144
 msgid "Let go of all the mouse buttons."
 msgstr "Lepaskan semua butang tetikus."
 
@@ -1775,14 +1682,6 @@ msgstr "Membenarkan anda memilih warna dari imej"
 msgid "Click to select a color."
 msgstr "Klik untuk pilih warna."
 
-#: tools/kpToolFloodFill.cpp:55
-msgid "Fills regions in the image"
-msgstr "Isi kawasan dalam imej"
-
-#: tools/kpToolFloodFill.cpp:75
-msgid "Click to fill a region."
-msgstr "Klik untuk isi kawasan."
-
 #: tools/kpToolZoom.cpp:73
 msgid "Zoom"
 msgstr ""
@@ -1794,19 +1693,6 @@ msgstr ""
 #: tools/kpToolZoom.cpp:120
 msgid "Click to zoom in/out or left drag to zoom into a specific area."
 msgstr ""
-
-#: tools/kpTool_UserNotifications.cpp:42
-msgid "Right click to cancel."
-msgstr "Klik kanan untuk batal."
-
-#: tools/kpTool_UserNotifications.cpp:44
-msgid "Left click to cancel."
-msgstr "Klik kiri untuk batal."
-
-#: tools/kpTool_UserNotifications.cpp:73
-#, kde-format
-msgid "%1: "
-msgstr "%1: "
 
 #: tools/polygonal/kpToolCurve.cpp:86
 msgid "Curve"
@@ -1919,22 +1805,6 @@ msgstr "Seret kiri untuk mengalih pilihan."
 msgid "Left drag to scale selection."
 msgstr "Seret kiri untuk menskala pilihan."
 
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:169
-msgid "Selection: Opaque"
-msgstr "Pilihan: Legap"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:170
-msgid "Selection: Transparent"
-msgstr "Pilihan: Lut sinar"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:190
-msgid "Selection: Transparency Color"
-msgstr "Pilihan: Warna Kelutsinaran"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:210
-msgid "Selection: Transparency Color Similarity"
-msgstr "Pilihan: Keserupaan Warna Kelutsinaran"
-
 #: tools/selection/image/kpToolEllipticalSelection.cpp:43
 msgid "Selection (Elliptical)"
 msgstr "Pilihan (Bujur)"
@@ -1959,18 +1829,21 @@ msgstr "Pilihan (Segi empat tepat)"
 msgid "Makes a rectangular selection"
 msgstr "Buat pilihan segi empat tepat"
 
-#: tools/selection/kpAbstractSelectionTool_Move.cpp:319
-msgid "Selection: Move"
-msgstr "Pilihan: Alih"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:169
+msgid "Selection: Opaque"
+msgstr "Pilihan: Legap"
 
-#: tools/selection/kpAbstractSelectionTool_Move.cpp:341
-#, kde-format
-msgid "%1: Smear"
-msgstr "%1: Comot"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:170
+msgid "Selection: Transparent"
+msgstr "Pilihan: Lut sinar"
 
-#: tools/selection/text/kpToolText.cpp:59
-msgid "Writes text"
-msgstr "Tulis teks"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:190
+msgid "Selection: Transparency Color"
+msgstr "Pilihan: Warna Kelutsinaran"
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:210
+msgid "Selection: Transparency Color Similarity"
+msgstr "Pilihan: Keserupaan Warna Kelutsinaran"
 
 #: tools/selection/text/kpToolText_Commands.cpp:70
 msgid "Text: Backspace"
@@ -2007,6 +1880,10 @@ msgstr "Seret kiri untuk mensaiz semula kotak teks"
 #: tools/selection/text/kpToolText_SelectText.cpp:56
 msgid "Left click to change cursor position."
 msgstr "Klik kiri untuk menukar posisi kursor."
+
+#: tools/selection/text/kpToolText.cpp:59
+msgid "Writes text"
+msgstr "Tulis teks"
 
 #: tools/selection/text/kpToolText_TextStyle.cpp:117
 msgid "Text: Opaque Background"
@@ -2052,11 +1929,41 @@ msgstr "Teks: Garis bawah"
 msgid "Text: Strike Through"
 msgstr "Teks: Garis lorek"
 
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:319
+msgid "Selection: Move"
+msgstr "Pilihan: Alih"
+
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:341
+#, kde-format
+msgid "%1: Smear"
+msgstr "%1: Comot"
+
 #: tools/kpTool.cpp:155
 #, kde-format
 msgctxt "<Tool Name> (<Single Accel Key>)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
+
+#: tools/kpToolFloodFill.cpp:55
+msgid "Fills regions in the image"
+msgstr "Isi kawasan dalam imej"
+
+#: tools/kpToolFloodFill.cpp:75
+msgid "Click to fill a region."
+msgstr "Klik untuk isi kawasan."
+
+#: tools/kpTool_UserNotifications.cpp:42
+msgid "Right click to cancel."
+msgstr "Klik kanan untuk batal."
+
+#: tools/kpTool_UserNotifications.cpp:44
+msgid "Left click to cancel."
+msgstr "Klik kiri untuk batal."
+
+#: tools/kpTool_UserNotifications.cpp:73
+#, kde-format
+msgid "%1: "
+msgstr "%1: "
 
 #: views/kpZoomedThumbnailView.cpp:66
 #, fuzzy, kde-format
@@ -2265,38 +2172,6 @@ msgstr "Kurangkan Kepada"
 msgid "&Granularity:"
 msgstr ""
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:93
-msgid "Convert &to:"
-msgstr "Tukar &kepada:"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:98
-msgid "Quali&ty:"
-msgstr "Kuali&ti:"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:106
-msgid "&Preview"
-msgstr "&Prapapar"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:228
-msgid "Monochrome"
-msgstr "Monokrom"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:229
-msgid "Monochrome (Dithered)"
-msgstr "Monokrom (Mengagak)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:233
-msgid "256 Color"
-msgstr "256 Warna"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:234
-msgid "256 Color (Dithered)"
-msgstr "256 Warna (Mengagak)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:239
-msgid "24-bit Color"
-msgstr "Warna 24 bit"
-
 #: widgets/kpTransparentColorCell.cpp:65
 #: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:45
 msgid "Transparent"
@@ -2373,6 +2248,38 @@ msgid ""
 "the color of the source cell.</p></qt>"
 msgstr ""
 
+#: widgets/kpDocumentSaveOptionsWidget.cpp:93
+msgid "Convert &to:"
+msgstr "Tukar &kepada:"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:98
+msgid "Quali&ty:"
+msgstr "Kuali&ti:"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:106
+msgid "&Preview"
+msgstr "&Prapapar"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:228
+msgid "Monochrome"
+msgstr "Monokrom"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:229
+msgid "Monochrome (Dithered)"
+msgstr "Monokrom (Mengagak)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:233
+msgid "256 Color"
+msgstr "256 Warna"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:234
+msgid "256 Color (Dithered)"
+msgstr "256 Warna (Mengagak)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:239
+msgid "24-bit Color"
+msgstr "Warna 24 bit"
+
 #: widgets/kpPrintDialogPage.cpp:60
 #, fuzzy
 #| msgid "Image file to open"
@@ -2388,6 +2295,107 @@ msgstr ""
 msgid "Top-&left of the page"
 msgstr ""
 
+#: kolourpaint.cpp:49
+#, fuzzy
+#| msgid "KolourPaint"
+msgid "KolourPaint"
+msgstr "KolourPaint"
+
+#: kolourpaint.cpp:51
+msgid "Paint Program for KDE"
+msgstr "Program Lukisan untuk KDE"
+
+#: kolourpaint.cpp:54
+msgid "To obtain support, please visit the website."
+msgstr ""
+
+#: kolourpaint.cpp:65
+msgid "Clarence Dang"
+msgstr ""
+
+#: kolourpaint.cpp:65
+msgid "Project Founder"
+msgstr ""
+
+#: kolourpaint.cpp:66
+msgid "Thurston Dang"
+msgstr ""
+
+#: kolourpaint.cpp:66
+msgid "Chief Investigator"
+msgstr "Ketua Penyiasat"
+
+#: kolourpaint.cpp:68
+#, fuzzy
+msgid "Martin Koller"
+msgstr "Bar Alat Teks"
+
+#: kolourpaint.cpp:68
+msgid "Scanning Support, Alpha Support, Current Maintainer"
+msgstr ""
+
+#: kolourpaint.cpp:69
+msgid "Kristof Borrey"
+msgstr ""
+
+#: kolourpaint.cpp:69 kolourpaint.cpp:72 kolourpaint.cpp:73
+msgid "Icons"
+msgstr "Ikon"
+
+#: kolourpaint.cpp:70
+msgid "Tasuku Suzuki"
+msgstr ""
+
+#: kolourpaint.cpp:70 kolourpaint.cpp:71
+msgid "InputMethod Support"
+msgstr "Sokongan Kaedah Input"
+
+#: kolourpaint.cpp:71
+msgid "Kazuki Ohta"
+msgstr ""
+
+#: kolourpaint.cpp:72
+msgid "Nuno Pinheiro"
+msgstr ""
+
+#: kolourpaint.cpp:73
+msgid "Danny Allen"
+msgstr ""
+
+#: kolourpaint.cpp:74
+msgid "Mike Gashler"
+msgstr ""
+
+#: kolourpaint.cpp:74
+#, fuzzy
+#| msgid "More Image Effects"
+msgid "Image Effects"
+msgstr "Lagi Kesan Imej."
+
+#: kolourpaint.cpp:76
+msgid "Laurent Montel"
+msgstr ""
+
+#: kolourpaint.cpp:76
+msgid "KDE 4 Porting"
+msgstr ""
+
+#: kolourpaint.cpp:80
+msgid ""
+"Thanks to the many others who have helped to make this program possible."
+msgstr ""
+
+#: kolourpaint.cpp:85
+msgid "Image file to open"
+msgstr "Fail imej hendak dibuka"
+
+#: kpThumbnail.cpp:126
+#, fuzzy
+#| msgid "Thumbnail"
+msgctxt "@title:window"
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
 #: kpViewScrollableContainer.cpp:160 kpViewScrollableContainer.cpp:826
 #: kpViewScrollableContainer.cpp:830 kpViewScrollableContainer.cpp:834
 msgid "Left drag the handle to resize the image."
@@ -2400,13 +2408,6 @@ msgstr "Saiz semula Imej: Lepaskan semua butang tetikus."
 #: kpViewScrollableContainer.cpp:231
 msgid "Resize Image: Right click to cancel."
 msgstr "Saiz semula Imej: Klik Kanan untuk batal."
-
-#: kpThumbnail.cpp:126
-#, fuzzy
-#| msgid "Thumbnail"
-msgctxt "@title:window"
-msgid "Thumbnail"
-msgstr "Thumbnail"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

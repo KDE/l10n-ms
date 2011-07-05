@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-17 04:17+0200\n"
+"POT-Creation-Date: 2011-07-05 05:16+0200\n"
 "PO-Revision-Date: 2005-11-30 11:20+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -248,6 +248,10 @@ msgstr "Pilih Saluran"
 msgid "Mixer"
 msgstr "Pengadun"
 
+#: core/mixdevice.cpp:112 backends/mixer_oss.cpp:67 backends/mixer_oss.cpp:68
+msgid "unknown"
+msgstr "tak diketahui"
+
 #: core/mixertoolbox.cpp:204
 msgid "Sound drivers supported:"
 msgstr "Pemacu bunyi disokong:"
@@ -255,10 +259,6 @@ msgstr "Pemacu bunyi disokong:"
 #: core/mixertoolbox.cpp:205
 msgid "Sound drivers used:"
 msgstr "Pemacu bunyi digunakan:"
-
-#: core/mixdevice.cpp:112 backends/mixer_oss.cpp:67 backends/mixer_oss.cpp:68
-msgid "unknown"
-msgstr "tak diketahui"
 
 #: apps/main.cpp:33
 msgid "KMix - KDE's full featured mini mixer"
@@ -692,6 +692,27 @@ msgstr ""
 msgid "kmix: Unknown error. Please report how you produced this error."
 msgstr "kmix: Ralat tak diketahui. Laporkan bagaimana anda mendapat ralat ini."
 
+#: backends/mixer_oss4.cpp:495
+#, fuzzy
+#| msgid ""
+#| "kmix: Mixer cannot be found.\n"
+#| "Please check that the soundcard is installed and the\n"
+#| "soundcard driver is loaded.\n"
+#| "On Linux you might need to use 'insmod' to load the driver.\n"
+#| "Use 'soundon' when using commercial OSS."
+msgid ""
+"kmix: Mixer cannot be found.\n"
+"Please check that the soundcard is installed and the\n"
+"soundcard driver is loaded.\n"
+"On Linux you might need to use 'insmod' to load the driver.\n"
+"Use 'soundon' when using OSS4 from 4front."
+msgstr ""
+"kmix: Pengadun tidak ditemui.\n"
+"Periksa sama ada kad bunyi dipasang dan\n"
+"peranti kad bunyi dimuatkan atau tidak.\n"
+"Pada Linux anda mungkin perlu menggunakan 'insmod' untuk memuatkan pemacu.\n"
+"Gunakan 'soundon' apabila menggunakan OSS komersil."
+
 #: backends/mixer_pulse.cpp:318 backends/mixer_pulse.cpp:377
 msgid "Unknown Application"
 msgstr ""
@@ -715,27 +736,6 @@ msgstr ""
 #: backends/mixer_pulse.cpp:985
 msgid "Capture Streams"
 msgstr ""
-
-#: backends/mixer_oss4.cpp:495
-#, fuzzy
-#| msgid ""
-#| "kmix: Mixer cannot be found.\n"
-#| "Please check that the soundcard is installed and the\n"
-#| "soundcard driver is loaded.\n"
-#| "On Linux you might need to use 'insmod' to load the driver.\n"
-#| "Use 'soundon' when using commercial OSS."
-msgid ""
-"kmix: Mixer cannot be found.\n"
-"Please check that the soundcard is installed and the\n"
-"soundcard driver is loaded.\n"
-"On Linux you might need to use 'insmod' to load the driver.\n"
-"Use 'soundon' when using OSS4 from 4front."
-msgstr ""
-"kmix: Pengadun tidak ditemui.\n"
-"Periksa sama ada kad bunyi dipasang dan\n"
-"peranti kad bunyi dimuatkan atau tidak.\n"
-"Pada Linux anda mungkin perlu menggunakan 'insmod' untuk memuatkan pemacu.\n"
-"Gunakan 'soundon' apabila menggunakan OSS komersil."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
