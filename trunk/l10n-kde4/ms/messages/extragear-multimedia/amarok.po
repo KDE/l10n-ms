@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-25 03:57+0200\n"
+"POT-Creation-Date: 2011-07-26 04:06+0200\n"
 "PO-Revision-Date: 2009-06-14 00:43+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -3032,7 +3032,7 @@ msgstr ""
 #: dialogs/transferdialog.cpp:88 dialogs/FilenameLayoutDialog.cpp:230
 #: dialogs/FilenameLayoutDialog.cpp:591 musicbrainz/MusicBrainzTags.cpp:359
 #: playlist/PlaylistModel.cpp:902 services/jamendo/JamendoInfoParser.cpp:51
-#: services/lastfm/LastFmService.cpp:524
+#: services/lastfm/LastFmService.cpp:507
 #: services/magnatune/MagnatuneStore.cpp:218
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
 msgid "Artist"
@@ -9329,21 +9329,22 @@ msgctxt ""
 msgid "m:ss"
 msgstr ""
 
-#: core/meta/support/MetaUtility.cpp:401
-msgctxt ""
-"the time format for a time length when the time is 1 day or above see "
-"QDateTime documentation."
-msgid "d:hh:mm:ss"
-msgstr ""
+#: core/meta/support/MetaUtility.cpp:406
+#, fuzzy, kde-format
+msgctxt "number of days with spacing for the pretty time"
+msgid "%1 day, "
+msgid_plural "%1 days, "
+msgstr[0] "#1 socket() gagal."
+msgstr[1] "#1 socket() gagal."
 
-#: core/meta/support/MetaUtility.cpp:403
+#: core/meta/support/MetaUtility.cpp:407
 msgctxt ""
 "the time format for a time length when the time is 1 hour or above see QTime "
 "documentation."
 msgid "h:mm:ss"
 msgstr ""
 
-#: core/meta/support/MetaUtility.cpp:416
+#: core/meta/support/MetaUtility.cpp:421
 #, fuzzy, kde-format
 #| msgid "Years"
 msgctxt "number of years for the pretty time"
@@ -9352,7 +9353,7 @@ msgid_plural "%1 years"
 msgstr[0] "Tahun"
 msgstr[1] "Tahun"
 
-#: core/meta/support/MetaUtility.cpp:418
+#: core/meta/support/MetaUtility.cpp:423
 #, fuzzy, kde-format
 #| msgid "Months"
 msgctxt "number of months for the pretty time"
@@ -9361,7 +9362,7 @@ msgid_plural "%1 months"
 msgstr[0] "Bulan"
 msgstr[1] "Bulan"
 
-#: core/meta/support/MetaUtility.cpp:420
+#: core/meta/support/MetaUtility.cpp:425
 #, fuzzy, kde-format
 msgctxt "number of days for the pretty time"
 msgid "%1 day"
@@ -9369,7 +9370,7 @@ msgid_plural "%1 days"
 msgstr[0] "#1 socket() gagal."
 msgstr[1] "#1 socket() gagal."
 
-#: core/meta/support/MetaUtility.cpp:422
+#: core/meta/support/MetaUtility.cpp:427
 #, fuzzy, kde-format
 msgctxt "number of hours for the pretty time"
 msgid "%1 hour"
@@ -9377,7 +9378,7 @@ msgid_plural "%1 hours"
 msgstr[0] "Jam"
 msgstr[1] "Jam"
 
-#: core/meta/support/MetaUtility.cpp:424
+#: core/meta/support/MetaUtility.cpp:429
 #, fuzzy, kde-format
 msgctxt "number of minutes for the pretty time"
 msgid "%1 minute"
@@ -9385,7 +9386,7 @@ msgid_plural "%1 minutes"
 msgstr[0] "Minit"
 msgstr[1] "Minit"
 
-#: core/meta/support/MetaUtility.cpp:426
+#: core/meta/support/MetaUtility.cpp:431
 #, fuzzy, kde-format
 #| msgid "Seconds"
 msgctxt "number of seconds for the pretty time"
@@ -13315,6 +13316,13 @@ msgstr ""
 msgid "Play Similar Artists from Last.fm"
 msgstr ""
 
+#: services/lastfm/ScrobblerAdapter.cpp:236
+#: services/lastfm/LastFmService.cpp:543
+#, kde-format
+msgctxt "As in, lastfm"
+msgid "Loved Track: %1"
+msgstr ""
+
 #: services/lastfm/LastFmService.cpp:195
 msgid "Last.fm: The social music revolution"
 msgstr ""
@@ -13375,31 +13383,19 @@ msgid_plural "Play Count: %1 plays"
 msgstr[0] ""
 msgstr[1] ""
 
-#: services/lastfm/LastFmService.cpp:465
-#, fuzzy
-msgid "Enter login information for Last.fm"
-msgstr "Utiliti maklumat tetingkap untuk X"
-
-#: services/lastfm/LastFmService.cpp:521
+#: services/lastfm/LastFmService.cpp:504
 #, fuzzy
 msgid "Create a Custom Last.fm Station"
 msgstr "Benarkan Toolbar Tersendiri"
 
-#: services/lastfm/LastFmService.cpp:524
+#: services/lastfm/LastFmService.cpp:507
 #, fuzzy
 msgid "Tag"
 msgstr "Tag"
 
-#: services/lastfm/LastFmService.cpp:524
+#: services/lastfm/LastFmService.cpp:507
 msgid "User"
 msgstr "Pengguna"
-
-#: services/lastfm/LastFmService.cpp:560
-#: services/lastfm/ScrobblerAdapter.cpp:236
-#, kde-format
-msgctxt "As in, lastfm"
-msgid "Loved Track: %1"
-msgstr ""
 
 #: services/magnatune/MagnatuneCollectionLocation.cpp:42
 msgid "Preview Tracks"
@@ -15165,6 +15161,10 @@ msgstr "&Lajur Kiri"
 #, fuzzy, kde-format
 msgid "Last played: %1"
 msgstr "Disimpan terakhir:"
+
+#, fuzzy
+#~ msgid "Enter login information for Last.fm"
+#~ msgstr "Utiliti maklumat tetingkap untuk X"
 
 #, fuzzy
 #~ msgid "Multiple background tasks running"
