@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-26 03:52+0200\n"
+"POT-Creation-Date: 2011-07-27 03:41+0200\n"
 "PO-Revision-Date: 2006-10-05 19:45+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -145,6 +145,27 @@ msgstr "Tidak dapat muatkan plugin \"%1\"."
 msgctxt "database connection"
 msgid "(connection %1)"
 msgstr ""
+
+#: core/KexiWindow.cpp:612
+msgid ""
+"Design has been changed. You must save it before switching to other view."
+msgstr ""
+"Reka bentuk telah diubah. Anda mesti menyimpannya sebelum beralih ke paparan "
+"lain. "
+
+#: core/KexiWindow.cpp:677 main/KexiMainWindow.cpp:3582
+#, kde-format
+msgid "Switching to other view failed (%1)."
+msgstr "Beralih ke papar lain gagal (%1)."
+
+#: core/KexiWindow.cpp:859
+msgid "Saving object's definition failed."
+msgstr "Menyimpan takrif objek gagal."
+
+#: core/KexiWindow.cpp:943
+#, fuzzy
+msgid "Saving object's data failed."
+msgstr "Menyimpan takrif objek gagal."
 
 #: core/kexicmdlineargs.h:32
 msgid "Options related to entire projects:"
@@ -855,27 +876,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "opensource@mimos.my"
 
-#: core/KexiWindow.cpp:612
-msgid ""
-"Design has been changed. You must save it before switching to other view."
-msgstr ""
-"Reka bentuk telah diubah. Anda mesti menyimpannya sebelum beralih ke paparan "
-"lain. "
-
-#: core/KexiWindow.cpp:677 main/KexiMainWindow.cpp:3582
-#, kde-format
-msgid "Switching to other view failed (%1)."
-msgstr "Beralih ke papar lain gagal (%1)."
-
-#: core/KexiWindow.cpp:859
-msgid "Saving object's definition failed."
-msgstr "Menyimpan takrif objek gagal."
-
-#: core/KexiWindow.cpp:943
-#, fuzzy
-msgid "Saving object's data failed."
-msgstr "Menyimpan takrif objek gagal."
-
 #: core/kexi.cpp:122
 #, fuzzy
 #| msgid "No View"
@@ -917,7 +917,8 @@ msgstr ""
 #| msgid ""
 #| "You can correct data in this row or use \"Cancel row changes\" function."
 msgid ""
-"You can correct data in this row or use \"Cancel record changes\" function."
+"You can correct data in this record or use \"Cancel record changes\" "
+"function."
 msgstr ""
 "Anda boleh betulkan data dalam baris ini atau gunakan fungsi \"Batal ubah "
 "baris\"."
@@ -3062,22 +3063,6 @@ msgstr "Alih Keluar Butiran"
 msgid "file"
 msgstr "fail"
 
-#: kexidb/cursor.cpp:145
-msgid "No query statement or schema defined."
-msgstr "Tiada penyataan pertanyaan atau skema ditentukan."
-
-#: kexidb/cursor.cpp:155
-msgid "Query statement is empty."
-msgstr "Penyataan pertanyaan kosong."
-
-#: kexidb/cursor.cpp:165
-msgid "Error opening database cursor."
-msgstr "Ralat semasa membuka kursor pangkalan data."
-
-#: kexidb/cursor.cpp:410 kexidb/cursor.cpp:433
-msgid "Cannot fetch next record."
-msgstr "Tidak dapat mengambil rekod berikutnya."
-
 #: kexidb/dbobjectnamevalidator.cpp:46
 #, kde-format
 msgid ""
@@ -3986,6 +3971,22 @@ msgstr "Menghapuskan baris pada pelayan gagal. "
 msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
 msgid "expr"
 msgstr "expr"
+
+#: kexidb/cursor.cpp:145
+msgid "No query statement or schema defined."
+msgstr "Tiada penyataan pertanyaan atau skema ditentukan."
+
+#: kexidb/cursor.cpp:155
+msgid "Query statement is empty."
+msgstr "Penyataan pertanyaan kosong."
+
+#: kexidb/cursor.cpp:165
+msgid "Error opening database cursor."
+msgstr "Ralat semasa membuka kursor pangkalan data."
+
+#: kexidb/cursor.cpp:410 kexidb/cursor.cpp:433
+msgid "Cannot fetch next record."
+msgstr "Tidak dapat mengambil rekod berikutnya."
 
 #: kexiutils/identifier.cpp:92
 #, kde-format
@@ -7910,25 +7911,6 @@ msgstr "Simpan perubahan projek"
 msgid "Discard Changes"
 msgstr "Simpan Perubahan"
 
-#: widget/tableview/kexitableview.cpp:120
-#, fuzzy
-msgid "Contains a pointer to the currently selected record"
-msgstr ""
-"Batalkan perubahan yang dibuat ke atas baris jadual yang sedang dipilih"
-
-#: widget/tableview/kexitableview.cpp:122
-#, fuzzy
-msgid "Record navigator"
-msgstr "Navigator Projek"
-
-#: widget/tableview/kexitableview.cpp:242
-msgid "Add Record"
-msgstr "Tambah Rekod"
-
-#: widget/tableview/kexitableview.cpp:245
-msgid "Remove Record"
-msgstr "Alih Keluar Rekod"
-
 #: widget/tableview/kexitableviewdata.cpp:596
 #: widget/tableview/kexitableviewdata.cpp:607
 #, kde-format
@@ -7952,6 +7934,25 @@ msgstr "Mengubah baris gagal."
 #| msgid "Row deleting failed."
 msgid "Record deleting failed."
 msgstr "Menghapuskan baris gagal."
+
+#: widget/tableview/kexitableview.cpp:120
+#, fuzzy
+msgid "Contains a pointer to the currently selected record"
+msgstr ""
+"Batalkan perubahan yang dibuat ke atas baris jadual yang sedang dipilih"
+
+#: widget/tableview/kexitableview.cpp:122
+#, fuzzy
+msgid "Record navigator"
+msgstr "Navigator Projek"
+
+#: widget/tableview/kexitableview.cpp:242
+msgid "Add Record"
+msgstr "Tambah Rekod"
+
+#: widget/tableview/kexitableview.cpp:245
+msgid "Remove Record"
+msgstr "Alih Keluar Rekod"
 
 #: widget/utils/kexidatetimeformatter.cpp:303
 msgid "pm"
