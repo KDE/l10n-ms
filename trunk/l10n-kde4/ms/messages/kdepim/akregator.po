@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-06 04:34+0200\n"
+"POT-Creation-Date: 2011-07-30 04:16+0200\n"
 "PO-Revision-Date: 2005-10-12 11:13+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -126,26 +126,6 @@ msgstr ""
 msgid "Didier Hoarau"
 msgstr ""
 
-#: plugins/onlinesync/onlinesyncplugin.cpp:61
-msgid "Synchronize Feeds"
-msgstr ""
-
-#: plugins/onlinesync/onlinesyncplugin.cpp:96
-#, kde-format
-msgid "Get from %1"
-msgstr ""
-
-#: plugins/onlinesync/onlinesyncplugin.cpp:105
-#, kde-format
-msgid "Send to %1"
-msgstr ""
-
-#: plugins/onlinesync/onlinesyncplugin.cpp:114
-#, fuzzy
-#| msgid "Loading..."
-msgid "Manage..."
-msgstr "Memuatkan..."
-
 #: plugins/onlinesync/sync/feedsync.cpp:161
 msgid ""
 "Some categories and feeds have been marked for removal. Do you want to "
@@ -200,6 +180,26 @@ msgstr "Suapan"
 msgid "Ask"
 msgstr ""
 
+#: plugins/onlinesync/onlinesyncplugin.cpp:61
+msgid "Synchronize Feeds"
+msgstr ""
+
+#: plugins/onlinesync/onlinesyncplugin.cpp:96
+#, kde-format
+msgid "Get from %1"
+msgstr ""
+
+#: plugins/onlinesync/onlinesyncplugin.cpp:105
+#, kde-format
+msgid "Send to %1"
+msgstr ""
+
+#: plugins/onlinesync/onlinesyncplugin.cpp:114
+#, fuzzy
+#| msgid "Loading..."
+msgid "Manage..."
+msgstr "Memuatkan..."
+
 #: plugins/sharemicroblog/akregator_config_sharemicroblog.cpp:50
 msgid "kcmakrshareconfig"
 msgstr ""
@@ -241,6 +241,53 @@ msgstr ""
 #: plugins/sharemicroblog/sharemicroblogplugin.cpp:165
 msgid "Error during article share"
 msgstr ""
+
+#: src/feedlist.cpp:177
+msgid "All Feeds"
+msgstr "Semua Suapan"
+
+#: src/searchbar.cpp:77
+#, fuzzy
+#| msgid "S&earch:"
+msgctxt "Title of article searchbar"
+msgid "S&earch:"
+msgstr "&Cari:"
+
+#: src/searchbar.cpp:88
+msgid "Status:"
+msgstr "Status:"
+
+#: src/searchbar.cpp:97
+msgid "All Articles"
+msgstr "Semua Artikel"
+
+#: src/searchbar.cpp:98
+#, fuzzy
+#| msgid "Unread"
+msgctxt "Unread articles filter"
+msgid "Unread"
+msgstr "Belum baca"
+
+#: src/searchbar.cpp:99
+#, fuzzy
+#| msgid "New"
+msgctxt "New articles filter"
+msgid "New"
+msgstr "Baru"
+
+#: src/searchbar.cpp:100
+#, fuzzy
+msgctxt "Important articles filter"
+msgid "Important"
+msgstr "Tandakan sebagai &belum baca"
+
+#: src/searchbar.cpp:102
+msgid "Enter space-separated terms to filter article list"
+msgstr "Masukkan syarat ruang terpisah untuk menapis senarai artikel"
+
+#: src/searchbar.cpp:103
+msgid "Choose what kind of articles to show in article list"
+msgstr "Pilih jenis artikel untuk dipaparkan dalam senarai artikel"
 
 #: src/mainwindow.cpp:104
 #, fuzzy, kde-format
@@ -365,33 +412,13 @@ msgstr ""
 msgid "Ask Me Later"
 msgstr ""
 
-#: src/actions.cpp:35 src/pageviewer.cpp:411
-msgid "Open Link in New &Tab"
-msgstr "Buka Pautan di dalam &Tab Baru"
+#: src/tabwidget.cpp:113
+msgid "Close the current tab"
+msgstr "Tutup tab semasa"
 
-#: src/actions.cpp:44 src/pageviewer.cpp:413
-msgid "Open Link in External &Browser"
-msgstr "Buka Pautan di dalam &Pelayar Luar"
-
-#. i18n: file: src/addfeedwidgetbase.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::AddFeedWidgetBase)
-#: src/addfeeddialog.cpp:65 rc.cpp:419
-msgid "Add Feed"
-msgstr "Tambah Suapan"
-
-#: src/addfeeddialog.cpp:104
-#, kde-format
-msgid "Downloading %1"
-msgstr "Memuat turun %1"
-
-#: src/addfeeddialog.cpp:123
-#, kde-format
-msgid "Feed not found from %1."
-msgstr "Suapan tidak ditemui dari  %1."
-
-#: src/addfeeddialog.cpp:129
-msgid "Feed found, downloading..."
-msgstr "Suapan ditemui, memuat turun..."
+#: src/articlejobs.cpp:188
+msgid "The feed to be listed was already removed."
+msgstr ""
 
 #: src/akregator_options.h:37 src/akregator_options.h:41
 msgid "Add a feed with the given URL"
@@ -404,6 +431,18 @@ msgstr ""
 #: src/akregator_options.h:40
 msgid "Hide main window on startup"
 msgstr ""
+
+#: src/progressmanager.cpp:177
+msgid "Fetch completed"
+msgstr "Kutipan selesai"
+
+#: src/progressmanager.cpp:187
+msgid "Fetch error"
+msgstr "Ralat Kutip"
+
+#: src/progressmanager.cpp:197
+msgid "Fetch aborted"
+msgstr "Kutip dihenti paksa"
 
 #: src/articleviewer.cpp:137
 msgid "Copy &Link Address"
@@ -469,22 +508,6 @@ msgstr "Anda pasti ingin menyahaktifkan halaman pengenalan ini?"
 #: src/articleviewer.cpp:735
 msgid "Disable Introduction Page"
 msgstr "Nyahaktifkan Halaman Pengenalan"
-
-#: src/progressmanager.cpp:177
-msgid "Fetch completed"
-msgstr "Kutipan selesai"
-
-#: src/progressmanager.cpp:187
-msgid "Fetch error"
-msgstr "Ralat Kutip"
-
-#: src/progressmanager.cpp:197
-msgid "Fetch aborted"
-msgstr "Kutip dihenti paksa"
-
-#: src/articlejobs.cpp:188
-msgid "The feed to be listed was already removed."
-msgstr ""
 
 #: src/articlemodel.cpp:106
 #, fuzzy
@@ -571,9 +594,13 @@ msgstr "Hapuskan Suapan"
 msgid "No Archive"
 msgstr "Arkib"
 
-#: src/feedlist.cpp:177
-msgid "All Feeds"
-msgstr "Semua Suapan"
+#: src/actions.cpp:35 src/pageviewer.cpp:411
+msgid "Open Link in New &Tab"
+msgstr "Buka Pautan di dalam &Tab Baru"
+
+#: src/actions.cpp:44 src/pageviewer.cpp:413
+msgid "Open Link in External &Browser"
+msgstr "Buka Pautan di dalam &Pelayar Luar"
 
 #: src/feedpropertiesdialog.cpp:71 src/feedpropertiesdialog.cpp:96
 #, fuzzy
@@ -923,48 +950,25 @@ msgstr ""
 msgid "Complete Story"
 msgstr "Cerita Lengkap"
 
-#: src/searchbar.cpp:77
-#, fuzzy
-#| msgid "S&earch:"
-msgctxt "Title of article searchbar"
-msgid "S&earch:"
-msgstr "&Cari:"
+#. i18n: file: src/addfeedwidgetbase.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::AddFeedWidgetBase)
+#: src/addfeeddialog.cpp:65 rc.cpp:419
+msgid "Add Feed"
+msgstr "Tambah Suapan"
 
-#: src/searchbar.cpp:88
-msgid "Status:"
-msgstr "Status:"
+#: src/addfeeddialog.cpp:104
+#, kde-format
+msgid "Downloading %1"
+msgstr "Memuat turun %1"
 
-#: src/searchbar.cpp:97
-msgid "All Articles"
-msgstr "Semua Artikel"
+#: src/addfeeddialog.cpp:123
+#, kde-format
+msgid "Feed not found from %1."
+msgstr "Suapan tidak ditemui dari  %1."
 
-#: src/searchbar.cpp:98
-#, fuzzy
-#| msgid "Unread"
-msgctxt "Unread articles filter"
-msgid "Unread"
-msgstr "Belum baca"
-
-#: src/searchbar.cpp:99
-#, fuzzy
-#| msgid "New"
-msgctxt "New articles filter"
-msgid "New"
-msgstr "Baru"
-
-#: src/searchbar.cpp:100
-#, fuzzy
-msgctxt "Important articles filter"
-msgid "Important"
-msgstr "Tandakan sebagai &belum baca"
-
-#: src/searchbar.cpp:102
-msgid "Enter space-separated terms to filter article list"
-msgstr "Masukkan syarat ruang terpisah untuk menapis senarai artikel"
-
-#: src/searchbar.cpp:103
-msgid "Choose what kind of articles to show in article list"
-msgstr "Pilih jenis artikel untuk dipaparkan dalam senarai artikel"
+#: src/addfeeddialog.cpp:129
+msgid "Feed found, downloading..."
+msgstr "Suapan ditemui, memuat turun..."
 
 #: src/subscriptionlistjobs.cpp:64
 msgid "Feed list was deleted"
@@ -1039,10 +1043,6 @@ msgstr "&Artikel"
 #| msgid "Comments"
 msgid "Columns"
 msgstr "Komen"
-
-#: src/tabwidget.cpp:113
-msgid "Close the current tab"
-msgstr "Tutup tab semasa"
 
 #: src/articlelistview.cpp:383
 msgid ""
