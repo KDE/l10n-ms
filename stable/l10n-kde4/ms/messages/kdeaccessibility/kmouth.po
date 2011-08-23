@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"POT-Creation-Date: 2011-08-23 16:53+0200\n"
 "PO-Revision-Date: 2006-10-06 21:52+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -15,40 +15,285 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: phrasebook/phrasetree.cpp:471
-#, kde-format
+#: configwizard.cpp:38
+msgid "Initial Configuration - KMouth"
+msgstr "Konfigurasi Awal - KMouth"
+
+#: configwizard.cpp:57
+msgid "Text-to-Speech Configuration"
+msgstr "Konfigurasi Teks-ke-Tutur"
+
+#: configwizard.cpp:71
+msgid "Initial Phrase Book"
+msgstr "Buku Frasa Awal"
+
+#: configwizard.cpp:103 optionsdialog.cpp:145 optionsdialog.cpp:146
+msgid "Word Completion"
+msgstr "Pelengkapan Kata"
+
+#: kmouth.cpp:113
+msgid "&Open as History..."
+msgstr "&Buka sebagai Sejarah..."
+
+#: kmouth.cpp:116 kmouth.cpp:117
+msgid "Opens an existing file as history"
+msgstr "Membuka fail sedia ada sebagai sejarah"
+
+#: kmouth.cpp:121
+msgid "Save &History As..."
+msgstr "Simpan &Sejarah Sebagai..."
+
+#: kmouth.cpp:124 kmouth.cpp:125
+msgid "Saves the actual history as..."
+msgstr "Menyimpan sejarah sebenar sebagai..."
+
+#: kmouth.cpp:129
+msgid "&Print History..."
+msgstr "&Cetak Sejarah..."
+
+#: kmouth.cpp:132 kmouth.cpp:133
+msgid "Prints out the actual history"
+msgstr "Mencetak sejarah sebenar"
+
+#: kmouth.cpp:136 kmouth.cpp:137
+msgid "Quits the application"
+msgstr "Keluar aplikasi"
+
+#: kmouth.cpp:141
+msgid "Cuts the selected section and puts it to the clipboard"
+msgstr "Memotong keratan yang dipilih dan meletakkannya dalam klipbod"
+
+#: kmouth.cpp:142
 msgid ""
-"The '%1' key combination has already been allocated to %2.\n"
-"Please choose a unique key combination."
+"Cuts the selected section and puts it to the clipboard. If there is some "
+"text selected in the edit field it is placed it on the clipboard. Otherwise "
+"the selected sentences in the history (if any) are placed on the clipboard."
 msgstr ""
-"Kombinasi kekunci '%1' telah diperuntukkan kepada %2.\n"
-"Pilih kombinasi kekunci yang unik."
+"Memotong keratan yang dipilih dan meletakkannya dalam klipbod. Jika terdapat "
+"teks yang dipilih dalam medan edit, ia diletakkan dalam klipbod. Jika tidak, "
+"ayat yang dipilih dalam sejarah (jika ada) diletakkan dalam klipbod."
 
-#: phrasebook/phrasetree.cpp:493
-#, kde-format
-msgid "the standard \"%1\" action"
-msgstr "tindakan \"%1\" standard"
+#: kmouth.cpp:145
+msgid "Copies the selected section to the clipboard"
+msgstr "Menyalin keratan yang dipilih ke dalam klipbod"
 
-#: phrasebook/phrasetree.cpp:494
-msgid "Conflict with Standard Application Shortcut"
-msgstr "Konflik dengan Kekunci Pintas Aplikasi Standard"
+#: kmouth.cpp:146
+msgid ""
+"Copies the selected section to the clipboard. If there is some text selected "
+"in the edit field it is copied to the clipboard. Otherwise the selected "
+"sentences in the history (if any) are copied to the clipboard."
+msgstr ""
+"Menyalin keratan yang dipilih ke dalam klipbod. Jika terdapat teks yang "
+"dipilih dalam medan edit, ia disalin ke dalam klipbod. Jika tidak, ayat yang "
+"dipilih dalam sejarah (jika ada) disalin ke dalam klipbod."
 
-#: phrasebook/phrasetree.cpp:511
-#, kde-format
-msgid "the global \"%1\" action"
-msgstr "tindakan \"%1\" global"
+#: kmouth.cpp:149 phrasebook/phrasebookdialog.cpp:413
+#, fuzzy
+#| msgid "Pastes the clipboard contents to actual position"
+msgid "Pastes the clipboard contents to current position"
+msgstr "Menampal kandungan klipbod ke posisi sebenar"
 
-#: phrasebook/phrasetree.cpp:512
-msgid "Conflict with Global Shortcuts"
-msgstr "Konflik dengan Kekunci Pintas Global"
+#: kmouth.cpp:150 phrasebook/phrasebookdialog.cpp:414
+msgid ""
+"Pastes the clipboard contents at the current cursor position into the edit "
+"field."
+msgstr ""
+"Menampalkan kandungan klipbod di posisi kursor semasa ke dalam medan edit."
 
-#: phrasebook/phrasetree.cpp:527
-msgid "an other phrase"
-msgstr "frasa lain"
+#: kmouth.cpp:154
+#, fuzzy
+#| msgid "&Speak"
+msgctxt "Start speaking"
+msgid "&Speak"
+msgstr "&Tutur"
 
-#: phrasebook/phrasetree.cpp:528
-msgid "Key Conflict"
-msgstr "Konflik Kekunci"
+#: kmouth.cpp:156
+msgid "Speaks the currently active sentence(s)"
+msgstr "Menuturkan ayat aktif semasa"
+
+#: kmouth.cpp:157 phraselist.cpp:86
+msgid ""
+"Speaks the currently active sentence(s). If there is some text in the edit "
+"field it is spoken. Otherwise the selected sentences in the history (if any) "
+"are spoken."
+msgstr ""
+"Menuturkan ayat aktif semasa. Jika terdapat teks dalam medan edit, ia "
+"dituturkan. Jika tidak, ayat yang dipilih dalam sejarah (jika ada) "
+"dituturkan."
+
+#: kmouth.cpp:161
+msgid "&Edit..."
+msgstr "&Edit..."
+
+#: kmouth.cpp:172
+msgid "Show P&hrasebook Bar"
+msgstr "Tayangkan Bar &Buku Frasa"
+
+#: kmouth.cpp:174 kmouth.cpp:175
+msgid "Enables/disables the phrasebook bar"
+msgstr "Mengaktifkan/menyahaktifkan bar buku frasa"
+
+#: kmouth.cpp:178 kmouth.cpp:179
+msgid "Enables/disables the statusbar"
+msgstr "Mengaktifkan/menyahaktifkan bar status"
+
+#: kmouth.cpp:183
+msgid "&Configure KMouth..."
+msgstr "&Konfigur KMouth..."
+
+#: kmouth.cpp:185 kmouth.cpp:186
+msgid "Opens the configuration dialog"
+msgstr "Membuka dialog konfigurasi"
+
+#: kmouth.cpp:194 phraselist.cpp:83
+msgid "&Speak"
+msgstr "&Tutur"
+
+#: kmouth.cpp:195 kmouth.cpp:197
+msgid "Speaks the currently selected phrases in the history"
+msgstr "Menuturkan frasa semasa yang dipilih dalam sejarah"
+
+#: kmouth.cpp:201 phrasebook/phrasebookdialog.cpp:418
+msgid "&Delete"
+msgstr ""
+
+#: kmouth.cpp:203 kmouth.cpp:204
+msgid "Deletes the currently selected phrases from the history"
+msgstr "Menghapuskan frasa semasa yang dipilih daripada sejarah"
+
+#: kmouth.cpp:208
+msgid "Cu&t"
+msgstr "&Potong"
+
+#: kmouth.cpp:210 kmouth.cpp:211
+msgid ""
+"Cuts the currently selected phrases from the history and puts them to the "
+"clipboard"
+msgstr ""
+"Memotong frasa semasa yang dipilih daripada sejarah dan meletakkannya dalam "
+"klipbod"
+
+#: kmouth.cpp:215
+msgid "&Copy"
+msgstr ""
+
+#: kmouth.cpp:217 kmouth.cpp:218
+msgid "Copies the currently selected phrases from the history to the clipboard"
+msgstr "Menyalin frasa semasa yang dipilih daripada sejarah ke dalam klipbod"
+
+#: kmouth.cpp:221
+msgid "Select &All Entries"
+msgstr "Pilih &Semua entri"
+
+#: kmouth.cpp:223 kmouth.cpp:224
+msgid "Selects all phrases in the history"
+msgstr "Pilih semua frasa dalam sejarah"
+
+#: kmouth.cpp:227
+msgid "D&eselect All Entries"
+msgstr "&Nyahpilih Semua Entri"
+
+#: kmouth.cpp:229 kmouth.cpp:230
+msgid "Deselects all phrases in the history"
+msgstr "Nyahpilih semua frasa dalam sejarah"
+
+#: kmouth.cpp:244 kmouth.cpp:262 kmouth.cpp:370 kmouth.cpp:378 kmouth.cpp:396
+#: kmouth.cpp:446 kmouth.cpp:463 kmouth.cpp:480 kmouth.cpp:497
+#, fuzzy
+#| msgid "Ready."
+msgctxt "The job is done"
+msgid "Ready."
+msgstr "Sedia."
+
+#: kmouth.cpp:259 kmouth.cpp:366
+msgid "Opening file..."
+msgstr "Membuka fail..."
+
+#: kmouth.cpp:374
+msgid "Saving history with a new filename..."
+msgstr "Menyimpan sejarah dengan nama fail baru..."
+
+#: kmouth.cpp:383
+msgid "Printing..."
+msgstr "Mencetak..."
+
+#: kmouth.cpp:401
+#, fuzzy
+#| msgid "Exiting..."
+msgctxt "Shutting down the application"
+msgid "Exiting..."
+msgstr "Keluar..."
+
+#: kmouth.cpp:439
+msgid "Toggling menubar..."
+msgstr "Menoggel menubar..."
+
+#: kmouth.cpp:451
+msgid "Toggling toolbar..."
+msgstr "Menoggel bar alat..."
+
+#: kmouth.cpp:468
+msgid "Toggling phrasebook bar..."
+msgstr "Menoggel bar frasa buku..."
+
+#: kmouth.cpp:485
+msgid "Toggle the statusbar..."
+msgstr "Menoggel bar status..."
+
+#: main.cpp:28
+msgid "A type-and-say front end for speech synthesizers"
+msgstr "Antaramuka taip-dan-tutur bagi pensintesis tutur"
+
+#: main.cpp:35
+msgid "KMouth"
+msgstr "KMouth"
+
+#: main.cpp:37
+msgid "(c) 2002/2003, Gunnar Schmi Dt"
+msgstr ""
+
+#: main.cpp:38
+msgid "Gunnar Schmi Dt"
+msgstr ""
+
+#: main.cpp:42
+msgid "History file to open"
+msgstr "Sejarah fail yang hendak dibuka"
+
+#: main.cpp:45
+msgid "Olaf Schmidt"
+msgstr ""
+
+#: main.cpp:45
+msgid "Tips, extended phrase books"
+msgstr "Tips, buku frasa lanjutan"
+
+#: optionsdialog.cpp:120
+#, fuzzy
+msgid "Configuration"
+msgstr "Konfigurasi Teks-ke-Tutur"
+
+#: optionsdialog.cpp:133
+msgid "&Preferences"
+msgstr "&Keutamaan"
+
+#: optionsdialog.cpp:137
+msgid "&Text-to-Speech"
+msgstr "&Teks-ke-Tutur"
+
+#: optionsdialog.cpp:139 optionsdialog.cpp:140
+msgid "General Options"
+msgstr "Pilihan Umum"
+
+#: optionsdialog.cpp:152
+#, fuzzy
+#| msgid "KTTSD Speech Service"
+msgid "Jovie Speech Service"
+msgstr "Servis Tutur KTTSD"
+
+#: optionsdialog.cpp:154
+msgid "KDE Text-to-Speech Daemon Configuration"
+msgstr "Konfigurasi Daemon Teks-ke-Tutur KDE"
 
 #: phrasebook/phrasebook.cpp:263 phrasebook/phrasebookdialog.cpp:790
 msgid ""
@@ -234,23 +479,6 @@ msgid ""
 "Copies the currently selected entry from the phrase book to the clipboard"
 msgstr "Menyalin entri semasa yang dipilih dari buku frasa ke dalam klipbod"
 
-#: phrasebook/phrasebookdialog.cpp:413 kmouth.cpp:149
-#, fuzzy
-#| msgid "Pastes the clipboard contents to actual position"
-msgid "Pastes the clipboard contents to current position"
-msgstr "Menampal kandungan klipbod ke posisi sebenar"
-
-#: phrasebook/phrasebookdialog.cpp:414 kmouth.cpp:150
-msgid ""
-"Pastes the clipboard contents at the current cursor position into the edit "
-"field."
-msgstr ""
-"Menampalkan kandungan klipbod di posisi kursor semasa ke dalam medan edit."
-
-#: phrasebook/phrasebookdialog.cpp:418 kmouth.cpp:201
-msgid "&Delete"
-msgstr ""
-
 #: phrasebook/phrasebookdialog.cpp:420 phrasebook/phrasebookdialog.cpp:421
 msgid "Deletes the selected entries from the phrase book"
 msgstr "Menghapuskan entri yang dipilih dari buku frasa"
@@ -330,378 +558,40 @@ msgstr ""
 "Terdapat ralat semasa menyimpan fail\n"
 "%1"
 
-#: wordcompletion/wordlist.cpp:114
-msgid "Creating Word List"
-msgstr "Mencipta Senarai Word"
-
-#: wordcompletion/wordlist.cpp:114 wordcompletion/wordlist.cpp:296
-msgid "Parsing the KDE documentation..."
-msgstr "Mengkaji hurai ayat dokumentasi KDE..."
-
-#: wordcompletion/wordlist.cpp:243
-msgid "Merging dictionaries..."
-msgstr "Mencantumkan kamus..."
-
-#: wordcompletion/wordlist.cpp:314
-msgid "Parsing file..."
-msgstr "Mengkaji hurai fail..."
-
-#: wordcompletion/wordlist.cpp:325
-msgid "Parsing directory..."
-msgstr "Mengkaji hurai direktori..."
-
-#: wordcompletion/wordlist.cpp:517
-msgid "Performing spell check..."
-msgstr "Melaksanakan semak eja..."
-
-#: wordcompletion/wordcompletionwidget.cpp:75
-#: wordcompletion/wordcompletionwidget.cpp:144
-#: wordcompletion/wordcompletionwidget.cpp:208
-msgid "without name"
-msgstr "tanpa nama"
-
-#: wordcompletion/wordcompletionwidget.cpp:254
-msgid "Export Dictionary"
-msgstr "Eksport Kamus"
-
-#: wordcompletion/dictionarycreationwizard.cpp:49
-msgid "Source of New Dictionary (1)"
-msgstr "Sumber Kamus Baru (1)"
-
-#: wordcompletion/dictionarycreationwizard.cpp:54
-#: wordcompletion/dictionarycreationwizard.cpp:58
-#: wordcompletion/dictionarycreationwizard.cpp:66
-#: wordcompletion/dictionarycreationwizard.cpp:71
-#: wordcompletion/dictionarycreationwizard.cpp:116
-#: wordcompletion/dictionarycreationwizard.cpp:132
-#: wordcompletion/dictionarycreationwizard.cpp:141
-#: wordcompletion/dictionarycreationwizard.cpp:150
-msgid "Source of New Dictionary (2)"
-msgstr "Sumber Kamus Baru (2)"
-
-#: wordcompletion/dictionarycreationwizard.cpp:59
-#, fuzzy
-#| msgid "&Directory:"
-msgctxt "In which directory is the file located?"
-msgid "&Directory:"
-msgstr "&Direktori:"
-
-#: wordcompletion/dictionarycreationwizard.cpp:60
-#: wordcompletion/dictionarycreationwizard.cpp:62
+#: phrasebook/phrasetree.cpp:471
+#, kde-format
 msgid ""
-"With this input field you specify which directory you want to load for "
-"creating the new dictionary."
+"The '%1' key combination has already been allocated to %2.\n"
+"Please choose a unique key combination."
 msgstr ""
-"Dengan medan input ini anda nyatakan direktori mana yang anda ingin muatkan "
-"untuk mencipta kamus baru."
-
-#: wordcompletion/dictionarycreationwizard.cpp:100
-#: texttospeechconfigurationwidget.cpp:48
-#, fuzzy
-#| msgid "Local"
-msgctxt "Local characterset"
-msgid "Local"
-msgstr "Setempat"
-
-#: wordcompletion/dictionarycreationwizard.cpp:103
-#, fuzzy
-#| msgid "Latin1"
-msgctxt "Latin characterset"
-msgid "Latin1"
-msgstr "Latin1"
-
-#: wordcompletion/dictionarycreationwizard.cpp:104
-#: texttospeechconfigurationwidget.cpp:52
-msgid "Unicode"
-msgstr "Ekakod"
-
-#: wordcompletion/dictionarycreationwizard.cpp:237
-msgid "Merge result"
-msgstr "Cantumkan keputusan"
-
-#: wordcompletion/dictionarycreationwizard.cpp:240
-msgctxt "In the sense of a blank word list"
-msgid "Empty list"
-msgstr "Senarai kosong"
-
-#: wordcompletion/dictionarycreationwizard.cpp:249
-msgid "KDE Documentation"
-msgstr "Dokumentasi KDE"
-
-#: wordcompletion/dictionarycreationwizard.cpp:371
-msgctxt "Default dictionary"
-msgid "Default"
-msgstr ""
-
-#: kmouth.cpp:113
-msgid "&Open as History..."
-msgstr "&Buka sebagai Sejarah..."
-
-#: kmouth.cpp:116 kmouth.cpp:117
-msgid "Opens an existing file as history"
-msgstr "Membuka fail sedia ada sebagai sejarah"
-
-#: kmouth.cpp:121
-msgid "Save &History As..."
-msgstr "Simpan &Sejarah Sebagai..."
-
-#: kmouth.cpp:124 kmouth.cpp:125
-msgid "Saves the actual history as..."
-msgstr "Menyimpan sejarah sebenar sebagai..."
-
-#: kmouth.cpp:129
-msgid "&Print History..."
-msgstr "&Cetak Sejarah..."
-
-#: kmouth.cpp:132 kmouth.cpp:133
-msgid "Prints out the actual history"
-msgstr "Mencetak sejarah sebenar"
-
-#: kmouth.cpp:136 kmouth.cpp:137
-msgid "Quits the application"
-msgstr "Keluar aplikasi"
-
-#: kmouth.cpp:141
-msgid "Cuts the selected section and puts it to the clipboard"
-msgstr "Memotong keratan yang dipilih dan meletakkannya dalam klipbod"
-
-#: kmouth.cpp:142
-msgid ""
-"Cuts the selected section and puts it to the clipboard. If there is some "
-"text selected in the edit field it is placed it on the clipboard. Otherwise "
-"the selected sentences in the history (if any) are placed on the clipboard."
-msgstr ""
-"Memotong keratan yang dipilih dan meletakkannya dalam klipbod. Jika terdapat "
-"teks yang dipilih dalam medan edit, ia diletakkan dalam klipbod. Jika tidak, "
-"ayat yang dipilih dalam sejarah (jika ada) diletakkan dalam klipbod."
-
-#: kmouth.cpp:145
-msgid "Copies the selected section to the clipboard"
-msgstr "Menyalin keratan yang dipilih ke dalam klipbod"
-
-#: kmouth.cpp:146
-msgid ""
-"Copies the selected section to the clipboard. If there is some text selected "
-"in the edit field it is copied to the clipboard. Otherwise the selected "
-"sentences in the history (if any) are copied to the clipboard."
-msgstr ""
-"Menyalin keratan yang dipilih ke dalam klipbod. Jika terdapat teks yang "
-"dipilih dalam medan edit, ia disalin ke dalam klipbod. Jika tidak, ayat yang "
-"dipilih dalam sejarah (jika ada) disalin ke dalam klipbod."
-
-#: kmouth.cpp:154
-#, fuzzy
-#| msgid "&Speak"
-msgctxt "Start speaking"
-msgid "&Speak"
-msgstr "&Tutur"
-
-#: kmouth.cpp:156
-msgid "Speaks the currently active sentence(s)"
-msgstr "Menuturkan ayat aktif semasa"
-
-#: kmouth.cpp:157 phraselist.cpp:86
-msgid ""
-"Speaks the currently active sentence(s). If there is some text in the edit "
-"field it is spoken. Otherwise the selected sentences in the history (if any) "
-"are spoken."
-msgstr ""
-"Menuturkan ayat aktif semasa. Jika terdapat teks dalam medan edit, ia "
-"dituturkan. Jika tidak, ayat yang dipilih dalam sejarah (jika ada) "
-"dituturkan."
-
-#: kmouth.cpp:161
-msgid "&Edit..."
-msgstr "&Edit..."
-
-#: kmouth.cpp:172
-msgid "Show P&hrasebook Bar"
-msgstr "Tayangkan Bar &Buku Frasa"
-
-#: kmouth.cpp:174 kmouth.cpp:175
-msgid "Enables/disables the phrasebook bar"
-msgstr "Mengaktifkan/menyahaktifkan bar buku frasa"
-
-#: kmouth.cpp:178 kmouth.cpp:179
-msgid "Enables/disables the statusbar"
-msgstr "Mengaktifkan/menyahaktifkan bar status"
-
-#: kmouth.cpp:183
-msgid "&Configure KMouth..."
-msgstr "&Konfigur KMouth..."
-
-#: kmouth.cpp:185 kmouth.cpp:186
-msgid "Opens the configuration dialog"
-msgstr "Membuka dialog konfigurasi"
-
-#: kmouth.cpp:194 phraselist.cpp:83
-msgid "&Speak"
-msgstr "&Tutur"
-
-#: kmouth.cpp:195 kmouth.cpp:197
-msgid "Speaks the currently selected phrases in the history"
-msgstr "Menuturkan frasa semasa yang dipilih dalam sejarah"
-
-#: kmouth.cpp:203 kmouth.cpp:204
-msgid "Deletes the currently selected phrases from the history"
-msgstr "Menghapuskan frasa semasa yang dipilih daripada sejarah"
-
-#: kmouth.cpp:208
-msgid "Cu&t"
-msgstr "&Potong"
-
-#: kmouth.cpp:210 kmouth.cpp:211
-msgid ""
-"Cuts the currently selected phrases from the history and puts them to the "
-"clipboard"
-msgstr ""
-"Memotong frasa semasa yang dipilih daripada sejarah dan meletakkannya dalam "
-"klipbod"
-
-#: kmouth.cpp:215
-msgid "&Copy"
-msgstr ""
-
-#: kmouth.cpp:217 kmouth.cpp:218
-msgid "Copies the currently selected phrases from the history to the clipboard"
-msgstr "Menyalin frasa semasa yang dipilih daripada sejarah ke dalam klipbod"
-
-#: kmouth.cpp:221
-msgid "Select &All Entries"
-msgstr "Pilih &Semua entri"
-
-#: kmouth.cpp:223 kmouth.cpp:224
-msgid "Selects all phrases in the history"
-msgstr "Pilih semua frasa dalam sejarah"
-
-#: kmouth.cpp:227
-msgid "D&eselect All Entries"
-msgstr "&Nyahpilih Semua Entri"
-
-#: kmouth.cpp:229 kmouth.cpp:230
-msgid "Deselects all phrases in the history"
-msgstr "Nyahpilih semua frasa dalam sejarah"
-
-#: kmouth.cpp:244 kmouth.cpp:262 kmouth.cpp:370 kmouth.cpp:378 kmouth.cpp:396
-#: kmouth.cpp:446 kmouth.cpp:463 kmouth.cpp:480 kmouth.cpp:497
-#, fuzzy
-#| msgid "Ready."
-msgctxt "The job is done"
-msgid "Ready."
-msgstr "Sedia."
-
-#: kmouth.cpp:259 kmouth.cpp:366
-msgid "Opening file..."
-msgstr "Membuka fail..."
-
-#: kmouth.cpp:374
-msgid "Saving history with a new filename..."
-msgstr "Menyimpan sejarah dengan nama fail baru..."
-
-#: kmouth.cpp:383
-msgid "Printing..."
-msgstr "Mencetak..."
-
-#: kmouth.cpp:401
-#, fuzzy
-#| msgid "Exiting..."
-msgctxt "Shutting down the application"
-msgid "Exiting..."
-msgstr "Keluar..."
-
-#: kmouth.cpp:439
-msgid "Toggling menubar..."
-msgstr "Menoggel menubar..."
-
-#: kmouth.cpp:451
-msgid "Toggling toolbar..."
-msgstr "Menoggel bar alat..."
-
-#: kmouth.cpp:468
-msgid "Toggling phrasebook bar..."
-msgstr "Menoggel bar frasa buku..."
-
-#: kmouth.cpp:485
-msgid "Toggle the statusbar..."
-msgstr "Menoggel bar status..."
-
-#: texttospeechconfigurationwidget.cpp:51
-#, fuzzy
-#| msgid "Latin1"
-msgctxt "Latin1 characterset"
-msgid "Latin1"
-msgstr "Latin1"
-
-#: optionsdialog.cpp:120
-#, fuzzy
-msgid "Configuration"
-msgstr "Konfigurasi Teks-ke-Tutur"
-
-#: optionsdialog.cpp:133
-msgid "&Preferences"
-msgstr "&Keutamaan"
-
-#: optionsdialog.cpp:137
-msgid "&Text-to-Speech"
-msgstr "&Teks-ke-Tutur"
-
-#: optionsdialog.cpp:139 optionsdialog.cpp:140
-msgid "General Options"
-msgstr "Pilihan Umum"
-
-#: optionsdialog.cpp:145 optionsdialog.cpp:146 configwizard.cpp:103
-msgid "Word Completion"
-msgstr "Pelengkapan Kata"
-
-#: optionsdialog.cpp:152
-#, fuzzy
-#| msgid "KTTSD Speech Service"
-msgid "Jovie Speech Service"
-msgstr "Servis Tutur KTTSD"
-
-#: optionsdialog.cpp:154
-msgid "KDE Text-to-Speech Daemon Configuration"
-msgstr "Konfigurasi Daemon Teks-ke-Tutur KDE"
-
-#: main.cpp:28
-msgid "A type-and-say front end for speech synthesizers"
-msgstr "Antaramuka taip-dan-tutur bagi pensintesis tutur"
-
-#: main.cpp:35
-msgid "KMouth"
-msgstr "KMouth"
-
-#: main.cpp:37
-msgid "(c) 2002/2003, Gunnar Schmi Dt"
-msgstr ""
-
-#: main.cpp:38
-msgid "Gunnar Schmi Dt"
-msgstr ""
-
-#: main.cpp:42
-msgid "History file to open"
-msgstr "Sejarah fail yang hendak dibuka"
-
-#: main.cpp:45
-msgid "Olaf Schmidt"
-msgstr ""
-
-#: main.cpp:45
-msgid "Tips, extended phrase books"
-msgstr "Tips, buku frasa lanjutan"
-
-#: configwizard.cpp:38
-msgid "Initial Configuration - KMouth"
-msgstr "Konfigurasi Awal - KMouth"
-
-#: configwizard.cpp:57
-msgid "Text-to-Speech Configuration"
-msgstr "Konfigurasi Teks-ke-Tutur"
-
-#: configwizard.cpp:71
-msgid "Initial Phrase Book"
-msgstr "Buku Frasa Awal"
+"Kombinasi kekunci '%1' telah diperuntukkan kepada %2.\n"
+"Pilih kombinasi kekunci yang unik."
+
+#: phrasebook/phrasetree.cpp:493
+#, kde-format
+msgid "the standard \"%1\" action"
+msgstr "tindakan \"%1\" standard"
+
+#: phrasebook/phrasetree.cpp:494
+msgid "Conflict with Standard Application Shortcut"
+msgstr "Konflik dengan Kekunci Pintas Aplikasi Standard"
+
+#: phrasebook/phrasetree.cpp:511
+#, kde-format
+msgid "the global \"%1\" action"
+msgstr "tindakan \"%1\" global"
+
+#: phrasebook/phrasetree.cpp:512
+msgid "Conflict with Global Shortcuts"
+msgstr "Konflik dengan Kekunci Pintas Global"
+
+#: phrasebook/phrasetree.cpp:527
+msgid "an other phrase"
+msgstr "frasa lain"
+
+#: phrasebook/phrasetree.cpp:528
+msgid "Key Conflict"
+msgstr "Konflik Kekunci"
 
 #: phraselist.cpp:60
 msgid ""
@@ -736,6 +626,116 @@ msgstr ""
 #: phraselist.cpp:459
 msgid "Open File as History"
 msgstr "Buka Fail sebagai Sejarah"
+
+#: texttospeechconfigurationwidget.cpp:48
+#: wordcompletion/dictionarycreationwizard.cpp:100
+#, fuzzy
+#| msgid "Local"
+msgctxt "Local characterset"
+msgid "Local"
+msgstr "Setempat"
+
+#: texttospeechconfigurationwidget.cpp:51
+#, fuzzy
+#| msgid "Latin1"
+msgctxt "Latin1 characterset"
+msgid "Latin1"
+msgstr "Latin1"
+
+#: texttospeechconfigurationwidget.cpp:52
+#: wordcompletion/dictionarycreationwizard.cpp:104
+msgid "Unicode"
+msgstr "Ekakod"
+
+#: wordcompletion/dictionarycreationwizard.cpp:49
+msgid "Source of New Dictionary (1)"
+msgstr "Sumber Kamus Baru (1)"
+
+#: wordcompletion/dictionarycreationwizard.cpp:54
+#: wordcompletion/dictionarycreationwizard.cpp:58
+#: wordcompletion/dictionarycreationwizard.cpp:66
+#: wordcompletion/dictionarycreationwizard.cpp:71
+#: wordcompletion/dictionarycreationwizard.cpp:116
+#: wordcompletion/dictionarycreationwizard.cpp:132
+#: wordcompletion/dictionarycreationwizard.cpp:141
+#: wordcompletion/dictionarycreationwizard.cpp:150
+msgid "Source of New Dictionary (2)"
+msgstr "Sumber Kamus Baru (2)"
+
+#: wordcompletion/dictionarycreationwizard.cpp:59
+#, fuzzy
+#| msgid "&Directory:"
+msgctxt "In which directory is the file located?"
+msgid "&Directory:"
+msgstr "&Direktori:"
+
+#: wordcompletion/dictionarycreationwizard.cpp:60
+#: wordcompletion/dictionarycreationwizard.cpp:62
+msgid ""
+"With this input field you specify which directory you want to load for "
+"creating the new dictionary."
+msgstr ""
+"Dengan medan input ini anda nyatakan direktori mana yang anda ingin muatkan "
+"untuk mencipta kamus baru."
+
+#: wordcompletion/dictionarycreationwizard.cpp:103
+#, fuzzy
+#| msgid "Latin1"
+msgctxt "Latin characterset"
+msgid "Latin1"
+msgstr "Latin1"
+
+#: wordcompletion/dictionarycreationwizard.cpp:237
+msgid "Merge result"
+msgstr "Cantumkan keputusan"
+
+#: wordcompletion/dictionarycreationwizard.cpp:240
+msgctxt "In the sense of a blank word list"
+msgid "Empty list"
+msgstr "Senarai kosong"
+
+#: wordcompletion/dictionarycreationwizard.cpp:249
+msgid "KDE Documentation"
+msgstr "Dokumentasi KDE"
+
+#: wordcompletion/dictionarycreationwizard.cpp:371
+msgctxt "Default dictionary"
+msgid "Default"
+msgstr ""
+
+#: wordcompletion/wordcompletionwidget.cpp:75
+#: wordcompletion/wordcompletionwidget.cpp:144
+#: wordcompletion/wordcompletionwidget.cpp:208
+msgid "without name"
+msgstr "tanpa nama"
+
+#: wordcompletion/wordcompletionwidget.cpp:254
+msgid "Export Dictionary"
+msgstr "Eksport Kamus"
+
+#: wordcompletion/wordlist.cpp:114
+msgid "Creating Word List"
+msgstr "Mencipta Senarai Word"
+
+#: wordcompletion/wordlist.cpp:114 wordcompletion/wordlist.cpp:296
+msgid "Parsing the KDE documentation..."
+msgstr "Mengkaji hurai ayat dokumentasi KDE..."
+
+#: wordcompletion/wordlist.cpp:243
+msgid "Merging dictionaries..."
+msgstr "Mencantumkan kamus..."
+
+#: wordcompletion/wordlist.cpp:314
+msgid "Parsing file..."
+msgstr "Mengkaji hurai fail..."
+
+#: wordcompletion/wordlist.cpp:325
+msgid "Parsing directory..."
+msgstr "Mengkaji hurai direktori..."
+
+#: wordcompletion/wordlist.cpp:517
+msgid "Performing spell check..."
+msgstr "Melaksanakan semak eja..."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
