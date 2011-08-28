@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-14 04:28+0200\n"
+"POT-Creation-Date: 2011-08-28 04:18+0200\n"
 "PO-Revision-Date: 2006-10-05 19:47+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -903,6 +903,23 @@ msgstr ""
 msgid "Michael Johnson"
 msgstr ""
 
+#: part/KWOdfLoader.cpp:86
+#, fuzzy
+msgid "Invalid OpenDocument file. No office:body tag found."
+msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+
+#: part/KWOdfLoader.cpp:98
+#, fuzzy
+msgid "Invalid OpenDocument file. No tag found inside office:body."
+msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+
+#: part/KWOdfLoader.cpp:100
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+
 #: part/KWDLoader.cpp:75
 msgid "Invalid document. No mimetype specified."
 msgstr "Dokumen tak sah. Tiada jenis mime ditetapkan."
@@ -1012,6 +1029,11 @@ msgstr "Geometri"
 msgid "Frame changes"
 msgstr "Segerakkan perubahan"
 
+#: part/dialogs/KWStatistics.cpp:269
+#, kde-format
+msgid "approximately %1"
+msgstr "lebih kurang %1"
+
 #: part/dialogs/KWStatisticsDialog.cpp:29
 #: part/dockers/KWStatisticsDocker.cpp:35 part/KWView.cpp:385
 msgid "Statistics"
@@ -1031,11 +1053,6 @@ msgstr ""
 #| msgid "Frame Properties"
 msgid "Change Page Properties"
 msgstr "Ciri Bingkai"
-
-#: part/dialogs/KWStatistics.cpp:269
-#, kde-format
-msgid "approximately %1"
-msgstr "lebih kurang %1"
 
 #: part/dockers/KWRdfDocker.cpp:50
 msgid "RDF"
@@ -1303,6 +1320,80 @@ msgstr "Kelabu Atas dan Bawah"
 #: part/main.cpp:31
 msgid "File to open"
 msgstr "Fail hendak dibuka"
+
+#: part/KWDocument.cpp:452
+#, fuzzy
+#| msgid "Copy%1-%2"
+msgid "Copy"
+msgstr "Salin%1-%2"
+
+#: part/KWDocument.cpp:541
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 1"
+msgid "Head 1"
+msgstr "Kepala 1"
+
+#: part/KWDocument.cpp:548
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 2"
+msgid "Head 2"
+msgstr "Kepala 2"
+
+#: part/KWDocument.cpp:555
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 3"
+msgid "Head 3"
+msgstr "Kepala 3"
+
+#: part/KWDocument.cpp:562
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Bullet List"
+msgid "Bullet List"
+msgstr "Senarai Bulet"
+
+#: part/KWDocument.cpp:896
+msgid "Can not find needed text component, KWord will quit now"
+msgstr ""
+
+#: part/KWDocument.cpp:897
+msgid "Installation Error"
+msgstr ""
+
+#: part/KWStatusBar.cpp:38
+msgid "Modified"
+msgstr ""
+
+#: part/KWStatusBar.cpp:39
+#, fuzzy
+#| msgid "Save Failed"
+msgid "Saved"
+msgstr "Simpan Gagal"
+
+#: part/KWStatusBar.cpp:40
+#, fuzzy, kde-format
+#| msgid "Page %1"
+msgid "Page: %1/%2"
+msgstr "Halaman %1"
+
+#: part/KWStatusBar.cpp:62
+msgid "Page: current/total"
+msgstr ""
+
+#: part/KWStatusBar.cpp:79
+msgid "State: saved/modified"
+msgstr ""
+
+#: part/KWStatusBar.cpp:93
+msgid "Mouseposition: X:Y"
+msgstr ""
+
+#: part/KWStatusBar.cpp:106
+msgid "Zoom Controller"
+msgstr ""
 
 #: part/KWView.cpp:251
 #, fuzzy
@@ -1763,97 +1854,6 @@ msgstr ""
 #, fuzzy
 msgid "Create outlines"
 msgstr "Cipta jadual."
-
-#: part/KWOdfLoader.cpp:86
-#, fuzzy
-msgid "Invalid OpenDocument file. No office:body tag found."
-msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
-
-#: part/KWOdfLoader.cpp:98
-#, fuzzy
-msgid "Invalid OpenDocument file. No tag found inside office:body."
-msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
-
-#: part/KWOdfLoader.cpp:100
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
-msgstr ""
-
-#: part/KWDocument.cpp:452
-#, fuzzy
-#| msgid "Copy%1-%2"
-msgid "Copy"
-msgstr "Salin%1-%2"
-
-#: part/KWDocument.cpp:541
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 1"
-msgid "Head 1"
-msgstr "Kepala 1"
-
-#: part/KWDocument.cpp:548
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 2"
-msgid "Head 2"
-msgstr "Kepala 2"
-
-#: part/KWDocument.cpp:555
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 3"
-msgid "Head 3"
-msgstr "Kepala 3"
-
-#: part/KWDocument.cpp:562
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Bullet List"
-msgid "Bullet List"
-msgstr "Senarai Bulet"
-
-#: part/KWDocument.cpp:896
-msgid "Can not find needed text component, KWord will quit now"
-msgstr ""
-
-#: part/KWDocument.cpp:897
-msgid "Installation Error"
-msgstr ""
-
-#: part/KWStatusBar.cpp:38
-msgid "Modified"
-msgstr ""
-
-#: part/KWStatusBar.cpp:39
-#, fuzzy
-#| msgid "Save Failed"
-msgid "Saved"
-msgstr "Simpan Gagal"
-
-#: part/KWStatusBar.cpp:40
-#, fuzzy, kde-format
-#| msgid "Page %1"
-msgid "Page: %1/%2"
-msgstr "Halaman %1"
-
-#: part/KWStatusBar.cpp:62
-msgid "Page: current/total"
-msgstr ""
-
-#: part/KWStatusBar.cpp:79
-msgid "State: saved/modified"
-msgstr ""
-
-#: part/KWStatusBar.cpp:93
-msgid "Mouseposition: X:Y"
-msgstr ""
-
-#: part/KWStatusBar.cpp:106
-msgid "Zoom Controller"
-msgstr ""
 
 #, fuzzy
 #~| msgid "Select All Frames"
