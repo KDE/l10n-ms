@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 03:45+0200\n"
+"POT-Creation-Date: 2011-08-29 04:01+0200\n"
 "PO-Revision-Date: 2008-07-08 22:08+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -43,6 +43,18 @@ msgstr ""
 #, fuzzy
 msgid "Paste Shapes"
 msgstr "Cipta Templat"
+
+#: flake/commands/KShapeGroupCommand.cpp:107
+#, fuzzy
+#| msgid "Exceptions"
+msgid "Group Shapes"
+msgstr "Pengecualian"
+
+#: flake/commands/KShapeGroupCommand.cpp:109
+#, fuzzy
+#| msgid "Add Group"
+msgid "Add Shapes to Group"
+msgstr "Tambahkan Kumpulan"
 
 #: flake/commands/KPathSegmentBreakCommand.cpp:40
 msgid "Break Subpath"
@@ -80,18 +92,6 @@ msgstr "Ubah Sempadan"
 #, fuzzy
 msgid "Distribute Shapes"
 msgstr "Cipta Templat"
-
-#: flake/commands/KShapeGroupCommand.cpp:107
-#, fuzzy
-#| msgid "Exceptions"
-msgid "Group Shapes"
-msgstr "Pengecualian"
-
-#: flake/commands/KShapeGroupCommand.cpp:109
-#, fuzzy
-#| msgid "Add Group"
-msgid "Add Shapes to Group"
-msgstr "Tambahkan Kumpulan"
 
 #: flake/commands/KShapeMoveCommand.cpp:42
 #, fuzzy
@@ -251,11 +251,6 @@ msgstr ""
 msgid "Zoom"
 msgstr ""
 
-#: flake/tools/KCreatePathToolFactory.cpp:33
-#, fuzzy
-msgid "Create Path"
-msgstr "Cipta Templat"
-
 #: flake/tools/KCreatePathTool.cpp:370 flake/tools/KPathTool.cpp:181
 msgid "Snapping"
 msgstr ""
@@ -269,6 +264,11 @@ msgstr ""
 #| msgid "Change Indent"
 msgid "Angle Constraints"
 msgstr "Ubah Inden"
+
+#: flake/tools/KCreatePathToolFactory.cpp:33
+#, fuzzy
+msgid "Create Path"
+msgstr "Cipta Templat"
 
 #: flake/tools/KPathSegmentChangeStrategy.cpp:140
 #, fuzzy
@@ -503,16 +503,6 @@ msgstr "Skrip"
 msgid "Collection"
 msgstr "Pelengkapan"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
-#, kde-format
-msgid "Slide %1"
-msgstr ""
-
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
-#, fuzzy, kde-format
-msgid "Page %1"
-msgstr "Halaman Berikutnya"
-
 #: kopageapp/KoPADocumentStructureDocker.cpp:82 main/KoMainWindow.cpp:1710
 msgid "Document"
 msgstr "Dokumen"
@@ -641,37 +631,15 @@ msgstr "Syarikat:"
 msgid "Paste"
 msgstr "Tarikh"
 
-#: kopageapp/KoPADocumentModel.cpp:160
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
+#, kde-format
+msgid "Slide %1"
+msgstr ""
+
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
 #, fuzzy, kde-format
-msgid "Page  %1"
+msgid "Page %1"
 msgstr "Halaman Berikutnya"
-
-#: kopageapp/KoPADocumentModel.cpp:167
-#, fuzzy
-#| msgid "Group:"
-msgid "Group"
-msgstr "Kumpulan:"
-
-#: kopageapp/KoPADocumentModel.cpp:170
-#, fuzzy
-msgid "Shape"
-msgstr "Gelombang"
-
-#: kopageapp/KoPADocumentModel.cpp:283
-#, fuzzy
-#| msgid "Variable"
-msgid "Visible"
-msgstr "Variabel"
-
-#: kopageapp/KoPADocumentModel.cpp:284
-#, fuzzy
-msgid "Locked"
-msgstr "Muatkan..."
-
-#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
-#, fuzzy
-msgid "Reparent shapes"
-msgstr "Hapuskan Teks"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 #, fuzzy
@@ -962,6 +930,38 @@ msgid_plural "Paste Pages"
 msgstr[0] "Tampalkan Teks"
 msgstr[1] "Tampalkan Teks"
 
+#: kopageapp/KoPADocumentModel.cpp:160
+#, fuzzy, kde-format
+msgid "Page  %1"
+msgstr "Halaman Berikutnya"
+
+#: kopageapp/KoPADocumentModel.cpp:167
+#, fuzzy
+#| msgid "Group:"
+msgid "Group"
+msgstr "Kumpulan:"
+
+#: kopageapp/KoPADocumentModel.cpp:170
+#, fuzzy
+msgid "Shape"
+msgstr "Gelombang"
+
+#: kopageapp/KoPADocumentModel.cpp:283
+#, fuzzy
+#| msgid "Variable"
+msgid "Visible"
+msgstr "Variabel"
+
+#: kopageapp/KoPADocumentModel.cpp:284
+#, fuzzy
+msgid "Locked"
+msgstr "Muatkan..."
+
+#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
+#, fuzzy
+msgid "Reparent shapes"
+msgstr "Hapuskan Teks"
+
 #: kotext/KFindStrategy.cpp:63
 #, kde-format
 msgid "Found 1 match"
@@ -1008,23 +1008,6 @@ msgstr "Selitkan Pemisah Baris"
 msgid "Insert Row Above"
 msgstr "Selitkan Teks"
 
-#: kotext/KoText.cpp:45
-msgctxt "Underline Style"
-msgid "None"
-msgstr "Tiada"
-
-#: kotext/KoText.cpp:46
-#, fuzzy
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "Tunggal"
-
-#: kotext/KoText.cpp:47
-#, fuzzy
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "Kembar"
-
 #: kotext/KReplaceStrategy.cpp:58
 msgid ""
 "Found no match\n"
@@ -1046,12 +1029,22 @@ msgstr[1] "Gantikan Teks"
 msgid "Replace %1 with %2?"
 msgstr "&Gantikan 1/2... dengan %1 ..."
 
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
+#: kotext/KOdfText.cpp:45
+msgctxt "Underline Style"
+msgid "None"
+msgstr "Tiada"
+
+#: kotext/KOdfText.cpp:46
 #, fuzzy
-msgid "Format"
-msgstr "Format Tarikh"
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "Tunggal"
+
+#: kotext/KOdfText.cpp:47
+#, fuzzy
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "Kembar"
 
 #: kotext/InsertTextReferenceAction.cpp:36
 #: kotext/InsertTextReferenceAction.cpp:64
@@ -1072,6 +1065,13 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "%1 Options"
 msgstr "Pengecualian"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
+#, fuzzy
+msgid "Format"
+msgstr "Format Tarikh"
 
 #: kotext/KoTextEditor.cpp:111 kotext/KoTextEditor.cpp:167
 #: kotext/KoTextEditor.cpp:325 widgets/KoCsvImportDialog.cpp:216
@@ -3140,6 +3140,54 @@ msgstr ""
 msgid "Add/Remove Colors"
 msgstr "Alih Keluar Lajur"
 
+#: widgets/KoPageLayoutWidget.cpp:178
+#, fuzzy
+#| msgid "Left:"
+msgid "Left Edge:"
+msgstr "Kiri:"
+
+#: widgets/KoPageLayoutWidget.cpp:179
+#, fuzzy
+#| msgid "Right:"
+msgid "Right Edge:"
+msgstr "Kanan:"
+
+#: widgets/KoPageLayoutWidget.cpp:182
+#, fuzzy
+#| msgid "Last Printing"
+msgid "Binding Edge:"
+msgstr "Pencetakan Terakhir "
+
+#: widgets/KoPageLayoutWidget.cpp:183
+#, fuzzy
+#| msgid "Page Size"
+msgid "Page Edge:"
+msgstr "Saiz Laman"
+
+#: widgets/KoPageLayoutWidget.cpp:279
+#, fuzzy
+msgid "Facing Pages:"
+msgstr "Halaman Berikutnya"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:143
+#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
+#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:395
+#, fuzzy
+msgid "Facing pages"
+msgstr "Halaman Berikutnya"
+
+#: widgets/KoPageLayoutWidget.cpp:282
+#, fuzzy
+#| msgid "Page Layout"
+msgid "Page Layout:"
+msgstr "Paparan Laman"
+
+#: widgets/KoPageLayoutWidget.cpp:283
+#, fuzzy
+#| msgid "Page Preview"
+msgid "Page spread"
+msgstr "Prapapar Halaman"
+
 #: widgets/KoPageLayoutDialog.cpp:47
 msgid "Page Layout"
 msgstr "Paparan Laman"
@@ -3189,54 +3237,6 @@ msgstr ""
 #: widgets/KoZoomAction.cpp:279
 msgid "Zoom to All"
 msgstr ""
-
-#: widgets/KoPageLayoutWidget.cpp:178
-#, fuzzy
-#| msgid "Left:"
-msgid "Left Edge:"
-msgstr "Kiri:"
-
-#: widgets/KoPageLayoutWidget.cpp:179
-#, fuzzy
-#| msgid "Right:"
-msgid "Right Edge:"
-msgstr "Kanan:"
-
-#: widgets/KoPageLayoutWidget.cpp:182
-#, fuzzy
-#| msgid "Last Printing"
-msgid "Binding Edge:"
-msgstr "Pencetakan Terakhir "
-
-#: widgets/KoPageLayoutWidget.cpp:183
-#, fuzzy
-#| msgid "Page Size"
-msgid "Page Edge:"
-msgstr "Saiz Laman"
-
-#: widgets/KoPageLayoutWidget.cpp:279
-#, fuzzy
-msgid "Facing Pages:"
-msgstr "Halaman Berikutnya"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:143
-#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
-#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:395
-#, fuzzy
-msgid "Facing pages"
-msgstr "Halaman Berikutnya"
-
-#: widgets/KoPageLayoutWidget.cpp:282
-#, fuzzy
-#| msgid "Page Layout"
-msgid "Page Layout:"
-msgstr "Paparan Laman"
-
-#: widgets/KoPageLayoutWidget.cpp:283
-#, fuzzy
-#| msgid "Page Preview"
-msgid "Page spread"
-msgstr "Prapapar Halaman"
 
 #: widgets/KoZoomMode.cpp:26
 #, fuzzy
