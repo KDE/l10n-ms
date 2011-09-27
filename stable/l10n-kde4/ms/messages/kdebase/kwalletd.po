@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwalletd\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-09 11:35+0200\n"
+"POT-Creation-Date: 2011-09-27 18:20+0200\n"
 "PO-Revision-Date: 2011-01-04 20:47+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -56,11 +56,55 @@ msgstr "Ralat membaca - mungkin kata laluan tidak betul."
 msgid "Decryption error."
 msgstr "Ralat nyahsulit."
 
-#: kwalletd.cpp:362 kwalletd.cpp:451 kwalletd.cpp:514 kwalletd.cpp:606
-#: kwalletd.cpp:697 kwalletd.cpp:709 kwalletd.cpp:718 kwalletd.cpp:723
-#: kwalletd.cpp:1236 main.cpp:38 main.cpp:39
+#: kwalletwizard.cpp:39
+msgid "KWallet"
+msgstr "KWallet"
+
+#: kwalletwizard.cpp:147
+msgid "<qt>Password is empty.  <b>(WARNING: Insecure)</b></qt>"
+msgstr "<qt>Katalaluan kosong.  <b>(AMARAN: Tidak selamat)</b></qt>"
+
+#: kwalletwizard.cpp:149
+msgid "Passwords match."
+msgstr "Kata laluan sepadan."
+
+#: kwalletwizard.cpp:152
+msgid "Passwords do not match."
+msgstr "Kata laluan tidak sepadan."
+
+#: main.cpp:38 main.cpp:39 kwalletd.cpp:362 kwalletd.cpp:451 kwalletd.cpp:515
+#: kwalletd.cpp:607 kwalletd.cpp:698 kwalletd.cpp:710 kwalletd.cpp:719
+#: kwalletd.cpp:724 kwalletd.cpp:1237
 msgid "KDE Wallet Service"
 msgstr "Servis Dompet KDE"
+
+#: main.cpp:40
+msgid "(C) 2002-2008 George Staikos, Michael Leupold, Thiago Maceira"
+msgstr "(C) 2002-2008 George Staikos, Michael Leupold, Thiago Maceira"
+
+#: main.cpp:41
+msgid "Michael Leupold"
+msgstr "Michael Leupold"
+
+#: main.cpp:41
+msgid "Maintainer"
+msgstr "Penyelenggara"
+
+#: main.cpp:42
+msgid "George Staikos"
+msgstr "George Staikos"
+
+#: main.cpp:42
+msgid "Former maintainer"
+msgstr "Penyenggara terdahulu"
+
+#: main.cpp:43
+msgid "Thiago Maceira"
+msgstr "Thiago Maceira"
+
+#: main.cpp:43
+msgid "D-Bus Interface"
+msgstr "Antaramuka D-Bus"
 
 #: kwalletd.cpp:444
 #, kde-format
@@ -109,14 +153,14 @@ msgctxt ""
 msgid "Switch to %1"
 msgstr "Tukar ke %1"
 
-#: kwalletd.cpp:485 kwalletd.cpp:523
+#: kwalletd.cpp:485 kwalletd.cpp:524
 #, kde-format
 msgid ""
 "<qt>Error opening the wallet '<b>%1</b>'. Please try again.<br />(Error code "
 "%2: %3)</qt>"
 msgstr ""
 
-#: kwalletd.cpp:502
+#: kwalletd.cpp:503
 msgid ""
 "KDE has requested to open the wallet. This is used to store sensitive data "
 "in a secure fashion. Please enter a password to use with this wallet or "
@@ -126,7 +170,7 @@ msgstr ""
 "sensitif secara selamat. Masukkan kata laluan untuk menggunakan dompet ini "
 "atau klik batal untuk menafikan permintaan aplikasi."
 
-#: kwalletd.cpp:504
+#: kwalletd.cpp:505
 #, kde-format
 msgid ""
 "<qt>The application '<b>%1</b>' has requested to open the KDE wallet. This "
@@ -135,7 +179,7 @@ msgid ""
 "qt>"
 msgstr ""
 
-#: kwalletd.cpp:508
+#: kwalletd.cpp:509
 #, kde-format
 msgid ""
 "<qt>KDE has requested to create a new wallet named '<b>%1</b>'. Please "
@@ -143,7 +187,7 @@ msgid ""
 "request.</qt>"
 msgstr ""
 
-#: kwalletd.cpp:510
+#: kwalletd.cpp:511
 #, kde-format
 msgid ""
 "<qt>The application '<b>%1</b>' has requested to create a new wallet named "
@@ -151,93 +195,49 @@ msgid ""
 "application's request.</qt>"
 msgstr ""
 
-#: kwalletd.cpp:515
+#: kwalletd.cpp:516
 msgid "C&reate"
 msgstr "&Cipta"
 
-#: kwalletd.cpp:608
+#: kwalletd.cpp:609
 #, kde-format
 msgid "<qt>KDE has requested access to the open wallet '<b>%1</b>'.</qt>"
 msgstr ""
 
-#: kwalletd.cpp:610
+#: kwalletd.cpp:611
 #, kde-format
 msgid ""
 "<qt>The application '<b>%1</b>' has requested access to the open wallet '<b>"
 "%2</b>'.</qt>"
 msgstr ""
 
-#: kwalletd.cpp:697
+#: kwalletd.cpp:698
 msgid ""
 "Unable to open wallet. The wallet must be opened in order to change the "
 "password."
 msgstr ""
 "Tidak dapat buka wallet. Wallet mesti dibuka untuk mengubah kata laluan."
 
-#: kwalletd.cpp:708
+#: kwalletd.cpp:709
 #, kde-format
 msgid "<qt>Please choose a new password for the wallet '<b>%1</b>'.</qt>"
 msgstr ""
 
-#: kwalletd.cpp:718
+#: kwalletd.cpp:719
 msgid "Error re-encrypting the wallet. Password was not changed."
 msgstr "Ralat semasa menyulitkan semula wallet. Kata laluan tidak diubah."
 
-#: kwalletd.cpp:723
+#: kwalletd.cpp:724
 msgid "Error reopening the wallet. Data may be lost."
 msgstr "Ralat semasa membuka semula wallet. Data mungkin hilang."
 
-#: kwalletd.cpp:1236
+#: kwalletd.cpp:1237
 msgid ""
 "There have been repeated failed attempts to gain access to a wallet. An "
 "application may be misbehaving."
 msgstr ""
 "Terdapat cubaan gagal yang berulang untuk mendapatkan akses ke wallet. "
 "Aplikasi mungkin berperilaku buruk."
-
-#: kwalletwizard.cpp:39
-msgid "KWallet"
-msgstr "KWallet"
-
-#: kwalletwizard.cpp:147
-msgid "<qt>Password is empty.  <b>(WARNING: Insecure)</b></qt>"
-msgstr "<qt>Katalaluan kosong.  <b>(AMARAN: Tidak selamat)</b></qt>"
-
-#: kwalletwizard.cpp:149
-msgid "Passwords match."
-msgstr "Kata laluan sepadan."
-
-#: kwalletwizard.cpp:152
-msgid "Passwords do not match."
-msgstr "Kata laluan tidak sepadan."
-
-#: main.cpp:40
-msgid "(C) 2002-2008 George Staikos, Michael Leupold, Thiago Maceira"
-msgstr "(C) 2002-2008 George Staikos, Michael Leupold, Thiago Maceira"
-
-#: main.cpp:41
-msgid "Michael Leupold"
-msgstr "Michael Leupold"
-
-#: main.cpp:41
-msgid "Maintainer"
-msgstr "Penyelenggara"
-
-#: main.cpp:42
-msgid "George Staikos"
-msgstr "George Staikos"
-
-#: main.cpp:42
-msgid "Former maintainer"
-msgstr "Penyenggara terdahulu"
-
-#: main.cpp:43
-msgid "Thiago Maceira"
-msgstr "Thiago Maceira"
-
-#: main.cpp:43
-msgid "D-Bus Interface"
-msgstr "Antaramuka D-Bus"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
