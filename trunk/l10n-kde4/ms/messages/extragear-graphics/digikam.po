@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-19 03:09+0200\n"
+"POT-Creation-Date: 2011-10-25 03:37+0200\n"
 "PO-Revision-Date: 2010-08-27 21:57+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -109,43 +109,6 @@ msgstr ""
 msgid "Enter new album name:"
 msgstr ""
 
-#: digikam/album/albumselectcombobox.cpp:76
-#: digikam/album/albumselectcombobox.cpp:86
-msgid "No Album Selected"
-msgstr ""
-
-#: digikam/album/albumselectcombobox.cpp:93
-msgid "No Tag Selected"
-msgstr ""
-
-#: digikam/album/albumselectcombobox.cpp:251
-#, kde-format
-msgid "1 Tag selected"
-msgid_plural "%1 Tags selected"
-msgstr[0] ""
-msgstr[1] ""
-
-#: digikam/album/albumselectcombobox.cpp:255
-#, kde-format
-msgid "1 Album selected"
-msgid_plural "%1 Albums selected"
-msgstr[0] ""
-msgstr[1] ""
-
-#: digikam/album/albumselectcombobox.cpp:264
-#, kde-format
-msgid "1 Tag excluded"
-msgid_plural "%1 Tags excluded"
-msgstr[0] ""
-msgstr[1] ""
-
-#: digikam/album/albumselectcombobox.cpp:268
-#, kde-format
-msgid "1 Album excluded"
-msgid_plural "%1 Albums excluded"
-msgstr[0] ""
-msgstr[1] ""
-
 #: digikam/album/albumpropsedit.cpp:119 digikam/album/albumpropsedit.cpp:240
 msgid "New Album"
 msgstr ""
@@ -213,29 +176,17 @@ msgstr ""
 msgid "Select Album"
 msgstr ""
 
-#: digikam/album/albumselectiontreeview.cpp:124
-#: digikam/main/digikamapp.cpp:1246 digikam/tags/tagfolderview.cpp:73
-msgid "Find Duplicates..."
-msgstr ""
-
-#: digikam/album/albumselectiontreeview.cpp:125
-msgid "Rebuild Thumbnails..."
-msgstr ""
-
-#: digikam/album/albumselectiontreeview.cpp:132 digikam/album/album.cpp:431
-#: digikam/album/albummanager.cpp:1138 digikam/dragdrop/imagedragdrop.cpp:568
+#: digikam/album/album.cpp:431 digikam/album/albummanager.cpp:1138
+#: digikam/album/albumselectiontreeview.cpp:132
 #: digikam/dragdrop/albumdragdrop.cpp:91
 #: digikam/dragdrop/albumdragdrop.cpp:162
 #: digikam/dragdrop/albumdragdrop.cpp:203
 #: digikam/dragdrop/albumdragdrop.cpp:268
-#: digikam/dragdrop/albumdragdrop.cpp:315 libs/models/albummodel.cpp:48
+#: digikam/dragdrop/albumdragdrop.cpp:315
+#: digikam/dragdrop/imagedragdrop.cpp:568 libs/models/albummodel.cpp:48
 #: utilities/kipiiface/kipiimagecollection.cpp:282
 #: utilities/kipiiface/kipiimagecollectionselector.cpp:196
 msgid "My Albums"
-msgstr ""
-
-#: digikam/album/albumtreeview.cpp:213
-msgid "Context menu"
 msgstr ""
 
 #: digikam/album/album.cpp:495 digikam/album/albummanager.cpp:1141
@@ -550,6 +501,56 @@ msgstr ""
 msgid "No such tag"
 msgstr ""
 
+#: digikam/album/albumselectcombobox.cpp:76
+#: digikam/album/albumselectcombobox.cpp:86
+msgid "No Album Selected"
+msgstr ""
+
+#: digikam/album/albumselectcombobox.cpp:93
+msgid "No Tag Selected"
+msgstr ""
+
+#: digikam/album/albumselectcombobox.cpp:251
+#, kde-format
+msgid "1 Tag selected"
+msgid_plural "%1 Tags selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: digikam/album/albumselectcombobox.cpp:255
+#, kde-format
+msgid "1 Album selected"
+msgid_plural "%1 Albums selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: digikam/album/albumselectcombobox.cpp:264
+#, kde-format
+msgid "1 Tag excluded"
+msgid_plural "%1 Tags excluded"
+msgstr[0] ""
+msgstr[1] ""
+
+#: digikam/album/albumselectcombobox.cpp:268
+#, kde-format
+msgid "1 Album excluded"
+msgid_plural "%1 Albums excluded"
+msgstr[0] ""
+msgstr[1] ""
+
+#: digikam/album/albumselectiontreeview.cpp:124
+#: digikam/main/digikamapp.cpp:1246 digikam/tags/tagfolderview.cpp:73
+msgid "Find Duplicates..."
+msgstr ""
+
+#: digikam/album/albumselectiontreeview.cpp:125
+msgid "Rebuild Thumbnails..."
+msgstr ""
+
+#: digikam/album/albumtreeview.cpp:213
+msgid "Context menu"
+msgstr ""
+
 #: digikam/database/scancontroller.cpp:359
 msgid "<b>Scanning collections, please wait...</b>"
 msgstr ""
@@ -738,51 +739,77 @@ msgstr ""
 msgid "No Date"
 msgstr ""
 
-#: digikam/date/timelinewidget.cpp:312
+#: digikam/date/timelinewidget.cpp:314
 #, kde-format
 msgctxt "Week #weeknumber - month name - year string"
 msgid "Week #%1 - %2 %3"
 msgstr ""
 
-#: digikam/date/timelinewidget.cpp:321
+#: digikam/date/timelinewidget.cpp:323
 #, fuzzy, kde-format
 msgctxt "month-name year-string"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#: digikam/dragdrop/tagdragdrop.cpp:84 digikam/dragdrop/albumdragdrop.cpp:92
+#: digikam/dragdrop/albumdragdrop.cpp:204
+#: digikam/dragdrop/albumdragdrop.cpp:316
+#: digikam/dragdrop/imagedragdrop.cpp:120
+#, fuzzy
+msgid "&Move Here"
+msgstr "&Alihkan ke Sini"
+
+#: digikam/dragdrop/tagdragdrop.cpp:86 digikam/dragdrop/tagdragdrop.cpp:160
+#: digikam/dragdrop/tagdragdrop.cpp:192 digikam/dragdrop/albumdragdrop.cpp:94
+#: digikam/dragdrop/albumdragdrop.cpp:171
+#: digikam/dragdrop/albumdragdrop.cpp:214
+#: digikam/dragdrop/albumdragdrop.cpp:274
+#: digikam/dragdrop/albumdragdrop.cpp:319
+#: digikam/dragdrop/imagedragdrop.cpp:87
+#: digikam/dragdrop/imagedragdrop.cpp:574
+#: utilities/cameragui/views/cameraiconview.cpp:805
+#, fuzzy
+msgid "C&ancel"
+msgstr "B&atalkan"
+
+#: digikam/dragdrop/tagdragdrop.cpp:156
+#: digikam/utils/contextmenuhelper.cpp:244
+msgid "Set as Tag Thumbnail"
+msgstr ""
+
+#: digikam/dragdrop/tagdragdrop.cpp:190
+#, kde-format
+msgid "Assign Tag '%1' to Items"
+msgstr ""
+
+#: digikam/dragdrop/albumdragdrop.cpp:167
+#: digikam/dragdrop/albumdragdrop.cpp:210
+#: digikam/utils/contextmenuhelper.cpp:240
+msgid "Set as Album Thumbnail"
+msgstr ""
+
+#: digikam/dragdrop/albumdragdrop.cpp:205
+#: digikam/dragdrop/albumdragdrop.cpp:317
+#: digikam/dragdrop/imagedragdrop.cpp:123
+#, fuzzy
+msgid "&Copy Here"
+msgstr "&Salin di Sini"
+
+#: digikam/dragdrop/albumdragdrop.cpp:270
+#: digikam/dragdrop/imagedragdrop.cpp:570
+msgid "Download From Camera"
+msgstr ""
+
+#: digikam/dragdrop/albumdragdrop.cpp:272
+#: digikam/dragdrop/imagedragdrop.cpp:572
+msgid "Download && Delete From Camera"
+msgstr ""
 
 #: digikam/dragdrop/imagedragdrop.cpp:82
 #, fuzzy
 msgctxt "@action:inmenu Group images with this image"
 msgid "Group here"
 msgstr "Kumpulan"
-
-#: digikam/dragdrop/imagedragdrop.cpp:87
-#: digikam/dragdrop/imagedragdrop.cpp:574 digikam/dragdrop/tagdragdrop.cpp:86
-#: digikam/dragdrop/tagdragdrop.cpp:160 digikam/dragdrop/tagdragdrop.cpp:192
-#: digikam/dragdrop/albumdragdrop.cpp:94
-#: digikam/dragdrop/albumdragdrop.cpp:171
-#: digikam/dragdrop/albumdragdrop.cpp:214
-#: digikam/dragdrop/albumdragdrop.cpp:274
-#: digikam/dragdrop/albumdragdrop.cpp:319
-#: utilities/cameragui/views/cameraiconview.cpp:805
-#, fuzzy
-msgid "C&ancel"
-msgstr "B&atalkan"
-
-#: digikam/dragdrop/imagedragdrop.cpp:120 digikam/dragdrop/tagdragdrop.cpp:84
-#: digikam/dragdrop/albumdragdrop.cpp:92
-#: digikam/dragdrop/albumdragdrop.cpp:204
-#: digikam/dragdrop/albumdragdrop.cpp:316
-#, fuzzy
-msgid "&Move Here"
-msgstr "&Alihkan ke Sini"
-
-#: digikam/dragdrop/imagedragdrop.cpp:123
-#: digikam/dragdrop/albumdragdrop.cpp:205
-#: digikam/dragdrop/albumdragdrop.cpp:317
-#, fuzzy
-msgid "&Copy Here"
-msgstr "&Salin di Sini"
 
 #: digikam/dragdrop/imagedragdrop.cpp:158
 msgid "Assign Tag to Dropped Items"
@@ -819,60 +846,6 @@ msgstr ""
 
 #: digikam/dragdrop/imagedragdrop.cpp:527
 msgid "Assign Tags to &All Items"
-msgstr ""
-
-#: digikam/dragdrop/imagedragdrop.cpp:570
-#: digikam/dragdrop/albumdragdrop.cpp:270
-msgid "Download From Camera"
-msgstr ""
-
-#: digikam/dragdrop/imagedragdrop.cpp:572
-#: digikam/dragdrop/albumdragdrop.cpp:272
-msgid "Download && Delete From Camera"
-msgstr ""
-
-#: digikam/dragdrop/tagdragdrop.cpp:156
-#: digikam/utils/contextmenuhelper.cpp:248
-msgid "Set as Tag Thumbnail"
-msgstr ""
-
-#: digikam/dragdrop/tagdragdrop.cpp:190
-#, kde-format
-msgid "Assign Tag '%1' to Items"
-msgstr ""
-
-#: digikam/dragdrop/albumdragdrop.cpp:167
-#: digikam/dragdrop/albumdragdrop.cpp:210
-#: digikam/utils/contextmenuhelper.cpp:244
-msgid "Set as Album Thumbnail"
-msgstr ""
-
-#: digikam/filters/tagfilterview.cpp:78
-msgid "Restore Tag Filters"
-msgstr ""
-
-#: digikam/filters/tagfilterview.cpp:79
-msgid "On"
-msgstr ""
-
-#: digikam/filters/tagfilterview.cpp:80
-msgid "Off"
-msgstr ""
-
-#: digikam/filters/tagfilterview.cpp:82
-msgid "Tag Filter Mode"
-msgstr ""
-
-#: digikam/filters/tagfilterview.cpp:83
-msgid "Ignore This Tag"
-msgstr ""
-
-#: digikam/filters/tagfilterview.cpp:84
-msgid "Must Have This Tag"
-msgstr ""
-
-#: digikam/filters/tagfilterview.cpp:85
-msgid "Must Not Have This Tag"
 msgstr ""
 
 #: digikam/filters/mimefilter.cpp:36
@@ -1014,60 +987,6 @@ msgstr "Mengikut Nama"
 msgid "Album Name"
 msgstr "Album"
 
-#: digikam/filters/filtersidebarwidget.cpp:133
-#, fuzzy
-msgid "Text Filter"
-msgstr "Penapis:"
-
-#: digikam/filters/filtersidebarwidget.cpp:139
-#, fuzzy
-msgid "MIME Type Filter"
-msgstr "Penapis:"
-
-#: digikam/filters/filtersidebarwidget.cpp:145
-#, fuzzy
-msgid "Geolocation Filter"
-msgstr "Sambungan Gagal"
-
-#: digikam/filters/filtersidebarwidget.cpp:159
-msgid "Images Without Tags"
-msgstr ""
-
-#: digikam/filters/filtersidebarwidget.cpp:161
-msgid "Show images without a tag."
-msgstr ""
-
-#: digikam/filters/filtersidebarwidget.cpp:164
-msgid "Tags Matching Condition"
-msgstr ""
-
-#: digikam/filters/filtersidebarwidget.cpp:167
-#, kde-format
-msgid ""
-"Defines in which way the selected tags are combined to filter the images. "
-"This also includes the '%1' check box."
-msgstr ""
-
-#: digikam/filters/filtersidebarwidget.cpp:172
-#: utilities/searchwindow/searchgroup.cpp:598
-msgid "OR"
-msgstr ""
-
-#: digikam/filters/filtersidebarwidget.cpp:174
-#: utilities/searchwindow/searchgroup.cpp:594
-msgid "AND"
-msgstr ""
-
-#: digikam/filters/filtersidebarwidget.cpp:188
-#, fuzzy
-msgid "Tags Filter"
-msgstr "Penapis:"
-
-#: digikam/filters/filtersidebarwidget.cpp:206
-#, fuzzy
-msgid "Labels Filter"
-msgstr "Penapis:"
-
 #: digikam/filters/filterstatusbar.cpp:83
 msgid "Reset all active filters"
 msgstr ""
@@ -1163,6 +1082,88 @@ msgstr ""
 msgid "Select how geolocation should affect the images which are shown."
 msgstr ""
 
+#: digikam/filters/filtersidebarwidget.cpp:133
+#, fuzzy
+msgid "Text Filter"
+msgstr "Penapis:"
+
+#: digikam/filters/filtersidebarwidget.cpp:139
+#, fuzzy
+msgid "MIME Type Filter"
+msgstr "Penapis:"
+
+#: digikam/filters/filtersidebarwidget.cpp:145
+#, fuzzy
+msgid "Geolocation Filter"
+msgstr "Sambungan Gagal"
+
+#: digikam/filters/filtersidebarwidget.cpp:159
+msgid "Images Without Tags"
+msgstr ""
+
+#: digikam/filters/filtersidebarwidget.cpp:161
+msgid "Show images without a tag."
+msgstr ""
+
+#: digikam/filters/filtersidebarwidget.cpp:164
+msgid "Tags Matching Condition"
+msgstr ""
+
+#: digikam/filters/filtersidebarwidget.cpp:167
+#, kde-format
+msgid ""
+"Defines in which way the selected tags are combined to filter the images. "
+"This also includes the '%1' check box."
+msgstr ""
+
+#: digikam/filters/filtersidebarwidget.cpp:172
+#: utilities/searchwindow/searchgroup.cpp:598
+msgid "OR"
+msgstr ""
+
+#: digikam/filters/filtersidebarwidget.cpp:174
+#: utilities/searchwindow/searchgroup.cpp:594
+msgid "AND"
+msgstr ""
+
+#: digikam/filters/filtersidebarwidget.cpp:188
+#, fuzzy
+msgid "Tags Filter"
+msgstr "Penapis:"
+
+#: digikam/filters/filtersidebarwidget.cpp:206
+#, fuzzy
+msgid "Labels Filter"
+msgstr "Penapis:"
+
+#: digikam/filters/tagfilterview.cpp:78
+msgid "Restore Tag Filters"
+msgstr ""
+
+#: digikam/filters/tagfilterview.cpp:79
+msgid "On"
+msgstr ""
+
+#: digikam/filters/tagfilterview.cpp:80
+msgid "Off"
+msgstr ""
+
+#: digikam/filters/tagfilterview.cpp:82
+msgid "Tag Filter Mode"
+msgstr ""
+
+#: digikam/filters/tagfilterview.cpp:83
+msgid "Ignore This Tag"
+msgstr ""
+
+#: digikam/filters/tagfilterview.cpp:84
+msgid "Must Have This Tag"
+msgstr ""
+
+#: digikam/filters/tagfilterview.cpp:85
+msgid "Must Not Have This Tag"
+msgstr ""
+
 #: digikam/items/imageviewutilities.cpp:263
 msgid ""
 "<p>Please select the destination album from the digiKam library to move the "
@@ -1177,74 +1178,12 @@ msgstr ""
 msgid "Album \"%1\""
 msgstr ""
 
-#: digikam/items/digikamimageview.cpp:331
+#: digikam/items/digikamimageview.cpp:332
 #: utilities/cameragui/main/cameraui.cpp:323
 #, fuzzy
 msgctxt "View the selected image"
 msgid "View"
 msgstr "Paparkan"
-
-#: digikam/items/imagecategorydrawer.cpp:249
-#: digikam/items/imagecategorydrawer.cpp:331
-#: digikam/items/imagecategorydrawer.cpp:348
-#, kde-format
-msgid "1 Item"
-msgid_plural "%1 Items"
-msgstr[0] ""
-msgstr[1] ""
-
-#: digikam/items/imagecategorydrawer.cpp:275
-#, kde-format
-msgctxt "%1: day of month with two digits, %2: short month name, %3: year"
-msgid "Album Date: %2 %3 %4 - 1 Item"
-msgid_plural "Album Date: %2 %3 %4 - %1 Items"
-msgstr[0] ""
-msgstr[1] ""
-
-#: digikam/items/imagecategorydrawer.cpp:302
-#, kde-format
-msgctxt "%2: a tag title; %3: number of subtags"
-msgid "%2 including 1 subtag"
-msgid_plural "%2 including %1 subtags"
-msgstr[0] ""
-msgstr[1] ""
-
-#: digikam/items/imagecategorydrawer.cpp:306
-#, kde-format
-msgctxt ""
-"%2: the previous string (e.g. 'Foo including 7 subtags'); %1: number of "
-"items in tag"
-msgid "%2 - 1 Item"
-msgid_plural "%2 - %1 Items"
-msgstr[0] ""
-msgstr[1] ""
-
-#: digikam/items/imagecategorydrawer.cpp:311
-#, kde-format
-msgid "%2 - 1 Item"
-msgid_plural "%2 - %1 Items"
-msgstr[0] ""
-msgstr[1] ""
-
-#: digikam/items/imagecategorydrawer.cpp:323
-#, kde-format
-msgid "Keyword Search - 1 Item"
-msgid_plural "Keyword Search - %1 Items"
-msgstr[0] ""
-msgstr[1] ""
-
-#: digikam/items/imagecategorydrawer.cpp:327
-#, kde-format
-msgid "Advanced Search - 1 Item"
-msgid_plural "Advanced Search - %1 Items"
-msgstr[0] ""
-msgstr[1] ""
-
-#: digikam/items/imagecategorydrawer.cpp:339
-#, fuzzy, kde-format
-msgctxt "Month String - Year String"
-msgid "%1 %2"
-msgstr "%1 %2"
 
 #: digikam/items/facerejectionoverlay.cpp:63
 msgctxt "@info:tooltip"
@@ -1272,6 +1211,68 @@ msgstr ""
 msgctxt "@info:tooltip"
 msgid "Select Item"
 msgstr ""
+
+#: digikam/items/imagecategorydrawer.cpp:250
+#: digikam/items/imagecategorydrawer.cpp:332
+#: digikam/items/imagecategorydrawer.cpp:349
+#, kde-format
+msgid "1 Item"
+msgid_plural "%1 Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: digikam/items/imagecategorydrawer.cpp:276
+#, kde-format
+msgctxt "%1: day of month with two digits, %2: short month name, %3: year"
+msgid "Album Date: %2 %3 %4 - 1 Item"
+msgid_plural "Album Date: %2 %3 %4 - %1 Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: digikam/items/imagecategorydrawer.cpp:303
+#, kde-format
+msgctxt "%2: a tag title; %3: number of subtags"
+msgid "%2 including 1 subtag"
+msgid_plural "%2 including %1 subtags"
+msgstr[0] ""
+msgstr[1] ""
+
+#: digikam/items/imagecategorydrawer.cpp:307
+#, kde-format
+msgctxt ""
+"%2: the previous string (e.g. 'Foo including 7 subtags'); %1: number of "
+"items in tag"
+msgid "%2 - 1 Item"
+msgid_plural "%2 - %1 Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: digikam/items/imagecategorydrawer.cpp:312
+#, kde-format
+msgid "%2 - 1 Item"
+msgid_plural "%2 - %1 Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: digikam/items/imagecategorydrawer.cpp:324
+#, kde-format
+msgid "Keyword Search - 1 Item"
+msgid_plural "Keyword Search - %1 Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: digikam/items/imagecategorydrawer.cpp:328
+#, kde-format
+msgid "Advanced Search - 1 Item"
+msgid_plural "Advanced Search - %1 Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: digikam/items/imagecategorydrawer.cpp:340
+#, fuzzy, kde-format
+msgctxt "Month String - Year String"
+msgid "%1 %2"
+msgstr "%1 %2"
 
 #: digikam/main/main.cpp:73 digikam/views/welcomepageview.cpp:237
 #, fuzzy
@@ -1468,8 +1469,8 @@ msgid "N&ew..."
 msgstr ""
 
 #: digikam/main/digikamapp.cpp:830 digikam/tags/tagmodificationhelper.cpp:254
-#: digikam/utils/editablesearchtreeview.cpp:68
 #: digikam/utils/searchmodificationhelper.cpp:82
+#: digikam/utils/editablesearchtreeview.cpp:68
 #: utilities/cameragui/main/cameraui.cpp:1849
 #: utilities/cameragui/views/cameraiconview.cpp:595
 #, fuzzy
@@ -1544,7 +1545,7 @@ msgstr ""
 msgid "Add selected items to the light table thumbbar."
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:903 digikam/utils/contextmenuhelper.cpp:771
+#: digikam/main/digikamapp.cpp:903 digikam/utils/contextmenuhelper.cpp:767
 #: utilities/queuemanager/main/queuemgrwindow.cpp:143
 msgid "Batch Queue Manager"
 msgstr ""
@@ -1587,8 +1588,8 @@ msgstr ""
 msgid "Find similar images using selected item as reference."
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:955 digikam/utils/editablesearchtreeview.cpp:67
-#: digikam/utils/contextmenuhelper.cpp:501
+#: digikam/main/digikamapp.cpp:955 digikam/utils/contextmenuhelper.cpp:497
+#: digikam/utils/editablesearchtreeview.cpp:67
 #, fuzzy
 msgid "Rename..."
 msgstr "Namakan semula..."
@@ -1733,7 +1734,7 @@ msgstr "Pilih Semua"
 msgid "Select None"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:1113 digikam/utils/contextmenuhelper.cpp:843
+#: digikam/main/digikamapp.cpp:1113 digikam/utils/contextmenuhelper.cpp:839
 #: utilities/cameragui/main/cameraui.cpp:303
 #, fuzzy
 msgid "Invert Selection"
@@ -1983,33 +1984,33 @@ msgctxt "KIPI-Plugins keyboard shortcuts"
 msgid "KIPI-Plugins"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:2636
+#: digikam/main/digikamapp.cpp:2659
 #, fuzzy
 msgid "Loading KIPI Plugins..."
 msgstr "Muat Naik..."
 
-#: digikam/main/digikamapp.cpp:2860
+#: digikam/main/digikamapp.cpp:2883
 #, fuzzy
 msgid "Loading themes..."
 msgstr "Muat Naik..."
 
-#: digikam/main/digikamapp.cpp:2862 showfoto/main/showfoto.cpp:465
+#: digikam/main/digikamapp.cpp:2885 showfoto/main/showfoto.cpp:465
 msgid "&Themes"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:2879
+#: digikam/main/digikamapp.cpp:2902
 #, fuzzy
 msgid "Loading tools..."
 msgstr "Muat Naik..."
 
-#: digikam/main/digikamapp.cpp:2914
+#: digikam/main/digikamapp.cpp:2937
 msgid ""
 "This action will update the metadata of all available files from information "
 "stored in the database. This can take some time. \n"
 "Do you want to continue?"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:2929
+#: digikam/main/digikamapp.cpp:2952
 msgid ""
 "Image thumbnailing can take some time.\n"
 "Which would you prefer?\n"
@@ -2017,23 +2018,23 @@ msgid ""
 "- Rebuild all thumbnails (takes a long time)"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:2934 digikam/main/digikamapp.cpp:2970
+#: digikam/main/digikamapp.cpp:2957 digikam/main/digikamapp.cpp:2993
 #: showfoto/main/showfoto.cpp:1118 utilities/cameragui/main/cameraui.cpp:1848
 #: utilities/imageeditor/editor/editorwindow.cpp:1344
 #, fuzzy
 msgid "Warning"
 msgstr "Amaran"
 
-#: digikam/main/digikamapp.cpp:2935 digikam/main/digikamapp.cpp:2971
+#: digikam/main/digikamapp.cpp:2958 digikam/main/digikamapp.cpp:2994
 #, fuzzy
 msgid "Scan"
 msgstr "Imbas"
 
-#: digikam/main/digikamapp.cpp:2936 digikam/main/digikamapp.cpp:2972
+#: digikam/main/digikamapp.cpp:2959 digikam/main/digikamapp.cpp:2995
 msgid "Rebuild All"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:2965
+#: digikam/main/digikamapp.cpp:2988
 msgid ""
 "Image fingerprinting can take some time.\n"
 "Which would you prefer?\n"
@@ -2041,59 +2042,59 @@ msgid ""
 "- Rebuild all fingerprints (takes a long time)"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:3019
+#: digikam/main/digikamapp.cpp:3042
 msgid "Update of people database completed."
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:3070
+#: digikam/main/digikamapp.cpp:3093
 msgid "Select folder to parse"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:3084
+#: digikam/main/digikamapp.cpp:3107
 msgid "Select folders to import into album"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:3108
+#: digikam/main/digikamapp.cpp:3131
 msgid ""
 "<p>Please select the destination album from the digiKam library to import "
 "folders into.</p>"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:3240
+#: digikam/main/digikamapp.cpp:3263
 msgid "Adjust Exif Orientation Tag"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:3244
+#: digikam/main/digikamapp.cpp:3267
 #, fuzzy
 msgctxt "normal exif orientation"
 msgid "Normal"
 msgstr "Normal"
 
-#: digikam/main/digikamapp.cpp:3245 libs/dmetadata/dmetadata.cpp:2208
+#: digikam/main/digikamapp.cpp:3268 libs/dmetadata/dmetadata.cpp:2208
 msgid "Flipped Horizontally"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:3246
+#: digikam/main/digikamapp.cpp:3269
 msgid "Rotated Upside Down"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:3247 libs/dmetadata/dmetadata.cpp:2212
+#: digikam/main/digikamapp.cpp:3270 libs/dmetadata/dmetadata.cpp:2212
 msgid "Flipped Vertically"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:3248
+#: digikam/main/digikamapp.cpp:3271
 msgid "Rotated Right / Horiz. Flipped"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:3249 libs/dmetadata/dmetadata.cpp:2220
+#: digikam/main/digikamapp.cpp:3272 libs/dmetadata/dmetadata.cpp:2220
 msgid "Rotated Right"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:3250
+#: digikam/main/digikamapp.cpp:3273
 msgid "Rotated Right / Vert. Flipped"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:3251 libs/dmetadata/dmetadata.cpp:2216
+#: digikam/main/digikamapp.cpp:3274 libs/dmetadata/dmetadata.cpp:2216
 msgid "Rotated Left"
 msgstr ""
 
@@ -2163,7 +2164,7 @@ msgid "Delete '%1' tag?"
 msgstr ""
 
 #: digikam/tags/tagmodificationhelper.cpp:253
-#: digikam/utils/contextmenuhelper.cpp:459
+#: digikam/utils/contextmenuhelper.cpp:455
 msgid "Delete Tag"
 msgstr ""
 
@@ -2207,31 +2208,6 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Create \"%1\""
 msgstr "Dicipta:"
-
-#: digikam/tags/tagcheckview.cpp:88
-msgid "Toggle Auto"
-msgstr ""
-
-#: digikam/tags/tagcheckview.cpp:89
-#, fuzzy
-msgctxt "no auto toggle"
-msgid "None"
-msgstr "Tiada"
-
-#: digikam/tags/tagcheckview.cpp:91
-msgctxt "toggle child tags"
-msgid "Children"
-msgstr ""
-
-#: digikam/tags/tagcheckview.cpp:92
-msgctxt "toggle parent tag"
-msgid "Parents"
-msgstr ""
-
-#: digikam/tags/tagcheckview.cpp:93
-msgctxt "toggle child and parent tags"
-msgid "Both"
-msgstr ""
 
 #: digikam/tags/tageditdlg.cpp:110
 #, fuzzy
@@ -2302,10 +2278,6 @@ msgstr ""
 msgid "Tag Path"
 msgstr ""
 
-#: digikam/tags/tagfolderview.cpp:72
-msgid "Reset Tag Icon"
-msgstr ""
-
 #: digikam/tags/tagspopupmenu.cpp:521
 #: libs/imageproperties/imagedescedittab.cpp:1316
 msgid "No Recently Assigned Tags"
@@ -2333,6 +2305,35 @@ msgstr ""
 
 #: digikam/tags/tagspopupmenu.cpp:697
 msgid "Go to this Tag"
+msgstr ""
+
+#: digikam/tags/tagcheckview.cpp:88
+msgid "Toggle Auto"
+msgstr ""
+
+#: digikam/tags/tagcheckview.cpp:89
+#, fuzzy
+msgctxt "no auto toggle"
+msgid "None"
+msgstr "Tiada"
+
+#: digikam/tags/tagcheckview.cpp:91
+msgctxt "toggle child tags"
+msgid "Children"
+msgstr ""
+
+#: digikam/tags/tagcheckview.cpp:92
+msgctxt "toggle parent tag"
+msgid "Parents"
+msgstr ""
+
+#: digikam/tags/tagcheckview.cpp:93
+msgctxt "toggle child and parent tags"
+msgid "Both"
+msgstr ""
+
+#: digikam/tags/tagfolderview.cpp:72
+msgid "Reset Tag Icon"
 msgstr ""
 
 #: digikam/utils/searchmodificationhelper.cpp:78
@@ -2651,68 +2652,68 @@ msgstr ""
 msgid "LibKface"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:314
+#: digikam/utils/contextmenuhelper.cpp:310
 #, fuzzy
 msgid "Open With"
 msgstr "Buka Dengan"
 
-#: digikam/utils/contextmenuhelper.cpp:326
+#: digikam/utils/contextmenuhelper.cpp:322
 #: imageplugins/color/imageplugin_color.cpp:349
 msgid "Other..."
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:335
+#: digikam/utils/contextmenuhelper.cpp:331
 #, fuzzy
 msgid "Open With..."
 msgstr "Buka Dengan..."
 
-#: digikam/utils/contextmenuhelper.cpp:450
+#: digikam/utils/contextmenuhelper.cpp:446
 msgid "New Tag..."
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:468
+#: digikam/utils/contextmenuhelper.cpp:464
 msgctxt "Edit Tag Properties"
 msgid "Properties..."
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:509
+#: digikam/utils/contextmenuhelper.cpp:505
 msgid "Reset Album Icon"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:520
+#: digikam/utils/contextmenuhelper.cpp:516
 #: utilities/imageeditor/editor/imagewindow.cpp:794
 msgid "Assign Tag"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:536
+#: digikam/utils/contextmenuhelper.cpp:532
 #: utilities/imageeditor/editor/imagewindow.cpp:795
 msgid "Remove Tag"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:553
+#: digikam/utils/contextmenuhelper.cpp:549
 #: utilities/imageeditor/editor/imagewindow.cpp:820
 msgid "Assign Labels"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:585
+#: digikam/utils/contextmenuhelper.cpp:581
 msgid "Create Tag From Address Book"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:644
+#: digikam/utils/contextmenuhelper.cpp:640
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:332
 #, fuzzy
 msgid "Import"
 msgstr "Import"
 
-#: digikam/utils/contextmenuhelper.cpp:657
+#: digikam/utils/contextmenuhelper.cpp:653
 msgid "Export"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:673
+#: digikam/utils/contextmenuhelper.cpp:669
 msgid "Batch Process"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:725
+#: digikam/utils/contextmenuhelper.cpp:721
 #: libs/models/abstractalbummodel.cpp:393
 #: utilities/searchwindow/searchfields.cpp:88
 #: utilities/searchwindow/searchfields.cpp:95
@@ -2722,118 +2723,118 @@ msgstr ""
 msgid "Album"
 msgstr "Album"
 
-#: digikam/utils/contextmenuhelper.cpp:726
+#: digikam/utils/contextmenuhelper.cpp:722
 #: utilities/searchwindow/searchfields.cpp:183
 #, fuzzy
 msgid "Date"
 msgstr "Tarikh"
 
-#: digikam/utils/contextmenuhelper.cpp:734
+#: digikam/utils/contextmenuhelper.cpp:730
 #, fuzzy
 msgid "Tag"
 msgstr "Tag"
 
-#: digikam/utils/contextmenuhelper.cpp:761
+#: digikam/utils/contextmenuhelper.cpp:757
 #, fuzzy
 msgid "Go To"
 msgstr "Pergi Ke"
 
-#: digikam/utils/contextmenuhelper.cpp:781
+#: digikam/utils/contextmenuhelper.cpp:777
 msgid "Add to Existing Queue"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:821
+#: digikam/utils/contextmenuhelper.cpp:817
 msgid "All Tags"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:821
+#: digikam/utils/contextmenuhelper.cpp:817
 #, fuzzy
 msgid "All Albums"
 msgstr "Album"
 
-#: digikam/utils/contextmenuhelper.cpp:823
+#: digikam/utils/contextmenuhelper.cpp:819
 #, fuzzy
 msgctxt "select tags menu"
 msgid "Select"
 msgstr "Pilih"
 
-#: digikam/utils/contextmenuhelper.cpp:828
-#: digikam/utils/contextmenuhelper.cpp:838
+#: digikam/utils/contextmenuhelper.cpp:824
+#: digikam/utils/contextmenuhelper.cpp:834
 msgid "Children"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:829
-#: digikam/utils/contextmenuhelper.cpp:839
+#: digikam/utils/contextmenuhelper.cpp:825
+#: digikam/utils/contextmenuhelper.cpp:835
 msgid "Parents"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:833
+#: digikam/utils/contextmenuhelper.cpp:829
 #, fuzzy
 msgctxt "deselect tags menu"
 msgid "Deselect"
 msgstr "Nyahpilih"
 
-#: digikam/utils/contextmenuhelper.cpp:896
+#: digikam/utils/contextmenuhelper.cpp:892
 #, fuzzy
 msgid "Group"
 msgstr "Kumpulan"
 
-#: digikam/utils/contextmenuhelper.cpp:929
+#: digikam/utils/contextmenuhelper.cpp:925
 msgctxt "@action:inmenu"
 msgid "Open All Groups"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:935
+#: digikam/utils/contextmenuhelper.cpp:931
 msgctxt "@action:inmenu"
 msgid "Close All Groups"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:954
-#: digikam/utils/contextmenuhelper.cpp:999
+#: digikam/utils/contextmenuhelper.cpp:950
+#: digikam/utils/contextmenuhelper.cpp:995
 msgctxt "@action:inmenu"
 msgid "Show Grouped Images"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:960
-#: digikam/utils/contextmenuhelper.cpp:1003
+#: digikam/utils/contextmenuhelper.cpp:956
+#: digikam/utils/contextmenuhelper.cpp:999
 msgctxt "@action:inmenu"
 msgid "Hide Grouped Images"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:970
+#: digikam/utils/contextmenuhelper.cpp:966
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "Ungroup"
 msgstr "Kumpulan"
 
-#: digikam/utils/contextmenuhelper.cpp:976
+#: digikam/utils/contextmenuhelper.cpp:972
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "Remove From Group"
 msgstr "Buang Kumpulan"
 
-#: digikam/utils/contextmenuhelper.cpp:985
+#: digikam/utils/contextmenuhelper.cpp:981
 msgctxt "@action:inmenu"
 msgid "Group Selected Here"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:989
+#: digikam/utils/contextmenuhelper.cpp:985
 msgctxt "@action:inmenu"
 msgid "Group Selected By Time"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:1012
+#: digikam/utils/contextmenuhelper.cpp:1008
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "Remove Selected From Groups"
 msgstr "Buang Kumpulan"
 
-#: digikam/utils/contextmenuhelper.cpp:1016
+#: digikam/utils/contextmenuhelper.cpp:1012
 msgctxt "@action:inmenu"
 msgid "Ungroup Selected"
 msgstr ""
 
-#: digikam/utils/contextmenuhelper.cpp:1104
+#: digikam/utils/contextmenuhelper.cpp:1100
 #, fuzzy, kde-format
 msgctxt "@action:inmenu Pluralized"
 msgid "Move to Trash"
@@ -2977,18 +2978,6 @@ msgctxt "Browse images sorted by depicted people"
 msgid "People"
 msgstr ""
 
-#: digikam/views/imagepreviewview.cpp:215
-msgid "Add a Face Tag"
-msgstr ""
-
-#: digikam/views/imagepreviewview.cpp:216
-msgid "Clear all faces on this image"
-msgstr ""
-
-#: digikam/views/imagepreviewview.cpp:217
-msgid "Show Face Tags"
-msgstr ""
-
 #: digikam/views/digikamview.cpp:283
 #: utilities/queuemanager/views/toolslistview.cpp:75
 #, fuzzy
@@ -3019,13 +3008,25 @@ msgid_plural "Preparing slideshow of %1 images. Please wait..."
 msgstr[0] ""
 msgstr[1] ""
 
-#: digikam/views/digikamview.cpp:1901
+#: digikam/views/digikamview.cpp:1906
 #, kde-format
 msgid "Failed to revise Exif orientation for file %1."
 msgstr ""
 
-#: digikam/views/digikamview.cpp:1906
+#: digikam/views/digikamview.cpp:1911
 msgid "Failed to revise Exif orientation these files:"
+msgstr ""
+
+#: digikam/views/imagepreviewview.cpp:215
+msgid "Add a Face Tag"
+msgstr ""
+
+#: digikam/views/imagepreviewview.cpp:216
+msgid "Clear all faces on this image"
+msgstr ""
+
+#: digikam/views/imagepreviewview.cpp:217
+msgid "Show Face Tags"
 msgstr ""
 
 #: digikam/views/welcomepageview.cpp:100
@@ -3838,27 +3839,6 @@ msgstr ""
 msgid "Vignetting Correction"
 msgstr ""
 
-#: imageplugins/enhance/blurtool.cpp:86
-msgid "Blur"
-msgstr ""
-
-#: imageplugins/enhance/blurtool.cpp:95
-#: utilities/queuemanager/basetools/enhance/blur.cpp:62
-msgid "Smoothness:"
-msgstr ""
-
-#: imageplugins/enhance/blurtool.cpp:99
-#: utilities/queuemanager/basetools/enhance/blur.cpp:66
-msgid ""
-"A smoothness of 0 has no effect, 1 and above determine the Gaussian blur "
-"matrix radius that determines how much to blur the image."
-msgstr ""
-
-#: imageplugins/enhance/blurtool.cpp:177
-#, fuzzy
-msgid "Gaussian Blur"
-msgstr "Gauss Kabur"
-
 #: imageplugins/enhance/lensautofixtool.cpp:96
 #: imageplugins/enhance/lensautofixtool.cpp:250
 #: utilities/queuemanager/basetools/enhance/lensautofix.cpp:66
@@ -4214,6 +4194,27 @@ msgstr ""
 #: imageplugins/enhance/imageplugin_enhance.cpp:264
 msgid "To use this tool, you need to select a region to in-paint."
 msgstr ""
+
+#: imageplugins/enhance/blurtool.cpp:86
+msgid "Blur"
+msgstr ""
+
+#: imageplugins/enhance/blurtool.cpp:95
+#: utilities/queuemanager/basetools/enhance/blur.cpp:62
+msgid "Smoothness:"
+msgstr ""
+
+#: imageplugins/enhance/blurtool.cpp:99
+#: utilities/queuemanager/basetools/enhance/blur.cpp:66
+msgid ""
+"A smoothness of 0 has no effect, 1 and above determine the Gaussian blur "
+"matrix radius that determines how much to blur the image."
+msgstr ""
+
+#: imageplugins/enhance/blurtool.cpp:177
+#, fuzzy
+msgid "Gaussian Blur"
+msgstr "Gauss Kabur"
 
 #: imageplugins/filters/blurfxtool.cpp:108
 #: imageplugins/filters/blurfxtool.cpp:403
@@ -5108,59 +5109,6 @@ msgstr ""
 msgid "Cannot save settings to the Photograph Resizing text file."
 msgstr ""
 
-#: imageplugins/transform/freerotationtool.cpp:111
-#: imageplugins/transform/freerotationtool.cpp:362
-#: imageplugins/transform/imageplugin_transform.cpp:113
-#: libs/dimg/filters/transform/freerotationfilter.h:106
-msgid "Free Rotation"
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:115
-msgid ""
-"This is the free rotation operation preview. If you move the mouse cursor on "
-"this preview, a vertical and horizontal dashed line will be drawn to guide "
-"you in adjusting the free rotation correction. Release the left mouse button "
-"to freeze the dashed line's position."
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:143
-msgid ""
-"Select a point in the preview widget, then click this button to assign the "
-"point for auto-correction."
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:191
-#, fuzzy
-msgctxt "Automatic Adjustment"
-msgid "Adjust"
-msgstr "Selaras"
-
-#: imageplugins/transform/freerotationtool.cpp:200
-msgid ""
-"<p>Correct the rotation of your images automatically by assigning two points "
-"in the preview widget and clicking <i>Adjust</i>.<br/>You can either adjust "
-"horizontal or vertical lines.</p>"
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:220
-msgid "Automatic Adjustment"
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:222
-#: utilities/cameragui/main/cameraui.cpp:253
-#, fuzzy
-msgid "Settings"
-msgstr "Tetapan"
-
-#: imageplugins/transform/freerotationtool.cpp:367
-msgid "Click to set"
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:368
-msgctxt "point has been set and is valid"
-msgid "Okay"
-msgstr ""
-
 #: imageplugins/transform/contentawareresizetool.cpp:178
 #: imageplugins/transform/contentawareresizetool.cpp:792
 msgid "Liquid Rescale"
@@ -5390,6 +5338,13 @@ msgstr ""
 msgid "Liquid Rescale..."
 msgstr ""
 
+#: imageplugins/transform/imageplugin_transform.cpp:113
+#: imageplugins/transform/freerotationtool.cpp:111
+#: imageplugins/transform/freerotationtool.cpp:362
+#: libs/dimg/filters/transform/freerotationfilter.h:106
+msgid "Free Rotation"
+msgstr ""
+
 #: imageplugins/transform/imageplugin_transform.cpp:123
 msgid "Set Point 1"
 msgstr ""
@@ -5408,6 +5363,52 @@ msgstr ""
 
 #: imageplugins/transform/perspectivewidget.cpp:335
 msgid "Perspective Adjustment"
+msgstr ""
+
+#: imageplugins/transform/freerotationtool.cpp:115
+msgid ""
+"This is the free rotation operation preview. If you move the mouse cursor on "
+"this preview, a vertical and horizontal dashed line will be drawn to guide "
+"you in adjusting the free rotation correction. Release the left mouse button "
+"to freeze the dashed line's position."
+msgstr ""
+
+#: imageplugins/transform/freerotationtool.cpp:143
+msgid ""
+"Select a point in the preview widget, then click this button to assign the "
+"point for auto-correction."
+msgstr ""
+
+#: imageplugins/transform/freerotationtool.cpp:191
+#, fuzzy
+msgctxt "Automatic Adjustment"
+msgid "Adjust"
+msgstr "Selaras"
+
+#: imageplugins/transform/freerotationtool.cpp:200
+msgid ""
+"<p>Correct the rotation of your images automatically by assigning two points "
+"in the preview widget and clicking <i>Adjust</i>.<br/>You can either adjust "
+"horizontal or vertical lines.</p>"
+msgstr ""
+
+#: imageplugins/transform/freerotationtool.cpp:220
+msgid "Automatic Adjustment"
+msgstr ""
+
+#: imageplugins/transform/freerotationtool.cpp:222
+#: utilities/cameragui/main/cameraui.cpp:253
+#, fuzzy
+msgid "Settings"
+msgstr "Tetapan"
+
+#: imageplugins/transform/freerotationtool.cpp:367
+msgid "Click to set"
+msgstr ""
+
+#: imageplugins/transform/freerotationtool.cpp:368
+msgctxt "point has been set and is valid"
+msgid "Okay"
 msgstr ""
 
 #: kioslave/digikamsearch.cpp:177
@@ -5867,6 +5868,249 @@ msgstr ""
 msgid "Settings for Saving Image File"
 msgstr ""
 
+#: libs/dialogs/iccprofileinfodlg.cpp:40
+#, kde-format
+msgid "Color Profile Info - %1"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:88 libs/dialogs/infodlg.cpp:73
+msgid "Shared Libraries and Components Information"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:93
+msgid "LibQt"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:94
+msgid "LibKDE"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:95
+msgid "LibKdcraw"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:96
+msgid "LibRaw"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:99
+msgid "Parallelized demosaicing"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:102
+msgid "LibKExiv2"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:103
+msgid "LibExiv2"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:104
+msgid "Exiv2 supports XMP metadata"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:106
+msgid "Exiv2 can write to Jpeg"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:108
+msgid "Exiv2 can write to Tiff"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:110
+msgid "Exiv2 can write to Png"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:112
+msgid "Exiv2 can write to Jp2"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:114
+msgid "Exiv2 can write to Pgf"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:119 libs/dialogs/libsinfodlg.cpp:126
+msgid "LibLensFun"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:119
+#, kde-format
+msgid "%1.%2.%3-%4 - internal library"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:126 libs/dialogs/libsinfodlg.cpp:134
+#: libs/dialogs/libsinfodlg.cpp:147 libs/dialogs/libsinfodlg.cpp:153
+msgid "external shared library"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:131 libs/dialogs/libsinfodlg.cpp:134
+msgid "LibLqr"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:131 libs/dialogs/libsinfodlg.cpp:149
+#: libs/dialogs/libsinfodlg.cpp:155
+msgid "internal library"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:137
+msgid "LibPNG"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:138
+msgid "LibTIFF"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:139
+msgid "LibJPEG"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:140
+msgid "LibJasper"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:141
+msgid "LibCImg"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:142
+msgid "LibLCMS"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:143
+msgid "LibKGeoMap"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:144
+#, fuzzy
+msgid "Marble Widget"
+msgstr "Marmar"
+
+#: libs/dialogs/libsinfodlg.cpp:147 libs/dialogs/libsinfodlg.cpp:149
+msgid "LibPGF"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:153 libs/dialogs/libsinfodlg.cpp:155
+msgid "LibClapack"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:158
+#, fuzzy
+msgid "Component"
+msgstr "Komponen"
+
+#: libs/dialogs/libsinfodlg.cpp:158
+#: utilities/imageeditor/rawimport/rawsettingsbox.cpp:324
+#: utilities/scriptiface/setupscriptmanager.cpp:134
+#, fuzzy
+msgid "Info"
+msgstr "Maklumat"
+
+#: libs/dialogs/imagedialog.cpp:212
+msgid "<i>Make:</i>"
+msgstr ""
+
+#: libs/dialogs/imagedialog.cpp:213
+msgid "<i>Model:</i>"
+msgstr ""
+
+#: libs/dialogs/imagedialog.cpp:214
+msgid "<i>Created:</i>"
+msgstr ""
+
+#: libs/dialogs/imagedialog.cpp:215
+msgid "<i>Aperture:</i>"
+msgstr ""
+
+#: libs/dialogs/imagedialog.cpp:216
+msgid "<i>Focal:</i>"
+msgstr ""
+
+#: libs/dialogs/imagedialog.cpp:217
+msgid "<i>Exposure:</i>"
+msgstr ""
+
+#: libs/dialogs/imagedialog.cpp:218
+msgid "<i>Sensitivity:</i>"
+msgstr ""
+
+#: libs/dialogs/imagedialog.cpp:293
+#, kde-format
+msgid "%1|Camera RAW files"
+msgstr ""
+
+#: libs/dialogs/imagedialog.cpp:295
+msgid "*.pgf|Progressive Graphics file"
+msgstr ""
+
+#: libs/dialogs/imagedialog.cpp:312
+msgid "Select an Image"
+msgstr ""
+
+#: libs/dialogs/imagedialog.cpp:328
+msgid "Select Images"
+msgstr ""
+
+#: libs/dialogs/rawcameradlg.cpp:69
+msgid "List of supported RAW cameras"
+msgstr ""
+
+#: libs/dialogs/rawcameradlg.cpp:143
+#, kde-format
+msgid ""
+"<p>Using KDcraw library version %2<br/>Using LibRaw version %3<br/>1 model "
+"on the list</p>"
+msgid_plural ""
+"<p>Using KDcraw library version %2<br/>Using LibRaw version %3<br/>%1 models "
+"on the list</p>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: libs/dialogs/rawcameradlg.cpp:155
+#, kde-format
+msgid ""
+"<p>Using KDcraw library version %2<br/>Using LibRaw version %3<br/>1 model "
+"on the list (found: %4)</p>"
+msgid_plural ""
+"<p>Using KDcraw library version %2<br/>Using LibRaw version %3<br/>%1 models "
+"on the list (found: %4)</p>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: libs/dialogs/migrationdlg.cpp:136
+msgid "Migrate ->"
+msgstr ""
+
+#: libs/dialogs/migrationdlg.cpp:137 utilities/cameragui/main/cameraui.cpp:265
+#: utilities/imageeditor/editor/editorwindow.cpp:658
+#, fuzzy
+msgid "Cancel"
+msgstr "Batal"
+
+#: libs/dialogs/migrationdlg.cpp:140
+msgid "Progress Information"
+msgstr ""
+
+#: libs/dialogs/migrationdlg.cpp:149
+msgid "Step Progress"
+msgstr ""
+
+#: libs/dialogs/migrationdlg.cpp:151
+msgid "Overall Progress"
+msgstr ""
+
+#: libs/dialogs/migrationdlg.cpp:238
+msgid "Database copied successfully."
+msgstr ""
+
+#: libs/dialogs/migrationdlg.cpp:242
+msgid "Database conversion canceled."
+msgstr ""
+
+#: libs/dialogs/migrationdlg.cpp:251
+#, kde-format
+msgid "Step Progress (%1)"
+msgstr ""
+
 #: libs/dialogs/daboutdata.cpp:59
 msgid "Supported RAW Cameras"
 msgstr ""
@@ -6114,25 +6358,6 @@ msgstr ""
 msgid "Bug reports, feedback and icons"
 msgstr ""
 
-#: libs/dialogs/iccprofileinfodlg.cpp:40
-#, kde-format
-msgid "Color Profile Info - %1"
-msgstr ""
-
-#: libs/dialogs/infodlg.cpp:73 libs/dialogs/libsinfodlg.cpp:88
-msgid "Shared Libraries and Components Information"
-msgstr ""
-
-#: libs/dialogs/infodlg.cpp:74 libs/widgets/common/dhistoryview.cpp:135
-#, fuzzy
-msgid "Copy to Clipboard"
-msgstr "Salin ke Klipbod"
-
-#: libs/dialogs/infodlg.cpp:95
-#, kde-format
-msgid "<font size=\"5\">%1</font><br/><b>Version %2</b><p>%3</p>"
-msgstr ""
-
 #: libs/dialogs/deletedialog.cpp:125
 msgid "List of files that are about to be deleted."
 msgstr ""
@@ -6243,238 +6468,14 @@ msgstr "Akan menghapuskan fail yang dipilih"
 msgid "About to delete selected albums"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:93
-msgid "LibQt"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:94
-msgid "LibKDE"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:95
-msgid "LibKdcraw"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:96
-msgid "LibRaw"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:99
-msgid "Parallelized demosaicing"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:102
-msgid "LibKExiv2"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:103
-msgid "LibExiv2"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:104
-msgid "Exiv2 supports XMP metadata"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:106
-msgid "Exiv2 can write to Jpeg"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:108
-msgid "Exiv2 can write to Tiff"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:110
-msgid "Exiv2 can write to Png"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:112
-msgid "Exiv2 can write to Jp2"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:114
-msgid "Exiv2 can write to Pgf"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:119 libs/dialogs/libsinfodlg.cpp:126
-msgid "LibLensFun"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:119
-#, kde-format
-msgid "%1.%2.%3-%4 - internal library"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:126 libs/dialogs/libsinfodlg.cpp:134
-#: libs/dialogs/libsinfodlg.cpp:147 libs/dialogs/libsinfodlg.cpp:153
-msgid "external shared library"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:131 libs/dialogs/libsinfodlg.cpp:134
-msgid "LibLqr"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:131 libs/dialogs/libsinfodlg.cpp:149
-#: libs/dialogs/libsinfodlg.cpp:155
-msgid "internal library"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:137
-msgid "LibPNG"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:138
-msgid "LibTIFF"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:139
-msgid "LibJPEG"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:140
-msgid "LibJasper"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:141
-msgid "LibCImg"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:142
-msgid "LibLCMS"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:143
-msgid "LibKGeoMap"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:144
+#: libs/dialogs/infodlg.cpp:74 libs/widgets/common/dhistoryview.cpp:135
 #, fuzzy
-msgid "Marble Widget"
-msgstr "Marmar"
+msgid "Copy to Clipboard"
+msgstr "Salin ke Klipbod"
 
-#: libs/dialogs/libsinfodlg.cpp:147 libs/dialogs/libsinfodlg.cpp:149
-msgid "LibPGF"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:153 libs/dialogs/libsinfodlg.cpp:155
-msgid "LibClapack"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:158
-#, fuzzy
-msgid "Component"
-msgstr "Komponen"
-
-#: libs/dialogs/libsinfodlg.cpp:158
-#: utilities/imageeditor/rawimport/rawsettingsbox.cpp:324
-#: utilities/scriptiface/setupscriptmanager.cpp:134
-#, fuzzy
-msgid "Info"
-msgstr "Maklumat"
-
-#: libs/dialogs/imagedialog.cpp:212
-msgid "<i>Make:</i>"
-msgstr ""
-
-#: libs/dialogs/imagedialog.cpp:213
-msgid "<i>Model:</i>"
-msgstr ""
-
-#: libs/dialogs/imagedialog.cpp:214
-msgid "<i>Created:</i>"
-msgstr ""
-
-#: libs/dialogs/imagedialog.cpp:215
-msgid "<i>Aperture:</i>"
-msgstr ""
-
-#: libs/dialogs/imagedialog.cpp:216
-msgid "<i>Focal:</i>"
-msgstr ""
-
-#: libs/dialogs/imagedialog.cpp:217
-msgid "<i>Exposure:</i>"
-msgstr ""
-
-#: libs/dialogs/imagedialog.cpp:218
-msgid "<i>Sensitivity:</i>"
-msgstr ""
-
-#: libs/dialogs/imagedialog.cpp:293
+#: libs/dialogs/infodlg.cpp:95
 #, kde-format
-msgid "%1|Camera RAW files"
-msgstr ""
-
-#: libs/dialogs/imagedialog.cpp:295
-msgid "*.pgf|Progressive Graphics file"
-msgstr ""
-
-#: libs/dialogs/imagedialog.cpp:312
-msgid "Select an Image"
-msgstr ""
-
-#: libs/dialogs/imagedialog.cpp:328
-msgid "Select Images"
-msgstr ""
-
-#: libs/dialogs/rawcameradlg.cpp:69
-msgid "List of supported RAW cameras"
-msgstr ""
-
-#: libs/dialogs/rawcameradlg.cpp:143
-#, kde-format
-msgid ""
-"<p>Using KDcraw library version %2<br/>Using LibRaw version %3<br/>1 model "
-"on the list</p>"
-msgid_plural ""
-"<p>Using KDcraw library version %2<br/>Using LibRaw version %3<br/>%1 models "
-"on the list</p>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: libs/dialogs/rawcameradlg.cpp:155
-#, kde-format
-msgid ""
-"<p>Using KDcraw library version %2<br/>Using LibRaw version %3<br/>1 model "
-"on the list (found: %4)</p>"
-msgid_plural ""
-"<p>Using KDcraw library version %2<br/>Using LibRaw version %3<br/>%1 models "
-"on the list (found: %4)</p>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: libs/dialogs/migrationdlg.cpp:136
-msgid "Migrate ->"
-msgstr ""
-
-#: libs/dialogs/migrationdlg.cpp:137 utilities/cameragui/main/cameraui.cpp:265
-#: utilities/imageeditor/editor/editorwindow.cpp:658
-#, fuzzy
-msgid "Cancel"
-msgstr "Batal"
-
-#: libs/dialogs/migrationdlg.cpp:140
-msgid "Progress Information"
-msgstr ""
-
-#: libs/dialogs/migrationdlg.cpp:149
-msgid "Step Progress"
-msgstr ""
-
-#: libs/dialogs/migrationdlg.cpp:151
-msgid "Overall Progress"
-msgstr ""
-
-#: libs/dialogs/migrationdlg.cpp:238
-msgid "Database copied successfully."
-msgstr ""
-
-#: libs/dialogs/migrationdlg.cpp:242
-msgid "Database conversion canceled."
-msgstr ""
-
-#: libs/dialogs/migrationdlg.cpp:251
-#, kde-format
-msgid "Step Progress (%1)"
+msgid "<font size=\"5\">%1</font><br/><b>Version %2</b><p>%3</p>"
 msgstr ""
 
 #: libs/dimg/filters/auto/equalizefilter.h:62
@@ -7044,6 +7045,48 @@ msgstr "Biru"
 msgid "Set here the yellow/blue color adjustment of the image."
 msgstr ""
 
+#: libs/dimg/filters/curves/curveswidget.cpp:185
+#: libs/dimg/filters/levels/histogramwidget.cpp:495
+#: libs/widgets/iccprofiles/cietonguewidget.cpp:845
+msgid "Loading image..."
+msgstr ""
+
+#: libs/dimg/filters/curves/curveswidget.cpp:190
+#: libs/dimg/filters/levels/histogramwidget.cpp:498
+msgid "Histogram calculation..."
+msgstr ""
+
+#: libs/dimg/filters/curves/curveswidget.cpp:204
+#: libs/dimg/filters/levels/histogramwidget.cpp:514
+msgid ""
+"Histogram\n"
+"calculation\n"
+"failed."
+msgstr ""
+
+#: libs/dimg/filters/curves/curveswidget.cpp:298
+#, kde-format
+msgid ""
+"x:%1\n"
+"y:%2"
+msgstr ""
+
+#: libs/dimg/filters/curves/curvessettings.cpp:252
+msgid "Select Gimp Curves File to Load"
+msgstr ""
+
+#: libs/dimg/filters/curves/curvessettings.cpp:262
+msgid "Cannot load from the Gimp curves text file."
+msgstr ""
+
+#: libs/dimg/filters/curves/curvessettings.cpp:273
+msgid "Gimp Curves File to Save"
+msgstr ""
+
+#: libs/dimg/filters/curves/curvessettings.cpp:283
+msgid "Cannot save to the Gimp curves text file."
+msgstr ""
+
 #: libs/dimg/filters/curves/curvesbox.cpp:145
 msgid "Curve free mode"
 msgstr ""
@@ -7091,52 +7134,6 @@ msgstr ""
 msgid ""
 "If you press this button, all curves' values from the currently selected "
 "channel will be reset to the default values."
-msgstr ""
-
-#: libs/dimg/filters/curves/curveswidget.cpp:185
-#: libs/dimg/filters/levels/histogramwidget.cpp:495
-#: libs/widgets/iccprofiles/cietonguewidget.cpp:845
-msgid "Loading image..."
-msgstr ""
-
-#: libs/dimg/filters/curves/curveswidget.cpp:190
-#: libs/dimg/filters/levels/histogramwidget.cpp:498
-msgid "Histogram calculation..."
-msgstr ""
-
-#: libs/dimg/filters/curves/curveswidget.cpp:204
-#: libs/dimg/filters/levels/histogramwidget.cpp:514
-msgid ""
-"Histogram\n"
-"calculation\n"
-"failed."
-msgstr ""
-
-#: libs/dimg/filters/curves/curveswidget.cpp:298
-#, kde-format
-msgid ""
-"x:%1\n"
-"y:%2"
-msgstr ""
-
-#: libs/dimg/filters/curves/curvessettings.cpp:252
-msgid "Select Gimp Curves File to Load"
-msgstr ""
-
-#: libs/dimg/filters/curves/curvessettings.cpp:262
-msgid "Cannot load from the Gimp curves text file."
-msgstr ""
-
-#: libs/dimg/filters/curves/curvessettings.cpp:273
-msgid "Gimp Curves File to Save"
-msgstr ""
-
-#: libs/dimg/filters/curves/curvessettings.cpp:283
-msgid "Cannot save to the Gimp curves text file."
-msgstr ""
-
-#: libs/dimg/filters/decorate/borderfilter.h:143
-msgid "Border Tool"
 msgstr ""
 
 #: libs/dimg/filters/decorate/texturefilter.h:58
@@ -7289,10 +7286,9 @@ msgstr ""
 msgid "Set here the color of the second line."
 msgstr ""
 
-#: libs/dimg/filters/fx/blurfilter.h:58
-#, fuzzy
-msgid "Blur Filter"
-msgstr "Penapis:"
+#: libs/dimg/filters/decorate/borderfilter.h:143
+msgid "Border Tool"
+msgstr ""
 
 #: libs/dimg/filters/fx/blurfxfilter.h:59
 msgid "Blur FX Filter"
@@ -7423,6 +7419,11 @@ msgstr ""
 #: libs/dimg/filters/fx/filmgrainsettings.cpp:357
 msgid "Chrominance Red Noise"
 msgstr ""
+
+#: libs/dimg/filters/fx/blurfilter.h:58
+#, fuzzy
+msgid "Blur Filter"
+msgstr "Penapis:"
 
 #: libs/dimg/filters/greycstoration/greycstorationsettings.cpp:134
 #: utilities/cameragui/main/cameraui.cpp:2036
@@ -8058,6 +8059,40 @@ msgstr "Pembetulan Warna"
 msgid "Lens Auto-Correction Tool"
 msgstr ""
 
+#: libs/dimg/filters/levels/levelsfilter.h:87
+msgid "Levels Adjust Tool"
+msgstr ""
+
+#: libs/dimg/filters/levels/histogrampainter.cpp:430
+#, kde-format
+msgid "x:%1"
+msgstr ""
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:571
+msgid "Mean:"
+msgstr ""
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:575
+msgid "Pixels:"
+msgstr ""
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:579
+msgid "Std dev.:"
+msgstr ""
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:583
+#, fuzzy
+msgid "Count:"
+msgstr "Kiraan:"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:587
+msgid "Median:"
+msgstr ""
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:591
+msgid "Percent:"
+msgstr ""
+
 #: libs/dimg/filters/levels/histogrambox.cpp:88
 #: utilities/queuemanager/basetools/color/channelmixer.cpp:57
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:68
@@ -8153,40 +8188,6 @@ msgid ""
 "<b>Alpha</b>: display the alpha image-channel values. This channel "
 "corresponds to the transparency value and is supported by some image "
 "formats, such as PNG or TIF."
-msgstr ""
-
-#: libs/dimg/filters/levels/levelsfilter.h:87
-msgid "Levels Adjust Tool"
-msgstr ""
-
-#: libs/dimg/filters/levels/histogrampainter.cpp:430
-#, kde-format
-msgid "x:%1"
-msgstr ""
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:571
-msgid "Mean:"
-msgstr ""
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:575
-msgid "Pixels:"
-msgstr ""
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:579
-msgid "Std dev.:"
-msgstr ""
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:583
-#, fuzzy
-msgid "Count:"
-msgstr "Kiraan:"
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:587
-msgid "Median:"
-msgstr ""
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:591
-msgid "Percent:"
 msgstr ""
 
 #: libs/dimg/filters/nr/nrsettings.cpp:110
@@ -9014,11 +9015,11 @@ msgctxt "Height in meters"
 msgid "%L1m"
 msgstr ""
 
-#: libs/dmetadata/dmetadata.cpp:2462
+#: libs/dmetadata/dmetadata.cpp:2463
 msgid "Flash has been fired"
 msgstr ""
 
-#: libs/dmetadata/dmetadata.cpp:2463
+#: libs/dmetadata/dmetadata.cpp:2464
 msgid "Flash with red-eye reduction mode"
 msgstr ""
 
@@ -10802,13 +10803,6 @@ msgstr "Dicipta:"
 msgid "Flash:"
 msgstr ""
 
-#: libs/widgets/itemview/ditemdelegate.cpp:150
-#, fuzzy, kde-format
-msgid "1 Image"
-msgid_plural "%1 Images"
-msgstr[0] "Imej"
-msgstr[1] "Imej"
-
 #: libs/widgets/itemview/imagedelegateoverlay.cpp:339
 #, kde-format
 msgctxt "@info"
@@ -10816,6 +10810,13 @@ msgid "<i>Applying operation to<br/>the selected picture</i>"
 msgid_plural "<i>Applying operation to <br/><b>%1</b> selected pictures</i>"
 msgstr[0] ""
 msgstr[1] ""
+
+#: libs/widgets/itemview/ditemdelegate.cpp:150
+#, fuzzy, kde-format
+msgid "1 Image"
+msgid_plural "%1 Images"
+msgstr[0] "Imej"
+msgstr[1] "Imej"
 
 #: libs/widgets/itemview/itemviewimagedelegate.cpp:351
 #, kde-format
@@ -11406,6 +11407,62 @@ msgstr ""
 msgid "Add a suffix number, ||n|| specifies the number of digits to use"
 msgstr ""
 
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:54
+msgid "Common File Information"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:56
+msgid "Default comment of the image"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:57
+msgid "Default author of the image"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:58
+msgid "Image dimension"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:59
+msgid "Image file size"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:60
+msgid "Format of the media file"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:61
+msgid "Type of the media file"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:62
+msgid "Rating of the media file"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:63
+msgid "Height of the media file"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:64
+msgid "Width of the media file"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:65
+msgid "Image orientation"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:66
+msgid "Color depth (bits per channel)"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:67
+msgid "Color model of the image"
+msgstr ""
+
+#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:68
+msgid "A comma separated list of all authors"
+msgstr ""
+
 #: utilities/advancedrename/parser/options/database/keys/metadatakeys.cpp:56
 msgid "Metadata Information"
 msgstr ""
@@ -11537,67 +11594,6 @@ msgstr ""
 msgid "Accuracy"
 msgstr "Ketepatan"
 
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:54
-msgid "Common File Information"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:56
-msgid "Default comment of the image"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:57
-msgid "Default author of the image"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:58
-msgid "Image dimension"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:59
-msgid "Image file size"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:60
-msgid "Format of the media file"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:61
-msgid "Type of the media file"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:62
-msgid "Rating of the media file"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:63
-msgid "Height of the media file"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:64
-msgid "Width of the media file"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:65
-msgid "Image orientation"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:66
-msgid "Color depth (bits per channel)"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:67
-msgid "Color model of the image"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:68
-msgid "A comma separated list of all authors"
-msgstr ""
-
-#: utilities/advancedrename/parser/options/database/dbkeyselector.cpp:98
-#, fuzzy
-msgid "Key"
-msgstr "Kekunci"
-
 #: utilities/advancedrename/parser/options/database/databaseoption.cpp:56
 #: utilities/advancedrename/parser/options/metadataoption.cpp:60
 msgid "Keyword separator:"
@@ -11614,6 +11610,11 @@ msgstr ""
 #: utilities/advancedrename/parser/options/database/databaseoption.cpp:83
 msgid "Add database information"
 msgstr ""
+
+#: utilities/advancedrename/parser/options/database/dbkeyselector.cpp:98
+#, fuzzy
+msgid "Key"
+msgstr "Kekunci"
 
 #: utilities/advancedrename/parser/options/cameranameoption.cpp:39
 #: utilities/searchwindow/searchfields.cpp:300
@@ -11822,7 +11823,7 @@ msgstr "&Henti paksa"
 #: utilities/advancedrename/advancedrenameprocessdialog.cpp:95
 #: utilities/batch/fingerprintsgenerator.cpp:107
 #: utilities/batch/batchthumbsgenerator.cpp:130
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1023
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1032
 #, fuzzy
 msgid "Processing..."
 msgstr "Memproses..."
@@ -12508,10 +12509,6 @@ msgstr ""
 msgid "Failed to find Album for path '%1'."
 msgstr ""
 
-#: utilities/cameragui/views/cameranamehelper.cpp:110
-msgid "auto-detected"
-msgstr ""
-
 #: utilities/cameragui/views/camerafolderview.cpp:68
 msgid "Camera Folders"
 msgstr ""
@@ -12533,6 +12530,10 @@ msgstr ""
 
 #: utilities/cameragui/views/cameraiconview.cpp:803
 msgid "&Upload to camera"
+msgstr ""
+
+#: utilities/cameragui/views/cameranamehelper.cpp:110
+msgid "auto-detected"
 msgstr ""
 
 #: utilities/cameragui/widgets/capturewidget.cpp:92
@@ -12561,47 +12562,6 @@ msgstr "Boleh didapatkan:"
 #: utilities/cameragui/widgets/freespacewidget.cpp:349
 msgid "Require:"
 msgstr ""
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:111
-msgid "Camera filenames"
-msgstr ""
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:113
-msgid ""
-"Turn on this option to use the camera provided image filenames without "
-"modifications."
-msgstr ""
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:119
-msgid "Change case to:"
-msgstr ""
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:123
-msgctxt "Leave filename as it is"
-msgid "Leave as-is"
-msgstr ""
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:124
-#, fuzzy
-msgctxt "Filename to uppercase"
-msgid "Upper"
-msgstr "Atas "
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:125
-#, fuzzy
-msgctxt "Filename to lowercase"
-msgid "Lower"
-msgstr "Turunkan"
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:127
-msgid "Set the method to use to change the case of the image filenames."
-msgstr ""
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:138
-#, fuzzy
-msgctxt "Custom Image Renaming"
-msgid "Customize"
-msgstr "Suaikan"
 
 #: utilities/cameragui/widgets/albumcustomizer.cpp:87
 msgid ""
@@ -12767,6 +12727,47 @@ msgstr ""
 #, fuzzy
 msgid "Video Files"
 msgstr "Paparkan"
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:111
+msgid "Camera filenames"
+msgstr ""
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:113
+msgid ""
+"Turn on this option to use the camera provided image filenames without "
+"modifications."
+msgstr ""
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:119
+msgid "Change case to:"
+msgstr ""
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:123
+msgctxt "Leave filename as it is"
+msgid "Leave as-is"
+msgstr ""
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:124
+#, fuzzy
+msgctxt "Filename to uppercase"
+msgid "Upper"
+msgstr "Atas "
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:125
+#, fuzzy
+msgctxt "Filename to lowercase"
+msgid "Lower"
+msgstr "Turunkan"
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:127
+msgid "Set the method to use to change the case of the image filenames."
+msgstr ""
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:138
+#, fuzzy
+msgctxt "Custom Image Renaming"
+msgid "Customize"
+msgstr "Suaikan"
 
 #: utilities/firstrun/metadatapage.cpp:66
 msgid "<b>Configure Metadata Storage to Files</b>"
@@ -13044,58 +13045,6 @@ msgstr ""
 msgid "No Database Write Access"
 msgstr ""
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:87
-msgid "Ref. images"
-msgstr ""
-
-#: utilities/fuzzysearch/findduplicatesview.cpp:87
-msgid "Items"
-msgstr ""
-
-#: utilities/fuzzysearch/findduplicatesview.cpp:90
-msgid "This shows all found duplicate items."
-msgstr ""
-
-#: utilities/fuzzysearch/findduplicatesview.cpp:184
-msgid "Update fingerprints"
-msgstr ""
-
-#: utilities/fuzzysearch/findduplicatesview.cpp:186
-msgid "Use this button to update all image fingerprints."
-msgstr ""
-
-#: utilities/fuzzysearch/findduplicatesview.cpp:188
-msgid "Find duplicates"
-msgstr ""
-
-#: utilities/fuzzysearch/findduplicatesview.cpp:190
-msgid "Use this button to scan the selected albums for duplicate items."
-msgstr ""
-
-#: utilities/fuzzysearch/findduplicatesview.cpp:199
-msgid "Search in:"
-msgstr ""
-
-#: utilities/fuzzysearch/findduplicatesview.cpp:204
-msgid "Select all albums that should be included in the search."
-msgstr ""
-
-#: utilities/fuzzysearch/findduplicatesview.cpp:211
-msgid "Select all tags that should be included in the search."
-msgstr ""
-
-#: utilities/fuzzysearch/findduplicatesview.cpp:223
-msgid "Similarity:"
-msgstr ""
-
-#: utilities/fuzzysearch/findduplicatesview.cpp:332
-msgid "No albums selected"
-msgstr ""
-
-#: utilities/fuzzysearch/findduplicatesview.cpp:349
-msgid "No tags selected"
-msgstr ""
-
 #: utilities/fuzzysearch/fuzzysearchview.cpp:222
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:150
 #, fuzzy
@@ -13230,6 +13179,58 @@ msgid ""
 "Draw a sketch here\n"
 "to perform a\n"
 "Fuzzy search"
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:87
+msgid "Ref. images"
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:87
+msgid "Items"
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:90
+msgid "This shows all found duplicate items."
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:184
+msgid "Update fingerprints"
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:186
+msgid "Use this button to update all image fingerprints."
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:188
+msgid "Find duplicates"
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:190
+msgid "Use this button to scan the selected albums for duplicate items."
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:199
+msgid "Search in:"
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:204
+msgid "Select all albums that should be included in the search."
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:211
+msgid "Select all tags that should be included in the search."
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:223
+msgid "Similarity:"
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:332
+msgid "No albums selected"
+msgstr ""
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:349
+msgid "No tags selected"
 msgstr ""
 
 #: utilities/gpssearch/gpssearchview.cpp:155
@@ -13467,92 +13468,6 @@ msgid ""
 "Failed to load image\n"
 "\"%1\""
 msgstr ""
-
-#: utilities/imageeditor/editor/editortool.cpp:346
-#, kde-format
-msgid "(%1,%2) RGBA:%3,%4,%5,%6"
-msgstr ""
-
-#: utilities/imageeditor/editor/editortoolsettings.cpp:183
-msgid "Guide:"
-msgstr ""
-
-#: utilities/imageeditor/editor/editortoolsettings.cpp:186
-msgid "Set here the color used to draw dashed guide lines."
-msgstr ""
-
-#: utilities/imageeditor/editor/editortoolsettings.cpp:192
-msgid "Set here the width in pixels used to draw dashed guide lines."
-msgstr ""
-
-#: utilities/imageeditor/editor/editortoolsettings.cpp:203
-msgid "Reset all settings to their default values."
-msgstr ""
-
-#: utilities/imageeditor/editor/editortoolsettings.cpp:222
-msgid "Load..."
-msgstr ""
-
-#: utilities/imageeditor/editor/editortoolsettings.cpp:223
-msgid "Load all parameters from settings text file."
-msgstr ""
-
-#: utilities/imageeditor/editor/editortoolsettings.cpp:227
-msgid "Save all parameters to settings text file."
-msgstr ""
-
-#: utilities/imageeditor/editor/editortoolsettings.cpp:231
-#: utilities/searchwindow/searchview.cpp:530
-msgid "Try"
-msgstr ""
-
-#: utilities/imageeditor/editor/editortoolsettings.cpp:232
-msgid "Try all settings."
-msgstr ""
-
-#: utilities/imageeditor/editor/imagewindow.cpp:560
-msgctxt "@action Finish editing, close editor, back to main window"
-msgid "Close Editor"
-msgstr ""
-
-#: utilities/imageeditor/editor/imagewindow.cpp:568
-msgid "Delete File Permanently"
-msgstr ""
-
-#: utilities/imageeditor/editor/imagewindow.cpp:578
-msgid "Delete Permanently without Confirmation"
-msgstr ""
-
-#: utilities/imageeditor/editor/imagewindow.cpp:585
-msgid "Move to Trash without Confirmation"
-msgstr ""
-
-#: utilities/imageeditor/editor/imagewindow.cpp:634
-#, kde-format
-msgid "Image Editor - %1"
-msgstr ""
-
-#: utilities/imageeditor/editor/imagewindow.cpp:1354
-msgid ""
-"There is no image to show in the current album.\n"
-"The image editor will be closed."
-msgstr ""
-
-#: utilities/imageeditor/editor/imagewindow.cpp:1356
-msgid "No Image in Current Album"
-msgstr ""
-
-#: utilities/imageeditor/editor/imagewindow.cpp:1705
-#, kde-format
-msgctxt "@info"
-msgid "The original file (<filename>%1</filename>) is currently not available"
-msgstr ""
-
-#: utilities/imageeditor/editor/imagewindow.cpp:1708
-#, fuzzy
-msgctxt "@title"
-msgid "File Not Available"
-msgstr "Boleh didapatkan:"
 
 #: utilities/imageeditor/editor/editorwindow.cpp:353
 #: utilities/lighttable/lighttablewindow.cpp:451
@@ -13957,6 +13872,92 @@ msgstr ""
 msgctxt "@title Image transformations"
 msgid "Basic Transformations"
 msgstr "Maklumat Peranti"
+
+#: utilities/imageeditor/editor/editortool.cpp:346
+#, kde-format
+msgid "(%1,%2) RGBA:%3,%4,%5,%6"
+msgstr ""
+
+#: utilities/imageeditor/editor/imagewindow.cpp:560
+msgctxt "@action Finish editing, close editor, back to main window"
+msgid "Close Editor"
+msgstr ""
+
+#: utilities/imageeditor/editor/imagewindow.cpp:568
+msgid "Delete File Permanently"
+msgstr ""
+
+#: utilities/imageeditor/editor/imagewindow.cpp:578
+msgid "Delete Permanently without Confirmation"
+msgstr ""
+
+#: utilities/imageeditor/editor/imagewindow.cpp:585
+msgid "Move to Trash without Confirmation"
+msgstr ""
+
+#: utilities/imageeditor/editor/imagewindow.cpp:634
+#, kde-format
+msgid "Image Editor - %1"
+msgstr ""
+
+#: utilities/imageeditor/editor/imagewindow.cpp:1354
+msgid ""
+"There is no image to show in the current album.\n"
+"The image editor will be closed."
+msgstr ""
+
+#: utilities/imageeditor/editor/imagewindow.cpp:1356
+msgid "No Image in Current Album"
+msgstr ""
+
+#: utilities/imageeditor/editor/imagewindow.cpp:1705
+#, kde-format
+msgctxt "@info"
+msgid "The original file (<filename>%1</filename>) is currently not available"
+msgstr ""
+
+#: utilities/imageeditor/editor/imagewindow.cpp:1708
+#, fuzzy
+msgctxt "@title"
+msgid "File Not Available"
+msgstr "Boleh didapatkan:"
+
+#: utilities/imageeditor/editor/editortoolsettings.cpp:183
+msgid "Guide:"
+msgstr ""
+
+#: utilities/imageeditor/editor/editortoolsettings.cpp:186
+msgid "Set here the color used to draw dashed guide lines."
+msgstr ""
+
+#: utilities/imageeditor/editor/editortoolsettings.cpp:192
+msgid "Set here the width in pixels used to draw dashed guide lines."
+msgstr ""
+
+#: utilities/imageeditor/editor/editortoolsettings.cpp:203
+msgid "Reset all settings to their default values."
+msgstr ""
+
+#: utilities/imageeditor/editor/editortoolsettings.cpp:222
+msgid "Load..."
+msgstr ""
+
+#: utilities/imageeditor/editor/editortoolsettings.cpp:223
+msgid "Load all parameters from settings text file."
+msgstr ""
+
+#: utilities/imageeditor/editor/editortoolsettings.cpp:227
+msgid "Save all parameters to settings text file."
+msgstr ""
+
+#: utilities/imageeditor/editor/editortoolsettings.cpp:231
+#: utilities/searchwindow/searchview.cpp:530
+msgid "Try"
+msgstr ""
+
+#: utilities/imageeditor/editor/editortoolsettings.cpp:232
+msgid "Try all settings."
+msgstr ""
 
 #: utilities/imageeditor/printiface/printhelper.cpp:180
 msgid "Print Image"
@@ -14855,61 +14856,61 @@ msgstr ""
 msgid "Batch queue is completed..."
 msgstr ""
 
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1044
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1053
 #, kde-format
 msgid "Save Queued Image from '%1' as"
 msgstr ""
 
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1054
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1143
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1063
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1152
 msgid "Process Cancelled..."
 msgstr ""
 
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1065
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1074
 msgid "Item skipped..."
 msgstr ""
 
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1073
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1082
 #, kde-format
 msgid "Item renamed to %1..."
 msgstr ""
 
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1077
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1086
 msgid "Item overwritten..."
 msgstr ""
 
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1090
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1099
 msgid "Failed to save item..."
 msgstr ""
 
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1099
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1108
 msgid "Item processed successfully..."
 msgstr ""
 
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1126
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1135
 msgid "Failed to process item..."
 msgstr ""
 
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1239
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1248
 #, kde-format
 msgid ""
 "Album to host processed items from queue \"%1\" is not set. Please select "
 "one from Queue Settings panel."
 msgstr ""
 
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1241
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1253
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1250
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1262
 msgid "Processed items album settings"
 msgstr ""
 
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1250
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1259
 #, kde-format
 msgid ""
 "Album to host processed items from queue \"%1\" is not available or not "
 "writable. Please set another one from Queue Settings panel."
 msgstr ""
 
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1272
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1281
 #, kde-format
 msgid "Item \"%1\" from queue \"%2\": %3"
 msgstr ""
@@ -15151,18 +15152,6 @@ msgstr ""
 #: utilities/searchwindow/searchview.cpp:504
 msgid "Add Search Group"
 msgstr ""
-
-#: utilities/searchwindow/searchfolderview.cpp:68
-#, fuzzy
-msgctxt "Create new search"
-msgid "New..."
-msgstr "Baru..."
-
-#: utilities/searchwindow/searchfolderview.cpp:70
-#, fuzzy
-msgctxt "Edit selected search"
-msgid "Edit..."
-msgstr "Edit..."
 
 #: utilities/searchwindow/searchfields.cpp:88
 msgid "Search pictures located in"
@@ -15487,6 +15476,18 @@ msgstr ""
 #: utilities/searchwindow/searchfields.cpp:2505
 msgid "Portrait orientation"
 msgstr ""
+
+#: utilities/searchwindow/searchfolderview.cpp:68
+#, fuzzy
+msgctxt "Create new search"
+msgid "New..."
+msgstr "Baru..."
+
+#: utilities/searchwindow/searchfolderview.cpp:70
+#, fuzzy
+msgctxt "Edit selected search"
+msgid "Edit..."
+msgstr "Edit..."
 
 #: utilities/setup/setuplighttable.cpp:90 utilities/setup/setupeditor.cpp:136
 msgid "Interface Options"
