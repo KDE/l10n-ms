@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-19 02:58+0200\n"
+"POT-Creation-Date: 2011-10-30 02:02+0100\n"
 "PO-Revision-Date: 2006-10-05 19:47+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -875,22 +875,38 @@ msgstr "Keputusan Semak Eja"
 msgid "Change Variable To"
 msgstr "Ubah Variabel Ke"
 
-#: part/KWOdfLoader.cpp:88
-#, fuzzy
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+#: part/KWDLoader.cpp:74
+msgid "Invalid document. No mimetype specified."
+msgstr "Dokumen tak sah. Tiada jenis mime ditetapkan."
 
-#: part/KWOdfLoader.cpp:100
-#, fuzzy
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
-
-#: part/KWOdfLoader.cpp:102
-#, kde-format
+#: part/KWDLoader.cpp:78
+#, fuzzy, kde-format
+#| msgid ""
+#| "Invalid document. Expected mimetype application/x-kword or application/"
+#| "vnd.kde.kword, got %1"
 msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
+"Invalid document. Expected mimetype application/x-words or application/vnd."
+"kde.words, got %1"
 msgstr ""
+"Dokumen tak sah. Aplikasi/x-kword atau aplikasi/vnd.kde.kword jenis mime "
+"yang dijangka, dapat %1"
+
+#: part/KWDLoader.cpp:104
+#, kde-format
+msgid "Invalid document. Paper size: %1x%2"
+msgstr "Dokumen tak sah. Saiz kertas: %1x%2"
+
+#: part/KWDLoader.cpp:689
+#, fuzzy
+#| msgid "Unable to create database object"
+msgid "Unable to locate footnote text"
+msgstr "Tidak dapat mencipta objek pangkalan data"
+
+#: part/KWDLoader.cpp:715
+#, fuzzy
+#| msgid "Unable to create database object"
+msgid "Unable to locate note-text"
+msgstr "Tidak dapat mencipta objek pangkalan data"
 
 #: part/KWStatusBar.cpp:48
 msgid "Modified"
@@ -958,6 +974,23 @@ msgstr ""
 
 #: part/KWGui.cpp:73
 msgid "Tools"
+msgstr ""
+
+#: part/KWOdfLoader.cpp:88
+#, fuzzy
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+
+#: part/KWOdfLoader.cpp:100
+#, fuzzy
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+
+#: part/KWOdfLoader.cpp:102
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
 msgstr ""
 
 #: part/commands/KWFrameDeleteCommand.cpp:29
@@ -1415,6 +1448,76 @@ msgstr "Kelabu Atas dan Bawah"
 msgid "File to open"
 msgstr "Fail hendak dibuka"
 
+#: part/Words.cpp:58
+msgid "Odd Pages Header"
+msgstr "Pengepala Halaman Ganjil"
+
+#: part/Words.cpp:60
+msgid "Even Pages Header"
+msgstr "Pengepala Halaman Genap"
+
+#: part/Words.cpp:62
+msgid "Odd Pages Footer"
+msgstr "Pengaki Halaman Ganjil"
+
+#: part/Words.cpp:64
+msgid "Even Pages Footer"
+msgstr "Pengaki Halaman Genap"
+
+#: part/Words.cpp:66
+#, fuzzy
+#| msgid "Plain text"
+msgid "Main text"
+msgstr "Teks mudah"
+
+#: part/Words.cpp:68
+#, fuzzy
+#| msgid "Insert Page"
+msgid "Other text"
+msgstr "Selitkan Halaman"
+
+#: part/KWDocument.cpp:488
+#, fuzzy
+#| msgid "Copy%1-%2"
+msgid "Copy"
+msgstr "Salin%1-%2"
+
+#: part/KWDocument.cpp:533
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 1"
+msgid "Head 1"
+msgstr "Kepala 1"
+
+#: part/KWDocument.cpp:540
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 2"
+msgid "Head 2"
+msgstr "Kepala 2"
+
+#: part/KWDocument.cpp:547
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 3"
+msgid "Head 3"
+msgstr "Kepala 3"
+
+#: part/KWDocument.cpp:554
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Bullet List"
+msgid "Bullet List"
+msgstr "Senarai Bulet"
+
+#: part/KWDocument.cpp:779
+msgid "Can not find needed text component, Words will quit now"
+msgstr ""
+
+#: part/KWDocument.cpp:780
+msgid "Installation Error"
+msgstr ""
+
 #: part/KWView.cpp:252
 #, fuzzy
 #| msgid "Frame Properties"
@@ -1859,114 +1962,11 @@ msgctxt "(qtundo-format)"
 msgid "Create Linked Copy"
 msgstr "Cipta Salinan Terpaut"
 
-#: part/KWView.cpp:1369
+#: part/KWView.cpp:1370
 #, fuzzy
 #| msgid "Insert Page"
 msgid "Insert Image Options"
 msgstr "Selitkan Halaman"
-
-#: part/Words.cpp:58
-msgid "Odd Pages Header"
-msgstr "Pengepala Halaman Ganjil"
-
-#: part/Words.cpp:60
-msgid "Even Pages Header"
-msgstr "Pengepala Halaman Genap"
-
-#: part/Words.cpp:62
-msgid "Odd Pages Footer"
-msgstr "Pengaki Halaman Ganjil"
-
-#: part/Words.cpp:64
-msgid "Even Pages Footer"
-msgstr "Pengaki Halaman Genap"
-
-#: part/Words.cpp:66
-#, fuzzy
-#| msgid "Plain text"
-msgid "Main text"
-msgstr "Teks mudah"
-
-#: part/Words.cpp:68
-#, fuzzy
-#| msgid "Insert Page"
-msgid "Other text"
-msgstr "Selitkan Halaman"
-
-#: part/KWDLoader.cpp:74
-msgid "Invalid document. No mimetype specified."
-msgstr "Dokumen tak sah. Tiada jenis mime ditetapkan."
-
-#: part/KWDLoader.cpp:78
-#, fuzzy, kde-format
-#| msgid ""
-#| "Invalid document. Expected mimetype application/x-kword or application/"
-#| "vnd.kde.kword, got %1"
-msgid ""
-"Invalid document. Expected mimetype application/x-words or application/vnd."
-"kde.words, got %1"
-msgstr ""
-"Dokumen tak sah. Aplikasi/x-kword atau aplikasi/vnd.kde.kword jenis mime "
-"yang dijangka, dapat %1"
-
-#: part/KWDLoader.cpp:104
-#, kde-format
-msgid "Invalid document. Paper size: %1x%2"
-msgstr "Dokumen tak sah. Saiz kertas: %1x%2"
-
-#: part/KWDLoader.cpp:691
-#, fuzzy
-#| msgid "Unable to create database object"
-msgid "Unable to locate footnote text"
-msgstr "Tidak dapat mencipta objek pangkalan data"
-
-#: part/KWDLoader.cpp:717
-#, fuzzy
-#| msgid "Unable to create database object"
-msgid "Unable to locate note-text"
-msgstr "Tidak dapat mencipta objek pangkalan data"
-
-#: part/KWDocument.cpp:488
-#, fuzzy
-#| msgid "Copy%1-%2"
-msgid "Copy"
-msgstr "Salin%1-%2"
-
-#: part/KWDocument.cpp:533
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 1"
-msgid "Head 1"
-msgstr "Kepala 1"
-
-#: part/KWDocument.cpp:540
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 2"
-msgid "Head 2"
-msgstr "Kepala 2"
-
-#: part/KWDocument.cpp:547
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 3"
-msgid "Head 3"
-msgstr "Kepala 3"
-
-#: part/KWDocument.cpp:554
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Bullet List"
-msgid "Bullet List"
-msgstr "Senarai Bulet"
-
-#: part/KWDocument.cpp:779
-msgid "Can not find needed text component, Words will quit now"
-msgstr ""
-
-#: part/KWDocument.cpp:780
-msgid "Installation Error"
-msgstr ""
 
 #: part/KWAboutData.h:27
 #, fuzzy
