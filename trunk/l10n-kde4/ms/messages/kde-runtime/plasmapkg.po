@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasmapkg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 05:32+0200\n"
+"POT-Creation-Date: 2011-11-10 04:04+0100\n"
 "PO-Revision-Date: 2010-06-19 20:28+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -116,12 +116,20 @@ msgid "Original author"
 msgstr "Pengarang asal"
 
 #: main.cpp:184
+#, fuzzy
+#| msgctxt "Do not translate <path>"
+#| msgid "Install the package at <path>"
+msgctxt "Do not translate <path>"
+msgid "Generate a SHA1 hash for the package at <path>"
+msgstr "Pasang pakej di <path>"
+
+#: main.cpp:186
 msgid "For install or remove, operates on packages installed for all users."
 msgstr ""
 "Untuk memasang atau membuang, bertindak pada pakej yang dipasang untuk semua "
 "pengguna."
 
-#: main.cpp:190
+#: main.cpp:192
 msgctxt ""
 "theme, wallpaper, etc. are keywords, but they may be translated, as both "
 "versions are recognized by the application (if translated, should be same as "
@@ -133,30 +141,30 @@ msgstr ""
 "Jenis pakej, contoh. theme, wallpaper, plasmoid, dataengine, runner, layout-"
 "template, dan sebagainya."
 
-#: main.cpp:194
+#: main.cpp:196
 msgctxt "Do not translate <path>"
 msgid "Install the package at <path>"
 msgstr "Pasang pakej di <path>"
 
-#: main.cpp:196
+#: main.cpp:198
 msgctxt "Do not translate <path>"
 msgid "Upgrade the package at <path>"
 msgstr "Naiktaraf pakej di <path>"
 
-#: main.cpp:198
+#: main.cpp:200
 msgid "List installed packages"
 msgstr "Senaraikan pakej dipasang"
 
-#: main.cpp:199
+#: main.cpp:201
 msgid "lists all known Package types that can be installed"
 msgstr ""
 
-#: main.cpp:201
+#: main.cpp:203
 msgctxt "Do not translate <name>"
 msgid "Remove the package named <name>"
 msgstr "Buang pakej bernama <name>"
 
-#: main.cpp:203
+#: main.cpp:205
 msgid ""
 "Absolute path to the package root. If not supplied, then the standard data "
 "directories for this KDE session will be searched instead."
@@ -164,54 +172,64 @@ msgstr ""
 "Laluan multak ke dasar pakej. Jika tidak diberikan, maka direktori data "
 "piawai untuk sesi KDE ini akan dicari seterusnya."
 
-#: main.cpp:236 main.cpp:273
+#: main.cpp:218
+#, kde-format
+msgid "Failed to generate a Package hash for %1"
+msgstr ""
+
+#: main.cpp:222
+#, kde-format
+msgid "SHA1 hash for Package at %1: '%2'"
+msgstr ""
+
+#: main.cpp:253 main.cpp:290
 msgctxt "package type"
 msgid "wallpaper"
 msgstr "kertas dinding"
 
-#: main.cpp:263
+#: main.cpp:280
 msgctxt "package type"
 msgid "plasmoid"
 msgstr "plasmoid"
 
-#: main.cpp:270
+#: main.cpp:287
 msgctxt "package type"
 msgid "theme"
 msgstr "tema"
 
-#: main.cpp:276
+#: main.cpp:293
 msgctxt "package type"
 msgid "dataengine"
 msgstr "enjin data"
 
-#: main.cpp:281
+#: main.cpp:298
 msgctxt "package type"
 msgid "runner"
 msgstr "runner"
 
-#: main.cpp:286
+#: main.cpp:303
 msgctxt "package type"
 msgid "wallpaperplugin"
 msgstr "wallpaperplugin"
 
-#: main.cpp:291
+#: main.cpp:308
 msgctxt "package type"
 msgid "layout-template"
 msgstr "layout-template"
 
-#: main.cpp:300
+#: main.cpp:317
 #, kde-format
 msgid "Could not find a suitable installer for package of type %1"
 msgstr "Tidak dapat mencari pemasang bersesuaian untuk pakej jenis %1"
 
-#: main.cpp:309
+#: main.cpp:326
 #, kde-format
 msgid "Could not load installer for package of type %1. Error reported was: %2"
 msgstr ""
 "Tidak dapat memuatkan pemasang untuk pakej jenis %1. Ralat dilaporkan "
 "adalah: %2"
 
-#: main.cpp:329
+#: main.cpp:346
 msgctxt ""
 "The user entered conflicting options packageroot and global, this is the "
 "error message telling the user he can use only one"
@@ -222,32 +240,32 @@ msgstr ""
 "Packageroot dan pilihan global berkonflik antara satu sama lain, sila hanya "
 "pilih satu."
 
-#: main.cpp:354
+#: main.cpp:371
 #, kde-format
 msgid "Successfully removed %1"
 msgstr "Berjaya membuang %1"
 
-#: main.cpp:356
+#: main.cpp:373
 #, kde-format
 msgid "Removal of %1 failed."
 msgstr "Membuang %1 gagal."
 
-#: main.cpp:361
+#: main.cpp:378
 #, kde-format
 msgid "Plugin %1 is not installed."
 msgstr "Plugin %1 tidak dipasang."
 
-#: main.cpp:366
+#: main.cpp:383
 #, kde-format
 msgid "Successfully installed %1"
 msgstr "Berjaya memasang %1"
 
-#: main.cpp:368
+#: main.cpp:385
 #, kde-format
 msgid "Installation of %1 failed."
 msgstr "Pemasangan %1 gagal."
 
-#: main.cpp:374
+#: main.cpp:391
 msgctxt ""
 "No option was given, this is the error message telling the user he needs at "
 "least one, do not translate install, remove, upgrade nor list"
