@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-25 03:14+0100\n"
+"POT-Creation-Date: 2011-11-26 02:57+0100\n"
 "PO-Revision-Date: 2010-08-27 21:57+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -662,7 +662,7 @@ msgstr ""
 #: libs/imageproperties/cameraitempropertiestab.cpp:323
 #: libs/imageproperties/cameraitempropertiestab.cpp:338
 #: libs/imageproperties/cameraitempropertiestab.cpp:411
-#: libs/imageproperties/imagepropertiescolorstab.cpp:598
+#: libs/imageproperties/imagepropertiescolorstab.cpp:697
 #, fuzzy
 msgid "Yes"
 msgstr "Ya"
@@ -675,7 +675,7 @@ msgstr "Ya"
 #: libs/imageproperties/cameraitempropertiestab.cpp:319
 #: libs/imageproperties/cameraitempropertiestab.cpp:334
 #: libs/imageproperties/cameraitempropertiestab.cpp:415
-#: libs/imageproperties/imagepropertiescolorstab.cpp:598
+#: libs/imageproperties/imagepropertiescolorstab.cpp:697
 #, fuzzy
 msgid "No"
 msgstr "Tidak"
@@ -3320,12 +3320,12 @@ msgid "Invert"
 msgstr "Songsang"
 
 #: imageplugins/color/imageplugin_color.cpp:140
-#: libs/imageproperties/imagepropertiescolorstab.cpp:597
+#: libs/imageproperties/imagepropertiescolorstab.cpp:696
 msgid "8 bits"
 msgstr ""
 
 #: imageplugins/color/imageplugin_color.cpp:145
-#: libs/imageproperties/imagepropertiescolorstab.cpp:597
+#: libs/imageproperties/imagepropertiescolorstab.cpp:696
 msgid "16 bits"
 msgstr ""
 
@@ -7085,18 +7085,18 @@ msgid "Set here the yellow/blue color adjustment of the image."
 msgstr ""
 
 #: libs/dimg/filters/curves/curveswidget.cpp:185
-#: libs/dimg/filters/levels/histogramwidget.cpp:523
+#: libs/dimg/filters/levels/histogramwidget.cpp:526
 #: libs/widgets/iccprofiles/cietonguewidget.cpp:845
 msgid "Loading image..."
 msgstr ""
 
 #: libs/dimg/filters/curves/curveswidget.cpp:190
-#: libs/dimg/filters/levels/histogramwidget.cpp:528
+#: libs/dimg/filters/levels/histogramwidget.cpp:531
 msgid "Histogram calculation..."
 msgstr ""
 
 #: libs/dimg/filters/curves/curveswidget.cpp:204
-#: libs/dimg/filters/levels/histogramwidget.cpp:543
+#: libs/dimg/filters/levels/histogramwidget.cpp:546
 msgid ""
 "Histogram\n"
 "calculation\n"
@@ -8098,6 +8098,15 @@ msgstr "Pembetulan Warna"
 msgid "Lens Auto-Correction Tool"
 msgstr ""
 
+#: libs/dimg/filters/levels/levelsfilter.h:87
+msgid "Levels Adjust Tool"
+msgstr ""
+
+#: libs/dimg/filters/levels/histogrampainter.cpp:473
+#, kde-format
+msgid "x:%1"
+msgstr ""
+
 #: libs/dimg/filters/levels/histogrambox.cpp:89
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:68
 msgid "Channel:"
@@ -8128,103 +8137,94 @@ msgid ""
 "image channel. This one is re-computed at any settings changes."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:270
+#: libs/dimg/filters/levels/histogrambox.cpp:269
 msgid "<p>Select the histogram channel to display:</p>"
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:275
+#: libs/dimg/filters/levels/histogrambox.cpp:274
 msgctxt "The luminosity channel"
 msgid "Luminosity"
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:276
+#: libs/dimg/filters/levels/histogrambox.cpp:275
 msgid "<b>Luminosity</b>: display the image's luminosity values."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:278
+#: libs/dimg/filters/levels/histogrambox.cpp:277
 #, fuzzy
 msgctxt "The red channel"
 msgid "Red"
 msgstr "Merah"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:279
+#: libs/dimg/filters/levels/histogrambox.cpp:278
 msgid "<b>Red</b>: display the red image-channel values."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:281
+#: libs/dimg/filters/levels/histogrambox.cpp:280
 #, fuzzy
 msgctxt "The green channel"
 msgid "Green"
 msgstr "Hijau"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:282
+#: libs/dimg/filters/levels/histogrambox.cpp:281
 msgid "<b>Green</b>: display the green image-channel values."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:284
+#: libs/dimg/filters/levels/histogrambox.cpp:283
 #, fuzzy
 msgctxt "The blue channel"
 msgid "Blue"
 msgstr "Biru"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:285
+#: libs/dimg/filters/levels/histogrambox.cpp:284
 msgid "<b>Blue</b>: display the blue image-channel values."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:287
+#: libs/dimg/filters/levels/histogrambox.cpp:286
 #, fuzzy
 msgctxt "The colors channel"
 msgid "Colors"
 msgstr "Warna"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:288
+#: libs/dimg/filters/levels/histogrambox.cpp:287
 msgid "<b>Colors</b>: Display all color channel values at the same time."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:290
+#: libs/dimg/filters/levels/histogrambox.cpp:289
 #, fuzzy
 msgctxt "The alpha channel"
 msgid "Alpha"
 msgstr "Alfa"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:291
+#: libs/dimg/filters/levels/histogrambox.cpp:290
 msgid ""
 "<b>Alpha</b>: display the alpha image-channel values. This channel "
 "corresponds to the transparency value and is supported by some image "
 "formats, such as PNG or TIF."
 msgstr ""
 
-#: libs/dimg/filters/levels/levelsfilter.h:87
-msgid "Levels Adjust Tool"
-msgstr ""
-
-#: libs/dimg/filters/levels/histogrampainter.cpp:473
-#, kde-format
-msgid "x:%1"
-msgstr ""
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:600
+#: libs/dimg/filters/levels/histogramwidget.cpp:602
 msgid "Mean:"
 msgstr ""
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:604
+#: libs/dimg/filters/levels/histogramwidget.cpp:606
 msgid "Pixels:"
 msgstr ""
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:608
+#: libs/dimg/filters/levels/histogramwidget.cpp:610
 msgid "Std dev.:"
 msgstr ""
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:612
+#: libs/dimg/filters/levels/histogramwidget.cpp:614
 #, fuzzy
 msgid "Count:"
 msgstr "Kiraan:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:616
+#: libs/dimg/filters/levels/histogramwidget.cpp:618
 msgid "Median:"
 msgstr ""
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:620
+#: libs/dimg/filters/levels/histogramwidget.cpp:622
 msgid "Percent:"
 msgstr ""
 
@@ -9432,81 +9432,81 @@ msgstr ""
 msgid "Read metadata from each file to database"
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:161
+#: libs/imageproperties/imagepropertiescolorstab.cpp:165
 msgid "Range:"
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:168
+#: libs/imageproperties/imagepropertiescolorstab.cpp:172
 msgid "Select the minimal intensity value of the histogram selection here."
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:174
+#: libs/imageproperties/imagepropertiescolorstab.cpp:178
 msgid "Select the maximal intensity value of the histogram selection here."
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:182
+#: libs/imageproperties/imagepropertiescolorstab.cpp:186
 #, fuzzy
 msgid "Statistics"
 msgstr "Statistik"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:183
+#: libs/imageproperties/imagepropertiescolorstab.cpp:187
 msgid ""
 "Here you can see the statistical results calculated from the selected "
 "histogram part. These values are available for all channels."
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:188
+#: libs/imageproperties/imagepropertiescolorstab.cpp:192
 msgid "Pixels: "
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:191
+#: libs/imageproperties/imagepropertiescolorstab.cpp:195
 #, fuzzy
 msgid "Count: "
 msgstr "Hitung: "
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:194
+#: libs/imageproperties/imagepropertiescolorstab.cpp:198
 msgid "Mean: "
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:197
+#: libs/imageproperties/imagepropertiescolorstab.cpp:201
 msgid "Std. deviation: "
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:200
+#: libs/imageproperties/imagepropertiescolorstab.cpp:204
 msgid "Median: "
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:203
+#: libs/imageproperties/imagepropertiescolorstab.cpp:207
 msgid "Percentile: "
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:206
+#: libs/imageproperties/imagepropertiescolorstab.cpp:210
 msgid "Color depth: "
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:209
+#: libs/imageproperties/imagepropertiescolorstab.cpp:213
 msgid "Alpha Channel: "
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:212
+#: libs/imageproperties/imagepropertiescolorstab.cpp:216
 #, fuzzy
 msgid "Source: "
 msgstr "Sumber:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:246
+#: libs/imageproperties/imagepropertiescolorstab.cpp:266
 #, fuzzy
 msgid "Histogram"
 msgstr "Histogram"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:256
+#: libs/imageproperties/imagepropertiescolorstab.cpp:276
 msgid "ICC profile"
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:639
+#: libs/imageproperties/imagepropertiescolorstab.cpp:738
 msgid "Full Image"
 msgstr ""
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:639
+#: libs/imageproperties/imagepropertiescolorstab.cpp:738
 #, fuzzy
 msgid "Image Region"
 msgstr "Seting Imej"

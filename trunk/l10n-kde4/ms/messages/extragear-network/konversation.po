@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-23 03:32+0100\n"
+"POT-Creation-Date: 2011-11-26 03:32+0100\n"
 "PO-Revision-Date: 2008-02-22 22:30+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1462,10 +1462,10 @@ msgstr "Mempunyai &Heading"
 
 #. i18n: file: src/config/nicklistbehavior_configui.ui:98
 #. i18n: ectx: property (text), widget (QTreeWidget, sortOrder)
-#: src/irc/channelnick.cpp:208 src/irc/inputfilter.cpp:983
-#: src/irc/inputfilter.cpp:987 src/irc/inputfilter.cpp:2145
-#: src/irc/inputfilter.cpp:2199 src/irc/channeloptionsdialog.cpp:299
-#: src/irc/channel.cpp:1863 rc.cpp:370
+#: src/irc/channelnick.cpp:208 src/irc/channel.cpp:1839
+#: src/irc/inputfilter.cpp:983 src/irc/inputfilter.cpp:987
+#: src/irc/inputfilter.cpp:2145 src/irc/inputfilter.cpp:2199
+#: src/irc/channeloptionsdialog.cpp:299 rc.cpp:370
 #, fuzzy
 msgid "Mode"
 msgstr "M-x nxml-mode"
@@ -1475,8 +1475,8 @@ msgstr "M-x nxml-mode"
 msgid "Channel Invites"
 msgstr "Senarai Arab"
 
-#: src/irc/invitedialog.cpp:166 src/irc/channel.cpp:1086
-#: src/irc/channel.cpp:1112 src/viewer/ircview.cpp:815
+#: src/irc/invitedialog.cpp:166 src/irc/channel.cpp:1084
+#: src/irc/channel.cpp:1110 src/viewer/ircview.cpp:815
 msgid "Join"
 msgstr ""
 
@@ -1963,6 +1963,776 @@ msgstr ""
 msgid "%1CLEAR [-ALL] [channel | nickname]"
 msgstr ""
 
+#: src/irc/channel.cpp:128
+#, fuzzy
+msgid "Edit Channel Settings"
+msgstr "Ubah seting latar belakang"
+
+#: src/irc/channel.cpp:136
+msgid ""
+"<qt><p>Every channel on IRC has a topic associated with it.  This is simply "
+"a message that everybody can see.</p><p>If you are an operator, or the "
+"channel mode <em>'T'</em> has not been set, then you can change the topic by "
+"clicking the Edit Channel Properties button to the left of the topic.  You "
+"can also view the history of topics there.</p></qt>"
+msgstr ""
+
+#: src/irc/channel.cpp:175
+msgid "Maximum users allowed in channel"
+msgstr ""
+
+#: src/irc/channel.cpp:176
+msgid ""
+"<qt><p>This is the channel user limit - the maximum number of users that can "
+"be in the channel at a time.  If you are an operator, you can set this.  The "
+"channel mode <b>T</b>opic (button to left) will automatically be set if set "
+"this.</p></qt>"
+msgstr ""
+
+#: src/irc/channel.cpp:218 src/viewer/statuspanel.cpp:49
+msgid ""
+"<qt><p>This shows your current nick, and any alternatives you have set up.  "
+"If you select or type in a different nickname, then a request will be sent "
+"to the IRC server to change your nick.  If the server allows it, the new "
+"nickname will be selected.  If you type in a new nickname, you need to press "
+"'Enter' at the end.</p><p>You can edit the alternative nicknames from the "
+"<em>Identities</em> option in the <em>Settings</em> menu.</p></qt>"
+msgstr ""
+
+#: src/irc/channel.cpp:548
+msgid "Completion"
+msgstr ""
+
+#: src/irc/channel.cpp:548
+#, fuzzy, kde-format
+msgid "Possible completions: %1."
+msgstr "Pemasangan sekecil mungkin"
+
+#: src/irc/channel.cpp:884
+#, fuzzy
+msgid "Channel Password"
+msgstr "Katalaluan Tidak Betul"
+
+#: src/irc/channel.cpp:899
+#, fuzzy
+msgid "Channel User Limit"
+msgstr "Senarai Arab"
+
+#: src/irc/channel.cpp:900
+msgid "Enter the new user limit for the channel:"
+msgstr ""
+
+#: src/irc/channel.cpp:1058 src/irc/channel.cpp:1063
+#: src/irc/inputfilter.cpp:1194 src/irc/inputfilter.cpp:1212
+#: src/irc/inputfilter.cpp:1226 src/irc/inputfilter.cpp:1241
+#: src/irc/inputfilter.cpp:2040 src/irc/query.cpp:173
+msgid "Nick"
+msgstr ""
+
+#: src/irc/channel.cpp:1058
+#, kde-format
+msgid "You are now known as %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1063 src/irc/query.cpp:173
+#, kde-format
+msgid "%1 is now known as %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1085
+#, kde-format
+msgctxt "%1 is the channel and %2 is our hostmask"
+msgid "You have joined the channel %1 (%2)."
+msgstr ""
+
+#: src/irc/channel.cpp:1111
+#, kde-format
+msgctxt "%1 is the nick joining and %2 the hostmask of that nick"
+msgid "%1 has joined this channel (%2)."
+msgstr ""
+
+#: src/irc/channel.cpp:1137 src/irc/channel.cpp:1139 src/irc/channel.cpp:1160
+#: src/irc/channel.cpp:1162 src/irc/query.cpp:533 src/irc/query.cpp:540
+#: src/viewer/ircview.cpp:820
+msgid "Quit"
+msgstr ""
+
+#: src/irc/channel.cpp:1137
+msgid "You have left this server."
+msgstr ""
+
+#: src/irc/channel.cpp:1139
+#, kde-format
+msgctxt "%1 adds the reason"
+msgid "You have left this server (%1)."
+msgstr ""
+
+#: src/irc/channel.cpp:1144 src/irc/channel.cpp:1146 src/irc/channel.cpp:1168
+#: src/irc/channel.cpp:1170 src/viewer/ircview.cpp:820
+msgid "Part"
+msgstr ""
+
+#: src/irc/channel.cpp:1144
+#, fuzzy, kde-format
+msgid "You have left channel %1."
+msgstr "Jajar kiri perenggan"
+
+#: src/irc/channel.cpp:1147
+#, kde-format
+msgctxt "%1 adds the channel and %2 the reason"
+msgid "You have left channel %1 (%2)."
+msgstr ""
+
+#: src/irc/channel.cpp:1160 src/irc/query.cpp:533
+#, kde-format
+msgid "%1 has left this server."
+msgstr ""
+
+#: src/irc/channel.cpp:1163
+#, kde-format
+msgctxt "%1 adds the nick and %2 the reason"
+msgid "%1 has left this server (%2)."
+msgstr ""
+
+#: src/irc/channel.cpp:1168
+#, kde-format
+msgid "%1 has left this channel."
+msgstr ""
+
+#: src/irc/channel.cpp:1171
+#, kde-format
+msgctxt "%1 adds the nick and %2 the reason"
+msgid "%1 has left this channel (%2)."
+msgstr ""
+
+#: src/irc/channel.cpp:1219 src/irc/channel.cpp:1221 src/irc/channel.cpp:1228
+#: src/irc/channel.cpp:1233 src/irc/channel.cpp:1254 src/irc/channel.cpp:1256
+#: src/irc/channel.cpp:1263 src/irc/channel.cpp:1268
+#: src/viewer/irccontextmenus.cpp:389
+msgid "Kick"
+msgstr ""
+
+#: src/irc/channel.cpp:1219
+#, kde-format
+msgid "You have kicked yourself from channel %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1222
+#, kde-format
+msgctxt "%1 adds the channel and %2 the reason"
+msgid "You have kicked yourself from channel %1 (%2)."
+msgstr ""
+
+#: src/irc/channel.cpp:1229
+#, kde-format
+msgctxt "%1 adds the channel, %2 adds the kicker"
+msgid "You have been kicked from channel %1 by %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1234
+#, kde-format
+msgctxt "%1 adds the channel, %2 the kicker and %3 the reason"
+msgid "You have been kicked from channel %1 by %2 (%3)."
+msgstr ""
+
+#: src/irc/channel.cpp:1254
+#, kde-format
+msgid "You have kicked %1 from the channel."
+msgstr ""
+
+#: src/irc/channel.cpp:1257
+#, kde-format
+msgctxt "%1 adds the kicked nick and %2 the reason"
+msgid "You have kicked %1 from the channel (%2)."
+msgstr ""
+
+#: src/irc/channel.cpp:1264
+#, kde-format
+msgctxt "%1 adds the kicked nick, %2 adds the kicker"
+msgid "%1 has been kicked from the channel by %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1269
+#, kde-format
+msgctxt "%1 adds the kicked nick, %2 the kicker and %3 the reason"
+msgid "%1 has been kicked from the channel by %2 (%3)."
+msgstr ""
+
+#: src/irc/channel.cpp:1336
+#, kde-format
+msgid "%1 nick"
+msgid_plural "%1 nicks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/irc/channel.cpp:1337
+#, fuzzy, kde-format
+msgid " (%1 op)"
+msgid_plural " (%1 ops)"
+msgstr[0] "&Buka Salinan"
+msgstr[1] ""
+
+#: src/irc/channel.cpp:1344 src/irc/channel.cpp:1363 src/irc/channel.cpp:1367
+#: src/irc/inputfilter.cpp:1109 src/irc/inputfilter.cpp:1125
+#: src/irc/inputfilter.cpp:1133
+msgid "Topic"
+msgstr ""
+
+#: src/irc/channel.cpp:1344
+#, fuzzy, kde-format
+msgid "The channel topic is \"%1\"."
+msgstr "Pilihan Semasa adalah Kosong"
+
+#: src/irc/channel.cpp:1363
+#, kde-format
+msgid "You set the channel topic to \"%1\"."
+msgstr ""
+
+#: src/irc/channel.cpp:1367
+#, kde-format
+msgid "%1 sets the channel topic to \"%2\"."
+msgstr ""
+
+#: src/irc/channel.cpp:1448
+#, fuzzy, kde-format
+msgid "You set a quiet on %1."
+msgstr "(tidak dijumpai pada sistem ini)"
+
+#: src/irc/channel.cpp:1449
+#, fuzzy, kde-format
+msgid "%1 sets a quiet on %2."
+msgstr "dikemaskini pada %(date)s"
+
+#: src/irc/channel.cpp:1453
+#, fuzzy, kde-format
+msgid "You remove the quiet on %1."
+msgstr "Had saiz log:"
+
+#: src/irc/channel.cpp:1454
+#, fuzzy, kde-format
+msgid "%1 removes the quiet on %2."
+msgstr "dikemaskini pada %(date)s"
+
+#: src/irc/channel.cpp:1463
+msgid "You give channel owner privileges to yourself."
+msgstr ""
+
+#: src/irc/channel.cpp:1464
+#, kde-format
+msgid "You give channel owner privileges to %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1468
+#, kde-format
+msgid "%1 gives channel owner privileges to you."
+msgstr ""
+
+#: src/irc/channel.cpp:1469
+#, kde-format
+msgid "%1 gives channel owner privileges to %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1476
+msgid "You take channel owner privileges from yourself."
+msgstr ""
+
+#: src/irc/channel.cpp:1477
+#, kde-format
+msgid "You take channel owner privileges from %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1481
+#, kde-format
+msgid "%1 takes channel owner privileges from you."
+msgstr ""
+
+#: src/irc/channel.cpp:1482
+#, kde-format
+msgid "%1 takes channel owner privileges from %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1498
+msgid "You give channel admin privileges to yourself."
+msgstr ""
+
+#: src/irc/channel.cpp:1499
+#, kde-format
+msgid "You give channel admin privileges to %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1503
+#, kde-format
+msgid "%1 gives channel admin privileges to you."
+msgstr ""
+
+#: src/irc/channel.cpp:1504
+#, kde-format
+msgid "%1 gives channel admin privileges to %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1511
+msgid "You take channel admin privileges from yourself."
+msgstr ""
+
+#: src/irc/channel.cpp:1512
+#, kde-format
+msgid "You take channel admin privileges from %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1516
+#, kde-format
+msgid "%1 takes channel admin privileges from you."
+msgstr ""
+
+#: src/irc/channel.cpp:1517
+#, kde-format
+msgid "%1 takes channel admin privileges from %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1532
+msgid "You give channel operator privileges to yourself."
+msgstr ""
+
+#: src/irc/channel.cpp:1533
+#, kde-format
+msgid "You give channel operator privileges to %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1537
+#, kde-format
+msgid "%1 gives channel operator privileges to you."
+msgstr ""
+
+#: src/irc/channel.cpp:1538
+#, kde-format
+msgid "%1 gives channel operator privileges to %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1545
+msgid "You take channel operator privileges from yourself."
+msgstr ""
+
+#: src/irc/channel.cpp:1546
+#, kde-format
+msgid "You take channel operator privileges from %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1550
+#, kde-format
+msgid "%1 takes channel operator privileges from you."
+msgstr ""
+
+#: src/irc/channel.cpp:1551
+#, kde-format
+msgid "%1 takes channel operator privileges from %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1566
+msgid "You give channel halfop privileges to yourself."
+msgstr ""
+
+#: src/irc/channel.cpp:1567
+#, kde-format
+msgid "You give channel halfop privileges to %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1571
+#, kde-format
+msgid "%1 gives channel halfop privileges to you."
+msgstr ""
+
+#: src/irc/channel.cpp:1572
+#, kde-format
+msgid "%1 gives channel halfop privileges to %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1579
+msgid "You take channel halfop privileges from yourself."
+msgstr ""
+
+#: src/irc/channel.cpp:1580
+#, kde-format
+msgid "You take channel halfop privileges from %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1584
+#, kde-format
+msgid "%1 takes channel halfop privileges from you."
+msgstr ""
+
+#: src/irc/channel.cpp:1585
+#, kde-format
+msgid "%1 takes channel halfop privileges from %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1602
+msgid "You give yourself permission to talk."
+msgstr ""
+
+#: src/irc/channel.cpp:1603
+#, fuzzy, kde-format
+msgid "You give %1 permission to talk."
+msgstr "Bercakap dengan orang di Internet"
+
+#: src/irc/channel.cpp:1607
+#, kde-format
+msgid "%1 gives you permission to talk."
+msgstr ""
+
+#: src/irc/channel.cpp:1608
+#, fuzzy, kde-format
+msgid "%1 gives %2 permission to talk."
+msgstr "Bercakap dengan orang di Internet"
+
+#: src/irc/channel.cpp:1615
+msgid "You take the permission to talk from yourself."
+msgstr ""
+
+#: src/irc/channel.cpp:1616
+#, kde-format
+msgid "You take the permission to talk from %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1620
+#, kde-format
+msgid "%1 takes the permission to talk from you."
+msgstr ""
+
+#: src/irc/channel.cpp:1621
+#, kde-format
+msgid "%1 takes the permission to talk from %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1633
+msgid "You set the channel mode to 'no colors allowed'."
+msgstr ""
+
+#: src/irc/channel.cpp:1634
+#, kde-format
+msgid "%1 sets the channel mode to 'no colors allowed'."
+msgstr ""
+
+#: src/irc/channel.cpp:1638
+msgid "You set the channel mode to 'allow color codes'."
+msgstr ""
+
+#: src/irc/channel.cpp:1639
+#, kde-format
+msgid "%1 sets the channel mode to 'allow color codes'."
+msgstr ""
+
+#: src/irc/channel.cpp:1646
+msgid "You set the channel mode to 'invite only'."
+msgstr ""
+
+#: src/irc/channel.cpp:1647
+#, kde-format
+msgid "%1 sets the channel mode to 'invite only'."
+msgstr ""
+
+#: src/irc/channel.cpp:1651
+msgid "You remove the 'invite only' mode from the channel."
+msgstr ""
+
+#: src/irc/channel.cpp:1652
+#, kde-format
+msgid "%1 removes the 'invite only' mode from the channel."
+msgstr ""
+
+#: src/irc/channel.cpp:1660
+msgid "You set the channel mode to 'moderated'."
+msgstr ""
+
+#: src/irc/channel.cpp:1661
+#, kde-format
+msgid "%1 sets the channel mode to 'moderated'."
+msgstr ""
+
+#: src/irc/channel.cpp:1665
+msgid "You set the channel mode to 'unmoderated'."
+msgstr ""
+
+#: src/irc/channel.cpp:1666
+#, kde-format
+msgid "%1 sets the channel mode to 'unmoderated'."
+msgstr ""
+
+#: src/irc/channel.cpp:1674
+msgid "You set the channel mode to 'no messages from outside'."
+msgstr ""
+
+#: src/irc/channel.cpp:1675
+#, kde-format
+msgid "%1 sets the channel mode to 'no messages from outside'."
+msgstr ""
+
+#: src/irc/channel.cpp:1679
+msgid "You set the channel mode to 'allow messages from outside'."
+msgstr ""
+
+#: src/irc/channel.cpp:1680
+#, kde-format
+msgid "%1 sets the channel mode to 'allow messages from outside'."
+msgstr ""
+
+#: src/irc/channel.cpp:1688
+msgid "You set the channel mode to 'private'."
+msgstr ""
+
+#: src/irc/channel.cpp:1689
+#, kde-format
+msgid "%1 sets the channel mode to 'private'."
+msgstr ""
+
+#: src/irc/channel.cpp:1693
+msgid "You set the channel mode to 'public'."
+msgstr ""
+
+#: src/irc/channel.cpp:1694
+#, kde-format
+msgid "%1 sets the channel mode to 'public'."
+msgstr ""
+
+#: src/irc/channel.cpp:1703
+msgid "You set the channel mode to 'secret'."
+msgstr ""
+
+#: src/irc/channel.cpp:1704
+#, kde-format
+msgid "%1 sets the channel mode to 'secret'."
+msgstr ""
+
+#: src/irc/channel.cpp:1708
+msgid "You set the channel mode to 'visible'."
+msgstr ""
+
+#: src/irc/channel.cpp:1709
+#, kde-format
+msgid "%1 sets the channel mode to 'visible'."
+msgstr ""
+
+#: src/irc/channel.cpp:1720
+msgid "You switch on 'topic protection'."
+msgstr ""
+
+#: src/irc/channel.cpp:1721
+#, kde-format
+msgid "%1 switches on 'topic protection'."
+msgstr ""
+
+#: src/irc/channel.cpp:1725
+msgid "You switch off 'topic protection'."
+msgstr ""
+
+#: src/irc/channel.cpp:1726
+#, kde-format
+msgid "%1 switches off 'topic protection'."
+msgstr ""
+
+#: src/irc/channel.cpp:1734
+#, fuzzy, kde-format
+msgid "You set the channel key to '%1'."
+msgstr "Anda telah mengubah mod arah."
+
+#: src/irc/channel.cpp:1735
+#, fuzzy, kde-format
+msgid "%1 sets the channel key to '%2'."
+msgstr "Anda telah mengubah mod arah."
+
+#: src/irc/channel.cpp:1739
+#, fuzzy
+msgid "You remove the channel key."
+msgstr "Had saiz log:"
+
+#: src/irc/channel.cpp:1740
+#, fuzzy, kde-format
+msgid "%1 removes the channel key."
+msgstr "Had saiz log:"
+
+#: src/irc/channel.cpp:1748
+#, fuzzy, kde-format
+msgid "You set the channel limit to 1 nick."
+msgid_plural "You set the channel limit to %1 nicks."
+msgstr[0] "Anda telah mengubah mod arah."
+msgstr[1] "Anda telah mengubah mod arah."
+
+#: src/irc/channel.cpp:1749
+#, fuzzy, kde-format
+msgid "%2 sets the channel limit to 1 nick."
+msgid_plural "%2 sets the channel limit to %1 nicks."
+msgstr[0] "Had saiz log:"
+msgstr[1] "Had saiz log:"
+
+#: src/irc/channel.cpp:1753
+msgid "You remove the channel limit."
+msgstr ""
+
+#: src/irc/channel.cpp:1754
+#, fuzzy, kde-format
+msgid "%1 removes the channel limit."
+msgstr "Had saiz log:"
+
+#: src/irc/channel.cpp:1764
+#, kde-format
+msgid "You set a ban on %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1765
+#, fuzzy, kde-format
+msgid "%1 sets a ban on %2."
+msgstr "dikemaskini pada %(date)s"
+
+#: src/irc/channel.cpp:1769
+#, kde-format
+msgid "You remove the ban on %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1770
+#, fuzzy, kde-format
+msgid "%1 removes the ban on %2."
+msgstr "dikemaskini pada %(date)s"
+
+#: src/irc/channel.cpp:1777
+#, kde-format
+msgid "You set a ban exception on %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1778
+#, kde-format
+msgid "%1 sets a ban exception on %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1782
+#, kde-format
+msgid "You remove the ban exception on %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1783
+#, kde-format
+msgid "%1 removes the ban exception on %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1790
+#, kde-format
+msgid "You set invitation mask %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1791
+#, kde-format
+msgid "%1 sets invitation mask %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1795
+#, kde-format
+msgid "You remove the invitation mask %1."
+msgstr ""
+
+#: src/irc/channel.cpp:1796
+#, kde-format
+msgid "%1 removes the invitation mask %2."
+msgstr ""
+
+#: src/irc/channel.cpp:1804
+#, fuzzy, kde-format
+msgid "You set the channel mode '%1'."
+msgstr "Anda telah mengubah mod arah."
+
+#: src/irc/channel.cpp:1805
+#, fuzzy, kde-format
+msgid "%1 sets the channel mode '%2'."
+msgstr "Anda telah mengubah mod arah."
+
+#: src/irc/channel.cpp:1809
+#, fuzzy, kde-format
+msgid "You set channel mode +%1"
+msgstr "Anda telah mengubah mod arah."
+
+#: src/irc/channel.cpp:1810
+#, fuzzy, kde-format
+msgid "%1 sets channel mode +%2"
+msgstr "Anda telah mengubah mod arah."
+
+#: src/irc/channel.cpp:1817
+#, fuzzy, kde-format
+msgid "You remove the channel mode '%1'."
+msgstr "Had saiz log:"
+
+#: src/irc/channel.cpp:1818
+#, fuzzy, kde-format
+msgid "%1 removes the channel mode '%2'."
+msgstr "Had saiz log:"
+
+#: src/irc/channel.cpp:1822
+#, fuzzy, kde-format
+msgid "You set channel mode -%1"
+msgstr "Anda telah mengubah mod arah."
+
+#: src/irc/channel.cpp:1823
+#, fuzzy, kde-format
+msgid "%1 sets channel mode -%2"
+msgstr "Anda telah mengubah mod arah."
+
+#: src/irc/channel.cpp:2207
+msgid "You have to be an operator to change this."
+msgstr ""
+
+#: src/irc/channel.cpp:2209
+#, kde-format
+msgid "Topic can be changed by channel operator only.  %1"
+msgstr ""
+
+#: src/irc/channel.cpp:2210
+#, kde-format
+msgid "No messages to channel from clients on the outside.  %1"
+msgstr ""
+
+#: src/irc/channel.cpp:2211
+#, kde-format
+msgid "Secret channel.  %1"
+msgstr ""
+
+#: src/irc/channel.cpp:2212
+#, fuzzy, kde-format
+msgid "Invite only channel.  %1"
+msgstr "Benarkan memformat menggunakan gaya sahaja"
+
+#: src/irc/channel.cpp:2213
+#, kde-format
+msgid "Private channel.  %1"
+msgstr ""
+
+#: src/irc/channel.cpp:2214
+#, kde-format
+msgid "Moderated channel.  %1"
+msgstr ""
+
+#: src/irc/channel.cpp:2215
+msgid "Protect channel with a password."
+msgstr ""
+
+#: src/irc/channel.cpp:2216
+msgid "Set user limit to channel."
+msgstr ""
+
+#: src/irc/channel.cpp:2339
+#, fuzzy, kde-format
+msgid "Do you want to leave %1?"
+msgstr "Adakah anda pasti untuk menggantung ke cakera?"
+
+#: src/irc/channel.cpp:2340
+msgid "Leave Channel"
+msgstr ""
+
+#: src/irc/channel.cpp:2341
+msgid "Leave"
+msgstr ""
+
+#: src/irc/channel.cpp:2493 src/irc/query.cpp:480
+#: src/viewer/statuspanel.cpp:322
+#, fuzzy, kde-format
+msgid "Identity Default ( %1 )"
+msgstr "Bahasa default:"
+
 #: src/irc/outputfilterresolvejob.cpp:83 src/irc/inputfilter.cpp:1430
 #, fuzzy
 msgid "DNS"
@@ -2167,12 +2937,6 @@ msgstr ""
 msgid "The channel %1 has no topic set."
 msgstr ""
 
-#: src/irc/inputfilter.cpp:1109 src/irc/inputfilter.cpp:1125
-#: src/irc/inputfilter.cpp:1133 src/irc/channel.cpp:1354
-#: src/irc/channel.cpp:1373 src/irc/channel.cpp:1377
-msgid "Topic"
-msgstr ""
-
 #: src/irc/inputfilter.cpp:1109
 #, kde-format
 msgid "The channel topic for %1 is: \"%2\""
@@ -2207,13 +2971,6 @@ msgstr "(tiada cadangan ejaan)"
 #, fuzzy, kde-format
 msgid "%1: No such channel."
 msgstr "(tiada cadangan ejaan)"
-
-#: src/irc/inputfilter.cpp:1194 src/irc/inputfilter.cpp:1212
-#: src/irc/inputfilter.cpp:1226 src/irc/inputfilter.cpp:1241
-#: src/irc/inputfilter.cpp:2040 src/irc/query.cpp:173 src/irc/channel.cpp:1060
-#: src/irc/channel.cpp:1065
-msgid "Nick"
-msgstr ""
 
 #: src/irc/inputfilter.cpp:1194
 msgid "Nickname already in use, try a different one."
@@ -2281,9 +3038,10 @@ msgstr "Sunting Footer pada halaman semasa"
 
 #. i18n: file: src/identitydialog.ui:250
 #. i18n: ectx: attribute (title), widget (QWidget, awayWidget)
-#: src/irc/inputfilter.cpp:1371 src/irc/nicksonline.cpp:247
-#: src/irc/server.cpp:3785 src/irc/server.cpp:3787 src/irc/server.cpp:3812
-#: src/irc/server.cpp:3821 src/linkaddressbook/addressbook.cpp:109 rc.cpp:1559
+#: src/irc/inputfilter.cpp:1371 src/irc/server.cpp:3785
+#: src/irc/server.cpp:3787 src/irc/server.cpp:3812 src/irc/server.cpp:3821
+#: src/irc/nicksonline.cpp:247 src/linkaddressbook/addressbook.cpp:109
+#: rc.cpp:1559
 msgid "Away"
 msgstr ""
 
@@ -2578,6 +3336,302 @@ msgstr "Anda telah mengubah mod arah."
 #, fuzzy, kde-format
 msgid "%1 sets mode: %2"
 msgstr "M-x nxml-mode"
+
+#: src/irc/server.cpp:399 src/irc/server.cpp:409
+msgid "Warning"
+msgstr ""
+
+#: src/irc/server.cpp:456
+#, fuzzy, kde-format
+msgid "Looking for server %1 (port <numid>%2</numid>)..."
+msgstr "Pelayan Nama DNS"
+
+#: src/irc/server.cpp:620
+#, fuzzy
+msgid "Server found, connecting..."
+msgstr "Fail %s tidak dijumpai"
+
+#: src/irc/server.cpp:631
+#, fuzzy
+msgid "Connected; logging in..."
+msgstr "&Dalam pelayar web"
+
+#: src/irc/server.cpp:690 src/irc/server.cpp:787
+#, fuzzy
+msgid "SSL Connection Error"
+msgstr "Ralat mengira nilai!"
+
+#: src/irc/server.cpp:691
+#, kde-format
+msgid ""
+"Connection to server %1 (port <numid>%2</numid>) lost while waiting for user "
+"response to an SSL error. Will automatically reconnect if error is ignored."
+msgstr ""
+
+#: src/irc/server.cpp:711
+#, fuzzy, kde-format
+msgid "Connection to server %1 (port <numid>%2</numid>) lost: %3."
+msgstr "Gagal untuk mencari seksyen: %s"
+
+#: src/irc/server.cpp:748
+#, fuzzy, kde-format
+msgid ""
+"The SSL certificate for the server %1 (port <numid>%2</numid>) failed the "
+"authenticity check."
+msgstr "Gagal untuk mencari seksyen: %s"
+
+#: src/irc/server.cpp:752
+#, fuzzy
+msgid "SSL Connection Warning"
+msgstr "Ralat mengira nilai!"
+
+#: src/irc/server.cpp:782
+#, kde-format
+msgid ""
+"Could not connect to %1 (port <numid>%2</numid>) using SSL encryption. "
+"Either the server does not support SSL (did you use the correct port?) or "
+"you rejected the certificate. %3"
+msgstr ""
+
+#: src/irc/server.cpp:897
+msgid "Delayed connect aborted."
+msgstr ""
+
+#: src/irc/server.cpp:927
+#, fuzzy, kde-format
+msgid "Disconnected from %1 (port <numid>%2</numid>)."
+msgstr "Pelayan Nama DNS"
+
+#: src/irc/server.cpp:1099
+#, kde-format
+msgid ""
+"No nicknames from the \"%1\" identity were accepted by the connection "
+"\"%2\".\n"
+"Please enter a new one or press Cancel to disconnect:"
+msgstr ""
+
+#: src/irc/server.cpp:1100
+#, fuzzy
+msgid "Nickname error"
+msgstr "Ralat KMail"
+
+#: src/irc/server.cpp:1563 src/irc/server.cpp:3535 src/irc/server.cpp:3540
+#: src/application.cpp:357
+msgid "D-Bus"
+msgstr ""
+
+#: src/irc/server.cpp:1909
+#, fuzzy, kde-format
+msgid "Select File(s) to Send to %1"
+msgstr "Hantar emel ke senarai"
+
+#: src/irc/server.cpp:2082
+#, kde-format
+msgctxt "%1=nickname"
+msgid "Received invalid DCC SEND request from %1."
+msgstr ""
+
+#: src/irc/server.cpp:2117 src/irc/server.cpp:2247 src/irc/server.cpp:2259
+#: src/irc/server.cpp:2408 src/irc/server.cpp:2464 src/irc/server.cpp:2573
+#, fuzzy
+msgid "unknown size"
+msgstr "% dari saiz normal"
+
+#: src/irc/server.cpp:2114
+#, fuzzy, kde-format
+msgid "%1 offers to send you \"%2\" (%3)..."
+msgstr "Hantar emel ke senarai"
+
+#: src/irc/server.cpp:2153
+#, kde-format
+msgctxt "%1=nickname"
+msgid "Received invalid DCC CHAT request from %1."
+msgstr ""
+
+#: src/irc/server.cpp:2244
+#, kde-format
+msgid "Asking %1 to accept upload of \"%2\" (%3)..."
+msgstr ""
+
+#: src/irc/server.cpp:2256
+#, kde-format
+msgid "Asking %1 to accept passive upload of \"%2\" (%3)..."
+msgstr ""
+
+#: src/irc/server.cpp:2268
+#, kde-format
+msgctxt "%1=name, %2=dcc extension, chat or wboard for example"
+msgid "Asking %1 to accept %2..."
+msgstr ""
+
+#: src/irc/server.cpp:2327
+#, kde-format
+msgctxt "%1 = nickname"
+msgid "Received invalid passive DCC chat acceptance message from %1."
+msgstr ""
+
+#: src/irc/server.cpp:2363
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname"
+msgid ""
+"Received invalid passive DCC send acceptance message for \"%1\" from %2."
+msgstr ""
+
+#: src/irc/server.cpp:2404
+#, kde-format
+msgctxt ""
+"%1 = file name, %2 = nickname of sender, %3 = percentage of file size, %4 = "
+"file size"
+msgid "Resuming download of \"%1\" from %2 starting at %3% of %4..."
+msgstr ""
+
+#: src/irc/server.cpp:2414
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname"
+msgid "Received invalid resume acceptance message for \"%1\" from %2."
+msgstr ""
+
+#: src/irc/server.cpp:2460
+#, kde-format
+msgctxt ""
+"%1 = file name, %2 = nickname of recipient, %3 = percentage of file size, %4 "
+"= file size"
+msgid "Resuming upload of \"%1\" to %2 starting at %3% of %4..."
+msgstr ""
+
+#: src/irc/server.cpp:2482
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname"
+msgid "Received invalid resume request for \"%1\" from %2."
+msgstr ""
+
+#: src/irc/server.cpp:2501
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname"
+msgid "Received invalid reject request for \"%1\" from %2."
+msgstr ""
+
+#: src/irc/server.cpp:2517
+#, kde-format
+msgctxt "%1 = nickname"
+msgid "Received invalid reject request from %1."
+msgstr ""
+
+#: src/irc/server.cpp:2530
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname of sender"
+msgid "Download of \"%1\" from %2 finished."
+msgstr ""
+
+#: src/irc/server.cpp:2535
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname of sender"
+msgid "Download of \"%1\" from %2 failed. Reason: %3."
+msgstr ""
+
+#: src/irc/server.cpp:2547
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname of recipient"
+msgid "Upload of \"%1\" to %2 finished."
+msgstr ""
+
+#: src/irc/server.cpp:2550
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname of recipient"
+msgid "Upload of \"%1\" to %2 failed. Reason: %3."
+msgstr ""
+
+#: src/irc/server.cpp:2564
+#, kde-format
+msgctxt "%1 = file name, %2 nickname of recipient"
+msgid "Sending \"%1\" to %2..."
+msgstr ""
+
+#: src/irc/server.cpp:2571
+#, kde-format
+msgctxt "%1 = file name, %2 = file size, %3 = nickname of sender"
+msgid "Downloading \"%1\" (%2) from %3..."
+msgstr ""
+
+#: src/irc/server.cpp:2881 src/notificationhandler.cpp:307
+#, fuzzy, kde-format
+msgid "%1 is online (%2)."
+msgstr "Kamus Talian"
+
+#: src/irc/server.cpp:2898 src/notificationhandler.cpp:321
+#, kde-format
+msgid "%1 went offline (%2)."
+msgstr ""
+
+#: src/irc/server.cpp:3535
+#, kde-format
+msgid "Error: Could not find script \"%1\"."
+msgstr ""
+
+#: src/irc/server.cpp:3540
+#, kde-format
+msgid "Error: Could not execute script \"%1\". Check file permissions."
+msgstr ""
+
+#: src/irc/server.cpp:3754
+msgid "Gone away for now"
+msgstr ""
+
+#: src/irc/server.cpp:3785
+#, kde-format
+msgid "You are now marked as being away (reason: %1)."
+msgstr ""
+
+#: src/irc/server.cpp:3787
+msgid "You are now marked as being away."
+msgstr ""
+
+#: src/irc/server.cpp:3812
+msgid "You are no longer marked as being away."
+msgstr ""
+
+#: src/irc/server.cpp:3821
+msgid "You are not marked as being away."
+msgstr ""
+
+#: src/irc/server.cpp:3972
+#, kde-format
+msgid "Failed to initiate key exchange with %1."
+msgstr ""
+
+#: src/irc/server.cpp:3984
+#, kde-format
+msgid "Unable to perform key exchange with %1."
+msgstr ""
+
+#: src/irc/server.cpp:4008
+#, kde-format
+msgid "Failed to parse the DH1080_INIT of %1. Key exchange failed."
+msgstr ""
+
+#: src/irc/server.cpp:4014
+#, kde-format
+msgid ""
+"Your key is set and your messages will now be encrypted, sending "
+"DH1080_FINISH to %1."
+msgstr ""
+
+#: src/irc/server.cpp:4031
+#, kde-format
+msgid "Unable to complete key exchange with %1."
+msgstr ""
+
+#: src/irc/server.cpp:4043
+#, kde-format
+msgid ""
+"Successfully parsed DH1080_FINISH sent by %1. Your key is set and your "
+"messages will now be encrypted."
+msgstr ""
+
+#: src/irc/server.cpp:4047
+#, kde-format
+msgid "Failed to parse DH1080_FINISH sent by %1. Key exchange failed."
+msgstr ""
 
 #: src/irc/nicklistview.cpp:136
 msgid ""
@@ -2952,17 +4006,6 @@ msgid ""
 "is.</p></qt>"
 msgstr ""
 
-#: src/irc/query.cpp:173 src/irc/channel.cpp:1065
-#, kde-format
-msgid "%1 is now known as %2."
-msgstr ""
-
-#: src/irc/query.cpp:480 src/irc/channel.cpp:2510
-#: src/viewer/statuspanel.cpp:322
-#, fuzzy, kde-format
-msgid "Identity Default ( %1 )"
-msgstr "Bahasa default:"
-
 #: src/irc/query.cpp:490
 #, kde-format
 msgid "Do you want to close your query with %1?"
@@ -2972,17 +4015,6 @@ msgstr ""
 #, fuzzy
 msgid "Close Query"
 msgstr "Tutup dokumen"
-
-#: src/irc/query.cpp:533 src/irc/query.cpp:540 src/irc/channel.cpp:1139
-#: src/irc/channel.cpp:1141 src/irc/channel.cpp:1162 src/irc/channel.cpp:1164
-#: src/viewer/ircview.cpp:820
-msgid "Quit"
-msgstr ""
-
-#: src/irc/query.cpp:533 src/irc/channel.cpp:1162
-#, kde-format
-msgid "%1 has left this server."
-msgstr ""
 
 #: src/irc/query.cpp:540
 #, kde-format
@@ -3091,1037 +4123,6 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Do you really want to delete %1?"
 msgstr "Adakah anda pasti untuk menggantung ke cakera?"
-
-#: src/irc/channel.cpp:130
-#, fuzzy
-msgid "Edit Channel Settings"
-msgstr "Ubah seting latar belakang"
-
-#: src/irc/channel.cpp:138
-msgid ""
-"<qt><p>Every channel on IRC has a topic associated with it.  This is simply "
-"a message that everybody can see.</p><p>If you are an operator, or the "
-"channel mode <em>'T'</em> has not been set, then you can change the topic by "
-"clicking the Edit Channel Properties button to the left of the topic.  You "
-"can also view the history of topics there.</p></qt>"
-msgstr ""
-
-#: src/irc/channel.cpp:177
-msgid "Maximum users allowed in channel"
-msgstr ""
-
-#: src/irc/channel.cpp:178
-msgid ""
-"<qt><p>This is the channel user limit - the maximum number of users that can "
-"be in the channel at a time.  If you are an operator, you can set this.  The "
-"channel mode <b>T</b>opic (button to left) will automatically be set if set "
-"this.</p></qt>"
-msgstr ""
-
-#: src/irc/channel.cpp:220 src/viewer/statuspanel.cpp:49
-msgid ""
-"<qt><p>This shows your current nick, and any alternatives you have set up.  "
-"If you select or type in a different nickname, then a request will be sent "
-"to the IRC server to change your nick.  If the server allows it, the new "
-"nickname will be selected.  If you type in a new nickname, you need to press "
-"'Enter' at the end.</p><p>You can edit the alternative nicknames from the "
-"<em>Identities</em> option in the <em>Settings</em> menu.</p></qt>"
-msgstr ""
-
-#: src/irc/channel.cpp:550
-msgid "Completion"
-msgstr ""
-
-#: src/irc/channel.cpp:550
-#, fuzzy, kde-format
-msgid "Possible completions: %1."
-msgstr "Pemasangan sekecil mungkin"
-
-#: src/irc/channel.cpp:886
-#, fuzzy
-msgid "Channel Password"
-msgstr "Katalaluan Tidak Betul"
-
-#: src/irc/channel.cpp:901
-#, fuzzy
-msgid "Channel User Limit"
-msgstr "Senarai Arab"
-
-#: src/irc/channel.cpp:902
-msgid "Enter the new user limit for the channel:"
-msgstr ""
-
-#: src/irc/channel.cpp:1060
-#, kde-format
-msgid "You are now known as %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1087
-#, kde-format
-msgctxt "%1 is the channel and %2 is our hostmask"
-msgid "You have joined the channel %1 (%2)."
-msgstr ""
-
-#: src/irc/channel.cpp:1113
-#, kde-format
-msgctxt "%1 is the nick joining and %2 the hostmask of that nick"
-msgid "%1 has joined this channel (%2)."
-msgstr ""
-
-#: src/irc/channel.cpp:1139
-msgid "You have left this server."
-msgstr ""
-
-#: src/irc/channel.cpp:1141
-#, kde-format
-msgctxt "%1 adds the reason"
-msgid "You have left this server (%1)."
-msgstr ""
-
-#: src/irc/channel.cpp:1146 src/irc/channel.cpp:1148 src/irc/channel.cpp:1170
-#: src/irc/channel.cpp:1172 src/viewer/ircview.cpp:820
-msgid "Part"
-msgstr ""
-
-#: src/irc/channel.cpp:1146
-#, fuzzy, kde-format
-msgid "You have left channel %1."
-msgstr "Jajar kiri perenggan"
-
-#: src/irc/channel.cpp:1149
-#, kde-format
-msgctxt "%1 adds the channel and %2 the reason"
-msgid "You have left channel %1 (%2)."
-msgstr ""
-
-#: src/irc/channel.cpp:1165
-#, kde-format
-msgctxt "%1 adds the nick and %2 the reason"
-msgid "%1 has left this server (%2)."
-msgstr ""
-
-#: src/irc/channel.cpp:1170
-#, kde-format
-msgid "%1 has left this channel."
-msgstr ""
-
-#: src/irc/channel.cpp:1173
-#, kde-format
-msgctxt "%1 adds the nick and %2 the reason"
-msgid "%1 has left this channel (%2)."
-msgstr ""
-
-#: src/irc/channel.cpp:1229 src/irc/channel.cpp:1231 src/irc/channel.cpp:1238
-#: src/irc/channel.cpp:1243 src/irc/channel.cpp:1264 src/irc/channel.cpp:1266
-#: src/irc/channel.cpp:1273 src/irc/channel.cpp:1278
-#: src/viewer/irccontextmenus.cpp:389
-msgid "Kick"
-msgstr ""
-
-#: src/irc/channel.cpp:1229
-#, kde-format
-msgid "You have kicked yourself from channel %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1232
-#, kde-format
-msgctxt "%1 adds the channel and %2 the reason"
-msgid "You have kicked yourself from channel %1 (%2)."
-msgstr ""
-
-#: src/irc/channel.cpp:1239
-#, kde-format
-msgctxt "%1 adds the channel, %2 adds the kicker"
-msgid "You have been kicked from channel %1 by %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1244
-#, kde-format
-msgctxt "%1 adds the channel, %2 the kicker and %3 the reason"
-msgid "You have been kicked from channel %1 by %2 (%3)."
-msgstr ""
-
-#: src/irc/channel.cpp:1264
-#, kde-format
-msgid "You have kicked %1 from the channel."
-msgstr ""
-
-#: src/irc/channel.cpp:1267
-#, kde-format
-msgctxt "%1 adds the kicked nick and %2 the reason"
-msgid "You have kicked %1 from the channel (%2)."
-msgstr ""
-
-#: src/irc/channel.cpp:1274
-#, kde-format
-msgctxt "%1 adds the kicked nick, %2 adds the kicker"
-msgid "%1 has been kicked from the channel by %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1279
-#, kde-format
-msgctxt "%1 adds the kicked nick, %2 the kicker and %3 the reason"
-msgid "%1 has been kicked from the channel by %2 (%3)."
-msgstr ""
-
-#: src/irc/channel.cpp:1346
-#, kde-format
-msgid "%1 nick"
-msgid_plural "%1 nicks"
-msgstr[0] ""
-msgstr[1] ""
-
-#: src/irc/channel.cpp:1347
-#, fuzzy, kde-format
-msgid " (%1 op)"
-msgid_plural " (%1 ops)"
-msgstr[0] "&Buka Salinan"
-msgstr[1] ""
-
-#: src/irc/channel.cpp:1354
-#, fuzzy, kde-format
-msgid "The channel topic is \"%1\"."
-msgstr "Pilihan Semasa adalah Kosong"
-
-#: src/irc/channel.cpp:1373
-#, kde-format
-msgid "You set the channel topic to \"%1\"."
-msgstr ""
-
-#: src/irc/channel.cpp:1377
-#, kde-format
-msgid "%1 sets the channel topic to \"%2\"."
-msgstr ""
-
-#: src/irc/channel.cpp:1472
-#, fuzzy, kde-format
-msgid "You set a quiet on %1."
-msgstr "(tidak dijumpai pada sistem ini)"
-
-#: src/irc/channel.cpp:1473
-#, fuzzy, kde-format
-msgid "%1 sets a quiet on %2."
-msgstr "dikemaskini pada %(date)s"
-
-#: src/irc/channel.cpp:1477
-#, fuzzy, kde-format
-msgid "You remove the quiet on %1."
-msgstr "Had saiz log:"
-
-#: src/irc/channel.cpp:1478
-#, fuzzy, kde-format
-msgid "%1 removes the quiet on %2."
-msgstr "dikemaskini pada %(date)s"
-
-#: src/irc/channel.cpp:1487
-msgid "You give channel owner privileges to yourself."
-msgstr ""
-
-#: src/irc/channel.cpp:1488
-#, kde-format
-msgid "You give channel owner privileges to %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1492
-#, kde-format
-msgid "%1 gives channel owner privileges to you."
-msgstr ""
-
-#: src/irc/channel.cpp:1493
-#, kde-format
-msgid "%1 gives channel owner privileges to %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1500
-msgid "You take channel owner privileges from yourself."
-msgstr ""
-
-#: src/irc/channel.cpp:1501
-#, kde-format
-msgid "You take channel owner privileges from %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1505
-#, kde-format
-msgid "%1 takes channel owner privileges from you."
-msgstr ""
-
-#: src/irc/channel.cpp:1506
-#, kde-format
-msgid "%1 takes channel owner privileges from %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1522
-msgid "You give channel admin privileges to yourself."
-msgstr ""
-
-#: src/irc/channel.cpp:1523
-#, kde-format
-msgid "You give channel admin privileges to %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1527
-#, kde-format
-msgid "%1 gives channel admin privileges to you."
-msgstr ""
-
-#: src/irc/channel.cpp:1528
-#, kde-format
-msgid "%1 gives channel admin privileges to %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1535
-msgid "You take channel admin privileges from yourself."
-msgstr ""
-
-#: src/irc/channel.cpp:1536
-#, kde-format
-msgid "You take channel admin privileges from %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1540
-#, kde-format
-msgid "%1 takes channel admin privileges from you."
-msgstr ""
-
-#: src/irc/channel.cpp:1541
-#, kde-format
-msgid "%1 takes channel admin privileges from %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1556
-msgid "You give channel operator privileges to yourself."
-msgstr ""
-
-#: src/irc/channel.cpp:1557
-#, kde-format
-msgid "You give channel operator privileges to %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1561
-#, kde-format
-msgid "%1 gives channel operator privileges to you."
-msgstr ""
-
-#: src/irc/channel.cpp:1562
-#, kde-format
-msgid "%1 gives channel operator privileges to %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1569
-msgid "You take channel operator privileges from yourself."
-msgstr ""
-
-#: src/irc/channel.cpp:1570
-#, kde-format
-msgid "You take channel operator privileges from %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1574
-#, kde-format
-msgid "%1 takes channel operator privileges from you."
-msgstr ""
-
-#: src/irc/channel.cpp:1575
-#, kde-format
-msgid "%1 takes channel operator privileges from %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1590
-msgid "You give channel halfop privileges to yourself."
-msgstr ""
-
-#: src/irc/channel.cpp:1591
-#, kde-format
-msgid "You give channel halfop privileges to %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1595
-#, kde-format
-msgid "%1 gives channel halfop privileges to you."
-msgstr ""
-
-#: src/irc/channel.cpp:1596
-#, kde-format
-msgid "%1 gives channel halfop privileges to %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1603
-msgid "You take channel halfop privileges from yourself."
-msgstr ""
-
-#: src/irc/channel.cpp:1604
-#, kde-format
-msgid "You take channel halfop privileges from %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1608
-#, kde-format
-msgid "%1 takes channel halfop privileges from you."
-msgstr ""
-
-#: src/irc/channel.cpp:1609
-#, kde-format
-msgid "%1 takes channel halfop privileges from %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1626
-msgid "You give yourself permission to talk."
-msgstr ""
-
-#: src/irc/channel.cpp:1627
-#, fuzzy, kde-format
-msgid "You give %1 permission to talk."
-msgstr "Bercakap dengan orang di Internet"
-
-#: src/irc/channel.cpp:1631
-#, kde-format
-msgid "%1 gives you permission to talk."
-msgstr ""
-
-#: src/irc/channel.cpp:1632
-#, fuzzy, kde-format
-msgid "%1 gives %2 permission to talk."
-msgstr "Bercakap dengan orang di Internet"
-
-#: src/irc/channel.cpp:1639
-msgid "You take the permission to talk from yourself."
-msgstr ""
-
-#: src/irc/channel.cpp:1640
-#, kde-format
-msgid "You take the permission to talk from %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1644
-#, kde-format
-msgid "%1 takes the permission to talk from you."
-msgstr ""
-
-#: src/irc/channel.cpp:1645
-#, kde-format
-msgid "%1 takes the permission to talk from %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1657
-msgid "You set the channel mode to 'no colors allowed'."
-msgstr ""
-
-#: src/irc/channel.cpp:1658
-#, kde-format
-msgid "%1 sets the channel mode to 'no colors allowed'."
-msgstr ""
-
-#: src/irc/channel.cpp:1662
-msgid "You set the channel mode to 'allow color codes'."
-msgstr ""
-
-#: src/irc/channel.cpp:1663
-#, kde-format
-msgid "%1 sets the channel mode to 'allow color codes'."
-msgstr ""
-
-#: src/irc/channel.cpp:1670
-msgid "You set the channel mode to 'invite only'."
-msgstr ""
-
-#: src/irc/channel.cpp:1671
-#, kde-format
-msgid "%1 sets the channel mode to 'invite only'."
-msgstr ""
-
-#: src/irc/channel.cpp:1675
-msgid "You remove the 'invite only' mode from the channel."
-msgstr ""
-
-#: src/irc/channel.cpp:1676
-#, kde-format
-msgid "%1 removes the 'invite only' mode from the channel."
-msgstr ""
-
-#: src/irc/channel.cpp:1684
-msgid "You set the channel mode to 'moderated'."
-msgstr ""
-
-#: src/irc/channel.cpp:1685
-#, kde-format
-msgid "%1 sets the channel mode to 'moderated'."
-msgstr ""
-
-#: src/irc/channel.cpp:1689
-msgid "You set the channel mode to 'unmoderated'."
-msgstr ""
-
-#: src/irc/channel.cpp:1690
-#, kde-format
-msgid "%1 sets the channel mode to 'unmoderated'."
-msgstr ""
-
-#: src/irc/channel.cpp:1698
-msgid "You set the channel mode to 'no messages from outside'."
-msgstr ""
-
-#: src/irc/channel.cpp:1699
-#, kde-format
-msgid "%1 sets the channel mode to 'no messages from outside'."
-msgstr ""
-
-#: src/irc/channel.cpp:1703
-msgid "You set the channel mode to 'allow messages from outside'."
-msgstr ""
-
-#: src/irc/channel.cpp:1704
-#, kde-format
-msgid "%1 sets the channel mode to 'allow messages from outside'."
-msgstr ""
-
-#: src/irc/channel.cpp:1712
-msgid "You set the channel mode to 'private'."
-msgstr ""
-
-#: src/irc/channel.cpp:1713
-#, kde-format
-msgid "%1 sets the channel mode to 'private'."
-msgstr ""
-
-#: src/irc/channel.cpp:1717
-msgid "You set the channel mode to 'public'."
-msgstr ""
-
-#: src/irc/channel.cpp:1718
-#, kde-format
-msgid "%1 sets the channel mode to 'public'."
-msgstr ""
-
-#: src/irc/channel.cpp:1727
-msgid "You set the channel mode to 'secret'."
-msgstr ""
-
-#: src/irc/channel.cpp:1728
-#, kde-format
-msgid "%1 sets the channel mode to 'secret'."
-msgstr ""
-
-#: src/irc/channel.cpp:1732
-msgid "You set the channel mode to 'visible'."
-msgstr ""
-
-#: src/irc/channel.cpp:1733
-#, kde-format
-msgid "%1 sets the channel mode to 'visible'."
-msgstr ""
-
-#: src/irc/channel.cpp:1744
-msgid "You switch on 'topic protection'."
-msgstr ""
-
-#: src/irc/channel.cpp:1745
-#, kde-format
-msgid "%1 switches on 'topic protection'."
-msgstr ""
-
-#: src/irc/channel.cpp:1749
-msgid "You switch off 'topic protection'."
-msgstr ""
-
-#: src/irc/channel.cpp:1750
-#, kde-format
-msgid "%1 switches off 'topic protection'."
-msgstr ""
-
-#: src/irc/channel.cpp:1758
-#, fuzzy, kde-format
-msgid "You set the channel key to '%1'."
-msgstr "Anda telah mengubah mod arah."
-
-#: src/irc/channel.cpp:1759
-#, fuzzy, kde-format
-msgid "%1 sets the channel key to '%2'."
-msgstr "Anda telah mengubah mod arah."
-
-#: src/irc/channel.cpp:1763
-#, fuzzy
-msgid "You remove the channel key."
-msgstr "Had saiz log:"
-
-#: src/irc/channel.cpp:1764
-#, fuzzy, kde-format
-msgid "%1 removes the channel key."
-msgstr "Had saiz log:"
-
-#: src/irc/channel.cpp:1772
-#, fuzzy, kde-format
-msgid "You set the channel limit to 1 nick."
-msgid_plural "You set the channel limit to %1 nicks."
-msgstr[0] "Anda telah mengubah mod arah."
-msgstr[1] "Anda telah mengubah mod arah."
-
-#: src/irc/channel.cpp:1773
-#, fuzzy, kde-format
-msgid "%2 sets the channel limit to 1 nick."
-msgid_plural "%2 sets the channel limit to %1 nicks."
-msgstr[0] "Had saiz log:"
-msgstr[1] "Had saiz log:"
-
-#: src/irc/channel.cpp:1777
-msgid "You remove the channel limit."
-msgstr ""
-
-#: src/irc/channel.cpp:1778
-#, fuzzy, kde-format
-msgid "%1 removes the channel limit."
-msgstr "Had saiz log:"
-
-#: src/irc/channel.cpp:1788
-#, kde-format
-msgid "You set a ban on %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1789
-#, fuzzy, kde-format
-msgid "%1 sets a ban on %2."
-msgstr "dikemaskini pada %(date)s"
-
-#: src/irc/channel.cpp:1793
-#, kde-format
-msgid "You remove the ban on %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1794
-#, fuzzy, kde-format
-msgid "%1 removes the ban on %2."
-msgstr "dikemaskini pada %(date)s"
-
-#: src/irc/channel.cpp:1801
-#, kde-format
-msgid "You set a ban exception on %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1802
-#, kde-format
-msgid "%1 sets a ban exception on %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1806
-#, kde-format
-msgid "You remove the ban exception on %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1807
-#, kde-format
-msgid "%1 removes the ban exception on %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1814
-#, kde-format
-msgid "You set invitation mask %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1815
-#, kde-format
-msgid "%1 sets invitation mask %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1819
-#, kde-format
-msgid "You remove the invitation mask %1."
-msgstr ""
-
-#: src/irc/channel.cpp:1820
-#, kde-format
-msgid "%1 removes the invitation mask %2."
-msgstr ""
-
-#: src/irc/channel.cpp:1828
-#, fuzzy, kde-format
-msgid "You set the channel mode '%1'."
-msgstr "Anda telah mengubah mod arah."
-
-#: src/irc/channel.cpp:1829
-#, fuzzy, kde-format
-msgid "%1 sets the channel mode '%2'."
-msgstr "Anda telah mengubah mod arah."
-
-#: src/irc/channel.cpp:1833
-#, fuzzy, kde-format
-msgid "You set channel mode +%1"
-msgstr "Anda telah mengubah mod arah."
-
-#: src/irc/channel.cpp:1834
-#, fuzzy, kde-format
-msgid "%1 sets channel mode +%2"
-msgstr "Anda telah mengubah mod arah."
-
-#: src/irc/channel.cpp:1841
-#, fuzzy, kde-format
-msgid "You remove the channel mode '%1'."
-msgstr "Had saiz log:"
-
-#: src/irc/channel.cpp:1842
-#, fuzzy, kde-format
-msgid "%1 removes the channel mode '%2'."
-msgstr "Had saiz log:"
-
-#: src/irc/channel.cpp:1846
-#, fuzzy, kde-format
-msgid "You set channel mode -%1"
-msgstr "Anda telah mengubah mod arah."
-
-#: src/irc/channel.cpp:1847
-#, fuzzy, kde-format
-msgid "%1 sets channel mode -%2"
-msgstr "Anda telah mengubah mod arah."
-
-#: src/irc/channel.cpp:2238
-msgid "You have to be an operator to change this."
-msgstr ""
-
-#: src/irc/channel.cpp:2240
-#, kde-format
-msgid "Topic can be changed by channel operator only.  %1"
-msgstr ""
-
-#: src/irc/channel.cpp:2241
-#, kde-format
-msgid "No messages to channel from clients on the outside.  %1"
-msgstr ""
-
-#: src/irc/channel.cpp:2242
-#, kde-format
-msgid "Secret channel.  %1"
-msgstr ""
-
-#: src/irc/channel.cpp:2243
-#, fuzzy, kde-format
-msgid "Invite only channel.  %1"
-msgstr "Benarkan memformat menggunakan gaya sahaja"
-
-#: src/irc/channel.cpp:2244
-#, kde-format
-msgid "Private channel.  %1"
-msgstr ""
-
-#: src/irc/channel.cpp:2245
-#, kde-format
-msgid "Moderated channel.  %1"
-msgstr ""
-
-#: src/irc/channel.cpp:2246
-msgid "Protect channel with a password."
-msgstr ""
-
-#: src/irc/channel.cpp:2247
-msgid "Set user limit to channel."
-msgstr ""
-
-#: src/irc/channel.cpp:2370
-#, fuzzy, kde-format
-msgid "Do you want to leave %1?"
-msgstr "Adakah anda pasti untuk menggantung ke cakera?"
-
-#: src/irc/channel.cpp:2371
-msgid "Leave Channel"
-msgstr ""
-
-#: src/irc/channel.cpp:2372
-msgid "Leave"
-msgstr ""
-
-#: src/irc/server.cpp:399 src/irc/server.cpp:409
-msgid "Warning"
-msgstr ""
-
-#: src/irc/server.cpp:456
-#, fuzzy, kde-format
-msgid "Looking for server %1 (port <numid>%2</numid>)..."
-msgstr "Pelayan Nama DNS"
-
-#: src/irc/server.cpp:620
-#, fuzzy
-msgid "Server found, connecting..."
-msgstr "Fail %s tidak dijumpai"
-
-#: src/irc/server.cpp:631
-#, fuzzy
-msgid "Connected; logging in..."
-msgstr "&Dalam pelayar web"
-
-#: src/irc/server.cpp:690 src/irc/server.cpp:787
-#, fuzzy
-msgid "SSL Connection Error"
-msgstr "Ralat mengira nilai!"
-
-#: src/irc/server.cpp:691
-#, kde-format
-msgid ""
-"Connection to server %1 (port <numid>%2</numid>) lost while waiting for user "
-"response to an SSL error. Will automatically reconnect if error is ignored."
-msgstr ""
-
-#: src/irc/server.cpp:711
-#, fuzzy, kde-format
-msgid "Connection to server %1 (port <numid>%2</numid>) lost: %3."
-msgstr "Gagal untuk mencari seksyen: %s"
-
-#: src/irc/server.cpp:748
-#, fuzzy, kde-format
-msgid ""
-"The SSL certificate for the server %1 (port <numid>%2</numid>) failed the "
-"authenticity check."
-msgstr "Gagal untuk mencari seksyen: %s"
-
-#: src/irc/server.cpp:752
-#, fuzzy
-msgid "SSL Connection Warning"
-msgstr "Ralat mengira nilai!"
-
-#: src/irc/server.cpp:782
-#, kde-format
-msgid ""
-"Could not connect to %1 (port <numid>%2</numid>) using SSL encryption. "
-"Either the server does not support SSL (did you use the correct port?) or "
-"you rejected the certificate. %3"
-msgstr ""
-
-#: src/irc/server.cpp:897
-msgid "Delayed connect aborted."
-msgstr ""
-
-#: src/irc/server.cpp:927
-#, fuzzy, kde-format
-msgid "Disconnected from %1 (port <numid>%2</numid>)."
-msgstr "Pelayan Nama DNS"
-
-#: src/irc/server.cpp:1099
-#, kde-format
-msgid ""
-"No nicknames from the \"%1\" identity were accepted by the connection "
-"\"%2\".\n"
-"Please enter a new one or press Cancel to disconnect:"
-msgstr ""
-
-#: src/irc/server.cpp:1100
-#, fuzzy
-msgid "Nickname error"
-msgstr "Ralat KMail"
-
-#: src/irc/server.cpp:1563 src/irc/server.cpp:3535 src/irc/server.cpp:3540
-#: src/application.cpp:357
-msgid "D-Bus"
-msgstr ""
-
-#: src/irc/server.cpp:1909
-#, fuzzy, kde-format
-msgid "Select File(s) to Send to %1"
-msgstr "Hantar emel ke senarai"
-
-#: src/irc/server.cpp:2082
-#, kde-format
-msgctxt "%1=nickname"
-msgid "Received invalid DCC SEND request from %1."
-msgstr ""
-
-#: src/irc/server.cpp:2117 src/irc/server.cpp:2247 src/irc/server.cpp:2259
-#: src/irc/server.cpp:2408 src/irc/server.cpp:2464 src/irc/server.cpp:2573
-#, fuzzy
-msgid "unknown size"
-msgstr "% dari saiz normal"
-
-#: src/irc/server.cpp:2114
-#, fuzzy, kde-format
-msgid "%1 offers to send you \"%2\" (%3)..."
-msgstr "Hantar emel ke senarai"
-
-#: src/irc/server.cpp:2153
-#, kde-format
-msgctxt "%1=nickname"
-msgid "Received invalid DCC CHAT request from %1."
-msgstr ""
-
-#: src/irc/server.cpp:2244
-#, kde-format
-msgid "Asking %1 to accept upload of \"%2\" (%3)..."
-msgstr ""
-
-#: src/irc/server.cpp:2256
-#, kde-format
-msgid "Asking %1 to accept passive upload of \"%2\" (%3)..."
-msgstr ""
-
-#: src/irc/server.cpp:2268
-#, kde-format
-msgctxt "%1=name, %2=dcc extension, chat or wboard for example"
-msgid "Asking %1 to accept %2..."
-msgstr ""
-
-#: src/irc/server.cpp:2327
-#, kde-format
-msgctxt "%1 = nickname"
-msgid "Received invalid passive DCC chat acceptance message from %1."
-msgstr ""
-
-#: src/irc/server.cpp:2363
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname"
-msgid ""
-"Received invalid passive DCC send acceptance message for \"%1\" from %2."
-msgstr ""
-
-#: src/irc/server.cpp:2404
-#, kde-format
-msgctxt ""
-"%1 = file name, %2 = nickname of sender, %3 = percentage of file size, %4 = "
-"file size"
-msgid "Resuming download of \"%1\" from %2 starting at %3% of %4..."
-msgstr ""
-
-#: src/irc/server.cpp:2414
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname"
-msgid "Received invalid resume acceptance message for \"%1\" from %2."
-msgstr ""
-
-#: src/irc/server.cpp:2460
-#, kde-format
-msgctxt ""
-"%1 = file name, %2 = nickname of recipient, %3 = percentage of file size, %4 "
-"= file size"
-msgid "Resuming upload of \"%1\" to %2 starting at %3% of %4..."
-msgstr ""
-
-#: src/irc/server.cpp:2482
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname"
-msgid "Received invalid resume request for \"%1\" from %2."
-msgstr ""
-
-#: src/irc/server.cpp:2501
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname"
-msgid "Received invalid reject request for \"%1\" from %2."
-msgstr ""
-
-#: src/irc/server.cpp:2517
-#, kde-format
-msgctxt "%1 = nickname"
-msgid "Received invalid reject request from %1."
-msgstr ""
-
-#: src/irc/server.cpp:2530
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname of sender"
-msgid "Download of \"%1\" from %2 finished."
-msgstr ""
-
-#: src/irc/server.cpp:2535
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname of sender"
-msgid "Download of \"%1\" from %2 failed. Reason: %3."
-msgstr ""
-
-#: src/irc/server.cpp:2547
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname of recipient"
-msgid "Upload of \"%1\" to %2 finished."
-msgstr ""
-
-#: src/irc/server.cpp:2550
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname of recipient"
-msgid "Upload of \"%1\" to %2 failed. Reason: %3."
-msgstr ""
-
-#: src/irc/server.cpp:2564
-#, kde-format
-msgctxt "%1 = file name, %2 nickname of recipient"
-msgid "Sending \"%1\" to %2..."
-msgstr ""
-
-#: src/irc/server.cpp:2571
-#, kde-format
-msgctxt "%1 = file name, %2 = file size, %3 = nickname of sender"
-msgid "Downloading \"%1\" (%2) from %3..."
-msgstr ""
-
-#: src/irc/server.cpp:2881 src/notificationhandler.cpp:307
-#, fuzzy, kde-format
-msgid "%1 is online (%2)."
-msgstr "Kamus Talian"
-
-#: src/irc/server.cpp:2898 src/notificationhandler.cpp:321
-#, kde-format
-msgid "%1 went offline (%2)."
-msgstr ""
-
-#: src/irc/server.cpp:3535
-#, kde-format
-msgid "Error: Could not find script \"%1\"."
-msgstr ""
-
-#: src/irc/server.cpp:3540
-#, kde-format
-msgid "Error: Could not execute script \"%1\". Check file permissions."
-msgstr ""
-
-#: src/irc/server.cpp:3754
-msgid "Gone away for now"
-msgstr ""
-
-#: src/irc/server.cpp:3785
-#, kde-format
-msgid "You are now marked as being away (reason: %1)."
-msgstr ""
-
-#: src/irc/server.cpp:3787
-msgid "You are now marked as being away."
-msgstr ""
-
-#: src/irc/server.cpp:3812
-msgid "You are no longer marked as being away."
-msgstr ""
-
-#: src/irc/server.cpp:3821
-msgid "You are not marked as being away."
-msgstr ""
-
-#: src/irc/server.cpp:3972
-#, kde-format
-msgid "Failed to initiate key exchange with %1."
-msgstr ""
-
-#: src/irc/server.cpp:3984
-#, kde-format
-msgid "Unable to perform key exchange with %1."
-msgstr ""
-
-#: src/irc/server.cpp:4008
-#, kde-format
-msgid "Failed to parse the DH1080_INIT of %1. Key exchange failed."
-msgstr ""
-
-#: src/irc/server.cpp:4014
-#, kde-format
-msgid ""
-"Your key is set and your messages will now be encrypted, sending "
-"DH1080_FINISH to %1."
-msgstr ""
-
-#: src/irc/server.cpp:4031
-#, kde-format
-msgid "Unable to complete key exchange with %1."
-msgstr ""
-
-#: src/irc/server.cpp:4043
-#, kde-format
-msgid ""
-"Successfully parsed DH1080_FINISH sent by %1. Your key is set and your "
-"messages will now be encrypted."
-msgstr ""
-
-#: src/irc/server.cpp:4047
-#, kde-format
-msgid "Failed to parse DH1080_FINISH sent by %1. Key exchange failed."
-msgstr ""
 
 #: src/linkaddressbook/addressbook.cpp:105
 msgid "Offline"
