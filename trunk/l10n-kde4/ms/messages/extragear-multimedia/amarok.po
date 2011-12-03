@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-02 03:32+0100\n"
+"POT-Creation-Date: 2011-12-03 03:10+0100\n"
 "PO-Revision-Date: 2009-06-14 00:43+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -6976,6 +6976,12 @@ msgstr "Pindah tempat kemasukan kepada lokasi spesifik"
 msgid "Delete Tracks"
 msgstr "Trek Seterusnya"
 
+#: browsers/BrowserCategoryList.cpp:52
+#, fuzzy
+#| msgid "File Extension of Source"
+msgid "Filter Music Sources"
+msgstr "Sambungan Fail bagi Sumber"
+
 #: browsers/BrowserBreadcrumbItem.cpp:68
 #, fuzzy
 #| msgid "File Extension of Source"
@@ -7012,12 +7018,6 @@ msgid "1 track"
 msgid_plural "%1 tracks"
 msgstr[0] "Trek"
 msgstr[1] "Trek"
-
-#: browsers/BrowserCategoryList.cpp:52
-#, fuzzy
-#| msgid "File Extension of Source"
-msgid "Filter Music Sources"
-msgstr "Sambungan Fail bagi Sumber"
 
 #: configdialog/dialogs/DatabaseConfig.cpp:93
 #, fuzzy
@@ -8194,12 +8194,6 @@ msgstr ""
 msgid "print() takes one argument"
 msgstr ""
 
-#: context/toolbar/AppletItemOverlay.cpp:104
-#: context/toolbar/AppletToolbarAppletItem.cpp:58
-#, fuzzy
-msgid "Remove Applet"
-msgstr "Muatturun Dipilih"
-
 #: context/toolbar/AppletToolbarAddItem.cpp:47
 #, fuzzy
 #| msgid "Add Widgets..."
@@ -8219,6 +8213,12 @@ msgstr "Tetapkan..."
 #: context/toolbar/AppletToolbarAppletItem.cpp:53
 msgid "no applet name"
 msgstr ""
+
+#: context/toolbar/AppletToolbarAppletItem.cpp:58
+#: context/toolbar/AppletItemOverlay.cpp:105
+#, fuzzy
+msgid "Remove Applet"
+msgstr "Muatturun Dipilih"
 
 #: context/tools/amarokpkg.cpp:40
 msgid "Install, list, remove Amarok applets"
@@ -13326,54 +13326,6 @@ msgstr "Media Storan"
 msgid "Updating the local Jamendo database."
 msgstr ""
 
-#: services/lastfm/LastFmTreeModel.cpp:182
-#, fuzzy
-msgid "Personal Radio"
-msgstr "Fail Peribadi"
-
-#: services/lastfm/LastFmTreeModel.cpp:183
-#, fuzzy
-msgid "Neighborhood"
-msgstr "Tetapan Radio"
-
-#: services/lastfm/LastFmTreeModel.cpp:368
-msgid "My Recommendations"
-msgstr ""
-
-#: services/lastfm/LastFmTreeModel.cpp:370
-#, fuzzy
-msgid "My Radio Station"
-msgstr "Aliran Data (Tolakan Pelayan)"
-
-#: services/lastfm/LastFmTreeModel.cpp:372
-msgid "My Mix Radio"
-msgstr ""
-
-#: services/lastfm/LastFmTreeModel.cpp:374
-#, fuzzy
-msgid "My Neighborhood"
-msgstr "Tetapan Radio"
-
-#: services/lastfm/LastFmTreeModel.cpp:379
-#, fuzzy
-msgid "My Top Artists"
-msgstr "Artis"
-
-#: services/lastfm/LastFmTreeModel.cpp:381
-#, fuzzy
-msgid "My Tags"
-msgstr "Tag"
-
-#: services/lastfm/LastFmTreeModel.cpp:383
-#, fuzzy
-msgid "Friends"
-msgstr "Fail"
-
-#: services/lastfm/LastFmTreeModel.cpp:385
-#, fuzzy
-msgid "Neighbors"
-msgstr "Tetapan Radio"
-
 #: services/lastfm/LoveTrackAction.cpp:25
 #: services/lastfm/LastFmService.cpp:284
 #, fuzzy
@@ -13705,6 +13657,54 @@ msgstr "Pengguna"
 msgctxt "As in, lastfm"
 msgid "Loved Track: %1"
 msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:172
+#, fuzzy
+msgid "Personal Radio"
+msgstr "Fail Peribadi"
+
+#: services/lastfm/LastFmTreeModel.cpp:173
+#, fuzzy
+msgid "Neighborhood"
+msgstr "Tetapan Radio"
+
+#: services/lastfm/LastFmTreeModel.cpp:331
+msgid "My Recommendations"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:333
+#, fuzzy
+msgid "My Radio Station"
+msgstr "Aliran Data (Tolakan Pelayan)"
+
+#: services/lastfm/LastFmTreeModel.cpp:335
+msgid "My Mix Radio"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:337
+#, fuzzy
+msgid "My Neighborhood"
+msgstr "Tetapan Radio"
+
+#: services/lastfm/LastFmTreeModel.cpp:342
+#, fuzzy
+msgid "My Top Artists"
+msgstr "Artis"
+
+#: services/lastfm/LastFmTreeModel.cpp:344
+#, fuzzy
+msgid "My Tags"
+msgstr "Tag"
+
+#: services/lastfm/LastFmTreeModel.cpp:346
+#, fuzzy
+msgid "Friends"
+msgstr "Fail"
+
+#: services/lastfm/LastFmTreeModel.cpp:348
+#, fuzzy
+msgid "Neighbors"
+msgstr "Tetapan Radio"
 
 #: services/magnatune/MagnatuneCollectionLocation.cpp:42
 msgid "Preview Tracks"
@@ -14182,11 +14182,6 @@ msgctxt ""
 msgid "Amazon"
 msgstr "Baki: "
 
-#: services/amazon/AmazonShoppingCartView.cpp:64
-#, fuzzy
-msgid "Remove from Cart"
-msgstr "Buang Ciri-ciri daripada Gaya"
-
 #: services/amazon/AmazonStore.cpp:100
 msgid "Access the Amazon MP3 Store directly from Amarok"
 msgstr ""
@@ -14216,55 +14211,60 @@ msgid ""
 "settings to make the store work."
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:403
+#: services/amazon/AmazonStore.cpp:409
 msgid "Select results page to show"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:426
+#: services/amazon/AmazonStore.cpp:432
 #, fuzzy
 msgctxt "Add selected item to your shopping cart"
 msgid "Add to Cart"
 msgstr "Tambah kepada template"
 
-#: services/amazon/AmazonStore.cpp:427
+#: services/amazon/AmazonStore.cpp:433
 msgid "Add selected item to your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:434
+#: services/amazon/AmazonStore.cpp:440
 #, fuzzy
 msgctxt "View your shopping cart contents"
 msgid "View Cart"
 msgstr "Paparkan"
 
-#: services/amazon/AmazonStore.cpp:435
+#: services/amazon/AmazonStore.cpp:441
 msgid "View your shopping cart contents"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:442
+#: services/amazon/AmazonStore.cpp:448
 #, fuzzy
 msgctxt "Checkout your shopping cart"
 msgid "Checkout"
 msgstr "<b>%1</b>"
 
-#: services/amazon/AmazonStore.cpp:443
+#: services/amazon/AmazonStore.cpp:449
 msgid "Checkout your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:463
+#: services/amazon/AmazonStore.cpp:469
 msgid "Error: Querying MP3 Music Store database failed. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:498
+#: services/amazon/AmazonStore.cpp:504
 msgid "Error: Received an invalid reply. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:518
+#: services/amazon/AmazonStore.cpp:524
 msgid "Error: Unable to open temporary file. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:538
+#: services/amazon/AmazonStore.cpp:544
 msgid "Error: Unable to parse temporary file. :-("
 msgstr ""
+
+#: services/amazon/AmazonShoppingCartView.cpp:64
+#, fuzzy
+msgid "Remove from Cart"
+msgstr "Buang Ciri-ciri daripada Gaya"
 
 #: services/amazon/AmazonItemTreeView.cpp:271
 #, fuzzy
