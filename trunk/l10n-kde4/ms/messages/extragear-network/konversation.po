@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-01 03:37+0100\n"
+"POT-Creation-Date: 2011-12-08 03:12+0100\n"
 "PO-Revision-Date: 2008-02-22 22:30+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -43,7 +43,7 @@ msgid_plural ""
 msgstr[0] "Sambung ke komputer jauh"
 msgstr[1] "Sambung ke komputer jauh"
 
-#: src/connectionmanager.cpp:282 src/dcc/chatcontainer.cpp:283
+#: src/connectionmanager.cpp:282 src/dcc/chatcontainer.cpp:273
 #: src/irc/outputfilter.cpp:2038 src/irc/outputfilterresolvejob.cpp:85
 #: src/irc/inputfilter.cpp:1164 src/irc/inputfilter.cpp:1168
 #: src/irc/inputfilter.cpp:1181 src/irc/inputfilter.cpp:1252
@@ -1002,79 +1002,6 @@ msgstr "Maklumat port IO"
 msgid "Could not open a socket"
 msgstr "Tak dapat membuka fail %s."
 
-#: src/dcc/chatcontainer.cpp:116
-#, fuzzy, kde-format
-msgctxt "%1=extension like Chat or Whiteboard, %2=partnerNick, %3=port"
-msgid "DCC %1 with %2 on port <numid>%3</numid>."
-msgstr "seadanya"
-
-#: src/dcc/chatcontainer.cpp:123
-#, fuzzy, kde-format
-msgctxt ""
-"%1=extension like Chat or Whiteboard, %2 = nickname, %3 = IP, %4 = port"
-msgid "DCC %1 with %2 on %3:<numid>%4</numid>."
-msgstr "seadanya"
-
-#: src/dcc/chatcontainer.cpp:145 src/dcc/transferrecv.cpp:583
-#: src/dcc/transfersend.cpp:350
-msgctxt "Universal Plug and Play"
-msgid "UPnP"
-msgstr ""
-
-#: src/dcc/chatcontainer.cpp:189
-#, fuzzy, kde-format
-msgctxt "%1=extension like Chat or Whiteboard, %2=partnerNick"
-msgid "Do you want to close your DCC %1 with %2?"
-msgstr "Adakah anda pasti untuk menggantung ke cakera?"
-
-#: src/dcc/chatcontainer.cpp:192
-#, fuzzy, kde-format
-msgctxt "%1=extension like Chat or Whiteboard"
-msgid "Close DCC %1"
-msgstr "Borak Jaringan Setempat"
-
-#: src/dcc/chatcontainer.cpp:211 src/irc/query.cpp:517
-#, fuzzy
-msgid "Talking to yourself"
-msgstr "&Lompat ke hiperlink"
-
-#: src/dcc/chatcontainer.cpp:227
-#, fuzzy, kde-format
-msgctxt "%1=Encoding"
-msgid "Default ( %1 )"
-msgstr "Bahasa default:"
-
-#: src/dcc/chatcontainer.cpp:269 src/irc/outputfilter.cpp:2020
-#, fuzzy
-msgid "Usage"
-msgstr "Lihat Penggunaan Cakera"
-
-#: src/dcc/chatcontainer.cpp:269 src/irc/outputfilter.cpp:683
-#, fuzzy, kde-format
-msgid "Usage: %1ME text"
-msgstr "Ubah Warna Teks"
-
-#: src/dcc/chatcontainer.cpp:283
-#, fuzzy
-msgid "Unknown command."
-msgstr "Arahan pencetak: "
-
-#. i18n: file: src/config/ignore_configui.ui:83
-#. i18n: ectx: property (text), widget (QCheckBox, chkCTCP)
-#: src/dcc/chatcontainer.cpp:331 src/irc/outputfilter.cpp:851
-#: src/irc/inputfilter.cpp:269 src/irc/inputfilter.cpp:276
-#: src/irc/inputfilter.cpp:292 src/irc/inputfilter.cpp:299
-#: src/irc/inputfilter.cpp:447 src/irc/inputfilter.cpp:458
-#: src/irc/inputfilter.cpp:479 src/irc/inputfilter.cpp:527
-#: src/irc/inputfilter.cpp:555 src/viewer/ignorelistviewitem.cpp:45 rc.cpp:316
-msgid "CTCP"
-msgstr ""
-
-#: src/dcc/chatcontainer.cpp:331
-#, kde-format
-msgid "Received unknown CTCP-%1 request from %2"
-msgstr ""
-
 #: src/dcc/recipientdialog.cpp:43
 #, fuzzy
 msgid "Select Recipient"
@@ -1195,7 +1122,7 @@ msgctxt "less than 1 sec"
 msgid "&lt; 1sec"
 msgstr "Sela masa (saat): "
 
-#: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2172
+#: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2173
 #, fuzzy
 msgid "DCC Status"
 msgstr "Bar &status"
@@ -1357,6 +1284,12 @@ msgstr "Tak dapat membuka fail %s untuk menulis"
 msgid ""
 "Could not send Reverse DCC SEND acknowledgement to the partner via the IRC "
 "server."
+msgstr ""
+
+#: src/dcc/transferrecv.cpp:583 src/dcc/transfersend.cpp:350
+#: src/dcc/chatcontainer.cpp:145
+msgctxt "Universal Plug and Play"
+msgid "UPnP"
 msgstr ""
 
 #: src/dcc/transferrecv.cpp:583 src/dcc/transfersend.cpp:350
@@ -1812,6 +1745,73 @@ msgstr ""
 #, fuzzy
 msgid "Columns"
 msgstr "Warna"
+
+#: src/dcc/chatcontainer.cpp:116
+#, fuzzy, kde-format
+msgctxt "%1=extension like Chat or Whiteboard, %2=partnerNick, %3=port"
+msgid "DCC %1 with %2 on port <numid>%3</numid>."
+msgstr "seadanya"
+
+#: src/dcc/chatcontainer.cpp:123
+#, fuzzy, kde-format
+msgctxt ""
+"%1=extension like Chat or Whiteboard, %2 = nickname, %3 = IP, %4 = port"
+msgid "DCC %1 with %2 on %3:<numid>%4</numid>."
+msgstr "seadanya"
+
+#: src/dcc/chatcontainer.cpp:184
+#, fuzzy, kde-format
+msgctxt "%1=extension like Chat or Whiteboard, %2=partnerNick"
+msgid "Do you want to close your DCC %1 with %2?"
+msgstr "Adakah anda pasti untuk menggantung ke cakera?"
+
+#: src/dcc/chatcontainer.cpp:187
+#, fuzzy, kde-format
+msgctxt "%1=extension like Chat or Whiteboard"
+msgid "Close DCC %1"
+msgstr "Borak Jaringan Setempat"
+
+#: src/dcc/chatcontainer.cpp:206 src/irc/query.cpp:500
+#, fuzzy
+msgid "Talking to yourself"
+msgstr "&Lompat ke hiperlink"
+
+#: src/dcc/chatcontainer.cpp:222
+#, fuzzy, kde-format
+msgctxt "%1=Encoding"
+msgid "Default ( %1 )"
+msgstr "Bahasa default:"
+
+#: src/dcc/chatcontainer.cpp:259 src/irc/outputfilter.cpp:2020
+#, fuzzy
+msgid "Usage"
+msgstr "Lihat Penggunaan Cakera"
+
+#: src/dcc/chatcontainer.cpp:259 src/irc/outputfilter.cpp:683
+#, fuzzy, kde-format
+msgid "Usage: %1ME text"
+msgstr "Ubah Warna Teks"
+
+#: src/dcc/chatcontainer.cpp:273
+#, fuzzy
+msgid "Unknown command."
+msgstr "Arahan pencetak: "
+
+#. i18n: file: src/config/ignore_configui.ui:83
+#. i18n: ectx: property (text), widget (QCheckBox, chkCTCP)
+#: src/dcc/chatcontainer.cpp:321 src/irc/outputfilter.cpp:851
+#: src/irc/inputfilter.cpp:269 src/irc/inputfilter.cpp:276
+#: src/irc/inputfilter.cpp:292 src/irc/inputfilter.cpp:299
+#: src/irc/inputfilter.cpp:447 src/irc/inputfilter.cpp:458
+#: src/irc/inputfilter.cpp:479 src/irc/inputfilter.cpp:527
+#: src/irc/inputfilter.cpp:555 src/viewer/ignorelistviewitem.cpp:45 rc.cpp:316
+msgid "CTCP"
+msgstr ""
+
+#: src/dcc/chatcontainer.cpp:321
+#, kde-format
+msgid "Received unknown CTCP-%1 request from %2"
+msgstr ""
 
 #: src/irc/channelnick.cpp:199
 msgid "Operator"
@@ -2427,7 +2427,7 @@ msgid "%1 has joined this channel (%2)."
 msgstr ""
 
 #: src/irc/channel.cpp:1137 src/irc/channel.cpp:1139 src/irc/channel.cpp:1160
-#: src/irc/channel.cpp:1162 src/irc/query.cpp:533 src/irc/query.cpp:540
+#: src/irc/channel.cpp:1162 src/irc/query.cpp:516 src/irc/query.cpp:523
 #: src/viewer/ircview.cpp:820
 msgid "Quit"
 msgstr ""
@@ -2458,7 +2458,7 @@ msgctxt "%1 adds the channel and %2 the reason"
 msgid "You have left channel %1 (%2)."
 msgstr ""
 
-#: src/irc/channel.cpp:1160 src/irc/query.cpp:533
+#: src/irc/channel.cpp:1160 src/irc/query.cpp:516
 #, kde-format
 msgid "%1 has left this server."
 msgstr ""
@@ -3089,21 +3089,21 @@ msgstr ""
 msgid "Set user limit to channel."
 msgstr ""
 
-#: src/irc/channel.cpp:2339
+#: src/irc/channel.cpp:2318
 #, fuzzy, kde-format
 msgid "Do you want to leave %1?"
 msgstr "Adakah anda pasti untuk menggantung ke cakera?"
 
-#: src/irc/channel.cpp:2340
+#: src/irc/channel.cpp:2319
 msgid "Leave Channel"
 msgstr ""
 
-#: src/irc/channel.cpp:2341
+#: src/irc/channel.cpp:2320
 msgid "Leave"
 msgstr ""
 
-#: src/irc/channel.cpp:2493 src/irc/query.cpp:480
-#: src/viewer/statuspanel.cpp:322
+#: src/irc/channel.cpp:2472 src/irc/query.cpp:463
+#: src/viewer/statuspanel.cpp:306
 #, fuzzy, kde-format
 msgid "Identity Default ( %1 )"
 msgstr "Bahasa default:"
@@ -4046,8 +4046,8 @@ msgstr ""
 
 #. i18n: file: src/irc/channellistpanelui.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ChannelListWidgetUI)
-#: src/irc/channellistpanel.cpp:146 src/viewer/viewcontainer.cpp:2476
-#: src/viewer/viewcontainer.cpp:2497 rc.cpp:1070
+#: src/irc/channellistpanel.cpp:146 src/viewer/viewcontainer.cpp:2477
+#: src/viewer/viewcontainer.cpp:2498 rc.cpp:1070
 #, fuzzy
 msgid "Channel List"
 msgstr "Senarai Arab"
@@ -4371,31 +4371,6 @@ msgctxt "(Offline) nickname details (e.g. real name from address book)"
 msgid "(Offline) %1"
 msgstr ""
 
-#: src/irc/query.cpp:63
-msgid ""
-"<qt><p>Some details of the person you are talking to in this query is shown "
-"in this bar.  The full name and hostmask is shown, along with any image or "
-"logo this person has associated with them in the KDE Address Book.</p><p>See "
-"the <i>Konversation Handbook</i> for information on associating a nick with "
-"a contact in the address book, and for an explanation of what the hostmask "
-"is.</p></qt>"
-msgstr ""
-
-#: src/irc/query.cpp:490
-#, kde-format
-msgid "Do you want to close your query with %1?"
-msgstr ""
-
-#: src/irc/query.cpp:491
-#, fuzzy
-msgid "Close Query"
-msgstr "Tutup dokumen"
-
-#: src/irc/query.cpp:540
-#, kde-format
-msgid "%1 has left this server (%2)."
-msgstr ""
-
 #: src/irc/servergroupdialog.cpp:79
 #, fuzzy
 msgid "Change network information"
@@ -4498,6 +4473,31 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Do you really want to delete %1?"
 msgstr "Adakah anda pasti untuk menggantung ke cakera?"
+
+#: src/irc/query.cpp:63
+msgid ""
+"<qt><p>Some details of the person you are talking to in this query is shown "
+"in this bar.  The full name and hostmask is shown, along with any image or "
+"logo this person has associated with them in the KDE Address Book.</p><p>See "
+"the <i>Konversation Handbook</i> for information on associating a nick with "
+"a contact in the address book, and for an explanation of what the hostmask "
+"is.</p></qt>"
+msgstr ""
+
+#: src/irc/query.cpp:473
+#, kde-format
+msgid "Do you want to close your query with %1?"
+msgstr ""
+
+#: src/irc/query.cpp:474
+#, fuzzy
+msgid "Close Query"
+msgstr "Tutup dokumen"
+
+#: src/irc/query.cpp:523
+#, kde-format
+msgid "%1 has left this server (%2)."
+msgstr ""
 
 #: src/linkaddressbook/addressbook.cpp:105
 msgid "Offline"
@@ -4885,7 +4885,7 @@ msgstr "Auto &Simpan"
 msgid "Choose Destination Folder"
 msgstr "Wizard Folder Rangkaian"
 
-#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2258
+#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2259
 #, fuzzy
 msgid "Raw Log"
 msgstr "Log Sistem"
@@ -4960,185 +4960,15 @@ msgstr "Sorot perkataan sala&h eja"
 msgid "From Cursor"
 msgstr "&Kelip kursor"
 
-#: src/viewer/statuspanel.cpp:231
-#, kde-format
-msgid ""
-"Do you really want to close '%1'?\n"
-"\n"
-" All associated tabs will be closed as well."
-msgstr ""
-
-#: src/viewer/statuspanel.cpp:232
-#, fuzzy
-msgid "Close Tab"
-msgstr "Awalan &tab:"
-
-#: src/viewer/statuspanel.cpp:241
-#, fuzzy, kde-format
-msgid ""
-"Do you want to disconnect from '%1'?\n"
-"\n"
-" All associated tabs will be closed as well."
-msgstr "Adakah anda pasti untuk menggantung ke cakera?"
-
-#: src/viewer/statuspanel.cpp:242
-#, fuzzy
-msgid "Disconnect From Server"
-msgstr "Pelayan Nama DNS"
-
-#: src/viewer/statuspanel.cpp:243
-msgid "Disconnect"
-msgstr ""
-
 #: src/viewer/topiclabel.cpp:301 src/viewer/ircview.cpp:2153
 #, kde-format
 msgid "Join the channel %1"
 msgstr ""
 
-#: src/viewer/chatwindow.cpp:444
-#, fuzzy, kde-format
-msgid ""
-"\n"
-"*** Logfile started\n"
-"*** on %1\n"
-"\n"
-msgstr "dikemaskini pada %(date)s"
-
 #: src/viewer/trayicon.cpp:23
 #, fuzzy
 msgid "Konversation - IRC Client"
 msgstr "Klien Pelayan Terminal"
-
-#: src/viewer/viewcontainer.cpp:221 src/mainwindow.cpp:291
-#, fuzzy
-msgid "Move Tab Up"
-msgstr "Gerak Tab Kiri"
-
-#: src/viewer/viewcontainer.cpp:229 src/mainwindow.cpp:302
-#, fuzzy
-msgid "Move Tab Down"
-msgstr "Gerak Tab Kiri"
-
-#: src/viewer/viewcontainer.cpp:322 src/mainwindow.cpp:322
-#: src/mainwindow.cpp:334
-#, fuzzy
-msgid "Move Tab Left"
-msgstr "Gerak Tab Kiri"
-
-#: src/viewer/viewcontainer.cpp:330 src/mainwindow.cpp:313
-#: src/mainwindow.cpp:343
-#, fuzzy
-msgid "Move Tab Right"
-msgstr "Gerak Tab Kanan"
-
-#: src/viewer/viewcontainer.cpp:561
-#, fuzzy
-msgid "Find Text..."
-msgstr "Cari teks yang dinyatakan"
-
-#: src/viewer/viewcontainer.cpp:563
-msgid "Search for text in the current tab"
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:581
-#, fuzzy, kde-format
-msgid "Channel &List for %1"
-msgstr "&Cari Bantuan"
-
-#: src/viewer/viewcontainer.cpp:587 src/mainwindow.cpp:203
-#, fuzzy
-msgid "Channel &List"
-msgstr "Senarai Arab"
-
-#: src/viewer/viewcontainer.cpp:596 src/mainwindow.cpp:186
-#: src/mainwindow.cpp:773
-#, fuzzy
-msgid "&Open Logfile"
-msgstr "Buka Fail"
-
-#: src/viewer/viewcontainer.cpp:601
-#, fuzzy, kde-format
-msgid "&Open Logfile for %1"
-msgstr "Buka tetingkap lain untuk dokumen"
-
-#: src/viewer/viewcontainer.cpp:612
-#, fuzzy, kde-format
-msgid "&Channel Settings for %1..."
-msgstr "&Cari Bantuan"
-
-#: src/viewer/viewcontainer.cpp:617 src/mainwindow.cpp:195
-#, fuzzy
-msgid "&Channel Settings..."
-msgstr "Tetapan Semasa"
-
-#: src/viewer/viewcontainer.cpp:1673
-#, fuzzy
-msgid "Rename Tab"
-msgstr "Tukar nama"
-
-#: src/viewer/viewcontainer.cpp:1674
-#, fuzzy
-msgid "Enter new tab name:"
-msgstr "Masukkan Katalaluan"
-
-#: src/viewer/viewcontainer.cpp:1743
-#, fuzzy, kde-format
-msgctxt "Default encoding"
-msgid "Default ( %1 )"
-msgstr "Default tarikh (tanpa masa)"
-
-#: src/viewer/viewcontainer.cpp:1778
-#, fuzzy
-msgid "&Rename Tab..."
-msgstr "Tukar nama"
-
-#: src/viewer/viewcontainer.cpp:1923
-msgid "You can only search in text fields."
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:1924
-#, fuzzy
-msgid "Find Text Information"
-msgstr "Cari teks yang dinyatakan"
-
-#: src/viewer/viewcontainer.cpp:2121
-#, kde-format
-msgid "Logfile of %1"
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:2130 src/viewer/viewcontainer.cpp:2131
-#: src/konsolepanel.cpp:27
-#, fuzzy
-msgid "Konsole"
-msgstr "Konsole"
-
-#: src/viewer/viewcontainer.cpp:2141 src/urlcatcher.cpp:84
-#, fuzzy
-msgid "URL Catcher"
-msgstr "Pencekup podcast"
-
-#: src/viewer/viewcontainer.cpp:2493
-msgid ""
-"To know which server to display the channel list for, the list can only be "
-"opened from a query, channel or status window."
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:2523
-msgid ""
-"Using this function may result in a lot of network traffic. If your "
-"connection is not fast enough, it is possible that your client will be "
-"disconnected by the server."
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:2527
-#, fuzzy
-msgid "Channel List Warning"
-msgstr "Label Senarai Semasa"
-
-#: src/viewer/viewcontainer.cpp:2557
-#, fuzzy
-msgid "Watched Nicks"
-msgstr "Tambah sempadan dan legapan kepada pilihan"
 
 #: src/viewer/irccontextmenus.cpp:112
 msgid "Copy Link Address"
@@ -5448,6 +5278,176 @@ msgstr "Sunting Persamaan Latex"
 #, fuzzy
 msgid "&Send"
 msgstr "Hantar Imej"
+
+#: src/viewer/chatwindow.cpp:446
+#, fuzzy, kde-format
+msgid ""
+"\n"
+"*** Logfile started\n"
+"*** on %1\n"
+"\n"
+msgstr "dikemaskini pada %(date)s"
+
+#: src/viewer/statuspanel.cpp:229
+#, kde-format
+msgid ""
+"Do you really want to close '%1'?\n"
+"\n"
+" All associated tabs will be closed as well."
+msgstr ""
+
+#: src/viewer/statuspanel.cpp:230
+#, fuzzy
+msgid "Close Tab"
+msgstr "Awalan &tab:"
+
+#: src/viewer/statuspanel.cpp:239
+#, fuzzy, kde-format
+msgid ""
+"Do you want to disconnect from '%1'?\n"
+"\n"
+" All associated tabs will be closed as well."
+msgstr "Adakah anda pasti untuk menggantung ke cakera?"
+
+#: src/viewer/statuspanel.cpp:240
+#, fuzzy
+msgid "Disconnect From Server"
+msgstr "Pelayan Nama DNS"
+
+#: src/viewer/statuspanel.cpp:241
+msgid "Disconnect"
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:221 src/mainwindow.cpp:291
+#, fuzzy
+msgid "Move Tab Up"
+msgstr "Gerak Tab Kiri"
+
+#: src/viewer/viewcontainer.cpp:229 src/mainwindow.cpp:302
+#, fuzzy
+msgid "Move Tab Down"
+msgstr "Gerak Tab Kiri"
+
+#: src/viewer/viewcontainer.cpp:322 src/mainwindow.cpp:322
+#: src/mainwindow.cpp:334
+#, fuzzy
+msgid "Move Tab Left"
+msgstr "Gerak Tab Kiri"
+
+#: src/viewer/viewcontainer.cpp:330 src/mainwindow.cpp:313
+#: src/mainwindow.cpp:343
+#, fuzzy
+msgid "Move Tab Right"
+msgstr "Gerak Tab Kanan"
+
+#: src/viewer/viewcontainer.cpp:562
+#, fuzzy
+msgid "Find Text..."
+msgstr "Cari teks yang dinyatakan"
+
+#: src/viewer/viewcontainer.cpp:564
+msgid "Search for text in the current tab"
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:582
+#, fuzzy, kde-format
+msgid "Channel &List for %1"
+msgstr "&Cari Bantuan"
+
+#: src/viewer/viewcontainer.cpp:588 src/mainwindow.cpp:203
+#, fuzzy
+msgid "Channel &List"
+msgstr "Senarai Arab"
+
+#: src/viewer/viewcontainer.cpp:597 src/mainwindow.cpp:186
+#: src/mainwindow.cpp:773
+#, fuzzy
+msgid "&Open Logfile"
+msgstr "Buka Fail"
+
+#: src/viewer/viewcontainer.cpp:602
+#, fuzzy, kde-format
+msgid "&Open Logfile for %1"
+msgstr "Buka tetingkap lain untuk dokumen"
+
+#: src/viewer/viewcontainer.cpp:613
+#, fuzzy, kde-format
+msgid "&Channel Settings for %1..."
+msgstr "&Cari Bantuan"
+
+#: src/viewer/viewcontainer.cpp:618 src/mainwindow.cpp:195
+#, fuzzy
+msgid "&Channel Settings..."
+msgstr "Tetapan Semasa"
+
+#: src/viewer/viewcontainer.cpp:1674
+#, fuzzy
+msgid "Rename Tab"
+msgstr "Tukar nama"
+
+#: src/viewer/viewcontainer.cpp:1675
+#, fuzzy
+msgid "Enter new tab name:"
+msgstr "Masukkan Katalaluan"
+
+#: src/viewer/viewcontainer.cpp:1744
+#, fuzzy, kde-format
+msgctxt "Default encoding"
+msgid "Default ( %1 )"
+msgstr "Default tarikh (tanpa masa)"
+
+#: src/viewer/viewcontainer.cpp:1779
+#, fuzzy
+msgid "&Rename Tab..."
+msgstr "Tukar nama"
+
+#: src/viewer/viewcontainer.cpp:1924
+msgid "You can only search in text fields."
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:1925
+#, fuzzy
+msgid "Find Text Information"
+msgstr "Cari teks yang dinyatakan"
+
+#: src/viewer/viewcontainer.cpp:2122
+#, kde-format
+msgid "Logfile of %1"
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:2131 src/viewer/viewcontainer.cpp:2132
+#: src/konsolepanel.cpp:27
+#, fuzzy
+msgid "Konsole"
+msgstr "Konsole"
+
+#: src/viewer/viewcontainer.cpp:2142 src/urlcatcher.cpp:84
+#, fuzzy
+msgid "URL Catcher"
+msgstr "Pencekup podcast"
+
+#: src/viewer/viewcontainer.cpp:2494
+msgid ""
+"To know which server to display the channel list for, the list can only be "
+"opened from a query, channel or status window."
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:2524
+msgid ""
+"Using this function may result in a lot of network traffic. If your "
+"connection is not fast enough, it is possible that your client will be "
+"disconnected by the server."
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:2528
+#, fuzzy
+msgid "Channel List Warning"
+msgstr "Label Senarai Semasa"
+
+#: src/viewer/viewcontainer.cpp:2558
+#, fuzzy
+msgid "Watched Nicks"
+msgstr "Tambah sempadan dan legapan kepada pilihan"
 
 #: src/queuetuner.cpp:234
 #, fuzzy
