@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-16 02:58+0100\n"
+"POT-Creation-Date: 2011-12-12 02:31+0100\n"
 "PO-Revision-Date: 2005-09-29 17:00-0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -160,7 +160,7 @@ msgctxt "(qtundo-format)"
 msgid "Lower Layer"
 msgstr "Turunkan Lapisan"
 
-#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:882
+#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:880
 #, fuzzy
 #| msgid "Boolean Operation"
 msgctxt "(qtundo-format)"
@@ -396,12 +396,6 @@ msgstr "Corak"
 msgid "Flood fill"
 msgstr ""
 
-#: plugins/filtereffects/FloodEffectConfigWidget.cpp:37
-#, fuzzy
-#| msgid "Stroke Color"
-msgid "Flood color"
-msgstr "Warna Coret"
-
 #: plugins/filtereffects/ImageEffect.cpp:35
 #: plugins/filtereffects/ImageEffectFactory.cpp:26
 #, fuzzy
@@ -461,6 +455,12 @@ msgstr ""
 #: plugins/filtereffects/OffsetEffectConfigWidget.cpp:40
 msgid "dy"
 msgstr ""
+
+#: plugins/filtereffects/FloodEffectConfigWidget.cpp:37
+#, fuzzy
+#| msgid "Stroke Color"
+msgid "Flood color"
+msgstr "Warna Coret"
 
 #: plugins/flattenpath/FlattenPathPlugin.cpp:57
 msgid "&Flatten Path..."
@@ -677,63 +677,63 @@ msgstr ""
 msgid "Error deleting layers"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:183
+#: ui/dockers/KarbonLayerModel.cpp:161
 #, fuzzy
 #| msgid "Layers"
 msgid "Layer"
 msgstr "Lapisan"
 
-#: ui/dockers/KarbonLayerModel.cpp:185
+#: ui/dockers/KarbonLayerModel.cpp:163
 #, fuzzy
 #| msgid "group"
 msgctxt "A group of shapes"
 msgid "Group"
 msgstr "kumpulan"
 
-#: ui/dockers/KarbonLayerModel.cpp:187
+#: ui/dockers/KarbonLayerModel.cpp:165
 #, fuzzy
 #| msgid "Spoke"
 msgid "Shape"
 msgstr "Jejari"
 
-#: ui/dockers/KarbonLayerModel.cpp:282
+#: ui/dockers/KarbonLayerModel.cpp:260
 msgctxt "Visibility state of the shape"
 msgid "Visible"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:283
+#: ui/dockers/KarbonLayerModel.cpp:261
 msgctxt "Lock state of the shape"
 msgid "Locked"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:284
+#: ui/dockers/KarbonLayerModel.cpp:262
 msgctxt "The z-index of the shape"
 msgid "zIndex"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:285
+#: ui/dockers/KarbonLayerModel.cpp:263
 #, fuzzy
 #| msgid "Opacity"
 msgctxt "The opacity of the shape"
 msgid "Opacity"
 msgstr "Kelegapan"
 
-#: ui/dockers/KarbonLayerModel.cpp:286
+#: ui/dockers/KarbonLayerModel.cpp:264
 msgctxt "Clipped state of the shape"
 msgid "Clipped"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:286
+#: ui/dockers/KarbonLayerModel.cpp:264
 #, fuzzy
 #| msgid "Style:"
 msgid "yes"
 msgstr "Gaya:"
 
-#: ui/dockers/KarbonLayerModel.cpp:286
+#: ui/dockers/KarbonLayerModel.cpp:264
 msgid "no"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:487
+#: ui/dockers/KarbonLayerModel.cpp:465
 msgctxt "(qtundo-format)"
 msgid "Reparent shapes"
 msgstr ""
@@ -832,6 +832,24 @@ msgstr "Coret"
 msgid "Fill:"
 msgstr "Isi"
 
+#: ui/widgets/KarbonConfigInterfacePage.cpp:71
+#, fuzzy
+#| msgid "Show status bar"
+msgid "Show status bar:"
+msgstr "Papar bar status"
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:76
+msgid "Number of recent files:"
+msgstr "Bilangan fail terbaru:"
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:82
+msgid "Palette font size:"
+msgstr ""
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:88
+msgid "Canvas color:"
+msgstr ""
+
 #: ui/widgets/KarbonGradientEditWidget.cpp:167
 msgid "Target:"
 msgstr "Sasaran:"
@@ -906,30 +924,12 @@ msgstr "Warna Coret"
 msgid "&Add to Predefined Gradients"
 msgstr "&Tambah ke Kecerunan Pratentu"
 
-#: ui/widgets/KarbonConfigInterfacePage.cpp:71
-#, fuzzy
-#| msgid "Show status bar"
-msgid "Show status bar:"
-msgstr "Papar bar status"
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:76
-msgid "Number of recent files:"
-msgstr "Bilangan fail terbaru:"
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:82
-msgid "Palette font size:"
-msgstr ""
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:88
-msgid "Canvas color:"
-msgstr ""
-
 #: ui/widgets/KarbonPaletteBarWidget.cpp:58
 #, fuzzy
 msgid "Select palette"
 msgstr "Pilih Alat Nod "
 
-#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:552
+#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:550
 #, fuzzy
 #| msgid "Insert Sinus"
 msgctxt "(qtundo-format)"
@@ -947,239 +947,6 @@ msgstr "Dokumen OASIS tak sah. Tiada teg office:lukisan ditemui."
 #: ui/KarbonPart.cpp:222
 msgid "Invalid OASIS document. No draw:page tag found."
 msgstr "Dokumen OASIS tak sah. Tiada teg lukis:halaman ditemui."
-
-#: ui/KarbonZoomController.cpp:62
-#, fuzzy
-msgid "Zoom"
-msgstr "Alat  Zum"
-
-#: ui/KarbonView.cpp:481
-#, fuzzy
-#| msgid "Choose Pattern to Add"
-msgid "Choose Graphic to Add"
-msgstr "Pilih Corak ke Tambah"
-
-#: ui/KarbonView.cpp:523
-msgid "Could not load image."
-msgstr ""
-
-#: ui/KarbonView.cpp:523 ui/KarbonView.cpp:528 ui/KarbonView.cpp:535
-#, fuzzy
-#| msgid "&Import Graphic..."
-msgid "Import graphic"
-msgstr "&Import Grafik..."
-
-#: ui/KarbonView.cpp:528 ui/KarbonView.cpp:535
-msgid "Could not create image shape."
-msgstr ""
-
-#: ui/KarbonView.cpp:779
-#, fuzzy
-#| msgid "H&orizontal:"
-msgctxt "(qtundo-format)"
-msgid "Mirror Horizontally"
-msgstr "&Mendatar:"
-
-#: ui/KarbonView.cpp:781
-#, fuzzy
-#| msgid "H&orizontal:"
-msgctxt "(qtundo-format)"
-msgid "Mirror Vertically"
-msgstr "&Mendatar:"
-
-#: ui/KarbonView.cpp:783
-#, fuzzy
-#| msgid "H&orizontal:"
-msgctxt "(qtundo-format)"
-msgid "Mirror Horizontally and Vertically"
-msgstr "&Mendatar:"
-
-#: ui/KarbonView.cpp:993
-#, fuzzy
-#| msgid "View &Mode"
-msgid "Outline &Mode"
-msgstr "Paparkan &Mod"
-
-#: ui/KarbonView.cpp:997
-msgid "Show Page Margins"
-msgstr ""
-
-#: ui/KarbonView.cpp:1015
-msgid "&Import Graphic..."
-msgstr "&Import Grafik..."
-
-#: ui/KarbonView.cpp:1019
-msgid "D&elete"
-msgstr "&Hapus"
-
-#: ui/KarbonView.cpp:1025
-#, fuzzy
-#| msgid "Hide Grid"
-msgid "Edit Guides"
-msgstr "Sembunyikan Grid"
-
-#: ui/KarbonView.cpp:1031
-#, fuzzy
-#| msgid "&Duplicate"
-msgctxt "Duplicate selection"
-msgid "&Duplicate"
-msgstr "&Salinan Pendua"
-
-#: ui/KarbonView.cpp:1036
-#, fuzzy
-msgid "Distribute Center (Horizontal)"
-msgstr "Jajarkan Ke tengah (Mendatar)"
-
-#: ui/KarbonView.cpp:1040
-#, fuzzy
-msgid "Distribute Gaps (Horizontal)"
-msgstr "Jajarkan Ke tengah (Mendatar)"
-
-#: ui/KarbonView.cpp:1044
-#, fuzzy
-msgid "Distribute Left Borders"
-msgstr "Hapuskan Objek"
-
-#: ui/KarbonView.cpp:1048
-#, fuzzy
-msgid "Distribute Right Borders"
-msgstr "Hapuskan Objek"
-
-#: ui/KarbonView.cpp:1052
-#, fuzzy
-msgid "Distribute Center (Vertical)"
-msgstr "Jajarkan keTengah (Menegak)"
-
-#: ui/KarbonView.cpp:1056
-#, fuzzy
-msgid "Distribute Gaps (Vertical)"
-msgstr "Jajarkan Ke tengah (Mendatar)"
-
-#: ui/KarbonView.cpp:1060
-#, fuzzy
-msgid "Distribute Bottom Borders"
-msgstr "Hapuskan Objek"
-
-#: ui/KarbonView.cpp:1064
-#, fuzzy
-msgid "Distribute Top Borders"
-msgstr "Hapuskan Objek"
-
-#: ui/KarbonView.cpp:1068
-msgid "Show Rulers"
-msgstr "Papar Pembaris"
-
-#: ui/KarbonView.cpp:1070
-#, fuzzy
-msgid "Shows or hides rulers"
-msgstr "Paparkan atau sembunyikan pembaris."
-
-#: ui/KarbonView.cpp:1081
-msgid "Show Color Palette"
-msgstr ""
-
-#: ui/KarbonView.cpp:1083
-#, fuzzy
-msgid "Show or hide color palette"
-msgstr "Paparkan atau sembunyikan pembaris."
-
-#: ui/KarbonView.cpp:1087
-msgid "Snap to Grid"
-msgstr "Petik ke Grid"
-
-#: ui/KarbonView.cpp:1089
-#, fuzzy
-msgid "Snaps to grid"
-msgstr "Petik ke grid."
-
-#: ui/KarbonView.cpp:1101
-#, fuzzy
-#| msgid "&Object"
-msgid "&Clip Object"
-msgstr "&Objek"
-
-#: ui/KarbonView.cpp:1105
-#, fuzzy
-#| msgid "&Ungroup Objects"
-msgid "&Unclip Objects"
-msgstr "&Leraikan Objek"
-
-#: ui/KarbonView.cpp:1109
-msgid "Mirror Vertically"
-msgstr ""
-
-#: ui/KarbonView.cpp:1113
-#, fuzzy
-#| msgid "H&orizontal:"
-msgid "Mirror Horizontally"
-msgstr "&Mendatar:"
-
-#: ui/KarbonView.cpp:1120
-msgid "&Close Path"
-msgstr "&Tutup Laluan"
-
-#: ui/KarbonView.cpp:1126
-#, fuzzy
-msgid "Com&bine Path"
-msgstr "Tutup Laluan"
-
-#: ui/KarbonView.cpp:1132
-#, fuzzy
-msgid "Se&parate Path"
-msgstr "Laluan Mendatar"
-
-#: ui/KarbonView.cpp:1138
-#, fuzzy
-#| msgid "&Close Path"
-msgid "Re&verse Path"
-msgstr "&Tutup Laluan"
-
-#: ui/KarbonView.cpp:1144
-#, fuzzy
-#| msgid "Edit Base Path"
-msgid "Intersect Paths"
-msgstr "Edit Laluan Asas"
-
-#: ui/KarbonView.cpp:1150
-#, fuzzy
-msgid "Subtract Paths"
-msgstr "Laluan Mendatar"
-
-#: ui/KarbonView.cpp:1156
-#, fuzzy
-#| msgid "Edit Base Path"
-msgid "Unite Paths"
-msgstr "Edit Laluan Asas"
-
-#: ui/KarbonView.cpp:1162
-msgid "Exclude Paths"
-msgstr ""
-
-#: ui/KarbonView.cpp:1168
-#, fuzzy
-#| msgid "Snap to Grid"
-msgid "Snap Path to Grid"
-msgstr "Petik ke Grid"
-
-#: ui/KarbonView.cpp:1175
-msgid "Configure Karbon..."
-msgstr "Konfigur Karbon..."
-
-#: ui/KarbonView.cpp:1179
-msgid "Page &Layout..."
-msgstr "&Bentangan Halaman..."
-
-#: ui/KarbonView.cpp:1184
-#, fuzzy
-#| msgid "Selection"
-msgid "Zoom to Selection"
-msgstr "Pemilihan "
-
-#: ui/KarbonView.cpp:1188
-#, fuzzy
-#| msgid "Selection"
-msgid "Zoom to Drawing"
-msgstr "Pemilihan "
 
 #: ui/KarbonAboutData.h:26
 msgid "A Vector Graphics Drawing Application."
@@ -1249,6 +1016,239 @@ msgstr ""
 #: ui/KarbonAboutData.h:81
 msgid "Helpful patches and advice"
 msgstr ""
+
+#: ui/KarbonView.cpp:479
+#, fuzzy
+#| msgid "Choose Pattern to Add"
+msgid "Choose Graphic to Add"
+msgstr "Pilih Corak ke Tambah"
+
+#: ui/KarbonView.cpp:521
+msgid "Could not load image."
+msgstr ""
+
+#: ui/KarbonView.cpp:521 ui/KarbonView.cpp:526 ui/KarbonView.cpp:533
+#, fuzzy
+#| msgid "&Import Graphic..."
+msgid "Import graphic"
+msgstr "&Import Grafik..."
+
+#: ui/KarbonView.cpp:526 ui/KarbonView.cpp:533
+msgid "Could not create image shape."
+msgstr ""
+
+#: ui/KarbonView.cpp:777
+#, fuzzy
+#| msgid "H&orizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Horizontally"
+msgstr "&Mendatar:"
+
+#: ui/KarbonView.cpp:779
+#, fuzzy
+#| msgid "H&orizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Vertically"
+msgstr "&Mendatar:"
+
+#: ui/KarbonView.cpp:781
+#, fuzzy
+#| msgid "H&orizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Horizontally and Vertically"
+msgstr "&Mendatar:"
+
+#: ui/KarbonView.cpp:991
+#, fuzzy
+#| msgid "View &Mode"
+msgid "Outline &Mode"
+msgstr "Paparkan &Mod"
+
+#: ui/KarbonView.cpp:995
+msgid "Show Page Margins"
+msgstr ""
+
+#: ui/KarbonView.cpp:1013
+msgid "&Import Graphic..."
+msgstr "&Import Grafik..."
+
+#: ui/KarbonView.cpp:1017
+msgid "D&elete"
+msgstr "&Hapus"
+
+#: ui/KarbonView.cpp:1023
+#, fuzzy
+#| msgid "Hide Grid"
+msgid "Edit Guides"
+msgstr "Sembunyikan Grid"
+
+#: ui/KarbonView.cpp:1029
+#, fuzzy
+#| msgid "&Duplicate"
+msgctxt "Duplicate selection"
+msgid "&Duplicate"
+msgstr "&Salinan Pendua"
+
+#: ui/KarbonView.cpp:1034
+#, fuzzy
+msgid "Distribute Center (Horizontal)"
+msgstr "Jajarkan Ke tengah (Mendatar)"
+
+#: ui/KarbonView.cpp:1038
+#, fuzzy
+msgid "Distribute Gaps (Horizontal)"
+msgstr "Jajarkan Ke tengah (Mendatar)"
+
+#: ui/KarbonView.cpp:1042
+#, fuzzy
+msgid "Distribute Left Borders"
+msgstr "Hapuskan Objek"
+
+#: ui/KarbonView.cpp:1046
+#, fuzzy
+msgid "Distribute Right Borders"
+msgstr "Hapuskan Objek"
+
+#: ui/KarbonView.cpp:1050
+#, fuzzy
+msgid "Distribute Center (Vertical)"
+msgstr "Jajarkan keTengah (Menegak)"
+
+#: ui/KarbonView.cpp:1054
+#, fuzzy
+msgid "Distribute Gaps (Vertical)"
+msgstr "Jajarkan Ke tengah (Mendatar)"
+
+#: ui/KarbonView.cpp:1058
+#, fuzzy
+msgid "Distribute Bottom Borders"
+msgstr "Hapuskan Objek"
+
+#: ui/KarbonView.cpp:1062
+#, fuzzy
+msgid "Distribute Top Borders"
+msgstr "Hapuskan Objek"
+
+#: ui/KarbonView.cpp:1066
+msgid "Show Rulers"
+msgstr "Papar Pembaris"
+
+#: ui/KarbonView.cpp:1068
+#, fuzzy
+msgid "Shows or hides rulers"
+msgstr "Paparkan atau sembunyikan pembaris."
+
+#: ui/KarbonView.cpp:1079
+msgid "Show Color Palette"
+msgstr ""
+
+#: ui/KarbonView.cpp:1081
+#, fuzzy
+msgid "Show or hide color palette"
+msgstr "Paparkan atau sembunyikan pembaris."
+
+#: ui/KarbonView.cpp:1085
+msgid "Snap to Grid"
+msgstr "Petik ke Grid"
+
+#: ui/KarbonView.cpp:1087
+#, fuzzy
+msgid "Snaps to grid"
+msgstr "Petik ke grid."
+
+#: ui/KarbonView.cpp:1099
+#, fuzzy
+#| msgid "&Object"
+msgid "&Clip Object"
+msgstr "&Objek"
+
+#: ui/KarbonView.cpp:1103
+#, fuzzy
+#| msgid "&Ungroup Objects"
+msgid "&Unclip Objects"
+msgstr "&Leraikan Objek"
+
+#: ui/KarbonView.cpp:1107
+msgid "Mirror Vertically"
+msgstr ""
+
+#: ui/KarbonView.cpp:1111
+#, fuzzy
+#| msgid "H&orizontal:"
+msgid "Mirror Horizontally"
+msgstr "&Mendatar:"
+
+#: ui/KarbonView.cpp:1118
+msgid "&Close Path"
+msgstr "&Tutup Laluan"
+
+#: ui/KarbonView.cpp:1124
+#, fuzzy
+msgid "Com&bine Path"
+msgstr "Tutup Laluan"
+
+#: ui/KarbonView.cpp:1130
+#, fuzzy
+msgid "Se&parate Path"
+msgstr "Laluan Mendatar"
+
+#: ui/KarbonView.cpp:1136
+#, fuzzy
+#| msgid "&Close Path"
+msgid "Re&verse Path"
+msgstr "&Tutup Laluan"
+
+#: ui/KarbonView.cpp:1142
+#, fuzzy
+#| msgid "Edit Base Path"
+msgid "Intersect Paths"
+msgstr "Edit Laluan Asas"
+
+#: ui/KarbonView.cpp:1148
+#, fuzzy
+msgid "Subtract Paths"
+msgstr "Laluan Mendatar"
+
+#: ui/KarbonView.cpp:1154
+#, fuzzy
+#| msgid "Edit Base Path"
+msgid "Unite Paths"
+msgstr "Edit Laluan Asas"
+
+#: ui/KarbonView.cpp:1160
+msgid "Exclude Paths"
+msgstr ""
+
+#: ui/KarbonView.cpp:1166
+#, fuzzy
+#| msgid "Snap to Grid"
+msgid "Snap Path to Grid"
+msgstr "Petik ke Grid"
+
+#: ui/KarbonView.cpp:1173
+msgid "Configure Karbon..."
+msgstr "Konfigur Karbon..."
+
+#: ui/KarbonView.cpp:1177
+msgid "Page &Layout..."
+msgstr "&Bentangan Halaman..."
+
+#: ui/KarbonView.cpp:1182
+#, fuzzy
+#| msgid "Selection"
+msgid "Zoom to Selection"
+msgstr "Pemilihan "
+
+#: ui/KarbonView.cpp:1186
+#, fuzzy
+#| msgid "Selection"
+msgid "Zoom to Drawing"
+msgstr "Pemilihan "
+
+#: ui/KarbonZoomController.cpp:62
+#, fuzzy
+msgid "Zoom"
+msgstr "Alat  Zum"
 
 #: main.cpp:43
 msgid "File to open"
