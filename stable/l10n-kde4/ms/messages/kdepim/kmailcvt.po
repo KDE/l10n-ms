@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:52+0200\n"
+"POT-Creation-Date: 2011-12-17 11:21+0100\n"
 "PO-Revision-Date: 2005-10-10 08:43+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -33,8 +33,8 @@ msgstr ""
 
 #: filter_evolution.cxx:56 filter_evolution_v2.cxx:63
 #: filter_kmail_maildir.cxx:55 filter_oe.cxx:57 filter_opera.cxx:159
-#: filter_outlook.cxx:42 filter_plain.cxx:42 filter_pmail.cxx:52
-#: filter_sylpheed.cxx:54 filter_thebat.cxx:59 filter_thunderbird.cxx:63
+#: filter_outlook.cxx:42 filter_plain.cxx:42 filter_sylpheed.cxx:54
+#: filter_thebat.cxx:59 filter_thunderbird.cxx:63 filter_pmail.cxx:52
 msgid "No directory selected."
 msgstr "Tiada direktori dipilih"
 
@@ -46,17 +46,17 @@ msgstr "Tiada fail ditemui untuk import."
 
 #: filter_evolution.cxx:75 filter_evolution_v2.cxx:98
 #: filter_kmail_maildir.cxx:81 filter_mailapp.cxx:114 filter_mbox.cxx:135
-#: filter_opera.cxx:128 filter_plain.cxx:78 filter_pmail.cxx:75
-#: filter_sylpheed.cxx:76 filter_thebat.cxx:81 filter_thunderbird.cxx:97
+#: filter_opera.cxx:128 filter_plain.cxx:78 filter_sylpheed.cxx:76
+#: filter_thebat.cxx:81 filter_thunderbird.cxx:97 filter_pmail.cxx:75
 #, kde-format
 msgid "Finished importing emails from %1"
 msgstr "Selesai mengimpot e-mel dari %1"
 
 #: filter_evolution.cxx:123 filter_evolution_v2.cxx:161 filter_lnotes.cxx:87
 #: filter_mailapp.cxx:57 filter_mbox.cxx:53 filter_opera.cxx:70
-#: filter_outlook.cxx:57 filter_pmail.cxx:162 filter_pmail.cxx:230
-#: filter_pmail.cxx:248 filter_pmail.cxx:287 filter_thebat.cxx:149
-#: filter_thunderbird.cxx:160
+#: filter_outlook.cxx:57 filter_thebat.cxx:149 filter_thunderbird.cxx:160
+#: filter_pmail.cxx:161 filter_pmail.cxx:229 filter_pmail.cxx:247
+#: filter_pmail.cxx:286
 #, kde-format
 msgid "Unable to open %1, skipping"
 msgstr "Tidak dapat membuka %1, melangkau"
@@ -260,7 +260,7 @@ msgstr "Fail mbox (*)"
 msgid "Importing emails from %1"
 msgstr "Mengimport e-mel dari %1..."
 
-#: filter_lnotes.cxx:107 filter_pmail.cxx:272
+#: filter_lnotes.cxx:107 filter_pmail.cxx:271
 #, kde-format
 msgid "Message %1"
 msgstr "Mesej %1"
@@ -453,53 +453,6 @@ msgstr ""
 "awalan PLAIN-</p><p>Penapis ini akan mengimport semua e-mel  .msg, .eml dan ."
 "txt.</p>"
 
-#: filter_pmail.cxx:28
-msgid "Import Folders From Pegasus-Mail"
-msgstr "Import folder dari Mel Pegasus"
-
-#: filter_pmail.cxx:30
-msgid ""
-"<p>Select the Pegasus-Mail directory on your system (containing *.CNM, *.PMM "
-"and *.MBX files). On many systems this is stored in C:\\pmail\\mail or C:"
-"\\pmail\\mail\\admin</p><p><b>Note:</b> Since it is possible to recreate the "
-"folder structure, the folders will be stored under: \"PegasusMail-Import\".</"
-"p>"
-msgstr ""
-"<p>Pilih direktori  Pegasus-Mail dalam sistem anda (mengandungi fail*.CNM, *."
-"PMM dan *.MBX). Dalam kebanyakan sistem, ia disimpan dalam C:\\pmail\\mail "
-"atau C:\\pmail\\mel\\admin</p><p><b>Perhatian:</b> Oleh sebab struktur "
-"folder boleh dicipta, folder akan disimpan di bawah: \"PegasusMail-Import\"."
-"</p>"
-
-#: filter_pmail.cxx:65
-msgid ""
-"Cannot parse the folder structure; continuing import without subfolder "
-"support."
-msgstr ""
-"Tidak dapat mengkaji hurai struktur folder; import diteruskan tanpa sokongan "
-"subfolder."
-
-#: filter_pmail.cxx:68
-msgid "Importing new mail files ('.cnm')..."
-msgstr "Mengimport fail mel baru ('.cnm')..."
-
-#: filter_pmail.cxx:70
-msgid "Importing mail folders ('.pmm')..."
-msgstr "Mengimport folder mel ('.pmm')..."
-
-#: filter_pmail.cxx:72
-msgid "Importing 'UNIX' mail folders ('.mbx')..."
-msgstr "Mengimport folder mel  'UNIX'  ('.mbx')..."
-
-#: filter_pmail.cxx:172 filter_pmail.cxx:250
-#, kde-format
-msgid "Importing %1"
-msgstr "Mengimport %1"
-
-#: filter_pmail.cxx:283
-msgid "Parsing the folder structure..."
-msgstr "Mengkaji hurai struktur folder..."
-
 #: filter_sylpheed.cxx:26
 msgid "Import Sylpheed Maildirs and Folder Structure"
 msgstr "Import Meldir Sylpheed dan Struktur Folder"
@@ -681,6 +634,53 @@ msgstr ""
 #: main.cpp:36
 msgid "Port to Akonadi"
 msgstr ""
+
+#: filter_pmail.cxx:28
+msgid "Import Folders From Pegasus-Mail"
+msgstr "Import folder dari Mel Pegasus"
+
+#: filter_pmail.cxx:30
+msgid ""
+"<p>Select the Pegasus-Mail directory on your system (containing *.CNM, *.PMM "
+"and *.MBX files). On many systems this is stored in C:\\pmail\\mail or C:"
+"\\pmail\\mail\\admin</p><p><b>Note:</b> Since it is possible to recreate the "
+"folder structure, the folders will be stored under: \"PegasusMail-Import\".</"
+"p>"
+msgstr ""
+"<p>Pilih direktori  Pegasus-Mail dalam sistem anda (mengandungi fail*.CNM, *."
+"PMM dan *.MBX). Dalam kebanyakan sistem, ia disimpan dalam C:\\pmail\\mail "
+"atau C:\\pmail\\mel\\admin</p><p><b>Perhatian:</b> Oleh sebab struktur "
+"folder boleh dicipta, folder akan disimpan di bawah: \"PegasusMail-Import\"."
+"</p>"
+
+#: filter_pmail.cxx:65
+msgid ""
+"Cannot parse the folder structure; continuing import without subfolder "
+"support."
+msgstr ""
+"Tidak dapat mengkaji hurai struktur folder; import diteruskan tanpa sokongan "
+"subfolder."
+
+#: filter_pmail.cxx:68
+msgid "Importing new mail files ('.cnm')..."
+msgstr "Mengimport fail mel baru ('.cnm')..."
+
+#: filter_pmail.cxx:70
+msgid "Importing mail folders ('.pmm')..."
+msgstr "Mengimport folder mel ('.pmm')..."
+
+#: filter_pmail.cxx:72
+msgid "Importing 'UNIX' mail folders ('.mbx')..."
+msgstr "Mengimport folder mel  'UNIX'  ('.mbx')..."
+
+#: filter_pmail.cxx:171 filter_pmail.cxx:249
+#, kde-format
+msgid "Importing %1"
+msgstr "Mengimport %1"
+
+#: filter_pmail.cxx:282
+msgid "Parsing the folder structure..."
+msgstr "Mengkaji hurai struktur folder..."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
