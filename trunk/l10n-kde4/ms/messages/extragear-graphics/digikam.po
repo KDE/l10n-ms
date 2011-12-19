@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-17 03:11+0100\n"
+"POT-Creation-Date: 2011-12-19 10:06+0100\n"
 "PO-Revision-Date: 2010-08-27 21:57+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -2476,7 +2476,7 @@ msgstr ""
 #: libs/imageproperties/imagepropertiessidebar.cpp:274
 #: libs/widgets/q3support/thumbbar.cpp:1566
 #: utilities/cameragui/views/cameraiconviewtooltip.cpp:261
-#: utilities/slideshow/slideshow.cpp:467
+#: utilities/slideshow/slideshow.cpp:493
 #, kde-format
 msgid "%1 ISO"
 msgstr ""
@@ -2990,49 +2990,6 @@ msgid ""
 "style='margin-bottom: 0px; margin-left:20px;'>The digiKam team</p>"
 msgstr ""
 
-#: digikam/views/digikamview.cpp:283
-#: utilities/queuemanager/views/toolslistview.cpp:75
-#, fuzzy
-msgid "Filters"
-msgstr "Penapis"
-
-#: digikam/views/digikamview.cpp:900
-msgid "Fuzzy Sketch Search"
-msgstr ""
-
-#: digikam/views/digikamview.cpp:904
-msgid "Fuzzy Image Search"
-msgstr ""
-
-#: digikam/views/digikamview.cpp:908
-msgid "Map Search"
-msgstr ""
-
-#: digikam/views/digikamview.cpp:913 libs/database/schemaupdater.cpp:965
-#, fuzzy
-msgid "Last Search"
-msgstr "Carian Terakhir"
-
-#: digikam/views/digikamview.cpp:917 digikam/views/leftsidebarwidgets.cpp:664
-msgid "Timeline"
-msgstr ""
-
-#: digikam/views/digikamview.cpp:1824
-#, kde-format
-msgid "Preparing slideshow of 1 image. Please wait..."
-msgid_plural "Preparing slideshow of %1 images. Please wait..."
-msgstr[0] ""
-msgstr[1] ""
-
-#: digikam/views/digikamview.cpp:1915
-#, kde-format
-msgid "Failed to revise Exif orientation for file %1."
-msgstr ""
-
-#: digikam/views/digikamview.cpp:1920
-msgid "Failed to revise Exif orientation these files:"
-msgstr ""
-
 #: digikam/views/leftsidebarwidgets.cpp:335
 #, fuzzy
 msgid "Calendar"
@@ -3113,6 +3070,10 @@ msgid ""
 "to a new search virtual Album using the name set on the left."
 msgstr ""
 
+#: digikam/views/leftsidebarwidgets.cpp:664 digikam/views/digikamview.cpp:917
+msgid "Timeline"
+msgstr ""
+
 #: digikam/views/leftsidebarwidgets.cpp:914
 #, fuzzy
 msgctxt "Search images, access stored searches"
@@ -3140,6 +3101,45 @@ msgstr ""
 #: digikam/views/leftsidebarwidgets.cpp:1183
 msgctxt "Browse images sorted by depicted people"
 msgid "People"
+msgstr ""
+
+#: digikam/views/digikamview.cpp:283
+#: utilities/queuemanager/views/toolslistview.cpp:75
+#, fuzzy
+msgid "Filters"
+msgstr "Penapis"
+
+#: digikam/views/digikamview.cpp:900
+msgid "Fuzzy Sketch Search"
+msgstr ""
+
+#: digikam/views/digikamview.cpp:904
+msgid "Fuzzy Image Search"
+msgstr ""
+
+#: digikam/views/digikamview.cpp:908
+msgid "Map Search"
+msgstr ""
+
+#: digikam/views/digikamview.cpp:913 libs/database/schemaupdater.cpp:965
+#, fuzzy
+msgid "Last Search"
+msgstr "Carian Terakhir"
+
+#: digikam/views/digikamview.cpp:1824
+#, kde-format
+msgid "Preparing slideshow of 1 image. Please wait..."
+msgid_plural "Preparing slideshow of %1 images. Please wait..."
+msgstr[0] ""
+msgstr[1] ""
+
+#: digikam/views/digikamview.cpp:1916
+#, kde-format
+msgid "Failed to revise Exif orientation for file %1."
+msgstr ""
+
+#: digikam/views/digikamview.cpp:1921
+msgid "Failed to revise Exif orientation these files:"
 msgstr ""
 
 #: imageplugins/color/adjustcurvestool.cpp:97
@@ -11074,8 +11074,8 @@ msgstr ""
 msgid "Set this option to display the image dimensions in pixels."
 msgstr ""
 
-#: showfoto/setup/setuptooltip.cpp:175 utilities/setup/setuptooltip.cpp:175
-#: utilities/setup/setupslideshow.cpp:114
+#: showfoto/setup/setuptooltip.cpp:175 utilities/setup/setupslideshow.cpp:119
+#: utilities/setup/setuptooltip.cpp:175
 msgid "Show camera make and model"
 msgstr ""
 
@@ -11093,8 +11093,8 @@ msgstr ""
 msgid "Set this option to display the date when the image was taken."
 msgstr ""
 
-#: showfoto/setup/setuptooltip.cpp:182 utilities/setup/setuptooltip.cpp:182
-#: utilities/setup/setupslideshow.cpp:108
+#: showfoto/setup/setuptooltip.cpp:182 utilities/setup/setupslideshow.cpp:113
+#: utilities/setup/setuptooltip.cpp:182
 msgid "Show camera aperture and focal length"
 msgstr ""
 
@@ -11104,8 +11104,8 @@ msgid ""
 "take the image."
 msgstr ""
 
-#: showfoto/setup/setuptooltip.cpp:186 utilities/setup/setuptooltip.cpp:186
-#: utilities/setup/setupslideshow.cpp:111
+#: showfoto/setup/setuptooltip.cpp:186 utilities/setup/setupslideshow.cpp:116
+#: utilities/setup/setuptooltip.cpp:186
 msgid "Show camera exposure and sensitivity"
 msgstr ""
 
@@ -16598,6 +16598,96 @@ msgid ""
 "href='http://www.teaser.fr/~hfiguiere/linux/digicam.html'>this URL</a>.</p>"
 msgstr ""
 
+#: utilities/setup/setupslideshow.cpp:97
+msgid "&Delay between images:"
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:98
+msgid "The delay, in seconds, between images."
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:100
+msgid "Start with current image"
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:101
+msgid ""
+"If this option is enabled, the Slideshow will be started with the current "
+"image selected in the images list."
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:104
+msgid "Slideshow runs in a loop"
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:105
+msgid "Run the slideshow in a loop."
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:107
+msgid "Show image file name"
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:108
+msgid "Show the image file name at the bottom of the screen."
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:110
+msgid "Show image creation date"
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:111
+msgid "Show the image creation time/date at the bottom of the screen."
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:114
+msgid "Show the camera aperture and focal length at the bottom of the screen."
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:117
+msgid "Show the camera exposure and sensitivity at the bottom of the screen."
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:120
+msgid "Show the camera make and model at the bottom of the screen."
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:122 utilities/setup/setuptooltip.cpp:220
+msgid "Show image caption"
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:123
+msgid "Show the image caption at the bottom of the screen."
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:125
+#, fuzzy
+msgid "Show image title"
+msgstr "Format Fail"
+
+#: utilities/setup/setupslideshow.cpp:126
+msgid "Show the image title at the bottom of the screen."
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:128
+msgid "Show image caption if it hasn't title"
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:129
+msgid ""
+"Show the image caption at the bottom of the screen if no titles existed."
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:131 utilities/setup/setuptooltip.cpp:226
+msgid "Show image labels"
+msgstr ""
+
+#: utilities/setup/setupslideshow.cpp:132
+msgid ""
+"Show the digiKam image color label, pick label, and rating at the bottom of "
+"the screen."
+msgstr ""
+
 #: utilities/setup/setupfacetags.cpp:90
 msgid ""
 "The accuracy of face detection.\n"
@@ -17088,10 +17178,6 @@ msgstr ""
 msgid "Set this option to display the album name."
 msgstr ""
 
-#: utilities/setup/setuptooltip.cpp:220 utilities/setup/setupslideshow.cpp:117
-msgid "Show image caption"
-msgstr ""
-
 #: utilities/setup/setuptooltip.cpp:221
 msgid "Set this option to display the image captions."
 msgstr ""
@@ -17102,10 +17188,6 @@ msgstr ""
 
 #: utilities/setup/setuptooltip.cpp:224
 msgid "Set this option to display the image tags."
-msgstr ""
-
-#: utilities/setup/setuptooltip.cpp:226 utilities/setup/setupslideshow.cpp:120
-msgid "Show image labels"
 msgstr ""
 
 #: utilities/setup/setuptooltip.cpp:227
@@ -17230,70 +17312,6 @@ msgid ""
 "<p>Below are the locations of your root albums used to store your images. "
 "Write access is necessary to be able to edit images in these albums.</p><p></"
 "p>"
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:92
-msgid "&Delay between images:"
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:93
-msgid "The delay, in seconds, between images."
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:95
-msgid "Start with current image"
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:96
-msgid ""
-"If this option is enabled, the Slideshow will be started with the current "
-"image selected in the images list."
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:99
-msgid "Slideshow runs in a loop"
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:100
-msgid "Run the slideshow in a loop."
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:102
-msgid "Show image file name"
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:103
-msgid "Show the image file name at the bottom of the screen."
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:105
-msgid "Show image creation date"
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:106
-msgid "Show the image creation time/date at the bottom of the screen."
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:109
-msgid "Show the camera aperture and focal length at the bottom of the screen."
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:112
-msgid "Show the camera exposure and sensitivity at the bottom of the screen."
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:115
-msgid "Show the camera make and model at the bottom of the screen."
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:118
-msgid "Show the image caption at the bottom of the screen."
-msgstr ""
-
-#: utilities/setup/setupslideshow.cpp:121
-msgid ""
-"Show the digiKam image color label, pick label, and rating at the bottom of "
-"the screen."
 msgstr ""
 
 #: utilities/setup/setupcamera.cpp:230
@@ -17464,22 +17482,22 @@ msgstr ""
 msgid "Example:"
 msgstr "Nama:"
 
-#: utilities/slideshow/slideshow.cpp:545
+#: utilities/slideshow/slideshow.cpp:571
 #, kde-format
 msgid ""
 "Cannot display image\n"
 "\"%1\""
 msgstr ""
 
-#: utilities/slideshow/slideshow.cpp:573
+#: utilities/slideshow/slideshow.cpp:599
 msgid "Slideshow Completed."
 msgstr ""
 
-#: utilities/slideshow/slideshow.cpp:574
+#: utilities/slideshow/slideshow.cpp:600
 msgid "Click To Exit..."
 msgstr ""
 
-#: utilities/slideshow/slideshow.cpp:863
+#: utilities/slideshow/slideshow.cpp:889
 msgctxt ""
 "Reason for inhibiting the screensaver activation, when the presentation mode "
 "is active"
