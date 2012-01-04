@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevcmake\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-12 13:54+0200\n"
+"POT-Creation-Date: 2012-01-04 12:27+0100\n"
 "PO-Revision-Date: 2010-06-12 01:20+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -17,6 +17,79 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: cmakedocumentation.cpp:43
+msgid "CMake Documentation"
+msgstr ""
+
+#: cmakedocumentation.cpp:43
+msgid "Support for CMake documentation"
+msgstr ""
+
+#: cmakedocumentation.cpp:123
+#, kde-format
+msgid "<br /><em>Cache Value:</em> %1\n"
+msgstr ""
+
+#: cmakedocumentation.cpp:126
+#, kde-format
+msgid "<br /><em>Cache Documentation:</em> %1\n"
+msgstr ""
+
+#: parser/cmakeprojectvisitor.cpp:2203
+#, kde-format
+msgid "%1 is a deprecated command and should not be used"
+msgstr ""
+
+#: parser/cmakeprojectvisitor.cpp:2221
+msgid "Unfinished function. "
+msgstr ""
+
+#: settings/cmakecachemodel.cpp:34
+#, fuzzy
+msgid "Name"
+msgstr "Nama"
+
+#: settings/cmakecachemodel.cpp:35
+#, fuzzy
+msgid "Type"
+msgstr "Jenis"
+
+#: settings/cmakecachemodel.cpp:36
+#, fuzzy
+msgid "Value"
+msgstr "Nilai"
+
+#: settings/cmakecachemodel.cpp:37
+#, fuzzy
+msgid "Comment"
+msgstr "Komen"
+
+#. i18n: file: settings/cmakebuildsettings.ui:107
+#. i18n: ectx: property (title), widget (QGroupBox, advancedBox)
+#: settings/cmakecachemodel.cpp:38 rc.cpp:38
+#, fuzzy
+msgid "Advanced"
+msgstr "Lanjutan"
+
+#: settings/cmakepreferences.cpp:162
+#, kde-format
+msgid ""
+"Could not write CMake settings to file '%1'.\n"
+"Check that you have write access to it"
+msgstr ""
+
+#: settings/cmakepreferences.cpp:319
+#, kde-format
+msgid ""
+"The %1 directory is about to be removed in KDevelop's list.\n"
+"Do you want KDevelop to remove it in the file system as well?"
+msgstr ""
+
+#: settings/cmakepreferences.cpp:325
+#, kde-format
+msgid "Could not remove: %1.\n"
+msgstr ""
 
 #: cmakebuilddirchooser.cpp:34
 msgid "Configure a build directory"
@@ -68,7 +141,7 @@ msgstr ""
 msgid "Command"
 msgstr "Arahan"
 
-#: cmakecodecompletionmodel.cpp:189 cmakehelpdocumentation.cpp:33
+#: cmakecodecompletionmodel.cpp:189
 msgid "Variable"
 msgstr "Pembolehubah"
 
@@ -80,172 +153,104 @@ msgstr "Makro"
 msgid "Path"
 msgstr "Laluan"
 
-#: cmakedocumentation.cpp:43
-msgid "CMake Documentation"
-msgstr ""
-
-#: cmakedocumentation.cpp:43
-msgid "Support for CMake documentation"
-msgstr ""
-
-#: cmakedocumentation.cpp:123
-#, kde-format
-msgid "<br /><em>Cache Value:</em> %1\n"
-msgstr ""
-
-#: cmakedocumentation.cpp:126
-#, kde-format
-msgid "<br /><em>Cache Documentation:</em> %1\n"
-msgstr ""
-
 #: cmakehelpdocumentation.cpp:33
 msgid "Commands"
 msgstr "Arahan"
 
 #: cmakehelpdocumentation.cpp:33
 #, fuzzy
-msgid "Module"
+#| msgid "Variable"
+msgid "Variables"
+msgstr "Pembolehubah"
+
+#: cmakehelpdocumentation.cpp:33
+#, fuzzy
+msgid "Modules"
 msgstr "Modul"
 
 #: cmakehelpdocumentation.cpp:33
 #, fuzzy
-msgid "Property"
+msgid "Properties"
 msgstr "Ciri-ciri"
 
 #: cmakehelpdocumentation.cpp:33
 #, fuzzy
-msgid "Policy"
+msgid "Policies"
 msgstr "Polisi"
 
 #: cmakehelpdocumentation.cpp:42
 msgid "CMake Content Page"
 msgstr ""
 
-#: cmakemanager.cpp:93
+#: cmakemanager.cpp:96
 msgid "CMake Manager"
 msgstr ""
 
-#: cmakemanager.cpp:93
+#: cmakemanager.cpp:96
 msgid "Support for managing CMake projects"
 msgstr ""
 
-#: cmakemanager.cpp:965
-msgid "Jump to target definition"
-msgstr ""
-
-#: cmakemanager.cpp:1042
-#, kde-format
-msgid "Create a folder called '%1'."
-msgstr ""
-
-#: cmakemanager.cpp:1059 cmakemanager.cpp:1299
+#: cmakemanager.cpp:102
 msgid "KDevelop - CMake Support"
 msgstr ""
 
-#: cmakemanager.cpp:1060
-msgid "Could not save the change."
+#: cmakemanager.cpp:1310
+msgid "Jump to target definition"
 msgstr ""
 
-#: cmakemanager.cpp:1203 cmakemanager.cpp:1240
-msgid "CMakeLists Changes"
+#: cmakemanager.cpp:1374
+msgid "Move files and folders within CMakeLists as follows:"
 msgstr ""
 
-#: cmakemanager.cpp:1204
+#: cmakemanager.cpp:1413
+msgid "Changes to CMakeLists failed, abort move?"
+msgstr ""
+
+#: cmakemanager.cpp:1437
 msgid "Remove files and folders from CMakeLists as follows:"
 msgstr ""
 
-#: cmakemanager.cpp:1216
-msgid "Changes to CMakeLists failed, abort file deletion?"
+#: cmakemanager.cpp:1447
+msgid "Changes to CMakeLists failed, abort deletion?"
 msgstr ""
 
-#: cmakemanager.cpp:1217
-msgid "Error"
-msgstr ""
-
-#: cmakemanager.cpp:1241
+#: cmakemanager.cpp:1469
 msgid "Modify project targets as follows:"
 msgstr ""
 
-#: cmakemanager.cpp:1288
+#: cmakemanager.cpp:1488
 #, kde-format
-msgid "Add a file called '%1' to target '%2'."
+msgid "Create folder '%1':"
 msgstr ""
 
-#: cmakemanager.cpp:1300
-msgid "Cannot save the change."
+#: cmakemanager.cpp:1504
+msgid "Could not save the change."
 msgstr ""
 
-#: cmakemanager.cpp:1393
+#: cmakemanager.cpp:1546
 #, kde-format
-msgid "Remove a file called '%1'."
+msgid "Modify target '%1' as follows:"
 msgstr ""
 
-#: cmakemanager.cpp:1444
+#: cmakemanager.cpp:1553
+msgid "CMakeLists changes failed."
+msgstr ""
+
+#: cmakemanager.cpp:1562
 #, kde-format
-msgid "Rename a folder called '%1'."
+msgid "Rename '%1' to '%2':"
 msgstr ""
 
-#: cmakeutils.cpp:85
+#: cmakemanager.cpp:1586
+msgid "Changes to CMakeLists failed, abort rename?"
+msgstr ""
+
+#: cmakeutils.cpp:87
 msgid "The build directory did not exist and could not be created."
 msgstr ""
 
-#: cmakeutils.cpp:86
+#: cmakeutils.cpp:88
 msgid "Error creating build directory"
-msgstr ""
-
-#: parser/cmakeprojectvisitor.cpp:2138
-#, kde-format
-msgid "%1 is a deprecated command and should not be used"
-msgstr ""
-
-#: parser/cmakeprojectvisitor.cpp:2156
-msgid "Unfinished function. "
-msgstr ""
-
-#: settings/cmakecachemodel.cpp:34
-#, fuzzy
-msgid "Name"
-msgstr "Nama"
-
-#: settings/cmakecachemodel.cpp:35
-#, fuzzy
-msgid "Type"
-msgstr "Jenis"
-
-#: settings/cmakecachemodel.cpp:36
-#, fuzzy
-msgid "Value"
-msgstr "Nilai"
-
-#: settings/cmakecachemodel.cpp:37
-#, fuzzy
-msgid "Comment"
-msgstr "Komen"
-
-#. i18n: file: settings/cmakebuildsettings.ui:106
-#. i18n: ectx: property (title), widget (QGroupBox, advancedBox)
-#: settings/cmakecachemodel.cpp:38 rc.cpp:38
-#, fuzzy
-msgid "Advanced"
-msgstr "Lanjutan"
-
-#: settings/cmakepreferences.cpp:144
-#, kde-format
-msgid ""
-"Could not write CMake settings to file '%1'.\n"
-"Check that you have write access to it"
-msgstr ""
-
-#: settings/cmakepreferences.cpp:280
-#, kde-format
-msgid ""
-"The %1 directory is about to be removed in KDevelop's list.\n"
-"Do you want KDevelop to remove it in the file system as well?"
-msgstr ""
-
-#: settings/cmakepreferences.cpp:286
-#, kde-format
-msgid "Could not remove: %1.\n"
 msgstr ""
 
 #: rc.cpp:1
@@ -298,49 +303,61 @@ msgid ""
 "select the correct one."
 msgstr ""
 
-#. i18n: file: settings/cmakebuildsettings.ui:33
+#. i18n: file: settings/cmakebuildsettings.ui:34
 #. i18n: ectx: property (text), widget (QPushButton, addBuildDir)
 #: rc.cpp:23
 #, fuzzy
 msgid "Add"
 msgstr "Tambah"
 
-#. i18n: file: settings/cmakebuildsettings.ui:46
+#. i18n: file: settings/cmakebuildsettings.ui:47
 #. i18n: ectx: property (text), widget (QPushButton, removeBuildDir)
 #: rc.cpp:26
 #, fuzzy
 msgid "Remove"
 msgstr "Buang"
 
-#. i18n: file: settings/cmakebuildsettings.ui:55
+#. i18n: file: settings/cmakebuildsettings.ui:56
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:29
 msgid "Cache Values"
 msgstr ""
 
-#. i18n: file: settings/cmakebuildsettings.ui:70
+#. i18n: file: settings/cmakebuildsettings.ui:71
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:32
 #, fuzzy
 msgid "Comment:"
 msgstr "Komen:"
 
-#. i18n: file: settings/cmakebuildsettings.ui:87
+#. i18n: file: settings/cmakebuildsettings.ui:88
 #. i18n: ectx: property (text), widget (QPushButton, showAdvanced)
 #: rc.cpp:35
 msgid "Show Advanced"
 msgstr ""
 
-#. i18n: file: settings/cmakebuildsettings.ui:112
+#. i18n: file: settings/cmakebuildsettings.ui:116
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:41
 msgid "CMake Directory"
 msgstr ""
 
-#. i18n: file: settings/cmakebuildsettings.ui:122
+#. i18n: file: settings/cmakebuildsettings.ui:126
 #. i18n: ectx: property (text), widget (QCheckBox, showInternal)
 #: rc.cpp:44
 msgid "Show Advanced Values"
+msgstr ""
+
+#. i18n: file: settings/cmakebuildsettings.ui:141
+#. i18n: ectx: property (toolTip), widget (KDevelop::EnvironmentSelectionWidget, kcfg_environment)
+#: rc.cpp:47
+msgid "Select an environment to be used"
+msgstr ""
+
+#. i18n: file: settings/cmakebuildsettings.ui:153
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:50
+msgid "Configure Environment"
 msgstr ""
 
 #, fuzzy
