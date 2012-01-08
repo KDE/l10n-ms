@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-07 02:37+0100\n"
+"POT-Creation-Date: 2012-01-08 02:34+0100\n"
 "PO-Revision-Date: 2006-10-05 19:47+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -552,7 +552,7 @@ msgstr "Kolum"
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:71
 #. i18n: ectx: property (text), widget (QPushButton, createButton)
-#: rc.cpp:264 part/KWView.cpp:297
+#: rc.cpp:264 part/KWView.cpp:318
 #, fuzzy
 msgid "Create"
 msgstr "Cipta Jadual"
@@ -1249,7 +1249,7 @@ msgstr "Gaya:"
 msgid "Clone"
 msgstr "Penutup"
 
-#: part/dialogs/KWPageSettingsDialog.cpp:62 part/KWView.cpp:392
+#: part/dialogs/KWPageSettingsDialog.cpp:62 part/KWView.cpp:360
 #, fuzzy
 msgid "Delete"
 msgstr "Hapuskan Baris"
@@ -1312,9 +1312,22 @@ msgid "approximately %1"
 msgstr "lebih kurang %1"
 
 #: part/dialogs/KWStatisticsDialog.cpp:29
-#: part/dockers/KWStatisticsDocker.cpp:35 part/KWView.cpp:371
+#: part/dockers/KWStatisticsDocker.cpp:35 part/KWView.cpp:339
 msgid "Statistics"
 msgstr "Statistik"
+
+#: part/dialogs/KWFrameDialog.cpp:43
+#, fuzzy
+#| msgid "Position"
+msgid "Smart Positioning"
+msgstr "Posisi"
+
+#: part/dialogs/KWFrameDialog.cpp:77
+#, fuzzy
+#| msgid "Frame Properties"
+msgctxt "(qtundo-format)"
+msgid "Change Shape Properties"
+msgstr "Ciri Bingkai"
 
 #: part/dialogs/KWAnchoringProperties.cpp:413
 #, fuzzy
@@ -1374,19 +1387,6 @@ msgstr ""
 #: part/dialogs/KWAnchoringProperties.cpp:437
 msgid "Left paragraph border"
 msgstr ""
-
-#: part/dialogs/KWFrameDialog.cpp:43
-#, fuzzy
-#| msgid "Position"
-msgid "Smart Positioning"
-msgstr "Posisi"
-
-#: part/dialogs/KWFrameDialog.cpp:77
-#, fuzzy
-#| msgid "Frame Properties"
-msgctxt "(qtundo-format)"
-msgid "Change Shape Properties"
-msgstr "Ciri Bingkai"
 
 #: part/dockers/KWRdfDocker.cpp:53
 msgid "RDF"
@@ -1675,26 +1675,26 @@ msgstr ""
 msgid "Installation Error"
 msgstr ""
 
-#: part/KWView.cpp:231
+#: part/KWView.cpp:227
 #, fuzzy
 #| msgid "Frame Properties"
 msgid "Shape Properties..."
 msgstr "Ciri Bingkai"
 
-#: part/KWView.cpp:233
+#: part/KWView.cpp:229
 msgid "Change how the shape behave"
 msgstr ""
 
-#: part/KWView.cpp:241
+#: part/KWView.cpp:237
 msgid "Page Break"
 msgstr "Pemisah Halaman"
 
-#: part/KWView.cpp:242
+#: part/KWView.cpp:238
 #, fuzzy
 msgid "Force the remainder of the text into the next page"
 msgstr "Paksa masuk teks selebihnya ke dalam halaman berikutnya."
 
-#: part/KWView.cpp:243
+#: part/KWView.cpp:239
 #, fuzzy
 #| msgid ""
 #| "This inserts a non-printing character at the current cursor position. All "
@@ -1704,17 +1704,17 @@ msgstr ""
 "Ini akan menyelitkan aksara tak cetak pada kedudukan kursor semasa. Semua "
 "teks selepas titik ini akan dialihkan ke dalam halaman berikutnya. "
 
-#: part/KWView.cpp:245
+#: part/KWView.cpp:241
 #, fuzzy
 msgid "Enable Document Headers"
 msgstr "Buat Dokumen Luaran"
 
-#: part/KWView.cpp:247
+#: part/KWView.cpp:243
 #, fuzzy
 msgid "Shows and hides header display"
 msgstr "Papar dan sembunyikan paparan pengepala."
 
-#: part/KWView.cpp:248
+#: part/KWView.cpp:244
 #, fuzzy
 #| msgid ""
 #| "Selecting this option toggles the display of headers in KWord."
@@ -1729,17 +1729,17 @@ msgstr ""
 "<br><br>Pengepala ialah bingkai khas pada bahagian atas setiap halaman yang "
 "mengandungi nombor halaman atau maklumat lain. "
 
-#: part/KWView.cpp:253
+#: part/KWView.cpp:249
 #, fuzzy
 msgid "Enable Document Footers"
 msgstr "Buat Dokumen Dalaman"
 
-#: part/KWView.cpp:255
+#: part/KWView.cpp:251
 #, fuzzy
 msgid "Shows and hides footer display"
 msgstr "Papar dan sembunyikan paparan pengaki."
 
-#: part/KWView.cpp:256
+#: part/KWView.cpp:252
 #, fuzzy
 #| msgid ""
 #| "Selecting this option toggles the display of footers in KWord. "
@@ -1754,112 +1754,38 @@ msgstr ""
 "<br><br>Pengaki ialah bingkai khas pada bahagian bawah setiap halaman yang "
 "mengandungi nombor halaman atau maklumat lain."
 
-#: part/KWView.cpp:261
+#: part/KWView.cpp:257
 #, fuzzy
 msgid "Snap to Grid"
 msgstr "Papar Pengaki"
 
-#: part/KWView.cpp:266
-#, fuzzy
-#| msgid "Raise Frame"
-msgid "Raise Shape"
-msgstr "Naikkan Bingkai"
-
-#: part/KWView.cpp:269
-#, fuzzy
-#| msgid ""
-#| "Raise the currently selected frame so that it appears above all the other "
-#| "frames"
-msgid ""
-"Raise the currently selected shape so that it appears above all the other "
-"shape"
-msgstr ""
-"Naikkan bingkai yang sedang dipilih supaya ia berada di atas semua bingkai "
-"lain"
-
-#: part/KWView.cpp:271
-#, fuzzy
-#| msgid ""
-#| "Raise the currently selected frame so that it appears above all the other "
-#| "frames. This is only useful if frames overlap each other. If multiple "
-#| "frames are selected they are all raised in turn."
-msgid ""
-"Raise the currently selected shape so that it appears above all the other "
-"shapes. This is only useful if shapes overlap each other. If multiple shapes "
-"are selected they are all raised in turn."
-msgstr ""
-"Naikkan bingkai yang sedang dipilih supaya ia berada di atas semua bingkai "
-"lain. Ini hanya berguna jika bingkai bertindan antara satu dengan lain. Jika "
-"bingkai berbilang dipilih, ia akan dinaikkan mengikut giliran."
-
-#: part/KWView.cpp:276
-#, fuzzy
-#| msgid "Lower Frame"
-msgid "Lower Shape"
-msgstr "Turunkan Bingkai"
-
-#: part/KWView.cpp:279
-#, fuzzy
-#| msgid ""
-#| "Lower the currently selected frame so that it disappears under any frame "
-#| "that overlaps it"
-msgid ""
-"Lower the currently selected shape so that it disappears under any shape "
-"that overlaps it"
-msgstr ""
-"Turunkan bingkai yang sedang dipilih supaya ia berada di bawah mana-mana "
-"bingkai yang bertindan dengannya."
-
-#: part/KWView.cpp:281
-#, fuzzy
-#| msgid ""
-#| "Lower the currently selected frame so that it disappears under any frame "
-#| "that overlaps it. If multiple frames are selected they are all lowered in "
-#| "turn."
-msgid ""
-"Lower the currently selected shape so that it disappears under any shape "
-"that overlaps it. If multiple shape are selected they are all lowered in "
-"turn."
-msgstr ""
-"Turunkan bingkai yang sedang dipilih supaya ia berada di bawah mana-mana "
-"bingkai yang bertindan dengannya. Jika bingkai berbilang dipilih, ia akan "
-"diturunkan mengikut giliran."
-
-#: part/KWView.cpp:285
-msgid "Bring to Front"
-msgstr "Bawa Ke depan"
-
-#: part/KWView.cpp:289
-msgid "Send to Back"
-msgstr "Hantar Ke belakang"
-
-#: part/KWView.cpp:305
+#: part/KWView.cpp:262
 #, fuzzy
 #| msgid "&Bookmark..."
 msgid "Bookmark..."
 msgstr "&Tanda Buku..."
 
-#: part/KWView.cpp:310
+#: part/KWView.cpp:267
 #, fuzzy
 #| msgid "Select &Bookmark..."
 msgid "Select Bookmark..."
 msgstr "Pilih &Tanda Buku..."
 
-#: part/KWView.cpp:311
+#: part/KWView.cpp:268
 #, fuzzy
 msgid "Bookmark"
 msgstr "&Tanda Buku..."
 
-#: part/KWView.cpp:317
+#: part/KWView.cpp:274
 msgid "Show Text Shape Borders"
 msgstr ""
 
-#: part/KWView.cpp:318
+#: part/KWView.cpp:275
 #, fuzzy
 msgid "Turns the border display on and off"
 msgstr "Buka dan tutup paparan sempadan."
 
-#: part/KWView.cpp:324
+#: part/KWView.cpp:281
 #, fuzzy
 #| msgid ""
 #| "Turns the border display on and off.<br><br>The borders are never "
@@ -1873,18 +1799,18 @@ msgstr ""
 "Buka dan tutup paparan sempadan.<br><br>Sempadan tidak akan dicetak. Pilihan "
 "ini berguna untuk melihat bagaimana rupa dokumen pada halaman bercetak. "
 
-#: part/KWView.cpp:326
+#: part/KWView.cpp:283
 #, fuzzy
 #| msgid "&Formatting Characters"
 msgid "Show Formatting Characters"
 msgstr "&Memformatkan Aksara"
 
-#: part/KWView.cpp:333
+#: part/KWView.cpp:290
 #, fuzzy
 msgid "Toggle the display of non-printing characters"
 msgstr "Toggel paparan aksara tak cetak."
 
-#: part/KWView.cpp:334
+#: part/KWView.cpp:291
 #, fuzzy
 #| msgid ""
 #| "Toggle the display of non-printing characters.<br><br>When this is "
@@ -1899,18 +1825,18 @@ msgstr ""
 "memaparkan tab, jarak, kembalian penyorong dan aksara tak cetak lain kepada "
 "anda."
 
-#: part/KWView.cpp:336
+#: part/KWView.cpp:293
 #, fuzzy
 #| msgid "Configure Table Borders"
 msgid "Show Table Borders"
 msgstr "Konfigur Sempadan Jadual"
 
-#: part/KWView.cpp:342
+#: part/KWView.cpp:299
 #, fuzzy
 msgid "Toggle the display of table borders"
 msgstr "Toggel paparan aksara tak cetak."
 
-#: part/KWView.cpp:343
+#: part/KWView.cpp:300
 #, fuzzy
 #| msgid ""
 #| "Toggle the display of non-printing characters.<br><br>When this is "
@@ -1924,18 +1850,18 @@ msgstr ""
 "memaparkan tab, jarak, kembalian penyorong dan aksara tak cetak lain kepada "
 "anda."
 
-#: part/KWView.cpp:345
+#: part/KWView.cpp:302
 #, fuzzy
 #| msgid "Page &Layout..."
 msgid "Page Layout..."
 msgstr "&Bentangan Halaman..."
 
-#: part/KWView.cpp:347
+#: part/KWView.cpp:304
 #, fuzzy
 msgid "Change properties of entire page"
 msgstr "Ubah ciri seluruh halaman."
 
-#: part/KWView.cpp:348
+#: part/KWView.cpp:305
 #, fuzzy
 #| msgid ""
 #| "Change properties of the entire page.<p>Currently you can change paper "
@@ -1947,27 +1873,27 @@ msgstr ""
 "Ubah ciri seluruh halaman.<p>Kini anda boleh ubah saiz kertas, orientasi "
 "kertas, saiz pengepala dan pengaki, dan seting lajur."
 
-#: part/KWView.cpp:352
+#: part/KWView.cpp:309
 #, fuzzy
 #| msgid "Import Styles..."
 msgid "Semantic Stylesheets..."
 msgstr "Import Gaya..."
 
-#: part/KWView.cpp:354
+#: part/KWView.cpp:311
 msgid "Modify and add semantic stylesheets"
 msgstr ""
 
-#: part/KWView.cpp:355
+#: part/KWView.cpp:312
 msgid ""
 "Stylesheets are used to format contact, event, and location information "
 "which is stored in Rdf"
 msgstr ""
 
-#: part/KWView.cpp:373
+#: part/KWView.cpp:341
 msgid "Sentence, word and letter counts for this document"
 msgstr "Kiraan ayat, kata dan huruf untuk dokumen ini"
 
-#: part/KWView.cpp:374
+#: part/KWView.cpp:342
 #, fuzzy
 #| msgid ""
 #| "Information on the number of letters, words, syllables and sentences for "
@@ -1979,16 +1905,16 @@ msgstr ""
 "Maklumat tentang bilangan huruf, kata, suku kata dan ayat untuk dokumen ini."
 "<p>Menilai kebolehbacaan dengan menggunakan skor bacaan Flesch."
 
-#: part/KWView.cpp:377
+#: part/KWView.cpp:345
 msgid "Show Rulers"
 msgstr "Papar Pembaris"
 
-#: part/KWView.cpp:379
+#: part/KWView.cpp:347
 #, fuzzy
 msgid "Shows or hides rulers"
 msgstr "Papar atau sembunyikan pembaris."
 
-#: part/KWView.cpp:380
+#: part/KWView.cpp:348
 #, fuzzy
 #| msgid ""
 #| "The rulers are the white measuring spaces top and left of the document. "
@@ -2006,21 +1932,21 @@ msgstr ""
 "digunakan untuk menentukan posisi penjadual.<p>Nyahsemak ini untuk "
 "menyahaktifkan pembaris dari dipaparkan."
 
-#: part/KWView.cpp:388
+#: part/KWView.cpp:356
 #, fuzzy
 #| msgid "Select All Frames"
 msgid "Select All Shapes"
 msgstr "Pilih Semua Bingkai"
 
-#: part/KWView.cpp:405
+#: part/KWView.cpp:373
 msgid "Create Linked Copy"
 msgstr "Cipta Salinan Terpaut"
 
-#: part/KWView.cpp:407
+#: part/KWView.cpp:375
 msgid "Create a copy of the current frame, always showing the same contents"
 msgstr "Cipta salinan bingkai semasa, sentiasa paparkan kandungan yang sama"
 
-#: part/KWView.cpp:408
+#: part/KWView.cpp:376
 msgid ""
 "Create a copy of the current frame, that remains linked to it. This means "
 "they always show the same contents: modifying the contents in such a frame "
@@ -2030,36 +1956,102 @@ msgstr ""
 "bermakna ia sentiasa memaparkan kandungan yang sama: mengubah suai kandungan "
 "dalam bingkai itu akan mengemaskinikan semua salinan yang dipautkan padanya."
 
-#: part/KWView.cpp:411
+#: part/KWView.cpp:379
 #, fuzzy
 #| msgid "Create Text Frame"
 msgid "Create Frame-clip"
 msgstr "Cipta Bingkai Teks"
 
-#: part/KWView.cpp:415
+#: part/KWView.cpp:383
 #, fuzzy
 #| msgid "Remove record"
 msgid "Remove Frame-clip"
 msgstr "Alih keluar rekod"
 
-#: part/KWView.cpp:419
+#: part/KWView.cpp:387
 #, fuzzy
 #| msgid "Show &status bar"
 msgid "Show Status Bar"
 msgstr "Papar bar &status"
 
-#: part/KWView.cpp:420
+#: part/KWView.cpp:388
 #, fuzzy
 #| msgid "Show &status bar"
 msgid "Shows or hides the status bar"
 msgstr "Papar bar &status"
 
-#: part/KWView.cpp:828
+#: part/KWView.cpp:731
 #, fuzzy
 #| msgid "Create Linked Copy"
 msgctxt "(qtundo-format)"
 msgid "Create Linked Copy"
 msgstr "Cipta Salinan Terpaut"
+
+#, fuzzy
+#~| msgid "Raise Frame"
+#~ msgid "Raise Shape"
+#~ msgstr "Naikkan Bingkai"
+
+#, fuzzy
+#~| msgid ""
+#~| "Raise the currently selected frame so that it appears above all the "
+#~| "other frames"
+#~ msgid ""
+#~ "Raise the currently selected shape so that it appears above all the other "
+#~ "shape"
+#~ msgstr ""
+#~ "Naikkan bingkai yang sedang dipilih supaya ia berada di atas semua "
+#~ "bingkai lain"
+
+#, fuzzy
+#~| msgid ""
+#~| "Raise the currently selected frame so that it appears above all the "
+#~| "other frames. This is only useful if frames overlap each other. If "
+#~| "multiple frames are selected they are all raised in turn."
+#~ msgid ""
+#~ "Raise the currently selected shape so that it appears above all the other "
+#~ "shapes. This is only useful if shapes overlap each other. If multiple "
+#~ "shapes are selected they are all raised in turn."
+#~ msgstr ""
+#~ "Naikkan bingkai yang sedang dipilih supaya ia berada di atas semua "
+#~ "bingkai lain. Ini hanya berguna jika bingkai bertindan antara satu dengan "
+#~ "lain. Jika bingkai berbilang dipilih, ia akan dinaikkan mengikut giliran."
+
+#, fuzzy
+#~| msgid "Lower Frame"
+#~ msgid "Lower Shape"
+#~ msgstr "Turunkan Bingkai"
+
+#, fuzzy
+#~| msgid ""
+#~| "Lower the currently selected frame so that it disappears under any frame "
+#~| "that overlaps it"
+#~ msgid ""
+#~ "Lower the currently selected shape so that it disappears under any shape "
+#~ "that overlaps it"
+#~ msgstr ""
+#~ "Turunkan bingkai yang sedang dipilih supaya ia berada di bawah mana-mana "
+#~ "bingkai yang bertindan dengannya."
+
+#, fuzzy
+#~| msgid ""
+#~| "Lower the currently selected frame so that it disappears under any frame "
+#~| "that overlaps it. If multiple frames are selected they are all lowered "
+#~| "in turn."
+#~ msgid ""
+#~ "Lower the currently selected shape so that it disappears under any shape "
+#~ "that overlaps it. If multiple shape are selected they are all lowered in "
+#~ "turn."
+#~ msgstr ""
+#~ "Turunkan bingkai yang sedang dipilih supaya ia berada di bawah mana-mana "
+#~ "bingkai yang bertindan dengannya. Jika bingkai berbilang dipilih, ia akan "
+#~ "diturunkan mengikut giliran."
+
+#~ msgid "Bring to Front"
+#~ msgstr "Bawa Ke depan"
+
+#~ msgid "Send to Back"
+#~ msgstr "Hantar Ke belakang"
 
 #~ msgid "Insert Page"
 #~ msgstr "Selitkan Halaman"
