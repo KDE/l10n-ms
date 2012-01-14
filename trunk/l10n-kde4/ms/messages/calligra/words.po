@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-10 02:45+0100\n"
+"POT-Creation-Date: 2012-01-14 02:30+0100\n"
 "PO-Revision-Date: 2006-10-05 19:47+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -552,7 +552,7 @@ msgstr "Kolum"
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:71
 #. i18n: ectx: property (text), widget (QPushButton, createButton)
-#: rc.cpp:264 part/KWView.cpp:318
+#: rc.cpp:264 part/KWView.cpp:314
 #, fuzzy
 msgid "Create"
 msgstr "Cipta Jadual"
@@ -1055,23 +1055,6 @@ msgstr "Tidak dapat mencipta objek pangkalan data"
 msgid "Tools"
 msgstr ""
 
-#: part/KWOdfLoader.cpp:90
-#, fuzzy
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
-
-#: part/KWOdfLoader.cpp:102
-#, fuzzy
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
-
-#: part/KWOdfLoader.cpp:104
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
-msgstr ""
-
 #: part/KWStatusBar.cpp:48
 msgid "Modified"
 msgstr ""
@@ -1249,7 +1232,7 @@ msgstr "Gaya:"
 msgid "Clone"
 msgstr "Penutup"
 
-#: part/dialogs/KWPageSettingsDialog.cpp:62 part/KWView.cpp:365
+#: part/dialogs/KWPageSettingsDialog.cpp:62 part/KWView.cpp:361
 #, fuzzy
 msgid "Delete"
 msgstr "Hapuskan Baris"
@@ -1312,22 +1295,9 @@ msgid "approximately %1"
 msgstr "lebih kurang %1"
 
 #: part/dialogs/KWStatisticsDialog.cpp:29
-#: part/dockers/KWStatisticsDocker.cpp:35 part/KWView.cpp:344
+#: part/dockers/KWStatisticsDocker.cpp:35 part/KWView.cpp:340
 msgid "Statistics"
 msgstr "Statistik"
-
-#: part/dialogs/KWFrameDialog.cpp:43
-#, fuzzy
-#| msgid "Position"
-msgid "Smart Positioning"
-msgstr "Posisi"
-
-#: part/dialogs/KWFrameDialog.cpp:77
-#, fuzzy
-#| msgid "Frame Properties"
-msgctxt "(qtundo-format)"
-msgid "Change Shape Properties"
-msgstr "Ciri Bingkai"
 
 #: part/dialogs/KWAnchoringProperties.cpp:413
 #, fuzzy
@@ -1387,6 +1357,19 @@ msgstr ""
 #: part/dialogs/KWAnchoringProperties.cpp:437
 msgid "Left paragraph border"
 msgstr ""
+
+#: part/dialogs/KWFrameDialog.cpp:43
+#, fuzzy
+#| msgid "Position"
+msgid "Smart Positioning"
+msgstr "Posisi"
+
+#: part/dialogs/KWFrameDialog.cpp:77
+#, fuzzy
+#| msgid "Frame Properties"
+msgctxt "(qtundo-format)"
+msgid "Change Shape Properties"
+msgstr "Ciri Bingkai"
 
 #: part/dockers/KWRdfDocker.cpp:53
 msgid "RDF"
@@ -1675,6 +1658,23 @@ msgstr ""
 msgid "Installation Error"
 msgstr ""
 
+#: part/KWOdfLoader.cpp:90
+#, fuzzy
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+
+#: part/KWOdfLoader.cpp:102
+#, fuzzy
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+
+#: part/KWOdfLoader.cpp:104
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+
 #: part/KWView.cpp:227
 #, fuzzy
 #| msgid "Frame Properties"
@@ -1709,83 +1709,43 @@ msgstr ""
 msgid "Enable Document Headers"
 msgstr "Buat Dokumen Luaran"
 
-#: part/KWView.cpp:243
-#, fuzzy
-msgid "Shows and hides header display"
-msgstr "Papar dan sembunyikan paparan pengepala."
-
-#: part/KWView.cpp:244
-#, fuzzy
-#| msgid ""
-#| "Selecting this option toggles the display of headers in KWord."
-#| "<br><br>Headers are special frames at the top of each page which can "
-#| "contain page numbers or other information."
-msgid ""
-"Selecting this option toggles the display of headers in Words.<br/><br/"
-">Headers are special frames at the top of each page which can contain page "
-"numbers or other information."
-msgstr ""
-"Dengan memilih pilihan ini, paparan pengepala dalam KWord dapat ditoggel."
-"<br><br>Pengepala ialah bingkai khas pada bahagian atas setiap halaman yang "
-"mengandungi nombor halaman atau maklumat lain. "
-
-#: part/KWView.cpp:249
+#: part/KWView.cpp:247
 #, fuzzy
 msgid "Enable Document Footers"
 msgstr "Buat Dokumen Dalaman"
 
-#: part/KWView.cpp:251
-#, fuzzy
-msgid "Shows and hides footer display"
-msgstr "Papar dan sembunyikan paparan pengaki."
-
-#: part/KWView.cpp:252
-#, fuzzy
-#| msgid ""
-#| "Selecting this option toggles the display of footers in KWord. "
-#| "<br><br>Footers are special frames at the bottom of each page which can "
-#| "contain page numbers or other information."
-msgid ""
-"Selecting this option toggles the display of footers in Words. <br/><br/"
-">Footers are special shapes at the bottom of each page which can contain "
-"page numbers or other information."
-msgstr ""
-"Dengan memilih pilihan ini, paparan pengaki dalam KWord dapat ditoggel."
-"<br><br>Pengaki ialah bingkai khas pada bahagian bawah setiap halaman yang "
-"mengandungi nombor halaman atau maklumat lain."
-
-#: part/KWView.cpp:257
+#: part/KWView.cpp:253
 #, fuzzy
 msgid "Snap to Grid"
 msgstr "Papar Pengaki"
 
-#: part/KWView.cpp:262
+#: part/KWView.cpp:258
 #, fuzzy
 #| msgid "&Bookmark..."
 msgid "Bookmark..."
 msgstr "&Tanda Buku..."
 
-#: part/KWView.cpp:267
+#: part/KWView.cpp:263
 #, fuzzy
 #| msgid "Select &Bookmark..."
 msgid "Select Bookmark..."
 msgstr "Pilih &Tanda Buku..."
 
-#: part/KWView.cpp:268
+#: part/KWView.cpp:264
 #, fuzzy
 msgid "Bookmark"
 msgstr "&Tanda Buku..."
 
-#: part/KWView.cpp:274
+#: part/KWView.cpp:270
 msgid "Show Text Shape Borders"
 msgstr ""
 
-#: part/KWView.cpp:275
+#: part/KWView.cpp:271
 #, fuzzy
 msgid "Turns the border display on and off"
 msgstr "Buka dan tutup paparan sempadan."
 
-#: part/KWView.cpp:281
+#: part/KWView.cpp:277
 #, fuzzy
 #| msgid ""
 #| "Turns the border display on and off.<br><br>The borders are never "
@@ -1799,18 +1759,18 @@ msgstr ""
 "Buka dan tutup paparan sempadan.<br><br>Sempadan tidak akan dicetak. Pilihan "
 "ini berguna untuk melihat bagaimana rupa dokumen pada halaman bercetak. "
 
-#: part/KWView.cpp:283
+#: part/KWView.cpp:279
 #, fuzzy
 #| msgid "&Formatting Characters"
 msgid "Show Formatting Characters"
 msgstr "&Memformatkan Aksara"
 
-#: part/KWView.cpp:290
+#: part/KWView.cpp:286
 #, fuzzy
 msgid "Toggle the display of non-printing characters"
 msgstr "Toggel paparan aksara tak cetak."
 
-#: part/KWView.cpp:291
+#: part/KWView.cpp:287
 #, fuzzy
 #| msgid ""
 #| "Toggle the display of non-printing characters.<br><br>When this is "
@@ -1825,18 +1785,18 @@ msgstr ""
 "memaparkan tab, jarak, kembalian penyorong dan aksara tak cetak lain kepada "
 "anda."
 
-#: part/KWView.cpp:293
+#: part/KWView.cpp:289
 #, fuzzy
 #| msgid "Configure Table Borders"
 msgid "Show Table Borders"
 msgstr "Konfigur Sempadan Jadual"
 
-#: part/KWView.cpp:299
+#: part/KWView.cpp:295
 #, fuzzy
 msgid "Toggle the display of table borders"
 msgstr "Toggel paparan aksara tak cetak."
 
-#: part/KWView.cpp:300
+#: part/KWView.cpp:296
 #, fuzzy
 #| msgid ""
 #| "Toggle the display of non-printing characters.<br><br>When this is "
@@ -1850,18 +1810,18 @@ msgstr ""
 "memaparkan tab, jarak, kembalian penyorong dan aksara tak cetak lain kepada "
 "anda."
 
-#: part/KWView.cpp:302
+#: part/KWView.cpp:298
 #, fuzzy
 #| msgid "Page &Layout..."
 msgid "Page Layout..."
 msgstr "&Bentangan Halaman..."
 
-#: part/KWView.cpp:304
+#: part/KWView.cpp:300
 #, fuzzy
 msgid "Change properties of entire page"
 msgstr "Ubah ciri seluruh halaman."
 
-#: part/KWView.cpp:305
+#: part/KWView.cpp:301
 #, fuzzy
 #| msgid ""
 #| "Change properties of the entire page.<p>Currently you can change paper "
@@ -1873,27 +1833,27 @@ msgstr ""
 "Ubah ciri seluruh halaman.<p>Kini anda boleh ubah saiz kertas, orientasi "
 "kertas, saiz pengepala dan pengaki, dan seting lajur."
 
-#: part/KWView.cpp:309
+#: part/KWView.cpp:305
 #, fuzzy
 #| msgid "Import Styles..."
 msgid "Semantic Stylesheets..."
 msgstr "Import Gaya..."
 
-#: part/KWView.cpp:311
+#: part/KWView.cpp:307
 msgid "Modify and add semantic stylesheets"
 msgstr ""
 
-#: part/KWView.cpp:312
+#: part/KWView.cpp:308
 msgid ""
 "Stylesheets are used to format contact, event, and location information "
 "which is stored in Rdf"
 msgstr ""
 
-#: part/KWView.cpp:346
+#: part/KWView.cpp:342
 msgid "Sentence, word and letter counts for this document"
 msgstr "Kiraan ayat, kata dan huruf untuk dokumen ini"
 
-#: part/KWView.cpp:347
+#: part/KWView.cpp:343
 #, fuzzy
 #| msgid ""
 #| "Information on the number of letters, words, syllables and sentences for "
@@ -1905,16 +1865,16 @@ msgstr ""
 "Maklumat tentang bilangan huruf, kata, suku kata dan ayat untuk dokumen ini."
 "<p>Menilai kebolehbacaan dengan menggunakan skor bacaan Flesch."
 
-#: part/KWView.cpp:350
+#: part/KWView.cpp:346
 msgid "Show Rulers"
 msgstr "Papar Pembaris"
 
-#: part/KWView.cpp:352
+#: part/KWView.cpp:348
 #, fuzzy
 msgid "Shows or hides rulers"
 msgstr "Papar atau sembunyikan pembaris."
 
-#: part/KWView.cpp:353
+#: part/KWView.cpp:349
 #, fuzzy
 #| msgid ""
 #| "The rulers are the white measuring spaces top and left of the document. "
@@ -1932,21 +1892,21 @@ msgstr ""
 "digunakan untuk menentukan posisi penjadual.<p>Nyahsemak ini untuk "
 "menyahaktifkan pembaris dari dipaparkan."
 
-#: part/KWView.cpp:361
+#: part/KWView.cpp:357
 #, fuzzy
 #| msgid "Select All Frames"
 msgid "Select All Shapes"
 msgstr "Pilih Semua Bingkai"
 
-#: part/KWView.cpp:378
+#: part/KWView.cpp:374
 msgid "Create Linked Copy"
 msgstr "Cipta Salinan Terpaut"
 
-#: part/KWView.cpp:380
+#: part/KWView.cpp:376
 msgid "Create a copy of the current frame, always showing the same contents"
 msgstr "Cipta salinan bingkai semasa, sentiasa paparkan kandungan yang sama"
 
-#: part/KWView.cpp:381
+#: part/KWView.cpp:377
 msgid ""
 "Create a copy of the current frame, that remains linked to it. This means "
 "they always show the same contents: modifying the contents in such a frame "
@@ -1956,36 +1916,72 @@ msgstr ""
 "bermakna ia sentiasa memaparkan kandungan yang sama: mengubah suai kandungan "
 "dalam bingkai itu akan mengemaskinikan semua salinan yang dipautkan padanya."
 
-#: part/KWView.cpp:384
+#: part/KWView.cpp:380
 #, fuzzy
 #| msgid "Create Text Frame"
 msgid "Create Frame-clip"
 msgstr "Cipta Bingkai Teks"
 
-#: part/KWView.cpp:388
+#: part/KWView.cpp:384
 #, fuzzy
 #| msgid "Remove record"
 msgid "Remove Frame-clip"
 msgstr "Alih keluar rekod"
 
-#: part/KWView.cpp:392
+#: part/KWView.cpp:388
 #, fuzzy
 #| msgid "Show &status bar"
 msgid "Show Status Bar"
 msgstr "Papar bar &status"
 
-#: part/KWView.cpp:393
+#: part/KWView.cpp:389
 #, fuzzy
 #| msgid "Show &status bar"
 msgid "Shows or hides the status bar"
 msgstr "Papar bar &status"
 
-#: part/KWView.cpp:747
+#: part/KWView.cpp:745
 #, fuzzy
 #| msgid "Create Linked Copy"
 msgctxt "(qtundo-format)"
 msgid "Create Linked Copy"
 msgstr "Cipta Salinan Terpaut"
+
+#, fuzzy
+#~ msgid "Shows and hides header display"
+#~ msgstr "Papar dan sembunyikan paparan pengepala."
+
+#, fuzzy
+#~| msgid ""
+#~| "Selecting this option toggles the display of headers in KWord."
+#~| "<br><br>Headers are special frames at the top of each page which can "
+#~| "contain page numbers or other information."
+#~ msgid ""
+#~ "Selecting this option toggles the display of headers in Words.<br/><br/"
+#~ ">Headers are special frames at the top of each page which can contain "
+#~ "page numbers or other information."
+#~ msgstr ""
+#~ "Dengan memilih pilihan ini, paparan pengepala dalam KWord dapat ditoggel."
+#~ "<br><br>Pengepala ialah bingkai khas pada bahagian atas setiap halaman "
+#~ "yang mengandungi nombor halaman atau maklumat lain. "
+
+#, fuzzy
+#~ msgid "Shows and hides footer display"
+#~ msgstr "Papar dan sembunyikan paparan pengaki."
+
+#, fuzzy
+#~| msgid ""
+#~| "Selecting this option toggles the display of footers in KWord. "
+#~| "<br><br>Footers are special frames at the bottom of each page which can "
+#~| "contain page numbers or other information."
+#~ msgid ""
+#~ "Selecting this option toggles the display of footers in Words. <br/><br/"
+#~ ">Footers are special shapes at the bottom of each page which can contain "
+#~ "page numbers or other information."
+#~ msgstr ""
+#~ "Dengan memilih pilihan ini, paparan pengaki dalam KWord dapat ditoggel."
+#~ "<br><br>Pengaki ialah bingkai khas pada bahagian bawah setiap halaman "
+#~ "yang mengandungi nombor halaman atau maklumat lain."
 
 #, fuzzy
 #~| msgid "Raise Frame"
