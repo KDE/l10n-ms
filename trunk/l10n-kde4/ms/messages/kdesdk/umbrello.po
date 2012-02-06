@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-05 04:35+0100\n"
+"POT-Creation-Date: 2012-02-06 04:27+0100\n"
 "PO-Revision-Date: 2007-02-25 15:47+0730\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -60,31 +60,31 @@ msgstr ""
 msgid "Use '\\' as documentation tag instead of '@'"
 msgstr ""
 
-#: codegenerators/codegenerator.cpp:590
+#: codegenerators/codegenerator.cpp:597
 #, kde-format
 msgid ""
 "Cannot open file %1 for writing. Please make sure the folder exists and you "
 "have permissions to write to it."
 msgstr ""
 
-#: codegenerators/codegenerator.cpp:590
+#: codegenerators/codegenerator.cpp:597
 #, fuzzy
 msgid "Cannot Open File"
 msgstr "Dokumen yang hendak dibuka"
 
-#: codegenerators/codegenerator.cpp:652
+#: codegenerators/codegenerator.cpp:659
 #: codegenerators/simplecodegenerator.cpp:140
 msgid "Cannot create the folder:\n"
 msgstr ""
 
-#: codegenerators/codegenerator.cpp:653
+#: codegenerators/codegenerator.cpp:660
 #: codegenerators/simplecodegenerator.cpp:141
 msgid ""
 "\n"
 "Please check the access rights"
 msgstr ""
 
-#: codegenerators/codegenerator.cpp:654
+#: codegenerators/codegenerator.cpp:661
 #: codegenerators/simplecodegenerator.cpp:142
 msgid "Cannot Create Folder"
 msgstr ""
@@ -434,8 +434,8 @@ msgstr "Name=KDevelop: KDE/C++"
 #. i18n: file: umbrello.kcfg:270
 #. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
 #: dialogs/umlviewdialog.cpp:152 dialogs/settingsdlg.cpp:410
-#: dialogs/classpropdlg.cpp:391 dialogs/dialogbase.cpp:57 rc.cpp:1328
-#: rc.cpp:1436
+#: dialogs/classpropdlg.cpp:391 dialogs/dialogbase.cpp:57 rc.cpp:1340
+#: rc.cpp:1448
 #, fuzzy
 msgid "Font"
 msgstr "Font:"
@@ -702,14 +702,14 @@ msgstr "Papar penanda"
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showOpSigs)
 #. i18n: file: umbrello.kcfg:218
 #. i18n: ectx: whatsthis, entry (showOpSig), group (Class Options)
-#: dialogs/settingsdlg.cpp:318 rc.cpp:915 rc.cpp:1397
+#: dialogs/settingsdlg.cpp:318 rc.cpp:915 rc.cpp:1409
 #, fuzzy
 msgid "Show operation signature"
 msgstr "Papar nombor baris"
 
 #. i18n: file: umbrello.kcfg:207
 #. i18n: ectx: label, entry (showPublicOnly), group (Class Options)
-#: dialogs/settingsdlg.cpp:322 rc.cpp:1382
+#: dialogs/settingsdlg.cpp:322 rc.cpp:1394
 #, fuzzy
 msgid "Show Public Only"
 msgstr "Papar nombor baris"
@@ -1460,7 +1460,7 @@ msgstr "Name=KDevelop: KDE/C++"
 #. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
 #. i18n: file: codegenwizard/codegenoptionspage.ui:39
 #. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
-#: dialogs/objectnodedialog.cpp:140 rc.cpp:95 rc.cpp:1041
+#: dialogs/objectnodedialog.cpp:140 rc.cpp:95 rc.cpp:1053
 msgid "General"
 msgstr "Umum"
 
@@ -2058,32 +2058,43 @@ msgid ""
 "for in the right hand side list."
 msgstr ""
 
-#: codegenwizard/codegenstatuspage.cpp:43
+#: codegenwizard/codegenstatuspage.cpp:45
 #, fuzzy
 msgid "Status of Code Generation Progress"
 msgstr "Comment=Projek Ada"
 
-#: codegenwizard/codegenstatuspage.cpp:44
+#: codegenwizard/codegenstatuspage.cpp:46
 msgid ""
 "Press the button Generate to start the code generation.\n"
 "Check the success state for every class."
 msgstr ""
 
-#: codegenwizard/codegenstatuspage.cpp:83
-#: codeimpwizard/codeimpstatuspage.cpp:99
+#: codegenwizard/codegenstatuspage.cpp:87
+#: codeimpwizard/codeimpstatuspage.cpp:101
 #, fuzzy
 msgid "Not Yet Generated"
 msgstr "Tidak dapat mencari bahagian KDevDesigner."
 
-#: codegenwizard/codegenstatuspage.cpp:153
+#: codegenwizard/codegenstatuspage.cpp:159
 #, fuzzy
 msgid "Code Generated"
 msgstr "Tidak dapat mencari bahagian KDevDesigner."
 
-#: codegenwizard/codegenstatuspage.cpp:157
+#: codegenwizard/codegenstatuspage.cpp:163
 #, fuzzy
 msgid "Not Generated"
 msgstr "Tidak dapat mencari bahagian KDevDesigner."
+
+#: codegenwizard/codegenstatuspage.cpp:188
+#: codegenwizard/codegenstatuspage.cpp:218
+#: codeimpwizard/codeimpstatuspage.cpp:308
+#, fuzzy
+msgid "Cannot open file!"
+msgstr "Dokumen yang hendak dibuka"
+
+#: codegenwizard/codegenstatuspage.cpp:208
+msgid "Umbrello Code Generation - Logger Export"
+msgstr ""
 
 #: codegenwizard/codegenerationwizard.cpp:43
 msgid "Code Generation Wizard"
@@ -2093,7 +2104,7 @@ msgstr ""
 #. i18n: ectx: property (windowTitle), widget (QWidget, CodeGenOptionsPage)
 #. i18n: file: codeimpwizard/codeimpselectpage.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, CodeImpSelectPage)
-#: codegenwizard/codegenoptionspage.cpp:40 rc.cpp:1038 rc.cpp:1163
+#: codegenwizard/codegenoptionspage.cpp:40 rc.cpp:1050 rc.cpp:1175
 msgid "Code Generation Options"
 msgstr ""
 
@@ -2202,16 +2213,16 @@ msgstr "Teks baru"
 msgid "Enter new text:"
 msgstr "Tajuk laman baru"
 
-#: widgets/floatingtextwidget.cpp:360 widgets/associationwidget.cpp:3019
+#: widgets/floatingtextwidget.cpp:360 widgets/associationwidget.cpp:3022
 #, fuzzy
 msgid "Enter role name:"
 msgstr "Name=KDevelop: KDE/C++"
 
-#: widgets/floatingtextwidget.cpp:362 widgets/associationwidget.cpp:2981
+#: widgets/floatingtextwidget.cpp:362 widgets/associationwidget.cpp:2984
 msgid "Enter multiplicity:"
 msgstr ""
 
-#: widgets/floatingtextwidget.cpp:369 widgets/associationwidget.cpp:2999
+#: widgets/floatingtextwidget.cpp:369 widgets/associationwidget.cpp:3002
 #, fuzzy
 msgid "Enter association name:"
 msgstr "Name=KDevelop: KDE/C++"
@@ -2376,16 +2387,16 @@ msgstr "Name=KDevelop: KDE/C++"
 msgid "Enter State (keep '-' if there is no state for the object) "
 msgstr ""
 
-#: widgets/associationwidget.cpp:2980
+#: widgets/associationwidget.cpp:2983
 msgid "Multiplicity"
 msgstr ""
 
-#: widgets/associationwidget.cpp:2998
+#: widgets/associationwidget.cpp:3001
 #, fuzzy
 msgid "Association Name"
 msgstr "Name=KDevAdaProject"
 
-#: widgets/associationwidget.cpp:3018
+#: widgets/associationwidget.cpp:3021
 #, fuzzy
 msgid "Role Name"
 msgstr "Name=KDevAdaProject"
@@ -4779,26 +4790,54 @@ msgstr ""
 msgid "Show block type"
 msgstr "Papar nombor baris"
 
-#. i18n: file: codegenwizard/codegenstatuspage.ui:29
-#. i18n: ectx: property (text), widget (QTableWidget, ui_tableWidgetStatus)
-#. i18n: file: codeimpwizard/codeimpstatuspage.ui:49
-#. i18n: ectx: property (text), widget (QTableWidget, ui_tableWidgetStatus)
-#: rc.cpp:1029 rc.cpp:1193
-msgid "Class"
-msgstr "Kelas"
-
-#. i18n: file: codegenwizard/codegenstatuspage.ui:34
+#. i18n: file: codegenwizard/codegenstatuspage.ui:27
+#. i18n: ectx: attribute (title), widget (QWidget, ui_statusTab)
+#. i18n: file: codegenwizard/codegenstatuspage.ui:45
 #. i18n: ectx: property (text), widget (QTableWidget, ui_tableWidgetStatus)
 #. i18n: file: codeimpwizard/codeimpstatuspage.ui:54
 #. i18n: ectx: property (text), widget (QTableWidget, ui_tableWidgetStatus)
-#: rc.cpp:1032 rc.cpp:1196
+#: rc.cpp:1029 rc.cpp:1035 rc.cpp:1208
 #, fuzzy
 msgid "Status"
 msgstr "Jenis MIME"
 
-#. i18n: file: codegenwizard/codegenstatuspage.ui:55
+#. i18n: file: codegenwizard/codegenstatuspage.ui:40
+#. i18n: ectx: property (text), widget (QTableWidget, ui_tableWidgetStatus)
+#. i18n: file: codeimpwizard/codeimpstatuspage.ui:49
+#. i18n: ectx: property (text), widget (QTableWidget, ui_tableWidgetStatus)
+#: rc.cpp:1032 rc.cpp:1205
+msgid "Class"
+msgstr "Kelas"
+
+#. i18n: file: codegenwizard/codegenstatuspage.ui:59
+#. i18n: ectx: attribute (title), widget (QWidget, ui_loggerTab)
+#. i18n: file: codeimpwizard/codeimpstatuspage.ui:105
+#. i18n: ectx: attribute (title), widget (QWidget, ui_tabLogger)
+#: rc.cpp:1038 rc.cpp:1217
+msgid "Logger"
+msgstr ""
+
+#. i18n: file: codegenwizard/codegenstatuspage.ui:85
+#. i18n: ectx: property (text), widget (QPushButton, ui_pushButtonClear)
+#. i18n: file: codeimpwizard/codeimpstatuspage.ui:131
+#. i18n: ectx: property (text), widget (QPushButton, ui_pushButtonClear)
+#: rc.cpp:1041 rc.cpp:1220
+#, fuzzy
+msgid "Clear"
+msgstr "Kelas"
+
+#. i18n: file: codegenwizard/codegenstatuspage.ui:98
+#. i18n: ectx: property (text), widget (QPushButton, ui_pushButtonExport)
+#. i18n: file: codeimpwizard/codeimpstatuspage.ui:144
+#. i18n: ectx: property (text), widget (QPushButton, ui_pushButtonExport)
+#: rc.cpp:1044 rc.cpp:1223
+#, fuzzy
+msgid "Export..."
+msgstr "Kuncupkan Semua Blok"
+
+#. i18n: file: codegenwizard/codegenstatuspage.ui:120
 #. i18n: ectx: property (text), widget (QPushButton, ui_pushButtonGenerate)
-#: rc.cpp:1035
+#: rc.cpp:1047
 #, fuzzy
 #| msgid "General"
 msgid "Generate"
@@ -4806,51 +4845,51 @@ msgstr "Umum"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:53
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxLanguage)
-#: rc.cpp:1044
+#: rc.cpp:1056
 msgid "Language"
 msgstr "Bahasa"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:71
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxFolders)
-#: rc.cpp:1047
+#: rc.cpp:1059
 #, fuzzy
 msgid "Folders"
 msgstr "Guna Hint Saiz"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:77
 #. i18n: ectx: property (text), widget (QLabel, ui_textLabelFolder)
-#: rc.cpp:1050
+#: rc.cpp:1062
 msgid "Write all generated files to folder:"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:89
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, ui_outputDir)
-#: rc.cpp:1053
+#: rc.cpp:1065
 msgid "Files generated by Code Generator will be written to this folder"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:96
 #. i18n: ectx: property (text), widget (QPushButton, ui_browseOutput)
-#: rc.cpp:1056
+#: rc.cpp:1068
 msgid "Bro&wse..."
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:105
 #. i18n: ectx: property (text), widget (QCheckBox, ui_includeHeadings)
-#: rc.cpp:1059
+#: rc.cpp:1071
 msgid "&Include heading files from folder:"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:117
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, ui_headingsDir)
-#: rc.cpp:1062
+#: rc.cpp:1074
 msgid ""
 "Files in this folder will be used as heading files in the generated code"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:124
 #. i18n: ectx: property (text), widget (QPushButton, ui_browseHeadings)
-#: rc.cpp:1065
+#: rc.cpp:1077
 msgid "B&rowse..."
 msgstr ""
 
@@ -4858,13 +4897,13 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxOverwritePolicy)
 #. i18n: file: umbrello.kcfg:418
 #. i18n: ectx: label, entry (overwritePolicy), group (Code Generation)
-#: rc.cpp:1068 rc.cpp:1568
+#: rc.cpp:1080 rc.cpp:1580
 msgid "Overwrite Policy"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:143
 #. i18n: ectx: property (text), widget (QLabel, ui_textLabelOverwritePolicy)
-#: rc.cpp:1071
+#: rc.cpp:1083
 msgid ""
 "If a file with the same name as the name code \n"
 "generator wants to use as output file already exists:"
@@ -4872,31 +4911,31 @@ msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:167
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, ui_radioButtonOverwrite)
-#: rc.cpp:1075
+#: rc.cpp:1087
 msgid "Overwrite existing files if they exist in the destination folder"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:170
 #. i18n: ectx: property (text), widget (QRadioButton, ui_radioButtonOverwrite)
-#: rc.cpp:1078
+#: rc.cpp:1090
 msgid "O&verwrite"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:177
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, ui_radioButtonAsk)
-#: rc.cpp:1081
+#: rc.cpp:1093
 msgid "If a file with the same name already exists, ask what to do"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:180
 #. i18n: ectx: property (text), widget (QRadioButton, ui_radioButtonAsk)
-#: rc.cpp:1084
+#: rc.cpp:1096
 msgid "As&k"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:190
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, ui_radioButtonChangeName)
-#: rc.cpp:1087
+#: rc.cpp:1099
 msgid ""
 "If a file already exists in the destination folder, select a different name "
 "to use by adding a suffix to the file name"
@@ -4904,39 +4943,39 @@ msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:193
 #. i18n: ectx: property (text), widget (QRadioButton, ui_radioButtonChangeName)
-#: rc.cpp:1090
+#: rc.cpp:1102
 #, fuzzy
 msgid "&Use a different name"
 msgstr "Name=KDevelop: KDE/C++"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:208
 #. i18n: ectx: attribute (title), widget (QWidget, ui_tabFormatting)
-#: rc.cpp:1093
+#: rc.cpp:1105
 msgid "Formatting"
 msgstr "Memformat"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:216
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxComment)
-#: rc.cpp:1096
+#: rc.cpp:1108
 #, fuzzy
 msgid "Comment Verbosity"
 msgstr "Comment=%{APPNAME}"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:222
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_forceDoc)
-#: rc.cpp:1099
+#: rc.cpp:1111
 msgid "Write comments &for class and method documentation even if empty"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:225
 #. i18n: ectx: property (text), widget (QCheckBox, ui_forceDoc)
-#: rc.cpp:1102
+#: rc.cpp:1114
 msgid "&Write documentation comments even if empty"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:232
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_forceSections)
-#: rc.cpp:1105
+#: rc.cpp:1117
 msgid ""
 "Writes comments to indicate the different sections (public, private etc) in "
 "a class, even if the sections are empty"
@@ -4944,7 +4983,7 @@ msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:236
 #. i18n: ectx: property (text), widget (QCheckBox, ui_forceSections)
-#: rc.cpp:1108
+#: rc.cpp:1120
 msgid ""
 "Write comments &for sections even if section \n"
 "is empty"
@@ -4952,510 +4991,490 @@ msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:246
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxLines)
-#: rc.cpp:1112
+#: rc.cpp:1124
 #, fuzzy
 msgid "Lines"
 msgstr "Nombor baris:"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:254
 #. i18n: ectx: property (text), widget (QLabel, ui_textLabelType)
-#: rc.cpp:1115
+#: rc.cpp:1127
 #, fuzzy
 msgid "Indentation type:"
 msgstr "Jenis MIME"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:265
 #. i18n: ectx: property (text), item, widget (KComboBox, ui_SelectIndentationTypeBox)
-#: rc.cpp:1118
+#: rc.cpp:1130
 #, fuzzy
 msgid "No Indentation"
 msgstr "Tiada padanan"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:270
 #. i18n: ectx: property (text), item, widget (KComboBox, ui_SelectIndentationTypeBox)
-#: rc.cpp:1121
+#: rc.cpp:1133
 msgid "Tab"
 msgstr "Tab"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:275
 #. i18n: ectx: property (text), item, widget (KComboBox, ui_SelectIndentationTypeBox)
-#: rc.cpp:1124
+#: rc.cpp:1136
 msgid "Space"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:293
 #. i18n: ectx: property (text), widget (QLabel, ui_textLabelAmount)
-#: rc.cpp:1127
+#: rc.cpp:1139
 #, fuzzy
 msgid "Indentation amount:"
 msgstr "Jenis MIME"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:310
 #. i18n: ectx: property (text), widget (QLabel, ui_textLabelStyle)
-#: rc.cpp:1130
+#: rc.cpp:1142
 #, fuzzy
 msgid "Line ending style:"
 msgstr "Papar nombor baris"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:321
 #. i18n: ectx: property (text), item, widget (KComboBox, ui_SelectEndLineCharsBox)
-#: rc.cpp:1133
+#: rc.cpp:1145
 msgid "*NIX (\"\\n\")"
 msgstr "*NIX (\"\\n\")"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:326
 #. i18n: ectx: property (text), item, widget (KComboBox, ui_SelectEndLineCharsBox)
-#: rc.cpp:1136
+#: rc.cpp:1148
 #, fuzzy
 msgid "Windows (\"\\r\\n\")"
 msgstr "256 Warna (8 Bit)"
 
 #. i18n: file: codegenwizard/codegenoptionspage.ui:331
 #. i18n: ectx: property (text), item, widget (KComboBox, ui_SelectEndLineCharsBox)
-#: rc.cpp:1139
+#: rc.cpp:1151
 msgid "Mac (\"\\r\")"
 msgstr "Mac (\"\\r\")"
 
 #. i18n: file: codegenwizard/codegenselectpage.ui:19
 #. i18n: ectx: property (windowTitle), widget (QWidget, CodeGenSelectPage)
-#: rc.cpp:1142
+#: rc.cpp:1154
 #, fuzzy
 msgid "Code Generation Selection"
 msgstr "Comment=Projek Ada"
 
 #. i18n: file: codegenwizard/codegenselectpage.ui:32
 #. i18n: ectx: property (text), widget (QLabel, ui_labelListAvailable)
-#: rc.cpp:1145
+#: rc.cpp:1157
 #, fuzzy
 msgid "Classes Available"
 msgstr "Kuncupkan Semua Blok"
 
 #. i18n: file: codegenwizard/codegenselectpage.ui:72
 #. i18n: ectx: property (toolTip), widget (QPushButton, ui_addButton)
-#: rc.cpp:1148
+#: rc.cpp:1160
 msgid "Add class for code generation"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenselectpage.ui:75
 #. i18n: ectx: property (text), widget (QPushButton, ui_addButton)
-#: rc.cpp:1151
+#: rc.cpp:1163
 msgid "Add >>"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenselectpage.ui:101
 #. i18n: ectx: property (toolTip), widget (QPushButton, ui_removeButton)
-#: rc.cpp:1154
+#: rc.cpp:1166
 #, fuzzy
 msgid "Remove class from Code Generation"
 msgstr "Comment=Projek Ada"
 
 #. i18n: file: codegenwizard/codegenselectpage.ui:104
 #. i18n: ectx: property (text), widget (QPushButton, ui_removeButton)
-#: rc.cpp:1157
+#: rc.cpp:1169
 msgid "<< Remove"
 msgstr ""
 
 #. i18n: file: codegenwizard/codegenselectpage.ui:137
 #. i18n: ectx: property (text), widget (QLabel, ui_labelListSelected)
-#: rc.cpp:1160
+#: rc.cpp:1172
 #, fuzzy
 msgid "Classes Selected"
 msgstr "Name=KDevelop: KDE/C++"
 
 #. i18n: file: codeimpwizard/codeimpselectpage.ui:37
 #. i18n: ectx: property (toolTip), widget (QLabel, ui_languageLabel)
-#: rc.cpp:1166
+#: rc.cpp:1178
 #, fuzzy
 msgid "The language of the project."
 msgstr "Name=KDevelop: KDE/C++"
 
 #. i18n: file: codeimpwizard/codeimpselectpage.ui:40
 #. i18n: ectx: property (text), widget (QLabel, ui_languageLabel)
-#: rc.cpp:1169
+#: rc.cpp:1181
 #, fuzzy
 msgid "Programming Language:"
 msgstr "Bahasa"
 
 #. i18n: file: codeimpwizard/codeimpselectpage.ui:66
 #. i18n: ectx: property (text), widget (QCheckBox, ui_subdirCheckBox)
-#: rc.cpp:1172
+#: rc.cpp:1184
 msgid "Include Subdirectories."
 msgstr ""
 
 #. i18n: file: codeimpwizard/codeimpselectpage.ui:77
 #. i18n: ectx: property (text), widget (QLabel, ui_fileExtLabel)
-#: rc.cpp:1175
+#: rc.cpp:1187
 msgid "List of file extensions"
 msgstr ""
 
 #. i18n: file: codeimpwizard/codeimpselectpage.ui:117
 #. i18n: ectx: property (text), widget (QPushButton, ui_deselectAllButton)
-#: rc.cpp:1178
+#: rc.cpp:1190
 msgid "Deselect all"
 msgstr ""
 
 #. i18n: file: codeimpwizard/codeimpselectpage.ui:124
 #. i18n: ectx: property (text), widget (QPushButton, ui_selectAllButton)
-#: rc.cpp:1181
+#: rc.cpp:1193
 #, fuzzy
 msgid "Select all"
 msgstr "&Pilih"
 
 #. i18n: file: codeimpwizard/codeimpselectpage.ui:136
 #. i18n: ectx: property (text), widget (QLabel, ui_filesLabel)
-#: rc.cpp:1184
+#: rc.cpp:1196
 msgid "Number of files:"
 msgstr ""
 
 #. i18n: file: codeimpwizard/codeimpselectpage.ui:143
 #. i18n: ectx: property (text), widget (QLabel, ui_filesNumLabel)
-#: rc.cpp:1187
+#: rc.cpp:1199
 msgid "0"
 msgstr ""
 
 #. i18n: file: codeimpwizard/codeimpstatuspage.ui:27
 #. i18n: ectx: attribute (title), widget (QWidget, ui_tabStatus)
-#: rc.cpp:1190
+#: rc.cpp:1202
 #, fuzzy
 msgid "Import Status"
 msgstr "Jenis MIME"
 
 #. i18n: file: codeimpwizard/codeimpstatuspage.ui:75
 #. i18n: ectx: property (text), widget (QPushButton, ui_pushButtonStart)
-#: rc.cpp:1199
+#: rc.cpp:1211
 msgid "Start import"
 msgstr ""
 
 #. i18n: file: codeimpwizard/codeimpstatuspage.ui:94
 #. i18n: ectx: property (text), widget (QPushButton, ui_pushButtonStop)
-#: rc.cpp:1202
+#: rc.cpp:1214
 msgid "Stop"
 msgstr ""
-
-#. i18n: file: codeimpwizard/codeimpstatuspage.ui:105
-#. i18n: ectx: attribute (title), widget (QWidget, ui_tabLogger)
-#: rc.cpp:1205
-msgid "Logger"
-msgstr ""
-
-#. i18n: file: codeimpwizard/codeimpstatuspage.ui:131
-#. i18n: ectx: property (text), widget (QPushButton, ui_pushButtonClear)
-#: rc.cpp:1208
-#, fuzzy
-msgid "Clear"
-msgstr "Kelas"
-
-#. i18n: file: codeimpwizard/codeimpstatuspage.ui:144
-#. i18n: ectx: property (text), widget (QPushButton, ui_pushButtonExport)
-#: rc.cpp:1211
-#, fuzzy
-msgid "Export..."
-msgstr "Kuncupkan Semua Blok"
 
 #. i18n: file: umbrello.kcfg:13
 #. i18n: ectx: label, entry (Geometry), group (General Options)
 #. i18n: file: umbrello.kcfg:14
 #. i18n: ectx: whatsthis, entry (Geometry), group (General Options)
-#: rc.cpp:1214 rc.cpp:1217
+#: rc.cpp:1226 rc.cpp:1229
 msgid "Geometry"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:18
 #. i18n: ectx: label, entry (imageMimeType), group (General Options)
-#: rc.cpp:1220
+#: rc.cpp:1232
 #, fuzzy
 msgid "Image Mime Type"
 msgstr "Jenis MIME"
 
 #. i18n: file: umbrello.kcfg:19
 #. i18n: ectx: whatsthis, entry (imageMimeType), group (General Options)
-#: rc.cpp:1223
+#: rc.cpp:1235
 msgid "The Mime Type of the Images"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:23
 #. i18n: ectx: label, entry (undo), group (General Options)
-#: rc.cpp:1226
+#: rc.cpp:1238
 msgid "Undo Support"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:24
 #. i18n: ectx: whatsthis, entry (undo), group (General Options)
-#: rc.cpp:1229
+#: rc.cpp:1241
 msgid "Undo Support is enabled when this is true"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:28
 #. i18n: ectx: label, entry (tabdiagrams), group (General Options)
-#: rc.cpp:1232
+#: rc.cpp:1244
 #, fuzzy
 msgid "Tabbed Diagrams"
 msgstr "Guna Hint Saiz"
 
 #. i18n: file: umbrello.kcfg:29
 #. i18n: ectx: whatsthis, entry (tabdiagrams), group (General Options)
-#: rc.cpp:1235
+#: rc.cpp:1247
 msgid "Enables/Disables Tabbed View of Diagrams in the view area"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:33
 #. i18n: ectx: label, entry (newcodegen), group (General Options)
-#: rc.cpp:1238
+#: rc.cpp:1250
 #, fuzzy
 msgid "New Code Generator"
 msgstr "Comment=Projek Ada"
 
 #. i18n: file: umbrello.kcfg:34
 #. i18n: ectx: whatsthis, entry (newcodegen), group (General Options)
-#: rc.cpp:1241
+#: rc.cpp:1253
 msgid "Enables/Disables Support for the New Code Generator"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:38
 #. i18n: ectx: label, entry (angularlines), group (General Options)
-#: rc.cpp:1244
+#: rc.cpp:1256
 msgid "Angular Lines"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:39
 #. i18n: ectx: whatsthis, entry (angularlines), group (General Options)
-#: rc.cpp:1247
+#: rc.cpp:1259
 msgid "Enables/Disables Support for Angular Lines in diagrams"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:43
 #. i18n: ectx: label, entry (footerPrinting), group (General Options)
-#: rc.cpp:1250
+#: rc.cpp:1262
 msgid "Footer Printing"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:44
 #. i18n: ectx: whatsthis, entry (footerPrinting), group (General Options)
-#: rc.cpp:1253
+#: rc.cpp:1265
 #, fuzzy
 msgid "Enables/Disables Support for footer printing"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:48
 #. i18n: ectx: label, entry (autosave), group (General Options)
-#: rc.cpp:1256
+#: rc.cpp:1268
 #, fuzzy
 msgid "Auto Save"
 msgstr "Tetap buddy '%1' ke '%2'"
 
 #. i18n: file: umbrello.kcfg:49
 #. i18n: ectx: whatsthis, entry (autosave), group (General Options)
-#: rc.cpp:1259
+#: rc.cpp:1271
 #, fuzzy
 msgid "Enables/Disables Auto Saving at Regular Intervals"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:53
 #. i18n: ectx: label, entry (time), group (General Options)
-#: rc.cpp:1262
+#: rc.cpp:1274
 msgid "Auto Save Time ( Old )"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:54
 #. i18n: ectx: whatsthis, entry (time), group (General Options)
-#: rc.cpp:1265
+#: rc.cpp:1277
 msgid "Auto Save Time Interval ( Old )"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:67
 #. i18n: ectx: label, entry (autosavesuffix), group (General Options)
-#: rc.cpp:1268
+#: rc.cpp:1280
 #, fuzzy
 msgid "Auto Save Suffix"
 msgstr "Tetap buddy '%1' ke '%2'"
 
 #. i18n: file: umbrello.kcfg:68
 #. i18n: ectx: whatsthis, entry (autosavesuffix), group (General Options)
-#: rc.cpp:1271
+#: rc.cpp:1283
 msgid "The Suffix for the auto save file"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:72
 #. i18n: ectx: label, entry (loadlast), group (General Options)
-#: rc.cpp:1274
+#: rc.cpp:1286
 msgid "Load Last"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:73
 #. i18n: ectx: whatsthis, entry (loadlast), group (General Options)
-#: rc.cpp:1277
+#: rc.cpp:1289
 #, fuzzy
 msgid "Enables/Disables Loading of the last open file"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:77
 #. i18n: ectx: label, entry (diagram), group (General Options)
-#: rc.cpp:1280
+#: rc.cpp:1292
 #, fuzzy
 msgid "Diagram To Load at Startup"
 msgstr "Tambah Bar Alatan"
 
 #. i18n: file: umbrello.kcfg:78
 #. i18n: ectx: whatsthis, entry (diagram), group (General Options)
-#: rc.cpp:1283
+#: rc.cpp:1295
 #, fuzzy
 msgid "The Diagram to load at startup"
 msgstr "Tambah Bar Alatan"
 
 #. i18n: file: umbrello.kcfg:95
 #. i18n: ectx: label, entry (defaultLanguage), group (General Options)
-#: rc.cpp:1286
+#: rc.cpp:1298
 #, fuzzy
 msgid "Default Language at Startup"
 msgstr "Bahasa"
 
 #. i18n: file: umbrello.kcfg:96
 #. i18n: ectx: whatsthis, entry (defaultLanguage), group (General Options)
-#: rc.cpp:1289
+#: rc.cpp:1301
 msgid "The Language that Umbrello should start with by default"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:130
 #. i18n: ectx: label, entry (useFillColor), group (UI Options)
-#: rc.cpp:1292 listpopupmenu.cpp:977
+#: rc.cpp:1304 listpopupmenu.cpp:977
 #, fuzzy
 msgid "Use Fill Color"
 msgstr "Guna Hint Saiz"
 
 #. i18n: file: umbrello.kcfg:131
 #. i18n: ectx: whatsthis, entry (useFillColor), group (UI Options)
-#: rc.cpp:1295
+#: rc.cpp:1307
 #, fuzzy
 msgid "Enables/Disables usage of fill color"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:135
 #. i18n: ectx: label, entry (fillColor), group (UI Options)
-#: rc.cpp:1298
+#: rc.cpp:1310
 #, fuzzy
 msgid "Fill Color"
 msgstr "Nombor baris:"
 
 #. i18n: file: umbrello.kcfg:136
 #. i18n: ectx: whatsthis, entry (fillColor), group (UI Options)
-#: rc.cpp:1301
+#: rc.cpp:1313
 #, fuzzy
 msgid "The Fill Color to be used"
 msgstr "Guna Hint Saiz"
 
 #. i18n: file: umbrello.kcfg:140
 #. i18n: ectx: label, entry (lineColor), group (UI Options)
-#: rc.cpp:1304
+#: rc.cpp:1316
 #, fuzzy
 msgid "Line Color"
 msgstr "Nombor baris:"
 
 #. i18n: file: umbrello.kcfg:141
 #. i18n: ectx: whatsthis, entry (lineColor), group (UI Options)
-#: rc.cpp:1307
+#: rc.cpp:1319
 #, fuzzy
 msgid "The Color of the Lines"
 msgstr "Fail Wujud"
 
 #. i18n: file: umbrello.kcfg:145
 #. i18n: ectx: label, entry (lineWidth), group (UI Options)
-#: rc.cpp:1310
+#: rc.cpp:1322
 #, fuzzy
 msgid "Line Width"
 msgstr "Nombor baris:"
 
 #. i18n: file: umbrello.kcfg:146
 #. i18n: ectx: whatsthis, entry (lineWidth), group (UI Options)
-#: rc.cpp:1313
+#: rc.cpp:1325
 #, fuzzy
 msgid "The Width of the Line"
 msgstr "Fail Wujud"
 
 #. i18n: file: umbrello.kcfg:150
 #. i18n: ectx: label, entry (textColor), group (UI Options)
-#: rc.cpp:1316
+#: rc.cpp:1328
 #, fuzzy
 msgid "Text Color"
 msgstr "%1 (widget tersendiri)"
 
 #. i18n: file: umbrello.kcfg:151
 #. i18n: ectx: whatsthis, entry (textColor), group (UI Options)
-#: rc.cpp:1319
+#: rc.cpp:1331
 #, fuzzy
 msgid "The Color of the Text"
 msgstr "Fail Wujud"
 
 #. i18n: file: umbrello.kcfg:155
 #. i18n: ectx: label, entry (showDocWindow), group (UI Options)
-#: rc.cpp:1322
+#: rc.cpp:1334
 msgid "Show Doc Window"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:156
 #. i18n: ectx: whatsthis, entry (showDocWindow), group (UI Options)
-#: rc.cpp:1325
+#: rc.cpp:1337
 #, fuzzy
 msgid "Enables/Disables showing of the doc window"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:161
 #. i18n: ectx: whatsthis, entry (uiFont), group (UI Options)
-#: rc.cpp:1331
+#: rc.cpp:1343
 #, fuzzy
 msgid "The Font to be used"
 msgstr "Guna Hint Saiz"
 
 #. i18n: file: umbrello.kcfg:165
 #. i18n: ectx: label, entry (backgroundColor), group (UI Options)
-#: rc.cpp:1334
+#: rc.cpp:1346
 #, fuzzy
 msgid "Background Color"
 msgstr "Warna:"
 
 #. i18n: file: umbrello.kcfg:166
 #. i18n: ectx: whatsthis, entry (backgroundColor), group (UI Options)
-#: rc.cpp:1337
+#: rc.cpp:1349
 #, fuzzy
 msgid "The Color of the diagram background"
 msgstr "Fail Wujud"
 
 #. i18n: file: umbrello.kcfg:170
 #. i18n: ectx: label, entry (gridDotColor), group (UI Options)
-#: rc.cpp:1340
+#: rc.cpp:1352
 #, fuzzy
 msgid "Grid Dot Color"
 msgstr "%1 (widget tersendiri)"
 
 #. i18n: file: umbrello.kcfg:171
 #. i18n: ectx: whatsthis, entry (gridDotColor), group (UI Options)
-#: rc.cpp:1343
+#: rc.cpp:1355
 #, fuzzy
 msgid "The Color of the grid dots"
 msgstr "Fail Wujud"
 
 #. i18n: file: umbrello.kcfg:177
 #. i18n: ectx: label, entry (showVisibility), group (Class Options)
-#: rc.cpp:1346
+#: rc.cpp:1358
 #, fuzzy
 msgid "Show Visibility"
 msgstr "Papar penanda"
 
 #. i18n: file: umbrello.kcfg:178
 #. i18n: ectx: whatsthis, entry (showVisibility), group (Class Options)
-#: rc.cpp:1349
+#: rc.cpp:1361
 msgid "Show the Visibility of the Attributes ( eg: private, public, protected)"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:182
 #. i18n: ectx: label, entry (showAtts), group (Class Options)
-#: rc.cpp:1352
+#: rc.cpp:1364
 #, fuzzy
 msgid "Show Attributes"
 msgstr "Papar penanda"
 
 #. i18n: file: umbrello.kcfg:183
 #. i18n: ectx: whatsthis, entry (showAtts), group (Class Options)
-#: rc.cpp:1355
+#: rc.cpp:1367
 #, fuzzy
 msgid "Show attributes of the class"
 msgstr "Papar penanda"
@@ -5464,21 +5483,21 @@ msgstr "Papar penanda"
 #. i18n: ectx: label, entry (showOps), group (Class Options)
 #. i18n: file: umbrello.kcfg:188
 #. i18n: ectx: whatsthis, entry (showOps), group (Class Options)
-#: rc.cpp:1358 rc.cpp:1361
+#: rc.cpp:1370 rc.cpp:1373
 #, fuzzy
 msgid "Show Operations"
 msgstr "Papar penanda"
 
 #. i18n: file: umbrello.kcfg:192
 #. i18n: ectx: label, entry (showPackage), group (Class Options)
-#: rc.cpp:1364
+#: rc.cpp:1376
 #, fuzzy
 msgid "Show Package"
 msgstr "Papar penanda"
 
 #. i18n: file: umbrello.kcfg:193
 #. i18n: ectx: whatsthis, entry (showPackage), group (Class Options)
-#: rc.cpp:1367
+#: rc.cpp:1379
 #, fuzzy
 msgid "Enables/Disables showing of packages"
 msgstr "Teks baru"
@@ -5487,7 +5506,7 @@ msgstr "Teks baru"
 #. i18n: ectx: label, entry (showStereoType), group (Class Options)
 #. i18n: file: umbrello.kcfg:198
 #. i18n: ectx: whatsthis, entry (showStereoType), group (Class Options)
-#: rc.cpp:1370 rc.cpp:1373
+#: rc.cpp:1382 rc.cpp:1385
 #, fuzzy
 msgid "Show Stereotypes"
 msgstr "Papar nombor baris"
@@ -5496,14 +5515,14 @@ msgstr "Papar nombor baris"
 #. i18n: ectx: label, entry (showAttribAssocs), group (Class Options)
 #. i18n: file: umbrello.kcfg:203
 #. i18n: ectx: whatsthis, entry (showAttribAssocs), group (Class Options)
-#: rc.cpp:1376 rc.cpp:1379
+#: rc.cpp:1388 rc.cpp:1391
 #, fuzzy
 msgid "Show Attribute Associations"
 msgstr "Name=KDevelop: KDE/C++"
 
 #. i18n: file: umbrello.kcfg:208
 #. i18n: ectx: whatsthis, entry (showPublicOnly), group (Class Options)
-#: rc.cpp:1385
+#: rc.cpp:1397
 msgid "Enables/Disables showing of public attributes/methods"
 msgstr ""
 
@@ -5511,14 +5530,14 @@ msgstr ""
 #. i18n: ectx: label, entry (showAttSig), group (Class Options)
 #. i18n: file: umbrello.kcfg:213
 #. i18n: ectx: whatsthis, entry (showAttSig), group (Class Options)
-#: rc.cpp:1388 rc.cpp:1391
+#: rc.cpp:1400 rc.cpp:1403
 #, fuzzy
 msgid "Show Attribute Signature"
 msgstr "Papar nombor baris"
 
 #. i18n: file: umbrello.kcfg:217
 #. i18n: ectx: label, entry (showOpSig), group (Class Options)
-#: rc.cpp:1394
+#: rc.cpp:1406
 #, fuzzy
 msgid "Show Operation Signature"
 msgstr "Papar nombor baris"
@@ -5527,7 +5546,7 @@ msgstr "Papar nombor baris"
 #. i18n: ectx: label, entry (defaultAttributeScope), group (Class Options)
 #. i18n: file: umbrello.kcfg:223
 #. i18n: ectx: whatsthis, entry (defaultAttributeScope), group (Class Options)
-#: rc.cpp:1400 rc.cpp:1403
+#: rc.cpp:1412 rc.cpp:1415
 #, fuzzy
 msgid "Default Attribute Scope"
 msgstr "Bahasa"
@@ -5536,33 +5555,33 @@ msgstr "Bahasa"
 #. i18n: ectx: label, entry (defaultOperationScope), group (Class Options)
 #. i18n: file: umbrello.kcfg:235
 #. i18n: ectx: whatsthis, entry (defaultOperationScope), group (Class Options)
-#: rc.cpp:1406 rc.cpp:1409
+#: rc.cpp:1418 rc.cpp:1421
 #, fuzzy
 msgid "Default Operation Scope"
 msgstr "%1 (widget tersendiri)"
 
 #. i18n: file: umbrello.kcfg:248
 #. i18n: ectx: label, entry (height), group (Code Viewer Options)
-#: rc.cpp:1412
+#: rc.cpp:1424
 msgid "Height"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:249
 #. i18n: ectx: whatsthis, entry (height), group (Code Viewer Options)
-#: rc.cpp:1415
+#: rc.cpp:1427
 msgid "Height of the code viewer"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:254
 #. i18n: ectx: label, entry (width), group (Code Viewer Options)
-#: rc.cpp:1418
+#: rc.cpp:1430
 #, fuzzy
 msgid "Width"
 msgstr "Nombor baris:"
 
 #. i18n: file: umbrello.kcfg:255
 #. i18n: ectx: whatsthis, entry (width), group (Code Viewer Options)
-#: rc.cpp:1421
+#: rc.cpp:1433
 #, fuzzy
 msgid "Width of the Code Viewer"
 msgstr "Fail Wujud"
@@ -5571,54 +5590,54 @@ msgstr "Fail Wujud"
 #. i18n: ectx: label, entry (showHiddenBlocks), group (Code Viewer Options)
 #. i18n: file: umbrello.kcfg:261
 #. i18n: ectx: whatsthis, entry (showHiddenBlocks), group (Code Viewer Options)
-#: rc.cpp:1424 rc.cpp:1427
+#: rc.cpp:1436 rc.cpp:1439
 #, fuzzy
 msgid "Show Hidden Blocks"
 msgstr "Kuncupkan Semua Blok"
 
 #. i18n: file: umbrello.kcfg:265
 #. i18n: ectx: label, entry (blocksAreHighlighted), group (Code Viewer Options)
-#: rc.cpp:1430
+#: rc.cpp:1442
 msgid "Highlight Blocks"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:266
 #. i18n: ectx: whatsthis, entry (blocksAreHighlighted), group (Code Viewer Options)
-#: rc.cpp:1433
+#: rc.cpp:1445
 #, fuzzy
 msgid "Enables/Disables Highlighting of blocks"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:271
 #. i18n: ectx: whatsthis, entry (codeViewerFont), group (Code Viewer Options)
-#: rc.cpp:1439
+#: rc.cpp:1451
 msgid "Font to be used in the Code Viewer"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:275
 #. i18n: ectx: label, entry (paperColor), group (Code Viewer Options)
-#: rc.cpp:1442
+#: rc.cpp:1454
 #, fuzzy
 msgid "Paper Color"
 msgstr "Tambah Bar Alatan"
 
 #. i18n: file: umbrello.kcfg:276
 #. i18n: ectx: whatsthis, entry (paperColor), group (Code Viewer Options)
-#: rc.cpp:1445
+#: rc.cpp:1457
 #, fuzzy
 msgid "Color of the Paper"
 msgstr "Dokumen yang hendak dibuka"
 
 #. i18n: file: umbrello.kcfg:280
 #. i18n: ectx: label, entry (fontColor), group (Code Viewer Options)
-#: rc.cpp:1448
+#: rc.cpp:1460
 #, fuzzy
 msgid "Font Color"
 msgstr "Warna:"
 
 #. i18n: file: umbrello.kcfg:281
 #. i18n: ectx: whatsthis, entry (fontColor), group (Code Viewer Options)
-#: rc.cpp:1451
+#: rc.cpp:1463
 #, fuzzy
 msgid "Color of the Font"
 msgstr "Dokumen yang hendak dibuka"
@@ -5627,7 +5646,7 @@ msgstr "Dokumen yang hendak dibuka"
 #. i18n: ectx: label, entry (selectedColor), group (Code Viewer Options)
 #. i18n: file: umbrello.kcfg:286
 #. i18n: ectx: whatsthis, entry (selectedColor), group (Code Viewer Options)
-#: rc.cpp:1454 rc.cpp:1457
+#: rc.cpp:1466 rc.cpp:1469
 #, fuzzy
 #| msgid "&Default"
 msgid "Selected Color"
@@ -5635,7 +5654,7 @@ msgstr "&Default"
 
 #. i18n: file: umbrello.kcfg:290
 #. i18n: ectx: label, entry (editBlockColor), group (Code Viewer Options)
-#: rc.cpp:1460
+#: rc.cpp:1472
 #, fuzzy
 msgctxt "Color of the Edit Block"
 msgid "Edit Block Color"
@@ -5643,7 +5662,7 @@ msgstr "Nombor baris:"
 
 #. i18n: file: umbrello.kcfg:291
 #. i18n: ectx: whatsthis, entry (editBlockColor), group (Code Viewer Options)
-#: rc.cpp:1463
+#: rc.cpp:1475
 #, fuzzy
 msgid "Color of the Edit Block"
 msgstr "Dokumen yang hendak dibuka"
@@ -5652,21 +5671,21 @@ msgstr "Dokumen yang hendak dibuka"
 #. i18n: ectx: label, entry (nonEditBlockColor), group (Code Viewer Options)
 #. i18n: file: umbrello.kcfg:296
 #. i18n: ectx: whatsthis, entry (nonEditBlockColor), group (Code Viewer Options)
-#: rc.cpp:1466 rc.cpp:1469
+#: rc.cpp:1478 rc.cpp:1481
 #, fuzzy
 msgid "Non Edit Block Color"
 msgstr "Nombor baris:"
 
 #. i18n: file: umbrello.kcfg:300
 #. i18n: ectx: label, entry (umlObjectColor), group (Code Viewer Options)
-#: rc.cpp:1472
+#: rc.cpp:1484
 #, fuzzy
 msgid "UML Object Color"
 msgstr "Name=KDevelop: KDE/C++"
 
 #. i18n: file: umbrello.kcfg:301
 #. i18n: ectx: whatsthis, entry (umlObjectColor), group (Code Viewer Options)
-#: rc.cpp:1475
+#: rc.cpp:1487
 #, fuzzy
 msgid "Color of the UML Object"
 msgstr "Dokumen yang hendak dibuka"
@@ -5675,169 +5694,169 @@ msgstr "Dokumen yang hendak dibuka"
 #. i18n: ectx: label, entry (hiddenColor), group (Code Viewer Options)
 #. i18n: file: umbrello.kcfg:306
 #. i18n: ectx: whatsthis, entry (hiddenColor), group (Code Viewer Options)
-#: rc.cpp:1478 rc.cpp:1481
+#: rc.cpp:1490 rc.cpp:1493
 #, fuzzy
 msgid "Hidden Color"
 msgstr "%1 (widget tersendiri)"
 
 #. i18n: file: umbrello.kcfg:312
 #. i18n: ectx: label, entry (createArtifacts), group (Code Importer)
-#: rc.cpp:1484
+#: rc.cpp:1496
 msgid "Create Artifacts for imported files"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:313
 #. i18n: ectx: whatsthis, entry (createArtifacts), group (Code Importer)
-#: rc.cpp:1487
+#: rc.cpp:1499
 msgid "Create an artifact in the component view for each imported file"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:319
 #. i18n: ectx: label, entry (autoGenEmptyConstructors), group (Code Generation)
-#: rc.cpp:1490
+#: rc.cpp:1502
 msgid "Auto Generate Empty Constructors"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:320
 #. i18n: ectx: whatsthis, entry (autoGenEmptyConstructors), group (Code Generation)
-#: rc.cpp:1493
+#: rc.cpp:1505
 #, fuzzy
 msgid "Enables/Disables Auto Generation of Empty Constructors"
 msgstr "Tiada padanan"
 
 #. i18n: file: umbrello.kcfg:324
 #. i18n: ectx: label, entry (commentStyle), group (Code Generation)
-#: rc.cpp:1496
+#: rc.cpp:1508
 #, fuzzy
 msgid "Comment Style"
 msgstr "Comment=%{APPNAME}"
 
 #. i18n: file: umbrello.kcfg:325
 #. i18n: ectx: whatsthis, entry (commentStyle), group (Code Generation)
-#: rc.cpp:1499
+#: rc.cpp:1511
 msgid "Sets the Style of Comments to be used"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:333
 #. i18n: ectx: label, entry (defaultAssocFieldScope), group (Code Generation)
-#: rc.cpp:1502
+#: rc.cpp:1514
 #, fuzzy
 msgid "Default Association Field Scope"
 msgstr "%1 (widget tersendiri)"
 
 #. i18n: file: umbrello.kcfg:334
 #. i18n: ectx: whatsthis, entry (defaultAssocFieldScope), group (Code Generation)
-#: rc.cpp:1505
+#: rc.cpp:1517
 #, fuzzy
 msgid "Sets the default Association field scope"
 msgstr "%1 (widget tersendiri)"
 
 #. i18n: file: umbrello.kcfg:345
 #. i18n: ectx: label, entry (defaultAttributeAccessorScope), group (Code Generation)
-#: rc.cpp:1508
+#: rc.cpp:1520
 #, fuzzy
 msgid "Default Attribute Accessor Scope"
 msgstr "Bahasa"
 
 #. i18n: file: umbrello.kcfg:346
 #. i18n: ectx: whatsthis, entry (defaultAttributeAccessorScope), group (Code Generation)
-#: rc.cpp:1511
+#: rc.cpp:1523
 #, fuzzy
 msgid "Sets the default attribute accessor scope"
 msgstr "Bahasa"
 
 #. i18n: file: umbrello.kcfg:357
 #. i18n: ectx: label, entry (forceDoc), group (Code Generation)
-#: rc.cpp:1514
+#: rc.cpp:1526
 #, fuzzy
 msgid "Force Documentation"
 msgstr "Tiada padanan"
 
 #. i18n: file: umbrello.kcfg:358
 #. i18n: ectx: whatsthis, entry (forceDoc), group (Code Generation)
-#: rc.cpp:1517
+#: rc.cpp:1529
 #, fuzzy
 msgid "Enables/Disables Verbose Documentation"
 msgstr "Tiada padanan"
 
 #. i18n: file: umbrello.kcfg:362
 #. i18n: ectx: label, entry (forceSections), group (Code Generation)
-#: rc.cpp:1520
+#: rc.cpp:1532
 #, fuzzy
 msgid "Force Section Documentation"
 msgstr "Tiada padanan"
 
 #. i18n: file: umbrello.kcfg:363
 #. i18n: ectx: whatsthis, entry (forceSections), group (Code Generation)
-#: rc.cpp:1523
+#: rc.cpp:1535
 #, fuzzy
 msgid "Enables/Disables verbose section documentation"
 msgstr "Tiada padanan"
 
 #. i18n: file: umbrello.kcfg:367
 #. i18n: ectx: label, entry (headingsDirectory), group (Code Generation)
-#: rc.cpp:1526
+#: rc.cpp:1538
 msgid "Headings Directory"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:368
 #. i18n: ectx: whatsthis, entry (headingsDirectory), group (Code Generation)
-#: rc.cpp:1529
+#: rc.cpp:1541
 msgid "The Path in which the headings are stored"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:372
 #. i18n: ectx: label, entry (includeHeadings), group (Code Generation)
-#: rc.cpp:1532
+#: rc.cpp:1544
 #, fuzzy
 msgid "Include headings"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:373
 #. i18n: ectx: whatsthis, entry (includeHeadings), group (Code Generation)
-#: rc.cpp:1535
+#: rc.cpp:1547
 #, fuzzy
 msgid "Enables/Disables inclusion of headings"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:377
 #. i18n: ectx: label, entry (indentationAmount), group (Code Generation)
-#: rc.cpp:1538
+#: rc.cpp:1550
 #, fuzzy
 msgid "Indentation Amount"
 msgstr "Jenis MIME"
 
 #. i18n: file: umbrello.kcfg:378
 #. i18n: ectx: whatsthis, entry (indentationAmount), group (Code Generation)
-#: rc.cpp:1541
+#: rc.cpp:1553
 #, fuzzy
 msgid "The amount of indentation"
 msgstr "Tiada padanan"
 
 #. i18n: file: umbrello.kcfg:383
 #. i18n: ectx: label, entry (indentationType), group (Code Generation)
-#: rc.cpp:1544
+#: rc.cpp:1556
 #, fuzzy
 msgid "Indentation Type"
 msgstr "Jenis MIME"
 
 #. i18n: file: umbrello.kcfg:384
 #. i18n: ectx: whatsthis, entry (indentationType), group (Code Generation)
-#: rc.cpp:1547
+#: rc.cpp:1559
 #, fuzzy
 msgid "The Type of Indentation"
 msgstr "Tiada padanan"
 
 #. i18n: file: umbrello.kcfg:393
 #. i18n: ectx: label, entry (lineEndingType), group (Code Generation)
-#: rc.cpp:1550
+#: rc.cpp:1562
 #, fuzzy
 msgid "Line Ending Type"
 msgstr "Papar nombor baris"
 
 #. i18n: file: umbrello.kcfg:394
 #. i18n: ectx: whatsthis, entry (lineEndingType), group (Code Generation)
-#: rc.cpp:1553
+#: rc.cpp:1565
 msgid "The type of line ending ( or new line type )"
 msgstr ""
 
@@ -5845,301 +5864,301 @@ msgstr ""
 #. i18n: ectx: label, entry (modnamePolicy), group (Code Generation)
 #. i18n: file: umbrello.kcfg:404
 #. i18n: ectx: whatsthis, entry (modnamePolicy), group (Code Generation)
-#: rc.cpp:1556 rc.cpp:1559
+#: rc.cpp:1568 rc.cpp:1571
 msgid "Modifier Name Policy"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:413
 #. i18n: ectx: label, entry (outputDirectory), group (Code Generation)
-#: rc.cpp:1562
+#: rc.cpp:1574
 msgid "Output Directory"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:414
 #. i18n: ectx: whatsthis, entry (outputDirectory), group (Code Generation)
-#: rc.cpp:1565
+#: rc.cpp:1577
 msgid "The directory to which the code has to be outputted"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:419
 #. i18n: ectx: whatsthis, entry (overwritePolicy), group (Code Generation)
-#: rc.cpp:1571
+#: rc.cpp:1583
 msgid "The policy to be followed when there are name conflicts"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:431
 #. i18n: ectx: label, entry (autoGenAccessors), group (CPP Code Generation)
-#: rc.cpp:1574
+#: rc.cpp:1586
 msgid "Auto Generate Accessors"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:432
 #. i18n: ectx: whatsthis, entry (autoGenAccessors), group (CPP Code Generation)
-#: rc.cpp:1577
+#: rc.cpp:1589
 #, fuzzy
 msgid "Enables/Disables auto generation of accessors"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:436
 #. i18n: ectx: label, entry (inlineAccessors), group (CPP Code Generation)
-#: rc.cpp:1580
+#: rc.cpp:1592
 #, fuzzy
 msgid "Inline Accessors"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:437
 #. i18n: ectx: whatsthis, entry (inlineAccessors), group (CPP Code Generation)
-#: rc.cpp:1583
+#: rc.cpp:1595
 #, fuzzy
 msgid "Enables/Disables Inline accessors"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:441
 #. i18n: ectx: label, entry (inlineOps), group (CPP Code Generation)
-#: rc.cpp:1586
+#: rc.cpp:1598
 #, fuzzy
 msgid "Inline operations"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:442
 #. i18n: ectx: whatsthis, entry (inlineOps), group (CPP Code Generation)
-#: rc.cpp:1589
+#: rc.cpp:1601
 #, fuzzy
 msgid "Enables/Disables Inline Operations"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:446
 #. i18n: ectx: label, entry (packageIsNamespace), group (CPP Code Generation)
-#: rc.cpp:1592
+#: rc.cpp:1604
 #, fuzzy
 msgid "Package is namespace"
 msgstr "Name=KDevAdaProject"
 
 #. i18n: file: umbrello.kcfg:447
 #. i18n: ectx: whatsthis, entry (packageIsNamespace), group (CPP Code Generation)
-#: rc.cpp:1595
+#: rc.cpp:1607
 msgid "Enables/Disables treating a package as a namespace"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:451
 #. i18n: ectx: label, entry (publicAccessors), group (CPP Code Generation)
-#: rc.cpp:1598
+#: rc.cpp:1610
 msgid "Public Accessors"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:452
 #. i18n: ectx: whatsthis, entry (publicAccessors), group (CPP Code Generation)
-#: rc.cpp:1601
+#: rc.cpp:1613
 #, fuzzy
 msgid "Enables/Disables public accessors"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:456
 #. i18n: ectx: label, entry (stringClassName), group (CPP Code Generation)
-#: rc.cpp:1604
+#: rc.cpp:1616
 #, fuzzy
 msgid "String Class Name"
 msgstr "Name=KDevAdaProject"
 
 #. i18n: file: umbrello.kcfg:457
 #. i18n: ectx: whatsthis, entry (stringClassName), group (CPP Code Generation)
-#: rc.cpp:1607
+#: rc.cpp:1619
 #, fuzzy
 msgid "The name of the string class"
 msgstr "Name=KDevelop: KDE/C++"
 
 #. i18n: file: umbrello.kcfg:461
 #. i18n: ectx: label, entry (stringClassNameInclude), group (CPP Code Generation)
-#: rc.cpp:1610
+#: rc.cpp:1622
 #, fuzzy
 msgid "String Class Name Include"
 msgstr "Name=KDevAdaProject"
 
 #. i18n: file: umbrello.kcfg:462
 #. i18n: ectx: whatsthis, entry (stringClassNameInclude), group (CPP Code Generation)
-#: rc.cpp:1613
+#: rc.cpp:1625
 #, fuzzy
 msgid "The name of the string class to be included"
 msgstr "Name=KDevelop: KDE/C++"
 
 #. i18n: file: umbrello.kcfg:466
 #. i18n: ectx: label, entry (stringIncludeIsGlobal), group (CPP Code Generation)
-#: rc.cpp:1616
+#: rc.cpp:1628
 msgid "String Include is Global"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:467
 #. i18n: ectx: whatsthis, entry (stringIncludeIsGlobal), group (CPP Code Generation)
-#: rc.cpp:1619
+#: rc.cpp:1631
 #, fuzzy
 msgid "Enables/Disables global inclusion of string"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:471
 #. i18n: ectx: label, entry (vectorClassName), group (CPP Code Generation)
-#: rc.cpp:1622
+#: rc.cpp:1634
 #, fuzzy
 msgid "Vector Class Name"
 msgstr "Name=KDevAdaProject"
 
 #. i18n: file: umbrello.kcfg:472
 #. i18n: ectx: whatsthis, entry (vectorClassName), group (CPP Code Generation)
-#: rc.cpp:1625
+#: rc.cpp:1637
 #, fuzzy
 msgid "The name of the vector class"
 msgstr "Name=KDevelop: KDE/C++"
 
 #. i18n: file: umbrello.kcfg:476
 #. i18n: ectx: label, entry (vectorClassNameInclude), group (CPP Code Generation)
-#: rc.cpp:1628
+#: rc.cpp:1640
 #, fuzzy
 msgid "Vector Class Name Include "
 msgstr "Name=KDevAdaProject"
 
 #. i18n: file: umbrello.kcfg:477
 #. i18n: ectx: whatsthis, entry (vectorClassNameInclude), group (CPP Code Generation)
-#: rc.cpp:1631
+#: rc.cpp:1643
 #, fuzzy
 msgid "The name of the vector class to be included"
 msgstr "Name=KDevelop: KDE/C++"
 
 #. i18n: file: umbrello.kcfg:481
 #. i18n: ectx: label, entry (vectorIncludeIsGlobal), group (CPP Code Generation)
-#: rc.cpp:1634
+#: rc.cpp:1646
 msgid "Vector include is global"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:482
 #. i18n: ectx: whatsthis, entry (vectorIncludeIsGlobal), group (CPP Code Generation)
-#: rc.cpp:1637
+#: rc.cpp:1649
 #, fuzzy
 msgid "Enables/Disables global inclusing of vector class"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:486
 #. i18n: ectx: label, entry (virtualDestructors), group (CPP Code Generation)
-#: rc.cpp:1640
+#: rc.cpp:1652
 msgid "Virtual Destructors"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:487
 #. i18n: ectx: whatsthis, entry (virtualDestructors), group (CPP Code Generation)
-#: rc.cpp:1643
+#: rc.cpp:1655
 #, fuzzy
 msgid "Enables/Disables virtual destructors"
 msgstr "Teks baru"
 
 #. i18n: file: umbrello.kcfg:491
 #. i18n: ectx: label, entry (docToolTag), group (CPP Code Generation)
-#: rc.cpp:1646
+#: rc.cpp:1658
 #, fuzzy
 msgid "Documentation tags"
 msgstr "Tiada padanan"
 
 #. i18n: file: umbrello.kcfg:492
 #. i18n: ectx: whatsthis, entry (docToolTag), group (CPP Code Generation)
-#: rc.cpp:1649
+#: rc.cpp:1661
 msgid "The tag used for generating doxygen documentation (\\\\, @)"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:498
 #. i18n: ectx: label, entry (autoGenerateAttributeAccessorsD), group (D Code Generation)
-#: rc.cpp:1652
+#: rc.cpp:1664
 #, fuzzy
 msgid "Auto Generate Attribute Accessors ( D ) "
 msgstr "Bahasa"
 
 #. i18n: file: umbrello.kcfg:499
 #. i18n: ectx: whatsthis, entry (autoGenerateAttributeAccessorsD), group (D Code Generation)
-#: rc.cpp:1655
+#: rc.cpp:1667
 msgid "Enables/Disables auto generation of attribute accessors ( D )"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:503
 #. i18n: ectx: label, entry (autoGenerateAssocAccessorsD), group (D Code Generation)
-#: rc.cpp:1658
+#: rc.cpp:1670
 msgid "Auto Generate Assoc Accessors ( D )"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:504
 #. i18n: ectx: whatsthis, entry (autoGenerateAssocAccessorsD), group (D Code Generation)
-#: rc.cpp:1661
+#: rc.cpp:1673
 msgid "Enables/Disables auto generation of association accessors ( D )"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:508
 #. i18n: ectx: label, entry (buildANTDocumentD), group (D Code Generation)
-#: rc.cpp:1664
+#: rc.cpp:1676
 msgid "Build ANT Document (D) "
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:509
 #. i18n: ectx: whatsthis, entry (buildANTDocumentD), group (D Code Generation)
-#: rc.cpp:1667
+#: rc.cpp:1679
 #, fuzzy
 msgid "Enables/Disables building of ANT Document (D) "
 msgstr "Tiada padanan"
 
 #. i18n: file: umbrello.kcfg:515
 #. i18n: ectx: label, entry (autoGenerateAttributeAccessorsJava), group (Java Code Generation)
-#: rc.cpp:1670
+#: rc.cpp:1682
 #, fuzzy
 msgid "Auto Generate Attribute Accessors (Java)"
 msgstr "Bahasa"
 
 #. i18n: file: umbrello.kcfg:516
 #. i18n: ectx: whatsthis, entry (autoGenerateAttributeAccessorsJava), group (Java Code Generation)
-#: rc.cpp:1673
+#: rc.cpp:1685
 msgid "Enables/Disables auto generation of attribute accessors (Java)"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:520
 #. i18n: ectx: label, entry (autoGenerateAssocAccessorsJava), group (Java Code Generation)
-#: rc.cpp:1676
+#: rc.cpp:1688
 msgid "Auto Generate Assoc Accessors (Java) "
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:521
 #. i18n: ectx: whatsthis, entry (autoGenerateAssocAccessorsJava), group (Java Code Generation)
-#: rc.cpp:1679
+#: rc.cpp:1691
 msgid "Enables/Disables auto generation of association accessors (Java) "
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:525
 #. i18n: ectx: label, entry (buildANTDocumentJava), group (Java Code Generation)
-#: rc.cpp:1682
+#: rc.cpp:1694
 msgid "Build ANT Document (Java) "
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:526
 #. i18n: ectx: whatsthis, entry (buildANTDocumentJava), group (Java Code Generation)
-#: rc.cpp:1685
+#: rc.cpp:1697
 #, fuzzy
 msgid "Enables/Disables building of ANT Document (Java) "
 msgstr "Tiada padanan"
 
 #. i18n: file: umbrello.kcfg:532
 #. i18n: ectx: label, entry (autoGenerateAttributeAccessorsRuby), group (Ruby Code Generation)
-#: rc.cpp:1688
+#: rc.cpp:1700
 #, fuzzy
 msgid "Auto Generate Attribute Accessors (Ruby) "
 msgstr "Bahasa"
 
 #. i18n: file: umbrello.kcfg:533
 #. i18n: ectx: whatsthis, entry (autoGenerateAttributeAccessorsRuby), group (Ruby Code Generation)
-#: rc.cpp:1691
+#: rc.cpp:1703
 msgid "Enables/Disables auto generation of attribute accessors (Ruby)"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:537
 #. i18n: ectx: label, entry (autoGenerateAssocAccessorsRuby), group (Ruby Code Generation)
-#: rc.cpp:1694
+#: rc.cpp:1706
 msgid "Auto Generate Assoc Accessors (Ruby)"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:538
 #. i18n: ectx: whatsthis, entry (autoGenerateAssocAccessorsRuby), group (Ruby Code Generation)
-#: rc.cpp:1697
+#: rc.cpp:1709
 msgid "Enables/Disables auto generation of association accessors (Ruby)"
 msgstr ""
 
@@ -6239,54 +6258,58 @@ msgstr ""
 msgid "Unspecified error"
 msgstr "Name=Ralat proses"
 
-#: codeimpwizard/codeimpstatuspage.cpp:50
+#: codeimpwizard/codeimpstatuspage.cpp:52
 #, fuzzy
 msgid "Status of Code Importing Progress"
 msgstr "Comment=Projek Ada"
 
-#: codeimpwizard/codeimpstatuspage.cpp:51
+#: codeimpwizard/codeimpstatuspage.cpp:53
 msgid ""
 "Press the button 'Start import' to start the code import.\n"
 "Check the success state for every class."
 msgstr ""
 
-#: codeimpwizard/codeimpstatuspage.cpp:126
+#: codeimpwizard/codeimpstatuspage.cpp:128
 #, kde-format
 msgid "<b>Code import of 1 file:</b><br>"
 msgid_plural "<b>Code import of %1 files:</b><br>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: codeimpwizard/codeimpstatuspage.cpp:142
-#: codeimpwizard/codeimpstatuspage.cpp:149
+#: codeimpwizard/codeimpstatuspage.cpp:144
+#: codeimpwizard/codeimpstatuspage.cpp:151
 #, fuzzy
 msgid "importing file ... DONE<br>"
 msgstr "Fail Wujud"
 
-#: codeimpwizard/codeimpstatuspage.cpp:143
-#: codeimpwizard/codeimpstatuspage.cpp:150
+#: codeimpwizard/codeimpstatuspage.cpp:145
+#: codeimpwizard/codeimpstatuspage.cpp:152
 msgid "Import Done"
 msgstr ""
 
-#: codeimpwizard/codeimpstatuspage.cpp:154
+#: codeimpwizard/codeimpstatuspage.cpp:156
 #, fuzzy
 msgid "importing file ..."
 msgstr "Fail Wujud"
 
-#: codeimpwizard/codeimpstatuspage.cpp:206
+#: codeimpwizard/codeimpstatuspage.cpp:208
 #, fuzzy
 msgid "importing file ... stopped<br>"
 msgstr "Fail Wujud"
 
-#: codeimpwizard/codeimpstatuspage.cpp:207
+#: codeimpwizard/codeimpstatuspage.cpp:209
 #, fuzzy
 msgid "Import stopped"
 msgstr "Tidak dapat mencari bahagian KDevDesigner."
 
-#: codeimpwizard/codeimpstatuspage.cpp:273
+#: codeimpwizard/codeimpstatuspage.cpp:271
 #, fuzzy
 msgid "Not Imported"
 msgstr "Tidak dapat mencari bahagian KDevDesigner."
+
+#: codeimpwizard/codeimpstatuspage.cpp:298
+msgid "Umbrello Code Import - Logger Export"
+msgstr ""
 
 #: codeimpwizard/codeimportingwizard.cpp:53
 msgid "Code Importing Wizard"
