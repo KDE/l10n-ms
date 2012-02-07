@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-19 10:09+0100\n"
+"POT-Creation-Date: 2012-02-07 05:14+0100\n"
 "PO-Revision-Date: 2009-06-07 23:54+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -145,7 +145,7 @@ msgid "Cannot open index file %1: %2"
 msgstr "Ralat mengimport fail %s"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
+#: src/util/fileops.cpp:399
 #, fuzzy, kde-format
 msgid "Cannot open %1: %2"
 msgstr "Ralat mengimport fail %s"
@@ -203,10 +203,6 @@ msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] ""
 msgstr[1] ""
-
-#: src/download/downloader.cpp:808
-msgid "Disabled because webseed does not match torrent"
-msgstr ""
 
 #: src/download/webseed.cpp:51 src/download/webseed.cpp:98
 #: src/download/httpconnection.cpp:44
@@ -275,6 +271,10 @@ msgstr ""
 
 #: src/download/httpconnection.cpp:402
 msgid "Redirected without a new location."
+msgstr ""
+
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
 msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
@@ -389,35 +389,35 @@ msgstr "Jeda"
 msgid "Superseeding"
 msgstr "Tertangguh"
 
-#: src/torrent/torrentcontrol.cpp:308
+#: src/torrent/torrentcontrol.cpp:302
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:554
+#: src/torrent/torrentcontrol.cpp:548
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
 "torrent is probably corrupt or is not a valid torrent file."
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:584
+#: src/torrent/torrentcontrol.cpp:578
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:595
+#: src/torrent/torrentcontrol.cpp:589
 #, fuzzy, kde-format
 msgid "Unable to create %1: %2"
 msgstr "Tidak dapat cipta %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:610
+#: src/torrent/torrentcontrol.cpp:604
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:615
+#: src/torrent/torrentcontrol.cpp:609
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr ""
@@ -489,6 +489,42 @@ msgstr "Tidak dapat cipta %1: %2"
 msgid "Cannot read from %1"
 msgstr "Tidak dapat cipta %1: %2"
 
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Umum"
+
+#: src/util/logsystemmanager.cpp:34
+#, fuzzy
+msgid "Connections"
+msgstr "Sambungan"
+
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr ""
+
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
+
+#: src/util/logsystemmanager.cpp:37
+#, fuzzy
+msgid "Disk Input/Output"
+msgstr "Gantung Ke Cakera"
+
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr ""
+
+#: src/util/signalcatcher.cpp:78
+#, fuzzy
+msgid "Error when writing to disk"
+msgstr "&Lompat ke hiperlink"
+
+#: src/util/signalcatcher.cpp:78
+#, fuzzy
+msgid "Error when reading from disk"
+msgstr "&Lompat ke hiperlink"
+
 #: src/util/fileops.cpp:94
 #, fuzzy, kde-format
 msgid "Cannot create directory %1"
@@ -530,58 +566,22 @@ msgid "Cannot calculate the filesize: %1"
 msgstr "Tidak boleh buang gaya ini"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, fuzzy, kde-format
 msgid "Cannot expand file: %1"
 msgstr "Ralat mengimport fail %s"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, fuzzy, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "Ralat mengimport fail %s"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Umum"
-
-#: src/util/logsystemmanager.cpp:34
-#, fuzzy
-msgid "Connections"
-msgstr "Sambungan"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr ""
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-#, fuzzy
-msgid "Disk Input/Output"
-msgstr "Gantung Ke Cakera"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr ""
-
-#: src/util/signalcatcher.cpp:78
-#, fuzzy
-msgid "Error when writing to disk"
-msgstr "&Lompat ke hiperlink"
-
-#: src/util/signalcatcher.cpp:78
-#, fuzzy
-msgid "Error when reading from disk"
-msgstr "&Lompat ke hiperlink"
-
-#: src/util/functions.cpp:242
+#: src/util/functions.cpp:234
 #, fuzzy, kde-format
 msgid "%1/s"
 msgstr "%1/s"
 
-#: src/util/functions.cpp:253
+#: src/util/functions.cpp:245
 #, fuzzy, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
