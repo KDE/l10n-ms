@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-06 03:31+0100\n"
+"POT-Creation-Date: 2012-02-08 03:57+0100\n"
 "PO-Revision-Date: 2009-06-14 00:43+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -7135,7 +7135,7 @@ msgstr ""
 
 #: browsers/filebrowser/FileView.cpp:399
 #: browsers/playlistbrowser/PlaylistBrowserModel.cpp:49
-#: browsers/CollectionTreeView.cpp:856
+#: browsers/CollectionTreeView.cpp:875
 #: context/applets/albums/AlbumsView.cpp:240
 #: services/lastfm/LastFmTreeView.cpp:111
 #, fuzzy
@@ -7144,7 +7144,7 @@ msgstr "Tambah kepada template"
 
 #: browsers/filebrowser/FileView.cpp:411
 #: browsers/playlistbrowser/PlaylistBrowserModel.cpp:56
-#: browsers/CollectionTreeView.cpp:865
+#: browsers/CollectionTreeView.cpp:884
 #: context/applets/albums/AlbumsView.cpp:241
 #: services/lastfm/LastFmTreeView.cpp:120
 #, fuzzy
@@ -7152,7 +7152,7 @@ msgctxt "Replace the currently loaded tracks with these"
 msgid "&Replace Playlist"
 msgstr "Buang Footer"
 
-#: browsers/filebrowser/FileView.cpp:423 browsers/CollectionTreeView.cpp:943
+#: browsers/filebrowser/FileView.cpp:423 browsers/CollectionTreeView.cpp:962
 msgid "&Edit Track Details"
 msgstr ""
 
@@ -7600,6 +7600,69 @@ msgid ""
 "sources, but many more can be added using scripts."
 msgstr ""
 
+#: browsers/CollectionTreeItem.cpp:140
+#, fuzzy
+msgctxt "No labels are assigned to the given item are any of its subitems"
+msgid "No Labels"
+msgstr "War&isi label"
+
+#: browsers/CollectionTreeItem.cpp:148
+#, fuzzy
+#| msgid "Connecting..."
+msgid "Counting..."
+msgstr "Menyambung..."
+
+#: browsers/CollectionTreeItem.cpp:175
+#: playlist/proxymodels/GroupingProxy.cpp:186
+#, fuzzy, kde-format
+msgid "1 track"
+msgid_plural "%1 tracks"
+msgstr[0] "Trek"
+msgstr[1] "Trek"
+
+#: browsers/CollectionTreeView.cpp:226
+#: browsers/CollectionTreeItemModelBase.cpp:981
+#: context/applets/albums/AlbumsView.cpp:255
+#: context/applets/wikipedia/WikipediaApplet.cpp:618
+#: dialogs/FilenameLayoutDialog.cpp:74 dialogs/FilenameLayoutDialog.cpp:463
+#: dialogs/transferdialog.cpp:89 musicbrainz/MusicBrainzTags.cpp:360
+#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:896
+#: services/jamendo/JamendoInfoParser.cpp:83
+#: services/magnatune/MagnatuneStore.cpp:224
+#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
+msgid "Album"
+msgstr "Album"
+
+#: browsers/CollectionTreeView.cpp:246
+msgid "Collection"
+msgstr "Koleksi"
+
+#: browsers/CollectionTreeView.cpp:582 services/lastfm/LastFmTreeView.cpp:201
+#, fuzzy
+msgid "More..."
+msgstr "Lagi..."
+
+#: browsers/CollectionTreeView.cpp:931
+msgctxt "Organize Files"
+msgid "Organize Files"
+msgstr ""
+
+#: browsers/CollectionTreeView.cpp:1109
+#, fuzzy
+msgid "Move Tracks to Trash"
+msgstr "Pindah tempat kemasukan kepada lokasi spesifik"
+
+#: browsers/CollectionTreeView.cpp:1115
+#, fuzzy
+msgid "Delete Tracks"
+msgstr "Trek Seterusnya"
+
+#: browsers/BrowserCategoryList.cpp:52
+#, fuzzy
+#| msgid "File Extension of Source"
+msgid "Filter Music Sources"
+msgstr "Sambungan Fail bagi Sumber"
+
 #: browsers/CollectionTreeItemModelBase.cpp:238
 #: browsers/CollectionTreeItemModelBase.cpp:291
 #, fuzzy
@@ -7620,19 +7683,6 @@ msgstr "Pelbagai Artis"
 #: browsers/CollectionTreeItemModelBase.cpp:981
 msgid "Year - Album"
 msgstr ""
-
-#: browsers/CollectionTreeItemModelBase.cpp:981
-#: browsers/CollectionTreeView.cpp:226
-#: context/applets/albums/AlbumsView.cpp:255
-#: context/applets/wikipedia/WikipediaApplet.cpp:618
-#: dialogs/FilenameLayoutDialog.cpp:74 dialogs/FilenameLayoutDialog.cpp:463
-#: dialogs/transferdialog.cpp:89 musicbrainz/MusicBrainzTags.cpp:360
-#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:896
-#: services/jamendo/JamendoInfoParser.cpp:83
-#: services/magnatune/MagnatuneStore.cpp:224
-#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
-msgid "Album"
-msgstr "Album"
 
 #: browsers/CollectionTreeItemModelBase.cpp:984
 #: core/meta/support/MetaConstants.cpp:176 dialogs/FilenameLayoutDialog.cpp:66
@@ -7662,56 +7712,6 @@ msgstr "Tahun"
 #: widgets/SmartPlaylistEditor.cpp:197
 msgid "Label"
 msgstr "Label"
-
-#: browsers/CollectionTreeItem.cpp:140
-#, fuzzy
-msgctxt "No labels are assigned to the given item are any of its subitems"
-msgid "No Labels"
-msgstr "War&isi label"
-
-#: browsers/CollectionTreeItem.cpp:148
-#, fuzzy
-#| msgid "Connecting..."
-msgid "Counting..."
-msgstr "Menyambung..."
-
-#: browsers/CollectionTreeItem.cpp:175
-#: playlist/proxymodels/GroupingProxy.cpp:186
-#, fuzzy, kde-format
-msgid "1 track"
-msgid_plural "%1 tracks"
-msgstr[0] "Trek"
-msgstr[1] "Trek"
-
-#: browsers/CollectionTreeView.cpp:246
-msgid "Collection"
-msgstr "Koleksi"
-
-#: browsers/CollectionTreeView.cpp:563 services/lastfm/LastFmTreeView.cpp:201
-#, fuzzy
-msgid "More..."
-msgstr "Lagi..."
-
-#: browsers/CollectionTreeView.cpp:912
-msgctxt "Organize Files"
-msgid "Organize Files"
-msgstr ""
-
-#: browsers/CollectionTreeView.cpp:1090
-#, fuzzy
-msgid "Move Tracks to Trash"
-msgstr "Pindah tempat kemasukan kepada lokasi spesifik"
-
-#: browsers/CollectionTreeView.cpp:1096
-#, fuzzy
-msgid "Delete Tracks"
-msgstr "Trek Seterusnya"
-
-#: browsers/BrowserCategoryList.cpp:52
-#, fuzzy
-#| msgid "File Extension of Source"
-msgid "Filter Music Sources"
-msgstr "Sambungan Fail bagi Sumber"
 
 #: browsers/BrowserBreadcrumbItem.cpp:68
 #, fuzzy
@@ -9744,7 +9744,7 @@ msgctxt ""
 msgid "%1 (not activated)"
 msgstr ""
 
-#: core-impl/collections/umscollection/UmsCollection.cpp:644
+#: core-impl/collections/umscollection/UmsCollection.cpp:652
 #, fuzzy
 #| msgid "Configure Media Device"
 msgid "Configure USB Mass Storage Device"
