@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-08 03:09+0100\n"
+"POT-Creation-Date: 2012-02-12 02:38+0100\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1331,7 +1331,7 @@ msgstr "Cipta lapisan baru"
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:494
+#: rc.cpp:80 ui/kis_view2.cpp:497
 #, fuzzy
 msgid "Cancel"
 msgstr "Saluran"
@@ -4435,7 +4435,7 @@ msgstr ""
 
 #. i18n: file: plugins/extensions/shearimage/wdg_shearimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: rc.cpp:1371 image/kis_image.cc:683
+#: rc.cpp:1371 image/kis_image.cc:667
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
 #: plugins/extensions/shearimage/shearimage.cc:90
 msgid "Shear Image"
@@ -4781,7 +4781,7 @@ msgstr "Bata "
 #. i18n: file: plugins/paintops/spray/wdgshapeoptions.ui:37
 #. i18n: ectx: property (text), widget (QLabel, widthInfoLbl_2)
 #: rc.cpp:1482 rc.cpp:1533 rc.cpp:1878 rc.cpp:1899 rc.cpp:2471 rc.cpp:3085
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:330
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:337
 msgid "Shape:"
 msgstr "Bentuk:"
 
@@ -7569,7 +7569,7 @@ msgstr "Pelet"
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: file: plugins/tools/tool_curves/wdg_tool_example.ui:73
 #. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:2811 rc.cpp:3296 plugins/tools/tool_star/kis_tool_star.cc:215
+#: rc.cpp:2811 rc.cpp:3296 plugins/tools/tool_star/kis_tool_star.cc:217
 msgid "Ratio:"
 msgstr "Nisbah:"
 
@@ -8371,7 +8371,7 @@ msgstr "biru"
 
 #. i18n: file: plugins/tools/tool_curves/wdg_tool_example.ui:38
 #. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:3293 plugins/tools/tool_star/kis_tool_star.cc:209
+#: rc.cpp:3293 plugins/tools/tool_star/kis_tool_star.cc:211
 msgid "Vertices:"
 msgstr "Puncak:"
 
@@ -8412,8 +8412,8 @@ msgstr "Warna latar belakang"
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbStyle)
 #: rc.cpp:3311 plugins/paintops/libpaintop/kis_color_source_option.cpp:58
 #: plugins/paintops/libpaintop/kis_pressure_gradient_option.cpp:26
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:268
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:277
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:270
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:284
 msgid "Gradient"
 msgstr "Kecerunan"
 
@@ -10573,8 +10573,8 @@ msgid "YCbCr (8-bit integer/channel)"
 msgstr ""
 
 #: benchmarks/kis_floodfill_benchmark.cpp:87
-#: plugins/tools/defaulttools/kis_tool_fill.cc:101
-#: plugins/tools/defaulttools/kis_tool_fill.cc:106
+#: plugins/tools/defaulttools/kis_tool_fill.cc:103
+#: plugins/tools/defaulttools/kis_tool_fill.cc:108
 #, fuzzy
 msgid "Flood Fill"
 msgstr "Isian Limpah"
@@ -10629,20 +10629,6 @@ msgctxt "(qtundo-format)"
 msgid "Add Layer"
 msgstr "Tambah Lapisan"
 
-#: image/commands/kis_image_layer_move_command.cpp:39
-#: image/commands/kis_image_layer_move_command.cpp:50
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Move Layer"
-msgstr "Lapisan Teralih"
-
-#: image/commands/kis_image_layer_remove_command.cpp:27
-#, fuzzy
-#| msgid "Remove Layer"
-msgctxt "(qtundo-format)"
-msgid "Remove Layer"
-msgstr "Alih Keluar Lapisan"
-
 #: image/commands/kis_image_node_lower_command.cpp:28
 #: image/commands/kis_image_node_to_bottom_command.cpp:29
 #: image/commands/kis_image_node_to_top_command.cpp:28
@@ -10695,6 +10681,20 @@ msgstr "Salin Kelegapan"
 msgctxt "(qtundo-format)"
 msgid "Reselect"
 msgstr "&Pilih Semula"
+
+#: image/commands/kis_image_layer_move_command.cpp:39
+#: image/commands/kis_image_layer_move_command.cpp:51
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Move Layer"
+msgstr "Lapisan Teralih"
+
+#: image/commands/kis_image_layer_remove_command.cpp:38
+#, fuzzy
+#| msgid "Remove Layer"
+msgctxt "(qtundo-format)"
+msgid "Remove Layer"
+msgstr "Alih Keluar Lapisan"
 
 #: image/commands_new/kis_image_resize_command.cpp:28
 #, fuzzy
@@ -10758,13 +10758,13 @@ msgstr "Berus Teks"
 msgid "Gaussian brush"
 msgstr "Gauss Kabur"
 
-#: image/kis_base_node.cpp:136 ui/kis_node_model.cpp:345
+#: image/kis_base_node.cpp:138 ui/kis_node_model.cpp:366
 msgid "Visible"
 msgstr "Dapat dilihat "
 
-#: image/kis_base_node.cpp:137
+#: image/kis_base_node.cpp:139
 #: plugins/extensions/dockers/channeldocker/channelmodel.cpp:67
-#: ui/kis_node_model.cpp:346
+#: ui/kis_node_model.cpp:367
 msgid "Locked"
 msgstr "Terkunci"
 
@@ -10772,7 +10772,7 @@ msgstr "Terkunci"
 msgid "Last used"
 msgstr ""
 
-#: image/kis_clone_layer.cpp:237
+#: image/kis_clone_layer.cpp:249
 #, fuzzy
 #| msgid "Copy Green"
 msgid "Copy From"
@@ -10815,52 +10815,52 @@ msgstr "Lanczos 3"
 msgid "Mitchell"
 msgstr "Mitchell"
 
-#: image/kis_image.cc:293
+#: image/kis_image.cc:277
 msgid "background"
 msgstr "latar belakang"
 
-#: image/kis_image.cc:296
+#: image/kis_image.cc:280
 #, kde-format
 msgid "Layer %1"
 msgstr "Lapisan %1"
 
-#: image/kis_image.cc:452
+#: image/kis_image.cc:436
 #, fuzzy
 msgid "Crop Image"
 msgstr "Ricik Imej"
 
-#: image/kis_image.cc:452
+#: image/kis_image.cc:436
 msgid "Resize Image"
 msgstr "Saiz Semula Imej"
 
-#: image/kis_image.cc:484
+#: image/kis_image.cc:468
 #, fuzzy
 msgid "Crop Node"
 msgstr "Alat pangkas"
 
-#: image/kis_image.cc:677
+#: image/kis_image.cc:661
 msgid "Shear layer"
 msgstr "Ricih lapisan"
 
-#: image/kis_image.cc:693
+#: image/kis_image.cc:677
 #, fuzzy
 msgid "Convert Image Color Space"
 msgstr "&Ubah Jenis Imej..."
 
-#: image/kis_image.cc:724
+#: image/kis_image.cc:708
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:898 ui/kis_layer_manager.cc:720
+#: image/kis_image.cc:882 ui/kis_layer_manager.cc:701
 msgid "Flatten Image"
 msgstr "Imej Rata"
 
-#: image/kis_image.cc:956
+#: image/kis_image.cc:940
 #, fuzzy
 msgid "Merge with Layer Below"
 msgstr "&Cantum Lapisan"
 
-#: image/kis_image.cc:981
+#: image/kis_image.cc:965
 #, fuzzy
 #| msgid "Flatten Image"
 msgid "Flatten Layer"
@@ -10891,7 +10891,7 @@ msgstr "Terkunci"
 msgid "Alpha Channel Disabled"
 msgstr ""
 
-#: image/kis_selection_mask.cpp:110 ui/kis_node_model.cpp:347
+#: image/kis_selection_mask.cpp:110 ui/kis_node_model.cpp:368
 #, fuzzy
 msgid "Active"
 msgstr "Lapisan Teralih"
@@ -10989,10 +10989,6 @@ msgstr "&Warna"
 #, fuzzy
 msgid "Rotate Node"
 msgstr "Putar"
-
-#: main.cc:50
-msgid "File(s) or URL(s) to open"
-msgstr "Fail atau URL hendak dibuka"
 
 #: plugins/assistants/RulerAssistant/EllipseAssistant.cc:33
 #, fuzzy
@@ -11321,106 +11317,106 @@ msgstr "biru"
 msgid "Select the exposure (stops) for HDR images"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:81
+#: plugins/extensions/dockers/defaultdockers/kis_palette_docker.cc:32
+msgid "Palettes"
+msgstr "Pelet"
+
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:84
 msgid "Layers"
 msgstr "Lapisan"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:106
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:109
 msgid "Minimal View"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:108
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:111
 msgid "Detailed View"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:110
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:113
 msgid "Thumbnail View"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:123
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:126
 #, fuzzy
 msgid "View mode"
 msgstr "Lapisan Baru"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:167
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:170
 #, fuzzy
 #| msgid "&Layer"
 msgid "&Paint Layer"
 msgstr "&Lapisan"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:170
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:173
 #, fuzzy
 msgid "&Group Layer"
 msgstr "&Ricih Lapisan..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:173
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:176
 #, fuzzy
 msgid "&Clone Layer"
 msgstr "Lapisan Baru"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:176
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:179
 #, fuzzy
 #| msgid "Scale Layer"
 msgid "&Shape Layer"
 msgstr "Skalakan Lapisan"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:179
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:182
 #, fuzzy
 msgid "&Filter Layer..."
 msgstr "Penapis"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:182
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:185
 #, fuzzy
 msgid "&Generated Layer..."
 msgstr "&Ricih Lapisan..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:185
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:188
 #, fuzzy
 msgid "&Transparency Mask"
 msgstr "Burning Transparency"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:188
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:191
 #, fuzzy
 #| msgid "Filters"
 msgid "&Filter Mask..."
 msgstr "Penapis"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:191
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:194
 #, fuzzy
 #| msgid "Scale Selection"
 msgid "&Local Selection"
 msgstr "Pemilihan Skala"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:208
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:211
 #, fuzzy
 #| msgid "Transform..."
 msgid "&Transformation Mask..."
 msgstr "Ubah..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:377
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:387
 #, fuzzy
 msgid "&Properties..."
 msgstr "Ciri Lapisan"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:379
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:389
 msgid "&Remove Layer"
 msgstr "&Alih Keluar Lapisan"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:380
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:390
 #, fuzzy
 #| msgid "Duplicate"
 msgid "&Duplicate Layer or Mask"
 msgstr "Duplikasi"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:381
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:391
 #: ui/kis_layer_manager.cc:137
 #, fuzzy
 msgid "&Merge with Layer Below"
 msgstr "&Cantum Lapisan"
-
-#: plugins/extensions/dockers/defaultdockers/kis_palette_docker.cc:32
-msgid "Palettes"
-msgstr "Pelet"
 
 #: plugins/extensions/dockers/digitalmixer/digitalmixer_dock.cc:43
 #, fuzzy
@@ -11794,7 +11790,7 @@ msgid "Rotate Layer of 90° to the Left"
 msgstr ""
 
 #: plugins/extensions/rotateimage/rotateimage.cc:151
-#: ui/kis_layer_manager.cc:676
+#: ui/kis_layer_manager.cc:657
 msgid "Rotate Layer"
 msgstr "Putar Lapisan"
 
@@ -11852,7 +11848,7 @@ msgid "Separate Image"
 msgstr "Ricik Imej"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:242
-#: ui/kis_layer_manager.cc:812
+#: ui/kis_layer_manager.cc:787
 msgid "Export Layer"
 msgstr "Eksport Lapisan"
 
@@ -11941,11 +11937,11 @@ msgstr "Kabur:"
 msgid "Motion Blur"
 msgstr "biru mitos"
 
-#: plugins/filters/bumpmap/bumpmap.cpp:91
+#: plugins/filters/bumpmap/bumpmap.cpp:92
 msgid "Bumpmap"
 msgstr "Bumpmap"
 
-#: plugins/filters/bumpmap/bumpmap.cpp:91
+#: plugins/filters/bumpmap/bumpmap.cpp:92
 #, fuzzy
 msgid "&Bumpmap..."
 msgstr "Bumpmap"
@@ -13573,116 +13569,116 @@ msgstr "Kecerunan"
 msgid "Draw a rectangle"
 msgstr "Segiempat tepat"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:212
+#: plugins/tools/defaulttools/kis_tool_fill.cc:219
 msgid "Threshold: "
 msgstr "Ambang:"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:220
+#: plugins/tools/defaulttools/kis_tool_fill.cc:227
 msgid "Use pattern"
 msgstr "Guna corak"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:221
+#: plugins/tools/defaulttools/kis_tool_fill.cc:228
 msgid ""
 "When checked do not use the foreground color, but the gradient selected to "
 "fill with"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:225
+#: plugins/tools/defaulttools/kis_tool_fill.cc:232
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:140
 #, fuzzy
 msgid "Limit to current layer"
 msgstr "Turunkan semasa %1"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:229
+#: plugins/tools/defaulttools/kis_tool_fill.cc:236
 #, fuzzy
 msgid "Fill entire selection"
 msgstr "Pemilihan Elips"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:230
+#: plugins/tools/defaulttools/kis_tool_fill.cc:237
 msgid ""
 "When checked do not look at the current layer colors, but just fill all of "
 "the selected area"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:331
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:338
 msgid "Repeat:"
 msgstr "Ulang:"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:333
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:340
 #, fuzzy
 #| msgid "Reverse"
 msgctxt "the gradient will be drawn with the color order reversed"
 msgid "Reverse"
 msgstr "Songsang"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:340
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:347
 #, fuzzy
 #| msgid "Linear"
 msgctxt "the gradient will be drawn linearly"
 msgid "Linear"
 msgstr "Linear"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:341
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:348
 #, fuzzy
 #| msgid "Bi-Linear"
 msgctxt "the gradient will be drawn bilinearly"
 msgid "Bi-Linear"
 msgstr "Bi-Linear"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:342
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:349
 #, fuzzy
 #| msgid "Radial"
 msgctxt "the gradient will be drawn radially"
 msgid "Radial"
 msgstr "Jejarian"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:343
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:350
 #, fuzzy
 #| msgid "Square"
 msgctxt "the gradient will be drawn in a square around a centre"
 msgid "Square"
 msgstr "Segiempat sama "
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:344
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:351
 #, fuzzy
 #| msgid "Conical"
 msgctxt "the gradient will be drawn as an assymmetric cone"
 msgid "Conical"
 msgstr "Kon"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:345
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:352
 #, fuzzy
 #| msgid "Conical Symmetric"
 msgctxt "the gradient will be drawn as a symmetric cone"
 msgid "Conical Symmetric"
 msgstr "Simetri Berkon"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:350
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:357
 #, fuzzy
 #| msgid "None"
 msgctxt "The gradient will not repeat"
 msgid "None"
 msgstr "Tiada"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:351
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:358
 #, fuzzy
 #| msgid "Forwards"
 msgctxt "The gradient will repeat forwards"
 msgid "Forwards"
 msgstr "Ke hadapan"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:352
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:359
 #, fuzzy
 #| msgid "Alternating"
 msgctxt "The gradient will repeat alternatingly"
 msgid "Alternating"
 msgstr "Silih Ganti"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:360
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:367
 msgid "Anti-alias threshold:"
 msgstr "Ambang antialias:"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:371
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:378
 #, fuzzy
 msgid "Preview opacity:"
 msgstr "Prapapar"
@@ -13709,7 +13705,7 @@ msgctxt "a straight drawn line"
 msgid "Line"
 msgstr "Garis"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:285
+#: plugins/tools/defaulttools/kis_tool_line.cc:287
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
@@ -14174,7 +14170,7 @@ msgstr "Krita"
 msgid "Layer Properties"
 msgstr "Ciri Lapisan"
 
-#: ui/flake/kis_shape_controller.cpp:170
+#: ui/flake/kis_shape_controller.cpp:169
 #, fuzzy, kde-format
 #| msgid "Layer %1"
 msgid "Vector Layer %1"
@@ -14586,7 +14582,7 @@ msgstr "Imej Rata"
 msgid "&Flatten Layer"
 msgstr "Penapis"
 
-#: ui/kis_layer_manager.cc:146 ui/kis_layer_manager.cc:784
+#: ui/kis_layer_manager.cc:146 ui/kis_layer_manager.cc:759
 #, fuzzy
 #| msgid "Rotate Layer"
 msgid "Rasterize Layer"
@@ -14613,42 +14609,42 @@ msgstr "Ciri Lapisan"
 msgid "Generator Layer Properties"
 msgstr "Ciri Lapisan"
 
-#: ui/kis_layer_manager.cc:302 ui/kis_layer_manager.cc:318
-#: ui/kis_layer_manager.cc:362 ui/kis_layer_manager.cc:395
-#: ui/kis_layer_manager.cc:534
+#: ui/kis_layer_manager.cc:300 ui/kis_layer_manager.cc:314
+#: ui/kis_layer_manager.cc:355 ui/kis_layer_manager.cc:386
+#: ui/kis_layer_manager.cc:515
 msgid "Could not add layer to image."
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: ui/kis_layer_manager.cc:302 ui/kis_layer_manager.cc:318
-#: ui/kis_layer_manager.cc:362 ui/kis_layer_manager.cc:395
-#: ui/kis_layer_manager.cc:534
+#: ui/kis_layer_manager.cc:300 ui/kis_layer_manager.cc:314
+#: ui/kis_layer_manager.cc:355 ui/kis_layer_manager.cc:386
+#: ui/kis_layer_manager.cc:515
 msgid "Layer Error"
 msgstr "Ralat Lapisan"
 
-#: ui/kis_layer_manager.cc:425
+#: ui/kis_layer_manager.cc:416
 #, fuzzy
 #| msgid "Filters"
 msgid "New Filter Layer"
 msgstr "Penapis"
 
-#: ui/kis_layer_manager.cc:596 ui/kis_layer_manager.cc:606
+#: ui/kis_layer_manager.cc:577 ui/kis_layer_manager.cc:587
 msgid "Mirror Layer X"
 msgstr "Cermin Lapisan X"
 
-#: ui/kis_layer_manager.cc:623 ui/kis_layer_manager.cc:633
+#: ui/kis_layer_manager.cc:604 ui/kis_layer_manager.cc:614
 #: ui/kis_mask_manager.cc:316
 msgid "Mirror Layer Y"
 msgstr "Cermin Lapisan Y"
 
-#: ui/kis_layer_manager.cc:655
+#: ui/kis_layer_manager.cc:636
 msgid "Scale Layer"
 msgstr "Skalakan Lapisan"
 
-#: ui/kis_layer_manager.cc:719
+#: ui/kis_layer_manager.cc:700
 msgid "The image contains hidden layers that will be lost."
 msgstr "Imej mengandungi lapisan tersembunyi yang akan hilang."
 
-#: ui/kis_layer_manager.cc:721
+#: ui/kis_layer_manager.cc:702
 #, fuzzy
 msgid "&Flatten Image"
 msgstr "Imej Rata"
@@ -14714,19 +14710,19 @@ msgstr "Cermin Lapisan X"
 msgid "Effect Mask Properties"
 msgstr "Ciri Imej"
 
-#: ui/kis_node_manager.cpp:149
+#: ui/kis_node_manager.cpp:146
 #, fuzzy
 #| msgid "Emboss Horizontal Only"
 msgid "Mirror Horizontally"
 msgstr "Cetak Timbul Mendatar Sahaja"
 
-#: ui/kis_node_manager.cpp:153
+#: ui/kis_node_manager.cpp:150
 #, fuzzy
 #| msgid "Emboss Vertical Only"
 msgid "Mirror Vertically"
 msgstr "Cetak Timbul Menegak Sahaja"
 
-#: ui/kis_node_model.cpp:354
+#: ui/kis_node_model.cpp:375
 #, fuzzy
 #| msgid "Locked"
 msgid "Alpha Locked"
@@ -14900,17 +14896,17 @@ msgstr "Salin Pemilihan ke Lapisan Baru"
 msgid "Cut Selection to New Layer"
 msgstr "Salin Pemilihan ke Lapisan Baru"
 
-#: ui/kis_selection_manager.cc:176 ui/kis_selection_manager.cc:591
+#: ui/kis_selection_manager.cc:176 ui/kis_selection_manager.cc:588
 #, fuzzy
 msgid "Fill with Foreground Color"
 msgstr "Pilih Warna Latar Depan..."
 
-#: ui/kis_selection_manager.cc:181 ui/kis_selection_manager.cc:596
+#: ui/kis_selection_manager.cc:181 ui/kis_selection_manager.cc:593
 #, fuzzy
 msgid "Fill with Background Color"
 msgstr "Pilih Warna Latar Belakang ..."
 
-#: ui/kis_selection_manager.cc:186 ui/kis_selection_manager.cc:601
+#: ui/kis_selection_manager.cc:186 ui/kis_selection_manager.cc:598
 msgid "Fill with Pattern"
 msgstr ""
 
@@ -14937,13 +14933,13 @@ msgstr "&Biasa:"
 msgid "(pasted)"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:479
+#: ui/kis_selection_manager.cc:476
 #, fuzzy
 #| msgid "Pastels"
 msgid "Pasted"
 msgstr "Pastel"
 
-#: ui/kis_selection_manager.cc:503
+#: ui/kis_selection_manager.cc:500
 #, fuzzy
 msgid "Select All"
 msgstr "&Pilih Semua"
@@ -14984,103 +14980,103 @@ msgstr "Tiada pemilihan"
 msgid "No profile"
 msgstr "Tiada profil"
 
-#: ui/kis_view2.cpp:263
+#: ui/kis_view2.cpp:265
 #, fuzzy
 msgid "Save Incremental &Version"
 msgstr "Pijar"
 
-#: ui/kis_view2.cpp:268
+#: ui/kis_view2.cpp:270
 #, fuzzy
 msgid "Save Incremental Backup"
 msgstr "Pijar"
 
-#: ui/kis_view2.cpp:280
+#: ui/kis_view2.cpp:282
 msgid "Total Refresh"
 msgstr ""
 
-#: ui/kis_view2.cpp:285
+#: ui/kis_view2.cpp:287
 #, fuzzy
 #| msgid "&Rotate Image..."
 msgid "&Create Template From Image..."
 msgstr "&Putar Imej..."
 
-#: ui/kis_view2.cpp:289
+#: ui/kis_view2.cpp:291
 msgid "Load Tutorial"
 msgstr ""
 
-#: ui/kis_view2.cpp:293
+#: ui/kis_view2.cpp:295
 #, fuzzy
 msgid "Mirror Image"
 msgstr "Ricik Imej"
 
-#: ui/kis_view2.cpp:299
+#: ui/kis_view2.cpp:301
 msgid "Rotate Canvas Right"
 msgstr ""
 
-#: ui/kis_view2.cpp:304
+#: ui/kis_view2.cpp:306
 #, fuzzy
 #| msgid "Rotate Image"
 msgid "Rotate Canvas Left"
 msgstr "Putar Imej"
 
-#: ui/kis_view2.cpp:309
+#: ui/kis_view2.cpp:311
 #, fuzzy
 msgid "Reset Canvas Transformations"
 msgstr "Alat ubah"
 
-#: ui/kis_view2.cpp:314
+#: ui/kis_view2.cpp:316
 #, fuzzy
 msgid "Show Status Bar"
 msgstr "Ricih lapisan"
 
-#: ui/kis_view2.cpp:315
+#: ui/kis_view2.cpp:317
 msgid "Hide Status Bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:317
+#: ui/kis_view2.cpp:319
 msgid "Shows or hides the status bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:321
+#: ui/kis_view2.cpp:323
 msgid "Show Canvas Only"
 msgstr ""
 
-#: ui/kis_view2.cpp:322
+#: ui/kis_view2.cpp:324
 msgid "Return to Window"
 msgstr ""
 
-#: ui/kis_view2.cpp:323
+#: ui/kis_view2.cpp:325
 msgid "Shows just the canvas or the whole window"
 msgstr ""
 
-#: ui/kis_view2.cpp:442
+#: ui/kis_view2.cpp:453
 #, fuzzy
 #| msgid "&Layer"
 msgid "Pasted Layer"
 msgstr "&Lapisan"
 
-#: ui/kis_view2.cpp:488
+#: ui/kis_view2.cpp:491
 msgid "Insert as New Layer"
 msgstr "Selitkan sebagai Lapisan Baru"
 
-#: ui/kis_view2.cpp:489
+#: ui/kis_view2.cpp:492
 msgid "Insert as New Layers"
 msgstr "Selitkan sebagai Lapisan Baru"
 
-#: ui/kis_view2.cpp:491
+#: ui/kis_view2.cpp:494
 msgid "Open in New Document"
 msgstr "Buka dalam Dokumen Baru"
 
-#: ui/kis_view2.cpp:492
+#: ui/kis_view2.cpp:495
 msgid "Open in New Documents"
 msgstr "Buka dalam Dokumen Baru"
 
-#: ui/kis_view2.cpp:695
+#: ui/kis_view2.cpp:698
 #, fuzzy
 msgid "Edit Palette..."
 msgstr "Pelet"
 
-#: ui/kis_view2.cpp:823 ui/kis_view2.cpp:826
+#: ui/kis_view2.cpp:826 ui/kis_view2.cpp:829
 #, fuzzy
 msgid "Edit Palette"
 msgstr "Pelet"
@@ -15130,14 +15126,6 @@ msgstr "Berus Teks"
 msgid "Decrease Brush Size"
 msgstr "Saiz berus"
 
-#: ui/tool/kis_tool_paint.cc:88
-msgid "Make Brush color lighter"
-msgstr ""
-
-#: ui/tool/kis_tool_paint.cc:94
-msgid "Make Brush color darker"
-msgstr ""
-
 #: ui/tool/kis_tool_polyline_base.cpp:38
 #, fuzzy
 msgid "&Finish"
@@ -15162,10 +15150,18 @@ msgstr "Warna latar depan"
 msgid "Clear"
 msgstr "Bears"
 
-#: ui/tool/kis_tool.cc:609
+#: ui/tool/kis_tool.cc:592
 #, fuzzy
 msgid "No options"
 msgstr "Topeng alfa"
+
+#: ui/tool/kis_tool_paint.cc:88
+msgid "Make Brush color lighter"
+msgstr ""
+
+#: ui/tool/kis_tool_paint.cc:94
+msgid "Make Brush color darker"
+msgstr ""
 
 #: ui/widgets/kis_channelflags_widget.cpp:39
 msgid ""
@@ -15264,6 +15260,10 @@ msgstr "Ruang &warna:"
 #, fuzzy, kde-format
 msgid "Workspace %1"
 msgstr "Ruang &warna:"
+
+#: main.cc:50
+msgid "File(s) or URL(s) to open"
+msgstr "Fail atau URL hendak dibuka"
 
 #, fuzzy
 #~| msgid "Apply Profile"
