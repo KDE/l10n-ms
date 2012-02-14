@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-10 11:32+0100\n"
+"POT-Creation-Date: 2012-02-14 18:12+0100\n"
 "PO-Revision-Date: 2009-03-09 22:58+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -270,10 +270,80 @@ msgstr "Cipta folder tanda buku baru dalam menu ini"
 msgid "Receiving corrupt data."
 msgstr "Menerima data rosak."
 
-#: kfile/kdevicelistmodel.cpp:116
-#, fuzzy
-msgid "Device name"
-msgstr "Peranti:"
+#: kfile/kfilesharedialog.cpp:53
+msgid "&Share"
+msgstr "&Kongsi"
+
+#: kfile/kfilesharedialog.cpp:127
+msgid "Only folders in your home folder can be shared."
+msgstr "Hanya folder dalam folder laman utama anda boleh dikongsi."
+
+#: kfile/kfilesharedialog.cpp:134
+msgid "Not shared"
+msgstr "Tidak dikongsi"
+
+#: kfile/kfilesharedialog.cpp:139
+msgid "Shared"
+msgstr "Kongsi"
+
+#: kfile/kfilesharedialog.cpp:151
+msgid ""
+"Sharing this folder makes it available under Linux/UNIX (NFS) and Windows "
+"(Samba)."
+msgstr ""
+"Berkongsi folder ini menjadikan ia boleh didapatkan di bawah Linux/UNIX "
+"(NFS) dan Windows (Samba)."
+
+#: kfile/kfilesharedialog.cpp:158
+msgid "You can also reconfigure file sharing authorization."
+msgstr "Anda juga boleh konfigur semula keizinan berkongsi fail."
+
+#: kfile/kfilesharedialog.cpp:162 kfile/kfilesharedialog.cpp:186
+msgid "Configure File Sharing..."
+msgstr "Konfigur Perkongsian Fail..."
+
+#: kfile/kfilesharedialog.cpp:171
+msgid ""
+"Error running 'filesharelist'. Check if installed and in $PATH or /usr/sbin."
+msgstr ""
+"Ralat semasa menjalankan 'filesharelist'. Semak sama ada ia dipasang dalam "
+"$PATH atau /usr/sbin."
+
+#: kfile/kfilesharedialog.cpp:178
+msgid "You need to be authorized to share folders."
+msgstr "Anda perlu mendapat keizinan untuk berkongsi folder."
+
+#: kfile/kfilesharedialog.cpp:181
+msgid "File sharing is disabled."
+msgstr "Perkongsian fail dinyahaktifkan."
+
+#: kfile/kfilesharedialog.cpp:248
+#, kde-format
+msgid "Sharing folder '%1' failed."
+msgstr "Perkongsian folder '%1' gagal."
+
+#: kfile/kfilesharedialog.cpp:249
+#, kde-format
+msgid ""
+"An error occurred while trying to share folder '%1'. Make sure that the Perl "
+"script 'fileshareset' is set suid root."
+msgstr ""
+"Ralat berlaku semasa cuba berkongsi folder '%1'. Pastikan skrip Perl "
+"'fileshareset' adalah set suid root."
+
+#: kfile/kfilesharedialog.cpp:254
+#, kde-format
+msgid "Unsharing folder '%1' failed."
+msgstr "Nyahkongsi folder '%1' gagal."
+
+#: kfile/kfilesharedialog.cpp:255
+#, kde-format
+msgid ""
+"An error occurred while trying to unshare folder '%1'. Make sure that the "
+"Perl script 'fileshareset' is set suid root."
+msgstr ""
+"Ralat berlaku semasa cuba nyahkongsi folder '%1'. Pastikan skrip Perl "
+"'fileshareset' adalah set suid root."
 
 #: kfile/kfiledialog.cpp:126
 #, fuzzy
@@ -289,7 +359,7 @@ msgstr "Semua Fail Yang Disokong"
 #: kfile/kfiledialog.cpp:511 kfile/kfiledialog.cpp:535
 #: kfile/kfiledialog.cpp:545 kfile/kfiledialog.cpp:571
 #: kfile/kfiledialog.cpp:603 kfile/kfiledialog.cpp:658
-#: kfile/kurlrequesterdialog.cpp:128 kfile/kicondialog.cpp:693
+#: kfile/kicondialog.cpp:693 kfile/kurlrequesterdialog.cpp:128
 #: kfile/kencodingfiledialog.cpp:106 kfile/kencodingfiledialog.cpp:124
 #: kfile/kencodingfiledialog.cpp:139 kfile/kencodingfiledialog.cpp:157
 #, fuzzy
@@ -302,129 +372,199 @@ msgstr "&Buka"
 msgid "Save As"
 msgstr ""
 
+#: kfile/kicondialog.cpp:336 kfile/kicondialog.cpp:348
+msgid "Select Icon"
+msgstr "Pilih Ikon"
+
+#: kfile/kicondialog.cpp:369
+msgid "Icon Source"
+msgstr "Sumber Ikon"
+
+#: kfile/kicondialog.cpp:378
+msgid "S&ystem icons:"
+msgstr "Ikon &sistem:"
+
+#: kfile/kicondialog.cpp:385
+msgid "O&ther icons:"
+msgstr "Ikon &Lain-lain:"
+
+#. i18n: file: kfile/kpropertiesdesktopbase.ui:121
+#. i18n: ectx: property (text), widget (QPushButton, browseButton)
+#: kfile/kicondialog.cpp:388 rc.cpp:134
+msgid "&Browse..."
+msgstr "Lun&gsur."
+
+#: kfile/kicondialog.cpp:399
+msgid "&Search:"
+msgstr "&Cari:"
+
+#: kfile/kicondialog.cpp:406
+msgid "Search interactively for icon names (e.g. folder)."
+msgstr "Cari nama ikon secara interaktif (misalnya folder)"
+
+#: kfile/kicondialog.cpp:437
+msgid "Actions"
+msgstr "Aksi"
+
+#: kfile/kicondialog.cpp:438
+#, fuzzy
+msgid "Animations"
+msgstr "Aplikasi"
+
+#: kfile/kicondialog.cpp:439
+msgid "Applications"
+msgstr "Aplikasi"
+
+#: kfile/kicondialog.cpp:440
+#, fuzzy
+msgid "Categories"
+msgstr "Kategori"
+
+#: kfile/kicondialog.cpp:441
+msgid "Devices"
+msgstr "Peranti"
+
+#: kfile/kicondialog.cpp:442
+msgid "Emblems"
+msgstr ""
+
+#: kfile/kicondialog.cpp:443
+msgid "Emotes"
+msgstr ""
+
+#: kfile/kicondialog.cpp:444
+msgid "Filesystems"
+msgstr "Sistem Fail"
+
+#: kfile/kicondialog.cpp:445
+#, fuzzy
+msgid "International"
+msgstr "Antarabangsa"
+
+#: kfile/kicondialog.cpp:446
+msgid "Mimetypes"
+msgstr "Jenis Mime"
+
+#: kfile/kicondialog.cpp:447
+msgid "Places"
+msgstr ""
+
+#: kfile/kicondialog.cpp:448
+#, fuzzy
+msgid "Status"
+msgstr "Status"
+
+#: kfile/kicondialog.cpp:691
+msgid "*.png *.xpm *.svg *.svgz|Icon Files (*.png *.xpm *.svg *.svgz)"
+msgstr "*.png *.xpm *.svg *.svgz|Icon Files (*.png *.xpm *.svg *.svgz)"
+
 #: kfile/kurlrequesterdialog.cpp:58 kfile/kpropertiesdialog.cpp:984
 msgid "Location:"
 msgstr "Lokasi:"
 
-#: kfile/kfilemetainfowidget.cpp:163
-msgid "<Error>"
-msgstr "<Error>"
-
-#: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
-msgid "Owner"
-msgstr "Pemilik"
-
-#: kfile/kacleditwidget.cpp:62 kfile/kacleditwidget.cpp:459
+#: kfile/kdevicelistmodel.cpp:116
 #, fuzzy
-msgid "Owning Group"
-msgstr "Kumpulan Hilang"
+msgid "Device name"
+msgstr "Peranti:"
 
-#: kfile/kacleditwidget.cpp:63 kfile/kacleditwidget.cpp:464
-#: kfile/kpropertiesdialog.cpp:2001
-msgid "Others"
-msgstr "Lain-lain"
+#: kfile/kopenwithdialog.cpp:269
+msgid "Known Applications"
+msgstr "Aplikasi Diketahui"
 
-#: kfile/kacleditwidget.cpp:64 kfile/kacleditwidget.cpp:469
-#, fuzzy
-msgid "Mask"
-msgstr "Topengan"
+#: kfile/kopenwithdialog.cpp:483
+msgid "Open With"
+msgstr "Buka Dengan"
 
-#: kfile/kacleditwidget.cpp:65
-#, fuzzy
-msgid "Named User"
-msgstr "Mencari untuk pengguna bernama %s.\n"
+#: kfile/kopenwithdialog.cpp:488
+#, kde-format
+msgid ""
+"<qt>Select the program that should be used to open <b>%1</b>. If the program "
+"is not listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt>Pilih program yang patut digunakan untuk buka <b>%1</b>. Jika program "
+"tidak disenaraikan, masukkan nama atau klik butang layar.</qt>"
 
-#: kfile/kacleditwidget.cpp:66
-#, fuzzy
-msgid "Named Group"
-msgstr "Mencari untuk kumpulan bernama %s.\n"
+#: kfile/kopenwithdialog.cpp:494
+msgid "Choose the name of the program with which to open the selected files."
+msgstr "Pilih nama program yang dengannya fail yang dipilih hendak dibuka."
 
-#: kfile/kacleditwidget.cpp:98 ../kfile/kfileplacesview.cpp:580
-#: ../kfile/kfileplacesview.cpp:601 ../kfile/kfileplacesview.cpp:608
-#, fuzzy
-msgid "Add Entry..."
-msgstr "Tambah masukan PXE"
+#: kfile/kopenwithdialog.cpp:521
+#, kde-format
+msgid "Choose Application for %1"
+msgstr "Pilih Aplikasi untuk %1"
 
-#: kfile/kacleditwidget.cpp:102
-#, fuzzy
-msgid "Edit Entry..."
-msgstr "Sunting masukan PXE"
+#: kfile/kopenwithdialog.cpp:522
+#, kde-format
+msgid ""
+"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
+"listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt>Pilih program untuk jenis fail: <b>%1</b>. Jika program tidak "
+"disenaraikan, masukkan nama atau klik butang layar.</qt>"
 
-#: kfile/kacleditwidget.cpp:106
-#, fuzzy
-msgid "Delete Entry"
-msgstr "Hapus kemasukan"
+#: kfile/kopenwithdialog.cpp:537
+msgid "Choose Application"
+msgstr "Pilih Aplikasi"
 
-#: kfile/kacleditwidget.cpp:307
-#, fuzzy
-msgid " (Default)"
-msgstr " (Default)"
+#: kfile/kopenwithdialog.cpp:538
+msgid ""
+"<qt>Select a program. If the program is not listed, enter the name or click "
+"the browse button.</qt>"
+msgstr ""
+"<qt>Pilih program. Jika program tidak disenaraikan, masukkan nama atau klik "
+"butang layar.</qt>"
 
-#: kfile/kacleditwidget.cpp:431
-#, fuzzy
-msgid "Edit ACL Entry"
-msgstr "Sunting masukan PXE"
+#: kfile/kopenwithdialog.cpp:601
+msgid ""
+"Following the command, you can have several place holders which will be "
+"replaced with the actual values when the actual program is run:\n"
+"%f - a single file name\n"
+"%F - a list of files; use for applications that can open several local files "
+"at once\n"
+"%u - a single URL\n"
+"%U - a list of URLs\n"
+"%d - the directory of the file to open\n"
+"%D - a list of directories\n"
+"%i - the icon\n"
+"%m - the mini-icon\n"
+"%c - the comment"
+msgstr ""
+"Berikutan arahan, anda mempunyai beberapa pemegang tempat yang akan diganti "
+"dengan nilai sebenar apabila program sebenar dijalankan:\n"
+"%f - nama fail tunggal\n"
+"%F - senarai fail; guna untuk aplikasi yang boleh buka beberapa fail "
+"setempat serentak\n"
+"%u - URL tunggal\n"
+"%U - satu senarai URL\n"
+"%d - direktori fail hendak dibuka\n"
+"%D - senarai direktori\n"
+"%i - ikon\n"
+"%m - the mini-icon\n"
+"%c - the comment"
 
-#: kfile/kacleditwidget.cpp:439
-#, fuzzy
-msgid "Entry Type"
-msgstr "Jenis Pemasangan"
+#: kfile/kopenwithdialog.cpp:636
+msgid "Run in &terminal"
+msgstr "Jalankan dalam &terminal"
 
-#: kfile/kacleditwidget.cpp:445
-msgid "Default for new files in this folder"
+#: kfile/kopenwithdialog.cpp:653
+msgid "&Do not close when command exits"
+msgstr "&Jangan tutup apabila arahan keluar"
+
+#: kfile/kopenwithdialog.cpp:670
+msgid "&Remember application association for this type of file"
+msgstr "&Ingati persatuan aplikasi untuk fail jenis ini"
+
+#: kfile/kopenwithdialog.cpp:814
+#, kde-format
+msgid ""
+"Could not extract executable name from '%1', please type a valid program "
+"name."
 msgstr ""
 
-#: kfile/kacleditwidget.cpp:474
-#, fuzzy
-msgid "Named user"
-msgstr "Mencari untuk pengguna bernama %s.\n"
-
-#: kfile/kacleditwidget.cpp:479
-#, fuzzy
-msgid "Named group"
-msgstr "Mencari untuk kumpulan bernama %s.\n"
-
-#: kfile/kacleditwidget.cpp:499
-#, fuzzy
-msgid "User: "
-msgstr "Pengguna:"
-
-#: kfile/kacleditwidget.cpp:505
-#, fuzzy
-msgid "Group: "
-msgstr "Kumpulan:"
-
-#: kfile/kacleditwidget.cpp:625
-#, fuzzy
-msgid "Type"
-msgstr "Jenis"
-
-#: kfile/kacleditwidget.cpp:626
-msgid "Name"
-msgstr "Nama"
-
-#: kfile/kacleditwidget.cpp:627
-#, fuzzy
-msgctxt "read permission"
-msgid "r"
-msgstr "Mengubah kebenaran zonmasa: %s"
-
-#: kfile/kacleditwidget.cpp:628
-#, fuzzy
-msgctxt "write permission"
-msgid "w"
-msgstr "Mengubah kebenaran zonmasa: %s"
-
-#: kfile/kacleditwidget.cpp:629
-#, fuzzy
-msgctxt "execute permission"
-msgid "x"
-msgstr "Mengubah kebenaran zonmasa: %s"
-
-#: kfile/kacleditwidget.cpp:630
-#, fuzzy
-msgid "Effective"
-msgstr "Lokaliti Tapisan Efektif"
+#: kfile/kopenwithdialog.cpp:860
+#, kde-format
+msgid "'%1' not found, please type a valid program name."
+msgstr ""
 
 #: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:422
 #, fuzzy
@@ -867,99 +1007,121 @@ msgctxt "@title:tab"
 msgid "Information"
 msgstr "Maklumat SSL KDE"
 
-#: kfile/kpreviewprops.cpp:50
-msgid "P&review"
-msgstr "&Prapapar"
+#: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
+msgid "Owner"
+msgstr "Pemilik"
 
-#: kfile/kicondialog.cpp:336 kfile/kicondialog.cpp:348
-msgid "Select Icon"
-msgstr "Pilih Ikon"
-
-#: kfile/kicondialog.cpp:369
-msgid "Icon Source"
-msgstr "Sumber Ikon"
-
-#: kfile/kicondialog.cpp:378
-msgid "S&ystem icons:"
-msgstr "Ikon &sistem:"
-
-#: kfile/kicondialog.cpp:385
-msgid "O&ther icons:"
-msgstr "Ikon &Lain-lain:"
-
-#. i18n: file: kfile/kpropertiesdesktopbase.ui:121
-#. i18n: ectx: property (text), widget (QPushButton, browseButton)
-#: kfile/kicondialog.cpp:388 rc.cpp:134
-msgid "&Browse..."
-msgstr "Lun&gsur."
-
-#: kfile/kicondialog.cpp:399
-msgid "&Search:"
-msgstr "&Cari:"
-
-#: kfile/kicondialog.cpp:406
-msgid "Search interactively for icon names (e.g. folder)."
-msgstr "Cari nama ikon secara interaktif (misalnya folder)"
-
-#: kfile/kicondialog.cpp:437
-msgid "Actions"
-msgstr "Aksi"
-
-#: kfile/kicondialog.cpp:438
+#: kfile/kacleditwidget.cpp:62 kfile/kacleditwidget.cpp:459
 #, fuzzy
-msgid "Animations"
-msgstr "Aplikasi"
+msgid "Owning Group"
+msgstr "Kumpulan Hilang"
 
-#: kfile/kicondialog.cpp:439
-msgid "Applications"
-msgstr "Aplikasi"
+#: kfile/kacleditwidget.cpp:63 kfile/kacleditwidget.cpp:464
+#: kfile/kpropertiesdialog.cpp:2001
+msgid "Others"
+msgstr "Lain-lain"
 
-#: kfile/kicondialog.cpp:440
+#: kfile/kacleditwidget.cpp:64 kfile/kacleditwidget.cpp:469
 #, fuzzy
-msgid "Categories"
-msgstr "Kategori"
+msgid "Mask"
+msgstr "Topengan"
 
-#: kfile/kicondialog.cpp:441
-msgid "Devices"
-msgstr "Peranti"
+#: kfile/kacleditwidget.cpp:65
+#, fuzzy
+msgid "Named User"
+msgstr "Mencari untuk pengguna bernama %s.\n"
 
-#: kfile/kicondialog.cpp:442
-msgid "Emblems"
+#: kfile/kacleditwidget.cpp:66
+#, fuzzy
+msgid "Named Group"
+msgstr "Mencari untuk kumpulan bernama %s.\n"
+
+#: kfile/kacleditwidget.cpp:98 ../kfile/kfileplacesview.cpp:580
+#: ../kfile/kfileplacesview.cpp:601 ../kfile/kfileplacesview.cpp:608
+#, fuzzy
+msgid "Add Entry..."
+msgstr "Tambah masukan PXE"
+
+#: kfile/kacleditwidget.cpp:102
+#, fuzzy
+msgid "Edit Entry..."
+msgstr "Sunting masukan PXE"
+
+#: kfile/kacleditwidget.cpp:106
+#, fuzzy
+msgid "Delete Entry"
+msgstr "Hapus kemasukan"
+
+#: kfile/kacleditwidget.cpp:307
+#, fuzzy
+msgid " (Default)"
+msgstr " (Default)"
+
+#: kfile/kacleditwidget.cpp:431
+#, fuzzy
+msgid "Edit ACL Entry"
+msgstr "Sunting masukan PXE"
+
+#: kfile/kacleditwidget.cpp:439
+#, fuzzy
+msgid "Entry Type"
+msgstr "Jenis Pemasangan"
+
+#: kfile/kacleditwidget.cpp:445
+msgid "Default for new files in this folder"
 msgstr ""
 
-#: kfile/kicondialog.cpp:443
-msgid "Emotes"
-msgstr ""
-
-#: kfile/kicondialog.cpp:444
-msgid "Filesystems"
-msgstr "Sistem Fail"
-
-#: kfile/kicondialog.cpp:445
+#: kfile/kacleditwidget.cpp:474
 #, fuzzy
-msgid "International"
-msgstr "Antarabangsa"
+msgid "Named user"
+msgstr "Mencari untuk pengguna bernama %s.\n"
 
-#: kfile/kicondialog.cpp:446
-msgid "Mimetypes"
-msgstr "Jenis Mime"
-
-#: kfile/kicondialog.cpp:447
-msgid "Places"
-msgstr ""
-
-#: kfile/kicondialog.cpp:448
+#: kfile/kacleditwidget.cpp:479
 #, fuzzy
-msgid "Status"
-msgstr "Status"
+msgid "Named group"
+msgstr "Mencari untuk kumpulan bernama %s.\n"
 
-#: kfile/kicondialog.cpp:691
-msgid "*.png *.xpm *.svg *.svgz|Icon Files (*.png *.xpm *.svg *.svgz)"
-msgstr "*.png *.xpm *.svg *.svgz|Icon Files (*.png *.xpm *.svg *.svgz)"
+#: kfile/kacleditwidget.cpp:499
+#, fuzzy
+msgid "User: "
+msgstr "Pengguna:"
 
-#: kfile/kurlrequester.cpp:246
-msgid "Open file dialog"
-msgstr "Buka dialog fail"
+#: kfile/kacleditwidget.cpp:505
+#, fuzzy
+msgid "Group: "
+msgstr "Kumpulan:"
+
+#: kfile/kacleditwidget.cpp:625
+#, fuzzy
+msgid "Type"
+msgstr "Jenis"
+
+#: kfile/kacleditwidget.cpp:626
+msgid "Name"
+msgstr "Nama"
+
+#: kfile/kacleditwidget.cpp:627
+#, fuzzy
+msgctxt "read permission"
+msgid "r"
+msgstr "Mengubah kebenaran zonmasa: %s"
+
+#: kfile/kacleditwidget.cpp:628
+#, fuzzy
+msgctxt "write permission"
+msgid "w"
+msgstr "Mengubah kebenaran zonmasa: %s"
+
+#: kfile/kacleditwidget.cpp:629
+#, fuzzy
+msgctxt "execute permission"
+msgid "x"
+msgstr "Mengubah kebenaran zonmasa: %s"
+
+#: kfile/kacleditwidget.cpp:630
+#, fuzzy
+msgid "Effective"
+msgstr "Lokaliti Tapisan Efektif"
 
 #: kfile/kfilemetadataprovider.cpp:223
 #, fuzzy, kde-format
@@ -1051,185 +1213,23 @@ msgctxt "@title:window"
 msgid "Add Comment"
 msgstr "Komen"
 
+#: kfile/kpreviewprops.cpp:50
+msgid "P&review"
+msgstr "&Prapapar"
+
 #: kfile/kencodingfiledialog.cpp:49
 #, fuzzy
 #| msgid "Loading"
 msgid "Encoding:"
 msgstr "Memuat"
 
-#: kfile/kfilesharedialog.cpp:53
-msgid "&Share"
-msgstr "&Kongsi"
+#: kfile/kurlrequester.cpp:246
+msgid "Open file dialog"
+msgstr "Buka dialog fail"
 
-#: kfile/kfilesharedialog.cpp:127
-msgid "Only folders in your home folder can be shared."
-msgstr "Hanya folder dalam folder laman utama anda boleh dikongsi."
-
-#: kfile/kfilesharedialog.cpp:134
-msgid "Not shared"
-msgstr "Tidak dikongsi"
-
-#: kfile/kfilesharedialog.cpp:139
-msgid "Shared"
-msgstr "Kongsi"
-
-#: kfile/kfilesharedialog.cpp:151
-msgid ""
-"Sharing this folder makes it available under Linux/UNIX (NFS) and Windows "
-"(Samba)."
-msgstr ""
-"Berkongsi folder ini menjadikan ia boleh didapatkan di bawah Linux/UNIX "
-"(NFS) dan Windows (Samba)."
-
-#: kfile/kfilesharedialog.cpp:158
-msgid "You can also reconfigure file sharing authorization."
-msgstr "Anda juga boleh konfigur semula keizinan berkongsi fail."
-
-#: kfile/kfilesharedialog.cpp:162 kfile/kfilesharedialog.cpp:186
-msgid "Configure File Sharing..."
-msgstr "Konfigur Perkongsian Fail..."
-
-#: kfile/kfilesharedialog.cpp:171
-msgid ""
-"Error running 'filesharelist'. Check if installed and in $PATH or /usr/sbin."
-msgstr ""
-"Ralat semasa menjalankan 'filesharelist'. Semak sama ada ia dipasang dalam "
-"$PATH atau /usr/sbin."
-
-#: kfile/kfilesharedialog.cpp:178
-msgid "You need to be authorized to share folders."
-msgstr "Anda perlu mendapat keizinan untuk berkongsi folder."
-
-#: kfile/kfilesharedialog.cpp:181
-msgid "File sharing is disabled."
-msgstr "Perkongsian fail dinyahaktifkan."
-
-#: kfile/kfilesharedialog.cpp:248
-#, kde-format
-msgid "Sharing folder '%1' failed."
-msgstr "Perkongsian folder '%1' gagal."
-
-#: kfile/kfilesharedialog.cpp:249
-#, kde-format
-msgid ""
-"An error occurred while trying to share folder '%1'. Make sure that the Perl "
-"script 'fileshareset' is set suid root."
-msgstr ""
-"Ralat berlaku semasa cuba berkongsi folder '%1'. Pastikan skrip Perl "
-"'fileshareset' adalah set suid root."
-
-#: kfile/kfilesharedialog.cpp:254
-#, kde-format
-msgid "Unsharing folder '%1' failed."
-msgstr "Nyahkongsi folder '%1' gagal."
-
-#: kfile/kfilesharedialog.cpp:255
-#, kde-format
-msgid ""
-"An error occurred while trying to unshare folder '%1'. Make sure that the "
-"Perl script 'fileshareset' is set suid root."
-msgstr ""
-"Ralat berlaku semasa cuba nyahkongsi folder '%1'. Pastikan skrip Perl "
-"'fileshareset' adalah set suid root."
-
-#: kfile/kopenwithdialog.cpp:269
-msgid "Known Applications"
-msgstr "Aplikasi Diketahui"
-
-#: kfile/kopenwithdialog.cpp:483
-msgid "Open With"
-msgstr "Buka Dengan"
-
-#: kfile/kopenwithdialog.cpp:488
-#, kde-format
-msgid ""
-"<qt>Select the program that should be used to open <b>%1</b>. If the program "
-"is not listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt>Pilih program yang patut digunakan untuk buka <b>%1</b>. Jika program "
-"tidak disenaraikan, masukkan nama atau klik butang layar.</qt>"
-
-#: kfile/kopenwithdialog.cpp:494
-msgid "Choose the name of the program with which to open the selected files."
-msgstr "Pilih nama program yang dengannya fail yang dipilih hendak dibuka."
-
-#: kfile/kopenwithdialog.cpp:521
-#, kde-format
-msgid "Choose Application for %1"
-msgstr "Pilih Aplikasi untuk %1"
-
-#: kfile/kopenwithdialog.cpp:522
-#, kde-format
-msgid ""
-"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
-"listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt>Pilih program untuk jenis fail: <b>%1</b>. Jika program tidak "
-"disenaraikan, masukkan nama atau klik butang layar.</qt>"
-
-#: kfile/kopenwithdialog.cpp:537
-msgid "Choose Application"
-msgstr "Pilih Aplikasi"
-
-#: kfile/kopenwithdialog.cpp:538
-msgid ""
-"<qt>Select a program. If the program is not listed, enter the name or click "
-"the browse button.</qt>"
-msgstr ""
-"<qt>Pilih program. Jika program tidak disenaraikan, masukkan nama atau klik "
-"butang layar.</qt>"
-
-#: kfile/kopenwithdialog.cpp:601
-msgid ""
-"Following the command, you can have several place holders which will be "
-"replaced with the actual values when the actual program is run:\n"
-"%f - a single file name\n"
-"%F - a list of files; use for applications that can open several local files "
-"at once\n"
-"%u - a single URL\n"
-"%U - a list of URLs\n"
-"%d - the directory of the file to open\n"
-"%D - a list of directories\n"
-"%i - the icon\n"
-"%m - the mini-icon\n"
-"%c - the comment"
-msgstr ""
-"Berikutan arahan, anda mempunyai beberapa pemegang tempat yang akan diganti "
-"dengan nilai sebenar apabila program sebenar dijalankan:\n"
-"%f - nama fail tunggal\n"
-"%F - senarai fail; guna untuk aplikasi yang boleh buka beberapa fail "
-"setempat serentak\n"
-"%u - URL tunggal\n"
-"%U - satu senarai URL\n"
-"%d - direktori fail hendak dibuka\n"
-"%D - senarai direktori\n"
-"%i - ikon\n"
-"%m - the mini-icon\n"
-"%c - the comment"
-
-#: kfile/kopenwithdialog.cpp:636
-msgid "Run in &terminal"
-msgstr "Jalankan dalam &terminal"
-
-#: kfile/kopenwithdialog.cpp:653
-msgid "&Do not close when command exits"
-msgstr "&Jangan tutup apabila arahan keluar"
-
-#: kfile/kopenwithdialog.cpp:670
-msgid "&Remember application association for this type of file"
-msgstr "&Ingati persatuan aplikasi untuk fail jenis ini"
-
-#: kfile/kopenwithdialog.cpp:814
-#, kde-format
-msgid ""
-"Could not extract executable name from '%1', please type a valid program "
-"name."
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:860
-#, kde-format
-msgid "'%1' not found, please type a valid program name."
-msgstr ""
+#: kfile/kfilemetainfowidget.cpp:163
+msgid "<Error>"
+msgstr "<Error>"
 
 #: kfile/kpropertiesdialog.cpp:212 kfile/kpropertiesdialog.cpp:227
 #: kfile/kpropertiesdialog.cpp:239 kfile/kpropertiesdialog.cpp:254
@@ -4206,20 +4206,6 @@ msgstr "Imej OCR"
 msgid "The desktop is offline"
 msgstr ""
 
-#: kio/pastedialog.cpp:55
-msgid "Data format:"
-msgstr "Format datas"
-
-#: kio/netaccess.cpp:104
-#, kde-format
-msgid "File '%1' is not readable"
-msgstr "Fail '%1' gagal dibaca"
-
-#: kio/netaccess.cpp:453
-#, fuzzy, kde-format
-msgid "ERROR: Unknown protocol '%1'"
-msgstr "Kod ralat tak dikenal %d\n"
-
 #: kio/passworddialog.cpp:57
 msgid "Authorization Dialog"
 msgstr "Dialog Keizinan"
@@ -4263,20 +4249,6 @@ msgstr[1] "%1 &Tampal URL-URL"
 #: kio/paste.cpp:391
 msgid "&Paste Clipboard Contents"
 msgstr "&Tampal kandungan papan klip"
-
-#: kio/skipdialog.cpp:37
-#, fuzzy
-msgid "Information"
-msgstr "Maklumat SSL KDE"
-
-#: kio/skipdialog.cpp:44
-msgid "Skip"
-msgstr "Langkau"
-
-#: kio/skipdialog.cpp:47
-#, fuzzy
-msgid "AutoSkip"
-msgstr "Autolangkau"
 
 #: kio/slave.cpp:438
 #, kde-format
@@ -4340,6 +4312,118 @@ msgstr "Sijil SSL sebaya kelihatan rosak."
 #: kio/slaveinterface.cpp:485 kio/tcpslavebase.cpp:776
 msgid "SSL"
 msgstr "SSL"
+
+#: kio/tcpslavebase.cpp:328
+msgid ""
+"You are about to leave secure mode. Transmissions will no longer be "
+"encrypted.\n"
+"This means that a third party could observe your data in transit."
+msgstr ""
+"Anda akan meninggalkan mod terlindung. Transmisi tidak akan dienkrip.\n"
+"Ini bermakna pihak ketiga boleh memerhatikan data di dalam transit."
+
+#: kio/tcpslavebase.cpp:334 kio/tcpslavebase.cpp:609
+msgid "Security Information"
+msgstr "Maklumat Sekuriti"
+
+#: kio/tcpslavebase.cpp:335
+msgid "C&ontinue Loading"
+msgstr "Terus Muatkan"
+
+#: kio/tcpslavebase.cpp:391
+#, fuzzy, kde-format
+#| msgid "Authentication Failed."
+msgctxt "%1 is a host name"
+msgid "%1: SSL negotiation failed"
+msgstr "Pengesahan Gagal."
+
+#: kio/tcpslavebase.cpp:603
+msgid ""
+"You are about to enter secure mode. All transmissions will be encrypted "
+"unless otherwise noted.\n"
+"This means that no third party will be able to easily observe your data in "
+"transit."
+msgstr ""
+"Anda akan memasuki mod terlindung. Transmisi akan dienkrip.\n"
+"Ini bermakna pihak ketiga tidak boleh memerhatikan data di dalam transit "
+"dengan mudah."
+
+#: kio/tcpslavebase.cpp:610
+msgid "Display SSL &Information"
+msgstr "Papar &Maklumat SSL"
+
+#: kio/tcpslavebase.cpp:611
+msgid "C&onnect"
+msgstr "&Sambung"
+
+#: kio/tcpslavebase.cpp:747
+msgid "Enter the certificate password:"
+msgstr "Masukkan kata laluan sijil:"
+
+#: kio/tcpslavebase.cpp:748
+msgid "SSL Certificate Password"
+msgstr "Kata Laluan Sijil SSL"
+
+#: kio/tcpslavebase.cpp:761
+msgid "Unable to open the certificate. Try a new password?"
+msgstr "Gagal membuka sijil. Cuba kata laluan baru?"
+
+#: kio/tcpslavebase.cpp:774
+msgid "The procedure to set the client certificate for the session failed."
+msgstr "Prosedur untuk menetapkan sijil klien untuk sesi telah gagal."
+
+#: kio/tcpslavebase.cpp:820 kssl/sslui.cpp:71
+#, fuzzy, kde-format
+#| msgid "The server certificate failed the authenticity test (%1)."
+msgid ""
+"The server failed the authenticity check (%1).\n"
+"\n"
+msgstr "Sijil pelayan gagal ujian pengesahan (%1)."
+
+#: kio/tcpslavebase.cpp:830 kio/tcpslavebase.cpp:847 kio/tcpslavebase.cpp:949
+#: kio/tcpslavebase.cpp:961 kssl/sslui.cpp:80 kssl/sslui.cpp:119
+msgid "Server Authentication"
+msgstr "Autentikasi Pelayan"
+
+#: kio/tcpslavebase.cpp:844 kssl/sslui.cpp:116
+msgid ""
+"Would you like to accept this certificate forever without being prompted?"
+msgstr ""
+"Adakah anda mahu menerima sijil ini seterusnya selepas ini tanpa diberitahu?"
+
+#: kio/tcpslavebase.cpp:948
+msgid ""
+"You have indicated that you wish to accept this certificate, but it is not "
+"issued to the server who is presenting it. Do you wish to continue loading?"
+msgstr ""
+"Anda menunjukkan bahawa anda mahu menerima sijil ini, tetapi sijil ini tidak "
+"dikeluarkan kepada pelayan yang menunjukkannya. Anda mahu terus muatkan?"
+
+#: kio/tcpslavebase.cpp:960
+#, fuzzy
+#| msgid ""
+#| "SSL certificate is being rejected as requested. You can disable this in "
+#| "the KDE Control Center."
+msgid ""
+"SSL certificate is being rejected as requested. You can disable this in the "
+"KDE System Settings."
+msgstr ""
+"Sijil SSL ditolak seperti yang diminta. Anda boleh matikan fungsi ini di "
+"Pusat Kawalan KDE."
+
+#: kio/netaccess.cpp:104
+#, kde-format
+msgid "File '%1' is not readable"
+msgstr "Fail '%1' gagal dibaca"
+
+#: kio/netaccess.cpp:453
+#, fuzzy, kde-format
+msgid "ERROR: Unknown protocol '%1'"
+msgstr "Kod ralat tak dikenal %d\n"
+
+#: kio/pastedialog.cpp:55
+msgid "Data format:"
+msgstr "Format datas"
 
 #: kio/renamedialog.cpp:131
 msgid "Appl&y to All"
@@ -4461,103 +4545,19 @@ msgstr "Item lebih lama bernama '%1' sudah wujud."
 msgid "Rename:"
 msgstr "Nama&kan semula"
 
-#: kio/tcpslavebase.cpp:328
-msgid ""
-"You are about to leave secure mode. Transmissions will no longer be "
-"encrypted.\n"
-"This means that a third party could observe your data in transit."
-msgstr ""
-"Anda akan meninggalkan mod terlindung. Transmisi tidak akan dienkrip.\n"
-"Ini bermakna pihak ketiga boleh memerhatikan data di dalam transit."
-
-#: kio/tcpslavebase.cpp:334 kio/tcpslavebase.cpp:609
-msgid "Security Information"
-msgstr "Maklumat Sekuriti"
-
-#: kio/tcpslavebase.cpp:335
-msgid "C&ontinue Loading"
-msgstr "Terus Muatkan"
-
-#: kio/tcpslavebase.cpp:391
-#, fuzzy, kde-format
-#| msgid "Authentication Failed."
-msgctxt "%1 is a host name"
-msgid "%1: SSL negotiation failed"
-msgstr "Pengesahan Gagal."
-
-#: kio/tcpslavebase.cpp:603
-msgid ""
-"You are about to enter secure mode. All transmissions will be encrypted "
-"unless otherwise noted.\n"
-"This means that no third party will be able to easily observe your data in "
-"transit."
-msgstr ""
-"Anda akan memasuki mod terlindung. Transmisi akan dienkrip.\n"
-"Ini bermakna pihak ketiga tidak boleh memerhatikan data di dalam transit "
-"dengan mudah."
-
-#: kio/tcpslavebase.cpp:610
-msgid "Display SSL &Information"
-msgstr "Papar &Maklumat SSL"
-
-#: kio/tcpslavebase.cpp:611
-msgid "C&onnect"
-msgstr "&Sambung"
-
-#: kio/tcpslavebase.cpp:747
-msgid "Enter the certificate password:"
-msgstr "Masukkan kata laluan sijil:"
-
-#: kio/tcpslavebase.cpp:748
-msgid "SSL Certificate Password"
-msgstr "Kata Laluan Sijil SSL"
-
-#: kio/tcpslavebase.cpp:761
-msgid "Unable to open the certificate. Try a new password?"
-msgstr "Gagal membuka sijil. Cuba kata laluan baru?"
-
-#: kio/tcpslavebase.cpp:774
-msgid "The procedure to set the client certificate for the session failed."
-msgstr "Prosedur untuk menetapkan sijil klien untuk sesi telah gagal."
-
-#: kio/tcpslavebase.cpp:820 kssl/sslui.cpp:71
-#, fuzzy, kde-format
-#| msgid "The server certificate failed the authenticity test (%1)."
-msgid ""
-"The server failed the authenticity check (%1).\n"
-"\n"
-msgstr "Sijil pelayan gagal ujian pengesahan (%1)."
-
-#: kio/tcpslavebase.cpp:830 kio/tcpslavebase.cpp:847 kio/tcpslavebase.cpp:949
-#: kio/tcpslavebase.cpp:961 kssl/sslui.cpp:80 kssl/sslui.cpp:119
-msgid "Server Authentication"
-msgstr "Autentikasi Pelayan"
-
-#: kio/tcpslavebase.cpp:844 kssl/sslui.cpp:116
-msgid ""
-"Would you like to accept this certificate forever without being prompted?"
-msgstr ""
-"Adakah anda mahu menerima sijil ini seterusnya selepas ini tanpa diberitahu?"
-
-#: kio/tcpslavebase.cpp:948
-msgid ""
-"You have indicated that you wish to accept this certificate, but it is not "
-"issued to the server who is presenting it. Do you wish to continue loading?"
-msgstr ""
-"Anda menunjukkan bahawa anda mahu menerima sijil ini, tetapi sijil ini tidak "
-"dikeluarkan kepada pelayan yang menunjukkannya. Anda mahu terus muatkan?"
-
-#: kio/tcpslavebase.cpp:960
+#: kio/skipdialog.cpp:37
 #, fuzzy
-#| msgid ""
-#| "SSL certificate is being rejected as requested. You can disable this in "
-#| "the KDE Control Center."
-msgid ""
-"SSL certificate is being rejected as requested. You can disable this in the "
-"KDE System Settings."
-msgstr ""
-"Sijil SSL ditolak seperti yang diminta. Anda boleh matikan fungsi ini di "
-"Pusat Kawalan KDE."
+msgid "Information"
+msgstr "Maklumat SSL KDE"
+
+#: kio/skipdialog.cpp:44
+msgid "Skip"
+msgstr "Langkau"
+
+#: kio/skipdialog.cpp:47
+#, fuzzy
+msgid "AutoSkip"
+msgstr "Autolangkau"
 
 #: kssl/kcm/displaycertdialog.cpp:54 kssl/ksslinfodialog.cpp:217
 #, fuzzy, kde-format
@@ -5099,23 +5099,6 @@ msgstr "KMailService"
 msgid "Mail service"
 msgstr "Servis mel"
 
-#: misc/kpac/discovery.cpp:111
-msgid "Could not find a usable proxy configuration script"
-msgstr "Tidak dapat cari skrip konfigurasi proksi boleh guna"
-
-#: misc/kpac/downloader.cpp:87
-#, kde-format
-msgid ""
-"Could not download the proxy configuration script:\n"
-"%1"
-msgstr ""
-"Tidak dapat muat turun skrip konfigurasi proksi:\n"
-"%1"
-
-#: misc/kpac/downloader.cpp:89
-msgid "Could not download the proxy configuration script"
-msgstr "Tidak dapat muat turun skrip konfigurasi proksi"
-
 #: misc/kpac/script.cpp:752
 msgid "Could not find 'FindProxyForURL' or 'FindProxyForURLEx'"
 msgstr ""
@@ -5142,6 +5125,23 @@ msgid ""
 msgstr ""
 "Skrip konfigurasi proksi mengembalikan ralat:\n"
 "%1"
+
+#: misc/kpac/discovery.cpp:111
+msgid "Could not find a usable proxy configuration script"
+msgstr "Tidak dapat cari skrip konfigurasi proksi boleh guna"
+
+#: misc/kpac/downloader.cpp:87
+#, kde-format
+msgid ""
+"Could not download the proxy configuration script:\n"
+"%1"
+msgstr ""
+"Tidak dapat muat turun skrip konfigurasi proksi:\n"
+"%1"
+
+#: misc/kpac/downloader.cpp:89
+msgid "Could not download the proxy configuration script"
+msgstr "Tidak dapat muat turun skrip konfigurasi proksi"
 
 #: misc/ksendbugmail/main.cpp:43
 msgid "Error connecting to server."
@@ -6023,12 +6023,12 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: ../kioslave/ftp/ftp.cpp:576 ../kioslave/http/http.cpp:3491
+#: ../kioslave/ftp/ftp.cpp:576 ../kioslave/http/http.cpp:3493
 msgid "You need to supply a username and a password to access this site."
 msgstr ""
 "Anda perlu berikan nama pengguna dan kata laluan untuk mengakses tapak ini."
 
-#: ../kioslave/ftp/ftp.cpp:578 ../kioslave/http/http.cpp:3493
+#: ../kioslave/ftp/ftp.cpp:578 ../kioslave/http/http.cpp:3495
 msgid "Site:"
 msgstr "Laman Web:"
 
@@ -6046,8 +6046,8 @@ msgstr "Log masuk OK"
 msgid "Could not login to %1."
 msgstr "Tidak dapat log masuk ke %1."
 
-#: ../kioslave/ftp/ftp.cpp:2561 ../kioslave/http/http.cpp:3503
-#: ../kioslave/http/http.cpp:5408
+#: ../kioslave/ftp/ftp.cpp:2561 ../kioslave/http/http.cpp:3505
+#: ../kioslave/http/http.cpp:5410
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
 "below before you are allowed to access any sites."
@@ -6055,19 +6055,19 @@ msgstr ""
 "Anda perlu menyediakan kata pengguna dan kata laluan untuk pelayan proksi "
 "yang tertera di bawah sebelum anda dibenarkan mengakses sebarang laman."
 
-#: ../kioslave/ftp/ftp.cpp:2565 ../kioslave/http/http.cpp:3506
-#: ../kioslave/http/http.cpp:5412
+#: ../kioslave/ftp/ftp.cpp:2565 ../kioslave/http/http.cpp:3508
+#: ../kioslave/http/http.cpp:5414
 msgid "Proxy:"
 msgstr "Proksi:"
 
-#: ../kioslave/ftp/ftp.cpp:2566 ../kioslave/http/http.cpp:3580
-#: ../kioslave/http/http.cpp:5413
+#: ../kioslave/ftp/ftp.cpp:2566 ../kioslave/http/http.cpp:3582
+#: ../kioslave/http/http.cpp:5415
 #, kde-format
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr "<b>%1</b> pada <b>%2</b>"
 
-#: ../kioslave/ftp/ftp.cpp:2567 ../kioslave/http/http.cpp:3570
-#: ../kioslave/http/http.cpp:5414
+#: ../kioslave/ftp/ftp.cpp:2567 ../kioslave/http/http.cpp:3572
+#: ../kioslave/http/http.cpp:5416
 msgid "Proxy Authentication Failed."
 msgstr "Pengesahan Proksi Gagal."
 
@@ -6267,110 +6267,110 @@ msgstr "Buang semua cecikut."
 msgid "Reload configuration file"
 msgstr "Ulangmuat konfigurasi fail"
 
-#: ../kioslave/http/http.cpp:599
+#: ../kioslave/http/http.cpp:601
 msgid "No host specified."
 msgstr "Hos tidak dinyatakan."
 
-#: ../kioslave/http/http.cpp:1592
+#: ../kioslave/http/http.cpp:1594
 msgid "Otherwise, the request would have succeeded."
 msgstr "Jika tidak, permintaan akan berjaya."
 
-#: ../kioslave/http/http.cpp:1596
+#: ../kioslave/http/http.cpp:1598
 #, fuzzy
 #| msgid "retrieve property values"
 msgctxt "request type"
 msgid "retrieve property values"
 msgstr "mengambil nilai ciri-ciri"
 
-#: ../kioslave/http/http.cpp:1599
+#: ../kioslave/http/http.cpp:1601
 #, fuzzy
 #| msgid "set property values"
 msgctxt "request type"
 msgid "set property values"
 msgstr "tetapkan ciri-ciri"
 
-#: ../kioslave/http/http.cpp:1602
+#: ../kioslave/http/http.cpp:1604
 #, fuzzy
 #| msgid "create the requested folder"
 msgctxt "request type"
 msgid "create the requested folder"
 msgstr "Cipta folder yang dipinta"
 
-#: ../kioslave/http/http.cpp:1605
+#: ../kioslave/http/http.cpp:1607
 #, fuzzy
 #| msgid "copy the specified file or folder"
 msgctxt "request type"
 msgid "copy the specified file or folder"
 msgstr "salin fail atau folder yang dinyatakan"
 
-#: ../kioslave/http/http.cpp:1608
+#: ../kioslave/http/http.cpp:1610
 #, fuzzy
 #| msgid "move the specified file or folder"
 msgctxt "request type"
 msgid "move the specified file or folder"
 msgstr "pindah fail atau folder yang dinyatakan"
 
-#: ../kioslave/http/http.cpp:1611
+#: ../kioslave/http/http.cpp:1613
 #, fuzzy
 #| msgid "search in the specified folder"
 msgctxt "request type"
 msgid "search in the specified folder"
 msgstr "cari pada folder yang dinyatakan"
 
-#: ../kioslave/http/http.cpp:1614
+#: ../kioslave/http/http.cpp:1616
 #, fuzzy
 #| msgid "lock the specified file or folder"
 msgctxt "request type"
 msgid "lock the specified file or folder"
 msgstr "kunci fail atau folder dinyatakan"
 
-#: ../kioslave/http/http.cpp:1617
+#: ../kioslave/http/http.cpp:1619
 #, fuzzy
 #| msgid "unlock the specified file or folder"
 msgctxt "request type"
 msgid "unlock the specified file or folder"
 msgstr "nyahkunci fail atau folder dinyatakan"
 
-#: ../kioslave/http/http.cpp:1620
+#: ../kioslave/http/http.cpp:1622
 #, fuzzy
 #| msgid "delete the specified file or folder"
 msgctxt "request type"
 msgid "delete the specified file or folder"
 msgstr "padam fail atau folder dinyatakan"
 
-#: ../kioslave/http/http.cpp:1623
+#: ../kioslave/http/http.cpp:1625
 #, fuzzy
 #| msgid "query the server's capabilities"
 msgctxt "request type"
 msgid "query the server's capabilities"
 msgstr "menanyakan keupayaan pelayan"
 
-#: ../kioslave/http/http.cpp:1626
+#: ../kioslave/http/http.cpp:1628
 #, fuzzy
 #| msgid "retrieve the contents of the specified file or folder"
 msgctxt "request type"
 msgid "retrieve the contents of the specified file or folder"
 msgstr "Mengambil kandungan daripada fail atau folder yang dinyatakan"
 
-#: ../kioslave/http/http.cpp:1629
+#: ../kioslave/http/http.cpp:1631
 #, fuzzy
 #| msgid "search in the specified folder"
 msgctxt "request type"
 msgid "run a report in the specified folder"
 msgstr "cari pada folder yang dinyatakan"
 
-#: ../kioslave/http/http.cpp:1640
+#: ../kioslave/http/http.cpp:1642
 #, fuzzy, kde-format
 #| msgid "An unexpected error (%1) occurred while attempting to %2."
 msgctxt "%1: code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Ralat yang tidak terjangka (%1) berlaku ketika cuba untuk %2."
 
-#: ../kioslave/http/http.cpp:1648
+#: ../kioslave/http/http.cpp:1650
 msgid "The server does not support the WebDAV protocol."
 msgstr "Pelayan tidak menyokong protokol WebDAV."
 
-#: ../kioslave/http/http.cpp:1690
+#: ../kioslave/http/http.cpp:1692
 #, fuzzy, kde-format
 #| msgid ""
 #| "An error occurred while attempting to %1, %2. A summary of the reasons is "
@@ -6382,14 +6382,14 @@ msgid ""
 msgstr ""
 "Ralat berlaku semasa mencuba ke %1, %2. Ringkasan alasan adalah di bawah.<ul>"
 
-#: ../kioslave/http/http.cpp:1704 ../kioslave/http/http.cpp:1836
+#: ../kioslave/http/http.cpp:1706 ../kioslave/http/http.cpp:1838
 #, fuzzy, kde-format
 #| msgid "Access was denied while attempting to %1."
 msgctxt "%1: request type"
 msgid "Access was denied while attempting to %1."
 msgstr "Akses dinafikan ketika sedang mencuba untuk %1."
 
-#: ../kioslave/http/http.cpp:1717 ../kioslave/http/http.cpp:1842
+#: ../kioslave/http/http.cpp:1719 ../kioslave/http/http.cpp:1844
 msgid ""
 "A resource cannot be created at the destination until one or more "
 "intermediate collections (folders) have been created."
@@ -6397,7 +6397,7 @@ msgstr ""
 "Sumber tidak dapat dicipta di destinasi hingga satu atau lebih koleksi "
 "perantara (folder) telah dicipta."
 
-#: ../kioslave/http/http.cpp:1725
+#: ../kioslave/http/http.cpp:1727
 #, kde-format
 msgid ""
 "The server was unable to maintain the liveness of the properties listed in "
@@ -6408,27 +6408,27 @@ msgstr ""
 "laku ciri elemen XML atau anda cuba menulis ganti semasa meminta agar fail "
 "tersebut tidak boleh ditulis ganti. %1"
 
-#: ../kioslave/http/http.cpp:1733
+#: ../kioslave/http/http.cpp:1735
 #, kde-format
 msgid "The requested lock could not be granted. %1"
 msgstr "Kunci yang dipinta tidak dapat diberikan. %1"
 
-#: ../kioslave/http/http.cpp:1739
+#: ../kioslave/http/http.cpp:1741
 msgid "The server does not support the request type of the body."
 msgstr "Pelayan tidak menyokong jenis permintaan kandungan"
 
-#: ../kioslave/http/http.cpp:1744 ../kioslave/http/http.cpp:1850
+#: ../kioslave/http/http.cpp:1746 ../kioslave/http/http.cpp:1852
 #, fuzzy, kde-format
 #| msgid "Unable to %1 because the resource is locked."
 msgctxt "%1: request type"
 msgid "Unable to %1 because the resource is locked."
 msgstr "Gagal untuk %1 kerana sumber dikunci."
 
-#: ../kioslave/http/http.cpp:1748
+#: ../kioslave/http/http.cpp:1750
 msgid "This action was prevented by another error."
 msgstr "Tindakan ini telah gagal dilaksanakan oleh masalah yang lain."
 
-#: ../kioslave/http/http.cpp:1754 ../kioslave/http/http.cpp:1856
+#: ../kioslave/http/http.cpp:1756 ../kioslave/http/http.cpp:1858
 #, fuzzy, kde-format
 #| msgid ""
 #| "Unable to %1 because the destination server refuses to accept the file or "
@@ -6439,7 +6439,7 @@ msgid ""
 "folder."
 msgstr "Gagal %1 kerana destinasi pelayan enggan menerima fail atau folder."
 
-#: ../kioslave/http/http.cpp:1761 ../kioslave/http/http.cpp:1863
+#: ../kioslave/http/http.cpp:1763 ../kioslave/http/http.cpp:1865
 msgid ""
 "The destination resource does not have sufficient space to record the state "
 "of the resource after the execution of this method."
@@ -6447,32 +6447,32 @@ msgstr ""
 "Destinasi kepada sumber tidak mempunyai ruang yang cukup untuk merakam "
 "keadaan sumber tersebut selepas pelaksanaan kepada kaedah ini."
 
-#: ../kioslave/http/http.cpp:1814
+#: ../kioslave/http/http.cpp:1816
 #, fuzzy
 #| msgid "The specified resource may not exist."
 msgid "The resource cannot be deleted."
 msgstr "Sumber ditentukan mungkin tidak wujud."
 
-#: ../kioslave/http/http.cpp:1827
+#: ../kioslave/http/http.cpp:1829
 #, fuzzy, kde-format
 #| msgid "upload %1"
 msgctxt "request type"
 msgid "upload %1"
 msgstr "muatnaik %1"
 
-#: ../kioslave/http/http.cpp:1877
+#: ../kioslave/http/http.cpp:1879
 #, fuzzy, kde-format
 #| msgid "An unexpected error (%1) occurred while attempting to %2."
 msgctxt "%1: response code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Ralat yang tidak terjangka (%1) berlaku ketika cuba untuk %2."
 
-#: ../kioslave/http/http.cpp:2703
+#: ../kioslave/http/http.cpp:2705
 #, kde-format
 msgid "%1 contacted. Waiting for reply..."
 msgstr "%1 dihubungi. Sedang menunggu balasan..."
 
-#: ../kioslave/http/http.cpp:3035
+#: ../kioslave/http/http.cpp:3037
 #, kde-format
 msgctxt "@warning: Security check on url being accessed"
 msgid ""
@@ -6481,37 +6481,37 @@ msgid ""
 "<p>Is \"%1\" the site you want to visit?"
 msgstr ""
 
-#: ../kioslave/http/http.cpp:3042
+#: ../kioslave/http/http.cpp:3044
 msgctxt "@title:window"
 msgid "Confirm Website Access"
 msgstr ""
 
-#: ../kioslave/http/http.cpp:3119
+#: ../kioslave/http/http.cpp:3121
 msgid "Server processing request, please wait..."
 msgstr "Pelayan melayani permintaan, sila tunggu..."
 
-#: ../kioslave/http/http.cpp:3567
+#: ../kioslave/http/http.cpp:3569
 msgid "Authentication Failed."
 msgstr "Pengesahan Gagal."
 
-#: ../kioslave/http/http.cpp:3613
+#: ../kioslave/http/http.cpp:3615
 #, fuzzy
 #| msgid "Authorization Dialog"
 msgid "Authorization failed."
 msgstr "Dialog Keizinan"
 
-#: ../kioslave/http/http.cpp:3630
+#: ../kioslave/http/http.cpp:3632
 #, fuzzy
 #| msgid "Authorization Dialog"
 msgid "Unknown Authorization method."
 msgstr "Dialog Keizinan"
 
-#: ../kioslave/http/http.cpp:4012 ../kioslave/http/http.cpp:4066
+#: ../kioslave/http/http.cpp:4014 ../kioslave/http/http.cpp:4068
 #, kde-format
 msgid "Sending data to %1"
 msgstr "Menghantar data ke %1"
 
-#: ../kioslave/http/http.cpp:4532
+#: ../kioslave/http/http.cpp:4534
 #, kde-format
 msgid "Retrieving %1 from %2..."
 msgstr "Mengambil %1 dari %2..."
@@ -6526,22 +6526,6 @@ msgstr "Tidak terdapat info meta untuk %1"
 #, kde-format
 msgid "No metainfo for %1"
 msgstr "Tidak terdapat info meta untuk %1"
-
-#: ../kfile/kfiletreeview.cpp:187
-#, fuzzy
-#| msgid "Show Hidden Folders"
-msgid "Show Hidden Folders"
-msgstr "Papar Folder Tersembunyi"
-
-#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1802
-msgid "*|All Files"
-msgstr "*|Semua Fail"
-
-#: ../kfile/kfilefiltercombo.cpp:194
-#, fuzzy
-#| msgid "*|All Files"
-msgid "All Files"
-msgstr "*|Semua Fail"
 
 #: ../kfile/kfileplacesmodel.cpp:117
 msgctxt "KFile System Bookmarks"
@@ -6642,299 +6626,11 @@ msgstr ""
 msgid "Custom Path"
 msgstr ""
 
-#: ../kfile/kfileplaceeditdialog.cpp:90
-#, fuzzy
-msgid "Add Places Entry"
-msgstr "Sunting masukan PXE"
-
-#: ../kfile/kfileplaceeditdialog.cpp:92
-#, fuzzy
-msgid "Edit Places Entry"
-msgstr "Sunting masukan PXE"
-
-#: ../kfile/kfileplaceeditdialog.cpp:103
-#, fuzzy
-#| msgid ""
-#| "<qt>This is the text that will appear in the Quick Access panel.<p>The "
-#| "description should consist of one or two words that will help you "
-#| "remember what this entry refers to.</qt>"
-msgid ""
-"<qt>This is the text that will appear in the Places panel.<br /><br />The "
-"label should consist of one or two words that will help you remember what "
-"this entry refers to. If you do not enter a label, it will be derived from "
-"the location's URL.</qt>"
-msgstr ""
-"<qt>Ini ialah teks yang muncul dalam panel Akses Pantas.<p>Huraian patut "
-"terdiri daripada satu atau dua perkataan yang akan membantu anda mengingati "
-"apa yang dirujuki oleh entri ini.</qt>"
-
-#: ../kfile/kfileplaceeditdialog.cpp:109
-#, fuzzy
-#| msgid "&Name:"
-msgid "L&abel:"
-msgstr "&Nama:"
-
-#: ../kfile/kfileplaceeditdialog.cpp:111
-#, fuzzy
-#| msgid "Description"
-msgid "Enter descriptive label here"
-msgstr "Huraian"
-
-#: ../kfile/kfileplaceeditdialog.cpp:115
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>This is the location associated with the entry. Any valid URL may be "
-#| "used. For example:<p>%1<br>http://www.kde.org<br>ftp://ftp.kde.org/pub/"
-#| "kde/stable<p>By clicking on the button next to the text edit box you can "
-#| "browse to an appropriate URL.</qt>"
-msgid ""
-"<qt>This is the location associated with the entry. Any valid URL may be "
-"used. For example:<br /><br />%1<br />http://www.kde.org<br />ftp://ftp.kde."
-"org/pub/kde/stable<br /><br />By clicking on the button next to the text "
-"edit box you can browse to an appropriate URL.</qt>"
-msgstr ""
-"<qt>Ini ialah lokasi yang dikaitkan dengan entri. Sebarang URL sah boleh "
-"digunakan. Contohnya:<p>%1<br>http://www.kde.org<br>ftp://ftp.kde.org/pub/"
-"kde/stable<p>Dengan mengklik butang di sebelah kepada kotak edit berikutnya, "
-"anda boleh layar URL yang sesuai.</qt>"
-
-#: ../kfile/kfileplaceeditdialog.cpp:121
-msgid "&Location:"
-msgstr "&Lokasi:"
-
-#: ../kfile/kfileplaceeditdialog.cpp:127
-#, fuzzy
-#| msgid ""
-#| "<qt>This is the icon that will appear in the Quick Access panel.<p>Click "
-#| "on the button to select a different icon.</qt>"
-msgid ""
-"<qt>This is the icon that will appear in the Places panel.<br /><br />Click "
-"on the button to select a different icon.</qt>"
-msgstr ""
-"<qt>Ini ialah ikon yang akan muncul dalam panel Akses Pantas.<p>Klik di atas "
-"butang ini untuk memilih ikon yang berbeza.</qt>"
-
-#: ../kfile/kfileplaceeditdialog.cpp:130
-msgid "Choose an &icon:"
-msgstr "Pilih &ikon:"
-
-#: ../kfile/kfileplaceeditdialog.cpp:147
-#, kde-format
-msgid "&Only show when using this application (%1)"
-msgstr "&Hanya apabila menggunakan aplikasi ini (%1)"
-
-#: ../kfile/kfileplaceeditdialog.cpp:149
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>Select this setting if you want this entry to show only when using "
-#| "the current application (%1).<p>If this setting is not selected, the "
-#| "entry will be available in all applications.</qt>"
-msgid ""
-"<qt>Select this setting if you want this entry to show only when using the "
-"current application (%1).<br /><br />If this setting is not selected, the "
-"entry will be available in all applications.</qt>"
-msgstr ""
-"<qt>Pilih seting ini jika anda ingin entri ini papar hanya apabila "
-"menggunakan aplikasi semasa (%1).<p>Jika seting ini tidak dipilih, entri "
-"akan boleh didapatkan dalam semua aplikasi.</qt>"
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:93
-msgid "Click for Location Navigation"
-msgstr ""
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:95
-msgid "Click to Edit Location"
-msgstr ""
-
 #: ../kfile/kurlnavigatorbutton.cpp:675
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "More"
 msgstr "Kedai"
-
-#: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:159
-#, kde-format
-msgid "A file or folder named %1 already exists."
-msgstr "Fail atau folder bernama %1 sudah wujud."
-
-#: ../kfile/kdiroperator.cpp:768 ../kfile/kdirselectdialog.cpp:163
-msgid "You do not have permission to create that folder."
-msgstr "Anda tidak mempunyai keizinan untuk mencipta folder itu."
-
-#: ../kfile/kdiroperator.cpp:783
-msgid "You did not select a file to delete."
-msgstr "Anda tidak pilih fail untuk dihapuskan."
-
-#: ../kfile/kdiroperator.cpp:784
-msgid "Nothing to Delete"
-msgstr "Tiada Apa Hendak DiHapuskan"
-
-#: ../kfile/kdiroperator.cpp:805
-#, kde-format
-msgid ""
-"<qt>Do you really want to delete\n"
-" <b>'%1'</b>?</qt>"
-msgstr ""
-"<qt>Anda pasti untuk memadam\n"
-" <b>'%1'</b>?</qt>"
-
-#: ../kfile/kdiroperator.cpp:807
-msgid "Delete File"
-msgstr "Padam Fail"
-
-#: ../kfile/kdiroperator.cpp:845
-msgid "You did not select a file to trash."
-msgstr "Anda tidak memilih fail untuk dibuang."
-
-#: ../kfile/kdiroperator.cpp:846
-msgid "Nothing to Trash"
-msgstr "Tiada Apa Hendak Dibuang"
-
-#: ../kfile/kdiroperator.cpp:863
-#, kde-format
-msgid ""
-"<qt>Do you really want to trash\n"
-" <b>'%1'</b>?</qt>"
-msgstr ""
-"<qt>Anda benar-benar ingin buang\n"
-" <b>'%1'</b>?</qt>"
-
-#: ../kfile/kdiroperator.cpp:865
-msgid "Trash File"
-msgstr "Fail Tong Sampah"
-
-#: ../kfile/kdiroperator.cpp:866 ../kfile/kdiroperator.cpp:873
-msgctxt "to trash"
-msgid "&Trash"
-msgstr "&Tong Sampah"
-
-#: ../kfile/kdiroperator.cpp:870
-#, fuzzy, kde-format
-msgid "translators: not called for n == 1"
-msgid_plural "Do you really want to trash these %1 items?"
-msgstr[0] "_n: penterjemah: tidak dipanggil untuk n ==1"
-msgstr[1] "Anda benar-benar ingin buang %1 item ini?"
-
-#: ../kfile/kdiroperator.cpp:872
-msgid "Trash Files"
-msgstr "Fail Tong Sampah"
-
-#: ../kfile/kdiroperator.cpp:1064 ../kfile/kdiroperator.cpp:1201
-msgid "The specified folder does not exist or was not readable."
-msgstr "Folder yang dinyatakan tidak wujud atau tidak boleh baca."
-
-#: ../kfile/kdiroperator.cpp:1852
-msgid "Menu"
-msgstr "Menu"
-
-#: ../kfile/kdiroperator.cpp:1856
-msgid "Parent Folder"
-msgstr "Folder Induk"
-
-#: ../kfile/kdiroperator.cpp:1863
-msgid "Home Folder"
-msgstr "Folder Laman Utama"
-
-#: ../kfile/kdiroperator.cpp:1866
-#, fuzzy
-msgid "Reload"
-msgstr "Baca"
-
-#: ../kfile/kdiroperator.cpp:1869
-msgid "New Folder..."
-msgstr "Folder Baru..."
-
-#: ../kfile/kdiroperator.cpp:1880
-#, fuzzy
-msgid "Delete"
-msgstr "Menghapus"
-
-#: ../kfile/kdiroperator.cpp:1887
-msgid "Sorting"
-msgstr "Isihan"
-
-#: ../kfile/kdiroperator.cpp:1890
-msgid "By Name"
-msgstr "Mengikut Nama"
-
-#: ../kfile/kdiroperator.cpp:1894
-msgid "By Size"
-msgstr "Mengikut Saiz"
-
-#: ../kfile/kdiroperator.cpp:1898
-msgid "By Date"
-msgstr "Mengikut Tarikh"
-
-#: ../kfile/kdiroperator.cpp:1902
-#, fuzzy
-msgid "By Type"
-msgstr "Jenis"
-
-#: ../kfile/kdiroperator.cpp:1906
-#, fuzzy
-msgid "Descending"
-msgstr " (Memadam)"
-
-#: ../kfile/kdiroperator.cpp:1910
-msgid "Folders First"
-msgstr ""
-
-#: ../kfile/kdiroperator.cpp:1920
-msgid "Icon Position"
-msgstr ""
-
-#: ../kfile/kdiroperator.cpp:1923
-msgid "Next to File Name"
-msgstr ""
-
-#: ../kfile/kdiroperator.cpp:1927
-msgid "Above File Name"
-msgstr ""
-
-#: ../kfile/kdiroperator.cpp:1938
-msgid "Short View"
-msgstr "Paparan Ringkas"
-
-#: ../kfile/kdiroperator.cpp:1943
-msgid "Detailed View"
-msgstr "Paparan Terperinci"
-
-#: ../kfile/kdiroperator.cpp:1948
-#, fuzzy
-#| msgid "Detailed View"
-msgid "Tree View"
-msgstr "Paparan Terperinci"
-
-#: ../kfile/kdiroperator.cpp:1953
-#, fuzzy
-#| msgid "Detailed View"
-msgid "Detailed Tree View"
-msgstr "Paparan Terperinci"
-
-#: ../kfile/kdiroperator.cpp:1964
-msgid "Show Hidden Files"
-msgstr "Papar Fail Tersembunyi"
-
-#: ../kfile/kdiroperator.cpp:1968
-#, fuzzy
-#| msgid "Show Preview"
-msgid "Show Aside Preview"
-msgstr "Papar Prebiu"
-
-#: ../kfile/kdiroperator.cpp:1974
-msgid "Show Preview"
-msgstr "Papar Prebiu"
-
-#: ../kfile/kdiroperator.cpp:1978
-#, fuzzy
-#| msgid "Open file dialog"
-msgid "Open File Manager"
-msgstr "Buka dialog fail"
-
-#: ../kfile/kdiroperator.cpp:1990
-#, fuzzy
-msgid "&View"
-msgstr "&Prapapar"
 
 #: ../kfile/kdirselectdialog.cpp:131
 #, fuzzy
@@ -6955,6 +6651,15 @@ msgid ""
 msgstr ""
 "Cipta folder baru dalam:\n"
 "%1"
+
+#: ../kfile/kdirselectdialog.cpp:159 ../kfile/kdiroperator.cpp:766
+#, kde-format
+msgid "A file or folder named %1 already exists."
+msgstr "Fail atau folder bernama %1 sudah wujud."
+
+#: ../kfile/kdirselectdialog.cpp:163 ../kfile/kdiroperator.cpp:768
+msgid "You do not have permission to create that folder."
+msgstr "Anda tidak mempunyai keizinan untuk mencipta folder itu."
 
 #: ../kfile/kdirselectdialog.cpp:283
 #, fuzzy
@@ -6996,165 +6701,19 @@ msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Ciri-ciri untuk %1"
 
-#: ../kfile/knewfilemenu.cpp:369 ../kfile/knewfilemenu.cpp:878
+#: ../kfile/kfiletreeview.cpp:187
 #, fuzzy
-msgid "Sorry"
-msgstr "Kedai"
+#| msgid "Show Hidden Folders"
+msgid "Show Hidden Folders"
+msgstr "Papar Folder Tersembunyi"
 
-#: ../kfile/knewfilemenu.cpp:378
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
-#| "does not exist.</qt>"
-msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
-msgstr ""
-"<qt>Tidak dapat menjalankan arahan yang dinyatakan. Fail atau folder <b>%1</"
-"b> tidak wujud.</qt>"
-
-#: ../kfile/knewfilemenu.cpp:397
-#, fuzzy
-msgctxt "@action:button"
-msgid "Create directory"
-msgstr "Mencipta Folder"
-
-#: ../kfile/knewfilemenu.cpp:399
-#, fuzzy
-#| msgid "Ru&n as a different user"
-msgctxt "@action:button"
-msgid "Enter a different name"
-msgstr "&Laksanakan sebagai pengguna lain"
-
-#: ../kfile/knewfilemenu.cpp:402
-#, fuzzy
-msgid "Create hidden directory?"
-msgstr "Mencipta Folder"
-
-#: ../kfile/knewfilemenu.cpp:406
-#, kde-format
-msgid ""
-"The name \"%1\" starts with a dot, so the directory will be hidden by "
-"default."
+#: ../kfile/kurlnavigatortogglebutton.cpp:93
+msgid "Click for Location Navigation"
 msgstr ""
 
-#: ../kfile/knewfilemenu.cpp:408
-msgid "Do not ask again"
+#: ../kfile/kurlnavigatortogglebutton.cpp:95
+msgid "Click to Edit Location"
 msgstr ""
-
-#: ../kfile/knewfilemenu.cpp:501 ../kfile/knewfilemenu.cpp:564
-#, fuzzy
-msgid "File name:"
-msgstr "Peranti:"
-
-#: ../kfile/knewfilemenu.cpp:504
-#, fuzzy
-#| msgid "Could Not Create Symbolic Link"
-msgid "Create Symlink"
-msgstr "Tidak Dapat Mencipta Pautan Simbolik"
-
-#: ../kfile/knewfilemenu.cpp:568
-#, fuzzy
-#| msgid "Created:"
-msgid "Create link to URL"
-msgstr "Dicipta:"
-
-#: ../kfile/knewfilemenu.cpp:614 ../kfile/knewfilemenu.cpp:662
-#, kde-format
-msgctxt "@item:inmenu Create New"
-msgid "%1"
-msgstr ""
-
-#: ../kfile/knewfilemenu.cpp:888
-msgid ""
-"Basic links can only point to local files or directories.\n"
-"Please use \"Link to Location\" for remote URLs."
-msgstr ""
-
-#: ../kfile/knewfilemenu.cpp:964
-#, fuzzy
-#| msgid "Created:"
-msgid "Create New"
-msgstr "Dicipta:"
-
-#: ../kfile/knewfilemenu.cpp:977
-#, fuzzy
-msgid "Link to Device"
-msgstr "Peranti:"
-
-#: ../kfile/knewfilemenu.cpp:1022
-#, fuzzy
-#| msgid "New Folder"
-msgctxt "Default name for a new folder"
-msgid "New Folder"
-msgstr "Folder Baru"
-
-#: ../kfile/knewfilemenu.cpp:1036
-#, kde-format
-msgid ""
-"Create new folder in:\n"
-"%1"
-msgstr ""
-"Cipta folder baru dalam:\n"
-"%1"
-
-#: ../kfile/kfileplacesview.cpp:575
-#, fuzzy
-#| msgctxt "to trash"
-#| msgid "&Trash"
-msgctxt "@action:inmenu"
-msgid "Empty Trash"
-msgstr "&Tong Sampah"
-
-#: ../kfile/kfileplacesview.cpp:582
-#, fuzzy, kde-format
-msgid "&Edit Entry '%1'..."
-msgstr "Sunting masukan PXE"
-
-#: ../kfile/kfileplacesview.cpp:604
-#, kde-format
-msgid "&Hide Entry '%1'"
-msgstr ""
-
-#: ../kfile/kfileplacesview.cpp:613
-#, fuzzy
-#| msgid ""
-#| "Show\n"
-#| "Entries"
-msgid "&Show All Entries"
-msgstr ""
-"Papar\n"
-"Entri"
-
-#: ../kfile/kfileplacesview.cpp:624
-#, fuzzy, kde-format
-msgid "&Remove Entry '%1'"
-msgstr "&Buang Input"
-
-#: ../kfile/kfileplacesview.cpp:636
-#, fuzzy
-msgctxt "@info"
-msgid "Do you really want to empty the Trash? All items will be deleted."
-msgstr "_n: Anda benar-benar ingin hapuskan item ini?"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:173
-#, fuzzy
-#| msgid "Devices"
-msgctxt "@item:inmenu"
-msgid "Devices"
-msgstr "Peranti"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:177
-#, fuzzy
-#| msgid "SSL version:"
-msgctxt "@item:inmenu"
-msgid "Subversion"
-msgstr "Versi SSL:"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:181
-#, fuzzy
-#| msgid "Others"
-msgctxt "@item:inmenu"
-msgid "Other"
-msgstr "Lain-lain"
 
 #: ../kfile/kfilewidget.cpp:286
 #, fuzzy
@@ -7391,6 +6950,10 @@ msgstr "Fail Jauh Tidak Diterima"
 msgid "*|All Folders"
 msgstr "*|Semua Folder"
 
+#: ../kfile/kfilewidget.cpp:1802 ../kfile/kfilefiltercombo.cpp:36
+msgid "*|All Files"
+msgstr "*|Semua Fail"
+
 #: ../kfile/kfilewidget.cpp:2051
 #, kde-format
 msgid "Icon size: %1 pixels (standard size)"
@@ -7475,6 +7038,443 @@ msgstr ""
 "ini untuk membuka menu tanda buku tempat anda tambah, edit atau pilih tanda "
 "buku. <p> Tanda buku ini khusus untuk dialog fail, jika tidak ia beroperasi "
 "seperti tanda buku di tempat lain dalam KDE.</qt>"
+
+#: ../kfile/knewfilemenu.cpp:369 ../kfile/knewfilemenu.cpp:878
+#, fuzzy
+msgid "Sorry"
+msgstr "Kedai"
+
+#: ../kfile/knewfilemenu.cpp:378
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
+#| "does not exist.</qt>"
+msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
+msgstr ""
+"<qt>Tidak dapat menjalankan arahan yang dinyatakan. Fail atau folder <b>%1</"
+"b> tidak wujud.</qt>"
+
+#: ../kfile/knewfilemenu.cpp:397
+#, fuzzy
+msgctxt "@action:button"
+msgid "Create directory"
+msgstr "Mencipta Folder"
+
+#: ../kfile/knewfilemenu.cpp:399
+#, fuzzy
+#| msgid "Ru&n as a different user"
+msgctxt "@action:button"
+msgid "Enter a different name"
+msgstr "&Laksanakan sebagai pengguna lain"
+
+#: ../kfile/knewfilemenu.cpp:402
+#, fuzzy
+msgid "Create hidden directory?"
+msgstr "Mencipta Folder"
+
+#: ../kfile/knewfilemenu.cpp:406
+#, kde-format
+msgid ""
+"The name \"%1\" starts with a dot, so the directory will be hidden by "
+"default."
+msgstr ""
+
+#: ../kfile/knewfilemenu.cpp:408
+msgid "Do not ask again"
+msgstr ""
+
+#: ../kfile/knewfilemenu.cpp:501 ../kfile/knewfilemenu.cpp:564
+#, fuzzy
+msgid "File name:"
+msgstr "Peranti:"
+
+#: ../kfile/knewfilemenu.cpp:504
+#, fuzzy
+#| msgid "Could Not Create Symbolic Link"
+msgid "Create Symlink"
+msgstr "Tidak Dapat Mencipta Pautan Simbolik"
+
+#: ../kfile/knewfilemenu.cpp:568
+#, fuzzy
+#| msgid "Created:"
+msgid "Create link to URL"
+msgstr "Dicipta:"
+
+#: ../kfile/knewfilemenu.cpp:614 ../kfile/knewfilemenu.cpp:662
+#, kde-format
+msgctxt "@item:inmenu Create New"
+msgid "%1"
+msgstr ""
+
+#: ../kfile/knewfilemenu.cpp:888
+msgid ""
+"Basic links can only point to local files or directories.\n"
+"Please use \"Link to Location\" for remote URLs."
+msgstr ""
+
+#: ../kfile/knewfilemenu.cpp:964
+#, fuzzy
+#| msgid "Created:"
+msgid "Create New"
+msgstr "Dicipta:"
+
+#: ../kfile/knewfilemenu.cpp:977
+#, fuzzy
+msgid "Link to Device"
+msgstr "Peranti:"
+
+#: ../kfile/knewfilemenu.cpp:1022
+#, fuzzy
+#| msgid "New Folder"
+msgctxt "Default name for a new folder"
+msgid "New Folder"
+msgstr "Folder Baru"
+
+#: ../kfile/knewfilemenu.cpp:1036
+#, kde-format
+msgid ""
+"Create new folder in:\n"
+"%1"
+msgstr ""
+"Cipta folder baru dalam:\n"
+"%1"
+
+#: ../kfile/kfilefiltercombo.cpp:194
+#, fuzzy
+#| msgid "*|All Files"
+msgid "All Files"
+msgstr "*|Semua Fail"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:173
+#, fuzzy
+#| msgid "Devices"
+msgctxt "@item:inmenu"
+msgid "Devices"
+msgstr "Peranti"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:177
+#, fuzzy
+#| msgid "SSL version:"
+msgctxt "@item:inmenu"
+msgid "Subversion"
+msgstr "Versi SSL:"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:181
+#, fuzzy
+#| msgid "Others"
+msgctxt "@item:inmenu"
+msgid "Other"
+msgstr "Lain-lain"
+
+#: ../kfile/kfileplaceeditdialog.cpp:90
+#, fuzzy
+msgid "Add Places Entry"
+msgstr "Sunting masukan PXE"
+
+#: ../kfile/kfileplaceeditdialog.cpp:92
+#, fuzzy
+msgid "Edit Places Entry"
+msgstr "Sunting masukan PXE"
+
+#: ../kfile/kfileplaceeditdialog.cpp:103
+#, fuzzy
+#| msgid ""
+#| "<qt>This is the text that will appear in the Quick Access panel.<p>The "
+#| "description should consist of one or two words that will help you "
+#| "remember what this entry refers to.</qt>"
+msgid ""
+"<qt>This is the text that will appear in the Places panel.<br /><br />The "
+"label should consist of one or two words that will help you remember what "
+"this entry refers to. If you do not enter a label, it will be derived from "
+"the location's URL.</qt>"
+msgstr ""
+"<qt>Ini ialah teks yang muncul dalam panel Akses Pantas.<p>Huraian patut "
+"terdiri daripada satu atau dua perkataan yang akan membantu anda mengingati "
+"apa yang dirujuki oleh entri ini.</qt>"
+
+#: ../kfile/kfileplaceeditdialog.cpp:109
+#, fuzzy
+#| msgid "&Name:"
+msgid "L&abel:"
+msgstr "&Nama:"
+
+#: ../kfile/kfileplaceeditdialog.cpp:111
+#, fuzzy
+#| msgid "Description"
+msgid "Enter descriptive label here"
+msgstr "Huraian"
+
+#: ../kfile/kfileplaceeditdialog.cpp:115
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>This is the location associated with the entry. Any valid URL may be "
+#| "used. For example:<p>%1<br>http://www.kde.org<br>ftp://ftp.kde.org/pub/"
+#| "kde/stable<p>By clicking on the button next to the text edit box you can "
+#| "browse to an appropriate URL.</qt>"
+msgid ""
+"<qt>This is the location associated with the entry. Any valid URL may be "
+"used. For example:<br /><br />%1<br />http://www.kde.org<br />ftp://ftp.kde."
+"org/pub/kde/stable<br /><br />By clicking on the button next to the text "
+"edit box you can browse to an appropriate URL.</qt>"
+msgstr ""
+"<qt>Ini ialah lokasi yang dikaitkan dengan entri. Sebarang URL sah boleh "
+"digunakan. Contohnya:<p>%1<br>http://www.kde.org<br>ftp://ftp.kde.org/pub/"
+"kde/stable<p>Dengan mengklik butang di sebelah kepada kotak edit berikutnya, "
+"anda boleh layar URL yang sesuai.</qt>"
+
+#: ../kfile/kfileplaceeditdialog.cpp:121
+msgid "&Location:"
+msgstr "&Lokasi:"
+
+#: ../kfile/kfileplaceeditdialog.cpp:127
+#, fuzzy
+#| msgid ""
+#| "<qt>This is the icon that will appear in the Quick Access panel.<p>Click "
+#| "on the button to select a different icon.</qt>"
+msgid ""
+"<qt>This is the icon that will appear in the Places panel.<br /><br />Click "
+"on the button to select a different icon.</qt>"
+msgstr ""
+"<qt>Ini ialah ikon yang akan muncul dalam panel Akses Pantas.<p>Klik di atas "
+"butang ini untuk memilih ikon yang berbeza.</qt>"
+
+#: ../kfile/kfileplaceeditdialog.cpp:130
+msgid "Choose an &icon:"
+msgstr "Pilih &ikon:"
+
+#: ../kfile/kfileplaceeditdialog.cpp:147
+#, kde-format
+msgid "&Only show when using this application (%1)"
+msgstr "&Hanya apabila menggunakan aplikasi ini (%1)"
+
+#: ../kfile/kfileplaceeditdialog.cpp:149
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Select this setting if you want this entry to show only when using "
+#| "the current application (%1).<p>If this setting is not selected, the "
+#| "entry will be available in all applications.</qt>"
+msgid ""
+"<qt>Select this setting if you want this entry to show only when using the "
+"current application (%1).<br /><br />If this setting is not selected, the "
+"entry will be available in all applications.</qt>"
+msgstr ""
+"<qt>Pilih seting ini jika anda ingin entri ini papar hanya apabila "
+"menggunakan aplikasi semasa (%1).<p>Jika seting ini tidak dipilih, entri "
+"akan boleh didapatkan dalam semua aplikasi.</qt>"
+
+#: ../kfile/kdiroperator.cpp:783
+msgid "You did not select a file to delete."
+msgstr "Anda tidak pilih fail untuk dihapuskan."
+
+#: ../kfile/kdiroperator.cpp:784
+msgid "Nothing to Delete"
+msgstr "Tiada Apa Hendak DiHapuskan"
+
+#: ../kfile/kdiroperator.cpp:805
+#, kde-format
+msgid ""
+"<qt>Do you really want to delete\n"
+" <b>'%1'</b>?</qt>"
+msgstr ""
+"<qt>Anda pasti untuk memadam\n"
+" <b>'%1'</b>?</qt>"
+
+#: ../kfile/kdiroperator.cpp:807
+msgid "Delete File"
+msgstr "Padam Fail"
+
+#: ../kfile/kdiroperator.cpp:845
+msgid "You did not select a file to trash."
+msgstr "Anda tidak memilih fail untuk dibuang."
+
+#: ../kfile/kdiroperator.cpp:846
+msgid "Nothing to Trash"
+msgstr "Tiada Apa Hendak Dibuang"
+
+#: ../kfile/kdiroperator.cpp:863
+#, kde-format
+msgid ""
+"<qt>Do you really want to trash\n"
+" <b>'%1'</b>?</qt>"
+msgstr ""
+"<qt>Anda benar-benar ingin buang\n"
+" <b>'%1'</b>?</qt>"
+
+#: ../kfile/kdiroperator.cpp:865
+msgid "Trash File"
+msgstr "Fail Tong Sampah"
+
+#: ../kfile/kdiroperator.cpp:866 ../kfile/kdiroperator.cpp:873
+msgctxt "to trash"
+msgid "&Trash"
+msgstr "&Tong Sampah"
+
+#: ../kfile/kdiroperator.cpp:870
+#, fuzzy, kde-format
+msgid "translators: not called for n == 1"
+msgid_plural "Do you really want to trash these %1 items?"
+msgstr[0] "_n: penterjemah: tidak dipanggil untuk n ==1"
+msgstr[1] "Anda benar-benar ingin buang %1 item ini?"
+
+#: ../kfile/kdiroperator.cpp:872
+msgid "Trash Files"
+msgstr "Fail Tong Sampah"
+
+#: ../kfile/kdiroperator.cpp:1064 ../kfile/kdiroperator.cpp:1201
+msgid "The specified folder does not exist or was not readable."
+msgstr "Folder yang dinyatakan tidak wujud atau tidak boleh baca."
+
+#: ../kfile/kdiroperator.cpp:1852
+msgid "Menu"
+msgstr "Menu"
+
+#: ../kfile/kdiroperator.cpp:1856
+msgid "Parent Folder"
+msgstr "Folder Induk"
+
+#: ../kfile/kdiroperator.cpp:1863
+msgid "Home Folder"
+msgstr "Folder Laman Utama"
+
+#: ../kfile/kdiroperator.cpp:1866
+#, fuzzy
+msgid "Reload"
+msgstr "Baca"
+
+#: ../kfile/kdiroperator.cpp:1869
+msgid "New Folder..."
+msgstr "Folder Baru..."
+
+#: ../kfile/kdiroperator.cpp:1880
+#, fuzzy
+msgid "Delete"
+msgstr "Menghapus"
+
+#: ../kfile/kdiroperator.cpp:1887
+msgid "Sorting"
+msgstr "Isihan"
+
+#: ../kfile/kdiroperator.cpp:1890
+msgid "By Name"
+msgstr "Mengikut Nama"
+
+#: ../kfile/kdiroperator.cpp:1894
+msgid "By Size"
+msgstr "Mengikut Saiz"
+
+#: ../kfile/kdiroperator.cpp:1898
+msgid "By Date"
+msgstr "Mengikut Tarikh"
+
+#: ../kfile/kdiroperator.cpp:1902
+#, fuzzy
+msgid "By Type"
+msgstr "Jenis"
+
+#: ../kfile/kdiroperator.cpp:1906
+#, fuzzy
+msgid "Descending"
+msgstr " (Memadam)"
+
+#: ../kfile/kdiroperator.cpp:1910
+msgid "Folders First"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1920
+msgid "Icon Position"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1923
+msgid "Next to File Name"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1927
+msgid "Above File Name"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1938
+msgid "Short View"
+msgstr "Paparan Ringkas"
+
+#: ../kfile/kdiroperator.cpp:1943
+msgid "Detailed View"
+msgstr "Paparan Terperinci"
+
+#: ../kfile/kdiroperator.cpp:1948
+#, fuzzy
+#| msgid "Detailed View"
+msgid "Tree View"
+msgstr "Paparan Terperinci"
+
+#: ../kfile/kdiroperator.cpp:1953
+#, fuzzy
+#| msgid "Detailed View"
+msgid "Detailed Tree View"
+msgstr "Paparan Terperinci"
+
+#: ../kfile/kdiroperator.cpp:1964
+msgid "Show Hidden Files"
+msgstr "Papar Fail Tersembunyi"
+
+#: ../kfile/kdiroperator.cpp:1968
+#, fuzzy
+#| msgid "Show Preview"
+msgid "Show Aside Preview"
+msgstr "Papar Prebiu"
+
+#: ../kfile/kdiroperator.cpp:1974
+msgid "Show Preview"
+msgstr "Papar Prebiu"
+
+#: ../kfile/kdiroperator.cpp:1978
+#, fuzzy
+#| msgid "Open file dialog"
+msgid "Open File Manager"
+msgstr "Buka dialog fail"
+
+#: ../kfile/kdiroperator.cpp:1990
+#, fuzzy
+msgid "&View"
+msgstr "&Prapapar"
+
+#: ../kfile/kfileplacesview.cpp:575
+#, fuzzy
+#| msgctxt "to trash"
+#| msgid "&Trash"
+msgctxt "@action:inmenu"
+msgid "Empty Trash"
+msgstr "&Tong Sampah"
+
+#: ../kfile/kfileplacesview.cpp:582
+#, fuzzy, kde-format
+msgid "&Edit Entry '%1'..."
+msgstr "Sunting masukan PXE"
+
+#: ../kfile/kfileplacesview.cpp:604
+#, kde-format
+msgid "&Hide Entry '%1'"
+msgstr ""
+
+#: ../kfile/kfileplacesview.cpp:613
+#, fuzzy
+#| msgid ""
+#| "Show\n"
+#| "Entries"
+msgid "&Show All Entries"
+msgstr ""
+"Papar\n"
+"Entri"
+
+#: ../kfile/kfileplacesview.cpp:624
+#, fuzzy, kde-format
+msgid "&Remove Entry '%1'"
+msgstr "&Buang Input"
+
+#: ../kfile/kfileplacesview.cpp:636
+#, fuzzy
+msgctxt "@info"
+msgid "Do you really want to empty the Trash? All items will be deleted."
+msgstr "_n: Anda benar-benar ingin hapuskan item ini?"
 
 #~ msgid "The specified folder already exists."
 #~ msgstr "Folder yang dinyatakan telah wujud."
