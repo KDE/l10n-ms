@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-12 02:43+0100\n"
+"POT-Creation-Date: 2012-02-27 02:59+0100\n"
 "PO-Revision-Date: 2006-10-05 19:47+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -823,6 +823,23 @@ msgstr "Tidak dapat mencipta objek pangkalan data"
 msgid "Unable to locate note-text"
 msgstr "Tidak dapat mencipta objek pangkalan data"
 
+#: part/KWOdfLoader.cpp:90
+#, fuzzy
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+
+#: part/KWOdfLoader.cpp:102
+#, fuzzy
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+
+#: part/KWOdfLoader.cpp:104
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+
 #: part/KWStatusBar.cpp:48
 msgid "Modified"
 msgstr ""
@@ -1057,6 +1074,65 @@ msgstr "Teks Berada Di dalam"
 msgid "Options"
 msgstr ""
 
+#: part/dialogs/KWAnchoringProperties.cpp:432
+#, fuzzy
+#| msgid "Frame is inline"
+msgid "Baseline"
+msgstr "Bingkai dalam keadaan sebaris"
+
+#: part/dialogs/KWAnchoringProperties.cpp:433
+#: part/dialogs/KWAnchoringProperties.cpp:444
+#, fuzzy
+msgid "Character"
+msgstr "Cipta Jadual"
+
+#: part/dialogs/KWAnchoringProperties.cpp:436
+msgid "Row"
+msgstr "Baris"
+
+#: part/dialogs/KWAnchoringProperties.cpp:437
+#: part/dialogs/KWAnchoringProperties.cpp:445
+msgid "Page (entire) area"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:438
+#: part/dialogs/KWAnchoringProperties.cpp:446
+#, fuzzy
+msgid "Page text area"
+msgstr "Kursor dalam kawasan yang dilindungi"
+
+#: part/dialogs/KWAnchoringProperties.cpp:439
+#: part/dialogs/KWAnchoringProperties.cpp:453
+#, fuzzy
+#| msgid "Paragraph"
+msgid "Paragraph area"
+msgstr "Perenggan"
+
+#: part/dialogs/KWAnchoringProperties.cpp:440
+#: part/dialogs/KWAnchoringProperties.cpp:454
+#, fuzzy
+#| msgid "Paragraph Settings"
+msgid "Paragraph text area"
+msgstr "Seting Perenggan"
+
+#: part/dialogs/KWAnchoringProperties.cpp:447
+#, fuzzy
+msgid "Left page border"
+msgstr "Ubah Bingkai Sempadan Kiri"
+
+#: part/dialogs/KWAnchoringProperties.cpp:448
+#, fuzzy
+msgid "Right page border"
+msgstr "Ubah Bingkai Sempadan Kanan"
+
+#: part/dialogs/KWAnchoringProperties.cpp:455
+msgid "Right paragraph border"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:456
+msgid "Left paragraph border"
+msgstr ""
+
 #: part/dialogs/KWFrameDialog.cpp:41
 msgid "General"
 msgstr "Am"
@@ -1067,71 +1143,12 @@ msgstr "Am"
 msgid "Smart Positioning"
 msgstr "Posisi"
 
-#: part/dialogs/KWFrameDialog.cpp:79
+#: part/dialogs/KWFrameDialog.cpp:83
 #, fuzzy
 #| msgid "Frame Properties"
 msgctxt "(qtundo-format)"
 msgid "Change Shape Properties"
 msgstr "Ciri Bingkai"
-
-#: part/dialogs/KWAnchoringProperties.cpp:431
-#, fuzzy
-#| msgid "Frame is inline"
-msgid "Baseline"
-msgstr "Bingkai dalam keadaan sebaris"
-
-#: part/dialogs/KWAnchoringProperties.cpp:432
-#: part/dialogs/KWAnchoringProperties.cpp:443
-#, fuzzy
-msgid "Character"
-msgstr "Cipta Jadual"
-
-#: part/dialogs/KWAnchoringProperties.cpp:435
-msgid "Row"
-msgstr "Baris"
-
-#: part/dialogs/KWAnchoringProperties.cpp:436
-#: part/dialogs/KWAnchoringProperties.cpp:444
-msgid "Page (entire) area"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:437
-#: part/dialogs/KWAnchoringProperties.cpp:445
-#, fuzzy
-msgid "Page text area"
-msgstr "Kursor dalam kawasan yang dilindungi"
-
-#: part/dialogs/KWAnchoringProperties.cpp:438
-#: part/dialogs/KWAnchoringProperties.cpp:452
-#, fuzzy
-#| msgid "Paragraph"
-msgid "Paragraph area"
-msgstr "Perenggan"
-
-#: part/dialogs/KWAnchoringProperties.cpp:439
-#: part/dialogs/KWAnchoringProperties.cpp:453
-#, fuzzy
-#| msgid "Paragraph Settings"
-msgid "Paragraph text area"
-msgstr "Seting Perenggan"
-
-#: part/dialogs/KWAnchoringProperties.cpp:446
-#, fuzzy
-msgid "Left page border"
-msgstr "Ubah Bingkai Sempadan Kiri"
-
-#: part/dialogs/KWAnchoringProperties.cpp:447
-#, fuzzy
-msgid "Right page border"
-msgstr "Ubah Bingkai Sempadan Kanan"
-
-#: part/dialogs/KWAnchoringProperties.cpp:454
-msgid "Right paragraph border"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:455
-msgid "Left paragraph border"
-msgstr ""
 
 #: part/dockers/KWRdfDocker.cpp:53
 msgid "RDF"
@@ -1382,21 +1399,46 @@ msgstr "Kelabu Atas dan Bawah"
 msgid "File to open"
 msgstr "Fail hendak dibuka"
 
-#: part/KWOdfLoader.cpp:90
+#: part/KWDocument.cpp:518
 #, fuzzy
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+#| msgid "Copy%1-%2"
+msgid "Copy"
+msgstr "Salin%1-%2"
 
-#: part/KWOdfLoader.cpp:102
+#: part/KWDocument.cpp:563
 #, fuzzy
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+#| msgctxt "Style name"
+#| msgid "Head 1"
+msgid "Head 1"
+msgstr "Kepala 1"
 
-#: part/KWOdfLoader.cpp:104
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
+#: part/KWDocument.cpp:569
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 2"
+msgid "Head 2"
+msgstr "Kepala 2"
+
+#: part/KWDocument.cpp:575
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 3"
+msgid "Head 3"
+msgstr "Kepala 3"
+
+#: part/KWDocument.cpp:581
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Bullet List"
+msgid "Bullet List"
+msgstr "Senarai Bulet"
+
+#: part/KWDocument.cpp:806
+msgid "Can not find needed text component, Words will quit now"
+msgstr ""
+
+#: part/KWDocument.cpp:807
+msgid "Installation Error"
 msgstr ""
 
 #: part/KWGui.cpp:74
@@ -1894,48 +1936,6 @@ msgstr "Lindungi Saiz"
 #| msgid "Even Pages Footer"
 msgid "Header & Footer"
 msgstr "Pengaki Halaman Genap"
-
-#: part/KWDocument.cpp:515
-#, fuzzy
-#| msgid "Copy%1-%2"
-msgid "Copy"
-msgstr "Salin%1-%2"
-
-#: part/KWDocument.cpp:560
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 1"
-msgid "Head 1"
-msgstr "Kepala 1"
-
-#: part/KWDocument.cpp:566
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 2"
-msgid "Head 2"
-msgstr "Kepala 2"
-
-#: part/KWDocument.cpp:572
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 3"
-msgid "Head 3"
-msgstr "Kepala 3"
-
-#: part/KWDocument.cpp:578
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Bullet List"
-msgid "Bullet List"
-msgstr "Senarai Bulet"
-
-#: part/KWDocument.cpp:803
-msgid "Can not find needed text component, Words will quit now"
-msgstr ""
-
-#: part/KWDocument.cpp:804
-msgid "Installation Error"
-msgstr ""
 
 #, fuzzy
 #~| msgid "Format"
