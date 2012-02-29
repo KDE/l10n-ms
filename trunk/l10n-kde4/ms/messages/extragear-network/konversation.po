@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-27 04:07+0100\n"
+"POT-Creation-Date: 2012-02-29 04:03+0100\n"
 "PO-Revision-Date: 2008-02-22 22:30+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -17,9 +17,9 @@ msgstr ""
 
 #: src/connectionmanager.cpp:224 src/connectionmanager.cpp:257
 #: src/connectionmanager.cpp:267 src/irc/inputfilter.cpp:1316
-#: src/irc/server.cpp:254 src/irc/server.cpp:400 src/irc/server.cpp:459
-#: src/irc/server.cpp:623 src/irc/server.cpp:634 src/irc/server.cpp:900
-#: src/irc/server.cpp:930 src/irc/outputfilter.cpp:2037
+#: src/irc/outputfilter.cpp:2037 src/irc/server.cpp:254 src/irc/server.cpp:400
+#: src/irc/server.cpp:459 src/irc/server.cpp:623 src/irc/server.cpp:634
+#: src/irc/server.cpp:900 src/irc/server.cpp:930
 #, fuzzy
 msgid "Info"
 msgstr "Pusat Maklumat"
@@ -50,12 +50,12 @@ msgstr[1] "Sambung ke komputer jauh"
 #: src/irc/inputfilter.cpp:2013 src/irc/inputfilter.cpp:2023
 #: src/irc/inputfilter.cpp:2060 src/irc/inputfilter.cpp:2068
 #: src/irc/inputfilter.cpp:2076 src/irc/inputfilter.cpp:2100
+#: src/irc/outputfilterresolvejob.cpp:85 src/irc/outputfilter.cpp:2046
 #: src/irc/server.cpp:719 src/irc/server.cpp:2088 src/irc/server.cpp:2159
 #: src/irc/server.cpp:2332 src/irc/server.cpp:2368 src/irc/server.cpp:2419
 #: src/irc/server.cpp:2487 src/irc/server.cpp:2506 src/irc/server.cpp:2522
 #: src/irc/server.cpp:3987 src/irc/server.cpp:3999 src/irc/server.cpp:4023
 #: src/irc/server.cpp:4046 src/irc/server.cpp:4062
-#: src/irc/outputfilterresolvejob.cpp:85 src/irc/outputfilter.cpp:2046
 #: src/linkaddressbook/addressbook.cpp:113
 msgid "Error"
 msgstr ""
@@ -163,7 +163,7 @@ msgstr "(tiada cadangan ejaan)"
 msgid "user limit"
 msgstr "Antaramuka Pengguna"
 
-#: src/main.cpp:37 src/viewer/trayicon.cpp:23
+#: src/main.cpp:37 src/viewer/trayicon.cpp:24
 msgid "Konversation"
 msgstr ""
 
@@ -1964,8 +1964,8 @@ msgstr ""
 #: src/irc/inputfilter.cpp:504 src/irc/inputfilter.cpp:569
 #: src/irc/inputfilter.cpp:574 src/irc/inputfilter.cpp:597
 #: src/irc/inputfilter.cpp:761 src/irc/inputfilter.cpp:1308
-#: src/irc/server.cpp:4029 src/irc/server.cpp:4058
 #: src/irc/outputfilter.cpp:666 src/irc/outputfilter.cpp:902
+#: src/irc/server.cpp:4029 src/irc/server.cpp:4058
 #: src/viewer/ignorelistviewitem.cpp:44 rc.cpp:325
 #, fuzzy
 msgid "Notice"
@@ -2218,10 +2218,9 @@ msgstr "Sunting Footer pada halaman semasa"
 
 #. i18n: file: src/identitydialog.ui:250
 #. i18n: ectx: attribute (title), widget (QWidget, awayWidget)
-#: src/irc/inputfilter.cpp:1366 src/irc/server.cpp:3800
-#: src/irc/server.cpp:3802 src/irc/server.cpp:3827 src/irc/server.cpp:3836
-#: src/irc/nicksonline.cpp:247 src/linkaddressbook/addressbook.cpp:109
-#: rc.cpp:1559
+#: src/irc/inputfilter.cpp:1366 src/irc/nicksonline.cpp:247
+#: src/irc/server.cpp:3800 src/irc/server.cpp:3802 src/irc/server.cpp:3827
+#: src/irc/server.cpp:3836 src/linkaddressbook/addressbook.cpp:109 rc.cpp:1559
 msgid "Away"
 msgstr ""
 
@@ -2574,307 +2573,6 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Do you really want to delete %1?"
 msgstr "Adakah anda pasti untuk menggantung ke cakera?"
-
-#: src/irc/server.cpp:402 src/irc/server.cpp:412
-msgid "Warning"
-msgstr ""
-
-#: src/irc/server.cpp:459
-#, fuzzy, kde-format
-msgid "Looking for server %1 (port <numid>%2</numid>)..."
-msgstr "Pelayan Nama DNS"
-
-#: src/irc/server.cpp:623
-#, fuzzy
-msgid "Server found, connecting..."
-msgstr "Fail %s tidak dijumpai"
-
-#: src/irc/server.cpp:634
-#, fuzzy
-msgid "Connected; logging in..."
-msgstr "&Dalam pelayar web"
-
-#: src/irc/server.cpp:693 src/irc/server.cpp:790
-#, fuzzy
-msgid "SSL Connection Error"
-msgstr "Ralat mengira nilai!"
-
-#: src/irc/server.cpp:694
-#, kde-format
-msgid ""
-"Connection to server %1 (port <numid>%2</numid>) lost while waiting for user "
-"response to an SSL error. Will automatically reconnect if error is ignored."
-msgstr ""
-
-#: src/irc/server.cpp:714
-#, fuzzy, kde-format
-msgid "Connection to server %1 (port <numid>%2</numid>) lost: %3."
-msgstr "Gagal untuk mencari seksyen: %s"
-
-#: src/irc/server.cpp:751
-#, fuzzy, kde-format
-msgid ""
-"The SSL certificate for the server %1 (port <numid>%2</numid>) failed the "
-"authenticity check."
-msgstr "Gagal untuk mencari seksyen: %s"
-
-#: src/irc/server.cpp:755
-#, fuzzy
-msgid "SSL Connection Warning"
-msgstr "Ralat mengira nilai!"
-
-#: src/irc/server.cpp:785
-#, kde-format
-msgid ""
-"Could not connect to %1 (port <numid>%2</numid>) using SSL encryption. "
-"Either the server does not support SSL (did you use the correct port?) or "
-"you rejected the certificate. %3"
-msgstr ""
-
-#: src/irc/server.cpp:900
-msgid "Delayed connect aborted."
-msgstr ""
-
-#: src/irc/server.cpp:930
-#, fuzzy, kde-format
-msgid "Disconnected from %1 (port <numid>%2</numid>)."
-msgstr "Pelayan Nama DNS"
-
-#: src/irc/server.cpp:1102
-#, kde-format
-msgid ""
-"No nicknames from the \"%1\" identity were accepted by the connection "
-"\"%2\".\n"
-"Please enter a new one or press Cancel to disconnect:"
-msgstr ""
-
-#: src/irc/server.cpp:1103
-#, fuzzy
-msgid "Nickname error"
-msgstr "Ralat KMail"
-
-#: src/irc/server.cpp:1566 src/irc/server.cpp:3550 src/irc/server.cpp:3555
-#: src/application.cpp:357
-msgid "D-Bus"
-msgstr ""
-
-#: src/irc/server.cpp:1916
-#, fuzzy, kde-format
-msgid "Select File(s) to Send to %1"
-msgstr "Hantar emel ke senarai"
-
-#: src/irc/server.cpp:2089
-#, kde-format
-msgctxt "%1=nickname"
-msgid "Received invalid DCC SEND request from %1."
-msgstr ""
-
-#: src/irc/server.cpp:2124 src/irc/server.cpp:2254 src/irc/server.cpp:2266
-#: src/irc/server.cpp:2415 src/irc/server.cpp:2471 src/irc/server.cpp:2580
-#, fuzzy
-msgid "unknown size"
-msgstr "% dari saiz normal"
-
-#: src/irc/server.cpp:2121
-#, fuzzy, kde-format
-msgid "%1 offers to send you \"%2\" (%3)..."
-msgstr "Hantar emel ke senarai"
-
-#: src/irc/server.cpp:2160
-#, kde-format
-msgctxt "%1=nickname"
-msgid "Received invalid DCC CHAT request from %1."
-msgstr ""
-
-#: src/irc/server.cpp:2251
-#, kde-format
-msgid "Asking %1 to accept upload of \"%2\" (%3)..."
-msgstr ""
-
-#: src/irc/server.cpp:2263
-#, kde-format
-msgid "Asking %1 to accept passive upload of \"%2\" (%3)..."
-msgstr ""
-
-#: src/irc/server.cpp:2275
-#, kde-format
-msgctxt "%1=name, %2=dcc extension, chat or wboard for example"
-msgid "Asking %1 to accept %2..."
-msgstr ""
-
-#: src/irc/server.cpp:2334
-#, kde-format
-msgctxt "%1 = nickname"
-msgid "Received invalid passive DCC chat acceptance message from %1."
-msgstr ""
-
-#: src/irc/server.cpp:2370
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname"
-msgid ""
-"Received invalid passive DCC send acceptance message for \"%1\" from %2."
-msgstr ""
-
-#: src/irc/server.cpp:2411
-#, kde-format
-msgctxt ""
-"%1 = file name, %2 = nickname of sender, %3 = percentage of file size, %4 = "
-"file size"
-msgid "Resuming download of \"%1\" from %2 starting at %3% of %4..."
-msgstr ""
-
-#: src/irc/server.cpp:2421
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname"
-msgid "Received invalid resume acceptance message for \"%1\" from %2."
-msgstr ""
-
-#: src/irc/server.cpp:2467
-#, kde-format
-msgctxt ""
-"%1 = file name, %2 = nickname of recipient, %3 = percentage of file size, %4 "
-"= file size"
-msgid "Resuming upload of \"%1\" to %2 starting at %3% of %4..."
-msgstr ""
-
-#: src/irc/server.cpp:2489
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname"
-msgid "Received invalid resume request for \"%1\" from %2."
-msgstr ""
-
-#: src/irc/server.cpp:2508
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname"
-msgid "Received invalid reject request for \"%1\" from %2."
-msgstr ""
-
-#: src/irc/server.cpp:2524
-#, kde-format
-msgctxt "%1 = nickname"
-msgid "Received invalid reject request from %1."
-msgstr ""
-
-#: src/irc/server.cpp:2537
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname of sender"
-msgid "Download of \"%1\" from %2 finished."
-msgstr ""
-
-#: src/irc/server.cpp:2542
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname of sender"
-msgid "Download of \"%1\" from %2 failed. Reason: %3."
-msgstr ""
-
-#: src/irc/server.cpp:2554
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname of recipient"
-msgid "Upload of \"%1\" to %2 finished."
-msgstr ""
-
-#: src/irc/server.cpp:2557
-#, kde-format
-msgctxt "%1 = file name, %2 = nickname of recipient"
-msgid "Upload of \"%1\" to %2 failed. Reason: %3."
-msgstr ""
-
-#: src/irc/server.cpp:2571
-#, kde-format
-msgctxt "%1 = file name, %2 nickname of recipient"
-msgid "Sending \"%1\" to %2..."
-msgstr ""
-
-#: src/irc/server.cpp:2578
-#, kde-format
-msgctxt "%1 = file name, %2 = file size, %3 = nickname of sender"
-msgid "Downloading \"%1\" (%2) from %3..."
-msgstr ""
-
-#: src/irc/server.cpp:2889 src/irc/server.cpp:2906
-#: src/irc/outputfilter.cpp:1318
-msgid "Notify"
-msgstr ""
-
-#: src/irc/server.cpp:2889 src/notificationhandler.cpp:308
-#, fuzzy, kde-format
-msgid "%1 is online (%2)."
-msgstr "Kamus Talian"
-
-#: src/irc/server.cpp:2906 src/notificationhandler.cpp:322
-#, kde-format
-msgid "%1 went offline (%2)."
-msgstr ""
-
-#: src/irc/server.cpp:3550
-#, kde-format
-msgid "Error: Could not find script \"%1\"."
-msgstr ""
-
-#: src/irc/server.cpp:3555
-#, kde-format
-msgid "Error: Could not execute script \"%1\". Check file permissions."
-msgstr ""
-
-#: src/irc/server.cpp:3769
-msgid "Gone away for now"
-msgstr ""
-
-#: src/irc/server.cpp:3800
-#, kde-format
-msgid "You are now marked as being away (reason: %1)."
-msgstr ""
-
-#: src/irc/server.cpp:3802
-msgid "You are now marked as being away."
-msgstr ""
-
-#: src/irc/server.cpp:3827
-msgid "You are no longer marked as being away."
-msgstr ""
-
-#: src/irc/server.cpp:3836
-msgid "You are not marked as being away."
-msgstr ""
-
-#: src/irc/server.cpp:3987
-#, kde-format
-msgid "Failed to initiate key exchange with %1."
-msgstr ""
-
-#: src/irc/server.cpp:3999
-#, kde-format
-msgid "Unable to perform key exchange with %1."
-msgstr ""
-
-#: src/irc/server.cpp:4023
-#, kde-format
-msgid "Failed to parse the DH1080_INIT of %1. Key exchange failed."
-msgstr ""
-
-#: src/irc/server.cpp:4029
-#, kde-format
-msgid ""
-"Your key is set and your messages will now be encrypted, sending "
-"DH1080_FINISH to %1."
-msgstr ""
-
-#: src/irc/server.cpp:4046
-#, kde-format
-msgid "Unable to complete key exchange with %1."
-msgstr ""
-
-#: src/irc/server.cpp:4058
-#, kde-format
-msgid ""
-"Successfully parsed DH1080_FINISH sent by %1. Your key is set and your "
-"messages will now be encrypted."
-msgstr ""
-
-#: src/irc/server.cpp:4062
-#, kde-format
-msgid "Failed to parse DH1080_FINISH sent by %1. Key exchange failed."
-msgstr ""
 
 #: src/irc/outputfilterresolvejob.cpp:83
 #, fuzzy, kde-format
@@ -3879,6 +3577,11 @@ msgctxt "%1 = Comma-separated list of nicknames"
 msgid "Current notify list: %1."
 msgstr "Label Senarai Semasa"
 
+#: src/irc/outputfilter.cpp:1318 src/irc/server.cpp:2889
+#: src/irc/server.cpp:2906
+msgid "Notify"
+msgstr ""
+
 #: src/irc/outputfilter.cpp:1334
 msgid "Enter username and password for IRC operator privileges:"
 msgstr ""
@@ -4500,6 +4203,302 @@ msgstr "Tutup dokumen"
 msgid "%1 has left this server (%2)."
 msgstr ""
 
+#: src/irc/server.cpp:402 src/irc/server.cpp:412
+msgid "Warning"
+msgstr ""
+
+#: src/irc/server.cpp:459
+#, fuzzy, kde-format
+msgid "Looking for server %1 (port <numid>%2</numid>)..."
+msgstr "Pelayan Nama DNS"
+
+#: src/irc/server.cpp:623
+#, fuzzy
+msgid "Server found, connecting..."
+msgstr "Fail %s tidak dijumpai"
+
+#: src/irc/server.cpp:634
+#, fuzzy
+msgid "Connected; logging in..."
+msgstr "&Dalam pelayar web"
+
+#: src/irc/server.cpp:693 src/irc/server.cpp:790
+#, fuzzy
+msgid "SSL Connection Error"
+msgstr "Ralat mengira nilai!"
+
+#: src/irc/server.cpp:694
+#, kde-format
+msgid ""
+"Connection to server %1 (port <numid>%2</numid>) lost while waiting for user "
+"response to an SSL error. Will automatically reconnect if error is ignored."
+msgstr ""
+
+#: src/irc/server.cpp:714
+#, fuzzy, kde-format
+msgid "Connection to server %1 (port <numid>%2</numid>) lost: %3."
+msgstr "Gagal untuk mencari seksyen: %s"
+
+#: src/irc/server.cpp:751
+#, fuzzy, kde-format
+msgid ""
+"The SSL certificate for the server %1 (port <numid>%2</numid>) failed the "
+"authenticity check."
+msgstr "Gagal untuk mencari seksyen: %s"
+
+#: src/irc/server.cpp:755
+#, fuzzy
+msgid "SSL Connection Warning"
+msgstr "Ralat mengira nilai!"
+
+#: src/irc/server.cpp:785
+#, kde-format
+msgid ""
+"Could not connect to %1 (port <numid>%2</numid>) using SSL encryption. "
+"Either the server does not support SSL (did you use the correct port?) or "
+"you rejected the certificate. %3"
+msgstr ""
+
+#: src/irc/server.cpp:900
+msgid "Delayed connect aborted."
+msgstr ""
+
+#: src/irc/server.cpp:930
+#, fuzzy, kde-format
+msgid "Disconnected from %1 (port <numid>%2</numid>)."
+msgstr "Pelayan Nama DNS"
+
+#: src/irc/server.cpp:1102
+#, kde-format
+msgid ""
+"No nicknames from the \"%1\" identity were accepted by the connection "
+"\"%2\".\n"
+"Please enter a new one or press Cancel to disconnect:"
+msgstr ""
+
+#: src/irc/server.cpp:1103
+#, fuzzy
+msgid "Nickname error"
+msgstr "Ralat KMail"
+
+#: src/irc/server.cpp:1566 src/irc/server.cpp:3550 src/irc/server.cpp:3555
+#: src/application.cpp:357
+msgid "D-Bus"
+msgstr ""
+
+#: src/irc/server.cpp:1916
+#, fuzzy, kde-format
+msgid "Select File(s) to Send to %1"
+msgstr "Hantar emel ke senarai"
+
+#: src/irc/server.cpp:2089
+#, kde-format
+msgctxt "%1=nickname"
+msgid "Received invalid DCC SEND request from %1."
+msgstr ""
+
+#: src/irc/server.cpp:2124 src/irc/server.cpp:2254 src/irc/server.cpp:2266
+#: src/irc/server.cpp:2415 src/irc/server.cpp:2471 src/irc/server.cpp:2580
+#, fuzzy
+msgid "unknown size"
+msgstr "% dari saiz normal"
+
+#: src/irc/server.cpp:2121
+#, fuzzy, kde-format
+msgid "%1 offers to send you \"%2\" (%3)..."
+msgstr "Hantar emel ke senarai"
+
+#: src/irc/server.cpp:2160
+#, kde-format
+msgctxt "%1=nickname"
+msgid "Received invalid DCC CHAT request from %1."
+msgstr ""
+
+#: src/irc/server.cpp:2251
+#, kde-format
+msgid "Asking %1 to accept upload of \"%2\" (%3)..."
+msgstr ""
+
+#: src/irc/server.cpp:2263
+#, kde-format
+msgid "Asking %1 to accept passive upload of \"%2\" (%3)..."
+msgstr ""
+
+#: src/irc/server.cpp:2275
+#, kde-format
+msgctxt "%1=name, %2=dcc extension, chat or wboard for example"
+msgid "Asking %1 to accept %2..."
+msgstr ""
+
+#: src/irc/server.cpp:2334
+#, kde-format
+msgctxt "%1 = nickname"
+msgid "Received invalid passive DCC chat acceptance message from %1."
+msgstr ""
+
+#: src/irc/server.cpp:2370
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname"
+msgid ""
+"Received invalid passive DCC send acceptance message for \"%1\" from %2."
+msgstr ""
+
+#: src/irc/server.cpp:2411
+#, kde-format
+msgctxt ""
+"%1 = file name, %2 = nickname of sender, %3 = percentage of file size, %4 = "
+"file size"
+msgid "Resuming download of \"%1\" from %2 starting at %3% of %4..."
+msgstr ""
+
+#: src/irc/server.cpp:2421
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname"
+msgid "Received invalid resume acceptance message for \"%1\" from %2."
+msgstr ""
+
+#: src/irc/server.cpp:2467
+#, kde-format
+msgctxt ""
+"%1 = file name, %2 = nickname of recipient, %3 = percentage of file size, %4 "
+"= file size"
+msgid "Resuming upload of \"%1\" to %2 starting at %3% of %4..."
+msgstr ""
+
+#: src/irc/server.cpp:2489
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname"
+msgid "Received invalid resume request for \"%1\" from %2."
+msgstr ""
+
+#: src/irc/server.cpp:2508
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname"
+msgid "Received invalid reject request for \"%1\" from %2."
+msgstr ""
+
+#: src/irc/server.cpp:2524
+#, kde-format
+msgctxt "%1 = nickname"
+msgid "Received invalid reject request from %1."
+msgstr ""
+
+#: src/irc/server.cpp:2537
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname of sender"
+msgid "Download of \"%1\" from %2 finished."
+msgstr ""
+
+#: src/irc/server.cpp:2542
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname of sender"
+msgid "Download of \"%1\" from %2 failed. Reason: %3."
+msgstr ""
+
+#: src/irc/server.cpp:2554
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname of recipient"
+msgid "Upload of \"%1\" to %2 finished."
+msgstr ""
+
+#: src/irc/server.cpp:2557
+#, kde-format
+msgctxt "%1 = file name, %2 = nickname of recipient"
+msgid "Upload of \"%1\" to %2 failed. Reason: %3."
+msgstr ""
+
+#: src/irc/server.cpp:2571
+#, kde-format
+msgctxt "%1 = file name, %2 nickname of recipient"
+msgid "Sending \"%1\" to %2..."
+msgstr ""
+
+#: src/irc/server.cpp:2578
+#, kde-format
+msgctxt "%1 = file name, %2 = file size, %3 = nickname of sender"
+msgid "Downloading \"%1\" (%2) from %3..."
+msgstr ""
+
+#: src/irc/server.cpp:2889 src/notificationhandler.cpp:308
+#, fuzzy, kde-format
+msgid "%1 is online (%2)."
+msgstr "Kamus Talian"
+
+#: src/irc/server.cpp:2906 src/notificationhandler.cpp:322
+#, kde-format
+msgid "%1 went offline (%2)."
+msgstr ""
+
+#: src/irc/server.cpp:3550
+#, kde-format
+msgid "Error: Could not find script \"%1\"."
+msgstr ""
+
+#: src/irc/server.cpp:3555
+#, kde-format
+msgid "Error: Could not execute script \"%1\". Check file permissions."
+msgstr ""
+
+#: src/irc/server.cpp:3769
+msgid "Gone away for now"
+msgstr ""
+
+#: src/irc/server.cpp:3800
+#, kde-format
+msgid "You are now marked as being away (reason: %1)."
+msgstr ""
+
+#: src/irc/server.cpp:3802
+msgid "You are now marked as being away."
+msgstr ""
+
+#: src/irc/server.cpp:3827
+msgid "You are no longer marked as being away."
+msgstr ""
+
+#: src/irc/server.cpp:3836
+msgid "You are not marked as being away."
+msgstr ""
+
+#: src/irc/server.cpp:3987
+#, kde-format
+msgid "Failed to initiate key exchange with %1."
+msgstr ""
+
+#: src/irc/server.cpp:3999
+#, kde-format
+msgid "Unable to perform key exchange with %1."
+msgstr ""
+
+#: src/irc/server.cpp:4023
+#, kde-format
+msgid "Failed to parse the DH1080_INIT of %1. Key exchange failed."
+msgstr ""
+
+#: src/irc/server.cpp:4029
+#, kde-format
+msgid ""
+"Your key is set and your messages will now be encrypted, sending "
+"DH1080_FINISH to %1."
+msgstr ""
+
+#: src/irc/server.cpp:4046
+#, kde-format
+msgid "Unable to complete key exchange with %1."
+msgstr ""
+
+#: src/irc/server.cpp:4058
+#, kde-format
+msgid ""
+"Successfully parsed DH1080_FINISH sent by %1. Your key is set and your "
+"messages will now be encrypted."
+msgstr ""
+
+#: src/irc/server.cpp:4062
+#, kde-format
+msgid "Failed to parse DH1080_FINISH sent by %1. Key exchange failed."
+msgstr ""
+
 #: src/linkaddressbook/addressbook.cpp:105
 msgid "Offline"
 msgstr ""
@@ -4891,6 +4890,11 @@ msgstr "Wizard Folder Rangkaian"
 msgid "Raw Log"
 msgstr "Log Sistem"
 
+#: src/viewer/trayicon.cpp:24
+#, fuzzy
+msgid "Konversation - IRC Client"
+msgstr "Klien Pelayan Terminal"
+
 #: src/viewer/editnotifydialog.cpp:31
 #, fuzzy
 msgid "Edit Watched Nickname"
@@ -4965,11 +4969,6 @@ msgstr "&Kelip kursor"
 #, kde-format
 msgid "Join the channel %1"
 msgstr ""
-
-#: src/viewer/trayicon.cpp:23
-#, fuzzy
-msgid "Konversation - IRC Client"
-msgstr "Klien Pelayan Terminal"
 
 #: src/viewer/irccontextmenus.cpp:112
 msgid "Copy Link Address"
