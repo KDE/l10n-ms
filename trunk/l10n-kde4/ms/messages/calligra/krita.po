@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-27 02:57+0100\n"
+"POT-Creation-Date: 2012-03-01 02:40+0100\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1331,7 +1331,7 @@ msgstr "Cipta lapisan baru"
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:499
+#: rc.cpp:80 ui/kis_view2.cpp:500
 #, fuzzy
 msgid "Cancel"
 msgstr "Saluran"
@@ -10851,7 +10851,7 @@ msgstr "&Ubah Jenis Imej..."
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:873 ui/kis_layer_manager.cc:698
+#: image/kis_image.cc:873 ui/kis_layer_manager.cc:721
 msgid "Flatten Image"
 msgstr "Imej Rata"
 
@@ -11419,7 +11419,7 @@ msgid "&Duplicate Layer or Mask"
 msgstr "Duplikasi"
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:391
-#: ui/kis_layer_manager.cc:140
+#: ui/kis_layer_manager.cc:141
 #, fuzzy
 msgid "&Merge with Layer Below"
 msgstr "&Cantum Lapisan"
@@ -11802,7 +11802,7 @@ msgid "Rotate Layer 90° to the Left"
 msgstr "Putar Lapisan"
 
 #: plugins/extensions/rotateimage/rotateimage.cc:151
-#: ui/kis_layer_manager.cc:654
+#: ui/kis_layer_manager.cc:677
 msgid "Rotate Layer"
 msgstr "Putar Lapisan"
 
@@ -11860,7 +11860,7 @@ msgid "Separate Image"
 msgstr "Ricik Imej"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:242
-#: ui/kis_layer_manager.cc:793
+#: ui/kis_layer_manager.cc:816
 msgid "Export Layer"
 msgstr "Eksport Lapisan"
 
@@ -12356,7 +12356,6 @@ msgstr "Pilihan geometri"
 #: plugins/formats/jp2/jp2_converter.cc:342
 #: plugins/formats/jp2/jp2_converter.cc:353
 #: plugins/formats/jpeg/kis_jpeg_converter.cc:96
-#: plugins/formats/ppm/kis_ppm_export.cpp:193
 #: plugins/formats/tiff/kis_tiff_writer_visitor.cpp:65
 #: ui/kis_png_converter.cpp:80
 #, kde-format
@@ -12398,7 +12397,7 @@ msgstr "Imej %1"
 msgid "PNG Export Options"
 msgstr "Pilihan geometri"
 
-#: plugins/formats/ppm/kis_ppm_export.cpp:152
+#: plugins/formats/ppm/kis_ppm_export.cpp:154
 #, fuzzy
 msgid "PPM Export Options"
 msgstr "Pilihan geometri"
@@ -14115,6 +14114,10 @@ msgstr ""
 msgid "Image Properties"
 msgstr "Ciri Imej"
 
+#: ui/dialogs/kis_dlg_layer_properties.cc:78
+msgid "Layer Properties"
+msgstr "Ciri Lapisan"
+
 #: ui/dialogs/kis_dlg_preferences.cc:91
 #, fuzzy
 msgid "Small Circle"
@@ -14155,19 +14158,7 @@ msgstr "Seting Warna"
 msgid "Tablet"
 msgstr "biru"
 
-#: ui/dialogs/kis_dlg_preferences.cc:612
-#, fuzzy
-#| msgid "Color Settings"
-msgid "Canvas-only settings"
-msgstr "Seting Warna"
-
-#: ui/dialogs/kis_dlg_preferences.cc:613
-#, fuzzy
-#| msgid "Canvas color:"
-msgid "Canvas-only"
-msgstr "Warna kanvas:"
-
-#: ui/dialogs/kis_dlg_preferences.cc:704
+#: ui/dialogs/kis_dlg_preferences.cc:705
 msgid ""
 "You are trying to enable OpenGL\n"
 "\n"
@@ -14177,14 +14168,10 @@ msgid ""
 "Are you sure you want to enable OpenGL?\n"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_preferences.cc:707 ui/kis_aboutdata.h:31
+#: ui/dialogs/kis_dlg_preferences.cc:708 ui/kis_aboutdata.h:31
 #: ui/kis_clipboard.cc:155
 msgid "Krita"
 msgstr "Krita"
-
-#: ui/dialogs/kis_dlg_layer_properties.cc:78
-msgid "Layer Properties"
-msgstr "Ciri Lapisan"
 
 #: ui/flake/kis_shape_controller.cpp:169
 #, fuzzy, kde-format
@@ -14588,79 +14575,91 @@ msgstr "Ciri Lapisan"
 msgid "Import Image"
 msgstr "Import Imej"
 
-#: ui/kis_layer_manager.cc:135
+#: ui/kis_layer_manager.cc:136
 #, fuzzy
 msgid "&Flatten image"
 msgstr "Imej Rata"
 
-#: ui/kis_layer_manager.cc:145
+#: ui/kis_layer_manager.cc:146
 #, fuzzy
 msgid "&Flatten Layer"
 msgstr "Penapis"
 
-#: ui/kis_layer_manager.cc:149 ui/kis_layer_manager.cc:765
+#: ui/kis_layer_manager.cc:150 ui/kis_layer_manager.cc:788
 #, fuzzy
 #| msgid "Rotate Layer"
 msgid "Rasterize Layer"
 msgstr "Putar Lapisan"
 
-#: ui/kis_layer_manager.cc:153
+#: ui/kis_layer_manager.cc:154
 msgid "Save Layer as Image..."
 msgstr "Simpan Lapisan sebagai Imej..."
 
-#: ui/kis_layer_manager.cc:157
+#: ui/kis_layer_manager.cc:158
 #, fuzzy
 msgid "Size Canvas to Size of Current Layer"
 msgstr "Besarkan Imej ke Saiz Lapisan Semasa"
 
-#: ui/kis_layer_manager.cc:223
+#: ui/kis_layer_manager.cc:224
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Filter Layer Properties"
 msgstr "Ciri Lapisan"
 
-#: ui/kis_layer_manager.cc:252
+#: ui/kis_layer_manager.cc:253
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Generator Layer Properties"
 msgstr "Ciri Lapisan"
 
-#: ui/kis_layer_manager.cc:303 ui/kis_layer_manager.cc:317
-#: ui/kis_layer_manager.cc:358 ui/kis_layer_manager.cc:389
-#: ui/kis_layer_manager.cc:512
+#: ui/kis_layer_manager.cc:304 ui/kis_layer_manager.cc:318
+#: ui/kis_layer_manager.cc:359 ui/kis_layer_manager.cc:390
+#: ui/kis_layer_manager.cc:513
 msgid "Could not add layer to image."
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: ui/kis_layer_manager.cc:303 ui/kis_layer_manager.cc:317
-#: ui/kis_layer_manager.cc:358 ui/kis_layer_manager.cc:389
-#: ui/kis_layer_manager.cc:512
+#: ui/kis_layer_manager.cc:304 ui/kis_layer_manager.cc:318
+#: ui/kis_layer_manager.cc:359 ui/kis_layer_manager.cc:390
+#: ui/kis_layer_manager.cc:513
 msgid "Layer Error"
 msgstr "Ralat Lapisan"
 
-#: ui/kis_layer_manager.cc:413
+#: ui/kis_layer_manager.cc:414
 #, fuzzy
 #| msgid "Filters"
 msgid "New Filter Layer"
 msgstr "Penapis"
 
-#: ui/kis_layer_manager.cc:574 ui/kis_layer_manager.cc:584
+#: ui/kis_layer_manager.cc:573 ui/kis_layer_manager.cc:583
 msgid "Mirror Layer X"
 msgstr "Cermin Lapisan X"
 
-#: ui/kis_layer_manager.cc:601 ui/kis_layer_manager.cc:611
+#: ui/kis_layer_manager.cc:595 ui/kis_mask_manager.cc:287
+#, fuzzy
+#| msgid "Mirror Layer X"
+msgid "Mirror Mask X"
+msgstr "Cermin Lapisan X"
+
+#: ui/kis_layer_manager.cc:611 ui/kis_layer_manager.cc:621
 #: ui/kis_mask_manager.cc:309
 msgid "Mirror Layer Y"
 msgstr "Cermin Lapisan Y"
 
 #: ui/kis_layer_manager.cc:633
+#, fuzzy
+#| msgid "Mirror Layer X"
+msgid "Mirror Mask Y"
+msgstr "Cermin Lapisan X"
+
+#: ui/kis_layer_manager.cc:656
 msgid "Scale Layer"
 msgstr "Skalakan Lapisan"
 
-#: ui/kis_layer_manager.cc:697
+#: ui/kis_layer_manager.cc:720
 msgid "The image contains hidden layers that will be lost."
 msgstr "Imej mengandungi lapisan tersembunyi yang akan hilang."
 
-#: ui/kis_layer_manager.cc:699
+#: ui/kis_layer_manager.cc:722
 #, fuzzy
 msgid "&Flatten Image"
 msgstr "Imej Rata"
@@ -14713,12 +14712,6 @@ msgstr "Cipta lapisan baru"
 #| msgid "Duplicate of '%1'"
 msgid "Duplication of "
 msgstr "Duplikasikan '%1'"
-
-#: ui/kis_mask_manager.cc:287
-#, fuzzy
-#| msgid "Mirror Layer X"
-msgid "Mirror Mask X"
-msgstr "Cermin Lapisan X"
 
 #: ui/kis_mask_manager.cc:334
 #, fuzzy
@@ -14912,17 +14905,17 @@ msgstr "Salin Pemilihan ke Lapisan Baru"
 msgid "Cut Selection to New Layer"
 msgstr "Salin Pemilihan ke Lapisan Baru"
 
-#: ui/kis_selection_manager.cc:176 ui/kis_selection_manager.cc:584
+#: ui/kis_selection_manager.cc:176 ui/kis_selection_manager.cc:588
 #, fuzzy
 msgid "Fill with Foreground Color"
 msgstr "Pilih Warna Latar Depan..."
 
-#: ui/kis_selection_manager.cc:181 ui/kis_selection_manager.cc:589
+#: ui/kis_selection_manager.cc:181 ui/kis_selection_manager.cc:593
 #, fuzzy
 msgid "Fill with Background Color"
 msgstr "Pilih Warna Latar Belakang ..."
 
-#: ui/kis_selection_manager.cc:186 ui/kis_selection_manager.cc:594
+#: ui/kis_selection_manager.cc:186 ui/kis_selection_manager.cc:598
 msgid "Fill with Pattern"
 msgstr ""
 
@@ -14940,22 +14933,22 @@ msgstr "Rata..."
 msgid "Size Canvas to Size of Selection"
 msgstr "Besarkan Imej ke Saiz Lapisan Semasa"
 
-#: ui/kis_selection_manager.cc:363
+#: ui/kis_selection_manager.cc:367
 #, fuzzy
 msgid "Cut"
 msgstr "&Biasa:"
 
-#: ui/kis_selection_manager.cc:437
+#: ui/kis_selection_manager.cc:441
 msgid "(pasted)"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:472
+#: ui/kis_selection_manager.cc:476
 #, fuzzy
 #| msgid "Pastels"
 msgid "Pasted"
 msgstr "Pastel"
 
-#: ui/kis_selection_manager.cc:496
+#: ui/kis_selection_manager.cc:500
 #, fuzzy
 msgid "Select All"
 msgstr "&Pilih Semua"
@@ -15053,46 +15046,34 @@ msgstr ""
 msgid "Shows or hides the status bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:323
-msgid "Show Canvas Only"
-msgstr ""
-
-#: ui/kis_view2.cpp:324
-msgid "Return to Window"
-msgstr ""
-
-#: ui/kis_view2.cpp:325
-msgid "Shows just the canvas or the whole window"
-msgstr ""
-
-#: ui/kis_view2.cpp:452
+#: ui/kis_view2.cpp:453
 #, fuzzy
 #| msgid "&Layer"
 msgid "Pasted Layer"
 msgstr "&Lapisan"
 
-#: ui/kis_view2.cpp:490
+#: ui/kis_view2.cpp:491
 msgid "Insert as New Layer"
 msgstr "Selitkan sebagai Lapisan Baru"
 
-#: ui/kis_view2.cpp:491
+#: ui/kis_view2.cpp:492
 msgid "Insert as New Layers"
 msgstr "Selitkan sebagai Lapisan Baru"
 
-#: ui/kis_view2.cpp:493
+#: ui/kis_view2.cpp:494
 msgid "Open in New Document"
 msgstr "Buka dalam Dokumen Baru"
 
-#: ui/kis_view2.cpp:494
+#: ui/kis_view2.cpp:495
 msgid "Open in New Documents"
 msgstr "Buka dalam Dokumen Baru"
 
-#: ui/kis_view2.cpp:710
+#: ui/kis_view2.cpp:711
 #, fuzzy
 msgid "Edit Palette..."
 msgstr "Pelet"
 
-#: ui/kis_view2.cpp:838 ui/kis_view2.cpp:841
+#: ui/kis_view2.cpp:839 ui/kis_view2.cpp:842
 #, fuzzy
 msgid "Edit Palette"
 msgstr "Pelet"
@@ -15280,6 +15261,16 @@ msgstr "Ruang &warna:"
 #: main.cc:50
 msgid "File(s) or URL(s) to open"
 msgstr "Fail atau URL hendak dibuka"
+
+#, fuzzy
+#~| msgid "Color Settings"
+#~ msgid "Canvas-only settings"
+#~ msgstr "Seting Warna"
+
+#, fuzzy
+#~| msgid "Canvas color:"
+#~ msgid "Canvas-only"
+#~ msgstr "Warna kanvas:"
 
 #, fuzzy
 #~| msgid "Apply Profile"
