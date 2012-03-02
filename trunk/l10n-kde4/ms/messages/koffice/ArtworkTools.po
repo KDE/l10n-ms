@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-14 04:28+0200\n"
+"POT-Creation-Date: 2012-03-02 05:07+0100\n"
 "PO-Revision-Date: 2005-09-29 17:00-0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -39,7 +39,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: file: ../../ui/ArtworkPatternOptionsWidget.ui:73
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:12 rc.cpp:21 filterEffectTool/ArtworkFilterEffectsTool.cpp:462
+#: rc.cpp:12 rc.cpp:21
 msgid "X:"
 msgstr "X:"
 
@@ -68,7 +68,7 @@ msgstr "Corak"
 
 #. i18n: file: ../../ui/ArtworkPatternOptionsWidget.ui:100
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:30 filterEffectTool/ArtworkFilterEffectsTool.cpp:474
+#: rc.cpp:30
 msgid "W:"
 msgstr "W:"
 
@@ -232,9 +232,10 @@ msgstr ""
 #: CalligraphyTool/ArtworkCalligraphyOptionWidget.cpp:200
 #: CalligraphyTool/ArtworkCalligraphyOptionWidget.cpp:224
 #, fuzzy
-#| msgid "Curve"
-msgid "Current"
-msgstr "Lengkung"
+#| msgid "Delete Objects"
+msgctxt "Current"
+msgid "Profile selected now"
+msgstr "Hapuskan Objek"
 
 #: CalligraphyTool/ArtworkCalligraphyOptionWidget.cpp:217
 msgid "Profile name"
@@ -307,6 +308,17 @@ msgstr ""
 msgid "Add Filter"
 msgstr "Tambahkan Lapisan"
 
+#: filterEffectTool/ArtworkFilterEffectsTool.cpp:462
+msgctxt "X:"
+msgid "X-Coordinate"
+msgstr ""
+
+#: filterEffectTool/ArtworkFilterEffectsTool.cpp:474
+#, fuzzy
+msgctxt "W:"
+msgid "Width"
+msgstr "Lebar Coret"
+
 #: filterEffectTool/ArtworkFilterEffectsTool.cpp:486
 #, fuzzy
 #| msgid "Effects"
@@ -359,59 +371,95 @@ msgid "Set filter stack"
 msgstr "Tetapkan Lebar Garis"
 
 #: ../../ui/ArtworkPatternOptionsWidget.cpp:33
-msgid "Original"
+msgctxt "Original"
+msgid "Original Image"
 msgstr ""
 
 #: ../../ui/ArtworkPatternOptionsWidget.cpp:34
 #, fuzzy
-msgid "Tiled"
+msgctxt "Tiled"
+msgid "Tiled Image"
 msgstr "Isi"
 
 #: ../../ui/ArtworkPatternOptionsWidget.cpp:35
-msgid "Stretched"
+msgctxt "Stretched"
+msgid "Stretched Image"
 msgstr ""
 
 #: ../../ui/ArtworkPatternOptionsWidget.cpp:37
-msgid "Top Left"
+msgctxt "Top Left"
+msgid "Align to top-left corner"
 msgstr ""
 
 #: ../../ui/ArtworkPatternOptionsWidget.cpp:38
-msgid "Top"
-msgstr ""
+#, fuzzy
+#| msgid "Align Bottom"
+msgctxt "Top"
+msgid "Align to top side"
+msgstr "Jajarkan Bawah"
 
 #: ../../ui/ArtworkPatternOptionsWidget.cpp:39
-#, fuzzy
-#| msgid "Align Right"
-msgid "Top Right"
-msgstr "Jajarkan Kanan"
+msgctxt "Top Right"
+msgid "Align to top-right corner"
+msgstr ""
 
 #: ../../ui/ArtworkPatternOptionsWidget.cpp:40
-msgid "Left"
-msgstr ""
+#, fuzzy
+#| msgid "Align Left"
+msgctxt "Left"
+msgid "Align to left side"
+msgstr "Jajarkan Kiri"
 
 #: ../../ui/ArtworkPatternOptionsWidget.cpp:41
-msgid "Center"
-msgstr ""
+#, fuzzy
+#| msgid "Align Left"
+msgctxt "Center"
+msgid "Align in the center"
+msgstr "Jajarkan Kiri"
 
 #: ../../ui/ArtworkPatternOptionsWidget.cpp:42
 #, fuzzy
-#| msgid "Height:"
-msgid "Right"
-msgstr "Tinggi:"
+#| msgid "Align Left"
+msgctxt "Right"
+msgid "Align to right side"
+msgstr "Jajarkan Kiri"
 
 #: ../../ui/ArtworkPatternOptionsWidget.cpp:43
-msgid "Bottom Left"
+msgctxt "Bottom Left"
+msgid "Align to bottom-left corner"
 msgstr ""
 
 #: ../../ui/ArtworkPatternOptionsWidget.cpp:44
 #, fuzzy
 #| msgid "Align Bottom"
-msgid "Bottom"
+msgctxt "Bottom"
+msgid "Align to bottom side"
 msgstr "Jajarkan Bawah"
 
 #: ../../ui/ArtworkPatternOptionsWidget.cpp:45
-msgid "Bottom Right"
+msgctxt "Bottom Right"
+msgid "Align to bottom-right corner"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Curve"
+#~ msgid "Current"
+#~ msgstr "Lengkung"
+
+#, fuzzy
+#~| msgid "Align Right"
+#~ msgid "Top Right"
+#~ msgstr "Jajarkan Kanan"
+
+#, fuzzy
+#~| msgid "Height:"
+#~ msgid "Right"
+#~ msgstr "Tinggi:"
+
+#, fuzzy
+#~| msgid "Align Bottom"
+#~ msgid "Bottom"
+#~ msgstr "Jajarkan Bawah"
 
 #~ msgid "Edit Gradient"
 #~ msgstr "Edit Kecerunan"
@@ -666,11 +714,6 @@ msgstr ""
 #, fuzzy
 #~| msgid "Delete Objects"
 #~ msgid "Delete selected objects"
-#~ msgstr "Hapuskan Objek"
-
-#, fuzzy
-#~| msgid "Delete Objects"
-#~ msgid "Raise selected objects"
 #~ msgstr "Hapuskan Objek"
 
 #, fuzzy
@@ -982,16 +1025,8 @@ msgstr ""
 #~ msgid "Shows or hides grid"
 #~ msgstr "Paparkan atau sembunyikan grid."
 
-#~ msgid "Align Left"
-#~ msgstr "Jajarkan Kiri"
-
 #~ msgid "Align Center (Horizontal)"
 #~ msgstr "Jajarkan Ke tengah (Mendatar)"
-
-#, fuzzy
-#~| msgid "Align Left"
-#~ msgid "Align Right"
-#~ msgstr "Jajarkan Kiri"
 
 #~ msgid "Align Top"
 #~ msgstr "Jajarkan Atas"
@@ -999,11 +1034,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Align Middle (Vertical)"
 #~ msgstr "Jajarkan keTengah (Menegak)"
-
-#, fuzzy
-#~| msgid "Align Bottom"
-#~ msgid "Align Bottom"
-#~ msgstr "Jajarkan Bawah"
 
 #, fuzzy
 #~| msgid "Opacity:"
