@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-04 03:26+0100\n"
+"POT-Creation-Date: 2012-03-09 03:40+0100\n"
 "PO-Revision-Date: 2009-06-14 00:43+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1905,6 +1905,7 @@ msgid "&Edit Track Details"
 msgstr ""
 
 #: browsers/filebrowser/FileView.cpp:573
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:39
 #, fuzzy
 msgctxt "@title:window"
 msgid "Confirm Delete"
@@ -1918,7 +1919,7 @@ msgstr[0] "Anda pasti anda mahu memadam item ini?\n"
 msgstr[1] "Anda pasti anda mahu memadam item ini?\n"
 
 #: browsers/filebrowser/FileView.cpp:580
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:70
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:52
 msgctxt "@title:window"
 msgid "Confirm Move to Trash"
 msgstr ""
@@ -4461,94 +4462,6 @@ msgstr "Koleksi"
 msgid "Proxy Collection"
 msgstr "Koleksi"
 
-#: core-impl/collections/support/TrashCollectionLocation.cpp:47
-#, fuzzy
-#| msgid "Tracks"
-msgid "Trash"
-msgstr "Trek"
-
-#: core-impl/collections/support/TrashCollectionLocation.cpp:101
-#, fuzzy, kde-format
-msgid "Moving to trash: %1"
-msgstr "Ke Hadapan 5 trek"
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:40
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Do you really want to delete this track? It will be removed from your "
-"collection."
-msgid_plural ""
-"Do you really want to delete these %1 tracks? They will be removed from your "
-"collection."
-msgstr[0] ""
-msgstr[1] ""
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:45
-#, fuzzy
-#| msgid "Delete failed"
-msgid "Delete Files"
-msgstr "Gagal untuk memadam"
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:61
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Do you really want to move this track to the trash? It will be removed from "
-"your collection."
-msgid_plural ""
-"Do you really want to move these %1 tracks to the trash? They will be "
-"removed from your collection."
-msgstr[0] ""
-msgstr[1] ""
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:82
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Do you really want to move this track? It will be renamed and the original "
-"deleted."
-msgid_plural ""
-"Do you really want to move these %1 tracks? They will be renamed and the "
-"originals deleted."
-msgstr[0] ""
-msgstr[1] ""
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:87
-#, fuzzy
-msgid "Move Files"
-msgstr "&Fail Terbaru"
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:98
-#, kde-format
-msgctxt "@info"
-msgid ""
-"There was a problem and this track could not be removed. Make sure the "
-"directory is writable."
-msgid_plural ""
-"There was a problem and %1 tracks could not be removed. Make sure the "
-"directory is writable."
-msgstr[0] ""
-msgstr[1] ""
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:103
-msgid "Unable to be removed tracks"
-msgstr ""
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:110
-msgid ""
-"The collection does not have enough free space available or is not writable."
-msgstr ""
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:116
-msgid "Do you want to remove empty folders?"
-msgstr ""
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:117
-#, fuzzy
-msgid "Remove empty folders?"
-msgstr "Sains komputer"
-
 #: core-impl/collections/support/ArtistHelper.cpp:31
 msgctxt "The genre name for classical music"
 msgid "Classical"
@@ -4573,6 +4486,117 @@ msgstr ""
 #: core-impl/collections/support/TextualQueryFilter.cpp:287
 msgid "three months ago"
 msgstr ""
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:35
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Do you really want to delete this track? It will be removed from %1 and from "
+"underlying storage medium."
+msgid_plural ""
+"Do you really want to delete these %2 tracks? They will be removed from %1 "
+"and from underlying storage medium."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:48
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Do you really want to move this track to the trash? It will be removed from "
+"%1."
+msgid_plural ""
+"Do you really want to move these %2 tracks to the trash? They will be "
+"removed from %1."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:62
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Do you really want to move this track? It will be renamed and the original "
+"deleted."
+msgid_plural ""
+"Do you really want to move these %1 tracks? They will be renamed and the "
+"originals deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:66
+#, fuzzy
+msgctxt "@title:window"
+msgid "Move Files"
+msgstr "&Fail Terbaru"
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:66
+#, fuzzy
+msgctxt "rename files button"
+msgid "&Rename"
+msgstr "Nama&kan semula"
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:76
+#, kde-format
+msgctxt "@info"
+msgid ""
+"There was a problem and this track could not be removed. Make sure the "
+"directory is writable."
+msgid_plural ""
+"There was a problem and %1 tracks could not be removed. Make sure the "
+"directory is writable."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:79
+#, fuzzy
+msgid "Unable to remove tracks"
+msgstr "Jadikan Peranti RAID."
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:87
+msgid ""
+"The collection does not have enough free space available or is not writable."
+msgstr ""
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:94
+msgid "Do you want to remove empty folders?"
+msgstr ""
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:95
+#, fuzzy
+msgid "Remove empty folders?"
+msgstr "Sains komputer"
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:116
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "%1 is track url, %2 track title, %3 track artist"
+msgid "%1 (%2 by %3)"
+msgstr "%1 (%2)"
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:118
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "%1 is track url, %2 track name"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:120
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "%1 is track url, %2 artist name"
+msgid "%1 (by %2)"
+msgstr "%1 (%2)"
+
+#: core-impl/collections/support/TrashCollectionLocation.cpp:47
+#, fuzzy
+#| msgid "Tracks"
+msgid "Trash"
+msgstr "Trek"
+
+#: core-impl/collections/support/TrashCollectionLocation.cpp:101
+#, fuzzy, kde-format
+msgid "Moving to trash: %1"
+msgstr "Ke Hadapan 5 trek"
 
 #: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:184
 #, fuzzy
@@ -15757,6 +15781,11 @@ msgid ""
 "Would you like to use that as a collection folder?"
 msgstr ""
 
+#, fuzzy
+#~| msgid "Delete failed"
+#~ msgid "Delete Files"
+#~ msgstr "Gagal untuk memadam"
+
 #~ msgid "Devices"
 #~ msgstr "Peranti"
 
@@ -16860,9 +16889,6 @@ msgstr ""
 #~ "_n: 1 last.fm stream\n"
 #~ "%n last.fm streams"
 #~ msgstr "Ke Hadapan 5 trek"
-
-#~ msgid "%1 (%2)"
-#~ msgstr "%1 (%2)"
 
 #, fuzzy
 #~ msgid "Save to location..."
