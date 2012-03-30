@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kategdbplugin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-10 03:40+0100\n"
+"POT-Creation-Date: 2012-03-30 05:04+0200\n"
 "PO-Revision-Date: 2011-06-23 22:47+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -18,71 +18,78 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: configview.cpp:65
-msgid "&Target:"
-msgstr "&Sasaran:"
-
-#: configview.cpp:70
-msgid "Add executable target"
+#: configview.cpp:52
+#, fuzzy
+#| msgid "Add executable target"
+msgid "Add new target"
 msgstr "Tambah sasaran bolehlaksana"
 
-#: configview.cpp:74
-msgid "Remove target"
+#: configview.cpp:56
+#, fuzzy
+#| msgid "Remove target"
+msgid "Copy target"
 msgstr "Buang sasaran"
 
-#: configview.cpp:82
-msgid "&Working Directory:"
+#: configview.cpp:60
+#, fuzzy
+#| msgid "Remove target"
+msgid "Delete target"
+msgstr "Buang sasaran"
+
+#: configview.cpp:65
+msgid "Executable:"
 msgstr ""
 
-#: configview.cpp:91
+#: configview.cpp:83
+msgid "Working Directory:"
+msgstr ""
+
+#: configview.cpp:90
 #, fuzzy
 msgctxt "Program argument list"
-msgid "&Arg List:"
-msgstr "Sen&arai:"
-
-#: configview.cpp:96
-#, fuzzy
-msgid "Add Argument List"
+msgid "Arguments:"
 msgstr "Tambah Senarai"
 
-#: configview.cpp:100
-#, fuzzy
-msgid "Remove Argument List"
-msgstr "Buang Senarai"
-
-#: configview.cpp:103
+#: configview.cpp:94
 #, fuzzy
 msgctxt "Checkbox to for keeping focus on the command line"
 msgid "Keep focus"
 msgstr "Kekalkan"
 
-#: configview.cpp:104
+#: configview.cpp:95
 #, fuzzy
 msgid "Keep the focus on the command line"
 msgstr "Kekalkan buka"
 
-#: configview.cpp:106
+#: configview.cpp:97
 msgid "Redirect IO"
 msgstr ""
 
-#: configview.cpp:107
+#: configview.cpp:98
 #, fuzzy
 msgid "Redirect the debugged programs IO to a separate tab"
 msgstr "ke  a"
 
-#: configview.cpp:163
+#: configview.cpp:100
+#, fuzzy
+msgid "Advanced Settings"
+msgstr "Seting"
+
+#: configview.cpp:134
 msgid "Targets"
 msgstr ""
 
-#: configview.cpp:168
-msgid "Arg Lists"
-msgstr ""
+#: configview.cpp:308 configview.cpp:320
+#, fuzzy, kde-format
+#| msgid "&Target:"
+msgid "Target %1"
+msgstr "&Sasaran:"
 
-#: debugview.cpp:148
+#: debugview.cpp:150
 msgid "Could not start debugger process"
 msgstr ""
 
-#: debugview.cpp:189
+#: debugview.cpp:191
 msgid "*** gdb exited normally ***"
 msgstr ""
 
@@ -212,31 +219,31 @@ msgstr ""
 msgid "popup_run_to_cursor"
 msgstr "ke "
 
-#: plugin_kategdb.cpp:371 plugin_kategdb.cpp:390
+#: plugin_kategdb.cpp:364 plugin_kategdb.cpp:381
 #, fuzzy
 msgid "Insert breakpoint"
 msgstr "Selit"
 
-#: plugin_kategdb.cpp:386
+#: plugin_kategdb.cpp:378
 #, fuzzy
 msgid "Remove breakpoint"
 msgstr "Buang"
 
-#: plugin_kategdb.cpp:417
+#: plugin_kategdb.cpp:405
 msgid "Breakpoint"
 msgstr ""
 
-#: plugin_kategdb.cpp:518
+#: plugin_kategdb.cpp:504
 #, fuzzy
 msgid "Execution point"
 msgstr "Pelaksanaan"
 
-#: plugin_kategdb.cpp:633
+#: plugin_kategdb.cpp:619
 #, kde-format
 msgid "Thread %1"
 msgstr ""
 
-#: plugin_kategdb.cpp:730
+#: plugin_kategdb.cpp:716
 msgid "IO"
 msgstr ""
 
@@ -265,3 +272,133 @@ msgstr "&Nyahpepijat"
 #, fuzzy
 msgid "GDB Plugin"
 msgstr "Plugin"
+
+#. i18n: file: advanced_settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, AdvancedGDBSettings)
+#: rc.cpp:11
+msgid "Form"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:20
+#. i18n: ectx: property (text), widget (QLabel, u_gdbLabel)
+#: rc.cpp:14
+msgid "GDB command"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:36
+#. i18n: ectx: property (text), widget (QToolButton, u_gdbBrowse)
+#: rc.cpp:17
+msgid "..."
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:45
+#. i18n: ectx: property (text), widget (QLabel, u_soAbsPrefixLabel)
+#: rc.cpp:20
+msgid "solib-absolute-prefix"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:59
+#. i18n: ectx: property (text), widget (QLabel, u_soSearchLabel)
+#: rc.cpp:23
+msgid "solib-search-path"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:73
+#. i18n: ectx: property (title), widget (QGroupBox, u_customInitGroup)
+#: rc.cpp:26
+msgid "Custom Startup Commads"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:90
+#. i18n: ectx: property (text), item, widget (KComboBox, u_localRemote)
+#: rc.cpp:29
+msgid "Local application"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:95
+#. i18n: ectx: property (text), item, widget (KComboBox, u_localRemote)
+#: rc.cpp:32
+msgid "Remote  TCP"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:100
+#. i18n: ectx: property (text), item, widget (KComboBox, u_localRemote)
+#: rc.cpp:35
+#, fuzzy
+msgid "Remote Serialport"
+msgstr "Buang"
+
+#. i18n: file: advanced_settings.ui:125
+#. i18n: ectx: property (text), widget (QLabel, u_hostLabel)
+#: rc.cpp:38
+msgid "Host"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:139
+#. i18n: ectx: property (text), widget (QLabel, u_tcpPortLabel)
+#: rc.cpp:41
+msgid "port"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:164
+#. i18n: ectx: property (text), widget (QLabel, u_ttyLabel)
+#: rc.cpp:44
+msgid "Port"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:171
+#. i18n: ectx: property (text), widget (KLineEdit, u_ttyPort)
+#: rc.cpp:47
+msgid "/dev/ttyUSB0"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:181
+#. i18n: ectx: property (text), widget (QLabel, u_ttyBaudLabel)
+#: rc.cpp:50
+msgid "Baud"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:192
+#. i18n: ectx: property (text), item, widget (KComboBox, u_baudCombo)
+#: rc.cpp:53
+msgid "9600"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:197
+#. i18n: ectx: property (text), item, widget (KComboBox, u_baudCombo)
+#: rc.cpp:56
+msgid "14400"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:202
+#. i18n: ectx: property (text), item, widget (KComboBox, u_baudCombo)
+#: rc.cpp:59
+msgid "19200"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:207
+#. i18n: ectx: property (text), item, widget (KComboBox, u_baudCombo)
+#: rc.cpp:62
+msgid "38400"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:212
+#. i18n: ectx: property (text), item, widget (KComboBox, u_baudCombo)
+#: rc.cpp:65
+msgid "57600"
+msgstr ""
+
+#. i18n: file: advanced_settings.ui:217
+#. i18n: ectx: property (text), item, widget (KComboBox, u_baudCombo)
+#: rc.cpp:68
+msgid "115200"
+msgstr ""
+
+#, fuzzy
+#~ msgctxt "Program argument list"
+#~ msgid "&Arg List:"
+#~ msgstr "Sen&arai:"
+
+#, fuzzy
+#~ msgid "Remove Argument List"
+#~ msgstr "Buang Senarai"
