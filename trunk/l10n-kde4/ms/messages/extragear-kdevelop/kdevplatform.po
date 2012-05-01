@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevplatform\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-22 03:30+0200\n"
+"POT-Creation-Date: 2012-05-01 04:27+0200\n"
 "PO-Revision-Date: 2009-07-05 19:31+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -495,43 +495,6 @@ msgstr ""
 msgid "Error generating code: %1"
 msgstr ""
 
-#: language/codegen/applychangeswidget.cpp:84
-#: language/codegen/applychangeswidget.cpp:197
-#, fuzzy
-msgid "Edit Document"
-msgstr "Tutup Dokumen"
-
-#: language/codegen/applychangeswidget.cpp:199
-msgid "View Differences"
-msgstr ""
-
-#: language/codegen/applychangeswidget.cpp:241
-#, fuzzy
-msgid "Text"
-msgstr "Uji"
-
-#: language/codegen/applychangeswidget.cpp:241
-#, fuzzy
-msgid "Action"
-msgstr "Tindakan"
-
-#: language/codegen/applychangeswidget.cpp:263
-#, fuzzy
-msgid "Change"
-msgstr "Batal"
-
-#: language/codegen/applychangeswidget.cpp:268
-#, fuzzy
-msgid "Insert"
-msgstr "Ganggu"
-
-#. i18n: file: language/codegen/ui/newclass.ui:74
-#. i18n: ectx: property (toolTip), widget (KPushButton, removeInheritancePushButton)
-#: language/codegen/applychangeswidget.cpp:273 rc.cpp:65
-#, fuzzy
-msgid "Remove"
-msgstr "Buang"
-
 #: language/codegen/createclass.cpp:80
 #, kde-format
 msgid "Create New Class in %1"
@@ -581,6 +544,43 @@ msgstr "Dilindungi"
 #, fuzzy
 msgid "Private"
 msgstr "Peribadi"
+
+#: language/codegen/applychangeswidget.cpp:84
+#: language/codegen/applychangeswidget.cpp:197
+#, fuzzy
+msgid "Edit Document"
+msgstr "Tutup Dokumen"
+
+#: language/codegen/applychangeswidget.cpp:199
+msgid "View Differences"
+msgstr ""
+
+#: language/codegen/applychangeswidget.cpp:241
+#, fuzzy
+msgid "Text"
+msgstr "Uji"
+
+#: language/codegen/applychangeswidget.cpp:241
+#, fuzzy
+msgid "Action"
+msgstr "Tindakan"
+
+#: language/codegen/applychangeswidget.cpp:263
+#, fuzzy
+msgid "Change"
+msgstr "Batal"
+
+#: language/codegen/applychangeswidget.cpp:268
+#, fuzzy
+msgid "Insert"
+msgstr "Ganggu"
+
+#. i18n: file: language/codegen/ui/newclass.ui:74
+#. i18n: ectx: property (toolTip), widget (KPushButton, removeInheritancePushButton)
+#: language/codegen/applychangeswidget.cpp:273 rc.cpp:65
+#, fuzzy
+msgid "Remove"
+msgstr "Buang"
 
 #: language/duchain/forwarddeclaration.cpp:61
 #, kde-format
@@ -984,16 +984,6 @@ msgctxt "@title:column buildset item path"
 msgid "Path"
 msgstr "Peribadi"
 
-#: project/projectutils.cpp:76
-#, kde-format
-msgid "Folder %1"
-msgstr ""
-
-#: project/projectutils.cpp:78
-#, fuzzy, kde-format
-msgid "Project %1"
-msgstr "Dilindungi"
-
 #: project/projectitemlineedit.cpp:153
 msgid "Enter the path to an item from the projects tree"
 msgstr ""
@@ -1069,6 +1059,16 @@ msgstr ""
 #: project/importprojectjob.cpp:102
 msgid "Project import canceled."
 msgstr ""
+
+#: project/projectutils.cpp:76
+#, kde-format
+msgid "Folder %1"
+msgstr ""
+
+#: project/projectutils.cpp:78
+#, fuzzy, kde-format
+msgid "Project %1"
+msgstr "Dilindungi"
 
 #: shell/session.cpp:129
 #, fuzzy
@@ -1529,6 +1529,161 @@ msgstr "Jenis"
 msgid "<html><font size=\"4\">Plugins loaded for <b>%1</b></font></html>"
 msgstr ""
 
+#: shell/sessioncontroller.cpp:186
+msgid ""
+"The current session and all contained settings will be deleted. The projects "
+"will stay unaffected. Do you really want to continue?"
+msgstr ""
+
+#: shell/sessioncontroller.cpp:198
+#, fuzzy
+msgid "Rename Session"
+msgstr "Semakan"
+
+#: shell/sessioncontroller.cpp:202
+#, fuzzy
+msgid "New Session Name"
+msgstr "Semakan"
+
+#: shell/sessioncontroller.cpp:222
+msgid "The selected session is already active in another running instance"
+msgstr ""
+
+#: shell/sessioncontroller.cpp:371
+#, fuzzy
+msgid "Recover"
+msgstr "Buang"
+
+#: shell/sessioncontroller.cpp:375
+#, kde-format
+msgctxt "%1: date of the last snapshot"
+msgid ""
+"The session crashed the last time it was used. The following modified files "
+"can be recovered from a backup from %1."
+msgstr ""
+
+#: shell/sessioncontroller.cpp:377
+#, fuzzy
+msgid "Crash Recovery"
+msgstr "Buang"
+
+#: shell/sessioncontroller.cpp:407
+#, kde-format
+msgid "Could not recover %1, the recovery file is empty"
+msgstr ""
+
+#: shell/sessioncontroller.cpp:407
+#, fuzzy
+msgid "Recovery"
+msgstr "Buang"
+
+#: shell/sessioncontroller.cpp:516
+#, kde-format
+msgid ""
+"Failed to write recovery copies to %1. Please make sure that your home "
+"directory is writable and not full. This application requires available "
+"space in the home directory to run stable. You may experience application "
+"crashes until you free up some space."
+msgstr ""
+
+#: shell/sessioncontroller.cpp:517
+#, fuzzy
+msgid "Recovery Error"
+msgstr "Buang"
+
+#: shell/sessioncontroller.cpp:569
+#, fuzzy
+msgctxt "@action:inmenu"
+msgid "Start New Session"
+msgstr "Semakan"
+
+#: shell/sessioncontroller.cpp:570
+msgctxt "@info:tooltip"
+msgid "Start a new KDevelop instance with an empty session"
+msgstr ""
+
+#: shell/sessioncontroller.cpp:574
+msgid "Rename Session..."
+msgstr ""
+
+#: shell/sessioncontroller.cpp:578
+msgid "Delete Session..."
+msgstr ""
+
+#: shell/sessioncontroller.cpp:582
+msgid "Quit"
+msgstr ""
+
+#: shell/sessioncontroller.cpp:588
+msgid "Configure Sessions..."
+msgstr ""
+
+#: shell/sessioncontroller.cpp:589
+msgid "Create/Delete/Activate Sessions"
+msgstr ""
+
+#: shell/sessioncontroller.cpp:590
+msgid ""
+"<b>Configure Sessions</b><p>Shows a dialog to Create/Delete Sessions and set "
+"a new active session.</p>"
+msgstr ""
+
+#: shell/sessioncontroller.cpp:751
+#, kde-format
+msgid "Copy of %1"
+msgstr ""
+
+#: shell/sessioncontroller.cpp:869
+#, fuzzy
+msgctxt "@info"
+msgid "Delete session"
+msgstr "Padam"
+
+#: shell/sessioncontroller.cpp:895 shell/sessioncontroller.cpp:971
+#: shell/sessioncontroller.cpp:994
+#, fuzzy
+msgid "Create New Session"
+msgstr "Semakan"
+
+#: shell/sessioncontroller.cpp:902
+#, kde-format
+msgid "[running, pid %1, app %2, host %3]"
+msgstr ""
+
+#: shell/sessioncontroller.cpp:929
+msgid "Identity"
+msgstr ""
+
+#: shell/sessioncontroller.cpp:930
+#, fuzzy
+msgid "Contents"
+msgstr "Konteks"
+
+#: shell/sessioncontroller.cpp:1049
+msgctxt "@info"
+msgid ""
+"The session and all contained settings will be deleted. The projects will "
+"stay unaffected. Do you really want to continue?"
+msgstr ""
+
+#: shell/sessioncontroller.cpp:1050
+#, fuzzy
+msgctxt "@title"
+msgid "Delete Session"
+msgstr "Semakan"
+
+#: shell/sessioncontroller.cpp:1051
+#, fuzzy
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Padam"
+
+#: shell/sessioncontroller.cpp:1052
+#, fuzzy
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Batal"
+
 #: shell/project.cpp:111
 #, fuzzy, kde-format
 msgid "Loading Project %1"
@@ -1686,161 +1841,6 @@ msgstr "Sembunyikan tetingkap perkembangan terperinci"
 #, fuzzy
 msgid "Show detailed progress window"
 msgstr "Paparkan tetingkap perkembangan perincian"
-
-#: shell/sessioncontroller.cpp:186
-msgid ""
-"The current session and all contained settings will be deleted. The projects "
-"will stay unaffected. Do you really want to continue?"
-msgstr ""
-
-#: shell/sessioncontroller.cpp:198
-#, fuzzy
-msgid "Rename Session"
-msgstr "Semakan"
-
-#: shell/sessioncontroller.cpp:202
-#, fuzzy
-msgid "New Session Name"
-msgstr "Semakan"
-
-#: shell/sessioncontroller.cpp:222
-msgid "The selected session is already active in another running instance"
-msgstr ""
-
-#: shell/sessioncontroller.cpp:371
-#, fuzzy
-msgid "Recover"
-msgstr "Buang"
-
-#: shell/sessioncontroller.cpp:375
-#, kde-format
-msgctxt "%1: date of the last snapshot"
-msgid ""
-"The session crashed the last time it was used. The following modified files "
-"can be recovered from a backup from %1."
-msgstr ""
-
-#: shell/sessioncontroller.cpp:377
-#, fuzzy
-msgid "Crash Recovery"
-msgstr "Buang"
-
-#: shell/sessioncontroller.cpp:407
-#, kde-format
-msgid "Could not recover %1, the recovery file is empty"
-msgstr ""
-
-#: shell/sessioncontroller.cpp:407
-#, fuzzy
-msgid "Recovery"
-msgstr "Buang"
-
-#: shell/sessioncontroller.cpp:516
-#, kde-format
-msgid ""
-"Failed to write recovery copies to %1. Please make sure that your home "
-"directory is writable and not full. This application requires available "
-"space in the home directory to run stable. You may experience application "
-"crashes until you free up some space."
-msgstr ""
-
-#: shell/sessioncontroller.cpp:517
-#, fuzzy
-msgid "Recovery Error"
-msgstr "Buang"
-
-#: shell/sessioncontroller.cpp:569
-#, fuzzy
-msgctxt "@action:inmenu"
-msgid "Start New Session"
-msgstr "Semakan"
-
-#: shell/sessioncontroller.cpp:570
-msgctxt "@info:tooltip"
-msgid "Start a new KDevelop instance with an empty session"
-msgstr ""
-
-#: shell/sessioncontroller.cpp:574
-msgid "Rename Session..."
-msgstr ""
-
-#: shell/sessioncontroller.cpp:578
-msgid "Delete Session..."
-msgstr ""
-
-#: shell/sessioncontroller.cpp:582
-msgid "Quit"
-msgstr ""
-
-#: shell/sessioncontroller.cpp:588
-msgid "Configure Sessions..."
-msgstr ""
-
-#: shell/sessioncontroller.cpp:589
-msgid "Create/Delete/Activate Sessions"
-msgstr ""
-
-#: shell/sessioncontroller.cpp:590
-msgid ""
-"<b>Configure Sessions</b><p>Shows a dialog to Create/Delete Sessions and set "
-"a new active session.</p>"
-msgstr ""
-
-#: shell/sessioncontroller.cpp:751
-#, kde-format
-msgid "Copy of %1"
-msgstr ""
-
-#: shell/sessioncontroller.cpp:869
-#, fuzzy
-msgctxt "@info"
-msgid "Delete session"
-msgstr "Padam"
-
-#: shell/sessioncontroller.cpp:895 shell/sessioncontroller.cpp:971
-#: shell/sessioncontroller.cpp:994
-#, fuzzy
-msgid "Create New Session"
-msgstr "Semakan"
-
-#: shell/sessioncontroller.cpp:902
-#, kde-format
-msgid "[running, pid %1, app %2, host %3]"
-msgstr ""
-
-#: shell/sessioncontroller.cpp:929
-msgid "Identity"
-msgstr ""
-
-#: shell/sessioncontroller.cpp:930
-#, fuzzy
-msgid "Contents"
-msgstr "Konteks"
-
-#: shell/sessioncontroller.cpp:1049
-msgctxt "@info"
-msgid ""
-"The session and all contained settings will be deleted. The projects will "
-"stay unaffected. Do you really want to continue?"
-msgstr ""
-
-#: shell/sessioncontroller.cpp:1050
-#, fuzzy
-msgctxt "@title"
-msgid "Delete Session"
-msgstr "Semakan"
-
-#: shell/sessioncontroller.cpp:1051
-#, fuzzy
-msgctxt "@action:button"
-msgid "Delete"
-msgstr "Padam"
-
-#: shell/sessioncontroller.cpp:1052
-#, fuzzy
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Batal"
 
 #: shell/assistantpopup.cpp:70
 #, fuzzy
@@ -2353,22 +2353,6 @@ msgid ""
 "editor.</p>"
 msgstr ""
 
-#: shell/workingsets/workingsettoolbutton.cpp:101
-msgid "Close Working Set (Left Click)"
-msgstr ""
-
-#: shell/workingsets/workingsettoolbutton.cpp:102
-msgid "Duplicate Working Set"
-msgstr ""
-
-#: shell/workingsets/workingsettoolbutton.cpp:104
-msgid "Load Working Set (Left Click)"
-msgstr ""
-
-#: shell/workingsets/workingsettoolbutton.cpp:114
-msgid "Delete Working Set"
-msgstr ""
-
 #: shell/workingsets/workingsettooltipwidget.cpp:74
 msgid "<b>Working Set</b>"
 msgstr ""
@@ -2426,6 +2410,22 @@ msgstr "Tutup"
 #, fuzzy
 msgid "Load"
 msgstr "Memuat"
+
+#: shell/workingsets/workingsettoolbutton.cpp:101
+msgid "Close Working Set (Left Click)"
+msgstr ""
+
+#: shell/workingsets/workingsettoolbutton.cpp:102
+msgid "Duplicate Working Set"
+msgstr ""
+
+#: shell/workingsets/workingsettoolbutton.cpp:104
+msgid "Load Working Set (Left Click)"
+msgstr ""
+
+#: shell/workingsets/workingsettoolbutton.cpp:114
+msgid "Delete Working Set"
+msgstr ""
 
 #: shell/openprojectdialog.cpp:52
 msgid "Select the source"
@@ -2775,6 +2775,55 @@ msgstr ""
 msgid "Example 2"
 msgstr ""
 
+#: sublime/mainwindow_p.cpp:58
+msgid "Show Left Dock"
+msgstr ""
+
+#: sublime/mainwindow_p.cpp:64
+msgid "Show Right Dock"
+msgstr ""
+
+#: sublime/mainwindow_p.cpp:70
+msgid "Show Bottom Dock"
+msgstr ""
+
+#: sublime/mainwindow_p.cpp:76
+#, fuzzy
+msgctxt "@action"
+msgid "Focus Editor"
+msgstr "Edit"
+
+#: sublime/mainwindow_p.cpp:81
+msgid "Hide/Restore Docks"
+msgstr ""
+
+#: sublime/mainwindow_p.cpp:86
+#, fuzzy
+msgid "Next Tool View"
+msgstr "Paparan Alatan Berikut"
+
+#: sublime/mainwindow_p.cpp:91
+#, fuzzy
+msgid "Previous Tool View"
+msgstr "Paparan Alatan Terdahulu"
+
+#: sublime/mainwindow_p.cpp:96
+#, fuzzy
+msgid "Tool Views"
+msgstr "Paparan Alat"
+
+#: sublime/mainwindow_p.cpp:101
+msgid "Left Button Bar"
+msgstr ""
+
+#: sublime/mainwindow_p.cpp:110
+msgid "Right Button Bar"
+msgstr ""
+
+#: sublime/mainwindow_p.cpp:119
+msgid "Bottom Button Bar"
+msgstr ""
+
 #: sublime/container.cpp:147
 msgid "Line: 00000 Col: 000"
 msgstr ""
@@ -2844,55 +2893,6 @@ msgstr ""
 #: sublime/ideal.cpp:594
 #, kde-format
 msgid "%1 Tool Bar"
-msgstr ""
-
-#: sublime/mainwindow_p.cpp:58
-msgid "Show Left Dock"
-msgstr ""
-
-#: sublime/mainwindow_p.cpp:64
-msgid "Show Right Dock"
-msgstr ""
-
-#: sublime/mainwindow_p.cpp:70
-msgid "Show Bottom Dock"
-msgstr ""
-
-#: sublime/mainwindow_p.cpp:76
-#, fuzzy
-msgctxt "@action"
-msgid "Focus Editor"
-msgstr "Edit"
-
-#: sublime/mainwindow_p.cpp:81
-msgid "Hide/Restore Docks"
-msgstr ""
-
-#: sublime/mainwindow_p.cpp:86
-#, fuzzy
-msgid "Next Tool View"
-msgstr "Paparan Alatan Berikut"
-
-#: sublime/mainwindow_p.cpp:91
-#, fuzzy
-msgid "Previous Tool View"
-msgstr "Paparan Alatan Terdahulu"
-
-#: sublime/mainwindow_p.cpp:96
-#, fuzzy
-msgid "Tool Views"
-msgstr "Paparan Alat"
-
-#: sublime/mainwindow_p.cpp:101
-msgid "Left Button Bar"
-msgstr ""
-
-#: sublime/mainwindow_p.cpp:110
-msgid "Right Button Bar"
-msgstr ""
-
-#: sublime/mainwindow_p.cpp:119
-msgid "Bottom Button Bar"
 msgstr ""
 
 #: util/duchainify/main.cpp:216
