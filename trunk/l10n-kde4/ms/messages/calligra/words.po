@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-16 02:42+0200\n"
+"POT-Creation-Date: 2012-05-17 02:37+0200\n"
 "PO-Revision-Date: 2006-10-05 19:47+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -537,7 +537,7 @@ msgstr "Kolum"
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:71
 #. i18n: ectx: property (text), widget (QPushButton, createButton)
-#: rc.cpp:258 part/KWView.cpp:344
+#: rc.cpp:258 part/KWView.cpp:346
 #, fuzzy
 msgid "Create"
 msgstr "Cipta Jadual"
@@ -790,38 +790,47 @@ msgstr "Ubah Variabel Ke"
 msgid "..."
 msgstr "Baru..."
 
-#: part/KWDLoader.cpp:74
-msgid "Invalid document. No mimetype specified."
-msgstr "Dokumen tak sah. Tiada jenis mime ditetapkan."
+#: part/KWDocument.cpp:518
+#, fuzzy
+#| msgid "Copy%1-%2"
+msgid "Copy"
+msgstr "Salin%1-%2"
 
-#: part/KWDLoader.cpp:78
-#, fuzzy, kde-format
-#| msgid ""
-#| "Invalid document. Expected mimetype application/x-kword or application/"
-#| "vnd.kde.kword, got %1"
-msgid ""
-"Invalid document. Expected mimetype application/x-words or application/vnd."
-"kde.words, got %1"
+#: part/KWDocument.cpp:563
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 1"
+msgid "Head 1"
+msgstr "Kepala 1"
+
+#: part/KWDocument.cpp:569
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 2"
+msgid "Head 2"
+msgstr "Kepala 2"
+
+#: part/KWDocument.cpp:575
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 3"
+msgid "Head 3"
+msgstr "Kepala 3"
+
+#: part/KWDocument.cpp:581
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Bullet List"
+msgid "Bullet List"
+msgstr "Senarai Bulet"
+
+#: part/KWDocument.cpp:798
+msgid "Can not find needed text component, Words will quit now"
 msgstr ""
-"Dokumen tak sah. Aplikasi/x-kword atau aplikasi/vnd.kde.kword jenis mime "
-"yang dijangka, dapat %1"
 
-#: part/KWDLoader.cpp:104
-#, kde-format
-msgid "Invalid document. Paper size: %1x%2"
-msgstr "Dokumen tak sah. Saiz kertas: %1x%2"
-
-#: part/KWDLoader.cpp:689
-#, fuzzy
-#| msgid "Unable to create database object"
-msgid "Unable to locate footnote text"
-msgstr "Tidak dapat mencipta objek pangkalan data"
-
-#: part/KWDLoader.cpp:715
-#, fuzzy
-#| msgid "Unable to create database object"
-msgid "Unable to locate note-text"
-msgstr "Tidak dapat mencipta objek pangkalan data"
+#: part/KWDocument.cpp:799
+msgid "Installation Error"
+msgstr ""
 
 #: part/KWAboutData.h:27
 #, fuzzy
@@ -1330,7 +1339,7 @@ msgstr "Gaya:"
 msgid "Clone"
 msgstr "Penutup"
 
-#: part/dialogs/KWPageSettingsDialog.cpp:62 part/KWView.cpp:273
+#: part/dialogs/KWPageSettingsDialog.cpp:62 part/KWView.cpp:275
 #, fuzzy
 msgid "Delete"
 msgstr "Hapuskan Baris"
@@ -1637,44 +1646,44 @@ msgstr "Kelabu Atas dan Bawah"
 msgid "File to open"
 msgstr "Fail hendak dibuka"
 
-#: part/KWView.cpp:232
+#: part/KWView.cpp:234
 #, fuzzy
 #| msgid "Frame Properties"
 msgid "Shape Properties..."
 msgstr "Ciri Bingkai"
 
-#: part/KWView.cpp:234
+#: part/KWView.cpp:236
 msgid "Change how the shape behave"
 msgstr ""
 
-#: part/KWView.cpp:238
+#: part/KWView.cpp:240
 #, fuzzy
 #| msgid "&Bookmark..."
 msgid "Bookmark..."
 msgstr "&Tanda Buku..."
 
-#: part/KWView.cpp:243
+#: part/KWView.cpp:245
 #, fuzzy
 #| msgid "Select &Bookmark..."
 msgid "Select Bookmark..."
 msgstr "Pilih &Tanda Buku..."
 
-#: part/KWView.cpp:244
+#: part/KWView.cpp:246
 #, fuzzy
 msgid "Bookmark"
 msgstr "&Tanda Buku..."
 
-#: part/KWView.cpp:255
+#: part/KWView.cpp:257
 #, fuzzy
 #| msgid "&Create Template From Document..."
 msgid "Create Template From Document..."
 msgstr "&Cipta Templat Dari Dokumen..."
 
-#: part/KWView.cpp:256
+#: part/KWView.cpp:258
 msgid "Save this document and use it later as a template"
 msgstr "Simpan dokumen ini dan gunakannya kemudian sebagai templat"
 
-#: part/KWView.cpp:257
+#: part/KWView.cpp:259
 msgid ""
 "You can save this document as a template.<br><br>You can use this new "
 "template as a starting point for another document."
@@ -1682,24 +1691,24 @@ msgstr ""
 "Anda boleh simpan dokumen ini sebagai templat.<br><br>Anda boleh gunakan "
 "templat baru ini sebagai titik mula untuk dokumen lain. "
 
-#: part/KWView.cpp:269
+#: part/KWView.cpp:271
 #, fuzzy
 #| msgid "Select All Frames"
 msgid "Select All Shapes"
 msgstr "Pilih Semua Bingkai"
 
-#: part/KWView.cpp:280
+#: part/KWView.cpp:282
 #, fuzzy
 #| msgid "&Formatting Characters"
 msgid "Show Formatting Characters"
 msgstr "&Memformatkan Aksara"
 
-#: part/KWView.cpp:286
+#: part/KWView.cpp:288
 #, fuzzy
 msgid "Toggle the display of non-printing characters"
 msgstr "Toggel paparan aksara tak cetak."
 
-#: part/KWView.cpp:287
+#: part/KWView.cpp:289
 #, fuzzy
 #| msgid ""
 #| "Toggle the display of non-printing characters.<br><br>When this is "
@@ -1714,16 +1723,16 @@ msgstr ""
 "memaparkan tab, jarak, kembalian penyorong dan aksara tak cetak lain kepada "
 "anda."
 
-#: part/KWView.cpp:289
+#: part/KWView.cpp:291
 msgid "Show Text Shape Borders"
 msgstr ""
 
-#: part/KWView.cpp:290
+#: part/KWView.cpp:292
 #, fuzzy
 msgid "Turns the border display on and off"
 msgstr "Buka dan tutup paparan sempadan."
 
-#: part/KWView.cpp:296
+#: part/KWView.cpp:298
 #, fuzzy
 #| msgid ""
 #| "Turns the border display on and off.<br><br>The borders are never "
@@ -1737,18 +1746,18 @@ msgstr ""
 "Buka dan tutup paparan sempadan.<br><br>Sempadan tidak akan dicetak. Pilihan "
 "ini berguna untuk melihat bagaimana rupa dokumen pada halaman bercetak. "
 
-#: part/KWView.cpp:298
+#: part/KWView.cpp:300
 #, fuzzy
 #| msgid "Configure Table Borders"
 msgid "Show Table Borders"
 msgstr "Konfigur Sempadan Jadual"
 
-#: part/KWView.cpp:304
+#: part/KWView.cpp:306
 #, fuzzy
 msgid "Toggle the display of table borders"
 msgstr "Toggel paparan aksara tak cetak."
 
-#: part/KWView.cpp:305
+#: part/KWView.cpp:307
 #, fuzzy
 #| msgid ""
 #| "Toggle the display of non-printing characters.<br><br>When this is "
@@ -1762,16 +1771,16 @@ msgstr ""
 "memaparkan tab, jarak, kembalian penyorong dan aksara tak cetak lain kepada "
 "anda."
 
-#: part/KWView.cpp:307
+#: part/KWView.cpp:309
 msgid "Show Rulers"
 msgstr "Papar Pembaris"
 
-#: part/KWView.cpp:309
+#: part/KWView.cpp:311
 #, fuzzy
 msgid "Shows or hides rulers"
 msgstr "Papar atau sembunyikan pembaris."
 
-#: part/KWView.cpp:310
+#: part/KWView.cpp:312
 #, fuzzy
 #| msgid ""
 #| "The rulers are the white measuring spaces top and left of the document. "
@@ -1789,48 +1798,48 @@ msgstr ""
 "digunakan untuk menentukan posisi penjadual.<p>Nyahsemak ini untuk "
 "menyahaktifkan pembaris dari dipaparkan."
 
-#: part/KWView.cpp:321
+#: part/KWView.cpp:323
 #, fuzzy
 msgid "Snap to Grid"
 msgstr "Papar Pengaki"
 
-#: part/KWView.cpp:329
+#: part/KWView.cpp:331
 #, fuzzy
 #| msgid "Show &status bar"
 msgid "Show Status Bar"
 msgstr "Papar bar &status"
 
-#: part/KWView.cpp:330
+#: part/KWView.cpp:332
 #, fuzzy
 #| msgid "Show &status bar"
 msgid "Shows or hides the status bar"
 msgstr "Papar bar &status"
 
-#: part/KWView.cpp:335
+#: part/KWView.cpp:337
 #, fuzzy
 #| msgid "Import Styles..."
 msgid "Semantic Stylesheets..."
 msgstr "Import Gaya..."
 
-#: part/KWView.cpp:337
+#: part/KWView.cpp:339
 msgid "Modify and add semantic stylesheets"
 msgstr ""
 
-#: part/KWView.cpp:338
+#: part/KWView.cpp:340
 msgid ""
 "Stylesheets are used to format contact, event, and location information "
 "which is stored in Rdf"
 msgstr ""
 
-#: part/KWView.cpp:353
+#: part/KWView.cpp:355
 msgid "Create Linked Copy"
 msgstr "Cipta Salinan Terpaut"
 
-#: part/KWView.cpp:355
+#: part/KWView.cpp:357
 msgid "Create a copy of the current frame, always showing the same contents"
 msgstr "Cipta salinan bingkai semasa, sentiasa paparkan kandungan yang sama"
 
-#: part/KWView.cpp:356
+#: part/KWView.cpp:358
 msgid ""
 "Create a copy of the current frame, that remains linked to it. This means "
 "they always show the same contents: modifying the contents in such a frame "
@@ -1840,24 +1849,24 @@ msgstr ""
 "bermakna ia sentiasa memaparkan kandungan yang sama: mengubah suai kandungan "
 "dalam bingkai itu akan mengemaskinikan semua salinan yang dipautkan padanya."
 
-#: part/KWView.cpp:360
+#: part/KWView.cpp:362
 #, fuzzy
 #| msgid "C&onfigure..."
 msgid "Configure..."
 msgstr "&Konfigur..."
 
-#: part/KWView.cpp:365
+#: part/KWView.cpp:367
 #, fuzzy
 #| msgid "Page &Layout..."
 msgid "Page Layout..."
 msgstr "&Bentangan Halaman..."
 
-#: part/KWView.cpp:367
+#: part/KWView.cpp:369
 #, fuzzy
 msgid "Change properties of entire page"
 msgstr "Ubah ciri seluruh halaman."
 
-#: part/KWView.cpp:368
+#: part/KWView.cpp:370
 #, fuzzy
 #| msgid ""
 #| "Change properties of the entire page.<p>Currently you can change paper "
@@ -1869,66 +1878,24 @@ msgstr ""
 "Ubah ciri seluruh halaman.<p>Kini anda boleh ubah saiz kertas, orientasi "
 "kertas, saiz pengepala dan pengaki, dan seting lajur."
 
-#: part/KWView.cpp:371
+#: part/KWView.cpp:373
 #, fuzzy
 #| msgid "Create Text Frame"
 msgid "Create Header"
 msgstr "Cipta Bingkai Teks"
 
-#: part/KWView.cpp:377
+#: part/KWView.cpp:379
 #, fuzzy
 #| msgid "Create Text Frame"
 msgid "Create Footer"
 msgstr "Cipta Bingkai Teks"
 
-#: part/KWView.cpp:701
+#: part/KWView.cpp:703
 #, fuzzy
 #| msgid "Create Linked Copy"
 msgctxt "(qtundo-format)"
 msgid "Create Linked Copy"
 msgstr "Cipta Salinan Terpaut"
-
-#: part/KWDocument.cpp:518
-#, fuzzy
-#| msgid "Copy%1-%2"
-msgid "Copy"
-msgstr "Salin%1-%2"
-
-#: part/KWDocument.cpp:563
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 1"
-msgid "Head 1"
-msgstr "Kepala 1"
-
-#: part/KWDocument.cpp:569
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 2"
-msgid "Head 2"
-msgstr "Kepala 2"
-
-#: part/KWDocument.cpp:575
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 3"
-msgid "Head 3"
-msgstr "Kepala 3"
-
-#: part/KWDocument.cpp:581
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Bullet List"
-msgid "Bullet List"
-msgstr "Senarai Bulet"
-
-#: part/KWDocument.cpp:806
-msgid "Can not find needed text component, Words will quit now"
-msgstr ""
-
-#: part/KWDocument.cpp:807
-msgid "Installation Error"
-msgstr ""
 
 #: part/KWOdfLoader.cpp:92
 #, fuzzy
@@ -1968,6 +1935,33 @@ msgstr "Pengaki Halaman Genap"
 #| msgid "Page &Layout..."
 msgid "Page layout"
 msgstr "&Bentangan Halaman..."
+
+#~ msgid "Invalid document. No mimetype specified."
+#~ msgstr "Dokumen tak sah. Tiada jenis mime ditetapkan."
+
+#, fuzzy
+#~| msgid ""
+#~| "Invalid document. Expected mimetype application/x-kword or application/"
+#~| "vnd.kde.kword, got %1"
+#~ msgid ""
+#~ "Invalid document. Expected mimetype application/x-words or application/"
+#~ "vnd.kde.words, got %1"
+#~ msgstr ""
+#~ "Dokumen tak sah. Aplikasi/x-kword atau aplikasi/vnd.kde.kword jenis mime "
+#~ "yang dijangka, dapat %1"
+
+#~ msgid "Invalid document. Paper size: %1x%2"
+#~ msgstr "Dokumen tak sah. Saiz kertas: %1x%2"
+
+#, fuzzy
+#~| msgid "Unable to create database object"
+#~ msgid "Unable to locate footnote text"
+#~ msgstr "Tidak dapat mencipta objek pangkalan data"
+
+#, fuzzy
+#~| msgid "Unable to create database object"
+#~ msgid "Unable to locate note-text"
+#~ msgstr "Tidak dapat mencipta objek pangkalan data"
 
 #, fuzzy
 #~| msgid "Inline Frame"
