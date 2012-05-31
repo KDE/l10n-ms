@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tellico\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-13 12:20+0200\n"
+"POT-Creation-Date: 2012-05-31 14:02+0200\n"
 "PO-Revision-Date: 2009-10-03 23:05+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -100,7 +100,7 @@ msgstr "Tajuk"
 #: src/configdialog.cpp:182 src/configdialog.cpp:209 src/configdialog.cpp:227
 #: src/fetch/animenfofetcher.cpp:294 src/fetch/animenfofetcher.cpp:298
 #: src/fetch/freebasefetcher.cpp:367 src/fetch/googlebookfetcher.cpp:249
-#: src/fetch/imdbfetcher.cpp:753 src/fetch/imdbfetcher.cpp:1071
+#: src/fetch/imdbfetcher.cpp:946 src/fetch/imdbfetcher.cpp:1277
 #: src/fetch/filmasterfetcher.cpp:233 src/fetch/moviemeterfetcher.cpp:247
 #: src/fetch/openlibraryfetcher.cpp:283 src/field.cpp:37 src/field.cpp:78
 #: src/translators/gcstarimporter.cpp:89
@@ -1124,7 +1124,7 @@ msgid "Issue Year"
 msgstr ""
 
 #: src/collections/stampcollection.cpp:76
-#: src/collections/videocollection.cpp:180
+#: src/collections/videocollection.cpp:180 src/fetch/imdbfetcher.cpp:1389
 #, fuzzy
 msgid "Color"
 msgstr "Warna"
@@ -2242,8 +2242,8 @@ msgid "Original Title"
 msgstr ""
 
 #: src/fetch/animenfofetcher.cpp:279 src/fetch/animenfofetcher.cpp:479
-#: src/fetch/doubanfetcher.cpp:211 src/fetch/imdbfetcher.cpp:823
-#: src/fetch/imdbfetcher.cpp:1268 src/fetch/dvdfrfetcher.cpp:167
+#: src/fetch/doubanfetcher.cpp:211 src/fetch/imdbfetcher.cpp:1016
+#: src/fetch/imdbfetcher.cpp:1550 src/fetch/dvdfrfetcher.cpp:167
 #: src/fetch/themoviedbfetcher.cpp:252 src/fetch/moviemeterfetcher.cpp:253
 #: src/fetch/moviemeterfetcher.cpp:360
 msgid "Alternative Titles"
@@ -2419,8 +2419,8 @@ msgstr ""
 msgid "Douban Link"
 msgstr "Kadaran"
 
-#: src/fetch/doubanfetcher.cpp:213 src/fetch/imdbfetcher.cpp:752
-#: src/fetch/imdbfetcher.cpp:1266 src/fetch/themoviedbfetcher.cpp:251
+#: src/fetch/doubanfetcher.cpp:213 src/fetch/imdbfetcher.cpp:945
+#: src/fetch/imdbfetcher.cpp:1548 src/fetch/themoviedbfetcher.cpp:251
 msgid "IMDb Link"
 msgstr ""
 
@@ -2483,59 +2483,112 @@ msgstr ""
 msgid "Google Book Search"
 msgstr ""
 
-#: src/fetch/imdbfetcher.cpp:615
-msgid "Select IMDb Result"
-msgstr ""
-
-#: src/fetch/imdbfetcher.cpp:621
-msgid ""
-"<qt>Your search returned multiple matches. Please select one below.</qt>"
-msgstr ""
-
-#: src/fetch/imdbfetcher.cpp:638
-msgid "<qt>Select a search result.</qt>"
-msgstr ""
-
-#: src/fetch/imdbfetcher.cpp:1070 src/fetch/imdbfetcher.cpp:1267
-#, fuzzy
-msgid "IMDb Rating"
-msgstr "Kadaran"
-
-#: src/fetch/imdbfetcher.cpp:1227 src/fetch/imdbfetcher.cpp:1269
-msgid "Certifications"
-msgstr ""
-
-#: src/fetch/imdbfetcher.cpp:1256
+#: src/fetch/imdbfetcher.cpp:96 src/fetch/imdbfetcher.cpp:1538
 #, fuzzy
 msgid "Internet Movie Database"
 msgstr "Pangkalan Data Wayang Internet"
 
-#: src/fetch/imdbfetcher.cpp:1284 src/fetch/srufetcher.cpp:469
-#: src/fetch/z3950fetcher.cpp:591
-msgid "Hos&t: "
+#: src/fetch/imdbfetcher.cpp:123
+#, fuzzy
+msgid "Internet Movie Database (French)"
+msgstr "Pangkalan Data Wayang Internet"
+
+#: src/fetch/imdbfetcher.cpp:150
+#, fuzzy
+msgid "Internet Movie Database (Spanish)"
+msgstr "Pangkalan Data Wayang Internet"
+
+#: src/fetch/imdbfetcher.cpp:177
+#, fuzzy
+msgid "Internet Movie Database (German)"
+msgstr "Pangkalan Data Wayang Internet"
+
+#: src/fetch/imdbfetcher.cpp:204
+#, fuzzy
+msgid "Internet Movie Database (Italian)"
+msgstr "Pangkalan Data Wayang Internet"
+
+#: src/fetch/imdbfetcher.cpp:231
+#, fuzzy
+msgid "Internet Movie Database (Portuguese)"
+msgstr "Pangkalan Data Wayang Internet"
+
+#: src/fetch/imdbfetcher.cpp:804
+msgid "Select IMDb Result"
 msgstr ""
 
-#: src/fetch/imdbfetcher.cpp:1289
+#: src/fetch/imdbfetcher.cpp:810
 msgid ""
-"The Internet Movie Database uses several different servers. Choose the one "
-"you wish to use."
+"<qt>Your search returned multiple matches. Please select one below.</qt>"
 msgstr ""
 
-#: src/fetch/imdbfetcher.cpp:1295 src/fetch/allocinefetcher.cpp:181
+#: src/fetch/imdbfetcher.cpp:827
+msgid "<qt>Select a search result.</qt>"
+msgstr ""
+
+#: src/fetch/imdbfetcher.cpp:1276 src/fetch/imdbfetcher.cpp:1549
+#, fuzzy
+msgid "IMDb Rating"
+msgstr "Kadaran"
+
+#: src/fetch/imdbfetcher.cpp:1421 src/fetch/imdbfetcher.cpp:1509
+#: src/fetch/imdbfetcher.cpp:1551
+msgid "Certifications"
+msgstr ""
+
+#: src/fetch/imdbfetcher.cpp:1566 src/fetch/amazonfetcher.cpp:962
+#, fuzzy
+msgid "Country: "
+msgstr "Negara"
+
+#: src/fetch/imdbfetcher.cpp:1569 src/fetch/amazonfetcher.cpp:965
+#, fuzzy
+msgid "United States"
+msgstr "United States"
+
+#: src/fetch/imdbfetcher.cpp:1570 src/fetch/amazonfetcher.cpp:969
+#, fuzzy
+msgid "France"
+msgstr "Perancis"
+
+#: src/fetch/imdbfetcher.cpp:1571 src/fetch/amazonfetcher.cpp:972
+msgid "Spain"
+msgstr ""
+
+#: src/fetch/imdbfetcher.cpp:1572 src/fetch/amazonfetcher.cpp:967
+#, fuzzy
+msgid "Germany"
+msgstr "Jerman"
+
+#: src/fetch/imdbfetcher.cpp:1573 src/fetch/amazonfetcher.cpp:973
+msgid "Italy"
+msgstr ""
+
+#: src/fetch/imdbfetcher.cpp:1574
+msgid "Portugal"
+msgstr ""
+
+#: src/fetch/imdbfetcher.cpp:1578
+msgid ""
+"The Internet Movie Database provides data from several different localized "
+"sites. Choose the one you wish to use for this data source."
+msgstr ""
+
+#: src/fetch/imdbfetcher.cpp:1584 src/fetch/allocinefetcher.cpp:181
 msgid "&Maximum cast: "
 msgstr ""
 
-#: src/fetch/imdbfetcher.cpp:1300 src/fetch/allocinefetcher.cpp:186
+#: src/fetch/imdbfetcher.cpp:1589 src/fetch/allocinefetcher.cpp:186
 msgid ""
 "The list of cast members may include many people. Set the maximum number "
 "returned from the search."
 msgstr ""
 
-#: src/fetch/imdbfetcher.cpp:1305
+#: src/fetch/imdbfetcher.cpp:1594
 msgid "Download cover &image"
 msgstr ""
 
-#: src/fetch/imdbfetcher.cpp:1309 src/fetch/amazonfetcher.cpp:992
+#: src/fetch/imdbfetcher.cpp:1598 src/fetch/amazonfetcher.cpp:992
 msgid ""
 "The cover image may be downloaded as well. However, too many large images in "
 "the collection may degrade performance."
@@ -2567,6 +2620,10 @@ msgstr ""
 
 #: src/fetch/srufetcher.cpp:443
 msgid "SRU Server"
+msgstr ""
+
+#: src/fetch/srufetcher.cpp:469 src/fetch/z3950fetcher.cpp:591
+msgid "Hos&t: "
 msgstr ""
 
 #: src/fetch/srufetcher.cpp:476 src/fetch/z3950fetcher.cpp:597
@@ -2720,35 +2777,15 @@ msgstr ""
 msgid "Secret key: "
 msgstr ""
 
-#: src/fetch/amazonfetcher.cpp:962
-#, fuzzy
-msgid "Country: "
-msgstr "Negara"
-
-#: src/fetch/amazonfetcher.cpp:965
-#, fuzzy
-msgid "United States"
-msgstr "United States"
-
 #: src/fetch/amazonfetcher.cpp:966
 #, fuzzy
 msgid "United Kingdom"
 msgstr "United Kingdom"
 
-#: src/fetch/amazonfetcher.cpp:967
-#, fuzzy
-msgid "Germany"
-msgstr "Jerman"
-
 #: src/fetch/amazonfetcher.cpp:968
 #, fuzzy
 msgid "Japan"
 msgstr "Jepun"
-
-#: src/fetch/amazonfetcher.cpp:969
-#, fuzzy
-msgid "France"
-msgstr "Perancis"
 
 #: src/fetch/amazonfetcher.cpp:970
 #, fuzzy
@@ -2757,14 +2794,6 @@ msgstr "Canada"
 
 #: src/fetch/amazonfetcher.cpp:971
 msgid "China"
-msgstr ""
-
-#: src/fetch/amazonfetcher.cpp:972
-msgid "Spain"
-msgstr ""
-
-#: src/fetch/amazonfetcher.cpp:973
-msgid "Italy"
 msgstr ""
 
 #: src/fetch/amazonfetcher.cpp:977
