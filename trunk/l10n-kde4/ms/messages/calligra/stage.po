@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-13 02:28+0200\n"
+"POT-Creation-Date: 2012-06-14 03:53+0200\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -313,7 +313,7 @@ msgstr "Salin Slaid"
 msgid "Copy the current slide"
 msgstr "Sebelum Slid Semasa"
 
-#: part/KPrView.cpp:88
+#: part/KPrView.cpp:88 part/KPrViewModeSlidesSorter.cpp:188
 #, fuzzy
 #| msgid "Delete Slide"
 msgid "Delete Slide"
@@ -572,7 +572,7 @@ msgid "Export"
 msgstr ""
 
 #: part/ui/KPrHtmlExportDialog.cpp:158 part/ui/KPrHtmlExportDialog.cpp:210
-#: part/KPrViewModeSlidesSorter.cpp:692
+#: part/KPrViewModeSlidesSorter.cpp:695
 #, fuzzy
 #| msgid "Arrow"
 msgid "Error"
@@ -633,7 +633,7 @@ msgid "Configure Presenter View"
 msgstr "Konfigur KPresenter"
 
 #: part/ui/KPrConfigureSlideShowDialog.cpp:41
-#: part/KPrViewModeSlidesSorter.cpp:663
+#: part/KPrViewModeSlidesSorter.cpp:666
 #, fuzzy
 #| msgid "All Files"
 msgid "All slides"
@@ -645,89 +645,101 @@ msgstr "Semua Fail"
 msgid "Configure Slide Show"
 msgstr "Konfigur Paparan Slaid"
 
-#: part/KPrViewModeSlidesSorter.cpp:77
-#, fuzzy
-msgid "Slides Sorter"
-msgstr "&Induk Slaid"
-
-#: part/KPrViewModeSlidesSorter.cpp:86
-#, fuzzy
-#| msgid "Slide Show"
-msgid "Slide Show: "
-msgstr "Paparan Slaid"
-
-#: part/KPrViewModeSlidesSorter.cpp:95
-#, fuzzy
-#| msgid "Slideshow"
-msgid "Add a new custom slide show"
-msgstr "Paparan slaid"
-
-#: part/KPrViewModeSlidesSorter.cpp:100
-#, fuzzy
-#| msgid "Before Current Slide"
-msgid "Delete current custom slide show"
-msgstr "Sebelum Slid Semasa"
-
-#: part/KPrViewModeSlidesSorter.cpp:104
-#, fuzzy
-#| msgid "Custom slide show"
-msgid "Add slides to current custom slide show"
-msgstr "Paparan slaid biasa"
-
-#: part/KPrViewModeSlidesSorter.cpp:109
-msgid "Remove slides from current custom slide show"
-msgstr ""
-
-#: part/KPrViewModeSlidesSorter.cpp:537
-#, fuzzy
-#| msgid "Slideshow"
-msgid "Add a new slide"
-msgstr "Paparan slaid"
-
-#: part/KPrViewModeSlidesSorter.cpp:538 part/KPrViewModeSlidesSorter.cpp:556
-#, fuzzy
-#| msgid "Selected slides:"
-msgid "Delete selected slides"
-msgstr "Slid yang dipilih:"
-
-#: part/KPrViewModeSlidesSorter.cpp:542
-#, fuzzy
-msgid "Rename"
-msgstr "Alih Keluar Pautan"
-
-#: part/KPrViewModeSlidesSorter.cpp:546
-#, fuzzy
-#| msgid "&Custom"
-msgid "Cut"
-msgstr "&Biasa"
-
-#: part/KPrViewModeSlidesSorter.cpp:547
-#, fuzzy
-#| msgid "Co&py"
-msgid "Copy"
-msgstr "&Salin"
-
-#: part/KPrViewModeSlidesSorter.cpp:548
-#, fuzzy
-#| msgid "Path"
-msgid "Paste"
-msgstr "Laluan"
-
-#: part/KPrViewModeSlidesSorter.cpp:644 part/KPrViewModeSlidesSorter.cpp:649
-#, fuzzy, kde-format
-#| msgid "Slide Show"
-msgid "Slide Show %1"
-msgstr "Paparan Slaid"
-
-#: part/KPrViewModeSlidesSorter.cpp:692
-msgid "There cannot be two slideshows with the same name."
-msgstr ""
-
 #: part/KPrViewModeNotes.cpp:52
 #, fuzzy
 #| msgid "Note"
 msgid "Notes"
 msgstr "Nota"
+
+#: part/KPrViewModeSlidesSorter.cpp:79
+#, fuzzy
+msgid "Slides Sorter"
+msgstr "&Induk Slaid"
+
+#: part/KPrViewModeSlidesSorter.cpp:88
+#, fuzzy
+#| msgid "Slide Show"
+msgid "Slide Show: "
+msgstr "Paparan Slaid"
+
+#: part/KPrViewModeSlidesSorter.cpp:97
+#, fuzzy
+#| msgid "Slideshow"
+msgid "Add a new custom slide show"
+msgstr "Paparan slaid"
+
+#: part/KPrViewModeSlidesSorter.cpp:102
+#, fuzzy
+#| msgid "Before Current Slide"
+msgid "Delete current custom slide show"
+msgstr "Sebelum Slid Semasa"
+
+#: part/KPrViewModeSlidesSorter.cpp:106
+#, fuzzy
+#| msgid "Custom slide show"
+msgid "Add slides to current custom slide show"
+msgstr "Paparan slaid biasa"
+
+#: part/KPrViewModeSlidesSorter.cpp:111
+msgid "Remove slides from current custom slide show"
+msgstr ""
+
+#: part/KPrViewModeSlidesSorter.cpp:187
+#, fuzzy
+#| msgid "Delete Slide"
+msgid "Duplicate Slide"
+msgstr "Hapuskan Slaid"
+
+#: part/KPrViewModeSlidesSorter.cpp:189
+#, fuzzy
+#| msgid "Create HTML Slideshow"
+msgid "Start Slideshow"
+msgstr "Cipta Paparan Slaid HTML"
+
+#: part/KPrViewModeSlidesSorter.cpp:540
+#, fuzzy
+#| msgid "Slideshow"
+msgid "Add a new slide"
+msgstr "Paparan slaid"
+
+#: part/KPrViewModeSlidesSorter.cpp:541 part/KPrViewModeSlidesSorter.cpp:559
+#, fuzzy
+#| msgid "Selected slides:"
+msgid "Delete selected slides"
+msgstr "Slid yang dipilih:"
+
+#: part/KPrViewModeSlidesSorter.cpp:545
+#, fuzzy
+msgid "Rename"
+msgstr "Alih Keluar Pautan"
+
+#: part/KPrViewModeSlidesSorter.cpp:549
+#, fuzzy
+#| msgid "&Custom"
+msgid "Cut"
+msgstr "&Biasa"
+
+#: part/KPrViewModeSlidesSorter.cpp:550
+#, fuzzy
+#| msgid "Co&py"
+msgid "Copy"
+msgstr "&Salin"
+
+#: part/KPrViewModeSlidesSorter.cpp:551
+#, fuzzy
+#| msgid "Path"
+msgid "Paste"
+msgstr "Laluan"
+
+#: part/KPrViewModeSlidesSorter.cpp:647 part/KPrViewModeSlidesSorter.cpp:652
+#, fuzzy, kde-format
+#| msgid "Slide Show"
+msgid "Slide Show %1"
+msgstr "Paparan Slaid"
+
+#: part/KPrViewModeSlidesSorter.cpp:695
+msgid "There cannot be two slideshows with the same name."
+msgstr ""
 
 #: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:94
 #, fuzzy
@@ -2533,11 +2545,6 @@ msgstr "Keputusan Semak Eja"
 #~| msgid "Duplicate Slide"
 #~ msgid "Available Slides"
 #~ msgstr "Duplikasikan Slaid"
-
-#, fuzzy
-#~| msgid "Create HTML Slideshow"
-#~ msgid "Current Slideshow:"
-#~ msgstr "Cipta Paparan Slaid HTML"
 
 #, fuzzy
 #~| msgid "Slide"
