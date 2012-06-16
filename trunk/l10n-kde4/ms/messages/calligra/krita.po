@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-14 03:47+0200\n"
+"POT-Creation-Date: 2012-06-16 03:15+0200\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -8121,14 +8121,14 @@ msgstr "Ricih lapisan"
 
 #. i18n: file: ui/forms/kis_previewwidgetbase.ui:122
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnZoomOut)
-#: rc.cpp:3201
+#: rc.cpp:3201 ui/input/kis_zoom_action.cpp:49
 #, fuzzy
 msgid "Zoom Out"
 msgstr "Alat zum "
 
 #. i18n: file: ui/forms/kis_previewwidgetbase.ui:135
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnZoomIn)
-#: rc.cpp:3204
+#: rc.cpp:3204 ui/input/kis_zoom_action.cpp:48
 #, fuzzy
 msgid "Zoom In"
 msgstr "&Pen Alat"
@@ -14071,6 +14071,41 @@ msgid ""
 "<i>./0</i> represents the first child of the current layer"
 msgstr ""
 
+#: ui/tool/kis_tool_freehand_helper.cpp:127
+msgid "Freehand Stroke"
+msgstr ""
+
+#: ui/tool/kis_tool_freehand.cc:90
+#, fuzzy
+msgid "Increase Brush Size"
+msgstr "Berus Teks"
+
+#: ui/tool/kis_tool_freehand.cc:96
+#, fuzzy
+#| msgid "Brush size"
+msgid "Decrease Brush Size"
+msgstr "Saiz berus"
+
+#: ui/tool/kis_tool.cc:111
+#, fuzzy
+msgid "Swap Foreground and Background Color"
+msgstr "Warna latar depan"
+
+#: ui/tool/kis_tool.cc:117
+#, fuzzy
+msgid "Reset Foreground and Background Color"
+msgstr "Warna latar depan"
+
+#: ui/tool/kis_tool.cc:519
+#, fuzzy
+msgid "Clear"
+msgstr "Bears"
+
+#: ui/tool/kis_tool.cc:547
+#, fuzzy
+msgid "No options"
+msgstr "Topeng alfa"
+
 #: ui/tool/kis_tool_paint.cc:92
 msgid "Make brush color lighter"
 msgstr ""
@@ -14088,41 +14123,6 @@ msgstr "Prapapar"
 #, fuzzy
 msgid "Decrease opacity"
 msgstr "Prapapar"
-
-#: ui/tool/kis_tool_freehand_helper.cpp:127
-msgid "Freehand Stroke"
-msgstr ""
-
-#: ui/tool/kis_tool.cc:111
-#, fuzzy
-msgid "Swap Foreground and Background Color"
-msgstr "Warna latar depan"
-
-#: ui/tool/kis_tool.cc:117
-#, fuzzy
-msgid "Reset Foreground and Background Color"
-msgstr "Warna latar depan"
-
-#: ui/tool/kis_tool.cc:595
-#, fuzzy
-msgid "Clear"
-msgstr "Bears"
-
-#: ui/tool/kis_tool.cc:623
-#, fuzzy
-msgid "No options"
-msgstr "Topeng alfa"
-
-#: ui/tool/kis_tool_freehand.cc:90
-#, fuzzy
-msgid "Increase Brush Size"
-msgstr "Berus Teks"
-
-#: ui/tool/kis_tool_freehand.cc:96
-#, fuzzy
-#| msgid "Brush size"
-msgid "Decrease Brush Size"
-msgstr "Saiz berus"
 
 #: ui/widgets/kis_channelflags_widget.cpp:39
 msgid ""
@@ -14242,6 +14242,132 @@ msgstr "Konfigurasi Clmg"
 msgid ""
 "Cannot start Colors Settings panel from KDE Control Center. Please check "
 "your system..."
+msgstr ""
+
+#: ui/input/kis_abstract_input_action.cpp:36
+#, fuzzy
+msgid "Activate"
+msgstr "Lapisan Teralih"
+
+#: ui/input/kis_alternate_invocation_action.cpp:33
+#, fuzzy
+#| msgid "Alternating"
+msgid "Alternate Invocation"
+msgstr "Silih Ganti"
+
+#: ui/input/kis_alternate_invocation_action.cpp:34
+msgid ""
+"Alternate Invocation performs an alternate action with the current tool. For "
+"example, using the brush tool it picks a color from the canvas."
+msgstr ""
+
+#: ui/input/kis_change_primary_setting_action.cpp:29
+msgid "Change Tool Primary Setting"
+msgstr ""
+
+#: ui/input/kis_change_primary_setting_action.cpp:30
+msgid ""
+"Changes a tool's \"Primary Setting\", for example the brush size for the "
+"brush tool."
+msgstr ""
+
+#: ui/input/kis_input_manager.cpp:100
+#, fuzzy
+msgid "Set Mirror Axis"
+msgstr "Ricik Imej"
+
+#: ui/input/kis_pan_action.cpp:47
+#, fuzzy
+#| msgid "Canvas"
+msgid "Pan Canvas"
+msgstr "Kanvas"
+
+#: ui/input/kis_pan_action.cpp:50
+msgid "Toggle Pan Mode"
+msgstr ""
+
+#: ui/input/kis_pan_action.cpp:51
+#, fuzzy
+#| msgid "Left:"
+msgid "Pan Left"
+msgstr "Kiri:"
+
+#: ui/input/kis_pan_action.cpp:52
+#, fuzzy
+msgid "Pan Right"
+msgstr "Tinggi:"
+
+#: ui/input/kis_pan_action.cpp:53
+msgid "Pan Up"
+msgstr ""
+
+#: ui/input/kis_pan_action.cpp:54
+#, fuzzy
+#| msgid "Down"
+msgid "Pan Down"
+msgstr "Bawah"
+
+#: ui/input/kis_rotate_canvas_action.cpp:44
+#, fuzzy
+#| msgid "Rotate Image"
+msgid "Rotate Canvas"
+msgstr "Putar Imej"
+
+#: ui/input/kis_rotate_canvas_action.cpp:46
+#, fuzzy
+msgid "Toggle Rotate Mode"
+msgstr "Putar"
+
+#: ui/input/kis_rotate_canvas_action.cpp:47
+#, fuzzy
+#| msgid "Rotate Layer"
+msgid "Rotate Left"
+msgstr "Putar Lapisan"
+
+#: ui/input/kis_rotate_canvas_action.cpp:48
+#, fuzzy
+#| msgid "Rotating"
+msgid "Rotate Right"
+msgstr "Pemutaran"
+
+#: ui/input/kis_rotate_canvas_action.cpp:49
+#, fuzzy
+#| msgid "Rotating"
+msgid "Reset Rotation"
+msgstr "Pemutaran"
+
+#: ui/input/kis_show_palette_action.cpp:31
+#, fuzzy
+msgid "Show Popup Palette"
+msgstr "Pelet"
+
+#: ui/input/kis_tool_invocation_action.cpp:49
+#, fuzzy
+msgid "Tool Invocation"
+msgstr "Konfigurasi Clmg"
+
+#: ui/input/kis_tool_invocation_action.cpp:50
+msgid ""
+"Tool Invocation invokes the current tool, for example, using the brush tool, "
+"it will start painting."
+msgstr ""
+
+#: ui/input/kis_zoom_action.cpp:44
+#, fuzzy
+msgid "Zoom Canvas"
+msgstr "&Pen Alat"
+
+#: ui/input/kis_zoom_action.cpp:47
+msgid "Toggle Zoom Mode"
+msgstr ""
+
+#: ui/input/kis_zoom_action.cpp:50
+#, fuzzy
+msgid "Reset Zoom to 100%"
+msgstr "&Pilih Semula"
+
+#: ui/input/kis_zoom_action.cpp:51
+msgid "Fit to Page"
 msgstr ""
 
 #: main.cc:50
@@ -15266,10 +15392,6 @@ msgstr "Fail atau URL hendak dibuka"
 #~ msgstr "Saiz berus"
 
 #, fuzzy
-#~ msgid "Mirror: "
-#~ msgstr "Ricik Imej"
-
-#, fuzzy
 #~ msgid "Move a layer (SHIFT+V)"
 #~ msgstr "Lapisan Teralih"
 
@@ -15524,11 +15646,6 @@ msgstr "Fail atau URL hendak dibuka"
 #, fuzzy
 #~ msgid "Pixel Eraser"
 #~ msgstr "Pilih Pemadam"
-
-#, fuzzy
-#~| msgid "Canvas"
-#~ msgid "Size Canvas"
-#~ msgstr "Kanvas"
 
 #, fuzzy
 #~| msgid "Color Settings"
@@ -16033,10 +16150,6 @@ msgstr "Fail atau URL hendak dibuka"
 #~ msgstr "Berus Teks"
 
 #, fuzzy
-#~ msgid "&PopupPalette"
-#~ msgstr "Pelet"
-
-#, fuzzy
 #~ msgid "All Images"
 #~ msgstr "Imej"
 
@@ -16416,9 +16529,6 @@ msgstr "Fail atau URL hendak dibuka"
 #~ msgid "setPixel/getPixel"
 #~ msgstr "setPixel/getPixel"
 
-#~ msgid "Rotating"
-#~ msgstr "Pemutaran"
-
 #~ msgid "Rendering"
 #~ msgstr "Menyediakan"
 
@@ -16553,9 +16663,6 @@ msgstr "Fail atau URL hendak dibuka"
 #~| msgid "Gradient factor:"
 #~ msgid "Orientation:"
 #~ msgstr "Faktor kecerunan:"
-
-#~ msgid "Down"
-#~ msgstr "Bawah"
 
 #~ msgid "&Strength:"
 #~ msgstr "&Kekuatan:"
