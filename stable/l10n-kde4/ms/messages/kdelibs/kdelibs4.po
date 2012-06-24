@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-19 19:42+0200\n"
+"POT-Creation-Date: 2012-06-24 12:03+0200\n"
 "PO-Revision-Date: 2011-07-16 00:57+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -4887,54 +4887,6 @@ msgstr "Ralat soket tidak diketahui"
 msgid "Operation not supported"
 msgstr "Operasi tidak disokong"
 
-#: kdecore/network/netsupp.cpp:891 kdecore/network/k3resolver.cpp:545
-msgid "no error"
-msgstr "tiada ralat"
-
-#: kdecore/network/netsupp.cpp:892
-msgid "address family for nodename not supported"
-msgstr "alamat keluarga untuk nama nod tidak disokong"
-
-#: kdecore/network/netsupp.cpp:893 kdecore/network/k3resolver.cpp:547
-msgid "temporary failure in name resolution"
-msgstr "kegagalan sementara di dalam resolusi nama"
-
-#: kdecore/network/netsupp.cpp:894
-msgid "invalid value for 'ai_flags'"
-msgstr "nilai tidak sah untuk 'ai_flags'"
-
-#: kdecore/network/netsupp.cpp:895 kdecore/network/k3resolver.cpp:548
-msgid "non-recoverable failure in name resolution"
-msgstr "Ralat-tidak-dapat-pulih pada resolusi nama"
-
-#: kdecore/network/netsupp.cpp:896
-msgid "'ai_family' not supported"
-msgstr "'ai_family' tidak disokong"
-
-#: kdecore/network/netsupp.cpp:897 kdecore/network/k3resolver.cpp:550
-msgid "memory allocation failure"
-msgstr "Kegagalan perletakan memori"
-
-#: kdecore/network/netsupp.cpp:898
-msgid "no address associated with nodename"
-msgstr "tiada alamat dikaitkan dengan nama nod"
-
-#: kdecore/network/netsupp.cpp:899 kdecore/network/k3resolver.cpp:551
-msgid "name or service not known"
-msgstr "nama atau servis tidak diketahui"
-
-#: kdecore/network/netsupp.cpp:900
-msgid "servname not supported for ai_socktype"
-msgstr "nama pelayan tidak disokong untuk ai_socktype"
-
-#: kdecore/network/netsupp.cpp:901
-msgid "'ai_socktype' not supported"
-msgstr "'ai_socktype' tidak disokong"
-
-#: kdecore/network/netsupp.cpp:902
-msgid "system error"
-msgstr "Ralat sistem"
-
 #: kdecore/network/k3socks.cpp:137
 msgid "NEC SOCKS client"
 msgstr "Klien NEC SOCKS "
@@ -4948,13 +4900,33 @@ msgstr "Klien Dante SOCKS "
 msgid "Timed out trying to connect to remote host"
 msgstr "Masa tamat mencuba menyambung ke hos jauh"
 
+#: kdecore/network/k3resolver.cpp:545 kdecore/network/netsupp.cpp:894
+msgid "no error"
+msgstr "tiada ralat"
+
 #: kdecore/network/k3resolver.cpp:546
 msgid "requested family not supported for this host name"
 msgstr "kelompok yang diminta tidak disokong untuk nama hos ini"
 
+#: kdecore/network/k3resolver.cpp:547 kdecore/network/netsupp.cpp:896
+msgid "temporary failure in name resolution"
+msgstr "kegagalan sementara di dalam resolusi nama"
+
+#: kdecore/network/k3resolver.cpp:548 kdecore/network/netsupp.cpp:898
+msgid "non-recoverable failure in name resolution"
+msgstr "Ralat-tidak-dapat-pulih pada resolusi nama"
+
 #: kdecore/network/k3resolver.cpp:549
 msgid "invalid flags"
 msgstr "penanda tidak sah"
+
+#: kdecore/network/k3resolver.cpp:550 kdecore/network/netsupp.cpp:900
+msgid "memory allocation failure"
+msgstr "Kegagalan perletakan memori"
+
+#: kdecore/network/k3resolver.cpp:551 kdecore/network/netsupp.cpp:902
+msgid "name or service not known"
+msgstr "nama atau servis tidak diketahui"
 
 #: kdecore/network/k3resolver.cpp:552
 msgid "requested family not supported"
@@ -5055,6 +5027,34 @@ msgstr "Rantaian sijil terlalu panjang"
 msgctxt "SSL error"
 msgid "Unknown error"
 msgstr "Ralat tidak diketahui"
+
+#: kdecore/network/netsupp.cpp:895
+msgid "address family for nodename not supported"
+msgstr "alamat keluarga untuk nama nod tidak disokong"
+
+#: kdecore/network/netsupp.cpp:897
+msgid "invalid value for 'ai_flags'"
+msgstr "nilai tidak sah untuk 'ai_flags'"
+
+#: kdecore/network/netsupp.cpp:899
+msgid "'ai_family' not supported"
+msgstr "'ai_family' tidak disokong"
+
+#: kdecore/network/netsupp.cpp:901
+msgid "no address associated with nodename"
+msgstr "tiada alamat dikaitkan dengan nama nod"
+
+#: kdecore/network/netsupp.cpp:903
+msgid "servname not supported for ai_socktype"
+msgstr "nama pelayan tidak disokong untuk ai_socktype"
+
+#: kdecore/network/netsupp.cpp:904
+msgid "'ai_socktype' not supported"
+msgstr "'ai_socktype' tidak disokong"
+
+#: kdecore/network/netsupp.cpp:905
+msgid "system error"
+msgstr "Ralat sistem"
 
 #: kdecore/services/kmimetyperepository.cpp:611
 #, kde-format
@@ -5349,21 +5349,6 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Autokesan"
 
-#: kdeui/actions/kaction.cpp:122
-#, kde-format
-msgid ""
-"The key sequence '%1' is ambiguous. Use 'Configure Shortcuts'\n"
-"from the 'Settings' menu to solve the ambiguity.\n"
-"No action will be triggered."
-msgstr ""
-"Jujukan kekunci '%1' adalah kabur. Guna 'Tetapkan Pintasan'\n"
-"dari menu 'Tetapan' untuk menyelesaikan kekaburan ini.\n"
-"Tiada tindakan akan dilaksanakan."
-
-#: kdeui/actions/kaction.cpp:126
-msgid "Ambiguous shortcut detected"
-msgstr "Pintasan kabur dikesan"
-
 #: kdeui/actions/krecentfilesaction.cpp:81
 msgid "No Entries"
 msgstr "Tiada Masukan"
@@ -5456,6 +5441,21 @@ msgstr "Skrin Penuh"
 msgctxt "@info:tooltip"
 msgid "Display the window in full screen"
 msgstr ""
+
+#: kdeui/actions/kaction.cpp:122
+#, kde-format
+msgid ""
+"The key sequence '%1' is ambiguous. Use 'Configure Shortcuts'\n"
+"from the 'Settings' menu to solve the ambiguity.\n"
+"No action will be triggered."
+msgstr ""
+"Jujukan kekunci '%1' adalah kabur. Guna 'Tetapkan Pintasan'\n"
+"dari menu 'Tetapan' untuk menyelesaikan kekaburan ini.\n"
+"Tiada tindakan akan dilaksanakan."
+
+#: kdeui/actions/kaction.cpp:126
+msgid "Ambiguous shortcut detected"
+msgstr "Pintasan kabur dikesan"
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:84
 msgid ""
