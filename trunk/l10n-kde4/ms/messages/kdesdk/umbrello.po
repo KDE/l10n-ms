@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-17 05:54+0200\n"
+"POT-Creation-Date: 2012-06-26 08:06+0200\n"
 "PO-Revision-Date: 2007-02-25 15:47+0730\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -14,6 +14,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
+
+#: debug/debug_utils.cpp:44
+#, fuzzy
+msgid "Class Name"
+msgstr "Name=KDevAdaProject"
 
 #: clipboard/umlclipboard.cpp:840
 msgid ""
@@ -89,65 +94,27 @@ msgstr ""
 msgid "Cannot Create Folder"
 msgstr ""
 
-#: dialogs/umltemplatedialog.cpp:39
+#: dialogs/umlentityattributedialog.cpp:45
 #, fuzzy
-msgid "Template Properties"
-msgstr ""
-"*.pro|Fail Projek\n"
-"*|Semua Fail"
+msgid "Entity Attribute Properties"
+msgstr "Tajuk laman baru"
 
-#: dialogs/umltemplatedialog.cpp:64 dialogs/umlentityattributedialog.cpp:70
-#: dialogs/activitydialog.cpp:141 dialogs/umlattributedialog.cpp:68
+#: dialogs/umlentityattributedialog.cpp:70 dialogs/umlattributedialog.cpp:68
 #: dialogs/objectnodedialog.cpp:141 dialogs/umloperationdialog.cpp:88
-#: dialogs/statedialog.cpp:121
+#: dialogs/statedialog.cpp:121 dialogs/umltemplatedialog.cpp:64
+#: dialogs/activitydialog.cpp:141
 #, fuzzy
 msgid "General Properties"
 msgstr ""
 "*.pro|Fail Projek\n"
 "*|Semua Fail"
 
-#: dialogs/umltemplatedialog.cpp:69 dialogs/umlentityattributedialog.cpp:75
-#: dialogs/umlattributedialog.cpp:73 dialogs/parmpropdlg.cpp:78
-#: dialogs/umloperationdialog.cpp:101
+#: dialogs/umlentityattributedialog.cpp:75 dialogs/umlattributedialog.cpp:73
+#: dialogs/umloperationdialog.cpp:101 dialogs/umltemplatedialog.cpp:69
+#: dialogs/parmpropdlg.cpp:78
 #, fuzzy
 msgid "&Type:"
 msgstr "Jenis"
-
-#: dialogs/umltemplatedialog.cpp:77
-#, fuzzy
-msgctxt "template name"
-msgid "&Name:"
-msgstr "Nama:"
-
-#: dialogs/umltemplatedialog.cpp:81 dialogs/classgenpage.cpp:116
-#, fuzzy
-msgid "&Stereotype name:"
-msgstr "Name=KDevAdaProject"
-
-#: dialogs/umltemplatedialog.cpp:148
-msgid "You have entered an invalid template name."
-msgstr ""
-
-#: dialogs/umltemplatedialog.cpp:149
-#, fuzzy
-msgid "Template Name Invalid"
-msgstr "Name=KDevelop: KDE/C++"
-
-#: dialogs/umltemplatedialog.cpp:158
-msgid ""
-"The template parameter name you have chosen is already being used in this "
-"operation."
-msgstr ""
-
-#: dialogs/umltemplatedialog.cpp:159
-#, fuzzy
-msgid "Template Name Not Unique"
-msgstr "Name=KDevelop: KDE/C++"
-
-#: dialogs/umlentityattributedialog.cpp:45
-#, fuzzy
-msgid "Entity Attribute Properties"
-msgstr "Tajuk laman baru"
 
 #: dialogs/umlentityattributedialog.cpp:83
 #, fuzzy
@@ -161,8 +128,8 @@ msgid "&Default value:"
 msgstr "Bahasa"
 
 #: dialogs/umlentityattributedialog.cpp:91 dialogs/umlattributedialog.cpp:89
-#: dialogs/parmpropdlg.cpp:93 dialogs/classgenpage.cpp:355
-#: dialogs/umloperationdialog.cpp:108
+#: dialogs/classgenpage.cpp:355 dialogs/umloperationdialog.cpp:108
+#: dialogs/parmpropdlg.cpp:93
 #, fuzzy
 msgid "Stereotype name:"
 msgstr "Name=KDevAdaProject"
@@ -216,11 +183,17 @@ msgstr ""
 msgid "Entity Attribute Name Not Unique"
 msgstr "Name=KDevelop: KDE/C++"
 
-#: dialogs/assocgenpage.cpp:69 dialogs/umlviewdialog.cpp:40
-#: dialogs/classpropdlg.cpp:128 dialogs/activitydialog.cpp:36
-#: dialogs/activitydialog.cpp:145 dialogs/parmpropdlg.cpp:71
+#. i18n: file: dialogs/umlrolepropertiesbase.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
+#: dialogs/umlroledialog.cpp:24 rc.cpp:1018
+msgid "Role Properties"
+msgstr ""
+
+#: dialogs/assocgenpage.cpp:69 dialogs/classpropdlg.cpp:128
 #: dialogs/objectnodedialog.cpp:39 dialogs/statedialog.cpp:37
-#: dialogs/statedialog.cpp:125 refactoring/refactoringassistant.cpp:453
+#: dialogs/statedialog.cpp:125 dialogs/parmpropdlg.cpp:71
+#: dialogs/umlviewdialog.cpp:40 dialogs/activitydialog.cpp:36
+#: dialogs/activitydialog.cpp:145 refactoring/refactoringassistant.cpp:453
 #: listpopupmenu.cpp:619
 #, fuzzy
 msgid "Properties"
@@ -240,13 +213,13 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDocumentation)
 #. i18n: file: dialogs/umlrolepropertiesbase.ui:140
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDocumentation)
-#: dialogs/assocgenpage.cpp:70 dialogs/activitydialog.cpp:199
-#: dialogs/notedialog.cpp:38 dialogs/parmpropdlg.cpp:115
-#: dialogs/classifierlistpage.cpp:218 dialogs/assocrolepage.cpp:79
-#: dialogs/assocrolepage.cpp:80 dialogs/objectnodedialog.cpp:197
+#: dialogs/assocgenpage.cpp:70 dialogs/classifierlistpage.cpp:218
+#: dialogs/assocrolepage.cpp:79 dialogs/assocrolepage.cpp:80
 #: dialogs/classgenpage.cpp:230 dialogs/classgenpage.cpp:313
-#: dialogs/classgenpage.cpp:377 dialogs/statedialog.cpp:140 rc.cpp:38
-#: rc.cpp:740 rc.cpp:800 rc.cpp:863 rc.cpp:943 rc.cpp:1011
+#: dialogs/classgenpage.cpp:377 dialogs/objectnodedialog.cpp:197
+#: dialogs/statedialog.cpp:140 dialogs/notedialog.cpp:38
+#: dialogs/parmpropdlg.cpp:115 dialogs/activitydialog.cpp:199 rc.cpp:38
+#: rc.cpp:740 rc.cpp:800 rc.cpp:863 rc.cpp:1009 rc.cpp:1054
 msgid "Documentation"
 msgstr ""
 
@@ -260,39 +233,6 @@ msgstr "Nama:"
 #: dialogs/assocgenpage.cpp:94
 msgid "Type:"
 msgstr "Jenis:"
-
-#. i18n: file: dialogs/umlrolepropertiesbase.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
-#: dialogs/umlroledialog.cpp:24 rc.cpp:975
-msgid "Role Properties"
-msgstr ""
-
-#: dialogs/umlfiledialog.cpp:89
-#, fuzzy
-msgid "All Supported Files"
-msgstr ""
-"*.db|Fail Pengkalan Data\n"
-"*|Semua Fail"
-
-#: dialogs/selectopdlg.cpp:37 dialogs/selectopdlg.cpp:48
-#, fuzzy
-msgid "Select Operation"
-msgstr "Tambah Bar Alatan"
-
-#: dialogs/selectopdlg.cpp:56
-#, fuzzy
-msgid "Sequence number:"
-msgstr "Nombor baris:"
-
-#: dialogs/selectopdlg.cpp:59
-#, fuzzy
-msgid "Class operation:"
-msgstr "%1 (widget tersendiri)"
-
-#: dialogs/selectopdlg.cpp:68
-#, fuzzy
-msgid "Custom operation:"
-msgstr "%1 (widget tersendiri)"
 
 #: dialogs/generaloptionpage.cpp:43
 msgctxt "miscellaneous group box"
@@ -366,71 +306,30 @@ msgstr ""
 msgid "Default Language :"
 msgstr "Bahasa"
 
+#: dialogs/selectopdlg.cpp:37 dialogs/selectopdlg.cpp:48
+#, fuzzy
+msgid "Select Operation"
+msgstr "Tambah Bar Alatan"
+
+#: dialogs/selectopdlg.cpp:56
+#, fuzzy
+msgid "Sequence number:"
+msgstr "Nombor baris:"
+
+#: dialogs/selectopdlg.cpp:59
+#, fuzzy
+msgid "Class operation:"
+msgstr "%1 (widget tersendiri)"
+
+#: dialogs/selectopdlg.cpp:68
+#, fuzzy
+msgid "Custom operation:"
+msgstr "%1 (widget tersendiri)"
+
 #: dialogs/assocpage.cpp:38 dialogs/classpropdlg.cpp:364
 #, fuzzy
 msgid "Associations"
 msgstr "Name=KDevAdaProject"
-
-#. i18n: file: dialogs/exportallviewsdialogbase.ui:52
-#. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
-#: dialogs/exportallviewsdialog.cpp:82 rc.cpp:958
-msgid "The format that the images will be exported to"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:77 dialogs/classoptionspage.cpp:147
-#: dialogs/codeeditor.cpp:789 listpopupmenu.cpp:935
-#, fuzzy
-msgid "Show"
-msgstr "Papar penanda"
-
-#: dialogs/classoptionspage.cpp:84 dialogs/classoptionspage.cpp:153
-#, fuzzy
-msgid "Operatio&ns"
-msgstr "Tambah Bar Alatan"
-
-#: dialogs/classoptionspage.cpp:88 dialogs/classoptionspage.cpp:170
-#, fuzzy
-msgid "&Visibility"
-msgstr "Papar penanda"
-
-#: dialogs/classoptionspage.cpp:97 dialogs/classoptionspage.cpp:157
-#, fuzzy
-msgid "O&peration signature"
-msgstr "Papar nombor baris"
-
-#: dialogs/classoptionspage.cpp:101 dialogs/classoptionspage.cpp:174
-#, fuzzy
-msgid "Pac&kage"
-msgstr "Name=KDevAdaProject"
-
-#: dialogs/classoptionspage.cpp:108 dialogs/classoptionspage.cpp:162
-#, fuzzy
-msgid "Att&ributes"
-msgstr "Tambah Bar Alatan"
-
-#: dialogs/classoptionspage.cpp:112 dialogs/classoptionspage.cpp:178
-#, fuzzy
-msgid "Stereot&ype"
-msgstr "Papar nombor baris"
-
-#: dialogs/classoptionspage.cpp:116 dialogs/classoptionspage.cpp:166
-#, fuzzy
-msgid "Attr&ibute signature"
-msgstr "Papar nombor baris"
-
-#: dialogs/classoptionspage.cpp:125 dialogs/classoptionspage.cpp:186
-#, fuzzy
-msgid "&Public Only"
-msgstr "Awam"
-
-#: dialogs/classoptionspage.cpp:131
-msgid "Draw as circle"
-msgstr ""
-
-#: dialogs/classoptionspage.cpp:182
-#, fuzzy
-msgid "&Attribute associations"
-msgstr "Name=KDevelop: KDE/C++"
 
 #: dialogs/umluniqueconstraintdialog.cpp:42
 msgid "Unique Constraint Properties"
@@ -471,84 +370,6 @@ msgstr ""
 msgid "Constraint Name Invalid"
 msgstr "Name=KDevelop: KDE/C++"
 
-#: dialogs/umlviewdialog.cpp:91 dialogs/settingsdlg.cpp:167
-#, fuzzy
-#| msgid "General"
-msgctxt "general settings page"
-msgid "General"
-msgstr "Umum"
-
-#: dialogs/umlviewdialog.cpp:92 dialogs/settingsdlg.cpp:168
-#: dialogs/classpropdlg.cpp:242 dialogs/classpropdlg.cpp:376
-#: dialogs/assocpropdlg.cpp:94 dialogs/umlforeignkeyconstraintdialog.cpp:197
-#, fuzzy
-#| msgid "General"
-msgid "General Settings"
-msgstr "Umum"
-
-#: dialogs/umlviewdialog.cpp:121
-#, fuzzy
-msgctxt "classes display options page"
-msgid "Display"
-msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
-
-#: dialogs/umlviewdialog.cpp:122
-#, fuzzy
-msgid "Classes Display Options"
-msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
-
-#: dialogs/umlviewdialog.cpp:137
-#, fuzzy
-msgctxt "diagram style page"
-msgid "Style"
-msgstr "Jenis MIME"
-
-#: dialogs/umlviewdialog.cpp:138
-#, fuzzy
-msgid "Diagram Style"
-msgstr "Name=KDevelop: KDE/C++"
-
-#. i18n: file: umbrello.kcfg:160
-#. i18n: ectx: label, entry (uiFont), group (UI Options)
-#. i18n: file: umbrello.kcfg:270
-#. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
-#: dialogs/umlviewdialog.cpp:153 dialogs/settingsdlg.cpp:305
-#: dialogs/classpropdlg.cpp:394 dialogs/dialogbase.cpp:57 rc.cpp:1368
-#: rc.cpp:1476
-#, fuzzy
-msgid "Font"
-msgstr "Font:"
-
-#: dialogs/umlviewdialog.cpp:154 dialogs/settingsdlg.cpp:306
-#: dialogs/classpropdlg.cpp:395 dialogs/dialogbase.cpp:57
-#: dialogs/assocpropdlg.cpp:112
-#, fuzzy
-#| msgid "Formatting"
-msgid "Font Settings"
-msgstr "Memformat"
-
-#: dialogs/umlviewdialog.cpp:222
-msgid "The name you have entered is invalid."
-msgstr ""
-
-#: dialogs/umlviewdialog.cpp:223 classifier.cpp:393 classifier.cpp:770
-#: package.cpp:175 object_factory.cpp:197 enum.cpp:107 entity.cpp:125
-#: entity.cpp:178 entity.cpp:228 entity.cpp:277 umldoc.cpp:1284
-#: umldoc.cpp:1349 umldoc.cpp:1379 umldoc.cpp:1413
-#, fuzzy
-msgid "Invalid Name"
-msgstr "Name=KDevAdaProject"
-
-#: dialogs/umlviewdialog.cpp:232
-msgid "The name you have entered is not unique."
-msgstr ""
-
-#: dialogs/umlviewdialog.cpp:233 umllistview.cpp:2329 umllistview.cpp:2336
-#: umllistview.cpp:2601 umldoc.cpp:1419
-#, fuzzy
-msgid "Name Not Unique"
-msgstr "Name=KDevelop: KDE/C++"
-
 #: dialogs/constraintlistpage.cpp:72 listpopupmenu.cpp:1229
 msgid "Unique Constraint..."
 msgstr ""
@@ -569,6 +390,12 @@ msgstr "Teks baru"
 #: dialogs/codeeditor.cpp:783
 msgid "Hide"
 msgstr ""
+
+#: dialogs/codeeditor.cpp:789 dialogs/classoptionspage.cpp:77
+#: dialogs/classoptionspage.cpp:147 listpopupmenu.cpp:935
+#, fuzzy
+msgid "Show"
+msgstr "Papar penanda"
 
 #: dialogs/codeeditor.cpp:798
 msgid "Hide Comment"
@@ -658,6 +485,21 @@ msgstr "Nombor baris:"
 msgid "&Use fill color"
 msgstr "Guna Hint Saiz"
 
+#: dialogs/settingsdlg.cpp:167 dialogs/umlviewdialog.cpp:91
+#, fuzzy
+#| msgid "General"
+msgctxt "general settings page"
+msgid "General"
+msgstr "Umum"
+
+#: dialogs/settingsdlg.cpp:168 dialogs/classpropdlg.cpp:242
+#: dialogs/classpropdlg.cpp:376 dialogs/umlforeignkeyconstraintdialog.cpp:197
+#: dialogs/assocpropdlg.cpp:94 dialogs/umlviewdialog.cpp:92
+#, fuzzy
+#| msgid "General"
+msgid "General Settings"
+msgstr "Umum"
+
 #: dialogs/settingsdlg.cpp:178
 #, fuzzy
 #| msgid "Class"
@@ -709,7 +551,7 @@ msgstr "Papar penanda"
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showOpSigs)
 #. i18n: file: umbrello.kcfg:218
 #. i18n: ectx: whatsthis, entry (showOpSig), group (Class Options)
-#: dialogs/settingsdlg.cpp:213 rc.cpp:915 rc.cpp:1437
+#: dialogs/settingsdlg.cpp:213 rc.cpp:981 rc.cpp:1437
 #, fuzzy
 msgid "Show operation signature"
 msgstr "Papar nombor baris"
@@ -750,7 +592,7 @@ msgstr "%1 (widget tersendiri)"
 #. i18n: file: dialogs/umlrolepropertiesbase.ui:73
 #. i18n: ectx: property (text), widget (QRadioButton, ui_pPublicRB)
 #: dialogs/settingsdlg.cpp:234 dialogs/settingsdlg.cpp:242 rc.cpp:65 rc.cpp:80
-#: rc.cpp:773 rc.cpp:788 rc.cpp:836 rc.cpp:851 rc.cpp:987
+#: rc.cpp:773 rc.cpp:788 rc.cpp:836 rc.cpp:851 rc.cpp:1030
 #, fuzzy
 msgid "Public"
 msgstr "Awam"
@@ -770,7 +612,7 @@ msgstr "Awam"
 #. i18n: file: dialogs/umlrolepropertiesbase.ui:83
 #. i18n: ectx: property (text), widget (QRadioButton, ui_pPrivateRB)
 #: dialogs/settingsdlg.cpp:235 dialogs/settingsdlg.cpp:243 rc.cpp:68 rc.cpp:83
-#: rc.cpp:776 rc.cpp:791 rc.cpp:839 rc.cpp:854 rc.cpp:990
+#: rc.cpp:776 rc.cpp:791 rc.cpp:839 rc.cpp:854 rc.cpp:1033
 msgid "Private"
 msgstr ""
 
@@ -789,7 +631,7 @@ msgstr ""
 #. i18n: file: dialogs/umlrolepropertiesbase.ui:90
 #. i18n: ectx: property (text), widget (QRadioButton, ui_pProtectedRB)
 #: dialogs/settingsdlg.cpp:236 dialogs/settingsdlg.cpp:244 rc.cpp:71 rc.cpp:86
-#: rc.cpp:779 rc.cpp:794 rc.cpp:842 rc.cpp:857 rc.cpp:993
+#: rc.cpp:779 rc.cpp:794 rc.cpp:842 rc.cpp:857 rc.cpp:1036
 msgid "Protected"
 msgstr ""
 
@@ -821,6 +663,25 @@ msgstr ""
 msgid "Code Viewer Settings"
 msgstr ""
 
+#. i18n: file: umbrello.kcfg:160
+#. i18n: ectx: label, entry (uiFont), group (UI Options)
+#. i18n: file: umbrello.kcfg:270
+#. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
+#: dialogs/settingsdlg.cpp:305 dialogs/dialogbase.cpp:57
+#: dialogs/classpropdlg.cpp:394 dialogs/umlviewdialog.cpp:153 rc.cpp:1368
+#: rc.cpp:1476
+#, fuzzy
+msgid "Font"
+msgstr "Font:"
+
+#: dialogs/settingsdlg.cpp:306 dialogs/dialogbase.cpp:57
+#: dialogs/classpropdlg.cpp:395 dialogs/assocpropdlg.cpp:112
+#: dialogs/umlviewdialog.cpp:154
+#, fuzzy
+#| msgid "Formatting"
+msgid "Font Settings"
+msgstr "Memformat"
+
 #: dialogs/settingsdlg.cpp:316
 #, fuzzy
 msgid "Auto Layout"
@@ -830,6 +691,17 @@ msgstr "Tetap buddy '%1' ke '%2'"
 #, fuzzy
 msgid "Auto Layout Settings"
 msgstr "Tajuk laman baru"
+
+#: dialogs/dialogbase.cpp:80
+#, fuzzy
+msgctxt "widget style page"
+msgid "Style"
+msgstr "Jenis MIME"
+
+#: dialogs/dialogbase.cpp:80 dialogs/classpropdlg.cpp:255
+#, fuzzy
+msgid "Widget Style"
+msgstr "%1 (widget tersendiri)"
 
 #: dialogs/classpropdlg.cpp:242
 #, fuzzy
@@ -843,11 +715,6 @@ msgstr "Umum"
 msgctxt "widget style page name"
 msgid "Style"
 msgstr "Jenis MIME"
-
-#: dialogs/classpropdlg.cpp:255 dialogs/dialogbase.cpp:80
-#, fuzzy
-msgid "Widget Style"
-msgstr "%1 (widget tersendiri)"
 
 #: dialogs/classpropdlg.cpp:267
 #, fuzzy
@@ -938,118 +805,6 @@ msgctxt "instance general settings page name"
 msgid "General"
 msgstr "Umum"
 
-#: dialogs/classwizard.cpp:44 model_utils.cpp:452
-#, fuzzy
-msgid "new_class"
-msgstr "Teks baru"
-
-#: dialogs/classwizard.cpp:59
-#, fuzzy
-msgid "Class Wizard"
-msgstr "Tajuk laman baru"
-
-#: dialogs/classwizard.cpp:82
-#, fuzzy
-msgid "New Class"
-msgstr "Teks baru"
-
-#: dialogs/classwizard.cpp:83
-msgid "Add general info about the new class."
-msgstr ""
-
-#: dialogs/classwizard.cpp:100
-#, fuzzy
-msgid "Class Attributes"
-msgstr "Tambah Bar Alatan"
-
-#: dialogs/classwizard.cpp:101
-msgid "Add attributes to the new class."
-msgstr ""
-
-#: dialogs/classwizard.cpp:118
-#, fuzzy
-msgid "Class Operations"
-msgstr "Tambah Bar Alatan"
-
-#: dialogs/classwizard.cpp:119
-msgid "Add operations to the new class."
-msgstr ""
-
-#: dialogs/activitydialog.cpp:136
-#, fuzzy
-msgid "Initial activity"
-msgstr "Tukarnama Halaman %1 ke %2"
-
-#: dialogs/activitydialog.cpp:136 worktoolbar.cpp:349 basictypes.cpp:416
-msgid "Activity"
-msgstr ""
-
-#: dialogs/activitydialog.cpp:136
-#, fuzzy
-msgid "End activity"
-msgstr "Teks baru"
-
-#: dialogs/activitydialog.cpp:136
-#, fuzzy
-msgid "Final activity"
-msgstr "Tukarnama Halaman %1 ke %2"
-
-#: dialogs/activitydialog.cpp:136 worktoolbar.cpp:325 listpopupmenu.cpp:1197
-msgid "Branch/Merge"
-msgstr ""
-
-#: dialogs/activitydialog.cpp:136
-#, fuzzy
-msgid "Invoke action"
-msgstr "Teks baru"
-
-#: dialogs/activitydialog.cpp:136
-#, fuzzy
-msgid "Parameter activity"
-msgstr "Name=KDevelop: KDE/C++"
-
-#: dialogs/activitydialog.cpp:140
-#, fuzzy
-#| msgid "General"
-msgctxt "general properties page"
-msgid "General"
-msgstr "Umum"
-
-#: dialogs/activitydialog.cpp:153
-#, fuzzy
-msgid "Activity type:"
-msgstr "Jenis MIME"
-
-#: dialogs/activitydialog.cpp:158
-#, fuzzy
-msgid "Activity name:"
-msgstr "Name=KDevAdaProject"
-
-#: dialogs/activitydialog.cpp:162
-#, fuzzy
-msgid "Precondition :"
-msgstr "Comment=Projek Ada"
-
-#: dialogs/activitydialog.cpp:166
-#, fuzzy
-msgid "Postcondition :"
-msgstr "Comment=Projek Ada"
-
-#: dialogs/activitydialog.cpp:173
-#, fuzzy
-msgid "&Normal activity"
-msgstr "Teks baru"
-
-#: dialogs/activitydialog.cpp:176
-#, fuzzy
-msgid "&Invoke action "
-msgstr "Teks baru"
-
-#: dialogs/activitydialog.cpp:179
-#, fuzzy
-msgid "&Parameter activity node"
-msgstr "Name=KDevelop: KDE/C++"
-
 #: dialogs/umlattributedialog.cpp:44
 #, fuzzy
 msgid "Attribute Properties"
@@ -1112,88 +867,6 @@ msgstr ""
 #, fuzzy
 msgid "Attribute Name Not Unique"
 msgstr "Name=KDevelop: KDE/C++"
-
-#: dialogs/notedialog.cpp:27
-#, fuzzy
-msgid "Note Documentation"
-msgstr "Tiada padanan"
-
-#: dialogs/parmpropdlg.cpp:47
-#, fuzzy
-msgid "Parameter Properties"
-msgstr ""
-"*.pro|Fail Projek\n"
-"*|Semua Fail"
-
-#: dialogs/parmpropdlg.cpp:86
-#, fuzzy
-msgctxt "property name"
-msgid "&Name:"
-msgstr "Nama:"
-
-#: dialogs/parmpropdlg.cpp:98
-msgid "Passing Direction"
-msgstr ""
-
-#: dialogs/parmpropdlg.cpp:99
-msgid ""
-"\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
-"\" is a parameter for reading and writing."
-msgstr ""
-
-#: dialogs/parmpropdlg.cpp:264
-msgid "You have entered an invalid parameter name."
-msgstr ""
-
-#: dialogs/parmpropdlg.cpp:265
-#, fuzzy
-msgid "Parameter Name Invalid"
-msgstr "Name=KDevelop: KDE/C++"
-
-#: dialogs/dialogbase.cpp:80
-#, fuzzy
-msgctxt "widget style page"
-msgid "Style"
-msgstr "Jenis MIME"
-
-#: dialogs/diagramprintpage.cpp:44
-#, fuzzy
-msgid "&Diagrams"
-msgstr "Tiada padanan"
-
-#: dialogs/diagramprintpage.cpp:49
-msgid "Filter"
-msgstr ""
-
-#: dialogs/diagramprintpage.cpp:56
-#, fuzzy
-msgid "&Current diagram"
-msgstr "Guna Hint Saiz"
-
-#: dialogs/diagramprintpage.cpp:60
-#, fuzzy
-msgid "&All diagrams"
-msgstr "Laras Semua..."
-
-#: dialogs/diagramprintpage.cpp:63
-#, fuzzy
-msgid "&Select diagrams"
-msgstr "Laras Semua..."
-
-#: dialogs/diagramprintpage.cpp:66
-#, fuzzy
-msgid "&Type of diagram"
-msgstr "Jenis MIME"
-
-#: dialogs/diagramprintpage.cpp:69
-#, fuzzy
-msgctxt "diagram selection for printing"
-msgid "Selection"
-msgstr "&Pilih"
-
-#: dialogs/diagramprintpage.cpp:160
-msgid "No diagrams selected."
-msgstr ""
 
 #: dialogs/codeviewerdialog.cpp:107
 msgid "Code Viewer - "
@@ -1263,16 +936,6 @@ msgstr ""
 msgid "Source Code"
 msgstr ""
 
-#: dialogs/umlcheckconstraintdialog.cpp:30
-#, fuzzy
-msgid "Check Constraint Properties"
-msgstr "Teks baru"
-
-#: dialogs/umlcheckconstraintdialog.cpp:73
-#, fuzzy
-msgid "Check Condition :"
-msgstr "Comment=Projek Ada"
-
 #: dialogs/assocrolepage.cpp:53
 #, fuzzy
 msgid "Role A Properties"
@@ -1309,13 +972,13 @@ msgstr "Papar penanda"
 
 #. i18n: file: dialogs/umlrolepropertiesbase.ui:36
 #. i18n: ectx: property (text), widget (QLabel, ui_labelRoleName)
-#: dialogs/assocrolepage.cpp:99 dialogs/assocrolepage.cpp:176 rc.cpp:978
+#: dialogs/assocrolepage.cpp:99 dialogs/assocrolepage.cpp:176 rc.cpp:1021
 msgid "Rolename:"
 msgstr ""
 
 #. i18n: file: dialogs/umlrolepropertiesbase.ui:49
 #. i18n: ectx: property (text), widget (QLabel, ui_labelMultiplicity)
-#: dialogs/assocrolepage.cpp:104 dialogs/assocrolepage.cpp:181 rc.cpp:981
+#: dialogs/assocrolepage.cpp:104 dialogs/assocrolepage.cpp:181 rc.cpp:1024
 msgid "Multiplicity:"
 msgstr ""
 
@@ -1459,66 +1122,6 @@ msgstr "Name=KDevelop: KDE/C++"
 msgid "Contained Items"
 msgstr ""
 
-#: dialogs/objectnodedialog.cpp:136
-msgid "Central Buffer"
-msgstr ""
-
-#: dialogs/objectnodedialog.cpp:136
-#, fuzzy
-msgid "Data Store"
-msgstr "Name=KDevAdaProject"
-
-#: dialogs/objectnodedialog.cpp:136
-#, fuzzy
-msgid "ObjectFlow"
-msgstr "Name=KDevelop: KDE/C++"
-
-#. i18n: file: codegenerators/cpp/cppcodegenerationformbase.ui:51
-#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
-#. i18n: file: codegenwizard/codegenoptionspage.ui:39
-#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
-#: dialogs/objectnodedialog.cpp:140 rc.cpp:95 rc.cpp:1081
-msgid "General"
-msgstr "Umum"
-
-#: dialogs/objectnodedialog.cpp:145
-#, fuzzy
-msgctxt "properties group title"
-msgid "Properties"
-msgstr ""
-"*.pro|Fail Projek\n"
-"*|Semua Fail"
-
-#: dialogs/objectnodedialog.cpp:159
-#, fuzzy
-msgid "Object Node type:"
-msgstr "Name=KDevAdaProject"
-
-#: dialogs/objectnodedialog.cpp:164
-#, fuzzy
-msgid "Object Node name:"
-msgstr "Name=KDevAdaProject"
-
-#: dialogs/objectnodedialog.cpp:168
-#, fuzzy
-msgctxt "enter state label"
-msgid "State :"
-msgstr "Jenis MIME"
-
-#: dialogs/objectnodedialog.cpp:173
-msgid "&Central Buffer"
-msgstr ""
-
-#: dialogs/objectnodedialog.cpp:176
-#, fuzzy
-msgid "&Data Store "
-msgstr "Name=KDevAdaProject"
-
-#: dialogs/objectnodedialog.cpp:179
-#, fuzzy
-msgid "&Object Flow"
-msgstr "Name=KDevelop: KDE/C++"
-
 #: dialogs/classgenpage.cpp:63
 #, fuzzy
 msgid "Class &name:"
@@ -1572,6 +1175,11 @@ msgstr "Name=KDevAdaProject"
 #: dialogs/classgenpage.cpp:93
 #, fuzzy
 msgid "Entity &name:"
+msgstr "Name=KDevAdaProject"
+
+#: dialogs/classgenpage.cpp:116 dialogs/umltemplatedialog.cpp:81
+#, fuzzy
+msgid "&Stereotype name:"
 msgstr "Name=KDevAdaProject"
 
 #: dialogs/classgenpage.cpp:130
@@ -1691,6 +1299,66 @@ msgstr ""
 #: dialogs/classgenpage.cpp:517
 #, fuzzy
 msgid "Name is Not Unique"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: dialogs/objectnodedialog.cpp:136
+msgid "Central Buffer"
+msgstr ""
+
+#: dialogs/objectnodedialog.cpp:136
+#, fuzzy
+msgid "Data Store"
+msgstr "Name=KDevAdaProject"
+
+#: dialogs/objectnodedialog.cpp:136
+#, fuzzy
+msgid "ObjectFlow"
+msgstr "Name=KDevelop: KDE/C++"
+
+#. i18n: file: codegenerators/cpp/cppcodegenerationformbase.ui:51
+#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
+#. i18n: file: codegenwizard/codegenoptionspage.ui:39
+#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
+#: dialogs/objectnodedialog.cpp:140 rc.cpp:95 rc.cpp:1081
+msgid "General"
+msgstr "Umum"
+
+#: dialogs/objectnodedialog.cpp:145
+#, fuzzy
+msgctxt "properties group title"
+msgid "Properties"
+msgstr ""
+"*.pro|Fail Projek\n"
+"*|Semua Fail"
+
+#: dialogs/objectnodedialog.cpp:159
+#, fuzzy
+msgid "Object Node type:"
+msgstr "Name=KDevAdaProject"
+
+#: dialogs/objectnodedialog.cpp:164
+#, fuzzy
+msgid "Object Node name:"
+msgstr "Name=KDevAdaProject"
+
+#: dialogs/objectnodedialog.cpp:168
+#, fuzzy
+msgctxt "enter state label"
+msgid "State :"
+msgstr "Jenis MIME"
+
+#: dialogs/objectnodedialog.cpp:173
+msgid "&Central Buffer"
+msgstr ""
+
+#: dialogs/objectnodedialog.cpp:176
+#, fuzzy
+msgid "&Data Store "
+msgstr "Name=KDevAdaProject"
+
+#: dialogs/objectnodedialog.cpp:179
+#, fuzzy
+msgid "&Object Flow"
 msgstr "Name=KDevelop: KDE/C++"
 
 #: dialogs/umloperationdialog.cpp:57
@@ -1836,44 +1504,6 @@ msgstr "Kuncupkan Semua Blok"
 msgid "&Do Not Generate File"
 msgstr "Tidak dapat membuka '%1'. Fail tidak wujud."
 
-#: dialogs/assocpropdlg.cpp:43
-#, fuzzy
-msgid "Association Properties"
-msgstr "Name=Ralat proses"
-
-#: dialogs/assocpropdlg.cpp:94
-#, fuzzy
-#| msgid "General"
-msgctxt "general settings"
-msgid "General"
-msgstr "Umum"
-
-#: dialogs/assocpropdlg.cpp:100
-msgctxt "role page name"
-msgid "Roles"
-msgstr ""
-
-#: dialogs/assocpropdlg.cpp:100
-msgid "Role Settings"
-msgstr ""
-
-#: dialogs/assocpropdlg.cpp:106
-#, fuzzy
-msgctxt "style page name"
-msgid "Style"
-msgstr "Jenis MIME"
-
-#: dialogs/assocpropdlg.cpp:106
-#, fuzzy
-msgid "Role Style"
-msgstr "Comment=%{APPNAME}"
-
-#: dialogs/assocpropdlg.cpp:112
-#, fuzzy
-msgctxt "font page name"
-msgid "Font"
-msgstr "Font:"
-
 #: dialogs/umlforeignkeyconstraintdialog.cpp:50
 msgid "Foreign Key Setup"
 msgstr ""
@@ -1974,6 +1604,88 @@ msgid ""
 "referenced entities will be lost. Are you sure you want to continue ?"
 msgstr ""
 
+#: dialogs/umltemplatedialog.cpp:39
+#, fuzzy
+msgid "Template Properties"
+msgstr ""
+"*.pro|Fail Projek\n"
+"*|Semua Fail"
+
+#: dialogs/umltemplatedialog.cpp:77
+#, fuzzy
+msgctxt "template name"
+msgid "&Name:"
+msgstr "Nama:"
+
+#: dialogs/umltemplatedialog.cpp:148
+msgid "You have entered an invalid template name."
+msgstr ""
+
+#: dialogs/umltemplatedialog.cpp:149
+#, fuzzy
+msgid "Template Name Invalid"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: dialogs/umltemplatedialog.cpp:158
+msgid ""
+"The template parameter name you have chosen is already being used in this "
+"operation."
+msgstr ""
+
+#: dialogs/umltemplatedialog.cpp:159
+#, fuzzy
+msgid "Template Name Not Unique"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: dialogs/classoptionspage.cpp:84 dialogs/classoptionspage.cpp:153
+#, fuzzy
+msgid "Operatio&ns"
+msgstr "Tambah Bar Alatan"
+
+#: dialogs/classoptionspage.cpp:88 dialogs/classoptionspage.cpp:170
+#, fuzzy
+msgid "&Visibility"
+msgstr "Papar penanda"
+
+#: dialogs/classoptionspage.cpp:97 dialogs/classoptionspage.cpp:157
+#, fuzzy
+msgid "O&peration signature"
+msgstr "Papar nombor baris"
+
+#: dialogs/classoptionspage.cpp:101 dialogs/classoptionspage.cpp:174
+#, fuzzy
+msgid "Pac&kage"
+msgstr "Name=KDevAdaProject"
+
+#: dialogs/classoptionspage.cpp:108 dialogs/classoptionspage.cpp:162
+#, fuzzy
+msgid "Att&ributes"
+msgstr "Tambah Bar Alatan"
+
+#: dialogs/classoptionspage.cpp:112 dialogs/classoptionspage.cpp:178
+#, fuzzy
+msgid "Stereot&ype"
+msgstr "Papar nombor baris"
+
+#: dialogs/classoptionspage.cpp:116 dialogs/classoptionspage.cpp:166
+#, fuzzy
+msgid "Attr&ibute signature"
+msgstr "Papar nombor baris"
+
+#: dialogs/classoptionspage.cpp:125 dialogs/classoptionspage.cpp:186
+#, fuzzy
+msgid "&Public Only"
+msgstr "Awam"
+
+#: dialogs/classoptionspage.cpp:131
+msgid "Draw as circle"
+msgstr ""
+
+#: dialogs/classoptionspage.cpp:182
+#, fuzzy
+msgid "&Attribute associations"
+msgstr "Name=KDevelop: KDE/C++"
+
 #: dialogs/umlwidgetstylepage.cpp:86
 #, fuzzy
 msgctxt "title of color group"
@@ -2063,6 +1775,299 @@ msgstr "Nombor baris:"
 msgctxt "default line width button"
 msgid "Defa&ult"
 msgstr "&Default"
+
+#: dialogs/notedialog.cpp:27
+#, fuzzy
+msgid "Note Documentation"
+msgstr "Tiada padanan"
+
+#: dialogs/classwizard.cpp:44 model_utils.cpp:452
+#, fuzzy
+msgid "new_class"
+msgstr "Teks baru"
+
+#: dialogs/classwizard.cpp:59
+#, fuzzy
+msgid "Class Wizard"
+msgstr "Tajuk laman baru"
+
+#: dialogs/classwizard.cpp:82
+#, fuzzy
+msgid "New Class"
+msgstr "Teks baru"
+
+#: dialogs/classwizard.cpp:83
+msgid "Add general info about the new class."
+msgstr ""
+
+#: dialogs/classwizard.cpp:100
+#, fuzzy
+msgid "Class Attributes"
+msgstr "Tambah Bar Alatan"
+
+#: dialogs/classwizard.cpp:101
+msgid "Add attributes to the new class."
+msgstr ""
+
+#: dialogs/classwizard.cpp:118
+#, fuzzy
+msgid "Class Operations"
+msgstr "Tambah Bar Alatan"
+
+#: dialogs/classwizard.cpp:119
+msgid "Add operations to the new class."
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:47
+#, fuzzy
+msgid "Parameter Properties"
+msgstr ""
+"*.pro|Fail Projek\n"
+"*|Semua Fail"
+
+#: dialogs/parmpropdlg.cpp:86
+#, fuzzy
+msgctxt "property name"
+msgid "&Name:"
+msgstr "Nama:"
+
+#: dialogs/parmpropdlg.cpp:98
+msgid "Passing Direction"
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:99
+msgid ""
+"\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
+"\" is a parameter for reading and writing."
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:264
+msgid "You have entered an invalid parameter name."
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:265
+#, fuzzy
+msgid "Parameter Name Invalid"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: dialogs/assocpropdlg.cpp:43
+#, fuzzy
+msgid "Association Properties"
+msgstr "Name=Ralat proses"
+
+#: dialogs/assocpropdlg.cpp:94
+#, fuzzy
+#| msgid "General"
+msgctxt "general settings"
+msgid "General"
+msgstr "Umum"
+
+#: dialogs/assocpropdlg.cpp:100
+msgctxt "role page name"
+msgid "Roles"
+msgstr ""
+
+#: dialogs/assocpropdlg.cpp:100
+msgid "Role Settings"
+msgstr ""
+
+#: dialogs/assocpropdlg.cpp:106
+#, fuzzy
+msgctxt "style page name"
+msgid "Style"
+msgstr "Jenis MIME"
+
+#: dialogs/assocpropdlg.cpp:106
+#, fuzzy
+msgid "Role Style"
+msgstr "Comment=%{APPNAME}"
+
+#: dialogs/assocpropdlg.cpp:112
+#, fuzzy
+msgctxt "font page name"
+msgid "Font"
+msgstr "Font:"
+
+#. i18n: file: dialogs/exportallviewsdialogbase.ui:52
+#. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
+#: dialogs/exportallviewsdialog.cpp:82 rc.cpp:942
+msgid "The format that the images will be exported to"
+msgstr ""
+
+#: dialogs/umlviewdialog.cpp:121
+#, fuzzy
+msgctxt "classes display options page"
+msgid "Display"
+msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
+
+#: dialogs/umlviewdialog.cpp:122
+#, fuzzy
+msgid "Classes Display Options"
+msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
+
+#: dialogs/umlviewdialog.cpp:137
+#, fuzzy
+msgctxt "diagram style page"
+msgid "Style"
+msgstr "Jenis MIME"
+
+#: dialogs/umlviewdialog.cpp:138
+#, fuzzy
+msgid "Diagram Style"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: dialogs/umlviewdialog.cpp:222
+msgid "The name you have entered is invalid."
+msgstr ""
+
+#: dialogs/umlviewdialog.cpp:223 package.cpp:175 enum.cpp:107
+#: classifier.cpp:393 classifier.cpp:770 entity.cpp:125 entity.cpp:178
+#: entity.cpp:228 entity.cpp:277 umldoc.cpp:1284 umldoc.cpp:1349
+#: umldoc.cpp:1379 umldoc.cpp:1413 object_factory.cpp:197
+#, fuzzy
+msgid "Invalid Name"
+msgstr "Name=KDevAdaProject"
+
+#: dialogs/umlviewdialog.cpp:232
+msgid "The name you have entered is not unique."
+msgstr ""
+
+#: dialogs/umlviewdialog.cpp:233 umldoc.cpp:1419 umllistview.cpp:2329
+#: umllistview.cpp:2336 umllistview.cpp:2601
+#, fuzzy
+msgid "Name Not Unique"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: dialogs/activitydialog.cpp:136
+#, fuzzy
+msgid "Initial activity"
+msgstr "Tukarnama Halaman %1 ke %2"
+
+#: dialogs/activitydialog.cpp:136 worktoolbar.cpp:349 basictypes.cpp:416
+msgid "Activity"
+msgstr ""
+
+#: dialogs/activitydialog.cpp:136
+#, fuzzy
+msgid "End activity"
+msgstr "Teks baru"
+
+#: dialogs/activitydialog.cpp:136
+#, fuzzy
+msgid "Final activity"
+msgstr "Tukarnama Halaman %1 ke %2"
+
+#: dialogs/activitydialog.cpp:136 listpopupmenu.cpp:1197 worktoolbar.cpp:325
+msgid "Branch/Merge"
+msgstr ""
+
+#: dialogs/activitydialog.cpp:136
+#, fuzzy
+msgid "Invoke action"
+msgstr "Teks baru"
+
+#: dialogs/activitydialog.cpp:136
+#, fuzzy
+msgid "Parameter activity"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: dialogs/activitydialog.cpp:140
+#, fuzzy
+#| msgid "General"
+msgctxt "general properties page"
+msgid "General"
+msgstr "Umum"
+
+#: dialogs/activitydialog.cpp:153
+#, fuzzy
+msgid "Activity type:"
+msgstr "Jenis MIME"
+
+#: dialogs/activitydialog.cpp:158
+#, fuzzy
+msgid "Activity name:"
+msgstr "Name=KDevAdaProject"
+
+#: dialogs/activitydialog.cpp:162
+#, fuzzy
+msgid "Precondition :"
+msgstr "Comment=Projek Ada"
+
+#: dialogs/activitydialog.cpp:166
+#, fuzzy
+msgid "Postcondition :"
+msgstr "Comment=Projek Ada"
+
+#: dialogs/activitydialog.cpp:173
+#, fuzzy
+msgid "&Normal activity"
+msgstr "Teks baru"
+
+#: dialogs/activitydialog.cpp:176
+#, fuzzy
+msgid "&Invoke action "
+msgstr "Teks baru"
+
+#: dialogs/activitydialog.cpp:179
+#, fuzzy
+msgid "&Parameter activity node"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: dialogs/umlfiledialog.cpp:89
+#, fuzzy
+msgid "All Supported Files"
+msgstr ""
+"*.db|Fail Pengkalan Data\n"
+"*|Semua Fail"
+
+#: dialogs/diagramprintpage.cpp:44
+#, fuzzy
+msgid "&Diagrams"
+msgstr "Tiada padanan"
+
+#: dialogs/diagramprintpage.cpp:49
+msgid "Filter"
+msgstr ""
+
+#: dialogs/diagramprintpage.cpp:56
+#, fuzzy
+msgid "&Current diagram"
+msgstr "Guna Hint Saiz"
+
+#: dialogs/diagramprintpage.cpp:60
+#, fuzzy
+msgid "&All diagrams"
+msgstr "Laras Semua..."
+
+#: dialogs/diagramprintpage.cpp:63
+#, fuzzy
+msgid "&Select diagrams"
+msgstr "Laras Semua..."
+
+#: dialogs/diagramprintpage.cpp:66
+#, fuzzy
+msgid "&Type of diagram"
+msgstr "Jenis MIME"
+
+#: dialogs/diagramprintpage.cpp:69
+#, fuzzy
+msgctxt "diagram selection for printing"
+msgid "Selection"
+msgstr "&Pilih"
+
+#: dialogs/diagramprintpage.cpp:160
+msgid "No diagrams selected."
+msgstr ""
+
+#: dialogs/umlcheckconstraintdialog.cpp:30
+#, fuzzy
+msgid "Check Constraint Properties"
+msgstr "Teks baru"
+
+#: dialogs/umlcheckconstraintdialog.cpp:73
+#, fuzzy
+msgid "Check Condition :"
+msgstr "Comment=Projek Ada"
 
 #: codegenwizard/codegenselectpage.cpp:34
 #, fuzzy
@@ -2191,74 +2196,9 @@ msgstr "Name=Ralat proses"
 msgid "Please select a valid folder."
 msgstr ""
 
-#: widgets/notewidget.cpp:180 worktoolbar.cpp:306
-#, fuzzy
-msgid "Precondition"
-msgstr "Comment=Projek Ada"
-
-#: widgets/notewidget.cpp:181
-#, fuzzy
-msgid "Postcondition"
-msgstr "Comment=Projek Ada"
-
-#: widgets/notewidget.cpp:182
-#, fuzzy
-msgid "Transformation"
-msgstr "Teks baru"
-
-#: widgets/notewidget.cpp:184
-#, fuzzy
-msgid "Note Type"
-msgstr "Jenis MIME"
-
-#: widgets/notewidget.cpp:184
-msgid "Select the Note Type"
-msgstr ""
-
 #: widgets/activitywidget.cpp:357 umlscene.cpp:3412 toolbarstateother.cpp:250
 #, fuzzy
 msgid "Enter Activity Name"
-msgstr "Name=KDevelop: KDE/C++"
-
-#: widgets/floatingtextwidget.cpp:187
-#, fuzzy
-msgid "Change Text"
-msgstr "Teks baru"
-
-#: widgets/floatingtextwidget.cpp:187 widgets/floatingtextwidget.cpp:375
-#, fuzzy
-msgid "Enter new text:"
-msgstr "Tajuk laman baru"
-
-#: widgets/floatingtextwidget.cpp:364 widgets/associationwidget.cpp:3041
-#, fuzzy
-msgid "Enter role name:"
-msgstr "Name=KDevelop: KDE/C++"
-
-#: widgets/floatingtextwidget.cpp:366 widgets/associationwidget.cpp:3003
-msgid "Enter multiplicity:"
-msgstr ""
-
-#: widgets/floatingtextwidget.cpp:373 widgets/associationwidget.cpp:3021
-#, fuzzy
-msgid "Enter association name:"
-msgstr "Name=KDevelop: KDE/C++"
-
-#: widgets/floatingtextwidget.cpp:377
-#, fuzzy
-msgid "ERROR"
-msgstr "Name=Ralat proses"
-
-#: widgets/floatingtextwidget.cpp:551
-#, fuzzy
-#| msgid "Name"
-msgctxt "operation name"
-msgid "Name"
-msgstr "Nama"
-
-#: widgets/floatingtextwidget.cpp:552
-#, fuzzy
-msgid "Enter operation name:"
 msgstr "Name=KDevelop: KDE/C++"
 
 #: widgets/floatingdashlinewidget.cpp:92
@@ -2280,6 +2220,13 @@ msgstr "Name=KDevelop: KDE/C++"
 #, fuzzy
 msgid "Enter the precondition :"
 msgstr "Name=KDevelop: KDE/C++"
+
+#: widgets/statusbartoolbutton.cpp:120
+#, fuzzy, kde-format
+#| msgid "%"
+msgctxt "@info:tooltip of custom toolbar button"
+msgid "%1"
+msgstr "%"
 
 #: widgets/toolbarstateonewidget.cpp:176
 msgid "Enter the precondition"
@@ -2348,6 +2295,34 @@ msgstr "Name=KDevelop: KDE/C++"
 msgid "Enter the guard of the loop:"
 msgstr ""
 
+#: widgets/associationwidget.cpp:3002
+msgid "Multiplicity"
+msgstr ""
+
+#: widgets/associationwidget.cpp:3003 widgets/floatingtextwidget.cpp:366
+msgid "Enter multiplicity:"
+msgstr ""
+
+#: widgets/associationwidget.cpp:3020
+#, fuzzy
+msgid "Association Name"
+msgstr "Name=KDevAdaProject"
+
+#: widgets/associationwidget.cpp:3021 widgets/floatingtextwidget.cpp:373
+#, fuzzy
+msgid "Enter association name:"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: widgets/associationwidget.cpp:3040
+#, fuzzy
+msgid "Role Name"
+msgstr "Name=KDevAdaProject"
+
+#: widgets/associationwidget.cpp:3041 widgets/floatingtextwidget.cpp:364
+#, fuzzy
+msgid "Enter role name:"
+msgstr "Name=KDevelop: KDE/C++"
+
 #: widgets/objectnodewidget.cpp:236
 #, fuzzy
 msgid "Enter Object Node Name"
@@ -2404,20 +2379,6 @@ msgstr "Name=KDevelop: KDE/C++"
 msgid "Enter State (keep '-' if there is no state for the object) "
 msgstr ""
 
-#: widgets/associationwidget.cpp:3002
-msgid "Multiplicity"
-msgstr ""
-
-#: widgets/associationwidget.cpp:3020
-#, fuzzy
-msgid "Association Name"
-msgstr "Name=KDevAdaProject"
-
-#: widgets/associationwidget.cpp:3040
-#, fuzzy
-msgid "Role Name"
-msgstr "Name=KDevAdaProject"
-
 #: widgets/signalwidget.cpp:321
 #, fuzzy
 msgid "Enter signal name"
@@ -2458,17 +2419,76 @@ msgstr ""
 "*.pro|Fail Projek\n"
 "*|Semua Fail"
 
+#: widgets/notewidget.cpp:180 worktoolbar.cpp:306
+#, fuzzy
+msgid "Precondition"
+msgstr "Comment=Projek Ada"
+
+#: widgets/notewidget.cpp:181
+#, fuzzy
+msgid "Postcondition"
+msgstr "Comment=Projek Ada"
+
+#: widgets/notewidget.cpp:182
+#, fuzzy
+msgid "Transformation"
+msgstr "Teks baru"
+
+#: widgets/notewidget.cpp:184
+#, fuzzy
+msgid "Note Type"
+msgstr "Jenis MIME"
+
+#: widgets/notewidget.cpp:184
+msgid "Select the Note Type"
+msgstr ""
+
+#: widgets/floatingtextwidget.cpp:187
+#, fuzzy
+msgid "Change Text"
+msgstr "Teks baru"
+
+#: widgets/floatingtextwidget.cpp:187 widgets/floatingtextwidget.cpp:375
+#, fuzzy
+msgid "Enter new text:"
+msgstr "Tajuk laman baru"
+
+#: widgets/floatingtextwidget.cpp:377
+#, fuzzy
+msgid "ERROR"
+msgstr "Name=Ralat proses"
+
+#: widgets/floatingtextwidget.cpp:551
+#, fuzzy
+#| msgid "Name"
+msgctxt "operation name"
+msgid "Name"
+msgstr "Nama"
+
+#: widgets/floatingtextwidget.cpp:552
+#, fuzzy
+msgid "Enter operation name:"
+msgstr "Name=KDevelop: KDE/C++"
+
 #: widgets/messagewidget.cpp:1241 listpopupmenu.cpp:1219
 #: listpopupmenu.cpp:1223
 msgid "Operation"
 msgstr ""
 
-#: widgets/statusbartoolbutton.cpp:120
+#: cmds/widget/cmd_changeFontSelection.cpp:26
 #, fuzzy, kde-format
-#| msgid "%"
-msgctxt "@info:tooltip of custom toolbar button"
-msgid "%1"
-msgstr "%"
+msgid "Change font : %1"
+msgstr "Tukar Susunan Tab"
+
+#: cmds/widget/cmd_changeTextColor.cpp:24
+#, fuzzy, kde-format
+msgid "Change text color : %1"
+msgstr "Tukar Susunan Tab"
+
+#: cmds/widget/cmd_set_txt.cpp:26
+#, kde-format
+msgid "Set text : %1 to %2"
+msgstr ""
 
 #: cmds/widget/cmd_changeFillColor.cpp:26
 #, fuzzy, kde-format
@@ -2490,25 +2510,10 @@ msgstr "Tukar Susunan Tab"
 msgid "Change multiplicity : %1 to %2"
 msgstr "Tukar Susunan Tab"
 
-#: cmds/widget/cmd_changeFontSelection.cpp:26
-#, fuzzy, kde-format
-msgid "Change font : %1"
-msgstr "Tukar Susunan Tab"
-
 #: cmds/widget/cmd_create_widget.cpp:27
 #, kde-format
 msgid "Create widget : %1"
 msgstr ""
-
-#: cmds/widget/cmd_set_txt.cpp:26
-#, kde-format
-msgid "Set text : %1 to %2"
-msgstr ""
-
-#: cmds/widget/cmd_changeTextColor.cpp:24
-#, fuzzy, kde-format
-msgid "Change text color : %1"
-msgstr "Tukar Susunan Tab"
 
 #: cmds/generic/cmd_rename_umlobject.cpp:25
 #, fuzzy, kde-format
@@ -2520,16 +2525,6 @@ msgstr "Tukarnama Halaman %1 ke %2"
 msgid "Create uml object : %1"
 msgstr "Tukarnama Halaman %1 ke %2"
 
-#: cmds/cmd_set_visibility.cpp:24
-#, fuzzy, kde-format
-msgid "Change visibility : %1"
-msgstr "Papar penanda"
-
-#: cmds/cmd_moveWidget.cpp:27
-#, kde-format
-msgid "Move widget : %1"
-msgstr ""
-
 #: cmds/cmd_set_stereotype.cpp:25
 #, kde-format
 msgid "Set stereotype : %1 to %2"
@@ -2540,6 +2535,11 @@ msgstr ""
 msgid "Change text : %1 to %2"
 msgstr "Teks baru"
 
+#: cmds/cmd_set_visibility.cpp:24
+#, fuzzy, kde-format
+msgid "Change visibility : %1"
+msgstr "Papar penanda"
+
 #: cmds/cmd_resizeWidget.cpp:27
 #, kde-format
 msgid "Resize widget : %1"
@@ -2549,6 +2549,11 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Create diagram %1: %2"
 msgstr "Guna Hint Saiz"
+
+#: cmds/cmd_moveWidget.cpp:27
+#, kde-format
+msgid "Move widget : %1"
+msgstr ""
 
 #: refactoring/refactoringassistant.cpp:49
 #, fuzzy
@@ -2610,6 +2615,116 @@ msgstr ""
 #, fuzzy
 msgid "Choose a different name."
 msgstr "Name=KDevelop: KDE/C++"
+
+#: codeimpwizard/codeimpstatuspage.cpp:52
+#, fuzzy
+msgid "Status of Code Importing Progress"
+msgstr "Comment=Projek Ada"
+
+#: codeimpwizard/codeimpstatuspage.cpp:53
+msgid ""
+"Press the button 'Start import' to start the code import.\n"
+"Check the success state for every class."
+msgstr ""
+
+#: codeimpwizard/codeimpstatuspage.cpp:128
+#, kde-format
+msgid "<b>Code import of 1 file:</b><br>"
+msgid_plural "<b>Code import of %1 files:</b><br>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: codeimpwizard/codeimpstatuspage.cpp:144
+#: codeimpwizard/codeimpstatuspage.cpp:151
+#, fuzzy
+msgid "importing file ... DONE<br>"
+msgstr "Fail Wujud"
+
+#: codeimpwizard/codeimpstatuspage.cpp:145
+#: codeimpwizard/codeimpstatuspage.cpp:152
+msgid "Import Done"
+msgstr ""
+
+#: codeimpwizard/codeimpstatuspage.cpp:156
+#, fuzzy
+msgid "importing file ..."
+msgstr "Fail Wujud"
+
+#: codeimpwizard/codeimpstatuspage.cpp:208
+#, fuzzy
+msgid "importing file ... stopped<br>"
+msgstr "Fail Wujud"
+
+#: codeimpwizard/codeimpstatuspage.cpp:209
+#, fuzzy
+msgid "Import stopped"
+msgstr "Tidak dapat mencari bahagian KDevDesigner."
+
+#: codeimpwizard/codeimpstatuspage.cpp:271
+#, fuzzy
+msgid "Not Imported"
+msgstr "Tidak dapat mencari bahagian KDevDesigner."
+
+#: codeimpwizard/codeimpstatuspage.cpp:298
+msgid "Umbrello Code Import - Logger Export"
+msgstr ""
+
+#: codeimpwizard/codeimportingwizard.cpp:48
+msgid "Code Importing Wizard"
+msgstr ""
+
+#: codeimpwizard/codeimpthread.cpp:59
+#, fuzzy, kde-format
+msgid "Importing file: %1"
+msgstr "Comment=Fail Projek KDevelop"
+
+#: codeimpwizard/codeimpthread.cpp:63
+msgctxt "show failed on status bar"
+msgid "Failed."
+msgstr ""
+
+#: codeimpwizard/codeimpthread.cpp:69
+msgctxt "show Ready on status bar"
+msgid "Ready."
+msgstr ""
+
+#: codeimpwizard/codeimpthread.cpp:78
+#, kde-format
+msgid "No code importer for file: %1"
+msgstr ""
+
+#: codeimpwizard/codeimpselectpage.cpp:47
+msgid "Code Importing Path"
+msgstr ""
+
+#: codeimpwizard/codeimpselectpage.cpp:48
+msgid "Select the code importing path."
+msgstr ""
+
+#: codeimpwizard/codeimpselectpage.cpp:110
+#, fuzzy
+msgid "File System Model"
+msgstr "Dokumen yang hendak dibuka"
+
+#: codeimpwizard/codeimpselectpage.cpp:135
+msgid "Select the desired language to filter files."
+msgstr ""
+
+#: codeimpwizard/codeimpselectpage.cpp:136
+msgid "Select also all the files in the subdirectories."
+msgstr ""
+
+#: codeimpwizard/codeimpselectpage.cpp:137
+msgid "Select all the files below the current directory."
+msgstr ""
+
+#: codeimpwizard/codeimpselectpage.cpp:138
+msgid "Clear all selections."
+msgstr ""
+
+#: codeimpwizard/codeimpselectpage.cpp:139
+msgid "Add file extensions like e.g. '*.h *.hpp'."
+msgstr ""
 
 #: controller/umlwidgetcontroller.cpp:195
 msgid ""
@@ -2882,11 +2997,6 @@ msgctxt "class scope"
 msgid "Class"
 msgstr "Kelas"
 
-#: debug/debug_utils.cpp:44
-#, fuzzy
-msgid "Class Name"
-msgstr "Name=KDevAdaProject"
-
 #: umlscene.cpp:562 umlscene.cpp:632
 #, fuzzy, kde-format
 msgid "Diagram: %2 Page %1"
@@ -2926,20 +3036,25 @@ msgstr ""
 msgid "Delete Diagram?"
 msgstr ""
 
-#: folder.cpp:407
-#, fuzzy, kde-format
-msgid "The folderfile %1 does not exist."
-msgstr "Tidak dapat membuka '%1'. Fail tidak wujud."
-
-#: folder.cpp:407 folder.cpp:411 umldoc.cpp:424 umldoc.cpp:446 umldoc.cpp:484
-#: umldoc.cpp:496 umldoc.cpp:510 umldoc.cpp:522 umldoc.cpp:534 umldoc.cpp:552
+#: package.cpp:166
 #, fuzzy
-msgid "Load Error"
-msgstr "Name=Ralat proses"
+#| msgid "Name"
+msgctxt "object name"
+msgid "Name"
+msgstr "Nama"
 
-#: folder.cpp:411
+#: package.cpp:167
 #, kde-format
-msgid "The folderfile %1 cannot be opened."
+msgid ""
+"An object with the name %1\n"
+"already exists in the package %2.\n"
+"Please enter a new name:"
+msgstr ""
+
+#: package.cpp:174 enum.cpp:107 classifier.cpp:393 classifier.cpp:770
+#: entity.cpp:125 entity.cpp:178 entity.cpp:228 entity.cpp:277 umldoc.cpp:1379
+#: umldoc.cpp:1413 object_factory.cpp:196
+msgid "That is an invalid name."
 msgstr ""
 
 #: umlcanvasobject.cpp:191 model_utils.cpp:476
@@ -2985,438 +3100,6 @@ msgstr "Teks baru"
 #, fuzzy
 msgid "new_check_constraint"
 msgstr "Teks baru"
-
-#: stereotype.cpp:112 listpopupmenu.cpp:961
-msgid "Stereotype"
-msgstr ""
-
-#: stereotype.cpp:112 enumliteral.cpp:104 object_factory.cpp:191
-#: umldoc.cpp:1276 umldoc.cpp:1343 umldoc.cpp:1374 umldoc.cpp:1408
-#, fuzzy
-msgid "Enter name:"
-msgstr "Name=KDevAdaProject"
-
-#: toolbarstateother.cpp:258
-#, fuzzy
-msgid "Enter Signal Name"
-msgstr "Name=KDevelop: KDE/C++"
-
-#: toolbarstateother.cpp:259
-#, fuzzy
-msgid "Enter Signal"
-msgstr "Name=KDevAdaProject"
-
-#: toolbarstateother.cpp:259
-msgid "new Signal"
-msgstr ""
-
-#: toolbarstateother.cpp:265
-#, fuzzy
-msgid "Enter Time Event Name"
-msgstr "Name=KDevelop: KDE/C++"
-
-#: toolbarstateother.cpp:266
-#, fuzzy
-msgid "Enter Time Event"
-msgstr "Tajuk laman baru"
-
-#: toolbarstateother.cpp:266
-#, fuzzy
-msgid "new time event"
-msgstr "Teks baru"
-
-#: toolbarstateother.cpp:272
-#, fuzzy
-msgid "Enter Combined Fragment Name"
-msgstr "Name=KDevelop: KDE/C++"
-
-#: toolbarstateother.cpp:273
-msgid "Enter the Combined Fragment"
-msgstr ""
-
-#: toolbarstateother.cpp:273
-msgid "new Combined Fragment"
-msgstr ""
-
-#: worktoolbar.cpp:300
-msgid "Object"
-msgstr ""
-
-#: worktoolbar.cpp:301
-msgid "Synchronous Message"
-msgstr ""
-
-#: worktoolbar.cpp:302
-msgid "Asynchronous Message"
-msgstr ""
-
-#: worktoolbar.cpp:303
-msgid "Found Message"
-msgstr ""
-
-#: worktoolbar.cpp:304
-msgid "Lost Message"
-msgstr ""
-
-#: worktoolbar.cpp:305
-msgid "Combined Fragment"
-msgstr ""
-
-#: worktoolbar.cpp:307 basictypes.cpp:392
-msgid "Association"
-msgstr ""
-
-#: worktoolbar.cpp:308 basictypes.cpp:404
-msgid "Containment"
-msgstr ""
-
-#: worktoolbar.cpp:309 basictypes.cpp:412
-msgid "Anchor"
-msgstr ""
-
-#: worktoolbar.cpp:310
-msgid "Label"
-msgstr "Label"
-
-#: worktoolbar.cpp:311
-msgid "Note"
-msgstr ""
-
-#: worktoolbar.cpp:312
-msgid "Box"
-msgstr ""
-
-#: worktoolbar.cpp:313 listpopupmenu.cpp:744
-msgid "Actor"
-msgstr ""
-
-#: worktoolbar.cpp:314 basictypes.cpp:390
-msgid "Dependency"
-msgstr ""
-
-#: worktoolbar.cpp:315 basictypes.cpp:388
-msgid "Aggregation"
-msgstr ""
-
-#: worktoolbar.cpp:316 basictypes.cpp:424
-msgid "Relationship"
-msgstr ""
-
-#: worktoolbar.cpp:317
-msgid "Directional Association"
-msgstr ""
-
-#: worktoolbar.cpp:318
-msgid "Implements"
-msgstr ""
-
-#: worktoolbar.cpp:319 basictypes.cpp:406
-msgid "Composition"
-msgstr ""
-
-#: worktoolbar.cpp:320 listpopupmenu.cpp:747
-#, fuzzy
-msgid "Use Case"
-msgstr "Guna Hint Saiz"
-
-#: worktoolbar.cpp:321
-#, fuzzy
-#| msgid "Class"
-msgctxt "UML class"
-msgid "Class"
-msgstr "Kelas"
-
-#: worktoolbar.cpp:322 listpopupmenu.cpp:1182
-msgid "Initial State"
-msgstr ""
-
-#: worktoolbar.cpp:323
-msgid "Region"
-msgstr ""
-
-#: worktoolbar.cpp:324 listpopupmenu.cpp:1183
-msgid "End State"
-msgstr ""
-
-#: worktoolbar.cpp:326
-msgid "Send signal"
-msgstr ""
-
-#: worktoolbar.cpp:327
-msgid "Accept signal"
-msgstr ""
-
-#: worktoolbar.cpp:328
-msgid "Accept time event"
-msgstr ""
-
-#: worktoolbar.cpp:329
-msgid "Fork/Join"
-msgstr ""
-
-#: worktoolbar.cpp:330 listpopupmenu.cpp:867 listpopupmenu.cpp:958
-msgid "Package"
-msgstr ""
-
-#: worktoolbar.cpp:331 listpopupmenu.cpp:701
-msgid "Component"
-msgstr ""
-
-#: worktoolbar.cpp:332 listpopupmenu.cpp:715
-msgid "Node"
-msgstr ""
-
-#: worktoolbar.cpp:333 listpopupmenu.cpp:704
-msgid "Artifact"
-msgstr ""
-
-#: worktoolbar.cpp:334 listpopupmenu.cpp:864
-msgid "Interface"
-msgstr ""
-
-#: worktoolbar.cpp:335 listpopupmenu.cpp:865
-msgid "Datatype"
-msgstr ""
-
-#: worktoolbar.cpp:336 listpopupmenu.cpp:866
-msgid "Enum"
-msgstr ""
-
-#: worktoolbar.cpp:337 listpopupmenu.cpp:731
-msgid "Entity"
-msgstr ""
-
-#: worktoolbar.cpp:338 listpopupmenu.cpp:1186
-msgid "Deep History"
-msgstr ""
-
-#: worktoolbar.cpp:339 listpopupmenu.cpp:1187
-msgid "Shallow History"
-msgstr ""
-
-#: worktoolbar.cpp:340
-msgctxt "join states"
-msgid "Join"
-msgstr ""
-
-#: worktoolbar.cpp:341 listpopupmenu.cpp:1189
-msgid "Fork"
-msgstr ""
-
-#: worktoolbar.cpp:342 listpopupmenu.cpp:1185
-msgid "Junction"
-msgstr ""
-
-#: worktoolbar.cpp:343
-msgctxt "state choice"
-msgid "Choice"
-msgstr ""
-
-#: worktoolbar.cpp:346
-msgid "And Line"
-msgstr ""
-
-#: worktoolbar.cpp:347 basictypes.cpp:414
-msgid "State Transition"
-msgstr ""
-
-#: worktoolbar.cpp:348
-msgid "Activity Transition"
-msgstr ""
-
-#: worktoolbar.cpp:350
-#, fuzzy
-msgctxt "state diagram"
-msgid "State"
-msgstr "Jenis MIME"
-
-#: worktoolbar.cpp:351 listpopupmenu.cpp:1195
-msgid "End Activity"
-msgstr ""
-
-#: worktoolbar.cpp:352
-#, fuzzy
-msgid "Final Activity"
-msgstr "Tukarnama Halaman %1 ke %2"
-
-#: worktoolbar.cpp:353
-msgid "Pin"
-msgstr ""
-
-#: worktoolbar.cpp:354 listpopupmenu.cpp:1194
-msgid "Initial Activity"
-msgstr ""
-
-#: worktoolbar.cpp:355
-msgid "Message"
-msgstr ""
-
-#: worktoolbar.cpp:356 basictypes.cpp:418
-msgid "Exception"
-msgstr ""
-
-#: worktoolbar.cpp:357
-msgid "Object Node"
-msgstr ""
-
-#: worktoolbar.cpp:358
-msgid "Pre/Post condition"
-msgstr ""
-
-#: worktoolbar.cpp:359 listpopupmenu.cpp:741
-msgid "Category"
-msgstr ""
-
-#: worktoolbar.cpp:360 basictypes.cpp:420
-msgid "Category to Parent"
-msgstr ""
-
-#: worktoolbar.cpp:361 basictypes.cpp:422
-msgid "Child to Category"
-msgstr ""
-
-#: worktoolbar.cpp:372
-#, fuzzy
-msgctxt "selection arrow"
-msgid "Select"
-msgstr "&Pilih"
-
-#: enumliteral.cpp:104
-#, fuzzy
-#| msgid "Name"
-msgctxt "enum name"
-msgid "Name"
-msgstr "Nama"
-
-#: classifier.cpp:266
-msgid ""
-"An operation with the same name and signature already exists. You can not "
-"add it again."
-msgstr ""
-
-#: classifier.cpp:393 classifier.cpp:770 package.cpp:174
-#: object_factory.cpp:196 enum.cpp:107 entity.cpp:125 entity.cpp:178
-#: entity.cpp:228 entity.cpp:277 umldoc.cpp:1379 umldoc.cpp:1413
-msgid "That is an invalid name."
-msgstr ""
-
-#: classifier.cpp:396 classifier.cpp:772 object_factory.cpp:207 entity.cpp:127
-#: entity.cpp:180 entity.cpp:230 entity.cpp:279 umldoc.cpp:1386
-#: umldoc.cpp:1424
-msgid "That name is already being used."
-msgstr ""
-
-#: classifier.cpp:396 classifier.cpp:772 object_factory.cpp:208 entity.cpp:127
-#: entity.cpp:180 entity.cpp:230 entity.cpp:279 umldoc.cpp:1288
-#: umldoc.cpp:1358 umldoc.cpp:1386 umldoc.cpp:1424
-#, fuzzy
-msgid "Not a Unique Name"
-msgstr "Name=KDevelop: KDE/C++"
-
-#: basictypes.cpp:234
-#, fuzzy
-msgid "Class Diagram"
-msgstr "Guna Hint Saiz"
-
-#: basictypes.cpp:236
-#, fuzzy
-msgid "Use Case Diagram"
-msgstr "Guna Hint Saiz"
-
-#: basictypes.cpp:238
-#, fuzzy
-msgid "Sequence Diagram"
-msgstr "Guna Hint Saiz"
-
-#: basictypes.cpp:240
-msgid "Collaboration Diagram"
-msgstr ""
-
-#: basictypes.cpp:242
-#, fuzzy
-msgid "State Diagram"
-msgstr "Tiada padanan"
-
-#: basictypes.cpp:244
-#, fuzzy
-msgid "Activity Diagram"
-msgstr "Name=KDevAdaProject"
-
-#: basictypes.cpp:246
-#, fuzzy
-msgid "Component Diagram"
-msgstr "Guna Hint Saiz"
-
-#: basictypes.cpp:248
-#, fuzzy
-msgid "Deployment Diagram"
-msgstr "Tiada padanan"
-
-#: basictypes.cpp:250
-#, fuzzy
-msgid "Entity Relationship Diagram"
-msgstr "Guna Hint Saiz"
-
-#: basictypes.cpp:252
-#, fuzzy
-msgid "No Diagram"
-msgstr "Tiada padanan"
-
-#: basictypes.cpp:386
-msgid "Generalization"
-msgstr ""
-
-#: basictypes.cpp:394
-msgid "Self Association"
-msgstr ""
-
-#: basictypes.cpp:396
-msgid "Collaboration Message"
-msgstr ""
-
-#: basictypes.cpp:398
-msgid "Sequence Message"
-msgstr ""
-
-#: basictypes.cpp:400
-msgid "Collaboration Self Message"
-msgstr ""
-
-#: basictypes.cpp:402
-msgid "Sequence Self Message"
-msgstr ""
-
-#: basictypes.cpp:408
-msgid "Realization"
-msgstr ""
-
-#: basictypes.cpp:410
-msgid "Uni Association"
-msgstr ""
-
-#: basictypes.cpp:426
-msgid "Unknown"
-msgstr ""
-
-#: basictypes.cpp:428
-#, fuzzy
-msgid "? AssociationType ?"
-msgstr "Name=KDevAdaProject"
-
-#: package.cpp:166
-#, fuzzy
-#| msgid "Name"
-msgctxt "object name"
-msgid "Name"
-msgstr "Nama"
-
-#: package.cpp:167
-#, kde-format
-msgid ""
-"An object with the name %1\n"
-"already exists in the package %2.\n"
-"Please enter a new name:"
-msgstr ""
 
 #: uml.cpp:260
 msgid "&Export model to DocBook"
@@ -3784,6 +3467,424 @@ msgstr ""
 
 #: uml.cpp:2910
 msgid "XHTML Generation failed ."
+msgstr ""
+
+#: classifier.cpp:266
+msgid ""
+"An operation with the same name and signature already exists. You can not "
+"add it again."
+msgstr ""
+
+#: classifier.cpp:396 classifier.cpp:772 entity.cpp:127 entity.cpp:180
+#: entity.cpp:230 entity.cpp:279 umldoc.cpp:1386 umldoc.cpp:1424
+#: object_factory.cpp:207
+msgid "That name is already being used."
+msgstr ""
+
+#: classifier.cpp:396 classifier.cpp:772 entity.cpp:127 entity.cpp:180
+#: entity.cpp:230 entity.cpp:279 umldoc.cpp:1288 umldoc.cpp:1358
+#: umldoc.cpp:1386 umldoc.cpp:1424 object_factory.cpp:208
+#, fuzzy
+msgid "Not a Unique Name"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: main.cpp:36 main.cpp:68
+msgid "Umbrello UML Modeller"
+msgstr ""
+
+#: main.cpp:70
+msgid "(c) 2001 Paul Hensgen, (c) 2002-2012 Umbrello UML Modeller Authors"
+msgstr ""
+
+#: main.cpp:72
+msgid "Paul Hensgen"
+msgstr ""
+
+#: main.cpp:77
+#, fuzzy
+msgid "File to open"
+msgstr "Dokumen yang hendak dibuka"
+
+#: main.cpp:78
+msgid "export diagrams to extension and exit"
+msgstr ""
+
+#: main.cpp:79
+msgid "list available export extensions"
+msgstr ""
+
+#: main.cpp:80
+msgid "the local directory to save the exported diagrams in"
+msgstr ""
+
+#: main.cpp:80
+#, fuzzy
+msgid "the directory of the file"
+msgstr "Fail Wujud"
+
+#: main.cpp:81
+msgid ""
+"keep the tree structure used to store the views in the document in the "
+"target directory"
+msgstr ""
+
+#: operation.cpp:274
+#, fuzzy
+msgid "new_parameter"
+msgstr "Teks baru"
+
+#: model_utils.cpp:454
+#, fuzzy
+msgid "new_actor"
+msgstr "Teks baru"
+
+#: model_utils.cpp:456
+#, fuzzy
+msgid "new_usecase"
+msgstr "Teks baru"
+
+#: model_utils.cpp:458
+#, fuzzy
+msgid "new_package"
+msgstr "Teks baru"
+
+#: model_utils.cpp:460
+#, fuzzy
+msgid "new_component"
+msgstr "Teks baru"
+
+#: model_utils.cpp:462
+#, fuzzy
+msgid "new_node"
+msgstr "Teks baru"
+
+#: model_utils.cpp:464
+#, fuzzy
+msgid "new_artifact"
+msgstr "Teks baru"
+
+#: model_utils.cpp:466
+#, fuzzy
+msgid "new_interface"
+msgstr "Teks baru"
+
+#: model_utils.cpp:468
+#, fuzzy
+msgid "new_datatype"
+msgstr "Teks baru"
+
+#: model_utils.cpp:470
+#, fuzzy
+msgid "new_enum"
+msgstr "Teks baru"
+
+#: model_utils.cpp:472
+#, fuzzy
+msgid "new_entity"
+msgstr "Teks baru"
+
+#: model_utils.cpp:474
+#, fuzzy
+msgid "new_folder"
+msgstr "Teks baru"
+
+#: model_utils.cpp:478
+#, fuzzy
+msgid "new_category"
+msgstr "Teks baru"
+
+#: model_utils.cpp:480
+#, fuzzy
+msgid "new_object"
+msgstr "Teks baru"
+
+#: model_utils.cpp:881
+msgid "OK"
+msgstr ""
+
+#: model_utils.cpp:881
+msgctxt "parse status"
+msgid "Empty"
+msgstr ""
+
+#: model_utils.cpp:881
+msgid "Malformed argument"
+msgstr ""
+
+#: model_utils.cpp:882
+msgid "Unknown argument type"
+msgstr ""
+
+#: model_utils.cpp:882
+#, fuzzy
+msgid "Illegal method name"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: model_utils.cpp:883
+msgid "Unknown return type"
+msgstr ""
+
+#: model_utils.cpp:883
+#, fuzzy
+msgid "Unspecified error"
+msgstr "Name=Ralat proses"
+
+#: umldoc.cpp:80 umldoc.cpp:1974
+msgid "UML Model"
+msgstr ""
+
+#: umldoc.cpp:113
+msgid "Logical View"
+msgstr ""
+
+#: umldoc.cpp:114
+#, fuzzy
+msgid "Use Case View"
+msgstr "Guna Hint Saiz"
+
+#: umldoc.cpp:115
+msgid "Component View"
+msgstr ""
+
+#: umldoc.cpp:116
+msgid "Deployment View"
+msgstr ""
+
+#: umldoc.cpp:117
+msgid "Entity Relationship Model"
+msgstr ""
+
+#: umldoc.cpp:140
+msgid "Datatypes"
+msgstr ""
+
+#: umldoc.cpp:279
+msgid ""
+"The current file has been modified.\n"
+"Do you want to save it?"
+msgstr ""
+
+#: umldoc.cpp:280
+msgctxt "warning message"
+msgid "Warning"
+msgstr ""
+
+#: umldoc.cpp:424
+#, fuzzy, kde-format
+msgid "The file %1 does not exist."
+msgstr "Tidak dapat membuka '%1'. Fail tidak wujud."
+
+#: umldoc.cpp:424 umldoc.cpp:446 umldoc.cpp:484 umldoc.cpp:496 umldoc.cpp:510
+#: umldoc.cpp:522 umldoc.cpp:534 umldoc.cpp:552 folder.cpp:407 folder.cpp:411
+#, fuzzy
+msgid "Load Error"
+msgstr "Name=Ralat proses"
+
+#: umldoc.cpp:446
+#, kde-format
+msgid "The file %1 seems to be corrupted."
+msgstr ""
+
+#: umldoc.cpp:483 umldoc.cpp:495 umldoc.cpp:521
+#, kde-format
+msgid "There was no XMI file found in the compressed file %1."
+msgstr ""
+
+#: umldoc.cpp:509
+#, kde-format
+msgid "There was a problem loading the extracted file: %1"
+msgstr ""
+
+#: umldoc.cpp:533 umldoc.cpp:551
+#, kde-format
+msgid "There was a problem loading file: %1"
+msgstr ""
+
+#: umldoc.cpp:622 umldoc.cpp:632 umldoc.cpp:649 umldoc.cpp:682 umldoc.cpp:700
+#: umlviewimageexportermodel.cpp:256 umllistview.cpp:561
+#, kde-format
+msgid "There was a problem saving file: %1"
+msgstr ""
+
+#: umldoc.cpp:622 umldoc.cpp:632 umldoc.cpp:649 umldoc.cpp:682 umldoc.cpp:700
+#: umldoc.cpp:707 umllistview.cpp:562
+#, fuzzy
+msgid "Save Error"
+msgstr "Name=Ralat proses"
+
+#: umldoc.cpp:707
+#, kde-format
+msgid "There was a problem uploading file: %1"
+msgstr ""
+
+#: umldoc.cpp:1197
+#, fuzzy
+msgid "use case diagram"
+msgstr "Guna Hint Saiz"
+
+#: umldoc.cpp:1200
+msgid "class diagram"
+msgstr ""
+
+#: umldoc.cpp:1203
+msgid "sequence diagram"
+msgstr ""
+
+#: umldoc.cpp:1206
+msgid "collaboration diagram"
+msgstr ""
+
+#: umldoc.cpp:1209
+msgid "state diagram"
+msgstr ""
+
+#: umldoc.cpp:1212
+msgid "activity diagram"
+msgstr ""
+
+#: umldoc.cpp:1215
+msgid "component diagram"
+msgstr ""
+
+#: umldoc.cpp:1218
+msgid "deployment diagram"
+msgstr ""
+
+#: umldoc.cpp:1221
+msgid "entity relationship diagram"
+msgstr ""
+
+#: umldoc.cpp:1276
+#, fuzzy
+#| msgid "Name"
+msgctxt "diagram name"
+msgid "Name"
+msgstr "Nama"
+
+#: umldoc.cpp:1276 umldoc.cpp:1343 umldoc.cpp:1374 umldoc.cpp:1408
+#: object_factory.cpp:191 stereotype.cpp:112 enumliteral.cpp:104
+#, fuzzy
+msgid "Enter name:"
+msgstr "Name=KDevAdaProject"
+
+#: umldoc.cpp:1284 umldoc.cpp:1349
+msgid "That is an invalid name for a diagram."
+msgstr ""
+
+#: umldoc.cpp:1288 umldoc.cpp:1358
+msgid "A diagram is already using that name."
+msgstr ""
+
+#: umldoc.cpp:1343
+#, fuzzy
+#| msgid "Name"
+msgctxt "renaming diagram"
+msgid "Name"
+msgstr "Nama"
+
+#: umldoc.cpp:1374
+#, fuzzy
+#| msgid "Name"
+msgctxt "renaming uml object"
+msgid "Name"
+msgstr "Nama"
+
+#: umldoc.cpp:1408
+#, fuzzy
+#| msgid "Name"
+msgctxt "renaming child uml object"
+msgid "Name"
+msgstr "Nama"
+
+#: umldoc.cpp:1418 umllistview.cpp:2328
+msgid ""
+"The name you entered was not unique.\n"
+"Is this what you wanted?"
+msgstr ""
+
+#: umldoc.cpp:1419 umllistview.cpp:2329
+#, fuzzy
+msgid "Use Name"
+msgstr "Name=KDevAdaProject"
+
+#: umldoc.cpp:1419 umllistview.cpp:2329
+#, fuzzy
+msgid "Enter New Name"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: umldoc.cpp:1469
+#, kde-format
+msgid "Are you sure you want to delete diagram %1?"
+msgstr ""
+
+#: umldoc.cpp:1470
+msgid "Delete Diagram"
+msgstr ""
+
+#: umldoc.cpp:2057
+#, fuzzy
+msgid "Setting up the document..."
+msgstr "Dokumen yang hendak dibuka"
+
+#: umldoc.cpp:2087
+msgid "Resolving object references..."
+msgstr ""
+
+#: umldoc.cpp:2138
+msgid "Loading UML elements..."
+msgstr ""
+
+#: umldoc.cpp:2362
+msgid "Loading diagrams..."
+msgstr ""
+
+#: umldoc.cpp:2856
+#, kde-format
+msgid "/autosave%1"
+msgstr ""
+
+#: object_factory.cpp:191
+#, fuzzy
+#| msgid "Name"
+msgctxt "UMLObject name"
+msgid "Name"
+msgstr "Nama"
+
+#: object_factory.cpp:202
+msgid ""
+"This is a reserved keyword for the language of the configured code generator."
+msgstr ""
+
+#: object_factory.cpp:203
+msgid "Reserved Keyword"
+msgstr ""
+
+#: umlviewimageexportermodel.cpp:223
+msgid "Empty scene"
+msgstr ""
+
+#: umlviewimageexportermodel.cpp:228
+#, kde-format
+msgid "Can not create directory: %1"
+msgstr ""
+
+#: umlviewimageexportermodel.cpp:245
+msgid "Can not save an empty diagram"
+msgstr ""
+
+#: umlviewimageexportermodel.cpp:250
+#, kde-format
+msgid "A problem occurred while saving diagram in %1"
+msgstr ""
+
+#: folder.cpp:407
+#, fuzzy, kde-format
+msgid "The folderfile %1 does not exist."
+msgstr "Tidak dapat membuka '%1'. Fail tidak wujud."
+
+#: folder.cpp:411
+#, kde-format
+msgid "The folderfile %1 cannot be opened."
 msgstr ""
 
 #: rc.cpp:1
@@ -4597,220 +4698,16 @@ msgstr ""
 msgid "<p align=\"right\">Editable text:</p>"
 msgstr ""
 
-#. i18n: file: dialogs/diagrampropertiespage.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDiagramProperties)
-#: rc.cpp:902
-msgid "Diagram Properties"
-msgstr ""
-
-#. i18n: file: dialogs/diagrampropertiespage.ui:39
-#. i18n: ectx: property (text), widget (QLabel, ui_labelDiagramName)
-#: rc.cpp:905
-msgid "Name:"
-msgstr "Nama:"
-
-#. i18n: file: dialogs/diagrampropertiespage.ui:82
-#. i18n: ectx: property (text), widget (QLabel, ui_labelZoom)
-#: rc.cpp:908
-msgid "Zoom:"
-msgstr ""
-
-#. i18n: file: dialogs/diagrampropertiespage.ui:108
-#. i18n: ectx: property (text), widget (QLabel, ui_labelZoomUnit)
-#: rc.cpp:912
-#, no-c-format
-msgid "%"
-msgstr "%"
-
-#. i18n: file: dialogs/diagrampropertiespage.ui:153
-#. i18n: ectx: property (text), widget (QCheckBox, ui_checkBoxShowGrid)
-#: rc.cpp:918
-#, fuzzy
-msgid "Show &grid"
-msgstr "Papar penanda"
-
-#. i18n: file: dialogs/diagrampropertiespage.ui:160
-#. i18n: ectx: property (text), widget (QCheckBox, ui_snapToGrid)
-#: rc.cpp:921
-#, fuzzy
-msgid "Snap &to grid"
-msgstr "Dokumen yang hendak dibuka"
-
-#. i18n: file: dialogs/diagrampropertiespage.ui:168
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: rc.cpp:924
-msgid ""
-"Snap the size of the components to be a multiple of the grid spacing.\n"
-"If 'Snap to Grid' is enabled a component will always be aligned with the "
-"grid on all 4 sides."
-msgstr ""
-
-#. i18n: file: dialogs/diagrampropertiespage.ui:171
-#. i18n: ectx: property (text), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: rc.cpp:928
-#, fuzzy
-msgid "Snap component size"
-msgstr "Guna Hint Saiz"
-
-#. i18n: file: dialogs/diagrampropertiespage.ui:197
-#. i18n: ectx: property (text), widget (QLabel, ui_labelGridSpacing)
-#: rc.cpp:931
-msgid "Grid spacing:  "
-msgstr ""
-
-#. i18n: file: dialogs/diagrampropertiespage.ui:207
-#. i18n: ectx: property (text), widget (QLabel, ui_labelX)
-#: rc.cpp:934
-msgid "X"
-msgstr "X"
-
-#. i18n: file: dialogs/diagrampropertiespage.ui:243
-#. i18n: ectx: property (text), widget (QLabel, ui_labelY)
-#: rc.cpp:937
-msgid "Y"
-msgstr "Y"
-
-#. i18n: file: dialogs/diagrampropertiespage.ui:282
-#. i18n: ectx: property (text), widget (QLabel, ui_labeLineWidth)
-#: rc.cpp:940
-#, fuzzy
-msgid "Line width:  "
-msgstr "Nombor baris:"
-
-#. i18n: file: dialogs/exportallviewsdialogbase.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, ExportAllViewsDialogBase)
-#: rc.cpp:946
-#, fuzzy
-msgid "Export All Views"
-msgstr "Kuncupkan Semua Blok"
-
-#. i18n: file: dialogs/exportallviewsdialogbase.ui:25
-#. i18n: ectx: property (toolTip), widget (QLabel, kURLRequesterLabel)
-#. i18n: file: dialogs/exportallviewsdialogbase.ui:41
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_kURL)
-#: rc.cpp:949 rc.cpp:955
-msgid "The base directory used to save the images"
-msgstr ""
-
-#. i18n: file: dialogs/exportallviewsdialogbase.ui:28
-#. i18n: ectx: property (text), widget (QLabel, kURLRequesterLabel)
-#: rc.cpp:952
-msgid "&Directory to save the diagrams in:"
-msgstr ""
-
-#. i18n: file: dialogs/exportallviewsdialogbase.ui:55
-#. i18n: ectx: property (text), widget (QLabel, ui_imageTypeLabel)
-#: rc.cpp:961
-#, fuzzy
-msgid "&Image type:"
-msgstr "Jenis MIME"
-
-#. i18n: file: dialogs/exportallviewsdialogbase.ui:68
-#. i18n: ectx: property (toolTip), widget (QCheckBox, m_useFolders)
-#: rc.cpp:964
-msgid ""
-"Create in the target directory the same tree structure used\n"
-"in the document to store the views"
-msgstr ""
-
-#. i18n: file: dialogs/exportallviewsdialogbase.ui:72
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_useFolders)
-#: rc.cpp:968
-msgid ""
-"The views are stored in folders in the document. The same tree structure "
-"used in the document to store the views can be created in the selected base "
-"directory with this option.\n"
-"Only the folders made by the user are created in the base directory (Logical "
-"view, use case view and so on are not created)."
-msgstr ""
-
-#. i18n: file: dialogs/exportallviewsdialogbase.ui:75
-#. i18n: ectx: property (text), widget (QCheckBox, m_useFolders)
-#: rc.cpp:972
-#, fuzzy
-msgid "Use &folders"
-msgstr "Guna Hint Saiz"
-
-#. i18n: file: dialogs/umlrolepropertiesbase.ui:67
-#. i18n: ectx: property (title), widget (KButtonGroup, ui_visibilityButtonGroup)
-#: rc.cpp:984
-msgid "Role Visibility"
-msgstr ""
-
-#. i18n: file: dialogs/umlrolepropertiesbase.ui:97
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pImplementationRB)
-#: rc.cpp:996
-msgid "Implementation"
-msgstr ""
-
-#. i18n: file: dialogs/umlrolepropertiesbase.ui:107
-#. i18n: ectx: property (title), widget (KButtonGroup, ui_changeabilityButtonGroup)
-#: rc.cpp:999
-msgid "Role Changeability"
-msgstr ""
-
-#. i18n: file: dialogs/umlrolepropertiesbase.ui:113
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pChangeableRB)
-#: rc.cpp:1002
-msgid "Changeable"
-msgstr ""
-
-#. i18n: file: dialogs/umlrolepropertiesbase.ui:123
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pFrozenRB)
-#: rc.cpp:1005
-msgid "Frozen"
-msgstr ""
-
-#. i18n: file: dialogs/umlrolepropertiesbase.ui:130
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pAddOnlyRB)
-#: rc.cpp:1008
-#, fuzzy
-msgid "Add only"
-msgstr "Tambah Bar Alatan"
-
-#. i18n: file: dialogs/codeimportoptionspage.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1014
-#, fuzzy
-msgid "C++- Import"
-msgstr "Tidak dapat mencari bahagian KDevDesigner."
-
-#. i18n: file: dialogs/codeimportoptionspage.ui:29
-#. i18n: ectx: property (text), widget (QCheckBox, createArtifactCheckBox)
-#: rc.cpp:1017
-msgid "  for each imported file create an artifact in the component view "
-msgstr ""
-
-#. i18n: file: dialogs/codeviewerdialogbase.ui:20
-#. i18n: ectx: property (text), widget (QCheckBox, ui_showHiddenCodeCB)
-#: rc.cpp:1020
-#, fuzzy
-msgid "Show hidden blocks"
-msgstr "Kuncupkan Semua Blok"
-
-#. i18n: file: dialogs/codeviewerdialogbase.ui:33
-#. i18n: ectx: property (text), widget (QLabel, ui_componentLabel)
-#: rc.cpp:1023
-msgid "<p align=\"center\">component name here</p>"
-msgstr ""
-
-#. i18n: file: dialogs/codeviewerdialogbase.ui:46
-#. i18n: ectx: property (text), widget (QCheckBox, ui_highlightCheckBox)
-#: rc.cpp:1026
-#, fuzzy
-msgid "Show block type"
-msgstr "Papar nombor baris"
-
 #. i18n: file: dialogs/autolayoutoptionpage.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1029
+#: rc.cpp:902
 #, fuzzy
 msgid "Layout Generator"
 msgstr "Tidak dapat mencari bahagian KDevDesigner."
 
 #. i18n: file: dialogs/autolayoutoptionpage.ui:28
 #. i18n: ectx: property (toolTip), widget (QCheckBox, m_autoDotPath)
-#: rc.cpp:1032
+#: rc.cpp:905
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -4834,25 +4731,25 @@ msgstr ""
 
 #. i18n: file: dialogs/autolayoutoptionpage.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoDotPath)
-#: rc.cpp:1040
+#: rc.cpp:913
 msgid "Auto detect layout generator"
 msgstr ""
 
 #. i18n: file: dialogs/autolayoutoptionpage.ui:41
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1043
+#: rc.cpp:916
 msgid "Generator executable path:"
 msgstr ""
 
 #. i18n: file: dialogs/autolayoutoptionpage.ui:86
 #. i18n: ectx: property (title), widget (QGroupBox, Other)
-#: rc.cpp:1046
+#: rc.cpp:919
 msgid "Miscellaneous"
 msgstr ""
 
 #. i18n: file: dialogs/autolayoutoptionpage.ui:94
 #. i18n: ectx: property (toolTip), widget (QCheckBox, m_showExportLayout)
-#: rc.cpp:1049
+#: rc.cpp:922
 msgid ""
 "Dot file export is performed by using the export layout.\n"
 "\n"
@@ -4862,9 +4759,213 @@ msgstr ""
 
 #. i18n: file: dialogs/autolayoutoptionpage.ui:97
 #. i18n: ectx: property (text), widget (QCheckBox, m_showExportLayout)
-#: rc.cpp:1054
+#: rc.cpp:927
 msgid "Show export layout in diagram context menu"
 msgstr ""
+
+#. i18n: file: dialogs/exportallviewsdialogbase.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ExportAllViewsDialogBase)
+#: rc.cpp:930
+#, fuzzy
+msgid "Export All Views"
+msgstr "Kuncupkan Semua Blok"
+
+#. i18n: file: dialogs/exportallviewsdialogbase.ui:25
+#. i18n: ectx: property (toolTip), widget (QLabel, kURLRequesterLabel)
+#. i18n: file: dialogs/exportallviewsdialogbase.ui:41
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_kURL)
+#: rc.cpp:933 rc.cpp:939
+msgid "The base directory used to save the images"
+msgstr ""
+
+#. i18n: file: dialogs/exportallviewsdialogbase.ui:28
+#. i18n: ectx: property (text), widget (QLabel, kURLRequesterLabel)
+#: rc.cpp:936
+msgid "&Directory to save the diagrams in:"
+msgstr ""
+
+#. i18n: file: dialogs/exportallviewsdialogbase.ui:55
+#. i18n: ectx: property (text), widget (QLabel, ui_imageTypeLabel)
+#: rc.cpp:945
+#, fuzzy
+msgid "&Image type:"
+msgstr "Jenis MIME"
+
+#. i18n: file: dialogs/exportallviewsdialogbase.ui:68
+#. i18n: ectx: property (toolTip), widget (QCheckBox, m_useFolders)
+#: rc.cpp:948
+msgid ""
+"Create in the target directory the same tree structure used\n"
+"in the document to store the views"
+msgstr ""
+
+#. i18n: file: dialogs/exportallviewsdialogbase.ui:72
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_useFolders)
+#: rc.cpp:952
+msgid ""
+"The views are stored in folders in the document. The same tree structure "
+"used in the document to store the views can be created in the selected base "
+"directory with this option.\n"
+"Only the folders made by the user are created in the base directory (Logical "
+"view, use case view and so on are not created)."
+msgstr ""
+
+#. i18n: file: dialogs/exportallviewsdialogbase.ui:75
+#. i18n: ectx: property (text), widget (QCheckBox, m_useFolders)
+#: rc.cpp:956
+#, fuzzy
+msgid "Use &folders"
+msgstr "Guna Hint Saiz"
+
+#. i18n: file: dialogs/codeviewerdialogbase.ui:20
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showHiddenCodeCB)
+#: rc.cpp:959
+#, fuzzy
+msgid "Show hidden blocks"
+msgstr "Kuncupkan Semua Blok"
+
+#. i18n: file: dialogs/codeviewerdialogbase.ui:33
+#. i18n: ectx: property (text), widget (QLabel, ui_componentLabel)
+#: rc.cpp:962
+msgid "<p align=\"center\">component name here</p>"
+msgstr ""
+
+#. i18n: file: dialogs/codeviewerdialogbase.ui:46
+#. i18n: ectx: property (text), widget (QCheckBox, ui_highlightCheckBox)
+#: rc.cpp:965
+#, fuzzy
+msgid "Show block type"
+msgstr "Papar nombor baris"
+
+#. i18n: file: dialogs/diagrampropertiespage.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDiagramProperties)
+#: rc.cpp:968
+msgid "Diagram Properties"
+msgstr ""
+
+#. i18n: file: dialogs/diagrampropertiespage.ui:39
+#. i18n: ectx: property (text), widget (QLabel, ui_labelDiagramName)
+#: rc.cpp:971
+msgid "Name:"
+msgstr "Nama:"
+
+#. i18n: file: dialogs/diagrampropertiespage.ui:82
+#. i18n: ectx: property (text), widget (QLabel, ui_labelZoom)
+#: rc.cpp:974
+msgid "Zoom:"
+msgstr ""
+
+#. i18n: file: dialogs/diagrampropertiespage.ui:108
+#. i18n: ectx: property (text), widget (QLabel, ui_labelZoomUnit)
+#: rc.cpp:978
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: file: dialogs/diagrampropertiespage.ui:153
+#. i18n: ectx: property (text), widget (QCheckBox, ui_checkBoxShowGrid)
+#: rc.cpp:984
+#, fuzzy
+msgid "Show &grid"
+msgstr "Papar penanda"
+
+#. i18n: file: dialogs/diagrampropertiespage.ui:160
+#. i18n: ectx: property (text), widget (QCheckBox, ui_snapToGrid)
+#: rc.cpp:987
+#, fuzzy
+msgid "Snap &to grid"
+msgstr "Dokumen yang hendak dibuka"
+
+#. i18n: file: dialogs/diagrampropertiespage.ui:168
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_snapComponentSizeToGrid)
+#: rc.cpp:990
+msgid ""
+"Snap the size of the components to be a multiple of the grid spacing.\n"
+"If 'Snap to Grid' is enabled a component will always be aligned with the "
+"grid on all 4 sides."
+msgstr ""
+
+#. i18n: file: dialogs/diagrampropertiespage.ui:171
+#. i18n: ectx: property (text), widget (QCheckBox, ui_snapComponentSizeToGrid)
+#: rc.cpp:994
+#, fuzzy
+msgid "Snap component size"
+msgstr "Guna Hint Saiz"
+
+#. i18n: file: dialogs/diagrampropertiespage.ui:197
+#. i18n: ectx: property (text), widget (QLabel, ui_labelGridSpacing)
+#: rc.cpp:997
+msgid "Grid spacing:  "
+msgstr ""
+
+#. i18n: file: dialogs/diagrampropertiespage.ui:207
+#. i18n: ectx: property (text), widget (QLabel, ui_labelX)
+#: rc.cpp:1000
+msgid "X"
+msgstr "X"
+
+#. i18n: file: dialogs/diagrampropertiespage.ui:243
+#. i18n: ectx: property (text), widget (QLabel, ui_labelY)
+#: rc.cpp:1003
+msgid "Y"
+msgstr "Y"
+
+#. i18n: file: dialogs/diagrampropertiespage.ui:282
+#. i18n: ectx: property (text), widget (QLabel, ui_labeLineWidth)
+#: rc.cpp:1006
+#, fuzzy
+msgid "Line width:  "
+msgstr "Nombor baris:"
+
+#. i18n: file: dialogs/codeimportoptionspage.ui:17
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:1012
+#, fuzzy
+msgid "C++- Import"
+msgstr "Tidak dapat mencari bahagian KDevDesigner."
+
+#. i18n: file: dialogs/codeimportoptionspage.ui:29
+#. i18n: ectx: property (text), widget (QCheckBox, createArtifactCheckBox)
+#: rc.cpp:1015
+msgid "  for each imported file create an artifact in the component view "
+msgstr ""
+
+#. i18n: file: dialogs/umlrolepropertiesbase.ui:67
+#. i18n: ectx: property (title), widget (KButtonGroup, ui_visibilityButtonGroup)
+#: rc.cpp:1027
+msgid "Role Visibility"
+msgstr ""
+
+#. i18n: file: dialogs/umlrolepropertiesbase.ui:97
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pImplementationRB)
+#: rc.cpp:1039
+msgid "Implementation"
+msgstr ""
+
+#. i18n: file: dialogs/umlrolepropertiesbase.ui:107
+#. i18n: ectx: property (title), widget (KButtonGroup, ui_changeabilityButtonGroup)
+#: rc.cpp:1042
+msgid "Role Changeability"
+msgstr ""
+
+#. i18n: file: dialogs/umlrolepropertiesbase.ui:113
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pChangeableRB)
+#: rc.cpp:1045
+msgid "Changeable"
+msgstr ""
+
+#. i18n: file: dialogs/umlrolepropertiesbase.ui:123
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pFrozenRB)
+#: rc.cpp:1048
+msgid "Frozen"
+msgstr ""
+
+#. i18n: file: dialogs/umlrolepropertiesbase.ui:130
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pAddOnlyRB)
+#: rc.cpp:1051
+#, fuzzy
+msgid "Add only"
+msgstr "Tambah Bar Alatan"
 
 #. i18n: file: codegenwizard/codegenstatuspage.ui:27
 #. i18n: ectx: attribute (title), widget (QWidget, ui_statusTab)
@@ -6274,302 +6375,6 @@ msgstr ""
 msgid "show export layout"
 msgstr ""
 
-#: model_utils.cpp:454
-#, fuzzy
-msgid "new_actor"
-msgstr "Teks baru"
-
-#: model_utils.cpp:456
-#, fuzzy
-msgid "new_usecase"
-msgstr "Teks baru"
-
-#: model_utils.cpp:458
-#, fuzzy
-msgid "new_package"
-msgstr "Teks baru"
-
-#: model_utils.cpp:460
-#, fuzzy
-msgid "new_component"
-msgstr "Teks baru"
-
-#: model_utils.cpp:462
-#, fuzzy
-msgid "new_node"
-msgstr "Teks baru"
-
-#: model_utils.cpp:464
-#, fuzzy
-msgid "new_artifact"
-msgstr "Teks baru"
-
-#: model_utils.cpp:466
-#, fuzzy
-msgid "new_interface"
-msgstr "Teks baru"
-
-#: model_utils.cpp:468
-#, fuzzy
-msgid "new_datatype"
-msgstr "Teks baru"
-
-#: model_utils.cpp:470
-#, fuzzy
-msgid "new_enum"
-msgstr "Teks baru"
-
-#: model_utils.cpp:472
-#, fuzzy
-msgid "new_entity"
-msgstr "Teks baru"
-
-#: model_utils.cpp:474
-#, fuzzy
-msgid "new_folder"
-msgstr "Teks baru"
-
-#: model_utils.cpp:478
-#, fuzzy
-msgid "new_category"
-msgstr "Teks baru"
-
-#: model_utils.cpp:480
-#, fuzzy
-msgid "new_object"
-msgstr "Teks baru"
-
-#: model_utils.cpp:881
-msgid "OK"
-msgstr ""
-
-#: model_utils.cpp:881
-msgctxt "parse status"
-msgid "Empty"
-msgstr ""
-
-#: model_utils.cpp:881
-msgid "Malformed argument"
-msgstr ""
-
-#: model_utils.cpp:882
-msgid "Unknown argument type"
-msgstr ""
-
-#: model_utils.cpp:882
-#, fuzzy
-msgid "Illegal method name"
-msgstr "Name=KDevelop: KDE/C++"
-
-#: model_utils.cpp:883
-msgid "Unknown return type"
-msgstr ""
-
-#: model_utils.cpp:883
-#, fuzzy
-msgid "Unspecified error"
-msgstr "Name=Ralat proses"
-
-#: codeimpwizard/codeimpstatuspage.cpp:52
-#, fuzzy
-msgid "Status of Code Importing Progress"
-msgstr "Comment=Projek Ada"
-
-#: codeimpwizard/codeimpstatuspage.cpp:53
-msgid ""
-"Press the button 'Start import' to start the code import.\n"
-"Check the success state for every class."
-msgstr ""
-
-#: codeimpwizard/codeimpstatuspage.cpp:128
-#, kde-format
-msgid "<b>Code import of 1 file:</b><br>"
-msgid_plural "<b>Code import of %1 files:</b><br>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: codeimpwizard/codeimpstatuspage.cpp:144
-#: codeimpwizard/codeimpstatuspage.cpp:151
-#, fuzzy
-msgid "importing file ... DONE<br>"
-msgstr "Fail Wujud"
-
-#: codeimpwizard/codeimpstatuspage.cpp:145
-#: codeimpwizard/codeimpstatuspage.cpp:152
-msgid "Import Done"
-msgstr ""
-
-#: codeimpwizard/codeimpstatuspage.cpp:156
-#, fuzzy
-msgid "importing file ..."
-msgstr "Fail Wujud"
-
-#: codeimpwizard/codeimpstatuspage.cpp:208
-#, fuzzy
-msgid "importing file ... stopped<br>"
-msgstr "Fail Wujud"
-
-#: codeimpwizard/codeimpstatuspage.cpp:209
-#, fuzzy
-msgid "Import stopped"
-msgstr "Tidak dapat mencari bahagian KDevDesigner."
-
-#: codeimpwizard/codeimpstatuspage.cpp:271
-#, fuzzy
-msgid "Not Imported"
-msgstr "Tidak dapat mencari bahagian KDevDesigner."
-
-#: codeimpwizard/codeimpstatuspage.cpp:298
-msgid "Umbrello Code Import - Logger Export"
-msgstr ""
-
-#: codeimpwizard/codeimportingwizard.cpp:48
-msgid "Code Importing Wizard"
-msgstr ""
-
-#: codeimpwizard/codeimpthread.cpp:59
-#, fuzzy, kde-format
-msgid "Importing file: %1"
-msgstr "Comment=Fail Projek KDevelop"
-
-#: codeimpwizard/codeimpthread.cpp:63
-msgctxt "show failed on status bar"
-msgid "Failed."
-msgstr ""
-
-#: codeimpwizard/codeimpthread.cpp:69
-msgctxt "show Ready on status bar"
-msgid "Ready."
-msgstr ""
-
-#: codeimpwizard/codeimpthread.cpp:78
-#, kde-format
-msgid "No code importer for file: %1"
-msgstr ""
-
-#: codeimpwizard/codeimpselectpage.cpp:47
-msgid "Code Importing Path"
-msgstr ""
-
-#: codeimpwizard/codeimpselectpage.cpp:48
-msgid "Select the code importing path."
-msgstr ""
-
-#: codeimpwizard/codeimpselectpage.cpp:110
-#, fuzzy
-msgid "File System Model"
-msgstr "Dokumen yang hendak dibuka"
-
-#: codeimpwizard/codeimpselectpage.cpp:135
-msgid "Select the desired language to filter files."
-msgstr ""
-
-#: codeimpwizard/codeimpselectpage.cpp:136
-msgid "Select also all the files in the subdirectories."
-msgstr ""
-
-#: codeimpwizard/codeimpselectpage.cpp:137
-msgid "Select all the files below the current directory."
-msgstr ""
-
-#: codeimpwizard/codeimpselectpage.cpp:138
-msgid "Clear all selections."
-msgstr ""
-
-#: codeimpwizard/codeimpselectpage.cpp:139
-msgid "Add file extensions like e.g. '*.h *.hpp'."
-msgstr ""
-
-#: object_factory.cpp:191
-#, fuzzy
-#| msgid "Name"
-msgctxt "UMLObject name"
-msgid "Name"
-msgstr "Nama"
-
-#: object_factory.cpp:202
-msgid ""
-"This is a reserved keyword for the language of the configured code generator."
-msgstr ""
-
-#: object_factory.cpp:203
-msgid "Reserved Keyword"
-msgstr ""
-
-#: main.cpp:36 main.cpp:68
-msgid "Umbrello UML Modeller"
-msgstr ""
-
-#: main.cpp:70
-msgid "(c) 2001 Paul Hensgen, (c) 2002-2012 Umbrello UML Modeller Authors"
-msgstr ""
-
-#: main.cpp:72
-msgid "Paul Hensgen"
-msgstr ""
-
-#: main.cpp:77
-#, fuzzy
-msgid "File to open"
-msgstr "Dokumen yang hendak dibuka"
-
-#: main.cpp:78
-msgid "export diagrams to extension and exit"
-msgstr ""
-
-#: main.cpp:79
-msgid "list available export extensions"
-msgstr ""
-
-#: main.cpp:80
-msgid "the local directory to save the exported diagrams in"
-msgstr ""
-
-#: main.cpp:80
-#, fuzzy
-msgid "the directory of the file"
-msgstr "Fail Wujud"
-
-#: main.cpp:81
-msgid ""
-"keep the tree structure used to store the views in the document in the "
-"target directory"
-msgstr ""
-
-#: umlviewimageexportermodel.cpp:223
-msgid "Empty scene"
-msgstr ""
-
-#: umlviewimageexportermodel.cpp:228
-#, kde-format
-msgid "Can not create directory: %1"
-msgstr ""
-
-#: umlviewimageexportermodel.cpp:245
-msgid "Can not save an empty diagram"
-msgstr ""
-
-#: umlviewimageexportermodel.cpp:250
-#, kde-format
-msgid "A problem occurred while saving diagram in %1"
-msgstr ""
-
-#: umlviewimageexportermodel.cpp:256 umllistview.cpp:561 umldoc.cpp:622
-#: umldoc.cpp:632 umldoc.cpp:649 umldoc.cpp:682 umldoc.cpp:700
-#, kde-format
-msgid "There was a problem saving file: %1"
-msgstr ""
-
-#: toolbarstateassociation.cpp:177 toolbarstateassociation.cpp:244
-#, fuzzy
-msgid "Incorrect use of associations."
-msgstr "Guna Hint Saiz"
-
-#: toolbarstateassociation.cpp:177 toolbarstateassociation.cpp:244
-#, fuzzy
-msgid "Association Error"
-msgstr "Name=Ralat proses"
-
 #: listpopupmenu.cpp:308 listpopupmenu.cpp:637
 #, fuzzy
 msgid "Change Font..."
@@ -6772,9 +6577,38 @@ msgstr ""
 msgid "Subsystem"
 msgstr ""
 
+#: listpopupmenu.cpp:701 worktoolbar.cpp:331
+msgid "Component"
+msgstr ""
+
+#: listpopupmenu.cpp:704 worktoolbar.cpp:333
+msgid "Artifact"
+msgstr ""
+
+#: listpopupmenu.cpp:715 worktoolbar.cpp:332
+msgid "Node"
+msgstr ""
+
 #: listpopupmenu.cpp:728 listpopupmenu.cpp:862
 msgid "Folder"
 msgstr ""
+
+#: listpopupmenu.cpp:731 worktoolbar.cpp:337
+msgid "Entity"
+msgstr ""
+
+#: listpopupmenu.cpp:741 worktoolbar.cpp:359
+msgid "Category"
+msgstr ""
+
+#: listpopupmenu.cpp:744 worktoolbar.cpp:313
+msgid "Actor"
+msgstr ""
+
+#: listpopupmenu.cpp:747 worktoolbar.cpp:320
+#, fuzzy
+msgid "Use Case"
+msgstr "Guna Hint Saiz"
 
 #: listpopupmenu.cpp:757
 #, fuzzy
@@ -6795,6 +6629,22 @@ msgctxt "new class menu item"
 msgid "Class"
 msgstr "Kelas"
 
+#: listpopupmenu.cpp:864 worktoolbar.cpp:334
+msgid "Interface"
+msgstr ""
+
+#: listpopupmenu.cpp:865 worktoolbar.cpp:335
+msgid "Datatype"
+msgstr ""
+
+#: listpopupmenu.cpp:866 worktoolbar.cpp:336
+msgid "Enum"
+msgstr ""
+
+#: listpopupmenu.cpp:867 listpopupmenu.cpp:958 worktoolbar.cpp:330
+msgid "Package"
+msgstr ""
+
 #: listpopupmenu.cpp:944
 msgid "Public Only"
 msgstr ""
@@ -6805,6 +6655,10 @@ msgstr ""
 
 #: listpopupmenu.cpp:953
 msgid "Attribute Signature"
+msgstr ""
+
+#: listpopupmenu.cpp:961 stereotype.cpp:112
+msgid "Stereotype"
 msgstr ""
 
 #: listpopupmenu.cpp:973
@@ -6879,18 +6733,50 @@ msgstr ""
 msgid "Package..."
 msgstr ""
 
+#: listpopupmenu.cpp:1182 worktoolbar.cpp:322
+msgid "Initial State"
+msgstr ""
+
+#: listpopupmenu.cpp:1183 worktoolbar.cpp:324
+msgid "End State"
+msgstr ""
+
 #: listpopupmenu.cpp:1184
 #, fuzzy
 msgctxt "add new state"
 msgid "State..."
 msgstr "Jenis MIME"
 
+#: listpopupmenu.cpp:1185 worktoolbar.cpp:342
+msgid "Junction"
+msgstr ""
+
+#: listpopupmenu.cpp:1186 worktoolbar.cpp:338
+msgid "Deep History"
+msgstr ""
+
+#: listpopupmenu.cpp:1187 worktoolbar.cpp:339
+msgid "Shallow History"
+msgstr ""
+
 #: listpopupmenu.cpp:1188
 msgid "Choice"
 msgstr ""
 
+#: listpopupmenu.cpp:1189 worktoolbar.cpp:341
+msgid "Fork"
+msgstr ""
+
 #: listpopupmenu.cpp:1190
 msgid "Join"
+msgstr ""
+
+#: listpopupmenu.cpp:1194 worktoolbar.cpp:354
+msgid "Initial Activity"
+msgstr ""
+
+#: listpopupmenu.cpp:1195 worktoolbar.cpp:351
+msgid "End Activity"
 msgstr ""
 
 #: listpopupmenu.cpp:1196 listpopupmenu.cpp:1238
@@ -6990,6 +6876,224 @@ msgstr ""
 msgid "Union"
 msgstr ""
 
+#: worktoolbar.cpp:300
+msgid "Object"
+msgstr ""
+
+#: worktoolbar.cpp:301
+msgid "Synchronous Message"
+msgstr ""
+
+#: worktoolbar.cpp:302
+msgid "Asynchronous Message"
+msgstr ""
+
+#: worktoolbar.cpp:303
+msgid "Found Message"
+msgstr ""
+
+#: worktoolbar.cpp:304
+msgid "Lost Message"
+msgstr ""
+
+#: worktoolbar.cpp:305
+msgid "Combined Fragment"
+msgstr ""
+
+#: worktoolbar.cpp:307 basictypes.cpp:392
+msgid "Association"
+msgstr ""
+
+#: worktoolbar.cpp:308 basictypes.cpp:404
+msgid "Containment"
+msgstr ""
+
+#: worktoolbar.cpp:309 basictypes.cpp:412
+msgid "Anchor"
+msgstr ""
+
+#: worktoolbar.cpp:310
+msgid "Label"
+msgstr "Label"
+
+#: worktoolbar.cpp:311
+msgid "Note"
+msgstr ""
+
+#: worktoolbar.cpp:312
+msgid "Box"
+msgstr ""
+
+#: worktoolbar.cpp:314 basictypes.cpp:390
+msgid "Dependency"
+msgstr ""
+
+#: worktoolbar.cpp:315 basictypes.cpp:388
+msgid "Aggregation"
+msgstr ""
+
+#: worktoolbar.cpp:316 basictypes.cpp:424
+msgid "Relationship"
+msgstr ""
+
+#: worktoolbar.cpp:317
+msgid "Directional Association"
+msgstr ""
+
+#: worktoolbar.cpp:318
+msgid "Implements"
+msgstr ""
+
+#: worktoolbar.cpp:319 basictypes.cpp:406
+msgid "Composition"
+msgstr ""
+
+#: worktoolbar.cpp:321
+#, fuzzy
+#| msgid "Class"
+msgctxt "UML class"
+msgid "Class"
+msgstr "Kelas"
+
+#: worktoolbar.cpp:323
+msgid "Region"
+msgstr ""
+
+#: worktoolbar.cpp:326
+msgid "Send signal"
+msgstr ""
+
+#: worktoolbar.cpp:327
+msgid "Accept signal"
+msgstr ""
+
+#: worktoolbar.cpp:328
+msgid "Accept time event"
+msgstr ""
+
+#: worktoolbar.cpp:329
+msgid "Fork/Join"
+msgstr ""
+
+#: worktoolbar.cpp:340
+msgctxt "join states"
+msgid "Join"
+msgstr ""
+
+#: worktoolbar.cpp:343
+msgctxt "state choice"
+msgid "Choice"
+msgstr ""
+
+#: worktoolbar.cpp:346
+msgid "And Line"
+msgstr ""
+
+#: worktoolbar.cpp:347 basictypes.cpp:414
+msgid "State Transition"
+msgstr ""
+
+#: worktoolbar.cpp:348
+msgid "Activity Transition"
+msgstr ""
+
+#: worktoolbar.cpp:350
+#, fuzzy
+msgctxt "state diagram"
+msgid "State"
+msgstr "Jenis MIME"
+
+#: worktoolbar.cpp:352
+#, fuzzy
+msgid "Final Activity"
+msgstr "Tukarnama Halaman %1 ke %2"
+
+#: worktoolbar.cpp:353
+msgid "Pin"
+msgstr ""
+
+#: worktoolbar.cpp:355
+msgid "Message"
+msgstr ""
+
+#: worktoolbar.cpp:356 basictypes.cpp:418
+msgid "Exception"
+msgstr ""
+
+#: worktoolbar.cpp:357
+msgid "Object Node"
+msgstr ""
+
+#: worktoolbar.cpp:358
+msgid "Pre/Post condition"
+msgstr ""
+
+#: worktoolbar.cpp:360 basictypes.cpp:420
+msgid "Category to Parent"
+msgstr ""
+
+#: worktoolbar.cpp:361 basictypes.cpp:422
+msgid "Child to Category"
+msgstr ""
+
+#: worktoolbar.cpp:372
+#, fuzzy
+msgctxt "selection arrow"
+msgid "Select"
+msgstr "&Pilih"
+
+#: toolbarstateother.cpp:258
+#, fuzzy
+msgid "Enter Signal Name"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: toolbarstateother.cpp:259
+#, fuzzy
+msgid "Enter Signal"
+msgstr "Name=KDevAdaProject"
+
+#: toolbarstateother.cpp:259
+msgid "new Signal"
+msgstr ""
+
+#: toolbarstateother.cpp:265
+#, fuzzy
+msgid "Enter Time Event Name"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: toolbarstateother.cpp:266
+#, fuzzy
+msgid "Enter Time Event"
+msgstr "Tajuk laman baru"
+
+#: toolbarstateother.cpp:266
+#, fuzzy
+msgid "new time event"
+msgstr "Teks baru"
+
+#: toolbarstateother.cpp:272
+#, fuzzy
+msgid "Enter Combined Fragment Name"
+msgstr "Name=KDevelop: KDE/C++"
+
+#: toolbarstateother.cpp:273
+msgid "Enter the Combined Fragment"
+msgstr ""
+
+#: toolbarstateother.cpp:273
+msgid "new Combined Fragment"
+msgstr ""
+
+#: toolbarstateassociation.cpp:177 toolbarstateassociation.cpp:244
+#, fuzzy
+msgid "Incorrect use of associations."
+msgstr "Guna Hint Saiz"
+
+#: toolbarstateassociation.cpp:177 toolbarstateassociation.cpp:244
+#, fuzzy
+msgid "Association Error"
+msgstr "Name=Ralat proses"
+
 #: umllistviewitem.cpp:577 umllistviewitem.cpp:610 umllistviewitem.cpp:641
 #: umllistviewitem.cpp:668
 #, fuzzy
@@ -7017,6 +7121,103 @@ msgstr ""
 msgid "Name Not Valid"
 msgstr "Name=KDevelop: KDE/C++"
 
+#: enumliteral.cpp:104
+#, fuzzy
+#| msgid "Name"
+msgctxt "enum name"
+msgid "Name"
+msgstr "Nama"
+
+#: basictypes.cpp:234
+#, fuzzy
+msgid "Class Diagram"
+msgstr "Guna Hint Saiz"
+
+#: basictypes.cpp:236
+#, fuzzy
+msgid "Use Case Diagram"
+msgstr "Guna Hint Saiz"
+
+#: basictypes.cpp:238
+#, fuzzy
+msgid "Sequence Diagram"
+msgstr "Guna Hint Saiz"
+
+#: basictypes.cpp:240
+msgid "Collaboration Diagram"
+msgstr ""
+
+#: basictypes.cpp:242
+#, fuzzy
+msgid "State Diagram"
+msgstr "Tiada padanan"
+
+#: basictypes.cpp:244
+#, fuzzy
+msgid "Activity Diagram"
+msgstr "Name=KDevAdaProject"
+
+#: basictypes.cpp:246
+#, fuzzy
+msgid "Component Diagram"
+msgstr "Guna Hint Saiz"
+
+#: basictypes.cpp:248
+#, fuzzy
+msgid "Deployment Diagram"
+msgstr "Tiada padanan"
+
+#: basictypes.cpp:250
+#, fuzzy
+msgid "Entity Relationship Diagram"
+msgstr "Guna Hint Saiz"
+
+#: basictypes.cpp:252
+#, fuzzy
+msgid "No Diagram"
+msgstr "Tiada padanan"
+
+#: basictypes.cpp:386
+msgid "Generalization"
+msgstr ""
+
+#: basictypes.cpp:394
+msgid "Self Association"
+msgstr ""
+
+#: basictypes.cpp:396
+msgid "Collaboration Message"
+msgstr ""
+
+#: basictypes.cpp:398
+msgid "Sequence Message"
+msgstr ""
+
+#: basictypes.cpp:400
+msgid "Collaboration Self Message"
+msgstr ""
+
+#: basictypes.cpp:402
+msgid "Sequence Self Message"
+msgstr ""
+
+#: basictypes.cpp:408
+msgid "Realization"
+msgstr ""
+
+#: basictypes.cpp:410
+msgid "Uni Association"
+msgstr ""
+
+#: basictypes.cpp:426
+msgid "Unknown"
+msgstr ""
+
+#: basictypes.cpp:428
+#, fuzzy
+msgid "? AssociationType ?"
+msgstr "Name=KDevAdaProject"
+
 #: umllistview.cpp:522
 msgid "Externalize Folder"
 msgstr ""
@@ -7043,12 +7244,6 @@ msgstr ""
 msgid "File Exist"
 msgstr "Comment=Fail Projek KDevelop"
 
-#: umllistview.cpp:562 umldoc.cpp:622 umldoc.cpp:632 umldoc.cpp:649
-#: umldoc.cpp:682 umldoc.cpp:700 umldoc.cpp:707
-#, fuzzy
-msgid "Save Error"
-msgstr "Name=Ralat proses"
-
 #: umllistview.cpp:593
 #, fuzzy
 msgid "Enter Model Name"
@@ -7067,22 +7262,6 @@ msgid ""
 "The name you entered was invalid.\n"
 "Creation process has been canceled."
 msgstr ""
-
-#: umllistview.cpp:2328 umldoc.cpp:1418
-msgid ""
-"The name you entered was not unique.\n"
-"Is this what you wanted?"
-msgstr ""
-
-#: umllistview.cpp:2329 umldoc.cpp:1419
-#, fuzzy
-msgid "Use Name"
-msgstr "Name=KDevAdaProject"
-
-#: umllistview.cpp:2329 umldoc.cpp:1419
-#, fuzzy
-msgid "Enter New Name"
-msgstr "Name=KDevelop: KDE/C++"
 
 #: umllistview.cpp:2335 umllistview.cpp:2600
 msgid ""
@@ -7127,185 +7306,6 @@ msgstr ""
 #, fuzzy
 msgid "File Already Exists"
 msgstr "Comment=Fail Projek KDevelop"
-
-#: operation.cpp:274
-#, fuzzy
-msgid "new_parameter"
-msgstr "Teks baru"
-
-#: umldoc.cpp:80 umldoc.cpp:1974
-msgid "UML Model"
-msgstr ""
-
-#: umldoc.cpp:113
-msgid "Logical View"
-msgstr ""
-
-#: umldoc.cpp:114
-#, fuzzy
-msgid "Use Case View"
-msgstr "Guna Hint Saiz"
-
-#: umldoc.cpp:115
-msgid "Component View"
-msgstr ""
-
-#: umldoc.cpp:116
-msgid "Deployment View"
-msgstr ""
-
-#: umldoc.cpp:117
-msgid "Entity Relationship Model"
-msgstr ""
-
-#: umldoc.cpp:140
-msgid "Datatypes"
-msgstr ""
-
-#: umldoc.cpp:279
-msgid ""
-"The current file has been modified.\n"
-"Do you want to save it?"
-msgstr ""
-
-#: umldoc.cpp:280
-msgctxt "warning message"
-msgid "Warning"
-msgstr ""
-
-#: umldoc.cpp:424
-#, fuzzy, kde-format
-msgid "The file %1 does not exist."
-msgstr "Tidak dapat membuka '%1'. Fail tidak wujud."
-
-#: umldoc.cpp:446
-#, kde-format
-msgid "The file %1 seems to be corrupted."
-msgstr ""
-
-#: umldoc.cpp:483 umldoc.cpp:495 umldoc.cpp:521
-#, kde-format
-msgid "There was no XMI file found in the compressed file %1."
-msgstr ""
-
-#: umldoc.cpp:509
-#, kde-format
-msgid "There was a problem loading the extracted file: %1"
-msgstr ""
-
-#: umldoc.cpp:533 umldoc.cpp:551
-#, kde-format
-msgid "There was a problem loading file: %1"
-msgstr ""
-
-#: umldoc.cpp:707
-#, kde-format
-msgid "There was a problem uploading file: %1"
-msgstr ""
-
-#: umldoc.cpp:1197
-#, fuzzy
-msgid "use case diagram"
-msgstr "Guna Hint Saiz"
-
-#: umldoc.cpp:1200
-msgid "class diagram"
-msgstr ""
-
-#: umldoc.cpp:1203
-msgid "sequence diagram"
-msgstr ""
-
-#: umldoc.cpp:1206
-msgid "collaboration diagram"
-msgstr ""
-
-#: umldoc.cpp:1209
-msgid "state diagram"
-msgstr ""
-
-#: umldoc.cpp:1212
-msgid "activity diagram"
-msgstr ""
-
-#: umldoc.cpp:1215
-msgid "component diagram"
-msgstr ""
-
-#: umldoc.cpp:1218
-msgid "deployment diagram"
-msgstr ""
-
-#: umldoc.cpp:1221
-msgid "entity relationship diagram"
-msgstr ""
-
-#: umldoc.cpp:1276
-#, fuzzy
-#| msgid "Name"
-msgctxt "diagram name"
-msgid "Name"
-msgstr "Nama"
-
-#: umldoc.cpp:1284 umldoc.cpp:1349
-msgid "That is an invalid name for a diagram."
-msgstr ""
-
-#: umldoc.cpp:1288 umldoc.cpp:1358
-msgid "A diagram is already using that name."
-msgstr ""
-
-#: umldoc.cpp:1343
-#, fuzzy
-#| msgid "Name"
-msgctxt "renaming diagram"
-msgid "Name"
-msgstr "Nama"
-
-#: umldoc.cpp:1374
-#, fuzzy
-#| msgid "Name"
-msgctxt "renaming uml object"
-msgid "Name"
-msgstr "Nama"
-
-#: umldoc.cpp:1408
-#, fuzzy
-#| msgid "Name"
-msgctxt "renaming child uml object"
-msgid "Name"
-msgstr "Nama"
-
-#: umldoc.cpp:1469
-#, kde-format
-msgid "Are you sure you want to delete diagram %1?"
-msgstr ""
-
-#: umldoc.cpp:1470
-msgid "Delete Diagram"
-msgstr ""
-
-#: umldoc.cpp:2057
-#, fuzzy
-msgid "Setting up the document..."
-msgstr "Dokumen yang hendak dibuka"
-
-#: umldoc.cpp:2087
-msgid "Resolving object references..."
-msgstr ""
-
-#: umldoc.cpp:2138
-msgid "Loading UML elements..."
-msgstr ""
-
-#: umldoc.cpp:2362
-msgid "Loading diagrams..."
-msgstr ""
-
-#: umldoc.cpp:2856
-#, kde-format
-msgid "/autosave%1"
-msgstr ""
 
 #, fuzzy
 #~ msgid "Create class diagram : %1"
