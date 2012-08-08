@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-27 04:18+0200\n"
+"POT-Creation-Date: 2012-08-07 21:36+0200\n"
 "PO-Revision-Date: 2008-07-13 01:04+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -262,7 +262,7 @@ msgstr[1] "Aksara"
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:12
 #. i18n: ectx: property (title), widget (QGroupBox, gbViInputMode)
 #: dialogs/katedialogs.cpp:679 dialogs/katedialogs.cpp:756
-#: dialogs/katedialogs.cpp:923 rc.cpp:92 rc.cpp:610
+#: dialogs/katedialogs.cpp:923 rc.cpp:92 rc.cpp:499
 msgid "General"
 msgstr ""
 
@@ -325,7 +325,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:110
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/katedialogs.cpp:924 rc.cpp:589
+#: dialogs/katedialogs.cpp:924 rc.cpp:478
 msgid "Advanced"
 msgstr ""
 
@@ -715,7 +715,7 @@ msgstr "Ciri %1"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:66
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: mode/katemodeconfigpage.cpp:284 rc.cpp:308
+#: mode/katemodeconfigpage.cpp:284 rc.cpp:614
 #, fuzzy
 msgid "Properties"
 msgstr "Ciri Kotak"
@@ -907,6 +907,15 @@ msgstr "Ralat %1"
 msgid "Error loading script %1"
 msgstr ""
 
+#: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
+#, fuzzy, kde-format
+msgid "Command not found: %1"
+msgstr "Arahan tak ditemui"
+
+#: script/katescriptmanager.cpp:349
+msgid "Reload all JavaScript files (indenters, command line scripts, etc)."
+msgstr ""
+
 #: script/katescriptconsole.cpp:61
 msgid "Error: can't open utils.js"
 msgstr ""
@@ -927,15 +936,6 @@ msgstr "Pelaksanaan"
 
 #: script/katescriptconsole.cpp:147
 msgid "There's no code to execute"
-msgstr ""
-
-#: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
-#, fuzzy, kde-format
-msgid "Command not found: %1"
-msgstr "Arahan tak ditemui"
-
-#: script/katescriptmanager.cpp:349
-msgid "Reload all JavaScript files (indenters, command line scripts, etc)."
 msgstr ""
 
 #: search/katesearchbar.cpp:77
@@ -1182,6 +1182,75 @@ msgstr "Ralat!"
 msgid "Error: %1"
 msgstr "Ralat %1"
 
+#: syntax/katehighlight.cpp:83
+#, fuzzy
+#| msgid "None"
+msgctxt "Syntax highlighting"
+msgid "None"
+msgstr "Tiada"
+
+#: syntax/katehighlight.cpp:737
+msgid "Normal Text"
+msgstr "Teks Normal"
+
+#: syntax/katehighlight.cpp:899
+#, fuzzy, kde-format
+#| msgid ""
+#| "<B>%1</B>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
+#| "name<BR>"
+msgid ""
+"<b>%1</b>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
+"name<br />"
+msgstr ""
+"<B>%1</B>: Sintaks bantahan. Atribut (%2) tidak ditangani oleh nama "
+"simbolik<BR>"
+
+#: syntax/katehighlight.cpp:1422
+#, fuzzy, kde-format
+#| msgid "<B>%1</B>: Deprecated syntax. Context %2 has no symbolic name<BR>"
+msgid "<b>%1</b>: Deprecated syntax. Context %2 has no symbolic name<br />"
+msgstr ""
+"<B>%1</B>: Sintaks bantahan. Konteks %2 tidak mempunyai nama simbolik<BR>"
+
+#: syntax/katehighlight.cpp:1508
+#, kde-format
+msgid ""
+"<B>%1</B>:Deprecated syntax. Context %2 not addressed by a symbolic name"
+msgstr ""
+"<B>%1</B>:Sintaks bantahan. Konteks %2 tidak ditandakan dengan nama simbolik"
+
+#: syntax/katehighlight.cpp:1652
+msgid ""
+"There were warning(s) and/or error(s) while parsing the syntax highlighting "
+"configuration."
+msgstr ""
+"Terdapat amaran dan/atau ralat semasa mengkaji hurai konfigurasi penonjolan "
+"sintaks."
+
+#: syntax/katehighlight.cpp:1654
+msgid "Kate Syntax Highlighting Parser"
+msgstr "Pengkaji Hurai Penonjolan Sintaks Kate"
+
+#: syntax/katehighlight.cpp:1816
+msgid ""
+"Since there has been an error parsing the highlighting description, this "
+"highlighting will be disabled"
+msgstr ""
+"Oleh sebab terdapat ralat semasa mengkaji hurai huraian penonjolan, "
+"penonjolan ini akan dinyahaktifkan"
+
+#: syntax/katehighlight.cpp:2042
+#, fuzzy, kde-format
+#| msgid ""
+#| "<B>%1</B>: Specified multiline comment region (%2) could not be "
+#| "resolved<BR>"
+msgid ""
+"<b>%1</b>: Specified multiline comment region (%2) could not be resolved<br /"
+">"
+msgstr ""
+"<B>%1</B>: Rantau komen berbilang baris yang ditetapkan (%2) tidak dapat "
+"diselesaikan<BR>"
+
 #: syntax/katesyntaxmanager.cpp:156
 #, fuzzy
 #| msgid "Normal"
@@ -1279,75 +1348,6 @@ msgctxt "@item:intable Text context"
 msgid "Error"
 msgstr "Ralat:"
 
-#: syntax/katehighlight.cpp:83
-#, fuzzy
-#| msgid "None"
-msgctxt "Syntax highlighting"
-msgid "None"
-msgstr "Tiada"
-
-#: syntax/katehighlight.cpp:737
-msgid "Normal Text"
-msgstr "Teks Normal"
-
-#: syntax/katehighlight.cpp:899
-#, fuzzy, kde-format
-#| msgid ""
-#| "<B>%1</B>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
-#| "name<BR>"
-msgid ""
-"<b>%1</b>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
-"name<br />"
-msgstr ""
-"<B>%1</B>: Sintaks bantahan. Atribut (%2) tidak ditangani oleh nama "
-"simbolik<BR>"
-
-#: syntax/katehighlight.cpp:1422
-#, fuzzy, kde-format
-#| msgid "<B>%1</B>: Deprecated syntax. Context %2 has no symbolic name<BR>"
-msgid "<b>%1</b>: Deprecated syntax. Context %2 has no symbolic name<br />"
-msgstr ""
-"<B>%1</B>: Sintaks bantahan. Konteks %2 tidak mempunyai nama simbolik<BR>"
-
-#: syntax/katehighlight.cpp:1508
-#, kde-format
-msgid ""
-"<B>%1</B>:Deprecated syntax. Context %2 not addressed by a symbolic name"
-msgstr ""
-"<B>%1</B>:Sintaks bantahan. Konteks %2 tidak ditandakan dengan nama simbolik"
-
-#: syntax/katehighlight.cpp:1652
-msgid ""
-"There were warning(s) and/or error(s) while parsing the syntax highlighting "
-"configuration."
-msgstr ""
-"Terdapat amaran dan/atau ralat semasa mengkaji hurai konfigurasi penonjolan "
-"sintaks."
-
-#: syntax/katehighlight.cpp:1654
-msgid "Kate Syntax Highlighting Parser"
-msgstr "Pengkaji Hurai Penonjolan Sintaks Kate"
-
-#: syntax/katehighlight.cpp:1816
-msgid ""
-"Since there has been an error parsing the highlighting description, this "
-"highlighting will be disabled"
-msgstr ""
-"Oleh sebab terdapat ralat semasa mengkaji hurai huraian penonjolan, "
-"penonjolan ini akan dinyahaktifkan"
-
-#: syntax/katehighlight.cpp:2042
-#, fuzzy, kde-format
-#| msgid ""
-#| "<B>%1</B>: Specified multiline comment region (%2) could not be "
-#| "resolved<BR>"
-msgid ""
-"<b>%1</b>: Specified multiline comment region (%2) could not be resolved<br /"
-">"
-msgstr ""
-"<B>%1</B>: Rantau komen berbilang baris yang ditetapkan (%2) tidak dapat "
-"diselesaikan<BR>"
-
 #: utils/kateautoindent.cpp:75
 #, fuzzy
 #| msgid "None"
@@ -1409,258 +1409,93 @@ msgstr "Seterus&nya: %1 - \"%2\""
 msgid "&Previous: %1 - \"%2\""
 msgstr "&Terdahulu: %1 - \"%2\""
 
-#: utils/kateprinter.cpp:246
-msgid "(Selection of) "
-msgstr "(Pemilihan bagi)"
-
-#: utils/kateprinter.cpp:528
+#: utils/katecmds.cpp:203 utils/katecmds.cpp:236
 #, kde-format
-msgid "Typographical Conventions for %1"
-msgstr "Konvensyen Tipografi untuk %1"
+msgid "Missing argument. Usage: %1 <value>"
+msgstr "Argumen hilang. Penggunan: %1 <value>"
 
-#: utils/kateprinter.cpp:558
-#, fuzzy
-#| msgid "Context"
-msgid "text"
-msgstr "Konteks"
+#: utils/katecmds.cpp:218
+#, fuzzy, kde-format
+#| msgid "No such highlight '%1'"
+msgid "No such highlighting '%1'"
+msgstr "Tiada penonjolan '%1'"
 
-#: utils/kateprinter.cpp:682
-msgid "Te&xt Settings"
-msgstr "Seting &Teks"
+#: utils/katecmds.cpp:225
+#, fuzzy, kde-format
+#| msgid "No such command: \"%1\""
+msgid "No such mode '%1'"
+msgstr "Tiada arahan: \"%1\""
 
-#: utils/kateprinter.cpp:686
-#, fuzzy
-#| msgid "Print &line numbers"
-msgid "Print line &numbers"
-msgstr "Cetak bilangan &baris"
+#: utils/katecmds.cpp:240
+#, kde-format
+msgid "Failed to convert argument '%1' to integer."
+msgstr "Gagal menukar argumen '%1' kepada integer."
 
-#: utils/kateprinter.cpp:689
-#, fuzzy
-#| msgid "Print &line numbers"
-msgid "Print &legend"
-msgstr "Cetak bilangan &baris"
+#: utils/katecmds.cpp:246 utils/katecmds.cpp:252
+msgid "Width must be at least 1."
+msgstr "Lebar mestilah sekurang-kurangnya 1."
 
-#: utils/kateprinter.cpp:698
-msgid ""
-"<p>If enabled, line numbers will be printed on the left side of the page(s)."
-"</p>"
-msgstr ""
-"<p>Jika diaktifkan, bilangan baris akan dicetak di sebelah kanan halaman.</p>"
+#: utils/katecmds.cpp:258
+msgid "Column must be at least 1."
+msgstr "Lajur mestilah sekurang-kurangnya 1."
 
-#: utils/kateprinter.cpp:700
-#, fuzzy
-#| msgid ""
-#| "<p>Print a box displaying typographical conventions for the document "
-#| "type, as defined by the syntax highlighting being used."
-msgid ""
-"<p>Print a box displaying typographical conventions for the document type, "
-"as defined by the syntax highlighting being used.</p>"
-msgstr ""
-"<p>Cetak kotak teks yang memaparkan konvensyen tipografi untuk jenis "
-"dokumen, seperti yang ditakrif oleh penonjolan sintaks yang digunakan."
+#: utils/katecmds.cpp:297
+#, kde-format
+msgid "Usage: %1 on|off|1|0|true|false"
+msgstr "Penggunaan: %1 on|off|1|0|true|false"
 
-#: utils/kateprinter.cpp:752
-msgid "Hea&der && Footer"
-msgstr "&Pengepala && Pengaki"
+#: utils/katecmds.cpp:328
+#, kde-format
+msgid "Bad argument '%1'. Usage: %2 on|off|1|0|true|false"
+msgstr "Argumen buruk '%1'. Penggunaan: %2 on|off|1|0|true|false"
 
-#: utils/kateprinter.cpp:759
-msgid "Pr&int header"
-msgstr "&Cetak pengepala"
+#: utils/katecmds.cpp:333 utils/katecmds.cpp:498
+#, kde-format
+msgid "Unknown command '%1'"
+msgstr "Arahan tak diketahui '%1'"
 
-#: utils/kateprinter.cpp:761
-msgid "Pri&nt footer"
-msgstr "&Cetak pengaki"
-
-#: utils/kateprinter.cpp:767
-msgid "Header/footer font:"
-msgstr "Fon pengepala/pengaki:"
-
-#: utils/kateprinter.cpp:772
-msgid "Choo&se Font..."
-msgstr "&Pilih Fon..."
-
-#: utils/kateprinter.cpp:778
-msgid "Header Properties"
-msgstr "Ciri Pengepala"
-
-#: utils/kateprinter.cpp:782
-msgid "&Format:"
-msgstr "&Format:"
-
-#: utils/kateprinter.cpp:800 utils/kateprinter.cpp:837
-msgid "Colors:"
-msgstr "Warna:"
-
-#: utils/kateprinter.cpp:806 utils/kateprinter.cpp:843
-msgid "Foreground:"
-msgstr "Latar Belakang:"
-
-#: utils/kateprinter.cpp:809
-msgid "Bac&kground"
-msgstr "&Latar Belakang"
-
-#: utils/kateprinter.cpp:813
-msgid "Footer Properties"
-msgstr "Ciri Pengaki"
-
-#: utils/kateprinter.cpp:818
-msgid "For&mat:"
-msgstr "&Format:"
-
-#: utils/kateprinter.cpp:846
-msgid "&Background"
-msgstr "&Latar Belakang"
-
-#: utils/kateprinter.cpp:873
-msgid "<p>Format of the page header. The following tags are supported:</p>"
-msgstr "<p> Format pengepala halaman. Tag yang berikut disokong:</p>"
-
-#: utils/kateprinter.cpp:875
-#, fuzzy
-#| msgid ""
-#| "<ul><li><tt>%u</tt>: current user name</li><li><tt>%d</tt>: complete date/"
-#| "time in short format</li><li><tt>%D</tt>: complete date/time in long "
-#| "format</li><li><tt>%h</tt>: current time</li><li><tt>%y</tt>: current "
-#| "date in short format</li><li><tt>%Y</tt>: current date in long format</"
-#| "li><li><tt>%f</tt>: file name</li><li><tt>%U</tt>: full URL of the "
-#| "document</li><li><tt>%p</tt>: page number</li></ul><br><u>Note:</u> Do "
-#| "<b>not</b> use the '|' (vertical bar) character."
-msgid ""
-"<ul><li><tt>%u</tt>: current user name</li><li><tt>%d</tt>: complete date/"
-"time in short format</li><li><tt>%D</tt>: complete date/time in long format</"
-"li><li><tt>%h</tt>: current time</li><li><tt>%y</tt>: current date in short "
-"format</li><li><tt>%Y</tt>: current date in long format</li><li><tt>%f</tt>: "
-"file name</li><li><tt>%U</tt>: full URL of the document</li><li><tt>%p</tt>: "
-"page number</li><li><tt>%P</tt>: total amount of pages</li></ul><br />"
-msgstr ""
-"<ul><li><tt>%u</tt>: nama pengguna semasa</li><li><tt>%d</tt>: lengkapkan "
-"tarikh/waktu dalam format pendek</li><li><tt>%D</tt>: lengkapkan tarikh/"
-"waktu dalam format panjang</li><li><tt>%h</tt>: waktu semasa</li><li><tt>%y</"
-"tt>: tarikh semasa dalam format pendek</li><li><tt>%Y</tt>: tarikh semasa "
-"dalam format panjang</li><li><tt>%f</tt>: nama fail</li><li><tt>%U</tt>: URL "
-"penuh bagi dokumen</li><li><tt>%p</tt>: nombor halaman</li></"
-"ul><br><u>Perhatian:</u> Jangan <b></b> guna aksara '|' (bar menegak)."
-
-#: utils/kateprinter.cpp:889
-msgid "<p>Format of the page footer. The following tags are supported:</p>"
-msgstr "<p>Format pengaki Tag yang berikut disokong:</p>"
-
-#: utils/kateprinter.cpp:987
-msgid "Add Placeholder..."
+#: utils/katecmds.cpp:409
+#, kde-format
+msgid "No mapping found for \"%1\""
 msgstr ""
 
-#: utils/kateprinter.cpp:989
-#, fuzzy
-#| msgid "Current line:"
-msgid "Current User Name"
-msgstr "Baris semasa:"
-
-#: utils/kateprinter.cpp:991
-msgid "Complete Date/Time (short format)"
+#: utils/katecmds.cpp:412
+#, kde-format
+msgid "\"%1\" is mapped to \"%2\""
 msgstr ""
 
-#: utils/kateprinter.cpp:993
-msgid "Complete Date/Time (long format)"
+#: utils/katecmds.cpp:417
+#, fuzzy, kde-format
+#| msgid "Missing argument. Usage: %1 <value>"
+msgid "Missing argument(s). Usage: %1 <from> [<to>]"
+msgstr "Argumen hilang. Penggunan: %1 <value>"
+
+#: utils/katecmds.cpp:475 utils/katecmds.cpp:491
+msgid "Wrong arguments"
 msgstr ""
 
-#: utils/kateprinter.cpp:995
-#, fuzzy
-#| msgid "Current line:"
-msgid "Current Time"
-msgstr "Baris semasa:"
-
-#: utils/kateprinter.cpp:997
-msgid "Current Date (short format)"
+#: utils/katecmds.cpp:575
+msgid "Document written to disk"
 msgstr ""
 
-#: utils/kateprinter.cpp:999
-msgid "Current Date (long format)"
+#: utils/katecmds.cpp:807
+msgid "Sorry, but Kate is not able to replace newlines, yet"
 msgstr ""
 
-#: utils/kateprinter.cpp:1001
-#, fuzzy
-#| msgid "Name"
-msgid "File Name"
-msgstr "Nama"
+#: utils/katecmds.cpp:846
+#, fuzzy, kde-format
+msgctxt "substituted into the previous message"
+msgid "1 line"
+msgid_plural "%1 lines"
+msgstr[0] "&Garis Bawah"
+msgstr[1] "&Garis Bawah"
 
-#: utils/kateprinter.cpp:1003
-msgid "Full document URL"
-msgstr ""
-
-#: utils/kateprinter.cpp:1005
-msgid "Page Number"
-msgstr ""
-
-#: utils/kateprinter.cpp:1007
-msgid "Total Amount of Pages"
-msgstr ""
-
-#: utils/kateprinter.cpp:1116
-msgid "L&ayout"
-msgstr "Bentangan"
-
-#: utils/kateprinter.cpp:1122 schema/kateschemaconfig.cpp:960
-msgid "&Schema:"
-msgstr "&Skema"
-
-#: utils/kateprinter.cpp:1127
-msgid "Draw bac&kground color"
-msgstr "Lukis warna &latar belakang"
-
-#: utils/kateprinter.cpp:1130
-msgid "Draw &boxes"
-msgstr "Lukis &kotak"
-
-#: utils/kateprinter.cpp:1134
-msgid "Box Properties"
-msgstr "Ciri Kotak"
-
-#: utils/kateprinter.cpp:1138
-msgid "W&idth:"
-msgstr "&Lebar:"
-
-#: utils/kateprinter.cpp:1146
-msgid "&Margin:"
-msgstr "&Jidar:"
-
-#: utils/kateprinter.cpp:1154
-msgid "Co&lor:"
-msgstr "&Warna:"
-
-#: utils/kateprinter.cpp:1171
-msgid "Select the color scheme to use for the print."
-msgstr ""
-
-#: utils/kateprinter.cpp:1173
-msgid ""
-"<p>If enabled, the background color of the editor will be used.</p><p>This "
-"may be useful if your color scheme is designed for a dark background.</p>"
-msgstr ""
-"<p>Jika diaktifkan, warna latar belakang editor akan digunakan.</p><p>Ini "
-"boleh jadi berguna jika skema warna anda direka bentuk untuk latar belakang "
-"gelap.</p>"
-
-#: utils/kateprinter.cpp:1176
-msgid ""
-"<p>If enabled, a box as defined in the properties below will be drawn around "
-"the contents of each page. The Header and Footer will be separated from the "
-"contents with a line as well.</p>"
-msgstr ""
-"<p>Jika diaktifkan, kotak seperti yang ditakrif dalam ciri di bawah akan "
-"dilukis di keliling kandungan setiap halaman. Pengepala dan Pengaki akan "
-"dipisahkan dari kandungan dengan garisan.</p>"
-
-#: utils/kateprinter.cpp:1180
-msgid "The width of the box outline"
-msgstr "Lebar garis luar kotak"
-
-#: utils/kateprinter.cpp:1182
-msgid "The margin inside boxes, in pixels"
-msgstr "Jidar di dalam kotak, dalam piksel"
-
-#: utils/kateprinter.cpp:1184
-msgid "The line color to use for boxes"
-msgstr "Warna baris hendak diguna untuk kotak"
+#: utils/katecmds.cpp:844
+#, fuzzy, kde-format
+msgctxt "%2 is the translation of the next message"
+msgid "1 replacement done on %2"
+msgid_plural "%1 replacements done on %2"
+msgstr[0] "nilai penggantian hilang"
 
 #: utils/kateglobal.cpp:65
 msgid "Kate Part"
@@ -2017,374 +1852,258 @@ msgstr "Membuka Fail & Simpan"
 msgid "Extensions Manager"
 msgstr "Pengurus Plug masuk"
 
-#: utils/katecmds.cpp:203 utils/katecmds.cpp:236
+#: utils/kateprinter.cpp:246
+msgid "(Selection of) "
+msgstr "(Pemilihan bagi)"
+
+#: utils/kateprinter.cpp:528
 #, kde-format
-msgid "Missing argument. Usage: %1 <value>"
-msgstr "Argumen hilang. Penggunan: %1 <value>"
+msgid "Typographical Conventions for %1"
+msgstr "Konvensyen Tipografi untuk %1"
 
-#: utils/katecmds.cpp:218
-#, fuzzy, kde-format
-#| msgid "No such highlight '%1'"
-msgid "No such highlighting '%1'"
-msgstr "Tiada penonjolan '%1'"
-
-#: utils/katecmds.cpp:225
-#, fuzzy, kde-format
-#| msgid "No such command: \"%1\""
-msgid "No such mode '%1'"
-msgstr "Tiada arahan: \"%1\""
-
-#: utils/katecmds.cpp:240
-#, kde-format
-msgid "Failed to convert argument '%1' to integer."
-msgstr "Gagal menukar argumen '%1' kepada integer."
-
-#: utils/katecmds.cpp:246 utils/katecmds.cpp:252
-msgid "Width must be at least 1."
-msgstr "Lebar mestilah sekurang-kurangnya 1."
-
-#: utils/katecmds.cpp:258
-msgid "Column must be at least 1."
-msgstr "Lajur mestilah sekurang-kurangnya 1."
-
-#: utils/katecmds.cpp:297
-#, kde-format
-msgid "Usage: %1 on|off|1|0|true|false"
-msgstr "Penggunaan: %1 on|off|1|0|true|false"
-
-#: utils/katecmds.cpp:328
-#, kde-format
-msgid "Bad argument '%1'. Usage: %2 on|off|1|0|true|false"
-msgstr "Argumen buruk '%1'. Penggunaan: %2 on|off|1|0|true|false"
-
-#: utils/katecmds.cpp:333 utils/katecmds.cpp:498
-#, kde-format
-msgid "Unknown command '%1'"
-msgstr "Arahan tak diketahui '%1'"
-
-#: utils/katecmds.cpp:409
-#, kde-format
-msgid "No mapping found for \"%1\""
-msgstr ""
-
-#: utils/katecmds.cpp:412
-#, kde-format
-msgid "\"%1\" is mapped to \"%2\""
-msgstr ""
-
-#: utils/katecmds.cpp:417
-#, fuzzy, kde-format
-#| msgid "Missing argument. Usage: %1 <value>"
-msgid "Missing argument(s). Usage: %1 <from> [<to>]"
-msgstr "Argumen hilang. Penggunan: %1 <value>"
-
-#: utils/katecmds.cpp:475 utils/katecmds.cpp:491
-msgid "Wrong arguments"
-msgstr ""
-
-#: utils/katecmds.cpp:575
-msgid "Document written to disk"
-msgstr ""
-
-#: utils/katecmds.cpp:807
-msgid "Sorry, but Kate is not able to replace newlines, yet"
-msgstr ""
-
-#: utils/katecmds.cpp:846
-#, fuzzy, kde-format
-msgctxt "substituted into the previous message"
-msgid "1 line"
-msgid_plural "%1 lines"
-msgstr[0] "&Garis Bawah"
-msgstr[1] "&Garis Bawah"
-
-#: utils/katecmds.cpp:844
-#, fuzzy, kde-format
-msgctxt "%2 is the translation of the next message"
-msgid "1 replacement done on %2"
-msgid_plural "%1 replacements done on %2"
-msgstr[0] "nilai penggantian hilang"
-
-#: variableeditor/katehelpbutton.cpp:32
-msgid "Kate Handbook."
-msgstr ""
-
-#: variableeditor/variableeditor.cpp:194
+#: utils/kateprinter.cpp:558
 #, fuzzy
-msgid "true"
-msgstr "&Garis Lorek"
+#| msgid "Context"
+msgid "text"
+msgstr "Konteks"
 
-#: variableeditor/variableeditor.cpp:195
-msgid "false"
-msgstr ""
+#: utils/kateprinter.cpp:682
+msgid "Te&xt Settings"
+msgstr "Seting &Teks"
 
-#: variableeditor/variablelineedit.cpp:59
-msgid "Show list of valid variables."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:140
-msgctxt "short translation please"
-msgid "Set auto insertion of brackets on or off."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:146
-msgctxt "short translation please"
-msgid "Set the number of autocenter lines."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:151
-msgctxt "short translation please"
-msgid "Auto insert asterisk in doxygen comments."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:156
+#: utils/kateprinter.cpp:686
 #, fuzzy
-#| msgid "S&elected Background Color..."
-msgctxt "short translation please"
-msgid "Set the document background color."
-msgstr "Warna Latar Belakang Yang &Dipilih"
+#| msgid "Print &line numbers"
+msgid "Print line &numbers"
+msgstr "Cetak bilangan &baris"
 
-#: variableeditor/variablelineedit.cpp:161
+#: utils/kateprinter.cpp:689
 #, fuzzy
-#| msgid "&Backspace key indents"
-msgctxt "short translation please"
-msgid "Pressing backspace in leading whitespace unindents."
-msgstr "Anjak ke &belakang inden kekunci"
+#| msgid "Print &line numbers"
+msgid "Print &legend"
+msgstr "Cetak bilangan &baris"
 
-#: variableeditor/variablelineedit.cpp:167
+#: utils/kateprinter.cpp:698
+msgid ""
+"<p>If enabled, line numbers will be printed on the left side of the page(s)."
+"</p>"
+msgstr ""
+"<p>Jika diaktifkan, bilangan baris akan dicetak di sebelah kanan halaman.</p>"
+
+#: utils/kateprinter.cpp:700
 #, fuzzy
-#| msgid "Bl&ock Selection Mode"
-msgctxt "short translation please"
-msgid "Enable block selection mode."
-msgstr "Mod Pilihan &Blok"
+#| msgid ""
+#| "<p>Print a box displaying typographical conventions for the document "
+#| "type, as defined by the syntax highlighting being used."
+msgid ""
+"<p>Print a box displaying typographical conventions for the document type, "
+"as defined by the syntax highlighting being used.</p>"
+msgstr ""
+"<p>Cetak kotak teks yang memaparkan konvensyen tipografi untuk jenis "
+"dokumen, seperti yang ditakrif oleh penonjolan sintaks yang digunakan."
 
-#: variableeditor/variablelineedit.cpp:172
-msgctxt "short translation please"
-msgid "Enable the byte order marker when saving unicode files."
+#: utils/kateprinter.cpp:752
+msgid "Hea&der && Footer"
+msgstr "&Pengepala && Pengaki"
+
+#: utils/kateprinter.cpp:759
+msgid "Pr&int header"
+msgstr "&Cetak pengepala"
+
+#: utils/kateprinter.cpp:761
+msgid "Pri&nt footer"
+msgstr "&Cetak pengaki"
+
+#: utils/kateprinter.cpp:767
+msgid "Header/footer font:"
+msgstr "Fon pengepala/pengaki:"
+
+#: utils/kateprinter.cpp:772
+msgid "Choo&se Font..."
+msgstr "&Pilih Fon..."
+
+#: utils/kateprinter.cpp:778
+msgid "Header Properties"
+msgstr "Ciri Pengepala"
+
+#: utils/kateprinter.cpp:782
+msgid "&Format:"
+msgstr "&Format:"
+
+#: utils/kateprinter.cpp:800 utils/kateprinter.cpp:837
+msgid "Colors:"
+msgstr "Warna:"
+
+#: utils/kateprinter.cpp:806 utils/kateprinter.cpp:843
+msgid "Foreground:"
+msgstr "Latar Belakang:"
+
+#: utils/kateprinter.cpp:809
+msgid "Bac&kground"
+msgstr "&Latar Belakang"
+
+#: utils/kateprinter.cpp:813
+msgid "Footer Properties"
+msgstr "Ciri Pengaki"
+
+#: utils/kateprinter.cpp:818
+msgid "For&mat:"
+msgstr "&Format:"
+
+#: utils/kateprinter.cpp:846
+msgid "&Background"
+msgstr "&Latar Belakang"
+
+#: utils/kateprinter.cpp:873
+msgid "<p>Format of the page header. The following tags are supported:</p>"
+msgstr "<p> Format pengepala halaman. Tag yang berikut disokong:</p>"
+
+#: utils/kateprinter.cpp:875
+#, fuzzy
+#| msgid ""
+#| "<ul><li><tt>%u</tt>: current user name</li><li><tt>%d</tt>: complete date/"
+#| "time in short format</li><li><tt>%D</tt>: complete date/time in long "
+#| "format</li><li><tt>%h</tt>: current time</li><li><tt>%y</tt>: current "
+#| "date in short format</li><li><tt>%Y</tt>: current date in long format</"
+#| "li><li><tt>%f</tt>: file name</li><li><tt>%U</tt>: full URL of the "
+#| "document</li><li><tt>%p</tt>: page number</li></ul><br><u>Note:</u> Do "
+#| "<b>not</b> use the '|' (vertical bar) character."
+msgid ""
+"<ul><li><tt>%u</tt>: current user name</li><li><tt>%d</tt>: complete date/"
+"time in short format</li><li><tt>%D</tt>: complete date/time in long format</"
+"li><li><tt>%h</tt>: current time</li><li><tt>%y</tt>: current date in short "
+"format</li><li><tt>%Y</tt>: current date in long format</li><li><tt>%f</tt>: "
+"file name</li><li><tt>%U</tt>: full URL of the document</li><li><tt>%p</tt>: "
+"page number</li><li><tt>%P</tt>: total amount of pages</li></ul><br />"
+msgstr ""
+"<ul><li><tt>%u</tt>: nama pengguna semasa</li><li><tt>%d</tt>: lengkapkan "
+"tarikh/waktu dalam format pendek</li><li><tt>%D</tt>: lengkapkan tarikh/"
+"waktu dalam format panjang</li><li><tt>%h</tt>: waktu semasa</li><li><tt>%y</"
+"tt>: tarikh semasa dalam format pendek</li><li><tt>%Y</tt>: tarikh semasa "
+"dalam format panjang</li><li><tt>%f</tt>: nama fail</li><li><tt>%U</tt>: URL "
+"penuh bagi dokumen</li><li><tt>%p</tt>: nombor halaman</li></"
+"ul><br><u>Perhatian:</u> Jangan <b></b> guna aksara '|' (bar menegak)."
+
+#: utils/kateprinter.cpp:889
+msgid "<p>Format of the page footer. The following tags are supported:</p>"
+msgstr "<p>Format pengaki Tag yang berikut disokong:</p>"
+
+#: utils/kateprinter.cpp:987
+msgid "Add Placeholder..."
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:177
-msgctxt "short translation please"
-msgid "Set the color for the bracket highlight."
+#: utils/kateprinter.cpp:989
+#, fuzzy
+#| msgid "Current line:"
+msgid "Current User Name"
+msgstr "Baris semasa:"
+
+#: utils/kateprinter.cpp:991
+msgid "Complete Date/Time (short format)"
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:182
-#, fuzzy
-#| msgid "<p>Sets the background color of the editing area.</p>"
-msgctxt "short translation please"
-msgid "Set the background color for the current line."
-msgstr "<p>Tetapkan warna latarbelakang untuk kawasan suntingan.</p>"
-
-#: variableeditor/variablelineedit.cpp:188
-msgctxt "short translation please"
-msgid "Set the default dictionary used for spell checking."
+#: utils/kateprinter.cpp:993
+msgid "Complete Date/Time (long format)"
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:193
+#: utils/kateprinter.cpp:995
 #, fuzzy
-#| msgid "Enable static &word wrap"
-msgctxt "short translation please"
-msgid "Enable dynamic word wrap of long lines."
-msgstr "Hidupkan balut perka&taan statik"
+#| msgid "Current line:"
+msgid "Current Time"
+msgstr "Baris semasa:"
 
-#: variableeditor/variablelineedit.cpp:198
-#, fuzzy
-#| msgid "Select to End of Line"
-msgctxt "short translation please"
-msgid "Sets the end of line mode."
-msgstr "Pilih ke Penghujung Baris"
-
-#: variableeditor/variablelineedit.cpp:203
-msgctxt "short translation please"
-msgid "Enable folding markers in the editor border."
+#: utils/kateprinter.cpp:997
+msgid "Current Date (short format)"
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:209
-#, fuzzy
-#| msgid "Select the entire text of the current document."
-msgctxt "short translation please"
-msgid "Set the point size of the document font."
-msgstr "Pilih seluruh teks dokumen semasa."
-
-#: variableeditor/variablelineedit.cpp:214
-#, fuzzy
-#| msgid "Select the entire text of the current document."
-msgctxt "short translation please"
-msgid "Set the font of the document."
-msgstr "Pilih seluruh teks dokumen semasa."
-
-#: variableeditor/variablelineedit.cpp:226
-#, fuzzy
-#| msgid "Kate Syntax Highlighting Parser"
-msgctxt "short translation please"
-msgid "Set the syntax highlighting."
-msgstr "Pengkaji Hurai Penonjolan Sintaks Kate"
-
-#: variableeditor/variablelineedit.cpp:231
-msgctxt "short translation please"
-msgid "Set the icon bar color."
+#: utils/kateprinter.cpp:999
+msgid "Current Date (long format)"
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:236
-msgctxt "short translation please"
-msgid "Enable the icon border in the editor view."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:241
+#: utils/kateprinter.cpp:1001
 #, fuzzy
-#| msgid "Show indentation lines"
-msgctxt "short translation please"
-msgid "Set the auto indentation style."
-msgstr "Papar baris indentasi"
+#| msgid "Name"
+msgid "File Name"
+msgstr "Nama"
 
-#: variableeditor/variablelineedit.cpp:247
-msgctxt "short translation please"
-msgid "Set the indentation depth for each indent level."
+#: utils/kateprinter.cpp:1003
+msgid "Full document URL"
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:252
-msgctxt "short translation please"
-msgid "Allow odd indentation level (no multiple of indent width)."
+#: utils/kateprinter.cpp:1005
+msgid "Page Number"
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:257
-#, fuzzy
-#| msgid "Show &line numbers"
-msgctxt "short translation please"
-msgid "Show line numbers."
-msgstr "Papar baris no&mbor"
-
-#: variableeditor/variablelineedit.cpp:262
-msgctxt "short translation please"
-msgid "Insert newline at end of file on save."
+#: utils/kateprinter.cpp:1007
+msgid "Total Amount of Pages"
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:267
-msgctxt "short translation please"
-msgid "Enable overwrite mode in the document."
+#: utils/kateprinter.cpp:1116
+msgid "L&ayout"
+msgstr "Bentangan"
+
+#: utils/kateprinter.cpp:1122 schema/kateschemaconfig.cpp:960
+msgid "&Schema:"
+msgstr "&Skema"
+
+#: utils/kateprinter.cpp:1127
+msgid "Draw bac&kground color"
+msgstr "Lukis warna &latar belakang"
+
+#: utils/kateprinter.cpp:1130
+msgid "Draw &boxes"
+msgstr "Lukis &kotak"
+
+#: utils/kateprinter.cpp:1134
+msgid "Box Properties"
+msgstr "Ciri Kotak"
+
+#: utils/kateprinter.cpp:1138
+msgid "W&idth:"
+msgstr "&Lebar:"
+
+#: utils/kateprinter.cpp:1146
+msgid "&Margin:"
+msgstr "&Jidar:"
+
+#: utils/kateprinter.cpp:1154
+msgid "Co&lor:"
+msgstr "&Warna:"
+
+#: utils/kateprinter.cpp:1171
+msgid "Select the color scheme to use for the print."
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:272
-msgctxt "short translation please"
-msgid "Enable persistent text selection."
+#: utils/kateprinter.cpp:1173
+msgid ""
+"<p>If enabled, the background color of the editor will be used.</p><p>This "
+"may be useful if your color scheme is designed for a dark background.</p>"
 msgstr ""
+"<p>Jika diaktifkan, warna latar belakang editor akan digunakan.</p><p>Ini "
+"boleh jadi berguna jika skema warna anda direka bentuk untuk latar belakang "
+"gelap.</p>"
 
-#: variableeditor/variablelineedit.cpp:277
-#, fuzzy
-#| msgid "Remove &trailing spaces"
-msgctxt "short translation please"
-msgid "Remove trailing spaces when editing a line."
-msgstr "Buang ruang &mengekor"
-
-#: variableeditor/variablelineedit.cpp:282
-msgctxt "short translation please"
-msgid "Replace tabs with spaces when saving the document."
+#: utils/kateprinter.cpp:1176
+msgid ""
+"<p>If enabled, a box as defined in the properties below will be drawn around "
+"the contents of each page. The Header and Footer will be separated from the "
+"contents with a line as well.</p>"
 msgstr ""
+"<p>Jika diaktifkan, kotak seperti yang ditakrif dalam ciri di bawah akan "
+"dilukis di keliling kandungan setiap halaman. Pengepala dan Pengaki akan "
+"dipisahkan dari kandungan dengan garisan.</p>"
 
-#: variableeditor/variablelineedit.cpp:287
-#, fuzzy
-#| msgid "Replace &All"
-msgctxt "short translation please"
-msgid "Replace tabs with spaces."
-msgstr "Ganti &Semua"
+#: utils/kateprinter.cpp:1180
+msgid "The width of the box outline"
+msgstr "Lebar garis luar kotak"
 
-#: variableeditor/variablelineedit.cpp:292
-#, fuzzy
-#| msgid "Remove &trailing spaces"
-msgctxt "short translation please"
-msgid "Remove trailing spaces when saving the document."
-msgstr "Buang ruang &mengekor"
+#: utils/kateprinter.cpp:1182
+msgid "The margin inside boxes, in pixels"
+msgstr "Jidar di dalam kotak, dalam piksel"
 
-#: variableeditor/variablelineedit.cpp:298
-#, fuzzy
-#| msgid "Font & Color Schemas"
-msgctxt "short translation please"
-msgid "Set the color scheme."
-msgstr "Fon & Skema Warna"
-
-#: variableeditor/variablelineedit.cpp:303
-msgctxt "short translation please"
-msgid "Set the text selection color."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:308
-#, fuzzy
-#| msgid "Highlighting Rules"
-msgctxt "short translation please"
-msgid "Visualize tabs and trailing spaces."
-msgstr "Peraturan Penonjolan"
-
-#: variableeditor/variablelineedit.cpp:313
-#, fuzzy
-#| msgid "Word Completion Plugin"
-msgctxt "short translation please"
-msgid "Enable smart home navigation."
-msgstr "Plugin Penyelesaian Perkataan"
-
-#: variableeditor/variablelineedit.cpp:318
-msgctxt "short translation please"
-msgid "Pressing TAB key indents."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:324
-msgctxt "short translation please"
-msgid "Set the tab display width."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:330
-msgctxt "short translation please"
-msgid "Set the number of undo steps to remember (0 equals infinity)."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:336
-msgctxt "short translation please"
-msgid "Set the word wrap column."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:341
-#, fuzzy
-#| msgid "S&elected Background Color..."
-msgctxt "short translation please"
-msgid "Set the word wrap marker color."
-msgstr "Warna Latar Belakang Yang &Dipilih"
-
-#: variableeditor/variablelineedit.cpp:346
-msgctxt "short translation please"
-msgid "Enable word wrap while typing text."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:351
-msgctxt "short translation please"
-msgid "Wrap the text cursor at the end of a line."
-msgstr ""
-
-#: view/kateviewaccessible.h:80
-msgid "Move To..."
-msgstr ""
-
-#: view/kateviewaccessible.h:81
-#, fuzzy
-#| msgid "Move Word Left"
-msgid "Move Left"
-msgstr "Alih Perkataan ke Kanan"
-
-#: view/kateviewaccessible.h:82
-#, fuzzy
-#| msgid "Move Word Right"
-msgid "Move Right"
-msgstr "Alihkan Perkataan ke Kanan"
-
-#: view/kateviewaccessible.h:83
-#, fuzzy
-#| msgid "Scroll Line Up"
-msgid "Move Up"
-msgstr "Skrol Baris Atas"
-
-#: view/kateviewaccessible.h:84
-#, fuzzy
-#| msgid "Scroll Line Down"
-msgid "Move Down"
-msgstr "Skrol Baris ke Bawah"
+#: utils/kateprinter.cpp:1184
+msgid "The line color to use for boxes"
+msgstr "Warna baris hendak diguna untuk kotak"
 
 #: view/kateview.cpp:330
 msgid "Cut the selected text and move it to the clipboard"
@@ -2686,13 +2405,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:508 rc.cpp:554
+#: view/kateview.cpp:508 rc.cpp:443
 msgid "&Dynamic Word Wrap"
 msgstr "Balut Perkataan &Dinamik"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:17
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:511 rc.cpp:551
+#: view/kateview.cpp:511 rc.cpp:440
 msgid ""
 "If this option is checked, the text lines will be wrapped at the view border "
 "on the screen."
@@ -3156,6 +2875,34 @@ msgstr " OVR "
 msgid "INS"
 msgstr " INS "
 
+#: view/kateviewaccessible.h:80
+msgid "Move To..."
+msgstr ""
+
+#: view/kateviewaccessible.h:81
+#, fuzzy
+#| msgid "Move Word Left"
+msgid "Move Left"
+msgstr "Alih Perkataan ke Kanan"
+
+#: view/kateviewaccessible.h:82
+#, fuzzy
+#| msgid "Move Word Right"
+msgid "Move Right"
+msgstr "Alihkan Perkataan ke Kanan"
+
+#: view/kateviewaccessible.h:83
+#, fuzzy
+#| msgid "Scroll Line Up"
+msgid "Move Up"
+msgstr "Skrol Baris Atas"
+
+#: view/kateviewaccessible.h:84
+#, fuzzy
+#| msgid "Scroll Line Down"
+msgid "Move Down"
+msgstr "Skrol Baris ke Bawah"
+
 #: view/kateviewhelpers.cpp:363
 msgid "Available Commands"
 msgstr "Arahan Yang Boleh Didapatkan"
@@ -3273,110 +3020,262 @@ msgstr ""
 msgid "Mark not set: %1"
 msgstr "Tandakan Jenis %1"
 
+#: variableeditor/katehelpbutton.cpp:32
+msgid "Kate Handbook."
+msgstr ""
+
+#: variableeditor/variableeditor.cpp:194
+#, fuzzy
+msgid "true"
+msgstr "&Garis Lorek"
+
+#: variableeditor/variableeditor.cpp:195
+msgid "false"
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:59
+msgid "Show list of valid variables."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:140
+msgctxt "short translation please"
+msgid "Set auto insertion of brackets on or off."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:146
+msgctxt "short translation please"
+msgid "Set the number of autocenter lines."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:151
+msgctxt "short translation please"
+msgid "Auto insert asterisk in doxygen comments."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:156
+#, fuzzy
+#| msgid "S&elected Background Color..."
+msgctxt "short translation please"
+msgid "Set the document background color."
+msgstr "Warna Latar Belakang Yang &Dipilih"
+
+#: variableeditor/variablelineedit.cpp:161
+#, fuzzy
+#| msgid "&Backspace key indents"
+msgctxt "short translation please"
+msgid "Pressing backspace in leading whitespace unindents."
+msgstr "Anjak ke &belakang inden kekunci"
+
+#: variableeditor/variablelineedit.cpp:167
+#, fuzzy
+#| msgid "Bl&ock Selection Mode"
+msgctxt "short translation please"
+msgid "Enable block selection mode."
+msgstr "Mod Pilihan &Blok"
+
+#: variableeditor/variablelineedit.cpp:172
+msgctxt "short translation please"
+msgid "Enable the byte order marker when saving unicode files."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:177
+msgctxt "short translation please"
+msgid "Set the color for the bracket highlight."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:182
+#, fuzzy
+#| msgid "<p>Sets the background color of the editing area.</p>"
+msgctxt "short translation please"
+msgid "Set the background color for the current line."
+msgstr "<p>Tetapkan warna latarbelakang untuk kawasan suntingan.</p>"
+
+#: variableeditor/variablelineedit.cpp:188
+msgctxt "short translation please"
+msgid "Set the default dictionary used for spell checking."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:193
+#, fuzzy
+#| msgid "Enable static &word wrap"
+msgctxt "short translation please"
+msgid "Enable dynamic word wrap of long lines."
+msgstr "Hidupkan balut perka&taan statik"
+
+#: variableeditor/variablelineedit.cpp:198
+#, fuzzy
+#| msgid "Select to End of Line"
+msgctxt "short translation please"
+msgid "Sets the end of line mode."
+msgstr "Pilih ke Penghujung Baris"
+
+#: variableeditor/variablelineedit.cpp:203
+msgctxt "short translation please"
+msgid "Enable folding markers in the editor border."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:209
+#, fuzzy
+#| msgid "Select the entire text of the current document."
+msgctxt "short translation please"
+msgid "Set the point size of the document font."
+msgstr "Pilih seluruh teks dokumen semasa."
+
+#: variableeditor/variablelineedit.cpp:214
+#, fuzzy
+#| msgid "Select the entire text of the current document."
+msgctxt "short translation please"
+msgid "Set the font of the document."
+msgstr "Pilih seluruh teks dokumen semasa."
+
+#: variableeditor/variablelineedit.cpp:226
+#, fuzzy
+#| msgid "Kate Syntax Highlighting Parser"
+msgctxt "short translation please"
+msgid "Set the syntax highlighting."
+msgstr "Pengkaji Hurai Penonjolan Sintaks Kate"
+
+#: variableeditor/variablelineedit.cpp:231
+msgctxt "short translation please"
+msgid "Set the icon bar color."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:236
+msgctxt "short translation please"
+msgid "Enable the icon border in the editor view."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:241
+#, fuzzy
+#| msgid "Show indentation lines"
+msgctxt "short translation please"
+msgid "Set the auto indentation style."
+msgstr "Papar baris indentasi"
+
+#: variableeditor/variablelineedit.cpp:247
+msgctxt "short translation please"
+msgid "Set the indentation depth for each indent level."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:252
+msgctxt "short translation please"
+msgid "Allow odd indentation level (no multiple of indent width)."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:257
+#, fuzzy
+#| msgid "Show &line numbers"
+msgctxt "short translation please"
+msgid "Show line numbers."
+msgstr "Papar baris no&mbor"
+
+#: variableeditor/variablelineedit.cpp:262
+msgctxt "short translation please"
+msgid "Insert newline at end of file on save."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:267
+msgctxt "short translation please"
+msgid "Enable overwrite mode in the document."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:272
+msgctxt "short translation please"
+msgid "Enable persistent text selection."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:277
+#, fuzzy
+#| msgid "Remove &trailing spaces"
+msgctxt "short translation please"
+msgid "Remove trailing spaces when editing a line."
+msgstr "Buang ruang &mengekor"
+
+#: variableeditor/variablelineedit.cpp:282
+msgctxt "short translation please"
+msgid "Replace tabs with spaces when saving the document."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:287
+#, fuzzy
+#| msgid "Replace &All"
+msgctxt "short translation please"
+msgid "Replace tabs with spaces."
+msgstr "Ganti &Semua"
+
+#: variableeditor/variablelineedit.cpp:292
+#, fuzzy
+#| msgid "Remove &trailing spaces"
+msgctxt "short translation please"
+msgid "Remove trailing spaces when saving the document."
+msgstr "Buang ruang &mengekor"
+
+#: variableeditor/variablelineedit.cpp:298
+#, fuzzy
+#| msgid "Font & Color Schemas"
+msgctxt "short translation please"
+msgid "Set the color scheme."
+msgstr "Fon & Skema Warna"
+
+#: variableeditor/variablelineedit.cpp:303
+msgctxt "short translation please"
+msgid "Set the text selection color."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:308
+#, fuzzy
+#| msgid "Highlighting Rules"
+msgctxt "short translation please"
+msgid "Visualize tabs and trailing spaces."
+msgstr "Peraturan Penonjolan"
+
+#: variableeditor/variablelineedit.cpp:313
+#, fuzzy
+#| msgid "Word Completion Plugin"
+msgctxt "short translation please"
+msgid "Enable smart home navigation."
+msgstr "Plugin Penyelesaian Perkataan"
+
+#: variableeditor/variablelineedit.cpp:318
+msgctxt "short translation please"
+msgid "Pressing TAB key indents."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:324
+msgctxt "short translation please"
+msgid "Set the tab display width."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:330
+msgctxt "short translation please"
+msgid "Set the number of undo steps to remember (0 equals infinity)."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:336
+msgctxt "short translation please"
+msgid "Set the word wrap column."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:341
+#, fuzzy
+#| msgid "S&elected Background Color..."
+msgctxt "short translation please"
+msgid "Set the word wrap marker color."
+msgstr "Warna Latar Belakang Yang &Dipilih"
+
+#: variableeditor/variablelineedit.cpp:346
+msgctxt "short translation please"
+msgid "Enable word wrap while typing text."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:351
+msgctxt "short translation please"
+msgid "Wrap the text cursor at the end of a line."
+msgstr ""
+
 #: schema/katecolortreewidget.cpp:51 schema/katecolortreewidget.cpp:73
 msgid "Use default color from the KDE color scheme"
 msgstr ""
-
-#: schema/katestyletreewidget.cpp:133
-#, fuzzy
-#| msgid "Context"
-msgctxt "@title:column Meaning of text in editor"
-msgid "Context"
-msgstr "Konteks"
-
-#: schema/katestyletreewidget.cpp:133
-#, fuzzy
-#| msgid "Normal"
-msgctxt "@title:column Text style"
-msgid "Normal"
-msgstr "Normal"
-
-#: schema/katestyletreewidget.cpp:133
-#, fuzzy
-#| msgid "Selected"
-msgctxt "@title:column Text style"
-msgid "Selected"
-msgstr "Dipilih"
-
-#: schema/katestyletreewidget.cpp:133
-#, fuzzy
-#| msgid "Background"
-msgctxt "@title:column Text style"
-msgid "Background"
-msgstr "Latar Belakang"
-
-#: schema/katestyletreewidget.cpp:133
-#, fuzzy
-#| msgid "Background Selected"
-msgctxt "@title:column Text style"
-msgid "Background Selected"
-msgstr "Latar Belakang Yang Dipilih"
-
-#: schema/katestyletreewidget.cpp:135
-msgid "Use Default Style"
-msgstr "Guna Gaya Piawai"
-
-#: schema/katestyletreewidget.cpp:223
-msgid "&Bold"
-msgstr "&Huruf Tebal"
-
-#: schema/katestyletreewidget.cpp:228
-msgid "&Italic"
-msgstr "&Italik"
-
-#: schema/katestyletreewidget.cpp:233
-msgid "&Underline"
-msgstr "&Garis Bawah"
-
-#: schema/katestyletreewidget.cpp:238
-msgid "S&trikeout"
-msgstr "&Garis Lorek"
-
-#: schema/katestyletreewidget.cpp:245
-msgid "Normal &Color..."
-msgstr "&Warna Normal..."
-
-#: schema/katestyletreewidget.cpp:248
-msgid "&Selected Color..."
-msgstr "&Warna Dipilih..."
-
-#: schema/katestyletreewidget.cpp:251
-msgid "&Background Color..."
-msgstr "Warna &Latar Belakang"
-
-#: schema/katestyletreewidget.cpp:254
-msgid "S&elected Background Color..."
-msgstr "Warna Latar Belakang Yang &Dipilih"
-
-#: schema/katestyletreewidget.cpp:266
-msgid "Unset Background Color"
-msgstr "Nyahset Warna Latar Belakang"
-
-#: schema/katestyletreewidget.cpp:270
-msgid "Unset Selected Background Color"
-msgstr "Nyahset Warna Latar Belakang Yang Dipilih"
-
-#: schema/katestyletreewidget.cpp:277
-msgid "Use &Default Style"
-msgstr "Guna  Gaya &Piawai"
-
-#: schema/katestyletreewidget.cpp:389
-#, fuzzy
-msgctxt "No text or background color set"
-msgid "None set"
-msgstr "Tiada"
-
-#: schema/katestyletreewidget.cpp:603
-msgid ""
-"\"Use Default Style\" will be automatically unset when you change any style "
-"properties."
-msgstr ""
-"\"Guna Gaya Piawai\" akan menyahset secara automatik apabila anda ubah "
-"sebarang ciri gaya."
-
-#: schema/katestyletreewidget.cpp:604
-msgid "Kate Styles"
-msgstr "Gaya Kate"
 
 #: schema/kateschemaconfig.cpp:58
 #, fuzzy
@@ -3397,7 +3296,7 @@ msgstr "Latar belakang Kawasan Teks "
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:33
 #. i18n: ectx: property (whatsThis), widget (KColorButton, back)
-#: schema/kateschemaconfig.cpp:89 rc.cpp:494
+#: schema/kateschemaconfig.cpp:89 rc.cpp:383
 msgid "<p>Sets the background color of the editing area.</p>"
 msgstr "<p>Tetapkan warna latarbelakang untuk kawasan suntingan.</p>"
 
@@ -3429,7 +3328,7 @@ msgstr "Baris semasa:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:61
 #. i18n: ectx: property (whatsThis), widget (KColorButton, current)
-#: schema/kateschemaconfig.cpp:101 rc.cpp:506
+#: schema/kateschemaconfig.cpp:101 rc.cpp:395
 msgid ""
 "<p>Sets the background color of the currently active line, which means the "
 "line where your cursor is positioned.</p>"
@@ -3487,7 +3386,7 @@ msgstr "Nombor baris:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:111
 #. i18n: ectx: property (whatsThis), widget (KColorButton, linenumber)
-#: schema/kateschemaconfig.cpp:131 rc.cpp:524
+#: schema/kateschemaconfig.cpp:131 rc.cpp:413
 msgid ""
 "<p>This color will be used to draw the line numbers (if enabled) and the "
 "lines in the code-folding pane.</p>"
@@ -3503,7 +3402,7 @@ msgstr "Penanda bungkus perkataan:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:139
 #. i18n: ectx: property (whatsThis), widget (KColorButton, wwmarker)
-#: schema/kateschemaconfig.cpp:137 rc.cpp:536
+#: schema/kateschemaconfig.cpp:137 rc.cpp:425
 msgid ""
 "<p>Sets the color of Word Wrap-related markers:</p><dl><dt>Static Word Wrap</"
 "dt><dd>A vertical line which shows the column where text is going to be "
@@ -3564,7 +3463,7 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:167
 #. i18n: ectx: property (whatsThis), widget (KColorButton, spellingmistakeline)
-#: schema/kateschemaconfig.cpp:169 rc.cpp:548
+#: schema/kateschemaconfig.cpp:169 rc.cpp:437
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid ""
@@ -3579,7 +3478,7 @@ msgstr "Penanda tab :"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:153
 #. i18n: ectx: property (whatsThis), widget (KColorButton, tmarker)
-#: schema/kateschemaconfig.cpp:175 rc.cpp:542
+#: schema/kateschemaconfig.cpp:175 rc.cpp:431
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid "<p>Sets the color of the tabulator marks.</p>"
@@ -3605,7 +3504,7 @@ msgstr "Tonjolkan kurungan:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:125
 #. i18n: ectx: property (whatsThis), widget (KColorButton, bracket)
-#: schema/kateschemaconfig.cpp:187 rc.cpp:530
+#: schema/kateschemaconfig.cpp:187 rc.cpp:419
 msgid ""
 "<p>Sets the bracket matching color. This means, if you place the cursor e.g. "
 "at a <b>(</b>, the matching <b>)</b> will be highlighted with this color.</p>"
@@ -3799,7 +3698,7 @@ msgstr "&Baru..."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:44
 #. i18n: ectx: property (text), widget (QPushButton, btnDelete)
-#: schema/kateschemaconfig.cpp:970 rc.cpp:305
+#: schema/kateschemaconfig.cpp:970 rc.cpp:611
 #, fuzzy
 msgid "&Delete"
 msgstr "Dipilih"
@@ -3882,6 +3781,107 @@ msgid ""
 "<p>The schema %1 already exists, or was just deleted.</p><p>Please choose a "
 "different schema name.</p>"
 msgstr ""
+
+#: schema/katestyletreewidget.cpp:133
+#, fuzzy
+#| msgid "Context"
+msgctxt "@title:column Meaning of text in editor"
+msgid "Context"
+msgstr "Konteks"
+
+#: schema/katestyletreewidget.cpp:133
+#, fuzzy
+#| msgid "Normal"
+msgctxt "@title:column Text style"
+msgid "Normal"
+msgstr "Normal"
+
+#: schema/katestyletreewidget.cpp:133
+#, fuzzy
+#| msgid "Selected"
+msgctxt "@title:column Text style"
+msgid "Selected"
+msgstr "Dipilih"
+
+#: schema/katestyletreewidget.cpp:133
+#, fuzzy
+#| msgid "Background"
+msgctxt "@title:column Text style"
+msgid "Background"
+msgstr "Latar Belakang"
+
+#: schema/katestyletreewidget.cpp:133
+#, fuzzy
+#| msgid "Background Selected"
+msgctxt "@title:column Text style"
+msgid "Background Selected"
+msgstr "Latar Belakang Yang Dipilih"
+
+#: schema/katestyletreewidget.cpp:135
+msgid "Use Default Style"
+msgstr "Guna Gaya Piawai"
+
+#: schema/katestyletreewidget.cpp:223
+msgid "&Bold"
+msgstr "&Huruf Tebal"
+
+#: schema/katestyletreewidget.cpp:228
+msgid "&Italic"
+msgstr "&Italik"
+
+#: schema/katestyletreewidget.cpp:233
+msgid "&Underline"
+msgstr "&Garis Bawah"
+
+#: schema/katestyletreewidget.cpp:238
+msgid "S&trikeout"
+msgstr "&Garis Lorek"
+
+#: schema/katestyletreewidget.cpp:245
+msgid "Normal &Color..."
+msgstr "&Warna Normal..."
+
+#: schema/katestyletreewidget.cpp:248
+msgid "&Selected Color..."
+msgstr "&Warna Dipilih..."
+
+#: schema/katestyletreewidget.cpp:251
+msgid "&Background Color..."
+msgstr "Warna &Latar Belakang"
+
+#: schema/katestyletreewidget.cpp:254
+msgid "S&elected Background Color..."
+msgstr "Warna Latar Belakang Yang &Dipilih"
+
+#: schema/katestyletreewidget.cpp:266
+msgid "Unset Background Color"
+msgstr "Nyahset Warna Latar Belakang"
+
+#: schema/katestyletreewidget.cpp:270
+msgid "Unset Selected Background Color"
+msgstr "Nyahset Warna Latar Belakang Yang Dipilih"
+
+#: schema/katestyletreewidget.cpp:277
+msgid "Use &Default Style"
+msgstr "Guna  Gaya &Piawai"
+
+#: schema/katestyletreewidget.cpp:389
+#, fuzzy
+msgctxt "No text or background color set"
+msgid "None set"
+msgstr "Tiada"
+
+#: schema/katestyletreewidget.cpp:603
+msgid ""
+"\"Use Default Style\" will be automatically unset when you change any style "
+"properties."
+msgstr ""
+"\"Guna Gaya Piawai\" akan menyahset secara automatik apabila anda ubah "
+"sebarang ciri gaya."
+
+#: schema/katestyletreewidget.cpp:604
+msgid "Kate Styles"
+msgstr "Gaya Kate"
 
 #. i18n: file: data/katepartsimpleui.rc:4
 #. i18n: ectx: Menu (file)
@@ -3968,7 +3968,7 @@ msgstr "Plugin Penyelesaian Perkataan"
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:90
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:50 rc.cpp:647
+#: rc.cpp:50 rc.cpp:536
 #, fuzzy
 #| msgid "Comment"
 msgid "Command"
@@ -4039,7 +4039,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblName)
 #. i18n: file: dialogs/filetypeconfigwidget.ui:72
 #. i18n: ectx: property (text), widget (QLabel, lblName)
-#: rc.cpp:77 rc.cpp:311
+#: rc.cpp:77 rc.cpp:617
 #, fuzzy
 #| msgid "Name:"
 msgid "&Name:"
@@ -4374,7 +4374,7 @@ msgstr "Tetapkan jumlah baris untuk tampak atas dan bawah kursor yang mungkin."
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbAutoCenterCursor)
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:65
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:230 rc.cpp:570
+#: rc.cpp:230 rc.cpp:459
 msgid "Disabled"
 msgstr "Dinyahaktifkan"
 
@@ -4416,331 +4416,9 @@ msgstr "Pilihan akan kekal selepas kursor pergerakan kursor dan penaipan."
 msgid "P&ersistent"
 msgstr "&Cekal"
 
-#. i18n: file: dialogs/editconfigwidget.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
-#: rc.cpp:248
-msgid "Static Word Wrap"
-msgstr "Balut Perkataan Statik"
-
-#. i18n: file: dialogs/editconfigwidget.ui:26
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:251
-#, fuzzy
-#| msgid ""
-#| "Automatically start a new line of text when the current line exceeds the "
-#| "length specified by the <b>Wrap words at:</b> option.<p>This option does "
-#| "not wrap existing lines of text - use the <b>Apply Static Word Wrap</b> "
-#| "option in the <b>Tools</b> menu for that purpose.<p>If you want lines to "
-#| "be <i>visually wrapped</i> instead, according to the width of the view, "
-#| "enable <b>Dynamic Word Wrap</b> in the <b>View Defaults</b> config page."
-msgid ""
-"<p>Automatically start a new line of text when the current line exceeds the "
-"length specified by the <b>Wrap words at:</b> option.</p><p>This option does "
-"not wrap existing lines of text - use the <b>Apply Static Word Wrap</b> "
-"option in the <b>Tools</b> menu for that purpose.</p><p>If you want lines to "
-"be <i>visually wrapped</i> instead, according to the width of the view, "
-"enable <b>Dynamic Word Wrap</b> in the <b>Appearance</b> config page.</p>"
-msgstr ""
-"Memulakan baris baru teks secara automatik apabila baris semasa melebihi "
-"panjang yang ditetapkan oleh <b>Balut perkataan di:</b> opsyen.<p> Opsyen "
-"ini tidak membalut baris teks sedia ada - guna opsyen<b> Laksana Balut "
-"Perkataan Statik</b> dalam menu <b>Alat</b> untuk tujuan ini.<p>Jika anda "
-"ingin baris <i>dibalut secara visual,</i>menurut lebar paparan, aktifkan "
-"<b>Balut Perkataan Dinamik</b> dalam halaman konfig <b>Papar Piawai</b>."
-
-#. i18n: file: dialogs/editconfigwidget.ui:29
-#. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:254
-msgid "Enable static &word wrap"
-msgstr "Hidupkan balut perka&taan statik"
-
-#. i18n: file: dialogs/editconfigwidget.ui:36
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:257
-#, fuzzy
-#| msgid ""
-#| "<p>If this option is checked, a vertical line will be drawn at the word "
-#| "wrap column as defined in the <strong>Editing</strong> properties.<p>Note "
-#| "that the word wrap marker is only drawn if you use a fixed pitch font."
-msgid ""
-"<p>If this option is checked, a vertical line will be drawn at the word wrap "
-"column as defined in the <strong>Editing</strong> properties.</p><p>Note "
-"that the word wrap marker is only drawn if you use a fixed pitch font.</p>"
-msgstr ""
-"<p>Jika opsyen ini disemak, garisan menegak akan dilukis di lajur balut "
-"perkatan seperti yang ditakrif dalam ciri <strong>Editing</strong>.<p>Ambil "
-"perhatian bahawa penanda balut perkataan dilukis hanya jika anda guna fon "
-"pic tetap."
-
-#. i18n: file: dialogs/editconfigwidget.ui:39
-#. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:260
-#, fuzzy
-#| msgid "&Show static word wrap marker (if applicable)"
-msgid "Show static word wra&p marker (if applicable)"
-msgstr "&Papar pembuat balut perkataan statik (jika terpakai)"
-
-#. i18n: file: dialogs/editconfigwidget.ui:51
-#. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
-#: rc.cpp:263
-#, fuzzy
-#| msgid "Wrap words at:"
-msgid "W&rap words at:"
-msgstr "Balut perkataan di:"
-
-#. i18n: file: dialogs/editconfigwidget.ui:61
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbWordWrap)
-#: rc.cpp:266
-msgid ""
-"If the Word Wrap option is selected this entry determines the length (in "
-"characters) at which the editor will automatically start a new line."
-msgstr ""
-"Jika pilihan Balut Perkataan dipilih, masukan ini menentukan jarak (dalam "
-"aksara) di mana penyunting akan memulakan baris baru secara automatik."
-
-#. i18n: file: dialogs/editconfigwidget.ui:95
-#. i18n: ectx: property (title), widget (QGroupBox, gbMisc)
-#: rc.cpp:269
-#, fuzzy
-#| msgctxt "Language"
-#| msgid "Cisco"
-msgid "Misc"
-msgstr "Cisco"
-
-#. i18n: file: dialogs/editconfigwidget.ui:101
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:272
-#, fuzzy
-#| msgid ""
-#| "If this is enabled, the editor will remove any trailing whitespace on "
-#| "lines when they are left by the insertion cursor."
-msgid ""
-"If this is enabled, the editor will remove any trailing whitespace on lines "
-"that are changed through editing."
-msgstr ""
-"Jika ini diaktifkan, editor akan membuang sebarang ruang putih mengekor "
-"dalam baris apabila ia ditinggalkan oleh kursor penyelitan."
-
-#. i18n: file: dialogs/editconfigwidget.ui:104
-#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:275
-#, fuzzy
-#| msgid "Remove &trailing spaces"
-msgid "Remove &trailing spaces while editing"
-msgstr "Buang ruang &mengekor"
-
-#. i18n: file: dialogs/editconfigwidget.ui:111
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:278
-msgid ""
-"When the user types a left bracket ([,(, or {) KateView automatically enters "
-"the right bracket (}, ), or ]) to the right of the cursor."
-msgstr ""
-"Jika pengguna menaip kurungan kiri ([,(, or {) KateView secara automatik "
-"memasukkankurungan kanan (}, ), or ]) ke arah kanan kursor."
-
-#. i18n: file: dialogs/editconfigwidget.ui:114
-#. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:281
-msgid "Auto &brackets"
-msgstr "Kurungan au&to"
-
-#. i18n: file: dialogs/editconfigwidget.ui:121
-#. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
-#: rc.cpp:284
-msgid "Copy/Cut the current line if no selection"
-msgstr ""
-
-#. i18n: file: dialogs/editconfigwidget.ui:128
-#. i18n: ectx: property (text), widget (QCheckBox, chkScrollPastEnd)
-#: rc.cpp:287
-msgid "Allow scrolling past the end of the document"
-msgstr ""
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:14
-#. i18n: ectx: property (text), widget (QLabel, lblFiletype)
-#: rc.cpp:290
-msgid "&Filetype:"
-msgstr "&Jenis Fail:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:24
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbFiletypes)
-#: rc.cpp:293
-#, fuzzy
-#| msgid "<p>Select the marker type you want to change.</p>"
-msgid "Select the filetype you want to change."
-msgstr "<p>Pilih jenis penanda yang anda ingin ubah.</p>"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:31
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnNew)
-#: rc.cpp:296
-msgid "Create a new file type."
-msgstr "Cipta jenis fail baru."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:34
-#. i18n: ectx: property (text), widget (QPushButton, btnNew)
-#: rc.cpp:299
-#, fuzzy
-#| msgid "&New..."
-msgid "&New"
-msgstr "&Baru..."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:41
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDelete)
-#: rc.cpp:302
-msgid "Delete the current file type."
-msgstr "Hapuskan jenis fail semasa."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:82
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtName)
-#: rc.cpp:314
-msgid ""
-"The name of the filetype will be the text of the corresponding menu item."
-msgstr "Nama jenis fail akan menjadi teks item menu yang berkenaan."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:89
-#. i18n: ectx: property (text), widget (QLabel, lblSection)
-#: rc.cpp:317
-msgid "&Section:"
-msgstr "&Seksyen:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:99
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtSection)
-#: rc.cpp:320
-msgid "The section name is used to organize the file types in menus."
-msgstr "Nama seksyen digunakan untuk mengatur jenis fail dalam menu."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:106
-#. i18n: ectx: property (text), widget (QLabel, lblVariables)
-#: rc.cpp:323
-#, fuzzy
-msgid "&Variables:"
-msgstr "&Variabel:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:116
-#. i18n: ectx: property (whatsThis), widget (VariableLineEdit, edtVariables)
-#: rc.cpp:326
-#, fuzzy
-#| msgid ""
-#| "<p>This string allows you to configure Kate's settings for the files "
-#| "selected by this mimetype using Kate variables. You can set almost any "
-#| "configuration option, such as highlight, indent-mode, encoding, etc.</"
-#| "p><p>For a full list of known variables, see the manual.</p>"
-msgid ""
-"<p>This string allows to configure Kate's settings for the files selected by "
-"this mimetype using Kate variables. Almost any configuration option can be "
-"set, such as highlight, indent-mode, encoding, etc.</p><p>For a full list of "
-"known variables, see the manual.</p>"
-msgstr ""
-"<p>Rentetan ini membolehkan anda mengkonfigur seting Kate untuk fail yang "
-"dipilih oleh jenis mime ini menggunakan variabel Kate. Anda boleh set hampir-"
-"hampir sebarang opsyen konfigurasi, seperti tonjol, mod inden, pengekodan, "
-"dsb.</p><p>Untuk senarai penuh variabel yang diketahui, lihat manual.</p>"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:123
-#. i18n: ectx: property (text), widget (QLabel, lblHl)
-#: rc.cpp:329
-#, fuzzy
-#| msgid "&Highlighting"
-msgid "&Highlighting:"
-msgstr "&Penonjolan"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:136
-#. i18n: ectx: property (text), widget (QLabel, lblIndenter)
-#: rc.cpp:332
-#, fuzzy
-#| msgid "&Indentation"
-msgid "&Indentation Mode:"
-msgstr "&Indentasi"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:149
-#. i18n: ectx: property (text), widget (QLabel, lblExtensions)
-#: rc.cpp:335
-#, fuzzy
-#| msgid "File e&xtensions:"
-msgid "File e&xtensions:"
-msgstr "&Sambungan fail:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:159
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtFileExtensions)
-#: rc.cpp:338
-#, fuzzy
-#| msgid ""
-#| "The wildcards mask allows you to select files by filename. A typical mask "
-#| "uses an asterisk and the file extension, for example <code>*.txt; *.text</"
-#| "code>. The string is a semicolon-separated list of masks."
-msgid ""
-"The wildcards mask allows to select files by filename. A typical mask uses "
-"an asterisk and the file extension, for example <code>*.txt; *.text</code>. "
-"The string is a semicolon-separated list of masks."
-msgstr ""
-"Topeng kad liar membolehkan anda memilih fail mengikut nama fail. Topeng "
-"biasa menggunakan asterisk dan sambungan fail, contohnya <code>*.txt; *."
-"text</code>. Rentetan adalah senarai topeng yang dipisahkan oleh koma "
-"bertitik."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:166
-#. i18n: ectx: property (text), widget (QLabel, lblMimeTypes)
-#: rc.cpp:341
-msgid "MIME &types:"
-msgstr "&Jenis MIME:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:181
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtMimeTypes)
-#: rc.cpp:344
-#, fuzzy
-#| msgid ""
-#| "The mime type mask allows you to select files by mimetype. The string is "
-#| "a semicolon-separated list of mimetypes, for example <code>text/plain; "
-#| "text/english</code>."
-msgid ""
-"The mime type mask allows to select files by mimetype. The string is a "
-"semicolon-separated list of mimetypes, for example <code>text/plain; text/"
-"english</code>."
-msgstr ""
-"Topeng jenis mime membolehkan anda memilih fail mengikut jenis mime. "
-"Rentetan adalah senarai jenis mime yang dipisahkan oleh koma bertitik, "
-"misalnya <code>text/plain;text/english</code>."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:188
-#. i18n: ectx: property (whatsThis), widget (QToolButton, btnMimeTypes)
-#: rc.cpp:347
-msgid "Displays a wizard that helps you easily select mimetypes."
-msgstr "Memaparkan wizard yang membantu anda memilih jenis mime dengan mudah."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:197
-#. i18n: ectx: property (text), widget (QLabel, lblPriority)
-#: rc.cpp:350
-#, fuzzy
-#| msgid "Prio&rity:"
-msgid "P&riority:"
-msgstr "&Keutamaan:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:207
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbPriority)
-#: rc.cpp:353
-#, fuzzy
-#| msgid ""
-#| "Sets a priority for this file type. If more than one file type selects "
-#| "the same file, the one with the highest priority will be used."
-msgid ""
-"Sets priority for this file type. If more than one file type selects the "
-"same file, the one with the highest priority will be used."
-msgstr ""
-"Mengeset keutamaan bagi jenis fail ini. Jika lebih daripada satu jenis fail, "
-"pilih fail yang sama, fail dengan keutamaan tertinggi akan digunakan."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:232
-#. i18n: ectx: property (text), widget (QPushButton, btnDownload)
-#: rc.cpp:356
-#, fuzzy
-#| msgid "Highlighting Rules"
-msgid "Download Highlighting Files..."
-msgstr "Peraturan Penonjolan"
-
 #. i18n: file: dialogs/indentationconfigwidget.ui:25
 #. i18n: ectx: property (text), widget (QLabel, lblMode)
-#: rc.cpp:359
+#: rc.cpp:248
 #, fuzzy
 #| msgid "&Indentation mode:"
 msgid "Default indentation mode:"
@@ -4748,7 +4426,7 @@ msgstr "Mod &indentasi:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:35
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbMode)
-#: rc.cpp:362
+#: rc.cpp:251
 msgid ""
 "This is a list of available indentation modes. The specified indentation "
 "mode will be used for all new documents. Be aware that it is also possible "
@@ -4758,7 +4436,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:57
 #. i18n: ectx: property (title), widget (QGroupBox, gbIndentationMode)
-#: rc.cpp:365
+#: rc.cpp:254
 #, fuzzy
 #| msgid "Indentation"
 msgid "Indent using"
@@ -4766,7 +4444,7 @@ msgstr "Indentasi"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:63
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithTabs)
-#: rc.cpp:368
+#: rc.cpp:257
 #, fuzzy
 #| msgid "Tabulators"
 msgid "&Tabulators"
@@ -4774,14 +4452,14 @@ msgstr "Tabulator"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithSpaces)
-#: rc.cpp:371
+#: rc.cpp:260
 #, fuzzy
 msgid "&Spaces"
 msgstr "&Ganti"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:77
 #. i18n: ectx: property (text), widget (QLabel, lblIndentWidth)
-#: rc.cpp:374
+#: rc.cpp:263
 #, fuzzy
 #| msgid "Indentation with Spaces"
 msgid "&Indentation width:"
@@ -4789,7 +4467,7 @@ msgstr "Indentasi dengan Ruang"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbIndentWidth)
-#: rc.cpp:377
+#: rc.cpp:266
 msgid ""
 "The indentation width is the number of spaces which is used to indent a "
 "line. If the option <b>Insert spaces instead of tabulators</b> in the "
@@ -4799,7 +4477,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentMixed)
-#: rc.cpp:380
+#: rc.cpp:269
 #, fuzzy
 #| msgid "Tabulators"
 msgid "Tabulators &and Spaces"
@@ -4807,7 +4485,7 @@ msgstr "Tabulator"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:123
 #. i18n: ectx: property (text), widget (QLabel, lblTabWidth)
-#: rc.cpp:383
+#: rc.cpp:272
 #, fuzzy
 #| msgid "Tab width:"
 msgid "Tab wi&dth:"
@@ -4815,7 +4493,7 @@ msgstr "Lebar tab:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:152
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: rc.cpp:386
+#: rc.cpp:275
 #, fuzzy
 #| msgid "Indentation Rules"
 msgid "Indentation Properties"
@@ -4823,7 +4501,7 @@ msgstr "Peraturan Indentasi"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:158
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:389
+#: rc.cpp:278
 msgid ""
 "If this option is disabled, changing the indentation level aligns a line to "
 "a multiple of the width specified in <b>Indentation width</b>."
@@ -4831,7 +4509,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:161
 #. i18n: ectx: property (text), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:392
+#: rc.cpp:281
 #, fuzzy
 #| msgid "&Keep extra spaces"
 msgid "&Keep extra spaces"
@@ -4839,7 +4517,7 @@ msgstr "Simpan ruang e&kstra"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:168
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:395
+#: rc.cpp:284
 msgid ""
 "If this option is selected, pasted code from the clipboard is indented. "
 "Triggering the <b>undo</b>-action removes the indentation."
@@ -4847,13 +4525,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:398
+#: rc.cpp:287
 msgid "Adjust indentation of code &pasted from the clipboard"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:181
 #. i18n: ectx: property (title), widget (QGroupBox, gbKeys)
-#: rc.cpp:401
+#: rc.cpp:290
 #, fuzzy
 #| msgid "Indentation"
 msgid "Indentation Actions"
@@ -4861,7 +4539,7 @@ msgstr "Indentasi"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:187
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:404
+#: rc.cpp:293
 msgid ""
 "If this option is selected, the <b>Backspace</b> key decreases the "
 "indentation level if the cursor is located in the leading blank space of a "
@@ -4870,7 +4548,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:190
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:407
+#: rc.cpp:296
 #, fuzzy
 #| msgid "&Backspace key indents"
 msgid "&Backspace key in leading blank space unindents"
@@ -4878,7 +4556,7 @@ msgstr "Anjak ke &belakang inden kekunci"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:200
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:410
+#: rc.cpp:299
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4892,7 +4570,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:233
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:416
+#: rc.cpp:305
 msgid ""
 "If this option is selected, the <b>Tab</b> key always inserts white space so "
 "that the next tab position is reached. If the option <b>Insert spaces "
@@ -4902,13 +4580,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:236
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:419
+#: rc.cpp:308
 msgid "Always advance to the &next tab position"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:243
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:422
+#: rc.cpp:311
 msgid ""
 "If this option is selected, the <b>Tab</b> key always indents the current "
 "line by the number of character positions specified in <b>Indentation width</"
@@ -4917,13 +4595,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:246
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:425
+#: rc.cpp:314
 msgid "Always increase indentation &level"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:253
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:428
+#: rc.cpp:317
 msgid ""
 "If this option is selected, the <b>Tab</b> key either indents the current "
 "line or advances to the next tab position.<p> If the insertion point is at "
@@ -4939,13 +4617,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:256
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:431
+#: rc.cpp:320
 msgid "Increase indentation level if in l&eading blank space"
 msgstr ""
 
 #. i18n: file: dialogs/modonhdwidget.ui:22
 #. i18n: ectx: property (text), widget (QCheckBox, chkIgnoreWhiteSpaces)
-#: rc.cpp:434
+#: rc.cpp:323
 #, fuzzy
 #| msgid "&Ignore Changes"
 msgid "Ignore white space changes"
@@ -4953,7 +4631,7 @@ msgstr "&Abaikan Perubahan"
 
 #. i18n: file: dialogs/modonhdwidget.ui:29
 #. i18n: ectx: property (whatsThis), widget (QPushButton, btnDiff)
-#: rc.cpp:437
+#: rc.cpp:326
 #, fuzzy
 #| msgid ""
 #| "Calculates the difference between the editor contents and the disk file "
@@ -4968,19 +4646,19 @@ msgstr ""
 
 #. i18n: file: dialogs/modonhdwidget.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, btnDiff)
-#: rc.cpp:440
+#: rc.cpp:329
 msgid "&View Difference"
 msgstr "&Papar Perbezaan"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbConfigFile)
-#: rc.cpp:443
+#: rc.cpp:332
 msgid "Folder Config File"
 msgstr "Fail Konfig Folder"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:446
+#: rc.cpp:335
 #, fuzzy
 #| msgid "Se&arch depth for config file:"
 msgid "Search &depth for config file:"
@@ -4988,7 +4666,7 @@ msgstr "&Cari kedalaman untuk fail konfig:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:41
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:449
+#: rc.cpp:338
 #, fuzzy
 #| msgid ""
 #| "The editor will search the given number of folder levels upwards for ."
@@ -5002,13 +4680,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:44
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:452
+#: rc.cpp:341
 msgid "Do not use config file"
 msgstr "Jangan guna fail konfig"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:75
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbBackup)
-#: rc.cpp:455
+#: rc.cpp:344
 #, fuzzy
 #| msgid ""
 #| "<p>Backing up on save will cause Kate to copy the disk file to '&lt;"
@@ -5026,13 +4704,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:78
 #. i18n: ectx: property (title), widget (QGroupBox, gbBackup)
-#: rc.cpp:458
+#: rc.cpp:347
 msgid "Backup on Save"
 msgstr "Ganti semasa Simpan"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:461
+#: rc.cpp:350
 #, fuzzy
 #| msgid "Check this if you want backups of local files when saving"
 msgid ""
@@ -5042,7 +4720,7 @@ msgstr "Semak ini jika anda ingin sandaran fail setempatl semasa menyimpan"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:464
+#: rc.cpp:353
 #, fuzzy
 #| msgid "&Remote files"
 msgid "&Local files"
@@ -5050,7 +4728,7 @@ msgstr "Fail &Jauh"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:467
+#: rc.cpp:356
 #, fuzzy
 #| msgid "Check this if you want backups of remote files when saving"
 msgid ""
@@ -5060,20 +4738,20 @@ msgstr "Semak ini jika anda ingin sandaran fail jauh semasa menyimpan"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:470
+#: rc.cpp:359
 msgid "&Remote files"
 msgstr "Fail &Jauh"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:107
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:473
+#: rc.cpp:362
 #, fuzzy
 msgid "&Prefix:"
 msgstr "&Awalan:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:117
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupPrefix)
-#: rc.cpp:476
+#: rc.cpp:365
 #, fuzzy
 #| msgid "Enter the prefix to prepend to the backup file names"
 msgid "Enter the prefix to prepend to the backup file names."
@@ -5081,13 +4759,13 @@ msgstr "Masukkan awalan untuk prepend kepada nama fail sandaran"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:479
+#: rc.cpp:368
 msgid "&Suffix:"
 msgstr "&Sufiks:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:134
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupSuffix)
-#: rc.cpp:482
+#: rc.cpp:371
 #, fuzzy
 #| msgid "Enter the suffix to add to the backup file names"
 msgid "Enter the suffix to append to the backup file names."
@@ -5095,32 +4773,32 @@ msgstr "Masukkan akhiran untuk tambah kepada nama fail sandaran"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:167
 #. i18n: ectx: property (text), widget (QCheckBox, chkNoSync)
-#: rc.cpp:485
+#: rc.cpp:374
 msgid "Disable swap files syncing"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:488
+#: rc.cpp:377
 #, fuzzy
 msgid "Text Area Background"
 msgstr "Latar belakang Kawasan Teks "
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:491
+#: rc.cpp:380
 msgid "Normal text:"
 msgstr "Teks normal:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:497
+#: rc.cpp:386
 msgid "Selected text:"
 msgstr "Teks dipilih:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:47
 #. i18n: ectx: property (whatsThis), widget (KColorButton, selected)
-#: rc.cpp:500
+#: rc.cpp:389
 msgid ""
 "<p>Sets the background color of the selection.</p><p>To set the text color "
 "for selected text, use the \"<b>Configure Highlighting</b>\" dialog.</p>"
@@ -5130,19 +4808,19 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:54
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:503
+#: rc.cpp:392
 msgid "Current line:"
 msgstr "Baris semasa:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:68
 #. i18n: ectx: property (whatsThis), widget (KComboBox, combobox)
-#: rc.cpp:509
+#: rc.cpp:398
 msgid "<p>Select the marker type you want to change.</p>"
 msgstr "<p>Pilih jenis penanda yang anda ingin ubah.</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:75
 #. i18n: ectx: property (whatsThis), widget (KColorButton, markers)
-#: rc.cpp:512
+#: rc.cpp:401
 msgid ""
 "<p>Sets the background color of the selected marker type.</p><p><b>Note</b>: "
 "The marker color is displayed lightly because of transparency.</p>"
@@ -5152,37 +4830,37 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:85
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:515
+#: rc.cpp:404
 msgid "Additional Elements"
 msgstr "Elemen Tambahan"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:518
+#: rc.cpp:407
 msgid "Left border background:"
 msgstr "Latarbelakang sempadan kiri :"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:104
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:521
+#: rc.cpp:410
 msgid "Line numbers:"
 msgstr "Nombor baris:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:118
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:527
+#: rc.cpp:416
 msgid "Bracket highlight:"
 msgstr "Tonjolkan kurungan:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:132
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:533
+#: rc.cpp:422
 msgid "Word wrap markers:"
 msgstr "Penanda bungkus perkataan:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:146
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:539
+#: rc.cpp:428
 #, fuzzy
 #| msgid "Tab markers:"
 msgid "Tab and space markers:"
@@ -5190,13 +4868,13 @@ msgstr "Penanda tab :"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:160
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:545
+#: rc.cpp:434
 msgid "Spelling mistake line:"
 msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:29
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators)
-#: rc.cpp:557
+#: rc.cpp:446
 #, fuzzy
 #| msgid "Dynamic word wrap indicators (if applicable):"
 msgid "Dynamic &word wrap indicators (if applicable):"
@@ -5204,7 +4882,7 @@ msgstr "Penanda balut perkataan Dinamik (jika boleh):"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:39
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbDynamicWordWrapIndicator)
-#: rc.cpp:560
+#: rc.cpp:449
 #, fuzzy
 #| msgid "Choose when the Dynamic Word Wrap Indicators should be displayed"
 msgid "Choose when the Dynamic Word Wrap Indicators should be displayed."
@@ -5212,7 +4890,7 @@ msgstr "Pilih bila penanda Balut Perkataan Dinamik harus dipaparkan"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators_2)
-#: rc.cpp:563
+#: rc.cpp:452
 #, fuzzy
 #| msgid "Vertically align dynamically wrapped lines to indentation depth:"
 msgid "Align dynamically wrapped lines to indentation depth:"
@@ -5221,7 +4899,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:62
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:567
+#: rc.cpp:456
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<p>Enables the start of dynamically wrapped lines to be aligned "
@@ -5251,7 +4929,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:68
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:574
+#: rc.cpp:463
 #, fuzzy, no-c-format
 #| msgid "% of View Width"
 msgid "% of View Width"
@@ -5259,7 +4937,7 @@ msgstr "% Lebar Paparan"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:84
 #. i18n: ectx: property (title), widget (QGroupBox, gbWhitespaceHighlighting)
-#: rc.cpp:577
+#: rc.cpp:466
 #, fuzzy
 #| msgid "&Highlighting"
 msgid "Whitespace Highlighting"
@@ -5267,7 +4945,7 @@ msgstr "&Penonjolan"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:90
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:580
+#: rc.cpp:469
 msgid ""
 "The editor will display a symbol to indicate the presence of a tab in the "
 "text."
@@ -5277,14 +4955,14 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:583
+#: rc.cpp:472
 #, fuzzy
 msgid "&Highlight tabulators"
 msgstr "&Penonjolan"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowSpaces)
-#: rc.cpp:586
+#: rc.cpp:475
 #, fuzzy
 #| msgid "Highlighting Rules"
 msgid "Highlight trailing &spaces"
@@ -5292,7 +4970,7 @@ msgstr "Peraturan Penonjolan"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:116
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:592
+#: rc.cpp:481
 msgid ""
 "Changing this mode affects only newly opened / created documents. In KWrite "
 "a restart is recommended."
@@ -5300,13 +4978,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:119
 #. i18n: ectx: property (text), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:595
+#: rc.cpp:484
 msgid "Enable power user mode (KDE 3 mode)"
 msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:126
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:598
+#: rc.cpp:487
 #, fuzzy
 msgid ""
 "If this is enabled, the editor will display vertical lines to help identify "
@@ -5317,7 +4995,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:601
+#: rc.cpp:490
 #, fuzzy
 #| msgid "Show indentation lines"
 msgid "Show i&ndentation lines"
@@ -5325,7 +5003,7 @@ msgstr "Papar baris indentasi"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:136
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:604
+#: rc.cpp:493
 msgid ""
 "If this is enabled, the range between the selected matching brackets will be "
 "highlighted."
@@ -5333,13 +5011,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:607
+#: rc.cpp:496
 msgid "Highlight range between selected brackets"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:18
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:613
+#: rc.cpp:502
 msgid ""
 "When selected, the vi input mode will be enabled when opening a new view. "
 "You can still toggle the vi input mode on/off for a particular view in the "
@@ -5348,13 +5026,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:21
 #. i18n: ectx: property (text), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:616
+#: rc.cpp:505
 msgid "Use Vi input mode"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:28
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:619
+#: rc.cpp:508
 msgid ""
 "When selected, vi commands will override Kate's built-in commands. For "
 "example: Ctrl+R will redo, and override the standard action (showing the "
@@ -5363,13 +5041,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:622
+#: rc.cpp:511
 msgid "Let Vi commands override Kate shortcuts"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:40
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:625
+#: rc.cpp:514
 msgid ""
 "By default, an extra status bar will be used when the Vi input mode is "
 "enabled. This status bar shows commands while they are being typed and "
@@ -5380,13 +5058,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:43
 #. i18n: ectx: property (text), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:630
+#: rc.cpp:519
 msgid "Hide the Vi mode status bar"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:58
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox)
-#: rc.cpp:633
+#: rc.cpp:522
 msgid ""
 "Key mapping is used to change the meaning of typed keys. This allows you to "
 "move commands to other keys or make special keypresses for doing a series of "
@@ -5400,13 +5078,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:61
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:641
+#: rc.cpp:530
 msgid "Key Mapping"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:71
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:644
+#: rc.cpp:533
 #, fuzzy
 #| msgid "Normal Text"
 msgid "Normal mode"
@@ -5414,14 +5092,14 @@ msgstr "Teks Normal"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:95
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:650
+#: rc.cpp:539
 #, fuzzy
 msgid "Replacement"
 msgstr "&Ganti"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, btnRemoveSelectedNormal)
-#: rc.cpp:653
+#: rc.cpp:542
 #, fuzzy
 #| msgid "Selected"
 msgid "Remove selected"
@@ -5429,13 +5107,13 @@ msgstr "Dipilih"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:112
 #. i18n: ectx: property (text), widget (QPushButton, btnAddNewNormal)
-#: rc.cpp:656
+#: rc.cpp:545
 msgid "Add new mapping"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:119
 #. i18n: ectx: property (toolTip), widget (QPushButton, btnImportNormal)
-#: rc.cpp:659
+#: rc.cpp:548
 msgid ""
 "Read a vimrc file and attempt to import mappings specified with the \"[n]"
 "noremap\" command."
@@ -5443,9 +5121,331 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, btnImportNormal)
-#: rc.cpp:662
+#: rc.cpp:551
 msgid "Import from vimrc file"
 msgstr ""
+
+#. i18n: file: dialogs/editconfigwidget.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
+#: rc.cpp:554
+msgid "Static Word Wrap"
+msgstr "Balut Perkataan Statik"
+
+#. i18n: file: dialogs/editconfigwidget.ui:26
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
+#: rc.cpp:557
+#, fuzzy
+#| msgid ""
+#| "Automatically start a new line of text when the current line exceeds the "
+#| "length specified by the <b>Wrap words at:</b> option.<p>This option does "
+#| "not wrap existing lines of text - use the <b>Apply Static Word Wrap</b> "
+#| "option in the <b>Tools</b> menu for that purpose.<p>If you want lines to "
+#| "be <i>visually wrapped</i> instead, according to the width of the view, "
+#| "enable <b>Dynamic Word Wrap</b> in the <b>View Defaults</b> config page."
+msgid ""
+"<p>Automatically start a new line of text when the current line exceeds the "
+"length specified by the <b>Wrap words at:</b> option.</p><p>This option does "
+"not wrap existing lines of text - use the <b>Apply Static Word Wrap</b> "
+"option in the <b>Tools</b> menu for that purpose.</p><p>If you want lines to "
+"be <i>visually wrapped</i> instead, according to the width of the view, "
+"enable <b>Dynamic Word Wrap</b> in the <b>Appearance</b> config page.</p>"
+msgstr ""
+"Memulakan baris baru teks secara automatik apabila baris semasa melebihi "
+"panjang yang ditetapkan oleh <b>Balut perkataan di:</b> opsyen.<p> Opsyen "
+"ini tidak membalut baris teks sedia ada - guna opsyen<b> Laksana Balut "
+"Perkataan Statik</b> dalam menu <b>Alat</b> untuk tujuan ini.<p>Jika anda "
+"ingin baris <i>dibalut secara visual,</i>menurut lebar paparan, aktifkan "
+"<b>Balut Perkataan Dinamik</b> dalam halaman konfig <b>Papar Piawai</b>."
+
+#. i18n: file: dialogs/editconfigwidget.ui:29
+#. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
+#: rc.cpp:560
+msgid "Enable static &word wrap"
+msgstr "Hidupkan balut perka&taan statik"
+
+#. i18n: file: dialogs/editconfigwidget.ui:36
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
+#: rc.cpp:563
+#, fuzzy
+#| msgid ""
+#| "<p>If this option is checked, a vertical line will be drawn at the word "
+#| "wrap column as defined in the <strong>Editing</strong> properties.<p>Note "
+#| "that the word wrap marker is only drawn if you use a fixed pitch font."
+msgid ""
+"<p>If this option is checked, a vertical line will be drawn at the word wrap "
+"column as defined in the <strong>Editing</strong> properties.</p><p>Note "
+"that the word wrap marker is only drawn if you use a fixed pitch font.</p>"
+msgstr ""
+"<p>Jika opsyen ini disemak, garisan menegak akan dilukis di lajur balut "
+"perkatan seperti yang ditakrif dalam ciri <strong>Editing</strong>.<p>Ambil "
+"perhatian bahawa penanda balut perkataan dilukis hanya jika anda guna fon "
+"pic tetap."
+
+#. i18n: file: dialogs/editconfigwidget.ui:39
+#. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
+#: rc.cpp:566
+#, fuzzy
+#| msgid "&Show static word wrap marker (if applicable)"
+msgid "Show static word wra&p marker (if applicable)"
+msgstr "&Papar pembuat balut perkataan statik (jika terpakai)"
+
+#. i18n: file: dialogs/editconfigwidget.ui:51
+#. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
+#: rc.cpp:569
+#, fuzzy
+#| msgid "Wrap words at:"
+msgid "W&rap words at:"
+msgstr "Balut perkataan di:"
+
+#. i18n: file: dialogs/editconfigwidget.ui:61
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbWordWrap)
+#: rc.cpp:572
+msgid ""
+"If the Word Wrap option is selected this entry determines the length (in "
+"characters) at which the editor will automatically start a new line."
+msgstr ""
+"Jika pilihan Balut Perkataan dipilih, masukan ini menentukan jarak (dalam "
+"aksara) di mana penyunting akan memulakan baris baru secara automatik."
+
+#. i18n: file: dialogs/editconfigwidget.ui:95
+#. i18n: ectx: property (title), widget (QGroupBox, gbMisc)
+#: rc.cpp:575
+#, fuzzy
+#| msgctxt "Language"
+#| msgid "Cisco"
+msgid "Misc"
+msgstr "Cisco"
+
+#. i18n: file: dialogs/editconfigwidget.ui:101
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:578
+#, fuzzy
+#| msgid ""
+#| "If this is enabled, the editor will remove any trailing whitespace on "
+#| "lines when they are left by the insertion cursor."
+msgid ""
+"If this is enabled, the editor will remove any trailing whitespace on lines "
+"that are changed through editing."
+msgstr ""
+"Jika ini diaktifkan, editor akan membuang sebarang ruang putih mengekor "
+"dalam baris apabila ia ditinggalkan oleh kursor penyelitan."
+
+#. i18n: file: dialogs/editconfigwidget.ui:104
+#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:581
+#, fuzzy
+#| msgid "Remove &trailing spaces"
+msgid "Remove &trailing spaces while editing"
+msgstr "Buang ruang &mengekor"
+
+#. i18n: file: dialogs/editconfigwidget.ui:111
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAutoBrackets)
+#: rc.cpp:584
+msgid ""
+"When the user types a left bracket ([,(, or {) KateView automatically enters "
+"the right bracket (}, ), or ]) to the right of the cursor."
+msgstr ""
+"Jika pengguna menaip kurungan kiri ([,(, or {) KateView secara automatik "
+"memasukkankurungan kanan (}, ), or ]) ke arah kanan kursor."
+
+#. i18n: file: dialogs/editconfigwidget.ui:114
+#. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
+#: rc.cpp:587
+msgid "Auto &brackets"
+msgstr "Kurungan au&to"
+
+#. i18n: file: dialogs/editconfigwidget.ui:121
+#. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
+#: rc.cpp:590
+msgid "Copy/Cut the current line if no selection"
+msgstr ""
+
+#. i18n: file: dialogs/editconfigwidget.ui:128
+#. i18n: ectx: property (text), widget (QCheckBox, chkScrollPastEnd)
+#: rc.cpp:593
+msgid "Allow scrolling past the end of the document"
+msgstr ""
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:14
+#. i18n: ectx: property (text), widget (QLabel, lblFiletype)
+#: rc.cpp:596
+msgid "&Filetype:"
+msgstr "&Jenis Fail:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:24
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbFiletypes)
+#: rc.cpp:599
+#, fuzzy
+#| msgid "<p>Select the marker type you want to change.</p>"
+msgid "Select the filetype you want to change."
+msgstr "<p>Pilih jenis penanda yang anda ingin ubah.</p>"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:31
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnNew)
+#: rc.cpp:602
+msgid "Create a new file type."
+msgstr "Cipta jenis fail baru."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:34
+#. i18n: ectx: property (text), widget (QPushButton, btnNew)
+#: rc.cpp:605
+#, fuzzy
+#| msgid "&New..."
+msgid "&New"
+msgstr "&Baru..."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:41
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDelete)
+#: rc.cpp:608
+msgid "Delete the current file type."
+msgstr "Hapuskan jenis fail semasa."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:82
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtName)
+#: rc.cpp:620
+msgid ""
+"The name of the filetype will be the text of the corresponding menu item."
+msgstr "Nama jenis fail akan menjadi teks item menu yang berkenaan."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:89
+#. i18n: ectx: property (text), widget (QLabel, lblSection)
+#: rc.cpp:623
+msgid "&Section:"
+msgstr "&Seksyen:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:99
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtSection)
+#: rc.cpp:626
+msgid "The section name is used to organize the file types in menus."
+msgstr "Nama seksyen digunakan untuk mengatur jenis fail dalam menu."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:106
+#. i18n: ectx: property (text), widget (QLabel, lblVariables)
+#: rc.cpp:629
+#, fuzzy
+msgid "&Variables:"
+msgstr "&Variabel:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:116
+#. i18n: ectx: property (whatsThis), widget (VariableLineEdit, edtVariables)
+#: rc.cpp:632
+#, fuzzy
+#| msgid ""
+#| "<p>This string allows you to configure Kate's settings for the files "
+#| "selected by this mimetype using Kate variables. You can set almost any "
+#| "configuration option, such as highlight, indent-mode, encoding, etc.</"
+#| "p><p>For a full list of known variables, see the manual.</p>"
+msgid ""
+"<p>This string allows to configure Kate's settings for the files selected by "
+"this mimetype using Kate variables. Almost any configuration option can be "
+"set, such as highlight, indent-mode, encoding, etc.</p><p>For a full list of "
+"known variables, see the manual.</p>"
+msgstr ""
+"<p>Rentetan ini membolehkan anda mengkonfigur seting Kate untuk fail yang "
+"dipilih oleh jenis mime ini menggunakan variabel Kate. Anda boleh set hampir-"
+"hampir sebarang opsyen konfigurasi, seperti tonjol, mod inden, pengekodan, "
+"dsb.</p><p>Untuk senarai penuh variabel yang diketahui, lihat manual.</p>"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:123
+#. i18n: ectx: property (text), widget (QLabel, lblHl)
+#: rc.cpp:635
+#, fuzzy
+#| msgid "&Highlighting"
+msgid "&Highlighting:"
+msgstr "&Penonjolan"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:136
+#. i18n: ectx: property (text), widget (QLabel, lblIndenter)
+#: rc.cpp:638
+#, fuzzy
+#| msgid "&Indentation"
+msgid "&Indentation Mode:"
+msgstr "&Indentasi"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:149
+#. i18n: ectx: property (text), widget (QLabel, lblExtensions)
+#: rc.cpp:641
+#, fuzzy
+#| msgid "File e&xtensions:"
+msgid "File e&xtensions:"
+msgstr "&Sambungan fail:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:159
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtFileExtensions)
+#: rc.cpp:644
+#, fuzzy
+#| msgid ""
+#| "The wildcards mask allows you to select files by filename. A typical mask "
+#| "uses an asterisk and the file extension, for example <code>*.txt; *.text</"
+#| "code>. The string is a semicolon-separated list of masks."
+msgid ""
+"The wildcards mask allows to select files by filename. A typical mask uses "
+"an asterisk and the file extension, for example <code>*.txt; *.text</code>. "
+"The string is a semicolon-separated list of masks."
+msgstr ""
+"Topeng kad liar membolehkan anda memilih fail mengikut nama fail. Topeng "
+"biasa menggunakan asterisk dan sambungan fail, contohnya <code>*.txt; *."
+"text</code>. Rentetan adalah senarai topeng yang dipisahkan oleh koma "
+"bertitik."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:166
+#. i18n: ectx: property (text), widget (QLabel, lblMimeTypes)
+#: rc.cpp:647
+msgid "MIME &types:"
+msgstr "&Jenis MIME:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:181
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtMimeTypes)
+#: rc.cpp:650
+#, fuzzy
+#| msgid ""
+#| "The mime type mask allows you to select files by mimetype. The string is "
+#| "a semicolon-separated list of mimetypes, for example <code>text/plain; "
+#| "text/english</code>."
+msgid ""
+"The mime type mask allows to select files by mimetype. The string is a "
+"semicolon-separated list of mimetypes, for example <code>text/plain; text/"
+"english</code>."
+msgstr ""
+"Topeng jenis mime membolehkan anda memilih fail mengikut jenis mime. "
+"Rentetan adalah senarai jenis mime yang dipisahkan oleh koma bertitik, "
+"misalnya <code>text/plain;text/english</code>."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:188
+#. i18n: ectx: property (whatsThis), widget (QToolButton, btnMimeTypes)
+#: rc.cpp:653
+msgid "Displays a wizard that helps you easily select mimetypes."
+msgstr "Memaparkan wizard yang membantu anda memilih jenis mime dengan mudah."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:197
+#. i18n: ectx: property (text), widget (QLabel, lblPriority)
+#: rc.cpp:656
+#, fuzzy
+#| msgid "Prio&rity:"
+msgid "P&riority:"
+msgstr "&Keutamaan:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:207
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbPriority)
+#: rc.cpp:659
+#, fuzzy
+#| msgid ""
+#| "Sets a priority for this file type. If more than one file type selects "
+#| "the same file, the one with the highest priority will be used."
+msgid ""
+"Sets priority for this file type. If more than one file type selects the "
+"same file, the one with the highest priority will be used."
+msgstr ""
+"Mengeset keutamaan bagi jenis fail ini. Jika lebih daripada satu jenis fail, "
+"pilih fail yang sama, fail dengan keutamaan tertinggi akan digunakan."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:232
+#. i18n: ectx: property (text), widget (QPushButton, btnDownload)
+#: rc.cpp:662
+#, fuzzy
+#| msgid "Highlighting Rules"
+msgid "Download Highlighting Files..."
+msgstr "Peraturan Penonjolan"
 
 #. i18n: file: dialogs/bordersappearanceconfigwidget.ui:23
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowFoldingMarkers)
