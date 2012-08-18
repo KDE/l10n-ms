@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_engine_soliddevice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-26 05:08+0200\n"
+"POT-Creation-Date: 2012-08-18 04:27+0200\n"
 "PO-Revision-Date: 2011-05-24 20:03+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -116,11 +116,15 @@ msgid "Ide"
 msgstr ""
 
 #: soliddeviceengine.cpp:174
-msgid "Usb"
+msgid "Ieee1394"
 msgstr ""
 
 #: soliddeviceengine.cpp:174
-msgid "Ieee1394"
+msgid "Platform"
+msgstr "Platform"
+
+#: soliddeviceengine.cpp:174
+msgid "Sata"
 msgstr ""
 
 #: soliddeviceengine.cpp:174
@@ -128,44 +132,40 @@ msgid "Scsi"
 msgstr ""
 
 #: soliddeviceengine.cpp:174
-msgid "Sata"
+msgid "Usb"
 msgstr ""
-
-#: soliddeviceengine.cpp:174
-msgid "Platform"
-msgstr "Platform"
-
-#: soliddeviceengine.cpp:176
-msgid "Hard Disk"
-msgstr "Cakera Keras"
 
 #: soliddeviceengine.cpp:176
 msgid "Cdrom Drive"
 msgstr ""
 
 #: soliddeviceengine.cpp:176
+msgid "Compact Flash"
+msgstr "Compact Flash"
+
+#: soliddeviceengine.cpp:176
 msgid "Floppy"
 msgstr "Cakera Liut"
 
 #: soliddeviceengine.cpp:176
-msgid "Tape"
-msgstr "Pita"
-
-#: soliddeviceengine.cpp:176
-msgid "Compact Flash"
-msgstr "Compact Flash"
+msgid "Hard Disk"
+msgstr "Cakera Keras"
 
 #: soliddeviceengine.cpp:176
 msgid "Memory Stick"
 msgstr "Memory Stick"
 
 #: soliddeviceengine.cpp:176
+msgid "SdMmc"
+msgstr ""
+
+#: soliddeviceengine.cpp:176
 msgid "Smart Media"
 msgstr "Smart Media"
 
 #: soliddeviceengine.cpp:176
-msgid "SdMmc"
-msgstr ""
+msgid "Tape"
+msgstr "Pita"
 
 #: soliddeviceengine.cpp:176
 #, fuzzy
@@ -293,6 +293,11 @@ msgstr "Jenis peranti muatan storan"
 
 #: soliddeviceengine.cpp:274
 #, fuzzy
+msgid "File System"
+msgstr "Sistem Fail"
+
+#: soliddeviceengine.cpp:274
+#, fuzzy
 msgid "Other"
 msgstr "Lain-lain"
 
@@ -301,10 +306,10 @@ msgstr "Lain-lain"
 msgid "Unused"
 msgstr "Tidak diguna"
 
-#: soliddeviceengine.cpp:274
+#: soliddeviceengine.cpp:275
 #, fuzzy
-msgid "File System"
-msgstr "Sistem Fail"
+msgid "Encrypted"
+msgstr "Disulitkan"
 
 #: soliddeviceengine.cpp:275
 msgid "Partition Table"
@@ -314,11 +319,6 @@ msgstr ""
 #, fuzzy
 msgid "Raid"
 msgstr "Raid"
-
-#: soliddeviceengine.cpp:275
-#, fuzzy
-msgid "Encrypted"
-msgstr "Disulitkan"
 
 #: soliddeviceengine.cpp:278 soliddeviceengine.cpp:280
 #, fuzzy
@@ -390,7 +390,7 @@ msgid "Available Content"
 msgstr ""
 
 #: soliddeviceengine.cpp:332
-msgid "Unknown Disc Type"
+msgid "CD Recordable"
 msgstr ""
 
 #: soliddeviceengine.cpp:332
@@ -398,7 +398,7 @@ msgid "CD Rom"
 msgstr ""
 
 #: soliddeviceengine.cpp:332
-msgid "CD Recordable"
+msgid "Unknown Disc Type"
 msgstr ""
 
 #: soliddeviceengine.cpp:333
@@ -406,11 +406,15 @@ msgid "CD Rewritable"
 msgstr ""
 
 #: soliddeviceengine.cpp:333
-msgid "DVD Rom"
+msgid "DVD Ram"
 msgstr ""
 
 #: soliddeviceengine.cpp:333
-msgid "DVD Ram"
+msgid "DVD Rom"
+msgstr ""
+
+#: soliddeviceengine.cpp:334
+msgid "DVD Plus Recordable"
 msgstr ""
 
 #: soliddeviceengine.cpp:334
@@ -421,20 +425,16 @@ msgstr ""
 msgid "DVD Rewritable"
 msgstr ""
 
-#: soliddeviceengine.cpp:334
-msgid "DVD Plus Recordable"
+#: soliddeviceengine.cpp:335
+msgid "DVD Plus Recordable Duallayer"
 msgstr ""
 
 #: soliddeviceengine.cpp:335
 msgid "DVD Plus Rewritable"
 msgstr ""
 
-#: soliddeviceengine.cpp:335
-msgid "DVD Plus Recordable Duallayer"
-msgstr ""
-
 #: soliddeviceengine.cpp:336
-msgid "DVD Plus Rewritable Duallayer"
+msgid "Blu Ray Recordable"
 msgstr ""
 
 #: soliddeviceengine.cpp:336
@@ -442,7 +442,7 @@ msgid "Blu Ray Rom"
 msgstr ""
 
 #: soliddeviceengine.cpp:336
-msgid "Blu Ray Recordable"
+msgid "DVD Plus Rewritable Duallayer"
 msgstr ""
 
 #: soliddeviceengine.cpp:337
@@ -450,11 +450,11 @@ msgid "Blu Ray Rewritable"
 msgstr ""
 
 #: soliddeviceengine.cpp:337
-msgid "HD DVD Rom"
+msgid "HD DVD Recordable"
 msgstr ""
 
 #: soliddeviceengine.cpp:337
-msgid "HD DVD Recordable"
+msgid "HD DVD Rom"
 msgstr ""
 
 #: soliddeviceengine.cpp:338
@@ -539,10 +539,6 @@ msgid "Battery"
 msgstr "Bateri"
 
 #: soliddeviceengine.cpp:409
-msgid "Unknown Battery"
-msgstr ""
-
-#: soliddeviceengine.cpp:409
 msgid "PDA Battery"
 msgstr ""
 
@@ -550,8 +546,12 @@ msgstr ""
 msgid "UPS Battery"
 msgstr ""
 
+#: soliddeviceengine.cpp:409
+msgid "Unknown Battery"
+msgstr ""
+
 #: soliddeviceengine.cpp:410
-msgid "Primary Battery"
+msgid "Keyboard Battery"
 msgstr ""
 
 #: soliddeviceengine.cpp:410
@@ -559,19 +559,15 @@ msgid "Mouse Battery"
 msgstr ""
 
 #: soliddeviceengine.cpp:410
-msgid "Keyboard Battery"
-msgstr ""
-
-#: soliddeviceengine.cpp:411
-msgid "Keyboard Mouse Battery"
+msgid "Primary Battery"
 msgstr ""
 
 #: soliddeviceengine.cpp:411
 msgid "Camera Battery"
 msgstr ""
 
-#: soliddeviceengine.cpp:414
-msgid "Fully Charged"
+#: soliddeviceengine.cpp:411
+msgid "Keyboard Mouse Battery"
 msgstr ""
 
 #: soliddeviceengine.cpp:414
@@ -581,6 +577,10 @@ msgstr "Mengecas"
 
 #: soliddeviceengine.cpp:414
 msgid "Discharging"
+msgstr ""
+
+#: soliddeviceengine.cpp:414
+msgid "Fully Charged"
 msgstr ""
 
 #: soliddeviceengine.cpp:417 soliddeviceengine.cpp:436
@@ -688,15 +688,15 @@ msgid "Audio Device Type"
 msgstr ""
 
 #: soliddeviceengine.cpp:477
+msgid "Firewire Soundcard"
+msgstr ""
+
+#: soliddeviceengine.cpp:477
 msgid "Internal Soundcard"
 msgstr ""
 
 #: soliddeviceengine.cpp:477
 msgid "USB Soundcard"
-msgstr ""
-
-#: soliddeviceengine.cpp:477
-msgid "Firewire Soundcard"
 msgstr ""
 
 #: soliddeviceengine.cpp:478
@@ -721,10 +721,6 @@ msgid "Device Adapter"
 msgstr ""
 
 #: soliddeviceengine.cpp:494
-msgid "DVB Unknown"
-msgstr ""
-
-#: soliddeviceengine.cpp:494
 msgid "DVB Audio"
 msgstr ""
 
@@ -732,12 +728,16 @@ msgstr ""
 msgid "DVB Ca"
 msgstr ""
 
-#: soliddeviceengine.cpp:495
-msgid "DVB Demux"
+#: soliddeviceengine.cpp:494
+msgid "DVB Unknown"
 msgstr ""
 
 #: soliddeviceengine.cpp:495
 msgid "DVB DVR"
+msgstr ""
+
+#: soliddeviceengine.cpp:495
+msgid "DVB Demux"
 msgstr ""
 
 #: soliddeviceengine.cpp:495
