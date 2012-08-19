@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevcmake\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 03:36+0200\n"
+"POT-Creation-Date: 2012-08-19 03:18+0200\n"
 "PO-Revision-Date: 2010-06-12 01:20+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -17,48 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 "X-Generator: KBabel 1.11.4\n"
-
-#: cmakebuilddirchooser.cpp:36
-msgid "Configure a build directory"
-msgstr ""
-
-#: cmakebuilddirchooser.cpp:79
-#, kde-format
-msgid "Configure a build directory for %1"
-msgstr ""
-
-#: cmakebuilddirchooser.cpp:121
-msgid "You need to select a cmake binary."
-msgstr ""
-
-#: cmakebuilddirchooser.cpp:164
-msgid "You need to specify a build directory."
-msgstr ""
-
-#: cmakebuilddirchooser.cpp:171
-msgid "Using an already created build directory."
-msgstr ""
-
-#: cmakebuilddirchooser.cpp:182
-msgid "Creating a new build directory."
-msgstr ""
-
-#: cmakebuilddirchooser.cpp:188
-msgid "Build directory already configured."
-msgstr ""
-
-#: cmakebuilddirchooser.cpp:190
-#, kde-format
-msgid "This build directory is for %1, but the project directory is %2."
-msgstr ""
-
-#: cmakebuilddirchooser.cpp:193
-msgid "You may not select a relative build directory."
-msgstr ""
-
-#: cmakebuilddirchooser.cpp:195
-msgid "The selected build directory is not empty."
-msgstr ""
 
 #: cmakecodecompletionmodel.cpp:190
 msgid "INVALID"
@@ -108,13 +66,14 @@ msgstr "Arahan"
 
 #: cmakehelpdocumentation.cpp:33
 #, fuzzy
-msgid "Modules"
-msgstr "Modul"
+#| msgid "Variable"
+msgid "Variables"
+msgstr "Pembolehubah"
 
 #: cmakehelpdocumentation.cpp:33
 #, fuzzy
-msgid "Policies"
-msgstr "Polisi"
+msgid "Modules"
+msgstr "Modul"
 
 #: cmakehelpdocumentation.cpp:33
 #, fuzzy
@@ -123,12 +82,108 @@ msgstr "Ciri-ciri"
 
 #: cmakehelpdocumentation.cpp:33
 #, fuzzy
-#| msgid "Variable"
-msgid "Variables"
-msgstr "Pembolehubah"
+msgid "Policies"
+msgstr "Polisi"
 
 #: cmakehelpdocumentation.cpp:42
 msgid "CMake Content Page"
+msgstr ""
+
+#: parser/cmakeprojectvisitor.cpp:2222
+#, kde-format
+msgid "%1 is a deprecated command and should not be used"
+msgstr ""
+
+#: parser/cmakeprojectvisitor.cpp:2240
+msgid "Unfinished function. "
+msgstr ""
+
+#: settings/cmakecachemodel.cpp:49
+#, fuzzy
+msgid "Name"
+msgstr "Nama"
+
+#: settings/cmakecachemodel.cpp:50
+#, fuzzy
+msgid "Type"
+msgstr "Jenis"
+
+#: settings/cmakecachemodel.cpp:51
+#, fuzzy
+msgid "Value"
+msgstr "Nilai"
+
+#: settings/cmakecachemodel.cpp:52
+#, fuzzy
+msgid "Comment"
+msgstr "Komen"
+
+#. i18n: file: settings/cmakebuildsettings.ui:107
+#. i18n: ectx: property (title), widget (QGroupBox, advancedBox)
+#: settings/cmakecachemodel.cpp:53 rc.cpp:38
+#, fuzzy
+msgid "Advanced"
+msgstr "Lanjutan"
+
+#: settings/cmakepreferences.cpp:151
+#, kde-format
+msgid ""
+"Could not write CMake settings to file '%1'.\n"
+"Check that you have write access to it"
+msgstr ""
+
+#: settings/cmakepreferences.cpp:330
+#, kde-format
+msgid ""
+"The %1 directory is about to be removed in KDevelop's list.\n"
+"Do you want KDevelop to remove it in the file system as well?"
+msgstr ""
+
+#: settings/cmakepreferences.cpp:336
+#, kde-format
+msgid "Could not remove: %1.\n"
+msgstr ""
+
+#: cmakebuilddirchooser.cpp:36
+msgid "Configure a build directory"
+msgstr ""
+
+#: cmakebuilddirchooser.cpp:79
+#, kde-format
+msgid "Configure a build directory for %1"
+msgstr ""
+
+#: cmakebuilddirchooser.cpp:121
+msgid "You need to select a cmake binary."
+msgstr ""
+
+#: cmakebuilddirchooser.cpp:164
+msgid "You need to specify a build directory."
+msgstr ""
+
+#: cmakebuilddirchooser.cpp:171
+msgid "Using an already created build directory."
+msgstr ""
+
+#: cmakebuilddirchooser.cpp:182
+msgid "Creating a new build directory."
+msgstr ""
+
+#: cmakebuilddirchooser.cpp:188
+msgid "Build directory already configured."
+msgstr ""
+
+#: cmakebuilddirchooser.cpp:190
+#, kde-format
+msgid "This build directory is for %1, but the project directory is %2."
+msgstr ""
+
+#: cmakebuilddirchooser.cpp:193
+msgid "You may not select a relative build directory."
+msgstr ""
+
+#: cmakebuilddirchooser.cpp:195
+msgid "The selected build directory is not empty."
 msgstr ""
 
 #: cmakemanager.cpp:96
@@ -192,15 +247,6 @@ msgstr ""
 
 #: cmakemanager.cpp:1641
 msgid "Changes to CMakeLists failed, abort rename?"
-msgstr ""
-
-#: parser/cmakeprojectvisitor.cpp:2222
-#, kde-format
-msgid "%1 is a deprecated command and should not be used"
-msgstr ""
-
-#: parser/cmakeprojectvisitor.cpp:2240
-msgid "Unfinished function. "
 msgstr ""
 
 #: rc.cpp:1
@@ -286,13 +332,6 @@ msgstr "Komen:"
 msgid "Show Advanced"
 msgstr ""
 
-#. i18n: file: settings/cmakebuildsettings.ui:107
-#. i18n: ectx: property (title), widget (QGroupBox, advancedBox)
-#: rc.cpp:38 settings/cmakecachemodel.cpp:53
-#, fuzzy
-msgid "Advanced"
-msgstr "Lanjutan"
-
 #. i18n: file: settings/cmakebuildsettings.ui:116
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:41
@@ -315,45 +354,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:50
 msgid "Configure Environment"
-msgstr ""
-
-#: settings/cmakecachemodel.cpp:49
-#, fuzzy
-msgid "Name"
-msgstr "Nama"
-
-#: settings/cmakecachemodel.cpp:50
-#, fuzzy
-msgid "Type"
-msgstr "Jenis"
-
-#: settings/cmakecachemodel.cpp:51
-#, fuzzy
-msgid "Value"
-msgstr "Nilai"
-
-#: settings/cmakecachemodel.cpp:52
-#, fuzzy
-msgid "Comment"
-msgstr "Komen"
-
-#: settings/cmakepreferences.cpp:151
-#, kde-format
-msgid ""
-"Could not write CMake settings to file '%1'.\n"
-"Check that you have write access to it"
-msgstr ""
-
-#: settings/cmakepreferences.cpp:330
-#, kde-format
-msgid ""
-"The %1 directory is about to be removed in KDevelop's list.\n"
-"Do you want KDevelop to remove it in the file system as well?"
-msgstr ""
-
-#: settings/cmakepreferences.cpp:336
-#, kde-format
-msgid "Could not remove: %1.\n"
 msgstr ""
 
 #, fuzzy

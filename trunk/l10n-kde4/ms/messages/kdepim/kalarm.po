@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:21+0200\n"
+"POT-Creation-Date: 2012-08-19 05:40+0200\n"
 "PO-Revision-Date: 2005-10-06 11:21+0800\n"
 "Last-Translator: junetazawawi <junetazawawi@yahoo.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -14,6 +14,71 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
+
+#: deferdlg.cpp:44
+#, fuzzy
+#| msgid "Defer Alarm"
+msgctxt "@title:window"
+msgid "Defer Alarm"
+msgstr "Tunda penggera"
+
+#: deferdlg.cpp:46
+#, fuzzy
+#| msgid "Cancel &Deferral"
+msgctxt "@action:button"
+msgid "Cancel Deferral"
+msgstr "Batalkan  &Tunda"
+
+#: deferdlg.cpp:65
+#, fuzzy
+#| msgid "Defer the alarm until the specified time."
+msgctxt "@info:whatsthis"
+msgid "Defer the alarm until the specified time."
+msgstr "Tunda penggera hingga waktu yang dinyatakan"
+
+#: deferdlg.cpp:66
+#, fuzzy
+#| msgid "Cancel the deferred alarm. This does not affect future recurrences."
+msgctxt "@info:whatsthis"
+msgid "Cancel the deferred alarm. This does not affect future recurrences."
+msgstr ""
+"Batalkan penggera tertunda. Ini tidak ada kesan terhadap pengulangan pada "
+"masa depan."
+
+#: deferdlg.cpp:98
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "This refers to simple repetitions set up using the Simple Repetition "
+#| "dialog"
+#| msgid "Cannot defer past the alarm's next repetition (currently %1)"
+msgctxt "@info"
+msgid "Cannot defer past the alarm's next sub-repetition (currently %1)"
+msgstr ""
+"Tidak boleh  tunda melepasi pengulangan penggera berikutnya (sekarang %1)"
+
+#: deferdlg.cpp:102
+#, fuzzy, kde-format
+#| msgctxt "This refers to recurrences set up using the Recurrence tab"
+#| msgid "Cannot defer past the alarm's next recurrence (currently %1)"
+msgctxt "@info"
+msgid "Cannot defer past the alarm's next recurrence (currently %1)"
+msgstr ""
+"Tidak dapat tunda penggera melepasi pengulangan berikutnya (sekarang %1)"
+
+#: deferdlg.cpp:106
+#, fuzzy, kde-format
+#| msgid "Cannot defer past the alarm's next reminder (currently %1)"
+msgctxt "@info"
+msgid "Cannot defer past the alarm's next reminder (currently %1)"
+msgstr ""
+"Tidak boleh tunda melepasi penggera peringatan berikutnya (sekarang %1)"
+
+#: deferdlg.cpp:110
+#, fuzzy, kde-format
+#| msgid "Cannot defer reminder past the main alarm time (%1)"
+msgctxt "@info"
+msgid "Cannot defer reminder past the main alarm time (%1)"
+msgstr "Tidak dapat menunda peringatan melepasi waktu penggera utama (%1)"
 
 #: akonadimodel.cpp:450 eventlistmodel.cpp:313
 #, fuzzy
@@ -259,13 +324,6 @@ msgctxt "@info/plain"
 msgid "Failed to delete alarm."
 msgstr "Gagal melaksanakan arahan:"
 
-#: akonadiresourcecreator.cpp:109
-#, fuzzy
-#| msgid "Failed to send email"
-msgctxt "@info/plain"
-msgid "Failed to create new calendar resource"
-msgstr "Gagal menghantar e-mel"
-
 #: alarmcalendar.cpp:344 alarmcalendar.cpp:901
 #, fuzzy, kde-format
 #| msgid ""
@@ -372,35 +430,6 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: alarmtime.cpp:42 alarmtime.cpp:80
-msgctxt "@info/plain Alarm never occurs"
-msgid "Never"
-msgstr ""
-
-#: alarmtime.cpp:86
-#, fuzzy, no-c-format, kde-format
-#| msgctxt "n days"
-#| msgid " %1d "
-msgctxt "@info/plain n days"
-msgid "%1d"
-msgstr " %1d "
-
-#: alarmtime.cpp:95
-#, fuzzy, kde-format
-#| msgctxt "Undo-action: message"
-#| msgid "%1: %2"
-msgctxt "@info/plain hours:minutes"
-msgid "%1:%2"
-msgstr "%1: %2"
-
-#: alarmtime.cpp:98
-#, fuzzy, kde-format
-#| msgctxt "days hours:minutes"
-#| msgid " %1d %2:%3 "
-msgctxt "@info/plain days hours:minutes"
-msgid "%1d %2:%3"
-msgstr " %1d %2:%3 "
-
 #: alarmtimewidget.cpp:52
 #, fuzzy
 #| msgid ""
@@ -441,14 +470,14 @@ msgstr ""
 #, fuzzy
 #| msgid "&Defer to date/time:"
 msgctxt "@option:radio"
-msgid "At date/time:"
+msgid "Defer to date/time:"
 msgstr "&Tunda ke tarikh/waktu:"
 
 #: alarmtimewidget.cpp:108
 #, fuzzy
 #| msgid "&Defer to date/time:"
 msgctxt "@option:radio"
-msgid "Defer to date/time:"
+msgid "At date/time:"
 msgstr "&Tunda ke tarikh/waktu:"
 
 #: alarmtimewidget.cpp:110
@@ -783,109 +812,6 @@ msgctxt "@info:whatsthis"
 msgid "Set up an additional alarm repetition"
 msgstr "Setkan pengulangan penggera tambahan"
 
-#: calendarmigrator.cpp:278 collectionmodel.cpp:939
-#: resources/alarmresources.cpp:135
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Active Alarms"
-msgstr "Aktifkan semula penggera"
-
-#: calendarmigrator.cpp:286 collectionmodel.cpp:941
-#: resources/alarmresources.cpp:145
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Archived Alarms"
-msgstr "Aktifkan semula penggera"
-
-#: calendarmigrator.cpp:294 collectionmodel.cpp:943
-#: resources/alarmresources.cpp:140
-#, fuzzy
-#| msgid "Alarm Templates"
-msgctxt "@info/plain"
-msgid "Alarm Templates"
-msgstr "Templat penggera"
-
-#: calendarmigrator.cpp:329
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot open audio file:\n"
-#| "%1"
-msgctxt "@info/plain"
-msgid "Failed to create default calendar <resource>%1</resource>"
-msgstr ""
-"Tidak dapat membuka fail audio:\n"
-"%1"
-
-#: calendarmigrator.cpp:331
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot open audio file:\n"
-#| "%1"
-msgctxt "@info/plain 'Import Alarms' is the name of a menu option"
-msgid ""
-"Failed to convert old configuration for calendar <resource>%1</resource>. "
-"Please use Import Alarms to load its alarms into a new or existing calendar."
-msgstr ""
-"Tidak dapat membuka fail audio:\n"
-"%1"
-
-#: calendarmigrator.cpp:333
-#, fuzzy, kde-format
-#| msgid "Action"
-msgctxt "@info/plain File path or URL"
-msgid "Location: %1"
-msgstr "Tindakan"
-
-#: calendarmigrator.cpp:335
-#, fuzzy, kde-format
-#| msgid ""
-#| "%1\n"
-#| "Are you sure you want to save your changes?"
-msgctxt "@info"
-msgid "<para>%1</para><para>%2</para>"
-msgstr ""
-"%1\n"
-"Anda pasti hendak menyimpan perubahan yang telah dibuat?"
-
-#: calendarmigrator.cpp:337
-#, fuzzy, kde-format
-#| msgid ""
-#| "%1\n"
-#| "Are you sure you want to save your changes?"
-msgctxt "@info"
-msgid "<para>%1</para><para>%2<nl/>(%3)</para>"
-msgstr ""
-"%1\n"
-"Anda pasti hendak menyimpan perubahan yang telah dibuat?"
-
-#: calendarmigrator.cpp:443
-#, fuzzy
-#| msgid "Invalid time"
-msgctxt "@info/plain"
-msgid "Invalid collection"
-msgstr "Waktu tidak sah"
-
-#: calendarmigrator.cpp:457
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot open audio file:\n"
-#| "%1"
-msgctxt "@info/plain"
-msgid "Failed to update format of calendar <resource>%1</resource>"
-msgstr ""
-"Tidak dapat membuka fail audio:\n"
-"%1"
-
-#: calendarmigrator.cpp:735
-msgctxt "@info/plain"
-msgid "New configuration timed out"
-msgstr ""
-
-#: calendarmigrator.cpp:748
-msgctxt "@info/plain"
-msgid "New configuration was corrupt"
-msgstr ""
-
 #: collectionmodel.cpp:362 resourcemodelview.cpp:422
 #, fuzzy
 msgctxt "@info"
@@ -950,6 +876,28 @@ msgid "<para>%1</para><para>Please select a new default calendar.</para>"
 msgstr ""
 "%1\n"
 "Setkan ia dalam dialog keutamaan."
+
+#: collectionmodel.cpp:939 resources/alarmresources.cpp:135
+#: calendarmigrator.cpp:278
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Active Alarms"
+msgstr "Aktifkan semula penggera"
+
+#: collectionmodel.cpp:941 resources/alarmresources.cpp:145
+#: calendarmigrator.cpp:286
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Archived Alarms"
+msgstr "Aktifkan semula penggera"
+
+#: collectionmodel.cpp:943 resources/alarmresources.cpp:140
+#: calendarmigrator.cpp:294
+#, fuzzy
+#| msgid "Alarm Templates"
+msgctxt "@info/plain"
+msgid "Alarm Templates"
+msgstr "Templat penggera"
 
 #: collectionmodel.cpp:1202
 #, fuzzy
@@ -1042,71 +990,6 @@ msgstr "Parameter %1 tidak sah"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
 msgstr "%1 tidak serasi dengan %2"
-
-#: deferdlg.cpp:44
-#, fuzzy
-#| msgid "Defer Alarm"
-msgctxt "@title:window"
-msgid "Defer Alarm"
-msgstr "Tunda penggera"
-
-#: deferdlg.cpp:46
-#, fuzzy
-#| msgid "Cancel &Deferral"
-msgctxt "@action:button"
-msgid "Cancel Deferral"
-msgstr "Batalkan  &Tunda"
-
-#: deferdlg.cpp:65
-#, fuzzy
-#| msgid "Defer the alarm until the specified time."
-msgctxt "@info:whatsthis"
-msgid "Defer the alarm until the specified time."
-msgstr "Tunda penggera hingga waktu yang dinyatakan"
-
-#: deferdlg.cpp:66
-#, fuzzy
-#| msgid "Cancel the deferred alarm. This does not affect future recurrences."
-msgctxt "@info:whatsthis"
-msgid "Cancel the deferred alarm. This does not affect future recurrences."
-msgstr ""
-"Batalkan penggera tertunda. Ini tidak ada kesan terhadap pengulangan pada "
-"masa depan."
-
-#: deferdlg.cpp:98
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "This refers to simple repetitions set up using the Simple Repetition "
-#| "dialog"
-#| msgid "Cannot defer past the alarm's next repetition (currently %1)"
-msgctxt "@info"
-msgid "Cannot defer past the alarm's next sub-repetition (currently %1)"
-msgstr ""
-"Tidak boleh  tunda melepasi pengulangan penggera berikutnya (sekarang %1)"
-
-#: deferdlg.cpp:102
-#, fuzzy, kde-format
-#| msgctxt "This refers to recurrences set up using the Recurrence tab"
-#| msgid "Cannot defer past the alarm's next recurrence (currently %1)"
-msgctxt "@info"
-msgid "Cannot defer past the alarm's next recurrence (currently %1)"
-msgstr ""
-"Tidak dapat tunda penggera melepasi pengulangan berikutnya (sekarang %1)"
-
-#: deferdlg.cpp:106
-#, fuzzy, kde-format
-#| msgid "Cannot defer past the alarm's next reminder (currently %1)"
-msgctxt "@info"
-msgid "Cannot defer past the alarm's next reminder (currently %1)"
-msgstr ""
-"Tidak boleh tunda melepasi penggera peringatan berikutnya (sekarang %1)"
-
-#: deferdlg.cpp:110
-#, fuzzy, kde-format
-#| msgid "Cannot defer reminder past the main alarm time (%1)"
-msgctxt "@info"
-msgid "Cannot defer reminder past the main alarm time (%1)"
-msgstr "Tidak dapat menunda peringatan melepasi waktu penggera utama (%1)"
 
 #: editdlg.cpp:98
 #, fuzzy, kde-format
@@ -1407,30 +1290,30 @@ msgstr "Sahkan pengakuan"
 
 #: editdlgtypes.cpp:144
 #, fuzzy
-#| msgid "Edit Alarm Template"
-msgctxt "@title:window"
-msgid "Edit Display Alarm Template"
-msgstr "Edit templat penggera"
-
-#: editdlgtypes.cpp:144
-#, fuzzy
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Display Alarm Template"
 msgstr "Templat penggera baru"
 
-#: editdlgtypes.cpp:145
+#: editdlgtypes.cpp:144
 #, fuzzy
-#| msgid "Display Alarms"
+#| msgid "Edit Alarm Template"
 msgctxt "@title:window"
-msgid "Edit Display Alarm"
-msgstr "Paparkan penggera"
+msgid "Edit Display Alarm Template"
+msgstr "Edit templat penggera"
 
 #: editdlgtypes.cpp:145
 #, fuzzy
 #| msgid "Display Alarms"
 msgctxt "@title:window"
 msgid "New Display Alarm"
+msgstr "Paparkan penggera"
+
+#: editdlgtypes.cpp:145
+#, fuzzy
+#| msgid "Display Alarms"
+msgctxt "@title:window"
+msgid "Edit Display Alarm"
 msgstr "Paparkan penggera"
 
 #: editdlgtypes.cpp:157
@@ -1601,30 +1484,30 @@ msgstr "Laksanakan dalam tetingkap terminal"
 
 #: editdlgtypes.cpp:756
 #, fuzzy
-#| msgid "Edit Alarm Template"
-msgctxt "@title:window"
-msgid "Edit Command Alarm Template"
-msgstr "Edit templat penggera"
-
-#: editdlgtypes.cpp:756
-#, fuzzy
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Command Alarm Template"
 msgstr "Templat penggera baru"
 
-#: editdlgtypes.cpp:757
+#: editdlgtypes.cpp:756
 #, fuzzy
-#| msgid "Command Alarms"
+#| msgid "Edit Alarm Template"
 msgctxt "@title:window"
-msgid "Edit Command Alarm"
-msgstr "Penggera Arahan"
+msgid "Edit Command Alarm Template"
+msgstr "Edit templat penggera"
 
 #: editdlgtypes.cpp:757
 #, fuzzy
 #| msgid "Command Alarms"
 msgctxt "@title:window"
 msgid "New Command Alarm"
+msgstr "Penggera Arahan"
+
+#: editdlgtypes.cpp:757
+#, fuzzy
+#| msgid "Command Alarms"
+msgctxt "@title:window"
+msgid "Edit Command Alarm"
 msgstr "Penggera Arahan"
 
 #: editdlgtypes.cpp:765
@@ -1725,30 +1608,30 @@ msgstr "Salin e-mel kepada diri sendiri"
 
 #: editdlgtypes.cpp:1059
 #, fuzzy
-#| msgid "Edit Alarm Template"
-msgctxt "@title:window"
-msgid "Edit Email Alarm Template"
-msgstr "Edit templat penggera"
-
-#: editdlgtypes.cpp:1059
-#, fuzzy
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Email Alarm Template"
 msgstr "Templat penggera baru"
 
-#: editdlgtypes.cpp:1060
+#: editdlgtypes.cpp:1059
 #, fuzzy
-#| msgid "Email Alarms"
+#| msgid "Edit Alarm Template"
 msgctxt "@title:window"
-msgid "Edit Email Alarm"
-msgstr "Penggera E-mel"
+msgid "Edit Email Alarm Template"
+msgstr "Edit templat penggera"
 
 #: editdlgtypes.cpp:1060
 #, fuzzy
 #| msgid "Email Alarms"
 msgctxt "@title:window"
 msgid "New Email Alarm"
+msgstr "Penggera E-mel"
+
+#: editdlgtypes.cpp:1060
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@title:window"
+msgid "Edit Email Alarm"
 msgstr "Penggera E-mel"
 
 #: editdlgtypes.cpp:1068
@@ -1962,24 +1845,17 @@ msgstr "Pilih fail yang hendak dilampirkan"
 
 #: editdlgtypes.cpp:1512
 #, fuzzy
-#| msgid "Edit Alarm Template"
-msgctxt "@title:window"
-msgid "Edit Audio Alarm Template"
-msgstr "Edit templat penggera"
-
-#: editdlgtypes.cpp:1512
-#, fuzzy
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Audio Alarm Template"
 msgstr "Templat penggera baru"
 
-#: editdlgtypes.cpp:1513
+#: editdlgtypes.cpp:1512
 #, fuzzy
-#| msgid "Edit Alarm"
+#| msgid "Edit Alarm Template"
 msgctxt "@title:window"
-msgid "Edit Audio Alarm"
-msgstr "Edit penggera"
+msgid "Edit Audio Alarm Template"
+msgstr "Edit templat penggera"
 
 #: editdlgtypes.cpp:1513
 #, fuzzy
@@ -1987,6 +1863,13 @@ msgstr "Edit penggera"
 msgctxt "@title:window"
 msgid "New Audio Alarm"
 msgstr "Penggera E-mel"
+
+#: editdlgtypes.cpp:1513
+#, fuzzy
+#| msgid "Edit Alarm"
+msgctxt "@title:window"
+msgid "Edit Audio Alarm"
+msgstr "Edit penggera"
 
 #: editdlgtypes.cpp:1730
 #, fuzzy
@@ -2023,217 +1906,6 @@ msgstr "Masukkan kandungan skrip yang hendak dilaksana"
 msgctxt "@info:whatsthis"
 msgid "List of scheduled alarms"
 msgstr "Senarai penggera terjadual"
-
-#: find.cpp:137
-#, fuzzy
-#| msgid "Alarm Type"
-msgctxt "@title:group"
-msgid "Alarm Type"
-msgstr "Jenis penggera"
-
-#: find.cpp:145
-#, fuzzy
-#| msgid "Acti&ve"
-msgctxt "@option:check Alarm type"
-msgid "Active"
-msgstr "&Aktif"
-
-#: find.cpp:147
-#, fuzzy
-#| msgid "Check to include active alarms in the search."
-msgctxt "@info:whatsthis"
-msgid "Check to include active alarms in the search."
-msgstr "Semak untuk memasukkan  penggera aktif dalam carian."
-
-#: find.cpp:150
-#, fuzzy
-msgctxt "@option:check Alarm type"
-msgid "Archived"
-msgstr "&Aktif"
-
-#: find.cpp:152
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid ""
-"Check to include archived alarms in the search. This option is only "
-"available if archived alarms are currently being displayed."
-msgstr ""
-"Semak untuk memasukkan penggera luput dalam carian.  Opsyen ini hanya boleh "
-"didapatkan jika penggera luput sedang dipapar."
-
-#: find.cpp:160
-#, fuzzy
-#| msgid "Text"
-msgctxt "@option:check Alarm action = text display"
-msgid "Text"
-msgstr "Teks"
-
-#: find.cpp:162
-#, fuzzy
-#| msgid "Check to include text message alarms in the search."
-msgctxt "@info:whatsthis"
-msgid "Check to include text message alarms in the search."
-msgstr "Semak untuk memasukkan penggera mesej teks dalam carian."
-
-#: find.cpp:165
-#, fuzzy
-msgctxt "@option:check Alarm action = file display"
-msgid "File"
-msgstr "Fai&l"
-
-#: find.cpp:167
-#, fuzzy
-#| msgid "Check to include file alarms in the search."
-msgctxt "@info:whatsthis"
-msgid "Check to include file alarms in the search."
-msgstr "Semak untuk memasukkan penggera fail dalam carian."
-
-#: find.cpp:170
-#, fuzzy
-#| msgid "Co&mmand"
-msgctxt "@option:check Alarm action"
-msgid "Command"
-msgstr "&Arahan"
-
-#: find.cpp:172
-#, fuzzy
-#| msgid "Check to include command alarms in the search."
-msgctxt "@info:whatsthis"
-msgid "Check to include command alarms in the search."
-msgstr "Semak untuk memasukkan penggera arahan dalam carian."
-
-#: find.cpp:175
-#, fuzzy
-#| msgid "Email"
-msgctxt "@option:check Alarm action"
-msgid "Email"
-msgstr "E-mel"
-
-#: find.cpp:177
-#, fuzzy
-#| msgid "Check to include email alarms in the search."
-msgctxt "@info:whatsthis"
-msgid "Check to include email alarms in the search."
-msgstr "Semak untuk memasukkan penggera e-mel dalam carian."
-
-#: find.cpp:180
-msgctxt "@option:check Alarm action"
-msgid "Audio"
-msgstr ""
-
-#: find.cpp:182
-#, fuzzy
-#| msgid "Check to include email alarms in the search."
-msgctxt "@info:whatsthis"
-msgid "Check to include audio alarms in the search."
-msgstr "Semak untuk memasukkan penggera e-mel dalam carian."
-
-#: find.cpp:283
-#, fuzzy
-#| msgid "No alarm types are selected to search"
-msgctxt "@info"
-msgid "No alarm types are selected to search"
-msgstr "Tiada jenis penggera dipilih dalam carian"
-
-#: find.cpp:439
-#, fuzzy
-#| msgid ""
-#| "End of alarm list reached.\n"
-#| "Continue from the beginning?"
-msgctxt "@info"
-msgid ""
-"<para>End of alarm list reached.</para><para>Continue from the beginning?</"
-"para>"
-msgstr ""
-"Senarai penggera telah sampai ke hujung.\n"
-"Teruskan dari awal?"
-
-#: find.cpp:440
-#, fuzzy
-#| msgid ""
-#| "Beginning of alarm list reached.\n"
-#| "Continue from the end?"
-msgctxt "@info"
-msgid ""
-"<para>Beginning of alarm list reached.</para><para>Continue from the end?</"
-"para>"
-msgstr ""
-"Permulaan senarai penggera telah dicapai.\n"
-"Teruskan dari hujung?"
-
-#: fontcolour.cpp:71
-#, fuzzy
-#| msgid "&Foreground color:"
-msgctxt "@label:listbox"
-msgid "Foreground color:"
-msgstr "Warna &latar depan:"
-
-#: fontcolour.cpp:76
-#, fuzzy
-#| msgid "Select the alarm message foreground color"
-msgctxt "@info:whatsthis"
-msgid "Select the alarm message foreground color"
-msgstr "Pilih warna latar depan mesej penggera"
-
-#: fontcolour.cpp:84
-#, fuzzy
-#| msgid "&Background color:"
-msgctxt "@label:listbox"
-msgid "Background color:"
-msgstr "Warna &latar belakang"
-
-#: fontcolour.cpp:89
-#, fuzzy
-#| msgid "Select the alarm message background color"
-msgctxt "@info:whatsthis"
-msgid "Select the alarm message background color"
-msgstr "Pilih warna latar belakang mesej penggera"
-
-#: fontcolour.cpp:97
-#, fuzzy
-#| msgid "Use &default font"
-msgctxt "@option:check"
-msgid "Use default font"
-msgstr "Gunakan fon &piawai"
-
-#: fontcolour.cpp:100
-#, fuzzy
-#| msgid ""
-#| "Check to use the default font current at the time the alarm is displayed."
-msgctxt "@info:whatsthis"
-msgid ""
-"Check to use the default font current at the time the alarm is displayed."
-msgstr ""
-"Semak untuk menggunakan fon piawai semasa pada masa penggera dipaparkan."
-
-#: fontcolour.h:39
-msgid "Requested font"
-msgstr "Fon diminta"
-
-#: fontcolourbutton.cpp:43
-#, fuzzy
-#| msgid "Font && Co&lor..."
-msgctxt "@action:button"
-msgid "Font && Color..."
-msgstr "Fon &&  &Warna..."
-
-#: fontcolourbutton.cpp:47
-#, fuzzy
-#| msgid ""
-#| "Choose the font, and foreground and background color, for the alarm "
-#| "message."
-msgctxt "@info:whatsthis"
-msgid ""
-"Choose the font, and foreground and background color, for the alarm message."
-msgstr ""
-"Pilih warna bagi fon,  latar depan dan latar belakang untuk mesej penggera."
-
-#: fontcolourbutton.cpp:71
-#, fuzzy
-#| msgid "Choose Alarm Font & Color"
-msgctxt "@title:window"
-msgid "Choose Alarm Font & Color"
-msgstr "Pilih Fon dan Warna Penggera"
 
 #: functions.cpp:181
 #, fuzzy
@@ -2502,76 +2174,79 @@ msgid ""
 "para><para>Do you wish to update the calendar?</para>"
 msgstr ""
 
-#: kalarmapp.cpp:346
-#, kde-format
-msgctxt "@info:shell"
-msgid "%1: Event <resource>%2</resource> not found, or not unique"
-msgstr ""
+#: fontcolour.cpp:71
+#, fuzzy
+#| msgid "&Foreground color:"
+msgctxt "@label:listbox"
+msgid "Foreground color:"
+msgstr "Warna &latar depan:"
 
-#: kalarmapp.cpp:348
-#, fuzzy, kde-format
-msgctxt "@info:shell"
-msgid "%1: Event <resource>%2</resource> not found"
-msgstr "Paparkan Seting"
+#: fontcolour.cpp:76
+#, fuzzy
+#| msgid "Select the alarm message foreground color"
+msgctxt "@info:whatsthis"
+msgid "Select the alarm message foreground color"
+msgstr "Pilih warna latar depan mesej penggera"
 
-#: kalarmapp.cpp:376 kalarmapp.cpp:378
-#, kde-format
-msgctxt "@info:shell"
-msgid "%1: Event <resource>%2</resource> not found, or not editable"
-msgstr ""
+#: fontcolour.cpp:84
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "@label:listbox"
+msgid "Background color:"
+msgstr "Warna &latar belakang"
 
-#: kalarmapp.cpp:557
-msgctxt "@info"
-msgid ""
-"Time zones are not accessible:<nl/>KAlarm will use the UTC time zone.<nl/"
-"><nl/>(The KDE time zone service is not available:<nl/>check that "
-"<application>ktimezoned</application> is installed.)"
-msgstr ""
+#: fontcolour.cpp:89
+#, fuzzy
+#| msgid "Select the alarm message background color"
+msgctxt "@info:whatsthis"
+msgid "Select the alarm message background color"
+msgstr "Pilih warna latar belakang mesej penggera"
 
-#: kalarmapp.cpp:634
+#: fontcolour.cpp:97
+#, fuzzy
+#| msgid "Use &default font"
+msgctxt "@option:check"
+msgid "Use default font"
+msgstr "Gunakan fon &piawai"
+
+#: fontcolour.cpp:100
 #, fuzzy
 #| msgid ""
-#| "Quitting will disable alarms\n"
-#| "(once any alarm message windows are closed)."
-msgctxt "@info"
+#| "Check to use the default font current at the time the alarm is displayed."
+msgctxt "@info:whatsthis"
 msgid ""
-"Quitting will disable alarms (once any alarm message windows are closed)."
+"Check to use the default font current at the time the alarm is displayed."
 msgstr ""
-"Keluar akan menyahaktifkan penggera\n"
-"(apabila sebarang mesej penggera tetingkap ditutup)."
+"Semak untuk menggunakan fon piawai semasa pada masa penggera dipaparkan."
 
-#: kalarmapp.cpp:642
-msgctxt "@info"
-msgid "Quitting will cancel the scheduled Wake from Suspend."
-msgstr ""
+#: fontcolour.h:39
+msgid "Requested font"
+msgstr "Fon diminta"
 
-#: kalarmapp.cpp:654
-msgctxt "@info"
+#: fontcolourbutton.cpp:43
+#, fuzzy
+#| msgid "Font && Co&lor..."
+msgctxt "@action:button"
+msgid "Font && Color..."
+msgstr "Fon &&  &Warna..."
+
+#: fontcolourbutton.cpp:47
+#, fuzzy
+#| msgid ""
+#| "Choose the font, and foreground and background color, for the alarm "
+#| "message."
+msgctxt "@info:whatsthis"
 msgid ""
-"Do you want to start KAlarm at login?<nl/>(Note that alarms will be disabled "
-"if KAlarm is not started.)"
+"Choose the font, and foreground and background color, for the alarm message."
 msgstr ""
+"Pilih warna bagi fon,  latar depan dan latar belakang untuk mesej penggera."
 
-#: kalarmapp.cpp:2126
+#: fontcolourbutton.cpp:71
 #, fuzzy
-#| msgid "Error creating temporary script file"
-msgctxt "@info"
-msgid "Error creating temporary script file"
-msgstr "Ralat semasa mencipta fail skrip sementara"
-
-#: kalarmapp.cpp:2214
-#, fuzzy
-#| msgid "Pre-alarm action:"
-msgctxt "@info"
-msgid "Pre-alarm action:"
-msgstr "Tindakan prapenggera:"
-
-#: kalarmapp.cpp:2220
-#, fuzzy
-#| msgid "Post-alarm action:"
-msgctxt "@info"
-msgid "Post-alarm action:"
-msgstr "Tindakan pascapenggera:"
+#| msgid "Choose Alarm Font & Color"
+msgctxt "@title:window"
+msgid "Choose Alarm Font & Color"
+msgstr "Pilih Fon dan Warna Penggera"
 
 #: kamail.cpp:91
 #, fuzzy
@@ -2712,1037 +2387,6 @@ msgstr "Gagal menghantar e-mel"
 msgctxt "@info"
 msgid "Error sending email"
 msgstr "Ralat mencipta semula penggera"
-
-#: latecancel.cpp:44
-#, fuzzy
-#| msgid "Cancel if late"
-msgctxt "@option:check"
-msgid "Cancel if late"
-msgstr "Batalkan jika lewat"
-
-#: latecancel.cpp:45
-#, fuzzy
-#| msgid "Auto-close window after this time"
-msgctxt "@option:check"
-msgid "Auto-close window after this time"
-msgstr "Autotutup tetingkap selepas waktu ini"
-
-#: latecancel.cpp:46
-#, fuzzy
-msgctxt "@option:check"
-msgid "Auto-close window after late-cancellation time"
-msgstr "Autotutup tetingkap selepas waktu pembatalan lewat"
-
-#: latecancel.cpp:56
-#, fuzzy
-#| msgid ""
-#| "If checked, the alarm will be canceled if it cannot be triggered within "
-#| "the specified period after its scheduled time. Possible reasons for not "
-#| "triggering include your being logged off, X not running, or the alarm "
-#| "daemon not running.\n"
-#| "\n"
-#| "If unchecked, the alarm will be triggered at the first opportunity after "
-#| "its scheduled time, regardless of how late it is."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>If checked, the alarm will be canceled if it cannot be triggered "
-"within the specified period after its scheduled time. Possible reasons for "
-"not triggering include your being logged off, X not running, or "
-"<application>KAlarm</application> not running.</para><para>If unchecked, the "
-"alarm will be triggered at the first opportunity after its scheduled time, "
-"regardless of how late it is.</para>"
-msgstr ""
-"Jika disemak, penggera akan dibatalkan jika ia tidak dapat dicetus dalam "
-"tempoh masa tertentu selepas waktu yang dijadualkan. Sebab yang mungkin "
-"untuk tidak mencetus termasuk anda tidak dilog keluar, ,X tidak berjalan, "
-"atau daemon penggera tidak berjalan.\n"
-"\n"
-"Jika tidak disemak, penggera akan dicetus pada peluang pertama selepas waktu "
-"yang dijadualkan, tanpa menghiraukan keterlewatan."
-
-#: latecancel.cpp:82
-#, fuzzy
-#| msgctxt "Cancel if late by 10 minutes"
-#| msgid "Ca&ncel if late by"
-msgctxt "@option:check Cancel if late by 10 minutes"
-msgid "Cancel if late by"
-msgstr "&Batalkan jika lewat sebanyak"
-
-#: latecancel.cpp:83
-#, fuzzy
-#| msgid "Enter how late will cause the alarm to be canceled"
-msgctxt "@info:whatsthis"
-msgid "Enter how late will cause the alarm to be canceled"
-msgstr "Masukkan jangka masa lewat yang menyebabkan penggera dibatalkan"
-
-#: latecancel.cpp:99
-#, fuzzy
-#| msgid ""
-#| "Automatically close the alarm window after the expiry of the late-"
-#| "cancelation period"
-msgctxt "@info:whatsthis"
-msgid ""
-"Automatically close the alarm window after the expiry of the late-"
-"cancellation period"
-msgstr ""
-"Menutup tetingkap penggera secara automatik selepas luput tempoh pembatalan "
-"lewat"
-
-#: lib/filedialog.cpp:60
-#, fuzzy
-#| msgid "Failed to open file"
-msgctxt "@option:check"
-msgid "Append to existing file"
-msgstr "Gagal membuka fail"
-
-#: lib/kalocale.cpp:51
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Monday"
-msgstr "Hari ini"
-
-#: lib/kalocale.cpp:52
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Tuesday"
-msgstr "Hari ini"
-
-#: lib/kalocale.cpp:53
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Wednesday"
-msgstr "Hari ini"
-
-#: lib/kalocale.cpp:54
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Thursday"
-msgstr "Hari ini"
-
-#: lib/kalocale.cpp:55
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Friday"
-msgstr "hari"
-
-#: lib/kalocale.cpp:56
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Saturday"
-msgstr "hari ini"
-
-#: lib/kalocale.cpp:57
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Sunday"
-msgstr "Bunyi"
-
-#: lib/shellprocess.cpp:158
-#, fuzzy
-#| msgid "Failed to execute command (shell access not authorized):"
-msgctxt "@info"
-msgid "Failed to execute command (shell access not authorized)"
-msgstr "Gagal melaksanakan arahan (akses shell tidak sah)"
-
-#: lib/shellprocess.cpp:161
-#, fuzzy
-#| msgid "Failed to execute command:"
-msgctxt "@info"
-msgid "Failed to execute command"
-msgstr "Gagal melaksanakan arahan:"
-
-#: lib/shellprocess.cpp:163
-#, fuzzy
-#| msgid "Command execution error:"
-msgctxt "@info"
-msgid "Command execution error"
-msgstr "Ralat melaksanakan arahan:"
-
-#: lib/shellprocess.cpp:166
-#, fuzzy, kde-format
-#| msgid ""
-#| "Command executed:\n"
-#| "%1"
-msgctxt "@info"
-msgid "Command exit code: %1"
-msgstr ""
-"Arahan terlaksana:\n"
-"%1"
-
-#: lib/timeedit.cpp:177
-#, fuzzy
-msgctxt "@item:inlistbox Morning, as in 2am"
-msgid "am"
-msgstr "Nama"
-
-#: lib/timeedit.cpp:196
-msgctxt "@item:inlistbox Afternoon, as in 2pm"
-msgid "pm"
-msgstr ""
-
-#: lib/timeperiod.cpp:41
-#, fuzzy
-#| msgid "hours/minutes"
-msgctxt "@item:inlistbox Time units"
-msgid "minutes"
-msgstr "jam/minit"
-
-#: lib/timeperiod.cpp:42
-#, fuzzy
-#| msgid "hours/minutes"
-msgctxt "@item:inlistbox Time units"
-msgid "hours/minutes"
-msgstr "jam/minit"
-
-#: lib/timeperiod.cpp:43
-#, fuzzy
-#| msgid "days"
-msgctxt "@item:inlistbox Time units"
-msgid "days"
-msgstr "hari"
-
-#: lib/timeperiod.cpp:44
-#, fuzzy
-#| msgid "weeks"
-msgctxt "@item:inlistbox Time units"
-msgid "weeks"
-msgstr "minggu"
-
-#: lib/timespinbox.cpp:77
-#, fuzzy
-#| msgid ""
-#| "Press the Shift key while clicking the spin buttons to adjust the time by "
-#| "a larger step (6 hours / 5 minutes)."
-msgctxt "@info:whatsthis"
-msgid ""
-"Press the Shift key while clicking the spin buttons to adjust the time by a "
-"larger step (6 hours / 5 minutes)."
-msgstr ""
-"Tekan kekunci Shift semasa mengklik butang putar untuk melaraskan waktu "
-"dengan langkah lebih besar (6 jam / 5 minit)."
-
-#: main.cpp:39
-msgid "KAlarm"
-msgstr "KAlarm"
-
-#: main.cpp:40
-msgid "Personal alarm message, command and email scheduler for KDE"
-msgstr "Mesej penggera peribadi, arahan dan penjadual e-mel untuk KDE"
-
-#: main.cpp:42
-msgid "Copyright 2001-2012, David Jarvie"
-msgstr ""
-
-#: main.cpp:50
-msgid "Prompt for confirmation when alarm is acknowledged"
-msgstr "Gesa  pengesahan apabila penggera diakui"
-
-#: main.cpp:52
-msgid "Attach file to email (repeat as needed)"
-msgstr "Lampirkan fail pada e-mel (ulang bila perlu)"
-
-#: main.cpp:53
-msgid "Auto-close alarm window after --late-cancel period"
-msgstr "Autotutup tetingkap penggera selepas tempoh masa pembatalan lewat"
-
-#: main.cpp:54
-msgid "Blind copy email to self"
-msgstr "Buat salinan buta tuli e-mel kepada diri sendiri"
-
-#: main.cpp:56
-msgid "Beep when message is displayed"
-msgstr "Bipkan apabila mesej dipaparkan"
-
-#: main.cpp:59
-msgid "Message background color (name or hex 0xRRGGBB)"
-msgstr "Warna latar belakang mesej (nama atau hex 0xRRGGBB)"
-
-#: main.cpp:62
-msgid "Message foreground color (name or hex 0xRRGGBB)"
-msgstr "Warna latar depan mesej (nama atau hex 0xRRGGBB)"
-
-#: main.cpp:63
-msgid "Cancel alarm with the specified event ID"
-msgstr "Batalkan penggera bersama ID peristiwa yang dinyatakan"
-
-#: main.cpp:65
-msgid "Disable the alarm"
-msgstr "Nyahaktifkan penggera "
-
-#: main.cpp:66
-#, fuzzy
-#| msgid "Disable the alarm"
-msgid "Disable monitoring of all alarms"
-msgstr "Nyahaktifkan penggera "
-
-#: main.cpp:68
-msgid "Execute a shell command line"
-msgstr "Laksanakan baris arahan shell"
-
-#: main.cpp:70
-msgid "Command line to generate alarm message text"
-msgstr ""
-
-#: main.cpp:71
-#, fuzzy
-msgid "Display the alarm edit dialog to edit the specified alarm"
-msgstr "Ulang penggera sehingga tarikh/waktu yang dinyatakan"
-
-#: main.cpp:72
-#, fuzzy
-msgid "Display the alarm edit dialog to edit a new display alarm"
-msgstr "Paparkan mesej penggera sekarang"
-
-#: main.cpp:73
-#, fuzzy
-msgid "Display the alarm edit dialog to edit a new command alarm"
-msgstr "Paparkan mesej penggera sekarang"
-
-#: main.cpp:74
-#, fuzzy
-msgid "Display the alarm edit dialog to edit a new email alarm"
-msgstr "Paparkan mesej penggera sekarang"
-
-#: main.cpp:75
-#, fuzzy
-msgid "Display the alarm edit dialog to edit a new audio alarm"
-msgstr "Paparkan mesej penggera sekarang"
-
-#: main.cpp:76
-msgid "Display the alarm edit dialog, preset with a template"
-msgstr ""
-
-#: main.cpp:78
-msgid "File to display"
-msgstr "Fail yang hendak dipaparkan"
-
-#: main.cpp:80
-msgid "KMail identity to use as sender of email"
-msgstr "Identiti KMail digunakan sebagai penghantar e-mel"
-
-#: main.cpp:82
-msgid "Interval between alarm repetitions"
-msgstr "Jeda masa antara pengulangan penggera"
-
-#: main.cpp:84
-msgid "Show alarm as an event in KOrganizer"
-msgstr ""
-
-#: main.cpp:86
-msgid "Cancel alarm if more than 'period' late when triggered"
-msgstr "Batalkan penggera jika melebihi 'jangka masa' lewat semasa dicetus"
-
-#: main.cpp:87
-#, fuzzy
-#| msgid "List of scheduled alarms"
-msgid "Output list of scheduled alarms to stdout"
-msgstr "Senarai penggera terjadual"
-
-#: main.cpp:89
-msgid "Repeat alarm at every login"
-msgstr "Ulang penggera setiap kali log masuk"
-
-#: main.cpp:91
-msgid "Send an email to the given address (repeat as needed)"
-msgstr "Hantar e-mel kepada alamat diberi (ulang jika perlu)"
-
-#: main.cpp:93
-msgid "Audio file to play once"
-msgstr "Fail audio untuk disiarkan satu kali"
-
-#: main.cpp:95
-msgid "Audio file to play repeatedly"
-msgstr "Fail audio untuk disiarkan berulang-ulang"
-
-#: main.cpp:96
-msgid "Specify alarm recurrence using iCalendar syntax"
-msgstr "Nyatakan pengulangan penggera mengunakan sintaks iKalendar"
-
-#: main.cpp:98
-#, fuzzy
-#| msgid "Display reminder in advance of alarm"
-msgid "Display reminder before or after alarm"
-msgstr "Paparkan peringatan  sebelum penggera"
-
-#: main.cpp:99
-#, fuzzy
-#| msgid "Display reminder once, before first alarm recurrence"
-msgid "Display reminder once, before or after first alarm recurrence"
-msgstr "Paparkan peringatan sekali sebelum ulangan pertama penggera"
-
-#: main.cpp:101
-msgid "Number of times to repeat alarm (including initial occasion)"
-msgstr "Berapa kali penggera hendak diulang (termasuk kejadian pemulaan)"
-
-#: main.cpp:103
-msgid "Speak the message when it is displayed"
-msgstr "Tuturkan mesej apabila ia dipaparkan"
-
-#: main.cpp:105
-msgid "Email subject line"
-msgstr "Baris subjek e-mel"
-
-#: main.cpp:107
-#, fuzzy
-msgid "Simulate system time [[[yyyy-]mm-]dd-]hh:mm [TZ] (debug mode)"
-msgstr "Ulang sehingga [[[tttt-]bb-]hh-]jj:mm, atau tarikh tttt-bb-hh"
-
-#: main.cpp:110
-#, fuzzy
-msgid ""
-"Trigger alarm at time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
-msgstr ""
-"Cetuskan penggera pada waktu  [[[ttt-]bb-]hh-]jj:mm, atau tarikh ttt-bb-hh"
-
-#: main.cpp:111
-msgid "Display system tray icon"
-msgstr "Paparkan ikon dulang sistem"
-
-#: main.cpp:112
-msgid "Trigger alarm with the specified event ID"
-msgstr "Cetus penggera bersama ID peristiwa yang dinyatakan"
-
-#: main.cpp:114
-#, fuzzy
-msgid "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
-msgstr "Ulang sehingga [[[tttt-]bb-]hh-]jj:mm, atau tarikh tttt-bb-hh"
-
-#: main.cpp:116
-msgid "Volume to play audio file"
-msgstr "Volum untuk siaran fail audio"
-
-#: main.cpp:117
-msgid "Message text to display"
-msgstr "Teks mesej yang hendak dipapar"
-
-#: mainwindow.cpp:126
-#, fuzzy
-#| msgid "Show &Alarm Times"
-msgctxt "@action"
-msgid "Show &Alarm Times"
-msgstr "Papar waktu &penggera"
-
-#: mainwindow.cpp:127
-#, fuzzy
-msgctxt "@option:check"
-msgid "Show alarm time"
-msgstr "Papar &waktu penggera"
-
-#: mainwindow.cpp:128
-#, fuzzy
-#| msgid "Show Time t&o Alarms"
-msgctxt "@action"
-msgid "Show Time t&o Alarms"
-msgstr "Papar Waktu &untuk Penggera"
-
-#: mainwindow.cpp:129
-#, fuzzy
-#| msgid "Show time u&ntil alarm"
-msgctxt "@option:check"
-msgid "Show time until alarm"
-msgstr "Papar waktu sehi&ngga penggera"
-
-#: mainwindow.cpp:437
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failure to create menus\n"
-#| "(perhaps %1 missing or corrupted)"
-msgctxt "@info"
-msgid ""
-"Failure to create menus (perhaps <filename>%1</filename> missing or "
-"corrupted)"
-msgstr ""
-"Gagal mencipta menu\n"
-"(mungkin %1 hilang atau rosak)"
-
-#: mainwindow.cpp:458
-#, fuzzy
-#| msgid "&Templates..."
-msgctxt "@action"
-msgid "&Templates..."
-msgstr "&Templat..."
-
-#: mainwindow.cpp:462
-#, fuzzy
-#| msgid "&New..."
-msgctxt "@action"
-msgid "&New"
-msgstr "&Baru..."
-
-#: mainwindow.cpp:489
-#, fuzzy
-#| msgid "Create Tem&plate..."
-msgctxt "@action"
-msgid "Create Tem&plate..."
-msgstr "CiptaTem&plat..."
-
-#: mainwindow.cpp:493
-#, fuzzy
-#| msgid "&Copy..."
-msgctxt "@action"
-msgid "&Copy..."
-msgstr "&Salin..."
-
-#: mainwindow.cpp:498 resourceselector.cpp:518
-#, fuzzy
-#| msgid "&Edit..."
-msgctxt "@action"
-msgid "&Edit..."
-msgstr "&Edit..."
-
-#: mainwindow.cpp:503
-#, fuzzy
-msgctxt "@action"
-msgid "&Delete"
-msgstr "_n: Hapuskan penggera"
-
-#: mainwindow.cpp:509
-#, fuzzy
-msgctxt "@action"
-msgid "Delete Without Confirmation"
-msgstr "Konfigurasi penggera"
-
-#: mainwindow.cpp:514
-#, fuzzy
-#| msgid "Reac&tivate"
-msgctxt "@action"
-msgid "Reac&tivate"
-msgstr "Ak&tifkan semula"
-
-#: mainwindow.cpp:524
-msgctxt "@action"
-msgid "Wake From Suspend..."
-msgstr ""
-
-#: mainwindow.cpp:541
-#, fuzzy
-msgctxt "@action"
-msgid "Show Archi&ved Alarms"
-msgstr "Papar Penggera luput"
-
-#: mainwindow.cpp:546
-#, fuzzy
-#| msgid "Show in System &Tray"
-msgctxt "@action"
-msgid "Show in System &Tray"
-msgstr "Papar dalam &Dulang Sistem"
-
-#: mainwindow.cpp:550
-#, fuzzy
-msgctxt "@action"
-msgid "Show &Calendars"
-msgstr "URL fail kalendar"
-
-#: mainwindow.cpp:558
-#, fuzzy
-msgctxt "@action"
-msgid "Import &Alarms..."
-msgstr "Import &Tarikh Lahir..."
-
-#: mainwindow.cpp:562
-#, fuzzy
-#| msgid "Import &Birthdays..."
-msgctxt "@action"
-msgid "Import &Birthdays..."
-msgstr "Import &Tarikh Lahir..."
-
-#: mainwindow.cpp:566
-#, fuzzy
-msgctxt "@action"
-msgid "E&xport Selected Alarms..."
-msgstr "Import &Tarikh Lahir..."
-
-#: mainwindow.cpp:570 resourceselector.cpp:538
-#, fuzzy
-msgctxt "@action"
-msgid "E&xport..."
-msgstr "Import &Tarikh Lahir..."
-
-#: mainwindow.cpp:574
-#, fuzzy
-#| msgid "&Refresh Alarms"
-msgctxt "@action"
-msgid "&Refresh Alarms"
-msgstr "&Muat Semula Penggera"
-
-#: mainwindow.cpp:829
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "Do you really want to delete the selected alarm?"
-msgid_plural "Do you really want to delete the %1 selected alarms?"
-msgstr[0] "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
-msgstr[1] "Anda pasti ingin menghapuskan %1 penggera yang dipilih?"
-
-#: mainwindow.cpp:831
-#, fuzzy
-msgctxt "@title:window"
-msgid "Delete Alarm"
-msgid_plural "Delete Alarms"
-msgstr[0] "_n: Hapuskan penggera"
-msgstr[1] "Hapuskan penggera"
-
-#: mainwindow.cpp:832 templatedlg.cpp:214
-#, fuzzy
-msgctxt "@action:button"
-msgid "&Delete"
-msgstr "_n: Hapuskan penggera"
-
-#: mainwindow.cpp:976
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Hide Archived Alarms"
-msgstr "Sembunyikan Penggera Luput"
-
-#: mainwindow.cpp:977
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Show Archived Alarms"
-msgstr "Papar Penggera luput"
-
-#: mainwindow.cpp:1064
-#, fuzzy
-msgctxt "@info"
-msgid "Import birthdays"
-msgstr "Import &Tarikh Lahir..."
-
-#: mainwindow.cpp:1234
-#, fuzzy, kde-format
-#| msgctxt "Undo-action: message"
-#| msgid "%1: %2"
-msgctxt "@action Undo/Redo [action]"
-msgid "%1 %2"
-msgstr "%1: %2"
-
-#: mainwindow.cpp:1235
-#, fuzzy, kde-format
-#| msgctxt "Undo [action]: message"
-#| msgid "%1 %2: %3"
-msgctxt "@action Undo [action]: message"
-msgid "%1 %2: %3"
-msgstr "%1 %2: %3"
-
-#: mainwindow.cpp:1521
-#, fuzzy
-#| msgid "Display Alarms"
-msgctxt "@item:inlistbox"
-msgid "Display Alarm"
-msgstr "Paparkan penggera"
-
-#: mainwindow.cpp:1523
-#, fuzzy
-#| msgid "Email Alarms"
-msgctxt "@item:inlistbox"
-msgid "Email Alarm"
-msgstr "Penggera E-mel"
-
-#: mainwindow.cpp:1525
-#, fuzzy
-#| msgid "Command Alarms"
-msgctxt "@item:inlistbox"
-msgid "Command Alarm"
-msgstr "Penggera Arahan"
-
-#: mainwindow.cpp:1527
-#, fuzzy
-#| msgid "Alarm Type"
-msgctxt "@title:window"
-msgid "Alarm Type"
-msgstr "Jenis penggera"
-
-#: mainwindow.cpp:1528
-#, fuzzy
-#| msgid "Choose Alarm Template"
-msgctxt "@info"
-msgid "Choose alarm type to create:"
-msgstr "Pilih Templat Penggera"
-
-#: mainwindow.cpp:1681
-#, fuzzy
-#| msgid "Disa&ble"
-msgctxt "@action"
-msgid "Disa&ble"
-msgstr "&Nyahaktifkan"
-
-#: mainwindow.cpp:1681
-#, fuzzy
-#| msgid "Ena&ble"
-msgctxt "@action"
-msgid "Ena&ble"
-msgstr "&Aktifkan"
-
-#: messagewin.cpp:438 messagewin.cpp:861
-#, fuzzy
-#| msgid "Message"
-msgctxt "@title:window"
-msgid "Message"
-msgstr "Mesej"
-
-#: messagewin.cpp:438
-#, fuzzy
-#| msgid "Reminder"
-msgctxt "@title:window"
-msgid "Reminder"
-msgstr "Peringatan"
-
-#: messagewin.cpp:456
-#, fuzzy
-#| msgid ""
-#| "The scheduled date/time for the message (as opposed to the actual time of "
-#| "display)."
-msgctxt "@info:whatsthis"
-msgid ""
-"The scheduled date/time for the message (as opposed to the actual time of "
-"display)."
-msgstr ""
-"Jadual tarikh/waktu untuk mesej ( bertentangan dengan waktu sebenar paparan)."
-
-#: messagewin.cpp:463
-#, fuzzy
-#| msgid "Reminder"
-msgctxt "@info"
-msgid "Reminder"
-msgstr "Peringatan"
-
-#: messagewin.cpp:487
-#, fuzzy
-#| msgid "The file whose contents are displayed below"
-msgctxt "@info:whatsthis"
-msgid "The file whose contents are displayed below"
-msgstr "Fail yang kandungannya dipaparkan di bawah"
-
-#: messagewin.cpp:543
-#, fuzzy
-#| msgid "The contents of the file to be displayed"
-msgctxt "@info:whatsthis"
-msgid "The contents of the file to be displayed"
-msgstr "Kandungan fail untuk dipaparkan"
-
-#: messagewin.cpp:551
-#, fuzzy
-#| msgid "Failed to open file"
-msgctxt "@info"
-msgid "Failed to open file"
-msgstr "Gagal membuka fail"
-
-#: messagewin.cpp:551
-#, fuzzy
-#| msgid "File is a folder"
-msgctxt "@info"
-msgid "File is a folder"
-msgstr "Fail adalah folder"
-
-#: messagewin.cpp:551
-#, fuzzy
-#| msgid "File not found"
-msgctxt "@info"
-msgid "File not found"
-msgstr "Fail tidak ditemui"
-
-#: messagewin.cpp:571
-#, fuzzy
-#| msgid "The alarm message"
-msgctxt "@info:whatsthis"
-msgid "The alarm message"
-msgstr "Mesej penggera"
-
-#: messagewin.cpp:598
-msgctxt "@info:whatsthis"
-msgid "The output of the alarm's command"
-msgstr ""
-
-#: messagewin.cpp:640
-#, fuzzy
-#| msgid "The email to send"
-msgctxt "@info:whatsthis"
-msgid "The email to send"
-msgstr "E-mel yang hendak dihantar"
-
-#: messagewin.cpp:646
-#, fuzzy
-#| msgctxt "Email addressee"
-#| msgid "To:"
-msgctxt "@info Email addressee"
-msgid "To:"
-msgstr "Kepada:"
-
-#: messagewin.cpp:653
-#, fuzzy
-#| msgctxt "Email subject"
-#| msgid "Subject:"
-msgctxt "@info Email subject"
-msgid "Subject:"
-msgstr "Subjek:"
-
-#: messagewin.cpp:679
-msgctxt "@title:window"
-msgid "Error"
-msgstr ""
-
-#: messagewin.cpp:699
-msgctxt "@option:check"
-msgid "Do not display this error message again for this alarm"
-msgstr ""
-
-#: messagewin.cpp:718
-#, fuzzy
-#| msgid "Acknowledge the alarm"
-msgctxt "@info:whatsthis"
-msgid "Acknowledge the alarm"
-msgstr "Perakui penggera"
-
-#: messagewin.cpp:723
-#, fuzzy
-#| msgid "&Edit..."
-msgctxt "@action:button"
-msgid "&Edit..."
-msgstr "&Edit..."
-
-#: messagewin.cpp:728
-#, fuzzy
-#| msgid "Edit the alarm."
-msgctxt "@info:whatsthis"
-msgid "Edit the alarm."
-msgstr "Edit penggera."
-
-#: messagewin.cpp:732
-#, fuzzy
-#| msgid "&Defer..."
-msgctxt "@action:button"
-msgid "&Defer..."
-msgstr "&Tunda..."
-
-#: messagewin.cpp:737
-#, fuzzy
-#| msgid ""
-#| "Defer the alarm until later.\n"
-#| "You will be prompted to specify when the alarm should be redisplayed."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Defer the alarm until later.</para><para>You will be prompted to "
-"specify when the alarm should be redisplayed.</para>"
-msgstr ""
-"Tunda penggera.\n"
-"Anda akan digesa untuk menyatakan bila penggera patut dipapar semula."
-
-#: messagewin.cpp:752 sounddlg.cpp:442
-#, fuzzy
-#| msgid "Stop sound"
-msgctxt "@info:tooltip"
-msgid "Stop sound"
-msgstr "Hentikan bunyi"
-
-#: messagewin.cpp:753 sounddlg.cpp:443
-#, fuzzy
-#| msgid "Stop playing the sound"
-msgctxt "@info:whatsthis"
-msgid "Stop playing the sound"
-msgstr "Hentikan siaran bunyi"
-
-#: messagewin.cpp:767
-#, fuzzy
-#| msgid "Use KMail &identities"
-msgctxt "@info:tooltip Locate this email in KMail"
-msgid "Locate in <application>KMail</application>"
-msgstr "Gunakan &identiti KMail "
-
-#: messagewin.cpp:768
-msgctxt "@info:whatsthis"
-msgid "Locate and highlight this email in <application>KMail</application>"
-msgstr ""
-
-#: messagewin.cpp:777
-msgctxt "@info:tooltip"
-msgid "Activate <application>KAlarm</application>"
-msgstr ""
-
-#: messagewin.cpp:778
-msgctxt "@info:whatsthis"
-msgid "Activate <application>KAlarm</application>"
-msgstr ""
-
-#: messagewin.cpp:938
-#, fuzzy
-#| msgid "Today"
-msgctxt "@info"
-msgid "Today"
-msgstr "Hari ini"
-
-#: messagewin.cpp:940
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "Tomorrow"
-msgid_plural "in %1 days' time"
-msgstr[0] "_n: Esok"
-msgstr[1] "dalam tempoh %1 hari"
-
-#: messagewin.cpp:942
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "in 1 week's time"
-msgid_plural "in %1 weeks' time"
-msgstr[0] "_n: dalam tempoh masa 1 minggu"
-msgstr[1] "dalam tempoh  %1 minggu"
-
-#: messagewin.cpp:956
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "in 1 minute's time"
-msgid_plural "in %1 minutes' time"
-msgstr[0] "_n: dalam tempoh 1 minit"
-msgstr[1] "dalam tempoh  %1 minit"
-
-#: messagewin.cpp:958
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "in 1 hour's time"
-msgid_plural "in %1 hours' time"
-msgstr[0] "_n: dalam tempoh 1 jam"
-msgstr[1] "dalam tempoh %1 jam"
-
-#: messagewin.cpp:961
-#, fuzzy, kde-format
-msgctxt "@item:intext inserted into 'in ... %1 minute's time' below"
-msgid "1 hour"
-msgid_plural "%1 hours"
-msgstr[0] "_n: 1 Jam"
-msgstr[1] "%1 Jam"
-
-#: messagewin.cpp:962
-#, fuzzy, kde-format
-msgctxt "@info '%2' is the previous message '1 hour'/'%1 hours'"
-msgid "in %2 1 minute's time"
-msgid_plural "in %2 %1 minutes' time"
-msgstr[0] "_n: dalam tempoh 1 minit"
-msgstr[1] "dalam tempoh  %1 minit"
-
-#: messagewin.cpp:1464 messagewin.cpp:1474
-#, fuzzy
-#| msgid "Unable to speak message"
-msgctxt "@info"
-msgid "Unable to speak message"
-msgstr "Tidak dapat menuturkan mesej"
-
-#: messagewin.cpp:1474
-#, fuzzy
-msgctxt "@info"
-msgid "D-Bus call say() failed"
-msgstr "Panggilan DCOP mesej tutur gagal "
-
-#: messagewin.cpp:1617
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot open audio file:\n"
-#| "%1"
-msgctxt "@info"
-msgid "Cannot open audio file: <filename>%1</filename>"
-msgstr ""
-"Tidak dapat membuka fail audio:\n"
-"%1"
-
-#: messagewin.cpp:1715
-#, fuzzy, kde-format
-#| msgid ""
-#| "Error attaching file:\n"
-#| "%1"
-msgctxt "@info"
-msgid ""
-"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
-msgstr ""
-"Ralat semasa melampirkan fail:\n"
-"%1"
-
-#: messagewin.cpp:2044
-#, fuzzy
-#| msgid "Do you really want to acknowledge this alarm?"
-msgctxt "@info"
-msgid "Do you really want to acknowledge this alarm?"
-msgstr "Anda pasti ingin memperakui penggera ini?"
-
-#: messagewin.cpp:2045
-#, fuzzy
-#| msgid "&Acknowledge"
-msgctxt "@action:button"
-msgid "Acknowledge"
-msgstr "&Perakui"
-
-#: messagewin.cpp:2045
-#, fuzzy
-#| msgid "Acknowledge Alarm"
-msgctxt "@action:button"
-msgid "Acknowledge Alarm"
-msgstr "Perakui penggera"
-
-#: messagewin.cpp:2096
-msgctxt "@info"
-msgid "Unable to locate this email in <application>KMail</application>"
-msgstr ""
-
-#: messagewin.cpp:2266
-msgctxt "@info"
-msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
-msgstr ""
-
-#: newalarmaction.cpp:59
-#, fuzzy
-msgctxt "@item:inmenu"
-msgid "&Display Alarm Template"
-msgstr "_n: Hapuskan templat penggera"
-
-#: newalarmaction.cpp:59
-#, fuzzy
-#| msgid "Display Alarms"
-msgctxt "@action"
-msgid "New Display Alarm"
-msgstr "Paparkan penggera"
-
-#: newalarmaction.cpp:62
-#, fuzzy
-#| msgid "Choose Alarm Template"
-msgctxt "@item:inmenu"
-msgid "&Command Alarm Template"
-msgstr "Pilih Templat Penggera"
-
-#: newalarmaction.cpp:62
-#, fuzzy
-#| msgid "Command Alarms"
-msgctxt "@action"
-msgid "New Command Alarm"
-msgstr "Penggera Arahan"
-
-#: newalarmaction.cpp:65
-#, fuzzy
-#| msgid "Edit Alarm Template"
-msgctxt "@item:inmenu"
-msgid "&Email Alarm Template"
-msgstr "Edit templat penggera"
-
-#: newalarmaction.cpp:65
-#, fuzzy
-#| msgid "Email Alarms"
-msgctxt "@action"
-msgid "New Email Alarm"
-msgstr "Penggera E-mel"
-
-#: newalarmaction.cpp:68
-#, fuzzy
-#| msgid "Edit Alarm Template"
-msgctxt "@item:inmenu"
-msgid "&Audio Alarm Template"
-msgstr "Edit templat penggera"
-
-#: newalarmaction.cpp:68
-#, fuzzy
-#| msgid "Email Alarms"
-msgctxt "@action"
-msgid "New Audio Alarm"
-msgstr "Penggera E-mel"
-
-#: newalarmaction.cpp:79
-#, fuzzy
-#| msgid "New Alarm From &Template"
-msgctxt "@action"
-msgid "New Alarm From &Template"
-msgstr "Penggera Baru Dari &Templat "
 
 #: prefdlg.cpp:157
 #, fuzzy
@@ -4922,6 +3566,3218 @@ msgstr ""
 "dipaparkan, tapi ia tidak mempunyai bar tajuk dan  tidak boleh dikeluarkan "
 "atau disaizkan semula."
 
+#: sounddlg.cpp:54
+#, fuzzy
+#| msgid "Repeat"
+msgctxt "@option:check"
+msgid "Repeat"
+msgstr "Ulang"
+
+#: sounddlg.cpp:158
+#, fuzzy
+#| msgid "Sound &file:"
+msgctxt "@label"
+msgid "Sound file:"
+msgstr "&Fail bunyi:"
+
+#: sounddlg.cpp:172 sounddlg.cpp:455
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Test the sound"
+msgstr "Hentikan siaran bunyi"
+
+#: sounddlg.cpp:173 sounddlg.cpp:456
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Play the selected sound file."
+msgstr "&Ulang fail bunyi"
+
+#: sounddlg.cpp:179
+#, fuzzy
+#| msgid "Enter the name or URL of a sound file to play."
+msgctxt "@info:whatsthis"
+msgid "Enter the name or URL of a sound file to play."
+msgstr "Masukkan nama atau URL fail bunyi untuk disiarkan"
+
+#: sounddlg.cpp:191
+#, fuzzy
+#| msgid "Select a sound file to play."
+msgctxt "@info:whatsthis"
+msgid "Select a sound file to play."
+msgstr "Pilih fail bunyi untuk disiarkan."
+
+#: sounddlg.cpp:205
+#, fuzzy
+#| msgid ""
+#| "If checked, the sound file will be played repeatedly for as long as the "
+#| "message is displayed."
+msgctxt "@info:whatsthis"
+msgid ""
+"If checked, the sound file will be played repeatedly for as long as the "
+"message is displayed."
+msgstr ""
+"Jika disemak, fail bunyi akan disiarkan berkali-kali selagi mesej dipaparkan."
+
+#: sounddlg.cpp:215
+#, fuzzy
+#| msgid "Interval between alarm repetitions"
+msgctxt "@label:spinbox Length of time to pause between repetitions"
+msgid "Pause between repetitions:"
+msgstr "Jeda masa antara pengulangan penggera"
+
+#: sounddlg.cpp:222 sounddlg.cpp:276
+#, fuzzy
+#| msgid "seconds"
+msgctxt "@label"
+msgid "seconds"
+msgstr "Saat"
+
+#: sounddlg.cpp:224
+#, fuzzy
+#| msgid ""
+#| "Enter how many seconds to fade the sound before reaching the set volume."
+msgctxt "@info:whatsthis"
+msgid "Enter how many seconds to pause between repetitions."
+msgstr "Masukkan berapa saat  untuk pudar sebelum mencapai volum yang diset"
+
+#: sounddlg.cpp:228
+#, fuzzy
+#| msgid "Volume"
+msgctxt "@title:group Sound volume"
+msgid "Volume"
+msgstr "Kekuatan bunyi"
+
+#: sounddlg.cpp:243
+#, fuzzy
+#| msgid "Set volume"
+msgctxt "@option:check"
+msgid "Set volume"
+msgstr "Setkan volum"
+
+#: sounddlg.cpp:246
+#, fuzzy
+#| msgid "Select to choose the volume for playing the sound file."
+msgctxt "@info:whatsthis"
+msgid "Select to choose the volume for playing the sound file."
+msgstr "Pilih untuk memilih kekuatan bunyi untuk siaran fail bunyi"
+
+#: sounddlg.cpp:253
+#, fuzzy
+#| msgid "Choose the volume for playing the sound file."
+msgctxt "@info:whatsthis"
+msgid "Choose the volume for playing the sound file."
+msgstr "Pilih volum untuk menyiarkan fail bunyi"
+
+#: sounddlg.cpp:258
+#, fuzzy
+#| msgid "Fade"
+msgctxt "@option:check"
+msgid "Fade"
+msgstr "Pudar"
+
+#: sounddlg.cpp:261
+#, fuzzy
+#| msgid "Select to fade the volume when the sound file first starts to play."
+msgctxt "@info:whatsthis"
+msgid "Select to fade the volume when the sound file first starts to play."
+msgstr "Pilih volum untuk siaran fail bunyi"
+
+#: sounddlg.cpp:269
+#, fuzzy
+#| msgctxt "Time period over which to fade the sound"
+#| msgid "Fade time:"
+msgctxt "@label:spinbox Time period over which to fade the sound"
+msgid "Fade time:"
+msgstr "Masa pudar:"
+
+#: sounddlg.cpp:278
+#, fuzzy
+#| msgid ""
+#| "Enter how many seconds to fade the sound before reaching the set volume."
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter how many seconds to fade the sound before reaching the set volume."
+msgstr "Masukkan berapa saat  untuk pudar sebelum mencapai volum yang diset"
+
+#: sounddlg.cpp:285
+#, fuzzy
+#| msgid "Initial volume:"
+msgctxt "@label:slider"
+msgid "Initial volume:"
+msgstr "Volum awal:"
+
+#: sounddlg.cpp:293
+#, fuzzy
+#| msgid "Choose the initial volume for playing the sound file."
+msgctxt "@info:whatsthis"
+msgid "Choose the initial volume for playing the sound file."
+msgstr "Pilih volum permulaan untuk siarkan fail bunyi"
+
+#: sounddlg.cpp:442 messagewin.cpp:752
+#, fuzzy
+#| msgid "Stop sound"
+msgctxt "@info:tooltip"
+msgid "Stop sound"
+msgstr "Hentikan bunyi"
+
+#: sounddlg.cpp:443 messagewin.cpp:753
+#, fuzzy
+#| msgid "Stop playing the sound"
+msgctxt "@info:whatsthis"
+msgid "Stop playing the sound"
+msgstr "Hentikan siaran bunyi"
+
+#: find.cpp:137
+#, fuzzy
+#| msgid "Alarm Type"
+msgctxt "@title:group"
+msgid "Alarm Type"
+msgstr "Jenis penggera"
+
+#: find.cpp:145
+#, fuzzy
+#| msgid "Acti&ve"
+msgctxt "@option:check Alarm type"
+msgid "Active"
+msgstr "&Aktif"
+
+#: find.cpp:147
+#, fuzzy
+#| msgid "Check to include active alarms in the search."
+msgctxt "@info:whatsthis"
+msgid "Check to include active alarms in the search."
+msgstr "Semak untuk memasukkan  penggera aktif dalam carian."
+
+#: find.cpp:150
+#, fuzzy
+msgctxt "@option:check Alarm type"
+msgid "Archived"
+msgstr "&Aktif"
+
+#: find.cpp:152
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to include archived alarms in the search. This option is only "
+"available if archived alarms are currently being displayed."
+msgstr ""
+"Semak untuk memasukkan penggera luput dalam carian.  Opsyen ini hanya boleh "
+"didapatkan jika penggera luput sedang dipapar."
+
+#: find.cpp:160
+#, fuzzy
+#| msgid "Text"
+msgctxt "@option:check Alarm action = text display"
+msgid "Text"
+msgstr "Teks"
+
+#: find.cpp:162
+#, fuzzy
+#| msgid "Check to include text message alarms in the search."
+msgctxt "@info:whatsthis"
+msgid "Check to include text message alarms in the search."
+msgstr "Semak untuk memasukkan penggera mesej teks dalam carian."
+
+#: find.cpp:165
+#, fuzzy
+msgctxt "@option:check Alarm action = file display"
+msgid "File"
+msgstr "Fai&l"
+
+#: find.cpp:167
+#, fuzzy
+#| msgid "Check to include file alarms in the search."
+msgctxt "@info:whatsthis"
+msgid "Check to include file alarms in the search."
+msgstr "Semak untuk memasukkan penggera fail dalam carian."
+
+#: find.cpp:170
+#, fuzzy
+#| msgid "Co&mmand"
+msgctxt "@option:check Alarm action"
+msgid "Command"
+msgstr "&Arahan"
+
+#: find.cpp:172
+#, fuzzy
+#| msgid "Check to include command alarms in the search."
+msgctxt "@info:whatsthis"
+msgid "Check to include command alarms in the search."
+msgstr "Semak untuk memasukkan penggera arahan dalam carian."
+
+#: find.cpp:175
+#, fuzzy
+#| msgid "Email"
+msgctxt "@option:check Alarm action"
+msgid "Email"
+msgstr "E-mel"
+
+#: find.cpp:177
+#, fuzzy
+#| msgid "Check to include email alarms in the search."
+msgctxt "@info:whatsthis"
+msgid "Check to include email alarms in the search."
+msgstr "Semak untuk memasukkan penggera e-mel dalam carian."
+
+#: find.cpp:180
+msgctxt "@option:check Alarm action"
+msgid "Audio"
+msgstr ""
+
+#: find.cpp:182
+#, fuzzy
+#| msgid "Check to include email alarms in the search."
+msgctxt "@info:whatsthis"
+msgid "Check to include audio alarms in the search."
+msgstr "Semak untuk memasukkan penggera e-mel dalam carian."
+
+#: find.cpp:283
+#, fuzzy
+#| msgid "No alarm types are selected to search"
+msgctxt "@info"
+msgid "No alarm types are selected to search"
+msgstr "Tiada jenis penggera dipilih dalam carian"
+
+#: find.cpp:439
+#, fuzzy
+#| msgid ""
+#| "End of alarm list reached.\n"
+#| "Continue from the beginning?"
+msgctxt "@info"
+msgid ""
+"<para>End of alarm list reached.</para><para>Continue from the beginning?</"
+"para>"
+msgstr ""
+"Senarai penggera telah sampai ke hujung.\n"
+"Teruskan dari awal?"
+
+#: find.cpp:440
+#, fuzzy
+#| msgid ""
+#| "Beginning of alarm list reached.\n"
+#| "Continue from the end?"
+msgctxt "@info"
+msgid ""
+"<para>Beginning of alarm list reached.</para><para>Continue from the end?</"
+"para>"
+msgstr ""
+"Permulaan senarai penggera telah dicapai.\n"
+"Teruskan dari hujung?"
+
+#: latecancel.cpp:44
+#, fuzzy
+#| msgid "Cancel if late"
+msgctxt "@option:check"
+msgid "Cancel if late"
+msgstr "Batalkan jika lewat"
+
+#: latecancel.cpp:45
+#, fuzzy
+#| msgid "Auto-close window after this time"
+msgctxt "@option:check"
+msgid "Auto-close window after this time"
+msgstr "Autotutup tetingkap selepas waktu ini"
+
+#: latecancel.cpp:46
+#, fuzzy
+msgctxt "@option:check"
+msgid "Auto-close window after late-cancellation time"
+msgstr "Autotutup tetingkap selepas waktu pembatalan lewat"
+
+#: latecancel.cpp:56
+#, fuzzy
+#| msgid ""
+#| "If checked, the alarm will be canceled if it cannot be triggered within "
+#| "the specified period after its scheduled time. Possible reasons for not "
+#| "triggering include your being logged off, X not running, or the alarm "
+#| "daemon not running.\n"
+#| "\n"
+#| "If unchecked, the alarm will be triggered at the first opportunity after "
+#| "its scheduled time, regardless of how late it is."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>If checked, the alarm will be canceled if it cannot be triggered "
+"within the specified period after its scheduled time. Possible reasons for "
+"not triggering include your being logged off, X not running, or "
+"<application>KAlarm</application> not running.</para><para>If unchecked, the "
+"alarm will be triggered at the first opportunity after its scheduled time, "
+"regardless of how late it is.</para>"
+msgstr ""
+"Jika disemak, penggera akan dibatalkan jika ia tidak dapat dicetus dalam "
+"tempoh masa tertentu selepas waktu yang dijadualkan. Sebab yang mungkin "
+"untuk tidak mencetus termasuk anda tidak dilog keluar, ,X tidak berjalan, "
+"atau daemon penggera tidak berjalan.\n"
+"\n"
+"Jika tidak disemak, penggera akan dicetus pada peluang pertama selepas waktu "
+"yang dijadualkan, tanpa menghiraukan keterlewatan."
+
+#: latecancel.cpp:82
+#, fuzzy
+#| msgctxt "Cancel if late by 10 minutes"
+#| msgid "Ca&ncel if late by"
+msgctxt "@option:check Cancel if late by 10 minutes"
+msgid "Cancel if late by"
+msgstr "&Batalkan jika lewat sebanyak"
+
+#: latecancel.cpp:83
+#, fuzzy
+#| msgid "Enter how late will cause the alarm to be canceled"
+msgctxt "@info:whatsthis"
+msgid "Enter how late will cause the alarm to be canceled"
+msgstr "Masukkan jangka masa lewat yang menyebabkan penggera dibatalkan"
+
+#: latecancel.cpp:99
+#, fuzzy
+#| msgid ""
+#| "Automatically close the alarm window after the expiry of the late-"
+#| "cancelation period"
+msgctxt "@info:whatsthis"
+msgid ""
+"Automatically close the alarm window after the expiry of the late-"
+"cancellation period"
+msgstr ""
+"Menutup tetingkap penggera secara automatik selepas luput tempoh pembatalan "
+"lewat"
+
+#: lib/filedialog.cpp:60
+#, fuzzy
+#| msgid "Failed to open file"
+msgctxt "@option:check"
+msgid "Append to existing file"
+msgstr "Gagal membuka fail"
+
+#: lib/kalocale.cpp:51
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Monday"
+msgstr "Hari ini"
+
+#: lib/kalocale.cpp:52
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Tuesday"
+msgstr "Hari ini"
+
+#: lib/kalocale.cpp:53
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Wednesday"
+msgstr "Hari ini"
+
+#: lib/kalocale.cpp:54
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Thursday"
+msgstr "Hari ini"
+
+#: lib/kalocale.cpp:55
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Friday"
+msgstr "hari"
+
+#: lib/kalocale.cpp:56
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Saturday"
+msgstr "hari ini"
+
+#: lib/kalocale.cpp:57
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Sunday"
+msgstr "Bunyi"
+
+#: lib/timeedit.cpp:177
+#, fuzzy
+msgctxt "@item:inlistbox Morning, as in 2am"
+msgid "am"
+msgstr "Nama"
+
+#: lib/timeedit.cpp:196
+msgctxt "@item:inlistbox Afternoon, as in 2pm"
+msgid "pm"
+msgstr ""
+
+#: lib/timeperiod.cpp:41
+#, fuzzy
+#| msgid "hours/minutes"
+msgctxt "@item:inlistbox Time units"
+msgid "minutes"
+msgstr "jam/minit"
+
+#: lib/timeperiod.cpp:42
+#, fuzzy
+#| msgid "hours/minutes"
+msgctxt "@item:inlistbox Time units"
+msgid "hours/minutes"
+msgstr "jam/minit"
+
+#: lib/timeperiod.cpp:43
+#, fuzzy
+#| msgid "days"
+msgctxt "@item:inlistbox Time units"
+msgid "days"
+msgstr "hari"
+
+#: lib/timeperiod.cpp:44
+#, fuzzy
+#| msgid "weeks"
+msgctxt "@item:inlistbox Time units"
+msgid "weeks"
+msgstr "minggu"
+
+#: lib/timespinbox.cpp:77
+#, fuzzy
+#| msgid ""
+#| "Press the Shift key while clicking the spin buttons to adjust the time by "
+#| "a larger step (6 hours / 5 minutes)."
+msgctxt "@info:whatsthis"
+msgid ""
+"Press the Shift key while clicking the spin buttons to adjust the time by a "
+"larger step (6 hours / 5 minutes)."
+msgstr ""
+"Tekan kekunci Shift semasa mengklik butang putar untuk melaraskan waktu "
+"dengan langkah lebih besar (6 jam / 5 minit)."
+
+#: lib/shellprocess.cpp:158
+#, fuzzy
+#| msgid "Failed to execute command (shell access not authorized):"
+msgctxt "@info"
+msgid "Failed to execute command (shell access not authorized)"
+msgstr "Gagal melaksanakan arahan (akses shell tidak sah)"
+
+#: lib/shellprocess.cpp:161
+#, fuzzy
+#| msgid "Failed to execute command:"
+msgctxt "@info"
+msgid "Failed to execute command"
+msgstr "Gagal melaksanakan arahan:"
+
+#: lib/shellprocess.cpp:163
+#, fuzzy
+#| msgid "Command execution error:"
+msgctxt "@info"
+msgid "Command execution error"
+msgstr "Ralat melaksanakan arahan:"
+
+#: lib/shellprocess.cpp:166
+#, fuzzy, kde-format
+#| msgid ""
+#| "Command executed:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Command exit code: %1"
+msgstr ""
+"Arahan terlaksana:\n"
+"%1"
+
+#: main.cpp:39
+msgid "KAlarm"
+msgstr "KAlarm"
+
+#: main.cpp:40
+msgid "Personal alarm message, command and email scheduler for KDE"
+msgstr "Mesej penggera peribadi, arahan dan penjadual e-mel untuk KDE"
+
+#: main.cpp:42
+msgid "Copyright 2001-2012, David Jarvie"
+msgstr ""
+
+#: main.cpp:50
+msgid "Prompt for confirmation when alarm is acknowledged"
+msgstr "Gesa  pengesahan apabila penggera diakui"
+
+#: main.cpp:52
+msgid "Attach file to email (repeat as needed)"
+msgstr "Lampirkan fail pada e-mel (ulang bila perlu)"
+
+#: main.cpp:53
+msgid "Auto-close alarm window after --late-cancel period"
+msgstr "Autotutup tetingkap penggera selepas tempoh masa pembatalan lewat"
+
+#: main.cpp:54
+msgid "Blind copy email to self"
+msgstr "Buat salinan buta tuli e-mel kepada diri sendiri"
+
+#: main.cpp:56
+msgid "Beep when message is displayed"
+msgstr "Bipkan apabila mesej dipaparkan"
+
+#: main.cpp:59
+msgid "Message background color (name or hex 0xRRGGBB)"
+msgstr "Warna latar belakang mesej (nama atau hex 0xRRGGBB)"
+
+#: main.cpp:62
+msgid "Message foreground color (name or hex 0xRRGGBB)"
+msgstr "Warna latar depan mesej (nama atau hex 0xRRGGBB)"
+
+#: main.cpp:63
+msgid "Cancel alarm with the specified event ID"
+msgstr "Batalkan penggera bersama ID peristiwa yang dinyatakan"
+
+#: main.cpp:65
+msgid "Disable the alarm"
+msgstr "Nyahaktifkan penggera "
+
+#: main.cpp:66
+#, fuzzy
+#| msgid "Disable the alarm"
+msgid "Disable monitoring of all alarms"
+msgstr "Nyahaktifkan penggera "
+
+#: main.cpp:68
+msgid "Execute a shell command line"
+msgstr "Laksanakan baris arahan shell"
+
+#: main.cpp:70
+msgid "Command line to generate alarm message text"
+msgstr ""
+
+#: main.cpp:71
+#, fuzzy
+msgid "Display the alarm edit dialog to edit the specified alarm"
+msgstr "Ulang penggera sehingga tarikh/waktu yang dinyatakan"
+
+#: main.cpp:72
+#, fuzzy
+msgid "Display the alarm edit dialog to edit a new display alarm"
+msgstr "Paparkan mesej penggera sekarang"
+
+#: main.cpp:73
+#, fuzzy
+msgid "Display the alarm edit dialog to edit a new command alarm"
+msgstr "Paparkan mesej penggera sekarang"
+
+#: main.cpp:74
+#, fuzzy
+msgid "Display the alarm edit dialog to edit a new email alarm"
+msgstr "Paparkan mesej penggera sekarang"
+
+#: main.cpp:75
+#, fuzzy
+msgid "Display the alarm edit dialog to edit a new audio alarm"
+msgstr "Paparkan mesej penggera sekarang"
+
+#: main.cpp:76
+msgid "Display the alarm edit dialog, preset with a template"
+msgstr ""
+
+#: main.cpp:78
+msgid "File to display"
+msgstr "Fail yang hendak dipaparkan"
+
+#: main.cpp:80
+msgid "KMail identity to use as sender of email"
+msgstr "Identiti KMail digunakan sebagai penghantar e-mel"
+
+#: main.cpp:82
+msgid "Interval between alarm repetitions"
+msgstr "Jeda masa antara pengulangan penggera"
+
+#: main.cpp:84
+msgid "Show alarm as an event in KOrganizer"
+msgstr ""
+
+#: main.cpp:86
+msgid "Cancel alarm if more than 'period' late when triggered"
+msgstr "Batalkan penggera jika melebihi 'jangka masa' lewat semasa dicetus"
+
+#: main.cpp:87
+#, fuzzy
+#| msgid "List of scheduled alarms"
+msgid "Output list of scheduled alarms to stdout"
+msgstr "Senarai penggera terjadual"
+
+#: main.cpp:89
+msgid "Repeat alarm at every login"
+msgstr "Ulang penggera setiap kali log masuk"
+
+#: main.cpp:91
+msgid "Send an email to the given address (repeat as needed)"
+msgstr "Hantar e-mel kepada alamat diberi (ulang jika perlu)"
+
+#: main.cpp:93
+msgid "Audio file to play once"
+msgstr "Fail audio untuk disiarkan satu kali"
+
+#: main.cpp:95
+msgid "Audio file to play repeatedly"
+msgstr "Fail audio untuk disiarkan berulang-ulang"
+
+#: main.cpp:96
+msgid "Specify alarm recurrence using iCalendar syntax"
+msgstr "Nyatakan pengulangan penggera mengunakan sintaks iKalendar"
+
+#: main.cpp:98
+#, fuzzy
+#| msgid "Display reminder in advance of alarm"
+msgid "Display reminder before or after alarm"
+msgstr "Paparkan peringatan  sebelum penggera"
+
+#: main.cpp:99
+#, fuzzy
+#| msgid "Display reminder once, before first alarm recurrence"
+msgid "Display reminder once, before or after first alarm recurrence"
+msgstr "Paparkan peringatan sekali sebelum ulangan pertama penggera"
+
+#: main.cpp:101
+msgid "Number of times to repeat alarm (including initial occasion)"
+msgstr "Berapa kali penggera hendak diulang (termasuk kejadian pemulaan)"
+
+#: main.cpp:103
+msgid "Speak the message when it is displayed"
+msgstr "Tuturkan mesej apabila ia dipaparkan"
+
+#: main.cpp:105
+msgid "Email subject line"
+msgstr "Baris subjek e-mel"
+
+#: main.cpp:107
+#, fuzzy
+msgid "Simulate system time [[[yyyy-]mm-]dd-]hh:mm [TZ] (debug mode)"
+msgstr "Ulang sehingga [[[tttt-]bb-]hh-]jj:mm, atau tarikh tttt-bb-hh"
+
+#: main.cpp:110
+#, fuzzy
+msgid ""
+"Trigger alarm at time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
+msgstr ""
+"Cetuskan penggera pada waktu  [[[ttt-]bb-]hh-]jj:mm, atau tarikh ttt-bb-hh"
+
+#: main.cpp:111
+msgid "Display system tray icon"
+msgstr "Paparkan ikon dulang sistem"
+
+#: main.cpp:112
+msgid "Trigger alarm with the specified event ID"
+msgstr "Cetus penggera bersama ID peristiwa yang dinyatakan"
+
+#: main.cpp:114
+#, fuzzy
+msgid "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
+msgstr "Ulang sehingga [[[tttt-]bb-]hh-]jj:mm, atau tarikh tttt-bb-hh"
+
+#: main.cpp:116
+msgid "Volume to play audio file"
+msgstr "Volum untuk siaran fail audio"
+
+#: main.cpp:117
+msgid "Message text to display"
+msgstr "Teks mesej yang hendak dipapar"
+
+#: mainwindow.cpp:126
+#, fuzzy
+#| msgid "Show &Alarm Times"
+msgctxt "@action"
+msgid "Show &Alarm Times"
+msgstr "Papar waktu &penggera"
+
+#: mainwindow.cpp:127
+#, fuzzy
+msgctxt "@option:check"
+msgid "Show alarm time"
+msgstr "Papar &waktu penggera"
+
+#: mainwindow.cpp:128
+#, fuzzy
+#| msgid "Show Time t&o Alarms"
+msgctxt "@action"
+msgid "Show Time t&o Alarms"
+msgstr "Papar Waktu &untuk Penggera"
+
+#: mainwindow.cpp:129
+#, fuzzy
+#| msgid "Show time u&ntil alarm"
+msgctxt "@option:check"
+msgid "Show time until alarm"
+msgstr "Papar waktu sehi&ngga penggera"
+
+#: mainwindow.cpp:437
+#, fuzzy, kde-format
+#| msgid ""
+#| "Failure to create menus\n"
+#| "(perhaps %1 missing or corrupted)"
+msgctxt "@info"
+msgid ""
+"Failure to create menus (perhaps <filename>%1</filename> missing or "
+"corrupted)"
+msgstr ""
+"Gagal mencipta menu\n"
+"(mungkin %1 hilang atau rosak)"
+
+#: mainwindow.cpp:458
+#, fuzzy
+#| msgid "&Templates..."
+msgctxt "@action"
+msgid "&Templates..."
+msgstr "&Templat..."
+
+#: mainwindow.cpp:462
+#, fuzzy
+#| msgid "&New..."
+msgctxt "@action"
+msgid "&New"
+msgstr "&Baru..."
+
+#: mainwindow.cpp:489
+#, fuzzy
+#| msgid "Create Tem&plate..."
+msgctxt "@action"
+msgid "Create Tem&plate..."
+msgstr "CiptaTem&plat..."
+
+#: mainwindow.cpp:493
+#, fuzzy
+#| msgid "&Copy..."
+msgctxt "@action"
+msgid "&Copy..."
+msgstr "&Salin..."
+
+#: mainwindow.cpp:498 resourceselector.cpp:518
+#, fuzzy
+#| msgid "&Edit..."
+msgctxt "@action"
+msgid "&Edit..."
+msgstr "&Edit..."
+
+#: mainwindow.cpp:503
+#, fuzzy
+msgctxt "@action"
+msgid "&Delete"
+msgstr "_n: Hapuskan penggera"
+
+#: mainwindow.cpp:509
+#, fuzzy
+msgctxt "@action"
+msgid "Delete Without Confirmation"
+msgstr "Konfigurasi penggera"
+
+#: mainwindow.cpp:514
+#, fuzzy
+#| msgid "Reac&tivate"
+msgctxt "@action"
+msgid "Reac&tivate"
+msgstr "Ak&tifkan semula"
+
+#: mainwindow.cpp:524
+msgctxt "@action"
+msgid "Wake From Suspend..."
+msgstr ""
+
+#: mainwindow.cpp:541
+#, fuzzy
+msgctxt "@action"
+msgid "Show Archi&ved Alarms"
+msgstr "Papar Penggera luput"
+
+#: mainwindow.cpp:546
+#, fuzzy
+#| msgid "Show in System &Tray"
+msgctxt "@action"
+msgid "Show in System &Tray"
+msgstr "Papar dalam &Dulang Sistem"
+
+#: mainwindow.cpp:550
+#, fuzzy
+msgctxt "@action"
+msgid "Show &Calendars"
+msgstr "URL fail kalendar"
+
+#: mainwindow.cpp:558
+#, fuzzy
+msgctxt "@action"
+msgid "Import &Alarms..."
+msgstr "Import &Tarikh Lahir..."
+
+#: mainwindow.cpp:562
+#, fuzzy
+#| msgid "Import &Birthdays..."
+msgctxt "@action"
+msgid "Import &Birthdays..."
+msgstr "Import &Tarikh Lahir..."
+
+#: mainwindow.cpp:566
+#, fuzzy
+msgctxt "@action"
+msgid "E&xport Selected Alarms..."
+msgstr "Import &Tarikh Lahir..."
+
+#: mainwindow.cpp:570 resourceselector.cpp:538
+#, fuzzy
+msgctxt "@action"
+msgid "E&xport..."
+msgstr "Import &Tarikh Lahir..."
+
+#: mainwindow.cpp:574
+#, fuzzy
+#| msgid "&Refresh Alarms"
+msgctxt "@action"
+msgid "&Refresh Alarms"
+msgstr "&Muat Semula Penggera"
+
+#: mainwindow.cpp:829
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Do you really want to delete the selected alarm?"
+msgid_plural "Do you really want to delete the %1 selected alarms?"
+msgstr[0] "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
+msgstr[1] "Anda pasti ingin menghapuskan %1 penggera yang dipilih?"
+
+#: mainwindow.cpp:831
+#, fuzzy
+msgctxt "@title:window"
+msgid "Delete Alarm"
+msgid_plural "Delete Alarms"
+msgstr[0] "_n: Hapuskan penggera"
+msgstr[1] "Hapuskan penggera"
+
+#: mainwindow.cpp:832 templatedlg.cpp:214
+#, fuzzy
+msgctxt "@action:button"
+msgid "&Delete"
+msgstr "_n: Hapuskan penggera"
+
+#: mainwindow.cpp:976
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Hide Archived Alarms"
+msgstr "Sembunyikan Penggera Luput"
+
+#: mainwindow.cpp:977
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Show Archived Alarms"
+msgstr "Papar Penggera luput"
+
+#: mainwindow.cpp:1064
+#, fuzzy
+msgctxt "@info"
+msgid "Import birthdays"
+msgstr "Import &Tarikh Lahir..."
+
+#: mainwindow.cpp:1234
+#, fuzzy, kde-format
+#| msgctxt "Undo-action: message"
+#| msgid "%1: %2"
+msgctxt "@action Undo/Redo [action]"
+msgid "%1 %2"
+msgstr "%1: %2"
+
+#: mainwindow.cpp:1235
+#, fuzzy, kde-format
+#| msgctxt "Undo [action]: message"
+#| msgid "%1 %2: %3"
+msgctxt "@action Undo [action]: message"
+msgid "%1 %2: %3"
+msgstr "%1 %2: %3"
+
+#: mainwindow.cpp:1521
+#, fuzzy
+#| msgid "Display Alarms"
+msgctxt "@item:inlistbox"
+msgid "Display Alarm"
+msgstr "Paparkan penggera"
+
+#: mainwindow.cpp:1523
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@item:inlistbox"
+msgid "Email Alarm"
+msgstr "Penggera E-mel"
+
+#: mainwindow.cpp:1525
+#, fuzzy
+#| msgid "Command Alarms"
+msgctxt "@item:inlistbox"
+msgid "Command Alarm"
+msgstr "Penggera Arahan"
+
+#: mainwindow.cpp:1527
+#, fuzzy
+#| msgid "Alarm Type"
+msgctxt "@title:window"
+msgid "Alarm Type"
+msgstr "Jenis penggera"
+
+#: mainwindow.cpp:1528
+#, fuzzy
+#| msgid "Choose Alarm Template"
+msgctxt "@info"
+msgid "Choose alarm type to create:"
+msgstr "Pilih Templat Penggera"
+
+#: mainwindow.cpp:1681
+#, fuzzy
+#| msgid "Ena&ble"
+msgctxt "@action"
+msgid "Ena&ble"
+msgstr "&Aktifkan"
+
+#: mainwindow.cpp:1681
+#, fuzzy
+#| msgid "Disa&ble"
+msgctxt "@action"
+msgid "Disa&ble"
+msgstr "&Nyahaktifkan"
+
+#: messagewin.cpp:438
+#, fuzzy
+#| msgid "Reminder"
+msgctxt "@title:window"
+msgid "Reminder"
+msgstr "Peringatan"
+
+#: messagewin.cpp:438 messagewin.cpp:861
+#, fuzzy
+#| msgid "Message"
+msgctxt "@title:window"
+msgid "Message"
+msgstr "Mesej"
+
+#: messagewin.cpp:456
+#, fuzzy
+#| msgid ""
+#| "The scheduled date/time for the message (as opposed to the actual time of "
+#| "display)."
+msgctxt "@info:whatsthis"
+msgid ""
+"The scheduled date/time for the message (as opposed to the actual time of "
+"display)."
+msgstr ""
+"Jadual tarikh/waktu untuk mesej ( bertentangan dengan waktu sebenar paparan)."
+
+#: messagewin.cpp:463
+#, fuzzy
+#| msgid "Reminder"
+msgctxt "@info"
+msgid "Reminder"
+msgstr "Peringatan"
+
+#: messagewin.cpp:487
+#, fuzzy
+#| msgid "The file whose contents are displayed below"
+msgctxt "@info:whatsthis"
+msgid "The file whose contents are displayed below"
+msgstr "Fail yang kandungannya dipaparkan di bawah"
+
+#: messagewin.cpp:543
+#, fuzzy
+#| msgid "The contents of the file to be displayed"
+msgctxt "@info:whatsthis"
+msgid "The contents of the file to be displayed"
+msgstr "Kandungan fail untuk dipaparkan"
+
+#: messagewin.cpp:551
+#, fuzzy
+#| msgid "File is a folder"
+msgctxt "@info"
+msgid "File is a folder"
+msgstr "Fail adalah folder"
+
+#: messagewin.cpp:551
+#, fuzzy
+#| msgid "Failed to open file"
+msgctxt "@info"
+msgid "Failed to open file"
+msgstr "Gagal membuka fail"
+
+#: messagewin.cpp:551
+#, fuzzy
+#| msgid "File not found"
+msgctxt "@info"
+msgid "File not found"
+msgstr "Fail tidak ditemui"
+
+#: messagewin.cpp:571
+#, fuzzy
+#| msgid "The alarm message"
+msgctxt "@info:whatsthis"
+msgid "The alarm message"
+msgstr "Mesej penggera"
+
+#: messagewin.cpp:598
+msgctxt "@info:whatsthis"
+msgid "The output of the alarm's command"
+msgstr ""
+
+#: messagewin.cpp:640
+#, fuzzy
+#| msgid "The email to send"
+msgctxt "@info:whatsthis"
+msgid "The email to send"
+msgstr "E-mel yang hendak dihantar"
+
+#: messagewin.cpp:646
+#, fuzzy
+#| msgctxt "Email addressee"
+#| msgid "To:"
+msgctxt "@info Email addressee"
+msgid "To:"
+msgstr "Kepada:"
+
+#: messagewin.cpp:653
+#, fuzzy
+#| msgctxt "Email subject"
+#| msgid "Subject:"
+msgctxt "@info Email subject"
+msgid "Subject:"
+msgstr "Subjek:"
+
+#: messagewin.cpp:679
+msgctxt "@title:window"
+msgid "Error"
+msgstr ""
+
+#: messagewin.cpp:699
+msgctxt "@option:check"
+msgid "Do not display this error message again for this alarm"
+msgstr ""
+
+#: messagewin.cpp:718
+#, fuzzy
+#| msgid "Acknowledge the alarm"
+msgctxt "@info:whatsthis"
+msgid "Acknowledge the alarm"
+msgstr "Perakui penggera"
+
+#: messagewin.cpp:723
+#, fuzzy
+#| msgid "&Edit..."
+msgctxt "@action:button"
+msgid "&Edit..."
+msgstr "&Edit..."
+
+#: messagewin.cpp:728
+#, fuzzy
+#| msgid "Edit the alarm."
+msgctxt "@info:whatsthis"
+msgid "Edit the alarm."
+msgstr "Edit penggera."
+
+#: messagewin.cpp:732
+#, fuzzy
+#| msgid "&Defer..."
+msgctxt "@action:button"
+msgid "&Defer..."
+msgstr "&Tunda..."
+
+#: messagewin.cpp:737
+#, fuzzy
+#| msgid ""
+#| "Defer the alarm until later.\n"
+#| "You will be prompted to specify when the alarm should be redisplayed."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Defer the alarm until later.</para><para>You will be prompted to "
+"specify when the alarm should be redisplayed.</para>"
+msgstr ""
+"Tunda penggera.\n"
+"Anda akan digesa untuk menyatakan bila penggera patut dipapar semula."
+
+#: messagewin.cpp:767
+#, fuzzy
+#| msgid "Use KMail &identities"
+msgctxt "@info:tooltip Locate this email in KMail"
+msgid "Locate in <application>KMail</application>"
+msgstr "Gunakan &identiti KMail "
+
+#: messagewin.cpp:768
+msgctxt "@info:whatsthis"
+msgid "Locate and highlight this email in <application>KMail</application>"
+msgstr ""
+
+#: messagewin.cpp:777
+msgctxt "@info:tooltip"
+msgid "Activate <application>KAlarm</application>"
+msgstr ""
+
+#: messagewin.cpp:778
+msgctxt "@info:whatsthis"
+msgid "Activate <application>KAlarm</application>"
+msgstr ""
+
+#: messagewin.cpp:938
+#, fuzzy
+#| msgid "Today"
+msgctxt "@info"
+msgid "Today"
+msgstr "Hari ini"
+
+#: messagewin.cpp:940
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Tomorrow"
+msgid_plural "in %1 days' time"
+msgstr[0] "_n: Esok"
+msgstr[1] "dalam tempoh %1 hari"
+
+#: messagewin.cpp:942
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "in 1 week's time"
+msgid_plural "in %1 weeks' time"
+msgstr[0] "_n: dalam tempoh masa 1 minggu"
+msgstr[1] "dalam tempoh  %1 minggu"
+
+#: messagewin.cpp:956
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "in 1 minute's time"
+msgid_plural "in %1 minutes' time"
+msgstr[0] "_n: dalam tempoh 1 minit"
+msgstr[1] "dalam tempoh  %1 minit"
+
+#: messagewin.cpp:958
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "in 1 hour's time"
+msgid_plural "in %1 hours' time"
+msgstr[0] "_n: dalam tempoh 1 jam"
+msgstr[1] "dalam tempoh %1 jam"
+
+#: messagewin.cpp:961
+#, fuzzy, kde-format
+msgctxt "@item:intext inserted into 'in ... %1 minute's time' below"
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "_n: 1 Jam"
+msgstr[1] "%1 Jam"
+
+#: messagewin.cpp:962
+#, fuzzy, kde-format
+msgctxt "@info '%2' is the previous message '1 hour'/'%1 hours'"
+msgid "in %2 1 minute's time"
+msgid_plural "in %2 %1 minutes' time"
+msgstr[0] "_n: dalam tempoh 1 minit"
+msgstr[1] "dalam tempoh  %1 minit"
+
+#: messagewin.cpp:1464 messagewin.cpp:1474
+#, fuzzy
+#| msgid "Unable to speak message"
+msgctxt "@info"
+msgid "Unable to speak message"
+msgstr "Tidak dapat menuturkan mesej"
+
+#: messagewin.cpp:1474
+#, fuzzy
+msgctxt "@info"
+msgid "D-Bus call say() failed"
+msgstr "Panggilan DCOP mesej tutur gagal "
+
+#: messagewin.cpp:1617
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Cannot open audio file: <filename>%1</filename>"
+msgstr ""
+"Tidak dapat membuka fail audio:\n"
+"%1"
+
+#: messagewin.cpp:1715
+#, fuzzy, kde-format
+#| msgid ""
+#| "Error attaching file:\n"
+#| "%1"
+msgctxt "@info"
+msgid ""
+"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
+msgstr ""
+"Ralat semasa melampirkan fail:\n"
+"%1"
+
+#: messagewin.cpp:2044
+#, fuzzy
+#| msgid "Do you really want to acknowledge this alarm?"
+msgctxt "@info"
+msgid "Do you really want to acknowledge this alarm?"
+msgstr "Anda pasti ingin memperakui penggera ini?"
+
+#: messagewin.cpp:2045
+#, fuzzy
+#| msgid "Acknowledge Alarm"
+msgctxt "@action:button"
+msgid "Acknowledge Alarm"
+msgstr "Perakui penggera"
+
+#: messagewin.cpp:2045
+#, fuzzy
+#| msgid "&Acknowledge"
+msgctxt "@action:button"
+msgid "Acknowledge"
+msgstr "&Perakui"
+
+#: messagewin.cpp:2096
+msgctxt "@info"
+msgid "Unable to locate this email in <application>KMail</application>"
+msgstr ""
+
+#: messagewin.cpp:2266
+msgctxt "@info"
+msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
+msgstr ""
+
+#: kalarmapp.cpp:346
+#, kde-format
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found, or not unique"
+msgstr ""
+
+#: kalarmapp.cpp:348
+#, fuzzy, kde-format
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found"
+msgstr "Paparkan Seting"
+
+#: kalarmapp.cpp:376 kalarmapp.cpp:378
+#, kde-format
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found, or not editable"
+msgstr ""
+
+#: kalarmapp.cpp:557
+msgctxt "@info"
+msgid ""
+"Time zones are not accessible:<nl/>KAlarm will use the UTC time zone.<nl/"
+"><nl/>(The KDE time zone service is not available:<nl/>check that "
+"<application>ktimezoned</application> is installed.)"
+msgstr ""
+
+#: kalarmapp.cpp:634
+#, fuzzy
+#| msgid ""
+#| "Quitting will disable alarms\n"
+#| "(once any alarm message windows are closed)."
+msgctxt "@info"
+msgid ""
+"Quitting will disable alarms (once any alarm message windows are closed)."
+msgstr ""
+"Keluar akan menyahaktifkan penggera\n"
+"(apabila sebarang mesej penggera tetingkap ditutup)."
+
+#: kalarmapp.cpp:642
+msgctxt "@info"
+msgid "Quitting will cancel the scheduled Wake from Suspend."
+msgstr ""
+
+#: kalarmapp.cpp:654
+msgctxt "@info"
+msgid ""
+"Do you want to start KAlarm at login?<nl/>(Note that alarms will be disabled "
+"if KAlarm is not started.)"
+msgstr ""
+
+#: kalarmapp.cpp:2126
+#, fuzzy
+#| msgid "Error creating temporary script file"
+msgctxt "@info"
+msgid "Error creating temporary script file"
+msgstr "Ralat semasa mencipta fail skrip sementara"
+
+#: kalarmapp.cpp:2214
+#, fuzzy
+#| msgid "Pre-alarm action:"
+msgctxt "@info"
+msgid "Pre-alarm action:"
+msgstr "Tindakan prapenggera:"
+
+#: kalarmapp.cpp:2220
+#, fuzzy
+#| msgid "Post-alarm action:"
+msgctxt "@info"
+msgid "Post-alarm action:"
+msgstr "Tindakan pascapenggera:"
+
+#: newalarmaction.cpp:59
+#, fuzzy
+msgctxt "@item:inmenu"
+msgid "&Display Alarm Template"
+msgstr "_n: Hapuskan templat penggera"
+
+#: newalarmaction.cpp:59
+#, fuzzy
+#| msgid "Display Alarms"
+msgctxt "@action"
+msgid "New Display Alarm"
+msgstr "Paparkan penggera"
+
+#: newalarmaction.cpp:62
+#, fuzzy
+#| msgid "Choose Alarm Template"
+msgctxt "@item:inmenu"
+msgid "&Command Alarm Template"
+msgstr "Pilih Templat Penggera"
+
+#: newalarmaction.cpp:62
+#, fuzzy
+#| msgid "Command Alarms"
+msgctxt "@action"
+msgid "New Command Alarm"
+msgstr "Penggera Arahan"
+
+#: newalarmaction.cpp:65
+#, fuzzy
+#| msgid "Edit Alarm Template"
+msgctxt "@item:inmenu"
+msgid "&Email Alarm Template"
+msgstr "Edit templat penggera"
+
+#: newalarmaction.cpp:65
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@action"
+msgid "New Email Alarm"
+msgstr "Penggera E-mel"
+
+#: newalarmaction.cpp:68
+#, fuzzy
+#| msgid "Edit Alarm Template"
+msgctxt "@item:inmenu"
+msgid "&Audio Alarm Template"
+msgstr "Edit templat penggera"
+
+#: newalarmaction.cpp:68
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@action"
+msgid "New Audio Alarm"
+msgstr "Penggera E-mel"
+
+#: newalarmaction.cpp:79
+#, fuzzy
+#| msgid "New Alarm From &Template"
+msgctxt "@action"
+msgid "New Alarm From &Template"
+msgstr "Penggera Baru Dari &Templat "
+
+#: reminder.cpp:49
+#, fuzzy
+#| msgid "Reminder for first recurrence only"
+msgctxt "@option:check"
+msgid "Reminder for first recurrence only"
+msgstr "Peringatan untuk pengulangan pertama sahaja"
+
+#: reminder.cpp:51
+#, fuzzy
+#| msgid "in advance"
+msgctxt "@item:inlistbox"
+msgid "in advance"
+msgstr "Serta merta"
+
+#: reminder.cpp:65
+#, fuzzy
+#| msgid "Rem&inder:"
+msgctxt "@option:check"
+msgid "Reminder:"
+msgstr "Per&ingatan:"
+
+#: reminder.cpp:69
+msgctxt "@item:inlistbox"
+msgid "afterwards"
+msgstr ""
+
+#: reminder.cpp:91
+#, fuzzy
+#| msgid ""
+#| "Display the reminder only before the first time the alarm is scheduled"
+msgctxt "@info:whatsthis"
+msgid "Display the reminder only for the first time the alarm is scheduled"
+msgstr "Paparkan hanya peringatan sebelum penggera pertama dijadualkan"
+
+#: recurrenceedit.cpp:81
+#, fuzzy
+#| msgid "No Recurrence"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "No Recurrence"
+msgstr "Tiada Pengulangan"
+
+#: recurrenceedit.cpp:82
+#, fuzzy
+#| msgid "At Login"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "At Login"
+msgstr "Semasa Log masuk"
+
+#: recurrenceedit.cpp:83
+#, fuzzy
+#| msgid "Hourly/Minutely"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Hourly/Minutely"
+msgstr "Setiap Jam/Setiap minit"
+
+#: recurrenceedit.cpp:84
+#, fuzzy
+#| msgid "Daily"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Daily"
+msgstr "Harian"
+
+#: recurrenceedit.cpp:85
+#, fuzzy
+#| msgid "Weekly"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Weekly"
+msgstr "Mingguan"
+
+#: recurrenceedit.cpp:86
+#, fuzzy
+#| msgid "Monthly"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Monthly"
+msgstr "Bulanan"
+
+#: recurrenceedit.cpp:87
+#, fuzzy
+#| msgid "Yearly"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Yearly"
+msgstr "Tahunan"
+
+#: recurrenceedit.cpp:113
+#, fuzzy
+#| msgid "Recurrence Rule"
+msgctxt "@title:group"
+msgid "Recurrence Rule"
+msgstr "Peraturan pengulangan"
+
+#: recurrenceedit.cpp:131
+#, fuzzy
+#| msgid "Do not repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Do not repeat the alarm"
+msgstr "Jangan ulang penggera"
+
+#: recurrenceedit.cpp:139
+#, fuzzy
+#| msgid ""
+#| "Trigger the alarm at the specified date/time and at every login until "
+#| "then.\n"
+#| "Note that it will also be triggered any time the alarm daemon is "
+#| "restarted."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Trigger the alarm at the specified date/time and at every login until "
+"then.</para><para>Note that it will also be triggered any time "
+"<application>KAlarm</application> is restarted.</para>"
+msgstr ""
+"Cetuskan penggera pada tarikh/waktu yang dinyatakan dan pada setiap log "
+"masuk sehingga tarikh/waktu itu\n"
+"Ambil perhatian bahawa ini juga akan dicetus setiap kali daemon penggera "
+"dimulakan semula."
+
+#: recurrenceedit.cpp:147
+#, fuzzy
+#| msgid "Repeat the alarm at hourly/minutely intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at hourly/minutely intervals"
+msgstr "Ulang penggera dalam sela masa setiap jam/minit"
+
+#: recurrenceedit.cpp:154
+#, fuzzy
+#| msgid "Repeat the alarm at daily intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at daily intervals"
+msgstr "Ulang penggera dalam sela masa harian"
+
+#: recurrenceedit.cpp:161
+#, fuzzy
+#| msgid "Repeat the alarm at weekly intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at weekly intervals"
+msgstr "Ulang penggera dalam sela masa mingguan"
+
+#: recurrenceedit.cpp:168
+#, fuzzy
+#| msgid "Repeat the alarm at monthly intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at monthly intervals"
+msgstr "Ulang penggera dalam sela masa bulanan"
+
+#: recurrenceedit.cpp:175
+#, fuzzy
+#| msgid "Repeat the alarm at annual intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at annual intervals"
+msgstr "Ulang penggera dalam sela masa tahunan"
+
+#: recurrenceedit.cpp:185
+#, fuzzy
+#| msgid ""
+#| "Simple alarm repetition duration must be less than the recurrence "
+#| "interval minus any reminder period"
+msgctxt "@info:whatsthis"
+msgid ""
+"Set up a repetition within the recurrence, to trigger the alarm multiple "
+"times each time the recurrence is due."
+msgstr ""
+"Tempoh pengulangan penggera ringkas mesti kurang daripada sela masa ulangan "
+"tolak jangka masa sebarang peringatan"
+
+#: recurrenceedit.cpp:233
+#, fuzzy
+#| msgid "Recurrence End"
+msgctxt "@title:group"
+msgid "Recurrence End"
+msgstr "Pengulangan tamat"
+
+#: recurrenceedit.cpp:242
+#, fuzzy
+#| msgid "No &end"
+msgctxt "@option:radio"
+msgid "No end"
+msgstr "Tiada &penamat"
+
+#: recurrenceedit.cpp:245
+#, fuzzy
+#| msgid "Repeat the alarm indefinitely"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm indefinitely"
+msgstr "Ulang penggera tanpa jangka masa tetap"
+
+#: recurrenceedit.cpp:253
+#, fuzzy
+#| msgid "End a&fter:"
+msgctxt "@option:radio"
+msgid "End after:"
+msgstr "Tamatkan &selepas:"
+
+#: recurrenceedit.cpp:255
+#, fuzzy
+#| msgid "Repeat the alarm for the number of times specified"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm for the number of times specified"
+msgstr "Ulang penggera dengan bilangan yang dinyatakan"
+
+#: recurrenceedit.cpp:262
+#, fuzzy
+#| msgid "Enter the total number of times to trigger the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the total number of times to trigger the alarm"
+msgstr "Masukkan jumlah berapa kali penggera hendak dicetus"
+
+#: recurrenceedit.cpp:266
+#, fuzzy
+#| msgid "occurrence(s)"
+msgctxt "@label"
+msgid "occurrence(s)"
+msgstr "Kejadian"
+
+#: recurrenceedit.cpp:278
+#, fuzzy
+#| msgid "End &by:"
+msgctxt "@option:radio"
+msgid "End by:"
+msgstr "Tamatkan &sebelum:"
+
+#: recurrenceedit.cpp:281
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Repeat the alarm until the date/time specified.</para><para><note>This "
+"applies to the main recurrence only. It does not limit any sub-repetition "
+"which will occur regardless after the last main recurrence.</note></para>"
+msgstr ""
+
+#: recurrenceedit.cpp:286
+msgctxt "@info/plain"
+msgid "This uses the same time zone as the start time."
+msgstr ""
+
+#: recurrenceedit.cpp:288
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
+msgstr "Masukkan tarikh terakhir untuk mengulang penggera"
+
+#: recurrenceedit.cpp:295
+#, fuzzy, kde-format
+#| msgid "Enter the last time to repeat the alarm."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter the last time to repeat the alarm.</para><para>%1</para><para>"
+"%2</para>"
+msgstr "Masukkan waktu terakhir mengulang penggera"
+
+#: recurrenceedit.cpp:300
+#, fuzzy
+#| msgid ""
+#| "Stop repeating the alarm after your first login on or after the specified "
+#| "end date"
+msgctxt "@info:whatsthis"
+msgid ""
+"Stop repeating the alarm after your first login on or after the specified "
+"end date"
+msgstr ""
+"Hentikan mengulang penggera selepas log masuk pertama atau selepas tarikh "
+"tamat dinyatakan"
+
+#: recurrenceedit.cpp:318
+#, fuzzy
+#| msgid "E&xceptions"
+msgctxt "@title:group"
+msgid "Exceptions"
+msgstr "&Pengecualian"
+
+#: recurrenceedit.cpp:329
+#, fuzzy
+#| msgid ""
+#| "The list of exceptions, i.e. dates/times excluded from the recurrence"
+msgctxt "@info:whatsthis"
+msgid "The list of exceptions, i.e. dates/times excluded from the recurrence"
+msgstr "Senarai pengecualian, iaitu tarikh/waktu dikeluarkan dari pengulangan"
+
+#: recurrenceedit.cpp:348
+#, fuzzy
+#| msgid ""
+#| "Enter a date to insert in the exceptions list. Use in conjunction with "
+#| "the Add or Change button below."
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter a date to insert in the exceptions list. Use in conjunction with the "
+"Add or Change button below."
+msgstr ""
+"Masukkan tarikh untuk diselitkan dalam senarai pengecualian. Gunakan bersama "
+"butang Tambah atau Ubah di bawah."
+
+#: recurrenceedit.cpp:355
+#, fuzzy
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Tambah..."
+
+#: recurrenceedit.cpp:356
+#, fuzzy
+#| msgid "Add the date entered above to the exceptions list"
+msgctxt "@info:whatsthis"
+msgid "Add the date entered above to the exceptions list"
+msgstr "Tambah tarikh yang dimasukkan di atas ke dalam senarai pengecualian"
+
+#: recurrenceedit.cpp:360
+#, fuzzy
+msgctxt "@action:button"
+msgid "Change"
+msgstr "&Ubah..."
+
+#: recurrenceedit.cpp:362
+#, fuzzy
+#| msgid ""
+#| "Replace the currently highlighted item in the exceptions list with the "
+#| "date entered above"
+msgctxt "@info:whatsthis"
+msgid ""
+"Replace the currently highlighted item in the exceptions list with the date "
+"entered above"
+msgstr ""
+"Gantikan item yang sedang ditonjolkan dalam senarai pengecualian dengan "
+"tarikh yang dimasukkan di atas"
+
+#: recurrenceedit.cpp:366 templatedlg.cpp:120
+#, fuzzy
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "_n: Hapuskan penggera"
+
+#: recurrenceedit.cpp:367
+#, fuzzy
+#| msgid "Remove the currently highlighted item from the exceptions list"
+msgctxt "@info:whatsthis"
+msgid "Remove the currently highlighted item from the exceptions list"
+msgstr "Keluarkan item yang sedang ditonjolkan dari senarai pengecualian"
+
+#: recurrenceedit.cpp:374
+msgctxt "@option:check"
+msgid "Exclude holidays"
+msgstr ""
+
+#: recurrenceedit.cpp:377
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Do not trigger the alarm on holidays.</para><para>You can specify your "
+"holiday region in the Configuration dialog.</para>"
+msgstr ""
+
+#: recurrenceedit.cpp:382
+msgctxt "@option:check"
+msgid "Only during working time"
+msgstr ""
+
+#: recurrenceedit.cpp:385
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Only execute the alarm during working hours, on working days.</"
+"para><para>You can specify working days and hours in the Configuration "
+"dialog.</para>"
+msgstr ""
+
+#: recurrenceedit.cpp:428
+#, fuzzy
+#| msgid "End date is earlier than start date"
+msgctxt "@info"
+msgid "End date is earlier than start date"
+msgstr "Tarikh tamat lebih awal daripada tarikh mula"
+
+#: recurrenceedit.cpp:429
+#, fuzzy
+#| msgid "End date/time is earlier than start date/time"
+msgctxt "@info"
+msgid "End date/time is earlier than start date/time"
+msgstr "Tarikh/masa tamat lebih awal daripada tarikh/waktu mula"
+
+#: recurrenceedit.cpp:699
+#, fuzzy
+#| msgid "Date cannot be earlier than %1"
+msgctxt "@info"
+msgid "Date cannot be earlier than start date"
+msgstr "Tarikh tidak boleh lebih awal daripada %1"
+
+#: recurrenceedit.cpp:1114
+#, fuzzy
+#| msgid "Recur e&very"
+msgctxt "@label:spinbox"
+msgid "Recur e&very"
+msgstr "Ulang &setiap"
+
+#: recurrenceedit.cpp:1183
+#, fuzzy
+#| msgid "hours:minutes"
+msgctxt "@label Time units for user-entered numbers"
+msgid "hours:minutes"
+msgstr "jam:minit"
+
+#: recurrenceedit.cpp:1184
+#, fuzzy
+#| msgid ""
+#| "Enter the number of hours and minutes between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of hours and minutes between repetitions of the alarm"
+msgstr "Masukkan bilangan jam dan minit di antara pengulangan penggera"
+
+#: recurrenceedit.cpp:1204
+#, fuzzy
+#| msgctxt "On: Tuesday"
+#| msgid "O&n:"
+msgctxt "@label On: Tuesday"
+msgid "O&n:"
+msgstr "&Pada hari:"
+
+#: recurrenceedit.cpp:1285
+#, fuzzy
+#| msgid "No day selected"
+msgctxt "@info"
+msgid "No day selected"
+msgstr "Tiada hari dipilih"
+
+#: recurrenceedit.cpp:1314
+#, fuzzy
+#| msgid "day(s)"
+msgctxt "@label Time unit for user-entered number"
+msgid "day(s)"
+msgstr "Hari"
+
+#: recurrenceedit.cpp:1315
+#, fuzzy
+#| msgid "Enter the number of days between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of days between repetitions of the alarm"
+msgstr "Masukkan bilangan hari di antara pengulangan penggera"
+
+#: recurrenceedit.cpp:1316
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Select the days of the week on which the alarm is allowed to occur"
+msgstr "Pilih hari dalam minggu yang penggera diulang"
+
+#: recurrenceedit.cpp:1327
+#, fuzzy
+#| msgid "week(s)"
+msgctxt "@label Time unit for user-entered number"
+msgid "week(s)"
+msgstr "Minggu"
+
+#: recurrenceedit.cpp:1328
+#, fuzzy
+#| msgid "Enter the number of weeks between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of weeks between repetitions of the alarm"
+msgstr "Masukkan bilangan minggu di antara pengulangan penggera"
+
+#: recurrenceedit.cpp:1329
+#, fuzzy
+#| msgid "Select the days of the week on which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the days of the week on which to repeat the alarm"
+msgstr "Pilih hari dalam minggu yang penggera diulang"
+
+#: recurrenceedit.cpp:1352
+#, fuzzy
+msgctxt "@option:radio On day number in the month"
+msgid "O&n day"
+msgstr "Hari ini"
+
+#: recurrenceedit.cpp:1356
+#, fuzzy
+#| msgid "Repeat the alarm on the selected day of the month"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm on the selected day of the month"
+msgstr "Ulang penggera pada hari dipilih bagi bulan berkenaan"
+
+#: recurrenceedit.cpp:1363
+#, fuzzy
+#| msgctxt "Last day of month"
+#| msgid "Last"
+msgctxt "@item:inlistbox Last day of month"
+msgid "Last"
+msgstr "Akhir"
+
+#: recurrenceedit.cpp:1366
+#, fuzzy
+#| msgid "Select the day of the month on which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the day of the month on which to repeat the alarm"
+msgstr "Pilih hari dalam bulan yang  penggera hendak diulang"
+
+#: recurrenceedit.cpp:1380
+#, fuzzy
+#| msgctxt "On the 1st Tuesday"
+#| msgid "On t&he"
+msgctxt "@option:radio On the 1st Tuesday"
+msgid "On t&he"
+msgstr "&Pada hari"
+
+#: recurrenceedit.cpp:1384
+#, fuzzy
+#| msgid ""
+#| "Repeat the alarm on one day of the week, in the selected week of the month"
+msgctxt "@info:whatsthis"
+msgid ""
+"Repeat the alarm on one day of the week, in the selected week of the month"
+msgstr "Ulang penggera satu hari dalam minggu dipilih dalam bulan berkenaan"
+
+#: recurrenceedit.cpp:1388
+#, fuzzy
+#| msgid "1st"
+msgctxt "@item:inlistbox"
+msgid "1st"
+msgstr "1"
+
+#: recurrenceedit.cpp:1389
+#, fuzzy
+#| msgid "2nd"
+msgctxt "@item:inlistbox"
+msgid "2nd"
+msgstr "2"
+
+#: recurrenceedit.cpp:1390
+#, fuzzy
+#| msgid "3rd"
+msgctxt "@item:inlistbox"
+msgid "3rd"
+msgstr "3"
+
+#: recurrenceedit.cpp:1391
+#, fuzzy
+#| msgid "4th"
+msgctxt "@item:inlistbox"
+msgid "4th"
+msgstr "4"
+
+#: recurrenceedit.cpp:1392
+#, fuzzy
+#| msgid "5th"
+msgctxt "@item:inlistbox"
+msgid "5th"
+msgstr "5"
+
+#: recurrenceedit.cpp:1393
+#, fuzzy
+#| msgctxt "Last day of month"
+#| msgid "Last"
+msgctxt "@item:inlistbox Last Monday in March"
+msgid "Last"
+msgstr "Akhir"
+
+#: recurrenceedit.cpp:1394
+#, fuzzy
+#| msgid "2nd Last"
+msgctxt "@item:inlistbox"
+msgid "2nd Last"
+msgstr "Ke-2 akhir"
+
+#: recurrenceedit.cpp:1395
+#, fuzzy
+#| msgid "3rd Last"
+msgctxt "@item:inlistbox"
+msgid "3rd Last"
+msgstr "Ke-3 akhir"
+
+#: recurrenceedit.cpp:1396
+#, fuzzy
+#| msgid "4th Last"
+msgctxt "@item:inlistbox"
+msgid "4th Last"
+msgstr "Ke-4 akhir"
+
+#: recurrenceedit.cpp:1397
+#, fuzzy
+#| msgid "5th Last"
+msgctxt "@item:inlistbox"
+msgid "5th Last"
+msgstr "ke-5 akhir"
+
+#: recurrenceedit.cpp:1400
+msgctxt "@item:inlistbox Every (Monday...) in month"
+msgid "Every"
+msgstr ""
+
+#: recurrenceedit.cpp:1403
+#, fuzzy
+#| msgid "Select the week of the month in which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the week of the month in which to repeat the alarm"
+msgstr "Pilih minggu dalam bulan yang penggera hendak diulang"
+
+#: recurrenceedit.cpp:1418
+#, fuzzy
+#| msgid "Select the day of the week on which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the day of the week on which to repeat the alarm"
+msgstr "Pilih hari dalam minggu yang penggera hendak diulang"
+
+#: recurrenceedit.cpp:1541
+#, fuzzy
+#| msgid "month(s)"
+msgctxt "@label Time unit for user-entered number"
+msgid "month(s)"
+msgstr "Bulan"
+
+#: recurrenceedit.cpp:1542
+#, fuzzy
+#| msgid "Enter the number of months between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of months between repetitions of the alarm"
+msgstr "Masukkan bilangan bulan antara pengulangan penggera"
+
+#: recurrenceedit.cpp:1553
+#, fuzzy
+#| msgid "year(s)"
+msgctxt "@label Time unit for user-entered number"
+msgid "year(s)"
+msgstr "Tahun"
+
+#: recurrenceedit.cpp:1554
+#, fuzzy
+#| msgid "Enter the number of years between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of years between repetitions of the alarm"
+msgstr "Masukkan bilangan tahun di antara pengulangan penggera"
+
+#: recurrenceedit.cpp:1561
+#, fuzzy
+#| msgid "Monthly"
+msgctxt "@label List of months to select"
+msgid "Months:"
+msgstr "Bulanan"
+
+#: recurrenceedit.cpp:1583
+#, fuzzy
+#| msgid "Select the months of the year in which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the months of the year in which to repeat the alarm"
+msgstr "Pilih bulan dalam tahun yang penggera hendak diulang"
+
+#: recurrenceedit.cpp:1592
+msgctxt "@label:listbox"
+msgid "February 2&9th alarm in non-leap years:"
+msgstr ""
+
+#: recurrenceedit.cpp:1596
+#, fuzzy
+#| msgid "None"
+msgctxt "@item:inlistbox No date"
+msgid "None"
+msgstr "Tiada"
+
+#: recurrenceedit.cpp:1597
+#, fuzzy
+msgctxt "@item:inlistbox 1st March (short form)"
+msgid "1 Mar"
+msgstr "_n: 1 Tahun"
+
+#: recurrenceedit.cpp:1598
+msgctxt "@item:inlistbox 28th February (short form)"
+msgid "28 Feb"
+msgstr ""
+
+#: recurrenceedit.cpp:1604
+msgctxt "@info:whatsthis"
+msgid ""
+"Select which date, if any, the February 29th alarm should trigger in non-"
+"leap years"
+msgstr ""
+
+#: recurrenceedit.cpp:1688
+#, fuzzy
+#| msgid "No month selected"
+msgctxt "@info"
+msgid "No month selected"
+msgstr "Tiada bulan dipilih"
+
+#: repetitionbutton.cpp:87
+#, fuzzy
+#| msgid "Alarm Repetition"
+msgctxt "@title:window"
+msgid "Alarm Sub-Repetition"
+msgstr "Pengulangan penggera"
+
+#: repetitionbutton.cpp:165
+#, fuzzy
+#| msgctxt "Repeat every 10 minutes"
+#| msgid "&Repeat every"
+msgctxt "@option:check Repeat every 10 minutes"
+msgid "Repeat every"
+msgstr "&Ulang setiap"
+
+#: repetitionbutton.cpp:166
+#, fuzzy
+#| msgid ""
+#| "Check to repeat the alarm each time it recurs. Instead of the alarm "
+#| "triggering once at each recurrence, this option makes the alarm trigger "
+#| "multiple times at each recurrence."
+msgctxt "@info:whatsthis"
+msgid ""
+"Instead of the alarm triggering just once at each recurrence, checking this "
+"option makes the alarm trigger multiple times at each recurrence."
+msgstr ""
+"Semak supaya penggera diulang setiap kali ia berulang. Opsyen ini membuatkan "
+"penggera dicetus berkali-kali pada setiap pengulangan, dan bukan mencetus "
+"hanya sekali."
+
+#: repetitionbutton.cpp:168
+#, fuzzy
+#| msgid "Enter the time between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the time between repetitions of the alarm"
+msgstr "Masukkan waktu antara pengulangan penggera"
+
+#: repetitionbutton.cpp:186
+#, fuzzy
+#| msgid "&Number of repetitions:"
+msgctxt "@option:radio"
+msgid "Number of repetitions:"
+msgstr "&Bilangan pengulangan:"
+
+#: repetitionbutton.cpp:188
+#, fuzzy
+#| msgid ""
+#| "Check to specify the number of times the alarm should repeat after each "
+#| "recurrence"
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to specify the number of times the alarm should repeat after each "
+"recurrence"
+msgstr ""
+"Semak untuk menetapkan berapa kali penggera patut diulang selepas setiap "
+"pengulangan."
+
+#: repetitionbutton.cpp:196
+#, fuzzy
+#| msgid ""
+#| "Enter the number of times to trigger the alarm after its initial "
+#| "occurrence"
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter the number of times to trigger the alarm after its initial occurrence"
+msgstr "Masukkan berapa kali penggera dicetus selepas dimulakan"
+
+#: repetitionbutton.cpp:204
+#, fuzzy
+#| msgid "&Duration:"
+msgctxt "@option:radio"
+msgid "Duration:"
+msgstr "&Tempoh masa:"
+
+#: repetitionbutton.cpp:206
+#, fuzzy
+#| msgid "Check to specify how long the alarm is to be repeated"
+msgctxt "@info:whatsthis"
+msgid "Check to specify how long the alarm is to be repeated"
+msgstr "Semak untuk menyatakan berapa lama masa untuk mengulang penggera"
+
+#: repetitionbutton.cpp:212
+#, fuzzy
+#| msgid "Enter the length of time to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the length of time to repeat the alarm"
+msgstr "Masukkan berapa lama untuk mengulang penggera"
+
+#: resourceconfigdialog.cpp:48 resourceselector.cpp:238
+#, fuzzy
+#| msgid "Alarm Configuration"
+msgctxt "@title:window"
+msgid "Calendar Configuration"
+msgstr "Konfigurasi penggera"
+
+#: resourceconfigdialog.cpp:61
+#, fuzzy
+msgctxt "@title:group"
+msgid "General Settings"
+msgstr "Paparkan Seting"
+
+#: resourceconfigdialog.cpp:63
+#, fuzzy
+msgctxt "@label:textbox Calendar name"
+msgid "Name:"
+msgstr "Nama"
+
+#: resourceconfigdialog.cpp:68
+msgctxt "@option:check"
+msgid "Read-only"
+msgstr ""
+
+#: resourceconfigdialog.cpp:81
+#, fuzzy, kde-format
+msgctxt "@title:group"
+msgid "<resource>%1</resource> Calendar Settings"
+msgstr "Paparkan Seting"
+
+#: resourceconfigdialog.cpp:123
+msgctxt "@info"
+msgid "Please enter a calendar name."
+msgstr ""
+
+#: resourcemodelview.cpp:119 resources/alarmresource.cpp:360
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Disabled (wrong alarm type)"
+msgstr "&Nyahaktifkan warna penggera:"
+
+#: resources/resourcelocaldirwidget.cpp:40
+#: resources/resourcelocalwidget.cpp:42
+#, fuzzy
+#| msgid "Action"
+msgctxt "@label:textbox"
+msgid "Location:"
+msgstr "Tindakan"
+
+#: resources/resourcelocaldirwidget.cpp:72
+#: resources/resourcelocalwidget.cpp:77
+msgctxt "@info"
+msgid "No location specified.  The calendar will be invalid."
+msgstr ""
+
+#: resources/resourceremotewidget.cpp:42
+msgctxt "@label:textbox"
+msgid "Download from:"
+msgstr ""
+
+#: resources/resourceremotewidget.cpp:48
+msgctxt "@label:textbox"
+msgid "Upload to:"
+msgstr ""
+
+#: resources/resourceremotewidget.cpp:94
+msgctxt "@info"
+msgid "You have specified no upload URL: the alarm calendar will be read-only."
+msgstr ""
+
+#: resources/resourcewidget.cpp:54
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Calendar <resource>%1</resource> cannot be made writable since it either was "
+"not created by <application>KAlarm</application>, or was created by a newer "
+"version of <application>KAlarm</application>"
+msgstr ""
+
+#: resources/alarmresource.cpp:354 resourceselector.cpp:856
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Active alarms"
+msgstr "Aktifkan semula penggera"
+
+#: resources/alarmresource.cpp:355 resourceselector.cpp:858
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Archived alarms"
+msgstr "Aktifkan semula penggera"
+
+#: resources/alarmresource.cpp:356 resourceselector.cpp:860
+#, fuzzy
+#| msgid "Alarm Templates"
+msgctxt "@info/plain"
+msgid "Alarm templates"
+msgstr "Templat penggera"
+
+#: resources/alarmresource.cpp:359 resourceselector.cpp:865
+msgctxt "@info/plain"
+msgid "Read-write"
+msgstr ""
+
+#: resources/alarmresource.cpp:360 resourceselector.cpp:867
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Enabled"
+msgstr "&Aktifkan"
+
+#: resources/alarmresource.cpp:361 resourceselector.cpp:870
+msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
+msgid "Yes"
+msgstr ""
+
+#: resources/alarmresource.cpp:361 resourceselector.cpp:871
+#, fuzzy
+#| msgid "None"
+msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
+msgid "No"
+msgstr "Tiada"
+
+#: resources/alarmresource.cpp:363
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<title>%1</title><para>Calendar type: %2<nl/>Contents: %3<nl/>%4: <filename>"
+"%5</filename><nl/>Permissions: %6<nl/>Status: %7<nl/>Default calendar: %8</"
+"para>"
+msgstr ""
+
+#: resources/alarmresources.cpp:159
+#, fuzzy, kde-format
+#| msgid ""
+#| "Invalid email attachment:\n"
+#| "%1"
+msgctxt "@info"
+msgid "%1: invalid calendar file name: <filename>%2</filename>"
+msgstr ""
+"Lampiran e-mel tidak sah:\n"
+"%1"
+
+#: resources/alarmresources.cpp:167
+#, fuzzy, kde-format
+#| msgid "%1: file name not permitted: %2"
+msgctxt "@info"
+msgid "%1: file name not permitted: <filename>%2</filename>"
+msgstr "%1: nama fail  tidak diizinkan: %2"
+
+#: resourceselector.cpp:100
+#, fuzzy
+msgctxt "@title:group"
+msgid "Calendars"
+msgstr "URL fail kalendar"
+
+#: resourceselector.cpp:104
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "Active Alarms"
+msgstr "Aktifkan semula penggera"
+
+#: resourceselector.cpp:105
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "Archived Alarms"
+msgstr "Aktifkan semula penggera"
+
+#: resourceselector.cpp:106
+#, fuzzy
+#| msgid "Alarm Templates"
+msgctxt "@item:inlistbox"
+msgid "Alarm Templates"
+msgstr "Templat penggera"
+
+#: resourceselector.cpp:108
+msgctxt "@info:whatsthis"
+msgid "Choose which type of data to show alarm calendars for"
+msgstr ""
+
+#: resourceselector.cpp:125
+msgctxt "@info:whatsthis"
+msgid ""
+"List of available calendars of the selected type. The checked state shows "
+"whether a calendar is enabled (checked) or disabled (unchecked). The default "
+"calendar is shown in bold."
+msgstr ""
+
+#: resourceselector.cpp:136 templatedlg.cpp:110
+#, fuzzy
+msgctxt "@action:button"
+msgid "Edit..."
+msgstr "&Edit..."
+
+#: resourceselector.cpp:141
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Edit the highlighted calendar"
+msgstr "Edit templat penggera yang sedang ditonjolkan "
+
+#: resourceselector.cpp:142
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Remove the highlighted calendar from the list.</para><para>The "
+"calendar itself is left intact, and may subsequently be reinstated in the "
+"list if desired.</para>"
+msgstr ""
+
+#: resourceselector.cpp:175
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Add a new active alarm calendar"
+msgstr "Cipta templat penggera baru"
+
+#: resourceselector.cpp:179
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Add a new archived alarm calendar"
+msgstr "Cipta templat penggera baru"
+
+#: resourceselector.cpp:183
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Add a new alarm template calendar"
+msgstr "Cipta templat penggera baru"
+
+#: resourceselector.cpp:239
+msgctxt "@info"
+msgid "Select storage type of new calendar:"
+msgstr ""
+
+#: resourceselector.cpp:246
+#, kde-format
+msgctxt "@info"
+msgid "Unable to create calendar of type <resource>%1</resource>."
+msgstr ""
+
+#: resourceselector.cpp:249
+#, fuzzy, kde-format
+#| msgid "%1: wrong calendar file"
+msgctxt "@info/plain"
+msgid "%1 calendar"
+msgstr "%1: fail kalendar salah"
+
+#: resourceselector.cpp:363
+#, fuzzy
+msgctxt "@info"
+msgid "You cannot make your default active alarm calendar read-only."
+msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
+
+#: resourceselector.cpp:370
+#, fuzzy
+msgctxt "@info"
+msgid ""
+"You cannot make your default archived alarm calendar read-only while expired "
+"alarms are configured to be kept."
+msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
+
+#: resourceselector.cpp:374
+#, fuzzy
+msgctxt "@info"
+msgid "Do you really want to make your default calendar read-only?"
+msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
+
+#: resourceselector.cpp:427
+#, fuzzy
+msgctxt "@info"
+msgid "You cannot remove your default active alarm calendar."
+msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
+
+#: resourceselector.cpp:434
+#, fuzzy
+msgctxt "@info"
+msgid ""
+"You cannot remove your default archived alarm calendar while expired alarms "
+"are configured to be kept."
+msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
+
+#: resourceselector.cpp:450
+#, kde-format
+msgctxt "@info"
+msgid "<para>It also contains:%1</para>"
+msgstr ""
+
+#: resourceselector.cpp:451
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para><resource>%1</resource> is the default calendar for:%2</para>"
+"%3<para>Do you really want to remove it from all calendar lists?</para>"
+msgstr ""
+
+#: resourceselector.cpp:455 resourceselector.cpp:463
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid ""
+"Do you really want to remove your default calendar (<resource>%1</resource>) "
+"from the list?"
+msgstr "_n: Anda pasti ingin menghapuskan templat penggera yang dipilih?"
+
+#: resourceselector.cpp:458
+#, fuzzy, kde-format
+#| msgid ""
+#| "Alarms are currently disabled.\n"
+#| "Do you want to enable alarms now?"
+msgctxt "@info"
+msgid ""
+"<para><resource>%1</resource> contains:%2</para><para>Do you really want to "
+"remove it from all calendar lists?</para>"
+msgstr ""
+"Penggera sedang nyahaktif.\n"
+"Anda ingin aktifkan penggera sekarang?"
+
+#: resourceselector.cpp:461 resourceselector.cpp:464
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid ""
+"Do you really want to remove the calendar <resource>%1</resource> from the "
+"list?"
+msgstr "_n: Anda pasti ingin menghapuskan templat penggera yang dipilih?"
+
+#: resourceselector.cpp:501
+msgctxt "@action Reload calendar"
+msgid "Re&load"
+msgstr ""
+
+#: resourceselector.cpp:505
+#, fuzzy
+msgctxt "@action"
+msgid "&Save"
+msgstr "&Hantar"
+
+#: resourceselector.cpp:509
+#, fuzzy
+msgctxt "@action"
+msgid "Show &Details"
+msgstr "Papar waktu &penggera"
+
+#: resourceselector.cpp:512
+#, fuzzy
+#| msgid "Font & Color"
+msgctxt "@action"
+msgid "Set &Color..."
+msgstr "Warna & fon"
+
+#: resourceselector.cpp:515
+#, fuzzy
+#| msgid "Font & Color"
+msgctxt "@action"
+msgid "Clear C&olor"
+msgstr "Warna & fon"
+
+#: resourceselector.cpp:522
+msgctxt "@action"
+msgid "&Update Calendar Format"
+msgstr ""
+
+#: resourceselector.cpp:526
+#, fuzzy
+msgctxt "@action"
+msgid "&Remove"
+msgstr "&Buang"
+
+#: resourceselector.cpp:532
+#, fuzzy
+msgctxt "@action"
+msgid "&Add..."
+msgstr "Tambah..."
+
+#: resourceselector.cpp:535
+#, fuzzy
+msgctxt "@action"
+msgid "Im&port..."
+msgstr "Import &Tarikh Lahir..."
+
+#: resourceselector.cpp:621
+#, fuzzy
+msgctxt "@action"
+msgid "Use as &Default for Active Alarms"
+msgstr "Gunakan fon &piawai"
+
+#: resourceselector.cpp:622
+#, fuzzy
+msgctxt "@action"
+msgid "Use as &Default for Archived Alarms"
+msgstr "Gunakan fon &piawai"
+
+#: resourceselector.cpp:623
+#, fuzzy
+msgctxt "@action"
+msgid "Use as &Default for Alarm Templates"
+msgstr "_n: Hapuskan templat penggera"
+
+#: resourceselector.cpp:740
+#, fuzzy
+msgctxt "@info/plain"
+msgid "It is not an active alarm calendar."
+msgstr "Cipta templat penggera baru"
+
+#: resourceselector.cpp:743
+#, fuzzy
+msgctxt "@info/plain"
+msgid "It is not an archived alarm calendar."
+msgstr "Cipta templat penggera baru"
+
+#: resourceselector.cpp:746
+#, fuzzy
+msgctxt "@info/plain"
+msgid "It is not an alarm template calendar."
+msgstr "Cipta templat penggera baru"
+
+#: resourceselector.cpp:751
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>Calendar <resource>%1</resource> has been disabled:</para><para>%2</"
+"para>"
+msgstr ""
+
+#: resourceselector.cpp:861
+msgctxt "@info/plain List separator"
+msgid ", "
+msgstr ""
+
+#: resourceselector.cpp:873
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<title>%1</title><para>ID: %2<nl/>Calendar type: %3<nl/>Contents: %4<nl/>%5: "
+"<filename>%6</filename><nl/>Permissions: %7<nl/>Status: %8<nl/>Default "
+"calendar: %9</para>"
+msgstr ""
+
+#: soundpicker.cpp:50
+#, fuzzy
+msgctxt "@label:listbox Listbox providing audio options"
+msgid "Sound:"
+msgstr "&Bunyi"
+
+#: soundpicker.cpp:51
+#, fuzzy
+#| msgid "None"
+msgctxt "@item:inlistbox No sound"
+msgid "None"
+msgstr "Tiada"
+
+#: soundpicker.cpp:52
+#, fuzzy
+#| msgid "Beep"
+msgctxt "@item:inlistbox"
+msgid "Beep"
+msgstr "Bip"
+
+#: soundpicker.cpp:53
+#, fuzzy
+#| msgid "Speak"
+msgctxt "@item:inlistbox"
+msgid "Speak"
+msgstr "Tuturkan"
+
+#: soundpicker.cpp:54
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "Sound file"
+msgstr "&Fail bunyi:"
+
+#: soundpicker.cpp:98
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Configure sound file"
+msgstr "Pilih fail bunyi"
+
+#: soundpicker.cpp:99
+#, fuzzy
+#| msgid "Configure a sound file to play when the alarm is displayed."
+msgctxt "@info:whatsthis"
+msgid "Configure a sound file to play when the alarm is displayed."
+msgstr "Konfigurkan fail bunyi untuk disiarkan apabila penggera dipaparkan."
+
+#: soundpicker.cpp:132
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: the message is displayed silently."
+msgstr "Bipkan apabila mesej dipaparkan"
+
+#: soundpicker.cpp:133
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: a simple beep is sounded."
+msgstr ""
+
+#: soundpicker.cpp:134
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<interface>%1</interface>: an audio file is played. You will be prompted to "
+"choose the file and set play options."
+msgstr ""
+
+#: soundpicker.cpp:138
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: the message text is spoken."
+msgstr "Tuturkan mesej apabila ia dipaparkan"
+
+#: soundpicker.cpp:140
+#, kde-format
+msgctxt "@info:whatsthis Combination of multiple whatsthis items"
+msgid ""
+"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
+"item><item>%2</item><item>%3</item><item>%4</item></list></para>"
+msgstr ""
+
+#: soundpicker.cpp:148
+#, kde-format
+msgctxt "@info:whatsthis Combination of multiple whatsthis items"
+msgid ""
+"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
+"item><item>%2</item><item>%3</item></list></para>"
+msgstr ""
+
+#: soundpicker.cpp:268
+#, fuzzy
+#| msgid "Sound File"
+msgctxt "@title:window"
+msgid "Sound File"
+msgstr "Fail Bunyi"
+
+#: soundpicker.cpp:330
+#, fuzzy
+#| msgid "Choose Sound File"
+msgctxt "@title:window"
+msgid "Choose Sound File"
+msgstr "Pilih Fail bunyi"
+
+#: specialactions.cpp:48
+#, fuzzy
+#| msgid "Special Actions..."
+msgctxt "@action:button"
+msgid "Special Actions..."
+msgstr "Tindakan Khas..."
+
+#: specialactions.cpp:56
+#, fuzzy
+#| msgid "Specify actions to execute before and after the alarm is displayed."
+msgctxt "@info:whatsthis"
+msgid "Specify actions to execute before and after the alarm is displayed."
+msgstr ""
+"Nyatakan tindakan yang hendak dilaksanakan sebelum dan selepas penggera "
+"dipaparkan."
+
+#: specialactions.cpp:107
+#, fuzzy
+#| msgid "Special Alarm Actions"
+msgctxt "@title:window"
+msgid "Special Alarm Actions"
+msgstr "Tindakan Penggera Khas"
+
+#: specialactions.cpp:165
+#, fuzzy
+msgctxt "@title:group"
+msgid "Pre-Alarm Action"
+msgstr "Tindakan prapenggera:"
+
+#: specialactions.cpp:175 specialactions.cpp:210
+#, fuzzy
+#| msgid "Co&mmand"
+msgctxt "@label:textbox"
+msgid "Command:"
+msgstr "&Arahan"
+
+#: specialactions.cpp:180
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter a shell command to execute before the alarm is displayed.</"
+"para><para>Note that it is executed only when the alarm proper is displayed, "
+"not when a reminder or deferred alarm is displayed.</para><para><note>KAlarm "
+"will wait for the command to complete before displaying the alarm.</note></"
+"para>"
+msgstr ""
+"Masukkan arahan shell untuk dilaksanakan sebelum penggera dipaparkan. N.B. "
+"%1 akan menunggu sehingga arahan selesai sebelum penggera dipaparkan."
+
+#: specialactions.cpp:186
+msgctxt "@option:check"
+msgid "Execute for deferred alarms"
+msgstr ""
+
+#: specialactions.cpp:187
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>If unchecked, the command is only executed before the alarm proper is "
+"displayed.</para><para>If checked, the pre-alarm command is also executed "
+"before a deferred alarm is displayed.</para>"
+msgstr ""
+
+#: specialactions.cpp:191
+msgctxt "@option:check"
+msgid "Cancel alarm on error"
+msgstr ""
+
+#: specialactions.cpp:192
+msgctxt "@info:whatsthis"
+msgid ""
+"Cancel the alarm if the pre-alarm command fails, i.e. do not display the "
+"alarm or execute any post-alarm action command."
+msgstr ""
+
+#: specialactions.cpp:195
+msgctxt "@option:check"
+msgid "Do not notify errors"
+msgstr ""
+
+#: specialactions.cpp:196
+#, fuzzy
+#| msgid ""
+#| "The default setting for the recurrence rule in the alarm edit dialog."
+msgctxt "@info:whatsthis"
+msgid ""
+"Do not show error status or error message if the pre-alarm command fails."
+msgstr "Seting piawai untuk peraturan pengulangan dalam dialog edit penggera."
+
+#: specialactions.cpp:200
+#, fuzzy
+msgctxt "@title:group"
+msgid "Post-Alarm Action"
+msgstr "Tindakan pascapenggera:"
+
+#: specialactions.cpp:214
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter a shell command to execute after the alarm window is closed.</"
+"para><para>Note that it is not executed after closing a reminder window. If "
+"you defer the alarm, it is not executed until the alarm is finally "
+"acknowledged or closed.</para>"
+msgstr ""
+"Masukkan arahan shell untuk dilaksanakan sebelum penggera dipaparkan. N.B. "
+"%1 akan menunggu sehingga arahan selesai sebelum penggera dipaparkan."
+
+#: templatedlg.cpp:69
+#, fuzzy
+#| msgid "Alarm Templates"
+msgctxt "@title:window"
+msgid "Alarm Templates"
+msgstr "Templat penggera"
+
+#: templatedlg.cpp:95 templatelistview.cpp:44
+#, fuzzy
+#| msgid "The list of alarm templates"
+msgctxt "@info:whatsthis"
+msgid "The list of alarm templates"
+msgstr "Senarai templat penggera"
+
+#: templatedlg.cpp:103
+#, fuzzy
+#| msgid "&New..."
+msgctxt "@action:button"
+msgid "New"
+msgstr "&Baru..."
+
+#: templatedlg.cpp:104
+#, fuzzy
+#| msgid "&New..."
+msgctxt "@action"
+msgid "New"
+msgstr "&Baru..."
+
+#: templatedlg.cpp:107
+#, fuzzy
+#| msgid "Create a new alarm template"
+msgctxt "@info:whatsthis"
+msgid "Create a new alarm template"
+msgstr "Cipta templat penggera baru"
+
+#: templatedlg.cpp:112
+#, fuzzy
+#| msgid "Edit the currently highlighted alarm template"
+msgctxt "@info:whatsthis"
+msgid "Edit the currently highlighted alarm template"
+msgstr "Edit templat penggera yang sedang ditonjolkan "
+
+#: templatedlg.cpp:115
+#, fuzzy
+#| msgid "Co&py"
+msgctxt "@action:button"
+msgid "Copy"
+msgstr "&Salin"
+
+#: templatedlg.cpp:117
+#, fuzzy
+#| msgid ""
+#| "Create a new alarm template based on a copy of the currently highlighted "
+#| "template"
+msgctxt "@info:whatsthis"
+msgid ""
+"Create a new alarm template based on a copy of the currently highlighted "
+"template"
+msgstr ""
+"Cipta templat penggera  baru berdasarkan satu salinan templat yang sedang "
+"ditonjolkan"
+
+#: templatedlg.cpp:122
+#, fuzzy
+#| msgid "Delete the currently highlighted alarm template"
+msgctxt "@info:whatsthis"
+msgid "Delete the currently highlighted alarm template"
+msgstr "Hapuskan templat penggera  yang sedang ditonjolkan"
+
+#: templatedlg.cpp:211
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Do you really want to delete the selected alarm template?"
+msgid_plural "Do you really want to delete the %1 selected alarm templates?"
+msgstr[0] "_n: Anda pasti ingin menghapuskan templat penggera yang dipilih?"
+msgstr[1] "Anda pasti ingin menghapuskan %1 templat penggera yang dipilih?"
+
+#: templatedlg.cpp:213
+#, fuzzy
+msgctxt "@title:window"
+msgid "Delete Alarm Template"
+msgid_plural "Delete Alarm Templates"
+msgstr[0] "_n: Hapuskan templat penggera"
+msgstr[1] "Hapuskan templat penggera"
+
+#: templatepickdlg.cpp:46
+#, fuzzy
+#| msgid "Choose Alarm Template"
+msgctxt "@title:window"
+msgid "Choose Alarm Template"
+msgstr "Pilih Templat Penggera"
+
+#: templatepickdlg.cpp:77
+#, fuzzy
+#| msgid "Select a template to base the new alarm on."
+msgctxt "@info:whatsthis"
+msgid "Select a template to base the new alarm on."
+msgstr "Pilih templat untuk mendasari penggera baru."
+
+#: traywindow.cpp:100
+#, fuzzy
+#| msgid "New Alarm"
+msgctxt "@action"
+msgid "&New Alarm"
+msgstr "Penggera baru"
+
+#: traywindow.cpp:333
+#, fuzzy
+msgid "Disabled"
+msgstr "&Nyahaktifkan"
+
+#: traywindow.cpp:338
+msgctxt "@info:tooltip Brief: some alarms are disabled"
+msgid "(Some alarms disabled)"
+msgstr ""
+
+#: traywindow.cpp:408
+#, fuzzy, kde-format
+#| msgctxt "prefix + hours:minutes"
+#| msgid "(%1%2:%3)"
+msgctxt "@info/plain prefix + hours:minutes"
+msgid "(%1%2:%3)"
+msgstr "(%1%2:%3)"
+
+#: traywindow.cpp:410
+#, fuzzy, kde-format
+#| msgctxt "prefix + hours:minutes"
+#| msgid "%1%2:%3"
+msgctxt "@info/plain prefix + hours:minutes"
+msgid "%1%2:%3"
+msgstr "%1%2:%3"
+
+#: rtcwakeaction.cpp:89
+#, kde-format
+msgctxt "@text/plain"
+msgid "Could not run <command>%1</command> to set wake from suspend"
+msgstr ""
+
+#: rtcwakeaction.cpp:92
+#, kde-format
+msgctxt "@text/plain"
+msgid ""
+"Error setting wake from suspend.<nl/>Command was: <command>%1</command><nl/"
+">Error code: %2."
+msgstr ""
+
+#: akonadiresourcecreator.cpp:109
+#, fuzzy
+#| msgid "Failed to send email"
+msgctxt "@info/plain"
+msgid "Failed to create new calendar resource"
+msgstr "Gagal menghantar e-mel"
+
+#: calendarmigrator.cpp:329
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info/plain"
+msgid "Failed to create default calendar <resource>%1</resource>"
+msgstr ""
+"Tidak dapat membuka fail audio:\n"
+"%1"
+
+#: calendarmigrator.cpp:331
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info/plain 'Import Alarms' is the name of a menu option"
+msgid ""
+"Failed to convert old configuration for calendar <resource>%1</resource>. "
+"Please use Import Alarms to load its alarms into a new or existing calendar."
+msgstr ""
+"Tidak dapat membuka fail audio:\n"
+"%1"
+
+#: calendarmigrator.cpp:333
+#, fuzzy, kde-format
+#| msgid "Action"
+msgctxt "@info/plain File path or URL"
+msgid "Location: %1"
+msgstr "Tindakan"
+
+#: calendarmigrator.cpp:335
+#, fuzzy, kde-format
+#| msgid ""
+#| "%1\n"
+#| "Are you sure you want to save your changes?"
+msgctxt "@info"
+msgid "<para>%1</para><para>%2</para>"
+msgstr ""
+"%1\n"
+"Anda pasti hendak menyimpan perubahan yang telah dibuat?"
+
+#: calendarmigrator.cpp:337
+#, fuzzy, kde-format
+#| msgid ""
+#| "%1\n"
+#| "Are you sure you want to save your changes?"
+msgctxt "@info"
+msgid "<para>%1</para><para>%2<nl/>(%3)</para>"
+msgstr ""
+"%1\n"
+"Anda pasti hendak menyimpan perubahan yang telah dibuat?"
+
+#: calendarmigrator.cpp:443
+#, fuzzy
+#| msgid "Invalid time"
+msgctxt "@info/plain"
+msgid "Invalid collection"
+msgstr "Waktu tidak sah"
+
+#: calendarmigrator.cpp:457
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info/plain"
+msgid "Failed to update format of calendar <resource>%1</resource>"
+msgstr ""
+"Tidak dapat membuka fail audio:\n"
+"%1"
+
+#: calendarmigrator.cpp:735
+msgctxt "@info/plain"
+msgid "New configuration timed out"
+msgstr ""
+
+#: calendarmigrator.cpp:748
+msgctxt "@info/plain"
+msgid "New configuration was corrupt"
+msgstr ""
+
+#: undo.cpp:440
+#, fuzzy
+#| msgid "Alarm not found"
+msgctxt "@info/plain"
+msgid "Alarm not found"
+msgstr "Penggera tidak ditemui"
+
+#: undo.cpp:441
+#, fuzzy
+#| msgid "Error recreating alarm"
+msgctxt "@info/plain"
+msgid "Error recreating alarm"
+msgstr "Ralat mencipta semula penggera"
+
+#: undo.cpp:442
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Error recreating alarm template"
+msgstr "Ralat mencipta semula penggera"
+
+#: undo.cpp:443
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Cannot reactivate archived alarm"
+msgstr "Tidak dapat mengaktifkan semula penggera luput"
+
+#: undo.cpp:444
+#, fuzzy
+#| msgid "Program error"
+msgctxt "@info/plain"
+msgid "Program error"
+msgstr "Ralat program"
+
+#: undo.cpp:445
+#, fuzzy
+#| msgid "Unknown error"
+msgctxt "@info/plain"
+msgid "Unknown error"
+msgstr "Ralat tidak diketahui"
+
+#: undo.cpp:447
+#, fuzzy, kde-format
+#| msgctxt "Undo-action: message"
+#| msgid "%1: %2"
+msgctxt "@info Undo-action: message"
+msgid "%1: %2"
+msgstr "%1: %2"
+
+#: undo.cpp:684
+#, fuzzy
+#| msgctxt "Action to create a new alarm"
+#| msgid "New alarm"
+msgctxt "@info/plain Action to create a new alarm"
+msgid "New alarm"
+msgstr "Penggera baru"
+
+#: undo.cpp:686
+#, fuzzy
+#| msgctxt "Action to delete an alarm"
+#| msgid "Delete alarm"
+msgctxt "@info/plain Action to delete an alarm"
+msgid "Delete alarm"
+msgstr "Hapuskan penggera"
+
+#: undo.cpp:689
+#, fuzzy
+#| msgctxt "Action to create a new alarm template"
+#| msgid "New template"
+msgctxt "@info/plain Action to create a new alarm template"
+msgid "New template"
+msgstr "Templat baru"
+
+#: undo.cpp:691
+#, fuzzy
+#| msgctxt "Action to delete an alarm template"
+#| msgid "Delete template"
+msgctxt "@info/plain Action to delete an alarm template"
+msgid "Delete template"
+msgstr "Hapuskan templat"
+
+#: undo.cpp:693
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Delete archived alarm"
+msgstr "Hapuskan penggera luput"
+
+#: undo.cpp:916
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Create multiple alarms"
+msgstr "Hapuskan penggera berbilang"
+
+#: undo.cpp:1022
+#, fuzzy
+#| msgctxt "Action to edit an alarm"
+#| msgid "Edit alarm"
+msgctxt "@info/plain Action to edit an alarm"
+msgid "Edit alarm"
+msgstr "Edit penggera"
+
+#: undo.cpp:1024
+#, fuzzy
+#| msgctxt "Action to edit an alarm template"
+#| msgid "Edit template"
+msgctxt "@info/plain Action to edit an alarm template"
+msgid "Edit template"
+msgstr "Edit templat"
+
+#: undo.cpp:1207
+#, fuzzy
+#| msgid "Delete multiple alarms"
+msgctxt "@info/plain"
+msgid "Delete multiple alarms"
+msgstr "Hapuskan penggera berbilang"
+
+#: undo.cpp:1209
+#, fuzzy
+#| msgid "Delete multiple templates"
+msgctxt "@info/plain"
+msgid "Delete multiple templates"
+msgstr "Hapuskan templat berbilang"
+
+#: undo.cpp:1216
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Delete multiple archived alarms"
+msgstr "Hapuskan penggera berbilang yang luput"
+
+#: undo.cpp:1259 undo.cpp:1303
+#, fuzzy
+#| msgid "Reactivate alarm"
+msgctxt "@info/plain"
+msgid "Reactivate alarm"
+msgstr "Aktifkan semula penggera"
+
+#: undo.cpp:1326
+#, fuzzy
+#| msgid "Reactivate multiple alarms"
+msgctxt "@info/plain"
+msgid "Reactivate multiple alarms"
+msgstr "Aktifkan semula penggera berbilang"
+
+#: wakedlg.cpp:56
+msgctxt "@title:window"
+msgid "Wake From Suspend"
+msgstr ""
+
+#: wakedlg.cpp:181
+#, fuzzy
+#| msgid "Next scheduled date and time of the alarm"
+msgctxt "@info"
+msgid "Cannot schedule wakeup time for a date-only alarm"
+msgstr "Tarikh terjadual berikutnya dan waktu penggera"
+
+#: wakedlg.cpp:185
+msgctxt "@info"
+msgid ""
+"<para>This wakeup will cancel any existing wakeup which has been set by "
+"KAlarm or any other application, because your computer can only schedule a "
+"single wakeup time.</para><para><b>Note:</b> Wake From Suspend is not "
+"supported at all on some computers, especially older ones, and some "
+"computers only support setting a wakeup time up to 24 hours ahead. You may "
+"wish to set up a test alarm to check your system's capability.</para>"
+msgstr ""
+
+#: alarmtime.cpp:42 alarmtime.cpp:80
+msgctxt "@info/plain Alarm never occurs"
+msgid "Never"
+msgstr ""
+
+#: alarmtime.cpp:86
+#, fuzzy, no-c-format, kde-format
+#| msgctxt "n days"
+#| msgid " %1d "
+msgctxt "@info/plain n days"
+msgid "%1d"
+msgstr " %1d "
+
+#: alarmtime.cpp:95
+#, fuzzy, kde-format
+#| msgctxt "Undo-action: message"
+#| msgid "%1: %2"
+msgctxt "@info/plain hours:minutes"
+msgid "%1:%2"
+msgstr "%1: %2"
+
+#: alarmtime.cpp:98
+#, fuzzy, kde-format
+#| msgctxt "days hours:minutes"
+#| msgid " %1d %2:%3 "
+msgctxt "@info/plain days hours:minutes"
+msgid "%1d %2:%3"
+msgstr " %1d %2:%3 "
+
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -6086,1862 +7942,6 @@ msgstr "URL fail kalendar"
 #. i18n: ectx: label, entry (MonitorFile), group (General)
 #: rc.cpp:483
 msgid "Monitor file for changes."
-msgstr ""
-
-#: recurrenceedit.cpp:81
-#, fuzzy
-#| msgid "No Recurrence"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "No Recurrence"
-msgstr "Tiada Pengulangan"
-
-#: recurrenceedit.cpp:82
-#, fuzzy
-#| msgid "At Login"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "At Login"
-msgstr "Semasa Log masuk"
-
-#: recurrenceedit.cpp:83
-#, fuzzy
-#| msgid "Hourly/Minutely"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Hourly/Minutely"
-msgstr "Setiap Jam/Setiap minit"
-
-#: recurrenceedit.cpp:84
-#, fuzzy
-#| msgid "Daily"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Daily"
-msgstr "Harian"
-
-#: recurrenceedit.cpp:85
-#, fuzzy
-#| msgid "Weekly"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Weekly"
-msgstr "Mingguan"
-
-#: recurrenceedit.cpp:86
-#, fuzzy
-#| msgid "Monthly"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Monthly"
-msgstr "Bulanan"
-
-#: recurrenceedit.cpp:87
-#, fuzzy
-#| msgid "Yearly"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Yearly"
-msgstr "Tahunan"
-
-#: recurrenceedit.cpp:113
-#, fuzzy
-#| msgid "Recurrence Rule"
-msgctxt "@title:group"
-msgid "Recurrence Rule"
-msgstr "Peraturan pengulangan"
-
-#: recurrenceedit.cpp:131
-#, fuzzy
-#| msgid "Do not repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Do not repeat the alarm"
-msgstr "Jangan ulang penggera"
-
-#: recurrenceedit.cpp:139
-#, fuzzy
-#| msgid ""
-#| "Trigger the alarm at the specified date/time and at every login until "
-#| "then.\n"
-#| "Note that it will also be triggered any time the alarm daemon is "
-#| "restarted."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Trigger the alarm at the specified date/time and at every login until "
-"then.</para><para>Note that it will also be triggered any time "
-"<application>KAlarm</application> is restarted.</para>"
-msgstr ""
-"Cetuskan penggera pada tarikh/waktu yang dinyatakan dan pada setiap log "
-"masuk sehingga tarikh/waktu itu\n"
-"Ambil perhatian bahawa ini juga akan dicetus setiap kali daemon penggera "
-"dimulakan semula."
-
-#: recurrenceedit.cpp:147
-#, fuzzy
-#| msgid "Repeat the alarm at hourly/minutely intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at hourly/minutely intervals"
-msgstr "Ulang penggera dalam sela masa setiap jam/minit"
-
-#: recurrenceedit.cpp:154
-#, fuzzy
-#| msgid "Repeat the alarm at daily intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at daily intervals"
-msgstr "Ulang penggera dalam sela masa harian"
-
-#: recurrenceedit.cpp:161
-#, fuzzy
-#| msgid "Repeat the alarm at weekly intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at weekly intervals"
-msgstr "Ulang penggera dalam sela masa mingguan"
-
-#: recurrenceedit.cpp:168
-#, fuzzy
-#| msgid "Repeat the alarm at monthly intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at monthly intervals"
-msgstr "Ulang penggera dalam sela masa bulanan"
-
-#: recurrenceedit.cpp:175
-#, fuzzy
-#| msgid "Repeat the alarm at annual intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at annual intervals"
-msgstr "Ulang penggera dalam sela masa tahunan"
-
-#: recurrenceedit.cpp:185
-#, fuzzy
-#| msgid ""
-#| "Simple alarm repetition duration must be less than the recurrence "
-#| "interval minus any reminder period"
-msgctxt "@info:whatsthis"
-msgid ""
-"Set up a repetition within the recurrence, to trigger the alarm multiple "
-"times each time the recurrence is due."
-msgstr ""
-"Tempoh pengulangan penggera ringkas mesti kurang daripada sela masa ulangan "
-"tolak jangka masa sebarang peringatan"
-
-#: recurrenceedit.cpp:233
-#, fuzzy
-#| msgid "Recurrence End"
-msgctxt "@title:group"
-msgid "Recurrence End"
-msgstr "Pengulangan tamat"
-
-#: recurrenceedit.cpp:242
-#, fuzzy
-#| msgid "No &end"
-msgctxt "@option:radio"
-msgid "No end"
-msgstr "Tiada &penamat"
-
-#: recurrenceedit.cpp:245
-#, fuzzy
-#| msgid "Repeat the alarm indefinitely"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm indefinitely"
-msgstr "Ulang penggera tanpa jangka masa tetap"
-
-#: recurrenceedit.cpp:253
-#, fuzzy
-#| msgid "End a&fter:"
-msgctxt "@option:radio"
-msgid "End after:"
-msgstr "Tamatkan &selepas:"
-
-#: recurrenceedit.cpp:255
-#, fuzzy
-#| msgid "Repeat the alarm for the number of times specified"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm for the number of times specified"
-msgstr "Ulang penggera dengan bilangan yang dinyatakan"
-
-#: recurrenceedit.cpp:262
-#, fuzzy
-#| msgid "Enter the total number of times to trigger the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the total number of times to trigger the alarm"
-msgstr "Masukkan jumlah berapa kali penggera hendak dicetus"
-
-#: recurrenceedit.cpp:266
-#, fuzzy
-#| msgid "occurrence(s)"
-msgctxt "@label"
-msgid "occurrence(s)"
-msgstr "Kejadian"
-
-#: recurrenceedit.cpp:278
-#, fuzzy
-#| msgid "End &by:"
-msgctxt "@option:radio"
-msgid "End by:"
-msgstr "Tamatkan &sebelum:"
-
-#: recurrenceedit.cpp:281
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Repeat the alarm until the date/time specified.</para><para><note>This "
-"applies to the main recurrence only. It does not limit any sub-repetition "
-"which will occur regardless after the last main recurrence.</note></para>"
-msgstr ""
-
-#: recurrenceedit.cpp:286
-msgctxt "@info/plain"
-msgid "This uses the same time zone as the start time."
-msgstr ""
-
-#: recurrenceedit.cpp:288
-#, fuzzy, kde-format
-msgctxt "@info:whatsthis"
-msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
-msgstr "Masukkan tarikh terakhir untuk mengulang penggera"
-
-#: recurrenceedit.cpp:295
-#, fuzzy, kde-format
-#| msgid "Enter the last time to repeat the alarm."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Enter the last time to repeat the alarm.</para><para>%1</para><para>"
-"%2</para>"
-msgstr "Masukkan waktu terakhir mengulang penggera"
-
-#: recurrenceedit.cpp:300
-#, fuzzy
-#| msgid ""
-#| "Stop repeating the alarm after your first login on or after the specified "
-#| "end date"
-msgctxt "@info:whatsthis"
-msgid ""
-"Stop repeating the alarm after your first login on or after the specified "
-"end date"
-msgstr ""
-"Hentikan mengulang penggera selepas log masuk pertama atau selepas tarikh "
-"tamat dinyatakan"
-
-#: recurrenceedit.cpp:318
-#, fuzzy
-#| msgid "E&xceptions"
-msgctxt "@title:group"
-msgid "Exceptions"
-msgstr "&Pengecualian"
-
-#: recurrenceedit.cpp:329
-#, fuzzy
-#| msgid ""
-#| "The list of exceptions, i.e. dates/times excluded from the recurrence"
-msgctxt "@info:whatsthis"
-msgid "The list of exceptions, i.e. dates/times excluded from the recurrence"
-msgstr "Senarai pengecualian, iaitu tarikh/waktu dikeluarkan dari pengulangan"
-
-#: recurrenceedit.cpp:348
-#, fuzzy
-#| msgid ""
-#| "Enter a date to insert in the exceptions list. Use in conjunction with "
-#| "the Add or Change button below."
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter a date to insert in the exceptions list. Use in conjunction with the "
-"Add or Change button below."
-msgstr ""
-"Masukkan tarikh untuk diselitkan dalam senarai pengecualian. Gunakan bersama "
-"butang Tambah atau Ubah di bawah."
-
-#: recurrenceedit.cpp:355
-#, fuzzy
-msgctxt "@action:button"
-msgid "Add"
-msgstr "Tambah..."
-
-#: recurrenceedit.cpp:356
-#, fuzzy
-#| msgid "Add the date entered above to the exceptions list"
-msgctxt "@info:whatsthis"
-msgid "Add the date entered above to the exceptions list"
-msgstr "Tambah tarikh yang dimasukkan di atas ke dalam senarai pengecualian"
-
-#: recurrenceedit.cpp:360
-#, fuzzy
-msgctxt "@action:button"
-msgid "Change"
-msgstr "&Ubah..."
-
-#: recurrenceedit.cpp:362
-#, fuzzy
-#| msgid ""
-#| "Replace the currently highlighted item in the exceptions list with the "
-#| "date entered above"
-msgctxt "@info:whatsthis"
-msgid ""
-"Replace the currently highlighted item in the exceptions list with the date "
-"entered above"
-msgstr ""
-"Gantikan item yang sedang ditonjolkan dalam senarai pengecualian dengan "
-"tarikh yang dimasukkan di atas"
-
-#: recurrenceedit.cpp:366 templatedlg.cpp:120
-#, fuzzy
-msgctxt "@action:button"
-msgid "Delete"
-msgstr "_n: Hapuskan penggera"
-
-#: recurrenceedit.cpp:367
-#, fuzzy
-#| msgid "Remove the currently highlighted item from the exceptions list"
-msgctxt "@info:whatsthis"
-msgid "Remove the currently highlighted item from the exceptions list"
-msgstr "Keluarkan item yang sedang ditonjolkan dari senarai pengecualian"
-
-#: recurrenceedit.cpp:374
-msgctxt "@option:check"
-msgid "Exclude holidays"
-msgstr ""
-
-#: recurrenceedit.cpp:377
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Do not trigger the alarm on holidays.</para><para>You can specify your "
-"holiday region in the Configuration dialog.</para>"
-msgstr ""
-
-#: recurrenceedit.cpp:382
-msgctxt "@option:check"
-msgid "Only during working time"
-msgstr ""
-
-#: recurrenceedit.cpp:385
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Only execute the alarm during working hours, on working days.</"
-"para><para>You can specify working days and hours in the Configuration "
-"dialog.</para>"
-msgstr ""
-
-#: recurrenceedit.cpp:428
-#, fuzzy
-#| msgid "End date is earlier than start date"
-msgctxt "@info"
-msgid "End date is earlier than start date"
-msgstr "Tarikh tamat lebih awal daripada tarikh mula"
-
-#: recurrenceedit.cpp:429
-#, fuzzy
-#| msgid "End date/time is earlier than start date/time"
-msgctxt "@info"
-msgid "End date/time is earlier than start date/time"
-msgstr "Tarikh/masa tamat lebih awal daripada tarikh/waktu mula"
-
-#: recurrenceedit.cpp:699
-#, fuzzy
-#| msgid "Date cannot be earlier than %1"
-msgctxt "@info"
-msgid "Date cannot be earlier than start date"
-msgstr "Tarikh tidak boleh lebih awal daripada %1"
-
-#: recurrenceedit.cpp:1114
-#, fuzzy
-#| msgid "Recur e&very"
-msgctxt "@label:spinbox"
-msgid "Recur e&very"
-msgstr "Ulang &setiap"
-
-#: recurrenceedit.cpp:1183
-#, fuzzy
-#| msgid "hours:minutes"
-msgctxt "@label Time units for user-entered numbers"
-msgid "hours:minutes"
-msgstr "jam:minit"
-
-#: recurrenceedit.cpp:1184
-#, fuzzy
-#| msgid ""
-#| "Enter the number of hours and minutes between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of hours and minutes between repetitions of the alarm"
-msgstr "Masukkan bilangan jam dan minit di antara pengulangan penggera"
-
-#: recurrenceedit.cpp:1204
-#, fuzzy
-#| msgctxt "On: Tuesday"
-#| msgid "O&n:"
-msgctxt "@label On: Tuesday"
-msgid "O&n:"
-msgstr "&Pada hari:"
-
-#: recurrenceedit.cpp:1285
-#, fuzzy
-#| msgid "No day selected"
-msgctxt "@info"
-msgid "No day selected"
-msgstr "Tiada hari dipilih"
-
-#: recurrenceedit.cpp:1314
-#, fuzzy
-#| msgid "day(s)"
-msgctxt "@label Time unit for user-entered number"
-msgid "day(s)"
-msgstr "Hari"
-
-#: recurrenceedit.cpp:1315
-#, fuzzy
-#| msgid "Enter the number of days between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of days between repetitions of the alarm"
-msgstr "Masukkan bilangan hari di antara pengulangan penggera"
-
-#: recurrenceedit.cpp:1316
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Select the days of the week on which the alarm is allowed to occur"
-msgstr "Pilih hari dalam minggu yang penggera diulang"
-
-#: recurrenceedit.cpp:1327
-#, fuzzy
-#| msgid "week(s)"
-msgctxt "@label Time unit for user-entered number"
-msgid "week(s)"
-msgstr "Minggu"
-
-#: recurrenceedit.cpp:1328
-#, fuzzy
-#| msgid "Enter the number of weeks between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of weeks between repetitions of the alarm"
-msgstr "Masukkan bilangan minggu di antara pengulangan penggera"
-
-#: recurrenceedit.cpp:1329
-#, fuzzy
-#| msgid "Select the days of the week on which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the days of the week on which to repeat the alarm"
-msgstr "Pilih hari dalam minggu yang penggera diulang"
-
-#: recurrenceedit.cpp:1352
-#, fuzzy
-msgctxt "@option:radio On day number in the month"
-msgid "O&n day"
-msgstr "Hari ini"
-
-#: recurrenceedit.cpp:1356
-#, fuzzy
-#| msgid "Repeat the alarm on the selected day of the month"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm on the selected day of the month"
-msgstr "Ulang penggera pada hari dipilih bagi bulan berkenaan"
-
-#: recurrenceedit.cpp:1363
-#, fuzzy
-#| msgctxt "Last day of month"
-#| msgid "Last"
-msgctxt "@item:inlistbox Last day of month"
-msgid "Last"
-msgstr "Akhir"
-
-#: recurrenceedit.cpp:1366
-#, fuzzy
-#| msgid "Select the day of the month on which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the day of the month on which to repeat the alarm"
-msgstr "Pilih hari dalam bulan yang  penggera hendak diulang"
-
-#: recurrenceedit.cpp:1380
-#, fuzzy
-#| msgctxt "On the 1st Tuesday"
-#| msgid "On t&he"
-msgctxt "@option:radio On the 1st Tuesday"
-msgid "On t&he"
-msgstr "&Pada hari"
-
-#: recurrenceedit.cpp:1384
-#, fuzzy
-#| msgid ""
-#| "Repeat the alarm on one day of the week, in the selected week of the month"
-msgctxt "@info:whatsthis"
-msgid ""
-"Repeat the alarm on one day of the week, in the selected week of the month"
-msgstr "Ulang penggera satu hari dalam minggu dipilih dalam bulan berkenaan"
-
-#: recurrenceedit.cpp:1388
-#, fuzzy
-#| msgid "1st"
-msgctxt "@item:inlistbox"
-msgid "1st"
-msgstr "1"
-
-#: recurrenceedit.cpp:1389
-#, fuzzy
-#| msgid "2nd"
-msgctxt "@item:inlistbox"
-msgid "2nd"
-msgstr "2"
-
-#: recurrenceedit.cpp:1390
-#, fuzzy
-#| msgid "3rd"
-msgctxt "@item:inlistbox"
-msgid "3rd"
-msgstr "3"
-
-#: recurrenceedit.cpp:1391
-#, fuzzy
-#| msgid "4th"
-msgctxt "@item:inlistbox"
-msgid "4th"
-msgstr "4"
-
-#: recurrenceedit.cpp:1392
-#, fuzzy
-#| msgid "5th"
-msgctxt "@item:inlistbox"
-msgid "5th"
-msgstr "5"
-
-#: recurrenceedit.cpp:1393
-#, fuzzy
-#| msgctxt "Last day of month"
-#| msgid "Last"
-msgctxt "@item:inlistbox Last Monday in March"
-msgid "Last"
-msgstr "Akhir"
-
-#: recurrenceedit.cpp:1394
-#, fuzzy
-#| msgid "2nd Last"
-msgctxt "@item:inlistbox"
-msgid "2nd Last"
-msgstr "Ke-2 akhir"
-
-#: recurrenceedit.cpp:1395
-#, fuzzy
-#| msgid "3rd Last"
-msgctxt "@item:inlistbox"
-msgid "3rd Last"
-msgstr "Ke-3 akhir"
-
-#: recurrenceedit.cpp:1396
-#, fuzzy
-#| msgid "4th Last"
-msgctxt "@item:inlistbox"
-msgid "4th Last"
-msgstr "Ke-4 akhir"
-
-#: recurrenceedit.cpp:1397
-#, fuzzy
-#| msgid "5th Last"
-msgctxt "@item:inlistbox"
-msgid "5th Last"
-msgstr "ke-5 akhir"
-
-#: recurrenceedit.cpp:1400
-msgctxt "@item:inlistbox Every (Monday...) in month"
-msgid "Every"
-msgstr ""
-
-#: recurrenceedit.cpp:1403
-#, fuzzy
-#| msgid "Select the week of the month in which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the week of the month in which to repeat the alarm"
-msgstr "Pilih minggu dalam bulan yang penggera hendak diulang"
-
-#: recurrenceedit.cpp:1418
-#, fuzzy
-#| msgid "Select the day of the week on which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the day of the week on which to repeat the alarm"
-msgstr "Pilih hari dalam minggu yang penggera hendak diulang"
-
-#: recurrenceedit.cpp:1541
-#, fuzzy
-#| msgid "month(s)"
-msgctxt "@label Time unit for user-entered number"
-msgid "month(s)"
-msgstr "Bulan"
-
-#: recurrenceedit.cpp:1542
-#, fuzzy
-#| msgid "Enter the number of months between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of months between repetitions of the alarm"
-msgstr "Masukkan bilangan bulan antara pengulangan penggera"
-
-#: recurrenceedit.cpp:1553
-#, fuzzy
-#| msgid "year(s)"
-msgctxt "@label Time unit for user-entered number"
-msgid "year(s)"
-msgstr "Tahun"
-
-#: recurrenceedit.cpp:1554
-#, fuzzy
-#| msgid "Enter the number of years between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of years between repetitions of the alarm"
-msgstr "Masukkan bilangan tahun di antara pengulangan penggera"
-
-#: recurrenceedit.cpp:1561
-#, fuzzy
-#| msgid "Monthly"
-msgctxt "@label List of months to select"
-msgid "Months:"
-msgstr "Bulanan"
-
-#: recurrenceedit.cpp:1583
-#, fuzzy
-#| msgid "Select the months of the year in which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the months of the year in which to repeat the alarm"
-msgstr "Pilih bulan dalam tahun yang penggera hendak diulang"
-
-#: recurrenceedit.cpp:1592
-msgctxt "@label:listbox"
-msgid "February 2&9th alarm in non-leap years:"
-msgstr ""
-
-#: recurrenceedit.cpp:1596
-#, fuzzy
-#| msgid "None"
-msgctxt "@item:inlistbox No date"
-msgid "None"
-msgstr "Tiada"
-
-#: recurrenceedit.cpp:1597
-#, fuzzy
-msgctxt "@item:inlistbox 1st March (short form)"
-msgid "1 Mar"
-msgstr "_n: 1 Tahun"
-
-#: recurrenceedit.cpp:1598
-msgctxt "@item:inlistbox 28th February (short form)"
-msgid "28 Feb"
-msgstr ""
-
-#: recurrenceedit.cpp:1604
-msgctxt "@info:whatsthis"
-msgid ""
-"Select which date, if any, the February 29th alarm should trigger in non-"
-"leap years"
-msgstr ""
-
-#: recurrenceedit.cpp:1688
-#, fuzzy
-#| msgid "No month selected"
-msgctxt "@info"
-msgid "No month selected"
-msgstr "Tiada bulan dipilih"
-
-#: reminder.cpp:49
-#, fuzzy
-#| msgid "Reminder for first recurrence only"
-msgctxt "@option:check"
-msgid "Reminder for first recurrence only"
-msgstr "Peringatan untuk pengulangan pertama sahaja"
-
-#: reminder.cpp:51
-#, fuzzy
-#| msgid "in advance"
-msgctxt "@item:inlistbox"
-msgid "in advance"
-msgstr "Serta merta"
-
-#: reminder.cpp:65
-#, fuzzy
-#| msgid "Rem&inder:"
-msgctxt "@option:check"
-msgid "Reminder:"
-msgstr "Per&ingatan:"
-
-#: reminder.cpp:69
-msgctxt "@item:inlistbox"
-msgid "afterwards"
-msgstr ""
-
-#: reminder.cpp:91
-#, fuzzy
-#| msgid ""
-#| "Display the reminder only before the first time the alarm is scheduled"
-msgctxt "@info:whatsthis"
-msgid "Display the reminder only for the first time the alarm is scheduled"
-msgstr "Paparkan hanya peringatan sebelum penggera pertama dijadualkan"
-
-#: repetitionbutton.cpp:87
-#, fuzzy
-#| msgid "Alarm Repetition"
-msgctxt "@title:window"
-msgid "Alarm Sub-Repetition"
-msgstr "Pengulangan penggera"
-
-#: repetitionbutton.cpp:165
-#, fuzzy
-#| msgctxt "Repeat every 10 minutes"
-#| msgid "&Repeat every"
-msgctxt "@option:check Repeat every 10 minutes"
-msgid "Repeat every"
-msgstr "&Ulang setiap"
-
-#: repetitionbutton.cpp:166
-#, fuzzy
-#| msgid ""
-#| "Check to repeat the alarm each time it recurs. Instead of the alarm "
-#| "triggering once at each recurrence, this option makes the alarm trigger "
-#| "multiple times at each recurrence."
-msgctxt "@info:whatsthis"
-msgid ""
-"Instead of the alarm triggering just once at each recurrence, checking this "
-"option makes the alarm trigger multiple times at each recurrence."
-msgstr ""
-"Semak supaya penggera diulang setiap kali ia berulang. Opsyen ini membuatkan "
-"penggera dicetus berkali-kali pada setiap pengulangan, dan bukan mencetus "
-"hanya sekali."
-
-#: repetitionbutton.cpp:168
-#, fuzzy
-#| msgid "Enter the time between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the time between repetitions of the alarm"
-msgstr "Masukkan waktu antara pengulangan penggera"
-
-#: repetitionbutton.cpp:186
-#, fuzzy
-#| msgid "&Number of repetitions:"
-msgctxt "@option:radio"
-msgid "Number of repetitions:"
-msgstr "&Bilangan pengulangan:"
-
-#: repetitionbutton.cpp:188
-#, fuzzy
-#| msgid ""
-#| "Check to specify the number of times the alarm should repeat after each "
-#| "recurrence"
-msgctxt "@info:whatsthis"
-msgid ""
-"Check to specify the number of times the alarm should repeat after each "
-"recurrence"
-msgstr ""
-"Semak untuk menetapkan berapa kali penggera patut diulang selepas setiap "
-"pengulangan."
-
-#: repetitionbutton.cpp:196
-#, fuzzy
-#| msgid ""
-#| "Enter the number of times to trigger the alarm after its initial "
-#| "occurrence"
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter the number of times to trigger the alarm after its initial occurrence"
-msgstr "Masukkan berapa kali penggera dicetus selepas dimulakan"
-
-#: repetitionbutton.cpp:204
-#, fuzzy
-#| msgid "&Duration:"
-msgctxt "@option:radio"
-msgid "Duration:"
-msgstr "&Tempoh masa:"
-
-#: repetitionbutton.cpp:206
-#, fuzzy
-#| msgid "Check to specify how long the alarm is to be repeated"
-msgctxt "@info:whatsthis"
-msgid "Check to specify how long the alarm is to be repeated"
-msgstr "Semak untuk menyatakan berapa lama masa untuk mengulang penggera"
-
-#: repetitionbutton.cpp:212
-#, fuzzy
-#| msgid "Enter the length of time to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the length of time to repeat the alarm"
-msgstr "Masukkan berapa lama untuk mengulang penggera"
-
-#: resourceconfigdialog.cpp:48 resourceselector.cpp:238
-#, fuzzy
-#| msgid "Alarm Configuration"
-msgctxt "@title:window"
-msgid "Calendar Configuration"
-msgstr "Konfigurasi penggera"
-
-#: resourceconfigdialog.cpp:61
-#, fuzzy
-msgctxt "@title:group"
-msgid "General Settings"
-msgstr "Paparkan Seting"
-
-#: resourceconfigdialog.cpp:63
-#, fuzzy
-msgctxt "@label:textbox Calendar name"
-msgid "Name:"
-msgstr "Nama"
-
-#: resourceconfigdialog.cpp:68
-msgctxt "@option:check"
-msgid "Read-only"
-msgstr ""
-
-#: resourceconfigdialog.cpp:81
-#, fuzzy, kde-format
-msgctxt "@title:group"
-msgid "<resource>%1</resource> Calendar Settings"
-msgstr "Paparkan Seting"
-
-#: resourceconfigdialog.cpp:123
-msgctxt "@info"
-msgid "Please enter a calendar name."
-msgstr ""
-
-#: resourcemodelview.cpp:119 resources/alarmresource.cpp:360
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Disabled (wrong alarm type)"
-msgstr "&Nyahaktifkan warna penggera:"
-
-#: resources/alarmresource.cpp:354 resourceselector.cpp:856
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Active alarms"
-msgstr "Aktifkan semula penggera"
-
-#: resources/alarmresource.cpp:355 resourceselector.cpp:858
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Archived alarms"
-msgstr "Aktifkan semula penggera"
-
-#: resources/alarmresource.cpp:356 resourceselector.cpp:860
-#, fuzzy
-#| msgid "Alarm Templates"
-msgctxt "@info/plain"
-msgid "Alarm templates"
-msgstr "Templat penggera"
-
-#: resources/alarmresource.cpp:359 resourceselector.cpp:865
-msgctxt "@info/plain"
-msgid "Read-write"
-msgstr ""
-
-#: resources/alarmresource.cpp:360 resourceselector.cpp:867
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Enabled"
-msgstr "&Aktifkan"
-
-#: resources/alarmresource.cpp:361 resourceselector.cpp:871
-#, fuzzy
-#| msgid "None"
-msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
-msgid "No"
-msgstr "Tiada"
-
-#: resources/alarmresource.cpp:361 resourceselector.cpp:870
-msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
-msgid "Yes"
-msgstr ""
-
-#: resources/alarmresource.cpp:363
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<title>%1</title><para>Calendar type: %2<nl/>Contents: %3<nl/>%4: <filename>"
-"%5</filename><nl/>Permissions: %6<nl/>Status: %7<nl/>Default calendar: %8</"
-"para>"
-msgstr ""
-
-#: resources/alarmresources.cpp:159
-#, fuzzy, kde-format
-#| msgid ""
-#| "Invalid email attachment:\n"
-#| "%1"
-msgctxt "@info"
-msgid "%1: invalid calendar file name: <filename>%2</filename>"
-msgstr ""
-"Lampiran e-mel tidak sah:\n"
-"%1"
-
-#: resources/alarmresources.cpp:167
-#, fuzzy, kde-format
-#| msgid "%1: file name not permitted: %2"
-msgctxt "@info"
-msgid "%1: file name not permitted: <filename>%2</filename>"
-msgstr "%1: nama fail  tidak diizinkan: %2"
-
-#: resources/resourcelocaldirwidget.cpp:40
-#: resources/resourcelocalwidget.cpp:42
-#, fuzzy
-#| msgid "Action"
-msgctxt "@label:textbox"
-msgid "Location:"
-msgstr "Tindakan"
-
-#: resources/resourcelocaldirwidget.cpp:72
-#: resources/resourcelocalwidget.cpp:77
-msgctxt "@info"
-msgid "No location specified.  The calendar will be invalid."
-msgstr ""
-
-#: resources/resourceremotewidget.cpp:42
-msgctxt "@label:textbox"
-msgid "Download from:"
-msgstr ""
-
-#: resources/resourceremotewidget.cpp:48
-msgctxt "@label:textbox"
-msgid "Upload to:"
-msgstr ""
-
-#: resources/resourceremotewidget.cpp:94
-msgctxt "@info"
-msgid "You have specified no upload URL: the alarm calendar will be read-only."
-msgstr ""
-
-#: resources/resourcewidget.cpp:54
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Calendar <resource>%1</resource> cannot be made writable since it either was "
-"not created by <application>KAlarm</application>, or was created by a newer "
-"version of <application>KAlarm</application>"
-msgstr ""
-
-#: resourceselector.cpp:100
-#, fuzzy
-msgctxt "@title:group"
-msgid "Calendars"
-msgstr "URL fail kalendar"
-
-#: resourceselector.cpp:104
-#, fuzzy
-msgctxt "@item:inlistbox"
-msgid "Active Alarms"
-msgstr "Aktifkan semula penggera"
-
-#: resourceselector.cpp:105
-#, fuzzy
-msgctxt "@item:inlistbox"
-msgid "Archived Alarms"
-msgstr "Aktifkan semula penggera"
-
-#: resourceselector.cpp:106
-#, fuzzy
-#| msgid "Alarm Templates"
-msgctxt "@item:inlistbox"
-msgid "Alarm Templates"
-msgstr "Templat penggera"
-
-#: resourceselector.cpp:108
-msgctxt "@info:whatsthis"
-msgid "Choose which type of data to show alarm calendars for"
-msgstr ""
-
-#: resourceselector.cpp:125
-msgctxt "@info:whatsthis"
-msgid ""
-"List of available calendars of the selected type. The checked state shows "
-"whether a calendar is enabled (checked) or disabled (unchecked). The default "
-"calendar is shown in bold."
-msgstr ""
-
-#: resourceselector.cpp:136 templatedlg.cpp:110
-#, fuzzy
-msgctxt "@action:button"
-msgid "Edit..."
-msgstr "&Edit..."
-
-#: resourceselector.cpp:141
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Edit the highlighted calendar"
-msgstr "Edit templat penggera yang sedang ditonjolkan "
-
-#: resourceselector.cpp:142
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Remove the highlighted calendar from the list.</para><para>The "
-"calendar itself is left intact, and may subsequently be reinstated in the "
-"list if desired.</para>"
-msgstr ""
-
-#: resourceselector.cpp:175
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Add a new active alarm calendar"
-msgstr "Cipta templat penggera baru"
-
-#: resourceselector.cpp:179
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Add a new archived alarm calendar"
-msgstr "Cipta templat penggera baru"
-
-#: resourceselector.cpp:183
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Add a new alarm template calendar"
-msgstr "Cipta templat penggera baru"
-
-#: resourceselector.cpp:239
-msgctxt "@info"
-msgid "Select storage type of new calendar:"
-msgstr ""
-
-#: resourceselector.cpp:246
-#, kde-format
-msgctxt "@info"
-msgid "Unable to create calendar of type <resource>%1</resource>."
-msgstr ""
-
-#: resourceselector.cpp:249
-#, fuzzy, kde-format
-#| msgid "%1: wrong calendar file"
-msgctxt "@info/plain"
-msgid "%1 calendar"
-msgstr "%1: fail kalendar salah"
-
-#: resourceselector.cpp:363
-#, fuzzy
-msgctxt "@info"
-msgid "You cannot make your default active alarm calendar read-only."
-msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
-
-#: resourceselector.cpp:370
-#, fuzzy
-msgctxt "@info"
-msgid ""
-"You cannot make your default archived alarm calendar read-only while expired "
-"alarms are configured to be kept."
-msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
-
-#: resourceselector.cpp:374
-#, fuzzy
-msgctxt "@info"
-msgid "Do you really want to make your default calendar read-only?"
-msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
-
-#: resourceselector.cpp:427
-#, fuzzy
-msgctxt "@info"
-msgid "You cannot remove your default active alarm calendar."
-msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
-
-#: resourceselector.cpp:434
-#, fuzzy
-msgctxt "@info"
-msgid ""
-"You cannot remove your default archived alarm calendar while expired alarms "
-"are configured to be kept."
-msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
-
-#: resourceselector.cpp:450
-#, kde-format
-msgctxt "@info"
-msgid "<para>It also contains:%1</para>"
-msgstr ""
-
-#: resourceselector.cpp:451
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para><resource>%1</resource> is the default calendar for:%2</para>"
-"%3<para>Do you really want to remove it from all calendar lists?</para>"
-msgstr ""
-
-#: resourceselector.cpp:455 resourceselector.cpp:463
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid ""
-"Do you really want to remove your default calendar (<resource>%1</resource>) "
-"from the list?"
-msgstr "_n: Anda pasti ingin menghapuskan templat penggera yang dipilih?"
-
-#: resourceselector.cpp:458
-#, fuzzy, kde-format
-#| msgid ""
-#| "Alarms are currently disabled.\n"
-#| "Do you want to enable alarms now?"
-msgctxt "@info"
-msgid ""
-"<para><resource>%1</resource> contains:%2</para><para>Do you really want to "
-"remove it from all calendar lists?</para>"
-msgstr ""
-"Penggera sedang nyahaktif.\n"
-"Anda ingin aktifkan penggera sekarang?"
-
-#: resourceselector.cpp:461 resourceselector.cpp:464
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid ""
-"Do you really want to remove the calendar <resource>%1</resource> from the "
-"list?"
-msgstr "_n: Anda pasti ingin menghapuskan templat penggera yang dipilih?"
-
-#: resourceselector.cpp:501
-msgctxt "@action Reload calendar"
-msgid "Re&load"
-msgstr ""
-
-#: resourceselector.cpp:505
-#, fuzzy
-msgctxt "@action"
-msgid "&Save"
-msgstr "&Hantar"
-
-#: resourceselector.cpp:509
-#, fuzzy
-msgctxt "@action"
-msgid "Show &Details"
-msgstr "Papar waktu &penggera"
-
-#: resourceselector.cpp:512
-#, fuzzy
-#| msgid "Font & Color"
-msgctxt "@action"
-msgid "Set &Color..."
-msgstr "Warna & fon"
-
-#: resourceselector.cpp:515
-#, fuzzy
-#| msgid "Font & Color"
-msgctxt "@action"
-msgid "Clear C&olor"
-msgstr "Warna & fon"
-
-#: resourceselector.cpp:522
-msgctxt "@action"
-msgid "&Update Calendar Format"
-msgstr ""
-
-#: resourceselector.cpp:526
-#, fuzzy
-msgctxt "@action"
-msgid "&Remove"
-msgstr "&Buang"
-
-#: resourceselector.cpp:532
-#, fuzzy
-msgctxt "@action"
-msgid "&Add..."
-msgstr "Tambah..."
-
-#: resourceselector.cpp:535
-#, fuzzy
-msgctxt "@action"
-msgid "Im&port..."
-msgstr "Import &Tarikh Lahir..."
-
-#: resourceselector.cpp:621
-#, fuzzy
-msgctxt "@action"
-msgid "Use as &Default for Active Alarms"
-msgstr "Gunakan fon &piawai"
-
-#: resourceselector.cpp:622
-#, fuzzy
-msgctxt "@action"
-msgid "Use as &Default for Archived Alarms"
-msgstr "Gunakan fon &piawai"
-
-#: resourceselector.cpp:623
-#, fuzzy
-msgctxt "@action"
-msgid "Use as &Default for Alarm Templates"
-msgstr "_n: Hapuskan templat penggera"
-
-#: resourceselector.cpp:740
-#, fuzzy
-msgctxt "@info/plain"
-msgid "It is not an active alarm calendar."
-msgstr "Cipta templat penggera baru"
-
-#: resourceselector.cpp:743
-#, fuzzy
-msgctxt "@info/plain"
-msgid "It is not an archived alarm calendar."
-msgstr "Cipta templat penggera baru"
-
-#: resourceselector.cpp:746
-#, fuzzy
-msgctxt "@info/plain"
-msgid "It is not an alarm template calendar."
-msgstr "Cipta templat penggera baru"
-
-#: resourceselector.cpp:751
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para>Calendar <resource>%1</resource> has been disabled:</para><para>%2</"
-"para>"
-msgstr ""
-
-#: resourceselector.cpp:861
-msgctxt "@info/plain List separator"
-msgid ", "
-msgstr ""
-
-#: resourceselector.cpp:873
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<title>%1</title><para>ID: %2<nl/>Calendar type: %3<nl/>Contents: %4<nl/>%5: "
-"<filename>%6</filename><nl/>Permissions: %7<nl/>Status: %8<nl/>Default "
-"calendar: %9</para>"
-msgstr ""
-
-#: rtcwakeaction.cpp:89
-#, kde-format
-msgctxt "@text/plain"
-msgid "Could not run <command>%1</command> to set wake from suspend"
-msgstr ""
-
-#: rtcwakeaction.cpp:92
-#, kde-format
-msgctxt "@text/plain"
-msgid ""
-"Error setting wake from suspend.<nl/>Command was: <command>%1</command><nl/"
-">Error code: %2."
-msgstr ""
-
-#: sounddlg.cpp:54
-#, fuzzy
-#| msgid "Repeat"
-msgctxt "@option:check"
-msgid "Repeat"
-msgstr "Ulang"
-
-#: sounddlg.cpp:158
-#, fuzzy
-#| msgid "Sound &file:"
-msgctxt "@label"
-msgid "Sound file:"
-msgstr "&Fail bunyi:"
-
-#: sounddlg.cpp:172 sounddlg.cpp:455
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Test the sound"
-msgstr "Hentikan siaran bunyi"
-
-#: sounddlg.cpp:173 sounddlg.cpp:456
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Play the selected sound file."
-msgstr "&Ulang fail bunyi"
-
-#: sounddlg.cpp:179
-#, fuzzy
-#| msgid "Enter the name or URL of a sound file to play."
-msgctxt "@info:whatsthis"
-msgid "Enter the name or URL of a sound file to play."
-msgstr "Masukkan nama atau URL fail bunyi untuk disiarkan"
-
-#: sounddlg.cpp:191
-#, fuzzy
-#| msgid "Select a sound file to play."
-msgctxt "@info:whatsthis"
-msgid "Select a sound file to play."
-msgstr "Pilih fail bunyi untuk disiarkan."
-
-#: sounddlg.cpp:205
-#, fuzzy
-#| msgid ""
-#| "If checked, the sound file will be played repeatedly for as long as the "
-#| "message is displayed."
-msgctxt "@info:whatsthis"
-msgid ""
-"If checked, the sound file will be played repeatedly for as long as the "
-"message is displayed."
-msgstr ""
-"Jika disemak, fail bunyi akan disiarkan berkali-kali selagi mesej dipaparkan."
-
-#: sounddlg.cpp:215
-#, fuzzy
-#| msgid "Interval between alarm repetitions"
-msgctxt "@label:spinbox Length of time to pause between repetitions"
-msgid "Pause between repetitions:"
-msgstr "Jeda masa antara pengulangan penggera"
-
-#: sounddlg.cpp:222 sounddlg.cpp:276
-#, fuzzy
-#| msgid "seconds"
-msgctxt "@label"
-msgid "seconds"
-msgstr "Saat"
-
-#: sounddlg.cpp:224
-#, fuzzy
-#| msgid ""
-#| "Enter how many seconds to fade the sound before reaching the set volume."
-msgctxt "@info:whatsthis"
-msgid "Enter how many seconds to pause between repetitions."
-msgstr "Masukkan berapa saat  untuk pudar sebelum mencapai volum yang diset"
-
-#: sounddlg.cpp:228
-#, fuzzy
-#| msgid "Volume"
-msgctxt "@title:group Sound volume"
-msgid "Volume"
-msgstr "Kekuatan bunyi"
-
-#: sounddlg.cpp:243
-#, fuzzy
-#| msgid "Set volume"
-msgctxt "@option:check"
-msgid "Set volume"
-msgstr "Setkan volum"
-
-#: sounddlg.cpp:246
-#, fuzzy
-#| msgid "Select to choose the volume for playing the sound file."
-msgctxt "@info:whatsthis"
-msgid "Select to choose the volume for playing the sound file."
-msgstr "Pilih untuk memilih kekuatan bunyi untuk siaran fail bunyi"
-
-#: sounddlg.cpp:253
-#, fuzzy
-#| msgid "Choose the volume for playing the sound file."
-msgctxt "@info:whatsthis"
-msgid "Choose the volume for playing the sound file."
-msgstr "Pilih volum untuk menyiarkan fail bunyi"
-
-#: sounddlg.cpp:258
-#, fuzzy
-#| msgid "Fade"
-msgctxt "@option:check"
-msgid "Fade"
-msgstr "Pudar"
-
-#: sounddlg.cpp:261
-#, fuzzy
-#| msgid "Select to fade the volume when the sound file first starts to play."
-msgctxt "@info:whatsthis"
-msgid "Select to fade the volume when the sound file first starts to play."
-msgstr "Pilih volum untuk siaran fail bunyi"
-
-#: sounddlg.cpp:269
-#, fuzzy
-#| msgctxt "Time period over which to fade the sound"
-#| msgid "Fade time:"
-msgctxt "@label:spinbox Time period over which to fade the sound"
-msgid "Fade time:"
-msgstr "Masa pudar:"
-
-#: sounddlg.cpp:278
-#, fuzzy
-#| msgid ""
-#| "Enter how many seconds to fade the sound before reaching the set volume."
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter how many seconds to fade the sound before reaching the set volume."
-msgstr "Masukkan berapa saat  untuk pudar sebelum mencapai volum yang diset"
-
-#: sounddlg.cpp:285
-#, fuzzy
-#| msgid "Initial volume:"
-msgctxt "@label:slider"
-msgid "Initial volume:"
-msgstr "Volum awal:"
-
-#: sounddlg.cpp:293
-#, fuzzy
-#| msgid "Choose the initial volume for playing the sound file."
-msgctxt "@info:whatsthis"
-msgid "Choose the initial volume for playing the sound file."
-msgstr "Pilih volum permulaan untuk siarkan fail bunyi"
-
-#: soundpicker.cpp:50
-#, fuzzy
-msgctxt "@label:listbox Listbox providing audio options"
-msgid "Sound:"
-msgstr "&Bunyi"
-
-#: soundpicker.cpp:51
-#, fuzzy
-#| msgid "None"
-msgctxt "@item:inlistbox No sound"
-msgid "None"
-msgstr "Tiada"
-
-#: soundpicker.cpp:52
-#, fuzzy
-#| msgid "Beep"
-msgctxt "@item:inlistbox"
-msgid "Beep"
-msgstr "Bip"
-
-#: soundpicker.cpp:53
-#, fuzzy
-#| msgid "Speak"
-msgctxt "@item:inlistbox"
-msgid "Speak"
-msgstr "Tuturkan"
-
-#: soundpicker.cpp:54
-#, fuzzy
-msgctxt "@item:inlistbox"
-msgid "Sound file"
-msgstr "&Fail bunyi:"
-
-#: soundpicker.cpp:98
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Configure sound file"
-msgstr "Pilih fail bunyi"
-
-#: soundpicker.cpp:99
-#, fuzzy
-#| msgid "Configure a sound file to play when the alarm is displayed."
-msgctxt "@info:whatsthis"
-msgid "Configure a sound file to play when the alarm is displayed."
-msgstr "Konfigurkan fail bunyi untuk disiarkan apabila penggera dipaparkan."
-
-#: soundpicker.cpp:132
-#, fuzzy, kde-format
-msgctxt "@info:whatsthis"
-msgid "<interface>%1</interface>: the message is displayed silently."
-msgstr "Bipkan apabila mesej dipaparkan"
-
-#: soundpicker.cpp:133
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid "<interface>%1</interface>: a simple beep is sounded."
-msgstr ""
-
-#: soundpicker.cpp:134
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid ""
-"<interface>%1</interface>: an audio file is played. You will be prompted to "
-"choose the file and set play options."
-msgstr ""
-
-#: soundpicker.cpp:138
-#, fuzzy, kde-format
-msgctxt "@info:whatsthis"
-msgid "<interface>%1</interface>: the message text is spoken."
-msgstr "Tuturkan mesej apabila ia dipaparkan"
-
-#: soundpicker.cpp:140
-#, kde-format
-msgctxt "@info:whatsthis Combination of multiple whatsthis items"
-msgid ""
-"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
-"item><item>%2</item><item>%3</item><item>%4</item></list></para>"
-msgstr ""
-
-#: soundpicker.cpp:148
-#, kde-format
-msgctxt "@info:whatsthis Combination of multiple whatsthis items"
-msgid ""
-"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
-"item><item>%2</item><item>%3</item></list></para>"
-msgstr ""
-
-#: soundpicker.cpp:268
-#, fuzzy
-#| msgid "Sound File"
-msgctxt "@title:window"
-msgid "Sound File"
-msgstr "Fail Bunyi"
-
-#: soundpicker.cpp:330
-#, fuzzy
-#| msgid "Choose Sound File"
-msgctxt "@title:window"
-msgid "Choose Sound File"
-msgstr "Pilih Fail bunyi"
-
-#: specialactions.cpp:48
-#, fuzzy
-#| msgid "Special Actions..."
-msgctxt "@action:button"
-msgid "Special Actions..."
-msgstr "Tindakan Khas..."
-
-#: specialactions.cpp:56
-#, fuzzy
-#| msgid "Specify actions to execute before and after the alarm is displayed."
-msgctxt "@info:whatsthis"
-msgid "Specify actions to execute before and after the alarm is displayed."
-msgstr ""
-"Nyatakan tindakan yang hendak dilaksanakan sebelum dan selepas penggera "
-"dipaparkan."
-
-#: specialactions.cpp:107
-#, fuzzy
-#| msgid "Special Alarm Actions"
-msgctxt "@title:window"
-msgid "Special Alarm Actions"
-msgstr "Tindakan Penggera Khas"
-
-#: specialactions.cpp:165
-#, fuzzy
-msgctxt "@title:group"
-msgid "Pre-Alarm Action"
-msgstr "Tindakan prapenggera:"
-
-#: specialactions.cpp:175 specialactions.cpp:210
-#, fuzzy
-#| msgid "Co&mmand"
-msgctxt "@label:textbox"
-msgid "Command:"
-msgstr "&Arahan"
-
-#: specialactions.cpp:180
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Enter a shell command to execute before the alarm is displayed.</"
-"para><para>Note that it is executed only when the alarm proper is displayed, "
-"not when a reminder or deferred alarm is displayed.</para><para><note>KAlarm "
-"will wait for the command to complete before displaying the alarm.</note></"
-"para>"
-msgstr ""
-"Masukkan arahan shell untuk dilaksanakan sebelum penggera dipaparkan. N.B. "
-"%1 akan menunggu sehingga arahan selesai sebelum penggera dipaparkan."
-
-#: specialactions.cpp:186
-msgctxt "@option:check"
-msgid "Execute for deferred alarms"
-msgstr ""
-
-#: specialactions.cpp:187
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>If unchecked, the command is only executed before the alarm proper is "
-"displayed.</para><para>If checked, the pre-alarm command is also executed "
-"before a deferred alarm is displayed.</para>"
-msgstr ""
-
-#: specialactions.cpp:191
-msgctxt "@option:check"
-msgid "Cancel alarm on error"
-msgstr ""
-
-#: specialactions.cpp:192
-msgctxt "@info:whatsthis"
-msgid ""
-"Cancel the alarm if the pre-alarm command fails, i.e. do not display the "
-"alarm or execute any post-alarm action command."
-msgstr ""
-
-#: specialactions.cpp:195
-msgctxt "@option:check"
-msgid "Do not notify errors"
-msgstr ""
-
-#: specialactions.cpp:196
-#, fuzzy
-#| msgid ""
-#| "The default setting for the recurrence rule in the alarm edit dialog."
-msgctxt "@info:whatsthis"
-msgid ""
-"Do not show error status or error message if the pre-alarm command fails."
-msgstr "Seting piawai untuk peraturan pengulangan dalam dialog edit penggera."
-
-#: specialactions.cpp:200
-#, fuzzy
-msgctxt "@title:group"
-msgid "Post-Alarm Action"
-msgstr "Tindakan pascapenggera:"
-
-#: specialactions.cpp:214
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Enter a shell command to execute after the alarm window is closed.</"
-"para><para>Note that it is not executed after closing a reminder window. If "
-"you defer the alarm, it is not executed until the alarm is finally "
-"acknowledged or closed.</para>"
-msgstr ""
-"Masukkan arahan shell untuk dilaksanakan sebelum penggera dipaparkan. N.B. "
-"%1 akan menunggu sehingga arahan selesai sebelum penggera dipaparkan."
-
-#: templatedlg.cpp:69
-#, fuzzy
-#| msgid "Alarm Templates"
-msgctxt "@title:window"
-msgid "Alarm Templates"
-msgstr "Templat penggera"
-
-#: templatedlg.cpp:95 templatelistview.cpp:44
-#, fuzzy
-#| msgid "The list of alarm templates"
-msgctxt "@info:whatsthis"
-msgid "The list of alarm templates"
-msgstr "Senarai templat penggera"
-
-#: templatedlg.cpp:103
-#, fuzzy
-#| msgid "&New..."
-msgctxt "@action:button"
-msgid "New"
-msgstr "&Baru..."
-
-#: templatedlg.cpp:104
-#, fuzzy
-#| msgid "&New..."
-msgctxt "@action"
-msgid "New"
-msgstr "&Baru..."
-
-#: templatedlg.cpp:107
-#, fuzzy
-#| msgid "Create a new alarm template"
-msgctxt "@info:whatsthis"
-msgid "Create a new alarm template"
-msgstr "Cipta templat penggera baru"
-
-#: templatedlg.cpp:112
-#, fuzzy
-#| msgid "Edit the currently highlighted alarm template"
-msgctxt "@info:whatsthis"
-msgid "Edit the currently highlighted alarm template"
-msgstr "Edit templat penggera yang sedang ditonjolkan "
-
-#: templatedlg.cpp:115
-#, fuzzy
-#| msgid "Co&py"
-msgctxt "@action:button"
-msgid "Copy"
-msgstr "&Salin"
-
-#: templatedlg.cpp:117
-#, fuzzy
-#| msgid ""
-#| "Create a new alarm template based on a copy of the currently highlighted "
-#| "template"
-msgctxt "@info:whatsthis"
-msgid ""
-"Create a new alarm template based on a copy of the currently highlighted "
-"template"
-msgstr ""
-"Cipta templat penggera  baru berdasarkan satu salinan templat yang sedang "
-"ditonjolkan"
-
-#: templatedlg.cpp:122
-#, fuzzy
-#| msgid "Delete the currently highlighted alarm template"
-msgctxt "@info:whatsthis"
-msgid "Delete the currently highlighted alarm template"
-msgstr "Hapuskan templat penggera  yang sedang ditonjolkan"
-
-#: templatedlg.cpp:211
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "Do you really want to delete the selected alarm template?"
-msgid_plural "Do you really want to delete the %1 selected alarm templates?"
-msgstr[0] "_n: Anda pasti ingin menghapuskan templat penggera yang dipilih?"
-msgstr[1] "Anda pasti ingin menghapuskan %1 templat penggera yang dipilih?"
-
-#: templatedlg.cpp:213
-#, fuzzy
-msgctxt "@title:window"
-msgid "Delete Alarm Template"
-msgid_plural "Delete Alarm Templates"
-msgstr[0] "_n: Hapuskan templat penggera"
-msgstr[1] "Hapuskan templat penggera"
-
-#: templatepickdlg.cpp:46
-#, fuzzy
-#| msgid "Choose Alarm Template"
-msgctxt "@title:window"
-msgid "Choose Alarm Template"
-msgstr "Pilih Templat Penggera"
-
-#: templatepickdlg.cpp:77
-#, fuzzy
-#| msgid "Select a template to base the new alarm on."
-msgctxt "@info:whatsthis"
-msgid "Select a template to base the new alarm on."
-msgstr "Pilih templat untuk mendasari penggera baru."
-
-#: traywindow.cpp:100
-#, fuzzy
-#| msgid "New Alarm"
-msgctxt "@action"
-msgid "&New Alarm"
-msgstr "Penggera baru"
-
-#: traywindow.cpp:333
-#, fuzzy
-msgid "Disabled"
-msgstr "&Nyahaktifkan"
-
-#: traywindow.cpp:338
-msgctxt "@info:tooltip Brief: some alarms are disabled"
-msgid "(Some alarms disabled)"
-msgstr ""
-
-#: traywindow.cpp:408
-#, fuzzy, kde-format
-#| msgctxt "prefix + hours:minutes"
-#| msgid "(%1%2:%3)"
-msgctxt "@info/plain prefix + hours:minutes"
-msgid "(%1%2:%3)"
-msgstr "(%1%2:%3)"
-
-#: traywindow.cpp:410
-#, fuzzy, kde-format
-#| msgctxt "prefix + hours:minutes"
-#| msgid "%1%2:%3"
-msgctxt "@info/plain prefix + hours:minutes"
-msgid "%1%2:%3"
-msgstr "%1%2:%3"
-
-#: undo.cpp:440
-#, fuzzy
-#| msgid "Alarm not found"
-msgctxt "@info/plain"
-msgid "Alarm not found"
-msgstr "Penggera tidak ditemui"
-
-#: undo.cpp:441
-#, fuzzy
-#| msgid "Error recreating alarm"
-msgctxt "@info/plain"
-msgid "Error recreating alarm"
-msgstr "Ralat mencipta semula penggera"
-
-#: undo.cpp:442
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Error recreating alarm template"
-msgstr "Ralat mencipta semula penggera"
-
-#: undo.cpp:443
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Cannot reactivate archived alarm"
-msgstr "Tidak dapat mengaktifkan semula penggera luput"
-
-#: undo.cpp:444
-#, fuzzy
-#| msgid "Program error"
-msgctxt "@info/plain"
-msgid "Program error"
-msgstr "Ralat program"
-
-#: undo.cpp:445
-#, fuzzy
-#| msgid "Unknown error"
-msgctxt "@info/plain"
-msgid "Unknown error"
-msgstr "Ralat tidak diketahui"
-
-#: undo.cpp:447
-#, fuzzy, kde-format
-#| msgctxt "Undo-action: message"
-#| msgid "%1: %2"
-msgctxt "@info Undo-action: message"
-msgid "%1: %2"
-msgstr "%1: %2"
-
-#: undo.cpp:684
-#, fuzzy
-#| msgctxt "Action to create a new alarm"
-#| msgid "New alarm"
-msgctxt "@info/plain Action to create a new alarm"
-msgid "New alarm"
-msgstr "Penggera baru"
-
-#: undo.cpp:686
-#, fuzzy
-#| msgctxt "Action to delete an alarm"
-#| msgid "Delete alarm"
-msgctxt "@info/plain Action to delete an alarm"
-msgid "Delete alarm"
-msgstr "Hapuskan penggera"
-
-#: undo.cpp:689
-#, fuzzy
-#| msgctxt "Action to create a new alarm template"
-#| msgid "New template"
-msgctxt "@info/plain Action to create a new alarm template"
-msgid "New template"
-msgstr "Templat baru"
-
-#: undo.cpp:691
-#, fuzzy
-#| msgctxt "Action to delete an alarm template"
-#| msgid "Delete template"
-msgctxt "@info/plain Action to delete an alarm template"
-msgid "Delete template"
-msgstr "Hapuskan templat"
-
-#: undo.cpp:693
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Delete archived alarm"
-msgstr "Hapuskan penggera luput"
-
-#: undo.cpp:916
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Create multiple alarms"
-msgstr "Hapuskan penggera berbilang"
-
-#: undo.cpp:1022
-#, fuzzy
-#| msgctxt "Action to edit an alarm"
-#| msgid "Edit alarm"
-msgctxt "@info/plain Action to edit an alarm"
-msgid "Edit alarm"
-msgstr "Edit penggera"
-
-#: undo.cpp:1024
-#, fuzzy
-#| msgctxt "Action to edit an alarm template"
-#| msgid "Edit template"
-msgctxt "@info/plain Action to edit an alarm template"
-msgid "Edit template"
-msgstr "Edit templat"
-
-#: undo.cpp:1207
-#, fuzzy
-#| msgid "Delete multiple alarms"
-msgctxt "@info/plain"
-msgid "Delete multiple alarms"
-msgstr "Hapuskan penggera berbilang"
-
-#: undo.cpp:1209
-#, fuzzy
-#| msgid "Delete multiple templates"
-msgctxt "@info/plain"
-msgid "Delete multiple templates"
-msgstr "Hapuskan templat berbilang"
-
-#: undo.cpp:1216
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Delete multiple archived alarms"
-msgstr "Hapuskan penggera berbilang yang luput"
-
-#: undo.cpp:1259 undo.cpp:1303
-#, fuzzy
-#| msgid "Reactivate alarm"
-msgctxt "@info/plain"
-msgid "Reactivate alarm"
-msgstr "Aktifkan semula penggera"
-
-#: undo.cpp:1326
-#, fuzzy
-#| msgid "Reactivate multiple alarms"
-msgctxt "@info/plain"
-msgid "Reactivate multiple alarms"
-msgstr "Aktifkan semula penggera berbilang"
-
-#: wakedlg.cpp:56
-msgctxt "@title:window"
-msgid "Wake From Suspend"
-msgstr ""
-
-#: wakedlg.cpp:181
-#, fuzzy
-#| msgid "Next scheduled date and time of the alarm"
-msgctxt "@info"
-msgid "Cannot schedule wakeup time for a date-only alarm"
-msgstr "Tarikh terjadual berikutnya dan waktu penggera"
-
-#: wakedlg.cpp:185
-msgctxt "@info"
-msgid ""
-"<para>This wakeup will cancel any existing wakeup which has been set by "
-"KAlarm or any other application, because your computer can only schedule a "
-"single wakeup time.</para><para><b>Note:</b> Wake From Suspend is not "
-"supported at all on some computers, especially older ones, and some "
-"computers only support setting a wakeup time up to 24 hours ahead. You may "
-"wish to set up a test alarm to check your system's capability.</para>"
 msgstr ""
 
 #, fuzzy

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kigo\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:17+0200\n"
+"POT-Creation-Date: 2012-08-19 05:13+0200\n"
 "PO-Revision-Date: 2009-07-20 00:23+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -18,47 +18,83 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: game/game.cpp:327
+#: gui/widgets/setupwidget.cpp:64
+msgid " Stone"
+msgid_plural " Stones"
+msgstr[0] ""
+msgstr[1] ""
+
+#: gui/widgets/setupwidget.cpp:168
 #, kde-format
-msgctxt "%1 stone coordinate"
-msgid "White %1"
-msgstr ""
+msgctxt "Time limit of a game in minutes"
+msgid "%1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] ""
+msgstr[1] ""
 
-#: game/game.cpp:330 game/game.cpp:400 gui/mainwindow.cpp:393
-msgid "White passed"
-msgstr ""
-
-#: game/game.cpp:336
-#, fuzzy, kde-format
-msgctxt "%1 stone coordinate"
-msgid "Black %1"
-msgstr "Hujung belakang"
-
-#: game/game.cpp:339 game/game.cpp:402 gui/mainwindow.cpp:395
-#, fuzzy
-msgid "Black passed"
-msgstr "Hujung belakang"
-
-#: game/game.cpp:409
-msgid "White resigned"
-msgstr ""
-
-#: game/game.cpp:411
-#, fuzzy
-msgid "Black resigned"
-msgstr "Hujung belakang"
-
-#: game/game.cpp:419
+#: gui/widgets/setupwidget.cpp:170
 #, kde-format
-msgctxt "%1 response from Go engine"
-msgid "White %1"
+msgctxt "Time limit of a game, hours, minutes"
+msgid "%1 hour, %2"
+msgid_plural "%1 hours, %2"
+msgstr[0] ""
+msgstr[1] ""
+
+#: gui/widgets/setupwidget.cpp:192
+#, kde-format
+msgid " of %1"
 msgstr ""
 
-#: game/game.cpp:421
-#, fuzzy, kde-format
-msgctxt "%1 response from Go engine"
-msgid "Black %1"
+#: gui/widgets/setupwidget.cpp:235
+msgid "White to play"
+msgstr ""
+
+#. i18n: file: gui/widgets/setupwidget.ui:442
+#. i18n: ectx: property (text), widget (QLabel, playerLabel)
+#: gui/widgets/setupwidget.cpp:237 rc.cpp:122
+#, fuzzy
+msgid "Black to play"
 msgstr "Hujung belakang"
+
+#: gui/widgets/gamewidget.cpp:56 gui/widgets/gamewidget.cpp:61
+#, kde-format
+msgid "Computer (level %1)"
+msgstr ""
+
+#: gui/widgets/gamewidget.cpp:64
+#, kde-format
+msgid "%1 Stone"
+msgid_plural "%1 Stones"
+msgstr[0] ""
+msgstr[1] ""
+
+#: gui/widgets/gamewidget.cpp:81
+#, kde-format
+msgctxt "Indication who played the last move"
+msgid "%1 (white)"
+msgstr ""
+
+#: gui/widgets/gamewidget.cpp:83
+#, kde-format
+msgctxt "Indication who played the last move"
+msgid "%1 (black)"
+msgstr ""
+
+#: gui/widgets/gamewidget.cpp:92
+msgid "White's turn"
+msgstr ""
+
+#: gui/widgets/gamewidget.cpp:96
+#, fuzzy
+msgid "Black's turn"
+msgstr "Hujung belakang"
+
+#: gui/widgets/gamewidget.cpp:101 gui/widgets/gamewidget.cpp:102
+#, kde-format
+msgid "%1 capture"
+msgid_plural "%1 captures"
+msgstr[0] ""
+msgstr[1] ""
 
 #: gui/mainwindow.cpp:106
 msgid "Set up a new game..."
@@ -114,6 +150,15 @@ msgstr "Tema"
 msgid "Backend was changed, restart necessary..."
 msgstr ""
 
+#: gui/mainwindow.cpp:393 game/game.cpp:330 game/game.cpp:400
+msgid "White passed"
+msgstr ""
+
+#: gui/mainwindow.cpp:395 game/game.cpp:339 game/game.cpp:402
+#, fuzzy
+msgid "Black passed"
+msgstr "Hujung belakang"
+
 #: gui/mainwindow.cpp:405 gui/mainwindow.cpp:407
 msgctxt "@action"
 msgid "Get More Games..."
@@ -165,82 +210,37 @@ msgctxt "@title:window"
 msgid "Error"
 msgstr "Ralat"
 
-#: gui/widgets/gamewidget.cpp:56 gui/widgets/gamewidget.cpp:61
+#: game/game.cpp:327
 #, kde-format
-msgid "Computer (level %1)"
+msgctxt "%1 stone coordinate"
+msgid "White %1"
 msgstr ""
 
-#: gui/widgets/gamewidget.cpp:64
-#, kde-format
-msgid "%1 Stone"
-msgid_plural "%1 Stones"
-msgstr[0] ""
-msgstr[1] ""
-
-#: gui/widgets/gamewidget.cpp:81
-#, kde-format
-msgctxt "Indication who played the last move"
-msgid "%1 (white)"
-msgstr ""
-
-#: gui/widgets/gamewidget.cpp:83
-#, kde-format
-msgctxt "Indication who played the last move"
-msgid "%1 (black)"
-msgstr ""
-
-#: gui/widgets/gamewidget.cpp:92
-msgid "White's turn"
-msgstr ""
-
-#: gui/widgets/gamewidget.cpp:96
-#, fuzzy
-msgid "Black's turn"
+#: game/game.cpp:336
+#, fuzzy, kde-format
+msgctxt "%1 stone coordinate"
+msgid "Black %1"
 msgstr "Hujung belakang"
 
-#: gui/widgets/gamewidget.cpp:101 gui/widgets/gamewidget.cpp:102
-#, kde-format
-msgid "%1 capture"
-msgid_plural "%1 captures"
-msgstr[0] ""
-msgstr[1] ""
-
-#: gui/widgets/setupwidget.cpp:64
-msgid " Stone"
-msgid_plural " Stones"
-msgstr[0] ""
-msgstr[1] ""
-
-#: gui/widgets/setupwidget.cpp:168
-#, kde-format
-msgctxt "Time limit of a game in minutes"
-msgid "%1 minute"
-msgid_plural "%1 minutes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: gui/widgets/setupwidget.cpp:170
-#, kde-format
-msgctxt "Time limit of a game, hours, minutes"
-msgid "%1 hour, %2"
-msgid_plural "%1 hours, %2"
-msgstr[0] ""
-msgstr[1] ""
-
-#: gui/widgets/setupwidget.cpp:192
-#, kde-format
-msgid " of %1"
+#: game/game.cpp:409
+msgid "White resigned"
 msgstr ""
 
-#: gui/widgets/setupwidget.cpp:235
-msgid "White to play"
-msgstr ""
-
-#. i18n: file: gui/widgets/setupwidget.ui:442
-#. i18n: ectx: property (text), widget (QLabel, playerLabel)
-#: gui/widgets/setupwidget.cpp:237 rc.cpp:122
+#: game/game.cpp:411
 #, fuzzy
-msgid "Black to play"
+msgid "Black resigned"
+msgstr "Hujung belakang"
+
+#: game/game.cpp:419
+#, kde-format
+msgctxt "%1 response from Go engine"
+msgid "White %1"
+msgstr ""
+
+#: game/game.cpp:421
+#, fuzzy, kde-format
+msgctxt "%1 response from Go engine"
+msgid "Black %1"
 msgstr "Hujung belakang"
 
 #: main.cpp:41
@@ -256,20 +256,20 @@ msgid "Copyright (c) 2008-2010 Sascha Peilicke"
 msgstr ""
 
 #: main.cpp:44
+msgid "Sascha Peilicke (saschpe)"
+msgstr ""
+
+#: main.cpp:44
 #, fuzzy
 msgid "Original author"
 msgstr "Pengarang asal"
 
-#: main.cpp:44
-msgid "Sascha Peilicke (saschpe)"
+#: main.cpp:46
+msgid "Yuri Chornoivan"
 msgstr ""
 
 #: main.cpp:46
 msgid "Documentation editor"
-msgstr ""
-
-#: main.cpp:46
-msgid "Yuri Chornoivan"
 msgstr ""
 
 #: main.cpp:48
