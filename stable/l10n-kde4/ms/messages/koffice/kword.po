@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:56+0200\n"
+"POT-Creation-Date: 2012-08-19 15:45+0200\n"
 "PO-Revision-Date: 2006-10-05 19:47+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -16,200 +16,404 @@ msgstr ""
 "X-Generator: KBabel 1.3.1\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "MIMOS"
 
-#: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "opensource@mimos.my"
 
-#. i18n: file: part/dialogs/KWSelectBookmark.ui:20
-#. i18n: ectx: property (text), widget (QPushButton, buttonRename)
-#: rc.cpp:5
+#: part/commands/KWChangePageStyleCommand.cpp:25
 #, fuzzy
-msgid "&Rename"
-msgstr "&Namakan Semula"
+#| msgid "Framestyle:"
+msgid "Set Page Style"
+msgstr "Gaya Bingkai:"
 
-#. i18n: file: part/dialogs/KWSelectBookmark.ui:27
-#. i18n: ectx: property (text), widget (QPushButton, buttonDelete)
-#: rc.cpp:8
+#: part/commands/KWClipFrameCommand.cpp:41
 #, fuzzy
-msgid "&Delete"
-msgstr "Hapuskan Baris"
+#| msgid "Inline Frame"
+msgid "Clip Frame"
+msgstr "Sebariskan Bingkai"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:22
+#: part/commands/KWCreateOutlineCommand.cpp:30
+#, fuzzy
+msgid "Create custom outline"
+msgstr "Cipta jadual."
+
+#: part/commands/KWFrameCreateCommand.cpp:29
+#, fuzzy
+#| msgid "Create Text Frame"
+msgid "Create Frame"
+msgstr "Cipta Bingkai Teks"
+
+#: part/commands/KWFrameDeleteCommand.cpp:29
+msgid "Delete Frame"
+msgstr "Hapuskan Bingkai"
+
+#: part/commands/KWNewPageStyleCommand.cpp:27
+#, fuzzy
+#| msgid "Insert Page"
+msgid "Insert Page Style"
+msgstr "Selitkan Halaman"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: part/commands/KWPageInsertCommand.cpp:72
+#: part/dialogs/KWInsertPageDialog.cpp:32
+#: part/dialogs/KWInsertPageDialog.ui:17
+msgid "Insert Page"
+msgstr "Selitkan Halaman"
+
+#: part/commands/KWPageRemoveCommand.cpp:32
+#, fuzzy
+#| msgid "Remove entry"
+msgid "Remove Page"
+msgstr "Alih keluar entri"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:36
+#, fuzzy
+#| msgid "Frame Properties"
+msgid "Page Properties"
+msgstr "Ciri Bingkai"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CreateBookmark)
+#: part/dialogs/KWCreateBookmark.ui:13
+#: part/dialogs/KWCreateBookmarkDialog.cpp:48
+msgid "Create New Bookmark"
+msgstr "Cipta Tanda Buku Baru"
+
+#. i18n: ectx: property (text), widget (QLabel, lExplain)
+#: part/dialogs/KWCreateBookmark.ui:20
+msgid ""
+"Bookmarks allow you to jump between parts of your document.\n"
+"Please provide the name of your bookmark."
+msgstr ""
+"Tanda buku membenarkan anda melangkau antara bahagian dalam dokumen anda. \n"
+"Sila sediakan nama tanda buku anda. "
+
+#. i18n: ectx: property (text), widget (QLabel, lName)
+#: part/dialogs/KWCreateBookmark.ui:38
+msgid "Name:"
+msgstr "Nama:"
+
+#. i18n: ectx: property (text), widget (QLabel, columnsLabel)
+#: part/dialogs/KWDocumentColumns.ui:64
+#, fuzzy
+msgid "Columns:"
+msgstr "Kolum"
+
+#. i18n: ectx: property (text), widget (QLabel, spacingLabel)
+#: part/dialogs/KWDocumentColumns.ui:74
+#, fuzzy
+#| msgid "Default column spacing:"
+msgid "Column spacing:"
+msgstr "Jarak lajur piawai:"
+
+#: part/dialogs/KWFrameConnectSelector.cpp:48
+#, fuzzy
+#| msgid "Fra&mes"
+msgid "frameset"
+msgstr "Kerang&ka"
+
+#: part/dialogs/KWFrameConnectSelector.cpp:75
+msgid "No framesets in document"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: part/dialogs/KWFrameConnectSelector.ui:67
+msgid "Name of frameset:"
+msgstr "Nama set bingkai:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, newRadio)
+#: part/dialogs/KWFrameConnectSelector.ui:82
+#, fuzzy
+#| msgid "Create a new frameset"
+msgid "Create a new frameset:"
+msgstr "Cipta set bingkai baru"
+
+#. i18n: ectx: property (text), widget (QRadioButton, existingRadio)
+#: part/dialogs/KWFrameConnectSelector.ui:89
+#, fuzzy
+#| msgid "Select existing frameset to connect frame to:"
+msgid "Select existing frameset to connect to:"
+msgstr "Pilih set bingkai sedia ada untuk menyambung bingkai ke:"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, framesList)
+#: part/dialogs/KWFrameConnectSelector.ui:122
+msgid "Frameset Name"
+msgstr "Nama Set Bingkai"
+
+#: part/dialogs/KWFrameDialog.cpp:38 part/dialogs/KWShapeConfigFactory.cpp:94
+msgid "Options"
+msgstr ""
+
+#: part/dialogs/KWFrameDialog.cpp:40 part/dialogs/KWShapeConfigFactory.cpp:76
+msgid "Text Run Around"
+msgstr "Teks Berada Di dalam"
+
+#: part/dialogs/KWFrameDialog.cpp:47 part/dialogs/KWShapeConfigFactory.cpp:40
+msgid "Connect Text Frames"
+msgstr "Sambung Bingkai Teks"
+
+#: part/dialogs/KWFrameDialog.cpp:54 part/dialogs/KWShapeConfigFactory.cpp:58
+msgid "Geometry"
+msgstr "Geometri"
+
+#. i18n: ectx: property (text), widget (QCheckBox, protectSize)
+#: part/dialogs/KWFrameGeometry.ui:16
+msgid "Protect size and position"
+msgstr "Lindungi saiz dan posisi"
+
+#. i18n: ectx: property (title), widget (QGroupBox, positionGB)
+#: part/dialogs/KWFrameGeometry.ui:23
+msgid "Position"
+msgstr "Posisi"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: part/dialogs/KWFrameGeometry.ui:29
+msgid "X:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: part/dialogs/KWFrameGeometry.ui:65
+msgid "Y:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: part/dialogs/KWFrameGeometry.ui:78
+msgid "Width:"
+msgstr "Lebar:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: part/dialogs/KWFrameGeometry.ui:104
+msgid "Height:"
+msgstr "Tinggi:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, marginsGB)
+#: part/dialogs/KWFrameGeometry.ui:127
+#, fuzzy
+msgid "Margins"
+msgstr "Jidar (%1)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, synchronize)
+#: part/dialogs/KWFrameGeometry.ui:146
+msgid "Synchronize changes"
+msgstr "Segerakkan perubahan"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: part/dialogs/KWFrameGeometry.ui:153
+msgid "Bottom:"
+msgstr "Bawah:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: part/dialogs/KWFrameGeometry.ui:163
+msgid "Top:"
+msgstr "Atas:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: part/dialogs/KWFrameGeometry.ui:173
+msgid "Right:"
+msgstr "Kanan:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: part/dialogs/KWFrameGeometry.ui:183
+msgid "Left:"
+msgstr "Kiri:"
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:11
+#: part/dialogs/KWFrameRunaroundProperties.ui:22
 msgid "Layout of Text in Other Frames"
 msgstr "Bentangan Teks dalam Bingkai Lain"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:34
 #. i18n: ectx: property (text), widget (QRadioButton, runThrough)
-#: rc.cpp:14
+#: part/dialogs/KWFrameRunaroundProperties.ui:34
 #, fuzzy
 #| msgid "Text will run &through this frame"
 msgid "Text will run through this frame"
 msgstr "Teks akan berada &menerusi bingkai ini"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:41
 #. i18n: ectx: property (text), widget (QRadioButton, runAround)
-#: rc.cpp:17
+#: part/dialogs/KWFrameRunaroundProperties.ui:41
 #, fuzzy
 #| msgid "Text will run &around the frame"
 msgid "Text will run around this frame"
 msgstr "Teks akan berada &dalam bingkai"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:48
 #. i18n: ectx: property (text), widget (QRadioButton, noRunaround)
-#: rc.cpp:20
+#: part/dialogs/KWFrameRunaroundProperties.ui:48
 #, fuzzy
 #| msgid "Text will &not run around this frame"
 msgid "Text will not run around this frame"
 msgstr "Teks &tidak akan berada dalam bingkai ini"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:58
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: rc.cpp:23
+#: part/dialogs/KWFrameRunaroundProperties.ui:58
 msgid "Run Around Side"
 msgstr "Berada Di sisi"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, left)
-#: rc.cpp:26
+#: part/dialogs/KWFrameRunaroundProperties.ui:70
 #, fuzzy
 msgid "Left"
 msgstr "Kiri"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:77
 #. i18n: ectx: property (text), widget (QRadioButton, right)
-#: rc.cpp:29
+#: part/dialogs/KWFrameRunaroundProperties.ui:77
 #, fuzzy
 msgid "Right"
 msgstr "Kanan"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:84
 #. i18n: ectx: property (text), widget (QRadioButton, longest)
-#: rc.cpp:32
+#: part/dialogs/KWFrameRunaroundProperties.ui:84
 #, fuzzy
 #| msgctxt "Run Around"
 #| msgid "Lon&gest side"
 msgid "Longest side"
 msgstr " Di sisi &terpanjang"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:102
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:35
+#: part/dialogs/KWFrameRunaroundProperties.ui:102
 #, fuzzy
 msgid "Distance Between Frame and Text:"
 msgstr "Jarak Antara Bingkai && Teks (%1)"
 
-#. i18n: file: part/dialogs/KWFrameConnectSelector.ui:67
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:38
-msgid "Name of frameset:"
-msgstr "Nama set bingkai:"
-
-#. i18n: file: part/dialogs/KWFrameConnectSelector.ui:82
-#. i18n: ectx: property (text), widget (QRadioButton, newRadio)
-#: rc.cpp:41
-#, fuzzy
-#| msgid "Create a new frameset"
-msgid "Create a new frameset:"
-msgstr "Cipta set bingkai baru"
-
-#. i18n: file: part/dialogs/KWFrameConnectSelector.ui:89
-#. i18n: ectx: property (text), widget (QRadioButton, existingRadio)
-#: rc.cpp:44
-#, fuzzy
-#| msgid "Select existing frameset to connect frame to:"
-msgid "Select existing frameset to connect to:"
-msgstr "Pilih set bingkai sedia ada untuk menyambung bingkai ke:"
-
-#. i18n: file: part/dialogs/KWFrameConnectSelector.ui:122
-#. i18n: ectx: property (text), widget (QTreeWidget, framesList)
-#: rc.cpp:47
-msgid "Frameset Name"
-msgstr "Nama Set Bingkai"
-
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:16
-#. i18n: ectx: property (text), widget (QCheckBox, protectSize)
-#: rc.cpp:50
-msgid "Protect size and position"
-msgstr "Lindungi saiz dan posisi"
-
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:23
-#. i18n: ectx: property (title), widget (QGroupBox, positionGB)
-#: rc.cpp:53
-msgid "Position"
-msgstr "Posisi"
-
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:29
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:56
-msgid "X:"
+#. i18n: ectx: property (title), widget (QGroupBox, textGroupBox)
+#: part/dialogs/KWGeneralFrameProperties.ui:51
+msgid "If Frame Overflows"
 msgstr ""
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:65
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:59
-msgid "Y:"
+#. i18n: ectx: property (text), widget (QRadioButton, createNewPage)
+#: part/dialogs/KWGeneralFrameProperties.ui:75
+msgid "Create a new page"
+msgstr "Cipta halaman baru"
+
+#. i18n: ectx: property (text), widget (QRadioButton, resizeLastFrame)
+#: part/dialogs/KWGeneralFrameProperties.ui:82
+msgid "Resize last frame"
+msgstr "Saiz semula bingkai dahulu"
+
+#. i18n: ectx: property (text), widget (QRadioButton, noExtraText)
+#: part/dialogs/KWGeneralFrameProperties.ui:89
+#, fuzzy
+msgid "Do not show the extra text"
+msgstr "Jangan papar teks tambahan"
+
+#. i18n: ectx: property (title), widget (QGroupBox, newPageGroupBox)
+#: part/dialogs/KWGeneralFrameProperties.ui:112
+msgid "When Creating a Page"
 msgstr ""
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:78
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:62
-msgid "Width:"
-msgstr "Lebar:"
+#. i18n: ectx: property (text), widget (QRadioButton, reconnect)
+#: part/dialogs/KWGeneralFrameProperties.ui:118
+msgid "Reconnect frame to current flow"
+msgstr "Sambung semula bingkai ke aliran semasa"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:104
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:65
-msgid "Height:"
-msgstr "Tinggi:"
+#. i18n: ectx: property (text), widget (QRadioButton, noFollowup)
+#: part/dialogs/KWGeneralFrameProperties.ui:125
+msgid "Do not create a followup frame"
+msgstr "Jangan cipta bingkai susulan"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:127
-#. i18n: ectx: property (title), widget (QGroupBox, marginsGB)
-#: rc.cpp:68
+#. i18n: ectx: property (text), widget (QRadioButton, placeCopy)
+#: part/dialogs/KWGeneralFrameProperties.ui:132
 #, fuzzy
-msgid "Margins"
-msgstr "Jidar (%1)"
+#| msgid "Connect Frame"
+msgid "Copy this Frame"
+msgstr "Sambung Bingkai"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:146
-#. i18n: ectx: property (text), widget (QCheckBox, synchronize)
-#: rc.cpp:71
-msgid "Synchronize changes"
-msgstr "Segerakkan perubahan"
+#. i18n: ectx: property (text), widget (QCheckBox, evenOdd)
+#: part/dialogs/KWGeneralFrameProperties.ui:139
+msgid "Only on even/odd pages"
+msgstr ""
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:153
-#. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:74
-msgid "Bottom:"
-msgstr "Bawah:"
+#. i18n: ectx: property (text), widget (QCheckBox, protectContent)
+#: part/dialogs/KWGeneralFrameProperties.ui:151
+msgid "Protect content"
+msgstr "Lindungi kandungan"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:163
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:77
-msgid "Top:"
-msgstr "Atas:"
+#. i18n: ectx: property (text), widget (QCheckBox, isCopyOfPrevious)
+#: part/dialogs/KWGeneralFrameProperties.ui:158
+msgid "Frame is a copy of the previous frame"
+msgstr "Bingkai adalah salinan bingkai sebelumnya"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:173
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:80
-msgid "Right:"
-msgstr "Kanan:"
+#. i18n: ectx: property (text), widget (QCheckBox, allFrames)
+#: part/dialogs/KWGeneralFrameProperties.ui:165
+msgid "Changes will be applied to all frames in frameset"
+msgstr "Perubahan akan digunakan untuk semua bingkai dalam set bingkai"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:183
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:83
-msgid "Left:"
-msgstr "Kiri:"
+#. i18n: ectx: property (text), widget (QCheckBox, keepAspectRatio)
+#: part/dialogs/KWGeneralFrameProperties.ui:185
+msgid "Retain original aspect ratio"
+msgstr "Kekalkan nisbah aspek asal"
 
-#. i18n: file: part/dialogs/KWStartupWidget.ui:29
+#. i18n: ectx: property (text), widget (QRadioButton, beforeCurrent)
+#: part/dialogs/KWInsertPageDialog.ui:23
+msgid "Before current page"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, afterCurrent)
+#: part/dialogs/KWInsertPageDialog.ui:30
+msgid "After current page"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, afterLast)
+#: part/dialogs/KWInsertPageDialog.ui:37
+#, fuzzy
+#| msgid "First Page Header"
+msgid "After last page"
+msgstr "Pengepala Halaman Pertama"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: part/dialogs/KWInsertPageDialog.ui:55
+#, fuzzy
+#| msgid "Framestyle:"
+msgid "Page style:"
+msgstr "Gaya Bingkai:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
+#: part/dialogs/KWPageSettingsDialog.cpp:41 part/dialogs/KWStartupWidget.ui:51
+#, fuzzy
+msgid "Columns"
+msgstr "Kolum"
+
+#: part/dialogs/KWPageSettingsDialog.cpp:97
+#, fuzzy
+#| msgid "Frame Properties"
+msgid "Change Page Properties"
+msgstr "Ciri Bingkai"
+
+#. i18n: ectx: property (text), widget (QPushButton, buttonRename)
+#: part/dialogs/KWSelectBookmark.ui:20
+#, fuzzy
+msgid "&Rename"
+msgstr "&Namakan Semula"
+
+#. i18n: ectx: property (text), widget (QPushButton, buttonDelete)
+#: part/dialogs/KWSelectBookmark.ui:27
+#, fuzzy
+msgid "&Delete"
+msgstr "Hapuskan Baris"
+
+#: part/dialogs/KWSelectBookmarkDialog.cpp:79
+msgid "Rename Bookmark"
+msgstr "Namakan Semula Penanda Buku"
+
+#: part/dialogs/KWSelectBookmarkDialog.cpp:80
+msgid "Please provide a new name for the bookmark"
+msgstr ""
+
+#: part/dialogs/KWSelectBookmarkDialog.cpp:89
+#, fuzzy, kde-format
+#| msgid ""
+#| "A frameset with the name '%1' already exists. Please enter another name."
+msgid "A bookmark with the name \"%1\" already exists."
+msgstr "Set bingkai dengan nama '%1' sudah wujud. Sila masukkan nama lain."
+
+#: part/dialogs/KWSelectBookmarkDialog.cpp:121
+msgid "Select Bookmark"
+msgstr "Pilih Tanda Buku"
+
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mainText)
-#: rc.cpp:86
+#: part/dialogs/KWStartupWidget.ui:29
 msgid ""
 "<p><b>Check this option to have a text area created automatically for each "
 "page.</b><br>\n"
@@ -218,538 +422,211 @@ msgid ""
 "completely where each text frame should be positioned.</p>"
 msgstr ""
 
-#. i18n: file: part/dialogs/KWStartupWidget.ui:32
 #. i18n: ectx: property (text), widget (QCheckBox, mainText)
-#: rc.cpp:90
+#: part/dialogs/KWStartupWidget.ui:32
 #, fuzzy
 msgid "Provide main text area"
 msgstr "Kursor dalam kawasan yang dilindungi"
 
-#. i18n: file: part/dialogs/KWStartupWidget.ui:46
 #. i18n: ectx: attribute (title), widget (QWidget, sizeTab)
-#: rc.cpp:93
+#: part/dialogs/KWStartupWidget.ui:46
 msgid "Page Size && Margins"
 msgstr ""
 
-#. i18n: file: part/dialogs/KWStartupWidget.ui:51
-#. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
-#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:41
-#, fuzzy
-msgid "Columns"
-msgstr "Kolum"
-
-#. i18n: file: part/dialogs/KWStartupWidget.ui:102
 #. i18n: ectx: property (text), widget (QPushButton, createButton)
-#: rc.cpp:99 part/KWView.cpp:322
+#: part/dialogs/KWStartupWidget.ui:102 part/KWView.cpp:322
 #, fuzzy
 msgid "Create"
 msgstr "Cipta Jadual"
 
-#. i18n: file: part/dialogs/KWInsertPageDialog.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:102 part/dialogs/KWInsertPageDialog.cpp:32
-#: part/commands/KWPageInsertCommand.cpp:72
-msgid "Insert Page"
-msgstr "Selitkan Halaman"
+#: part/dialogs/KWStatistics.cpp:269
+#, kde-format
+msgid "approximately %1"
+msgstr "lebih kurang %1"
 
-#. i18n: file: part/dialogs/KWInsertPageDialog.ui:23
-#. i18n: ectx: property (text), widget (QRadioButton, beforeCurrent)
-#: rc.cpp:105
-msgid "Before current page"
-msgstr ""
-
-#. i18n: file: part/dialogs/KWInsertPageDialog.ui:30
-#. i18n: ectx: property (text), widget (QRadioButton, afterCurrent)
-#: rc.cpp:108
-msgid "After current page"
-msgstr ""
-
-#. i18n: file: part/dialogs/KWInsertPageDialog.ui:37
-#. i18n: ectx: property (text), widget (QRadioButton, afterLast)
-#: rc.cpp:111
-#, fuzzy
-#| msgid "First Page Header"
-msgid "After last page"
-msgstr "Pengepala Halaman Pertama"
-
-#. i18n: file: part/dialogs/KWInsertPageDialog.ui:55
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:114
-#, fuzzy
-#| msgid "Framestyle:"
-msgid "Page style:"
-msgstr "Gaya Bingkai:"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:51
-#. i18n: ectx: property (title), widget (QGroupBox, textGroupBox)
-#: rc.cpp:117
-msgid "If Frame Overflows"
-msgstr ""
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:75
-#. i18n: ectx: property (text), widget (QRadioButton, createNewPage)
-#: rc.cpp:120
-msgid "Create a new page"
-msgstr "Cipta halaman baru"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:82
-#. i18n: ectx: property (text), widget (QRadioButton, resizeLastFrame)
-#: rc.cpp:123
-msgid "Resize last frame"
-msgstr "Saiz semula bingkai dahulu"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:89
-#. i18n: ectx: property (text), widget (QRadioButton, noExtraText)
-#: rc.cpp:126
-#, fuzzy
-msgid "Do not show the extra text"
-msgstr "Jangan papar teks tambahan"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:112
-#. i18n: ectx: property (title), widget (QGroupBox, newPageGroupBox)
-#: rc.cpp:129
-msgid "When Creating a Page"
-msgstr ""
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:118
-#. i18n: ectx: property (text), widget (QRadioButton, reconnect)
-#: rc.cpp:132
-msgid "Reconnect frame to current flow"
-msgstr "Sambung semula bingkai ke aliran semasa"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:125
-#. i18n: ectx: property (text), widget (QRadioButton, noFollowup)
-#: rc.cpp:135
-msgid "Do not create a followup frame"
-msgstr "Jangan cipta bingkai susulan"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:132
-#. i18n: ectx: property (text), widget (QRadioButton, placeCopy)
-#: rc.cpp:138
-#, fuzzy
-#| msgid "Connect Frame"
-msgid "Copy this Frame"
-msgstr "Sambung Bingkai"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:139
-#. i18n: ectx: property (text), widget (QCheckBox, evenOdd)
-#: rc.cpp:141
-msgid "Only on even/odd pages"
-msgstr ""
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:151
-#. i18n: ectx: property (text), widget (QCheckBox, protectContent)
-#: rc.cpp:144
-msgid "Protect content"
-msgstr "Lindungi kandungan"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:158
-#. i18n: ectx: property (text), widget (QCheckBox, isCopyOfPrevious)
-#: rc.cpp:147
-msgid "Frame is a copy of the previous frame"
-msgstr "Bingkai adalah salinan bingkai sebelumnya"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:165
-#. i18n: ectx: property (text), widget (QCheckBox, allFrames)
-#: rc.cpp:150
-msgid "Changes will be applied to all frames in frameset"
-msgstr "Perubahan akan digunakan untuk semua bingkai dalam set bingkai"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:185
-#. i18n: ectx: property (text), widget (QCheckBox, keepAspectRatio)
-#: rc.cpp:153
-msgid "Retain original aspect ratio"
-msgstr "Kekalkan nisbah aspek asal"
-
-#. i18n: file: part/dialogs/KWDocumentColumns.ui:64
-#. i18n: ectx: property (text), widget (QLabel, columnsLabel)
-#: rc.cpp:156
-#, fuzzy
-msgid "Columns:"
-msgstr "Kolum"
-
-#. i18n: file: part/dialogs/KWDocumentColumns.ui:74
-#. i18n: ectx: property (text), widget (QLabel, spacingLabel)
-#: rc.cpp:159
-#, fuzzy
-#| msgid "Default column spacing:"
-msgid "Column spacing:"
-msgstr "Jarak lajur piawai:"
-
-#. i18n: file: part/dialogs/KWCreateBookmark.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, CreateBookmark)
-#: rc.cpp:162 part/dialogs/KWCreateBookmarkDialog.cpp:48
-msgid "Create New Bookmark"
-msgstr "Cipta Tanda Buku Baru"
-
-#. i18n: file: part/dialogs/KWCreateBookmark.ui:20
-#. i18n: ectx: property (text), widget (QLabel, lExplain)
-#: rc.cpp:165
-msgid ""
-"Bookmarks allow you to jump between parts of your document.\n"
-"Please provide the name of your bookmark."
-msgstr ""
-"Tanda buku membenarkan anda melangkau antara bahagian dalam dokumen anda. \n"
-"Sila sediakan nama tanda buku anda. "
-
-#. i18n: file: part/dialogs/KWCreateBookmark.ui:38
-#. i18n: ectx: property (text), widget (QLabel, lName)
-#: rc.cpp:169
-msgid "Name:"
-msgstr "Nama:"
-
-#. i18n: file: part/dialogs/KWStatistics.ui:24
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:172
+#: part/dialogs/KWStatistics.ui:24
 msgid "General"
 msgstr "Am"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:30
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:175
+#: part/dialogs/KWStatistics.ui:30
 msgid "Number of pages:"
 msgstr "Bilangan halaman:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:53
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:178
+#: part/dialogs/KWStatistics.ui:53
 msgid "Number of frames:"
 msgstr "Bilangan bingkai:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:76
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:181
+#: part/dialogs/KWStatistics.ui:76
 msgid "Number of pictures:"
 msgstr "Bilangan gambar:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:99
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:184
+#: part/dialogs/KWStatistics.ui:99
 msgid "Number of tables:"
 msgstr "Bilangan jadual:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:136
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:187
+#: part/dialogs/KWStatistics.ui:136
 msgid "Text"
 msgstr "Teks"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:142
 #. i18n: ectx: property (text), widget (QCheckBox, footEndNotes)
-#: rc.cpp:190
+#: part/dialogs/KWStatistics.ui:142
 #, fuzzy
 #| msgid "&Include text from foot- and endnotes"
 msgid "Include text from foot- and endnotes"
 msgstr "&Termasuk teks dari nota kaki dan nota hujung"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:149
 #. i18n: ectx: property (text), widget (QLabel, label_25)
-#: rc.cpp:193
+#: part/dialogs/KWStatistics.ui:149
 msgid "Words:"
 msgstr "Kata:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:176
 #. i18n: ectx: property (text), widget (QLabel, label_23)
-#: rc.cpp:196
+#: part/dialogs/KWStatistics.ui:176
 msgid "Sentences:"
 msgstr "Ayat:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:203
 #. i18n: ectx: property (text), widget (QLabel, label_15)
-#: rc.cpp:199
+#: part/dialogs/KWStatistics.ui:203
 msgid "Syllables:"
 msgstr "Suku kata:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:230
 #. i18n: ectx: property (text), widget (QLabel, label_17)
-#: rc.cpp:202
+#: part/dialogs/KWStatistics.ui:230
 msgid "Lines:"
 msgstr "Baris:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:257
 #. i18n: ectx: property (text), widget (QLabel, label_19)
-#: rc.cpp:205
+#: part/dialogs/KWStatistics.ui:257
 msgid "Characters including spaces:"
 msgstr "Aksara termasuk ruang:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:284
 #. i18n: ectx: property (text), widget (QLabel, label_20)
-#: rc.cpp:208
+#: part/dialogs/KWStatistics.ui:284
 msgid "Characters without spaces:"
 msgstr "Aksara tanpa ruang:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:311
 #. i18n: ectx: property (text), widget (QLabel, label_21)
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:51
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:211 rc.cpp:235
+#: part/dialogs/KWStatistics.ui:311 part/dockers/KWStatisticsDocker.ui:51
 #, fuzzy
 #| msgid "&Formatting Characters"
 msgid "East Asian characters"
 msgstr "&Memformatkan Aksara"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:338
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#: rc.cpp:214
+#: part/dialogs/KWStatistics.ui:338
 msgid "Flesch reading ease:"
 msgstr "Kesenangan membaca Flesch:"
 
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:21
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:217
-#, fuzzy
-#| msgid "Words:"
-msgid "Words"
-msgstr "Kata:"
+#: part/dialogs/KWStatisticsDialog.cpp:29
+#: part/dockers/KWStatisticsDocker.cpp:36 part/KWView.cpp:390
+msgid "Statistics"
+msgstr "Statistik"
 
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:26
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:220
-#, fuzzy
-#| msgid "Sentences:"
-msgid "Sentences"
-msgstr "Ayat:"
+#: part/dockers/KWRdfDocker.cpp:50
+msgid "RDF"
+msgstr ""
 
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:31
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:223
-#, fuzzy
-#| msgid "Syllables:"
-msgid "Syllables"
-msgstr "Suku kata:"
-
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:36
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:226
-#, fuzzy
-#| msgid "Lines:"
-msgid "Lines"
-msgstr "Baris:"
-
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:41
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:229
-#, fuzzy
-#| msgid "Characters including spaces:"
-msgid "Characters incl. spaces"
-msgstr "Aksara termasuk ruang:"
-
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:46
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:232
-#, fuzzy
-#| msgid "Characters without spaces:"
-msgid "Characters without spaces"
-msgstr "Aksara tanpa ruang:"
-
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:56
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:238
-#, fuzzy
-#| msgid "Flesch reading ease:"
-msgid "Flesch reading ease"
-msgstr "Kesenangan membaca Flesch:"
-
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:80
-#. i18n: ectx: property (text), widget (QToolButton, refresh)
-#: rc.cpp:241
-#, fuzzy
-#| msgid "New..."
-msgid "..."
-msgstr "Baru..."
-
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:87
 #. i18n: ectx: property (text), widget (QCheckBox, autoRefresh)
-#. i18n: file: part/dockers/KWRdfDocker.ui:34
-#. i18n: ectx: property (text), widget (QCheckBox, autoRefresh)
-#: rc.cpp:244 rc.cpp:250
+#: part/dockers/KWRdfDocker.ui:34 part/dockers/KWStatisticsDocker.ui:87
 #, fuzzy
 #| msgid "Automatic hyphenation"
 msgid "Automatically update"
 msgstr "Penyempangan automatik"
 
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:94
-#. i18n: ectx: property (text), widget (QCheckBox, footEndNotes)
-#: rc.cpp:247
-msgid "Only count main text"
-msgstr ""
-
-#. i18n: file: part/dockers/KWRdfDocker.ui:41
 #. i18n: ectx: property (text), widget (QToolButton, refresh)
-#: rc.cpp:253
+#: part/dockers/KWRdfDocker.ui:41
 msgid "update"
 msgstr ""
 
-#. i18n: file: part/kword_readonly.rc:3
-#. i18n: ectx: Menu (file)
-#. i18n: file: part/kword.rc:3
-#. i18n: ectx: Menu (file)
-#: rc.cpp:256 rc.cpp:274
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:21
 #, fuzzy
-msgid "&File"
-msgstr "&Tapis:"
+#| msgid "Words:"
+msgid "Words"
+msgstr "Kata:"
 
-#. i18n: file: part/kword_readonly.rc:6
-#. i18n: ectx: Menu (edit)
-#. i18n: file: part/kword.rc:8
-#. i18n: ectx: Menu (edit)
-#: rc.cpp:259 rc.cpp:277
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:26
 #, fuzzy
-msgid "&Edit"
-msgstr "&Nota Hujung"
+#| msgid "Sentences:"
+msgid "Sentences"
+msgstr "Ayat:"
 
-#. i18n: file: part/kword_readonly.rc:12
-#. i18n: ectx: Menu (view)
-#. i18n: file: part/kword.rc:27
-#. i18n: ectx: Menu (view)
-#: rc.cpp:262 rc.cpp:280
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:31
 #, fuzzy
-msgid "&View"
-msgstr "&Baru"
+#| msgid "Syllables:"
+msgid "Syllables"
+msgstr "Suku kata:"
 
-#. i18n: file: part/kword_readonly.rc:14
-#. i18n: ectx: Menu (view_displaymodes)
-#. i18n: file: part/kword.rc:32
-#. i18n: ectx: Menu (view)
-#: rc.cpp:265 rc.cpp:283
-msgid "&Display Mode"
-msgstr "Mo&d Paparan"
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:36
+#, fuzzy
+#| msgid "Lines:"
+msgid "Lines"
+msgstr "Baris:"
 
-#. i18n: file: part/kword_readonly.rc:29
-#. i18n: ectx: Menu (tools)
-#. i18n: file: part/kword.rc:120
-#. i18n: ectx: Menu (tools)
-#: rc.cpp:268 rc.cpp:298
-msgid "&Tools"
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:41
+#, fuzzy
+#| msgid "Characters including spaces:"
+msgid "Characters incl. spaces"
+msgstr "Aksara termasuk ruang:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:46
+#, fuzzy
+#| msgid "Characters without spaces:"
+msgid "Characters without spaces"
+msgstr "Aksara tanpa ruang:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:56
+#, fuzzy
+#| msgid "Flesch reading ease:"
+msgid "Flesch reading ease"
+msgstr "Kesenangan membaca Flesch:"
+
+#. i18n: ectx: property (text), widget (QToolButton, refresh)
+#: part/dockers/KWStatisticsDocker.ui:80
+#, fuzzy
+#| msgid "New..."
+msgid "..."
+msgstr "Baru..."
+
+#. i18n: ectx: property (text), widget (QCheckBox, footEndNotes)
+#: part/dockers/KWStatisticsDocker.ui:94
+msgid "Only count main text"
 msgstr ""
 
-#. i18n: file: part/kword_readonly.rc:34
-#. i18n: ectx: ToolBar (edit_toolbar)
-#. i18n: file: part/kword.rc:157
-#. i18n: ectx: ToolBar (edit_toolbar)
-#: rc.cpp:271 rc.cpp:313
+#: part/frames/KWTextFrameSet.cpp:90
+msgid "Odd Pages Header"
+msgstr "Pengepala Halaman Ganjil"
+
+#: part/frames/KWTextFrameSet.cpp:93
+msgid "Even Pages Header"
+msgstr "Pengepala Halaman Genap"
+
+#: part/frames/KWTextFrameSet.cpp:96
+msgid "Odd Pages Footer"
+msgstr "Pengaki Halaman Ganjil"
+
+#: part/frames/KWTextFrameSet.cpp:99
+msgid "Even Pages Footer"
+msgstr "Pengaki Halaman Genap"
+
+#: part/frames/KWTextFrameSet.cpp:102
 #, fuzzy
-msgid "Edit"
-msgstr "Isih Teks"
-
-#. i18n: file: part/kword.rc:52
-#. i18n: ectx: Menu (insert)
-#: rc.cpp:286
-#, fuzzy
-msgctxt "Insert menu"
-msgid "&Insert"
-msgstr "Selitkan Baris"
-
-#. i18n: file: part/kword.rc:65
-#. i18n: ectx: Menu (semantic_object_menu)
-#: rc.cpp:289
-msgid "Semantic Object"
-msgstr ""
-
-#. i18n: file: part/kword.rc:83
-#. i18n: ectx: Menu (format)
-#: rc.cpp:292
-msgid "F&ormat"
-msgstr "F&ormat"
-
-#. i18n: file: part/kword.rc:99
-#. i18n: ectx: Menu (frames)
-#: rc.cpp:295
-#, fuzzy
-#| msgid "Fra&mestyle"
-msgid "Fra&mes"
-msgstr "Gaya &bingkai"
-
-#. i18n: file: part/kword.rc:121
-#. i18n: ectx: Menu (SpellCheck)
-#: rc.cpp:301
-msgid "Spellcheck"
-msgstr "Periksa ejaan"
-
-#. i18n: file: part/kword.rc:126
-#. i18n: ectx: Menu (AutoFormat)
-#: rc.cpp:304
-msgid "Autocorrection"
-msgstr "Periksa ejaan"
-
-#. i18n: file: part/kword.rc:130
-#. i18n: ectx: Menu (Changes)
-#: rc.cpp:307
-#, fuzzy
-#| msgid "Change Link"
-msgid "Change Tracking"
-msgstr "Ubah Pautan"
-
-#. i18n: file: part/kword.rc:145
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:310
-#, fuzzy
-msgid "&Settings"
-msgstr "Seting Pelbagai"
-
-#. i18n: file: part/kword.rc:169
-#. i18n: ectx: ToolBar (table_toolbar)
-#: rc.cpp:316
-msgid "Table"
-msgstr "Jadual"
-
-#. i18n: file: part/kword.rc:179
-#. i18n: ectx: ToolBar (insert_toolbar)
-#: rc.cpp:319
-#, fuzzy
-msgid "Insert"
-msgstr "Selitkan Baris"
-
-#. i18n: file: part/kword.rc:188
-#. i18n: ectx: ToolBar (paragraph_toolbar)
-#: rc.cpp:322
-msgid "Paragraph"
-msgstr "Perenggan"
-
-#. i18n: file: part/kword.rc:202
-#. i18n: ectx: ToolBar (format_toolbar)
-#: rc.cpp:325
-#, fuzzy
-msgid "Font"
-msgstr "Nota kaki"
-
-#. i18n: file: part/kword.rc:208
-#. i18n: ectx: ToolBar (charformat_toolbar)
-#: rc.cpp:328
-#, fuzzy
-#| msgid "F&ormat"
-msgid "Format"
-msgstr "F&ormat"
-
-#. i18n: file: part/kword.rc:218
-#. i18n: ectx: ToolBar (border_toolbar)
-#: rc.cpp:331
-msgid "Borders"
-msgstr "Sempadan"
-
-#. i18n: file: part/kword.rc:230
-#. i18n: ectx: ToolBar (mailmerge_toolbar)
-#: rc.cpp:334
-msgid "MailMerge"
-msgstr "Cantum Mel"
-
-#. i18n: file: part/kword.rc:235
-#. i18n: ectx: ToolBar (formula_toolbar)
-#: rc.cpp:337
-msgid "Formula"
-msgstr "Formula"
-
-#. i18n: file: part/kword.rc:312
-#. i18n: ectx: Menu (check_spell_list)
-#: rc.cpp:340
-msgid "Spell Check Result"
-msgstr "Keputusan Semak Eja"
-
-#. i18n: file: part/kword.rc:341
-#. i18n: ectx: Menu (variable_list)
-#: rc.cpp:343
-msgid "Change Variable To"
-msgstr "Ubah Variabel Ke"
+#| msgid "Plain text"
+msgid "Main text"
+msgstr "Teks mudah"
 
 #: part/i18n/stylenames.cpp:21
 msgctxt "Style name"
@@ -988,221 +865,6 @@ msgctxt "Style name"
 msgid "Gray Top and Bottom"
 msgstr "Kelabu Atas dan Bawah"
 
-#: part/dialogs/KWFrameConnectSelector.cpp:48
-#, fuzzy
-#| msgid "Fra&mes"
-msgid "frameset"
-msgstr "Kerang&ka"
-
-#: part/dialogs/KWFrameConnectSelector.cpp:75
-msgid "No framesets in document"
-msgstr ""
-
-#: part/dialogs/KWFrameDialog.cpp:38 part/dialogs/KWShapeConfigFactory.cpp:94
-msgid "Options"
-msgstr ""
-
-#: part/dialogs/KWFrameDialog.cpp:40 part/dialogs/KWShapeConfigFactory.cpp:76
-msgid "Text Run Around"
-msgstr "Teks Berada Di dalam"
-
-#: part/dialogs/KWFrameDialog.cpp:47 part/dialogs/KWShapeConfigFactory.cpp:40
-msgid "Connect Text Frames"
-msgstr "Sambung Bingkai Teks"
-
-#: part/dialogs/KWFrameDialog.cpp:54 part/dialogs/KWShapeConfigFactory.cpp:58
-msgid "Geometry"
-msgstr "Geometri"
-
-#: part/dialogs/KWPageSettingsDialog.cpp:97
-#, fuzzy
-#| msgid "Frame Properties"
-msgid "Change Page Properties"
-msgstr "Ciri Bingkai"
-
-#: part/dialogs/KWSelectBookmarkDialog.cpp:79
-msgid "Rename Bookmark"
-msgstr "Namakan Semula Penanda Buku"
-
-#: part/dialogs/KWSelectBookmarkDialog.cpp:80
-msgid "Please provide a new name for the bookmark"
-msgstr ""
-
-#: part/dialogs/KWSelectBookmarkDialog.cpp:89
-#, fuzzy, kde-format
-#| msgid ""
-#| "A frameset with the name '%1' already exists. Please enter another name."
-msgid "A bookmark with the name \"%1\" already exists."
-msgstr "Set bingkai dengan nama '%1' sudah wujud. Sila masukkan nama lain."
-
-#: part/dialogs/KWSelectBookmarkDialog.cpp:121
-msgid "Select Bookmark"
-msgstr "Pilih Tanda Buku"
-
-#: part/dialogs/KWStatistics.cpp:269
-#, kde-format
-msgid "approximately %1"
-msgstr "lebih kurang %1"
-
-#: part/dialogs/KWStatisticsDialog.cpp:29
-#: part/dockers/KWStatisticsDocker.cpp:36 part/KWView.cpp:390
-msgid "Statistics"
-msgstr "Statistik"
-
-#: part/dockers/KWRdfDocker.cpp:50
-msgid "RDF"
-msgstr ""
-
-#: part/commands/KWClipFrameCommand.cpp:41
-#, fuzzy
-#| msgid "Inline Frame"
-msgid "Clip Frame"
-msgstr "Sebariskan Bingkai"
-
-#: part/commands/KWChangePageStyleCommand.cpp:25
-#, fuzzy
-#| msgid "Framestyle:"
-msgid "Set Page Style"
-msgstr "Gaya Bingkai:"
-
-#: part/commands/KWCreateOutlineCommand.cpp:30
-#, fuzzy
-msgid "Create custom outline"
-msgstr "Cipta jadual."
-
-#: part/commands/KWNewPageStyleCommand.cpp:27
-#, fuzzy
-#| msgid "Insert Page"
-msgid "Insert Page Style"
-msgstr "Selitkan Halaman"
-
-#: part/commands/KWPageStylePropertiesCommand.cpp:36
-#, fuzzy
-#| msgid "Frame Properties"
-msgid "Page Properties"
-msgstr "Ciri Bingkai"
-
-#: part/commands/KWFrameDeleteCommand.cpp:29
-msgid "Delete Frame"
-msgstr "Hapuskan Bingkai"
-
-#: part/commands/KWFrameCreateCommand.cpp:29
-#, fuzzy
-#| msgid "Create Text Frame"
-msgid "Create Frame"
-msgstr "Cipta Bingkai Teks"
-
-#: part/commands/KWPageRemoveCommand.cpp:32
-#, fuzzy
-#| msgid "Remove entry"
-msgid "Remove Page"
-msgstr "Alih keluar entri"
-
-#: part/frames/KWTextFrameSet.cpp:90
-msgid "Odd Pages Header"
-msgstr "Pengepala Halaman Ganjil"
-
-#: part/frames/KWTextFrameSet.cpp:93
-msgid "Even Pages Header"
-msgstr "Pengepala Halaman Genap"
-
-#: part/frames/KWTextFrameSet.cpp:96
-msgid "Odd Pages Footer"
-msgstr "Pengaki Halaman Ganjil"
-
-#: part/frames/KWTextFrameSet.cpp:99
-msgid "Even Pages Footer"
-msgstr "Pengaki Halaman Genap"
-
-#: part/frames/KWTextFrameSet.cpp:102
-#, fuzzy
-#| msgid "Plain text"
-msgid "Main text"
-msgstr "Teks mudah"
-
-#: part/KWStatusBar.cpp:39
-msgid "Modified"
-msgstr ""
-
-#: part/KWStatusBar.cpp:40
-#, fuzzy
-#| msgid "Save Failed"
-msgid "Saved"
-msgstr "Simpan Gagal"
-
-#: part/KWStatusBar.cpp:41
-#, fuzzy, kde-format
-#| msgid "Page %1"
-msgid "Page: %1/%2"
-msgstr "Halaman %1"
-
-#: part/KWStatusBar.cpp:63
-msgid "Page: current/total"
-msgstr ""
-
-#: part/KWStatusBar.cpp:80
-msgid "State: saved/modified"
-msgstr ""
-
-#: part/KWStatusBar.cpp:94
-msgid "Mouseposition: X:Y"
-msgstr ""
-
-#: part/KWStatusBar.cpp:107
-msgid "Zoom Controller"
-msgstr ""
-
-#: part/KWDLoader.cpp:75
-msgid "Invalid document. No mimetype specified."
-msgstr "Dokumen tak sah. Tiada jenis mime ditetapkan."
-
-#: part/KWDLoader.cpp:79
-#, kde-format
-msgid ""
-"Invalid document. Expected mimetype application/x-kword or application/vnd."
-"kde.kword, got %1"
-msgstr ""
-"Dokumen tak sah. Aplikasi/x-kword atau aplikasi/vnd.kde.kword jenis mime "
-"yang dijangka, dapat %1"
-
-#: part/KWDLoader.cpp:105
-#, kde-format
-msgid "Invalid document. Paper size: %1x%2"
-msgstr "Dokumen tak sah. Saiz kertas: %1x%2"
-
-#: part/KWDLoader.cpp:691
-#, fuzzy
-#| msgid "Unable to create database object"
-msgid "Unable to locate footnote text"
-msgstr "Tidak dapat mencipta objek pangkalan data"
-
-#: part/KWDLoader.cpp:711
-#, fuzzy
-#| msgid "Unable to create database object"
-msgid "Unable to locate note-text"
-msgstr "Tidak dapat mencipta objek pangkalan data"
-
-#: part/main.cpp:31
-msgid "File to open"
-msgstr "Fail hendak dibuka"
-
-#: part/KWOdfLoader.cpp:85
-#, fuzzy
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
-
-#: part/KWOdfLoader.cpp:97
-#, fuzzy
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
-
-#: part/KWOdfLoader.cpp:99
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
-msgstr ""
-
 #: part/KWAboutData.h:27
 msgid "KOffice Word Processor"
 msgstr "Pemproses Kata KOffice"
@@ -1304,6 +966,263 @@ msgstr ""
 
 #: part/KWAboutData.h:61
 msgid "Michael Johnson"
+msgstr ""
+
+#: part/KWDLoader.cpp:75
+msgid "Invalid document. No mimetype specified."
+msgstr "Dokumen tak sah. Tiada jenis mime ditetapkan."
+
+#: part/KWDLoader.cpp:79
+#, kde-format
+msgid ""
+"Invalid document. Expected mimetype application/x-kword or application/vnd."
+"kde.kword, got %1"
+msgstr ""
+"Dokumen tak sah. Aplikasi/x-kword atau aplikasi/vnd.kde.kword jenis mime "
+"yang dijangka, dapat %1"
+
+#: part/KWDLoader.cpp:105
+#, kde-format
+msgid "Invalid document. Paper size: %1x%2"
+msgstr "Dokumen tak sah. Saiz kertas: %1x%2"
+
+#: part/KWDLoader.cpp:691
+#, fuzzy
+#| msgid "Unable to create database object"
+msgid "Unable to locate footnote text"
+msgstr "Tidak dapat mencipta objek pangkalan data"
+
+#: part/KWDLoader.cpp:711
+#, fuzzy
+#| msgid "Unable to create database object"
+msgid "Unable to locate note-text"
+msgstr "Tidak dapat mencipta objek pangkalan data"
+
+#: part/KWDocument.cpp:468
+#, fuzzy
+#| msgid "Copy%1-%2"
+msgid "Copy"
+msgstr "Salin%1-%2"
+
+#: part/KWDocument.cpp:513
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 1"
+msgid "Head 1"
+msgstr "Kepala 1"
+
+#: part/KWDocument.cpp:520
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 2"
+msgid "Head 2"
+msgstr "Kepala 2"
+
+#: part/KWDocument.cpp:527
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 3"
+msgid "Head 3"
+msgstr "Kepala 3"
+
+#: part/KWDocument.cpp:534
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Bullet List"
+msgid "Bullet List"
+msgstr "Senarai Bulet"
+
+#: part/KWDocument.cpp:838
+msgid "Can not find needed text component, KWord will quit now"
+msgstr ""
+
+#: part/KWDocument.cpp:839
+msgid "Installation Error"
+msgstr ""
+
+#: part/KWOdfLoader.cpp:85
+#, fuzzy
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+
+#: part/KWOdfLoader.cpp:97
+#, fuzzy
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr "Dokumen OASIS tak sah. Tiada teg office:isi ditemui"
+
+#: part/KWOdfLoader.cpp:99
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+
+#. i18n: ectx: Menu (file)
+#: part/kword.rc:3 part/kword_readonly.rc:3
+#, fuzzy
+msgid "&File"
+msgstr "&Tapis:"
+
+#. i18n: ectx: Menu (edit)
+#: part/kword.rc:8 part/kword_readonly.rc:6
+#, fuzzy
+msgid "&Edit"
+msgstr "&Nota Hujung"
+
+#. i18n: ectx: Menu (view)
+#: part/kword.rc:27 part/kword_readonly.rc:12
+#, fuzzy
+msgid "&View"
+msgstr "&Baru"
+
+#. i18n: ectx: Menu (view_displaymodes)
+#. i18n: ectx: Menu (view)
+#: part/kword.rc:32 part/kword_readonly.rc:14
+msgid "&Display Mode"
+msgstr "Mo&d Paparan"
+
+#. i18n: ectx: Menu (insert)
+#: part/kword.rc:52
+#, fuzzy
+msgctxt "Insert menu"
+msgid "&Insert"
+msgstr "Selitkan Baris"
+
+#. i18n: ectx: Menu (semantic_object_menu)
+#: part/kword.rc:65
+msgid "Semantic Object"
+msgstr ""
+
+#. i18n: ectx: Menu (format)
+#: part/kword.rc:83
+msgid "F&ormat"
+msgstr "F&ormat"
+
+#. i18n: ectx: Menu (frames)
+#: part/kword.rc:99
+#, fuzzy
+#| msgid "Fra&mestyle"
+msgid "Fra&mes"
+msgstr "Gaya &bingkai"
+
+#. i18n: ectx: Menu (tools)
+#: part/kword.rc:120 part/kword_readonly.rc:29
+msgid "&Tools"
+msgstr ""
+
+#. i18n: ectx: Menu (SpellCheck)
+#: part/kword.rc:121
+msgid "Spellcheck"
+msgstr "Periksa ejaan"
+
+#. i18n: ectx: Menu (AutoFormat)
+#: part/kword.rc:126
+msgid "Autocorrection"
+msgstr "Periksa ejaan"
+
+#. i18n: ectx: Menu (Changes)
+#: part/kword.rc:130
+#, fuzzy
+#| msgid "Change Link"
+msgid "Change Tracking"
+msgstr "Ubah Pautan"
+
+#. i18n: ectx: Menu (settings)
+#: part/kword.rc:145
+#, fuzzy
+msgid "&Settings"
+msgstr "Seting Pelbagai"
+
+#. i18n: ectx: ToolBar (edit_toolbar)
+#: part/kword.rc:157 part/kword_readonly.rc:34
+#, fuzzy
+msgid "Edit"
+msgstr "Isih Teks"
+
+#. i18n: ectx: ToolBar (table_toolbar)
+#: part/kword.rc:169
+msgid "Table"
+msgstr "Jadual"
+
+#. i18n: ectx: ToolBar (insert_toolbar)
+#: part/kword.rc:179
+#, fuzzy
+msgid "Insert"
+msgstr "Selitkan Baris"
+
+#. i18n: ectx: ToolBar (paragraph_toolbar)
+#: part/kword.rc:188
+msgid "Paragraph"
+msgstr "Perenggan"
+
+#. i18n: ectx: ToolBar (format_toolbar)
+#: part/kword.rc:202
+#, fuzzy
+msgid "Font"
+msgstr "Nota kaki"
+
+#. i18n: ectx: ToolBar (charformat_toolbar)
+#: part/kword.rc:208
+#, fuzzy
+#| msgid "F&ormat"
+msgid "Format"
+msgstr "F&ormat"
+
+#. i18n: ectx: ToolBar (border_toolbar)
+#: part/kword.rc:218
+msgid "Borders"
+msgstr "Sempadan"
+
+#. i18n: ectx: ToolBar (mailmerge_toolbar)
+#: part/kword.rc:230
+msgid "MailMerge"
+msgstr "Cantum Mel"
+
+#. i18n: ectx: ToolBar (formula_toolbar)
+#: part/kword.rc:235
+msgid "Formula"
+msgstr "Formula"
+
+#. i18n: ectx: Menu (check_spell_list)
+#: part/kword.rc:312
+msgid "Spell Check Result"
+msgstr "Keputusan Semak Eja"
+
+#. i18n: ectx: Menu (variable_list)
+#: part/kword.rc:341
+msgid "Change Variable To"
+msgstr "Ubah Variabel Ke"
+
+#: part/KWStatusBar.cpp:39
+msgid "Modified"
+msgstr ""
+
+#: part/KWStatusBar.cpp:40
+#, fuzzy
+#| msgid "Save Failed"
+msgid "Saved"
+msgstr "Simpan Gagal"
+
+#: part/KWStatusBar.cpp:41
+#, fuzzy, kde-format
+#| msgid "Page %1"
+msgid "Page: %1/%2"
+msgstr "Halaman %1"
+
+#: part/KWStatusBar.cpp:63
+msgid "Page: current/total"
+msgstr ""
+
+#: part/KWStatusBar.cpp:80
+msgid "State: saved/modified"
+msgstr ""
+
+#: part/KWStatusBar.cpp:94
+msgid "Mouseposition: X:Y"
+msgstr ""
+
+#: part/KWStatusBar.cpp:107
+msgid "Zoom Controller"
 msgstr ""
 
 #: part/KWView.cpp:248
@@ -1741,47 +1660,9 @@ msgstr ""
 msgid "Create outlines"
 msgstr "Cipta jadual."
 
-#: part/KWDocument.cpp:468
-#, fuzzy
-#| msgid "Copy%1-%2"
-msgid "Copy"
-msgstr "Salin%1-%2"
-
-#: part/KWDocument.cpp:513
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 1"
-msgid "Head 1"
-msgstr "Kepala 1"
-
-#: part/KWDocument.cpp:520
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 2"
-msgid "Head 2"
-msgstr "Kepala 2"
-
-#: part/KWDocument.cpp:527
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 3"
-msgid "Head 3"
-msgstr "Kepala 3"
-
-#: part/KWDocument.cpp:534
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Bullet List"
-msgid "Bullet List"
-msgstr "Senarai Bulet"
-
-#: part/KWDocument.cpp:838
-msgid "Can not find needed text component, KWord will quit now"
-msgstr ""
-
-#: part/KWDocument.cpp:839
-msgid "Installation Error"
-msgstr ""
+#: part/main.cpp:31
+msgid "File to open"
+msgstr "Fail hendak dibuka"
 
 #, fuzzy
 #~| msgid "Background"
