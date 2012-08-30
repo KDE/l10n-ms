@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-24 05:00+0200\n"
+"POT-Creation-Date: 2012-08-30 04:31+0200\n"
 "PO-Revision-Date: 2005-10-10 08:43+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -14,6 +14,100 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
+
+#: filter_clawsmail.cpp:32
+#, fuzzy
+#| msgid "Import KMail Maildirs and Folder Structure"
+msgid "Import Claws-mail Maildirs and Folder Structure"
+msgstr "Import Meldir KMail dan Struktur Folder"
+
+#: filter_clawsmail.cpp:34
+#, fuzzy
+#| msgid ""
+#| "<p><b>Sylpheed import filter</b></p><p>Select the base directory of the "
+#| "Sylpheed mailfolder you want to import (usually: ~/Mail ).</p><p>Since it "
+#| "is possible to recreate the folder structure, the folders will be stored "
+#| "under: \"Sylpheed-Import\" in your local folder.</p><p>This filter also "
+#| "recreates the status of message, e.g. new or forwarded."
+msgid ""
+"<p><b>Claws-mail import filter</b></p><p>Select the base directory of the "
+"Claws-mail mailfolder you want to import (usually: ~/Mail ).</p><p>Since it "
+"is possible to recreate the folder structure, the folders will be stored "
+"under: \"ClawsMail-Import\" in your local folder.</p><p>This filter also "
+"recreates the status of message, e.g. new or forwarded.</p>"
+msgstr ""
+"<p><b>Penapis import Sylpheed</b></p><p>Pilih direktori dasar folder mel "
+"Sylpheed yang anda ingin import (biasanya: ~/Mel ).</p><p>Oleh sebab "
+"struktur folder boleh dicipta semula, folder akan distorkan di bawah: "
+"\"Sylpheed-Import\" dalam folder setempat anda.</p><p>Penapis ini juga "
+"mencipta semula status mesej, misalnya baru atau diperpanjang."
+
+#: filter_clawsmail.cpp:118 filter_evolution.cpp:66 filter_evolution_v2.cpp:88
+#: filter_evolution_v3.cpp:91 filter_kmail_maildir.cpp:84 filter_oe.cpp:66
+#: filter_opera.cpp:173 filter_plain.cpp:44 filter_pmail.cpp:56
+#: filter_sylpheed.cpp:117 filter_thebat.cpp:81 filter_thunderbird.cpp:143
+#: filterbalsa.cpp:89
+msgid "No directory selected."
+msgstr "Tiada direktori dipilih"
+
+#: filter_clawsmail.cpp:126 filter_evolution.cpp:74 filter_evolution_v2.cpp:96
+#: filter_evolution_v3.cpp:99 filter_kmail_maildir.cpp:92 filter_opera.cpp:181
+#: filter_plain.cpp:54 filter_sylpheed.cpp:125 filter_thebat.cpp:89
+#: filter_thunderbird.cpp:151 filterbalsa.cpp:97
+msgid "No files found for import."
+msgstr "Tiada fail ditemui untuk import."
+
+#: filter_clawsmail.cpp:138 filter_evolution.cpp:87
+#: filter_evolution_v2.cpp:127 filter_evolution_v3.cpp:110
+#: filter_kmail_maildir.cpp:102 filter_mailapp.cpp:134 filter_mbox.cpp:137
+#: filter_opera.cpp:138 filter_plain.cpp:83 filter_pmail.cpp:79
+#: filter_sylpheed.cpp:137 filter_thebat.cpp:100 filter_thunderbird.cpp:180
+#: filterbalsa.cpp:108
+#, kde-format
+msgid "Finished importing emails from %1"
+msgstr "Selesai mengimpot e-mel dari %1"
+
+#: filter_clawsmail.cpp:140 filter_evolution.cpp:209
+#: filter_evolution_v2.cpp:129 filter_evolution_v3.cpp:113
+#: filter_kmail_maildir.cpp:104 filter_opera.cpp:140 filter_plain.cpp:85
+#: filter_sylpheed.cpp:139 filter_thebat.cpp:102 filter_thunderbird.cpp:182
+#: filterbalsa.cpp:111
+#, fuzzy, kde-format
+msgid "1 duplicate message not imported"
+msgid_plural "%1 duplicate messages not imported"
+msgstr[0] "_n: 1 mesej duplikat tak diimport"
+msgstr[1] "%1 mesej duplikat tak diimport"
+
+#: filter_clawsmail.cpp:144 filter_evolution_v2.cpp:132
+#: filter_evolution_v3.cpp:117 filter_kmail_maildir.cpp:108
+#: filter_mailapp.cpp:144 filter_mbox.cpp:144 filter_oe.cpp:112
+#: filter_opera.cpp:199 filter_plain.cpp:88 filter_sylpheed.cpp:143
+#: filter_thebat.cpp:106 filter_thunderbird.cpp:186 filterbalsa.cpp:115
+msgid "Finished import, canceled by user."
+msgstr "Import ditamatkan, dibatalkan oleh pengguna."
+
+#: filter_clawsmail.cpp:196
+#, fuzzy
+#| msgid "KMailCVT Import Tool"
+msgctxt "define folder name where we will import clawsmail mails"
+msgid "ClawsMail-Import"
+msgstr "Alat pengimport KMailCVT"
+
+#: filter_clawsmail.cpp:201 filter_evolution_v3.cpp:187
+#: filter_kmail_maildir.cpp:175 filter_sylpheed.cpp:200 filter_thebat.cpp:214
+#: filterbalsa.cpp:185
+#, kde-format
+msgid "Import folder %1..."
+msgstr "Import folder %1..."
+
+#: filter_clawsmail.cpp:215 filter_clawsmail.cpp:220
+#: filter_evolution_v3.cpp:196 filter_evolution_v3.cpp:201
+#: filter_kmail_maildir.cpp:183 filter_kmail_maildir.cpp:188
+#: filter_plain.cpp:70 filter_plain.cpp:74 filter_sylpheed.cpp:214
+#: filter_sylpheed.cpp:219 filterbalsa.cpp:194 filterbalsa.cpp:199
+#, kde-format
+msgid "Could not import %1"
+msgstr "Tidak dapat mengimport %1"
 
 #: filter_evolution.cpp:30
 msgid "Import Evolution 1.x Local Mails and Folder Structure"
@@ -31,30 +125,6 @@ msgstr ""
 "boleh dicipta semula, folder akan distorkan di bawah: \"Evolution-Import\".</"
 "p>"
 
-#: filter_evolution.cpp:66 filter_evolution_v2.cpp:88
-#: filter_evolution_v3.cpp:91 filter_kmail_maildir.cpp:84 filter_oe.cpp:66
-#: filter_opera.cpp:173 filter_plain.cpp:44 filter_pmail.cpp:56
-#: filter_sylpheed.cpp:117 filter_thebat.cpp:81 filter_thunderbird.cpp:143
-#: filterbalsa.cpp:89
-msgid "No directory selected."
-msgstr "Tiada direktori dipilih"
-
-#: filter_evolution.cpp:74 filter_evolution_v2.cpp:96
-#: filter_evolution_v3.cpp:99 filter_kmail_maildir.cpp:92 filter_opera.cpp:181
-#: filter_plain.cpp:54 filter_sylpheed.cpp:125 filter_thebat.cpp:89
-#: filter_thunderbird.cpp:151 filterbalsa.cpp:97
-msgid "No files found for import."
-msgstr "Tiada fail ditemui untuk import."
-
-#: filter_evolution.cpp:87 filter_evolution_v2.cpp:127
-#: filter_evolution_v3.cpp:110 filter_kmail_maildir.cpp:102
-#: filter_mailapp.cpp:134 filter_mbox.cpp:137 filter_opera.cpp:138
-#: filter_plain.cpp:83 filter_pmail.cpp:79 filter_sylpheed.cpp:137
-#: filter_thebat.cpp:100 filter_thunderbird.cpp:180 filterbalsa.cpp:108
-#, kde-format
-msgid "Finished importing emails from %1"
-msgstr "Selesai mengimpot e-mel dari %1"
-
 #: filter_evolution.cpp:137 filter_evolution_v2.cpp:191 filter_lnotes.cpp:95
 #: filter_mailapp.cpp:77 filter_mbox.cpp:63 filter_opera.cpp:80
 #: filter_pmail.cpp:166 filter_pmail.cpp:234 filter_pmail.cpp:252
@@ -68,16 +138,6 @@ msgstr "Tidak dapat membuka %1, melangkau"
 #, kde-format
 msgid "Importing emails from %1..."
 msgstr "Mengimport e-mel dari %1..."
-
-#: filter_evolution.cpp:209 filter_evolution_v2.cpp:129
-#: filter_evolution_v3.cpp:113 filter_kmail_maildir.cpp:104
-#: filter_opera.cpp:140 filter_plain.cpp:85 filter_sylpheed.cpp:139
-#: filter_thebat.cpp:102 filter_thunderbird.cpp:182 filterbalsa.cpp:111
-#, fuzzy, kde-format
-msgid "1 duplicate message not imported"
-msgid_plural "%1 duplicate messages not imported"
-msgstr[0] "_n: 1 mesej duplikat tak diimport"
-msgstr[1] "%1 mesej duplikat tak diimport"
 
 #: filter_evolution_v2.cpp:28
 msgid "Import Evolution 2.x Local Mails and Folder Structure"
@@ -104,14 +164,6 @@ msgstr ""
 #, kde-format
 msgid "Start import file %1..."
 msgstr "Mulakan import fail %1..."
-
-#: filter_evolution_v2.cpp:132 filter_evolution_v3.cpp:117
-#: filter_kmail_maildir.cpp:108 filter_mailapp.cpp:144 filter_mbox.cpp:144
-#: filter_oe.cpp:112 filter_opera.cpp:199 filter_plain.cpp:88
-#: filter_sylpheed.cpp:143 filter_thebat.cpp:106 filter_thunderbird.cpp:186
-#: filterbalsa.cpp:115
-msgid "Finished import, canceled by user."
-msgstr "Import ditamatkan, dibatalkan oleh pengguna."
 
 #: filter_evolution_v3.cpp:27
 #, fuzzy
@@ -141,20 +193,6 @@ msgstr ""
 msgctxt "define folder name where we import evolution mails"
 msgid "Evolution-Import"
 msgstr ""
-
-#: filter_evolution_v3.cpp:187 filter_kmail_maildir.cpp:175
-#: filter_sylpheed.cpp:200 filter_thebat.cpp:214 filterbalsa.cpp:185
-#, kde-format
-msgid "Import folder %1..."
-msgstr "Import folder %1..."
-
-#: filter_evolution_v3.cpp:196 filter_evolution_v3.cpp:201
-#: filter_kmail_maildir.cpp:183 filter_kmail_maildir.cpp:188
-#: filter_plain.cpp:70 filter_plain.cpp:74 filter_sylpheed.cpp:214
-#: filter_sylpheed.cpp:219 filterbalsa.cpp:194 filterbalsa.cpp:199
-#, kde-format
-msgid "Could not import %1"
-msgstr "Tidak dapat mengimport %1"
 
 #: filter_kmail_archive.cpp:36
 #, fuzzy
@@ -769,11 +807,6 @@ msgstr ""
 
 #~ msgid "KMailCVT"
 #~ msgstr "KMailCVT"
-
-#, fuzzy
-#~| msgid "KMailCVT Import Tool"
-#~ msgid "Mail Import Tool"
-#~ msgstr "Alat pengimport KMailCVT"
 
 #~ msgid "Original author"
 #~ msgstr "Pengarang asal"
