@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-28 08:20+0200\n"
+"POT-Creation-Date: 2012-08-31 07:33+0200\n"
 "PO-Revision-Date: 2005-10-12 15:05+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -62,7 +62,7 @@ msgctxt "@item Undefined import field type"
 msgid "Undefined"
 msgstr "Tak ditakrif"
 
-#: contactfields.cpp:56
+#: contactfields.cpp:56 grantleecontactformatter.cpp:210
 msgid "Anniversary"
 msgstr "Ulang tahun"
 
@@ -94,17 +94,17 @@ msgctxt "Fourth email address"
 msgid "EMail (4)"
 msgstr "E-mel"
 
-#: contactfields.cpp:155
+#: contactfields.cpp:155 grantleecontactformatter.cpp:253
 #, fuzzy
 #| msgid "Blog feed:"
 msgid "Blog Feed"
 msgstr "Suapan Blog:"
 
-#: contactfields.cpp:158
+#: contactfields.cpp:158 grantleecontactformatter.cpp:296
 msgid "Profession"
 msgstr "Pekerjaan"
 
-#: contactfields.cpp:161
+#: contactfields.cpp:161 grantleecontactformatter.cpp:300
 msgid "Office"
 msgstr "Pejabat"
 
@@ -259,21 +259,64 @@ msgctxt "@info:status"
 msgid "%1 out of %2"
 msgstr "%1 pada %2"
 
-#: grantleecontactformatter.cpp:214
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: grantleecontactformatter.cpp:199 printing/rbs_appearance.ui:99
+#, fuzzy
+msgid "Birthday"
+msgstr "Tarikh lahir:"
+
+#: grantleecontactformatter.cpp:222
 #, fuzzy
 #| msgid "Email"
-msgctxt "a contact's email address"
-msgid "Email"
+msgid "Emails"
 msgstr "E-mel"
 
-#: grantleecontactformatter.cpp:351
+#: grantleecontactformatter.cpp:245
+msgid "Website"
+msgstr ""
+
+#: grantleecontactformatter.cpp:261 mainwidget.cpp:564
+msgid "Address Book"
+msgstr "Buku Alamat"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: grantleecontactformatter.cpp:275 printing/rbs_appearance.ui:112
+#, fuzzy
+#| msgid "Note:"
+msgid "Note"
+msgstr "Nota:"
+
+#: grantleecontactformatter.cpp:289
+msgid "Department"
+msgstr "Jabatan"
+
+#: grantleecontactformatter.cpp:305
+msgid "Manager's Name"
+msgstr "Nama Pengurus"
+
+#: grantleecontactformatter.cpp:310
+#, fuzzy
+#| msgid "Assistant's name:"
+msgid "Assistant's Name"
+msgstr "Nama pembantu:"
+
+#: grantleecontactformatter.cpp:315
+#, fuzzy
+msgid "Partner's Name"
+msgstr "Nama Pengurus"
+
+#: grantleecontactformatter.cpp:320
+msgid "IM Address"
+msgstr "Alamat IM"
+
+#: grantleecontactformatter.cpp:367
 #, fuzzy
 #| msgid "Types"
 msgctxt "Boolean value"
 msgid "yes"
 msgstr "Jenis"
 
-#: grantleecontactformatter.cpp:353
+#: grantleecontactformatter.cpp:369
 msgctxt "Boolean value"
 msgid "no"
 msgstr ""
@@ -490,10 +533,6 @@ msgstr "Eksport buku alamat LDIF..."
 #, fuzzy
 msgid "Export contacts to a GMX address book file."
 msgstr "Buku alamat %1 "
-
-#: mainwidget.cpp:564
-msgid "Address Book"
-msgstr "Buku Alamat"
 
 #: mainwidget.cpp:570 printing/printingwizard.cpp:56
 #, fuzzy
@@ -927,12 +966,6 @@ msgstr "Edit Orang Hubungan"
 msgid "Check this box if you want contact birthdays to be printed."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
-#: printing/rbs_appearance.ui:99
-#, fuzzy
-msgid "Birthday"
-msgstr "Tarikh lahir:"
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
 #: printing/rbs_appearance.ui:106
 #, fuzzy
@@ -944,13 +977,6 @@ msgstr "Edit Orang Hubungan"
 #: printing/rbs_appearance.ui:109
 msgid "Check this box if you want contact notes to be printed."
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
-#: printing/rbs_appearance.ui:112
-#, fuzzy
-#| msgid "Note:"
-msgid "Note"
-msgstr "Nota:"
 
 #: printing/ringbinderstyle.cpp:150
 #, fuzzy
@@ -2077,9 +2103,6 @@ msgstr ""
 #~ msgid "City"
 #~ msgstr "Bandar"
 
-#~ msgid "Department"
-#~ msgstr "Jabatan"
-
 #~ msgid "Zip Code"
 #~ msgstr "Kod Zip"
 
@@ -2672,9 +2695,6 @@ msgstr ""
 #~ msgid "Manager's name:"
 #~ msgstr "Nama pengurus:"
 
-#~ msgid "Assistant's name:"
-#~ msgstr "Nama pembantu:"
-
 #, fuzzy
 #~| msgid "Date"
 #~ msgid "Dates"
@@ -3016,17 +3036,6 @@ msgstr ""
 
 #~ msgid "All Fields"
 #~ msgstr "Semua Medan"
-
-#~ msgid "Manager's Name"
-#~ msgstr "Nama Pengurus"
-
-#, fuzzy
-#~ msgctxt "Wife/Husband/..."
-#~ msgid "Partner's Name"
-#~ msgstr "Nama Pengurus"
-
-#~ msgid "IM Address"
-#~ msgstr "Alamat IM"
 
 #, fuzzy
 #~| msgid "Contact Headers"
