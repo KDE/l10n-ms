@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-24 04:46+0200\n"
+"POT-Creation-Date: 2012-09-27 04:46+0200\n"
 "PO-Revision-Date: 2007-02-24 13:11+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -2840,46 +2840,46 @@ msgstr " minit"
 msgid "&Apply"
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:171
+#: fitsviewer/fitsimage.cpp:172
 msgid "Please hold while loading FITS file..."
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:172
+#: fitsviewer/fitsimage.cpp:173
 #, fuzzy
 msgid "Loading FITS"
 msgstr "Memuatkan jurupacu %s..."
 
-#: fitsviewer/fitsimage.cpp:186
+#: fitsviewer/fitsimage.cpp:187
 #, fuzzy, kde-format
 msgid "Could not open file %1 (fits_get_img_param). Error %2"
 msgstr "Fail tidak dapat dibuka untuk ditulis: %s"
 
-#: fitsviewer/fitsimage.cpp:186 fitsviewer/fitsimage.cpp:203
-#: fitsviewer/fitsimage.cpp:209 fitsviewer/fitsimage.cpp:218
-#: fitsviewer/fitsimage.cpp:441
+#: fitsviewer/fitsimage.cpp:187 fitsviewer/fitsimage.cpp:204
+#: fitsviewer/fitsimage.cpp:210 fitsviewer/fitsimage.cpp:219
+#: fitsviewer/fitsimage.cpp:454
 #, fuzzy
 msgid "FITS Open"
 msgstr "Skala"
 
-#: fitsviewer/fitsimage.cpp:203
+#: fitsviewer/fitsimage.cpp:204
 #, fuzzy, kde-format
 msgid "FITS file open error (fits_get_img_param): %1"
 msgstr "Tidak dapat memuatkan fail!"
 
-#: fitsviewer/fitsimage.cpp:209
+#: fitsviewer/fitsimage.cpp:210
 msgid "1D FITS images are not supported in KStars."
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:218
+#: fitsviewer/fitsimage.cpp:219
 #, fuzzy, kde-format
 msgid "FITS file open error (fits_get_img_type): %1"
 msgstr "Tidak dapat memuatkan fail!"
 
-#: fitsviewer/fitsimage.cpp:441
+#: fitsviewer/fitsimage.cpp:454
 msgid "FITS image is saturated and cannot be displayed."
 msgstr ""
 
-#: fitsviewer/fitstab.cpp:54 fitsviewer/fitsviewer.cpp:388
+#: fitsviewer/fitstab.cpp:54 fitsviewer/fitsviewer.cpp:392
 #, fuzzy
 msgid "Save Changes to FITS?"
 msgstr "Berbalik ke yang Ter_akhir Disimpan"
@@ -2932,7 +2932,7 @@ msgstr "Selamat Datang hingga Pemapar"
 msgid "Statistics"
 msgstr "Statistik:"
 
-#: fitsviewer/fitsviewer.cpp:148 fitsviewer/fitsviewer.cpp:484
+#: fitsviewer/fitsviewer.cpp:148 fitsviewer/fitsviewer.cpp:488
 #, fuzzy
 msgid "Mark Stars"
 msgstr "Bandar nama"
@@ -2948,21 +2948,26 @@ msgid "KStars FITS Viewer"
 msgstr "Selamat Datang hingga Pemapar"
 
 #: fitsviewer/fitsviewer.cpp:216
+#, fuzzy
+msgid "Calibrate"
+msgstr "Bandar nama"
+
+#: fitsviewer/fitsviewer.cpp:220
 msgid "Focus"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:220
+#: fitsviewer/fitsviewer.cpp:224
 msgid "Guide"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:268 fitsviewer/fitsviewer.cpp:491
+#: fitsviewer/fitsviewer.cpp:272 fitsviewer/fitsviewer.cpp:495
 #, kde-format
 msgid "%1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:389
+#: fitsviewer/fitsviewer.cpp:393
 #, fuzzy, kde-format
 #| msgid ""
 #| "The current script has unsaved changes.  Would you like to save before "
@@ -2972,7 +2977,7 @@ msgstr ""
 "Skrip semasa mempunyai perubahan tidak disimpan. Adakah anda hendak "
 "menyimpan sebelum menutupnya?"
 
-#: fitsviewer/fitsviewer.cpp:489
+#: fitsviewer/fitsviewer.cpp:493
 msgid "Unmark Stars"
 msgstr ""
 
@@ -3317,12 +3322,12 @@ msgid ""
 "from the Device Manager in the devices menu."
 msgstr "Tidak larian Kepada Peranti Pengurus inci."
 
-#: indi/indiccd.cpp:287 indi/servermanager.cpp:74
+#: indi/indiccd.cpp:330 indi/servermanager.cpp:74
 #, fuzzy
 msgid "Error making temporary filename."
 msgstr "Enter"
 
-#: indi/indiccd.cpp:326
+#: indi/indiccd.cpp:369
 #, fuzzy, kde-format
 msgid "FITS file saved to %1"
 msgstr "Tidak dapat memuatkan fail!"
@@ -6815,6 +6820,50 @@ msgstr "Default Pilihan Direktori:"
 #, fuzzy
 msgid "Default Focuser driver"
 msgstr "Default Pilihan Direktori:"
+
+#. i18n: ectx: label, entry (FocusTicks), group (Ekos)
+#: kstars.kcfg:1186
+#, fuzzy
+msgid "Default Focuser step ticks"
+msgstr "Default Pilihan Direktori:"
+
+#. i18n: ectx: whatsthis, entry (FocusTicks), group (Ekos)
+#: kstars.kcfg:1187
+msgid ""
+"Step size of the absolute focuser. The step size TICKS should be adjusted so "
+"that when the focuse moves TICKS steps, the difference in HFR more than 0.1 "
+"pixels. Lower the value when you are close to optimal focus"
+msgstr ""
+
+#. i18n: ectx: label, entry (FocusTolerance), group (Ekos)
+#: kstars.kcfg:1191
+#, fuzzy
+msgid "Default Focuser tolerance value"
+msgstr "Default Pilihan Direktori:"
+
+#. i18n: ectx: whatsthis, entry (FocusTolerance), group (Ekos)
+#: kstars.kcfg:1193
+msgid ""
+"The tolerance specfies the percentage difference between the current "
+"focusing position and the minimum obtained during the focusing run. "
+"Adjustment of this value is necessary to prevent\n"
+"           the focusing algorithm from oscillating back and forth."
+msgstr ""
+
+#. i18n: ectx: label, entry (FocusExposure), group (Ekos)
+#: kstars.kcfg:1197
+#, fuzzy
+msgid "Default Focuser exposure value"
+msgstr "Default Pilihan Direktori:"
+
+#. i18n: ectx: whatsthis, entry (FocusExposure), group (Ekos)
+#: kstars.kcfg:1199
+msgid ""
+"Specifies exposure value of CCD when performing focusing. Lower this value "
+"to avoid saturation of bright stars which adversely affects HFR measurement. "
+"Increase value if no stars are\n"
+"            detected."
+msgstr ""
 
 #: kstars_i18n.cpp:2
 #, fuzzy
