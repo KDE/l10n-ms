@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-27 04:56+0200\n"
+"POT-Creation-Date: 2012-10-05 04:51+0200\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -311,7 +311,7 @@ msgstr "Penyingkiran Selesai"
 #. i18n: ectx: property (text), widget (QPushButton, mDeleteButton)
 #: actionmanager.cpp:434 actionmanager.cpp:651 actionmanager.cpp:1704
 #: actionmanager.cpp:1735 filteredit_base.ui:44
-#: views/journalview/journalview.cpp:178 views/todoview/kotodoview.cpp:214
+#: views/journalview/journalview.cpp:178 views/todoview/kotodoview.cpp:288
 #, fuzzy
 msgid "&Delete"
 msgstr "Hapuskan%1"
@@ -474,7 +474,7 @@ msgstr "&Peristiwa Baru..."
 msgid "Create a new Event"
 msgstr ""
 
-#: actionmanager.cpp:610 kodaymatrix.cpp:523 views/todoview/kotodoview.cpp:223
+#: actionmanager.cpp:610 kodaymatrix.cpp:523 views/todoview/kotodoview.cpp:297
 msgid "New &To-do..."
 msgstr "&Tugasan Baru..."
 
@@ -484,7 +484,7 @@ msgstr "&Tugasan Baru..."
 msgid "Create a new To-do"
 msgstr "Klik untuk tambah tugasan baru"
 
-#: actionmanager.cpp:617 views/todoview/kotodoview.cpp:226
+#: actionmanager.cpp:617 views/todoview/kotodoview.cpp:300
 msgid "New Su&b-to-do..."
 msgstr "&Subtugasan Baru..."
 
@@ -516,12 +516,12 @@ msgid "Configure the view"
 msgstr "Konfigur &Tarikh && Waktu"
 
 #: actionmanager.cpp:641 actionmanager.cpp:1698 actionmanager.cpp:1733
-#: koeventpopupmenu.cpp:46 views/todoview/kotodoview.cpp:195
+#: koeventpopupmenu.cpp:46 views/todoview/kotodoview.cpp:269
 msgid "&Show"
 msgstr "&Paparkan"
 
 #: actionmanager.cpp:646 actionmanager.cpp:1701 actionmanager.cpp:1734
-#: koeventpopupmenu.cpp:49 views/todoview/kotodoview.cpp:198
+#: koeventpopupmenu.cpp:49 views/todoview/kotodoview.cpp:272
 msgid "&Edit..."
 msgstr "&Edit..."
 
@@ -2631,12 +2631,12 @@ msgstr "&Tambah"
 msgid "&Cancel"
 msgstr "&Ubah"
 
-#: koeventpopupmenu.cpp:52 views/todoview/kotodoview.cpp:205
+#: koeventpopupmenu.cpp:52 views/todoview/kotodoview.cpp:279
 #, fuzzy
 msgid "&Print..."
 msgstr "&Edit..."
 
-#: koeventpopupmenu.cpp:55 views/todoview/kotodoview.cpp:209
+#: koeventpopupmenu.cpp:55 views/todoview/kotodoview.cpp:283
 #, fuzzy
 msgid "Print Previe&w..."
 msgstr "&Edit..."
@@ -8271,35 +8271,84 @@ msgstr "Tidak dapat alihkan tugasan ke dirinya sendiri atau anaknya sendiri."
 msgid "Drop To-do"
 msgstr "Lepaskan Tugasan"
 
-#: views/todoview/kotodoview.cpp:141
+#: views/todoview/kotodoview.cpp:152
+msgctxt "@info:tooltip"
+msgid "Fully expand the to-do tree"
+msgstr ""
+
+#: views/todoview/kotodoview.cpp:155
+#, fuzzy
+#| msgid "Press this button to define a new filter."
+msgctxt "@info:whatsthis"
+msgid "Clicking this button will fully expand the to-do list tree."
+msgstr "Tekan butang ini untuk mentakrif penapis baru."
+
+#: views/todoview/kotodoview.cpp:166
+msgctxt "@info:tooltip"
+msgid "Expand the to-do tree at the current node"
+msgstr ""
+
+#: views/todoview/kotodoview.cpp:169
+msgctxt "@info:whatsthis"
+msgid ""
+"Clicking this button will expand the to-do list at the currrently selected "
+"node only.  If the current node is already expanded, then the grandchild "
+"node will be expanded."
+msgstr ""
+
+#: views/todoview/kotodoview.cpp:182
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Fully collapse the to-do tree"
+msgstr "_n: 1 minit"
+
+#: views/todoview/kotodoview.cpp:185
+msgctxt "@info:whatsthis"
+msgid "Clicking this button will fully collapse the to-do list tree."
+msgstr ""
+
+#: views/todoview/kotodoview.cpp:196
+msgctxt "@info:tooltip"
+msgid "Collapse the to-do tree at the current node"
+msgstr ""
+
+#: views/todoview/kotodoview.cpp:199
+msgctxt "@info:whatsthis"
+msgid ""
+"Clicking this button will collapse the to-do list at the currently selected "
+"node only.  If the current node is already collapsed, then the parent node "
+"will be collapsed."
+msgstr ""
+
+#: views/todoview/kotodoview.cpp:207
 msgctxt "Checkbox to display this view into the full window"
 msgid "Full Window"
 msgstr ""
 
-#: views/todoview/kotodoview.cpp:144
+#: views/todoview/kotodoview.cpp:210
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Display to-do list in a full window"
 msgstr "Paparan tugasan menggunakan tetingkap penuh"
 
-#: views/todoview/kotodoview.cpp:147
+#: views/todoview/kotodoview.cpp:213
 msgctxt "@info:whatsthis"
 msgid "Checking this option will cause the to-do view to use the full window."
 msgstr ""
 
-#: views/todoview/kotodoview.cpp:155
+#: views/todoview/kotodoview.cpp:221
 #, fuzzy
 #| msgid "Month View"
 msgctxt "Checkbox to display todos not hierarchical"
 msgid "Flat View"
 msgstr "Paparan Bulan"
 
-#: views/todoview/kotodoview.cpp:158
+#: views/todoview/kotodoview.cpp:224
 msgctxt "@info:tooltip"
 msgid "Display to-dos in flat list instead of a tree"
 msgstr ""
 
-#: views/todoview/kotodoview.cpp:161
+#: views/todoview/kotodoview.cpp:227
 msgctxt "@info:whatsthis"
 msgid ""
 "Checking this option will cause the to-dos to be displayed as a flat list "
@@ -8307,78 +8356,78 @@ msgid ""
 "the display."
 msgstr ""
 
-#: views/todoview/kotodoview.cpp:230
+#: views/todoview/kotodoview.cpp:304
 #, fuzzy
 msgid "&Make this To-do Independent"
 msgstr "&Jadikan Subtugasan Tak Bersandar"
 
-#: views/todoview/kotodoview.cpp:233
+#: views/todoview/kotodoview.cpp:307
 #, fuzzy
 msgid "Make all Sub-to-dos &Independent"
 msgstr "Jadikan Subtugasan Tak Bersandar"
 
-#: views/todoview/kotodoview.cpp:249
+#: views/todoview/kotodoview.cpp:323
 #, fuzzy
 msgid "&Copy To"
 msgstr "Salin Ke"
 
-#: views/todoview/kotodoview.cpp:262
+#: views/todoview/kotodoview.cpp:336
 #, fuzzy
 msgid "&Move To"
 msgstr "Alihkan Ke"
 
-#: views/todoview/kotodoview.cpp:274
+#: views/todoview/kotodoview.cpp:348
 #, fuzzy
 msgctxt "delete completed to-dos"
 msgid "Pur&ge Completed"
 msgstr "Penyingkiran Selesai"
 
-#: views/todoview/kotodoview.cpp:278
+#: views/todoview/kotodoview.cpp:352
 #, fuzzy
 #| msgid "unspecified"
 msgctxt "unspecified priority"
 msgid "unspecified"
 msgstr "tidak dinyatakan"
 
-#: views/todoview/kotodoview.cpp:279
+#: views/todoview/kotodoview.cpp:353
 #, fuzzy
 #| msgid "1 (highest)"
 msgctxt "highest priority"
 msgid "1 (highest)"
 msgstr "1 (tertinggi)"
 
-#: views/todoview/kotodoview.cpp:280
+#: views/todoview/kotodoview.cpp:354
 msgid "2"
 msgstr "2"
 
-#: views/todoview/kotodoview.cpp:281
+#: views/todoview/kotodoview.cpp:355
 msgid "3"
 msgstr "3"
 
-#: views/todoview/kotodoview.cpp:282
+#: views/todoview/kotodoview.cpp:356
 msgid "4"
 msgstr "4"
 
-#: views/todoview/kotodoview.cpp:283
+#: views/todoview/kotodoview.cpp:357
 #, fuzzy
 #| msgid "5 (medium)"
 msgctxt "medium priority"
 msgid "5 (medium)"
 msgstr "5 (sederhana)"
 
-#: views/todoview/kotodoview.cpp:284
+#: views/todoview/kotodoview.cpp:358
 msgid "6"
 msgstr "6"
 
-#: views/todoview/kotodoview.cpp:285
+#: views/todoview/kotodoview.cpp:359
 msgid "7"
 msgstr "7"
 
-#: views/todoview/kotodoview.cpp:286
+#: views/todoview/kotodoview.cpp:360
 msgid "8"
 msgstr "8"
 
-#: views/todoview/kotodoview.cpp:287
+#: views/todoview/kotodoview.cpp:361
 #, fuzzy
 #| msgid "9 (lowest)"
 msgctxt "lowest priority"
@@ -8589,11 +8638,6 @@ msgstr "  (Cukup tempoh: %1)"
 #~| msgid "Select Cate&gories..."
 #~ msgid "Add the entry to the category list"
 #~ msgstr "Pilih kate&gori..."
-
-#, fuzzy
-#~| msgid "Press this button to define a new filter."
-#~ msgid "Click this button to insert the entry into the category list."
-#~ msgstr "Tekan butang ini untuk mentakrif penapis baru."
 
 #, fuzzy
 #~| msgid "&Add"
