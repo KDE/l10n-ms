@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-10-08 04:43+0200\n"
+"POT-Creation-Date: 2012-10-09 05:55+0200\n"
 "PO-Revision-Date: 2007-02-24 13:11+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -2674,6 +2674,123 @@ msgstr ""
 "<p> Pilih Bandar Anda penapis nama dan</p>\n"
 "<p> Sekali Bandar<b> Berikutnya</b></p>"
 
+#. i18n: ectx: property (windowTitle), widget (QDialog, advancedOptions)
+#: ekos/advancedOptions.ui:14
+#, fuzzy
+#| msgid "Advanced"
+msgid "Advanced Options"
+msgstr "Lanjutan"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ekos/advancedOptions.ui:22
+#, fuzzy
+#| msgid "Mode"
+msgid "INDI Mode"
+msgstr "Mod"
+
+#. i18n: ectx: property (text), widget (QRadioButton, localModeR)
+#. i18n: ectx: property (text), widget (QRadioButton, localR)
+#. i18n: ectx: property (text), widget (QRadioButton, LocalButton)
+#: ekos/advancedOptions.ui:28 indi/devmanager.ui:67 indi/drivermanager.ui:63
+#: tools/argstartindi.ui:57
+msgid "Local"
+msgstr "Tempatan"
+
+#. i18n: ectx: property (text), widget (QRadioButton, remoteModeR)
+#: ekos/advancedOptions.ui:38
+#, fuzzy
+msgid "Remote"
+msgstr "&Buang"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ekos/advancedOptions.ui:61
+#, fuzzy
+#| msgid "Server"
+msgid "Remote Server"
+msgstr "Pelayan"
+
+#. i18n: ectx: property (text), widget (QLabel, label_12)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: ekos/advancedOptions.ui:69 indi/indihostconf.ui:48
+msgid "Host:"
+msgstr "Hos:"
+
+#. i18n: ectx: property (text), widget (QLineEdit, lineEdit_19)
+#: ekos/advancedOptions.ui:76
+#, fuzzy
+msgid "localhost"
+msgstr "Masa Ketara Lokal"
+
+#. i18n: ectx: property (text), widget (QLabel, label_13)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: ekos/advancedOptions.ui:83 indi/indihostconf.ui:55
+#: tools/argsetportindi.ui:30
+msgid "Port:"
+msgstr "Port:"
+
+#. i18n: ectx: property (text), widget (QLineEdit, lineEdit_20)
+#: ekos/advancedOptions.ui:90
+msgid "7624"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (text), widget (QTreeWidget, localTreeWidget)
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_useDeviceSource)
+#: ekos/advancedOptions.ui:130 indi/devmanager.ui:189
+#: indi/drivermanager.ui:185 indi/opsindi.ui:304
+msgid "Device"
+msgstr "Peranti"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: attribute (title), widget (QWidget, Scope)
+#: ekos/advancedOptions.ui:152 oal/equipmentwriter.ui:30
+#, fuzzy
+msgid "Telescope"
+msgstr "Port tempatan:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (title), widget (QGroupBox, setupGroup_3)
+#: ekos/advancedOptions.ui:159 ekos/capture.ui:31 ekos/ekosmanager.cpp:709
+#, fuzzy
+msgid "CCD"
+msgstr "CCDB"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: ekos/advancedOptions.ui:166
+#, fuzzy
+msgid "Guider"
+msgstr "Bandar nama"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: ekos/advancedOptions.ui:173
+#, fuzzy
+msgid "Focuser"
+msgstr "Pada Ahli:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#. i18n: ectx: property (title), widget (QGroupBox, setupGroup)
+#. i18n: ectx: attribute (title), widget (QWidget, Filter)
+#: ekos/advancedOptions.ui:180 ekos/capture.ui:456 oal/equipmentwriter.ui:553
+msgid "Filter"
+msgstr "Tapis"
+
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: ekos/advancedOptions.ui:187
+msgid "Auxiliary"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: ekos/advancedOptions.ui:200
+#, fuzzy
+msgid "Driver"
+msgstr "Jurupacu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: ekos/advancedOptions.ui:224
+#, fuzzy
+msgid "Remote Name"
+msgstr "Label Bertindan"
+
 #: ekos/capture.cpp:110
 msgid "Auto dark subtract is not supported in batch mode."
 msgstr ""
@@ -2707,18 +2824,12 @@ msgstr "Imej NFS"
 msgid "Capturing image..."
 msgstr "imej boot"
 
-#: ekos/capture.cpp:499 ekos/ekosmanager.cpp:660 ekos/focus.cpp:701
-#: ekos/guide.cpp:248
+#: ekos/capture.cpp:499 ekos/ekosmanager.cpp:680 ekos/focus.cpp:701
+#: ekos/guide.cpp:269
 #, kde-format
 msgctxt "log entry; %1 is the date, %2 is the text"
 msgid "%1 %2"
 msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, setupGroup_3)
-#: ekos/capture.ui:31 ekos/ekosmanager.cpp:689
-#, fuzzy
-msgid "CCD"
-msgstr "CCDB"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_6)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_5_3)
@@ -2893,12 +3004,6 @@ msgstr "Tambah ISO masa "
 msgid "Display in FITS Viewer"
 msgstr "Pelihat Dokumen"
 
-#. i18n: ectx: property (title), widget (QGroupBox, setupGroup)
-#. i18n: ectx: attribute (title), widget (QWidget, Filter)
-#: ekos/capture.ui:456 oal/equipmentwriter.ui:553
-msgid "Filter"
-msgstr "Tapis"
-
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2_3)
 #. i18n: ectx: property (text), widget (QLabel, label_18)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
@@ -2976,26 +3081,26 @@ msgstr "Mula"
 msgid "INDI services stopped."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:507 ekos/ekosmanager.cpp:519 ekos/ekosmanager.cpp:526
-#: ekos/ekosmanager.cpp:553 ekos/ekosmanager.cpp:571 indi/indistd.cpp:331
+#: ekos/ekosmanager.cpp:507 ekos/ekosmanager.cpp:519 ekos/ekosmanager.cpp:532
+#: ekos/ekosmanager.cpp:565 ekos/ekosmanager.cpp:583 indi/indistd.cpp:331
 #, fuzzy, kde-format
 msgid "%1 is online."
 msgstr "Mandriva Online"
 
-#: ekos/ekosmanager.cpp:592
+#: ekos/ekosmanager.cpp:604
 #, fuzzy, kde-format
 msgid "%1 is offline."
 msgstr "Mandriva Online"
 
-#: ekos/ekosmanager.cpp:700 fitsviewer/fitsviewer.cpp:222
+#: ekos/ekosmanager.cpp:720 fitsviewer/fitsviewer.cpp:222
 msgid "Focus"
 msgstr ""
 
-#: ekos/ekosmanager.cpp:716 fitsviewer/fitsviewer.cpp:226
+#: ekos/ekosmanager.cpp:736 fitsviewer/fitsviewer.cpp:226
 msgid "Guide"
 msgstr ""
 
-#: ekos/ekosmanager.cpp:724
+#: ekos/ekosmanager.cpp:744
 #, kde-format
 msgid "Guider port from %1 is ready."
 msgstr ""
@@ -3109,7 +3214,7 @@ msgstr ""
 msgid "Autofocus in progress..."
 msgstr ""
 
-#: ekos/focus.cpp:200 ekos/guide.cpp:186
+#: ekos/focus.cpp:200 ekos/guide.cpp:207
 msgid "Error: Lost connection to CCD."
 msgstr ""
 
@@ -3854,7 +3959,7 @@ msgstr "Tidak dapat memuatkan fail!"
 msgid "FITS image is saturated and cannot be displayed."
 msgstr ""
 
-#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:394
+#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:397
 #, fuzzy
 msgid "Save Changes to FITS?"
 msgstr "Berbalik ke yang Ter_akhir Disimpan"
@@ -3907,7 +4012,7 @@ msgstr "Selamat Datang hingga Pemapar"
 msgid "Statistics"
 msgstr "Statistik:"
 
-#: fitsviewer/fitsviewer.cpp:148 fitsviewer/fitsviewer.cpp:490
+#: fitsviewer/fitsviewer.cpp:148 fitsviewer/fitsviewer.cpp:493
 #, fuzzy
 msgid "Mark Stars"
 msgstr "Bandar nama"
@@ -3922,14 +4027,14 @@ msgstr "Selamat Datang hingga Pemapar"
 msgid "Calibrate"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsviewer.cpp:274 fitsviewer/fitsviewer.cpp:497
+#: fitsviewer/fitsviewer.cpp:274 fitsviewer/fitsviewer.cpp:500
 #, kde-format
 msgid "%1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:395
+#: fitsviewer/fitsviewer.cpp:398
 #, fuzzy, kde-format
 #| msgid ""
 #| "The current script has unsaved changes.  Would you like to save before "
@@ -3939,7 +4044,7 @@ msgstr ""
 "Skrip semasa mempunyai perubahan tidak disimpan. Adakah anda hendak "
 "menyimpan sebelum menutupnya?"
 
-#: fitsviewer/fitsviewer.cpp:495
+#: fitsviewer/fitsviewer.cpp:498
 msgid "Unmark Stars"
 msgstr ""
 
@@ -4085,12 +4190,6 @@ msgstr "_Pelayan NIS:"
 msgid "Mode"
 msgstr "Mod"
 
-#. i18n: ectx: property (text), widget (QRadioButton, localR)
-#. i18n: ectx: property (text), widget (QRadioButton, LocalButton)
-#: indi/devmanager.ui:67 indi/drivermanager.ui:63 tools/argstartindi.ui:57
-msgid "Local"
-msgstr "Tempatan"
-
 #. i18n: ectx: property (text), widget (QRadioButton, serverR)
 #. i18n: ectx: property (text), widget (QRadioButton, ServerButton)
 #: indi/devmanager.ui:83 indi/drivermanager.ui:79 tools/argstartindi.ui:67
@@ -4114,12 +4213,6 @@ msgstr "                    [--initscript <service>]\n"
 #, fuzzy
 msgid "Stop Service"
 msgstr "Hentikan servis dipilih"
-
-#. i18n: ectx: property (text), widget (QTreeWidget, localTreeWidget)
-#. i18n: ectx: property (text), widget (QRadioButton, kcfg_useDeviceSource)
-#: indi/devmanager.ui:189 indi/drivermanager.ui:185 indi/opsindi.ui:304
-msgid "Device"
-msgstr "Peranti"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, localTreeWidget)
 #: indi/devmanager.ui:204 indi/drivermanager.ui:200
@@ -4308,16 +4401,6 @@ msgstr "Tidak hingga fail hingga"
 #: indi/indihostconf.ui:41 tools/altvstime.ui:54 tools/argfindobject.ui:21
 msgid "Name:"
 msgstr "Nama:"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: indi/indihostconf.ui:48
-msgid "Host:"
-msgstr "Hos:"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: indi/indihostconf.ui:55 tools/argsetportindi.ui:30
-msgid "Port:"
-msgstr "Port:"
 
 #. i18n: ectx: property (text), widget (QPushButton, buttonOk)
 #: indi/indihostconf.ui:125
@@ -37034,12 +37117,6 @@ msgstr "Bandar nama"
 msgctxt "prefix for ID number identifying a filter (optional)"
 msgid "filter"
 msgstr "Tapis"
-
-#. i18n: ectx: attribute (title), widget (QWidget, Scope)
-#: oal/equipmentwriter.ui:30
-#, fuzzy
-msgid "Telescope"
-msgstr "Port tempatan:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, label_6)
