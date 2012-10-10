@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: skrooge\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-21 04:31+0200\n"
+"POT-Creation-Date: 2012-10-10 10:07+0200\n"
 "PO-Revision-Date: 2009-10-03 23:05+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1356,7 +1356,7 @@ msgstr "Operasi"
 
 #: plugins/generic/skg_undoredo/skgundoredoplugin.cpp:187
 #: plugins/generic/skg_undoredo/skgundoredoplugin.cpp:197
-#: skgbasegui/skgmainpanel.cpp:1702
+#: skgbasegui/skgmainpanel.cpp:1721
 #, fuzzy
 msgctxt "Noun"
 msgid "History"
@@ -1988,7 +1988,7 @@ msgid "Creation file '%1' failed"
 msgstr "Gagal untuk memadam"
 
 #: plugins/import/skrooge_import_skg/skgimportpluginskg.cpp:529
-#: skroogeakonadi/skroogeakonadiresource.cpp:148
+#: skroogeakonadi/skroogeakonadiresource.cpp:151
 #, fuzzy
 msgctxt "A file format"
 msgid "Skrooge document"
@@ -2172,7 +2172,7 @@ msgstr "Semua"
 #: plugins/skrooge/skrooge_bank/skgbankboardwidget.cpp:89
 #: plugins/skrooge/skrooge_calculator/skginterestboardwidget.cpp:95
 #: skgbankmodeler/skgdocumentbank.cpp:2502
-#: skgbankmodeler/skgreportbank.cpp:191
+#: skgbankmodeler/skgreportbank.cpp:290
 msgctxt "Noun, the numerical total of a sum of values"
 msgid "Total"
 msgstr "Jumlah"
@@ -2878,7 +2878,7 @@ msgid "Budget creation failed"
 msgstr "Gagal untuk memadam"
 
 #: plugins/skrooge/skrooge_budget/skgbudgetpluginwidget.cpp:406
-#: skgbankgui/skgobjectmodel.cpp:716
+#: skgbankgui/skgobjectmodel.cpp:717
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Budget rule update"
@@ -2897,7 +2897,7 @@ msgid "Budget rule update failed"
 msgstr "Ciri-ciri"
 
 #: plugins/skrooge/skrooge_budget/skgbudgetpluginwidget.cpp:418
-#: skgbankgui/skgobjectmodel.cpp:739
+#: skgbankgui/skgobjectmodel.cpp:740
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Budget update"
@@ -2996,6 +2996,12 @@ msgstr "Import"
 #: plugins/skrooge/skrooge_budget/skgbudgetpluginwidget_base.ui:320
 msgid "Enable automatic budget creation"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kAutoBudgetCheck)
+#: plugins/skrooge/skrooge_budget/skgbudgetpluginwidget_base.ui:323
+#, fuzzy
+msgid "Automatic creation based on the operations of:"
+msgstr "Operasi"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kRemovePrevious)
 #: plugins/skrooge/skrooge_budget/skgbudgetpluginwidget_base.ui:355
@@ -6961,7 +6967,7 @@ msgid "Operation of the schedule"
 msgstr "Operasi"
 
 #: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:263
-#: skgbankgui/skgobjectmodel.cpp:696
+#: skgbankgui/skgobjectmodel.cpp:697
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Recurrent operation update"
@@ -7606,118 +7612,124 @@ msgid "No share or index defined<br>on the <a href=\"___\">\"Units\"</a> page."
 msgstr "Cari"
 
 #: plugins/skrooge/skrooge_unit/skgunitboardwidget.cpp:220
+#: plugins/skrooge/skrooge_unit/skgunitshareboardwidget.cpp:112
 #, fuzzy, kde-format
 msgctxt "A list of operations made on the specified unit"
 msgid "Operations with unit equal to '%1'"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:71
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:72
 msgctxt "Verb"
 msgid "Split share..."
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:87
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:88
 #, fuzzy
 msgctxt "Noun, the title of a section"
 msgid "Quotes"
 msgstr "Tiada Tarikh"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:123
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:89
+msgctxt "Noun, the title of a section"
+msgid "Stock portfolio"
+msgstr ""
+
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:126
 msgctxt "Noun, name of the user action"
 msgid "Create default unit"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:146
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:149
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Automatic download of units"
 msgstr "Senarai unit"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:188
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:191
 msgctxt "Noun, units for operations, usually currencies or a shares"
 msgid "Units"
 msgstr "Unit"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:198
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:201
 #, fuzzy
 msgctxt "A tool tip"
 msgid "Unit management"
 msgstr "Ciri-ciri"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:204
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:207
 msgctxt "Description of a tips"
 msgid "<p>... you can download units.</p>"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:205
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:208
 msgctxt "Description of a tips"
 msgid ""
 "<p>... units can be downloaded automatically when a document is opened.</p>"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:206
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:209
 msgctxt "Description of a tips"
 msgid ""
 "<p>... shares can be downloaded with additional information by activating "
 "the option in settings.</p>"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:207
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:210
 msgctxt "Description of a tips"
 msgid "<p>... you can split a share.</p>"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:208
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:211
 msgctxt "Description of a tips"
 msgid "<p>... units can be merged by drag & drop.</p>"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:209
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:212
 #, fuzzy
 msgctxt "Description of a tips"
 msgid "<p>... you can download more sources of quote.</p>"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:210
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:213
 #, fuzzy
 msgctxt "Description of a tips"
 msgid "<p>... you can create and share your own source of quote.</p>"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:236
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:239
 #, fuzzy
 msgctxt "Question"
 msgid "Split share"
 msgstr "Kongsi"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:237
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:240
 msgctxt "Question"
 msgid "Ratio (2 means 2-for-1, 0.5 means 1-for-2):"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:241
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:244
 #, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Split stock '%1' by '%2'"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:247
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:250
 msgctxt "Successful message after an user action"
 msgid "Stock split."
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:248
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:251
 #, fuzzy
 msgctxt "Error message"
 msgid "Splitting stock failed."
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:273
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:276
 msgctxt "Advice on making the best (short)"
 msgid "Define a primary currency"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:274
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:277
 msgctxt "Advice on making the best (long)"
 msgid ""
 "To avoid misunderstanding and conflicts between units at conversion time, "
@@ -7725,121 +7737,121 @@ msgid ""
 "other will be converted"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:276
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:279
 #, kde-format
 msgctxt "Advice on making the best (action)"
 msgid "Set '%1' as primary currency"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:277
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:296
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:316
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:280
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:299
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:319
 #, fuzzy
 msgctxt "Advice on making the best (action)"
 msgid "Edit currencies"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:292
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:295
 msgctxt "Advice on making the best (short)"
 msgid "Define a secondary currency"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:293
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:296
 msgctxt "Advice on making the best (long)"
 msgid ""
 "When a secondary unit is defined, Skrooge will display it as an additional "
 "amount information."
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:295
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:298
 #, kde-format
 msgctxt "Advice on making the best (action)"
 msgid "Set '%1' as secondary currency"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:313
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:316
 #, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Unit '%1' has not been downloaded for more than a month"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:314
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:317
 msgctxt "Advice on making the best (long)"
 msgid "Don't forget download units to have a better view of your accounts"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:317
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:320
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (action)"
 msgid "Download '%1'"
 msgstr "Muatturun"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:329
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:332
 #, fuzzy
 msgctxt "Advice on making the best (short)"
 msgid "Many unused units"
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:330
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:333
 msgctxt "Advice on making the best (long)"
 msgid ""
 "You can improve performances by removing units for which no operation is "
 "registered."
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:332
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:335
 #, fuzzy
 msgctxt "Advice on making the best (action)"
 msgid "Delete unused units"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:353
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:356
 msgctxt "Noun, name of the user action"
 msgid "Define primary currency"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:362
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:365
 #, fuzzy
 msgctxt "Message for successful user action"
 msgid "Primary currency defined."
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:363
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:366
 #, fuzzy
 msgctxt "Error message"
 msgid "Primary currency definition failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:381
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:384
 msgctxt "Noun, name of the user action"
 msgid "Define secondary currency"
 msgstr ""
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:390
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:393
 #, fuzzy
 msgctxt "Message for successful user action"
 msgid "Secondary currency defined."
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:391
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:394
 #, fuzzy
 msgctxt "Error message"
 msgid "Secondary currency definition failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:430
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:433
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Delete unused units"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:438
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:441
 #, fuzzy
 msgctxt "Successful message after an user action"
 msgid "Unused units deleted"
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:439
+#: plugins/skrooge/skrooge_unit/skgunitplugin.cpp:442
 #, fuzzy
 msgctxt "Error message"
 msgid "Unused units deletion failed"
@@ -8309,6 +8321,11 @@ msgstr ""
 msgid "Daily values for all dates"
 msgstr ""
 
+#: plugins/skrooge/skrooge_unit/skgunitshareboardwidget.cpp:41
+msgctxt "Title of a dashboard widget"
+msgid "Stock portfolio"
+msgstr ""
+
 #: skgbankgui/skgobjectmodel.cpp:218
 msgid "Yes"
 msgstr ""
@@ -8497,49 +8514,54 @@ msgctxt "Noun, name of the user action"
 msgid "Open account '%1'"
 msgstr "Operasi"
 
-#: skgbankgui/skgobjectmodel.cpp:667
+#: skgbankgui/skgobjectmodel.cpp:662
+msgctxt "An information message"
+msgid "Warning, you closed an account with money"
+msgstr ""
+
+#: skgbankgui/skgobjectmodel.cpp:668
 #, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Close tracker '%1'"
 msgstr ""
 
-#: skgbankgui/skgobjectmodel.cpp:667
+#: skgbankgui/skgobjectmodel.cpp:668
 #, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Open tracker '%1'"
 msgstr ""
 
-#: skgbankgui/skgobjectmodel.cpp:672
+#: skgbankgui/skgobjectmodel.cpp:673
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Change operation status"
 msgstr "Operasi"
 
-#: skgbankgui/skgobjectmodel.cpp:809
+#: skgbankgui/skgobjectmodel.cpp:810
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Move category"
 msgstr "Kategori"
 
-#: skgbankgui/skgobjectmodel.cpp:832
+#: skgbankgui/skgobjectmodel.cpp:833
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Merge payees"
 msgstr "Gagal untuk memadam"
 
-#: skgbankgui/skgobjectmodel.cpp:851
+#: skgbankgui/skgobjectmodel.cpp:852
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Merge accounts"
 msgstr "Operasi"
 
-#: skgbankgui/skgobjectmodel.cpp:870
+#: skgbankgui/skgobjectmodel.cpp:871
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Merge units"
 msgstr "Gagal untuk memadam"
 
-#: skgbankgui/skgobjectmodel.cpp:889
+#: skgbankgui/skgobjectmodel.cpp:890
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Merge trackers"
@@ -9456,7 +9478,7 @@ msgstr ""
 
 #: skgbankmodeler/skgimportexportmanager.cpp:357
 #: skgbankmodeler/skgimportexportmanager.cpp:381
-#: skgbasegui/skgmainpanel.cpp:194
+#: skgbasegui/skgmainpanel.cpp:199
 #, kde-format
 msgctxt "An information message"
 msgid "Loading plugin %1 failed because the factory could not be found in %2"
@@ -9529,7 +9551,36 @@ msgid_plural "Operation '%2' will be inserted in %1 days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: skgbankmodeler/skgreportbank.cpp:160 skgbankmodeler/skgreportbank.cpp:185
+#: skgbankmodeler/skgreportbank.cpp:105
+#, fuzzy
+msgctxt "Column table title"
+msgid "Quantity"
+msgstr "Keluar"
+
+#: skgbankmodeler/skgreportbank.cpp:106
+msgctxt "Column table title"
+msgid "Purchase amount"
+msgstr ""
+
+#: skgbankmodeler/skgreportbank.cpp:107
+#, fuzzy
+msgctxt "Column table title"
+msgid "Initial amount"
+msgstr "Jumlah:"
+
+#: skgbankmodeler/skgreportbank.cpp:109
+#, fuzzy
+msgctxt "Column table title"
+msgid "Variation"
+msgstr "Operasi"
+
+#: skgbankmodeler/skgreportbank.cpp:110
+#, fuzzy
+msgctxt "Column table title"
+msgid "Variation %"
+msgstr "Gagal untuk memadam"
+
+#: skgbankmodeler/skgreportbank.cpp:259 skgbankmodeler/skgreportbank.cpp:284
 #, fuzzy, kde-format
 #| msgctxt "Noun, the numerical total of a sum of values"
 #| msgid "Total"
@@ -9537,58 +9588,63 @@ msgctxt "Noun"
 msgid "Total of %1"
 msgstr "Jumlah"
 
-#: skgbankmodeler/skgreportbank.cpp:241
+#: skgbankmodeler/skgreportbank.cpp:340
 #, fuzzy, kde-format
 msgctxt "A monthly report title"
 msgid "Report for %1"
 msgstr "Laporan"
 
-#: skgbankmodeler/skgreportbank.cpp:242
+#: skgbankmodeler/skgreportbank.cpp:341
 #, fuzzy
 msgctxt "A monthly report title"
 msgid "Budget"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgreportbank.cpp:243
+#: skgbankmodeler/skgreportbank.cpp:342
 msgctxt "A monthly report title"
 msgid "5 main categories of expenditure"
 msgstr ""
 
-#: skgbankmodeler/skgreportbank.cpp:244
+#: skgbankmodeler/skgreportbank.cpp:343
 #, fuzzy
 msgctxt "A monthly report title"
 msgid "5 main variations"
 msgstr "Automula"
 
-#: skgbankmodeler/skgreportbank.cpp:245
+#: skgbankmodeler/skgreportbank.cpp:344
 #, fuzzy
 msgctxt "A monthly report title"
 msgid "Amounts in accounts"
 msgstr "Senarai unit"
 
-#: skgbankmodeler/skgreportbank.cpp:246
+#: skgbankmodeler/skgreportbank.cpp:345
 #, fuzzy
 msgctxt "A monthly report title"
 msgid "Amounts of units"
 msgstr "Senarai unit"
 
-#: skgbankmodeler/skgreportbank.cpp:247
+#: skgbankmodeler/skgreportbank.cpp:346
 msgctxt "A monthly report title"
 msgid "Advices"
 msgstr ""
 
-#: skgbankmodeler/skgreportbank.cpp:310
+#: skgbankmodeler/skgreportbank.cpp:347
+msgctxt "A monthly report title"
+msgid "Stock portfolio"
+msgstr ""
+
+#: skgbankmodeler/skgreportbank.cpp:409
 msgctxt "Noun"
 msgid "Savings possible"
 msgstr ""
 
-#: skgbankmodeler/skgreportbank.cpp:315
+#: skgbankmodeler/skgreportbank.cpp:414
 #, fuzzy
 msgctxt "Noun"
 msgid "Max"
 msgstr "Cukai"
 
-#: skgbankmodeler/skgreportbank.cpp:332
+#: skgbankmodeler/skgreportbank.cpp:431
 #, kde-format
 msgctxt "The main text of skrooge"
 msgid ""
@@ -10566,337 +10622,337 @@ msgstr ""
 msgid "Copy picture"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:122
+#: skgbasegui/skgmainpanel.cpp:127
 msgctxt "Splash screen message"
 msgid "Loading plugins..."
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:134
+#: skgbasegui/skgmainpanel.cpp:139
 #, kde-format
 msgctxt "Splash screen message"
 msgid "Loading plugin %1/%2: %3..."
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:158
+#: skgbasegui/skgmainpanel.cpp:163
 #, kde-format
 msgid "Developer of plugin '%1'"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:162
+#: skgbasegui/skgmainpanel.cpp:167
 #, kde-format
 msgid ", '%1'"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:202 skgbasegui/skgmainpanel.cpp:203
+#: skgbasegui/skgmainpanel.cpp:207 skgbasegui/skgmainpanel.cpp:208
 #: skroogeconvert/main.cpp:86 skroogeconvert/main.cpp:88
 #, kde-format
 msgid "%1"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:236
+#: skgbasegui/skgmainpanel.cpp:241
 #, fuzzy
 msgctxt "Verb"
 msgid "Quit"
 msgstr "Keluar"
 
-#: skgbasegui/skgmainpanel.cpp:271 skgbasegui/skgmainpanel.cpp:275
+#: skgbasegui/skgmainpanel.cpp:276 skgbasegui/skgmainpanel.cpp:280
 #, fuzzy
 msgctxt "Noun"
 msgid "Pages"
 msgstr "Tarikh"
 
-#: skgbasegui/skgmainpanel.cpp:379
+#: skgbasegui/skgmainpanel.cpp:384
 msgctxt "Widget description"
 msgid "Progress of the current action"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:397 skgbasegui/skgmainpanel.cpp:398
+#: skgbasegui/skgmainpanel.cpp:402 skgbasegui/skgmainpanel.cpp:403
 msgctxt "Widget description"
 msgid "Cancel the current action"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:459
+#: skgbasegui/skgmainpanel.cpp:464
 msgctxt "Verb"
 msgid "Hide"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:462
+#: skgbasegui/skgmainpanel.cpp:467
 #, fuzzy
 msgctxt "Verb"
 msgid "Show all"
 msgstr "Papar skrin percikan"
 
-#: skgbasegui/skgmainpanel.cpp:598
+#: skgbasegui/skgmainpanel.cpp:609
 msgctxt "Noun, user action"
 msgid "New Tab"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:605
+#: skgbasegui/skgmainpanel.cpp:616
 msgctxt "Verb"
 msgid "Lock panels"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:609
+#: skgbasegui/skgmainpanel.cpp:620
 msgctxt "Verb"
 msgid "Unlock panels"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:613 skgbasegui/skgmainpanel.cpp:1270
+#: skgbasegui/skgmainpanel.cpp:624 skgbasegui/skgmainpanel.cpp:1281
 msgctxt "Noun, user action"
 msgid "Pin this page"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:626
+#: skgbasegui/skgmainpanel.cpp:637
 #, fuzzy
 msgctxt "Noun, user action"
 msgid "Close All"
 msgstr "Tutup"
 
-#: skgbasegui/skgmainpanel.cpp:634
+#: skgbasegui/skgmainpanel.cpp:645
 msgctxt "Noun, user action"
 msgid "Close All Other"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:642
+#: skgbasegui/skgmainpanel.cpp:653
 #, fuzzy
 msgctxt "Noun, user action"
 msgid "Save page state"
 msgstr "Gagal untuk memadam"
 
-#: skgbasegui/skgmainpanel.cpp:650
+#: skgbasegui/skgmainpanel.cpp:661
 #, fuzzy
 msgctxt "Noun, user action"
 msgid "Reset page state"
 msgstr "Gagal untuk memadam"
 
-#: skgbasegui/skgmainpanel.cpp:660
+#: skgbasegui/skgmainpanel.cpp:671
 msgctxt "Noun, user action"
 msgid "Overwrite bookmark state"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:668
+#: skgbasegui/skgmainpanel.cpp:679
 #, fuzzy
 #| msgid "Current"
 msgctxt "Noun, user action"
 msgid "Configure..."
 msgstr "Semasa"
 
-#: skgbasegui/skgmainpanel.cpp:678
+#: skgbasegui/skgmainpanel.cpp:689
 msgctxt "Noun, user action"
 msgid "Menu"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:695
+#: skgbasegui/skgmainpanel.cpp:706
 #, fuzzy
 msgctxt "Noun, user action"
 msgid "Previous"
 msgstr "Tahun Terdahulu"
 
-#: skgbasegui/skgmainpanel.cpp:712
+#: skgbasegui/skgmainpanel.cpp:723
 #, fuzzy
 msgctxt "Noun, user action"
 msgid "Next"
 msgstr "&Minggu hadapan"
 
-#: skgbasegui/skgmainpanel.cpp:733
+#: skgbasegui/skgmainpanel.cpp:744
 msgctxt "Noun, user action"
 msgid "Enable editor"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1014
+#: skgbasegui/skgmainpanel.cpp:1025
 msgctxt "Question"
 msgid "The application cannot be closed when an operation is running."
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1023
+#: skgbasegui/skgmainpanel.cpp:1034
 msgctxt "Question"
 msgid ""
 "The document has been modified.\n"
 "Do you want to save it before closing?"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1025
+#: skgbasegui/skgmainpanel.cpp:1036
 #, fuzzy
 msgctxt "Question"
 msgid "Save as"
 msgstr "Simpan"
 
-#: skgbasegui/skgmainpanel.cpp:1025
+#: skgbasegui/skgmainpanel.cpp:1036
 #, fuzzy
 msgctxt "Question"
 msgid "Save"
 msgstr "Simpan"
 
-#: skgbasegui/skgmainpanel.cpp:1027
+#: skgbasegui/skgmainpanel.cpp:1038
 msgctxt "Question"
 msgid "Do not save"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1032
+#: skgbasegui/skgmainpanel.cpp:1043
 msgctxt "Question"
 msgid ""
 "Current modifications will not be saved.\n"
 "Do you want to continue?"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1138
+#: skgbasegui/skgmainpanel.cpp:1149
 #, kde-format
 msgctxt "Date format"
 msgid "Short date (%1, %2)"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1141
+#: skgbasegui/skgmainpanel.cpp:1152
 #, kde-format
 msgctxt "Date format"
 msgid "Long date (%1, %2)"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1144
+#: skgbasegui/skgmainpanel.cpp:1155
 #, kde-format
 msgctxt "Date format"
 msgid "Fancy short date (%1, %2)"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1147
+#: skgbasegui/skgmainpanel.cpp:1158
 #, kde-format
 msgctxt "Date format"
 msgid "Fancy long date (%1, %2)"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1150
+#: skgbasegui/skgmainpanel.cpp:1161
 #, kde-format
 msgctxt "Date format"
 msgid "ISO date (%1, %2)"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1153
+#: skgbasegui/skgmainpanel.cpp:1164
 #, kde-format
 msgctxt "Date format"
 msgid "ISO week date (%1, %2)"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1156
+#: skgbasegui/skgmainpanel.cpp:1167
 #, kde-format
 msgctxt "Date format"
 msgid "ISO ordinal date (%1, %2)"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1160
+#: skgbasegui/skgmainpanel.cpp:1171
 #, fuzzy
 msgctxt "Noun"
 msgid "General"
 msgstr "Umum"
 
-#: skgbasegui/skgmainpanel.cpp:1195
+#: skgbasegui/skgmainpanel.cpp:1206
 msgctxt "Noun, name of the user action"
 msgid "Save settings"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1268
+#: skgbasegui/skgmainpanel.cpp:1279
 #, fuzzy
 msgctxt "Noun, user action"
 msgid "Unpin this page"
 msgstr "Gagal untuk memadam"
 
-#: skgbasegui/skgmainpanel.cpp:1325
+#: skgbasegui/skgmainpanel.cpp:1336
 msgctxt "Noun, indicate that current document is modified"
 msgid " [modified]"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1326
+#: skgbasegui/skgmainpanel.cpp:1337
 msgctxt "Noun, indicate that current document is loaded in read only"
 msgid " [read only]"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1328
+#: skgbasegui/skgmainpanel.cpp:1339
 #, fuzzy
 msgctxt "Noun, default name for a new document"
 msgid "Untitled"
 msgstr "Tiada tajuk"
 
-#: skgbasegui/skgmainpanel.cpp:1329
+#: skgbasegui/skgmainpanel.cpp:1348
 #, kde-format
 msgctxt "Title of the main window"
 msgid "%1%2 - %3"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1414
+#: skgbasegui/skgmainpanel.cpp:1433
 msgctxt "An information message"
 msgid "Impossible to open the page because the plugin was not found"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1499
+#: skgbasegui/skgmainpanel.cpp:1518
 msgctxt "Question"
 msgid "A page cannot be closed when an operation is running."
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1587
+#: skgbasegui/skgmainpanel.cpp:1606
 msgctxt "Noun, name of the user action"
 msgid "Reset default state"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1596
+#: skgbasegui/skgmainpanel.cpp:1615
 msgctxt "Successful message after an user action"
 msgid "Default state has been reset"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1670
+#: skgbasegui/skgmainpanel.cpp:1689
 #, fuzzy
 msgctxt "Noun"
 msgid "Notification"
 msgstr "Pengesahan"
 
-#: skgbasegui/skgmainpanel.cpp:1700
+#: skgbasegui/skgmainpanel.cpp:1719
 #, fuzzy
 msgctxt "Question"
 msgid "Error"
 msgstr "Ralat"
 
-#: skgbasegui/skgmainpanel.cpp:1704
+#: skgbasegui/skgmainpanel.cpp:1723
 #, fuzzy
 msgctxt "Noun"
 msgid "Error"
 msgstr "Ralat"
 
-#: skgbasegui/skgmainpanel.cpp:1782
+#: skgbasegui/skgmainpanel.cpp:1801
 #, kde-format
 msgctxt "Question"
 msgid "File <b>%1</b> already exists. Do you really want to overwrite it?"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1783
+#: skgbasegui/skgmainpanel.cpp:1802
 #, fuzzy
 msgctxt "Question"
 msgid "Warning"
 msgstr "Amaran"
 
-#: skgbasegui/skgmainpanel.cpp:1784
+#: skgbasegui/skgmainpanel.cpp:1803
 #, fuzzy
 msgctxt "Verb"
 msgid "Save"
 msgstr "Simpan"
 
-#: skgbasegui/skgmainpanel.cpp:1826 skgbasemodeler/skgobjectbase.cpp:235
+#: skgbasegui/skgmainpanel.cpp:1845 skgbasemodeler/skgobjectbase.cpp:235
 msgctxt "Key word to modify a string into a field"
 msgid "capitalize"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1827 skgbasemodeler/skgobjectbase.cpp:234
+#: skgbasegui/skgmainpanel.cpp:1846 skgbasemodeler/skgobjectbase.cpp:234
 msgctxt "Key word to modify a string into a field"
 msgid "capwords"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1828 skgbasemodeler/skgobjectbase.cpp:232
+#: skgbasegui/skgmainpanel.cpp:1847 skgbasemodeler/skgobjectbase.cpp:232
 msgctxt "Key word to modify a string into a field"
 msgid "lower"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1829 skgbasemodeler/skgobjectbase.cpp:236
+#: skgbasegui/skgmainpanel.cpp:1848 skgbasemodeler/skgobjectbase.cpp:236
 msgctxt "Key word to modify a string into a field"
 msgid "trim"
 msgstr ""
 
-#: skgbasegui/skgmainpanel.cpp:1830 skgbasemodeler/skgobjectbase.cpp:233
+#: skgbasegui/skgmainpanel.cpp:1849 skgbasemodeler/skgobjectbase.cpp:233
 msgctxt "Key word to modify a string into a field"
 msgid "upper"
 msgstr ""
@@ -11821,19 +11877,19 @@ msgctxt "Application argument"
 msgid "Document to open"
 msgstr "Dokumen untuk dibuka"
 
-#: skroogeakonadi/skroogeakonadiresource.cpp:62
+#: skroogeakonadi/skroogeakonadiresource.cpp:65
 #, fuzzy
 msgctxt "Name of a collection akonadi"
 msgid "Skrooge scheduled operations"
 msgstr "Operasi"
 
-#: skroogeakonadi/skroogeakonadiresource.cpp:148
+#: skroogeakonadi/skroogeakonadiresource.cpp:151
 #, fuzzy
 msgctxt "@title:window"
 msgid "Select Skrooge document"
 msgstr "Skrooge"
 
-#: skroogeakonadi/skroogeakonadiresource.cpp:155
+#: skroogeakonadi/skroogeakonadiresource.cpp:158
 msgctxt "Question"
 msgid ""
 "If the file is protected.\n"
@@ -12159,10 +12215,6 @@ msgstr ""
 #~ msgstr "Konteks"
 
 #, fuzzy
-#~ msgid "based on the operations of:"
-#~ msgstr "Operasi"
-
-#, fuzzy
 #~ msgid "Representation"
 #~ msgstr "Operasi"
 
@@ -12467,10 +12519,6 @@ msgstr ""
 #~ msgctxt "Advice correction message"
 #~ msgid "Delete unused categories."
 #~ msgstr "Import"
-
-#, fuzzy
-#~ msgid "Operation"
-#~ msgstr "Operasi"
 
 #, fuzzy
 #~| msgid "Investment"
