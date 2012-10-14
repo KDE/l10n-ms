@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-10-13 04:37+0200\n"
+"POT-Creation-Date: 2012-10-14 04:35+0200\n"
 "PO-Revision-Date: 2007-02-24 13:11+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -901,7 +901,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, BVIndex)
 #. i18n: ectx: property (text), item, widget (QComboBox, filterCombo)
-#: dialogs/details_data.ui:312 ekos/capture.ui:395 ekos/focus.ui:197
+#: dialogs/details_data.ui:312 ekos/capture.ui:428 ekos/focus.ui:197
 #: ekos/guide.ui:106
 msgid "--"
 msgstr "--"
@@ -2675,40 +2675,40 @@ msgstr ""
 "<p> Pilih Bandar Anda penapis nama dan</p>\n"
 "<p> Sekali Bandar<b> Berikutnya</b></p>"
 
-#: ekos/capture.cpp:120
+#: ekos/capture.cpp:116
 msgid "Auto dark subtract is not supported in batch mode."
 msgstr ""
 
-#: ekos/capture.cpp:314
+#: ekos/capture.cpp:325
 #, kde-format
 msgid "Unable to find FILTER_SLOT property in driver %1"
 msgstr ""
 
-#: ekos/capture.cpp:374
+#: ekos/capture.cpp:393
 #, kde-format
 msgid "Received image %1 out of %2."
 msgstr ""
 
-#: ekos/capture.cpp:417
+#: ekos/capture.cpp:442
 msgid "Failed to set sub frame."
 msgstr ""
 
-#: ekos/capture.cpp:424
+#: ekos/capture.cpp:449
 #, fuzzy
 msgid "Failed to set binning."
 msgstr "Gagal untuk muatkan imej \"%1\"\n"
 
-#: ekos/capture.cpp:433
+#: ekos/capture.cpp:458
 #, fuzzy
 msgid "Capturing dark frame..."
 msgstr "Imej NFS"
 
-#: ekos/capture.cpp:443 ekos/focus.cpp:214 ekos/guide/rcalibration.cpp:669
+#: ekos/capture.cpp:468 ekos/focus.cpp:214 ekos/guide/rcalibration.cpp:669
 #, fuzzy
 msgid "Capturing image..."
 msgstr "imej boot"
 
-#: ekos/capture.cpp:517 ekos/ekosmanager.cpp:958 ekos/focus.cpp:704
+#: ekos/capture.cpp:542 ekos/ekosmanager.cpp:956 ekos/focus.cpp:704
 #: ekos/guide.cpp:282
 #, kde-format
 msgctxt "log entry; %1 is the date, %2 is the text"
@@ -2716,19 +2716,19 @@ msgid "%1 %2"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, secondsLabel)
-#: ekos/capture.cpp:544 ekos/capture.ui:619
+#: ekos/capture.cpp:562 ekos/capture.ui:658
 #, fuzzy
 msgid "second left"
 msgstr "Saat Failover"
 
-#: ekos/capture.cpp:546
+#: ekos/capture.cpp:564
 #, fuzzy
 msgid "seconds left"
 msgstr "Saat Failover"
 
 #. i18n: ectx: property (title), widget (QGroupBox, setupGroup_3)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: ekos/capture.ui:31 ekos/ekosmanager.cpp:987 ekos/opsekos.ui:157
+#: ekos/capture.ui:31 ekos/ekosmanager.cpp:985 ekos/opsekos.ui:157
 #, fuzzy
 msgid "CCD"
 msgstr "CCDB"
@@ -2737,7 +2737,7 @@ msgstr "CCDB"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_5_3)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: ekos/capture.ui:47 ekos/capture.ui:472 tools/argsetdeviceindi.ui:30
+#: ekos/capture.ui:47 ekos/capture.ui:508 tools/argsetdeviceindi.ui:30
 #: tools/argshutdownindi.ui:38 tools/argstartindi.ui:30
 #, fuzzy
 msgid "Device:"
@@ -2796,7 +2796,7 @@ msgstr "Prefiks"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_4)
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_2_3)
-#: ekos/capture.ui:119 ekos/capture.ui:479
+#: ekos/capture.ui:119 ekos/capture.ui:515
 #, fuzzy
 msgid "Number of images to capture"
 msgstr "Saya mempunyai nombor langganan untuk diaktifkan"
@@ -2868,102 +2868,127 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_11)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_14)
-#: ekos/capture.ui:226 ekos/capture.ui:305
+#: ekos/capture.ui:226 ekos/capture.ui:308
 msgid "Y:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_15)
-#: ekos/capture.ui:334
+#: ekos/capture.ui:340
 #, fuzzy
 msgid "W:"
 msgstr "Kazakhstan Barat"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_16)
-#: ekos/capture.ui:363
+#: ekos/capture.ui:372
 msgid "H:"
 msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, frameTypeCheck)
+#: ekos/capture.ui:392
+msgid "Active CCD frame type"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, frameTypeCheck)
+#. i18n: ectx: property (text), widget (QTreeWidget, OptionsList)
+#: ekos/capture.ui:395 tools/observinglist.cpp:109 tools/observinglist.cpp:112
+#: tools/optionstreeview.ui:33
+msgid "Type"
+msgstr "Jenis"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, filterCheck)
+#: ekos/capture.ui:402
+#, fuzzy
+msgid "Active filter slot"
+msgstr "for penapis"
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterCheck)
+#. i18n: ectx: property (title), widget (QGroupBox, setupGroup)
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#. i18n: ectx: attribute (title), widget (QWidget, Filter)
+#: ekos/capture.ui:405 ekos/capture.ui:492 ekos/opsekos.ui:178
+#: oal/equipmentwriter.ui:553
+msgid "Filter"
+msgstr "Tapis"
+
 #. i18n: ectx: property (text), widget (QCheckBox, darkSubCheck)
-#: ekos/capture.ui:407
+#: ekos/capture.ui:440
 msgid "Auto dark subtract"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, ISOCheck)
-#: ekos/capture.ui:417
+#: ekos/capture.ui:450
 #, fuzzy
 msgid "Add time stamp to the file name"
 msgstr "Tambah masa  hingga fail nama"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ISOCheck)
-#: ekos/capture.ui:420
+#: ekos/capture.ui:453
 #, fuzzy
 msgid "Add ISO 8601 time stamp"
 msgstr "Tambah ISO masa "
 
 #. i18n: ectx: property (text), widget (QCheckBox, displayCheck)
-#: ekos/capture.ui:430
+#: ekos/capture.ui:466
 #, fuzzy
 msgid "Display in FITS Viewer"
 msgstr "Pelihat Dokumen"
 
-#. i18n: ectx: property (title), widget (QGroupBox, setupGroup)
-#. i18n: ectx: property (text), widget (QLabel, label_10)
-#. i18n: ectx: attribute (title), widget (QWidget, Filter)
-#: ekos/capture.ui:456 ekos/opsekos.ui:178 oal/equipmentwriter.ui:553
-msgid "Filter"
-msgstr "Tapis"
-
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2_3)
 #. i18n: ectx: property (text), widget (QLabel, label_18)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: ekos/capture.ui:485 oal/execute.ui:377 tools/argsetfilternumindi.ui:30
+#: ekos/capture.ui:521 oal/execute.ui:377 tools/argsetfilternumindi.ui:30
 #, fuzzy
 msgid "Filter:"
 msgstr "Tapis"
 
-#. i18n: ectx: property (text), widget (QPushButton, startB)
-#: ekos/capture.ui:553
+#. i18n: ectx: property (text), widget (QPushButton, previewB)
+#: ekos/capture.ui:584
 #, fuzzy
-msgid "&Start"
-msgstr "Mula"
+msgid "Preview"
+msgstr "Pilihan Pralihat"
+
+#. i18n: ectx: property (text), widget (QPushButton, startB)
+#: ekos/capture.ui:594
+msgid "&Start Sequence"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, stopB)
-#: ekos/capture.ui:569
+#: ekos/capture.ui:610
 #, fuzzy
 msgid "S&top"
 msgstr "Atas"
 
 #. i18n: ectx: property (title), widget (QGroupBox, progressGroup)
-#: ekos/capture.ui:586
+#: ekos/capture.ui:625
 msgid "Progress"
 msgstr "Perkembangan"
 
 #. i18n: ectx: property (text), widget (QLabel, progressLabel_3)
-#: ekos/capture.ui:596
+#: ekos/capture.ui:635
 #, fuzzy
 msgid "Expose:"
 msgstr "Pendedahan:"
 
 #. i18n: ectx: property (text), widget (QLabel, progressLabel_2)
-#: ekos/capture.ui:626
+#: ekos/capture.ui:665
 #, fuzzy
 msgid "Progress:"
 msgstr "Perkembangan"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_4_2_3)
-#: ekos/capture.ui:649
+#: ekos/capture.ui:688
 #, fuzzy
 msgid "of"
 msgstr "bagi"
 
 #. i18n: ectx: property (text), widget (QLabel, completedLabel_2)
-#: ekos/capture.ui:675
+#: ekos/capture.ui:714
 #, fuzzy
 msgid "completed"
 msgstr "Selesai"
 
 #. i18n: ectx: property (text), widget (KPushButton, processINDIB)
-#: ekos/ekosmanager.cpp:251 ekos/ekosmanager.cpp:594 ekos/ekosmanager.ui:216
+#: ekos/ekosmanager.cpp:251 ekos/ekosmanager.cpp:584 ekos/ekosmanager.ui:216
 #, fuzzy
 #| msgid "Start"
 msgid "Start INDI"
@@ -2995,44 +3020,44 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ekos/ekosmanager.cpp:541
+#: ekos/ekosmanager.cpp:531
 #, fuzzy
 msgid "Connecting INDI devices..."
 msgstr "Sambung atau Nyahsambung."
 
-#: ekos/ekosmanager.cpp:570
+#: ekos/ekosmanager.cpp:560
 #, fuzzy
 msgid "Disconnecting INDI devices..."
 msgstr "Sambung atau Nyahsambung."
 
-#: ekos/ekosmanager.cpp:600
+#: ekos/ekosmanager.cpp:590
 msgid "INDI services stopped."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:707
+#: ekos/ekosmanager.cpp:699
 msgid "Remote devices established. Please connect devices."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:784 ekos/ekosmanager.cpp:797 ekos/ekosmanager.cpp:810
-#: ekos/ekosmanager.cpp:843 ekos/ekosmanager.cpp:861 indi/indistd.cpp:409
+#: ekos/ekosmanager.cpp:776 ekos/ekosmanager.cpp:789 ekos/ekosmanager.cpp:802
+#: ekos/ekosmanager.cpp:835 ekos/ekosmanager.cpp:853 indi/indistd.cpp:409
 #, fuzzy, kde-format
 msgid "%1 is online."
 msgstr "Mandriva Online"
 
-#: ekos/ekosmanager.cpp:882
+#: ekos/ekosmanager.cpp:874
 #, fuzzy, kde-format
 msgid "%1 is offline."
 msgstr "Mandriva Online"
 
-#: ekos/ekosmanager.cpp:998 fitsviewer/fitsviewer.cpp:222
+#: ekos/ekosmanager.cpp:996 fitsviewer/fitsviewer.cpp:222
 msgid "Focus"
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1014 fitsviewer/fitsviewer.cpp:226
+#: ekos/ekosmanager.cpp:1012 fitsviewer/fitsviewer.cpp:226
 msgid "Guide"
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1022
+#: ekos/ekosmanager.cpp:1020
 #, kde-format
 msgid "Guider port from %1 is ready."
 msgstr ""
@@ -3160,7 +3185,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, clearB)
 #. i18n: ectx: property (text), widget (KPushButton, ClearButton)
 #. i18n: ectx: property (text), widget (KPushButton, Clear)
-#: ekos/ekosmanager.ui:322 indi/guimanager.cpp:69 indi/indimenu.cpp:74
+#: ekos/ekosmanager.ui:322 indi/guimanager.cpp:70 indi/indimenu.cpp:74
 #: tools/conjunctions.ui:211 tools/modcalcgeod.ui:160
 #, fuzzy
 msgid "Clear"
@@ -4417,29 +4442,29 @@ msgid ""
 "Any changes to INDI hosts configurations will not be saved."
 msgstr "hingga hingga fail hingga."
 
-#: indi/guimanager.cpp:66 indi/indimenu.cpp:71
+#: indi/guimanager.cpp:67 indi/indimenu.cpp:71
 #, fuzzy
 msgid "INDI Control Panel"
 msgstr "Buang Daripada Panel"
 
-#: indi/guimanager.cpp:70 indi/indimenu.cpp:75
+#: indi/guimanager.cpp:71 indi/indimenu.cpp:75
 #, fuzzy
 msgid "Close"
 msgstr "Warna"
 
-#: indi/guimanager.cpp:93 indi/indimenu.cpp:103
+#: indi/guimanager.cpp:94 indi/indimenu.cpp:103
 #, fuzzy
 msgid ""
 "No INDI devices currently running. To run devices, please select devices "
 "from the Device Manager in the devices menu."
 msgstr "Tidak larian Kepada Peranti Pengurus inci."
 
-#: indi/indiccd.cpp:653
+#: indi/indiccd.cpp:657
 #, fuzzy, kde-format
 msgid "FITS file saved to %1"
 msgstr "Tidak dapat memuatkan fail!"
 
-#: indi/indielement.cpp:322
+#: indi/indielement.cpp:323
 msgid "INDI DATA STREAM"
 msgstr ""
 
@@ -4476,12 +4501,22 @@ msgstr ""
 msgid "&Cancel"
 msgstr "Bandar nama"
 
-#: indi/indiproperty.cpp:336
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useTimeUpdate)
+#: indi/indiproperty.cpp:249 indi/opsindi.ui:232 tools/observinglist.cpp:113
+msgid "Time"
+msgstr "Masa"
+
+#: indi/indiproperty.cpp:251 indi/indiproperty.cpp:283
+#, fuzzy
+msgid "Set"
+msgstr "Terbenam matahari: %1"
+
+#: indi/indiproperty.cpp:338
 msgid ""
 "Enable binary data transfer from this property to KStars and vice-versa."
 msgstr ""
 
-#: indi/indiproperty.cpp:343
+#: indi/indiproperty.cpp:345
 msgid "Upload"
 msgstr "Muatnaik"
 
@@ -4604,11 +4639,6 @@ msgstr "Kemaskini"
 #: indi/opsindi.ui:229
 msgid "Synchronize KStars date and time automatically from the update source."
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useTimeUpdate)
-#: indi/opsindi.ui:232 tools/observinglist.cpp:113
-msgid "Time"
-msgstr "Masa"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_useGeographicUpdate)
 #: indi/opsindi.ui:242
@@ -37128,6 +37158,2321 @@ msgstr ""
 msgid "Go to previous Wizard page"
 msgstr ""
 
+#: libindi_strings.cpp:1
+msgctxt "string from libindi, used in the config dialog"
+msgid "100x"
+msgstr ""
+
+#: libindi_strings.cpp:2
+msgctxt "string from libindi, used in the config dialog"
+msgid "10x"
+msgstr ""
+
+#: libindi_strings.cpp:3
+msgctxt "string from libindi, used in the config dialog"
+msgid "1200x"
+msgstr ""
+
+#: libindi_strings.cpp:4
+msgctxt "string from libindi, used in the config dialog"
+msgid "12x"
+msgstr ""
+
+#: libindi_strings.cpp:5
+msgctxt "string from libindi, used in the config dialog"
+msgid "600x"
+msgstr ""
+
+#: libindi_strings.cpp:6
+msgctxt "string from libindi, used in the config dialog"
+msgid "64x"
+msgstr ""
+
+#: libindi_strings.cpp:7
+msgctxt "string from libindi, used in the config dialog"
+msgid "900x"
+msgstr ""
+
+#: libindi_strings.cpp:8
+msgctxt "string from libindi, used in the config dialog"
+msgid ":CM#"
+msgstr ""
+
+#: libindi_strings.cpp:9
+msgctxt "string from libindi, used in the config dialog"
+msgid ":CMR#"
+msgstr ""
+
+#: libindi_strings.cpp:10
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "AP UTC Offset"
+msgstr "masa :"
+
+#: libindi_strings.cpp:11
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "AP local time"
+msgstr "Masa Ketara Lokal"
+
+#: libindi_strings.cpp:12
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "AP sidereal time"
+msgstr "Masa Sidereus Lokal"
+
+#: libindi_strings.cpp:13
+msgctxt "string from libindi, used in the config dialog"
+msgid "Abell"
+msgstr ""
+
+#: libindi_strings.cpp:14
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Abort"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:15
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Abort Motion"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:16
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Abort Slew"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:17
+msgctxt "string from libindi, used in the config dialog"
+msgid "Abort Slew/Track"
+msgstr ""
+
+#: libindi_strings.cpp:18
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Absolute Position"
+msgstr "Kepastian Ulangtetap"
+
+#: libindi_strings.cpp:19
+msgctxt "string from libindi, used in the config dialog"
+msgid "Activate"
+msgstr ""
+
+#: libindi_strings.cpp:20
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Actual Time"
+msgstr "Masa Ketara Lokal"
+
+#: libindi_strings.cpp:21
+msgctxt "string from libindi, used in the config dialog"
+msgid "Alignment"
+msgstr ""
+
+#: libindi_strings.cpp:22
+msgctxt "string from libindi, used in the config dialog"
+msgid "Alt  D:M:S"
+msgstr ""
+
+#: libindi_strings.cpp:23
+msgctxt "string from libindi, used in the config dialog"
+msgid "Alt/Dec Anti-backslash"
+msgstr ""
+
+#: libindi_strings.cpp:24
+msgctxt "string from libindi, used in the config dialog"
+msgid "Alt/Dec PEC"
+msgstr ""
+
+#: libindi_strings.cpp:25
+msgctxt "string from libindi, used in the config dialog"
+msgid "AltAz"
+msgstr ""
+
+#: libindi_strings.cpp:26
+msgctxt "string from libindi, used in the config dialog"
+msgid "Anti Flicker"
+msgstr ""
+
+#: libindi_strings.cpp:27
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Aperture (mm)"
+msgstr "Bukaan:"
+
+#: libindi_strings.cpp:28
+msgctxt "string from libindi, used in the config dialog"
+msgid "Arp"
+msgstr ""
+
+#: libindi_strings.cpp:29
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Atmosphere"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:30
+#, fuzzy
+#| msgid "Auto"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Auto"
+msgstr "Auto"
+
+#: libindi_strings.cpp:31
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Auxiliary"
+msgstr "Label Bertindan"
+
+#: libindi_strings.cpp:32
+msgctxt "string from libindi, used in the config dialog"
+msgid "Az D:M:S"
+msgstr ""
+
+#: libindi_strings.cpp:33
+msgctxt "string from libindi, used in the config dialog"
+msgid "Az/Ra Anti-backslash"
+msgstr ""
+
+#: libindi_strings.cpp:34
+msgctxt "string from libindi, used in the config dialog"
+msgid "Az/Ra PEC"
+msgstr ""
+
+#: libindi_strings.cpp:35
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Back Light"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:36
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Backlash"
+msgstr "Memulakan readahead: "
+
+#: libindi_strings.cpp:37
+msgctxt "string from libindi, used in the config dialog"
+msgid "Bias"
+msgstr ""
+
+#: libindi_strings.cpp:38
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Binning"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:39
+msgctxt "string from libindi, used in the config dialog"
+msgid "Bits per pixel"
+msgstr ""
+
+#: libindi_strings.cpp:40
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Blue"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:41
+#, fuzzy
+#| msgid "Brightness:"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Brightness"
+msgstr "Kecerahan:"
+
+#: libindi_strings.cpp:42
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "CCD Bias"
+msgstr "CCDV"
+
+#: libindi_strings.cpp:43
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "CCD Information"
+msgstr "Maklumat tidak sah"
+
+#: libindi_strings.cpp:44
+msgctxt "string from libindi, used in the config dialog"
+msgid "CCD Maximum ADU"
+msgstr ""
+
+#: libindi_strings.cpp:45
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "CCD Noise"
+msgstr "Pilihan Pralihat"
+
+#: libindi_strings.cpp:46
+#, fuzzy
+#| msgid "Calculator"
+msgctxt "string from libindi, used in the config dialog"
+msgid "CCD Simulator"
+msgstr "Kalkulator"
+
+#: libindi_strings.cpp:47
+msgctxt "string from libindi, used in the config dialog"
+msgid "CCD X Pixel Size"
+msgstr ""
+
+#: libindi_strings.cpp:48
+msgctxt "string from libindi, used in the config dialog"
+msgid "CCD X resolution"
+msgstr ""
+
+#: libindi_strings.cpp:49
+msgctxt "string from libindi, used in the config dialog"
+msgid "CCD Y Pixel Size"
+msgstr ""
+
+#: libindi_strings.cpp:50
+msgctxt "string from libindi, used in the config dialog"
+msgid "CCD Y resolution"
+msgstr ""
+
+#: libindi_strings.cpp:51
+msgctxt "string from libindi, used in the config dialog"
+msgid "CCD1"
+msgstr ""
+
+#: libindi_strings.cpp:52
+msgctxt "string from libindi, used in the config dialog"
+msgid "CCDs"
+msgstr ""
+
+#: libindi_strings.cpp:53
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Caldwell"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:54
+#, fuzzy
+#| msgid "Camera"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Camera Model"
+msgstr "Kamera"
+
+#: libindi_strings.cpp:55
+msgctxt "string from libindi, used in the config dialog"
+msgid "Celsius"
+msgstr ""
+
+#: libindi_strings.cpp:56
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Centering"
+msgstr "&Tengah"
+
+#: libindi_strings.cpp:57
+#, fuzzy
+#| msgid "Color:"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Color"
+msgstr "Warna:"
+
+#: libindi_strings.cpp:58
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Comet"
+msgstr "Komen"
+
+#: libindi_strings.cpp:59
+msgctxt "string from libindi, used in the config dialog"
+msgid "Comet DEC motion arcmin/day"
+msgstr ""
+
+#: libindi_strings.cpp:60
+msgctxt "string from libindi, used in the config dialog"
+msgid "Comet RA motion arcmin/day"
+msgstr ""
+
+#: libindi_strings.cpp:61
+msgctxt "string from libindi, used in the config dialog"
+msgid "Comet tracking parameters"
+msgstr ""
+
+#: libindi_strings.cpp:62
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Communication"
+msgstr "Perhubungan"
+
+#: libindi_strings.cpp:63
+#, fuzzy
+#| msgid "Progress"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Compress"
+msgstr "Perkembangan"
+
+#: libindi_strings.cpp:64
+#, fuzzy
+#| msgid "Version"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Compression"
+msgstr "Versi"
+
+#: libindi_strings.cpp:65
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Configuration"
+msgstr "Kepastian Pemadaman"
+
+#: libindi_strings.cpp:66
+#, fuzzy
+#| msgid "Connect"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Connect"
+msgstr "Sambung"
+
+#: libindi_strings.cpp:67
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Connection"
+msgstr "Perhubungan"
+
+#: libindi_strings.cpp:68
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Contrast"
+msgstr "Kontras:"
+
+#: libindi_strings.cpp:69
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Control"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:70
+msgctxt "string from libindi, used in the config dialog"
+msgid "DEC (dd:mm:ss)"
+msgstr ""
+
+#: libindi_strings.cpp:71
+msgctxt "string from libindi, used in the config dialog"
+msgid "Dark"
+msgstr ""
+
+#: libindi_strings.cpp:72
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Date"
+msgstr "Tarikh"
+
+#: libindi_strings.cpp:73
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Date/Time"
+msgstr "Tarikh & Masa"
+
+#: libindi_strings.cpp:74
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Date/Time/Location"
+msgstr "Lokasi Baru"
+
+#: libindi_strings.cpp:75
+msgctxt "string from libindi, used in the config dialog"
+msgid "Debug"
+msgstr ""
+
+#: libindi_strings.cpp:76
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Dec (arcmin)"
+msgstr "saiz inci"
+
+#: libindi_strings.cpp:77
+msgctxt "string from libindi, used in the config dialog"
+msgid "Dec (dd:mm:ss)"
+msgstr ""
+
+#: libindi_strings.cpp:78
+msgctxt "string from libindi, used in the config dialog"
+msgid "Dec D:M:S"
+msgstr ""
+
+#: libindi_strings.cpp:79
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Declination axis"
+msgstr "Penguncupan"
+
+#: libindi_strings.cpp:80
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Deep Sky Catalogs"
+msgstr "Dalam Langit Objek"
+
+#: libindi_strings.cpp:81
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Default"
+msgstr "default"
+
+#: libindi_strings.cpp:82
+#, fuzzy
+#| msgid "Device"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Device"
+msgstr "Peranti"
+
+#: libindi_strings.cpp:83
+msgctxt "string from libindi, used in the config dialog"
+msgid "Diff. Eq."
+msgstr ""
+
+#: libindi_strings.cpp:84
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Direction"
+msgstr "Perhubungan"
+
+#: libindi_strings.cpp:85
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Disable"
+msgstr "Papar Maklumat Dialog"
+
+#: libindi_strings.cpp:86
+#, fuzzy
+#| msgid "Disconnect"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Disconnect"
+msgstr "Putus"
+
+#: libindi_strings.cpp:87
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Dome control"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:88
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Duration (s)"
+msgstr "Tempoh malam: %1 jam"
+
+#: libindi_strings.cpp:89
+msgctxt "string from libindi, used in the config dialog"
+msgid "Duty cycle"
+msgstr ""
+
+#: libindi_strings.cpp:90
+msgctxt "string from libindi, used in the config dialog"
+msgid "EQ Coord"
+msgstr ""
+
+#: libindi_strings.cpp:91
+msgctxt "string from libindi, used in the config dialog"
+msgid "EQ PEC"
+msgstr ""
+
+#: libindi_strings.cpp:92
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "East"
+msgstr "Timur"
+
+#: libindi_strings.cpp:93
+msgctxt "string from libindi, used in the config dialog"
+msgid "East (msec)"
+msgstr ""
+
+#: libindi_strings.cpp:94
+msgctxt "string from libindi, used in the config dialog"
+msgid "East (sec)"
+msgstr ""
+
+#: libindi_strings.cpp:95
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "East/West"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:96
+msgctxt "string from libindi, used in the config dialog"
+msgid "Enable"
+msgstr ""
+
+#: libindi_strings.cpp:97
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Eq. Coordinates"
+msgstr "Kordinat Bulan"
+
+#: libindi_strings.cpp:98
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Equatorial JNow"
+msgstr "Equitorial Guinea"
+
+#: libindi_strings.cpp:99
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Expose"
+msgstr "Pendedahan:"
+
+#: libindi_strings.cpp:100
+msgctxt "string from libindi, used in the config dialog"
+msgid "Extended GPS Features"
+msgstr ""
+
+#: libindi_strings.cpp:101
+msgctxt "string from libindi, used in the config dialog"
+msgid "Extrama"
+msgstr ""
+
+#: libindi_strings.cpp:102
+msgctxt "string from libindi, used in the config dialog"
+msgid "FWHM"
+msgstr ""
+
+#: libindi_strings.cpp:103
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "FWHM (arcseconds)"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:104
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Factory"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:105
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Fan"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:106
+msgctxt "string from libindi, used in the config dialog"
+msgid "Fast"
+msgstr ""
+
+#: libindi_strings.cpp:107
+msgctxt "string from libindi, used in the config dialog"
+msgid "Feed"
+msgstr ""
+
+#: libindi_strings.cpp:108
+msgctxt "string from libindi, used in the config dialog"
+msgid "Feedback"
+msgstr ""
+
+#: libindi_strings.cpp:109
+msgctxt "string from libindi, used in the config dialog"
+msgid "Field De-rotator"
+msgstr ""
+
+#: libindi_strings.cpp:110
+#, fuzzy
+#| msgid "Filter"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Filter"
+msgstr "Tapis"
+
+#: libindi_strings.cpp:111
+#, fuzzy, c-format
+#| msgid "Filter"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Filter #%d"
+msgstr "Tapis"
+
+#: libindi_strings.cpp:112
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Filter Simulator"
+msgstr "Tapis"
+
+#: libindi_strings.cpp:113
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Filter Wheel"
+msgstr "Tapisan Sendiri"
+
+#: libindi_strings.cpp:114
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Find"
+msgstr "Cari Sempadan"
+
+#: libindi_strings.cpp:115
+msgctxt "string from libindi, used in the config dialog"
+msgid "Firmware"
+msgstr ""
+
+#: libindi_strings.cpp:116
+msgctxt "string from libindi, used in the config dialog"
+msgid "Firmware Info"
+msgstr ""
+
+#: libindi_strings.cpp:117
+msgctxt "string from libindi, used in the config dialog"
+msgid "Firmware data"
+msgstr ""
+
+#: libindi_strings.cpp:118
+msgctxt "string from libindi, used in the config dialog"
+msgid "Firmware version"
+msgstr ""
+
+#: libindi_strings.cpp:119
+msgctxt "string from libindi, used in the config dialog"
+msgid "Flat"
+msgstr ""
+
+#: libindi_strings.cpp:120
+msgctxt "string from libindi, used in the config dialog"
+msgid "Fluorescent"
+msgstr ""
+
+#: libindi_strings.cpp:121 libindi_strings.cpp:122
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Focal Length (mm)"
+msgstr "Panjang Katalaluan"
+
+#: libindi_strings.cpp:123
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Focus Control"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:124
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Focus In"
+msgstr "Pada Ahli:"
+
+#: libindi_strings.cpp:125
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Focus Out"
+msgstr "Pada Ahli:"
+
+#: libindi_strings.cpp:126
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Focus Speed"
+msgstr "Pada Ahli:"
+
+#: libindi_strings.cpp:127
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Focus Timer"
+msgstr "Pada Ahli:"
+
+#: libindi_strings.cpp:128
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Focus in"
+msgstr "Pada Ahli:"
+
+#: libindi_strings.cpp:129
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Focus out"
+msgstr "Pada Ahli:"
+
+#: libindi_strings.cpp:130
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Focuser"
+msgstr "Pada Ahli:"
+
+#: libindi_strings.cpp:131
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Focuser Simulator"
+msgstr "Pada Ahli:"
+
+#: libindi_strings.cpp:132
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Focusers"
+msgstr "Pada Ahli:"
+
+#: libindi_strings.cpp:133
+#, fuzzy
+#| msgid "Name:"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Frame"
+msgstr "Nama:"
+
+#: libindi_strings.cpp:134
+#, fuzzy
+#| msgid "Name:"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Frame Rate"
+msgstr "Nama:"
+
+#: libindi_strings.cpp:135
+#, fuzzy
+#| msgid "Name:"
+msgctxt "string from libindi, used in the config dialog"
+msgid "FrameType"
+msgstr "Nama:"
+
+#: libindi_strings.cpp:136
+msgctxt "string from libindi, used in the config dialog"
+msgid "Freq"
+msgstr ""
+
+#: libindi_strings.cpp:137
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Full"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:138
+msgctxt "string from libindi, used in the config dialog"
+msgid "GCVS"
+msgstr ""
+
+#: libindi_strings.cpp:139
+msgctxt "string from libindi, used in the config dialog"
+msgid "GOTO"
+msgstr ""
+
+#: libindi_strings.cpp:140
+msgctxt "string from libindi, used in the config dialog"
+msgid "GPS Power"
+msgstr ""
+
+#: libindi_strings.cpp:141
+#, fuzzy
+#| msgid "Status"
+msgctxt "string from libindi, used in the config dialog"
+msgid "GPS Status"
+msgstr "Status"
+
+#: libindi_strings.cpp:142
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "GPS System"
+msgstr "Ulangbut Sistem"
+
+#: libindi_strings.cpp:143
+msgctxt "string from libindi, used in the config dialog"
+msgid "GPS/16 inch Features"
+msgstr ""
+
+#: libindi_strings.cpp:144
+#, fuzzy
+#| msgid "Gamma:"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Gamma D:M:S"
+msgstr "Gamma:"
+
+#: libindi_strings.cpp:145
+msgctxt "string from libindi, used in the config dialog"
+msgid "Generic Video4Linux"
+msgstr ""
+
+#: libindi_strings.cpp:146 libindi_strings.cpp:147
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Geographic Location"
+msgstr "Lokasi Baru"
+
+#: libindi_strings.cpp:148
+msgctxt "string from libindi, used in the config dialog"
+msgid "Goto"
+msgstr ""
+
+#: libindi_strings.cpp:149
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Green"
+msgstr "Negara nama"
+
+#: libindi_strings.cpp:150
+msgctxt "string from libindi, used in the config dialog"
+msgid "Grey"
+msgstr ""
+
+#: libindi_strings.cpp:151
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Guide"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:152
+msgctxt "string from libindi, used in the config dialog"
+msgid "Guide East/West"
+msgstr ""
+
+#: libindi_strings.cpp:153
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Guide Head"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:154
+msgctxt "string from libindi, used in the config dialog"
+msgid "Guide North/South"
+msgstr ""
+
+#: libindi_strings.cpp:155
+msgctxt "string from libindi, used in the config dialog"
+msgid "Guide West/East"
+msgstr ""
+
+#: libindi_strings.cpp:156
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Guide Wheel"
+msgstr "Tapisan Sendiri"
+
+#: libindi_strings.cpp:157
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Guider Control"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:158
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Guider Image"
+msgstr "Imej NFS"
+
+#: libindi_strings.cpp:159
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "H Alpha"
+msgstr "Nama Volum _Logikal:"
+
+#: libindi_strings.cpp:160
+msgctxt "string from libindi, used in the config dialog"
+msgid "H:M:S"
+msgstr ""
+
+#: libindi_strings.cpp:161
+msgctxt "string from libindi, used in the config dialog"
+msgid "HA H:M:S"
+msgstr ""
+
+#: libindi_strings.cpp:162
+msgctxt "string from libindi, used in the config dialog"
+msgid "Halt"
+msgstr ""
+
+#: libindi_strings.cpp:163
+#, fuzzy
+#| msgid "Height:"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Height"
+msgstr "Tinggi:"
+
+#: libindi_strings.cpp:164
+#, fuzzy
+#| msgid "Height:"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Height m"
+msgstr "Tinggi:"
+
+#: libindi_strings.cpp:165
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "High"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:166
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Horizontal Coords"
+msgstr "Kordinat Bulan"
+
+#: libindi_strings.cpp:167
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Hour axis"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:168
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Hourangle Coords"
+msgstr "Jam:"
+
+#: libindi_strings.cpp:169
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Hue"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:170
+msgctxt "string from libindi, used in the config dialog"
+msgid "Humidity Perc."
+msgstr ""
+
+#: libindi_strings.cpp:171
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "IC"
+msgstr "Pertama inci Tengah"
+
+#: libindi_strings.cpp:172
+#, fuzzy
+#| msgid "Image"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Image"
+msgstr "Imej"
+
+#: libindi_strings.cpp:173
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Image Adjustments"
+msgstr "Imej NFS"
+
+#: libindi_strings.cpp:174
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Image Control"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:175
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Image Data"
+msgstr "Format imej natif GIMP"
+
+#: libindi_strings.cpp:176
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Image Info"
+msgstr "Lanjutan URL uketerangan atau"
+
+#: libindi_strings.cpp:177
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Image Settings"
+msgstr "Lanjutan URL uketerangan atau"
+
+#: libindi_strings.cpp:178
+#, fuzzy
+#| msgid "Image"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Image Type"
+msgstr "Imej"
+
+#: libindi_strings.cpp:179
+msgctxt "string from libindi, used in the config dialog"
+msgid "Indoor"
+msgstr ""
+
+#: libindi_strings.cpp:180
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Info"
+msgstr "<i>info_label</i>"
+
+#: libindi_strings.cpp:181
+#, fuzzy
+#| msgid "Jupiter"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Jupiter"
+msgstr "Jupiter"
+
+#: libindi_strings.cpp:182
+msgctxt "string from libindi, used in the config dialog"
+msgid "LX200 Basic"
+msgstr ""
+
+#: libindi_strings.cpp:183
+msgctxt "string from libindi, used in the config dialog"
+msgid "Lat (dd:mm:ss)"
+msgstr ""
+
+#: libindi_strings.cpp:184
+msgctxt "string from libindi, used in the config dialog"
+msgid "Lat.  D:M:S +N"
+msgstr ""
+
+#: libindi_strings.cpp:185
+msgctxt "string from libindi, used in the config dialog"
+msgid "Lat. D:M:S +N"
+msgstr ""
+
+#: libindi_strings.cpp:186
+msgctxt "string from libindi, used in the config dialog"
+msgid "Left"
+msgstr ""
+
+#: libindi_strings.cpp:187
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Library"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:188
+#, fuzzy
+#| msgid "Height:"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Light"
+msgstr "Tinggi:"
+
+#: libindi_strings.cpp:189
+msgctxt "string from libindi, used in the config dialog"
+msgid "Limiting Mag"
+msgstr ""
+
+#: libindi_strings.cpp:190
+msgctxt "string from libindi, used in the config dialog"
+msgid "Load"
+msgstr ""
+
+#: libindi_strings.cpp:191
+msgctxt "string from libindi, used in the config dialog"
+msgid "Lon (dd:mm:ss)"
+msgstr ""
+
+#: libindi_strings.cpp:192
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Long. D:M:S +E"
+msgstr "Panjang"
+
+#: libindi_strings.cpp:193
+#, fuzzy
+#| msgid "Log"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Low"
+msgstr "Log"
+
+#: libindi_strings.cpp:194
+msgctxt "string from libindi, used in the config dialog"
+msgid "Luminosity"
+msgstr ""
+
+#: libindi_strings.cpp:195
+msgctxt "string from libindi, used in the config dialog"
+msgid "Lunar"
+msgstr ""
+
+#: libindi_strings.cpp:196
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Main Control"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:197
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Manual"
+msgstr "Negara nama"
+
+#: libindi_strings.cpp:198
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Manual Blue"
+msgstr "Negara nama"
+
+#: libindi_strings.cpp:199
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Manual Red"
+msgstr "Negara nama"
+
+#: libindi_strings.cpp:200
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Mars"
+msgstr "Nama Volum _Logikal:"
+
+#: libindi_strings.cpp:201
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Master alarm"
+msgstr "Negara nama"
+
+#: libindi_strings.cpp:202
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Max"
+msgstr "Jumlah Maksimum Sambungan:"
+
+#: libindi_strings.cpp:203
+msgctxt "string from libindi, used in the config dialog"
+msgid "Max slew Rate"
+msgstr ""
+
+#: libindi_strings.cpp:204
+msgctxt "string from libindi, used in the config dialog"
+msgid "Max. travel"
+msgstr ""
+
+#: libindi_strings.cpp:205
+msgctxt "string from libindi, used in the config dialog"
+msgid "Maximum Tick"
+msgstr ""
+
+#: libindi_strings.cpp:206
+msgctxt "string from libindi, used in the config dialog"
+msgid "Maximum travel"
+msgstr ""
+
+#: libindi_strings.cpp:207
+#, fuzzy
+#| msgid "Median"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Medium"
+msgstr "Median"
+
+#: libindi_strings.cpp:208
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Mercury"
+msgstr "OpenOffice.org Draw"
+
+#: libindi_strings.cpp:209
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Messier"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:210
+msgctxt "string from libindi, used in the config dialog"
+msgid "Minimum Tick"
+msgstr ""
+
+#: libindi_strings.cpp:211
+#, fuzzy
+#| msgid "Mode"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Mode"
+msgstr "Mod"
+
+#: libindi_strings.cpp:212
+#, fuzzy
+#| msgid "Mode"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Model"
+msgstr "Mod"
+
+#: libindi_strings.cpp:213
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Moon"
+msgstr "Usia Bulan"
+
+#: libindi_strings.cpp:214
+#, fuzzy
+#| msgid "Position"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Motion"
+msgstr "Kedudukan"
+
+#: libindi_strings.cpp:215
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Motion Control"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:216
+msgctxt "string from libindi, used in the config dialog"
+msgid "Motor Steps"
+msgstr ""
+
+#: libindi_strings.cpp:217
+msgctxt "string from libindi, used in the config dialog"
+msgid "Motor steps per tick"
+msgstr ""
+
+#: libindi_strings.cpp:218
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Mount coordinates"
+msgstr "Kordinat Bulan"
+
+#: libindi_strings.cpp:219
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Mount init."
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:220
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Mounting"
+msgstr "Peranti pentuding"
+
+#: libindi_strings.cpp:221
+msgctxt "string from libindi, used in the config dialog"
+msgid "Move to rate"
+msgstr ""
+
+#: libindi_strings.cpp:222
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Movement Control"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:223
+msgctxt "string from libindi, used in the config dialog"
+msgid "NGC"
+msgstr ""
+
+#: libindi_strings.cpp:224
+#, fuzzy
+#| msgid "Name"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Name"
+msgstr "Nama"
+
+#: libindi_strings.cpp:225
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Neptune"
+msgstr "OpenOffice.org Draw"
+
+#: libindi_strings.cpp:226
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Noise Reduction"
+msgstr "Imej NFS"
+
+#: libindi_strings.cpp:227
+#, fuzzy
+#| msgid "None"
+msgctxt "string from libindi, used in the config dialog"
+msgid "None"
+msgstr "Tiada"
+
+#: libindi_strings.cpp:228
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "North"
+msgstr "Utara"
+
+#: libindi_strings.cpp:229
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "North (msec)"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:230
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "North (sec)"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:231
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "North/Sounth"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:232
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "North/South"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:233
+msgctxt "string from libindi, used in the config dialog"
+msgid "Note"
+msgstr ""
+
+#: libindi_strings.cpp:234
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Number"
+msgstr "Numbor peranti"
+
+#: libindi_strings.cpp:235
+msgctxt "string from libindi, used in the config dialog"
+msgid "OFF"
+msgstr ""
+
+#: libindi_strings.cpp:236
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "ON"
+msgstr "Australia/Utara"
+
+#: libindi_strings.cpp:237
+msgctxt "string from libindi, used in the config dialog"
+msgid "OTA Temperature (C)"
+msgstr ""
+
+#: libindi_strings.cpp:238
+#, fuzzy
+#| msgid "Update"
+msgctxt "string from libindi, used in the config dialog"
+msgid "OTA Update"
+msgstr "Kemaskini"
+
+#: libindi_strings.cpp:239
+msgctxt "string from libindi, used in the config dialog"
+msgid "Oag Offset (arminutes)"
+msgstr ""
+
+#: libindi_strings.cpp:240
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Object"
+msgstr "Objek LightWave"
+
+#: libindi_strings.cpp:241
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Object Info"
+msgstr "Objek LightWave"
+
+#: libindi_strings.cpp:242
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Object Number"
+msgstr "Nama Pengguna"
+
+#: libindi_strings.cpp:243
+msgctxt "string from libindi, used in the config dialog"
+msgid "Off"
+msgstr ""
+
+#: libindi_strings.cpp:244
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Offset"
+msgstr "masa :"
+
+#: libindi_strings.cpp:245
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "On"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:246
+msgctxt "string from libindi, used in the config dialog"
+msgid "On Set"
+msgstr ""
+
+#: libindi_strings.cpp:247
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Options"
+msgstr "[PILIHAN...]"
+
+#: libindi_strings.cpp:248
+msgctxt "string from libindi, used in the config dialog"
+msgid "Outdoor"
+msgstr ""
+
+#: libindi_strings.cpp:249
+msgctxt "string from libindi, used in the config dialog"
+msgid "PE N/S"
+msgstr ""
+
+#: libindi_strings.cpp:250
+msgctxt "string from libindi, used in the config dialog"
+msgid "PE W/E"
+msgstr ""
+
+#: libindi_strings.cpp:251
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Park"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:252
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Park Scope"
+msgstr "Skrip Pengguna"
+
+#: libindi_strings.cpp:253
+msgctxt "string from libindi, used in the config dialog"
+msgid "Periodic Error"
+msgstr ""
+
+#: libindi_strings.cpp:254
+msgctxt "string from libindi, used in the config dialog"
+msgid "Philips Webcam"
+msgstr ""
+
+#: libindi_strings.cpp:255
+msgctxt "string from libindi, used in the config dialog"
+msgid "Pixel size (um)"
+msgstr ""
+
+#: libindi_strings.cpp:256
+msgctxt "string from libindi, used in the config dialog"
+msgid "Pixel size X"
+msgstr ""
+
+#: libindi_strings.cpp:257
+msgctxt "string from libindi, used in the config dialog"
+msgid "Pixel size Y"
+msgstr ""
+
+#: libindi_strings.cpp:258
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Pluto"
+msgstr "OpenOffice.org Draw"
+
+#: libindi_strings.cpp:259
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Polar"
+msgstr "Nama Volum _Logikal:"
+
+#: libindi_strings.cpp:260
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Port"
+msgstr "Liang"
+
+#: libindi_strings.cpp:261
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Ports"
+msgstr "Liang"
+
+#: libindi_strings.cpp:262
+#, fuzzy
+#| msgid "Position"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Position"
+msgstr "Kedudukan"
+
+#: libindi_strings.cpp:263
+msgctxt "string from libindi, used in the config dialog"
+msgid "Power"
+msgstr ""
+
+#: libindi_strings.cpp:264
+msgctxt "string from libindi, used in the config dialog"
+msgid "Pressure hPa"
+msgstr ""
+
+#: libindi_strings.cpp:265
+msgctxt "string from libindi, used in the config dialog"
+msgid "Property"
+msgstr ""
+
+#: libindi_strings.cpp:266
+msgctxt "string from libindi, used in the config dialog"
+msgid "RA  H:M:S"
+msgstr ""
+
+#: libindi_strings.cpp:267
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "RA (arcmin)"
+msgstr "saiz inci"
+
+#: libindi_strings.cpp:268
+msgctxt "string from libindi, used in the config dialog"
+msgid "RA (hh:mm:ss)"
+msgstr ""
+
+#: libindi_strings.cpp:269
+msgctxt "string from libindi, used in the config dialog"
+msgid "RA H:M:S"
+msgstr ""
+
+#: libindi_strings.cpp:270
+msgctxt "string from libindi, used in the config dialog"
+msgid "RA motor"
+msgstr ""
+
+#: libindi_strings.cpp:271
+msgctxt "string from libindi, used in the config dialog"
+msgid "Ra (hh:mm:ss)"
+msgstr ""
+
+#: libindi_strings.cpp:272 libindi_strings.cpp:273
+msgctxt "string from libindi, used in the config dialog"
+msgid "Rate"
+msgstr ""
+
+#: libindi_strings.cpp:274
+msgctxt "string from libindi, used in the config dialog"
+msgid "Raw"
+msgstr ""
+
+#: libindi_strings.cpp:275
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Red"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:276
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Relative Position"
+msgstr "Kepastian Ulangtetap"
+
+#: libindi_strings.cpp:277
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Resolution x"
+msgstr "Kepastian Ulangtetap"
+
+#: libindi_strings.cpp:278
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Resolution y"
+msgstr "Kepastian Ulangtetap"
+
+#: libindi_strings.cpp:279
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Restart"
+msgstr "Star Voyager"
+
+#: libindi_strings.cpp:280
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Restore"
+msgstr "&Default"
+
+#: libindi_strings.cpp:281
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "SAO"
+msgstr "Negara nama"
+
+#: libindi_strings.cpp:282
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "STAR"
+msgstr "Lanjutan URL uketerangan atau"
+
+#: libindi_strings.cpp:283
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Saturation Mag"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:284
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Saturn"
+msgstr "OpenOffice.org Draw"
+
+#: libindi_strings.cpp:285
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Save"
+msgstr "Simp&an"
+
+#: libindi_strings.cpp:286
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Save home"
+msgstr "Skrip Pengguna"
+
+#: libindi_strings.cpp:287
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Scope Location"
+msgstr "Lokasi Baru"
+
+#: libindi_strings.cpp:288
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Scope Properties"
+msgstr "Ciri perkongsian - %s"
+
+#: libindi_strings.cpp:289
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Seeing"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:290
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Select"
+msgstr "Tiada satu dipilih"
+
+#: libindi_strings.cpp:291
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Select item..."
+msgstr "Objek LightWave"
+
+#: libindi_strings.cpp:292
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Selenographic Sync"
+msgstr "Zonmasa bukan-geografik"
+
+#: libindi_strings.cpp:293
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Set"
+msgstr "Terbenam matahari: %1"
+
+#: libindi_strings.cpp:294
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Set Register"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:295
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Set home"
+msgstr "Waktu Alaska"
+
+#: libindi_strings.cpp:296
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Set register"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:297
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Settings"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:298
+msgctxt "string from libindi, used in the config dialog"
+msgid "Shutter Speed"
+msgstr ""
+
+#: libindi_strings.cpp:299
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Sideral"
+msgstr "Masa Sidereus Lokal"
+
+#: libindi_strings.cpp:300
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Sidereal Time"
+msgstr "Masa Sidereus Lokal"
+
+#: libindi_strings.cpp:301
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Sidereal time"
+msgstr "Masa Sidereus Lokal"
+
+#: libindi_strings.cpp:302
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Simulation"
+msgstr "Tind_akan"
+
+#: libindi_strings.cpp:303
+msgctxt "string from libindi, used in the config dialog"
+msgid "Simulator Config"
+msgstr ""
+
+#: libindi_strings.cpp:304
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Simulator Settings"
+msgstr "Tetapan Rangkaian Lain-lain"
+
+#: libindi_strings.cpp:305
+msgctxt "string from libindi, used in the config dialog"
+msgid "Site 1"
+msgstr ""
+
+#: libindi_strings.cpp:306
+msgctxt "string from libindi, used in the config dialog"
+msgid "Site 2"
+msgstr ""
+
+#: libindi_strings.cpp:307
+msgctxt "string from libindi, used in the config dialog"
+msgid "Site 3"
+msgstr ""
+
+#: libindi_strings.cpp:308
+msgctxt "string from libindi, used in the config dialog"
+msgid "Site 4"
+msgstr ""
+
+#: libindi_strings.cpp:309
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Site Management"
+msgstr "Tapisan Sendiri"
+
+#: libindi_strings.cpp:310
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Site Name"
+msgstr "Nama fail"
+
+#: libindi_strings.cpp:311
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Sites"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:312
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Sky Glow (magnitudes)"
+msgstr "Papar Rekod DNSSEC"
+
+#: libindi_strings.cpp:313
+msgctxt "string from libindi, used in the config dialog"
+msgid "Sleep"
+msgstr ""
+
+#: libindi_strings.cpp:314
+msgctxt "string from libindi, used in the config dialog"
+msgid "Slew"
+msgstr ""
+
+#: libindi_strings.cpp:315
+msgctxt "string from libindi, used in the config dialog"
+msgid "Slew Accuracy"
+msgstr ""
+
+#: libindi_strings.cpp:316
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Slew rate"
+msgstr "Skop"
+
+#: libindi_strings.cpp:317
+msgctxt "string from libindi, used in the config dialog"
+msgid "Slow"
+msgstr ""
+
+#: libindi_strings.cpp:318
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Snoop dc connection"
+msgstr "Perhubungan"
+
+#: libindi_strings.cpp:319
+msgctxt "string from libindi, used in the config dialog"
+msgid "Snoop dc master alarm"
+msgstr ""
+
+#: libindi_strings.cpp:320
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Snoop dc mode"
+msgstr "Sila guna mod teks"
+
+#: libindi_strings.cpp:321
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Snoop devices"
+msgstr "Hentikan servis dipilih"
+
+#: libindi_strings.cpp:322
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Solar"
+msgstr "Nama Volum _Logikal:"
+
+#: libindi_strings.cpp:323
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Solar System"
+msgstr "Ulangbut Sistem"
+
+#: libindi_strings.cpp:324
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "South"
+msgstr "Selatan"
+
+#: libindi_strings.cpp:325
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "South (msec)"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:326
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "South (sec)"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:327
+#, fuzzy
+#| msgid "Speed:"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Speed"
+msgstr "Kelajuan:"
+
+#: libindi_strings.cpp:328
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Star Catalogs"
+msgstr "Carta StarChart"
+
+#: libindi_strings.cpp:329
+msgctxt "string from libindi, used in the config dialog"
+msgid "Step delay"
+msgstr ""
+
+#: libindi_strings.cpp:330
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Stop"
+msgstr "nama"
+
+#: libindi_strings.cpp:331
+msgctxt "string from libindi, used in the config dialog"
+msgid "Stream Off"
+msgstr ""
+
+#: libindi_strings.cpp:332
+msgctxt "string from libindi, used in the config dialog"
+msgid "Stream On"
+msgstr ""
+
+#: libindi_strings.cpp:333
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Swap buttons"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:334
+msgctxt "string from libindi, used in the config dialog"
+msgid "Switch 1"
+msgstr ""
+
+#: libindi_strings.cpp:335
+msgctxt "string from libindi, used in the config dialog"
+msgid "Switch 2"
+msgstr ""
+
+#: libindi_strings.cpp:336
+msgctxt "string from libindi, used in the config dialog"
+msgid "Switch 3"
+msgstr ""
+
+#: libindi_strings.cpp:337
+msgctxt "string from libindi, used in the config dialog"
+msgid "Switch 4"
+msgstr ""
+
+#: libindi_strings.cpp:338
+msgctxt "string from libindi, used in the config dialog"
+msgid "Sync"
+msgstr ""
+
+#: libindi_strings.cpp:339
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Telescope"
+msgstr "Port tempatan:"
+
+#: libindi_strings.cpp:340
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Telescope Simulator"
+msgstr " Langkau Wizard"
+
+#: libindi_strings.cpp:341
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Telescopes"
+msgstr "Port tempatan:"
+
+#: libindi_strings.cpp:342
+msgctxt "string from libindi, used in the config dialog"
+msgid "Temma"
+msgstr ""
+
+#: libindi_strings.cpp:343
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Temma Driver"
+msgstr "Jurupacu:"
+
+#: libindi_strings.cpp:344
+#, fuzzy
+#| msgid "Version"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Temma version"
+msgstr "Versi"
+
+#: libindi_strings.cpp:345
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Temp."
+msgstr "Dir Temp: "
+
+#: libindi_strings.cpp:346
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Temperature K"
+msgstr "Bukaan:"
+
+#: libindi_strings.cpp:347
+msgctxt "string from libindi, used in the config dialog"
+msgid "Theta D:M:S"
+msgstr ""
+
+#: libindi_strings.cpp:348
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Ticks"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:349
+#, fuzzy
+#| msgid "Time"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Time"
+msgstr "Masa"
+
+#: libindi_strings.cpp:350
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Time Factor"
+msgstr "Waktu Alaska"
+
+#: libindi_strings.cpp:351
+#, fuzzy
+#| msgid "Time"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Timer"
+msgstr "Masa"
+
+#: libindi_strings.cpp:352
+msgctxt "string from libindi, used in the config dialog"
+msgid "Timer (ms)"
+msgstr ""
+
+#: libindi_strings.cpp:353
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Top"
+msgstr "Bulan terbit & Bulan terbenam (UT)"
+
+#: libindi_strings.cpp:354
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Total Exposure Time (ms)"
+msgstr "Imej Imej"
+
+#: libindi_strings.cpp:355
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Track"
+msgstr "Trek Seterusnya"
+
+#: libindi_strings.cpp:356
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Track Mode"
+msgstr "Mod Penyelamatan"
+
+#: libindi_strings.cpp:357
+msgctxt "string from libindi, used in the config dialog"
+msgid "Tracking Accuracy"
+msgstr ""
+
+#: libindi_strings.cpp:358
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Tracking Frequency"
+msgstr "[C] Saluran frekuensi:"
+
+#: libindi_strings.cpp:359
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Tracking Mode"
+msgstr "Mod Penyelamatan"
+
+#: libindi_strings.cpp:360
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Tracking mode"
+msgstr "Mod Penyelamatan"
+
+#: libindi_strings.cpp:361
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Transformation"
+msgstr "Maklumat tidak sah"
+
+#: libindi_strings.cpp:362
+msgctxt "string from libindi, used in the config dialog"
+msgid "UGC"
+msgstr ""
+
+#: libindi_strings.cpp:363
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "UTC"
+msgstr "Bulan terbit & Bulan terbenam (UT)"
+
+#: libindi_strings.cpp:364
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "UTC Offset"
+msgstr "masa :"
+
+#: libindi_strings.cpp:365
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "UTC Time"
+msgstr "hingga baru masa  Masa"
+
+#: libindi_strings.cpp:366
+#, fuzzy
+#| msgid "Update"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Update"
+msgstr "Kemaskini"
+
+#: libindi_strings.cpp:367
+#, fuzzy
+#| msgid "Update"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Update Client"
+msgstr "Kemaskini"
+
+#: libindi_strings.cpp:368
+#, fuzzy
+#| msgid "Update"
+msgctxt "string from libindi, used in the config dialog"
+msgid "Update GPS"
+msgstr "Kemaskini"
+
+#: libindi_strings.cpp:369
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Uranus"
+msgstr "OpenOffice.org Draw"
+
+#: libindi_strings.cpp:370
+msgctxt "string from libindi, used in the config dialog"
+msgid "Use Pulse Cmd"
+msgstr ""
+
+#: libindi_strings.cpp:371
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Venus"
+msgstr "OpenOffice.org Draw"
+
+#: libindi_strings.cpp:372
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Video"
+msgstr "Port tempatan:"
+
+#: libindi_strings.cpp:373
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Video Stream"
+msgstr "Kad Video"
+
+#: libindi_strings.cpp:374
+msgctxt "string from libindi, used in the config dialog"
+msgid "Wake up"
+msgstr ""
+
+#: libindi_strings.cpp:375
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Webcam Name"
+msgstr "Label Bertindan"
+
+#: libindi_strings.cpp:376
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "West"
+msgstr "Barat"
+
+#: libindi_strings.cpp:377
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "West (msec)"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:378
+msgctxt "string from libindi, used in the config dialog"
+msgid "West (sec)"
+msgstr ""
+
+#: libindi_strings.cpp:379
+msgctxt "string from libindi, used in the config dialog"
+msgid "West/East"
+msgstr ""
+
+#: libindi_strings.cpp:380
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "White Balance"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:381
+msgctxt "string from libindi, used in the config dialog"
+msgid "White Balance Mode"
+msgstr ""
+
+#: libindi_strings.cpp:382
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Whiteness"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:383
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Width"
+msgstr "Lebar:"
+
+#: libindi_strings.cpp:384
+msgctxt "string from libindi, used in the config dialog"
+msgid "X"
+msgstr ""
+
+#: libindi_strings.cpp:385
+msgctxt "string from libindi, used in the config dialog"
+msgid "Y"
+msgstr ""
+
+#: libindi_strings.cpp:386
+msgctxt "string from libindi, used in the config dialog"
+msgid "app. to refracted"
+msgstr ""
+
+#: libindi_strings.cpp:387
+msgctxt "string from libindi, used in the config dialog"
+msgid "app., refr., tel., observed"
+msgstr ""
+
+#: libindi_strings.cpp:388
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "app., refr., telescope"
+msgstr "Port tempatan:"
+
+#: libindi_strings.cpp:389
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "arcseconds"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:390
+msgctxt "string from libindi, used in the config dialog"
+msgid "cold"
+msgstr ""
+
+#: libindi_strings.cpp:391
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "danger"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:392
+msgctxt "string from libindi, used in the config dialog"
+msgid "decPEC (dd:mm:ss)"
+msgstr ""
+
+#: libindi_strings.cpp:393
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "dome control"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:394
+msgctxt "string from libindi, used in the config dialog"
+msgid "identity"
+msgstr ""
+
+#: libindi_strings.cpp:395
+msgctxt "string from libindi, used in the config dialog"
+msgid "lunar"
+msgstr ""
+
+#: libindi_strings.cpp:396
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "manual"
+msgstr "Negara nama"
+
+#: libindi_strings.cpp:397
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "max Alt"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:398
+msgctxt "string from libindi, used in the config dialog"
+msgid "min Alt"
+msgstr ""
+
+#: libindi_strings.cpp:399
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "off"
+msgstr "bagi"
+
+#: libindi_strings.cpp:400
+msgctxt "string from libindi, used in the config dialog"
+msgid "rel. to HA"
+msgstr ""
+
+#: libindi_strings.cpp:401
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "reset"
+msgstr "Bandar nama"
+
+#: libindi_strings.cpp:402
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "sidereal"
+msgstr "Masa Sidereus Lokal"
+
+#: libindi_strings.cpp:403
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "solar"
+msgstr "Nama Volum _Logikal:"
+
+#: libindi_strings.cpp:404
+msgctxt "string from libindi, used in the config dialog"
+msgid "undefined"
+msgstr ""
+
+#: libindi_strings.cpp:405
+msgctxt "string from libindi, used in the config dialog"
+msgid "warm"
+msgstr ""
+
+#: libindi_strings.cpp:406
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Count"
+msgstr "Kira:"
+
+#: libindi_strings.cpp:407
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Active Filter"
+msgstr "Tapisan Sendiri"
+
+#: libindi_strings.cpp:408
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Filter Count"
+msgstr "Tapis"
+
+#: libindi_strings.cpp:409
+#, fuzzy
+msgctxt "string from libindi, used in the config dialog"
+msgid "Oag Offset (arcminutes)"
+msgstr "saiz inci"
+
 #: main.cpp:38
 #, fuzzy
 msgid "Desktop Planetarium"
@@ -43788,12 +46133,6 @@ msgstr ""
 msgid "Overview"
 msgstr "Gambaran Keseluruhan"
 
-#. i18n: ectx: property (text), widget (QTreeWidget, OptionsList)
-#: tools/observinglist.cpp:109 tools/observinglist.cpp:112
-#: tools/optionstreeview.ui:33
-msgid "Type"
-msgstr "Jenis"
-
 #: tools/observinglist.cpp:109 tools/observinglist.cpp:112
 #, fuzzy
 msgctxt "Magnitude"
@@ -46572,6 +48911,10 @@ msgid "Set the color for the background."
 msgstr "Pudar latar belakang?"
 
 #, fuzzy
+#~ msgid "&Start"
+#~ msgstr "Mula"
+
+#, fuzzy
 #~| msgid "Advanced"
 #~ msgid "Advanced Options"
 #~ msgstr "Lanjutan"
@@ -46580,14 +48923,6 @@ msgstr "Pudar latar belakang?"
 #~| msgid "Mode"
 #~ msgid "INDI Mode"
 #~ msgstr "Mod"
-
-#, fuzzy
-#~ msgid "Driver"
-#~ msgstr "Jurupacu:"
-
-#, fuzzy
-#~ msgid "Set Location"
-#~ msgstr "Lokasi Baru"
 
 #, fuzzy
 #~ msgid "Captuing image..."
@@ -46628,11 +48963,6 @@ msgstr "Pudar latar belakang?"
 #, fuzzy
 #~ msgid "Low Pass Filter"
 #~ msgstr "Tapisan Sendiri"
-
-#, fuzzy
-#~| msgid "Version"
-#~ msgid "precession"
-#~ msgstr "Versi"
 
 #, fuzzy
 #~ msgid "Capture Image Sequence..."
@@ -46683,11 +49013,6 @@ msgstr "Pudar latar belakang?"
 #~ msgstr "ialah hingga saat."
 
 #, fuzzy
-#~ msgctxt "Set a value"
-#~ msgid "Set"
-#~ msgstr "Terbenam matahari: %1"
-
-#, fuzzy
 #~ msgid "Error. Unable to locate telescope drivers."
 #~ msgstr "Ralat hingga."
 
@@ -46718,10 +49043,6 @@ msgstr "Pudar latar belakang?"
 #, fuzzy
 #~ msgid "Discrepant data"
 #~ msgstr "Data LPD"
-
-#, fuzzy
-#~ msgid "CCD V"
-#~ msgstr "CCDV"
 
 #, fuzzy
 #~ msgid "CCD R"
@@ -46925,24 +49246,12 @@ msgstr "Pudar latar belakang?"
 #~ msgstr "Dari %s"
 
 #, fuzzy
-#~ msgid "Telescope Properties"
-#~ msgstr "Ciri perkongsian - %s"
-
-#, fuzzy
-#~ msgid "Telescopes:"
-#~ msgstr "Port tempatan:"
-
-#, fuzzy
 #~ msgid "Focal length:"
 #~ msgstr "Panjang Katalaluan"
 
 #, fuzzy
 #~ msgid "New"
 #~ msgstr "&Baru"
-
-#, fuzzy
-#~ msgid "Restore Default"
-#~ msgstr "&Default"
 
 #, fuzzy
 #~ msgid ""
@@ -46973,10 +49282,6 @@ msgstr "Pudar latar belakang?"
 #, fuzzy
 #~ msgid "Scope"
 #~ msgstr "Skop"
-
-#, fuzzy
-#~ msgid "Save Scope"
-#~ msgstr "Skrip Pengguna"
 
 #, fuzzy
 #~ msgctxt "prefix for ID number identifying a telescope (optional)"
@@ -47012,10 +49317,6 @@ msgstr "Pudar latar belakang?"
 #, fuzzy
 #~ msgid "Toggle display of the \"view\" toolbar."
 #~ msgstr "bagi"
-
-#, fuzzy
-#~ msgid "Slew Scope"
-#~ msgstr "Skop"
 
 #, fuzzy
 #~ msgid "Scope:"
@@ -49011,11 +51312,6 @@ msgstr "Pudar latar belakang?"
 #~ msgstr "penggunaan:   %s --list [nama]\n"
 
 #, fuzzy
-#~ msgctxt "First letter in 'Center'"
-#~ msgid "C"
-#~ msgstr "Pertama inci Tengah"
-
-#, fuzzy
 #~ msgctxt "First letter in 'Scope'"
 #~ msgid "S"
 #~ msgstr "Pertama inci Skop"
@@ -49040,10 +51336,6 @@ msgstr "Pudar latar belakang?"
 #~ msgstr "Baki masa: %s minit"
 
 #, fuzzy
-#~ msgid "Interactive mode"
-#~ msgstr "Mod Penyelamatan"
-
-#, fuzzy
 #~ msgctxt "object name (optional)"
 #~ msgid "Longname"
 #~ msgstr "nama"
@@ -49065,10 +51357,6 @@ msgstr "Pudar latar belakang?"
 #, fuzzy
 #~ msgid "Right ascension :"
 #~ msgstr "Peningkatan Kanan"
-
-#, fuzzy
-#~ msgid "Declination :"
-#~ msgstr "Penguncupan"
 
 #, fuzzy
 #~ msgid "Epoch :"
@@ -49328,26 +51616,12 @@ msgstr "Pudar latar belakang?"
 #~ msgstr "for nama"
 
 #, fuzzy
-#~ msgid "CCD Preview"
-#~ msgstr "Pilihan Pralihat"
-
-#, fuzzy
 #~ msgid "Full Width at Half Maximum"
 #~ msgstr "Penuh Lebar"
 
 #, fuzzy
 #~ msgid "Enter the telescope focal length in mm"
 #~ msgstr "Enter inci mm"
-
-#~ msgid "Gamma:"
-#~ msgstr "Gamma:"
-
-#~ msgid "Brightness:"
-#~ msgstr "Kecerahan:"
-
-#, fuzzy
-#~ msgid "Contrast:"
-#~ msgstr "Kontras:"
 
 #, fuzzy
 #~ msgid "Setup Telescopes and Devices"
@@ -49451,10 +51725,6 @@ msgstr "Pudar latar belakang?"
 #, fuzzy
 #~ msgid "Image Loading Process..."
 #~ msgstr "Memulakan proses perakaunan: "
-
-#, fuzzy
-#~ msgid "Image Reduction"
-#~ msgstr "Imej NFS"
 
 #, fuzzy
 #~ msgid "Unable to read FITS data from file. %1.\n"
@@ -49631,15 +51901,8 @@ msgstr "Pudar latar belakang?"
 #~ msgid "Enter new Altitude"
 #~ msgstr "Sila masukkan lokasi baru bagi %s."
 
-#, fuzzy
-#~ msgid "File Name"
-#~ msgstr "Nama fail"
-
 #~ msgid "Average"
 #~ msgstr "Purata"
-
-#~ msgid "Median"
-#~ msgstr "Median"
 
 #, fuzzy
 #~ msgid "Flat Field Frames"
@@ -49935,10 +52198,6 @@ msgstr "Pudar latar belakang?"
 #~ msgid "Choose Input Field"
 #~ msgstr "Kosongkan Medan Masukan"
 
-#, fuzzy
-#~ msgid "Date"
-#~ msgstr "Tarikh"
-
 #~ msgid "JD:"
 #~ msgstr "JD:"
 
@@ -49964,10 +52223,6 @@ msgstr "Pudar latar belakang?"
 #, fuzzy
 #~ msgid "Dist. to Earth (AU):"
 #~ msgstr "hingga:"
-
-#, fuzzy
-#~ msgid "Topocentric coordinates"
-#~ msgstr "Kordinat Bulan"
 
 #, fuzzy
 #~ msgid "Precessed Coordinates"
@@ -50066,10 +52321,6 @@ msgstr "Pudar latar belakang?"
 #, fuzzy
 #~ msgid "3. Magnitude limit"
 #~ msgstr "Had media:"
-
-#, fuzzy
-#~ msgid "Filter arguments:"
-#~ msgstr "Tapisan Sendiri"
 
 #, fuzzy
 #~ msgid "&None"
