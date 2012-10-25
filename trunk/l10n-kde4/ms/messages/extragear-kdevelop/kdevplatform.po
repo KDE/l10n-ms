@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevplatform\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-10-24 03:34+0200\n"
+"POT-Creation-Date: 2012-10-25 03:19+0200\n"
 "PO-Revision-Date: 2009-07-05 19:31+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -305,7 +305,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, configName)
 #: debugger/variable/variablecollection.cpp:394
 #: debugger/variable/variabletooltip.cpp:98
-#: shell/launchconfigurationdialog.ui:70
+#: shell/launchconfigurationdialog.ui:83
 #, fuzzy
 msgid "Name"
 msgstr "Nama"
@@ -563,9 +563,8 @@ msgid "Insert"
 msgstr "Ganggu"
 
 #. i18n: ectx: property (toolTip), widget (KPushButton, removeInheritancePushButton)
-#. i18n: ectx: property (text), widget (QToolButton, deleteConfig)
 #: language/codegen/applychangeswidget.cpp:279
-#: language/codegen/ui/newclass.ui:74 shell/launchconfigurationdialog.ui:42
+#: language/codegen/ui/newclass.ui:74
 #, fuzzy
 msgid "Remove"
 msgstr "Buang"
@@ -719,9 +718,7 @@ msgid "In&heritance:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KPushButton, addInheritancePushButton)
-#. i18n: ectx: property (text), widget (QToolButton, addConfig)
-#: language/codegen/ui/newclass.ui:64 shell/launchconfigurationdialog.ui:29
-#: vcs/vcspluginhelper.cpp:104
+#: language/codegen/ui/newclass.ui:64 vcs/vcspluginhelper.cpp:104
 #, fuzzy
 msgid "Add"
 msgstr "Tambah"
@@ -1099,7 +1096,7 @@ msgid "Unknown context"
 msgstr ""
 
 #: language/duchain/navigation/useswidget.cpp:321
-#: shell/launchconfigurationdialog.cpp:360
+#: shell/launchconfigurationdialog.cpp:409
 #, fuzzy
 msgid "Global"
 msgstr "Global"
@@ -1133,25 +1130,25 @@ msgid_plural "<b>File:</b> %2&nbsp;<i>(%1 uses)</i>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: language/duchain/repositories/itemrepository.cpp:263
+#: language/duchain/repositories/itemrepository.cpp:265
 #, kde-format
 msgid "Session crashed %1 time in a row"
 msgid_plural "Session crashed %1 times in a row"
 msgstr[0] ""
 msgstr[1] ""
 
-#: language/duchain/repositories/itemrepository.cpp:268
+#: language/duchain/repositories/itemrepository.cpp:270
 msgid "Clear cache: [Y/n] "
 msgstr ""
 
-#: language/duchain/repositories/itemrepository.cpp:280
+#: language/duchain/repositories/itemrepository.cpp:282
 #, fuzzy, kde-format
 msgid "The Session crashed once."
 msgid_plural "The Session crashed %1 times in a row."
 msgstr[0] "Semakan"
 msgstr[1] "Semakan"
 
-#: language/duchain/repositories/itemrepository.cpp:280
+#: language/duchain/repositories/itemrepository.cpp:282
 msgid ""
 "The crash may be caused by a corruption of cached data.\n"
 "\n"
@@ -1159,7 +1156,7 @@ msgid ""
 "you are sure the crash has another origin."
 msgstr ""
 
-#: language/duchain/repositories/itemrepository.cpp:281
+#: language/duchain/repositories/itemrepository.cpp:283
 #, fuzzy
 msgid "Session crashed"
 msgstr "Semakan"
@@ -1337,7 +1334,7 @@ msgstr ""
 msgid "creating"
 msgstr "Semakan"
 
-#: project/abstractfilemanagerplugin.cpp:311
+#: project/abstractfilemanagerplugin.cpp:312
 #, kde-format
 msgid ""
 "The base folder of project <b>%1</b> got deleted or moved outside of "
@@ -1345,11 +1342,11 @@ msgid ""
 "The project has to be closed."
 msgstr ""
 
-#: project/abstractfilemanagerplugin.cpp:314
+#: project/abstractfilemanagerplugin.cpp:315
 msgid "Project Folder Deleted"
 msgstr ""
 
-#: project/abstractfilemanagerplugin.cpp:338
+#: project/abstractfilemanagerplugin.cpp:339
 #, kde-format
 msgid ""
 "You tried to rename '%1' to '%2', but the latter is filtered and will be "
@@ -2002,56 +1999,68 @@ msgstr ""
 msgid "Verbose output"
 msgstr ""
 
-#: shell/launchconfigurationdialog.cpp:57
+#: shell/launchconfigurationdialog.cpp:63
 #, fuzzy
 msgid "Launch Configurations"
 msgstr "Tetapkan Pemberitahuan"
 
-#: shell/launchconfigurationdialog.cpp:65
+#: shell/launchconfigurationdialog.cpp:72
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Add a new launch configuration."
 msgstr "Tetapkan Pemberitahuan"
 
-#: shell/launchconfigurationdialog.cpp:68
+#: shell/launchconfigurationdialog.cpp:75
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Delete selected launch configuration."
 msgstr "Tetapkan Pemberitahuan"
 
-#: shell/launchconfigurationdialog.cpp:171
+#: shell/launchconfigurationdialog.cpp:219
 msgid ""
 "Selected Launch Configuration has unsaved changes. Do you want to save it?"
 msgstr ""
 
-#: shell/launchconfigurationdialog.cpp:171
+#: shell/launchconfigurationdialog.cpp:219
 #, fuzzy
 msgid "Unsaved Changes"
 msgstr "Perubahan Tidak Disimpan"
 
-#: shell/launchconfigurationdialog.cpp:315
+#: shell/launchconfigurationdialog.cpp:301
+msgid ""
+"<i>Select a configuration to edit from the left,<br>or click the \"Add new\" "
+"button to add a new one.</i>"
+msgstr ""
+
+#: shell/launchconfigurationdialog.cpp:365
 #, fuzzy, kde-format
-msgid "<b>%1</b>"
+msgid "Editing %2: <b>%1</b>"
 msgstr "<b>%1</b>"
 
-#: shell/launchconfigurationdialog.cpp:318
-#, fuzzy, kde-format
-msgid "<b>%1</b> (%2)"
-msgstr "<b>%1</b>"
-
-#: shell/launchconfigurationdialog.cpp:588
+#: shell/launchconfigurationdialog.cpp:637
 #, fuzzy
 msgctxt "Name of the Launch Configurations"
 msgid "Name"
 msgstr "Nama"
 
-#: shell/launchconfigurationdialog.cpp:591
+#: shell/launchconfigurationdialog.cpp:640
 #, fuzzy
 msgctxt ""
 "The type of the Launch Configurations (i.e. Python Application, C++ "
 "Application)"
 msgid "Type"
 msgstr "Jenis"
+
+#. i18n: ectx: property (text), widget (QToolButton, addConfig)
+#: shell/launchconfigurationdialog.ui:40
+msgid "Add new..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QToolButton, deleteConfig)
+#: shell/launchconfigurationdialog.ui:53
+#, fuzzy
+msgid "Remove selected"
+msgstr "&Simpan Dipilih"
 
 #: shell/loadedpluginsdialog.cpp:271 shell/mainwindow_p.cpp:258
 msgid "Loaded Plugins"
@@ -2774,12 +2783,12 @@ msgstr ""
 msgid "Process Error"
 msgstr ""
 
-#: shell/runcontroller.cpp:839
-#, fuzzy, kde-format
-msgid "New %1 Configuration"
-msgstr "Tetapkan Pemberitahuan"
+#: shell/runcontroller.cpp:861
+#, kde-format
+msgid "New %1 Launcher"
+msgstr ""
 
-#: shell/runcontroller.cpp:874
+#: shell/runcontroller.cpp:898
 #, kde-format
 msgid "%1 As..."
 msgstr ""
@@ -2813,7 +2822,7 @@ msgstr "&Simpan Tiada"
 msgid "Discard all modifications"
 msgstr ""
 
-#: shell/session.cpp:165
+#: shell/session.cpp:166
 #, fuzzy
 msgid "(no projects)"
 msgstr "Dilindungi"
@@ -4480,6 +4489,14 @@ msgstr ""
 #, fuzzy
 msgid "Message:"
 msgstr "Mesej:"
+
+#, fuzzy
+#~ msgid "<b>%1</b> (%2)"
+#~ msgstr "<b>%1</b>"
+
+#, fuzzy
+#~ msgid "New %1 Configuration"
+#~ msgstr "Tetapkan Pemberitahuan"
 
 #, fuzzy
 #~ msgctxt "@action:button"
