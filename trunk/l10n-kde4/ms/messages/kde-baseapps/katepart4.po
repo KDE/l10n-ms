@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-01 03:59+0100\n"
+"POT-Creation-Date: 2012-11-02 04:00+0100\n"
 "PO-Revision-Date: 2008-07-13 01:04+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -947,13 +947,13 @@ msgid "Delete the current file type."
 msgstr "Hapuskan jenis fail semasa."
 
 #. i18n: ectx: property (text), widget (QPushButton, btnDelete)
-#: dialogs/filetypeconfigwidget.ui:44 schema/kateschemaconfig.cpp:976
+#: dialogs/filetypeconfigwidget.ui:44 schema/kateschemaconfig.cpp:905
 #, fuzzy
 msgid "&Delete"
 msgstr "Dipilih"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: dialogs/filetypeconfigwidget.ui:66 mode/katemodeconfigpage.cpp:284
+#: dialogs/filetypeconfigwidget.ui:66 mode/katemodeconfigpage.cpp:283
 #, fuzzy
 msgid "Properties"
 msgstr "Ciri Kotak"
@@ -1444,7 +1444,7 @@ msgstr "Membolehkan anda memilih lokasi dan simpan lagi fail."
 msgid "File Changed on Disk"
 msgstr "Fail Diubah dalam Cakera"
 
-#: dialogs/katedialogs.cpp:1437 document/katedocument.cpp:3900
+#: dialogs/katedialogs.cpp:1437 document/katedocument.cpp:3892
 msgid "&Reload File"
 msgstr "&Muat Semula Fail"
 
@@ -1455,7 +1455,7 @@ msgstr ""
 "Muat semula fail dari cakera. Jika anda ada perubahan yang belum disimpan, "
 "ia akan hilang."
 
-#: dialogs/katedialogs.cpp:1445 document/katedocument.cpp:3901
+#: dialogs/katedialogs.cpp:1445 document/katedocument.cpp:3893
 msgid "&Ignore Changes"
 msgstr "&Abaikan Perubahan"
 
@@ -1471,7 +1471,7 @@ msgstr ""
 "Jangan buat apa-apa. Lain kali, anda fokus keapa fail, atau cuba simpan atau "
 "tutupkan ia, anda akan digesa lagi."
 
-#: dialogs/katedialogs.cpp:1461 document/katedocument.cpp:3898
+#: dialogs/katedialogs.cpp:1461 document/katedocument.cpp:3890
 msgid "What do you want to do?"
 msgstr "Apa yang ingin anda lakukan?"
 
@@ -1833,7 +1833,7 @@ msgid "Normal text:"
 msgstr "Teks normal:"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, back)
-#: dialogs/schemaconfigcolortab.ui:33 schema/kateschemaconfig.cpp:89
+#: dialogs/schemaconfigcolortab.ui:33 schema/kateschemaconfig.cpp:87
 msgid "<p>Sets the background color of the editing area.</p>"
 msgstr "<p>Tetapkan warna latarbelakang untuk kawasan suntingan.</p>"
 
@@ -1857,7 +1857,7 @@ msgid "Current line:"
 msgstr "Baris semasa:"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, current)
-#: dialogs/schemaconfigcolortab.ui:61 schema/kateschemaconfig.cpp:101
+#: dialogs/schemaconfigcolortab.ui:61 schema/kateschemaconfig.cpp:99
 msgid ""
 "<p>Sets the background color of the currently active line, which means the "
 "line where your cursor is positioned.</p>"
@@ -1909,7 +1909,7 @@ msgid "Bracket highlight:"
 msgstr "Tonjolkan kurungan:"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, bracket)
-#: dialogs/schemaconfigcolortab.ui:125 schema/kateschemaconfig.cpp:193
+#: dialogs/schemaconfigcolortab.ui:125 schema/kateschemaconfig.cpp:191
 msgid ""
 "<p>Sets the bracket matching color. This means, if you place the cursor e.g. "
 "at a <b>(</b>, the matching <b>)</b> will be highlighted with this color.</p>"
@@ -1924,7 +1924,7 @@ msgid "Word wrap markers:"
 msgstr "Penanda bungkus perkataan:"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, wwmarker)
-#: dialogs/schemaconfigcolortab.ui:139 schema/kateschemaconfig.cpp:143
+#: dialogs/schemaconfigcolortab.ui:139 schema/kateschemaconfig.cpp:141
 msgid ""
 "<p>Sets the color of Word Wrap-related markers:</p><dl><dt>Static Word Wrap</"
 "dt><dd>A vertical line which shows the column where text is going to be "
@@ -1944,7 +1944,7 @@ msgid "Tab and space markers:"
 msgstr "Penanda tab :"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, tmarker)
-#: dialogs/schemaconfigcolortab.ui:153 schema/kateschemaconfig.cpp:181
+#: dialogs/schemaconfigcolortab.ui:153 schema/kateschemaconfig.cpp:179
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid "<p>Sets the color of the tabulator marks.</p>"
@@ -1956,7 +1956,7 @@ msgid "Spelling mistake line:"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, spellingmistakeline)
-#: dialogs/schemaconfigcolortab.ui:167 schema/kateschemaconfig.cpp:175
+#: dialogs/schemaconfigcolortab.ui:167 schema/kateschemaconfig.cpp:173
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid ""
@@ -2211,14 +2211,27 @@ msgstr ""
 msgid "Saving problems"
 msgstr ""
 
-#: document/katedocument.cpp:136 document/katedocument.cpp:2147
-#: document/katedocument.cpp:2162 document/katedocument.cpp:2168
-#: document/katedocument.cpp:2179
+#: document/katedocument.cpp:136 document/katedocument.cpp:2157
+#: document/katedocument.cpp:2163 document/katedocument.cpp:2174
 #, fuzzy
 msgid "Save Nevertheless"
 msgstr "Simpan Tetapan"
 
-#: document/katedocument.cpp:2085 document/katedocument.cpp:2090
+#: document/katedocument.cpp:2089
+#, fuzzy, kde-format
+#| msgid ""
+#| "The file %1 could not be loaded, as it was not possible to read from it.\n"
+#| "\n"
+#| "Check if you have read access to this file."
+msgid ""
+"The file %1 could not be loaded, as it was not possible to read from it.<br /"
+">Check if you have read access to this file."
+msgstr ""
+"Fail %1 tidak dapat dimuatkan kerana ia tidak dapat dibaca.\n"
+"\n"
+"Semak sama ada anda mempunyai akses baca ke fail ini."
+
+#: document/katedocument.cpp:2095
 #, kde-format
 msgid ""
 "The file %1 could not be loaded, as it was not possible to read from it.\n"
@@ -2229,7 +2242,16 @@ msgstr ""
 "\n"
 "Semak sama ada anda mempunyai akses baca ke fail ini."
 
-#: document/katedocument.cpp:2101 document/katedocument.cpp:2108
+#: document/katedocument.cpp:2105
+#, kde-format
+msgid ""
+"The file %1 was opened with %2 encoding but contained invalid characters."
+"<br />It is set to read-only mode, as saving might destroy its content.<br /"
+">Either reopen the file with the correct encoding chosen or enable the read-"
+"write mode again in the menu to be able to edit it."
+msgstr ""
+
+#: document/katedocument.cpp:2114
 #, kde-format
 msgid ""
 "The file %1 was opened with %2 encoding but contained invalid characters. It "
@@ -2238,13 +2260,15 @@ msgid ""
 "again in the menu to be able to edit it."
 msgstr ""
 
-#: document/katedocument.cpp:2105
-#, fuzzy
-#| msgid "E&ncoding"
-msgid "Broken Encoding"
-msgstr "&Pengekodan"
+#: document/katedocument.cpp:2126
+#, kde-format
+msgid ""
+"The file %1 was opened and contained lines longer than the configured Line "
+"Length Limit (%2 characters).<br />Those lines were wrapped and the document "
+"is set to read-only mode, as saving will modify its content."
+msgstr ""
 
-#: document/katedocument.cpp:2121 document/katedocument.cpp:2126
+#: document/katedocument.cpp:2133
 #, kde-format
 msgid ""
 "The file %1 was opened and contained lines longer than the configured Line "
@@ -2252,22 +2276,7 @@ msgid ""
 "set to read-only mode, as saving will modify its content."
 msgstr ""
 
-#: document/katedocument.cpp:2123
-msgid "Too Long Lines Wrapped"
-msgstr ""
-
-#: document/katedocument.cpp:2145
-#, kde-format
-msgid "The file %1 is a binary, saving it will result in a corrupt file."
-msgstr ""
-"Fail %1 adalah fail binari, menyimpan fail ini akan menjadikannya rosak."
-
-#: document/katedocument.cpp:2146
-#, fuzzy
-msgid "Trying to Save Binary File"
-msgstr "Pilih lokasi untuk menyimpan fail"
-
-#: document/katedocument.cpp:2162
+#: document/katedocument.cpp:2157
 msgid ""
 "Do you really want to save this unmodified file? You could overwrite changed "
 "data in the file on disk."
@@ -2275,12 +2284,12 @@ msgstr ""
 "Anda benar-benar ingin simpan fail tak diubah suai ini? Anda boleh tulis "
 "ganti data yang diubah dalam fail pada cakera."
 
-#: document/katedocument.cpp:2162
+#: document/katedocument.cpp:2157
 #, fuzzy
 msgid "Trying to Save Unmodified File"
 msgstr "Pilih lokasi untuk menyimpan fail"
 
-#: document/katedocument.cpp:2168
+#: document/katedocument.cpp:2163
 msgid ""
 "Do you really want to save this file? Both your open file and the file on "
 "disk were changed. There could be some data lost."
@@ -2288,13 +2297,13 @@ msgstr ""
 "Anda benar-benar ingin simpan fail ini? Fail terbuka dan fail pada cakera "
 "diubah. Sesetengah data mungkin hilang."
 
-#: document/katedocument.cpp:2168 document/katedocument.cpp:2179
-#: document/katedocument.cpp:2434
+#: document/katedocument.cpp:2163 document/katedocument.cpp:2174
+#: document/katedocument.cpp:2426
 #, fuzzy
 msgid "Possible Data Loss"
 msgstr "Ralat Dengan Data"
 
-#: document/katedocument.cpp:2179
+#: document/katedocument.cpp:2174
 msgid ""
 "The selected encoding cannot encode every unicode character in this "
 "document. Do you really want to save it? There could be some data lost."
@@ -2303,7 +2312,7 @@ msgstr ""
 "dokumen ini. Anda benar-benar ingin menyimpannya? Sesetengah data mungkin "
 "hilang."
 
-#: document/katedocument.cpp:2247
+#: document/katedocument.cpp:2242
 #, kde-format
 msgid ""
 "For file %1 no backup copy could be created before saving. If an error "
@@ -2312,16 +2321,16 @@ msgid ""
 "only for you."
 msgstr ""
 
-#: document/katedocument.cpp:2250
+#: document/katedocument.cpp:2245
 msgid "Failed to create backup copy."
 msgstr ""
 
-#: document/katedocument.cpp:2251
+#: document/katedocument.cpp:2246
 #, fuzzy
 msgid "Try to Save Nevertheless"
 msgstr "Simpan Tetapan"
 
-#: document/katedocument.cpp:2290
+#: document/katedocument.cpp:2297
 #, kde-format
 msgid ""
 "The document could not be saved, as it was not possible to write to %1.\n"
@@ -2333,85 +2342,100 @@ msgstr ""
 "Pastikan anda mempunyai akses tulis ke fail ini atau ruang cakera yang cukup "
 "boleh didapatkan."
 
-#: document/katedocument.cpp:2433
+#: document/katedocument.cpp:2425
 msgid "Do you really want to continue to close this file? Data loss may occur."
 msgstr ""
 "Anda benar-benar ingin menutup fail ini? Kehilangan data boleh berlaku."
 
-#: document/katedocument.cpp:2434
+#: document/katedocument.cpp:2426
 #, fuzzy
 msgid "Close Nevertheless"
 msgstr "_Tutup Semua"
 
-#: document/katedocument.cpp:3784
+#: document/katedocument.cpp:3776
 #, fuzzy
 msgid "Untitled"
 msgstr "Tanpa had"
 
-#: document/katedocument.cpp:3820 document/katedocument.cpp:3992
-#: document/katedocument.cpp:4653
+#: document/katedocument.cpp:3812 document/katedocument.cpp:3989
+#: document/katedocument.cpp:4658
 msgid "Save File"
 msgstr "Simpan Fail"
 
-#: document/katedocument.cpp:3829
+#: document/katedocument.cpp:3821
 msgid "Save failed"
 msgstr "Simpan gagal"
 
-#: document/katedocument.cpp:3899
+#: document/katedocument.cpp:3891
 msgid "File Was Changed on Disk"
 msgstr "Fail Diubah dalam Cakera"
 
-#: document/katedocument.cpp:4227
+#: document/katedocument.cpp:4224
 msgid ""
 "Using deprecated modeline 'remove-trailing-space'. Please replace with "
 "'remove-trailing-spaces modified;', see http://docs.kde.org/stable/en/kde-"
 "baseapps/kate/config-variables.html#variable-remove-trailing-spaces"
 msgstr ""
 
-#: document/katedocument.cpp:4233
+#: document/katedocument.cpp:4230
 msgid ""
 "Using deprecated modeline 'replace-trailing-space-save'. Please replace with "
 "'remove-trailing-spaces all;', see http://docs.kde.org/stable/en/kde-"
 "baseapps/kate/config-variables.html#variable-remove-trailing-spaces"
 msgstr ""
 
-#: document/katedocument.cpp:4541
+#: document/katedocument.cpp:4542
 #, kde-format
 msgid "The file '%1' was modified by another program."
 msgstr "Fail '%1' diubah suai oleh perogram lain."
 
-#: document/katedocument.cpp:4544
+#: document/katedocument.cpp:4545
 #, kde-format
 msgid "The file '%1' was created by another program."
 msgstr "Fail '%1' dicipta oleh program lain."
 
-#: document/katedocument.cpp:4547
+#: document/katedocument.cpp:4548
 #, kde-format
 msgid "The file '%1' was deleted by another program."
 msgstr "Fail '%1' dihapuskan oleh program lain."
 
-#: document/katedocument.cpp:4681
+#: document/katedocument.cpp:4686
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr ""
 "Fail bernama \"%1\" sudah wujud. Anda pasti anda ingin menulisgantinya?"
 
-#: document/katedocument.cpp:4683
+#: document/katedocument.cpp:4688
 msgid "Overwrite File?"
 msgstr "Tulis Ganti Fail?"
 
-#: document/katedocument.cpp:4927
+#: document/katedocument.cpp:4932
 #, kde-format
 msgid ""
 "The document \"%1\" has been modified.\n"
 "Do you want to save your changes or discard them?"
 msgstr ""
 
-#: document/katedocument.cpp:4929
+#: document/katedocument.cpp:4934
 #, fuzzy
 #| msgid "&Word Wrap Document"
 msgid "Close Document"
+msgstr "Dokumen Balut &Perkataan"
+
+#: document/katedocument.cpp:5012
+#, kde-format
+msgid "The file %1 is still loading."
+msgstr ""
+
+#: document/katedocument.cpp:5485
+msgid "&Close"
+msgstr ""
+
+#: document/katedocument.cpp:5486
+#, fuzzy
+#| msgid "&Word Wrap Document"
+msgid "Close document"
 msgstr "Dokumen Balut &Perkataan"
 
 #: mode/katemodeconfigpage.cpp:71
@@ -2424,16 +2448,16 @@ msgstr ""
 msgid "Use Default"
 msgstr "Guna Gaya Piawai"
 
-#: mode/katemodeconfigpage.cpp:200
+#: mode/katemodeconfigpage.cpp:197
 msgid "New Filetype"
 msgstr "Jenis Fail Baru"
 
-#: mode/katemodeconfigpage.cpp:254
+#: mode/katemodeconfigpage.cpp:253
 #, kde-format
 msgid "Properties of %1"
 msgstr "Ciri %1"
 
-#: mode/katemodeconfigpage.cpp:304
+#: mode/katemodeconfigpage.cpp:303
 msgid ""
 "Select the MimeTypes you want for this file type.\n"
 "Please note that this will automatically edit the associated file extensions "
@@ -2443,7 +2467,7 @@ msgstr ""
 "Ambil perhatian bahawa ini juga akan mengedit sambungan fail yang berkenaan "
 "secara automatik."
 
-#: mode/katemodeconfigpage.cpp:306
+#: mode/katemodeconfigpage.cpp:305
 msgid "Select Mime Types"
 msgstr "Pilih Jenis Mime"
 
@@ -2462,7 +2486,7 @@ msgid "Replace current schema?"
 msgstr "Ganti Pengesahan"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioReplaceExisting)
-#: schema/howtoimportschema.ui:34 schema/kateschemaconfig.cpp:1096
+#: schema/howtoimportschema.ui:34 schema/kateschemaconfig.cpp:1020
 #, fuzzy, no-c-format, kde-format
 #| msgid "Replace Confirmation"
 msgid "Replace existing schema %1"
@@ -2479,30 +2503,30 @@ msgstr "Nama untuk Skema Baru"
 msgid "Use default color from the KDE color scheme"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:58
+#: schema/kateschemaconfig.cpp:56
 #, fuzzy
 #| msgid "Font & Color Schemas"
 msgid "Use KDE Color Scheme"
 msgstr "Fon & Skema Warna"
 
-#: schema/kateschemaconfig.cpp:85
+#: schema/kateschemaconfig.cpp:83
 #, fuzzy
 #| msgid "Unset Background Color"
 msgid "Editor Background Colors"
 msgstr "Nyahset Warna Latar Belakang"
 
-#: schema/kateschemaconfig.cpp:87
+#: schema/kateschemaconfig.cpp:85
 #, fuzzy
 msgid "Text Area"
 msgstr "Latar belakang Kawasan Teks "
 
-#: schema/kateschemaconfig.cpp:93
+#: schema/kateschemaconfig.cpp:91
 #, fuzzy
 #| msgid "Selected text:"
 msgid "Selected Text"
 msgstr "Teks dipilih:"
 
-#: schema/kateschemaconfig.cpp:95
+#: schema/kateschemaconfig.cpp:93
 #, fuzzy
 #| msgid ""
 #| "<p>Sets the background color of the selection.</p><p>To set the text "
@@ -2516,61 +2540,61 @@ msgstr ""
 "<p>Mengeset warna latar belakang pilihan.</p><p>Untuk mengeset warna teks "
 "untuk teks yang dipilih, guna dialog\"<b>Konfigur Penonjolan</b>\".</p>"
 
-#: schema/kateschemaconfig.cpp:99
+#: schema/kateschemaconfig.cpp:97
 #, fuzzy
 #| msgid "Current line:"
 msgid "Current Line"
 msgstr "Baris semasa:"
 
-#: schema/kateschemaconfig.cpp:105
+#: schema/kateschemaconfig.cpp:103
 #, fuzzy
 #| msgid "&Highlighting"
 msgid "Search Highlight"
 msgstr "&Penonjolan"
 
-#: schema/kateschemaconfig.cpp:107
+#: schema/kateschemaconfig.cpp:105
 #, fuzzy
 #| msgid "<p>Sets the background color of the editing area.</p>"
 msgid "<p>Sets the background color of search results.</p>"
 msgstr "<p>Tetapkan warna latarbelakang untuk kawasan suntingan.</p>"
 
-#: schema/kateschemaconfig.cpp:111
+#: schema/kateschemaconfig.cpp:109
 #, fuzzy
 #| msgid "&Highlighting"
 msgid "Replace Highlight"
 msgstr "&Penonjolan"
 
-#: schema/kateschemaconfig.cpp:113
+#: schema/kateschemaconfig.cpp:111
 #, fuzzy
 #| msgid "<p>Sets the background color of the editing area.</p>"
 msgid "<p>Sets the background color of replaced text.</p>"
 msgstr "<p>Tetapkan warna latarbelakang untuk kawasan suntingan.</p>"
 
-#: schema/kateschemaconfig.cpp:121
+#: schema/kateschemaconfig.cpp:119
 #, fuzzy
 #| msgid "Show &Icon Border"
 msgid "Icon Border"
 msgstr "Papar Sempadan &Ikon"
 
-#: schema/kateschemaconfig.cpp:123
+#: schema/kateschemaconfig.cpp:121
 #, fuzzy
 #| msgid "Background"
 msgid "Background Area"
 msgstr "Latar Belakang"
 
-#: schema/kateschemaconfig.cpp:125
+#: schema/kateschemaconfig.cpp:123
 #, fuzzy
 #| msgid "<p>Sets the background color of the editing area.</p>"
 msgid "<p>Sets the background color of the icon border.</p>"
 msgstr "<p>Tetapkan warna latarbelakang untuk kawasan suntingan.</p>"
 
-#: schema/kateschemaconfig.cpp:129
+#: schema/kateschemaconfig.cpp:127
 #, fuzzy
 #| msgid "Line numbers:"
 msgid "Line Numbers"
 msgstr "Nombor baris:"
 
-#: schema/kateschemaconfig.cpp:131
+#: schema/kateschemaconfig.cpp:129
 #, fuzzy
 #| msgid ""
 #| "<p>This color will be used to draw the line numbers (if enabled) and the "
@@ -2580,11 +2604,11 @@ msgstr ""
 "<p>Warna ini akan digunakan untuk melukis nombor baris (jika diaktifkan) dan "
 "baris dalam anak tetingkap lipatan kod.</p>"
 
-#: schema/kateschemaconfig.cpp:135
+#: schema/kateschemaconfig.cpp:133
 msgid "Separator"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:137
+#: schema/kateschemaconfig.cpp:135
 #, fuzzy
 #| msgid ""
 #| "<p>This color will be used to draw the line numbers (if enabled) and the "
@@ -2596,94 +2620,94 @@ msgstr ""
 "<p>Warna ini akan digunakan untuk melukis nombor baris (jika diaktifkan) dan "
 "baris dalam anak tetingkap lipatan kod.</p>"
 
-#: schema/kateschemaconfig.cpp:141
+#: schema/kateschemaconfig.cpp:139
 #, fuzzy
 #| msgid "Word wrap markers:"
 msgid "Word Wrap Marker"
 msgstr "Penanda bungkus perkataan:"
 
-#: schema/kateschemaconfig.cpp:148
+#: schema/kateschemaconfig.cpp:146
 #, fuzzy
 #| msgid "&Code Folding"
 msgid "Code Folding"
 msgstr "Lipatan &Kod"
 
-#: schema/kateschemaconfig.cpp:150
+#: schema/kateschemaconfig.cpp:148
 #, fuzzy
 #| msgid "<p>Sets the background color of the editing area.</p>"
 msgid "<p>Sets the color of the code folding bar.</p>"
 msgstr "<p>Tetapkan warna latarbelakang untuk kawasan suntingan.</p>"
 
-#: schema/kateschemaconfig.cpp:155
+#: schema/kateschemaconfig.cpp:153
 #, fuzzy
 #| msgid "Scroll Line Up"
 msgid "Modified Lines"
 msgstr "Skrol Baris Atas"
 
-#: schema/kateschemaconfig.cpp:157
+#: schema/kateschemaconfig.cpp:155
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid ""
 "<p>Sets the color of the line modification marker for modified lines.</p>"
 msgstr "<p>Tetapkan warna penanda tabulator:</p>"
 
-#: schema/kateschemaconfig.cpp:161
+#: schema/kateschemaconfig.cpp:159
 #, fuzzy
 #| msgid "Save File"
 msgid "Saved Lines"
 msgstr "Simpan Fail"
 
-#: schema/kateschemaconfig.cpp:163
+#: schema/kateschemaconfig.cpp:161
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid "<p>Sets the color of the line modification marker for saved lines.</p>"
 msgstr "<p>Tetapkan warna penanda tabulator:</p>"
 
-#: schema/kateschemaconfig.cpp:171
+#: schema/kateschemaconfig.cpp:169
 #, fuzzy
 #| msgid "Selection Mode"
 msgid "Text Decorations"
 msgstr "Mod Pilihan"
 
-#: schema/kateschemaconfig.cpp:173
+#: schema/kateschemaconfig.cpp:171
 msgid "Spelling Mistake Line"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:179
+#: schema/kateschemaconfig.cpp:177
 #, fuzzy
 #| msgid "Tab markers:"
 msgid "Tab and Space Markers"
 msgstr "Penanda tab :"
 
-#: schema/kateschemaconfig.cpp:185
+#: schema/kateschemaconfig.cpp:183
 #, fuzzy
 #| msgid "Indentation"
 msgid "Indentation Line"
 msgstr "Indentasi"
 
-#: schema/kateschemaconfig.cpp:187
+#: schema/kateschemaconfig.cpp:185
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid "<p>Sets the color of the vertical indentation lines.</p>"
 msgstr "<p>Tetapkan warna penanda tabulator:</p>"
 
-#: schema/kateschemaconfig.cpp:191
+#: schema/kateschemaconfig.cpp:189
 #, fuzzy
 #| msgid "Bracket highlight:"
 msgid "Bracket Highlight"
 msgstr "Tonjolkan kurungan:"
 
-#: schema/kateschemaconfig.cpp:202
+#: schema/kateschemaconfig.cpp:200
 #, fuzzy
 #| msgid "Colors"
 msgid "Marker Colors"
 msgstr "Warna"
 
-#: schema/kateschemaconfig.cpp:204 view/kateviewhelpers.cpp:1280
+#: schema/kateschemaconfig.cpp:202 view/kateviewhelpers.cpp:1288
 msgid "Bookmark"
 msgstr "Tanda Buku"
 
-#: schema/kateschemaconfig.cpp:206
+#: schema/kateschemaconfig.cpp:204
 #, fuzzy
 #| msgid ""
 #| "<p>Sets the background color of the selected marker type.</p><p><b>Note</"
@@ -2695,55 +2719,55 @@ msgstr ""
 "<p>Mengeset warna latar belakang jenis penanda yang dipilih.</p><p><b>Ambil "
 "perhatian</b>: Warna penanda dipaparkan pudar disebabkan oleh lut sinar.</p>"
 
-#: schema/kateschemaconfig.cpp:210
+#: schema/kateschemaconfig.cpp:208
 msgid "Active Breakpoint"
 msgstr "Titik Putus Aktif"
 
-#: schema/kateschemaconfig.cpp:215
+#: schema/kateschemaconfig.cpp:213
 msgid "Reached Breakpoint"
 msgstr "Sampai ke Titik Putus"
 
-#: schema/kateschemaconfig.cpp:220
+#: schema/kateschemaconfig.cpp:218
 msgid "Disabled Breakpoint"
 msgstr "Nyahaktifkan Titik Putus"
 
-#: schema/kateschemaconfig.cpp:225
+#: schema/kateschemaconfig.cpp:223
 msgid "Execution"
 msgstr "Pelaksanaan"
 
-#: schema/kateschemaconfig.cpp:230
+#: schema/kateschemaconfig.cpp:228
 #, fuzzy
 msgid "Warning"
 msgstr "Rentetan"
 
-#: schema/kateschemaconfig.cpp:235
+#: schema/kateschemaconfig.cpp:233
 #, fuzzy
 msgid "Error"
 msgstr "Ralat:"
 
-#: schema/kateschemaconfig.cpp:244
+#: schema/kateschemaconfig.cpp:242
 msgid "Text Templates & Snippets"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:248
+#: schema/kateschemaconfig.cpp:246
 #, fuzzy
 #| msgid "Background"
 msgid "Background"
 msgstr "Latar Belakang"
 
-#: schema/kateschemaconfig.cpp:253
+#: schema/kateschemaconfig.cpp:251
 msgid "Editable Placeholder"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:258
+#: schema/kateschemaconfig.cpp:256
 msgid "Focused Editable Placeholder"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:263
+#: schema/kateschemaconfig.cpp:261
 msgid "Not Editable Placeholder"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:516
+#: schema/kateschemaconfig.cpp:492
 #, fuzzy
 #| msgid ""
 #| "This list displays the default styles for the current schema and offers "
@@ -2764,22 +2788,22 @@ msgstr ""
 "<p>Anda boleh nyahset warna Latar Belakang dan warna Latar Belakang Dipilih "
 "dari menu popup apabila sesuai."
 
-#: schema/kateschemaconfig.cpp:645
+#: schema/kateschemaconfig.cpp:597
 msgid "H&ighlight:"
 msgstr "&Tonjol:"
 
-#: schema/kateschemaconfig.cpp:652 schema/kateschemaconfig.cpp:979
+#: schema/kateschemaconfig.cpp:604 schema/kateschemaconfig.cpp:908
 #, fuzzy
 msgid "Export..."
 msgstr "Format sebagai Swap?"
 
-#: schema/kateschemaconfig.cpp:653 schema/kateschemaconfig.cpp:981
+#: schema/kateschemaconfig.cpp:605 schema/kateschemaconfig.cpp:910
 #, fuzzy
 #| msgid "Normal &Color..."
 msgid "Import..."
 msgstr "&Warna Normal..."
 
-#: schema/kateschemaconfig.cpp:688
+#: schema/kateschemaconfig.cpp:640
 #, fuzzy
 #| msgid ""
 #| "This list displays the contexts of the current syntax highlight mode and "
@@ -2806,133 +2830,133 @@ msgstr ""
 "boleh nyahset warna Latar Belakang dan warna Latar Belakang Dipilih dari "
 "menu konteks apabila sesuai."
 
-#: schema/kateschemaconfig.cpp:732
+#: schema/kateschemaconfig.cpp:661
 #, fuzzy
 #| msgid "Highlighting for Scheme"
 msgid "Loading all highlightings for schema"
 msgstr "Penanda untuk Scheme"
 
-#: schema/kateschemaconfig.cpp:856 schema/kateschemaconfig.cpp:921
-#: schema/kateschemaconfig.cpp:1034 schema/kateschemaconfig.cpp:1137
+#: schema/kateschemaconfig.cpp:785 schema/kateschemaconfig.cpp:850
+#: schema/kateschemaconfig.cpp:958 schema/kateschemaconfig.cpp:1061
 #, fuzzy
 #| msgid "Font & Color Schemas"
 msgid "Kate color schema"
 msgstr "Fon & Skema Warna"
 
-#: schema/kateschemaconfig.cpp:858
+#: schema/kateschemaconfig.cpp:787
 msgid "Importing colors for single highlighting"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:869
+#: schema/kateschemaconfig.cpp:798
 msgid "File is not a single highlighting color file"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:870 schema/kateschemaconfig.cpp:1147
+#: schema/kateschemaconfig.cpp:799 schema/kateschemaconfig.cpp:1071
 #, fuzzy
 #| msgid "File Format"
 msgid "Fileformat error"
 msgstr "Format Fail"
 
-#: schema/kateschemaconfig.cpp:880
+#: schema/kateschemaconfig.cpp:809
 #, kde-format
 msgid "The selected file contains colors for a non existing highlighting:%1"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:881
+#: schema/kateschemaconfig.cpp:810
 msgid "Import failure"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:904
+#: schema/kateschemaconfig.cpp:833
 #, kde-format
 msgid "Colors have been imported for highlighting: %1"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:905
+#: schema/kateschemaconfig.cpp:834
 msgid "Import has finished"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:923
+#: schema/kateschemaconfig.cpp:852
 #, kde-format
 msgid "Exporting colors for single highlighting: %1"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:966 utils/kateprinter.cpp:1122
+#: schema/kateschemaconfig.cpp:895 utils/kateprinter.cpp:1117
 msgid "&Schema:"
 msgstr "&Skema"
 
-#: schema/kateschemaconfig.cpp:973
+#: schema/kateschemaconfig.cpp:902
 msgid "&New..."
 msgstr "&Baru..."
 
-#: schema/kateschemaconfig.cpp:990
+#: schema/kateschemaconfig.cpp:919
 msgid "Colors"
 msgstr "Warna"
 
-#: schema/kateschemaconfig.cpp:994
+#: schema/kateschemaconfig.cpp:923
 msgid "Font"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:998
+#: schema/kateschemaconfig.cpp:927
 #, fuzzy
 #| msgid "Normal Text Styles"
 msgid "Default Text Styles"
 msgstr "Gaya Teks Normal"
 
-#: schema/kateschemaconfig.cpp:1002
+#: schema/kateschemaconfig.cpp:931
 msgid "Highlighting Text Styles"
 msgstr "Menonjolkan Gaya Teks"
 
-#: schema/kateschemaconfig.cpp:1008
+#: schema/kateschemaconfig.cpp:937
 #, kde-format
 msgid "&Default schema for %1:"
 msgstr "Skema &piawai untuk %1:"
 
-#: schema/kateschemaconfig.cpp:1036
+#: schema/kateschemaconfig.cpp:960
 #, fuzzy, kde-format
 #| msgid "Font & Color Schemas"
 msgid "Exporting color schema: %1"
 msgstr "Fon & Skema Warna"
 
-#: schema/kateschemaconfig.cpp:1065
+#: schema/kateschemaconfig.cpp:989
 msgid "Exporting schema"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:1138
+#: schema/kateschemaconfig.cpp:1062
 #, fuzzy
 #| msgid "Font & Color Schemas"
 msgid "Importing Color Schema"
 msgstr "Fon & Skema Warna"
 
-#: schema/kateschemaconfig.cpp:1146
+#: schema/kateschemaconfig.cpp:1070
 msgid "The file does not contain a full color schema."
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:1153
+#: schema/kateschemaconfig.cpp:1077
 #, fuzzy
 msgid "Name unspecified"
 msgstr "Backspace"
 
-#: schema/kateschemaconfig.cpp:1219
+#: schema/kateschemaconfig.cpp:1129
 msgid "Importing schema"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:1413
+#: schema/kateschemaconfig.cpp:1268
 msgid "Name for New Schema"
 msgstr "Nama untuk Skema Baru"
 
-#: schema/kateschemaconfig.cpp:1413
+#: schema/kateschemaconfig.cpp:1268
 msgid "Name:"
 msgstr "Nama:"
 
-#: schema/kateschemaconfig.cpp:1413 schema/kateschemaconfig.cpp:1420
+#: schema/kateschemaconfig.cpp:1268 schema/kateschemaconfig.cpp:1274
 msgid "New Schema"
 msgstr "Skema Baru"
 
-#: schema/kateschemaconfig.cpp:1420
+#: schema/kateschemaconfig.cpp:1274
 #, kde-format
 msgid ""
-"<p>The schema %1 already exists, or was just deleted.</p><p>Please choose a "
-"different schema name.</p>"
+"<p>The schema %1 already exists.</p><p>Please choose a different schema name."
+"</p>"
 msgstr ""
 
 #: schema/katestyletreewidget.cpp:133
@@ -3283,7 +3307,7 @@ msgid "Bad quoting in call: %1. Please escape single quotes with a backslash."
 msgstr ""
 
 #: script/katecommandlinescript.cpp:126 script/katescriptmanager.cpp:340
-#: utils/katecmds.cpp:231 utils/katecmds.cpp:548
+#: utils/katecmds.cpp:231 utils/katecmds.cpp:549
 msgid "Could not access view"
 msgstr "Tidak dapat akses paparan"
 
@@ -5646,11 +5670,11 @@ msgctxt "Syntax highlighting"
 msgid "None"
 msgstr "Tiada"
 
-#: syntax/katehighlight.cpp:740
+#: syntax/katehighlight.cpp:739
 msgid "Normal Text"
 msgstr "Teks Normal"
 
-#: syntax/katehighlight.cpp:892
+#: syntax/katehighlight.cpp:891
 #, fuzzy, kde-format
 #| msgid ""
 #| "<B>%1</B>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
@@ -5662,21 +5686,21 @@ msgstr ""
 "<B>%1</B>: Sintaks bantahan. Atribut (%2) tidak ditangani oleh nama "
 "simbolik<BR>"
 
-#: syntax/katehighlight.cpp:1395
+#: syntax/katehighlight.cpp:1414
 #, fuzzy, kde-format
 #| msgid "<B>%1</B>: Deprecated syntax. Context %2 has no symbolic name<BR>"
 msgid "<b>%1</b>: Deprecated syntax. Context %2 has no symbolic name<br />"
 msgstr ""
 "<B>%1</B>: Sintaks bantahan. Konteks %2 tidak mempunyai nama simbolik<BR>"
 
-#: syntax/katehighlight.cpp:1481
+#: syntax/katehighlight.cpp:1500
 #, kde-format
 msgid ""
 "<B>%1</B>:Deprecated syntax. Context %2 not addressed by a symbolic name"
 msgstr ""
 "<B>%1</B>:Sintaks bantahan. Konteks %2 tidak ditandakan dengan nama simbolik"
 
-#: syntax/katehighlight.cpp:1626
+#: syntax/katehighlight.cpp:1645
 msgid ""
 "There were warning(s) and/or error(s) while parsing the syntax highlighting "
 "configuration."
@@ -5684,11 +5708,11 @@ msgstr ""
 "Terdapat amaran dan/atau ralat semasa mengkaji hurai konfigurasi penonjolan "
 "sintaks."
 
-#: syntax/katehighlight.cpp:1628
+#: syntax/katehighlight.cpp:1647
 msgid "Kate Syntax Highlighting Parser"
 msgstr "Pengkaji Hurai Penonjolan Sintaks Kate"
 
-#: syntax/katehighlight.cpp:1790
+#: syntax/katehighlight.cpp:1809
 msgid ""
 "Since there has been an error parsing the highlighting description, this "
 "highlighting will be disabled"
@@ -5696,7 +5720,7 @@ msgstr ""
 "Oleh sebab terdapat ralat semasa mengkaji hurai huraian penonjolan, "
 "penonjolan ini akan dinyahaktifkan"
 
-#: syntax/katehighlight.cpp:2016
+#: syntax/katehighlight.cpp:2035
 #, fuzzy, kde-format
 #| msgid ""
 #| "<B>%1</B>: Specified multiline comment region (%2) could not be "
@@ -6034,81 +6058,81 @@ msgstr ""
 msgid "<p>Open the Print dialog to print the current document.</p>"
 msgstr "Cetak dokumen semasa"
 
-#: utils/katecmds.cpp:329 utils/katecmds.cpp:362
+#: utils/katecmds.cpp:329 utils/katecmds.cpp:363
 #, kde-format
 msgid "Missing argument. Usage: %1 <value>"
 msgstr "Argumen hilang. Penggunan: %1 <value>"
 
-#: utils/katecmds.cpp:344
+#: utils/katecmds.cpp:345
 #, fuzzy, kde-format
 #| msgid "No such highlight '%1'"
 msgid "No such highlighting '%1'"
 msgstr "Tiada penonjolan '%1'"
 
-#: utils/katecmds.cpp:351
+#: utils/katecmds.cpp:352
 #, fuzzy, kde-format
 #| msgid "No such command: \"%1\""
 msgid "No such mode '%1'"
 msgstr "Tiada arahan: \"%1\""
 
-#: utils/katecmds.cpp:366
+#: utils/katecmds.cpp:367
 #, kde-format
 msgid "Failed to convert argument '%1' to integer."
 msgstr "Gagal menukar argumen '%1' kepada integer."
 
-#: utils/katecmds.cpp:372 utils/katecmds.cpp:378
+#: utils/katecmds.cpp:373 utils/katecmds.cpp:379
 msgid "Width must be at least 1."
 msgstr "Lebar mestilah sekurang-kurangnya 1."
 
-#: utils/katecmds.cpp:384
+#: utils/katecmds.cpp:385
 msgid "Column must be at least 1."
 msgstr "Lajur mestilah sekurang-kurangnya 1."
 
-#: utils/katecmds.cpp:421
+#: utils/katecmds.cpp:422
 #, kde-format
 msgid "Usage: %1 on|off|1|0|true|false"
 msgstr "Penggunaan: %1 on|off|1|0|true|false"
 
-#: utils/katecmds.cpp:446
+#: utils/katecmds.cpp:447
 #, kde-format
 msgid "Bad argument '%1'. Usage: %2 on|off|1|0|true|false"
 msgstr "Argumen buruk '%1'. Penggunaan: %2 on|off|1|0|true|false"
 
-#: utils/katecmds.cpp:452
+#: utils/katecmds.cpp:453
 msgid ""
 "Usage: set-remove-trailing-spaces 0|-|none or 1|+|mod|modified or 2|*|all"
 msgstr ""
 
-#: utils/katecmds.cpp:465 utils/katecmds.cpp:655
+#: utils/katecmds.cpp:466 utils/katecmds.cpp:656
 #, kde-format
 msgid "Unknown command '%1'"
 msgstr "Arahan tak diketahui '%1'"
 
-#: utils/katecmds.cpp:562
+#: utils/katecmds.cpp:563
 #, kde-format
 msgid "No mapping found for \"%1\""
 msgstr ""
 
-#: utils/katecmds.cpp:565
+#: utils/katecmds.cpp:566
 #, kde-format
 msgid "\"%1\" is mapped to \"%2\""
 msgstr ""
 
-#: utils/katecmds.cpp:570
+#: utils/katecmds.cpp:571
 #, fuzzy, kde-format
 #| msgid "Missing argument. Usage: %1 <value>"
 msgid "Missing argument(s). Usage: %1 <from> [<to>]"
 msgstr "Argumen hilang. Penggunan: %1 <value>"
 
-#: utils/katecmds.cpp:632 utils/katecmds.cpp:648
+#: utils/katecmds.cpp:633 utils/katecmds.cpp:649
 msgid "Wrong arguments"
 msgstr ""
 
-#: utils/katecmds.cpp:741
+#: utils/katecmds.cpp:742
 msgid "Document written to disk"
 msgstr ""
 
-#: utils/katecmds.cpp:752
+#: utils/katecmds.cpp:753
 msgid ""
 "<p><b>w/wa &mdash; write document(s) to disk</b></p><p>Usage: <tt><b>w[a]</"
 "b></tt></p><p>Writes the current document(s) to disk. It can be called in "
@@ -6117,18 +6141,18 @@ msgid ""
 "associated with the document, a file dialog will be shown.</p>"
 msgstr ""
 
-#: utils/katecmds.cpp:975
+#: utils/katecmds.cpp:976
 msgid "Sorry, but Kate is not able to replace newlines, yet"
 msgstr ""
 
-#: utils/katecmds.cpp:1013
+#: utils/katecmds.cpp:1014
 #, fuzzy, kde-format
 msgctxt "%2 is the translation of the next message"
 msgid "1 replacement done on %2"
 msgid_plural "%1 replacements done on %2"
 msgstr[0] "nilai penggantian hilang"
 
-#: utils/katecmds.cpp:1015
+#: utils/katecmds.cpp:1016
 #, fuzzy, kde-format
 msgctxt "substituted into the previous message"
 msgid "1 line"
@@ -6136,7 +6160,7 @@ msgid_plural "%1 lines"
 msgstr[0] "&Garis Bawah"
 msgstr[1] "&Garis Bawah"
 
-#: utils/katecmds.cpp:1030
+#: utils/katecmds.cpp:1031
 msgid ""
 "<p> char <b>identifier</b> </p><p>This command allows you to insert literal "
 "characters by their numerical identifier, in decimal, octal or hexadecimal "
@@ -6144,7 +6168,7 @@ msgid ""
 "li></ul></p>"
 msgstr ""
 
-#: utils/katecmds.cpp:1091
+#: utils/katecmds.cpp:1092
 msgid ""
 "<p>date or date <b>format</b></p><p>Inserts a date/time string as defined by "
 "the specified format, or the format yyyy-MM-dd hh:mm:ss if none is specified."
@@ -6523,45 +6547,45 @@ msgstr "Membuka Fail & Simpan"
 msgid "Extensions Manager"
 msgstr "Pengurus Plug masuk"
 
-#: utils/kateprinter.cpp:246
+#: utils/kateprinter.cpp:244
 msgid "(Selection of) "
 msgstr "(Pemilihan bagi)"
 
-#: utils/kateprinter.cpp:528
+#: utils/kateprinter.cpp:523
 #, kde-format
 msgid "Typographical Conventions for %1"
 msgstr "Konvensyen Tipografi untuk %1"
 
-#: utils/kateprinter.cpp:558
+#: utils/kateprinter.cpp:553
 #, fuzzy
 #| msgid "Context"
 msgid "text"
 msgstr "Konteks"
 
-#: utils/kateprinter.cpp:682
+#: utils/kateprinter.cpp:677
 msgid "Te&xt Settings"
 msgstr "Seting &Teks"
 
-#: utils/kateprinter.cpp:686
+#: utils/kateprinter.cpp:681
 #, fuzzy
 #| msgid "Print &line numbers"
 msgid "Print line &numbers"
 msgstr "Cetak bilangan &baris"
 
-#: utils/kateprinter.cpp:689
+#: utils/kateprinter.cpp:684
 #, fuzzy
 #| msgid "Print &line numbers"
 msgid "Print &legend"
 msgstr "Cetak bilangan &baris"
 
-#: utils/kateprinter.cpp:698
+#: utils/kateprinter.cpp:693
 msgid ""
 "<p>If enabled, line numbers will be printed on the left side of the page(s)."
 "</p>"
 msgstr ""
 "<p>Jika diaktifkan, bilangan baris akan dicetak di sebelah kanan halaman.</p>"
 
-#: utils/kateprinter.cpp:700
+#: utils/kateprinter.cpp:695
 #, fuzzy
 #| msgid ""
 #| "<p>Print a box displaying typographical conventions for the document "
@@ -6573,63 +6597,63 @@ msgstr ""
 "<p>Cetak kotak teks yang memaparkan konvensyen tipografi untuk jenis "
 "dokumen, seperti yang ditakrif oleh penonjolan sintaks yang digunakan."
 
-#: utils/kateprinter.cpp:752
+#: utils/kateprinter.cpp:747
 msgid "Hea&der && Footer"
 msgstr "&Pengepala && Pengaki"
 
-#: utils/kateprinter.cpp:759
+#: utils/kateprinter.cpp:754
 msgid "Pr&int header"
 msgstr "&Cetak pengepala"
 
-#: utils/kateprinter.cpp:761
+#: utils/kateprinter.cpp:756
 msgid "Pri&nt footer"
 msgstr "&Cetak pengaki"
 
-#: utils/kateprinter.cpp:767
+#: utils/kateprinter.cpp:762
 msgid "Header/footer font:"
 msgstr "Fon pengepala/pengaki:"
 
-#: utils/kateprinter.cpp:772
+#: utils/kateprinter.cpp:767
 msgid "Choo&se Font..."
 msgstr "&Pilih Fon..."
 
-#: utils/kateprinter.cpp:778
+#: utils/kateprinter.cpp:773
 msgid "Header Properties"
 msgstr "Ciri Pengepala"
 
-#: utils/kateprinter.cpp:782
+#: utils/kateprinter.cpp:777
 msgid "&Format:"
 msgstr "&Format:"
 
-#: utils/kateprinter.cpp:800 utils/kateprinter.cpp:837
+#: utils/kateprinter.cpp:795 utils/kateprinter.cpp:832
 msgid "Colors:"
 msgstr "Warna:"
 
-#: utils/kateprinter.cpp:806 utils/kateprinter.cpp:843
+#: utils/kateprinter.cpp:801 utils/kateprinter.cpp:838
 msgid "Foreground:"
 msgstr "Latar Belakang:"
 
-#: utils/kateprinter.cpp:809
+#: utils/kateprinter.cpp:804
 msgid "Bac&kground"
 msgstr "&Latar Belakang"
 
-#: utils/kateprinter.cpp:813
+#: utils/kateprinter.cpp:808
 msgid "Footer Properties"
 msgstr "Ciri Pengaki"
 
-#: utils/kateprinter.cpp:818
+#: utils/kateprinter.cpp:813
 msgid "For&mat:"
 msgstr "&Format:"
 
-#: utils/kateprinter.cpp:846
+#: utils/kateprinter.cpp:841
 msgid "&Background"
 msgstr "&Latar Belakang"
 
-#: utils/kateprinter.cpp:873
+#: utils/kateprinter.cpp:868
 msgid "<p>Format of the page header. The following tags are supported:</p>"
 msgstr "<p> Format pengepala halaman. Tag yang berikut disokong:</p>"
 
-#: utils/kateprinter.cpp:875
+#: utils/kateprinter.cpp:870
 #, fuzzy
 #| msgid ""
 #| "<ul><li><tt>%u</tt>: current user name</li><li><tt>%d</tt>: complete date/"
@@ -6655,93 +6679,93 @@ msgstr ""
 "penuh bagi dokumen</li><li><tt>%p</tt>: nombor halaman</li></"
 "ul><br><u>Perhatian:</u> Jangan <b></b> guna aksara '|' (bar menegak)."
 
-#: utils/kateprinter.cpp:889
+#: utils/kateprinter.cpp:884
 msgid "<p>Format of the page footer. The following tags are supported:</p>"
 msgstr "<p>Format pengaki Tag yang berikut disokong:</p>"
 
-#: utils/kateprinter.cpp:987
+#: utils/kateprinter.cpp:982
 msgid "Add Placeholder..."
 msgstr ""
 
-#: utils/kateprinter.cpp:989
+#: utils/kateprinter.cpp:984
 #, fuzzy
 #| msgid "Current line:"
 msgid "Current User Name"
 msgstr "Baris semasa:"
 
-#: utils/kateprinter.cpp:991
+#: utils/kateprinter.cpp:986
 msgid "Complete Date/Time (short format)"
 msgstr ""
 
-#: utils/kateprinter.cpp:993
+#: utils/kateprinter.cpp:988
 msgid "Complete Date/Time (long format)"
 msgstr ""
 
-#: utils/kateprinter.cpp:995
+#: utils/kateprinter.cpp:990
 #, fuzzy
 #| msgid "Current line:"
 msgid "Current Time"
 msgstr "Baris semasa:"
 
-#: utils/kateprinter.cpp:997
+#: utils/kateprinter.cpp:992
 msgid "Current Date (short format)"
 msgstr ""
 
-#: utils/kateprinter.cpp:999
+#: utils/kateprinter.cpp:994
 msgid "Current Date (long format)"
 msgstr ""
 
-#: utils/kateprinter.cpp:1001
+#: utils/kateprinter.cpp:996
 #, fuzzy
 #| msgid "Name"
 msgid "File Name"
 msgstr "Nama"
 
-#: utils/kateprinter.cpp:1003
+#: utils/kateprinter.cpp:998
 msgid "Full document URL"
 msgstr ""
 
-#: utils/kateprinter.cpp:1005
+#: utils/kateprinter.cpp:1000
 msgid "Page Number"
 msgstr ""
 
-#: utils/kateprinter.cpp:1007
+#: utils/kateprinter.cpp:1002
 msgid "Total Amount of Pages"
 msgstr ""
 
-#: utils/kateprinter.cpp:1116
+#: utils/kateprinter.cpp:1111
 msgid "L&ayout"
 msgstr "Bentangan"
 
-#: utils/kateprinter.cpp:1127
+#: utils/kateprinter.cpp:1122
 msgid "Draw bac&kground color"
 msgstr "Lukis warna &latar belakang"
 
-#: utils/kateprinter.cpp:1130
+#: utils/kateprinter.cpp:1125
 msgid "Draw &boxes"
 msgstr "Lukis &kotak"
 
-#: utils/kateprinter.cpp:1134
+#: utils/kateprinter.cpp:1129
 msgid "Box Properties"
 msgstr "Ciri Kotak"
 
-#: utils/kateprinter.cpp:1138
+#: utils/kateprinter.cpp:1133
 msgid "W&idth:"
 msgstr "&Lebar:"
 
-#: utils/kateprinter.cpp:1146
+#: utils/kateprinter.cpp:1141
 msgid "&Margin:"
 msgstr "&Jidar:"
 
-#: utils/kateprinter.cpp:1154
+#: utils/kateprinter.cpp:1149
 msgid "Co&lor:"
 msgstr "&Warna:"
 
-#: utils/kateprinter.cpp:1171
+#: utils/kateprinter.cpp:1170
 msgid "Select the color scheme to use for the print."
 msgstr ""
 
-#: utils/kateprinter.cpp:1173
+#: utils/kateprinter.cpp:1172
 msgid ""
 "<p>If enabled, the background color of the editor will be used.</p><p>This "
 "may be useful if your color scheme is designed for a dark background.</p>"
@@ -6750,7 +6774,7 @@ msgstr ""
 "boleh jadi berguna jika skema warna anda direka bentuk untuk latar belakang "
 "gelap.</p>"
 
-#: utils/kateprinter.cpp:1176
+#: utils/kateprinter.cpp:1175
 msgid ""
 "<p>If enabled, a box as defined in the properties below will be drawn around "
 "the contents of each page. The Header and Footer will be separated from the "
@@ -6760,15 +6784,15 @@ msgstr ""
 "dilukis di keliling kandungan setiap halaman. Pengepala dan Pengaki akan "
 "dipisahkan dari kandungan dengan garisan.</p>"
 
-#: utils/kateprinter.cpp:1180
+#: utils/kateprinter.cpp:1179
 msgid "The width of the box outline"
 msgstr "Lebar garis luar kotak"
 
-#: utils/kateprinter.cpp:1182
+#: utils/kateprinter.cpp:1181
 msgid "The margin inside boxes, in pixels"
 msgstr "Jidar di dalam kotak, dalam piksel"
 
-#: utils/kateprinter.cpp:1184
+#: utils/kateprinter.cpp:1183
 msgid "The line color to use for boxes"
 msgstr "Warna baris hendak diguna untuk kotak"
 
@@ -6969,60 +6993,60 @@ msgctxt "short translation please"
 msgid "Remove trailing spaces when saving the document."
 msgstr "Buang ruang &mengekor"
 
-#: variableeditor/variablelineedit.cpp:293
+#: variableeditor/variablelineedit.cpp:295
 #, fuzzy
 #| msgid "Font & Color Schemas"
 msgctxt "short translation please"
 msgid "Set the color scheme."
 msgstr "Fon & Skema Warna"
 
-#: variableeditor/variablelineedit.cpp:298
+#: variableeditor/variablelineedit.cpp:300
 msgctxt "short translation please"
 msgid "Set the text selection color."
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:303
+#: variableeditor/variablelineedit.cpp:305
 #, fuzzy
 #| msgid "Highlighting Rules"
 msgctxt "short translation please"
 msgid "Visualize tabs and trailing spaces."
 msgstr "Peraturan Penonjolan"
 
-#: variableeditor/variablelineedit.cpp:308
+#: variableeditor/variablelineedit.cpp:310
 #, fuzzy
 #| msgid "Word Completion Plugin"
 msgctxt "short translation please"
 msgid "Enable smart home navigation."
 msgstr "Plugin Penyelesaian Perkataan"
 
-#: variableeditor/variablelineedit.cpp:313
+#: variableeditor/variablelineedit.cpp:315
 msgctxt "short translation please"
 msgid "Pressing TAB key indents."
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:319
+#: variableeditor/variablelineedit.cpp:321
 msgctxt "short translation please"
 msgid "Set the tab display width."
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:325
+#: variableeditor/variablelineedit.cpp:327
 msgctxt "short translation please"
 msgid "Set the number of undo steps to remember (0 equals infinity)."
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:331
+#: variableeditor/variablelineedit.cpp:333
 msgctxt "short translation please"
 msgid "Set the word wrap column."
 msgstr ""
 
-#: variableeditor/variablelineedit.cpp:336
+#: variableeditor/variablelineedit.cpp:338
 #, fuzzy
 #| msgid "S&elected Background Color..."
 msgctxt "short translation please"
 msgid "Set the word wrap marker color."
 msgstr "Warna Latar Belakang Yang &Dipilih"
 
-#: variableeditor/variablelineedit.cpp:341
+#: variableeditor/variablelineedit.cpp:343
 msgctxt "short translation please"
 msgid "Enable word wrap while typing text."
 msgstr ""
@@ -7476,285 +7500,285 @@ msgstr ""
 msgid "Add &Byte Order Mark (BOM)"
 msgstr ""
 
-#: view/kateview.cpp:617
+#: view/kateview.cpp:618
 msgid ""
 "Enable/disable adding of byte order markers for UTF-8/UTF-16 encoded files "
 "while saving"
 msgstr ""
 
-#: view/kateview.cpp:620
+#: view/kateview.cpp:621
 msgid "E&ncoding"
 msgstr "&Pengekodan"
 
-#: view/kateview.cpp:624
+#: view/kateview.cpp:625
 msgid "Look up the first occurrence of a piece of text or regular expression."
 msgstr ""
 "Lihat dari keberlakuan pertama dari cebisan teks atau ungkapan nalar (regexp)"
 
-#: view/kateview.cpp:628
+#: view/kateview.cpp:629
 #, fuzzy
 #| msgid "Selected"
 msgid "Find Selected"
 msgstr "Dipilih"
 
-#: view/kateview.cpp:630
+#: view/kateview.cpp:631
 msgid "Finds next occurrence of selected text."
 msgstr ""
 
-#: view/kateview.cpp:634
+#: view/kateview.cpp:635
 #, fuzzy
 #| msgid "Selected"
 msgid "Find Selected Backwards"
 msgstr "Dipilih"
 
-#: view/kateview.cpp:636
+#: view/kateview.cpp:637
 #, fuzzy
 #| msgid "Look up the previous occurrence of the search phrase."
 msgid "Finds previous occurrence of selected text."
 msgstr "Cari kemunculan sebelumnya bagi frasa cari tersebut"
 
-#: view/kateview.cpp:640
+#: view/kateview.cpp:641
 msgid "Look up the next occurrence of the search phrase."
 msgstr "Cari kemunculan berikutnya bagi frasa cari."
 
-#: view/kateview.cpp:644
+#: view/kateview.cpp:645
 msgid "Look up the previous occurrence of the search phrase."
 msgstr "Cari kemunculan sebelumnya bagi frasa cari tersebut"
 
-#: view/kateview.cpp:648
+#: view/kateview.cpp:649
 msgid ""
 "Look up a piece of text or regular expression and replace the result with "
 "some given text."
 msgstr ""
 "Cari sebuah teks atau ungkapan biasa dan gantikan hasilnya dengan teks lain."
 
-#: view/kateview.cpp:651
+#: view/kateview.cpp:652
 #, fuzzy
 msgid "Automatic Spell Checking"
 msgstr "`%s' hilang pada penghujung baris"
 
-#: view/kateview.cpp:652
+#: view/kateview.cpp:653
 msgid "Enable/disable automatic spell checking"
 msgstr ""
 
-#: view/kateview.cpp:658
+#: view/kateview.cpp:659
 #, fuzzy
 msgid "Change Dictionary..."
 msgstr "&Konfigur Editor..."
 
-#: view/kateview.cpp:659
+#: view/kateview.cpp:660
 msgid "Change the dictionary that is used for spell checking."
 msgstr ""
 
-#: view/kateview.cpp:663
+#: view/kateview.cpp:664
 msgid "Clear Dictionary Ranges"
 msgstr ""
 
-#: view/kateview.cpp:665
+#: view/kateview.cpp:666
 msgid ""
 "Remove all the separate dictionary ranges that were set for spell checking."
 msgstr ""
 
-#: view/kateview.cpp:716
+#: view/kateview.cpp:717
 msgid "Move Word Left"
 msgstr "Alih Perkataan ke Kanan"
 
-#: view/kateview.cpp:723
+#: view/kateview.cpp:724
 #, fuzzy
 #| msgid "Move Word Left"
 msgid "Programmer's Move Word Left"
 msgstr "Alih Perkataan ke Kanan"
 
-#: view/kateview.cpp:729
+#: view/kateview.cpp:730
 msgid "Select Character Left"
 msgstr "Pilih Aksara di Kiri"
 
-#: view/kateview.cpp:735
+#: view/kateview.cpp:736
 msgid "Select Word Left"
 msgstr "Pilih Perkataan di Kiri"
 
-#: view/kateview.cpp:741
+#: view/kateview.cpp:742
 #, fuzzy
 #| msgid "Select Word Left"
 msgid "Programmer's Select Word Left"
 msgstr "Pilih Perkataan di Kiri"
 
-#: view/kateview.cpp:747
+#: view/kateview.cpp:748
 msgid "Move Word Right"
 msgstr "Alihkan Perkataan ke Kanan"
 
-#: view/kateview.cpp:753
+#: view/kateview.cpp:754
 #, fuzzy
 #| msgid "Move Word Right"
 msgid "Programmer's Move Word Right"
 msgstr "Alihkan Perkataan ke Kanan"
 
-#: view/kateview.cpp:759
+#: view/kateview.cpp:760
 msgid "Select Character Right"
 msgstr "Pilih Aksara di Kanan"
 
-#: view/kateview.cpp:765
+#: view/kateview.cpp:766
 msgid "Select Word Right"
 msgstr "Pilih Perkataan di Kanan"
 
-#: view/kateview.cpp:771
+#: view/kateview.cpp:772
 #, fuzzy
 #| msgid "Select Word Right"
 msgid "Programmer's Select Word Right"
 msgstr "Pilih Perkataan di Kanan"
 
-#: view/kateview.cpp:777
+#: view/kateview.cpp:778
 msgid "Move to Beginning of Line"
 msgstr "Alih ke Permulaan Baris"
 
-#: view/kateview.cpp:783
+#: view/kateview.cpp:784
 msgid "Move to Beginning of Document"
 msgstr "Alih ke Permulaan Dokumen"
 
-#: view/kateview.cpp:789
+#: view/kateview.cpp:790
 msgid "Select to Beginning of Line"
 msgstr "Pilih ke Permulaan Baris"
 
-#: view/kateview.cpp:795
+#: view/kateview.cpp:796
 msgid "Select to Beginning of Document"
 msgstr "Pilih ke Permulaan Dokumen"
 
-#: view/kateview.cpp:802
+#: view/kateview.cpp:803
 msgid "Move to End of Line"
 msgstr "Alih ke Penghujung Baris"
 
-#: view/kateview.cpp:808
+#: view/kateview.cpp:809
 msgid "Move to End of Document"
 msgstr "Alih ke Penghujung Dokumen"
 
-#: view/kateview.cpp:814
+#: view/kateview.cpp:815
 msgid "Select to End of Line"
 msgstr "Pilih ke Penghujung Baris"
 
-#: view/kateview.cpp:820
+#: view/kateview.cpp:821
 msgid "Select to End of Document"
 msgstr "Pilih ke Penghujung Dokumen"
 
-#: view/kateview.cpp:827
+#: view/kateview.cpp:828
 msgid "Select to Previous Line"
 msgstr "Pilih ke Baris Sebelumnya"
 
-#: view/kateview.cpp:833
+#: view/kateview.cpp:834
 msgid "Scroll Line Up"
 msgstr "Skrol Baris Atas"
 
-#: view/kateview.cpp:840
+#: view/kateview.cpp:841
 msgid "Move to Next Line"
 msgstr "Alihkan ke Baris Berikutnya"
 
-#: view/kateview.cpp:847
+#: view/kateview.cpp:848
 msgid "Move to Previous Line"
 msgstr "Alihkan Aksara ke Baris Sebelumnya"
 
-#: view/kateview.cpp:854
+#: view/kateview.cpp:855
 #, fuzzy
 #| msgid "Move Word Right"
 msgid "Move Cursor Right"
 msgstr "Alihkan Perkataan ke Kanan"
 
-#: view/kateview.cpp:861
+#: view/kateview.cpp:862
 #, fuzzy
 #| msgid "Move Word Left"
 msgid "Move Cursor Left"
 msgstr "Alih Perkataan ke Kanan"
 
-#: view/kateview.cpp:868
+#: view/kateview.cpp:869
 msgid "Select to Next Line"
 msgstr "Pilih Baris Berikutnya"
 
-#: view/kateview.cpp:874
+#: view/kateview.cpp:875
 msgid "Scroll Line Down"
 msgstr "Skrol Baris ke Bawah"
 
-#: view/kateview.cpp:881
+#: view/kateview.cpp:882
 msgid "Scroll Page Up"
 msgstr "Skrol Page Up"
 
-#: view/kateview.cpp:887
+#: view/kateview.cpp:888
 msgid "Select Page Up"
 msgstr "Pilih Page Up"
 
-#: view/kateview.cpp:893
+#: view/kateview.cpp:894
 msgid "Move to Top of View"
 msgstr "Alih ke Atas Paparan"
 
-#: view/kateview.cpp:899
+#: view/kateview.cpp:900
 msgid "Select to Top of View"
 msgstr "Pilih ke Atas Paparan"
 
-#: view/kateview.cpp:906
+#: view/kateview.cpp:907
 msgid "Scroll Page Down"
 msgstr "Skrol Page Down"
 
-#: view/kateview.cpp:912
+#: view/kateview.cpp:913
 msgid "Select Page Down"
 msgstr "Pilih Page Down"
 
-#: view/kateview.cpp:918
+#: view/kateview.cpp:919
 msgid "Move to Bottom of View"
 msgstr "Alih ke Bawah Paparan"
 
-#: view/kateview.cpp:924
+#: view/kateview.cpp:925
 msgid "Select to Bottom of View"
 msgstr "Pilih ke Bawah Paparan"
 
-#: view/kateview.cpp:930
+#: view/kateview.cpp:931
 msgid "Move to Matching Bracket"
 msgstr "Alih ke Kurungan Sepadan"
 
-#: view/kateview.cpp:936
+#: view/kateview.cpp:937
 msgid "Select to Matching Bracket"
 msgstr "Pilih Kurungan Sepadan"
 
-#: view/kateview.cpp:946
+#: view/kateview.cpp:947
 msgid "Transpose Characters"
 msgstr "Transposisikan Aksara"
 
-#: view/kateview.cpp:952
+#: view/kateview.cpp:953
 msgid "Delete Line"
 msgstr "Hapuskan Baris"
 
-#: view/kateview.cpp:958
+#: view/kateview.cpp:959
 msgid "Delete Word Left"
 msgstr "Hapuskan Perkataan di Kiri"
 
-#: view/kateview.cpp:964
+#: view/kateview.cpp:965
 msgid "Delete Word Right"
 msgstr "Hapuskan Perkataan di Kanan"
 
-#: view/kateview.cpp:970
+#: view/kateview.cpp:971
 msgid "Delete Next Character"
 msgstr "Hapuskan Aksara Berikutnya"
 
-#: view/kateview.cpp:976
+#: view/kateview.cpp:977
 msgid "Backspace"
 msgstr "Backspace"
 
-#: view/kateview.cpp:985
+#: view/kateview.cpp:986
 #, fuzzy
 msgid "Insert Tab"
 msgstr "Baris: %1"
 
-#: view/kateview.cpp:990
+#: view/kateview.cpp:991
 msgid "Insert Smart Newline"
 msgstr ""
 
-#: view/kateview.cpp:991
+#: view/kateview.cpp:992
 msgid ""
 "Insert newline including leading characters of the current line which are "
 "not letters or numbers."
 msgstr ""
 
-#: view/kateview.cpp:1001
+#: view/kateview.cpp:1002
 msgid "&Indent"
 msgstr "&Inden"
 
-#: view/kateview.cpp:1002
+#: view/kateview.cpp:1003
 #, fuzzy
 #| msgid ""
 #| "Use this to indent a selected block of text.<br><br>You can configure "
@@ -7769,65 +7793,65 @@ msgstr ""
 "ada tab patut diterima dan diguna atau diganti dengan ruang, dalam dialog "
 "konfigurasi."
 
-#: view/kateview.cpp:1009
+#: view/kateview.cpp:1010
 msgid "&Unindent"
 msgstr "&Nyahinden"
 
-#: view/kateview.cpp:1010
+#: view/kateview.cpp:1011
 msgid "Use this to unindent a selected block of text."
 msgstr "Guna ini untuk nyahinden blok teks yang dipilih."
 
-#: view/kateview.cpp:1026
+#: view/kateview.cpp:1027
 #, fuzzy
 #| msgid "Collapse Toplevel"
 msgid "Fold Toplevel Nodes"
 msgstr "Rosakkan Tahap Atas"
 
-#: view/kateview.cpp:1031
+#: view/kateview.cpp:1032
 #, fuzzy
 #| msgid "Expand Toplevel"
 msgid "Unfold Toplevel Nodes"
 msgstr "Kembangkan Tahap Atas"
 
-#: view/kateview.cpp:1036
+#: view/kateview.cpp:1037
 msgid "Unfold All Nodes"
 msgstr ""
 
-#: view/kateview.cpp:1040
+#: view/kateview.cpp:1041
 msgid "Fold Multiline Comments"
 msgstr ""
 
-#: view/kateview.cpp:1044
+#: view/kateview.cpp:1045
 #, fuzzy
 #| msgid "Current line:"
 msgid "Fold Current Node"
 msgstr "Baris semasa:"
 
-#: view/kateview.cpp:1048
+#: view/kateview.cpp:1049
 msgid "Unfold Current Node"
 msgstr ""
 
-#: view/kateview.cpp:1055
+#: view/kateview.cpp:1056
 #, kde-format
 msgid "Fold Nodes in Level %1"
 msgstr ""
 
-#: view/kateview.cpp:1061
+#: view/kateview.cpp:1062
 #, kde-format
 msgid "Unfold Nodes in Level %1"
 msgstr ""
 
-#: view/kateview.cpp:1102
+#: view/kateview.cpp:1103
 #, fuzzy
 msgid "R/O"
 msgstr " R/O "
 
-#: view/kateview.cpp:1110
+#: view/kateview.cpp:1111
 #, fuzzy
 msgid "OVR"
 msgstr " OVR "
 
-#: view/kateview.cpp:1110
+#: view/kateview.cpp:1111
 #, fuzzy
 #| msgid " INS "
 msgid "INS"
@@ -7861,18 +7885,18 @@ msgstr "Skrol Baris Atas"
 msgid "Move Down"
 msgstr "Skrol Baris ke Bawah"
 
-#: view/kateviewhelpers.cpp:200 view/kateviewhelpers.cpp:232
-#: view/kateviewhelpers.cpp:614
+#: view/kateviewhelpers.cpp:201 view/kateviewhelpers.cpp:233
+#: view/kateviewhelpers.cpp:622
 #, kde-format
 msgctxt "from line - to line"
 msgid "<center>%1<br>&mdash;<br/>%2</center>"
 msgstr ""
 
-#: view/kateviewhelpers.cpp:823
+#: view/kateviewhelpers.cpp:831
 msgid "Available Commands"
 msgstr "Arahan Yang Boleh Didapatkan"
 
-#: view/kateviewhelpers.cpp:825
+#: view/kateviewhelpers.cpp:833
 msgid ""
 "<p>For help on individual commands, do <code>'help &lt;command&gt;'</code></"
 "p>"
@@ -7880,17 +7904,17 @@ msgstr ""
 "<p>Untuk bantuan bagi arahan individu, buat <code>'help &lt;command&gt;'</"
 "code></p>"
 
-#: view/kateviewhelpers.cpp:836
+#: view/kateviewhelpers.cpp:844
 #, kde-format
 msgid "No help for '%1'"
 msgstr "Tiada bantuan untuk '%1'"
 
-#: view/kateviewhelpers.cpp:839
+#: view/kateviewhelpers.cpp:847
 #, kde-format
 msgid "No such command <b>%1</b>"
 msgstr "Tiada arahan <b>%1</b>"
 
-#: view/kateviewhelpers.cpp:844
+#: view/kateviewhelpers.cpp:852
 #, fuzzy
 #| msgid ""
 #| "<p>This is the Katepart <b>command line</b>.<br>Syntax: <code><b>command "
@@ -7908,35 +7932,35 @@ msgstr ""
 "masukkan <code><b>senarai bantuan</b></code><br>Untuk bantuan bagi arahan "
 "individu, masukkan <code><b>bantuan &lt;command&gt;</b></code></p>"
 
-#: view/kateviewhelpers.cpp:1015
+#: view/kateviewhelpers.cpp:1023
 #, kde-format
 msgid "Error: No range allowed for command \"%1\"."
 msgstr ""
 
-#: view/kateviewhelpers.cpp:1032
+#: view/kateviewhelpers.cpp:1040
 msgid "Success: "
 msgstr "Berjaya:"
 
-#: view/kateviewhelpers.cpp:1048
+#: view/kateviewhelpers.cpp:1056
 #, kde-format
 msgid "Command \"%1\" failed."
 msgstr "Arahan \"%1\" gagal."
 
-#: view/kateviewhelpers.cpp:1055
+#: view/kateviewhelpers.cpp:1063
 #, kde-format
 msgid "No such command: \"%1\""
 msgstr "Tiada arahan: \"%1\""
 
-#: view/kateviewhelpers.cpp:2080 view/kateviewhelpers.cpp:2081
+#: view/kateviewhelpers.cpp:2088 view/kateviewhelpers.cpp:2089
 #, kde-format
 msgid "Mark Type %1"
 msgstr "Tandakan Jenis %1"
 
-#: view/kateviewhelpers.cpp:2100
+#: view/kateviewhelpers.cpp:2108
 msgid "Set Default Mark Type"
 msgstr "Setkan Jenis Tanda Piawai"
 
-#: view/kateviewhelpers.cpp:2166
+#: view/kateviewhelpers.cpp:2174
 msgid "Disable Annotation Bar"
 msgstr ""
 
@@ -7980,6 +8004,19 @@ msgstr ""
 #| msgid "Mark Type %1"
 msgid "Mark not set: %1"
 msgstr "Tandakan Jenis %1"
+
+#, fuzzy
+#~| msgid "E&ncoding"
+#~ msgid "Broken Encoding"
+#~ msgstr "&Pengekodan"
+
+#~ msgid "The file %1 is a binary, saving it will result in a corrupt file."
+#~ msgstr ""
+#~ "Fail %1 adalah fail binari, menyimpan fail ini akan menjadikannya rosak."
+
+#, fuzzy
+#~ msgid "Trying to Save Binary File"
+#~ msgstr "Pilih lokasi untuk menyimpan fail"
 
 #, fuzzy
 #~| msgid ""
