@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmdevinfo\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-11 07:57+0100\n"
+"POT-Creation-Date: 2012-08-19 15:44+0200\n"
 "PO-Revision-Date: 2011-05-11 16:42+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -52,17 +52,18 @@ msgstr ""
 msgid "Show Relevant Devices"
 msgstr ""
 
-#: devicelisting.cpp:113 soldevicetypes.cpp:787
+#: devicelisting.cpp:113 infopanel.h:59 soldevice.cpp:69
+#: soldevicetypes.cpp:172 soldevicetypes.cpp:307 soldevicetypes.cpp:452
+#: soldevicetypes.cpp:469 soldevicetypes.cpp:672 soldevicetypes.cpp:787
+#: soldevicetypes.cpp:836 soldevicetypes.cpp:839 soldevicetypes.cpp:890
 #, fuzzy
 #| msgid "Unknown"
-msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "Tidak diketahui"
 
-#: devicelisting.cpp:163 devinfo.cpp:86
+#: devicelisting.cpp:163 devinfo.cpp:86 soldevicetypes.cpp:76
 #, fuzzy
 #| msgid "None"
-msgctxt "no device UDI"
 msgid "None"
 msgstr "Tiada"
 
@@ -118,20 +119,6 @@ msgstr "Ya"
 msgid "No"
 msgstr "Tidak"
 
-#: infopanel.h:59
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "name of something is not known"
-msgid "Unknown"
-msgstr "Tidak diketahui"
-
-#: soldevice.cpp:69
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "unknown device"
-msgid "Unknown"
-msgstr "Tidak diketahui"
-
 #: soldevice.cpp:85
 msgctxt "Default device tooltip"
 msgid "A Device"
@@ -177,13 +164,6 @@ msgstr ""
 #: soldevicetypes.cpp:75
 msgid "ATI IVEC"
 msgstr ""
-
-#: soldevicetypes.cpp:76
-#, fuzzy
-#| msgid "None"
-msgctxt "no instruction set extensions"
-msgid "None"
-msgstr "Tiada"
 
 #: soldevicetypes.cpp:78
 msgid "Processor Number: "
@@ -254,19 +234,11 @@ msgstr "SCSI"
 msgid "SATA"
 msgstr ""
 
-#: soldevicetypes.cpp:170
+#: soldevicetypes.cpp:170 soldevicetypes.cpp:832
 #, fuzzy
 #| msgid "Platform"
-msgctxt "platform storage bus"
 msgid "Platform"
 msgstr "Platform"
-
-#: soldevicetypes.cpp:172
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "unknown storage bus"
-msgid "Unknown"
-msgstr "Tidak diketahui"
 
 #: soldevicetypes.cpp:175
 msgid "Bus: "
@@ -327,13 +299,6 @@ msgstr "Raid"
 #, fuzzy
 msgid "Encrypted"
 msgstr "Disulitkan"
-
-#: soldevicetypes.cpp:307
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "unknown volume usage"
-msgid "Unknown"
-msgstr "Tidak diketahui"
 
 #: soldevicetypes.cpp:310
 msgid "File System Type: "
@@ -400,13 +365,6 @@ msgstr "Masukan"
 msgid "Output"
 msgstr "Output"
 
-#: soldevicetypes.cpp:452
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "unknown audio interface type"
-msgid "Unknown"
-msgstr "Tidak diketahui"
-
 #: soldevicetypes.cpp:459
 msgid "Internal Soundcard"
 msgstr ""
@@ -427,13 +385,6 @@ msgstr ""
 #, fuzzy
 msgid "Modem"
 msgstr "Modem"
-
-#: soldevicetypes.cpp:469
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "unknown sound card type"
-msgid "Unknown"
-msgstr "Tidak diketahui"
 
 #: soldevicetypes.cpp:472
 msgid "Audio Interface Type: "
@@ -527,13 +478,6 @@ msgstr ""
 msgid "Camera"
 msgstr "Kamera"
 
-#: soldevicetypes.cpp:672
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "unknown battery type"
-msgid "Unknown"
-msgstr "Tidak diketahui"
-
 #: soldevicetypes.cpp:679
 #, fuzzy
 msgid "Charging"
@@ -614,27 +558,6 @@ msgstr ""
 msgid "Serial Devices"
 msgstr ""
 
-#: soldevicetypes.cpp:832
-#, fuzzy
-#| msgid "Platform"
-msgctxt "platform serial interface type"
-msgid "Platform"
-msgstr "Platform"
-
-#: soldevicetypes.cpp:836
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "unknown serial interface type"
-msgid "Unknown"
-msgstr "Tidak diketahui"
-
-#: soldevicetypes.cpp:839
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "unknown port"
-msgid "Unknown"
-msgstr "Tidak diketahui"
-
 #: soldevicetypes.cpp:842
 msgid "Serial Type: "
 msgstr ""
@@ -656,13 +579,6 @@ msgstr ""
 msgid "Crypto Token"
 msgstr ""
 
-#: soldevicetypes.cpp:890
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "unknown smart card type"
-msgid "Unknown"
-msgstr "Tidak diketahui"
-
 #: soldevicetypes.cpp:893
 msgid "Smart Card Type: "
 msgstr ""
@@ -670,3 +586,75 @@ msgstr ""
 #: soldevicetypes.cpp:914
 msgid "Video Devices"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "name of something is not known"
+#~ msgid "Unknown"
+#~ msgstr "Tidak diketahui"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown device"
+#~ msgid "Unknown"
+#~ msgstr "Tidak diketahui"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "no instruction set extensions"
+#~ msgid "None"
+#~ msgstr "Tiada"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown storage bus"
+#~ msgid "Unknown"
+#~ msgstr "Tidak diketahui"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown volume usage"
+#~ msgid "Unknown"
+#~ msgstr "Tidak diketahui"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown audio interface type"
+#~ msgid "Unknown"
+#~ msgstr "Tidak diketahui"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown sound card type"
+#~ msgid "Unknown"
+#~ msgstr "Tidak diketahui"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown battery type"
+#~ msgid "Unknown"
+#~ msgstr "Tidak diketahui"
+
+#, fuzzy
+#~| msgid "Platform"
+#~ msgctxt "platform serial interface type"
+#~ msgid "Platform"
+#~ msgstr "Platform"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown serial interface type"
+#~ msgid "Unknown"
+#~ msgstr "Tidak diketahui"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown port"
+#~ msgid "Unknown"
+#~ msgstr "Tidak diketahui"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown smart card type"
+#~ msgid "Unknown"
+#~ msgstr "Tidak diketahui"
