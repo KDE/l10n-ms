@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-06 02:24+0100\n"
+"POT-Creation-Date: 2012-12-01 02:11+0100\n"
 "PO-Revision-Date: 2008-02-22 22:30+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1744,10 +1744,9 @@ msgstr "Arahan pencetak: "
 msgid "Auto Replace"
 msgstr "Auto ganti perkataan salah eja"
 
-#: src/config/settingsdialog.cpp:136 src/irc/outputfilter.cpp:1545
-#: src/irc/outputfilter.cpp:1616 src/viewer/irccontextmenus.cpp:458
-#: src/viewer/irccontextmenus.cpp:634 src/viewer/irccontextmenus.cpp:635
+#: src/config/settingsdialog.cpp:136
 #, fuzzy
+msgctxt "@title:tab"
 msgid "Ignore"
 msgstr "Abai"
 
@@ -3582,12 +3581,11 @@ msgid "*.pem"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, awayWidget)
-#: src/identitydialog.ui:306 src/irc/inputfilter.cpp:1411
-#: src/irc/nicksonline.cpp:247 src/irc/server.cpp:3927 src/irc/server.cpp:3929
-#: src/irc/server.cpp:3954 src/irc/server.cpp:3963
-#: src/linkaddressbook/addressbook.cpp:109
+#: src/identitydialog.ui:306
+#, fuzzy
+msgctxt "@title:tab"
 msgid "Away"
-msgstr ""
+msgstr "Tetap Nama Imej"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_insertRememberLineOnAwayChBox)
 #: src/identitydialog.ui:312
@@ -3869,7 +3867,8 @@ msgid "%1 is now known as %2."
 msgstr ""
 
 #: src/irc/channel.cpp:1078 src/irc/channel.cpp:1104
-#: src/irc/invitedialog.cpp:166 src/viewer/ircview.cpp:769
+#: src/viewer/ircview.cpp:769
+msgctxt "Message type"
 msgid "Join"
 msgstr ""
 
@@ -3888,6 +3887,7 @@ msgstr "Fail %s tidak dijumpai"
 #: src/irc/channel.cpp:1131 src/irc/channel.cpp:1133 src/irc/channel.cpp:1155
 #: src/irc/channel.cpp:1158 src/irc/query.cpp:514 src/irc/query.cpp:522
 #: src/viewer/ircview.cpp:774
+msgctxt "Message type"
 msgid "Quit"
 msgstr ""
 
@@ -3904,6 +3904,7 @@ msgstr "Jajar kiri perenggan"
 
 #: src/irc/channel.cpp:1139 src/irc/channel.cpp:1141 src/irc/channel.cpp:1164
 #: src/irc/channel.cpp:1167 src/viewer/ircview.cpp:774
+msgctxt "Message type"
 msgid "Part"
 msgstr ""
 
@@ -5047,6 +5048,12 @@ msgstr "Sunting Footer pada halaman semasa"
 msgid "Current users on %1: %2."
 msgstr "Sunting Footer pada halaman semasa"
 
+#: src/irc/inputfilter.cpp:1411 src/irc/nicksonline.cpp:247
+#: src/irc/server.cpp:3927 src/irc/server.cpp:3929 src/irc/server.cpp:3954
+#: src/irc/server.cpp:3963 src/linkaddressbook/addressbook.cpp:109
+msgid "Away"
+msgstr ""
+
 #: src/irc/inputfilter.cpp:1412
 #, fuzzy, kde-format
 msgid "%1 is away: %2"
@@ -5366,6 +5373,10 @@ msgstr "M-x nxml-mode"
 #, fuzzy
 msgid "Channel Invites"
 msgstr "Senarai Arab"
+
+#: src/irc/invitedialog.cpp:166
+msgid "Join"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, m_textLabel)
 #: src/irc/invitedialog.ui:33
@@ -5854,8 +5865,10 @@ msgstr "Label Senarai Semasa"
 
 #: src/irc/outputfilter.cpp:1317 src/irc/server.cpp:2997
 #: src/irc/server.cpp:3014
+#, fuzzy
+msgctxt "Message type"
 msgid "Notify"
-msgstr ""
+msgstr "Notis pengusangan"
 
 #: src/irc/outputfilter.cpp:1333
 msgid "Enter username and password for IRC operator privileges:"
@@ -5904,6 +5917,13 @@ msgstr ""
 #, kde-format
 msgid "Added %1 to your ignore list."
 msgstr ""
+
+#: src/irc/outputfilter.cpp:1545 src/irc/outputfilter.cpp:1616
+#: src/viewer/irccontextmenus.cpp:458 src/viewer/irccontextmenus.cpp:634
+#: src/viewer/irccontextmenus.cpp:635
+#, fuzzy
+msgid "Ignore"
+msgstr "Abai"
 
 #: src/irc/outputfilter.cpp:1554
 #, kde-format
@@ -9372,11 +9392,6 @@ msgstr "Tambah sempadan dan legapan kepada pilihan"
 #, fuzzy
 #~ msgid "Edit..."
 #~ msgstr "Sunting..."
-
-#, fuzzy
-#~ msgctxt "Tab name"
-#~ msgid "Away"
-#~ msgstr "Tetap Nama Imej"
 
 #, fuzzy
 #~ msgid "Edit Nickname"
