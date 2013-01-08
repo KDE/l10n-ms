@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-12-02 02:15+0100\n"
+"POT-Creation-Date: 2013-01-08 12:24+0100\n"
 "PO-Revision-Date: 2006-05-07 16:35+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -68,12 +68,6 @@ msgstr ""
 #| msgid "Do not display scrollbar"
 msgid "S&crollback"
 msgstr "Jangan papar bar skrol"
-
-#: AccessibleColorScheme.cpp:65
-#, fuzzy
-#| msgid "New Color Scheme"
-msgid "Accessible Color Scheme"
-msgstr "Skema Warna Baru"
 
 #: Application.cpp:437
 msgid "Toggle Background Window"
@@ -351,6 +345,7 @@ msgid "Profile name is empty."
 msgstr ""
 
 #: EditProfileDialog.cpp:315
+msgctxt "@info:tooltip"
 msgid "One environment variable per line"
 msgstr ""
 
@@ -369,45 +364,45 @@ msgstr[1] ""
 msgid "Select Initial Directory"
 msgstr ""
 
-#: EditProfileDialog.cpp:586
+#: EditProfileDialog.cpp:593
 #, fuzzy, kde-format
 #| msgid "%1"
 msgid "%1"
 msgstr "%1"
 
-#: EditProfileDialog.cpp:695 EditProfileDialog.cpp:704
+#: EditProfileDialog.cpp:702 EditProfileDialog.cpp:711
 msgid "New Color Scheme"
 msgstr "Skema Warna Baru"
 
-#: EditProfileDialog.cpp:697
+#: EditProfileDialog.cpp:704
 msgid "Edit Color Scheme"
 msgstr "Sunting Skema Warna"
 
-#: EditProfileDialog.cpp:768
+#: EditProfileDialog.cpp:775
 msgid ""
 "This color scheme uses a transparent background which does not appear to be "
 "supported on your desktop"
 msgstr ""
 
-#: EditProfileDialog.cpp:773
+#: EditProfileDialog.cpp:780
 msgid ""
 "Konsole was started before desktop effects were enabled. You need to restart "
 "Konsole to see transparent background."
 msgstr ""
 
-#: EditProfileDialog.cpp:876 EditProfileDialog.cpp:887
+#: EditProfileDialog.cpp:883 EditProfileDialog.cpp:894
 msgid "New Key Binding List"
 msgstr "Senarai Kekunci Pintas Baru"
 
-#: EditProfileDialog.cpp:878
+#: EditProfileDialog.cpp:885
 msgid "Edit Key Binding List"
 msgstr "Sunting Senarai Kekunci Pintas"
 
-#: EditProfileDialog.cpp:1190
+#: EditProfileDialog.cpp:1201
 msgid "--- Type anything in this box ---"
 msgstr ""
 
-#: EditProfileDialog.cpp:1194
+#: EditProfileDialog.cpp:1205
 msgid "Select Fixed Width Font"
 msgstr ""
 
@@ -867,148 +862,158 @@ msgstr ""
 msgid "Require Ctrl key for drag and drop"
 msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, enableMouseWheelZoomButton)
+#: EditProfileDialog.ui:899
+msgid "Pressing Ctrl+scrollwheel will increase/decrease the text size."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, enableMouseWheelZoomButton)
+#: EditProfileDialog.ui:902
+msgid "Allow Ctrl+scrollwheel to zoom text size"
+msgstr ""
+
 #. i18n: ectx: attribute (title), widget (QWidget, advancedTab)
-#: EditProfileDialog.ui:916
+#: EditProfileDialog.ui:926
 msgctxt "@title:tab Complex options"
 msgid "Advanced"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: EditProfileDialog.ui:922
+#: EditProfileDialog.ui:932
 #, fuzzy
 #| msgid "&Terminate Task"
 msgid "Terminal Features"
 msgstr "&Tamatkan Tugas"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enableBlinkingTextButton)
-#: EditProfileDialog.ui:937
+#: EditProfileDialog.ui:947
 msgid "Allow terminal programs to create blinking sections of text"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, enableBlinkingTextButton)
-#: EditProfileDialog.ui:940
+#: EditProfileDialog.ui:950
 msgid "Allow blinking text"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enableFlowControlButton)
-#: EditProfileDialog.ui:953
+#: EditProfileDialog.ui:963
 msgid "Allow the output to be suspended by pressing Ctrl+S"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, enableFlowControlButton)
-#: EditProfileDialog.ui:956
+#: EditProfileDialog.ui:966
 msgid "Enable flow control using Ctrl+S, Ctrl+Q"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enableBidiRenderingButton)
-#: EditProfileDialog.ui:969
+#: EditProfileDialog.ui:979
 msgid ""
 "Enable Bi-Directional display on terminals (valid for Arabic, Farsi or "
 "Hebrew only)"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, enableBidiRenderingButton)
-#: EditProfileDialog.ui:972
+#: EditProfileDialog.ui:982
 msgid "Enable Bi-Directional text rendering"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lineSpacingLabel)
-#: EditProfileDialog.ui:981
+#: EditProfileDialog.ui:991
 #, fuzzy
 #| msgid "Li&ne Spacing"
 msgid "Line Spacing:"
 msgstr "Penjarakan &Baris"
 
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, lineSpacingSpinner)
-#: EditProfileDialog.ui:988
+#: EditProfileDialog.ui:998
 msgid "The number of pixels between two lines"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_8)
-#: EditProfileDialog.ui:1019
+#: EditProfileDialog.ui:1029
 #, fuzzy
 msgid "Cursor"
 msgstr "&Opsyen Tab"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enableBlinkingCursorButton)
-#: EditProfileDialog.ui:1034
+#: EditProfileDialog.ui:1044
 msgid "Make the cursor blink regularly"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, enableBlinkingCursorButton)
-#: EditProfileDialog.ui:1037
+#: EditProfileDialog.ui:1047
 #, fuzzy
 #| msgid "Blinking &Cursor"
 msgid "Blinking cursor"
 msgstr "&Kursor Berkelip"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: EditProfileDialog.ui:1046
+#: EditProfileDialog.ui:1056
 msgid "Cursor shape:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KComboBox, cursorShapeCombo)
-#: EditProfileDialog.ui:1053
+#: EditProfileDialog.ui:1063
 msgid "Change the shape of the cursor"
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (KComboBox, cursorShapeCombo)
-#: EditProfileDialog.ui:1057
-msgctxt "The shape of the cursor"
-msgid "Block"
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (KComboBox, cursorShapeCombo)
-#: EditProfileDialog.ui:1062
-msgctxt "The shape of the cursor, similar to a capital I"
-msgid "I-Beam"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KComboBox, cursorShapeCombo)
 #: EditProfileDialog.ui:1067
 msgctxt "The shape of the cursor"
+msgid "Block"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, cursorShapeCombo)
+#: EditProfileDialog.ui:1072
+msgctxt "The shape of the cursor, similar to a capital I"
+msgid "I-Beam"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, cursorShapeCombo)
+#: EditProfileDialog.ui:1077
+msgctxt "The shape of the cursor"
 msgid "Underline"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, autoCursorColorButton)
-#: EditProfileDialog.ui:1096
+#: EditProfileDialog.ui:1106
 msgid "Set the cursor to match the color of the character underneath it."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, autoCursorColorButton)
-#: EditProfileDialog.ui:1099
+#: EditProfileDialog.ui:1109
 msgid "Set cursor color to match current character"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, customCursorColorButton)
-#: EditProfileDialog.ui:1114
+#: EditProfileDialog.ui:1124
 msgid "Use a custom, fixed color for the cursor"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, customCursorColorButton)
-#: EditProfileDialog.ui:1117
+#: EditProfileDialog.ui:1127
 msgid "Custom cursor color:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, customColorSelectButton)
-#: EditProfileDialog.ui:1130
+#: EditProfileDialog.ui:1140
 msgid "Select the color used to draw the cursor"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_11)
-#: EditProfileDialog.ui:1158
+#: EditProfileDialog.ui:1168
 #, fuzzy
 #| msgid "&Encoding"
 msgid "Encoding"
 msgstr "P&enenkodan"
 
 #. i18n: ectx: property (text), widget (QLabel, label_14)
-#: EditProfileDialog.ui:1167
+#: EditProfileDialog.ui:1177
 msgid "Default character encoding:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, selectEncodingButton)
-#: EditProfileDialog.ui:1187
+#: EditProfileDialog.ui:1197
 #, fuzzy
 #| msgid "Se&lect..."
 msgctxt "@action:button Pick an encoding"
@@ -1103,16 +1108,19 @@ msgstr "Tanpa had"
 #: IncrementalSearchBar.cpp:51
 #, fuzzy
 #| msgid "C&lose Session"
+msgctxt "@info:tooltip"
 msgid "Close the search bar"
 msgstr "Tutu&p Sesi"
 
 #: IncrementalSearchBar.cpp:56
 #, fuzzy
 #| msgid "Find"
+msgctxt "@label:textbox"
 msgid "Find:"
 msgstr "Cari"
 
 #: IncrementalSearchBar.cpp:61
+msgctxt "@info:tooltip"
 msgid "Enter the text to search for here"
 msgstr ""
 
@@ -1124,6 +1132,7 @@ msgid "Next"
 msgstr "Cari"
 
 #: IncrementalSearchBar.cpp:83
+msgctxt "@info:tooltip"
 msgid "Find the next match for the current search phrase"
 msgstr ""
 
@@ -1135,6 +1144,7 @@ msgid "Previous"
 msgstr "Cari Sebe&lumnya"
 
 #: IncrementalSearchBar.cpp:91
+msgctxt "@info:tooltip"
 msgid "Find the previous match for the current search phrase"
 msgstr ""
 
@@ -1145,30 +1155,36 @@ msgid "Options"
 msgstr "&Opsyen Tab"
 
 #: IncrementalSearchBar.cpp:101
+msgctxt "@info:tooltip"
 msgid "Display the options menu"
 msgstr ""
 
 #: IncrementalSearchBar.cpp:114
 #, fuzzy
 #| msgid "C&lose Session"
+msgctxt "@item:inmenu"
 msgid "Case sensitive"
 msgstr "Tutu&p Sesi"
 
 #: IncrementalSearchBar.cpp:116
+msgctxt "@info:tooltip"
 msgid "Sets whether the search is case sensitive"
 msgstr ""
 
 #: IncrementalSearchBar.cpp:120
 #, fuzzy
 #| msgid "As &regular expression"
+msgctxt "@item:inmenu"
 msgid "Match regular expression"
 msgstr "Sebagai ungkapan &biasa"
 
 #: IncrementalSearchBar.cpp:125
+msgctxt "@item:inmenu"
 msgid "Highlight all matches"
 msgstr ""
 
 #: IncrementalSearchBar.cpp:127
+msgctxt "@info:tooltip"
 msgid "Sets whether matching text should be highlighted"
 msgstr ""
 
@@ -1217,67 +1233,82 @@ msgid "Terminal emulator"
 msgstr "&Tutup Pelagak Terminal"
 
 #: main.cpp:157
+msgctxt "@info:shell"
 msgid "Name of profile to use for new Konsole instance"
 msgstr ""
 
 #: main.cpp:159
+msgctxt "@info:shell"
 msgid "Set the initial working directory of the new tab or window to 'dir'"
 msgstr ""
 
 #: main.cpp:163
+msgctxt "@info:shell"
 msgid "Do not close the initial session automatically when it ends."
 msgstr ""
 
 #: main.cpp:166
+msgctxt "@info:shell"
 msgid ""
 "Create a new tab in an existing window rather than creating a new window"
 msgstr ""
 
 #: main.cpp:169
+msgctxt "@info:shell"
 msgid "Create tabs as specified in given tabs configuration file"
 msgstr ""
 
 #: main.cpp:172
+msgctxt "@info:shell"
 msgid ""
 "Start Konsole in the background and bring to the front when Ctrl+Shift+F12 "
 "(by default) is pressed"
 msgstr ""
 
 #: main.cpp:174
+msgctxt "@info:shell"
 msgid "Show the menubar, overriding the default setting"
 msgstr ""
 
 #: main.cpp:175
+msgctxt "@info:shell"
 msgid "Hide the menubar, overriding the default setting"
 msgstr ""
 
 #: main.cpp:176
+msgctxt "@info:shell"
 msgid "Show the tabbar, overriding the default setting"
 msgstr ""
 
 #: main.cpp:177
+msgctxt "@info:shell"
 msgid "Hide the tabbar, overriding the default setting"
 msgstr ""
 
 #: main.cpp:179
+msgctxt "@info:shell"
 msgid "Disable transparent backgrounds, even if the system supports them."
 msgstr ""
 
 #: main.cpp:181
 #, fuzzy
 #| msgid "List available session profiles"
+msgctxt "@info:shell"
 msgid "List the available profiles"
 msgstr "Senaraikan profil sesi yang boleh didapatkan"
 
 #: main.cpp:183
+msgctxt "@info:shell"
 msgid "List all the profile properties names and their type (for use with -p)"
 msgstr ""
 
 #: main.cpp:186
+msgctxt "@info:shell"
 msgid "Change the value of a profile property."
 msgstr ""
 
 #: main.cpp:188
+msgctxt "@info:shell"
 msgid ""
 "Command to execute. This option will catch all following arguments, so use "
 "it as the last option."
@@ -1286,10 +1317,12 @@ msgstr ""
 #: main.cpp:190
 #, fuzzy
 #| msgid "Arguments for 'command'"
+msgctxt "@info:shell"
 msgid "Arguments passed to command"
 msgstr "Argumen untuk 'arahan'"
 
 #: main.cpp:191
+msgctxt "@info:shell"
 msgid "Use --nofork to run in the foreground (helpful with the -e option)."
 msgstr ""
 
@@ -1580,11 +1613,18 @@ msgctxt "@title"
 msgid "Confirm Close"
 msgstr ""
 
+#: MainWindow.cpp:551
+#, fuzzy
+#| msgid "Konsole"
+msgctxt "@action:button"
+msgid "Close &Window"
+msgstr "Konsole"
+
 #: MainWindow.cpp:552
 #, fuzzy
 #| msgid "Close the current session"
 msgctxt "@action:button"
-msgid "Close Current Tab"
+msgid "Close Current &Tab"
 msgstr "Tutup sesi semasa"
 
 #: MainWindow.cpp:649
@@ -1607,14 +1647,17 @@ msgstr "Sim&pan &Profil Sesi"
 #: ManageProfilesDialog.cpp:177
 #, fuzzy
 #| msgid "Save Sessions Profile"
+msgctxt "@info:tooltip"
 msgid "Click to rename profile"
 msgstr "Simpan Profil Sesi"
 
 #: ManageProfilesDialog.cpp:186
+msgctxt "@info:tooltip"
 msgid "Click to toggle status"
 msgstr ""
 
 #: ManageProfilesDialog.cpp:192
+msgctxt "@info:tooltip"
 msgid "Double click to change shortcut"
 msgstr ""
 
@@ -1719,7 +1762,7 @@ msgstr "Mod &mesra pencetak (teks hitam, tiada latar belakang)"
 msgid "&Scale output"
 msgstr ""
 
-#: Profile.cpp:144
+#: Profile.cpp:145
 #, fuzzy
 #| msgid "&Bell"
 msgid "Shell"
@@ -1870,26 +1913,26 @@ msgstr "Loceng dalam sesi '%1'"
 msgid "Activity in session '%1'"
 msgstr "Aktiviti dalam sesi '%1'"
 
-#: Session.cpp:829
+#: Session.cpp:830
 #, fuzzy
 #| msgid "<Finished>"
 msgctxt "@info:shell This session is done"
 msgid "Finished"
 msgstr "<Finished>"
 
-#: Session.cpp:843 Session.cpp:855
+#: Session.cpp:844 Session.cpp:856
 #, fuzzy, kde-format
 #| msgid "Session '%1' exited unexpectedly."
 msgid "Program '%1' crashed."
 msgstr "Sesi '%1' keluar tanpa dijangka."
 
-#: Session.cpp:845
+#: Session.cpp:846
 #, fuzzy, kde-format
 #| msgid "Session '%1' exited with status %2."
 msgid "Program '%1' exited with status %2."
 msgstr "Sesi '%1' keluar dengan status %2"
 
-#: Session.cpp:1196
+#: Session.cpp:1197
 msgid "ZModem Progress"
 msgstr "Kemajuan ZModem"
 
@@ -2378,35 +2421,46 @@ msgid "Insert"
 msgstr ""
 
 #: TabTitleFormatButton.cpp:83
+msgctxt "@info:tooltip"
 msgid "Insert title format"
 msgstr ""
 
 #: TabTitleFormatButton.cpp:87
+msgctxt "@info:tooltip"
 msgid "Insert remote title format"
 msgstr ""
 
-#: TerminalDisplay.cpp:1131 TerminalDisplay.cpp:1132
+#: TerminalDisplay.cpp:1133 TerminalDisplay.cpp:1134
 msgid "Size: XXX x XXX"
 msgstr "Saiz: XXX x XXX"
 
-#: TerminalDisplay.cpp:1143
+#: TerminalDisplay.cpp:1145
 #, kde-format
 msgid "Size: %1 x %2"
 msgstr "Saiz: %1 x %2"
 
-#: TerminalDisplay.cpp:2739
+#: TerminalDisplay.cpp:2581
+#, fuzzy, kde-format
+msgid "Are you sure you want to paste %1 characters?"
+msgstr "Anda pasti ingin menutup sesi semasa?"
+
+#: TerminalDisplay.cpp:2583
+msgid "Confirm Paste"
+msgstr ""
+
+#: TerminalDisplay.cpp:2758
 msgid ""
 "<qt>Output has been <a href=\"http://en.wikipedia.org/wiki/Flow_control"
 "\">suspended</a> by pressing Ctrl+S.  Press <b>Ctrl+Q</b> to resume.</qt>"
 msgstr ""
 
-#: TerminalDisplay.cpp:2992
+#: TerminalDisplay.cpp:3011
 #, fuzzy
 #| msgid "Paste Selection"
 msgid "&Paste Location"
 msgstr "Tepek Pilihan"
 
-#: TerminalDisplay.cpp:3006
+#: TerminalDisplay.cpp:3025
 #, fuzzy
 msgid "Change &Directory To"
 msgstr "Ubah direktori kerja kepada 'dir'"
@@ -2566,6 +2620,11 @@ msgstr ""
 #: ZModemDialog.cpp:36
 msgid "&Stop"
 msgstr "&Berhenti"
+
+#, fuzzy
+#~| msgid "New Color Scheme"
+#~ msgid "Accessible Color Scheme"
+#~ msgstr "Skema Warna Baru"
 
 #, fuzzy
 #~| msgctxt "abbreviation of number"
@@ -3313,10 +3372,6 @@ msgstr "&Berhenti"
 
 #~ msgid "Session List"
 #~ msgstr "Senarai Sesi"
-
-#, fuzzy
-#~ msgid "Are you sure you want to close this session?"
-#~ msgstr "Anda pasti ingin menutup sesi semasa?"
 
 #~ msgid "New Shell at Bookmark"
 #~ msgstr "Cengkerang Baru pada Tanda Laman"

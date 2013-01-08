@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_clients\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-12 03:00+0100\n"
+"POT-Creation-Date: 2013-01-08 12:37+0100\n"
 "PO-Revision-Date: 2010-07-20 20:30+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -38,22 +38,25 @@ msgid "Title &Alignment"
 msgstr "J&ajaran Tajuk"
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_titleAlignLeft)
+#. i18n: ectx: property (text), item, widget (KComboBox, titleAlignment)
 #: aurorae/themes/plastik/package/contents/ui/config.ui:29
-#: oxygen/oxygenconfiguration.cpp:247
+#: oxygen/config/ui/oxygenconfigurationui.ui:115
 #, fuzzy
 msgid "Left"
 msgstr "Kiri"
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_titleAlignCenter)
+#. i18n: ectx: property (text), item, widget (KComboBox, titleAlignment)
 #: aurorae/themes/plastik/package/contents/ui/config.ui:36
-#: oxygen/oxygenconfiguration.cpp:252
+#: oxygen/config/ui/oxygenconfigurationui.ui:120
 #, fuzzy
 msgid "Center"
 msgstr "Tengah"
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_titleAlignRight)
+#. i18n: ectx: property (text), item, widget (KComboBox, titleAlignment)
 #: aurorae/themes/plastik/package/contents/ui/config.ui:43
-#: oxygen/oxygenconfiguration.cpp:255
+#: oxygen/config/ui/oxygenconfigurationui.ui:130
 #, fuzzy
 msgid "Right"
 msgstr "Kanan"
@@ -114,19 +117,19 @@ msgstr "Tidak pada semua desktop"
 msgid "On all desktops"
 msgstr "Pada semua desktop"
 
-#: b2/b2client.cpp:406 oxygen/oxygenclient.cpp:224
+#: b2/b2client.cpp:406 oxygen/oxygenclient.cpp:226
 msgid "Minimize"
 msgstr "Minimakan"
 
-#: b2/b2client.cpp:406 b2/b2client.cpp:901 oxygen/oxygenclient.cpp:227
+#: b2/b2client.cpp:406 b2/b2client.cpp:901 oxygen/oxygenclient.cpp:229
 msgid "Maximize"
 msgstr "Maksimakan"
 
-#: b2/b2client.cpp:407 oxygen/oxygenclient.cpp:230
+#: b2/b2client.cpp:407 oxygen/oxygenclient.cpp:232
 msgid "Close"
 msgstr "Tutup"
 
-#: b2/b2client.cpp:407 oxygen/oxygenclient.cpp:221
+#: b2/b2client.cpp:407 oxygen/oxygenclient.cpp:223
 msgid "Help"
 msgstr "Bantuan"
 
@@ -227,7 +230,7 @@ msgstr ""
 "Tindakan boleh dikaitkan dengan dwi klik butang menu. Tinggalkan kepada "
 "tiada jika ragu-ragu."
 
-#: laptop/laptopclient.cpp:370
+#: laptop/laptopclient.cpp:376
 msgid "Laptop"
 msgstr "Laptop"
 
@@ -265,42 +268,27 @@ msgstr ""
 msgid "Configure window titlebar animations when windows are grouped/ungrouped"
 msgstr ""
 
-#: oxygen/config/oxygenconfigurationui.cpp:144
+#: oxygen/config/oxygenconfigwidget.cpp:160
 #, fuzzy
 msgid "Hide Advanced Configuration Options"
 msgstr "Pilihan Hiasan"
 
-#: oxygen/config/oxygenconfigurationui.cpp:144
+#: oxygen/config/oxygenconfigwidget.cpp:160
 #, fuzzy
 msgid "Show Advanced Configuration Options"
 msgstr "Pilihan Hiasan"
 
-#: oxygen/config/oxygenconfigurationui.cpp:162
+#: oxygen/config/oxygenconfigwidget.cpp:177
 #, fuzzy
 #| msgid "Animate buttons"
 msgid "Animations"
 msgstr "Animasikan butang"
 
-#: oxygen/config/oxygenexceptiondialog.cpp:92
-#: oxygen/config/oxygenexceptiondialog.cpp:118
-#: oxygen/config/oxygenexceptiondialog.cpp:146
-#, fuzzy
-msgctxt "outline window title"
-msgid "Enabled"
-msgstr "Dihidupkan"
-
-#: oxygen/config/oxygenexceptiondialog.cpp:92
-#: oxygen/config/oxygenexceptiondialog.cpp:118
-#, fuzzy
-msgctxt "outline window title"
-msgid "Disabled"
-msgstr "Dimatikan"
-
-#: oxygen/config/oxygenexceptionlistwidget.cpp:201
+#: oxygen/config/oxygenexceptionlistwidget.cpp:190
 msgid "Remove selected exception?"
 msgstr ""
 
-#: oxygen/config/oxygenexceptionlistwidget.cpp:340
+#: oxygen/config/oxygenexceptionlistwidget.cpp:331
 msgid "Regular Expression syntax is incorrect"
 msgstr ""
 
@@ -313,7 +301,19 @@ msgstr ""
 msgid "Regular Expression"
 msgstr "Ungkapan Biasa"
 
-#: oxygen/config/oxygenexceptionmodel.cpp:67
+#. i18n: ectx: property (text), item, widget (KComboBox, exceptionType)
+#: oxygen/config/oxygenexceptionmodel.cpp:61
+#: oxygen/config/ui/oxygenexceptiondialog.ui:69
+msgid "Window Title"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, exceptionType)
+#: oxygen/config/oxygenexceptionmodel.cpp:65
+#: oxygen/config/ui/oxygenexceptiondialog.ui:64
+msgid "Window Class Name"
+msgstr ""
+
+#: oxygen/config/oxygenexceptionmodel.cpp:81
 msgid "Enable/disable this exception"
 msgstr ""
 
@@ -326,108 +326,224 @@ msgstr "Umum"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QCheckBox, frameBorderCheckBox)
 #: oxygen/config/ui/oxygenconfigurationui.ui:39
-#: oxygen/config/ui/oxygenexceptiondialog.ui:75
+#: oxygen/config/ui/oxygenexceptiondialog.ui:86
 msgid "Border size:"
 msgstr ""
 
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:53
+#: oxygen/config/ui/oxygenexceptiondialog.ui:142
+msgid "No Border"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:58
+#: oxygen/config/ui/oxygenexceptiondialog.ui:147
+msgid "No Side Borders"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:63
+#: oxygen/config/ui/oxygenexceptiondialog.ui:152
+#, fuzzy
+msgid "Tiny"
+msgstr "Sangat Kecil"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:68
+#: oxygen/config/ui/oxygenconfigurationui.ui:170
+#: oxygen/config/ui/oxygenexceptiondialog.ui:157
+#, fuzzy
+msgid "Normal"
+msgstr "Normal"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:73
+#: oxygen/config/ui/oxygenconfigurationui.ui:175
+#: oxygen/config/ui/oxygenexceptiondialog.ui:162
+msgid "Large"
+msgstr "Besar"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:78
+#: oxygen/config/ui/oxygenconfigurationui.ui:180
+#: oxygen/config/ui/oxygenexceptiondialog.ui:167
+#, fuzzy
+#| msgid "Large"
+msgid "Very Large"
+msgstr "Sangat Besar"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:83
+#: oxygen/config/ui/oxygenconfigurationui.ui:185
+#: oxygen/config/ui/oxygenexceptiondialog.ui:172
+#, fuzzy
+msgid "Huge"
+msgstr "Teramat Besar"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:88
+#: oxygen/config/ui/oxygenexceptiondialog.ui:177
+#, fuzzy
+#| msgid "Large"
+msgid "Very Huge"
+msgstr "Sangat Teramat Besar"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:93
+#: oxygen/config/ui/oxygenexceptiondialog.ui:182
+#, fuzzy
+#| msgid "Resize"
+msgid "Oversized"
+msgstr "Lebihsaiz"
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: oxygen/config/ui/oxygenconfigurationui.ui:55
+#: oxygen/config/ui/oxygenconfigurationui.ui:101
 #, fuzzy
 #| msgid "Title &Alignment"
 msgid "Title alignment:"
 msgstr "J&ajaran Tajuk"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, titleAlignment)
+#: oxygen/config/ui/oxygenconfigurationui.ui:125
+msgid "Center (Full Width)"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: oxygen/config/ui/oxygenconfigurationui.ui:84
+#: oxygen/config/ui/oxygenconfigurationui.ui:151
 msgid "Button size:"
 msgstr ""
 
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#: oxygen/config/ui/oxygenconfigurationui.ui:165
+msgid "Small"
+msgstr "Kecil"
+
 #. i18n: ectx: property (text), widget (QCheckBox, animationsEnabled)
-#: oxygen/config/ui/oxygenconfigurationui.ui:100
+#: oxygen/config/ui/oxygenconfigurationui.ui:206
 msgid "Enable animations"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: oxygen/config/ui/oxygenconfigurationui.ui:121
+#: oxygen/config/ui/oxygenconfigurationui.ui:214
 msgid "Fine Tuning"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, separatorMode)
+#. i18n: ectx: property (text), item, widget (KComboBox, separatorComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:224
+#: oxygen/config/ui/oxygenexceptiondialog.ui:250
+msgid "Never Draw Separator"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, separatorMode)
+#. i18n: ectx: property (text), item, widget (KComboBox, separatorComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:229
+#: oxygen/config/ui/oxygenexceptiondialog.ui:255
+msgid "Draw Separator When Window is Active"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, separatorMode)
+#. i18n: ectx: property (text), item, widget (KComboBox, separatorComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:234
+#: oxygen/config/ui/oxygenexceptiondialog.ui:260
+msgid "Always Draw Separator"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QCheckBox, separatorCheckBox)
-#: oxygen/config/ui/oxygenconfigurationui.ui:130
-#: oxygen/config/ui/oxygenexceptiondialog.ui:96
+#: oxygen/config/ui/oxygenconfigurationui.ui:242
+#: oxygen/config/ui/oxygenexceptiondialog.ui:107
 msgid "Separator display:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: oxygen/config/ui/oxygenconfigurationui.ui:143
+#: oxygen/config/ui/oxygenconfigurationui.ui:255
 msgid "Background style: "
 msgstr ""
 
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColor)
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColorComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:269
+#: oxygen/config/ui/oxygenexceptiondialog.ui:194
+#, fuzzy
+msgid "Solid Color"
+msgstr "Warna Padu"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColor)
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColorComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:274
+#: oxygen/config/ui/oxygenexceptiondialog.ui:199
+#, fuzzy
+#| msgid "Draw &gradients"
+msgid "Radial Gradient"
+msgstr "Lukis &gradien"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColor)
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColorComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:279
+#: oxygen/config/ui/oxygenexceptiondialog.ui:204
+msgid "Follow Style Hint"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QCheckBox, titleOutline)
-#: oxygen/config/ui/oxygenconfigurationui.ui:172
+#: oxygen/config/ui/oxygenconfigurationui.ui:300
 #, fuzzy
 #| msgid "Minimize Window"
 msgid "Outline active window title"
 msgstr "Minimakan Tetingkap"
 
 #. i18n: ectx: property (text), widget (QCheckBox, narrowButtonSpacing)
-#: oxygen/config/ui/oxygenconfigurationui.ui:192
+#: oxygen/config/ui/oxygenconfigurationui.ui:307
 msgid "Use narrow space between decoration buttons"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, sizeGripModeLabel)
-#: oxygen/config/ui/oxygenconfigurationui.ui:202
-msgid "Extra size grip display: "
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (KComboBox, separatorMode)
-#. i18n: ectx: property (text), item, widget (KComboBox, separatorComboBox)
-#: oxygen/config/ui/oxygenconfigurationui.ui:216
-#: oxygen/config/ui/oxygenexceptiondialog.ui:140
-msgid "Never Draw Separator"
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (KComboBox, separatorMode)
-#. i18n: ectx: property (text), item, widget (KComboBox, separatorComboBox)
-#: oxygen/config/ui/oxygenconfigurationui.ui:221
-#: oxygen/config/ui/oxygenexceptiondialog.ui:145
-msgid "Draw Separator When Window is Active"
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (KComboBox, separatorMode)
-#. i18n: ectx: property (text), item, widget (KComboBox, separatorComboBox)
-#: oxygen/config/ui/oxygenconfigurationui.ui:226
-#: oxygen/config/ui/oxygenexceptiondialog.ui:150
-msgid "Always Draw Separator"
+#. i18n: ectx: property (text), widget (QCheckBox, drawSizeGrip)
+#. i18n: ectx: property (text), widget (QCheckBox, sizeGripCheckBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:314
+#: oxygen/config/ui/oxygenexceptiondialog.ui:93
+msgid "Add handle to resize windows with no border"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, closeFromMenuButton)
-#: oxygen/config/ui/oxygenconfigurationui.ui:234
+#: oxygen/config/ui/oxygenconfigurationui.ui:321
 msgid "Close windows by double clicking the menu button"
 msgstr "Tutup tetingkap dengan dwi-klik butang menu"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: oxygen/config/ui/oxygenconfigurationui.ui:242
+#: oxygen/config/ui/oxygenconfigurationui.ui:342
 #, fuzzy
 #| msgid "Shade"
 msgid "Shadows"
 msgstr "Bayang"
 
-#. i18n: ectx: property (title), widget (Oxygen::ShadowConfigurationUi, inactiveShadowConfiguration)
-#: oxygen/config/ui/oxygenconfigurationui.ui:250
+#. i18n: ectx: property (title), widget (Oxygen::ShadowConfigWidget, inactiveShadowConfiguration)
+#: oxygen/config/ui/oxygenconfigurationui.ui:350
 msgid "Window Drop-Down Shadow"
 msgstr ""
 
-#. i18n: ectx: property (title), widget (Oxygen::ShadowConfigurationUi, activeShadowConfiguration)
-#: oxygen/config/ui/oxygenconfigurationui.ui:260
+#. i18n: ectx: property (title), widget (Oxygen::ShadowConfigWidget, activeShadowConfiguration)
+#: oxygen/config/ui/oxygenconfigurationui.ui:360
 #, fuzzy
 #| msgid "Minimize Window"
 msgid "Active Window Glow"
 msgstr "Minimakan Tetingkap"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
-#: oxygen/config/ui/oxygenconfigurationui.ui:286
+#: oxygen/config/ui/oxygenconfigurationui.ui:386
 msgid "Window-Specific Overrides"
 msgstr ""
 
@@ -484,34 +600,57 @@ msgid "Detect Window Properties"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:69
+#: oxygen/config/ui/oxygenexceptiondialog.ui:80
 #, fuzzy
 msgid "Decoration Options"
 msgstr "Pilihan Hiasan"
 
-#. i18n: ectx: property (text), widget (QCheckBox, sizeGripCheckBox)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:82
-msgid "Extra size grip display:"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QCheckBox, titleOutlineCheckBox)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:89
+#: oxygen/config/ui/oxygenexceptiondialog.ui:100
 #, fuzzy
 #| msgid "Minimize Window"
 msgid "Outline active window title:"
 msgstr "Minimakan Tetingkap"
 
 #. i18n: ectx: property (text), widget (QCheckBox, blendColorCheckBox)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:103
+#: oxygen/config/ui/oxygenexceptiondialog.ui:114
 msgid "Background style:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, hideTitleBar)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:110
+#: oxygen/config/ui/oxygenexceptiondialog.ui:121
 #, fuzzy
 #| msgid "Minimize Window"
 msgid "Hide window title bar"
 msgstr "Minimakan Tetingkap"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, sizeGripComboBox)
+#: oxygen/config/ui/oxygenexceptiondialog.ui:216
+#, fuzzy
+msgctxt "Add handle to resize windows with no border"
+msgid "Disabled"
+msgstr "Dimatikan"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, sizeGripComboBox)
+#: oxygen/config/ui/oxygenexceptiondialog.ui:221
+#, fuzzy
+msgctxt "Add handle to resize windows with no border"
+msgid "Enabled"
+msgstr "Dihidupkan"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, titleOutlineComboBox)
+#: oxygen/config/ui/oxygenexceptiondialog.ui:233
+#, fuzzy
+msgctxt "outline window title"
+msgid "Disabled"
+msgstr "Dimatikan"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, titleOutlineComboBox)
+#: oxygen/config/ui/oxygenexceptiondialog.ui:238
+#, fuzzy
+msgctxt "outline window title"
+msgid "Enabled"
+msgstr "Dihidupkan"
 
 #. i18n: ectx: property (text), widget (KPushButton, moveUpButton)
 #: oxygen/config/ui/oxygenexceptionlistwidget.ui:29
@@ -544,34 +683,7 @@ msgstr "Buang"
 msgid "Edit"
 msgstr "Sunting"
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:23
-msgid "Inner Color:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:42
-msgid "Outer Color:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:69
-msgid "Vertical Offset:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:82
-msgid "Size: "
-msgstr ""
-
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, shadowSize)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, verticalOffset)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:95
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:102
-msgid "px"
-msgstr ""
-
-#: oxygen/demo/main.cpp:42 oxygen/demo/oxygenshadowdemodialog.cpp:47
+#: oxygen/demo/main.cpp:42 oxygen/demo/oxygenshadowdemodialog.cpp:46
 msgid "Oxygen Shadow Demo"
 msgstr ""
 
@@ -587,17 +699,17 @@ msgstr ""
 msgid "Hugo Pereira Da Costa"
 msgstr ""
 
-#: oxygen/demo/oxygenshadowdemodialog.cpp:50
+#: oxygen/demo/oxygenshadowdemodialog.cpp:49
 #, fuzzy
 #| msgid "Shade"
 msgid "Save"
 msgstr "Suram"
 
-#: oxygen/demo/oxygenshadowdemodialog.cpp:52
+#: oxygen/demo/oxygenshadowdemodialog.cpp:51
 msgid "Save shadows as pixmaps in provided directory"
 msgstr ""
 
-#: oxygen/demo/oxygenshadowdemodialog.cpp:72
+#: oxygen/demo/oxygenshadowdemodialog.cpp:71
 msgid "Draw window background"
 msgstr ""
 
@@ -619,153 +731,63 @@ msgstr "Minimakan Tetingkap"
 msgid "Oxygen"
 msgstr "Oxygen"
 
-#: oxygen/oxygenclient.cpp:215
+#: oxygen/oxygenclient.cpp:217
 msgid "Window Actions Menu"
 msgstr ""
 
-#: oxygen/oxygenclient.cpp:218
+#: oxygen/oxygenclient.cpp:220
 msgid "Application Menu"
 msgstr ""
 
-#: oxygen/oxygenclient.cpp:233
+#: oxygen/oxygenclient.cpp:235
 msgid "Keep Above Others"
 msgstr "Kekalkan Atas Yang Lain"
 
-#: oxygen/oxygenclient.cpp:236
+#: oxygen/oxygenclient.cpp:238
 msgid "Keep Below Others"
 msgstr "Kekalkan Bawah Yang Lain"
 
-#: oxygen/oxygenclient.cpp:239
+#: oxygen/oxygenclient.cpp:241
 msgid "On All Desktops"
 msgstr "Pada Semua Desktop"
 
-#: oxygen/oxygenclient.cpp:242
+#: oxygen/oxygenclient.cpp:244
 msgid "Shade Button"
 msgstr ""
 
-#: oxygen/oxygenconfiguration.cpp:251
-msgid "Center (Full Width)"
-msgstr ""
-
-#: oxygen/oxygenconfiguration.cpp:278
 #, fuzzy
-#| msgid "Small"
-msgctxt "@item:inlistbox Button size:"
-msgid "Small"
-msgstr "Kecil"
+#~| msgid "Small"
+#~ msgctxt "@item:inlistbox Button size:"
+#~ msgid "Small"
+#~ msgstr "Kecil"
 
-#: oxygen/oxygenconfiguration.cpp:279
 #, fuzzy
-msgctxt "@item:inlistbox Button size:"
-msgid "Normal"
-msgstr "Normal"
+#~| msgid "Large"
+#~ msgctxt "@item:inlistbox Button size:"
+#~ msgid "Large"
+#~ msgstr "Besar"
 
-#: oxygen/oxygenconfiguration.cpp:280
 #, fuzzy
-#| msgid "Large"
-msgctxt "@item:inlistbox Button size:"
-msgid "Large"
-msgstr "Besar"
+#~ msgctxt "@item:inlistbox Border size:"
+#~ msgid "Normal"
+#~ msgstr "Normal"
 
-#: oxygen/oxygenconfiguration.cpp:281
 #, fuzzy
-#| msgid "Large"
-msgctxt "@item:inlistbox Button size:"
-msgid "Very Large"
-msgstr "Sangat Besar"
+#~| msgid "Large"
+#~ msgctxt "@item:inlistbox Border size:"
+#~ msgid "Large"
+#~ msgstr "Besar"
 
-#: oxygen/oxygenconfiguration.cpp:282
 #, fuzzy
-msgctxt "@item:inlistbox Button size:"
-msgid "Huge"
-msgstr "Teramat Besar"
+#~| msgid "Large"
+#~ msgctxt "@item:inlistbox Border size:"
+#~ msgid "Very Large"
+#~ msgstr "Sangat Besar"
 
-#: oxygen/oxygenconfiguration.cpp:322
-msgctxt "@item:inlistbox Border size:"
-msgid "No Border"
-msgstr ""
-
-#: oxygen/oxygenconfiguration.cpp:323
-msgctxt "@item:inlistbox Border size:"
-msgid "No Side Border"
-msgstr ""
-
-#: oxygen/oxygenconfiguration.cpp:324
 #, fuzzy
-msgctxt "@item:inlistbox Border size:"
-msgid "Tiny"
-msgstr "Sangat Kecil"
-
-#: oxygen/oxygenconfiguration.cpp:325
-#, fuzzy
-msgctxt "@item:inlistbox Border size:"
-msgid "Normal"
-msgstr "Normal"
-
-#: oxygen/oxygenconfiguration.cpp:326
-#, fuzzy
-#| msgid "Large"
-msgctxt "@item:inlistbox Border size:"
-msgid "Large"
-msgstr "Besar"
-
-#: oxygen/oxygenconfiguration.cpp:327
-#, fuzzy
-#| msgid "Large"
-msgctxt "@item:inlistbox Border size:"
-msgid "Very Large"
-msgstr "Sangat Besar"
-
-#: oxygen/oxygenconfiguration.cpp:328
-#, fuzzy
-msgctxt "@item:inlistbox Border size:"
-msgid "Huge"
-msgstr "Teramat Besar"
-
-#: oxygen/oxygenconfiguration.cpp:329
-#, fuzzy
-#| msgid "Large"
-msgctxt "@item:inlistbox Border size:"
-msgid "Very Huge"
-msgstr "Sangat Teramat Besar"
-
-#: oxygen/oxygenconfiguration.cpp:330
-#, fuzzy
-#| msgid "Resize"
-msgctxt "@item:inlistbox Border size:"
-msgid "Oversized"
-msgstr "Lebihsaiz"
-
-#: oxygen/oxygenconfiguration.cpp:359
-#, fuzzy
-msgid "Solid Color"
-msgstr "Warna Padu"
-
-#: oxygen/oxygenconfiguration.cpp:360
-#, fuzzy
-#| msgid "Draw &gradients"
-msgid "Radial Gradient"
-msgstr "Lukis &gradien"
-
-#: oxygen/oxygenconfiguration.cpp:361
-msgid "Follow Style Hint"
-msgstr ""
-
-#: oxygen/oxygenconfiguration.cpp:384
-msgid "Always Hide Extra Size Grip"
-msgstr ""
-
-#: oxygen/oxygenconfiguration.cpp:385
-msgid "Show Extra Size Grip When Needed"
-msgstr ""
-
-#: oxygen/oxygenexception.cpp:79
-msgid "Window Title"
-msgstr ""
-
-#: oxygen/oxygenexception.cpp:80
-msgid "Window Class Name"
-msgstr ""
+#~ msgctxt "@item:inlistbox Border size:"
+#~ msgid "Huge"
+#~ msgstr "Teramat Besar"
 
 #~ msgid ""
 #~ "Check this option if you want windows to be closed when you double click "
@@ -820,10 +842,6 @@ msgstr ""
 #~| msgid "Keep Below Others"
 #~ msgid "Keep below others"
 #~ msgstr "Letak di bawah yang lain"
-
-#, fuzzy
-#~ msgid "Disabled"
-#~ msgstr "Dimatikan"
 
 #, fuzzy
 #~ msgid "Variable"
@@ -934,14 +952,8 @@ msgstr ""
 #~ msgid "Here you can change the size of the resize handle."
 #~ msgstr "Di sini anda boleh ubah saiz bagi saiz semula handle."
 
-#~ msgid "Small"
-#~ msgstr "Kecil"
-
 #~ msgid "Medium"
 #~ msgstr "Sederhana"
-
-#~ msgid "Large"
-#~ msgstr "Besar"
 
 #~ msgid "Modern System"
 #~ msgstr "Sistem Moden"
