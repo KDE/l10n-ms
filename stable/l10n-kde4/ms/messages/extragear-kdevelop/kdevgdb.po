@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevgdb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-01 13:05+0200\n"
+"POT-Creation-Date: 2013-01-13 09:19+0100\n"
 "PO-Revision-Date: 2011-06-23 23:07+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -28,14 +28,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sharuzzaman@myrealbox.com"
 
-#: _watchitem.cpp:41
-msgid "Watches"
-msgstr "Perhati"
-
-#: _watchitem.cpp:59
-msgid "Recent"
-msgstr "Terkini"
-
 #: breakpointcontroller.cpp:505
 #, kde-format
 msgid "<br>Old value: %1"
@@ -52,18 +44,18 @@ msgstr "<br> Baru 1"
 msgid "Debugger Configuration"
 msgstr "Tetapan"
 
-#. i18n: ectx: property (text), widget (QLabel, gdbPath_label)
-#: debuggerconfigwidget.ui:32
-msgid "Debugger executable:"
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: debuggerconfigwidget.ui:26 debuggerplugin.cpp:429
+msgid "Debugger"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_gdbPath)
-#: debuggerconfigwidget.ui:45
+#: debuggerconfigwidget.ui:32
 msgid "Gdb executable"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_gdbPath)
-#: debuggerconfigwidget.ui:48
+#: debuggerconfigwidget.ui:35
 #, fuzzy
 msgid ""
 "To run \"gdb\" binary from $PATH, leave this field empty. To run custom gdb, "
@@ -72,30 +64,15 @@ msgid ""
 "\"), by typing the name here, or specify full path to the gdb executable."
 msgstr "Kepada Kepada a nama Anda a nama nama atau ke ."
 
-#. i18n: ectx: property (toolTip), widget (QLabel, debuggingShell_label)
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_debuggingShell)
-#: debuggerconfigwidget.ui:61 debuggerconfigwidget.ui:80
+#. i18n: ectx: property (toolTip), widget (QLabel, debuggingShell_label)
+#: debuggerconfigwidget.ui:42 debuggerconfigwidget.ui:77
 #, fuzzy
 msgid "Run gdb in a special shell (mainly for automake projects)"
 msgstr "Laksana dalam  a"
 
-#. i18n: ectx: property (whatsThis), widget (QLabel, debuggingShell_label)
-#: debuggerconfigwidget.ui:64
-#, fuzzy
-msgid ""
-"If you want gdb to be executed by a special shell or tool insert it here. "
-"The main use-case is for Automake based projects where the application is "
-"actually only a script and libtool is needed to get it to run inside gdb."
-msgstr "ke  a atau Automake a dan ke  ke ."
-
-#. i18n: ectx: property (text), widget (QLabel, debuggingShell_label)
-#: debuggerconfigwidget.ui:67
-#, fuzzy
-msgid "Debugging &shell:"
-msgstr "Nyahpepijat:"
-
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_debuggingShell)
-#: debuggerconfigwidget.ui:83
+#: debuggerconfigwidget.ui:45
 #, fuzzy
 msgid ""
 "If you want gdb to be executed by a special shell or tool insert it here. "
@@ -104,20 +81,40 @@ msgid ""
 "gdb."
 msgstr "ke  a atau Automake a dan<b></b> ke  ke ."
 
+#. i18n: ectx: property (text), widget (QLabel, gdbPath_label)
+#: debuggerconfigwidget.ui:58
+msgid "Debugger executable:"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, debuggingShell_label)
+#: debuggerconfigwidget.ui:80
+#, fuzzy
+msgid ""
+"If you want gdb to be executed by a special shell or tool insert it here. "
+"The main use-case is for Automake based projects where the application is "
+"actually only a script and libtool is needed to get it to run inside gdb."
+msgstr "ke  a atau Automake a dan ke  ke ."
+
+#. i18n: ectx: property (text), widget (QLabel, debuggingShell_label)
+#: debuggerconfigwidget.ui:83
+#, fuzzy
+msgid "Debugging &shell:"
+msgstr "Nyahpepijat:"
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: debuggerconfigwidget.ui:92
+#: debuggerconfigwidget.ui:99
 #, fuzzy
 msgid "Options"
 msgstr "Pilihan"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: debuggerconfigwidget.ui:101
+#: debuggerconfigwidget.ui:108
 #, fuzzy
 msgid "Display static &members:"
 msgstr "Paparan"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_displayStaticMembers)
-#: debuggerconfigwidget.ui:116
+#: debuggerconfigwidget.ui:123
 #, fuzzy
 msgid ""
 "Displaying static members makes GDB slower in\n"
@@ -129,13 +126,13 @@ msgid ""
 msgstr "dalam  KDE dan Qt dan buka ke ."
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: debuggerconfigwidget.ui:126
+#: debuggerconfigwidget.ui:133
 #, fuzzy
 msgid "Display &demangled names:"
 msgstr "Paparan"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_asmDemangle)
-#: debuggerconfigwidget.ui:138
+#: debuggerconfigwidget.ui:145
 #, fuzzy
 msgid ""
 "When displaying the disassembled code you\n"
@@ -144,28 +141,28 @@ msgid ""
 msgstr "ke  ke ."
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: debuggerconfigwidget.ui:148
+#: debuggerconfigwidget.ui:155
 msgid "Start Debugger with:"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_startWith)
-#: debuggerconfigwidget.ui:159
+#: debuggerconfigwidget.ui:166
 #, fuzzy
 msgid "Application Output"
 msgstr "Aplikasi"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_startWith)
-#: debuggerconfigwidget.ui:164
+#: debuggerconfigwidget.ui:171
 msgid "GDB Console"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_startWith)
-#: debuggerconfigwidget.ui:169
+#: debuggerconfigwidget.ui:176
 msgid "Frame Stack"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox)
-#: debuggerconfigwidget.ui:185
+#: debuggerconfigwidget.ui:190
 #, fuzzy
 msgid ""
 "This script is intended for the actual commands needed to connect to a "
@@ -176,41 +173,26 @@ msgid ""
 msgstr "ke  ke  a larian tidur ke  ke  ke "
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: debuggerconfigwidget.ui:188
+#: debuggerconfigwidget.ui:193
 #, fuzzy
 msgid "Remote Debugging"
 msgstr "Jauh Nyahpepijat"
 
-#. i18n: ectx: property (text), widget (QLabel, configGdbScript_label)
-#: debuggerconfigwidget.ui:194
-msgid "&Config gdb script:"
-msgstr ""
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_configGdbScript)
-#: debuggerconfigwidget.ui:207
-msgid "Gdb configure script"
-msgstr ""
-
-#. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_configGdbScript)
-#: debuggerconfigwidget.ui:210
-msgid "This script is sourced by gdb when the debugging starts."
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, runShellScript_label)
-#: debuggerconfigwidget.ui:220
+#: debuggerconfigwidget.ui:202
 #, fuzzy
 msgctxt "Shell script to be executed at run time"
 msgid "R&un shell script:"
 msgstr "Laksana:"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_runShellScript)
-#: debuggerconfigwidget.ui:233
+#: debuggerconfigwidget.ui:215
 #, fuzzy
 msgid "Script to start remote application"
 msgstr "ke "
 
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_runShellScript)
-#: debuggerconfigwidget.ui:242
+#: debuggerconfigwidget.ui:224
 #, fuzzy
 msgid ""
 "This shell script is run after the Config gdb script has been sourced by "
@@ -225,21 +207,19 @@ msgid ""
 "2b) Execute \"application\" on target."
 msgstr "ke  buka a Cari a ke  a rsh ssh Laksana buka Laksana buka."
 
-#. i18n: ectx: property (text), widget (QLabel, runGdbScript_label)
-#: debuggerconfigwidget.ui:249
-#, fuzzy
-msgctxt "Gdb script to be executed at run time."
-msgid "Run &gdb script:"
-msgstr "Laksana:"
+#. i18n: ectx: property (text), widget (QLabel, configGdbScript_label)
+#: debuggerconfigwidget.ui:231
+msgid "&Config gdb script:"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_runGdbScript)
-#: debuggerconfigwidget.ui:262
+#: debuggerconfigwidget.ui:244
 #, fuzzy
 msgid "Script to connect with remote application"
 msgstr "ke "
 
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_runGdbScript)
-#: debuggerconfigwidget.ui:269
+#: debuggerconfigwidget.ui:251
 #, fuzzy
 msgid ""
 "This script is sourced by gdb after the two preceding scripts have been "
@@ -250,6 +230,23 @@ msgid ""
 "\ttarget remote ...\tconnect to the remote debugger\n"
 "\tcontinue\t[optional] run debugging to the first breakpoint."
 msgstr "ke  ke  a larian tidur ke  ke  ke ."
+
+#. i18n: ectx: property (text), widget (QLabel, runGdbScript_label)
+#: debuggerconfigwidget.ui:258
+#, fuzzy
+msgctxt "Gdb script to be executed at run time."
+msgid "Run &gdb script:"
+msgstr "Laksana:"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_configGdbScript)
+#: debuggerconfigwidget.ui:271
+msgid "Gdb configure script"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_configGdbScript)
+#: debuggerconfigwidget.ui:274
+msgid "This script is sourced by gdb when the debugging starts."
+msgstr ""
 
 #: debuggerplugin.cpp:93
 msgid "GDB Support"
@@ -364,10 +361,6 @@ msgstr "ke  1"
 #, fuzzy, kde-format
 msgid "Debug process %1"
 msgstr "Nyahpepijat 1"
-
-#: debuggerplugin.cpp:429
-msgid "Debugger"
-msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, DebuggerTracingDialog)
 #: debuggertracingdialog.ui:13
@@ -630,30 +623,30 @@ msgid ""
 "\" instruction and \"step into\" instruction."
 msgstr "<b> Mesin</b><p> A larian Anda dan."
 
-#: disassemblewidget.cpp:162
+#: disassemblewidget.cpp:163
 #, fuzzy
 msgid "Address"
 msgstr "Alamat"
 
-#: disassemblewidget.cpp:162
+#: disassemblewidget.cpp:163
 #, fuzzy
 msgid "Function"
 msgstr "Fungsi"
 
-#: disassemblewidget.cpp:163
+#: disassemblewidget.cpp:164
 msgid "Offset"
 msgstr ""
 
-#: disassemblewidget.cpp:163
+#: disassemblewidget.cpp:164
 msgid "Instruction"
 msgstr ""
 
-#: disassemblewidget.cpp:173
+#: disassemblewidget.cpp:174
 #, fuzzy
 msgid "Disassemble View"
 msgstr "Paparkan"
 
-#: disassemblewidget.cpp:185
+#: disassemblewidget.cpp:186
 #, fuzzy
 msgid "Change &address"
 msgstr "Tuk&ar"
@@ -668,7 +661,7 @@ msgstr ""
 msgid "Debugging Shell Not Found"
 msgstr "Nyahpepijat Shell Tidak"
 
-#: gdb.cpp:330
+#: gdb.cpp:331
 #, fuzzy
 msgctxt "<b>Internal debugger error</b>"
 msgid ""
@@ -676,36 +669,36 @@ msgid ""
 "from gdb. Please submit a bug report."
 msgstr "<p> ralat a."
 
-#: gdb.cpp:332
+#: gdb.cpp:333
 #, fuzzy, kde-format
 msgid ""
 "The exception is: %1\n"
 "The MI response is: %2"
 msgstr "2"
 
-#: gdb.cpp:335
+#: gdb.cpp:336
 #, fuzzy
 msgid "Internal debugger error"
 msgstr "ralat"
 
-#: gdb.cpp:387
+#: gdb.cpp:388
 #, fuzzy, kde-format
 msgid ""
 "<b>Could not start debugger.</b><p>Could not run '%1'. Make sure that the "
 "path name is specified correctly."
 msgstr "<b></b><p> Buatan nama."
 
-#: gdb.cpp:391
+#: gdb.cpp:392
 msgid "Could not start debugger"
 msgstr ""
 
-#: gdb.cpp:408
+#: gdb.cpp:409
 msgid ""
 "<b>Gdb crashed.</b><p>Because of that the debug session has to be ended."
 "<br>Try to reproduce the crash with plain gdb and report a bug.<br>"
 msgstr ""
 
-#: gdb.cpp:411
+#: gdb.cpp:412
 msgid "Gdb crashed"
 msgstr ""
 
@@ -851,10 +844,16 @@ msgstr "Fail:"
 msgid "Select Core File"
 msgstr "Pilih Fail"
 
-#: stty.cpp:333
+#: stty.cpp:332
 #, fuzzy
 msgid "kdevelop: Debug application console"
 msgstr "Nyahpepijat"
+
+#~ msgid "Watches"
+#~ msgstr "Perhati"
+
+#~ msgid "Recent"
+#~ msgstr "Terkini"
 
 #, fuzzy
 #~ msgid ""
