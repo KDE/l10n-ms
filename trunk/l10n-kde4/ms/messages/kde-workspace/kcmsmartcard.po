@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsmartcard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:51+0100\n"
+"POT-Creation-Date: 2012-08-20 05:29+0200\n"
 "PO-Revision-Date: 2010-01-31 23:06+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -25,6 +25,35 @@ msgstr "Muhammad Najmi Ahmad Zabidi, Sharuzzaman Ahmat Raslan"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "md_najmi@yahoo.com, sharuzzaman@myrealbox.com"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: nosmartcardbase.ui:24
+msgid "<b>Unable to contact the KDE smartcard service.</b>"
+msgstr "<b>Gagal menghubungi servis kad pintar KDE</b>"
+
+#. i18n: ectx: property (title), widget (QGroupBox)
+#: nosmartcardbase.ui:35
+msgid "Possible Reasons"
+msgstr "Kemungkinan Punca"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: nosmartcardbase.ui:49
+msgid ""
+"\n"
+"1) The KDE daemon, 'kded' is not running. You can restart it by running the "
+"command 'kdeinit' and then try reloading the KDE System Settings to see if "
+"this message goes away.\n"
+"\n"
+"2) You do not appear to have smartcard support in the KDE libraries. You "
+"will need to recompile the kdelibs package with libpcsclite installed."
+msgstr ""
+"\n"
+"1) Daemon KDE, 'kded' tidak dilaksanakan. Anda boleh ulangmula dengan "
+"melaksanakan arahan 'kdeinit' dan kemudian cuba ulangmuat Tetapan Sistem KDE "
+"untuk melihat sama ada mesej ini hilang.\n"
+"\n"
+"2) Anda kelihatan tidak mempunyai sokongan kad pintar didalam pustaka KDE. "
+"Anda perlu untuk ulanghimpun pakej kdelibs dengan libpcsclite dipasang."
 
 #: smartcard.cpp:65
 msgid "kcmsmartcard"
@@ -84,82 +113,85 @@ msgstr ""
 "untuk kad pintar. Kegunannya; seperti menyimpan sijil SSL dan log masuk ke "
 "sistem."
 
-#~ msgid "<b>Unable to contact the KDE smartcard service.</b>"
-#~ msgstr "<b>Gagal menghubungi servis kad pintar KDE</b>"
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: smartcardbase.ui:31
+msgid "Smartcard Support"
+msgstr "Sokongan Kad Pintar"
 
-#~ msgid "Possible Reasons"
-#~ msgstr "Kemungkinan Punca"
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: smartcardbase.ui:42
+msgid "&Enable smartcard support"
+msgstr "Bol&ehkan sokongan kad pintar"
 
-#~ msgid ""
-#~ "\n"
-#~ "1) The KDE daemon, 'kded' is not running. You can restart it by running "
-#~ "the command 'kdeinit' and then try reloading the KDE System Settings to "
-#~ "see if this message goes away.\n"
-#~ "\n"
-#~ "2) You do not appear to have smartcard support in the KDE libraries. You "
-#~ "will need to recompile the kdelibs package with libpcsclite installed."
-#~ msgstr ""
-#~ "\n"
-#~ "1) Daemon KDE, 'kded' tidak dilaksanakan. Anda boleh ulangmula dengan "
-#~ "melaksanakan arahan 'kdeinit' dan kemudian cuba ulangmuat Tetapan Sistem "
-#~ "KDE untuk melihat sama ada mesej ini hilang.\n"
-#~ "\n"
-#~ "2) Anda kelihatan tidak mempunyai sokongan kad pintar didalam pustaka "
-#~ "KDE. Anda perlu untuk ulanghimpun pakej kdelibs dengan libpcsclite "
-#~ "dipasang."
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: smartcardbase.ui:61
+msgid "Enable &polling to autodetect card events"
+msgstr "Hidu&pkan polling untuk autokesan acara kad"
 
-#~ msgid "Smartcard Support"
-#~ msgstr "Sokongan Kad Pintar"
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: smartcardbase.ui:64
+msgid ""
+"In most cases you should have this enabled. It allows KDE to automatically "
+"detect card insertion and reader hotplug events."
+msgstr ""
+"Dalam kebanyakan kes anda patut hidupkan ini, kerana membolehkan KDE "
+"mengesan kemasukan kad secara automatik dan tugas pembaca hotplug"
 
-#~ msgid "&Enable smartcard support"
-#~ msgstr "Bol&ehkan sokongan kad pintar"
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: smartcardbase.ui:92
+msgid "Automatically &launch card manager if inserted card is unclaimed"
+msgstr ""
+"&Lancarkan pengurus kad secara automatik jika kad dimasukkan tidak dituntut"
 
-#~ msgid "Enable &polling to autodetect card events"
-#~ msgstr "Hidu&pkan polling untuk autokesan acara kad"
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: smartcardbase.ui:95
+msgid ""
+"When you insert a smartcard, KDE can automatically launch a management tool "
+"if no other application attempts to use the card."
+msgstr ""
+"Apabila anda masukkan kad pintar, KDE secara automatik akan melancarkan "
+"alatan pengurusan jika tiada aplikasi lain cuba menggunakan kad"
 
-#~ msgid ""
-#~ "In most cases you should have this enabled. It allows KDE to "
-#~ "automatically detect card insertion and reader hotplug events."
-#~ msgstr ""
-#~ "Dalam kebanyakan kes anda patut hidupkan ini, kerana membolehkan KDE "
-#~ "mengesan kemasukan kad secara automatik dan tugas pembaca hotplug"
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: smartcardbase.ui:106
+msgid "&Beep on card insert and removal"
+msgstr "&Beep apabila kad masuk dan keluar"
 
-#~ msgid "Automatically &launch card manager if inserted card is unclaimed"
-#~ msgstr ""
-#~ "&Lancarkan pengurus kad secara automatik jika kad dimasukkan tidak "
-#~ "dituntut"
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: smartcardbase.ui:135
+msgid "Readers"
+msgstr "Pembaca"
 
-#~ msgid ""
-#~ "When you insert a smartcard, KDE can automatically launch a management "
-#~ "tool if no other application attempts to use the card."
-#~ msgstr ""
-#~ "Apabila anda masukkan kad pintar, KDE secara automatik akan melancarkan "
-#~ "alatan pengurusan jika tiada aplikasi lain cuba menggunakan kad"
+#. i18n: ectx: property (text), widget (K3ListView)
+#: smartcardbase.ui:152
+msgid "Reader"
+msgstr "Pembaca"
 
-#~ msgid "&Beep on card insert and removal"
-#~ msgstr "&Beep apabila kad masuk dan keluar"
+#. i18n: ectx: property (text), widget (K3ListView)
+#: smartcardbase.ui:163
+msgid "Type"
+msgstr "Jenis"
 
-#~ msgid "Readers"
-#~ msgstr "Pembaca"
+#. i18n: ectx: property (text), widget (K3ListView)
+#: smartcardbase.ui:174
+msgid "Subtype"
+msgstr "Subjenis"
 
-#~ msgid "Reader"
-#~ msgstr "Pembaca"
+#. i18n: ectx: property (text), widget (K3ListView)
+#: smartcardbase.ui:185
+msgid "SubSubtype"
+msgstr "Subsubjenis"
 
-#~ msgid "Type"
-#~ msgstr "Jenis"
+#. i18n: ectx: property (title), widget (QGroupBox)
+#: smartcardbase.ui:228
+msgid "PCSCLite Configuration"
+msgstr "Penyelarasan PCSCLite"
 
-#~ msgid "Subtype"
-#~ msgstr "Subjenis"
-
-#~ msgid "SubSubtype"
-#~ msgstr "Subsubjenis"
-
-#~ msgid "PCSCLite Configuration"
-#~ msgstr "Penyelarasan PCSCLite"
-
-#~ msgid ""
-#~ "To add new readers you have to modify /etc/readers.conf file and re-start "
-#~ "pcscd"
-#~ msgstr ""
-#~ "Unutk masukkan kad baru anda perlu ubah /etc/readers.conf dan mulakan "
-#~ "semula pcscd"
+#. i18n: ectx: property (text), widget (QLabel)
+#: smartcardbase.ui:251
+msgid ""
+"To add new readers you have to modify /etc/readers.conf file and re-start "
+"pcscd"
+msgstr ""
+"Unutk masukkan kad baru anda perlu ubah /etc/readers.conf dan mulakan semula "
+"pcscd"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:46+0100\n"
+"POT-Creation-Date: 2012-08-20 04:22+0200\n"
 "PO-Revision-Date: 2008-07-22 22:01+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -81,8 +81,9 @@ msgstr "Desktop Default:"
 msgid "Invitation"
 msgstr ""
 
-#: invitedialog.cpp:72
-#, fuzzy, kde-format
+#. i18n: ectx: property (text), widget (QPushButton, btnManageInvite)
+#: invitedialog.cpp:72 ui/invitewidget.ui:125
+#, fuzzy, no-c-format, kde-format
 msgid "&Manage Invitations (%1)..."
 msgstr "Urus Volum"
 
@@ -102,6 +103,49 @@ msgid ""
 "If you want to create a permanent password for Desktop Sharing, allow "
 "'Uninvited Connections' \n"
 "in the configuration."
+msgstr ""
+
+#. i18n: ectx: label, entry (useDefaultPort), group (TCP)
+#: krfb.kcfg:8
+msgid "Use the default port for VNC (5900)"
+msgstr ""
+
+#. i18n: ectx: label, entry (port), group (TCP)
+#: krfb.kcfg:12
+msgid "This is the port on which krfb will listen."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_publishService)
+#. i18n: ectx: label, entry (publishService), group (TCP)
+#: krfb.kcfg:16 ui/configtcp.ui:22
+msgid "Announce the service on the local network"
+msgstr ""
+
+#. i18n: ectx: label, entry (allowDesktopControl), group (Security)
+#: krfb.kcfg:22
+msgid "Allow remote connections to manage the desktop."
+msgstr ""
+
+#. i18n: ectx: label, entry (askOnConnect), group (Security)
+#: krfb.kcfg:26
+#, fuzzy
+msgid "Ask before allowing a remote connection."
+msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
+
+#. i18n: ectx: label, entry (allowUninvitedConnections), group (Security)
+#: krfb.kcfg:30
+msgid "Allow connections without an invitation."
+msgstr ""
+
+#. i18n: ectx: label, entry (uninvitedConnectionPassword), group (Security)
+#: krfb.kcfg:34
+#, fuzzy
+msgid "Password for uninvited connections."
+msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
+
+#. i18n: ectx: label, entry (preferredFrameBufferPlugin), group (FrameBuffer)
+#: krfb.kcfg:39
+msgid "Preferred Frame Buffer Plugin"
 msgstr ""
 
 #: main.cpp:42
@@ -334,80 +378,274 @@ msgstr ""
 msgid "Desktop Sharing - connected"
 msgstr " Selaraskan Perkongsian Desktop"
 
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
+#: ui/configsecurity.ui:20
 #, fuzzy
-#~ msgid "Password for uninvited connections."
-#~ msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
+msgid "Ask before accepting connections"
+msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
 
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowDesktopControl)
+#: ui/configsecurity.ui:30
+msgid "Allow remote connections to control your desktop"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
+#: ui/configsecurity.ui:40
 #, fuzzy
-#~ msgid "Ask before accepting connections"
-#~ msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
+msgid "Allow uninvited connections"
+msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/configsecurity.ui:50
 #, fuzzy
-#~ msgid "Allow uninvited connections"
-#~ msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
+msgid "Uninvited connections password:"
+msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
 
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useDefaultPort)
+#: ui/configtcp.ui:32
+msgid "Use default port"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/configtcp.ui:50
+msgid "Listening port:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: ui/connectionwidget.ui:47
 #, fuzzy
-#~ msgid "Uninvited connections password:"
-#~ msgstr "Pembalut TCP: sambungann dari %s:%u ditolak."
+msgid "Attention"
+msgstr "Perhatian!"
 
+#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
+#: ui/connectionwidget.ui:72
+msgid ""
+"Somebody is requesting a connection to your computer. Granting this will "
+"allow the remote user to watch your desktop. "
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: ui/connectionwidget.ui:102
 #, fuzzy
-#~ msgid "Attention"
-#~ msgstr "Perhatian!"
+msgid "Remote system:"
+msgstr "Ulangbut Sistem"
 
+#. i18n: ectx: property (text), widget (QLabel, remoteHost)
+#: ui/connectionwidget.ui:118
+msgid "123.234.123.234"
+msgstr "123.234.123.234"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
+#: ui/connectionwidget.ui:136 ui/tubesconnectionwidget.ui:101
+msgid ""
+"If you turn this option on, the remote user can enter keystrokes and use "
+"your mouse pointer. This gives them full control over your computer, so be "
+"careful. When the option is disabled the remote user can only watch your "
+"screen."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
+#: ui/connectionwidget.ui:139 ui/tubesconnectionwidget.ui:104
+msgid "Allow remote user to &control keyboard and mouse"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: ui/invitewidget.ui:40 ui/manageinvitations.ui:25
 #, fuzzy
-#~ msgid "Remote system:"
-#~ msgstr "Ulangbut Sistem"
+msgid "Welcome to KDE Desktop Sharing"
+msgstr "Perkongsian Ruang Kerja"
 
-#~ msgid "123.234.123.234"
-#~ msgstr "123.234.123.234"
+#. i18n: ectx: property (text), widget (QLabel, helpLabel)
+#: ui/invitewidget.ui:50
+msgid ""
+"KDE Desktop Sharing allows you to invite somebody at a remote location to "
+"watch and possibly control your desktop. <a href=\"whatsthis\">More about "
+"invitations...</a>"
+msgstr ""
 
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnCreateInvite)
+#: ui/invitewidget.ui:105
+msgid ""
+"Create a new invitation and display the connection data. Use this option if "
+"you want to invite somebody personally, for example, to give the connection "
+"data over the phone."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, btnCreateInvite)
+#: ui/invitewidget.ui:108
 #, fuzzy
-#~ msgid "Create &Personal Invitation..."
-#~ msgstr "Default Desktop Peribadi"
+msgid "Create &Personal Invitation..."
+msgstr "Default Desktop Peribadi"
 
-#, fuzzy
-#~ msgid "Invite via &Email..."
-#~ msgstr "Alamat _emel webmaster:"
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnEmailInvite)
+#: ui/invitewidget.ui:115
+msgid ""
+"This button will start your email application with a pre-configured text "
+"that explains to the recipient how to connect to your computer. "
+msgstr ""
 
+#. i18n: ectx: property (text), widget (QPushButton, btnEmailInvite)
+#: ui/invitewidget.ui:118
 #, fuzzy
-#~ msgid "Creation Time"
-#~ msgstr "direktori %s dicipta"
+msgid "Invite via &Email..."
+msgstr "Alamat _emel webmaster:"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, ManageInvitationsDialog)
+#: ui/manageinvitations.ui:13
 #, fuzzy
-#~ msgid "Create a new personal invitation..."
-#~ msgstr "Cipta Volum Logikal Baru"
+msgid "Manage Invitations - Desktop Sharing"
+msgstr "Urus Volum"
 
-#, fuzzy
-#~ msgid "New &Personal Invitation..."
-#~ msgstr "Default Desktop Peribadi"
+#. i18n: ectx: property (text), widget (QLabel, helpLabel)
+#: ui/manageinvitations.ui:38
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">KDE Desktop Sharing allows "
+"you to invite somebody at a remote location to watch and possibly control "
+"your desktop. <a href=\"whatsthis\">More about invitations...</a></p></"
+"body></html>"
+msgstr ""
 
+#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
+#: ui/manageinvitations.ui:95
 #, fuzzy
-#~ msgid "&New Email Invitation..."
-#~ msgstr "Alamat _emel webmaster:"
+msgid "Creation Time"
+msgstr "direktori %s dicipta"
 
-#, fuzzy
-#~ msgid "Delete all invitations"
-#~ msgstr "Membuang semua rantai:"
+#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
+#: ui/manageinvitations.ui:100
+msgid "Expire Time"
+msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:124
 #, fuzzy
-#~ msgid "Delete the selected invitation"
-#~ msgstr "Padam giliran dipilih"
+msgid "Create a new personal invitation..."
+msgstr "Cipta Volum Logikal Baru"
 
+#. i18n: ectx: property (whatsThis), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:127
 #, fuzzy
-#~ msgid "<b>Host:</b>"
-#~ msgstr "Hos"
+msgid "Click this button to create a new personal invitation."
+msgstr "Cipta Volum Logikal Baru"
 
+#. i18n: ectx: property (text), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:130
 #, fuzzy
-#~ msgid "<b>Password:</b>"
-#~ msgstr "Katalaluan:"
+msgid "New &Personal Invitation..."
+msgstr "Default Desktop Peribadi"
 
+#. i18n: ectx: property (toolTip), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:137
 #, fuzzy
-#~ msgid "<b>Expiration time:</b>"
-#~ msgstr "Waktu Alaska"
+msgid "Send a new invitation via email..."
+msgstr "Kirim emel dan urus penjadualan anda"
 
+#. i18n: ectx: property (whatsThis), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:140
+msgid "Click this button to send a new invitation via email."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:143
 #, fuzzy
-#~ msgid "Confirmation"
-#~ msgstr "Membuang semua rantai:"
+msgid "&New Email Invitation..."
+msgstr "Alamat _emel webmaster:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:153
+#, fuzzy
+msgid "Delete all invitations"
+msgstr "Membuang semua rantai:"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:156
+#, fuzzy
+msgid "Deletes all open invitations."
+msgstr "Membuang semua rantai:"
+
+#. i18n: ectx: property (text), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:159
+msgid "Delete All"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:169
+#, fuzzy
+msgid "Delete the selected invitation"
+msgstr "Padam giliran dipilih"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:172
+msgid ""
+"Delete the selected invitation. The invited person will not be able to "
+"connect using this invitation anymore."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:175
+msgid "&Delete"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
+#: ui/personalinvitewidget.ui:47
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Personal Invitation</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Give the information below "
+"to the person that you want to invite (<a href=\"htc\">how to connect</a>). "
+"Note that everybody who gets the password can connect, so be careful.</p></"
+"body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel5)
+#: ui/personalinvitewidget.ui:81
+#, fuzzy
+msgid "<b>Host:</b>"
+msgstr "Hos"
+
+#. i18n: ectx: property (text), widget (QLabel, hostHelpLabel)
+#: ui/personalinvitewidget.ui:116
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">Help</a></"
+"p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel6)
+#: ui/personalinvitewidget.ui:129
+#, fuzzy
+msgid "<b>Password:</b>"
+msgstr "Katalaluan:"
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel7)
+#: ui/personalinvitewidget.ui:161
+#, fuzzy
+msgid "<b>Expiration time:</b>"
+msgstr "Waktu Alaska"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: ui/tubesconnectionwidget.ui:48
+#, fuzzy
+msgid "Confirmation"
+msgstr "Membuang semua rantai:"
 
 #, fuzzy
 #~ msgid "Connection side image"
