@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-25 02:04+0100\n"
+"POT-Creation-Date: 2013-02-28 02:09+0100\n"
 "PO-Revision-Date: 2008-07-08 22:08+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -2443,56 +2443,44 @@ msgstr "Pelengkapan"
 msgid "Label"
 msgstr "Lavender"
 
-#. i18n: ectx: property (windowTitle), widget (QDialog, DetailGroupSectionDialog)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:30
+#: koreport/wrtembed/detailgroupsectiondialog.cpp:38
 #, fuzzy
 #| msgid "Exceptions"
 msgid "Group Section Editor"
 msgstr "Pengecualian"
 
 #. i18n: ectx: property (text), widget (QLabel, lblColumn)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:38
+#: koreport/wrtembed/detailgroupsectiondialog.ui:29
 #, fuzzy
 #| msgid "Columns:"
 msgid "Column:"
 msgstr "Kolum:"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSort)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:55
+#: koreport/wrtembed/detailgroupsectiondialog.ui:46
 #, fuzzy
 #| msgid "Street:"
-msgid "Sort"
+msgid "Sort:"
 msgstr "Jalan:"
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbHead)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:74
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: koreport/wrtembed/detailgroupsectiondialog.ui:63
 #, fuzzy
 #| msgid "Change Shadow"
-msgid "Show Group Header"
+msgid "Show group header:"
 msgstr "Ubah Bayang"
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbFoot)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:81
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: koreport/wrtembed/detailgroupsectiondialog.ui:77
 #, fuzzy
 #| msgid "Change Shadow"
-msgid "Show Group Footer"
+msgid "Show group footer:"
 msgstr "Ubah Bayang"
 
-#. i18n: ectx: property (text), widget (QCheckBox, breakAfterFooter)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:88
-msgid "Insert Page Break After this Footer"
+#. i18n: ectx: property (text), widget (QLabel, breakAfterFooterLabel)
+#: koreport/wrtembed/detailgroupsectiondialog.ui:94
+msgid "Insert page break after group footer:"
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, btnOk)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:135
-msgid "&OK"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, bntCancel)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:148
-#, fuzzy
-msgid "&Cancel"
-msgstr "Ubah Huruf"
 
 #: koreport/wrtembed/KoReportDesigner.cpp:497
 msgid "Page Header (Any)"
@@ -2534,16 +2522,12 @@ msgstr ""
 msgid "Page Footer (Last)"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbReportHeader)
 #: koreport/wrtembed/KoReportDesigner.cpp:537
-#: koreport/wrtembed/sectioneditor.ui:47
 #, fuzzy
 msgid "Report Header"
 msgstr "&Pengepala"
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbReportFooter)
 #: koreport/wrtembed/KoReportDesigner.cpp:541
-#: koreport/wrtembed/sectioneditor.ui:104
 #, fuzzy
 msgid "Report Footer"
 msgstr "&Pengaki"
@@ -2658,139 +2642,122 @@ msgstr ""
 msgid "Detail"
 msgstr "&Piawai"
 
-#: koreport/wrtembed/sectioneditor.cpp:279
-msgid "Ascending"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:280
-msgid "Descending"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:302
-#: koreport/wrtembed/sectioneditor.cpp:343
-msgid "Error Encountered"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:303
-#: koreport/wrtembed/sectioneditor.cpp:344
-msgid "Unable to add a new group because its name would not be unique"
-msgstr ""
-
-#. i18n: ectx: property (windowTitle), widget (QDialog, SectionEditor)
-#: koreport/wrtembed/sectioneditor.ui:30
+#: koreport/wrtembed/sectioneditor.cpp:59
 msgid "Section Editor"
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, gbPageFooter)
-#: koreport/wrtembed/sectioneditor.ui:54
-#, fuzzy
-msgid "Page Footer"
-msgstr "&Pengaki"
+#: koreport/wrtembed/sectioneditor.cpp:63
+msgid "Add..."
+msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbFootEven)
-#: koreport/wrtembed/sectioneditor.ui:66
+#: koreport/wrtembed/sectioneditor.cpp:65
+#: rdf/KoRdfCalendarEventTreeWidgetItem.cpp:50
+#: rdf/KoRdfFoaFTreeWidgetItem.cpp:70
 #, fuzzy
-#| msgid "Company Name"
-msgid "Even Page(s)"
-msgstr "Nama Syarikat"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbFootFirst)
-#. i18n: ectx: property (text), widget (QCheckBox, cbHeadFirst)
-#: koreport/wrtembed/sectioneditor.ui:73
-#: koreport/wrtembed/sectioneditor.ui:137
-#, fuzzy
-msgid "First Page"
-msgstr "Halaman Berikutnya"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbFootLast)
-#. i18n: ectx: property (text), widget (QCheckBox, cbHeadLast)
-#: koreport/wrtembed/sectioneditor.ui:80
-#: koreport/wrtembed/sectioneditor.ui:123
-#, fuzzy
-#| msgid "Paste Text"
-msgid "Last Page"
-msgstr "Tampalkan Teks"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbFootOdd)
-#. i18n: ectx: property (text), widget (QCheckBox, cbHeadOdd)
-#: koreport/wrtembed/sectioneditor.ui:87
-#: koreport/wrtembed/sectioneditor.ui:130
-#, fuzzy
-#| msgid "Company Name"
-msgid "Odd Page(s)"
-msgstr "Nama Syarikat"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbFootAny)
-#: koreport/wrtembed/sectioneditor.ui:94
-#, fuzzy
-#| msgid "Company Name"
-msgid "Any Page(s)"
-msgstr "Nama Syarikat"
-
-#. i18n: ectx: property (title), widget (QGroupBox, gbPageHeader)
-#: koreport/wrtembed/sectioneditor.ui:111
-#, fuzzy
-#| msgid "Page Preview"
-msgid "Page Header"
-msgstr "Prapapar Halaman"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbHeadEven)
-#: koreport/wrtembed/sectioneditor.ui:144
-#, fuzzy
-#| msgid "Company Name"
-msgid "Even Pages(s)"
-msgstr "Nama Syarikat"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbHeadAny)
-#: koreport/wrtembed/sectioneditor.ui:151
-#, fuzzy
-#| msgid "Company Name"
-msgid "Any Pages(s)"
-msgstr "Nama Syarikat"
-
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
-#: koreport/wrtembed/sectioneditor.ui:163
-#, fuzzy
-#| msgid "Exceptions"
-msgid "Group Sections"
-msgstr "Pengecualian"
-
-#. i18n: ectx: property (text), widget (QPushButton, btnAdd)
-#: koreport/wrtembed/sectioneditor.ui:186 main/KoVersionDialog.cpp:72
-msgid "&Add"
-msgstr "&Tambah"
-
-#. i18n: ectx: property (text), widget (QPushButton, btnEdit)
-#: koreport/wrtembed/sectioneditor.ui:193
-#, fuzzy
-msgid "&Edit"
+msgid "Edit..."
 msgstr "Tambahkan Matriks..."
 
-#. i18n: ectx: property (text), widget (QPushButton, btnRemove)
-#: koreport/wrtembed/sectioneditor.ui:200
+#: koreport/wrtembed/sectioneditor.cpp:67
 #: kotext/commands/ChangeTrackedDeleteCommand.cpp:282
 #, fuzzy
 msgid "Delete"
 msgstr "Hapuskan Teks"
 
-#. i18n: ectx: property (text), widget (QPushButton, btnMoveUp)
-#: koreport/wrtembed/sectioneditor.ui:207
+#: koreport/wrtembed/sectioneditor.cpp:69
 #, fuzzy
-msgid "Move &Up"
+msgid "Move Up"
 msgstr "Hapuskan Teks"
 
-#. i18n: ectx: property (text), widget (QPushButton, brnMoveDown)
-#: koreport/wrtembed/sectioneditor.ui:214
+#: koreport/wrtembed/sectioneditor.cpp:71
 #, fuzzy
-msgid "Move &Down"
+msgid "Move Down"
 msgstr "Hapuskan Teks"
 
-#. i18n: ectx: property (text), widget (QPushButton, buttonOk)
-#: koreport/wrtembed/sectioneditor.ui:266
+#: koreport/wrtembed/sectioneditor.cpp:306
+msgid "Ascending"
+msgstr ""
+
+#: koreport/wrtembed/sectioneditor.cpp:307
+msgid "Descending"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbReportHeader)
+#: koreport/wrtembed/sectioneditor.ui:29
 #, fuzzy
-#| msgid "Colors"
-msgid "&Close"
-msgstr "Warna"
+#| msgid "Change Shadow"
+msgid "Show report header"
+msgstr "Ubah Bayang"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbReportFooter)
+#: koreport/wrtembed/sectioneditor.ui:36
+#, fuzzy
+#| msgid "Change Shadow"
+msgid "Show report footer"
+msgstr "Ubah Bayang"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbPageHeader)
+#: koreport/wrtembed/sectioneditor.ui:43
+#, fuzzy
+#| msgid "Page Preview"
+msgid "Page Header"
+msgstr "Prapapar Halaman"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: koreport/wrtembed/sectioneditor.ui:51
+#: koreport/wrtembed/sectioneditor.ui:138
+#, fuzzy
+msgid "First page:"
+msgstr "Halaman Berikutnya"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: koreport/wrtembed/sectioneditor.ui:65
+#: koreport/wrtembed/sectioneditor.ui:152
+#, fuzzy
+#| msgid "Company Name"
+msgid "Even pages:"
+msgstr "Nama Syarikat"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: koreport/wrtembed/sectioneditor.ui:79
+#: koreport/wrtembed/sectioneditor.ui:166
+#, fuzzy
+#| msgid "Company Name"
+msgid "Any pages:"
+msgstr "Nama Syarikat"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: koreport/wrtembed/sectioneditor.ui:97
+#: koreport/wrtembed/sectioneditor.ui:184
+#, fuzzy
+#| msgid "Paste Text"
+msgid "Last page:"
+msgstr "Tampalkan Teks"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (text), widget (QLabel, label_12)
+#: koreport/wrtembed/sectioneditor.ui:111
+#: koreport/wrtembed/sectioneditor.ui:198
+#, fuzzy
+#| msgid "Company Name"
+msgid "Odd pages:"
+msgstr "Nama Syarikat"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbPageHeader_2)
+#: koreport/wrtembed/sectioneditor.ui:130
+#, fuzzy
+msgid "Page Footer"
+msgstr "&Pengaki"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
+#: koreport/wrtembed/sectioneditor.ui:217
+#, fuzzy
+#| msgid "Exceptions"
+msgid "Group Sections"
+msgstr "Pengecualian"
 
 #: kotext/commands/ChangeListCommand.cpp:41
 #: kotext/commands/ChangeListCommand.cpp:88
@@ -4543,6 +4510,10 @@ msgstr "Disimpan Oleh"
 msgid "Comment"
 msgstr "Komen"
 
+#: main/KoVersionDialog.cpp:72
+msgid "&Add"
+msgstr "&Tambah"
+
 #: main/KoVersionDialog.cpp:78
 #, fuzzy
 msgid "&Modify"
@@ -5834,12 +5805,6 @@ msgstr "Masa "
 msgid "Calendar Event"
 msgstr ""
 
-#: rdf/KoRdfCalendarEventTreeWidgetItem.cpp:50
-#: rdf/KoRdfFoaFTreeWidgetItem.cpp:70
-#, fuzzy
-msgid "Edit..."
-msgstr "Tambahkan Matriks..."
-
 #: rdf/KoRdfCalendarEventTreeWidgetItem.cpp:53
 msgid "Import event to Calendar"
 msgstr ""
@@ -6782,6 +6747,33 @@ msgid "%1"
 msgstr "%1%"
 
 #, fuzzy
+#~ msgid "&Cancel"
+#~ msgstr "Ubah Huruf"
+
+#, fuzzy
+#~ msgid "First Page"
+#~ msgstr "Halaman Berikutnya"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Even Pages(s)"
+#~ msgstr "Nama Syarikat"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Any Pages(s)"
+#~ msgstr "Nama Syarikat"
+
+#, fuzzy
+#~ msgid "&Edit"
+#~ msgstr "Tambahkan Matriks..."
+
+#, fuzzy
+#~| msgid "Colors"
+#~ msgid "&Close"
+#~ msgstr "Warna"
+
+#, fuzzy
 #~ msgid "Creation error"
 #~ msgstr "Kata Pelengkapan"
 
@@ -7447,10 +7439,6 @@ msgstr "%1%"
 #, fuzzy
 #~ msgid "Vertical Stretch"
 #~ msgstr "&Menegak"
-
-#, fuzzy
-#~ msgid "First page:"
-#~ msgstr "Halaman Berikutnya"
 
 #, fuzzy
 #~| msgid "Confirm Save"
