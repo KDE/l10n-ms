@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-10 02:22+0100\n"
+"POT-Creation-Date: 2013-03-12 02:16+0100\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -894,7 +894,7 @@ msgctxt "Category of brush engines"
 msgid "Stable"
 msgstr "&Skala"
 
-#: image/brushengine/kis_paintop_registry.cc:131
+#: image/brushengine/kis_paintop_registry.cc:129
 msgid "default"
 msgstr ""
 
@@ -1235,51 +1235,48 @@ msgstr "Terkunci"
 msgid "Inherit Alpha"
 msgstr ""
 
-#: image/kis_selection_manager_p.h:110
+#: image/kis_selection_filters.cpp:120
 #, fuzzy
 msgid "Erode Selection"
 msgstr "Pemilihan"
 
-#: image/kis_selection_manager_p.h:172
+#: image/kis_selection_filters.cpp:184
 #, fuzzy
 msgid "Dilate Selection"
 msgstr "Pemilihan Elips"
 
-#: image/kis_selection_manager_p.h:240
-#: plugins/extensions/modify_selection/dlg_border_selection.cc:31
-#: plugins/extensions/modify_selection/modify_selection.cc:111
+#: image/kis_selection_filters.cpp:254
+#: plugins/extensions/modify_selection/dlg_border_selection.cc:26
 #, fuzzy
 msgid "Border Selection"
 msgstr "Pemilihan"
 
-#: image/kis_selection_manager_p.h:461
-#: plugins/extensions/modify_selection/dlg_feather_selection.cc:32
-#: plugins/extensions/modify_selection/modify_selection.cc:132
+#: image/kis_selection_filters.cpp:473
+#: plugins/extensions/modify_selection/dlg_feather_selection.cc:27
 #, fuzzy
 #| msgid "Selection"
 msgid "Feather Selection"
 msgstr "Pemilihan"
 
-#: image/kis_selection_manager_p.h:510
+#: image/kis_selection_filters.cpp:521
 #: plugins/extensions/modify_selection/dlg_grow_selection.cc:27
 #, fuzzy
 msgid "Grow Selection"
 msgstr "Tiada pemilihan"
 
-#: image/kis_selection_manager_p.h:639
-#: plugins/extensions/modify_selection/dlg_shrink_selection.cc:30
-#: plugins/extensions/modify_selection/modify_selection.cc:88
+#: image/kis_selection_filters.cpp:648
+#: plugins/extensions/modify_selection/dlg_shrink_selection.cc:26
 #, fuzzy
 msgid "Shrink Selection"
 msgstr "Pemilihan"
 
-#: image/kis_selection_manager_p.h:785
+#: image/kis_selection_filters.cpp:791
 #, fuzzy
 #| msgid "Selection"
 msgid "Smooth Selection"
 msgstr "Pemilihan"
 
-#: image/kis_selection_manager_p.h:843
+#: image/kis_selection_filters.cpp:852
 #, fuzzy
 #| msgid "Scale Selection"
 msgid "Invert Selection"
@@ -4529,25 +4526,29 @@ msgstr "Pelet"
 msgid "Grow Selection..."
 msgstr "Tiada pemilihan"
 
-#: plugins/extensions/modify_selection/modify_selection.cc:50
+#: plugins/extensions/modify_selection/modify_selection.cc:51
 #, fuzzy
 msgid "Shrink Selection..."
 msgstr "Tiada pemilihan"
 
-#: plugins/extensions/modify_selection/modify_selection.cc:56
+#: plugins/extensions/modify_selection/modify_selection.cc:60
 #, fuzzy
 msgid "Border Selection..."
 msgstr "Pemilihan"
 
-#: plugins/extensions/modify_selection/modify_selection.cc:62
+#: plugins/extensions/modify_selection/modify_selection.cc:69
 #, fuzzy
 #| msgid "Selection"
 msgid "Feather Selection..."
 msgstr "Pemilihan"
 
-#: plugins/extensions/modify_selection/modify_selection.cc:68
-msgid "Smooth..."
-msgstr "Rata..."
+#. i18n: ectx: property (text), widget (QCheckBox, smoothCHBox)
+#: plugins/extensions/modify_selection/modify_selection.cc:78
+#: plugins/paintops/experiment/wdgexperimentoptions.ui:70
+#, fuzzy
+#| msgid "Smooth"
+msgid "Smooth"
+msgstr "Rata"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: plugins/extensions/modify_selection/wdg_border_selection.ui:19
@@ -6952,13 +6953,6 @@ msgstr "Ketepuan"
 #| msgid "Shape:"
 msgid "Speed"
 msgstr "Bentuk:"
-
-#. i18n: ectx: property (text), widget (QCheckBox, smoothCHBox)
-#: plugins/paintops/experiment/wdgexperimentoptions.ui:70
-#, fuzzy
-#| msgid "Smooth"
-msgid "Smooth"
-msgstr "Rata"
 
 #. i18n: ectx: property (text), widget (QLabel, lblPostprocessing)
 #: plugins/paintops/experiment/wdgexperimentoptions.ui:89
@@ -9850,50 +9844,50 @@ msgstr "Pemilihan"
 msgid "Work Recursively"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:141
+#: ui/actions/kis_selection_action_factories.cpp:94
 #, fuzzy
 msgid "Select All"
 msgstr "&Pilih Semua"
 
-#: ui/actions/kis_selection_action_factories.cpp:204
-#: ui/kis_selection_manager.cc:199
+#: ui/actions/kis_selection_action_factories.cpp:157
+#: ui/kis_selection_manager.cc:201
 msgid "Fill with Pattern"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:209
-#: ui/kis_selection_manager.cc:192
+#: ui/actions/kis_selection_action_factories.cpp:162
+#: ui/kis_selection_manager.cc:194
 #, fuzzy
 msgid "Fill with Background Color"
 msgstr "Pilih Warna Latar Belakang ..."
 
-#: ui/actions/kis_selection_action_factories.cpp:214
-#: ui/kis_selection_manager.cc:185
+#: ui/actions/kis_selection_action_factories.cpp:167
+#: ui/kis_selection_manager.cc:187
 #, fuzzy
 msgid "Fill with Foreground Color"
 msgstr "Pilih Warna Latar Depan..."
 
-#: ui/actions/kis_selection_action_factories.cpp:375
+#: ui/actions/kis_selection_action_factories.cpp:270
 #, fuzzy
 msgid "Cut"
 msgstr "&Biasa:"
 
-#: ui/actions/kis_selection_action_factories.cpp:375
+#: ui/actions/kis_selection_action_factories.cpp:270
 #, fuzzy
 #| msgid "Copy Green"
 msgid "Copy"
 msgstr "Salin Hijau"
 
-#: ui/actions/kis_selection_action_factories.cpp:399
+#: ui/actions/kis_selection_action_factories.cpp:294
 #, fuzzy
 #| msgid "Copy Red"
 msgid "Copy Merged"
 msgstr "Salin Merah"
 
-#: ui/actions/kis_selection_action_factories.cpp:433
+#: ui/actions/kis_selection_action_factories.cpp:328
 msgid "(pasted)"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:474
+#: ui/actions/kis_selection_action_factories.cpp:369
 #, fuzzy
 #| msgid "Pastels"
 msgid "Pasted"
@@ -12229,35 +12223,35 @@ msgstr "&Pilih Semula"
 msgid "&Invert Selection"
 msgstr "Pemilihan Skala"
 
-#: ui/kis_selection_manager.cc:172
+#: ui/kis_selection_manager.cc:174
 msgid "Copy Selection to New Layer"
 msgstr "Salin Pemilihan ke Lapisan Baru"
 
-#: ui/kis_selection_manager.cc:178
+#: ui/kis_selection_manager.cc:180
 #, fuzzy
 msgid "Cut Selection to New Layer"
 msgstr "Salin Pemilihan ke Lapisan Baru"
 
-#: ui/kis_selection_manager.cc:205
+#: ui/kis_selection_manager.cc:207
 msgid "Stroke selected shapes"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:210
+#: ui/kis_selection_manager.cc:212
 #, fuzzy
 msgid "Display Selection"
 msgstr "Pemilihan Elips"
 
-#: ui/kis_selection_manager.cc:217
+#: ui/kis_selection_manager.cc:219
 #, fuzzy
 msgid "Size Canvas to Size of Selection"
 msgstr "Besarkan Imej ke Saiz Lapisan Semasa"
 
-#: ui/kis_selection_manager.cc:537
+#: ui/kis_selection_manager.cc:477
 #, fuzzy
 msgid "Stroked Shapes"
 msgstr "Berus Teks"
 
-#: ui/kis_selection_manager.cc:539 ui/kis_selection_manager.cc:542
+#: ui/kis_selection_manager.cc:479 ui/kis_selection_manager.cc:482
 #, fuzzy
 msgid "Stroke Shapes"
 msgstr "Berus Teks"
@@ -12602,6 +12596,9 @@ msgstr "Ruang &warna:"
 #, fuzzy, kde-format
 msgid "Workspace %1"
 msgstr "Ruang &warna:"
+
+#~ msgid "Smooth..."
+#~ msgstr "Rata..."
 
 #, fuzzy
 #~| msgid "Circle (01)"
