@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-14 03:09+0100\n"
+"POT-Creation-Date: 2013-03-16 02:24+0100\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1446,6 +1446,7 @@ msgstr "Jarak:"
 #. i18n: ectx: Menu (Image)
 #: krita.rc:75
 #: plugins/extensions/colorspaceconversion/colorspaceconversion.rc:4
+#: plugins/extensions/offsetimage/offsetimage.rc:5
 #: plugins/extensions/rotateimage/rotateimage.rc:4
 #: plugins/extensions/shearimage/shearimage.rc:4
 #: sdk/templates/view/APPNAMELC.rc:4
@@ -1812,6 +1813,7 @@ msgstr "&Tukar Jenis Lapisan..."
 #: plugins/extensions/colorspaceconversion/colorspaceconversion.rc:7
 #: plugins/extensions/dropshadow/dropshadow.rc:4
 #: plugins/extensions/metadataeditor/metadataeditor.rc:4
+#: plugins/extensions/offsetimage/offsetimage.rc:10
 #: plugins/extensions/rotateimage/rotateimage.rc:17
 #: plugins/extensions/shearimage/shearimage.rc:7
 msgid "La&yer"
@@ -3487,7 +3489,10 @@ msgid "Height"
 msgstr "Tinggi:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, grpAngle)
 #: plugins/extensions/imagesize/wdg_canvassize.ui:138
+#: plugins/extensions/offsetimage/kis_offset_processing_visitor.cpp:109
+#: plugins/extensions/offsetimage/wdg_offsetimage.ui:20
 #, fuzzy
 msgid "Offset"
 msgstr "Ofset:"
@@ -4593,12 +4598,51 @@ msgstr "Tiada pemilihan"
 msgid "Shrink from image border"
 msgstr ""
 
+#: plugins/extensions/offsetimage/dlg_offsetimage.cpp:28
+#: plugins/extensions/offsetimage/offsetimage.cpp:72
+#, fuzzy
+msgid "Offset Image"
+msgstr "Ofset:"
+
+#: plugins/extensions/offsetimage/offsetimage.cpp:47
+#, fuzzy
+#| msgid "&Shear Image..."
+msgid "&Offset Image..."
+msgstr "&Ricih Imej..."
+
+#: plugins/extensions/offsetimage/offsetimage.cpp:51
+#, fuzzy
+msgid "&Offset Layer..."
+msgstr "&Tambah Lapisan..."
+
+#: plugins/extensions/offsetimage/offsetimage.cpp:96
+#, fuzzy
+msgid "Offset Layer"
+msgstr "Ofset:"
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgOffsetImage)
+#: plugins/extensions/offsetimage/wdg_offsetimage.ui:14
 #: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
 #: plugins/extensions/rotateimage/rotateimage.cc:108
 #: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 msgid "Rotate Image"
 msgstr "Putar Imej"
+
+#. i18n: ectx: property (text), widget (QLabel, xLabel)
+#: plugins/extensions/offsetimage/wdg_offsetimage.ui:31
+msgid "X:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, yLabel)
+#: plugins/extensions/offsetimage/wdg_offsetimage.ui:52
+msgid "Y:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, middleOffsetBtn)
+#: plugins/extensions/offsetimage/wdg_offsetimage.ui:80
+msgid "Offset by x/2, y/2"
+msgstr ""
 
 #: plugins/extensions/rotateimage/rotateimage.cc:46
 msgid "&Rotate Image..."
@@ -14973,10 +15017,6 @@ msgstr "Ruang &warna:"
 #, fuzzy
 #~ msgid "&New"
 #~ msgstr "&Baru:"
-
-#, fuzzy
-#~ msgid "&Adjustment Layer..."
-#~ msgstr "&Tambah Lapisan..."
 
 #, fuzzy
 #~ msgid "WdgBorderSelection"
