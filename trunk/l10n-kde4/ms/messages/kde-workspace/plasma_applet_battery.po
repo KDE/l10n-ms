@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_battery\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-17 04:15+0200\n"
+"POT-Creation-Date: 2013-06-05 02:14+0000\n"
 "PO-Revision-Date: 2010-06-21 20:10+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -18,130 +18,203 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: contents/code/logic.js:61
-#, fuzzy, kde-format
-#| msgid "<b>Battery:</b> %1% (fully charged)<br />"
-msgid "%1% (charged)"
-msgstr "<b>Bateri:</b> %1% (dicas sepenuhnya)<br />"
-
-#: contents/code/logic.js:62
-#, fuzzy, kde-format
+#: contents/code/logic.js:99
+#, fuzzy
 #| msgctxt "Shown when a time estimate is not available"
 #| msgid "<b>Battery:</b> %1% (discharging)<br />"
-msgid "%1% (discharging)"
+msgid "Not Charging"
 msgstr "<b>Bateri:</b> %1% (nyahcas)<br />"
 
-#: contents/code/logic.js:63
-#, fuzzy, kde-format
+#: contents/code/logic.js:100
+#, fuzzy
 #| msgctxt "Shown when a time estimate is not available"
 #| msgid "<b>Battery:</b> %1% (discharging)<br />"
-msgid "%1% (charging)"
+msgid "Discharging"
 msgstr "<b>Bateri:</b> %1% (nyahcas)<br />"
 
-#: contents/code/logic.js:66
-#, fuzzy, kde-format
-#| msgctxt "overlay on the battery, needs to be really tiny"
-#| msgid "%1%"
-msgid "%1%"
-msgstr "%1%"
+#: contents/code/logic.js:101
+msgid "Fully Charged"
+msgstr ""
 
-#: contents/code/logic.js:69
-msgctxt "Battery is not plugged in"
+#: contents/code/logic.js:102
+#, fuzzy
+#| msgctxt "Shown when a time estimate is not available"
+#| msgid "<b>Battery:</b> %1% (discharging)<br />"
+msgid "Charging"
+msgstr "<b>Bateri:</b> %1% (nyahcas)<br />"
+
+#: contents/code/logic.js:105
+msgctxt "Battery is currently not present in the bay"
 msgid "Not present"
 msgstr ""
 
-#: contents/code/logic.js:96
-#, fuzzy
-#| msgid "AC Adapter:"
-msgctxt "tooltip"
-msgid "AC Adapter:"
-msgstr "Adapter AC:"
-
-#: contents/code/logic.js:97
-msgctxt "tooltip"
-msgid "<b>Plugged in</b>"
+#: contents/code/logic.js:154
+msgid "No batteries available"
 msgstr ""
 
-#: contents/code/logic.js:97
-msgctxt "tooltip"
-msgid "<b>Not plugged in</b>"
-msgstr ""
+#: contents/code/logic.js:163
+#, fuzzy, kde-format
+#| msgctxt "overlay on the battery, needs to be really tiny"
+#| msgid "%1%"
+msgctxt "Placeholder is battery name"
+msgid "%1:"
+msgstr "%1%"
 
-#: contents/ui/batterymonitor.qml:122
-#, kde-format
-msgctxt "overlay on the battery, needs to be really tiny"
+#: contents/code/logic.js:166 contents/ui/BatteryItem.qml:180
+#, fuzzy, kde-format
+#| msgctxt "overlay on the battery, needs to be really tiny"
+#| msgid "%1%"
+msgctxt "Placeholder is battery percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: contents/ui/batterymonitor.qml:243
-msgid "The battery applet has enabled system-wide inhibition"
+#: contents/code/logic.js:168
+msgid "N/A"
 msgstr ""
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, batteryConfig)
-#: contents/ui/config.ui:14
-msgid "Configure Battery Monitor"
-msgstr "Tetapkan Pemerhati Bateri"
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showBatteryString)
-#: contents/ui/config.ui:23
-msgid "Show charge &information"
-msgstr "&Papar maklumat cas"
-
-#: contents/ui/PopupDialog.qml:62
-#, fuzzy
-#| msgid "AC Adapter:"
-msgid "AC Adapter:"
-msgstr "Adapter AC:"
-
-#: contents/ui/PopupDialog.qml:68
-msgctxt "Label for remaining time"
-msgid "Time Remaining:"
-msgstr ""
-
-#: contents/ui/PopupDialog.qml:74
+#: contents/code/logic.js:189
 #, fuzzy
 #| msgid "Power Management"
-msgctxt "Label for power management inhibition"
-msgid "Power management enabled:"
+msgid "Power management is disabled"
 msgstr "Pengurusan Kuasa"
 
-#: contents/ui/PopupDialog.qml:79
-#, fuzzy
-#| msgid "Screen Brightness"
-msgid "Screen Brightness:"
-msgstr "Kecerahan Skrin"
-
-#: contents/ui/PopupDialog.qml:110
-msgid "Plugged in"
-msgstr ""
-
-#: contents/ui/PopupDialog.qml:110
-msgid "Not plugged in"
-msgstr ""
-
-#: contents/ui/PopupDialog.qml:157
+#: contents/code/logic.js:220
 #, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
 msgstr[0] ""
 msgstr[1] ""
 
-#: contents/ui/PopupDialog.qml:158
+#: contents/code/logic.js:221
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: contents/ui/PopupDialog.qml:172
-msgctxt "Suspend the computer to RAM; translation should be short"
-msgid "Sleep"
-msgstr "Tidur"
+#: contents/ui/AcAdapterItem.qml:58
+#, fuzzy
+#| msgid "AC Adapter:"
+msgid "AC Adapter"
+msgstr "Adapter AC:"
 
-#: contents/ui/PopupDialog.qml:179
-msgctxt "Suspend the computer to disk; translation should be short"
-msgid "Hibernate"
-msgstr "Hibernasi"
+#: contents/ui/AcAdapterItem.qml:70
+msgid "Plugged In"
+msgstr ""
+
+#: contents/ui/AcAdapterItem.qml:70
+msgid "Not Plugged In"
+msgstr ""
+
+#: contents/ui/AcAdapterItem.qml:83
+#, kde-format
+msgid "Time remaining until full: %1"
+msgstr ""
+
+#: contents/ui/AcAdapterItem.qml:83
+#, kde-format
+msgid "Time remaining until empty: %1"
+msgstr ""
+
+#: contents/ui/BatteryItem.qml:224
+msgid "Time To Full:"
+msgstr ""
+
+#: contents/ui/BatteryItem.qml:224
+msgid "Time To Empty:"
+msgstr ""
+
+#: contents/ui/BatteryItem.qml:236
+msgid "Capacity:"
+msgstr ""
+
+#: contents/ui/BatteryItem.qml:248
+msgid "Vendor:"
+msgstr ""
+
+#: contents/ui/BatteryItem.qml:260
+msgid "Model:"
+msgstr ""
+
+#: contents/ui/BatteryItem.qml:283
+#, fuzzy, kde-format
+#| msgctxt "overlay on the battery, needs to be really tiny"
+#| msgid "%1%"
+msgctxt "Placeholder is battery capacity"
+msgid "%1%"
+msgstr "%1%"
+
+#: contents/ui/batterymonitor.qml:156
+msgid "The battery applet has enabled system-wide inhibition"
+msgstr ""
+
+#: contents/ui/BrightnessItem.qml:86
+#, fuzzy, kde-format
+#| msgctxt "overlay on the battery, needs to be really tiny"
+#| msgid "%1%"
+msgctxt "Placeholder is brightness percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: contents/ui/CompactRepresentation.qml:92
+#, fuzzy, kde-format
+#| msgctxt "overlay on the battery, needs to be really tiny"
+#| msgid "%1%"
+msgctxt "battery percentage below battery icon"
+msgid "%1%"
+msgstr "%1%"
+
+#: contents/ui/PopupDialog.qml:86
+#, fuzzy
+#| msgid "Screen Brightness"
+msgid "Display Brightness"
+msgstr "Kecerahan Skrin"
+
+#: contents/ui/PopupDialog.qml:95
+#, fuzzy
+#| msgid "Screen Brightness"
+msgid "Keyboard Brightness"
+msgstr "Kecerahan Skrin"
+
+#: contents/ui/PowerManagementItem.qml:54
+#, fuzzy
+#| msgid "Power Management"
+msgid "Enable Power Management"
+msgstr "Pengurusan Kuasa"
+
+#, fuzzy
+#~| msgid "<b>Battery:</b> %1% (fully charged)<br />"
+#~ msgid "%1% (charged)"
+#~ msgstr "<b>Bateri:</b> %1% (dicas sepenuhnya)<br />"
+
+#, fuzzy
+#~| msgid "AC Adapter:"
+#~ msgctxt "tooltip"
+#~ msgid "AC Adapter:"
+#~ msgstr "Adapter AC:"
+
+#~ msgctxt "overlay on the battery, needs to be really tiny"
+#~ msgid "%1%"
+#~ msgstr "%1%"
+
+#~ msgid "Configure Battery Monitor"
+#~ msgstr "Tetapkan Pemerhati Bateri"
+
+#~ msgid "Show charge &information"
+#~ msgstr "&Papar maklumat cas"
+
+#, fuzzy
+#~| msgid "Screen Brightness"
+#~ msgid "Screen Brightness:"
+#~ msgstr "Kecerahan Skrin"
+
+#~ msgctxt "Suspend the computer to RAM; translation should be short"
+#~ msgid "Sleep"
+#~ msgstr "Tidur"
+
+#~ msgctxt "Suspend the computer to disk; translation should be short"
+#~ msgid "Hibernate"
+#~ msgstr "Hibernasi"
 
 #~ msgid "Battery:"
 #~ msgstr "Bateri:"
@@ -183,12 +256,6 @@ msgstr "Hibernasi"
 #~ msgid "General"
 #~ msgstr "Umum"
 
-#, fuzzy
-#~| msgid "Power Management"
-#~ msgctxt "tooltip on the config button in the popup"
-#~ msgid "Configure Power Management..."
-#~ msgstr "Pengurusan Kuasa"
-
 #~ msgid "Power Profile:"
 #~ msgstr "Profil Kuasa:"
 
@@ -200,6 +267,3 @@ msgstr "Hibernasi"
 #, fuzzy
 #~ msgid "<b>Battery:</b> "
 #~ msgstr "<b> Bateri</b><br />"
-
-#~ msgid "Screen Brightness"
-#~ msgstr "Kecerahan Skrin"
