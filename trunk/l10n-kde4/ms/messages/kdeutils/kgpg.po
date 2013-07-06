@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-04 01:41+0000\n"
+"POT-Creation-Date: 2013-07-06 01:39+0000\n"
 "PO-Revision-Date: 2005-11-17 23:25+0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -917,7 +917,7 @@ msgctxt "Name of uid (comment)"
 msgid "%1 (%2)"
 msgstr ""
 
-#: core/KGpgRefNode.cpp:128 transactions/kgpgtransaction.cpp:568
+#: core/KGpgRefNode.cpp:128 transactions/kgpgtransaction.cpp:629
 msgid "[No user id found]"
 msgstr "[Tiada id pengguna ditemui]"
 
@@ -1051,7 +1051,7 @@ msgid "Save File"
 msgstr "Simpan Fail"
 
 #: editor/kgpgeditor.cpp:521 kgpgexternalactions.cpp:206
-#: kgpgexternalactions.cpp:361 transactions/kgpgencrypt.cpp:118
+#: kgpgexternalactions.cpp:361 transactions/kgpgtransaction.cpp:189
 msgid "File Already Exists"
 msgstr "Fail Sudah Wujud"
 
@@ -1244,14 +1244,14 @@ msgstr ""
 msgid "Unable to create temporary file"
 msgstr "Tidak dapat mencipta fail sementara"
 
-#: foldercompressjob.cpp:123 transactions/kgpgencrypt.cpp:110
+#: foldercompressjob.cpp:123 transactions/kgpgencrypt.cpp:106
 #, fuzzy, kde-format
 #| msgid "Decrypting %1"
 msgctxt "Status message 'Encrypting <filename>' (operation starts)"
 msgid "Encrypting %1"
 msgstr "Menyahsulit %1"
 
-#: foldercompressjob.cpp:144 transactions/kgpgencrypt.cpp:113
+#: foldercompressjob.cpp:144 transactions/kgpgencrypt.cpp:109
 #, fuzzy, kde-format
 #| msgid "Decrypting %1"
 msgctxt "Status message 'Encrypted <filename>' (operation was completed)"
@@ -1900,7 +1900,7 @@ msgstr "Menjana pasangan kunci baru."
 msgid "Can not start \"konsole\" application for expert mode."
 msgstr ""
 
-#: keysmanager.cpp:548 keysmanager.cpp:2465 keysmanager.cpp:2467
+#: keysmanager.cpp:548 keysmanager.cpp:2469 keysmanager.cpp:2471
 #, fuzzy
 #| msgid "Ready"
 msgctxt "Application ready for user input"
@@ -2095,11 +2095,11 @@ msgid_plural "&Delete Keys"
 msgstr[0] "&Hapuskan Kunci"
 msgstr[1] "&Hapuskan Kunci"
 
-#: keysmanager.cpp:1304
+#: keysmanager.cpp:1308
 msgid "Creation of the revocation certificate failed..."
 msgstr "Penciptaan sijil pembatalan gagal..."
 
-#: keysmanager.cpp:1319
+#: keysmanager.cpp:1323
 #, fuzzy
 #| msgid ""
 #| "Secret keys SHOULD NOT be saved in an unsafe place.\n"
@@ -2116,15 +2116,15 @@ msgstr ""
 "ditolak ansur!\n"
 "Teruskan eksport kunci?"
 
-#: keysmanager.cpp:1331
+#: keysmanager.cpp:1335
 msgid "*.asc|*.asc Files"
 msgstr ""
 
-#: keysmanager.cpp:1331
+#: keysmanager.cpp:1335
 msgid "Export PRIVATE KEY As"
 msgstr "Eksport KUNCI PERSENDIRIAN Sebagai"
 
-#: keysmanager.cpp:1349
+#: keysmanager.cpp:1353
 #, fuzzy, kde-format
 #| msgid ""
 #| "Your PRIVATE key \"%1\" was successfully exported.\n"
@@ -2136,7 +2136,7 @@ msgstr ""
 "Kunci PERSENDIRIAN anda \"%1\" berjaya dieksport.\n"
 "JANGAN biarkan ia di tempat tak selamat."
 
-#: keysmanager.cpp:1352
+#: keysmanager.cpp:1356
 msgid ""
 "Your secret key could not be exported.\n"
 "Check the key."
@@ -2144,7 +2144,7 @@ msgstr ""
 "Kunci rahsia anda tidak boleh dieksport.\n"
 "Semak kunci."
 
-#: keysmanager.cpp:1455
+#: keysmanager.cpp:1459
 #, fuzzy, kde-format
 #| msgid "Your public key \"%1\" was successfully exported\n"
 msgid "<qt>The public key was successfully exported to<br/>%2</qt>"
@@ -2152,7 +2152,7 @@ msgid_plural "<qt>The %1 public keys were successfully exported to<br/>%2</qt>"
 msgstr[0] "Kunci awam anda \"%1\" berjaya dieksport\n"
 msgstr[1] "Kunci awam anda \"%1\" berjaya dieksport\n"
 
-#: keysmanager.cpp:1459 keysmanager.cpp:1474 keysmanager.cpp:1488
+#: keysmanager.cpp:1463 keysmanager.cpp:1478 keysmanager.cpp:1492
 msgid ""
 "Your public key could not be exported\n"
 "Check the key."
@@ -2160,19 +2160,19 @@ msgstr ""
 "Kunci awam anda tidak dapat dieksport\n"
 "Semak kunci."
 
-#: keysmanager.cpp:1508
+#: keysmanager.cpp:1512
 msgid ""
 "<qt>A viewer for JPEG images is not specified.<br/>Please check your "
 "installation.</qt>"
 msgstr ""
 
-#: keysmanager.cpp:1508
+#: keysmanager.cpp:1512
 #, fuzzy
 #| msgid "No Photo"
 msgid "Show photo"
 msgstr "Tiada Foto"
 
-#: keysmanager.cpp:1596
+#: keysmanager.cpp:1600
 #, fuzzy
 #| msgid ""
 #| "This key is an orphaned secret key (secret key without public key.) It is "
@@ -2186,26 +2186,26 @@ msgstr ""
 "Kunci ini adalah kunci rahsia yatim (kunci rahsia tanpa kunci awam.) Masa "
 "ini ia tidak boleh diguna.\\nAnda ingin menjana semula kunci rahsia?"
 
-#: keysmanager.cpp:1597
+#: keysmanager.cpp:1601
 #, fuzzy
 msgid "Generate"
 msgstr "Jana Pasangan Kunci "
 
-#: keysmanager.cpp:1597
+#: keysmanager.cpp:1601
 msgid "Do Not Generate"
 msgstr ""
 
-#: keysmanager.cpp:1627
+#: keysmanager.cpp:1631
 #, kde-format
 msgid "<qt>Are you sure you want to delete group <b>%1</b> ?</qt>"
 msgstr "<qt>Anda pasti ingin hapuskan kumpulan <b>%1</b> ?</qt>"
 
-#: keysmanager.cpp:1627 keysmanager.cpp:2265
+#: keysmanager.cpp:1631 keysmanager.cpp:2269
 #, fuzzy
 msgid "Delete"
 msgstr "&Hapuskan Kunci"
 
-#: keysmanager.cpp:1657
+#: keysmanager.cpp:1661
 msgid ""
 "<qt>You cannot create a group containing signatures, subkeys or other groups."
 "</qt>"
@@ -2213,24 +2213,24 @@ msgstr ""
 "<qt>Anda tidak boleh cipta kumpulan yang mengandungi tandatangan, subkunci "
 "atau kumpulan lain.</qt>"
 
-#: keysmanager.cpp:1672 kgpgrevokewidget.cpp:46
+#: keysmanager.cpp:1676 kgpgrevokewidget.cpp:46
 #, kde-format
 msgctxt "<Name> (<Email>) ID: <KeyId>"
 msgid "%1 (%2) ID: %3"
 msgstr ""
 
-#: keysmanager.cpp:1677
+#: keysmanager.cpp:1681
 msgid "Create New Group"
 msgstr "Cipta Kumpulan Baru"
 
-#: keysmanager.cpp:1678
+#: keysmanager.cpp:1682
 #, fuzzy
 #| msgid "Enter new group name:"
 msgctxt "Enter the name of the group you are creating now"
 msgid "Enter new group name:"
 msgstr "Masukkan nama kumpulan baru:"
 
-#: keysmanager.cpp:1684
+#: keysmanager.cpp:1688
 msgid ""
 "Following keys are not valid or not trusted and will not be added to the "
 "group:"
@@ -2238,7 +2238,7 @@ msgstr ""
 "Kunci yang berikut tidak sah atau tidak dipercayai dan tidak akan ditambah "
 "ke dalam kumpulan:"
 
-#: keysmanager.cpp:1690
+#: keysmanager.cpp:1694
 #, kde-format
 msgid ""
 "<qt>No valid or trusted key was selected. The group <b>%1</b> will not be "
@@ -2247,15 +2247,15 @@ msgstr ""
 "<qt>Tiada kunci yang sah atau dipercayai dipilih. Kumpulan <b>%1</b> tidak "
 "akan dicipta.</qt>"
 
-#: keysmanager.cpp:1702
+#: keysmanager.cpp:1706
 msgid "Group Properties"
 msgstr "Ciri Kumpulan"
 
-#: keysmanager.cpp:1733
+#: keysmanager.cpp:1737
 msgid "You can only sign primary keys. Please check your selection."
 msgstr "Anda hanya boleh tandatangan kunci primer. Semak pilihan anda."
 
-#: keysmanager.cpp:1742
+#: keysmanager.cpp:1746
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>You are about to sign key:<br><br>%1<br>ID: %2<br>Fingerprint: <br><b>"
@@ -2273,7 +2273,7 @@ msgstr ""
 "dengan pemilik kunci untuk memastikan seseorang tidak cuba menceroboh "
 "komunikasi anda</qt>"
 
-#: keysmanager.cpp:1746
+#: keysmanager.cpp:1750
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>You are about to sign key:<br><br>%1<br>ID: %2<br>Fingerprint: <br><b>"
@@ -2291,20 +2291,20 @@ msgstr ""
 "dengan pemilik kunci untuk memastikan seseorang tidak cuba menceroboh "
 "komunikasi anda</qt>"
 
-#: keysmanager.cpp:1760 keysmanager.cpp:1842 kgpgfirstassistant.cpp:284
+#: keysmanager.cpp:1764 keysmanager.cpp:1846 kgpgfirstassistant.cpp:284
 #: model/keylistproxymodel.cpp:194
 #, kde-format
 msgctxt "Name: ID"
 msgid "%1: %2"
 msgstr ""
 
-#: keysmanager.cpp:1762 keysmanager.cpp:1845 kgpgfirstassistant.cpp:286
+#: keysmanager.cpp:1766 keysmanager.cpp:1849 kgpgfirstassistant.cpp:286
 #, kde-format
 msgctxt "Name (Email): ID"
 msgid "%1 (%2): %3"
 msgstr ""
 
-#: keysmanager.cpp:1768
+#: keysmanager.cpp:1772
 #, fuzzy
 #| msgid ""
 #| "<qt>You are about to sign the following keys in one pass.<br><b>If you "
@@ -2319,13 +2319,13 @@ msgstr ""
 "anda belum semak dengan teliti semua cap jari, sekuriti komunikasi boleh "
 "dikompromi.</b></qt>"
 
-#: keysmanager.cpp:1808 keysmanager.cpp:1954
+#: keysmanager.cpp:1812 keysmanager.cpp:1958
 #, fuzzy
 #| msgid "You can only sign primary keys. Please check your selection."
 msgid "You can only sign user ids and photo ids. Please check your selection."
 msgstr "Anda hanya boleh tandatangan kunci primer. Semak pilihan anda."
 
-#: keysmanager.cpp:1822
+#: keysmanager.cpp:1826
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>You are about to sign key:<br><br>%1<br>ID: %2<br>Fingerprint: <br><b>"
@@ -2343,7 +2343,7 @@ msgstr ""
 "dengan pemilik kunci untuk memastikan seseorang tidak cuba menceroboh "
 "komunikasi anda</qt>"
 
-#: keysmanager.cpp:1826
+#: keysmanager.cpp:1830
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>You are about to sign key:<br><br>%1<br>ID: %2<br>Fingerprint: <br><b>"
@@ -2361,7 +2361,7 @@ msgstr ""
 "dengan pemilik kunci untuk memastikan seseorang tidak cuba menceroboh "
 "komunikasi anda</qt>"
 
-#: keysmanager.cpp:1851
+#: keysmanager.cpp:1855
 #, fuzzy
 #| msgid ""
 #| "<qt>You are about to sign the following keys in one pass.<br><b>If you "
@@ -2376,18 +2376,18 @@ msgstr ""
 "anda belum semak dengan teliti semua cap jari, sekuriti komunikasi boleh "
 "dikompromi.</b></qt>"
 
-#: keysmanager.cpp:1921
+#: keysmanager.cpp:1925
 #, fuzzy, kde-format
 #| msgid "<qt>Bad passphrase, key <b>%1</b> not signed.</qt>"
 msgid "<qt>Bad passphrase, key <b>%1 (%2)</b> not signed.</qt>"
 msgstr "<qt>Kunci, frasa laluan <b>%1</b> tidak ditandatangani.</qt>"
 
-#: keysmanager.cpp:1925
+#: keysmanager.cpp:1929
 #, fuzzy, kde-format
 msgid "<qt>The key <b>%1 (%2)</b> is already signed.</qt>"
 msgstr "<qt>Kunci, frasa laluan <b>%1</b> tidak ditandatangani.</qt>"
 
-#: keysmanager.cpp:1930
+#: keysmanager.cpp:1934
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Signing key <b>%1</b> with key <b>%2</b> failed.<br>Do you want to "
@@ -2399,18 +2399,18 @@ msgstr ""
 "<qt>Menandatangan kunci <b>%1</b> dengan kunci <b>%2</b> gagal.<br>Anda "
 "ingin cuba menandatangan kunci dalam mod konsol?</qt>"
 
-#: keysmanager.cpp:2043
+#: keysmanager.cpp:2047
 #, fuzzy
 msgid "All signatures for this key are already in your keyring"
 msgid_plural "All signatures for this keys are already in your keyring"
 msgstr[0] "Semua tandatangan untuk kunci ini sudah ada dalam gelang kunci anda"
 msgstr[1] "Semua tandatangan untuk kunci ini sudah ada dalam gelang kunci anda"
 
-#: keysmanager.cpp:2138
+#: keysmanager.cpp:2142
 msgid "Edit key manually to delete a self-signature."
 msgstr "Edit kunci secara manual untuk hapuskan swatandatangan."
 
-#: keysmanager.cpp:2142
+#: keysmanager.cpp:2146
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Are you sure you want to delete signature<br><b>%1</b> from key:"
@@ -2422,11 +2422,11 @@ msgstr ""
 "<qt>Anda pasti ingin hapuskan tandatangan<br><b>%1</b> dari kunci:<br><b>%2</"
 "b>?</qt>"
 
-#: keysmanager.cpp:2163
+#: keysmanager.cpp:2167
 msgid "Requested operation was unsuccessful, please edit the key manually."
 msgstr "Operasi yang diminta tidak berjaya, sila edit kunci secara manual."
 
-#: keysmanager.cpp:2223
+#: keysmanager.cpp:2227
 msgid ""
 "<qt>The key you are deleting is a member of the following key group. Do you "
 "want to remove it from this group?</qt>"
@@ -2436,22 +2436,22 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: keysmanager.cpp:2227 keysmanager.cpp:2240 keysmanager.cpp:2272
-#: keysmanager.cpp:2287 keysmanager.cpp:2290 keysmanager.cpp:2299
-#: keysmanager.cpp:2311 keysmanager.cpp:2321
+#: keysmanager.cpp:2231 keysmanager.cpp:2244 keysmanager.cpp:2276
+#: keysmanager.cpp:2291 keysmanager.cpp:2294 keysmanager.cpp:2303
+#: keysmanager.cpp:2315 keysmanager.cpp:2325
 #, fuzzy
 #| msgid "&Delete Keys"
 msgid "Delete key"
 msgstr "&Hapuskan Kunci"
 
-#: keysmanager.cpp:2239
+#: keysmanager.cpp:2243
 #, kde-format
 msgid ""
 "You are removing the last key from key group %1.<br/>Do you want to delete "
 "the group, too?"
 msgstr ""
 
-#: keysmanager.cpp:2263
+#: keysmanager.cpp:2267
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Delete <b>SECRET KEY</b> pair <b>%1</b>?</p>Deleting this key pair "
@@ -2465,34 +2465,34 @@ msgstr ""
 "kunci ini tidak akan dapat menyahsulit fail yang disulitkan dengan kunci ini "
 "lagi."
 
-#: keysmanager.cpp:2272 keysmanager.cpp:2299
+#: keysmanager.cpp:2276 keysmanager.cpp:2303
 msgid ""
 "Another key delete operation is still in progress.\n"
 "Please wait a moment until this operation is complete."
 msgstr ""
 
-#: keysmanager.cpp:2287
+#: keysmanager.cpp:2291
 #, kde-format
 msgid "Key <b>%1</b> deleted."
 msgstr ""
 
-#: keysmanager.cpp:2290
+#: keysmanager.cpp:2294
 #, kde-format
 msgid "Deleting key <b>%1</b> failed."
 msgstr ""
 
-#: keysmanager.cpp:2311
+#: keysmanager.cpp:2315
 #, kde-format
 msgid "Can not delete key <b>%1</b> while it is edited in terminal."
 msgstr ""
 
-#: keysmanager.cpp:2321
+#: keysmanager.cpp:2325
 msgid ""
 "You have selected items that are not keys. They can not be deleted with this "
 "menu entry."
 msgstr ""
 
-#: keysmanager.cpp:2344
+#: keysmanager.cpp:2348
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The following are secret key pairs:<br><b>%1</b>They will not be "
@@ -2504,38 +2504,38 @@ msgstr ""
 "<qt>Yang berikut adalah pasangan kunci rahsia:<br><b>%1</b>Ia tidak akan "
 "dihapuskan.<br></qt>"
 
-#: keysmanager.cpp:2352
+#: keysmanager.cpp:2356
 #, fuzzy, kde-format
 msgid "<qt><b>Delete the following public key?</b></qt>"
 msgid_plural "<qt><b>Delete the following %1 public keys?</b></qt>"
 msgstr[0] "_n: <qt><b>Hapuskan kunci awam yang berikut?</b></qt>"
 msgstr[1] "<qt><b>Hapuskan %1 kunci awam yang berikut?</b></qt>"
 
-#: keysmanager.cpp:2380 keysmanager.cpp:2450 keysmanager.cpp:2461
+#: keysmanager.cpp:2384 keysmanager.cpp:2454 keysmanager.cpp:2465
 msgid "Key Import"
 msgstr "Import Kunci"
 
-#: keysmanager.cpp:2387
+#: keysmanager.cpp:2391
 msgid "Open File"
 msgstr "Buka Fail"
 
-#: keysmanager.cpp:2416
+#: keysmanager.cpp:2420
 msgid ""
 "<qt>The text in the clipboard does not look like a key, but like encrypted "
 "text.<br />Do you want to decrypt it first and then try importing it?</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2417
+#: keysmanager.cpp:2421
 #, fuzzy
 #| msgid "&Encrypt Clipboard"
 msgid "Import from Clipboard"
 msgstr "&Sulitkan Klipbod"
 
-#: keysmanager.cpp:2437
+#: keysmanager.cpp:2441
 msgid "Importing..."
 msgstr "Mengimport..."
 
-#: keysmanager.cpp:2449
+#: keysmanager.cpp:2453
 #, fuzzy
 #| msgid ""
 #| "No key imported... \n"
@@ -2545,33 +2545,33 @@ msgstr ""
 "Tiada kunci diimport... \n"
 "Semak log terperinci untuk maklumat lanjut"
 
-#: keysmanager.cpp:2514
+#: keysmanager.cpp:2518
 msgid "KGpg - encryption tool"
 msgstr "KGpg - alat penyulitan"
 
-#: keysmanager.cpp:2535
+#: keysmanager.cpp:2539
 #, fuzzy
 #| msgid "Key Manager"
 msgid "Ke&y Manager"
 msgstr "Pengurus Kunci"
 
-#: keysmanager.cpp:2538
+#: keysmanager.cpp:2542
 msgid "&Encrypt Clipboard"
 msgstr "&Sulitkan Klipbod"
 
-#: keysmanager.cpp:2541
+#: keysmanager.cpp:2545
 msgid "&Decrypt Clipboard"
 msgstr "&Nyahsulit Klipbod"
 
-#: keysmanager.cpp:2544
+#: keysmanager.cpp:2548
 msgid "&Sign/Verify Clipboard"
 msgstr "&Tandatangan/Sahkan Klipbod"
 
-#: keysmanager.cpp:2581 keysmanager.cpp:2636 keysmanager.cpp:2654
+#: keysmanager.cpp:2585 keysmanager.cpp:2640 keysmanager.cpp:2658
 msgid "Clipboard is empty."
 msgstr "Klipbod kosong."
 
-#: keysmanager.cpp:2626
+#: keysmanager.cpp:2630
 #, fuzzy
 #| msgid "The signature file %1 was successfully created."
 msgid "Text successfully encrypted."
@@ -4348,28 +4348,28 @@ msgstr "Pelayan kunci:"
 msgid "<b>Connecting to the server...</b>"
 msgstr "<b>Menyambung ke pelayan..</b>"
 
-#: transactions/kgpgtransaction.cpp:156
+#: transactions/kgpgtransaction.cpp:163
 #, fuzzy
 #| msgid "Bad passphrase"
 msgid "Got Passphrase"
 msgstr "Frasa laluan tidak bagus"
 
-#: transactions/kgpgtransaction.cpp:372 transactions/kgpgtransaction.cpp:559
+#: transactions/kgpgtransaction.cpp:425 transactions/kgpgtransaction.cpp:620
 #, fuzzy
 #| msgid "Change Passphrase..."
 msgid "Requesting Passphrase"
 msgstr "Ubah Frasa Laluan..."
 
-#: transactions/kgpgtransaction.cpp:486
+#: transactions/kgpgtransaction.cpp:547
 msgid " or "
 msgstr "atau"
 
-#: transactions/kgpgtransaction.cpp:572
+#: transactions/kgpgtransaction.cpp:633
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Masukkan frasa laluan untuk <b>%1</b>"
 
-#: transactions/kgpgtransaction.cpp:586
+#: transactions/kgpgtransaction.cpp:647
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
