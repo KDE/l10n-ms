@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-10 07:42+0000\n"
+"POT-Creation-Date: 2013-07-17 01:42+0000\n"
 "PO-Revision-Date: 2008-07-22 01:04+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -3584,7 +3584,8 @@ msgstr "<title></title>"
 #. i18n: ectx: property (text), widget (QPushButton, m_btnEdit)
 #. i18n: ectx: property (text), widget (QPushButton, m_edit)
 #: kopete/kopeteui.rc:17 plugins/autoreplace/autoreplaceprefs.ui:137
-#: plugins/contactnotes/contactnotesui.rc:5 plugins/history/historyui.rc:5
+#: plugins/contactnotes/contactnotesui.rc:5
+#: plugins/cryptography/cryptographyui.rc:5 plugins/history/historyui.rc:5
 #: plugins/history2/history2ui.rc:5 plugins/otr/otrui.rc:5
 #: plugins/statistics/statisticsui.rc:5 plugins/translator/translatorui.rc:5
 #: protocols/groupwise/ui/gwcustomstatus.ui:44 protocols/skype/skypeui.rc:5
@@ -6679,6 +6680,264 @@ msgstr "/Bantuan/_Perihal"
 msgid "&Notes"
 msgstr "_Nota..."
 
+#. i18n: ectx: Menu (tools)
+#: plugins/cryptography/cryptographychatui.rc:5
+#: plugins/history/historychatui.rc:5 plugins/history2/history2chatui.rc:5
+#: plugins/latex/latexchatui.rc:5 plugins/nowlistening/nowlisteningchatui.rc:5
+#: plugins/otr/otrchatui.rc:4 plugins/translator/translatorchatui.rc:5
+#: protocols/skype/skypechatui.rc:5
+#, fuzzy
+msgid "&Tools"
+msgstr "&Warna"
+
+#. i18n: ectx: ToolBar (cryptographyToolBar)
+#: plugins/cryptography/cryptographychatui.rc:12
+#, fuzzy
+msgid "Cryptography Toolbar"
+msgstr "Papan Alat Mdk"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:56
+msgid "Cryptography"
+msgstr ""
+
+#: plugins/cryptography/cryptographyguiclient.cpp:81
+#, fuzzy
+msgctxt "@action toggle action"
+msgid "Encrypt Messages"
+msgstr "Buang Mesej"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:83
+#, fuzzy
+msgctxt "@action toggle action"
+msgid "Sign Messages"
+msgstr "Mesej Init"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:85
+#, fuzzy
+msgctxt "@action toggle action"
+msgid "Export Contacts' Keys to Address Book"
+msgstr "Eksport Alamat Book"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:109
+msgctxt "@info"
+msgid ""
+"You have not selected a private key for yourself, so signing is not "
+"possible. Please select a private key in the Cryptography preferences dialog."
+msgstr ""
+
+#: plugins/cryptography/cryptographyguiclient.cpp:110
+#, fuzzy
+msgid "No Private Key"
+msgstr "penggunaan:   %s --list [nama]\n"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:164
+msgctxt "@info"
+msgid ""
+"This protocol may not work with messages that are encrypted. This is because "
+"encrypted messages are very long, and the server or peer may reject them due "
+"to their length. To avoid being signed off or your account being warned or "
+"temporarily suspended, turn off encryption."
+msgstr ""
+
+#: plugins/cryptography/cryptographyguiclient.cpp:165
+#, fuzzy
+msgid "Cryptography Unsupported Protocol"
+msgstr "%s: fail `%s' tidak mempunyai versi disokong %d\n"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:172
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid ""
+"You need to select a public key for %2 to send encrypted messages to that "
+"contact."
+msgid_plural ""
+"You need to select a public key for the following meta-contacts to send "
+"encrypted messages to them:\n"
+"%2"
+msgstr[0] "Kumpulan dalam"
+msgstr[1] "Kumpulan dalam"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:174
+msgid "Missing public key"
+msgid_plural "Missing public keys"
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:92
+#, fuzzy
+msgctxt "@action"
+msgid "&Select Public Key..."
+msgstr "Pilih Partisyen"
+
+#: plugins/cryptography/cryptographyplugin.cpp:98
+#, fuzzy
+msgctxt "@action"
+msgid "&Export Public Keys To Address Book..."
+msgstr "Tambah ke Buku Alamat"
+
+#: plugins/cryptography/cryptographyplugin.cpp:382
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This protocol %1 may not work with messages that are encrypted. This is "
+"because encrypted messages are very long, and the server or peer may reject "
+"them due to their length. To avoid being signed off or your account being "
+"warned or temporarily suspended, turn off encryption."
+msgstr ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:383
+#, fuzzy, kde-format
+msgid "Cryptography Unsupported Protocol %1"
+msgstr "%s: fail `%s' tidak mempunyai versi disokong %d\n"
+
+#: plugins/cryptography/cryptographyplugin.cpp:419
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Cryptography plugin has found an encryption key for %1 (%2) in your KDE "
+"address book. Do you want to use key %3 as this contact's public key? "
+msgstr ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:420
+msgid "Public Key Found"
+msgstr ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:431
+msgid "Public Keys Found"
+msgstr ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:434
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Cryptography plugin has found multiple encryption keys for %1 (%2) in your "
+"KDE address book. To use one of these keys, select it and choose OK."
+msgstr ""
+
+#: plugins/cryptography/cryptographypreferences.cpp:43
+#, fuzzy
+msgid "Private Key: "
+msgstr "penggunaan:   %s --list [nama]\n"
+
+#: plugins/cryptography/cryptographypreferences.cpp:46
+msgctxt "@label:chooser"
+msgid "Select the key you want to use to sign and encrypt messages"
+msgstr ""
+
+#: plugins/cryptography/cryptographypreferences.cpp:47
+msgid "Select the key you want to use to sign and encrypt messages"
+msgstr ""
+
+#: plugins/cryptography/cryptographypreferences.cpp:48
+msgctxt "@info:tooltip"
+msgid "The private key used for decryption and signing"
+msgstr ""
+
+#: plugins/cryptography/cryptographypreferences.cpp:49
+msgctxt "@info:whatsthis"
+msgid ""
+"View and change the private key used for signing and encrypting messages "
+"using the Cryptography plugin"
+msgstr ""
+
+#: plugins/cryptography/cryptographypreferences.cpp:51
+msgctxt "@info"
+msgid ""
+"<para>Before you can sign messages or receive encrypted ones, you must "
+"select a private key for yourself.</para><para>Before you can send encrypted "
+"messages to someone, you must select their public key by right-clicking on "
+"their name in your contact list and choosing \"Select Public Key\".</para>"
+msgstr ""
+
+#: plugins/cryptography/cryptographypreferences.cpp:54
+msgid "Sign messages in clearsign mode"
+msgstr ""
+
+#: plugins/cryptography/cryptographyselectuserkey.cpp:40
+#, fuzzy
+msgid "Select Contact's Public Key"
+msgstr "[K] Sambungan AP: "
+
+#: plugins/cryptography/cryptographyselectuserkey.cpp:49
+msgctxt "@label:chooser"
+msgid "Select the key you want to use encrypt messages to the recipient"
+msgstr ""
+
+#: plugins/cryptography/cryptographyselectuserkey.cpp:50
+#, fuzzy
+msgid "Select public key"
+msgstr "Pilih Partisyen"
+
+#: plugins/cryptography/cryptographyselectuserkey.cpp:53
+#, kde-format
+msgctxt "@label:chooser"
+msgid "Select public key for %1"
+msgstr ""
+
+#. i18n: ectx: label, entry, group (Cryptography Plugin)
+#: plugins/cryptography/cryptographysettings.kcfg:12
+msgid "User's private key fingerprint."
+msgstr ""
+
+#. i18n: ectx: label, entry, group (Cryptography Plugin)
+#: plugins/cryptography/cryptographysettings.kcfg:16
+msgid "Sign messages in clearsign mode."
+msgstr ""
+
+#: plugins/cryptography/exportkeys.cpp:40
+msgid "Export Public Keys"
+msgstr ""
+
+#: plugins/cryptography/exportkeys.cpp:42
+#, fuzzy
+msgctxt "@action:button"
+msgid "Export"
+msgstr "po&rt:"
+
+#: plugins/cryptography/exportkeys.cpp:42
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Export checked keys to address book"
+msgstr "Tambah ke Buku Alamat"
+
+#: plugins/cryptography/exportkeys.cpp:75
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "&lt;No metacontacts with keys to export&gt;"
+msgstr "s Awam Kekunci"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/cryptography/exportkeysbase.ui:17
+msgid ""
+"Cryptography plugin will export keys for the chosen metacontacts. If no "
+"address book entry has been linked to each metacontact, one will be created."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KListWidget, keyList)
+#: plugins/cryptography/exportkeysbase.ui:27
+#, fuzzy
+msgid "Select Keys to Export"
+msgstr "Pilih Partisyen"
+
+#. i18n: ectx: property (whatsThis), widget (KListWidget, keyList)
+#: plugins/cryptography/exportkeysbase.ui:30
+msgid ""
+"Check the box next to the name and key of each user that you want to export "
+"to the address book."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KListWidget, keyList)
+#: plugins/cryptography/kabckeyselectorbase.ui:27
+#, fuzzy
+msgid "Select Keys to Use"
+msgstr "Pilih Partisyen"
+
+#. i18n: ectx: property (whatsThis), widget (KListWidget, keyList)
+#: plugins/cryptography/kabckeyselectorbase.ui:30
+#, fuzzy
+msgid "Select the key you want to use for to encrypt to the metacontact"
+msgstr "kumpulan s:"
+
 #: plugins/highlight/highlightconfig.cpp:71
 #, fuzzy
 msgid "-New filter-"
@@ -6821,15 +7080,6 @@ msgid ""
 "Parsing the old history in %1:\n"
 "%2"
 msgstr "dalam"
-
-#. i18n: ectx: Menu (tools)
-#: plugins/history/historychatui.rc:5 plugins/history2/history2chatui.rc:5
-#: plugins/latex/latexchatui.rc:5 plugins/nowlistening/nowlisteningchatui.rc:5
-#: plugins/otr/otrchatui.rc:4 plugins/translator/translatorchatui.rc:5
-#: protocols/skype/skypechatui.rc:5
-#, fuzzy
-msgid "&Tools"
-msgstr "&Warna"
 
 #. i18n: ectx: label, entry (Auto_chatwindow), group (History Plugin)
 #. i18n: ectx: label, entry (Auto_chatwindow), group (History2 Plugin)
@@ -22755,10 +23005,6 @@ msgstr "Tetapan Akaun Pengguna"
 #, fuzzy
 #~ msgid "Contact is invalid."
 #~ msgstr "Fail laluan statik %s tidak sah"
-
-#, fuzzy
-#~ msgid "You do not have permission to send a message to this contact."
-#~ msgstr "Kumpulan dalam"
 
 #, fuzzy
 #~ msgid "Message is too long."
