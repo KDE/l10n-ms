@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-21 01:41+0000\n"
+"POT-Creation-Date: 2013-08-10 05:22+0000\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -16,16 +16,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=1;\n"
 
 #: flow/imageexport/flow_imageexport.cpp:91
+#: kchart/genericimageexport/genericimageexport.cpp:67
 msgid "Failed to read data."
 msgstr "Gagal membaca data."
 
 #: flow/imageexport/flow_imageexport.cpp:91
 #: flow/imageexport/flow_imageexport.cpp:102
+#: kchart/genericimageexport/genericimageexport.cpp:68
+#: kchart/genericimageexport/genericimageexport.cpp:81
 #, fuzzy
 msgid "Export Error"
 msgstr "Ralat Eksport SVG"
 
 #: flow/imageexport/flow_imageexport.cpp:102
+#: kchart/genericimageexport/genericimageexport.cpp:80
 msgid "Malformed XML data."
 msgstr "Data XML cacat bentuk."
 
@@ -63,11 +67,13 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel)
 #: flow/imageexport/flow_imageexportwidget.ui:108
+#: libdialogfilter/exportsizedia.cpp:87
 msgid "Height:"
 msgstr "Tinggi:"
 
 #. i18n: ectx: property (text), widget (QLabel)
 #: flow/imageexport/flow_imageexportwidget.ui:119
+#: libdialogfilter/exportsizedia.cpp:82
 msgid "Width:"
 msgstr "Lebar:"
 
@@ -76,7 +82,27 @@ msgstr "Lebar:"
 msgid "Margin:"
 msgstr ""
 
-#: karbon/image/ImageExport.cpp:97
+#: karbon/eps/EpsExportDlg.cpp:37
+msgid "EPS Export"
+msgstr "Eksport EPS"
+
+#: karbon/eps/EpsExportDlg.cpp:42
+msgid "Options"
+msgstr ""
+
+#: karbon/eps/EpsExportDlg.cpp:45
+msgid "PostScript level 1"
+msgstr "PascaSkrip Tahap 1"
+
+#: karbon/eps/EpsExportDlg.cpp:46
+msgid "PostScript level 2"
+msgstr "PascaSkrip tahap 2"
+
+#: karbon/eps/EpsExportDlg.cpp:47
+msgid "PostScript level 3"
+msgstr "PascaSkrip tahap 3"
+
+#: karbon/image/ImageExport.cpp:99
 #, fuzzy
 msgid "PNG Export Options"
 msgstr "Ralat Eksport PNG"
@@ -132,6 +158,38 @@ msgstr ""
 msgid "Opacity"
 msgstr ""
 
+#: kchart/genericimageexport/genericimageexport.cpp:122
+#: libdialogfilter/exportsizedia.cpp:266
+msgid "Failed to write file."
+msgstr "Gagal menulis fail."
+
+#: kchart/genericimageexport/genericimageexport.cpp:123
+#, fuzzy, kde-format
+msgid "%1 Export Error"
+msgstr "Ralat Eksport SVG"
+
+#: libdialogfilter/exportsizedia.cpp:42
+#, fuzzy
+msgid "Export Filter Parameters"
+msgstr "Parameter Penapis Eksport PNG"
+
+#: libdialogfilter/exportsizedia.cpp:76
+msgid "Keep ratio"
+msgstr "Kekalkan nisbah"
+
+#: libdialogfilter/exportsizedia.cpp:98
+#, fuzzy
+msgid "Width (%):"
+msgstr "Lebar (%1):"
+
+#: libdialogfilter/exportsizedia.cpp:103
+msgid "Height (%):"
+msgstr "Tinggi (%):"
+
+#: libdialogfilter/exportsizedia.cpp:266
+msgid "PNG Export Error"
+msgstr "Ralat Eksport PNG"
+
 #: libmsooxml/MsooXmlDocPropertiesReader.cpp:75
 #: libmsooxml/MsooXmlReader.cpp:182 libmsooxml/MsooXmlThemesReader.cpp:363
 #: sheets/xlsx/XlsxXmlCommentsReader.cpp:108
@@ -142,15 +200,15 @@ msgstr ""
 #: sheets/xlsx/XlsxXmlWorksheetReader.cpp:301
 #: stage/pptx/PptxXmlDocumentReader.cpp:151
 #: stage/pptx/PptxXmlSlideReader.cpp:333
-#: words/docx/import/DocxXmlCommentsReader.cpp:89
-#: words/docx/import/DocxXmlDocumentReader.cpp:201
-#: words/docx/import/DocxXmlEndnoteReader.cpp:90
-#: words/docx/import/DocxXmlFontTableReader.cpp:89
-#: words/docx/import/DocxXmlFooterReader.cpp:95
-#: words/docx/import/DocxXmlFootnoteReader.cpp:90
-#: words/docx/import/DocxXmlHeaderReader.cpp:95
-#: words/docx/import/DocxXmlNumberingReader.cpp:87
-#: words/docx/import/DocxXmlSettingsReader.cpp:87
+#: words/docx/DocxXmlCommentsReader.cpp:89
+#: words/docx/DocxXmlDocumentReader.cpp:201
+#: words/docx/DocxXmlEndnoteReader.cpp:90
+#: words/docx/DocxXmlFontTableReader.cpp:89
+#: words/docx/DocxXmlFooterReader.cpp:95
+#: words/docx/DocxXmlFootnoteReader.cpp:90
+#: words/docx/DocxXmlHeaderReader.cpp:95
+#: words/docx/DocxXmlNumberingReader.cpp:87
+#: words/docx/DocxXmlSettingsReader.cpp:87
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr ""
@@ -285,48 +343,185 @@ msgstr ""
 msgid "Could not write block"
 msgstr "Tidak dapat baca dari fail."
 
-#: sheets/csv/csvexport.cc:282
-msgid "<SHEETNAME>"
-msgstr "<SHEETNAME>"
+#: sheets/csv/csvdialog.cpp:61
+#, fuzzy
+msgid "Import"
+msgstr "PDF Import"
 
-#: sheets/csv/csvexportdialog.cpp:46 words/ascii/ImportDialog.cc:50
+#: sheets/csv/csvdialog.cpp:65 sheets/csv/csvexportdialog.cpp:46
+#: words/ascii/ImportDialog.cc:49
 #, kde-format
 msgctxt "Descriptive encoding name"
 msgid "Recommended ( %1 )"
 msgstr "Disarankan (%1)"
 
-#: sheets/csv/csvexportdialog.cpp:47 words/ascii/ImportDialog.cc:51
+#: sheets/csv/csvdialog.cpp:66 sheets/csv/csvexportdialog.cpp:47
+#: words/ascii/ImportDialog.cc:50
 #, kde-format
 msgctxt "Descriptive encoding name"
 msgid "Locale ( %1 )"
 msgstr "Lokal (%1)"
 
-#: sheets/csv/csvexportdialog.cpp:50 words/ascii/ImportDialog.cc:54
+#: sheets/csv/csvdialog.cpp:69 sheets/csv/csvexportdialog.cpp:50
+#: words/ascii/ImportDialog.cc:53
 #, kde-format
 msgctxt "Descriptive encoding name"
 msgid "Other ( %1 )"
 msgstr "Lain-lain (%1)"
 
-#: sheets/csv/csvexportdialog.cpp:284 words/ascii/ImportDialog.cc:108
+#: sheets/csv/csvdialog.cpp:75 sheets/csv/csvdialog.cpp:276
+#: sheets/csv/csvdialog.cpp:334
+msgid "Text"
+msgstr "Teks"
+
+#: sheets/csv/csvdialog.cpp:76 sheets/csv/csvdialog.cpp:336
+msgid "Number"
+msgstr "Nombor"
+
+#: sheets/csv/csvdialog.cpp:77 sheets/csv/csvdialog.cpp:338
+msgid "Currency"
+msgstr "Mata wang"
+
+#: sheets/csv/csvdialog.cpp:78 sheets/csv/csvdialog.cpp:340
+msgid "Date"
+msgstr "Tarikh"
+
+#: sheets/csv/csvdialog.cpp:79 sheets/csv/csvdialog.cpp:342
+msgid "Decimal Comma Number"
+msgstr "Nombor Koma Perpuluhan"
+
+#: sheets/csv/csvdialog.cpp:80 sheets/csv/csvdialog.cpp:344
+msgid "Decimal Point Number"
+msgstr "Nombor Titik Perpuluhan"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/csvdialog.cpp:454 sheets/csv/dialogui.ui:275
+msgid "None"
+msgstr "Tiada"
+
+#: sheets/csv/csvdialog.cpp:480
+msgid ""
+"Please check the ranges you specified. The start value must be lower than "
+"the end value."
+msgstr ""
+"Sila semak julat yang anda tetapkan. Nilai mula mesti lebih rendah daripada "
+"nilai akhir. "
+
+#: sheets/csv/csvdialog.cpp:522 sheets/csv/csvexportdialog.cpp:284
+#: words/ascii/ImportDialog.cc:107
 #, kde-format
 msgid "Cannot find encoding: %1"
 msgstr "Tidak jumpa pengekodan: %1"
 
-#: sheets/csv/csvimport.cc:93
+#: sheets/csv/csvexport.cc:283
+msgid "<SHEETNAME>"
+msgstr "<SHEETNAME>"
+
+#: sheets/csv/csvimport.cc:92
 msgid "CSV filter cannot open input file - please report."
 msgstr "Penapis CSV tidak boleh buka fail input - sila lapor."
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#. i18n: ectx: attribute (title), widget (QWidget, TabPage)
 #. i18n: ectx: attribute (title), widget (QWidget, encodingPage)
-#: sheets/csv/exportdialogui.ui:27
-#: sheets/latex/export/latexexportwidget.ui:219
+#: sheets/csv/dialogui.ui:52 sheets/csv/exportdialogui.ui:27
+#: sheets/latex/export/latexexportdia.ui:344
 msgid "Encoding"
 msgstr "Pengekodan"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: sheets/csv/exportdialogui.ui:35 words/ascii/ImportDialogUI.ui:24
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#: sheets/csv/dialogui.ui:66 sheets/csv/exportdialogui.ui:35
+#: words/ascii/ImportDialogUI.ui:30
 msgid "E&ncoding:"
 msgstr "&Pengekodan:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: sheets/csv/dialogui.ui:124
+msgid "Common"
+msgstr "Biasa"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup, m_delimiterBox)
+#. i18n: ectx: property (title), widget (KButtonGroup, m_delimiterBox)
+#: sheets/csv/dialogui.ui:141 sheets/csv/exportdialogui.ui:222
+msgid "Delimiter"
+msgstr "Penyahhad"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioComma)
+#: sheets/csv/dialogui.ui:153 sheets/csv/exportdialogui.ui:228
+msgid "Comma"
+msgstr "Koma"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioSemicolon)
+#: sheets/csv/dialogui.ui:163 sheets/csv/exportdialogui.ui:238
+msgid "Semicolon"
+msgstr "Koma bertitik"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioTab)
+#: sheets/csv/dialogui.ui:170 sheets/csv/exportdialogui.ui:245
+msgid "Tabulator"
+msgstr "Penjadual"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioSpace)
+#: sheets/csv/dialogui.ui:177 sheets/csv/exportdialogui.ui:252
+msgid "Space"
+msgstr "Jarak"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioOther)
+#: sheets/csv/dialogui.ui:184
+msgid "Other"
+msgstr "Lain-lain"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_ignoreDuplicates)
+#: sheets/csv/dialogui.ui:212
+msgid "Ignore duplicate delimiters"
+msgstr "Abaikan menduplikasikan penyahhad"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: sheets/csv/dialogui.ui:227
+msgid "Text&quote:"
+msgstr "&Petikan teks:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
+#: sheets/csv/dialogui.ui:240
+msgid "&Format:"
+msgstr "&Format:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/dialogui.ui:265 sheets/csv/exportdialogui.ui:329
+msgid "\""
+msgstr "\""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/dialogui.ui:270 sheets/csv/exportdialogui.ui:334
+msgid "'"
+msgstr "'"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: sheets/csv/dialogui.ui:316
+msgid "Ranges"
+msgstr "Julat"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: sheets/csv/dialogui.ui:337 sheets/csv/dialogui.ui:390
+msgid "to"
+msgstr "ke "
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel3)
+#: sheets/csv/dialogui.ui:370
+msgid "Import lines:"
+msgstr "Import baris:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel3_2)
+#: sheets/csv/dialogui.ui:430
+msgid "Import columns:"
+msgstr "Import lajur:"
+
+#. i18n: ectx: property (text), widget (QPushButton, m_updateButton)
+#: sheets/csv/dialogui.ui:504
+msgid "Update"
+msgstr "Kemas kini"
 
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroupEndOfLine)
 #: sheets/csv/exportdialogui.ui:76
@@ -384,31 +579,6 @@ msgstr "Cetak garis penyahhad pada sebelah atas setiap helaian"
 msgid "Cells"
 msgstr "Sel"
 
-#. i18n: ectx: property (title), widget (KButtonGroup, m_delimiterBox)
-#: sheets/csv/exportdialogui.ui:222
-msgid "Delimiter"
-msgstr "Penyahhad"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioComma)
-#: sheets/csv/exportdialogui.ui:228
-msgid "Comma"
-msgstr "Koma"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioSemicolon)
-#: sheets/csv/exportdialogui.ui:238
-msgid "Semicolon"
-msgstr "Koma bertitik"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioTab)
-#: sheets/csv/exportdialogui.ui:245
-msgid "Tabulator"
-msgstr "Penjadual"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioSpace)
-#: sheets/csv/exportdialogui.ui:252
-msgid "Space"
-msgstr "Jarak"
-
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioOther)
 #: sheets/csv/exportdialogui.ui:259
 msgid "Other:"
@@ -418,16 +588,6 @@ msgstr "Lain-lain:"
 #: sheets/csv/exportdialogui.ui:309
 msgid "Quotes:"
 msgstr "Petikan:"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: sheets/csv/exportdialogui.ui:329
-msgid "\""
-msgstr "\""
-
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: sheets/csv/exportdialogui.ui:334
-msgid "'"
-msgstr "'"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_selectionOnly)
 #: sheets/csv/exportdialogui.ui:365
@@ -578,49 +738,55 @@ msgstr ""
 msgid "Pi&xels between cells:"
 msgstr "&Piksel antara sel:"
 
-#: sheets/html/htmlexport.cc:208 sheets/html/htmlexport.cc:384
+#: sheets/html/htmlexport.cc:209 sheets/html/htmlexport.cc:385
 msgid "Top"
 msgstr ""
 
-#: sheets/latex/export/latexexportdialog.cc:156
+#. i18n: ectx: property (caption), widget (QDialog)
+#: sheets/latex/export/latexexportdia.ui:18
 msgid "Latex Export Filter Configuration"
 msgstr "Konfigurasi Penapis Eksport Latex"
 
-#. i18n: ectx: attribute (title), widget (QWidget, Widget2)
-#: sheets/latex/export/latexexportwidget.ui:24
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: sheets/latex/export/latexexportdia.ui:45
 msgid "Document"
 msgstr "Dokumen"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: sheets/latex/export/latexexportwidget.ui:32
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#: sheets/latex/export/latexexportdia.ui:82
 msgid "Document Style"
 msgstr "Gaya Dokumen"
 
-#. i18n: ectx: property (text), widget (QRadioButton, latexStyleButton)
-#: sheets/latex/export/latexexportwidget.ui:38
-msgid "Latex style"
-msgstr "gaya Latex"
-
-#. i18n: ectx: property (text), widget (QRadioButton, wordsStyleButton)
-#: sheets/latex/export/latexexportwidget.ui:45
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:97
 #, fuzzy
 #| msgid "KWord style"
 msgid "Words style"
 msgstr "gaya KWord"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: sheets/latex/export/latexexportwidget.ui:58
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:116
+msgid "Latex style"
+msgstr "gaya Latex"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#: sheets/latex/export/latexexportdia.ui:133
 msgid "Document Type"
 msgstr "Jenis Dokumen"
 
-#. i18n: ectx: property (toolTip), widget (QRadioButton, fullDocButton)
-#: sheets/latex/export/latexexportwidget.ui:64
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:148
+msgid "Independent document"
+msgstr "Dokumen bebas"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:154
 #, fuzzy
 msgid "The document will be able to be compiled alone"
 msgstr "Dokumen dapat dikompilkan sendiri."
 
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, fullDocButton)
-#: sheets/latex/export/latexexportwidget.ui:67
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:157
 msgid ""
 "The document will be generated as a full latex document since all the "
 "include will be generated before the \\begin[document} and \\end{document} "
@@ -630,19 +796,19 @@ msgstr ""
 "terlibat akan dijanakan sebelum perintah \\mula(dokumen} dan \\akhiri"
 "{dokumen}."
 
-#. i18n: ectx: property (text), widget (QRadioButton, fullDocButton)
-#: sheets/latex/export/latexexportwidget.ui:70
-msgid "Independent document"
-msgstr "Dokumen bebas"
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:173
+msgid "Document to include"
+msgstr "Dokumen hendak dimasukkan"
 
-#. i18n: ectx: property (toolTip), widget (QRadioButton, embededButton)
-#: sheets/latex/export/latexexportwidget.ui:80
+#. i18n: ectx: property (toolTip), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:176
 #, fuzzy
 msgid "Do not generate either the latex header or the document environment"
 msgstr "Jangan jana pengepala lateks atau persekitaran dokumen. "
 
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, embededButton)
-#: sheets/latex/export/latexexportwidget.ui:83
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:179
 msgid ""
 "The document will be generated as a latex document which will have to be "
 "included in a main latex document. It will allow you to generate several "
@@ -652,123 +818,139 @@ msgstr ""
 "dokumen lateks utama. Ia membenarkan anda menjana beberapa fail kecil bagi "
 "setiap bab dokumen anda. "
 
-#. i18n: ectx: property (text), widget (QRadioButton, embededButton)
-#: sheets/latex/export/latexexportwidget.ui:86
-msgid "Document to include"
-msgstr "Dokumen hendak dimasukkan"
-
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1_2)
-#: sheets/latex/export/latexexportwidget.ui:98
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:196
 msgid "Document class:"
 msgstr "Kelas dokumen:"
 
-#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
-#: sheets/latex/export/latexexportwidget.ui:111
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:212
 msgid "Quality:"
 msgstr "Kualiti:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, qualityComboBox)
-#: sheets/latex/export/latexexportwidget.ui:122
-msgid "Final"
-msgstr "Akhir"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, qualityComboBox)
-#: sheets/latex/export/latexexportwidget.ui:127
-msgid "Draft"
-msgstr "Draf"
-
-#. i18n: ectx: property (text), widget (QLabel, defaultFontSizeTextZone)
-#: sheets/latex/export/latexexportwidget.ui:135
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:228
 msgid "Default font size:"
 msgstr "Saiz fon piawai:"
 
-#. i18n: ectx: attribute (title), widget (QWidget, Widget3)
-#: sheets/latex/export/latexexportwidget.ui:176
+#. i18n: ectx: property (text), item, widget (KComboBox)
+#: sheets/latex/export/latexexportdia.ui:247
+msgid "Final"
+msgstr "Akhir"
+
+#. i18n: ectx: property (text), item, widget (KComboBox)
+#: sheets/latex/export/latexexportdia.ui:252
+msgid "Draft"
+msgstr "Draf"
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: sheets/latex/export/latexexportdia.ui:273
 msgid "Pictures"
 msgstr "Gambar"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: sheets/latex/export/latexexportwidget.ui:182
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: sheets/latex/export/latexexportdia.ui:301
 #, fuzzy
 #| msgid "Convert the pictures"
-msgid "Convert the pictures:"
+msgid "Convert the pictures"
 msgstr "Tukar gambar"
 
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: sheets/latex/export/latexexportwidget.ui:199
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:320
 msgid "Pictures directory:"
 msgstr "Direktori gambar:"
 
-#. i18n: ectx: attribute (title), widget (QWidget, tab)
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: sheets/latex/export/latexexportwidget.ui:213
-#: sheets/latex/export/latexexportwidget.ui:244
+#. i18n: ectx: attribute (title), widget (QWidget)
+#. i18n: ectx: property (title), widget (QGroupBox)
+#: sheets/latex/export/latexexportdia.ui:329
+#: sheets/latex/export/latexexportdia.ui:376
 msgid "Language"
 msgstr "Bahasa"
 
-#. i18n: ectx: property (text), widget (QPushButton, addLanguageBtn)
-#: sheets/latex/export/latexexportwidget.ui:261
-msgid "Add"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, rmLanguageBtn)
-#: sheets/latex/export/latexexportwidget.ui:268
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:391
 msgid "Remove"
 msgstr ""
 
-#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: sheets/latex/export/latexexportwidget.ui:293
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:407
+msgid "Add"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: sheets/latex/export/latexexportdia.ui:443
 #, fuzzy
 msgid "Contents"
 msgstr "Nota"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: sheets/latex/export/latexexportwidget.ui:301
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: sheets/latex/export/latexexportdia.ui:461
 #, fuzzy
 #| msgid "Export informations about author"
-msgid "Export information about author:"
+msgid "Export information about author"
 msgstr "Eksport maklumat tentang pengarang"
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: sheets/latex/export/latexexportwidget.ui:321
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: sheets/latex/export/latexexportdia.ui:483
 #, fuzzy
 #| msgid "Add a table of content"
-msgid "Add a table of content:"
+msgid "Add a table of content"
 msgstr "Tambah jadual kandungan"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
-#: sheets/latex/export/latexexportwidget.ui:340
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#: sheets/latex/export/latexexportdia.ui:502
 msgid "Notes"
 msgstr "Nota"
 
-#. i18n: ectx: property (text), widget (QRadioButton, RadioButton7)
-#: sheets/latex/export/latexexportwidget.ui:346
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:517
 msgid "Don't export"
 msgstr "Jangan eksport"
 
-#. i18n: ectx: property (text), widget (QRadioButton, RadioButton5)
-#: sheets/latex/export/latexexportwidget.ui:353
-msgid "Export notes in margin notes"
-msgstr "Eksport nota dalam nota jidar"
-
-#. i18n: ectx: property (text), widget (QRadioButton, RadioButton6)
-#: sheets/latex/export/latexexportwidget.ui:360
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:533
 msgid "Export notes in comments"
 msgstr "Eksport nota dalam komen"
 
-#: sheets/opencalc/opencalcexport.cc:914
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:549
+msgid "Export notes in margin notes"
+msgstr "Eksport nota dalam nota jidar"
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:574
+msgid "&Help"
+msgstr ""
+
+#. i18n: ectx: property (accel), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:577
+msgid "F1"
+msgstr "F1"
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:605
+msgid "&OK"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:619
+#, fuzzy
+msgid "&Cancel"
+msgstr "&Lanjutan "
+
+#: sheets/opencalc/opencalcexport.cc:918
 msgid "Page "
 msgstr "Halaman"
 
-#: sheets/opencalc/opencalcimport.cc:1235
+#: sheets/opencalc/opencalcimport.cc:1236
 msgid "The file seems to be corrupt. Skipping a table."
 msgstr "Fail nampaknya rosak. Melangkau jadual. "
 
-#: sheets/opencalc/opencalcimport.cc:1246
+#: sheets/opencalc/opencalcimport.cc:1247
 msgid "Skipping a table."
 msgstr "Melangkau jadual."
 
-#: sheets/opencalc/opencalcimport.cc:1946
+#: sheets/opencalc/opencalcimport.cc:1947
 #, kde-format
 msgid ""
 "This document was created with OpenOffice.org version '%1'. This filter was "
@@ -781,15 +963,15 @@ msgstr ""
 "yang luar biasa, paparan data yang bercelaru atau tidak betul. Anda mahu "
 "teruskan menukar dokumen?"
 
-#: sheets/opencalc/opencalcimport.cc:1947
+#: sheets/opencalc/opencalcimport.cc:1948
 msgid "Unsupported document version"
 msgstr "Versi dokumen tak disokong"
 
-#: sheets/qpro/qproimport.cc:127
+#: sheets/qpro/qproimport.cc:128
 msgid "QPRO filter cannot open input file - please report."
 msgstr "Penapis QPRO tidak boleh buka fail input - sila lapor."
 
-#: sheets/qpro/qproimport.cc:238
+#: sheets/qpro/qproimport.cc:239
 msgid ""
 "Unable to open password protected files.\n"
 "The password algorithm has not been published"
@@ -798,7 +980,7 @@ msgstr ""
 "Algoritma kata laluan belum diterbitkan"
 
 #: sheets/xlsx/XlsxImport.cpp:571 stage/pptx/PptxImport.cpp:1097
-#: words/docx/import/DocxImport.cpp:168
+#: words/docx/DocxImport.cpp:168
 #, fuzzy, kde-format
 #| msgid "Could not read from file."
 msgid "Unable to find part for type %1"
@@ -847,7 +1029,7 @@ msgstr "Nota hujung %1"
 msgid "Slide %1"
 msgstr "Tajuk Slaid"
 
-#: words/ascii/ImportDialog.cc:46
+#: words/ascii/ImportDialog.cc:45
 #, fuzzy
 #| msgid "KWord's Plain Text Import Filter"
 msgid "Words's Plain Text Import Filter"
@@ -859,26 +1041,26 @@ msgid "Plain Text Import Dialog"
 msgstr "Dialog Import Teks Mudah"
 
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroupParagraph)
-#: words/ascii/ImportDialogUI.ui:65
+#: words/ascii/ImportDialogUI.ui:71
 msgid "End of Paragraph"
 msgstr "Hujung Perenggan"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioParagraphAsIs)
-#: words/ascii/ImportDialogUI.ui:71
+#: words/ascii/ImportDialogUI.ui:83
 msgid "&As is: At the end of line"
 msgstr "&Seperti: Pada hujung baris"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioParagraphSentence)
-#: words/ascii/ImportDialogUI.ui:81
+#: words/ascii/ImportDialogUI.ui:93
 msgid "&Sentence: If the end of line is the end of a sentence"
 msgstr "&Ayat: Jika hujung baris merupakan hujung ayat"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioParagraphEmptyLine)
-#: words/ascii/ImportDialogUI.ui:88
+#: words/ascii/ImportDialogUI.ui:100
 msgid "&Empty Line: If the line is empty"
 msgstr ""
 
-#: words/epub/OdtHtmlConverter.cpp:304 words/mobi/OdtMobiHtmlConverter.cpp:325
+#: words/epub/OdtHtmlConverter.cpp:299 words/mobi/OdtMobiHtmlConverter.cpp:325
 #, fuzzy
 #| msgid "End of Line"
 msgid "End notes"
@@ -929,111 +1111,6 @@ msgstr "Penapis Import RTF KWord"
 #| msgid "The file cannot be loaded, as it cannot be opened."
 msgid "The file cannot be loaded."
 msgstr "Fail tidak boleh dimuatkan kerana tidak boleh dibuka."
-
-#~ msgid "Failed to write file."
-#~ msgstr "Gagal menulis fail."
-
-#, fuzzy
-#~ msgid "%1 Export Error"
-#~ msgstr "Ralat Eksport SVG"
-
-#, fuzzy
-#~ msgid "Export Filter Parameters"
-#~ msgstr "Parameter Penapis Eksport PNG"
-
-#~ msgid "Keep ratio"
-#~ msgstr "Kekalkan nisbah"
-
-#, fuzzy
-#~ msgid "Width (%):"
-#~ msgstr "Lebar (%1):"
-
-#~ msgid "Height (%):"
-#~ msgstr "Tinggi (%):"
-
-#~ msgid "PNG Export Error"
-#~ msgstr "Ralat Eksport PNG"
-
-#~ msgid "EPS Export"
-#~ msgstr "Eksport EPS"
-
-#~ msgid "PostScript level 1"
-#~ msgstr "PascaSkrip Tahap 1"
-
-#~ msgid "PostScript level 2"
-#~ msgstr "PascaSkrip tahap 2"
-
-#~ msgid "PostScript level 3"
-#~ msgstr "PascaSkrip tahap 3"
-
-#, fuzzy
-#~ msgid "Import"
-#~ msgstr "PDF Import"
-
-#~ msgid "Text"
-#~ msgstr "Teks"
-
-#~ msgid "Number"
-#~ msgstr "Nombor"
-
-#~ msgid "Currency"
-#~ msgstr "Mata wang"
-
-#~ msgid "Date"
-#~ msgstr "Tarikh"
-
-#~ msgid "Decimal Comma Number"
-#~ msgstr "Nombor Koma Perpuluhan"
-
-#~ msgid "Decimal Point Number"
-#~ msgstr "Nombor Titik Perpuluhan"
-
-#~ msgid "None"
-#~ msgstr "Tiada"
-
-#~ msgid ""
-#~ "Please check the ranges you specified. The start value must be lower than "
-#~ "the end value."
-#~ msgstr ""
-#~ "Sila semak julat yang anda tetapkan. Nilai mula mesti lebih rendah "
-#~ "daripada nilai akhir. "
-
-#~ msgid "Common"
-#~ msgstr "Biasa"
-
-#~ msgid "Other"
-#~ msgstr "Lain-lain"
-
-#~ msgid "Ignore duplicate delimiters"
-#~ msgstr "Abaikan menduplikasikan penyahhad"
-
-#~ msgid "Text&quote:"
-#~ msgstr "&Petikan teks:"
-
-#~ msgid "&Format:"
-#~ msgstr "&Format:"
-
-#~ msgid "Ranges"
-#~ msgstr "Julat"
-
-#~ msgid "to"
-#~ msgstr "ke "
-
-#~ msgid "Import lines:"
-#~ msgstr "Import baris:"
-
-#~ msgid "Import columns:"
-#~ msgstr "Import lajur:"
-
-#~ msgid "Update"
-#~ msgstr "Kemas kini"
-
-#~ msgid "F1"
-#~ msgstr "F1"
-
-#, fuzzy
-#~ msgid "&Cancel"
-#~ msgstr "&Lanjutan "
 
 #, fuzzy
 #~| msgid ""
