@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-11 01:41+0000\n"
+"POT-Creation-Date: 2013-09-12 01:42+0000\n"
 "PO-Revision-Date: 2010-07-20 20:15+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -4875,7 +4875,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Jawab"
 
-#: messageactions.cpp:84 searchdialog/searchwindow.cpp:234
+#: messageactions.cpp:84 searchdialog/searchwindow.cpp:245
 msgid "&Reply..."
 msgstr "&Jawab"
 
@@ -4883,11 +4883,11 @@ msgstr "&Jawab"
 msgid "Reply to A&uthor..."
 msgstr "Jawab kepada &Pengarang..."
 
-#: messageactions.cpp:98 searchdialog/searchwindow.cpp:238
+#: messageactions.cpp:98 searchdialog/searchwindow.cpp:249
 msgid "Reply to &All..."
 msgstr "Jawab kepada &Semua"
 
-#: messageactions.cpp:105 searchdialog/searchwindow.cpp:242
+#: messageactions.cpp:105 searchdialog/searchwindow.cpp:253
 msgid "Reply to Mailing-&List..."
 msgstr "Jawab kepada &Senarai Mel..."
 
@@ -4932,7 +4932,7 @@ msgstr "&Edit Mesej"
 msgid "Add Note..."
 msgstr "Tambah..."
 
-#: messageactions.cpp:174 searchdialog/searchwindow.cpp:246
+#: messageactions.cpp:174 searchdialog/searchwindow.cpp:257
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Perpanjangkan"
@@ -5049,36 +5049,58 @@ msgid "Search query debug"
 msgstr ""
 
 #: searchdialog/debug/searchdebugdialog.cpp:30
+#: searchdialog/debug/searchdebugnepomukshowdialog.cpp:33
 #, fuzzy
 #| msgid "Save &As..."
 msgid "Save As..."
 msgstr "Simpan &Sebagai"
 
 #: searchdialog/debug/searchdebugdialog.cpp:62
+#: searchdialog/debug/searchdebugnepomukshowdialog.cpp:88
 msgid "all files (*)"
 msgstr ""
 
-#: searchdialog/debug/searchdebugwidget.cpp:90
+#: searchdialog/debug/searchdebugnepomukshowdialog.cpp:31
+msgid "Nepomuk show result"
+msgstr ""
+
+#: searchdialog/debug/searchdebugnepomukshowdialog.cpp:53
+msgid "Sorry you don't have \"nepomukshow\" installed on your computer."
+msgstr ""
+
+#: searchdialog/debug/searchdebugnepomukshowdialog.cpp:60
+msgid "Sorry there is a problem with virtuoso."
+msgstr ""
+
+#: searchdialog/debug/searchdebugwidget.cpp:63
+msgid "Search with nepomuk show..."
+msgstr ""
+
+#: searchdialog/debug/searchdebugwidget.cpp:120
 msgid "Akonadi Id:"
 msgstr ""
 
-#: searchdialog/debug/searchdebugwidget.cpp:91
+#: searchdialog/debug/searchdebugwidget.cpp:121
 #, fuzzy
 #| msgid "&Message"
 msgid "Messages:"
 msgstr "&Mesej"
 
-#: searchdialog/debug/searchdebugwidget.cpp:95
+#: searchdialog/debug/searchdebugwidget.cpp:126
+msgid "Reduce query"
+msgstr ""
+
+#: searchdialog/debug/searchdebugwidget.cpp:129
 #, fuzzy
 #| msgid "&Search"
 msgid "Search"
 msgstr "&Cari"
 
-#: searchdialog/debug/searchdebugwidget.cpp:134
+#: searchdialog/debug/searchdebugwidget.cpp:183
 msgid "Query is empty."
 msgstr ""
 
-#: searchdialog/debug/searchdebugwidget.cpp:224
+#: searchdialog/debug/searchdebugwidget.cpp:289
 #, fuzzy, kde-format
 #| msgid "Message Body"
 msgid "1 message found"
@@ -5086,7 +5108,7 @@ msgid_plural "%1 messages found"
 msgstr[0] "Isi Mesej"
 msgstr[1] "Isi Mesej"
 
-#: searchdialog/debug/searchdebugwidget.cpp:243
+#: searchdialog/debug/searchdebugwidget.cpp:308
 msgid "Error on fetching item"
 msgstr ""
 
@@ -5137,97 +5159,102 @@ msgctxt "@title:column, folder (e.g. email)"
 msgid "Folder"
 msgstr "&Folder"
 
-#: searchdialog/searchwindow.cpp:93
+#: searchdialog/searchpatternwarning.cpp:38
+#, kde-format
+msgid "Nepomuk can not make search. Errors found: <ul><li>%1</li></ul>"
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:94
 msgid "Find Messages"
 msgstr "Cari Mesej"
 
-#: searchdialog/searchwindow.cpp:106
+#: searchdialog/searchwindow.cpp:117
 #, fuzzy
 #| msgid "&Search"
 msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Cari"
 
-#: searchdialog/searchwindow.cpp:111
+#: searchdialog/searchwindow.cpp:122
 msgid "Debug query"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:196 searchdialog/searchwindow.cpp:389
+#: searchdialog/searchwindow.cpp:207 searchdialog/searchwindow.cpp:400
 msgid "Last Search"
 msgstr "Carian Terakhir"
 
-#: searchdialog/searchwindow.cpp:251
+#: searchdialog/searchwindow.cpp:262
 #, fuzzy
 #| msgid "&Inline..."
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr "&Dalam baris..."
 
-#: searchdialog/searchwindow.cpp:256
+#: searchdialog/searchwindow.cpp:267
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "Sebagai  &Lampiran..."
 
-#: searchdialog/searchwindow.cpp:270
+#: searchdialog/searchwindow.cpp:281
 msgid "Save Attachments..."
 msgstr "Simpan Lampiran..."
 
-#: searchdialog/searchwindow.cpp:276
+#: searchdialog/searchwindow.cpp:287
 msgid "Clear Selection"
 msgstr "Kosongkan Pilihan"
 
-#: searchdialog/searchwindow.cpp:360
+#: searchdialog/searchwindow.cpp:371
 #, fuzzy, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] "_n: %1 padan"
 msgstr[1] "%1 padan"
 
-#: searchdialog/searchwindow.cpp:413
+#: searchdialog/searchwindow.cpp:424
 msgid "You did not selected a valid folder."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:413 searchdialog/searchwindow.cpp:441
-#: searchdialog/searchwindow.cpp:444
+#: searchdialog/searchwindow.cpp:424 searchdialog/searchwindow.cpp:452
+#: searchdialog/searchwindow.cpp:455
 #, fuzzy
 #| msgid "&Search"
 msgctxt "@title:window"
 msgid "Search"
 msgstr "&Cari"
 
-#: searchdialog/searchwindow.cpp:441
+#: searchdialog/searchwindow.cpp:452
 msgid "You forgot to define condition."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:444
+#: searchdialog/searchwindow.cpp:455
 msgid "All folders selected are empty or were not indexed."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:466
+#: searchdialog/searchwindow.cpp:477
 #, fuzzy
 #| msgid "Subscription..."
 msgid "Searching..."
 msgstr "Langganan..."
 
-#: searchdialog/searchwindow.cpp:474
+#: searchdialog/searchwindow.cpp:485
 #, fuzzy, kde-format
 msgid "Cannot get search result. %1"
 msgstr "_n: 1 mesej baru dalam %2"
 
-#: searchdialog/searchwindow.cpp:585
+#: searchdialog/searchwindow.cpp:596
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
 "that another search folder with the same name already exists."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:688
+#: searchdialog/searchwindow.cpp:699
 #, fuzzy, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "Mesej Tugasan"
 msgstr[1] "Mesej Tugasan"
 
-#: searchdialog/searchwindow.cpp:691
+#: searchdialog/searchwindow.cpp:702
 #, fuzzy, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
@@ -7117,13 +7144,13 @@ msgstr "Tiada apa-apa hendak dibatalkan."
 msgid "Cannot move message. %1"
 msgstr "_n: 1 mesej baru dalam %2"
 
-#: util.cpp:97
+#: util.cpp:95
 #, fuzzy
 #| msgid "Could not start certificate manager. Please check your installation."
 msgid "Could not start the account wizard. Please check your installation."
 msgstr "Tidak dapat memulakan pengurus sijil. Semak pemasangan anda."
 
-#: util.cpp:99
+#: util.cpp:97
 #, fuzzy
 #| msgid "Unable to create account"
 msgid "Unable to start account wizard"
