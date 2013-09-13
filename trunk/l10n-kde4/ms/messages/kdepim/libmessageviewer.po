@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-12 01:42+0000\n"
+"POT-Creation-Date: 2013-09-13 01:39+0000\n"
 "PO-Revision-Date: 2005-11-23 18:09+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -93,13 +93,13 @@ msgid "[vCard]"
 msgstr "[vCard]"
 
 #: header/briefheaderstyle.cpp:106 header/customheaderstyle.cpp:110
-#: header/entrepriseheaderstyle.cpp:147 header/fancyheaderstyle.cpp:151
+#: header/entrepriseheaderstyle.cpp:147 header/fancyheaderstyle.cpp:164
 #: header/plainheaderstyle.cpp:105
 msgid "CC: "
 msgstr "Sk: "
 
 #: header/briefheaderstyle.cpp:109 header/customheaderstyle.cpp:115
-#: header/entrepriseheaderstyle.cpp:158 header/fancyheaderstyle.cpp:161
+#: header/entrepriseheaderstyle.cpp:158 header/fancyheaderstyle.cpp:174
 #: header/plainheaderstyle.cpp:109
 msgid "BCC: "
 msgstr "SRk: "
@@ -129,7 +129,7 @@ msgstr "&Ubah suai..."
 msgid "Header:"
 msgstr "Tambahkan Pengepala"
 
-#: header/customheaderstyle.cpp:92 header/fancyheaderstyle.cpp:167
+#: header/customheaderstyle.cpp:92 header/fancyheaderstyle.cpp:180
 #: header/plainheaderstyle.cpp:80
 msgid "Date: "
 msgstr "Tarikh: "
@@ -166,27 +166,32 @@ msgstr "Ke:"
 msgid "(resent from %1)"
 msgstr ""
 
-#: header/fancyheaderstyle.cpp:141
+#: header/fancyheaderstyle.cpp:143
+#, kde-format
+msgid "(receiver was %1)"
+msgstr ""
+
+#: header/fancyheaderstyle.cpp:156
 #, fuzzy
 #| msgid "To: "
 msgctxt "To-field of the mail header."
 msgid "To: "
 msgstr "Ke:"
 
-#: header/fancyheaderstyle.cpp:175
+#: header/fancyheaderstyle.cpp:188
 #, fuzzy
 msgid "User-Agent: "
 msgstr "&Segera"
 
-#: header/fancyheaderstyle.cpp:184
+#: header/fancyheaderstyle.cpp:197
 msgid "X-Mailer: "
 msgstr ""
 
-#: header/fancyheaderstyle.cpp:196
+#: header/fancyheaderstyle.cpp:209
 msgid "Bugzilla: "
 msgstr ""
 
-#: header/fancyheaderstyle.cpp:208 header/grantleeheaderformatter.cpp:140
+#: header/fancyheaderstyle.cpp:221 header/grantleeheaderformatter.cpp:140
 msgid "Spam Status:"
 msgstr "Status spam:"
 
@@ -242,13 +247,21 @@ msgstr "Tarikh: "
 msgid "resent from"
 msgstr ""
 
-#: header/grantleeheaderformatter.cpp:175
+#: header/grantleeheaderformatter.cpp:167
+#, fuzzy
+#| msgid "Receiver"
+msgid "receiver was"
+msgid_plural "receivers were"
+msgstr[0] "Penerima"
+msgstr[1] "Penerima"
+
+#: header/grantleeheaderformatter.cpp:181
 #, fuzzy
 #| msgid "Printing Output"
 msgid "Printing mode"
 msgstr "Output Cetakan"
 
-#: header/grantleeheaderformatter.cpp:212
+#: header/grantleeheaderformatter.cpp:218
 #, fuzzy
 #| msgid "[vCard]"
 msgid "[vcard]"
@@ -13131,11 +13144,6 @@ msgstr "Kad &Sebelumnya"
 #~| msgid "Last Search"
 #~ msgid "Last Week"
 #~ msgstr "Carian Terakhir"
-
-#, fuzzy
-#~| msgid "Receiver"
-#~ msgid "Receiver"
-#~ msgstr "Penerima"
 
 #~ msgid "Sender"
 #~ msgstr "Penghantar"
