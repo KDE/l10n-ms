@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevgrepview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-20 10:27+0100\n"
+"POT-Creation-Date: 2013-11-07 05:06+0000\n"
 "PO-Revision-Date: 2011-07-16 01:07+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -28,50 +28,46 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sharuzzaman@myrealbox.com"
 
-#: grepdialog.cpp:55
+#: grepdialog.cpp:54
 msgid "All Open Files"
 msgstr ""
 
-#: grepdialog.cpp:56
+#: grepdialog.cpp:55
 msgid "All Open Projects"
 msgstr ""
 
-#: grepdialog.cpp:115
+#: grepdialog.cpp:119
 msgid "Search..."
 msgstr "Cari..."
 
-#: grepdialog.cpp:117 grepviewplugin.cpp:48
+#: grepdialog.cpp:121 grepdialog.cpp:469 grepviewplugin.cpp:48
+#: grepviewplugin.cpp:73
 #, fuzzy
-msgid "Find/Replace In Files"
-msgstr "Cari Ganti Fail"
+msgid "Find/Replace in Files"
+msgstr "Cari Ganti dalam  &Fail"
 
-#: grepdialog.cpp:433
+#: grepdialog.cpp:466
 #, kde-format
 msgid "%2, and %1 more item"
 msgid_plural "%2, and %1 more items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: grepdialog.cpp:436 grepviewplugin.cpp:74
-#, fuzzy
-msgid "Find/Replace in Files"
-msgstr "Cari Ganti dalam  &Fail"
-
-#: grepjob.cpp:100
+#: grepjob.cpp:107
 msgid "Find in Files"
 msgstr "Cari dalam Fail"
 
-#: grepjob.cpp:115 grepjob.cpp:217
+#: grepjob.cpp:122 grepjob.cpp:224
 #, fuzzy
 msgid "Search aborted"
 msgstr "Cari"
 
-#: grepjob.cpp:124
+#: grepjob.cpp:131
 #, fuzzy
 msgid "No files found matching the wildcard patterns"
 msgstr "Tidak"
 
-#: grepjob.cpp:142
+#: grepjob.cpp:149
 #, fuzzy
 msgctxt ""
 "Capture is the text which is \"captured\" with () in regular expressions see "
@@ -79,28 +75,28 @@ msgctxt ""
 msgid "Captures are not allowed in pattern string"
 msgstr "dalam  corak"
 
-#: grepjob.cpp:162
+#: grepjob.cpp:169
 #, fuzzy, kde-format
 msgid "Searching for <b>%2</b> in one file"
 msgid_plural "Searching for <b>%2</b> in %1 files"
 msgstr[0] "Mencari<b></b> dalam  fail"
 msgstr[1] "Mencari<b></b> dalam  fail"
 
-#: grepjob.cpp:183
+#: grepjob.cpp:190
 msgid "Collecting files..."
 msgstr ""
 
-#: grepjob.cpp:262
+#: grepjob.cpp:269
 #, kde-format
 msgid "Failed: %1"
 msgstr ""
 
-#: grepjob.cpp:265
+#: grepjob.cpp:272
 #, fuzzy
 msgid "No results found"
 msgstr "Tidak"
 
-#: grepjob.cpp:324
+#: grepjob.cpp:331
 #, kde-format
 msgid "Grep: %1"
 msgstr "Grep: %1"
@@ -181,7 +177,7 @@ msgstr ""
 
 #: grepoutputview.cpp:181
 #, kde-format
-msgid "Search %1 in %2 (at time %3)"
+msgid "Search \"%1\" in %2 (at time %3)"
 msgstr ""
 
 #: grepoutputview.cpp:254
@@ -219,9 +215,10 @@ msgid "Replace"
 msgstr "Ganti "
 
 #: grepviewplugin.cpp:48
-#, fuzzy
-msgid "Support for running grep over a list of files"
-msgstr "larian a"
+msgid ""
+"Allows fast searching of multiple files using patterns or regular "
+"expressions. And allow to replace it too."
+msgstr ""
 
 #: grepviewplugin.cpp:59
 #, fuzzy
@@ -241,20 +238,20 @@ msgstr "Cari"
 #: grepviewplugin.cpp:63
 #, fuzzy
 msgid ""
-"<b>Find/Replace in files</b><p>Opens the 'Find/Replace in files' dialog. "
-"There you can enter a regular expression which is then searched for within "
-"all files in the directories you specify. Matches will be displayed, you can "
-"switch to a match directly. You can also do replacement.</p>"
+"Opens the 'Find/Replace in files' dialog. There you can enter a regular "
+"expression which is then searched for within all files in the directories "
+"you specify. Matches will be displayed, you can switch to a match directly. "
+"You can also do replacement."
 msgstr ""
 "<b> Cari Ganti dalam </b><p> Cari Ganti dalam  a semua dalam  tukar ke  a "
 "Anda</p>"
 
-#: grepviewplugin.cpp:104 grepviewplugin.cpp:125
+#: grepviewplugin.cpp:103 grepviewplugin.cpp:124
 #, fuzzy
-msgid "Find and replace in this folder"
+msgid "Find/Replace in This Folder"
 msgstr "Cari dan dalam "
 
-#: grepviewplugin.cpp:115
+#: grepviewplugin.cpp:114
 #, fuzzy
 msgid "&Find/Replace in Files"
 msgstr "Cari Ganti dalam  &Fail"
@@ -265,20 +262,14 @@ msgstr "Cari Ganti dalam  &Fail"
 msgid "Find-Replace In Files"
 msgstr "Cari Ganti Fail"
 
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: grepwidget.ui:38
-#, fuzzy
-msgid "Pattern:"
-msgstr "Corak:"
-
 #. i18n: ectx: property (toolTip), widget (KComboBox, patternCombo)
-#: grepwidget.ui:57
+#: grepwidget.ui:44
 #, fuzzy
 msgid "Enter the regular expression you want to search for here."
 msgstr "Masuk ke ."
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, patternCombo)
-#: grepwidget.ui:81
+#: grepwidget.ui:68
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -434,89 +425,93 @@ msgstr ""
 "span></a> atau<span style=\" font-style:italic;\"></span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: grepwidget.ui:94
+#: grepwidget.ui:81
 #, fuzzy
 msgid "Template:"
 msgstr "Templat:"
 
 #. i18n: ectx: property (toolTip), widget (KComboBox, templateEdit)
-#: grepwidget.ui:107
+#: grepwidget.ui:94
 msgid "This is the regular expression template."
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, templateEdit)
-#: grepwidget.ui:110
+#: grepwidget.ui:97
 #, fuzzy, no-c-format
 msgid ""
 "This is the regular expression template. <i>%s</i> will be replaced by the "
 "pattern, while <i>%%</i> will be replaced by <i>%</i>."
 msgstr "<i> saat</i> corak<i></i><i></i>."
 
+#. i18n: ectx: property (toolTip), widget (KPushButton, syncButton)
+#: grepwidget.ui:110
+msgid "Synchronize with current document directory."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, depthLabel)
+#: grepwidget.ui:117
+msgid "Depth:"
+msgstr ""
+
+#. i18n: Full recursion will be used. For folder-based searches, that means searching in the target folder and all the subfolders, their subfolders, and so on.
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, depthSpin)
+#: grepwidget.ui:133
+msgid "Full"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: grepwidget.ui:146
+#, fuzzy
+msgid "Pattern:"
+msgstr "Corak:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: grepwidget.ui:159
+#, fuzzy
+msgid "Files:"
+msgstr "Fail:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: grepwidget.ui:172
+msgid "Case Sensitive:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, caseSensitiveCheck)
+#: grepwidget.ui:191
+msgid "Case-sensitive searching."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: grepwidget.ui:204
+msgid "Location(s):"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: grepwidget.ui:120
+#: grepwidget.ui:233
 #, fuzzy
 msgid "Regular Expression:"
 msgstr "Biasa:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, regexCheck)
-#: grepwidget.ui:133
+#: grepwidget.ui:246
 #, fuzzy
 msgid "Enable or disable regular expression."
 msgstr "Hidupkan atau."
 
-#. i18n: ectx: property (text), widget (QLabel, label_11)
-#: grepwidget.ui:146
-msgid "Case Sensitive:"
-msgstr ""
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, caseSensitiveCheck)
-#: grepwidget.ui:165
-msgid "Case-sensitive searching."
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: grepwidget.ui:178
-msgid "Location(s):"
-msgstr ""
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, directoryRequester)
-#: grepwidget.ui:197
-msgid ""
-"Select the location where you want to search. It can be a directory, a file, "
-"or a semicolon separated list of directories/files."
-msgstr ""
-
-#. i18n: ectx: property (toolTip), widget (KPushButton, syncButton)
-#: grepwidget.ui:210
-msgid "Synchronize with current document directory."
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: grepwidget.ui:217
-#, fuzzy
-msgid "Recursive:"
-msgstr "Rekursi:"
-
 #. i18n: ectx: property (text), widget (QLabel, limitToProjectLabel)
-#: grepwidget.ui:240
+#: grepwidget.ui:259
 #, fuzzy
 msgid "Limit to project files:"
 msgstr "Had ke :"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: grepwidget.ui:269
-#, fuzzy
-msgid "Files:"
-msgstr "Fail:"
-
 #. i18n: ectx: property (toolTip), widget (KComboBox, filesCombo)
-#: grepwidget.ui:282
+#: grepwidget.ui:288
 #, fuzzy
 msgid "Files filter."
 msgstr "Fail penapis."
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, filesCombo)
-#: grepwidget.ui:285
+#: grepwidget.ui:291
 #, fuzzy
 msgid ""
 "Enter the file name pattern of the files to search here. You may give "
@@ -524,18 +519,18 @@ msgid ""
 msgstr "Masuk fail nama corak ke  Anda."
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: grepwidget.ui:298
+#: grepwidget.ui:304
 msgid "Exclude:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KComboBox, excludeCombo)
-#: grepwidget.ui:311
+#: grepwidget.ui:317
 #, fuzzy
 msgid "Files pattern to exclude"
 msgstr "Fail corak ke "
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, excludeCombo)
-#: grepwidget.ui:314
+#: grepwidget.ui:320
 #, fuzzy
 msgid ""
 "Enter the file name pattern of the files to exclude from the search here. "
@@ -545,16 +540,34 @@ msgid ""
 msgstr "Masuk fail nama corak ke  Anda<p> corak corak fail</p>"
 
 #. i18n: ectx: property (toolTip), widget (KComboBox, replacementTemplateEdit)
-#: grepwidget.ui:391
+#: grepwidget.ui:381
 #, fuzzy
 msgid "Enter the replacement template."
 msgstr "Masuk."
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: grepwidget.ui:398
+#: grepwidget.ui:388
 #, fuzzy
 msgid "Replacement Template:"
 msgstr "Penggantian Templat:"
+
+#. i18n: ectx: property (toolTip), widget (KComboBox, searchPaths)
+#: grepwidget.ui:401
+msgid ""
+"Select the location where you want to search. It can be a directory, a file, "
+"or a semicolon separated (without spaces) list of directories/files."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, directorySelector)
+#: grepwidget.ui:432
+#, fuzzy
+msgid "Select a directory to search in."
+msgstr "Pilih dalam  ke ."
+
+#. i18n: ectx: property (text), widget (QPushButton, directorySelector)
+#: grepwidget.ui:435
+msgid "..."
+msgstr ""
 
 #. i18n: ectx: Menu (edit)
 #: kdevgrepview.rc:5
@@ -562,6 +575,18 @@ msgstr "Penggantian Templat:"
 msgctxt "@title:menu"
 msgid "Edit"
 msgstr "Sunting"
+
+#, fuzzy
+#~ msgid "Find/Replace In Files"
+#~ msgstr "Cari Ganti Fail"
+
+#, fuzzy
+#~ msgid "Support for running grep over a list of files"
+#~ msgstr "larian a"
+
+#, fuzzy
+#~ msgid "Recursive:"
+#~ msgstr "Rekursi:"
 
 #, fuzzy
 #~ msgid "&Change criteria"
@@ -578,7 +603,3 @@ msgstr "Sunting"
 #, fuzzy
 #~ msgid "%s"
 #~ msgstr "saat"
-
-#, fuzzy
-#~ msgid "Select in which directory you want to search."
-#~ msgstr "Pilih dalam  ke ."

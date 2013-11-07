@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevgdb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-01-13 09:19+0100\n"
+"POT-Creation-Date: 2013-11-07 05:06+0000\n"
 "PO-Revision-Date: 2011-06-23 23:07+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -28,12 +28,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sharuzzaman@myrealbox.com"
 
-#: breakpointcontroller.cpp:505
+#: breakpointcontroller.cpp:524
 #, kde-format
 msgid "<br>Old value: %1"
 msgstr "<br>Nilai lama: %1"
 
-#: breakpointcontroller.cpp:508
+#: breakpointcontroller.cpp:527
 #, fuzzy, kde-format
 msgid "<br>New value: %1"
 msgstr "<br> Baru 1"
@@ -45,7 +45,7 @@ msgid "Debugger Configuration"
 msgstr "Tetapan"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: debuggerconfigwidget.ui:26 debuggerplugin.cpp:429
+#: debuggerconfigwidget.ui:26 debuggerplugin.cpp:416
 msgid "Debugger"
 msgstr ""
 
@@ -253,29 +253,36 @@ msgid "GDB Support"
 msgstr ""
 
 #: debuggerplugin.cpp:93
-#, fuzzy
-msgid "Support for running apps in GDB"
-msgstr "larian dalam "
-
-#: debuggerplugin.cpp:155
-msgid "Disassemble"
+msgid ""
+"This plugin provides a frontend for GDB, a source-level debugger for C, C++ "
+"and more."
 msgstr ""
 
-#: debuggerplugin.cpp:159 gdblaunchconfig.cpp:139
+#: debuggerplugin.cpp:155
+#, fuzzy
+msgid "Disassemble/Registers"
+msgstr "Paparkan"
+
+#: debuggerplugin.cpp:159 gdblaunchconfig.cpp:141
 msgid "GDB"
 msgstr ""
 
-#: debuggerplugin.cpp:213
+#: debuggerplugin.cpp:165
+#, fuzzy
+msgid "Memory"
+msgstr "Memori"
+
+#: debuggerplugin.cpp:200
 #, fuzzy
 msgid "Examine Core File..."
 msgstr "Fail."
 
-#: debuggerplugin.cpp:214
+#: debuggerplugin.cpp:201
 #, fuzzy
 msgid "Examine core file"
 msgstr "fail"
 
-#: debuggerplugin.cpp:215
+#: debuggerplugin.cpp:202
 #, fuzzy
 msgid ""
 "<b>Examine core file</b><p>This loads a core file, which is typically "
@@ -284,80 +291,80 @@ msgid ""
 "crashed, allowing you to do a post-mortem analysis.</p>"
 msgstr "<b> fail</b><p> a fail g a fail masa  ke  a</p>"
 
-#: debuggerplugin.cpp:225
+#: debuggerplugin.cpp:212
 #, fuzzy
 msgid "Attach to Process"
 msgstr "ke  Process"
 
-#: debuggerplugin.cpp:226
+#: debuggerplugin.cpp:213
 #, fuzzy
 msgid "Attach to process..."
 msgstr "ke ."
 
-#: debuggerplugin.cpp:227
+#: debuggerplugin.cpp:214
 #, fuzzy
 msgid ""
 "<b>Attach to process</b><p>Attaches the debugger to a running process.</p>"
 msgstr "<b> ke </b><p> ke  a larian</p>"
 
-#: debuggerplugin.cpp:259
+#: debuggerplugin.cpp:246
 msgid "KDevelop"
 msgstr "KDevelop"
 
-#: debuggerplugin.cpp:332
+#: debuggerplugin.cpp:319
 #, fuzzy, kde-format
 msgid "Evaluate: %1"
 msgstr "1"
 
-#: debuggerplugin.cpp:334
+#: debuggerplugin.cpp:321
 msgid ""
 "<b>Evaluate expression</b><p>Shows the value of the expression under the "
 "cursor.</p>"
 msgstr ""
 
-#: debuggerplugin.cpp:337
+#: debuggerplugin.cpp:324
 #, fuzzy, kde-format
 msgid "Watch: %1"
 msgstr "1"
 
-#: debuggerplugin.cpp:339
+#: debuggerplugin.cpp:326
 #, fuzzy
 msgid ""
 "<b>Watch expression</b><p>Adds an expression under the cursor to the "
 "Variables/Watch list.</p>"
 msgstr "<b></b><p> ke  Pembolehubah</p>"
 
-#: debuggerplugin.cpp:369
+#: debuggerplugin.cpp:356
 #, fuzzy
 msgid "Choose a core file to examine..."
 msgstr "a fail ke ."
 
-#: debuggerplugin.cpp:376
+#: debuggerplugin.cpp:363
 #, fuzzy, kde-format
 msgid "Examining core file %1"
 msgstr "fail 1"
 
-#: debuggerplugin.cpp:382
+#: debuggerplugin.cpp:369
 #, fuzzy
 msgid "Debug core file"
 msgstr "Nyahpepijat fail"
 
-#: debuggerplugin.cpp:390
+#: debuggerplugin.cpp:377
 #, fuzzy
 msgid "Choose a process to attach to..."
 msgstr "a ke  ke ."
 
-#: debuggerplugin.cpp:399
+#: debuggerplugin.cpp:386
 #, fuzzy, kde-format
 msgid "Not attaching to process %1: cannot attach the debugger to itself."
 msgstr "Tidak ke  ke ."
 
-#: debuggerplugin.cpp:407
+#: debuggerplugin.cpp:394
 #, fuzzy, kde-format
 msgid "Attaching to process %1"
 msgstr "ke  1"
 
-#: debuggerplugin.cpp:413
+#: debuggerplugin.cpp:400
 #, fuzzy, kde-format
 msgid "Debug process %1"
 msgstr "Nyahpepijat 1"
@@ -387,7 +394,7 @@ msgid "Enable tracing"
 msgstr "Hidupkan"
 
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: debuggertracingdialog.ui:30 memviewdlg.cpp:120
+#: debuggertracingdialog.ui:30 memviewdlg.cpp:102
 #, fuzzy
 msgid "Cancel"
 msgstr "Batal"
@@ -399,7 +406,7 @@ msgid "Custom format string"
 msgstr "Tersendiri"
 
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: debuggertracingdialog.ui:47 memviewdlg.cpp:117
+#: debuggertracingdialog.ui:47 memviewdlg.cpp:99
 #, fuzzy
 msgid "OK"
 msgstr "OK"
@@ -425,7 +432,7 @@ msgstr ""
 msgid "Expressions to print:"
 msgstr "ke :"
 
-#: debugjob.cpp:70
+#: debugjob.cpp:80
 #, fuzzy, kde-format
 msgid ""
 "No environment group specified, looks like a broken configuration, please "
@@ -499,53 +506,44 @@ msgstr ""
 msgid "Exited normally"
 msgstr ""
 
-#: debugsession.cpp:688
+#: debugsession.cpp:687
 #, fuzzy, kde-format
 msgid "Exited on signal %1"
 msgstr "buka 1"
 
-#: debugsession.cpp:743
+#: debugsession.cpp:746
 #, fuzzy, kde-format
 msgid "Program received signal %1 (%2)"
 msgstr "Program"
 
-#: debugsession.cpp:952
+#: debugsession.cpp:954
 #, fuzzy
 msgid "Running program"
 msgstr "Berfungsi"
 
-#: debugsession.cpp:1017
-#, fuzzy
-msgid ""
-"GDB cannot use the tty* or pty* devices.\n"
-"Check the settings on /dev/tty* and /dev/pty*\n"
-"As root you may need to \"chmod ug+rw\" tty* and pty* devices and/or add the "
-"user to the tty group using \"usermod -G tty username\"."
-msgstr "atau buka dan root ke  dan dan atau ke  G."
-
-#: debugsession.cpp:1021
+#: debugsession.cpp:1014
 #, fuzzy
 msgid "Warning"
 msgstr "Amaran"
 
-#: debugsession.cpp:1209
+#: debugsession.cpp:1219
 #, fuzzy, kde-format
 msgid "<b>Debugger error</b><p>Debugger reported the following error:<p><tt>%1"
 msgstr "<b> ralat</b><p> ralat<p><tt> 1"
 
-#: debugsession.cpp:1212
+#: debugsession.cpp:1222
 #, fuzzy
 msgid "Debugger error"
 msgstr "ralat"
 
-#: debugsession.cpp:1311
+#: debugsession.cpp:1321
 #, fuzzy, kde-format
 msgid "1 command in queue\n"
 msgid_plural "%1 commands in queue\n"
 msgstr[0] "dalam "
 msgstr[1] "dalam "
 
-#: debugsession.cpp:1312
+#: debugsession.cpp:1322
 #, kde-format
 msgctxt "Only the 0 and 1 cases need to be translated"
 msgid "1 command being processed by gdb\n"
@@ -553,12 +551,12 @@ msgid_plural "%1 commands being processed by gdb\n"
 msgstr[0] ""
 msgstr[1] ""
 
-#: debugsession.cpp:1313
+#: debugsession.cpp:1323
 #, kde-format
 msgid "Debugger state: %1\n"
 msgstr ""
 
-#: debugsession.cpp:1317
+#: debugsession.cpp:1327
 #, fuzzy, kde-format
 msgid ""
 "Current command class: '%1'\n"
@@ -566,55 +564,60 @@ msgid ""
 "Current command original text: '%3'\n"
 msgstr "Semasa kelas teks teks"
 
-#: debugsession.cpp:1328
+#: debugsession.cpp:1338
 msgid "Debugger status"
 msgstr ""
 
-#: debugsession.cpp:1437
+#: debugsession.cpp:1447
 #, fuzzy, kde-format
 msgid "<b>You need gdb 7.0.0 or higher.</b><br />You are using: %1"
 msgstr "<b> Anda atau</b><br /> Anda 1"
 
-#: debugsession.cpp:1439
+#: debugsession.cpp:1449
 #, fuzzy
 msgid "gdb error"
 msgstr "ralat"
 
-#: debugsession.cpp:1450
+#: debugsession.cpp:1460
 msgid "<b>Could not start debugger:</b><br />"
 msgstr ""
 
-#: debugsession.cpp:1452 debugsession.cpp:1464
+#: debugsession.cpp:1462 debugsession.cpp:1474
 #, fuzzy
 msgid "Startup error"
 msgstr "Permulaan ralat"
 
-#: debugsession.cpp:1462
+#: debugsession.cpp:1472
 msgid "<b>Could not attach debugger:</b><br />"
 msgstr ""
 
-#: disassemblewidget.cpp:60
+#: disassemblewidget.cpp:64
 #, fuzzy
 msgid "Address Selector"
 msgstr "Alamat"
 
-#: disassemblewidget.cpp:111
+#: disassemblewidget.cpp:104
 #, fuzzy
-msgid "Start address:"
-msgstr "Mula:"
+msgid "Change &address"
+msgstr "Tuk&ar"
+
+#: disassemblewidget.cpp:108
+msgid "&Jump to Cursor"
+msgstr ""
+
+#: disassemblewidget.cpp:109
+msgid "Sets the execution pointer to the current cursor position."
+msgstr ""
 
 #: disassemblewidget.cpp:112
-#, fuzzy
-msgid "End Address:"
-msgstr "Akhir Alamat:"
+msgid "&Run to Cursor"
+msgstr ""
 
-#: disassemblewidget.cpp:126
-#, fuzzy
-msgctxt "@action:button"
-msgid "Display"
-msgstr "Paparan"
+#: disassemblewidget.cpp:113
+msgid "Continues execution until the cursor position is reached."
+msgstr ""
 
-#: disassemblewidget.cpp:149
+#: disassemblewidget.cpp:153
 #, fuzzy
 msgid ""
 "<b>Machine code display</b><p>A machine code view into your running "
@@ -623,33 +626,24 @@ msgid ""
 "\" instruction and \"step into\" instruction."
 msgstr "<b> Mesin</b><p> A larian Anda dan."
 
-#: disassemblewidget.cpp:163
+#: disassemblewidget.cpp:167
 #, fuzzy
 msgid "Address"
 msgstr "Alamat"
 
-#: disassemblewidget.cpp:163
+#: disassemblewidget.cpp:167
 #, fuzzy
 msgid "Function"
 msgstr "Fungsi"
 
-#: disassemblewidget.cpp:164
-msgid "Offset"
-msgstr ""
-
-#: disassemblewidget.cpp:164
+#: disassemblewidget.cpp:167
 msgid "Instruction"
 msgstr ""
 
-#: disassemblewidget.cpp:174
-#, fuzzy
-msgid "Disassemble View"
-msgstr "Paparkan"
-
 #: disassemblewidget.cpp:186
 #, fuzzy
-msgid "Change &address"
-msgstr "Tuk&ar"
+msgid "Disassemble/Registers View"
+msgstr "Paparkan"
 
 #: gdb.cpp:104
 #, kde-format
@@ -707,7 +701,7 @@ msgstr ""
 msgid "GDB Configuration"
 msgstr "Tetapan"
 
-#: gdblaunchconfig.cpp:173
+#: gdblaunchconfig.cpp:175
 #, fuzzy
 msgid "Executes a Native application in GDB"
 msgstr "a dalam "
@@ -764,51 +758,183 @@ msgstr "Laksana"
 msgid "Debugger Toolbar"
 msgstr "Bar Alatan"
 
-#: memviewdlg.cpp:99
+#: memviewdlg.cpp:81
 #, fuzzy
 msgid "Start"
 msgstr "Mula"
 
-#: memviewdlg.cpp:105
+#: memviewdlg.cpp:87
 msgid "Amount"
 msgstr ""
 
-#: memviewdlg.cpp:146
+#: memviewdlg.cpp:127
 #, fuzzy
 msgid "Memory view"
 msgstr "Memori"
 
-#: memviewdlg.cpp:308
+#: memviewdlg.cpp:270
 #, kde-format
 msgid "%2 (1 byte)"
 msgid_plural "%2 (%1 bytes)"
 msgstr[0] ""
 msgstr[1] ""
 
+#: memviewdlg.cpp:317
+#, fuzzy
+msgid "&Reload"
+msgstr "Ulangmuat"
+
+#: memviewdlg.cpp:326
+msgid "&Format"
+msgstr ""
+
+#: memviewdlg.cpp:329
+msgid "&Binary"
+msgstr ""
+
+#: memviewdlg.cpp:334
+msgid "&Octal"
+msgstr ""
+
+#: memviewdlg.cpp:339
+msgid "&Decimal"
+msgstr ""
+
+#: memviewdlg.cpp:344
+msgid "&Hexadecimal"
+msgstr ""
+
+#: memviewdlg.cpp:360
+msgid "&Grouping"
+msgstr ""
+
+#: memviewdlg.cpp:363
+msgid "&0"
+msgstr ""
+
+#: memviewdlg.cpp:368
+msgid "&1"
+msgstr ""
+
 #: memviewdlg.cpp:373
+msgid "&2"
+msgstr ""
+
+#: memviewdlg.cpp:378
+msgid "&4"
+msgstr ""
+
+#: memviewdlg.cpp:383
+msgid "&8"
+msgstr ""
+
+#: memviewdlg.cpp:388
+msgid "1&6"
+msgstr ""
+
+#: memviewdlg.cpp:403
+msgid "Write changes"
+msgstr ""
+
+#: memviewdlg.cpp:407
 #, fuzzy
 msgid "Change memory range"
 msgstr "Tukar"
 
-#: memviewdlg.cpp:378
-#, fuzzy
-msgid "Reload"
-msgstr "Ulangmuat"
-
-#: memviewdlg.cpp:383
+#: memviewdlg.cpp:411
 #, fuzzy
 msgid "Close this view"
 msgstr "Tutup"
 
-#: memviewdlg.cpp:443
+#: memviewdlg.cpp:481
 #, fuzzy
-msgid "Special debugger views"
-msgstr "Khas"
+msgid "Memory viewer"
+msgstr "Memori"
+
+#: memviewdlg.cpp:485
+#, fuzzy
+msgid "New memory viewer"
+msgstr "Memori"
+
+#: memviewdlg.cpp:486
+msgctxt "@info:tooltip"
+msgid "Open a new memory viewer."
+msgstr ""
 
 #: processselection.cpp:38
 #, fuzzy
 msgid "Attach to a process"
 msgstr "ke  a"
+
+#: registers/converters.cpp:31
+msgid "Binary"
+msgstr ""
+
+#: registers/converters.cpp:31
+msgid "Octal"
+msgstr ""
+
+#: registers/converters.cpp:31
+msgid "Decimal"
+msgstr ""
+
+#: registers/converters.cpp:31
+msgid "Hexadecimal"
+msgstr ""
+
+#: registers/converters.cpp:31
+msgid "Raw"
+msgstr ""
+
+#: registers/converters.cpp:31
+msgid "Unsigned"
+msgstr ""
+
+#: registers/registercontroller_arm.cpp:107
+#: registers/registercontroller_x86.cpp:107
+msgid "General"
+msgstr ""
+
+#: registers/registercontroller_arm.cpp:107
+#: registers/registercontroller_x86.cpp:107
+msgid "Flags"
+msgstr ""
+
+#: registers/registercontroller_arm.cpp:107
+msgid "VFP single-word"
+msgstr ""
+
+#: registers/registercontroller_arm.cpp:107
+msgid "VFP double-word"
+msgstr ""
+
+#: registers/registercontroller_arm.cpp:107
+msgid "VFP quad-word"
+msgstr ""
+
+#: registers/registercontroller_x86.cpp:107
+msgid "FPU"
+msgstr ""
+
+#: registers/registercontroller_x86.cpp:107
+msgid "XMM"
+msgstr ""
+
+#: registers/registercontroller_x86.cpp:107
+msgid "Segment"
+msgstr ""
+
+#: registers/registersview.cpp:68
+msgid "Format"
+msgstr ""
+
+#: registers/registersview.cpp:77
+msgid "Mode"
+msgstr ""
+
+#: registers/registersview.cpp:213
+msgid "Update"
+msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, SelectAddress)
 #: selectaddress.ui:20
@@ -844,10 +970,56 @@ msgstr "Fail:"
 msgid "Select Core File"
 msgstr "Pilih Fail"
 
-#: stty.cpp:332
+#: stty.cpp:242
 #, fuzzy
-msgid "kdevelop: Debug application console"
-msgstr "Nyahpepijat"
+msgid ""
+"Cannot use the tty* or pty* devices.\n"
+"Check the settings on /dev/tty* and /dev/pty*\n"
+"As root you may need to \"chmod ug+rw\" tty* and pty* devices and/or add the "
+"user to the tty group using \"usermod -aG tty username\"."
+msgstr "atau buka dan root ke  dan dan atau ke  G."
+
+#: stty.cpp:291
+#, kde-format
+msgid "%1 is incorrect terminal name"
+msgstr ""
+
+#: stty.cpp:297
+msgid "Can't create a temporary file"
+msgstr ""
+
+#: stty.cpp:333
+#, kde-format
+msgid ""
+"Can't get %1 tty/pty. Check that %1 is actually a terminal and that it "
+"accepts these arguments: -e sh -c \"tty> %2 ;exec<&-;exec>&-;while :;do "
+"sleep 3600;done\""
+msgstr ""
+
+#, fuzzy
+#~ msgid "Support for running apps in GDB"
+#~ msgstr "larian dalam "
+
+#, fuzzy
+#~ msgid "Start address:"
+#~ msgstr "Mula:"
+
+#, fuzzy
+#~ msgid "End Address:"
+#~ msgstr "Akhir Alamat:"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Display"
+#~ msgstr "Paparan"
+
+#, fuzzy
+#~ msgid "Special debugger views"
+#~ msgstr "Khas"
+
+#, fuzzy
+#~ msgid "kdevelop: Debug application console"
+#~ msgstr "Nyahpepijat"
 
 #~ msgid "Watches"
 #~ msgstr "Perhati"
