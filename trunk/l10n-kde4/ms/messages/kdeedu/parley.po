@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-04 01:32+0000\n"
+"POT-Creation-Date: 2013-11-11 01:32+0000\n"
 "PO-Revision-Date: 2008-07-13 01:03+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1550,48 +1550,56 @@ msgid "Change practice settings"
 msgstr "Tetapan Lain-lain"
 
 #: src/parleyactions.cpp:151
-msgid "Editor"
+msgid "Export results..."
 msgstr ""
 
 #: src/parleyactions.cpp:152
+msgid "Write a file with the results of the practice"
+msgstr ""
+
+#: src/parleyactions.cpp:156
+msgid "Editor"
+msgstr ""
+
+#: src/parleyactions.cpp:157
 #, fuzzy
 msgid "Switch to vocabulary editor"
 msgstr "Dokumen yang hendak dibuka"
 
-#: src/parleyactions.cpp:156
+#: src/parleyactions.cpp:161
 #, fuzzy
 msgid "Show Se&arch"
 msgstr "Tapi_san pencarian:"
 
-#: src/parleyactions.cpp:157
+#: src/parleyactions.cpp:162
 #, fuzzy
 msgid "Toggle display of the search bar"
 msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
-#: src/parleyactions.cpp:166
+#: src/parleyactions.cpp:171
 msgid "&Script Manager"
 msgstr ""
 
-#: src/parleyactions.cpp:167
+#: src/parleyactions.cpp:172
 msgid "Enable and disable scripts"
 msgstr ""
 
-#: src/parleyactions.cpp:183
+#: src/parleyactions.cpp:188
 #, fuzzy
 msgid "Download New Vocabularies..."
 msgstr "Tajuk laman baru"
 
-#: src/parleyactions.cpp:185
+#: src/parleyactions.cpp:190
 #, fuzzy
 msgid "Downloads new vocabulary collections"
 msgstr "Tajuk laman baru"
 
-#: src/parleyactions.cpp:191
+#: src/parleyactions.cpp:196
 #, fuzzy
 msgid "&Upload Vocabulary Document..."
 msgstr "Dokumen yang hendak dibuka"
 
-#: src/parleyactions.cpp:192
+#: src/parleyactions.cpp:197
 #, fuzzy
 msgid "Share the current vocabulary collection with other users"
 msgstr "Dokumen yang hendak dibuka"
@@ -1718,7 +1726,7 @@ msgid "Statistics Toolbar"
 msgstr "Papar penanda"
 
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
-#: src/parleyui.rc:43 src/practice/practicesummaryui.rc:19
+#: src/parleyui.rc:43 src/practice/practicesummaryui.rc:20
 #, fuzzy
 msgid "Practice Summary Toolbar"
 msgstr "Artikel:"
@@ -2003,20 +2011,20 @@ msgid ""
 "This shortcut changes how the answer is counted."
 msgstr ""
 
-#: src/practice/practicesummarycomponent.cpp:60
+#: src/practice/practicesummarycomponent.cpp:66
 #, kde-format
 msgctxt "number of words, minutes, seconds"
 msgid "You practiced %1 in %2 and %3."
 msgstr ""
 
-#: src/practice/practicesummarycomponent.cpp:61
+#: src/practice/practicesummarycomponent.cpp:67
 #, fuzzy, kde-format
 msgid "one word"
 msgid_plural "%1 words"
 msgstr[0] "Lilit perkataan"
 msgstr[1] "Lilit perkataan"
 
-#: src/practice/practicesummarycomponent.cpp:62
+#: src/practice/practicesummarycomponent.cpp:68
 #, fuzzy, kde-format
 #| msgid "minutes"
 msgid "one minute"
@@ -2024,18 +2032,74 @@ msgid_plural "%1 minutes"
 msgstr[0] "minit"
 msgstr[1] "minit"
 
-#: src/practice/practicesummarycomponent.cpp:63
+#: src/practice/practicesummarycomponent.cpp:69
 #, fuzzy, kde-format
 msgid "one second"
 msgid_plural "%1 seconds"
 msgstr[0] "Pilihan Bahasa"
 msgstr[1] "Pilihan Bahasa"
 
-#: src/practice/practicesummarycomponent.cpp:79
-#: src/practice/practicesummarycomponent.cpp:80
+#: src/practice/practicesummarycomponent.cpp:86
+#: src/practice/practicesummarycomponent.cpp:87
 #, fuzzy
 msgid "Practice Again"
 msgstr "Tetapan Lain-lain"
+
+#: src/practice/practicesummarycomponent.cpp:156
+msgid "HTML Files"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:156
+#, fuzzy
+msgid "OpenDocument text files"
+msgstr "Dokumen yang hendak dibuka"
+
+#: src/practice/practicesummarycomponent.cpp:164
+#, fuzzy
+msgid "Practice results"
+msgstr "Tidak dapat mencari bahagian KDevDesigner."
+
+#: src/practice/practicesummarycomponent.cpp:169
+#, kde-format
+msgid "Answered questions: %1\n"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:170
+#, fuzzy, kde-format
+msgid "Correct answers: %1\n"
+msgstr "Kala semasa adalah %1."
+
+#: src/practice/practicesummarycomponent.cpp:171
+#, fuzzy, kde-format
+msgid "Wrong answers: %1\n"
+msgstr "%i Salah"
+
+#: src/practice/practicesummarycomponent.cpp:178
+msgid "<b>Attempts</b>"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:179
+#, fuzzy
+msgid "<b>Question</b>"
+msgstr "Papar penanda"
+
+#: src/practice/practicesummarycomponent.cpp:180
+msgid "<b>Correct answer</b>"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:181
+msgid "<b>Your errors</b>"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:195
+#, fuzzy, kde-format
+msgid "Could not write to %1"
+msgstr "Fail Istimewa Peranti"
+
+#: src/practice/practicesummarycomponent.cpp:196
+#, fuzzy
+msgid "Could not write file"
+msgstr "Fail Istimewa Peranti"
 
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
 #: src/practice/practicesummarywidget.ui:28
@@ -4036,10 +4100,6 @@ msgstr ""
 #~ msgstr[1] "Tidak dapat mencari bahagian KDevDesigner."
 
 #, fuzzy
-#~ msgid "Your practice result:"
-#~ msgstr "Tidak dapat mencari bahagian KDevDesigner."
-
-#, fuzzy
 #~ msgid "without name"
 #~ msgstr "Name=KDevAdaProject"
 
@@ -4103,10 +4163,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Verb Training"
 #~ msgstr "Kata Kerja Sepanyol"
-
-#, fuzzy
-#~ msgid "Current tense is: %1"
-#~ msgstr "Kala semasa adalah %1."
 
 #, fuzzy
 #~ msgid "Stopping Test"
@@ -4200,10 +4256,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Total:"
 #~ msgstr "Lelaki"
-
-#, fuzzy
-#~ msgid "Wrong answer:"
-#~ msgstr "%i Salah"
 
 #~ msgid "Enter the correct translation:"
 #~ msgstr "Masukkan terjemahan yang betul:"
