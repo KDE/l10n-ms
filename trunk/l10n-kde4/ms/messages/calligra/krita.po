@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-29 01:24+0000\n"
+"POT-Creation-Date: 2013-12-30 01:24+0000\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1250,7 +1250,7 @@ msgstr "&Ubah Jenis Imej..."
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:920 ui/kis_layer_manager.cc:707
+#: image/kis_image.cc:920 ui/kis_layer_manager.cc:710
 msgid "Flatten Image"
 msgstr "Imej Rata"
 
@@ -1672,7 +1672,7 @@ msgstr "Pelarasan Warna"
 msgid "ColorBalanceMidtones Adjustment"
 msgstr "Pelarasan Warna"
 
-#: plugins/colorspaces/extensions/kis_desaturate_adjustment.cpp:135
+#: plugins/colorspaces/extensions/kis_desaturate_adjustment.cpp:152
 #, fuzzy
 #| msgid "Color Adjustment"
 msgid "Desaturate Adjustment"
@@ -5301,22 +5301,36 @@ msgstr ""
 msgid "Desaturation method:"
 msgstr "Ketepuan"
 
+#. i18n: ectx: property (text), widget (QRadioButton, radioMin)
+#: plugins/filters/colorsfilters/wdg_desaturate.ui:23
+msgid "&Min"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioMax)
+#: plugins/filters/colorsfilters/wdg_desaturate.ui:30
+msgid "&Max"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QRadioButton, radioAverage)
-#: plugins/filters/colorsfilters/wdg_desaturate.ui:36
+#: plugins/filters/colorsfilters/wdg_desaturate.ui:50
 msgid "&Average"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QRadioButton, radioLuminosity)
-#: plugins/filters/colorsfilters/wdg_desaturate.ui:43
-#, fuzzy
-msgid "Lu&minosity"
-msgstr "&Kebolehlarutcampuran:"
-
 #. i18n: ectx: property (text), widget (QRadioButton, radioLightness)
-#: plugins/filters/colorsfilters/wdg_desaturate.ui:53
+#: plugins/filters/colorsfilters/wdg_desaturate.ui:57
 #, fuzzy
 msgid "&Lightness"
 msgstr "kecerahan "
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioLuminosityBT709)
+#: plugins/filters/colorsfilters/wdg_desaturate.ui:67
+msgid "Luminosity (ITU-R BT.&709)"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioLuminosityBT601)
+#: plugins/filters/colorsfilters/wdg_desaturate.ui:74
+msgid "Luminosity (ITU-R BT.&601)"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/filters/colorsfilters/wdg_hsv_adjustment.ui:23
@@ -12523,7 +12537,7 @@ msgstr "Imej Rata"
 msgid "&Flatten Layer"
 msgstr "Penapis"
 
-#: ui/kis_layer_manager.cc:294 ui/kis_layer_manager.cc:776
+#: ui/kis_layer_manager.cc:294 ui/kis_layer_manager.cc:779
 #, fuzzy
 #| msgid "Rotate Layer"
 msgid "Rasterize Layer"
@@ -12551,48 +12565,48 @@ msgstr "Ciri Lapisan"
 msgid "Generator Layer Properties"
 msgstr "Ciri Lapisan"
 
-#: ui/kis_layer_manager.cc:482
+#: ui/kis_layer_manager.cc:485
 #, fuzzy
 #| msgid "Convert Current Layer From"
 msgid "Convert to a Paint Layer"
 msgstr "Tukar Lapisan Semasa Dari"
 
-#: ui/kis_layer_manager.cc:561
+#: ui/kis_layer_manager.cc:564
 #, fuzzy
 #| msgid "Filters"
 msgid "New Filter Layer"
 msgstr "Penapis"
 
-#: ui/kis_layer_manager.cc:620
+#: ui/kis_layer_manager.cc:623
 msgid "Could not add layer to image."
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: ui/kis_layer_manager.cc:620
+#: ui/kis_layer_manager.cc:623
 msgid "Layer Error"
 msgstr "Ralat Lapisan"
 
-#: ui/kis_layer_manager.cc:706
+#: ui/kis_layer_manager.cc:709
 msgid "The image contains hidden layers that will be lost."
 msgstr "Imej mengandungi lapisan tersembunyi yang akan hilang."
 
-#: ui/kis_layer_manager.cc:708
+#: ui/kis_layer_manager.cc:711
 #, fuzzy
 msgid "&Flatten Image"
 msgstr "Imej Rata"
 
-#: ui/kis_layer_manager.cc:812
+#: ui/kis_layer_manager.cc:815
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:815
+#: ui/kis_layer_manager.cc:818
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:873
+#: ui/kis_layer_manager.cc:876
 msgid "No file name specified."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:873
+#: ui/kis_layer_manager.cc:876
 msgid "No file specified"
 msgstr ""
 
@@ -13391,6 +13405,10 @@ msgstr "Ruang &warna:"
 #, fuzzy, kde-format
 msgid "Workspace %1"
 msgstr "Ruang &warna:"
+
+#, fuzzy
+#~ msgid "Lu&minosity"
+#~ msgstr "&Kebolehlarutcampuran:"
 
 #, fuzzy
 #~ msgid "Save to Palette"
