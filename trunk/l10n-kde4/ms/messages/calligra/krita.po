@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-22 01:28+0000\n"
+"POT-Creation-Date: 2014-02-23 01:33+0000\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1015,7 +1015,7 @@ msgctxt "(qtundo-format)"
 msgid "Set Image Resolution"
 msgstr "Resolusi Imej"
 
-#: image/commands_new/kis_node_move_command2.cpp:32
+#: image/commands_new/kis_move_command_common.h:40
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Move"
@@ -1188,82 +1188,87 @@ msgstr ""
 msgid "Mitchell"
 msgstr "Mitchell"
 
-#: image/kis_image.cc:282
+#: image/kis_image.cc:283
 msgid "background"
 msgstr "latar belakang"
 
-#: image/kis_image.cc:285
+#: image/kis_image.cc:286
 #, kde-format
 msgid "Layer %1"
 msgstr "Lapisan %1"
 
-#: image/kis_image.cc:421
+#: image/kis_image.cc:422
 #, fuzzy
 msgid "Crop Image"
 msgstr "Ricik Imej"
 
-#: image/kis_image.cc:421
+#: image/kis_image.cc:422
 msgid "Resize Image"
 msgstr "Saiz Semula Imej"
 
-#: image/kis_image.cc:454
+#: image/kis_image.cc:455
 #, fuzzy
 msgid "Crop Node"
 msgstr "Alat pangkas"
 
-#: image/kis_image.cc:481
+#: image/kis_image.cc:482
 #, fuzzy
 msgid "Scale Image"
 msgstr "Ricik Imej"
 
-#: image/kis_image.cc:481
+#: image/kis_image.cc:482
 #, fuzzy
 #| msgid "Image Resolution"
 msgid "Change Image Resolution"
 msgstr "Resolusi Imej"
 
-#: image/kis_image.cc:528
+#: image/kis_image.cc:529
 msgid "Scale Layer"
 msgstr "Skalakan Lapisan"
 
-#: image/kis_image.cc:622 plugins/extensions/rotateimage/rotateimage.cc:155
+#: image/kis_image.cc:623 plugins/extensions/rotateimage/rotateimage.cc:155
 msgid "Rotate Layer"
 msgstr "Putar Lapisan"
 
-#: image/kis_image.cc:689
+#: image/kis_image.cc:690
 msgid "Shear layer"
 msgstr "Ricih lapisan"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: image/kis_image.cc:695 plugins/extensions/shearimage/dlg_shearimage.cc:32
+#: image/kis_image.cc:696 plugins/extensions/shearimage/dlg_shearimage.cc:32
 #: plugins/extensions/shearimage/shearimage.cc:64
 #: plugins/extensions/shearimage/wdg_shearimage.ui:14
 msgid "Shear Image"
 msgstr "Ricik Imej"
 
-#: image/kis_image.cc:708
+#: image/kis_image.cc:709
 #, fuzzy
 msgid "Convert Image Color Space"
 msgstr "&Ubah Jenis Imej..."
 
-#: image/kis_image.cc:741
+#: image/kis_image.cc:742
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:920 ui/kis_layer_manager.cc:710
+#: image/kis_image.cc:921 ui/kis_layer_manager.cc:710
 msgid "Flatten Image"
 msgstr "Imej Rata"
 
-#: image/kis_image.cc:1020
+#: image/kis_image.cc:1021
 #, fuzzy
 msgid "Merge with Layer Below"
 msgstr "&Cantum Lapisan"
 
-#: image/kis_image.cc:1066
+#: image/kis_image.cc:1067
 #, fuzzy
 #| msgid "Flatten Image"
 msgid "Flatten Layer"
 msgstr "Imej Rata"
+
+#: image/kis_image.cc:1623
+#, fuzzy
+msgid "Crop Selections"
+msgstr "Tiada pemilihan"
 
 #. i18n: ectx: property (text), widget (QCheckBox, opacityCBox)
 #: image/kis_layer.cc:174 plugins/paintops/hairy/wdghairyeoptions.ui:297
@@ -9767,7 +9772,7 @@ msgid "Select a polygonal region"
 msgstr "Pilih ikut Julat Warna"
 
 #: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:42
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:98
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:88
 msgid "Rectangular Selection"
 msgstr "Pemilihan Segiempat Tepat"
 
@@ -10203,7 +10208,7 @@ msgstr "Pastel"
 msgid "Convert to Vector Selection"
 msgstr "Tiada pemilihan"
 
-#: ui/canvas/kis_canvas_controller.cpp:185
+#: ui/canvas/kis_canvas_controller.cpp:184
 msgid ""
 "You are activating wrap-around mode, but have not enabled OpenGL.\n"
 "To visualize wrap-around mode, enable OpenGL."
