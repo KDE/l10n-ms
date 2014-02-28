@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-01-21 01:26+0000\n"
+"POT-Creation-Date: 2014-02-28 03:08+0000\n"
 "PO-Revision-Date: 2005-09-29 21:52-0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -120,112 +120,121 @@ msgstr ""
 msgid "File to open"
 msgstr "Fail hendak dibuka"
 
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:39
-msgid "Auto"
+#: plugins/dockers/stencilboxdocker/CollectionTreeWidget.cpp:298
+msgid "Expand all"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:46
-#, fuzzy
-#| msgctxt "Stencils"
-#| msgid "Contact"
-msgid "Constraint "
-msgstr "Hubung"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:79
-#, fuzzy
-#| msgctxt "no line end"
-#| msgid "None"
-msgid "None"
-msgstr " Tiada"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:86
-msgid "Non-overlap"
+#: plugins/dockers/stencilboxdocker/CollectionTreeWidget.cpp:299
+msgid "Collapse all"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_2)
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_3)
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:111
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:130
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:149
-msgid "PushButton"
+#: plugins/dockers/stencilboxdocker/CollectionTreeWidget.cpp:302
+msgid "List View"
 msgstr ""
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:94
+#: plugins/dockers/stencilboxdocker/CollectionTreeWidget.cpp:303
+msgid "Icon View"
+msgstr ""
+
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:71
 #, fuzzy
 msgid "Stencil Box"
 msgstr "Tambahkan Stensil"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:99
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:77
 #, fuzzy
-#| msgid "Remove Stencil"
-msgid "Get more stencils"
-msgstr "Alih Keluar Stensil"
+msgid "Stencils Online"
+msgstr "Tambahkan Stensil"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:100
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:78
 #, fuzzy
-#| msgid "Install Stencil Set"
-msgid "Install stencil"
-msgstr "Pasang Set Stensil"
+#| msgid "Add Stencil"
+msgid "Add/Remove Stencil"
+msgstr "Tambahkan Stensil"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:107
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:97
 #, fuzzy
 #| msgctxt "Stencils"
 #| msgid "House shape"
 msgid "More shapes"
 msgstr "House shape"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:113
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:103
 msgid "Filter"
 msgstr ""
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:147
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:182
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:135
 msgid "Stencils successfully installed."
 msgstr ""
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:150
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:138
 msgid "Stencils successfully uninstalled."
 msgstr ""
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:159
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:150
 msgid ""
-"Calligra Stencil Packages (*.cstencil.tar, *.cstencil.tar.bz2, *.cstencil."
-"tar.gz)"
+"This is the user stencils directory.\n"
+"From here you can add / remove stencils for use in the Stencil Box docker.\n"
+"\n"
+"Stencils are organized in collections, a collection is a folder containing a "
+"text file 'collection.desktop':\n"
+"\n"
+"ollection.desktop\n"
+"\n"
+"[Desktop Entry]\n"
+"Name=Your Stencil Collection Name\n"
+"\n"
+"A stencil is an ODG file, a desktop file, an optional PNG icon file, all "
+"with with name under its cpollection folder:\n"
+"\n"
+"foo.odg\n"
+"\n"
+"ODF elements for stencil should be a <draw:g> element or <draw:custom-shape> "
+"element\n"
+"\n"
+"foo.desktop\n"
+"\n"
+"[Desktop Entry]\n"
+"Name=Foo\n"
+"CS-KeepAspectRatio=1\n"
+"\n"
+"If CS-KeepAspectRatio=1, the stencil added to canvas will have geomatry "
+"aspect ratio locked, by default it's 0.\n"
+"\n"
+"foo.png\n"
+"\n"
+"Should have size 32x32 pixel, if the png file is not included, Flow will "
+"render the ODG file as the icon,\n"
+"but it won't look good under small pixels when the stencil stroke is "
+"complicated.\n"
 msgstr ""
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:165
 #, fuzzy
-#| msgid "Could not find the stencil set archive %1."
-msgid "Could not read this package."
-msgstr "Tidak dapat cari arkib set stensil %1."
+#~| msgctxt "Stencils"
+#~| msgid "Contact"
+#~ msgid "Constraint "
+#~ msgstr "Hubung"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:176
-#, kde-format
-msgid ""
-"A collection of stencils in family '%1' is already installed. Please "
-"uninstall it first."
-msgstr ""
+#, fuzzy
+#~| msgctxt "no line end"
+#~| msgid "None"
+#~ msgid "None"
+#~ msgstr " Tiada"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxView.cpp:352
-msgid "Expand all"
-msgstr ""
+#, fuzzy
+#~| msgid "Remove Stencil"
+#~ msgid "Get more stencils"
+#~ msgstr "Alih Keluar Stensil"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxView.cpp:353
-msgid "Collapse all"
-msgstr ""
+#, fuzzy
+#~| msgid "Install Stencil Set"
+#~ msgid "Install stencil"
+#~ msgstr "Pasang Set Stensil"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxView.cpp:356
-msgid "List View"
-msgstr ""
-
-#: plugins/dockers/stencilboxdocker/StencilBoxView.cpp:357
-msgid "Icon View"
-msgstr ""
+#, fuzzy
+#~| msgid "Could not find the stencil set archive %1."
+#~ msgid "Could not read this package."
+#~ msgstr "Tidak dapat cari arkib set stensil %1."
 
 #, fuzzy
 #~| msgid "File to open"
@@ -3494,15 +3503,8 @@ msgstr ""
 #~ msgid "Untitled Layer"
 #~ msgstr "Lapisan tak bertajuk"
 
-#, fuzzy
-#~ msgid "Stencils"
-#~ msgstr "Tambahkan Stensil"
-
 #~ msgid "Layer 1"
 #~ msgstr "Lapisan 1"
-
-#~ msgid "Add Stencil"
-#~ msgstr "Tambahkan Stensil"
 
 #~ msgid ""
 #~ "One of the selected stencils has protection from deletion and cannot be "
