@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-22 01:48+0000\n"
+"POT-Creation-Date: 2014-06-04 01:40+0000\n"
 "PO-Revision-Date: 2008-07-13 01:03+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -88,7 +88,7 @@ msgstr[1] "Pilihan Bahasa"
 msgid "*.kvtml|Vocabulary Collections"
 msgstr "Dokumen yang hendak dibuka"
 
-#: plugins/example.py:14 src/vocabulary/lessonview.cpp:37
+#: plugins/example.py:14
 #, fuzzy
 msgid "New Lesson"
 msgstr "Cipta perbendaharaan kata baru."
@@ -945,9 +945,9 @@ msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
 
 #: src/editor/editor.cpp:164
 msgid ""
-"Right click to add, delete, or rename lessons. \n"
-"With the checkboxes you can select which lessons you want to practice. \n"
-"Only checked lessons [x] will be asked in the tests!"
+"Right click to add, delete, or rename units. \n"
+"With the checkboxes you can select which units you want to practice. \n"
+"Only checked units [x] will be asked in the practice!"
 msgstr ""
 
 #: src/editor/editor.cpp:179
@@ -1028,9 +1028,8 @@ msgstr ""
 
 #. i18n: ectx: Menu (lesson)
 #: src/editor/editorui.rc:49
-#, fuzzy
-msgid "&Lesson"
-msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
+msgid "&Unit"
+msgstr ""
 
 #. i18n: ectx: Menu (learning)
 #: src/editor/editorui.rc:62 src/practice/practicesummaryui.rc:12
@@ -1052,7 +1051,7 @@ msgstr "Papar penanda"
 
 #: src/editor/FromToEntryPage.cpp:160
 #, kde-format
-msgid "Grades from %1 to %2"
+msgid "Confidence Levels from %1 to %2"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, direc_label)
@@ -1063,9 +1062,8 @@ msgstr "Pulihkan nilai _asal"
 
 #. i18n: ectx: property (text), widget (QLabel, grade_label)
 #: src/editor/FromToEntryPageForm.ui:72
-#, fuzzy
-msgid "&Grade:"
-msgstr "Tahap Gred: %1. Strok: %2."
+msgid "&Confidence Level:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, fauxami_label)
 #: src/editor/FromToEntryPageForm.ui:95
@@ -1127,9 +1125,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, resetGradesButton)
 #: src/editor/FromToEntryPageForm.ui:260
-#, fuzzy
-msgid "&Reset Grades"
-msgstr "Kepastian Ulangtetap"
+msgid "&Reset Confidence Levels"
+msgstr ""
 
 #: src/editor/inflectionwidget.cpp:36 src/parleydocument.cpp:326
 #: src/vocabulary/wordtypeview.cpp:123
@@ -1195,7 +1192,7 @@ msgid "Language"
 msgstr "Bahasa"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: src/editor/summarywordwidget.ui:32 src/vocabulary/containermodel.cpp:170
+#: src/editor/summarywordwidget.ui:32
 msgid "Lesson"
 msgstr ""
 
@@ -1549,22 +1546,21 @@ msgid ""
 "Edit which languages are in the collection and their grammar properties."
 msgstr ""
 
-#: src/parleyactions.cpp:121
-#, fuzzy
-msgid "Remove Grades"
-msgstr "Kepastian Ulangtetap"
+#: src/parleyactions.cpp:121 src/vocabulary/lessonview.cpp:69
+msgid "Remove Confidence Levels"
+msgstr ""
 
 #: src/parleyactions.cpp:122
-msgid "Remove all grades from the current document"
+msgid "Remove all confidence levels from the current document"
 msgstr ""
 
 #: src/parleyactions.cpp:129
 #, fuzzy
-msgid "Show Entries from Child Lessons"
+msgid "Show Entries from Child Units"
 msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
 #: src/parleyactions.cpp:130
-msgid "Enable to also see the entries of child lessons in each lesson."
+msgid "Enable to also see the entries of child units in each unit."
 msgstr ""
 
 #: src/parleyactions.cpp:136
@@ -1573,7 +1569,7 @@ msgstr ""
 
 #. i18n: ectx: label, entry (AutomaticTranslation), group (General)
 #: src/parleyactions.cpp:137 src/settings/parley.kcfg:50
-msgid "Enable automatic translation of the lesson entries."
+msgid "Enable automatic translation of the unit entries."
 msgstr ""
 
 #: src/parleyactions.cpp:143
@@ -1959,10 +1955,10 @@ msgid "%1 is neuter"
 msgstr "&neutral"
 
 #: src/practice/guifrontend.cpp:129
-#, fuzzy, kde-format
-msgctxt "Display of the current lesson during practice"
-msgid "Lesson: %1"
-msgstr "Cipta perbendaharaan kata baru."
+#, kde-format
+msgctxt "Display of the current unit during practice"
+msgid "Unit: %1"
+msgstr ""
 
 #: src/practice/guifrontend.cpp:136
 #, fuzzy
@@ -3013,7 +3009,7 @@ msgstr ""
 #. i18n: ectx: label, entry (EntriesPerLesson), group (General)
 #: src/settings/parley.kcfg:27
 #, fuzzy
-msgid "The number of entries per lesson"
+msgid "The number of entries per unit"
 msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
 #. i18n: ectx: label, entry (AutoOpenLast), group (General)
@@ -3067,8 +3063,8 @@ msgstr "_Guna kaedah masukan tersendiri"
 #. i18n: ectx: label, entry (TestOrderLesson), group (PracticeOptions)
 #: src/settings/parley.kcfg:77
 msgid ""
-"Append new vocabulary in a test in order of their lessons. Note that this "
-"will not be a hard transition, but a slow mix from one lesson to the next."
+"Append new vocabulary in a collection in order of their units. Note that "
+"this will not be a hard transition, but a slow mix from one unit to the next."
 msgstr ""
 
 #. i18n: ectx: label, entry (TestNumberOfEntries), group (PracticeOptions)
@@ -3228,13 +3224,13 @@ msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
 #. i18n: ectx: label, entry (ShowSublessonentries), group (Appearance)
 #: src/settings/parley.kcfg:198
-msgid "When enabled a lesson also shows entries from its sublessons."
+msgid "When enabled a unit also shows entries from its subunits."
 msgstr ""
 
 #. i18n: ectx: label, entry (TableLessonColumnVisible), group (Appearance)
 #: src/settings/parley.kcfg:203
 #, fuzzy
-msgid "Show/hide the lesson column."
+msgid "Show/hide the unit column."
 msgstr "Description=ioslave Subversion"
 
 #. i18n: ectx: label, entry (TableActiveColumnVisible), group (Appearance)
@@ -3245,7 +3241,7 @@ msgstr "Description=ioslave Subversion"
 
 #. i18n: ectx: label, entry (LessonEditingSelection), group (Appearance)
 #: src/settings/parley.kcfg:213
-msgid "Select which lessons are displayed for editing"
+msgid "Select which units are displayed for editing"
 msgstr ""
 
 #. i18n: ectx: label, entry (MainWindowSplitter), group (Appearance)
@@ -3276,10 +3272,9 @@ msgid "Currently selected row"
 msgstr "Padam giliran dipilih"
 
 #. i18n: ectx: label, entry (GradeColor), group (Appearance)
-#. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor)
-#: src/settings/parley.kcfg:243 src/settings/viewoptionsbase.ui:102
+#: src/settings/parley.kcfg:243
 #, fuzzy
-msgid "Color used to display the grades"
+msgid "Color used to display the confidence levels"
 msgstr "Tetap Buddy untuk %1"
 
 #. i18n: ectx: label, entry (PracticeMinimumTimesAsked), group (Thresholds)
@@ -3313,14 +3308,15 @@ msgstr ""
 #. i18n: ectx: label, entry (PracticeMinimumGrade), group (Thresholds)
 #: src/settings/parley.kcfg:269
 msgid ""
-"The entry must have at least this grade to be included in the practice "
-"(0..7)."
+"The entry must have at least this confidence level to be included in the "
+"practice (0..7)."
 msgstr ""
 
 #. i18n: ectx: label, entry (PracticeMaximumGrade), group (Thresholds)
 #: src/settings/parley.kcfg:273
 msgid ""
-"The entry must have at most this grade to be included in the practice (0..7)."
+"The entry must have at most this confidence level to be included in the "
+"practice (0..7)."
 msgstr ""
 
 #. i18n: ectx: label, entry (WordTypesInPracticeEnabled), group (Thresholds)
@@ -3377,12 +3373,12 @@ msgstr ""
 
 #. i18n: ectx: label, entry (BlockItem$(Grade)), group (PracticeManager)
 #: src/settings/parley.kcfg:338
-msgid "Amount of time different grades should be blocked"
+msgid "Amount of time different confidence levels should be blocked"
 msgstr ""
 
 #. i18n: ectx: label, entry (ExpireItem$(Grade)), group (PracticeManager)
 #: src/settings/parley.kcfg:349
-msgid "Amount of time after which different grades should expire"
+msgid "Amount of time after which different confidence levels should expire"
 msgstr ""
 
 #. i18n: ectx: label, entry (ProvidersUrl), group (KNewStuff)
@@ -3444,6 +3440,12 @@ msgstr ""
 msgid "Base color for displaying grades:"
 msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor)
+#: src/settings/viewoptionsbase.ui:102
+#, fuzzy
+msgid "Color used to display the grades"
+msgstr "Tetap Buddy untuk %1"
+
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_GradeColor)
 #: src/settings/viewoptionsbase.ui:105
 msgid "Click here to change the color used to display the grades."
@@ -3473,21 +3475,17 @@ msgid "Not practiced"
 msgstr "Tidak dapat mencari bahagian KDevDesigner."
 
 #: src/statistics/lessonstatistics.cpp:182
-#, fuzzy
-msgid "Remove &Grades from this lesson"
-msgstr "Kepastian Ulangtetap"
-
 #: src/statistics/lessonstatistics.cpp:184
 #, fuzzy
-msgid "Remove grades from this lesson"
+msgid "Remove confidence levels from this unit"
 msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
 #: src/statistics/lessonstatistics.cpp:192
-msgid "Remove &Grades from this lesson and all sub-lessons"
+msgid "Remove confidence levels from this unit and all sub-units"
 msgstr ""
 
 #: src/statistics/lessonstatistics.cpp:194
-msgid "Remove grades from this lesson and all sub-lessons"
+msgid "Remove confidence level from this unit and all sub-units"
 msgstr ""
 
 #: src/statistics/statisticsmainwindow.cpp:196
@@ -3571,30 +3569,34 @@ msgid "Practice Direction"
 msgstr "Tetapan Lain-lain"
 
 #: src/statistics/statisticsmodel.cpp:31
-#, fuzzy, kde-format
-msgctxt "Grade in language, table header"
-msgid "Grade (%1)"
-msgstr "Tahap Gred: %1. Strok: %2."
+#, kde-format
+msgctxt "Confidence level in language, table header"
+msgid "Confidence (%1)"
+msgstr ""
 
 #: src/vocabulary/basiccontainermodel.cpp:145
 #, fuzzy
 msgid "None"
 msgstr "Tiada"
 
+#: src/vocabulary/containermodel.cpp:170
+msgid "Unit"
+msgstr ""
+
 #: src/vocabulary/containermodel.cpp:178
 #, fuzzy
 msgid "Number of entries in this lesson."
 msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
-#: src/vocabulary/leitnerview.cpp:117 src/vocabulary/lessonview.cpp:194
-msgid "The root lesson cannot be deleted."
+#: src/vocabulary/leitnerview.cpp:117
+msgid "The root unit cannot be deleted."
 msgstr ""
 
 #: src/vocabulary/leitnerview.cpp:126 src/vocabulary/lessonview.cpp:203
 #, kde-format
-msgid "There is %1 word left in this lesson. Do you want to delete it?"
+msgid "There is %1 word left in this unit. Do you want to delete it?"
 msgid_plural ""
-"There are %1 words left in this lesson. Do you want to delete them?"
+"There are %1 words left in this unit. Do you want to delete them?"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -3604,76 +3606,80 @@ msgctxt "display of the name of the vocabulary collection"
 msgid "Collection: %1"
 msgstr "<b>Peranti Dipilih</b>"
 
+#: src/vocabulary/lessonview.cpp:37
+msgid "New Unit"
+msgstr ""
+
 #: src/vocabulary/lessonview.cpp:39
-msgid "Add a new lesson to your document"
+msgid "Add a new unit to your document"
 msgstr ""
 
 #: src/vocabulary/lessonview.cpp:45
 #, fuzzy
-msgid "Rename Lesson"
-msgstr "Cipta perbendaharaan kata baru."
+#| msgid "Filename:"
+msgid "Rename Unit"
+msgstr "Namafail:"
 
 #: src/vocabulary/lessonview.cpp:53
 #, fuzzy
-msgid "Delete Lesson"
-msgstr "Membuang masukan bukutelefon"
+msgid "Delete Unit"
+msgstr "Tajuk laman baru"
 
 #: src/vocabulary/lessonview.cpp:55
 #, fuzzy
-msgid "Delete the selected lesson."
+msgid "Delete the selected unit."
 msgstr "Padam giliran dipilih"
 
 #: src/vocabulary/lessonview.cpp:61
-msgid "Split Lesson into Smaller Lessons"
+msgid "Split Unit into Smaller Units"
 msgstr ""
 
 #: src/vocabulary/lessonview.cpp:63
-msgid "Make multiple smaller lessons out of one big lesson."
+msgid "Make multiple smaller units out of one big unit."
 msgstr ""
-
-#: src/vocabulary/lessonview.cpp:69
-#, fuzzy
-msgid "Remove Grades from this Lesson"
-msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
 #: src/vocabulary/lessonview.cpp:71
 #, fuzzy
-msgid "Remove grades from this lesson."
+msgid "Remove confidence levels from this unit."
 msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
 #: src/vocabulary/lessonview.cpp:77
-msgid "Remove Grades from this Lesson and all Sub-Lessons"
+msgid "Remove Confidence Levels From This Unit And All Subunits"
 msgstr ""
 
 #: src/vocabulary/lessonview.cpp:79
-msgid "Remove grades from this lesson and all sub-lessons."
+msgid "Remove confidence levels from this unit and all subunits."
 msgstr ""
 
 #: src/vocabulary/lessonview.cpp:85
-msgid "Expand all lessons and sub-lessons"
+msgid "Expand Units and Subunits"
 msgstr ""
 
 #: src/vocabulary/lessonview.cpp:87
-msgid "Expand all lessons and sub-lessons."
+msgid "Expand all units and subunits."
 msgstr ""
 
 #: src/vocabulary/lessonview.cpp:93
-msgid "Collapse all lessons and sub-lessons"
+msgid "Collapse All Units And Subunits"
 msgstr ""
 
 #: src/vocabulary/lessonview.cpp:95
-msgid "Collapse all lessons and sub-lessons."
+msgid "Collapse all units and subunits."
+msgstr ""
+
+#: src/vocabulary/lessonview.cpp:194
+msgid "The root lesson cannot be deleted."
 msgstr ""
 
 #: src/vocabulary/lessonview.cpp:217
 #, fuzzy
-msgid "Entries per Lesson"
+msgid "Entries per Unit"
 msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
 #: src/vocabulary/lessonview.cpp:217
 msgid ""
-"The lesson will be split into smaller lessons. How many entries in each "
-"lesson do you want?"
+"The unit will be split into smaller unit. How many entries in each unit do "
+"you want?"
 msgstr ""
 
 #: src/vocabulary/vocabularycolumnsdialog.cpp:53
@@ -3728,12 +3734,12 @@ msgstr "Tambah pilihan giliran baru"
 
 #: src/vocabulary/vocabularymodel.cpp:328
 #, fuzzy
-msgid "Select a lesson before adding vocabulary."
+msgid "Select a unit before adding vocabulary."
 msgstr "Kuncupkan Semua Blok"
 
 #: src/vocabulary/vocabularymodel.cpp:328
 #, fuzzy
-msgid "No Lesson Selected"
+msgid "No Unit Selected"
 msgstr "Tiada monitor dipilih"
 
 #: src/vocabulary/vocabularyview.cpp:87
@@ -4059,6 +4065,48 @@ msgid ""
 "<a href=\"http://edu.kde.org/contrib/kvtml2.php\">http://edu.kde.org/contrib/"
 "kvtml2.php</a>.</p>\n"
 msgstr ""
+
+#, fuzzy
+#~ msgid "&Lesson"
+#~ msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
+
+#, fuzzy
+#~ msgid "&Grade:"
+#~ msgstr "Tahap Gred: %1. Strok: %2."
+
+#, fuzzy
+#~ msgid "&Reset Grades"
+#~ msgstr "Kepastian Ulangtetap"
+
+#, fuzzy
+#~ msgid "Remove Grades"
+#~ msgstr "Kepastian Ulangtetap"
+
+#, fuzzy
+#~ msgctxt "Display of the current lesson during practice"
+#~ msgid "Lesson: %1"
+#~ msgstr "Cipta perbendaharaan kata baru."
+
+#, fuzzy
+#~ msgid "Remove &Grades from this lesson"
+#~ msgstr "Kepastian Ulangtetap"
+
+#, fuzzy
+#~ msgctxt "Grade in language, table header"
+#~ msgid "Grade (%1)"
+#~ msgstr "Tahap Gred: %1. Strok: %2."
+
+#, fuzzy
+#~ msgid "Rename Lesson"
+#~ msgstr "Cipta perbendaharaan kata baru."
+
+#, fuzzy
+#~ msgid "Delete Lesson"
+#~ msgstr "Membuang masukan bukutelefon"
+
+#, fuzzy
+#~ msgid "Remove Grades from this Lesson"
+#~ msgstr "Name=Papar dalam Tetingkap Yang Dinyatakan"
 
 #, fuzzy
 #~ msgctxt "caption for an overview of the grades for a document"
