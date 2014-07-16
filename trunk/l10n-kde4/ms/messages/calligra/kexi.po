@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-06 01:34+0000\n"
+"POT-Creation-Date: 2014-07-16 01:51+0000\n"
 "PO-Revision-Date: 2006-10-05 19:45+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -5078,7 +5078,7 @@ msgstr ""
 "Anda mahu tulis gantinya?"
 
 #: main/startup/KexiStartupFileHandler.cpp:433
-#: plugins/reports/kexireportview.cpp:206 widget/KexiFileWidget.cpp:394
+#: plugins/reports/kexireportview.cpp:258 widget/KexiFileWidget.cpp:394
 msgid "Overwrite"
 msgstr ""
 
@@ -7211,40 +7211,78 @@ msgid "Exports the report as a text document (in OpenDocument Text format)."
 msgstr ""
 
 #: plugins/reports/kexireportview.cpp:128
+msgctxt "Portable Document Format..."
+msgid "PDF..."
+msgstr ""
+
+#: plugins/reports/kexireportview.cpp:131
+#, fuzzy
+#| msgid "Opening object \"%1\" failed."
+msgid "Export as PDF"
+msgstr "Membuka objek \"%1\" gagal."
+
+#: plugins/reports/kexireportview.cpp:132
+#, fuzzy
+#| msgid "Closes the current project."
+msgid "Exports the current report as PDF."
+msgstr "Tutup projek semasa."
+
+#: plugins/reports/kexireportview.cpp:140
 #, fuzzy
 msgctxt "open dialog to export as spreadsheet"
 msgid "Spreadsheet..."
 msgstr "Tiada modul bahagian untuk jenis mime \"%1\""
 
-#: plugins/reports/kexireportview.cpp:131
+#: plugins/reports/kexireportview.cpp:143
 msgid "Export the report as a spreadsheet (in OpenDocument Spreadsheet format)"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:132
+#: plugins/reports/kexireportview.cpp:144
 msgid ""
 "Exports the report as a spreadsheet (in OpenDocument Spreadsheet format)."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:140
+#: plugins/reports/kexireportview.cpp:152
 #, fuzzy
 #| msgid "&Add..."
 msgctxt "open dialog to export as web page"
 msgid "Web Page..."
 msgstr "&Tambah..."
 
-#: plugins/reports/kexireportview.cpp:143
+#: plugins/reports/kexireportview.cpp:155
 #, fuzzy
 #| msgid "Opening object \"%1\" failed."
 msgid "Export the report as a web page (in HTML format)"
 msgstr "Membuka objek \"%1\" gagal."
 
-#: plugins/reports/kexireportview.cpp:144
+#: plugins/reports/kexireportview.cpp:156
 #, fuzzy
 #| msgid "Opening object \"%1\" failed."
 msgid "Exports the report as a web page (in HTML format)."
 msgstr "Membuka objek \"%1\" gagal."
 
-#: plugins/reports/kexireportview.cpp:205
+#: plugins/reports/kexireportview.cpp:212
+#, fuzzy
+#| msgid "Opening object \"%1\" failed."
+msgid "Export Report as PDF"
+msgstr "Membuka objek \"%1\" gagal."
+
+#: plugins/reports/kexireportview.cpp:231
+#, fuzzy, kde-format
+#| msgid "Opening object \"%1\" failed."
+msgid "Exporting the report as PDF to %1 failed."
+msgstr "Membuka objek \"%1\" gagal."
+
+#: plugins/reports/kexireportview.cpp:232
+#: plugins/reports/kexireportview.cpp:308
+#: plugins/reports/kexireportview.cpp:334
+#: plugins/reports/kexireportview.cpp:375
+#, fuzzy
+#| msgid "Saving \"%1\" object failed."
+msgid "Export Failed"
+msgstr "Menyimpan objek \"%1\"gagal."
+
+#: plugins/reports/kexireportview.cpp:257
 #, fuzzy, kde-format
 #| msgid ""
 #| "The file \"%1\" already exists.\n"
@@ -7256,77 +7294,69 @@ msgstr ""
 "Fail \"%1\" sudah wujud.\n"
 "Anda mahu tulis gantinya?"
 
-#: plugins/reports/kexireportview.cpp:227
+#: plugins/reports/kexireportview.cpp:279
 #, fuzzy
 #| msgid "Do you want to open it in Text View?"
 msgid "Do you want to open exported document?"
 msgstr "Anda ingin membukanya dalam Papar Teks?"
 
-#: plugins/reports/kexireportview.cpp:246
+#: plugins/reports/kexireportview.cpp:298
 #, fuzzy
 #| msgid "Closes the current project."
 msgid "Export Report as Spreadsheet"
 msgstr "Tutup projek semasa."
 
-#: plugins/reports/kexireportview.cpp:253
+#: plugins/reports/kexireportview.cpp:307
 #, fuzzy, kde-format
 #| msgid "Closes the current project."
 msgid "Failed to export the report as spreadsheet to %1."
 msgstr "Tutup projek semasa."
 
-#: plugins/reports/kexireportview.cpp:254
-#: plugins/reports/kexireportview.cpp:278
-#: plugins/reports/kexireportview.cpp:316
-#, fuzzy
-#| msgid "Saving \"%1\" object failed."
-msgid "Export Failed"
-msgstr "Menyimpan objek \"%1\"gagal."
-
-#: plugins/reports/kexireportview.cpp:270
+#: plugins/reports/kexireportview.cpp:324
 msgid "Export Report as Text Document"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:277
+#: plugins/reports/kexireportview.cpp:333
 #, kde-format
 msgid "Exporting the report as text document to %1 failed."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:290
+#: plugins/reports/kexireportview.cpp:346
 #, fuzzy
 #| msgid "Opening object \"%1\" failed."
 msgid "Export Report as Web Page"
 msgstr "Membuka objek \"%1\" gagal."
 
-#: plugins/reports/kexireportview.cpp:299
+#: plugins/reports/kexireportview.cpp:358
 msgid ""
 "Would you like to export using a Cascading Style Sheet (CSS), which will "
 "give an output closer to the original, or export using a HTML Table, which "
 "outputs a much simpler format?"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:303
+#: plugins/reports/kexireportview.cpp:362
 msgid "Use CSS"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:304
+#: plugins/reports/kexireportview.cpp:363
 #, fuzzy
 #| msgid "Table"
 msgid "Use Table"
 msgstr "Jadual"
 
-#: plugins/reports/kexireportview.cpp:315
+#: plugins/reports/kexireportview.cpp:374
 #, fuzzy, kde-format
 #| msgid "Opening object \"%1\" failed."
 msgid "Exporting the report as web page to %1 failed."
 msgstr "Membuka objek \"%1\" gagal."
 
-#: plugins/reports/kexireportview.cpp:395
+#: plugins/reports/kexireportview.cpp:454
 #, fuzzy
 #| msgid "Saving \"%1\" object failed."
 msgid "Opening failed"
 msgstr "Menyimpan objek \"%1\"gagal."
 
-#: plugins/reports/kexireportview.cpp:395
+#: plugins/reports/kexireportview.cpp:454
 msgid "Report schema appears to be invalid or corrupt"
 msgstr ""
 
@@ -9040,11 +9070,6 @@ msgstr "Baris berikutnya"
 #~| msgid "Row deleting failed."
 #~ msgid "Record deleting failed."
 #~ msgstr "Menghapuskan baris gagal."
-
-#, fuzzy
-#~| msgid "Opening object \"%1\" failed."
-#~ msgid "Export as Web Page"
-#~ msgstr "Membuka objek \"%1\" gagal."
 
 #, fuzzy
 #~ msgid ""
