@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: skrooge\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-17 01:48+0000\n"
+"POT-Creation-Date: 2014-10-19 01:47+0000\n"
 "PO-Revision-Date: 2009-10-03 23:05+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -91,16 +91,16 @@ msgstr "Sunting"
 #: plugins/skrooge/skrooge_bank/skrooge_bank.rc:9
 #: plugins/skrooge/skrooge_budget/skrooge_budget.rc:9
 #: plugins/skrooge/skrooge_calculator/skrooge_calculator.rc:6
-#: plugins/skrooge/skrooge_categories/skrooge_categories.rc:15
+#: plugins/skrooge/skrooge_categories/skrooge_categories.rc:21
 #: plugins/skrooge/skrooge_importexport/skrooge_importexport.rc:26
-#: plugins/skrooge/skrooge_operation/skrooge_operation.rc:39
-#: plugins/skrooge/skrooge_payee/skrooge_payee.rc:9
+#: plugins/skrooge/skrooge_operation/skrooge_operation.rc:38
+#: plugins/skrooge/skrooge_payee/skrooge_payee.rc:15
 #: plugins/skrooge/skrooge_report/skrooge_report.rc:11
 #: plugins/skrooge/skrooge_scheduled/skrooge_scheduled.rc:8
 #: plugins/skrooge/skrooge_search/skrooge_search.rc:9
 #: plugins/skrooge/skrooge_tracker/skrooge_tracker.rc:6
 #: plugins/skrooge/skrooge_unit/skrooge_unit.rc:12
-#: skgbasegui/skgmainpanel.rc:56 templates/skrooge_xxx/skrooge_xxx.rc:6
+#: skgbasegui/skgmainpanel.rc:61 templates/skrooge_xxx/skrooge_xxx.rc:6
 msgid "Main Toolbar"
 msgstr ""
 
@@ -247,8 +247,10 @@ msgstr ""
 
 #. i18n: ectx: Menu (go)
 #: plugins/generic/skg_bookmark/skg_bookmark.rc:15
+#: plugins/skrooge/skrooge_categories/skrooge_categories.rc:11
 #: plugins/skrooge/skrooge_importexport/skrooge_importexport.rc:16
 #: plugins/skrooge/skrooge_operation/skrooge_operation.rc:15
+#: plugins/skrooge/skrooge_payee/skrooge_payee.rc:5
 #: plugins/skrooge/skrooge_report/skrooge_report.rc:4
 #: skgbasegui/skgmainpanel.rc:39
 msgid "Go"
@@ -595,12 +597,12 @@ msgstr "Tambah"
 #. i18n: ectx: Menu (tool)
 #: plugins/generic/skg_debug/skg_debug.rc:4
 #: plugins/skrooge/skrooge_budget/skrooge_budget.rc:5
-#: plugins/skrooge/skrooge_categories/skrooge_categories.rc:11
+#: plugins/skrooge/skrooge_categories/skrooge_categories.rc:17
 #: plugins/skrooge/skrooge_importexport/skrooge_importexport.rc:19
-#: plugins/skrooge/skrooge_operation/skrooge_operation.rc:33
-#: plugins/skrooge/skrooge_payee/skrooge_payee.rc:5
+#: plugins/skrooge/skrooge_operation/skrooge_operation.rc:32
+#: plugins/skrooge/skrooge_payee/skrooge_payee.rc:11
 #: plugins/skrooge/skrooge_unit/skrooge_unit.rc:8
-#: skgbasegui/skgmainpanel.rc:50
+#: skgbasegui/skgmainpanel.rc:55
 msgid "Tools"
 msgstr ""
 
@@ -2593,7 +2595,7 @@ msgid "Banks (Full)"
 msgstr ""
 
 #: plugins/skrooge/skrooge_bank/skgbankplugin.cpp:117
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:136
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:156
 #: plugins/skrooge/skrooge_operation/skgoperationboardwidget.cpp:72
 #: plugins/skrooge/skrooge_report/skgreportboardwidget.cpp:44
 #: plugins/skrooge/skrooge_report/skgreportplugin.cpp:85
@@ -4050,7 +4052,7 @@ msgid "Import standard categories"
 msgstr "Import"
 
 #: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:95
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:195
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:215
 #, fuzzy, kde-format
 msgctxt "Verb"
 msgid "Import categories [%1]"
@@ -4062,38 +4064,50 @@ msgctxt "Verb"
 msgid "Delete unused categories"
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:118
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:107
+#, fuzzy
+msgctxt "Verb"
+msgid "Open similar categories..."
+msgstr "Import"
+
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:108
+#, fuzzy
+msgctxt "Noun, a list of items"
+msgid "Similar categories"
+msgstr "Import"
+
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:138
 msgctxt "Report header"
 msgid "5 main categories of expenditure"
 msgstr ""
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:120
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:140
 #, fuzzy
 msgctxt "Report header"
 msgid "5 main variations"
 msgstr "Automula"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:122
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:142
 #, fuzzy
 msgctxt "Report header"
 msgid "Budget"
 msgstr "Akaun"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:204
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:252
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:224
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:272
 #, fuzzy
 msgctxt "Successful message after an user action"
 msgid "Categories imported."
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:206
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:254
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:226
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:274
 #, fuzzy
 msgctxt "Error message"
 msgid "Importing categories failed."
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:220
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:240
 msgctxt ""
 "List of categories.It is not needed to translate each item. You can set the "
 "list you want. ';' must be used to separate categories. ' > ' must be used "
@@ -4157,79 +4171,91 @@ msgid ""
 "Workman's Comp"
 msgstr ""
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:239
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:259
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Import standard categories"
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:269
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:289
 #, fuzzy
 msgctxt "Noun, categories of items"
 msgid "Categories"
 msgstr "Kategori"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:279
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:299
 #, fuzzy
 msgctxt "A tool tip"
 msgid "Categories management"
 msgstr "Kategori"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:285
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:305
 msgctxt "Description of a tips"
 msgid "<p>... categories can be reorganized by drag & drop.</p>"
 msgstr ""
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:286
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:306
 msgctxt "Description of a tips"
 msgid ""
 "<p>... if you delete a category, all operations affected by this category "
 "will be associated to its parent category.</p>"
 msgstr ""
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:312
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:332
 #, fuzzy
 msgctxt "Advice on making the best (short)"
 msgid "Many unused categories"
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:313
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:333
 msgctxt "Advice on making the best (long)"
 msgid ""
 "You can improve performances by removing categories that have no operations."
 msgstr ""
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:335
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:355
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Important variation for '%1'"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:338
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:358
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (action)"
 msgid "Open sub operations with category containing '%1'"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:355
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:372
+msgctxt "Advice on making the best (short)"
+msgid "Some categories seem to be identical"
+msgstr ""
+
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:373
+msgctxt "Advice on making the best (long)"
+msgid ""
+"Some categories seem to be identical but with different syntax. They could "
+"be merged."
+msgstr ""
+
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:392
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Sub operations with category containing '%1'"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:366
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:403
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Delete unused categories"
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:396
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:433
 #, fuzzy
 msgctxt "Successful message after an user action"
 msgid "Unused categories deleted"
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:398
+#: plugins/skrooge/skrooge_categories/skgcategoriesplugin.cpp:435
 #, fuzzy
 msgctxt "Error message"
 msgid "Unused categories deletion failed"
@@ -4344,6 +4370,17 @@ msgstr "Gagal untuk memadam"
 #, fuzzy
 msgid "Import"
 msgstr "Import"
+
+#. i18n: ectx: Menu (other)
+#: plugins/skrooge/skrooge_categories/skrooge_categories.rc:12
+#: plugins/skrooge/skrooge_operation/skrooge_operation.rc:21
+#: plugins/skrooge/skrooge_payee/skrooge_payee.rc:6
+#: plugins/skrooge/skrooge_report/skrooge_report.rc:6
+#: skgbasegui/skgmainpanel.rc:47
+#, fuzzy
+#| msgid "Other"
+msgid "Other"
+msgstr "Lain-lain"
 
 #. i18n: ectx: label, entry (automatic_validation), group (skrooge_importexport)
 #: plugins/skrooge/skrooge_importexport/skgimportexport_settings.kcfg:9
@@ -6433,6 +6470,7 @@ msgstr "Operasi"
 #: plugins/skrooge/skrooge_operation/skgoperationpluginwidget_base.ui:43
 #: plugins/skrooge/skrooge_report/skgreportpluginwidget_base.ui:40
 #: plugins/skrooge/skrooge_report/skgreportpluginwidget_base.ui:43
+#: skgbasegui/skgfilteredtableview.ui:37 skgbasegui/skgfilteredtableview.ui:40
 msgid "Reset the internal filter"
 msgstr ""
 
@@ -6764,105 +6802,120 @@ msgstr ""
 msgid "Compute balances (uncheck to improve performances)"
 msgstr ""
 
-#. i18n: ectx: Menu (other)
-#: plugins/skrooge/skrooge_operation/skrooge_operation.rc:21
-#: plugins/skrooge/skrooge_report/skrooge_report.rc:6
-#: skgbasegui/skgmainpanel.rc:47
-#, fuzzy
-#| msgid "Other"
-msgid "Other"
-msgstr "Lain-lain"
-
 #: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:73
 #, fuzzy
 msgctxt "Verb"
 msgid "Delete unused payees"
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:93
+#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:78
+#, fuzzy
+msgctxt "Verb"
+msgid "Open similar payees..."
+msgstr "Operasi"
+
+#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:79
+#, fuzzy
+msgctxt "Noun, a list of items"
+msgid "Similar payees"
+msgstr "Gagal untuk memadam"
+
+#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:100
 msgctxt "Noun, something that is used to track items"
 msgid "Payees"
 msgstr ""
 
-#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:103
+#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:110
 #, fuzzy
 msgctxt "A tool tip"
 msgid "Payees management"
 msgstr "Kategori"
 
-#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:114
+#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:121
 msgctxt "Description of a tips"
 msgid "<p>... payees can be merged by drag & drop.</p>"
 msgstr ""
 
-#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:135
+#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:142
 #, fuzzy
 msgctxt "Advice on making the best (short)"
 msgid "Many unused payees"
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:136
+#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:143
 msgctxt "Advice on making the best (long)"
 msgid ""
 "You can improve performances by removing payees for which no operation is "
 "registered."
 msgstr ""
 
-#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:151
+#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:159
+msgctxt "Advice on making the best (short)"
+msgid "Some payees seem to be identical"
+msgstr ""
+
+#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:160
+msgctxt "Advice on making the best (long)"
+msgid ""
+"Some payee seem to be identical but with different syntax. They could be "
+"merged."
+msgstr ""
+
+#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:175
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Delete unused payees"
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:159
+#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:183
 #, fuzzy
 msgctxt "Successful message after an user action"
 msgid "Unused payees deleted"
 msgstr "Import"
 
-#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:161
+#: plugins/skrooge/skrooge_payee/skgpayeeplugin.cpp:185
 #, fuzzy
 msgctxt "Error message"
 msgid "Unused payees deletion failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:184
+#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:186
 #, fuzzy, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Payee creation '%1'"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:192
+#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:194
 #, fuzzy, kde-format
 msgctxt "Successful message after an user action"
 msgid "Payee '%1' created"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:195
+#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:197
 #, fuzzy
 msgctxt "Error message"
 msgid "Payee creation failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:213
+#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:215
 #, fuzzy
 msgctxt "Noun, name of the user action"
 msgid "Payee update"
 msgstr "Cari"
 
-#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:216
+#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:218
 msgctxt "Information message"
 msgid ""
 "You tried to modify all names of selected payees. Payees have been merged."
 msgstr ""
 
-#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:241
+#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:243
 #, fuzzy
 msgctxt "Successful message after an user action"
 msgid "Payee updated"
 msgstr "Cari"
 
-#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:243
+#: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:245
 #, fuzzy
 msgctxt "Error message"
 msgid "Payee update failed"
@@ -11602,7 +11655,8 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, kConfigure)
 #. i18n: ectx: property (statusTip), widget (QToolButton, kConfigure)
-#: skgbasegui/skgfilteredtableview.ui:69 skgbasegui/skgfilteredtableview.ui:72
+#: skgbasegui/skgfilteredtableview.ui:107
+#: skgbasegui/skgfilteredtableview.ui:110
 msgid "To configure the table"
 msgstr ""
 
@@ -12025,7 +12079,7 @@ msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QDockWidget, kDockContext)
 #. i18n: ectx: ToolBar (context)
-#: skgbasegui/skgmainpanel.rc:75 skgbasegui/skgmainpanel_base.ui:33
+#: skgbasegui/skgmainpanel.rc:80 skgbasegui/skgmainpanel_base.ui:33
 #, fuzzy
 msgid "Pages"
 msgstr "Tarikh"
