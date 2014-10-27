@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-25 08:04+0000\n"
+"POT-Creation-Date: 2014-10-27 07:40+0000\n"
 "PO-Revision-Date: 2008-02-22 22:30+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -2934,7 +2934,7 @@ msgstr ""
 msgid "Outgoing Transfers"
 msgstr ""
 
-#: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2073
+#: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2097
 #, fuzzy
 msgid "DCC Status"
 msgstr "Bar &status"
@@ -3317,7 +3317,7 @@ msgstr ""
 msgid "Clear Image"
 msgstr "P&adam Semua"
 
-#: src/dcc/whiteboardtoolbar.cpp:44 src/viewer/logfilereader.cpp:47
+#: src/dcc/whiteboardtoolbar.cpp:44 src/viewer/logfilereader.cpp:46
 #, fuzzy
 msgid "Save As..."
 msgstr "Senarai Arab"
@@ -4614,7 +4614,7 @@ msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ChannelListWidgetUI)
 #: src/irc/channellistpanel.cpp:146 src/irc/channellistpanelui.ui:14
-#: src/viewer/viewcontainer.cpp:2381 src/viewer/viewcontainer.cpp:2402
+#: src/viewer/viewcontainer.cpp:2405 src/viewer/viewcontainer.cpp:2426
 #, fuzzy
 msgid "Channel List"
 msgstr "Senarai Arab"
@@ -5451,7 +5451,7 @@ msgid "Connection:"
 msgstr "Sambungan Gagal"
 
 #. i18n: ectx: property (text), widget (QLabel, hostmaskLabel)
-#: src/irc/nickinfo.cpp:226 src/viewer/channeloptionsui.ui:292
+#: src/irc/nickinfo.cpp:226 src/viewer/channeloptionsui.ui:301
 msgid "Hostmask:"
 msgstr ""
 
@@ -6483,7 +6483,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, m_editIdentityButton)
 #. i18n: ectx: property (text), widget (QPushButton, m_editButton)
-#: src/irc/servergroupdialogui.ui:71 src/irc/serverlistdialogui.ui:162
+#: src/irc/servergroupdialogui.ui:71 src/irc/serverlistdialogui.ui:64
 #: src/viewer/ircinput.cpp:552
 #, fuzzy
 msgid "&Edit..."
@@ -6580,30 +6580,30 @@ msgstr "T&ambah"
 msgid "Ed&it..."
 msgstr "Arkib Tar diBzip2kan"
 
-#: src/irc/serverlistdialog.cpp:66 src/quickconnectdialog.cpp:101
+#: src/irc/serverlistdialog.cpp:64 src/quickconnectdialog.cpp:101
 msgid "C&onnect"
 msgstr ""
 
-#: src/irc/serverlistdialog.cpp:66 src/quickconnectdialog.cpp:101
+#: src/irc/serverlistdialog.cpp:64 src/quickconnectdialog.cpp:101
 #, fuzzy
 msgid "Connect to the server"
 msgstr "Sambung ke komputer jauh"
 
-#: src/irc/serverlistdialog.cpp:66
+#: src/irc/serverlistdialog.cpp:65
 msgid "Click here to connect to the selected IRC network and channel."
 msgstr ""
 
-#: src/irc/serverlistdialog.cpp:141
+#: src/irc/serverlistdialog.cpp:134
 #, fuzzy
 msgid "New Network"
 msgstr "Pelayan Rangkaian"
 
-#: src/irc/serverlistdialog.cpp:162
+#: src/irc/serverlistdialog.cpp:155
 #, fuzzy
 msgid "Edit Network"
 msgstr "Pelayan Rangkaian"
 
-#: src/irc/serverlistdialog.cpp:218
+#: src/irc/serverlistdialog.cpp:211
 #, kde-format
 msgid ""
 "You cannot delete %1.\n"
@@ -6611,7 +6611,7 @@ msgid ""
 "The network %2 needs to have at least one server."
 msgstr ""
 
-#: src/irc/serverlistdialog.cpp:223
+#: src/irc/serverlistdialog.cpp:216
 #, kde-format
 msgid ""
 "You cannot delete the selected server.\n"
@@ -6624,22 +6624,36 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/irc/serverlistdialog.cpp:239
+#: src/irc/serverlistdialog.cpp:232
 msgid "Do you really want to delete the selected entries?"
 msgstr ""
 
-#: src/irc/serverlistdialog.cpp:241
+#: src/irc/serverlistdialog.cpp:234
 #, fuzzy, kde-format
 msgid "Do you really want to delete %1?"
 msgstr "Adakah anda pasti untuk menggantung ke cakera?"
 
-#. i18n: ectx: property (text), widget (QCheckBox, m_showAtStartup)
-#: src/irc/serverlistdialogui.ui:17
-msgid "&Show at application startup"
+#. i18n: ectx: property (whatsThis), widget (QPushButton, m_addButton)
+#: src/irc/serverlistdialogui.ui:23
+msgid ""
+"Click here to define a new Network, including the server to connect to, and "
+"the Channels to automatically join once connected."
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QPushButton, m_addButton)
+#: src/irc/serverlistdialogui.ui:26
+#, fuzzy
+msgid "&New..."
+msgstr "&Baru"
+
+#. i18n: ectx: property (text), widget (QPushButton, m_delButton)
+#: src/irc/serverlistdialogui.ui:48
+#, fuzzy
+msgid "&Delete"
+msgstr "Pa&dam hiperlink"
+
 #. i18n: ectx: property (whatsThis), widget (ServerListView, m_serverList)
-#: src/irc/serverlistdialogui.ui:36
+#: src/irc/serverlistdialogui.ui:86
 msgid ""
 "This shows the list of configured IRC networks. An IRC network is a "
 "collection of cooperating servers. You need only connect to one of the "
@@ -6650,41 +6664,27 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (ServerListView, m_serverList)
-#: src/irc/serverlistdialogui.ui:97
+#: src/irc/serverlistdialogui.ui:147
 #, fuzzy
 msgid "Network"
 msgstr "Jaringan"
 
 #. i18n: ectx: property (text), widget (ServerListView, m_serverList)
-#: src/irc/serverlistdialogui.ui:102
+#: src/irc/serverlistdialogui.ui:152
 #, fuzzy
 msgid "Identity"
 msgstr "T_ambah Semua"
 
 #. i18n: ectx: property (text), widget (ServerListView, m_serverList)
-#: src/irc/serverlistdialogui.ui:107
+#: src/irc/serverlistdialogui.ui:157
 #, fuzzy
 msgid "Channels"
 msgstr "Saluran DMA"
 
-#. i18n: ectx: property (whatsThis), widget (QPushButton, m_addButton)
-#: src/irc/serverlistdialogui.ui:121
-msgid ""
-"Click here to define a new Network, including the server to connect to, and "
-"the Channels to automatically join once connected."
+#. i18n: ectx: property (text), widget (QCheckBox, m_showAtStartup)
+#: src/irc/serverlistdialogui.ui:165
+msgid "&Show at application startup"
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, m_addButton)
-#: src/irc/serverlistdialogui.ui:124
-#, fuzzy
-msgid "&New..."
-msgstr "&Baru"
-
-#. i18n: ectx: property (text), widget (QPushButton, m_delButton)
-#: src/irc/serverlistdialogui.ui:146
-#, fuzzy
-msgid "&Delete"
-msgstr "Pa&dam hiperlink"
 
 #: src/irc/topichistorymodel.cpp:46
 #, fuzzy
@@ -6706,8 +6706,8 @@ msgstr "Fedora Artwork"
 msgid "Time"
 msgstr "&Tetap Bahasa"
 
-#: src/konsolepanel.cpp:31 src/viewer/viewcontainer.cpp:2030
-#: src/viewer/viewcontainer.cpp:2031
+#: src/konsolepanel.cpp:31 src/viewer/viewcontainer.cpp:2054
+#: src/viewer/viewcontainer.cpp:2055
 #, fuzzy
 msgid "Konsole"
 msgstr "Konsole"
@@ -7159,7 +7159,7 @@ msgid "&DCC Status"
 msgstr "Bar &status"
 
 #: src/mainwindow.cpp:187 src/mainwindow.cpp:780
-#: src/viewer/viewcontainer.cpp:627
+#: src/viewer/viewcontainer.cpp:651
 #, fuzzy
 msgid "&Open Logfile"
 msgstr "Buka Fail"
@@ -7168,7 +7168,7 @@ msgstr "Buka Fail"
 msgid "Open the known history for this channel in a new tab"
 msgstr ""
 
-#: src/mainwindow.cpp:196 src/viewer/viewcontainer.cpp:648
+#: src/mainwindow.cpp:196 src/viewer/viewcontainer.cpp:672
 #, fuzzy
 msgid "&Channel Settings..."
 msgstr "Tetapan Semasa"
@@ -7177,7 +7177,7 @@ msgstr "Tetapan Semasa"
 msgid "Open the channel settings dialog for this tab"
 msgstr ""
 
-#: src/mainwindow.cpp:204 src/viewer/viewcontainer.cpp:618
+#: src/mainwindow.cpp:204 src/viewer/viewcontainer.cpp:642
 #, fuzzy
 msgid "Channel &List"
 msgstr "Senarai Arab"
@@ -7228,7 +7228,7 @@ msgstr ""
 msgid "Next Active Tab"
 msgstr "Default hentian tab:"
 
-#: src/mainwindow.cpp:292 src/viewer/viewcontainer.cpp:251
+#: src/mainwindow.cpp:292 src/viewer/viewcontainer.cpp:268
 #, fuzzy
 msgid "Move Tab Up"
 msgstr "Gerak Tab Kiri"
@@ -7238,19 +7238,19 @@ msgstr "Gerak Tab Kiri"
 msgid "Move this tab"
 msgstr ""
 
-#: src/mainwindow.cpp:303 src/viewer/viewcontainer.cpp:259
+#: src/mainwindow.cpp:303 src/viewer/viewcontainer.cpp:276
 #, fuzzy
 msgid "Move Tab Down"
 msgstr "Gerak Tab Kiri"
 
 #: src/mainwindow.cpp:314 src/mainwindow.cpp:344
-#: src/viewer/viewcontainer.cpp:298
+#: src/viewer/viewcontainer.cpp:322
 #, fuzzy
 msgid "Move Tab Right"
 msgstr "Gerak Tab Kanan"
 
 #: src/mainwindow.cpp:323 src/mainwindow.cpp:335
-#: src/viewer/viewcontainer.cpp:290
+#: src/viewer/viewcontainer.cpp:314
 #, fuzzy
 msgid "Move Tab Left"
 msgstr "Gerak Tab Kiri"
@@ -7818,7 +7818,7 @@ msgstr "Gagal untuk mencari seksyen: %s"
 msgid "Error parsing router description."
 msgstr ""
 
-#: src/urlcatcher.cpp:88 src/viewer/viewcontainer.cpp:2041
+#: src/urlcatcher.cpp:88 src/viewer/viewcontainer.cpp:2065
 #, fuzzy
 msgid "URL Catcher"
 msgstr "Pencekup podcast"
@@ -8091,101 +8091,101 @@ msgstr "Tapisan berkaitan akan dicipta"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: src/viewer/channeloptionsui.ui:60 src/viewer/channeloptionsui.ui:250
+#: src/viewer/channeloptionsui.ui:69 src/viewer/channeloptionsui.ui:259
 #, fuzzy
 msgid "Search:"
 msgstr "Cari:"
 
 #. i18n: ectx: attribute (title), widget (QWidget, modesPage)
-#: src/viewer/channeloptionsui.ui:98
+#: src/viewer/channeloptionsui.ui:107
 msgid "Mo&des"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, topicModeChBox)
-#: src/viewer/channeloptionsui.ui:104
+#: src/viewer/channeloptionsui.ui:113
 msgid "&Topic can only be changed by channel operators"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, messageModeChBox)
-#: src/viewer/channeloptionsui.ui:111
+#: src/viewer/channeloptionsui.ui:120
 msgid "&No messages from outside the channel"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, secretModeChBox)
-#: src/viewer/channeloptionsui.ui:118
+#: src/viewer/channeloptionsui.ui:127
 msgid "&Secret channel, the channel is not listed in the channel list"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, inviteModeChBox)
-#: src/viewer/channeloptionsui.ui:125
+#: src/viewer/channeloptionsui.ui:134
 msgid "Only &invited are allowed to join the channel"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, moderatedModeChBox)
-#: src/viewer/channeloptionsui.ui:132
+#: src/viewer/channeloptionsui.ui:141
 msgid "&Moderated channel, only people with voice can write to the channel"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, userLimitChBox)
-#: src/viewer/channeloptionsui.ui:139
+#: src/viewer/channeloptionsui.ui:148
 #, fuzzy
 msgid "User &limit:"
 msgstr "Antaramuka Pengguna"
 
 #. i18n: ectx: property (text), widget (QCheckBox, keyModeChBox)
-#: src/viewer/channeloptionsui.ui:172
+#: src/viewer/channeloptionsui.ui:181
 #, fuzzy
 msgid "Channel &password:"
 msgstr "Katalaluan Tidak Betul"
 
 #. i18n: ectx: property (text), widget (QPushButton, toggleAdvancedModes)
-#: src/viewer/channeloptionsui.ui:186
+#: src/viewer/channeloptionsui.ui:195
 #, fuzzy
 msgid "Show &Advanced Modes >>"
 msgstr "Arahan Strategik Lanjutan"
 
 #. i18n: ectx: attribute (title), widget (QWidget, TabPage)
-#: src/viewer/channeloptionsui.ui:236
+#: src/viewer/channeloptionsui.ui:245
 #, fuzzy
 msgid "&Ban List"
 msgstr "Senarai Arab"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, banList)
-#: src/viewer/channeloptionsui.ui:272
+#: src/viewer/channeloptionsui.ui:281
 msgid "Hostmask"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QTreeWidget, banList)
-#: src/viewer/channeloptionsui.ui:277
+#: src/viewer/channeloptionsui.ui:286
 #, fuzzy
 msgid "Set By"
 msgstr "&Tetap Bahasa"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, banList)
-#: src/viewer/channeloptionsui.ui:282
+#: src/viewer/channeloptionsui.ui:291
 #, fuzzy
 msgid "Time Set"
 msgstr "&Tetap Bahasa"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, updateBan)
-#: src/viewer/channeloptionsui.ui:305
+#: src/viewer/channeloptionsui.ui:314
 #, fuzzy
 msgid "Update Ban"
 msgstr " Auto Kemaskini"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, addBan)
-#: src/viewer/channeloptionsui.ui:324
+#: src/viewer/channeloptionsui.ui:333
 #, fuzzy
 msgid "Add Ban"
 msgstr "T_ambah Semua"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeBan)
-#: src/viewer/channeloptionsui.ui:343
+#: src/viewer/channeloptionsui.ui:352
 #, fuzzy
 msgid "Remove Ban"
 msgstr "Buang Footer"
 
-#: src/viewer/chatwindow.cpp:503
+#: src/viewer/chatwindow.cpp:502
 #, fuzzy, kde-format
 msgid ""
 "\n"
@@ -8566,59 +8566,59 @@ msgstr "Aksara (dengan ruang):"
 msgid "Join the channel %1"
 msgstr ""
 
-#: src/viewer/logfilereader.cpp:39
+#: src/viewer/logfilereader.cpp:38
 #, kde-format
 msgid "Logfile of %1"
 msgstr ""
 
-#: src/viewer/logfilereader.cpp:48
+#: src/viewer/logfilereader.cpp:47
 msgid "Reload"
 msgstr ""
 
-#: src/viewer/logfilereader.cpp:49 src/viewer/logfilereader.cpp:146
+#: src/viewer/logfilereader.cpp:48 src/viewer/logfilereader.cpp:145
 #, fuzzy
 msgid "Clear Logfile"
 msgstr "P&adam Semua"
 
-#: src/viewer/logfilereader.cpp:51
+#: src/viewer/logfilereader.cpp:50
 #, fuzzy
 msgid "Show last:"
 msgstr "Disimpan terakhir:"
 
-#: src/viewer/logfilereader.cpp:57
+#: src/viewer/logfilereader.cpp:56
 msgid ""
 "Use this box to set the maximum size of the log file. This setting does not "
 "take effect until you restart Konversation. Each log file may have a "
 "separate setting."
 msgstr ""
 
-#: src/viewer/logfilereader.cpp:59
+#: src/viewer/logfilereader.cpp:58
 msgid " KB"
 msgstr ""
 
-#: src/viewer/logfilereader.cpp:66
+#: src/viewer/logfilereader.cpp:65
 msgid ""
 "The messages in the log file are displayed here. The oldest messages are at "
 "the top and the most recent are at the bottom."
 msgstr ""
 
-#: src/viewer/logfilereader.cpp:145
+#: src/viewer/logfilereader.cpp:144
 msgid ""
 "Do you really want to permanently discard all log information of this file?"
 msgstr ""
 
-#: src/viewer/logfilereader.cpp:159
+#: src/viewer/logfilereader.cpp:158
 msgid ""
 "Note: By saving the logfile you will save all data in the file, not only the "
 "part you can see in this viewer."
 msgstr ""
 
-#: src/viewer/logfilereader.cpp:160
+#: src/viewer/logfilereader.cpp:159
 #, fuzzy
 msgid "Save Logfile"
 msgstr "Auto &Simpan"
 
-#: src/viewer/logfilereader.cpp:164
+#: src/viewer/logfilereader.cpp:163
 #, fuzzy
 msgid "Choose Destination Folder"
 msgstr "Wizard Folder Rangkaian"
@@ -8654,7 +8654,7 @@ msgstr "Tambah lajur selepas"
 msgid "&Remove Newlines"
 msgstr "Pengurus Tema"
 
-#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2159
+#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2183
 #, fuzzy
 msgid "Raw Log"
 msgstr "Log Sistem"
@@ -8769,79 +8769,79 @@ msgstr ""
 msgid "Konversation - IRC Client"
 msgstr "Klien Pelayan Terminal"
 
-#: src/viewer/viewcontainer.cpp:592
+#: src/viewer/viewcontainer.cpp:616
 #, fuzzy
 msgid "Find Text..."
 msgstr "Cari teks yang dinyatakan"
 
-#: src/viewer/viewcontainer.cpp:594
+#: src/viewer/viewcontainer.cpp:618
 msgid "Search for text in the current tab"
 msgstr ""
 
-#: src/viewer/viewcontainer.cpp:612
+#: src/viewer/viewcontainer.cpp:636
 #, fuzzy, kde-format
 msgid "Channel &List for %1"
 msgstr "&Cari Bantuan"
 
-#: src/viewer/viewcontainer.cpp:632
+#: src/viewer/viewcontainer.cpp:656
 #, fuzzy, kde-format
 msgid "&Open Logfile for %1"
 msgstr "Buka tetingkap lain untuk dokumen"
 
-#: src/viewer/viewcontainer.cpp:643
+#: src/viewer/viewcontainer.cpp:667
 #, fuzzy, kde-format
 msgid "&Channel Settings for %1..."
 msgstr "&Cari Bantuan"
 
-#: src/viewer/viewcontainer.cpp:1550
+#: src/viewer/viewcontainer.cpp:1574
 #, fuzzy
 msgid "Rename Tab"
 msgstr "Tukar nama"
 
-#: src/viewer/viewcontainer.cpp:1551
+#: src/viewer/viewcontainer.cpp:1575
 #, fuzzy
 msgid "Enter new tab name:"
 msgstr "Masukkan Katalaluan"
 
-#: src/viewer/viewcontainer.cpp:1623
+#: src/viewer/viewcontainer.cpp:1647
 #, fuzzy, kde-format
 msgctxt "Default encoding"
 msgid "Default ( %1 )"
 msgstr "Default tarikh (tanpa masa)"
 
-#: src/viewer/viewcontainer.cpp:1659
+#: src/viewer/viewcontainer.cpp:1683
 #, fuzzy
 msgid "&Rename Tab..."
 msgstr "Tukar nama"
 
-#: src/viewer/viewcontainer.cpp:1809
+#: src/viewer/viewcontainer.cpp:1833
 msgid "You can only search in text fields."
 msgstr ""
 
-#: src/viewer/viewcontainer.cpp:1810
+#: src/viewer/viewcontainer.cpp:1834
 #, fuzzy
 msgid "Find Text Information"
 msgstr "Cari teks yang dinyatakan"
 
-#: src/viewer/viewcontainer.cpp:2398
+#: src/viewer/viewcontainer.cpp:2422
 msgid ""
 "To know which server to display the channel list for, the list can only be "
 "opened from a query, channel or status window."
 msgstr ""
 
-#: src/viewer/viewcontainer.cpp:2428
+#: src/viewer/viewcontainer.cpp:2452
 msgid ""
 "Using this function may result in a lot of network traffic. If your "
 "connection is not fast enough, it is possible that your client will be "
 "disconnected by the server."
 msgstr ""
 
-#: src/viewer/viewcontainer.cpp:2432
+#: src/viewer/viewcontainer.cpp:2456
 #, fuzzy
 msgid "Channel List Warning"
 msgstr "Label Senarai Semasa"
 
-#: src/viewer/viewcontainer.cpp:2462
+#: src/viewer/viewcontainer.cpp:2486
 #, fuzzy
 msgid "Watched Nicks"
 msgstr "Tambah sempadan dan legapan kepada pilihan"
