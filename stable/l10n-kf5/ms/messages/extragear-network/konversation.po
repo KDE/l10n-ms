@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-28 09:43+0000\n"
+"POT-Creation-Date: 2014-11-29 09:32+0000\n"
 "PO-Revision-Date: 2008-02-22 22:30+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1934,12 +1934,40 @@ msgstr "M-x nxml-mode"
 msgid "&Middle-click on a tab to close it"
 msgstr ""
 
-#: src/config/theme_config.cpp:260
+#: src/config/theme_config.cpp:181
+#, fuzzy
+msgid "Select Theme Package"
+msgstr "Fail Pakej RPM"
+
+#: src/config/theme_config.cpp:182
+msgid "Konversation Themes (*.tar.gz *.tar.bz2 *.tar *.zip)"
+msgstr ""
+
+#: src/config/theme_config.cpp:208
+#, fuzzy
+msgid "Unknown error (0)"
+msgstr "Ralat mengira nilai!"
+
+#: src/config/theme_config.cpp:212
+#, fuzzy
+msgid "Failed to Download Theme"
+msgstr "Gagal untuk mencari seksyen: %s"
+
+#: src/config/theme_config.cpp:237 src/config/theme_config.cpp:269
+msgid "Theme archive is invalid."
+msgstr ""
+
+#: src/config/theme_config.cpp:238 src/config/theme_config.cpp:270
+#, fuzzy
+msgid "Cannot Install Theme"
+msgstr "Pasang Tema KDE"
+
+#: src/config/theme_config.cpp:294
 #, fuzzy, kde-format
 msgid "Do you want to remove %1?"
 msgstr "Adakah anda pasti untuk menggantung ke cakera?"
 
-#: src/config/theme_config.cpp:261
+#: src/config/theme_config.cpp:295
 #, fuzzy
 msgid "Remove Theme"
 msgstr "Pengurus Tema"
@@ -2911,7 +2939,7 @@ msgstr ""
 msgid "Outgoing Transfers"
 msgstr ""
 
-#: src/dcc/transferpanel.cpp:44 src/viewer/viewcontainer.cpp:2267
+#: src/dcc/transferpanel.cpp:44 src/viewer/viewcontainer.cpp:2385
 #, fuzzy
 msgid "DCC Status"
 msgstr "Bar &status"
@@ -4591,7 +4619,7 @@ msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ChannelListWidgetUI)
 #: src/irc/channellistpanel.cpp:147 src/irc/channellistpanelui.ui:14
-#: src/viewer/viewcontainer.cpp:2574 src/viewer/viewcontainer.cpp:2595
+#: src/viewer/viewcontainer.cpp:2692 src/viewer/viewcontainer.cpp:2713
 #, fuzzy
 msgid "Channel List"
 msgstr "Senarai Arab"
@@ -6683,8 +6711,8 @@ msgstr "Fedora Artwork"
 msgid "Time"
 msgstr "&Tetap Bahasa"
 
-#: src/konsolepanel.cpp:30 src/viewer/viewcontainer.cpp:2224
-#: src/viewer/viewcontainer.cpp:2225
+#: src/konsolepanel.cpp:30 src/viewer/viewcontainer.cpp:2342
+#: src/viewer/viewcontainer.cpp:2343
 #, fuzzy
 msgid "Konsole"
 msgstr "Konsole"
@@ -7022,79 +7050,79 @@ msgstr ""
 msgid "KStatusNotifierItem support, KIdleTime support, other enhancements"
 msgstr ""
 
-#: src/main.cpp:109
+#: src/main.cpp:112
 msgid "irc:// URL or server hostname"
 msgstr ""
 
-#: src/main.cpp:110
+#: src/main.cpp:113
 #, fuzzy
 msgid "Server to connect"
 msgstr "Sambung ke komputer jauh"
 
-#: src/main.cpp:110
+#: src/main.cpp:113
 #, fuzzy
 #| msgid "Server:"
 msgid "server"
 msgstr "Pelayan:"
 
-#: src/main.cpp:111
+#: src/main.cpp:114
 #, fuzzy
 msgid "Port to use"
 msgstr "Guna Susunan RTL"
 
-#: src/main.cpp:111
+#: src/main.cpp:114
 #, fuzzy
 msgid "port"
 msgstr "Sokongan Arab"
 
-#: src/main.cpp:112
+#: src/main.cpp:115
 msgid "Channel to join after connection"
 msgstr ""
 
-#: src/main.cpp:112
+#: src/main.cpp:115
 #, fuzzy
 msgid "channel"
 msgstr "Saluran:"
 
-#: src/main.cpp:113
+#: src/main.cpp:116
 #, fuzzy
 msgid "Nickname to use"
 msgstr "Guna Susunan RTL"
 
-#: src/main.cpp:113
+#: src/main.cpp:116
 #, fuzzy
 msgid "nickname"
 msgstr "T_ambah Semua"
 
-#: src/main.cpp:114
+#: src/main.cpp:117
 #, fuzzy
 msgid "Password for connection"
 msgstr "&Cari Bantuan"
 
-#: src/main.cpp:114
+#: src/main.cpp:117
 #, fuzzy
 msgid "password"
 msgstr "&Seluruh perkataan"
 
-#: src/main.cpp:115
+#: src/main.cpp:118
 #, fuzzy
 msgid "Use SSL for connection"
 msgstr "Guna pembentukan glyph untuk Hebrew"
 
-#: src/main.cpp:116
+#: src/main.cpp:119
 msgid "Disable auto-connecting to any IRC networks"
 msgstr ""
 
-#: src/main.cpp:117
+#: src/main.cpp:120
 msgid ""
 "Delay D-Bus activity and UI creation by the specified amount of miliseconds"
 msgstr ""
 
-#: src/main.cpp:117
+#: src/main.cpp:120
 msgid "msec"
 msgstr ""
 
-#: src/main.cpp:120
+#: src/main.cpp:123
 msgid ""
 "Sets KUniqueApplication::NonUniqueInstance (debug only, use with caution)"
 msgstr ""
@@ -7162,7 +7190,7 @@ msgid "&DCC Status"
 msgstr "Bar &status"
 
 #: src/mainwindow.cpp:187 src/mainwindow.cpp:784
-#: src/viewer/viewcontainer.cpp:754
+#: src/viewer/viewcontainer.cpp:758
 #, fuzzy
 msgid "&Open Logfile"
 msgstr "Buka Fail"
@@ -7171,7 +7199,7 @@ msgstr "Buka Fail"
 msgid "Open the known history for this channel in a new tab"
 msgstr ""
 
-#: src/mainwindow.cpp:196 src/viewer/viewcontainer.cpp:775
+#: src/mainwindow.cpp:196 src/viewer/viewcontainer.cpp:779
 #, fuzzy
 msgid "&Channel Settings..."
 msgstr "Tetapan Semasa"
@@ -7180,7 +7208,7 @@ msgstr "Tetapan Semasa"
 msgid "Open the channel settings dialog for this tab"
 msgstr ""
 
-#: src/mainwindow.cpp:204 src/viewer/viewcontainer.cpp:745
+#: src/mainwindow.cpp:204 src/viewer/viewcontainer.cpp:749
 #, fuzzy
 msgid "Channel &List"
 msgstr "Senarai Arab"
@@ -7821,7 +7849,7 @@ msgstr "Gagal untuk mencari seksyen: %s"
 msgid "Error parsing router description."
 msgstr ""
 
-#: src/urlcatcher.cpp:85 src/viewer/viewcontainer.cpp:2235
+#: src/urlcatcher.cpp:85 src/viewer/viewcontainer.cpp:2353
 #, fuzzy
 msgid "URL Catcher"
 msgstr "Pencekup podcast"
@@ -8657,7 +8685,7 @@ msgstr "Tambah lajur selepas"
 msgid "&Remove Newlines"
 msgstr "Pengurus Tema"
 
-#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2352
+#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2470
 #, fuzzy
 msgid "Raw Log"
 msgstr "Log Sistem"
@@ -8772,94 +8800,82 @@ msgstr ""
 msgid "Konversation - IRC Client"
 msgstr "Klien Pelayan Terminal"
 
-#: src/viewer/viewcontainer.cpp:719
+#: src/viewer/viewcontainer.cpp:723
 #, fuzzy
 msgid "Find Text..."
 msgstr "Cari teks yang dinyatakan"
 
-#: src/viewer/viewcontainer.cpp:721
+#: src/viewer/viewcontainer.cpp:725
 msgid "Search for text in the current tab"
 msgstr ""
 
-#: src/viewer/viewcontainer.cpp:739
+#: src/viewer/viewcontainer.cpp:743
 #, fuzzy, kde-format
 msgid "Channel &List for %1"
 msgstr "&Cari Bantuan"
 
-#: src/viewer/viewcontainer.cpp:759
+#: src/viewer/viewcontainer.cpp:763
 #, fuzzy, kde-format
 msgid "&Open Logfile for %1"
 msgstr "Buka tetingkap lain untuk dokumen"
 
-#: src/viewer/viewcontainer.cpp:770
+#: src/viewer/viewcontainer.cpp:774
 #, fuzzy, kde-format
 msgid "&Channel Settings for %1..."
 msgstr "&Cari Bantuan"
 
-#: src/viewer/viewcontainer.cpp:1736
+#: src/viewer/viewcontainer.cpp:1854
 #, fuzzy
 msgid "Rename Tab"
 msgstr "Tukar nama"
 
-#: src/viewer/viewcontainer.cpp:1737
+#: src/viewer/viewcontainer.cpp:1855
 #, fuzzy
 msgid "Enter new tab name:"
 msgstr "Masukkan Katalaluan"
 
-#: src/viewer/viewcontainer.cpp:1809
+#: src/viewer/viewcontainer.cpp:1927
 #, fuzzy, kde-format
 msgctxt "Default encoding"
 msgid "Default ( %1 )"
 msgstr "Default tarikh (tanpa masa)"
 
-#: src/viewer/viewcontainer.cpp:1850
+#: src/viewer/viewcontainer.cpp:1968
 #, fuzzy
 msgid "&Rename Tab..."
 msgstr "Tukar nama"
 
-#: src/viewer/viewcontainer.cpp:2003
+#: src/viewer/viewcontainer.cpp:2121
 msgid "You can only search in text fields."
 msgstr ""
 
-#: src/viewer/viewcontainer.cpp:2004
+#: src/viewer/viewcontainer.cpp:2122
 #, fuzzy
 msgid "Find Text Information"
 msgstr "Cari teks yang dinyatakan"
 
-#: src/viewer/viewcontainer.cpp:2591
+#: src/viewer/viewcontainer.cpp:2709
 msgid ""
 "To know which server to display the channel list for, the list can only be "
 "opened from a query, channel or status window."
 msgstr ""
 
-#: src/viewer/viewcontainer.cpp:2621
+#: src/viewer/viewcontainer.cpp:2739
 msgid ""
 "Using this function may result in a lot of network traffic. If your "
 "connection is not fast enough, it is possible that your client will be "
 "disconnected by the server."
 msgstr ""
 
-#: src/viewer/viewcontainer.cpp:2625
+#: src/viewer/viewcontainer.cpp:2743
 #, fuzzy
 msgid "Channel List Warning"
 msgstr "Label Senarai Semasa"
 
-#: src/viewer/viewcontainer.cpp:2655
+#: src/viewer/viewcontainer.cpp:2773
 #, fuzzy
 msgid "Watched Nicks"
 msgstr "Tambah sempadan dan legapan kepada pilihan"
-
-#, fuzzy
-#~ msgid "Select Theme Package"
-#~ msgstr "Fail Pakej RPM"
-
-#, fuzzy
-#~ msgid "Failed to Download Theme"
-#~ msgstr "Gagal untuk mencari seksyen: %s"
-
-#, fuzzy
-#~ msgid "Cannot Install Theme"
-#~ msgstr "Pasang Tema KDE"
 
 #, fuzzy
 #~ msgid "File &Information"
