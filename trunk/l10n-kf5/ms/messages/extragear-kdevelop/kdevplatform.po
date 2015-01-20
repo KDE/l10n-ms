@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevplatform\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-18 08:03+0000\n"
+"POT-Creation-Date: 2015-01-20 10:06+0000\n"
 "PO-Revision-Date: 2009-07-05 19:31+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1270,54 +1270,81 @@ msgstr ""
 msgid "*** Finished ***"
 msgstr ""
 
-#: outputview/outputfilteringstrategies.cpp:159
 #: outputview/outputfilteringstrategies.cpp:168
-#: outputview/outputfilteringstrategies.cpp:176
+#: outputview/outputfilteringstrategies.cpp:177
 #: outputview/outputfilteringstrategies.cpp:188
-msgctxt ""
-msgid "compiling"
+#: outputview/outputfilteringstrategies.cpp:206
+#, kde-format
+msgctxt "compiling a file: %1 file %2 compiler"
+msgid "compiling %1 (%2)"
 msgstr ""
 
-#: outputview/outputfilteringstrategies.cpp:163
-#: outputview/outputfilteringstrategies.cpp:169
-#: outputview/outputfilteringstrategies.cpp:177
-#: outputview/outputfilteringstrategies.cpp:187
-#, fuzzy
-msgctxt ""
-msgid "generating"
+#: outputview/outputfilteringstrategies.cpp:171
+#: outputview/outputfilteringstrategies.cpp:179
+#: outputview/outputfilteringstrategies.cpp:190
+#: outputview/outputfilteringstrategies.cpp:204
+#, fuzzy, kde-format
+msgctxt "generating a file: %1 file %2 generator tool"
+msgid "generating %1 (%2)"
 msgstr "Semakan"
 
-#: outputview/outputfilteringstrategies.cpp:165
-#: outputview/outputfilteringstrategies.cpp:171
-#: outputview/outputfilteringstrategies.cpp:173
-#: outputview/outputfilteringstrategies.cpp:179
-msgctxt "Linking object files into a library or executable"
-msgid "linking"
-msgstr ""
-
-#: outputview/outputfilteringstrategies.cpp:175
-#, fuzzy
+#: outputview/outputfilteringstrategies.cpp:174
+#, fuzzy, kde-format
 msgctxt ""
-msgid "built"
-msgstr "Binaan"
-
-#: outputview/outputfilteringstrategies.cpp:180
-#, fuzzy
-msgctxt ""
-msgid "configuring"
-msgstr "Konfigurkan %1"
+"Linking object files into a library or executable: %1 target, %2 linker"
+msgid "linking %1 (%2)"
+msgstr "<b>%1</b>"
 
 #: outputview/outputfilteringstrategies.cpp:181
-#: outputview/outputfilteringstrategies.cpp:184
-msgctxt ""
-msgid "installing"
-msgstr ""
+#, fuzzy, kde-format
+msgctxt "Linking object files into a library or executable: %1 file, %2 linker"
+msgid "linking %1 (%2)"
+msgstr "<b>%1</b>"
 
 #: outputview/outputfilteringstrategies.cpp:183
-#, fuzzy
+#, fuzzy, kde-format
 msgctxt ""
-msgid "creating"
+"Linking object files into a library or executable: %1 file, %2 compiler"
+msgid "linking %1 (%2)"
+msgstr "<b>%1</b>"
+
+#: outputview/outputfilteringstrategies.cpp:186
+#, fuzzy, kde-format
+msgctxt "finished building a target: %1 target name"
+msgid "built %1"
+msgstr "Binaan"
+
+#: outputview/outputfilteringstrategies.cpp:192
+#, kde-format
+msgctxt "Linking object files into a library or executable: %1 target"
+msgid "linking %1"
+msgstr ""
+
+#: outputview/outputfilteringstrategies.cpp:194
+#, fuzzy, kde-format
+msgctxt "configuring a project: %1 tool"
+msgid "configuring (%1)"
+msgstr "Konfigurkan %1"
+
+#: outputview/outputfilteringstrategies.cpp:196
+#: outputview/outputfilteringstrategies.cpp:201
+#, fuzzy, kde-format
+msgctxt "installing a file: %1 file"
+msgid "installing %1"
+msgstr "Memuat"
+
+#: outputview/outputfilteringstrategies.cpp:199
+#, fuzzy, kde-format
+msgctxt "creating a folder: %1 path"
+msgid "creating %1"
 msgstr "Semakan"
+
+#: outputview/outputfilteringstrategies.cpp:209
+#: outputview/outputfilteringstrategies.cpp:212
+#, kde-format
+msgctxt "change directory: %1: path"
+msgid "cd %1"
+msgstr ""
 
 #: project/abstractfilemanagerplugin.cpp:322
 #, kde-format
@@ -4501,6 +4528,11 @@ msgstr ""
 #: vcs/widgets/vcseventwidget.ui:20
 msgid "Logview"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt ""
+#~ msgid "generating"
+#~ msgstr "Semakan"
 
 #, fuzzy
 #~ msgid "Save &Selected"
