@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: skrooge\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-13 01:44+0000\n"
+"POT-Creation-Date: 2015-01-25 01:55+0000\n"
 "PO-Revision-Date: 2009-10-03 23:05+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1637,6 +1637,8 @@ msgstr ""
 #: plugins/import/skrooge_import_csv/skgimportplugincsv.cpp:702
 #: plugins/import/skrooge_import_gnc/skgimportplugingnc.cpp:80
 #: plugins/import/skrooge_import_gsb/skgimportplugingsb.cpp:66
+#: plugins/import/skrooge_import_iif/skgimportpluginiif.cpp:87
+#: plugins/import/skrooge_import_iif/skgimportpluginiif.cpp:263
 #: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:643
 #: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:1466
 #: plugins/import/skrooge_import_mmb/skgimportpluginmmb.cpp:69
@@ -1657,6 +1659,7 @@ msgstr "Gagal untuk memadam"
 #: plugins/import/skrooge_import_csv/skgimportplugincsv.cpp:289
 #: plugins/import/skrooge_import_gnc/skgimportplugingnc.cpp:114
 #: plugins/import/skrooge_import_gsb/skgimportplugingsb.cpp:103
+#: plugins/import/skrooge_import_iif/skgimportpluginiif.cpp:98
 #: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:674
 #: plugins/import/skrooge_import_mmb/skgimportpluginmmb.cpp:84
 #: plugins/import/skrooge_import_mny/skgimportpluginmny.cpp:172
@@ -1678,6 +1681,7 @@ msgstr "Fail"
 #: plugins/import/skrooge_import_csv/skgimportplugincsv.cpp:762
 #: plugins/import/skrooge_import_gnc/skgimportplugingnc.cpp:88
 #: plugins/import/skrooge_import_gsb/skgimportplugingsb.cpp:75
+#: plugins/import/skrooge_import_iif/skgimportpluginiif.cpp:103
 #: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:658
 #: plugins/import/skrooge_import_mny/skgimportpluginmny.cpp:107
 #: plugins/import/skrooge_import_mt940/skgimportpluginmt940.cpp:77
@@ -1886,6 +1890,7 @@ msgid "Subscription"
 msgstr "Cari"
 
 #: plugins/import/skrooge_import_csv/skgimportplugincsv.cpp:567
+#: plugins/import/skrooge_import_iif/skgimportpluginiif.cpp:140
 #: plugins/import/skrooge_import_qif/skgimportpluginqif.cpp:257
 #, kde-format
 msgctxt "Noun"
@@ -1906,6 +1911,7 @@ msgid "The initial balance of '%1' has been set"
 msgstr "Gagal untuk memadam"
 
 #: plugins/import/skrooge_import_csv/skgimportplugincsv.cpp:710
+#: plugins/import/skrooge_import_iif/skgimportpluginiif.cpp:271
 #: plugins/import/skrooge_import_json/skgimportpluginjson.cpp:67
 #: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:1474
 #: plugins/import/skrooge_import_qif/skgimportpluginqif.cpp:856
@@ -2045,6 +2051,44 @@ msgctxt "A file format"
 msgid "Grisbi file"
 msgstr "Fail"
 
+#: plugins/import/skrooge_import_iif/skgimportpluginiif.cpp:278
+#: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:1483
+#: plugins/import/skrooge_import_qif/skgimportpluginqif.cpp:863
+#, fuzzy, kde-format
+msgctxt "Export step"
+msgid "Export %1 file"
+msgstr "Fail"
+
+#: plugins/import/skrooge_import_iif/skgimportpluginiif.cpp:286
+#: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:1218
+#: plugins/import/skrooge_import_qif/skgimportpluginqif.cpp:871
+#, fuzzy
+msgctxt "Export step"
+msgid "Export categories"
+msgstr "Import"
+
+#: plugins/import/skrooge_import_iif/skgimportpluginiif.cpp:314
+#: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:1094
+#: plugins/import/skrooge_import_qif/skgimportpluginqif.cpp:899
+#, fuzzy
+msgctxt "Export step"
+msgid "Export operations"
+msgstr "Operasi"
+
+#: plugins/import/skrooge_import_iif/skgimportpluginiif.cpp:511
+#: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:801
+#: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:892
+#: plugins/import/skrooge_import_qif/skgimportpluginqif.cpp:1096
+#, fuzzy
+msgctxt "Export step"
+msgid "Export units"
+msgstr "Eksport"
+
+#: plugins/import/skrooge_import_iif/skgimportpluginiif.cpp:547
+msgctxt "A file format"
+msgid "Intuit Interchange Format file"
+msgstr ""
+
 #: plugins/import/skrooge_import_json/skgimportpluginjson.cpp:85
 #, fuzzy
 msgctxt "A file format"
@@ -2064,14 +2108,6 @@ msgctxt "Import step"
 msgid "Import budgets"
 msgstr "Import"
 
-#: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:801
-#: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:892
-#: plugins/import/skrooge_import_qif/skgimportpluginqif.cpp:1096
-#, fuzzy
-msgctxt "Export step"
-msgid "Export units"
-msgstr "Eksport"
-
 #: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:948
 #, fuzzy
 msgctxt "Export step"
@@ -2082,13 +2118,6 @@ msgstr "Senarai unit"
 #, fuzzy
 msgctxt "Export step"
 msgid "Export scheduled operations"
-msgstr "Operasi"
-
-#: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:1094
-#: plugins/import/skrooge_import_qif/skgimportpluginqif.cpp:899
-#, fuzzy
-msgctxt "Export step"
-msgid "Export operations"
 msgstr "Operasi"
 
 #: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:1127
@@ -2103,25 +2132,11 @@ msgctxt "Export step"
 msgid "Export banks"
 msgstr "Eksport"
 
-#: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:1218
-#: plugins/import/skrooge_import_qif/skgimportpluginqif.cpp:871
-#, fuzzy
-msgctxt "Export step"
-msgid "Export categories"
-msgstr "Import"
-
 #: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:1386
 #, fuzzy
 msgctxt "Export step"
 msgid "Export accounts"
 msgstr "Operasi"
-
-#: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:1483
-#: plugins/import/skrooge_import_qif/skgimportpluginqif.cpp:863
-#, fuzzy, kde-format
-msgctxt "Export step"
-msgid "Export %1 file"
-msgstr "Fail"
 
 #: plugins/import/skrooge_import_kmy/skgimportpluginkmy.cpp:1703
 #, fuzzy
