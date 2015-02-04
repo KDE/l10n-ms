@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-03 09:58+0000\n"
+"POT-Creation-Date: 2015-02-04 07:46+0000\n"
 "PO-Revision-Date: 2007-02-24 13:11+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -412,14 +412,14 @@ msgid "Catalog Preview"
 msgstr "Pilihan Pralihat"
 
 #: dialogs/addcatdialog.cpp:209 ekos/capture.cpp:1929
-#: fitsviewer/fitstab.cpp:263 imageviewer.cpp:265 kstarsactions.cpp:725
+#: fitsviewer/fitstab.cpp:264 imageviewer.cpp:265 kstarsactions.cpp:725
 #: printing/pwizprint.cpp:88 tools/scriptbuilder.cpp:828
 #, fuzzy, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
 msgstr "Fail bernama \"%1\" telah wujud. Tulis gantikan ia?"
 
 #: dialogs/addcatdialog.cpp:211 ekos/capture.cpp:1931
-#: fitsviewer/fitstab.cpp:265 imageviewer.cpp:267 kstarsactions.cpp:726
+#: fitsviewer/fitstab.cpp:266 imageviewer.cpp:267 kstarsactions.cpp:726
 #: printing/pwizprint.cpp:89 tools/scriptbuilder.cpp:830
 #, fuzzy
 msgid "Overwrite File?"
@@ -571,7 +571,7 @@ msgid ""
 msgstr "URL ialah seperti hingga?"
 
 #: dialogs/addlinkdialog.cpp:62 ekos/capture.cpp:1733 ekos/capture.cpp:1950
-#: fitsviewer/fitstab.cpp:292 indi/streamwg.cpp:194
+#: fitsviewer/fitstab.cpp:297 indi/streamwg.cpp:194
 #: tools/scriptbuilder.cpp:787 tools/scriptbuilder.cpp:873
 msgid "Invalid URL"
 msgstr "URL tidak sah"
@@ -669,7 +669,7 @@ msgid "General"
 msgstr "Umum"
 
 #: dialogs/detaildialog.cpp:147 kspopupmenu.cpp:187 kspopupmenu.cpp:271
-#: kstarsinit.cpp:631 printing/detailstable.cpp:87
+#: kstarsinit.cpp:632 printing/detailstable.cpp:87
 #: printing/pwizobjectselection.cpp:114 skycomponents/starcomponent.cpp:451
 #: skycomponents/starcomponent.cpp:460 skycomponents/starcomponent.cpp:469
 #: skyobjects/starobject.cpp:501 tools/observinglist.cpp:470
@@ -1415,7 +1415,7 @@ msgstr "Sebarang"
 msgid "Stars"
 msgstr "Bintang"
 
-#: dialogs/finddialog.cpp:38 kstarsactions.cpp:567 kstarsinit.cpp:408
+#: dialogs/finddialog.cpp:38 kstarsactions.cpp:567 kstarsinit.cpp:409
 #: tools/astrocalc.cpp:174 tools/conjunctions.cpp:78
 #, fuzzy
 msgid "Solar System"
@@ -3092,8 +3092,8 @@ msgstr "Pelihat Dokumen"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_solverPreview)
 #. i18n: ectx: property (text), widget (QPushButton, previewB)
-#: ekos/align.ui:419 ekos/capture.ui:905 fitsviewer/fitsviewer.cpp:250
-#: fitsviewer/fitsviewer.cpp:314
+#: ekos/align.ui:419 ekos/capture.ui:905 fitsviewer/fitsviewer.cpp:253
+#: fitsviewer/fitsviewer.cpp:320
 #, fuzzy
 msgid "Preview"
 msgstr "Pilihan Pralihat"
@@ -3298,7 +3298,7 @@ msgstr ""
 msgid "Waiting..."
 msgstr "Lanjutan URL uketerangan atau"
 
-#: ekos/capture.cpp:953
+#: ekos/capture.cpp:953 fitsviewer/fitsdebayer.cpp:67
 #, fuzzy
 msgid "Complete."
 msgstr "Selesai"
@@ -3405,7 +3405,7 @@ msgstr "Default Pilihan Direktori:"
 msgid "Open Ekos Sequence Queue"
 msgstr ""
 
-#: ekos/capture.cpp:1732 ekos/capture.cpp:1949 fitsviewer/fitstab.cpp:291
+#: ekos/capture.cpp:1732 ekos/capture.cpp:1949 fitsviewer/fitstab.cpp:296
 #: indi/streamwg.cpp:193 tools/scriptbuilder.cpp:786
 #: tools/scriptbuilder.cpp:872
 #, fuzzy, kde-format
@@ -3421,7 +3421,7 @@ msgstr "tidak dapat membuka fail tetapan `%s': %s"
 msgid "Save Ekos Sequence Queue"
 msgstr ""
 
-#: ekos/capture.cpp:1932 fitsviewer/fitstab.cpp:266
+#: ekos/capture.cpp:1932 fitsviewer/fitstab.cpp:267
 msgid "&Overwrite"
 msgstr "&Tindih"
 
@@ -3429,7 +3429,7 @@ msgstr "&Tindih"
 msgid "Failed to save sequence queue"
 msgstr ""
 
-#: ekos/capture.cpp:1941 fitsviewer/fitstab.cpp:280
+#: ekos/capture.cpp:1941 fitsviewer/fitstab.cpp:285
 #, fuzzy
 msgid "FITS Save"
 msgstr "Skala"
@@ -3725,8 +3725,10 @@ msgid "S&top"
 msgstr "Atas"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2_3)
+#. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, label_18)
-#: ekos/capture.ui:994 ekos/focus.ui:358 oal/execute.ui:418
+#: ekos/capture.ui:994 ekos/focus.ui:358 fitsviewer/fitsdebayer.ui:22
+#: oal/execute.ui:418
 #, fuzzy
 msgid "Filter:"
 msgstr "Tapis"
@@ -3943,7 +3945,7 @@ msgid "Alignment"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PlayFocusAlarm)
-#: ekos/ekosmanager.cpp:1470 ekos/opsekos.ui:169 fitsviewer/fitsviewer.cpp:258
+#: ekos/ekosmanager.cpp:1470 ekos/opsekos.ui:169 fitsviewer/fitsviewer.cpp:261
 msgid "Focus"
 msgstr ""
 
@@ -3953,7 +3955,7 @@ msgid "Mount"
 msgstr "Kira:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PlayGuideAlarm)
-#: ekos/ekosmanager.cpp:1510 ekos/opsekos.ui:182 fitsviewer/fitsviewer.cpp:262
+#: ekos/ekosmanager.cpp:1510 ekos/opsekos.ui:182 fitsviewer/fitsviewer.cpp:265
 msgid "Guide"
 msgstr ""
 
@@ -3963,7 +3965,7 @@ msgid "Guider port from %1 is ready."
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, EkosManager)
-#: ekos/ekosmanager.ui:14 kstarsactions.cpp:579 kstarsinit.cpp:394
+#: ekos/ekosmanager.ui:14 kstarsactions.cpp:579 kstarsinit.cpp:395
 msgid "Ekos"
 msgstr ""
 
@@ -5358,71 +5360,195 @@ msgstr "Buang Da_ri Bar Alatan"
 msgid "Process ToolBar"
 msgstr "Papan Alat Mdk"
 
-#: fitsviewer/fitsdata.cpp:114
+#: fitsviewer/fitsdata.cpp:120
 msgid "Please hold while loading FITS file..."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:115
+#: fitsviewer/fitsdata.cpp:121
 #, fuzzy
 msgid "Loading FITS"
 msgstr "Memuatkan jurupacu %s..."
 
-#: fitsviewer/fitsdata.cpp:145
+#: fitsviewer/fitsdata.cpp:151
 #, fuzzy, kde-format
 msgid "Could not open file %1 (fits_get_img_param). Error %2"
 msgstr "Fail tidak dapat dibuka untuk ditulis: %s"
 
-#: fitsviewer/fitsdata.cpp:145 fitsviewer/fitsdata.cpp:163
-#: fitsviewer/fitsdata.cpp:170 fitsviewer/fitsdata.cpp:180
-#: fitsviewer/fitsdata.cpp:191
+#: fitsviewer/fitsdata.cpp:151 fitsviewer/fitsdata.cpp:169
+#: fitsviewer/fitsdata.cpp:176 fitsviewer/fitsdata.cpp:200
+#: fitsviewer/fitsdata.cpp:211 fitsviewer/fitsdata.cpp:262
 #, fuzzy
 msgid "FITS Open"
 msgstr "Skala"
 
-#: fitsviewer/fitsdata.cpp:163
+#: fitsviewer/fitsdata.cpp:169
 #, fuzzy, kde-format
 msgid "FITS file open error (fits_get_img_param): %1"
 msgstr "Tidak dapat memuatkan fail!"
 
-#: fitsviewer/fitsdata.cpp:170
+#: fitsviewer/fitsdata.cpp:176
 msgid "1D FITS images are not supported in KStars."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:180
+#: fitsviewer/fitsdata.cpp:200
+#, kde-format
+msgid "Bit depth %1 is not supported."
+msgstr ""
+
+#: fitsviewer/fitsdata.cpp:211
 #, kde-format
 msgid "Image has invalid dimensions %1x%2"
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:191
+#: fitsviewer/fitsdata.cpp:262
 #, fuzzy, kde-format
-msgid "FITS file open error (fits_get_img_type): %1"
-msgstr "Tidak dapat memuatkan fail!"
+msgid "Error reading image: %1"
+msgstr "Menambah untuk kebergantungan:\n"
 
-#. i18n: ectx: property (windowTitle), widget (QDialog, fitsdebayer)
-#: fitsviewer/fitsdebayer.ui:14
-msgid "Dialog"
+#: fitsviewer/fitsdata.cpp:350
+msgid ""
+"Are you sure you want to overwrite original image data with debayered data? "
+"This action is irreversible!"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: fitsviewer/fitsdebayer.ui:22
-msgid "Pattern:"
+#: fitsviewer/fitsdata.cpp:350 fitsviewer/fitstab.cpp:250
+#, fuzzy
+msgid "Save FITS"
+msgstr "Simp&an"
+
+#: fitsviewer/fitsdata.cpp:1963
+msgid "Only 8 and 16 bits bayered images supported."
+msgstr ""
+
+#: fitsviewer/fitsdata.cpp:1963 fitsviewer/fitsdata.cpp:2029
+#, fuzzy
+msgid "Debayer error"
+msgstr "Bandar nama"
+
+#: fitsviewer/fitsdata.cpp:1988
+msgid "Unable to allocate memory for bayer buffer."
+msgstr ""
+
+#: fitsviewer/fitsdata.cpp:1988 kstarsactions.cpp:691
+#, fuzzy
+msgid "Open FITS"
+msgstr "tidak dapat membuka %s!\n"
+
+#: fitsviewer/fitsdata.cpp:2023
+msgid "Unable to allocate memory for temporary bayer buffer."
+msgstr ""
+
+#: fitsviewer/fitsdata.cpp:2023 fitsviewer/fitsdata.cpp:2047
+msgid "Debayer Error"
+msgstr ""
+
+#: fitsviewer/fitsdata.cpp:2029
+#, kde-format
+msgid "Debayer failed (%1)"
+msgstr ""
+
+#: fitsviewer/fitsdata.cpp:2047
+msgid "Unable to allocate memory for debayerd buffer."
+msgstr ""
+
+#: fitsviewer/fitsdebayer.cpp:61
+#, fuzzy
+msgid "Processing..."
+msgstr "Pada Ahli:"
+
+#: fitsviewer/fitsdebayer.cpp:72
+#, fuzzy
+#| msgid "Upload"
+msgid "Debayer failed."
+msgstr "Muatnaik"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, FITSDebayerDialog)
+#: fitsviewer/fitsdebayer.ui:14
+#, fuzzy
+msgid "Image Debayering"
+msgstr "Lanjutan URL uketerangan atau"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, filterCombo)
+#: fitsviewer/fitsdebayer.ui:30
+msgid "RGGB"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, filterCombo)
+#: fitsviewer/fitsdebayer.ui:35
+msgid "GBRG"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, filterCombo)
+#: fitsviewer/fitsdebayer.ui:40
+msgid "GRBG"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, filterCombo)
+#: fitsviewer/fitsdebayer.ui:45
+msgid "BGGR"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: fitsviewer/fitsdebayer.ui:53
+msgid "Method:"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, methodCombo)
+#: fitsviewer/fitsdebayer.ui:61
+#, fuzzy
+msgid "Nearest"
+msgstr "Bandar nama"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, methodCombo)
+#: fitsviewer/fitsdebayer.ui:66
+msgid "Simple"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, methodCombo)
+#: fitsviewer/fitsdebayer.ui:71
+#, fuzzy
+msgid "BILinear"
+msgstr "Linear"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, methodCombo)
+#: fitsviewer/fitsdebayer.ui:76
+#, fuzzy
+msgid "HQLinear"
+msgstr "Linear"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, methodCombo)
+#: fitsviewer/fitsdebayer.ui:81
+msgid "VNG"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: fitsviewer/fitsdebayer.ui:32
+#: fitsviewer/fitsdebayer.ui:89
 #, fuzzy
 msgid "X Offset:"
 msgstr "masa :"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: fitsviewer/fitsdebayer.ui:42
+#: fitsviewer/fitsdebayer.ui:106
 #, fuzzy
 msgid "Y Offset:"
 msgstr "masa :"
 
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: fitsviewer/fitsdebayer.ui:123
+#, fuzzy
+#| msgid "Status"
+msgid "Status:"
+msgstr "Status"
+
+#. i18n: ectx: property (text), widget (QLineEdit, statusEdit)
+#: fitsviewer/fitsdebayer.ui:130 fitsviewer/fitsviewer.cpp:708
+#, fuzzy
+msgid "Ready."
+msgstr "Bandar nama"
+
 #. i18n: ectx: property (windowTitle), widget (QDialog, fitsHeaderDialog)
-#: fitsviewer/fitsheaderdialog.ui:13 fitsviewer/fitstab.cpp:190
-#: fitsviewer/fitsviewer.cpp:156
+#: fitsviewer/fitsheaderdialog.ui:13 fitsviewer/fitstab.cpp:191
+#: fitsviewer/fitsviewer.cpp:158
 #, fuzzy
 msgid "FITS Header"
 msgstr "BUANG HEADER [%s]"
@@ -5451,34 +5577,34 @@ msgstr "Komen"
 msgid "&Close"
 msgstr "Warna"
 
-#: fitsviewer/fitshistogram.cpp:564
+#: fitsviewer/fitshistogram.cpp:565
 #, fuzzy
 msgid "Auto Scale"
 msgstr "Auto _Pilih"
 
-#: fitsviewer/fitshistogram.cpp:567
+#: fitsviewer/fitshistogram.cpp:568
 #, fuzzy
 msgid "Linear Scale"
 msgstr "Pemetaan Linear"
 
-#: fitsviewer/fitshistogram.cpp:570
+#: fitsviewer/fitshistogram.cpp:571
 #, fuzzy
 msgid "Logarithmic Scale"
 msgstr "Skala"
 
-#: fitsviewer/fitshistogram.cpp:573
+#: fitsviewer/fitshistogram.cpp:574
 #, fuzzy
 msgid "Square Root Scale"
 msgstr "Tetapkan Katalaluan Root"
 
-#: fitsviewer/fitshistogram.cpp:582
+#: fitsviewer/fitshistogram.cpp:583
 #: skycomponents/constellationboundarylines.cpp:269
 #, fuzzy
 msgid "Unknown"
 msgstr "Entah"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, FITSHistogramUI)
-#: fitsviewer/fitshistogramui.ui:32 fitsviewer/fitsviewer.cpp:138
+#: fitsviewer/fitshistogramui.ui:32 fitsviewer/fitsviewer.cpp:140
 #, fuzzy
 msgid "Histogram"
 msgstr "\t%d rekod histogram\n"
@@ -5536,7 +5662,7 @@ msgstr " minit"
 msgid "&Apply"
 msgstr ""
 
-#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:530
+#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:544
 #, fuzzy
 msgid "Save Changes to FITS?"
 msgstr "Berbalik ke yang Ter_akhir Disimpan"
@@ -5548,120 +5674,120 @@ msgid ""
 "closing it?"
 msgstr "fail seperti hingga?"
 
-#: fitsviewer/fitstab.cpp:190
+#: fitsviewer/fitstab.cpp:191
 #, fuzzy, kde-format
 msgid "FITS record error: %1"
 msgstr "Tidak dapat memuatkan fail!"
 
-#: fitsviewer/fitstab.cpp:249
-#, fuzzy
-msgid "Save FITS"
-msgstr "Simp&an"
-
-#: fitsviewer/fitstab.cpp:279
+#: fitsviewer/fitstab.cpp:284
 #, fuzzy, kde-format
 msgid "FITS file save error: %1"
 msgstr "Tidak dapat memuatkan fail!"
 
-#: fitsviewer/fitstab.cpp:286
+#: fitsviewer/fitstab.cpp:291
 #, fuzzy, kde-format
 msgid "File saved to %1"
 msgstr "Tidak dapat memuatkan fail!"
 
-#: fitsviewer/fitsview.cpp:250
+#: fitsviewer/fitsview.cpp:263
 #, fuzzy
 msgid "Image is saturated!"
 msgstr "Memulakan proses perakaunan: "
 
-#: fitsviewer/fitsview.cpp:554
+#: fitsviewer/fitsview.cpp:566
+#, fuzzy
+msgid "Finding stars..."
+msgstr "Padanan kurungan"
+
+#: fitsviewer/fitsview.cpp:570
 #, kde-format
 msgid "1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:71
+#: fitsviewer/fitsviewer.cpp:72
 #, fuzzy
 msgid "Auto Stretch"
 msgstr "Auto _Pilih"
 
-#: fitsviewer/fitsviewer.cpp:71
+#: fitsviewer/fitsviewer.cpp:72
 #, fuzzy
 msgid "High Contrast"
 msgstr "Kontras:"
 
-#: fitsviewer/fitsviewer.cpp:72
+#: fitsviewer/fitsviewer.cpp:73
 msgid "Equalize"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:72
+#: fitsviewer/fitsviewer.cpp:73
 #, fuzzy
 msgid "High Pass"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsviewer.cpp:73 fitsviewer/fitsviewer.cpp:120
+#: fitsviewer/fitsviewer.cpp:74 fitsviewer/fitsviewer.cpp:122
 #, fuzzy
 msgid "Rotate Right"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsviewer.cpp:73 fitsviewer/fitsviewer.cpp:124
+#: fitsviewer/fitsviewer.cpp:74 fitsviewer/fitsviewer.cpp:126
 #, fuzzy
 msgid "Rotate Left"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsviewer.cpp:74 fitsviewer/fitsviewer.cpp:128
+#: fitsviewer/fitsviewer.cpp:75 fitsviewer/fitsviewer.cpp:130
 #, fuzzy
 msgid "Flip Horizontal"
 msgstr "Atas Ufuk"
 
-#: fitsviewer/fitsviewer.cpp:74 fitsviewer/fitsviewer.cpp:132
+#: fitsviewer/fitsviewer.cpp:75 fitsviewer/fitsviewer.cpp:134
 #, fuzzy
 msgid "Flip Vertical"
 msgstr "Lanjutan URL uketerangan atau"
 
-#: fitsviewer/fitsviewer.cpp:161
+#: fitsviewer/fitsviewer.cpp:164
 msgid "Debayer..."
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:165
+#: fitsviewer/fitsviewer.cpp:168
 #, fuzzy
 msgid "Auto stretch"
 msgstr "Auto _Pilih"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, statForm)
-#: fitsviewer/fitsviewer.cpp:186 fitsviewer/statform.ui:14
+#: fitsviewer/fitsviewer.cpp:189 fitsviewer/statform.ui:14
 #, fuzzy
 msgid "Statistics"
 msgstr "Statistik:"
 
-#: fitsviewer/fitsviewer.cpp:190 fitsviewer/fitsviewer.cpp:665
+#: fitsviewer/fitsviewer.cpp:193 fitsviewer/fitsviewer.cpp:679
 #, fuzzy
 msgid "Mark Stars"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsviewer.cpp:213
+#: fitsviewer/fitsviewer.cpp:216
 #, fuzzy
 msgid "KStars FITS Viewer"
 msgstr "Selamat Datang hingga Pemapar"
 
-#: fitsviewer/fitsviewer.cpp:254
+#: fitsviewer/fitsviewer.cpp:257
 #, fuzzy
 msgid "Calibrate"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsviewer.cpp:346
+#: fitsviewer/fitsviewer.cpp:354
 #, kde-format
 msgid "%1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:392
+#: fitsviewer/fitsviewer.cpp:414
 #, fuzzy
 msgid "Open FITS Image"
 msgstr "tidak dapat membuka %s!\n"
 
-#: fitsviewer/fitsviewer.cpp:531
+#: fitsviewer/fitsviewer.cpp:545
 #, fuzzy, kde-format
 #| msgid ""
 #| "The current script has unsaved changes.  Would you like to save before "
@@ -5671,10 +5797,15 @@ msgstr ""
 "Skrip semasa mempunyai perubahan tidak disimpan. Adakah anda hendak "
 "menyimpan sebelum menutupnya?"
 
-#: fitsviewer/fitsviewer.cpp:670
+#: fitsviewer/fitsviewer.cpp:684
 #, fuzzy
 msgid "Unmark Stars"
 msgstr "Bandar nama"
+
+#: fitsviewer/fitsviewer.cpp:702
+#, fuzzy, kde-format
+msgid "Processing %1..."
+msgstr "Pada Ahli:"
 
 #. i18n: ectx: property (text), widget (QLabel, widthLabel)
 #: fitsviewer/statform.ui:20
@@ -6773,22 +6904,22 @@ msgstr "Pusat Konfigurasi Menu"
 msgid "Stop &Tracking"
 msgstr "Henti $arahan"
 
-#: kstars.cpp:169 kstarsactions.cpp:1100 kstarsinit.cpp:235
+#: kstars.cpp:169 kstarsactions.cpp:1100 kstarsinit.cpp:236
 #, fuzzy
 msgid "Switch to horizonal view (Horizontal &Coordinates)"
 msgstr "Kordinat Bulan"
 
-#: kstars.cpp:169 kstarsactions.cpp:1106 kstarsinit.cpp:235
+#: kstars.cpp:169 kstarsactions.cpp:1106 kstarsinit.cpp:236
 #, fuzzy
 msgid "Switch to star globe view (Equatorial &Coordinates)"
 msgstr "Kordinat Bulan"
 
-#: kstars.cpp:173 kstarsinit.cpp:241 skymap.cpp:1103
+#: kstars.cpp:173 kstarsinit.cpp:242 skymap.cpp:1103
 msgid "Switch to QPainter backend"
 msgstr ""
 
 #. i18n: ectx: label, entry (UseGL), group (View)
-#: kstars.cpp:173 kstars.kcfg:740 kstarsinit.cpp:241 skymap.cpp:1081
+#: kstars.cpp:173 kstars.kcfg:740 kstarsinit.cpp:242 skymap.cpp:1081
 #: skymap.cpp:1089 skymap.cpp:1097
 msgid "Switch to OpenGL backend"
 msgstr ""
@@ -37221,11 +37352,6 @@ msgstr "Planet"
 msgid "KStars::slotFind() - Not enough memory for dialog"
 msgstr "Tidak for"
 
-#: kstarsactions.cpp:691
-#, fuzzy
-msgid "Open FITS"
-msgstr "tidak dapat membuka %s!\n"
-
 #: kstarsactions.cpp:714
 #, fuzzy
 msgid "Export Image"
@@ -37360,7 +37486,7 @@ msgstr "Kod sumber Scheme"
 msgid "Do Not Switch"
 msgstr "_Jangan Format"
 
-#: kstarsactions.cpp:974 kstarsinit.cpp:213
+#: kstarsactions.cpp:974 kstarsinit.cpp:214
 #, fuzzy
 msgid "Engage &Tracking"
 msgstr "Henti $arahan"
@@ -37532,324 +37658,324 @@ msgstr "Ralat "
 msgid "Print Sky"
 msgstr "Pengurus Pencetak"
 
-#: kstarsinit.cpp:136
+#: kstarsinit.cpp:137
 #, fuzzy
 msgid "Download New Data..."
 msgstr "Data LPD"
 
-#: kstarsinit.cpp:138
+#: kstarsinit.cpp:139
 #, fuzzy
 msgid "Downloads new data"
 msgstr "Data LPD"
 
-#: kstarsinit.cpp:144
+#: kstarsinit.cpp:145
 #, fuzzy
 msgid "Open FITS..."
 msgstr "tidak dapat membuka %s!\n"
 
-#: kstarsinit.cpp:150
+#: kstarsinit.cpp:151
 #, fuzzy
 msgid "&Save Sky Image..."
 msgstr "Path imej boot:        %s"
 
-#: kstarsinit.cpp:154
+#: kstarsinit.cpp:155
 #, fuzzy
 msgid "&Run Script..."
 msgstr "Skrip Pengguna"
 
-#: kstarsinit.cpp:158
+#: kstarsinit.cpp:159
 #, fuzzy
 msgctxt "start Printing Wizard"
 msgid "Printing &Wizard"
 msgstr "Jurucipta Konfigurasi Internet"
 
-#: kstarsinit.cpp:164
+#: kstarsinit.cpp:165
 #, fuzzy
 msgid "Set Time to &Now"
 msgstr "Tak dapat tetapkan namahos ke `%s'"
 
-#: kstarsinit.cpp:169
+#: kstarsinit.cpp:170
 #, fuzzy
 msgctxt "set Clock to New Time"
 msgid "&Set Time..."
 msgstr "Mengsinkronisasikan jam perkakasan ke masa sistem"
 
-#: kstarsinit.cpp:174
+#: kstarsinit.cpp:175
 #, fuzzy
 msgid "Stop &Clock"
 msgstr "Henti $arahan"
 
-#: kstarsinit.cpp:183
+#: kstarsinit.cpp:184
 msgid "Advance one step forward in time"
 msgstr ""
 
-#: kstarsinit.cpp:187
+#: kstarsinit.cpp:188
 msgid "Advance one step backward in time"
 msgstr ""
 
-#: kstarsinit.cpp:193
+#: kstarsinit.cpp:194
 msgid "&Zenith"
 msgstr ""
 
-#: kstarsinit.cpp:196
+#: kstarsinit.cpp:197
 #, fuzzy
 msgid "&North"
 msgstr "Utara"
 
-#: kstarsinit.cpp:199
+#: kstarsinit.cpp:200
 #, fuzzy
 msgid "&East"
 msgstr "Timur"
 
-#: kstarsinit.cpp:202
+#: kstarsinit.cpp:203
 #, fuzzy
 msgid "&South"
 msgstr "Selatan"
 
-#: kstarsinit.cpp:205
+#: kstarsinit.cpp:206
 #, fuzzy
 msgid "&West"
 msgstr "Barat"
 
-#: kstarsinit.cpp:209
+#: kstarsinit.cpp:210
 #, fuzzy
 msgid "&Find Object..."
 msgstr "Objek LightWave"
 
-#: kstarsinit.cpp:217
+#: kstarsinit.cpp:218
 #, fuzzy
 msgid "Set Coordinates &Manually..."
 msgstr "Tetapkan Katalaluan Root"
 
-#: kstarsinit.cpp:224
+#: kstarsinit.cpp:225
 #, fuzzy
 msgid "&Default Zoom"
 msgstr "default:LTR"
 
-#: kstarsinit.cpp:228
+#: kstarsinit.cpp:229
 #, fuzzy
 msgid "&Zoom to Angular Size..."
 msgstr "Muat hingga saiz maksimum yang di_izinkan"
 
-#: kstarsinit.cpp:245
+#: kstarsinit.cpp:246
 msgid "&Lambert Azimuthal Equal-area"
 msgstr ""
 
-#: kstarsinit.cpp:250
+#: kstarsinit.cpp:251
 msgid "&Azimuthal Equidistant"
 msgstr ""
 
-#: kstarsinit.cpp:255
+#: kstarsinit.cpp:256
 #, fuzzy
 msgid "&Orthographic"
 msgstr "Zonmasa bukan-geografik"
 
-#: kstarsinit.cpp:260
+#: kstarsinit.cpp:261
 #, fuzzy
 msgid "&Equirectangular"
 msgstr "Segi empat tepat"
 
-#: kstarsinit.cpp:265
+#: kstarsinit.cpp:266
 #, fuzzy
 msgid "&Stereographic"
 msgstr "Zonmasa bukan-geografik"
 
-#: kstarsinit.cpp:270
+#: kstarsinit.cpp:271
 msgid "&Gnomonic"
 msgstr ""
 
-#: kstarsinit.cpp:278
+#: kstarsinit.cpp:279
 #, fuzzy
 msgctxt "Show the information boxes"
 msgid "Show &Info Boxes"
 msgstr "Papar Maklumat Kotak"
 
-#: kstarsinit.cpp:284
+#: kstarsinit.cpp:285
 #, fuzzy
 msgctxt "Show time-related info box"
 msgid "Show &Time Box"
 msgstr "Papar masa  ko&tak Masa Kotak"
 
-#: kstarsinit.cpp:291
+#: kstarsinit.cpp:292
 #, fuzzy
 msgctxt "Show focus-related info box"
 msgid "Show &Focus Box"
 msgstr "Papar kotak &Fokus Kotak"
 
-#: kstarsinit.cpp:298
+#: kstarsinit.cpp:299
 #, fuzzy
 msgctxt "Show location-related info box"
 msgid "Show &Location Box"
 msgstr "Papar kotak &Lokasi Kotak"
 
-#: kstarsinit.cpp:306
+#: kstarsinit.cpp:307
 #, fuzzy
 msgid "Show Main Toolbar"
 msgstr "Buang Da_ri Bar Alatan"
 
-#: kstarsinit.cpp:308
+#: kstarsinit.cpp:309
 #, fuzzy
 msgid "Show View Toolbar"
 msgstr "Buang Da_ri Bar Alatan"
 
-#: kstarsinit.cpp:312
+#: kstarsinit.cpp:313
 #, fuzzy
 msgid "Show Statusbar"
 msgstr "Papar _Bantuan"
 
-#: kstarsinit.cpp:314
+#: kstarsinit.cpp:315
 #, fuzzy
 msgid "Show Az/Alt Field"
 msgstr "Papar Alt Medan"
 
-#: kstarsinit.cpp:316
+#: kstarsinit.cpp:317
 #, fuzzy
 msgid "Show RA/Dec Field"
 msgstr "Papar Dis Medan"
 
-#: kstarsinit.cpp:321
+#: kstarsinit.cpp:322
 #, fuzzy
 msgid "C&olor Schemes"
 msgstr "Warna"
 
-#: kstarsinit.cpp:322
+#: kstarsinit.cpp:323
 #, fuzzy
 msgid "&Classic"
 msgstr "Bandar nama"
 
-#: kstarsinit.cpp:323
+#: kstarsinit.cpp:324
 #, fuzzy
 msgid "&Star Chart"
 msgstr "Carta StarChart"
 
-#: kstarsinit.cpp:324
+#: kstarsinit.cpp:325
 #, fuzzy
 msgid "&Night Vision"
 msgstr "Tempoh malam: %1 jam"
 
-#: kstarsinit.cpp:325
+#: kstarsinit.cpp:326
 #, fuzzy
 msgid "&Moonless Night"
 msgstr "Tempoh malam: %1 jam"
 
-#: kstarsinit.cpp:342
+#: kstarsinit.cpp:343
 #, fuzzy
 msgid "&FOV Symbols"
 msgstr "%s: fail `%s' tidak mempunyai simbol\n"
 
-#: kstarsinit.cpp:346
+#: kstarsinit.cpp:347
 #, fuzzy
 msgctxt "Location on Earth"
 msgid "&Geographic..."
 msgstr "Lokasi buka."
 
-#: kstarsinit.cpp:351
+#: kstarsinit.cpp:352
 #, fuzzy
 msgid "Startup Wizard..."
 msgstr " Langkau Wizard"
 
-#: kstarsinit.cpp:356
+#: kstarsinit.cpp:357
 #, fuzzy
 msgid "Update comets orbital elements"
 msgstr "Ralat mencipta `%s': %s"
 
-#: kstarsinit.cpp:358
+#: kstarsinit.cpp:359
 #, fuzzy
 msgid "Update asteroids orbital elements"
 msgstr "Ralat mencipta `%s': %s"
 
-#: kstarsinit.cpp:360
+#: kstarsinit.cpp:361
 msgid "Update Recent Supernovae data"
 msgstr ""
 
-#: kstarsinit.cpp:362
+#: kstarsinit.cpp:363
 #, fuzzy
 msgid "Update satellites orbital elements"
 msgstr "Ralat mencipta `%s': %s"
 
-#: kstarsinit.cpp:366 tools/astrocalc.cpp:124
+#: kstarsinit.cpp:367 tools/astrocalc.cpp:124
 msgid "Calculator"
 msgstr "Kalkulator"
 
-#: kstarsinit.cpp:376 tools/observinglist.cpp:94
+#: kstarsinit.cpp:377 tools/observinglist.cpp:94
 #, fuzzy
 msgid "Observation Planner"
 msgstr "Bandar nama"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, AltVsTime)
-#: kstarsinit.cpp:380 obslistpopupmenu.cpp:63 tools/altvstime.cpp:56
+#: kstarsinit.cpp:381 obslistpopupmenu.cpp:63 tools/altvstime.cpp:56
 #: tools/altvstime.ui:14
 #, fuzzy
 msgid "Altitude vs. Time"
 msgstr "Baki masa: %s minit"
 
-#: kstarsinit.cpp:383 tools/wutdialog.cpp:61
+#: kstarsinit.cpp:384 tools/wutdialog.cpp:61
 msgid "What's up Tonight"
 msgstr "Apa yang berlaku malam ini"
 
-#: kstarsinit.cpp:386 tools/whatsinteresting/qml/wiview.qml:28
+#: kstarsinit.cpp:387 tools/whatsinteresting/qml/wiview.qml:28
 #, fuzzy
 msgid "What's Interesting..."
 msgstr "Menaikkan antaramuka $i: "
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, SkyCalendar)
-#: kstarsinit.cpp:389 tools/skycalendar.cpp:56 tools/skycalendar.cpp:362
+#: kstarsinit.cpp:390 tools/skycalendar.cpp:56 tools/skycalendar.cpp:362
 #: tools/skycalendar.ui:20
 msgid "Sky Calendar"
 msgstr ""
 
-#: kstarsinit.cpp:405 tools/scriptbuilder.cpp:161
+#: kstarsinit.cpp:406 tools/scriptbuilder.cpp:161
 #, fuzzy
 msgid "Script Builder"
 msgstr "Skrip Pengguna"
 
-#: kstarsinit.cpp:411
+#: kstarsinit.cpp:412
 #, fuzzy
 msgid "Jupiter's Moons"
 msgstr "Jupiter s."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowFlags)
-#: kstarsinit.cpp:414 options/opsguides.ui:296
+#: kstarsinit.cpp:415 options/opsguides.ui:296
 #, fuzzy
 msgid "Flags"
 msgstr "Bandar nama"
 
-#: kstarsinit.cpp:417
+#: kstarsinit.cpp:418
 #, fuzzy
 msgid "List your &Equipment..."
 msgstr "Konfigurasi mengguna _DHCP"
 
-#: kstarsinit.cpp:420
+#: kstarsinit.cpp:421
 #, fuzzy
 msgid "Add Observer..."
 msgstr "Objek LightWave"
 
-#: kstarsinit.cpp:425
+#: kstarsinit.cpp:426
 #, fuzzy
 msgid "Execute the session Plan..."
 msgstr "Negara nama"
 
-#: kstarsinit.cpp:434
+#: kstarsinit.cpp:435
 #, fuzzy
 msgid "Telescope Wizard..."
 msgstr " Langkau Wizard"
 
-#: kstarsinit.cpp:437
+#: kstarsinit.cpp:438
 #, fuzzy
 msgid "Device Manager..."
 msgstr "Pengurus Pencetak"
 
-#: kstarsinit.cpp:440
+#: kstarsinit.cpp:441
 #, fuzzy
 msgid "INDI Control Panel..."
 msgstr "Buang Daripada Panel"
 
-#: kstarsinit.cpp:449
+#: kstarsinit.cpp:450
 #, fuzzy
 msgid "Displays the Tip of the Day"
 msgstr "&Tip Hari Ini"
 
-#: kstarsinit.cpp:456
+#: kstarsinit.cpp:457
 msgctxt "Tooltip describing the nature of the time step control"
 msgid ""
 "Use this to set the rate at which time in the simulation flows.\n"
@@ -37859,188 +37985,188 @@ msgid ""
 "of 'X'."
 msgstr ""
 
-#: kstarsinit.cpp:462
+#: kstarsinit.cpp:463
 #, fuzzy
 msgid "Time step control"
 msgstr "Bandar nama"
 
-#: kstarsinit.cpp:466
+#: kstarsinit.cpp:467
 #, fuzzy
 #| msgid "Stars"
 msgctxt "Toggle Stars in the display"
 msgid "Stars"
 msgstr "Bintang"
 
-#: kstarsinit.cpp:468
+#: kstarsinit.cpp:469
 #, fuzzy
 msgid "Toggle stars"
 msgstr "Toggle tambahan awalan"
 
-#: kstarsinit.cpp:470
+#: kstarsinit.cpp:471
 #, fuzzy
 msgctxt "Toggle Deep Sky Objects in the display"
 msgid "Deep Sky"
 msgstr "Dalam Langit"
 
-#: kstarsinit.cpp:472
+#: kstarsinit.cpp:473
 #, fuzzy
 msgid "Toggle deep sky objects"
 msgstr "Dalam Langit Objek"
 
-#: kstarsinit.cpp:474
+#: kstarsinit.cpp:475
 #, fuzzy
 msgctxt "Toggle Solar System objects in the display"
 msgid "Solar System"
 msgstr "Ulangbut Sistem"
 
-#: kstarsinit.cpp:476
+#: kstarsinit.cpp:477
 #, fuzzy
 msgid "Toggle Solar system objects"
 msgstr "Sorok?"
 
-#: kstarsinit.cpp:478
+#: kstarsinit.cpp:479
 #, fuzzy
 msgctxt "Toggle Constellation Lines in the display"
 msgid "Const. Lines"
 msgstr "baris tidak dijangka dalam %s: %s\n"
 
-#: kstarsinit.cpp:480
+#: kstarsinit.cpp:481
 #, fuzzy
 msgid "Toggle constellation lines"
 msgstr "Baris per inci"
 
-#: kstarsinit.cpp:482
+#: kstarsinit.cpp:483
 #, fuzzy
 msgctxt "Toggle Constellation Names in the display"
 msgid "Const. Names"
 msgstr "Nama Volum _Logikal:"
 
-#: kstarsinit.cpp:484
+#: kstarsinit.cpp:485
 #, fuzzy
 msgid "Toggle constellation names"
 msgstr "Nama ahli mengandungi '..'"
 
-#: kstarsinit.cpp:486
+#: kstarsinit.cpp:487
 #, fuzzy
 msgctxt "Toggle Constellation Boundaries in the display"
 msgid "C. Boundaries"
 msgstr "Memuatkan jurupacu SCSI"
 
-#: kstarsinit.cpp:488
+#: kstarsinit.cpp:489
 #, fuzzy
 msgid "Toggle constellation boundaries"
 msgstr "Toggle kegunaan buffer baru"
 
-#: kstarsinit.cpp:490
+#: kstarsinit.cpp:491
 #, fuzzy
 msgctxt "Toggle Milky Way in the display"
 msgid "Milky Way"
 msgstr "hingga bagi inci hingga Galaktik satah"
 
-#: kstarsinit.cpp:492
+#: kstarsinit.cpp:493
 #, fuzzy
 msgid "Toggle milky way"
 msgstr "Toggle kegunaan buffer baru"
 
-#: kstarsinit.cpp:494
+#: kstarsinit.cpp:495
 #, fuzzy
 msgctxt "Toggle Equatorial Coordinate Grid in the display"
 msgid "Equatorial coord. grid"
 msgstr "Kordinat Bulan"
 
-#: kstarsinit.cpp:496
+#: kstarsinit.cpp:497
 #, fuzzy
 msgid "Toggle equatorial coordinate grid"
 msgstr "Tetap Sistem Koordinat Euclidean"
 
-#: kstarsinit.cpp:498
+#: kstarsinit.cpp:499
 #, fuzzy
 msgctxt "Toggle Horizontal Coordinate Grid in the display"
 msgid "Horizontal coord. grid"
 msgstr "Kordinat Bulan"
 
-#: kstarsinit.cpp:500
+#: kstarsinit.cpp:501
 #, fuzzy
 msgid "Toggle horizontal coordinate grid"
 msgstr "Tetap Sistem Koordinat Euclidean"
 
-#: kstarsinit.cpp:502
+#: kstarsinit.cpp:503
 #, fuzzy
 msgctxt "Toggle the opaque fill of the ground polygon in the display"
 msgid "Ground"
 msgstr "Bandar nama"
 
-#: kstarsinit.cpp:504
+#: kstarsinit.cpp:505
 #, fuzzy
 msgid "Toggle opaque ground"
 msgstr "Toggle tambahan awalan"
 
-#: kstarsinit.cpp:506
+#: kstarsinit.cpp:507
 #, fuzzy
 msgctxt "Toggle flags in the display"
 msgid "Flags"
 msgstr "Bandar nama"
 
-#: kstarsinit.cpp:508
+#: kstarsinit.cpp:509
 #, fuzzy
 msgid "Toggle flags"
 msgstr "Toggle tambahan awalan"
 
-#: kstarsinit.cpp:510
+#: kstarsinit.cpp:511
 #, fuzzy
 msgctxt "Toggle satellites in the display"
 msgid "Satellites"
 msgstr "Bandar nama"
 
-#: kstarsinit.cpp:512
+#: kstarsinit.cpp:513
 #, fuzzy
 msgid "Toggle satellites"
 msgstr "Baris per inci"
 
-#: kstarsinit.cpp:514
+#: kstarsinit.cpp:515
 #, fuzzy
 msgctxt "Toggle supernovae in the display"
 msgid "Supernovae"
 msgstr "Bandar nama"
 
-#: kstarsinit.cpp:516
+#: kstarsinit.cpp:517
 #, fuzzy
 msgid "Toggle supernovae"
 msgstr "Toggle tambahan awalan"
 
-#: kstarsinit.cpp:541
+#: kstarsinit.cpp:542
 #, fuzzy
 msgid "Edit FOV Symbols..."
 msgstr "Tidak dapat Edit"
 
-#: kstarsinit.cpp:548
+#: kstarsinit.cpp:549
 #, fuzzy
 msgid " Welcome to KStars "
 msgstr "Selamat datang ke &RHL;"
 
-#: kstarsinit.cpp:629 skymap.cpp:364 widgets/infoboxwidget.cpp:127
+#: kstarsinit.cpp:630 skymap.cpp:364 widgets/infoboxwidget.cpp:127
 #, fuzzy
 msgid "nothing"
 msgstr "Tiada"
 
-#: kstarsinit.cpp:675
+#: kstarsinit.cpp:676
 #, fuzzy
 msgid "Initial Position is Below Horizon"
 msgstr "Bulan kini dibawah ufuk."
 
-#: kstarsinit.cpp:676
+#: kstarsinit.cpp:677
 #, fuzzy
 msgid ""
 "The initial position is below the horizon.\n"
 "Would you like to reset to the default position?"
 msgstr "ialah seperti hingga hingga piawai?"
 
-#: kstarsinit.cpp:678
+#: kstarsinit.cpp:679
 #, fuzzy
 msgid "Reset Position"
 msgstr "Kepastian Ulangtetap"
 
-#: kstarsinit.cpp:678
+#: kstarsinit.cpp:679
 #, fuzzy
 msgid "Do Not Reset"
 msgstr "_Jangan Format"
@@ -50013,6 +50139,10 @@ msgstr "Pudar hingga latar belakang"
 msgid "Set the color for the background."
 msgstr "Pudar latar belakang?"
 
+#, fuzzy
+#~ msgid "FITS file open error (fits_get_img_type): %1"
+#~ msgstr "Tidak dapat memuatkan fail!"
+
 # SOME DESCRIPTIVE TITLE.
 # Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2006.
 #
@@ -52349,11 +52479,6 @@ msgstr "Pudar latar belakang?"
 #~ msgstr "Jenis Objek"
 
 #, fuzzy
-#~ msgctxt "City in Romania"
-#~ msgid "Bucarest"
-#~ msgstr "Bandar nama"
-
-#, fuzzy
 #~ msgctxt "City in Zambie"
 #~ msgid "Lusaka"
 #~ msgstr "Bandar nama"
@@ -54681,10 +54806,6 @@ msgstr "Pudar latar belakang?"
 #, fuzzy
 #~ msgid "Loading NGC/IC Data (%1%)"
 #~ msgstr "Memuat Data"
-
-#, fuzzy
-#~ msgid "Error adding catalog: %1"
-#~ msgstr "Menambah untuk kebergantungan:\n"
 
 #, fuzzy
 #~ msgid "Creating Asteroids and Comets"
