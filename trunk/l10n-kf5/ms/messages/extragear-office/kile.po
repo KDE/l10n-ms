@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kile\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-26 07:48+0000\n"
+"POT-Creation-Date: 2015-02-08 08:41+0000\n"
 "PO-Revision-Date: 2009-10-01 00:21+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -165,16 +165,16 @@ msgstr ""
 msgid "&Expanded Text:"
 msgstr ""
 
-#: dialogs/cleandialog.cpp:41
+#: dialogs/cleandialog.cpp:39
 #, fuzzy
 msgid "Delete Files"
 msgstr "Padam Fail"
 
-#: dialogs/cleandialog.cpp:77
+#: dialogs/cleandialog.cpp:62
 msgid "Do you really want to delete these files?"
 msgstr ""
 
-#: dialogs/cleandialog.cpp:85 dialogs/listselector.cpp:80
+#: dialogs/cleandialog.cpp:70 dialogs/listselector.cpp:80
 msgid "Files"
 msgstr "Fail"
 
@@ -410,8 +410,8 @@ msgstr ""
 msgid "Symbol View"
 msgstr ""
 
-#: dialogs/findfilesdialog.cpp:114 dialogs/projectdialogs.cpp:81
-#: kileproject.cpp:476
+#: dialogs/findfilesdialog.cpp:114 dialogs/projectdialogs.cpp:62
+#: kileproject.cpp:471
 msgid "Project"
 msgstr ""
 
@@ -483,7 +483,7 @@ msgstr "Rujukan"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: dialogs/findfilesdialog.cpp:172 dialogs/includegraphicsdialog_base.ui:17
-#: dialogs/projectdialogs.cpp:271
+#: dialogs/projectdialogs.cpp:231
 #, fuzzy
 msgid "File"
 msgstr "Fail"
@@ -1482,7 +1482,8 @@ msgstr ""
 msgid "Without n&umbering:"
 msgstr ""
 
-#: dialogs/mathenvironmentdialog.cpp:61
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: dialogs/mathenvironmentdialog.cpp:61 dialogs/tabbingdialog_base.ui:45
 msgid "Number of &rows:"
 msgstr ""
 
@@ -2097,7 +2098,7 @@ msgid "Background:"
 msgstr "Warna latar belakang"
 
 #. i18n: ectx: attribute (title), widget (QWidget, m_tbProperties)
-#: dialogs/pdf-wizard/pdfdialog_base.ui:376 dialogs/projectdialogs.cpp:481
+#: dialogs/pdf-wizard/pdfdialog_base.ui:376 dialogs/projectdialogs.cpp:420
 #: widgets/previewconfigwidget.cpp:118
 #, fuzzy
 msgid "Properties"
@@ -2388,123 +2389,197 @@ msgstr ""
 msgid "When you want to copy pages, you must enter the number of copies"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:89
+#: dialogs/projectdialogs.cpp:63
+#, fuzzy
+msgid "Extensions"
+msgstr "Sambungan"
+
+#: dialogs/projectdialogs.cpp:69
 msgid "Insert a short descriptive name of your project here."
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:90
+#: dialogs/projectdialogs.cpp:70
 msgid ""
 "Insert a list (separated by spaces) of file extensions which should be "
 "treated also as files of the corresponding type in this project."
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:91
-msgid "Default graphic extension to open when none specified by file name."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:95
+#: dialogs/projectdialogs.cpp:74
 #, fuzzy
 msgid "Project &title:"
 msgstr "&Tajuk projek:"
 
-#: dialogs/projectdialogs.cpp:100
-#, fuzzy
-msgid "Extensions"
-msgstr "Sambungan"
+#: dialogs/projectdialogs.cpp:87
+msgid "Project &folder:"
+msgstr ""
 
-#: dialogs/projectdialogs.cpp:114
+#: dialogs/projectdialogs.cpp:89
+msgid "Insert the path to your project here."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:101
 msgid "(use global settings)"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:115
-msgid "Default Graphics Extension:"
+#: dialogs/projectdialogs.cpp:102
+msgid "Default graphic extension to open when none specified by file name."
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:123
+#: dialogs/projectdialogs.cpp:113
 msgid "Source Files"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:124
+#: dialogs/projectdialogs.cpp:114
 msgid "Package Files"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:125
+#: dialogs/projectdialogs.cpp:115
 msgid "Image Files"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:126
+#: dialogs/projectdialogs.cpp:122
+msgid "Default Graphics Extension:"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:124
 msgid "Predefined:"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:175
+#: dialogs/projectdialogs.cpp:156
 msgid "Error in extension"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:175
+#: dialogs/projectdialogs.cpp:156
 msgid "All user-defined extensions should look like '.xyz'"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:175
+#: dialogs/projectdialogs.cpp:156
 msgid "Invalid extension"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:241
+#: dialogs/projectdialogs.cpp:221
 #, fuzzy
 msgid "Create New Project"
 msgstr "Cipta Projek Baru"
 
-#: dialogs/projectdialogs.cpp:260
-msgid "Insert the path to your project here."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:262
-msgid "Project &folder:"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:278
+#: dialogs/projectdialogs.cpp:235
 msgid "Create a new file and add it to this project"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:280
+#: dialogs/projectdialogs.cpp:237
 msgid "File&name (relative to where the project file is):"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:287
+#: dialogs/projectdialogs.cpp:244
 msgid ""
 "If you want Kile to create a new file and add it to the project, then check "
 "this option and select a template from the list that will appear below."
 msgstr ""
 
+#: dialogs/projectdialogs.cpp:326
+msgid ""
+"You have not entered a project name. If you decide to proceed, the project "
+"name will be set to \"Untitled\".\n"
+"Do you want to create the project nevertheless?"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:327
+#, fuzzy
+msgid "No Project Name Given"
+msgstr "Tiada Nama Fail Diberi"
+
+#: dialogs/projectdialogs.cpp:328 kileviewmanager.cpp:872
+#, fuzzy
+msgid "Untitled"
+msgstr "Tiada tajuk"
+
+#: dialogs/projectdialogs.cpp:336
+msgid "Please enter the folder where the project file should be saved to."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:336
+#, fuzzy
+msgid "Empty Location"
+msgstr "Lokasi Kosong"
+
+#: dialogs/projectdialogs.cpp:342
+msgid "Please enter an absolute (local) path to the project folder."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:342
+#, fuzzy
+msgid "Invalid Location"
+msgstr "Lokasi Kosong"
+
+#: dialogs/projectdialogs.cpp:354
+msgid "Could not create the project folder, check your permissions."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:360
+msgid "The project folder is not writable, check your permissions."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:365
+msgid ""
+"The project file already exists, please select another name. Delete the "
+"existing project file if your intention was to overwrite it."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:365
+#, fuzzy
+msgid "Project File Already Exists"
+msgstr "Fail Projek Telah Wujud"
+
+#: dialogs/projectdialogs.cpp:371
+msgid ""
+"Please enter a filename for the file that should be added to this project."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:371
+#, fuzzy
+msgid "No File Name Given"
+msgstr "Tiada Nama Fail Diberi"
+
+#: dialogs/projectdialogs.cpp:385
+#, fuzzy, kde-format
+msgid "The file \"%1\" already exists, overwrite it?"
+msgstr "Fail \"%1\" telah wujud, tulisganti?"
+
+#: dialogs/projectdialogs.cpp:385 documentinfo.cpp:132
+#, fuzzy
+msgid "File Already Exists"
+msgstr "Fail Sudah Wujud"
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
-#: dialogs/projectdialogs.cpp:456 widgets/generalconfigwidget.ui:32
+#: dialogs/projectdialogs.cpp:410 widgets/generalconfigwidget.ui:32
 msgid "Project Options"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:457
+#: dialogs/projectdialogs.cpp:411
 #, fuzzy
 msgid "(use global setting)"
 msgstr "(guna tetapan global)"
 
-#: dialogs/projectdialogs.cpp:490
+#: dialogs/projectdialogs.cpp:426
 msgid "Select the default master document. Leave empty for auto detection."
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:495
+#: dialogs/projectdialogs.cpp:431
 #, fuzzy
 msgid "&Master document:"
 msgstr "Doku&men utama:"
 
-#: dialogs/projectdialogs.cpp:501
+#: dialogs/projectdialogs.cpp:437
 #, fuzzy
 msgid "(auto-detect)"
 msgstr "(auto-kesan)"
 
-#: dialogs/projectdialogs.cpp:518
+#: dialogs/projectdialogs.cpp:454
 #, fuzzy
 msgid "&QuickBuild configuration:"
 msgstr "Tetapan &QuickBuild:"
 
-#: dialogs/projectdialogs.cpp:536
+#: dialogs/projectdialogs.cpp:473
 #, fuzzy
 msgid "&MakeIndex options"
 msgstr "Pilihan &MakeIndex"
@@ -3458,13 +3533,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: dialogs/tabbingdialog_base.ui:28
 #, fuzzy
-msgid "Num of &columns:"
-msgstr "Jumlah ba&ris:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: dialogs/tabbingdialog_base.ui:45
-#, fuzzy
-msgid "Num of &rows:"
+msgid "Number of &columns:"
 msgstr "Jumlah ba&ris:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -4459,11 +4528,6 @@ msgid ""
 "The filename contains invalid characters ($~ #).<br>Please provide another "
 "one, or click \"Cancel\" to save anyway."
 msgstr ""
-
-#: documentinfo.cpp:132
-#, fuzzy
-msgid "File Already Exists"
-msgstr "Fail Sudah Wujud"
 
 #: documentinfo.cpp:133
 #, fuzzy, kde-format
@@ -6252,7 +6316,7 @@ msgstr ""
 msgid "Paste"
 msgstr "Tampal"
 
-#: kileproject.cpp:483
+#: kileproject.cpp:478
 #, kde-format
 msgid ""
 "The project file of %1 was created by a newer version of kile. Opening it "
@@ -8637,11 +8701,6 @@ msgstr ""
 msgid "&QuickPreview Math"
 msgstr ""
 
-#: kileviewmanager.cpp:872
-#, fuzzy
-msgid "Untitled"
-msgstr "Tiada tajuk"
-
 #: kileviewmanager.cpp:974
 msgid "Print Compiled Document..."
 msgstr ""
@@ -10737,32 +10796,12 @@ msgid "Show the user menu in the menu bar"
 msgstr ""
 
 #, fuzzy
+#~ msgid "Num of &rows:"
+#~ msgstr "Jumlah ba&ris:"
+
+#, fuzzy
 #~ msgid "&Apply"
 #~ msgstr "Terap"
-
-#, fuzzy
-#~ msgid "No Project Name Given"
-#~ msgstr "Tiada Nama Fail Diberi"
-
-#, fuzzy
-#~ msgid "Empty Location"
-#~ msgstr "Lokasi Kosong"
-
-#, fuzzy
-#~ msgid "Invalid Location"
-#~ msgstr "Lokasi Kosong"
-
-#, fuzzy
-#~ msgid "Project File Already Exists"
-#~ msgstr "Fail Projek Telah Wujud"
-
-#, fuzzy
-#~ msgid "No File Name Given"
-#~ msgstr "Tiada Nama Fail Diberi"
-
-#, fuzzy
-#~ msgid "The file \"%1\" already exists, overwrite it?"
-#~ msgstr "Fail \"%1\" telah wujud, tulisganti?"
 
 #, fuzzy
 #~ msgid "No help file was chosen."
