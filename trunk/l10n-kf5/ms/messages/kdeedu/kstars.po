@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-19 09:45+0000\n"
+"POT-Creation-Date: 2015-02-20 09:16+0000\n"
 "PO-Revision-Date: 2007-02-24 13:11+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -1206,11 +1206,13 @@ msgid "Delete Confirmation"
 msgstr "Kepastian Pemadaman"
 
 #: dialogs/detaildialog.cpp:1092 dialogs/detaildialog.cpp:1122
+#: tools/flagmanager.cpp:254 tools/flagmanager.cpp:283
 #: tools/observinglist.cpp:559 tools/observinglist.cpp:589
 msgid "KStars did not find any active telescopes."
 msgstr ""
 
-#: dialogs/detaildialog.cpp:1108 tools/observinglist.cpp:575
+#: dialogs/detaildialog.cpp:1108 tools/flagmanager.cpp:270
+#: tools/observinglist.cpp:575
 #, fuzzy, kde-format
 msgid "Telescope %1 is offline. Please connect and retry again."
 msgstr "ialah luar talian dan."
@@ -1293,13 +1295,13 @@ msgid "Add to Observing List"
 msgstr "Simpan senarai ke satu fail"
 
 #. i18n: ectx: property (text), widget (QPushButton, CenterButton)
-#: dialogs/details_data.ui:377
+#: dialogs/details_data.ui:377 tools/flagmanager.ui:206
 #, fuzzy
 msgid "Center in Map"
 msgstr "Mengulangmuat peta $command"
 
 #. i18n: ectx: property (text), widget (QPushButton, ScopeButton)
-#: dialogs/details_data.ui:384
+#: dialogs/details_data.ui:384 tools/flagmanager.ui:216
 #, fuzzy
 msgid "Center in Telescope"
 msgstr "Nama sudah digunakan"
@@ -1873,18 +1875,18 @@ msgstr "Jenis tetikus dikesan: %s"
 msgid "Set Coordinates Manually"
 msgstr "Tetapkan Katalaluan Root"
 
-#: dialogs/focusdialog.cpp:97 ekos/align.cpp:435 tools/flagmanager.cpp:173
+#: dialogs/focusdialog.cpp:97 ekos/align.cpp:435 tools/flagmanager.cpp:182
 #, fuzzy
 msgid "The Right Ascension value must be between 0.0 and 24.0."
 msgstr "Kanan antara dan."
 
-#: dialogs/focusdialog.cpp:99 ekos/align.cpp:437 tools/flagmanager.cpp:175
+#: dialogs/focusdialog.cpp:99 ekos/align.cpp:437 tools/flagmanager.cpp:184
 #, fuzzy
 msgid "The Declination value must be between -90.0 and 90.0."
 msgstr "antara dan."
 
 #: dialogs/focusdialog.cpp:101 dialogs/focusdialog.cpp:123 ekos/align.cpp:440
-#: tools/flagmanager.cpp:177
+#: tools/flagmanager.cpp:186
 #, fuzzy
 msgid "Invalid Coordinate Data"
 msgstr "Data tidak sah dalam fail sumber"
@@ -1907,7 +1909,7 @@ msgstr "Dec Alpha (AXP)"
 
 #. i18n: ectx: property (text), widget (QLineEdit, epochBox)
 #. i18n: ectx: property (text), widget (QLabel, EpochTarget)
-#: dialogs/focusdialog.ui:70 tools/flagmanager.ui:79
+#: dialogs/focusdialog.ui:70 tools/flagmanager.ui:77
 #: tools/modcalcapcoord.ui:182
 msgid "2000.0"
 msgstr "2000.0"
@@ -1917,7 +1919,7 @@ msgstr "2000.0"
 #. i18n: ectx: property (text), widget (QLabel, EpochLabel2)
 #. i18n: ectx: property (text), widget (QCheckBox, epochCheckBatch)
 #. i18n: ectx: property (text), widget (QCheckBox, EpochCheckBatch)
-#: dialogs/focusdialog.ui:77 tools/flagmanager.ui:66
+#: dialogs/focusdialog.ui:77 tools/flagmanager.ui:64
 #: tools/modcalcapcoord.ui:88 tools/modcalcapcoord.ui:167
 #: tools/modcalcapcoord.ui:434 tools/modcalcgalcoord.ui:214
 #: tools/modcalcvlsr.ui:521
@@ -6484,7 +6486,7 @@ msgstr "Hos"
 
 #. i18n: ectx: property (text), widget (QPushButton, addB)
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: indi/drivermanager.ui:297 tools/flagmanager.ui:135
+#: indi/drivermanager.ui:297 tools/flagmanager.ui:133
 #, fuzzy
 msgid "Add"
 msgstr "Tambah..."
@@ -41644,7 +41646,7 @@ msgstr "Peningkatan Kanan"
 #. i18n: ectx: property (text), widget (QLabel, DecLabel)
 #. i18n: ectx: property (text), widget (QCheckBox, decCheckBatch)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: oal/execute.ui:248 tools/flagmanager.ui:49 tools/modcalcaltaz.ui:232
+#: oal/execute.ui:248 tools/flagmanager.ui:47 tools/modcalcaltaz.ui:232
 #: tools/modcalcangdist.ui:118 tools/modcalcangdist.ui:203
 #: tools/modcalcapcoord.ui:78 tools/modcalcapcoord.ui:293
 #: tools/modcalcapcoord.ui:424 tools/modcalceclipticcoords.ui:121
@@ -44050,11 +44052,11 @@ msgstr "Padanan kurungan"
 msgid "Unnamed Object"
 msgstr "Objek LightWave"
 
-#: skycomponents/flagcomponent.cpp:184
+#: skycomponents/flagcomponent.cpp:40
 msgid "No icon"
 msgstr ""
 
-#: skycomponents/flagcomponent.cpp:186
+#: skycomponents/flagcomponent.cpp:42
 #, fuzzy
 msgid "Default"
 msgstr "default"
@@ -46275,35 +46277,35 @@ msgstr "Bandar nama"
 msgid "Rotation: "
 msgstr "Tind_akan"
 
-#: tools/flagmanager.cpp:49
+#: tools/flagmanager.cpp:57
 msgid "Flag manager"
 msgstr ""
 
-#: tools/flagmanager.cpp:63 tools/observinglist.cpp:111
+#: tools/flagmanager.cpp:71 tools/observinglist.cpp:111
 #: tools/observinglist.cpp:117 widgets/infoboxwidget.cpp:134
 #, fuzzy
 msgctxt "Right Ascension"
 msgid "RA"
 msgstr "Sudut atas kanan"
 
-#: tools/flagmanager.cpp:64 tools/observinglist.cpp:112
+#: tools/flagmanager.cpp:72 tools/observinglist.cpp:112
 #: tools/observinglist.cpp:118 widgets/infoboxwidget.cpp:135
 #, fuzzy
 msgctxt "Declination"
 msgid "Dec"
 msgstr "Dec Alpha (AXP)"
 
-#: tools/flagmanager.cpp:64
+#: tools/flagmanager.cpp:72
 #, fuzzy
 msgid "Epoch"
 msgstr "Epok:"
 
-#: tools/flagmanager.cpp:65
+#: tools/flagmanager.cpp:73
 #, fuzzy
 msgid "Icon"
 msgstr "Bandar nama"
 
-#: tools/flagmanager.cpp:65
+#: tools/flagmanager.cpp:73
 #, fuzzy
 #| msgid "Label:"
 msgid "Label"
@@ -46316,7 +46318,7 @@ msgstr "Label:"
 #. i18n: ectx: property (text), widget (QLabel, RALabel)
 #. i18n: ectx: property (text), widget (QCheckBox, raCheckBatch)
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: tools/flagmanager.ui:32 tools/modcalcaltaz.ui:239
+#: tools/flagmanager.ui:30 tools/modcalcaltaz.ui:239
 #: tools/modcalcangdist.ui:125 tools/modcalcangdist.ui:210
 #: tools/modcalcapcoord.ui:105 tools/modcalcapcoord.ui:321
 #: tools/modcalcapcoord.ui:414 tools/modcalceclipticcoords.ui:114
@@ -46326,46 +46328,46 @@ msgid "Right ascension:"
 msgstr "Peningkatan Kanan"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: tools/flagmanager.ui:86
+#: tools/flagmanager.ui:84
 msgid "Label:"
 msgstr "Label:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: tools/flagmanager.ui:103
+#: tools/flagmanager.ui:101
 #, fuzzy
 msgid "Label color:"
 msgstr "Kedalaman _Warna:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: tools/flagmanager.ui:110
+#: tools/flagmanager.ui:108
 #, fuzzy
 msgid "Icon:"
 msgstr "Bandar nama"
 
 #. i18n: ectx: property (text), widget (QPushButton, saveButton)
-#: tools/flagmanager.ui:142
+#: tools/flagmanager.ui:140
 #, fuzzy
 msgid "Save changes"
 msgstr "Berbalik ke yang Ter_akhir Disimpan"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: tools/flagmanager.ui:169
+#: tools/flagmanager.ui:167
 msgid ""
-"To add custom icons, just add images in $HOME/.kde5/local/share/kstars. File "
+"To add custom icons, just add images in $HOME/.kde/share/apps/kstars. File "
 "names must begin with \"_flags\". For example, the file "
 "\"_flagSmall_red_cross.gif\" will be shown as \"Small red cross\" in the "
 "combo box."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, CenterButton)
-#: tools/flagmanager.ui:208 tools/obslistpopupmenu.cpp:49
+#. i18n: ectx: property (toolTip), widget (QPushButton, ScopeButton)
+#: tools/flagmanager.ui:213
 #, fuzzy
-msgid "Center"
-msgstr "&Tengah"
+msgid "Slew to the flag coordinates"
+msgstr "Kordinat Bulan"
 
 #. i18n: ectx: property (text), widget (QPushButton, delButton)
 #. i18n: ectx: property (text), widget (QPushButton, DeleteImage)
-#: tools/flagmanager.ui:215 tools/observinglist.ui:594
+#: tools/flagmanager.ui:223 tools/observinglist.ui:594
 #, fuzzy
 msgid "Delete"
 msgstr "Bandar nama"
@@ -47656,6 +47658,11 @@ msgstr "Negara nama"
 #, fuzzy
 msgid "Add objects visible tonight to session plan"
 msgstr "Negara nama"
+
+#: tools/obslistpopupmenu.cpp:49
+#, fuzzy
+msgid "Center"
+msgstr "&Tengah"
 
 #: tools/obslistpopupmenu.cpp:52
 #, fuzzy
