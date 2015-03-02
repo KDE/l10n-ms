@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-10 05:24+0000\n"
+"POT-Creation-Date: 2015-01-05 02:00+0000\n"
 "PO-Revision-Date: 2005-11-17 23:25+0800\n"
 "Last-Translator: MIMOS Open Source <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1008,7 +1008,7 @@ msgid "Info"
 msgstr "Maklumat"
 
 #: editor/kgpgeditor.cpp:91 editor/kgpgeditor.cpp:241
-#: editor/kgpgeditor.cpp:749 editor/kgpgeditor.cpp:778
+#: editor/kgpgeditor.cpp:733 editor/kgpgeditor.cpp:762
 #, fuzzy
 msgid "Untitled"
 msgstr "tak bertajuk"
@@ -1153,16 +1153,6 @@ msgstr "&Import"
 msgid "Do Not Import"
 msgstr "Import Kunci"
 
-#: editor/kgpgeditor.cpp:730 transactions/kgpgverify.cpp:149
-msgid "No signature found."
-msgstr "Tiada tandatangan ditemui."
-
-#: editor/kgpgeditor.cpp:735 editor/kgpgtextedit.cpp:320
-#: kgpgexternalactions.cpp:288
-msgctxt "Caption of message box"
-msgid "Verification Finished"
-msgstr ""
-
 #. i18n: ectx: Menu (view)
 #: editor/kgpgeditor.rc:13 keysmanager.rc:25
 msgid "&View"
@@ -1265,6 +1255,11 @@ msgstr "Penyulitan gagal."
 msgid "Signing not possible: bad passphrase or missing key"
 msgstr ""
 "Tandatangan tidak boleh dilakukan: frasa laluan tidak bagus atau kunci hilang"
+
+#: editor/kgpgtextedit.cpp:320 kgpgexternalactions.cpp:288
+msgctxt "Caption of message box"
+msgid "Verification Finished"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
 #: editor/kgpgtextedit.cpp:326 keyserver.ui:144 keyservers.cpp:213
@@ -3188,73 +3183,73 @@ msgstr ""
 msgid "An error occurred while scanning your keyring"
 msgstr ""
 
-#: kgpgkeygenerate.cpp:43
+#: kgpgkeygenerate.cpp:46
 #, fuzzy
 msgid "&Expert Mode"
 msgstr "Mod Pakar"
 
-#: kgpgkeygenerate.cpp:44
+#: kgpgkeygenerate.cpp:47
 #, fuzzy
 msgid "Go to Expert Mode"
 msgstr "Kunci yang hendak dieksport:"
 
-#: kgpgkeygenerate.cpp:45
+#: kgpgkeygenerate.cpp:48
 msgid ""
 "If you go to expert mode, you will use the command line to create your key."
 msgstr ""
 
-#: kgpgkeygenerate.cpp:61
+#: kgpgkeygenerate.cpp:64
 #, fuzzy
 #| msgid "Never"
 msgctxt "Key will not expire"
 msgid "Never"
 msgstr "Jangan sesekali"
 
-#: kgpgkeygenerate.cpp:62
+#: kgpgkeygenerate.cpp:65
 msgid "Days"
 msgstr "Hari "
 
-#: kgpgkeygenerate.cpp:63
+#: kgpgkeygenerate.cpp:66
 msgid "Weeks"
 msgstr "Minggu"
 
-#: kgpgkeygenerate.cpp:64
+#: kgpgkeygenerate.cpp:67
 msgid "Months"
 msgstr "Bulan"
 
-#: kgpgkeygenerate.cpp:65
+#: kgpgkeygenerate.cpp:68
 msgid "Years"
 msgstr "Tahun"
 
-#: kgpgkeygenerate.cpp:71
+#: kgpgkeygenerate.cpp:74
 msgid "1024"
 msgstr ""
 
-#: kgpgkeygenerate.cpp:72
+#: kgpgkeygenerate.cpp:75
 msgid "2048"
 msgstr ""
 
-#: kgpgkeygenerate.cpp:73
+#: kgpgkeygenerate.cpp:76
 msgid "4096"
 msgstr ""
 
-#: kgpgkeygenerate.cpp:111
+#: kgpgkeygenerate.cpp:118
 msgid "You must give a name."
 msgstr "Anda mesti beri nama."
 
-#: kgpgkeygenerate.cpp:117
+#: kgpgkeygenerate.cpp:124
 msgid "The name must have at least 5 characters"
 msgstr ""
 
-#: kgpgkeygenerate.cpp:123
+#: kgpgkeygenerate.cpp:130
 msgid "The name must not start with a digit"
 msgstr ""
 
-#: kgpgkeygenerate.cpp:130
+#: kgpgkeygenerate.cpp:137
 msgid "You are about to create a key with no email address"
 msgstr "Anda akan mencipta kunci tanpa alamat e-mel"
 
-#: kgpgkeygenerate.cpp:137
+#: kgpgkeygenerate.cpp:144
 msgid "Email address not valid"
 msgstr "Alamat e-mel tak sah"
 
@@ -3706,13 +3701,13 @@ msgctxt "Mark default keyserver in GUI"
 msgid "%1 (Default)"
 msgstr "(Piawai)"
 
-#: model/keylistproxymodel.cpp:191 transactions/kgpgimport.cpp:193
+#: model/keylistproxymodel.cpp:191 transactions/kgpgimport.cpp:188
 #, kde-format
 msgctxt "ID: Name"
 msgid "%1: %2"
 msgstr ""
 
-#: model/keylistproxymodel.cpp:193 transactions/kgpgimport.cpp:195
+#: model/keylistproxymodel.cpp:193 transactions/kgpgimport.cpp:190
 #, kde-format
 msgctxt "ID: Name <Email>"
 msgid "%1: %2 &lt;%3&gt;"
@@ -4273,7 +4268,7 @@ msgstr "Penjanaan Kunci"
 msgid "Generating Revocation Certificate for key %1"
 msgstr "Cipta sijil pembatalan untuk"
 
-#: transactions/kgpgimport.cpp:128
+#: transactions/kgpgimport.cpp:127
 #, fuzzy, kde-format
 #| msgid ""
 #| "No key imported... \n"
@@ -4285,7 +4280,7 @@ msgstr ""
 "Tiada kunci diimport... \n"
 "Semak log terperinci untuk maklumat lanjut"
 
-#: transactions/kgpgimport.cpp:139
+#: transactions/kgpgimport.cpp:134
 #, fuzzy
 #| msgid ""
 #| "No key imported... \n"
@@ -4295,98 +4290,98 @@ msgstr ""
 "Tiada kunci diimport... \n"
 "Semak log terperinci untuk maklumat lanjut"
 
-#: transactions/kgpgimport.cpp:141
+#: transactions/kgpgimport.cpp:136
 #, fuzzy, kde-format
 msgid "<qt>%1 key processed.</qt>"
 msgid_plural "<qt>%1 keys processed.</qt>"
 msgstr[0] "_n: <qt>%1 kunci diproses.<br></qt>"
 msgstr[1] "<qt>%1 kunci diproses.<br></qt>"
 
-#: transactions/kgpgimport.cpp:144
+#: transactions/kgpgimport.cpp:139
 #, fuzzy, kde-format
 msgid "<qt><br />One key without ID.</qt>"
 msgid_plural "<qt><br />%1 keys without ID.</qt>"
 msgstr[0] "_n: <qt>Satu kunci tanpa ID.<br></qt>"
 msgstr[1] "<qt>%1 kunci tanpa ID.<br></qt>"
 
-#: transactions/kgpgimport.cpp:146
+#: transactions/kgpgimport.cpp:141
 #, fuzzy, kde-format
 msgid "<qt><br /><b>One key imported:</b></qt>"
 msgid_plural "<qt><br /><b>%1 keys imported:</b></qt>"
 msgstr[0] "_n: <qt><b>Satu kunci diimport:</b><br></qt>"
 msgstr[1] "<qt><b>%1 kunci diimport:</b><br></qt>"
 
-#: transactions/kgpgimport.cpp:148
+#: transactions/kgpgimport.cpp:143
 #, fuzzy, kde-format
 msgid "<qt><br />One RSA key imported.</qt>"
 msgid_plural "<qt><br />%1 RSA keys imported.</qt>"
 msgstr[0] "_n: <qt>Satu kunci RSA diimport.<br></qt>"
 msgstr[1] "<qt>%1 kunci RSA diimport.<br></qt>"
 
-#: transactions/kgpgimport.cpp:150
+#: transactions/kgpgimport.cpp:145
 #, fuzzy, kde-format
 msgid "<qt><br />One key unchanged.</qt>"
 msgid_plural "<qt><br />%1 keys unchanged.</qt>"
 msgstr[0] "_n: <qt>Satu kunci tidak berubah.<br></qt>"
 msgstr[1] "<qt>%1 kunci tidak berubah.<br></qt>"
 
-#: transactions/kgpgimport.cpp:152
+#: transactions/kgpgimport.cpp:147
 #, fuzzy, kde-format
 msgid "<qt><br />One user ID imported.</qt>"
 msgid_plural "<qt><br />%1 user IDs imported.</qt>"
 msgstr[0] "_n: <qt>Satu ID pengguna diimport.<br></qt>"
 msgstr[1] "<qt>%1 ID pengguna diimport.<br></qt>"
 
-#: transactions/kgpgimport.cpp:154
+#: transactions/kgpgimport.cpp:149
 #, fuzzy, kde-format
 msgid "<qt><br />One subkey imported.</qt>"
 msgid_plural "<qt><br />%1 subkeys imported.</qt>"
 msgstr[0] "_n: <qt>Satu subkunci diimport.<br></qt>"
 msgstr[1] "<qt>%1 subkunci diimport.<br></qt>"
 
-#: transactions/kgpgimport.cpp:156
+#: transactions/kgpgimport.cpp:151
 #, fuzzy, kde-format
 msgid "<qt><br />One signature imported.</qt>"
 msgid_plural "<qt><br />%1 signatures imported.</qt>"
 msgstr[0] "_n: <qt>Satu tandatangan diimport.<br></qt>"
 msgstr[1] "<qt>%1 tandatangan diimport.<br></qt>"
 
-#: transactions/kgpgimport.cpp:158
+#: transactions/kgpgimport.cpp:153
 #, fuzzy, kde-format
 msgid "<qt><br />One revocation certificate imported.</qt>"
 msgid_plural "<qt><br />%1 revocation certificates imported.</qt>"
 msgstr[0] "_n: <qt>Satu sijil pembatalan diimport.<br></qt>"
 msgstr[1] "<qt>%1 sijil pembatalan diimport.<br></qt>"
 
-#: transactions/kgpgimport.cpp:160
+#: transactions/kgpgimport.cpp:155
 #, fuzzy, kde-format
 msgid "<qt><br />One secret key processed.</qt>"
 msgid_plural "<qt><br />%1 secret keys processed.</qt>"
 msgstr[0] "_n: <qt>Satu kunci rahsia diproses.<br></qt>"
 msgstr[1] "<qt>%1 kunci rahsia diproses.<br></qt>"
 
-#: transactions/kgpgimport.cpp:162
+#: transactions/kgpgimport.cpp:157
 #, fuzzy, kde-format
 msgid "<qt><br /><b>One secret key imported.</b></qt>"
 msgid_plural "<qt><br /><b>%1 secret keys imported.</b></qt>"
 msgstr[0] "_n: <qt><b>Satu kunci rahsia diimport.</b><br></qt>"
 msgstr[1] "<qt><b>%1 kunci rahsia diimport.</b><br></qt>"
 
-#: transactions/kgpgimport.cpp:164
+#: transactions/kgpgimport.cpp:159
 #, fuzzy, kde-format
 msgid "<qt><br />One secret key unchanged.</qt>"
 msgid_plural "<qt><br />%1 secret keys unchanged.</qt>"
 msgstr[0] "_n: <qt>Satu kunci rahsia tidak berubah.<br></qt>"
 msgstr[1] "<qt>%1 kunci rahsia tidak berubah.<br></qt>"
 
-#: transactions/kgpgimport.cpp:166
+#: transactions/kgpgimport.cpp:161
 #, fuzzy, kde-format
 msgid "<qt><br />One secret key not imported.</qt>"
 msgid_plural "<qt><br />%1 secret keys not imported.</qt>"
 msgstr[0] "_n: <qt>Satu kunci rahsia tidak diimport.<br></qt>"
 msgstr[1] "<qt>%1 kunci rahsia tidak diimport.<br></qt>"
 
-#: transactions/kgpgimport.cpp:169
+#: transactions/kgpgimport.cpp:164
 #, fuzzy
 #| msgid ""
 #| "<qt><br><b>You have imported a secret key.</b> <br>Please note that "
@@ -4405,14 +4400,14 @@ msgstr ""
 "anda mesti edit kunci tersebut (klik dua kali di atasnya) dan setkan "
 "amanahnya kepada Penuh atau Mutlak.</qt>"
 
-#: transactions/kgpgimport.cpp:239
+#: transactions/kgpgimport.cpp:234
 #, fuzzy
 msgid "New Key"
 msgid_plural "New Keys"
 msgstr[0] "&Kunci"
 msgstr[1] "&Kunci"
 
-#: transactions/kgpgimport.cpp:242
+#: transactions/kgpgimport.cpp:237
 #, fuzzy
 #| msgid "Key is No Longer Used"
 msgid "Key with new User Id"
@@ -4420,7 +4415,7 @@ msgid_plural "Keys with new User Ids"
 msgstr[0] "Kunci Tidak Lagi Digunakan"
 msgstr[1] "Kunci Tidak Lagi Digunakan"
 
-#: transactions/kgpgimport.cpp:245
+#: transactions/kgpgimport.cpp:240
 #, fuzzy
 #| msgid "Delete Sign&ature"
 msgid "Key with new Signatures"
@@ -4428,13 +4423,13 @@ msgid_plural "Keys with new Signatures"
 msgstr[0] "Hapuskan &Tandatangan"
 msgstr[1] "Hapuskan &Tandatangan"
 
-#: transactions/kgpgimport.cpp:248
+#: transactions/kgpgimport.cpp:243
 msgid "Key with new Subkeys"
 msgid_plural "Keys with new Subkeys"
 msgstr[0] ""
 msgstr[1] ""
 
-#: transactions/kgpgimport.cpp:251
+#: transactions/kgpgimport.cpp:246
 #, fuzzy
 #| msgid "Private Key List"
 msgid "New Private Key"
@@ -4442,7 +4437,7 @@ msgid_plural "New Private Keys"
 msgstr[0] "Senarai Kunci Persendirian"
 msgstr[1] "Senarai Kunci Persendirian"
 
-#: transactions/kgpgimport.cpp:267
+#: transactions/kgpgimport.cpp:262
 msgid "Unchanged Key"
 msgid_plural "Unchanged Keys"
 msgstr[0] ""
@@ -4507,6 +4502,10 @@ msgctxt "Good signature from: NAME <EMAIL>, Key ID: HEXID"
 msgid ""
 "<qt>Good signature from:<br /><b>%1 &lt;%2&gt;</b><br />Key ID: %3<br /></qt>"
 msgstr "<qt>Tandatangan bagus dari:<br><b>%1</b><br>ID kunci: %2</qt>"
+
+#: transactions/kgpgverify.cpp:149
+msgid "No signature found."
+msgstr "Tiada tandatangan ditemui."
 
 #: transactions/kgpgverify.cpp:182
 #, fuzzy, kde-format
