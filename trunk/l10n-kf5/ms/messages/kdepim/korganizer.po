@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-04-11 08:57+0000\n"
+"POT-Creation-Date: 2015-04-13 08:22+0000\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -41,7 +41,10 @@ msgid ""
 "Copyright © 2006–2012 Allen Winter"
 msgstr ""
 
-#: aboutdata.cpp:51
+#: aboutdata.cpp:51 kontactplugin/korganizer/kcmapptsummary.cpp:170
+#: kontactplugin/korganizer/kcmtodosummary.cpp:166
+#: kontactplugin/specialdates/kcmsdsummary.cpp:184
+#: kontactplugin/specialdates/specialdates_plugin.cpp:63
 msgid "Allen Winter"
 msgstr ""
 
@@ -791,11 +794,11 @@ msgstr "&Hapuskan Peristiwa"
 msgid "&Show To-do"
 msgstr "&Paparkan Tugasan"
 
-#: actionmanager.cpp:1497
+#: actionmanager.cpp:1497 kontactplugin/korganizer/todosummarywidget.cpp:353
 msgid "&Edit To-do..."
 msgstr "&Edit Tugasan..."
 
-#: actionmanager.cpp:1501
+#: actionmanager.cpp:1501 kontactplugin/korganizer/todosummarywidget.cpp:354
 msgid "&Delete To-do"
 msgstr "&Hapuskan Tugasan"
 
@@ -1866,7 +1869,10 @@ msgstr ""
 msgid "(c) 2004 Tobias Koenig"
 msgstr ""
 
-#: kcmdesignerfields.cpp:160
+#: kcmdesignerfields.cpp:160 kontactplugin/korganizer/kcmapptsummary.cpp:169
+#: kontactplugin/korganizer/kcmtodosummary.cpp:164
+#: kontactplugin/specialdates/kcmsdsummary.cpp:182
+#: kontactplugin/specialdates/specialdates_plugin.cpp:65
 msgid "Tobias Koenig"
 msgstr ""
 
@@ -2050,6 +2056,1026 @@ msgstr "&iCalendar..."
 #, kde-format
 msgid "Unable to save %1 \"%2\"."
 msgstr "Tidak dapat menyimpan %1 \"%2\"."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, ApptSummaryConfig_Base)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:8
+#, fuzzy
+#| msgid "Calendar"
+msgid "Event Summary Configuration"
+msgstr "Kalendar"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mDaysButtonGroup)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:14
+msgid "Show Upcoming Events Starting"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mDateTodayButton)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:20
+#, fuzzy
+#| msgid "Sets where the event or to-do will take place."
+msgid "Show events for today only"
+msgstr "Mengeset tempat peristiwa atau tugasan akan diadakan."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateTodayButton)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:23
+#, fuzzy
+msgid "Check this box if you want to see events occurring on this date only."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QRadioButton, mDateTodayButton)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:26
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:34
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:34
+#, fuzzy
+#| msgid "day"
+msgid "&Today only"
+msgstr "hari"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mDateMonthButton)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:36
+msgid "Show events starting within the next month"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateMonthButton)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:39
+#, fuzzy
+msgid ""
+"Check this box if you want to see events that start sometime during the next "
+"31 days."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QRadioButton, mDateMonthButton)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:42
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:50
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:50
+msgid "Within the next &month (31 days)"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mDateRangeButton)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:57
+#, fuzzy
+#| msgid "Sets the due date for this to-do."
+msgid "Select the days for showing upcoming events"
+msgstr "Mengeset tarikh jangkaan untuk tugasan ini."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateRangeButton)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:60
+#, fuzzy
+msgid ""
+"Check this box if you want to specify the number of days in the future for "
+"upcoming events."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QRadioButton, mDateRangeButton)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:63
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:74
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:71
+msgid "Within the &next:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QSpinBox, mCustomDays)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:76
+msgid "Set the number of days to show upcoming events"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, mCustomDays)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:79
+msgid ""
+"Use this spinbox to set the number of days to show upcoming events up to 1 "
+"year in the future."
+msgstr ""
+
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, mCustomDays)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:82
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:93
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:90
+#, fuzzy
+msgid "1 day"
+msgstr "_n: 1 hari"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, mCustomDays)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:85
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:96
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:93
+#, fuzzy
+#| msgctxt "suffix in the N days spin box"
+#| msgid " days"
+msgctxt "days to show in summary"
+msgid " days"
+msgstr " hari"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mShowButtonGroup)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:122
+msgid "Show These Upcoming Events From Your Calendar"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowBirthdaysFromCal)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:128
+msgid "Show birthdays from your calendar when also using the Birthday resource"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowBirthdaysFromCal)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:131
+msgid ""
+"Enable this option to include birthdays from your calendar in the upcoming "
+"events summary. This option is only available if you are using the Birthdays "
+"resource in your calendar."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowBirthdaysFromCalBox)
+#. i18n: ectx: property (text), widget (QCheckBox, mShowBirthdaysFromCal)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:134
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:142
+#, fuzzy
+msgid "Show &birthdays"
+msgstr "Hari Lahir"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAnniversariesFromCal)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:141
+msgid ""
+"Shows anniversaries from your calendar when using the Birthdays resource"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAnniversariesFromCal)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:144
+msgid ""
+"Enable this option to include anniversaries from your calendar in the "
+"upcoming events summary. This option is only available if you are using the "
+"Birthdays resource in your calendar."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowAnniversariesFromCalBox)
+#. i18n: ectx: property (text), widget (QCheckBox, mShowAnniversariesFromCal)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:147
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:158
+msgid "Show &anniversaries"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, mGroupwareGroup)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:157
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:216
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:244
+#, fuzzy
+msgid "Groupware Settings"
+msgstr "Mesyuarat"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowMineOnly)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:163
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:250
+#, fuzzy
+#| msgid "Import Calendar"
+msgid "Show events belonging to my calendars only"
+msgstr "Import kalendar"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowMineOnly)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:166
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:253
+#, fuzzy
+msgid ""
+"Check this box if you want the summary to show events belonging to your "
+"calendars only."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowMineOnly)
+#: kontactplugin/korganizer/apptsummaryconfig_base.ui:169
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:256
+msgid "Show &my events only"
+msgstr ""
+
+#: kontactplugin/korganizer/apptsummarywidget.cpp:62
+msgid "Upcoming Events"
+msgstr ""
+
+#: kontactplugin/korganizer/apptsummarywidget.cpp:217
+#, kde-format
+msgid "No upcoming events starting within the next day"
+msgid_plural "No upcoming events starting within the next %1 days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kontactplugin/korganizer/apptsummarywidget.cpp:253
+#, fuzzy
+#| msgid "Appointment"
+msgid "&Edit Appointment..."
+msgstr "Temu janji"
+
+#: kontactplugin/korganizer/apptsummarywidget.cpp:255
+#, fuzzy
+#| msgid "Appointment"
+msgid "&Delete Appointment"
+msgstr "Temu janji"
+
+#: kontactplugin/korganizer/apptsummarywidget.cpp:275
+#, fuzzy, kde-format
+#| msgid "Edit Event"
+msgid "Edit Event: \"%1\""
+msgstr "Edit Peristiwa"
+
+#: kontactplugin/korganizer/journalplugin.cpp:51
+#, fuzzy
+msgctxt "@action:inmenu"
+msgid "New Journal..."
+msgstr "&Jurnal"
+
+#: kontactplugin/korganizer/journalplugin.cpp:54
+#, fuzzy
+#| msgid "Click to add a new to-do"
+msgctxt "@info:status"
+msgid "Create a new journal"
+msgstr "Klik untuk tambah tugasan baru"
+
+#: kontactplugin/korganizer/journalplugin.cpp:60
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new journal entry."
+msgstr ""
+
+#: kontactplugin/korganizer/journalplugin.cpp:67
+#, fuzzy
+#| msgid "&Journal"
+msgctxt "@action:inmenu"
+msgid "Sync Journal"
+msgstr "&Jurnal"
+
+#: kontactplugin/korganizer/journalplugin.cpp:69
+msgctxt "@info:status"
+msgid "Synchronize groupware journal"
+msgstr ""
+
+#: kontactplugin/korganizer/journalplugin.cpp:75
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Choose this option to synchronize your groupware journal entries."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#: kontactplugin/korganizer/kcmapptsummary.cpp:84
+#: kontactplugin/korganizer/kcmtodosummary.cpp:77
+#: kontactplugin/specialdates/kcmsdsummary.cpp:83
+#, fuzzy
+msgid " day"
+msgid_plural " days"
+msgstr[0] "_n: 1 hari"
+msgstr[1] "%1 hari"
+
+#: kontactplugin/korganizer/kcmapptsummary.cpp:164
+msgid "Upcoming Events Configuration Dialog"
+msgstr ""
+
+#: kontactplugin/korganizer/kcmapptsummary.cpp:166
+#: kontactplugin/korganizer/kcmtodosummary.cpp:161
+msgid ""
+"Copyright © 2003–2004 Tobias Koenig\n"
+"Copyright © 2005–2010 Allen Winter"
+msgstr ""
+
+#: kontactplugin/korganizer/kcmtodosummary.cpp:159
+msgid "Pending To-dos Configuration Dialog"
+msgstr ""
+
+#: kontactplugin/korganizer/korganizerplugin.cpp:66
+#, fuzzy
+#| msgid "New E&vent..."
+msgctxt "@action:inmenu"
+msgid "New Event..."
+msgstr "&Peristiwa Baru..."
+
+#: kontactplugin/korganizer/korganizerplugin.cpp:69
+#, fuzzy
+#| msgid "Click to add a new to-do"
+msgctxt "@info:status"
+msgid "Create a new event"
+msgstr "Klik untuk tambah tugasan baru"
+
+#: kontactplugin/korganizer/korganizerplugin.cpp:75
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new event item."
+msgstr ""
+
+#: kontactplugin/korganizer/korganizerplugin.cpp:81
+#, fuzzy
+#| msgid "New Calendar"
+msgctxt "@action:inmenu"
+msgid "Sync Calendar"
+msgstr "Kalendar baru"
+
+#: kontactplugin/korganizer/korganizerplugin.cpp:83
+msgctxt "@info:status"
+msgid "Synchronize groupware calendar"
+msgstr ""
+
+#: kontactplugin/korganizer/korganizerplugin.cpp:89
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Choose this option to synchronize your groupware events."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#: kontactplugin/korganizer/korganizerplugin.cpp:214
+#: kontactplugin/korganizer/todoplugin.cpp:217
+#, fuzzy
+#| msgid "Meeting"
+msgctxt "@item"
+msgid "Meeting"
+msgstr "Mesyuarat"
+
+#: kontactplugin/korganizer/korganizerplugin.cpp:230
+#: kontactplugin/korganizer/todoplugin.cpp:232
+#, fuzzy, kde-format
+#| msgid "Undo (%1)"
+msgctxt "@item"
+msgid "Note: %1"
+msgstr "Batalkan (%1)"
+
+#: kontactplugin/korganizer/korganizerplugin.cpp:254
+#: kontactplugin/korganizer/todoplugin.cpp:255
+msgctxt "@info"
+msgid "Dropping multiple mails is not supported."
+msgstr ""
+
+#: kontactplugin/korganizer/korganizerplugin.cpp:257
+#: kontactplugin/korganizer/todoplugin.cpp:258
+#, fuzzy, kde-format
+#| msgid "From: %1   To: %2   %3"
+msgctxt "@item"
+msgid ""
+"From: %1\n"
+"To: %2\n"
+"Subject: %3"
+msgstr "Dari: %1   Kepada: %2   %3"
+
+#: kontactplugin/korganizer/korganizerplugin.cpp:266
+#: kontactplugin/korganizer/todoplugin.cpp:268
+#, fuzzy, kde-format
+#| msgid "KMail"
+msgctxt "@item"
+msgid "Mail: %1"
+msgstr "KMail"
+
+#: kontactplugin/korganizer/summaryeventinfo.cpp:201
+#, fuzzy
+#| msgid "day"
+msgctxt "the appointment is today"
+msgid "Today"
+msgstr "hari"
+
+#: kontactplugin/korganizer/summaryeventinfo.cpp:204
+msgctxt "the appointment is tomorrow"
+msgid "Tomorrow"
+msgstr ""
+
+#: kontactplugin/korganizer/summaryeventinfo.cpp:228
+#: kontactplugin/korganizer/todosummarywidget.cpp:231
+#: kontactplugin/specialdates/sdsummarywidget.cpp:522
+#, fuzzy, kde-format
+msgid "in 1 day"
+msgid_plural "in %1 days"
+msgstr[0] "_n: 1 hari"
+msgstr[1] "%1 hari"
+
+#: kontactplugin/korganizer/summaryeventinfo.cpp:241
+msgctxt "eg. in 1 hour 2 minutes"
+msgid "in "
+msgstr ""
+
+#: kontactplugin/korganizer/summaryeventinfo.cpp:245
+#, kde-format
+msgctxt "use abbreviation for hour to keep the text short"
+msgid "1 hr"
+msgid_plural "%1 hrs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kontactplugin/korganizer/summaryeventinfo.cpp:252
+#, fuzzy, kde-format
+msgctxt "use abbreviation for minute to keep the text short"
+msgid "1 min"
+msgid_plural "%1 mins"
+msgstr[0] "_n: 1 minit"
+msgstr[1] "%1 minit"
+
+#: kontactplugin/korganizer/summaryeventinfo.cpp:255
+#: kontactplugin/specialdates/sdsummarywidget.cpp:520
+msgid "now"
+msgstr ""
+
+#: kontactplugin/korganizer/summaryeventinfo.cpp:258
+#, fuzzy
+msgid "all day"
+msgstr "_n: 1 hari"
+
+#: kontactplugin/korganizer/summaryeventinfo.cpp:294
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "Time from - to"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: kontactplugin/korganizer/summaryeventinfo.cpp:312
+#, fuzzy, kde-format
+#| msgid "Redo (%1)"
+msgctxt "next occurrence"
+msgid "Next: %1"
+msgstr "Buat semula (%1)"
+
+#: kontactplugin/korganizer/todoplugin.cpp:64
+#, fuzzy
+msgctxt "@action:inmenu"
+msgid "New To-do..."
+msgstr "Tugasan Baru..."
+
+#: kontactplugin/korganizer/todoplugin.cpp:67
+#, fuzzy
+#| msgid "Click to add a new to-do"
+msgctxt "@info:status"
+msgid "Create a new to-do"
+msgstr "Klik untuk tambah tugasan baru"
+
+#: kontactplugin/korganizer/todoplugin.cpp:73
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new to-do item."
+msgstr ""
+
+#: kontactplugin/korganizer/todoplugin.cpp:79
+#, fuzzy
+#| msgid "To-do List"
+msgctxt "@action:inmenu"
+msgid "Sync To-do List"
+msgstr "Senarai tugasan"
+
+#: kontactplugin/korganizer/todoplugin.cpp:80
+#, fuzzy
+msgctxt "@info:status"
+msgid "Synchronize groupware to-do list"
+msgstr "Selepas pemulaan"
+
+#: kontactplugin/korganizer/todoplugin.cpp:85
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Choose this option to synchronize your groupware to-do list."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, TodoSummaryConfig_Base)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:16
+#, fuzzy
+#| msgid "Calendar"
+msgid "To-do Summary Configuration"
+msgstr "Kalendar"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mDaysGroup)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:22
+#, fuzzy
+msgid "Show To-dos Due"
+msgstr "Paparkan Paparan Tugasan"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mDateTodayButton)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:28
+#, fuzzy
+#| msgid "To-do due today color"
+msgid "Show To-dos due today only"
+msgstr "Warna tugasan yang cukup tempoh hari ini"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateTodayButton)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:31
+#, fuzzy
+msgid "Check this box if you want to see To-dos due on this date only."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mDateMonthButton)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:44
+#, fuzzy
+#| msgid "Print only to-dos due in the &range:"
+msgid "Show To-dos due within the next month"
+msgstr "Cetak hanya tugasan yang cukup tempoh dalam &julat:"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateMonthButton)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:47
+#, fuzzy
+msgid ""
+"Check this box if you want to see To-dos that are due sometime during the "
+"next 31 days."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mDateRangeButton)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:65
+msgid "Select the days for showing pending To-dos"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateRangeButton)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:71
+#, fuzzy
+msgid ""
+"Check this box if you want specify the number of days in the future for "
+"pending To-dos."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (toolTip), widget (QSpinBox, mCustomDays)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:87
+msgid "Set the number of days to show pending To-dos"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, mCustomDays)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:90
+msgid ""
+"Use this spinbox to set the number of days to show pending To-dos up to 1 "
+"year in the future."
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, mHideGroup)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:133
+msgid "Hide Following To-do Types"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mHideCompletedBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:139
+#, fuzzy
+#| msgid "Hide co&mpleted to-dos"
+msgid "Hide completed To-dos"
+msgstr "Sembunyikan tugasan yang telah &selesai"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideCompletedBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:142
+#, fuzzy
+msgid ""
+"Check this box if you do not want to see To-dos that have already been "
+"completed."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mHideCompletedBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:145
+#, fuzzy
+#| msgid "Complete"
+msgid "&Completed"
+msgstr "Selesai"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mHideOpenEndedBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:155
+#, fuzzy
+#| msgid "Include to-dos &without due date"
+msgid "Hide To-dos without a due date"
+msgstr "Sertakan tugasan &tanpa tarikh cukup tempoh"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideOpenEndedBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:158
+#, fuzzy
+msgid "Check this box if you do not want to see open-ended To-dos."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mHideOpenEndedBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:161
+msgid "&Open-ended (no due date)"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mHideUnstartedBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:171
+#, fuzzy
+#| msgid "Hide &inactive to-dos"
+msgid "Hide unstarted To-dos"
+msgstr "Sembunyikan tugasan yang tak &aktif"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideUnstartedBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:174
+#, fuzzy
+msgid ""
+"Check this box if you do not want to see To-dos with a start date in the "
+"future."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mHideUnstartedBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:177
+msgid "&Unstarted (start date is in the future)"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mHideInProgressBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:184
+#, fuzzy
+#| msgid "Hide &inactive to-dos"
+msgid "Hide in-progress To-dos"
+msgstr "Sembunyikan tugasan yang tak &aktif"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideInProgressBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:187
+#, fuzzy
+msgid ""
+"Check this box if you do not want to see To-dos that have been started but "
+"are not yet completed."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mHideInProgressBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:190
+msgid "&In-progress (started but not completed)"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mHideOverdueBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:197
+#, fuzzy
+#| msgid "Hide co&mpleted to-dos"
+msgid "Hide overdue To-dos"
+msgstr "Sembunyikan tugasan yang telah &selesai"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideOverdueBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:203
+#, fuzzy
+msgid ""
+"Check this box if you do not want to see To-dos that are past their due date "
+"but have not yet been completed."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mHideOverdueBox)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:206
+msgid "Over&due (not completed and beyond due-date)"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowMineOnly)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:222
+#, fuzzy
+#| msgid "Import Calendar"
+msgid "Show To-dos belonging to my calendars only"
+msgstr "Import kalendar"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowMineOnly)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:225
+#, fuzzy
+msgid ""
+"Check this box if you want the summary to show To-dos belonging to your "
+"calendars only."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowMineOnly)
+#: kontactplugin/korganizer/todosummaryconfig_base.ui:228
+#, fuzzy
+#| msgid "&Show To-do"
+msgid "Show &my To-dos only"
+msgstr "&Paparkan Tugasan"
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:63
+#, fuzzy
+#| msgid "Purge To-dos"
+msgid "Pending To-dos"
+msgstr "Singkirkan Tugasan"
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:209
+#, fuzzy
+#| msgid "day"
+msgctxt "the to-do is due today"
+msgid "Today"
+msgstr "hari"
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:211
+msgctxt "the to-do is due tomorrow"
+msgid "Tomorrow"
+msgstr ""
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:233
+#, fuzzy, kde-format
+msgid "1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "_n: 1 hari"
+msgstr[1] "%1 hari"
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:235
+#, fuzzy
+#| msgid "Due"
+msgctxt "the to-do is due"
+msgid "due"
+msgstr "Cukup Tempoh"
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:299
+#, fuzzy, kde-format
+#| msgid "Print only to-dos due in the &range:"
+msgid "No pending to-dos due within the next day"
+msgid_plural "No pending to-dos due within the next %1 days"
+msgstr[0] "Cetak hanya tugasan yang cukup tempoh dalam &julat:"
+msgstr[1] "Cetak hanya tugasan yang cukup tempoh dalam &julat:"
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:361
+#, fuzzy
+msgid "&Mark To-do Completed"
+msgstr "Penyingkiran Selesai"
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:382
+#, fuzzy, kde-format
+#| msgid "Edit To-do"
+msgid "Edit To-do: \"%1\""
+msgstr "Edit Tugasan"
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:407
+msgid "open-ended"
+msgstr ""
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:410
+msgctxt "the to-do is overdue"
+msgid "overdue"
+msgstr ""
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:413
+#, fuzzy
+msgctxt "the to-do starts today"
+msgid "starts today"
+msgstr "Tarikh mula:"
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:417
+msgctxt "the to-do has not been started yet"
+msgid "not-started"
+msgstr ""
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:419
+#, fuzzy
+#| msgid "co&mpleted"
+msgctxt "the to-do is completed"
+msgid "completed"
+msgstr "&Selesai"
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:421
+msgctxt "the to-do is in-progress"
+msgid "in-progress "
+msgstr ""
+
+#: kontactplugin/korganizer/todosummarywidget.cpp:426
+#, fuzzy
+msgctxt "Separator for status like this: overdue, completed"
+msgid ","
+msgstr ", "
+
+#: kontactplugin/specialdates/kcmsdsummary.cpp:177
+msgid "Upcoming Special Dates Configuration Dialog"
+msgstr ""
+
+#: kontactplugin/specialdates/kcmsdsummary.cpp:179
+msgid ""
+"Copyright © 2004 Tobias Koenig\n"
+"Copyright © 2004–2010 Allen Winter"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, SDSummaryConfig_Base)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:16
+#, fuzzy
+#| msgid "Calendar"
+msgid "Special Dates Summary Configuration"
+msgstr "Kalendar"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mDaysGroup)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:22
+msgid "Show Special Dates Starting"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mDateTodayButton)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:28
+msgid "Show special occasions for today only"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateTodayButton)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:31
+#, fuzzy
+msgid ""
+"Check this box if you want to see special occasions occurring on this date "
+"only."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mDateMonthButton)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:44
+msgid "Show special occasions starting within the next month"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateMonthButton)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:47
+#, fuzzy
+msgid ""
+"Check this box if you want to see special occasions that start sometime "
+"during the next 31 days."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mDateRangeButton)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:65
+msgid "Select the days for showing upcoming special occasions"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateRangeButton)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:68
+#, fuzzy
+#| msgid ""
+#| "Check this option if you want to have to-dos on the print, placed by "
+#| "their due date."
+msgid ""
+"Check this box if you want to specify the number of days in the future for "
+"upcoming special occasions."
+msgstr ""
+"Semak opsyen ini jika anda ingin tugasan pada cetakan diletak berdasarkan "
+"tarikh."
+
+#. i18n: ectx: property (toolTip), widget (QSpinBox, mCustomDays)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:84
+msgid "Set the number of days to show upcoming special occasions"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, mCustomDays)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:87
+msgid ""
+"Use this spinbox to set the number of days to show upcoming special "
+"occasions up to one year in the future."
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, mShowFromCalGroup)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:130
+msgid "Show These Special Dates From Your Calendar"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowBirthdaysFromCalBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:136
+#, fuzzy
+#| msgid "Import Calendar"
+msgid "Show birthdays from your calendar"
+msgstr "Import kalendar"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowBirthdaysFromCalBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:139
+msgid ""
+"Enable this option to include birthdays from your calendar in the upcoming "
+"special occasions summary. Typically, these are events with the \"Birthday\" "
+"category."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAnniversariesFromCalBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:152
+msgid "Show anniversaries from your calendar"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAnniversariesFromCalBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:155
+msgid ""
+"Enable this option to include anniversaries from your calendar in the "
+"upcoming special occasions summary. Typically, these are events with the "
+"\"Anniversary\" category."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowHolidaysFromCalBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:168
+#, fuzzy
+#| msgid "Import Calendar"
+msgid "Show holidays from your calendar"
+msgstr "Import kalendar"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowHolidaysFromCalBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:171
+msgid ""
+"Enable this option to include holidays from your calendar in the upcoming "
+"special occasions summary. These are events from your configured holiday "
+"region, or events with the \"Holiday\" category."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowHolidaysFromCalBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:174
+#, fuzzy
+msgid "Show &holidays"
+msgstr "&Paparkan waktu sebagai:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowSpecialsFromCalBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:184
+msgid "Show special occasions from your calendar"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowSpecialsFromCalBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:187
+msgid ""
+"Enable this option to include events from your calendar with the \"special "
+"occasion\" category."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowSpecialsFromCalBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:190
+#, fuzzy
+#| msgid "Special Occasion"
+msgid "Show s&pecial occasions"
+msgstr "Peristiwa Khusus"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mShowFromKABButtonGroup)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:203
+msgid "Show These Special Dates From Your Contact List"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowBirthdaysFromKABBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:209
+msgid "Show birthdays from your address book"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowBirthdaysFromKABBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:212
+msgid ""
+"Enable this option to include birthdays from your address book in the "
+"upcoming special occasions summary."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowBirthdaysFromKABBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:215
+#, fuzzy
+#| msgid "Show both"
+msgid "Show birth&days"
+msgstr "Paparkan kedua-duanya"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAnniversariesFromKABBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:225
+msgid "Show anniversaries from your address book"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAnniversariesFromKABBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:228
+msgid ""
+"Enable this option to include anniversaries from your address book in the "
+"upcoming special occasions summary."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowAnniversariesFromKABBox)
+#: kontactplugin/specialdates/sdsummaryconfig_base.ui:231
+msgid "Show anni&versaries"
+msgstr ""
+
+#: kontactplugin/specialdates/sdsummarywidget.cpp:142
+msgid "Upcoming Special Dates"
+msgstr ""
+
+#: kontactplugin/specialdates/sdsummarywidget.cpp:493
+#, fuzzy
+#| msgid "day"
+msgctxt "the special day is today"
+msgid "Today"
+msgstr "hari"
+
+#: kontactplugin/specialdates/sdsummarywidget.cpp:495
+msgctxt "the special day is tomorrow"
+msgid "Tomorrow"
+msgstr ""
+
+#: kontactplugin/specialdates/sdsummarywidget.cpp:533
+#, fuzzy
+#| msgid "Birthday"
+msgid "Birthday"
+msgstr "Hari Lahir"
+
+#: kontactplugin/specialdates/sdsummarywidget.cpp:536
+msgid "Anniversary"
+msgstr ""
+
+#: kontactplugin/specialdates/sdsummarywidget.cpp:539
+msgid "Holiday"
+msgstr "Hari cuti"
+
+#: kontactplugin/specialdates/sdsummarywidget.cpp:542
+#, fuzzy
+#| msgid "Special Occasion"
+msgid "Special Occasion"
+msgstr "Peristiwa Khusus"
+
+#: kontactplugin/specialdates/sdsummarywidget.cpp:582
+#, fuzzy, kde-format
+#| msgid "Next year"
+msgid "one year"
+msgid_plural "%1 years"
+msgstr[0] "Tahun seterusnya"
+msgstr[1] "Tahun seterusnya"
+
+#: kontactplugin/specialdates/sdsummarywidget.cpp:593
+#, kde-format
+msgid "No special dates within the next 1 day"
+msgid_plural "No special dates pending within the next %1 days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kontactplugin/specialdates/sdsummarywidget.cpp:689
+#, fuzzy
+#| msgid "Send Email"
+msgid "Send &Mail"
+msgstr "Hantar E-mel"
+
+#: kontactplugin/specialdates/sdsummarywidget.cpp:692
+#, fuzzy
+msgid "View &Contact"
+msgstr "Cari Dalam"
+
+#: kontactplugin/specialdates/sdsummarywidget.cpp:707
+#, kde-format
+msgid "Mail to:\"%1\""
+msgstr ""
+
+#: kontactplugin/specialdates/specialdates_plugin.cpp:57
+msgid "Special Dates Summary"
+msgstr ""
+
+#: kontactplugin/specialdates/specialdates_plugin.cpp:59
+msgid "Kontact Special Dates Summary"
+msgstr ""
+
+#: kontactplugin/specialdates/specialdates_plugin.cpp:61
+msgid ""
+"Copyright © 2003 Tobias Koenig\n"
+"Copyright © 2004–2010 Allen Winter"
+msgstr ""
+
+#: kontactplugin/specialdates/specialdates_plugin.cpp:64
+#, fuzzy
+#| msgid "Current Maintainer"
+msgid "Current Maintainer"
+msgstr "Penyenggara Semasa"
 
 #: korganizer.cpp:232 settings/htmlexportsettings.kcfg:35
 #: settings/htmlexportsettings.kcfg:99
@@ -5739,11 +6765,6 @@ msgstr "%1"
 #~ msgstr "Setkan status anda"
 
 #, fuzzy
-#~| msgid "Import Calendar"
-#~ msgid "Show custom calendars"
-#~ msgstr "Import kalendar"
-
-#, fuzzy
 #~| msgid "&Add..."
 #~ msgid "A&dd..."
 #~ msgstr "&Tambah..."
@@ -5929,10 +6950,6 @@ msgstr "%1"
 #, fuzzy
 #~ msgid "Display Options"
 #~ msgstr "Paparkan"
-
-#, fuzzy
-#~ msgid "Show holidays as:"
-#~ msgstr "&Paparkan waktu sebagai:"
 
 #, fuzzy
 #~ msgid "Time Boxes"
@@ -6126,10 +7143,6 @@ msgstr "%1"
 #~ msgstr "Tarikh mula:"
 
 #, fuzzy
-#~ msgid "No start date"
-#~ msgstr "Tarikh mula:"
-
-#, fuzzy
 #~ msgid "End date: "
 #~ msgstr "Tarikh tamat:"
 
@@ -6181,22 +7194,10 @@ msgstr "%1"
 #~ msgstr[1] "%1 minit"
 
 #, fuzzy
-#~ msgid "1 day"
-#~ msgid_plural "%1 days"
-#~ msgstr[0] "_n: 1 hari"
-#~ msgstr[1] "%1 hari"
-
-#, fuzzy
 #~ msgid "1 hour"
 #~ msgid_plural "%1 hours"
 #~ msgstr[0] "_n: 1 jam"
 #~ msgstr[1] "%1 jam"
-
-#, fuzzy
-#~ msgid "1 minute"
-#~ msgid_plural "%1 minutes"
-#~ msgstr[0] "_n: 1 minit"
-#~ msgstr[1] "%1 minit"
 
 #, fuzzy
 #~ msgid "Organizer: "
@@ -6399,12 +7400,6 @@ msgstr "%1"
 #~ msgstr "Selesai"
 
 #, fuzzy
-#~| msgid "Due"
-#~ msgctxt "@label to-do due date"
-#~ msgid "Due"
-#~ msgstr "Cukup Tempoh"
-
-#, fuzzy
 #~ msgid "Print &incidence"
 #~ msgstr "Cetak Kejadian Jenis"
 
@@ -6517,11 +7512,6 @@ msgstr "%1"
 #~ msgid "Print the notes"
 #~ msgstr "Cetak &bilangan minggu"
 
-#, fuzzy
-#~ msgid ""
-#~ "Check this box if you want the incidence notes included on the print-out."
-#~ msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
-
 #~ msgid "Attach&ments"
 #~ msgstr "La&mpiran"
 
@@ -6601,11 +7591,6 @@ msgstr "%1"
 #~ msgid "Exclude private items"
 #~ msgstr "Keluarkan hari cuti"
 
-#, fuzzy
-#~| msgid "Print only to-dos due in the &range:"
-#~ msgid "Print to-dos due within the specified date range"
-#~ msgstr "Cetak hanya tugasan yang cukup tempoh dalam &julat:"
-
 #~ msgid ""
 #~ "Check this option if you want to have to-dos on the print, placed by "
 #~ "their due date."
@@ -6659,10 +7644,6 @@ msgstr "%1"
 #~ msgstr "Cetak &bilangan minggu"
 
 #, fuzzy
-#~ msgid "Check this option to show note lines."
-#~ msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
-
-#, fuzzy
 #~| msgid ""
 #~| "The timetable view supports colors. If you want to make use of colors "
 #~| "you should check this option. The category colors will be used."
@@ -6675,15 +7656,6 @@ msgstr "%1"
 
 #~ msgid "This printing style does not have any configuration options."
 #~ msgstr "Gaya cetakan ini tidak mempunyai opsyen konfigurasi."
-
-#~ msgid "Holiday"
-#~ msgstr "Hari cuti"
-
-#, fuzzy
-#~| msgid "Undo (%1)"
-#~ msgctxt "print date: formatted-datetime"
-#~ msgid "printed: %1"
-#~ msgstr "Batalkan (%1)"
 
 #, fuzzy
 #~| msgctxt "weekday month date"
@@ -6899,12 +7871,6 @@ msgstr "%1"
 #~ msgctxt "@title:column trigger date/time"
 #~ msgid "Trigger Time"
 #~ msgstr "Tarikh/Masa Cukup Tempoh"
-
-#, fuzzy
-#~| msgid "Sets where the event or to-do will take place."
-#~ msgctxt "@info:tooltip"
-#~ msgid "The event or to-do title"
-#~ msgstr "Mengeset tempat peristiwa atau tugasan akan diadakan."
 
 #, fuzzy
 #~| msgid "Activates a reminder for this event or to-do."
@@ -7519,10 +8485,6 @@ msgstr "%1"
 #~ msgstr "9 (terendah)"
 
 #, fuzzy
-#~ msgid "View Columns"
-#~ msgstr "Cari Dalam"
-
-#, fuzzy
 #~ msgid "What's Next?"
 #~ msgstr "Apa Seterus&nya?"
 
@@ -8041,9 +9003,6 @@ msgstr "%1"
 #, fuzzy
 #~ msgid "Attendee added"
 #~ msgstr "Penghadir Dibuang"
-
-#~ msgid "%1 - %2"
-#~ msgstr "%1 - %2"
 
 #~ msgid "- %1"
 #~ msgstr "- %1"
@@ -9675,12 +10634,6 @@ msgstr "%1"
 
 #, fuzzy
 #~| msgid "co&mpleted"
-#~ msgctxt "percent completed"
-#~ msgid "co&mpleted"
-#~ msgstr "&Selesai"
-
-#, fuzzy
-#~| msgid "co&mpleted"
 #~ msgctxt "to-do completed"
 #~ msgid "co&mpleted"
 #~ msgstr "&Selesai"
@@ -9987,12 +10940,6 @@ msgstr "%1"
 #~ msgstr "Tarikh tamat:"
 
 #, fuzzy
-#~| msgid "Sets the due date for this to-do."
-#~ msgctxt "@info:whatsthis"
-#~ msgid "Select the ending date for this event."
-#~ msgstr "Mengeset tarikh jangkaan untuk tugasan ini."
-
-#, fuzzy
 #~| msgid "T&ime associated"
 #~ msgctxt "@option:check"
 #~ msgid "T&ime associated"
@@ -10090,12 +11037,6 @@ msgstr "%1"
 #~ msgstr ""
 #~ "Memaparkan tempoh peristiwa atau tugasan dengan permulaan semasa serta "
 #~ "tarikh dan waktu tamat."
-
-#, fuzzy
-#~| msgid "From: %1   To: %2   %3"
-#~ msgctxt "@label"
-#~ msgid "From: %1   To: %2   %3"
-#~ msgstr "Dari: %1   Kepada: %2   %3"
 
 #, fuzzy
 #~| msgid "Please specify a valid start time, for example '%1'."
@@ -10655,11 +11596,6 @@ msgstr "%1"
 #~ "tarikh."
 
 #, fuzzy
-#~| msgid "Send Email"
-#~ msgid "Send email"
-#~ msgstr "Hantar E-mel"
-
-#, fuzzy
 #~ msgid "Display &text:"
 #~ msgstr "Paparkan"
 
@@ -10746,22 +11682,10 @@ msgstr "%1"
 #~ msgstr "Gantikan tarikh semasa yang dipilih dengan tarikh ini."
 
 #, fuzzy
-#~| msgid "Appointment"
-#~ msgctxt "incidence category: appointment"
-#~ msgid "Appointment"
-#~ msgstr "Temu janji"
-
-#, fuzzy
 #~| msgid "Business"
 #~ msgctxt "incidence category"
 #~ msgid "Business"
 #~ msgstr "Perniagaan"
-
-#, fuzzy
-#~| msgid "Meeting"
-#~ msgctxt "incidence category"
-#~ msgid "Meeting"
-#~ msgstr "Mesyuarat"
 
 #, fuzzy
 #~| msgid "Phone Call"
@@ -10793,14 +11717,6 @@ msgstr "%1"
 #~ msgstr "Percutian"
 
 #, fuzzy
-#~| msgid "Special Occasion"
-#~ msgctxt ""
-#~ "incidence category: examples: anniversary of historical or personal "
-#~ "event; big date; remembrance, etc"
-#~ msgid "Special Occasion"
-#~ msgstr "Peristiwa Khusus"
-
-#, fuzzy
 #~| msgid "Personal"
 #~ msgctxt "incidence category"
 #~ msgid "Personal"
@@ -10813,12 +11729,6 @@ msgstr "%1"
 #~ "and not pleasure"
 #~ msgid "Travel"
 #~ msgstr "Perjalanan"
-
-#, fuzzy
-#~| msgid "Birthday"
-#~ msgctxt "incidence category"
-#~ msgid "Birthday"
-#~ msgstr "Hari Lahir"
 
 #, fuzzy
 #~| msgid "Calendar"
@@ -11240,9 +12150,6 @@ msgstr "%1"
 #~ msgid "Mail Client"
 #~ msgstr "Pelanggan Mel"
 
-#~ msgid "KMail"
-#~ msgstr "KMail"
-
 #~ msgid "Sendmail"
 #~ msgstr "Mel Hantaran"
 
@@ -11292,11 +12199,6 @@ msgstr "%1"
 #~| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
 #~ msgid "<qt>Unable to create the calendar folder <b>%1</b>.</qt>"
 #~ msgstr "<qt>Tidak dapat mencipta sumber jenis <b>%1</b>.</qt>"
-
-#, fuzzy
-#~| msgid "Calendar"
-#~ msgid "Calendar Configuration"
-#~ msgstr "Kalendar"
 
 #, fuzzy
 #~| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
@@ -11373,22 +12275,10 @@ msgstr "%1"
 #~ "peristiwa ini berulang."
 
 #, fuzzy
-#~| msgid "Edit Event"
-#~ msgctxt "@title:window"
-#~ msgid "Edit Event : %1"
-#~ msgstr "Edit Peristiwa"
-
-#, fuzzy
 #~| msgid "General"
 #~ msgctxt "@title:tab general to-do settings"
 #~ msgid "General"
 #~ msgstr "Umum"
-
-#, fuzzy
-#~| msgid "Edit To-do"
-#~ msgctxt "@title:window"
-#~ msgid "Edit To-do: %1"
-#~ msgstr "Edit Tugasan"
 
 #, fuzzy
 #~ msgctxt "@info"
@@ -11397,10 +12287,6 @@ msgstr "%1"
 
 #~ msgid "Active Calendar"
 #~ msgstr "Kalendar Aktif"
-
-#, fuzzy
-#~ msgid "Birthdays"
-#~ msgstr "Hari Lahir"
 
 #, fuzzy
 #~| msgid "&Reminder:"
@@ -12172,10 +13058,6 @@ msgstr "%1"
 #~ msgstr "Waktu bunyi penggera piawai:"
 
 #, fuzzy
-#~ msgid "&New To-do..."
-#~ msgstr "Tugasan Baru..."
-
-#, fuzzy
 #~ msgctxt "@action:inmenu"
 #~ msgid "Reminders Enabled"
 #~ msgstr "Dialog Peringatan"
@@ -12348,9 +13230,6 @@ msgstr "%1"
 
 #~ msgid "Next month"
 #~ msgstr "Bulan seterusnya"
-
-#~ msgid "Next year"
-#~ msgstr "Tahun seterusnya"
 
 #~ msgid "Co-Maintainer"
 #~ msgstr "Penyenggara Bersama"
