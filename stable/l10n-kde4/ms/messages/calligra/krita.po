@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-06-28 05:42+0000\n"
+"POT-Creation-Date: 2015-06-29 05:57+0000\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -4526,12 +4526,20 @@ msgid "&Channel:"
 msgstr "&Saluran:"
 
 #. i18n: ectx: property (text), widget (QPushButton, zoomIn)
+#. i18n: ectx: property (text), widget (QPushButton, pb_more_contrast)
+#. i18n: ectx: property (text), widget (QPushButton, pb_more_brightness)
 #: plugins/extensions/histogram/wdghistogram.ui:141
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:241
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:261
 msgid "+"
 msgstr "+"
 
 #. i18n: ectx: property (text), widget (QPushButton, zoomOut)
+#. i18n: ectx: property (text), widget (QPushButton, pb_less_contrast)
+#. i18n: ectx: property (text), widget (QPushButton, pb_less_brightness)
 #: plugins/extensions/histogram/wdghistogram.ui:154
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:221
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:271
 msgid "-"
 msgstr "-"
 
@@ -6631,13 +6639,22 @@ msgstr "Ambang:"
 msgid "Color Picker:"
 msgstr "Pengambil Warna"
 
-#: plugins/filters/colorsfilters/colorsfilters.cpp:87
+#: plugins/filters/colorsfilters/colorsfilters.cpp:89
 msgid "&Auto Contrast"
 msgstr "&Auto Kontras"
 
 #: plugins/filters/colorsfilters/colorsfilters.h:49
 msgid "Auto Contrast"
 msgstr "Auto Kontras"
+
+#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cpp:163
+#, fuzzy
+msgid "&Brightness/Contrast curve..."
+msgstr "&Kecerahan / Kontras..."
+
+#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.h:92
+msgid "Brightness / Contrast"
+msgstr "Kecerahan / Kontras"
 
 #: plugins/filters/colorsfilters/kis_color_balance_filter.cpp:27
 #, fuzzy
@@ -6693,6 +6710,24 @@ msgstr "Pelarasan &Warna..."
 #: plugins/filters/colorsfilters/kis_perchannel_filter.h:93
 msgid "Color Adjustment"
 msgstr "Pelarasan Warna"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgPerChannel)
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgBrightnessContrast)
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:20
+#: plugins/filters/colorsfilters/wdg_perchannel.ui:14
+#, fuzzy
+msgid "BrightnessCon"
+msgstr "Kecerahan"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabelBrightness)
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:231
+msgid "Brightness"
+msgstr "Kecerahan"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabelContrast)
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:251
+msgid "Contrast"
+msgstr "Kontras"
 
 #. i18n: ectx: property (text), widget (QPushButton, pushResetShadows)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:62
@@ -6855,12 +6890,6 @@ msgstr "Ketepuan"
 #| msgid "Saturation"
 msgid "Hue/Saturation/Lightness"
 msgstr "Ketepuan"
-
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgPerChannel)
-#: plugins/filters/colorsfilters/wdg_perchannel.ui:14
-#, fuzzy
-msgid "BrightnessCon"
-msgstr "Kecerahan"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: plugins/filters/colorsfilters/wdg_perchannel.ui:201
@@ -20748,19 +20777,6 @@ msgstr "Ruang &warna:"
 #~| msgid "Selection"
 #~ msgid "Path Selection"
 #~ msgstr "Pemilihan"
-
-#, fuzzy
-#~ msgid "&Brightness/Contrast curve..."
-#~ msgstr "&Kecerahan / Kontras..."
-
-#~ msgid "Brightness / Contrast"
-#~ msgstr "Kecerahan / Kontras"
-
-#~ msgid "Brightness"
-#~ msgstr "Kecerahan"
-
-#~ msgid "Contrast"
-#~ msgstr "Kontras"
 
 #, fuzzy
 #~ msgctxt "horizontal resolution"
