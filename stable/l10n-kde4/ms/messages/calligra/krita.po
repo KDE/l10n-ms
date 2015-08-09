@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-08-08 05:53+0000\n"
+"POT-Creation-Date: 2015-08-09 05:53+0000\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -6497,7 +6497,7 @@ msgstr "Jejarian"
 
 #. i18n: ectx: property (label), widget (KIntNumInput, irisRotationSlider)
 #: plugins/filters/blur/wdg_lens_blur.ui:58
-#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:112
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:115
 #, fuzzy
 #| msgid "Rotating"
 msgid "Rotation:"
@@ -7825,7 +7825,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QLabel, lblSize)
 #: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:30
-#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:100
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:103
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1776
 #: ui/forms/wdgdisplaysettings.ui:72 ui/kis_paintop_box.cc:211
 #: ui/kis_paintop_box.cc:216
@@ -8899,8 +8899,8 @@ msgstr ""
 #: plugins/paintops/colorsmudge/kis_smudge_option_widget.cpp:82
 msgctxt "@info:tooltip"
 msgid ""
-"The brush has a few transparent pixels in its center, so dulling mode may "
-"work in unstable. Use \"Smearing\" mode in case of a trouble"
+"This brush has transparent pixels in its center. \"Dulling\" mode may give "
+"unstable results. Consider using \"Smearing\" mode instead."
 msgstr ""
 
 #: plugins/paintops/curvebrush/curve_paintop_plugin.cpp:42
@@ -9858,7 +9858,7 @@ msgstr "Saiz:"
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:96
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:81
 #: plugins/paintops/libpaintop/forms/wdgtextbrush.ui:90
-#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:119
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:122
 #: plugins/paintops/spray/wdgsprayoptions.ui:138
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1735
 #, fuzzy
@@ -9922,17 +9922,9 @@ msgstr "Alih Keluar Segmen"
 #. i18n: ectx: property (text), widget (QCheckBox, colorAsmask)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:116
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:101
-#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:124
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:127
 msgid "Use color as mask"
 msgstr "Guna warna sebagai topeng"
-
-#. i18n: ectx: property (text), widget (QPushButton, addButton)
-#. i18n: ectx: property (text), widget (QPushButton, saveBrush)
-#: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:165
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:269
-#, fuzzy
-msgid "Add to Predefined Tips"
-msgstr "Berus Pemilihan"
 
 #. i18n: ectx: property (text), widget (QCheckBox, colorPerParticleCHBox)
 #: plugins/paintops/libpaintop/forms/wdgcoloroptions.ui:47
@@ -10095,12 +10087,6 @@ msgstr "berlekuk"
 msgid "Angular"
 msgstr "Langkah sudut:"
 
-#. i18n: ectx: property (text), widget (QPushButton, brushButton)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:262
-#, fuzzy
-msgid "Use as Tip"
-msgstr "Berus Teks"
-
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxSmudgeMode)
 #: plugins/paintops/libpaintop/forms/wdgfilteroption.ui:43
 #, fuzzy
@@ -10195,12 +10181,36 @@ msgstr ""
 msgid "Brush Tip"
 msgstr "Saiz berus"
 
-#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:161
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:151
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:262
+msgid "Stamp"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, grpClipboard)
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:152
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:277
+#: ui/forms/wdgnewimage.ui:334
+#, fuzzy
+#| msgid "Cork board"
+msgid "Clipboard"
+msgstr "Papan gabus"
+
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:154
+msgid ""
+"Creates a brush tip from the current image selection.\n"
+" If no selection is present the whole image will be used."
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:156
+msgid "Creates a brush tip from the image in the clipboard."
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:176
 #, fuzzy
 msgid "Reset Predefined Tip"
 msgstr "Berus Pemilihan"
 
-#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:162
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:177
 msgid ""
 "Reloads Spacing from file\n"
 "Sets Scale to 1.0\n"
@@ -10214,37 +10224,23 @@ msgstr "Berus Pemilihan"
 
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:62
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
-msgid "Stamp"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, grpClipboard)
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:68
-#: ui/forms/wdgnewimage.ui:334
-#, fuzzy
-#| msgid "Cork board"
-msgid "Clipboard"
-msgstr "Papan gabus"
-
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:70
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:72
 msgid "Text"
 msgstr "Teks"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:96
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:88
 msgid ""
 "Use to set the size from which the Automatic Precision Setting should "
 "begin. \n"
 "The Precision will remain 5 before this value."
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:97
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:89
 msgid ""
 "Use to set the interval at which the Automatic Precision will change. \n"
 "The Precision will decrease as brush size increases."
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:250
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:236
 msgid ""
 "Precision Level 1 (fastest)\n"
 "Subpixel precision: disabled\n"
@@ -10253,7 +10249,7 @@ msgid ""
 "Optimal for very big brushes"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:258
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:244
 msgid ""
 "Precision Level 2\n"
 "Subpixel precision: disabled\n"
@@ -10262,14 +10258,14 @@ msgid ""
 "Optimal for big brushes"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:266
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:252
 msgid ""
 "Precision Level 3\n"
 "Subpixel precision: disabled\n"
 "Brush size precision: exact"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:272
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:258
 msgid ""
 "Precision Level 4 (optimal)\n"
 "Subpixel precision: 50%\n"
@@ -10278,7 +10274,7 @@ msgid ""
 "Gives up to 50% better performance in comparison to Level 5"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:280
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:266
 msgid ""
 "Precision Level 5 (best quality)\n"
 "Subpixel precision: exact\n"
@@ -10287,7 +10283,7 @@ msgid ""
 "The slowest performance. Best quality."
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_clipboard_brush_widget.cpp:105
+#: plugins/paintops/libpaintop/kis_clipboard_brush_widget.cpp:87
 msgid ""
 "Nothing copied\n"
 " to Clipboard"
@@ -21065,6 +21061,14 @@ msgstr "Ruang &warna:"
 #, fuzzy, kde-format
 msgid "Workspace %1"
 msgstr "Ruang &warna:"
+
+#, fuzzy
+#~ msgid "Add to Predefined Tips"
+#~ msgstr "Berus Pemilihan"
+
+#, fuzzy
+#~ msgid "Use as Tip"
+#~ msgstr "Berus Teks"
 
 #, fuzzy
 #~| msgid "Scale Layer"
