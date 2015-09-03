@@ -56,6 +56,13 @@ msgctxt "KoReportItemLine|"
 msgid "Line Style"
 msgstr "Ubah Sempadan"
 
+#: common/KReportDesign.cpp:76
+#, fuzzy
+#| msgid "Could not create the file for saving"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Tidak dapat cipta fail untuk penyimpanan"
+
 #: common/KReportPageFormat.cpp:68
 #, fuzzy
 #| msgid "ISO A3"
@@ -258,6 +265,18 @@ msgstr "US Ledger"
 msgctxt "KReportPageFormat|"
 msgid "US Tabloid"
 msgstr "US Tabloid"
+
+#: common/KReportSection.cpp:100
+#, fuzzy
+msgctxt "KReportSection|"
+msgid "Height"
+msgstr "&Tinggi:"
+
+#: common/KReportSection.cpp:101
+#, fuzzy
+msgctxt "KReportSection|"
+msgid "Background Color"
+msgstr "Saat"
 
 #: common/KReportUnit.cpp:47
 #, fuzzy
@@ -831,226 +850,226 @@ msgctxt "DetailGroupSectionDialog|"
 msgid "Insert page break after group footer:"
 msgstr ""
 
-#: wrtembed/KoReportDesigner.cpp:294
+#: wrtembed/KoReportDesigner.cpp:295
+#, qt-format
 msgctxt "KoReportDesigner|"
 msgid ""
-"This report is using a script type other than \"javascript\".  To prevent "
-"loosing the script, the type of script will not be changed unless the script "
-"is changed.  Please be aware that the script will not work unless it is "
-"changed to a \"javascript\" script."
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent loosing the scripts, their "
+"type and content will not be changed unless you change these scripts."
 msgstr ""
 
-#: wrtembed/KoReportDesigner.cpp:297
+#: wrtembed/KoReportDesigner.cpp:300
 msgctxt "KoReportDesigner|"
 msgid "Unsupported Script Type"
 msgstr ""
 
-#: wrtembed/KoReportDesigner.cpp:584
+#: wrtembed/KoReportDesigner.cpp:587
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KoReportDesigner|"
 msgid "Page Header (Any)"
 msgstr "Prapapar Halaman"
 
-#: wrtembed/KoReportDesigner.cpp:588
+#: wrtembed/KoReportDesigner.cpp:591
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KoReportDesigner|"
 msgid "Page Header (Even)"
 msgstr "Prapapar Halaman"
 
-#: wrtembed/KoReportDesigner.cpp:592
+#: wrtembed/KoReportDesigner.cpp:595
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KoReportDesigner|"
 msgid "Page Header (Odd)"
 msgstr "Prapapar Halaman"
 
-#: wrtembed/KoReportDesigner.cpp:596
+#: wrtembed/KoReportDesigner.cpp:599
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KoReportDesigner|"
 msgid "Page Header (First)"
 msgstr "Prapapar Halaman"
 
-#: wrtembed/KoReportDesigner.cpp:600
+#: wrtembed/KoReportDesigner.cpp:603
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KoReportDesigner|"
 msgid "Page Header (Last)"
 msgstr "Prapapar Halaman"
 
-#: wrtembed/KoReportDesigner.cpp:604
+#: wrtembed/KoReportDesigner.cpp:607
 #, fuzzy
 msgctxt "KoReportDesigner|"
 msgid "Page Footer (Any)"
 msgstr "&Pengaki"
 
-#: wrtembed/KoReportDesigner.cpp:608
+#: wrtembed/KoReportDesigner.cpp:611
 #, fuzzy
 msgctxt "KoReportDesigner|"
 msgid "Page Footer (Even)"
 msgstr "&Pengaki"
 
-#: wrtembed/KoReportDesigner.cpp:612
+#: wrtembed/KoReportDesigner.cpp:615
 #, fuzzy
 msgctxt "KoReportDesigner|"
 msgid "Page Footer (Odd)"
 msgstr "&Pengaki"
 
-#: wrtembed/KoReportDesigner.cpp:616
+#: wrtembed/KoReportDesigner.cpp:619
 #, fuzzy
 msgctxt "KoReportDesigner|"
 msgid "Page Footer (First)"
 msgstr "&Pengaki"
 
-#: wrtembed/KoReportDesigner.cpp:620
+#: wrtembed/KoReportDesigner.cpp:623
 #, fuzzy
 msgctxt "KoReportDesigner|"
 msgid "Page Footer (Last)"
 msgstr "&Pengaki"
 
-#: wrtembed/KoReportDesigner.cpp:624
+#: wrtembed/KoReportDesigner.cpp:627
 #, fuzzy
 msgctxt "KoReportDesigner|"
 msgid "Report Header"
 msgstr "&Pengepala"
 
-#: wrtembed/KoReportDesigner.cpp:628
+#: wrtembed/KoReportDesigner.cpp:631
 #, fuzzy
 msgctxt "KoReportDesigner|"
 msgid "Report Footer"
 msgstr "&Pengaki"
 
-#: wrtembed/KoReportDesigner.cpp:721
+#: wrtembed/KoReportDesigner.cpp:724
 #, fuzzy
 #| msgid "Title:"
 msgctxt "KoReportDesigner|"
 msgid "Title"
 msgstr "Panggilan:"
 
-#: wrtembed/KoReportDesigner.cpp:721
+#: wrtembed/KoReportDesigner.cpp:724
 #, fuzzy
 msgctxt "KoReportDesigner|"
 msgid "Report Title"
 msgstr "&Pengaki"
 
-#: wrtembed/KoReportDesigner.cpp:727
+#: wrtembed/KoReportDesigner.cpp:730
 #, fuzzy
 #| msgid "Page Size"
 msgctxt "KoReportDesigner|"
 msgid "Page Size"
 msgstr "Saiz Laman"
 
-#: wrtembed/KoReportDesigner.cpp:731
+#: wrtembed/KoReportDesigner.cpp:734
 #, fuzzy
 #| msgid "&Portrait"
 msgctxt "KoReportDesigner|"
 msgid "Portrait"
 msgstr "&Potret"
 
-#: wrtembed/KoReportDesigner.cpp:731
+#: wrtembed/KoReportDesigner.cpp:734
 #, fuzzy
 #| msgid "La&ndscape"
 msgctxt "KoReportDesigner|"
 msgid "Landscape"
 msgstr "La&nskap"
 
-#: wrtembed/KoReportDesigner.cpp:732
+#: wrtembed/KoReportDesigner.cpp:735
 #, fuzzy
 msgctxt "KoReportDesigner|"
 msgid "Page Orientation"
 msgstr "&Orientasi Pencerai"
 
-#: wrtembed/KoReportDesigner.cpp:743
+#: wrtembed/KoReportDesigner.cpp:746
 #, fuzzy
 #| msgid "Page Size"
 msgctxt "KoReportDesigner|"
 msgid "Page Unit"
 msgstr "Saiz Laman"
 
-#: wrtembed/KoReportDesigner.cpp:745
+#: wrtembed/KoReportDesigner.cpp:748
 #, fuzzy
 #| msgid "Change Shadow"
 msgctxt "KoReportDesigner|"
 msgid "Show Grid"
 msgstr "Ubah Bayang"
 
-#: wrtembed/KoReportDesigner.cpp:746
+#: wrtembed/KoReportDesigner.cpp:749
 #, fuzzy
 #| msgid "Confirm Save"
 msgctxt "KoReportDesigner|"
 msgid "Snap to Grid"
 msgstr "Sahkan Simpan"
 
-#: wrtembed/KoReportDesigner.cpp:747
+#: wrtembed/KoReportDesigner.cpp:750
 msgctxt "KoReportDesigner|"
 msgid "Grid Divisions"
 msgstr ""
 
-#: wrtembed/KoReportDesigner.cpp:750
+#: wrtembed/KoReportDesigner.cpp:753
 #, fuzzy
 #| msgid "Margins"
 msgctxt "KoReportDesigner|"
 msgid "Left Margin"
 msgstr "Margin"
 
-#: wrtembed/KoReportDesigner.cpp:752
+#: wrtembed/KoReportDesigner.cpp:755
 #, fuzzy
 #| msgid "Right indent"
 msgctxt "KoReportDesigner|"
 msgid "Right Margin"
 msgstr "Inden kanan"
 
-#: wrtembed/KoReportDesigner.cpp:754
+#: wrtembed/KoReportDesigner.cpp:757
 #, fuzzy
 #| msgid "Margins"
 msgctxt "KoReportDesigner|"
 msgid "Top Margin"
 msgstr "Margin"
 
-#: wrtembed/KoReportDesigner.cpp:756
+#: wrtembed/KoReportDesigner.cpp:759
 #, fuzzy
 #| msgid "Margins"
 msgctxt "KoReportDesigner|"
 msgid "Bottom Margin"
 msgstr "Margin"
 
-#: wrtembed/KoReportDesigner.cpp:775
+#: wrtembed/KoReportDesigner.cpp:778
 #, fuzzy
 #| msgid "Object"
 msgctxt "KoReportDesigner|"
 msgid "Object Script"
 msgstr "Objek"
 
-#: wrtembed/KoReportDesigner.cpp:936
+#: wrtembed/KoReportDesigner.cpp:939
 #, fuzzy
 #| msgid "Custom"
 msgctxt "KoReportDesigner|"
 msgid "Cut"
 msgstr "Biasa"
 
-#: wrtembed/KoReportDesigner.cpp:940
+#: wrtembed/KoReportDesigner.cpp:943
 #, fuzzy
 #| msgid "Company:"
 msgctxt "KoReportDesigner|"
 msgid "Copy"
 msgstr "Syarikat:"
 
-#: wrtembed/KoReportDesigner.cpp:945
+#: wrtembed/KoReportDesigner.cpp:948
 #, fuzzy
 #| msgid "Date"
 msgctxt "KoReportDesigner|"
 msgid "Paste"
 msgstr "Tarikh"
 
-#: wrtembed/KoReportDesigner.cpp:956
+#: wrtembed/KoReportDesigner.cpp:959
 #, fuzzy
 msgctxt "KoReportDesigner|"
 msgid "Delete"
 msgstr "Hapuskan Teks"
 
-#: wrtembed/KoReportDesigner.cpp:1332
+#: wrtembed/KoReportDesigner.cpp:1335
 #, fuzzy
 #| msgctxt "color"
 #| msgid "Linen"
@@ -1058,53 +1077,53 @@ msgctxt "KoReportDesigner|"
 msgid "Line"
 msgstr "Linen"
 
-#: wrtembed/KoReportDesigner.cpp:1375
+#: wrtembed/KoReportDesigner.cpp:1378
 msgctxt "KoReportDesigner|"
 msgid "Cu&t"
 msgstr ""
 
-#: wrtembed/KoReportDesigner.cpp:1377
+#: wrtembed/KoReportDesigner.cpp:1380
 msgctxt "KoReportDesigner|"
 msgid "Cut selection to clipboard"
 msgstr ""
 
-#: wrtembed/KoReportDesigner.cpp:1381
+#: wrtembed/KoReportDesigner.cpp:1384
 #, fuzzy
 #| msgid "Company:"
 msgctxt "KoReportDesigner|"
 msgid "&Copy"
 msgstr "Syarikat:"
 
-#: wrtembed/KoReportDesigner.cpp:1383
+#: wrtembed/KoReportDesigner.cpp:1386
 msgctxt "KoReportDesigner|"
 msgid "Copy selection to clipboard"
 msgstr ""
 
-#: wrtembed/KoReportDesigner.cpp:1387
+#: wrtembed/KoReportDesigner.cpp:1390
 #, fuzzy
 #| msgid "Date"
 msgctxt "KoReportDesigner|"
 msgid "&Paste"
 msgstr "Tarikh"
 
-#: wrtembed/KoReportDesigner.cpp:1389
+#: wrtembed/KoReportDesigner.cpp:1392
 msgctxt "KoReportDesigner|"
 msgid "Paste clipboard content"
 msgstr ""
 
-#: wrtembed/KoReportDesigner.cpp:1400
+#: wrtembed/KoReportDesigner.cpp:1403
 #, fuzzy
 #| msgid "Completion"
 msgctxt "KoReportDesigner|"
 msgid "Edit Sections"
 msgstr "Pelengkapan"
 
-#: wrtembed/KoReportDesigner.cpp:1403
+#: wrtembed/KoReportDesigner.cpp:1406
 msgctxt "KoReportDesigner|"
 msgid "Raise"
 msgstr ""
 
-#: wrtembed/KoReportDesigner.cpp:1405
+#: wrtembed/KoReportDesigner.cpp:1408
 msgctxt "KoReportDesigner|"
 msgid "Lower"
 msgstr ""
@@ -2848,11 +2867,6 @@ msgstr "Pengecualian"
 #, fuzzy
 #~| msgid "Could not create the file for saving"
 #~ msgid "Could not create the filter plugin"
-#~ msgstr "Tidak dapat cipta fail untuk penyimpanan"
-
-#, fuzzy
-#~| msgid "Could not create the file for saving"
-#~ msgid "Could not create the output document"
 #~ msgstr "Tidak dapat cipta fail untuk penyimpanan"
 
 #, fuzzy
