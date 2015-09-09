@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-08 10:44+0000\n"
+"POT-Creation-Date: 2015-09-09 08:18+0000\n"
 "PO-Revision-Date: 2008-11-24 22:51+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1497,12 +1497,12 @@ msgstr ""
 "Menambah pelayan  &baru yang ditemui di dalam titik agihan CRL secara "
 "automatik"
 
-#: conf/dirservconfigpage.cpp:392
+#: conf/dirservconfigpage.cpp:381
 #, kde-format
 msgid "Backend error: gpgconf does not seem to know the entry for %1/%2/%3"
 msgstr "Ralat tepi belakang: gpgconf tidak mengetahui entri untuk %1/%2/%3"
 
-#: conf/dirservconfigpage.cpp:398
+#: conf/dirservconfigpage.cpp:387
 #, kde-format
 msgid "Backend error: gpgconf has wrong type for %1/%2/%3: %4 %5"
 msgstr ""
@@ -1822,7 +1822,7 @@ msgid ""
 "to be checksummed, not a mixture of both."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:348 mainwindow_desktop.cpp:557
+#: crypto/createchecksumscontroller.cpp:348 mainwindow_desktop.cpp:546
 #, fuzzy
 #| msgid "Canceled."
 msgid "Cancel"
@@ -4227,80 +4227,106 @@ msgstr ""
 msgid "Main Toolbar"
 msgstr "Bar Alat Carian"
 
-#: kleopatraapplication.cpp:94
-msgid "Run UI server only, hide main window"
-msgstr ""
-
-#: kleopatraapplication.cpp:95
+#: kleopatra_options.h:45
 msgid "Use OpenPGP for the following operation"
 msgstr ""
 
-#: kleopatraapplication.cpp:96
+#: kleopatra_options.h:48
 msgid "Use CMS (X.509, S/MIME) for the following operation"
 msgstr ""
 
-#: kleopatraapplication.cpp:97
+#: kleopatra_options.h:51
+msgid "Location of the socket the ui server is listening on"
+msgstr ""
+
+#: kleopatra_options.h:54
+msgid "Run UI server only, hide main window"
+msgstr ""
+
+#: kleopatra_options.h:58
 #, fuzzy
 #| msgid "Import Certificates..."
 msgid "Import certificate file(s)"
 msgstr "Import Sijil..."
 
-#: kleopatraapplication.cpp:98
+#: kleopatra_options.h:61
 #, fuzzy
 #| msgid "Certificate Deletion Failed"
 msgid "Encrypt file(s)"
 msgstr "Gagal Menghapuskan Sijil"
 
-#: kleopatraapplication.cpp:99
+#: kleopatra_options.h:64
 #, fuzzy
 #| msgid "Canceled."
 msgid "Sign file(s)"
 msgstr "Dibatalkan."
 
-#: kleopatraapplication.cpp:100
+#: kleopatra_options.h:67
 #, fuzzy
 #| msgid "Deleting keys..."
 msgid "Sign and/or encrypt file(s)"
 msgstr "Menghapuskan kekunci..."
 
-#: kleopatraapplication.cpp:101
+#: kleopatra_options.h:69
 msgid "Same as --sign-encrypt, do not use"
 msgstr ""
 
-#: kleopatraapplication.cpp:102
+#: kleopatra_options.h:72
 #, fuzzy
 #| msgid "Deleting keys..."
 msgid "Decrypt file(s)"
 msgstr "Menghapuskan kekunci..."
 
-#: kleopatraapplication.cpp:103
+#: kleopatra_options.h:75
 #, fuzzy
 #| msgid "New signatures:"
 msgid "Verify file/signature"
 msgstr "Tandatangan baru:"
 
-#: kleopatraapplication.cpp:104
+#: kleopatra_options.h:78
 #, fuzzy
 #| msgid "Deleting keys..."
 msgid "Decrypt and/or verify file(s)"
 msgstr "Menghapuskan kekunci..."
 
-#: kleopatraapplication.cpp:105
+#: kleopatra_options.h:81
 #, fuzzy
 #| msgid "Certificate Download Failed"
 msgid "Search for Certificate by fingerprint"
 msgstr "Muat Turun Sijil Gagal"
 
-#: kleopatraapplication.cpp:106
+#: kleopatra_options.h:84
 msgid "Parent Window Id for dialogs"
 msgstr ""
 
-#: kleopatraapplication.cpp:114
-msgid "Location of the socket the ui server is listening on"
+#: kleopatra_options.h:92
+msgid "File(s) to process"
 msgstr ""
 
-#: kleopatraapplication.cpp:122
-msgid "File(s) to process"
+#: kleopatraapplication.cpp:237
+msgid "Failed to execute command"
+msgstr ""
+
+#: kleopatraapplication.cpp:272
+msgid "Ambigious protocol: --openpgp and --cms"
+msgstr ""
+
+#: kleopatraapplication.cpp:281
+msgid "No fingerprint argument specified for --query"
+msgstr ""
+
+#: kleopatraapplication.cpp:333
+#, kde-format
+msgid "Ambiguous commands \"%1\" and \"%2\""
+msgstr ""
+
+#: kleopatraapplication.cpp:339
+#, kde-format
+msgid "No files specificed for \"%1\" command"
+msgstr ""
+
+#: kleopatraapplication.cpp:350
+msgid "No command provided but arguments present"
 msgstr ""
 
 #: libkleopatraclient/core/command.cpp:477
@@ -4371,34 +4397,34 @@ msgstr "Kleopatra"
 msgid "There was an error while connecting to Kleopatra: %1"
 msgstr ""
 
-#: main.cpp:150
+#: main.cpp:154
 msgid "Performing Self-Check..."
 msgstr ""
 
-#: main.cpp:167
+#: main.cpp:171
 #, fuzzy
 #| msgid "Select CRL File"
 msgctxt "did not pass"
 msgid "Self-Check Failed"
 msgstr "Pilih Fail CRL"
 
-#: main.cpp:172
+#: main.cpp:176
 msgid "Self-Check Passed"
 msgstr ""
 
-#: main.cpp:190
+#: main.cpp:194
 #, fuzzy
 #| msgid "Exporting certificate..."
 msgid "Loading certificate cache..."
 msgstr "Mengeksport sijil..."
 
-#: main.cpp:197
+#: main.cpp:201
 #, fuzzy
 #| msgid "Certificate Download Failed"
 msgid "Certificate cache loaded."
 msgstr "Muat Turun Sijil Gagal"
 
-#: main.cpp:237
+#: main.cpp:250
 msgctxt "@info"
 msgid ""
 "<para>The version of the <application>GpgME</application> library you are "
@@ -4408,16 +4434,21 @@ msgid ""
 "administrator for help in resolving this issue.</para>"
 msgstr ""
 
-#: main.cpp:241
+#: main.cpp:254
 msgctxt "@title"
 msgid "GpgME Too Old"
 msgstr ""
 
-#: main.cpp:337
+#: main.cpp:334
+#, kde-format
+msgid "Invalid arguments: %1"
+msgstr ""
+
+#: main.cpp:353
 msgid "GPG UI Server Error"
 msgstr ""
 
-#: main.cpp:338
+#: main.cpp:354
 #, kde-format
 msgid ""
 "<qt>The Kleopatra GPG UI Server Module could not be initialized.<br/>The "
@@ -4426,28 +4457,28 @@ msgid ""
 "present might not work correctly, or at all.</qt>"
 msgstr ""
 
-#: mainwindow_desktop.cpp:119
+#: mainwindow_desktop.cpp:108
 #, kde-format
 msgctxt "Quit [ApplicationName]"
 msgid "&Quit %1"
 msgstr ""
 
-#: mainwindow_desktop.cpp:126
+#: mainwindow_desktop.cpp:115
 msgid "Only &Close Window"
 msgstr ""
 
-#: mainwindow_desktop.cpp:166
+#: mainwindow_desktop.cpp:155
 #, kde-format
 msgid ""
 "%1 may be used by other applications as a service.\n"
 "You may instead want to close this window without exiting %1."
 msgstr ""
 
-#: mainwindow_desktop.cpp:168
+#: mainwindow_desktop.cpp:157
 msgid "Really Quit?"
 msgstr ""
 
-#: mainwindow_desktop.cpp:210
+#: mainwindow_desktop.cpp:199
 #, fuzzy
 #| msgid ""
 #| "Could not start GnuPG LogViewer (kwatchgnupg). Please check your "
@@ -4459,71 +4490,71 @@ msgstr ""
 "Tidak dapat memulakan pemapar log GnuPG  (kwatchgnupg). Semak pemasangan "
 "anda!"
 
-#: mainwindow_desktop.cpp:212
+#: mainwindow_desktop.cpp:201
 #, fuzzy
 #| msgid "Configure &GpgME Backend"
 msgid "Error Starting KWatchGnuPG"
 msgstr "Konfigurkan Hujung Belakang &GpgME"
 
-#: mainwindow_desktop.cpp:335
+#: mainwindow_desktop.cpp:324
 #, fuzzy
 #| msgid "GnuPG Log Viewer..."
 msgid "GnuPG Log Viewer"
 msgstr "Pemapar Log GnuPG..."
 
-#: mainwindow_desktop.cpp:342
+#: mainwindow_desktop.cpp:331
 #, fuzzy
 #| msgid "Configure &GpgME Backend"
 msgid "Configure GnuPG Backend..."
 msgstr "Konfigurkan Hujung Belakang &GpgME"
 
-#: mainwindow_desktop.cpp:348
+#: mainwindow_desktop.cpp:337
 msgid "Perform Self-Test"
 msgstr ""
 
-#: mainwindow_desktop.cpp:354
+#: mainwindow_desktop.cpp:343
 msgid "About Gpg4win"
 msgstr ""
 
-#: mainwindow_desktop.cpp:373
+#: mainwindow_desktop.cpp:362
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: mainwindow_desktop.cpp:395
+#: mainwindow_desktop.cpp:384
 msgid "Could not configure the cryptography backend (gpgconf tool not found)"
 msgstr ""
 
-#: mainwindow_desktop.cpp:395
+#: mainwindow_desktop.cpp:384
 msgid "Configuration Error"
 msgstr ""
 
-#: mainwindow_desktop.cpp:429
+#: mainwindow_desktop.cpp:418
 msgid ""
 "There are still some background operations ongoing. These will be terminated "
 "when closing the window. Proceed?"
 msgstr ""
 
-#: mainwindow_desktop.cpp:432
+#: mainwindow_desktop.cpp:421
 msgid "Ongoing Background Tasks"
 msgstr ""
 
-#: mainwindow_desktop.cpp:541
+#: mainwindow_desktop.cpp:530
 msgid "Sign/Encrypt..."
 msgstr ""
 
-#: mainwindow_desktop.cpp:542 utils/clipboardmenu.cpp:50
+#: mainwindow_desktop.cpp:531 utils/clipboardmenu.cpp:50
 #, fuzzy
 #| msgid "Deleting keys..."
 msgid "Decrypt/Verify..."
 msgstr "Menghapuskan kekunci..."
 
-#: mainwindow_desktop.cpp:547
+#: mainwindow_desktop.cpp:536
 #, fuzzy
 #| msgid "Import Certificates..."
 msgid "Import Certificates"
 msgstr "Import Sijil..."
 
-#: mainwindow_desktop.cpp:548
+#: mainwindow_desktop.cpp:537
 #, fuzzy
 #| msgid "Import CRLs..."
 msgid "Import CRLs"
