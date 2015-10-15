@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-10 09:33+0000\n"
+"POT-Creation-Date: 2015-10-15 09:16+0000\n"
 "PO-Revision-Date: 2010-07-20 20:15+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -127,8 +127,8 @@ msgid "Multiple encryption keys per address"
 msgstr "kekunci penyulitan berbilang bagi setiap alamat"
 
 #: aboutdata.cpp:364 collectionpage/collectionmailinglistpage.cpp:104
-#: editor/kmcomposewin.cpp:2126 kmmainwin.cpp:66 kmsystemtray.cpp:73
-#: kmsystemtray.cpp:114
+#: editor/kmcomposewin.cpp:2126 kmmainwin.cpp:66 kmreaderwin.cpp:315
+#: kmsystemtray.cpp:73 kmsystemtray.cpp:114
 msgid "KMail"
 msgstr "KMail"
 
@@ -3391,12 +3391,12 @@ msgstr "Tambah ke Buku Alamat"
 msgid "Contact created successfully"
 msgstr "Berjaya menghapuskan mesej."
 
-#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:830
+#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:796
 #, kde-format
 msgid "Contact cannot be stored: %1"
 msgstr ""
 
-#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:830
+#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:796
 #, fuzzy
 #| msgid "Unable to create account"
 msgid "Failed to store contact"
@@ -4873,95 +4873,44 @@ msgstr "&Folder"
 msgid "Less GUI freezes, mail checks happen in the background"
 msgstr ""
 
-#: kmreaderwin.cpp:316
+#: kmreaderwin.cpp:318
+#, fuzzy
+#| msgid "KDE Email Client"
+msgid "The KDE Mail Client"
+msgstr "Pelanggan KDE E-mail "
+
+#: kmreaderwin.cpp:327
+#, fuzzy
+#| msgid "Mailinglist Folder Properties"
+msgid "Retrieving Folder Contents"
+msgstr "Ciri Folder Senarai Mel"
+
+#: kmreaderwin.cpp:328
+#, fuzzy
+#| msgid "Please wait"
+msgid "Please wait . . ."
+msgstr "Sila tunggu "
+
+#: kmreaderwin.cpp:334 kmreaderwin.cpp:343
+#, fuzzy
+#| msgctxt "View->attachments->"
+#| msgid "&Inline"
+msgid "Offline"
+msgstr "&Dalam garisan"
+
+#: kmreaderwin.cpp:335
 msgid ""
-"<h2 style='margin-top: 0px;'>Retrieving Folder Contents</h2><p>Please "
-"wait . . .</p>&nbsp;"
+"KMail is currently in offline mode. Click <a href=\"kmail:goOnline\">here</"
+"a> to go online . . .</p>"
 msgstr ""
 
-#: kmreaderwin.cpp:324
+#: kmreaderwin.cpp:344
 msgid ""
-"<h2 style='margin-top: 0px;'>Offline</h2><p>KMail is currently in offline "
-"mode. Click <a href=\"kmail:goOnline\">here</a> to go online . . .</p>&nbsp;"
+"Account is currently in offline mode. Click <a href=\"kmail:goResourceOnline"
+"\">here</a> to go online . . .</p>"
 msgstr ""
 
-#: kmreaderwin.cpp:333
-msgid ""
-"<h2 style='margin-top: 0px;'>Offline</h2><p>Account is currently in offline "
-"mode. Click <a href=\"kmail:goResourceOnline\">here</a> to go online . . .</"
-"p>&nbsp;"
-msgstr ""
-
-#: kmreaderwin.cpp:347
-#, fuzzy, kde-format
-msgctxt ""
-"%1: KMail version; %2: help:// URL; %3: generated list of new features; %4: "
-"First-time user text (only shown on first start); %5: generated list of "
-"important changes; --- end of comment ---"
-msgid ""
-"<h2 style='margin-top: 0px;'>Welcome to KMail %1</h2><p>KMail is the email "
-"client by KDE. It is designed to be fully compatible with Internet mailing "
-"standards including MIME, SMTP, POP3, and IMAP.</p>\n"
-"<ul><li>KMail has many powerful features which are described in the <a href="
-"\"%2\">documentation</a></li>\n"
-"%5\n"
-"%3\n"
-"%4\n"
-"<p>We hope that you will enjoy KMail.</p>\n"
-"<p>Thank you,</p>\n"
-"<p style='margin-bottom: 0px'>&nbsp; &nbsp; The KMail Team</p>"
-msgstr ""
-"<h2 style='margin-top: 0px;'>Selamat datang ke KMail %1</h2><p>KMail adalah "
-"pelanggan e-mel persekitaran  K Desktop. Ia direka bentuk serasi sepenuhnya "
-"dengan piawai penghantaran/penerimaan e-mel  MIME, SMTP, POP3 dan IMAP.</p>\n"
-"<ul><li>KMail mempunyai banyak ciri berpengaruh yang diperincikan dalam <a "
-"href=\"%2\">dokumentasi</a></li>\n"
-"<li>Laman utama KMail <a href=\"%3\">/A> menawarkan maklumat tentang versi "
-"baru KMail</li></ul>\n"
-"%8\n"
-"<p>Beberapa ciri baru keluaran KMail ini termasuk (berbanding dengan KMail "
-"%4, yang sebahagian daripada KDE %5):</p>\n"
-"<ul>\n"
-"%6</ul>\n"
-"%7\n"
-"<p>Kami harap anda seronok menggunakan KMail.</p>\n"
-"<p>Terima kasih,</p>\n"
-"<p style='margin-bottom: 0px'>&nbsp; &nbsp; Pasukan The KMail </p>"
-
-#: kmreaderwin.cpp:364
-#, kde-format
-msgid ""
-"<p>Some of the new features in this release of KMail include (compared to "
-"KMail %1, which is part of KDE Software Compilation %2):</p>\n"
-msgstr ""
-
-#: kmreaderwin.cpp:378
-msgid ""
-"<p>Please take a moment to fill in the KMail configuration panel at Settings-"
-"&gt;Configure KMail.\n"
-"You need to create at least a default identity and an incoming as well as "
-"outgoing mail account.</p>\n"
-msgstr ""
-"<p>Ambil masa untuk mengisi panel konfigurasi KMail pada Seting-&gt;Konfigur "
-"KMail.\n"
-"Anda perlu mencipta sekurang-kurangnya satu identiti piawai serta akaun  mel "
-"masuk dan akaun mel keluar.</p>\n"
-
-#: kmreaderwin.cpp:390
-#, kde-format
-msgid ""
-"<p><span style='font-size:125%; font-weight:bold;'>Important changes</span> "
-"(compared to KMail %1):</p>\n"
-msgstr ""
-"<p><span style ='font-size:125%; font-weighr:bold;'>Perubahan penting</span> "
-"(dibandingkan dengan KMail %1):</p>\n"
-
-#: kmreaderwin.cpp:395
-#, kde-format
-msgid "<li>%1</li>\n"
-msgstr "<li>%1</li>\n"
-
-#: kmreaderwin.cpp:836
+#: kmreaderwin.cpp:802
 #, fuzzy
 #| msgid "Messages moved successfully"
 msgid "Contact modified successfully"
@@ -7256,6 +7205,63 @@ msgid_plural "Out of office reply active on servers"
 msgstr[0] "Edit Jawapan  \"Di Luar Pejabat\" ..."
 msgstr[1] "Edit Jawapan  \"Di Luar Pejabat\" ..."
 
+#, fuzzy
+#~ msgctxt ""
+#~ "%1: KMail version; %2: help:// URL; %3: generated list of new features; "
+#~ "%4: First-time user text (only shown on first start); %5: generated list "
+#~ "of important changes; --- end of comment ---"
+#~ msgid ""
+#~ "<h2 style='margin-top: 0px;'>Welcome to KMail %1</h2><p>KMail is the "
+#~ "email client by KDE. It is designed to be fully compatible with Internet "
+#~ "mailing standards including MIME, SMTP, POP3, and IMAP.</p>\n"
+#~ "<ul><li>KMail has many powerful features which are described in the <a "
+#~ "href=\"%2\">documentation</a></li>\n"
+#~ "%5\n"
+#~ "%3\n"
+#~ "%4\n"
+#~ "<p>We hope that you will enjoy KMail.</p>\n"
+#~ "<p>Thank you,</p>\n"
+#~ "<p style='margin-bottom: 0px'>&nbsp; &nbsp; The KMail Team</p>"
+#~ msgstr ""
+#~ "<h2 style='margin-top: 0px;'>Selamat datang ke KMail %1</h2><p>KMail "
+#~ "adalah pelanggan e-mel persekitaran  K Desktop. Ia direka bentuk serasi "
+#~ "sepenuhnya dengan piawai penghantaran/penerimaan e-mel  MIME, SMTP, POP3 "
+#~ "dan IMAP.</p>\n"
+#~ "<ul><li>KMail mempunyai banyak ciri berpengaruh yang diperincikan dalam "
+#~ "<a href=\"%2\">dokumentasi</a></li>\n"
+#~ "<li>Laman utama KMail <a href=\"%3\">/A> menawarkan maklumat tentang "
+#~ "versi baru KMail</li></ul>\n"
+#~ "%8\n"
+#~ "<p>Beberapa ciri baru keluaran KMail ini termasuk (berbanding dengan "
+#~ "KMail %4, yang sebahagian daripada KDE %5):</p>\n"
+#~ "<ul>\n"
+#~ "%6</ul>\n"
+#~ "%7\n"
+#~ "<p>Kami harap anda seronok menggunakan KMail.</p>\n"
+#~ "<p>Terima kasih,</p>\n"
+#~ "<p style='margin-bottom: 0px'>&nbsp; &nbsp; Pasukan The KMail </p>"
+
+#~ msgid ""
+#~ "<p>Please take a moment to fill in the KMail configuration panel at "
+#~ "Settings-&gt;Configure KMail.\n"
+#~ "You need to create at least a default identity and an incoming as well as "
+#~ "outgoing mail account.</p>\n"
+#~ msgstr ""
+#~ "<p>Ambil masa untuk mengisi panel konfigurasi KMail pada Seting-&gt;"
+#~ "Konfigur KMail.\n"
+#~ "Anda perlu mencipta sekurang-kurangnya satu identiti piawai serta akaun  "
+#~ "mel masuk dan akaun mel keluar.</p>\n"
+
+#~ msgid ""
+#~ "<p><span style='font-size:125%; font-weight:bold;'>Important changes</"
+#~ "span> (compared to KMail %1):</p>\n"
+#~ msgstr ""
+#~ "<p><span style ='font-size:125%; font-weighr:bold;'>Perubahan penting</"
+#~ "span> (dibandingkan dengan KMail %1):</p>\n"
+
+#~ msgid "<li>%1</li>\n"
+#~ msgstr "<li>%1</li>\n"
+
 #~ msgid "OpenPGP Message - Encrypted"
 #~ msgstr "Mesej OpenPGP - Disulitkan"
 
@@ -7564,12 +7570,6 @@ msgstr[1] "Edit Jawapan  \"Di Luar Pejabat\" ..."
 #~| msgctxt "View->attachments->"
 #~| msgid "&Inline"
 #~ msgid "online"
-#~ msgstr "&Dalam garisan"
-
-#, fuzzy
-#~| msgctxt "View->attachments->"
-#~| msgid "&Inline"
-#~ msgid "offline"
 #~ msgstr "&Dalam garisan"
 
 #, fuzzy
