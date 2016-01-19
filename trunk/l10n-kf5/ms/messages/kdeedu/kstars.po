@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-18 09:20+0000\n"
+"POT-Creation-Date: 2016-01-19 08:58+0000\n"
 "PO-Revision-Date: 2007-02-24 13:11+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -366,7 +366,7 @@ msgstr "Tidak dapat membaca fail %s."
 msgid "KStars image viewer: %1"
 msgstr "Selamat Datang hingga Pemapar"
 
-#: auxiliary/imageviewer.cpp:132 tools/eyepiecefield.cpp:87
+#: auxiliary/imageviewer.cpp:132 tools/eyepiecefield.cpp:92
 msgid "Invert colors"
 msgstr ""
 
@@ -3539,7 +3539,7 @@ msgid "Display received FITS images unto solver FOV rectangle in the sky map"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_solverOverlay)
-#: ekos/align.ui:286 tools/eyepiecefield.cpp:86
+#: ekos/align.ui:286 tools/eyepiecefield.cpp:91
 msgid "Overlay"
 msgstr ""
 
@@ -8552,8 +8552,9 @@ msgstr "tidak dapat membuka fail tetapan `%s': %s"
 #. i18n: ectx: property (text), item, widget (QComboBox, driverComboBox)
 #. i18n: ectx: property (text), widget (QPushButton, NoneButton)
 #: indi/drivermanager.cpp:1230 indi/indidriver.cpp:751
-#: oal/equipmentwriter.ui:197 oal/log.cpp:262 tools/eyepiecefield.cpp:111
-#: tools/obslistwizard.ui:147 tools/whatsinteresting/wiequipsettings.ui:344
+#: oal/equipmentwriter.ui:197 oal/log.cpp:262 tools/exporteyepieceview.cpp:67
+#: tools/eyepiecefield.cpp:116 tools/obslistwizard.ui:147
+#: tools/whatsinteresting/wiequipsettings.ui:344
 msgid "None"
 msgstr "Tiada"
 
@@ -45540,7 +45541,7 @@ msgstr "Mod"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, Type)
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: oal/equipmentwriter.ui:94 tools/eyepiecefield.cpp:114
+#: oal/equipmentwriter.ui:94 tools/eyepiecefield.cpp:119
 #: tools/whatsinteresting/wiequipsettings.ui:328
 #, fuzzy
 msgid "Refractor"
@@ -50649,52 +50650,97 @@ msgstr "Spring"
 msgid "Winter solstice:"
 msgstr "Bandar nama"
 
-#: tools/eyepiecefield.cpp:48
+#: tools/exporteyepieceview.cpp:50
+#, fuzzy
+msgid "Export eyepiece view"
+msgstr "Peranti:"
+
+#: tools/exporteyepieceview.cpp:65
+msgid "Overlay orientation vs. time ticks: "
+msgstr ""
+
+#: tools/exporteyepieceview.cpp:68
+msgid "Towards Zenith"
+msgstr ""
+
+#: tools/exporteyepieceview.cpp:69
+#, fuzzy
+msgid "Dobsonian View"
+msgstr "Negara nama"
+
+#: tools/exporteyepieceview.cpp:105
+msgid ""
+"Note: This overlay makes sense only if the view was generated in alt/az mode "
+"with a preset such as Refractor or Vanilla"
+msgstr ""
+
+#: tools/exporteyepieceview.cpp:107
+msgid ""
+"Note: This overlay  makes sense only if the view was generated in alt/az "
+"mode with a preset such as Dobsonian"
+msgstr ""
+
+#: tools/exporteyepieceview.cpp:178
+#, fuzzy
+msgid "Save image as"
+msgstr "Path imej boot:        %s"
+
+#: tools/exporteyepieceview.cpp:178
+msgid "Image files (*.png *.jpg *.xpm *.bmp *.gif)"
+msgstr ""
+
+#: tools/eyepiecefield.cpp:50
 #, fuzzy
 msgid "Eyepiece Field View"
 msgstr "Peranti:"
 
-#: tools/eyepiecefield.cpp:84
+#: tools/eyepiecefield.cpp:65
+#, fuzzy
+msgctxt "Export image"
+msgid "Export"
+msgstr "Nama Volum _Logikal:"
+
+#: tools/eyepiecefield.cpp:89
 #, fuzzy
 msgid "Invert view"
 msgstr "Gambaran Keseluruhan"
 
-#: tools/eyepiecefield.cpp:85
+#: tools/eyepiecefield.cpp:90
 #, fuzzy
 msgid "Flip view"
 msgstr "Bandar nama"
 
-#: tools/eyepiecefield.cpp:88
+#: tools/eyepiecefield.cpp:93
 #, fuzzy
 msgid "Fetch DSS image"
 msgstr "Path imej boot:        %s"
 
-#: tools/eyepiecefield.cpp:108
+#: tools/eyepiecefield.cpp:113
 #, fuzzy
 msgid "Rotation: "
 msgstr "Tind_akan"
 
-#: tools/eyepiecefield.cpp:112
+#: tools/eyepiecefield.cpp:117
 #, fuzzy
 msgid "Vanilla"
 msgstr "Bandar nama"
 
-#: tools/eyepiecefield.cpp:113
+#: tools/eyepiecefield.cpp:118
 #, fuzzy
 msgid "Flipped"
 msgstr "Bandar nama"
 
-#: tools/eyepiecefield.cpp:115
+#: tools/eyepiecefield.cpp:120
 #, fuzzy
 msgid "Dobsonian"
 msgstr "Negara nama"
 
-#: tools/eyepiecefield.cpp:117
+#: tools/eyepiecefield.cpp:122
 #, fuzzy
 msgid "Preset: "
 msgstr "Bandar nama"
 
-#: tools/eyepiecefield.cpp:539 tools/observinglist.cpp:1128
+#: tools/eyepiecefield.cpp:542 tools/observinglist.cpp:1128
 #, fuzzy
 msgid "Failed to download DSS/SDSS image!"
 msgstr "Gagal untuk muatkan imej \"%1\"\n"
