@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-20 01:54+0000\n"
+"POT-Creation-Date: 2016-01-23 02:12+0000\n"
 "PO-Revision-Date: 2007-02-25 15:47+0730\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -1480,8 +1480,8 @@ msgstr "Umum"
 
 #: dialogs/activitydialog.cpp:143 dialogs/objectnodedialog.cpp:135
 #: dialogs/statedialog.cpp:116 dialogs/umlattributedialog.cpp:67
-#: dialogs/umlentityattributedialog.cpp:65 dialogs/umloperationdialog.cpp:86
-#: dialogs/umltemplatedialog.cpp:60
+#: dialogs/umlentityattributedialog.cpp:65 dialogs/umlenumliteraldialog.cpp:53
+#: dialogs/umloperationdialog.cpp:86 dialogs/umltemplatedialog.cpp:60
 #, fuzzy
 msgid "General Properties"
 msgstr ""
@@ -3074,21 +3074,22 @@ msgstr "Nama:"
 msgid "Classifier &scope (\"static\")"
 msgstr ""
 
-#: dialogs/umlattributedialog.cpp:126
+#: dialogs/umlattributedialog.cpp:126 dialogs/umlenumliteraldialog.cpp:86
 msgid "You have entered an invalid attribute name."
 msgstr ""
 
-#: dialogs/umlattributedialog.cpp:127 refactoring/refactoringassistant.cpp:850
+#: dialogs/umlattributedialog.cpp:127 dialogs/umlenumliteraldialog.cpp:87
+#: refactoring/refactoringassistant.cpp:850
 #, fuzzy
 msgid "Attribute Name Invalid"
 msgstr "Name=KDevelop: KDE/C++"
 
-#: dialogs/umlattributedialog.cpp:134
+#: dialogs/umlattributedialog.cpp:134 dialogs/umlenumliteraldialog.cpp:94
 msgid ""
 "The attribute name you have chosen is already being used in this operation."
 msgstr ""
 
-#: dialogs/umlattributedialog.cpp:135
+#: dialogs/umlattributedialog.cpp:135 dialogs/umlenumliteraldialog.cpp:95
 #, fuzzy
 msgid "Attribute Name Not Unique"
 msgstr "Name=KDevelop: KDE/C++"
@@ -3175,6 +3176,23 @@ msgstr ""
 #, fuzzy
 msgid "Entity Attribute Name Not Unique"
 msgstr "Name=KDevelop: KDE/C++"
+
+#: dialogs/umlenumliteraldialog.cpp:33
+#, fuzzy
+msgid "EnumLiteral Properties"
+msgstr ""
+"*.pro|Fail Projek\n"
+"*|Semua Fail"
+
+#: dialogs/umlenumliteraldialog.cpp:59
+#, fuzzy
+msgctxt "literal name"
+msgid "&Name:"
+msgstr "Nama:"
+
+#: dialogs/umlenumliteraldialog.cpp:63
+msgid "&Value:"
+msgstr ""
 
 #: dialogs/umlfiledialog.cpp:139
 #, fuzzy
@@ -4538,9 +4556,8 @@ msgstr "Nama"
 
 #: object_factory.cpp:245 object_factory.cpp:249 umldoc.cpp:1528
 #: umldoc.cpp:1532 umldoc.cpp:1607 umldoc.cpp:1611 umldoc.cpp:1644
-#: umldoc.cpp:1648 umldoc.cpp:1685 umldoc.cpp:1689
-#: umlmodel/enumliteral.cpp:114 umlmodel/enumliteral.cpp:118
-#: umlmodel/stereotype.cpp:120 umlmodel/stereotype.cpp:124
+#: umldoc.cpp:1648 umldoc.cpp:1685 umldoc.cpp:1689 umlmodel/stereotype.cpp:120
+#: umlmodel/stereotype.cpp:124
 #, fuzzy
 msgid "Enter name:"
 msgstr "Name=KDevAdaProject"
@@ -6385,13 +6402,6 @@ msgid ""
 "it again."
 msgstr ""
 
-#: umlmodel/enumliteral.cpp:114 umlmodel/enumliteral.cpp:118
-#, fuzzy
-#| msgid "Name"
-msgctxt "enum name"
-msgid "Name"
-msgstr "Nama"
-
 #: umlmodel/folder.cpp:419
 #, fuzzy, kde-format
 msgid "The folderfile %1 does not exist."
@@ -6671,7 +6681,7 @@ msgstr "Name=KDevAdaProject"
 msgid "Enter role name:"
 msgstr "Name=KDevelop: KDE/C++"
 
-#: umlwidgets/associationwidget.cpp:3779
+#: umlwidgets/associationwidget.cpp:3795
 msgid "Press Ctrl with left mouse click to delete a point"
 msgstr ""
 
@@ -7110,6 +7120,12 @@ msgstr ""
 #: worktoolbar.cpp:374
 msgid "Pre/Post condition"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "enum name"
+#~ msgid "Name"
+#~ msgstr "Nama"
 
 #, fuzzy
 #~ msgid "Changing note"
