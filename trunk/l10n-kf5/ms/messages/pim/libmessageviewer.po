@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-02-19 07:33+0000\n"
+"POT-Creation-Date: 2016-02-20 07:52+0000\n"
 "PO-Revision-Date: 2005-11-23 18:09+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1528,37 +1528,295 @@ msgstr ""
 msgid "Unable to edit attachment"
 msgstr "Nama lampiran"
 
-#: viewer/messagepart.cpp:174 viewer/messagepart.cpp:176
+#: viewer/messagepart.cpp:178 viewer/messagepart.cpp:180
 msgid "Encapsulated message"
 msgstr "Mesej Dikapsulkan"
 
-#: viewer/messagepart.cpp:192
+#: viewer/messagepart.cpp:199
 msgid "End of encapsulated message"
 msgstr "Penghujung mesej yang dikapsulkan"
 
-#: viewer/messagepart.cpp:219
+#: viewer/messagepart.cpp:221
 #, fuzzy
 msgid "Please wait while the message is being decrypted..."
 msgstr "_n: Tunggu sementara mesej dipindahkan"
 
-#: viewer/messagepart.cpp:221
+#: viewer/messagepart.cpp:223
 msgid "Encrypted message"
 msgstr "Mesej Disulitkan"
 
-#: viewer/messagepart.cpp:223
+#: viewer/messagepart.cpp:225
 msgid "Encrypted message (decryption not possible)"
 msgstr "Mesej disulitkan (tidak boleh dinyahsulit)"
 
-#: viewer/messagepart.cpp:225
+#: viewer/messagepart.cpp:227
 #, kde-format
 msgid "Reason: %1"
 msgstr "Sebab: %1"
 
-#: viewer/messagepart.cpp:239
+#: viewer/messagepart.cpp:244
 msgid "End of encrypted message"
 msgstr "Penghujung mesej yang disulitkan"
 
-#: viewer/messagepart.cpp:806
+#: viewer/messagepart.cpp:289
+msgid "Error: Signature not verified"
+msgstr "Ralat: Tanda tangan tidak disahkan"
+
+#: viewer/messagepart.cpp:292
+msgid "Good signature"
+msgstr "Tandatangan elok"
+
+#: viewer/messagepart.cpp:295
+msgid "<b>Bad</b> signature"
+msgstr "Tanda tangan <b>rosak</b>"
+
+#: viewer/messagepart.cpp:298
+msgid "No public key to verify the signature"
+msgstr "Tiada kekunci umum untuk mengesahkan tanda tangan"
+
+#: viewer/messagepart.cpp:301
+msgid "No signature found"
+msgstr "Tanda tangan tidak ditemui"
+
+#: viewer/messagepart.cpp:304
+msgid "Error verifying the signature"
+msgstr "Ralat semasa mengesahkan tanda tangan"
+
+#: viewer/messagepart.cpp:307
+msgid "Different results for signatures"
+msgstr "Tanda tangan menghasilkan keputusan berbeza"
+
+#: viewer/messagepart.cpp:326
+msgid "No status information available."
+msgstr "Tiada maklumat status boleh didapatkan."
+
+#: viewer/messagepart.cpp:333 viewer/messagepart.cpp:419
+msgid "Good signature."
+msgstr "Tandatangan elok."
+
+#: viewer/messagepart.cpp:354
+msgid "One key has expired."
+msgstr "Satu kekunci telah luput."
+
+#: viewer/messagepart.cpp:358
+msgid "The signature has expired."
+msgstr "Tanda tangan luput."
+
+#: viewer/messagepart.cpp:363
+msgid "Unable to verify: key missing."
+msgstr "Tidak dapat membuat pengesahan: kekunci hilang."
+
+#: viewer/messagepart.cpp:370
+msgid "CRL not available."
+msgstr "SPS tidak boleh didapatkan."
+
+#: viewer/messagepart.cpp:374
+msgid "Available CRL is too old."
+msgstr "SPS yang ada terlalu lama."
+
+#: viewer/messagepart.cpp:378
+msgid "A policy was not met."
+msgstr "Tidak menepati dasar."
+
+#: viewer/messagepart.cpp:382
+msgid "A system error occurred."
+msgstr "Berlaku ralat sistem."
+
+#: viewer/messagepart.cpp:393
+msgid "One key has been revoked."
+msgstr "Satu kekunci telah dibatalkan."
+
+#: viewer/messagepart.cpp:421
+msgid "<b>Bad</b> signature."
+msgstr "Tanda tangan <b>rosak</b>."
+
+#: viewer/messagepart.cpp:447
+#, fuzzy
+#| msgid "&Enable signature"
+msgid "Invalid signature."
+msgstr "&Aktifkan tandatangan"
+
+#: viewer/messagepart.cpp:450
+#, fuzzy
+#| msgid "Not enough information to check signature. %1"
+msgid "Not enough information to check signature validity."
+msgstr "Tidak cukup maklumat untuk menyemak tanda tangan. %1"
+
+#: viewer/messagepart.cpp:464
+#, fuzzy
+#| msgid "Signatures"
+msgid "Signature is valid."
+msgstr "Tandatangan"
+
+#: viewer/messagepart.cpp:466
+#, kde-format
+msgid "Signed by <a href=\"mailto:%1\">%2</a>."
+msgstr ""
+
+#: viewer/messagepart.cpp:471
+msgid "Unknown signature state"
+msgstr ""
+
+#: viewer/messagepart.cpp:479
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Show Details"
+msgstr "Paparkan &sentiasa"
+
+#: viewer/messagepart.cpp:502
+#, fuzzy
+#| msgid "Not available"
+msgid "No Audit Log available"
+msgstr "Tidak boleh didapatkan"
+
+#: viewer/messagepart.cpp:504
+#, fuzzy, kde-format
+msgid "Error Retrieving Audit Log: %1"
+msgstr ""
+"Ralat semasa memperoleh semula senarai kawalan akses  (SKA) dari pelayan\n"
+"%1"
+
+#: viewer/messagepart.cpp:515
+msgctxt "The Audit Log is a detailed error log from the gnupg backend"
+msgid "Show Audit Log"
+msgstr ""
+
+#: viewer/messagepart.cpp:526
+#, fuzzy
+#| msgid "Logging Details"
+msgid "Hide Details"
+msgstr "Perincian Pengelogan"
+
+#: viewer/messagepart.cpp:547
+#, fuzzy
+msgid "Please wait while the signature is being verified..."
+msgstr "_n: Tunggu sementara mesej dipindahkan"
+
+#: viewer/messagepart.cpp:638 viewer/messagepart.cpp:640
+#, fuzzy
+#| msgid "Certificates"
+msgid "certificate"
+msgstr "Sijil"
+
+#: viewer/messagepart.cpp:646 viewer/messagepart.cpp:672
+#, fuzzy
+#| msgid "Warning:"
+msgctxt "Start of warning message."
+msgid "Warning:"
+msgstr "Amaran:"
+
+#: viewer/messagepart.cpp:648
+#, kde-format
+msgid "Sender's mail address is not stored in the %1 used for signing."
+msgstr ""
+"Alamat penghantar mel tidak distor dalam %1 yang digunakan untuk tandatangan."
+
+#: viewer/messagepart.cpp:651
+msgid "sender: "
+msgstr "Pengirim:"
+
+#: viewer/messagepart.cpp:654
+msgid "stored: "
+msgstr "distor:"
+
+#: viewer/messagepart.cpp:674
+#, kde-format
+msgid ""
+"No mail address is stored in the %1 used for signing, so we cannot compare "
+"it to the sender's address %2."
+msgstr ""
+"Tiada alamat mel yang distor dalam %1 digunakan untuk tandatangan, jadi "
+"perbandingan dengan alamat penghantar %2 tidak boleh dibuat."
+
+#: viewer/messagepart.cpp:697
+#, kde-format
+msgid "Not enough information to check signature. %1"
+msgstr "Tidak cukup maklumat untuk menyemak tanda tangan. %1"
+
+#: viewer/messagepart.cpp:713 viewer/messagepart.cpp:779
+msgid "Message was signed with unknown key."
+msgstr "Mesej ditandatangani dengan kekunci yang tidak diketahui."
+
+#: viewer/messagepart.cpp:715 viewer/messagepart.cpp:809
+#: viewer/messagepart.cpp:842
+#, kde-format
+msgid "Message was signed by %1."
+msgstr "Mesej ditandatangani oleh %1."
+
+#: viewer/messagepart.cpp:721 viewer/messagepart.cpp:728
+#: viewer/messagepart.cpp:737
+#, kde-format
+msgid "Message was signed with key %1."
+msgstr "Mesej ditandatangani dengan kekunci %1."
+
+#: viewer/messagepart.cpp:723
+#, kde-format
+msgid "Message was signed on %1 with key %2."
+msgstr "Mesej ditandatangani pada %1 dengan kekunci %2"
+
+#: viewer/messagepart.cpp:730
+#, kde-format
+msgid "Message was signed by %3 on %1 with key %2"
+msgstr "Mesej ditandatangani oleh %3 pada %1 dengan kekunci %2"
+
+#: viewer/messagepart.cpp:739
+#, kde-format
+msgid "Message was signed by %2 with key %1."
+msgstr "Mesej ditandatangani oleh %2 dengan kekunci %1."
+
+#: viewer/messagepart.cpp:748 viewer/messagepart.cpp:786
+#: viewer/messagepart.cpp:1854
+msgid "Status: "
+msgstr "Status: "
+
+#: viewer/messagepart.cpp:772
+#, kde-format
+msgid "Message was signed on %1 with unknown key %2."
+msgstr "Mesej ditandatangani pada %1 dengan kekunci %2 yang tidak diketahui."
+
+#: viewer/messagepart.cpp:776
+#, kde-format
+msgid "Message was signed with unknown key %1."
+msgstr "Mesej ditandatangani dengan kekunci %1 yang tidak diketahui."
+
+#: viewer/messagepart.cpp:782
+msgid "The validity of the signature cannot be verified."
+msgstr "Kesahihan tandatangan tidak boleh disahkan."
+
+#: viewer/messagepart.cpp:805 viewer/messagepart.cpp:838
+#, kde-format
+msgid "Message was signed by %2 (Key ID: %1)."
+msgstr "Mesej ditandatangani oleh %2 (ID kekunci: %1)."
+
+#: viewer/messagepart.cpp:815
+msgid "The signature is valid, but the key's validity is unknown."
+msgstr "Tandatangan sah tetapi kesahihan kekunci tidak diketahui."
+
+#: viewer/messagepart.cpp:819
+msgid "The signature is valid and the key is marginally trusted."
+msgstr "Tandatangan sah dan kekunci agak dipercayai."
+
+#: viewer/messagepart.cpp:823
+msgid "The signature is valid and the key is fully trusted."
+msgstr "Tandatangan sah dan kekunci boleh dipercayai sepenuhnya."
+
+#: viewer/messagepart.cpp:827
+msgid "The signature is valid and the key is ultimately trusted."
+msgstr "Tandatangan sah dan kekunci sangat dipercayai."
+
+#: viewer/messagepart.cpp:831
+msgid "The signature is valid, but the key is untrusted."
+msgstr "Tandatangan sah tetapi kekunci tidak boleh dipercayai."
+
+#: viewer/messagepart.cpp:845
+msgid "Warning: The signature is bad."
+msgstr "Amaran: Tandatangan rosak."
+
+#: viewer/messagepart.cpp:877
+msgid "End of signed message"
+msgstr "Penghujung mesej bertandatangan"
+
+#: viewer/messagepart.cpp:1441
 msgid ""
 "<b>Note:</b> This HTML message may contain external references to images "
 "etc. For security/privacy reasons external references are not loaded. If you "
@@ -1570,7 +1828,7 @@ msgstr ""
 "anda percaya kepada penghantar mesej ini, anda boleh memuatkan rujukan luar "
 "untuk mesej ini <a href=\"kmail:loadExternal\">dengan mengklik di sini</a>."
 
-#: viewer/messagepart.cpp:819
+#: viewer/messagepart.cpp:1454
 msgid ""
 "<b>Note:</b> This is an HTML message. For security reasons, only the raw "
 "HTML code is shown. If you trust the sender of this message then you can "
@@ -1582,32 +1840,27 @@ msgstr ""
 "boleh aktifkan paparan HTML terformat untuk mesej ini <a href=\"kmail:"
 "showHTML\">dengan mengklik di sini</a>."
 
-#: viewer/messagepart.cpp:1022 viewer/objecttreeparser.cpp:1995
+#: viewer/messagepart.cpp:1657 viewer/objecttreeparser.cpp:1347
 msgid "Wrong Crypto Plug-In."
 msgstr "Plugin Crypto salah."
 
-#: viewer/messagepart.cpp:1183
+#: viewer/messagepart.cpp:1818
 #, fuzzy
 #| msgid "Store sent messages encry&pted"
 msgid "This message is encrypted."
 msgstr "Stor mesej yang dihantar dalam bentuk &disulitkan"
 
-#: viewer/messagepart.cpp:1188
+#: viewer/messagepart.cpp:1823
 #, fuzzy
 #| msgid "&Encrypt Message"
 msgid "Decrypt Message"
 msgstr "&Sulitkan Mesej"
 
-#: viewer/messagepart.cpp:1216
+#: viewer/messagepart.cpp:1851
 msgid "The crypto engine returned no cleartext data."
 msgstr "Tiada data teks kosong dikembalikan oleh enjin kripto."
 
-#: viewer/messagepart.cpp:1219 viewer/objecttreeparser.cpp:1828
-#: viewer/objecttreeparser.cpp:1870
-msgid "Status: "
-msgstr "Status: "
-
-#: viewer/messagepart.cpp:1225
+#: viewer/messagepart.cpp:1860
 #, fuzzy
 #| msgid "(unknown)"
 msgctxt "Status of message unknown."
@@ -1709,7 +1962,7 @@ msgstr "Plugin kripto \"%1\" tidak dapat menyahsulit data."
 msgid "Error: %1"
 msgstr "Ralat: %1"
 
-#: viewer/objecttreeparser.cpp:754 viewer/objecttreeparser.cpp:2064
+#: viewer/objecttreeparser.cpp:754 viewer/objecttreeparser.cpp:1416
 #, kde-format
 msgid "Crypto plug-in \"%1\" is not initialized."
 msgstr "Plugin Kripto \"%1\" tidak dimulakan."
@@ -1719,7 +1972,7 @@ msgstr "Plugin Kripto \"%1\" tidak dimulakan."
 msgid "Crypto plug-in \"%1\" cannot decrypt messages."
 msgstr "Plugin Kripto \"%1\" tidak dapat menyahsulit mesej."
 
-#: viewer/objecttreeparser.cpp:762 viewer/objecttreeparser.cpp:2073
+#: viewer/objecttreeparser.cpp:762 viewer/objecttreeparser.cpp:1425
 msgid "No appropriate crypto plug-in was found."
 msgstr "Plugin kripto sesuai tidak ditemui"
 
@@ -1730,271 +1983,18 @@ msgctxt "display name for an unnamed attachment"
 msgid "Unnamed"
 msgstr "Tidak dinamakan"
 
-#: viewer/objecttreeparser.cpp:1351
-msgid "Error: Signature not verified"
-msgstr "Ralat: Tanda tangan tidak disahkan"
-
-#: viewer/objecttreeparser.cpp:1354
-msgid "Good signature"
-msgstr "Tandatangan elok"
-
-#: viewer/objecttreeparser.cpp:1357
-msgid "<b>Bad</b> signature"
-msgstr "Tanda tangan <b>rosak</b>"
-
-#: viewer/objecttreeparser.cpp:1360
-msgid "No public key to verify the signature"
-msgstr "Tiada kekunci umum untuk mengesahkan tanda tangan"
-
-#: viewer/objecttreeparser.cpp:1363
-msgid "No signature found"
-msgstr "Tanda tangan tidak ditemui"
-
-#: viewer/objecttreeparser.cpp:1366
-msgid "Error verifying the signature"
-msgstr "Ralat semasa mengesahkan tanda tangan"
-
-#: viewer/objecttreeparser.cpp:1369
-msgid "Different results for signatures"
-msgstr "Tanda tangan menghasilkan keputusan berbeza"
-
-#: viewer/objecttreeparser.cpp:1388
-msgid "No status information available."
-msgstr "Tiada maklumat status boleh didapatkan."
-
-#: viewer/objecttreeparser.cpp:1395 viewer/objecttreeparser.cpp:1481
-msgid "Good signature."
-msgstr "Tandatangan elok."
-
-#: viewer/objecttreeparser.cpp:1416
-msgid "One key has expired."
-msgstr "Satu kekunci telah luput."
-
 #: viewer/objecttreeparser.cpp:1420
-msgid "The signature has expired."
-msgstr "Tanda tangan luput."
-
-#: viewer/objecttreeparser.cpp:1425
-msgid "Unable to verify: key missing."
-msgstr "Tidak dapat membuat pengesahan: kekunci hilang."
-
-#: viewer/objecttreeparser.cpp:1432
-msgid "CRL not available."
-msgstr "SPS tidak boleh didapatkan."
-
-#: viewer/objecttreeparser.cpp:1436
-msgid "Available CRL is too old."
-msgstr "SPS yang ada terlalu lama."
-
-#: viewer/objecttreeparser.cpp:1440
-msgid "A policy was not met."
-msgstr "Tidak menepati dasar."
-
-#: viewer/objecttreeparser.cpp:1444
-msgid "A system error occurred."
-msgstr "Berlaku ralat sistem."
-
-#: viewer/objecttreeparser.cpp:1455
-msgid "One key has been revoked."
-msgstr "Satu kekunci telah dibatalkan."
-
-#: viewer/objecttreeparser.cpp:1483
-msgid "<b>Bad</b> signature."
-msgstr "Tanda tangan <b>rosak</b>."
-
-#: viewer/objecttreeparser.cpp:1511
-#, fuzzy
-#| msgid "&Enable signature"
-msgid "Invalid signature."
-msgstr "&Aktifkan tandatangan"
-
-#: viewer/objecttreeparser.cpp:1514
-#, fuzzy
-#| msgid "Not enough information to check signature. %1"
-msgid "Not enough information to check signature validity."
-msgstr "Tidak cukup maklumat untuk menyemak tanda tangan. %1"
-
-#: viewer/objecttreeparser.cpp:1528
-#, fuzzy
-#| msgid "Signatures"
-msgid "Signature is valid."
-msgstr "Tandatangan"
-
-#: viewer/objecttreeparser.cpp:1530
-#, kde-format
-msgid "Signed by <a href=\"mailto:%1\">%2</a>."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1535
-msgid "Unknown signature state"
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1541
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Show Details"
-msgstr "Paparkan &sentiasa"
-
-#: viewer/objecttreeparser.cpp:1564
-#, fuzzy
-#| msgid "Not available"
-msgid "No Audit Log available"
-msgstr "Tidak boleh didapatkan"
-
-#: viewer/objecttreeparser.cpp:1566
-#, fuzzy, kde-format
-msgid "Error Retrieving Audit Log: %1"
-msgstr ""
-"Ralat semasa memperoleh semula senarai kawalan akses  (SKA) dari pelayan\n"
-"%1"
-
-#: viewer/objecttreeparser.cpp:1577
-msgctxt "The Audit Log is a detailed error log from the gnupg backend"
-msgid "Show Audit Log"
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1588
-#, fuzzy
-#| msgid "Logging Details"
-msgid "Hide Details"
-msgstr "Perincian Pengelogan"
-
-#: viewer/objecttreeparser.cpp:1614
-#, fuzzy
-msgid "Please wait while the signature is being verified..."
-msgstr "_n: Tunggu sementara mesej dipindahkan"
-
-#: viewer/objecttreeparser.cpp:1711 viewer/objecttreeparser.cpp:1713
-#, fuzzy
-#| msgid "Certificates"
-msgid "certificate"
-msgstr "Sijil"
-
-#: viewer/objecttreeparser.cpp:1720 viewer/objecttreeparser.cpp:1746
-#, fuzzy
-#| msgid "Warning:"
-msgctxt "Start of warning message."
-msgid "Warning:"
-msgstr "Amaran:"
-
-#: viewer/objecttreeparser.cpp:1722
-#, kde-format
-msgid "Sender's mail address is not stored in the %1 used for signing."
-msgstr ""
-"Alamat penghantar mel tidak distor dalam %1 yang digunakan untuk tandatangan."
-
-#: viewer/objecttreeparser.cpp:1725
-msgid "sender: "
-msgstr "Pengirim:"
-
-#: viewer/objecttreeparser.cpp:1728
-msgid "stored: "
-msgstr "distor:"
-
-#: viewer/objecttreeparser.cpp:1748
-#, kde-format
-msgid ""
-"No mail address is stored in the %1 used for signing, so we cannot compare "
-"it to the sender's address %2."
-msgstr ""
-"Tiada alamat mel yang distor dalam %1 digunakan untuk tandatangan, jadi "
-"perbandingan dengan alamat penghantar %2 tidak boleh dibuat."
-
-#: viewer/objecttreeparser.cpp:1772
-#, kde-format
-msgid "Not enough information to check signature. %1"
-msgstr "Tidak cukup maklumat untuk menyemak tanda tangan. %1"
-
-#: viewer/objecttreeparser.cpp:1789 viewer/objecttreeparser.cpp:1863
-msgid "Message was signed with unknown key."
-msgstr "Mesej ditandatangani dengan kekunci yang tidak diketahui."
-
-#: viewer/objecttreeparser.cpp:1791 viewer/objecttreeparser.cpp:1901
-#: viewer/objecttreeparser.cpp:1943
-#, kde-format
-msgid "Message was signed by %1."
-msgstr "Mesej ditandatangani oleh %1."
-
-#: viewer/objecttreeparser.cpp:1798 viewer/objecttreeparser.cpp:1806
-#: viewer/objecttreeparser.cpp:1816
-#, kde-format
-msgid "Message was signed with key %1."
-msgstr "Mesej ditandatangani dengan kekunci %1."
-
-#: viewer/objecttreeparser.cpp:1801
-#, kde-format
-msgid "Message was signed on %1 with key %2."
-msgstr "Mesej ditandatangani pada %1 dengan kekunci %2"
-
-#: viewer/objecttreeparser.cpp:1809
-#, kde-format
-msgid "Message was signed by %3 on %1 with key %2"
-msgstr "Mesej ditandatangani oleh %3 pada %1 dengan kekunci %2"
-
-#: viewer/objecttreeparser.cpp:1819
-#, kde-format
-msgid "Message was signed by %2 with key %1."
-msgstr "Mesej ditandatangani oleh %2 dengan kekunci %1."
-
-#: viewer/objecttreeparser.cpp:1856
-#, kde-format
-msgid "Message was signed on %1 with unknown key %2."
-msgstr "Mesej ditandatangani pada %1 dengan kekunci %2 yang tidak diketahui."
-
-#: viewer/objecttreeparser.cpp:1860
-#, kde-format
-msgid "Message was signed with unknown key %1."
-msgstr "Mesej ditandatangani dengan kekunci %1 yang tidak diketahui."
-
-#: viewer/objecttreeparser.cpp:1866
-msgid "The validity of the signature cannot be verified."
-msgstr "Kesahihan tandatangan tidak boleh disahkan."
-
-#: viewer/objecttreeparser.cpp:1897 viewer/objecttreeparser.cpp:1939
-#, kde-format
-msgid "Message was signed by %2 (Key ID: %1)."
-msgstr "Mesej ditandatangani oleh %2 (ID kekunci: %1)."
-
-#: viewer/objecttreeparser.cpp:1907
-msgid "The signature is valid, but the key's validity is unknown."
-msgstr "Tandatangan sah tetapi kesahihan kekunci tidak diketahui."
-
-#: viewer/objecttreeparser.cpp:1911
-msgid "The signature is valid and the key is marginally trusted."
-msgstr "Tandatangan sah dan kekunci agak dipercayai."
-
-#: viewer/objecttreeparser.cpp:1915
-msgid "The signature is valid and the key is fully trusted."
-msgstr "Tandatangan sah dan kekunci boleh dipercayai sepenuhnya."
-
-#: viewer/objecttreeparser.cpp:1919
-msgid "The signature is valid and the key is ultimately trusted."
-msgstr "Tandatangan sah dan kekunci sangat dipercayai."
-
-#: viewer/objecttreeparser.cpp:1923
-msgid "The signature is valid, but the key is untrusted."
-msgstr "Tandatangan sah tetapi kekunci tidak boleh dipercayai."
-
-#: viewer/objecttreeparser.cpp:1946
-msgid "Warning: The signature is bad."
-msgstr "Amaran: Tandatangan rosak."
-
-#: viewer/objecttreeparser.cpp:1971
-msgid "End of signed message"
-msgstr "Penghujung mesej bertandatangan"
-
-#: viewer/objecttreeparser.cpp:2068
 #, kde-format
 msgid "Crypto plug-in \"%1\" cannot verify signatures."
 msgstr "Plugin  kripto \"%1\" tidak dapat mengesahkan tandatangan."
 
-#: viewer/objecttreeparser.cpp:2076
+#: viewer/objecttreeparser.cpp:1428
 #, kde-format
 msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
 msgid "No %1 plug-in was found."
 msgstr "Tiada %1 plug-in ditemui."
 
-#: viewer/objecttreeparser.cpp:2081
+#: viewer/objecttreeparser.cpp:1433
 #, kde-format
 msgid ""
 "The message is signed, but the validity of the signature cannot be verified."
