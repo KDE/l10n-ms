@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-03-20 07:35+0000\n"
+"POT-Creation-Date: 2016-03-26 07:49+0000\n"
 "PO-Revision-Date: 2005-11-17 12:03+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -347,11 +347,17 @@ msgstr ""
 msgid "Preview file size limit in megabytes."
 msgstr ""
 
-#: kerfuffle/cliinterface.cpp:303
-msgid "Extraction failed due to a wrong password."
+#: kerfuffle/cliinterface.cpp:197
+msgid "Extraction failed. Make sure that enough space is available."
 msgstr ""
 
-#: kerfuffle/cliinterface.cpp:313 kerfuffle/cliinterface.cpp:327
+#: kerfuffle/cliinterface.cpp:200
+msgid ""
+"Extraction failed. Make sure you provided the correct password and that "
+"enough space is available."
+msgstr ""
+
+#: kerfuffle/cliinterface.cpp:215 kerfuffle/cliinterface.cpp:229
 #, fuzzy
 #| msgid "Could not create the folder %1"
 msgctxt "@info"
@@ -360,7 +366,7 @@ msgid_plural "Could not move the extracted files to the destination directory."
 msgstr[0] "Tidak dapat cipta folder %1"
 msgstr[1] "Tidak dapat cipta folder %1"
 
-#: kerfuffle/cliinterface.cpp:495
+#: kerfuffle/cliinterface.cpp:397
 #, fuzzy, kde-format
 #| msgid "Folder to extract to"
 msgctxt "@info"
@@ -369,45 +375,50 @@ msgid_plural "Failed to locate programs <filename>%2</filename> on disk."
 msgstr[0] "Folder hendak diekstrak"
 msgstr[1] "Folder hendak diekstrak"
 
-#: kerfuffle/cliinterface.cpp:866
+#: kerfuffle/cliinterface.cpp:891
+msgctxt "@info"
+msgid "Extraction failed because the disk is full."
+msgstr ""
+
+#: kerfuffle/cliinterface.cpp:899
 msgctxt "@info"
 msgid "Extraction failed: Incorrect password"
 msgstr ""
 
-#: kerfuffle/cliinterface.cpp:873 kerfuffle/cliinterface.cpp:915
+#: kerfuffle/cliinterface.cpp:906 kerfuffle/cliinterface.cpp:948
 msgid "Extraction failed because of an unexpected error."
 msgstr ""
 
-#: kerfuffle/cliinterface.cpp:908
+#: kerfuffle/cliinterface.cpp:941
 msgid "Incorrect password."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:166
+#: kerfuffle/createdialog.cpp:165
 msgid "The chosen password does not match the given verification password."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:169
+#: kerfuffle/createdialog.cpp:168
 msgid "The password cannot be empty."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:188
+#: kerfuffle/createdialog.cpp:187
 #, kde-format
 msgid ""
 "Protection of the archive with password is not possible with the %1 format."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:201
+#: kerfuffle/createdialog.cpp:200
 #, kde-format
 msgid "Protection of the list of files is not possible with the %1 format."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:227
+#: kerfuffle/createdialog.cpp:226
 #, fuzzy
 #| msgid "An error occurred while adding the files to the archive."
 msgid "Please select a filename for the archive."
 msgstr "Ralat berlaku semasa menambah fail ke dalam arkib."
 
-#: kerfuffle/createdialog.cpp:227
+#: kerfuffle/createdialog.cpp:226
 #, fuzzy
 #| msgid "0 files selected"
 msgid "No file selected"
@@ -1231,29 +1242,16 @@ msgctxt "@info"
 msgid "<filename>%1</filename> is a directory."
 msgstr ""
 
-#: part/part.cpp:592
+#: part/part.cpp:594
 #, fuzzy, kde-format
-#| msgid "Archive already exists. Do you wish to overwrite it?"
+#| msgid "Could not create the folder %1"
 msgctxt "@info"
 msgid ""
-"The archive <filename>%1</filename> already exists. Would you like to open "
-"it instead?"
-msgstr "Arkib sudah wujud. Anda ingin menulisgantinya?"
+"Could not overwrite <filename>%1</filename>. Check whether you have write "
+"permission."
+msgstr "Tidak dapat cipta folder %1"
 
-#: part/part.cpp:592
-#, fuzzy
-#| msgid "Archive Already Exists"
-msgctxt "@title:window"
-msgid "File Exists"
-msgstr "Arkib Sudah Wujud"
-
-#: part/part.cpp:592
-#, fuzzy
-#| msgid "Open with:"
-msgid "Open File"
-msgstr "Buka dengan:"
-
-#: part/part.cpp:598
+#: part/part.cpp:600
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgctxt "@info"
@@ -1262,13 +1260,13 @@ msgid ""
 "file."
 msgstr "Arkib sudah wujud. Anda ingin menulisgantinya?"
 
-#: part/part.cpp:601
+#: part/part.cpp:603
 #, kde-format
 msgctxt "@info"
 msgid "The archive <filename>%1</filename> was not found."
 msgstr ""
 
-#: part/part.cpp:606
+#: part/part.cpp:608
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgctxt "@info"
@@ -1277,7 +1275,28 @@ msgid ""
 "possible to read from it."
 msgstr "Arkib sudah wujud. Anda ingin menulisgantinya?"
 
+#: part/part.cpp:621
+#, fuzzy, kde-format
+#| msgid "Archive already exists. Do you wish to overwrite it?"
+msgctxt "@info"
+msgid ""
+"The archive <filename>%1</filename> already exists. Do you wish to overwrite "
+"it?"
+msgstr "Arkib sudah wujud. Anda ingin menulisgantinya?"
+
 #: part/part.cpp:623
+#, fuzzy
+#| msgid "Archive Already Exists"
+msgctxt "@title:window"
+msgid "File Exists"
+msgstr "Arkib Sudah Wujud"
+
+#: part/part.cpp:624
+msgctxt "@action:button"
+msgid "Overwrite"
+msgstr ""
+
+#: part/part.cpp:645
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1285,23 +1304,23 @@ msgid ""
 "<nl/><message>%2</message>"
 msgstr ""
 
-#: part/part.cpp:666
+#: part/part.cpp:688
 #, fuzzy
 #| msgid "The archive %1 does not exist."
 msgctxt "@info"
 msgid "The archive is empty or Ark could not open its content."
 msgstr "Arkib %1 tidak wujud."
 
-#: part/part.cpp:671
+#: part/part.cpp:693
 msgctxt "@info"
 msgid "Ark does not currently support ISO files with UDF filesystem."
 msgstr ""
 
-#: part/part.cpp:718
+#: part/part.cpp:748
 msgid "Ark cannot open symlinks."
 msgstr ""
 
-#: part/part.cpp:830
+#: part/part.cpp:860
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgid ""
@@ -1309,28 +1328,28 @@ msgid ""
 "archive?"
 msgstr "Arkib sudah wujud. Anda ingin menulisgantinya?"
 
-#: part/part.cpp:832
+#: part/part.cpp:862
 #, fuzzy
 #| msgid "Files to be added"
 msgctxt "@title:window"
 msgid "File Modified"
 msgstr "Fail hendak ditambah"
 
-#: part/part.cpp:1101
+#: part/part.cpp:1131
 #, fuzzy
 #| msgid "All Files"
 msgctxt "@title:window"
 msgid "Add Files"
 msgstr "Semua Fail"
 
-#: part/part.cpp:1108
+#: part/part.cpp:1138
 #, fuzzy
 #| msgid "Add Folde&r..."
 msgctxt "@title:window"
 msgid "Add Folder"
 msgstr "Tambah &Folder..."
 
-#: part/part.cpp:1135
+#: part/part.cpp:1165
 msgctxt "@info"
 msgid "Deleting this file is not undoable. Are you sure you want to do this?"
 msgid_plural ""
@@ -1338,7 +1357,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: part/part.cpp:1138
+#: part/part.cpp:1168
 #, fuzzy
 msgctxt "@title:window"
 msgid "Delete File"
@@ -1346,14 +1365,14 @@ msgid_plural "Delete Files"
 msgstr[0] "Fail yang dipilih"
 msgstr[1] "Fail yang dipilih"
 
-#: part/part.cpp:1177
+#: part/part.cpp:1207
 #, fuzzy
 #| msgid "Save Archive As"
 msgctxt "@title:window"
 msgid "Save Archive As"
 msgstr "Simpan Arkib Sebagai"
 
-#: part/part.cpp:1184
+#: part/part.cpp:1214
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgctxt "@info"
@@ -1362,7 +1381,7 @@ msgid ""
 "want to overwrite it?"
 msgstr "Arkib sudah wujud. Anda ingin menulisgantinya?"
 
-#: part/part.cpp:1198
+#: part/part.cpp:1228
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1370,7 +1389,7 @@ msgid ""
 "location. The archive does not exist anymore."
 msgstr ""
 
-#: part/part.cpp:1212
+#: part/part.cpp:1242
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
@@ -1510,6 +1529,11 @@ msgctxt "@info"
 msgid ""
 "There was an error while reading <filename>%1</filename> during extraction."
 msgstr "Buka folder destinasi selepas pengekstrakan"
+
+#, fuzzy
+#~| msgid "Open with:"
+#~ msgid "Open File"
+#~ msgstr "Buka dengan:"
 
 #, fuzzy
 #~| msgid "Extract"
