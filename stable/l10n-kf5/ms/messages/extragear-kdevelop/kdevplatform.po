@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevplatform\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-04-22 10:42+0000\n"
+"POT-Creation-Date: 2016-05-17 11:58+0000\n"
 "PO-Revision-Date: 2009-07-05 19:31+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -155,7 +155,7 @@ msgstr "Syarat"
 msgid "Active status"
 msgstr ""
 
-#: debugger/breakpoint/breakpointmodel.cpp:201 shell/sessioncontroller.cpp:588
+#: debugger/breakpoint/breakpointmodel.cpp:201 shell/sessioncontroller.cpp:574
 #, fuzzy
 msgid "State"
 msgstr "Status"
@@ -302,9 +302,9 @@ msgstr ""
 msgid "Local Path"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
 #. i18n: ectx: property (text), widget (QPushButton, btnDelStyle)
-#: debugger/util/pathmappings.cpp:229 shell/sessiondialog.ui:72
+#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
+#: debugger/util/pathmappings.cpp:229
 #: shell/settings/sourceformattersettings.ui:195
 #: shell/workingsets/workingsettooltipwidget.cpp:96
 #: vcs/dvcs/ui/branchmanager.ui:32
@@ -546,7 +546,7 @@ msgstr ""
 msgid "Parsing: %1"
 msgstr ""
 
-#: language/backgroundparser/backgroundparser.cpp:495
+#: language/backgroundparser/backgroundparser.cpp:493
 #: shell/settings/bgpreferences.cpp:82
 msgid "Background Parser"
 msgstr ""
@@ -3006,107 +3006,73 @@ msgctxt "@title"
 msgid "Delete Session"
 msgstr "Semakan"
 
-#: shell/sessioncontroller.cpp:152
+#: shell/sessioncontroller.cpp:145
 msgid ""
 "The current session and all contained settings will be deleted. The projects "
 "will stay unaffected. Do you really want to continue?"
 msgstr ""
 
-#: shell/sessioncontroller.cpp:165
+#: shell/sessioncontroller.cpp:158
 #, fuzzy
 msgid "Rename Session"
 msgstr "Semakan"
 
-#: shell/sessioncontroller.cpp:165
+#: shell/sessioncontroller.cpp:158
 #, fuzzy
 msgid "New Session Name:"
 msgstr "Semakan"
 
-#: shell/sessioncontroller.cpp:279
+#: shell/sessioncontroller.cpp:272
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "Start New Session"
 msgstr "Semakan"
 
-#: shell/sessioncontroller.cpp:280
+#: shell/sessioncontroller.cpp:273
 msgctxt "@info:tooltip"
 msgid "Start a new KDevelop instance with an empty session"
 msgstr ""
 
-#: shell/sessioncontroller.cpp:284
+#: shell/sessioncontroller.cpp:277
 #, fuzzy
 msgid "Rename Current Session..."
 msgstr "Semakan"
 
-#: shell/sessioncontroller.cpp:288
+#: shell/sessioncontroller.cpp:281
 #, fuzzy
 msgid "Delete Current Session..."
 msgstr "Semakan"
 
-#: shell/sessioncontroller.cpp:292
+#: shell/sessioncontroller.cpp:285
 msgid "Quit"
 msgstr ""
 
-#: shell/sessioncontroller.cpp:299
-msgid "Configure Sessions..."
-msgstr ""
-
-#: shell/sessioncontroller.cpp:300
-msgid "Create/Delete/Activate Sessions"
-msgstr ""
-
-#: shell/sessioncontroller.cpp:301
-msgid "Shows a dialog to Create/Delete Sessions and set a new active session."
-msgstr ""
-
-#: shell/sessioncontroller.cpp:496
+#: shell/sessioncontroller.cpp:482
 #, kde-format
 msgid "Copy of %1"
 msgstr ""
 
-#: shell/sessioncontroller.cpp:563
+#: shell/sessioncontroller.cpp:549
 msgid "Search"
 msgstr ""
 
-#: shell/sessioncontroller.cpp:586
+#: shell/sessioncontroller.cpp:572
 msgid "Identity"
 msgstr ""
 
-#: shell/sessioncontroller.cpp:587
+#: shell/sessioncontroller.cpp:573
 #, fuzzy
 msgid "Contents"
 msgstr "Konteks"
 
-#: shell/sessioncontroller.cpp:594
+#: shell/sessioncontroller.cpp:580
 msgid "Filter:"
 msgstr ""
 
-#: shell/sessioncontroller.cpp:625
+#: shell/sessioncontroller.cpp:611
 #, fuzzy
 msgid "Create New Session"
 msgstr "Semakan"
-
-#: shell/sessiondialog.cpp:188
-msgid "Configure Sessions"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, newButton)
-#. i18n: ectx: property (text), widget (QPushButton, btnNewStyle)
-#: shell/sessiondialog.ui:34 shell/settings/sourceformattersettings.ui:181
-#: vcs/dvcs/ui/branchmanager.ui:22
-#, fuzzy
-msgid "New"
-msgstr "Baru"
-
-#. i18n: ectx: property (text), widget (QPushButton, cloneButton)
-#: shell/sessiondialog.ui:44
-msgid "Clone"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, activateButton)
-#: shell/sessiondialog.ui:59
-msgid "Make Active"
-msgstr ""
 
 #: shell/sessionlock.cpp:171
 #, kde-format
@@ -3710,6 +3676,14 @@ msgstr "Format"
 #: shell/settings/sourceformattersettings.ui:163
 msgid "Style:"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, btnNewStyle)
+#. i18n: ectx: property (text), widget (QPushButton, newButton)
+#: shell/settings/sourceformattersettings.ui:181
+#: vcs/dvcs/ui/branchmanager.ui:22
+#, fuzzy
+msgid "New"
+msgstr "Baru"
 
 #. i18n: ectx: property (text), widget (QPushButton, btnEditStyle)
 #: shell/settings/sourceformattersettings.ui:188
@@ -4623,7 +4597,7 @@ msgstr ""
 msgid "Could not create a patch for the current version."
 msgstr ""
 
-#: vcs/widgets/vcsdiffwidget.cpp:101
+#: vcs/widgets/vcsdiffwidget.cpp:97
 #, kde-format
 msgid "Difference between revision %1 and %2:"
 msgstr ""
