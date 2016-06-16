@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-06-14 08:14+0000\n"
+"POT-Creation-Date: 2016-06-16 07:44+0000\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -12284,13 +12284,16 @@ msgstr "Jenis lapisan:"
 
 #. i18n: ectx: property (text), widget (QLabel, lblProfiles)
 #. i18n: ectx: property (text), widget (QLabel, lblProfileTitle)
+#. i18n: ectx: property (text), widget (QLabel, label_4)
 #: libs/ui/forms/wdgdlgpngimport.ui:17 libs/ui/forms/wdglayerproperties.ui:131
+#: plugins/impex/video/video_export_options_dialog.ui:68
 #, fuzzy
 msgid "Profile:"
 msgstr "&Profil:"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, FilterDialog)
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgImportImageSequence)
+#. i18n: ectx: property (windowTitle), widget (QDialog, VideoExportOptionsDialog)
 #. i18n: ectx: property (windowTitle), widget (QDialog, TableOfContentsStyleConfigure)
 #. i18n: ectx: property (windowTitle), widget (QDialog, TableOfContentsConfigure)
 #. i18n: ectx: property (windowTitle), widget (QDialog, AcceptRejectChangeDialog)
@@ -12299,6 +12302,7 @@ msgstr "&Profil:"
 #: plugins/flake/textshape/dialogs/AcceptRejectChangeDialog.ui:26
 #: plugins/flake/textshape/dialogs/TableOfContentsConfigure.ui:14
 #: plugins/flake/textshape/dialogs/TableOfContentsStyleConfigure.ui:14
+#: plugins/impex/video/video_export_options_dialog.ui:14
 msgid "Dialog"
 msgstr ""
 
@@ -14026,15 +14030,16 @@ msgstr "Ofset:"
 msgid "Do not ask again (hold Shift to ask again)"
 msgstr ""
 
-#: libs/ui/kis_animation_exporter.cpp:63
+#: libs/ui/kis_animation_exporter.cpp:68
 #, fuzzy
 msgid "Export sequence"
 msgstr "Mod &tawan:"
 
-#: libs/ui/kis_animation_exporter.cpp:157 libs/ui/KisMainWindow.cpp:1717
+#: libs/ui/kis_animation_exporter.cpp:141
 #, fuzzy
-msgid "Export frames"
-msgstr "Import Imej"
+#| msgid "Export Layer"
+msgid "Export frames..."
+msgstr "Eksport Lapisan"
 
 #: libs/ui/kis_animation_importer.cpp:69 libs/ui/KisMainWindow.cpp:1693
 #, fuzzy
@@ -15182,6 +15187,11 @@ msgid ""
 msgstr ""
 "Tidak dapat buka\n"
 " %1"
+
+#: libs/ui/KisMainWindow.cpp:1717
+#, fuzzy
+msgid "Export frames"
+msgstr "Import Imej"
 
 #: libs/ui/KisMainWindow.cpp:1727
 #, fuzzy, kde-format
@@ -19003,9 +19013,11 @@ msgid ""
 "default? The changes will be applied immediately."
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QPushButton, btnResetCustomLine)
 #. i18n: ectx: property (text), widget (QPushButton, bnReset)
 #: libs/widgetutils/xmlgui/kedittoolbar.cpp:679
 #: plugins/dockers/artisticcolorselector/forms/wdgArtisticColorSelector.ui:32
+#: plugins/impex/video/video_export_options_dialog.ui:131
 #, fuzzy
 msgid "Reset"
 msgstr "&Pilih Semula"
@@ -29363,6 +29375,230 @@ msgctxt "make a very small file, but take a long time saving"
 msgid "Small"
 msgstr "Segiempat Sama Kecil"
 
+#: plugins/impex/video/kis_video_export.cpp:111
+msgid "Couldn not find 'ffmpeg' binary. Saving to video formats is impossible."
+msgstr ""
+
+#: plugins/impex/video/kis_video_export.cpp:115
+#, fuzzy
+msgid "Video Export Error"
+msgstr "Ricih menegak:"
+
+#: plugins/impex/video/video_export_options_dialog.cpp:31
+msgctxt ""
+"h264 preset name, check simplescreenrecorder for standard translations"
+msgid "ultrafast"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:32
+#, fuzzy
+msgctxt ""
+"h264 preset name, check simplescreenrecorder for standard translations"
+msgid "superfast"
+msgstr "Huraian:"
+
+#: plugins/impex/video/video_export_options_dialog.cpp:33
+msgctxt ""
+"h264 preset name, check simplescreenrecorder for standard translations"
+msgid "veryfast"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:34
+#, fuzzy
+msgctxt ""
+"h264 preset name, check simplescreenrecorder for standard translations"
+msgid "faster"
+msgstr "Tarikh"
+
+#: plugins/impex/video/video_export_options_dialog.cpp:35
+msgctxt ""
+"h264 preset name, check simplescreenrecorder for standard translations"
+msgid "fast"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:36
+msgctxt ""
+"h264 preset name, check simplescreenrecorder for standard translations"
+msgid "medium"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:37
+msgctxt ""
+"h264 preset name, check simplescreenrecorder for standard translations"
+msgid "slow"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:38
+#, fuzzy
+msgctxt ""
+"h264 preset name, check simplescreenrecorder for standard translations"
+msgid "slower"
+msgstr "&Bayang"
+
+#: plugins/impex/video/video_export_options_dialog.cpp:39
+msgctxt ""
+"h264 preset name, check simplescreenrecorder for standard translations"
+msgid "veryslow"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:40
+#, fuzzy
+msgctxt ""
+"h264 preset name, check simplescreenrecorder for standard translations"
+msgid "placebo"
+msgstr "Menggantikan "
+
+#: plugins/impex/video/video_export_options_dialog.cpp:42
+#, fuzzy
+msgctxt ""
+"h264 profile name, check simplescreenrecorder for standard translations"
+msgid "baseline"
+msgstr "Guna corak"
+
+#: plugins/impex/video/video_export_options_dialog.cpp:43
+msgctxt ""
+"h264 profile name, check simplescreenrecorder for standard translations"
+msgid "main"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:44
+msgctxt ""
+"h264 profile name, check simplescreenrecorder for standard translations"
+msgid "high"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:45
+msgctxt ""
+"h264 profile name, check simplescreenrecorder for standard translations"
+msgid "high10"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:46
+msgctxt ""
+"h264 profile name, check simplescreenrecorder for standard translations"
+msgid "high422"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:47
+msgctxt ""
+"h264 profile name, check simplescreenrecorder for standard translations"
+msgid "high444"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:49
+msgctxt ""
+"h264 tune option name, check simplescreenrecorder for standard translations"
+msgid "film"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:50
+#, fuzzy
+msgctxt ""
+"h264 tune option name, check simplescreenrecorder for standard translations"
+msgid "animation"
+msgstr "Pemutaran"
+
+#: plugins/impex/video/video_export_options_dialog.cpp:51
+#, fuzzy
+msgctxt ""
+"h264 tune option name, check simplescreenrecorder for standard translations"
+msgid "grain"
+msgstr "Kelabu"
+
+#: plugins/impex/video/video_export_options_dialog.cpp:52
+#, fuzzy
+msgctxt ""
+"h264 tune option name, check simplescreenrecorder for standard translations"
+msgid "stillimage"
+msgstr "Imej"
+
+#: plugins/impex/video/video_export_options_dialog.cpp:53
+msgctxt ""
+"h264 tune option name, check simplescreenrecorder for standard translations"
+msgid "psnr"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:54
+msgctxt ""
+"h264 tune option name, check simplescreenrecorder for standard translations"
+msgid "ssim"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:55
+msgctxt ""
+"h264 tune option name, check simplescreenrecorder for standard translations"
+msgid "fastdecode"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:56
+msgctxt ""
+"h264 tune option name, check simplescreenrecorder for standard translations"
+msgid "zerolatency"
+msgstr ""
+
+#: plugins/impex/video/video_export_options_dialog.cpp:116
+msgctxt "kilo-bits-per-second, video bitrate suffix"
+msgid "kbps"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbCodec)
+#: plugins/impex/video/video_export_options_dialog.ui:21
+msgid "H.264, MPEG-4 Part 10"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbCodec)
+#: plugins/impex/video/video_export_options_dialog.ui:26
+msgid "Theora"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/impex/video/video_export_options_dialog.ui:41
+#, fuzzy
+msgid "Constant Rate Factor:"
+msgstr "Nisbah &Sekatan"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/impex/video/video_export_options_dialog.ui:58
+#, fuzzy
+msgid "Preset:"
+msgstr "Ciri Lapisan"
+
+#. i18n: ectx: property (text), widget (QLabel, lblTune)
+#: plugins/impex/video/video_export_options_dialog.ui:78
+msgid "Tune:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/impex/video/video_export_options_dialog.ui:92
+#, fuzzy
+msgid "Bitrate:"
+msgstr "Putar"
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkCustomLine)
+#: plugins/impex/video/video_export_options_dialog.ui:115
+#, fuzzy
+msgid "Custom Options:"
+msgstr "Pilihan geometri"
+
+#. i18n: ectx: property (toolTip), widget (QLineEdit, txtCustomLine)
+#: plugins/impex/video/video_export_options_dialog.ui:124
+msgid ""
+"Add any ffmpeg filtering options here. It will be put between source and "
+"destination streams of the ffmpeg"
+msgstr ""
+
+#: plugins/impex/video/video_saver.cpp:285
+#, fuzzy
+msgid "Fetching palette..."
+msgstr "Pelet"
+
+#: plugins/impex/video/video_saver.cpp:304
+#: plugins/impex/video/video_saver.cpp:320
+#, fuzzy
+#| msgid "Export Layer"
+msgid "Encoding frames..."
+msgstr "Eksport Lapisan"
+
 #: plugins/paintops/chalk/chalk_paintop_plugin.cpp:41
 #, fuzzy
 msgid "Chalk"
@@ -33790,11 +34026,6 @@ msgstr ""
 #~ msgstr "Berus Pemilihan"
 
 #, fuzzy
-#~| msgid "Export Layer"
-#~ msgid "Exporting frames..."
-#~ msgstr "Eksport Lapisan"
-
-#, fuzzy
 #~ msgid "Choose Filter"
 #~ msgstr "Penapis"
 
@@ -35822,10 +36053,6 @@ msgstr ""
 #~ msgstr "Serupa"
 
 #, fuzzy
-#~ msgid "Preset:"
-#~ msgstr "Ciri Lapisan"
-
-#, fuzzy
 #~ msgid "&Bumpmap source layer:"
 #~ msgstr "Bumpmap"
 
@@ -36824,10 +37051,6 @@ msgstr ""
 #~ msgstr "Penyembur"
 
 #, fuzzy
-#~ msgid "Glsl Image"
-#~ msgstr "Imej"
-
-#, fuzzy
 #~| msgid "Shear layer"
 #~ msgid "New Panorama Layer"
 #~ msgstr "Ricih lapisan"
@@ -36900,10 +37123,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "broom"
 #~ msgstr "&Pen Alat"
-
-#, fuzzy
-#~ msgid "Replace"
-#~ msgstr "Menggantikan "
 
 #, fuzzy
 #~ msgid "KritaShape Tool"
@@ -37756,10 +37975,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Basic color:"
 #~ msgstr "&Warna:"
-
-#, fuzzy
-#~ msgid "Grainy"
-#~ msgstr "Kelabu"
 
 #, fuzzy
 #~ msgid "Fine &fiber:"
