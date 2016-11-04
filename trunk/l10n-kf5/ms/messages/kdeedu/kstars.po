@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-03 07:23+0000\n"
+"POT-Creation-Date: 2016-11-04 07:13+0000\n"
 "PO-Revision-Date: 2007-02-24 13:11+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -180,7 +180,7 @@ msgid "Visible Satellites"
 msgstr "Imej"
 
 #: auxiliary/colorscheme.cpp:89 dialogs/finddialog.cpp:52
-#: kstarsactions.cpp:667 kstarslite/dialogs/finddialoglite.cpp:53
+#: kstarsactions.cpp:727 kstarslite/dialogs/finddialoglite.cpp:53
 #, fuzzy
 msgid "Satellites"
 msgstr "Bandar nama"
@@ -191,7 +191,7 @@ msgid "Satellites Labels"
 msgstr "Bandar nama"
 
 #: auxiliary/colorscheme.cpp:91 dialogs/finddialog.cpp:51
-#: kstarsactions.cpp:670 kstarslite/dialogs/finddialoglite.cpp:52
+#: kstarsactions.cpp:730 kstarslite/dialogs/finddialoglite.cpp:52
 #, fuzzy
 msgid "Supernovae"
 msgstr "Bandar nama"
@@ -261,7 +261,7 @@ msgstr "Setempat fail."
 #: ekos/scheduler/scheduler.cpp:3169 ekos/scheduler/scheduler.cpp:3468
 #: ekos/scheduler/scheduler.cpp:3869 ekos/scheduler/scheduler.cpp:4594
 #: ekos/scheduler/scheduler.cpp:4623 ekos/scheduler/scheduler.cpp:4665
-#: indi/drivermanager.cpp:1465 indi/indidriver.cpp:946 kstarsactions.cpp:965
+#: indi/drivermanager.cpp:1465 indi/indidriver.cpp:946 kstarsactions.cpp:1025
 #: oal/execute.cpp:317 options/opscolors.cpp:212 tools/modcalcangdist.cpp:134
 #: tools/modcalcapcoord.cpp:151 tools/modcalcdaylength.cpp:247
 #: tools/modcalcgalcoord.cpp:192 tools/modcalcgeodcoord.cpp:230
@@ -292,6 +292,16 @@ msgstr "Tidak sah."
 #, fuzzy
 msgid "Invalid Filename"
 msgstr "nama fail adalah %s"
+
+#: auxiliary/filedownloader.cpp:96
+#, fuzzy
+msgid "Downloading"
+msgstr "Data LPD"
+
+#: auxiliary/filedownloader.cpp:101
+#, fuzzy
+msgid "Downloading Data..."
+msgstr "Data LPD"
 
 #: auxiliary/fov.cpp:51 kstarslite/skyitems/fovitem.cpp:25
 #, fuzzy
@@ -419,7 +429,7 @@ msgstr "Path imej boot:        %s"
 
 #: auxiliary/imageviewer.cpp:333 dialogs/addcatdialog.cpp:212
 #: ekos/capture/capture.cpp:2463 ekos/scheduler/scheduler.cpp:3435
-#: fitsviewer/fitstab.cpp:275 kstarsactions.cpp:838 printing/pwizprint.cpp:88
+#: fitsviewer/fitstab.cpp:275 kstarsactions.cpp:898 printing/pwizprint.cpp:88
 #: tools/scriptbuilder.cpp:839
 #, fuzzy, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
@@ -427,7 +437,7 @@ msgstr "Fail bernama \"%1\" telah wujud. Tulis gantikan ia?"
 
 #: auxiliary/imageviewer.cpp:335 dialogs/addcatdialog.cpp:214
 #: ekos/capture/capture.cpp:2465 ekos/scheduler/scheduler.cpp:3437
-#: fitsviewer/fitstab.cpp:277 kstarsactions.cpp:839 printing/pwizprint.cpp:89
+#: fitsviewer/fitstab.cpp:277 kstarsactions.cpp:899 printing/pwizprint.cpp:89
 #: tools/scriptbuilder.cpp:841
 #, fuzzy
 msgid "Overwrite File?"
@@ -1363,7 +1373,7 @@ msgstr "Tersendiri fail for."
 msgid "Could not Open File"
 msgstr "tidak dapat membuka fail tetapan `%s': %s"
 
-#: dialogs/detaildialog.cpp:664 kstarsactions.cpp:700
+#: dialogs/detaildialog.cpp:664 kstarsactions.cpp:760
 msgid "Advanced"
 msgstr "Lanjutan"
 
@@ -1943,7 +1953,7 @@ msgstr "Sebarang"
 msgid "Stars"
 msgstr "Bintang"
 
-#: dialogs/finddialog.cpp:42 kstarsactions.cpp:664 kstarsinit.cpp:444
+#: dialogs/finddialog.cpp:42 kstarsactions.cpp:724 kstarsinit.cpp:444
 #: kstarslite/dialogs/finddialoglite.cpp:43 tools/astrocalc.cpp:181
 #: tools/conjunctions.cpp:78
 #, fuzzy
@@ -4871,7 +4881,7 @@ msgid "Count"
 msgstr "Kira:"
 
 #. i18n: ectx: property (text), widget (QPushButton, previewB)
-#: ekos/capture/capture.ui:388 fitsviewer/fitsviewer.cpp:468
+#: ekos/capture/capture.ui:388 fitsviewer/fitsviewer.cpp:473
 #: indi/indiccd.cpp:1315
 #, fuzzy
 msgid "Preview"
@@ -5680,7 +5690,7 @@ msgstr "CCDB"
 
 #. i18n: ectx: property (text), widget (QCheckBox, alignStepCheck)
 #: ekos/ekosmanager.cpp:1436 ekos/scheduler/scheduler.ui:184
-#: fitsviewer/fitsviewer.cpp:380
+#: fitsviewer/fitsviewer.cpp:385
 #, fuzzy
 msgid "Align"
 msgstr "Pada Ahli:"
@@ -5689,7 +5699,7 @@ msgstr "Pada Ahli:"
 #. i18n: ectx: property (text), widget (QCheckBox, focusStepCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FocusLogging)
 #: ekos/ekosmanager.cpp:1463 ekos/ekosmanager.ui:926
-#: ekos/scheduler/scheduler.ui:168 fitsviewer/fitsviewer.cpp:372
+#: ekos/scheduler/scheduler.ui:168 fitsviewer/fitsviewer.cpp:377
 #: options/opsadvanced.ui:361
 msgid "Focus"
 msgstr ""
@@ -5705,7 +5715,7 @@ msgstr "Kira:"
 #. i18n: ectx: property (text), widget (QCheckBox, guideStepCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_GuideLogging)
 #: ekos/ekosmanager.cpp:1547 ekos/ekosmanager.ui:1598 ekos/guide/guide.ui:115
-#: ekos/scheduler/scheduler.ui:200 fitsviewer/fitsviewer.cpp:376
+#: ekos/scheduler/scheduler.ui:200 fitsviewer/fitsviewer.cpp:381
 #: options/opsadvanced.ui:374
 msgid "Guide"
 msgstr ""
@@ -5736,7 +5746,7 @@ msgid "Failed to update site location to %1. City not found."
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, EkosManager)
-#: ekos/ekosmanager.ui:26 kstarsactions.cpp:686 kstarsinit.cpp:430
+#: ekos/ekosmanager.ui:26 kstarsactions.cpp:746 kstarsinit.cpp:430
 msgid "Ekos"
 msgstr ""
 
@@ -6696,7 +6706,7 @@ msgid "Control"
 msgstr "Bandar nama"
 
 #. i18n: ectx: property (text), widget (QPushButton, calibrateB)
-#: ekos/guide/guide.ui:78 fitsviewer/fitsviewer.cpp:368
+#: ekos/guide/guide.ui:78 fitsviewer/fitsviewer.cpp:373
 #, fuzzy
 msgid "Calibrate"
 msgstr "Bandar nama"
@@ -7697,11 +7707,11 @@ msgstr "Amaran Akhir"
 msgid "Internal or External Plate Solver."
 msgstr ""
 
-#: ekos/opsekos.cpp:39
+#: ekos/opsekos.cpp:43
 msgid "Internal or External Astrometry.cfg."
 msgstr ""
 
-#: ekos/opsekos.cpp:42
+#: ekos/opsekos.cpp:50
 msgid "Internal or External WCS Info."
 msgstr ""
 
@@ -7883,7 +7893,7 @@ msgid "Always apply auto stretch to captured images in FITS Viewer"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoStretch)
-#: ekos/opsekos.ui:332 fitsviewer/fitsviewer.cpp:65
+#: ekos/opsekos.ui:332 fitsviewer/fitsviewer.cpp:68
 #, fuzzy
 msgid "Auto Stretch"
 msgstr "Auto _Pilih"
@@ -9713,74 +9723,74 @@ msgstr "Kedudukan"
 msgid "Repositioning complete"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsdata.cpp:149 fitsviewer/fitsdatalite.cpp:137
+#: fitsviewer/fitsdata.cpp:147 fitsviewer/fitsdatalite.cpp:137
 #, fuzzy, kde-format
 msgid "Could not open file %1. Error %2"
 msgstr "tidak dapat membuka fail tetapan `%s': %s"
 
-#: fitsviewer/fitsdata.cpp:151 fitsviewer/fitsdata.cpp:163
-#: fitsviewer/fitsdata.cpp:173 fitsviewer/fitsdata.cpp:201
-#: fitsviewer/fitsdata.cpp:215 fitsviewer/fitsdata.cpp:248
+#: fitsviewer/fitsdata.cpp:149 fitsviewer/fitsdata.cpp:161
+#: fitsviewer/fitsdata.cpp:171 fitsviewer/fitsdata.cpp:199
+#: fitsviewer/fitsdata.cpp:213 fitsviewer/fitsdata.cpp:246
 #, fuzzy
 msgid "FITS Open"
 msgstr "Skala"
 
-#: fitsviewer/fitsdata.cpp:161 fitsviewer/fitsdatalite.cpp:148
+#: fitsviewer/fitsdata.cpp:159 fitsviewer/fitsdatalite.cpp:148
 #, fuzzy, kde-format
 msgid "FITS file open error (fits_get_img_param): %1"
 msgstr "Tidak dapat memuatkan fail!"
 
-#: fitsviewer/fitsdata.cpp:171 fitsviewer/fitsdatalite.cpp:157
+#: fitsviewer/fitsdata.cpp:169 fitsviewer/fitsdatalite.cpp:157
 msgid "1D FITS images are not supported in KStars."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:199 fitsviewer/fitsdatalite.cpp:184
+#: fitsviewer/fitsdata.cpp:197 fitsviewer/fitsdatalite.cpp:184
 #, kde-format
 msgid "Bit depth %1 is not supported."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:213 fitsviewer/fitsdatalite.cpp:197
+#: fitsviewer/fitsdata.cpp:211 fitsviewer/fitsdatalite.cpp:197
 #, kde-format
 msgid "Image has invalid dimensions %1x%2"
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:246 fitsviewer/fitsdatalite.cpp:229
+#: fitsviewer/fitsdata.cpp:244 fitsviewer/fitsdatalite.cpp:229
 #, fuzzy, kde-format
 msgid "Error reading image: %1"
 msgstr "Menambah untuk kebergantungan:\n"
 
-#: fitsviewer/fitsdata.cpp:2491
+#: fitsviewer/fitsdata.cpp:2493
 msgid "Only 8 and 16 bits bayered images supported."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2491 fitsviewer/fitsdata.cpp:2558
+#: fitsviewer/fitsdata.cpp:2493 fitsviewer/fitsdata.cpp:2560
 #, fuzzy
 msgid "Debayer error"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsdata.cpp:2516
+#: fitsviewer/fitsdata.cpp:2518
 msgid "Unable to allocate memory for bayer buffer."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2516 kstarsactions.cpp:804
+#: fitsviewer/fitsdata.cpp:2518 kstarsactions.cpp:864
 #, fuzzy
 msgid "Open FITS"
 msgstr "tidak dapat membuka %s!\n"
 
-#: fitsviewer/fitsdata.cpp:2551
+#: fitsviewer/fitsdata.cpp:2553
 msgid "Unable to allocate memory for temporary bayer buffer."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2551 fitsviewer/fitsdata.cpp:2576
+#: fitsviewer/fitsdata.cpp:2553 fitsviewer/fitsdata.cpp:2578
 msgid "Debayer Error"
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2558
+#: fitsviewer/fitsdata.cpp:2560
 #, kde-format
 msgid "Debayer failed (%1)"
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2576
+#: fitsviewer/fitsdata.cpp:2578
 msgid "Unable to allocate memory for debayerd buffer."
 msgstr ""
 
@@ -9867,15 +9877,15 @@ msgid "Y Offset:"
 msgstr "masa :"
 
 #. i18n: ectx: property (text), widget (QLineEdit, statusEdit)
-#: fitsviewer/fitsdebayer.ui:130 fitsviewer/fitsviewer.cpp:413
-#: fitsviewer/fitsviewer.cpp:974
+#: fitsviewer/fitsdebayer.ui:130 fitsviewer/fitsviewer.cpp:418
+#: fitsviewer/fitsviewer.cpp:979
 #, fuzzy
 msgid "Ready."
 msgstr "Bandar nama"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, fitsHeaderDialog)
 #: fitsviewer/fitsheaderdialog.ui:13 fitsviewer/fitstab.cpp:202
-#: fitsviewer/fitsviewer.cpp:159
+#: fitsviewer/fitsviewer.cpp:164
 #, fuzzy
 msgid "FITS Header"
 msgstr "BUANG HEADER [%s]"
@@ -9935,7 +9945,7 @@ msgid "Square Root Scale"
 msgstr "Tetapkan Katalaluan Root"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, FITSHistogramUI)
-#: fitsviewer/fitshistogramui.ui:32 fitsviewer/fitsviewer.cpp:141
+#: fitsviewer/fitshistogramui.ui:32 fitsviewer/fitsviewer.cpp:146
 #, fuzzy
 msgid "Histogram"
 msgstr "\t%d rekod histogram\n"
@@ -9954,7 +9964,7 @@ msgstr "Jumlah Maksimum Sambungan:"
 
 #. i18n: ectx: property (text), widget (QLabel, maxLabel_2)
 #. i18n: ectx: property (text), widget (QLabel, meanLabel_2)
-#: fitsviewer/fitshistogramui.ui:120 fitsviewer/fitsviewer.cpp:66
+#: fitsviewer/fitshistogramui.ui:120 fitsviewer/fitsviewer.cpp:69
 #: fitsviewer/statform.ui:121
 #, fuzzy
 msgid "Median"
@@ -10001,7 +10011,7 @@ msgstr "Skala"
 msgid "&Apply"
 msgstr ""
 
-#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:700
+#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:705
 #, fuzzy
 msgid "Save Changes to FITS?"
 msgstr "Berbalik ke yang Ter_akhir Disimpan"
@@ -10076,108 +10086,108 @@ msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:65
+#: fitsviewer/fitsviewer.cpp:68
 #, fuzzy
 msgid "High Contrast"
 msgstr "Kontras:"
 
-#: fitsviewer/fitsviewer.cpp:66
+#: fitsviewer/fitsviewer.cpp:69
 msgid "Equalize"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:66
+#: fitsviewer/fitsviewer.cpp:69
 #, fuzzy
 msgid "High Pass"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsviewer.cpp:67 fitsviewer/fitsviewer.cpp:125
+#: fitsviewer/fitsviewer.cpp:70 fitsviewer/fitsviewer.cpp:130
 #, fuzzy
 msgid "Rotate Right"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsviewer.cpp:67 fitsviewer/fitsviewer.cpp:129
+#: fitsviewer/fitsviewer.cpp:70 fitsviewer/fitsviewer.cpp:134
 #, fuzzy
 msgid "Rotate Left"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsviewer.cpp:68 fitsviewer/fitsviewer.cpp:133
+#: fitsviewer/fitsviewer.cpp:71 fitsviewer/fitsviewer.cpp:138
 #, fuzzy
 msgid "Flip Horizontal"
 msgstr "Atas Ufuk"
 
-#: fitsviewer/fitsviewer.cpp:68 fitsviewer/fitsviewer.cpp:137
+#: fitsviewer/fitsviewer.cpp:71 fitsviewer/fitsviewer.cpp:142
 #, fuzzy
 msgid "Flip Vertical"
 msgstr "Lanjutan URL uketerangan atau"
 
-#: fitsviewer/fitsviewer.cpp:165
+#: fitsviewer/fitsviewer.cpp:170
 msgid "Debayer..."
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:169
+#: fitsviewer/fitsviewer.cpp:174
 #, fuzzy
 msgid "Auto stretch"
 msgstr "Auto _Pilih"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, statForm)
-#: fitsviewer/fitsviewer.cpp:200 fitsviewer/statform.ui:14
+#: fitsviewer/fitsviewer.cpp:205 fitsviewer/statform.ui:14
 #, fuzzy
 msgid "Statistics"
 msgstr "Statistik:"
 
-#: fitsviewer/fitsviewer.cpp:205
+#: fitsviewer/fitsviewer.cpp:210
 #, fuzzy
 msgid "Show Cross Hairs"
 msgstr "Pusat Konfigurasi Menu"
 
-#: fitsviewer/fitsviewer.cpp:211
+#: fitsviewer/fitsviewer.cpp:216
 #, fuzzy
 msgid "Show Pixel Gridlines"
 msgstr "Jangan papar dua baris bantuan"
 
-#: fitsviewer/fitsviewer.cpp:217 fitsviewer/fitsviewer.cpp:869
+#: fitsviewer/fitsviewer.cpp:222 fitsviewer/fitsviewer.cpp:874
 #, fuzzy
 msgid "Show Equatorial Gridlines"
 msgstr "Kordinat Bulan"
 
-#: fitsviewer/fitsviewer.cpp:224 fitsviewer/fitsviewer.cpp:871
+#: fitsviewer/fitsviewer.cpp:229 fitsviewer/fitsviewer.cpp:876
 #, fuzzy
 msgid "Show Objects in Image"
 msgstr "Papar _Bantuan"
 
-#: fitsviewer/fitsviewer.cpp:231 fitsviewer/fitsviewer.cpp:879
+#: fitsviewer/fitsviewer.cpp:236 fitsviewer/fitsviewer.cpp:884
 msgid ""
 "Center Telescope\n"
 "*No Telescopes Detected*"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:238
+#: fitsviewer/fitsviewer.cpp:243
 msgid "Zoom To Fit"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:242 fitsviewer/fitsviewer.cpp:945
+#: fitsviewer/fitsviewer.cpp:247 fitsviewer/fitsviewer.cpp:950
 #, fuzzy
 msgid "Mark Stars"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsviewer.cpp:265
+#: fitsviewer/fitsviewer.cpp:270
 #, fuzzy
 msgid "KStars FITS Viewer"
 msgstr "Selamat Datang hingga Pemapar"
 
-#: fitsviewer/fitsviewer.cpp:503
+#: fitsviewer/fitsviewer.cpp:508
 #, kde-format
 msgid "%1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:570
+#: fitsviewer/fitsviewer.cpp:575
 #, fuzzy
 msgid "Open FITS Image"
 msgstr "tidak dapat membuka %s!\n"
 
-#: fitsviewer/fitsviewer.cpp:701
+#: fitsviewer/fitsviewer.cpp:706
 #, fuzzy, kde-format
 #| msgid ""
 #| "The current script has unsaved changes.  Would you like to save before "
@@ -10187,38 +10197,38 @@ msgstr ""
 "Skrip semasa mempunyai perubahan tidak disimpan. Adakah anda hendak "
 "menyimpan sebelum menutupnya?"
 
-#: fitsviewer/fitsviewer.cpp:875
+#: fitsviewer/fitsviewer.cpp:880
 #, fuzzy
 msgid ""
 "Center Telescope\n"
 "*Ready*"
 msgstr "Nama sudah digunakan"
 
-#: fitsviewer/fitsviewer.cpp:884
+#: fitsviewer/fitsviewer.cpp:889
 msgid ""
 "Show Equatorial Gridlines\n"
 "*No WCS Info*"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:886
+#: fitsviewer/fitsviewer.cpp:891
 #, fuzzy
 msgid ""
 "Center Telescope\n"
 "*No WCS Info*"
 msgstr "Nama sudah digunakan"
 
-#: fitsviewer/fitsviewer.cpp:888
+#: fitsviewer/fitsviewer.cpp:893
 msgid ""
 "Show Objects in Image\n"
 "*No WCS Info*"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:950
+#: fitsviewer/fitsviewer.cpp:955
 #, fuzzy
 msgid "Unmark Stars"
 msgstr "Bandar nama"
 
-#: fitsviewer/fitsviewer.cpp:968
+#: fitsviewer/fitsviewer.cpp:973
 #, fuzzy, kde-format
 msgid "Processing %1..."
 msgstr "Pada Ahli:"
@@ -10624,12 +10634,12 @@ msgstr ""
 msgid "Internal or External INDI Drivers."
 msgstr ""
 
-#: indi/opsindi.cpp:90
+#: indi/opsindi.cpp:100
 #, fuzzy
 msgid "FITS Default Directory"
 msgstr "Default Pilihan Direktori:"
 
-#: indi/opsindi.cpp:98
+#: indi/opsindi.cpp:108
 #, fuzzy
 msgid "INDI Drivers Directory"
 msgstr "Log Pelayan MySQL"
@@ -11245,17 +11255,17 @@ msgstr "Pusat Konfigurasi Menu"
 msgid "KStars"
 msgstr "KStars"
 
-#: kstars.cpp:222 kstarsactions.cpp:1118 skymap.cpp:381
+#: kstars.cpp:222 kstarsactions.cpp:1178 skymap.cpp:381
 #, fuzzy
 msgid "Stop &Tracking"
 msgstr "Henti $arahan"
 
-#: kstars.cpp:227 kstarsactions.cpp:1233 kstarsinit.cpp:259
+#: kstars.cpp:227 kstarsactions.cpp:1293 kstarsinit.cpp:259
 #, fuzzy
 msgid "Switch to horizonal view (Horizontal &Coordinates)"
 msgstr "Kordinat Bulan"
 
-#: kstars.cpp:227 kstarsactions.cpp:1239 kstarsinit.cpp:259
+#: kstars.cpp:227 kstarsactions.cpp:1299 kstarsinit.cpp:259
 #, fuzzy
 msgid "Switch to star globe view (Equatorial &Coordinates)"
 msgstr "Kordinat Bulan"
@@ -43585,65 +43595,65 @@ msgstr "Tetapan Rangkaian Lain-lain"
 msgid "Equipment Settings - Equipment Type and Parameters"
 msgstr ""
 
-#: kstarsactions.cpp:534 kstarsactions.cpp:551 kstarsactions.cpp:565
-#: kstarsactions.cpp:585
+#: kstarsactions.cpp:548 kstarsactions.cpp:580 kstarsactions.cpp:609
+#: kstarsactions.cpp:644
 msgid ""
 "Unable to find INDI server. Please make sure the package that provides the "
 "'indiserver' binary is installed."
 msgstr ""
 
-#: kstarsactions.cpp:661
+#: kstarsactions.cpp:721
 #, fuzzy
 msgid "Catalogs"
 msgstr "Carta StarChart"
 
-#: kstarsactions.cpp:673
+#: kstarsactions.cpp:733
 #, fuzzy
 msgid "Guides"
 msgstr "Bandar nama"
 
-#: kstarsactions.cpp:676
+#: kstarsactions.cpp:736
 msgid "Colors"
 msgstr "Warna"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_INDILogging)
-#: kstarsactions.cpp:681 options/opsadvanced.ui:312
+#: kstarsactions.cpp:741 options/opsadvanced.ui:312
 #, fuzzy
 msgid "INDI"
 msgstr "nama"
 
-#: kstarsactions.cpp:696
+#: kstarsactions.cpp:756
 #, fuzzy
 msgid "Xplanet"
 msgstr "Planet"
 
-#: kstarsactions.cpp:786
+#: kstarsactions.cpp:846
 #, fuzzy
 msgid "KStars::slotFind() - Not enough memory for dialog"
 msgstr "Tidak for"
 
-#: kstarsactions.cpp:827
+#: kstarsactions.cpp:887
 #, fuzzy
 msgid "Export Image"
 msgstr "Nama Volum _Logikal:"
 
-#: kstarsactions.cpp:864 tools/scriptbuilder.cpp:764
+#: kstarsactions.cpp:924 tools/scriptbuilder.cpp:764
 #: tools/scriptbuilder.cpp:826
 msgctxt "Filter by file type: KStars Scripts."
 msgid "KStars Scripts (*.kstars)"
 msgstr ""
 
-#: kstarsactions.cpp:873
+#: kstarsactions.cpp:933
 #, fuzzy
 msgid "Executing remote scripts is not supported."
 msgstr "Selesai"
 
-#: kstarsactions.cpp:964 oal/execute.cpp:316 tools/observinglist.cpp:842
+#: kstarsactions.cpp:1024 oal/execute.cpp:316 tools/observinglist.cpp:842
 #, fuzzy, kde-format
 msgid "Could not open file %1"
 msgstr "tidak dapat membuka fail tetapan `%s': %s"
 
-#: kstarsactions.cpp:990
+#: kstarsactions.cpp:1050
 #, fuzzy
 msgid ""
 "The selected script contains unrecognized elements, indicating that it was "
@@ -43652,28 +43662,28 @@ msgid ""
 "it anyway?"
 msgstr "mengandungi dan seperti hingga?"
 
-#: kstarsactions.cpp:994
+#: kstarsactions.cpp:1054
 #, fuzzy
 msgid "Script Validation Failed"
 msgstr "Gagal menerima %s: %s"
 
-#: kstarsactions.cpp:994
+#: kstarsactions.cpp:1054
 #, fuzzy
 msgid "Run Nevertheless"
 msgstr "Laksana Alat"
 
-#: kstarsactions.cpp:999
+#: kstarsactions.cpp:1059
 #, fuzzy, kde-format
 #| msgid "Sunset: %1"
 msgid "Running script: %1"
 msgstr "Terbenam matahari: %1"
 
-#: kstarsactions.cpp:1013
+#: kstarsactions.cpp:1073
 #, fuzzy
 msgid "Script finished."
 msgstr "Nama Pengguna"
 
-#: kstarsactions.cpp:1022
+#: kstarsactions.cpp:1082
 #, fuzzy
 msgid ""
 "You can save printer ink by using the \"Star Chart\" color scheme, which "
@@ -43681,65 +43691,65 @@ msgid ""
 "Chart color scheme for printing?"
 msgstr "Anda Bintang latar belakang seperti hingga hingga Bintang for?"
 
-#: kstarsactions.cpp:1027
+#: kstarsactions.cpp:1087
 #, fuzzy
 msgid "Switch to Star Chart Colors?"
 msgstr "hingga Bintang Warna?"
 
-#: kstarsactions.cpp:1028
+#: kstarsactions.cpp:1088
 #, fuzzy
 msgid "Switch Color Scheme"
 msgstr "Kod sumber Scheme"
 
-#: kstarsactions.cpp:1028
+#: kstarsactions.cpp:1088
 #, fuzzy
 msgid "Do Not Switch"
 msgstr "_Jangan Format"
 
-#: kstarsactions.cpp:1100 kstarsinit.cpp:230
+#: kstarsactions.cpp:1160 kstarsinit.cpp:230
 #, fuzzy
 msgid "Engage &Tracking"
 msgstr "Henti $arahan"
 
-#: kstarsactions.cpp:1191
+#: kstarsactions.cpp:1251
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 degrees"
 msgstr ""
 
-#: kstarsactions.cpp:1194
+#: kstarsactions.cpp:1254
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 arcminutes"
 msgstr ""
 
-#: kstarsactions.cpp:1198
+#: kstarsactions.cpp:1258
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 arcseconds"
 msgstr ""
 
-#: kstarsactions.cpp:1212
+#: kstarsactions.cpp:1272
 #, fuzzy
 msgctxt "The user should enter an angle for the field-of-view of the display"
 msgid "Enter Desired Field-of-View Angle"
 msgstr "for bagi bagi Medan bagi Lihat Sudut"
 
-#: kstarsactions.cpp:1213
+#: kstarsactions.cpp:1273
 #, fuzzy
 msgid "Enter a field-of-view angle in degrees: "
 msgstr "Enter bagi inci darjah "
 
-#: kstarsactions.cpp:1345
+#: kstarsactions.cpp:1405
 msgid "Attempt to determine from image"
 msgstr ""
 
-#: kstarsactions.cpp:1346
+#: kstarsactions.cpp:1406
 #, fuzzy
 msgid "Eyepiece View: Choose a field-of-view"
 msgstr "Pilih for bagi"
 
-#: kstarsactions.cpp:1346
+#: kstarsactions.cpp:1406
 msgid "FOV to render eyepiece view for:"
 msgstr ""
 
