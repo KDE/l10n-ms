@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2006-10-05 19:47+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -90,6 +90,34 @@ msgstr "Ubah Variabel Ke"
 #, kde-format
 msgid "&Tools"
 msgstr ""
+
+#: part/commands/KWChangePageStyleCommand.cpp:24
+#, fuzzy
+#| msgid "Framestyle:"
+msgctxt "(qtundo-format)"
+msgid "Set Page Style"
+msgstr "Gaya Bingkai:"
+
+#: part/commands/KWNewPageStyleCommand.cpp:25
+#, fuzzy
+#| msgid "Insert Page"
+msgctxt "(qtundo-format)"
+msgid "Insert Page Style"
+msgstr "Selitkan Halaman"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:29
+#, fuzzy
+#| msgid "Frame Properties"
+msgctxt "(qtundo-format)"
+msgid "Page Properties"
+msgstr "Ciri Bingkai"
+
+#: part/commands/KWShapeCreateCommand.cpp:55
+#, fuzzy
+#| msgid "Create Text Frame"
+msgctxt "(qtundo-format)"
+msgid "Create shape"
+msgstr "Cipta Bingkai Teks"
 
 #: part/dialogs/KWAnchoringProperties.cpp:434
 #, fuzzy, kde-format
@@ -381,6 +409,13 @@ msgstr "Teks Berada Di dalam"
 msgid "Connect Text Frames"
 msgstr "Sambung Bingkai Teks"
 
+#: part/dialogs/KWFrameDialog.cpp:79
+#, fuzzy
+#| msgid "Frame Properties"
+msgctxt "(qtundo-format)"
+msgid "Change Shape Properties"
+msgstr "Ciri Bingkai"
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpAnchor)
 #: part/dialogs/KWInsertImage.ui:17
 #, kde-format
@@ -553,16 +588,23 @@ msgstr "Penutup"
 msgid "Delete"
 msgstr "Hapuskan Baris"
 
-#: part/dialogs/KWPageSettingsDialog.cpp:224
-#, fuzzy, kde-format
+#: part/dialogs/KWPageSettingsDialog.cpp:150
+#, fuzzy
 #| msgid "Framestyle:"
-msgid "Clone Page Style"
+msgctxt "(qtundo-format)"
+msgid "Change Page Style"
 msgstr "Gaya Bingkai:"
 
 #: part/dialogs/KWPageSettingsDialog.cpp:224
 #, kde-format
 msgid "Add a new page style with the name:"
 msgstr ""
+
+#: part/dialogs/KWPageSettingsDialog.cpp:224
+#, fuzzy, kde-format
+#| msgid "Framestyle:"
+msgid "Clone Page Style"
+msgstr "Gaya Bingkai:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: part/dialogs/KWRunAroundProperties.ui:17
@@ -685,15 +727,15 @@ msgstr "Salam pengenalan"
 
 #: part/dockers/KWNavigationWidget.cpp:108
 #, fuzzy, kde-format
-#| msgid "Instructions"
-msgid "Section"
-msgstr "Arahan"
-
-#: part/dockers/KWNavigationWidget.cpp:108
-#, fuzzy, kde-format
 #| msgid "&Page"
 msgid "Page #"
 msgstr "&Halaman"
+
+#: part/dockers/KWNavigationWidget.cpp:108
+#, fuzzy, kde-format
+#| msgid "Instructions"
+msgid "Section"
+msgstr "Arahan"
 
 #: part/dockers/KWRdfDocker.cpp:52
 #, kde-format
@@ -1110,14 +1152,14 @@ msgstr "Pemproses Kata KOffice"
 msgid "Copyright 1998-%1, The Words Team"
 msgstr "(c) 1998-2005, KWord Team"
 
-#: part/KWAboutData.h:45
-#, kde-format
-msgid "Pierre Ducroquet"
-msgstr ""
-
 #: part/KWAboutData.h:45 part/KWAboutData.h:46
 #, kde-format
 msgid "Co maintainer"
+msgstr ""
+
+#: part/KWAboutData.h:45
+#, kde-format
+msgid "Pierre Ducroquet"
 msgstr ""
 
 #: part/KWAboutData.h:46
@@ -1125,15 +1167,15 @@ msgstr ""
 msgid "C. Boemann"
 msgstr ""
 
-#: part/KWAboutData.h:47
-#, kde-format
-msgid "Sebastian Sauer"
-msgstr ""
-
 #: part/KWAboutData.h:47 part/KWAboutData.h:48 part/KWAboutData.h:49
 #: part/KWAboutData.h:51
 #, kde-format
 msgid "Everything"
+msgstr ""
+
+#: part/KWAboutData.h:47
+#, kde-format
+msgid "Sebastian Sauer"
 msgstr ""
 
 #: part/KWAboutData.h:48
@@ -1147,24 +1189,19 @@ msgid "Pierre Stirnweiss"
 msgstr ""
 
 #: part/KWAboutData.h:50
-#, kde-format
-msgid "Inge Wallin"
-msgstr ""
-
-#: part/KWAboutData.h:50
 #, fuzzy, kde-format
 #| msgid "&Formatting Characters"
 msgid "Formatting stuff"
 msgstr "&Memformatkan Aksara"
 
+#: part/KWAboutData.h:50
+#, kde-format
+msgid "Inge Wallin"
+msgstr ""
+
 #: part/KWAboutData.h:51
 #, kde-format
 msgid "Thorsten Zachmann"
-msgstr ""
-
-#: part/KWAboutData.h:52
-#, kde-format
-msgid "Matus Uzak"
 msgstr ""
 
 #: part/KWAboutData.h:52 part/KWAboutData.h:58 part/KWAboutData.h:59
@@ -1176,14 +1213,19 @@ msgstr ""
 msgid "Filter"
 msgstr "&Tapis:"
 
-#: part/KWAboutData.h:53
+#: part/KWAboutData.h:52
 #, kde-format
-msgid "Pavol Korinek"
+msgid "Matus Uzak"
 msgstr ""
 
 #: part/KWAboutData.h:53
 #, kde-format
 msgid "Layout and Painting"
+msgstr ""
+
+#: part/KWAboutData.h:53
+#, kde-format
+msgid "Pavol Korinek"
 msgstr ""
 
 #: part/KWAboutData.h:54
@@ -1210,12 +1252,12 @@ msgstr "Nota Kaki"
 
 #: part/KWAboutData.h:56
 #, kde-format
-msgid "Smit Patel"
+msgid "Bibliography"
 msgstr ""
 
 #: part/KWAboutData.h:56
 #, kde-format
-msgid "Bibliography"
+msgid "Smit Patel"
 msgstr ""
 
 #: part/KWAboutData.h:57
@@ -1301,13 +1343,13 @@ msgstr ""
 
 #: part/KWAboutData.h:71
 #, kde-format
-msgid "Ulrich Kuettler"
-msgstr ""
+msgid "KFormula"
+msgstr "KFormula"
 
 #: part/KWAboutData.h:71
 #, kde-format
-msgid "KFormula"
-msgstr "KFormula"
+msgid "Ulrich Kuettler"
+msgstr ""
 
 #: part/KWAboutData.h:72
 #, kde-format
@@ -2308,30 +2350,6 @@ msgstr "Selitkan Halaman"
 #~ msgstr "Baru..."
 
 #, fuzzy
-#~| msgid "Framestyle:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Page Style"
-#~ msgstr "Gaya Bingkai:"
-
-#, fuzzy
-#~| msgid "Insert Page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Page Style"
-#~ msgstr "Selitkan Halaman"
-
-#, fuzzy
-#~| msgid "Frame Properties"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Page Properties"
-#~ msgstr "Ciri Bingkai"
-
-#, fuzzy
-#~| msgid "Create Text Frame"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create shape"
-#~ msgstr "Cipta Bingkai Teks"
-
-#, fuzzy
 #~| msgid "Frame is inline"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Baseline"
@@ -2456,12 +2474,6 @@ msgstr "Selitkan Halaman"
 #~ msgstr "Sambung Bingkai Teks"
 
 #, fuzzy
-#~| msgid "Frame Properties"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Shape Properties"
-#~ msgstr "Ciri Bingkai"
-
-#, fuzzy
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Columns"
 #~ msgstr "Kolum"
@@ -2482,12 +2494,6 @@ msgstr "Selitkan Halaman"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Delete"
 #~ msgstr "Hapuskan Baris"
-
-#, fuzzy
-#~| msgid "Framestyle:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Page Style"
-#~ msgstr "Gaya Bingkai:"
 
 #, fuzzy
 #~| msgid "Framestyle:"
