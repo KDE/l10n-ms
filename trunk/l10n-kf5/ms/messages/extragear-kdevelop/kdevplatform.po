@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevplatform\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-02-21 08:43+0100\n"
+"POT-Creation-Date: 2017-02-24 03:55+0100\n"
 "PO-Revision-Date: 2009-07-05 19:31+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -363,7 +363,7 @@ msgstr "Nama"
 
 #: debugger/variable/variablecollection.cpp:422
 #: debugger/variable/variabletooltip.cpp:102
-#: shell/settings/environmentgroupmodel.cpp:98
+#: shell/settings/environmentprofilemodel.cpp:106
 #, fuzzy, kde-format
 msgid "Value"
 msgstr "Nilai"
@@ -1120,7 +1120,7 @@ msgid "Class"
 msgstr "Kelas"
 
 #: language/duchain/navigation/abstractnavigationcontext.cpp:403
-#: shell/settings/environmentgroupmodel.cpp:95
+#: shell/settings/environmentprofilemodel.cpp:104
 #, fuzzy, kde-format
 msgid "Variable"
 msgstr "Variabel"
@@ -3077,7 +3077,7 @@ msgid "Provide a name for the project"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: shell/projectinfopage.ui:30
+#: shell/projectinfopage.ui:30 shell/settings/environmentwidget.cpp:188
 #, fuzzy, kde-format
 msgid "Name:"
 msgstr "Nama:"
@@ -3650,66 +3650,70 @@ msgstr ""
 msgid "Preview"
 msgstr "Buang"
 
-#: shell/settings/environmentpreferences.cpp:84
+#: shell/settings/environmentpreferences.cpp:86
 #, fuzzy, kde-format
 msgid "Environment"
 msgstr "Persekitaran"
 
-#: shell/settings/environmentpreferences.cpp:89
+#: shell/settings/environmentpreferences.cpp:91
 #, fuzzy, kde-format
 msgid "Configure Environment Variables"
 msgstr "Persekitaran"
 
-#: shell/settings/environmentwidget.cpp:53
+#: shell/settings/environmentprofilelistmodel.cpp:61
+#, kde-format
+msgid "%1 (default profile)"
+msgstr ""
+
+#: shell/settings/environmentwidget.cpp:94
 #, fuzzy, kde-format
-msgid "Enter variable ..."
+msgid "Enter variable..."
 msgstr "Buang Semua"
 
+#: shell/settings/environmentwidget.cpp:182
+#, fuzzy, kde-format
+msgid "Enter Name of New Environment Profile"
+msgstr "Persekitaran"
+
 #. i18n: ectx: property (toolTip), widget (QPushButton, batchModeEditButton)
-#: shell/settings/environmentwidget.cpp:154
-#: shell/settings/environmentwidget.ui:115
+#: shell/settings/environmentwidget.cpp:245
+#: shell/settings/environmentwidget.ui:130
 #, kde-format
 msgid "Batch Edit Mode"
 msgstr ""
 
-#: shell/settings/environmentwidget.cpp:202
-#, fuzzy, kde-format
-msgctxt "a copy of the existing environment was created"
-msgid "%1 (Cloned %2)"
-msgstr "<b>%1</b>"
-
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: shell/settings/environmentwidget.ui:22
 #, fuzzy, kde-format
-msgid "Environment group:"
+msgid "Environment profile:"
 msgstr "Persekitaran"
 
-#. i18n: ectx: property (text), widget (QPushButton, addgrpBtn)
-#: shell/settings/environmentwidget.ui:42
-#, fuzzy, kde-format
-msgid "Add Group"
-msgstr "Tambah kumpulan"
-
-#. i18n: ectx: property (text), widget (QPushButton, clonegrpBtn)
-#: shell/settings/environmentwidget.ui:49
-#, fuzzy, kde-format
-msgid "Clone Group"
-msgstr "Buang"
-
-#. i18n: ectx: property (text), widget (QPushButton, removegrpBtn)
-#: shell/settings/environmentwidget.ui:56
-#, fuzzy, kde-format
-msgid "Remove Group"
-msgstr "Buang"
-
-#. i18n: ectx: property (text), widget (QPushButton, setAsDefaultBtn)
-#: shell/settings/environmentwidget.ui:63
+#. i18n: ectx: property (toolTip), widget (QPushButton, addProfileButton)
+#: shell/settings/environmentwidget.ui:39
 #, kde-format
-msgid "Set As Default Group"
+msgid "Add profile..."
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (QPushButton, deleteButton)
-#: shell/settings/environmentwidget.ui:102
+#. i18n: ectx: property (toolTip), widget (QPushButton, cloneProfileButton)
+#: shell/settings/environmentwidget.ui:49
+#, fuzzy, kde-format
+msgid "Clone profile..."
+msgstr "Tutup S&emua"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeProfileButton)
+#: shell/settings/environmentwidget.ui:59
+#, fuzzy, kde-format
+msgid "Remove profile"
+msgstr "Buang Semua"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, setAsDefaultProfileButton)
+#: shell/settings/environmentwidget.ui:69
+#, kde-format
+msgid "Set as default"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeVariableButton)
+#: shell/settings/environmentwidget.ui:114
 #, fuzzy, kde-format
 msgid "Remove variable"
 msgstr "Buang Semua"
@@ -5333,6 +5337,23 @@ msgid "Logview"
 msgstr ""
 
 #, fuzzy
+#~ msgctxt "a copy of the existing environment was created"
+#~ msgid "%1 (Cloned %2)"
+#~ msgstr "<b>%1</b>"
+
+#, fuzzy
+#~ msgid "Add Group"
+#~ msgstr "Tambah kumpulan"
+
+#, fuzzy
+#~ msgid "Clone Group"
+#~ msgstr "Buang"
+
+#, fuzzy
+#~ msgid "Remove Group"
+#~ msgstr "Buang"
+
+#, fuzzy
 #~ msgid "Remove Selected"
 #~ msgstr "&Simpan Dipilih"
 
@@ -5399,10 +5420,6 @@ msgstr ""
 #~ msgctxt "change directory: %1: path"
 #~ msgid "entering %1 (%2)"
 #~ msgstr "Semakan"
-
-#, fuzzy
-#~ msgid "New Environment Variables"
-#~ msgstr "Persekitaran"
 
 #, fuzzy
 #~ msgctxt "@title:window"
@@ -5509,11 +5526,6 @@ msgstr ""
 #~ msgctxt "@info"
 #~ msgid "The session lock-file is owned."
 #~ msgstr "Semakan"
-
-#, fuzzy
-#~ msgctxt "@action:button"
-#~ msgid "Remove lock file"
-#~ msgstr "Buang Semua"
 
 #, fuzzy
 #~ msgid "Do not obtain"
