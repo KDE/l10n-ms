@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-06-10 03:04+0200\n"
+"POT-Creation-Date: 2017-07-06 03:08+0200\n"
 "PO-Revision-Date: 2008-11-24 22:51+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -900,24 +900,24 @@ msgstr ""
 "Ralat berlaku semasa cuba memuat semula kekunci:\n"
 "%1"
 
-#: src/commands/gnupgprocesscommand.cpp:149
+#: src/commands/gnupgprocesscommand.cpp:150
 #, kde-format
 msgid "Subprocess Diagnostics"
 msgstr ""
 
-#: src/commands/gnupgprocesscommand.cpp:278
+#: src/commands/gnupgprocesscommand.cpp:279
 #, fuzzy, kde-format
 #| msgid "Unable to start %1 process. Please check your installation."
 msgid "Unable to start process %1. Please check your installation."
 msgstr "Tidak dapat memulakan proses %1. Semak pemasangan anda."
 
-#: src/commands/gnupgprocesscommand.cpp:284
+#: src/commands/gnupgprocesscommand.cpp:285
 #, fuzzy, kde-format
 #| msgid "Deleting keys..."
 msgid "Starting %1..."
 msgstr "Menghapuskan kekunci..."
 
-#: src/commands/gnupgprocesscommand.cpp:307
+#: src/commands/gnupgprocesscommand.cpp:308
 #, kde-format
 msgid "Process finished"
 msgstr ""
@@ -1350,7 +1350,7 @@ msgstr "Tandatangan baru:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, encryptionCB)
 #: src/commands/keytocardcommand.cpp:107
-#: src/dialogs/certificatedetailswidget.cpp:308
+#: src/dialogs/certificatedetailswidget.cpp:314
 #: src/newcertificatewizard/advancedsettingsdialog.ui:216
 #, fuzzy, kde-format
 #| msgid "For &encrypting only"
@@ -1404,6 +1404,7 @@ msgid "Moving the key to the card failed: %1"
 msgstr ""
 
 #: src/commands/keytocardcommand.cpp:207 src/commands/keytocardcommand.cpp:232
+#: src/view/netkeywidget.cpp:189 src/view/nullpinwidget.cpp:122
 #: src/view/pgpcardwidget.cpp:275 src/view/pgpcardwidget.cpp:290
 #: src/view/pgpcardwidget.cpp:343 src/view/pgpcardwidget.cpp:369
 #: src/view/pgpcardwidget.cpp:375 src/view/pgpcardwidget.cpp:381
@@ -1840,33 +1841,77 @@ msgstr "Rupa Piawai"
 msgid "Configure"
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:78
+#: src/conf/cryptooperationsconfigwidget.cpp:123
+#, kde-format
+msgid ""
+"This means that every configuration option of the GnuPG System will be reset "
+"to its default."
+msgstr ""
+
+#: src/conf/cryptooperationsconfigwidget.cpp:124
+#, fuzzy, kde-format
+#| msgid "Certificate Deletion Failed"
+msgid "Apply profile"
+msgstr "Gagal Menghapuskan Sijil"
+
+#: src/conf/cryptooperationsconfigwidget.cpp:152
+#, kde-format
+msgctxt "@info"
+msgid "The configuration profile is now applied."
+msgstr ""
+
+#: src/conf/cryptooperationsconfigwidget.cpp:153
+#, kde-format
+msgid "Configuration profile applied"
+msgstr ""
+
+#: src/conf/cryptooperationsconfigwidget.cpp:187
+#, fuzzy, kde-format
+#| msgid "Stop Operation"
+msgctxt "@title"
+msgid "General Operations"
+msgstr "Hentikan Operasi"
+
+#: src/conf/cryptooperationsconfigwidget.cpp:191
+#, fuzzy, kde-format
+#| msgid "GnuPG Log Viewer..."
+msgid "GnuPG Profile:"
+msgstr "Pemapar Log GnuPG..."
+
+#: src/conf/cryptooperationsconfigwidget.cpp:192
+#, kde-format
+msgid ""
+"A profile consists of various settings that can apply to multiple components "
+"of the GnuPG system."
+msgstr ""
+
+#: src/conf/cryptooperationsconfigwidget.cpp:221
 #, fuzzy, kde-format
 #| msgid "Stop Operation"
 msgid "EMail Operations"
 msgstr "Hentikan Operasi"
 
-#: src/conf/cryptooperationsconfigwidget.cpp:80
+#: src/conf/cryptooperationsconfigwidget.cpp:223
 #, kde-format
 msgid ""
 "Don't confirm signing certificate if there is only one valid certificate for "
 "the identity"
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:81
+#: src/conf/cryptooperationsconfigwidget.cpp:224
 #, kde-format
 msgid ""
 "Don't confirm encryption certificates if there is exactly one valid "
 "certificate for each recipient"
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:87
+#: src/conf/cryptooperationsconfigwidget.cpp:230
 #, fuzzy, kde-format
 #| msgid "Stop Operation"
 msgid "File Operations"
 msgstr "Hentikan Operasi"
 
-#: src/conf/cryptooperationsconfigwidget.cpp:89
+#: src/conf/cryptooperationsconfigwidget.cpp:232
 #, kde-format
 msgid ""
 "Create OpenPGP encrypted files with \".pgp\" file extensions instead of \"."
@@ -1874,14 +1919,14 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (AddASCIIArmor), group (FileOperations)
-#: src/conf/cryptooperationsconfigwidget.cpp:90
+#: src/conf/cryptooperationsconfigwidget.cpp:233
 #: src/kcfg/fileoperationspreferences.kcfg:25
 #, fuzzy, kde-format
 #| msgid "Deleting keys..."
 msgid "Create signed or encrypted files as text files."
 msgstr "Menghapuskan kekunci..."
 
-#: src/conf/cryptooperationsconfigwidget.cpp:91
+#: src/conf/cryptooperationsconfigwidget.cpp:234
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1891,19 +1936,19 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (AutoDecryptVerify), group (FileOperations)
-#: src/conf/cryptooperationsconfigwidget.cpp:94
+#: src/conf/cryptooperationsconfigwidget.cpp:237
 #: src/kcfg/fileoperationspreferences.kcfg:15
 #, kde-format
 msgid ""
 "Automatically start operation based on input detection for decrypt/verify."
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:100
+#: src/conf/cryptooperationsconfigwidget.cpp:243
 #, kde-format
 msgid "Checksum program to use when creating checksum files:"
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:105
+#: src/conf/cryptooperationsconfigwidget.cpp:248
 #, kde-format
 msgid "Archive command to use when archiving files:"
 msgstr ""
@@ -2346,7 +2391,7 @@ msgid ""
 "to be checksummed, not a mixture of both."
 msgstr ""
 
-#: src/crypto/createchecksumscontroller.cpp:349 src/mainwindow.cpp:585
+#: src/crypto/createchecksumscontroller.cpp:349 src/mainwindow.cpp:605
 #, fuzzy, kde-format
 #| msgid "Canceled."
 msgid "Cancel"
@@ -3538,7 +3583,7 @@ msgstr ""
 msgid "&Next"
 msgstr ""
 
-#: src/crypto/gui/wizard.cpp:136 src/view/smartcardwidget.cpp:90
+#: src/crypto/gui/wizard.cpp:136 src/view/smartcardwidget.cpp:92
 #, kde-format
 msgid "Back"
 msgstr ""
@@ -3698,27 +3743,26 @@ msgid "Verifying checksums (%2) in %1"
 msgstr ""
 
 #: src/dialogs/adduseriddialog.cpp:71
-#: src/dialogs/certificatedetailswidget.cpp:107
-#: src/newcertificatewizard/newcertificatewizard.cpp:1189
+#: src/dialogs/certificatedetailswidget.cpp:113
+#: src/newcertificatewizard/newcertificatewizard.cpp:1248
 #, kde-format
 msgid "Name"
 msgstr ""
 
 #: src/dialogs/adduseriddialog.cpp:73
-#: src/newcertificatewizard/newcertificatewizard.cpp:1192
 #, kde-format
 msgid "Comment"
 msgstr ""
 
 #: src/dialogs/adduseriddialog.cpp:75
-#: src/newcertificatewizard/newcertificatewizard.cpp:1195
+#: src/newcertificatewizard/newcertificatewizard.cpp:1251
 #, fuzzy, kde-format
 #| msgid "Email"
 msgid "EMail"
 msgstr "E-mel"
 
 #: src/dialogs/adduseriddialog.cpp:91
-#: src/newcertificatewizard/newcertificatewizard.cpp:1211
+#: src/newcertificatewizard/newcertificatewizard.cpp:1267
 #, fuzzy, kde-format
 #| msgctxt "Format string for the labels in the \"Your Personal Data\" page"
 #| msgid "%1 (%2):"
@@ -3727,7 +3771,7 @@ msgid "%1 (%2)"
 msgstr "%1 (%2):"
 
 #: src/dialogs/adduseriddialog.cpp:123
-#: src/newcertificatewizard/newcertificatewizard.cpp:1316
+#: src/newcertificatewizard/newcertificatewizard.cpp:1367
 #, fuzzy, kde-format
 #| msgctxt "Format string for the labels in the \"Your Personal Data\" page"
 #| msgid "%1 (%2):"
@@ -3740,29 +3784,27 @@ msgstr "%1 (%2):"
 #: src/dialogs/adduseriddialog.cpp:125
 #: src/newcertificatewizard/enterdetailspage.ui:26
 #: src/newcertificatewizard/enterdetailspage.ui:43
-#: src/newcertificatewizard/newcertificatewizard.cpp:1318
+#: src/newcertificatewizard/newcertificatewizard.cpp:1369
 #, kde-format
 msgid "(required)"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, commentRequiredLB)
 #: src/dialogs/adduseriddialog.cpp:125
-#: src/newcertificatewizard/enterdetailspage.ui:60
-#: src/newcertificatewizard/newcertificatewizard.cpp:1318
+#: src/newcertificatewizard/newcertificatewizard.cpp:1369
 #, fuzzy, kde-format
 #| msgid "Stop Operation"
 msgid "(optional)"
 msgstr "Hentikan Operasi"
 
 #: src/dialogs/adduseriddialog.cpp:301
-#: src/newcertificatewizard/newcertificatewizard.cpp:1500
+#: src/newcertificatewizard/newcertificatewizard.cpp:1544
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is required, but empty."
 msgstr ""
 
 #: src/dialogs/adduseriddialog.cpp:303
-#: src/newcertificatewizard/newcertificatewizard.cpp:1502
+#: src/newcertificatewizard/newcertificatewizard.cpp:1546
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3771,14 +3813,14 @@ msgid ""
 msgstr ""
 
 #: src/dialogs/adduseriddialog.cpp:309
-#: src/newcertificatewizard/newcertificatewizard.cpp:1508
+#: src/newcertificatewizard/newcertificatewizard.cpp:1552
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is incomplete."
 msgstr ""
 
 #: src/dialogs/adduseriddialog.cpp:311
-#: src/newcertificatewizard/newcertificatewizard.cpp:1510
+#: src/newcertificatewizard/newcertificatewizard.cpp:1554
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3787,14 +3829,14 @@ msgid ""
 msgstr ""
 
 #: src/dialogs/adduseriddialog.cpp:316
-#: src/newcertificatewizard/newcertificatewizard.cpp:1515
+#: src/newcertificatewizard/newcertificatewizard.cpp:1559
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is invalid."
 msgstr ""
 
 #: src/dialogs/adduseriddialog.cpp:318
-#: src/newcertificatewizard/newcertificatewizard.cpp:1517
+#: src/newcertificatewizard/newcertificatewizard.cpp:1561
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3820,97 +3862,97 @@ msgctxt "Expires"
 msgid "never"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:107
+#: src/dialogs/certificatedetailswidget.cpp:113
 #, kde-format
 msgid "Email"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:109
+#: src/dialogs/certificatedetailswidget.cpp:115
 #, kde-format
 msgid "Trust Level"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:155
+#: src/dialogs/certificatedetailswidget.cpp:161
 #, kde-format
 msgid "Revoke this User ID"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:249
+#: src/dialogs/certificatedetailswidget.cpp:255
 #, fuzzy, kde-format
 #| msgid "Deleting keys..."
 msgid "Certify ..."
 msgstr "Menghapuskan kekunci..."
 
-#: src/dialogs/certificatedetailswidget.cpp:302
+#: src/dialogs/certificatedetailswidget.cpp:308
 #, kde-format
 msgid "never"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, signingCB)
-#: src/dialogs/certificatedetailswidget.cpp:304
+#: src/dialogs/certificatedetailswidget.cpp:310
 #: src/newcertificatewizard/advancedsettingsdialog.ui:206
 #, fuzzy, kde-format
 #| msgid "Canceled."
 msgid "Signing"
 msgstr "Dibatalkan."
 
-#: src/dialogs/certificatedetailswidget.cpp:305
-#: src/dialogs/certificatedetailswidget.cpp:309
+#: src/dialogs/certificatedetailswidget.cpp:311
+#: src/dialogs/certificatedetailswidget.cpp:315
 #, kde-format
 msgid "First message"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:306
-#: src/dialogs/certificatedetailswidget.cpp:310
+#: src/dialogs/certificatedetailswidget.cpp:312
+#: src/dialogs/certificatedetailswidget.cpp:316
 #, kde-format
 msgid "Last message"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:307
-#: src/dialogs/certificatedetailswidget.cpp:311
+#: src/dialogs/certificatedetailswidget.cpp:313
+#: src/dialogs/certificatedetailswidget.cpp:317
 #, kde-format
 msgid "Message count"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:351
+#: src/dialogs/certificatedetailswidget.cpp:357
 #, kde-format
 msgctxt "<name> of <company>"
 msgid "%1 of %2"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:386
+#: src/dialogs/certificatedetailswidget.cpp:392
 #, kde-format
 msgid "Common Name"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:387
+#: src/dialogs/certificatedetailswidget.cpp:393
 #, fuzzy, kde-format
 msgid "Organization"
 msgstr "Maklumat Sijil"
 
-#: src/dialogs/certificatedetailswidget.cpp:388
+#: src/dialogs/certificatedetailswidget.cpp:394
 #, kde-format
 msgid "Street"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:389
+#: src/dialogs/certificatedetailswidget.cpp:395
 #, kde-format
 msgid "City"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:390
+#: src/dialogs/certificatedetailswidget.cpp:396
 #, kde-format
 msgid "State"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:391
+#: src/dialogs/certificatedetailswidget.cpp:397
 #, kde-format
 msgid "Country"
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CertificateDetailsWidget)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: src/dialogs/certificatedetailswidget.cpp:453
+#: src/dialogs/certificatedetailswidget.cpp:459
 #: src/dialogs/certificatedetailswidget.ui:14
 #: src/dialogs/certificatedetailswidget.ui:69
 #, fuzzy, kde-format
@@ -3960,20 +4002,28 @@ msgid "Expires:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, smimeIssuer)
+#. i18n: ectx: property (text), widget (QLabel, complianceLbl)
 #. i18n: ectx: property (text), widget (QLabel, type)
 #. i18n: ectx: property (text), widget (QLabel, fingerprint)
 #. i18n: ectx: property (text), widget (QLabel, smimeOwner)
 #. i18n: ectx: property (text), widget (QLabel, stored)
 #: src/dialogs/certificatedetailswidget.ui:91
-#: src/dialogs/certificatedetailswidget.ui:152
-#: src/dialogs/certificatedetailswidget.ui:213
-#: src/dialogs/certificatedetailswidget.ui:287 src/dialogs/subkeyswidget.ui:80
+#: src/dialogs/certificatedetailswidget.ui:117
+#: src/dialogs/certificatedetailswidget.ui:178
+#: src/dialogs/certificatedetailswidget.ui:239
+#: src/dialogs/certificatedetailswidget.ui:313 src/dialogs/subkeyswidget.ui:80
 #, kde-format
 msgid "unknown"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, moreDetailsBtn)
+#. i18n: ectx: property (text), widget (QLabel, compliance)
 #: src/dialogs/certificatedetailswidget.ui:104
+#, kde-format
+msgid "Compliance:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, moreDetailsBtn)
+#: src/dialogs/certificatedetailswidget.ui:130
 #, fuzzy, kde-format
 #| msgid "&Details"
 msgid "&More details..."
@@ -3981,61 +4031,61 @@ msgstr "&Perincian"
 
 #. i18n: ectx: property (text), widget (QLabel, expires)
 #. i18n: ectx: property (text), widget (QLabel, validFrom)
-#: src/dialogs/certificatedetailswidget.ui:113
-#: src/dialogs/certificatedetailswidget.ui:169
+#: src/dialogs/certificatedetailswidget.ui:139
+#: src/dialogs/certificatedetailswidget.ui:195
 #, kde-format
 msgid "00/00/00"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QToolButton, changeExpirationBtn)
-#: src/dialogs/certificatedetailswidget.ui:123 src/view/pgpcardwidget.cpp:163
+#: src/dialogs/certificatedetailswidget.ui:149 src/view/pgpcardwidget.cpp:163
 #, fuzzy, kde-format
 #| msgid "Unchanged:"
 msgid "Change"
 msgstr "Tidak diubah:"
 
 #. i18n: ectx: property (text), widget (QLabel, validFromLbl)
-#: src/dialogs/certificatedetailswidget.ui:145
+#: src/dialogs/certificatedetailswidget.ui:171
 #, fuzzy, kde-format
 #| msgid "Valid"
 msgid "Valid from:"
 msgstr "Sah"
 
 #. i18n: ectx: property (text), widget (QLabel, fingerprintLbl)
-#: src/dialogs/certificatedetailswidget.ui:162
+#: src/dialogs/certificatedetailswidget.ui:188
 #, fuzzy, kde-format
 #| msgid "Fingerprint"
 msgid "Fingerprint:"
 msgstr "Cap jari"
 
 #. i18n: ectx: property (text), widget (QLabel, smimeIssuerLbl)
-#: src/dialogs/certificatedetailswidget.ui:179
+#: src/dialogs/certificatedetailswidget.ui:205
 #, fuzzy, kde-format
 #| msgid "Issuer"
 msgid "Issuer:"
 msgstr "Pengeluar"
 
 #. i18n: ectx: property (text), widget (QLabel, publishingLbl)
-#: src/dialogs/certificatedetailswidget.ui:186
+#: src/dialogs/certificatedetailswidget.ui:212
 #, kde-format
 msgid "Publishing:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, typeLbl)
-#: src/dialogs/certificatedetailswidget.ui:193
+#: src/dialogs/certificatedetailswidget.ui:219
 #, kde-format
 msgid "Type:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, publishing)
-#: src/dialogs/certificatedetailswidget.ui:223
+#: src/dialogs/certificatedetailswidget.ui:249
 #, fuzzy, kde-format
 #| msgid "Import Certificates..."
 msgid "Publish Certificate"
 msgstr "Import Sijil..."
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: src/dialogs/certificatedetailswidget.ui:257
+#: src/dialogs/certificatedetailswidget.ui:283
 #, kde-format
 msgid ""
 "You can use this certificate to secure communication with the following "
@@ -4043,13 +4093,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, smimeOwnerLbl)
-#: src/dialogs/certificatedetailswidget.ui:267
+#: src/dialogs/certificatedetailswidget.ui:293
 #, kde-format
 msgid "Owner:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, smimeRelatedAddresses)
-#: src/dialogs/certificatedetailswidget.ui:280
+#: src/dialogs/certificatedetailswidget.ui:306
 #, kde-format
 msgid "Related addresses:"
 msgstr ""
@@ -4163,7 +4213,7 @@ msgid ""
 msgstr "Muat Turun Sijil Gagal"
 
 #: src/dialogs/certifycertificatedialog.cpp:200
-#: src/newcertificatewizard/newcertificatewizard.cpp:1571
+#: src/newcertificatewizard/newcertificatewizard.cpp:1615
 #, fuzzy, kde-format
 #| msgid "Certificate Usage"
 msgid "Certify"
@@ -4450,7 +4500,7 @@ msgid "ASCII armor"
 msgstr ""
 
 #: src/dialogs/gencardkeydialog.cpp:78
-#: src/newcertificatewizard/newcertificatewizard.cpp:1632
+#: src/newcertificatewizard/newcertificatewizard.cpp:1676
 #, fuzzy, kde-format
 #| msgid "Serial Number"
 msgid "Name:"
@@ -5455,30 +5505,38 @@ msgstr ""
 msgid "Invalid arguments: %1"
 msgstr ""
 
-#: src/mainwindow.cpp:106
+#: src/mainwindow.cpp:109
 #, kde-format
 msgctxt "Quit [ApplicationName]"
 msgid "&Quit %1"
 msgstr ""
 
-#: src/mainwindow.cpp:113
+#: src/mainwindow.cpp:116
 #, kde-format
 msgid "Only &Close Window"
 msgstr ""
 
-#: src/mainwindow.cpp:153
+#: src/mainwindow.cpp:156
 #, kde-format
 msgid ""
 "%1 may be used by other applications as a service.\n"
 "You may instead want to close this window without exiting %1."
 msgstr ""
 
-#: src/mainwindow.cpp:155
+#: src/mainwindow.cpp:158
 #, kde-format
 msgid "Really Quit?"
 msgstr ""
 
-#: src/mainwindow.cpp:197
+#: src/mainwindow.cpp:196
+#, kde-format
+msgctxt ""
+"Compliance means that GnuPG is running in a more restricted mode e.g. to "
+"handle restricted documents."
+msgid "Compliance: %1"
+msgstr ""
+
+#: src/mainwindow.cpp:215
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not start GnuPG LogViewer (kwatchgnupg). Please check your "
@@ -5490,90 +5548,90 @@ msgstr ""
 "Tidak dapat memulakan pemapar log GnuPG  (kwatchgnupg). Semak pemasangan "
 "anda!"
 
-#: src/mainwindow.cpp:199
+#: src/mainwindow.cpp:217
 #, fuzzy, kde-format
 #| msgid "Configure &GpgME Backend"
 msgid "Error Starting KWatchGnuPG"
 msgstr "Konfigurkan Hujung Belakang &GpgME"
 
-#: src/mainwindow.cpp:360
+#: src/mainwindow.cpp:379
 #, fuzzy, kde-format
 #| msgid "GnuPG Log Viewer..."
 msgid "GnuPG Log Viewer"
 msgstr "Pemapar Log GnuPG..."
 
-#: src/mainwindow.cpp:366
+#: src/mainwindow.cpp:385
 #, kde-format
 msgid "Check for updates"
 msgstr ""
 
-#: src/mainwindow.cpp:373
+#: src/mainwindow.cpp:392
 #, fuzzy, kde-format
 #| msgid "Configure &GpgME Backend"
 msgid "Configure GnuPG Backend..."
 msgstr "Konfigurkan Hujung Belakang &GpgME"
 
-#: src/mainwindow.cpp:379
+#: src/mainwindow.cpp:398
 #, kde-format
 msgid "Perform Self-Test"
 msgstr ""
 
-#: src/mainwindow.cpp:383
+#: src/mainwindow.cpp:402
 #, kde-format
 msgid "Manage Smartcards"
 msgstr ""
 
-#: src/mainwindow.cpp:384
+#: src/mainwindow.cpp:403
 #, kde-format
 msgid "Edit or initialize a crypto hardware token."
 msgstr ""
 
-#: src/mainwindow.cpp:402
+#: src/mainwindow.cpp:421
 #, kde-format
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: src/mainwindow.cpp:423
+#: src/mainwindow.cpp:442
 #, kde-format
 msgid "Could not configure the cryptography backend (gpgconf tool not found)"
 msgstr ""
 
-#: src/mainwindow.cpp:423
+#: src/mainwindow.cpp:442
 #, kde-format
 msgid "Configuration Error"
 msgstr ""
 
-#: src/mainwindow.cpp:457
+#: src/mainwindow.cpp:477
 #, kde-format
 msgid ""
 "There are still some background operations ongoing. These will be terminated "
 "when closing the window. Proceed?"
 msgstr ""
 
-#: src/mainwindow.cpp:460
+#: src/mainwindow.cpp:480
 #, kde-format
 msgid "Ongoing Background Tasks"
 msgstr ""
 
-#: src/mainwindow.cpp:569 src/view/keylistcontroller.cpp:406
+#: src/mainwindow.cpp:589 src/view/keylistcontroller.cpp:406
 #, kde-format
 msgid "Sign/Encrypt..."
 msgstr ""
 
-#: src/mainwindow.cpp:570 src/utils/clipboardmenu.cpp:49
+#: src/mainwindow.cpp:590 src/utils/clipboardmenu.cpp:49
 #: src/view/keylistcontroller.cpp:402
 #, fuzzy, kde-format
 #| msgid "Deleting keys..."
 msgid "Decrypt/Verify..."
 msgstr "Menghapuskan kekunci..."
 
-#: src/mainwindow.cpp:575 src/view/welcomewidget.cpp:87
+#: src/mainwindow.cpp:595 src/view/welcomewidget.cpp:87
 #, fuzzy, kde-format
 #| msgid "Import Certificates..."
 msgid "Import Certificates"
 msgstr "Import Sijil..."
 
-#: src/mainwindow.cpp:576
+#: src/mainwindow.cpp:596
 #, fuzzy, kde-format
 #| msgid "Import CRLs..."
 msgid "Import CRLs"
@@ -5658,7 +5716,7 @@ msgstr "&Sijil"
 
 #. i18n: ectx: attribute (title), widget (QWidget, personalTab)
 #: src/newcertificatewizard/advancedsettingsdialog.ui:250
-#: src/newcertificatewizard/newcertificatewizard.cpp:1827
+#: src/newcertificatewizard/newcertificatewizard.cpp:1932
 #, fuzzy, kde-format
 #| msgid "Your Personal Data"
 msgid "Personal Details"
@@ -5759,22 +5817,15 @@ msgstr "Nombor Siri"
 msgid "EMail address:"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, commentLB)
-#: src/newcertificatewizard/enterdetailspage.ui:50
-#: src/newcertificatewizard/newcertificatewizard.cpp:1637
-#, kde-format
-msgid "Comment:"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QCheckBox, addEmailToDnCB)
-#: src/newcertificatewizard/enterdetailspage.ui:95
+#: src/newcertificatewizard/enterdetailspage.ui:78
 #, fuzzy, kde-format
 #| msgid "Add email to DN in request for broken CAs"
 msgid "Add email address to DN (only needed for broken CAs)"
 msgstr "Tambah e-mel kepada DN sebagai permohonan untuk PBP yang rosak"
 
 #. i18n: ectx: property (text), widget (QPushButton, advancedPB)
-#: src/newcertificatewizard/enterdetailspage.ui:154
+#: src/newcertificatewizard/enterdetailspage.ui:137
 #, kde-format
 msgid "Advanced Settings..."
 msgstr ""
@@ -5804,46 +5855,46 @@ msgid ""
 "disk-intensive application."
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:345
+#: src/newcertificatewizard/newcertificatewizard.cpp:404
 #, kde-format
 msgid "new email"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:346
+#: src/newcertificatewizard/newcertificatewizard.cpp:405
 #, kde-format
 msgid "new dns name"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:347
+#: src/newcertificatewizard/newcertificatewizard.cpp:406
 #, kde-format
 msgid "new uri"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:739
+#: src/newcertificatewizard/newcertificatewizard.cpp:798
 #, kde-format
 msgctxt "@action"
 msgid "Create Key"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:796
+#: src/newcertificatewizard/newcertificatewizard.cpp:855
 #, fuzzy, kde-format
 #| msgid "Could not start certificate generation: %1"
 msgid "Could not start certificate creation: %1"
 msgstr "Tidak dapat memulakan penjanaan sijil: %1"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:812
+#: src/newcertificatewizard/newcertificatewizard.cpp:871
 #, fuzzy, kde-format
 #| msgid "Certificate Download Failed"
 msgid "Operation canceled."
 msgstr "Muat Turun Sijil Gagal"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:813
+#: src/newcertificatewizard/newcertificatewizard.cpp:872
 #, fuzzy, kde-format
 #| msgid "Could not generate certificate: %1"
 msgid "Could not create certificate: %1"
 msgstr "Tidak dapat menjana sijil: %1"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:820
+#: src/newcertificatewizard/newcertificatewizard.cpp:879
 #, fuzzy, kde-format
 #| msgid "Certificate Download Failed"
 msgid ""
@@ -5851,56 +5902,56 @@ msgid ""
 "Fingerprint: %1"
 msgstr "Muat Turun Sijil Gagal"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:826
+#: src/newcertificatewizard/newcertificatewizard.cpp:885
 #, fuzzy, kde-format
 #| msgid "Could not generate certificate: %1"
 msgid "Could not write output file %1: %2"
 msgstr "Tidak dapat menjana sijil: %1"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:834
+#: src/newcertificatewizard/newcertificatewizard.cpp:893
 #, fuzzy, kde-format
 #| msgid "CRL cache cleared successfully."
 msgid "Certificate created successfully."
 msgstr "Cache CRL berjaya dikosongkan."
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:875
+#: src/newcertificatewizard/newcertificatewizard.cpp:934
 #, fuzzy, kde-format
 #| msgid "Key Generation Wizard"
 msgctxt "@title"
 msgid "Key Creation Failed"
 msgstr "Wizard Penjanaan Kekunci"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:876
+#: src/newcertificatewizard/newcertificatewizard.cpp:935
 #, kde-format
 msgid "Key pair creation failed. Please find details about the failure below."
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:878
+#: src/newcertificatewizard/newcertificatewizard.cpp:937
 #, kde-format
 msgctxt "@title"
 msgid "Key Pair Successfully Created"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:879
+#: src/newcertificatewizard/newcertificatewizard.cpp:938
 #, kde-format
 msgid ""
 "Your new key pair was created successfully. Please find details on the "
 "result and some suggested next steps below."
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:940
+#: src/newcertificatewizard/newcertificatewizard.cpp:999
 #, kde-format
 msgctxt "@title"
 msgid "Save Request"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:941
+#: src/newcertificatewizard/newcertificatewizard.cpp:1000
 #, fuzzy, kde-format
 #| msgid "PKCS#12 Key Bundle (*.p12)"
 msgid "PKCS#10 Requests (*.p10)"
 msgstr "Berkas kekunci PKCS#12  (*.p12)"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:952
+#: src/newcertificatewizard/newcertificatewizard.cpp:1011
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -5908,13 +5959,13 @@ msgid ""
 "filename>: <message>%3</message>"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:955
+#: src/newcertificatewizard/newcertificatewizard.cpp:1014
 #, kde-format
 msgctxt "@title"
 msgid "Error Saving Request"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:959
+#: src/newcertificatewizard/newcertificatewizard.cpp:1018
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -5922,18 +5973,18 @@ msgid ""
 "should now send the request to the Certification Authority (CA).</para>"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:962
+#: src/newcertificatewizard/newcertificatewizard.cpp:1021
 #, kde-format
 msgctxt "@title"
 msgid "Request Saved"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:972
+#: src/newcertificatewizard/newcertificatewizard.cpp:1031
 #, fuzzy, kde-format
 msgid "Please process this certificate."
 msgstr "_n: Anda pasti ingin menghapuskan sijil ini?"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:973
+#: src/newcertificatewizard/newcertificatewizard.cpp:1032
 #, kde-format
 msgid ""
 "Please process this certificate and inform the sender about the location to "
@@ -5942,18 +5993,18 @@ msgid ""
 "Thanks,\n"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1002
+#: src/newcertificatewizard/newcertificatewizard.cpp:1061
 #, fuzzy, kde-format
 #| msgid "&Certificates"
 msgid "My new OpenPGP certificate"
 msgstr "&Sijil"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1003
+#: src/newcertificatewizard/newcertificatewizard.cpp:1062
 #, kde-format
 msgid "Please find attached my new OpenPGP certificate."
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1039
+#: src/newcertificatewizard/newcertificatewizard.cpp:1098
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -5966,14 +6017,14 @@ msgid ""
 "then attach that.</para>"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1043
+#: src/newcertificatewizard/newcertificatewizard.cpp:1102
 #, fuzzy, kde-format
 #| msgid "Canceled."
 msgctxt "@title"
 msgid "Sending Mail"
 msgstr "Dibatalkan."
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1091
+#: src/newcertificatewizard/newcertificatewizard.cpp:1150
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -5981,130 +6032,130 @@ msgid ""
 "you have sent or saved it before proceeding."
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1093
+#: src/newcertificatewizard/newcertificatewizard.cpp:1152
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "Certification Request About To Be Deleted"
 msgstr "Permohonan Sijil Anda Sedia Untuk Dihantar"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1127
+#: src/newcertificatewizard/newcertificatewizard.cpp:1186
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
 msgctxt "@title"
 msgid "Certificate Creation Wizard"
 msgstr "Gagal Menghapuskan Sijil"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1563
+#: src/newcertificatewizard/newcertificatewizard.cpp:1607
 #, fuzzy, kde-format
 #| msgid "For &signing only"
 msgid "Sign"
 msgstr "Untuk &tandatangan sahaja"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1567
-#: src/newcertificatewizard/newcertificatewizard.cpp:1596
+#: src/newcertificatewizard/newcertificatewizard.cpp:1611
+#: src/newcertificatewizard/newcertificatewizard.cpp:1640
 #, fuzzy, kde-format
 #| msgid "For &encrypting only"
 msgid "Encrypt"
 msgstr "Untuk &penyulitan sahaja"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1574
+#: src/newcertificatewizard/newcertificatewizard.cpp:1618
 #, kde-format
 msgid "Authenticate"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1634
+#: src/newcertificatewizard/newcertificatewizard.cpp:1678
 #, kde-format
 msgid "Email Address:"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1640
+#: src/newcertificatewizard/newcertificatewizard.cpp:1680
 #, fuzzy, kde-format
 #| msgid "Subject"
 msgid "Subject-DN:"
 msgstr "Subjek"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1643
+#: src/newcertificatewizard/newcertificatewizard.cpp:1683
 #, kde-format
 msgid "Key Type:"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1645
-#: src/newcertificatewizard/newcertificatewizard.cpp:1655
+#: src/newcertificatewizard/newcertificatewizard.cpp:1685
+#: src/newcertificatewizard/newcertificatewizard.cpp:1695
 #, kde-format
 msgid "Key Curve:"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1647
-#: src/newcertificatewizard/newcertificatewizard.cpp:1649
+#: src/newcertificatewizard/newcertificatewizard.cpp:1687
+#: src/newcertificatewizard/newcertificatewizard.cpp:1689
 #, kde-format
 msgid "Key Strength:"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1647
-#: src/newcertificatewizard/newcertificatewizard.cpp:1657
+#: src/newcertificatewizard/newcertificatewizard.cpp:1687
+#: src/newcertificatewizard/newcertificatewizard.cpp:1697
 #, fuzzy, kde-format
 msgid "1 bit"
 msgid_plural "%1 bits"
 msgstr[0] "_n: %1 bit"
 msgstr[1] "_n: %1 bit"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1649
-#: src/newcertificatewizard/newcertificatewizard.cpp:1659
+#: src/newcertificatewizard/newcertificatewizard.cpp:1689
+#: src/newcertificatewizard/newcertificatewizard.cpp:1699
 #, kde-format
 msgid "default"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1651
+#: src/newcertificatewizard/newcertificatewizard.cpp:1691
 #, fuzzy, kde-format
 #| msgid "Certificate Usage"
 msgid "Certificate Usage:"
 msgstr "Penggunaan Sijil"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1651
-#: src/newcertificatewizard/newcertificatewizard.cpp:1661
+#: src/newcertificatewizard/newcertificatewizard.cpp:1691
+#: src/newcertificatewizard/newcertificatewizard.cpp:1701
 #, kde-format
 msgctxt "separator for key usages"
 msgid ",&nbsp;"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1653
+#: src/newcertificatewizard/newcertificatewizard.cpp:1693
 #, kde-format
 msgid "Subkey Type:"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1657
-#: src/newcertificatewizard/newcertificatewizard.cpp:1659
+#: src/newcertificatewizard/newcertificatewizard.cpp:1697
+#: src/newcertificatewizard/newcertificatewizard.cpp:1699
 #, kde-format
 msgid "Subkey Strength:"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1661
+#: src/newcertificatewizard/newcertificatewizard.cpp:1701
 #, kde-format
 msgid "Subkey Usage:"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1665
+#: src/newcertificatewizard/newcertificatewizard.cpp:1705
 #, fuzzy, kde-format
 #| msgid "Validate"
 msgid "Valid Until:"
 msgstr "Sahkan"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1669
+#: src/newcertificatewizard/newcertificatewizard.cpp:1709
 #, kde-format
 msgid "Add. Email Address:"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1672
+#: src/newcertificatewizard/newcertificatewizard.cpp:1712
 #, kde-format
 msgid "DNS Name:"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1675
+#: src/newcertificatewizard/newcertificatewizard.cpp:1715
 #, kde-format
 msgid "URI:"
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1754
+#: src/newcertificatewizard/newcertificatewizard.cpp:1791
 #, kde-format
 msgctxt "%2: some admin-supplied text, %1: key size in bits"
 msgid "%2 (1 bit; default)"
@@ -6112,7 +6163,7 @@ msgid_plural "%2 (%1 bits; default)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1755
+#: src/newcertificatewizard/newcertificatewizard.cpp:1792
 #, fuzzy, kde-format
 #| msgctxt "Format string for the labels in the \"Your Personal Data\" page"
 #| msgid "%1 (%2):"
@@ -6122,7 +6173,7 @@ msgid_plural "%2 (%1 bits)"
 msgstr[0] "%1 (%2):"
 msgstr[1] "%1 (%2):"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1757
+#: src/newcertificatewizard/newcertificatewizard.cpp:1794
 #, kde-format
 msgctxt "%1: key size in bits"
 msgid "1 bit (default)"
@@ -6130,7 +6181,7 @@ msgid_plural "%1 bits (default)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1758
+#: src/newcertificatewizard/newcertificatewizard.cpp:1795
 #, fuzzy, kde-format
 msgctxt "%1: key size in bits"
 msgid "1 bit"
@@ -6138,7 +6189,7 @@ msgid_plural "%1 bits"
 msgstr[0] "_n: %1 bit"
 msgstr[1] "_n: %1 bit"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1832
+#: src/newcertificatewizard/newcertificatewizard.cpp:1937
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Adding more than one User ID is not yet implemented."
@@ -7576,11 +7627,107 @@ msgstr "Abaikan cache CRL..."
 msgid "Import CRL From File..."
 msgstr "Import CRL..."
 
-#: src/view/pgpcardwidget.cpp:152
+#: src/view/netkeywidget.cpp:88 src/view/pgpcardwidget.cpp:152
 #, fuzzy, kde-format
 #| msgid "Serial Number"
 msgid "Serial number:"
 msgstr "Nombor Siri"
+
+#: src/view/netkeywidget.cpp:99
+#, fuzzy, kde-format
+#| msgid "&Certificates"
+msgid "Certificates:"
+msgstr "&Sijil"
+
+#: src/view/netkeywidget.cpp:102
+#, fuzzy, kde-format
+#| msgid "&Certificates"
+msgctxt "@action"
+msgid "Load Certificates"
+msgstr "&Sijil"
+
+#: src/view/netkeywidget.cpp:140 src/view/pgpcardwidget.cpp:187
+#, fuzzy, kde-format
+#| msgid "Location"
+msgid "Actions:"
+msgstr "Lokasi"
+
+#: src/view/netkeywidget.cpp:142
+#, fuzzy, kde-format
+#| msgid "Unchanged:"
+msgctxt "NKS is an identifier for a type of keys on a NetKey card"
+msgid "Change NKS PIN"
+msgstr "Tidak diubah:"
+
+#: src/view/netkeywidget.cpp:143
+#, fuzzy, kde-format
+#| msgid "Unchanged:"
+msgctxt "SigG is an identifier for a type of keys on a NetKey card"
+msgid "Change SigG PIN"
+msgstr "Tidak diubah:"
+
+#: src/view/netkeywidget.cpp:164
+#, kde-format
+msgctxt "1 is a Version number"
+msgid "NetKey v%1 Card"
+msgstr ""
+
+#: src/view/netkeywidget.cpp:188 src/view/nullpinwidget.cpp:121
+#, fuzzy, kde-format
+#| msgid "Could not generate certificate: %1"
+msgctxt "@info"
+msgid "Failed to set PIN: %1"
+msgstr "Tidak dapat menjana sijil: %1"
+
+#: src/view/nullpinwidget.cpp:55
+#, kde-format
+msgctxt ""
+"NullPIN is a word that is used all over in the netkey documentation and "
+"should be understandable by Netkey cardholders"
+msgid "The NullPIN is still active on this card."
+msgstr ""
+
+#: src/view/nullpinwidget.cpp:56
+#, kde-format
+msgid "You need to set a PIN before you can use the certificates."
+msgstr ""
+
+#: src/view/nullpinwidget.cpp:62
+#, kde-format
+msgctxt "NKS is an identifier for a type of keys on a NetKey card"
+msgid "Set NKS PIN"
+msgstr ""
+
+#: src/view/nullpinwidget.cpp:63
+#, kde-format
+msgctxt "SigG is an identifier for a type of keys on a NetKey card"
+msgid "Set SigG PIN"
+msgstr ""
+
+#: src/view/nullpinwidget.cpp:88
+#, kde-format
+msgid "Setting a PIN is required but <b>can't be reverted</b>."
+msgstr ""
+
+#: src/view/nullpinwidget.cpp:90
+#, kde-format
+msgid ""
+"If you proceeed you will be asked to enter a new PIN and later to repeat "
+"that PIN."
+msgstr ""
+
+#: src/view/nullpinwidget.cpp:92
+#, kde-format
+msgid ""
+"It will <b>not be possible</b> to recover the card if the PIN has been "
+"entered wrongly more than 2 times."
+msgstr ""
+
+#: src/view/nullpinwidget.cpp:94
+#, fuzzy, kde-format
+#| msgid "Set F&ont..."
+msgid "Set initial PIN"
+msgstr "Setkan F&on..."
 
 #: src/view/pgpcardwidget.cpp:157
 #, kde-format
@@ -7610,12 +7757,6 @@ msgstr "Untuk &penyulitan sahaja"
 #, fuzzy, kde-format
 msgid "Authentication:"
 msgstr "Maklumat Sijil"
-
-#: src/view/pgpcardwidget.cpp:187
-#, fuzzy, kde-format
-#| msgid "Location"
-msgid "Actions:"
-msgstr "Lokasi"
 
 #: src/view/pgpcardwidget.cpp:192
 #, kde-format
@@ -7783,23 +7924,23 @@ msgstr "Cari:"
 msgid "Search...<%1>"
 msgstr "Cari:"
 
-#: src/view/smartcardwidget.cpp:66
+#: src/view/smartcardwidget.cpp:68
 #, fuzzy, kde-format
 #| msgid "Delete Certificates"
 msgid "Please insert a compatible smartcard."
 msgstr "Hapuskan Sijil"
 
-#: src/view/smartcardwidget.cpp:69
+#: src/view/smartcardwidget.cpp:71
 #, kde-format
 msgid "Kleopatra currently supports the following card types:"
 msgstr ""
 
-#: src/view/smartcardwidget.cpp:73
+#: src/view/smartcardwidget.cpp:75
 #, kde-format
 msgid "Refresh the view (F5) to update the smartcard status."
 msgstr ""
 
-#: src/view/smartcardwidget.cpp:93
+#: src/view/smartcardwidget.cpp:95
 #, kde-format
 msgid "Smartcard Management"
 msgstr ""
