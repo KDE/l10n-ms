@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-05-11 03:40+0200\n"
+"POT-Creation-Date: 2018-05-12 03:30+0200\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -21491,6 +21491,7 @@ msgstr ""
 #: plugins/filters/colorsfilters/wdg_perchannel.ui:374
 #: plugins/impex/video/video_export_options_dialog.ui:128
 #: plugins/tools/basictools/wdgmultihandtool.ui:97
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:137
 #, fuzzy, kde-format
 msgid "Reset"
 msgstr "&Pilih Semula"
@@ -29242,6 +29243,7 @@ msgstr "Kiri:"
 #. i18n: ectx: property (text), widget (QCheckBox, boolCenter)
 #: plugins/flake/textshape/dialogs/ParagraphLayout.ui:30
 #: plugins/tools/karbonplugins/tools/KarbonPatternOptionsWidget.cpp:43
+#: plugins/tools/tool_crop/kis_tool_crop.cc:130
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:65
 #, fuzzy, kde-format
 msgid "Center"
@@ -33103,6 +33105,7 @@ msgstr "Fon:"
 #. i18n: ectx: property (text), widget (QCheckBox, boolGrow)
 #: plugins/paintops/deform/kis_deform_paintop_settings.cpp:158
 #: plugins/paintops/deform/wdgdeformoptions.ui:44
+#: plugins/tools/tool_crop/kis_tool_crop.cc:127
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:151
 #, fuzzy, kde-format
 msgid "Grow"
@@ -37519,16 +37522,17 @@ msgid ""
 "html>"
 msgstr ""
 
-#: plugins/tools/tool_crop/kis_tool_crop.h:213
-#, fuzzy, kde-format
-msgid "Crop Tool"
-msgstr "Alat pangkas"
-
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
+#: plugins/tools/tool_crop/kis_tool_crop.cc:126
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:14
 #, kde-format
 msgid "Crop"
 msgstr "Pangkas"
+
+#: plugins/tools/tool_crop/kis_tool_crop.h:223
+#, fuzzy, kde-format
+msgid "Crop Tool"
+msgstr "Alat pangkas"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, boolCenter)
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:62
@@ -37836,25 +37840,30 @@ msgstr "Putar Imej"
 msgid "Rotate 90 degrees CounterClockwise"
 msgstr "Putar Imej"
 
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:882
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:136
+#, fuzzy, kde-format
+msgid "Apply"
+msgstr "Tambahkan Topeng"
+
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:880
 #, kde-format
 msgctxt "floating message in transformation tool"
 msgid "Selected layer cannot be transformed with active transformation mode "
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:903
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:901
 #, kde-format
 msgctxt "floating message in transformation tool"
 msgid "Selections are not used when editing transform masks "
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:914
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:912
 #, fuzzy, kde-format
 msgctxt "floating message in transformation tool"
 msgid "Cannot transform empty layer "
 msgstr "Alat ubah"
 
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:943
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:941
 #, kde-format
 msgctxt "floating message in transformation tool"
 msgid ""
@@ -37862,7 +37871,7 @@ msgid ""
 "them to be transformed "
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform.h:356
+#: plugins/tools/tool_transform2/kis_tool_transform.h:359
 #, fuzzy, kde-format
 msgid "Transform a layer or a selection"
 msgstr "Alat pilih pemadam"
@@ -62056,10 +62065,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Resize Image to Size of Selection"
 #~ msgstr "Besarkan Imej ke Saiz Lapisan Semasa"
-
-#, fuzzy
-#~ msgid "Apply"
-#~ msgstr "Tambahkan Topeng"
 
 #, fuzzy
 #~ msgid "Mode 2"
