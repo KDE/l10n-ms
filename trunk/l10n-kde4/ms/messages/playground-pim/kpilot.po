@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-10-17 01:55+0200\n"
+"POT-Creation-Date: 2018-10-18 01:53+0200\n"
 "PO-Revision-Date: 2005-11-24 21:18+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -24,6 +24,63 @@ msgstr "MIMOS"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "opensource@mimos.my"
+
+#. i18n: ectx: property (text), widget (QLabel, fCollectionsLabel)
+#: conduits/akonadibase/akonadi-setup-widget.ui:19
+#, fuzzy, kde-format
+#| msgid "Calendar"
+msgid "Select Collection:"
+msgstr "Kalendar"
+
+#. i18n: ectx: property (text), widget (QLabel, fWarnIcon1)
+#. i18n: ectx: property (text), widget (QLabel, fWarnIcon2)
+#. i18n: ectx: property (text), widget (QLabel, fWalletErrorIcon)
+#. i18n: ectx: property (text), widget (QLabel, fQCAErrorIcon)
+#. i18n: ectx: property (text), widget (QLabel, fInfoIcon)
+#: conduits/akonadibase/akonadi-setup-widget.ui:49
+#: conduits/akonadibase/akonadi-setup-widget.ui:94
+#: conduits/keyringconduit/keyringwidget.ui:117
+#: conduits/keyringconduit/keyringwidget.ui:181
+#: conduits/timeconduit/time-setup_dialog.ui:83
+#, kde-format
+msgid "ICON"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, fSelectionWarnLabel)
+#: conduits/akonadibase/akonadi-setup-widget.ui:65
+#, kde-format
+msgid ""
+"No collection selected yet. Make sure you select a collection before "
+"synchronizing. If you do not see any collections in the combobox, make sure "
+"that Akonadi started and that there is a valid resource for this data type."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: conduits/akonadibase/akonadi-setup-widget.ui:110
+#, kde-format
+msgid ""
+"Do not change the collection once you have synced your device with one of "
+"the Akonadi Collections. There are currently no advanced checks in the code "
+"so prepare for the worst when you decide to do it anyway. We are working on "
+"this. Please contact us in #kpilot on irc.freenode.org if you have problems."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, fErrorIcon)
+#: conduits/akonadibase/akonadi-setup-widget.ui:153
+#, kde-format
+msgid ""
+"ERROR\n"
+"ICON"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, fNonExistingCollection)
+#: conduits/akonadibase/akonadi-setup-widget.ui:170
+#, kde-format
+msgid ""
+"The previous configured Akonadi collection is invalid. You must select a "
+"valid Akonadi collection above and click apply before you can use this "
+"conduit.\n"
+msgstr ""
 
 #: conduits/base/cudcounter.cc:78
 #, kde-format
@@ -351,6 +408,15 @@ msgstr "Port iKalendar "
 msgid "Select Calendar: "
 msgstr "Kalendar"
 
+#. i18n: ectx: attribute (title), widget (QWidget, fAkonadiTab)
+#. i18n: ectx: attribute (title), widget (QWidget, tab_5)
+#: conduits/calendar/settingswidget.ui:17
+#: conduits/contacts/settingswidget.ui:20 conduits/todo/settingswidget.ui:17
+#, fuzzy, kde-format
+#| msgid "Locale Settings"
+msgid "Akonadi Settings"
+msgstr "Seting Lokal"
+
 #: conduits/contacts/contactsconfig.cc:38
 #: Documentation/base-conduit-template/contacts-setup.cc:44
 #, fuzzy, kde-format
@@ -378,6 +444,497 @@ msgstr "Kontact"
 #| msgid "&Standard addressbook"
 msgid "Select Address Book: "
 msgstr "Buku alamat &Piawai"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#. i18n: ectx: attribute (title), widget (QWidget, tab_6)
+#: conduits/contacts/settingswidget.ui:25
+#: conduits/docconduit/doc-setupdialog.ui:337
+#, kde-format
+msgid "Conflicts"
+msgstr "Konflik"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup, fConflictResolution)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: conduits/contacts/settingswidget.ui:31
+#: conduits/docconduit/doc-conduit.cc:601
+#: conduits/docconduit/doc-setupdialog.ui:343
+#: Documentation/base-conduit-template/contacts-settings.ui:31
+#, kde-format
+msgid "Conflict Resolution"
+msgstr "Penyelesaian Konflik"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_8)
+#: conduits/contacts/settingswidget.ui:37
+#: Documentation/base-conduit-template/contacts-settings.ui:37
+#, kde-format
+msgid ""
+"<p>Select the default action if an event was modified on both sides here. </"
+"p>"
+msgstr ""
+"<p>Jika peristiwa telah diubah di kedua-dua belah, pilih tindakan piawai di "
+"sini.</p>"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_2_3)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:56
+#: conduits/contacts/settingswidget.ui:72
+#: Documentation/base-conduit-template/contacts-settings.ui:56
+#: Documentation/base-conduit-template/contacts-settings.ui:69
+#, kde-format
+msgid ""
+"<qt>Select in this list how conflicting entries (entries which were edited "
+"both on your handheld and on the PC) are resolved. Possibly values are \"Use "
+"KPilot's Global Setting\" to use the settings defined in KPilot HotSync "
+"configuration, \"Ask User\" to let you decide case by case, \"Do Nothing\" "
+"to allow the entries to be different, \"PC overrides\", \"Handheld overrides"
+"\", \"Use values from last sync\" and \"Use both entries\" to create a new "
+"entry on both the PC and handheld.</qt>"
+msgstr ""
+"<qt>Pilih dari senarai ini bagaimana entri berkonflik (entri yang diedit "
+"dalam komputer telapak dan juga PC) diselesaikan. Nilai yang mungkin ialah "
+"\"Gunakan seting global KPilot\" untuk menggunakan seting yang ditakrif "
+"dalam konfigurasi KPilot HotSync, \"Tanya Pengguna\" untuk membuat keputusan "
+"kes demi kes, \"Jangan buat apa-apa\" untuk membenarkan  entri berlainan, "
+"\"Tulis tindih PC\", \"Tulis tindih komputer telapak\", \"Guna nilai dari "
+"penyegerakan terakhir\" dan \"Guna kedua-dua entri\" untuk mencipta entri "
+"baru dalam PC dan juga dalam komputer telapak.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2_3)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: conduits/contacts/settingswidget.ui:59
+#: Documentation/base-conduit-template/contacts-settings.ui:59
+#: kpilot/config_page_sync.ui:145
+#, kde-format
+msgid "Conflict &resolution:"
+msgstr "&Penyelesaian konflik:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:76
+#: Documentation/base-conduit-template/contacts-settings.ui:73
+#, fuzzy, kde-format
+#| msgid "Use KPilot's Global Setting"
+msgid "Use KPilot's Global Settings"
+msgstr "Gunakan Seting Global KPilot"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:81
+#: Documentation/base-conduit-template/contacts-settings.ui:78
+#: kpilot/config_page_sync.ui:168
+#, kde-format
+msgid "Ask User"
+msgstr "Tanya Pengguna"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:86
+#: Documentation/base-conduit-template/contacts-settings.ui:83
+#, fuzzy, kde-format
+#| msgid "Handheld Overrides"
+msgid "Let The Handheld Override"
+msgstr "Tulis Tindih Komputer Telapak"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:91
+#: Documentation/base-conduit-template/contacts-settings.ui:88
+#, fuzzy, kde-format
+#| msgid "PC Overrides"
+msgid "Let The PC Override"
+msgstr "Tulis Tindih PC"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:96
+#: Documentation/base-conduit-template/contacts-settings.ui:93
+#, kde-format
+msgid "Use Both Entries"
+msgstr "Gunakan Kedua-dua Entri"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:101
+#: Documentation/base-conduit-template/contacts-settings.ui:98
+#: kpilot/config_page_sync.ui:173
+#, kde-format
+msgid "Do Nothing"
+msgstr "Jangan buat apa-apa"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_7)
+#: conduits/contacts/settingswidget.ui:126
+#, kde-format
+msgid "Fields"
+msgstr "Medan"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel2_2)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:132
+#: conduits/contacts/settingswidget.ui:154
+#: Documentation/base-conduit-template/contacts-settings.ui:129
+#: Documentation/base-conduit-template/contacts-settings.ui:151
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Select which KAddressBook field should be used to store the Pilot's "
+#| "&quot;Other&quot; phone here.</qt>"
+msgid ""
+"<qt>Select which KAddressBook field should be used to store the Pilot's "
+"\"Other\" phone here.</qt>"
+msgstr ""
+"<qt>Pilih medan KAddressBook yang sepatutnya digunakan untuk menstor telefon "
+"&quot;Other&quot; Pilot di sini.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2_2)
+#: conduits/contacts/settingswidget.ui:135
+#: Documentation/base-conduit-template/contacts-settings.ui:132
+#, kde-format
+msgid "Handheld other phone:"
+msgstr "Telefon lain komputer telapak:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:158
+#: Documentation/base-conduit-template/contacts-settings.ui:155
+#, kde-format
+msgid "Other Phone"
+msgstr "Telefon lain"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:163
+#: Documentation/base-conduit-template/contacts-settings.ui:160
+#, kde-format
+msgid "Assistant"
+msgstr "Pembantu"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#. i18n: ectx: property (text), item, widget (KComboBox, fFax)
+#: conduits/contacts/settingswidget.ui:168
+#: conduits/contacts/settingswidget.ui:271
+#: Documentation/base-conduit-template/contacts-settings.ui:165
+#: Documentation/base-conduit-template/contacts-settings.ui:268
+#, kde-format
+msgid "Business Fax"
+msgstr "Faks Perniagaan"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:173
+#: Documentation/base-conduit-template/contacts-settings.ui:170
+#, fuzzy, kde-format
+#| msgid "Work Phone"
+msgid "Car Phone"
+msgstr "Telefon Tempat Kerja"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:178
+#: Documentation/base-conduit-template/contacts-settings.ui:175
+#, fuzzy, kde-format
+#| msgid "Email address:"
+msgid "Second Email Address"
+msgstr "Alamat e-mel:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#. i18n: ectx: property (text), item, widget (KComboBox, fFax)
+#: conduits/contacts/settingswidget.ui:183
+#: conduits/contacts/settingswidget.ui:266
+#: Documentation/base-conduit-template/contacts-settings.ui:180
+#: Documentation/base-conduit-template/contacts-settings.ui:263
+#, kde-format
+msgid "Home Fax"
+msgstr "Faks Rumah"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:188
+#: Documentation/base-conduit-template/contacts-settings.ui:185
+#, kde-format
+msgid "Telex"
+msgstr "Teleks"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:193
+#: Documentation/base-conduit-template/contacts-settings.ui:190
+#, kde-format
+msgid "TTY/TTD Phone"
+msgstr "Telefon TTY/TTD "
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel4_2)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fAddress)
+#: conduits/contacts/settingswidget.ui:201
+#: conduits/contacts/settingswidget.ui:223
+#: Documentation/base-conduit-template/contacts-settings.ui:198
+#: Documentation/base-conduit-template/contacts-settings.ui:220
+#, kde-format
+msgid ""
+"<qt>Select which KAddressBook field should be used to store the Pilot's "
+"Street Address here.</qt>"
+msgstr ""
+"<qt>Pilih medan KAddressBook yang sepatutnya digunakan untuk menstor alamat "
+"jalan Pilot di sini.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4_2)
+#: conduits/contacts/settingswidget.ui:204
+#: Documentation/base-conduit-template/contacts-settings.ui:201
+#, kde-format
+msgid "Handheld street address:"
+msgstr "Alamat jalan komputer telapak:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fAddress)
+#: conduits/contacts/settingswidget.ui:227
+#: Documentation/base-conduit-template/contacts-settings.ui:224
+#, kde-format
+msgid "Preferred, then Home Address"
+msgstr "Keutamaan, kemudian Alamat Rumah"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fAddress)
+#: conduits/contacts/settingswidget.ui:232
+#: Documentation/base-conduit-template/contacts-settings.ui:229
+#, kde-format
+msgid "Preferred, then Business Address"
+msgstr "Keutamaan, kemudian Alamat Perniagaan"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel5)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fFax)
+#: conduits/contacts/settingswidget.ui:240
+#: conduits/contacts/settingswidget.ui:262
+#: Documentation/base-conduit-template/contacts-settings.ui:237
+#: Documentation/base-conduit-template/contacts-settings.ui:259
+#, kde-format
+msgid ""
+"<qt>Select which KAddressBook field should be used to store the Fax number "
+"from the Pilot here.</qt>"
+msgstr ""
+"<qt>Pilih medan KAddressBook yang sepatutnya digunakan untuk menstor nombor "
+"faks dari Pilot, di sini.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: conduits/contacts/settingswidget.ui:243
+#: Documentation/base-conduit-template/contacts-settings.ui:240
+#, kde-format
+msgid "Handheld fax:"
+msgstr "Faks komputer telapak:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_4)
+#: conduits/contacts/settingswidget.ui:293
+#, kde-format
+msgid "Custom Fields"
+msgstr "Medan Langganan"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fCustom0)
+#: conduits/contacts/settingswidget.ui:305
+#: conduits/contacts/settingswidget.ui:327
+#: Documentation/base-conduit-template/contacts-settings.ui:302
+#: Documentation/base-conduit-template/contacts-settings.ui:324
+#, kde-format
+msgid ""
+"<qt>Select the field from this list that represents best the meaning given "
+"by your use of the first custom field on your handheld.</qt>"
+msgstr ""
+"<qt>Pilih dari senarai ini, medan yang terbaik mewakili makna yang diberikan "
+"oleh penggunaan medan langganan pertama dalam komputer telapak anda.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: conduits/contacts/settingswidget.ui:308
+#: Documentation/base-conduit-template/contacts-settings.ui:305
+#, kde-format
+msgid "Handheld custom field 1:"
+msgstr "Medan langganan komputer telapak 1:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom0)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom1)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom2)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom3)
+#: conduits/contacts/settingswidget.ui:331
+#: conduits/contacts/settingswidget.ui:380
+#: conduits/contacts/settingswidget.ui:429
+#: conduits/contacts/settingswidget.ui:478
+#: Documentation/base-conduit-template/contacts-settings.ui:328
+#: Documentation/base-conduit-template/contacts-settings.ui:377
+#: Documentation/base-conduit-template/contacts-settings.ui:426
+#: Documentation/base-conduit-template/contacts-settings.ui:475
+#, kde-format
+msgid "Store as Custom Field"
+msgstr "Stor sebagai Medan Langganan"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom0)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom1)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom2)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom3)
+#: conduits/contacts/settingswidget.ui:336
+#: conduits/contacts/settingswidget.ui:385
+#: conduits/contacts/settingswidget.ui:434
+#: conduits/contacts/settingswidget.ui:483
+#: Documentation/base-conduit-template/contacts-settings.ui:333
+#: Documentation/base-conduit-template/contacts-settings.ui:382
+#: Documentation/base-conduit-template/contacts-settings.ui:431
+#: Documentation/base-conduit-template/contacts-settings.ui:480
+#, fuzzy, kde-format
+#| msgid "Birthdate"
+msgid "Birthday"
+msgstr "Tarikh lahir"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom0)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom1)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom2)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom3)
+#: conduits/contacts/settingswidget.ui:341
+#: conduits/contacts/settingswidget.ui:390
+#: conduits/contacts/settingswidget.ui:439
+#: conduits/contacts/settingswidget.ui:488
+#: Documentation/base-conduit-template/contacts-settings.ui:338
+#: Documentation/base-conduit-template/contacts-settings.ui:387
+#: Documentation/base-conduit-template/contacts-settings.ui:436
+#: Documentation/base-conduit-template/contacts-settings.ui:485
+#, kde-format
+msgid "URL"
+msgstr "URL"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom0)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom1)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom2)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom3)
+#: conduits/contacts/settingswidget.ui:346
+#: conduits/contacts/settingswidget.ui:395
+#: conduits/contacts/settingswidget.ui:444
+#: conduits/contacts/settingswidget.ui:493
+#: Documentation/base-conduit-template/contacts-settings.ui:343
+#: Documentation/base-conduit-template/contacts-settings.ui:392
+#: Documentation/base-conduit-template/contacts-settings.ui:441
+#: Documentation/base-conduit-template/contacts-settings.ui:490
+#, kde-format
+msgid "IM Address (ICQ, MSN, ...)"
+msgstr "Alamat IM (ICQ, MSN, ...)"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fCustom1)
+#: conduits/contacts/settingswidget.ui:354
+#: conduits/contacts/settingswidget.ui:376
+#: Documentation/base-conduit-template/contacts-settings.ui:351
+#: Documentation/base-conduit-template/contacts-settings.ui:373
+#, kde-format
+msgid ""
+"<qt>Select the field from this list that represents best the meaning given "
+"by your use of the second custom field on your handheld.</qt>"
+msgstr ""
+"<qt>Pilih dari senarai ini, medan yang terbaik mewakili makna yang diberikan "
+"oleh penggunaan medan langganan kedua pada komputer telapak anda.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: conduits/contacts/settingswidget.ui:357
+#: Documentation/base-conduit-template/contacts-settings.ui:354
+#, kde-format
+msgid "Handheld custom field 2:"
+msgstr "Medan langganan komputer telapak 2:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_3)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fCustom2)
+#: conduits/contacts/settingswidget.ui:403
+#: conduits/contacts/settingswidget.ui:425
+#: Documentation/base-conduit-template/contacts-settings.ui:400
+#: Documentation/base-conduit-template/contacts-settings.ui:422
+#, kde-format
+msgid ""
+"<qt>Select the field from this list that represents best the meaning given "
+"by your use of the third custom field on your handheld.</qt>"
+msgstr ""
+"<qt>Pilih dari senarai ini, medan yang terbaik mewakili makna yang diberikan "
+"oleh penggunaan medan langganan ketiga dalam komputer telapak anda.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#: conduits/contacts/settingswidget.ui:406
+#: Documentation/base-conduit-template/contacts-settings.ui:403
+#, kde-format
+msgid "Handheld custom field 3:"
+msgstr "Medan langganan komputer telapak 3:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_4)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fCustom3)
+#: conduits/contacts/settingswidget.ui:452
+#: conduits/contacts/settingswidget.ui:474
+#: Documentation/base-conduit-template/contacts-settings.ui:449
+#: Documentation/base-conduit-template/contacts-settings.ui:471
+#, kde-format
+msgid ""
+"<qt>Select the field from this list that represents best the meaning given "
+"by your use of the fourth custom field on your handheld.</qt>"
+msgstr ""
+"<qt>Pilih dari senarai ini, medan yang terbaik mewakili makna yang diberikan "
+"oleh penggunaan medan langganan keempat dalam komputer telapak anda.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
+#: conduits/contacts/settingswidget.ui:455
+#: Documentation/base-conduit-template/contacts-settings.ui:452
+#, kde-format
+msgid "Handheld custom field 4:"
+msgstr "Medan langganan komputer telapak 4:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_5)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:511
+#: conduits/contacts/settingswidget.ui:533
+#: Documentation/base-conduit-template/contacts-settings.ui:508
+#: Documentation/base-conduit-template/contacts-settings.ui:530
+#, no-c-format, kde-format
+msgid ""
+"<qt>Select the birthdate format here, if you selected \"birthdate\" for any "
+"of the custom fields above. Possible placeholders are:<br> %d for the day, "
+"%m for the month, %y for the two-digit year, %Y for the four-digit year. "
+"For  example, %d.%m.%Y would generate a date like 27.3.1952, while %m/%d/%y "
+"would write the same date as 03/27/52. </qt>"
+msgstr ""
+"<qt>Pilih format tarikh lahir di sini, jika anda memilih \"tarikh lahir\" "
+"untuk sebarang medan langganan di atas. Pemegang tempat yang mungkin adalah:"
+"<br> %d untuk hari, %m untuk bulan, %y untuk tahun 2 digit, %Y untuk tahun 4 "
+"digit. Contoh, %d.%m.%Y akan menghasilkan tarikh seperti 27.3.1952, "
+"manakala  %m/%d/%y akan menulis tarikh yang sama sebagai  03/27/52. </qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_5)
+#: conduits/contacts/settingswidget.ui:514
+#: Documentation/base-conduit-template/contacts-settings.ui:511
+#, kde-format
+msgid "Date &format:"
+msgstr "&Format tarikh:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:540
+#: Documentation/base-conduit-template/contacts-settings.ui:537
+#, kde-format
+msgid "Locale Settings"
+msgstr "Seting Lokal"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:545
+#: Documentation/base-conduit-template/contacts-settings.ui:542
+#, no-c-format, kde-format
+msgid "%d.%m.%Y"
+msgstr "%h.%b.%T"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:550
+#: Documentation/base-conduit-template/contacts-settings.ui:547
+#, no-c-format, kde-format
+msgid "%d.%m.%y"
+msgstr "%h.%b.%t"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:555
+#: Documentation/base-conduit-template/contacts-settings.ui:552
+#, no-c-format, kde-format
+msgid "%d/%m/%Y"
+msgstr "%h/%b/%T"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:560
+#: Documentation/base-conduit-template/contacts-settings.ui:557
+#, no-c-format, kde-format
+msgid "%d/%m/%y"
+msgstr "%h/%b/%t"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:565
+#: Documentation/base-conduit-template/contacts-settings.ui:562
+#, no-c-format, kde-format
+msgid "%m/%d/%Y"
+msgstr "%b/%h/%T"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:570
+#: Documentation/base-conduit-template/contacts-settings.ui:567
+#, no-c-format, kde-format
+msgid "%m/%d/%y"
+msgstr "%b/%h/%t"
 
 #: conduits/docconduit/doc-conduit.cc:76
 #, kde-format
@@ -409,11 +966,6 @@ msgstr "Penukaran PalmDOC \"%1 gagal."
 #, kde-format
 msgid "Unable to open or create the database %1."
 msgstr "Tidak boleh membuka atau mencipta pangkalan data %1."
-
-#: conduits/docconduit/doc-conduit.cc:601
-#, kde-format
-msgid "Conflict Resolution"
-msgstr "Penyelesaian Konflik"
 
 #: conduits/docconduit/doc-conduit.cc:606
 #, kde-format
@@ -624,6 +1176,519 @@ msgstr ""
 msgid "Palm DOC"
 msgstr "Palm DOC"
 
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#. i18n: ectx: attribute (title), widget (QWidget)
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: conduits/docconduit/doc-setupdialog.ui:32
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:28
+#: conduits/malconduit/mal-setup_dialog.ui:38
+#: conduits/notepadconduit/notepad-setup.ui:21
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:35
+#, fuzzy, kde-format
+#| msgid "General"
+msgid "General"
+msgstr "Umum"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: conduits/docconduit/doc-setupdialog.ui:38
+#, kde-format
+msgid "&Text files:"
+msgstr "Fail &Teks:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel1)
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, fTXTDir)
+#: conduits/docconduit/doc-setupdialog.ui:44
+#: conduits/docconduit/doc-setupdialog.ui:67
+#, kde-format
+msgid ""
+"<qt>Enter here, or select clicking the file picker button, the name and "
+"location of the folder used to find and synchronize text files. All files "
+"with extension .txt located in this folder will be synced to Palm DOC "
+"databases in your handheld.</qt>"
+msgstr ""
+"<qt>Masuk di sini, atau klik butang pemungut, nama dan lokasi folder yang "
+"digunakan untuk mencari dan menyegerakkan fail teks. Semua fail dengan "
+"sambungan .txt di dalam folder ini akan disegerakkan ke pangkalan data DOC "
+"Palm dalam komputer telapak anda.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fkeepPDBLocally)
+#: conduits/docconduit/doc-setupdialog.ui:54
+#, kde-format
+msgid "Local co&py:"
+msgstr "&Salinan setempat:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fkeepPDBLocally)
+#: conduits/docconduit/doc-setupdialog.ui:60
+#, kde-format
+msgid ""
+"<qt>Check this box if you want to save a copy of the Palm DOC databases (."
+"pdb files) on your PC.</qt>"
+msgstr ""
+"<qt>Semak kotak ini jika anda ingin menyimpan salinan pangkalan data Palm "
+"DOC (.pdb files) dalam PC anda.</qt>"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup, fSyncDirection)
+#: conduits/docconduit/doc-setupdialog.ui:74
+#, kde-format
+msgid "Synchronization Mode"
+msgstr "Mod Penyegerakan"
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton3)
+#: conduits/docconduit/doc-setupdialog.ui:86
+#, kde-format
+msgid "Sync only P&C to PDA"
+msgstr "Segerakkan hanya P&C ke PDA"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton3)
+#: conduits/docconduit/doc-setupdialog.ui:92
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize texts changed in your PC to Palm DOC "
+"databases in your handheld. Palm DOC databases modified in the handheld will "
+"not be converted to text files, but texts changed in the PC will be "
+"converted to the Palm DOC databases.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini untuk segerakkan teks yang telah berubah dalam PC ke "
+"pangkalan data dalam komputer telapak anda. Pangkalan data Palm DOC yang "
+"diubah suai dalam komputer telapak tidak akan ditukar menjadi fail teks, "
+"tetapi teks yang diubah dalam PC akan ditukar menjadi  pangkalan data Palm "
+"DOC.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton2)
+#: conduits/docconduit/doc-setupdialog.ui:99
+#, kde-format
+msgid "Sync only P&DA to PC"
+msgstr "Segerakkan hanya P&DA ke PC"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton2)
+#: conduits/docconduit/doc-setupdialog.ui:102
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize the changes made to Palm DOC databases "
+"in your handheld to the PC text files. Palm DOC databases modified in the "
+"handheld will be converted to text files, but texts changed in the PC will "
+"not be converted to the Palm DOC databases.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini untuk segerakkan perubahan yang dibuat pada  pangkalan "
+"data Palm DOC dalam komputer telapak kepada fail teks PC. Pangkalan data "
+"Palm DOC yang diubah suai dalam komputer telapak akan ditukar menjadi fail "
+"teks, tetapi teks yang diubah dalam PC tidak akan ditukar menjadi pangkalan "
+"data Palm DOC.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton1)
+#: conduits/docconduit/doc-setupdialog.ui:109
+#, kde-format
+msgid "Sync &all"
+msgstr "Segerakkan semua"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton1)
+#: conduits/docconduit/doc-setupdialog.ui:118
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize the file texts in your PC to Palm DOC "
+"databases in your handheld. Palm DOC databases modified in the handheld will "
+"be converted to text files, and texts changed in the PC will be converted to "
+"the Palm DOC databases, keeping both versions in sync.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini untuk segerakkan teks fail dalam PC  ke pangkalan data "
+"Palm DOC dalam komputer telapak. Pangkalan data Palm DOC yang diubah suai "
+"dalam komputer telapak akan ditukar menjadi fail teks, dan teks yang berubah "
+"dalam PC akan ditukar menjadi  pangkalan data Palm DOC, mengekalkan kedua-"
+"dua versi dalam keadaan segerak.</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, fPDBDir)
+#: conduits/docconduit/doc-setupdialog.ui:144
+#, kde-format
+msgid ""
+"<qt>Enter here, or select clicking the file picker button, the name and "
+"location of the folder where copies of the handheld databases are kept (.pdb "
+"files). Local copies are only made if the box is checked as well.</qt>"
+msgstr ""
+"<qt>Masuk di sini, atau klik butang pemungut fail, nama dan lokasi folder "
+"tempat simpanan salinan pangkalan data komputer telapak (fail .pdb). Salinan "
+"setempat hanya dibuat jika kotak juga disemak.</qt>"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: conduits/docconduit/doc-setupdialog.ui:152
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:168
+#, kde-format
+msgid "PC -> Handheld"
+msgstr "PC -> Komputer Telapak"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fCompress)
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/doc-setupdialog.ui:158
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:255
+#, kde-format
+msgid "&Compress"
+msgstr "&Padatkan"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, fCompress)
+#. i18n: ectx: property (toolTip), widget (QCheckBox)
+#: conduits/docconduit/doc-setupdialog.ui:164
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:261
+#, kde-format
+msgid ""
+"Check this box, if the text should be compressed on the handheld to save "
+"memory. Most doc reader on the handheld support compressed texts."
+msgstr ""
+"Semak kotak ini, jika teks sepatutnya dimampatkan pada komputer telapak "
+"untuk menyimpan memori. Kebanyakan pembaca dokumen dalam komputer telapak "
+"menyokong teks mampat."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fCompress)
+#: conduits/docconduit/doc-setupdialog.ui:167
+#, no-c-format, kde-format
+msgid ""
+"<qt>The Palm DOC format supports compressing the text to save memory. Check "
+"this box to enable text compression, so the resulting Palm DOC database will "
+"consume about 50% less memory than in uncompressed state. Almost all DOC "
+"readers on the Palm support compressed texts.</qt>"
+msgstr ""
+"<qt>Format Palm DOC menyokong pemampatan teks untuk menyimpan memori. Semak "
+"kotak ini untuk mengaktifkan pemampatan, supaya pangkalan data Palm DOC yang "
+"dihasilkan menggunakan kurang 50% memori berbanding dengan keadaan tidak "
+"mampat. Hampir semua pembaca DOC dalam Palm menyokong teks mampat.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fConvertBookmarks)
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/doc-setupdialog.ui:174
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:272
+#, kde-format
+msgid "Convert &bookmarks"
+msgstr "Tukar tanda &buku"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fConvertBookmarks)
+#: conduits/docconduit/doc-setupdialog.ui:180
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Check this box to enable bookmark creation when converting text files "
+#| "to Palm DOC databases. Most doc readers support bookmarks. In order to "
+#| "create a bookmark, it is necessary to to provide the location in the text "
+#| "where the bookmark should be set and the bookmark title, in at least one "
+#| "of the formats listed below.</qt>"
+msgid ""
+"<qt>Check this box to enable bookmark creation when converting text files to "
+"Palm DOC databases. Most doc readers support bookmarks. In order to create a "
+"bookmark, it is necessary to provide the location in the text where the "
+"bookmark should be set and the bookmark title, in at least one of the "
+"formats listed below.</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk mengaktifkan penciptaan tanda buku apabila menukar "
+"fail teks menjadi pangkalan data Palm DOC. Kebanyakan pembaca dokumen "
+"menyokong tanda buku. Untuk mencipta satu tanda buku, perlu diberitahu "
+"lokasi tempat tanda buku sepatutnya diset dalam teks, serta tajuk tanda "
+"buku, dalam sekurang-kurangnya satu format yang tersenarai di bawah.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fBookmarksInline)
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/doc-setupdialog.ui:203
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:230
+#, kde-format
+msgid "&Inline tags in text"
+msgstr "Dalam bar&iskan tag dalam teks"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fBookmarksInline)
+#: conduits/docconduit/doc-setupdialog.ui:209
+#, kde-format
+msgid ""
+"Check this box to create bookmarks from inline tags in the text. The inline "
+"tag consist of tags in the form <* bookmarktext *>. The bookmark location is "
+"set using the location of the inline tag in the text, and  the name is the "
+"text between the <* and the *>. The inline tag (<*...*>) will be removed "
+"from the text."
+msgstr ""
+"Semak kotak ini untuk mencipta tanda buku dari tag dalam baris di dalam "
+"teks. Tag dalam baris terdiri daripada tag dalam bentuk <* bookmarktext *>. "
+"Lokasi tanda buku diset menggunakan lokasi tag dalam garisan dalam teks, dan "
+"namanya ialah teks yang berada antara  <* and the *>. Tag dalam garisan "
+"(<*...*>) akan dikeluarkan dari teks."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/docconduit/doc-setupdialog.ui:216
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:155
+#, kde-format
+msgid "&Encoding:"
+msgstr "&Pengekodan:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fBookmarksEndtags)
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/doc-setupdialog.ui:229
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:244
+#, kde-format
+msgid "&Tags at end of text"
+msgstr "&Tag di hujung teks"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fBookmarksEndtags)
+#: conduits/docconduit/doc-setupdialog.ui:232
+#, kde-format
+msgid ""
+"Check this box to convert tags of the form <bookmarkname> at the end of the "
+"text to bookmarks. The text inside the tag (\"bookmarkname\") will be "
+"searched in the text, and whenever found, a bookmark will be set there. The "
+"endtags <...> will then be removed from the end of the text."
+msgstr ""
+"Semak kotak ini untuk menukar bentuk <bookmarkname> di hujung teks menjadi "
+"tanda buku. Teks di dalam tag (\"bookmarkname\") akan dicari dalam teks, dan "
+"satu tanda buku akan diset di lokasi tag tersebut ditemui. Tag hujung <...> "
+"kemudiannya akan dikeluarkan dari hujung teks."
+
+#. i18n: ectx: property (text), widget (QCheckBox, fBookmarksBmk)
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/doc-setupdialog.ui:239
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:286
+#, kde-format
+msgid "Regular &expressions in .bmk file"
+msgstr "&Ungkapan lazim dalam fail .bmk"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fBookmarksBmk)
+#: conduits/docconduit/doc-setupdialog.ui:242
+#, kde-format
+msgid ""
+"<qt>Check this box to use regular expressions in a file to search the text "
+"for bookmarks. The file should have the same name as the text file, but "
+"should end in .bmk instead of .txt (for instance, the regular expression "
+"file for textname.txt should be textname.bmk). See the documentation for a "
+"description of the format of the bmk file.</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk menggunakan ungkapan lazim dalam fail untuk "
+"mencari teks bagi tanda buku. Fail tersebut sepatutnya mempunyai nama yang "
+"sama dengan fail teks, tetapi hujungnya .bmk, bukan .txt,    (contohnya, "
+"fail ungkapan lazim textname.txt yang sepatutnya ialah textname.bmk). Lihat "
+"dokumentasi untuk huraian format fail bmk.</qt>"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: conduits/docconduit/doc-setupdialog.ui:253
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:316
+#, kde-format
+msgid "Handheld -> PC"
+msgstr "Komputer telapak -> PC"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fNoConversionOfBmksOnly)
+#: conduits/docconduit/doc-setupdialog.ui:275
+#, kde-format
+msgid "Do not convert, if text unchanged (only bookmarks)"
+msgstr "Jangan tukar, jika teks tidak berubah (hanya tanda buku)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fNoConversionOfBmksOnly)
+#: conduits/docconduit/doc-setupdialog.ui:278
+#, kde-format
+msgid ""
+"<qt>Check this box to avoid syncing the text on the handheld to the PC if "
+"you only changed the bookmarks on the handheld (but not the text).</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk mengelakkan penyegerakan teks dalam komputer "
+"telapak ke PC jika anda hanya mengubah tanda buku pada komputer telapak "
+"(tetapi tidak dalam teks).</qt>"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup, fPCBookmarks)
+#. i18n: ectx: property (title), widget (QButtonGroup)
+#: conduits/docconduit/doc-setupdialog.ui:285
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:344
+#, kde-format
+msgid "Convert Bookmarks"
+msgstr "Tukar Tanda Buku"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton8)
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/docconduit/doc-setupdialog.ui:291
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:372
+#, kde-format
+msgid "Do &not convert bookmarks"
+msgstr "Jangan tukar tanda buku"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioButton8)
+#: conduits/docconduit/doc-setupdialog.ui:297
+#, kde-format
+msgid ""
+"<qt>Check this box to avoid converting Palm DOC bookmarks to inline tags or "
+"to a bookmark file.</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk mengelakkan tanda buku Palm DOC ditukar menjadi "
+"tag dalam baris atau menjadi fail tanda buku.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton11)
+#: conduits/docconduit/doc-setupdialog.ui:304
+#, kde-format
+msgid "Convert into .bm &file"
+msgstr "Tukarkan kepada &fail .bm "
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioButton11)
+#: conduits/docconduit/doc-setupdialog.ui:313
+#, kde-format
+msgid ""
+"<qt>Check this box to convert the Palm DOC database bookmarks to a separate "
+"file, in the bmk format (see more about this format in the documentation). "
+"The resulting bookmark file shares the same filename as the resulting .txt "
+"file, but ends in .bmk instead. This approach creates a clean text file and "
+"a bookmark file.</qt>"
+msgstr ""
+"<qt>Semak  kotak ini untuk menukar tanda buku pangkalan data  Palm DOC "
+"menjadi fail berasingan, dalam format bmk (lihat maklumat lanjut tentang "
+"format ini dalam dokumentasi). Fail tanda buku yang dihasilkan akan "
+"berkongsi nama fail yang sama seperti fail .txt yang terhasil, tetapi "
+"bezanya, hujungnya ialah .bmk. Pendekatan ini mencipta fail teks yang bersih "
+"dan fail tanda buku.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton9)
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/docconduit/doc-setupdialog.ui:320
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:358
+#, kde-format
+msgid "Convert as &inline tags"
+msgstr "Tukar sebagai tag &dalam baris"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioButton9)
+#: conduits/docconduit/doc-setupdialog.ui:326
+#, kde-format
+msgid ""
+"<qt>Check this box to convert the Palm DOC database bookmarks to inline "
+"tags, in the form &lt;* BookmarkName *&gt;. These tags are inserted in the "
+"text in the position marked by the bookmark, and the text inside the tag "
+"corresponds to the bookmark name. Inline tags are easy to create, delete, "
+"move and edit.</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk menukar tanda buku pangkalan data Palm DOC kepada "
+"tag dalam baris, dalam bentuk &lt;* nama tanda buku *&gt;. Tag ini akan "
+"disisipkan dalam teks di posisi yang ditandakan oleh tanda buku, dan teks di "
+"dalam tag sejajar dengan nama tanda buku. Tag dalam baris mudah dicipta, "
+"dihapus, dialih dan diedit.</qt>"
+
+#. i18n: ectx: property (toolTip), widget (Q3ButtonGroup, fConflictResolution)
+#: conduits/docconduit/doc-setupdialog.ui:346
+#, kde-format
+msgid ""
+"If the same text was changed on the PC and the handheld, which of the two "
+"versions should be used as the new version?"
+msgstr ""
+"Jika teks yang sama diubah dalam PC dan komputer telapak, mana satu versi "
+"yang sepatutnya digunakan dalam versi baru?"
+
+#. i18n: ectx: property (whatsThis), widget (Q3ButtonGroup, fConflictResolution)
+#: conduits/docconduit/doc-setupdialog.ui:349
+#, kde-format
+msgid ""
+"<qt>The Palm DOC conduit does not feature merging the modifications when a "
+"text is changed both in the handheld and in the computer. Therefore, the "
+"choice is between working with the files out of sync, or discarding the "
+"changes in one of them.</qt>"
+msgstr ""
+"<qt>Saluran Palm DOC tidak mempunyai ciri mencantumkan pengubahsuaian "
+"apabila teks diubah dalam komputer telapak dan juga komputer biasa.  Oleh "
+"itu, pilihan adalah, melakukan sesuatu terhadap fail di luar penyegerakan, "
+"atau membuang perubahan dalam komputer telapak atau komputer.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton12)
+#: conduits/docconduit/doc-setupdialog.ui:355
+#, kde-format
+msgid "&No resolution"
+msgstr "&Tiada resolusi"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioButton12)
+#: conduits/docconduit/doc-setupdialog.ui:361
+#, kde-format
+msgid ""
+"<qt>The Palm DOC conduit does not feature merging the modifications when a "
+"text is changed both in the handheld and in the computer. Therefore, when "
+"conflicts appear, the choice is between working with the files out of sync, "
+"or discarding the changes in one of them. Select this option to prevent "
+"KPilot from overwriting your modifications.</qt>"
+msgstr ""
+"<qt>Saluran Palm DOC tidak mempunyai ciri mencantumkan pengubahsuaian "
+"apabila teks diubah dalam komputer telapak dan dalam komputer. Oleh itu, "
+"apabila konflik muncul, pilihan adalah sama ada melakukan sesuatu terhadap "
+"fail di luar penyegerakan, atau membuang perubahan dalam komputer telapak "
+"atau komputer. Pilih opsyen ini untuk mengelakkan KPilot menulis ganti "
+"pengubahsuaian anda.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton5)
+#: conduits/docconduit/doc-setupdialog.ui:368
+#, kde-format
+msgid "P&DA overrides"
+msgstr "Tulis tindih P&DA "
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton5)
+#: conduits/docconduit/doc-setupdialog.ui:374
+#, kde-format
+msgid ""
+"<qt>The Palm DOC conduit does not feature merging the modifications when a "
+"text is changed both in the handheld and in the computer. Therefore, when "
+"conflicts appear, the choice is between working with the files out of sync, "
+"or discarding the changes in one of them. Select this option to make the PDA "
+"version overwrite the PC version in case of conflict.</qt>"
+msgstr ""
+"<qt>Saluran Palm DOC tidak mempunyai ciri mencantumkan ubah suai apabila "
+"teks diubah dalam komputer telapak dan dalam komputer. Oleh itu, apabila "
+"konflik muncul, pilihan adalah sama ada  melakukan sesuatu terhadap fail di "
+"luar penyegerakan, atau membuang perubahan dalam komputer telapak atau dalam "
+"komputer. Pilih opsyen ini supaya versi PDA menulis ganti versi PC jika "
+"konflik berlaku.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton4)
+#: conduits/docconduit/doc-setupdialog.ui:381
+#, kde-format
+msgid "P&C overrides"
+msgstr "Tulis tindih  P&C"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton4)
+#: conduits/docconduit/doc-setupdialog.ui:387
+#, kde-format
+msgid ""
+"<qt>The Palm DOC conduit does not feature merging the modifications when a "
+"text is changed both in the handheld and in the computer. Therefore, when "
+"conflicts appear, the choice is between working with the files out of sync, "
+"or discarding the changes in one of them. Select this option to make the PC "
+"version overwrite the PDA version in case of conflict.</qt>"
+msgstr ""
+"<qt>Saluran Palm DOC tidak mempunyai ciri mencantumkan ubah suai teks "
+"apabila teks diubah dalam komputer telapak dan juga dalam komputer. Oleh "
+"itu, jika konflik muncul, pilihan ialah sama ada melakukan sesuatu terhadap "
+"fail di luar penyegerakan, atau membuang perubahan dalam komputer telapak "
+"atau dalam komputer. Pilih opsyen ini supaya versi  PC menulis ganti versi "
+"PDA jika konflik berlaku.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton7)
+#: conduits/docconduit/doc-setupdialog.ui:394
+#, kde-format
+msgid "&Ask the user"
+msgstr "&Tanya pengguna"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton7)
+#: conduits/docconduit/doc-setupdialog.ui:403
+#, kde-format
+msgid ""
+"<qt>The Palm DOC conduit does not feature merging the modifications when a "
+"text is changed both in the handheld and in the computer. Therefore, when "
+"conflicts appear, the choice is between working with the files out of sync, "
+"or discarding the changes in one of them. Select this option to show the "
+"resolution dialog to let the user decide on a case by case basis.</qt>"
+msgstr ""
+"<qt>Saluran Palm DOC tidak mempunyai ciri mencantumkan ubah suai apabila "
+"teks diubah dalam komputer telapak dan juga dalam komputer. Oleh itu, "
+"apabila konflik muncul, pilihan yang ada ialah sama ada melakukan sesuatu "
+"terhadap fail di luar penyegerakan, atau membuang perubahan dalam komputer "
+"telapak atau komputer. Pilih opsyen ini untuk memaparkan dialog resolusi "
+"supaya pengguna boleh membuat keputusan kes demi kes.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fAlwaysUseResolution)
+#: conduits/docconduit/doc-setupdialog.ui:413
+#, kde-format
+msgid "&Always show the resolution dialog"
+msgstr "&Sentiasa paparkan dialog resolusi"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fAlwaysUseResolution)
+#: conduits/docconduit/doc-setupdialog.ui:416
+#, kde-format
+msgid ""
+"<qt>Check this box to force the resolution dialog to appear even when there "
+"are no conflicts.</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk memaksa dialog resolusi muncul walaupun konflik "
+"tidak berlaku.</qt>"
+
 #: conduits/docconduit/kpalmdoc.cpp:42
 #, kde-format
 msgid "KPalmDOC"
@@ -760,7 +1825,9 @@ msgstr "Folder &teks:"
 msgid "&PalmDOC folder:"
 msgstr "Folder &PalmDOCr:"
 
+#. i18n: ectx: property (text), widget (QLabel)
 #: conduits/docconduit/kpalmdoc_dlg.cc:442
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:66
 #, kde-format
 msgid "&Text file:"
 msgstr "Fail &teks:"
@@ -792,6 +1859,140 @@ msgstr "<qt>Ralat semasa menukar teks %1.</qt>"
 msgid "<qt>The text file <em>%1</em> already exists. Overwrite it?</qt>"
 msgstr "<qt>Fail teks <em>%1</em> sudah wujud. Tulis ganti?</qt>"
 
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:47
+#, kde-format
+msgid "&PalmDOC file:"
+msgstr "Fail &PalmDOC:"
+
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:77
+#, kde-format
+msgid "Convert whole &folders"
+msgstr "Tukar seluruh &folder"
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:85
+#, kde-format
+msgid ""
+"Folder where copies of the handheld databases are kept. You can install them "
+"to any PalmOS handheld, and distribute these copies to other people (but "
+"beware of copyright infringement)."
+msgstr ""
+"Folder tempat simpanan salinan pangkalan data komputer telapak. Anda boleh "
+"memasangnya ke sebarang komputer telapak PalmOS, dan mengagihkan salinan ini "
+"kepada orang lain (tetapi awasi pencerobohan hakcipta)."
+
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:93
+#, kde-format
+msgid "&Ask before overwriting files"
+msgstr "&Tanya sebelum menulis ganti fail"
+
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:101
+#, kde-format
+msgid "&Verbose messages"
+msgstr "&Panjang lebarkan mesej "
+
+#. i18n: ectx: property (text), widget (KPushButton)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:109
+#, kde-format
+msgid "Convert Text to PalmDOC"
+msgstr "Tukarkan teks kepada PalmDOC"
+
+#. i18n: ectx: property (text), widget (KPushButton)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:117
+#, kde-format
+msgid "Convert PalmDOC to Text"
+msgstr "Tukarkan PalmDOC kepada teks"
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:142
+#, kde-format
+msgid ""
+"Enter the name of the folder where the text files reside on the PC. All "
+"files with extension .txt will be synced to the handheld."
+msgstr ""
+"Masukkan nama folder tempat fail  menetap dalam PC. Semua fail dengan "
+"sambungan .txt akan disegerakkan ke komputer telapak."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:236
+#, kde-format
+msgid ""
+"When a <* bookmarktext *> appears somewhere in the text, a bookmark will be "
+"set at this position, and the text between the <* and the *> will be used as "
+"bookmark name. The <*...*> will be removed from the text."
+msgstr ""
+"Jika  <* bookmarktext *> muncul di mana-mana tempat dalam teks, satu tanda "
+"buku akan diset di posisi ini, dan teks antara <* and the *> akan digunakan "
+"sebagai nama tanda buku.  <*...*> akan dikeluarkan dari teks."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:247
+#, kde-format
+msgid ""
+"Tags of the form <bookmarkname> at the end of the text will be used to "
+"search the text for the pattern between the < and >. Whenever \"bookmarkname"
+"\" appears in the text, a bookmark will be set there. The endtags <...> will "
+"then be removed from the end of the text."
+msgstr ""
+"Tag bentuk<bookmarkname> di hujung teks akan digunakan untuk mencari teks "
+"bagi corak antara < and >. Apabila \"nama penanda buku\" muncul dalam teks, "
+"satu tanda buku akan disetkan di situ. Maka tag hujung <...> akan "
+"dikeluarkan dari hujung teks."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:264
+#, no-c-format, kde-format
+msgid ""
+"The Palm doc format supports compressing the text to save memory. If you "
+"check this box, the text will consume about 50% less memory than in "
+"uncompressed state. Almost all DOC readers on the Palm support compressed "
+"texts."
+msgstr ""
+"Format doc Palm menyokong pemampatan teks untuk menjimatkan memori. Jika "
+"anda menyemak kotak ini, teks akan menggunakan kurang daripada 50% memori "
+"berbanding dengan keadaan tidak mampat. Hampir semua pembaca DOC dalam Palm "
+"menyokong teks mampat."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:278
+#, kde-format
+msgid ""
+"Do you want to convert bookmarks? Most doc readers support bookmarks. You "
+"have to provide some information about where the bookmarks should be set and "
+"their titles. Check at least one of the bookmark types below."
+msgstr ""
+"Anda ingin menukar tanda buku? Kebanyakan pembaca doc menyokong tanda buku. "
+"Anda perlu memberikan maklumat tentang tajuk dan tempat tanda buku patut "
+"diset. Semak sekurang-kurangnya satu daripada jenis tanda buku di bawah."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:289
+#, kde-format
+msgid ""
+"Use regular expressions in a file textname.bmk (textname.txt is the filename "
+"of the text) to search the text for bookmarks.See the documentation for a "
+"description of the format of the bmk file."
+msgstr ""
+"Guna ungkapan lazim dalam fail namateks.bmk (namateks.txt ialah nama fail "
+"teks berkenaan) untuk mencari teks bagi tanda buku. Lihat dokumentasi untuk "
+"huraian format fail bmk."
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:386
+#, kde-format
+msgid "Convert as &end tags"
+msgstr "Tukar sebagai tag &hujung"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:394
+#, kde-format
+msgid "Convert into .bmk &file"
+msgstr "Tukarkan kepada &fail .bmk"
+
 #: conduits/keyringconduit/keyringconduit.cc:73
 #, kde-format
 msgid "Error: Triple DES not supported. Unable to continue."
@@ -818,9 +2019,160 @@ msgstr ""
 msgid "Enter your Keyring password"
 msgstr ""
 
+#. i18n: ectx: label, entry (DatabaseUrl), group (keyring-conduit)
+#: conduits/keyringconduit/keyringconduit.kcfg:7
+#, kde-format
+msgid "Which local file do you want to use to sync the palm database with?"
+msgstr ""
+
 #: conduits/keyringconduit/keyringeditor/main.cc:54
 #, kde-format
 msgid "Test Date Book"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, PasswordDialog)
+#: conduits/keyringconduit/keyringeditor/passworddialog.ui:13
+#, fuzzy, kde-format
+#| msgid "Use &Dialog"
+msgid "Dialog"
+msgstr "Gunakan &Dialog"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: conduits/keyringconduit/keyringeditor/passworddialog.ui:21
+#: conduits/keyringconduit/keyringeditor/viewer.ui:111
+#, fuzzy, kde-format
+#| msgid "&Password:"
+msgid "Password:"
+msgstr "&Kata laluan:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: conduits/keyringconduit/keyringeditor/passworddialog.ui:28
+#, fuzzy, kde-format
+#| msgid "&Password:"
+msgid "Retype password:"
+msgstr "&Kata laluan:"
+
+#. i18n: ectx: property (text), widget (QLabel, equalLabel)
+#: conduits/keyringconduit/keyringeditor/passworddialog.ui:71
+#, fuzzy, kde-format
+#| msgid "Password set"
+msgid "Passwords do not match."
+msgstr "set kata laluan "
+
+#. i18n: ectx: property (windowTitle), widget (QMainWindow, MainWindow)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:13
+#, fuzzy, kde-format
+#| msgid "Record index:"
+msgid "Keyring Editor"
+msgstr "Indeks rekod:"
+
+#. i18n: ectx: property (text), widget (QPushButton, fDeleteButton)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:57
+#, kde-format
+msgid "Delete Record"
+msgstr "Hapuskan Rekod"
+
+#. i18n: ectx: property (text), widget (QPushButton, fNewButton)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:64
+#, fuzzy, kde-format
+#| msgid "New Record..."
+msgid "New Record"
+msgstr "Rekod Baru..."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:91
+#, kde-format
+msgid "Name:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:101
+#, fuzzy, kde-format
+#| msgid "Country:"
+msgid "Account:"
+msgstr "Negara:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:121
+#, kde-format
+msgid "Category"
+msgstr "Kategori"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:128
+#, fuzzy, kde-format
+#| msgid "changed"
+msgid "Last changed:"
+msgstr "diubah"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, fPasswordBox)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:169
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Show or hide password.</"
+"p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fPasswordBox)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:175
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Show or hide password</p></"
+"body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:203
+#, fuzzy, kde-format
+#| msgid "Note:\n"
+msgid "Notes:"
+msgstr "Perhatian:\n"
+
+#. i18n: ectx: property (title), widget (QMenu, menu_File)
+#. i18n: ectx: Menu (file)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:225 kpilot/kpilotui.rc:5
+#, fuzzy, kde-format
+#| msgid "Title"
+msgid "&File"
+msgstr "Tajuk"
+
+#. i18n: ectx: property (text), widget (QMenu, menu_File)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:236
+#, fuzzy, kde-format
+#| msgid "&Note:"
+msgid "&New"
+msgstr "&Perhatian:"
+
+#. i18n: ectx: property (text), widget (QMenu, menu_File)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:241
+#, kde-format
+msgid "&Open"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QMenu, menu_File)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:246
+#, fuzzy, kde-format
+#| msgid "&Edit..."
+msgid "&Exit"
+msgstr "&Edit..."
+
+#. i18n: ectx: property (toolTip), widget (QMenu, menu_File)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:249
+#, kde-format
+msgid "Saves the current open database and closes the application."
 msgstr ""
 
 #: conduits/keyringconduit/keyringhhdataproxy.cc:217
@@ -868,6 +2220,81 @@ msgstr "Pengarang Primer"
 #| msgid "Record index:"
 msgid "Keyring Conduit"
 msgstr "Indeks rekod:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: conduits/keyringconduit/keyringwidget.ui:34
+#, fuzzy, kde-format
+#| msgid "Viewer settings."
+msgid "Keyring Settings"
+msgstr "Seting pemapar."
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, fLocalDatabaseUrl)
+#: conduits/keyringconduit/keyringwidget.ui:43
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Select the file that you "
+"want to sync your PDA's keyring items with.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, fLocalDatabaseUrl)
+#: conduits/keyringconduit/keyringwidget.ui:49
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Select the keyring file on "
+"the computer which you wish to sync with the keyring database on the "
+"handheld.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: conduits/keyringconduit/keyringwidget.ui:62
+#, kde-format
+msgid "Local keyring file:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: conduits/keyringconduit/keyringwidget.ui:75
+#, fuzzy, kde-format
+#| msgid "Password set"
+msgid "Password Settings"
+msgstr "set kata laluan "
+
+#. i18n: ectx: property (text), widget (QRadioButton, fSavePassButton)
+#: conduits/keyringconduit/keyringwidget.ui:89
+#, fuzzy, kde-format
+#| msgid "No password set"
+msgid "Save password in wallet:"
+msgstr "Tiada kata laluan diset"
+
+#. i18n: ectx: property (text), widget (QRadioButton, fAskPassButton)
+#: conduits/keyringconduit/keyringwidget.ui:105
+#, kde-format
+msgid "Ask for password at each sync"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, fWalletErrorMessage)
+#: conduits/keyringconduit/keyringwidget.ui:145
+#, kde-format
+msgid ""
+"Unable to access the KDE system wallet. Unable to load or save your password."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, fQCAErrorMessage)
+#: conduits/keyringconduit/keyringwidget.ui:200
+#, kde-format
+msgid "Error: Unable to load triple DES QCA2 support."
+msgstr ""
 
 #: conduits/malconduit/mal-conduit.cc:120 conduits/malconduit/mal-setup.cc:62
 #, kde-format
@@ -955,6 +2382,302 @@ msgstr ""
 msgid "Authors of the malsync library (c) 1997-1999"
 msgstr "Pengarang perpustakaan malsync (c) 1997-1999"
 
+#. i18n: ectx: property (title), widget (QButtonGroup)
+#: conduits/malconduit/mal-setup_dialog.ui:49
+#, kde-format
+msgid "Sync"
+msgstr "Penyegerakan"
+
+#. i18n: ectx: property (whatsThis), widget (QButtonGroup)
+#: conduits/malconduit/mal-setup_dialog.ui:52
+#, fuzzy, kde-format
+#| msgid "Select how often AvantGo should be synchronised"
+msgid "Select how often AvantGo should be synchronized"
+msgstr "Pilih sekerap mana AvantGo patut disegerakkan"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:72
+#, kde-format
+msgid "&Every sync"
+msgstr "&Setiap penyegerakan"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:78
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize with the MAL server on every HotSync. "
+"To perform a successful synchronization, you need to have access to the MAL "
+"server during the HotSync.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini supaya segerak dengan pelayan MAL pada setiap HotSync. "
+"Untuk berjaya melaksanakan penyegerakan, anda perlu mempunyai akses ke "
+"pelayan MAL semasa HotSync.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:86
+#, kde-format
+msgid "Once per &hour"
+msgstr "Sekali setiap &jam"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:92
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize with the MAL server on every HotSync "
+"that is at least one hour after the previous MAL sync. To perform a "
+"successful synchronization, you need to have access to the MAL server during "
+"the HotSync.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini supaya segerak dengan pelayan MAL pada setiap HotSync "
+"yang sekurang-kurangnya satu jam selepas penyegerakan MAL sebelumnya.  Untuk "
+"berjaya melaksanakan penyegerakan, anda perlu mempunyai akses ke pelayan MAL "
+"semasa HotSync.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:100
+#, kde-format
+msgid "Once a &day"
+msgstr "Sekali &sehari"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:103
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize with the MAL server on every HotSync "
+"that is at least one day after the previous MAL sync. To perform a "
+"successful synchronization, you need to have access to the MAL server during "
+"the HotSync.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini supaya segerak dengan pelayan MAL pada setiap HotSync "
+"yang sekurang-kurangnya sehari selepas penyegerakan MAL sebelumnya. Untuk "
+"berjaya melaksanakan penyegerakan, anda perlu mempunyai akses ke pelayan MAL "
+"semasa HotSync.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:111
+#, kde-format
+msgid "Once a &week"
+msgstr "Sekali &seminggu"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:114
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize with the MAL server on every HotSync "
+"that is at least one week after the previous MAL sync. To perform a "
+"successful synchronization, you need to have access to the MAL server during "
+"the HotSync.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini supaya segerak dengan pelayan MAL pada setiap HotSync "
+"yang sekurang-kurangnya seminggu selepas penyegerakan MAL sebelumnya. Untuk "
+"berjaya melaksanakan penyegerakan, anda perlu mempunyai akses ke pelayan  "
+"MAL semasa HotSync.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:122
+#, kde-format
+msgid "Once a &month"
+msgstr "Sekali sebulan"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:125
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize with the MAL server on every HotSync "
+"that is at least one month after the previous MAL sync. To perform a "
+"successful synchronization, you need to have access to the MAL server during "
+"the HotSync.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini supaya segerak dengan pelayan MAL pada setiap HotSync "
+"yang sekurang-kurangnya sebulan selepas penyegerakan MAL sebelumnya. Untuk "
+"berjaya melaksanakan penyegerakan, anda perlu mempunyai akses ke pelayan MAL "
+"semasa HotSync.</qt>"
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: conduits/malconduit/mal-setup_dialog.ui:154
+#, kde-format
+msgid "Proxy"
+msgstr "Proksi"
+
+#. i18n: ectx: property (title), widget (QButtonGroup)
+#: conduits/malconduit/mal-setup_dialog.ui:168
+#, kde-format
+msgid "Proxy Type"
+msgstr "Jenis Proksi"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:185
+#, kde-format
+msgid "&No proxy"
+msgstr "&Tiada proksi"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:191
+#, kde-format
+msgid ""
+"<qt>Select this option if you do not want KPilot to use a proxy server. Use "
+"this option if you connect to the internet directly.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini jika anda tidak mahu KPilot menggunakan pelayan proksi. "
+"Guna opsyen ini jika anda bersambung secara langsung ke internet.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:199
+#, kde-format
+msgid "&HTTP proxy"
+msgstr "Proksi &HTTP"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:202
+#, kde-format
+msgid "<qt>Select this option if you want KPilot to use a HTTP proxy.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini jika anda ingin KPilot menggunakan proksi HTTP.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:210
+#, kde-format
+msgid "&SOCKS proxy"
+msgstr "Proksi &SOCKS"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:213
+#, kde-format
+msgid "<qt>Select this option if you want KPilot to use a SOCKS proxy.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini jika anda ingin KPilot menggunakan proksi  SOCKS.</qt>"
+
+#. i18n: ectx: property (title), widget (QGroupBox)
+#: conduits/malconduit/mal-setup_dialog.ui:226
+#, kde-format
+msgid "Server Information"
+msgstr "Maklumat Pelayan"
+
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/malconduit/mal-setup_dialog.ui:260
+#: conduits/malconduit/mal-setup_dialog.ui:453
+#, kde-format
+msgid "Custom &port:"
+msgstr "&Port langganan:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: conduits/malconduit/mal-setup_dialog.ui:263
+#, kde-format
+msgid "Check this box to use a non-standard proxy port."
+msgstr "Semak kotak ini untuk menggunakan port proksi bukan piawai."
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:271
+#, kde-format
+msgid "Ser&ver name:"
+msgstr "Nama pe&layan:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel)
+#. i18n: ectx: property (whatsThis), widget (KHistoryComboBox)
+#: conduits/malconduit/mal-setup_dialog.ui:277
+#: conduits/malconduit/mal-setup_dialog.ui:285
+#, kde-format
+msgid ""
+"<qt>If you selected HTTP or SOCKS proxy, type the address of the proxy "
+"server to use here, in the form <i>foo.bar.com</i> (not <i>http://foo.bar."
+"com</i> or <i>http://foo.bar.com:8080</i>).</qt>"
+msgstr ""
+"<qt>Jika anda memilih proksi HTTP atau SOCKS, taipkan alamat pelayan proksi "
+"yang hendak digunakan, di sini, dalam bentuk <i>foo.bar.com</i> "
+"(bukan<i>http://foo.bar.com</i> atau <i>http://foo.bar.com:8080</i>).</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit)
+#: conduits/malconduit/mal-setup_dialog.ui:296
+#, kde-format
+msgid ""
+"<qt>Enter the port you want KPilot to use when connecting to your proxy "
+"server here.</qt>"
+msgstr ""
+"<qt>Masukkan port yang akan digunakan oleh KPilot semasa membuat sambungan "
+"ke pelayan proksi, di sini.</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit)
+#: conduits/malconduit/mal-setup_dialog.ui:307
+#, kde-format
+msgid ""
+"<qt>If your proxy requires authentication, enter your password here.</qt>"
+msgstr ""
+"<qt>Jika proksi anda perlukan pengesahan, masukkan kata laluan di sini.</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit)
+#. i18n: ectx: property (whatsThis), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:315
+#: conduits/malconduit/mal-setup_dialog.ui:340
+#, kde-format
+msgid ""
+"<qt>If your proxy requires authentication, enter your username here.</qt>"
+msgstr ""
+"<qt>Jika proksi anda perlukan pengesahan, masukkan nama pengguna di sini.</"
+"qt>"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:323
+#: conduits/malconduit/mal-setup_dialog.ui:496
+#, kde-format
+msgid "&Password:"
+msgstr "&Kata laluan:"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:334
+#: conduits/malconduit/mal-setup_dialog.ui:507
+#, kde-format
+msgid "&User name:"
+msgstr "Nama &pengguna:"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit)
+#. i18n: ectx: property (whatsThis), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:362
+#: conduits/malconduit/mal-setup_dialog.ui:376
+#, kde-format
+msgid ""
+"<qt>Enter a list of MAL servers that do not need the use of a proxy here, "
+"separated with commas, e.g: <br><i>localhost,127.0.0.1,.lan</i><qt>"
+msgstr ""
+"<qt>Masukkan senarai pelayan  MAL yang tidak perlu menggunakan proksi, di "
+"sini, dipisahkan oleh tanda koma, misalnya: <br><i>hos setempat,127.0.0.1,."
+"lan</i><qt>"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:370
+#, kde-format
+msgid "N&o proxy for:"
+msgstr "Ti&ada proksi untuk:"
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: conduits/malconduit/mal-setup_dialog.ui:405
+#, kde-format
+msgid "MAL Server"
+msgstr "Pelayan MAL"
+
+#. i18n: ectx: property (title), widget (QGroupBox)
+#: conduits/malconduit/mal-setup_dialog.ui:425
+#, kde-format
+msgid "MAL Server Information"
+msgstr "Maklumat pelayan MAL"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:442
+#, kde-format
+msgid "&MAL server name:"
+msgstr "Nama pelayan &MAL:"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:556
+#, kde-format
+msgid ""
+"<qt>There is currently <b>no way to set server parameters on the desktop</"
+"b>; you need to use the <i>MobileLink</i> or <i>AGConnect</i> application on "
+"the handheld device. </qt>"
+msgstr ""
+"<qt>Sekarang <b>tiada cara untuk mengeset parameter pelayan pada desktop</"
+"b>; anda perlu menggunakan aplikasi <i>MobileLink</i> atau<i>AGConnect</i> "
+"pada peranti komputer telapak. </qt>"
+
 #: conduits/memofile/memofilefactory.cc:67
 #: conduits/memofileconduit/memofile-conduit.cc:64
 #: conduits/memofileconduit/memofile-factory.cc:67
@@ -985,6 +2708,59 @@ msgstr ""
 #, kde-format
 msgid "Jason 'vanRijn' Kasper"
 msgstr ""
+
+#. i18n: ectx: label, entry (Directory), group (memofile-conduit)
+#: conduits/memofile/memofilesettings.kcfg:6
+#: conduits/memofileconduit/memofileconduit.kcfg:6
+#, fuzzy, kde-format
+#| msgid "Select the directory you want to store your PDA's memos in"
+msgid "What directory do you want to sync your PDA's memos with?"
+msgstr "Pilih direktori tempat anda  ingin stor memo PDA."
+
+#. i18n: ectx: label, entry (SyncPrivate), group (memofile-conduit)
+#: conduits/memofile/memofilesettings.kcfg:10
+#: conduits/memofileconduit/memofileconduit.kcfg:10
+#, kde-format
+msgid "Do you want to sync your private records to the filesystem?"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, MemofileWidget)
+#: conduits/memofile/settingswidget.ui:28
+#: conduits/memofileconduit/setup_base.ui:28
+#, kde-format
+msgid "Memofile Conduit Options"
+msgstr "Opsyen Saluran Fail Memo"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: conduits/memofile/settingswidget.ui:35
+#: conduits/memofileconduit/setup_base.ui:35
+#, fuzzy, kde-format
+#| msgid "General"
+msgctxt "General settings for memofile conduit."
+msgid "General"
+msgstr "Umum"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: conduits/memofile/settingswidget.ui:41
+#: conduits/memofileconduit/setup_base.ui:41
+#, fuzzy, kde-format
+#| msgid "Memos directory:"
+msgid "Memos directory:"
+msgstr "Direktori memo:"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, fDirectory)
+#: conduits/memofile/settingswidget.ui:54
+#: conduits/memofileconduit/setup_base.ui:54
+#, kde-format
+msgid "Select the directory you want to store your PDA's memos in"
+msgstr "Pilih direktori tempat anda  ingin stor memo PDA."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: conduits/memofile/settingswidget.ui:61
+#: conduits/memofileconduit/setup_base.ui:61
+#, kde-format
+msgid "Sync private records:"
+msgstr "Segerakkan rekod persendirian:"
 
 #: conduits/memofileconduit/memofile-conduit.cc:83
 #, kde-format
@@ -1080,6 +2856,24 @@ msgstr ""
 "Saluran pelapik nota adalah berasaskan pelapik nota baca Angus, sebahagian "
 "dari pautan Pilot"
 
+#. i18n: ectx: property (whatsThis), widget (QWidget, NotepadWidget)
+#: conduits/notepadconduit/notepad-setup.ui:14
+#, kde-format
+msgid "Path to the directory to which the pictures should be exported."
+msgstr "Laluan ke direktori di mana gambar akan di eksport."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: conduits/notepadconduit/notepad-setup.ui:27
+#, kde-format
+msgid "Output:"
+msgstr "Output:"
+
+#. i18n: ectx: label, entry (outputDirectory), group (Notepad-conduit)
+#: conduits/notepadconduit/notepadconduit.kcfg:9
+#, kde-format
+msgid "The export directory for the notepad drawings"
+msgstr ""
+
 #: conduits/null/null-conduit.cc:60 conduits/null/null-factory.cc:69
 #, fuzzy, kde-format
 #| msgid "Null"
@@ -1106,6 +2900,49 @@ msgstr "Mengkonfigur saluran Nol KPilot"
 #, kde-format
 msgid "(C) 2001, 2007, Adriaan de Groot"
 msgstr ""
+
+#. i18n: ectx: label, entry (LogMessage), group (Null-conduit)
+#: conduits/null/nullconduit.kcfg:9
+#, kde-format
+msgid "The error message if the null conduit is supposed to fail"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, NullWidget)
+#: conduits/null/setup_base.ui:28
+#, kde-format
+msgid "Null-Conduit Options"
+msgstr "Opsyen Saluran Nol."
+
+#. i18n: ectx: property (whatsThis), widget (QWidget, NullWidget)
+#: conduits/null/setup_base.ui:31
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Enter the message to add to the Sync Log on your Pilot here.</qt>"
+msgid ""
+"&lt;qt>Enter the message to add to the Sync Log on your Pilot here.&lt;/qt>"
+msgstr ""
+"<qt>Masukkan mesej untuk tambahan ke Log Penyegerakan pada Pilot di sini.</"
+"qt>"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: conduits/null/setup_base.ui:38
+#, fuzzy, kde-format
+#| msgid "General"
+msgctxt "General settings for the null conduit."
+msgid "General"
+msgstr "Umum"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1_2)
+#: conduits/null/setup_base.ui:44
+#, kde-format
+msgid "&Log message:"
+msgstr "&Log mesej:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, fLogMessage)
+#: conduits/null/setup_base.ui:63
+#, kde-format
+msgid "KPilot was here."
+msgstr "KPilot pernah ada di sini."
 
 #: conduits/popmail/popmail-conduit.cc:78 conduits/popmail/setupDialog.cc:64
 #, kde-format
@@ -1162,6 +2999,110 @@ msgstr "Tidak dapat melaksanakan sandaran pangkalan data mel"
 #, kde-format
 msgid "Unable to open mail database on handheld"
 msgstr "Tidak dapat membuka pangkalan data mel pada komputer telapak"
+
+#. i18n: ectx: label, entry (SyncOutgoing), group (General)
+#: conduits/popmail/popmail.kcfg:9
+#, kde-format
+msgid "Selects the way in which mail is sent: none (0), kmail (1)."
+msgstr ""
+
+#. i18n: ectx: label, entry (EmailAddress), group (General)
+#: conduits/popmail/popmail.kcfg:13
+#, kde-format
+msgid "The email address entered in the To: field of outgoing messages."
+msgstr ""
+
+#. i18n: ectx: label, entry (Signature), group (General)
+#: conduits/popmail/popmail.kcfg:17
+#, kde-format
+msgid "The pathname of your .signature file."
+msgstr ""
+
+#. i18n: ectx: label, entry (OutboxFolder), group (General)
+#: conduits/popmail/popmail.kcfg:21
+#, kde-format
+msgid "The name of KMail's outbox - use with caution."
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: conduits/popmail/setup-dialog.ui:17
+#, kde-format
+msgid "Send Mail"
+msgstr "Hantar mel"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (whatsThis), widget (QComboBox, fSendMode)
+#: conduits/popmail/setup-dialog.ui:23 conduits/popmail/setup-dialog.ui:39
+#, kde-format
+msgid ""
+"<qt>Select the method KPilot will use to send the mail from your Handheld to "
+"the recipients here. Depending on the method you choose, the other fields in "
+"the dialog may be enabled or disabled. Currently, the only <i>working</i> "
+"method is through KMail.</qt>"
+msgstr ""
+"<qt>Pilih kaedah yang akan digunakan oleh KPilot untuk menghantar mel dari "
+"komputer telapak anda kepada penerima, di sini. Medan lain dalam dialog akan "
+"diaktifkan atau dinyahaktifkan bergantung pada kaedah yang anda pilih. "
+"Sekarang, kaedah yang <i>berfungsi</i> adalah melalui KMail.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: conduits/popmail/setup-dialog.ui:26
+#, kde-format
+msgid "Send method:"
+msgstr "Kaedah hantar:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, fSendMode)
+#: conduits/popmail/setup-dialog.ui:43
+#, kde-format
+msgid "Do Not Send Mail"
+msgstr "Jangan Hantar Mel"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, fSendMode)
+#: conduits/popmail/setup-dialog.ui:48
+#, kde-format
+msgid "Use KMail"
+msgstr "Gunakan KMail"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, fEmailFrom)
+#: conduits/popmail/setup-dialog.ui:56 conduits/popmail/setup-dialog.ui:69
+#, kde-format
+msgid "<qt>Enter the email address you want to send messages as here.</qt>"
+msgstr "<qt>Di sini, masukkan alamat e-mel yang anda ingin hantar mesej.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: conduits/popmail/setup-dialog.ui:59
+#, kde-format
+msgid "Email address:"
+msgstr "Alamat e-mel:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, fEmailFrom)
+#: conduits/popmail/setup-dialog.ui:72
+#, kde-format
+msgid "$USER"
+msgstr "$PENGGUNA"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, fSignature)
+#: conduits/popmail/setup-dialog.ui:79 conduits/popmail/setup-dialog.ui:92
+#, kde-format
+msgid ""
+"<qt>If you want to add a signature file, enter the location of your "
+"signature file (usually, <i>.signature</i>, located in your home folder) "
+"here, or select it clicking the file picker button. The signature file "
+"contains the text that is added to the end of your outgoing mail messages.</"
+"qt>"
+msgstr ""
+"<qt>Jika anda ingin menambah fail tandatangan, masukkan lokasi fail "
+"tandatangan di sini (biasanya, <i>.tandatangan</i>, terletak di folder laman "
+"utama anda), atau pilih dengan mengklik butang pengutip. Fail tandatangan "
+"mengandungi teks yang ditambah hingga ke hujung mesej mel keluar anda.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: conduits/popmail/setup-dialog.ui:82
+#, kde-format
+msgid "Signature file:"
+msgstr "Fail tandatangan:"
 
 #: conduits/popmail/setupDialog.cc:66
 #, kde-format
@@ -1316,6 +3257,181 @@ msgstr ""
 msgid "(C) 2003, Reinhold Kainhofer"
 msgstr ""
 
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester)
+#. i18n: ectx: property (whatsThis), widget (QLabel)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:63
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:77
+#, kde-format
+msgid ""
+"<qt>Enter here, or select by clicking the file picker button, the location "
+"and file name of the output file used to store the handheld's system "
+"information.</qt>"
+msgstr ""
+"<qt>Masuk di sini, atau pilih dengan mengklik butang pengutip fail, nama dan "
+"lokasi fail output yang digunakan untuk menstor sistem informasi komputer "
+"telapak.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:71
+#, kde-format
+msgid "Output &file:"
+msgstr "&Fail output:"
+
+#. i18n: ectx: property (title), widget (QButtonGroup)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:85
+#, kde-format
+msgid "Type of Output"
+msgstr "Jenis Output"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:96
+#, kde-format
+msgid "&HTML"
+msgstr "&HTML"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:102
+#, fuzzy, kde-format
+msgid ""
+"<qt>Select this option to output the system information data as a HTML "
+"document.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini supaya data maklumat sistem dioutput sebagai dokumen "
+"HTML.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:110
+#, fuzzy, kde-format
+#| msgid "&Text file:"
+msgid "Te&xt file"
+msgstr "Fail &teks:"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:113
+#, kde-format
+msgid ""
+"<qt>Select this option to output the system information data as a text "
+"document.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini supaya data maklumat sistem dioutput sebagai dokumen "
+"teks.</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:124
+#, kde-format
+msgid ""
+"<qt>Enter here, or select by clicking on the file picker button, the "
+"location of the template to be used if you select the Custom template option."
+"</qt>"
+msgstr ""
+"<qt>Masuk di sini, atau pilih lokasi templat yang hendak diguna  jika anda "
+"gunakan opsyen templat biasa, dengan mengklik butang pengutip fail.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:132
+#, kde-format
+msgid "&Custom template:"
+msgstr "Templat &langganan:"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:135
+#, kde-format
+msgid ""
+"<qt>Select this option to output the system information data as defined by a "
+"custom template. Enter the location of the template in the edit box, or "
+"select it clicking on the file picker button.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini supaya data sistem maklumat dioutput seperti yang "
+"ditakrif oleh templat langganan. Masuk ke lokasi templat dalam kotak edit, "
+"atau pilih dengan mengklik butang pengutip fail.</qt>"
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:147
+#, kde-format
+msgid "Parts Included"
+msgstr "Bahagian Telah Dimasukkan"
+
+#. i18n: ectx: property (text), widget (QListView)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:173
+#, kde-format
+msgid "Output Type"
+msgstr "Jenis Output"
+
+#. i18n: ectx: property (whatsThis), widget (QListView)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:189
+#, kde-format
+msgid ""
+"<qt>Check on this list the types of information about your system and "
+"handheld you want to display in the output file.</qt>"
+msgstr ""
+"<qt>Semak dalam senarai ini jenis maklumat sistem anda dan juga komputer "
+"telapak yang anda ingin paparkan dalam fail output.</qt>"
+
+#. i18n: ectx: label, entry (DebugInformation), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:23
+#, kde-format
+msgid "Debug information (for KPilot developers)"
+msgstr ""
+
+#. i18n: ectx: label, entry (HardwareInfo), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:27
+#, fuzzy, kde-format
+#| msgid "Database information"
+msgid "Hardware information"
+msgstr "Maklumat pangkalan data"
+
+#. i18n: ectx: label, entry (DatabaseList), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:31
+#, kde-format
+msgid "List of databases on handheld (takes a long time.)"
+msgstr ""
+
+#. i18n: ectx: label, entry (MemoryInfo), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:35
+#, fuzzy, kde-format
+#| msgid "System Information"
+msgid "Memory information"
+msgstr "Maklumat Sistem"
+
+#. i18n: ectx: label, entry (RecordNumbers), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:39
+#, kde-format
+msgid "Number of addresses, todos, events and memos"
+msgstr ""
+
+#. i18n: ectx: label, entry (PalmOSVersion), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:43
+#, fuzzy, kde-format
+#| msgid "PalmOSVersion"
+msgid "PalmOS version"
+msgstr "Versi PalmO"
+
+#. i18n: ectx: label, entry (StorageInfo), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:47
+#, kde-format
+msgid "Storage info (SD card, memory stick, ...)"
+msgstr ""
+
+#. i18n: ectx: label, entry (SyncInfo), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:51
+#, fuzzy, kde-format
+#| msgid "Synchronization Mode"
+msgid "Synchronization information"
+msgstr "Mod Penyegerakan"
+
+#. i18n: ectx: label, entry (UserInfo), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:55
+#, fuzzy, kde-format
+#| msgid "Database information"
+msgid "User information"
+msgstr "Maklumat pangkalan data"
+
+#. i18n: ectx: label, entry (KDEVersion), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:59
+#, kde-format
+msgid "Version of KPilot, pilot-link and KDE"
+msgstr ""
+
 #: conduits/timeconduit/time-conduit.cc:52
 #: conduits/timeconduit/time-setup.cc:66
 #, kde-format
@@ -1346,6 +3462,68 @@ msgstr "Saluran penyegerakan masa untuk KPilot "
 msgid "Synchronizes the Time on the Handheld and the PC"
 msgstr "Menyegerakkan masa pada Komputer Telapak dan PC"
 
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: conduits/timeconduit/time-setup_dialog.ui:18
+#, fuzzy, kde-format
+#| msgid "General"
+msgctxt "General settings for time conduit."
+msgid "General"
+msgstr "Umum"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup, directionGroup)
+#: conduits/timeconduit/time-setup_dialog.ui:24
+#, kde-format
+msgid "Direction"
+msgstr "Haluan"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton1)
+#: conduits/timeconduit/time-setup_dialog.ui:36
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize the handheld time with the PC time, by "
+"using the PC time on both.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini untuk segerakkan waktu komputer telapak dengan waktu "
+"PC, dengan menggunakan masa PC pada kedua-duanya.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton1)
+#: conduits/timeconduit/time-setup_dialog.ui:39
+#, kde-format
+msgid "Set the &handheld time from the time on the PC"
+msgstr "Setkan waktu komputer &telapak dengan waktu pada PC"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton1_2)
+#: conduits/timeconduit/time-setup_dialog.ui:52
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize the handheld time with the PC time, by "
+"using the handheld time on both.</qt>"
+msgstr ""
+"<qt>Pilih opsyen ini untuk segerakkan waktu komputer telapak dengan waktu "
+"PC, menggunakan waktu komputer telapak pada kedua-duanya.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton1_2)
+#: conduits/timeconduit/time-setup_dialog.ui:55
+#, kde-format
+msgid "Set the &PC time from the time on the handheld"
+msgstr "Setkan waktu &PC  dari waktu pada komputer telapak"
+
+#. i18n: ectx: property (text), widget (QLabel, fInfoLabel)
+#: conduits/timeconduit/time-setup_dialog.ui:102
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>PalmOS Version 3.25 and 3.3 do not support setting the system time, "
+#| "so this conduit will be skipped for handhelds that run either of these "
+#| "operating systems.</qt>"
+msgid ""
+"PalmOS Version 3.25 and 3.3 do not support setting the system time, so this "
+"conduit will be skipped for handhelds that run either of these operating "
+"systems."
+msgstr ""
+"<qt>Versi PalmOS 3.25 and 3.3 tidak menyokong seting masa sistem, jadi "
+"saluran ini akan dilangkau untuk komputer telapak yang menjalankan mana-mana "
+"satu dari sistem operasi tersebut</qt>"
+
 #: conduits/todo/todoconfig.cc:38
 #, kde-format
 msgid "To-do Conduit for KPilot"
@@ -1365,6 +3543,34 @@ msgstr "Tugasan"
 #, kde-format
 msgid "Select ToDo Collection: "
 msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_5)
+#: Documentation/base-conduit-template/contacts-settings.ui:20
+#, fuzzy, kde-format
+#| msgid "Locale Settings"
+msgid "&Akonadi Settings"
+msgstr "Seting Lokal"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_6)
+#: Documentation/base-conduit-template/contacts-settings.ui:25
+#, fuzzy, kde-format
+#| msgid "Conflicts"
+msgid "&Conflicts"
+msgstr "Konflik"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_7)
+#: Documentation/base-conduit-template/contacts-settings.ui:123
+#, fuzzy, kde-format
+#| msgid "Fields"
+msgid "&Fields"
+msgstr "Medan"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_4)
+#: Documentation/base-conduit-template/contacts-settings.ui:290
+#, fuzzy, kde-format
+#| msgid "Custom Fields"
+msgid "C&ustom Fields"
+msgstr "Medan Langganan"
 
 #: kpilot/config_dialog.cc:146
 #, kde-format
@@ -1567,6 +3773,52 @@ msgstr "Anda perlu memilih satu pangkalan data untuk dihapuskan dalam senarai."
 msgid "No Database Selected"
 msgstr "Tiada Pangkalan Data Dipilih"
 
+#. i18n: ectx: property (whatsThis), widget (KListWidget, fDatabaseList)
+#: kpilot/config_dialog_dbselection_base.ui:17
+#, kde-format
+msgid ""
+"This list shows the databases that have been detected on the handheld. "
+"Databases that are checked will be used for the operation that caused this "
+"dialog to appear."
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, fRemoveButton)
+#: kpilot/config_dialog_dbselection_base.ui:24
+#, kde-format
+msgid ""
+"Click here to remove a database entirely from the list. Usually it is better "
+"to just uncheck the database."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KPushButton, fRemoveButton)
+#: kpilot/config_dialog_dbselection_base.ui:27
+#, fuzzy, kde-format
+#| msgid "&Restore"
+msgid "&Remove"
+msgstr "&Simpan semula"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, fNameEdit)
+#: kpilot/config_dialog_dbselection_base.ui:34
+#, kde-format
+msgid ""
+"To add a database to the list (for instance, because the database was not "
+"detected automatically), enter its name here and then click on the Add "
+"button."
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, fAddButton)
+#: kpilot/config_dialog_dbselection_base.ui:41
+#, fuzzy, kde-format
+#| msgid "You need to select a database to delete in the list."
+msgid "Click here to add a database to the list."
+msgstr "Anda perlu memilih satu pangkalan data untuk dihapuskan dalam senarai."
+
+#. i18n: ectx: property (text), widget (KPushButton, fAddButton)
+#: kpilot/config_dialog_dbselection_base.ui:44
+#, kde-format
+msgid "&Add"
+msgstr "&Tambah"
+
 #: kpilot/config_dialog_probe.cc:100
 #, kde-format
 msgid "Autodetecting Your Handheld"
@@ -1672,6 +3924,564 @@ msgstr "Peranti bersambung ditemui pada %1"
 msgid "Disconnected from all devices"
 msgstr "Terputus dari semua peranti"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, SyncConfigWidget)
+#. i18n: ectx: property (windowTitle), widget (QWidget, StartExitConfigWidget)
+#. i18n: ectx: property (windowTitle), widget (QWidget, BackupConfigWidget)
+#: kpilot/config_page_backup.ui:15 kpilot/config_page_startup.ui:16
+#: kpilot/config_page_sync.ui:15
+#, kde-format
+msgid "KPilot Options"
+msgstr "Opsyen KPilot "
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: kpilot/config_page_backup.ui:21
+#, kde-format
+msgid "Backup Frequency"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5_2)
+#: kpilot/config_page_backup.ui:41
+#, fuzzy, kde-format
+msgid "Do &backup:"
+msgstr "&Tiada sandaran:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fBackupFrequency)
+#: kpilot/config_page_backup.ui:69
+#, kde-format
+msgid ""
+"<qt>\n"
+"<p>Select in this list how frequently backups are done. Possible values are:"
+"</p>\n"
+"<ul>\n"
+"<li>\"On Every HotSync\" - A backup of your handheld will be done every time "
+"you HotSync</li>\n"
+"<li>\"On Request Only\" - A backup of your handheld will be done only when "
+"you choose your next sync to be of type \"Backup\"</li>\n"
+"</ul>\n"
+"</qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fBackupFrequency)
+#: kpilot/config_page_backup.ui:73
+#, fuzzy, kde-format
+msgid "On Every HotSync"
+msgstr "Penghujung HotSync\n"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fBackupFrequency)
+#: kpilot/config_page_backup.ui:78
+#, kde-format
+msgid "On Request Only"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: kpilot/config_page_backup.ui:91
+#, fuzzy, kde-format
+#| msgid "Database"
+msgid "Databases"
+msgstr "Pangkalan data"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel5)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, fBackupOnly)
+#: kpilot/config_page_backup.ui:105 kpilot/config_page_backup.ui:124
+#, kde-format
+msgid ""
+"<qt><p>Enter the databases types you wish to exclude from the backup "
+"operation here. Use this setting if backing up some databases crashes the "
+"handheld, or if you do not want a backup of some databases (like AvantGo "
+"pages).</p><p>Entries with square brackets [] are <i>creator codes</i> like "
+"<tt>[lnch]</tt> and can exclude a whole range of databases. Entries without "
+"the brackets list database names, and may include shell-style wildcards, "
+"like <tt>*_a68k</tt>.</p></qt>"
+msgstr ""
+"<qt><p>Di sini, masukkan jenis pangkalan data yang anda ingin keluarkan dari "
+"operasi sandaran. Gunakan seting ini jika menyandarkan beberapa pangkalan "
+"data meruntuhkan komputer telapak, atau jika anda tidak mahukan sandaran "
+"untuk beberapa pangkalan data (seperti halaman  AvantGo).</p><p>Entri dengan "
+"kurungan siku [] adalah <i>kod pencipta</i> seperti <tt>[lnch]</tt> dan "
+"boleh mengeluarkan seluruh julat pangkalan data. Entri tanpa kurungan "
+"menyenaraikan nama pangkalan data, dan mungkin memasukkan kad liar gaya "
+"shell, seperti <tt>*_a68k</tt>.</p></qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: kpilot/config_page_backup.ui:108
+#, kde-format
+msgid "&No backup:"
+msgstr "&Tiada sandaran:"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, fBackupOnlyChooser)
+#: kpilot/config_page_backup.ui:134
+#, kde-format
+msgid ""
+"<qt>Click here to open the database selection dialog. This dialog allows you "
+"to check the databases you want to exclude from the backup from a list.</qt>"
+msgstr ""
+"<qt>Klik di sini untuk membuka dialog pilihan pangkalan data. Dialog ini "
+"membenarkan anda menyemak pangkalan data yang anda ingin keluarkan dari "
+"sandaran dari satu senarai.</qt>"
+
+#. i18n: ectx: property (text), widget (QPushButton, fBackupOnlyChooser)
+#. i18n: ectx: property (text), widget (QPushButton, fSkipDBChooser)
+#: kpilot/config_page_backup.ui:137 kpilot/config_page_backup.ui:186
+#, kde-format
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel6)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, fSkipDB)
+#: kpilot/config_page_backup.ui:154 kpilot/config_page_backup.ui:173
+#, kde-format
+msgid ""
+"<qt><p>Enter the databases types you wish to exclude from the restore "
+"operation here (like AvantGo databases). They will be skipped even if they "
+"exist in the set of backup databases on the handheld. If you still want to "
+"install an ignored database to the handheld, you can always manually install "
+"it to the handheld.</p><p>Entries with square brackets [] are <i>creator "
+"codes</i> like <tt>[lnch]</tt> and can exclude a whole range of databases. "
+"Entries without the brackets list database names, and may include shell-"
+"style wildcards, like <tt>*_a68k</tt>.</p></qt>"
+msgstr ""
+"<qt><p>Di sini, masukkan jenis pangkalan data yang anda hendak keluarkan "
+"dari operasi simpan semula (seperti pangkalan data AvantGo). Mereka akan "
+"dilangkau walaupun wujud dalam set sandaran pangkalan data dalam komputer "
+"telapak. Jika anda masih ingin memasang pangkalan data yang diabaikan ke "
+"komputer telapak, anda sentiasa boleh memasangnya secara manual ke komputer "
+"telapak.</p><p>Entri dengan kurungan siku [] adalah<i>kod pencipta</i> "
+"seperti <tt>[lnch]</tt> dan boleh mengeluarkan seluruh julat pangkalan data. "
+"Entri tanpa kurungan menyenaraikan nama pangkalan data, dan mungkin "
+"memasukkan kad liar gaya shell, seperti <tt>*_a68k</tt>.</p></qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
+#: kpilot/config_page_backup.ui:157
+#, kde-format
+msgid "Not &restored:"
+msgstr "Tidak &disimpan semula:"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, fSkipDBChooser)
+#: kpilot/config_page_backup.ui:183
+#, kde-format
+msgid ""
+"<qt>Click here to open the database selection dialog. This dialog allows you "
+"to select the databases you want to exclude from the restore operation from "
+"a list.</qt>"
+msgstr ""
+"<qt>Klik di sini untuk membuka dialog pilihan pangkalan data. Dialog ini "
+"membenarkan anda memilih pangkalan data yang anda ingin keluarkan dari "
+"operasi simpan semula dari satu senarai.</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fRunConduitsWithBackup)
+#: kpilot/config_page_backup.ui:198
+#, kde-format
+msgid ""
+"<qt>Check this box to run the selected conduits before every backup. This "
+"makes sure the backup is up to date with the last changes from your PC.</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk menjalankan saluran dipilih sebelum setiap "
+"sandaran. Ini memastikan sandaran tersebut dikemas kini dengan perubahan "
+"terakhir dari PC anda.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fRunConduitsWithBackup)
+#: kpilot/config_page_backup.ui:201
+#, fuzzy, kde-format
+msgid "Run conduits durin&g a backup sync"
+msgstr "Jalankan &saluran semasa penyegerakan sandaran"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel1)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, fPilotDevice)
+#: kpilot/config_page_device.ui:18 kpilot/config_page_device.ui:34
+#, kde-format
+msgid ""
+"<qt>Enter the device the Pilot is attached to (for instance a serial or USB "
+"port) here. You can also use <i>/dev/pilot</i>, and make that a symlink to "
+"the correct device. You need write permission to successfully synchronize "
+"with the handheld.</qt>"
+msgstr ""
+"<qt>Masukkan peranti yang terlampir kepada Pilot  (contohnya port bersiri "
+"atau USB) di sini. Anda juga boleh menggunakan <i>/dev/pilot</i>, dan "
+"membuat pautan sym ke peranti yang betul. Untuk berjaya menyegerakkan dengan "
+"komputer telapak, anda perlukan keizinan tulis.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: kpilot/config_page_device.ui:21
+#, kde-format
+msgid "Pilot &device:"
+msgstr "&Peranti Pilot"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel4)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fPilotSpeed)
+#: kpilot/config_page_device.ui:44 kpilot/config_page_device.ui:143
+#, kde-format
+msgid ""
+"<qt>Select the speed of the serial connection to your handheld here. This "
+"has no meaning for USB devices. For an older model, choose 9600. Newer "
+"models may be able to handle speeds up to the maximum listed, 115200. You "
+"can experiment with the connection speed: the manual suggests starting at a "
+"speed of 19200 and trying faster speeds to see if they work.</qt>"
+msgstr ""
+"<qt>Pilih halaju sambungan bersiri ke komputer telapak anda di sini. Ini "
+"tidak memberikan sebarang makna kepada peranti USB. Untuk model yang lebih "
+"lama, pilih 9600. Model yang lebih baru mungkin boleh mengendalikan halaju "
+"sehingga senarai maksimum, 115200. Anda boleh bereksperimen dengan halaju "
+"sambungan: manual mencadangkan supaya bermula dengan kelajuan 19200 dan "
+"mencuba halaju yang lebih tinggi untuk melihat sama ada ia berfungsi.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
+#: kpilot/config_page_device.ui:47
+#, kde-format
+msgid "&Speed:"
+msgstr "&Kelajuan:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fWorkaround)
+#: kpilot/config_page_device.ui:60 kpilot/config_page_device.ui:181
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Workarounds enable special handling for specific devices. Most "
+#| "devices do not need special handling. However, the Zire&tm; 31, Zire 72 "
+#| "and Tungsten T5 <i>do</i> have special needs, so if you are connecting "
+#| "such a device, please select the workaround for them.</qt>"
+msgid ""
+"<qt>Workarounds enable special handling for specific devices. Most devices "
+"do not need special handling. However, the Zire 31, Zire 72 and Tungsten T5 "
+"<i>do</i> have special needs, so if you are connecting such a device, please "
+"select the workaround for them.</qt>"
+msgstr ""
+"<qt>Sekitaran kerja membolehkan pengendalian khusus untuk peranti khusus. "
+"Kebanyakan peranti tidak memerlukan pengendalian khusus. Bagaimanapun,  "
+"Zire&tm; 31, Zire 72 dan Tungsten T5 <i>mempunyai</i> keperluan khusus, jadi "
+"jika anda bersambung ke peranti tersebut, pilih sekitaran kerja untuk mereka."
+"</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: kpilot/config_page_device.ui:63
+#, kde-format
+msgid "&Workarounds:"
+msgstr "Sekitaran &Kerja:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fPilotEncoding)
+#: kpilot/config_page_device.ui:76 kpilot/config_page_device.ui:204
+#, kde-format
+msgid ""
+"<qt>PalmOS devices are available in many different languages. If your device "
+"uses a different encoding than ISO-latin1 (ISO8859-1), select the correct "
+"encoding here, in order to display special characters correctly.</qt>"
+msgstr ""
+"<qt>Peranti PalmOS terdapat dalam banyak bahasa berlainan. Jika peranti anda "
+"menggunakan pengekodan selain ISO-latin1 (ISO8859-1), pilih pengekodan yang "
+"betul di sini, supaya aksara khusus yang betul dipaparkan.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: kpilot/config_page_device.ui:79
+#, kde-format
+msgid "En&coding:"
+msgstr "&Pengekodan:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel2)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, fUserName)
+#: kpilot/config_page_device.ui:92 kpilot/config_page_device.ui:214
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Enter your name here, as it appears in the Pilot's &quot;Owner&quot; "
+#| "setting.</qt>"
+msgid ""
+"<qt>Enter your name here, as it appears in the Pilot's \"Owner\" setting.</"
+"qt>"
+msgstr ""
+"<qt>Masukkan nama anda di sini, seperti mana ia muncul dalam seting  Pilot "
+"&quot;Owner&quot;.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: kpilot/config_page_device.ui:95
+#, kde-format
+msgid "Pilot &user:"
+msgstr "&Pengguna Pilot:"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, fDeviceAutodetect)
+#: kpilot/config_page_device.ui:111
+#, kde-format
+msgid ""
+"<qt>Click here to try to automatically detect your device, username and "
+"connection speed. KPilot will scan for attached devices.</qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, fDeviceAutodetect)
+#: kpilot/config_page_device.ui:114
+#, kde-format
+msgid "Autodetect"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fPilotSpeed)
+#: kpilot/config_page_device.ui:147
+#, kde-format
+msgid "9600"
+msgstr "9600"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fPilotSpeed)
+#: kpilot/config_page_device.ui:152
+#, kde-format
+msgid "19200"
+msgstr "19200"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fPilotSpeed)
+#: kpilot/config_page_device.ui:157
+#, kde-format
+msgid "38400"
+msgstr "38400"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fPilotSpeed)
+#: kpilot/config_page_device.ui:162
+#, kde-format
+msgid "57600"
+msgstr "57600"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fPilotSpeed)
+#: kpilot/config_page_device.ui:167
+#, kde-format
+msgid "115200"
+msgstr "115200"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fWorkaround)
+#: kpilot/config_page_device.ui:185
+#, fuzzy, kde-format
+#| msgid "None"
+msgctxt "No workarounds are used."
+msgid "None"
+msgstr "Tiada"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fWorkaround)
+#: kpilot/config_page_device.ui:190
+#, kde-format
+msgid "Zire 31, 72, Tungsten T5"
+msgstr "Zire 31, 72, Tungsten T5"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: kpilot/config_page_startup.ui:22
+#, kde-format
+msgid "Startup Options"
+msgstr "Opsyen Pemulaan"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fStartDaemonAtLogin)
+#: kpilot/config_page_startup.ui:28
+#, kde-format
+msgid ""
+"<qt>Check this box to start up the KPilot daemon every time you log in to "
+"KDE.</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk memulakan daemon KPilot setiap kali anda log masuk "
+"ke dalam KDE.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fStartDaemonAtLogin)
+#: kpilot/config_page_startup.ui:31
+#, kde-format
+msgid "&Start KPilot at login"
+msgstr "&Mulakan KPilot di log masuk"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fDockDaemon)
+#: kpilot/config_page_startup.ui:38
+#, kde-format
+msgid ""
+"<qt>Check this box to place a Kpilot icon in the system tray, which shows "
+"the daemon's status, and allows you to select the next sync type and to "
+"configure KPilot.</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk menempatkan ikon Kpilot di dalam dulang sistem, "
+"yang memaparkan status daemon, dan membenarkan anda memilih jenis "
+"penyegerakan seterusnya dan untuk konfigur KPilot.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fDockDaemon)
+#: kpilot/config_page_startup.ui:41
+#, kde-format
+msgid "S&how KPilot in system tray"
+msgstr "&Paparkan KPilot dalam dulang sistem"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: kpilot/config_page_startup.ui:51
+#, kde-format
+msgid "Exit Options"
+msgstr "Keluar dari Opsyen"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fQuitAfterSync)
+#: kpilot/config_page_startup.ui:57
+#, kde-format
+msgid ""
+"<qt>Check this box to stop both KPilot and the KPilot daemon after the "
+"HotSync finishes. This may be useful for systems where KPilot is started by "
+"the USB daemon.</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk menghentikan KPilot dan juga daemon KPilot selepas "
+"HotSync tamat. Ini berguna untuk sistem yang KPilot dimulakan oleh daemon "
+"USB.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fQuitAfterSync)
+#: kpilot/config_page_startup.ui:60
+#, kde-format
+msgid "Quit &after HotSync"
+msgstr "Keluar &selepas HotSunc"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fKillDaemonOnExit)
+#: kpilot/config_page_startup.ui:67
+#, kde-format
+msgid ""
+"<qt>Check this box to stop the KPilot daemon when you quit KPilot (only if "
+"KPilot started the daemon itself).</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk menghentikan daemon KPilot apabila anda keluar "
+"dari KPilot (hanya jika KPilot memulakan sendiri daemon).</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fKillDaemonOnExit)
+#: kpilot/config_page_startup.ui:70
+#, kde-format
+msgid "S&top KPilot's system tray application on exit"
+msgstr "Hen&tikan aplikasi dulang sistem semasa keluar"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: kpilot/config_page_sync.ui:23
+#, kde-format
+msgid "&Default sync:"
+msgstr "Penyegerakan &piawai"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fSpecialSync)
+#: kpilot/config_page_sync.ui:57
+#, fuzzy, kde-format
+msgid ""
+"<qt>Select in this list the synchronization type that KPilot will use as "
+"default. Possible values are:<br>\"HotSync\", to run all selected conduits, "
+"and sync the databases with a modified flag set, updating the modified "
+"records only;<br>\"FullSync\" to run all selected conduits, and sync all "
+"databases, reading all records, and performing a full backup;<br>\"Copy PC "
+"to handheld\" to run all conduits and sync all databases, but instead of "
+"merging the information from both sources, copy the PC data to the handheld;"
+"<br>\"Copy handheld to PC\" to run all conduits and sync all databases, but "
+"instead of merging the information from both sources, copy the handheld data "
+"to the PC.</qt>"
+msgstr ""
+"<qt>Pilih dalam senarai ini jenis penyegerakan yang akan digunakan sebagai "
+"piawai oleh KPilot. Nilai yang mungkin adalah:<br>\"HotSync\", hanya untuk "
+"menjalankan semua saluran dipilih, dan menyegerakkan pangkalan data dengan "
+"set bendera yang diubah suai, mengemas kini rekod yang diubah suai sahaja;"
+"<br>\"FastSync\", untuk menyegerakkan pangkalan data yang ada saluran sahaja;"
+"<br>\"FullSync\" untuk menjalankan semua saluran yang dipilih, dan "
+"menyegerakkan semua pangkalan data, membaca semua rekod, dan melaksanakan "
+"sandaran penuh;<br>\"Salin PC ke komputer telapak\" untuk menjalankan semua "
+"saluran dan menyegerakkan semua pangkalan data, tetapi menyalin data PC ke "
+"komputer telapak, bukannya mencantumkan maklumat dari kedua-dua sumber;<br>"
+"\"Salin komputer telapak ke PC\" untuk menjalankan semua saluran dan "
+"menyegerakkan semua pangkalan data, tetapi menyalin komputer telapak ke PC, "
+"bukannya mencantumkan maklumat dari kedua-dua sumber.</qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fSpecialSync)
+#: kpilot/config_page_sync.ui:61
+#, fuzzy, kde-format
+msgid "HotSync (sync all changes)"
+msgstr "HotSync (menyegerakkan semua perubahan, kemas kini sandaran)"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fSpecialSync)
+#: kpilot/config_page_sync.ui:66
+#, fuzzy, kde-format
+msgid "FullSync (sync also unchanged records)"
+msgstr "FullSync (rekod tidak berubah juga disegerakkan, sandaran penuh)"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fSpecialSync)
+#: kpilot/config_page_sync.ui:71 kpilot/kpilot.cc:308 lib/syncAction.cc:237
+#, kde-format
+msgid "Copy PC to Handheld"
+msgstr "Salin PC ke Komputer Telapak"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fSpecialSync)
+#: kpilot/config_page_sync.ui:76 kpilot/kpilot.cc:317 lib/syncAction.cc:238
+#, kde-format
+msgid "Copy Handheld to PC"
+msgstr "Salin Komputer Telapak ke PC"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fScreenlockSecure)
+#: kpilot/config_page_sync.ui:92
+#, kde-format
+msgid ""
+"<qt>Check this box to prevent KPilot from syncing your handheld while the "
+"screensaver is active: this is a security measure to prevent others from "
+"syncing <i>their</i> handhelds with your data.  This option must be disabled "
+"when you use a different desktop, since KPilot is not aware of screensavers "
+"other than KDE's.</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk menghalang KPilot daripada menyegerak dengan "
+"komputer telapak semasa screensaver aktif: ini adalah ukuran keselamatan "
+"untuk mengelak pihak lain daripada menyegerakkan komputer telapak <i>mereka</"
+"i> dengan data anda.  Opsyen ini mesti dinyahaktifkan apabila anda "
+"menggunakan desktop lain, kerana KPilot tidak menyedari adanya screensaver "
+"selain screensaver KDE.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fScreenlockSecure)
+#: kpilot/config_page_sync.ui:95
+#, kde-format
+msgid "Do not sync when screensaver is active"
+msgstr "Jangan segerakkan apabila screensaver aktif"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fFullSyncCheck)
+#: kpilot/config_page_sync.ui:111
+#, fuzzy, kde-format
+msgid ""
+"<qt>Check this box to perform a full sync when your last sync was performed "
+"with another PC or system, to guarantee the completeness of your data.</qt>"
+msgstr ""
+"<qt>Semak kotak ini untuk melaksanakan sandaran penuh apabila penyegerakan "
+"terakhir anda dilaksanakan dengan PC atau sistem lain, untuk menjamin "
+"lengkapnya data sandaran anda.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fFullSyncCheck)
+#: kpilot/config_page_sync.ui:114
+#, fuzzy, kde-format
+msgid "Do full sync when chan&ging PCs"
+msgstr "&Buat sandaran penuh apabila mengubah PC"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fConflictResolution)
+#: kpilot/config_page_sync.ui:164
+#, kde-format
+msgid ""
+"<qt>Select in this list how conflicting entries (entries which were edited "
+"both on your handheld and on the PC) are resolved. Possibly values are  "
+"\"Ask User\" to let you decide case by case, \"Do Nothing\" to allow the "
+"entries to be different, \"PC overrides\", \"Handheld overrides\", \"Use "
+"values from last sync\" and \"Use both entries\" to create a new entry on "
+"both the PC and handheld. Note that the conflict resolution option selected "
+"here can be overridden by conduits that have their own conflict resolution "
+"configuration.</qt>"
+msgstr ""
+"<qt>Pilih dari senarai ini bagaimana entri berkonflik diselesaikan (entri "
+"yang diedit dalam komputer telapak dan dalam PC). Nilai yang mungkin adalah  "
+"\"Tanya Pengguna\" untuk membolehkan anda membuat keputusan kes demi kes, "
+"\"Jangan Buat Apa-apa\" untuk membenarkan entri berlainan, \"Tulis tindih PC"
+"\", \"Tulis tindih komputer telapak\", \"Gunakan nilai dari penyegerakan "
+"terakhir\" dan \"gunakan kedua-dua entri\" untuk mencipta entri dalam PC dan "
+"dalam komputer telapak. Ambil perhatian bahawa opsyen penyelesaian konflik "
+"yang dipilih di sini boleh ditulis tindih oleh saluran yang mempunyai "
+"konfigurasi penyelesaian konflik sendiri.</qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: kpilot/config_page_sync.ui:178
+#, kde-format
+msgid "Handheld Overrides"
+msgstr "Tulis Tindih Komputer Telapak"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: kpilot/config_page_sync.ui:183
+#, kde-format
+msgid "PC Overrides"
+msgstr "Tulis Tindih PC"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: kpilot/config_page_sync.ui:188
+#, fuzzy, kde-format
+#| msgid "Values From Last Sync (if possible)"
+msgid "Values From Last Sync (Not Supported)"
+msgstr "Nilai Dari Penyegerakan Terakhir (jika boleh)"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: kpilot/config_page_sync.ui:193
+#, fuzzy, kde-format
+#| msgid "Use Both Entries"
+msgid "Use Both Entries (Not Supported)"
+msgstr "Gunakan Kedua-dua Entri"
+
 #: kpilot/config_pages.cc:48
 #, kde-format
 msgid ""
@@ -1680,6 +4490,48 @@ msgid ""
 msgstr ""
 "<qt>Seting untuk laman konfigurasi <i>%1</i> telah diubah. Simpan perubahan "
 "sebelum meneruskan?</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, fAddButton)
+#: kpilot/file_install_widget.ui:19
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Choose a file to add to "
+"the list of files to install.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, fAddButton)
+#: kpilot/file_install_widget.ui:22
+#, fuzzy, kde-format
+#| msgid "Add File..."
+msgid "&Add File..."
+msgstr "Tambah fail..."
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, fClearButton)
+#: kpilot/file_install_widget.ui:32
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Clear the list of files to "
+"install. No files will be installed.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, fClearButton)
+#: kpilot/file_install_widget.ui:35
+#, fuzzy, kde-format
+#| msgid "Clear List"
+msgid "&Clear List"
+msgstr "Kosongkan Senarai"
 
 #: kpilot/fileInstaller.cc:110
 #, kde-format
@@ -2059,11 +4911,6 @@ msgstr ""
 "Beritahu daemon bahawa Hotsync seterusnya adalah FullSync (semak data "
 "dikedua-dua belah)."
 
-#: kpilot/kpilot.cc:308 lib/syncAction.cc:237
-#, kde-format
-msgid "Copy PC to Handheld"
-msgstr "Salin PC ke Komputer Telapak"
-
 #: kpilot/kpilot.cc:310
 #, kde-format
 msgid "Next HotSync will copy PC to Handheld."
@@ -2077,11 +4924,6 @@ msgid ""
 msgstr ""
 "Beritahu daemon bahawa HotSync seterusya sepatutnya menyalin semua data "
 "dari  PC ke komputer telapak, menulis ganti entri pada Komputer Telapak."
-
-#: kpilot/kpilot.cc:317 lib/syncAction.cc:238
-#, kde-format
-msgid "Copy Handheld to PC"
-msgstr "Salin Komputer Telapak ke PC"
 
 #: kpilot/kpilot.cc:319
 #, fuzzy, kde-format
@@ -2252,6 +5094,67 @@ msgstr "Setkan tahap nyahpepijat"
 #| msgid "KPilot"
 msgid "kpilot"
 msgstr "KPilot"
+
+#. i18n: ectx: label, entry (Debug), group (General)
+#. i18n: ectx: label, entry (ConfigVersion), group (General)
+#. i18n: ectx: label, entry (LastSyncTime), group (General)
+#. i18n: ectx: label, entry (PilotDevice), group (General)
+#. i18n: ectx: label, entry (PilotSpeed), group (General)
+#. i18n: ectx: label, entry (Encoding), group (General)
+#. i18n: ectx: label, entry (UserName), group (General)
+#. i18n: ectx: label, entry (LogFileName), group (General)
+#. i18n: ectx: label, entry (StartDaemonAtLogin), group (General)
+#. i18n: ectx: label, entry (KillDaemonAtExit), group (General)
+#. i18n: ectx: label, entry (DockDaemon), group (General)
+#. i18n: ectx: label, entry (QuitAfterSync), group (General)
+#. i18n: ectx: label, entry (SyncType), group (General)
+#. i18n: ectx: label, entry (FullSyncOnPCChange), group (General)
+#. i18n: ectx: label, entry (ConflictResolution), group (General)
+#. i18n: ectx: label, entry (ShowSecrets), group (General)
+#. i18n: ectx: label, entry (SkipRestoreDB), group (General)
+#. i18n: ectx: label, entry (DeviceDBs), group (General)
+#. i18n: ectx: label, entry (AddedDBs), group (General)
+#. i18n: ectx: label, entry (InstalledConduits), group (Conduit Names)
+#. i18n: ectx: label, entry (AddressDisplayMode), group (Address Widget)
+#. i18n: ectx: label, entry (UseKeyField), group (Address Widget)
+#: kpilot/kpilot.kcfg:11 kpilot/kpilot.kcfg:16 kpilot/kpilot.kcfg:21
+#: kpilot/kpilot.kcfg:27 kpilot/kpilot.kcfg:32 kpilot/kpilot.kcfg:37
+#: kpilot/kpilot.kcfg:42 kpilot/kpilot.kcfg:56 kpilot/kpilot.kcfg:61
+#: kpilot/kpilot.kcfg:66 kpilot/kpilot.kcfg:71 kpilot/kpilot.kcfg:76
+#: kpilot/kpilot.kcfg:83 kpilot/kpilot.kcfg:88 kpilot/kpilot.kcfg:93
+#: kpilot/kpilot.kcfg:101 kpilot/kpilot.kcfg:110 kpilot/kpilot.kcfg:123
+#: kpilot/kpilot.kcfg:128 kpilot/kpilot.kcfg:146 kpilot/kpilot.kcfg:154
+#: kpilot/kpilot.kcfg:159
+#, kde-format
+msgid ""
+"\n"
+"        "
+msgstr ""
+
+#. i18n: ectx: label, entry (SkipBackupDB), group (General)
+#: kpilot/kpilot.kcfg:105
+#, kde-format
+msgid "Which databases not to backup."
+msgstr ""
+
+#. i18n: ectx: label, entry (ScreenlockSecure), group (General)
+#: kpilot/kpilot.kcfg:132
+#, fuzzy, kde-format
+#| msgid "HotSync is disabled while the screen is locked."
+msgid "Prevent HotSync when screen locked"
+msgstr "HotSync dinyahaktifkan semasa skrin dipasak."
+
+#. i18n: ectx: whatsthis, entry (ScreenlockSecure), group (General)
+#: kpilot/kpilot.kcfg:138
+#, kde-format
+msgid ""
+"Turning this option on prevents syncing\n"
+"\twhen the screen is locked. This is a security measure\n"
+"\tto prevent people from stealing your data through physical\n"
+"\taccess to a Pilot device link to your machine.\n"
+"\tIt does not work with screensavers other than KDE, though,\n"
+"\tso you will need to turn it off for other environments."
+msgstr ""
 
 #: kpilot/kpilotConfig.cc:127
 #, kde-format
@@ -2441,6 +5344,19 @@ msgid ""
 "(c) 1998-2000,2001, Dan Pilone\n"
 "(c) 2000-2007, Adriaan de Groot\n"
 "(c) 2005-2007, Jason 'vanRijn' Kasper"
+msgstr ""
+
+#. i18n: ectx: Menu (settings)
+#: kpilot/kpilotui.rc:17
+#, fuzzy, kde-format
+#| msgid "Locale Settings"
+msgid "&Settings"
+msgstr "Seting Lokal"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kpilot/kpilotui.rc:36
+#, kde-format
+msgid "Main Toolbar"
 msgstr ""
 
 #: kpilot/logFile.cc:98 lib/actions.cc:126
@@ -3147,1597 +6063,6 @@ msgstr "Soalan"
 #, kde-format
 msgid "&Do not ask again"
 msgstr "&Jangan tanya lagi"
-
-#, fuzzy
-#~| msgid "Calendar"
-#~ msgid "Select Collection:"
-#~ msgstr "Kalendar"
-
-#, fuzzy
-#~| msgid "Locale Settings"
-#~ msgid "Akonadi Settings"
-#~ msgstr "Seting Lokal"
-
-#~ msgid "Conflicts"
-#~ msgstr "Konflik"
-
-#~ msgid ""
-#~ "<p>Select the default action if an event was modified on both sides here. "
-#~ "</p>"
-#~ msgstr ""
-#~ "<p>Jika peristiwa telah diubah di kedua-dua belah, pilih tindakan piawai "
-#~ "di sini.</p>"
-
-#~ msgid ""
-#~ "<qt>Select in this list how conflicting entries (entries which were "
-#~ "edited both on your handheld and on the PC) are resolved. Possibly values "
-#~ "are \"Use KPilot's Global Setting\" to use the settings defined in KPilot "
-#~ "HotSync configuration, \"Ask User\" to let you decide case by case, \"Do "
-#~ "Nothing\" to allow the entries to be different, \"PC overrides\", "
-#~ "\"Handheld overrides\", \"Use values from last sync\" and \"Use both "
-#~ "entries\" to create a new entry on both the PC and handheld.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih dari senarai ini bagaimana entri berkonflik (entri yang diedit "
-#~ "dalam komputer telapak dan juga PC) diselesaikan. Nilai yang mungkin "
-#~ "ialah \"Gunakan seting global KPilot\" untuk menggunakan seting yang "
-#~ "ditakrif dalam konfigurasi KPilot HotSync, \"Tanya Pengguna\" untuk "
-#~ "membuat keputusan kes demi kes, \"Jangan buat apa-apa\" untuk "
-#~ "membenarkan  entri berlainan, \"Tulis tindih PC\", \"Tulis tindih "
-#~ "komputer telapak\", \"Guna nilai dari penyegerakan terakhir\" dan \"Guna "
-#~ "kedua-dua entri\" untuk mencipta entri baru dalam PC dan juga dalam "
-#~ "komputer telapak.</qt>"
-
-#~ msgid "Conflict &resolution:"
-#~ msgstr "&Penyelesaian konflik:"
-
-#, fuzzy
-#~| msgid "Use KPilot's Global Setting"
-#~ msgid "Use KPilot's Global Settings"
-#~ msgstr "Gunakan Seting Global KPilot"
-
-#~ msgid "Ask User"
-#~ msgstr "Tanya Pengguna"
-
-#, fuzzy
-#~| msgid "Handheld Overrides"
-#~ msgid "Let The Handheld Override"
-#~ msgstr "Tulis Tindih Komputer Telapak"
-
-#, fuzzy
-#~| msgid "PC Overrides"
-#~ msgid "Let The PC Override"
-#~ msgstr "Tulis Tindih PC"
-
-#~ msgid "Use Both Entries"
-#~ msgstr "Gunakan Kedua-dua Entri"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Jangan buat apa-apa"
-
-#~ msgid "Fields"
-#~ msgstr "Medan"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt>Select which KAddressBook field should be used to store the Pilot's "
-#~| "&quot;Other&quot; phone here.</qt>"
-#~ msgid ""
-#~ "<qt>Select which KAddressBook field should be used to store the Pilot's "
-#~ "\"Other\" phone here.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih medan KAddressBook yang sepatutnya digunakan untuk menstor "
-#~ "telefon &quot;Other&quot; Pilot di sini.</qt>"
-
-#~ msgid "Handheld other phone:"
-#~ msgstr "Telefon lain komputer telapak:"
-
-#~ msgid "Other Phone"
-#~ msgstr "Telefon lain"
-
-#~ msgid "Assistant"
-#~ msgstr "Pembantu"
-
-#~ msgid "Business Fax"
-#~ msgstr "Faks Perniagaan"
-
-#, fuzzy
-#~| msgid "Work Phone"
-#~ msgid "Car Phone"
-#~ msgstr "Telefon Tempat Kerja"
-
-#, fuzzy
-#~| msgid "Email address:"
-#~ msgid "Second Email Address"
-#~ msgstr "Alamat e-mel:"
-
-#~ msgid "Home Fax"
-#~ msgstr "Faks Rumah"
-
-#~ msgid "Telex"
-#~ msgstr "Teleks"
-
-#~ msgid "TTY/TTD Phone"
-#~ msgstr "Telefon TTY/TTD "
-
-#~ msgid ""
-#~ "<qt>Select which KAddressBook field should be used to store the Pilot's "
-#~ "Street Address here.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih medan KAddressBook yang sepatutnya digunakan untuk menstor "
-#~ "alamat jalan Pilot di sini.</qt>"
-
-#~ msgid "Handheld street address:"
-#~ msgstr "Alamat jalan komputer telapak:"
-
-#~ msgid "Preferred, then Home Address"
-#~ msgstr "Keutamaan, kemudian Alamat Rumah"
-
-#~ msgid "Preferred, then Business Address"
-#~ msgstr "Keutamaan, kemudian Alamat Perniagaan"
-
-#~ msgid ""
-#~ "<qt>Select which KAddressBook field should be used to store the Fax "
-#~ "number from the Pilot here.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih medan KAddressBook yang sepatutnya digunakan untuk menstor "
-#~ "nombor faks dari Pilot, di sini.</qt>"
-
-#~ msgid "Handheld fax:"
-#~ msgstr "Faks komputer telapak:"
-
-#~ msgid "Custom Fields"
-#~ msgstr "Medan Langganan"
-
-#~ msgid ""
-#~ "<qt>Select the field from this list that represents best the meaning "
-#~ "given by your use of the first custom field on your handheld.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih dari senarai ini, medan yang terbaik mewakili makna yang "
-#~ "diberikan oleh penggunaan medan langganan pertama dalam komputer telapak "
-#~ "anda.</qt>"
-
-#~ msgid "Handheld custom field 1:"
-#~ msgstr "Medan langganan komputer telapak 1:"
-
-#~ msgid "Store as Custom Field"
-#~ msgstr "Stor sebagai Medan Langganan"
-
-#, fuzzy
-#~| msgid "Birthdate"
-#~ msgid "Birthday"
-#~ msgstr "Tarikh lahir"
-
-#~ msgid "URL"
-#~ msgstr "URL"
-
-#~ msgid "IM Address (ICQ, MSN, ...)"
-#~ msgstr "Alamat IM (ICQ, MSN, ...)"
-
-#~ msgid ""
-#~ "<qt>Select the field from this list that represents best the meaning "
-#~ "given by your use of the second custom field on your handheld.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih dari senarai ini, medan yang terbaik mewakili makna yang "
-#~ "diberikan oleh penggunaan medan langganan kedua pada komputer telapak "
-#~ "anda.</qt>"
-
-#~ msgid "Handheld custom field 2:"
-#~ msgstr "Medan langganan komputer telapak 2:"
-
-#~ msgid ""
-#~ "<qt>Select the field from this list that represents best the meaning "
-#~ "given by your use of the third custom field on your handheld.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih dari senarai ini, medan yang terbaik mewakili makna yang "
-#~ "diberikan oleh penggunaan medan langganan ketiga dalam komputer telapak "
-#~ "anda.</qt>"
-
-#~ msgid "Handheld custom field 3:"
-#~ msgstr "Medan langganan komputer telapak 3:"
-
-#~ msgid ""
-#~ "<qt>Select the field from this list that represents best the meaning "
-#~ "given by your use of the fourth custom field on your handheld.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih dari senarai ini, medan yang terbaik mewakili makna yang "
-#~ "diberikan oleh penggunaan medan langganan keempat dalam komputer telapak "
-#~ "anda.</qt>"
-
-#~ msgid "Handheld custom field 4:"
-#~ msgstr "Medan langganan komputer telapak 4:"
-
-#~ msgid ""
-#~ "<qt>Select the birthdate format here, if you selected \"birthdate\" for "
-#~ "any of the custom fields above. Possible placeholders are:<br> %d for the "
-#~ "day, %m for the month, %y for the two-digit year, %Y for the four-digit "
-#~ "year. For  example, %d.%m.%Y would generate a date like 27.3.1952, while "
-#~ "%m/%d/%y would write the same date as 03/27/52. </qt>"
-#~ msgstr ""
-#~ "<qt>Pilih format tarikh lahir di sini, jika anda memilih \"tarikh lahir\" "
-#~ "untuk sebarang medan langganan di atas. Pemegang tempat yang mungkin "
-#~ "adalah:<br> %d untuk hari, %m untuk bulan, %y untuk tahun 2 digit, %Y "
-#~ "untuk tahun 4 digit. Contoh, %d.%m.%Y akan menghasilkan tarikh seperti "
-#~ "27.3.1952, manakala  %m/%d/%y akan menulis tarikh yang sama sebagai  "
-#~ "03/27/52. </qt>"
-
-#~ msgid "Date &format:"
-#~ msgstr "&Format tarikh:"
-
-#~ msgid "Locale Settings"
-#~ msgstr "Seting Lokal"
-
-#~ msgid "%d.%m.%Y"
-#~ msgstr "%h.%b.%T"
-
-#~ msgid "%d.%m.%y"
-#~ msgstr "%h.%b.%t"
-
-#~ msgid "%d/%m/%Y"
-#~ msgstr "%h/%b/%T"
-
-#~ msgid "%d/%m/%y"
-#~ msgstr "%h/%b/%t"
-
-#~ msgid "%m/%d/%Y"
-#~ msgstr "%b/%h/%T"
-
-#~ msgid "%m/%d/%y"
-#~ msgstr "%b/%h/%t"
-
-#, fuzzy
-#~| msgid "General"
-#~ msgid "General"
-#~ msgstr "Umum"
-
-#~ msgid "&Text files:"
-#~ msgstr "Fail &Teks:"
-
-#~ msgid ""
-#~ "<qt>Enter here, or select clicking the file picker button, the name and "
-#~ "location of the folder used to find and synchronize text files. All files "
-#~ "with extension .txt located in this folder will be synced to Palm DOC "
-#~ "databases in your handheld.</qt>"
-#~ msgstr ""
-#~ "<qt>Masuk di sini, atau klik butang pemungut, nama dan lokasi folder yang "
-#~ "digunakan untuk mencari dan menyegerakkan fail teks. Semua fail dengan "
-#~ "sambungan .txt di dalam folder ini akan disegerakkan ke pangkalan data "
-#~ "DOC Palm dalam komputer telapak anda.</qt>"
-
-#~ msgid "Local co&py:"
-#~ msgstr "&Salinan setempat:"
-
-#~ msgid ""
-#~ "<qt>Check this box if you want to save a copy of the Palm DOC databases (."
-#~ "pdb files) on your PC.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini jika anda ingin menyimpan salinan pangkalan data Palm "
-#~ "DOC (.pdb files) dalam PC anda.</qt>"
-
-#~ msgid "Synchronization Mode"
-#~ msgstr "Mod Penyegerakan"
-
-#~ msgid "Sync only P&C to PDA"
-#~ msgstr "Segerakkan hanya P&C ke PDA"
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize texts changed in your PC to Palm "
-#~ "DOC databases in your handheld. Palm DOC databases modified in the "
-#~ "handheld will not be converted to text files, but texts changed in the PC "
-#~ "will be converted to the Palm DOC databases.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini untuk segerakkan teks yang telah berubah dalam PC ke "
-#~ "pangkalan data dalam komputer telapak anda. Pangkalan data Palm DOC yang "
-#~ "diubah suai dalam komputer telapak tidak akan ditukar menjadi fail teks, "
-#~ "tetapi teks yang diubah dalam PC akan ditukar menjadi  pangkalan data "
-#~ "Palm DOC.</qt>"
-
-#~ msgid "Sync only P&DA to PC"
-#~ msgstr "Segerakkan hanya P&DA ke PC"
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize the changes made to Palm DOC "
-#~ "databases in your handheld to the PC text files. Palm DOC databases "
-#~ "modified in the handheld will be converted to text files, but texts "
-#~ "changed in the PC will not be converted to the Palm DOC databases.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini untuk segerakkan perubahan yang dibuat pada  "
-#~ "pangkalan data Palm DOC dalam komputer telapak kepada fail teks PC. "
-#~ "Pangkalan data Palm DOC yang diubah suai dalam komputer telapak akan "
-#~ "ditukar menjadi fail teks, tetapi teks yang diubah dalam PC tidak akan "
-#~ "ditukar menjadi pangkalan data Palm DOC.</qt>"
-
-#~ msgid "Sync &all"
-#~ msgstr "Segerakkan semua"
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize the file texts in your PC to Palm "
-#~ "DOC databases in your handheld. Palm DOC databases modified in the "
-#~ "handheld will be converted to text files, and texts changed in the PC "
-#~ "will be converted to the Palm DOC databases, keeping both versions in "
-#~ "sync.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini untuk segerakkan teks fail dalam PC  ke pangkalan "
-#~ "data Palm DOC dalam komputer telapak. Pangkalan data Palm DOC yang diubah "
-#~ "suai dalam komputer telapak akan ditukar menjadi fail teks, dan teks yang "
-#~ "berubah dalam PC akan ditukar menjadi  pangkalan data Palm DOC, "
-#~ "mengekalkan kedua-dua versi dalam keadaan segerak.</qt>"
-
-#~ msgid ""
-#~ "<qt>Enter here, or select clicking the file picker button, the name and "
-#~ "location of the folder where copies of the handheld databases are kept (."
-#~ "pdb files). Local copies are only made if the box is checked as well.</qt>"
-#~ msgstr ""
-#~ "<qt>Masuk di sini, atau klik butang pemungut fail, nama dan lokasi folder "
-#~ "tempat simpanan salinan pangkalan data komputer telapak (fail .pdb). "
-#~ "Salinan setempat hanya dibuat jika kotak juga disemak.</qt>"
-
-#~ msgid "PC -> Handheld"
-#~ msgstr "PC -> Komputer Telapak"
-
-#~ msgid "&Compress"
-#~ msgstr "&Padatkan"
-
-#~ msgid ""
-#~ "Check this box, if the text should be compressed on the handheld to save "
-#~ "memory. Most doc reader on the handheld support compressed texts."
-#~ msgstr ""
-#~ "Semak kotak ini, jika teks sepatutnya dimampatkan pada komputer telapak "
-#~ "untuk menyimpan memori. Kebanyakan pembaca dokumen dalam komputer telapak "
-#~ "menyokong teks mampat."
-
-#~ msgid ""
-#~ "<qt>The Palm DOC format supports compressing the text to save memory. "
-#~ "Check this box to enable text compression, so the resulting Palm DOC "
-#~ "database will consume about 50% less memory than in uncompressed state. "
-#~ "Almost all DOC readers on the Palm support compressed texts.</qt>"
-#~ msgstr ""
-#~ "<qt>Format Palm DOC menyokong pemampatan teks untuk menyimpan memori. "
-#~ "Semak kotak ini untuk mengaktifkan pemampatan, supaya pangkalan data Palm "
-#~ "DOC yang dihasilkan menggunakan kurang 50% memori berbanding dengan "
-#~ "keadaan tidak mampat. Hampir semua pembaca DOC dalam Palm menyokong teks "
-#~ "mampat.</qt>"
-
-#~ msgid "Convert &bookmarks"
-#~ msgstr "Tukar tanda &buku"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt>Check this box to enable bookmark creation when converting text "
-#~| "files to Palm DOC databases. Most doc readers support bookmarks. In "
-#~| "order to create a bookmark, it is necessary to to provide the location "
-#~| "in the text where the bookmark should be set and the bookmark title, in "
-#~| "at least one of the formats listed below.</qt>"
-#~ msgid ""
-#~ "<qt>Check this box to enable bookmark creation when converting text files "
-#~ "to Palm DOC databases. Most doc readers support bookmarks. In order to "
-#~ "create a bookmark, it is necessary to provide the location in the text "
-#~ "where the bookmark should be set and the bookmark title, in at least one "
-#~ "of the formats listed below.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk mengaktifkan penciptaan tanda buku apabila "
-#~ "menukar fail teks menjadi pangkalan data Palm DOC. Kebanyakan pembaca "
-#~ "dokumen menyokong tanda buku. Untuk mencipta satu tanda buku, perlu "
-#~ "diberitahu lokasi tempat tanda buku sepatutnya diset dalam teks, serta "
-#~ "tajuk tanda buku, dalam sekurang-kurangnya satu format yang tersenarai di "
-#~ "bawah.</qt>"
-
-#~ msgid "&Inline tags in text"
-#~ msgstr "Dalam bar&iskan tag dalam teks"
-
-#~ msgid ""
-#~ "Check this box to create bookmarks from inline tags in the text. The "
-#~ "inline tag consist of tags in the form <* bookmarktext *>. The bookmark "
-#~ "location is set using the location of the inline tag in the text, and  "
-#~ "the name is the text between the <* and the *>. The inline tag (<*...*>) "
-#~ "will be removed from the text."
-#~ msgstr ""
-#~ "Semak kotak ini untuk mencipta tanda buku dari tag dalam baris di dalam "
-#~ "teks. Tag dalam baris terdiri daripada tag dalam bentuk <* bookmarktext "
-#~ "*>. Lokasi tanda buku diset menggunakan lokasi tag dalam garisan dalam "
-#~ "teks, dan namanya ialah teks yang berada antara  <* and the *>. Tag dalam "
-#~ "garisan (<*...*>) akan dikeluarkan dari teks."
-
-#~ msgid "&Encoding:"
-#~ msgstr "&Pengekodan:"
-
-#~ msgid "&Tags at end of text"
-#~ msgstr "&Tag di hujung teks"
-
-#~ msgid ""
-#~ "Check this box to convert tags of the form <bookmarkname> at the end of "
-#~ "the text to bookmarks. The text inside the tag (\"bookmarkname\") will be "
-#~ "searched in the text, and whenever found, a bookmark will be set there. "
-#~ "The endtags <...> will then be removed from the end of the text."
-#~ msgstr ""
-#~ "Semak kotak ini untuk menukar bentuk <bookmarkname> di hujung teks "
-#~ "menjadi tanda buku. Teks di dalam tag (\"bookmarkname\") akan dicari "
-#~ "dalam teks, dan satu tanda buku akan diset di lokasi tag tersebut "
-#~ "ditemui. Tag hujung <...> kemudiannya akan dikeluarkan dari hujung teks."
-
-#~ msgid "Regular &expressions in .bmk file"
-#~ msgstr "&Ungkapan lazim dalam fail .bmk"
-
-#~ msgid ""
-#~ "<qt>Check this box to use regular expressions in a file to search the "
-#~ "text for bookmarks. The file should have the same name as the text file, "
-#~ "but should end in .bmk instead of .txt (for instance, the regular "
-#~ "expression file for textname.txt should be textname.bmk). See the "
-#~ "documentation for a description of the format of the bmk file.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk menggunakan ungkapan lazim dalam fail untuk "
-#~ "mencari teks bagi tanda buku. Fail tersebut sepatutnya mempunyai nama "
-#~ "yang sama dengan fail teks, tetapi hujungnya .bmk, bukan .txt,    "
-#~ "(contohnya, fail ungkapan lazim textname.txt yang sepatutnya ialah "
-#~ "textname.bmk). Lihat dokumentasi untuk huraian format fail bmk.</qt>"
-
-#~ msgid "Handheld -> PC"
-#~ msgstr "Komputer telapak -> PC"
-
-#~ msgid "Do not convert, if text unchanged (only bookmarks)"
-#~ msgstr "Jangan tukar, jika teks tidak berubah (hanya tanda buku)"
-
-#~ msgid ""
-#~ "<qt>Check this box to avoid syncing the text on the handheld to the PC if "
-#~ "you only changed the bookmarks on the handheld (but not the text).</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk mengelakkan penyegerakan teks dalam komputer "
-#~ "telapak ke PC jika anda hanya mengubah tanda buku pada komputer telapak "
-#~ "(tetapi tidak dalam teks).</qt>"
-
-#~ msgid "Convert Bookmarks"
-#~ msgstr "Tukar Tanda Buku"
-
-#~ msgid "Do &not convert bookmarks"
-#~ msgstr "Jangan tukar tanda buku"
-
-#~ msgid ""
-#~ "<qt>Check this box to avoid converting Palm DOC bookmarks to inline tags "
-#~ "or to a bookmark file.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk mengelakkan tanda buku Palm DOC ditukar menjadi "
-#~ "tag dalam baris atau menjadi fail tanda buku.</qt>"
-
-#~ msgid "Convert into .bm &file"
-#~ msgstr "Tukarkan kepada &fail .bm "
-
-#~ msgid ""
-#~ "<qt>Check this box to convert the Palm DOC database bookmarks to a "
-#~ "separate file, in the bmk format (see more about this format in the "
-#~ "documentation). The resulting bookmark file shares the same filename as "
-#~ "the resulting .txt file, but ends in .bmk instead. This approach creates "
-#~ "a clean text file and a bookmark file.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak  kotak ini untuk menukar tanda buku pangkalan data  Palm DOC "
-#~ "menjadi fail berasingan, dalam format bmk (lihat maklumat lanjut tentang "
-#~ "format ini dalam dokumentasi). Fail tanda buku yang dihasilkan akan "
-#~ "berkongsi nama fail yang sama seperti fail .txt yang terhasil, tetapi "
-#~ "bezanya, hujungnya ialah .bmk. Pendekatan ini mencipta fail teks yang "
-#~ "bersih dan fail tanda buku.</qt>"
-
-#~ msgid "Convert as &inline tags"
-#~ msgstr "Tukar sebagai tag &dalam baris"
-
-#~ msgid ""
-#~ "<qt>Check this box to convert the Palm DOC database bookmarks to inline "
-#~ "tags, in the form &lt;* BookmarkName *&gt;. These tags are inserted in "
-#~ "the text in the position marked by the bookmark, and the text inside the "
-#~ "tag corresponds to the bookmark name. Inline tags are easy to create, "
-#~ "delete, move and edit.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk menukar tanda buku pangkalan data Palm DOC "
-#~ "kepada tag dalam baris, dalam bentuk &lt;* nama tanda buku *&gt;. Tag ini "
-#~ "akan disisipkan dalam teks di posisi yang ditandakan oleh tanda buku, dan "
-#~ "teks di dalam tag sejajar dengan nama tanda buku. Tag dalam baris mudah "
-#~ "dicipta, dihapus, dialih dan diedit.</qt>"
-
-#~ msgid ""
-#~ "If the same text was changed on the PC and the handheld, which of the two "
-#~ "versions should be used as the new version?"
-#~ msgstr ""
-#~ "Jika teks yang sama diubah dalam PC dan komputer telapak, mana satu versi "
-#~ "yang sepatutnya digunakan dalam versi baru?"
-
-#~ msgid ""
-#~ "<qt>The Palm DOC conduit does not feature merging the modifications when "
-#~ "a text is changed both in the handheld and in the computer. Therefore, "
-#~ "the choice is between working with the files out of sync, or discarding "
-#~ "the changes in one of them.</qt>"
-#~ msgstr ""
-#~ "<qt>Saluran Palm DOC tidak mempunyai ciri mencantumkan pengubahsuaian "
-#~ "apabila teks diubah dalam komputer telapak dan juga komputer biasa.  Oleh "
-#~ "itu, pilihan adalah, melakukan sesuatu terhadap fail di luar "
-#~ "penyegerakan, atau membuang perubahan dalam komputer telapak atau "
-#~ "komputer.</qt>"
-
-#~ msgid "&No resolution"
-#~ msgstr "&Tiada resolusi"
-
-#~ msgid ""
-#~ "<qt>The Palm DOC conduit does not feature merging the modifications when "
-#~ "a text is changed both in the handheld and in the computer. Therefore, "
-#~ "when conflicts appear, the choice is between working with the files out "
-#~ "of sync, or discarding the changes in one of them. Select this option to "
-#~ "prevent KPilot from overwriting your modifications.</qt>"
-#~ msgstr ""
-#~ "<qt>Saluran Palm DOC tidak mempunyai ciri mencantumkan pengubahsuaian "
-#~ "apabila teks diubah dalam komputer telapak dan dalam komputer. Oleh itu, "
-#~ "apabila konflik muncul, pilihan adalah sama ada melakukan sesuatu "
-#~ "terhadap fail di luar penyegerakan, atau membuang perubahan dalam "
-#~ "komputer telapak atau komputer. Pilih opsyen ini untuk mengelakkan KPilot "
-#~ "menulis ganti pengubahsuaian anda.</qt>"
-
-#~ msgid "P&DA overrides"
-#~ msgstr "Tulis tindih P&DA "
-
-#~ msgid ""
-#~ "<qt>The Palm DOC conduit does not feature merging the modifications when "
-#~ "a text is changed both in the handheld and in the computer. Therefore, "
-#~ "when conflicts appear, the choice is between working with the files out "
-#~ "of sync, or discarding the changes in one of them. Select this option to "
-#~ "make the PDA version overwrite the PC version in case of conflict.</qt>"
-#~ msgstr ""
-#~ "<qt>Saluran Palm DOC tidak mempunyai ciri mencantumkan ubah suai apabila "
-#~ "teks diubah dalam komputer telapak dan dalam komputer. Oleh itu, apabila "
-#~ "konflik muncul, pilihan adalah sama ada  melakukan sesuatu terhadap fail "
-#~ "di luar penyegerakan, atau membuang perubahan dalam komputer telapak atau "
-#~ "dalam komputer. Pilih opsyen ini supaya versi PDA menulis ganti versi PC "
-#~ "jika konflik berlaku.</qt>"
-
-#~ msgid "P&C overrides"
-#~ msgstr "Tulis tindih  P&C"
-
-#~ msgid ""
-#~ "<qt>The Palm DOC conduit does not feature merging the modifications when "
-#~ "a text is changed both in the handheld and in the computer. Therefore, "
-#~ "when conflicts appear, the choice is between working with the files out "
-#~ "of sync, or discarding the changes in one of them. Select this option to "
-#~ "make the PC version overwrite the PDA version in case of conflict.</qt>"
-#~ msgstr ""
-#~ "<qt>Saluran Palm DOC tidak mempunyai ciri mencantumkan ubah suai teks "
-#~ "apabila teks diubah dalam komputer telapak dan juga dalam komputer. Oleh "
-#~ "itu, jika konflik muncul, pilihan ialah sama ada melakukan sesuatu "
-#~ "terhadap fail di luar penyegerakan, atau membuang perubahan dalam "
-#~ "komputer telapak atau dalam komputer. Pilih opsyen ini supaya versi  PC "
-#~ "menulis ganti versi PDA jika konflik berlaku.</qt>"
-
-#~ msgid "&Ask the user"
-#~ msgstr "&Tanya pengguna"
-
-#~ msgid ""
-#~ "<qt>The Palm DOC conduit does not feature merging the modifications when "
-#~ "a text is changed both in the handheld and in the computer. Therefore, "
-#~ "when conflicts appear, the choice is between working with the files out "
-#~ "of sync, or discarding the changes in one of them. Select this option to "
-#~ "show the resolution dialog to let the user decide on a case by case basis."
-#~ "</qt>"
-#~ msgstr ""
-#~ "<qt>Saluran Palm DOC tidak mempunyai ciri mencantumkan ubah suai apabila "
-#~ "teks diubah dalam komputer telapak dan juga dalam komputer. Oleh itu, "
-#~ "apabila konflik muncul, pilihan yang ada ialah sama ada melakukan sesuatu "
-#~ "terhadap fail di luar penyegerakan, atau membuang perubahan dalam "
-#~ "komputer telapak atau komputer. Pilih opsyen ini untuk memaparkan dialog "
-#~ "resolusi supaya pengguna boleh membuat keputusan kes demi kes.</qt>"
-
-#~ msgid "&Always show the resolution dialog"
-#~ msgstr "&Sentiasa paparkan dialog resolusi"
-
-#~ msgid ""
-#~ "<qt>Check this box to force the resolution dialog to appear even when "
-#~ "there are no conflicts.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk memaksa dialog resolusi muncul walaupun konflik "
-#~ "tidak berlaku.</qt>"
-
-#~ msgid "&PalmDOC file:"
-#~ msgstr "Fail &PalmDOC:"
-
-#~ msgid "Convert whole &folders"
-#~ msgstr "Tukar seluruh &folder"
-
-#~ msgid ""
-#~ "Folder where copies of the handheld databases are kept. You can install "
-#~ "them to any PalmOS handheld, and distribute these copies to other people "
-#~ "(but beware of copyright infringement)."
-#~ msgstr ""
-#~ "Folder tempat simpanan salinan pangkalan data komputer telapak. Anda "
-#~ "boleh memasangnya ke sebarang komputer telapak PalmOS, dan mengagihkan "
-#~ "salinan ini kepada orang lain (tetapi awasi pencerobohan hakcipta)."
-
-#~ msgid "&Ask before overwriting files"
-#~ msgstr "&Tanya sebelum menulis ganti fail"
-
-#~ msgid "&Verbose messages"
-#~ msgstr "&Panjang lebarkan mesej "
-
-#~ msgid "Convert Text to PalmDOC"
-#~ msgstr "Tukarkan teks kepada PalmDOC"
-
-#~ msgid "Convert PalmDOC to Text"
-#~ msgstr "Tukarkan PalmDOC kepada teks"
-
-#~ msgid ""
-#~ "Enter the name of the folder where the text files reside on the PC. All "
-#~ "files with extension .txt will be synced to the handheld."
-#~ msgstr ""
-#~ "Masukkan nama folder tempat fail  menetap dalam PC. Semua fail dengan "
-#~ "sambungan .txt akan disegerakkan ke komputer telapak."
-
-#~ msgid ""
-#~ "When a <* bookmarktext *> appears somewhere in the text, a bookmark will "
-#~ "be set at this position, and the text between the <* and the *> will be "
-#~ "used as bookmark name. The <*...*> will be removed from the text."
-#~ msgstr ""
-#~ "Jika  <* bookmarktext *> muncul di mana-mana tempat dalam teks, satu "
-#~ "tanda buku akan diset di posisi ini, dan teks antara <* and the *> akan "
-#~ "digunakan sebagai nama tanda buku.  <*...*> akan dikeluarkan dari teks."
-
-#~ msgid ""
-#~ "Tags of the form <bookmarkname> at the end of the text will be used to "
-#~ "search the text for the pattern between the < and >. Whenever "
-#~ "\"bookmarkname\" appears in the text, a bookmark will be set there. The "
-#~ "endtags <...> will then be removed from the end of the text."
-#~ msgstr ""
-#~ "Tag bentuk<bookmarkname> di hujung teks akan digunakan untuk mencari teks "
-#~ "bagi corak antara < and >. Apabila \"nama penanda buku\" muncul dalam "
-#~ "teks, satu tanda buku akan disetkan di situ. Maka tag hujung <...> akan "
-#~ "dikeluarkan dari hujung teks."
-
-#~ msgid ""
-#~ "The Palm doc format supports compressing the text to save memory. If you "
-#~ "check this box, the text will consume about 50% less memory than in "
-#~ "uncompressed state. Almost all DOC readers on the Palm support compressed "
-#~ "texts."
-#~ msgstr ""
-#~ "Format doc Palm menyokong pemampatan teks untuk menjimatkan memori. Jika "
-#~ "anda menyemak kotak ini, teks akan menggunakan kurang daripada 50% memori "
-#~ "berbanding dengan keadaan tidak mampat. Hampir semua pembaca DOC dalam "
-#~ "Palm menyokong teks mampat."
-
-#~ msgid ""
-#~ "Do you want to convert bookmarks? Most doc readers support bookmarks. You "
-#~ "have to provide some information about where the bookmarks should be set "
-#~ "and their titles. Check at least one of the bookmark types below."
-#~ msgstr ""
-#~ "Anda ingin menukar tanda buku? Kebanyakan pembaca doc menyokong tanda "
-#~ "buku. Anda perlu memberikan maklumat tentang tajuk dan tempat tanda buku "
-#~ "patut diset. Semak sekurang-kurangnya satu daripada jenis tanda buku di "
-#~ "bawah."
-
-#~ msgid ""
-#~ "Use regular expressions in a file textname.bmk (textname.txt is the "
-#~ "filename of the text) to search the text for bookmarks.See the "
-#~ "documentation for a description of the format of the bmk file."
-#~ msgstr ""
-#~ "Guna ungkapan lazim dalam fail namateks.bmk (namateks.txt ialah nama fail "
-#~ "teks berkenaan) untuk mencari teks bagi tanda buku. Lihat dokumentasi "
-#~ "untuk huraian format fail bmk."
-
-#~ msgid "Convert as &end tags"
-#~ msgstr "Tukar sebagai tag &hujung"
-
-#~ msgid "Convert into .bmk &file"
-#~ msgstr "Tukarkan kepada &fail .bmk"
-
-#, fuzzy
-#~| msgid "Use &Dialog"
-#~ msgid "Dialog"
-#~ msgstr "Gunakan &Dialog"
-
-#, fuzzy
-#~| msgid "&Password:"
-#~ msgid "Password:"
-#~ msgstr "&Kata laluan:"
-
-#, fuzzy
-#~| msgid "&Password:"
-#~ msgid "Retype password:"
-#~ msgstr "&Kata laluan:"
-
-#, fuzzy
-#~| msgid "Password set"
-#~ msgid "Passwords do not match."
-#~ msgstr "set kata laluan "
-
-#, fuzzy
-#~| msgid "Record index:"
-#~ msgid "Keyring Editor"
-#~ msgstr "Indeks rekod:"
-
-#~ msgid "Delete Record"
-#~ msgstr "Hapuskan Rekod"
-
-#, fuzzy
-#~| msgid "New Record..."
-#~ msgid "New Record"
-#~ msgstr "Rekod Baru..."
-
-#, fuzzy
-#~| msgid "Country:"
-#~ msgid "Account:"
-#~ msgstr "Negara:"
-
-#~ msgid "Category"
-#~ msgstr "Kategori"
-
-#, fuzzy
-#~| msgid "changed"
-#~ msgid "Last changed:"
-#~ msgstr "diubah"
-
-#, fuzzy
-#~| msgid "Note:\n"
-#~ msgid "Notes:"
-#~ msgstr "Perhatian:\n"
-
-#, fuzzy
-#~| msgid "Title"
-#~ msgid "&File"
-#~ msgstr "Tajuk"
-
-#, fuzzy
-#~| msgid "&Note:"
-#~ msgid "&New"
-#~ msgstr "&Perhatian:"
-
-#, fuzzy
-#~| msgid "&Edit..."
-#~ msgid "&Exit"
-#~ msgstr "&Edit..."
-
-#, fuzzy
-#~| msgid "Viewer settings."
-#~ msgid "Keyring Settings"
-#~ msgstr "Seting pemapar."
-
-#, fuzzy
-#~| msgid "Password set"
-#~ msgid "Password Settings"
-#~ msgstr "set kata laluan "
-
-#, fuzzy
-#~| msgid "No password set"
-#~ msgid "Save password in wallet:"
-#~ msgstr "Tiada kata laluan diset"
-
-#~ msgid "Sync"
-#~ msgstr "Penyegerakan"
-
-#, fuzzy
-#~| msgid "Select how often AvantGo should be synchronised"
-#~ msgid "Select how often AvantGo should be synchronized"
-#~ msgstr "Pilih sekerap mana AvantGo patut disegerakkan"
-
-#~ msgid "&Every sync"
-#~ msgstr "&Setiap penyegerakan"
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize with the MAL server on every "
-#~ "HotSync. To perform a successful synchronization, you need to have access "
-#~ "to the MAL server during the HotSync.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini supaya segerak dengan pelayan MAL pada setiap "
-#~ "HotSync. Untuk berjaya melaksanakan penyegerakan, anda perlu mempunyai "
-#~ "akses ke pelayan MAL semasa HotSync.</qt>"
-
-#~ msgid "Once per &hour"
-#~ msgstr "Sekali setiap &jam"
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize with the MAL server on every "
-#~ "HotSync that is at least one hour after the previous MAL sync. To perform "
-#~ "a successful synchronization, you need to have access to the MAL server "
-#~ "during the HotSync.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini supaya segerak dengan pelayan MAL pada setiap "
-#~ "HotSync yang sekurang-kurangnya satu jam selepas penyegerakan MAL "
-#~ "sebelumnya.  Untuk berjaya melaksanakan penyegerakan, anda perlu "
-#~ "mempunyai akses ke pelayan MAL semasa HotSync.</qt>"
-
-#~ msgid "Once a &day"
-#~ msgstr "Sekali &sehari"
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize with the MAL server on every "
-#~ "HotSync that is at least one day after the previous MAL sync. To perform "
-#~ "a successful synchronization, you need to have access to the MAL server "
-#~ "during the HotSync.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini supaya segerak dengan pelayan MAL pada setiap "
-#~ "HotSync yang sekurang-kurangnya sehari selepas penyegerakan MAL "
-#~ "sebelumnya. Untuk berjaya melaksanakan penyegerakan, anda perlu mempunyai "
-#~ "akses ke pelayan MAL semasa HotSync.</qt>"
-
-#~ msgid "Once a &week"
-#~ msgstr "Sekali &seminggu"
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize with the MAL server on every "
-#~ "HotSync that is at least one week after the previous MAL sync. To perform "
-#~ "a successful synchronization, you need to have access to the MAL server "
-#~ "during the HotSync.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini supaya segerak dengan pelayan MAL pada setiap "
-#~ "HotSync yang sekurang-kurangnya seminggu selepas penyegerakan MAL "
-#~ "sebelumnya. Untuk berjaya melaksanakan penyegerakan, anda perlu mempunyai "
-#~ "akses ke pelayan  MAL semasa HotSync.</qt>"
-
-#~ msgid "Once a &month"
-#~ msgstr "Sekali sebulan"
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize with the MAL server on every "
-#~ "HotSync that is at least one month after the previous MAL sync. To "
-#~ "perform a successful synchronization, you need to have access to the MAL "
-#~ "server during the HotSync.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini supaya segerak dengan pelayan MAL pada setiap "
-#~ "HotSync yang sekurang-kurangnya sebulan selepas penyegerakan MAL "
-#~ "sebelumnya. Untuk berjaya melaksanakan penyegerakan, anda perlu mempunyai "
-#~ "akses ke pelayan MAL semasa HotSync.</qt>"
-
-#~ msgid "Proxy"
-#~ msgstr "Proksi"
-
-#~ msgid "Proxy Type"
-#~ msgstr "Jenis Proksi"
-
-#~ msgid "&No proxy"
-#~ msgstr "&Tiada proksi"
-
-#~ msgid ""
-#~ "<qt>Select this option if you do not want KPilot to use a proxy server. "
-#~ "Use this option if you connect to the internet directly.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini jika anda tidak mahu KPilot menggunakan pelayan "
-#~ "proksi. Guna opsyen ini jika anda bersambung secara langsung ke internet."
-#~ "</qt>"
-
-#~ msgid "&HTTP proxy"
-#~ msgstr "Proksi &HTTP"
-
-#~ msgid "<qt>Select this option if you want KPilot to use a HTTP proxy.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini jika anda ingin KPilot menggunakan proksi HTTP.</qt>"
-
-#~ msgid "&SOCKS proxy"
-#~ msgstr "Proksi &SOCKS"
-
-#~ msgid "<qt>Select this option if you want KPilot to use a SOCKS proxy.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini jika anda ingin KPilot menggunakan proksi  SOCKS.</"
-#~ "qt>"
-
-#~ msgid "Server Information"
-#~ msgstr "Maklumat Pelayan"
-
-#~ msgid "Custom &port:"
-#~ msgstr "&Port langganan:"
-
-#~ msgid "Check this box to use a non-standard proxy port."
-#~ msgstr "Semak kotak ini untuk menggunakan port proksi bukan piawai."
-
-#~ msgid "Ser&ver name:"
-#~ msgstr "Nama pe&layan:"
-
-#~ msgid ""
-#~ "<qt>If you selected HTTP or SOCKS proxy, type the address of the proxy "
-#~ "server to use here, in the form <i>foo.bar.com</i> (not <i>http://foo.bar."
-#~ "com</i> or <i>http://foo.bar.com:8080</i>).</qt>"
-#~ msgstr ""
-#~ "<qt>Jika anda memilih proksi HTTP atau SOCKS, taipkan alamat pelayan "
-#~ "proksi yang hendak digunakan, di sini, dalam bentuk <i>foo.bar.com</i> "
-#~ "(bukan<i>http://foo.bar.com</i> atau <i>http://foo.bar.com:8080</i>).</qt>"
-
-#~ msgid ""
-#~ "<qt>Enter the port you want KPilot to use when connecting to your proxy "
-#~ "server here.</qt>"
-#~ msgstr ""
-#~ "<qt>Masukkan port yang akan digunakan oleh KPilot semasa membuat "
-#~ "sambungan ke pelayan proksi, di sini.</qt>"
-
-#~ msgid ""
-#~ "<qt>If your proxy requires authentication, enter your password here.</qt>"
-#~ msgstr ""
-#~ "<qt>Jika proksi anda perlukan pengesahan, masukkan kata laluan di sini.</"
-#~ "qt>"
-
-#~ msgid ""
-#~ "<qt>If your proxy requires authentication, enter your username here.</qt>"
-#~ msgstr ""
-#~ "<qt>Jika proksi anda perlukan pengesahan, masukkan nama pengguna di sini."
-#~ "</qt>"
-
-#~ msgid "&Password:"
-#~ msgstr "&Kata laluan:"
-
-#~ msgid "&User name:"
-#~ msgstr "Nama &pengguna:"
-
-#~ msgid ""
-#~ "<qt>Enter a list of MAL servers that do not need the use of a proxy here, "
-#~ "separated with commas, e.g: <br><i>localhost,127.0.0.1,.lan</i><qt>"
-#~ msgstr ""
-#~ "<qt>Masukkan senarai pelayan  MAL yang tidak perlu menggunakan proksi, di "
-#~ "sini, dipisahkan oleh tanda koma, misalnya: <br><i>hos "
-#~ "setempat,127.0.0.1,.lan</i><qt>"
-
-#~ msgid "N&o proxy for:"
-#~ msgstr "Ti&ada proksi untuk:"
-
-#~ msgid "MAL Server"
-#~ msgstr "Pelayan MAL"
-
-#~ msgid "MAL Server Information"
-#~ msgstr "Maklumat pelayan MAL"
-
-#~ msgid "&MAL server name:"
-#~ msgstr "Nama pelayan &MAL:"
-
-#~ msgid ""
-#~ "<qt>There is currently <b>no way to set server parameters on the desktop</"
-#~ "b>; you need to use the <i>MobileLink</i> or <i>AGConnect</i> application "
-#~ "on the handheld device. </qt>"
-#~ msgstr ""
-#~ "<qt>Sekarang <b>tiada cara untuk mengeset parameter pelayan pada desktop</"
-#~ "b>; anda perlu menggunakan aplikasi <i>MobileLink</i> atau<i>AGConnect</"
-#~ "i> pada peranti komputer telapak. </qt>"
-
-#, fuzzy
-#~| msgid "Select the directory you want to store your PDA's memos in"
-#~ msgid "What directory do you want to sync your PDA's memos with?"
-#~ msgstr "Pilih direktori tempat anda  ingin stor memo PDA."
-
-#~ msgid "Memofile Conduit Options"
-#~ msgstr "Opsyen Saluran Fail Memo"
-
-#, fuzzy
-#~| msgid "General"
-#~ msgctxt "General settings for memofile conduit."
-#~ msgid "General"
-#~ msgstr "Umum"
-
-#, fuzzy
-#~| msgid "Memos directory:"
-#~ msgid "Memos directory:"
-#~ msgstr "Direktori memo:"
-
-#~ msgid "Select the directory you want to store your PDA's memos in"
-#~ msgstr "Pilih direktori tempat anda  ingin stor memo PDA."
-
-#~ msgid "Sync private records:"
-#~ msgstr "Segerakkan rekod persendirian:"
-
-#~ msgid "Path to the directory to which the pictures should be exported."
-#~ msgstr "Laluan ke direktori di mana gambar akan di eksport."
-
-#~ msgid "Output:"
-#~ msgstr "Output:"
-
-#~ msgid "Null-Conduit Options"
-#~ msgstr "Opsyen Saluran Nol."
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt>Enter the message to add to the Sync Log on your Pilot here.</qt>"
-#~ msgid ""
-#~ "&lt;qt>Enter the message to add to the Sync Log on your Pilot here.&lt;/"
-#~ "qt>"
-#~ msgstr ""
-#~ "<qt>Masukkan mesej untuk tambahan ke Log Penyegerakan pada Pilot di sini."
-#~ "</qt>"
-
-#, fuzzy
-#~| msgid "General"
-#~ msgctxt "General settings for the null conduit."
-#~ msgid "General"
-#~ msgstr "Umum"
-
-#~ msgid "&Log message:"
-#~ msgstr "&Log mesej:"
-
-#~ msgid "KPilot was here."
-#~ msgstr "KPilot pernah ada di sini."
-
-#~ msgid "Send Mail"
-#~ msgstr "Hantar mel"
-
-#~ msgid ""
-#~ "<qt>Select the method KPilot will use to send the mail from your Handheld "
-#~ "to the recipients here. Depending on the method you choose, the other "
-#~ "fields in the dialog may be enabled or disabled. Currently, the only "
-#~ "<i>working</i> method is through KMail.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih kaedah yang akan digunakan oleh KPilot untuk menghantar mel "
-#~ "dari komputer telapak anda kepada penerima, di sini. Medan lain dalam "
-#~ "dialog akan diaktifkan atau dinyahaktifkan bergantung pada kaedah yang "
-#~ "anda pilih. Sekarang, kaedah yang <i>berfungsi</i> adalah melalui KMail.</"
-#~ "qt>"
-
-#~ msgid "Send method:"
-#~ msgstr "Kaedah hantar:"
-
-#~ msgid "Do Not Send Mail"
-#~ msgstr "Jangan Hantar Mel"
-
-#~ msgid "Use KMail"
-#~ msgstr "Gunakan KMail"
-
-#~ msgid "<qt>Enter the email address you want to send messages as here.</qt>"
-#~ msgstr ""
-#~ "<qt>Di sini, masukkan alamat e-mel yang anda ingin hantar mesej.</qt>"
-
-#~ msgid "Email address:"
-#~ msgstr "Alamat e-mel:"
-
-#~ msgid "$USER"
-#~ msgstr "$PENGGUNA"
-
-#~ msgid ""
-#~ "<qt>If you want to add a signature file, enter the location of your "
-#~ "signature file (usually, <i>.signature</i>, located in your home folder) "
-#~ "here, or select it clicking the file picker button. The signature file "
-#~ "contains the text that is added to the end of your outgoing mail messages."
-#~ "</qt>"
-#~ msgstr ""
-#~ "<qt>Jika anda ingin menambah fail tandatangan, masukkan lokasi fail "
-#~ "tandatangan di sini (biasanya, <i>.tandatangan</i>, terletak di folder "
-#~ "laman utama anda), atau pilih dengan mengklik butang pengutip. Fail "
-#~ "tandatangan mengandungi teks yang ditambah hingga ke hujung mesej mel "
-#~ "keluar anda.</qt>"
-
-#~ msgid "Signature file:"
-#~ msgstr "Fail tandatangan:"
-
-#~ msgid ""
-#~ "<qt>Enter here, or select by clicking the file picker button, the "
-#~ "location and file name of the output file used to store the handheld's "
-#~ "system information.</qt>"
-#~ msgstr ""
-#~ "<qt>Masuk di sini, atau pilih dengan mengklik butang pengutip fail, nama "
-#~ "dan lokasi fail output yang digunakan untuk menstor sistem informasi "
-#~ "komputer telapak.</qt>"
-
-#~ msgid "Output &file:"
-#~ msgstr "&Fail output:"
-
-#~ msgid "Type of Output"
-#~ msgstr "Jenis Output"
-
-#~ msgid "&HTML"
-#~ msgstr "&HTML"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Select this option to output the system information data as a HTML "
-#~ "document.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini supaya data maklumat sistem dioutput sebagai dokumen "
-#~ "HTML.</qt>"
-
-#, fuzzy
-#~| msgid "&Text file:"
-#~ msgid "Te&xt file"
-#~ msgstr "Fail &teks:"
-
-#~ msgid ""
-#~ "<qt>Select this option to output the system information data as a text "
-#~ "document.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini supaya data maklumat sistem dioutput sebagai dokumen "
-#~ "teks.</qt>"
-
-#~ msgid ""
-#~ "<qt>Enter here, or select by clicking on the file picker button, the "
-#~ "location of the template to be used if you select the Custom template "
-#~ "option.</qt>"
-#~ msgstr ""
-#~ "<qt>Masuk di sini, atau pilih lokasi templat yang hendak diguna  jika "
-#~ "anda gunakan opsyen templat biasa, dengan mengklik butang pengutip fail.</"
-#~ "qt>"
-
-#~ msgid "&Custom template:"
-#~ msgstr "Templat &langganan:"
-
-#~ msgid ""
-#~ "<qt>Select this option to output the system information data as defined "
-#~ "by a custom template. Enter the location of the template in the edit box, "
-#~ "or select it clicking on the file picker button.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini supaya data sistem maklumat dioutput seperti yang "
-#~ "ditakrif oleh templat langganan. Masuk ke lokasi templat dalam kotak "
-#~ "edit, atau pilih dengan mengklik butang pengutip fail.</qt>"
-
-#~ msgid "Parts Included"
-#~ msgstr "Bahagian Telah Dimasukkan"
-
-#~ msgid "Output Type"
-#~ msgstr "Jenis Output"
-
-#~ msgid ""
-#~ "<qt>Check on this list the types of information about your system and "
-#~ "handheld you want to display in the output file.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak dalam senarai ini jenis maklumat sistem anda dan juga komputer "
-#~ "telapak yang anda ingin paparkan dalam fail output.</qt>"
-
-#, fuzzy
-#~| msgid "Database information"
-#~ msgid "Hardware information"
-#~ msgstr "Maklumat pangkalan data"
-
-#, fuzzy
-#~| msgid "System Information"
-#~ msgid "Memory information"
-#~ msgstr "Maklumat Sistem"
-
-#, fuzzy
-#~| msgid "PalmOSVersion"
-#~ msgid "PalmOS version"
-#~ msgstr "Versi PalmO"
-
-#, fuzzy
-#~| msgid "Synchronization Mode"
-#~ msgid "Synchronization information"
-#~ msgstr "Mod Penyegerakan"
-
-#, fuzzy
-#~| msgid "Database information"
-#~ msgid "User information"
-#~ msgstr "Maklumat pangkalan data"
-
-#, fuzzy
-#~| msgid "General"
-#~ msgctxt "General settings for time conduit."
-#~ msgid "General"
-#~ msgstr "Umum"
-
-#~ msgid "Direction"
-#~ msgstr "Haluan"
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize the handheld time with the PC time, "
-#~ "by using the PC time on both.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini untuk segerakkan waktu komputer telapak dengan waktu "
-#~ "PC, dengan menggunakan masa PC pada kedua-duanya.</qt>"
-
-#~ msgid "Set the &handheld time from the time on the PC"
-#~ msgstr "Setkan waktu komputer &telapak dengan waktu pada PC"
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize the handheld time with the PC time, "
-#~ "by using the handheld time on both.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih opsyen ini untuk segerakkan waktu komputer telapak dengan waktu "
-#~ "PC, menggunakan waktu komputer telapak pada kedua-duanya.</qt>"
-
-#~ msgid "Set the &PC time from the time on the handheld"
-#~ msgstr "Setkan waktu &PC  dari waktu pada komputer telapak"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt>PalmOS Version 3.25 and 3.3 do not support setting the system time, "
-#~| "so this conduit will be skipped for handhelds that run either of these "
-#~| "operating systems.</qt>"
-#~ msgid ""
-#~ "PalmOS Version 3.25 and 3.3 do not support setting the system time, so "
-#~ "this conduit will be skipped for handhelds that run either of these "
-#~ "operating systems."
-#~ msgstr ""
-#~ "<qt>Versi PalmOS 3.25 and 3.3 tidak menyokong seting masa sistem, jadi "
-#~ "saluran ini akan dilangkau untuk komputer telapak yang menjalankan mana-"
-#~ "mana satu dari sistem operasi tersebut</qt>"
-
-#, fuzzy
-#~| msgid "Locale Settings"
-#~ msgid "&Akonadi Settings"
-#~ msgstr "Seting Lokal"
-
-#, fuzzy
-#~| msgid "Conflicts"
-#~ msgid "&Conflicts"
-#~ msgstr "Konflik"
-
-#, fuzzy
-#~| msgid "Fields"
-#~ msgid "&Fields"
-#~ msgstr "Medan"
-
-#, fuzzy
-#~| msgid "Custom Fields"
-#~ msgid "C&ustom Fields"
-#~ msgstr "Medan Langganan"
-
-#, fuzzy
-#~| msgid "&Restore"
-#~ msgid "&Remove"
-#~ msgstr "&Simpan semula"
-
-#, fuzzy
-#~| msgid "You need to select a database to delete in the list."
-#~ msgid "Click here to add a database to the list."
-#~ msgstr ""
-#~ "Anda perlu memilih satu pangkalan data untuk dihapuskan dalam senarai."
-
-#~ msgid "&Add"
-#~ msgstr "&Tambah"
-
-#~ msgid "KPilot Options"
-#~ msgstr "Opsyen KPilot "
-
-#, fuzzy
-#~ msgid "Do &backup:"
-#~ msgstr "&Tiada sandaran:"
-
-#, fuzzy
-#~ msgid "On Every HotSync"
-#~ msgstr "Penghujung HotSync\n"
-
-#, fuzzy
-#~| msgid "Database"
-#~ msgid "Databases"
-#~ msgstr "Pangkalan data"
-
-#~ msgid ""
-#~ "<qt><p>Enter the databases types you wish to exclude from the backup "
-#~ "operation here. Use this setting if backing up some databases crashes the "
-#~ "handheld, or if you do not want a backup of some databases (like AvantGo "
-#~ "pages).</p><p>Entries with square brackets [] are <i>creator codes</i> "
-#~ "like <tt>[lnch]</tt> and can exclude a whole range of databases. Entries "
-#~ "without the brackets list database names, and may include shell-style "
-#~ "wildcards, like <tt>*_a68k</tt>.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Di sini, masukkan jenis pangkalan data yang anda ingin keluarkan "
-#~ "dari operasi sandaran. Gunakan seting ini jika menyandarkan beberapa "
-#~ "pangkalan data meruntuhkan komputer telapak, atau jika anda tidak mahukan "
-#~ "sandaran untuk beberapa pangkalan data (seperti halaman  AvantGo).</"
-#~ "p><p>Entri dengan kurungan siku [] adalah <i>kod pencipta</i> seperti "
-#~ "<tt>[lnch]</tt> dan boleh mengeluarkan seluruh julat pangkalan data. "
-#~ "Entri tanpa kurungan menyenaraikan nama pangkalan data, dan mungkin "
-#~ "memasukkan kad liar gaya shell, seperti <tt>*_a68k</tt>.</p></qt>"
-
-#~ msgid "&No backup:"
-#~ msgstr "&Tiada sandaran:"
-
-#~ msgid ""
-#~ "<qt>Click here to open the database selection dialog. This dialog allows "
-#~ "you to check the databases you want to exclude from the backup from a "
-#~ "list.</qt>"
-#~ msgstr ""
-#~ "<qt>Klik di sini untuk membuka dialog pilihan pangkalan data. Dialog ini "
-#~ "membenarkan anda menyemak pangkalan data yang anda ingin keluarkan dari "
-#~ "sandaran dari satu senarai.</qt>"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid ""
-#~ "<qt><p>Enter the databases types you wish to exclude from the restore "
-#~ "operation here (like AvantGo databases). They will be skipped even if "
-#~ "they exist in the set of backup databases on the handheld. If you still "
-#~ "want to install an ignored database to the handheld, you can always "
-#~ "manually install it to the handheld.</p><p>Entries with square brackets "
-#~ "[] are <i>creator codes</i> like <tt>[lnch]</tt> and can exclude a whole "
-#~ "range of databases. Entries without the brackets list database names, and "
-#~ "may include shell-style wildcards, like <tt>*_a68k</tt>.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Di sini, masukkan jenis pangkalan data yang anda hendak keluarkan "
-#~ "dari operasi simpan semula (seperti pangkalan data AvantGo). Mereka akan "
-#~ "dilangkau walaupun wujud dalam set sandaran pangkalan data dalam komputer "
-#~ "telapak. Jika anda masih ingin memasang pangkalan data yang diabaikan ke "
-#~ "komputer telapak, anda sentiasa boleh memasangnya secara manual ke "
-#~ "komputer telapak.</p><p>Entri dengan kurungan siku [] adalah<i>kod "
-#~ "pencipta</i> seperti <tt>[lnch]</tt> dan boleh mengeluarkan seluruh julat "
-#~ "pangkalan data. Entri tanpa kurungan menyenaraikan nama pangkalan data, "
-#~ "dan mungkin memasukkan kad liar gaya shell, seperti <tt>*_a68k</tt>.</p></"
-#~ "qt>"
-
-#~ msgid "Not &restored:"
-#~ msgstr "Tidak &disimpan semula:"
-
-#~ msgid ""
-#~ "<qt>Click here to open the database selection dialog. This dialog allows "
-#~ "you to select the databases you want to exclude from the restore "
-#~ "operation from a list.</qt>"
-#~ msgstr ""
-#~ "<qt>Klik di sini untuk membuka dialog pilihan pangkalan data. Dialog ini "
-#~ "membenarkan anda memilih pangkalan data yang anda ingin keluarkan dari "
-#~ "operasi simpan semula dari satu senarai.</qt>"
-
-#~ msgid ""
-#~ "<qt>Check this box to run the selected conduits before every backup. This "
-#~ "makes sure the backup is up to date with the last changes from your PC.</"
-#~ "qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk menjalankan saluran dipilih sebelum setiap "
-#~ "sandaran. Ini memastikan sandaran tersebut dikemas kini dengan perubahan "
-#~ "terakhir dari PC anda.</qt>"
-
-#, fuzzy
-#~ msgid "Run conduits durin&g a backup sync"
-#~ msgstr "Jalankan &saluran semasa penyegerakan sandaran"
-
-#~ msgid ""
-#~ "<qt>Enter the device the Pilot is attached to (for instance a serial or "
-#~ "USB port) here. You can also use <i>/dev/pilot</i>, and make that a "
-#~ "symlink to the correct device. You need write permission to successfully "
-#~ "synchronize with the handheld.</qt>"
-#~ msgstr ""
-#~ "<qt>Masukkan peranti yang terlampir kepada Pilot  (contohnya port bersiri "
-#~ "atau USB) di sini. Anda juga boleh menggunakan <i>/dev/pilot</i>, dan "
-#~ "membuat pautan sym ke peranti yang betul. Untuk berjaya menyegerakkan "
-#~ "dengan komputer telapak, anda perlukan keizinan tulis.</qt>"
-
-#~ msgid "Pilot &device:"
-#~ msgstr "&Peranti Pilot"
-
-#~ msgid ""
-#~ "<qt>Select the speed of the serial connection to your handheld here. This "
-#~ "has no meaning for USB devices. For an older model, choose 9600. Newer "
-#~ "models may be able to handle speeds up to the maximum listed, 115200. You "
-#~ "can experiment with the connection speed: the manual suggests starting at "
-#~ "a speed of 19200 and trying faster speeds to see if they work.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih halaju sambungan bersiri ke komputer telapak anda di sini. Ini "
-#~ "tidak memberikan sebarang makna kepada peranti USB. Untuk model yang "
-#~ "lebih lama, pilih 9600. Model yang lebih baru mungkin boleh mengendalikan "
-#~ "halaju sehingga senarai maksimum, 115200. Anda boleh bereksperimen dengan "
-#~ "halaju sambungan: manual mencadangkan supaya bermula dengan kelajuan "
-#~ "19200 dan mencuba halaju yang lebih tinggi untuk melihat sama ada ia "
-#~ "berfungsi.</qt>"
-
-#~ msgid "&Speed:"
-#~ msgstr "&Kelajuan:"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt>Workarounds enable special handling for specific devices. Most "
-#~| "devices do not need special handling. However, the Zire&tm; 31, Zire 72 "
-#~| "and Tungsten T5 <i>do</i> have special needs, so if you are connecting "
-#~| "such a device, please select the workaround for them.</qt>"
-#~ msgid ""
-#~ "<qt>Workarounds enable special handling for specific devices. Most "
-#~ "devices do not need special handling. However, the Zire 31, Zire 72 and "
-#~ "Tungsten T5 <i>do</i> have special needs, so if you are connecting such a "
-#~ "device, please select the workaround for them.</qt>"
-#~ msgstr ""
-#~ "<qt>Sekitaran kerja membolehkan pengendalian khusus untuk peranti khusus. "
-#~ "Kebanyakan peranti tidak memerlukan pengendalian khusus. Bagaimanapun,  "
-#~ "Zire&tm; 31, Zire 72 dan Tungsten T5 <i>mempunyai</i> keperluan khusus, "
-#~ "jadi jika anda bersambung ke peranti tersebut, pilih sekitaran kerja "
-#~ "untuk mereka.</qt>"
-
-#~ msgid "&Workarounds:"
-#~ msgstr "Sekitaran &Kerja:"
-
-#~ msgid ""
-#~ "<qt>PalmOS devices are available in many different languages. If your "
-#~ "device uses a different encoding than ISO-latin1 (ISO8859-1), select the "
-#~ "correct encoding here, in order to display special characters correctly.</"
-#~ "qt>"
-#~ msgstr ""
-#~ "<qt>Peranti PalmOS terdapat dalam banyak bahasa berlainan. Jika peranti "
-#~ "anda menggunakan pengekodan selain ISO-latin1 (ISO8859-1), pilih "
-#~ "pengekodan yang betul di sini, supaya aksara khusus yang betul dipaparkan."
-#~ "</qt>"
-
-#~ msgid "En&coding:"
-#~ msgstr "&Pengekodan:"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt>Enter your name here, as it appears in the Pilot's &quot;Owner&quot; "
-#~| "setting.</qt>"
-#~ msgid ""
-#~ "<qt>Enter your name here, as it appears in the Pilot's \"Owner\" setting."
-#~ "</qt>"
-#~ msgstr ""
-#~ "<qt>Masukkan nama anda di sini, seperti mana ia muncul dalam seting  "
-#~ "Pilot &quot;Owner&quot;.</qt>"
-
-#~ msgid "Pilot &user:"
-#~ msgstr "&Pengguna Pilot:"
-
-#~ msgid "9600"
-#~ msgstr "9600"
-
-#~ msgid "19200"
-#~ msgstr "19200"
-
-#~ msgid "38400"
-#~ msgstr "38400"
-
-#~ msgid "57600"
-#~ msgstr "57600"
-
-#~ msgid "115200"
-#~ msgstr "115200"
-
-#, fuzzy
-#~| msgid "None"
-#~ msgctxt "No workarounds are used."
-#~ msgid "None"
-#~ msgstr "Tiada"
-
-#~ msgid "Zire 31, 72, Tungsten T5"
-#~ msgstr "Zire 31, 72, Tungsten T5"
-
-#~ msgid "Startup Options"
-#~ msgstr "Opsyen Pemulaan"
-
-#~ msgid ""
-#~ "<qt>Check this box to start up the KPilot daemon every time you log in to "
-#~ "KDE.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk memulakan daemon KPilot setiap kali anda log "
-#~ "masuk ke dalam KDE.</qt>"
-
-#~ msgid "&Start KPilot at login"
-#~ msgstr "&Mulakan KPilot di log masuk"
-
-#~ msgid ""
-#~ "<qt>Check this box to place a Kpilot icon in the system tray, which shows "
-#~ "the daemon's status, and allows you to select the next sync type and to "
-#~ "configure KPilot.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk menempatkan ikon Kpilot di dalam dulang sistem, "
-#~ "yang memaparkan status daemon, dan membenarkan anda memilih jenis "
-#~ "penyegerakan seterusnya dan untuk konfigur KPilot.</qt>"
-
-#~ msgid "S&how KPilot in system tray"
-#~ msgstr "&Paparkan KPilot dalam dulang sistem"
-
-#~ msgid "Exit Options"
-#~ msgstr "Keluar dari Opsyen"
-
-#~ msgid ""
-#~ "<qt>Check this box to stop both KPilot and the KPilot daemon after the "
-#~ "HotSync finishes. This may be useful for systems where KPilot is started "
-#~ "by the USB daemon.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk menghentikan KPilot dan juga daemon KPilot "
-#~ "selepas HotSync tamat. Ini berguna untuk sistem yang KPilot dimulakan "
-#~ "oleh daemon USB.</qt>"
-
-#~ msgid "Quit &after HotSync"
-#~ msgstr "Keluar &selepas HotSunc"
-
-#~ msgid ""
-#~ "<qt>Check this box to stop the KPilot daemon when you quit KPilot (only "
-#~ "if KPilot started the daemon itself).</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk menghentikan daemon KPilot apabila anda keluar "
-#~ "dari KPilot (hanya jika KPilot memulakan sendiri daemon).</qt>"
-
-#~ msgid "S&top KPilot's system tray application on exit"
-#~ msgstr "Hen&tikan aplikasi dulang sistem semasa keluar"
-
-#~ msgid "&Default sync:"
-#~ msgstr "Penyegerakan &piawai"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Select in this list the synchronization type that KPilot will use as "
-#~ "default. Possible values are:<br>\"HotSync\", to run all selected "
-#~ "conduits, and sync the databases with a modified flag set, updating the "
-#~ "modified records only;<br>\"FullSync\" to run all selected conduits, and "
-#~ "sync all databases, reading all records, and performing a full backup;<br>"
-#~ "\"Copy PC to handheld\" to run all conduits and sync all databases, but "
-#~ "instead of merging the information from both sources, copy the PC data to "
-#~ "the handheld;<br>\"Copy handheld to PC\" to run all conduits and sync all "
-#~ "databases, but instead of merging the information from both sources, copy "
-#~ "the handheld data to the PC.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih dalam senarai ini jenis penyegerakan yang akan digunakan "
-#~ "sebagai piawai oleh KPilot. Nilai yang mungkin adalah:<br>\"HotSync\", "
-#~ "hanya untuk menjalankan semua saluran dipilih, dan menyegerakkan "
-#~ "pangkalan data dengan set bendera yang diubah suai, mengemas kini rekod "
-#~ "yang diubah suai sahaja;<br>\"FastSync\", untuk menyegerakkan pangkalan "
-#~ "data yang ada saluran sahaja;<br>\"FullSync\" untuk menjalankan semua "
-#~ "saluran yang dipilih, dan menyegerakkan semua pangkalan data, membaca "
-#~ "semua rekod, dan melaksanakan sandaran penuh;<br>\"Salin PC ke komputer "
-#~ "telapak\" untuk menjalankan semua saluran dan menyegerakkan semua "
-#~ "pangkalan data, tetapi menyalin data PC ke komputer telapak, bukannya "
-#~ "mencantumkan maklumat dari kedua-dua sumber;<br>\"Salin komputer telapak "
-#~ "ke PC\" untuk menjalankan semua saluran dan menyegerakkan semua pangkalan "
-#~ "data, tetapi menyalin komputer telapak ke PC, bukannya mencantumkan "
-#~ "maklumat dari kedua-dua sumber.</qt>"
-
-#, fuzzy
-#~ msgid "HotSync (sync all changes)"
-#~ msgstr "HotSync (menyegerakkan semua perubahan, kemas kini sandaran)"
-
-#, fuzzy
-#~ msgid "FullSync (sync also unchanged records)"
-#~ msgstr "FullSync (rekod tidak berubah juga disegerakkan, sandaran penuh)"
-
-#~ msgid ""
-#~ "<qt>Check this box to prevent KPilot from syncing your handheld while the "
-#~ "screensaver is active: this is a security measure to prevent others from "
-#~ "syncing <i>their</i> handhelds with your data.  This option must be "
-#~ "disabled when you use a different desktop, since KPilot is not aware of "
-#~ "screensavers other than KDE's.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk menghalang KPilot daripada menyegerak dengan "
-#~ "komputer telapak semasa screensaver aktif: ini adalah ukuran keselamatan "
-#~ "untuk mengelak pihak lain daripada menyegerakkan komputer telapak "
-#~ "<i>mereka</i> dengan data anda.  Opsyen ini mesti dinyahaktifkan apabila "
-#~ "anda menggunakan desktop lain, kerana KPilot tidak menyedari adanya "
-#~ "screensaver selain screensaver KDE.</qt>"
-
-#~ msgid "Do not sync when screensaver is active"
-#~ msgstr "Jangan segerakkan apabila screensaver aktif"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Check this box to perform a full sync when your last sync was "
-#~ "performed with another PC or system, to guarantee the completeness of "
-#~ "your data.</qt>"
-#~ msgstr ""
-#~ "<qt>Semak kotak ini untuk melaksanakan sandaran penuh apabila "
-#~ "penyegerakan terakhir anda dilaksanakan dengan PC atau sistem lain, untuk "
-#~ "menjamin lengkapnya data sandaran anda.</qt>"
-
-#, fuzzy
-#~ msgid "Do full sync when chan&ging PCs"
-#~ msgstr "&Buat sandaran penuh apabila mengubah PC"
-
-#~ msgid ""
-#~ "<qt>Select in this list how conflicting entries (entries which were "
-#~ "edited both on your handheld and on the PC) are resolved. Possibly values "
-#~ "are  \"Ask User\" to let you decide case by case, \"Do Nothing\" to allow "
-#~ "the entries to be different, \"PC overrides\", \"Handheld overrides\", "
-#~ "\"Use values from last sync\" and \"Use both entries\" to create a new "
-#~ "entry on both the PC and handheld. Note that the conflict resolution "
-#~ "option selected here can be overridden by conduits that have their own "
-#~ "conflict resolution configuration.</qt>"
-#~ msgstr ""
-#~ "<qt>Pilih dari senarai ini bagaimana entri berkonflik diselesaikan (entri "
-#~ "yang diedit dalam komputer telapak dan dalam PC). Nilai yang mungkin "
-#~ "adalah  \"Tanya Pengguna\" untuk membolehkan anda membuat keputusan kes "
-#~ "demi kes, \"Jangan Buat Apa-apa\" untuk membenarkan entri berlainan, "
-#~ "\"Tulis tindih PC\", \"Tulis tindih komputer telapak\", \"Gunakan nilai "
-#~ "dari penyegerakan terakhir\" dan \"gunakan kedua-dua entri\" untuk "
-#~ "mencipta entri dalam PC dan dalam komputer telapak. Ambil perhatian "
-#~ "bahawa opsyen penyelesaian konflik yang dipilih di sini boleh ditulis "
-#~ "tindih oleh saluran yang mempunyai konfigurasi penyelesaian konflik "
-#~ "sendiri.</qt>"
-
-#~ msgid "Handheld Overrides"
-#~ msgstr "Tulis Tindih Komputer Telapak"
-
-#~ msgid "PC Overrides"
-#~ msgstr "Tulis Tindih PC"
-
-#, fuzzy
-#~| msgid "Values From Last Sync (if possible)"
-#~ msgid "Values From Last Sync (Not Supported)"
-#~ msgstr "Nilai Dari Penyegerakan Terakhir (jika boleh)"
-
-#, fuzzy
-#~| msgid "Use Both Entries"
-#~ msgid "Use Both Entries (Not Supported)"
-#~ msgstr "Gunakan Kedua-dua Entri"
-
-#, fuzzy
-#~| msgid "Add File..."
-#~ msgid "&Add File..."
-#~ msgstr "Tambah fail..."
-
-#, fuzzy
-#~| msgid "Clear List"
-#~ msgid "&Clear List"
-#~ msgstr "Kosongkan Senarai"
-
-#, fuzzy
-#~| msgid "HotSync is disabled while the screen is locked."
-#~ msgid "Prevent HotSync when screen locked"
-#~ msgstr "HotSync dinyahaktifkan semasa skrin dipasak."
-
-#, fuzzy
-#~| msgid "Locale Settings"
-#~ msgid "&Settings"
-#~ msgstr "Seting Lokal"
 
 #, fuzzy
 #~| msgid "Set debugging level"
