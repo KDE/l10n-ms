@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmymoney2\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-11-30 02:18+0100\n"
+"POT-Creation-Date: 2019-02-05 02:15+0100\n"
 "PO-Revision-Date: 2009-09-18 17:20+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -913,16 +913,29 @@ msgid ""
 msgstr ""
 
 #: kmymoney/converter/mymoneystatementreader.cpp:749
-#, kde-format
-msgid ""
-"This imported statement contains investment transactions with no share "
-"amount.  These transactions will be ignored."
-msgstr ""
-
-#: kmymoney/converter/mymoneystatementreader.cpp:749
-#, kde-format
-msgid "No share amount provided"
-msgstr ""
+#: kmymoney/dialogs/investactivities.cpp:209
+#: kmymoney/dialogs/investactivities.cpp:309
+#: kmymoney/dialogs/investtransactioneditor.cpp:325
+#: kmymoney/dialogs/investtransactioneditor.cpp:1144
+#: kmymoney/dialogs/knewaccountdlg.cpp:204
+#: kmymoney/dialogs/knewaccountdlg.cpp:205
+#: kmymoney/mymoney/mymoneyfile.cpp:2177 kmymoney/mymoney/mymoneyfile.cpp:2180
+#: kmymoney/mymoney/mymoneyfile.cpp:2275 kmymoney/mymoney/mymoneyfile.cpp:2276
+#: kmymoney/mymoney/mymoneyfile.cpp:2297 kmymoney/mymoney/mymoneyfile.cpp:2300
+#: kmymoney/reports/listtable.cpp:228 kmymoney/widgets/kmymoneymvccombo.cpp:643
+#: kmymoney/widgets/kmymoneymvccombo.cpp:644
+#: kmymoney/widgets/kmymoneymvccombo.cpp:648
+#: kmymoney/widgets/kmymoneymvccombo.cpp:649
+#: kmymoney/widgets/kmymoneymvccombo.cpp:650
+#: kmymoney/widgets/transaction.cpp:1462 kmymoney/widgets/transaction.cpp:1465
+#: kmymoney/widgets/transaction.cpp:1468 kmymoney/widgets/transaction.cpp:1471
+#: kmymoney/widgets/transaction.cpp:1483 kmymoney/widgets/transaction.cpp:1543
+#: kmymoney/widgets/transaction.cpp:1578
+#: kmymoney/wizards/newinvestmentwizard/kinvestmentdetailswizardpage.cpp:43
+#: kmymoney/wizards/newinvestmentwizard/kinvestmentdetailswizardpage.cpp:44
+#, fuzzy, kde-format
+msgid "Finance"
+msgstr "Batal"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:873
 #, kde-format
@@ -1232,13 +1245,6 @@ msgstr ""
 msgid "Price"
 msgstr ""
 
-#: kmymoney/dialogs/investactivities.cpp:209
-#: kmymoney/dialogs/investtransactioneditor.cpp:325
-#: kmymoney/widgets/transaction.cpp:1578
-#, kde-format
-msgid "Price/share"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1_2_2)
 #: kmymoney/dialogs/investactivities.cpp:211
 #: kmymoney/dialogs/investtransactioneditor.cpp:1139
@@ -1326,15 +1332,12 @@ msgstr "Akaun"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkShares)
 #: kmymoney/dialogs/investactivities.cpp:225
-#: kmymoney/dialogs/investactivities.cpp:309
 #: kmymoney/dialogs/investactivities.cpp:457
 #: kmymoney/dialogs/investactivities.cpp:540
 #: kmymoney/dialogs/investactivities.cpp:583
 #: kmymoney/dialogs/investtransactioneditor.cpp:269
 #: kmymoney/dialogs/investtransactioneditor.cpp:319
-#: kmymoney/reports/listtable.cpp:228
 #: kmymoney/widgets/kmymoneyreportconfigtab3decl.ui:180
-#: kmymoney/widgets/transaction.cpp:1543
 #, kde-format
 msgid "Shares"
 msgstr ""
@@ -1466,11 +1469,6 @@ msgstr "Status"
 #| msgid "Account"
 msgid "Fee Amount"
 msgstr "Akaun"
-
-#: kmymoney/dialogs/investtransactioneditor.cpp:1144
-#, kde-format
-msgid "Price/Share"
-msgstr ""
 
 #: kmymoney/dialogs/kaccountselectdlg.cpp:63
 #: kmymoney/widgets/kmymoneybriefschedule.cpp:60
@@ -4044,18 +4042,6 @@ msgstr ""
 msgctxt "default price mode"
 msgid "(default)"
 msgstr "<default>"
-
-#: kmymoney/dialogs/knewaccountdlg.cpp:204
-#: kmymoney/wizards/newinvestmentwizard/kinvestmentdetailswizardpage.cpp:43
-#, kde-format
-msgid "Price per share"
-msgstr ""
-
-#: kmymoney/dialogs/knewaccountdlg.cpp:205
-#: kmymoney/wizards/newinvestmentwizard/kinvestmentdetailswizardpage.cpp:44
-#, kde-format
-msgid "Total for all shares"
-msgstr ""
 
 #: kmymoney/dialogs/knewaccountdlg.cpp:266
 #, kde-format
@@ -10036,16 +10022,6 @@ msgstr ""
 msgid "    Account opening date updated."
 msgstr ""
 
-#: kmymoney/mymoney/mymoneyfile.cpp:2177
-#, kde-format
-msgid "  * shares set to value in split of transaction '%1'."
-msgstr ""
-
-#: kmymoney/mymoney/mymoneyfile.cpp:2180
-#, kde-format
-msgid "  * value set to shares in split of transaction '%1'."
-msgstr ""
-
 #: kmymoney/mymoney/mymoneyfile.cpp:2186
 #, kde-format
 msgid ""
@@ -10090,30 +10066,9 @@ msgstr ""
 msgid "  * Payee id updated in split of schedule '%1'."
 msgstr ""
 
-#: kmymoney/mymoney/mymoneyfile.cpp:2275
-#, kde-format
-msgid ""
-"  * Split in scheduled transaction '%1' contained value != 0 and shares == 0."
-msgstr ""
-
-#: kmymoney/mymoney/mymoneyfile.cpp:2276
-#, kde-format
-msgid "    Shares set to value."
-msgstr ""
-
 #: kmymoney/mymoney/mymoneyfile.cpp:2284
 #, kde-format
 msgid "  * Removed bankid from split in scheduled transaction '%1'."
-msgstr ""
-
-#: kmymoney/mymoney/mymoneyfile.cpp:2297
-#, kde-format
-msgid "  * shares set to value in split in schedule '%1'."
-msgstr ""
-
-#: kmymoney/mymoney/mymoneyfile.cpp:2300
-#, kde-format
-msgid "  * value set to shares in split in schedule '%1'."
 msgstr ""
 
 #: kmymoney/mymoney/mymoneyfile.cpp:2306
@@ -12179,7 +12134,7 @@ msgstr "Pilih tahun"
 msgid "Select new investment type"
 msgstr "Pilih tahun"
 
-#. i18n: don't translate part after '-'
+#. i18n: Finance, don't translate part after '-'
 #. i18n: ectx: property (text), item, widget (KComboBox, kcombobox_Actions)
 #: kmymoney/plugins/csvimport/redefinedlgdecl.ui:119
 #, fuzzy, kde-format
@@ -12187,7 +12142,7 @@ msgctxt "description of investment activity"
 msgid "Buy Shares"
 msgstr "Alamat"
 
-#. i18n: don't translate part after '-'
+#. i18n: Finance, don't translate part after '-'
 #. i18n: ectx: property (text), item, widget (KComboBox, kcombobox_Actions)
 #: kmymoney/plugins/csvimport/redefinedlgdecl.ui:124
 #, fuzzy, kde-format
@@ -12211,7 +12166,7 @@ msgctxt "description of investment activity"
 msgid "Reinvest Dividend"
 msgstr "Kadar faedah"
 
-#. i18n: don't translate part after '-'
+#. i18n: Finance, don't translate part after '-'
 #. i18n: ectx: property (text), item, widget (KComboBox, kcombobox_Actions)
 #: kmymoney/plugins/csvimport/redefinedlgdecl.ui:139
 #, fuzzy, kde-format
@@ -12219,7 +12174,7 @@ msgctxt "description of investment activity"
 msgid "Add Shares"
 msgstr "Alamat"
 
-#. i18n: don't translate part after '-'
+#. i18n: Finance, don't translate part after '-'
 #. i18n: ectx: property (text), item, widget (KComboBox, kcombobox_Actions)
 #: kmymoney/plugins/csvimport/redefinedlgdecl.ui:144
 #, fuzzy, kde-format
@@ -18435,18 +18390,6 @@ msgstr ""
 msgid "From"
 msgstr "Daripada"
 
-#: kmymoney/widgets/kmymoneymvccombo.cpp:643
-#: kmymoney/widgets/transaction.cpp:1468
-#, kde-format
-msgid "Buy shares"
-msgstr ""
-
-#: kmymoney/widgets/kmymoneymvccombo.cpp:644
-#: kmymoney/widgets/transaction.cpp:1471
-#, kde-format
-msgid "Sell shares"
-msgstr ""
-
 #: kmymoney/widgets/kmymoneymvccombo.cpp:645
 #: kmymoney/widgets/transaction.cpp:823 kmymoney/widgets/transaction.cpp:1474
 #, kde-format
@@ -18462,24 +18405,6 @@ msgstr ""
 #: kmymoney/widgets/transaction.cpp:825 kmymoney/widgets/transaction.cpp:1480
 #, kde-format
 msgid "Yield"
-msgstr ""
-
-#: kmymoney/widgets/kmymoneymvccombo.cpp:648
-#: kmymoney/widgets/transaction.cpp:1462
-#, kde-format
-msgid "Add shares"
-msgstr ""
-
-#: kmymoney/widgets/kmymoneymvccombo.cpp:649
-#: kmymoney/widgets/transaction.cpp:1465
-#, kde-format
-msgid "Remove shares"
-msgstr ""
-
-#: kmymoney/widgets/kmymoneymvccombo.cpp:650
-#: kmymoney/widgets/transaction.cpp:1483
-#, kde-format
-msgid "Split shares"
 msgstr ""
 
 #: kmymoney/widgets/kmymoneymvccombo.cpp:651
