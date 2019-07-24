@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-20 03:13+0200\n"
+"POT-Creation-Date: 2019-07-24 03:14+0200\n"
 "PO-Revision-Date: 2008-11-24 22:51+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -352,15 +352,16 @@ msgid "Select One or More Checksum Files"
 msgstr ""
 
 #: src/commands/clearcrlcachecommand.cpp:73
-#: src/commands/importcrlcommand.cpp:194
 #, fuzzy, kde-format
 #| msgid "Clear CRL Cache..."
+msgctxt "@title:window"
 msgid "Clear CRL Cache Error"
 msgstr "Kosongkan Cache CRL..."
 
 #: src/commands/clearcrlcachecommand.cpp:78
 #, fuzzy, kde-format
 #| msgid "Clear CRL Cache..."
+msgctxt "@title:window"
 msgid "Clear CRL Cache Finished"
 msgstr "Kosongkan Cache CRL..."
 
@@ -513,6 +514,7 @@ msgstr ""
 #: src/commands/dumpcertificatecommand.cpp:293
 #, fuzzy, kde-format
 #| msgid "Certificate Usage"
+msgctxt "@title:window"
 msgid "Certificate Dump"
 msgstr "Penggunaan Sijil"
 
@@ -573,6 +575,7 @@ msgstr ""
 #: src/commands/dumpcrlcachecommand.cpp:312
 #, fuzzy, kde-format
 #| msgid "CRL cache dump:"
+msgctxt "@title:window"
 msgid "CRL Cache Dump"
 msgstr "Pengabaian cache CRL:"
 
@@ -761,10 +764,10 @@ msgstr ""
 
 #: src/commands/exportpaperkeycommand.cpp:114
 #, fuzzy, kde-format
-#| msgid "Delete Certificates"
-msgctxt "@title"
-msgid "Print secret key"
-msgstr "Hapuskan Sijil"
+#| msgid "Export Secret Key..."
+msgctxt "@title:window"
+msgid "Print Secret Key"
+msgstr "Eksport Kekunci Rahsia..."
 
 #: src/commands/exportpaperkeycommand.cpp:131
 #, fuzzy, kde-format
@@ -934,6 +937,7 @@ msgstr ""
 
 #: src/commands/gnupgprocesscommand.cpp:152
 #, kde-format
+msgctxt "@title:window"
 msgid "Subprocess Diagnostics"
 msgstr ""
 
@@ -1271,6 +1275,12 @@ msgstr "Pilih Fail CRL"
 msgid "Unable to start process dirmngr. Please check your installation."
 msgstr "Tidak dapat memulakan proses %1. Semak pemasangan anda."
 
+#: src/commands/importcrlcommand.cpp:194
+#, fuzzy, kde-format
+#| msgid "Clear CRL Cache..."
+msgid "Clear CRL Cache Error"
+msgstr "Kosongkan Cache CRL..."
+
 #: src/commands/importcrlcommand.cpp:212
 #, fuzzy, kde-format
 #| msgid ""
@@ -1487,11 +1497,13 @@ msgstr "Tidak dapat menjana sijil: %1"
 
 #: src/commands/learncardkeyscommand.cpp:80
 #, kde-format
+msgctxt "@title:window"
 msgid "Error Learning SmartCard"
 msgstr ""
 
 #: src/commands/learncardkeyscommand.cpp:85
 #, kde-format
+msgctxt "@title:window"
 msgid "Finished Learning SmartCard"
 msgstr ""
 
@@ -1738,10 +1750,11 @@ msgid "X.509 certificates refreshed successfully."
 msgstr "Cache CRL berjaya dikosongkan."
 
 #: src/commands/setinitialpincommand.cpp:77
-#, kde-format
-msgctxt "@title"
+#, fuzzy, kde-format
+#| msgid "Set F&ont..."
+msgctxt "@title:window"
 msgid "Set Initial Pin"
-msgstr ""
+msgstr "Setkan F&on..."
 
 #: src/commands/signclipboardcommand.cpp:170
 #: src/commands/signclipboardcommand.cpp:184
@@ -1877,9 +1890,11 @@ msgid "Default Appearance"
 msgstr "Rupa Piawai"
 
 #: src/conf/configuredialog.cpp:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Configure &GpgME Backend"
+msgctxt "@title:window"
 msgid "Configure"
-msgstr ""
+msgstr "Konfigurkan Hujung Belakang &GpgME"
 
 #: src/conf/cryptooperationsconfigwidget.cpp:123
 #: src/conf/cryptooperationsconfigwidget.cpp:216
@@ -2537,9 +2552,11 @@ msgid "User canceled"
 msgstr "Dibatalkan."
 
 #: src/crypto/decryptverifyemailcontroller.cpp:258
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Deleting keys..."
+msgctxt "@title:window"
 msgid "Decrypt/Verify E-Mail"
-msgstr ""
+msgstr "Menghapuskan kekunci..."
 
 #: src/crypto/decryptverifyemailcontroller.cpp:281
 #, kde-format
@@ -2588,9 +2605,11 @@ msgstr ""
 
 #: src/crypto/decryptverifyfilescontroller.cpp:244
 #: src/crypto/gui/decryptverifyfilesdialog.cpp:107
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Deleting keys..."
+msgctxt "@title:window"
 msgid "Decrypt/Verify Files"
-msgstr ""
+msgstr "Menghapuskan kekunci..."
 
 #: src/crypto/decryptverifytask.cpp:208
 #, kde-format
@@ -3104,6 +3123,7 @@ msgstr ""
 #: src/crypto/gui/decryptverifyfilesdialog.cpp:114
 #, fuzzy, kde-format
 #| msgid "Deleting keys..."
+msgctxt "@title:window"
 msgid "Verify Files"
 msgstr "Menghapuskan kekunci..."
 
@@ -3206,9 +3226,11 @@ msgid "&Input file is an archive; unpack with:"
 msgstr ""
 
 #: src/crypto/gui/encryptemailwizard.cpp:53
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Certificate Deletion Failed"
+msgctxt "@title:window"
 msgid "Encrypt Mail Message"
-msgstr ""
+msgstr "Gagal Menghapuskan Sijil"
 
 #: src/crypto/gui/newresultpage.cpp:150 src/crypto/gui/resultpage.cpp:144
 #, kde-format
@@ -3337,9 +3359,11 @@ msgid "You need to select %1 and %2 signing certificates to proceed."
 msgstr ""
 
 #: src/crypto/gui/signemailwizard.cpp:128
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Canceled."
+msgctxt "@title:window"
 msgid "Sign Mail Message"
-msgstr ""
+msgstr "Dibatalkan."
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:92
 #, fuzzy, kde-format
@@ -3437,7 +3461,8 @@ msgstr ""
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:417
 #, fuzzy, kde-format
 #| msgid "Select Certificate File"
-msgid "Select Certificates For Message"
+msgctxt "@title:window"
+msgid "Select Certificates for Message"
 msgstr "Pilih Fail Sijil"
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:489
@@ -3453,7 +3478,8 @@ msgstr ""
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:542
 #, fuzzy, kde-format
 #| msgid "Select Certificate File"
-msgid "Select Certificates For Message \"%1\""
+msgctxt "@title:window"
+msgid "Select Certificates for Message \"%1\""
 msgstr "Pilih Fail Sijil"
 
 #: src/crypto/gui/signencryptfileswizard.cpp:87
@@ -3696,6 +3722,7 @@ msgstr ""
 #: src/crypto/gui/signingcertificateselectiondialog.cpp:52
 #, fuzzy, kde-format
 #| msgid "Deleting CA Certificates"
+msgctxt "@title:window"
 msgid "Select Signing Certificates"
 msgstr "Menghapuskan sijil PBP"
 
@@ -3957,6 +3984,7 @@ msgstr "E-mel"
 
 #: src/dialogs/addemaildialog.cpp:107
 #, kde-format
+msgctxt "@title:window"
 msgid "Add New EMail"
 msgstr ""
 
@@ -4167,9 +4195,15 @@ msgctxt "<name> of <company>"
 msgid "%1 of %2"
 msgstr ""
 
+#: src/dialogs/certificatedetailswidget.cpp:583
+#, fuzzy, kde-format
+#| msgid "Certificate Details..."
+msgctxt "@title:window"
+msgid "Certificate Details"
+msgstr "Perincian  Sijil..."
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, CertificateDetailsWidget)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: src/dialogs/certificatedetailswidget.cpp:583
 #: src/dialogs/certificatedetailswidget.ui:14
 #: src/dialogs/certificatedetailswidget.ui:76
 #, fuzzy, kde-format
@@ -4409,6 +4443,7 @@ msgstr "Hapuskan Sijil"
 #: src/dialogs/certificateselectiondialog.cpp:194
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
+msgctxt "@title:window"
 msgid "Certificate Selection"
 msgstr "Gagal Menghapuskan Sijil"
 
@@ -4540,7 +4575,7 @@ msgstr "Cache CRL berjaya dikosongkan."
 #: src/dialogs/certifycertificatedialog.cpp:400
 #, fuzzy, kde-format
 #| msgid "Deleting CA Certificates"
-msgctxt "arg is name, email of certificate holder"
+msgctxt "@title:window arg is name, email of certificate holder"
 msgid "Certify Certificate: %1"
 msgstr "Menghapuskan sijil PBP"
 
@@ -4609,9 +4644,11 @@ msgid "Secret Key Deletion"
 msgstr "Pengeksportan Kekunci Rahsia"
 
 #: src/dialogs/expirydialog.cpp:156
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unchanged:"
+msgctxt "@title:window"
 msgid "Change Expiry"
-msgstr ""
+msgstr "Tidak diubah:"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, Kleo::Dialogs::ExpiryDialog)
 #: src/dialogs/expirydialog.ui:14
@@ -4696,10 +4733,11 @@ msgctxt "%1 is error message"
 msgid "Failed to export: '%1'"
 msgstr "Tidak dapat menjana sijil: %1"
 
-#: src/dialogs/exportdialog.cpp:172 src/view/keylistcontroller.cpp:377
+#: src/dialogs/exportdialog.cpp:172
 #, fuzzy, kde-format
 #| msgid "For &encrypting only"
-msgid "Export..."
+msgctxt "@title:window"
+msgid "Export"
 msgstr "Untuk &penyulitan sahaja"
 
 #: src/dialogs/gencardkeydialog.cpp:77
@@ -4799,7 +4837,7 @@ msgstr "Menghapuskan sijil PBP"
 
 #: src/dialogs/ownertrustdialog.cpp:126
 #, kde-format
-msgctxt "@title"
+msgctxt "@title:window"
 msgid "Change Trust Level of %1"
 msgstr ""
 
@@ -5152,7 +5190,8 @@ msgstr ""
 #: src/dialogs/subkeyswidget.cpp:173
 #, fuzzy, kde-format
 #| msgid "New subkeys:"
-msgid "Subkeys details"
+msgctxt "@title:window"
+msgid "Subkeys Details"
 msgstr "Subkekunci baru:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -5227,6 +5266,7 @@ msgstr "Sijil pengeluar tidak ditemui ( %1)"
 #: src/dialogs/trustchainwidget.cpp:98
 #, fuzzy, kde-format
 #| msgid "&Chain"
+msgctxt "@title:window"
 msgid "Trust Chain"
 msgstr "&Rantaian"
 
@@ -5263,7 +5303,8 @@ msgstr ""
 
 #: src/dialogs/updatenotification.cpp:214
 #, kde-format
-msgid "Update available!"
+msgctxt "@title:window"
+msgid "Update Available"
 msgstr ""
 
 #: src/dialogs/updatenotification.cpp:219
@@ -5279,6 +5320,7 @@ msgstr ""
 #: src/dialogs/weboftrustdialog.cpp:41
 #, fuzzy, kde-format
 #| msgid "&Certificates"
+msgctxt "@title:window"
 msgid "Certifications"
 msgstr "&Sijil"
 
@@ -6299,7 +6341,7 @@ msgstr "Permohonan Sijil Anda Sedia Untuk Dihantar"
 #: src/newcertificatewizard/newcertificatewizard.cpp:1211
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
-msgctxt "@title"
+msgctxt "@title:window"
 msgid "Key Pair Creation Wizard"
 msgstr "Gagal Menghapuskan Sijil"
 
@@ -7641,6 +7683,12 @@ msgid "New Key Pair..."
 msgstr ""
 
 #: src/view/keylistcontroller.cpp:377
+#, fuzzy, kde-format
+#| msgid "For &encrypting only"
+msgid "Export..."
+msgstr "Untuk &penyulitan sahaja"
+
+#: src/view/keylistcontroller.cpp:377
 #, kde-format
 msgid "Export the selected certificate (public key) to a file"
 msgstr ""
@@ -8089,9 +8137,11 @@ msgid "not set"
 msgstr "Tidak diimport:"
 
 #: src/view/pgpcardwidget.cpp:278
-#, kde-format
-msgid "Generating keys"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Stop Operation"
+msgctxt "@title:window"
+msgid "Generating Keys"
+msgstr "Hentikan Operasi"
 
 #: src/view/pgpcardwidget.cpp:279
 #, kde-format
@@ -8426,6 +8476,12 @@ msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
 
 #, fuzzy
+#~| msgid "Delete Certificates"
+#~ msgctxt "@title"
+#~ msgid "Print secret key"
+#~ msgstr "Hapuskan Sijil"
+
+#, fuzzy
 #~| msgid "Failed."
 #~ msgctxt "self-check did not pass"
 #~ msgid "Failed"
@@ -8540,11 +8596,6 @@ msgstr ""
 
 #~ msgid "Import Certificates..."
 #~ msgstr "Import Sijil..."
-
-#, fuzzy
-#~| msgid "Deleting keys..."
-#~ msgid "Decrypt/Verify Files..."
-#~ msgstr "Menghapuskan kekunci..."
 
 #, fuzzy
 #~| msgid "Save Certificate"
