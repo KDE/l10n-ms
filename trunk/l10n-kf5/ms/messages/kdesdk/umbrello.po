@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-11-21 03:09+0100\n"
+"POT-Creation-Date: 2019-11-25 03:12+0100\n"
 "PO-Revision-Date: 2007-02-25 15:47+0730\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -1537,8 +1537,8 @@ msgstr "Name=KDevAdaProject"
 #: dialogs/activitydialog.cpp:42 dialogs/activitydialog.cpp:146
 #: dialogs/classpropertiesdialog.cpp:124 dialogs/objectnodedialog.cpp:43
 #: dialogs/pages/associationgeneralpage.cpp:80
-#: dialogs/parameterpropertiesdialog.cpp:66 dialogs/statedialog.cpp:48
-#: dialogs/statedialog.cpp:133 dialogs/umlviewdialog.cpp:41
+#: dialogs/parameterpropertiesdialog.cpp:66 dialogs/statedialog.cpp:49
+#: dialogs/statedialog.cpp:128 dialogs/umlviewdialog.cpp:41
 #: menus/listpopupmenu.cpp:241 refactoring/refactoringassistant.cpp:462
 #, fuzzy, kde-format
 msgid "Properties"
@@ -1580,7 +1580,7 @@ msgstr "Name=KDevelop: KDE/C++"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: dialogs/activitydialog.cpp:143 dialogs/objectnodedialog.cpp:135
-#: dialogs/statedialog.cpp:130 dialogs/umlattributedialog.cpp:68
+#: dialogs/statedialog.cpp:125 dialogs/umlattributedialog.cpp:68
 #: dialogs/umlentityattributedialog.cpp:67 dialogs/umlenumliteraldialog.cpp:54
 #: dialogs/umlinstanceattributedialog.ui:17 dialogs/umloperationdialog.cpp:88
 #: dialogs/umltemplatedialog.cpp:61
@@ -2270,7 +2270,7 @@ msgstr ""
 msgid "&Apply to all remaining files"
 msgstr ""
 
-#: dialogs/pages/activitypage.cpp:63 dialogs/statedialog.cpp:227
+#: dialogs/pages/activitypage.cpp:63 dialogs/statedialog.cpp:205
 #, fuzzy, kde-format
 msgid "Activities"
 msgstr "Jenis MIME"
@@ -3293,84 +3293,84 @@ msgstr "Tajuk laman baru"
 msgid "Search"
 msgstr ""
 
-#: dialogs/statedialog.cpp:130
+#: dialogs/statedialog.cpp:125
 #, fuzzy, kde-format
 #| msgid "General"
 msgctxt "general page"
 msgid "General"
 msgstr "Umum"
 
-#: dialogs/statedialog.cpp:143
+#: dialogs/statedialog.cpp:138
 #, fuzzy, kde-format
 msgctxt "initial state in statechart"
 msgid "Initial state"
 msgstr "Teks baru"
 
-#: dialogs/statedialog.cpp:146
+#: dialogs/statedialog.cpp:141
 #, fuzzy, kde-format
 msgctxt "state in statechart"
 msgid "State"
 msgstr "Jenis MIME"
 
-#: dialogs/statedialog.cpp:149
+#: dialogs/statedialog.cpp:144
 #, fuzzy, kde-format
 msgctxt "end state in statechart"
 msgid "End state"
 msgstr "Teks baru"
 
-#: dialogs/statedialog.cpp:152
+#: dialogs/statedialog.cpp:147
 #, kde-format
 msgctxt "fork state in statechart"
 msgid "Fork"
 msgstr ""
 
-#: dialogs/statedialog.cpp:155
+#: dialogs/statedialog.cpp:150
 #, kde-format
 msgctxt "join state in statechart"
 msgid "Join"
 msgstr ""
 
-#: dialogs/statedialog.cpp:158
+#: dialogs/statedialog.cpp:153
 #, fuzzy, kde-format
 msgctxt "junction state in statechart"
 msgid "Junction"
 msgstr "Tiada padanan"
 
-#: dialogs/statedialog.cpp:161
+#: dialogs/statedialog.cpp:156
 #, kde-format
 msgctxt "deep history state in statechart"
 msgid "DeepHistory"
 msgstr ""
 
-#: dialogs/statedialog.cpp:164
+#: dialogs/statedialog.cpp:159
 #, kde-format
 msgctxt "shallow history state in statechart"
 msgid "ShallowHistory"
 msgstr ""
 
-#: dialogs/statedialog.cpp:167
+#: dialogs/statedialog.cpp:162
 #, kde-format
 msgctxt "choice state in statechart"
 msgid "Choice"
 msgstr ""
 
-#: dialogs/statedialog.cpp:170
+#: dialogs/statedialog.cpp:165
 #, fuzzy, kde-format
 msgctxt "combined state in statechart"
 msgid "Combined"
 msgstr "Name=KDevelop: KDE/C++"
 
-#: dialogs/statedialog.cpp:178
+#: dialogs/statedialog.cpp:173
 #, fuzzy, kde-format
 msgid "State type:"
 msgstr "Jenis MIME"
 
-#: dialogs/statedialog.cpp:183
+#: dialogs/statedialog.cpp:178
 #, fuzzy, kde-format
 msgid "State name:"
 msgstr "Name=KDevAdaProject"
 
-#: dialogs/statedialog.cpp:193
+#: dialogs/statedialog.cpp:188
 #, fuzzy, kde-format
 msgid "Linked diagram:"
 msgstr "Laras Semua..."
@@ -3870,6 +3870,12 @@ msgstr ""
 #, kde-format
 msgid "DPI"
 msgstr ""
+
+#: dialogs/widgets/selectdiagramwidget.cpp:65
+#, fuzzy, kde-format
+#| msgid "New"
+msgid "New"
+msgstr "Baru"
 
 #. i18n: ectx: Menu (file)
 #: dialogs/widgets/umlartifacttypewidget.cpp:29 umbrelloui.rc.cmake:4
@@ -5922,13 +5928,13 @@ msgstr "Name=Ralat proses"
 msgid "Enter Activity Name"
 msgstr "Name=KDevelop: KDE/C++"
 
-#: toolbarstateother.cpp:286 umlwidgets/statewidget.cpp:592
+#: toolbarstateother.cpp:286 umlwidgets/statewidget.cpp:588
 #: umlwidgets/widget_utils.cpp:930
 #, kde-format
 msgid "Enter the name of the new activity:"
 msgstr ""
 
-#: toolbarstateother.cpp:286 umlwidgets/statewidget.cpp:590
+#: toolbarstateother.cpp:286 umlwidgets/statewidget.cpp:586
 #: umlwidgets/widget_utils.cpp:837
 #, fuzzy, kde-format
 msgid "new activity"
@@ -8363,7 +8369,7 @@ msgstr "Name=KDevelop: KDE/C++"
 msgid "Enter the signal name :"
 msgstr "Name=KDevelop: KDE/C++"
 
-#: umlwidgets/statewidget.cpp:591
+#: umlwidgets/statewidget.cpp:587
 #, kde-format
 msgid "Enter Activity"
 msgstr ""
@@ -9266,11 +9272,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Line width:  "
 #~ msgstr "Nombor baris:"
-
-#, fuzzy
-#~| msgid "New"
-#~ msgid "New"
-#~ msgstr "Baru"
 
 #, fuzzy
 #~ msgid "Internal Error"
