@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-03-12 03:37+0100\n"
+"POT-Creation-Date: 2020-03-18 03:29+0100\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -547,13 +547,11 @@ msgid "Configure the view"
 msgstr "Konfigur &Tarikh && Waktu"
 
 #: actionmanager.cpp:552 actionmanager.cpp:1301 actionmanager.cpp:1337
-#: koeventpopupmenu.cpp:55
 #, kde-format
 msgid "&Show"
 msgstr "&Paparkan"
 
 #: actionmanager.cpp:557 actionmanager.cpp:1304 actionmanager.cpp:1338
-#: koeventpopupmenu.cpp:58
 #, kde-format
 msgid "&Edit..."
 msgstr "&Edit..."
@@ -1647,33 +1645,38 @@ msgstr "&Tajuk:"
 msgid "Text:"
 msgstr "Buat semula (%1)"
 
-#: dialog/searchdialog.cpp:54
+#: dialog/searchdialog.cpp:55
 #, fuzzy, kde-format
 #| msgid "New Calendar"
 msgctxt "@title:window"
 msgid "Search Calendar"
 msgstr "Kalendar baru"
 
-#: dialog/searchdialog.cpp:85
+#: dialog/searchdialog.cpp:86
 #, fuzzy, kde-format
-msgctxt "search in calendar"
+msgctxt "@action:button search in calendar"
 msgid "&Search"
 msgstr "Cari Dalam"
 
-#: dialog/searchdialog.cpp:87
-#, kde-format
-msgid "Start searching"
-msgstr ""
+#: dialog/searchdialog.cpp:88
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Start the search"
+msgstr "Tarikh mula:"
 
-#: dialog/searchdialog.cpp:90
+#: dialog/searchdialog.cpp:91
 #, fuzzy, kde-format
 #| msgid "Press this button to define a new filter."
 msgctxt "@info:whatsthis"
 msgid "Press this button to start the search."
 msgstr "Tekan butang ini untuk mentakrif penapis baru."
 
-#: dialog/searchdialog.cpp:131
-#, kde-format
+#: dialog/searchdialog.cpp:151
+#, fuzzy, kde-format
+#| msgid ""
+#| "Invalid search expression, cannot perform the search. Please enter a "
+#| "search expression using the wildcard characters '*' and '?' where needed."
+msgctxt "@info"
 msgid ""
 "Invalid search expression, cannot perform the search. Please enter a search "
 "expression using the wildcard characters '*' and '?' where needed."
@@ -1681,20 +1684,23 @@ msgstr ""
 "Ungkapan carian tidak sah, tidak dapat melaksanakan carian. Masukkan "
 "ungkapan carian menggunakan aksara kad liar '*' dan '?' apabila perlu."
 
-#: dialog/searchdialog.cpp:143
+#: dialog/searchdialog.cpp:163
 #, fuzzy, kde-format
 #| msgid "No events were found matching your search expression."
+msgctxt "@info"
 msgid "No items were found that match your search pattern."
 msgstr "Tiada peristiwa berpadanan ditemui dalam ungkapan carian anda."
 
-#: dialog/searchdialog.cpp:144
+#: dialog/searchdialog.cpp:164
 #, fuzzy, kde-format
 #| msgid "Search In"
+msgctxt "@title:window"
 msgid "Search Results"
 msgstr "Cari Dalam"
 
-#: dialog/searchdialog.cpp:147
+#: dialog/searchdialog.cpp:167
 #, fuzzy, kde-format
+msgctxt "@label"
 msgid "%1 item"
 msgid_plural "%1 items"
 msgstr[0] "_n: 1 minit"
@@ -1897,79 +1903,122 @@ msgstr "&Tambah"
 msgid "&Cancel"
 msgstr "&Ubah"
 
-#: koeventpopupmenu.cpp:61
+#: koeventpopupmenu.cpp:69
 #, fuzzy, kde-format
-msgid "&Print..."
-msgstr "&Edit..."
-
-#: koeventpopupmenu.cpp:64
-#, fuzzy, kde-format
-msgid "Print Previe&w..."
-msgstr "&Edit..."
-
-#: koeventpopupmenu.cpp:70
-#, fuzzy, kde-format
-msgctxt "cut this event"
-msgid "C&ut"
-msgstr "Chukat"
+#| msgid "&Show"
+msgctxt "@action:inmenu"
+msgid "&Show"
+msgstr "&Paparkan"
 
 #: koeventpopupmenu.cpp:73
 #, fuzzy, kde-format
-msgctxt "copy this event"
-msgid "&Copy"
-msgstr "Salin Ke"
+#| msgid "&Edit..."
+msgctxt "@action:inmenu"
+msgid "&Edit..."
+msgstr "&Edit..."
 
 #: koeventpopupmenu.cpp:77
 #, fuzzy, kde-format
-#| msgid "&Date:"
-msgid "&Paste"
-msgstr "&Tarikh:"
-
-#: koeventpopupmenu.cpp:80
-#, fuzzy, kde-format
-msgctxt "delete this incidence"
+msgctxt "@action:inmenu delete this incidence"
 msgid "&Delete"
 msgstr "Hapuskan%1"
 
-#: koeventpopupmenu.cpp:85
+#: koeventpopupmenu.cpp:83
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "&Print..."
+msgstr "&Edit..."
+
+#: koeventpopupmenu.cpp:87
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "Print Previe&w..."
+msgstr "&Edit..."
+
+#: koeventpopupmenu.cpp:109
+#, fuzzy, kde-format
+msgctxt "@action:inmenu cut this incidence"
+msgid "C&ut"
+msgstr "Chukat"
+
+#: koeventpopupmenu.cpp:112
+#, fuzzy, kde-format
+msgctxt "@action:inmenu copy this incidence"
+msgid "&Copy"
+msgstr "Salin Ke"
+
+#: koeventpopupmenu.cpp:115
+#, fuzzy, kde-format
+#| msgid "&Date:"
+msgctxt "@action:inmenu"
+msgid "&Paste"
+msgstr "&Tarikh:"
+
+#: koeventpopupmenu.cpp:124
 #, fuzzy, kde-format
 #| msgid "Click to add a new to-do"
-msgid "Create To-do"
+msgctxt "@action:inmenu"
+msgid "Create To-do from Event"
 msgstr "Klik untuk tambah tugasan baru"
 
-#: koeventpopupmenu.cpp:91
+#: koeventpopupmenu.cpp:128
 #, fuzzy, kde-format
 #| msgid "Click to add a new to-do"
-msgid "Create Event"
+msgctxt "@action:inmenu"
+msgid "Create Note for Event"
 msgstr "Klik untuk tambah tugasan baru"
 
-#: koeventpopupmenu.cpp:97
+#: koeventpopupmenu.cpp:137
 #, fuzzy, kde-format
-#| msgid "Click to add a new to-do"
-msgid "Create Note"
-msgstr "Klik untuk tambah tugasan baru"
-
-#: koeventpopupmenu.cpp:103
-#, fuzzy, kde-format
+msgctxt "@action:inmenu"
 msgid "Togg&le To-do Completed"
 msgstr "Penyingkiran Selesai"
 
-#: koeventpopupmenu.cpp:106
+#: koeventpopupmenu.cpp:141
 #, fuzzy, kde-format
+#| msgid "Click to add a new to-do"
+msgctxt "@action:inmenu"
+msgid "Create Event from To-do"
+msgstr "Klik untuk tambah tugasan baru"
+
+#: koeventpopupmenu.cpp:145
+#, fuzzy, kde-format
+#| msgid "Click to add a new to-do"
+msgctxt "@action:inmenu"
+msgid "Create Note for To-do"
+msgstr "Klik untuk tambah tugasan baru"
+
+#: koeventpopupmenu.cpp:154
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
 msgid "&Toggle Reminder"
 msgstr "Pe&ringatan:"
 
-#: koeventpopupmenu.cpp:110
+#: koeventpopupmenu.cpp:163
 #, fuzzy, kde-format
 #| msgid "Dissociate occurrence"
+msgctxt "@action:inmenu"
 msgid "&Dissociate From Recurrence..."
 msgstr "Asingkan kemunculan"
 
-#: koeventpopupmenu.cpp:116
+#: koeventpopupmenu.cpp:172
 #, fuzzy, kde-format
 #| msgid "&iCalendar..."
-msgid "Send as iCalendar..."
+msgctxt "@action:inmenu"
+msgid "Email as iCalendar..."
 msgstr "&iCalendar..."
+
+#: koeventpopupmenu.cpp:224
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "&Toggle Reminder Off"
+msgstr "Pe&ringatan:"
+
+#: koeventpopupmenu.cpp:225
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "&Toggle Reminder On"
+msgstr "Pe&ringatan:"
 
 #: kohelper.cpp:75
 #, kde-format
@@ -5633,6 +5682,21 @@ msgid "%1"
 msgstr "%1"
 
 #, fuzzy
+#~ msgctxt "copy this event"
+#~ msgid "&Copy"
+#~ msgstr "Salin Ke"
+
+#, fuzzy
+#~ msgctxt "delete this incidence"
+#~ msgid "&Delete"
+#~ msgstr "Hapuskan%1"
+
+#, fuzzy
+#~| msgid "Click to add a new to-do"
+#~ msgid "Create Note"
+#~ msgstr "Klik untuk tambah tugasan baru"
+
+#, fuzzy
 #~| msgid "Go &Forward"
 #~ msgid "searching..."
 #~ msgstr "Pergi ke &Hadapan"
@@ -7251,10 +7315,6 @@ msgstr "%1"
 #~ msgstr ""
 #~ "Jika anda ingin menggunakan warna untuk membezakan kategori pada cetak, "
 #~ "semak opsyen ini."
-
-#, fuzzy
-#~ msgid "Start date: "
-#~ msgstr "Tarikh mula:"
 
 #, fuzzy
 #~ msgid "End date: "
