@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: skrooge\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-06-08 02:13+0200\n"
+"POT-Creation-Date: 2020-06-23 02:10+0200\n"
 "PO-Revision-Date: 2009-10-03 23:05+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -3431,9 +3431,9 @@ msgstr "Gagal untuk memadam"
 #: plugins/skrooge/skrooge_budget/skgbudgetpluginwidget.cpp:63
 #: plugins/skrooge/skrooge_budget/skgbudgetpluginwidget.cpp:64
 #: plugins/skrooge/skrooge_categories/skgcategoriespluginwidget.cpp:73
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:472
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:473
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:474
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:480
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:481
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:482
 #: plugins/skrooge/skrooge_operation/skgoperationpluginwidget.cpp:66
 #: plugins/skrooge/skrooge_operation/skgoperationpluginwidget.cpp:67
 #: plugins/skrooge/skrooge_operation/skgoperationpluginwidget.cpp:68
@@ -3511,16 +3511,16 @@ msgid "Operations of account "
 msgstr "Operasi"
 
 #: plugins/skrooge/skrooge_bank/skgbankpluginwidget.cpp:386
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:808
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:826
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:851
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:869
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:888
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:905
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:922
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:939
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:966
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:994
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:816
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:834
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:859
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:877
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:896
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:913
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:930
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:947
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:974
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1002
 #: plugins/skrooge/skrooge_report/skgreportplugin.cpp:240
 #: plugins/skrooge/skrooge_report/skgreportplugin.cpp:254
 #: plugins/skrooge/skrooge_report/skgreportplugin.cpp:271
@@ -5809,7 +5809,7 @@ msgid "Merge imported operations"
 msgstr "Operasi"
 
 #: plugins/skrooge/skrooge_importexport/skgimportexportplugin.cpp:846
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1638
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1687
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Merge failed"
@@ -6778,89 +6778,107 @@ msgid "Operations with dates not aligned"
 msgstr "Operasi"
 
 #: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:261
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:368
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:376
 #, fuzzy, kde-format
 msgctxt "Verb"
-msgid "Align comment of suboperations of all operations"
+msgid "Align comment of suboperations of all single operations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:266
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:364
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:265
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:372
+#, fuzzy, kde-format
+msgctxt "Verb"
+msgid "Align comment of operations of all single operations"
+msgstr "Operasi"
+
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:270
 #, fuzzy, kde-format
 msgctxt "Verb"
 msgid "Align date of suboperations of all operations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:271
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:275
 #, fuzzy, kde-format
 msgctxt "Verb"
 msgid "Open operations in groups with only one operation..."
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:272
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:276
 #, kde-format
 msgctxt "Noun, a list of items"
 msgid "Operations in groups with only one operation"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:280
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:372
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:284
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:380
 #, fuzzy, kde-format
 msgctxt "Verb"
 msgid "Remove groups with only one operation of all operations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:285
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:289
 #, fuzzy, kde-format
 msgctxt "Verb"
 msgid "Group operations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:293
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:297
 #, fuzzy, kde-format
 msgctxt "Verb"
 msgid "Ungroup operations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:299
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:303
 #, fuzzy, kde-format
 msgctxt "Verb, action to merge"
 msgid "Merge sub operations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:304
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:308
 #, fuzzy, kde-format
 #| msgid "Investment"
 msgctxt "Verb, action to apply a template"
 msgid "Apply template"
 msgstr "Templat"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:334
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:338
 #, fuzzy, kde-format
 #| msgid "Current"
 msgctxt "More items in a menu"
 msgid "More"
 msgstr "Semasa"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:364
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:368
 #, fuzzy, kde-format
 msgctxt "Verb"
-msgid "Align date of suboperations of selected operations"
+msgid "Align date of suboperations of selected single operations"
 msgstr "Operasi"
 
 #: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:368
 #, fuzzy, kde-format
 msgctxt "Verb"
-msgid "Align comment of suboperations of selected operations"
+msgid "Align date of suboperations of all single operations"
 msgstr "Operasi"
 
 #: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:372
 #, fuzzy, kde-format
 msgctxt "Verb"
+msgid "Align comment of operations of selected single operations"
+msgstr "Operasi"
+
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:376
+#, fuzzy, kde-format
+msgctxt "Verb"
+msgid "Align comment of suboperations of selected single operations"
+msgstr "Operasi"
+
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:380
+#, fuzzy, kde-format
+msgctxt "Verb"
 msgid "Remove groups with only one operation of selected operations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:390
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:398
 #, fuzzy, kde-format
 msgctxt "Warning message"
 msgid ""
@@ -6868,7 +6886,7 @@ msgid ""
 "previous one."
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:392
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:400
 #, fuzzy, kde-format
 msgctxt "Warning message"
 msgid ""
@@ -6876,52 +6894,52 @@ msgid ""
 "cancelled."
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:415
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:423
 #, fuzzy, kde-format
 msgctxt "Warning message"
 msgid ""
 "The previous import in '%1' has been broken by this action or a previous one."
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:417
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:425
 #, fuzzy, kde-format
 msgctxt "Warning message"
 msgid ""
 "This action would break the previous import in '%1', so it is cancelled."
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:435
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:443
 #, kde-format
 msgctxt "Noun, the title of a section"
 msgid "Income && Expenditure"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:437
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:445
 #, fuzzy, kde-format
 msgctxt "Noun, the title of a section"
 msgid "Highlighted operations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:503
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:511
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Operations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:513
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:521
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Operation management"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:524
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:532
 #, kde-format
 msgctxt "Description of a tips"
 msgid ""
 "<p>... you can press +, -, CTRL + or CTRL - to quickly change dates.</p>"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:525
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:533
 #, fuzzy, kde-format
 msgctxt "Description of a tips"
 msgid ""
@@ -6929,7 +6947,7 @@ msgid ""
 "\">operations</a> in one shot.</p>"
 msgstr "Cari"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:526
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:534
 #, fuzzy, kde-format
 msgctxt "Description of a tips"
 msgid ""
@@ -6937,7 +6955,7 @@ msgid ""
 "\">operation</a> to show or edit sub operations.</p>"
 msgstr "Cari"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:527
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:535
 #, kde-format
 msgctxt "Description of a tips"
 msgid ""
@@ -6945,7 +6963,7 @@ msgid ""
 "\">operation</a> including complex operations (split, grouped, ...).</p>"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:528
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:536
 #, fuzzy, kde-format
 msgctxt "Description of a tips"
 msgid ""
@@ -6953,7 +6971,7 @@ msgid ""
 "\">operations</a>.</p>"
 msgstr "Cari"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:529
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:537
 #, fuzzy, kde-format
 msgctxt "Description of a tips"
 msgid ""
@@ -6961,7 +6979,7 @@ msgid ""
 "\">operations</a>.</p>"
 msgstr "Cari"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:530
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:538
 #, kde-format
 msgctxt "Description of a tips"
 msgid ""
@@ -6971,216 +6989,216 @@ msgid ""
 "skrooge_category_plugin\">category</a>.</p>"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:555
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:563
 #, fuzzy, kde-format
 #| msgid "Investment"
 msgctxt "Noun, name of the user action"
 msgid "Apply template"
 msgstr "Templat"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:570
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:578
 #, fuzzy, kde-format
 #| msgid "Investment"
 msgctxt "Successful message after an user action"
 msgid "Template applied."
 msgstr "Templat"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:576
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:584
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Apply of template failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:593
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:601
 #, fuzzy, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Group operations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:603
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:611
 #, fuzzy, kde-format
 msgctxt "An information to the user"
 msgid "The operation '%1' has been grouped with '%2'"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:610
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:618
 #, fuzzy, kde-format
 msgctxt "Successful message after an user action"
 msgid "Operations grouped."
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:612
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:620
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Group creation failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:629
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:637
 #, fuzzy, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Ungroup operation"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:636
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:644
 #, fuzzy, kde-format
 msgctxt "An information to the user"
 msgid "The operation '%1' has been ungrouped"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:643
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:651
 #, fuzzy, kde-format
 msgctxt "Successful message after an user action"
 msgid "Operation ungrouped."
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:645
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:653
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Group deletion failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:662
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:670
 #, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Switch to pointed"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:669
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:677
 #: skgbankgui/skgobjectmodel.cpp:1022
 #, fuzzy, kde-format
 msgctxt "An information to the user"
 msgid "The status of the operation '%1' has been changed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:676
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:684
 #, fuzzy, kde-format
 msgctxt "Successful message after an user action"
 msgid "Operation pointed."
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:678
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:686
 #: plugins/skrooge/skrooge_operation/skgoperationpluginwidget.cpp:2562
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Switch failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:696
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:704
 #, fuzzy, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Duplicate operation"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:704
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:712
 #, fuzzy, kde-format
 msgctxt "An information to the user"
 msgid "The duplicate operation '%1' has been added"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:713
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:721
 #, fuzzy, kde-format
 msgctxt "Successful message after an user action"
 msgid "Operation duplicated."
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:719
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:727
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Duplicate operation failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:737
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:745
 #, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Create template"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:745
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:753
 #, fuzzy, kde-format
 msgctxt "An information to the user"
 msgid "The template '%1' has been added"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:753
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:761
 #, fuzzy, kde-format
 #| msgid "Investment"
 msgctxt "Successful message after an user action"
 msgid "Template created."
 msgstr "Templat"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:760
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:768
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Creation template failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:799
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:807
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Operations of account:"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:817
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:825
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Operations with unit:"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:833
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:841
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Sub operations with category:"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:860
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:868
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Sub operations followed by tracker:"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:879
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:887
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Operations assigned to payee:"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:895
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:903
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Operations assigned to budget:"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:912
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:920
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Scheduled operations:"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:929
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:937
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Sub operations corresponding to rule:"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:947
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:955
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Sub operations grouped or split of:"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:973
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:981
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Operations grouped with:"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1057
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1065
 #, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Duplicate number %1 in account '%2'"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1058
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1066
 #, kde-format
 msgctxt "Advice on making the best (long)"
 msgid ""
@@ -7188,19 +7206,19 @@ msgid ""
 "operation number should be unique (check number, transaction reference...)"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1062
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1070
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (action)"
 msgid "Edit operations with duplicate number"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1092
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1100
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Many operations of '%1' not reconciliated"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1093
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1101
 #, kde-format
 msgctxt "Advice on making the best (long)"
 msgid ""
@@ -7210,19 +7228,19 @@ msgid ""
 "for more details"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1097
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1105
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (action)"
 msgid "Open account '%1' for reconciliation"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1129
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1137
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Not enough money in your account '%1'"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1130
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1138
 #, kde-format
 msgctxt "Advice on making the best (long)"
 msgid ""
@@ -7230,25 +7248,25 @@ msgid ""
 "it."
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1157
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1165
 #, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Balance in account '%1' exceeds the maximum limit"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1158
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1166
 #, kde-format
 msgctxt "Advice on making the best (long)"
 msgid "The balance of this account exceeds the maximum limit."
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1186
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1194
 #, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Your account '%1' is close to the minimum limit"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1187
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1195
 #, kde-format
 msgctxt "Advice on making the best (long)"
 msgid ""
@@ -7256,26 +7274,26 @@ msgid ""
 "care of it."
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1225
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1233
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Too much money in your account '%1'"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1226
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1234
 #, kde-format
 msgctxt "Advice on making the best (long)"
 msgid ""
 "You could save money on an account with a better rate. Example: '%1' (%2%)"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1249
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1257
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Many operations do not have mode"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1250
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1258
 #, kde-format
 msgctxt "Advice on making the best (long)"
 msgid ""
@@ -7283,13 +7301,13 @@ msgid ""
 "generate better reports."
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1275
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1283
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Many operations do not have category"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1276
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1284
 #, kde-format
 msgctxt "Advice on making the best (long)"
 msgid ""
@@ -7297,25 +7315,25 @@ msgid ""
 "you to generate better reports."
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1300
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1308
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Many transfers do not have category"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1301
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1309
 #, kde-format
 msgctxt "Advice on making the best (long)"
 msgid "Do not forget to associate a category for each transfer."
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1326
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1334
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Many operations do not have payee"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1327
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1335
 #, kde-format
 msgctxt "Advice on making the best (long)"
 msgid ""
@@ -7323,25 +7341,25 @@ msgid ""
 "to generate better reports."
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1351
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1359
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Many transfers do not have payee"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1352
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1360
 #, kde-format
 msgctxt "Advice on making the best (long)"
 msgid "Do not forget to associate a payee for each transfer."
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1377
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1385
 #, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Some operations are in groups with only one operation"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1378
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1386
 #, kde-format
 msgctxt "Advice on making the best (long)"
 msgid ""
@@ -7350,13 +7368,13 @@ msgid ""
 "sense."
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1414
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1422
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Some simple operations do not have their comments aligned"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1415
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1423
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (long)"
 msgid ""
@@ -7364,13 +7382,13 @@ msgid ""
 "suboperation."
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1451
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1465
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (short)"
 msgid "Some operations do not have their dates aligned"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1452
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1466
 #, fuzzy, kde-format
 msgctxt "Advice on making the best (long)"
 msgid ""
@@ -7378,85 +7396,93 @@ msgid ""
 "This case seems to be abnormal."
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1497
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1511
 #, kde-format
 msgctxt "Noun, a list of items"
 msgid "Operations of '%1' with duplicate number %2"
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1521
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1535
 #, fuzzy, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Remove groups with only one operation"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1535
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1549
 #, fuzzy, kde-format
 msgctxt "Message for successful user action"
 msgid "Remove groups done."
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1537
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1551
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Remove groups failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1556
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1570
 #, fuzzy, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Align comment of suboperations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1570
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1584
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1619
 #, kde-format
 msgctxt "Message for successful user action"
 msgid "Comments aligned."
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1572
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1586
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1621
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Comments alignment failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1591
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1605
+#, fuzzy, kde-format
+msgctxt "Noun, name of the user action"
+msgid "Align comment of operations"
+msgstr "Operasi"
+
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1640
 #, fuzzy, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Align date of suboperations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1605
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1654
 #, kde-format
 msgctxt "Message for successful user action"
 msgid "Dates aligned."
 msgstr ""
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1607
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1656
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Dates alignment failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1623
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1672
 #, fuzzy, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Merge sub operations"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1630
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1679
 #, fuzzy, kde-format
 msgctxt "An information to the user"
 msgid "The sub operations of '%1' have been merged in the operation '%2'"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1636
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1685
 #, fuzzy, kde-format
 msgctxt "Successful message after an user action"
 msgid "Operations merged."
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1700
+#: plugins/skrooge/skrooge_operation/skgoperationplugin.cpp:1749
 #, kde-format
 msgctxt "A condition"
 msgid "%1 = %2"
