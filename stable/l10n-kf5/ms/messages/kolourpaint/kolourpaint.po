@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-12 07:50+0200\n"
+"POT-Creation-Date: 2020-07-13 07:40+0200\n"
 "PO-Revision-Date: 2005-11-06 05:51+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -31,12 +31,12 @@ msgstr "opensource@mimos.my"
 msgid "Balance"
 msgstr "Baki"
 
-#: commands/imagelib/effects/kpEffectBlurSharpenCommand.cpp:56
+#: commands/imagelib/effects/kpEffectBlurSharpenCommand.cpp:52
 #, kde-format
 msgid "Soften"
 msgstr "Melembut"
 
-#: commands/imagelib/effects/kpEffectBlurSharpenCommand.cpp:57
+#: commands/imagelib/effects/kpEffectBlurSharpenCommand.cpp:53
 #, kde-format
 msgid "Sharpen"
 msgstr "Menajamkan"
@@ -1021,11 +1021,16 @@ msgstr "Kedalaman Warna Rendah"
 msgid "Could not save image - unable to create temporary file."
 msgstr "Tidak boleh simpan imej - tak dapat mencipta fail sementara."
 
-#: document/kpDocument_Save.cpp:293
+#: document/kpDocument_Save.cpp:292
 #, fuzzy, kde-format
 #| msgid "Could not save as \"%1\"."
-msgid "Could not save as \"%1\"."
+msgid "Could not save as \"%1\": %2"
 msgstr "Tidak boleh simpan sebagai \"%1\"."
+
+#: document/kpDocument_Save.cpp:364 document/kpDocument_Save.cpp:407
+#, kde-format
+msgid "Error saving image"
+msgstr ""
 
 #: document/kpDocument_Save.cpp:442
 #, kde-format
