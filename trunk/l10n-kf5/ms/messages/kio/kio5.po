@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-26 02:02+0200\n"
+"POT-Creation-Date: 2020-07-27 02:03+0200\n"
 "PO-Revision-Date: 2010-07-19 21:43+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -2382,7 +2382,7 @@ msgstr ""
 msgid "Undocumented Error"
 msgstr "Ralat Tidak Didokumentasikan"
 
-#: core/kcoredirlister.cpp:396 gui/openurljob.cpp:152 widgets/krun.cpp:419
+#: core/kcoredirlister.cpp:396 gui/openurljob.cpp:168 widgets/krun.cpp:419
 #: widgets/paste.cpp:278 widgets/renamedialog.cpp:595
 #, kde-format
 msgid ""
@@ -2647,7 +2647,7 @@ msgstr "Gagal membuka sijil. Cuba kata laluan baru?"
 msgid "The procedure to set the client certificate for the session failed."
 msgstr "Prosedur untuk menetapkan sijil klien untuk sesi telah gagal."
 
-#: core/tcpslavebase.cpp:698 widgets/jobuidelegate.cpp:395
+#: core/tcpslavebase.cpp:698 widgets/jobuidelegate.cpp:399
 #, kde-format
 msgid "SSL"
 msgstr "SSL"
@@ -2767,9 +2767,9 @@ msgstr "Baca"
 msgid "New Folder..."
 msgstr "Folder Baru..."
 
-#: filewidgets/kdiroperator.cpp:2004 widgets/jobuidelegate.cpp:286
-#: widgets/jobuidelegate.cpp:287 widgets/jobuidelegate.cpp:295
-#: widgets/jobuidelegate.cpp:296
+#: filewidgets/kdiroperator.cpp:2004 widgets/jobuidelegate.cpp:290
+#: widgets/jobuidelegate.cpp:291 widgets/jobuidelegate.cpp:299
+#: widgets/jobuidelegate.cpp:300
 #, kde-format
 msgid "Move to Trash"
 msgstr "Alihkan ke Tong Sampah"
@@ -4012,7 +4012,7 @@ msgid ""
 "%2."
 msgstr ""
 
-#: gui/applicationlauncherjob.cpp:262 gui/openurljob.cpp:613
+#: gui/applicationlauncherjob.cpp:262 gui/openurljob.cpp:744
 #: widgets/krun.cpp:210
 #, fuzzy, kde-format
 msgid "You are not authorized to select an application to open this file."
@@ -4054,12 +4054,12 @@ msgstr ""
 msgid "Launching %1"
 msgstr "Melancarkan %1"
 
-#: gui/openurljob.cpp:166
+#: gui/openurljob.cpp:182
 #, kde-format
 msgid "Failed to open %1"
 msgstr ""
 
-#: gui/openurljob.cpp:414 widgets/kdesktopfileactions.cpp:138
+#: gui/openurljob.cpp:430 widgets/kdesktopfileactions.cpp:138
 #, kde-format
 msgid ""
 "The desktop entry file\n"
@@ -4070,25 +4070,32 @@ msgstr ""
 "%1\n"
 "ialah jenis Link tetapi tiada URL=...entry."
 
-#: gui/openurljob.cpp:481
+#: gui/openurljob.cpp:484
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The file <b>%1</b> is an executable program. For safety it will not "
 #| "be started.</qt>"
 msgid ""
-"The file \"%1\" is an executable program. For safety it will not be started."
+"The executable file \"%1\" is located on a remote filesystem. For safety "
+"reasons it will not be started."
 msgstr ""
 "<qt>Fail <b>%1</b> adalah program boleh laksana. Untuk sekuriti, ia tidak "
 "akan dimulakan.</qt>"
 
-#: gui/openurljob.cpp:504
+#: gui/openurljob.cpp:528
+#, kde-format
+msgid ""
+"For security reasons, launching executables is not allowed in this context."
+msgstr ""
+
+#: gui/openurljob.cpp:555
 #, kde-format
 msgid ""
 "The program \"%1\" needs to have executable permission before it can be "
 "launched."
 msgstr ""
 
-#: gui/openurljob.cpp:515
+#: gui/openurljob.cpp:566
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
@@ -4100,15 +4107,21 @@ msgstr ""
 "<qt>Tidak dapat menjalankan arahan yang dinyatakan. Fail atau folder <b>%1</"
 "b> tidak wujud.</qt>"
 
-#: gui/openurljob.cpp:573 widgets/kdesktopfileactions.cpp:71
+#: gui/openurljob.cpp:654 widgets/kdesktopfileactions.cpp:71
 #, kde-format
 msgid "The desktop entry file %1 has no Type=... entry."
 msgstr "Fail input ruang kerja %1 tiada Jenis=... entry"
 
-#: gui/openurljob.cpp:624
+#: gui/openurljob.cpp:755
 #, kde-format
 msgid "Failed to open the file."
 msgstr ""
+
+#: gui/openurljob.cpp:789
+#, fuzzy, kde-format
+#| msgid "The requested lock could not be granted. %1"
+msgid "The program \"%1\" could not be launched."
+msgstr "Kunci yang dipinta tidak dapat diberikan. %1"
 
 #: ioslaves/file/file.cpp:188
 #, fuzzy, kde-format
@@ -7780,7 +7793,7 @@ msgstr ""
 msgid "Undo File Copy Confirmation"
 msgstr "Mengemaskini Konfigurasi Sistem"
 
-#: widgets/jobuidelegate.cpp:254
+#: widgets/jobuidelegate.cpp:258
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7789,13 +7802,13 @@ msgid ""
 "emphasis>"
 msgstr ""
 
-#: widgets/jobuidelegate.cpp:255 widgets/jobuidelegate.cpp:264
-#: widgets/jobuidelegate.cpp:274
+#: widgets/jobuidelegate.cpp:259 widgets/jobuidelegate.cpp:268
+#: widgets/jobuidelegate.cpp:278
 #, fuzzy, kde-format
 msgid "Delete Permanently"
 msgstr "Hapus kemasukan"
 
-#: widgets/jobuidelegate.cpp:262
+#: widgets/jobuidelegate.cpp:266
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7807,7 +7820,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: widgets/jobuidelegate.cpp:273
+#: widgets/jobuidelegate.cpp:277
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7815,7 +7828,7 @@ msgid ""
 "><emphasis strong='true'>This action cannot be undone.</emphasis>"
 msgstr ""
 
-#: widgets/jobuidelegate.cpp:275
+#: widgets/jobuidelegate.cpp:279
 #, fuzzy, kde-format
 #| msgctxt "to trash"
 #| msgid "&Trash"
@@ -7823,7 +7836,7 @@ msgctxt "@action:button"
 msgid "Empty Trash"
 msgstr "&Tong Sampah"
 
-#: widgets/jobuidelegate.cpp:285
+#: widgets/jobuidelegate.cpp:289
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7831,14 +7844,14 @@ msgid ""
 "filename>"
 msgstr "_n: Anda benar-benar ingin hapuskan item ini?"
 
-#: widgets/jobuidelegate.cpp:293
+#: widgets/jobuidelegate.cpp:297
 #, fuzzy, kde-format
 msgid "Do you really want to move this item to the Trash?"
 msgid_plural "Do you really want to move these %1 items to the Trash?"
 msgstr[0] "_n: Anda benar-benar ingin hapuskan item ini?"
 msgstr[1] "_n: Anda benar-benar ingin hapuskan item ini?"
 
-#: widgets/jobuidelegate.cpp:394
+#: widgets/jobuidelegate.cpp:398
 #, fuzzy, kde-format
 #| msgid "The peer SSL certificate appears to be corrupt."
 msgid "The peer SSL certificate chain appears to be corrupt."
