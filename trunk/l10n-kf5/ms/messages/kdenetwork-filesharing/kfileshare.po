@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfileshare\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-13 02:18+0200\n"
+"POT-Creation-Date: 2020-08-20 02:16+0200\n"
 "PO-Revision-Date: 2006-08-22 01:05+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: KDE <kde-i18n-doc@kde.org>\n"
@@ -15,62 +15,104 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#: samba/filepropertiesplugin/delegate.cpp:27
+#: samba/filepropertiesplugin/qml/ACLPage.qml:19
 #, kde-format
-msgid "---"
+msgctxt "@option:check"
+msgid "Share this folder with other computers on the local network"
 msgstr ""
 
-#: samba/filepropertiesplugin/delegate.cpp:28
+#: samba/filepropertiesplugin/qml/ACLPage.qml:36
+#, fuzzy, kde-format
+#| msgid "Name:"
+msgctxt "@label"
+msgid "Name:"
+msgstr "Nama:"
+
+#: samba/filepropertiesplugin/qml/ACLPage.qml:68
 #, kde-format
+msgctxt "@label"
+msgid ""
+"This name cannot be used. Share names must not be user names and there must "
+"not be two shares with the same name on the entire system."
+msgstr ""
+
+#: samba/filepropertiesplugin/qml/ACLPage.qml:77
+#, kde-format
+msgctxt "@label"
+msgid ""
+"This name may be too long. It can cause interoperability problems or get "
+"rejected by Samba."
+msgstr ""
+
+#: samba/filepropertiesplugin/qml/ACLPage.qml:82
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Allow guests"
+msgstr "Tiada akaun tetamu"
+
+#: samba/filepropertiesplugin/qml/ACLPage.qml:163
+#, kde-format
+msgctxt "@option:radio user can read&write"
 msgid "Full Control"
 msgstr ""
 
-#: samba/filepropertiesplugin/delegate.cpp:29
+#: samba/filepropertiesplugin/qml/ACLPage.qml:164
 #, fuzzy, kde-format
+msgctxt "@option:radio user can read"
 msgid "Read Only"
 msgstr "Baca-Saja"
 
-#: samba/filepropertiesplugin/delegate.cpp:30
+#: samba/filepropertiesplugin/qml/ACLPage.qml:165
+#, fuzzy, kde-format
+msgctxt "@option:radio user not allowed to access share"
+msgid "No Access"
+msgstr "Benarkan capaian dari semua hos"
+
+#: samba/filepropertiesplugin/qml/ACLPage.qml:182
 #, kde-format
-msgid "Deny"
+msgctxt "@button"
+msgid "Show Samba status monitor"
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:57
+#: samba/filepropertiesplugin/qml/InstallPage.qml:13
+#: samba/filepropertiesplugin/qml/MissingSambaPage.qml:18
 #, fuzzy, kde-format
-msgid "&Share"
-msgstr "Kongsi:"
-
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:66
-#, kde-format
-msgid "The Samba package failed to install."
-msgstr ""
-
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:76
-#, fuzzy, kde-format
+msgctxt "@label"
 msgid "Samba must be installed before folders can be shared."
 msgstr "Hanya direktori di Home anda yang boleh dikongsi"
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:85
+#: samba/filepropertiesplugin/qml/InstallPage.qml:16
 #, kde-format
-msgid "Restart the computer to complete the installation."
-msgstr ""
-
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:86
-#, kde-format
-msgid "Restart"
-msgstr ""
-
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:95
-#, kde-format
+msgctxt "@button"
 msgid "Install Samba"
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:169
+#: samba/filepropertiesplugin/qml/InstallPage.qml:24
 #, kde-format
-msgid "Installing Samba..."
+msgctxt "@label"
+msgid "The Samba package failed to install."
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:270
+#: samba/filepropertiesplugin/qml/RebootPage.qml:13
+#, kde-format
+msgctxt "@label"
+msgid "Restart the computer to complete the installation."
+msgstr ""
+
+#: samba/filepropertiesplugin/qml/RebootPage.qml:16
+#, kde-format
+msgctxt "@button restart the system"
+msgid "Restart"
+msgstr ""
+
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:190
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@title:tab"
+msgid "Share"
+msgstr "Kongsi"
+
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:238
 #, kde-format
 msgctxt "@info detailed error messsage"
 msgid ""
@@ -78,73 +120,73 @@ msgid ""
 "active at the same time."
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:272
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:240
 #, fuzzy, kde-format
 msgctxt "@info detailed error messsage"
 msgid "The share name is invalid."
 msgstr "Proses perakaunan dimatikan."
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:274
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:242
 #, kde-format
 msgctxt "@info detailed error messsage"
 msgid "The share name is already in use for a different directory."
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:276
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:244
 #, kde-format
 msgctxt "@info detailed error messsage"
 msgid "The path is invalid."
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:278
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:246
 #, fuzzy, kde-format
 msgctxt "@info detailed error messsage"
 msgid "The path does not exist."
 msgstr "Pengguna %s tidak wujud.\n"
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:280
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:248
 #, kde-format
 msgctxt "@info detailed error messsage"
 msgid "The path is not a directory."
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:282
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:250
 #, kde-format
 msgctxt "@info detailed error messsage"
 msgid "The path is relative."
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:284
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:252
 #, fuzzy, kde-format
 msgctxt "@info detailed error messsage"
 msgid "This path may not be shared."
 msgstr "Nama Perkongsian diperlukan"
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:286
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:254
 #, kde-format
 msgctxt "@info detailed error messsage"
 msgid "The access rule is invalid."
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:288
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:256
 #, kde-format
 msgctxt "@info detailed error messsage"
 msgid "An access rule's user is not valid."
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:290
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:258
 #, kde-format
 msgctxt "@info detailed error messsage"
 msgid "The 'Guest' access rule is invalid."
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:292
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:260
 #, kde-format
 msgctxt "@info detailed error messsage"
 msgid "Enabling guest access is not allowed."
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:310
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:278
 #, kde-kuit-format
 msgctxt "@info error in the underlying binaries. %1 is CLI output"
 msgid ""
@@ -153,13 +195,13 @@ msgid ""
 "message>"
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:317
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:285
 #, kde-format
 msgctxt "@info/title"
 msgid "Failed to Create Network Share"
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:330
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:298
 #, kde-kuit-format
 msgctxt "@info error in the underlying binaries. %1 is CLI output"
 msgid ""
@@ -168,42 +210,15 @@ msgid ""
 "message>"
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:337
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:305
 #, kde-format
 msgctxt "@info/title"
 msgid "Failed to Remove Network Share"
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:368
-#, kde-format
-msgid ""
-"<qt>There is already a share with the name <strong>%1</strong>.<br /> Please "
-"choose another name.</qt>"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, sambaChk)
-#: samba/filepropertiesplugin/sambausershareplugin.ui:19
-#, kde-format
-msgid "Sh&are this folder with other computers on the local network"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: samba/filepropertiesplugin/sambausershareplugin.ui:39
-#, kde-format
-msgid "Name:"
-msgstr "Nama:"
-
-#. i18n: ectx: property (text), widget (QCheckBox, sambaAllowGuestChk)
-#: samba/filepropertiesplugin/sambausershareplugin.ui:59
-#, fuzzy, kde-format
-msgid "Allow Guests"
-msgstr "Tiada akaun tetamu"
-
-#. i18n: ectx: property (text), widget (QPushButton, sambaStatusMonitorButton)
-#: samba/filepropertiesplugin/sambausershareplugin.ui:109
-#, kde-format
-msgid "Show Samba status &monitor"
-msgstr ""
+#, fuzzy
+#~ msgid "&Share"
+#~ msgstr "Kongsi:"
 
 #, fuzzy
 #~ msgid "Select Users"
@@ -236,10 +251,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Admin access"
 #~ msgstr "tiada kebenaran"
-
-#, fuzzy
-#~ msgid "&No access at all"
-#~ msgstr "Benarkan capaian dari semua hos"
 
 #, fuzzy
 #~ msgid "&Cancel"
@@ -315,9 +326,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Securit&y Level"
 #~ msgstr "_Aras RAID:"
-
-#~ msgid "Share"
-#~ msgstr "Kongsi"
 
 #~ msgid "Alt+"
 #~ msgstr "Alt+"
