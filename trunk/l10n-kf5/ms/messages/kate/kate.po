@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-28 02:35+0200\n"
+"POT-Creation-Date: 2020-09-29 02:30+0200\n"
 "PO-Revision-Date: 2006-10-20 20:16+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -94,42 +94,32 @@ msgstr "Fail '%1' tidak boleh dibuka: ia bukan fail normal, ia folder."
 msgid "&Color Scheme"
 msgstr ""
 
-#: kateconfigdialog.cpp:47
+#: kateconfigdialog.cpp:43
 #, kde-format
 msgid "Configure"
 msgstr ""
 
-#: kateconfigdialog.cpp:56
+#: kateconfigdialog.cpp:75 katemdi.cpp:533
 #, kde-format
-msgid "Application"
-msgstr "Aplikasi"
+msgid "Behavior"
+msgstr "Peri Laku"
 
-#: kateconfigdialog.cpp:58
+#: kateconfigdialog.cpp:76
 #, fuzzy, kde-format
-msgid "Application Options"
-msgstr "Aplikasi"
-
-#: kateconfigdialog.cpp:65
-#, kde-format
-msgid "General"
-msgstr "Umum"
-
-#: kateconfigdialog.cpp:66
-#, kde-format
-msgid "General Options"
+msgid "Behavior Options"
 msgstr "Pilihan Umum"
 
-#: kateconfigdialog.cpp:74
+#: kateconfigdialog.cpp:83
 #, kde-format
 msgid "&Behavior"
 msgstr "&Kelakuan"
 
-#: kateconfigdialog.cpp:79
+#: kateconfigdialog.cpp:88
 #, kde-format
 msgid "Wa&rn about files modified by foreign processes"
 msgstr "Beri &amaran tentang fail yang diubah suai oleh proses asing"
 
-#: kateconfigdialog.cpp:82
+#: kateconfigdialog.cpp:91
 #, fuzzy, kde-format
 #| msgid ""
 #| "If enabled, when Kate receives focus you will be asked what to do with "
@@ -148,52 +138,76 @@ msgstr ""
 "telah diubah suai dalam perkakasan hanya apabila fail tersebut peroleh fokus "
 "dalam Kate."
 
-#: kateconfigdialog.cpp:91
+#: kateconfigdialog.cpp:102 katemainwindow.cpp:256
 #, kde-format
-msgid "Close Kate entirely when the last file is closed"
+msgid "&Quick Open"
+msgstr "Buka &Pantas"
+
+#: kateconfigdialog.cpp:107
+#, fuzzy, kde-format
+msgid "&Match Mode:"
+msgstr "&Baru"
+
+#: kateconfigdialog.cpp:112 katemwmodonhddialog.cpp:89
+#, kde-format
+msgid "Filename"
+msgstr "Namafail"
+
+#: kateconfigdialog.cpp:113
+#, fuzzy, kde-format
+msgid "Filepath"
+msgstr "Fail:"
+
+#: kateconfigdialog.cpp:120
+#, fuzzy, kde-format
+msgid "&List Mode:"
+msgstr "&Baru"
+
+#: kateconfigdialog.cpp:125
+#, kde-format
+msgid "Current Project Files"
 msgstr ""
 
-#: kateconfigdialog.cpp:94
+#: kateconfigdialog.cpp:126
+#, fuzzy, kde-format
+#| msgid "Projects"
+msgid "All Projects Files"
+msgstr "Projek"
+
+#: kateconfigdialog.cpp:134
+#, fuzzy, kde-format
+msgid "&Tabs"
+msgstr "Papar Rekod DNSSEC"
+
+#: kateconfigdialog.cpp:138
 #, kde-format
-msgid ""
-"If enabled, Kate will shutdown when the last file being edited is closed, "
-"otherwise a blank page will open so that you can start a new file."
+msgid "&Limit number of tabs:"
 msgstr ""
 
-#: kateconfigdialog.cpp:102
+#: kateconfigdialog.cpp:144
 #, kde-format
-msgid "Meta-Information"
-msgstr "Maklumat Meta"
-
-#: kateconfigdialog.cpp:108
-#, kde-format
-msgid "Keep &meta-information past sessions"
-msgstr "Pastikan maklumat &meta melepasi sesi"
-
-#: kateconfigdialog.cpp:111
-#, kde-format
-msgid ""
-"Check this if you want document configuration like for example bookmarks to "
-"be saved past editor sessions. The configuration will be restored if the "
-"document has not changed when reopened."
+msgid "Unlimited"
 msgstr ""
-"Tandakan jika anda ingin konfigurasi dokumen, misalnya tanda buku yang "
-"hendak disimpan melepasi sesi editor. Konfigurasi akan disimpan semula jika "
-"dokumen tidak diubah apabila dibuka semula."
 
-#: kateconfigdialog.cpp:123
+#: kateconfigdialog.cpp:159
+#, fuzzy, kde-format
+#| msgid "Sessions"
+msgid "Session"
+msgstr "Sesi"
+
+#: kateconfigdialog.cpp:160
 #, kde-format
-msgid "&Delete unused meta-information after:"
-msgstr "&Hapuskan maklumat meta data yang tak diguna selepas:"
+msgid "Session Management"
+msgstr "Pengurusan Sesi"
 
-#: kateconfigdialog.cpp:127
+#: kateconfigdialog.cpp:171
 #, fuzzy, kde-format
 #| msgid "(never)"
 msgctxt "The special case of 'Delete unused meta-information after'"
 msgid "(never)"
 msgstr "(tidak sekali)"
 
-#: kateconfigdialog.cpp:128
+#: kateconfigdialog.cpp:172
 #, fuzzy, kde-format
 #| msgid " day(s)"
 msgctxt "The suffix of 'Delete unused meta-information after'"
@@ -202,94 +216,22 @@ msgid_plural " days"
 msgstr[0] " hari"
 msgstr[1] " hari"
 
-#: kateconfigdialog.cpp:139 katemainwindow.cpp:256
-#, kde-format
-msgid "&Quick Open"
-msgstr "Buka &Pantas"
-
-#: kateconfigdialog.cpp:144
-#, fuzzy, kde-format
-msgid "&Match Mode:"
-msgstr "&Baru"
-
-#: kateconfigdialog.cpp:149 katemwmodonhddialog.cpp:89
-#, kde-format
-msgid "Filename"
-msgstr "Namafail"
-
-#: kateconfigdialog.cpp:150
-#, fuzzy, kde-format
-msgid "Filepath"
-msgstr "Fail:"
-
-#: kateconfigdialog.cpp:157
-#, fuzzy, kde-format
-msgid "&List Mode:"
-msgstr "&Baru"
-
-#: kateconfigdialog.cpp:162
-#, kde-format
-msgid "Current Project Files"
-msgstr ""
-
-#: kateconfigdialog.cpp:163
-#, fuzzy, kde-format
-#| msgid "Projects"
-msgid "All Projects Files"
-msgstr "Projek"
-
-#: kateconfigdialog.cpp:171
-#, fuzzy, kde-format
-msgid "&Tabs"
-msgstr "Papar Rekod DNSSEC"
-
-#: kateconfigdialog.cpp:175
-#, kde-format
-msgid "&Limit number of tabs:"
-msgstr ""
-
-#: kateconfigdialog.cpp:181
-#, kde-format
-msgid "Unlimited"
-msgstr ""
-
-#: kateconfigdialog.cpp:192
-#, fuzzy, kde-format
-#| msgid "Sessions"
-msgid "Session"
-msgstr "Sesi"
-
-#: kateconfigdialog.cpp:193
-#, kde-format
-msgid "Session Management"
-msgstr "Pengurusan Sesi"
-
-#: kateconfigdialog.cpp:229
+#: kateconfigdialog.cpp:211
 #, kde-format
 msgid "Plugins"
 msgstr "Plugin"
 
-#: kateconfigdialog.cpp:230
+#: kateconfigdialog.cpp:212
 #, kde-format
 msgid "Plugin Manager"
 msgstr "Pengurus Plugin"
 
-#: kateconfigdialog.cpp:253 kateconfigdialog.cpp:254
+#: kateconfigdialog.cpp:230 kateconfigdialog.cpp:231
 #, kde-format
 msgid "User Feedback"
 msgstr ""
 
-#: kateconfigdialog.cpp:259
-#, fuzzy, kde-format
-msgid "Editor Component"
-msgstr "Pilih Komponen Penyunting"
-
-#: kateconfigdialog.cpp:261
-#, fuzzy, kde-format
-msgid "Editor Component Options"
-msgstr "Pilih Komponen Penyunting"
-
-#: kateconfigdialog.cpp:481
+#: kateconfigdialog.cpp:444
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The document '%1' has been modified, but not saved.<p>Do you want to "
@@ -300,7 +242,7 @@ msgstr ""
 "<p>Dokumen'%1' telah diubah suai, tetapi tidak disimpan.<p>Anda ingin "
 "menyimpan perubahan anda atau membuangnya?"
 
-#: kateconfigdialog.cpp:481
+#: kateconfigdialog.cpp:444
 #, kde-format
 msgid "Warning"
 msgstr ""
@@ -782,11 +724,6 @@ msgstr "Papar %1"
 #, fuzzy, kde-format
 msgid "Configure ..."
 msgstr "Paparan Sebelumnya"
-
-#: katemdi.cpp:533
-#, kde-format
-msgid "Behavior"
-msgstr "Peri Laku"
 
 #: katemdi.cpp:535
 #, kde-format
@@ -1770,15 +1707,60 @@ msgstr "Isi nama kumpulan baru:"
 msgid "Specify a new name for session: %1"
 msgstr "Isi nama kumpulan baru:"
 
+#. i18n: ectx: property (title), widget (QGroupBox, gbAppStartup)
+#: ui/sessionconfigwidget.ui:17
+#, fuzzy, kde-format
+msgid "Application Startup Behavior"
+msgstr "Aplikasi"
+
+#. i18n: ectx: property (text), widget (QRadioButton, startNewSessionRadioButton)
+#: ui/sessionconfigwidget.ui:23
+#, kde-format
+msgid "&Start new session"
+msgstr "Mula sesi baru"
+
+#. i18n: ectx: property (text), widget (QRadioButton, loadLastUserSessionRadioButton)
+#: ui/sessionconfigwidget.ui:30
+#, fuzzy, kde-format
+#| msgid "&Load last-used session"
+msgid "&Load last used session"
+msgstr "&Muatkan sesi yang terakhir digunakan"
+
+#. i18n: ectx: property (text), widget (QRadioButton, manuallyChooseSessionRadioButton)
+#: ui/sessionconfigwidget.ui:37
+#, kde-format
+msgid "&Manually choose a session"
+msgstr "Pilih sesi Secara &Manual"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/sessionconfigwidget.ui:47
+#, fuzzy, kde-format
+msgid "Application Shutdown Behavior"
+msgstr "Aplikasi"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, modCloseAfterLast)
+#: ui/sessionconfigwidget.ui:53
+#, kde-format
+msgid ""
+"If enabled, Kate will shutdown when the last file being edited is closed, "
+"otherwise a blank page will open so that you can start a new file."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, modCloseAfterLast)
+#: ui/sessionconfigwidget.ui:56
+#, kde-format
+msgid "Close Kate entirely when the last file is closed"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, gbElements)
-#: ui/sessionconfigwidget.ui:29
+#: ui/sessionconfigwidget.ui:66
 #, fuzzy, kde-format
 #| msgid "Session Management"
 msgid "Session Elements"
 msgstr "Pengurusan Sesi"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/sessionconfigwidget.ui:35
+#: ui/sessionconfigwidget.ui:72
 #, kde-format
 msgid ""
 "The session contains the list of open documents, recently opened files list, "
@@ -1787,13 +1769,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: ui/sessionconfigwidget.ui:47
+#: ui/sessionconfigwidget.ui:84
 #, kde-format
 msgid "Maximum number of entries in recent file list:"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, restoreVC)
-#: ui/sessionconfigwidget.ui:75
+#: ui/sessionconfigwidget.ui:112
 #, fuzzy, kde-format
 #| msgid ""
 #| "Check this if you want all your views and frames restored each time you "
@@ -1806,36 +1788,59 @@ msgstr ""
 "setiap kali anda buka Kate"
 
 #. i18n: ectx: property (text), widget (QCheckBox, restoreVC)
-#: ui/sessionconfigwidget.ui:78
+#: ui/sessionconfigwidget.ui:115
 #, kde-format
 msgid "Include &window configuration"
 msgstr "Sertakan tetapan tetingkap"
 
-#. i18n: ectx: property (title), widget (QGroupBox, gbAppStartup)
-#: ui/sessionconfigwidget.ui:88
-#, fuzzy, kde-format
-#| msgid "Behavior on Application Startup"
-msgid "Behaviour on Application Startup"
-msgstr "Kelakuan ketika Permulaan Aplikasi"
-
-#. i18n: ectx: property (text), widget (QRadioButton, startNewSessionRadioButton)
-#: ui/sessionconfigwidget.ui:94
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, saveMetaInfos)
+#: ui/sessionconfigwidget.ui:125
 #, kde-format
-msgid "&Start new session"
-msgstr "Mula sesi baru"
+msgid ""
+"Check this if you want document configuration like for example bookmarks to "
+"be saved past editor sessions. The configuration will be restored if the "
+"document has not changed when reopened."
+msgstr ""
+"Tandakan jika anda ingin konfigurasi dokumen, misalnya tanda buku yang "
+"hendak disimpan melepasi sesi editor. Konfigurasi akan disimpan semula jika "
+"dokumen tidak diubah apabila dibuka semula."
 
-#. i18n: ectx: property (text), widget (QRadioButton, loadLastUserSessionRadioButton)
-#: ui/sessionconfigwidget.ui:101
-#, fuzzy, kde-format
-#| msgid "&Load last-used session"
-msgid "&Load last used session"
-msgstr "&Muatkan sesi yang terakhir digunakan"
-
-#. i18n: ectx: property (text), widget (QRadioButton, manuallyChooseSessionRadioButton)
-#: ui/sessionconfigwidget.ui:108
+#. i18n: ectx: property (title), widget (QGroupBox, saveMetaInfos)
+#: ui/sessionconfigwidget.ui:128
 #, kde-format
-msgid "&Manually choose a session"
-msgstr "Pilih sesi Secara &Manual"
+msgid "Keep &meta-information past sessions"
+msgstr "Pastikan maklumat &meta melepasi sesi"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: ui/sessionconfigwidget.ui:139
+#, kde-format
+msgid "&Delete unused meta-information after:"
+msgstr "&Hapuskan maklumat meta data yang tak diguna selepas:"
+
+#~ msgid "Application"
+#~ msgstr "Aplikasi"
+
+#~ msgid "General"
+#~ msgstr "Umum"
+
+#~ msgid "General Options"
+#~ msgstr "Pilihan Umum"
+
+#~ msgid "Meta-Information"
+#~ msgstr "Maklumat Meta"
+
+#, fuzzy
+#~ msgid "Editor Component"
+#~ msgstr "Pilih Komponen Penyunting"
+
+#, fuzzy
+#~ msgid "Editor Component Options"
+#~ msgstr "Pilih Komponen Penyunting"
+
+#, fuzzy
+#~| msgid "Behavior on Application Startup"
+#~ msgid "Behaviour on Application Startup"
+#~ msgstr "Kelakuan ketika Permulaan Aplikasi"
 
 #, fuzzy
 #~ msgid "&About Editor Component"
@@ -3171,10 +3176,6 @@ msgstr "Pilih sesi Secara &Manual"
 #, fuzzy
 #~ msgid "Show Macros"
 #~ msgstr "Papar Rekod DNSSEC"
-
-#, fuzzy
-#~ msgid "Parser Options"
-#~ msgstr "Pilihan Umum"
 
 #, fuzzy
 #~ msgid "Show Uses"
