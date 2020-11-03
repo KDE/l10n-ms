@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-30 02:47+0100\n"
+"POT-Creation-Date: 2020-11-03 02:38+0100\n"
 "PO-Revision-Date: 2006-05-07 16:35+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -3588,26 +3588,35 @@ msgstr ""
 msgid "Allow escape sequences for links"
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, enableMouseWheelZoomButton)
+#. i18n: ectx: property (text), widget (QLabel, allowLinkEscapeSequenceButtonWarning)
 #: widgets/EditProfileMousePage.ui:359
+#, kde-format
+msgid ""
+"<b>WARNING</b>: This has security implications as it allows malicious URLs "
+"to be shown as another URL or hidden.<br>Make sure you understand the "
+"implications before turning this on."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, enableMouseWheelZoomButton)
+#: widgets/EditProfileMousePage.ui:375
 #, kde-format
 msgid "Pressing Ctrl+scrollwheel will increase/decrease the text size."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, enableMouseWheelZoomButton)
-#: widgets/EditProfileMousePage.ui:362
+#: widgets/EditProfileMousePage.ui:378
 #, kde-format
 msgid "Allow Ctrl+scrollwheel to zoom text size"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: widgets/EditProfileMousePage.ui:369
+#: widgets/EditProfileMousePage.ui:385
 #, kde-format
 msgid "Allowed link formats"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, openLinksByDirectClickButton)
-#: widgets/EditProfileMousePage.ui:385
+#: widgets/EditProfileMousePage.ui:401
 #, kde-format
 msgid ""
 "Text recognized as a file, link or an email address can be opened by direct "
@@ -3615,7 +3624,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, openLinksByDirectClickButton)
-#: widgets/EditProfileMousePage.ui:388
+#: widgets/EditProfileMousePage.ui:404
 #, kde-format
 msgid "Open by direct click"
 msgstr ""
@@ -4050,7 +4059,7 @@ msgctxt "@info:tooltip"
 msgid "Insert remote title format"
 msgstr ""
 
-#: widgets/TerminalHeaderBar.cpp:95
+#: widgets/TerminalHeaderBar.cpp:95 widgets/TerminalHeaderBar.cpp:196
 #, fuzzy, kde-format
 #| msgid "C&lear Terminal"
 msgctxt "@info:tooltip"
@@ -4063,6 +4072,13 @@ msgstr "Kosongkan Termina&l"
 msgctxt "@info:tooltip"
 msgid "Close terminal"
 msgstr "Kosongkan Termina&l"
+
+#: widgets/TerminalHeaderBar.cpp:194
+#, fuzzy, kde-format
+#| msgid "&Reset && Clear Terminal"
+msgctxt "@info:tooltip"
+msgid "Restore terminal"
+msgstr "Ulangtetap && Kosongkan Terminal"
 
 #: widgets/ViewContainer.cpp:73
 #, fuzzy, kde-format
@@ -4193,12 +4209,6 @@ msgstr "Tutup sesi semasa"
 #~| msgid "Clear &History"
 #~ msgid "Tab bar visibility:"
 #~ msgstr "Kosong&kan Sejarah"
-
-#, fuzzy
-#~| msgid "&Reset && Clear Terminal"
-#~ msgctxt "@action Shortcut entry"
-#~ msgid "Restore other terminals"
-#~ msgstr "Ulangtetap && Kosongkan Terminal"
 
 #, fuzzy
 #~| msgid "C&lose Session"
