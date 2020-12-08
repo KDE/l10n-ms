@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-12-04 08:19+0100\n"
+"POT-Creation-Date: 2020-12-08 08:21+0100\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -22314,9 +22314,9 @@ msgstr "Tiada"
 
 #. i18n: ectx: property (prefix), widget (QStackedWidget, thresholdModeStackedWidget)
 #. i18n: ectx: property (prefix), widget (QStackedWidget, alphaModeStackedWidget)
-#. i18n: ectx: property (prefix), widget (QStackedWidget, colorModeStackedWidget)
+#. i18n: ectx: property (prefix), widget (QStackedWidget, stackedWidgetColorMode)
 #: libs/ui/widgets/KisDitherWidget.ui:74
-#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:128
+#: plugins/filters/gradientmap/KisGradientMapFilterConfigWidget.ui:142
 #: plugins/filters/palettize/palettize.ui:207
 #, fuzzy, kde-format
 msgid "Amount:  "
@@ -22494,12 +22494,10 @@ msgstr "Atop"
 #. i18n: ectx: property (text), widget (KisColorButton, btnSlope)
 #. i18n: ectx: property (text), widget (KisColorButton, btnPower)
 #. i18n: ectx: property (text), widget (KisColorButton, btnOffset)
-#. i18n: ectx: property (text), widget (KoColorPopupButton, btnGradientChooser)
 #: libs/ui/widgets/KoFillConfigWidget.ui:361
 #: plugins/filters/asccdl/wdg_asccdl.ui:17
 #: plugins/filters/asccdl/wdg_asccdl.ui:24
 #: plugins/filters/asccdl/wdg_asccdl.ui:45
-#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:64
 #: plugins/flake/textshape/dialogs/TableOfContentsConfigure.ui:85
 #: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:198
 #, kde-format
@@ -30842,53 +30840,63 @@ msgstr "&Gauss Kabur"
 msgid "Gaussian High Pass"
 msgstr "berlekuk"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, GradientMapConfigWidget)
-#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:14
-#: plugins/filters/gradientmap/KisGradientMapFilter.h:55
+#: plugins/filters/gradientmap/KisGradientMapFilter.cpp:31
+#, fuzzy, kde-format
+msgid "&Gradient Map..."
+msgstr "Kecerunan"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, GradientMapFilterConfigWidget)
+#: plugins/filters/gradientmap/KisGradientMapFilter.h:26
+#: plugins/filters/gradientmap/KisGradientMapFilterConfigWidget.ui:14
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:201
 #: plugins/paintops/libpaintop/kis_texture_chooser.cpp:55
 #, fuzzy, kde-format
 msgid "Gradient Map"
 msgstr "Kecerunan"
 
-#. i18n: ectx: property (text), widget (QLabel, gradientLabel)
-#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:46
+#: plugins/filters/gradientmap/KisGradientMapFilterConfiguration.h:61
+#: plugins/generators/gradient/KisGradientGeneratorConfiguration.h:179
 #, fuzzy, kde-format
-msgid "Gradient:"
-msgstr "Kecerunan"
+msgctxt "Default gradient name for the gradient generator"
+msgid "Unnamed"
+msgstr "Halus"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabGradientColors)
+#: plugins/filters/gradientmap/KisGradientMapFilterConfigWidget.ui:39
+#: plugins/generators/gradient/KisGradientGeneratorConfigWidget.ui:476
+#, fuzzy, kde-format
+msgid "Gradient Colors"
+msgstr "Alat Kecerunan"
 
 #. i18n: ectx: property (text), widget (QLabel, colorModeLabel)
-#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:82
+#. i18n: ectx: attribute (title), widget (QWidget, tabColorMode)
+#: plugins/filters/gradientmap/KisGradientMapFilterConfigWidget.ui:90
+#: plugins/filters/palettize/palettize.ui:105
 #, fuzzy, kde-format
-msgid "Color Mode:"
+msgid "Color Mode"
 msgstr "Warna"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, colorModeComboBox)
-#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:98
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxColorMode)
+#: plugins/filters/gradientmap/KisGradientMapFilterConfigWidget.ui:112
 #, fuzzy, kde-format
 msgid "Blend"
 msgstr "Tebal"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, colorModeComboBox)
-#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:103
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxColorMode)
+#: plugins/filters/gradientmap/KisGradientMapFilterConfigWidget.ui:117
 #, fuzzy, kde-format
 msgid "Nearest"
 msgstr "Ricik sudut X:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, ditherGroupBox)
 #. i18n: ectx: property (text), item, widget (QComboBox, alphaModeComboBox)
-#. i18n: ectx: property (text), item, widget (QComboBox, colorModeComboBox)
-#: plugins/filters/gradientmap/KisGradientMapConfigWidget.ui:108
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxColorMode)
+#: plugins/filters/gradientmap/KisGradientMapFilterConfigWidget.ui:122
 #: plugins/filters/palettize/palettize.ui:76
 #: plugins/filters/palettize/palettize.ui:187
 #, fuzzy, kde-format
 msgid "Dither"
 msgstr "Kulit"
-
-#: plugins/filters/gradientmap/KisGradientMapFilter.cpp:56
-#, fuzzy, kde-format
-msgid "&Gradient Map..."
-msgstr "Kecerunan"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tabScreenGenerator)
 #: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:45
@@ -31189,12 +31197,6 @@ msgstr "Puncak:"
 #| msgid "Named Colors"
 msgid "Nearest Colors"
 msgstr "Warna yang Dinamakan"
-
-#. i18n: ectx: property (text), widget (QLabel, colorModeLabel)
-#: plugins/filters/palettize/palettize.ui:105
-#, fuzzy, kde-format
-msgid "Color Mode"
-msgstr "Warna"
 
 #. i18n: ectx: property (text), widget (QLabel, alphaModeLabel)
 #: plugins/filters/palettize/palettize.ui:166
@@ -33777,12 +33779,6 @@ msgstr "Topeng alfa"
 msgid "&Gradient..."
 msgstr "Kecerunan"
 
-#: plugins/generators/gradient/KisGradientGeneratorConfiguration.h:179
-#, fuzzy, kde-format
-msgctxt "Default gradient name for the gradient generator"
-msgid "Unnamed"
-msgstr "Halus"
-
 #: plugins/generators/gradient/KisGradientGeneratorConfigWidget.cpp:38
 #: plugins/tools/basictools/kis_tool_gradient.cc:247
 #, fuzzy, kde-format
@@ -33949,12 +33945,6 @@ msgstr "Pemilihan Skala"
 #, fuzzy, kde-format
 msgid "Polar Coordinates"
 msgstr "Pemilihan Skala"
-
-#. i18n: ectx: attribute (title), widget (QWidget, tabGradientColors)
-#: plugins/generators/gradient/KisGradientGeneratorConfigWidget.ui:476
-#, fuzzy, kde-format
-msgid "Gradient Colors"
-msgstr "Alat Kecerunan"
 
 #: plugins/generators/multigridpattern/kis_wdg_multigrid_pattern.cpp:47
 #, fuzzy, kde-format
@@ -44838,6 +44828,14 @@ msgstr "Margin"
 #, kde-format
 msgid "Work Recursively"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Gradient:"
+#~ msgstr "Kecerunan"
+
+#, fuzzy
+#~ msgid "Color Mode:"
+#~ msgstr "Warna"
 
 #, fuzzy
 #~ msgid "Outline Selection"
