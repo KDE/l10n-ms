@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: juk\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-30 00:17+0000\n"
+"POT-Creation-Date: 2021-05-09 00:18+0000\n"
 "PO-Revision-Date: 2008-07-22 01:03+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -111,7 +111,7 @@ msgid "Remove Cover"
 msgstr "Buang kulit album"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CoverDialogBase)
-#: coverdialogbase.ui:14 playlistcollection.cpp:984
+#: coverdialogbase.ui:14 playlistcollection.cpp:991
 #, kde-format
 msgid "Cover Manager"
 msgstr "Pengurus Kulit Album"
@@ -226,7 +226,7 @@ msgstr ""
 msgid "Import playlists"
 msgstr "Import senarai siar"
 
-#: exampleoptions.cpp:56 main.cpp:63 playermanager.cpp:398 playlist.cpp:1383
+#: exampleoptions.cpp:56 main.cpp:63 playermanager.cpp:398 playlist.cpp:1416
 #: systemtray.cpp:491 systemtray.cpp:502
 #, kde-format
 msgid "JuK"
@@ -310,19 +310,19 @@ msgid "Title"
 msgstr "Judul"
 
 #. i18n: ectx: property (text), widget (KLineEdit, m_exampleArtist)
-#: exampleoptionsbase.ui:221 playlist.cpp:1368 tagrenameroptions.cpp:104
+#: exampleoptionsbase.ui:221 playlist.cpp:1401 tagrenameroptions.cpp:104
 #, kde-format
 msgid "Artist"
 msgstr "Artis"
 
 #. i18n: ectx: property (text), widget (KLineEdit, m_exampleAlbum)
-#: exampleoptionsbase.ui:228 playlist.cpp:1369 tagrenameroptions.cpp:108
+#: exampleoptionsbase.ui:228 playlist.cpp:1402 tagrenameroptions.cpp:108
 #, kde-format
 msgid "Album"
 msgstr "Album"
 
 #. i18n: ectx: property (text), widget (KLineEdit, m_exampleGenre)
-#: exampleoptionsbase.ui:235 playlist.cpp:1372 tagrenameroptions.cpp:117
+#: exampleoptionsbase.ui:235 playlist.cpp:1405 tagrenameroptions.cpp:117
 #, kde-format
 msgid "Genre"
 msgstr "Genre"
@@ -1166,124 +1166,138 @@ msgid ""
 "following reason:<nl/><message>%2</message>"
 msgstr ""
 
-#: playlist.cpp:342
+#: playlist.cpp:344
 #, kde-format
 msgid "Could not save to file %1."
 msgstr "Tidak dapat simpan ke fail %1."
 
-#: playlist.cpp:612
+#: playlist.cpp:577
+#, fuzzy, kde-format
+#| msgid ""
+#| "You are about to rename the following files. Are you sure you want to "
+#| "continue?"
+msgid ""
+"You are about to open %1 directories. Are you sure you want to continue?"
+msgstr "Anda akan menamakan semula fail berikut. Anda pasti ingin teruskan?"
+
+#: playlist.cpp:578 playlistcollection.cpp:985
+#, kde-format
+msgid "Open Containing Folder"
+msgstr ""
+
+#: playlist.cpp:645
 #, kde-format
 msgid "Are you sure you want to delete these covers?"
 msgstr "Anda pasti ingin menghapuskan kulit album ini?"
 
-#: playlist.cpp:614
+#: playlist.cpp:647
 #, kde-format
 msgid "&Delete Covers"
 msgstr "&Hapuskan Kulit Album"
 
-#: playlist.cpp:643
+#: playlist.cpp:676
 #, kde-format
 msgid "Select Cover Image File"
 msgstr "Pilih Fail Imej Kulit Album"
 
-#: playlist.cpp:645
+#: playlist.cpp:678
 #, kde-format
 msgid "Images (*.png *.jpg)"
 msgstr ""
 
-#: playlist.cpp:843
+#: playlist.cpp:876
 #, kde-format
 msgid "Could not delete these files"
 msgstr "Tidak dapat menghapuskan fail ini"
 
-#: playlist.cpp:844
+#: playlist.cpp:877
 #, kde-format
 msgid "Could not move these files to the Trash"
 msgstr "Tidak dapat mengalihkan fail ini ke Tong Sampah"
 
-#: playlist.cpp:1367
+#: playlist.cpp:1400
 #, kde-format
 msgid "Track Name"
 msgstr "Nama Trek"
 
-#: playlist.cpp:1370
+#: playlist.cpp:1403
 #, kde-format
 msgid "Cover"
 msgstr "Kulit album"
 
-#: playlist.cpp:1371 tagrenameroptions.cpp:112
+#: playlist.cpp:1404 tagrenameroptions.cpp:112
 #, fuzzy, kde-format
 #| msgid "Track"
 msgctxt "cd track number"
 msgid "Track"
 msgstr "Trek"
 
-#: playlist.cpp:1373 tagrenameroptions.cpp:121
+#: playlist.cpp:1406 tagrenameroptions.cpp:121
 #, kde-format
 msgid "Year"
 msgstr "Tahun"
 
-#: playlist.cpp:1374
+#: playlist.cpp:1407
 #, kde-format
 msgid "Length"
 msgstr "Panjang"
 
-#: playlist.cpp:1375
+#: playlist.cpp:1408
 #, kde-format
 msgid "Bitrate"
 msgstr "Kadar bit"
 
-#: playlist.cpp:1376
+#: playlist.cpp:1409
 #, kde-format
 msgid "Comment"
 msgstr "Komen"
 
-#: playlist.cpp:1377
+#: playlist.cpp:1410
 #, kde-format
 msgid "File Name"
 msgstr "Nama Fail"
 
-#: playlist.cpp:1378
+#: playlist.cpp:1411
 #, kde-format
 msgid "File Name (full path)"
 msgstr "Nama Fail (laluan penuh)"
 
-#: playlist.cpp:1569
+#: playlist.cpp:1602
 #, kde-format
 msgid "&Show Columns"
 msgstr "&Papar Lajur"
 
-#: playlist.cpp:1676
+#: playlist.cpp:1709
 #, kde-format
 msgid "Add to Play Queue"
 msgstr "Tambah ke Baris Gilir Main"
 
-#: playlist.cpp:1690 playlist.cpp:2147
+#: playlist.cpp:1723 playlist.cpp:2181
 #, fuzzy, kde-format
 msgid "Edit"
 msgstr "Edit '%1'"
 
-#: playlist.cpp:1705
+#: playlist.cpp:1739
 #, kde-format
 msgid "Create Playlist From Selected Items..."
 msgstr "Cipta Senarai Siar daripada Item yang Dipilih..."
 
-#: playlist.cpp:2061
+#: playlist.cpp:2095
 #, kde-format
 msgid "Edit '%1'"
 msgstr "Edit '%1'"
 
-#: playlist.cpp:2145
+#: playlist.cpp:2179
 #, kde-format
 msgid "This will edit multiple files. Are you sure?"
 msgstr "Ini akan mengedit banyak fail. Anda pasti?"
 
-#: playlist.cpp:2204 playlistcollection.h:190
+#: playlist.cpp:2238 playlistcollection.h:191
 #, kde-format
 msgid "Create New Playlist"
 msgstr "Cipta Senarai Siar Baru"
 
-#: playlist.cpp:2213
+#: playlist.cpp:2247
 #, fuzzy, kde-format
 #| msgid ""
 #| "Manual column widths have been enabled.  You can switch back to automatic "
@@ -1295,7 +1309,7 @@ msgstr ""
 "Lebar lajur manual diaktifkan. Anda boleh menukarkannya semula ke saiz lajur "
 "automatik dalam menu paparan."
 
-#: playlist.cpp:2216
+#: playlist.cpp:2250
 #, kde-format
 msgid "Manual Column Widths Enabled"
 msgstr "Lebar Lajur Manual Diaktifkan"
@@ -1353,7 +1367,7 @@ msgstr "&Keluarkan"
 msgid "Hid&e"
 msgstr "&Sembunyi"
 
-#: playlistbox.cpp:619 playlistcollection.cpp:969
+#: playlistbox.cpp:619 playlistcollection.cpp:974
 #, kde-format
 msgid "R&emove"
 msgstr "&Keluarkan"
@@ -1392,152 +1406,152 @@ msgstr "Koleksi"
 msgid "Rename"
 msgstr "Namakan semula"
 
-#: playlistcollection.cpp:534
+#: playlistcollection.cpp:539
 #, kde-format
 msgid "Search Playlist"
 msgstr "Cari Senarai Siar"
 
-#: playlistcollection.cpp:559
+#: playlistcollection.cpp:564
 #, kde-format
 msgid "Create Folder Playlist"
 msgstr "Cipta Senarai Siar Folder"
 
-#: playlistcollection.cpp:599
+#: playlistcollection.cpp:604
 #, kde-format
 msgid "History"
 msgstr "Sejarah"
 
-#: playlistcollection.cpp:765
+#: playlistcollection.cpp:770
 #, kde-format
 msgid "Please enter a name for this playlist:"
 msgstr "Masukkan nama senarai siar ini:"
 
-#: playlistcollection.cpp:913
+#: playlistcollection.cpp:918
 #, fuzzy, kde-format
 #| msgid "&New"
 msgctxt "new playlist"
 msgid "&New"
 msgstr "&Baru"
 
-#: playlistcollection.cpp:916
+#: playlistcollection.cpp:921
 #, kde-format
 msgid "&Empty Playlist..."
 msgstr "&Kosongkan Senarai Siar..."
 
-#: playlistcollection.cpp:920
+#: playlistcollection.cpp:925
 #, kde-format
 msgid "&Search Playlist..."
 msgstr "&Cari Senarai Siar..."
 
-#: playlistcollection.cpp:924
+#: playlistcollection.cpp:929
 #, kde-format
 msgid "Playlist From &Folder..."
 msgstr "Senarai Siar daripada &Folder..."
 
-#: playlistcollection.cpp:932
+#: playlistcollection.cpp:937
 #, kde-format
 msgid "&Guess Tag Information"
 msgstr "&Teka Maklumat Tag"
 
-#: playlistcollection.cpp:937
+#: playlistcollection.cpp:942
 #, kde-format
 msgid "From &File Name"
 msgstr "Daripada &Nama Fail"
 
-#: playlistcollection.cpp:941
+#: playlistcollection.cpp:946
 #, kde-format
 msgid "From &Internet"
 msgstr "Daripada &Internet"
 
-#: playlistcollection.cpp:946
+#: playlistcollection.cpp:951
 #, kde-format
 msgid "Guess Tag Information From &File Name"
 msgstr "Teka Maklumat Tag daripada &Nama Fail"
 
-#: playlistcollection.cpp:953
+#: playlistcollection.cpp:958
 #, kde-format
 msgid "Play First Track"
 msgstr "Main Trek Pertama"
 
-#: playlistcollection.cpp:955
+#: playlistcollection.cpp:960
 #, kde-format
 msgid "Play Next Album"
 msgstr "Main Album Berikutnya"
 
-#: playlistcollection.cpp:962
+#: playlistcollection.cpp:967
 #, fuzzy, kde-format
 #| msgid "Add &Folder..."
 msgid "Manage &Folders..."
 msgstr "Tambah &Folder..."
 
-#: playlistcollection.cpp:964
+#: playlistcollection.cpp:969
 #, kde-format
 msgid "&Rename..."
 msgstr "&Namakan semula..."
 
-#: playlistcollection.cpp:966
+#: playlistcollection.cpp:971
 #, fuzzy, kde-format
 #| msgid "D&uplicate..."
 msgctxt "verb, copy the playlist"
 msgid "D&uplicate..."
 msgstr "Buat &Duplikasi"
 
-#: playlistcollection.cpp:971
+#: playlistcollection.cpp:976
 #, kde-format
 msgid "Reload"
 msgstr ""
 
-#: playlistcollection.cpp:973
+#: playlistcollection.cpp:978
 #, kde-format
 msgid "Edit Search..."
 msgstr "Edit Cari..."
 
-#: playlistcollection.cpp:976
+#: playlistcollection.cpp:981
 #, fuzzy, kde-format
 msgid "&Delete"
 msgstr "&Hapuskan Kulit Album"
 
-#: playlistcollection.cpp:978
+#: playlistcollection.cpp:983
 #, kde-format
 msgid "Refresh"
 msgstr "Muat semula"
 
-#: playlistcollection.cpp:980
+#: playlistcollection.cpp:987
 #, kde-format
 msgid "&Rename File"
 msgstr "&Namakan semula Fail"
 
-#: playlistcollection.cpp:987
+#: playlistcollection.cpp:994
 #, kde-format
 msgid "&View Cover"
 msgstr "&Paparkan Kulit Album"
 
-#: playlistcollection.cpp:989
+#: playlistcollection.cpp:996
 #, kde-format
 msgid "Get Cover From &File..."
 msgstr "Dapatkan Kulit Album daripada &Fail..."
 
-#: playlistcollection.cpp:992
+#: playlistcollection.cpp:999
 #, kde-format
 msgid "Get Cover From &Internet..."
 msgstr "Dapatkan Kulit Album daripada &Internet..."
 
-#: playlistcollection.cpp:996
+#: playlistcollection.cpp:1003
 #, kde-format
 msgid "&Delete Cover"
 msgstr "&Hapuskan Kulit Album"
 
-#: playlistcollection.cpp:998
+#: playlistcollection.cpp:1005
 #, kde-format
 msgid "Show Cover &Manager"
 msgstr "Papar &Pengurus Kulit Album"
 
-#: playlistcollection.cpp:1002
+#: playlistcollection.cpp:1009
 #, kde-format
 msgid "Show &Play Queue"
 msgstr "Papar &Baris Gilir Main"
 
-#: playlistcollection.h:193
+#: playlistcollection.h:194
 #, kde-format
 msgid "Playlist"
 msgstr "Senarai siar"
