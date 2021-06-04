@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-05-31 00:17+0000\n"
+"POT-Creation-Date: 2021-06-04 00:20+0000\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1276,7 +1276,6 @@ msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:271
 #: printing/calprintmonthconfig_base.ui:171
-#: printing/calprinttodoconfig_base.ui:259
 #: printing/calprintweekconfig_base.ui:291
 #, fuzzy, kde-format
 #| msgid "Exclude holidays"
@@ -1367,10 +1366,8 @@ msgid "Check this option if you want to see the item descriptions printed."
 msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeDescription)
-#. i18n: ectx: property (text), widget (QCheckBox, mDescription)
 #: printing/calprintdayconfig_base.ui:326
 #: printing/calprintmonthconfig_base.ui:206
-#: printing/calprinttodoconfig_base.ui:297
 #: printing/calprintweekconfig_base.ui:323
 #, fuzzy, kde-format
 #| msgid "&Description"
@@ -1381,7 +1378,7 @@ msgstr "&Huraian"
 #: printing/calprintdayconfig_base.ui:336
 #: printing/calprintincidenceconfig_base.ui:105
 #: printing/calprintmonthconfig_base.ui:258
-#: printing/calprinttodoconfig_base.ui:410
+#: printing/calprinttodoconfig_base.ui:453
 #: printing/calprintweekconfig_base.ui:356
 #, fuzzy, kde-format
 #| msgid "General"
@@ -1434,7 +1431,7 @@ msgstr "&Paparkan waktu sebagai:"
 #: printing/calprintdayconfig_base.ui:365
 #: printing/calprintincidenceconfig_base.ui:137
 #: printing/calprintmonthconfig_base.ui:316
-#: printing/calprinttodoconfig_base.ui:436
+#: printing/calprinttodoconfig_base.ui:479
 #: printing/calprintweekconfig_base.ui:398
 #, fuzzy, kde-format
 msgid "Print a datetime footer on each page"
@@ -1444,7 +1441,7 @@ msgstr "Mencetak semua peristiwa satu minggu dalam satu muka surat"
 #: printing/calprintdayconfig_base.ui:368
 #: printing/calprintincidenceconfig_base.ui:140
 #: printing/calprintmonthconfig_base.ui:319
-#: printing/calprinttodoconfig_base.ui:439
+#: printing/calprinttodoconfig_base.ui:482
 #: printing/calprintweekconfig_base.ui:401
 #, fuzzy, kde-format
 msgid ""
@@ -1456,7 +1453,7 @@ msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
 #: printing/calprintdayconfig_base.ui:371
 #: printing/calprintincidenceconfig_base.ui:143
 #: printing/calprintmonthconfig_base.ui:322
-#: printing/calprinttodoconfig_base.ui:442
+#: printing/calprinttodoconfig_base.ui:485
 #: printing/calprintweekconfig_base.ui:404
 #, fuzzy, kde-format
 msgid "Print &Footer"
@@ -1861,84 +1858,96 @@ msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:1439
+#: printing/calprintdefaultplugins.cpp:1443
 #, fuzzy, kde-format
 #| msgid "&Title:"
 msgctxt "@option sort by title"
 msgid "Title"
 msgstr "&Tajuk:"
 
-#: printing/calprintdefaultplugins.cpp:1440
+#: printing/calprintdefaultplugins.cpp:1444
 #, fuzzy, kde-format
 #| msgid "Start Date"
 msgctxt "@option sort by start date/time"
 msgid "Start Date"
 msgstr "Tarikh Mula"
 
-#: printing/calprintdefaultplugins.cpp:1441
+#: printing/calprintdefaultplugins.cpp:1445
 #, fuzzy, kde-format
 #| msgid "Due Date"
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
 msgstr "Tarikh Cukup Tempoh"
 
-#: printing/calprintdefaultplugins.cpp:1442
+#: printing/calprintdefaultplugins.cpp:1446
 #, fuzzy, kde-format
 #| msgid "Priority"
 msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "Keutamaan"
 
-#: printing/calprintdefaultplugins.cpp:1443
+#: printing/calprintdefaultplugins.cpp:1447
 #, fuzzy, kde-format
 #| msgid "Percent Complete"
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "Peratusan Siap"
 
-#: printing/calprintdefaultplugins.cpp:1449
+#: printing/calprintdefaultplugins.cpp:1453
 #, fuzzy, kde-format
 #| msgid "Ascending"
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr "Menaik"
 
-#: printing/calprintdefaultplugins.cpp:1450
+#: printing/calprintdefaultplugins.cpp:1454
 #, fuzzy, kde-format
 #| msgid "Descending"
 msgctxt "@option sort in descreasing order"
 msgid "Descending"
 msgstr "Menurun"
 
-#: printing/calprintdefaultplugins.cpp:1462
+#: printing/calprintdefaultplugins.cpp:1466
 #, kde-format
 msgid "To-do list"
 msgstr "Senarai tugasan"
 
-#: printing/calprintdefaultplugins.cpp:1514
-#: printing/calprintpluginbase.cpp:2007
+#: printing/calprintdefaultplugins.cpp:1521
+#: printing/calprintpluginbase.cpp:2024
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: printing/calprintdefaultplugins.cpp:1524
+#: printing/calprintdefaultplugins.cpp:1532
 #, kde-format
 msgid "Priority"
 msgstr "Keutamaan"
 
-#: printing/calprintdefaultplugins.cpp:1533
+#: printing/calprintdefaultplugins.cpp:1542
 #, fuzzy, kde-format
 #| msgid "Due"
 msgctxt "@label to-do due date"
 msgid "Due"
 msgstr "Cukup Tempoh"
 
-#: printing/calprintdefaultplugins.cpp:1544
+#: printing/calprintdefaultplugins.cpp:1552
+#, fuzzy, kde-format
+msgctxt "@label to-do start date"
+msgid "Start"
+msgstr "&Mula:"
+
+#: printing/calprintdefaultplugins.cpp:1562
 #, fuzzy, kde-format
 #| msgid "Complete"
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "Selesai"
+
+#: printing/calprintdefaultplugins.cpp:1572
+#, kde-format
+msgctxt "@label to-do categories"
+msgid "Tags"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:36
 #, fuzzy, kde-format
@@ -2501,24 +2510,24 @@ msgstr "  (Cukup tempoh: %1)"
 msgid "To-do: %1"
 msgstr "Tugasan: %1"
 
-#: printing/calprintpluginbase.cpp:2142
+#: printing/calprintpluginbase.cpp:2185
 #, kde-format
 msgctxt "Description - date"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: printing/calprintpluginbase.cpp:2161
+#: printing/calprintpluginbase.cpp:2204
 #, kde-format
 msgid "Person: %1"
 msgstr "Orang: %1"
 
-#: printing/calprintpluginbase.cpp:2182
+#: printing/calprintpluginbase.cpp:2225
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2 - %3"
 msgstr "%1 %2 - %3"
 
-#: printing/calprintpluginbase.cpp:2188
+#: printing/calprintpluginbase.cpp:2231
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2 - %3 %4"
@@ -2579,7 +2588,7 @@ msgstr "Cetak semu&a tugasan"
 #: printing/calprinttodoconfig_base.ui:90
 #, fuzzy, kde-format
 #| msgid "Print &unfinished to-dos only"
-msgid "Print unfinished to-dos onl&y"
+msgid "Print &uncompleted to-dos only"
 msgstr "Cetak tugasan &belum siap sahaja"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintDueRange)
@@ -2588,52 +2597,149 @@ msgstr "Cetak tugasan &belum siap sahaja"
 msgid "Print only to-dos due in the &range:"
 msgstr "Cetak hanya tugasan yang cukup tempoh dalam &julat:"
 
-#. i18n: ectx: property (text), widget (QCheckBox, mPriority)
+#. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
+#: printing/calprinttodoconfig_base.ui:259
+#, fuzzy, kde-format
+#| msgid "Exclude holidays"
+msgid "Exclude &confidential"
+msgstr "Keluarkan hari cuti"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mDescription)
+#: printing/calprinttodoconfig_base.ui:297
+#, kde-format
+msgid "&Description"
+msgstr "&Huraian"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
 #: printing/calprinttodoconfig_base.ui:304
+#, fuzzy, kde-format
+#| msgid "Print list"
+msgid "Print item tags"
+msgstr "Cetak senarai"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
+#: printing/calprinttodoconfig_base.ui:307
+#, fuzzy, kde-format
+msgid "Check this option if you want to see the item tags printed."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mCategories)
+#: printing/calprinttodoconfig_base.ui:310
+#, kde-format
+msgid "Ta&gs"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
+#: printing/calprinttodoconfig_base.ui:317
+#, fuzzy, kde-format
+#| msgid "&Description"
+msgid "Print item priorities"
+msgstr "&Huraian"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mPriority)
+#: printing/calprinttodoconfig_base.ui:320
+#, fuzzy, kde-format
+msgid "Check this option if you want to see the item priorities printed."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mPriority)
+#: printing/calprinttodoconfig_base.ui:323
 #, kde-format
 msgid "&Priority"
 msgstr "&Keutamaan"
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mStartDate)
+#: printing/calprinttodoconfig_base.ui:333
+#, fuzzy, kde-format
+msgid "Print item start dates"
+msgstr "Tarikh mula:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mStartDate)
+#: printing/calprinttodoconfig_base.ui:336
+#, fuzzy, kde-format
+msgid ""
+"Check this option if you want to see the item start dates (when work can "
+"begin) printed."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mStartDate)
+#: printing/calprinttodoconfig_base.ui:339
+#, fuzzy, kde-format
+#| msgid "&Start date:"
+msgid "&Start date"
+msgstr "Tarikh &mula:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
+#: printing/calprinttodoconfig_base.ui:346
+#, fuzzy, kde-format
+#| msgid "&Description"
+msgid "Print item due dates"
+msgstr "&Huraian"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mDueDate)
+#: printing/calprinttodoconfig_base.ui:349
+#, fuzzy, kde-format
+msgid "Check this option if you want to see the item due dates printed."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
 #. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
-#: printing/calprinttodoconfig_base.ui:314
-#, kde-format
-msgid "Due date"
+#: printing/calprinttodoconfig_base.ui:352
+#, fuzzy, kde-format
+#| msgid "Due date"
+msgid "Du&e date"
 msgstr "Tarikh cukup tempoh"
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
+#: printing/calprinttodoconfig_base.ui:362
+#, fuzzy, kde-format
+#| msgid "&Description"
+msgid "Print item completion percentage"
+msgstr "&Huraian"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mPercentComplete)
+#: printing/calprinttodoconfig_base.ui:365
+#, fuzzy, kde-format
+msgid ""
+"Check this option if you want to see the item completion percentage printed "
+"as a number and bar graph."
+msgstr "Semak opsyen ini jika anda ingin saat dalam garis Marcus Bains."
+
 #. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
-#: printing/calprinttodoconfig_base.ui:327
-#, kde-format
-msgid "Per&centage completed"
+#: printing/calprinttodoconfig_base.ui:368
+#, fuzzy, kde-format
+#| msgid "Per&centage completed"
+msgid "Percentage co&mpleted"
 msgstr "&Peratusan selesai"
 
 #. i18n: ectx: property (title), widget (QGroupBox, sortingOptionsBox)
-#: printing/calprinttodoconfig_base.ui:344
+#: printing/calprinttodoconfig_base.ui:387
 #, kde-format
 msgid "Sorting Options"
 msgstr "Mengisih Opsyen"
 
 #. i18n: ectx: property (text), widget (QLabel, sortFieldLabel)
-#: printing/calprinttodoconfig_base.ui:358
+#: printing/calprinttodoconfig_base.ui:401
 #, kde-format
 msgid "Sort field:"
 msgstr "Isihkan medan:"
 
 #. i18n: ectx: property (text), widget (QLabel, sortDirectionLabel)
-#: printing/calprinttodoconfig_base.ui:385
+#: printing/calprinttodoconfig_base.ui:428
 #, kde-format
 msgid "Sort direction:"
 msgstr "Isihkan hala:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mConnectSubTodos)
-#: printing/calprinttodoconfig_base.ui:416
+#: printing/calprinttodoconfig_base.ui:459
 #, kde-format
 msgid "Co&nnect sub-to-dos with its parent"
 msgstr "&Sambungkan subtugasan dengan induknya"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
-#: printing/calprinttodoconfig_base.ui:426
-#, kde-format
-msgid "Strike &out completed to-do summaries"
+#: printing/calprinttodoconfig_base.ui:469
+#, fuzzy, kde-format
+#| msgid "Strike &out completed to-do summaries"
+msgid "Stri&ke out completed to-do summaries"
 msgstr "Potong ringkasan tugasan yang selesai"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -6603,11 +6709,6 @@ msgstr ""
 #~ "berjalan)?"
 
 #, fuzzy
-#~ msgctxt "@action:button start the reminder daemon"
-#~ msgid "Start"
-#~ msgstr "&Mula:"
-
-#, fuzzy
 #~ msgctxt "@action:button do not start the reminder daemon"
 #~ msgid "Do Not Start"
 #~ msgstr "Sebelum Pemulaan"
@@ -7142,9 +7243,6 @@ msgstr ""
 #~ msgctxt "@label in QuickSearchLine"
 #~ msgid "Search"
 #~ msgstr "Cari Dalam"
-
-#~ msgid "&Description"
-#~ msgstr "&Huraian"
 
 #~ msgid "Other Options"
 #~ msgstr "Opsyen Lain"
@@ -9214,11 +9312,6 @@ msgstr ""
 #~ msgctxt "@info:whatsthis"
 #~ msgid "Sets options related to the date and time of the event or to-do."
 #~ msgstr "Mengeset opsyen berkaitan tarikh dan waktu peristiwa atau tugasan."
-
-#, fuzzy
-#~ msgctxt "@info:tooltip"
-#~ msgid "Set the start date"
-#~ msgstr "Tarikh mula:"
 
 #, fuzzy
 #~| msgid "Sets the start time for this to-do."
