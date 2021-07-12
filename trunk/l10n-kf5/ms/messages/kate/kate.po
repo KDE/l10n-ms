@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-07-07 00:20+0000\n"
+"POT-Creation-Date: 2021-07-12 00:19+0000\n"
 "PO-Revision-Date: 2006-10-20 20:16+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -66,29 +66,29 @@ msgid "Sess&ions"
 msgstr "Ses&i"
 
 #. i18n: ectx: Menu (settings)
-#: data/kateui.rc:108
+#: data/kateui.rc:109
 #, fuzzy, kde-format
 msgid "&Settings"
 msgstr "Memulakan daemon APM: "
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: data/kateui.rc:115
+#: data/kateui.rc:116
 #, fuzzy, kde-format
 msgid "Main Toolbar"
 msgstr "Bar Alat"
 
 #. i18n: ectx: Menu (viewspace_popup_statusbar)
-#: data/kateui.rc:148
+#: data/kateui.rc:149
 #, kde-format
 msgid "&Status Bar Items"
 msgstr ""
 
-#: kateapp.cpp:215
+#: kateapp.cpp:235
 #, kde-format
 msgid "Folders can only be opened when the projects plugin is enabled"
 msgstr ""
 
-#: kateapp.cpp:324
+#: kateapp.cpp:344
 #, kde-format
 msgid ""
 "The file '%1' could not be opened: it is not a normal file, it is a folder."
@@ -104,7 +104,7 @@ msgstr ""
 msgid "Configure"
 msgstr ""
 
-#: kateconfigdialog.cpp:72 katemdi.cpp:510
+#: kateconfigdialog.cpp:72 katemdi.cpp:588
 #, kde-format
 msgid "Behavior"
 msgstr "Peri Laku"
@@ -326,7 +326,7 @@ msgstr ""
 "<p>Dokumen'%1' telah diubah suai, tetapi tidak disimpan.<p>Anda ingin "
 "menyimpan perubahan anda atau membuangnya?"
 
-#: katedocmanager.cpp:337
+#: katedocmanager.cpp:337 session/katesessionmanager.cpp:450
 #, kde-format
 msgid "Close Document"
 msgstr "Tutup Dokumen"
@@ -336,12 +336,12 @@ msgstr "Tutup Dokumen"
 msgid "Save As"
 msgstr "Simp&an Sebagai..."
 
-#: katedocmanager.cpp:364 katemainwindow.cpp:564
+#: katedocmanager.cpp:364 katemainwindow.cpp:568
 #, kde-format
 msgid "New file opened while trying to close Kate, closing aborted."
 msgstr "Fail baru dibuka semas cuba menutup Kate, penutupan dihenti paksa."
 
-#: katedocmanager.cpp:364 katemainwindow.cpp:564
+#: katedocmanager.cpp:364 katemainwindow.cpp:568
 #, kde-format
 msgid "Closing Aborted"
 msgstr "Menutup Dibatalkan"
@@ -666,91 +666,97 @@ msgstr "Sesi Baru"
 
 #: katemainwindow.cpp:453
 #, fuzzy, kde-format
+#| msgid "Save &As..."
+msgid "&Save as defaults"
+msgstr "Simp&an Sebagai..."
+
+#: katemainwindow.cpp:457
+#, fuzzy, kde-format
 #| msgid "&Save session"
 msgid "&Save Session"
 msgstr "&Simpan sesi"
 
-#: katemainwindow.cpp:457
+#: katemainwindow.cpp:461
 #, fuzzy, kde-format
 #| msgid "Save Session?"
 msgid "Save Session &As..."
 msgstr "Simpan Sesi?"
 
-#: katemainwindow.cpp:461
+#: katemainwindow.cpp:465
 #, fuzzy, kde-format
 #| msgid "Manage Sessions"
 msgid "&Manage Sessions..."
 msgstr "Uruskan Sesi"
 
-#: katemainwindow.cpp:466
+#: katemainwindow.cpp:470
 #, fuzzy, kde-format
 #| msgid "Open Session"
 msgid "&Quick Open Session"
 msgstr "Buka Sesi"
 
-#: katemainwindow.cpp:472
+#: katemainwindow.cpp:476
 #, kde-format
 msgid "Go back"
 msgstr ""
 
-#: katemainwindow.cpp:480
+#: katemainwindow.cpp:484
 #, kde-format
 msgid "Go forward"
 msgstr ""
 
-#: katemainwindow.cpp:491
+#: katemainwindow.cpp:495
 #, kde-format
 msgid "This will close all open documents. Are you sure you want to continue?"
 msgstr ""
 
-#: katemainwindow.cpp:492
+#: katemainwindow.cpp:496
 #, fuzzy, kde-format
 #| msgid "Close all open documents."
 msgid "Close all documents"
 msgstr "Tutup semua dokumen yang dibuka."
 
-#: katemainwindow.cpp:507
+#: katemainwindow.cpp:511
 #, kde-format
 msgid ""
 "This will close all open documents beside the current one. Are you sure you "
 "want to continue?"
 msgstr ""
 
-#: katemainwindow.cpp:508
+#: katemainwindow.cpp:512
 #, fuzzy, kde-format
 #| msgid "Close all open documents."
 msgid "Close all documents beside current one"
 msgstr "Tutup semua dokumen yang dibuka."
 
-#: katemainwindow.cpp:700
+#: katemainwindow.cpp:704
 #, kde-format
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
 
-#: katemainwindow.cpp:703
+#: katemainwindow.cpp:707
 #, fuzzy, kde-format
 msgid "Hide menu bar"
 msgstr "_Sorok pilihan lanjutan"
 
-#: katemainwindow.cpp:815
+#: katemainwindow.cpp:819
 #, kde-format
 msgid ""
 "You dropped the directory %1 into Kate. Do you want to load all files "
 "contained in it ?"
 msgstr ""
 
-#: katemainwindow.cpp:818
+#: katemainwindow.cpp:822
 #, kde-format
 msgid "Load files recursively?"
 msgstr ""
 
-#: katemainwindow.cpp:946
+#: katemainwindow.cpp:950
 #, kde-format
 msgid "&Other..."
 msgstr "&Lain-lain..."
 
-#: katemainwindow.cpp:1058
+#: katemainwindow.cpp:1062
 #, kde-format
 msgid " [read only]"
 msgstr ""
@@ -770,47 +776,47 @@ msgstr "Papar Rekod DNSSEC"
 msgid "Show %1"
 msgstr "Papar %1"
 
-#: katemdi.cpp:506
+#: katemdi.cpp:584
 #, fuzzy, kde-format
 msgid "Configure ..."
 msgstr "Paparan Sebelumnya"
 
-#: katemdi.cpp:513
+#: katemdi.cpp:591
 #, kde-format
 msgid "Make Non-Persistent"
 msgstr "Jadikan Tidak Persistent"
 
-#: katemdi.cpp:513
+#: katemdi.cpp:591
 #, kde-format
 msgid "Make Persistent"
 msgstr "Jadikan Persistent"
 
-#: katemdi.cpp:516
+#: katemdi.cpp:594
 #, kde-format
 msgid "Move To"
 msgstr "Pindah Ke"
 
-#: katemdi.cpp:519
+#: katemdi.cpp:597
 #, kde-format
 msgid "Left Sidebar"
 msgstr "Bar Sisi Kiri"
 
-#: katemdi.cpp:523
+#: katemdi.cpp:601
 #, kde-format
 msgid "Right Sidebar"
 msgstr "Bar Sisi Kanan"
 
-#: katemdi.cpp:527
+#: katemdi.cpp:605
 #, kde-format
 msgid "Top Sidebar"
 msgstr "Bar Sisi Atas"
 
-#: katemdi.cpp:531
+#: katemdi.cpp:609
 #, kde-format
 msgid "Bottom Sidebar"
 msgstr "Bar Sisi Bawah"
 
-#: katemdi.cpp:862
+#: katemdi.cpp:940
 #, kde-format
 msgid ""
 "<qt>You are about to hide the sidebars. With hidden sidebars it is not "
@@ -1213,30 +1219,30 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: kateviewspace.cpp:559
+#: kateviewspace.cpp:569
 #, fuzzy, kde-format
 #| msgid "Close Document"
 msgid "&Close Document"
 msgstr "Tutup Dokumen"
 
-#: kateviewspace.cpp:560
+#: kateviewspace.cpp:570
 #, fuzzy, kde-format
 #| msgid "Close Document"
 msgid "Close Other &Documents"
 msgstr "Tutup Dokumen"
 
-#: kateviewspace.cpp:569
+#: kateviewspace.cpp:579
 #, fuzzy, kde-format
 #| msgid "Sync &terminal emulator with active document"
 msgid "Compare with active document"
 msgstr "Segerakkan pelagak &terminal dengan dokumen aktif"
 
-#: kateviewspace.cpp:625
+#: kateviewspace.cpp:635
 #, kde-format
 msgid "Could not start program"
 msgstr ""
 
-#: kateviewspace.cpp:626
+#: kateviewspace.cpp:636
 #, kde-format
 msgid "The selected program could not be started. Maybe it is not installed."
 msgstr ""
@@ -1584,10 +1590,16 @@ msgstr "Sesi"
 #: main.cpp:229
 #, fuzzy, kde-format
 #| msgid "Start Kate with a given session"
-msgid "Start Kate with a new anonymous session, implies '-n'."
+msgid "Start Kate with a new session, implies '-n' (deprecated)."
 msgstr "Mulakan Kate dengan sesi yang diberi"
 
-#: main.cpp:234
+#: main.cpp:233
+#, fuzzy, kde-format
+#| msgid "Start Kate with a given session"
+msgid "Start Kate with a new session, implies '-n'."
+msgstr "Mulakan Kate dengan sesi yang diberi"
+
+#: main.cpp:238
 #, kde-format
 msgid ""
 "Force start of a new kate instance (is ignored if start is used and another "
@@ -1595,76 +1607,76 @@ msgid ""
 "and no URLs are given at all."
 msgstr ""
 
-#: main.cpp:240
+#: main.cpp:244
 #, kde-format
 msgid ""
 "If using an already running kate instance, block until it exits, if URLs "
 "given to open."
 msgstr ""
 
-#: main.cpp:246
+#: main.cpp:250
 #, kde-format
 msgid ""
 "Only try to reuse kate instance with this pid (is ignored if start is used "
 "and another kate instance already has the given session opened)."
 msgstr ""
 
-#: main.cpp:247
+#: main.cpp:251
 #, kde-format
 msgid "pid"
 msgstr ""
 
-#: main.cpp:252
+#: main.cpp:256
 #, fuzzy, kde-format
 #| msgid "Set encoding for the file to open"
 msgid "Set encoding for the file to open."
 msgstr "Setkan pengekodan untuk fail yang hendak dibuka"
 
-#: main.cpp:253
+#: main.cpp:257
 #, kde-format
 msgid "encoding"
 msgstr ""
 
-#: main.cpp:257
+#: main.cpp:261
 #, fuzzy, kde-format
 #| msgid "Navigate to this line"
 msgid "Navigate to this line."
 msgstr "Navigasikan baris ini"
 
-#: main.cpp:257
+#: main.cpp:261
 #, kde-format
 msgid "line"
 msgstr ""
 
-#: main.cpp:262
+#: main.cpp:266
 #, fuzzy, kde-format
 #| msgid "Navigate to this column"
 msgid "Navigate to this column."
 msgstr "Navigasikan ke lajur ini"
 
-#: main.cpp:263
+#: main.cpp:267
 #, fuzzy, kde-format
 msgid "column"
 msgstr "Komen"
 
-#: main.cpp:267
+#: main.cpp:271
 #, fuzzy, kde-format
 #| msgid "Read the contents of stdin"
 msgid "Read the contents of stdin."
 msgstr "Baca kandungan stdin"
 
-#: main.cpp:272
+#: main.cpp:276
 #, kde-format
 msgid "The files/URLs opened by the application will be deleted after use"
 msgstr ""
 
-#: main.cpp:276
+#: main.cpp:280
 #, fuzzy, kde-format
 #| msgid "Document to open"
 msgid "Documents to open."
 msgstr "Dokumen yang hendak dibuka"
 
-#: main.cpp:276
+#: main.cpp:280
 #, kde-format
 msgid "[urls...]"
 msgstr ""
@@ -1700,7 +1712,7 @@ msgstr "Pemilih Sesi"
 msgid "Restore"
 msgstr ""
 
-#: session/katesessionmanagedialog.cpp:305
+#: session/katesessionmanagedialog.cpp:303
 #, kde-format
 msgid "Session will be deleted on dialog close"
 msgstr ""
@@ -1782,52 +1794,59 @@ msgstr "Dipadam"
 msgid "Close"
 msgstr "Tutup S&emua"
 
-#: session/katesessionmanager.cpp:107
+#: session/katesessionmanager.cpp:127
 #, kde-format
 msgid ""
 "Internal error: there is more than one instance open for a given session."
 msgstr ""
 
-#: session/katesessionmanager.cpp:113
+#: session/katesessionmanager.cpp:133
 #, kde-format
 msgid ""
 "Session '%1' is already opened in another kate instance, change there "
 "instead of reopening?"
 msgstr ""
 
-#: session/katesessionmanager.cpp:306
+#: session/katesessionmanager.cpp:349
 #, kde-format
-msgid "The session could not be renamed to \"%1\". Failed to write to \"%2\""
+msgid ""
+"The session could not be renamed to \"%1\". Failed to write to \"%2\"\n"
+"%3"
 msgstr ""
 
-#: session/katesessionmanager.cpp:307
+#: session/katesessionmanager.cpp:350
 #, fuzzy, kde-format
 msgid "Session Renaming"
 msgstr "Nama Pengguna"
 
-#: session/katesessionmanager.cpp:450
+#: session/katesessionmanager.cpp:449
+#, kde-format
+msgid "Do you want to save current anonymous session?"
+msgstr ""
+
+#: session/katesessionmanager.cpp:492
 #, fuzzy, kde-format
 msgid "Session name:"
 msgstr "Nama Pengguna"
 
-#: session/katesessionmanager.cpp:452
+#: session/katesessionmanager.cpp:494
 #, kde-format
 msgid ""
 "There is already an existing session with your chosen name: %1\n"
 "Please choose a different one."
 msgstr ""
 
-#: session/katesessionmanager.cpp:454
+#: session/katesessionmanager.cpp:496
 #, kde-format
 msgid "To save a session, you must specify a name."
 msgstr "Untuk menyimpan sesi, anda mesti nyatakan satu nama."
 
-#: session/katesessionmanager.cpp:481
+#: session/katesessionmanager.cpp:523
 #, fuzzy, kde-format
 msgid "Specify a name for this session"
 msgstr "Isi nama kumpulan baru:"
 
-#: session/katesessionmanager.cpp:483
+#: session/katesessionmanager.cpp:525
 #, fuzzy, kde-format
 msgid "Specify a new name for session: %1"
 msgstr "Isi nama kumpulan baru:"
@@ -2689,11 +2708,6 @@ msgstr "&Hapuskan maklumat meta data yang tak diguna selepas:"
 #~| msgid "Create a new document"
 #~ msgid "Cannot go to the document"
 #~ msgstr "Cipta dokumen baru"
-
-#, fuzzy
-#~| msgid "Save &As..."
-#~ msgid "Save Session as &Default..."
-#~ msgstr "Simp&an Sebagai..."
 
 #, fuzzy
 #~| msgid "Plugins"
