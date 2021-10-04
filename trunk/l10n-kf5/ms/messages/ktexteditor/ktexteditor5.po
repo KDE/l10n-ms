@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-21 00:14+0000\n"
+"POT-Creation-Date: 2021-10-04 00:14+0000\n"
 "PO-Revision-Date: 2008-07-13 01:04+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -138,7 +138,7 @@ msgstr "Balut Perkataan Statik"
 #. i18n: ectx: property (title), widget (QGroupBox, gbBorders)
 #. i18n: ectx: Menu (view_menu_borders)
 #: data/katepart5ui.rc:75 dialogs/bordersappearanceconfigwidget.ui:17
-#: dialogs/katedialogs.cpp:678
+#: dialogs/katedialogs.cpp:679
 #, fuzzy, kde-format
 #| msgid "Borders"
 msgid "Borders"
@@ -369,7 +369,7 @@ msgid "Scro&llbars visibility:"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbShowScrollbars)
-#: dialogs/bordersappearanceconfigwidget.ui:216 dialogs/katedialogs.cpp:682
+#: dialogs/bordersappearanceconfigwidget.ui:216 dialogs/katedialogs.cpp:683
 #, kde-format
 msgid "Always On"
 msgstr "Sentiasa Hidup"
@@ -432,8 +432,8 @@ msgstr "Ikut &posisi"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbGeneral)
 #. i18n: ectx: property (title), widget (QGroupBox, gbViInputMode)
-#: dialogs/completionconfigtab.ui:20 dialogs/katedialogs.cpp:545
-#: dialogs/katedialogs.cpp:674 dialogs/katedialogs.cpp:905
+#: dialogs/completionconfigtab.ui:20 dialogs/katedialogs.cpp:546
+#: dialogs/katedialogs.cpp:675 dialogs/katedialogs.cpp:906
 #: vimode/config/configwidget.ui:29
 #, kde-format
 msgid "General"
@@ -494,14 +494,15 @@ msgid ""
 "the document's language."
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
-#: dialogs/editconfigwidget.ui:17 view/kateview.cpp:725
-#, kde-format
-msgid "Static Word Wrap"
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: dialogs/editconfigwidget.ui:22
+#, fuzzy, kde-format
+#| msgid "Static Word Wrap"
+msgid "Word wrap:"
 msgstr "Balut Perkataan Statik"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
-#: dialogs/editconfigwidget.ui:23
+#: dialogs/editconfigwidget.ui:29
 #, fuzzy, kde-format
 #| msgid ""
 #| "Automatically start a new line of text when the current line exceeds the "
@@ -526,13 +527,13 @@ msgstr ""
 "<b>Balut Perkataan Dinamik</b> dalam halaman konfig <b>Papar Piawai</b>."
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
-#: dialogs/editconfigwidget.ui:26
+#: dialogs/editconfigwidget.ui:32
 #, kde-format
-msgid "Enable static &word wrap"
-msgstr "Hidupkan balut perka&taan statik"
+msgid "Wrap &words at a fixed column"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: dialogs/editconfigwidget.ui:33
+#: dialogs/editconfigwidget.ui:39
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>If this option is checked, a vertical line will be drawn at the word "
@@ -548,21 +549,20 @@ msgstr ""
 "pic tetap."
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: dialogs/editconfigwidget.ui:36
-#, fuzzy, kde-format
-#| msgid "Show Static &Word Wrap Marker"
-msgid "Show static word wra&p marker"
-msgstr "Papar Penanda Balut &Perkataan Statik"
+#: dialogs/editconfigwidget.ui:42
+#, kde-format
+msgid "&Draw vertical line at the word wrap column"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
-#: dialogs/editconfigwidget.ui:57
+#: dialogs/editconfigwidget.ui:49
 #, fuzzy, kde-format
 #| msgid "Wrap words at:"
 msgid "Wra&p words at:"
 msgstr "Balut perkataan di:"
 
 #. i18n: ectx: property (whatsThis), widget (KPluralHandlingSpinBox, sbWordWrap)
-#: dialogs/editconfigwidget.ui:67
+#: dialogs/editconfigwidget.ui:59
 #, kde-format
 msgid ""
 "If the Word Wrap option is selected this entry determines the length (in "
@@ -571,36 +571,28 @@ msgstr ""
 "Jika pilihan Balut Perkataan dipilih, masukan ini menentukan jarak (dalam "
 "aksara) di mana penyunting akan memulakan baris baru secara automatik."
 
-#. i18n: ectx: property (title), widget (QGroupBox, gbInputMode)
-#: dialogs/editconfigwidget.ui:101
-#, fuzzy, kde-format
-#| msgid "&Indentation"
-msgid "Input Mode"
-msgstr "&Indentasi"
-
 #. i18n: ectx: property (text), widget (QLabel, lblInputMode)
-#: dialogs/editconfigwidget.ui:107
+#: dialogs/editconfigwidget.ui:91
 #, fuzzy, kde-format
 #| msgid "&Indentation mode:"
 msgid "Default input mode:"
 msgstr "Mod &indentasi:"
 
-#. i18n: ectx: property (title), widget (QGroupBox, gbAutoBrackets)
-#: dialogs/editconfigwidget.ui:133
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: dialogs/editconfigwidget.ui:117
 #, fuzzy, kde-format
 #| msgid "Auto &brackets"
-msgid "Auto Brackets"
+msgid "Brackets:"
 msgstr "Kurungan au&to"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
-#: dialogs/editconfigwidget.ui:139
-#, fuzzy, kde-format
-#| msgid "Select to Matching Bracket"
-msgid "Enable automatic brackets"
-msgstr "Pilih Kurungan Sepadan"
+#: dialogs/editconfigwidget.ui:124
+#, kde-format
+msgid "Automatically close brackets when opening bracket is typed"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbEncloseSelection)
-#: dialogs/editconfigwidget.ui:154
+#: dialogs/editconfigwidget.ui:137
 #, kde-format
 msgid ""
 "When some text is selected these chars will be added on both its sides in a "
@@ -608,35 +600,43 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lbEncloseSelection)
-#: dialogs/editconfigwidget.ui:157
+#: dialogs/editconfigwidget.ui:140
 #, fuzzy, kde-format
-#| msgid "Cursor & Selection"
-msgid "Chars to enclose selection:"
-msgstr "Kursor dan Pilihan"
+#| msgid "Character"
+msgid "Enclosing characters:"
+msgstr "Aksara"
 
-#. i18n: ectx: property (title), widget (QGroupBox, gbCopyAndPaste)
-#: dialogs/editconfigwidget.ui:195
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: dialogs/editconfigwidget.ui:160
 #, kde-format
-msgid "Copy and Paste"
+msgid "Copy and paste:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkTextDragAndDrop)
-#: dialogs/editconfigwidget.ui:201
+#: dialogs/editconfigwidget.ui:167
 #, fuzzy, kde-format
 #| msgid "Selected"
-msgid "Move selected text by drag and drop"
+msgid "Move selected text when dragged"
 msgstr "Dipilih"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
-#: dialogs/editconfigwidget.ui:208
+#: dialogs/editconfigwidget.ui:174
 #, kde-format
-msgid "Copy/Cut the current line if no selection"
+msgid "Copy/cut the current line if invoked without any text selected"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkMousePasteAtCursorPosition)
-#: dialogs/editconfigwidget.ui:215
+#: dialogs/editconfigwidget.ui:181
 #, kde-format
-msgid "Paste by mouse at cursor position"
+msgid "Don't move the text cursor when pasting by mouse"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lblBracketHelp)
+#: dialogs/editconfigwidget.ui:194
+#, kde-format
+msgid ""
+"When you type these characters while text is selected, they will surround "
+"the selected text instead of replacing it."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblFiletype)
@@ -1046,7 +1046,7 @@ msgstr "Pilihan Semak Eja..."
 msgid "Text Navigation"
 msgstr "Konfigurasi"
 
-#: dialogs/katedialogs.cpp:519
+#: dialogs/katedialogs.cpp:520
 #, fuzzy, kde-format
 #| msgid "Character"
 msgctxt "Wrap words at (value is at 20 or larger)"
@@ -1055,64 +1055,64 @@ msgid_plural " characters"
 msgstr[0] "Aksara"
 msgstr[1] "Aksara"
 
-#: dialogs/katedialogs.cpp:524
+#: dialogs/katedialogs.cpp:525
 #, kde-format
 msgid "Feature is not active"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:526
+#: dialogs/katedialogs.cpp:527
 #, fuzzy, kde-format
 #| msgid "Disabled Breakpoint"
 msgid "Disable Feature"
 msgstr "Nyahaktifkan Titik Putus"
 
-#: dialogs/katedialogs.cpp:528
+#: dialogs/katedialogs.cpp:529
 #, kde-format
 msgid "May be handy with Markdown"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:530
+#: dialogs/katedialogs.cpp:531
 #, kde-format
 msgid "Mirror characters, similar but not exactly like auto brackets"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:532
+#: dialogs/katedialogs.cpp:533
 #, fuzzy, kde-format
 #| msgid "Character"
 msgid "Non letter character"
 msgstr "Aksara"
 
-#: dialogs/katedialogs.cpp:646
+#: dialogs/katedialogs.cpp:647
 #, kde-format
 msgid "Editing"
 msgstr "Sunting"
 
-#: dialogs/katedialogs.cpp:651
+#: dialogs/katedialogs.cpp:652
 #, kde-format
 msgid "Editing Options"
 msgstr "Pilihan Suntingan"
 
-#: dialogs/katedialogs.cpp:680
+#: dialogs/katedialogs.cpp:681
 #, fuzzy, kde-format
 msgid "Off"
 msgstr "&Tutup"
 
-#: dialogs/katedialogs.cpp:681
+#: dialogs/katedialogs.cpp:682
 #, kde-format
 msgid "Follow Line Numbers"
 msgstr "Ikut Baris Nombor"
 
-#: dialogs/katedialogs.cpp:838 dialogs/katedialogs.cpp:843
+#: dialogs/katedialogs.cpp:839 dialogs/katedialogs.cpp:844
 #, fuzzy, kde-format
 msgid "Appearance"
 msgstr "Huruf Besar"
 
-#: dialogs/katedialogs.cpp:906
+#: dialogs/katedialogs.cpp:907
 #, kde-format
 msgid "Advanced"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:971
+#: dialogs/katedialogs.cpp:972
 #, kde-format
 msgid ""
 "You did not provide a backup suffix or prefix. Using default suffix: '~'"
@@ -1120,76 +1120,76 @@ msgstr ""
 "Anda tidak menyediakan akhiran atau awalan sandaran. Menggunakan akhiran "
 "piawai: '~'"
 
-#: dialogs/katedialogs.cpp:971
+#: dialogs/katedialogs.cpp:972
 #, kde-format
 msgid "No Backup Suffix or Prefix"
 msgstr "Tiada Awalan atau Akhiran Sandaran"
 
-#: dialogs/katedialogs.cpp:1093
+#: dialogs/katedialogs.cpp:1094
 #, kde-format
 msgid "Open/Save"
 msgstr "Buka/Simpan"
 
-#: dialogs/katedialogs.cpp:1098
+#: dialogs/katedialogs.cpp:1099
 #, kde-format
 msgid "File Opening & Saving"
 msgstr "Membuka Fail & Simpan"
 
-#: dialogs/katedialogs.cpp:1121
+#: dialogs/katedialogs.cpp:1122
 #, kde-format
 msgid "&Line:"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1122
+#: dialogs/katedialogs.cpp:1123
 #, kde-format
 msgid "Go to line number from clipboard"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1133
+#: dialogs/katedialogs.cpp:1134
 #, kde-format
 msgid "Go to"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1209
+#: dialogs/katedialogs.cpp:1210
 #, kde-format
 msgid "No valid line number found in clipboard"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1273
+#: dialogs/katedialogs.cpp:1274
 #, fuzzy, kde-format
 #| msgid "&Section:"
 msgid "Dictionary:"
 msgstr "&Seksyen:"
 
-#: dialogs/katedialogs.cpp:1325
+#: dialogs/katedialogs.cpp:1326
 #, fuzzy, kde-format
 #| msgid "Word Completion Plugin"
 msgid "Enable Auto Reload"
 msgstr "Plugin Penyelesaian Perkataan"
 
-#: dialogs/katedialogs.cpp:1327
+#: dialogs/katedialogs.cpp:1328
 #, kde-format
 msgid "Will never again warn about on disk changes but always reload."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1332
+#: dialogs/katedialogs.cpp:1333
 #, fuzzy, kde-format
 #| msgid "&View Difference"
 msgid "View &Difference"
 msgstr "&Papar Perbezaan"
 
-#: dialogs/katedialogs.cpp:1334
+#: dialogs/katedialogs.cpp:1335
 #, kde-format
 msgid "Shows a diff of the changes"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1339
+#: dialogs/katedialogs.cpp:1340
 #, fuzzy, kde-format
 #| msgid "Reloa&d"
 msgid "&Reload"
 msgstr "&Muat semula"
 
-#: dialogs/katedialogs.cpp:1341
+#: dialogs/katedialogs.cpp:1342
 #, fuzzy, kde-format
 #| msgid ""
 #| "Reload the file from disk. If you have unsaved changes, they will be lost."
@@ -1198,60 +1198,60 @@ msgstr ""
 "Muat semula fail dari cakera. Jika anda ada perubahan yang belum disimpan, "
 "ia akan hilang."
 
-#: dialogs/katedialogs.cpp:1345
+#: dialogs/katedialogs.cpp:1346
 #, fuzzy, kde-format
 #| msgid "&Reload File"
 msgctxt "@action:button closes the opened file"
 msgid "&Close File"
 msgstr "&Muat Semula Fail"
 
-#: dialogs/katedialogs.cpp:1347
+#: dialogs/katedialogs.cpp:1348
 #, kde-format
 msgid "Close the file, discarding its content."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1351
+#: dialogs/katedialogs.cpp:1352
 #, fuzzy, kde-format
 #| msgid "&Save File As..."
 msgid "&Save As..."
 msgstr "&Simpan Fail Sebagai..."
 
-#: dialogs/katedialogs.cpp:1353
+#: dialogs/katedialogs.cpp:1354
 #, kde-format
 msgid "Lets you select a location and save the file again."
 msgstr "Membolehkan anda memilih lokasi dan simpan lagi fail."
 
 #. i18n: ectx: property (text), widget (QPushButton, m_skipBtn)
-#: dialogs/katedialogs.cpp:1358 spellcheck/spellcheckbar.ui:143
+#: dialogs/katedialogs.cpp:1359 spellcheck/spellcheckbar.ui:143
 #, kde-format
 msgid "&Ignore"
 msgstr "&Abaikan"
 
-#: dialogs/katedialogs.cpp:1359
+#: dialogs/katedialogs.cpp:1360
 #, fuzzy, kde-format
 #| msgid "Ignore the changes. You will not be prompted again."
 msgid "Ignores the changes on disk without any action."
 msgstr "Abaikan perubahan. Anda tidak akan digesa lagi."
 
-#: dialogs/katedialogs.cpp:1425 swapfile/kateswapdiffcreator.cpp:122
+#: dialogs/katedialogs.cpp:1426 swapfile/kateswapdiffcreator.cpp:122
 #, kde-format
 msgid ""
 "The diff command failed. Please make sure that diff(1) is installed and in "
 "your PATH."
 msgstr "Arahan diff gagal. Pastikan diff(1) dipasang dan ada dalam PATH anda."
 
-#: dialogs/katedialogs.cpp:1427 swapfile/kateswapdiffcreator.cpp:90
+#: dialogs/katedialogs.cpp:1428 swapfile/kateswapdiffcreator.cpp:90
 #: swapfile/kateswapdiffcreator.cpp:124
 #, kde-format
 msgid "Error Creating Diff"
 msgstr "Ralat Semasa Mencipta Diff"
 
-#: dialogs/katedialogs.cpp:1434 swapfile/kateswapdiffcreator.cpp:131
+#: dialogs/katedialogs.cpp:1435 swapfile/kateswapdiffcreator.cpp:131
 #, kde-format
 msgid "The files are identical."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1434 swapfile/kateswapdiffcreator.cpp:131
+#: dialogs/katedialogs.cpp:1435 swapfile/kateswapdiffcreator.cpp:131
 #, kde-format
 msgid "Diff Output"
 msgstr ""
@@ -4633,7 +4633,7 @@ msgstr ""
 msgid "Marker Colors"
 msgstr "Warna"
 
-#: syntax/katethemeconfig.cpp:304 view/kateviewhelpers.cpp:1473
+#: syntax/katethemeconfig.cpp:304 view/kateviewhelpers.cpp:1474
 #, kde-format
 msgid "Bookmark"
 msgstr "Tanda Buku"
@@ -6833,6 +6833,11 @@ msgstr "Ikut Nombor &Baris"
 msgid "&Always On"
 msgstr "&Sentiasa Buka"
 
+#: view/kateview.cpp:725
+#, kde-format
+msgid "Static Word Wrap"
+msgstr "Balut Perkataan Statik"
+
 #: view/kateview.cpp:727
 #, fuzzy, kde-format
 #| msgid ""
@@ -7421,19 +7426,19 @@ msgstr "Cari"
 msgid "Export File as HTML"
 msgstr "Fail HTML untuk dibuka"
 
-#: view/kateviewhelpers.cpp:301 view/kateviewhelpers.cpp:344
-#: view/kateviewhelpers.cpp:980
+#: view/kateviewhelpers.cpp:302 view/kateviewhelpers.cpp:345
+#: view/kateviewhelpers.cpp:981
 #, kde-format
 msgctxt "from line - to line"
 msgid "<center>%1<br/>&#x2014;<br/>%2</center>"
 msgstr ""
 
-#: view/kateviewhelpers.cpp:1149
+#: view/kateviewhelpers.cpp:1150
 #, kde-format
 msgid "Available Commands"
 msgstr "Arahan Yang Boleh Didapatkan"
 
-#: view/kateviewhelpers.cpp:1150
+#: view/kateviewhelpers.cpp:1151
 #, kde-format
 msgid ""
 "<p>For help on individual commands, do <code>'help &lt;command&gt;'</code></"
@@ -7442,17 +7447,17 @@ msgstr ""
 "<p>Untuk bantuan bagi arahan individu, buat <code>'help &lt;command&gt;'</"
 "code></p>"
 
-#: view/kateviewhelpers.cpp:1157
+#: view/kateviewhelpers.cpp:1158
 #, kde-format
 msgid "No help for '%1'"
 msgstr "Tiada bantuan untuk '%1'"
 
-#: view/kateviewhelpers.cpp:1160
+#: view/kateviewhelpers.cpp:1161
 #, kde-format
 msgid "No such command <b>%1</b>"
 msgstr "Tiada arahan <b>%1</b>"
 
-#: view/kateviewhelpers.cpp:1166
+#: view/kateviewhelpers.cpp:1167
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>This is the Katepart <b>command line</b>.<br>Syntax: <code><b>command "
@@ -7470,37 +7475,37 @@ msgstr ""
 "masukkan <code><b>senarai bantuan</b></code><br>Untuk bantuan bagi arahan "
 "individu, masukkan <code><b>bantuan &lt;command&gt;</b></code></p>"
 
-#: view/kateviewhelpers.cpp:1254 vimode/emulatedcommandbar/commandmode.cpp:210
+#: view/kateviewhelpers.cpp:1255 vimode/emulatedcommandbar/commandmode.cpp:210
 #, kde-format
 msgid "No such command: \"%1\""
 msgstr "Tiada arahan: \"%1\""
 
-#: view/kateviewhelpers.cpp:1257 vimode/emulatedcommandbar/commandmode.cpp:192
+#: view/kateviewhelpers.cpp:1258 vimode/emulatedcommandbar/commandmode.cpp:192
 #, kde-format
 msgid "Error: No range allowed for command \"%1\"."
 msgstr ""
 
-#: view/kateviewhelpers.cpp:1267 vimode/emulatedcommandbar/commandmode.cpp:196
+#: view/kateviewhelpers.cpp:1268 vimode/emulatedcommandbar/commandmode.cpp:196
 #, kde-format
 msgid "Success: "
 msgstr "Berjaya:"
 
-#: view/kateviewhelpers.cpp:1281 vimode/emulatedcommandbar/commandmode.cpp:205
+#: view/kateviewhelpers.cpp:1282 vimode/emulatedcommandbar/commandmode.cpp:205
 #, kde-format
 msgid "Command \"%1\" failed."
 msgstr "Arahan \"%1\" gagal."
 
-#: view/kateviewhelpers.cpp:2504 view/kateviewhelpers.cpp:2505
+#: view/kateviewhelpers.cpp:2538 view/kateviewhelpers.cpp:2539
 #, kde-format
 msgid "Mark Type %1"
 msgstr "Tandakan Jenis %1"
 
-#: view/kateviewhelpers.cpp:2528
+#: view/kateviewhelpers.cpp:2562
 #, kde-format
 msgid "Set Default Mark Type"
 msgstr "Setkan Jenis Tanda Piawai"
 
-#: view/kateviewhelpers.cpp:2662
+#: view/kateviewhelpers.cpp:2696
 #, kde-format
 msgid "Disable Annotation Bar"
 msgstr ""
@@ -7835,6 +7840,29 @@ msgstr ""
 #| msgid "Mark Type %1"
 msgid "Mark not set: %1"
 msgstr "Tandakan Jenis %1"
+
+#~ msgid "Enable static &word wrap"
+#~ msgstr "Hidupkan balut perka&taan statik"
+
+#, fuzzy
+#~| msgid "Show Static &Word Wrap Marker"
+#~ msgid "Show static word wra&p marker"
+#~ msgstr "Papar Penanda Balut &Perkataan Statik"
+
+#, fuzzy
+#~| msgid "&Indentation"
+#~ msgid "Input Mode"
+#~ msgstr "&Indentasi"
+
+#, fuzzy
+#~| msgid "Select to Matching Bracket"
+#~ msgid "Enable automatic brackets"
+#~ msgstr "Pilih Kurungan Sepadan"
+
+#, fuzzy
+#~| msgid "Cursor & Selection"
+#~ msgid "Chars to enclose selection:"
+#~ msgstr "Kursor dan Pilihan"
 
 #, fuzzy
 #~| msgid "Vertically align dynamically wrapped lines to indentation depth:"
@@ -9072,12 +9100,6 @@ msgstr "Tandakan Jenis %1"
 #~| msgid "Character"
 #~ msgctxt "spinbox special value for 1"
 #~ msgid "1 character"
-#~ msgstr "Aksara"
-
-#, fuzzy
-#~| msgid "Character"
-#~ msgctxt "suffix for spinbox >1"
-#~ msgid " characters"
 #~ msgstr "Aksara"
 
 #, fuzzy
