@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-02-26 00:49+0000\n"
+"POT-Creation-Date: 2022-03-05 00:44+0000\n"
 "PO-Revision-Date: 2005-10-06 11:21+0800\n"
 "Last-Translator: junetazawawi <junetazawawi@yahoo.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -105,7 +105,7 @@ msgid ""
 "para>"
 msgstr "Masukkan waktu untuk menjadualkan penggera"
 
-#: alarmtimewidget.cpp:126 recurrenceedit.cpp:254
+#: alarmtimewidget.cpp:126 recurrenceedit.cpp:253
 #, fuzzy, kde-format
 #| msgid "Any time"
 msgctxt "@option:check"
@@ -203,7 +203,7 @@ msgid ""
 "zone set in KAlarm's configuration dialog."
 msgstr ""
 
-#: alarmtimewidget.cpp:196 prefdlg.cpp:655
+#: alarmtimewidget.cpp:196 prefdlg.cpp:654
 #, fuzzy, kde-format
 msgctxt "@label:listbox"
 msgid "Time zone:"
@@ -315,7 +315,7 @@ msgctxt "@title:group"
 msgid "Alarm Text"
 msgstr "Teks Penggera"
 
-#: birthdaydlg.cpp:79 prefdlg.cpp:1779
+#: birthdaydlg.cpp:79 prefdlg.cpp:1778
 #, fuzzy, kde-format
 #| msgid "Pre&fix:"
 msgctxt "@label:textbox"
@@ -422,7 +422,7 @@ msgid ""
 "Select whether the reminder should be triggered before or after the birthday."
 msgstr ""
 
-#: birthdaydlg.cpp:200 recurrenceedit.cpp:145
+#: birthdaydlg.cpp:200 recurrenceedit.cpp:144
 #, fuzzy, kde-format
 #| msgid "Simple Repetition"
 msgctxt "@action:button"
@@ -825,7 +825,7 @@ msgid "Select the holiday region to use."
 msgstr "Masukkan waktu untuk menjadualkan penggera"
 
 #. i18n: ectx: label, entry (DefaultFgColour), group (General)
-#: data/kalarmconfig.kcfg:85
+#: data/kalarmconfig.kcfg:85 kalarmcalendar/kaeventformatter.cpp:92
 #, fuzzy, kde-format
 #| msgid "&Foreground color:"
 msgctxt "@label"
@@ -840,7 +840,7 @@ msgid "Default foreground color for alarm message windows."
 msgstr "Pilih warna latar belakang untuk mesej penggera."
 
 #. i18n: ectx: label, entry (DefaultBgColour), group (General)
-#: data/kalarmconfig.kcfg:90
+#: data/kalarmconfig.kcfg:90 kalarmcalendar/kaeventformatter.cpp:94
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Background color"
@@ -1081,7 +1081,7 @@ msgid "Show alarm times in system tray tooltip"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (ShowTooltipAlarmTime), group (General)
-#: data/kalarmconfig.kcfg:171 prefdlg.cpp:1767
+#: data/kalarmconfig.kcfg:171 prefdlg.cpp:1766
 #, fuzzy, kde-format
 #| msgid ""
 #| "Specify whether to show in the system tray tooltip, the time at which "
@@ -1102,7 +1102,7 @@ msgid "Show time to alarms in system tray tooltip"
 msgstr "Automulakan &ikon dulang sistem semasa log masuk"
 
 #. i18n: ectx: whatsthis, entry (ShowTooltipTimeToAlarm), group (General)
-#: data/kalarmconfig.kcfg:177 prefdlg.cpp:1773
+#: data/kalarmconfig.kcfg:177 prefdlg.cpp:1772
 #, fuzzy, kde-format
 #| msgid ""
 #| "Specify whether to show in the system tray tooltip, how long until each "
@@ -1123,7 +1123,7 @@ msgid "Time-to-alarm prefix in system tray tooltip"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (TooltipTimeToPrefix), group (General)
-#: data/kalarmconfig.kcfg:183 prefdlg.cpp:1784
+#: data/kalarmconfig.kcfg:183 prefdlg.cpp:1783
 #, fuzzy, kde-format
 #| msgid ""
 #| "Enter the text to be displayed in front of the time until the alarm, in "
@@ -1326,7 +1326,7 @@ msgid "Disabled alarm color"
 msgstr "&Nyahaktifkan warna penggera:"
 
 #. i18n: ectx: whatsthis, entry (DisabledColour), group (General)
-#: data/kalarmconfig.kcfg:241 prefdlg.cpp:1806
+#: data/kalarmconfig.kcfg:241 prefdlg.cpp:1805
 #, fuzzy, kde-format
 #| msgid "Choose the text color in the alarm list for disabled alarms."
 msgctxt "@info:whatsthis"
@@ -1341,7 +1341,7 @@ msgid "Archived alarm color"
 msgstr "Warna penggera &luput:"
 
 #. i18n: ectx: whatsthis, entry (ArchivedColour), group (General)
-#: data/kalarmconfig.kcfg:247 prefdlg.cpp:1819
+#: data/kalarmconfig.kcfg:247 prefdlg.cpp:1818
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid "Choose the text color in the alarm list for archived alarms."
@@ -1451,7 +1451,7 @@ msgid "Default setting in the alarm edit dialog for \"auto close if late\"."
 msgstr "Seting piawai untuk \"%1\" dalam dialog edit penggera."
 
 #. i18n: ectx: label, entry (DefaultConfirmAck), group (Defaults)
-#: data/kalarmconfig.kcfg:301
+#: data/kalarmconfig.kcfg:301 kalarmcalendar/kaeventformatter.cpp:106
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Confirm acknowledgement"
@@ -1516,7 +1516,7 @@ msgid "Default sound file path in the alarm edit dialog."
 msgstr "Masukkan fail bunyi piawai untuk digunakan dalam dialog edit penggera."
 
 #. i18n: ectx: label, entry (Base_DefaultSoundVolume), group (Defaults)
-#: data/kalarmconfig.kcfg:326
+#: data/kalarmconfig.kcfg:326 kalarmcalendar/kaeventformatter.cpp:114
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Sound volume"
@@ -1598,7 +1598,7 @@ msgid "Execute in terminal window"
 msgstr "Laksanakan dalam tetingkap terminal"
 
 #. i18n: ectx: label, entry (DefaultCmdLogFile), group (Defaults)
-#: data/kalarmconfig.kcfg:353
+#: data/kalarmconfig.kcfg:353 kalarmcalendar/kaeventformatter.cpp:137
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Log file"
@@ -1635,7 +1635,7 @@ msgid "Recurrence period"
 msgstr "Pengulangan tamat"
 
 #. i18n: ectx: whatsthis, entry (DefaultRecurPeriod), group (Defaults)
-#: data/kalarmconfig.kcfg:363 prefdlg.cpp:1280
+#: data/kalarmconfig.kcfg:363 prefdlg.cpp:1279
 #, fuzzy, kde-format
 #| msgid ""
 #| "The default setting for the recurrence rule in the alarm edit dialog."
@@ -1667,7 +1667,7 @@ msgid "Hourly/minutely"
 msgstr "Setiap Jam/Setiap minit"
 
 #. i18n: ectx: label, entry (DefaultFeb29Type), group (Defaults)
-#: data/kalarmconfig.kcfg:376 prefdlg.cpp:1287
+#: data/kalarmconfig.kcfg:376 prefdlg.cpp:1286
 #, fuzzy, kde-format
 #| msgid "In non-leap years, repeat yearly February 29th alarms on:"
 msgctxt "@label"
@@ -1843,7 +1843,7 @@ msgid "Confirm alarm deletions"
 msgstr "&Sahkan penghapusan penggera"
 
 #. i18n: ectx: whatsthis, entry (Base_ConfirmAlarmDeletion), group (Notification Messages)
-#: data/kalarmconfig.kcfg:428 prefdlg.cpp:471
+#: data/kalarmconfig.kcfg:428 prefdlg.cpp:470
 #, fuzzy, kde-format
 #| msgid "Check to be prompted for confirmation each time you delete an alarm."
 msgctxt "@info:whatsthis"
@@ -1859,7 +1859,7 @@ msgid "Notify when remote emails are queued"
 msgstr "&Beritahu bila e-mel jauh dibaris gilir"
 
 #. i18n: ectx: whatsthis, entry (Base_EmailQueuedNotify), group (Notification Messages)
-#: data/kalarmconfig.kcfg:433 prefdlg.cpp:1023
+#: data/kalarmconfig.kcfg:433 prefdlg.cpp:1022
 #, fuzzy, kde-format
 #| msgid ""
 #| "Display a notification message whenever an email alarm has queued an "
@@ -1907,7 +1907,7 @@ msgstr "&Tindakan"
 msgid "&Settings"
 msgstr "Paparkan Seting"
 
-#: datepicker.cpp:32
+#: datepicker.cpp:31
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -1915,32 +1915,32 @@ msgid ""
 "be shown."
 msgstr ""
 
-#: datepicker.cpp:38
+#: datepicker.cpp:37
 #, fuzzy, kde-format
 msgctxt "@title:group"
 msgid "Alarm Date Selector"
 msgstr "URL fail kalendar"
 
-#: datepicker.cpp:65
+#: datepicker.cpp:64
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show the previous year"
 msgstr ""
 
-#: datepicker.cpp:66
+#: datepicker.cpp:65
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show the previous month"
 msgstr ""
 
-#: datepicker.cpp:67
+#: datepicker.cpp:66
 #, fuzzy, kde-format
 #| msgid "Show time u&ntil alarm"
 msgctxt "@info:tooltip"
 msgid "Show the next year"
 msgstr "Papar waktu sehi&ngga penggera"
 
-#: datepicker.cpp:68
+#: datepicker.cpp:67
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show the next month"
@@ -1952,28 +1952,28 @@ msgctxt "delimiter for joining holiday names"
 msgid ","
 msgstr ""
 
-#: deferdlg.cpp:38
+#: deferdlg.cpp:37
 #, fuzzy, kde-format
 #| msgid "Defer Alarm"
 msgctxt "@title:window"
 msgid "Defer Alarm"
 msgstr "Tunda penggera"
 
-#: deferdlg.cpp:52
+#: deferdlg.cpp:51
 #, fuzzy, kde-format
 #| msgid "Defer the alarm until the specified time."
 msgctxt "@info:whatsthis"
 msgid "Defer the alarm until the specified time."
 msgstr "Tunda penggera hingga waktu yang dinyatakan"
 
-#: deferdlg.cpp:60
+#: deferdlg.cpp:59
 #, fuzzy, kde-format
 #| msgid "Cancel &Deferral"
 msgctxt "@action:button"
 msgid "Cancel Deferral"
 msgstr "Batalkan  &Tunda"
 
-#: deferdlg.cpp:61
+#: deferdlg.cpp:60
 #, fuzzy, kde-format
 #| msgid "Cancel the deferred alarm. This does not affect future recurrences."
 msgctxt "@info:whatsthis"
@@ -1982,7 +1982,7 @@ msgstr ""
 "Batalkan penggera tertunda. Ini tidak ada kesan terhadap pengulangan pada "
 "masa depan."
 
-#: deferdlg.cpp:100
+#: deferdlg.cpp:99
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "This refers to simple repetitions set up using the Simple Repetition "
@@ -1993,7 +1993,7 @@ msgid "Cannot defer past the alarm's next sub-repetition (currently %1)"
 msgstr ""
 "Tidak boleh  tunda melepasi pengulangan penggera berikutnya (sekarang %1)"
 
-#: deferdlg.cpp:104
+#: deferdlg.cpp:103
 #, fuzzy, kde-format
 #| msgctxt "This refers to recurrences set up using the Recurrence tab"
 #| msgid "Cannot defer past the alarm's next recurrence (currently %1)"
@@ -2002,7 +2002,7 @@ msgid "Cannot defer past the alarm's next recurrence (currently %1)"
 msgstr ""
 "Tidak dapat tunda penggera melepasi pengulangan berikutnya (sekarang %1)"
 
-#: deferdlg.cpp:108
+#: deferdlg.cpp:107
 #, fuzzy, kde-format
 #| msgid "Cannot defer past the alarm's next reminder (currently %1)"
 msgctxt "@info"
@@ -2010,7 +2010,7 @@ msgid "Cannot defer past the alarm's next reminder (currently %1)"
 msgstr ""
 "Tidak boleh tunda melepasi penggera peringatan berikutnya (sekarang %1)"
 
-#: deferdlg.cpp:112
+#: deferdlg.cpp:111
 #, fuzzy, kde-format
 #| msgid "Cannot defer reminder past the main alarm time (%1)"
 msgctxt "@info"
@@ -2356,96 +2356,96 @@ msgctxt "@info:tooltip"
 msgid "Show more options"
 msgstr ""
 
-#: editdlgtypes.cpp:76
+#: editdlgtypes.cpp:75
 #, fuzzy, kde-format
 #| msgid "Choose Log File"
 msgctxt "@title:window"
 msgid "Choose Log File"
 msgstr "Pilih Fail Log"
 
-#: editdlgtypes.cpp:89
+#: editdlgtypes.cpp:88
 #, fuzzy, kde-format
 #| msgid "Display Alarms"
 msgctxt "@label:listbox How to display alarms"
 msgid "Display method:"
 msgstr "Paparkan penggera"
 
-#: editdlgtypes.cpp:90
+#: editdlgtypes.cpp:89
 #, fuzzy, kde-format
 #| msgid "Alarm List"
 msgctxt "@item:inlistbox"
 msgid "Window"
 msgstr "Senarai penggera"
 
-#: editdlgtypes.cpp:91
+#: editdlgtypes.cpp:90
 #, fuzzy, kde-format
 #| msgid "Action"
 msgctxt "@item:inlistbox"
 msgid "Notification"
 msgstr "Tindakan"
 
-#: editdlgtypes.cpp:92
+#: editdlgtypes.cpp:91
 #, fuzzy, kde-format
 #| msgid "Confirm acknowledgment"
 msgctxt "@option:check"
 msgid "Confirm acknowledgment"
 msgstr "Sahkan pengakuan"
 
-#: editdlgtypes.cpp:121
+#: editdlgtypes.cpp:120
 #, fuzzy, kde-format
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Display Alarm Template"
 msgstr "Templat penggera baru"
 
-#: editdlgtypes.cpp:121
+#: editdlgtypes.cpp:120
 #, fuzzy, kde-format
 #| msgid "Edit Alarm Template"
 msgctxt "@title:window"
 msgid "Edit Display Alarm Template"
 msgstr "Edit templat penggera"
 
-#: editdlgtypes.cpp:122
+#: editdlgtypes.cpp:121
 #, fuzzy, kde-format
 #| msgid "Display Alarms"
 msgctxt "@title:window"
 msgid "New Display Alarm"
 msgstr "Paparkan penggera"
 
-#: editdlgtypes.cpp:122
+#: editdlgtypes.cpp:121
 #, fuzzy, kde-format
 #| msgid "Display Alarms"
 msgctxt "@title:window"
 msgid "Edit Display Alarm"
 msgstr "Paparkan penggera"
 
-#: editdlgtypes.cpp:135
+#: editdlgtypes.cpp:134
 #, fuzzy, kde-format
 #| msgid "Display Alarms"
 msgctxt "@label:listbox"
 msgid "Display type:"
 msgstr "Paparkan penggera"
 
-#: editdlgtypes.cpp:139
+#: editdlgtypes.cpp:138
 #, fuzzy, kde-format
 #| msgid "The alarm message"
 msgctxt "@item:inlistbox"
 msgid "Text message"
 msgstr "Mesej penggera"
 
-#: editdlgtypes.cpp:140
+#: editdlgtypes.cpp:139
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "File contents"
 msgstr ""
 
-#: editdlgtypes.cpp:141
+#: editdlgtypes.cpp:140
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox"
 msgid "Command output"
 msgstr "Output arahan"
 
-#: editdlgtypes.cpp:161
+#: editdlgtypes.cpp:160
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2456,35 +2456,35 @@ msgid ""
 "display the output from a command.</item></list></para>"
 msgstr ""
 
-#: editdlgtypes.cpp:176
+#: editdlgtypes.cpp:175
 #, fuzzy, kde-format
 #| msgid "Enter the text of the alarm message. It may be multi-line."
 msgctxt "@info:whatsthis"
 msgid "Enter the text of the alarm message. It may be multi-line."
 msgstr "Masukkan teks mesej penggera. Ia mungkin berbilang garisan."
 
-#: editdlgtypes.cpp:189
+#: editdlgtypes.cpp:188
 #, fuzzy, kde-format
 #| msgid "Enter the name or URL of a text or image file to display."
 msgctxt "@info:whatsthis"
 msgid "Enter the name or URL of a text or image file to display."
 msgstr "Masukkan nama atau URL teks atau fail imej yang hendak dipapar."
 
-#: editdlgtypes.cpp:196 editdlgtypes.cpp:888 sounddlg.cpp:184
+#: editdlgtypes.cpp:195 editdlgtypes.cpp:887 sounddlg.cpp:184
 #, fuzzy, kde-format
 #| msgid "Choose a file"
 msgctxt "@info:tooltip"
 msgid "Choose a file"
 msgstr "Pilih fail"
 
-#: editdlgtypes.cpp:197
+#: editdlgtypes.cpp:196
 #, fuzzy, kde-format
 #| msgid "Select a text or image file to display."
 msgctxt "@info:whatsthis"
 msgid "Select a text or image file to display."
 msgstr "Pilih fail teks atau imej untuk paparan"
 
-#: editdlgtypes.cpp:241
+#: editdlgtypes.cpp:240
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2492,7 +2492,7 @@ msgid ""
 "system."
 msgstr ""
 
-#: editdlgtypes.cpp:268
+#: editdlgtypes.cpp:267
 #, fuzzy, kde-format
 #| msgid ""
 #| "Check to additionally display a reminder in advance of the main alarm "
@@ -2504,7 +2504,7 @@ msgid ""
 msgstr ""
 "Semak untuk tambahan paparan peringatan  mendahului waktu penggera utama"
 
-#: editdlgtypes.cpp:269
+#: editdlgtypes.cpp:268
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Enter how long in advance of the main alarm to display a reminder alarm."
@@ -2516,7 +2516,7 @@ msgstr ""
 "Masukkan berapa lama penggera utama hendak dipaparkan mendahului  paparan "
 "penggera peringatan."
 
-#: editdlgtypes.cpp:270
+#: editdlgtypes.cpp:269
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2524,7 +2524,7 @@ msgid ""
 "alarm"
 msgstr ""
 
-#: editdlgtypes.cpp:280
+#: editdlgtypes.cpp:279
 #, fuzzy, kde-format
 #| msgid ""
 #| "Check to be prompted for confirmation when you acknowledge the alarm."
@@ -2534,111 +2534,111 @@ msgstr ""
 "Semak supaya diberikan ingatan segera untuk pengesahan apabila anda "
 "memperakui penggera."
 
-#: editdlgtypes.cpp:289
+#: editdlgtypes.cpp:288
 #, fuzzy, kde-format
 #| msgid "Display the alarm message now"
 msgctxt "@info:tooltip"
 msgid "Display the alarm now"
 msgstr "Paparkan mesej penggera sekarang"
 
-#: editdlgtypes.cpp:674
+#: editdlgtypes.cpp:673
 #, fuzzy, kde-format
 #| msgid "Display the alarm message now"
 msgctxt "@info:whatsthis"
 msgid "Display the alarm message now"
 msgstr "Paparkan mesej penggera sekarang"
 
-#: editdlgtypes.cpp:683
+#: editdlgtypes.cpp:682
 #, fuzzy, kde-format
 #| msgid "Display the file now"
 msgctxt "@info:whatsthis"
 msgid "Display the file now"
 msgstr "Paparkan fail sekarang"
 
-#: editdlgtypes.cpp:693
+#: editdlgtypes.cpp:692
 #, fuzzy, kde-format
 #| msgid "Display the alarm message now"
 msgctxt "@info:whatsthis"
 msgid "Display the command output now"
 msgstr "Paparkan mesej penggera sekarang"
 
-#: editdlgtypes.cpp:725
+#: editdlgtypes.cpp:724
 #, fuzzy, kde-format
 #| msgid "Choose Text or Image File to Display"
 msgctxt "@title:window"
 msgid "Choose Text or Image File to Display"
 msgstr "Pilih Teks atau Fail imej yang hendak dipapar"
 
-#: editdlgtypes.cpp:803
+#: editdlgtypes.cpp:802
 #, fuzzy, kde-format
 #| msgid "Enter a script"
 msgctxt "@option:check"
 msgid "Enter a script"
 msgstr "Masukkan skrip"
 
-#: editdlgtypes.cpp:804
+#: editdlgtypes.cpp:803
 #, fuzzy, kde-format
 #| msgid "Execute in terminal window"
 msgctxt "@option:radio"
 msgid "Execute in terminal window"
 msgstr "Laksanakan dalam tetingkap terminal"
 
-#: editdlgtypes.cpp:805
+#: editdlgtypes.cpp:804
 #, fuzzy, kde-format
 #| msgid "Execute in terminal window"
 msgctxt "@option:check"
 msgid "Execute in terminal window"
 msgstr "Laksanakan dalam tetingkap terminal"
 
-#: editdlgtypes.cpp:835
+#: editdlgtypes.cpp:834
 #, fuzzy, kde-format
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Command Alarm Template"
 msgstr "Templat penggera baru"
 
-#: editdlgtypes.cpp:835
+#: editdlgtypes.cpp:834
 #, fuzzy, kde-format
 #| msgid "Edit Alarm Template"
 msgctxt "@title:window"
 msgid "Edit Command Alarm Template"
 msgstr "Edit templat penggera"
 
-#: editdlgtypes.cpp:836
+#: editdlgtypes.cpp:835
 #, fuzzy, kde-format
 #| msgid "Command Alarms"
 msgctxt "@title:window"
 msgid "New Command Alarm"
 msgstr "Penggera Arahan"
 
-#: editdlgtypes.cpp:836
+#: editdlgtypes.cpp:835
 #, fuzzy, kde-format
 #| msgid "Command Alarms"
 msgctxt "@title:window"
 msgid "Edit Command Alarm"
 msgstr "Penggera Arahan"
 
-#: editdlgtypes.cpp:844
+#: editdlgtypes.cpp:843
 #, fuzzy, kde-format
 #| msgid "Execute the specified command now"
 msgctxt "@info:whatsthis"
 msgid "Execute the specified command now"
 msgstr "Laksanakan arahan yang dinyatakan sekarang"
 
-#: editdlgtypes.cpp:845
+#: editdlgtypes.cpp:844
 #, fuzzy, kde-format
 #| msgid "Execute the specified command now"
 msgctxt "@info:tooltip"
 msgid "Execute the specified command now"
 msgstr "Laksanakan arahan yang dinyatakan sekarang"
 
-#: editdlgtypes.cpp:852 specialactions.cpp:185
+#: editdlgtypes.cpp:851 specialactions.cpp:185
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not notify errors"
 msgstr ""
 
-#: editdlgtypes.cpp:853
+#: editdlgtypes.cpp:852
 #, fuzzy, kde-format
 #| msgid ""
 #| "The default setting for the recurrence rule in the alarm edit dialog."
@@ -2646,42 +2646,42 @@ msgctxt "@info:whatsthis"
 msgid "Do not show error message if the command fails."
 msgstr "Seting piawai untuk peraturan pengulangan dalam dialog edit penggera."
 
-#: editdlgtypes.cpp:859
+#: editdlgtypes.cpp:858
 #, fuzzy, kde-format
 #| msgid "Command Output"
 msgctxt "@title:group"
 msgid "Command Output"
 msgstr "Output arahan"
 
-#: editdlgtypes.cpp:867
+#: editdlgtypes.cpp:866
 #, fuzzy, kde-format
 #| msgid "Check to execute the command in a terminal window"
 msgctxt "@info:whatsthis"
 msgid "Check to execute the command in a terminal window"
 msgstr "Semak untuk melaksanakan arahan dalam tetingkap terminal"
 
-#: editdlgtypes.cpp:880
+#: editdlgtypes.cpp:879
 #, fuzzy, kde-format
 #| msgid "Enter the name or path of the log file."
 msgctxt "@info:whatsthis"
 msgid "Enter the name or path of the log file."
 msgstr "Masukkan nama atau laluan fail log"
 
-#: editdlgtypes.cpp:889
+#: editdlgtypes.cpp:888
 #, fuzzy, kde-format
 #| msgid "Select a log file."
 msgctxt "@info:whatsthis"
 msgid "Select a log file."
 msgstr "Pilih fail log"
 
-#: editdlgtypes.cpp:892
+#: editdlgtypes.cpp:891
 #, fuzzy, kde-format
 #| msgid "Lo&g to file"
 msgctxt "@option:radio"
 msgid "Log to file"
 msgstr "Lo&g ke fail"
 
-#: editdlgtypes.cpp:893
+#: editdlgtypes.cpp:892
 #, fuzzy, kde-format
 #| msgid ""
 #| "Check to log the command output to a local file. The output will be "
@@ -2694,20 +2694,20 @@ msgstr ""
 "Semak untuk mengelog output arahan ke fail setempat. Output akan ditambah ke "
 "mana-mana kandungan sedia ada bagi fail tersebut."
 
-#: editdlgtypes.cpp:900
+#: editdlgtypes.cpp:899
 #, fuzzy, kde-format
 msgctxt "@option:radio"
 msgid "Discard"
 msgstr "Output arahan"
 
-#: editdlgtypes.cpp:901
+#: editdlgtypes.cpp:900
 #, fuzzy, kde-format
 #| msgid "Check to discard command output."
 msgctxt "@info:whatsthis"
 msgid "Check to discard command output."
 msgstr "Semak untuk menyingkirkan output arahan."
 
-#: editdlgtypes.cpp:1063
+#: editdlgtypes.cpp:1062
 #, fuzzy, kde-format
 #| msgid ""
 #| "Log file must be the name or path of a local file, with write permission."
@@ -2717,7 +2717,7 @@ msgid ""
 msgstr ""
 "Fail log mestilah nama atau laluan fail setempat dengan keizinan tulis."
 
-#: editdlgtypes.cpp:1073
+#: editdlgtypes.cpp:1072
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2727,7 +2727,7 @@ msgstr ""
 "Tiada alamat e-mel  'Daripada' dikonfigur.\n"
 "Setkan dalam dialog keutamaan %1."
 
-#: editdlgtypes.cpp:1093
+#: editdlgtypes.cpp:1092
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Command executed:\n"
@@ -2738,55 +2738,55 @@ msgstr ""
 "Arahan terlaksana:\n"
 "%1"
 
-#: editdlgtypes.cpp:1127
+#: editdlgtypes.cpp:1126
 #, fuzzy, kde-format
 #| msgid "Copy email to self"
 msgctxt "@option:check"
 msgid "Copy email to self"
 msgstr "Salin e-mel kepada diri sendiri"
 
-#: editdlgtypes.cpp:1157
+#: editdlgtypes.cpp:1156
 #, fuzzy, kde-format
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Email Alarm Template"
 msgstr "Templat penggera baru"
 
-#: editdlgtypes.cpp:1157
+#: editdlgtypes.cpp:1156
 #, fuzzy, kde-format
 #| msgid "Edit Alarm Template"
 msgctxt "@title:window"
 msgid "Edit Email Alarm Template"
 msgstr "Edit templat penggera"
 
-#: editdlgtypes.cpp:1158
+#: editdlgtypes.cpp:1157
 #, fuzzy, kde-format
 #| msgid "Email Alarms"
 msgctxt "@title:window"
 msgid "New Email Alarm"
 msgstr "Penggera E-mel"
 
-#: editdlgtypes.cpp:1158
+#: editdlgtypes.cpp:1157
 #, fuzzy, kde-format
 #| msgid "Email Alarms"
 msgctxt "@title:window"
 msgid "Edit Email Alarm"
 msgstr "Penggera E-mel"
 
-#: editdlgtypes.cpp:1166
+#: editdlgtypes.cpp:1165
 #, fuzzy, kde-format
 #| msgid "Send the email to the specified addressees now"
 msgctxt "@info:whatsthis"
 msgid "Send the email to the specified addressees now"
 msgstr "Hantar e-mel ke alamat yang dinyatakan sekarang"
 
-#: editdlgtypes.cpp:1167
+#: editdlgtypes.cpp:1166
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Send the email now"
 msgstr "&Hantar mel"
 
-#: editdlgtypes.cpp:1178
+#: editdlgtypes.cpp:1177
 #, fuzzy, kde-format
 #| msgctxt "'From' email address"
 #| msgid "From:"
@@ -2794,7 +2794,7 @@ msgctxt "@label:listbox 'From' email address"
 msgid "From:"
 msgstr "Daripada:"
 
-#: editdlgtypes.cpp:1184
+#: editdlgtypes.cpp:1183
 #, fuzzy, kde-format
 #| msgid ""
 #| "Your email identity, used to identify you as the sender when sending "
@@ -2807,7 +2807,7 @@ msgstr ""
 "Identiti e-mel anda, digunakan untuk mengecam anda sebagai penghantar "
 "apabila menghantar penggera  e-mel."
 
-#: editdlgtypes.cpp:1190
+#: editdlgtypes.cpp:1189
 #, fuzzy, kde-format
 #| msgctxt "Email addressee"
 #| msgid "To:"
@@ -2815,7 +2815,7 @@ msgctxt "@label:textbox Email addressee"
 msgid "To:"
 msgstr "Kepada:"
 
-#: editdlgtypes.cpp:1195
+#: editdlgtypes.cpp:1194
 #, fuzzy, kde-format
 #| msgid ""
 #| "Enter the addresses of the email recipients. Separate multiple addresses "
@@ -2828,21 +2828,21 @@ msgstr ""
 "Masukkan alamat penerima e-mel. Asingkan berbilang alamat dengan koma atau "
 "koma bertitik."
 
-#: editdlgtypes.cpp:1203
+#: editdlgtypes.cpp:1202
 #, fuzzy, kde-format
 #| msgid "Open address book"
 msgctxt "@info:tooltip"
 msgid "Open address book"
 msgstr "Buka buku alamat"
 
-#: editdlgtypes.cpp:1204
+#: editdlgtypes.cpp:1203
 #, fuzzy, kde-format
 #| msgid "Select email addresses from your address book."
 msgctxt "@info:whatsthis"
 msgid "Select email addresses from your address book."
 msgstr "Pilih alamat e-mel dari buku alamat anda"
 
-#: editdlgtypes.cpp:1208
+#: editdlgtypes.cpp:1207
 #, fuzzy, kde-format
 #| msgctxt "Email subject"
 #| msgid "Subject:"
@@ -2850,69 +2850,69 @@ msgctxt "@label:textbox Email subject"
 msgid "Subject:"
 msgstr "Subjek:"
 
-#: editdlgtypes.cpp:1214
+#: editdlgtypes.cpp:1213
 #, fuzzy, kde-format
 #| msgid "Enter the email subject."
 msgctxt "@info:whatsthis"
 msgid "Enter the email subject."
 msgstr "Masukkan subjek e-mel"
 
-#: editdlgtypes.cpp:1220
+#: editdlgtypes.cpp:1219
 #, fuzzy, kde-format
 #| msgid "Enter the email message."
 msgctxt "@info:whatsthis"
 msgid "Enter the email message."
 msgstr "Masukkan mesej e-mel."
 
-#: editdlgtypes.cpp:1228
+#: editdlgtypes.cpp:1227
 #, fuzzy, kde-format
 #| msgid "Attachment&s:"
 msgctxt "@label:listbox"
 msgid "Attachments:"
 msgstr "&Lampiran:"
 
-#: editdlgtypes.cpp:1237
+#: editdlgtypes.cpp:1236
 #, fuzzy, kde-format
 #| msgid "Files to send as attachments to the email."
 msgctxt "@info:whatsthis"
 msgid "Files to send as attachments to the email."
 msgstr "Fail yang hendak dihantar sebagai lampiran pada  e-mel."
 
-#: editdlgtypes.cpp:1241 resourceselector.cpp:77
+#: editdlgtypes.cpp:1240 resourceselector.cpp:77
 #, fuzzy, kde-format
 #| msgid "Add..."
 msgctxt "@action:button"
 msgid "Add..."
 msgstr "Tambah..."
 
-#: editdlgtypes.cpp:1243
+#: editdlgtypes.cpp:1242
 #, fuzzy, kde-format
 #| msgid "Add an attachment to the email."
 msgctxt "@info:whatsthis"
 msgid "Add an attachment to the email."
 msgstr "Tambah lampiran kepada e-mel"
 
-#: editdlgtypes.cpp:1246 resourceselector.cpp:79
+#: editdlgtypes.cpp:1245 resourceselector.cpp:79
 #, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "Remove"
 msgstr "&Buang"
 
-#: editdlgtypes.cpp:1248
+#: editdlgtypes.cpp:1247
 #, fuzzy, kde-format
 #| msgid "Remove the highlighted attachment from the email."
 msgctxt "@info:whatsthis"
 msgid "Remove the highlighted attachment from the email."
 msgstr "Buang lampiran yang ditonjolkan dari e-mel"
 
-#: editdlgtypes.cpp:1253
+#: editdlgtypes.cpp:1252
 #, fuzzy, kde-format
 #| msgid "If checked, the email will be blind copied to you."
 msgctxt "@info:whatsthis"
 msgid "If checked, the email will be blind copied to you."
 msgstr "Jika disemak, e-mel akan disalin buta tuli kepada anda."
 
-#: editdlgtypes.cpp:1433
+#: editdlgtypes.cpp:1432
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Invalid email address:\n"
@@ -2923,14 +2923,14 @@ msgstr ""
 "Alamat e-mel tidak sah:\n"
 "%1"
 
-#: editdlgtypes.cpp:1440
+#: editdlgtypes.cpp:1439
 #, fuzzy, kde-format
 #| msgid "No email address specified"
 msgctxt "@info"
 msgid "No email address specified"
 msgstr "Alamat e-mel tidak dinyatakan"
 
-#: editdlgtypes.cpp:1457
+#: editdlgtypes.cpp:1456
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Invalid email attachment:\n"
@@ -2941,7 +2941,7 @@ msgstr ""
 "Lampiran e-mel tidak sah:\n"
 "%1"
 
-#: editdlgtypes.cpp:1461
+#: editdlgtypes.cpp:1460
 #, fuzzy, kde-format
 #| msgid ""
 #| "Do you really want to send the email now to the specified recipient(s)?"
@@ -2950,21 +2950,21 @@ msgid "Do you really want to send the email now to the specified recipient(s)?"
 msgstr ""
 "Anda benar-benar ingin menghantar e-mel kepada penerima khusus sekarang?"
 
-#: editdlgtypes.cpp:1462
+#: editdlgtypes.cpp:1461
 #, fuzzy, kde-format
 #| msgid "Confirm Email"
 msgctxt "@action:button"
 msgid "Confirm Email"
 msgstr "Sahkan e-mel"
 
-#: editdlgtypes.cpp:1462
+#: editdlgtypes.cpp:1461
 #, fuzzy, kde-format
 #| msgid "&Send"
 msgctxt "@action:button"
 msgid "Send"
 msgstr "&Hantar"
 
-#: editdlgtypes.cpp:1488
+#: editdlgtypes.cpp:1487
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Email sent to:\n"
@@ -2975,7 +2975,7 @@ msgstr ""
 "E-mel dihantar ke:\n"
 "%1%2"
 
-#: editdlgtypes.cpp:1491
+#: editdlgtypes.cpp:1490
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Email sent to:\n"
@@ -2986,56 +2986,56 @@ msgstr ""
 "E-mel dihantar ke:\n"
 "%1%2"
 
-#: editdlgtypes.cpp:1524
+#: editdlgtypes.cpp:1523
 #, fuzzy, kde-format
 #| msgid "Choose File to Attach"
 msgctxt "@title:window"
 msgid "Choose File to Attach"
 msgstr "Pilih fail yang hendak dilampirkan"
 
-#: editdlgtypes.cpp:1607
+#: editdlgtypes.cpp:1606
 #, fuzzy, kde-format
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Audio Alarm Template"
 msgstr "Templat penggera baru"
 
-#: editdlgtypes.cpp:1607
+#: editdlgtypes.cpp:1606
 #, fuzzy, kde-format
 #| msgid "Edit Alarm Template"
 msgctxt "@title:window"
 msgid "Edit Audio Alarm Template"
 msgstr "Edit templat penggera"
 
-#: editdlgtypes.cpp:1608
+#: editdlgtypes.cpp:1607
 #, fuzzy, kde-format
 #| msgid "Email Alarms"
 msgctxt "@title:window"
 msgid "New Audio Alarm"
 msgstr "Penggera E-mel"
 
-#: editdlgtypes.cpp:1608
+#: editdlgtypes.cpp:1607
 #, fuzzy, kde-format
 #| msgid "Edit Alarm"
 msgctxt "@title:window"
 msgid "Edit Audio Alarm"
 msgstr "Edit penggera"
 
-#: editdlgtypes.cpp:1616
+#: editdlgtypes.cpp:1615
 #, fuzzy, kde-format
 #| msgid "Display the file now"
 msgctxt "@info:whatsthis"
 msgid "Play the audio file now"
 msgstr "Paparkan fail sekarang"
 
-#: editdlgtypes.cpp:1617
+#: editdlgtypes.cpp:1616
 #, fuzzy, kde-format
 #| msgid "Display the file now"
 msgctxt "@info:tooltip"
 msgid "Play the audio file now"
 msgstr "Paparkan fail sekarang"
 
-#: editdlgtypes.cpp:1619
+#: editdlgtypes.cpp:1618
 #, fuzzy, kde-format
 #| msgid ""
 #| "If checked, the sound file will be played repeatedly for as long as the "
@@ -3046,7 +3046,7 @@ msgid ""
 msgstr ""
 "Jika disemak, fail bunyi akan disiarkan berkali-kali selagi mesej dipaparkan."
 
-#: editdlgtypes.cpp:1828
+#: editdlgtypes.cpp:1827
 #, fuzzy, kde-format
 #| msgid ""
 #| "Check to enter the contents of a script instead of a shell command line"
@@ -3054,21 +3054,21 @@ msgctxt "@info:whatsthis"
 msgid "Check to enter the contents of a script instead of a shell command line"
 msgstr "Semak untuk memasukkan kandungan skrip, bukan garis arahan shell."
 
-#: editdlgtypes.cpp:1834
+#: editdlgtypes.cpp:1833
 #, fuzzy, kde-format
 #| msgid "Enter a shell command to execute."
 msgctxt "@info:whatsthis"
 msgid "Enter a shell command to execute."
 msgstr "Masukkan arahan shell yang hendak dilaksanakan."
 
-#: editdlgtypes.cpp:1839
+#: editdlgtypes.cpp:1838
 #, fuzzy, kde-format
 #| msgid "Enter the contents of a script to execute"
 msgctxt "@info:whatsthis"
 msgid "Enter the contents of a script to execute"
 msgstr "Masukkan kandungan skrip yang hendak dilaksana"
 
-#: editdlgtypes.cpp:1895
+#: editdlgtypes.cpp:1894
 #, fuzzy, kde-format
 #| msgid "Enter the contents of a script to execute"
 msgctxt "@info"
@@ -3083,34 +3083,34 @@ msgid "List of scheduled alarms"
 msgstr "Senarai penggera terjadual"
 
 #. i18n: ectx: property (title), widget (QGroupBox, alarmTypeGroupBox)
-#: find.cpp:97 resources/singlefileresourceconfigdialog.ui:74
+#: find.cpp:96 resources/singlefileresourceconfigdialog.ui:74
 #, fuzzy, kde-format
 #| msgid "Alarm Type"
 msgctxt "@title:group"
 msgid "Alarm Type"
 msgstr "Jenis penggera"
 
-#: find.cpp:103
+#: find.cpp:102
 #, fuzzy, kde-format
 #| msgid "Acti&ve"
 msgctxt "@option:check Alarm type"
 msgid "Active"
 msgstr "&Aktif"
 
-#: find.cpp:104
+#: find.cpp:103
 #, fuzzy, kde-format
 #| msgid "Check to include active alarms in the search."
 msgctxt "@info:whatsthis"
 msgid "Check to include active alarms in the search."
 msgstr "Semak untuk memasukkan  penggera aktif dalam carian."
 
-#: find.cpp:107
+#: find.cpp:106
 #, fuzzy, kde-format
 msgctxt "@option:check Alarm type"
 msgid "Archived"
 msgstr "&Aktif"
 
-#: find.cpp:108
+#: find.cpp:107
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -3120,82 +3120,82 @@ msgstr ""
 "Semak untuk memasukkan penggera luput dalam carian.  Opsyen ini hanya boleh "
 "didapatkan jika penggera luput sedang dipapar."
 
-#: find.cpp:116
+#: find.cpp:115
 #, fuzzy, kde-format
 #| msgid "Text"
 msgctxt "@option:check Alarm action = text display"
 msgid "Text"
 msgstr "Teks"
 
-#: find.cpp:117
+#: find.cpp:116
 #, fuzzy, kde-format
 #| msgid "Check to include text message alarms in the search."
 msgctxt "@info:whatsthis"
 msgid "Check to include text message alarms in the search."
 msgstr "Semak untuk memasukkan penggera mesej teks dalam carian."
 
-#: find.cpp:120
+#: find.cpp:119
 #, fuzzy, kde-format
 msgctxt "@option:check Alarm action = file display"
 msgid "File"
 msgstr "Fai&l"
 
-#: find.cpp:121
+#: find.cpp:120
 #, fuzzy, kde-format
 #| msgid "Check to include file alarms in the search."
 msgctxt "@info:whatsthis"
 msgid "Check to include file alarms in the search."
 msgstr "Semak untuk memasukkan penggera fail dalam carian."
 
-#: find.cpp:124
+#: find.cpp:123
 #, fuzzy, kde-format
 #| msgid "Co&mmand"
 msgctxt "@option:check Alarm action"
 msgid "Command"
 msgstr "&Arahan"
 
-#: find.cpp:125
+#: find.cpp:124
 #, fuzzy, kde-format
 #| msgid "Check to include command alarms in the search."
 msgctxt "@info:whatsthis"
 msgid "Check to include command alarms in the search."
 msgstr "Semak untuk memasukkan penggera arahan dalam carian."
 
-#: find.cpp:128
+#: find.cpp:127
 #, fuzzy, kde-format
 #| msgid "Email"
 msgctxt "@option:check Alarm action"
 msgid "Email"
 msgstr "E-mel"
 
-#: find.cpp:129
+#: find.cpp:128
 #, fuzzy, kde-format
 #| msgid "Check to include email alarms in the search."
 msgctxt "@info:whatsthis"
 msgid "Check to include email alarms in the search."
 msgstr "Semak untuk memasukkan penggera e-mel dalam carian."
 
-#: find.cpp:132
+#: find.cpp:131
 #, kde-format
 msgctxt "@option:check Alarm action"
 msgid "Audio"
 msgstr ""
 
-#: find.cpp:133
+#: find.cpp:132
 #, fuzzy, kde-format
 #| msgid "Check to include email alarms in the search."
 msgctxt "@info:whatsthis"
 msgid "Check to include audio alarms in the search."
 msgstr "Semak untuk memasukkan penggera e-mel dalam carian."
 
-#: find.cpp:231
+#: find.cpp:230
 #, fuzzy, kde-format
 #| msgid "No alarm types are selected to search"
 msgctxt "@info"
 msgid "No alarm types are selected to search"
 msgstr "Tiada jenis penggera dipilih dalam carian"
 
-#: find.cpp:380
+#: find.cpp:379
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "End of alarm list reached.\n"
@@ -3208,7 +3208,7 @@ msgstr ""
 "Senarai penggera telah sampai ke hujung.\n"
 "Teruskan dari awal?"
 
-#: find.cpp:381
+#: find.cpp:380
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Beginning of alarm list reached.\n"
@@ -3303,45 +3303,45 @@ msgctxt "@title:window"
 msgid "Choose Alarm Font & Color"
 msgstr "Pilih Fon dan Warna Penggera"
 
-#: functions.cpp:146
+#: functions.cpp:144
 #, kde-format
 msgctxt "@action"
 msgid "Stop Play"
 msgstr ""
 
-#: functions.cpp:191
+#: functions.cpp:189
 #, fuzzy, kde-format
 #| msgid "Enable &Alarms"
 msgctxt "@action"
 msgid "Enable &Alarms"
 msgstr "Aktifkan  &Penggera"
 
-#: functions.cpp:217
+#: functions.cpp:215
 #, fuzzy, kde-format
 #| msgid "Alarm List"
 msgctxt "@action"
 msgid "Spread Windows"
 msgstr "Senarai penggera"
 
-#: functions.cpp:859
+#: functions.cpp:857
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Import Calendar Files"
 msgstr "URL fail kalendar"
 
-#: functions.cpp:920
+#: functions.cpp:918
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox File type selection filter"
 msgid "Calendar Files"
 msgstr "URL fail kalendar"
 
-#: functions.cpp:921
+#: functions.cpp:919
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Export Calendar"
 msgstr ""
 
-#: functions.cpp:946
+#: functions.cpp:944
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -3352,7 +3352,7 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: functions.cpp:985
+#: functions.cpp:983
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Failed to save calendar to\n"
@@ -3363,7 +3363,7 @@ msgstr ""
 "Gagal menyimpan kalendar ke\n"
 "'%1'"
 
-#: functions.cpp:998
+#: functions.cpp:996
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -3374,37 +3374,37 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: functions.cpp:1018
+#: functions.cpp:1016
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Unable to show alarms in KOrganizer"
 msgstr "Semak untuk menyatakan berapa lama masa untuk mengulang penggera"
 
-#: functions.cpp:1019
+#: functions.cpp:1017
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Unable to show alarm in KOrganizer"
 msgstr "Semak untuk menyatakan berapa lama masa untuk mengulang penggera"
 
-#: functions.cpp:1022
+#: functions.cpp:1020
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Unable to update alarm in KOrganizer"
 msgstr "Semak untuk menyatakan berapa lama masa untuk mengulang penggera"
 
-#: functions.cpp:1025
+#: functions.cpp:1023
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Unable to delete alarms from KOrganizer"
 msgstr "Semak untuk menyatakan berapa lama masa untuk mengulang penggera"
 
-#: functions.cpp:1026
+#: functions.cpp:1024
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Unable to delete alarm from KOrganizer"
 msgstr "Semak untuk menyatakan berapa lama masa untuk mengulang penggera"
 
-#: functions.cpp:1036
+#: functions.cpp:1034
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "%1\n"
@@ -3415,7 +3415,7 @@ msgstr ""
 "%1\n"
 "Anda pasti hendak menyimpan perubahan yang telah dibuat?"
 
-#: functions.cpp:1039
+#: functions.cpp:1037
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "%1\n"
@@ -3426,7 +3426,7 @@ msgstr ""
 "%1\n"
 "Anda pasti hendak menyimpan perubahan yang telah dibuat?"
 
-#: functions.cpp:1042
+#: functions.cpp:1040
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "%1\n"
@@ -3437,25 +3437,25 @@ msgstr ""
 "%1\n"
 "Anda pasti hendak menyimpan perubahan yang telah dibuat?"
 
-#: functions.cpp:1291
+#: functions.cpp:1289
 #, kde-format
 msgctxt "info"
 msgid "The scheduled Wake from Suspend has been cancelled."
 msgstr ""
 
-#: functions.cpp:1324
+#: functions.cpp:1322
 #, kde-format
 msgctxt "@info"
 msgid "Error obtaining authorization (%1)"
 msgstr ""
 
-#: functions.cpp:1372
+#: functions.cpp:1370
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "You must enable a template calendar to save the template in"
 msgstr "Pilih templat untuk mendasari penggera baru."
 
-#: functions.cpp:1595
+#: functions.cpp:1593
 #, fuzzy, kde-kuit-format
 #| msgctxt "Please set the 'From' email address..."
 #| msgid ""
@@ -3467,7 +3467,7 @@ msgstr ""
 "%1\n"
 "Setkan ia dalam dialog keutamaan."
 
-#: functions.cpp:1599
+#: functions.cpp:1597
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Alarms are currently disabled.\n"
@@ -3480,19 +3480,19 @@ msgstr ""
 "Penggera sedang nyahaktif.\n"
 "Anda ingin aktifkan penggera sekarang?"
 
-#: functions.cpp:1600
+#: functions.cpp:1598
 #, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "Enable"
 msgstr "&Aktifkan"
 
-#: functions.cpp:1600
+#: functions.cpp:1598
 #, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "Keep Disabled"
 msgstr "&Nyahaktifkan"
 
-#: functions.cpp:1667
+#: functions.cpp:1665
 #, fuzzy, kde-kuit-format
 #| msgid "Error copying sent email to KMail %1 folder"
 msgctxt "@info"
@@ -3500,49 +3500,49 @@ msgid ""
 "Unable to start <application>KMail</application><nl/>(<message>%1</message>)"
 msgstr "Ralat semasa menyalin e-mel dihantar ke folder KMail %1"
 
-#: functions.cpp:1963
+#: functions.cpp:1961
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Error saving alarms"
 msgstr "Ralat mencipta semula penggera"
 
-#: functions.cpp:1964
+#: functions.cpp:1962
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Error saving alarm"
 msgstr "Ralat mencipta semula penggera"
 
-#: functions.cpp:1967
+#: functions.cpp:1965
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Error deleting alarms"
 msgstr "Ralat mencipta semula penggera"
 
-#: functions.cpp:1968
+#: functions.cpp:1966
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Error deleting alarm"
 msgstr "Ralat mencipta semula penggera"
 
-#: functions.cpp:1971
+#: functions.cpp:1969
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Error saving reactivated alarms"
 msgstr "Tidak dapat mengaktifkan semula penggera luput"
 
-#: functions.cpp:1972
+#: functions.cpp:1970
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Error saving reactivated alarm"
 msgstr "Tidak dapat mengaktifkan semula penggera luput"
 
-#: functions.cpp:1975
+#: functions.cpp:1973
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Error saving alarm templates"
 msgstr "Cipta templat penggera baru"
 
-#: functions.cpp:1976
+#: functions.cpp:1974
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Error saving alarm template"
@@ -3659,7 +3659,648 @@ msgctxt "@info"
 msgid "Post-alarm action:"
 msgstr "Tindakan pascapenggera:"
 
-#: kamail.cpp:75
+#: kalarmcalendar/alarmtext.cpp:502
+#, fuzzy, kde-format
+#| msgctxt "'From' email address"
+#| msgid "From:"
+msgctxt "@info 'From' email address"
+msgid "From:"
+msgstr "Daripada:"
+
+#: kalarmcalendar/alarmtext.cpp:503 messagedisplayhelper.cpp:330
+#, fuzzy, kde-format
+#| msgctxt "Email addressee"
+#| msgid "To:"
+msgctxt "@info Email addressee"
+msgid "To:"
+msgstr "Kepada:"
+
+#: kalarmcalendar/alarmtext.cpp:504
+#, fuzzy, kde-format
+#| msgctxt "Copy-to in email headers"
+#| msgid "Cc:"
+msgctxt "@info Copy-to in email headers"
+msgid "Cc:"
+msgstr "Cc:"
+
+#: kalarmcalendar/alarmtext.cpp:505
+#, fuzzy, kde-format
+#| msgid "Date:"
+msgctxt "@info"
+msgid "Date:"
+msgstr "Tarikh:"
+
+#: kalarmcalendar/alarmtext.cpp:506 messagedisplayhelper.cpp:332
+#, fuzzy, kde-format
+#| msgctxt "Email subject"
+#| msgid "Subject:"
+msgctxt "@info Email subject"
+msgid "Subject:"
+msgstr "Subjek:"
+
+#: kalarmcalendar/alarmtext.cpp:508
+#, fuzzy, kde-format
+#| msgctxt "Email addressee"
+#| msgid "To:"
+msgctxt "@info Todo calendar item's title field"
+msgid "To-do:"
+msgstr "Kepada:"
+
+#: kalarmcalendar/alarmtext.cpp:509
+#, fuzzy, kde-format
+#| msgid "Action"
+msgctxt "@info Todo calendar item's location field"
+msgid "Location:"
+msgstr "Tindakan"
+
+#: kalarmcalendar/alarmtext.cpp:510
+#, fuzzy, kde-format
+#| msgid "Date:"
+msgctxt "@info Todo calendar item's due date/time"
+msgid "Due:"
+msgstr "Tarikh:"
+
+#: kalarmcalendar/kacalendar.cpp:135
+#, kde-format
+msgid "KAlarm"
+msgstr "KAlarm"
+
+#: kalarmcalendar/kaevent.cpp:2946
+#, fuzzy, kde-format
+#| msgctxt "Brief form of 'At Login'"
+#| msgid "Login"
+msgctxt "@info Brief form of 'At Login'"
+msgid "Login"
+msgstr "Log masuk"
+
+#: kalarmcalendar/kaevent.cpp:2946
+#, fuzzy, kde-format
+#| msgid "At login"
+msgctxt "@info"
+msgid "At login"
+msgstr "Pada log masuk"
+
+#: kalarmcalendar/kaevent.cpp:2955 kalarmcalendar/kaevent.cpp:3042
+#: kalarmcalendar/kaeventformatter.cpp:428
+#: kalarmcalendar/kaeventformatter.cpp:442
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "1 Minute"
+msgid_plural "%1 Minutes"
+msgstr[0] "_n: 1 Minit"
+msgstr[1] "%1 Minit"
+
+#: kalarmcalendar/kaevent.cpp:2957 kalarmcalendar/kaevent.cpp:3044
+#: kalarmcalendar/kaeventformatter.cpp:444
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "1 Hour"
+msgid_plural "%1 Hours"
+msgstr[0] "_n: 1 Jam"
+msgstr[1] "%1 Jam"
+
+#: kalarmcalendar/kaevent.cpp:2959 kalarmcalendar/kaevent.cpp:3045
+#, fuzzy, kde-format
+#| msgctxt "Undo-action: message"
+#| msgid "%1: %2"
+msgctxt "@info Hours and minutes"
+msgid "%1h %2m"
+msgstr "%1: %2"
+
+#: kalarmcalendar/kaevent.cpp:2962 kalarmcalendar/kaevent.cpp:3049
+#: kalarmcalendar/kaeventformatter.cpp:446
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "1 Day"
+msgid_plural "%1 Days"
+msgstr[0] "_n: 1 Hari"
+msgstr[1] "%1 Hari"
+
+#: kalarmcalendar/kaevent.cpp:2964 kalarmcalendar/kaevent.cpp:3050
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "1 Week"
+msgid_plural "%1 Weeks"
+msgstr[0] "_n: 1 Minggu"
+msgstr[1] "%1 Minggu"
+
+#: kalarmcalendar/kaevent.cpp:2966
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "1 Month"
+msgid_plural "%1 Months"
+msgstr[0] "_n: 1 Bulan"
+msgstr[1] "%1 Bulan"
+
+#: kalarmcalendar/kaevent.cpp:2968
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "1 Year"
+msgid_plural "%1 Years"
+msgstr[0] "_n: 1 Tahun"
+msgstr[1] "%1 Tahun"
+
+#: kalarmcalendar/kaevent.cpp:2974
+#, fuzzy, kde-format
+#| msgid "None"
+msgctxt "@info No recurrence"
+msgid "None"
+msgstr "Tiada"
+
+#: kalarmcalendar/kaevent.cpp:3052
+#, fuzzy, kde-format
+#| msgid "None"
+msgctxt "@info No repetition"
+msgid "None"
+msgstr "Tiada"
+
+#: kalarmcalendar/kaeventformatter.cpp:37
+#, kde-format
+msgctxt "@label Unique identifier"
+msgid "UID"
+msgstr ""
+
+#: kalarmcalendar/kaeventformatter.cpp:39
+#, fuzzy, kde-format
+#| msgid "Alarm Type"
+msgctxt "@label"
+msgid "Alarm type"
+msgstr "Jenis penggera"
+
+#: kalarmcalendar/kaeventformatter.cpp:41
+#, fuzzy, kde-format
+#| msgid "Alarm Templates"
+msgctxt "@label"
+msgid "Alarm status"
+msgstr "Templat penggera"
+
+#: kalarmcalendar/kaeventformatter.cpp:43
+#, fuzzy, kde-format
+#| msgid "Alarm Type"
+msgctxt "@label"
+msgid "Alarm name"
+msgstr "Jenis penggera"
+
+#: kalarmcalendar/kaeventformatter.cpp:45
+#, fuzzy, kde-format
+#| msgid "Template name:"
+msgctxt "@label"
+msgid "Template name"
+msgstr "Nama templat:"
+
+#: kalarmcalendar/kaeventformatter.cpp:47
+#, fuzzy, kde-format
+#| msgid "&Default time"
+msgctxt "@label"
+msgid "Creation time"
+msgstr "Waktu &piawai"
+
+#: kalarmcalendar/kaeventformatter.cpp:49
+#, fuzzy, kde-format
+#| msgctxt "Date cannot be earlier than start date"
+#| msgid "start date"
+msgctxt "@label"
+msgid "Start time"
+msgstr "tarikh mula"
+
+#: kalarmcalendar/kaeventformatter.cpp:51
+#, fuzzy, kde-format
+#| msgid "Template name:"
+msgctxt "@label Start delay configured in an alarm template"
+msgid "Template after time"
+msgstr "Nama templat:"
+
+#: kalarmcalendar/kaeventformatter.cpp:53
+#, fuzzy, kde-format
+msgctxt "@label"
+msgid "Recurs"
+msgstr "&Pengulangan"
+
+#: kalarmcalendar/kaeventformatter.cpp:55
+#, fuzzy, kde-format
+#| msgid "Recurrence:"
+msgctxt "@label"
+msgid "Recurrence"
+msgstr "Pengulangan:"
+
+#: kalarmcalendar/kaeventformatter.cpp:57
+#, fuzzy, kde-format
+#| msgid "Simple Repetition"
+msgctxt "@label"
+msgid "Sub-repetition"
+msgstr "Pengulangan Ringkas"
+
+#: kalarmcalendar/kaeventformatter.cpp:59
+#, fuzzy, kde-format
+#| msgid "Simple Repetition"
+msgctxt "@label"
+msgid "Sub-repetition interval"
+msgstr "Pengulangan Ringkas"
+
+#: kalarmcalendar/kaeventformatter.cpp:61
+#, fuzzy, kde-format
+#| msgid "Simple Repetition"
+msgctxt "@label"
+msgid "Sub-repetition count"
+msgstr "Pengulangan Ringkas"
+
+#: kalarmcalendar/kaeventformatter.cpp:63
+#, fuzzy, kde-format
+#| msgid "&Number of repetitions:"
+msgctxt "@label"
+msgid "Next sub-repetition"
+msgstr "&Bilangan pengulangan:"
+
+#: kalarmcalendar/kaeventformatter.cpp:65
+#, fuzzy, kde-format
+msgctxt "@label"
+msgid "Work time only"
+msgstr "Waktu Untuk"
+
+#: kalarmcalendar/kaeventformatter.cpp:67
+#, kde-format
+msgctxt "@label"
+msgid "Holidays excluded"
+msgstr ""
+
+#: kalarmcalendar/kaeventformatter.cpp:69
+#, fuzzy, kde-format
+#| msgid "No recurrence"
+msgctxt "@label"
+msgid "Next recurrence"
+msgstr "Tiada pengulangan"
+
+#: kalarmcalendar/kaeventformatter.cpp:71
+#, kde-format
+msgctxt "@label"
+msgid "Late cancel"
+msgstr ""
+
+#: kalarmcalendar/kaeventformatter.cpp:73
+#, kde-format
+msgctxt "@label Automatically close window"
+msgid "Auto close"
+msgstr ""
+
+#: kalarmcalendar/kaeventformatter.cpp:75
+#, fuzzy, kde-format
+msgctxt "@label"
+msgid "Copy to KOrganizer"
+msgstr "Semak untuk menyatakan berapa lama masa untuk mengulang penggera"
+
+#: kalarmcalendar/kaeventformatter.cpp:77
+#, fuzzy, kde-format
+msgctxt "@label"
+msgid "Enabled"
+msgstr "&Aktifkan"
+
+#: kalarmcalendar/kaeventformatter.cpp:79
+#, fuzzy, kde-format
+msgctxt "@label"
+msgid "Read-only"
+msgstr "Tarikh:"
+
+#: kalarmcalendar/kaeventformatter.cpp:81
+#, fuzzy, kde-format
+msgctxt "@label Whether alarm should be archived"
+msgid "Archive"
+msgstr "&Aktif"
+
+#: kalarmcalendar/kaeventformatter.cpp:83
+#, kde-format
+msgctxt "@label"
+msgid "Revision"
+msgstr ""
+
+#: kalarmcalendar/kaeventformatter.cpp:85
+#, kde-format
+msgctxt "@label"
+msgid "Custom properties"
+msgstr ""
+
+#: kalarmcalendar/kaeventformatter.cpp:88
+#, fuzzy, kde-format
+msgctxt "@label"
+msgid "Message text"
+msgstr "Mesej"
+
+#: kalarmcalendar/kaeventformatter.cpp:90
+#, fuzzy, kde-format
+msgctxt "@label File to provide text for message"
+msgid "Message file"
+msgstr "Mesej"
+
+#: kalarmcalendar/kaeventformatter.cpp:96
+#, kde-format
+msgctxt "@label"
+msgid "Font"
+msgstr ""
+
+#: kalarmcalendar/kaeventformatter.cpp:98
+#, fuzzy, kde-format
+msgctxt "@label Shell command to execute before alarm"
+msgid "Pre-alarm action"
+msgstr "Tindakan prapenggera:"
+
+#: kalarmcalendar/kaeventformatter.cpp:100
+#, fuzzy, kde-format
+msgctxt "@label"
+msgid "Pre-alarm action cancel"
+msgstr "Tindakan prapenggera:"
+
+#: kalarmcalendar/kaeventformatter.cpp:102
+#, fuzzy, kde-format
+msgctxt "@label"
+msgid "Pre-alarm action no error"
+msgstr "Tindakan prapenggera:"
+
+#: kalarmcalendar/kaeventformatter.cpp:104
+#, fuzzy, kde-format
+msgctxt "@label Shell command to execute after alarm"
+msgid "Post-alarm action"
+msgstr "Tindakan pascapenggera:"
+
+#: kalarmcalendar/kaeventformatter.cpp:108
+#, kde-format
+msgctxt "@label"
+msgid "Akonadi Item ID"
+msgstr ""
+
+#: kalarmcalendar/kaeventformatter.cpp:110
+#, fuzzy, kde-format
+msgctxt "@label Audio method"
+msgid "Sound"
+msgstr "Bunyi"
+
+#: kalarmcalendar/kaeventformatter.cpp:112
+#, fuzzy, kde-format
+msgctxt "@label Whether audio should repeat"
+msgid "Sound repeat"
+msgstr "&Jangan ulang"
+
+#: kalarmcalendar/kaeventformatter.cpp:116
+#, fuzzy, kde-format
+msgctxt "@label"
+msgid "Sound fade volume"
+msgstr "Setkan volum"
+
+#: kalarmcalendar/kaeventformatter.cpp:118
+#, fuzzy, kde-format
+msgctxt "@label"
+msgid "Sound fade time"
+msgstr "&Fail bunyi:"
+
+#: kalarmcalendar/kaeventformatter.cpp:120
+#, fuzzy, kde-format
+#| msgid "Reminder"
+msgctxt "@label Whether the alarm has a reminder"
+msgid "Reminder"
+msgstr "Peringatan"
+
+#: kalarmcalendar/kaeventformatter.cpp:122
+#, fuzzy, kde-format
+#| msgid "Reminder for first recurrence only"
+msgctxt "@label Whether reminder is on first recurrence only"
+msgid "Reminder once only"
+msgstr "Peringatan untuk pengulangan pertama sahaja"
+
+#: kalarmcalendar/kaeventformatter.cpp:124
+#, kde-format
+msgctxt "@label Whether to use standard notification system"
+msgid "Notify"
+msgstr ""
+
+#: kalarmcalendar/kaeventformatter.cpp:126
+#, fuzzy, kde-format
+#| msgid "Cancel &Deferral"
+msgctxt "@label Deferral type"
+msgid "Deferral"
+msgstr "Batalkan  &Tunda"
+
+#: kalarmcalendar/kaeventformatter.cpp:128
+#, fuzzy, kde-format
+#| msgid "&Default time"
+msgctxt "@label"
+msgid "Deferral time"
+msgstr "Waktu &piawai"
+
+#: kalarmcalendar/kaeventformatter.cpp:130
+#, fuzzy, kde-format
+#| msgid "Cancel &Deferral"
+msgctxt "@label Default deferral delay"
+msgid "Deferral default"
+msgstr "Batalkan  &Tunda"
+
+#: kalarmcalendar/kaeventformatter.cpp:132
+#, fuzzy, kde-format
+#| msgid "Cancel &Deferral"
+msgctxt "@label Whether deferral time is date-only by default"
+msgid "Deferral default date only"
+msgstr "Batalkan  &Tunda"
+
+#: kalarmcalendar/kaeventformatter.cpp:135
+#, fuzzy, kde-format
+#| msgid "Co&mmand"
+msgctxt "@label A shell command"
+msgid "Command"
+msgstr "&Arahan"
+
+#: kalarmcalendar/kaeventformatter.cpp:139
+#, fuzzy, kde-format
+#| msgid "Execute in terminal window"
+msgctxt "@label Execute in terminal window"
+msgid "Execute in terminal"
+msgstr "Laksanakan dalam tetingkap terminal"
+
+#: kalarmcalendar/kaeventformatter.cpp:141
+#, kde-format
+msgctxt "@label"
+msgid "Hide command error"
+msgstr ""
+
+#: kalarmcalendar/kaeventformatter.cpp:144
+#, fuzzy, kde-format
+#| msgid "Email subject line"
+msgctxt "@label"
+msgid "Email subject"
+msgstr "Baris subjek e-mel"
+
+#: kalarmcalendar/kaeventformatter.cpp:146
+#, fuzzy, kde-format
+#| msgid "Email subject line"
+msgctxt "@label Email address"
+msgid "Email sender ID"
+msgstr "Baris subjek e-mel"
+
+#: kalarmcalendar/kaeventformatter.cpp:148
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "@label Email address"
+msgid "Email to"
+msgstr "E-mel"
+
+#: kalarmcalendar/kaeventformatter.cpp:150
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "@label true/false"
+msgid "Email bcc"
+msgstr "E-mel"
+
+#: kalarmcalendar/kaeventformatter.cpp:152
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "@label"
+msgid "Email body"
+msgstr "E-mel"
+
+#: kalarmcalendar/kaeventformatter.cpp:154
+#, fuzzy, kde-format
+msgctxt "@label"
+msgid "Email attachments"
+msgstr "E-mel pelanggan:"
+
+#: kalarmcalendar/kaeventformatter.cpp:256
+#, fuzzy, kde-format
+#| msgid "Display Alarms"
+msgctxt "@info Alarm type"
+msgid "Display (text)"
+msgstr "Paparkan penggera"
+
+#: kalarmcalendar/kaeventformatter.cpp:258
+#, fuzzy, kde-format
+#| msgid "Display the file now"
+msgctxt "@info Alarm type"
+msgid "Display (file)"
+msgstr "Paparkan fail sekarang"
+
+#: kalarmcalendar/kaeventformatter.cpp:261
+#, fuzzy, kde-format
+#| msgid "Display the alarm message now"
+msgctxt "@info Alarm type"
+msgid "Display (command)"
+msgstr "Paparkan mesej penggera sekarang"
+
+#: kalarmcalendar/kaeventformatter.cpp:262
+#, fuzzy, kde-format
+#| msgid "Co&mmand"
+msgctxt "@info Alarm type"
+msgid "Command"
+msgstr "&Arahan"
+
+#: kalarmcalendar/kaeventformatter.cpp:264
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "@info Alarm type"
+msgid "Email"
+msgstr "E-mel"
+
+#: kalarmcalendar/kaeventformatter.cpp:266
+#, fuzzy, kde-format
+msgctxt "@info Alarm type"
+msgid "Audio"
+msgstr "&Fail bunyi:"
+
+#: kalarmcalendar/kaeventformatter.cpp:273
+#, fuzzy, kde-format
+#| msgid "Acti&ve"
+msgctxt "@info Alarm type"
+msgid "Active"
+msgstr "&Aktif"
+
+#: kalarmcalendar/kaeventformatter.cpp:275
+#, fuzzy, kde-format
+msgctxt "@info Alarm type"
+msgid "Archived"
+msgstr "&Aktif"
+
+#: kalarmcalendar/kaeventformatter.cpp:277
+#, fuzzy, kde-format
+#| msgid "&Templates..."
+msgctxt "@info Alarm type"
+msgid "Template"
+msgstr "&Templat..."
+
+#: kalarmcalendar/kaeventformatter.cpp:296
+#, fuzzy, kde-format
+#| msgid "At login"
+msgctxt "@info Repeat at login"
+msgid "At login until %1"
+msgstr "Pada log masuk"
+
+#: kalarmcalendar/kaeventformatter.cpp:337
+#, fuzzy, kde-format
+#| msgctxt "n days"
+#| msgid " %1d "
+msgctxt "@info"
+msgid "%1"
+msgstr " %1d "
+
+#: kalarmcalendar/kaeventformatter.cpp:349
+#, fuzzy, kde-format
+#| msgid "&Default time"
+msgctxt "@info Using default font"
+msgid "Default"
+msgstr "Waktu &piawai"
+
+#: kalarmcalendar/kaeventformatter.cpp:365 messagedisplayhelper.cpp:211
+#, fuzzy, kde-format
+#| msgid "Reminder"
+msgctxt "@info"
+msgid "Reminder"
+msgstr "Peringatan"
+
+#: kalarmcalendar/kaeventformatter.cpp:378
+#, fuzzy, kde-format
+#| msgid "Speak"
+msgctxt "@info"
+msgid "Speak"
+msgstr "Tuturkan"
+
+#: kalarmcalendar/kaeventformatter.cpp:379
+#, fuzzy, kde-format
+#| msgid "Beep"
+msgctxt "@info"
+msgid "Beep"
+msgstr "Bip"
+
+#: kalarmcalendar/kaeventformatter.cpp:384
+#: kalarmcalendar/kaeventformatter.cpp:388
+#, fuzzy, kde-format
+#| msgctxt "Undo-action: message"
+#| msgid "%1: %2"
+msgctxt "@info Percentage"
+msgid "%1%%"
+msgstr "%1: %2"
+
+#: kalarmcalendar/kaeventformatter.cpp:392
+#, fuzzy, kde-format
+#| msgid "seconds"
+msgctxt "@info"
+msgid "1 Second"
+msgid_plural "%1 Seconds"
+msgstr[0] "Saat"
+msgstr[1] "Saat"
+
+#: kalarmcalendar/kaeventformatter.cpp:417
+#, kde-format
+msgctxt "@info Error indication"
+msgid "error!"
+msgstr ""
+
+#: kalarmcalendar/kaeventformatter.cpp:422
+#, kde-format
+msgctxt "@info General purpose status indication: yes or no"
+msgid "Yes"
+msgstr ""
+
+#: kalarmcalendar/kaeventformatter.cpp:423
+#, fuzzy, kde-format
+#| msgid "None"
+msgctxt "@info General purpose status indication: yes or no"
+msgid "No"
+msgstr "Tiada"
+
+#: kamail.cpp:74
 #, fuzzy, kde-format
 #| msgid ""
 #| "A 'From' email address must be configured in order to execute email "
@@ -3671,7 +4312,7 @@ msgstr ""
 "Satu alamat e-mel 'Daripada' mesti dikonfigur untuk melaksanakan penggera e-"
 "mel."
 
-#: kamail.cpp:78
+#: kamail.cpp:77
 #, fuzzy, kde-format
 #| msgctxt "KMail folder name: this should be translated the same as in kmail"
 #| msgid "sent-mail"
@@ -3680,7 +4321,7 @@ msgctxt ""
 msgid "sent-mail"
 msgstr "mel dihantar"
 
-#: kamail.cpp:109
+#: kamail.cpp:108
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Invalid 'From' email address.\n"
@@ -3693,7 +4334,7 @@ msgstr ""
 "Alamat e-mel  'Daripada' tidak sah.\n"
 "Identiti KMail '%1' tidak ditemui."
 
-#: kamail.cpp:115
+#: kamail.cpp:114
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Invalid 'From' email address.\n"
@@ -3706,7 +4347,7 @@ msgstr ""
 "Alamat e-mel  'Daripada' tidak sah.\n"
 "Identiti KMail '%1' tidak ditemui."
 
-#: kamail.cpp:125
+#: kamail.cpp:124
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3718,7 +4359,7 @@ msgstr ""
 "ditemui)\n"
 "Setkan dalam KMail atau dalam dialog keutamaan %."
 
-#: kamail.cpp:129
+#: kamail.cpp:128
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3729,7 +4370,7 @@ msgstr ""
 "Tiada alamat e-mel  'Daripada' dikonfigur.\n"
 "Setkan di dalam Pusat Kawalan KDE atau di dalam dialog keutamaan %1."
 
-#: kamail.cpp:134
+#: kamail.cpp:133
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3739,13 +4380,13 @@ msgstr ""
 "Tiada alamat e-mel  'Daripada' dikonfigur.\n"
 "Setkan dalam dialog keutamaan %1."
 
-#: kamail.cpp:166
+#: kamail.cpp:165
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<command>%1</command> not found"
 msgstr ""
 
-#: kamail.cpp:228
+#: kamail.cpp:227
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -3756,20 +4397,20 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: kamail.cpp:289
+#: kamail.cpp:288
 #, kde-format
 msgctxt "@info"
 msgid "Emails may not have been sent"
 msgstr ""
 
-#: kamail.cpp:290 undo.cpp:410
+#: kamail.cpp:289 undo.cpp:409
 #, fuzzy, kde-format
 #| msgid "Program error"
 msgctxt "@info"
 msgid "Program error"
 msgstr "Ralat program"
 
-#: kamail.cpp:392
+#: kamail.cpp:391
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Error attaching file:\n"
@@ -3780,7 +4421,7 @@ msgstr ""
 "Ralat semasa melampirkan fail:\n"
 "%1"
 
-#: kamail.cpp:402
+#: kamail.cpp:401
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Attachment not found:\n"
@@ -3791,27 +4432,27 @@ msgstr ""
 "Lampiran tidak ditemui:\n"
 "%1"
 
-#: kamail.cpp:484
+#: kamail.cpp:483
 #, fuzzy, kde-format
 #| msgid "An email has been queued to be sent"
 msgctxt "@info"
 msgid "An email has been queued to be sent"
 msgstr "Satu e-mel menunggu giliran untuk dihantar"
 
-#: kamail.cpp:650
+#: kamail.cpp:649
 #, fuzzy, kde-format
 #| msgid "Failed to send email"
 msgctxt "@info"
 msgid "Failed to send email"
 msgstr "Gagal menghantar e-mel"
 
-#: kamail.cpp:651
+#: kamail.cpp:650
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Error sending email"
 msgstr "Ralat mencipta semula penggera"
 
-#: kamail.cpp:653
+#: kamail.cpp:652
 #, fuzzy, kde-format
 #| msgid "Error copying sent email to KMail %1 folder"
 msgctxt "@info"
@@ -4062,7 +4703,7 @@ msgstr "Mesej penggera peribadi, arahan dan penjadual e-mel untuk KDE"
 msgid "Copyright © 2001-%1, David Jarvie"
 msgstr ""
 
-#: mainwindow.cpp:443
+#: mainwindow.cpp:442
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Failure to create menus\n"
@@ -4075,124 +4716,124 @@ msgstr ""
 "Gagal mencipta menu\n"
 "(mungkin %1 hilang atau rosak)"
 
-#: mainwindow.cpp:463
+#: mainwindow.cpp:462
 #, fuzzy, kde-format
 #| msgid "&Templates..."
 msgctxt "@action"
 msgid "&Templates..."
 msgstr "&Templat..."
 
-#: mainwindow.cpp:467
+#: mainwindow.cpp:466
 #, fuzzy, kde-format
 #| msgid "&New..."
 msgctxt "@action"
 msgid "&New"
 msgstr "&Baru..."
 
-#: mainwindow.cpp:473
+#: mainwindow.cpp:472
 #, fuzzy, kde-format
 #| msgid "Create Tem&plate..."
 msgctxt "@action"
 msgid "Create Tem&plate..."
 msgstr "CiptaTem&plat..."
 
-#: mainwindow.cpp:477
+#: mainwindow.cpp:476
 #, fuzzy, kde-format
 #| msgid "&Copy..."
 msgctxt "@action"
 msgid "&Copy..."
 msgstr "&Salin..."
 
-#: mainwindow.cpp:482 resourceselector.cpp:300
+#: mainwindow.cpp:481 resourceselector.cpp:300
 #, fuzzy, kde-format
 #| msgid "&Edit..."
 msgctxt "@action"
 msgid "&Edit..."
 msgstr "&Edit..."
 
-#: mainwindow.cpp:487
+#: mainwindow.cpp:486
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "&Delete"
 msgstr "_n: Hapuskan penggera"
 
-#: mainwindow.cpp:493
+#: mainwindow.cpp:492
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "Delete Without Confirmation"
 msgstr "Konfigurasi penggera"
 
-#: mainwindow.cpp:498
+#: mainwindow.cpp:497
 #, fuzzy, kde-format
 #| msgid "Reac&tivate"
 msgctxt "@action"
 msgid "Reac&tivate"
 msgstr "Ak&tifkan semula"
 
-#: mainwindow.cpp:508
+#: mainwindow.cpp:507
 #, kde-format
 msgctxt "@action"
 msgid "Wake From Suspend..."
 msgstr ""
 
-#: mainwindow.cpp:516
+#: mainwindow.cpp:515
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "Show Archi&ved Alarms"
 msgstr "Papar Penggera luput"
 
-#: mainwindow.cpp:521
+#: mainwindow.cpp:520
 #, fuzzy, kde-format
 #| msgid "Show in System &Tray"
 msgctxt "@action"
 msgid "Show in System &Tray"
 msgstr "Papar dalam &Dulang Sistem"
 
-#: mainwindow.cpp:525
+#: mainwindow.cpp:524
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "Show &Calendars"
 msgstr "URL fail kalendar"
 
-#: mainwindow.cpp:529
+#: mainwindow.cpp:528
 #, kde-format
 msgctxt "@action"
 msgid "Show Date Selector"
 msgstr ""
 
-#: mainwindow.cpp:537
+#: mainwindow.cpp:536
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "Import &Alarms..."
 msgstr "Import &Tarikh Lahir..."
 
-#: mainwindow.cpp:541
+#: mainwindow.cpp:540
 #, fuzzy, kde-format
 #| msgid "Import &Birthdays..."
 msgctxt "@action"
 msgid "Import &Birthdays..."
 msgstr "Import &Tarikh Lahir..."
 
-#: mainwindow.cpp:545
+#: mainwindow.cpp:544
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "E&xport Selected Alarms..."
 msgstr "Import &Tarikh Lahir..."
 
-#: mainwindow.cpp:549 resourceselector.cpp:318
+#: mainwindow.cpp:548 resourceselector.cpp:318
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "E&xport..."
 msgstr "Import &Tarikh Lahir..."
 
-#: mainwindow.cpp:553
+#: mainwindow.cpp:552
 #, fuzzy, kde-format
 #| msgid "&Refresh Alarms"
 msgctxt "@action"
 msgid "&Refresh Alarms"
 msgstr "&Muat Semula Penggera"
 
-#: mainwindow.cpp:805
+#: mainwindow.cpp:804
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Do you really want to delete the selected alarm?"
@@ -4200,7 +4841,7 @@ msgid_plural "Do you really want to delete the %1 selected alarms?"
 msgstr[0] "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 msgstr[1] "Anda pasti ingin menghapuskan %1 penggera yang dipilih?"
 
-#: mainwindow.cpp:807
+#: mainwindow.cpp:806
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Delete Alarm"
@@ -4208,31 +4849,31 @@ msgid_plural "Delete Alarms"
 msgstr[0] "_n: Hapuskan penggera"
 msgstr[1] "Hapuskan penggera"
 
-#: mainwindow.cpp:808 templatedlg.cpp:181
+#: mainwindow.cpp:807 templatedlg.cpp:181
 #, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "&Delete"
 msgstr "_n: Hapuskan penggera"
 
-#: mainwindow.cpp:902
+#: mainwindow.cpp:901
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Archived Alarms"
 msgstr "Sembunyikan Penggera Luput"
 
-#: mainwindow.cpp:903
+#: mainwindow.cpp:902
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Archived Alarms"
 msgstr "Papar Penggera luput"
 
-#: mainwindow.cpp:975
+#: mainwindow.cpp:974
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Import birthdays"
 msgstr "Import &Tarikh Lahir..."
 
-#: mainwindow.cpp:1226
+#: mainwindow.cpp:1225
 #, fuzzy, kde-format
 #| msgctxt "Undo-action: message"
 #| msgid "%1: %2"
@@ -4240,7 +4881,7 @@ msgctxt "@action Undo/Redo [action]"
 msgid "%1 %2"
 msgstr "%1: %2"
 
-#: mainwindow.cpp:1227
+#: mainwindow.cpp:1226
 #, fuzzy, kde-format
 #| msgctxt "Undo [action]: message"
 #| msgid "%1 %2: %3"
@@ -4248,62 +4889,62 @@ msgctxt "@action Undo [action]: message"
 msgid "%1 %2: %3"
 msgstr "%1 %2: %3"
 
-#: mainwindow.cpp:1293
+#: mainwindow.cpp:1292
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
 "%1.</qt>"
 msgstr ""
 
-#: mainwindow.cpp:1295
+#: mainwindow.cpp:1294
 #, fuzzy, kde-format
 #| msgid "Hide Time t&o Alarms"
 msgid "Hide menu bar"
 msgstr "Sembunyikan Waktu &untuk Menggera"
 
-#: mainwindow.cpp:1536
+#: mainwindow.cpp:1535
 #, fuzzy, kde-format
 #| msgid "Display Alarms"
 msgctxt "@item:inlistbox"
 msgid "Display Alarm"
 msgstr "Paparkan penggera"
 
-#: mainwindow.cpp:1538
+#: mainwindow.cpp:1537
 #, fuzzy, kde-format
 #| msgid "Email Alarms"
 msgctxt "@item:inlistbox"
 msgid "Email Alarm"
 msgstr "Penggera E-mel"
 
-#: mainwindow.cpp:1540
+#: mainwindow.cpp:1539
 #, fuzzy, kde-format
 #| msgid "Command Alarms"
 msgctxt "@item:inlistbox"
 msgid "Command Alarm"
 msgstr "Penggera Arahan"
 
-#: mainwindow.cpp:1542
+#: mainwindow.cpp:1541
 #, fuzzy, kde-format
 #| msgid "Alarm Type"
 msgctxt "@title:window"
 msgid "Alarm Type"
 msgstr "Jenis penggera"
 
-#: mainwindow.cpp:1543
+#: mainwindow.cpp:1542
 #, fuzzy, kde-format
 #| msgid "Choose Alarm Template"
 msgctxt "@info"
 msgid "Choose alarm type to create:"
 msgstr "Pilih Templat Penggera"
 
-#: mainwindow.cpp:1675
+#: mainwindow.cpp:1674
 #, fuzzy, kde-format
 #| msgid "Ena&ble"
 msgctxt "@action"
 msgid "Ena&ble"
 msgstr "&Aktifkan"
 
-#: mainwindow.cpp:1675
+#: mainwindow.cpp:1674
 #, fuzzy, kde-format
 #| msgid "Disa&ble"
 msgctxt "@action"
@@ -4335,13 +4976,6 @@ msgctxt "@title:window"
 msgid "Message"
 msgstr "Mesej"
 
-#: messagedisplayhelper.cpp:211
-#, fuzzy, kde-format
-#| msgid "Reminder"
-msgctxt "@info"
-msgid "Reminder"
-msgstr "Peringatan"
-
 #: messagedisplayhelper.cpp:289
 #, fuzzy, kde-format
 #| msgid "File is a folder"
@@ -4362,22 +4996,6 @@ msgstr "Gagal membuka fail"
 msgctxt "@info"
 msgid "File not found"
 msgstr "Fail tidak ditemui"
-
-#: messagedisplayhelper.cpp:330
-#, fuzzy, kde-format
-#| msgctxt "Email addressee"
-#| msgid "To:"
-msgctxt "@info Email addressee"
-msgid "To:"
-msgstr "Kepada:"
-
-#: messagedisplayhelper.cpp:332
-#, fuzzy, kde-format
-#| msgctxt "Email subject"
-#| msgid "Subject:"
-msgctxt "@info Email subject"
-msgid "Subject:"
-msgstr "Subjek:"
 
 #: messagedisplayhelper.cpp:346
 #, kde-format
@@ -4728,123 +5346,123 @@ msgctxt "@action"
 msgid "New Alarm From &Template"
 msgstr "Penggera Baru Dari &Templat "
 
-#: prefdlg.cpp:143
+#: prefdlg.cpp:142
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Configure"
 msgstr "Pilih fail bunyi"
 
-#: prefdlg.cpp:153
+#: prefdlg.cpp:152
 #, fuzzy, kde-format
 #| msgid "General"
 msgctxt "@title:tab General preferences"
 msgid "General"
 msgstr "Umum"
 
-#: prefdlg.cpp:154
+#: prefdlg.cpp:153
 #, fuzzy, kde-format
 #| msgid "General"
 msgctxt "@title General preferences"
 msgid "General"
 msgstr "Umum"
 
-#: prefdlg.cpp:159
+#: prefdlg.cpp:158
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "Time & Date"
 msgstr "Waktu Untuk"
 
-#: prefdlg.cpp:160
+#: prefdlg.cpp:159
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "Time and Date"
 msgstr "Waktu Untuk"
 
-#: prefdlg.cpp:165
+#: prefdlg.cpp:164
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "Storage"
 msgstr "Jenis penggera"
 
-#: prefdlg.cpp:166
+#: prefdlg.cpp:165
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "Alarm Storage"
 msgstr "Jenis penggera"
 
-#: prefdlg.cpp:171
+#: prefdlg.cpp:170
 #, fuzzy, kde-format
 #| msgid "Email"
 msgctxt "@title:tab Email preferences"
 msgid "Email"
 msgstr "E-mel"
 
-#: prefdlg.cpp:172
+#: prefdlg.cpp:171
 #, fuzzy, kde-format
 #| msgid "Email Alarm Settings"
 msgctxt "@title"
 msgid "Email Alarm Settings"
 msgstr "Seting penggera e-mel"
 
-#: prefdlg.cpp:177
+#: prefdlg.cpp:176
 #, fuzzy, kde-format
 #| msgid "&Default time"
 msgctxt "@title:tab"
 msgid "Alarm Defaults"
 msgstr "Waktu &piawai"
 
-#: prefdlg.cpp:178
+#: prefdlg.cpp:177
 #, fuzzy, kde-format
 #| msgid "Default Alarm Edit Settings"
 msgctxt "@title"
 msgid "Default Alarm Edit Settings"
 msgstr "Seting Edit Penggera Piawai"
 
-#: prefdlg.cpp:183
+#: prefdlg.cpp:182
 #, kde-format
 msgctxt "@title:tab"
 msgid "View"
 msgstr ""
 
-#: prefdlg.cpp:184
+#: prefdlg.cpp:183
 #, fuzzy, kde-format
 #| msgid "View Settings"
 msgctxt "@title"
 msgid "View Settings"
 msgstr "Paparkan Seting"
 
-#: prefdlg.cpp:261
+#: prefdlg.cpp:260
 #, kde-format
 msgctxt "@info"
 msgid "Reset all tabs to their default values, or only reset the current tab?"
 msgstr ""
 
-#: prefdlg.cpp:263
+#: prefdlg.cpp:262
 #, kde-format
 msgctxt "@action:button Reset ALL tabs"
 msgid "&All"
 msgstr ""
 
-#: prefdlg.cpp:264
+#: prefdlg.cpp:263
 #, kde-format
 msgctxt "@action:button Reset the CURRENT tab"
 msgid "C&urrent"
 msgstr ""
 
-#: prefdlg.cpp:439
+#: prefdlg.cpp:438
 #, fuzzy, kde-format
 #| msgid "Run Mode"
 msgctxt "@title:group"
 msgid "Run Mode"
 msgstr "Jalankan Mod "
 
-#: prefdlg.cpp:444
+#: prefdlg.cpp:443
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Start at login"
 msgstr "Automula pada &log masuk"
 
-#: prefdlg.cpp:447
+#: prefdlg.cpp:446
 #, fuzzy, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -4858,13 +5476,13 @@ msgstr ""
 "Opsyen ini sepatutnya sentiasa disemak kecuali jika anda ingin berhenti "
 "menggunakan %2. "
 
-#: prefdlg.cpp:451
+#: prefdlg.cpp:450
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Warn before quitting"
 msgstr "Beri amaran sebelum &keluar"
 
-#: prefdlg.cpp:452
+#: prefdlg.cpp:451
 #, fuzzy, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -4872,14 +5490,14 @@ msgid ""
 "application>."
 msgstr "Semak untuk memaparkan gesaan amaran sebelum keluar dari %1"
 
-#: prefdlg.cpp:459
+#: prefdlg.cpp:458
 #, fuzzy, kde-format
 #| msgid "The alarm message"
 msgctxt "@option:check"
 msgid "Enable alarm names"
 msgstr "Mesej penggera"
 
-#: prefdlg.cpp:461
+#: prefdlg.cpp:460
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -4887,20 +5505,20 @@ msgid ""
 "help you to identify alarms."
 msgstr ""
 
-#: prefdlg.cpp:469
+#: prefdlg.cpp:468
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Confirm alarm deletions"
 msgstr "&Sahkan penghapusan penggera"
 
-#: prefdlg.cpp:479
+#: prefdlg.cpp:478
 #, fuzzy, kde-format
 #| msgid "Defer for time &interval:"
 msgctxt "@label:spinbox"
 msgid "Default defer time interval:"
 msgstr "Tangguhkan untuk &sela masa "
 
-#: prefdlg.cpp:485
+#: prefdlg.cpp:484
 #, fuzzy, kde-format
 #| msgid "Enter the default sound file to use in the alarm edit dialog."
 msgctxt "@info:whatsthis"
@@ -4909,14 +5527,14 @@ msgid ""
 "the Defer Alarm dialog."
 msgstr "Masukkan fail bunyi piawai untuk digunakan dalam dialog edit penggera."
 
-#: prefdlg.cpp:490
+#: prefdlg.cpp:489
 #, fuzzy, kde-format
 #| msgid "Terminal for Command Alarms"
 msgctxt "@title:group"
 msgid "Terminal for Command Alarms"
 msgstr "Terminal Penggera  Arahan"
 
-#: prefdlg.cpp:491
+#: prefdlg.cpp:490
 #, fuzzy, kde-format
 #| msgid ""
 #| "Choose which application to use when a command alarm is executed in a "
@@ -4929,7 +5547,7 @@ msgstr ""
 "Pilih aplikasi yang hendak digunakan apabila penggera arahan dilaksanakan "
 "dalam tetingkap terminal"
 
-#: prefdlg.cpp:516
+#: prefdlg.cpp:515
 #, fuzzy, kde-kuit-format
 #| msgctxt "The parameter is a command line, e.g. 'xterm -e'"
 #| msgid "Check to execute command alarms in a terminal window by '%1'"
@@ -4939,14 +5557,14 @@ msgid ""
 msgstr ""
 "Semak untuk laksanakan penggera arahan dalam tetingkap terminal oleh '%1'"
 
-#: prefdlg.cpp:524
+#: prefdlg.cpp:523
 #, fuzzy, kde-format
 #| msgid "Other:"
 msgctxt "@option:radio Other terminal window command"
 msgid "Other:"
 msgstr "Lain-lain"
 
-#: prefdlg.cpp:534
+#: prefdlg.cpp:533
 #, fuzzy, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -4960,7 +5578,7 @@ msgstr ""
 "secara automatik menjadi apa yang anda masukkan di sini. Lihat buku panduan "
 "%1 untuk perincian kod khas untuk mengubah baris arahan."
 
-#: prefdlg.cpp:581
+#: prefdlg.cpp:580
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Command to invoke terminal window not found:\n"
@@ -4971,7 +5589,7 @@ msgstr ""
 "Arahan untuk memohon tetingkap terminal yang tidak ditemui:\n"
 "%1"
 
-#: prefdlg.cpp:627
+#: prefdlg.cpp:626
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -4981,7 +5599,7 @@ msgstr ""
 "Anda tidak sepatutnya menyahsemak opsyen ini kecuali anda ingin berhenti "
 "menggunakan %1"
 
-#: prefdlg.cpp:662
+#: prefdlg.cpp:661
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -4989,19 +5607,19 @@ msgid ""
 "its default for displaying and entering dates and times."
 msgstr ""
 
-#: prefdlg.cpp:676
+#: prefdlg.cpp:675
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Holiday region:"
 msgstr ""
 
-#: prefdlg.cpp:685
+#: prefdlg.cpp:684
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Select which holiday region to use"
 msgstr ""
 
-#: prefdlg.cpp:693
+#: prefdlg.cpp:692
 #, fuzzy, kde-format
 #| msgctxt "Undo-action: message"
 #| msgid "%1: %2"
@@ -5009,21 +5627,21 @@ msgctxt "Holiday region, region language"
 msgid "%1 (%2)"
 msgstr "%1: %2"
 
-#: prefdlg.cpp:697
+#: prefdlg.cpp:696
 #, fuzzy, kde-format
 #| msgid "None"
 msgctxt "No holiday region"
 msgid "None"
 msgstr "Tiada"
 
-#: prefdlg.cpp:713
+#: prefdlg.cpp:712
 #, fuzzy, kde-format
 #| msgid "&Start of day for date-only alarms:"
 msgctxt "@label:spinbox"
 msgid "Start of day for date-only alarms:"
 msgstr "&Permulaan hari untuk penggera tarikh sahaja:"
 
-#: prefdlg.cpp:720
+#: prefdlg.cpp:719
 #, fuzzy, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5033,34 +5651,34 @@ msgstr ""
 "Waktu paling awal dalam hari  yang penggera tarikh sahaja (iaitu, penggera "
 "dengan \"bila-bila masa\" dinyatakan) akan dicetus."
 
-#: prefdlg.cpp:725
+#: prefdlg.cpp:724
 #, kde-format
 msgctxt "@title:group"
 msgid "Working Hours"
 msgstr ""
 
-#: prefdlg.cpp:739
+#: prefdlg.cpp:738
 #, fuzzy, kde-format
 #| msgid "Select the days of the week on which to repeat the alarm"
 msgctxt "@info:whatsthis"
 msgid "Check the days in the week which are work days"
 msgstr "Pilih hari dalam minggu yang penggera diulang"
 
-#: prefdlg.cpp:749
+#: prefdlg.cpp:748
 #, fuzzy, kde-format
 #| msgid "&Default time"
 msgctxt "@label:spinbox"
 msgid "Daily start time:"
 msgstr "Waktu &piawai"
 
-#: prefdlg.cpp:756
+#: prefdlg.cpp:755
 #, fuzzy, kde-kuit-format
 #| msgid "Enter the name or path of the log file."
 msgctxt "@info:whatsthis"
 msgid "<para>Enter the start time of the working day.</para><para>%1</para>"
 msgstr "Masukkan nama atau laluan fail log"
 
-#: prefdlg.cpp:768
+#: prefdlg.cpp:767
 #, fuzzy, kde-format
 #| msgctxt "Time period over which to fade the sound"
 #| msgid "Fade time:"
@@ -5068,26 +5686,26 @@ msgctxt "@label:spinbox"
 msgid "Daily end time:"
 msgstr "Masa pudar:"
 
-#: prefdlg.cpp:775
+#: prefdlg.cpp:774
 #, fuzzy, kde-kuit-format
 #| msgid "Enter the name of the alarm template"
 msgctxt "@info:whatsthis"
 msgid "<para>Enter the end time of the working day.</para><para>%1</para>"
 msgstr "Masukkan nama templat penggera"
 
-#: prefdlg.cpp:780
+#: prefdlg.cpp:779
 #, fuzzy, kde-format
 msgctxt "@title:group"
 msgid "KOrganizer"
 msgstr "Semak untuk menyatakan berapa lama masa untuk mengulang penggera"
 
-#: prefdlg.cpp:788
+#: prefdlg.cpp:787
 #, kde-format
 msgctxt "@label:spinbox"
 msgid "KOrganizer event duration:"
 msgstr ""
 
-#: prefdlg.cpp:795
+#: prefdlg.cpp:794
 #, fuzzy, kde-kuit-format
 #| msgid "Enter the start time for alarms based on this template."
 msgctxt "@info:whatsthis"
@@ -5096,19 +5714,19 @@ msgid ""
 "copied to KOrganizer.</para><para>%1</para>"
 msgstr "Masukkan waktu mula untuk penggera berasaskan templat ini."
 
-#: prefdlg.cpp:856
+#: prefdlg.cpp:855
 #, fuzzy, kde-format
 msgctxt "@title:group"
 msgid "New Alarms && Templates"
 msgstr "Templat penggera baru"
 
-#: prefdlg.cpp:861
+#: prefdlg.cpp:860
 #, kde-format
 msgctxt "@option:radio"
 msgid "Store in default calendar"
 msgstr ""
 
-#: prefdlg.cpp:863
+#: prefdlg.cpp:862
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5116,13 +5734,13 @@ msgid ""
 "prompting."
 msgstr ""
 
-#: prefdlg.cpp:865
+#: prefdlg.cpp:864
 #, kde-format
 msgctxt "@option:radio"
 msgid "Prompt for which calendar to store in"
 msgstr ""
 
-#: prefdlg.cpp:868
+#: prefdlg.cpp:867
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5132,20 +5750,20 @@ msgid ""
 "calendar.</para>"
 msgstr ""
 
-#: prefdlg.cpp:873
+#: prefdlg.cpp:872
 #, fuzzy, kde-format
 msgctxt "@title:group"
 msgid "Archived Alarms"
 msgstr "Aktifkan semula penggera"
 
-#: prefdlg.cpp:878
+#: prefdlg.cpp:877
 #, fuzzy, kde-format
 #| msgid "Keep alarms after e&xpiry"
 msgctxt "@option:check"
 msgid "Keep alarms after expiry"
 msgstr "Kekalkan penggera selepas lu&put"
 
-#: prefdlg.cpp:881
+#: prefdlg.cpp:880
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5155,20 +5773,20 @@ msgstr ""
 "Semak untuk menstor penggera selepas luput atau selepas dihapuskan (kecuali "
 "penggera yang dihapuskan yang tidak akan dicetus)"
 
-#: prefdlg.cpp:887
+#: prefdlg.cpp:886
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Discard archived alarms after:"
 msgstr "Buang penggera  lu&put selepas:"
 
-#: prefdlg.cpp:896
+#: prefdlg.cpp:895
 #, fuzzy, kde-format
 #| msgid "days"
 msgctxt "@label Time unit for user-entered number"
 msgid "days"
 msgstr "hari"
 
-#: prefdlg.cpp:900
+#: prefdlg.cpp:899
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5178,19 +5796,19 @@ msgstr ""
 "Nyahsemak untuk menstorkan penggera luput tanpa jangkasama tepat. Semak "
 "untuk memasukkan tempoh penggera yang luput sepatutnya disimpan. "
 
-#: prefdlg.cpp:903
+#: prefdlg.cpp:902
 #, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "Clear Archived Alarms"
 msgstr "Kosongkan &penggera luput"
 
-#: prefdlg.cpp:906
+#: prefdlg.cpp:905
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid "Delete all existing archived alarms."
 msgstr "Hapuskan semua penggera luput yang masih wujud"
 
-#: prefdlg.cpp:907
+#: prefdlg.cpp:906
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5198,7 +5816,7 @@ msgid ""
 "calendar only)."
 msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
-#: prefdlg.cpp:953
+#: prefdlg.cpp:952
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -5208,13 +5826,13 @@ msgid ""
 "para>"
 msgstr ""
 
-#: prefdlg.cpp:970
+#: prefdlg.cpp:969
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Do you really want to delete all archived alarms?"
 msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
-#: prefdlg.cpp:971
+#: prefdlg.cpp:970
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
@@ -5222,26 +5840,26 @@ msgid ""
 "calendar?"
 msgstr "_n: Anda pasti ingin menghapuskan penggera yang dipilih?"
 
-#: prefdlg.cpp:989
+#: prefdlg.cpp:988
 #, fuzzy, kde-format
 #| msgid "Email client:"
 msgctxt "@label"
 msgid "Email client:"
 msgstr "E-mel pelanggan:"
 
-#: prefdlg.cpp:992
+#: prefdlg.cpp:991
 #, fuzzy, kde-format
 msgctxt "@option:radio"
 msgid "KMail"
 msgstr "&KMail"
 
-#: prefdlg.cpp:993
+#: prefdlg.cpp:992
 #, fuzzy, kde-format
 msgctxt "@option:radio"
 msgid "Sendmail"
 msgstr "&Hantar mel"
 
-#: prefdlg.cpp:1004
+#: prefdlg.cpp:1003
 #, fuzzy, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5261,7 +5879,7 @@ msgstr ""
 "sistem anda dikonfigur untuk menggunakan 'hantar mel' atau menggunakan ejen "
 "pengangkut mel serasi hantar mel."
 
-#: prefdlg.cpp:1013
+#: prefdlg.cpp:1012
 #, fuzzy, kde-kuit-format
 #| msgid "Co&py sent emails into KMail's %1 folder"
 msgctxt "@option:check"
@@ -5270,7 +5888,7 @@ msgid ""
 "resource> folder"
 msgstr "&Salin e-mel dihantar ke dalam folder %1 KMail "
 
-#: prefdlg.cpp:1014
+#: prefdlg.cpp:1013
 #, fuzzy, kde-kuit-format
 #| msgid "After sending an email, store a copy in KMail's %1 folder"
 msgctxt "@info:whatsthis"
@@ -5280,20 +5898,20 @@ msgid ""
 msgstr ""
 "Selepas menghantar e-mel, storkan satu salinan ke dalam folder %1 KMail"
 
-#: prefdlg.cpp:1021
+#: prefdlg.cpp:1020
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Notify when remote emails are queued"
 msgstr "&Beritahu bila e-mel jauh dibaris gilir"
 
-#: prefdlg.cpp:1029
+#: prefdlg.cpp:1028
 #, fuzzy, kde-format
 #| msgid "Your Email Address"
 msgctxt "@title:group"
 msgid "Your Email Address"
 msgstr "Alamat e-mel Anda"
 
-#: prefdlg.cpp:1035
+#: prefdlg.cpp:1034
 #, fuzzy, kde-format
 #| msgctxt "'From' email address"
 #| msgid "From:"
@@ -5301,7 +5919,7 @@ msgctxt "@label 'From' email address"
 msgid "From:"
 msgstr "Daripada:"
 
-#: prefdlg.cpp:1047
+#: prefdlg.cpp:1046
 #, fuzzy, kde-format
 #| msgid ""
 #| "Your email address, used to identify you as the sender when sending email "
@@ -5314,7 +5932,7 @@ msgstr ""
 "Alamat e-mel anda, digunakan untuk mengecam anda sebagai penghantar semasa "
 "menghantar penggera e-mel."
 
-#: prefdlg.cpp:1054 prefdlg.cpp:1090
+#: prefdlg.cpp:1053 prefdlg.cpp:1089
 #, fuzzy, kde-kuit-format
 #| msgid "Use KMail &identities"
 msgctxt "@option:radio"
@@ -5322,7 +5940,7 @@ msgid ""
 "Use default address from <application>KMail</application> or System Settings"
 msgstr "Gunakan &identiti KMail "
 
-#: prefdlg.cpp:1057
+#: prefdlg.cpp:1056
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Check to use the email address set in the KDE Control Center, to identify "
@@ -5336,14 +5954,14 @@ msgstr ""
 "Semak untuk menggunakan alamat e-mel yang diset dalam Pusat Kawalan KDE, "
 "untuk mengecam anda sebagai penghantar semasa menghantar penggera e-mel."
 
-#: prefdlg.cpp:1061
+#: prefdlg.cpp:1060
 #, fuzzy, kde-kuit-format
 #| msgid "Use KMail &identities"
 msgctxt "@option:radio"
 msgid "Use <application>KMail</application> identities"
 msgstr "Gunakan &identiti KMail "
 
-#: prefdlg.cpp:1064
+#: prefdlg.cpp:1063
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Check to use KMail's email identities to identify you as the sender when "
@@ -5363,7 +5981,7 @@ msgstr ""
 "sedia ada, identiti piawai KMail akan digunakan. Untuk penggera baru, anda "
 "boleh pilih identiti KMail yang ingin digunakan."
 
-#: prefdlg.cpp:1071
+#: prefdlg.cpp:1070
 #, fuzzy, kde-format
 #| msgctxt "'Bcc' email address"
 #| msgid "&Bcc:"
@@ -5371,7 +5989,7 @@ msgctxt "@label 'Bcc' email address"
 msgid "Bcc:"
 msgstr "&Bcc:"
 
-#: prefdlg.cpp:1082
+#: prefdlg.cpp:1081
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Your email address, used for blind copying email alarms to yourself. If "
@@ -5389,7 +6007,7 @@ msgstr ""
 "komputer di mana KMail sedang berjalan, masukkan saja nama log masuk "
 "pengguna anda."
 
-#: prefdlg.cpp:1093
+#: prefdlg.cpp:1092
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Check to use the email address set in the KDE Control Center, for blind "
@@ -5403,14 +6021,14 @@ msgstr ""
 "Semak untuk menggunakan alamat emel yang diset dalam Pusat Kawalan KDE, "
 "untuk salinan buta tuli penggera e-mel kepada diri anda sendiri."
 
-#: prefdlg.cpp:1175
+#: prefdlg.cpp:1174
 #, fuzzy, kde-format
 #| msgid "No valid 'Bcc' email address is specified."
 msgctxt "@info"
 msgid "No valid 'Bcc' email address is specified."
 msgstr "Alamat e-mel 'SBk' tidak dinyatakan"
 
-#: prefdlg.cpp:1182
+#: prefdlg.cpp:1181
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "%1\n"
@@ -5421,7 +6039,7 @@ msgstr ""
 "%1\n"
 "Anda pasti hendak menyimpan perubahan yang telah dibuat?"
 
-#: prefdlg.cpp:1188
+#: prefdlg.cpp:1187
 #, fuzzy, kde-kuit-format
 #| msgid "No email address is currently set in the KDE Control Center. %1"
 msgctxt "@info"
@@ -5430,14 +6048,14 @@ msgid ""
 "application> or KDE System Settings. %1"
 msgstr "Tiada alamat e-mel sedang diset dalam Pusat Kawalan KDE. %1"
 
-#: prefdlg.cpp:1193
+#: prefdlg.cpp:1192
 #, fuzzy, kde-kuit-format
 #| msgid "No KMail identities currently exist. %1"
 msgctxt "@info"
 msgid "No <application>KMail</application> identities currently exist. %1"
 msgstr "Tiada identiti  KMail wujud masa ini. %1"
 
-#: prefdlg.cpp:1211
+#: prefdlg.cpp:1210
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "The default setting for the recurrence rule in the alarm edit dialog."
@@ -5446,27 +6064,27 @@ msgid ""
 "The default setting for <interface>%1</interface> in the alarm edit dialog."
 msgstr "Seting piawai untuk peraturan pengulangan dalam dialog edit penggera."
 
-#: prefdlg.cpp:1219 prefdlg.cpp:1663
+#: prefdlg.cpp:1218 prefdlg.cpp:1662
 #, fuzzy, kde-format
 #| msgid "General"
 msgctxt "@title:tab"
 msgid "General"
 msgstr "Umum"
 
-#: prefdlg.cpp:1223
+#: prefdlg.cpp:1222
 #, kde-format
 msgctxt "@title:tab Settings specific to alarm type"
 msgid "Type Specific"
 msgstr ""
 
-#: prefdlg.cpp:1227
+#: prefdlg.cpp:1226
 #, fuzzy, kde-format
 #| msgid "Font & Color"
 msgctxt "@title:tab"
 msgid "Font && Color"
 msgstr "Warna & fon"
 
-#: prefdlg.cpp:1243
+#: prefdlg.cpp:1242
 #, fuzzy, kde-format
 #| msgid ""
 #| "The default setting for the recurrence rule in the alarm edit dialog."
@@ -5476,34 +6094,34 @@ msgid ""
 "dialog."
 msgstr "Seting piawai untuk peraturan pengulangan dalam dialog edit penggera."
 
-#: prefdlg.cpp:1267
+#: prefdlg.cpp:1266
 #, fuzzy, kde-format
 #| msgid "Recurrence:"
 msgctxt "@label:listbox"
 msgid "Recurrence:"
 msgstr "Pengulangan:"
 
-#: prefdlg.cpp:1300
+#: prefdlg.cpp:1299
 #, fuzzy, kde-format
 #| msgid "February 2&8th"
 msgctxt "@option:radio"
 msgid "February 2&8th"
 msgstr "2&8 Februari "
 
-#: prefdlg.cpp:1304
+#: prefdlg.cpp:1303
 #, fuzzy, kde-format
 #| msgid "March &1st"
 msgctxt "@option:radio"
 msgid "March &1st"
 msgstr "&1 Mac"
 
-#: prefdlg.cpp:1308
+#: prefdlg.cpp:1307
 #, fuzzy, kde-format
 msgctxt "@option:radio"
 msgid "Do not repeat"
 msgstr "&Jangan ulang"
 
-#: prefdlg.cpp:1313
+#: prefdlg.cpp:1312
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "For yearly recurrences, choose what date, if any, alarms due on February "
@@ -5521,34 +6139,34 @@ msgstr ""
 "Ambil perhatian bahawa kejadian penggera sedia ada yang dijadualkan "
 "seterusnya  tidak dinilai semula apabila seting ini diubah."
 
-#: prefdlg.cpp:1319
+#: prefdlg.cpp:1318
 #, fuzzy, kde-format
 #| msgid "Display Alarms"
 msgctxt "@title:group"
 msgid "Display Alarms"
 msgstr "Paparkan penggera"
 
-#: prefdlg.cpp:1337
+#: prefdlg.cpp:1336
 #, fuzzy, kde-format
 #| msgid "Reminder &units:"
 msgctxt "@label:listbox"
 msgid "Reminder units:"
 msgstr "&Unit peringatan:"
 
-#: prefdlg.cpp:1340
+#: prefdlg.cpp:1339
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox"
 msgid "Minutes"
 msgstr "_n: 1 Minit"
 
-#: prefdlg.cpp:1341
+#: prefdlg.cpp:1340
 #, fuzzy, kde-format
 #| msgid "Hours/Minutes"
 msgctxt "@item:inlistbox"
 msgid "Hours/Minutes"
 msgstr "Jam/Minit"
 
-#: prefdlg.cpp:1344
+#: prefdlg.cpp:1343
 #, fuzzy, kde-format
 #| msgid "The default units for the reminder in the alarm edit dialog."
 msgctxt "@info:whatsthis"
@@ -5557,19 +6175,19 @@ msgid ""
 "soon."
 msgstr "Unit piawai untuk peringatan dalam dialog edit penggera."
 
-#: prefdlg.cpp:1350
+#: prefdlg.cpp:1349
 #, fuzzy, kde-format
 msgctxt "@title:group Audio options group"
 msgid "Sound"
 msgstr "Bunyi"
 
-#: prefdlg.cpp:1369
+#: prefdlg.cpp:1368
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Repeat sound file"
 msgstr "&Ulang fail bunyi"
 
-#: prefdlg.cpp:1372
+#: prefdlg.cpp:1371
 #, fuzzy, kde-kuit-format
 #| msgctxt "sound file \"Repeat\" checkbox"
 #| msgid "The default setting for sound file \"%1\" in the alarm edit dialog."
@@ -5579,28 +6197,28 @@ msgid ""
 "edit dialog."
 msgstr "Seting piawai untuk fail \"%1\" dalam dialog edit penggera."
 
-#: prefdlg.cpp:1378
+#: prefdlg.cpp:1377
 #, fuzzy, kde-format
 #| msgid "Sound &file:"
 msgctxt "@label:textbox"
 msgid "Sound file:"
 msgstr "&Fail bunyi:"
 
-#: prefdlg.cpp:1386
+#: prefdlg.cpp:1385
 #, fuzzy, kde-format
 #| msgid "Choose a sound file"
 msgctxt "@info:tooltip"
 msgid "Choose a sound file"
 msgstr "Pilih fail bunyi"
 
-#: prefdlg.cpp:1388
+#: prefdlg.cpp:1387
 #, fuzzy, kde-format
 #| msgid "Enter the default sound file to use in the alarm edit dialog."
 msgctxt "@info:whatsthis"
 msgid "Enter the default sound file to use in the alarm edit dialog."
 msgstr "Masukkan fail bunyi piawai untuk digunakan dalam dialog edit penggera."
 
-#: prefdlg.cpp:1397
+#: prefdlg.cpp:1396
 #, fuzzy, kde-format
 #| msgid "Enter the default sound file to use in the alarm edit dialog."
 msgctxt "@info:whatsthis"
@@ -5608,35 +6226,35 @@ msgid ""
 "Select to set the default volume for sound files in the alarm edit dialog."
 msgstr "Masukkan fail bunyi piawai untuk digunakan dalam dialog edit penggera."
 
-#: prefdlg.cpp:1401
+#: prefdlg.cpp:1400
 #, fuzzy, kde-format
 #| msgid "Enter the default sound file to use in the alarm edit dialog."
 msgctxt "@info:whatsthis"
 msgid "The default volume for sound files in the alarm edit dialog."
 msgstr "Masukkan fail bunyi piawai untuk digunakan dalam dialog edit penggera."
 
-#: prefdlg.cpp:1411
+#: prefdlg.cpp:1410
 #, fuzzy, kde-format
 #| msgid "Command Alarms"
 msgctxt "@title:group"
 msgid "Command Alarms"
 msgstr "Penggera Arahan"
 
-#: prefdlg.cpp:1430
+#: prefdlg.cpp:1429
 #, fuzzy, kde-format
 #| msgid "Email Alarms"
 msgctxt "@title:group"
 msgid "Email Alarms"
 msgstr "Penggera E-mel"
 
-#: prefdlg.cpp:1443
+#: prefdlg.cpp:1442
 #, fuzzy, kde-format
 #| msgid "Message Font && Color"
 msgctxt "@title:group"
 msgid "Message Font && Color"
 msgstr "Fon && Warna Mesej"
 
-#: prefdlg.cpp:1645
+#: prefdlg.cpp:1644
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "You must enter a sound file when %1 is selected as the default sound type"
@@ -5647,21 +6265,21 @@ msgid ""
 msgstr ""
 "Anda mesti masukkan fail bunyi apabila %1 dipilih sebagai jenis bunyi piawai"
 
-#: prefdlg.cpp:1667
+#: prefdlg.cpp:1666
 #, fuzzy, kde-format
 #| msgid "Alarm List"
 msgctxt "@title:tab"
 msgid "Alarm Windows"
 msgstr "Senarai penggera"
 
-#: prefdlg.cpp:1670
+#: prefdlg.cpp:1669
 #, fuzzy, kde-format
 #| msgid "Show in System &Tray"
 msgctxt "@option:check"
 msgid "Show in system tray"
 msgstr "Papar dalam &Dulang Sistem"
 
-#: prefdlg.cpp:1672
+#: prefdlg.cpp:1671
 #, fuzzy, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5670,13 +6288,13 @@ msgid ""
 "indication.</para>"
 msgstr "Semak untuk menjalankan %1 apabila anda memulakan KDE."
 
-#: prefdlg.cpp:1701
+#: prefdlg.cpp:1700
 #, kde-format
 msgctxt "@option:radio Always show KAlarm icon"
 msgid "Always show"
 msgstr ""
 
-#: prefdlg.cpp:1705
+#: prefdlg.cpp:1704
 #, fuzzy, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5684,13 +6302,13 @@ msgid ""
 "regardless of whether alarms are due."
 msgstr "Semak untuk menjalankan %1 apabila anda memulakan KDE."
 
-#: prefdlg.cpp:1709
+#: prefdlg.cpp:1708
 #, kde-format
 msgctxt "@option:radio"
 msgid "Automatically hide if no active alarms"
 msgstr ""
 
-#: prefdlg.cpp:1713
+#: prefdlg.cpp:1712
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5699,7 +6317,7 @@ msgid ""
 "be made visible by use of the system tray option to show hidden icons."
 msgstr ""
 
-#: prefdlg.cpp:1719
+#: prefdlg.cpp:1718
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5709,27 +6327,27 @@ msgid ""
 "to show hidden icons."
 msgstr ""
 
-#: prefdlg.cpp:1722
+#: prefdlg.cpp:1721
 #, kde-format
 msgctxt "@option:radio"
 msgid "Automatically hide if no alarm due within time period:"
 msgstr ""
 
-#: prefdlg.cpp:1734
+#: prefdlg.cpp:1733
 #, fuzzy, kde-format
 #| msgid "System Tray Tooltip"
 msgctxt "@title:group"
 msgid "System Tray Tooltip"
 msgstr "Tooltip Dulang Sistem"
 
-#: prefdlg.cpp:1741
+#: prefdlg.cpp:1740
 #, fuzzy, kde-format
 #| msgid "Show next &24 hours' alarms"
 msgctxt "@option:check"
 msgid "Show next &24 hours' alarms"
 msgstr "Paparkan penggera untuk &24 jam seterusnya"
 
-#: prefdlg.cpp:1745
+#: prefdlg.cpp:1744
 #, fuzzy, kde-format
 #| msgid ""
 #| "Specify whether to include in the system tray tooltip, a summary of "
@@ -5742,14 +6360,14 @@ msgstr ""
 "Nyatakan sama ada hendak memasukkan ringkasan penggera yang dijangka 24 jam "
 "seterusnya dalam tooltip sistem."
 
-#: prefdlg.cpp:1751
+#: prefdlg.cpp:1750
 #, fuzzy, kde-format
 #| msgid "Ma&ximum number of alarms to show:"
 msgctxt "@option:check"
 msgid "Maximum number of alarms to show:"
 msgstr "Bilangan ma&ksimum penggera untuk dipapar:"
 
-#: prefdlg.cpp:1760
+#: prefdlg.cpp:1759
 #, fuzzy, kde-format
 #| msgid ""
 #| "Uncheck to display all of the next 24 hours' alarms in the system tray "
@@ -5762,46 +6380,46 @@ msgstr ""
 "Nyahsemak untuk papar semua penggera 24 jam seterusnya dalam tooltip dulang "
 "sistem. Semak untuk memasukkan had atas bilangan yang hendak dipaparkan."
 
-#: prefdlg.cpp:1764
+#: prefdlg.cpp:1763
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Show alarm time"
 msgstr "Papar &waktu penggera"
 
-#: prefdlg.cpp:1770
+#: prefdlg.cpp:1769
 #, fuzzy, kde-format
 #| msgid "Show time u&ntil alarm"
 msgctxt "@option:check"
 msgid "Show time until alarm"
 msgstr "Papar waktu sehi&ngga penggera"
 
-#: prefdlg.cpp:1788
+#: prefdlg.cpp:1787
 #, fuzzy, kde-format
 #| msgid "Alarm List"
 msgctxt "@title:group"
 msgid "Alarm List"
 msgstr "Senarai penggera"
 
-#: prefdlg.cpp:1800
+#: prefdlg.cpp:1799
 #, fuzzy, kde-format
 #| msgid "Di&sabled alarm color:"
 msgctxt "@label:listbox"
 msgid "Disabled alarm color:"
 msgstr "&Nyahaktifkan warna penggera:"
 
-#: prefdlg.cpp:1813
+#: prefdlg.cpp:1812
 #, fuzzy, kde-format
 msgctxt "@label:listbox"
 msgid "Archived alarm color:"
 msgstr "&Nyahaktifkan warna penggera:"
 
-#: prefdlg.cpp:1826
+#: prefdlg.cpp:1825
 #, kde-format
 msgctxt "@title:group"
 msgid "Alarm Message Windows"
 msgstr ""
 
-#: prefdlg.cpp:1835
+#: prefdlg.cpp:1834
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5812,25 +6430,25 @@ msgid ""
 "time after the window is displayed.</item></list></para>"
 msgstr ""
 
-#: prefdlg.cpp:1838
+#: prefdlg.cpp:1837
 #, kde-format
 msgctxt "@option:radio"
 msgid "Position windows far from mouse cursor"
 msgstr ""
 
-#: prefdlg.cpp:1842
+#: prefdlg.cpp:1841
 #, kde-format
 msgctxt "@option:radio"
 msgid "Center windows, delay activating window buttons"
 msgstr ""
 
-#: prefdlg.cpp:1850
+#: prefdlg.cpp:1849
 #, kde-format
 msgctxt "@label:spinbox"
 msgid "Button activation delay (seconds):"
 msgstr ""
 
-#: prefdlg.cpp:1857
+#: prefdlg.cpp:1856
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -5838,13 +6456,13 @@ msgid ""
 "window is shown."
 msgstr ""
 
-#: prefdlg.cpp:1865
+#: prefdlg.cpp:1864
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Message windows have a title bar and take keyboard focus"
 msgstr "&Tetingkap mesej mempunyai bar tajuk dan mengambil fokus papan kekunci"
 
-#: prefdlg.cpp:1868
+#: prefdlg.cpp:1867
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Specify the characteristics of alarm message windows:\n"
@@ -5867,70 +6485,70 @@ msgstr ""
 "dipaparkan, tapi ia tidak mempunyai bar tajuk dan  tidak boleh dikeluarkan "
 "atau disaizkan semula."
 
-#: recurrenceedit.cpp:59
+#: recurrenceedit.cpp:58
 #, fuzzy, kde-format
 #| msgid "No Recurrence"
 msgctxt "@item:inlistbox Recurrence type"
 msgid "No Recurrence"
 msgstr "Tiada Pengulangan"
 
-#: recurrenceedit.cpp:60
+#: recurrenceedit.cpp:59
 #, fuzzy, kde-format
 #| msgid "At Login"
 msgctxt "@item:inlistbox Recurrence type"
 msgid "At Login"
 msgstr "Semasa Log masuk"
 
-#: recurrenceedit.cpp:61
+#: recurrenceedit.cpp:60
 #, fuzzy, kde-format
 #| msgid "Hourly/Minutely"
 msgctxt "@item:inlistbox Recurrence type"
 msgid "Hourly/Minutely"
 msgstr "Setiap Jam/Setiap minit"
 
-#: recurrenceedit.cpp:62
+#: recurrenceedit.cpp:61
 #, fuzzy, kde-format
 #| msgid "Daily"
 msgctxt "@item:inlistbox Recurrence type"
 msgid "Daily"
 msgstr "Harian"
 
-#: recurrenceedit.cpp:63
+#: recurrenceedit.cpp:62
 #, fuzzy, kde-format
 #| msgid "Weekly"
 msgctxt "@item:inlistbox Recurrence type"
 msgid "Weekly"
 msgstr "Mingguan"
 
-#: recurrenceedit.cpp:64
+#: recurrenceedit.cpp:63
 #, fuzzy, kde-format
 #| msgid "Monthly"
 msgctxt "@item:inlistbox Recurrence type"
 msgid "Monthly"
 msgstr "Bulanan"
 
-#: recurrenceedit.cpp:65
+#: recurrenceedit.cpp:64
 #, fuzzy, kde-format
 #| msgid "Yearly"
 msgctxt "@item:inlistbox Recurrence type"
 msgid "Yearly"
 msgstr "Tahunan"
 
-#: recurrenceedit.cpp:83
+#: recurrenceedit.cpp:82
 #, fuzzy, kde-format
 #| msgid "Recurrence Rule"
 msgctxt "@title:group"
 msgid "Recurrence Rule"
 msgstr "Peraturan pengulangan"
 
-#: recurrenceedit.cpp:101
+#: recurrenceedit.cpp:100
 #, fuzzy, kde-format
 #| msgid "Do not repeat the alarm"
 msgctxt "@info:whatsthis"
 msgid "Do not repeat the alarm"
 msgstr "Jangan ulang penggera"
 
-#: recurrenceedit.cpp:108
+#: recurrenceedit.cpp:107
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Trigger the alarm at the specified date/time and at every login until "
@@ -5948,42 +6566,42 @@ msgstr ""
 "Ambil perhatian bahawa ini juga akan dicetus setiap kali daemon penggera "
 "dimulakan semula."
 
-#: recurrenceedit.cpp:115
+#: recurrenceedit.cpp:114
 #, fuzzy, kde-format
 #| msgid "Repeat the alarm at hourly/minutely intervals"
 msgctxt "@info:whatsthis"
 msgid "Repeat the alarm at hourly/minutely intervals"
 msgstr "Ulang penggera dalam sela masa setiap jam/minit"
 
-#: recurrenceedit.cpp:121
+#: recurrenceedit.cpp:120
 #, fuzzy, kde-format
 #| msgid "Repeat the alarm at daily intervals"
 msgctxt "@info:whatsthis"
 msgid "Repeat the alarm at daily intervals"
 msgstr "Ulang penggera dalam sela masa harian"
 
-#: recurrenceedit.cpp:127
+#: recurrenceedit.cpp:126
 #, fuzzy, kde-format
 #| msgid "Repeat the alarm at weekly intervals"
 msgctxt "@info:whatsthis"
 msgid "Repeat the alarm at weekly intervals"
 msgstr "Ulang penggera dalam sela masa mingguan"
 
-#: recurrenceedit.cpp:133
+#: recurrenceedit.cpp:132
 #, fuzzy, kde-format
 #| msgid "Repeat the alarm at monthly intervals"
 msgctxt "@info:whatsthis"
 msgid "Repeat the alarm at monthly intervals"
 msgstr "Ulang penggera dalam sela masa bulanan"
 
-#: recurrenceedit.cpp:139
+#: recurrenceedit.cpp:138
 #, fuzzy, kde-format
 #| msgid "Repeat the alarm at annual intervals"
 msgctxt "@info:whatsthis"
 msgid "Repeat the alarm at annual intervals"
 msgstr "Ulang penggera dalam sela masa tahunan"
 
-#: recurrenceedit.cpp:148
+#: recurrenceedit.cpp:147
 #, fuzzy, kde-format
 #| msgid ""
 #| "Simple alarm repetition duration must be less than the recurrence "
@@ -5996,63 +6614,63 @@ msgstr ""
 "Tempoh pengulangan penggera ringkas mesti kurang daripada sela masa ulangan "
 "tolak jangka masa sebarang peringatan"
 
-#: recurrenceedit.cpp:196
+#: recurrenceedit.cpp:195
 #, fuzzy, kde-format
 #| msgid "Recurrence End"
 msgctxt "@title:group"
 msgid "Recurrence End"
 msgstr "Pengulangan tamat"
 
-#: recurrenceedit.cpp:203
+#: recurrenceedit.cpp:202
 #, fuzzy, kde-format
 #| msgid "No &end"
 msgctxt "@option:radio"
 msgid "No end"
 msgstr "Tiada &penamat"
 
-#: recurrenceedit.cpp:205
+#: recurrenceedit.cpp:204
 #, fuzzy, kde-format
 #| msgid "Repeat the alarm indefinitely"
 msgctxt "@info:whatsthis"
 msgid "Repeat the alarm indefinitely"
 msgstr "Ulang penggera tanpa jangka masa tetap"
 
-#: recurrenceedit.cpp:213
+#: recurrenceedit.cpp:212
 #, fuzzy, kde-format
 #| msgid "End a&fter:"
 msgctxt "@option:radio"
 msgid "End after:"
 msgstr "Tamatkan &selepas:"
 
-#: recurrenceedit.cpp:215
+#: recurrenceedit.cpp:214
 #, fuzzy, kde-format
 #| msgid "Repeat the alarm for the number of times specified"
 msgctxt "@info:whatsthis"
 msgid "Repeat the alarm for the number of times specified"
 msgstr "Ulang penggera dengan bilangan yang dinyatakan"
 
-#: recurrenceedit.cpp:221
+#: recurrenceedit.cpp:220
 #, fuzzy, kde-format
 #| msgid "Enter the total number of times to trigger the alarm"
 msgctxt "@info:whatsthis"
 msgid "Enter the total number of times to trigger the alarm"
 msgstr "Masukkan jumlah berapa kali penggera hendak dicetus"
 
-#: recurrenceedit.cpp:225
+#: recurrenceedit.cpp:224
 #, fuzzy, kde-format
 #| msgid "occurrence(s)"
 msgctxt "@label"
 msgid "occurrence(s)"
 msgstr "Kejadian"
 
-#: recurrenceedit.cpp:236
+#: recurrenceedit.cpp:235
 #, fuzzy, kde-format
 #| msgid "End &by:"
 msgctxt "@option:radio"
 msgid "End by:"
 msgstr "Tamatkan &sebelum:"
 
-#: recurrenceedit.cpp:239
+#: recurrenceedit.cpp:238
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -6061,19 +6679,19 @@ msgid ""
 "which will occur regardless after the last main recurrence.</note></para>"
 msgstr ""
 
-#: recurrenceedit.cpp:244
+#: recurrenceedit.cpp:243
 #, kde-format
 msgctxt "@info"
 msgid "This uses the same time zone as the start time."
 msgstr ""
 
-#: recurrenceedit.cpp:246
+#: recurrenceedit.cpp:245
 #, fuzzy, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
 msgstr "Masukkan tarikh terakhir untuk mengulang penggera"
 
-#: recurrenceedit.cpp:252
+#: recurrenceedit.cpp:251
 #, fuzzy, kde-kuit-format
 #| msgid "Enter the last time to repeat the alarm."
 msgctxt "@info:whatsthis"
@@ -6082,7 +6700,7 @@ msgid ""
 "%2</para>"
 msgstr "Masukkan waktu terakhir mengulang penggera"
 
-#: recurrenceedit.cpp:256
+#: recurrenceedit.cpp:255
 #, fuzzy, kde-format
 #| msgid ""
 #| "Stop repeating the alarm after your first login on or after the specified "
@@ -6095,14 +6713,14 @@ msgstr ""
 "Hentikan mengulang penggera selepas log masuk pertama atau selepas tarikh "
 "tamat dinyatakan"
 
-#: recurrenceedit.cpp:275
+#: recurrenceedit.cpp:274
 #, fuzzy, kde-format
 #| msgid "E&xceptions"
 msgctxt "@title:group"
 msgid "Exceptions"
 msgstr "&Pengecualian"
 
-#: recurrenceedit.cpp:284
+#: recurrenceedit.cpp:283
 #, fuzzy, kde-format
 #| msgid ""
 #| "The list of exceptions, i.e. dates/times excluded from the recurrence"
@@ -6110,7 +6728,7 @@ msgctxt "@info:whatsthis"
 msgid "The list of exceptions, i.e. dates/times excluded from the recurrence"
 msgstr "Senarai pengecualian, iaitu tarikh/waktu dikeluarkan dari pengulangan"
 
-#: recurrenceedit.cpp:303
+#: recurrenceedit.cpp:302
 #, fuzzy, kde-format
 #| msgid ""
 #| "Enter a date to insert in the exceptions list. Use in conjunction with "
@@ -6123,26 +6741,26 @@ msgstr ""
 "Masukkan tarikh untuk diselitkan dalam senarai pengecualian. Gunakan bersama "
 "butang Tambah atau Ubah di bawah."
 
-#: recurrenceedit.cpp:310
+#: recurrenceedit.cpp:309
 #, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Tambah..."
 
-#: recurrenceedit.cpp:311
+#: recurrenceedit.cpp:310
 #, fuzzy, kde-format
 #| msgid "Add the date entered above to the exceptions list"
 msgctxt "@info:whatsthis"
 msgid "Add the date entered above to the exceptions list"
 msgstr "Tambah tarikh yang dimasukkan di atas ke dalam senarai pengecualian"
 
-#: recurrenceedit.cpp:315
+#: recurrenceedit.cpp:314
 #, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "Change"
 msgstr "&Ubah..."
 
-#: recurrenceedit.cpp:317
+#: recurrenceedit.cpp:316
 #, fuzzy, kde-format
 #| msgid ""
 #| "Replace the currently highlighted item in the exceptions list with the "
@@ -6155,26 +6773,26 @@ msgstr ""
 "Gantikan item yang sedang ditonjolkan dalam senarai pengecualian dengan "
 "tarikh yang dimasukkan di atas"
 
-#: recurrenceedit.cpp:321 templatedlg.cpp:93
+#: recurrenceedit.cpp:320 templatedlg.cpp:93
 #, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "_n: Hapuskan penggera"
 
-#: recurrenceedit.cpp:322
+#: recurrenceedit.cpp:321
 #, fuzzy, kde-format
 #| msgid "Remove the currently highlighted item from the exceptions list"
 msgctxt "@info:whatsthis"
 msgid "Remove the currently highlighted item from the exceptions list"
 msgstr "Keluarkan item yang sedang ditonjolkan dari senarai pengecualian"
 
-#: recurrenceedit.cpp:329
+#: recurrenceedit.cpp:328
 #, kde-format
 msgctxt "@option:check"
 msgid "Exclude holidays"
 msgstr ""
 
-#: recurrenceedit.cpp:332
+#: recurrenceedit.cpp:331
 #, fuzzy, kde-kuit-format
 #| msgctxt "Please set the 'From' email address..."
 #| msgid ""
@@ -6188,13 +6806,13 @@ msgstr ""
 "%1\n"
 "Setkan ia dalam dialog keutamaan."
 
-#: recurrenceedit.cpp:337
+#: recurrenceedit.cpp:336
 #, kde-format
 msgctxt "@option:check"
 msgid "Only during working time"
 msgstr ""
 
-#: recurrenceedit.cpp:340
+#: recurrenceedit.cpp:339
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -6203,42 +6821,42 @@ msgid ""
 "dialog.</para>"
 msgstr ""
 
-#: recurrenceedit.cpp:383
+#: recurrenceedit.cpp:382
 #, fuzzy, kde-format
 #| msgid "End date is earlier than start date"
 msgctxt "@info"
 msgid "End date is earlier than start date"
 msgstr "Tarikh tamat lebih awal daripada tarikh mula"
 
-#: recurrenceedit.cpp:384
+#: recurrenceedit.cpp:383
 #, fuzzy, kde-format
 #| msgid "End date/time is earlier than start date/time"
 msgctxt "@info"
 msgid "End date/time is earlier than start date/time"
 msgstr "Tarikh/masa tamat lebih awal daripada tarikh/waktu mula"
 
-#: recurrenceedit.cpp:654
+#: recurrenceedit.cpp:653
 #, fuzzy, kde-format
 #| msgid "Date cannot be earlier than %1"
 msgctxt "@info"
 msgid "Date cannot be earlier than start date"
 msgstr "Tarikh tidak boleh lebih awal daripada %1"
 
-#: recurrenceedit.cpp:1067
+#: recurrenceedit.cpp:1066
 #, fuzzy, kde-format
 #| msgid "Recur e&very"
 msgctxt "@label:spinbox"
 msgid "Recur e&very"
 msgstr "Ulang &setiap"
 
-#: recurrenceedit.cpp:1134
+#: recurrenceedit.cpp:1133
 #, fuzzy, kde-format
 #| msgid "hours:minutes"
 msgctxt "@label Time units for user-entered numbers"
 msgid "hours:minutes"
 msgstr "jam:minit"
 
-#: recurrenceedit.cpp:1135
+#: recurrenceedit.cpp:1134
 #, fuzzy, kde-format
 #| msgid ""
 #| "Enter the number of hours and minutes between repetitions of the alarm"
@@ -6246,7 +6864,7 @@ msgctxt "@info:whatsthis"
 msgid "Enter the number of hours and minutes between repetitions of the alarm"
 msgstr "Masukkan bilangan jam dan minit di antara pengulangan penggera"
 
-#: recurrenceedit.cpp:1155
+#: recurrenceedit.cpp:1154
 #, fuzzy, kde-format
 #| msgctxt "On: Tuesday"
 #| msgid "O&n:"
@@ -6254,68 +6872,68 @@ msgctxt "@label On: Tuesday"
 msgid "O&n:"
 msgstr "&Pada hari:"
 
-#: recurrenceedit.cpp:1238
+#: recurrenceedit.cpp:1237
 #, fuzzy, kde-format
 #| msgid "No day selected"
 msgctxt "@info"
 msgid "No day selected"
 msgstr "Tiada hari dipilih"
 
-#: recurrenceedit.cpp:1267
+#: recurrenceedit.cpp:1266
 #, fuzzy, kde-format
 #| msgid "day(s)"
 msgctxt "@label Time unit for user-entered number"
 msgid "day(s)"
 msgstr "Hari"
 
-#: recurrenceedit.cpp:1268
+#: recurrenceedit.cpp:1267
 #, fuzzy, kde-format
 #| msgid "Enter the number of days between repetitions of the alarm"
 msgctxt "@info:whatsthis"
 msgid "Enter the number of days between repetitions of the alarm"
 msgstr "Masukkan bilangan hari di antara pengulangan penggera"
 
-#: recurrenceedit.cpp:1269
+#: recurrenceedit.cpp:1268
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid "Select the days of the week on which the alarm is allowed to occur"
 msgstr "Pilih hari dalam minggu yang penggera diulang"
 
-#: recurrenceedit.cpp:1280
+#: recurrenceedit.cpp:1279
 #, fuzzy, kde-format
 #| msgid "week(s)"
 msgctxt "@label Time unit for user-entered number"
 msgid "week(s)"
 msgstr "Minggu"
 
-#: recurrenceedit.cpp:1281
+#: recurrenceedit.cpp:1280
 #, fuzzy, kde-format
 #| msgid "Enter the number of weeks between repetitions of the alarm"
 msgctxt "@info:whatsthis"
 msgid "Enter the number of weeks between repetitions of the alarm"
 msgstr "Masukkan bilangan minggu di antara pengulangan penggera"
 
-#: recurrenceedit.cpp:1282
+#: recurrenceedit.cpp:1281
 #, fuzzy, kde-format
 #| msgid "Select the days of the week on which to repeat the alarm"
 msgctxt "@info:whatsthis"
 msgid "Select the days of the week on which to repeat the alarm"
 msgstr "Pilih hari dalam minggu yang penggera diulang"
 
-#: recurrenceedit.cpp:1304
+#: recurrenceedit.cpp:1303
 #, fuzzy, kde-format
 msgctxt "@option:radio On day number in the month"
 msgid "O&n day"
 msgstr "Hari ini"
 
-#: recurrenceedit.cpp:1308
+#: recurrenceedit.cpp:1307
 #, fuzzy, kde-format
 #| msgid "Repeat the alarm on the selected day of the month"
 msgctxt "@info:whatsthis"
 msgid "Repeat the alarm on the selected day of the month"
 msgstr "Ulang penggera pada hari dipilih bagi bulan berkenaan"
 
-#: recurrenceedit.cpp:1317
+#: recurrenceedit.cpp:1316
 #, fuzzy, kde-format
 #| msgctxt "Last day of month"
 #| msgid "Last"
@@ -6323,14 +6941,14 @@ msgctxt "@item:inlistbox Last day of month"
 msgid "Last"
 msgstr "Akhir"
 
-#: recurrenceedit.cpp:1319
+#: recurrenceedit.cpp:1318
 #, fuzzy, kde-format
 #| msgid "Select the day of the month on which to repeat the alarm"
 msgctxt "@info:whatsthis"
 msgid "Select the day of the month on which to repeat the alarm"
 msgstr "Pilih hari dalam bulan yang  penggera hendak diulang"
 
-#: recurrenceedit.cpp:1326
+#: recurrenceedit.cpp:1325
 #, fuzzy, kde-format
 #| msgctxt "On the 1st Tuesday"
 #| msgid "On t&he"
@@ -6338,7 +6956,7 @@ msgctxt "@option:radio On the 1st Tuesday"
 msgid "On t&he"
 msgstr "&Pada hari"
 
-#: recurrenceedit.cpp:1330
+#: recurrenceedit.cpp:1329
 #, fuzzy, kde-format
 #| msgid ""
 #| "Repeat the alarm on one day of the week, in the selected week of the month"
@@ -6347,42 +6965,42 @@ msgid ""
 "Repeat the alarm on one day of the week, in the selected week of the month"
 msgstr "Ulang penggera satu hari dalam minggu dipilih dalam bulan berkenaan"
 
-#: recurrenceedit.cpp:1335
+#: recurrenceedit.cpp:1334
 #, fuzzy, kde-format
 #| msgid "1st"
 msgctxt "@item:inlistbox"
 msgid "1st"
 msgstr "1"
 
-#: recurrenceedit.cpp:1336
+#: recurrenceedit.cpp:1335
 #, fuzzy, kde-format
 #| msgid "2nd"
 msgctxt "@item:inlistbox"
 msgid "2nd"
 msgstr "2"
 
-#: recurrenceedit.cpp:1337
+#: recurrenceedit.cpp:1336
 #, fuzzy, kde-format
 #| msgid "3rd"
 msgctxt "@item:inlistbox"
 msgid "3rd"
 msgstr "3"
 
-#: recurrenceedit.cpp:1338
+#: recurrenceedit.cpp:1337
 #, fuzzy, kde-format
 #| msgid "4th"
 msgctxt "@item:inlistbox"
 msgid "4th"
 msgstr "4"
 
-#: recurrenceedit.cpp:1339
+#: recurrenceedit.cpp:1338
 #, fuzzy, kde-format
 #| msgid "5th"
 msgctxt "@item:inlistbox"
 msgid "5th"
 msgstr "5"
 
-#: recurrenceedit.cpp:1340
+#: recurrenceedit.cpp:1339
 #, fuzzy, kde-format
 #| msgctxt "Last day of month"
 #| msgid "Last"
@@ -6390,122 +7008,122 @@ msgctxt "@item:inlistbox Last Monday in March"
 msgid "Last"
 msgstr "Akhir"
 
-#: recurrenceedit.cpp:1341
+#: recurrenceedit.cpp:1340
 #, fuzzy, kde-format
 #| msgid "2nd Last"
 msgctxt "@item:inlistbox"
 msgid "2nd Last"
 msgstr "Ke-2 akhir"
 
-#: recurrenceedit.cpp:1342
+#: recurrenceedit.cpp:1341
 #, fuzzy, kde-format
 #| msgid "3rd Last"
 msgctxt "@item:inlistbox"
 msgid "3rd Last"
 msgstr "Ke-3 akhir"
 
-#: recurrenceedit.cpp:1343
+#: recurrenceedit.cpp:1342
 #, fuzzy, kde-format
 #| msgid "4th Last"
 msgctxt "@item:inlistbox"
 msgid "4th Last"
 msgstr "Ke-4 akhir"
 
-#: recurrenceedit.cpp:1344
+#: recurrenceedit.cpp:1343
 #, fuzzy, kde-format
 #| msgid "5th Last"
 msgctxt "@item:inlistbox"
 msgid "5th Last"
 msgstr "ke-5 akhir"
 
-#: recurrenceedit.cpp:1347
+#: recurrenceedit.cpp:1346
 #, kde-format
 msgctxt "@item:inlistbox Every (Monday...) in month"
 msgid "Every"
 msgstr ""
 
-#: recurrenceedit.cpp:1350
+#: recurrenceedit.cpp:1349
 #, fuzzy, kde-format
 #| msgid "Select the week of the month in which to repeat the alarm"
 msgctxt "@info:whatsthis"
 msgid "Select the week of the month in which to repeat the alarm"
 msgstr "Pilih minggu dalam bulan yang penggera hendak diulang"
 
-#: recurrenceedit.cpp:1364
+#: recurrenceedit.cpp:1363
 #, fuzzy, kde-format
 #| msgid "Select the day of the week on which to repeat the alarm"
 msgctxt "@info:whatsthis"
 msgid "Select the day of the week on which to repeat the alarm"
 msgstr "Pilih hari dalam minggu yang penggera hendak diulang"
 
-#: recurrenceedit.cpp:1486
+#: recurrenceedit.cpp:1485
 #, fuzzy, kde-format
 #| msgid "month(s)"
 msgctxt "@label Time unit for user-entered number"
 msgid "month(s)"
 msgstr "Bulan"
 
-#: recurrenceedit.cpp:1487
+#: recurrenceedit.cpp:1486
 #, fuzzy, kde-format
 #| msgid "Enter the number of months between repetitions of the alarm"
 msgctxt "@info:whatsthis"
 msgid "Enter the number of months between repetitions of the alarm"
 msgstr "Masukkan bilangan bulan antara pengulangan penggera"
 
-#: recurrenceedit.cpp:1498
+#: recurrenceedit.cpp:1497
 #, fuzzy, kde-format
 #| msgid "year(s)"
 msgctxt "@label Time unit for user-entered number"
 msgid "year(s)"
 msgstr "Tahun"
 
-#: recurrenceedit.cpp:1499
+#: recurrenceedit.cpp:1498
 #, fuzzy, kde-format
 #| msgid "Enter the number of years between repetitions of the alarm"
 msgctxt "@info:whatsthis"
 msgid "Enter the number of years between repetitions of the alarm"
 msgstr "Masukkan bilangan tahun di antara pengulangan penggera"
 
-#: recurrenceedit.cpp:1506
+#: recurrenceedit.cpp:1505
 #, fuzzy, kde-format
 #| msgid "Monthly"
 msgctxt "@label List of months to select"
 msgid "Months:"
 msgstr "Bulanan"
 
-#: recurrenceedit.cpp:1524
+#: recurrenceedit.cpp:1523
 #, fuzzy, kde-format
 #| msgid "Select the months of the year in which to repeat the alarm"
 msgctxt "@info:whatsthis"
 msgid "Select the months of the year in which to repeat the alarm"
 msgstr "Pilih bulan dalam tahun yang penggera hendak diulang"
 
-#: recurrenceedit.cpp:1533
+#: recurrenceedit.cpp:1532
 #, kde-format
 msgctxt "@label:listbox"
 msgid "February 2&9th alarm in non-leap years:"
 msgstr ""
 
-#: recurrenceedit.cpp:1537
+#: recurrenceedit.cpp:1536
 #, fuzzy, kde-format
 #| msgid "None"
 msgctxt "@item:inlistbox No date"
 msgid "None"
 msgstr "Tiada"
 
-#: recurrenceedit.cpp:1538
+#: recurrenceedit.cpp:1537
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox 1st March (short form)"
 msgid "1 Mar"
 msgstr "_n: 1 Tahun"
 
-#: recurrenceedit.cpp:1539
+#: recurrenceedit.cpp:1538
 #, kde-format
 msgctxt "@item:inlistbox 28th February (short form)"
 msgid "28 Feb"
 msgstr ""
 
-#: recurrenceedit.cpp:1545
+#: recurrenceedit.cpp:1544
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -6513,7 +7131,7 @@ msgid ""
 "leap years"
 msgstr ""
 
-#: recurrenceedit.cpp:1627
+#: recurrenceedit.cpp:1626
 #, fuzzy, kde-format
 #| msgid "No month selected"
 msgctxt "@info"
@@ -6918,13 +7536,13 @@ msgctxt "@option:radio"
 msgid "Do not import"
 msgstr "&Jangan ulang"
 
-#: resources/fileresource.cpp:326 resources/fileresource.cpp:454
+#: resources/fileresource.cpp:325 resources/fileresource.cpp:453
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Resource is not configured."
 msgstr "Konfigurasi penggera"
 
-#: resources/fileresource.cpp:355 resources/fileresource.cpp:372
+#: resources/fileresource.cpp:354 resources/fileresource.cpp:371
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -6935,8 +7553,8 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: resources/fileresource.cpp:432 resources/fileresource.cpp:471
-#: resources/fileresource.cpp:481
+#: resources/fileresource.cpp:431 resources/fileresource.cpp:470
+#: resources/fileresource.cpp:480
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -6947,13 +7565,13 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: resources/fileresource.cpp:461
+#: resources/fileresource.cpp:460
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Resource is read-only."
 msgstr "Konfigurasi penggera"
 
-#: resources/fileresource.cpp:466
+#: resources/fileresource.cpp:465
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Invalid email attachment:\n"
@@ -6964,7 +7582,7 @@ msgstr ""
 "Lampiran e-mel tidak sah:\n"
 "%1"
 
-#: resources/fileresourcecalendarupdater.cpp:115
+#: resources/fileresourcecalendarupdater.cpp:113
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -6996,26 +7614,26 @@ msgid ""
 "resource."
 msgstr ""
 
-#: resources/fileresourcemigrator.cpp:554
+#: resources/fileresourcemigrator.cpp:553
 #, fuzzy, kde-format
 msgctxt "@info/plain Name of a calendar"
 msgid "Active Alarms"
 msgstr "Aktifkan semula penggera"
 
-#: resources/fileresourcemigrator.cpp:556
+#: resources/fileresourcemigrator.cpp:555
 #, fuzzy, kde-format
 msgctxt "@info/plain Name of a calendar"
 msgid "Archived Alarms"
 msgstr "Aktifkan semula penggera"
 
-#: resources/fileresourcemigrator.cpp:558
+#: resources/fileresourcemigrator.cpp:557
 #, fuzzy, kde-format
 #| msgid "Alarm Templates"
 msgctxt "@info/plain Name of a calendar"
 msgid "Alarm Templates"
 msgstr "Templat penggera"
 
-#: resources/fileresourcemigrator.cpp:578
+#: resources/fileresourcemigrator.cpp:577
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -7028,135 +7646,135 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: resources/resourcedatamodelbase.cpp:66
+#: resources/resourcedatamodelbase.cpp:64
 #, fuzzy, kde-format
 msgctxt "@item:intext"
 msgid "Active Alarms"
 msgstr "Aktifkan semula penggera"
 
-#: resources/resourcedatamodelbase.cpp:68
+#: resources/resourcedatamodelbase.cpp:66
 #, fuzzy, kde-format
 msgctxt "@item:intext"
 msgid "Archived Alarms"
 msgstr "Aktifkan semula penggera"
 
-#: resources/resourcedatamodelbase.cpp:70
+#: resources/resourcedatamodelbase.cpp:68
 #, fuzzy, kde-format
 #| msgid "Alarm Templates"
 msgctxt "@item:intext"
 msgid "Alarm Templates"
 msgstr "Templat penggera"
 
-#: resources/resourcedatamodelbase.cpp:86
+#: resources/resourcedatamodelbase.cpp:84
 #, fuzzy, kde-format
 msgctxt "@item:intext Calendar status"
 msgid "Read-only"
 msgstr "Tarikh:"
 
-#: resources/resourcedatamodelbase.cpp:89
+#: resources/resourcedatamodelbase.cpp:87
 #, kde-format
 msgctxt "@item:intext Calendar status"
 msgid "Read-only (old format)"
 msgstr ""
 
-#: resources/resourcedatamodelbase.cpp:92
+#: resources/resourcedatamodelbase.cpp:90
 #, kde-format
 msgctxt "@item:intext Calendar status"
 msgid "Read-only (other format)"
 msgstr ""
 
-#: resources/resourcedatamodelbase.cpp:114
+#: resources/resourcedatamodelbase.cpp:112
 #, fuzzy, kde-format
 #| msgid "Time"
 msgctxt "@title:column"
 msgid "Time"
 msgstr "Waktu"
 
-#: resources/resourcedatamodelbase.cpp:116
+#: resources/resourcedatamodelbase.cpp:114
 #, fuzzy, kde-format
 #| msgid "Time To"
 msgctxt "@title:column"
 msgid "Time To"
 msgstr "Waktu Untuk"
 
-#: resources/resourcedatamodelbase.cpp:118
+#: resources/resourcedatamodelbase.cpp:116
 #, fuzzy, kde-format
 #| msgid "Repeat"
 msgctxt "@title:column"
 msgid "Repeat"
 msgstr "Ulang"
 
-#: resources/resourcedatamodelbase.cpp:120
+#: resources/resourcedatamodelbase.cpp:118
 #, kde-format
 msgctxt "@title:column"
 msgid "Color"
 msgstr ""
 
-#: resources/resourcedatamodelbase.cpp:122
+#: resources/resourcedatamodelbase.cpp:120
 #, kde-format
 msgctxt "@title:column"
 msgid "Type"
 msgstr ""
 
-#: resources/resourcedatamodelbase.cpp:124
+#: resources/resourcedatamodelbase.cpp:122
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "@title:column"
 msgid "Name"
 msgstr "Nama"
 
-#: resources/resourcedatamodelbase.cpp:126
+#: resources/resourcedatamodelbase.cpp:124
 #, fuzzy, kde-format
 #| msgid "Message, File or Command"
 msgctxt "@title:column"
 msgid "Message, File or Command"
 msgstr "Mesej, Fail atau Arahan"
 
-#: resources/resourcedatamodelbase.cpp:128
+#: resources/resourcedatamodelbase.cpp:126
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "@title:column Template name"
 msgid "Name"
 msgstr "Nama"
 
-#: resources/resourcedatamodelbase.cpp:140
+#: resources/resourcedatamodelbase.cpp:138
 #, fuzzy, kde-format
 msgctxt "@title:column"
 msgid "Calendars"
 msgstr "URL fail kalendar"
 
-#: resources/resourcedatamodelbase.cpp:449
+#: resources/resourcedatamodelbase.cpp:447
 #, fuzzy, kde-format
 #| msgid "Command execution error:"
 msgctxt "@info:tooltip"
 msgid "Command execution failed"
 msgstr "Ralat melaksanakan arahan:"
 
-#: resources/resourcedatamodelbase.cpp:451
+#: resources/resourcedatamodelbase.cpp:449
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Pre-alarm action execution failed"
 msgstr "Tindakan prapenggera:"
 
-#: resources/resourcedatamodelbase.cpp:453
+#: resources/resourcedatamodelbase.cpp:451
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Post-alarm action execution failed"
 msgstr "Tindakan pascapenggera:"
 
-#: resources/resourcedatamodelbase.cpp:455
+#: resources/resourcedatamodelbase.cpp:453
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Pre- and post-alarm action execution failed"
 msgstr ""
 
-#: resources/resourcedatamodelbase.cpp:486
+#: resources/resourcedatamodelbase.cpp:484
 #, fuzzy, kde-format
 msgctxt "@item:intext Calendar status"
 msgid "Disabled"
 msgstr "&Nyahaktifkan"
 
-#: resources/resourcedatamodelbase.cpp:489
+#: resources/resourcedatamodelbase.cpp:487
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Error attaching file:\n"
@@ -7167,7 +7785,7 @@ msgstr ""
 "Ralat semasa melampirkan fail:\n"
 "%1"
 
-#: resources/resourcedatamodelbase.cpp:494
+#: resources/resourcedatamodelbase.cpp:492
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Error attaching file:\n"
@@ -7178,48 +7796,48 @@ msgstr ""
 "Ralat semasa melampirkan fail:\n"
 "%1"
 
-#: resources/resourcedatamodelbase.cpp:555
+#: resources/resourcedatamodelbase.cpp:553
 #, fuzzy, kde-format
 #| msgid "Next scheduled date and time of the alarm"
 msgctxt "@info:whatsthis"
 msgid "Next scheduled date and time of the alarm"
 msgstr "Tarikh terjadual berikutnya dan waktu penggera"
 
-#: resources/resourcedatamodelbase.cpp:557
+#: resources/resourcedatamodelbase.cpp:555
 #, fuzzy, kde-format
 #| msgid "How long until the next scheduled trigger of the alarm"
 msgctxt "@info:whatsthis"
 msgid "How long until the next scheduled trigger of the alarm"
 msgstr "Berapa lama sehingga cetusan penggera terjadual berikutnya"
 
-#: resources/resourcedatamodelbase.cpp:559
+#: resources/resourcedatamodelbase.cpp:557
 #, fuzzy, kde-format
 #| msgid "How often the alarm recurs"
 msgctxt "@info:whatsthis"
 msgid "How often the alarm recurs"
 msgstr "Kekerapan  penggera berulang"
 
-#: resources/resourcedatamodelbase.cpp:561
+#: resources/resourcedatamodelbase.cpp:559
 #, fuzzy, kde-format
 #| msgid "Background color of alarm message"
 msgctxt "@info:whatsthis"
 msgid "Background color of alarm message"
 msgstr "Warna latar belakang mesej penggera"
 
-#: resources/resourcedatamodelbase.cpp:563
+#: resources/resourcedatamodelbase.cpp:561
 #, fuzzy, kde-format
 #| msgid "Alarm type (message, file, command or email)"
 msgctxt "@info:whatsthis"
 msgid "Alarm type (message, file, command or email)"
 msgstr "Jenis penggera  (mesej, fail, arahan atau e-mel)"
 
-#: resources/resourcedatamodelbase.cpp:565
+#: resources/resourcedatamodelbase.cpp:563
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Alarm name, or alarm text if name is blank"
 msgstr ""
 
-#: resources/resourcedatamodelbase.cpp:567
+#: resources/resourcedatamodelbase.cpp:565
 #, fuzzy, kde-format
 #| msgid ""
 #| "Alarm message text, URL of text file to display, command to execute, or "
@@ -7232,21 +7850,21 @@ msgstr ""
 "Teks mesej penggera, URL fail teks untuk paparan, arahan untuk dilaksanakan "
 "atau baris subjek e-mel"
 
-#: resources/resourcedatamodelbase.cpp:569
+#: resources/resourcedatamodelbase.cpp:567
 #, fuzzy, kde-format
 #| msgid "Name of the alarm template"
 msgctxt "@info:whatsthis"
 msgid "Name of the alarm template"
 msgstr "Nama templat penggera"
 
-#: resources/resourcedatamodelbase.cpp:661
-#: resources/resourcedatamodelbase.cpp:759
+#: resources/resourcedatamodelbase.cpp:659
+#: resources/resourcedatamodelbase.cpp:757
 #, kde-format
 msgctxt "@info Alarm never occurs"
 msgid "Never"
 msgstr ""
 
-#: resources/resourcedatamodelbase.cpp:765
+#: resources/resourcedatamodelbase.cpp:763
 #, fuzzy, no-c-format, kde-format
 #| msgctxt "n days"
 #| msgid " %1d "
@@ -7254,7 +7872,7 @@ msgctxt "@info n days"
 msgid "%1d"
 msgstr " %1d "
 
-#: resources/resourcedatamodelbase.cpp:775
+#: resources/resourcedatamodelbase.cpp:773
 #, fuzzy, kde-format
 #| msgctxt "Undo-action: message"
 #| msgid "%1: %2"
@@ -7262,7 +7880,7 @@ msgctxt "@info hours:minutes"
 msgid "%1:%2"
 msgstr "%1: %2"
 
-#: resources/resourcedatamodelbase.cpp:782
+#: resources/resourcedatamodelbase.cpp:780
 #, fuzzy, kde-format
 #| msgctxt "days hours:minutes"
 #| msgid " %1d %2:%3 "
@@ -7378,19 +7996,19 @@ msgctxt "@item:intext What a resource is stored in (directory in filesystem)"
 msgid "Directory"
 msgstr "Paparkan penggera"
 
-#: resources/singlefileresource.cpp:176 resources/singlefileresource.cpp:350
+#: resources/singlefileresource.cpp:175 resources/singlefileresource.cpp:349
 #, kde-format
 msgctxt "@info"
 msgid "A previous load is still in progress."
 msgstr ""
 
-#: resources/singlefileresource.cpp:182 resources/singlefileresource.cpp:356
+#: resources/singlefileresource.cpp:181 resources/singlefileresource.cpp:355
 #, kde-format
 msgctxt "@info"
 msgid "A previous save is still in progress."
 msgstr ""
 
-#: resources/singlefileresource.cpp:231
+#: resources/singlefileresource.cpp:230
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -7401,7 +8019,7 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: resources/singlefileresource.cpp:246
+#: resources/singlefileresource.cpp:245
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -7412,7 +8030,7 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: resources/singlefileresource.cpp:601
+#: resources/singlefileresource.cpp:600
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -7423,13 +8041,13 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: resources/singlefileresource.cpp:633
+#: resources/singlefileresource.cpp:632
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Calendar not open."
 msgstr "URL fail kalendar"
 
-#: resources/singlefileresource.cpp:646
+#: resources/singlefileresource.cpp:645
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -7440,7 +8058,7 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: resources/singlefileresource.cpp:741
+#: resources/singlefileresource.cpp:740
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -7451,7 +8069,7 @@ msgstr ""
 "Tidak dapat membuka fail audio:\n"
 "%1"
 
-#: resources/singlefileresource.cpp:778
+#: resources/singlefileresource.cpp:777
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -8360,25 +8978,25 @@ msgctxt "@info:whatsthis"
 msgid "Select a template to base the new alarm on."
 msgstr "Pilih templat untuk mendasari penggera baru."
 
-#: traywindow.cpp:69
+#: traywindow.cpp:68
 #, fuzzy, kde-format
 #| msgid "New Alarm"
 msgctxt "@action"
 msgid "&New Alarm"
 msgstr "Penggera baru"
 
-#: traywindow.cpp:301
+#: traywindow.cpp:300
 #, fuzzy, kde-format
 msgid "Disabled"
 msgstr "&Nyahaktifkan"
 
-#: traywindow.cpp:306
+#: traywindow.cpp:305
 #, kde-format
 msgctxt "@info:tooltip Brief: some alarms are disabled"
 msgid "(Some alarms disabled)"
 msgstr ""
 
-#: traywindow.cpp:362
+#: traywindow.cpp:361
 #, fuzzy, kde-format
 #| msgctxt "prefix + hours:minutes"
 #| msgid "(%1%2:%3)"
@@ -8386,7 +9004,7 @@ msgctxt "@info prefix + hours:minutes"
 msgid "(%1%2:%3)"
 msgstr "(%1%2:%3)"
 
-#: traywindow.cpp:364
+#: traywindow.cpp:363
 #, fuzzy, kde-format
 #| msgctxt "prefix + hours:minutes"
 #| msgid "%1%2:%3"
@@ -8394,40 +9012,40 @@ msgctxt "@info prefix + hours:minutes"
 msgid "%1%2:%3"
 msgstr "%1%2:%3"
 
-#: undo.cpp:406
+#: undo.cpp:405
 #, fuzzy, kde-format
 #| msgid "Alarm not found"
 msgctxt "@info"
 msgid "Alarm not found"
 msgstr "Penggera tidak ditemui"
 
-#: undo.cpp:407
+#: undo.cpp:406
 #, fuzzy, kde-format
 #| msgid "Error recreating alarm"
 msgctxt "@info"
 msgid "Error recreating alarm"
 msgstr "Ralat mencipta semula penggera"
 
-#: undo.cpp:408
+#: undo.cpp:407
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Error recreating alarm template"
 msgstr "Ralat mencipta semula penggera"
 
-#: undo.cpp:409
+#: undo.cpp:408
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Cannot reactivate archived alarm"
 msgstr "Tidak dapat mengaktifkan semula penggera luput"
 
-#: undo.cpp:411
+#: undo.cpp:410
 #, fuzzy, kde-format
 #| msgid "Unknown error"
 msgctxt "@info"
 msgid "Unknown error"
 msgstr "Ralat tidak diketahui"
 
-#: undo.cpp:413
+#: undo.cpp:412
 #, fuzzy, kde-format
 #| msgctxt "Undo-action: message"
 #| msgid "%1: %2"
@@ -8435,7 +9053,7 @@ msgctxt "@info Undo-action: message"
 msgid "%1: %2"
 msgstr "%1: %2"
 
-#: undo.cpp:664
+#: undo.cpp:663
 #, fuzzy, kde-format
 #| msgctxt "Action to create a new alarm"
 #| msgid "New alarm"
@@ -8443,7 +9061,7 @@ msgctxt "@info Action to create a new alarm"
 msgid "New alarm"
 msgstr "Penggera baru"
 
-#: undo.cpp:666
+#: undo.cpp:665
 #, fuzzy, kde-format
 #| msgctxt "Action to delete an alarm"
 #| msgid "Delete alarm"
@@ -8451,7 +9069,7 @@ msgctxt "@info Action to delete an alarm"
 msgid "Delete alarm"
 msgstr "Hapuskan penggera"
 
-#: undo.cpp:669
+#: undo.cpp:668
 #, fuzzy, kde-format
 #| msgctxt "Action to create a new alarm template"
 #| msgid "New template"
@@ -8459,7 +9077,7 @@ msgctxt "@info Action to create a new alarm template"
 msgid "New template"
 msgstr "Templat baru"
 
-#: undo.cpp:671
+#: undo.cpp:670
 #, fuzzy, kde-format
 #| msgctxt "Action to delete an alarm template"
 #| msgid "Delete template"
@@ -8467,19 +9085,19 @@ msgctxt "@info Action to delete an alarm template"
 msgid "Delete template"
 msgstr "Hapuskan templat"
 
-#: undo.cpp:673
+#: undo.cpp:672
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Delete archived alarm"
 msgstr "Hapuskan penggera luput"
 
-#: undo.cpp:946
+#: undo.cpp:945
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Create multiple alarms"
 msgstr "Hapuskan penggera berbilang"
 
-#: undo.cpp:1051
+#: undo.cpp:1050
 #, fuzzy, kde-format
 #| msgctxt "Action to edit an alarm"
 #| msgid "Edit alarm"
@@ -8487,7 +9105,7 @@ msgctxt "@info Action to edit an alarm"
 msgid "Edit alarm"
 msgstr "Edit penggera"
 
-#: undo.cpp:1053
+#: undo.cpp:1052
 #, fuzzy, kde-format
 #| msgctxt "Action to edit an alarm template"
 #| msgid "Edit template"
@@ -8495,54 +9113,54 @@ msgctxt "@info Action to edit an alarm template"
 msgid "Edit template"
 msgstr "Edit templat"
 
-#: undo.cpp:1261
+#: undo.cpp:1260
 #, fuzzy, kde-format
 #| msgid "Delete multiple alarms"
 msgctxt "@info"
 msgid "Delete multiple alarms"
 msgstr "Hapuskan penggera berbilang"
 
-#: undo.cpp:1263
+#: undo.cpp:1262
 #, fuzzy, kde-format
 #| msgid "Delete multiple templates"
 msgctxt "@info"
 msgid "Delete multiple templates"
 msgstr "Hapuskan templat berbilang"
 
-#: undo.cpp:1270
+#: undo.cpp:1269
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Delete multiple archived alarms"
 msgstr "Hapuskan penggera berbilang yang luput"
 
-#: undo.cpp:1323 undo.cpp:1377
+#: undo.cpp:1322 undo.cpp:1376
 #, fuzzy, kde-format
 #| msgid "Reactivate alarm"
 msgctxt "@info"
 msgid "Reactivate alarm"
 msgstr "Aktifkan semula penggera"
 
-#: undo.cpp:1410
+#: undo.cpp:1409
 #, fuzzy, kde-format
 #| msgid "Reactivate multiple alarms"
 msgctxt "@info"
 msgid "Reactivate multiple alarms"
 msgstr "Aktifkan semula penggera berbilang"
 
-#: wakedlg.cpp:44
+#: wakedlg.cpp:42
 #, kde-format
 msgctxt "@title:window"
 msgid "Wake From Suspend"
 msgstr ""
 
-#: wakedlg.cpp:150
+#: wakedlg.cpp:148
 #, fuzzy, kde-format
 #| msgid "Next scheduled date and time of the alarm"
 msgctxt "@info"
 msgid "Cannot schedule wakeup time for a date-only alarm"
 msgstr "Tarikh terjadual berikutnya dan waktu penggera"
 
-#: wakedlg.cpp:154
+#: wakedlg.cpp:152
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -8789,9 +9407,6 @@ msgstr ""
 #~ msgctxt "@item:inlistbox"
 #~ msgid "Calendar Files"
 #~ msgstr "URL fail kalendar"
-
-#~ msgid "KAlarm"
-#~ msgstr "KAlarm"
 
 #, fuzzy
 #~| msgid ""
@@ -9127,19 +9742,6 @@ msgstr ""
 #~ msgstr "Kepada:"
 
 #, fuzzy
-#~| msgctxt "Copy-to in email headers"
-#~| msgid "Cc:"
-#~ msgctxt "@info/plain Copy-to in email headers"
-#~ msgid "Cc:"
-#~ msgstr "Cc:"
-
-#, fuzzy
-#~| msgid "Date:"
-#~ msgctxt "@info/plain"
-#~ msgid "Date:"
-#~ msgstr "Tarikh:"
-
-#, fuzzy
 #~| msgctxt "Email subject"
 #~| msgid "Subject:"
 #~ msgctxt "@info/plain Email subject"
@@ -9147,85 +9749,10 @@ msgstr ""
 #~ msgstr "Subjek:"
 
 #, fuzzy
-#~| msgctxt "Email addressee"
-#~| msgid "To:"
-#~ msgctxt "@info/plain Todo calendar item's title field"
-#~ msgid "To-do:"
-#~ msgstr "Kepada:"
-
-#, fuzzy
-#~| msgid "Action"
-#~ msgctxt "@info/plain Todo calendar item's location field"
-#~ msgid "Location:"
-#~ msgstr "Tindakan"
-
-#, fuzzy
-#~| msgid "Date:"
-#~ msgctxt "@info/plain Todo calendar item's due date/time"
-#~ msgid "Due:"
-#~ msgstr "Tarikh:"
-
-#, fuzzy
-#~| msgctxt "Brief form of 'At Login'"
-#~| msgid "Login"
-#~ msgctxt "@info/plain Brief form of 'At Login'"
-#~ msgid "Login"
-#~ msgstr "Log masuk"
-
-#, fuzzy
 #~| msgid "At login"
 #~ msgctxt "@info/plain"
 #~ msgid "At login"
 #~ msgstr "Pada log masuk"
-
-#, fuzzy
-#~ msgctxt "@info/plain"
-#~ msgid "1 Minute"
-#~ msgid_plural "%1 Minutes"
-#~ msgstr[0] "_n: 1 Minit"
-#~ msgstr[1] "%1 Minit"
-
-#, fuzzy
-#~ msgctxt "@info/plain"
-#~ msgid "1 Hour"
-#~ msgid_plural "%1 Hours"
-#~ msgstr[0] "_n: 1 Jam"
-#~ msgstr[1] "%1 Jam"
-
-#, fuzzy
-#~| msgctxt "Undo-action: message"
-#~| msgid "%1: %2"
-#~ msgctxt "@info/plain Hours and minutes"
-#~ msgid "%1h %2m"
-#~ msgstr "%1: %2"
-
-#, fuzzy
-#~ msgctxt "@info/plain"
-#~ msgid "1 Day"
-#~ msgid_plural "%1 Days"
-#~ msgstr[0] "_n: 1 Hari"
-#~ msgstr[1] "%1 Hari"
-
-#, fuzzy
-#~ msgctxt "@info/plain"
-#~ msgid "1 Week"
-#~ msgid_plural "%1 Weeks"
-#~ msgstr[0] "_n: 1 Minggu"
-#~ msgstr[1] "%1 Minggu"
-
-#, fuzzy
-#~ msgctxt "@info/plain"
-#~ msgid "1 Month"
-#~ msgid_plural "%1 Months"
-#~ msgstr[0] "_n: 1 Bulan"
-#~ msgstr[1] "%1 Bulan"
-
-#, fuzzy
-#~ msgctxt "@info/plain"
-#~ msgid "1 Year"
-#~ msgid_plural "%1 Years"
-#~ msgstr[0] "_n: 1 Tahun"
-#~ msgstr[1] "%1 Tahun"
 
 #, fuzzy
 #~| msgid "None"
@@ -9274,238 +9801,6 @@ msgstr ""
 #~ msgstr "_n: Hapuskan templat penggera"
 
 #, fuzzy
-#~| msgid "Alarm Templates"
-#~ msgctxt "@label"
-#~ msgid "Alarm status"
-#~ msgstr "Templat penggera"
-
-#, fuzzy
-#~| msgid "Template name:"
-#~ msgctxt "@label"
-#~ msgid "Template name"
-#~ msgstr "Nama templat:"
-
-#, fuzzy
-#~| msgid "&Default time"
-#~ msgctxt "@label"
-#~ msgid "Creation time"
-#~ msgstr "Waktu &piawai"
-
-#, fuzzy
-#~| msgctxt "Date cannot be earlier than start date"
-#~| msgid "start date"
-#~ msgctxt "@label"
-#~ msgid "Start time"
-#~ msgstr "tarikh mula"
-
-#, fuzzy
-#~| msgid "Template name:"
-#~ msgctxt "@label Start delay configured in an alarm template"
-#~ msgid "Template after time"
-#~ msgstr "Nama templat:"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Recurs"
-#~ msgstr "&Pengulangan"
-
-#, fuzzy
-#~| msgid "Recurrence:"
-#~ msgctxt "@label"
-#~ msgid "Recurrence"
-#~ msgstr "Pengulangan:"
-
-#, fuzzy
-#~| msgid "Simple Repetition"
-#~ msgctxt "@label"
-#~ msgid "Sub-repetition"
-#~ msgstr "Pengulangan Ringkas"
-
-#, fuzzy
-#~| msgid "Simple Repetition"
-#~ msgctxt "@label"
-#~ msgid "Sub-repetition interval"
-#~ msgstr "Pengulangan Ringkas"
-
-#, fuzzy
-#~| msgid "Simple Repetition"
-#~ msgctxt "@label"
-#~ msgid "Sub-repetition count"
-#~ msgstr "Pengulangan Ringkas"
-
-#, fuzzy
-#~| msgid "&Number of repetitions:"
-#~ msgctxt "@label"
-#~ msgid "Next sub-repetition"
-#~ msgstr "&Bilangan pengulangan:"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Work time only"
-#~ msgstr "Waktu Untuk"
-
-#, fuzzy
-#~| msgid "No recurrence"
-#~ msgctxt "@label"
-#~ msgid "Next recurrence"
-#~ msgstr "Tiada pengulangan"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Copy to KOrganizer"
-#~ msgstr "Semak untuk menyatakan berapa lama masa untuk mengulang penggera"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Enabled"
-#~ msgstr "&Aktifkan"
-
-#, fuzzy
-#~ msgctxt "@label Whether alarm should be archived"
-#~ msgid "Archive"
-#~ msgstr "&Aktif"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Message text"
-#~ msgstr "Mesej"
-
-#, fuzzy
-#~ msgctxt "@label File to provide text for message"
-#~ msgid "Message file"
-#~ msgstr "Mesej"
-
-#, fuzzy
-#~ msgctxt "@label Shell command to execute before alarm"
-#~ msgid "Pre-alarm action"
-#~ msgstr "Tindakan prapenggera:"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Pre-alarm action cancel"
-#~ msgstr "Tindakan prapenggera:"
-
-#, fuzzy
-#~ msgctxt "@label Shell command to execute after alarm"
-#~ msgid "Post-alarm action"
-#~ msgstr "Tindakan pascapenggera:"
-
-#, fuzzy
-#~ msgctxt "@label Audio method"
-#~ msgid "Sound"
-#~ msgstr "Bunyi"
-
-#, fuzzy
-#~ msgctxt "@label Whether audio should repeat"
-#~ msgid "Sound repeat"
-#~ msgstr "&Jangan ulang"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Sound fade volume"
-#~ msgstr "Setkan volum"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Sound fade time"
-#~ msgstr "&Fail bunyi:"
-
-#, fuzzy
-#~| msgid "Reminder"
-#~ msgctxt "@label Whether the alarm has a reminder"
-#~ msgid "Reminder"
-#~ msgstr "Peringatan"
-
-#, fuzzy
-#~| msgid "Reminder for first recurrence only"
-#~ msgctxt "@label Whether reminder is on first recurrence only"
-#~ msgid "Reminder once only"
-#~ msgstr "Peringatan untuk pengulangan pertama sahaja"
-
-#, fuzzy
-#~| msgid "&Default time"
-#~ msgctxt "@label"
-#~ msgid "Deferral time"
-#~ msgstr "Waktu &piawai"
-
-#, fuzzy
-#~| msgid "Cancel &Deferral"
-#~ msgctxt "@label Default deferral delay"
-#~ msgid "Deferral default"
-#~ msgstr "Batalkan  &Tunda"
-
-#, fuzzy
-#~| msgid "Cancel &Deferral"
-#~ msgctxt "@label Whether deferral time is date-only by default"
-#~ msgid "Deferral default date only"
-#~ msgstr "Batalkan  &Tunda"
-
-#, fuzzy
-#~| msgid "Co&mmand"
-#~ msgctxt "@label A shell command"
-#~ msgid "Command"
-#~ msgstr "&Arahan"
-
-#, fuzzy
-#~| msgid "Execute in terminal window"
-#~ msgctxt "@label Execute in terminal window"
-#~ msgid "Execute in terminal"
-#~ msgstr "Laksanakan dalam tetingkap terminal"
-
-#, fuzzy
-#~| msgid "Email subject line"
-#~ msgctxt "@label"
-#~ msgid "Email subject"
-#~ msgstr "Baris subjek e-mel"
-
-#, fuzzy
-#~| msgid "Email subject line"
-#~ msgctxt "@label Email address"
-#~ msgid "Email sender ID"
-#~ msgstr "Baris subjek e-mel"
-
-#, fuzzy
-#~| msgid "Email"
-#~ msgctxt "@label Email address"
-#~ msgid "Email to"
-#~ msgstr "E-mel"
-
-#, fuzzy
-#~| msgid "Email"
-#~ msgctxt "@label true/false"
-#~ msgid "Email bcc"
-#~ msgstr "E-mel"
-
-#, fuzzy
-#~| msgid "Email"
-#~ msgctxt "@label"
-#~ msgid "Email body"
-#~ msgstr "E-mel"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Email attachments"
-#~ msgstr "E-mel pelanggan:"
-
-#, fuzzy
-#~| msgid "Display Alarms"
-#~ msgctxt "@info/plain Alarm type"
-#~ msgid "Display (text)"
-#~ msgstr "Paparkan penggera"
-
-#, fuzzy
-#~| msgid "Display the file now"
-#~ msgctxt "@info/plain Alarm type"
-#~ msgid "Display (file)"
-#~ msgstr "Paparkan fail sekarang"
-
-#, fuzzy
-#~| msgid "Display the alarm message now"
-#~ msgctxt "@info/plain Alarm type"
-#~ msgid "Display (command)"
-#~ msgstr "Paparkan mesej penggera sekarang"
-
-#, fuzzy
 #~| msgid "Co&mmand"
 #~ msgctxt "@info/plain Alarm type"
 #~ msgid "Command"
@@ -9529,18 +9824,6 @@ msgstr ""
 #~ msgstr "&Aktif"
 
 #, fuzzy
-#~| msgid "&Templates..."
-#~ msgctxt "@info/plain Alarm type"
-#~ msgid "Template"
-#~ msgstr "&Templat..."
-
-#, fuzzy
-#~| msgid "At login"
-#~ msgctxt "@info/plain Repeat at login"
-#~ msgid "At login until %1"
-#~ msgstr "Pada log masuk"
-
-#, fuzzy
 #~| msgid "Reminder"
 #~ msgctxt "@info/plain"
 #~ msgid "Reminder"
@@ -9557,21 +9840,6 @@ msgstr ""
 #~ msgctxt "@info/plain"
 #~ msgid "Beep"
 #~ msgstr "Bip"
-
-#, fuzzy
-#~| msgctxt "Undo-action: message"
-#~| msgid "%1: %2"
-#~ msgctxt "@info/plain Percentage"
-#~ msgid "%1%%"
-#~ msgstr "%1: %2"
-
-#, fuzzy
-#~| msgid "seconds"
-#~ msgctxt "@info/plain"
-#~ msgid "1 Second"
-#~ msgid_plural "%s Seconds"
-#~ msgstr[0] "Saat"
-#~ msgstr[1] "Saat"
 
 #, fuzzy
 #~| msgid "None"
