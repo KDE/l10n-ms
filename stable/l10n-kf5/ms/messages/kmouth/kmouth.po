@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-02-11 00:38+0000\n"
+"POT-Creation-Date: 2022-03-16 02:08+0000\n"
 "PO-Revision-Date: 2006-10-06 21:52+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -858,34 +858,33 @@ msgstr "Tanya Sama Ada Hendak Disimpan"
 msgid "Text-to-Speech"
 msgstr "Teks-ke-Tutur"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, useQtSpeech)
-#: texttospeechconfigurationui.ui:35
-#, fuzzy, kde-format
-#| msgid ""
-#| "This check box specifies KMouth tries to use the KTTSD speech service "
-#| "prior to calling the speech synthesizer directly. The KTTSD speech "
-#| "service is a KDE daemon which gives KDE applications a standardized "
-#| "interface for speech synthesis and is currently developed in CVS."
-msgid ""
-"<html><head/><body><p>This check box specifies KMouth tries to use the "
-"system speech service prior to calling the speech synthesizer directly. The "
-"system speech service is a Qt library which wraps speech-dispatcher on "
-"linux, and native speech systems on other platforms.</p></body></html>"
-msgstr ""
-"Kotan semak ini menyatakan KMouth cuba menggunakan servis tutur KTTSD "
-"sebelum memanggil pensisntesis tutur secara langsung. Servis tutur KTTSD "
-"ialah daemon KDE yang memberikan antara muka terstandard untuk sintesis "
-"tutur kepada aplikasi KDE dan sedang dibangunkan dalam CVS."
-
-#. i18n: ectx: property (text), widget (QCheckBox, useQtSpeech)
-#: texttospeechconfigurationui.ui:38
+#. i18n: ectx: property (title), widget (QGroupBox, qtspeechGroupBox)
+#: texttospeechconfigurationui.ui:32
 #, kde-format
 msgid "&Use default speech system"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: texttospeechconfigurationui.ui:41
+#, kde-format
+msgid "&Engine:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: texttospeechconfigurationui.ui:61
+#, kde-format
+msgid "&Voice:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, alternativeGroupBox)
+#: texttospeechconfigurationui.ui:87
+#, kde-format
+msgid "Alternative"
+msgstr ""
+
 #. i18n: ectx: property (whatsThis), widget (QLabel, urlLabel)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, urlReq)
-#: texttospeechconfigurationui.ui:72 texttospeechconfigurationui.ui:95
+#: texttospeechconfigurationui.ui:120 texttospeechconfigurationui.ui:143
 #, no-c-format, kde-format
 msgid ""
 "This field specifies both the command used for speaking texts and its "
@@ -903,32 +902,14 @@ msgstr ""
 "%% -- tanda peratus"
 
 #. i18n: ectx: property (text), widget (QLabel, urlLabel)
-#: texttospeechconfigurationui.ui:75
+#: texttospeechconfigurationui.ui:123
 #, fuzzy, kde-format
 #| msgid "C&ommand for speaking texts:"
-msgid "Alternative command for speaking &texts:"
+msgid "Command for speaking &texts:"
 msgstr "&Arahan untuk teks tutur:"
 
-#. i18n: ectx: property (whatsThis), widget (QLabel, characterCodingLabel)
-#. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
-#: texttospeechconfigurationui.ui:127 texttospeechconfigurationui.ui:140
-#, kde-format
-msgid ""
-"This combo box specifies which character encoding is used for passing the "
-"text."
-msgstr ""
-"Kotak kombo ini menyatakan pengekodan aksara mana yang digunakan untuk "
-"menghantar teks."
-
-#. i18n: ectx: property (text), widget (QLabel, characterCodingLabel)
-#: texttospeechconfigurationui.ui:130
-#, fuzzy, kde-format
-#| msgid "Character &encoding:"
-msgid "Character encodin&g:"
-msgstr "&Pengekodan aksara:"
-
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, stdInButton)
-#: texttospeechconfigurationui.ui:149
+#: texttospeechconfigurationui.ui:152
 #, kde-format
 msgid ""
 "This check box specifies whether the text is sent as standard input to the "
@@ -938,12 +919,30 @@ msgstr ""
 "pensisntesis tutur."
 
 #. i18n: ectx: property (text), widget (QCheckBox, stdInButton)
-#: texttospeechconfigurationui.ui:152
+#: texttospeechconfigurationui.ui:155
 #, kde-format
 msgid "Send the data as standard &input"
 msgstr "Hantar data sebagai &input standard"
 
-#: texttospeechconfigurationwidget.cpp:46
+#. i18n: ectx: property (whatsThis), widget (QLabel, characterCodingLabel)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
+#: texttospeechconfigurationui.ui:185 texttospeechconfigurationui.ui:198
+#, kde-format
+msgid ""
+"This combo box specifies which character encoding is used for passing the "
+"text."
+msgstr ""
+"Kotak kombo ini menyatakan pengekodan aksara mana yang digunakan untuk "
+"menghantar teks."
+
+#. i18n: ectx: property (text), widget (QLabel, characterCodingLabel)
+#: texttospeechconfigurationui.ui:188
+#, fuzzy, kde-format
+#| msgid "Character &encoding:"
+msgid "Character encodin&g:"
+msgstr "&Pengekodan aksara:"
+
+#: texttospeechconfigurationwidget.cpp:65
 #: wordcompletion/dictionarycreationwizard.cpp:116
 #, fuzzy, kde-format
 #| msgid "Local"
@@ -951,14 +950,14 @@ msgctxt "Local characterset"
 msgid "Local"
 msgstr "Setempat"
 
-#: texttospeechconfigurationwidget.cpp:49
+#: texttospeechconfigurationwidget.cpp:68
 #, fuzzy, kde-format
 #| msgid "Latin1"
 msgctxt "Latin1 characterset"
 msgid "Latin1"
 msgstr "Latin1"
 
-#: texttospeechconfigurationwidget.cpp:50
+#: texttospeechconfigurationwidget.cpp:69
 #: wordcompletion/dictionarycreationwizard.cpp:120
 #, kde-format
 msgid "Unicode"
@@ -1391,6 +1390,23 @@ msgstr "Mengkaji hurai direktori..."
 #, kde-format
 msgid "Performing spell check..."
 msgstr "Melaksanakan semak eja..."
+
+#, fuzzy
+#~| msgid ""
+#~| "This check box specifies KMouth tries to use the KTTSD speech service "
+#~| "prior to calling the speech synthesizer directly. The KTTSD speech "
+#~| "service is a KDE daemon which gives KDE applications a standardized "
+#~| "interface for speech synthesis and is currently developed in CVS."
+#~ msgid ""
+#~ "<html><head/><body><p>This check box specifies KMouth tries to use the "
+#~ "system speech service prior to calling the speech synthesizer directly. "
+#~ "The system speech service is a Qt library which wraps speech-dispatcher "
+#~ "on linux, and native speech systems on other platforms.</p></body></html>"
+#~ msgstr ""
+#~ "Kotan semak ini menyatakan KMouth cuba menggunakan servis tutur KTTSD "
+#~ "sebelum memanggil pensisntesis tutur secara langsung. Servis tutur KTTSD "
+#~ "ialah daemon KDE yang memberikan antara muka terstandard untuk sintesis "
+#~ "tutur kepada aplikasi KDE dan sedang dibangunkan dalam CVS."
 
 #, fuzzy
 #~| msgid "KMouth"
