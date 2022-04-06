@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-04-01 02:31+0000\n"
+"POT-Creation-Date: 2022-04-06 02:09+0000\n"
 "PO-Revision-Date: 2006-10-05 19:46+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -16134,7 +16134,7 @@ msgstr "Ubah"
 
 #: libs/impex/KisExportCheckRegistry.cpp:111 libs/ui/kis_mask_manager.cc:210
 #: libs/ui/kis_node_manager.cpp:1294
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:214
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:215
 #: plugins/impex/psd/psd_loader.cpp:288
 #: plugins/impex/xcf/kis_xcf_import.cpp:273
 #, fuzzy, kde-format
@@ -17683,9 +17683,9 @@ msgstr "&Alih Keluar Lapisan"
 #: libs/ui/animation/KisDlgImportVideoAnimation.cpp:540
 #: libs/ui/animation/KisDlgImportVideoAnimation.cpp:561
 #: libs/ui/animation/KisDlgImportVideoAnimation.cpp:568
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:669
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:727
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:752
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:637
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:677
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:737
 #: libs/ui/dialogs/kis_dlg_layer_style.cpp:354
 #: libs/ui/dialogs/kis_dlg_preferences.cc:562
 #: libs/ui/input/kis_tablet_debugger.cpp:96 libs/ui/kis_custom_pattern.cc:131
@@ -18966,27 +18966,27 @@ msgstr ""
 msgid "No FFMpeg found!"
 msgstr ""
 
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:669
-#, kde-format
-msgid "No video stream could be found!"
-msgstr ""
-
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:727
-#, fuzzy, kde-format
-msgid "Failed to load video information"
-msgstr "Cipta lapisan baru"
-
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:752
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:637
 #, fuzzy, kde-format
 msgid "Your FFMpeg version does not support this format"
 msgstr "kebolehlarutcampuran"
 
-#: libs/ui/animation/KisFFMpegWrapper.cpp:305
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:677
+#, kde-format
+msgid "No video stream could be found!"
+msgstr ""
+
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:737
+#, fuzzy, kde-format
+msgid "Failed to load video information"
+msgstr "Cipta lapisan baru"
+
+#: libs/ui/animation/KisFFMpegWrapper.cpp:329
 #, kde-format
 msgid "FFMpeg Crashed"
 msgstr ""
 
-#: libs/ui/animation/KisFFMpegWrapper.cpp:518
+#: libs/ui/animation/KisFFMpegWrapper.cpp:535
 #, kde-format
 msgctxt "Video information probing dialog. arg1: frame number."
 msgid "Loading video data... %1 frames examined."
@@ -36503,26 +36503,26 @@ msgid ""
 "file."
 msgstr ""
 
-#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:19
+#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:20
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Add Storyboard Scene"
 msgstr "Bentuk:"
 
-#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:71
+#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:72
 #, fuzzy
 #| msgid "Remove Segment"
 msgctxt "(qtundo-format)"
 msgid "Remove Storyboard Scene"
 msgstr "Alih Keluar Segmen"
 
-#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:100
+#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:101
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Move Storyboard Scene"
 msgstr "Pilih Segiempat Tepat"
 
-#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:154
+#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:155
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Edit Storyboard Child"
@@ -36576,7 +36576,7 @@ msgid "Add Scene"
 msgstr "Bentuk:"
 
 #: plugins/dockers/storyboarddocker/StoryboardDockerDock.cpp:252
-#: plugins/dockers/storyboarddocker/StoryboardView.cpp:290
+#: plugins/dockers/storyboarddocker/StoryboardView.cpp:298
 #, fuzzy, kde-format
 #| msgid "Remove Segment"
 msgctxt "Remove current scene from storyboards"
@@ -36608,6 +36608,13 @@ msgstr ""
 msgctxt "Add scene before active scene"
 msgid "Add Scene Before"
 msgstr "Jenis lapisan:"
+
+#: plugins/dockers/storyboarddocker/StoryboardView.cpp:291
+#, fuzzy, kde-format
+#| msgid "Duplicate Segment"
+msgctxt "Duplicate current scene from storyboard docker"
+msgid "Duplicate Scene"
+msgstr "Duplikasikan Segmen"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:28
@@ -42929,7 +42936,7 @@ msgctxt "@title:window"
 msgid "File not found"
 msgstr "Lokasi fail:"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:262
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:263
 #, kde-format
 msgctxt "Warning during loading a kra file with a filter layer"
 msgid ""
@@ -42937,7 +42944,7 @@ msgid ""
 "selection."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:325
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:326
 #, kde-format
 msgctxt "Loading a .kra file"
 msgid ""
@@ -42945,67 +42952,67 @@ msgid ""
 "layer will be converted into a paint layer."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:393
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:394
 #, fuzzy, kde-format
 msgid "Could not load \"id\" of the transform mask"
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:407
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:408
 #, fuzzy, kde-format
 msgid "Could not create transform mask params"
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:560
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:561
 #, fuzzy, kde-format
 msgid "Could not find keyframe pixel data for frame %1 in %2."
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:568
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:569
 #, fuzzy, kde-format
 msgid "Could not load keyframe pixel data for frame %1 in %2."
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:597
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:598
 #, fuzzy, kde-format
 msgid "Could not read pixel data: %1."
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:604
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:605
 #, fuzzy, kde-format
 msgid "Could not load pixel data: %1."
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:620
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:621
 #, fuzzy, kde-format
 msgid "Could not load profile: %1."
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:675
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:676
 #, fuzzy, kde-format
 msgid "Could not filter configuration %1."
 msgstr "Konfigurasi Clmg"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:716
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:717
 #, fuzzy, kde-format
 msgid "Could not load metadata for layer %1."
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:759
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:760
 #, fuzzy, kde-format
 msgid "Could not load vector selection %1."
 msgstr "Tiada pemilihan"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:775
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:776
 #, fuzzy, kde-format
 msgid "Could not load raster selection %1."
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:805
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:806
 #, fuzzy, kde-format
 msgid "Could not load keyframes from %1."
 msgstr "Tidak dapat tambah lapisan ke imej."
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:819
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:820
 #, fuzzy, kde-format
 #| msgid ""
 #| "Parsing error in %1 at line %2, column %3\n"
@@ -43017,7 +43024,7 @@ msgstr ""
 "Ralat pengkajihuraian dalam %1 pada baris %2, lajur %3\n"
 "Mesej ralat:%4"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:832
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:833
 #, fuzzy, kde-format
 msgid "unknown keyframe channel type: %1 in %2"
 msgstr "Tidak dapat tambah lapisan ke imej."
@@ -72582,12 +72589,6 @@ msgstr "Ungu Lembut Gangguan"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Split Segment"
 #~ msgstr "Cerai Segmen"
-
-#, fuzzy
-#~| msgid "Duplicate Segment"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Duplicate Segment"
-#~ msgstr "Duplikasikan Segmen"
 
 #, fuzzy
 #~| msgid "Mirror Segment"
