@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-11 00:45+0000\n"
+"POT-Creation-Date: 2022-09-12 00:45+0000\n"
 "PO-Revision-Date: 2006-10-05 19:47+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -3218,7 +3218,7 @@ msgstr "Pengepala"
 msgid "Header1"
 msgstr "Pengepala1"
 
-#: core/StyleManager.cpp:172 ui/CellToolBase.cpp:171
+#: core/StyleManager.cpp:172 ui/CellToolBase.cpp:169
 #: ui/dialogs/LayoutDialog.cpp:159 ui/dialogs/LayoutDialog.cpp:160
 #: ui/dialogs/LayoutDialog.cpp:166 ui/dialogs/LayoutDialog.cpp:228
 #: ui/dialogs/LayoutDialog.cpp:244 ui/dialogs/StyleManagerDialog.cpp:99
@@ -4002,7 +4002,7 @@ msgstr "Angka"
 #. i18n: ectx: property (text), widget (QRadioButton, formatButton)
 #. i18n: ectx: ToolBar (formatToolBar)
 #: functions/conversion.xml:251 part/calligrasheets.rc:235
-#: ui/CellToolBase.cpp:165 ui/dialogs/DataFormatWidget.ui:35
+#: ui/CellToolBase.cpp:163 ui/dialogs/DataFormatWidget.ui:35
 #: ui/dialogs/LayoutDialog.cpp:850 ui/dialogs/SpecialPasteWidget.ui:58
 #, kde-format
 msgid "Format"
@@ -4062,7 +4062,7 @@ msgid "ARABIC(\"XCIX\") returns 99"
 msgstr "ARABIC(\"XCIX\") mengembalikan 99"
 
 #: functions/database.xml:5 part/chart/ChartDatabaseSelectorFactory.cpp:26
-#: ui/CellToolBase.cpp:485 ui/dialogs/DatabaseDialog.cpp:117
+#: ui/CellToolBase.cpp:444 ui/dialogs/DatabaseDialog.cpp:117
 #, kde-format
 msgid "Database"
 msgstr "Pangkalan Data"
@@ -16308,7 +16308,7 @@ msgstr "Sembunyikan Helaian"
 
 #. i18n: tag optionWidget attribute name
 #. i18n: ectx: ToolBar (fontPropertyToolBar)
-#: part/calligrasheets.rc:231 ui/CellToolBase.cpp:214
+#: part/calligrasheets.rc:231 ui/CellToolBase.cpp:212
 #: ui/CellToolOptionWidgets.xml:3
 #, fuzzy, kde-format
 msgid "Font"
@@ -16756,7 +16756,7 @@ msgstr "Forint"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroup2)
-#: part/dialogs/PageLayoutSheetPage.ui:335 ui/CellToolBase.cpp:347
+#: part/dialogs/PageLayoutSheetPage.ui:335 ui/CellToolBase.cpp:345
 #: ui/dialogs/PositionWidget.ui:91
 #, fuzzy, kde-format
 msgid "Vertical"
@@ -16785,15 +16785,15 @@ msgid "Up"
 msgstr "&Atas"
 
 #. i18n: ectx: property (text), widget (QRadioButton, right)
-#: part/dialogs/PreferenceDialog.cpp:301 ui/CellToolBase.cpp:256
-#: ui/CellToolBase.cpp:295 ui/dialogs/PositionWidget.ui:75
+#: part/dialogs/PreferenceDialog.cpp:301 ui/CellToolBase.cpp:254
+#: ui/CellToolBase.cpp:293 ui/dialogs/PositionWidget.ui:75
 #, fuzzy, kde-format
 msgid "Right"
 msgstr "&Kanan"
 
 #. i18n: ectx: property (text), widget (QRadioButton, left)
-#: part/dialogs/PreferenceDialog.cpp:302 ui/CellToolBase.cpp:242
-#: ui/CellToolBase.cpp:289 ui/dialogs/PositionWidget.ui:61
+#: part/dialogs/PreferenceDialog.cpp:302 ui/CellToolBase.cpp:240
+#: ui/CellToolBase.cpp:287 ui/dialogs/PositionWidget.ui:61
 #, fuzzy, kde-format
 msgid "Left"
 msgstr "&Kiri"
@@ -16809,7 +16809,7 @@ msgstr "Selitkan Lajur"
 #. i18n: ectx: property (text), widget (QRadioButton, None)
 #: part/dialogs/PreferenceDialog.cpp:304 part/dialogs/PreferenceDialog.cpp:312
 #: part/dialogs/PreferenceDialog.cpp:439 part/View.cpp:399
-#: ui/CellToolBase.cpp:319 ui/dialogs/DatabaseDialog.cpp:711
+#: ui/CellToolBase.cpp:317 ui/dialogs/DatabaseDialog.cpp:711
 #: ui/dialogs/DatabaseDialog.cpp:712 ui/dialogs/DocumentSettingsDialog.cpp:124
 #: ui/dialogs/pivotfilters.ui:36 ui/dialogs/pivotoptions.ui:95
 #: ui/dialogs/pivotoptions.ui:104 ui/dialogs/pivotsubtotals.ui:21
@@ -17694,7 +17694,7 @@ msgstr ""
 "Anda hampir mengalih keluar helaian aktif.\n"
 "Anda mahu teruskan?"
 
-#: part/View.cpp:1872 ui/CellToolBase.cpp:1506
+#: part/View.cpp:1872 ui/CellToolBase.cpp:1465
 #, kde-format
 msgid "Enter name:"
 msgstr "Masukkan nama:"
@@ -17754,989 +17754,861 @@ msgstr "Hitung A:"
 msgid "%1x%2"
 msgstr ""
 
-#: part/ViewAdaptor.cpp:129 ui/commands/CommentCommand.cpp:33
-#: ui/dialogs/CommentDialog.cpp:63
-#, fuzzy
-#| msgid "Add Comment"
-msgctxt "(qtundo-format)"
-msgid "Add Comment"
-msgstr "Tambah Komen"
-
-#: part/ViewAdaptor.cpp:139 ui/CellToolBase.cpp:1659
+#: part/ViewAdaptor.cpp:128 ui/CellToolBase.cpp:1618
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Change Text Color"
 msgstr "Ubah Teks"
 
-#: part/ViewAdaptor.cpp:149 part/ViewAdaptor.cpp:159 ui/CellToolBase.cpp:1956
+#: part/ViewAdaptor.cpp:138 part/ViewAdaptor.cpp:148 ui/CellToolBase.cpp:1863
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Change Background Color"
 msgstr "Warna Latar Belakang"
 
-#: part/ViewAdaptor.cpp:169 part/ViewAdaptor.cpp:182 part/ViewAdaptor.cpp:192
-#: part/ViewAdaptor.cpp:205 part/ViewAdaptor.cpp:215 part/ViewAdaptor.cpp:230
-#: ui/CellToolBase.cpp:1730 ui/CellToolBase.cpp:1744 ui/CellToolBase.cpp:1758
-#: ui/CellToolBase.cpp:1769 ui/CellToolBase.cpp:1780 ui/CellToolBase.cpp:1795
-#: ui/CellToolBase.cpp:1811 ui/CellToolBase_p.cpp:739
+#: part/ViewAdaptor.cpp:158 part/ViewAdaptor.cpp:171 part/ViewAdaptor.cpp:181
+#: part/ViewAdaptor.cpp:194 part/ViewAdaptor.cpp:204 part/ViewAdaptor.cpp:219
+#: ui/CellToolBase.cpp:1689 ui/CellToolBase.cpp:1703 ui/CellToolBase.cpp:1717
+#: ui/CellToolBase.cpp:1728 ui/CellToolBase.cpp:1739 ui/CellToolBase.cpp:1754
+#: ui/CellToolBase.cpp:1770 ui/CellToolBase_p.cpp:734
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Change Border"
 msgstr "Ubah Warna Sempadan"
 
-#: ui/CellToolBase.cpp:164
+#: ui/CellToolBase.cpp:162
 #, kde-format
 msgid "Cell Format..."
 msgstr "Format Sel..."
 
-#: ui/CellToolBase.cpp:169
+#: ui/CellToolBase.cpp:167
 #, fuzzy, kde-format
 msgid "Set the cell formatting"
 msgstr "Setkan pemformatan sel."
 
-#: ui/CellToolBase.cpp:174
+#: ui/CellToolBase.cpp:172
 #, fuzzy, kde-format
 msgid "Resets to the default format"
 msgstr "Set semula ke format piawai."
 
-#: ui/CellToolBase.cpp:176
+#: ui/CellToolBase.cpp:174
 #, fuzzy, kde-format
 #| msgid "Style Manager"
 msgid "Style Manager..."
 msgstr "Pengurus Gaya"
 
-#: ui/CellToolBase.cpp:179
+#: ui/CellToolBase.cpp:177
 #, fuzzy, kde-format
 msgid "Edit and organize cell styles"
 msgstr "Edit dan susun gaya sel."
 
-#: ui/CellToolBase.cpp:181 ui/dialogs/LayoutDialog.cpp:133
+#: ui/CellToolBase.cpp:179 ui/dialogs/LayoutDialog.cpp:133
 #: ui/dialogs/StyleManagerDialog.cpp:44
 #, kde-format
 msgid "Style"
 msgstr "Gaya"
 
-#: ui/CellToolBase.cpp:183
+#: ui/CellToolBase.cpp:181
 #, fuzzy, kde-format
 msgid "Apply a predefined style to the selected cells"
 msgstr "Guna gaya pratentu bagi sel yang dipilih."
 
-#: ui/CellToolBase.cpp:186
+#: ui/CellToolBase.cpp:184
 #, kde-format
 msgid "Create Style From Cell..."
 msgstr "Cipta Gaya Dari Sel..."
 
-#: ui/CellToolBase.cpp:187
+#: ui/CellToolBase.cpp:185
 #, fuzzy, kde-format
 #| msgid "Style of Cell"
 msgid "Style From Cell"
 msgstr "Gaya Sel"
 
-#: ui/CellToolBase.cpp:190
+#: ui/CellToolBase.cpp:188
 #, fuzzy, kde-format
 msgid "Create a new style based on the currently selected cell"
 msgstr "Cipta gaya baru berasaskan sel semasa yang dipilih."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, weight_combo)
-#: ui/CellToolBase.cpp:194 ui/dialogs/FontWidget.ui:82
+#: ui/CellToolBase.cpp:192 ui/dialogs/FontWidget.ui:82
 #: ui/dialogs/LayoutDialog.cpp:1738
 #, kde-format
 msgid "Bold"
 msgstr "Tebal"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, style_combo)
-#: ui/CellToolBase.cpp:199 ui/dialogs/FontWidget.ui:57
+#: ui/CellToolBase.cpp:197 ui/dialogs/FontWidget.ui:57
 #: ui/dialogs/LayoutDialog.cpp:1749
 #, fuzzy, kde-format
 msgid "Italic"
 msgstr "Italy"
 
 #. i18n: ectx: property (text), widget (QCheckBox, underline)
-#: ui/CellToolBase.cpp:204 ui/dialogs/FontWidget.ui:100
+#: ui/CellToolBase.cpp:202 ui/dialogs/FontWidget.ui:100
 #, kde-format
 msgid "Underline"
 msgstr "Garis Bawah"
 
-#: ui/CellToolBase.cpp:209
+#: ui/CellToolBase.cpp:207
 #, kde-format
 msgid "Strike Out"
 msgstr "Garis Lorek"
 
-#: ui/CellToolBase.cpp:213
+#: ui/CellToolBase.cpp:211
 #, kde-format
 msgid "Select Font..."
 msgstr "Pilih Fon..."
 
-#: ui/CellToolBase.cpp:218
+#: ui/CellToolBase.cpp:216
 #, kde-format
 msgid "Select Font Size"
 msgstr "Pilih Saiz Fon"
 
-#: ui/CellToolBase.cpp:219
+#: ui/CellToolBase.cpp:217
 #, fuzzy, kde-format
 #| msgid "Select Font Size"
 msgid "Font Size"
 msgstr "Pilih Saiz Fon"
 
-#: ui/CellToolBase.cpp:223
+#: ui/CellToolBase.cpp:221
 #, kde-format
 msgid "Increase Font Size"
 msgstr "Tambahkan Saiz Fon"
 
-#: ui/CellToolBase.cpp:227
+#: ui/CellToolBase.cpp:225
 #, kde-format
 msgid "Decrease Font Size"
 msgstr "Kurangkan Saiz Fon"
 
-#: ui/CellToolBase.cpp:233
+#: ui/CellToolBase.cpp:231
 #, kde-format
 msgid "Text Color"
 msgstr "Warna Teks"
 
-#: ui/CellToolBase.cpp:234
+#: ui/CellToolBase.cpp:232
 #, fuzzy, kde-format
 msgid "Set the text color"
 msgstr "Setkan warna latar belakang."
 
-#: ui/CellToolBase.cpp:241
+#: ui/CellToolBase.cpp:239
 #, kde-format
 msgid "Align Left"
 msgstr "Jajarkan Kiri"
 
-#: ui/CellToolBase.cpp:245
+#: ui/CellToolBase.cpp:243
 #, fuzzy, kde-format
 msgid "Left justify the cell contents"
 msgstr "Justifikasi kiri kandungan sel."
 
-#: ui/CellToolBase.cpp:248
+#: ui/CellToolBase.cpp:246
 #, kde-format
 msgid "Align Center"
 msgstr "Jajarkan Tengah"
 
 #. i18n: ectx: property (text), widget (QRadioButton, center)
-#: ui/CellToolBase.cpp:249 ui/dialogs/PositionWidget.ui:68
+#: ui/CellToolBase.cpp:247 ui/dialogs/PositionWidget.ui:68
 #, fuzzy, kde-format
 msgid "Center"
 msgstr "Jajarkan Tengah"
 
-#: ui/CellToolBase.cpp:252
+#: ui/CellToolBase.cpp:250
 #, fuzzy, kde-format
 msgid "Center the cell contents"
 msgstr "Tengahkan kandungan sel."
 
-#: ui/CellToolBase.cpp:255
+#: ui/CellToolBase.cpp:253
 #, kde-format
 msgid "Align Right"
 msgstr "Jajarkan Kanan"
 
-#: ui/CellToolBase.cpp:259
+#: ui/CellToolBase.cpp:257
 #, fuzzy, kde-format
 msgid "Right justify the cell contents"
 msgstr "Justifikasi kanan kandungan sel"
 
-#: ui/CellToolBase.cpp:265
+#: ui/CellToolBase.cpp:263
 #, kde-format
 msgid "Align Top"
 msgstr "Jajarkan Atas"
 
 #. i18n: ectx: property (text), widget (QRadioButton, top)
-#: ui/CellToolBase.cpp:266 ui/CellToolBase.cpp:301
+#: ui/CellToolBase.cpp:264 ui/CellToolBase.cpp:299
 #: ui/dialogs/PositionWidget.ui:97
 #, kde-format
 msgid "Top"
 msgstr ""
 
-#: ui/CellToolBase.cpp:269
+#: ui/CellToolBase.cpp:267
 #, fuzzy, kde-format
 msgid "Align cell contents along the top of the cell"
 msgstr "Jajarkan kandungan sel di sepanjang atas sel."
 
-#: ui/CellToolBase.cpp:272
+#: ui/CellToolBase.cpp:270
 #, kde-format
 msgid "Align Middle"
 msgstr "Jajarkan Tengah "
 
 #. i18n: ectx: property (text), widget (QRadioButton, middle)
-#: ui/CellToolBase.cpp:273 ui/dialogs/PositionWidget.ui:104
+#: ui/CellToolBase.cpp:271 ui/dialogs/PositionWidget.ui:104
 #, kde-format
 msgid "Middle"
 msgstr "Tengah"
 
-#: ui/CellToolBase.cpp:276
+#: ui/CellToolBase.cpp:274
 #, fuzzy, kde-format
 msgid "Align cell contents centered in the cell"
 msgstr "Jajarkan kandungan sel di tengah sel."
 
-#: ui/CellToolBase.cpp:279
+#: ui/CellToolBase.cpp:277
 #, kde-format
 msgid "Align Bottom"
 msgstr "Jajarkan Bawah"
 
 #. i18n: ectx: property (text), widget (QRadioButton, bottom)
-#: ui/CellToolBase.cpp:280 ui/CellToolBase.cpp:307
+#: ui/CellToolBase.cpp:278 ui/CellToolBase.cpp:305
 #: ui/dialogs/PositionWidget.ui:111
 #, fuzzy, kde-format
 msgid "Bottom"
 msgstr "Jajarkan Bawah"
 
-#: ui/CellToolBase.cpp:283
+#: ui/CellToolBase.cpp:281
 #, fuzzy, kde-format
 msgid "Align cell contents along the bottom of the cell"
 msgstr "Jajarkan kandungan sel di sepanjang bawah sel."
 
-#: ui/CellToolBase.cpp:288
+#: ui/CellToolBase.cpp:286
 #, kde-format
 msgid "Border Left"
 msgstr "Sempadan Kiri"
 
-#: ui/CellToolBase.cpp:292
+#: ui/CellToolBase.cpp:290
 #, fuzzy, kde-format
 msgid "Set a left border to the selected area"
 msgstr "Setkan sempadan kiri bagi kawasan yang dipilih."
 
-#: ui/CellToolBase.cpp:294
+#: ui/CellToolBase.cpp:292
 #, kde-format
 msgid "Border Right"
 msgstr "Sempadan Kanan"
 
-#: ui/CellToolBase.cpp:298
+#: ui/CellToolBase.cpp:296
 #, fuzzy, kde-format
 msgid "Set a right border to the selected area"
 msgstr "Setkan sempadan kanan bagi kawasan yang dipilih."
 
-#: ui/CellToolBase.cpp:300
+#: ui/CellToolBase.cpp:298
 #, kde-format
 msgid "Border Top"
 msgstr "Sempadan Atas"
 
-#: ui/CellToolBase.cpp:304
+#: ui/CellToolBase.cpp:302
 #, fuzzy, kde-format
 msgid "Set a top border to the selected area"
 msgstr "Setkan sempadan atas bagi kawasan yang dipilih."
 
-#: ui/CellToolBase.cpp:306
+#: ui/CellToolBase.cpp:304
 #, kde-format
 msgid "Border Bottom"
 msgstr "Sempadan Bawah"
 
-#: ui/CellToolBase.cpp:310
+#: ui/CellToolBase.cpp:308
 #, fuzzy, kde-format
 msgid "Set a bottom border to the selected area"
 msgstr "Setkan sempadan bawah bagi kawasan yang dipilih."
 
-#: ui/CellToolBase.cpp:312
+#: ui/CellToolBase.cpp:310
 #, kde-format
 msgid "All Borders"
 msgstr "Semua Sempadan"
 
-#: ui/CellToolBase.cpp:313 ui/dialogs/FormulaDialog.cpp:84
+#: ui/CellToolBase.cpp:311 ui/dialogs/FormulaDialog.cpp:84
 #: ui/dialogs/FormulaDialog.cpp:190 ui/dialogs/FormulaDialog.cpp:722
 #: ui/FilterPopup.cpp:55
 #, kde-format
 msgid "All"
 msgstr "Semua"
 
-#: ui/CellToolBase.cpp:316
+#: ui/CellToolBase.cpp:314
 #, fuzzy, kde-format
 msgid "Set a border around all cells in the selected area"
 msgstr "Setkan sempadan di keliling sel dalam kawasan yang dipilih."
 
-#: ui/CellToolBase.cpp:318
+#: ui/CellToolBase.cpp:316
 #, fuzzy, kde-format
 #| msgid "All Borders"
 msgid "No Borders"
 msgstr "Semua Sempadan"
 
-#: ui/CellToolBase.cpp:322
+#: ui/CellToolBase.cpp:320
 #, fuzzy, kde-format
 msgid "Remove all borders in the selected area"
 msgstr "Alih keluar semua sempadan dalam kawasan yang dipilih."
 
-#: ui/CellToolBase.cpp:324
+#: ui/CellToolBase.cpp:322
 #, kde-format
 msgid "Border Outline"
 msgstr "Sempadan Garis Luar"
 
-#: ui/CellToolBase.cpp:325
+#: ui/CellToolBase.cpp:323
 #, fuzzy, kde-format
 #| msgid "Border Outline"
 msgid "Outline"
 msgstr "Sempadan Garis Luar"
 
-#: ui/CellToolBase.cpp:328
+#: ui/CellToolBase.cpp:326
 #, fuzzy, kde-format
 msgid "Set a border to the outline of the selected area"
 msgstr "Setkan sempadan bagi garis luar kawasan yang dipilih"
 
-#: ui/CellToolBase.cpp:332
+#: ui/CellToolBase.cpp:330
 #, fuzzy, kde-format
 msgid "Select a new border color"
 msgstr "Pilih warna sempadan baru."
 
-#: ui/CellToolBase.cpp:333
+#: ui/CellToolBase.cpp:331
 #, kde-format
 msgid "Border Color"
 msgstr "Warna Sempadan"
 
-#: ui/CellToolBase.cpp:340
+#: ui/CellToolBase.cpp:338
 #, kde-format
 msgid "Wrap Text"
 msgstr "Balut Teks"
 
-#: ui/CellToolBase.cpp:341
+#: ui/CellToolBase.cpp:339
 #, fuzzy, kde-format
 #| msgid "Wrap text"
 msgid "Wrap"
 msgstr "Balut teks"
 
-#: ui/CellToolBase.cpp:344
+#: ui/CellToolBase.cpp:342
 #, fuzzy, kde-format
 msgid "Make the cell text wrap onto multiple lines"
 msgstr "Balut teks sel ke atas baris berbilang."
 
-#: ui/CellToolBase.cpp:346
+#: ui/CellToolBase.cpp:344
 #, kde-format
 msgid "Vertical Text"
 msgstr "Teks Menegak"
 
-#: ui/CellToolBase.cpp:350
+#: ui/CellToolBase.cpp:348
 #, fuzzy, kde-format
 msgid "Print cell contents vertically"
 msgstr "Cetak kandungan sel menegak."
 
-#: ui/CellToolBase.cpp:352
-#, kde-format
-msgid "Increase Indent"
-msgstr "Tambahkan Inden"
-
-#: ui/CellToolBase.cpp:355
-#, fuzzy, kde-format
-msgid "Increase the indentation"
-msgstr "Tambahkan pengengsotan."
-
-#: ui/CellToolBase.cpp:357
-#, kde-format
-msgid "Decrease Indent"
-msgstr "Kurangkan Inden"
-
-#: ui/CellToolBase.cpp:360
-#, fuzzy, kde-format
-msgid "Decrease the indentation"
-msgstr "Kurangkan pengengsotan."
-
-#: ui/CellToolBase.cpp:362
+#: ui/CellToolBase.cpp:350
 #, kde-format
 msgid "Change Angle..."
 msgstr "Ubah Sudut..."
 
-#: ui/CellToolBase.cpp:363
+#: ui/CellToolBase.cpp:351
 #, fuzzy, kde-format
 #| msgid "Angle:"
 msgid "Angle"
 msgstr "Sudut:"
 
-#: ui/CellToolBase.cpp:366
+#: ui/CellToolBase.cpp:354
 #, fuzzy, kde-format
 msgid "Change the angle that cell contents are printed"
 msgstr "Ubah sudut yang digunakan untuk mencetak kandungan sel."
 
-#: ui/CellToolBase.cpp:370
+#: ui/CellToolBase.cpp:358
 #, kde-format
 msgid "Percent Format"
 msgstr "Peratus Format"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioButton_3)
-#: ui/CellToolBase.cpp:371 ui/dialogs/DataFormatWidget.ui:102
+#: ui/CellToolBase.cpp:359 ui/dialogs/DataFormatWidget.ui:102
 #: ui/dialogs/LayoutDialog.cpp:864
 #, kde-format
 msgid "Percent"
 msgstr "Peratus"
 
-#: ui/CellToolBase.cpp:374
+#: ui/CellToolBase.cpp:362
 #, fuzzy, kde-format
 msgid "Set the cell formatting to look like a percentage"
 msgstr "Setkan pemformatan sel supaya kelihatan seperti peratus."
 
-#: ui/CellToolBase.cpp:376
+#: ui/CellToolBase.cpp:364
 #, kde-format
 msgid "Money Format"
 msgstr "Format Wang"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioButton_4)
-#: ui/CellToolBase.cpp:377 ui/dialogs/DataFormatWidget.ui:95
+#: ui/CellToolBase.cpp:365 ui/dialogs/DataFormatWidget.ui:95
 #: ui/dialogs/LayoutDialog.cpp:868
 #, kde-format
 msgid "Money"
 msgstr "Wang"
 
-#: ui/CellToolBase.cpp:380
+#: ui/CellToolBase.cpp:368
 #, fuzzy, kde-format
 msgid "Set the cell formatting to look like your local currency"
 msgstr "Setkan pemformatan supaya kelihatan seperti mata wang lokal anda."
 
-#: ui/CellToolBase.cpp:382
+#: ui/CellToolBase.cpp:370
 #, kde-format
 msgid "Increase Precision"
 msgstr "Tambahkan Kepersisan"
 
-#: ui/CellToolBase.cpp:385
+#: ui/CellToolBase.cpp:373
 #, fuzzy, kde-format
 msgid "Increase the decimal precision shown onscreen"
 msgstr "Tambahkan kepersisan perpuluhan yang dipaparkan pada skrin."
 
-#: ui/CellToolBase.cpp:387
+#: ui/CellToolBase.cpp:375
 #, kde-format
 msgid "Decrease Precision"
 msgstr "Kurangkan Kepersisan"
 
-#: ui/CellToolBase.cpp:390
+#: ui/CellToolBase.cpp:378
 #, fuzzy, kde-format
 msgid "Decrease the decimal precision shown onscreen"
 msgstr "Kurangkan kepersisan perpuluhan yang dipaparkan pada skrin."
 
-#: ui/CellToolBase.cpp:394
-#, kde-format
-msgid "Upper Case"
-msgstr "Huruf Besar"
-
-#: ui/CellToolBase.cpp:395
-#, fuzzy, kde-format
-#| msgid "Upper Case"
-msgid "Upper"
-msgstr "Huruf Besar"
-
-#: ui/CellToolBase.cpp:398
-#, fuzzy, kde-format
-msgid "Convert all letters to upper case"
-msgstr "Tukar semua huruf ke huruf besar."
-
-#: ui/CellToolBase.cpp:400
-#, kde-format
-msgid "Lower Case"
-msgstr "Huruf Kecil"
-
-#: ui/CellToolBase.cpp:401
-#, fuzzy, kde-format
-#| msgid "Power"
-msgid "Lower"
-msgstr "Kuasa"
-
-#: ui/CellToolBase.cpp:404
-#, fuzzy, kde-format
-msgid "Convert all letters to lower case"
-msgstr "Tukar semua huruf ke huruf kecil."
-
-#: ui/CellToolBase.cpp:406
-#, kde-format
-msgid "Convert First Letter to Upper Case"
-msgstr "Tukar Huruf Pertama ke Huruf Besar"
-
-#: ui/CellToolBase.cpp:407
-#, fuzzy, kde-format
-msgid "First Letter Upper"
-msgstr "&Tukar huruf pertama kepada huruf besar"
-
-#: ui/CellToolBase.cpp:410
-#, fuzzy, kde-format
-msgid "Capitalize the first letter"
-msgstr "Guna huruf besar untuk huruf pertama."
-
-#: ui/CellToolBase.cpp:414
+#: ui/CellToolBase.cpp:384
 #, fuzzy, kde-format
 msgid "Set the background color"
 msgstr "Setkan warna latar belakang."
 
-#: ui/CellToolBase.cpp:415
+#: ui/CellToolBase.cpp:385
 #, kde-format
 msgid "Background Color"
 msgstr "Warna Latar Belakang"
 
-#: ui/CellToolBase.cpp:421 ui/CellToolBase.cpp:427
+#: ui/CellToolBase.cpp:391 ui/CellToolBase.cpp:397
 #, fuzzy, kde-format
 #| msgid "Cells:"
 msgid "Cells..."
 msgstr "Sel:"
 
-#: ui/CellToolBase.cpp:422 ui/CellToolBase_p.cpp:1160
+#: ui/CellToolBase.cpp:392 ui/CellToolBase_p.cpp:1155
 #, kde-format
 msgid "Insert Cells..."
 msgstr "Selitkan Sel..."
 
-#: ui/CellToolBase.cpp:423
+#: ui/CellToolBase.cpp:393
 #, fuzzy, kde-format
 msgid "Insert a blank cell into the spreadsheet"
 msgstr "Selitkan sel kosong ke dalam lembaran hamparan."
 
-#: ui/CellToolBase.cpp:428
+#: ui/CellToolBase.cpp:398
 #, kde-format
 msgid "Remove Cells..."
 msgstr "Alih Keluar Sel..."
 
-#: ui/CellToolBase.cpp:429
+#: ui/CellToolBase.cpp:399
 #, fuzzy, kde-format
 msgid "Removes the cells from the spreadsheet"
 msgstr "Alih Keluar sel semasa dari lembaran hamparan."
 
-#: ui/CellToolBase.cpp:435 ui/CellToolBase.cpp:436
+#: ui/CellToolBase.cpp:405 ui/CellToolBase.cpp:406
 #, fuzzy, kde-format
 #| msgid "Clear &All"
 msgid "Clear All"
 msgstr "Kosongkan &Semua"
 
-#: ui/CellToolBase.cpp:437
+#: ui/CellToolBase.cpp:407
 #, fuzzy, kde-format
 msgid "Clear all contents and formatting of the current cell"
 msgstr "Hapuskan semua kandungan dan pemformatan sel semasa."
 
-#: ui/CellToolBase.cpp:441
+#: ui/CellToolBase.cpp:411
 #, fuzzy, kde-format
 msgid "Contents"
 msgstr "Komen"
 
-#: ui/CellToolBase.cpp:442
+#: ui/CellToolBase.cpp:412
 #, fuzzy, kde-format
 msgid "Clear Contents"
 msgstr "Komen"
 
-#: ui/CellToolBase.cpp:443
+#: ui/CellToolBase.cpp:413
 #, fuzzy, kde-format
 msgid "Remove the contents of the current cell"
 msgstr "Alih keluar kandungan sel semasa."
 
-#: ui/CellToolBase.cpp:447
-#, fuzzy, kde-format
-#| msgid "Comment"
-msgid "Comment..."
-msgstr "Komen"
-
-#: ui/CellToolBase.cpp:448
-#, fuzzy, kde-format
-msgid "Edit a comment for this cell"
-msgstr "Edit komen untuk sel ini."
-
-#. i18n: ectx: property (text), widget (QRadioButton, commentButton)
-#: ui/CellToolBase.cpp:452 ui/CellToolBase_p.cpp:1172
-#: ui/dialogs/SpecialPasteWidget.ui:65
-#, kde-format
-msgid "Comment"
-msgstr "Komen"
-
-#: ui/CellToolBase.cpp:453
-#, kde-format
-msgid "Remove Comment"
-msgstr "Alih Keluar Komen"
-
-#: ui/CellToolBase.cpp:454
-#, fuzzy, kde-format
-msgid "Remove this cell's comment"
-msgstr "Alih keluar komen sel."
-
-#: ui/CellToolBase.cpp:458
+#: ui/CellToolBase.cpp:417
 #, fuzzy, kde-format
 #| msgid "Conditional Cell Attributes..."
 msgid "Conditional Styles..."
 msgstr "Atribut Sel Bersyarat..."
 
-#: ui/CellToolBase.cpp:459
+#: ui/CellToolBase.cpp:418
 #, fuzzy, kde-format
 msgid "Set cell style based on certain conditions"
 msgstr "Setkan format sel berasaskan keadaan tertentu. "
 
-#: ui/CellToolBase.cpp:463 ui/dialogs/ConditionalDialog.cpp:242
+#: ui/CellToolBase.cpp:422 ui/dialogs/ConditionalDialog.cpp:242
 #, fuzzy, kde-format
 #| msgid "Conditional Cell Attributes"
 msgid "Conditional Styles"
 msgstr "Atribut Sel Bersyarat"
 
-#: ui/CellToolBase.cpp:464
+#: ui/CellToolBase.cpp:423
 #, fuzzy, kde-format
 msgid "Remove Conditional Styles"
 msgstr "Alih keluar pemformatan sel bersyarat."
 
-#: ui/CellToolBase.cpp:465
+#: ui/CellToolBase.cpp:424
 #, fuzzy, kde-format
 msgid "Remove the conditional cell styles"
 msgstr "Alih keluar pemformatan sel bersyarat."
 
-#: ui/CellToolBase.cpp:471
+#: ui/CellToolBase.cpp:430
 #, fuzzy, kde-format
 #| msgid "Autofill"
 msgid "&Auto-Filter"
 msgstr "Autoisian"
 
-#: ui/CellToolBase.cpp:474
+#: ui/CellToolBase.cpp:433
 #, kde-format
 msgid "Add an automatic filter to a cell range"
 msgstr ""
 
-#: ui/CellToolBase.cpp:478
+#: ui/CellToolBase.cpp:437
 #, kde-format
 msgid "&Function..."
 msgstr "&Fungsi..."
 
-#: ui/CellToolBase.cpp:481
+#: ui/CellToolBase.cpp:440
 #, fuzzy, kde-format
 msgid "Insert math expression"
 msgstr "Selitkan ungkapan matematik."
 
-#: ui/CellToolBase.cpp:484
+#: ui/CellToolBase.cpp:443
 #, kde-format
 msgid "From &Database..."
 msgstr "Dari &Pangkalan Data..."
 
-#: ui/CellToolBase.cpp:488
+#: ui/CellToolBase.cpp:447
 #, fuzzy, kde-format
 msgid "Insert data from a SQL database"
 msgstr "Selitkan data dari pangkalan data SQL."
 
-#: ui/CellToolBase.cpp:491
+#: ui/CellToolBase.cpp:450
 #, kde-format
 msgid "Custom Lists..."
 msgstr "Senarai Biasa..."
 
-#: ui/CellToolBase.cpp:494
+#: ui/CellToolBase.cpp:453
 #, fuzzy, kde-format
 msgid "Create custom lists for sorting or autofill"
 msgstr "Cipta senarai biasa untuk pengisihan atau autoisian."
 
-#: ui/CellToolBase.cpp:496
+#: ui/CellToolBase.cpp:455
 #, kde-format
 msgid "&Consolidate..."
 msgstr "&Satukan..."
 
-#: ui/CellToolBase.cpp:499
+#: ui/CellToolBase.cpp:458
 #, fuzzy, kde-format
 msgid "Create a region of summary data from a group of similar regions"
 msgstr "Cipta kawasan data rumusan dari kumpulan kawasan yang serupa."
 
-#: ui/CellToolBase.cpp:501
+#: ui/CellToolBase.cpp:460
 #, kde-format
 msgid "&Goal Seek..."
 msgstr "Cari &Matlamat..."
 
-#: ui/CellToolBase.cpp:504
+#: ui/CellToolBase.cpp:463
 #, fuzzy, kde-format
 msgid "Repeating calculation to find a specific value"
 msgstr "Mengulang semula pengiraan untuk mencari nilai tentu."
 
-#: ui/CellToolBase.cpp:506
+#: ui/CellToolBase.cpp:465
 #, kde-format
 msgid "&Subtotals..."
 msgstr "&Subjumlah..."
 
-#: ui/CellToolBase.cpp:509
+#: ui/CellToolBase.cpp:468
 #, fuzzy, kde-format
 msgid "Create different kind of subtotals to a list or database"
 msgstr "Cipta pelbagai jenis subjumlah pada senarai atau pangkalan data."
 
-#: ui/CellToolBase.cpp:511
+#: ui/CellToolBase.cpp:470
 #, fuzzy, kde-format
 #| msgid "&Subtotals..."
 msgid "&Pivot Tables..."
 msgstr "&Subjumlah..."
 
-#: ui/CellToolBase.cpp:514
+#: ui/CellToolBase.cpp:473
 #, fuzzy, kde-format
 #| msgid "&Subtotals..."
 msgid "Create Pivot Tables"
 msgstr "&Subjumlah..."
 
-#: ui/CellToolBase.cpp:516
+#: ui/CellToolBase.cpp:475
 #, kde-format
 msgid "Area Name..."
 msgstr "Nama Kawasan..."
 
-#: ui/CellToolBase.cpp:519
+#: ui/CellToolBase.cpp:478
 #, fuzzy, kde-format
 msgid "Set a name for a region of the spreadsheet"
 msgstr "Setkan nama bagi kawasan lembaran hamparan."
 
-#: ui/CellToolBase.cpp:521
+#: ui/CellToolBase.cpp:480
 #, fuzzy, kde-format
 #| msgid "Show Area..."
 msgid "Named Areas..."
 msgstr "Papar Kawasan..."
 
-#: ui/CellToolBase.cpp:523 ui/dialogs/NamedAreaDialog.cpp:49
+#: ui/CellToolBase.cpp:482 ui/dialogs/NamedAreaDialog.cpp:49
 #, fuzzy, kde-format
 #| msgid "Remove Area"
 msgid "Named Areas"
 msgstr "Alih Keluar Kawasan"
 
-#: ui/CellToolBase.cpp:525
+#: ui/CellToolBase.cpp:484
 #, fuzzy, kde-format
 msgid "Edit or select named areas"
 msgstr "Paparkan kawasan bernama."
 
-#: ui/CellToolBase.cpp:529
+#: ui/CellToolBase.cpp:488
 #, kde-format
 msgid "Formula Selection"
 msgstr "Pemilihan Formula"
 
-#: ui/CellToolBase.cpp:531
+#: ui/CellToolBase.cpp:490
 #, fuzzy, kde-format
 msgid "Insert a function"
 msgstr "Selitkan fungsi."
 
-#: ui/CellToolBase.cpp:532 ui/CellToolBase.cpp:2140
+#: ui/CellToolBase.cpp:491 ui/CellToolBase.cpp:2026
 #, kde-format
 msgid "Others..."
 msgstr "Lain-lain..."
 
-#: ui/CellToolBase.cpp:540
+#: ui/CellToolBase.cpp:499
 #, kde-format
 msgid "Modify Cell"
 msgstr "Ubah Suai Sel"
 
-#: ui/CellToolBase.cpp:544
+#: ui/CellToolBase.cpp:503
 #, fuzzy, kde-format
 msgid "Edit the highlighted cell"
 msgstr "Edit sel yang ditonjolkan."
 
-#: ui/CellToolBase.cpp:547
+#: ui/CellToolBase.cpp:506
 #, fuzzy, kde-format
 msgid "Move the cell object to the clipboard"
 msgstr "Alihkan objek sel ke klipbod."
 
-#: ui/CellToolBase.cpp:551
+#: ui/CellToolBase.cpp:510
 #, fuzzy, kde-format
 msgid "Copy the cell object to the clipboard"
 msgstr "Salin objek ke klipbod."
 
-#: ui/CellToolBase.cpp:555
+#: ui/CellToolBase.cpp:514
 #, fuzzy, kde-format
 msgid "Paste the contents of the clipboard at the cursor"
 msgstr "Tampal kandungan klipbod di kursor. "
 
-#: ui/CellToolBase.cpp:558
+#: ui/CellToolBase.cpp:517
 #, kde-format
 msgid "Special Paste..."
 msgstr "Tampal Istimewa..."
 
-#: ui/CellToolBase.cpp:561
+#: ui/CellToolBase.cpp:520
 #, fuzzy, kde-format
 msgid "Paste the contents of the clipboard with special options"
 msgstr "Tampal kandungan klipbod dengan pilihan istimewa."
 
-#: ui/CellToolBase.cpp:563
+#: ui/CellToolBase.cpp:522
 #, kde-format
 msgid "Paste with Insertion"
 msgstr "Tampal dengan Penyelitan"
 
-#: ui/CellToolBase.cpp:566
+#: ui/CellToolBase.cpp:525
 #, fuzzy, kde-format
 msgid "Inserts a cell from the clipboard into the spreadsheet"
 msgstr "Selitkan sel dari klipbod ke lembaran hamparan."
 
-#: ui/CellToolBase.cpp:569
+#: ui/CellToolBase.cpp:528
 #, fuzzy, kde-format
 msgid "Selects all cells in the current sheet"
 msgstr "Kira semula nilai setiap sel dalam helaian kerja semasa."
 
-#: ui/CellToolBase.cpp:586
+#: ui/CellToolBase.cpp:545
 #, kde-format
 msgid "Goto Cell..."
 msgstr "Beralih ke Sel..."
 
-#: ui/CellToolBase.cpp:587
+#: ui/CellToolBase.cpp:546
 #, fuzzy, kde-format
 #| msgid "Goto Cell"
 msgid "Goto"
 msgstr "Beralih ke Sel"
 
-#: ui/CellToolBase.cpp:591
+#: ui/CellToolBase.cpp:550
 #, fuzzy, kde-format
 msgid "Move to a particular cell"
 msgstr "Beralih ke sel tertentu."
 
-#: ui/CellToolBase.cpp:594
+#: ui/CellToolBase.cpp:553
 #, fuzzy, kde-format
 msgid "Check the spelling"
 msgstr "Semak ejaan."
 
-#: ui/CellToolBase.cpp:597
+#: ui/CellToolBase.cpp:556
 #, kde-format
 msgid "Run Inspector..."
 msgstr "Laksanakan Inspektor..."
 
-#: ui/CellToolBase.cpp:603
+#: ui/CellToolBase.cpp:562
 #, fuzzy, kde-format
 #| msgid "Show Sheet..."
 msgid "Show QTableView..."
 msgstr "Papar Helaian..."
 
-#: ui/CellToolBase.cpp:609
+#: ui/CellToolBase.cpp:568
 #, fuzzy, kde-format
 #| msgid "AutoFormat..."
 msgid "Auto-Format..."
 msgstr "AutoFormat..."
 
-#: ui/CellToolBase.cpp:612
+#: ui/CellToolBase.cpp:571
 #, fuzzy, kde-format
 msgid "Set the worksheet formatting"
 msgstr "Setkan pemformatan helaian kerja."
 
-#: ui/CellToolBase.cpp:614
+#: ui/CellToolBase.cpp:573
 #, fuzzy, kde-format
 msgid "Document Settings..."
 msgstr "Parameter Lokal"
 
-#: ui/CellToolBase.cpp:617
+#: ui/CellToolBase.cpp:576
 #, fuzzy, kde-format
 msgid "Show document settings dialog"
 msgstr "Papar &penunjuk komen"
 
-#: ui/CellToolBase.cpp:619
+#: ui/CellToolBase.cpp:578
 #, fuzzy, kde-format
 #| msgid "Remove Columns"
 msgid "Break Before Column"
 msgstr "Alih Keluar Lajur"
 
-#: ui/CellToolBase.cpp:622
+#: ui/CellToolBase.cpp:581
 #, fuzzy, kde-format
 #| msgid "Column number"
 msgid "Column Break"
 msgstr "Bilangan lajur"
 
-#: ui/CellToolBase.cpp:623
+#: ui/CellToolBase.cpp:582
 #, kde-format
 msgid "Set a manual page break before the column"
 msgstr ""
 
-#: ui/CellToolBase.cpp:625
+#: ui/CellToolBase.cpp:584
 #, fuzzy, kde-format
 #| msgid "Remove Columns"
 msgid "Break Before Row"
 msgstr "Alih Keluar Lajur"
 
-#: ui/CellToolBase.cpp:628
+#: ui/CellToolBase.cpp:587
 #, fuzzy, kde-format
 #| msgid "Header"
 msgid "Row Break"
 msgstr "Pengepala"
 
-#: ui/CellToolBase.cpp:629
+#: ui/CellToolBase.cpp:588
 #, kde-format
 msgid "Set a manual page break before the row"
 msgstr ""
 
-#: ui/CellToolBase.cpp:633
+#: ui/CellToolBase.cpp:592
 #, fuzzy, kde-format
 #| msgid "Protection"
 msgid "Permute reference fixation"
 msgstr "Perlindungan"
 
-#: ui/CellToolBase.cpp:637
+#: ui/CellToolBase.cpp:596
 #, fuzzy, kde-format
 #| msgid "Protection"
 msgid "Permute fixation"
 msgstr "Perlindungan"
 
-#: ui/CellToolBase.cpp:638
+#: ui/CellToolBase.cpp:597
 #, fuzzy, kde-format
 msgid "Permute the fixation of the reference at the text cursor"
 msgstr "Tampal kandungan klipbod di kursor. "
 
-#: ui/CellToolBase.cpp:1450
+#: ui/CellToolBase.cpp:1409
 #, kde-format
 msgid "Unable to locate action %1"
 msgstr ""
 
-#: ui/CellToolBase.cpp:1505
+#: ui/CellToolBase.cpp:1464
 #, kde-format
 msgid "Create Style From Cell"
 msgstr "Cipta Gaya Dari Sel"
 
-#: ui/CellToolBase.cpp:1514
+#: ui/CellToolBase.cpp:1473
 #, kde-format
 msgid "The style name cannot be empty."
 msgstr "Nama gaya tidak boleh kosong."
 
-#: ui/CellToolBase.cpp:1519 ui/dialogs/LayoutDialog.cpp:199
+#: ui/CellToolBase.cpp:1478 ui/dialogs/LayoutDialog.cpp:199
 #, kde-format
 msgid "A style with this name already exists."
 msgstr "Gaya dengan nama ini sudah wujud."
 
-#: ui/CellToolBase.cpp:1540 ui/CellToolBase.cpp:1554 ui/CellToolBase.cpp:1568
-#: ui/CellToolBase.cpp:1583 ui/CellToolBase.cpp:1597 ui/CellToolBase.cpp:1615
-#: ui/CellToolBase.cpp:1636 ui/CellToolBase.cpp:1649
+#: ui/CellToolBase.cpp:1499 ui/CellToolBase.cpp:1513 ui/CellToolBase.cpp:1527
+#: ui/CellToolBase.cpp:1542 ui/CellToolBase.cpp:1556 ui/CellToolBase.cpp:1574
+#: ui/CellToolBase.cpp:1595 ui/CellToolBase.cpp:1608
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Change Font"
 msgstr "Ubah Format"
 
-#: ui/CellToolBase.cpp:1669 ui/CellToolBase.cpp:1679 ui/CellToolBase.cpp:1689
+#: ui/CellToolBase.cpp:1628 ui/CellToolBase.cpp:1638 ui/CellToolBase.cpp:1648
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Change Horizontal Alignment"
 msgstr "Cantum Sel %1"
 
-#: ui/CellToolBase.cpp:1699 ui/CellToolBase.cpp:1709 ui/CellToolBase.cpp:1719
+#: ui/CellToolBase.cpp:1658 ui/CellToolBase.cpp:1668 ui/CellToolBase.cpp:1678
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Change Vertical Alignment"
 msgstr "Cantum Sel %1"
 
-#: ui/CellToolBase.cpp:1833
+#: ui/CellToolBase.cpp:1792
 #, fuzzy
 #| msgid "Wrap Text"
 msgctxt "(qtundo-format)"
 msgid "Wrap Text"
 msgstr "Balut Teks"
 
-#: ui/CellToolBase.cpp:1845
+#: ui/CellToolBase.cpp:1804
 #, fuzzy
 #| msgid "Vertical Text"
 msgctxt "(qtundo-format)"
 msgid "Vertical Text"
 msgstr "Teks Menegak"
 
-#: ui/CellToolBase.cpp:1886
+#: ui/CellToolBase.cpp:1823
 #, fuzzy
 #| msgid "Format Percent"
 msgctxt "(qtundo-format)"
 msgid "Format Percent"
 msgstr "Peratus Format"
 
-#: ui/CellToolBase.cpp:1896
+#: ui/CellToolBase.cpp:1833
 #, fuzzy
 #| msgid "Format Money"
 msgctxt "(qtundo-format)"
 msgid "Format Money"
 msgstr "Format Wang"
 
-#: ui/CellToolBase.cpp:1926
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Switch to uppercase"
-msgstr "&Tukar huruf pertama kepada huruf besar"
-
-#: ui/CellToolBase.cpp:1936
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Switch to lowercase"
-msgstr "&Tukar huruf pertama kepada huruf besar"
-
-#: ui/CellToolBase.cpp:1946
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "First letter uppercase"
-msgstr "&Tukar huruf pertama kepada huruf besar"
-
-#: ui/CellToolBase.cpp:1992
+#: ui/CellToolBase.cpp:1899
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Clear Text"
 msgstr "Ubah Teks"
 
-#: ui/CellToolBase.cpp:2016 ui/commands/CommentCommand.cpp:31
-#, fuzzy
-#| msgid "Remove Comment"
-msgctxt "(qtundo-format)"
-msgid "Remove Comment"
-msgstr "Alih Keluar Komen"
-
-#: ui/CellToolBase.cpp:2067
+#: ui/CellToolBase.cpp:1953
 #, fuzzy, kde-format
 msgid ""
 "No database drivers available. To use this feature you need to install the "
@@ -18745,69 +18617,64 @@ msgstr ""
 "Tiada pemacu pangkalan data boleh didapatkan; anda perlu mengkompil Qy "
 "dengan pemacu yang sesuai."
 
-#: ui/CellToolBase.cpp:2103 ui/CellToolBase.cpp:2115
+#: ui/CellToolBase.cpp:1989 ui/CellToolBase.cpp:2001
 #, kde-format
 msgid "You must select multiple cells."
 msgstr "Anda mesti pilih sel berbilang."
 
-#: ui/CellToolBase.cpp:2604
+#: ui/CellToolBase.cpp:2490
 #, fuzzy
 #| msgid "Replacement"
 msgctxt "(qtundo-format)"
 msgid "Replace"
 msgstr "Penggantian"
 
-#: ui/CellToolBase_p.cpp:708
+#: ui/CellToolBase_p.cpp:703
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Number Format"
 msgstr "Bilangan percubaan"
 
-#: ui/CellToolBase_p.cpp:714
+#: ui/CellToolBase_p.cpp:709
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Currency Format"
 msgstr "Mata Wang:"
 
-#: ui/CellToolBase_p.cpp:719
+#: ui/CellToolBase_p.cpp:714
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Percentage Format"
 msgstr "Peratus Format"
 
-#: ui/CellToolBase_p.cpp:724
+#: ui/CellToolBase_p.cpp:719
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Time Format"
 msgstr "Format masa"
 
-#: ui/CellToolBase_p.cpp:729
+#: ui/CellToolBase_p.cpp:724
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Date Format"
 msgstr "Format tarikh"
 
-#: ui/CellToolBase_p.cpp:734
+#: ui/CellToolBase_p.cpp:729
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Scientific Format"
 msgstr "Saintifik"
 
-#: ui/CellToolBase_p.cpp:1164
+#: ui/CellToolBase_p.cpp:1159
 #, fuzzy, kde-format
 #| msgid "Insert Cells..."
 msgid "Delete Cells..."
 msgstr "Selitkan Sel..."
 
-#: ui/CellToolBase_p.cpp:1168
+#: ui/CellToolBase_p.cpp:1163
 #, kde-format
 msgid "Selection List..."
 msgstr "Senarai Pemilihan..."
-
-#: ui/CellToolBase_p.cpp:1176
-#, fuzzy, kde-format
-msgid "Clear Comment"
-msgstr "Komen"
 
 #. i18n: tag optionWidget attribute name
 #: ui/CellToolOptionWidgets.xml:18
@@ -19090,20 +18957,14 @@ msgctxt "(qtundo-format)"
 msgid "Change Value"
 msgstr "Ubah Sudut"
 
-#: ui/commands/DataManipulators.cpp:176
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Change Case"
-msgstr "Ubah Sudut"
-
-#: ui/commands/DataManipulators.cpp:225 ui/commands/DataManipulators.cpp:236
+#: ui/commands/DataManipulators.cpp:180 ui/commands/DataManipulators.cpp:191
 #, fuzzy
 #| msgid "Insert Cells"
 msgctxt "(qtundo-format)"
 msgid "Insert Cells"
 msgstr "Selitkan Sel"
 
-#: ui/commands/DataManipulators.cpp:238
+#: ui/commands/DataManipulators.cpp:193
 #, fuzzy
 #| msgid "Remove Cells"
 msgctxt "(qtundo-format)"
@@ -19115,18 +18976,6 @@ msgstr "Alih Keluar Sel"
 msgctxt "(qtundo-format)"
 msgid "Delete"
 msgstr "Hapuskan Baris"
-
-#: ui/commands/IndentationCommand.cpp:43
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Increase Indentation"
-msgstr "Tambahkan Inden"
-
-#: ui/commands/IndentationCommand.cpp:45
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Decrease Indentation"
-msgstr "Kurangkan Inden"
 
 #: ui/commands/MergeCommand.cpp:85
 #, fuzzy
@@ -19453,11 +19302,6 @@ msgstr "Tidak dapat cari fail  XML '%1' gaya jadual."
 #, fuzzy, kde-format
 msgid "Parsing error in sheet-style XML file %1."
 msgstr "Ralat pengkaji hurai dalam fail XML '%1' gaya jadual."
-
-#: ui/dialogs/CommentDialog.cpp:28
-#, kde-format
-msgid "Cell Comment"
-msgstr "Komen Sel"
 
 #: ui/dialogs/ConditionalDialog.cpp:140 ui/dialogs/ConditionalDialog.cpp:178
 #: ui/dialogs/ConditionalDialog.cpp:197 ui/dialogs/ConditionalDialog.cpp:216
@@ -21441,6 +21285,12 @@ msgstr "Komen"
 msgid "Everything"
 msgstr "Apa-apa sahaja"
 
+#. i18n: ectx: property (text), widget (QRadioButton, commentButton)
+#: ui/dialogs/SpecialPasteWidget.ui:65
+#, kde-format
+msgid "Comment"
+msgstr "Komen"
+
 #. i18n: ectx: property (text), widget (QRadioButton, noBorderButton)
 #: ui/dialogs/SpecialPasteWidget.ui:79
 #, kde-format
@@ -21674,6 +21524,120 @@ msgstr ""
 #, kde-format
 msgid "Open Link?"
 msgstr "Buka Pautan?"
+
+#, fuzzy
+#~| msgid "Add Comment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Comment"
+#~ msgstr "Tambah Komen"
+
+#~ msgid "Increase Indent"
+#~ msgstr "Tambahkan Inden"
+
+#, fuzzy
+#~ msgid "Increase the indentation"
+#~ msgstr "Tambahkan pengengsotan."
+
+#~ msgid "Decrease Indent"
+#~ msgstr "Kurangkan Inden"
+
+#, fuzzy
+#~ msgid "Decrease the indentation"
+#~ msgstr "Kurangkan pengengsotan."
+
+#~ msgid "Upper Case"
+#~ msgstr "Huruf Besar"
+
+#, fuzzy
+#~| msgid "Upper Case"
+#~ msgid "Upper"
+#~ msgstr "Huruf Besar"
+
+#, fuzzy
+#~ msgid "Convert all letters to upper case"
+#~ msgstr "Tukar semua huruf ke huruf besar."
+
+#~ msgid "Lower Case"
+#~ msgstr "Huruf Kecil"
+
+#, fuzzy
+#~| msgid "Power"
+#~ msgid "Lower"
+#~ msgstr "Kuasa"
+
+#, fuzzy
+#~ msgid "Convert all letters to lower case"
+#~ msgstr "Tukar semua huruf ke huruf kecil."
+
+#~ msgid "Convert First Letter to Upper Case"
+#~ msgstr "Tukar Huruf Pertama ke Huruf Besar"
+
+#, fuzzy
+#~ msgid "First Letter Upper"
+#~ msgstr "&Tukar huruf pertama kepada huruf besar"
+
+#, fuzzy
+#~ msgid "Capitalize the first letter"
+#~ msgstr "Guna huruf besar untuk huruf pertama."
+
+#, fuzzy
+#~| msgid "Comment"
+#~ msgid "Comment..."
+#~ msgstr "Komen"
+
+#, fuzzy
+#~ msgid "Edit a comment for this cell"
+#~ msgstr "Edit komen untuk sel ini."
+
+#~ msgid "Remove Comment"
+#~ msgstr "Alih Keluar Komen"
+
+#, fuzzy
+#~ msgid "Remove this cell's comment"
+#~ msgstr "Alih keluar komen sel."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Switch to uppercase"
+#~ msgstr "&Tukar huruf pertama kepada huruf besar"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Switch to lowercase"
+#~ msgstr "&Tukar huruf pertama kepada huruf besar"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "First letter uppercase"
+#~ msgstr "&Tukar huruf pertama kepada huruf besar"
+
+#, fuzzy
+#~| msgid "Remove Comment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove Comment"
+#~ msgstr "Alih Keluar Komen"
+
+#, fuzzy
+#~ msgid "Clear Comment"
+#~ msgstr "Komen"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Case"
+#~ msgstr "Ubah Sudut"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indentation"
+#~ msgstr "Tambahkan Inden"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indentation"
+#~ msgstr "Kurangkan Inden"
+
+#~ msgid "Cell Comment"
+#~ msgstr "Komen Sel"
 
 #~ msgid "&Left"
 #~ msgstr "&Kiri"
