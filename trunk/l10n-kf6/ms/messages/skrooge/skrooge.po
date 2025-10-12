@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: skrooge\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-10-10 00:42+0000\n"
+"POT-Creation-Date: 2025-10-12 00:42+0000\n"
 "PO-Revision-Date: 2009-10-03 23:05+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -1615,7 +1615,7 @@ msgstr "Operasi"
 #: plugins/skrooge/skrooge_bank/skgbankpluginwidget.cpp:120
 #: plugins/skrooge/skrooge_categories/skgcategoriespluginwidget.cpp:51
 #: plugins/skrooge/skrooge_payee/skgpayeepluginwidget.cpp:37
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:51
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:67
 #: plugins/skrooge/skrooge_tracker/skgtrackerpluginwidget.cpp:34
 #, fuzzy, kde-format
 msgid "All"
@@ -3286,7 +3286,7 @@ msgid "Total of %1"
 msgstr "Jumlah"
 
 #: plugins/skrooge/skrooge_bank/skgaccountboardwidget.cpp:386
-#: skgbankmodeler/skgdocumentbank.cpp:3381 skgbankmodeler/skgreportbank.cpp:135
+#: skgbankmodeler/skgdocumentbank.cpp:3389 skgbankmodeler/skgreportbank.cpp:135
 #: skgbankmodeler/skgreportbank.cpp:376 skgbankmodeler/skgreportbank.cpp:468
 #, kde-format
 msgctxt "Noun, the numerical total of a sum of values"
@@ -4951,7 +4951,7 @@ msgstr "Gagal untuk memadam"
 #. i18n: ectx: property (text), widget (QPushButton, kUnitUpdate)
 #: plugins/skrooge/skrooge_calculator/skgcalculatorpluginwidget_base.ui:819
 #: plugins/skrooge/skrooge_payee/skgpayeepluginwidget_base.ui:211
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:282
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:257
 #: plugins/skrooge/skrooge_search/skgsearchpluginwidget_base.ui:379
 #: plugins/skrooge/skrooge_tracker/skgtrackerpluginwidget_base.ui:166
 #: plugins/skrooge/skrooge_unit/skgunitpluginwidget_base.ui:810
@@ -8267,8 +8267,8 @@ msgstr "Gagal untuk memadam"
 #. i18n: ectx: property (statusTip), widget (QPushButton, kModifyBtn)
 #: plugins/skrooge/skrooge_operation/skgoperationpluginwidget_base.ui:1363
 #: plugins/skrooge/skrooge_operation/skgoperationpluginwidget_base.ui:1366
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:276
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:279
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:251
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:254
 #, fuzzy, kde-format
 msgid "Update selected transactions (Shift+Enter)"
 msgstr "Import"
@@ -9497,7 +9497,7 @@ msgid "Schedule assignment failed"
 msgstr "Gagal untuk memadam"
 
 #: plugins/skrooge/skrooge_scheduled/skgscheduledplugin.cpp:224
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:368
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:390
 #, fuzzy, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Insert recurrent transactions"
@@ -9660,7 +9660,7 @@ msgstr "Operasi"
 
 #: plugins/skrooge/skrooge_scheduled/skgscheduledplugin.cpp:667
 #: plugins/skrooge/skrooge_scheduled/skgscheduledplugin.cpp:700
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:344
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:366
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Update failed"
@@ -9690,160 +9690,130 @@ msgctxt "Error message"
 msgid "Schedule failed"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:53
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:38
+#: skgbankgui/skgobjectmodel.cpp:230
+#, fuzzy, kde-format
+msgid "None"
+msgstr "Tiada Tarikh"
+
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:39
+#, fuzzy, kde-format
+msgid "Previous open day"
+msgstr "Tahun Terdahulu"
+
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:40
+#, kde-format
+msgid "Closest open day"
+msgstr ""
+
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:41
+#, fuzzy, kde-format
+msgid "Next open day"
+msgstr "Nilai"
+
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:43
+#, fuzzy, kde-format
+msgid "Previous %1"
+msgstr "Tahun Terdahulu"
+
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:46
+#, fuzzy, kde-format
+msgid "Closest %1"
+msgstr "Tutup"
+
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:49
+#, fuzzy, kde-format
+msgid "Next %1"
+msgstr "&Minggu hadapan"
+
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:69
 #, kde-format
 msgid "Ongoing"
 msgstr ""
 
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:59
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:75
 #, kde-format
 msgid "Complete"
 msgstr ""
 
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:79
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:95
 #, fuzzy, kde-format
 msgctxt "User action"
 msgid "Process immediately"
 msgstr "Process"
 
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:179
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:199
 #, fuzzy, kde-format
 msgctxt "Noun, a list of items"
 msgid "Transactions of the schedule"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:221
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:241
 #, kde-format
 msgctxt "Information message"
 msgid "A non-template schedule requires at least one transaction"
 msgstr ""
 
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:222
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:242
 #, fuzzy, kde-format
 msgctxt "Information message"
 msgid "Convert to a non-template schedule"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:225
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:245
 #, fuzzy, kde-format
 msgctxt "Information message"
 msgid "Convert to a template schedule"
 msgstr "Operasi"
 
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:305
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:326
 #: skgbankgui/skgobjectmodel.cpp:1048
 #, fuzzy, kde-format
 msgctxt "Noun, name of the user action"
 msgid "Recurrent transaction update"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:334
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:356
 #: skgbankgui/skgobjectmodel.cpp:1061
 #, fuzzy, kde-format
 msgctxt "An information to the user"
 msgid "The recurrent transaction '%1' has been updated"
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:341
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:363
 #, fuzzy, kde-format
 msgctxt "Successful message after an user action"
 msgid "Recurrent transaction updated."
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:380
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:402
 #, fuzzy, kde-format
 msgctxt "Successful message after an user action"
 msgid "Recurrent transaction inserted."
 msgstr "Gagal untuk memadam"
 
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:383
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget.cpp:405
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Insertion failed"
 msgstr "Gagal untuk memadam"
 
-#. i18n: ectx: property (text), widget (KTitleWidget, kTitle)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:37
-#, kde-format
-msgid ""
-"First, you have to schedule a transaction or a template from the "
-"transactions page."
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kRemindMe)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:67
-#, fuzzy, kde-format
-msgid "Remind me:"
-msgstr "Tukar nama"
-
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:87
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:186
-#, kde-format
-msgid "days &before term"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:110
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:117
-#, fuzzy, kde-format
-msgid "Once ever&y:"
-msgstr "&Minggu hadapan"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, kOnceEveryUnit)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_once_every_unit)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:143
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:138
-#, fuzzy, kde-format
-msgid "day(s)"
-msgstr "hari"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, kOnceEveryUnit)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_once_every_unit)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:148
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:143
-#, kde-format
-msgid "week(s)"
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (KComboBox, kOnceEveryUnit)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_once_every_unit)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:153
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:148
-#, fuzzy, kde-format
-msgid "month(s)"
-msgstr "bulan"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, kOnceEveryUnit)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_once_every_unit)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:158
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:153
-#, fuzzy, kde-format
-msgid "year(s)"
-msgstr "tahun"
-
-#. i18n: ectx: property (text), widget (QCheckBox, kAutoWrite)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:166
-#, fuzzy, kde-format
-msgid "Automatically write:"
-msgstr "Automula"
-
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:186
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:85
 #: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:249
 #, kde-format
 msgid "days before &term"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, kNbTimes)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:196
-#, fuzzy, kde-format
-msgid "Number of occurrences:"
-msgstr "Operasi"
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:95
+#, kde-format
+msgid "Next occurrence:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kIsTemplate)
 #. i18n: ectx: property (title), widget (QGroupBox, kTemplateFrm)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:248
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:108
 #: plugins/skrooge/skrooge_search/skgsearchpluginwidget.cpp:133
 #: plugins/skrooge/skrooge_search/skgsearchpluginwidget_base.ui:236
 #, fuzzy, kde-format
@@ -9851,17 +9821,43 @@ msgstr "Operasi"
 msgid "Template"
 msgstr "Templat"
 
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:138
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:117
+#, fuzzy, kde-format
+msgid "Once ever&y:"
+msgstr "&Minggu hadapan"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kAutoWrite)
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:154
+#, fuzzy, kde-format
+msgid "Automatically write:"
+msgstr "Automula"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kRemindMe)
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:161
+#, fuzzy, kde-format
+msgid "Remind me:"
+msgstr "Tukar nama"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:220
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:186
+#, kde-format
+msgid "days &before term"
+msgstr ""
+
 #. i18n: ectx: property (toolTip), widget (QToolButton, kProcessBtn)
 #. i18n: ectx: property (statusTip), widget (QToolButton, kProcessBtn)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:292
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:295
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:267
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:270
 #, fuzzy, kde-format
 msgid "Insert scheduled transactions"
 msgstr "Operasi"
 
 #. i18n: ectx: property (text), widget (QToolButton, kProcessBtn)
 #. i18n: ectx: property (title), widget (QGroupBox, kActionGrp)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:298
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:273
 #: plugins/skrooge/skrooge_search/skgsearchpluginwidget_base.ui:290
 #, fuzzy, kde-format
 msgid "Process"
@@ -9869,23 +9865,69 @@ msgstr "Process"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, kJumpBtn)
 #. i18n: ectx: property (statusTip), widget (QPushButton, kJumpBtn)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:311
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:314
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:286
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:289
 #, fuzzy, kde-format
 msgid "Open the transaction page with the selected scheduled transactions"
 msgstr "Operasi"
 
 #. i18n: ectx: property (text), widget (QPushButton, kJumpBtn)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:317
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:292
 #, fuzzy, kde-format
 msgid "Jump to the operation"
 msgstr "Operasi"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:326
+#. i18n: ectx: property (text), item, widget (KComboBox, kOnceEveryUnit)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_once_every_unit)
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:302
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:138
+#, fuzzy, kde-format
+msgid "day(s)"
+msgstr "hari"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kOnceEveryUnit)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_once_every_unit)
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:307
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:143
 #, kde-format
-msgid "Next occurrence:"
+msgid "week(s)"
 msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kOnceEveryUnit)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_once_every_unit)
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:312
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:148
+#, fuzzy, kde-format
+msgid "month(s)"
+msgstr "bulan"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kOnceEveryUnit)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_once_every_unit)
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:317
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:153
+#, fuzzy, kde-format
+msgid "year(s)"
+msgstr "tahun"
+
+#. i18n: ectx: property (text), widget (KTitleWidget, kTitle)
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:325
+#, kde-format
+msgid ""
+"First, you have to schedule a transaction or a template from the "
+"transactions page."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kNbTimes)
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:332
+#, fuzzy, kde-format
+msgid "Number of occurrences:"
+msgstr "Operasi"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_base.ui:339
+#, fuzzy, kde-format
+msgid "Adaptation:"
+msgstr "Operasi"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_check_on_open)
 #: plugins/skrooge/skrooge_scheduled/skgscheduledpluginwidget_pref.ui:25
@@ -10064,7 +10106,7 @@ msgid "Template"
 msgstr "Templat"
 
 #: plugins/skrooge/skrooge_search/skgsearchpluginwidget.cpp:81
-#: skgbankmodeler/skgdocumentbank.cpp:3189
+#: skgbankmodeler/skgdocumentbank.cpp:3197
 #, fuzzy, kde-format
 msgctxt "Adjective, an highlighted item"
 msgid "Highlighted"
@@ -10307,7 +10349,7 @@ msgid "Search Toolbar"
 msgstr "Cari"
 
 #: plugins/skrooge/skrooge_tracker/skgtrackerplugin.cpp:72
-#: skgbankmodeler/skgdocumentbank.cpp:3216
+#: skgbankmodeler/skgdocumentbank.cpp:3224
 #, kde-format
 msgctxt "Noun, something that is used to track items"
 msgid "Trackers"
@@ -11421,11 +11463,6 @@ msgstr "Tiada Tarikh"
 
 #: skgbankgui/skgobjectmodel.cpp:230
 #, fuzzy, kde-format
-msgid "None"
-msgstr "Tiada Tarikh"
-
-#: skgbankgui/skgobjectmodel.cpp:230
-#, fuzzy, kde-format
 msgid "Marked"
 msgstr "Tanda Buku"
 
@@ -12085,7 +12122,7 @@ msgstr "hari"
 #: skgbankmodeler/skgdocumentbank.cpp:576
 #: skgbankmodeler/skgdocumentbank.cpp:631
 #: skgbankmodeler/skgdocumentbank.cpp:741
-#: skgbankmodeler/skgdocumentbank.cpp:3053
+#: skgbankmodeler/skgdocumentbank.cpp:3061
 #, kde-format
 msgctxt "Noun, financial transactions with a negative amount"
 msgid "Expenditure"
@@ -12094,7 +12131,7 @@ msgstr ""
 #: skgbankmodeler/skgdocumentbank.cpp:576
 #: skgbankmodeler/skgdocumentbank.cpp:631
 #: skgbankmodeler/skgdocumentbank.cpp:741
-#: skgbankmodeler/skgdocumentbank.cpp:3050
+#: skgbankmodeler/skgdocumentbank.cpp:3058
 #, fuzzy, kde-format
 msgctxt "Noun, financial transactions with a positive amount"
 msgid "Income"
@@ -12150,68 +12187,68 @@ msgid "Current"
 msgstr "Semasa"
 
 #: skgbankmodeler/skgdocumentbank.cpp:779
-#: skgbankmodeler/skgdocumentbank.cpp:3249
+#: skgbankmodeler/skgdocumentbank.cpp:3257
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Year"
 msgstr "Tahun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:1955 skgbasemodeler/skgdocument.cpp:2023
+#: skgbankmodeler/skgdocumentbank.cpp:1962 skgbasemodeler/skgdocument.cpp:2023
 #, fuzzy, kde-format
 msgctxt "Progression step"
 msgid "Migrate document"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2208 skgbasemodeler/skgdocument.cpp:2058
+#: skgbankmodeler/skgdocumentbank.cpp:2216 skgbasemodeler/skgdocument.cpp:2058
 #, kde-format
 msgctxt "Error message"
 msgid "Impossible to load a document generated by a more recent version"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2246 skgbasemodeler/skgdocument.cpp:2306
+#: skgbankmodeler/skgdocumentbank.cpp:2254 skgbasemodeler/skgdocument.cpp:2306
 #, kde-format
 msgctxt "Progression step"
 msgid "Refresh views"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2250
+#: skgbankmodeler/skgdocumentbank.cpp:2258
 #, fuzzy, kde-format
 msgctxt "Progression step"
 msgid "Computation of balances"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2252
+#: skgbankmodeler/skgdocumentbank.cpp:2260
 #, fuzzy, kde-format
 msgctxt "Progression step"
 msgid "Computation of budgets"
 msgstr "Gagal untuk memadam"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2267 skgbasemodeler/skgdocument.cpp:2328
+#: skgbankmodeler/skgdocumentbank.cpp:2275 skgbasemodeler/skgdocument.cpp:2328
 #, kde-format
 msgctxt "Error message: Could not perform database migration"
 msgid "Database migration from version %1 to version %2 failed"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2373
-#: skgbankmodeler/skgdocumentbank.cpp:2547
+#: skgbankmodeler/skgdocumentbank.cpp:2381
+#: skgbankmodeler/skgdocumentbank.cpp:2555
 #, fuzzy, kde-format
 msgctxt "Error message"
 msgid "Transaction '%1' on '%2' failed"
 msgstr "Gagal untuk memadam"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2589
-#: skgbankmodeler/skgdocumentbank.cpp:2664
-#: skgbankmodeler/skgdocumentbank.cpp:2684
-#: skgbankmodeler/skgdocumentbank.cpp:2716
-#: skgbankmodeler/skgdocumentbank.cpp:2744
-#: skgbankmodeler/skgdocumentbank.cpp:2764
-#: skgbankmodeler/skgdocumentbank.cpp:2771
-#: skgbankmodeler/skgdocumentbank.cpp:2785
-#: skgbankmodeler/skgdocumentbank.cpp:2799
-#: skgbankmodeler/skgdocumentbank.cpp:2806
-#: skgbankmodeler/skgdocumentbank.cpp:2820
-#: skgbankmodeler/skgdocumentbank.cpp:2834
-#: skgbankmodeler/skgdocumentbank.cpp:2850 skgbasemodeler/skgdocument.cpp:2917
+#: skgbankmodeler/skgdocumentbank.cpp:2597
+#: skgbankmodeler/skgdocumentbank.cpp:2672
+#: skgbankmodeler/skgdocumentbank.cpp:2692
+#: skgbankmodeler/skgdocumentbank.cpp:2724
+#: skgbankmodeler/skgdocumentbank.cpp:2752
+#: skgbankmodeler/skgdocumentbank.cpp:2772
+#: skgbankmodeler/skgdocumentbank.cpp:2779
+#: skgbankmodeler/skgdocumentbank.cpp:2793
+#: skgbankmodeler/skgdocumentbank.cpp:2807
+#: skgbankmodeler/skgdocumentbank.cpp:2814
+#: skgbankmodeler/skgdocumentbank.cpp:2828
+#: skgbankmodeler/skgdocumentbank.cpp:2842
+#: skgbankmodeler/skgdocumentbank.cpp:2858 skgbasemodeler/skgdocument.cpp:2917
 #: skgbasemodeler/skgdocument.cpp:2931 skgbasemodeler/skgdocument.cpp:2938
 #: skgbasemodeler/skgdocument.cpp:2945
 #, fuzzy, kde-format
@@ -12219,187 +12256,187 @@ msgctxt "Noun, the default value of an item"
 msgid "Default"
 msgstr "Default"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2604
-#: skgbankmodeler/skgdocumentbank.cpp:2674
-#: skgbankmodeler/skgdocumentbank.cpp:2694
-#: skgbankmodeler/skgdocumentbank.cpp:2723
-#: skgbankmodeler/skgdocumentbank.cpp:2754
-#: skgbankmodeler/skgdocumentbank.cpp:2778
-#: skgbankmodeler/skgdocumentbank.cpp:2792
-#: skgbankmodeler/skgdocumentbank.cpp:2813
-#: skgbankmodeler/skgdocumentbank.cpp:2827
-#: skgbankmodeler/skgdocumentbank.cpp:2842 skgbasemodeler/skgdocument.cpp:2924
+#: skgbankmodeler/skgdocumentbank.cpp:2612
+#: skgbankmodeler/skgdocumentbank.cpp:2682
+#: skgbankmodeler/skgdocumentbank.cpp:2702
+#: skgbankmodeler/skgdocumentbank.cpp:2731
+#: skgbankmodeler/skgdocumentbank.cpp:2762
+#: skgbankmodeler/skgdocumentbank.cpp:2786
+#: skgbankmodeler/skgdocumentbank.cpp:2800
+#: skgbankmodeler/skgdocumentbank.cpp:2821
+#: skgbankmodeler/skgdocumentbank.cpp:2835
+#: skgbankmodeler/skgdocumentbank.cpp:2850 skgbasemodeler/skgdocument.cpp:2924
 #, fuzzy, kde-format
 msgctxt "Noun, the minimum value of an item"
 msgid "Minimum"
 msgstr "Minimum"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2619
+#: skgbankmodeler/skgdocumentbank.cpp:2627
 #, kde-format
 msgctxt "Noun"
 msgid "Amount in 2 columns"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2634
-#: skgbankmodeler/skgdocumentbank.cpp:3068
+#: skgbankmodeler/skgdocumentbank.cpp:2642
+#: skgbankmodeler/skgdocumentbank.cpp:3076
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Amount entered"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2649
+#: skgbankmodeler/skgdocumentbank.cpp:2657
 #, kde-format
 msgctxt "Noun"
 msgid "Amount entered in 2 columns"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2705
+#: skgbankmodeler/skgdocumentbank.cpp:2713
 #, kde-format
 msgctxt "Noun, an intermediate value between two extremums"
 msgid "Intermediate"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:2730
+#: skgbankmodeler/skgdocumentbank.cpp:2738
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "With transactions"
 msgstr "Laksana"
 
-#: skgbankmodeler/skgdocumentbank.cpp:2737
+#: skgbankmodeler/skgdocumentbank.cpp:2745
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "With cumulative transactions"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3023
+#: skgbankmodeler/skgdocumentbank.cpp:3031
 #, fuzzy, kde-format
 msgctxt "Noun, an account as in a bank account"
 msgid "Account"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3026
+#: skgbankmodeler/skgdocumentbank.cpp:3034
 #, fuzzy, kde-format
 #| msgid "Accounts"
 msgctxt "Noun, an account as in a bank account"
 msgid "Account's type"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3029
+#: skgbankmodeler/skgdocumentbank.cpp:3037
 #, fuzzy, kde-format
 msgctxt "Noun, a financial operation"
 msgid "Transaction"
 msgstr "Laksana"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3032 skgbasemodeler/skgdocument.cpp:2967
+#: skgbankmodeler/skgdocumentbank.cpp:3040 skgbasemodeler/skgdocument.cpp:2967
 #, fuzzy, kde-format
 msgctxt "Noun, the name of an item"
 msgid "Name"
 msgstr "Nama"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3035
+#: skgbankmodeler/skgdocumentbank.cpp:3043
 #, fuzzy, kde-format
 msgctxt "Noun, as in commercial balance"
 msgid "Balance"
 msgstr "Baki"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3038
+#: skgbankmodeler/skgdocumentbank.cpp:3046
 #, fuzzy, kde-format
 msgctxt "Noun, as in commercial balance"
 msgid "Balance entered"
 msgstr "Baki"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3041
-#: skgbankmodeler/skgdocumentbank.cpp:3044
+#: skgbankmodeler/skgdocumentbank.cpp:3049
+#: skgbankmodeler/skgdocumentbank.cpp:3052
 #, fuzzy, kde-format
 msgctxt "Name, the numerical amount of a financial operation"
 msgid "Amount"
 msgstr "Jumlah:"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3047
+#: skgbankmodeler/skgdocumentbank.cpp:3055
 #, fuzzy, kde-format
 msgctxt "Name, the numerical amount of a financial operation"
 msgid "Today amount"
 msgstr "Jumlah:"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3056
+#: skgbankmodeler/skgdocumentbank.cpp:3064
 #, kde-format
 msgctxt "Noun"
 msgid "Income entered"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3059
+#: skgbankmodeler/skgdocumentbank.cpp:3067
 #, kde-format
 msgctxt "Noun"
 msgid "Expenditure entered"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3062
+#: skgbankmodeler/skgdocumentbank.cpp:3070
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Quantity owned"
 msgstr "Keluar"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3065
+#: skgbankmodeler/skgdocumentbank.cpp:3073
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Amount owned"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3071
+#: skgbankmodeler/skgdocumentbank.cpp:3079
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Account number"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3074
+#: skgbankmodeler/skgdocumentbank.cpp:3082
 #, fuzzy, kde-format
 msgctxt "Noun, a number identifying an item"
 msgid "Number"
 msgstr "Nombor"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3077
+#: skgbankmodeler/skgdocumentbank.cpp:3085
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Bank number"
 msgstr "Nombor:"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3080
+#: skgbankmodeler/skgdocumentbank.cpp:3088
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Agency number"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3083
+#: skgbankmodeler/skgdocumentbank.cpp:3091
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Agency address"
 msgstr "Alamat:"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3086
+#: skgbankmodeler/skgdocumentbank.cpp:3094
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Address"
 msgstr "Alamat:"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3089
+#: skgbankmodeler/skgdocumentbank.cpp:3097
 #, kde-format
 msgctxt "A person or institution receiving a payment, or paying the operation"
 msgid "Payee"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3092
+#: skgbankmodeler/skgdocumentbank.cpp:3100
 #, fuzzy, kde-format
 msgctxt "Noun, a user comment on an item"
 msgid "Comment"
 msgstr "Komen"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3095
+#: skgbankmodeler/skgdocumentbank.cpp:3103
 #, fuzzy, kde-format
 msgctxt "Noun, a user comment on an item"
 msgid "Sub comment"
 msgstr "Komen"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3098
+#: skgbankmodeler/skgdocumentbank.cpp:3106
 #, fuzzy, kde-format
 msgctxt ""
 "Noun, the mode used for payment of the transaction (Credit Card, Cheque, "
@@ -12407,97 +12444,97 @@ msgctxt ""
 msgid "Mode"
 msgstr "Mod"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3101
+#: skgbankmodeler/skgdocumentbank.cpp:3109
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Next occurrence"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3104 skgbasemodeler/skgdocument.cpp:2969
+#: skgbankmodeler/skgdocumentbank.cpp:3112 skgbasemodeler/skgdocument.cpp:2969
 #, fuzzy, kde-format
 msgctxt "Noun, the date of an item"
 msgid "Date"
 msgstr "Tarikh"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3107
+#: skgbankmodeler/skgdocumentbank.cpp:3115
 #, fuzzy, kde-format
 msgctxt "Noun, the date of creation of an item"
 msgid "Creation date"
 msgstr "Gagal untuk memadam"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3110
+#: skgbankmodeler/skgdocumentbank.cpp:3118
 #, fuzzy, kde-format
 msgctxt "Noun, 7 days"
 msgid "Week"
 msgstr "Barat"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3113
+#: skgbankmodeler/skgdocumentbank.cpp:3121
 #, fuzzy, kde-format
 msgctxt "Noun, the months in a year"
 msgid "Month"
 msgstr "Bulan"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3116
+#: skgbankmodeler/skgdocumentbank.cpp:3124
 #, kde-format
 msgctxt "Noun, 3 months"
 msgid "Quarter"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3119
+#: skgbankmodeler/skgdocumentbank.cpp:3127
 #, kde-format
 msgctxt "Noun, 6 months"
 msgid "Semester"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3122
+#: skgbankmodeler/skgdocumentbank.cpp:3130
 #, fuzzy, kde-format
 msgctxt "Noun, the years in a century"
 msgid "Year"
 msgstr "Tahun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3125
+#: skgbankmodeler/skgdocumentbank.cpp:3133
 #, fuzzy, kde-format
 msgctxt "Noun, the date of an item"
 msgid "First date"
 msgstr "Tarikh:"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3128
+#: skgbankmodeler/skgdocumentbank.cpp:3136
 #, fuzzy, kde-format
 msgctxt "Noun, the date of an item"
 msgid "Last date"
 msgstr "Nilai"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3131
+#: skgbankmodeler/skgdocumentbank.cpp:3139
 #, fuzzy, kde-format
 msgctxt "Noun, the date of the last download"
 msgid "Download date"
 msgstr "Muatturun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3134
+#: skgbankmodeler/skgdocumentbank.cpp:3142
 #, fuzzy, kde-format
 msgctxt "Noun, the date of the last reconciliation"
 msgid "Reconciliation date"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3138
+#: skgbankmodeler/skgdocumentbank.cpp:3146
 #, fuzzy, kde-format
 msgctxt "Noun, the category of an item"
 msgid "Category"
 msgstr "Kategori"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3141
+#: skgbankmodeler/skgdocumentbank.cpp:3149
 #, kde-format
 msgctxt "Noun, a financial institution"
 msgid "Bank"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3144
+#: skgbankmodeler/skgdocumentbank.cpp:3152
 #, fuzzy, kde-format
 msgctxt "Noun, the unit of an operation, usually a currency or a share"
 msgid "Unit"
 msgstr "Unit"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3147
+#: skgbankmodeler/skgdocumentbank.cpp:3155
 #, fuzzy, kde-format
 #| msgctxt "Noun, units for operations, usually currencies or a shares"
 #| msgid "Units"
@@ -12505,349 +12542,349 @@ msgctxt "Noun, the unit of an operation, usually a currency or a share"
 msgid "Unit's type"
 msgstr "Unit"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3150
+#: skgbankmodeler/skgdocumentbank.cpp:3158
 #, kde-format
 msgctxt "Adjective, has an item been checked or not"
 msgid "Checked"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3153
+#: skgbankmodeler/skgdocumentbank.cpp:3161
 #, kde-format
 msgctxt "Adjective, a foreseen value"
 msgid "To be Checked"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3156
+#: skgbankmodeler/skgdocumentbank.cpp:3164
 #, fuzzy, kde-format
 msgctxt "Noun, ahe unit symbol, something in the line of $, €, £…"
 msgid "Symbol"
 msgstr "Simbol"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3159
+#: skgbankmodeler/skgdocumentbank.cpp:3167
 #, fuzzy, kde-format
 msgctxt "Noun, a country in the world (France, China…)"
 msgid "Country"
 msgstr "Negara"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3162
-#: skgbankmodeler/skgdocumentbank.cpp:3165
+#: skgbankmodeler/skgdocumentbank.cpp:3170
+#: skgbankmodeler/skgdocumentbank.cpp:3173
 #, fuzzy, kde-format
 msgctxt "Noun, the type of an item"
 msgid "Type"
 msgstr "Jenis"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3168
+#: skgbankmodeler/skgdocumentbank.cpp:3176
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Internet code"
 msgstr "Gagal untuk memadam"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3171
+#: skgbankmodeler/skgdocumentbank.cpp:3179
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Number of transactions"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3174
+#: skgbankmodeler/skgdocumentbank.cpp:3182
 #, kde-format
 msgctxt "Noun, how frequently something occurs"
 msgid "Periodicity"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3177
+#: skgbankmodeler/skgdocumentbank.cpp:3185
 #, fuzzy, kde-format
 msgctxt "Automatically write something"
 msgid "Auto write"
 msgstr "Automula"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3180
+#: skgbankmodeler/skgdocumentbank.cpp:3188
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Nb of occurrences"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3183
+#: skgbankmodeler/skgdocumentbank.cpp:3191
 #, fuzzy, kde-format
 msgctxt "Verb, warn the user about an event"
 msgid "Warn"
 msgstr "Amaran"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3186
+#: skgbankmodeler/skgdocumentbank.cpp:3194
 #, fuzzy, kde-format
 msgctxt "Adjective, a closed item"
 msgid "Closed"
 msgstr "Tutup"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3192
+#: skgbankmodeler/skgdocumentbank.cpp:3200
 #, fuzzy, kde-format
 msgctxt "Noun, the status of an item"
 msgid "Status"
 msgstr "Status"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3195
+#: skgbankmodeler/skgdocumentbank.cpp:3203
 #, kde-format
 msgctxt "Adjective, an item scheduled to happen on a regular basis"
 msgid "Scheduled"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3198
+#: skgbankmodeler/skgdocumentbank.cpp:3206
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Number of transactions (cumulative)"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3201
+#: skgbankmodeler/skgdocumentbank.cpp:3209
 #, kde-format
 msgctxt "Noun"
 msgid "Amount (cumulative)"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3204
+#: skgbankmodeler/skgdocumentbank.cpp:3212
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Search description"
 msgstr "Cari"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3207
+#: skgbankmodeler/skgdocumentbank.cpp:3215
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Process description"
 msgstr "Process"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3210
+#: skgbankmodeler/skgdocumentbank.cpp:3218
 #, kde-format
 msgctxt "Noun, the type of action"
 msgid "Action type"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3213
+#: skgbankmodeler/skgdocumentbank.cpp:3221
 #, kde-format
 msgctxt "Noun, something that is used to track items"
 msgid "Tracker"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3219
+#: skgbankmodeler/skgdocumentbank.cpp:3227
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Import status"
 msgstr "Import"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3222
+#: skgbankmodeler/skgdocumentbank.cpp:3230
 #, kde-format
 msgctxt "Noun, after the dot"
 msgid "Nb decimal"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3225
+#: skgbankmodeler/skgdocumentbank.cpp:3233
 #, fuzzy, kde-format
 msgctxt "Noun, for a share"
 msgid "Rate"
 msgstr "Tarikh"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3228
+#: skgbankmodeler/skgdocumentbank.cpp:3236
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Value date"
 msgstr "Nilai"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3231
+#: skgbankmodeler/skgdocumentbank.cpp:3239
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Coef"
 msgstr "Tutup"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3234
+#: skgbankmodeler/skgdocumentbank.cpp:3242
 #, kde-format
 msgctxt "Noun"
 msgid "Annual Interest"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3237
+#: skgbankmodeler/skgdocumentbank.cpp:3245
 #, kde-format
 msgctxt "Noun"
 msgid "Accrued Interest"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3240
+#: skgbankmodeler/skgdocumentbank.cpp:3248
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Value date for credit"
 msgstr "Nilai"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3243
+#: skgbankmodeler/skgdocumentbank.cpp:3251
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Value date for debit"
 msgstr "Nilai"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3246
+#: skgbankmodeler/skgdocumentbank.cpp:3254
 #, kde-format
 msgctxt "Noun"
 msgid "Base computation"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3252
+#: skgbankmodeler/skgdocumentbank.cpp:3260
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Month"
 msgstr "Bulan"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3255
+#: skgbankmodeler/skgdocumentbank.cpp:3263
 #, kde-format
 msgctxt "Noun"
 msgid "Period"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3258
+#: skgbankmodeler/skgdocumentbank.cpp:3266
 #, fuzzy, kde-format
 #| msgid "Other"
 msgctxt "Noun, sort order"
 msgid "Order"
 msgstr "Susunan"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3261
+#: skgbankmodeler/skgdocumentbank.cpp:3269
 #, kde-format
 msgctxt "Noun"
 msgid "When"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3264
+#: skgbankmodeler/skgdocumentbank.cpp:3272
 #, kde-format
 msgctxt "Noun"
 msgid "What"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3267
+#: skgbankmodeler/skgdocumentbank.cpp:3275
 #, kde-format
 msgctxt "Noun"
 msgid "Impacted budget"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3270
+#: skgbankmodeler/skgdocumentbank.cpp:3278
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Rules"
 msgstr "Peraturan"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3273
+#: skgbankmodeler/skgdocumentbank.cpp:3281
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Entered Budget"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3276
+#: skgbankmodeler/skgdocumentbank.cpp:3284
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Corrected budget"
 msgstr "Import"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3279
+#: skgbankmodeler/skgdocumentbank.cpp:3287
 #, kde-format
 msgctxt "Noun"
 msgid "Delta after rules"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3282
+#: skgbankmodeler/skgdocumentbank.cpp:3290
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Delta"
 msgstr "Padam"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3285
+#: skgbankmodeler/skgdocumentbank.cpp:3293
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Download source"
 msgstr "Muatturun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3288
+#: skgbankmodeler/skgdocumentbank.cpp:3296
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Transfer"
 msgstr "Penterjemah"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3291
+#: skgbankmodeler/skgdocumentbank.cpp:3299
 #, fuzzy, kde-format
 msgctxt "Noun, a target account of a transfer"
 msgid "To account"
 msgstr "Akaun"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3294
+#: skgbankmodeler/skgdocumentbank.cpp:3302
 #, fuzzy, kde-format
 msgctxt "Noun, a maximum limit"
 msgid "Maximum limit"
 msgstr "Minimum"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3297
+#: skgbankmodeler/skgdocumentbank.cpp:3305
 #, fuzzy, kde-format
 msgctxt "Noun, a minimum limit"
 msgid "Minimum limit"
 msgstr "Minimum"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3300
+#: skgbankmodeler/skgdocumentbank.cpp:3308
 #, fuzzy, kde-format
 msgctxt "Noun, the id of an operation"
 msgid "Transaction id"
 msgstr "Laksana"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3303
+#: skgbankmodeler/skgdocumentbank.cpp:3311
 #, kde-format
 msgctxt "Noun, the absence of anything"
 msgid "-- Nothing --"
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3306
+#: skgbankmodeler/skgdocumentbank.cpp:3314
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Balance import"
 msgstr "Laporan"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3309
+#: skgbankmodeler/skgdocumentbank.cpp:3317
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Balance reconciliation"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3312
+#: skgbankmodeler/skgdocumentbank.cpp:3320
 #, fuzzy, kde-format
 msgctxt "Noun, the date of the last import"
 msgid "Import date"
 msgstr "Gagal untuk memadam"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3315
+#: skgbankmodeler/skgdocumentbank.cpp:3323
 #, fuzzy, kde-format
 msgctxt "Noun"
 msgid "Number of split"
 msgstr "Operasi"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3425
+#: skgbankmodeler/skgdocumentbank.cpp:3433
 #, fuzzy, kde-format
 #| msgid "Other"
 msgctxt "an other category"
 msgid "Others"
 msgstr "Lain-lain"
 
-#: skgbankmodeler/skgdocumentbank.cpp:3489
+#: skgbankmodeler/skgdocumentbank.cpp:3497
 #, kde-format
 msgid ""
 "Expenses in category <b>'%1'</b> increased by <b>%2</b> for a total of <b>"
 "%3</b>."
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3494
+#: skgbankmodeler/skgdocumentbank.cpp:3502
 #, kde-format
 msgid ""
 "Expenses in category <b>'%1'</b> decreased by <b>%2</b> for a total of <b>"
 "%3</b>."
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3503
+#: skgbankmodeler/skgdocumentbank.cpp:3511
 #, kde-format
 msgid ""
 "Incomes in category <b>'%1'</b> increased by <b>%2</b> for a total of <b>%3</"
 "b>."
 msgstr ""
 
-#: skgbankmodeler/skgdocumentbank.cpp:3508
+#: skgbankmodeler/skgdocumentbank.cpp:3516
 #, kde-format
 msgid ""
 "Incomes in category <b>'%1'</b> decreased by <b>%2</b> for a total of <b>%3</"
@@ -13031,13 +13068,13 @@ msgid ""
 "Need at least one transaction to convert a schedule to a non-template one"
 msgstr ""
 
-#: skgbankmodeler/skgrecurrentoperationobject.cpp:325
+#: skgbankmodeler/skgrecurrentoperationobject.cpp:495
 #, fuzzy, kde-format
 msgctxt "An information message"
 msgid "Transaction '%1' has been inserted"
 msgstr "Gagal untuk memadam"
 
-#: skgbankmodeler/skgrecurrentoperationobject.cpp:342
+#: skgbankmodeler/skgrecurrentoperationobject.cpp:512
 #, kde-format
 msgid "Transaction '%2' will be inserted in one day"
 msgid_plural "Transaction '%2' will be inserted in %1 days"
